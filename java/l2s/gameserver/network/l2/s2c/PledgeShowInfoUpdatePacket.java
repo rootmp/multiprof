@@ -88,5 +88,6 @@ public class PledgeShowInfoUpdatePacket implements IClientOutgoingPacket
 
 		packetWriter.writeD(0x00);
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

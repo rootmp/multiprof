@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExUISettingPacket implements IClientOutgoingPacket
@@ -17,5 +17,6 @@ public class ExUISettingPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(data.length);
 		writeB(data);
+		return true;
 	}
 }

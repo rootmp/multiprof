@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -28,5 +28,6 @@ public class EquipUpdate implements IClientOutgoingPacket
 		packetWriter.writeD(_item.getLastChange());
 		packetWriter.writeD(_item.getObjectId());
 		packetWriter.writeD(_item.getEquipSlot());
+		return true;
 	}
 }

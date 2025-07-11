@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -11,6 +10,7 @@ import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.TreeIntObjectMap;
 import org.napile.primitive.pair.IntObjectPair;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.games.MiniGameScoreManager;
 import l2s.gameserver.model.Player;
 
@@ -37,14 +37,18 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 			{
 				List<Map.Entry<String, Integer>> set = _entries.get(i);
 				if (set == null)
+				{
 					_entries.put(i, (set = new ArrayList<Map.Entry<String, Integer>>()));
+				}
 
 				if (name.equalsIgnoreCase(player.getName()))
+				{
 					if (entry.getKey() > lastBig)
 					{
 						_place = i;
 						_score = (lastBig = entry.getKey());
 					}
+				}
 
 				set.add(new AbstractMap.SimpleImmutableEntry<String, Integer>(name, entry.getKey()));
 
@@ -53,7 +57,9 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 				_lastScore = entry.getKey();
 
 				if (i > 100)
+				{
 					break;
+				}
 			}
 		}
 	}
@@ -66,11 +72,14 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // ?
 		packetWriter.writeD(_lastScore); // last score of list
 		for (IntObjectPair<List<Map.Entry<String, Integer>>> entry : _entries.entrySet())
+		{
 			for (Map.Entry<String, Integer> scoreEntry : entry.getValue())
 			{
 				packetWriter.writeD(entry.getKey());
 				packetWriter.writeS(scoreEntry.getKey());
 				packetWriter.writeD(scoreEntry.getValue());
 			}
+		}
+		return true;
 	}
 }

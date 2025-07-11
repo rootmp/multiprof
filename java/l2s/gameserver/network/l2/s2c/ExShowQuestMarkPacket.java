@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExShowQuestMarkPacket implements IClientOutgoingPacket
@@ -16,5 +17,6 @@ public class ExShowQuestMarkPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_questId);
 		packetWriter.writeD(_cond);
+		return true;
 	}
 }

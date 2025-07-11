@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExShowDominionRegistry implements IClientOutgoingPacket
@@ -21,8 +22,9 @@ public class ExShowDominionRegistry implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // Current Time
 		packetWriter.writeD(0x00); // Состояние клановой кнопки: 0 - не подписал, 1 - подписан на эту территорию
 		packetWriter.writeD(0x00); // Состояние персональной кнопки: 0 - не подписал, 1 - подписан на эту
-						// территорию
+		// территорию
 		packetWriter.writeD(0x01);
 		packetWriter.writeD(0x00); // Territory Count
+		return true;
 	}
 }

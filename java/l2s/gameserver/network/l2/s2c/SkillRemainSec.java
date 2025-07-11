@@ -7,5 +7,6 @@ public class SkillRemainSec implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO ddddddd
+		return true;
 	}
 }

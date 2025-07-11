@@ -41,7 +41,7 @@ public class ExSubjugationSidebar implements IClientOutgoingPacket
 
 			if (points == 0)
 			{
-				return;
+				return false;
 			}
 		}
 		else
@@ -55,5 +55,6 @@ public class ExSubjugationSidebar implements IClientOutgoingPacket
 		packetWriter.writeD(_zoneId);
 		packetWriter.writeD(points);
 		packetWriter.writeD(keys);
+		return true;
 	}
 }

@@ -55,5 +55,6 @@ public class PackageSendableListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(item.getObjectId());
 			}
 		}
+		return true;
 	}
 }

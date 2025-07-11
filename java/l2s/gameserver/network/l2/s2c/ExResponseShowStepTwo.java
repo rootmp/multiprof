@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.petition.PetitionMainGroup;
 import l2s.gameserver.model.petition.PetitionSubGroup;
@@ -33,5 +33,6 @@ public class ExResponseShowStepTwo implements IClientOutgoingPacket
 			packetWriter.writeC(g.getId());
 			packetWriter.writeS(g.getName(_language));
 		}
+		return true;
 	}
 }

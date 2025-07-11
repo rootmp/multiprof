@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
+import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.events.objects.SiegeClanObject;
 import l2s.gameserver.model.entity.residence.Castle;
 
@@ -25,9 +26,11 @@ public class ExPledgeMercenaryMemberList implements IClientOutgoingPacket
 			CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 			if (siegeEvent != null)
 			{
-				SiegeClanObject siegeClanObject = siegeEvent.getSiegeClan(CastleSiegeEvent.ATTACKERS, clanId);
+				SiegeClanObject siegeClanObject = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, clanId);
 				if (siegeClanObject == null)
-					siegeClanObject = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS, clanId);
+				{
+					siegeClanObject = siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, clanId);
+				}
 				if (siegeClanObject != null)
 				{
 					//
@@ -51,5 +54,6 @@ public class ExPledgeMercenaryMemberList implements IClientOutgoingPacket
 		 * packetWriter.writeString(mercenaryObject.getName());
 		 * packetWriter.writeD(mercenaryObject.getClassId().ordinal()); }
 		 */
+		return true;
 	}
 }

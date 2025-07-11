@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExChangeNPCState implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExChangeNPCState implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objId);
 		packetWriter.writeD(_state);
+		return true;
 	}
 }

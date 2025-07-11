@@ -26,5 +26,6 @@ public class TargetUnselectedPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.y);
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(0x00); // иногда бывает 1
+		return true;
 	}
 }

@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.clansearch.ClanSearchPlayer;
 
@@ -30,5 +30,6 @@ public class ExPledgeWaitingList implements IClientOutgoingPacket
 			packetWriter.writeD(applicant.getClassId());
 			packetWriter.writeD(applicant.getLevel());
 		}
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExEventMatchCreate implements IClientOutgoingPacket
@@ -7,5 +8,6 @@ public class ExEventMatchCreate implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO d
+		return true;
 	}
 }

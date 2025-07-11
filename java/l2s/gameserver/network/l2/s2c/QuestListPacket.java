@@ -72,5 +72,6 @@ public class QuestListPacket implements IClientOutgoingPacket
 		}
 		writeB(_completedQuestsMask);
 		writeB(_unkMask);
+		return true;
 	}
 }

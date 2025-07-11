@@ -63,5 +63,6 @@ public class StaticObjectPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_maxHp);
 		packetWriter.writeD(_showHp);
 		packetWriter.writeD(_damageGrade);
+		return true;
 	}
 }

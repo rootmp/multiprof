@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.events.impl.FortressSiegeEvent;
 
 /**
@@ -45,5 +45,6 @@ public class ExAdenFortressSiegeHUDInfo implements IClientOutgoingPacket
 		packetWriter.writeD(status);
 		packetWriter.writeD(currentTime);
 		packetWriter.writeD(prepareLeftTime);
+		return true;
 	}
 }

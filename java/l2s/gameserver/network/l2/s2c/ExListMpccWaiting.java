@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -30,8 +30,10 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 
 		for (int i = 0; i < temp.size(); i++)
 		{
-			if (i < first || i >= firstNot)
+			if ((i < first) || (i >= firstNot))
+			{
 				continue;
+			}
 
 			_list.add(temp.get(i));
 		}
@@ -56,5 +58,6 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 		}
 		packetWriter.writeD(0x00); // Total amount of parties
 		packetWriter.writeD(0x00); // Total amount of party members
+		return true;
 	}
 }

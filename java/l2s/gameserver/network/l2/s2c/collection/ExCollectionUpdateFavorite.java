@@ -28,5 +28,6 @@ public class ExCollectionUpdateFavorite implements IClientOutgoingPacket
 			_player.removeCollectionFavorite(_collectionId);
 		packetWriter.writeC(_add); // add or remove
 		packetWriter.writeH(_collectionId); // collection id
+		return true;
 	}
 }

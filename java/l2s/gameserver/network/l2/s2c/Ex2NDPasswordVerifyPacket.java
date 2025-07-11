@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class Ex2NDPasswordVerifyPacket implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public class Ex2NDPasswordVerifyPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_mode);
 		packetWriter.writeD(_wrongTentatives);
+		return true;
 	}
 }

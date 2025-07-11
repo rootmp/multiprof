@@ -28,5 +28,6 @@ public class TargetSelectedPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.y);
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

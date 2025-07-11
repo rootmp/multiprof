@@ -25,5 +25,6 @@ public class ExNewHennaPotenSelect implements IClientOutgoingPacket
 		packetWriter.writeD(nPotenID);
 		packetWriter.writeH(nActiveStep);
 		packetWriter.writeC(cSuccess);
+		return true;
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.instances.NpcInstance;
 
 public class MonRaceInfoPacket implements IClientOutgoingPacket
@@ -33,10 +33,10 @@ public class MonRaceInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_monsters[i].getObjectId()); // npcObjectID
 			packetWriter.writeD(_monsters[i].getNpcId() + 1000000); // npcID
 			packetWriter.writeD(14107); // origin X
-			packetWriter.writeD(181875 + 58 * (7 - i)); // origin Y
+			packetWriter.writeD(181875 + (58 * (7 - i))); // origin Y
 			packetWriter.writeD(-3566); // origin Z
 			packetWriter.writeD(12080); // end X
-			packetWriter.writeD(181875 + 58 * (7 - i)); // end Y
+			packetWriter.writeD(181875 + (58 * (7 - i))); // end Y
 			packetWriter.writeD(-3566); // end Z
 			packetWriter.writeF(_monsters[i].getCurrentCollisionHeight()); // coll. height
 			packetWriter.writeF(_monsters[i].getCurrentCollisionRadius()); // coll. radius
@@ -53,5 +53,6 @@ public class MonRaceInfoPacket implements IClientOutgoingPacket
 				}
 			}
 		}
+		return true;
 	}
 }

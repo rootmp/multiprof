@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.Element;
 
 /**
@@ -36,5 +36,6 @@ public class ExAttributeEnchantResultPacket implements IClientOutgoingPacket
 		packetWriter.writeH(_newValue);
 		packetWriter.writeH(_usedStones);
 		packetWriter.writeH(_failedStones);
+		return true;
 	}
 }

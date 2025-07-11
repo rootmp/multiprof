@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ChooseInventoryItemPacket implements IClientOutgoingPacket
@@ -14,5 +15,6 @@ public class ChooseInventoryItemPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(ItemID);
+		return true;
 	}
 }

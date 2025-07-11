@@ -17,5 +17,6 @@ public class ExResultPetExtractSystem implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(0);
+		return true;
 	}
 }

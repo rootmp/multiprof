@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Friend;
@@ -125,8 +125,9 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 									/*
 									 * if (_snapshotList.size() > 0) { for (int id3 : _snapshotList.keySet()) {
 									 * final StatsSet snapshot = _snapshotList.get(id3); if
-									 * (player.getInteger("charId") == snapshot.getInteger("charId")) { packetWriter.writeD(id3);
-									 * // server rank snapshot packetWriter.writeD(snapshot.getInteger("raceRank", 0));
+									 * (player.getInteger("charId") == snapshot.getInteger("charId")) {
+									 * packetWriter.writeD(id3); // server rank snapshot
+									 * packetWriter.writeD(snapshot.getInteger("raceRank", 0));
 									 * packetWriter.writeD(5316850); } } }
 									 */
 								}
@@ -189,7 +190,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 										if (player.getInteger("charId") == snapshot.getInteger("charId"))
 										{
 											packetWriter.writeD(id2); // server rank snapshot
-											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank
+																										// snapshot
 											packetWriter.writeD(5316850);
 										}
 									}
@@ -361,7 +363,8 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 										if (player.getInteger("charId") == snapshot.getInteger("charId"))
 										{
 											packetWriter.writeD(id2); // server rank snapshot
-											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank snapshot
+											packetWriter.writeD(snapshot.getInteger("raceRank", 0)); // race rank
+																										// snapshot
 											packetWriter.writeD(5316850);
 										}
 									}
@@ -421,5 +424,6 @@ public class ExRankingCharRankers implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(0);
 		}
+		return true;
 	}
 }

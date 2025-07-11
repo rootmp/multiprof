@@ -28,5 +28,6 @@ public class TradeOtherAddPacket implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // UNK 140
 			writeItemInfo(_item, _amount);
 		}
+		return true;
 	}
 }

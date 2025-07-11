@@ -38,5 +38,6 @@ public class SetupGaugePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_color);
 		packetWriter.writeD(_lostTime);
 		packetWriter.writeD(_time);
+		return true;
 	}
 }

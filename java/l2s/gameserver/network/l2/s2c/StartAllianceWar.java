@@ -17,5 +17,6 @@ public class StartAllianceWar implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_char);
 		packetWriter.writeS(_allianceName);
+		return true;
 	}
 }

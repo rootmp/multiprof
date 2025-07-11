@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -27,5 +27,6 @@ public class MagicAndSkillList implements IClientOutgoingPacket
 		packetWriter.writeD(_chaId);
 		packetWriter.writeD(_unk1); // в снифе было 20670
 		packetWriter.writeD(_unk2); // в снифе было 730502
+		return true;
 	}
 }

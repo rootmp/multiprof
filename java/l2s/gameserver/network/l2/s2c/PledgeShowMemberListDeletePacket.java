@@ -14,5 +14,6 @@ public class PledgeShowMemberListDeletePacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeS(_player);
+		return true;
 	}
 }

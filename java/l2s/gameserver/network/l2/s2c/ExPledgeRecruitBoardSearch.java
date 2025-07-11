@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.clansearch.ClanSearchClan;
 import l2s.gameserver.model.clansearch.ClanSearchParams;
@@ -59,5 +59,6 @@ public class ExPledgeRecruitBoardSearch implements IClientOutgoingPacket
 			packetWriter.writeD(clanHolder.getApplication()); // Application
 			packetWriter.writeD(clanHolder.getSubUnit()); // Sub Unit Type
 		}
+		return true;
 	}
 }

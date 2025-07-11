@@ -32,5 +32,6 @@ public class PledgeReceivePowerInfo implements IClientOutgoingPacket
 		packetWriter.writeD(PowerGrade);
 		packetWriter.writeS(member_name);
 		packetWriter.writeD(privs);
+		return true;
 	}
 }

@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.commons.time.cron.SchedulingPattern;
 import l2s.gameserver.data.xml.holder.DailyMissionsHolder;
 import l2s.gameserver.model.Player;
@@ -45,15 +45,21 @@ public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 			{
 				DailyMissionTemplate completedMissionTemplate = DailyMissionsHolder.getInstance().getMission(missionTemplate.getCompletedMission());
 				if (completedMissionTemplate == null)
+				{
 					continue;
+				}
 
 				DailyMission completedMission = player.getDailyMissionList().get(completedMissionTemplate);
 				if (completedMission.getStatus() != DailyMissionStatus.COMPLETED)
+				{
 					continue;
+				}
 			}
 
 			if (!mission.isFinallyCompleted())
+			{
 				_missions.add(mission);
+			}
 		}
 
 		Collections.sort(_missions);
@@ -86,5 +92,6 @@ public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 			packetWriter.writeD(mission.getCurrentProgress()); // Current progress
 			packetWriter.writeD(mission.getRequiredProgress()); // Required total
 		}
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -19,5 +20,6 @@ public class ExPVPMatchUserDie implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_blueKills);
 		packetWriter.writeD(_redKills);
+		return true;
 	}
 }

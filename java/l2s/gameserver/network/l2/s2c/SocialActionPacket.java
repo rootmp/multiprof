@@ -50,5 +50,6 @@ public class SocialActionPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_playerId);
 		packetWriter.writeD(_actionId);
 		packetWriter.writeD(0); // ??? 0
+		return true;
 	}
 }

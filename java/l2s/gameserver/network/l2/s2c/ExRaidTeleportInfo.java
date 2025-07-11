@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -19,5 +19,6 @@ public class ExRaidTeleportInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_player.getVarBoolean("freeRaidTeleport", true) ? 0 : 1);
+		return true;
 	}
 }

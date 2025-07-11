@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExPrivateStoreWholeMsg implements IClientOutgoingPacket
@@ -26,5 +26,6 @@ public class ExPrivateStoreWholeMsg implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objId);
 		packetWriter.writeS(_name);
+		return true;
 	}
 }

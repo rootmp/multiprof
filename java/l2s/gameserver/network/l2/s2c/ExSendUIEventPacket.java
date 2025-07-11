@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.NpcString;
 
@@ -70,11 +70,13 @@ public class ExSendUIEventPacket extends NpcStringContainer
 		packetWriter.writeD(_type);
 		packetWriter.writeD(0x00);// unknown
 		packetWriter.writeD(0x00);// unknown
-		packetWriter.writeS(String.valueOf(_countUp)); // 0 = count down, 1 = count up timer always disappears 10 seconds before end
+		packetWriter.writeS(String.valueOf(_countUp)); // 0 = count down, 1 = count up timer always disappears 10
+														// seconds before end
 		packetWriter.writeS(String.valueOf(_startTime));
 		packetWriter.writeS(String.valueOf(_startTime2));
 		packetWriter.writeS(String.valueOf(_endTime));
 		packetWriter.writeS(String.valueOf(_endTime2));
 		writeElements();
+		return true;
 	}
 }

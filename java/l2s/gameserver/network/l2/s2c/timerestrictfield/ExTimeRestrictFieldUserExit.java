@@ -18,5 +18,6 @@ public class ExTimeRestrictFieldUserExit implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_fieldId);
+		return true;
 	}
 }

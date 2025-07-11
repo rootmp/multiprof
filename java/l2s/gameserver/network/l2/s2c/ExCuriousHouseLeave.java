@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 //пропадает почти весь интерфейс и пооявляется кнопка отказ
@@ -15,6 +16,6 @@ public class ExCuriousHouseLeave implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		//
+		return true;
 	}
 }

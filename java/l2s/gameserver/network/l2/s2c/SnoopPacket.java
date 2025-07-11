@@ -43,5 +43,6 @@ public class SnoopPacket implements IClientOutgoingPacket
 		 * for(String param : _params) packetWriter.writeS(param);
 		 */
 		packetWriter.writeS(_msg);
+		return true;
 	}
 }

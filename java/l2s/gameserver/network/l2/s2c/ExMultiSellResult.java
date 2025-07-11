@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -32,5 +33,6 @@ public class ExMultiSellResult implements IClientOutgoingPacket
 		packetWriter.writeC(_success); // Success
 		packetWriter.writeD(_unk1); // Unk
 		packetWriter.writeD(_unk2); // Unk
+		return true;
 	}
 }

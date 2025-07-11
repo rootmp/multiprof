@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -23,7 +23,9 @@ public class ExMpccRoomMember implements IClientOutgoingPacket
 		_members = new ArrayList<MpccRoomMemberInfo>(room.getPlayers().size());
 
 		for (Player member : room.getPlayers())
+		{
 			_members.add(new MpccRoomMemberInfo(member, room.getMemberType(member)));
+		}
 	}
 
 	@Override
@@ -40,6 +42,7 @@ public class ExMpccRoomMember implements IClientOutgoingPacket
 			packetWriter.writeD(member.location);
 			packetWriter.writeD(member.memberType);
 		}
+		return true;
 	}
 
 	static class MpccRoomMemberInfo

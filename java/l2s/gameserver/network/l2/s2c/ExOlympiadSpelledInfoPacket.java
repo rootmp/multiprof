@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExOlympiadSpelledInfoPacket implements IClientOutgoingPacket
@@ -41,7 +41,9 @@ public class ExOlympiadSpelledInfoPacket implements IClientOutgoingPacket
 	public void addSpellRecivedPlayer(Player cha)
 	{
 		if (cha != null)
+		{
 			char_obj_id = cha.getObjectId();
+		}
 	}
 
 	@Override
@@ -56,5 +58,6 @@ public class ExOlympiadSpelledInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(temp.abnormalType);
 			writeOptionalD(temp.duration);
 		}
+		return true;
 	}
 }

@@ -33,5 +33,6 @@ public class PartyMemberPositionPacket implements IClientOutgoingPacket
 			packetWriter.writeD(e.getValue().y);
 			packetWriter.writeD(e.getValue().z);
 		}
+		return true;
 	}
 }

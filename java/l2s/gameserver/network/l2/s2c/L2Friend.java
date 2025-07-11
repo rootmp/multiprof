@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class L2Friend implements IClientOutgoingPacket
@@ -33,5 +33,6 @@ public class L2Friend implements IClientOutgoingPacket
 		packetWriter.writeS(_name);
 		packetWriter.writeD(_online ? 1 : 0); // онлайн или оффлайн
 		packetWriter.writeD(_object_id); // object_id if online
+		return true;
 	}
 }

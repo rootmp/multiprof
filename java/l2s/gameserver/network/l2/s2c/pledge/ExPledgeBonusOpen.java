@@ -55,5 +55,6 @@ public class ExPledgeBonusOpen implements IClientOutgoingPacket
 		packetWriter.writeD(_yesterdayHuntingRewardId); // Yesterday's reward
 		packetWriter.writeC(_yesterdayHuntingReward); // Reward level
 		packetWriter.writeC(_huntingRewardReceivable); // Receivable
+		return true;
 	}
 }

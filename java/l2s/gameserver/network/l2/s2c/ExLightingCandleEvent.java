@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -20,5 +21,6 @@ public class ExLightingCandleEvent implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(_value); // Available
+		return true;
 	}
 }

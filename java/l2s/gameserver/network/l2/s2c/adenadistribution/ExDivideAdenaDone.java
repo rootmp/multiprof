@@ -28,5 +28,6 @@ public class ExDivideAdenaDone implements IClientOutgoingPacket
 		packetWriter.writeQ(_dividedCount); // Divided count
 		packetWriter.writeQ(_count); // Whole count
 		packetWriter.writeS(_name); // Giver name
+		return true;
 	}
 }

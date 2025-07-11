@@ -34,5 +34,6 @@ public class PartyRoomInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_lootDist); // loot distribution 1-Random 2-Random includ. etc
 		packetWriter.writeD(_location); // location
 		packetWriter.writeS(_title); // room name
+		return true;
 	}
 }

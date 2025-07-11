@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.napile.primitive.sets.IntSet;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RaidBossSpawnManager;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.instances.NpcInstance;
@@ -31,7 +31,9 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 		for (NpcInstance npc : GameObjectsStorage.getNpcs())
 		{
 			if (npc.getNpcId() == 29025)
+			{
 				baiumSpawned = true;
+			}
 		}
 		for (int i = 0; i < _count; i++)
 		{
@@ -61,5 +63,6 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 				packetWriter.writeD(0);
 			}
 		}
+		return true;
 	}
 }

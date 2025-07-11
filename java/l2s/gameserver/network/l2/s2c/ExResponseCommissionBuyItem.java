@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -30,10 +31,13 @@ public class ExResponseCommissionBuyItem implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_code);
 		if (_code == 0)
-			return;
+		{
+			return true;
+		}
 
 		packetWriter.writeD(0x00); // unk, maybe item object Id
 		packetWriter.writeD(_itemId);
 		packetWriter.writeQ(_count);
+		return true;
 	}
 }

@@ -21,5 +21,6 @@ public class ObserverStartPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(0x00); // YAW
 		packetWriter.writeD(0x00); // Pitch
+		return true;
 	}
 }

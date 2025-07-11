@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.TeamType;
 
 /**
@@ -79,5 +79,6 @@ public class ExPVPMatchRecord implements IClientOutgoingPacket
 			packetWriter.writeD(member.kills);
 			packetWriter.writeD(member.deaths);
 		}
+		return true;
 	}
 }

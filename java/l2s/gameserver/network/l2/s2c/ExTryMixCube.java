@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -37,5 +38,6 @@ public class ExTryMixCube implements IClientOutgoingPacket
 		packetWriter.writeD(_itemId);
 		packetWriter.writeQ(_itemCount);
 		// }
+		return true;
 	}
 }

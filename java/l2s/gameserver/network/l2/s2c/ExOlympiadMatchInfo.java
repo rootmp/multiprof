@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExOlympiadMatchInfo implements IClientOutgoingPacket
@@ -12,5 +13,6 @@ public class ExOlympiadMatchInfo implements IClientOutgoingPacket
 		packetWriter.writeD(100);
 		packetWriter.writeD(1);
 		packetWriter.writeD(3600);
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -23,5 +24,6 @@ public class L2FriendSayPacket implements IClientOutgoingPacket
 		packetWriter.writeS(_receiver);
 		packetWriter.writeS(_sender);
 		packetWriter.writeS(_message);
+		return true;
 	}
 }

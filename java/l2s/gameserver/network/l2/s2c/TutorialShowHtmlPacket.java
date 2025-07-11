@@ -20,5 +20,6 @@ public class TutorialShowHtmlPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_windowType);
 		packetWriter.writeS(_html);
+		return true;
 	}
 }

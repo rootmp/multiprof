@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
 
@@ -52,6 +52,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 				packetWriter.writeD(player.getObjectId());
 				packetWriter.writeS(player.getName());
 			}
+			return true;
 		}
 	}
 
@@ -78,6 +79,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 			packetWriter.writeD(_isRedTeam ? 0x01 : 0x00);
 			packetWriter.writeD(_objectId);
 			packetWriter.writeS(_name);
+			return true;
 		}
 	}
 
@@ -101,6 +103,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 
 			packetWriter.writeD(_isRedTeam ? 0x01 : 0x00);
 			packetWriter.writeD(_objectId);
+			return true;
 		}
 	}
 
@@ -118,6 +121,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(0x03); // type
 			packetWriter.writeD(_seconds);
+			return true;
 		}
 	}
 
@@ -129,6 +133,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 		public boolean write(PacketWriter packetWriter)
 		{
 			packetWriter.writeD(0x04); // type
+			return true;
 		}
 	}
 
@@ -151,6 +156,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 			packetWriter.writeD(_objectId);
 			packetWriter.writeD(_fromRedTeam ? 0x01 : 0x00);
 			packetWriter.writeD(_fromRedTeam ? 0x00 : 0x01);
+			return true;
 		}
 	}
 
@@ -162,6 +168,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 		public boolean write(PacketWriter packetWriter)
 		{
 			packetWriter.writeD(0xffffffff); // type
+			return true;
 		}
 	}
 }

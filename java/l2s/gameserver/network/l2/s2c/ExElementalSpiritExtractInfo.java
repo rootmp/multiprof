@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
 import l2s.gameserver.templates.item.data.ItemData;
@@ -57,5 +57,6 @@ public class ExElementalSpiritExtractInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0); // Item ID
 			packetWriter.writeD(0); // Item Count
 		}
+		return true;
 	}
 }

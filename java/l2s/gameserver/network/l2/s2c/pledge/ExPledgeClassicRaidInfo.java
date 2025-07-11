@@ -39,5 +39,6 @@ public class ExPledgeClassicRaidInfo implements IClientOutgoingPacket
 			packetWriter.writeD(skill.getId());
 			packetWriter.writeD(skill.getLevel());
 		}
+		return true;
 	}
 }

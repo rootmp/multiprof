@@ -25,5 +25,6 @@ public class ValidateLocationInVehiclePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.y);
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(_loc.h);
+		return true;
 	}
 }

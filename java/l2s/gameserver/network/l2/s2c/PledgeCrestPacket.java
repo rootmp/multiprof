@@ -34,5 +34,6 @@ public class PledgeCrestPacket implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(0);
 		}
+		return true;
 	}
 }

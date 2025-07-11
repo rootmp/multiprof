@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +6,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.tables.ClanTable;
@@ -77,6 +77,7 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 			packetWriter.writeC(0);
 			packetWriter.writeC(0);
 		}
+		return true;
 	}
 
 	private static class CastleInfo

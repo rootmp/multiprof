@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExPledgeMercenaryMemberJoin implements IClientOutgoingPacket
@@ -23,5 +24,6 @@ public class ExPledgeMercenaryMemberJoin implements IClientOutgoingPacket
 		packetWriter.writeD(join); // entered
 		packetWriter.writeD(playerObjectId);
 		packetWriter.writeD(clanObjectId);
+		return true;
 	}
 }

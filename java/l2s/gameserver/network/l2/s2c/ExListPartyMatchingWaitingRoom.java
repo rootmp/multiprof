@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -22,7 +22,9 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 		final int first = Math.max((page - 1) * ITEMS_PER_PAGE, 0);
 		final int firstNot = Math.min(page * ITEMS_PER_PAGE, _fullSize);
 		for (int i = first; i < firstNot; i++)
+		{
 			_waitingList.add(new PartyMatchingWaitingInfo(temp.get(i)));
+		}
 	}
 
 	@Override
@@ -38,8 +40,11 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 			packetWriter.writeD(waitingInfo.locationId);
 			packetWriter.writeD(waitingInfo.instanceReuses.size());
 			for (int i : waitingInfo.instanceReuses)
+			{
 				packetWriter.writeD(i);
+			}
 		}
+		return true;
 	}
 
 	static class PartyMatchingWaitingInfo

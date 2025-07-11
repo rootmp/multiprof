@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExBR_BuyProductPacket implements IClientOutgoingPacket
@@ -49,5 +50,6 @@ public class ExBR_BuyProductPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_result);
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExCleftState implements IClientOutgoingPacket
@@ -41,5 +42,6 @@ public class ExCleftState implements IClientOutgoingPacket
 				// ddddd - PvPKill02 TeamID:%d PlayerID:%d CleftTowerCount:%d Kill:%d Death:%d
 				break;
 		}
+		return true;
 	}
 }

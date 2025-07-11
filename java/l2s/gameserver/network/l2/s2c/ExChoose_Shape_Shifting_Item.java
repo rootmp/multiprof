@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.item.support.AppearanceStone;
 
 /**
@@ -25,5 +25,6 @@ public class ExChoose_Shape_Shifting_Item implements IClientOutgoingPacket
 		packetWriter.writeD(_targetType); // ShapeType
 		packetWriter.writeD(_type); // ShapeShiftingType
 		packetWriter.writeD(_itemId); // ItemID
+		return true;
 	}
 }

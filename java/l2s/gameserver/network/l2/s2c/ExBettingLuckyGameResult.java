@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.luckygame.LuckyGameData;
 import l2s.gameserver.templates.luckygame.LuckyGameItem;
@@ -31,9 +31,13 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 		_type = data.getType().ordinal();
 
 		if (data.getFeeItemId() == -1)
+		{
 			_availableGamesCount = player.getPremiumPoints() / data.getFeeItemCount();
+		}
 		else
+		{
 			_availableGamesCount = ItemFunctions.getItemCount(player, data.getFeeItemId()) / data.getFeeItemCount();
+		}
 
 		int gamesLimit = data.getGamesLimit();
 		if (gamesLimit > 0)
@@ -66,5 +70,6 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 			packetWriter.writeD(item.getId());
 			packetWriter.writeD((int) item.getCount());
 		}
+		return true;
 	}
 }

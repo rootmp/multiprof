@@ -20,5 +20,6 @@ public class ShowTutorialMarkPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_quest);
 		packetWriter.writeD(_tutorialId);
+		return true;
 	}
 }

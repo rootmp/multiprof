@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExBrBroadcastEventState implements IClientOutgoingPacket
@@ -51,5 +52,6 @@ public class ExBrBroadcastEventState implements IClientOutgoingPacket
 		packetWriter.writeD(_param4);
 		packetWriter.writeS(_param5);
 		packetWriter.writeS(_param6);
+		return true;
 	}
 }

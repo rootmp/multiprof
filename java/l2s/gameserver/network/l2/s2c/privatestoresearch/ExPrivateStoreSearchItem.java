@@ -75,5 +75,6 @@ public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 			writeItemInfo(item.getTradeItem(), true, 4);
 			packetWriter.writeD(item.getTradeItem().getObjectId());
 		}
+		return true;
 	}
 }

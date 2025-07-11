@@ -80,5 +80,6 @@ public class ExCollectionInfo implements IClientOutgoingPacket
 		packetWriter.writeD(0); // ??
 		packetWriter.writeC(_tabId);
 		packetWriter.writeH(collection.size());
+		return true;
 	}
 }

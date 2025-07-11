@@ -15,5 +15,6 @@ public class ExCollectionCloseUI implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(-56); // unknown one byte
+		return true;
 	}
 }

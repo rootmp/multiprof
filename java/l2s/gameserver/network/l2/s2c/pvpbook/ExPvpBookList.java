@@ -38,5 +38,6 @@ public class ExPvpBookList implements IClientOutgoingPacket
 			packetWriter.writeD(pvpbookInfo.getDeathTime()); // Death time
 			packetWriter.writeC(pvpbookInfo.isOnline()); // Online
 		}
+		return true;
 	}
 }

@@ -21,5 +21,6 @@ public class ExPledgeBonusList implements IClientOutgoingPacket
 		packetWriter.writeD(PledgeBonusUtils.HUNTING_REWARDS.get(2)); // Hunting bonus (.5)
 		packetWriter.writeD(PledgeBonusUtils.HUNTING_REWARDS.get(3)); // Hunting bonus (.75)
 		packetWriter.writeD(PledgeBonusUtils.HUNTING_REWARDS.get(4)); // Hunting bonus (max)
+		return true;
 	}
 }

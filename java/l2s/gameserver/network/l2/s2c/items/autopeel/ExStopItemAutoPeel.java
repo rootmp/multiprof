@@ -18,5 +18,6 @@ public class ExStopItemAutoPeel implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_result); // result
+		return true;
 	}
 }

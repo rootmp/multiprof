@@ -27,5 +27,6 @@ public class RidePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.x);
 		packetWriter.writeD(_loc.y);
 		packetWriter.writeD(_loc.z);
+		return true;
 	}
 }

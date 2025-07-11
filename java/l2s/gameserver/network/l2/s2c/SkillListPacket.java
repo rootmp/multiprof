@@ -51,5 +51,6 @@ public class SkillListPacket implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // для заточки: если 1 скилл можно точить
 		}
 		packetWriter.writeD(_learnedSkillId);
+		return true;
 	}
 }

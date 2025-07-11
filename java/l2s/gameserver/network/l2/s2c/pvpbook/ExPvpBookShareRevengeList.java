@@ -63,5 +63,6 @@ public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 			packetWriter.writeD(pvpbookInfo.getKarma()); // karma
 			packetWriter.writeD(shareType == 2 ? pvpbookInfo.getDeathTime() : 0); // shared time
 		}
+		return true;
 	}
 }

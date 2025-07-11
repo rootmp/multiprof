@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
@@ -39,5 +39,6 @@ public class ExPledgeClassicRaidInfo implements IClientOutgoingPacket
 			packetWriter.writeD(skill.getId());
 			packetWriter.writeD(skill.getLevel());
 		}
+		return true;
 	}
 }

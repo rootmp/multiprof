@@ -18,5 +18,6 @@ public class ExResultSetMultiEnchantItemList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_resultType);
+		return true;
 	}
 }

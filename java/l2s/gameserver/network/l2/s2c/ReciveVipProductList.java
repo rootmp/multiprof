@@ -56,5 +56,6 @@ public class ReciveVipProductList implements IClientOutgoingPacket
 				packetWriter.writeD((int) component.getCount()); // quality
 			}
 		}
+		return true;
 	}
 }

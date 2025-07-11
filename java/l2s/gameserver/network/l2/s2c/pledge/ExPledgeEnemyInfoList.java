@@ -48,5 +48,6 @@ public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
 			packetWriter.writeString(clan.getName());
 			packetWriter.writeString(clan.getLeaderName());
 		}
+		return true;
 	}
 }

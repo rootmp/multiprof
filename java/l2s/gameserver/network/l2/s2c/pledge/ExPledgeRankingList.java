@@ -156,5 +156,6 @@ public class ExPledgeRankingList implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(count); // clans size
 		}
+		return true;
 	}
 }

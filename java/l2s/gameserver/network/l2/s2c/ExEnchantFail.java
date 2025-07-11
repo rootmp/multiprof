@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -22,5 +23,6 @@ public final class ExEnchantFail implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_itemOne);
 		packetWriter.writeD(_itemTwo);
+		return true;
 	}
 }

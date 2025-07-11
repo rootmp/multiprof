@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.entity.residence.clanhall.NormalClanHall;
 import l2s.gameserver.model.pledge.Clan;
@@ -26,8 +26,8 @@ public class ExShowAgitInfo implements IClientOutgoingPacket
 			int ch_id = clanHall.getId();
 			int getType = clanHall.getClanHallType().ordinal();
 			Clan clan = ClanTable.getInstance().getClan(clanHall.getOwnerId());
-			String clan_name = clanHall.getOwnerId() == 0 || clan == null ? StringUtils.EMPTY : clan.getName();
-			String leader_name = clanHall.getOwnerId() == 0 || clan == null ? StringUtils.EMPTY : clan.getLeaderName();
+			String clan_name = (clanHall.getOwnerId() == 0) || (clan == null) ? StringUtils.EMPTY : clan.getName();
+			String leader_name = (clanHall.getOwnerId() == 0) || (clan == null) ? StringUtils.EMPTY : clan.getLeaderName();
 			_infos.add(new AgitInfo(clan_name, leader_name, ch_id, getType));
 		});
 	}
@@ -43,6 +43,8 @@ public class ExShowAgitInfo implements IClientOutgoingPacket
 			packetWriter.writeS(info.leader_name);
 			packetWriter.writeD(info.getType);
 		});
+
+		return true;
 	}
 
 	static class AgitInfo

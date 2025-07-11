@@ -24,5 +24,6 @@ public class ExUserWatcherTargetStatus implements IClientOutgoingPacket
 		packetWriter.writeString(_player.getName()); // name
 		packetWriter.writeD(Config.REQUEST_ID);
 		packetWriter.writeC(_login); // is online?
+		return true;
 	}
 }

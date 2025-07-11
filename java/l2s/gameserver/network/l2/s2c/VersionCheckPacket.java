@@ -18,7 +18,7 @@ public class VersionCheckPacket implements IClientOutgoingPacket
 		if (_key == null || _key.length == 0)
 		{
 			packetWriter.writeC(0x00);
-			return;
+			return false;
 		}
 		packetWriter.writeC(0x01);
 		for (int i = 0; i < 8; i++)
@@ -30,5 +30,6 @@ public class VersionCheckPacket implements IClientOutgoingPacket
 		packetWriter.writeC(0x04); // 0x00 - Main, 0x01 - Classic, 0x04 - Essence
 		packetWriter.writeC(0x00); // Arena
 		packetWriter.writeC(0x00); // Unk
+		return true;
 	}
 }

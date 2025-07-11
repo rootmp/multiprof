@@ -14,5 +14,6 @@ public class TradeRequestPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_senderId);
+		return true;
 	}
 }

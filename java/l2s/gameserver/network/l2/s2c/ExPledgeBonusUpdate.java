@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -26,5 +27,6 @@ public class ExPledgeBonusUpdate implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_type.ordinal()); // Bonus type
 		packetWriter.writeD(_value); // Progress amount
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExPutItemResultForVariationMake implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public class ExPutItemResultForVariationMake implements IClientOutgoingPacket
 		packetWriter.writeD(_itemObjId);
 		packetWriter.writeD(_unk1);
 		packetWriter.writeD(_unk2);
+		return true;
 	}
 }

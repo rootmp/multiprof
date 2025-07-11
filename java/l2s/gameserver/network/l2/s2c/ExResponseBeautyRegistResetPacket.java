@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.utils.ItemFunctions;
@@ -42,5 +42,6 @@ public class ExResponseBeautyRegistResetPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_hairStyle);
 		packetWriter.writeD(_face);
 		packetWriter.writeD(_hairColor);
+		return true;
 	}
 }

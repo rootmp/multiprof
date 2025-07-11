@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.AutoFarm;
 
@@ -24,5 +24,6 @@ public class ExAutoplaySetting implements IClientOutgoingPacket
 		packetWriter.writeD(_autoFarm.getHealPercent()); // Auto Heal Percent
 		packetWriter.writeD(_autoFarm.getPetHealPercent()); // new 272
 		packetWriter.writeC(_autoFarm.isPoliteFarm());
+		return true;
 	}
 }

@@ -43,5 +43,6 @@ public class RecipeShopSellListPacket implements IClientOutgoingPacket
 			packetWriter.writeC(critChance > 0 && mi.canCrit()); // Critical craft available
 			packetWriter.writeF(critChance); // Critical craft chance
 		}
+		return true;
 	}
 }

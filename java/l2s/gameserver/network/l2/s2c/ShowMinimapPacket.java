@@ -17,5 +17,6 @@ public class ShowMinimapPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_mapId);
 		packetWriter.writeC(0x00);
+		return true;
 	}
 }

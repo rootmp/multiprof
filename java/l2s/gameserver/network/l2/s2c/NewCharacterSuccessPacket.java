@@ -53,5 +53,6 @@ public class NewCharacterSuccessPacket implements IClientOutgoingPacket
 			packetWriter.writeD(template.getBaseMEN());
 			packetWriter.writeD(0x0a);
 		}
+		return true;
 	}
 }

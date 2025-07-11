@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExDuelAskStart implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExDuelAskStart implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_requestor);
 		packetWriter.writeD(_isPartyDuel);
+		return true;
 	}
 }

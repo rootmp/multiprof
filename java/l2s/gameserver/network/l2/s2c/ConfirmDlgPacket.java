@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.network.l2.components.SystemMsg;
 
 /**
@@ -24,6 +24,7 @@ public class ConfirmDlgPacket extends SysMsgContainer<ConfirmDlgPacket>
 		writeElements();
 		packetWriter.writeD(_time);
 		packetWriter.writeD(_requestId);
+		return true;
 	}
 
 	public void setRequestId(int requestId)

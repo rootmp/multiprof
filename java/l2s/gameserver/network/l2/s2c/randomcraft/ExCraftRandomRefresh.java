@@ -22,7 +22,7 @@ public class ExCraftRandomRefresh implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		if ((_player.getCraftPoints() < 1) || (_player.getAdena() < 10_000))
-			return;
+			return false;
 		else
 		{
 			if (!_player.getVarBoolean("didCraft", true))
@@ -52,5 +52,6 @@ public class ExCraftRandomRefresh implements IClientOutgoingPacket
 		}
 		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomInfo(_player));
+		return true;
 	}
 }

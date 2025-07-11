@@ -36,5 +36,6 @@ public class PledgeStatusChangedPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0);
 		packetWriter.writeD(0);
 		packetWriter.writeD(0);
+		return true;
 	}
 }

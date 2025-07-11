@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.actor.instances.player.Macro;
 
 /**
@@ -62,5 +62,6 @@ public class MacroListPacket implements IClientOutgoingPacket
 		{
 			packetWriter.writeC(0); // checked
 		}
+		return true;
 	}
 }

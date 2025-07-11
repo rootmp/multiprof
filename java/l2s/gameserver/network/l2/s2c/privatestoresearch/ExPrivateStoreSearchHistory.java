@@ -34,5 +34,6 @@ public class ExPrivateStoreSearchHistory implements IClientOutgoingPacket
 			packetWriter.writeQ(item.getPrice());
 			packetWriter.writeQ(item.getCount());
 		}
+		return true;
 	}
 }

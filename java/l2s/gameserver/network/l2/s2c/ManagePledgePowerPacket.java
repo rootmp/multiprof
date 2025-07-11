@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.RankPrivs;
 
@@ -23,5 +23,6 @@ public class ManagePledgePowerPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_clanId);
 		packetWriter.writeD(_action);
 		packetWriter.writeD(privs);
+		return true;
 	}
 }

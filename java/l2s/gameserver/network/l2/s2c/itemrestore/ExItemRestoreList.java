@@ -27,6 +27,7 @@ public class ExItemRestoreList implements IClientOutgoingPacket
 			packetWriter.writeC(item.cEnchant);
 			packetWriter.writeC(item.cOrder);
 		}
+		return true;
 	}
 
 	public static class PkItemRestoreNode

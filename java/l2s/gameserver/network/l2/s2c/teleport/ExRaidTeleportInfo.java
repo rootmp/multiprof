@@ -24,5 +24,7 @@ public class ExRaidTeleportInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0);
 		else
 			packetWriter.writeD(1);
+		
+		return true;
 	}
 }

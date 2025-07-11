@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -18,5 +19,6 @@ public class FriendRemove implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(1); // UNK
 		packetWriter.writeS(_friendName); // FriendName
+		return true;
 	}
 }

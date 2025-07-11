@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.skills.SkillEntry;
@@ -36,5 +36,6 @@ public class GMViewSkillInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // Enchantable
 		}
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
@@ -55,5 +56,6 @@ public class ExCuriousHouseObserveList implements IClientOutgoingPacket
 			packetWriter.writeH(arena.status); // Status
 			packetWriter.writeD(arena.participants); // Patricipants Count
 		}
+		return true;
 	}
 }

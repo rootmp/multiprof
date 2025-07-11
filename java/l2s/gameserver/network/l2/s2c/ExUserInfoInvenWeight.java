@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -25,5 +25,6 @@ public class ExUserInfoInvenWeight implements IClientOutgoingPacket
 		packetWriter.writeD(_objectId);
 		packetWriter.writeD(_currentLoad);
 		packetWriter.writeD(_maxLoad);
+		return true;
 	}
 }

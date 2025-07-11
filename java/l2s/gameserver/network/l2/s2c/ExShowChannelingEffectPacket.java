@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -25,5 +25,6 @@ public class ExShowChannelingEffectPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_casterObjectId);
 		packetWriter.writeD(_targetObjectId);
 		packetWriter.writeD(_state);
+		return true;
 	}
 }

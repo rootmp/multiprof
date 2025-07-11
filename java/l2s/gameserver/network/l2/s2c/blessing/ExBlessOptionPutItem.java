@@ -35,5 +35,6 @@ public class ExBlessOptionPutItem implements IClientOutgoingPacket
 		}
 
 		packetWriter.writeC(1); // success put or no
+		return true;
 	}
 }

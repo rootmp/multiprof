@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
 import l2s.gameserver.templates.elemental.ElementalAbsorbItem;
@@ -35,7 +35,9 @@ public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 			}
 		}
 		else
+		{
 			_absorbItems = Collections.emptyList();
+		}
 	}
 
 	@Override
@@ -70,5 +72,6 @@ public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0); // Max Level
 			packetWriter.writeD(0); // Elementals Count
 		}
+		return true;
 	}
 }

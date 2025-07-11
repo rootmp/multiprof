@@ -22,6 +22,8 @@ public class ShopPreviewInfoPacket implements IClientOutgoingPacket
 		// Slots
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 			packetWriter.writeD(getFromList(PAPERDOLL_ID));
+		
+		return true;
 	}
 
 	private int getFromList(int key)

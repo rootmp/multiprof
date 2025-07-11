@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class DicePacket implements IClientOutgoingPacket
@@ -34,5 +35,6 @@ public class DicePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_x); // x
 		packetWriter.writeD(_y); // y
 		packetWriter.writeD(_z); // z
+		return true;
 	}
 }

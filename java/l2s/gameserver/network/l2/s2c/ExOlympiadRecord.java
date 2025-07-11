@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
@@ -99,5 +99,6 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 		packetWriter.writeD(cycle);
 		packetWriter.writeC(registered); // is registered
 		packetWriter.writeC(Math.min(type, 1)); // 0 - 3x3 Battles, 1 - Olympiad
+		return true;
 	}
 }

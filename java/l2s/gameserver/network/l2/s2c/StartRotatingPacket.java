@@ -22,5 +22,6 @@ public class StartRotatingPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_degree);
 		packetWriter.writeD(_side);
 		packetWriter.writeD(_speed);
+		return true;
 	}
 }

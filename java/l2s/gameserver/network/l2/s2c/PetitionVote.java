@@ -7,5 +7,6 @@ public class PetitionVote implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// just trigger
+		return true;
 	}
 }

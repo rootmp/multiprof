@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -89,16 +89,24 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 				{
 					_refundList = new ArrayList<TradeItem>(items.length);
 					for (ItemInstance item : items)
+					{
 						_refundList.add(new TradeItem(item));
+					}
 				}
 				else
+				{
 					_refundList = new ArrayList<TradeItem>(0);
+				}
 
 				items = activeChar.getInventory().getItems();
 				_sellList = new ArrayList<TradeItem>(items.length);
 				for (ItemInstance item : items)
+				{
 					if (item.canBeSold(activeChar))
+					{
 						_sellList.add(new TradeItem(item, item.getTemplate().isBlocked(activeChar, item)));
+					}
+				}
 			}
 		}
 
@@ -112,9 +120,13 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 			{
 				writeItemInfo(item);
 				if (Config.ALT_SELL_ITEM_ONE_ADENA)
+				{
 					packetWriter.writeQ(1);
+				}
 				else
+				{
 					packetWriter.writeQ(item.getReferencePrice() / 2);
+				}
 			}
 			packetWriter.writeH(_refundList.size());
 			for (TradeItem item : _refundList)
@@ -122,11 +134,16 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 				writeItemInfo(item);
 				packetWriter.writeD(item.getObjectId());
 				if (Config.ALT_SELL_ITEM_ONE_ADENA)
+				{
 					packetWriter.writeQ(item.getCount());
+				}
 				else
-					packetWriter.writeQ((long) ((item.getCount() * item.getReferencePrice() / 2) * (1. - _taxRate)));
+				{
+					packetWriter.writeQ((long) (((item.getCount() * item.getReferencePrice()) / 2) * (1. - _taxRate)));
+				}
 			}
 			packetWriter.writeC(_done);
+			return true;
 		}
 	}
 }

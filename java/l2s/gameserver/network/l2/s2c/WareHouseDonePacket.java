@@ -8,5 +8,6 @@ public class WareHouseDonePacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(0); // ?
+		return true;
 	}
 }

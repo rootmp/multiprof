@@ -36,5 +36,6 @@ public class ExPledgeContributionList implements IClientOutgoingPacket
 				packetWriter.writeD(0);
 			}
 		}
+		return true;
 	}
 }

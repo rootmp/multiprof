@@ -24,5 +24,6 @@ public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacke
 		packetWriter.writeD(killerLoc.getX());
 		packetWriter.writeD(killerLoc.getY());
 		packetWriter.writeD(killerLoc.getZ());
+		return true;
 	}
 }

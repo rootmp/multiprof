@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 
 /**
@@ -28,5 +28,6 @@ public class EarthQuakePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_intensity);
 		packetWriter.writeD(_duration);
 		packetWriter.writeD(0x00); // Unknown
+		return true;
 	}
 }

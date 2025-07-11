@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Servitor;
 
 public class ExPartyPetWindowAdd implements IClientOutgoingPacket
@@ -36,5 +36,6 @@ public class ExPartyPetWindowAdd implements IClientOutgoingPacket
 		packetWriter.writeD(curMp);
 		packetWriter.writeD(maxMp);
 		packetWriter.writeD(level);
+		return true;
 	}
 }

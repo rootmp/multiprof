@@ -114,5 +114,6 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 				packetWriter.writeQ(si.getStorePrice());
 			}
 		}
+		return true;
 	}
 }

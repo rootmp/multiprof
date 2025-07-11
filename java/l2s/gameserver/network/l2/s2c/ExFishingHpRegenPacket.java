@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -35,6 +35,6 @@ public class ExFishingHpRegenPacket implements IClientOutgoingPacket
 		packetWriter.writeC(_Anim); // Anim: 0 = none, 1 = reeling, 2 = pumping
 		packetWriter.writeD(_Penalty); // Penalty
 		packetWriter.writeC(_hpBarColor); // 0 = normal hp bar, 1 = purple hp bar
-
+		return true;
 	}
 }

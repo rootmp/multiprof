@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.stats.Stats;
 
@@ -62,7 +62,7 @@ public class ExUserViewInfoParameter implements IClientOutgoingPacket
 		packetWriter.writeH(8); // Soulshot Damage - Misc
 		if (_player.getActiveWeaponInstance() != null)
 		{
-			packetWriter.writeD((int) ((_player.getStat().getMul(Stats.SOULSHOT_POWER) * 100) + (_player.getActiveWeaponInstance().getEnchantLevel() * 0.7 * 100) - 100));
+			packetWriter.writeD((int) (((_player.getStat().getMul(Stats.SOULSHOT_POWER) * 100) + (_player.getActiveWeaponInstance().getEnchantLevel() * 0.7 * 100)) - 100));
 		}
 		else
 		{
@@ -72,7 +72,7 @@ public class ExUserViewInfoParameter implements IClientOutgoingPacket
 		packetWriter.writeH(9); // Spiritshot Damage - Misc
 		if (_player.getActiveWeaponInstance() != null)
 		{
-			packetWriter.writeD((int) ((_player.getStat().getMul(Stats.SPIRITSHOT_POWER) * 100) + (_player.getActiveWeaponInstance().getEnchantLevel() * 0.7 * 100) - 100));
+			packetWriter.writeD((int) (((_player.getStat().getMul(Stats.SPIRITSHOT_POWER) * 100) + (_player.getActiveWeaponInstance().getEnchantLevel() * 0.7 * 100)) - 100));
 		}
 		else
 		{
@@ -603,5 +603,7 @@ public class ExUserViewInfoParameter implements IClientOutgoingPacket
 
 		packetWriter.writeH(184); // infection attack resistance
 		packetWriter.writeD((int) (_player.getStat().getMul(Stats.DEFENCE_TRAIT_BLEED) * 100) - 100);
+
+		return true;
 	}
 }

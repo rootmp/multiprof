@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -18,5 +19,6 @@ public class FriendAddRequest implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(0); // 0
 		packetWriter.writeS(_requestorName);
+		return true;
 	}
 }

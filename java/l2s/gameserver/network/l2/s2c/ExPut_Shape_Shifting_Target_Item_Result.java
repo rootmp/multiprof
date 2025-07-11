@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -23,5 +24,6 @@ public class ExPut_Shape_Shifting_Target_Item_Result implements IClientOutgoingP
 	{
 		packetWriter.writeD(_resultId);
 		packetWriter.writeQ(_price);
+		return true;
 	}
 }

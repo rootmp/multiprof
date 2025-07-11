@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.network.l2.components.NpcString;
 
 public class ExShowScreenMessage extends NpcStringContainer
@@ -87,9 +87,10 @@ public class ExShowScreenMessage extends NpcStringContainer
 		packetWriter.writeD(0x00); // ?
 		packetWriter.writeD(_unk); // ?
 		packetWriter.writeD(_effect ? 1 : 0); // upper effect (0 - disabled, 1 enabled) - _position must be 2 (center)
-									// otherwise no effect
+		// otherwise no effect
 		packetWriter.writeD(_time); // время отображения сообщения в милисекундах
 		packetWriter.writeD(0x01); // Угасание
 		writeElements();
+		return true;
 	}
 }

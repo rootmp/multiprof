@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.GameObject;
 
@@ -48,8 +48,8 @@ public class ExShowTracePacket implements IClientOutgoingPacket
 		int x_diff = to_x - from_x;
 		int y_diff = to_y - from_y;
 		int z_diff = to_z - from_z;
-		double xy_dist = Math.sqrt(x_diff * x_diff + y_diff * y_diff);
-		double full_dist = Math.sqrt(xy_dist * xy_dist + z_diff * z_diff);
+		double xy_dist = Math.sqrt((x_diff * x_diff) + (y_diff * y_diff));
+		double full_dist = Math.sqrt((xy_dist * xy_dist) + (z_diff * z_diff));
 		int steps = (int) (full_dist / step);
 
 		addTrace(from_x, from_y, from_z);
@@ -60,7 +60,9 @@ public class ExShowTracePacket implements IClientOutgoingPacket
 			int step_z = z_diff / steps;
 
 			for (int i = 1; i < steps; i++)
-				addTrace(from_x + step_x * i, from_y + step_y * i, from_z + step_z * i);
+			{
+				addTrace(from_x + (step_x * i), from_y + (step_y * i), from_z + (step_z * i));
+			}
 		}
 		addTrace(to_x, to_y, to_z);
 		return this;
@@ -84,5 +86,6 @@ public class ExShowTracePacket implements IClientOutgoingPacket
 			packetWriter.writeD(t._y);
 			packetWriter.writeD(t._z);
 		}
+		return true;
 	}
 }

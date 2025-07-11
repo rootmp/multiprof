@@ -28,5 +28,6 @@ public class PackageToListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(entry.getKey());
 			packetWriter.writeS(entry.getValue());
 		}
+		return true;
 	}
 }

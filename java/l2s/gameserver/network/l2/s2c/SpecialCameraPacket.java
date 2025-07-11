@@ -56,5 +56,6 @@ public class SpecialCameraPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_rise);
 		packetWriter.writeD(_widescreen);
 		packetWriter.writeD(_unknown);
+		return true;
 	}
 }

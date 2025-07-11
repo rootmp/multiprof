@@ -67,5 +67,6 @@ public class ExCraftRandomMake implements IClientOutgoingPacket
 		_player.setRandomCraftList(list);
 
 		_player.sendPacket(new ExCraftRandomInfo(_player));
+		return true;
 	}
 }

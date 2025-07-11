@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.mail.Mail;
 import l2s.gameserver.network.l2.c2s.RequestExCancelSentPost;
@@ -62,5 +62,6 @@ public class ExReplySentPost implements IClientOutgoingPacket
 
 		packetWriter.writeQ(mail.getPrice()); // для писем с оплатой - цена
 		packetWriter.writeD(mail.getReceiverId()); // Не известно. В сниффе оффа значение 24225 (не равняется MessageId)
+		return true;
 	}
 }

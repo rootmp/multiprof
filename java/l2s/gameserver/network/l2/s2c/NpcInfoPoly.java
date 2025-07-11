@@ -203,5 +203,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 		packetWriter.writeH(_abnormalEffects.length);
 		for (AbnormalEffect abnormal : _abnormalEffects)
 			packetWriter.writeH(abnormal.getId());
+	
+		return true;
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 
@@ -32,5 +32,6 @@ public class ExFishingStartPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.z); // z poisson
 		packetWriter.writeC(_isNightLure ? 0x01 : 0x00); // 0 = day lure 1 = night lure
 		packetWriter.writeC(0x01); // result Button
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExChangeClientEffectInfo implements IClientOutgoingPacket
@@ -27,5 +28,6 @@ public class ExChangeClientEffectInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_unk1);
 		packetWriter.writeD(_unk2);
 		packetWriter.writeD(_state);
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExBR_LoadEventTopRankers implements IClientOutgoingPacket
@@ -26,5 +27,6 @@ public class ExBR_LoadEventTopRankers implements IClientOutgoingPacket
 		packetWriter.writeD(_count);
 		packetWriter.writeD(_bestScore);
 		packetWriter.writeD(_myScore);
+		return true;
 	}
 }

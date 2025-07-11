@@ -24,5 +24,6 @@ public class ShowTownMapPacket implements IClientOutgoingPacket
 		packetWriter.writeS(_texture);
 		packetWriter.writeD(_x);
 		packetWriter.writeD(_y);
+		return true;
 	}
 }

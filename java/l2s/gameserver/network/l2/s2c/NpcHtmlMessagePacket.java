@@ -35,5 +35,6 @@ public class NpcHtmlMessagePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_itemId);
 		packetWriter.writeC(0x00); // new 245
 		packetWriter.writeD(!_playVoice);
+		return true;
 	}
 }

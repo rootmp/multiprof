@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +6,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.events.objects.SiegeClanObject;
@@ -50,18 +50,24 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 		if (siegeEvent != null)
 		{
-			_registrationValid = !siegeEvent.isRegistrationOver() && castle.getOwner() != null;
+			_registrationValid = !siegeEvent.isRegistrationOver() && (castle.getOwner() != null);
 
 			List<SiegeClanObject> defenders = siegeEvent.getObjects(SiegeEvent.DEFENDERS);
 			List<SiegeClanObject> defendersWaiting = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_WAITING);
 			List<SiegeClanObject> defendersRefused = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_REFUSED);
 			_defenderClans = new ArrayList<>(defenders.size() + defendersWaiting.size() + defendersRefused.size());
 			for (SiegeClanObject siegeClan : defenders)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), siegeClan.getClan() == castle.getOwner() ? OWNER : ACCEPTED, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
+			}
 			for (SiegeClanObject siegeClan : defendersWaiting)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), WAITING, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
+			}
 			for (SiegeClanObject siegeClan : defendersRefused)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), REFUSE, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
+			}
 		}
 		else
 		{
@@ -109,5 +115,6 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 				packetWriter.writeD(0x00);
 			}
 		}
+		return true;
 	}
 }

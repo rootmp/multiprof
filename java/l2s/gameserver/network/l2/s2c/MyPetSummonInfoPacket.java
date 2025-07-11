@@ -215,5 +215,6 @@ public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 
 		packetWriter.writeD(evolveLevel);
 		packetWriter.writeD(npc_id); // pet name from id. 0 evolve lvl without name,
+		return true;
 	}
 }

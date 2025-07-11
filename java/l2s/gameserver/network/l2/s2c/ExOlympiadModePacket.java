@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExOlympiadModePacket implements IClientOutgoingPacket
@@ -18,5 +19,6 @@ public class ExOlympiadModePacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_mode);
+		return true;
 	}
 }

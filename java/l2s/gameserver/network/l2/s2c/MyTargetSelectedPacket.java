@@ -55,5 +55,6 @@ public class MyTargetSelectedPacket implements IClientOutgoingPacket
 			packetWriter.writeH(_color);
 			packetWriter.writeD(_actionMenu ? 0x03 : 0x00); // TargetSelectionMode (0 - Standart, 3 - Context menu (With ALT))
 		}
+		return true;
 	}
 }

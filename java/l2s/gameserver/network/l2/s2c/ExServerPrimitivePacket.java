@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * A packet used to draw points and lines on client.<br/>
@@ -210,6 +211,7 @@ public class ExServerPrimitivePacket implements IClientOutgoingPacket
 			// "+line.getX2()+" line y2: "+line.getY2()+" line z2: "+line.getZ2()+"");
 
 		}
+		return true;
 	}
 
 	private static class Point

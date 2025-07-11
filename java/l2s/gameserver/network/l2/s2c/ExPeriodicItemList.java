@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public final class ExPeriodicItemList implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public final class ExPeriodicItemList implements IClientOutgoingPacket
 		packetWriter.writeD(_result);
 		packetWriter.writeD(_objectID);
 		packetWriter.writeD(_period);
+		return true;
 	}
 }

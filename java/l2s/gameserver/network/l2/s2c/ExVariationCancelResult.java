@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExVariationCancelResult implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExVariationCancelResult implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_unk1);
 		packetWriter.writeD(_closeWindow);
+		return true;
 	}
 }

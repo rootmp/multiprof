@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExLetterCollectorUiLauncher implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExLetterCollectorUiLauncher implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(activate);
 		packetWriter.writeD(minLevel);
+		return true;
 	}
 }

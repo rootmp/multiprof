@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.LimitedShopContainer;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
@@ -47,7 +47,7 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 			int ingredientsSize = entry.getIngredients().size();
 			if ((ingredientsSize > 5) || (ingredientsSize == 0))
 			{
-				return;
+				return true;
 			}
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
@@ -55,14 +55,18 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 				packetWriter.writeD(ingredient.getItemId());
 			}
 			for (int j = 5; j > ingredientsSize; j--)
+			{
 				packetWriter.writeD(0);
+			}
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
 			{
 				packetWriter.writeQ(ingredient.getItemCount());
 			}
 			for (int j = 5; j > ingredientsSize; j--)
+			{
 				packetWriter.writeQ(0);
+			}
 
 			for (LimitedShopIngredient ingredient : entry.getIngredients())
 			{
@@ -77,5 +81,6 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 			packetWriter.writeD(0); // remain server item amount
 			packetWriter.writeH(0); // circle num
 		}
+		return true;
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInfo;
 
 /**
@@ -17,6 +17,7 @@ public class ExChangeAttributeItemList implements IClientOutgoingPacket
 		_itemsList = itemsList;
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_itemId);
@@ -25,5 +26,6 @@ public class ExChangeAttributeItemList implements IClientOutgoingPacket
 		{
 			writeItemInfo(item);
 		}
+		return true;
 	}
 }

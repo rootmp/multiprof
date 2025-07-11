@@ -21,5 +21,6 @@ public class ExNewHennaCompose implements IClientOutgoingPacket
 		packetWriter.writeD(nResultHennaID);
 		packetWriter.writeD(nResultItemID);
 		packetWriter.writeC(cSuccess);
+		return true;
 	}
 }

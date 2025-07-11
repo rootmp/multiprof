@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -26,5 +26,6 @@ public class ExBaseAttributeCancelResult implements IClientOutgoingPacket
 		packetWriter.writeD(_result);
 		packetWriter.writeD(_objectId);
 		packetWriter.writeD(_element.getId());
+		return true;
 	}
 }

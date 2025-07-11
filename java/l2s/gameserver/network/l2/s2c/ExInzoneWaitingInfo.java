@@ -1,12 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
-
-import l2s.gameserver.data.xml.holder.InstantZoneHolder;
-import l2s.gameserver.model.Player;
 
 import gnu.trove.iterator.TIntIntIterator;
 import gnu.trove.map.TIntIntMap;
 import gnu.trove.map.hash.TIntIntHashMap;
+import l2s.commons.network.PacketWriter;
+import l2s.gameserver.data.xml.holder.InstantZoneHolder;
+import l2s.gameserver.model.Player;
 
 /**
  * @author Bonux
@@ -23,14 +22,18 @@ public class ExInzoneWaitingInfo implements IClientOutgoingPacket
 		_instanceTimes = new TIntIntHashMap();
 
 		if (player.getActiveReflection() != null)
+		{
 			_currentInzoneID = player.getActiveReflection().getInstancedZoneId();
+		}
 
 		int limit;
 		for (int i : player.getInstanceReuses().keySet())
 		{
 			limit = InstantZoneHolder.getInstance().getMinutesToNextEntrance(i, player);
 			if (limit > 0)
+			{
 				_instanceTimes.put(i, limit * 60);
+			}
 		}
 	}
 
@@ -48,5 +51,6 @@ public class ExInzoneWaitingInfo implements IClientOutgoingPacket
 			packetWriter.writeD(iterator.key());
 			packetWriter.writeD(iterator.value());
 		}
+		return true;
 	}
 }

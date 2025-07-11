@@ -83,5 +83,6 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(0);
 			}
 		}
+		return true;
 	}
 }

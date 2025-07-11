@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.residence.Castle;
@@ -79,5 +79,6 @@ public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacke
 		packetWriter.writeD(status);
 		packetWriter.writeD(attackersCount); // Castle Siege Camp
 		packetWriter.writeD(defendersCount); // Defenders' Camp
+		return true;
 	}
 }

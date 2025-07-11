@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.HennaHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.henna.HennaTemplate;
@@ -24,7 +24,9 @@ public class HennaEquipListPacket implements IClientOutgoingPacket
 		for (HennaTemplate element : HennaHolder.getInstance().getHennas())
 		{
 			if (player.getInventory().getItemByItemId(element.getDyeId()) != null)
+			{
 				_hennas.add(element);
+			}
 		}
 	}
 
@@ -42,5 +44,6 @@ public class HennaEquipListPacket implements IClientOutgoingPacket
 			packetWriter.writeQ(henna.getDrawPrice());
 			packetWriter.writeD(henna.isForThisClass(_player) ? 0x01 : 0x00);
 		}
+		return true;
 	}
 }

@@ -31,5 +31,6 @@ public class StopMovePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_y);
 		packetWriter.writeD(_z);
 		packetWriter.writeD(_heading);
+		return true;
 	}
 }

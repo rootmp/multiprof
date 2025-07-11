@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExCuriousHouseMemberUpdate implements IClientOutgoingPacket
@@ -20,5 +20,6 @@ public class ExCuriousHouseMemberUpdate implements IClientOutgoingPacket
 		packetWriter.writeD(_player.getMaxCp());
 		packetWriter.writeD((int) _player.getCurrentHp());
 		packetWriter.writeD((int) _player.getCurrentCp());
+		return true;
 	}
 }

@@ -21,5 +21,6 @@ public class ExCraftInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_player.getCraftPoints());
 		packetWriter.writeD(_player.getCraftGaugePoints());
 		packetWriter.writeC((_player.getCraftPoints() > 0) ? 1 : 0);// button color (think change if craft points > 0)
+		return true;
 	}
 }

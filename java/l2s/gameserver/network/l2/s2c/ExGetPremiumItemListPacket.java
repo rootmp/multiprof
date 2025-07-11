@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.PremiumItem;
 
@@ -29,6 +29,7 @@ public class ExGetPremiumItemListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(premiumItem.getItemId());
 			packetWriter.writeS(premiumItem.getSender());
 		}
+		return true;
 	}
 
 }

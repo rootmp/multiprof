@@ -153,6 +153,7 @@ public class SayPacket2 extends NpcStringContainer
 			if (player != null)
 				player.getListeners().onChatMessageReceive(_type, _charName, _text);
 		}
+		return true;
 	}
 
 	private void manageTeleport(Player player, boolean free)

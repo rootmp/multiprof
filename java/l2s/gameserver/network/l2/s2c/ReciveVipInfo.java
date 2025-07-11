@@ -45,5 +45,6 @@ public class ReciveVipInfo implements IClientOutgoingPacket
 		packetWriter.writeQ(_pointsCountForConsume); // Points count for consume
 		packetWriter.writeC(_vipLevelAfterConsume); // VIP level after consume
 		packetWriter.writeQ(_totalConsumedPoints); // Total consumed points
+		return true;
 	}
 }

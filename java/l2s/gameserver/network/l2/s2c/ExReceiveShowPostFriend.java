@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.napile.primitive.maps.IntObjectMap;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -23,6 +23,10 @@ public class ExReceiveShowPostFriend implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_list.size());
 		for (String t : _list.valueCollection())
+		{
 			packetWriter.writeS(t);
+		}
+
+		return true;
 	}
 }

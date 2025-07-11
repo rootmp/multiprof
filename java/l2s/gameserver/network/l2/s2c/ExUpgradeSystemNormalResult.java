@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.Collections;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInfo;
 
 public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
@@ -61,5 +61,6 @@ public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
 				packetWriter.writeD((int) item.getCount()); // ItemCount
 			}
 		}
+		return true;
 	}
 }

@@ -67,5 +67,6 @@ public class TradeStartPacket implements IClientOutgoingPacket
 			for (ItemInfo item : _tradelist)
 				writeItemInfo(item);
 		}
+		return true;
 	}
 }

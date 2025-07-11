@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.Collections;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.enums.SkillCastingType;
@@ -71,6 +71,7 @@ public class MagicSkillLaunchedPacket implements IClientOutgoingPacket
 				packetWriter.writeD(target.getObjectId());
 			}
 		}
+		return true;
 	}
 
 	@Override

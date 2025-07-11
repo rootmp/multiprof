@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.StatsSet;
@@ -57,5 +57,6 @@ public class ExPvpRankingMyInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0); // kills
 			packetWriter.writeD(0); // deaths
 		}
+		return true;
 	}
 }

@@ -71,5 +71,6 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 				packetWriter.writeQ(bi.getStorePrice());
 			}
 		}
+		return true;
 	}
 }

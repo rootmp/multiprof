@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -59,11 +59,12 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 		// 6 - item get from "limited random creation"
 		// 7 - fire and item get from container
 		// 8 and others - null item name by item_id and icon from chest.
-		
-	    packetWriter.writeC(_type); // announce type
-	    packetWriter.writeString(_name); // name of player
-	    packetWriter.writeD(_itemId); // item id
-	    packetWriter.writeC(_enchantLevel); // enchant level
-	    packetWriter.writeD(_misc); // chest item id
+
+		packetWriter.writeC(_type); // announce type
+		packetWriter.writeString(_name); // name of player
+		packetWriter.writeD(_itemId); // item id
+		packetWriter.writeC(_enchantLevel); // enchant level
+		packetWriter.writeD(_misc); // chest item id
+		return true;
 	}
 }

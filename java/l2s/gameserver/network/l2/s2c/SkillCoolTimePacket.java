@@ -51,6 +51,7 @@ public class SkillCoolTimePacket implements IClientOutgoingPacket
 			packetWriter.writeD(sk._reuseBase); // Total reuse delay, seconds
 			packetWriter.writeD(sk._reuseCurrent); // Time remaining, seconds
 		}
+		return true;
 	}
 
 	private static class Skill

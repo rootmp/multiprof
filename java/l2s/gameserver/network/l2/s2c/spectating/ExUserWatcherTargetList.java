@@ -29,5 +29,6 @@ public class ExUserWatcherTargetList implements IClientOutgoingPacket
 			packetWriter.writeD(s.getClassId());
 			packetWriter.writeC(s.isOnline());
 		}
+		return true;
 	}
 }

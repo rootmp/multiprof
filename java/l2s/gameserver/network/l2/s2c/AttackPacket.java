@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
 
@@ -121,5 +121,6 @@ public class AttackPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_tx);
 		packetWriter.writeD(_ty);
 		packetWriter.writeD(_tz);
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -22,5 +23,6 @@ public class ExPremiumManagerShowHTML implements IClientOutgoingPacket
 		packetWriter.writeS(_html);
 		packetWriter.writeD(-1);
 		packetWriter.writeD(_isMain ? 0 : 1);
+		return true;
 	}
 }

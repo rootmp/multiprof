@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -40,8 +40,11 @@ public class GMViewItemListPacket implements IClientOutgoingPacket
 			for (ItemInstance temp : _items)
 			{
 				if (!temp.getTemplate().isQuest())
+				{
 					writeItemInfo(_player, temp);
+				}
 			}
 		}
+		return true;
 	}
 }

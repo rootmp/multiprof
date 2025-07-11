@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.dao.MailDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.mail.Mail;
@@ -47,5 +47,6 @@ public class ExShowSentPostList implements IClientOutgoingPacket
 			packetWriter.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
 			packetWriter.writeD(0x00); // ???
 		}
+		return true;
 	}
 }

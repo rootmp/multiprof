@@ -100,5 +100,6 @@ public class ExSteadyOneBoxUpdate implements IClientOutgoingPacket
 			packetWriter.writeD(boxType);
 			packetWriter.writeD(timer);
 		}
+		return true;
 	}
 }

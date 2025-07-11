@@ -51,6 +51,7 @@ public class PledgeSkillListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(info._id);
 			packetWriter.writeD(info._level);
 		}
+		return true;
 	}
 
 	static class SkillInfo

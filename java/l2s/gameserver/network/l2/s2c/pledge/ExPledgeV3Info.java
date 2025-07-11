@@ -26,5 +26,6 @@ public class ExPledgeV3Info implements IClientOutgoingPacket
 		packetWriter.writeD(rank);
 		packetWriter.writeString(announce);
 		packetWriter.writeC(isShowOnEnter);
+		return true;
 	}
 }

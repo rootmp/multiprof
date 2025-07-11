@@ -17,5 +17,6 @@ public class ExHidePetExtractSystem implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(0xFE); // dummy
+		return true;
 	}
 }

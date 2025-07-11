@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -21,5 +22,6 @@ public class EventTriggerPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_trapId); // trap object id
 		packetWriter.writeC(_active ? 1 : 0); // trap activity 1 or 0
+		return true;
 	}
 }

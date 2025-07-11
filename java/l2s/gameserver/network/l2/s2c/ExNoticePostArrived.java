@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.network.l2.c2s.RequestExRequestReceivedPostList;
 
 /**
@@ -23,5 +23,6 @@ public class ExNoticePostArrived implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_anim); // 0 - просто показать уведомление, 1 - с красивой анимацией
+		return true;
 	}
 }

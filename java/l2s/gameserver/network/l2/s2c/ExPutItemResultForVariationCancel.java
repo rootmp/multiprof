@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.utils.VariationUtils;
 
@@ -33,5 +33,6 @@ public class ExPutItemResultForVariationCancel implements IClientOutgoingPacket
 		packetWriter.writeD(_aug2);
 		packetWriter.writeQ(_price);
 		packetWriter.writeD(0x01);
+		return true;
 	}
 }

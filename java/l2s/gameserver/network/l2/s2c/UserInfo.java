@@ -668,5 +668,6 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		{
 			packetWriter.writeC(_specialMountId);
 		}
+		return true;
 	}
 }

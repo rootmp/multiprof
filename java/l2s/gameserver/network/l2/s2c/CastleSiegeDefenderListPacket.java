@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +6,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.events.objects.SiegeClanObject;
@@ -59,20 +59,28 @@ public class CastleSiegeDefenderListPacket implements IClientOutgoingPacket
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 		if (siegeEvent != null)
 		{
-			_registrationValid = !siegeEvent.isRegistrationOver() && castle.getOwner() != null ? 1 : 0;
+			_registrationValid = !siegeEvent.isRegistrationOver() && (castle.getOwner() != null) ? 1 : 0;
 
 			List<SiegeClanObject> defenders = siegeEvent.getObjects(SiegeEvent.DEFENDERS);
 			List<SiegeClanObject> defendersWaiting = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_WAITING);
 			List<SiegeClanObject> defendersRefused = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_REFUSED);
 			_defenderClans = new ArrayList<DefenderClan>(defenders.size() + defendersWaiting.size() + defendersRefused.size());
 			if (castle.getOwner() != null)
+			{
 				_defenderClans.add(new DefenderClan(castle.getOwner(), OWNER, 0));
+			}
 			for (SiegeClanObject siegeClan : defenders)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), ACCEPTED, (int) (siegeClan.getDate() / 1000L)));
+			}
 			for (SiegeClanObject siegeClan : defendersWaiting)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), WAITING, (int) (siegeClan.getDate() / 1000L)));
+			}
 			for (SiegeClanObject siegeClan : defendersRefused)
+			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), REFUSE, (int) (siegeClan.getDate() / 1000L)));
+			}
 		}
 	}
 
@@ -111,6 +119,7 @@ public class CastleSiegeDefenderListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(0x00);
 			}
 		}
+		return true;
 	}
 
 	private static class DefenderClan

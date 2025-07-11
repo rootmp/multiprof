@@ -44,5 +44,6 @@ public class RecipeShopItemInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeF(chanceBonus); // Craft chance bonus
 		packetWriter.writeC(canCrit); // Critical craft available
 		packetWriter.writeF(critChance); // Critical craft chance
+		return true;
 	}
 }

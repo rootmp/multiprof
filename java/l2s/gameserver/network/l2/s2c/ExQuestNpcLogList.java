@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.quest.QuestNpcLogInfo;
 import l2s.gameserver.model.quest.QuestState;
 
@@ -65,7 +65,9 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 				}
 
 				for (int itemId : entry.getNpcIds())
+				{
 					i[2] += (int) state.getQuestItemsCount(itemId);
+				}
 				i[2] = Math.min(i[2], entry.getMaxCount());
 
 				_logList.add(i);
@@ -79,7 +81,9 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 			{
 				int npcStringId = entry.getNpcStringId();
 				if (npcStringId == 0)
+				{
 					continue;
+				}
 
 				int[] i = new int[3];
 				i[0] = npcStringId;
@@ -103,5 +107,6 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 			packetWriter.writeC(values[1]);
 			packetWriter.writeD(values[2]);
 		}
+		return true;
 	}
 }

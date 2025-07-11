@@ -17,5 +17,6 @@ public class ShortCutRegisterPacket extends ShortCutPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		_shortcutInfo.write(this);
+		return true;
 	}
 }

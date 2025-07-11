@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.CommandChannel;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -24,7 +24,9 @@ public class ExMultiPartyCommandChannelInfoPacket implements IClientOutgoingPack
 		{
 			Player leader = party.getPartyLeader();
 			if (leader != null)
+			{
 				parties.add(new ChannelPartyInfo(leader.getName(), leader.getObjectId(), party.getMemberCount()));
+			}
 		}
 	}
 
@@ -42,6 +44,7 @@ public class ExMultiPartyCommandChannelInfoPacket implements IClientOutgoingPack
 			packetWriter.writeD(party.Leader_obj_id); // ObjId пати лидера
 			packetWriter.writeD(party.MemberCount); // количество мемберов в пати
 		}
+		return true;
 	}
 
 	static class ChannelPartyInfo

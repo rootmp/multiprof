@@ -18,5 +18,6 @@ public class ExBlessOptionEnchant implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_success); // success or fail
+		return true;
 	}
 }

@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.pair.IntObjectPair;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.base.ClassId;
@@ -90,5 +90,6 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 				packetWriter.writeD(0);
 			}
 		}
+		return true;
 	}
 }

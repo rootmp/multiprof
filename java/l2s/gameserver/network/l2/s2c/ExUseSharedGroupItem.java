@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.skills.TimeStamp;
 
 public class ExUseSharedGroupItem implements IClientOutgoingPacket
@@ -22,5 +22,6 @@ public class ExUseSharedGroupItem implements IClientOutgoingPacket
 		packetWriter.writeD(_grpId);
 		packetWriter.writeD(_remainedTime);
 		packetWriter.writeD(_totalTime);
+		return true;
 	}
 }

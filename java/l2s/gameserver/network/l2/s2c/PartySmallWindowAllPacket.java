@@ -60,6 +60,7 @@ public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 				packetWriter.writeC(servitor.level);
 			}
 		}
+		return true;
 	}
 
 	public static class PartySmallWindowMemberInfo

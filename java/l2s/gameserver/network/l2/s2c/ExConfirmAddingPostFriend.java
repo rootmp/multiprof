@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -30,5 +31,6 @@ public class ExConfirmAddingPostFriend implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_name);
 		packetWriter.writeD(_result);
+		return true;
 	}
 }

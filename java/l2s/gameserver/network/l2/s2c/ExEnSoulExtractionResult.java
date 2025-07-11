@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.item.support.Ensoul;
 
 /**
@@ -36,11 +36,16 @@ public class ExEnSoulExtractionResult implements IClientOutgoingPacket
 		{
 			packetWriter.writeC(_normalEnsouls.length);
 			for (Ensoul ensoul : _normalEnsouls)
+			{
 				packetWriter.writeD(ensoul.getId());
+			}
 
 			packetWriter.writeC(_specialEnsouls.length);
 			for (Ensoul ensoul : _specialEnsouls)
+			{
 				packetWriter.writeD(ensoul.getId());
+			}
 		}
+		return true;
 	}
 }

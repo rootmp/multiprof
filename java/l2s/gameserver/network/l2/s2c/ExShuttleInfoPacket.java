@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.entity.boat.Shuttle;
 import l2s.gameserver.templates.ShuttleTemplate.ShuttleStop;
@@ -53,5 +53,6 @@ public class ExShuttleInfoPacket implements IClientOutgoingPacket
 				packetWriter.writeD(false);
 			}
 		}
+		return true;
 	}
 }

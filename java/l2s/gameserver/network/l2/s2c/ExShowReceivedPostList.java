@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.dao.MailDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.mail.Mail;
@@ -45,14 +45,17 @@ public class ExShowReceivedPostList implements IClientOutgoingPacket
 			packetWriter.writeD(mail.getType().ordinal()); // тип письма
 
 			if (mail.getType() == Mail.SenderType.SYSTEM)
+			{
 				packetWriter.writeD(mail.getSystemTopic());
+			}
 
 			packetWriter.writeD(mail.getMessageId()); // уникальный id письма
 			packetWriter.writeS(mail.getTopic()); // топик
 			packetWriter.writeS(mail.getSenderName()); // отправитель
 			packetWriter.writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
 			packetWriter.writeD(mail.getExpireTime()); // время действительности письма
-			packetWriter.writeD(mail.isUnread() ? 1 : 0); // письмо не прочитано - его нельзя удалить и оно выделяется ярким цветом
+			packetWriter.writeD(mail.isUnread() ? 1 : 0); // письмо не прочитано - его нельзя удалить и оно выделяется
+															// ярким цветом
 			packetWriter.writeD(mail.isReturnable()); // returnable
 			packetWriter.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
 			packetWriter.writeD(mail.isReturned() ? 1 : 0);
@@ -60,5 +63,6 @@ public class ExShowReceivedPostList implements IClientOutgoingPacket
 		}
 		packetWriter.writeD(100);
 		packetWriter.writeD(1000);
+		return true;
 	}
 }

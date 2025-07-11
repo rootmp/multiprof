@@ -7,5 +7,6 @@ public class WithdrawAlliance implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO d
+		return true;
 	}
 }

@@ -58,5 +58,6 @@ public class ExCollectionRegister implements IClientOutgoingPacket
 		packetWriter.writeC(0);
 		packetWriter.writeH(_item.getEnchantLevel());
 		packetWriter.writeD((int) itemCount);
+		return true;
 	}
 }

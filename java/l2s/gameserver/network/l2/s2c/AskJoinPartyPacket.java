@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -30,5 +31,6 @@ public class AskJoinPartyPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_requestorName);
 		packetWriter.writeD(_itemDistribution);
+		return true;
 	}
 }

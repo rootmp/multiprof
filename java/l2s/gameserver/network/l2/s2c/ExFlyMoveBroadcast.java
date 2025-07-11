@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.model.Player;
 
@@ -41,5 +41,6 @@ public class ExFlyMoveBroadcast implements IClientOutgoingPacket
 		packetWriter.writeD(_destLoc.getX());
 		packetWriter.writeD(_destLoc.getY());
 		packetWriter.writeD(_destLoc.getZ());
+		return true;
 	}
 }

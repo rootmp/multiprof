@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -26,5 +26,6 @@ public class ExFishingEndPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_charId);
 		packetWriter.writeC(_type);
+		return true;
 	}
 }

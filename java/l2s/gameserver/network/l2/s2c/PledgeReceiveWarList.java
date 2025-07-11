@@ -38,5 +38,6 @@ public class PledgeReceiveWarList implements IClientOutgoingPacket
 			packetWriter.writeD(war.calculateWarProgress(_clan).ordinal());
 			packetWriter.writeD(0); // Friends to start war left
 		}
+		return true;
 	}
 }

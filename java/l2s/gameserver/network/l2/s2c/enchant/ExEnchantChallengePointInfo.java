@@ -28,6 +28,6 @@ public class ExEnchantChallengePointInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0); // ticket point opt5
 			packetWriter.writeD(0); // ticket point opt6
 		}
-
+		return true;
 	}
 }

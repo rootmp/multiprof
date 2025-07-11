@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.ZoneId;
 import java.util.Calendar;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.MissionLevelRewardsHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.MissionLevelReward;
@@ -182,5 +182,6 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		packetWriter.writeD(totalAvailable); // total rewards available
 		packetWriter.writeD(extraAvailable); // extra rewards available
 		packetWriter.writeD((int) seasonEnd); // remain season time
+		return true;
 	}
 }

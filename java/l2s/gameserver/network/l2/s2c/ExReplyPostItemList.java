@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
@@ -27,7 +27,9 @@ public class ExReplyPostItemList implements IClientOutgoingPacket
 		for (ItemInstance item : items)
 		{
 			if (item.canBeTraded(activeChar))
+			{
 				_itemsList.add(new ItemInfo(item, item.getTemplate().isBlocked(activeChar, item)));
+			}
 		}
 	}
 
@@ -40,7 +42,10 @@ public class ExReplyPostItemList implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(_itemsList.size());
 			for (ItemInfo item : _itemsList)
+			{
 				writeItemInfo(item);
+			}
 		}
+		return true;
 	}
 }

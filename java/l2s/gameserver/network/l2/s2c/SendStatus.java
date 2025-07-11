@@ -83,5 +83,6 @@ public final class SendStatus implements IClientOutgoingPacket
 		packetWriter.writeD(37211 + Rnd.get(2397));
 		packetWriter.writeD(0x00);
 		packetWriter.writeD(0x02);
+		return true;
 	}
 }

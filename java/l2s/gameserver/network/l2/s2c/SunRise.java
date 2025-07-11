@@ -6,5 +6,6 @@ public class SunRise implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
+		return true;
 	}
 }

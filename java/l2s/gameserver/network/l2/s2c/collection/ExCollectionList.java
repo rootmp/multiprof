@@ -52,5 +52,6 @@ public class ExCollectionList implements IClientOutgoingPacket
 				packetWriter.writeD(0); // expiration time in seconds
 			}
 		}
+		return true;
 	}
 }

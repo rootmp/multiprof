@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.SoulShotType;
 
 public class ExAutoSoulShot implements IClientOutgoingPacket
@@ -22,5 +22,6 @@ public class ExAutoSoulShot implements IClientOutgoingPacket
 		packetWriter.writeD(_itemId);
 		packetWriter.writeD(_slotId);
 		packetWriter.writeD(_type);
+		return true;
 	}
 }

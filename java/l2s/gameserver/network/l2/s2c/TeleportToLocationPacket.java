@@ -35,5 +35,6 @@ public class TeleportToLocationPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // IsValidation
 		packetWriter.writeD(_loc.h);
 		packetWriter.writeD(0); // ??? 0
+		return true;
 	}
 }

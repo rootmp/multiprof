@@ -1,12 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
-
-import l2s.gameserver.model.Player;
-import l2s.gameserver.model.quest.QuestState;
 
 import gnu.trove.iterator.TIntIntIterator;
 import gnu.trove.map.TIntIntMap;
 import gnu.trove.map.hash.TIntIntHashMap;
+import l2s.commons.network.PacketWriter;
+import l2s.gameserver.model.Player;
+import l2s.gameserver.model.quest.QuestState;
 
 public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 {
@@ -19,7 +18,9 @@ public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 		for (QuestState quest : targetCharacter.getAllQuestsStates())
 		{
 			if (quest.getQuest().isVisible(targetCharacter) && quest.isStarted())
+			{
 				_quests.put(quest.getQuest().getId(), quest.getCondsMask());
+			}
 		}
 	}
 
@@ -36,5 +37,6 @@ public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(iterator.value());
 		}
 		packetWriter.writeH(0); // количество элементов типа: ddQd , как-то связано с предметами
+		return true;
 	}
 }

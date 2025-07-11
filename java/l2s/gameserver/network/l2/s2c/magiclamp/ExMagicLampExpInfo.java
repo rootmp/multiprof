@@ -34,5 +34,6 @@ public class ExMagicLampExpInfo implements IClientOutgoingPacket
 		packetWriter.writeD(MAX_LAMP_EXP); // points to gain 1 lamp
 		packetWriter.writeD(currentPoints); // current points
 		packetWriter.writeD(lampsExist); // lamps exist
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class LoginResultPacket implements IClientOutgoingPacket
@@ -29,5 +30,6 @@ public class LoginResultPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_reason1);
 		packetWriter.writeD(_reason2);
+		return true;
 	}
 }

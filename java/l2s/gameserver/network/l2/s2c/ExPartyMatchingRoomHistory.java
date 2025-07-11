@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -16,7 +17,9 @@ public class ExPartyMatchingRoomHistory implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(0x00); // Previously existent rooms count
 		/*
-		 * for(rooms count) { packetWriter.writeS(""); // Name packetWriter.writeS(""); // Owner }
+		 * for(rooms count) { packetWriter.writeS(""); // Name packetWriter.writeS("");
+		 * // Owner }
 		 */
+		return true;
 	}
 }

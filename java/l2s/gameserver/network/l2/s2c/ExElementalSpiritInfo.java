@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
@@ -71,5 +71,6 @@ public class ExElementalSpiritInfo implements IClientOutgoingPacket
 		packetWriter.writeD(1); // UNK
 		packetWriter.writeD(Config.ELEMENTAL_RESET_POINTS_ITEM_ID); // Stats reset cost Item ID
 		packetWriter.writeQ(Config.ELEMENTAL_RESET_POINTS_ITEM_COUNT); // Stats reset cost
+		return true;
 	}
 }

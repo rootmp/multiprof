@@ -8,5 +8,6 @@ public class PledgeShowMemberListDeleteAllPacket implements IClientOutgoingPacke
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
+		return true;
 	}
 }

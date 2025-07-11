@@ -20,5 +20,6 @@ public class ExPenaltyItemInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_player.getItemsToRestore().size()); // items to restore
 		packetWriter.writeD(50); // items max count
+		return true;
 	}
 }

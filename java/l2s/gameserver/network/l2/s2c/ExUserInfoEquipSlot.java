@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.network.l2.s2c.updatetype.InventorySlot;
@@ -68,5 +68,6 @@ public class ExUserInfoEquipSlot extends AbstractMaskPacket<InventorySlot>
 				packetWriter.writeD(inventory.getPaperdollItemId(slot.getSlot()));
 			}
 		}
+		return true;
 	}
 }

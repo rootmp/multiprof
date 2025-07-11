@@ -52,5 +52,6 @@ public class PetStatusUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeQ(exp_this_lvl);// 0% absolute value
 		packetWriter.writeQ(exp_next_lvl);// 100% absolute value
 		packetWriter.writeD(1); // ???
+		return true;
 	}
 }

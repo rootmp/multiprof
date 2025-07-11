@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExUpgradeSystemResult implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExUpgradeSystemResult implements IClientOutgoingPacket
 	{
 		packetWriter.writeH(result);
 		packetWriter.writeD(objectId);
+		return true;
 	}
 }

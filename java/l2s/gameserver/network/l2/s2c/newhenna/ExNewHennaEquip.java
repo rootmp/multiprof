@@ -28,5 +28,6 @@ public class ExNewHennaEquip implements IClientOutgoingPacket
 		packetWriter.writeC(cSlotID);
 		packetWriter.writeD(nHennaID);
 		packetWriter.writeC(cSuccess);
+		return true;
 	}
 }

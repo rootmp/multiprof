@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * sample 0000: 85 02 00 10 04 00 00 01 00 4b 02 00 00 2c 04 00 .........K...,..
@@ -53,5 +54,6 @@ public class AbnormalStatusUpdatePacket implements IClientOutgoingPacket
 			packetWriter.writeD(temp._abnormalType);
 			writeOptionalD(temp._duration);
 		}
+		return true;
 	}
 }

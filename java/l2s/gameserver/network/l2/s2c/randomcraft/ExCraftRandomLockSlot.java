@@ -33,7 +33,7 @@ public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 				case 0:
 				{
 					if (_player.getInventory().getItemByItemId(MONEY_L).getCount() < 100)
-						return;
+						return false;
 					else
 						_player.getInventory().destroyItemByItemId(MONEY_L, 100);
 					break;
@@ -41,7 +41,7 @@ public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 				case 1:
 				{
 					if (_player.getInventory().getItemByItemId(MONEY_L).getCount() < 500)
-						return;
+						return false;
 					else
 						_player.getInventory().destroyItemByItemId(MONEY_L, 500);
 					break;
@@ -49,7 +49,7 @@ public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 				case 2:
 				{
 					if (_player.getInventory().getItemByItemId(MONEY_L).getCount() < 1000)
-						return;
+						return false;
 					else
 						_player.getInventory().destroyItemByItemId(MONEY_L, 1000);
 					break;
@@ -64,11 +64,12 @@ public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 		}
 		else
 		{
-			return;
+			return false;
 		}
 
 		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomLockSlot(_player, lockedCount));//?
 		_player.sendPacket(new ExCraftRandomInfo(_player));
+		return true;
 	}
 }

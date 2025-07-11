@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.templates.StatsSet;
@@ -38,5 +38,6 @@ public class ExHeroListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(Config.REQUEST_ID); // server id
 			packetWriter.writeC(0); // unk
 		}
+		return true;
 	}
 }

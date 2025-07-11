@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -44,8 +44,11 @@ public class ExGMViewQuestItemListPacket implements IClientOutgoingPacket
 			for (ItemInstance temp : _items)
 			{
 				if (temp.getTemplate().isQuest())
+				{
 					writeItemInfo(temp);
+				}
 			}
 		}
+		return true;
 	}
 }

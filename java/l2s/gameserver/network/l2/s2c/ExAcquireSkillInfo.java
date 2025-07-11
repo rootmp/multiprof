@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.SkillLearn;
@@ -25,7 +25,7 @@ public class ExAcquireSkillInfo implements IClientOutgoingPacket
 		for (Skill skill : learn.getBlockedSkills())
 		{
 			SkillEntry knownSkill = player.getKnownSkill(skill.getId());
-			if (knownSkill != null && knownSkill.getLevel() >= skill.getLevel())
+			if ((knownSkill != null) && (knownSkill.getLevel() >= skill.getLevel()))
 			{
 				_blockedSkills.add(skill);
 			}
@@ -52,5 +52,6 @@ public class ExAcquireSkillInfo implements IClientOutgoingPacket
 			packetWriter.writeD(skill.getId());
 			packetWriter.writeD(skill.getLevel());
 		}
+		return true;
 	}
 }

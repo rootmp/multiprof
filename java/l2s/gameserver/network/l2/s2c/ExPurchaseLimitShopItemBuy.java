@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.LimitedShopHolder;
 import l2s.gameserver.model.Player;
@@ -52,7 +52,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 				{
 					if ((ingredient.getItemCount() <= 0) || (_itemCount <= 0))
 					{
-						return;
+						return true;
 					}
 
 					Clan clan = _player.getClan();
@@ -68,7 +68,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 						}
 						else
 						{
-							return;
+							return true;
 						}
 					}
 					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_FAME)
@@ -81,7 +81,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 						}
 						else
 						{
-							return;
+							return true;
 						}
 					}
 					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
@@ -94,7 +94,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 						}
 						else
 						{
-							return;
+							return true;
 						}
 					}
 					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_HONOR_COIN)
@@ -109,7 +109,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 						}
 						else
 						{
-							return;
+							return true;
 						}
 					}
 					else
@@ -121,7 +121,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 							sm.addItemName(ingredient.getItemId());
 							sm.addNumber(ingredient.getItemCount() * _itemCount);
 							_player.sendPacket(sm);
-							return;
+							return true;
 						}
 					}
 				}
@@ -139,13 +139,21 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 
 				int productsCount = 1;
 				if (product.getInfo().getInteger("product2Id") > 0)
+				{
 					productsCount++;
+				}
 				if (product.getInfo().getInteger("product3Id") > 0)
+				{
 					productsCount++;
+				}
 				if (product.getInfo().getInteger("product4Id") > 0)
+				{
 					productsCount++;
+				}
 				if (product.getInfo().getInteger("product5Id") > 0)
+				{
 					productsCount++;
+				}
 
 				int resultProductId = 0;
 				int resultProductCount = 0;
@@ -287,5 +295,6 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 		}
 		_player.sendPacket(new ExBloodyCoinCount(_player));
 		_player.sendPacket(new ExPledgeCoinInfo(_player));
+		return true;
 	}
 }

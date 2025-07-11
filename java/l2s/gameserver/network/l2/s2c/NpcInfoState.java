@@ -34,5 +34,6 @@ public class NpcInfoState implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeC(_state);
+		return true;
 	}
 }

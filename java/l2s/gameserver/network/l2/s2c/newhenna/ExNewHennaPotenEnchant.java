@@ -35,5 +35,6 @@ public class ExNewHennaPotenEnchant implements IClientOutgoingPacket
 		packetWriter.writeH(nDailyCount);
 		packetWriter.writeH(nActiveStep);
 		packetWriter.writeC(cSuccess);
+		return true;
 	}
 }

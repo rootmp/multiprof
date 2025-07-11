@@ -46,5 +46,6 @@ public class ExSubjugationList implements IClientOutgoingPacket
 			packetWriter.writeD(keysHave);
 			packetWriter.writeD(maximumKeys);
 		}
+		return true;
 	}
 }

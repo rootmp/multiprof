@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.entity.boat.Shuttle;
 
@@ -27,5 +27,6 @@ public class ExSuttleMovePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_destination.getX()); // Destination X
 		packetWriter.writeD(_destination.getY()); // Destination Y
 		packetWriter.writeD(_destination.getZ()); // Destination Z
+		return true;
 	}
 }

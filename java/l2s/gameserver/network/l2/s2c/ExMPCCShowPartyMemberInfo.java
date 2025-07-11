@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 
@@ -20,7 +20,9 @@ public class ExMPCCShowPartyMemberInfo implements IClientOutgoingPacket
 	{
 		members = new ArrayList<PartyMemberInfo>();
 		for (Player _member : party.getPartyMembers())
+		{
 			members.add(new PartyMemberInfo(_member.getName(), _member.getObjectId(), _member.getClassId().getId()));
+		}
 	}
 
 	@Override
@@ -36,6 +38,7 @@ public class ExMPCCShowPartyMemberInfo implements IClientOutgoingPacket
 		}
 
 		members.clear();
+		return true;
 	}
 
 	static class PartyMemberInfo

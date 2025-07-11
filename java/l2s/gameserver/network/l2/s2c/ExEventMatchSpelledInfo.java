@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExEventMatchSpelledInfo implements IClientOutgoingPacket
@@ -39,7 +39,9 @@ public class ExEventMatchSpelledInfo implements IClientOutgoingPacket
 	public void addSpellRecivedPlayer(Player cha)
 	{
 		if (cha != null)
+		{
 			char_obj_id = cha.getObjectId();
+		}
 	}
 
 	@Override
@@ -53,5 +55,6 @@ public class ExEventMatchSpelledInfo implements IClientOutgoingPacket
 			packetWriter.writeH(temp.dat);
 			packetWriter.writeD(temp.duration);
 		}
+		return true;
 	}
 }

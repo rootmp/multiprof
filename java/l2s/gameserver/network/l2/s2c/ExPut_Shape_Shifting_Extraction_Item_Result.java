@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -20,5 +21,6 @@ public class ExPut_Shape_Shifting_Extraction_Item_Result implements IClientOutgo
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_result); // Result
+		return true;
 	}
 }

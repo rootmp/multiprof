@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -26,5 +26,6 @@ public class ChangeMoveTypePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_chaId);
 		packetWriter.writeD(_running ? 1 : 0);
 		packetWriter.writeD(0); // c2
+		return true;
 	}
 }

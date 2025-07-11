@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.DoorInstance;
 
@@ -35,5 +35,6 @@ public final class DoorStatusUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_staticObjectId);
 		packetWriter.writeD(_currentHp);
 		packetWriter.writeD(_maxHp);
+		return true;
 	}
 }

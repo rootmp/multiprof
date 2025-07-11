@@ -79,6 +79,7 @@ public class ExChangedEnchantTargetItemProbabilityList implements IClientOutgoin
 			packetWriter.writeD((int) supportRate);
 			packetWriter.writeD((int) passiveRate);
 		}
+		return true;
 	}
 
 	private int getBaseRate(Player player, int i)

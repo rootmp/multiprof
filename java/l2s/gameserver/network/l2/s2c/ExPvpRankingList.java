@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Friend;
@@ -318,5 +318,6 @@ public class ExPvpRankingList implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(0);
 		}
+		return true;
 	}
 }

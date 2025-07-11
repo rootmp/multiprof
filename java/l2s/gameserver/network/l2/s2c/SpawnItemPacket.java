@@ -47,5 +47,6 @@ public class SpawnItemPacket implements IClientOutgoingPacket
 		packetWriter.writeC(_enchantLevel);
 		packetWriter.writeC(_augmented);
 		packetWriter.writeC(_ensoulCount);
+		return true;
 	}
 }

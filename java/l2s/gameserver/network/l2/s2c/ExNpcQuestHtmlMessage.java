@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -24,5 +25,6 @@ public class ExNpcQuestHtmlMessage implements IClientOutgoingPacket
 		packetWriter.writeD(_npcObjId);
 		packetWriter.writeS(_html);
 		packetWriter.writeD(_questId);
+		return true;
 	}
 }

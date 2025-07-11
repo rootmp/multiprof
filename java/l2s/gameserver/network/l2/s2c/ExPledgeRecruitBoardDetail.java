@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.clansearch.ClanSearchClan;
 
 /**
@@ -16,6 +16,7 @@ public class ExPledgeRecruitBoardDetail implements IClientOutgoingPacket
 		_clan = clan;
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_clan.getClanId());
@@ -24,5 +25,6 @@ public class ExPledgeRecruitBoardDetail implements IClientOutgoingPacket
 		packetWriter.writeS(_clan.getDesc());
 		packetWriter.writeD(_clan.getApplication()); // Application
 		packetWriter.writeD(_clan.getSubUnit()); // Sub Unit Type
+		return true;
 	}
 }

@@ -77,5 +77,6 @@ public class ExSteadyBoxUIInit implements IClientOutgoingPacket
 			timeToReward = 0;
 		}
 		packetWriter.writeD(timeToReward); // timer in seconds to expire and box can open
+		return true;
 	}
 }

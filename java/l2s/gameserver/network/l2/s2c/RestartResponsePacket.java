@@ -18,5 +18,6 @@ public class RestartResponsePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_param); // 01-ok
 		packetWriter.writeS(_message);
+		return true;
 	}
 }

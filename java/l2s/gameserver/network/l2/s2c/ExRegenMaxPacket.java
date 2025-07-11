@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExRegenMaxPacket implements IClientOutgoingPacket
@@ -34,5 +35,6 @@ public class ExRegenMaxPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_count);
 		packetWriter.writeD(_time);
 		packetWriter.writeF(_max);
+		return true;
 	}
 }

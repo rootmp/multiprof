@@ -105,6 +105,8 @@ public class RelationChangedPacket implements IClientOutgoingPacket
 			writeRelation(_datas.get(0));
 		else if ((_mask & SEND_DEFAULT) == SEND_DEFAULT)
 			packetWriter.writeD(_datas.get(0).objectId);
+		
+		return true;
 	}
 
 	private void writeRelation(RelationChangedData data)

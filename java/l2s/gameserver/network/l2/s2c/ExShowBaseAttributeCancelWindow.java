@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.items.ItemInstance;
@@ -20,8 +20,10 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 	{
 		for (ItemInstance item : activeChar.getInventory().getItems())
 		{
-			if (item.getAttributeElement() == Element.NONE || !item.canBeEnchanted() || getAttributeRemovePrice(item) == 0)
+			if ((item.getAttributeElement() == Element.NONE) || !item.canBeEnchanted() || (getAttributeRemovePrice(item) == 0))
+			{
 				continue;
+			}
 			_items.add(item);
 		}
 	}
@@ -35,6 +37,7 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 			packetWriter.writeD(item.getObjectId());
 			packetWriter.writeQ(getAttributeRemovePrice(item));
 		}
+		return true;
 	}
 
 	public static long getAttributeRemovePrice(ItemInstance item)

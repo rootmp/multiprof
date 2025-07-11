@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.enums.LockType;
 import l2s.gameserver.model.items.ItemInstance;
@@ -11,7 +11,7 @@ public class ItemListPacket implements IClientOutgoingPacket
 	private final int _type;
 	private final int _size;
 	private final ItemInstance[] _items;
-	
+
 	@SuppressWarnings("unused")
 	private LockType _lockType;
 	@SuppressWarnings("unused")
@@ -61,5 +61,6 @@ public class ItemListPacket implements IClientOutgoingPacket
 			packetWriter.writeH(0x00);
 			packetWriter.writeD(_size); // Total items
 		}
+		return true;
 	}
 }

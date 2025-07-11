@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.Set;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author VISTALL
@@ -22,6 +23,10 @@ public class ExMpccPartymasterList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_members.size());
 		for (String t : _members)
+		{
 			packetWriter.writeS(t);
+		}
+
+		return true;
 	}
 }

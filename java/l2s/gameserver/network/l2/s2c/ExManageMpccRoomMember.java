@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -33,6 +33,7 @@ public class ExManageMpccRoomMember implements IClientOutgoingPacket
 		packetWriter.writeD(_memberInfo.level);
 		packetWriter.writeD(_memberInfo.location);
 		packetWriter.writeD(_memberInfo.memberType);
+		return true;
 	}
 
 	static class MpccRoomMemberInfo

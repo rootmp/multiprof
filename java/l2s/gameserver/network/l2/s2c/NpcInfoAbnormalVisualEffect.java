@@ -30,5 +30,7 @@ public class NpcInfoAbnormalVisualEffect implements IClientOutgoingPacket
 		packetWriter.writeH(_abnormalEffects.size());
 		for (AbnormalEffect abnormal : _abnormalEffects)
 			packetWriter.writeH(abnormal.getId());
+	
+		return true;
 	}
 }

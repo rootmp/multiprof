@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.henna.HennaTemplate;
 
@@ -50,5 +50,6 @@ public class HennaItemInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // current CHA
 		packetWriter.writeH(0x00); // equip CHA
 		packetWriter.writeD(0x00); // Periodic
+		return true;
 	}
 }

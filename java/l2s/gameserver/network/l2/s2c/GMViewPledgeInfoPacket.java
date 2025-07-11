@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.ClanHall;
@@ -26,7 +26,9 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 
 		Clan clan = activeChar.getClan();
 		if (clan == null)
+		{
 			return;
+		}
 
 		_clanObjectId = clan.getClanId();
 		_unitName = clan.getName();
@@ -62,7 +64,9 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 		}
 
 		for (UnitMember m : clan)
+		{
 			_members.add(new PledgePacketMember(m));
+		}
 	}
 
 	@Override
@@ -116,6 +120,7 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(m._hasSponsor ? 1 : 0);
 			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Attendance bonus
 		}
+		return true;
 	}
 
 	private class PledgePacketMember

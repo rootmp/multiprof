@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 //пир отправке этого пакета на экране появляется иконка получения письма
@@ -14,6 +15,6 @@ public class ExCuriousHouseEnter implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		//
+		return true;
 	}
 }

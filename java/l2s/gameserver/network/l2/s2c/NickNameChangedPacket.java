@@ -19,5 +19,6 @@ public class NickNameChangedPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(objectId);
 		packetWriter.writeS(title);
+		return true;
 	}
 }

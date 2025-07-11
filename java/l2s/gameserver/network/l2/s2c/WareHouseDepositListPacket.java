@@ -72,5 +72,6 @@ public class WareHouseDepositListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(item.getObjectId());
 			}
 		}
+		return true;
 	}
 }

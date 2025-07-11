@@ -73,5 +73,7 @@ public class PartySmallWindowUpdatePacket implements IClientOutgoingPacket
 
 		if (containsMask(_flags, PartySmallWindowUpdateType.SAYHAS_GRACE_POINTS))
 			packetWriter.writeD(sayhas_grace_points);
+		
+		return true;
 	}
 }

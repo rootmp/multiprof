@@ -29,5 +29,6 @@ public class TradeUpdatePacket implements IClientOutgoingPacket
 			packetWriter.writeH(_amount > 0 && _item.getItem().isStackable() ? 3 : 2);
 			writeItemInfo(_item, _amount);
 		}
+		return true;
 	}
 }

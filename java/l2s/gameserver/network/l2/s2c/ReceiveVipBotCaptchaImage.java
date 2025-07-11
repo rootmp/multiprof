@@ -17,5 +17,6 @@ public class ReceiveVipBotCaptchaImage implements IClientOutgoingPacket
 		packetWriter.writeQ(0x00); // TransactionID
 		packetWriter.writeC(0x00); // TryCount
 		packetWriter.writeD(0x00); // RemainTime
+		return true;
 	}
 }

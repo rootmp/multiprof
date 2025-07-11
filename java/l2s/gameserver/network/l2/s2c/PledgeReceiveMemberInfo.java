@@ -21,5 +21,6 @@ public class PledgeReceiveMemberInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_member.getPowerGrade());
 		packetWriter.writeS(_member.getSubUnit().getName());
 		packetWriter.writeS(_member.getRelatedName()); // apprentice/sponsor name if any
+		return true;
 	}
 }

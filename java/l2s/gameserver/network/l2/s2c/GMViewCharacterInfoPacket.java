@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.Element;
@@ -166,7 +166,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
+			{
 				break;
+			}
 
 			packetWriter.writeD(_inv[PAPERDOLL_ID][0]);
 		}
@@ -174,7 +176,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
+			{
 				break;
+			}
 
 			packetWriter.writeD(_inv[PAPERDOLL_ID][1]);
 		}
@@ -182,7 +186,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
 			if (PAPERDOLL_ID == Inventory.PAPERDOLL_AGATHION_MAIN)
+			{
 				break;
+			}
 
 			packetWriter.writeD(_inv[PAPERDOLL_ID][2]);
 			packetWriter.writeD(_inv[PAPERDOLL_ID][3]);
@@ -271,5 +277,6 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 
 		packetWriter.writeD(0x00);
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

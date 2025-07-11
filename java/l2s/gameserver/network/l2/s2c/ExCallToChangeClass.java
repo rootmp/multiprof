@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -22,5 +23,6 @@ public class ExCallToChangeClass implements IClientOutgoingPacket
 		packetWriter.writeD(_classId); // New Class Id
 		packetWriter.writeD(_showMsg); // Show Message
 		packetWriter.writeD(0x00); // unk
+		return true;
 	}
 }

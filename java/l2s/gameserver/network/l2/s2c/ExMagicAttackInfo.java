@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -31,5 +32,6 @@ public class ExMagicAttackInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_attackerId);
 		packetWriter.writeD(_targetId);
 		packetWriter.writeD(_info);
+		return true;
 	}
 }

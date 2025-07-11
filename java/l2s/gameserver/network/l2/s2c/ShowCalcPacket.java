@@ -17,5 +17,6 @@ public class ShowCalcPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_calculatorId);
+		return true;
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.actor.instances.player.TrainingCamp;
 import l2s.gameserver.model.base.Experience;
@@ -36,10 +36,11 @@ public class ExTrainingZone_Admission implements IClientOutgoingPacket
 		packetWriter.writeD(_timeElapsed); // Training time elapsed in minutes, max : 600 - 10hr RU / 300 - 5hr NA
 		packetWriter.writeD(_timeRemaining); // Time remaining in seconds, max : 36000 - 10hr RU / 18000 - 5hr NA
 		packetWriter.writeF(_maxExp); // Training time elapsed in minutes * this value = acquired exp IN GAME DOESN'T
-							// SEEM LIKE THE FIELD IS LIMITED
+		// SEEM LIKE THE FIELD IS LIMITED
 		packetWriter.writeF(_maxSp); // Training time elapsed in minutes * this value = acquired sp IN GAME LIMITED
-						// TO INTEGER.MAX_VALUE SO THE MULTIPLY WITH REMAINING TIME CANT EXCEED IT (so
-						// field max value can't exceed 3579139.0 for 10hr) !! // Note real sp gain is
-						// exp gained / 250
+		// TO INTEGER.MAX_VALUE SO THE MULTIPLY WITH REMAINING TIME CANT EXCEED IT (so
+		// field max value can't exceed 3579139.0 for 10hr) !! // Note real sp gain is
+		// exp gained / 250
+		return true;
 	}
 }

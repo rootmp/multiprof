@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.AcquireType;
 
 /**
@@ -65,7 +65,10 @@ public class ExAcquirableSkillListByClass implements IClientOutgoingPacket
 			packetWriter.writeQ(temp.cost);
 			packetWriter.writeC(0x01); // required items or no
 			if (_type == AcquireType.SUB_UNIT)
+			{
 				packetWriter.writeH(temp.subUnit);
+			}
 		}
+		return true;
 	}
 }

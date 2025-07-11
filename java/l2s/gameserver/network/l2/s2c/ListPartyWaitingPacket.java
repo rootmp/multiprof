@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -23,7 +23,9 @@ public class ListPartyWaitingPacket implements IClientOutgoingPacket
 		final int first = Math.max((page - 1) * ITEMS_PER_PAGE, 0);
 		final int firstNot = Math.min(page * ITEMS_PER_PAGE, temp.size());
 		for (int i = first; i < firstNot; i++)
+		{
 			_rooms.add(temp.get(i));
+		}
 	}
 
 	@Override
@@ -52,5 +54,6 @@ public class ListPartyWaitingPacket implements IClientOutgoingPacket
 		}
 		packetWriter.writeD(0x00); // Total amount of parties
 		packetWriter.writeD(0x00); // Total amount of party members
+		return true;
 	}
 }

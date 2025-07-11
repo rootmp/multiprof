@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
 
@@ -43,6 +43,7 @@ public abstract class ExBlockUpSetState implements IClientOutgoingPacket
 			packetWriter.writeD(_isRedTeam ? 0x01 : 0x00);
 			packetWriter.writeD(_objectId);
 			packetWriter.writeD(_playerPoints);
+			return true;
 		}
 	}
 
@@ -68,6 +69,7 @@ public abstract class ExBlockUpSetState implements IClientOutgoingPacket
 			packetWriter.writeD(0x01);
 			packetWriter.writeD(_winner);
 			packetWriter.writeD(0x00); // TODO
+			return true;
 		}
 	}
 
@@ -91,6 +93,7 @@ public abstract class ExBlockUpSetState implements IClientOutgoingPacket
 			packetWriter.writeD(_timeLeft);
 			packetWriter.writeD(_bluePoints);
 			packetWriter.writeD(_redPoints);
+			return true;
 		}
 	}
 }

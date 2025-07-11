@@ -67,5 +67,6 @@ public class ReciveVipLuckyGameInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_enabled);
 		packetWriter.writeD((int) _availableNormalGames);
 		packetWriter.writeD((int) _availablePremiumGames);
+		return true;
 	}
 }

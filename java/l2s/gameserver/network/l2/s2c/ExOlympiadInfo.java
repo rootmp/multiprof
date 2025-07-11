@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.CompType;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
@@ -31,5 +31,6 @@ public class ExOlympiadInfo implements IClientOutgoingPacket
 		packetWriter.writeC(open);
 		packetWriter.writeD(timeLeft);
 		packetWriter.writeC(type == null ? 0 : Math.min(type.ordinal(), 1)); // 0 - 3x3 Battles, 1 - Olympiad
+		return true;
 	}
 }

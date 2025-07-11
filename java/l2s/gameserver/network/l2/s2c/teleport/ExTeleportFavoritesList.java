@@ -26,5 +26,6 @@ public class ExTeleportFavoritesList implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(_teleportFavorites[i]); // teleport id
 		}
+		return true;
 	}
 }

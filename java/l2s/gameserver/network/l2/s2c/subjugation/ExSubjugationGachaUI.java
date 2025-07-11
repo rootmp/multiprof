@@ -25,5 +25,6 @@ public class ExSubjugationGachaUI implements IClientOutgoingPacket
 		int keysHave = points / 1_000_000;
 
 		packetWriter.writeD(keysHave); // keys
+		return true;
 	}
 }

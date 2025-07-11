@@ -30,5 +30,6 @@ public class ExPledgeDonationRequest implements IClientOutgoingPacket
 		packetWriter.writeD(0); // unk
 		packetWriter.writeH(0); // unk
 		packetWriter.writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE)); // existing donations
+		return true;
 	}
 }

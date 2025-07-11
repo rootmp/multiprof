@@ -55,5 +55,6 @@ public class ExSubjugationRanking implements IClientOutgoingPacket
 		packetWriter.writeD(_zoneId);
 		packetWriter.writeD(points);
 		packetWriter.writeD(rank);
+		return true;
 	}
 }

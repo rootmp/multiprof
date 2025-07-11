@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInstance;
 
 /**
@@ -29,5 +29,6 @@ public class ExBR_AgathionEnergyInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(item.getAgathionEnergy());// current energy
 			packetWriter.writeD(item.getTemplate().getAgathionMaxEnergy()); // max energy
 		}
+		return true;
 	}
 }

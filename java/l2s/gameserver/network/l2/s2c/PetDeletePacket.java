@@ -17,5 +17,6 @@ public class PetDeletePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_petnum);
 		packetWriter.writeD(_petId);
+		return true;
 	}
 }

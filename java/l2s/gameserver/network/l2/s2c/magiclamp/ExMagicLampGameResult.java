@@ -31,12 +31,13 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 		{
 			_player.setMagicLampPoints(_player.getMagicLampPoints() - (100000000 * _gamesCount));
 			if (!_player.getInventory().destroyItemByItemId(91641, _gamesCount * 5))
-				return;
+				return false;
 			giveRewards(_player, true);
 		}
 
 		_player.sendPacket(new ExMagicLampGameInfo(_gameType, _player, _gamesCount));
 		_player.sendPacket(new ExMagicLampExpInfo(_player));
+		return true;
 	}
 
 	private void giveRewards(Player player, boolean isSpecialGame)

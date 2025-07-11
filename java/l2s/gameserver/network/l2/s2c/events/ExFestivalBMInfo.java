@@ -31,5 +31,6 @@ public class ExFestivalBMInfo implements IClientOutgoingPacket
 		}
 
 		packetWriter.writeD(Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT);
+		return true;
 	}
 }

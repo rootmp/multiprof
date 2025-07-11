@@ -113,6 +113,7 @@ public class StatusUpdatePacket implements IClientOutgoingPacket
 			packetWriter.writeC(temp.id);
 			packetWriter.writeD(temp.value);
 		}
+		return true;
 	}
 
 	public boolean hasAttributes()

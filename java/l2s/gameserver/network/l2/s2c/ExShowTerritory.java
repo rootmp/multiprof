@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import l2s.commons.geometry.Point2D;
 import l2s.commons.geometry.Shape;
+import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
@@ -28,5 +28,6 @@ public class ExShowTerritory implements IClientOutgoingPacket
 			packetWriter.writeD(point.getX());
 			packetWriter.writeD(point.getY());
 		}
+		return true;
 	}
 }

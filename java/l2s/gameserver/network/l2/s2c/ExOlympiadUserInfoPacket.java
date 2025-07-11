@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class ExOlympiadUserInfoPacket implements IClientOutgoingPacket
@@ -33,5 +33,6 @@ public class ExOlympiadUserInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(maxHp);
 		packetWriter.writeD(curCp);
 		packetWriter.writeD(maxCp);
+		return true;
 	}
 }

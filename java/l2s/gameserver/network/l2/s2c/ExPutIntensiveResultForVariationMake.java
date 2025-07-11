@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPacket
@@ -23,5 +24,6 @@ public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPack
 		packetWriter.writeD(_gemstoneItemId);
 		packetWriter.writeQ(_gemstoneCount);
 		packetWriter.writeD(_unk);
+		return true;
 	}
 }

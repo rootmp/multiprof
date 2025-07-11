@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class FriendAddRequestResult implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public class FriendAddRequestResult implements IClientOutgoingPacket
 		packetWriter.writeD(0); // Level
 		packetWriter.writeD(0); // Class
 		packetWriter.writeH(0); // ??? 0
+		return true;
 	}
 }

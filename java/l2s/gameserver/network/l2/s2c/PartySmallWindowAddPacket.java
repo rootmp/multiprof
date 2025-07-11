@@ -34,5 +34,6 @@ public class PartySmallWindowAddPacket implements IClientOutgoingPacket
 		packetWriter.writeC(_member.sex);
 		packetWriter.writeH(_member.raceId);
 		packetWriter.writeD(0);
+		return true;
 	}
 }

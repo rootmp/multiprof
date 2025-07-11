@@ -43,5 +43,6 @@ public class ShortBuffStatusUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_skillId); // skill id??? CD 04 00 00 = skill 1229, hex 4CD
 		packetWriter.writeD(_skillLevel); // Skill Level??? 07 00 00 00 = casted by heal 7 lvl.
 		packetWriter.writeD(_skillDuration); // DURATION???? 0F 00 00 00 = 15 sec = overlord's heal
+		return true;
 	}
 }

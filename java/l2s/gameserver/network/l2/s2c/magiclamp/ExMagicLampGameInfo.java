@@ -49,5 +49,6 @@ public class ExMagicLampGameInfo implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(0); // items size for one game
 		}
+		return true;
 	}
 }

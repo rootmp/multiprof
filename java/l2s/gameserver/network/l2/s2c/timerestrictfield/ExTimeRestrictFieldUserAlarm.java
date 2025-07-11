@@ -21,5 +21,6 @@ public class ExTimeRestrictFieldUserAlarm implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_fieldId);
 		packetWriter.writeD(_time);
+		return true;
 	}
 }

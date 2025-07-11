@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExDominionChannelSet implements IClientOutgoingPacket
@@ -17,5 +18,6 @@ public class ExDominionChannelSet implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_active);
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExStartScenePlayer implements IClientOutgoingPacket
@@ -15,5 +16,6 @@ public class ExStartScenePlayer implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_sceneId);
 		packetWriter.writeD(-1); // TODO[UNDERGROUND]: UNK
+		return true;
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -39,5 +39,6 @@ public class GMViewWarehouseWithdrawListPacket implements IClientOutgoingPacket
 				packetWriter.writeD(temp.getObjectId());
 			}
 		}
+		return true;
 	}
 }

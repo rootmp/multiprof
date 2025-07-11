@@ -22,5 +22,6 @@ public class ExCollectionSummary implements IClientOutgoingPacket
 		// packetWriter.writeH(0); // collection id
 		// packetWriter.writeD(0); // expiration time in seconds
 		// }
+		return true;
 	}
 }

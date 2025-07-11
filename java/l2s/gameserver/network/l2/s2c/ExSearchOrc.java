@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -84,5 +85,6 @@ public class ExSearchOrc implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		writeB(_test);
+		return true;
 	}
 }

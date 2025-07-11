@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Residence;
 import l2s.gameserver.model.pledge.Alliance;
@@ -46,7 +46,7 @@ public class CastleSiegeInfoPacket implements IClientOutgoingPacket
 		Clan owner = residence.getOwner();
 		if (owner != null)
 		{
-			_isLeader = player.isGM() || owner.getLeaderId(Clan.SUBUNIT_MAIN_CLAN) == player.getObjectId();
+			_isLeader = player.isGM() || (owner.getLeaderId(Clan.SUBUNIT_MAIN_CLAN) == player.getObjectId());
 			_ownerName = owner.getName();
 			_leaderName = owner.getLeaderName(Clan.SUBUNIT_MAIN_CLAN);
 			Alliance ally = owner.getAlliance();
@@ -74,5 +74,6 @@ public class CastleSiegeInfoPacket implements IClientOutgoingPacket
 		/*
 		 * if(_startTime == 0) //если ноль то идет цыкл writeDD(_nextTimeMillis, true);
 		 */
+		return true;
 	}
 }

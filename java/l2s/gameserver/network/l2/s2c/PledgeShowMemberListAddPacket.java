@@ -23,6 +23,7 @@ public class PledgeShowMemberListAddPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_member._online);
 		packetWriter.writeD(_member._pledgeType);
 		packetWriter.writeC(_member._attendance);
+		return true;
 	}
 
 	private class PledgePacketMember

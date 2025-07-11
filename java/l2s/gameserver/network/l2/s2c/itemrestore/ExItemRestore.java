@@ -18,5 +18,6 @@ public class ExItemRestore implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(cResult);
+		return true;
 	}
 }

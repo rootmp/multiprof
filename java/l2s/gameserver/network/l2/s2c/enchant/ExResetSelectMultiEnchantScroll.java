@@ -20,5 +20,6 @@ public class ExResetSelectMultiEnchantScroll implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_scrollObjId);
 		packetWriter.writeD(_resultType);
+		return true;
 	}
 }

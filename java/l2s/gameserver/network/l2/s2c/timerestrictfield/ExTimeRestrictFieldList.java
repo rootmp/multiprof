@@ -113,5 +113,6 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				packetWriter.writeC(field.isWorld()); // is cross-server field
 			}
 		}
+		return true;
 	}
 }

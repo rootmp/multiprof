@@ -14,5 +14,6 @@ public class PledgeReceiveUpdatePower implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_privs); // Filler??????
+		return true;
 	}
 }

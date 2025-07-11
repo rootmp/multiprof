@@ -43,5 +43,6 @@ public class MTLPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_current.x);
 		packetWriter.writeD(_current.y);
 		packetWriter.writeD(_current.z);
+		return true;
 	}
 }

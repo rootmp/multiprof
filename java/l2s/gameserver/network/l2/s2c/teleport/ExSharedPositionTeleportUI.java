@@ -34,5 +34,7 @@ public class ExSharedPositionTeleportUI implements IClientOutgoingPacket
 			packetWriter.writeD(ServerVariables.getInt("tpId_" + _tpId + "_y"));
 			packetWriter.writeD(ServerVariables.getInt("tpId_" + _tpId + "_z"));
 		}
+		
+		return true;
 	}
 }

@@ -41,5 +41,6 @@ public class PrivateStoreList implements IClientOutgoingPacket
 			packetWriter.writeQ(si.getOwnersPrice());
 			packetWriter.writeQ(si.getStorePrice());
 		}
+		return true;
 	}
 }

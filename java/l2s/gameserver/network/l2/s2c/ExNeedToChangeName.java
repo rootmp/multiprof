@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExNeedToChangeName implements IClientOutgoingPacket
@@ -25,5 +26,6 @@ public class ExNeedToChangeName implements IClientOutgoingPacket
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_reason);
 		packetWriter.writeS(_origName);
+		return true;
 	}
 }

@@ -50,6 +50,7 @@ public class ExPetSkillList implements IClientOutgoingPacket
 			packetWriter.writeC(skill._enchant);
 			packetWriter.writeC(skill._locked);
 		}
+		return true;
 	}
 
 	private static class SkillInfo

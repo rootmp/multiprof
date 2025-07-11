@@ -83,5 +83,6 @@ public class ExSubjugationGacha implements IClientOutgoingPacket
 			packetWriter.writeD(rewardCount[5]);
 			ItemFunctions.addItem(_player, temp.getRewardItems()[5].getId(), rewardCount[5], true);
 		}
+		return true;
 	}
 }

@@ -39,5 +39,6 @@ public class ExBalthusEvent implements IClientOutgoingPacket
 		packetWriter.writeD(_participate ? 1 : 0); // 0: not participate in event, 1: participate
 		packetWriter.writeC(_awarded ? 0 : 1); // pending award: 0- used, 1 - active now
 		packetWriter.writeD(_time); // time passed
+		return true;
 	}
 }

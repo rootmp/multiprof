@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Friend;
@@ -42,5 +42,6 @@ public class ExFriendDetailInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_friend.getCreationDay()); // Creation day
 		packetWriter.writeD(_friend.getLastAccessDelay()); // Last login
 		packetWriter.writeS(_friend.getMemo()); // Memo
+		return true;
 	}
 }

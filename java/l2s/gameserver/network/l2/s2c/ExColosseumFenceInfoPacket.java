@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.instances.FenceInstance;
 
 /**
@@ -43,5 +43,6 @@ public class ExColosseumFenceInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_z);
 		packetWriter.writeD(_width);
 		packetWriter.writeD(_length);
+		return true;
 	}
 }

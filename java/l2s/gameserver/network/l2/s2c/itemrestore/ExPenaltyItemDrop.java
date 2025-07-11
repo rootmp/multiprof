@@ -24,5 +24,6 @@ public class ExPenaltyItemDrop implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.getY()); // y
 		packetWriter.writeD(_loc.getZ()); // z
 		packetWriter.writeD(_itemId);
+		return true;
 	}
 }

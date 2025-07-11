@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInstance;
 
 public class ExResponseCommissionInfo implements IClientOutgoingPacket
@@ -12,6 +12,7 @@ public class ExResponseCommissionInfo implements IClientOutgoingPacket
 		_item = item;
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_item.getItemId()); // ItemId
@@ -19,5 +20,6 @@ public class ExResponseCommissionInfo implements IClientOutgoingPacket
 		packetWriter.writeQ(_item.getCount()); // TODO
 		packetWriter.writeQ(0/* _item.getCount() */); // TODO
 		packetWriter.writeD(0); // TODO
+		return true;
 	}
 }

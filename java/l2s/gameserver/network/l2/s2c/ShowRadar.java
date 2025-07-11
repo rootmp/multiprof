@@ -7,5 +7,6 @@ public class ShowRadar implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO ddddd
+		return true;
 	}
 }

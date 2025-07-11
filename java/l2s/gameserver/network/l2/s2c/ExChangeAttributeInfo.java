@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.Element;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -20,15 +20,19 @@ public class ExChangeAttributeInfo implements IClientOutgoingPacket
 		for (Element e : Element.VALUES)
 		{
 			if (e == item.getAttackElement())
+			{
 				continue;
+			}
 			_attributes |= e.getMask();
 		}
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_crystalItemId);// unk??
 		packetWriter.writeD(_attributes);
 		packetWriter.writeD(_itemObjId);// unk??
+		return true;
 	}
 }

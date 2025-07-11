@@ -12,5 +12,6 @@ public class ExBlessOptionCancel implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
+		return true;
 	}
 }

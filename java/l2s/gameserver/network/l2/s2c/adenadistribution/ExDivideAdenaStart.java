@@ -13,5 +13,6 @@ public class ExDivideAdenaStart implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		//
+		return true;
 	}
 }

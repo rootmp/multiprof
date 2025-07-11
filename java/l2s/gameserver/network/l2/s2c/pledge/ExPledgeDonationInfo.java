@@ -21,5 +21,6 @@ public class ExPledgeDonationInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_player.getVarInt(PlayerVariables.DONATIONS_AVAILABLE, 3)); // available donations today
 		packetWriter.writeC(0); // unk
+		return true;
 	}
 }

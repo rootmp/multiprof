@@ -23,5 +23,6 @@ public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacke
 		packetWriter.writeD(shareType); // share type
 		packetWriter.writeString(killedName);
 		packetWriter.writeString(killerName);
+		return true;
 	}
 }

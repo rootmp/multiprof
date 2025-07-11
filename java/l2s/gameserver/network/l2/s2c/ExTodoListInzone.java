@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -23,5 +24,6 @@ public class ExTodoListInzone implements IClientOutgoingPacket
 			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Entry info
 			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: UNK
 		}
+		return true;
 	}
 }

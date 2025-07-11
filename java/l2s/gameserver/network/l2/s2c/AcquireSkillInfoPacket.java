@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.SkillLearn;
 import l2s.gameserver.model.base.AcquireType;
 import l2s.gameserver.templates.item.data.ItemData;
@@ -71,5 +71,6 @@ public class AcquireSkillInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeQ(temp.count);
 			packetWriter.writeQ(temp.unk); // paperdoll slot for this item
 		}
+		return true;
 	}
 }

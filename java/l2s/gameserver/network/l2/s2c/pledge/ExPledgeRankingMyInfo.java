@@ -68,5 +68,6 @@ public class ExPledgeRankingMyInfo implements IClientOutgoingPacket
 			packetWriter.writeD(clanPreviousRank);
 			packetWriter.writeD(points);
 		}
+		return true;
 	}
 }

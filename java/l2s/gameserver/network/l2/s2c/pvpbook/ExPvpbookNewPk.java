@@ -15,5 +15,6 @@ public class ExPvpbookNewPk implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeString(killerName);
+		return true;
 	}
 }

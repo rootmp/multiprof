@@ -23,5 +23,6 @@ public class PledgeInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(clan_id);
 		packetWriter.writeS(clan_name);
 		packetWriter.writeS(ally_name);
+		return true;
 	}
 }

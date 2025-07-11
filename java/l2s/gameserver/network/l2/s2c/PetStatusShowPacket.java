@@ -18,5 +18,6 @@ public class PetStatusShowPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_summonType);
 		packetWriter.writeD(_summonObjId);
+		return true;
 	}
 }

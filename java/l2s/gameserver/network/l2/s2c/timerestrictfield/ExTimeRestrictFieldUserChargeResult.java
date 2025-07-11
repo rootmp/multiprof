@@ -24,5 +24,6 @@ public class ExTimeRestrictFieldUserChargeResult implements IClientOutgoingPacke
 		packetWriter.writeD(_fieldId);
 		packetWriter.writeD(_remainTime);
 		packetWriter.writeD(_remainTimeBase);
+		return true;
 	}
 }

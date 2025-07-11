@@ -1,14 +1,13 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
-import l2s.gameserver.model.GameObjectsStorage;
-import l2s.gameserver.model.Player;
-
 import gnu.trove.set.TIntSet;
 import gnu.trove.set.hash.TIntHashSet;
+import l2s.commons.network.PacketWriter;
+import l2s.gameserver.model.GameObjectsStorage;
+import l2s.gameserver.model.Player;
 
 public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 {
@@ -26,7 +25,7 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 		int count = 0;
 		for (Player player : players)
 		{
-			if ((player.getKarma() < -5760) && !player.isInPeaceZone() && player.getReflection().getId() == 0)
+			if ((player.getKarma() < -5760) && !player.isInPeaceZone() && (player.getReflection().getId() == 0))
 			{
 				count++;
 				_pks.add(player.getObjectId());
@@ -49,5 +48,6 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 				packetWriter.writeD(GameObjectsStorage.getPlayer(id).getZ());
 			}
 		}
+		return true;
 	}
 }

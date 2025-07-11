@@ -186,5 +186,6 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 		{
 			_player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 		}
+		return true;
 	}
 }

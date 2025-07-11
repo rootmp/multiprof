@@ -121,5 +121,6 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 		packetWriter.writeD(1);
 		packetWriter.writeD(0);
 		packetWriter.writeD(0);
+		return true;
 	}
 }

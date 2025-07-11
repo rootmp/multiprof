@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.actor.instances.player.Friend;
 
 /**
@@ -23,6 +23,10 @@ public class FriendStatus implements IClientOutgoingPacket
 		packetWriter.writeD(_login);
 		packetWriter.writeS(_friend.getName());
 		if (!_login)
+		{
 			packetWriter.writeD(_friend.getObjectId());
+		}
+
+		return true;
 	}
 }

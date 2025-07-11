@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -23,5 +24,6 @@ public class ExPrivateStoreSellingResult implements IClientOutgoingPacket
 		packetWriter.writeD(_itemObjId);
 		packetWriter.writeQ(_itemCount);
 		packetWriter.writeS(_buyerName);
+		return true;
 	}
 }

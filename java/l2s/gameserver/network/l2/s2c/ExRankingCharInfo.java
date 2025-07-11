@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.StatsSet;
@@ -45,7 +45,7 @@ public class ExRankingCharInfo implements IClientOutgoingPacket
 							packetWriter.writeD(snapshot.getInteger("raceRank")); // race rank snapshot
 							packetWriter.writeD(0); // class rank
 							packetWriter.writeD(0); // class rank snapshot
-							return;
+							return true;
 						}
 					}
 				}
@@ -66,5 +66,6 @@ public class ExRankingCharInfo implements IClientOutgoingPacket
 			packetWriter.writeD(0); // class rank
 			packetWriter.writeD(0); // class rank snapshot
 		}
+		return true;
 	}
 }

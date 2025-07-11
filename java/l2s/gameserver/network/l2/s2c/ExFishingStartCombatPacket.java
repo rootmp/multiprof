@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -31,5 +31,6 @@ public class ExFishingStartCombatPacket implements IClientOutgoingPacket
 		packetWriter.writeC(_mode); // mode: 0 = resting, 1 = fighting
 		packetWriter.writeC(_lureType); // 0 = newbie lure, 1 = normal lure, 2 = night lure
 		packetWriter.writeC(_deceptiveMode); // Fish Deceptive Mode: 0 = no, 1 = yes
+		return true;
 	}
 }

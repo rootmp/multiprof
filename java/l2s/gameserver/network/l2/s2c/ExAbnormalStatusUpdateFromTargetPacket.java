@@ -1,8 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 public class ExAbnormalStatusUpdateFromTargetPacket implements IClientOutgoingPacket
 {
@@ -53,5 +54,6 @@ public class ExAbnormalStatusUpdateFromTargetPacket implements IClientOutgoingPa
 			writeOptionalD(temp.duration);
 			packetWriter.writeD(temp.effectorObjectId); // Buffer OID
 		}
+		return true;
 	}
 }

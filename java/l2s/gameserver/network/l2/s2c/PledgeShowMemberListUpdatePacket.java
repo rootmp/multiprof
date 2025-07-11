@@ -60,5 +60,6 @@ public class PledgeShowMemberListUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_pledgeType);
 		packetWriter.writeD(_isApprentice); // does a clan member have a sponsor
 		packetWriter.writeC(_attendance);
+		return true;
 	}
 }

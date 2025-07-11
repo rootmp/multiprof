@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.instancemanager.RankManager;
@@ -17,7 +17,6 @@ import l2s.gameserver.model.base.TeamType;
 import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.model.entity.events.impl.AbstractFightClub;
 import l2s.gameserver.model.items.Inventory;
-import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.model.matching.MatchingRoom;
 import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
@@ -88,17 +87,25 @@ public class ExCharInfo implements IClientOutgoingPacket
 		}
 
 		if (receiver == null)
+		{
 			return;
+		}
 
 		if (cha.isInvisible(receiver))
+		{
 			return;
+		}
 
 		if (cha.isDeleted())
+		{
 			return;
+		}
 
 		objId = cha.getObjectId();
 		if (objId == 0)
+		{
 			return;
+		}
 
 		if (receiver.getObjectId() == objId)
 		{
@@ -108,7 +115,9 @@ public class ExCharInfo implements IClientOutgoingPacket
 
 		Player player = cha.getPlayer();
 		if (player == null)
+		{
 			return;
+		}
 
 		Location loc = null;
 		if (player.isInBoat())
@@ -118,7 +127,9 @@ public class ExCharInfo implements IClientOutgoingPacket
 		}
 
 		if (loc == null)
+		{
 			loc = cha.getLoc();
+		}
 
 		x = loc.x;
 		y = loc.y;
@@ -165,7 +176,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 			mountType = 0;
 		}
 
-		paperdolls = new int[PcInventory.PAPERDOLL_MAX][4];
+		paperdolls = new int[Inventory.PAPERDOLL_MAX][4];
 
 		for (int PAPERDOLL_ID : PAPERDOLL_ORDER)
 		{
@@ -209,7 +220,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		hairStyle = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? sex : (player.getBeautyHairStyle() > 0 ? player.getBeautyHairStyle() : player.getHairStyle());
 		hairColor = player.getBeautyHairColor() > 0 ? player.getBeautyHairColor() : player.getHairColor();
 		face = player.getBeautyFace() > 0 ? player.getBeautyFace() : player.getFace();
-		if (clanId > 0 && player.getClan() != null)
+		if ((clanId > 0) && (player.getClan() != null))
 		{
 			clanRepScore = player.getClan().getReputationScore();
 		}
@@ -227,7 +238,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		recHave = player.isGM() ? 0 : player.getRecomHave();
 		classId = player.getClassId().getId();
 		teamType = player.getTeam();
-		hero = player.isHero() || player.isGM() && Config.GM_HERO_AURA ? 2 : 0; // 0x01: Hero Aura
+		hero = player.isHero() || (player.isGM() && Config.GM_HERO_AURA) ? 2 : 0; // 0x01: Hero Aura
 		if (hero == 0)
 		{
 			hero = Hero.getInstance().isInactiveHero(objId) ? 1 : 0;
@@ -239,7 +250,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		pledgeType = player.getPledgeType();
 		transformId = player.getVisualTransformId();
 		agathionId = player.getAgathionNpcId();
-		partyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
+		partyRoomLeader = (player.getMatchingRoom() != null) && (player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING) && (player.getMatchingRoom().getLeader() == player);
 		flying = player.isInFlyingTransform();
 		curHp = (int) player.getCurrentHp();
 		maxHp = player.getMaxHp();
@@ -316,7 +327,8 @@ public class ExCharInfo implements IClientOutgoingPacket
 
 		packetWriter.writeC(armorSetEnchant); // Armor Enchant Abnormal
 
-		packetWriter.writeH(CharInfoType.SHAPE_SHIFTING.getBlockLength()); // Shape shifting item block size (2 + (4 * 9))
+		packetWriter.writeH(CharInfoType.SHAPE_SHIFTING.getBlockLength()); // Shape shifting item block size (2 + (4 *
+																			// 9))
 
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][3]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_LHAND][3]);
@@ -442,5 +454,6 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeString(name);
 		packetWriter.writeC(dead); // is player dead
 		packetWriter.writeC(_specialMountId);
+		return true;
 	}
 }

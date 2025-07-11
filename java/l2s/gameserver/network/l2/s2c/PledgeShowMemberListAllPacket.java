@@ -117,6 +117,7 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 			packetWriter.writeD(m._hasSponsor ? 1 : 0);
 			packetWriter.writeC(m._attendance);
 		}
+		return true;
 	}
 
 	private class PledgePacketMember

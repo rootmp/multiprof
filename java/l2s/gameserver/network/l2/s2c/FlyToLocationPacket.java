@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.model.Creature;
 
@@ -54,5 +54,6 @@ public class FlyToLocationPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_flyDelay);
 		packetWriter.writeD(_animationSpeed);
 		packetWriter.writeD(0x00); // new 245
+		return true;
 	}
 }

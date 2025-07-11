@@ -14307,6 +14307,7 @@ public class SystemMessage implements IClientOutgoingPacket
 				}
 			}
 		}
+		return true;
 	}
 
 	private class Arg

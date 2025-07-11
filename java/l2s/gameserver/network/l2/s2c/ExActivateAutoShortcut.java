@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExActivateAutoShortcut implements IClientOutgoingPacket
@@ -8,7 +9,7 @@ public class ExActivateAutoShortcut implements IClientOutgoingPacket
 
 	public ExActivateAutoShortcut(int slot, int page, boolean active)
 	{
-		_slot = page * 12 + slot;
+		_slot = (page * 12) + slot;
 		_active = active;
 	}
 
@@ -17,5 +18,6 @@ public class ExActivateAutoShortcut implements IClientOutgoingPacket
 	{
 		packetWriter.writeH(_slot);
 		packetWriter.writeC(_active);
+		return true;
 	}
 }

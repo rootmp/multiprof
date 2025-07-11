@@ -28,5 +28,6 @@ public class ValidateLocationPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(_loc.h);
 		packetWriter.writeC(0xFF);
+		return true;
 	}
 }

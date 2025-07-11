@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
@@ -27,7 +27,9 @@ public class DiePacket implements IClientOutgoingPacket
 		this.hideDieAnimation = hideDieAnimation;
 
 		if (cha.isMonster())
+		{
 			sweepable = ((MonsterInstance) cha).isSweepActive();
+		}
 		else if (cha.isPlayer())
 		{
 			Map<RestartType, Boolean> types = new HashMap<>(RestartType.VALUES.length);
@@ -48,7 +50,9 @@ public class DiePacket implements IClientOutgoingPacket
 
 			Clan clan = null;
 			if (types.getOrDefault(RestartType.TO_VILLAGE, false))
+			{
 				clan = player.getClan();
+			}
 
 			if (clan != null)
 			{
@@ -58,15 +62,21 @@ public class DiePacket implements IClientOutgoingPacket
 			}
 
 			for (Event e : cha.getEvents())
+			{
 				e.checkRestartLocs(player, types);
+			}
 
-			if (!player.isInFightClub() && player.getReflection().getId() == 400)
+			if (!player.isInFightClub() && (player.getReflection().getId() == 400))
+			{
 				types.clear();
+			}
 
 			for (Map.Entry<RestartType, Boolean> entry : types.entrySet())
 			{
 				if (entry.getValue())
+				{
 					flags |= 1 << entry.getKey().ordinal();
+				}
 			}
 		}
 	}
@@ -81,7 +91,7 @@ public class DiePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(objectId);
 		packetWriter.writeD(flags); // 1 - to village, 2 - to CH, 4 - to castle, 8 - fortress, 16 - to Outpost, 32 -
-						// fixed
+		// fixed
 		packetWriter.writeD(0x00); // UNK 228
 		packetWriter.writeD(sweepable); // Spoiled virgin
 		packetWriter.writeD(blessingFeatherDelay); // Blessing feather delay
@@ -93,6 +103,10 @@ public class DiePacket implements IClientOutgoingPacket
 		int itemsCount = 0;
 		packetWriter.writeD(itemsCount);
 		for (int i = 0; i < itemsCount; i++)
+		{
 			packetWriter.writeD(0x00); // item Id
+		}
+
+		return true;
 	}
 }

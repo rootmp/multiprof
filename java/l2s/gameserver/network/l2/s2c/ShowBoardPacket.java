@@ -117,5 +117,6 @@ public class ShowBoardPacket implements IClientOutgoingPacket
 			packetWriter.writeS(_fav);
 			packetWriter.writeS(_html);
 		}
+		return true;
 	}
 }

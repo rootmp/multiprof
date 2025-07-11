@@ -17,5 +17,6 @@ public class SurrenderPledgeWar implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_pledgeName);
 		packetWriter.writeS(_char);
+		return true;
 	}
 }

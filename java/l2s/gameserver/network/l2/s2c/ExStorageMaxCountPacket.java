@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 
@@ -42,5 +42,6 @@ public class ExStorageMaxCountPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_questItemsLimit); // quests list by off 100 maximum
 		packetWriter.writeD(40); // ??? 40 slots
 		packetWriter.writeD(40); // ??? 40 slots
+		return true;
 	}
 }

@@ -18,5 +18,6 @@ public class ExNewHennaUnequip implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(cSlotID);
 		packetWriter.writeC(cSuccess);
+		return true;
 	}
 }

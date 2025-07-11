@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExVariationResult implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public class ExVariationResult implements IClientOutgoingPacket
 		packetWriter.writeD(_stat12);
 		packetWriter.writeD(_stat34);
 		packetWriter.writeD(_unk3);
+		return true;
 	}
 }

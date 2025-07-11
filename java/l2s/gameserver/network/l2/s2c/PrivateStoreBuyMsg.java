@@ -26,5 +26,6 @@ public class PrivateStoreBuyMsg implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objId);
 		packetWriter.writeS(_name);
+		return true;
 	}
 }

@@ -38,5 +38,6 @@ public class ExResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 			packetWriter.writeD(_enchantedItem.getItemId());
 			packetWriter.writeD(1);
 		}
+		return true;
 	}
 }

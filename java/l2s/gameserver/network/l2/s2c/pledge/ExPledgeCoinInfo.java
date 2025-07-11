@@ -19,5 +19,6 @@ public class ExPledgeCoinInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_player.getHonorCoins());
+		return true;
 	}
 }

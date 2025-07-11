@@ -101,6 +101,7 @@ public class ExFestivalBMGame implements IClientOutgoingPacket
 				}
 			}
 		}
+		return true;
 	}
 
 	private int giveItem(int locationId)

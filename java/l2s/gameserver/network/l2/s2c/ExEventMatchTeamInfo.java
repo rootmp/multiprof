@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Servitor;
 
@@ -19,14 +19,19 @@ public class ExEventMatchTeamInfo implements IClientOutgoingPacket
 		loot = party.get(0).getParty().getLootDistribution();
 
 		for (Player member : party)
+		{
 			if (!member.equals(exclude))
+			{
 				members.add(new EventMatchTeamInfo(member));
+			}
+		}
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO dcd[dSdddddddddd]
+		return true;
 	}
 
 	public static class EventMatchTeamInfo

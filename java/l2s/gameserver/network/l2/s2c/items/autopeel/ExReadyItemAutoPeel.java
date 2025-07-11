@@ -21,5 +21,6 @@ public class ExReadyItemAutoPeel implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_result);
 		packetWriter.writeD(_itemObjId);
+		return true;
 	}
 }

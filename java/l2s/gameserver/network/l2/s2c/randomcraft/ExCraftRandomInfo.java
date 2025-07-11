@@ -68,5 +68,6 @@ public class ExCraftRandomInfo implements IClientOutgoingPacket
 				packetWriter.writeQ(0);
 			}
 		}
+		return true;
 	}
 }

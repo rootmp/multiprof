@@ -28,5 +28,7 @@ public class ShortCutInitPacket extends ShortCutPacket
 
 		for (final ShortcutInfo sc : _shortCuts)
 			sc.write(this);
+		
+		return true;
 	}
 }

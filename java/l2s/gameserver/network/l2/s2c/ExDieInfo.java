@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.DamageHolder;
 import l2s.gameserver.data.xml.holder.DroppedItemsHolder;
 import l2s.gameserver.model.Player;
@@ -67,5 +67,6 @@ public class ExDieInfo implements IClientOutgoingPacket
 			packetWriter.writeH(dmg.getType());
 		}
 		_player.resetDamageInfo();
+		return true;
 	}
 }

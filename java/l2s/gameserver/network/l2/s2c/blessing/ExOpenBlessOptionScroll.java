@@ -23,5 +23,6 @@ public class ExOpenBlessOptionScroll implements IClientOutgoingPacket
 	{
 		_player.setBlessingScroll(_scroll);
 		packetWriter.writeD(_scroll.getItemId()); // scroll id
+		return true;
 	}
 }

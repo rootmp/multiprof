@@ -41,5 +41,6 @@ public class ExFestivalBMAllItemInfo implements IClientOutgoingPacket
 				packetWriter.writeD(item.getItemCount());
 			}
 		}
+		return true;
 	}
 }

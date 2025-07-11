@@ -35,5 +35,6 @@ public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 			writeItemInfo(item, true, 4);
 			packetWriter.writeD(item.getObjectId());
 		}
+		return true;
 	}
 }

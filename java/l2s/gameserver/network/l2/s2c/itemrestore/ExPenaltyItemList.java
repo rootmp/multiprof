@@ -55,5 +55,6 @@ public class ExPenaltyItemList implements IClientOutgoingPacket
 											// global list
 			}
 		}
+		return true;
 	}
 }

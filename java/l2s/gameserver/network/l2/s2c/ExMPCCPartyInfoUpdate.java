@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 
@@ -32,5 +32,6 @@ public class ExMPCCPartyInfoUpdate implements IClientOutgoingPacket
 		packetWriter.writeD(_leader.getObjectId());
 		packetWriter.writeD(_count);
 		packetWriter.writeD(_mode); // mode 0 = Remove Party, 1 = AddParty, maybe more...
+		return true;
 	}
 }

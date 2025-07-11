@@ -80,5 +80,6 @@ public class PrivateStoreBuyList implements IClientOutgoingPacket
 			packetWriter.writeQ(si.getStorePrice());
 			packetWriter.writeQ(si.getCount()); // maximum possible tradecount
 		}
+		return true;
 	}
 }

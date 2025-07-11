@@ -150,6 +150,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 				}
 			}
 		}
+		return true;
 	}
 
 	// FIXME временная затычка, пока NCSoft не починят в клиенте отображение

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.instances.DoorInstance;
 
 /**
@@ -25,5 +25,6 @@ public class DoorInfo implements IClientOutgoingPacket
 		packetWriter.writeD(obj_id);
 		packetWriter.writeD(door_id);
 		packetWriter.writeD(view_hp); // отображать ли хп у двери или стены
+		return true;
 	}
 }

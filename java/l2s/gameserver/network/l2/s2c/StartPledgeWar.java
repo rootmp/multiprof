@@ -17,5 +17,6 @@ public class StartPledgeWar implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_char);
 		packetWriter.writeS(_pledgeName);
+		return true;
 	}
 }

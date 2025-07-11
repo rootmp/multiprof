@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInstance;
 
 /**
@@ -20,7 +20,7 @@ public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_crystalId > 0 && _crystalCount > 0)
+		if ((_crystalId > 0) && (_crystalCount > 0))
 		{
 			packetWriter.writeD(0x01);
 			packetWriter.writeD(_crystalId);
@@ -28,6 +28,10 @@ public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
 			packetWriter.writeF(100.);
 		}
 		else
+		{
 			packetWriter.writeD(0x00);
+		}
+
+		return true;
 	}
 }

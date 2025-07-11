@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class ExAutoplayDoMacro implements IClientOutgoingPacket
@@ -14,5 +15,6 @@ public class ExAutoplayDoMacro implements IClientOutgoingPacket
 		packetWriter.writeC(20);
 		packetWriter.writeC(1);
 		packetWriter.writeH(0);
+		return true;
 	}
 }

@@ -17,5 +17,6 @@ public class StopAllianceWar implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_allianceName);
 		packetWriter.writeS(_char);
+		return true;
 	}
 }

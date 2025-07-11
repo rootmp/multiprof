@@ -20,5 +20,7 @@ public class PetItemListPacket implements IClientOutgoingPacket
 
 		for (ItemInstance item : items)
 			writeItemInfo(item);
+		
+		return true;
 	}
 }

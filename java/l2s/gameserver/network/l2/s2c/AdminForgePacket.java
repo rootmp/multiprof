@@ -1,9 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 public class AdminForgePacket implements IClientOutgoingPacket
 {
@@ -39,7 +40,7 @@ public class AdminForgePacket implements IClientOutgoingPacket
 		{
 			generate(p.b, p.str);
 		}
-
+		return true;
 	}
 
 	public boolean generate(byte b, String string)

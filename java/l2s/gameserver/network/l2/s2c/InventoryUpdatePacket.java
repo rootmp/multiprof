@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
@@ -56,5 +57,6 @@ public class InventoryUpdatePacket implements IClientOutgoingPacket
 			packetWriter.writeH(item.getLastChange()); // Update type : 01-add, 02-modify, 03-remove
 			writeItemInfo(item);
 		}
+		return true
 	}
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -19,5 +19,6 @@ public class ExExchangeSubstitute implements IClientOutgoingPacket
 		packetWriter.writeD(0x00);
 		packetWriter.writeQ(3000000L);
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

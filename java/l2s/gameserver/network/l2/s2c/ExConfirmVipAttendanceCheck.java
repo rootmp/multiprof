@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -22,5 +23,6 @@ public class ExConfirmVipAttendanceCheck implements IClientOutgoingPacket
 		packetWriter.writeC(_receivedIndex); // Received index
 		packetWriter.writeD(0x00); // UNK
 		packetWriter.writeD(0x00); // UNK
+		return true;
 	}
 }

@@ -7,5 +7,6 @@ public class PledgeExtendedInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		// TODO SddSddddddddSd
+		return true;
 	}
 }

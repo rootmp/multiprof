@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 
@@ -29,5 +29,6 @@ public class ExSpawnEmitterPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_monsterObjId);
 		packetWriter.writeD(_playerObjId);
 		packetWriter.writeD(_type); // soul type
+		return true;
 	}
 }

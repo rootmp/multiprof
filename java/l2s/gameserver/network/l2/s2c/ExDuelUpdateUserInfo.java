@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -41,5 +41,6 @@ public class ExDuelUpdateUserInfo implements IClientOutgoingPacket
 		packetWriter.writeD(maxMp);
 		packetWriter.writeD(curCp);
 		packetWriter.writeD(maxCp);
+		return true;
 	}
 }

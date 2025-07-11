@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.network.l2.c2s.RequestExSendPost;
 
 /**
@@ -26,5 +26,6 @@ public class ExReplyWritePost implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_reply); // 1 - закрыть окно письма, иное - не закрывать
+		return true;
 	}
 }

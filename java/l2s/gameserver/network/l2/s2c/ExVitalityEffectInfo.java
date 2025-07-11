@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.stats.Stats;
@@ -23,6 +23,7 @@ public class ExVitalityEffectInfo implements IClientOutgoingPacket
 		_addBonusPercent = (int) player.getStat().calc(Stats.VITAL_RATE);
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_sayhasGracePoints);
@@ -30,5 +31,6 @@ public class ExVitalityEffectInfo implements IClientOutgoingPacket
 		packetWriter.writeH(_addBonusPercent);
 		packetWriter.writeH(_vitalityItemsRemaining);
 		packetWriter.writeH(Config.VITALITY_MAX_ITEMS_ALLOWED);
+		return true;
 	}
 }

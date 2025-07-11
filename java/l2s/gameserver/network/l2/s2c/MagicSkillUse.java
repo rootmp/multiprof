@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
@@ -141,7 +141,7 @@ public class MagicSkillUse implements IClientOutgoingPacket
 		{
 			packetWriter.writeH(0x00);
 		}
-		
+
 		packetWriter.writeD(_tx);
 		packetWriter.writeD(_ty);
 		packetWriter.writeD(_tz);
@@ -151,6 +151,7 @@ public class MagicSkillUse implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(-1);
 		}
+		return true;
 	}
 
 	@Override
@@ -159,7 +160,9 @@ public class MagicSkillUse implements IClientOutgoingPacket
 		if (player != null)
 		{
 			if (player.isNotShowBuffAnim())
+			{
 				return _chaId == player.getObjectId() ? super.packet(player) : null;
+			}
 		}
 
 		return super.packet(player);

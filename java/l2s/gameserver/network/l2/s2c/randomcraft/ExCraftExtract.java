@@ -52,5 +52,6 @@ public class ExCraftExtract implements IClientOutgoingPacket
 		_player.setCraftGaugePoints(_player.getCraftGaugePoints() + points, null);
 		packetWriter.writeC(0);
 		_player.sendPacket(new ExCraftRandomInfo(_player));
+		return true;
 	}
 }

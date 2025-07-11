@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 import java.util.Collections;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.AttendanceRewardHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.data.AttendanceRewardData;
@@ -46,5 +46,6 @@ public class ExVipAttendanceItemList implements IClientOutgoingPacket
 		});
 		packetWriter.writeC(0x00); // VIP rewards
 		packetWriter.writeD(0x00); // UNK
+		return true;
 	}
 }

@@ -1,7 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.List;
+
+import l2s.commons.network.PacketWriter;
 
 /**
  * Format: ch ddd [ddd]
@@ -32,6 +33,7 @@ public class ExGetBossRecord implements IClientOutgoingPacket
 			packetWriter.writeD(w._points);
 			packetWriter.writeD(w._unk1);// don`t know
 		}
+		return true;
 	}
 
 	public static class BossRecordInfo

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.entity.residence.ResidenceSide;
 
@@ -18,9 +18,11 @@ public class ExCastleState implements IClientOutgoingPacket
 		_side = castle.getResidenceSide();
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_id);
 		packetWriter.writeD(_side.ordinal());
+		return true;
 	}
 }

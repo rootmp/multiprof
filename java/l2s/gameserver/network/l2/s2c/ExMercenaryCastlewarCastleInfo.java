@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.concurrent.TimeUnit;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.residence.Castle;
 import l2s.gameserver.model.pledge.Clan;
 
@@ -55,5 +55,6 @@ public class ExMercenaryCastlewarCastleInfo implements IClientOutgoingPacket
 		packetWriter.writeQ(taxesAccumulated);
 		packetWriter.writeQ(unk4); // UNK
 		packetWriter.writeD(siegeDate);
+		return true;
 	}
 }

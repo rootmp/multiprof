@@ -47,6 +47,8 @@ public class ShopPreviewListPacket implements IClientOutgoingPacket
 				packetWriter.writeQ(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
 				packetWriter.writeQ(getWearPrice(item.getItem()));
 			}
+			
+		return true;
 	}
 
 	public static int getWearPrice(ItemTemplate item)

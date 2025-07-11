@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.residence.Castle;
@@ -59,5 +59,6 @@ public class ExRequestInviteParty implements IClientOutgoingPacket
 		packetWriter.writeC(charRankGrade);
 		packetWriter.writeC(pledgeCastleDBID);
 		packetWriter.writeD(userSID);
+		return true;
 	}
 }

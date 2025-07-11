@@ -26,5 +26,6 @@ public class StopMoveInVehiclePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_loc.y);
 		packetWriter.writeD(_loc.z);
 		packetWriter.writeD(_heading);
+		return true;
 	}
 }

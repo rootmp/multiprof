@@ -22,5 +22,6 @@ public class PledgeReceiveSubPledgeCreated implements IClientOutgoingPacket
 		packetWriter.writeD(type);
 		packetWriter.writeS(_name);
 		packetWriter.writeS(leader_name);
+		return true;
 	}
 }

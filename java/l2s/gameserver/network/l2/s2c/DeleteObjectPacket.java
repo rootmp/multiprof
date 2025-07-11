@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
@@ -26,8 +26,10 @@ public class DeleteObjectPacket implements IClientOutgoingPacket
 	protected boolean canWrite()
 	{
 		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || activeChar.getObjectId() == _objectId)
+		if ((activeChar == null) || (activeChar.getObjectId() == _objectId))
+		{
 			return false;
+		}
 		return true;
 	}
 
@@ -36,7 +38,8 @@ public class DeleteObjectPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeC(0x01); // Что-то странное. Если объект сидит верхом то при 0 он сперва будет ссажен,
-						// при 1 просто пропадет.
+		// при 1 просто пропадет.
+		return true;
 	}
 
 	@Override

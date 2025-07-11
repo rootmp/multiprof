@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.TeamType;
 import l2s.gameserver.model.entity.olympiad.CompType;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
@@ -33,7 +33,9 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 				for (OlympiadGame game : manager.getGames())
 				{
 					if (game.getState() > OlympiadGame.NONE_STATE)
+					{
 						_arenaList.add(new ArenaInfo(game.getId(), game.getState(), game.getType().ordinal(), game.getTeamName1(), game.getTeamName2()));
+					}
 				}
 			}
 		}
@@ -58,6 +60,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 				packetWriter.writeS(arena._name1);
 				packetWriter.writeS(arena._name2);
 			}
+			return true;
 		}
 
 		public static class ArenaInfo
@@ -98,10 +101,14 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 
 		public void addPlayer(TeamType team, String name, String clanName, int clanId, int classId, int damage, int points, int resultPoints, int arenaIndex)
 		{
-			if (team == winnerTeam || winnerTeam == TeamType.NONE && team == TeamType.BLUE)
+			if ((team == winnerTeam) || ((winnerTeam == TeamType.NONE) && (team == TeamType.BLUE)))
+			{
 				teamOne.add(new PlayerInfo(name, clanName, clanId, classId, damage, points, resultPoints, arenaIndex));
-			else if (team == winnerTeam.revert() || winnerTeam == TeamType.NONE && team == TeamType.RED)
+			}
+			else if ((team == winnerTeam.revert()) || ((winnerTeam == TeamType.NONE) && (team == TeamType.RED)))
+			{
 				teamTwo.add(new PlayerInfo(name, clanName, clanId, classId, damage, points, resultPoints, arenaIndex));
+			}
 		}
 
 		@Override
@@ -136,6 +143,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 				packetWriter.writeD(p.gamePoints);
 				packetWriter.writeD(p.arenaIndex);
 			});
+			return true;
 		}
 
 		private static class PlayerInfo
@@ -174,5 +182,6 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_type);
+		return true;
 	}
 }

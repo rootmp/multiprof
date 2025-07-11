@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Set;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.enums.AbnormalEffect;
 
@@ -29,6 +29,10 @@ public class ExUserInfoAbnormalVisualEffect implements IClientOutgoingPacket
 		packetWriter.writeD(_transformId);
 		packetWriter.writeD(_abnormalEffects.size());
 		for (AbnormalEffect abnormal : _abnormalEffects)
+		{
 			packetWriter.writeH(abnormal.getId());
+		}
+
+		return true;
 	}
 }

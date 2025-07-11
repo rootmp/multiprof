@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Calendar;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
 
@@ -39,5 +39,6 @@ public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // Hero counts
 		packetWriter.writeD(0x00); // Legend counts
 		packetWriter.writeD(0x00); // change to 1 causes shows nothing
+		return true;
 	}
 }

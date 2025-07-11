@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class AskJoinPledgePacket implements IClientOutgoingPacket
@@ -20,5 +21,6 @@ public class AskJoinPledgePacket implements IClientOutgoingPacket
 		packetWriter.writeS(_pledgeName);
 		packetWriter.writeD(0x00); // Pledge type
 		packetWriter.writeS(""); // Pledge Unit name
+		return true;
 	}
 }

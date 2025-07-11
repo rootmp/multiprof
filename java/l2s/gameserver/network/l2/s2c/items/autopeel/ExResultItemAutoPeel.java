@@ -52,6 +52,7 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 			packetWriter.writeQ(_items.get(i).getCount());
 			packetWriter.writeD(0); // TODO Announce level
 		}
+		return true;
 	}
 
 	/**

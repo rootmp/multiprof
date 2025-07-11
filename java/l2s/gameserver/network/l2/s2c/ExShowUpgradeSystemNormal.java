@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -21,5 +22,6 @@ public class ExShowUpgradeSystemNormal implements IClientOutgoingPacket
 		packetWriter.writeH(100); // unk, maybe chance
 		packetWriter.writeD(0x00); // unk
 		packetWriter.writeD(0x00); // unk
+		return true;
 	}
 }

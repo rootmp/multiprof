@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -29,5 +29,6 @@ public class ExPCCafePointInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_remainTime);
 		packetWriter.writeC(_pointType);
 		packetWriter.writeD(0); // TODO: online time
+		return true;
 	}
 }

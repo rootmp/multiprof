@@ -34,5 +34,6 @@ public class ExNewHennaList implements IClientOutgoingPacket
 			packetWriter.writeD(info.getCurrentEnchantExp());
 			packetWriter.writeH(info.getActiveStep());
 		}
+		return true;
 	}
 }

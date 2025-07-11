@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 public class Ex2NDPasswordAckPacket implements IClientOutgoingPacket
@@ -19,5 +20,6 @@ public class Ex2NDPasswordAckPacket implements IClientOutgoingPacket
 		packetWriter.writeC(0x00);
 		packetWriter.writeD(_response == WRONG_PATTERN ? 0x01 : 0x00);
 		packetWriter.writeD(0x00);
+		return true;
 	}
 }

@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.entity.events.impl.SiegeEvent;
 import l2s.gameserver.model.entity.events.objects.SiegeClanObject;
@@ -74,5 +74,6 @@ public class ExMercenaryCastlewarCastleSiegeAttackerList implements IClientOutgo
 				packetWriter.writeD(0x00);
 			}
 		}
+		return true;
 	}
 }

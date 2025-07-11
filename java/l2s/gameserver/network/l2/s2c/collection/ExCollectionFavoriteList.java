@@ -26,5 +26,6 @@ public class ExCollectionFavoriteList implements IClientOutgoingPacket
 			packetWriter.writeH(_collectionFavorites[i]); // collection id
 			packetWriter.writeD(0); // expiration time?
 		}
+		return true;
 	}
 }

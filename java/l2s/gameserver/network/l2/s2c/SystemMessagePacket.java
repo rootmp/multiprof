@@ -78,5 +78,6 @@ public class SystemMessagePacket extends SysMsgContainer<SystemMessagePacket>
 	public boolean write(PacketWriter packetWriter)
 	{
 		writeElements();
+		return true;
 	}
 }

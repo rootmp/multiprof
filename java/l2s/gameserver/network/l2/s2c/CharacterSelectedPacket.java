@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.GameTimeController;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
@@ -74,5 +74,6 @@ public class CharacterSelectedPacket implements IClientOutgoingPacket
 
 		writeB(new byte[64]);
 		packetWriter.writeD(0);
+		return true;
 	}
 }

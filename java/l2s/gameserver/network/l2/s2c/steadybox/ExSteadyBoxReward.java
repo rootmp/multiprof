@@ -24,5 +24,6 @@ public class ExSteadyBoxReward implements IClientOutgoingPacket
 		packetWriter.writeD(_itemCount); // item count
 		packetWriter.writeD(0); // ?
 		packetWriter.writeD(0); // ?
+		return true;
 	}
 }

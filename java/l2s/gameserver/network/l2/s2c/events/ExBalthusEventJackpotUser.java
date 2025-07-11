@@ -16,5 +16,6 @@ public class ExBalthusEventJackpotUser implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(1);
+		return true;
 	}
 }

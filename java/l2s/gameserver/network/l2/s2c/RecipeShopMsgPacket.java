@@ -21,5 +21,6 @@ public class RecipeShopMsgPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeS(_storeName);
+		return true;
 	}
 }

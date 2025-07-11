@@ -19,5 +19,6 @@ public class RevivePacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_objectId);
+		return true;
 	}
 }

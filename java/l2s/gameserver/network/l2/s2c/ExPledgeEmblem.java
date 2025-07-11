@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 
 public class ExPledgeEmblem implements IClientOutgoingPacket
@@ -27,5 +27,6 @@ public class ExPledgeEmblem implements IClientOutgoingPacket
 		packetWriter.writeD(_totalSize);
 		packetWriter.writeD(_data.length);
 		writeB(_data);
+		return true;
 	}
 }

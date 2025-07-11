@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.SubUnit;
 
@@ -29,12 +29,15 @@ public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 		for (SubUnit su : clan.getAllSubUnits())
 		{
 			if (su.getType() == Clan.SUBUNIT_MAIN_CLAN)
+			{
 				continue;
+			}
 
 			_subUnits.add(su);
 		}
 	}
 
+	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeS(_clanName);
@@ -47,5 +50,6 @@ public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 			packetWriter.writeD(su.getType());
 			packetWriter.writeS(su.getName());
 		}
+		return true;
 	}
 }

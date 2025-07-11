@@ -35,5 +35,6 @@ public class RecipeBookItemListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(recipe.getId());
 			packetWriter.writeD(1); // ??
 		}
+		return true;
 	}
 }

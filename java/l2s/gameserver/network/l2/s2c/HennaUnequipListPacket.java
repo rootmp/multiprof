@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Henna;
 import l2s.gameserver.model.actor.instances.player.HennaList;
@@ -34,5 +34,6 @@ public class HennaUnequipListPacket implements IClientOutgoingPacket
 			packetWriter.writeQ(template.getRemovePrice());
 			packetWriter.writeD(template.isForThisClass(_player) ? 0x01 : 0x00);
 		}
+		return true;
 	}
 }

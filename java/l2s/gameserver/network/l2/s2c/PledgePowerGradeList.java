@@ -21,5 +21,6 @@ public class PledgePowerGradeList implements IClientOutgoingPacket
 			packetWriter.writeD(element.getRank());
 			packetWriter.writeD(element.getParty());
 		}
+		return true;
 	}
 }

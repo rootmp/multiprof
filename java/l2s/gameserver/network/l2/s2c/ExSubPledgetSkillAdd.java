@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -21,5 +22,6 @@ public class ExSubPledgetSkillAdd implements IClientOutgoingPacket
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_id);
 		packetWriter.writeD(_level);
+		return true;
 	}
 }

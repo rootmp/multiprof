@@ -56,5 +56,6 @@ public class PlaySoundPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_x); // x
 		packetWriter.writeD(_y); // y
 		packetWriter.writeD(_z); // z
+		return true;
 	}
 }

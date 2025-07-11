@@ -59,5 +59,6 @@ public class EnchantResult implements IClientOutgoingPacket
 		packetWriter.writeD(0); // unk
 		packetWriter.writeD(0); // unk
 		packetWriter.writeD(0); // unk
+		return true;
 	}
 }

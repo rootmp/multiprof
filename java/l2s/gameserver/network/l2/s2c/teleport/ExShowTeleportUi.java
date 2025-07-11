@@ -9,6 +9,6 @@ public class ExShowTeleportUi implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		//
+		return true;
 	}
 }

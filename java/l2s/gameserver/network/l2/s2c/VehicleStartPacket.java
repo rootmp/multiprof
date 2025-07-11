@@ -18,5 +18,6 @@ public class VehicleStartPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeD(_state);
+		return true;
 	}
 }

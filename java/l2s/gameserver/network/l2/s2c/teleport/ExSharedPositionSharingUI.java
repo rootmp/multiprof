@@ -23,5 +23,7 @@ public class ExSharedPositionSharingUI implements IClientOutgoingPacket
 			packetWriter.writeQ(0);
 		else
 			packetWriter.writeQ(Config.SHARE_POSITION_COST);
+		
+		return true;
 	}
 }

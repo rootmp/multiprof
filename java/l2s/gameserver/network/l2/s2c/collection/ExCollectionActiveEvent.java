@@ -24,5 +24,6 @@ public class ExCollectionActiveEvent implements IClientOutgoingPacket
 		{
 			packetWriter.writeH(collections.get(i).getId()); // event collection id
 		}
+		return true;
 	}
 }

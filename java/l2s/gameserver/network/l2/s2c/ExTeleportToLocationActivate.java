@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.GameObject;
 
@@ -34,5 +34,6 @@ public class ExTeleportToLocationActivate implements IClientOutgoingPacket
 		packetWriter.writeD(0x00); // IsValidation
 		packetWriter.writeD(_loc.h);
 		packetWriter.writeD(0); // ??? 0
+		return true;
 	}
 }

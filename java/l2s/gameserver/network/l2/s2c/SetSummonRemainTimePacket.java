@@ -19,5 +19,6 @@ public class SetSummonRemainTimePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_maxFed);
 		packetWriter.writeD(_curFed);
+		return true;
 	}
 }

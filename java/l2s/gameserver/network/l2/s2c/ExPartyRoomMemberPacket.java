@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -23,7 +23,9 @@ public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 		_type = room.getMemberType(activeChar);
 		_members = new ArrayList<PartyRoomMemberInfo>(room.getPlayers().size());
 		for (Player $member : room.getPlayers())
+		{
 			_members.add(new PartyRoomMemberInfo($member, room.getMemberType($member)));
+		}
 	}
 
 	@Override
@@ -41,8 +43,11 @@ public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 			packetWriter.writeD(member_info.memberType);
 			packetWriter.writeD(member_info.instanceReuses.size());
 			for (int i : member_info.instanceReuses)
+			{
 				packetWriter.writeD(i);
+			}
 		}
+		return true;
 	}
 
 	static class PartyRoomMemberInfo

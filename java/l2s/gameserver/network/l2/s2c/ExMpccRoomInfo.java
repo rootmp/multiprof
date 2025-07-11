@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.matching.MatchingRoom;
 
 public class ExMpccRoomInfo implements IClientOutgoingPacket
@@ -34,5 +34,6 @@ public class ExMpccRoomInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_lootType); // loot type
 		packetWriter.writeD(_locationId); // location id as party room
 		packetWriter.writeS(_topic); // topic
+		return true;
 	}
 }

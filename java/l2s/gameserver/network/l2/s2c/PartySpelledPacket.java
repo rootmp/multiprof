@@ -45,6 +45,7 @@ public class PartySpelledPacket implements IClientOutgoingPacket
 			packetWriter.writeD(temp._abnormalType);
 			writeOptionalD(temp._duration);
 		}
+		return true;
 	}
 
 	public void addPartySpelledEffect(int skillId, int level, int abnormalType, int duration)
