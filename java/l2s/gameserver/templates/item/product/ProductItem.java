@@ -142,4 +142,9 @@ public class ProductItem implements Comparable<ProductItem>
 	{
 		return getId() - o.getId();
 	}
+
+	public int getGroupLimit()
+	{
+		return 0;   
+	}
 }

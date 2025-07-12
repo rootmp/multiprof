@@ -3,7 +3,7 @@ package l2s.gameserver.taskmanager.tasks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2s.gameserver.instancemanager.RankManager;
+import l2s.gameserver.dao.RankingGenerateDAO;
 import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.instancemanager.TrainingCampManager;
 import l2s.gameserver.model.GameObjectsStorage;
@@ -32,8 +32,8 @@ public class DailyTask extends AutomaticTask
 		ClanTable.getInstance().refreshClanAttendanceInfo();
 		TrainingCampManager.getInstance().refreshTrainingCamp();
 
-		RankManager.getInstance().saveClanData();
-		RankManager.getInstance().loadPreviousClanData();
+		RankingGenerateDAO.getInstance().saveClanData();
+		RankingGenerateDAO.getInstance().loadPreviousClanData();
 		ServerVariables.set("lastClanUpdate", System.currentTimeMillis());
 
 		_log.info("Daily Global Task: completed.");

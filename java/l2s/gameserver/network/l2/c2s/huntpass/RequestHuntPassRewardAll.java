@@ -101,7 +101,7 @@ public class RequestHuntPassRewardAll implements IClientIncomingPacket
 		}
 		else
 		{
-			ItemFunctions.addItem(player, reward.getId(), reward.getCount(), source);
+			ItemFunctions.addItem(player, reward.getId(), reward.getCount());
 		}
 		return true;
 	}

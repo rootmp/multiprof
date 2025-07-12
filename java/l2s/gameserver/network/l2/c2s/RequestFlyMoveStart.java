@@ -4,15 +4,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.data.xml.holder.JumpTracksHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Zone;
 import l2s.gameserver.model.Zone.ZoneType;
-import l2s.gameserver.model.actor.instances.player.FlyMove;
 import l2s.gameserver.model.quest.QuestState;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.templates.jump.JumpTrack;
 
 public final class RequestFlyMoveStart implements IClientIncomingPacket
 {
@@ -30,7 +27,7 @@ public final class RequestFlyMoveStart implements IClientIncomingPacket
 		final Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 		 return; 
-
+/*
 		if(activeChar.isInFlyMove() || activeChar.isTransformed() || activeChar.isMounted())
 		{ return; }
 		final Zone zone = activeChar.getZone(ZoneType.JUMPING);
@@ -74,7 +71,7 @@ public final class RequestFlyMoveStart implements IClientIncomingPacket
 		{
 			st.set("question_mark_state", 21);
 			st.getQuest().onTutorialEvent("EW", false, "", st);
-		}
+		}*/
 	}
 
 }

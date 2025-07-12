@@ -545,6 +545,11 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		_variation2Id = val;
 	}
 
+	public void setVariation3Id(int val)
+	{
+
+	}
+	
 	public boolean isBlessed()
 	{
 		return _blessed;

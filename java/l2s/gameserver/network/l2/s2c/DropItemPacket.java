@@ -7,10 +7,7 @@ import l2s.gameserver.model.items.ItemInstance;
 public class DropItemPacket implements IClientOutgoingPacket
 {
 	private final Location _loc;
-	private final int _playerId;
-	private final int item_obj_id;
-	private final int item_id;
-	private final int _stackable;
+	private final int _playerId, item_obj_id, item_id, _stackable;
 	private final long _count;
 	private final int _enchantLevel;
 	private final boolean _augmented;
@@ -18,8 +15,7 @@ public class DropItemPacket implements IClientOutgoingPacket
 
 	/**
 	 * Constructor<?> of the DropItem server packet
-	 * 
-	 * @param item     : L2ItemInstance designating the item
+	 * @param item : L2ItemInstance designating the item
 	 * @param playerId : int designating the player ID who dropped the item
 	 */
 	public DropItemPacket(ItemInstance item, int playerId)
@@ -32,7 +28,7 @@ public class DropItemPacket implements IClientOutgoingPacket
 		_count = item.getCount();
 		_enchantLevel = item.getEnchantLevel();
 		_augmented = item.isAugmented();
-		_ensoulCount = item.getNormalEnsouls().length + item.getSpecialEnsouls().length;
+		_ensoulCount = item.getNormalEnsouls().size() + item.getSpecialEnsouls().size();
 	}
 
 	@Override

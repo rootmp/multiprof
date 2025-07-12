@@ -6,6 +6,8 @@ import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.templates.skill.EffectTemplate;
@@ -50,7 +52,7 @@ public class EffectMPDrain extends EffectHandler
 			return;
 
 		effected.setCurrentMp(Math.max(0., effected.getCurrentMp() - drained), false);
-		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, UpdateType.VCP_MP);
+		StatusUpdate su = new StatusUpdate(effected, effector, StatusType.DotEffect, UpdateType.VCP_MP);
 		effector.sendPacket(su);
 		effected.sendPacket(su);
 		effected.broadcastStatusUpdate();

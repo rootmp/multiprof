@@ -38,7 +38,7 @@ public class ExCraftExtract implements IClientOutgoingPacket
 			}
 		}
 		if (_player.getAdena() < fee)
-			return;
+			return false;
 
 		for (int i = 0; i < _count; i++)
 		{

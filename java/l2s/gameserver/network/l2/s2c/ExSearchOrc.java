@@ -84,7 +84,7 @@ public class ExSearchOrc implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeB(_test);
+		packetWriter.writeB(_test);
 		return true;
 	}
 }

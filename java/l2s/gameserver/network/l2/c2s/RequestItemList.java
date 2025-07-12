@@ -3,6 +3,7 @@ import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 
 public class RequestItemList implements IClientIncomingPacket
 {
@@ -26,6 +27,6 @@ public class RequestItemList implements IClientIncomingPacket
 		}
 
 		activeChar.sendItemList(true);
-		activeChar.sendStatusUpdate(false, false, StatusUpdatePacket.CUR_LOAD);
+		activeChar.sendStatusUpdate(false, false, UpdateType.VCP_CARRINGWEIGHT);
 	}
 }

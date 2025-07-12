@@ -528,7 +528,7 @@ public final class VillageMasterInstance extends NpcInstance
 		{
 			player.setClassId(newClassId.getId(), false);
 			player.broadcastUserInfo(true);
-			broadcastPacket(new MagicSkillUse(this, player, 5103, 1, 1000, 0));
+			broadcastPacket(new MagicSkillUse(this, player, 5103, 1, 1000, 0, 0));
 			player.sendPacket(SystemMsg.CONGRATULATIONS__YOUVE_COMPLETED_A_CLASS_TRANSFER);
 
 			for (int itemId : newClassId.getChangeClassItemIds())

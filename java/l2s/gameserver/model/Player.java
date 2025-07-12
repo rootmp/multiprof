@@ -66,7 +66,6 @@ import l2s.gameserver.GameTimeController;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.ai.CtrlEvent;
 import l2s.gameserver.ai.CtrlIntention;
-import l2s.gameserver.ai.FakeAI;
 import l2s.gameserver.ai.PlayableAI.AINextAction;
 import l2s.gameserver.ai.PlayerAI;
 import l2s.gameserver.dao.AccountVariablesDAO;
@@ -82,7 +81,6 @@ import l2s.gameserver.dao.CharacterTeleportsDAO;
 import l2s.gameserver.dao.CharacterVariablesDAO;
 import l2s.gameserver.dao.CustomHeroDAO;
 import l2s.gameserver.dao.EffectsDAO;
-import l2s.gameserver.dao.ItemsEnsoulDAO;
 import l2s.gameserver.dao.ItemsToRestoreDAO;
 import l2s.gameserver.dao.PremiumAccountDAO;
 import l2s.gameserver.dao.PvpRankingDAO;
@@ -91,7 +89,6 @@ import l2s.gameserver.dao.SummonsDAO;
 import l2s.gameserver.data.QuestHolder;
 import l2s.gameserver.data.xml.holder.DroppedItemsHolder;
 import l2s.gameserver.data.xml.holder.EventHolder;
-import l2s.gameserver.data.xml.holder.FakePlayersHolder;
 import l2s.gameserver.data.xml.holder.HennaPatternPotentialDataHolder;
 import l2s.gameserver.data.xml.holder.InstantZoneHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
@@ -181,6 +178,7 @@ import l2s.gameserver.model.actor.instances.player.SubClass;
 import l2s.gameserver.model.actor.instances.player.SubClassList;
 import l2s.gameserver.model.actor.instances.player.TrainingCamp;
 import l2s.gameserver.model.actor.instances.player.VIP;
+import l2s.gameserver.model.actor.instances.player.VipAttendance;
 import l2s.gameserver.model.actor.instances.player.tasks.EnableUserRelationTask;
 import l2s.gameserver.model.actor.listener.PlayerListenerList;
 import l2s.gameserver.model.actor.recorder.PlayerStatsChangeRecorder;
@@ -266,7 +264,6 @@ import l2s.gameserver.model.quest.QuestState;
 import l2s.gameserver.network.authcomm.AuthServerCommunication;
 import l2s.gameserver.network.authcomm.gs2as.BonusRequest;
 import l2s.gameserver.network.authcomm.gs2as.ReduceAccountPoints;
-import l2s.gameserver.network.l2.FloodProtector;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.CustomMessage;
@@ -347,7 +344,6 @@ import l2s.gameserver.network.l2.s2c.SkillListPacket;
 import l2s.gameserver.network.l2.s2c.SnoopPacket;
 import l2s.gameserver.network.l2.s2c.SocialActionPacket;
 import l2s.gameserver.network.l2.s2c.SpecialCameraPacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.ability.ExAcquireAPSkillList;
@@ -398,10 +394,8 @@ import l2s.gameserver.templates.PremiumAccountTemplate;
 import l2s.gameserver.templates.RandomCraftCategory;
 import l2s.gameserver.templates.RandomCraftInfo;
 import l2s.gameserver.templates.RandomCraftItem;
-import l2s.gameserver.templates.StatsSet;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
 import l2s.gameserver.templates.ZoneTemplate;
-import l2s.gameserver.templates.fakeplayer.FakePlayerAITemplate;
 import l2s.gameserver.templates.item.ArmorTemplate.ArmorType;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.ItemType;
@@ -411,7 +405,6 @@ import l2s.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.templates.item.henna.Henna;
 import l2s.gameserver.templates.item.henna.HennaPoten;
-import l2s.gameserver.templates.item.support.Ensoul;
 import l2s.gameserver.templates.npc.NpcTemplate;
 import l2s.gameserver.templates.pet.PetData;
 import l2s.gameserver.templates.player.PlayerTemplate;
@@ -712,7 +705,8 @@ public final class Player extends Playable implements PlayerGroup
 	private final DailyMissionList _dailiyMissionList = new DailyMissionList(this);
 	private final ElementalList _elementalList = new ElementalList(this);
 	private final VIP _vip = new VIP(this);
-
+	private final VipAttendance _vipAttendance = new VipAttendance(this);
+	
 	private final AccountVariables _accountVar = new AccountVariables();
 	private final HuntPass _huntPass;
 	
@@ -3353,7 +3347,7 @@ public final class Player extends Playable implements PlayerGroup
 									// условие.
 			return;
 
-		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP, UpdateType.VCP_CP, UpdateType.VCP_MAXCP, UpdateType.VCP_DP, UpdateType.VCP_MAXDP, UpdateType.VCP_BP, StatusUpdatePacket.MAX_BP));
+		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP, UpdateType.VCP_CP, UpdateType.VCP_MAXCP, UpdateType.VCP_DP, UpdateType.VCP_MAXDP, UpdateType.VCP_BP, UpdateType.VCP_MAXBP));
 
 		// Check if a party is in progress
 		if (isInParty())
@@ -5592,7 +5586,7 @@ public final class Player extends Playable implements PlayerGroup
 	 */
 	public void updateKarma(boolean flagChanged)
 	{
-		sendStatusUpdate(true, true, StatusUpdatePacket.KARMA);
+		sendStatusUpdate(true, true, UpdateType.VCP_CRIMINAL_RATE);
 		if (flagChanged)
 		{
 			broadcastRelation();
@@ -5691,7 +5685,7 @@ public final class Player extends Playable implements PlayerGroup
 					_PvPRegTask.cancel(true);
 					_PvPRegTask = null;
 				}
-				sendStatusUpdate(true, true, StatusUpdatePacket.PVP_FLAG);
+				sendStatusUpdate(true, true, UpdateType.VCP_ISGUILTY);
 			}
 		}
 
@@ -15693,5 +15687,10 @@ public final class Player extends Playable implements PlayerGroup
 	public boolean isAnonymity()
 	{
 		return false;
+	}
+	
+	public VipAttendance getVipAttendance()
+	{
+		return _vipAttendance;
 	}
 }

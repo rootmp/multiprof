@@ -709,6 +709,16 @@ public abstract class Playable extends Creature
 		return _sharedGroupReuses.entrySet();
 	}
 
+	public int getSharedGroupReuseTime(int groupId)
+	{
+		TimeStamp sts = getSharedGroupReuse(groupId);
+		if(sts != null && sts.hasNotPassed())
+		{
+			return (int) sts.getReuseCurrent();
+		}
+		return 0;
+	}
+	
 	public boolean useItem(ItemInstance item, boolean ctrl, boolean sendMsg)
 	{
 		return false;

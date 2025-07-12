@@ -38,4 +38,18 @@ public class StatsSet extends MultiValueSet<String>
 	{
 		return new StatsSet(this);
 	}
+
+	public int incInt(String key, int inc)
+	{
+		final int newValue = getInteger(key) + inc;
+		set(key, newValue);
+		return newValue;
+	}
+	
+	public int incInt(String key, int defaultValue, int inc)
+	{
+		final int newValue =  getInteger(key, defaultValue) + inc;
+		set(key, newValue);
+		return newValue;
+	}
 }

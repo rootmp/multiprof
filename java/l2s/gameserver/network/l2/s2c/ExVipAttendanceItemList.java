@@ -10,7 +10,7 @@ import l2s.gameserver.templates.item.data.AttendanceRewardData;
 
 /**
  * @author Bonux
- **/
+**/
 public class ExVipAttendanceItemList implements IClientOutgoingPacket
 {
 	private final int _indexToReceive;
@@ -20,9 +20,10 @@ public class ExVipAttendanceItemList implements IClientOutgoingPacket
 
 	public ExVipAttendanceItemList(Player player)
 	{
-		_indexToReceive = player.getAttendanceRewards().getNextRewardIndex();
-		_lastReceivedIndex = player.getAttendanceRewards().getReceivedRewardIndex();
-		_received = player.getAttendanceRewards().isReceived();
+		_indexToReceive = player.getVipAttendance().getAttendanceDay();
+		_lastReceivedIndex = player.getVipAttendance().getAttendanceDay();
+		_received = true;
+
 		_rewards = _indexToReceive > 0 ? AttendanceRewardHolder.getInstance().getRewards(player.hasPremiumAccount()) : Collections.emptyList();
 	}
 
@@ -37,8 +38,7 @@ public class ExVipAttendanceItemList implements IClientOutgoingPacket
 		packetWriter.writeC(!_received); // Not Received
 		packetWriter.writeC(0xFA); // UNK
 		packetWriter.writeC(_rewards.size()); // Items Count
-		_rewards.forEach(reward ->
-		{
+		_rewards.forEach(reward -> {
 			packetWriter.writeD(reward.getId()); // Item ID
 			packetWriter.writeQ(reward.getCount()); // Item count
 			packetWriter.writeC(reward.isUnknown()); // UNK

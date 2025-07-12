@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.base.TeamType;
 import l2s.gameserver.model.entity.olympiad.CompType;
@@ -12,6 +14,7 @@ import l2s.gameserver.model.entity.olympiad.OlympiadGame;
 import l2s.gameserver.model.entity.olympiad.OlympiadManager;
 import l2s.gameserver.model.entity.olympiad.OlympiadMember;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
+import l2s.gameserver.network.l2.ServerPacketOpcodes507;
 
 /**
  * @author VISTALL
@@ -49,7 +52,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 		@Override
 		public boolean write(PacketWriter packetWriter)
 		{
-			super.writeImpl();
+			super.write(packetWriter);
 			packetWriter.writeD(_arenaList.size());
 			packetWriter.writeD(0x00); // unknown
 			for (ArenaInfo arena : _arenaList)
@@ -114,7 +117,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 		@Override
 		public boolean write(PacketWriter packetWriter)
 		{
-			super.writeImpl();
+			super.write(packetWriter);
 			packetWriter.writeD(winnerTeam == TeamType.NONE);
 			packetWriter.writeS(winnerTopDamagerName);
 			packetWriter.writeD(1); // Team type
@@ -173,9 +176,25 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 	}
 
 	@Override
-	protected ServerPacketOpcodes getOpcodes()
+	public ByteBuf getOpcodes()
 	{
-		return ServerPacketOpcodes.ExReceiveOlympiadPacket;
+		try
+		{
+			ServerPacketOpcodes spo = ServerPacketOpcodes507.ExReceiveOlympiadPacket;
+			ByteBuf opcodes = Unpooled.buffer();
+			opcodes.writeByte(spo.getId());
+			int exOpcode = spo.getExId();
+			if(exOpcode >= 0)
+				opcodes.writeShortLE(exOpcode);
+			return opcodes.retain();
+		}
+		catch (IllegalArgumentException e) 
+		{}
+		catch(Exception e)
+		{
+			LOGGER.error("Cannot find serverpacket opcode: " + getClass().getSimpleName() + "!");
+		}
+		return Unpooled.EMPTY_BUFFER;
 	}
 
 	@Override

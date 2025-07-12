@@ -3,7 +3,11 @@ package l2s.gameserver.data.xml.holder;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.item.VariationType;
 import l2s.gameserver.templates.item.support.variation.VariationGroup;
+import l2s.gameserver.templates.item.support.variation.VariationProb;
 import l2s.gameserver.templates.item.support.variation.VariationStone;
+
+import java.util.Collections;
+import java.util.List;
 
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
@@ -65,5 +69,12 @@ public final class VariationDataHolder extends AbstractHolder
 	{
 		_stones.clear();
 		_groups.clear();
+	}
+
+	public List<VariationProb> findVariationProbs(int nRefineryID, int nTargetItemId)
+	{
+		System.out.println("findVariationProbs not implemented yet.");
+		return Collections.emptyList();
+		    
 	}
 }

@@ -73,7 +73,7 @@ public class RequestExApplyVariationOption implements IClientIncomingPacket
 			}
 
 			// try to reduce the players adena
-			if(!player.reduceAdena(price, true, "Refine"))
+			if(!player.reduceAdena(price, true))
 			{
 				player.sendPacket(new ExVariationCancelResult(0), SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 				return;

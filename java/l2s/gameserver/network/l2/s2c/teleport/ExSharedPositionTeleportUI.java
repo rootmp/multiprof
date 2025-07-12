@@ -26,7 +26,7 @@ public class ExSharedPositionTeleportUI implements IClientOutgoingPacket
 	{
 		if (ServerVariables.getString("tpId_" + _tpId + "_name") != null)
 		{
-			packetWriter.writeString(ServerVariables.getString("tpId_" + _tpId + "_name"));
+			packetWriter.writeSizedString(ServerVariables.getString("tpId_" + _tpId + "_name"));
 			packetWriter.writeD(_tpId);
 			packetWriter.writeD(_player.getVarInt(PlayerVariables.SHARED_POSITION_TELEPORTS, Config.SHARED_TELEPORTS_PER_DAY)); // exist
 																													// teleports

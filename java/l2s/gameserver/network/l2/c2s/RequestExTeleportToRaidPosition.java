@@ -10,7 +10,7 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExRaidTeleportInfo;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.skills.SkillEntry;
-import l2s.gameserver.skills.SkillEntryType;
+import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.TeleportTemplate;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.utils.ChatUtils;

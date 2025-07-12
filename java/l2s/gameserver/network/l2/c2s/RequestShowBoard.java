@@ -1,8 +1,10 @@
 package l2s.gameserver.network.l2.c2s;
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.handler.bbs.BbsHandlerHolder;
 import l2s.gameserver.handler.bbs.IBbsHandler;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 
@@ -15,14 +17,14 @@ public class RequestShowBoard implements IClientIncomingPacket
 	 * packet type id 0x5E sample 5E 01 00 00 00 format: cd
 	 */
 	@Override
-	public boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_unknown = packet.readD();
 		return true;
 	}
 
 	@Override
-	public void runImpl()
+	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
 		if (activeChar == null)

@@ -155,6 +155,8 @@ public final class VariationUtils
 
 		int variation1Id = getRandomOptionId(stone.getVariation(1));
 		int variation2Id = getRandomOptionId(stone.getVariation(2));
+		int variation3Id = 0;
+		
 		if (variation1Id == 0 && variation2Id == 0)
 			return false;
 
@@ -170,22 +172,23 @@ public final class VariationUtils
 		if (!player.getInventory().destroyItem(feeItem, feeItemCount))
 			return false;
 
-		setVariation(player, targetItem, stoneId, variation1Id, variation2Id);
+		setVariation(player, targetItem, stoneId, variation1Id, variation2Id, variation3Id);
 		return true;
 	}
 
-	public static void setVariation(Player player, ItemInstance item, int variationStoneId, int variation1Id, int variation2Id)
+	public static void setVariation(Player player, ItemInstance item, int variationStoneId, int variation1Id, int variation2Id, int variation3Id)
 	{
 		item.setVariationStoneId(variationStoneId);
 		item.setVariation1Id(variation1Id);
 		item.setVariation2Id(variation2Id);
-
+		item.setVariation3Id(variation3Id);
+		
 		player.getInventory().refreshEquip(item);
 
 		item.setJdbcState(JdbcEntityState.UPDATED);
 		item.update();
 
-		player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, item));
+		player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 
 		for (ShortCut sc : player.getAllShortCuts())
 		{

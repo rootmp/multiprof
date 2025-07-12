@@ -13,7 +13,6 @@ import l2s.dataparser.data.holder.ItemAnnounceDataHolder;
 import l2s.gameserver.dao.AccountRelicsCollectionDAO;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.relics.ExRelicsActiveInfo;
 import l2s.gameserver.network.l2.s2c.relics.ExRelicsAnnounce;
@@ -33,12 +32,12 @@ import l2s.gameserver.templates.relics.RelicsTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.data.clientDat.RelicsData;
 import l2s.gameserver.data.xml.holder.SkillHolder;
-import l2s.gameserver.data.xml.holder.OptionDataXmlHolder;
+import l2s.gameserver.data.xml.holder.OptionDataHolder;
 import l2s.gameserver.data.xml.holder.RelicHolder;
 import l2s.gameserver.data.xml.holder.RelicsCouponHolder;
 import l2s.gameserver.data.xml.holder.RelicsSynthesisHolder;
+import l2s.gameserver.templates.OptionDataTemplate;
 import l2s.gameserver.templates.item.data.ItemData;
-import l2s.gameserver.templates.option.OptionDataTemplate;
 import l2s.gameserver.templates.relics.RelicsCollection;
 
 public class RelicList
@@ -180,7 +179,7 @@ public class RelicList
 			{
 				if(isCollectionComplete(collectionTemplate))
 				{
-					OptionDataTemplate option = OptionDataXmlHolder.getInstance().getTemplate(collectionTemplate.getOptionId());
+					OptionDataTemplate option = OptionDataHolder.getInstance().getTemplate(collectionTemplate.getOptionId());
 					owner.addOptionData(option);
 				}
 			}

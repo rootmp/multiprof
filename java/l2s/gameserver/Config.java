@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.lang.reflect.Field;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -1353,6 +1354,9 @@ public class Config
 
 	public static boolean VIP_ATTENDANCE_REWARDS_ENABLED;
 	public static boolean VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT = true;
+	
+	public static LocalDateTime VIP_ATTENDANCE_REWARDS_START_DATE;
+	public static LocalDateTime VIP_ATTENDANCE_REWARDS_END_DATE;
 
 	public static boolean ALT_SAVE_PRIVATE_STORE;
 
@@ -3268,6 +3272,8 @@ public class Config
 		WORLD_EXCHANGE_ITEM_BACK_PERIOD = worldExchangeconfig.getProperty("ItemBackPeriod", 120);
 		WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD = worldExchangeconfig.getProperty("PaymentTakePeriod", 120);
 	}
+	
+
 	
 	public static void loadGMAccess()
 	{

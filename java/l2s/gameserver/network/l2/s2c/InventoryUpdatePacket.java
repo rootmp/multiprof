@@ -1,61 +1,77 @@
 package l2s.gameserver.network.l2.s2c;
 
-import l2s.commons.network.PacketWriter;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
 
-/**
- * @author Hl4p3x
- */
 public class InventoryUpdatePacket implements IClientOutgoingPacket
 {
 	public static final int UNCHANGED = 0;
 	public static final int ADDED = 1;
 	public static final int MODIFIED = 2;
 	public static final int REMOVED = 3;
+
+	public enum EInventoryUpdateType
+	{
+		IVUT_NONE, //               =0,
+		IVUT_ADD, //                =1,
+		IVUT_UPDATE, //             =2,
+		IVUT_DELETE, //             =3,
+		IVUT_MAX,//                =4,
+	};
+
 	private final List<ItemInfo> _items = new ArrayList<>(1);
-
-	public InventoryUpdatePacket addNewItem(Player player, ItemInstance item)
+	private final Player _player;
+	
+	public InventoryUpdatePacket(Player player)
 	{
-		addItem(player, item).setLastChange(ADDED);
+		_player = player;
+	}
+
+	public InventoryUpdatePacket addNewItem(ItemInstance item)
+	{
+		addItem(item).setLastChange(ADDED);
 		return this;
 	}
 
-	public InventoryUpdatePacket addModifiedItem(Player player, ItemInstance item)
+	public InventoryUpdatePacket addModifiedItem(ItemInstance item)
 	{
-		addItem(player, item).setLastChange(MODIFIED);
+		addItem(item).setLastChange(MODIFIED);
 		return this;
 	}
 
-	public InventoryUpdatePacket addRemovedItem(Player player, ItemInstance item)
+	public InventoryUpdatePacket addRemovedItem(ItemInstance item)
 	{
-		addItem(player, item).setLastChange(REMOVED);
+		addItem(item).setLastChange(REMOVED);
 		return this;
 	}
 
-	private ItemInfo addItem(Player player, ItemInstance item)
+	private ItemInfo addItem(ItemInstance item)
 	{
 		ItemInfo info;
-		_items.add(info = new ItemInfo(item, item.getTemplate().isBlocked(player, item)));
+		_items.add(info = new ItemInfo(item, item.getTemplate().isBlocked(_player, item)/*, _player.getSharedGroupReuseTime(item.getTemplate().getReuseGroup())*/));
 		return info;
+	}
+
+	public List<ItemInfo> getItems()
+	{
+		return _items;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		// 140 PROTOCOL
-		packetWriter.writeC(0x00);
-		packetWriter.writeD(0x00);
+		packetWriter.writeC(0x00); // 140 PROTOCOL
 		packetWriter.writeD(_items.size());
-		for (ItemInfo item : _items)
+		packetWriter.writeD(_items.size());
+		for(ItemInfo temp : _items)
 		{
-			packetWriter.writeH(item.getLastChange()); // Update type : 01-add, 02-modify, 03-remove
-			writeItemInfo(packetWriter, item);
+			packetWriter.writeH(temp.getLastChange());
+			writeItemInfo(packetWriter, temp);
 		}
 		return true;
 	}

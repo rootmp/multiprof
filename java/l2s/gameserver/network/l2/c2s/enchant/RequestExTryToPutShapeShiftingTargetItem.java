@@ -7,6 +7,7 @@ import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.AppearanceStoneHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.model.enums.ItemLocation;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.network.l2.GameClient;
@@ -65,7 +66,7 @@ public class RequestExTryToPutShapeShiftingTargetItem implements IClientIncoming
 			return;
 		}
 
-		if(targetItem.getLocation() != ItemInstance.ItemLocation.INVENTORY && targetItem.getLocation() != ItemInstance.ItemLocation.PAPERDOLL)
+		if(targetItem.getLocation() != ItemLocation.INVENTORY && targetItem.getLocation() != ItemLocation.PAPERDOLL)
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);

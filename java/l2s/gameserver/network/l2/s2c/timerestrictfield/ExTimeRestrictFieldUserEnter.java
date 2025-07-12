@@ -97,7 +97,7 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 				packetWriter.writeD(0);
 				packetWriter.writeD(0);
 			}
-			return;
+			return true;
 		}
 
 		int reflectionId = 0;

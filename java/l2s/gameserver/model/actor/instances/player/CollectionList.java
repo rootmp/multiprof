@@ -7,17 +7,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import l2s.gameserver.dao.CollectionsDAO;
+import l2s.gameserver.dao.AccountCollectionsDAO;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.CollectionTemplate;
+import l2s.gameserver.templates.item.data.CollectionItemData;
 
 /**
  * @author nexvill
  */
-public class CollectionList implements Iterable<List<CollectionTemplate>>
+public class CollectionList implements Iterable<List<CollectionTemplate>> 
 {
 	private final Player owner;
 	private final Map<Integer, List<CollectionTemplate>> collections;
+
+	public Map<Integer, List<CollectionTemplate>> getCollectionsMap()
+	{
+		return collections;
+	}
 
 	public CollectionList(Player owner)
 	{
@@ -32,7 +38,7 @@ public class CollectionList implements Iterable<List<CollectionTemplate>>
 
 	public void restore()
 	{
-		CollectionsDAO.getInstance().restore(owner, collections);
+		AccountCollectionsDAO.getInstance().restore(owner, collections);
 	}
 
 	public int size()
@@ -47,7 +53,7 @@ public class CollectionList implements Iterable<List<CollectionTemplate>>
 
 	public boolean add(CollectionTemplate collectionTemplate)
 	{
-		if (CollectionsDAO.getInstance().insert(owner, collectionTemplate))
+		if (AccountCollectionsDAO.getInstance().insert(owner, collectionTemplate))
 		{
 			collections.computeIfAbsent(collectionTemplate.getId(), (l) -> new ArrayList<>()).add(collectionTemplate);
 			return true;
@@ -66,8 +72,7 @@ public class CollectionList implements Iterable<List<CollectionTemplate>>
 	}
 
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "CollectionList[owner=" + owner.getName() + "]";
 	}
 
@@ -75,5 +80,22 @@ public class CollectionList implements Iterable<List<CollectionTemplate>>
 	public Iterator<List<CollectionTemplate>> iterator()
 	{
 		return collections.values().iterator();
+	}
+
+	public boolean checkSlot(int id, int slotId) 
+	{
+		List<CollectionTemplate> templates = collections.get(id);
+		if (templates == null || templates.isEmpty()) 
+			return true;
+		else 
+		{
+			for (CollectionTemplate template : templates) 
+			{
+				for (CollectionItemData item : template.getItems()) 
+					if (item.getSlotId() == slotId) 
+						return false;
+			}
+			return true;
+		}
 	}
 }

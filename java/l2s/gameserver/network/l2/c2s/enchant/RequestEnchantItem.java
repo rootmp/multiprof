@@ -266,7 +266,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				if (enchantLevel.haveSuccessVisualEffect())
 				{
 					player.broadcastPacket(new SystemMessage(SystemMessage.C1_HAS_SUCCESSFULY_ENCHANTED_A__S2_S3).addName(player).addNumber(item.getEnchantLevel()).addItemName(item.getItemId()));
-					player.broadcastPacket(new MagicSkillUse(player, player, SUCCESS_VISUAL_EFF_ID, 1, 500, 1500));
+					player.broadcastPacket(new MagicSkillUse(player, player, SUCCESS_VISUAL_EFF_ID, 1, 0, 500, 1500));
 					player.broadcastPacket(new ExItemAnnounce(player, item, 0));
 				}
 

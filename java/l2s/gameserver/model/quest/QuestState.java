@@ -1180,4 +1180,10 @@ public final class QuestState
 	{
 		return getRestartTime() <= System.currentTimeMillis();
 	}
+
+	public int getQuestCond()
+	{
+		return 0;
+		    
+	}
 }

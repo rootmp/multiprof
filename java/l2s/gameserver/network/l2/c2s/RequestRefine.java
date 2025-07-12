@@ -40,19 +40,19 @@ public final class RequestRefine implements IClientIncomingPacket
 
 		if (activeChar.isActionsDisabled())
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0));
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
 		}
 
 		if (activeChar.isInStoreMode())
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0));
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
 		}
 
 		if (activeChar.isInTrade())
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0));
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
 		}
 
@@ -62,7 +62,7 @@ public final class RequestRefine implements IClientIncomingPacket
 		if (refinerItem == null) // block if player press "Continue" button and try again place life stone on
 									// same item, that not exist or smth.
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
 		}
 
@@ -90,14 +90,14 @@ public final class RequestRefine implements IClientIncomingPacket
 
 		if (targetItem == null || refinerItem == null || feeItem == null)
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
 		}
 
 		VariationFee fee = VariationUtils.getVariationFee(targetItem, refinerItem);
 		if (fee == null)
 		{
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
 		}
 
@@ -105,13 +105,13 @@ public final class RequestRefine implements IClientIncomingPacket
 		activeChar.getInventory().addItem(feeItem.getItemId(), 1);
 
 		if (VariationUtils.tryAugmentItem(activeChar, targetItem, refinerItem, feeItem, fee.getFeeItemCount()))
-			activeChar.sendPacket(new ExVariationResult(targetItem.getVariation1Id(), targetItem.getVariation2Id(), 1), SystemMsg.THE_ITEM_WAS_SUCCESSFULLY_AUGMENTED);
+			activeChar.sendPacket(new ExVariationResult(targetItem.getVariation1Id(), targetItem.getVariation2Id(), 0, 1), SystemMsg.THE_ITEM_WAS_SUCCESSFULLY_AUGMENTED);
 		else
-			activeChar.sendPacket(new ExVariationResult(0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
+			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 
 		if (!activeChar.getInventory().destroyItem(refinerItem, 1) || !activeChar.getInventory().destroyItem(feeItem, 1))
 		{
-			VariationUtils.setVariation(activeChar, targetItem, 0, 0, 0);
+			VariationUtils.setVariation(activeChar, targetItem, 0, 0, 0, 0);
 		}
 	}
 }

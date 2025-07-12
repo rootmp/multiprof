@@ -22,7 +22,6 @@ import l2s.gameserver.data.xml.parser.BlackCouponParser;
 import l2s.gameserver.data.xml.parser.BotReportPropertiesParser;
 import l2s.gameserver.data.xml.parser.BuyListParser;
 import l2s.gameserver.data.xml.parser.ClassDataParser;
-import l2s.gameserver.data.xml.parser.CollectionsParser;
 import l2s.gameserver.data.xml.parser.CubicParser;
 import l2s.gameserver.data.xml.parser.DailyMissionsParser;
 import l2s.gameserver.data.xml.parser.DomainParser;
@@ -67,7 +66,6 @@ import l2s.gameserver.data.xml.parser.SkillParser;
 import l2s.gameserver.data.xml.parser.SpawnParser;
 import l2s.gameserver.data.xml.parser.StaticObjectParser;
 import l2s.gameserver.data.xml.parser.SubjugationsParser;
-import l2s.gameserver.data.xml.parser.SynthesisDataParser;
 import l2s.gameserver.data.xml.parser.TeleportListParser;
 import l2s.gameserver.data.xml.parser.TimeRestrictFieldParser;
 import l2s.gameserver.data.xml.parser.TransformTemplateParser;
@@ -104,8 +102,6 @@ public abstract class Parsers
 		ItemParser.getInstance().load();
 		EnsoulParser.getInstance().load();
 		RecipeParser.getInstance().load();
-		SynthesisDataParser.getInstance().load();
-		CollectionsParser.getInstance().load();
 		//
 		ExperienceDataParser.getInstance().load();
 		BaseStatsBonusParser.getInstance().load();

@@ -18,33 +18,63 @@ import l2s.gameserver.network.l2.s2c.SayPacket2;
 
 public class ChatUtils
 {
-	private static void say(Player activeChar, GameObject activeObject, Iterable<Player> players, int range, IBroadcastPacket cs)
+	public static void sayInvParty(Player activeChar, IBroadcastPacket cs)
 	{
-		for (Player player : players)
+		if(activeChar.getVarBoolean("blockChatSpam"))
+			return;
+		
+		GameObject activeObject = activeChar.getObservePoint();
+		if(activeObject == null)
+			activeObject = activeChar;
+
+		sayInvParty(activeChar, activeObject, World.getAroundObservers(activeObject), Config.CHAT_RANGE, cs);
+	}
+	private static void sayInvParty(Player activeChar, GameObject activeObject, Iterable<Player> players, int range, IBroadcastPacket cs)
+	{
+		for(Player player : players)
 		{
-			if (player.isBlockAll())
+			if(player.isBlockAll())
 				continue;
 
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
-			// Персонаж находится рядом с наблюдателем или точкой наблюдения
-			if (activeObject.isInRangeZ(obj, range))
+			//Персонаж находится рядом с наблюдателем или точкой наблюдения
+			if(activeObject.isInRangeZ(obj, range))
 			{
-				if (!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+				if(!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
 				{
-					if (cs instanceof SayPacket2)
-						((SayPacket2) cs).setCharName(activeChar.getVisibleName(player));
-					else if (cs instanceof ExRequestInviteParty)
-						((ExRequestInviteParty) cs).setName(activeChar.getVisibleName(player));
+					player.sendPacket(cs);
+				}
+			}
+		}
+	}
+	private static void say(Player activeChar, GameObject activeObject, Iterable<Player> players, int range, SayPacket2 cs)
+	{
+		for(Player player : players)
+		{
+			if(player.isBlockAll())
+				continue;
+
+			GameObject obj = player.getObservePoint();
+			if(obj == null)
+				obj = player;
+
+			//Персонаж находится рядом с наблюдателем или точкой наблюдения
+			if(activeObject.isInRangeZ(obj, range))
+			{
+				if(!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+				{
+					cs.setCharName(activeChar.getVisibleName(player));
 					player.sendPacket(cs);
 				}
 			}
 		}
 	}
 
-	public static void say(Player activeChar, IBroadcastPacket cs, Predicate<Player> predicate)
+
+	public static void say(Player activeChar, SayPacket2 cs, Predicate<Player> predicate)
 	{
 		GameObject activeObject = activeChar.getObservePoint();
 		if (activeObject == null)
@@ -53,7 +83,7 @@ public class ChatUtils
 		say(activeChar, activeObject, World.getAroundObservers(activeObject, predicate), Config.CHAT_RANGE, cs);
 	}
 
-	public static void say(Player activeChar, IBroadcastPacket cs)
+	public static void say(Player activeChar, SayPacket2 cs)
 	{
 		say(activeChar, cs, null);
 	}

@@ -47,7 +47,7 @@ public class Charge extends Skill
 			return false;
 		}
 		else if (getId() == 2165)
-			player.sendPacket(new MagicSkillUse(player, player, 2165, 1, 0, 0));
+			player.sendPacket(new MagicSkillUse(player, player, 2165, 1, 0, 0, 0));
 
 		return true;
 	}

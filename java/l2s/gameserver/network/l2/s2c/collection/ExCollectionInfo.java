@@ -1,86 +1,55 @@
 package l2s.gameserver.network.l2.s2c.collection;
 
-import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
-import l2s.gameserver.data.xml.holder.CollectionsHolder;
-import l2s.gameserver.data.xml.holder.OptionDataHolder;
-import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.CollectionList;
-import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.CollectionTemplate;
-import l2s.gameserver.templates.OptionDataTemplate;
 import l2s.gameserver.templates.item.data.CollectionItemData;
 
-/**
- * @author nexvill
- */
 public class ExCollectionInfo implements IClientOutgoingPacket
 {
-	private Player _player;
 	private int _tabId;
-
-	public ExCollectionInfo(Player player, int tabId)
+	private Map<Integer, CollectionTemplate> _collection;
+	private int[] _collectionFavorites;
+	private int[] _collectionReward;
+	
+	public ExCollectionInfo(int tabId, Map<Integer, CollectionTemplate> collection, int[] collectionFavorites, int[] collectionReward)
 	{
-		_player = player;
 		_tabId = tabId;
+		_collection = collection;
+		_collectionFavorites = collectionFavorites;
+		_collectionReward = collectionReward;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		List<CollectionTemplate> list = CollectionsHolder.getInstance().getCollectionsByTabId(_tabId);
-		CollectionList collections = _player.getCollectionList();
-		Map<Integer, CollectionTemplate> collection = new TreeMap<>();
-
-		for (CollectionTemplate template : list)
+		packetWriter.writeD(_collection.size());
+		for (int id : _collection.keySet())
 		{
-			if (collections.contains(template.getId()))
+			packetWriter.writeD(_collection.get(id).getItems().size()); // items added count
+			for (CollectionItemData itemData : _collection.get(id).getItems())
 			{
-				List<CollectionTemplate> temp = collections.get(template.getId());
-				CollectionTemplate newTemplate = new CollectionTemplate(template.getId(), _tabId, 0);
-				for (CollectionTemplate tmp : temp)
-				{
-					newTemplate.getItems().addAll(tmp.getItems());
-				}
-				collection.put(template.getId(), newTemplate);
-			}
-		}
-		for (int id : collection.keySet())
-		{
-			for (CollectionTemplate temp : list)
-			{
-				if ((temp.getId() == id) && (temp.getItems().size() == collection.get(id).getItems().size()))
-				{
-					int id2 = CollectionsHolder.getInstance().getCollection(id).getOptionId();
-					OptionDataTemplate option = OptionDataHolder.getInstance().getTemplate(id2);
-					_player.addOptionData(option);
-					_player.sendUserInfo(true);
-					_player.broadcastUserInfo(true);
-				}
-			}
-		}
-
-		packetWriter.writeD(collection.size());
-		for (int id : collection.keySet())
-		{
-			packetWriter.writeD(collection.get(id).getItems().size()); // items added count
-			for (CollectionItemData itemData : collection.get(id).getItems())
-			{
-				packetWriter.writeC(itemData.getSlotId());
-				packetWriter.writeD(itemData.getId());
-				packetWriter.writeC(0); // ??
-				packetWriter.writeH(0); // ??
+				packetWriter.writeC(itemData.getSlotId()); //cSlotIndex
+				packetWriter.writeD(itemData.getId());//nItemClassID
+				packetWriter.writeC(itemData.getEnchantLevel()); // cEnchant
+				packetWriter.writeC(itemData.getBless()); //bBless
+				packetWriter.writeC(itemData.getBlessCondition()); 
 				packetWriter.writeD((int) itemData.getCount());
 			}
 			packetWriter.writeH(id); // collection id
 		}
-		packetWriter.writeD(0); // ??
-		packetWriter.writeD(0); // ??
-		packetWriter.writeC(_tabId);
-		packetWriter.writeH(collection.size());
+		packetWriter.writeD(_collectionFavorites.length); // nSize
+		for (int i = 0; i < _collectionFavorites.length; i++)
+			packetWriter.writeH(_collectionFavorites[i]); // nCollectionID
+
+		packetWriter.writeD(_collectionReward.length); // nSize
+		for (int i = 0; i < _collectionReward.length; i++)
+			packetWriter.writeH(_collectionReward[i]); //rewardList
+
+		packetWriter.writeC(_tabId);//cCategory
+		packetWriter.writeH(_collection.size());//nTotalCollectionCount
 		return true;
 	}
 }

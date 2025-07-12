@@ -6,7 +6,6 @@ import java.util.TimerTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2s.commons.net.nio.impl.SelectorThread;
 import l2s.commons.time.cron.SchedulingPattern;
 import l2s.commons.time.cron.SchedulingPattern.InvalidPatternException;
 import l2s.gameserver.database.DatabaseFactory;
@@ -19,7 +18,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.model.entity.olympiad.OlympiadDatabase;
 import l2s.gameserver.network.authcomm.AuthServerCommunication;
-import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.ClientNetworkManager;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.tables.ClanTable;
@@ -211,16 +210,14 @@ public class Shutdown extends Thread
 		}
 
 		System.out.println("Shutting down selector...");
-		if (gameServer != null)
-			for (SelectorThread<GameClient> st : gameServer.getSelectorThreads())
-				try
-				{
-					st.shutdown();
-				}
-				catch (Exception e)
-				{
-					e.printStackTrace();
-				}
+		try
+		{
+			ClientNetworkManager.getInstance().stop();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 
 		try
 		{

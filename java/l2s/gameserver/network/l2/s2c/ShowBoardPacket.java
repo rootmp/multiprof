@@ -6,7 +6,6 @@ import java.util.List;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.tables.FakePlayersTable;
 import l2s.gameserver.utils.BypassStorage.BypassType;
 
 public class ShowBoardPacket implements IClientOutgoingPacket
@@ -40,7 +39,7 @@ public class ShowBoardPacket implements IClientOutgoingPacket
 		html = player.getBypassStorage().parseHtml(html, BypassType.BBS, true);
 
 		html = html.replace("<?copyright?>", Config.BBS_COPYRIGHT);
-		html = html.replace("<?total_online?>", String.valueOf(GameObjectsStorage.getPlayers(true, true).size() + FakePlayersTable.getActiveFakePlayersCount()));
+		html = html.replace("<?total_online?>", String.valueOf(GameObjectsStorage.getPlayers(true, true).size()));
 
 		if (html.length() < 8180)
 		{
@@ -73,7 +72,7 @@ public class ShowBoardPacket implements IClientOutgoingPacket
 		html = player.getBypassStorage().parseHtml(html, BypassType.BBS, true);
 
 		html = html.replace("<?copyright?>", Config.BBS_COPYRIGHT);
-		html = html.replace("<?total_online?>", String.valueOf(GameObjectsStorage.getPlayers(true, true).size() + FakePlayersTable.getActiveFakePlayersCount()));
+		html = html.replace("<?total_online?>", String.valueOf(GameObjectsStorage.getPlayers(true, true).size()));
 
 		if (html.length() < 8180)
 		{

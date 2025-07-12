@@ -4,7 +4,8 @@ import l2s.gameserver.handler.effects.EffectHandler;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.templates.skill.EffectTemplate;
 
 public class EffectMPDamPercent extends EffectHandler
@@ -31,7 +32,7 @@ public class EffectMPDamPercent extends EffectHandler
 		double newMp = (100. - getValue()) * effected.getMaxMp() / 100.;
 		newMp = Math.min(effected.getCurrentMp(), Math.max(0, newMp));
 		effected.setCurrentMp(newMp, false);
-		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, UpdateType.VCP_MP);
+		StatusUpdate su = new StatusUpdate(effected, effector, StatusType.DotEffect, UpdateType.VCP_MP);
 		effector.sendPacket(su);
 		effected.sendPacket(su);
 		effected.broadcastStatusUpdate();

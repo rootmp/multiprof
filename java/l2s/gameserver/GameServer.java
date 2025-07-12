@@ -72,7 +72,6 @@ import l2s.gameserver.scripts.Scripts;
 import l2s.gameserver.security.HWIDBan;
 import l2s.gameserver.tables.ClanTable;
 import l2s.gameserver.tables.EnchantHPBonusTable;
-import l2s.gameserver.tables.FakePlayersTable;
 import l2s.gameserver.tables.SubClassTable;
 import l2s.gameserver.taskmanager.AutomaticTasks;
 import l2s.gameserver.taskmanager.ItemsAutoDestroy;
@@ -383,8 +382,6 @@ public class GameServer
 		{
 			_log.info(line);
 		}
-
-		FakePlayersTable.getInstance();
 	}
 
 	public GameServerListenerList getListeners()

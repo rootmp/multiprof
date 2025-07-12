@@ -37,7 +37,8 @@ public class Request extends MultiValueSet<String>
 		DUEL,
 		COUPLE_ACTION,
 		MENTEE,
-		PARTY_MEMBER_SUBSTITUTE
+		PARTY_MEMBER_SUBSTITUTE,
+		REFINE_REQUEST
 	}
 
 	private final static AtomicInteger _nextId = new AtomicInteger();
