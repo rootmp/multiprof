@@ -6628,7 +6628,7 @@ public final class Player extends Playable implements PlayerGroup
 				if (newMp >= 0)
 				{
 					item.setLifeTime(newMp);
-					sendPacket(new InventoryUpdatePacket().addModifiedItem(this, item));
+					sendPacket(new InventoryUpdatePacket(this).addModifiedItem(item));
 					return true;
 				}
 				break;

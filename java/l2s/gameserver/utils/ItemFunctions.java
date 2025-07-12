@@ -346,6 +346,43 @@ public final class ItemFunctions
 		return true;
 	}
 
+	/**
+	 * Удаляет предметы из инвентаря игрока, корректно обрабатывает нестыкуемые предметы
+	 *
+	 * @param playable Владелец инвентаря
+	 * @param item   предмет
+	 * @param count	количество
+	 * @param notify оповестить игрока системным сообщением
+	 * @return true, если вещь удалена
+	 */
+	public static boolean deleteItem(Playable playable, ItemInstance item, long count, boolean sendModifyItem, boolean notify)
+	{
+		if(playable == null || count < 1)
+			return false;
+
+		if(item.getCount() < count)
+			return false;
+
+		playable.getInventory().writeLock();
+		try
+		{
+			if(!playable.getInventory().destroyItem(item, count))
+			{
+				//TODO audit
+				return false;
+			}
+		}
+		finally
+		{
+			playable.getInventory().writeUnlock();
+		}
+
+		if(notify)
+			playable.sendPacket(SystemMessagePacket.removeItems(item.getItemId(), count));
+
+		return true;
+	}
+	
 	/** Удаляет все предметы у персонажа с ивентаря и банка по Item ID **/
 	public static void deleteItemsEverywhere(Playable playable, int itemId)
 	{

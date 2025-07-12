@@ -129,7 +129,7 @@ public class RequestTryEnSoulExtraction implements IClientIncomingPacket
 
 			ItemFunctions.addItem(activeChar, extractionItemId, 1);
 
-			activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, targetItem));
+			activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(targetItem));
 			activeChar.sendPacket(new ExEnSoulExtractionResult(targetItem.getNormalEnsouls(), targetItem.getSpecialEnsouls()));
 		}
 		finally

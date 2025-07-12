@@ -249,7 +249,7 @@ public class RequestUpgradeSystemResult implements IClientIncomingPacket
 							newItem.addSpecialAbility(ensoul, id, 2, false);
 							id++;
 						}
-						activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, newItem));
+						activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(newItem));
 					}
 
 					variationStoneId = 0;

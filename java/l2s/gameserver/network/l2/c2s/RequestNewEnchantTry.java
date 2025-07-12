@@ -209,7 +209,7 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 					activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));
 				else
 				{
-					List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(),false, true, "NewEnchantTry");
+					List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(),false, true);
 					if(items != null && !items.isEmpty())
 					{
 						activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));
