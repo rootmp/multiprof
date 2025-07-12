@@ -37,6 +37,9 @@ public enum Stats
 	POTION_MP_HEAL_EFFECT("potion_mp_heal_effect", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	//
 
+	POWER_ATTACK_WEAPON("pAtkWeapon"),
+	MAGIC_ATTACK_WEAPON("mAtkWeapon"),
+	
 	RUN_SPEED("runSpd"),
 
 	POWER_DEFENCE("pDef"),
@@ -278,8 +281,10 @@ public enum Stats
 	MAGIC_LAMP_CHARGING_RATE_MULTIPLIER("magic_lamp_charging_rate_multiplier"),
 
 	// Сайха
-	SAYHAS_GRACE_CONSUME("sayhas_grace_consume"), // множителя расхода сайхи
+	SAYHAS_BLOCK_CONSUME("sayhas_block_consume", 0., Double.POSITIVE_INFINITY, 1.),
+	SAYHAS_GRACE_CONSUME("sayhas_grace_consume", 0., Double.POSITIVE_INFINITY, 1.), // множителя расхода сайхи
 	SAYHAS_GRACE_CHARGING_RATE_MULTIPLIER("sayhas_grace_charging_rate_multiplier"),
+	SAYHAS_GRACE_BONUS_EXP_RATE("sayhas_grace_bonus_exp_rate"),
 
 	SKILLS_ELEMENT_ID("skills_element_id", -1., 100., -1.),
 
@@ -466,7 +471,13 @@ public enum Stats
 	VITAL_ADD("vital_add", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	VITAL_SUB("vital_sub", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	// Henna
-	HENNA_SLOTS_AVAILABLE("hennaSlots");
+	HENNA_SLOTS_AVAILABLE("hennaSlots"),
+	P_BLOCK_MAIL("p_block_mail", 0, 1, 0),
+	P_BLOCK_TRADE("p_block_trade", 0, 1, 0),
+	P_BLOCK_PRIVATE_STORE("p_block_private_store", 0, 1, 0),
+	P_BLOCK_WORLD_TRADE("p_block_world_trade", 0, 1, 0),
+	P_BLOCK_WORLD_CHAT("p_block_world_chat", 0, 1, 0), 
+	;
 
 	public static final Stats[] VALUES = values();
 	public static final int NUM_STATS = VALUES.length;

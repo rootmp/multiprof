@@ -64,7 +64,7 @@ public class RequestShowResetShopList implements IClientIncomingPacket
 			return;
 		}
 
-		activeChar.getInventory().destroyItemByItemId(57, reqAdena, "ShowResetShopList");
+		activeChar.getInventory().destroyItemByItemId(57, reqAdena);
 		if(_hairStyle > 0)
 		{
 			activeChar.setBeautyHairStyle(0);

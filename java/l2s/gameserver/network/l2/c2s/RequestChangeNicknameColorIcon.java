@@ -36,7 +36,7 @@ public class RequestChangeNicknameColorIcon implements IClientIncomingPacket
 	{
 		_itemId = packet.readD();
 		_colorNum = packet.readD();
-		_title = readString();
+		_title = packet.readString();
 		return true;
 	}
 

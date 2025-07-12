@@ -6,6 +6,8 @@ import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.skills.enums.SkillTargetType;
 import l2s.gameserver.stats.Stats;
@@ -128,7 +130,7 @@ public class EffectRestoreMP extends EffectRestore
 				effected.sendPacket(new SystemMessagePacket(SystemMsg.S1_MP_HAS_BEEN_RESTORED).addInteger(addToMp));
 
 			effected.setCurrentMp(effected.getCurrentMp() + addToMp, false);
-			StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_MP);
+			StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, UpdateType.VCP_MP);
 			effector.sendPacket(su);
 			effected.sendPacket(su);
 			effected.broadcastStatusUpdate();
@@ -150,7 +152,7 @@ public class EffectRestoreMP extends EffectRestore
 		{
 			addToMp = checkRestoreMpLimits(effected, addToMp);
 			effected.setCurrentMp(effected.getCurrentMp() + addToMp, false);
-			StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_MP);
+			StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, UpdateType.VCP_MP);
 			effector.sendPacket(su);
 			effected.sendPacket(su);
 			effected.broadcastStatusUpdate();

@@ -64,8 +64,8 @@ public class RequestExNewHennaEquip implements IClientIncomingPacket
 		
 		if (henna.isAllowedClass(player) && count >= henna.getNeedCount() && _wearFee !=null && ItemFunctions.haveItem(player, _wearFee.itemName, _wearFee.count) && player.addHenna(_slotId, henna,false))
 		{
-			ItemFunctions.deleteItem(player, henna.getDyeItemId(), henna.getNeedCount(), "NewHennaEquip");
-			ItemFunctions.deleteItem(player, _wearFee.itemName, _wearFee.count, "NewHennaEquip");
+			ItemFunctions.deleteItem(player, henna.getDyeItemId(), henna.getNeedCount());
+			ItemFunctions.deleteItem(player, _wearFee.itemName, _wearFee.count);
 			
 			/*final InventoryUpdate iu = new InventoryUpdate();
 			iu.addModifiedItem(player.getInventory().getAdenaInstance());

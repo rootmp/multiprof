@@ -1,48 +1,41 @@
 package l2s.gameserver.network.l2.s2c;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import l2s.commons.network.PacketWriter;
-import l2s.gameserver.data.xml.holder.HennaHolder;
+import l2s.dataparser.data.holder.DyeDataHolder;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.templates.henna.HennaTemplate;
+import l2s.gameserver.templates.item.henna.Henna;
 
 public class HennaEquipListPacket implements IClientOutgoingPacket
 {
 	private final Player _player;
-	private final int _emptySlots;
-	private final long _adena;
-	private final List<HennaTemplate> _hennas = new ArrayList<HennaTemplate>();
+	private final List<Henna> _hennaEquipList;
 
 	public HennaEquipListPacket(Player player)
 	{
 		_player = player;
-		_adena = player.getAdena();
-		_emptySlots = player.getHennaList().getFreeSize();
+		_hennaEquipList = DyeDataHolder.getInstance().getHennaList(player);
+	}
 
-		for (HennaTemplate element : HennaHolder.getInstance().getHennas())
-		{
-			if (player.getInventory().getItemByItemId(element.getDyeId()) != null)
-			{
-				_hennas.add(element);
-			}
-		}
+	public HennaEquipListPacket(Player player, List<Henna> list)
+	{
+		_player = player;
+		_hennaEquipList = list;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeQ(_adena);
-		packetWriter.writeD(_emptySlots);
-		packetWriter.writeD(_hennas.size());
-		for (HennaTemplate henna : _hennas)
+		packetWriter.writeQ(_player.getAdena());
+		packetWriter.writeD(3);
+		packetWriter.writeD(_hennaEquipList.size());
+		for(Henna henna : _hennaEquipList)
 		{
-			packetWriter.writeD(henna.getSymbolId()); // symbolid
-			packetWriter.writeD(henna.getDyeId()); // itemid of dye
-			packetWriter.writeQ(henna.getDrawCount());
-			packetWriter.writeQ(henna.getDrawPrice());
-			packetWriter.writeD(henna.isForThisClass(_player) ? 0x01 : 0x00);
+			packetWriter.writeD(henna.getDyeId());
+			packetWriter.writeD(henna.getDyeItemId());
+			packetWriter.writeQ(henna.getNeedCount());//unk
+			packetWriter.writeD(1);//unk2
 		}
 		return true;
 	}

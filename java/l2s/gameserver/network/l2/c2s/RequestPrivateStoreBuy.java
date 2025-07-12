@@ -30,7 +30,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 	{
 		_sellerId = packet.readD();
 		_count = packet.readD();
-		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 20 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

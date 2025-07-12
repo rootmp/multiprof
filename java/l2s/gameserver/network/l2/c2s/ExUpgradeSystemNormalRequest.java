@@ -1,5 +1,6 @@
 package l2s.gameserver.network.l2.c2s;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -149,8 +150,8 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		int visualId;
 		boolean blessed;
 		int appearanceStoneId;
-		Ensoul[] normalEnsouls;
-		Ensoul[] specialEnsouls;
+		Collection<Ensoul> normalEnsouls;
+		Collection<Ensoul> specialEnsouls;
 
 		activeChar.getInventory().writeLock();
 		try
@@ -294,17 +295,19 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 					activeChar.sendPacket(SystemMessagePacket.obtainItems(newItem));
 					activeChar.getInventory().addItem(newItem);
 
-					if (newItem.isEquipable())
+					if(newItem.isEquipable())
 					{
-						for (int id = 1; id <= normalEnsouls.length; id++)
+						int id = 1;
+						for(Ensoul ensoul : normalEnsouls)
 						{
-							Ensoul ensoul = normalEnsouls[id - 1];
-							newItem.addEnsoul(1, id, ensoul, true);
+							newItem.addSpecialAbility(ensoul, id, 1, false);
+							id++;
 						}
-						for (int id = 1; id <= specialEnsouls.length; id++)
+						id = 1;
+						for(Ensoul ensoul : specialEnsouls)
 						{
-							Ensoul ensoul = specialEnsouls[id - 1];
-							newItem.addEnsoul(2, id, ensoul, true);
+							newItem.addSpecialAbility(ensoul, id, 2, false);
+							id++;
 						}
 
 						variationStoneId = 0;
@@ -312,7 +315,6 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 						variation2Id = 0;
 						visualId = 0;
 						appearanceStoneId = 0;
-						blessed = false;
 						customFlags = 0;
 						lifeTime = 0;
 						normalEnsouls = ItemInstance.EMPTY_ENSOULS_ARRAY;

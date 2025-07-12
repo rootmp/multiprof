@@ -96,7 +96,7 @@ import l2s.gameserver.network.l2.s2c.ExShowVariationCancelWindow;
 import l2s.gameserver.network.l2.s2c.ExShowVariationMakeWindow;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MoveToPawnPacket;
-import l2s.gameserver.network.l2.s2c.NpcInfo;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket;
 import l2s.gameserver.network.l2.s2c.NpcInfoState;
 import l2s.gameserver.network.l2.s2c.PackageToListPacket;
 import l2s.gameserver.network.l2.s2c.RadarControlPacket;
@@ -1027,7 +1027,7 @@ public class NpcInstance extends Creature
 		{
 			if (isInvisible(player))
 				continue;
-			player.sendPacket(new NpcInfo(this, player).update(components));
+			player.sendPacket(new NpcInfoPacket(this, player).update(components));
 		}
 	}
 
@@ -2247,7 +2247,7 @@ public class NpcInstance extends Creature
 			return Collections.emptyList();
 
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(3);
-		list.add(new NpcInfo(this, forPlayer).init());
+		list.add(new NpcInfoPacket(this, forPlayer).init());
 
 		if (isInCombat())
 			list.add(new AutoAttackStartPacket(getObjectId()));
@@ -2760,5 +2760,15 @@ public class NpcInstance extends Creature
 	public ElementalElement getActiveElement()
 	{
 		return getTemplate().getElementalElement();
+	}
+
+	public int getCloneObjId()
+	{
+		return 0;  
+	}
+
+	public int getChestItem()
+	{
+		return 0; 
 	}
 }

@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c.pvpbook;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -21,7 +21,7 @@ public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacke
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeString(killerName);
+		packetWriter.writeSizedString(killerName);
 		packetWriter.writeD(killerLoc.getX());
 		packetWriter.writeD(killerLoc.getY());
 		packetWriter.writeD(killerLoc.getZ());

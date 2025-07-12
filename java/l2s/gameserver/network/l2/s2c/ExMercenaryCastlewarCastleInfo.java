@@ -22,7 +22,7 @@ public class ExMercenaryCastlewarCastleInfo implements IClientOutgoingPacket
 	{
 		castleId = castle.getId();
 		Clan ownerClan = castle.getOwner();
-		if (ownerClan != null)
+		if(ownerClan != null)
 		{
 			ownerClanId = ownerClan.getClanId();
 			ownerClanCrestId = ownerClan.getCrestId();
@@ -40,21 +40,21 @@ public class ExMercenaryCastlewarCastleInfo implements IClientOutgoingPacket
 		taxesAccumulated = 0L;
 		unk4 = 0;
 		siegeDate = (int) TimeUnit.MILLISECONDS.toSeconds(nearestSiegeTime);
-		// siegeDate = (int) (castle.getSiegeDate().getTimeInMillis() / 1000);
+		//siegeDate = (int) (castle.getSiegeDate().getTimeInMillis() / 1000);
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeD(castleId);
-		packetWriter.writeD(ownerClanId); // UNK
-		packetWriter.writeD(ownerClanCrestId); // UNK
-		packetWriter.writeString(ownerClanName);
-		packetWriter.writeString(ownerLeaderName);
-		packetWriter.writeD(taxRate); // UNK
-		packetWriter.writeQ(taxesAccumulated);
-		packetWriter.writeQ(unk4); // UNK
-		packetWriter.writeD(siegeDate);
+		packetWriter.writeD(castleId);//nCastleID
+		packetWriter.writeD(ownerClanId); // nCastleOwnerPledgeSID
+		packetWriter.writeD(ownerClanCrestId); // nCastleOwnerPledgeCrestDBID
+		packetWriter.writeSizedString(ownerClanName);//wstrCastleOwnerPledgeName
+		packetWriter.writeSizedString(ownerLeaderName);//wstrCastleOwnerPledgeMasterName
+		packetWriter.writeD(taxRate); // nCastleTaxRate
+		packetWriter.writeQ(taxesAccumulated);//nCurrentIncome
+		packetWriter.writeQ(unk4); // nTotalIncome
+		packetWriter.writeD(siegeDate);//nNextSiegeTime
 		return true;
 	}
 }

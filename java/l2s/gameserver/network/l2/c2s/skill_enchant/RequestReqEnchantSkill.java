@@ -10,7 +10,6 @@ import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExEnchantSkillResult;
 import l2s.gameserver.network.l2.s2c.ExSkillEnchantInfo;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
-import l2s.gameserver.service.StageService;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.skill.enchant.SkillEnchantInfo;
@@ -40,7 +39,7 @@ public class RequestReqEnchantSkill implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		if (_skillId <= 0 || _skillLevel <= 0 || _skillSubLevel < 0)
+	/*	if (_skillId <= 0 || _skillLevel <= 0 || _skillSubLevel < 0)
 			return;
 		if (player.isInOlympiadMode())
 			return;
@@ -57,15 +56,6 @@ public class RequestReqEnchantSkill implements IClientIncomingPacket
 		if ((skill.getSubLevel() ==0 && _skillSubLevel != 1001) || (skill.getSubLevel() >0 && skill.getSubLevel()+1 != _skillSubLevel))
 			return;
 		
-		if(StageService.getInstance().getCurrentStage().getSkillEnchantLimit().containsKey(skill.getGrade()))
-		{
-			int ench_max = StageService.getInstance().getCurrentStage().getSkillEnchantLimit().get(skill.getGrade());
-			if(skill.getSubLevel() > ench_max*1000 )
-			{
-				player.sendPacket(new SystemMessagePacket(SystemMsg.AT_STAGE_S1_THE_SKILL_HAS_REACHED_ITS_MAXIMUM_VALUE).addInteger(StageService.getInstance().getCurrentStageId() + 1));
-				return;
-			}
-		}
 		
 		SkillEnchantInfo enchant = player.getSkillEnchant().findEnchant(_skillId, skill.getSubLevel());
 
@@ -88,7 +78,7 @@ public class RequestReqEnchantSkill implements IClientIncomingPacket
 				break;
 		}
 
-		if(!ItemFunctions.deleteItem(player,  57, 1_000_000, "RequestReqEnchantSkill"))
+		if(!ItemFunctions.deleteItem(player,  57, 1_000_000))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ALL_OF_THE_ITEMS_NEEDED_TO_ENCHANT_THAT_SKILL);//TODO ??
 			return;
@@ -126,6 +116,6 @@ public class RequestReqEnchantSkill implements IClientIncomingPacket
 		player.sendPacket(new ExSkillEnchantInfo(enchant));
 		//player.sendPacket(new ExEnchantSkillInfoDetailPacket(_type, skill.getId(), skill.getLevel(), skill.getSubLevel(), player));
 		player.updateSkillShortcuts(skill.getId(), skill.getLevel(), skill.getSubLevel());
-		
+		*/
 	}
 }

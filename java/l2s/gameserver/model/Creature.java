@@ -70,6 +70,7 @@ import l2s.gameserver.model.base.TeamType;
 import l2s.gameserver.model.base.TransformType;
 import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.entity.events.Event;
+import l2s.gameserver.model.instances.MonsterInstance;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.pledge.Clan;
@@ -98,7 +99,8 @@ import l2s.gameserver.network.l2.s2c.MagicSkillLaunchedPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.MoveToPawnPacket;
 import l2s.gameserver.network.l2.s2c.SetupGaugePacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.StopMovePacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -755,7 +757,7 @@ public abstract class Creature extends GameObject
 		final Set<Creature> targets = skill.getTargets(skillEntry, this, aimingTarget, true);
 		if (!skill.isNotBroadcastable())
 		{
-			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), magicId, level, targets, SkillCastingType.NORMAL));
+			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), magicId, level, 0, targets, SkillCastingType.NORMAL));
 		}
 		final double mpConsume2 = skill.getMpConsume2();
 		if (mpConsume2 > 0)
@@ -802,7 +804,7 @@ public abstract class Creature extends GameObject
 		if (!skill.isNotBroadcastable())
 		{
 			broadcastPacket(new MagicSkillUse(this, target, skill.getDisplayId(), skill.getDisplayLevel(), 0, 0));
-			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), skill.getDisplayId(), skill.getDisplayLevel(), targets, SkillCastingType.NORMAL));
+			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), skill.getDisplayId(), skill.getDisplayLevel(), skill.getSubLevel(), targets, SkillCastingType.NORMAL));
 		}
 
 		callSkill(target, skillEntry, targets, false, false);
@@ -924,7 +926,7 @@ public abstract class Creature extends GameObject
 			return;
 		}
 
-		broadcastPacket(new StatusUpdate(this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.MAX_HP, StatusUpdatePacket.CUR_MP, StatusUpdatePacket.MAX_MP));
+		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 	}
 
 	public int calcHeading(int x_dest, int y_dest)
@@ -1703,7 +1705,7 @@ public abstract class Creature extends GameObject
 			}
 			else
 			{
-				killer.sendPacket(new StatusUpdate(killer, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.MAX_DP, StatusUpdatePacket.CUR_DP));
+				killer.sendPacket(new StatusUpdate(killer, StatusType.Normal, UpdateType.VCP_MAXDP, UpdateType.VCP_DP));
 			}
 		}
 
@@ -3001,7 +3003,7 @@ public abstract class Creature extends GameObject
 			setCurrentCp(getMaxCp(), !isDot);
 			if (isDot)
 			{
-				final StatusUpdate su = new StatusUpdate(this, attacker, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.CUR_CP);
+				final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_HP, UpdateType.VCP_CP);
 				attacker.sendPacket(su);
 				sendPacket(su);
 				broadcastStatusUpdate();
@@ -3044,7 +3046,7 @@ public abstract class Creature extends GameObject
 		setCurrentHp(Math.max(getCurrentHp() - damage, isDot ? 1.5 : (isUndying ? 0.5 : 0)), false, !isDot);
 		if (isDot)
 		{
-			final StatusUpdate su = new StatusUpdate(this, attacker, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_HP);
+			final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_HP);
 			attacker.sendPacket(su);
 			sendPacket(su);
 			broadcastStatusUpdate();
@@ -3978,26 +3980,20 @@ public abstract class Creature extends GameObject
 				getListeners().onChangeCurrentBp(bpStart, _currentBp);
 			}
 
-			final TIntSet updateAttributes = new TIntHashSet(4);
+			List<UpdateType> updateAttributes = new ArrayList<>();
+			
 			if ((addHp > 0) && (_currentHp != hpStart))
-			{
-				updateAttributes.add(StatusUpdatePacket.CUR_HP);
-			}
+				updateAttributes.add(UpdateType.VCP_HP);
 			if ((addMp > 0) && (_currentMp != mpStart))
-			{
-				updateAttributes.add(StatusUpdatePacket.CUR_MP);
-			}
+				updateAttributes.add(UpdateType.VCP_MP);
 			if ((addCp > 0) && (_currentCp != cpStart))
-			{
-				updateAttributes.add(StatusUpdatePacket.CUR_CP);
-			}
+				updateAttributes.add(UpdateType.VCP_CP);
 			if ((addBp > 0) && (_currentBp != bpStart))
-			{
-				updateAttributes.add(StatusUpdatePacket.CUR_BP);
-			}
+				updateAttributes.add(UpdateType.VCP_BP);
+			
 			if (!updateAttributes.isEmpty())
 			{
-				sendPacket(new StatusUpdate(Creature.this, StatusUpdatePacket.UpdateType.REGEN, updateAttributes.toArray()));
+				sendPacket(new StatusUpdate(Creature.this, StatusType.HPUpdate, updateAttributes));
 				broadcastStatusUpdate();
 				sendChanges();
 			}
@@ -5845,5 +5841,12 @@ public abstract class Creature extends GameObject
 	public int getActingRange()
 	{
 		return 150;
+	}
+	
+	public List<MonsterInstance> getAroundMonsters(int radius, int height)
+	{
+		if(!isVisible())
+			return Collections.emptyList();
+		return World.getAroundMonsters(this, radius, height);
 	}
 }

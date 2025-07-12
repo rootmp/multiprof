@@ -38,7 +38,6 @@ import l2s.gameserver.data.xml.parser.FakePlayersParser;
 import l2s.gameserver.data.xml.parser.FestivalBMParser;
 import l2s.gameserver.data.xml.parser.FightClubMapParser;
 import l2s.gameserver.data.xml.parser.FishDataParser;
-import l2s.gameserver.data.xml.parser.HennaParser;
 import l2s.gameserver.data.xml.parser.HitCondBonusParser;
 import l2s.gameserver.data.xml.parser.InitialShortCutsParser;
 import l2s.gameserver.data.xml.parser.InstantZoneParser;
@@ -158,7 +157,6 @@ public abstract class Parsers
 		BlackCouponParser.getInstance().load();
 		FestivalBMParser.getInstance().load();
 		// item support
-		HennaParser.getInstance().load();
 		EnchantItemParser.getInstance().load();
 		EnchantStoneParser.getInstance().load();
 		AppearanceStoneParser.getInstance().load();

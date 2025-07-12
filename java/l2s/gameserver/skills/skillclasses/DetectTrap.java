@@ -5,7 +5,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.instances.TrapInstance;
-import l2s.gameserver.network.l2.s2c.NpcInfo;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket;
 import l2s.gameserver.skills.enums.AbnormalType;
 import l2s.gameserver.templates.StatsSet;
 
@@ -26,7 +26,7 @@ public class DetectTrap extends Skill
 			{
 				trap.setDetected(true);
 				for (Player player : World.getAroundObservers(trap))
-					player.sendPacket(new NpcInfo(trap, player).init());
+					player.sendPacket(new NpcInfoPacket(trap, player).init());
 			}
 		}
 		else if (isDetectPC())

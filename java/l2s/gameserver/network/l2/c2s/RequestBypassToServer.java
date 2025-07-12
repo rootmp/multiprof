@@ -61,7 +61,7 @@ public class RequestBypassToServer implements IClientIncomingPacket
 		ValidBypass bp = activeChar.getBypassStorage().validate(_bypass);
 		if (bp == null)
 		{
-			_log.debug("RequestBypassToServer: Unexpected bypass : " + _bypass + " client : " + getClient() + "!");
+			_log.debug("RequestBypassToServer: Unexpected bypass : " + _bypass + " client : " + client + "!");
 			return;
 		}
 

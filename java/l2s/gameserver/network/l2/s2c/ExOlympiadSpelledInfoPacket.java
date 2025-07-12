@@ -56,7 +56,7 @@ public class ExOlympiadSpelledInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(temp.skillId);
 			packetWriter.writeH(temp.dat);
 			packetWriter.writeD(temp.abnormalType);
-			writeOptionalD(temp.duration);
+			writeOptionalD(packetWriter, temp.duration);
 		}
 		return true;
 	}

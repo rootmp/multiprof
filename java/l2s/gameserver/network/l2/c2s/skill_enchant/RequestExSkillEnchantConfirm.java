@@ -1,13 +1,11 @@
 package l2s.gameserver.network.l2.c2s.skill_enchant;
 
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.data.xml.holder.SkillEnchantSettingsHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.ExRequestSkillEnchantConfirm;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.skill.enchant.CouponSetting;
@@ -36,7 +34,7 @@ public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		Skill skill = player.getSkillById(nSkillID);
+		/*Skill skill = player.getSkillById(nSkillID);
 		if(skill == null)
 			return;
 
@@ -80,6 +78,6 @@ public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 			player.sendSkillList();
 			
 			player.sendPacket(new ExRequestSkillEnchantConfirm(0,enchantedSkill.getId(), enchantedSkill.getLevel(), enchantedSkill.getSubLevel()));
-		}
+		}*/
 	}
 }

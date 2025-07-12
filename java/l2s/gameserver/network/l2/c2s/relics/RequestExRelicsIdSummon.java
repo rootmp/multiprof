@@ -41,7 +41,7 @@ public class RequestExRelicsIdSummon implements IClientIncomingPacket
 				player.sendPacket(new ExRelicsSummonResult(0, 0, Collections.emptyList()));
 				return;
 			}
-			if(!ItemFunctions.deleteItem(player, info.getItemId(), info.getPrice(), true, "Relic Summon"))
+			if(!ItemFunctions.deleteItem(player, info.getItemId(), info.getPrice(), true))
 			{
 				player.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 				return;

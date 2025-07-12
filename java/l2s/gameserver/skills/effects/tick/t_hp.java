@@ -5,6 +5,8 @@ import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.stats.Formulas;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.templates.skill.EffectTemplate;
@@ -58,7 +60,7 @@ public class t_hp extends EffectHandler
 			heal = Math.max(0, Math.min(heal, effected.getMaxHp() / 100. * effected.getStat().calc(Stats.HP_LIMIT, null, null)));
 			heal = Math.max(0, heal - effected.getCurrentHp());
 			effected.setCurrentHp(effected.getCurrentHp() + heal, false, false);
-			StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_HP);
+			StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, UpdateType.VCP_HP);
 			effector.sendPacket(su);
 			effected.sendPacket(su);
 			effected.broadcastStatusUpdate();

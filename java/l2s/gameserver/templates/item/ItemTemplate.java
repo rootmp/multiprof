@@ -12,6 +12,7 @@ import l2s.commons.math.random.RndSelector;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.string.ItemNameHolder;
 import l2s.gameserver.data.xml.holder.AgathionHolder;
+import l2s.gameserver.enums.WorldExchangeItemSubType;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.handler.items.IItemHandler;
 import l2s.gameserver.handler.items.impl.EquipableItemHandler;
@@ -156,6 +157,7 @@ public abstract class ItemTemplate extends StatTemplate
 	public static final int CRYSTAL_A = 1461;
 	public static final int CRYSTAL_S = 1462;
 	public static final int CRYSTAL_R = 17371;
+	public static final int ITEM_ID_LUCKY_COIN = 4037;
 
 	private final int _itemId;
 	private final String _name;
@@ -1119,5 +1121,12 @@ public abstract class ItemTemplate extends StatTemplate
 	public void setCollection(boolean collection)
 	{
 		this.collection = collection;
+	}
+
+	public WorldExchangeItemSubType getItemSubType()
+	{
+		System.out.println("getItemSubType not implemented yet.");
+		return WorldExchangeItemSubType.ACCESSORY;
+		    
 	}
 }

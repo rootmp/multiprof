@@ -14,7 +14,7 @@ public class RequestSaveInventoryOrder implements IClientIncomingPacket
 		int size = packet.readD();
 		if (size > 125)
 			size = 125;
-		if (size * 8 > _buf.remaining() || size < 1)
+		if (size * 8 > packet.getReadableBytes() || size < 1)
 		{
 			_items = null;
 			return false;

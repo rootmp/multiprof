@@ -2,10 +2,12 @@ package l2s.gameserver.network.l2.c2s;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.handler.bbs.BbsHandlerHolder;
 import l2s.gameserver.handler.bbs.IBbsHandler;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.utils.BypassStorage.ValidBypass;
 
@@ -24,7 +26,7 @@ public class RequestBBSwrite implements IClientIncomingPacket
 	private String _arg5;
 
 	@Override
-	public boolean readImpl()
+	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_url = packet.readS();
 		_arg1 = packet.readS();
@@ -36,16 +38,16 @@ public class RequestBBSwrite implements IClientIncomingPacket
 	}
 
 	@Override
-	public void runImpl()
+	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		ValidBypass bp = activeChar.getBypassStorage().validate(_url);
 		if (bp == null)
 		{
-			_log.warn("RequestBBSwrite: Unexpected bypass : " + _url + " client : " + getClient() + "!");
+			_log.warn("RequestBBSwrite: Unexpected bypass : " + _url + " client : " + client + "!");
 			return;
 		}
 

@@ -50,7 +50,7 @@ public class EffectMPDrain extends EffectHandler
 			return;
 
 		effected.setCurrentMp(Math.max(0., effected.getCurrentMp() - drained), false);
-		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, StatusUpdatePacket.CUR_MP);
+		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, UpdateType.VCP_MP);
 		effector.sendPacket(su);
 		effected.sendPacket(su);
 		effected.broadcastStatusUpdate();
@@ -64,7 +64,7 @@ public class EffectMPDrain extends EffectHandler
 		if (addToMp > 0)
 		{
 			effector.setCurrentMp(newMp, false);
-			effector.sendPacket(new StatusUpdate(effector, effector, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_MP));
+			effector.sendPacket(new StatusUpdate(effector, effector, StatusType.HPUpdate, UpdateType.VCP_MP));
 			effector.broadcastStatusUpdate();
 			effector.sendChanges();
 			// TODO: Нужно ли какое-то сообщение для эффектора?

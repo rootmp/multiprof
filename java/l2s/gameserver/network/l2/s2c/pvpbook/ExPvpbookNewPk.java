@@ -1,7 +1,7 @@
 package l2s.gameserver.network.l2.s2c.pvpbook;
 
-import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 public class ExPvpbookNewPk implements IClientOutgoingPacket
 {
@@ -15,7 +15,7 @@ public class ExPvpbookNewPk implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.writeString(killerName);
+		packetWriter.writeSizedString(killerName);
 		return true;
 	}
 }

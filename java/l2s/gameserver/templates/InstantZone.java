@@ -408,4 +408,9 @@ public class InstantZone
 	{
 		return _addParams;
 	}
+
+	public boolean isStatic()
+	{
+		return false; 
+	}
 }

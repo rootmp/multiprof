@@ -185,6 +185,7 @@ import l2s.gameserver.model.actor.instances.player.tasks.EnableUserRelationTask;
 import l2s.gameserver.model.actor.listener.PlayerListenerList;
 import l2s.gameserver.model.actor.recorder.PlayerStatsChangeRecorder;
 import l2s.gameserver.model.actor.stat.PlayerStat;
+import l2s.gameserver.model.actor.variables.AccountVariables;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.model.base.AcquireType;
 import l2s.gameserver.model.base.BaseStats;
@@ -347,6 +348,7 @@ import l2s.gameserver.network.l2.s2c.SnoopPacket;
 import l2s.gameserver.network.l2.s2c.SocialActionPacket;
 import l2s.gameserver.network.l2.s2c.SpecialCameraPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.ability.ExAcquireAPSkillList;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
@@ -429,6 +431,7 @@ import l2s.gameserver.utils.SqlBatch;
 import l2s.gameserver.utils.Strings;
 import l2s.gameserver.utils.TeleportUtils;
 import l2s.gameserver.utils.TimeUtils;
+import l2s.gameserver.utils.Util;
 
 public final class Player extends Playable implements PlayerGroup
 {
@@ -710,6 +713,9 @@ public final class Player extends Playable implements PlayerGroup
 	private final ElementalList _elementalList = new ElementalList(this);
 	private final VIP _vip = new VIP(this);
 
+	private final AccountVariables _accountVar = new AccountVariables();
+	private final HuntPass _huntPass;
+	
 	private boolean _hero = false;
 
 	private PremiumAccountTemplate _premiumAccount = PremiumAccountHolder.getInstance().getPremiumAccount(0);
@@ -914,6 +920,7 @@ public final class Player extends Playable implements PlayerGroup
 		super(objectId, template);
 		this.hwidHolder = hwidHolder;
 		_adenLab = new AdenLab(this);
+		_huntPass = Config.ENABLE_HUNT_PASS ? new HuntPass(this) : null;
 		_baseTemplate = template;
 		_login = accountName;
 		_lastNotAfkTime = 0L;
@@ -2474,8 +2481,17 @@ public final class Player extends Playable implements PlayerGroup
 
 			if (!(getVarBoolean("NoExp") && getExp() == Experience.getExpForLevel(getLevel() + 1) - 1))
 			{
-				final int points = (int) (noRateExp * getRateExp() * getSayhasGraceBonus() * Config.ALT_SAYHAS_GRACE_CONSUME_RATE);
-				setSayhasGrace(getSayhasGrace() - points);
+				double dPointsAdd = Util.getDecrementValue(getLevel()) * Util.getNpcExpRatePenalty(mob.getTemplate().getAcquireExpRate());
+				dPointsAdd = dPointsAdd * Config.ALT_SAYHAS_GRACE_CONSUME_RATE * getStat().calc(Stats.SAYHAS_GRACE_CONSUME) * getStat().calc(Stats.SAYHAS_BLOCK_CONSUME);
+
+				if(getHuntPass() == null || !getHuntPass().toggleSayha())
+				{
+					int old = getSayhasGrace();
+					int count = (int) (getSayhasGrace() - dPointsAdd);
+					setSayhasGrace(count);
+					if(isInParty() && count <= 0 && old > 0)
+						getParty().updatePartyInfo();
+				}
 
 				final Clan clan = getClan();
 				if (clan != null)
@@ -2514,9 +2530,17 @@ public final class Player extends Playable implements PlayerGroup
 		if ((getBaseClassType() == ClassType.DEATH_KNIGHT) && (getCurrentDp() < getMaxDp()))
 		{
 			setCurrentDp(getCurrentDp() + 1);
-			sendPacket(new StatusUpdate(this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.MAX_DP, StatusUpdatePacket.CUR_DP));
+			sendPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_MAXDP, UpdateType.VCP_DP));
 		}
 
+		if(normalExp > 0)
+		{
+
+			final HuntPass huntPass = getHuntPass();
+			if(huntPass != null)
+				getHuntPass().addPassPoint(mob);
+		}
+		
 		if ((normalExp > 0) && Config.MAGIC_LAMP_ENABLED)
 		{
 			if (normalExp > MAX_MAGIC_LAMP_POINTS)
@@ -3329,7 +3353,7 @@ public final class Player extends Playable implements PlayerGroup
 									// условие.
 			return;
 
-		broadcastPacket(new StatusUpdate(this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.MAX_HP, StatusUpdatePacket.CUR_MP, StatusUpdatePacket.MAX_MP, StatusUpdatePacket.CUR_CP, StatusUpdatePacket.MAX_CP, StatusUpdatePacket.CUR_DP, StatusUpdatePacket.MAX_DP, StatusUpdatePacket.CUR_BP, StatusUpdatePacket.MAX_BP));
+		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP, UpdateType.VCP_CP, UpdateType.VCP_MAXCP, UpdateType.VCP_DP, UpdateType.VCP_MAXDP, UpdateType.VCP_BP, StatusUpdatePacket.MAX_BP));
 
 		// Check if a party is in progress
 		if (isInParty())
@@ -3515,36 +3539,28 @@ public final class Player extends Playable implements PlayerGroup
 		}
 	}
 
-	public void sendStatusUpdate(boolean broadCast, boolean withPet, int... fields)
+	public void sendStatusUpdate(boolean broadCast, boolean withPet, UpdateType... fields)
 	{
-		if (fields.length == 0 || entering && !broadCast)
+		if(fields.length == 0 || entering && !broadCast)
 			return;
 
-		final StatusUpdate su = new StatusUpdate(this, StatusUpdatePacket.UpdateType.DEFAULT, fields);
+		StatusUpdate su = new StatusUpdate(this, StatusType.Normal, fields);
 
-		final List<IBroadcastPacket> packets = new ArrayList<IBroadcastPacket>(withPet ? 2 : 1);
-		if (withPet)
+		List<IBroadcastPacket> packets = new ArrayList<IBroadcastPacket>(withPet ? 2 : 1);
+		if(withPet)
 		{
-			for (final Servitor servitor : getServitors())
-			{
-				packets.add(new StatusUpdate(servitor, StatusUpdatePacket.UpdateType.DEFAULT, fields));
-			}
+			for(Servitor servitor : getServitors())
+				packets.add(new StatusUpdate(servitor, StatusType.Normal, fields));
 		}
 
 		packets.add(su);
 
-		if (!broadCast)
-		{
+		if(!broadCast)
 			sendPacket(packets);
-		}
-		else if (entering)
-		{
+		else if(entering)
 			broadcastPacketToOthers(packets);
-		}
 		else
-		{
 			broadcastPacket(packets);
-		}
 	}
 
 	/**
@@ -3916,11 +3932,11 @@ public final class Player extends Playable implements PlayerGroup
 				// Send max/current hp.
 				if (target.isServitor())
 				{
-					sendPacket(new StatusUpdate(target, this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.MAX_HP, StatusUpdatePacket.CUR_MP, StatusUpdatePacket.MAX_MP));
+					sendPacket(new StatusUpdate(target, this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 				}
 				else
 				{
-					sendPacket(new StatusUpdate(target, this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.MAX_HP));
+					sendPacket(new StatusUpdate(target, this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP));
 				}
 
 				// To others the new target, and not yourself!
@@ -4112,7 +4128,7 @@ public final class Player extends Playable implements PlayerGroup
 				setCurrentCp(cp, !isDot);
 				if (isDot)
 				{
-					final StatusUpdate su = new StatusUpdate(this, attacker, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_CP);
+					final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_CP);
 					attacker.sendPacket(su);
 					sendPacket(su);
 					broadcastStatusUpdate();
@@ -4299,22 +4315,22 @@ public final class Player extends Playable implements PlayerGroup
 
 			if (isInSiegeZone())
 				return;
-
-			final PvpbookInfo pkPvpbookInfo = pk.getPvpbook().getInfo(getObjectId());
-			if (pkPvpbookInfo != null && !pkPvpbookInfo.isRevenged())
+			
+			final PvpbookInfo pkPvpbookInfo = pk.getPvpbook().getInfo(getObjectId(), 1);
+			if(pkPvpbookInfo != null && !pkPvpbookInfo.isRevenged())
 			{
 				pkPvpbookInfo.setRevenged(true);
 				sendPacket(new SystemMessagePacket(SystemMsg.SUCCESSFUL_REVENGE_ON_C1).addName(this));
 				pk.sendPacket(new SystemMessagePacket(SystemMsg.SUCCESSFUL_REVENGE_ON_C1).addName(this));
 				pk.sendPacket(new SystemMessagePacket(SystemMsg.C1_TOOK_REVENGE_ON_YOU).addName(this));
 
-				if (pkPvpbookInfo.getKilledObjectId() != getObjectId())
+				if(pkPvpbookInfo.getKilledObjectId() != getObjectId())
 				{
 					final Player player = pkPvpbookInfo.getKilled();
-					if (GameObjectsStorage.getPlayer(player.getObjectId()) != null)
+					if(player != null)
 					{
-						final PvpbookInfo reqPvpbookInfo = player.getPvpbook().getInfo(getObjectId());
-						if (reqPvpbookInfo != null && !reqPvpbookInfo.isRevenged())
+						final PvpbookInfo reqPvpbookInfo = player.getPvpbook().getInfo(getObjectId(),1);
+						if(reqPvpbookInfo != null && !reqPvpbookInfo.isRevenged())
 						{
 							reqPvpbookInfo.setRevenged(true);
 							player.sendPacket(new SystemMessagePacket(SystemMsg.SUCCESSFUL_REVENGE_ON_C1).addName(this));
@@ -4357,11 +4373,14 @@ public final class Player extends Playable implements PlayerGroup
 
 			if (getReflection().isMain() && !isInPvpZone)
 			{
-				final PvpbookInfo pvpbookInfo = getPvpbook().addInfo(this, pk, (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()), 0);
-				if (pvpbookInfo != null)
-				{
+				PvpbookInfo pvpbookInfo= getPvpbook().getInfo(pk.getObjectId(), 1);
+				if(pvpbookInfo!=null)
+					pvpbookInfo.setDeathTime((int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
+				else
+				 pvpbookInfo = getPvpbook().addInfo(this, pk, (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()), 0, Pvpbook.MAX_LOCATION_SHOW_COUNT_PER_DAY, Pvpbook.MAX_TELEPORT_COUNT_PER_DAY, Pvpbook.MAX_TELEPORT_HELP_COUNT_PER_DAY, 1, 0);
+				
+				if(pvpbookInfo != null)
 					sendPacket(new ExPvpBookShareRevengeNewRevengeInfo(getName(), pvpbookInfo.getKillerName(), 1));
-				}
 			}
 
 			pk.sendChanges();
@@ -10253,7 +10272,7 @@ public final class Player extends Playable implements PlayerGroup
 
 		setPvpFlag(value);
 
-		sendStatusUpdate(true, true, StatusUpdatePacket.PVP_FLAG);
+		sendStatusUpdate(true, true, UpdateType.VCP_ISGUILTY);
 
 		broadcastRelation();
 	}
@@ -13768,41 +13787,41 @@ public final class Player extends Playable implements PlayerGroup
 		return _tasks.remove(task);
 	}
 
-	public boolean canReceiveStatusUpdate(Creature creature, UpdateType updateType, int field)
+	public boolean canReceiveStatusUpdate(Creature creature, StatusType statusType, UpdateType field)
 	{
-		if (creature == this)
+		if(creature == this)
 			return true;
 
-		final boolean isRegenOrDamage = updateType == UpdateType.REGEN || /* updateType == UpdateType.CONSUME || */updateType == UpdateType.DAMAGED;
+		final boolean isRegenOrDamage = statusType == StatusType.HPUpdate || /* updateType == UpdateType.CONSUME || */statusType == StatusType.DotEffect;
 
-		if (creature.isNpc() || creature.isDoor())
+		if(creature.isNpc() || creature.isDoor())
 		{
-			if (isRegenOrDamage || getTarget() == creature || getDistance(creature) < 700)
+			if(isRegenOrDamage || getTarget() == creature || getDistance(creature) < 700)
 			{
-				if ((field == StatusUpdatePacket.CUR_HP) || (field == StatusUpdatePacket.MAX_HP))
+				if((field == UpdateType.VCP_HP) || (field == UpdateType.VCP_MAXHP))
 					return true;
 			}
-			if (isRegenOrDamage)
+			if(isRegenOrDamage)
 			{
-				if ((field == StatusUpdatePacket.CUR_MP) || (field == StatusUpdatePacket.MAX_MP))
+				if((field == UpdateType.VCP_MP) || (field == UpdateType.VCP_MAXMP))
 					return true;
 			}
 		}
-		else if (creature.isPlayable())
+		else if(creature.isPlayable())
 		{
-			if ((field == StatusUpdatePacket.KARMA) || (field == StatusUpdatePacket.PVP_FLAG))
+			if((field == UpdateType.VCP_CRIMINAL_RATE) || (field == UpdateType.VCP_ISGUILTY))
 				return true;
 
-			if (creature.isServitor())
+			if(creature.isServitor())
 			{
-				if (isRegenOrDamage || getTarget() == creature || getDistance(creature) < 700)
+				if(isRegenOrDamage || getTarget() == creature || getDistance(creature) < 700)
 				{
-					if ((field == StatusUpdatePacket.CUR_HP) || (field == StatusUpdatePacket.MAX_HP))
+					if((field == UpdateType.VCP_HP) || (field == UpdateType.VCP_MAXHP))
 						return true;
 				}
-				if (isRegenOrDamage || getTarget() == creature)
+				if(isRegenOrDamage || getTarget() == creature)
 				{
-					if ((field == StatusUpdatePacket.CUR_MP) || (field == StatusUpdatePacket.MAX_MP))
+					if((field == UpdateType.VCP_MP) || (field == UpdateType.VCP_MAXMP))
 						return true;
 				}
 			}
@@ -13811,60 +13830,96 @@ public final class Player extends Playable implements PlayerGroup
 				final Player player = creature.getPlayer();
 
 				boolean canReceiveHpMp;
-				if (player == null || player == this)
+				if(player == null || player == this)
 				{
 					canReceiveHpMp = true;
 				}
 				else
 				{
 					canReceiveHpMp = isRegenOrDamage;
-					if (!canReceiveHpMp && isInSameParty(player))
+					if(!canReceiveHpMp && isInSameParty(player))
 					{
 						canReceiveHpMp = true;
 					}
-					if (!canReceiveHpMp && isInSameChannel(player))
+					if(!canReceiveHpMp && isInSameChannel(player))
 					{
 						canReceiveHpMp = true;
 					}
-					if (!canReceiveHpMp && isInSameClan(player))
+					if(!canReceiveHpMp && isInSameClan(player))
 					{
 						canReceiveHpMp = true;
 					}
 				}
 
-				if (canReceiveHpMp)
+				if(canReceiveHpMp)
 				{
-					switch (field)
+					switch(field)
 					{
-						case StatusUpdatePacket.CUR_HP:
+						case VCP_HP:
 							return true;
-						case StatusUpdatePacket.MAX_HP:
+						case VCP_MAXHP:
 							return true;
-						case StatusUpdatePacket.CUR_MP:
+						case VCP_MP:
 							return true;
-						case StatusUpdatePacket.MAX_MP:
+						case VCP_MAXMP:
 							return true;
 						default:
 							break;
 					}
-					if (creature.isPlayer())
+					if(creature.isPlayer())
 					{
-						switch (field)
+						switch(field)
 						{
-							case StatusUpdatePacket.CUR_CP:
+							case VCP_CP:
 								return true;
-							case StatusUpdatePacket.MAX_CP:
+							case VCP_MAXCP:
 								return true;
-							case StatusUpdatePacket.CUR_DP:
+							case VCP_DP:
 								return true;
-							case StatusUpdatePacket.MAX_DP:
+							case VCP_MAXDP:
 								return true;
-							case StatusUpdatePacket.CUR_BP:
+							case VCP_BP:
 								return true;
-							case StatusUpdatePacket.MAX_BP:
+							case VCP_MAXBP:
 								return true;
 							default:
 								break;
+						}
+						if(creature.getPlayer().getClassId().getId() == 243)
+						{
+							switch(field)
+							{
+								case VCP_MAXLP:
+									return true;
+								case VCP_LP:
+									return true;
+								default:
+									break;
+							}
+						}
+						if(creature.getPlayer().getClassId().getId() == 224 || creature.getPlayer().getClassId().getId() == 228)
+						{
+							switch(field)
+							{
+								case VCP_AP:
+									return true;
+								case VCP_MAXAP:
+									return true;
+								default:
+									break;
+							}
+						}
+						if(creature.getPlayer().getClassId().getType() == ClassType.WARG)
+						{
+							switch(field)
+							{
+								case VCP_WP:
+									return true;
+								case VCP_MAXWP:
+									return true;
+								default:
+									break;
+							}
 						}
 					}
 				}
@@ -15623,5 +15678,20 @@ public final class Player extends Playable implements PlayerGroup
 	public RelicList getRelics()
 	{
 		return _relics;
+	}
+
+	public HuntPass getHuntPass()
+	{
+		return _huntPass;
+	}
+
+	public AccountVariables getAccVar()
+	{
+		return _accountVar;
+	}
+
+	public boolean isAnonymity()
+	{
+		return false;
 	}
 }

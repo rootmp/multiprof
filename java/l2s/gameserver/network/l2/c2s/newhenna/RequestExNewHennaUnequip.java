@@ -40,10 +40,10 @@ public class RequestExNewHennaUnequip implements IClientIncomingPacket
 			if (_cancelFee!=null && ItemFunctions.haveItem(player, _cancelFee.itemName, _cancelFee.count))//добавить возможность бесплатного снятия?
 			{
 				player.removeHenna(_slotId);
-				ItemFunctions.deleteItem(player, _cancelFee.itemName, _cancelFee.count, "removeHenna");
+				ItemFunctions.deleteItem(player, _cancelFee.itemName, _cancelFee.count);
 
 				if (henna.getCancelCount() > 0)
-					ItemFunctions.addItem(player, henna.getDyeItemId(), henna.getCancelCount(), "removeHenna");
+					ItemFunctions.addItem(player, henna.getDyeItemId(), henna.getCancelCount());
 
 				player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_HAS_BEEN_DELETED));
 

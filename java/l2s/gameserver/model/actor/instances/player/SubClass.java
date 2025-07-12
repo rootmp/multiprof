@@ -234,4 +234,9 @@ public class SubClass
 	{
 		return _sayhas_grace_points;
 	}
+
+	public int getBonusPointUsed()
+	{
+		return 0;  
+	}
 }

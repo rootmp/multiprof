@@ -31,7 +31,7 @@ public class EffectMPDamPercent extends EffectHandler
 		double newMp = (100. - getValue()) * effected.getMaxMp() / 100.;
 		newMp = Math.min(effected.getCurrentMp(), Math.max(0, newMp));
 		effected.setCurrentMp(newMp, false);
-		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, StatusUpdatePacket.CUR_MP);
+		StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.DAMAGED, UpdateType.VCP_MP);
 		effector.sendPacket(su);
 		effected.sendPacket(su);
 		effected.broadcastStatusUpdate();

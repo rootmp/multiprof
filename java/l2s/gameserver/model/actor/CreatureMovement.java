@@ -750,4 +750,9 @@ public class CreatureMovement
 			getMoveLock().unlock();
 		}
 	}
+
+	public void moveWithKeyboard(Location loc)
+	{
+		moveToLocation(loc.x, loc.y, loc.z, 0, false, true, true);
+	}
 }

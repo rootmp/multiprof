@@ -35,7 +35,7 @@ public class RequestPrivateStoreBuySellList implements IClientIncomingPacket
 		_buyerId = packet.readD();
 		_count = packet.readD();
 
-		if (_count * 28 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 28 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

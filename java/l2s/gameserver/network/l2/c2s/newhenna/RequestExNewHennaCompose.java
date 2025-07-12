@@ -18,7 +18,6 @@ import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExEnchantRetryToPutItemFail;
 import l2s.gameserver.network.l2.s2c.newhenna.NewHennaPotenCompose;
-import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.templates.item.henna.Henna;
 import l2s.gameserver.utils.ItemFunctions;
 
@@ -68,7 +67,7 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 			return;
 		
 		
-		if(Math.round(data.getPrice()/2) > 0&&!player.reduceAdena(Math.round(data.getPrice()/2), true,"NewHennaCompose"))
+		if(Math.round(data.getPrice()/2) > 0&&!player.reduceAdena(Math.round(data.getPrice()/2), true))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			return;
@@ -86,13 +85,12 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 		inventory.writeLock();
 		try
 		{
-			if(ItemFunctions.deleteItem(player, item2, 1, true,"NewHennaCompose"))
+			if(ItemFunctions.deleteItem(player, item2, 1, true))
 			{
 				player.removeHenna(_slotOneIndex);
-				double chance = player.getGuarantedSynthesisHenna().getChance(henna.getDyeItemId(), item2.getItemId(), data.getSuccessItemData().getChance());
+				double chance = data.getSuccessItemData().getChance();
 				if(Rnd.chance(chance))
 				{
-					player.getGuarantedSynthesisHenna().success(henna.getDyeItemId(), item2.getItemId());
 					ItemResult succeItemData = data.getSuccessItemData();
 					final Henna henna_new = DyeDataHolder.getInstance().getHennaByItemId(succeItemData.getId());
 					player.addHenna(_slotOneIndex, henna_new, true);
@@ -100,16 +98,13 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 				}
 				else
 				{
-					player.getGuarantedSynthesisHenna().fail(henna.getDyeItemId(), item2.getItemId());
 					ItemResult failItemData = data.getFailItemData();
 					final Henna henna_new = DyeDataHolder.getInstance().getHennaByItemId(failItemData.getId());
 					player.addHenna(_slotOneIndex, henna_new, true);
 					player.sendPacket(new NewHennaPotenCompose(henna_new.getDyeId(), -1, false));
 				}
 			}
-			if(henna!=null && item2!=null)
-				player.getGuarantedSynthesisHenna().sendInfo(henna.getDyeItemId(), item2.getItemId(), data.getSuccessItemData().getChance());
-			
+	
 			player.setSynthesisItem1(null);
 			player.setSynthesisItem2(null);
 		}

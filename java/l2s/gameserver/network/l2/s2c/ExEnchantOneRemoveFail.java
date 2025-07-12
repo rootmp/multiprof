@@ -4,7 +4,7 @@ import l2s.commons.network.PacketWriter;
 
 /**
  * @author Bonux
- **/
+**/
 public final class ExEnchantOneRemoveFail implements IClientOutgoingPacket
 {
 	public static final IClientOutgoingPacket STATIC = new ExEnchantOneRemoveFail();
@@ -17,6 +17,7 @@ public final class ExEnchantOneRemoveFail implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
+		//
 		return true;
 	}
 }

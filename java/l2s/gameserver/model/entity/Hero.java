@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.commons.lang3.StringUtils;
 import org.napile.primitive.maps.IntObjectMap;
@@ -22,8 +23,10 @@ import l2s.gameserver.dao.CustomHeroDAO;
 import l2s.gameserver.data.string.StringsHolder;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.database.MySqlDataInsert;
+import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
+import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.model.base.SubClassType;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
 import l2s.gameserver.model.pledge.Alliance;
@@ -32,6 +35,8 @@ import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.s2c.SocialActionPacket;
 import l2s.gameserver.tables.ClanTable;
 import l2s.gameserver.templates.StatsSet;
+import l2s.gameserver.templates.ranking.OlympiadHeroInfo;
+import l2s.gameserver.templates.ranking.OlympiadRankInfo;
 import l2s.gameserver.utils.HtmlUtils;
 
 public class Hero
@@ -44,7 +49,8 @@ public class Hero
 
 	private static IntObjectMap<StatsSet> _heroes;
 	private static IntObjectMap<StatsSet> _completeHeroes;
-
+	private static List<OlympiadHeroInfo> olympiadHeroesInfo;
+	
 	private static IntObjectMap<List<HeroDiary>> _herodiary;
 	private static IntObjectMap<String> _heroMessage; // TODO [VISTALL] унести в StatsSet с каждого героя
 
@@ -52,6 +58,7 @@ public class Hero
 	public static final String CLASS_ID = "class_id";
 	public static final String CHAR_NAME = "char_name";
 	public static final String COUNT = "count";
+	public static final String CHAR_SEX = "char_sex";
 	public static final String PLAYED = "played";
 	public static final String CLAN_NAME = "clan_name";
 	public static final String CLAN_CREST = "clan_crest";
@@ -107,6 +114,7 @@ public class Hero
 				hero.set(COUNT, rset.getInt(COUNT));
 				hero.set(PLAYED, 1);
 				hero.set(ACTIVE, rset.getInt(ACTIVE));
+				hero.set(CHAR_SEX, rset.getInt(CHAR_SEX));
 				HeroSetClanAndAlly(charId, hero);
 				loadDiary(charId);
 				loadMessage(charId);
@@ -126,6 +134,7 @@ public class Hero
 				hero.set(COUNT, rset.getInt(COUNT));
 				hero.set(PLAYED, rset.getInt(PLAYED));
 				hero.set(ACTIVE, rset.getInt(ACTIVE));
+				hero.set(CHAR_SEX, rset.getInt(CHAR_SEX));
 				HeroSetClanAndAlly(charId, hero);
 				_completeHeroes.put(charId, hero);
 			}
@@ -169,6 +178,7 @@ public class Hero
 
 		_heroes.clear();
 		_herodiary.clear();
+		olympiadHeroesInfo = genOlympiadHeroesInfo();
 	}
 
 	public synchronized boolean computeNewHeroes(List<StatsSet> newHeroes)
@@ -197,6 +207,7 @@ public class Hero
 				StatsSet newHero = new StatsSet();
 				newHero.set(CHAR_NAME, hero.getString(CHAR_NAME));
 				newHero.set(CLASS_ID, hero.getInteger(CLASS_ID));
+				newHero.set(CHAR_SEX, hero.getInteger(CHAR_SEX));
 				newHero.set(COUNT, 1);
 				newHero.set(PLAYED, 1);
 				newHero.set(ACTIVE, 0);
@@ -210,7 +221,7 @@ public class Hero
 
 		_heroes.putAll(heroes);
 		heroes.clear();
-
+		olympiadHeroesInfo = genOlympiadHeroesInfo();
 		updateHeroes(0);
 
 		return false;
@@ -515,5 +526,53 @@ public class Hero
 				return entry;
 		}
 		return null;
+	}
+
+	public List<OlympiadHeroInfo> genOlympiadHeroesInfo()
+	{
+		List<OlympiadHeroInfo> _olympiadHeroesInfo = new CopyOnWriteArrayList<>();
+
+		for (IntObjectPair<StatsSet> pair : getHeroes().entrySet())
+		{
+			StatsSet heroStats = pair.getValue();
+			int heroId = pair.getKey();
+
+			OlympiadHeroInfo heroInfo = new OlympiadHeroInfo();
+			heroInfo.sCharName = heroStats.getString(Hero.CHAR_NAME);
+			heroInfo.sPledgeName = heroStats.getString(Hero.CLAN_NAME);
+			heroInfo.nWorldID = Config.REQUEST_ID;
+
+			ClassId classId = ClassId.valueOf(heroStats.getInteger(Hero.CLASS_ID));
+			heroInfo.nRace = classId.getRace().ordinal();
+			heroInfo.nClassID = classId.getId();
+			heroInfo.nCount = heroStats.getInteger(Hero.COUNT);
+			heroInfo.nSex = heroStats.getInteger(Hero.CHAR_SEX);
+			
+			OlympiadRankInfo rankInfo = RankManager.getInstance().getSnapshotOlyData(heroId);
+			if (rankInfo != null)
+			{
+				heroInfo.nLevel = rankInfo.nLevel;
+				heroInfo.nWinCount = rankInfo.nWinCount;
+				heroInfo.nLoseCount = rankInfo.nLoseCount;
+				heroInfo.nDrawCount = rankInfo.nDrawCount;
+				heroInfo.nOlympiadPoint = rankInfo.nOlympiadPoint;
+			}
+
+			Clan clan = ClanTable.getInstance().getClanByCharId(heroId);
+			if (clan != null)
+				heroInfo.nPledgeLevel = clan.getLevel();
+			else
+				heroInfo.nPledgeLevel = 0;
+
+			_olympiadHeroesInfo.add(heroInfo);
+		}
+		return _olympiadHeroesInfo;
+	}
+	
+	public List<OlympiadHeroInfo> getOlympiadHeroesInfo()
+	{
+		if(olympiadHeroesInfo == null)
+			olympiadHeroesInfo = genOlympiadHeroesInfo();
+		return olympiadHeroesInfo;
 	}
 }

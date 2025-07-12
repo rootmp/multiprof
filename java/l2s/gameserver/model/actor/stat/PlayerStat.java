@@ -156,4 +156,9 @@ public class PlayerStat extends CreatureStat
 		}
 		return critAttack;
 	}
+
+	public int getDiff(Stats powerAttackWeapon)
+	{
+		return 0;   
+	}
 }

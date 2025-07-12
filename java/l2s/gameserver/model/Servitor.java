@@ -48,9 +48,9 @@ import l2s.gameserver.network.l2.s2c.ExPartyPetWindowDelete;
 import l2s.gameserver.network.l2.s2c.ExPartyPetWindowUpdate;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.network.l2.s2c.MyPetSummonInfoPacket;
-import l2s.gameserver.network.l2.s2c.NpcInfo;
-import l2s.gameserver.network.l2.s2c.NpcInfo.PetInfoPacket;
-import l2s.gameserver.network.l2.s2c.NpcInfo.SummonInfoPacket;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket.PetInfoPacket;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket.SummonInfoPacket;
 import l2s.gameserver.network.l2.s2c.NpcInfoState;
 import l2s.gameserver.network.l2.s2c.PartySpelledPacket;
 import l2s.gameserver.network.l2.s2c.PetDeletePacket;
@@ -60,6 +60,8 @@ import l2s.gameserver.network.l2.s2c.PetStatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.RelationChangedPacket;
 import l2s.gameserver.network.l2.s2c.SetSummonRemainTimePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.network.l2.s2c.pets.ExPetSkillList;
@@ -456,7 +458,7 @@ public abstract class Servitor extends Playable
 
 		sendStatusUpdate();
 
-		broadcastPacket(new StatusUpdate(this, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP, StatusUpdatePacket.MAX_HP, StatusUpdatePacket.CUR_MP, StatusUpdatePacket.MAX_MP));
+		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 
 		Party party = owner.getParty();
 		if (party != null)
@@ -801,7 +803,7 @@ public abstract class Servitor extends Playable
 				else if (isSummon())
 					player.sendPacket(new SummonInfoPacket((SummonInstance) this, player).update(components));
 				else
-					player.sendPacket(new NpcInfo(this, player).update(components));
+					player.sendPacket(new NpcInfoPacket(this, player).update(components));
 			}
 			player.sendPacket(new RelationChangedPacket(this, player)); // TODO: Надо ли?
 		}
@@ -940,7 +942,7 @@ public abstract class Servitor extends Playable
 			else if (isSummon())
 				list.add(new SummonInfoPacket((SummonInstance) this, forPlayer).init());
 			else
-				list.add(new NpcInfo(this, forPlayer).init());
+				list.add(new NpcInfoPacket(this, forPlayer).init());
 
 			if (owner != null && party != null && party == owner.getParty())
 				list.add(new PartySpelledPacket(this, true));

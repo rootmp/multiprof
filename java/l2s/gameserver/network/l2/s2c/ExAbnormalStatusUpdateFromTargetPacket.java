@@ -51,7 +51,7 @@ public class ExAbnormalStatusUpdateFromTargetPacket implements IClientOutgoingPa
 			packetWriter.writeD(temp.skillId);
 			packetWriter.writeH(temp.skillLvl);
 			packetWriter.writeH(temp.abnormalType);
-			writeOptionalD(temp.duration);
+			writeOptionalD(packetWriter, temp.duration);
 			packetWriter.writeD(temp.effectorObjectId); // Buffer OID
 		}
 		return true;

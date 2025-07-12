@@ -6,31 +6,29 @@ import java.time.ZoneId;
 import java.util.Calendar;
 
 import l2s.commons.network.PacketWriter;
-import l2s.gameserver.data.xml.holder.MissionLevelRewardsHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.MissionLevelReward;
 import l2s.gameserver.templates.dailymissions.MissionLevelRewardTemplate;
 import l2s.gameserver.templates.item.data.MissionLevelRewardData;
 
-/**
- * @author nexvill
- */
 public class ExMissionLevelRewardList implements IClientOutgoingPacket
 {
 	private final Player _player;
+	private MissionLevelRewardTemplate _template;
+	private int _month;
 
-	public ExMissionLevelRewardList(Player player)
+	public ExMissionLevelRewardList(Player player, int month, MissionLevelRewardTemplate template)
 	{
 		_player = player;
+		_month = month;
+		_template = template;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
-		MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month);
-		int maxRewardLvl = template.getMaxRewardLvl();
-		int size = maxRewardLvl + template.additionalRewardsSize() + 11;
+		int maxRewardLvl = _template.getMaxRewardLvl();
+		int size = maxRewardLvl + _template.additionalRewardsSize() + 11;
 		MissionLevelReward info = _player.getMissionLevelReward();
 		int currentLvl = info.getLevel();
 		double points = info.getPoints();
@@ -43,9 +41,9 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		int extraAvailable = 0;
 
 		packetWriter.writeD(size); // rewards size
-
+		
 		int i = 1;
-		while (i <= lastTakenBasic)
+		while(i <= lastTakenBasic)
 		{
 			packetWriter.writeD(1); // type
 			packetWriter.writeD(i); // level
@@ -53,9 +51,9 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 
 			i++;
 		}
-		while (i <= maxRewardLvl)
+		while(i <= maxRewardLvl)
 		{
-			if (currentLvl >= i)
+			if(currentLvl >= i)
 			{
 				packetWriter.writeD(1);
 				packetWriter.writeD(i);
@@ -72,10 +70,10 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		}
 		// add reward
 		i = 1;
-		while (i <= lastTakenAdditional)
+		while(i <= lastTakenAdditional)
 		{
-			MissionLevelRewardData data = template.getRewards().get(i - 1);
-			if (data.getAdditionalReward().getId() != 0)
+			MissionLevelRewardData data = _template.getRewards().get(i - 1);
+			if(data.getAdditionalReward().getId() != 0)
 			{
 				packetWriter.writeD(2);
 				packetWriter.writeD(i);
@@ -83,12 +81,12 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 			}
 			i++;
 		}
-		while (i <= maxRewardLvl)
+		while(i <= maxRewardLvl)
 		{
-			MissionLevelRewardData data = template.getRewards().get(i - 1);
-			if (currentLvl >= i)
+			MissionLevelRewardData data = _template.getRewards().get(i - 1);
+			if(currentLvl >= i)
 			{
-				if (data.getAdditionalReward().getId() != 0)
+				if(data.getAdditionalReward().getId() != 0)
 				{
 					packetWriter.writeD(2);
 					packetWriter.writeD(i);
@@ -99,7 +97,7 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 			}
 			else
 			{
-				if (data.getAdditionalReward().getId() != 0)
+				if(data.getAdditionalReward().getId() != 0)
 				{
 					packetWriter.writeD(2);
 					packetWriter.writeD(i);
@@ -109,7 +107,7 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 			i++;
 		}
 		// final reward
-		if (currentLvl < maxRewardLvl)
+		if(currentLvl < maxRewardLvl)
 		{
 			packetWriter.writeD(3);
 			packetWriter.writeD(20);
@@ -117,7 +115,7 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		}
 		else
 		{
-			if (!takenFinal)
+			if(!takenFinal)
 			{
 				packetWriter.writeD(3);
 				packetWriter.writeD(20);
@@ -134,16 +132,16 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		}
 		// bonus reward
 		i = 21;
-		while (i <= lastTakenBonus)
+		while(i <= lastTakenBonus)
 		{
 			packetWriter.writeD(4);
 			packetWriter.writeD(i);
 			packetWriter.writeD(2);
 			i++;
 		}
-		while (i <= 30)
+		while(i <= 30)
 		{
-			if (currentLvl >= i)
+			if(currentLvl >= i)
 			{
 				packetWriter.writeD(4);
 				packetWriter.writeD(i);
@@ -160,17 +158,17 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 			i++;
 		}
 
-		MissionLevelRewardData data = template.getRewards().get(currentLvl);
+		MissionLevelRewardData data = _template.getRewards().get(Math.min(currentLvl,_template.getRewards().size()-1));
 		double percents = (points / data.getValue()) * 100;
 		LocalDateTime nextChange;
 		long seasonEnd;
-		if (month == 12)
+		if(_month == 12)
 		{
 			nextChange = LocalDateTime.of(Calendar.getInstance().get(Calendar.YEAR) + 1, Month.JANUARY, 1, 6, 30);
 		}
 		else
 		{
-			nextChange = LocalDateTime.of(Calendar.getInstance().get(Calendar.YEAR), month + 1, 1, 6, 30);
+			nextChange = LocalDateTime.of(Calendar.getInstance().get(Calendar.YEAR), _month + 1, 1, 6, 30);
 		}
 
 		seasonEnd = nextChange.atZone(ZoneId.systemDefault()).toEpochSecond() - (System.currentTimeMillis() / 1000);
@@ -178,10 +176,12 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		packetWriter.writeD(currentLvl); // current level
 		packetWriter.writeD((int) percents); // current percents on level
 		packetWriter.writeD(Calendar.getInstance().get(Calendar.YEAR)); // season year
-		packetWriter.writeD(month); // season month
+		packetWriter.writeD(_month); // season month
 		packetWriter.writeD(totalAvailable); // total rewards available
 		packetWriter.writeD(extraAvailable); // extra rewards available
 		packetWriter.writeD((int) seasonEnd); // remain season time
+
+		packetWriter.writeC(_player.getAccVar().getVarBoolean("MissionLevelJumpLevel", false)); //bAccountLevelJumped
 		return true;
 	}
 }

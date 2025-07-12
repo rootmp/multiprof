@@ -8,7 +8,8 @@ public enum ClassType
 	FIGHTER,
 	MYSTIC,
 	DEATH_KNIGHT,
-	VANGUARD_RIDER;
+	VANGUARD_RIDER, 
+	WARG;
 
 	public static final ClassType[] VALUES = values();
 

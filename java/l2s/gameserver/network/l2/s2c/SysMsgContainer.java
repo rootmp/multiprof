@@ -153,7 +153,11 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> implements I
 	{
 		return add(new SkillArgument(id, level, subLevel));
 	}
-
+	public T addSkillName(int id, int level)
+	{
+		return addSkillName(id, level, 0);
+	}
+	
 	public T addItemName(int item_id)
 	{
 		return add(new ItemNameArgument(item_id));

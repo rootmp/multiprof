@@ -6,6 +6,7 @@ import java.util.Collection;
 public final class ArrayUtils
 {
 	public static final int INDEX_NOT_FOUND = -1;
+	public static final int[] EMPTY_INT_ARRAY = new int[0];
 
 	/**
 	 * Check if index is in valid range of array, if so return array value

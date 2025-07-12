@@ -37,7 +37,7 @@ public class RequestBuyItem implements IClientIncomingPacket
 	{
 		_listId = packet.readD();
 		_count = packet.readD();
-		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

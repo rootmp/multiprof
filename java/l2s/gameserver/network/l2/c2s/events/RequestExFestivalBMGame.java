@@ -39,7 +39,7 @@ public class RequestExFestivalBMGame implements IClientIncomingPacket
 
 			if (success)
 			{
-				activeChar.sendPacket(new ExFestivalBMGame(activeChar));
+				//activeChar.sendPacket(new ExFestivalBMGame(activeChar));
 				activeChar.sendPacket(new ExFestivalBMInfo(activeChar));
 				activeChar.sendPacket(new ExFestivalBMAllItemInfo());
 			}

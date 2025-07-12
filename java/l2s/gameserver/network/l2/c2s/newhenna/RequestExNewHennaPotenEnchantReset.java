@@ -35,7 +35,7 @@ public class RequestExNewHennaPotenEnchantReset implements IClientIncomingPacket
     	player.sendPacket(new ExNewHennaPotenEnchantReset(0));
     	return;
     }
-    if(ItemFunctions.deleteItem(player, 91663, count, "ExNewHennaPotenEnchantReset"))
+    if(ItemFunctions.deleteItem(player, 91663, count))
     {
     	player.resetHennaPotenDaily();
     	player.setDyePotentialDailyResetCount(player.getDyePotentialDailyResetCount()+1);

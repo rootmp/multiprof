@@ -29,7 +29,7 @@ public class RequestExDeleteSentPost implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_count = packet.readD(); // количество элементов для удаления
-		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

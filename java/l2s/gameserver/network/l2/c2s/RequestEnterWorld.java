@@ -92,6 +92,8 @@ import l2s.gameserver.network.l2.s2c.RelationChangedPacket;
 import l2s.gameserver.network.l2.s2c.RidePacket;
 import l2s.gameserver.network.l2.s2c.ShortCutInitPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.UserInfo;
 import l2s.gameserver.network.l2.s2c.collection.ExCollectionActiveEvent;
 import l2s.gameserver.network.l2.s2c.collection.ExCollectionInfo;
@@ -477,7 +479,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			{
 				if (e.getSkill().isToggle() && !e.getSkill().isNotBroadcastable())
 				{
-					activeChar.sendPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(), activeChar, SkillCastingType.NORMAL));
+					activeChar.sendPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(),0, activeChar, SkillCastingType.NORMAL));
 				}
 			}
 
@@ -578,7 +580,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		{
 			activeChar.addAbnormalBoard();
 		}
-		activeChar.broadcastPacket(new StatusUpdate(activeChar, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_BP, StatusUpdatePacket.MAX_BP));
+		activeChar.broadcastPacket(new StatusUpdate(activeChar, StatusType.Normal, UpdateType.VCP_BP, UpdateType.VCP_MAXBP));
 	}
 
 	private static void checkNewMail(Player activeChar)

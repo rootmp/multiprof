@@ -19,8 +19,8 @@ public class RequestExMPCCAcceptJoin implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		_response = _buf.hasRemaining() ? packet.readD() : 0;
-		_unk = _buf.hasRemaining() ? packet.readD() : 0;
+		_response = packet.hasRemaining() ? packet.readD() : 0;
+		_unk = packet.hasRemaining() ? packet.readD() : 0;
 		return true;
 	}
 

@@ -2,12 +2,12 @@ package l2s.gameserver.network.l2.s2c.pvpbook;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 public class ExPvpBookList implements IClientOutgoingPacket
 {
@@ -18,8 +18,8 @@ public class ExPvpBookList implements IClientOutgoingPacket
 	public ExPvpBookList(Player player)
 	{
 		Pvpbook pvpbook = player.getPvpbook();
-		locationShowCount = pvpbook.getLocationShowCount();
-		teleportCount = pvpbook.getTeleportCount();
+		locationShowCount = 10;//pvpbook.getLocationHelpShowCount();//TODOD
+		teleportCount =1;
 		pvpbookInfos = pvpbook.getInfos(false);
 	}
 
@@ -31,8 +31,8 @@ public class ExPvpBookList implements IClientOutgoingPacket
 		packetWriter.writeD(pvpbookInfos.size());
 		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
 		{
-			packetWriter.writeString(pvpbookInfo.getKillerName()); // Char name
-			packetWriter.writeString(pvpbookInfo.getKillerClanName()); // Clan name
+			packetWriter.writeSizedString(pvpbookInfo.getKillerName()); // Char name
+			packetWriter.writeSizedString(pvpbookInfo.getKillerClanName()); // Clan name
 			packetWriter.writeD(pvpbookInfo.getKillerLevel()); // Level
 			packetWriter.writeD(ClassId.valueOf(pvpbookInfo.getKillerClassId()).getRace().ordinal()); // Race
 			packetWriter.writeD(pvpbookInfo.getKillerClassId()); // Class ID

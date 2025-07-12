@@ -98,11 +98,6 @@ public class RelicList
 		{
 			relic = new RelicsInfo(relicId, 0, 0);
 			_relics.put(relicId, relic);
-			
-			//DKP
-			final Clan clan = owner.getClan();
-			if (clan != null && clan.getDkp().isUsingDynamicStars()) 
-				clan.getDkp().getPlayerDkp(owner.getObjectId()).recalculateDynamicStars(owner);
 		}
 		else
 			relic.nCount += 1;
@@ -238,7 +233,7 @@ public class RelicList
 		if(coupon == null)
 			return false;
 
-		if(!ItemFunctions.deleteItem(owner, item_id, 1, true, "RelicList Rnd add"))
+		if(!ItemFunctions.deleteItem(owner, item_id, 1, true))
 		{
 			owner.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 			return false;
@@ -304,7 +299,7 @@ public class RelicList
 			}
 		}
 
-		if(!ItemFunctions.deleteItem(owner, 57, requiredAdena, true, "Relic Synthesis"))
+		if(!ItemFunctions.deleteItem(owner, 57, requiredAdena, true))
 		{
 			owner.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			return;
@@ -416,7 +411,7 @@ public class RelicList
 			}
 		}
 
-		if(!ItemFunctions.deleteItem(owner, 57, upgradeCost, true, "Relic Upgrade"))
+		if(!ItemFunctions.deleteItem(owner, 57, upgradeCost, true))
 		{
 			owner.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			return;

@@ -25,7 +25,7 @@ public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacke
 	{
 		castleId = castle.getId();
 		Clan ownerClan = castle.getOwner();
-		if (ownerClan != null)
+		if(ownerClan != null)
 		{
 			ownerClanId = ownerClan.getClanId();
 			ownerClanCrestId = ownerClan.getCrestId();
@@ -41,18 +41,9 @@ public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacke
 		}
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
-		if (siegeEvent != null)
+		if(siegeEvent != null)
 		{
-			status = siegeEvent.isInProgress() ? IN_PROGRESS_STATUS : (!siegeEvent.isRegistrationOver() ? PREPARE_STATUS : /*
-																															 * siegeEvent
-																															 * .
-																															 * isInPrepare
-																															 * (
-																															 * )
-																															 * ?
-																															 * PREPARE_STATUS
-																															 * :
-																															 */DONE_STATUS);
+			status = siegeEvent.isInProgress() ? IN_PROGRESS_STATUS : (!siegeEvent.isRegistrationOver() ? PREPARE_STATUS : /*siegeEvent.isInPrepare() ? PREPARE_STATUS : */DONE_STATUS);
 			attackersCount = siegeEvent.getObjects(SiegeEvent.ATTACKERS).size();
 
 			int defendersCount = siegeEvent.getObjects(SiegeEvent.DEFENDERS).size();
@@ -74,8 +65,8 @@ public class ExMercenaryCastlewarCastleSiegeInfo implements IClientOutgoingPacke
 		packetWriter.writeD(castleId);
 		packetWriter.writeD(ownerClanId); // UNK
 		packetWriter.writeD(ownerClanCrestId); // UNK
-		packetWriter.writeString(ownerClanName);
-		packetWriter.writeString(ownerLeaderName);
+		packetWriter.writeSizedString(ownerClanName);
+		packetWriter.writeSizedString(ownerLeaderName);
 		packetWriter.writeD(status);
 		packetWriter.writeD(attackersCount); // Castle Siege Camp
 		packetWriter.writeD(defendersCount); // Defenders' Camp

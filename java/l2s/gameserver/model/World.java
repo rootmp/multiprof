@@ -16,6 +16,7 @@ import l2s.gameserver.geometry.Territory;
 import l2s.gameserver.instancemanager.EventTriggersManager;
 import l2s.gameserver.model.Zone.ZoneType;
 import l2s.gameserver.model.entity.Reflection;
+import l2s.gameserver.model.instances.MonsterInstance;
 import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.EventTriggerPacket;
@@ -1459,5 +1460,43 @@ public class World
 
 				}
 		return ret;
+	}
+
+	public static List<MonsterInstance> getAroundMonsters(GameObject object, int radius, int height)
+	{
+		WorldRegion currentRegion = object.getCurrentRegion();
+		if(currentRegion == null)
+			return Collections.emptyList();
+
+		int oid = object.getObjectId();
+		int rid = object.getReflectionId();
+		int ox = object.getX();
+		int oy = object.getY();
+		int oz = object.getZ();
+		int sqrad = radius * radius;
+
+		List<MonsterInstance> result = new ArrayList<MonsterInstance>(64);
+
+		for(int x = validX(currentRegion.getX() - 1); x <= validX(currentRegion.getX() + 1); x++)
+			for(int y = validY(currentRegion.getY() - 1); y <= validY(currentRegion.getY() + 1); y++)
+				for(int z = validZ(currentRegion.getZ() - 1); z <= validZ(currentRegion.getZ() + 1); z++)
+					for(GameObject obj : getRegion(x, y, z))
+					{
+						if(!obj.isCreature() || !obj.isMonster() || obj.getObjectId() == oid || obj.getReflectionId() != rid)
+							continue;
+						if(Math.abs(obj.getZ() - oz) > height)
+							continue;
+						int dx = Math.abs(obj.getX() - ox);
+						if(dx > radius)
+							continue;
+						int dy = Math.abs(obj.getY() - oy);
+						if(dy > radius)
+							continue;
+						if(dx * dx + dy * dy > sqrad)
+							continue;
+
+						result.add((MonsterInstance) obj);
+					}
+		return result;
 	}
 }

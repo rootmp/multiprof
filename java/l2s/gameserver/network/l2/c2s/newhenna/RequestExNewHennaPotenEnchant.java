@@ -50,7 +50,7 @@ public class RequestExNewHennaPotenEnchant implements IClientIncomingPacket
 		
 		ItemData _costItem = currentFee.getItem(_costItemID);
 		
-		if(_costItem == null || !ItemFunctions.deleteItem(player, _costItem.getId(), _costItem.getCount(),"NewHennaPotenEnchant"))
+		if(_costItem == null || !ItemFunctions.deleteItem(player, _costItem.getId(), _costItem.getCount()))
 			return;
 
 		dailyCount -= 1;

@@ -73,6 +73,8 @@ public class NpcTemplate extends CreatureTemplate
 	public int aggroRange;
 	public final int rhand;
 	public final int lhand;
+	public final int chest;
+	
 	public final double rateHp;
 
 	private Faction faction = Faction.NONE;
@@ -150,6 +152,7 @@ public class NpcTemplate extends CreatureTemplate
 		aggroRange = set.getInteger("aggroRange");
 		rhand = set.getInteger("rhand", 0);
 		lhand = set.getInteger("lhand", 0);
+		chest = set.getInteger("chest", 0);
 		rateHp = set.getDouble("baseHpRate");
 		_htmRoot = set.getString("htm_root", null);
 		_shots = set.getEnum("shots", ShotsType.class, ShotsType.NONE);
@@ -634,5 +637,10 @@ public class NpcTemplate extends CreatureTemplate
 	public void setNoClan(boolean noClan)
 	{
 		isNoClan = noClan;
+	}
+
+	public int getAcquireExpRate()
+	{
+		return 1; 
 	}
 }

@@ -66,7 +66,7 @@ import l2s.gameserver.utils.ItemFunctions;
 public final class ItemInstance extends GameObject implements JdbcEntity
 {
 	public static final int[] EMPTY_ENCHANT_OPTIONS = new int[3];
-	public static final Ensoul[] EMPTY_ENSOULS_ARRAY = new Ensoul[0];
+	public static final List<Ensoul> EMPTY_ENSOULS_ARRAY = Collections.emptyList();
 
 	private static final ItemsDAO _itemsDAO = ItemsDAO.getInstance();
 

@@ -1,9 +1,10 @@
 package l2s.gameserver.skills.effects;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.napile.primitive.sets.impl.HashIntSet;
-
 import l2s.gameserver.handler.effects.EffectHandler;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
@@ -12,7 +13,8 @@ import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExMagicAttackInfo;
 import l2s.gameserver.network.l2.s2c.ExRegenMaxPacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.stats.Formulas;
@@ -655,14 +657,13 @@ public class EffectRestoreHP extends EffectRestoreCP
 			if (effected.isHealBlocked())
 				return true;
 
-			HashIntSet updateTypes = new HashIntSet();
-
+			List<UpdateType> updateTypes = new ArrayList<>();
 			int addToHp = (int) _power;
 			if (addToHp > 0)
 			{
 				addToHp = checkRestoreHpLimits(effected, addToHp);
 				effected.setCurrentHp(effected.getCurrentHp() + addToHp, false, false);
-				updateTypes.add(StatusUpdatePacket.CUR_HP);
+				updateTypes.add(UpdateType.VCP_HP);
 			}
 
 			int addToCp = calcAddToCp(_power, addToHp, effector, effected);
@@ -670,12 +671,12 @@ public class EffectRestoreHP extends EffectRestoreCP
 			{
 				addToCp = checkRestoreCpLimits(effected, addToCp);
 				effected.setCurrentCp(effected.getCurrentCp() + addToCp, false);
-				updateTypes.add(StatusUpdatePacket.CUR_CP);
+				updateTypes.add(UpdateType.VCP_CP);
 			}
 
 			if (!updateTypes.isEmpty())
 			{
-				StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, updateTypes.toArray());
+				StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, updateTypes);
 				effector.sendPacket(su);
 				effected.sendPacket(su);
 				effected.broadcastStatusUpdate();
@@ -807,7 +808,8 @@ public class EffectRestoreHP extends EffectRestoreCP
 			return power;
 		}
 
-		HashIntSet updateTypes = new HashIntSet();
+		List<UpdateType> updateTypes = new ArrayList<>();
+		
 		if (addToHp > 0)
 		{
 			addToHp = checkRestoreHpLimits(effected, addToHp);
@@ -819,7 +821,7 @@ public class EffectRestoreHP extends EffectRestoreCP
 				effected.sendPacket(new SystemMessagePacket(SystemMsg.S1_HP_HAS_BEEN_RESTORED).addInteger(addToHp));
 
 			effected.setCurrentHp(effected.getCurrentHp() + addToHp, false, false);
-			updateTypes.add(StatusUpdatePacket.CUR_HP);
+			updateTypes.add(UpdateType.VCP_HP);
 		}
 
 		int addToCp = calcAddToCp(power, addToHp, effector, effected);
@@ -832,12 +834,12 @@ public class EffectRestoreHP extends EffectRestoreCP
 				effected.sendPacket(new SystemMessagePacket(SystemMsg.S1_CP_HAS_BEEN_RESTORED).addInteger(addToCp));
 
 			effected.setCurrentCp(effected.getCurrentCp() + addToCp, false);
-			updateTypes.add(StatusUpdatePacket.CUR_CP);
+			updateTypes.add(UpdateType.VCP_CP);
 		}
 
 		if (!updateTypes.isEmpty())
 		{
-			StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, updateTypes.toArray());
+			StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, updateTypes);
 			effector.sendPacket(su);
 			effected.sendPacket(su);
 			effected.broadcastStatusUpdate();

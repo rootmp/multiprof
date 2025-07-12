@@ -178,7 +178,7 @@ public class AdenLab
 			if(!ItemFunctions.haveItem(player, 57, Config.ADENLAB_ADENA_FIX))
 				return;
 	
-			if(!ItemFunctions.deleteItem(player, 57, Config.ADENLAB_ADENA_FIX, "AdenLab play"))
+			if(!ItemFunctions.deleteItem(player, 57, Config.ADENLAB_ADENA_FIX))
 				return;
 		}
 		
@@ -245,7 +245,6 @@ public class AdenLab
 
 	public void sendTranscendProb(int nBossID)
 	{
-		// TODO Auto-generated method stub
 		player.sendPacket(new ExAdenlabTranscendProb(nBossID, new int[] {}));    
 	}
 }

@@ -1,69 +1,94 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 public class StatusUpdatePacket implements IClientOutgoingPacket
 {
-	public static enum UpdateType
+	public static enum StatusType
 	{
-		/* 0 */DEFAULT, // Первая посылка.
-		/* 1 */REGEN, // Посылается при восстановлении HP/MP/CP.
-		/* 2 */ON_PLAYER_INIT, // За одну сессию посылается 1 раз, с Cur HP, Max HP, Cur MP, Max MP, возможно
-								// при входе в игру.
-		/* 3 */CONSUME, // Посылается при потреблении HP/MP (использование скилла и т.д.).
-		/* 4 */UNK_4,
-		/* 5 */UNK_5,
-		/* 6 */DAMAGED // Посылается при нанесении урона DOT эффектами.
+		/*0*/Normal,
+		/*1*/HPUpdate,
+		/*2*/CPUpdate,
+		/*3*/MPUpdate,
+		/*4*/DamageText,
+		/*5*/EXPUpdate,
+		/*6*/DotEffect
 	}
 
-	/**
-	 * Даный параметр отсылается оффом в паре с MAX_HP Сначала CUR_HP, потом MAX_HP
-	 */
-	public final static int CUR_HP = 0x09;
-	public final static int MAX_HP = 0x0a;
+	public static enum UpdateType
+	{
+		VCP_CLASS(0x00),
+		VCP_LEVEL(0x01),
+		VCP_UNK_1(0x02),
+		VCP_STR(0x03),
+		VCP_DEX(0x04),
+		VCP_CON(0x05),
+		VCP_INT(0x06),
+		VCP_WIT(0x07),
+		VCP_MEN(0x08),
+		VCP_HP(0x09),
+		VCP_MAXHP(0x0A),
+		VCP_MP(0x0B),
+		VCP_MAXMP(0x0C),
+		VCP_SP(0x0D),
+		VCP_CARRINGWEIGHT(0xE),
+		VCP_CARRYWEIGHT(0xF),
+		VCP_ATTACKRANGE(0x10),
+		VCP_PHYSICALATTACK(0x11),
+		VCP_PHYSICALATTACKSPEED(0x12),
+		VCP_PHYSICALDEFENSE(0x13),
+		VCP_PHYSICALAVOID(0x14),
+		VCP_HITRATE(0x15),
+		VCP_CRITICALRATE(0x16),
+		VCP_MAGICALATTACK(0x17),
+		VCP_MAGICCASTINGSPEED(0x18),
+		VCP_ISGUILTY(0x19),
+		VCP_CRIMINAL_RATE(0x1A),
+		VCP_COLLISION_RADIUS(0x1B),
+		VCP_COLLISION_HEIGHT(0x1C),
+		VCP_BASE_SPEED(0x1D),
+		VCP_SPEED_MODIFIER(0x1E),
+		VCP_HP_REGEN(0x1F),
+		VCP_CP(0x20),
+		VCP_MAXCP(0x21),
+		VCP_ULTIMATE_SKILL_POINT(0x22),
+		VCP_SMALLWINDOW_UPDATE(0x23),
+		VCP_LUC(0x24),
+		VCP_CHA(0x25),
+		VCP_UNK4(0x26),
+		VCP_DP(0x27),
+		VCP_MAXDP(0x28),
+		VCP_UNK1(0x29),
+		VCP_BP(0x2A),
+		VCP_MAXBP(0x2B),
+		VCP_AP(0x2C),
+		VCP_MAXAP(0x2D),
+		VCP_LP(0x2E),
+		VCP_MAXLP(0x2F),//max WP lp bp
+		VCP_LL(0x30),
+		VCP_UNK2(0x31),
+		VCP_WP(0x32),//WP Lp bp
+		VCP_MAXWP(0x33),
+		VCP_MAX(0x34);
 
-	/**
-	 * Даный параметр отсылается оффом в паре с MAX_MP Сначала CUR_MP, потом MAX_MP
-	 */
-	public final static int CUR_MP = 0x0b;
-	public final static int MAX_MP = 0x0c;
+		private int _client_id;
 
-	/**
-	 * Меняется отображение только в инвентаре, для статуса требуется UserInfo
-	 */
-	public final static int CUR_LOAD = 0x0e;
+		UpdateType(int client_id)
+		{
+			_client_id = client_id;
+		}
 
-	/**
-	 * Меняется отображение только в инвентаре, для статуса требуется UserInfo
-	 */
-	public final static int MAX_LOAD = 0x0f;
+		public int getClientId()
+		{
+			return _client_id;
+		}
+	}
 
-	public final static int PVP_FLAG = 0x1a;
-	public final static int KARMA = 0x1b;
-
-	/**
-	 * Даный параметр отсылается оффом в паре с MAX_CP Сначала CUR_CP, потом MAX_CP
-	 */
-	public final static int CUR_CP = 0x21;
-	public final static int MAX_CP = 0x22;
-
-	/**
-	 * DP points
-	 */
-	public final static int CUR_DP = 0x28;
-	public final static int MAX_DP = 0x29;
-
-	/**
-	 * BP points
-	 */
-	public final static int CUR_BP = 0x2B;
-	public final static int MAX_BP = 0x2C;
-
-	private final UpdateType _updateType;
+	private final StatusType _updateType;
 	private final int _objectId, _receiverId;
 
 	private final List<Attribute> _attributes = new ArrayList<Attribute>();
@@ -80,14 +105,14 @@ public class StatusUpdatePacket implements IClientOutgoingPacket
 		}
 	}
 
-	public StatusUpdatePacket(UpdateType updateType, Creature creature)
+	public StatusUpdatePacket(StatusType updateType, Creature creature)
 	{
 		_updateType = updateType;
 		_objectId = creature.getObjectId();
 		_receiverId = 0;
 	}
 
-	public StatusUpdatePacket(UpdateType updateType, Creature creature, Creature receiver)
+	public StatusUpdatePacket(StatusType updateType, Creature creature, Creature receiver)
 	{
 		_updateType = updateType;
 		_objectId = creature.getObjectId();
@@ -108,10 +133,13 @@ public class StatusUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeC(_updateType.ordinal());
 		packetWriter.writeC(_attributes.size());
 
-		for (Attribute temp : _attributes)
+		for(Attribute temp : _attributes)
 		{
 			packetWriter.writeC(temp.id);
-			packetWriter.writeD(temp.value);
+			if(temp.id == 9 || temp.id == 10)
+				packetWriter.writeQ(temp.value);
+			else
+				packetWriter.writeD(temp.value);
 		}
 		return true;
 	}

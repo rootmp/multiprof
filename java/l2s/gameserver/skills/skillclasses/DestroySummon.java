@@ -21,7 +21,7 @@ public class DestroySummon extends Skill
 	{
 		if (getActivateRate() > 0 && !Formulas.calcEffectsSuccess(activeChar, target, this, getActivateRate()))
 		{
-			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RESISTED_YOUR_S2).addName(target).addSkillName(getId(), getLevel()));
+			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RESISTED_YOUR_S2).addName(target).addSkillName(getId(), getLevel(), 0));
 			activeChar.sendPacket(new ExMagicAttackInfo(activeChar.getObjectId(), target.getObjectId(), ExMagicAttackInfo.RESISTED));
 			return;
 		}

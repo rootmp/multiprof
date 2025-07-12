@@ -11,7 +11,7 @@ public class RequestRecipeBookOpen implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		if (_buf.hasRemaining())
+		if (packet.hasRemaining())
 			isDwarvenCraft = packet.readD() == 0;
 		return true;
 	}

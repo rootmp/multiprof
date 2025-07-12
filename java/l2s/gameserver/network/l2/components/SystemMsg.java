@@ -3613,8 +3613,37 @@ public enum SystemMsg implements IBroadcastPacket
 	NAME_BACKGROUND_SETTINGS_HAVE_BEEN_CHANGED(13967),
 	A_ABILITIES_ARE_IN_USE(13850),
 	B_ABILITIES_ARE_IN_USE(13851),
+	//"Currently unavailable for purchase. You can buy the Season Pass' additional rewards only until 6:30 a.m. of the season's last day."
+	CURRENTLY_UNAVAILABLE_FOR_PURCHASE_YOU_CAN_BUY_THE_SEASON_PASS_ADDITIONAL_REWARDS_ONLY_UNTIL_6_30_A_M_OF_THE_SEASON_S_LAST_DAY(6220),
+	
+	//"Your inventory's weight/limit has been exceeded so you can't receive the reward. Please free up some space and try again."
+	YOUR_INVENTORY_S_WEIGHT_LIMIT_HAS_BEEN_EXCEEDED_SO_YOU_CAN_T_RECEIVE_THE_REWARD_PLEASE_FREE_UP_SOME_SPACE_AND_TRY_AGAIN(6216),
+	
+	//"Sayha's Grace sustention effect of the Season Pass is activated. Available Sayha's Grace sustention time is running."
+	SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_IS_ACTIVATED_AVAILABLE_SAYHA_S_GRACE_SUSTENTION_TIME_IS_RUNNING(6212),
+	
+	//"Unable to activate. You can use Sayha's Grace sustention effect of the Season Pass only if you have at least 35,000 Sayha's Grace points."
+	UNABLE_TO_ACTIVATE_YOU_CAN_USE_SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_ONLY_IF_YOU_HAVE_AT_LEAST_35_000_SAYHA_S_GRACE_POINTS(6213),
+	
+	//"Sayha's Grace sustention effect of the Season Pass has been deactivated. The sustention time you have does not decrease."
+	SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_HAS_BEEN_DEACTIVATED_THE_SUSTENTION_TIME_YOU_HAVE_DOES_NOT_DECREASE(6214),
 	// Message: System error. Please refresh and try again.
-	SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN(13686);
+	SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN(13686),
+	
+	// Message: Item to be traded does not exist. 
+	ITEM_TO_BE_TRADED_DOES_NOT_EXIST(4010),
+	// Message: You have no open My Teleports slots.
+	YOU_HAVE_NO_OPEN_MY_TELEPORTS_SLOTS(2398),
+	
+	YOU_VE_OBTAINED_S1_S2_X_S3(13675),
+	YOU_VE_OBTAINED_S1_S2_4(13676),
+	YOU_VE_LOST_S1_S2_X_S3(13677),
+	YOU_VE_LOST_S1_S2_2(13678),
+	// Message: Item out of stock.
+	ITEM_OUT_OF_STOCK(350),
+	THE_ITEM_IS_NOT_FOUND(3373),//Предмет не найден.
+	//"You received $s1 Sayha's Grace sustention points."
+	YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS(6219),;
 
 	private final IClientOutgoingPacket _message;
 	private final int _id;

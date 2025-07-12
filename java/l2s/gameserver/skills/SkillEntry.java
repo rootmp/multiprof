@@ -181,6 +181,11 @@ public class SkillEntry implements SkillInfo
 		return makeSkillEntry(entryType, SkillHolder.getInstance().getSkill(skillId, skillLevel));
 	}
 
+	public static SkillEntry makeSkillEntry(SkillEntryType entryType, int skillId, int skillLevel, int sub)
+	{
+		return makeSkillEntry(entryType, SkillHolder.getInstance().getSkill(skillId, skillLevel));
+	}
+	
 	@Override
 	public int getSubLevel()
 	{

@@ -39,7 +39,7 @@ public class RequestPreviewItem implements IClientIncomingPacket
 		_unknow = packet.readD();
 		_listId = packet.readD();
 		_count = packet.readD();
-		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;

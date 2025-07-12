@@ -1,18 +1,14 @@
 package l2s.gameserver.network.l2.c2s.skill_enchant;
 
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.data.xml.holder.SkillEnchantSettingsHolder;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.ExExtractSkillEnchant;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
-import l2s.gameserver.templates.skill.enchant.SkillEnchantInfo;
-import l2s.gameserver.templates.skill.enchant.SkillEnchantSetting;
 import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExExtractSkillEnchant implements IClientIncomingPacket
@@ -40,7 +36,7 @@ public class RequestExExtractSkillEnchant implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		final Skill skill = SkillHolder.getInstance().getSkill(_skillId, _skillLevel, _skillSubLevel);
+		/*final Skill skill = SkillHolder.getInstance().getSkill(_skillId, _skillLevel, _skillSubLevel);
 		if (skill == null || skill.getId() != _skillId || skill.getSubLevel() != _skillSubLevel)
 			return;
 
@@ -100,6 +96,6 @@ public class RequestExExtractSkillEnchant implements IClientIncomingPacket
 			ItemFunctions.addItem(player, setting.getSuccessItemId(), 1, "ExExtractSkillEnchant");
 			player.sendPacket(new ExExtractSkillEnchant(0, enchantedSkill.getId(), enchantedSkill.getLevel(), enchantedSkill.getSubLevel()));
 		}else
-			player.sendPacket(new ExExtractSkillEnchant(1, _skillId, _skillLevel, _skillSubLevel));
+			player.sendPacket(new ExExtractSkillEnchant(1, _skillId, _skillLevel, _skillSubLevel));*/
 	}
 }

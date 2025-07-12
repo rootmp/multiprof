@@ -43,7 +43,7 @@ public class PartySpelledPacket implements IClientOutgoingPacket
 			packetWriter.writeD(temp._skillId);
 			packetWriter.writeH(temp._level);
 			packetWriter.writeD(temp._abnormalType);
-			writeOptionalD(temp._duration);
+			writeOptionalD(packetWriter, temp._duration);
 		}
 		return true;
 	}

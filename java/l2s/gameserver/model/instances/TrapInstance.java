@@ -14,7 +14,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.gameserver.network.l2.s2c.NpcInfo;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillTargetType;
 import l2s.gameserver.taskmanager.EffectTaskManager;
@@ -225,7 +225,7 @@ public final class TrapInstance extends NpcInstance
 			return Collections.emptyList();
 
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
-		list.add(new NpcInfo(this, forPlayer).init());
+		list.add(new NpcInfoPacket(this, forPlayer).init());
 
 		return list;
 	}

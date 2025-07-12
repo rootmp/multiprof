@@ -49,7 +49,7 @@ public class RequestExSkillEnchantCharge implements IClientIncomingPacket
 		final Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
+		/*
 		Skill skill = SkillHolder.getInstance().getSkill(nSkillID, nLevel, nSubLevel);
 		if (skill == null || skill.getId() != nSkillID)
 			return;
@@ -79,7 +79,7 @@ public class RequestExSkillEnchantCharge implements IClientIncomingPacket
 		
 		player.getSkillEnchant().update(enchant);
 		player.sendPacket(new ExSkillEnchantInfo(enchant));
-		player.sendPacket(new ExSkillEnchantCharge(nSkillID));
+		player.sendPacket(new ExSkillEnchantCharge(nSkillID));*/
 	}
 
 }

@@ -790,4 +790,34 @@ public abstract class Playable extends Creature
 			return player.getRelation(target);
 		return 0;
 	}
+
+	public int getCurrentAp()
+	{
+		return 0; 
+	}
+
+	public int getMaxAp()
+	{
+		return 0;  
+	}
+
+	public int getCurrentLp()
+	{
+		return 0;  
+	}
+
+	public int getMaxLp()
+	{
+		return 0;  
+	}
+
+	public int getCurrentWp()
+	{
+		return 0; 
+	}
+
+	public int getMaxWp()
+	{
+		return 0;
+	}
 }

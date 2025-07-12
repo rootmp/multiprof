@@ -2,10 +2,10 @@ package l2s.gameserver.network.l2.s2c.privatestoresearch;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 {
@@ -66,7 +66,8 @@ public class ExPrivateStoreSearchItem implements IClientOutgoingPacket
 		packetWriter.writeD(items.size());
 		for (Item item : items)
 		{
-			packetWriter.writeString(item.getOwnerName());
+			packetWriter.writeSizedString(item.getOwnerName());
+			packetWriter.writeD(item.getTradeItem().getOwnerId());
 			packetWriter.writeC(item.getStoreType());
 			packetWriter.writeQ(item.getTradeItem().getOwnersPrice());
 			packetWriter.writeD(item.getLoc().getX());

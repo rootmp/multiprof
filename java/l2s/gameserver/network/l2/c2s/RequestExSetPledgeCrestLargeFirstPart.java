@@ -24,7 +24,7 @@ public class RequestExSetPledgeCrestLargeFirstPart implements IClientIncomingPac
 		_crestPart = packet.readD();
 		_crestLeght = packet.readD();
 		_length = packet.readD();
-		if (_length <= CrestCache.LARGE_CREST_PART_SIZE && _length == _buf.remaining())
+		if (_length <= CrestCache.LARGE_CREST_PART_SIZE && _length == packet.getReadableBytes())
 		{
 			_data = new byte[_length];
 			readB(_data);

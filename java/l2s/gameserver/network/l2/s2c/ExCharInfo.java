@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
-import l2s.gameserver.GameServer;
 import l2s.gameserver.enums.PrivateStoreType;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.instancemanager.RankManager;
@@ -24,6 +23,7 @@ import l2s.gameserver.model.pledge.Alliance;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.s2c.updatetype.CharInfoType;
 import l2s.gameserver.skills.SkillEntry;
+import l2s.gameserver.skills.enums.AbnormalEffect;
 
 public class ExCharInfo implements IClientOutgoingPacket
 {
@@ -64,7 +64,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 	private boolean partyRoomLeader, flying;
 	private int curHp, maxHp, curMp, maxMp, curCp;
 	private TeamType teamType;
-	private Set<AbnormalVisualEffect> AbnormalVisualEffects;
+	private Set<AbnormalEffect> AbnormalVisualEffects;
 	private boolean cHairAccFlag;
 	private int armorSetEnchant;
 	private boolean noble;
@@ -210,9 +210,9 @@ public class ExCharInfo implements IClientOutgoingPacket
 		run = player.isRunning() ? 1 : 0; // running = 1 walking = 0
 		combat = player.isInCombat() ? 1 : 0;
 		cIsDead = player.isAlikeDead() ? 1 : 0;
-		privateStore = player.isInObserverMode() ? PrivateStoreType.STORE_OBSERVING_GAMES.getId() : player.getPrivateStoreType().getId();
+		privateStore = player.isInObserverMode() ? PrivateStoreType.STORE_OBSERVING_GAMES.getId() : player.getPrivateStoreType();
 		cubics = player.getCubics().toArray(new Cubic[0]);
-		AbnormalVisualEffects = player.getAbnormalVisualEffects();
+		AbnormalVisualEffects = player.getAbnormalEffects();
 		recHave = player.isGM() ? 0 : player.getRecomHave();
 		classId = player.getClassId().getId();
 		teamType = player.getTeam();
@@ -228,8 +228,8 @@ public class ExCharInfo implements IClientOutgoingPacket
 		agathionId = player.getAgathionNpcId();
 		partyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
 		flying = player.isInFlyingTransform();
-		curHp = (int) player.getCurrentHp();//receiver.canReceiveStatusUpdate(player, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.CUR_HP) ? (int) player.getCurrentHp() : 0;
-		maxHp = player.getMaxHp();//receiver.canReceiveStatusUpdate(player, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.MAX_HP) ? player.getMaxHp() : 0;
+		curHp = (int) player.getCurrentHp();//receiver.canReceiveStatusUpdate(player, StatusType.Normal, UpdateType.VCP_HP) ? (int) player.getCurrentHp() : 0;
+		maxHp = player.getMaxHp();//receiver.canReceiveStatusUpdate(player, StatusType.Normal, UpdateType.VCP_MAXHP) ? player.getMaxHp() : 0;
 		curMp = (int) player.getCurrentMp();
 		maxMp = player.getMaxMp();
 		curCp = (int) player.getCurrentCp();
@@ -338,8 +338,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_FEET][4]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_HAIR][4]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_DHAIR][4]);
-		if(GameServer.SERVER_PROTOCOL == 507)
-			packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_BACK][4]);
+		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_BACK][4]);
 		
 		packetWriter.writeC(pvpFlag); //cGuilty
 		packetWriter.writeD(karma);//nCriminalRate
@@ -431,7 +430,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeC(0); //cBRLectureMark
 
 		packetWriter.writeD(AbnormalVisualEffects.size()); //nAVECount
-		for(AbnormalVisualEffect abnormal : AbnormalVisualEffects)
+		for(AbnormalEffect abnormal : AbnormalVisualEffects)
 			packetWriter.writeH(abnormal.getId());
 
 		packetWriter.writeC(0); //cPledgeGameUserFlag Chaos Festival Winner

@@ -375,4 +375,39 @@ public class Util
 	{
 		return str1 == null ? str2 == null : str1.equalsIgnoreCase(str2);
 	}
+
+	public static double getDecrementValue(int nValue)
+	{
+		int nDecValue;
+		if(nValue >= 1 && nValue <= 9)
+			nDecValue = 10;
+		else if(nValue >= 10 && nValue <= 75)
+			nDecValue = 20;
+		else if(nValue == 76 || nValue == 77 || nValue == 78)
+			nDecValue = 30;
+		else if(nValue == 79 || nValue == 80)
+			nDecValue = 40;
+		else if(nValue == 81 || nValue == 82)
+			nDecValue = 50;
+		else if(nValue >= 83 && nValue <= 99)
+			nDecValue = 50;
+		else
+			nDecValue = 0;
+
+		return nDecValue;
+	}
+
+	public static double getNpcExpRatePenalty(double dAcquireExpRate)
+	{
+		if(dAcquireExpRate <= 10)
+			return dAcquireExpRate / 1.8;
+		if(dAcquireExpRate <= 30)
+			return dAcquireExpRate / 2.1;
+		if(dAcquireExpRate <= 50)
+			return dAcquireExpRate / 2.2;
+		if(dAcquireExpRate <= 100)
+			return dAcquireExpRate / 2.5;
+
+		return dAcquireExpRate / 2.6;
+	}
 }

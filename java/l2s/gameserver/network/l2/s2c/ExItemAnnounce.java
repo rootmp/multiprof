@@ -23,9 +23,9 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 	private final int _type;
 	private final int _misc;
 
-	public ExItemAnnounce(String name, int itemId, int enchantLevel, int type, int misc)
+	public ExItemAnnounce(Player player, int itemId, int enchantLevel, int type, int misc)
 	{
-		_name = name;
+		_name = player.isAnonymity() ? "" : player.getName();
 		_itemId = itemId;
 		_enchantLevel = enchantLevel;
 		_type = type;
@@ -39,7 +39,7 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 
 	public ExItemAnnounce(Player player, ItemInstance item, int type, int misc)
 	{
-		_name = player.getName();
+		_name = player.isAnonymity() ? "" : player.getName();
 		_type = type;
 		_itemId = item.getItemId();
 		_enchantLevel = item.getEnchantLevel();
@@ -61,7 +61,7 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 		// 8 and others - null item name by item_id and icon from chest.
 
 		packetWriter.writeC(_type); // announce type
-		packetWriter.writeString(_name); // name of player
+		packetWriter.writeSizedString(_name); // name of player
 		packetWriter.writeD(_itemId); // item id
 		packetWriter.writeC(_enchantLevel); // enchant level
 		packetWriter.writeD(_misc); // chest item id

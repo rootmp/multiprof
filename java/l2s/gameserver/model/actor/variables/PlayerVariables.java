@@ -41,4 +41,13 @@ public class PlayerVariables
 	public static final String DYE_POTENTIAL_DAILY_COUNT = "DYE_POTENTIAL_DAILY_COUNT";
 	public static final String DYE_POTENTIAL_DAILY_RESET_COUNT = "DYE_POTENTIAL_DAILY_RESET_COUNT";
 	public static final String DEATH_MATCH_BACK_COORDINATES = "death_match_back_coordinates";
+	
+	public static final String INV_SLOT_INDEX_VAR = "@InvSlotIndex";
+	public static final String INV_DUAL_VAR = "@InvDual";
+	public static final String INV_DUAL_HENNA_VAR = "@InvDualHenna";
+	
+	public static final String SP_EXTRACT_ITEM_VAR = "@sp_extract_item";
+	public static final String PTS_DAILY_QUEST_FLAG_VAR = "@pts_daily_quest_flag_";
+	
+	public static final String ITEM_ANNOUNCE_SETTING = "@ItemAnnounceSetting";
 }

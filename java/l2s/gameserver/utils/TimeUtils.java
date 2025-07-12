@@ -18,6 +18,8 @@ public class TimeUtils
 
 	public static final SchedulingPattern DAILY_DATE_PATTERN = new SchedulingPattern("30 6 * * *");
 	public static final SchedulingPattern WEEKLY_MONDAY_DATE_PATTERN = new SchedulingPattern("30 6 * * 1");
+	public static final SchedulingPattern MONTHLY_DATE_PATTERN = new SchedulingPattern("30 6 1 * *");
+	public static final SchedulingPattern WEEKLY_WEDNESDAY_DATE_PATTERN = new SchedulingPattern("30 6 * * 3");
 
 	public static String toSimpleFormat(Calendar cal)
 	{

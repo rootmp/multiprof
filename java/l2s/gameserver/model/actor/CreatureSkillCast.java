@@ -30,6 +30,8 @@ import l2s.gameserver.network.l2.s2c.MagicSkillLaunchedPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.MoveToPawnPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillCastingType;
@@ -67,7 +69,7 @@ public class CreatureSkillCast
 				return;
 
 			if (!skillEntry.getTemplate().isNotBroadcastable() && (skillEntry.getDisplayId() != 47001))
-				_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), targets, _castingType));
+				_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(),0, targets, _castingType));
 
 			if (_castLeftTime > 0)
 				_skillTask = ThreadPoolManager.getInstance().schedule(CreatureSkillCast.this::onMagicUseTimer, _castLeftTime);
@@ -397,7 +399,7 @@ public class CreatureSkillCast
 		_targets = targets;
 
 		if (!skill.isNotBroadcastable())
-			_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), targets, _castingType));
+			_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(),0, targets, _castingType));
 
 		double mpConsumeTick = skill.getMpConsumeTick();
 		if (mpConsumeTick > 0)
@@ -539,7 +541,7 @@ public class CreatureSkillCast
 			}
 			_actor.setCurrentDp(_actor.getCurrentDp() - dpConsume);
 			if (_actor.isPlayer())
-				_actor.broadcastPacket(new StatusUpdate(_actor, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.MAX_DP, StatusUpdatePacket.CUR_DP));
+				_actor.broadcastPacket(new StatusUpdate(_actor, StatusType.Normal, UpdateType.VCP_MAXDP, UpdateType.VCP_DP));
 		}
 
 		int bpConsume = skill.getBpConsume();
@@ -553,7 +555,7 @@ public class CreatureSkillCast
 			}
 			_actor.setCurrentBp(_actor.getCurrentBp() - bpConsume);
 			if (_actor.isPlayer())
-				_actor.broadcastPacket(new StatusUpdate(_actor, StatusUpdatePacket.UpdateType.DEFAULT, StatusUpdatePacket.MAX_BP, StatusUpdatePacket.CUR_BP));
+				_actor.broadcastPacket(new StatusUpdate(_actor, StatusType.Normal, UpdateType.VCP_MAXBP, UpdateType.VCP_BP));
 		}
 
 		_actor.callSkill(aimingTarget, skillEntry, targets, true, false);

@@ -4,6 +4,8 @@ import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.stats.StatModifierType;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.templates.skill.EffectTemplate;
@@ -37,7 +39,7 @@ public final class p_max_mp extends p_abstract_stat_effect
 			// SystemMessagePacket(SystemMsg.S1_MP_HAS_BEEN_RESTORED).addInteger(power));
 			// TODO: Проверить на оффе, должно ли быть сообщение.
 			effected.setCurrentMp(effected.getCurrentMp() + power, false);
-			StatusUpdate su = new StatusUpdate(effected, effector, StatusUpdatePacket.UpdateType.REGEN, StatusUpdatePacket.CUR_MP);
+			StatusUpdate su = new StatusUpdate(effected, effector, StatusType.HPUpdate, UpdateType.VCP_MP);
 			effector.sendPacket(su);
 			effected.sendPacket(su);
 			effected.broadcastStatusUpdate();

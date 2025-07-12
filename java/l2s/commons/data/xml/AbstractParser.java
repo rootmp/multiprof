@@ -65,7 +65,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 
 	protected abstract void readData(Element rootElement) throws Exception;
 
-	protected final void parse()
+	protected void parse()
 	{
 		File path = getXMLPath();
 		if (!path.exists())

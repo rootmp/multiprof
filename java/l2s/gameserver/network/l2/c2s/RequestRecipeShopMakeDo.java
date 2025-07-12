@@ -10,6 +10,7 @@ import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.RecipeShopItemInfoPacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.templates.item.RecipeTemplate;
@@ -178,7 +179,7 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 		}
 
 		manufacturer.reduceCurrentMp(recipe.getMpConsume(), null);
-		manufacturer.sendStatusUpdate(false, false, StatusUpdatePacket.CUR_MP);
+		manufacturer.sendStatusUpdate(false, false, UpdateType.VCP_MP);
 
 		ChancedItemData product = recipe.getRandomProduct();
 		if (product != null)

@@ -84,10 +84,10 @@ public class RequestRegistBeauty implements IClientIncomingPacket
 		}
 
 		if(reqAdena > 0)
-			activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, reqAdena, "RegistBeauty");
+			activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, reqAdena);
 
 		if(reqCoins > 0)
-			activeChar.getInventory().destroyItemByItemId(Config.BEAUTY_SHOP_COIN_ITEM_ID, reqCoins, "RegistBeauty");
+			activeChar.getInventory().destroyItemByItemId(Config.BEAUTY_SHOP_COIN_ITEM_ID, reqCoins);
 
 		if(_hairStyle > 0)
 		{

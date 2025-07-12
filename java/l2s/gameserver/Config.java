@@ -3208,6 +3208,66 @@ public class Config
 		}
 
 	}
+	public static int[] ADENLAB_RESEARCH_DIARY;
+	public static long ADENLAB_ADENA_PLAY;
+	public static long ADENLAB_ADENA_FIX;
+	
+	public static final String HUNT_PASS_CONFIG_FILE = "config/HuntPass.properties";
+
+	// HuntPass
+	public static boolean ENABLE_HUNT_PASS;
+	public static int HUNT_PASS_PERIOD;
+
+	public static int HUNT_PASS_PREMIUM_ITEM_ID;
+	public static int HUNT_PASS_PREMIUM_COST;
+	public static int HUNT_PASS_POINTS_FOR_STEP;
+	public static int HUNT_PASS_POINTS_FOR_MOB;
+	public static int HUNT_PASS_POINTS_FOR_MOB_INSTANCE;
+	
+	public static void loadHuntPass()
+	{
+		ExProperties huntPassConfig = load(HUNT_PASS_CONFIG_FILE);
+
+		ENABLE_HUNT_PASS = huntPassConfig.getProperty("EnabledHuntPass", true);
+		HUNT_PASS_PREMIUM_ITEM_ID = huntPassConfig.getProperty("PremiumItemId", 91663);
+		HUNT_PASS_PREMIUM_COST = huntPassConfig.getProperty("PremiumCost", 3600);
+		HUNT_PASS_POINTS_FOR_STEP = huntPassConfig.getProperty("PointsForstep", 2400);
+		HUNT_PASS_PERIOD = huntPassConfig.getProperty("DayOfMonth", 1);
+
+		HUNT_PASS_POINTS_FOR_MOB = huntPassConfig.getProperty("PointsForMob", 1);
+		HUNT_PASS_POINTS_FOR_MOB_INSTANCE = huntPassConfig.getProperty("PointsForMobInstance", 2);
+	}
+	
+	// World Exchange
+	public static boolean ENABLE_WORLD_EXCHANGE;
+	public static Language WORLD_EXCHANGE_DEFAULT_LANG;
+	public static long WORLD_EXCHANGE_SAVE_INTERVAL;
+	public static int WORLD_EXCHANGE_TAX;
+	public static int WORLD_EXCHANGE_MIN_ADENA_TAX;
+	public static int WORLD_EXCHANGE_MIN_BALANS_TAX;
+
+	public static int WORLD_EXCHANGE_ITEM_SELL_PERIOD;
+	public static int WORLD_EXCHANGE_ITEM_BACK_PERIOD;
+	public static int WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD;
+	public static boolean VIP_ATTENDANCE_REWARDS_REWARD_ONLY_PREMIUM = false;
+
+	public static final String WORLD_EXCHANGE_CONFIG_FILE = "config/WorldExchange.properties";
+	
+	public static void loadWorldExchangeSettings()
+	{
+		ExProperties worldExchangeconfig = load(WORLD_EXCHANGE_CONFIG_FILE);
+
+		ENABLE_WORLD_EXCHANGE = worldExchangeconfig.getProperty("EnableWorldExchange", true);
+		WORLD_EXCHANGE_DEFAULT_LANG = Language.valueOf(worldExchangeconfig.getProperty("WorldExchangeDefaultLanguage", "ENGLISH"));
+		WORLD_EXCHANGE_SAVE_INTERVAL = worldExchangeconfig.getProperty("BidItemsIntervalStatusCheck", 30000);
+		WORLD_EXCHANGE_TAX = worldExchangeconfig.getProperty("Tax", 5);
+		WORLD_EXCHANGE_MIN_ADENA_TAX = worldExchangeconfig.getProperty("MinAdenaTax", 100);
+		WORLD_EXCHANGE_MIN_BALANS_TAX = worldExchangeconfig.getProperty("MinBalansTax", 1);
+
+		WORLD_EXCHANGE_ITEM_SELL_PERIOD = worldExchangeconfig.getProperty("ItemSellPeriod", 14);
+		WORLD_EXCHANGE_ITEM_BACK_PERIOD = worldExchangeconfig.getProperty("ItemBackPeriod", 120);
+		WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD = worldExchangeconfig.getProperty("PaymentTakePeriod", 120);
+	}
 	
 	public static void loadGMAccess()
 	{
@@ -3386,6 +3446,8 @@ public class Config
 		loadSchemeBuffer();
 		loadBuffStoreConfig();
 		loadPvpbookSettings();
+		loadHuntPass();
+		loadWorldExchangeSettings();
 		
 		abuseLoad();
 		loadGMAccess();

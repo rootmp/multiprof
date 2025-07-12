@@ -15,7 +15,7 @@ public class RequestSaveKeyMapping implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		int length = packet.readD();
-		if (length > _buf.remaining() || length > Short.MAX_VALUE || length < 0)
+		if (length > packet.getReadableBytes() || length > Short.MAX_VALUE || length < 0)
 		{
 			_data = null;
 			return false;

@@ -103,7 +103,7 @@ public class RequestExMagicSkillUseGround implements IClientIncomingPacket
 					}
 				}
 				SkillEntry entry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 47001, 1);
-				activeChar.broadcastPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), entry.getDisplayId(), entry.getDisplayLevel(), fullList, SkillCastingType.NORMAL));
+				activeChar.broadcastPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), entry.getDisplayId(), entry.getDisplayLevel(),0, fullList, SkillCastingType.NORMAL));
 				activeChar.sendPacket(new ExMagicSkillUseGround(activeChar, _loc));
 				Thread.sleep(skill.getHitTime() + skill.getCoolTime() + 100);
 				for (Creature cr : fullList)

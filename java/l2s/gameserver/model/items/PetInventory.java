@@ -7,7 +7,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.enums.ItemLocation;
 import l2s.gameserver.model.instances.PetInstance;
 import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.network.l2.s2c.NpcInfo;
+import l2s.gameserver.network.l2.s2c.NpcInfoPacket;
 import l2s.gameserver.network.l2.s2c.PetInventoryUpdatePacket;
 import l2s.gameserver.network.l2.s2c.PetItemListPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -68,7 +68,7 @@ public class PetInventory extends Inventory
 	{
 		getOwner().sendItemList(false);
 		getOwner().sendPacket(new PetItemListPacket(getActor()));
-		getOwner().sendPacket(new NpcInfo.PetInfoPacket(getActor(), getOwner()));
+		getOwner().sendPacket(new NpcInfoPacket.PetInfoPacket(getActor(), getOwner()));
 	}
 
 	@Override

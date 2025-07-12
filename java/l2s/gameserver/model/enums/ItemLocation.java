@@ -30,5 +30,6 @@ public enum ItemLocation
 	FREIGHT, // Dimension Manager
 	LEASE,
 	MAIL,
-	PENALTY_INVENTORY,
+	PENALTY_INVENTORY, 
+	EXCHANGE,
 }
