@@ -17,6 +17,7 @@ import l2s.commons.listener.Listener;
 import l2s.commons.listener.ListenerList;
 import l2s.commons.net.HostInfo;
 import l2s.commons.net.nio.impl.SelectorStats;
+import l2s.dataparser.PTSDataLoader;
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.cache.ImagesCache;
 import l2s.gameserver.config.FloodProtectorConfigs;
@@ -28,6 +29,7 @@ import l2s.gameserver.dao.FencesDAO;
 import l2s.gameserver.dao.HidenItemsDAO;
 import l2s.gameserver.dao.ItemsDAO;
 import l2s.gameserver.data.BoatHolder;
+import l2s.gameserver.data.clientDat.DatParser;
 import l2s.gameserver.data.xml.Parsers;
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
@@ -104,7 +106,10 @@ public class GameServer
 		ConfigParsers.parseAllOnLoad();
 
 		Config.load();
-
+		
+		DatParser.getInstance().load();
+		PTSDataLoader.load();
+		
 		final HostInfo[] hosts = HostsConfigHolder.getInstance().getGameServerHosts();
 		if(hosts.length == 0)
 		{ throw new Exception("Server hosts list is empty!"); }
