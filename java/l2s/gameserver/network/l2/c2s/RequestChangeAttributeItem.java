@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.dao.JdbcEntityState;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
@@ -34,7 +35,9 @@ public class RequestChangeAttributeItem implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
+		{
 			return;
+		}
 
 		if (activeChar.isActionsDisabled())
 		{
@@ -56,7 +59,7 @@ public class RequestChangeAttributeItem implements IClientIncomingPacket
 		}
 
 		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemObjId);
-		if (item == null || !item.isWeapon())
+		if ((item == null) || !item.isWeapon())
 		{
 			activeChar.sendPacket(SystemMsg.UNABLE_TO_CHANCE_THE_ATTRIBUTE);
 			activeChar.sendPacket(ExChangeAttributeFail.STATIC);
@@ -86,7 +89,7 @@ public class RequestChangeAttributeItem implements IClientIncomingPacket
 		msg.addElementName(oldElement);
 		msg.addElementName(newElement);
 		activeChar.sendPacket(msg);
-		activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, item));
+		activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(item));
 		activeChar.sendPacket(ExChangeAttributeOk.STATIC);
 		activeChar.updateStats();
 	}

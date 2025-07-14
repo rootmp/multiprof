@@ -33,7 +33,9 @@ public class AdminCreateItem implements IAdminCommandHandler
 		Commands command = (Commands) comm;
 
 		if (!activeChar.getPlayerAccess().UseGMShop)
+		{
 			return false;
+		}
 
 		switch (command)
 		{
@@ -53,15 +55,23 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					long item_count = wordList.length < 3 ? 1 : Long.parseLong(wordList[2]);
 					ItemInstance item = null;
-					if (activeChar.getTarget() == null || activeChar.getTarget() == activeChar)
+					if ((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
+					{
 						item = createItem(activeChar, item_id, item_count);
+					}
 					else if (activeChar.getTarget() instanceof Player)
+					{
 						item = createItem(activeChar.getTarget().getPlayer(), item_id, item_count);
+					}
 					else
+					{
 						item = createItem(activeChar, item_id, item_count);
+					}
 
 					if (item == null)
+					{
 						activeChar.sendMessage("Undefined item id!");
+					}
 				}
 				catch (NumberFormatException nfe)
 				{
@@ -80,14 +90,18 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					long item_count = wordList.length < 3 ? 1 : Long.parseLong(wordList[2]);
 
-					if (activeChar.getTarget() == null || activeChar.getTarget() == activeChar)
+					if ((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
+					{
 						createItemH(activeChar, item_id, item_count);
-
+					}
 					else if (activeChar.getTarget().isPlayer())
+					{
 						createItemH(activeChar.getTarget().getPlayer(), item_id, item_count);
-
+					}
 					else
+					{
 						createItemH(activeChar, item_id, item_count);
+					}
 				}
 				catch (NumberFormatException nfe)
 				{
@@ -133,12 +147,12 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					int elementId = Integer.parseInt(wordList[2]);
 					int value = Integer.parseInt(wordList[3]);
-					if (elementId > 5 || elementId < 0)
+					if ((elementId > 5) || (elementId < 0))
 					{
 						activeChar.sendMessage("Improper element Id");
 						return false;
 					}
-					if (value < 1 || value > 300)
+					if ((value < 1) || (value > 300))
 					{
 						activeChar.sendMessage("Improper element value");
 						return false;
@@ -155,7 +169,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 					item.setAttributeElement(element, item.getAttributeElementValue(element, false) + value);
 					item.setJdbcState(JdbcEntityState.UPDATED);
 					item.update();
-					activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, item));
+					activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(item));
 				}
 				catch (NumberFormatException nfe)
 				{
@@ -177,7 +191,9 @@ public class AdminCreateItem implements IAdminCommandHandler
 	private ItemInstance createItem(Player activeChar, int itemId, long count)
 	{
 		if (ItemHolder.getInstance().getTemplate(itemId) == null)
+		{
 			return null;
+		}
 
 		ItemInstance createditem = ItemFunctions.createItem(itemId);
 		createditem.setCount(count);
@@ -191,12 +207,14 @@ public class AdminCreateItem implements IAdminCommandHandler
 		{
 			activeChar.getInventory().addItem(createditem);
 			if (!createditem.isStackable())
-				for (long i = 0; i < count - 1; i++)
+			{
+				for (long i = 0; i < (count - 1); i++)
 				{
 					createditem = ItemFunctions.createItem(itemId);
 					Log.LogItem(activeChar, Log.Create, createditem);
 					activeChar.getInventory().addItem(createditem);
 				}
+			}
 			activeChar.sendPacket(SystemMessagePacket.obtainItems(itemId, count, 0));
 		}
 		return createditem;
@@ -210,12 +228,14 @@ public class AdminCreateItem implements IAdminCommandHandler
 		activeChar.getInventory().addItem(createditem);
 		HidenItemsDAO.addHiddenItem(createditem);
 		if (!createditem.isStackable())
-			for (long i = 0; i < count - 1; i++)
+		{
+			for (long i = 0; i < (count - 1); i++)
 			{
 				createditem = ItemFunctions.createItem(itemId);
 				// Log.LogItem(activeChar, Log.Create, createditem);
 				activeChar.getInventory().addItem(createditem);
 			}
+		}
 		activeChar.sendPacket(SystemMessagePacket.obtainItems(itemId, count, 0));
 		return createditem;
 	}

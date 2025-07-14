@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.ArrayUtils;
 
 import l2s.commons.dao.JdbcEntityState;
@@ -454,7 +455,7 @@ public class RequestShapeShiftingItem implements IClientIncomingPacket
 			{
 				player.getInventory().sendEquipInfo(targetItem.getEquipSlot());
 			}
-			player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, targetItem));
+			player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(targetItem));
 			player.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_SPENT_S1_ON_A_SUCCESSFUL_APPEARANCE_MODIFICATION).addLong(cost));
 		}
 		finally

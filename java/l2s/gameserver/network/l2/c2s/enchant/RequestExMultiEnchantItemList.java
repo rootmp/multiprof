@@ -7,14 +7,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.dao.JdbcEntityState;
+import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.EnchantItemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.GameClient;
-import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExItemAnnounce;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
@@ -71,7 +71,9 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 	{
 		final Player player = client.getActiveChar();
 		if (player == null)
+		{
 			return;
+		}
 
 		if (player.isActionsDisabled())
 		{
@@ -154,7 +156,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 				}
 
 				final ItemInstance enchantItem = player.getInventory().getItemByObjectId(player.getMultiEnchantingItemsBySlot(i));
-				if (enchantItem.getEnchantLevel() < enchantScroll.getMinEnchant() || enchantScroll.getMaxEnchant() != -1 && enchantItem.getEnchantLevel() >= enchantScroll.getMaxEnchant())
+				if ((enchantItem.getEnchantLevel() < enchantScroll.getMinEnchant()) || ((enchantScroll.getMaxEnchant() != -1) && (enchantItem.getEnchantLevel() >= enchantScroll.getMaxEnchant())))
 				{
 					player.sendPacket(EnchantResult.CANCEL);
 					player.sendPacket(SystemMsg.INAPPROPRIATE_ENCHANT_CONDITIONS);
@@ -186,7 +188,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 					switch (enchantScroll.getType())
 					{
 						case ARMOR:
-							if (itemType == ItemTemplate.TYPE2_WEAPON || enchantItem.getTemplate().isHairAccessory())
+							if ((itemType == ItemTemplate.TYPE2_WEAPON) || enchantItem.getTemplate().isHairAccessory())
 							{
 								player.sendPacket(EnchantResult.CANCEL);
 								player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -195,7 +197,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 							}
 							break;
 						case WEAPON:
-							if (itemType == ItemTemplate.TYPE2_SHIELD_ARMOR || itemType == ItemTemplate.TYPE2_ACCESSORY || enchantItem.getTemplate().isHairAccessory())
+							if ((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || enchantItem.getTemplate().isHairAccessory())
 							{
 								player.sendPacket(EnchantResult.CANCEL);
 								player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -248,11 +250,17 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 
 				final double baseChance;
 				if (enchantItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+				{
 					baseChance = enchantLevel.getFullBodyChance();
+				}
 				else if (enchantItem.getTemplate().isMagicWeapon())
+				{
 					baseChance = enchantLevel.getMagicWeaponChance();
+				}
 				else
+				{
 					baseChance = enchantLevel.getBaseChance();
+				}
 
 				double chance = baseChance;
 
@@ -273,7 +281,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 
 					player.getInventory().refreshEquip(enchantItem);
 
-					player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, enchantItem));
+					player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(enchantItem));
 
 					player.sendPacket(new EnchantResult(0, 0, 0, enchantItem.getEnchantLevel(), enchantItem.getEnchantLevel()));
 
@@ -295,7 +303,9 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 					{
 						case CRYSTALS:
 							if (enchantItem.isEquipped())
+							{
 								player.sendDisarmMessage(enchantItem);
+							}
 
 							Log.LogItem(player, Log.EnchantFail, enchantItem);
 
@@ -310,7 +320,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 
 							int crystalId = enchantItem.getGrade().getCrystalId();
 							int crystalAmount = enchantItem.getCrystalCountOnEchant();
-							if (crystalId > 0 && crystalAmount > 0 && !enchantItem.isFlagNoCrystallize())
+							if ((crystalId > 0) && (crystalAmount > 0) && !enchantItem.isFlagNoCrystallize())
 							{
 								player.sendPacket(new EnchantResult(1, crystalId, crystalAmount, 0));
 								ItemFunctions.addItem(player, crystalId, crystalAmount, true);
@@ -326,7 +336,9 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 							}
 
 							if (enchantScroll.showFailEffect())
+							{
 								player.broadcastPacket(new MagicSkillUse(player, player, FAIL_VISUAL_EFF_ID, 1, 500, 1500));
+							}
 							break;
 						case DROP_ENCHANT:
 							int enchantDropCount = enchantScroll.getEnchantDropCount();
@@ -337,7 +349,7 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 
 							player.getInventory().refreshEquip(enchantItem);
 
-							player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, enchantItem));
+							player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(enchantItem));
 							player.sendPacket(SystemMsg.THE_BLESSED_ENCHANT_FAILED);
 							player.sendPacket(EnchantResult.BLESSED_FAILED);
 							_result.put(i, "BLESSED_FAIL");

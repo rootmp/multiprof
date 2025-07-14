@@ -77,7 +77,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 				hairButton = hairButton.replace("<?item_object_id?>", String.valueOf(hairItem.getObjectId()));
 			}
 
-			if (hairItem != null && hairItem.getBodyPart() == ItemTemplate.SLOT_HAIRALL)
+			if ((hairItem != null) && (hairItem.getBodyPart() == ItemTemplate.SLOT_HAIRALL))
 			{
 				faceButton = tpls.get(4);
 				faceButton = faceButton.replace("<?item_icon?>", hairItem.getTemplate().getIcon());
@@ -101,7 +101,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 				weaponButton = weaponButton.replace("<?item_object_id?>", String.valueOf(weaponItem.getObjectId()));
 			}
 
-			if (weaponItem != null && weaponItem.getBodyPart() == ItemTemplate.SLOT_LR_HAND)
+			if ((weaponItem != null) && (weaponItem.getBodyPart() == ItemTemplate.SLOT_LR_HAND))
 			{
 				shieldButton = tpls.get(4);
 				shieldButton = shieldButton.replace("<?item_icon?>", weaponItem.getTemplate().getIcon());
@@ -123,7 +123,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 				chestButton = chestButton.replace("<?item_object_id?>", String.valueOf(chestItem.getObjectId()));
 			}
 
-			if (chestItem != null && chestItem.getBodyPart() == ItemTemplate.SLOT_FORMAL_WEAR)
+			if ((chestItem != null) && (chestItem.getBodyPart() == ItemTemplate.SLOT_FORMAL_WEAR))
 			{
 				legsButton = tpls.get(4);
 				legsButton = legsButton.replace("<?item_icon?>", chestItem.getTemplate().getIcon());
@@ -139,7 +139,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 			}
 			else
 			{
-				if (chestItem != null && chestItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+				if ((chestItem != null) && (chestItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR))
 				{
 					legsButton = tpls.get(4);
 					legsButton = legsButton.replace("<?item_icon?>", chestItem.getTemplate().getIcon());
@@ -262,7 +262,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 				if (itemObjectId > 0)
 				{
 					item = inventory.getItemByObjectId(itemObjectId);
-					if (item != null && /* item.isEquipped() && */item.getOwnerId() == player.getObjectId())
+					if ((item != null) && (/* item.isEquipped() && */item.getOwnerId() == player.getObjectId()))
 					{
 						final ItemGrade grade = item.getGrade();
 						final ItemGrade externalGrade = grade.extGrade();
@@ -271,11 +271,17 @@ public class CommunityEnchant extends CustomCommunityHandler
 						if (item.canBeEnchanted())
 						{
 							if (item.isWeapon())
+							{
 								enchantCost = BBSConfig.ENCHANT_SERVICE_WEAPON_ENCHANT_COST.get(externalGrade.ordinal());
+							}
 							else if (item.isArmor())
+							{
 								enchantCost = BBSConfig.ENCHANT_SERVICE_ARMOR_ENCHANT_COST.get(externalGrade.ordinal());
+							}
 							else if (item.isAccessory())
+							{
 								enchantCost = BBSConfig.ENCHANT_SERVICE_JEWELRY_ENCHANT_COST.get(externalGrade.ordinal());
+							}
 						}
 
 						if (enchantCost != null)
@@ -304,7 +310,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 										String cmd1 = st.nextToken();
 										if (cmd1.equals("enchant"))
 										{
-											if (feeItemId <= 0 || feeItemCount <= 0 || ItemFunctions.deleteItem(player, feeItemId, feeItemCount))
+											if ((feeItemId <= 0) || (feeItemCount <= 0) || ItemFunctions.deleteItem(player, feeItemId, feeItemCount))
 											{
 												// set enchant value
 												item.setEnchantLevel(++enchantLevel);
@@ -312,13 +318,15 @@ public class CommunityEnchant extends CustomCommunityHandler
 												player.getInventory().refreshEquip(item);
 
 												// send packets
-												player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, item));
+												player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 												player.broadcastCharInfo();
 												player.sendPacket(new MagicSkillUse(player, player, 5965, 1, 500, 1500));
 												player.sendMessage(player.isLangRus() ? "Вы успешно улучшили Вашу экипировку до +" + enchantLevel + "!" : "You have successfully enchanted your equipment to +" + enchantLevel + "!");
 											}
 											else
+											{
 												player.sendMessage(player.isLangRus() ? "Недостаточно необходимых предметов для улучшения экипировки." : "Not enough items needed to enchant equipment.");
+											}
 										}
 									}
 
@@ -330,7 +338,7 @@ public class CommunityEnchant extends CustomCommunityHandler
 										String enchantBlock = tpls.get(5);
 										enchantBlock = enchantBlock.replace("<?item_icon?>", item.getTemplate().getIcon());
 
-										if (feeItemId > 0 && feeItemCount > 0)
+										if ((feeItemId > 0) && (feeItemCount > 0))
 										{
 											String feeInfoBlock = tpls.get(9);
 											feeInfoBlock = feeInfoBlock.replace("<?fee_item_name?>", HtmlUtils.htmlItemName(feeItemId));
@@ -338,7 +346,9 @@ public class CommunityEnchant extends CustomCommunityHandler
 											enchantBlock = enchantBlock.replace("<?fee_info?>", feeInfoBlock);
 										}
 										else
+										{
 											enchantBlock = enchantBlock.replace("<?fee_info?>", tpls.get(10));
+										}
 
 										enchantBlock = enchantBlock.replace("<?next_enchant_level?>", String.valueOf(enchantLevel + 1));
 
@@ -350,15 +360,21 @@ public class CommunityEnchant extends CustomCommunityHandler
 											enchantBlock = enchantBlock.replace("<?item_name?>", itemNameBlock);
 										}
 										else
+										{
 											enchantBlock = enchantBlock.replace("<?item_name?>", HtmlUtils.htmlItemName(item.getItemId()));
+										}
 
 										String gradeIcon = "";
 										if (grade != ItemGrade.NONE)
 										{
 											if (externalGrade != grade)
+											{
 												gradeIcon = tpls.get(8).replace("<?item_grade?>", grade.toString());
+											}
 											else
+											{
 												gradeIcon = tpls.get(7).replace("<?item_grade?>", grade.toString());
+											}
 										}
 
 										enchantBlock = enchantBlock.replace("<?item_grade_icon?>", gradeIcon);
@@ -370,7 +386,9 @@ public class CommunityEnchant extends CustomCommunityHandler
 							}
 						}
 						else
+						{
 							player.sendMessage(player.isLangRus() ? "Выбранный предмет нельзя заточить." : "Selected item cannot be enchanted.");
+						}
 					}
 				}
 			}

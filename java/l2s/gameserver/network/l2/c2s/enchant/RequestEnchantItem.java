@@ -4,14 +4,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2s.commons.dao.JdbcEntityState;
+import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.EnchantItemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.GameClient;
-import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExItemAnnounce;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
@@ -55,7 +55,9 @@ public class RequestEnchantItem implements IClientIncomingPacket
 	{
 		final Player player = client.getActiveChar();
 		if (player == null)
+		{
 			return;
+		}
 
 		if (player.isActionsDisabled())
 		{
@@ -101,9 +103,11 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			ItemInstance catalyst = player.getSupportItem() == null ? null : inventory.getItemByObjectId(player.getSupportItem().getObjectId());
 			EnchantStone enchantStone = ItemFunctions.getEnchantStone(item, catalyst);
 			if (enchantStone == null)
+			{
 				catalyst = null;
+			}
 
-			if (item == null || scroll == null)
+			if ((item == null) || (scroll == null))
 			{
 				player.sendActionFailed();
 				return;
@@ -116,7 +120,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				return;
 			}
 
-			if (item.getEnchantLevel() < enchantScroll.getMinEnchant() || enchantScroll.getMaxEnchant() != -1 && item.getEnchantLevel() >= enchantScroll.getMaxEnchant())
+			if ((item.getEnchantLevel() < enchantScroll.getMinEnchant()) || ((enchantScroll.getMaxEnchant() != -1) && (item.getEnchantLevel() >= enchantScroll.getMaxEnchant())))
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendPacket(SystemMsg.INAPPROPRIATE_ENCHANT_CONDITIONS);
@@ -148,7 +152,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				switch (enchantScroll.getType())
 				{
 					case ARMOR:
-						if (itemType == ItemTemplate.TYPE2_WEAPON || item.getTemplate().isHairAccessory())
+						if ((itemType == ItemTemplate.TYPE2_WEAPON) || item.getTemplate().isHairAccessory())
 						{
 							player.sendPacket(EnchantResult.CANCEL);
 							player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -157,7 +161,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 						}
 						break;
 					case WEAPON:
-						if (itemType == ItemTemplate.TYPE2_SHIELD_ARMOR || itemType == ItemTemplate.TYPE2_ACCESSORY || item.getTemplate().isHairAccessory())
+						if ((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || item.getTemplate().isHairAccessory())
 						{
 							player.sendPacket(EnchantResult.CANCEL);
 							player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -224,7 +228,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				return;
 			}
 
-			if (!inventory.destroyItem(scroll, 1L) || catalyst != null && !inventory.destroyItem(catalyst, 1L))
+			if (!inventory.destroyItem(scroll, 1L) || ((catalyst != null) && !inventory.destroyItem(catalyst, 1L)))
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendActionFailed();
@@ -233,22 +237,32 @@ public class RequestEnchantItem implements IClientIncomingPacket
 
 			final double baseChance;
 			if (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+			{
 				baseChance = enchantLevel.getFullBodyChance();
+			}
 			else if (item.getTemplate().isMagicWeapon())
+			{
 				baseChance = enchantLevel.getMagicWeaponChance();
+			}
 			else
+			{
 				baseChance = enchantLevel.getBaseChance();
+			}
 
 			double chance = baseChance;
 
 			if (enchantStone != null)
+			{
 				chance += enchantStone.getChance();
+			}
 
 			chance += player.getPremiumAccount().getEnchantChanceBonus();
 			chance += player.getVIP().getTemplate().getEnchantChanceBonus();
 
 			if (item.getGrade() != ItemGrade.NONE)
+			{
 				chance *= player.getEnchantChanceModifier();
+			}
 
 			chance = Math.min(100, chance);
 
@@ -259,7 +273,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				item.update();
 
 				player.getInventory().refreshEquip(item);
-				player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, item));
+				player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 
 				player.sendPacket(new EnchantResult(0, 0, 0, item.getEnchantLevel(), item.getEnchantLevel()));
 
@@ -275,14 +289,18 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			else
 			{
 				FailResultType resultType = enchantScroll.getResultType();
-				if (enchantStone != null && enchantStone.getResultType().ordinal() > resultType.ordinal())
+				if ((enchantStone != null) && (enchantStone.getResultType().ordinal() > resultType.ordinal()))
+				{
 					resultType = enchantStone.getResultType();
+				}
 
 				switch (resultType)
 				{
 					case CRYSTALS:
 						if (item.isEquipped())
+						{
 							player.sendDisarmMessage(item);
+						}
 
 						Log.LogItem(player, Log.EnchantFail, item);
 
@@ -299,30 +317,38 @@ public class RequestEnchantItem implements IClientIncomingPacket
 						int[] stone = item.getEnchantFailStone();
 						int stoneId = stone[0];
 						int stoneCount = stone[1];
-						if (crystalId > 0 && crystalAmount > 0 && !item.isFlagNoCrystallize())
+						if ((crystalId > 0) && (crystalAmount > 0) && !item.isFlagNoCrystallize())
 						{
 							player.sendPacket(new EnchantResult(1, crystalId, crystalAmount, 0));
 							ItemFunctions.addItem(player, crystalId, crystalAmount, true);
-							if (stoneId > 0 && stoneCount > 0)
+							if ((stoneId > 0) && (stoneCount > 0))
+							{
 								ItemFunctions.addItem(player, stoneId, stoneCount, true);
+							}
 						}
 						else
+						{
 							player.sendPacket(EnchantResult.FAILED_NO_CRYSTALS);
+						}
 
 						if (enchantScroll.showFailEffect())
+						{
 							player.broadcastPacket(new MagicSkillUse(player, player, FAIL_VISUAL_EFF_ID, 1, 500, 1500));
+						}
 						break;
 					case DROP_ENCHANT:
 						int enchantDropCount = enchantScroll.getEnchantDropCount();
-						if (enchantStone != null && enchantStone.getEnchantDropCount() < enchantDropCount)
+						if ((enchantStone != null) && (enchantStone.getEnchantDropCount() < enchantDropCount))
+						{
 							enchantDropCount = enchantStone.getEnchantDropCount();
+						}
 
 						item.setEnchantLevel(Math.max(item.getEnchantLevel() - enchantDropCount, 0));
 						item.setJdbcState(JdbcEntityState.UPDATED);
 						item.update();
 
 						player.getInventory().refreshEquip(item);
-						player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, item));
+						player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 						player.sendPacket(SystemMsg.THE_BLESSED_ENCHANT_FAILED);
 						player.sendPacket(EnchantResult.BLESSED_FAILED);
 						break;

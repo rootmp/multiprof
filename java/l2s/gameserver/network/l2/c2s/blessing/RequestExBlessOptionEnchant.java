@@ -34,7 +34,9 @@ public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 	{
 		final Player player = client.getActiveChar();
 		if (player == null)
+		{
 			return;
+		}
 
 		if (player.isActionsDisabled())
 		{
@@ -73,7 +75,7 @@ public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 			final ItemInstance item = inventory.getItemByObjectId(_itemObjId);
 			final ItemInstance scroll = player.getBlessingScroll();
 
-			if (item == null || scroll == null)
+			if ((item == null) || (scroll == null))
 			{
 				player.sendActionFailed();
 				return;
@@ -100,7 +102,7 @@ public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 
 				player.getInventory().refreshEquip(item);
 
-				player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, item));
+				player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 				player.sendPacket(new ExBlessOptionEnchant(true));
 				player.broadcastPacket(new MagicSkillUse(player, player, SUCCESS_VISUAL_EFF_ID, 1, 500, 1500));
 				player.getListeners().onBlessingItem(item, true);

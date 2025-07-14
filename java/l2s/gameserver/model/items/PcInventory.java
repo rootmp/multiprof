@@ -537,7 +537,7 @@ public class PcInventory extends Inventory
 	{
 		Player actor = getActor();
 
-		actor.sendPacket(new InventoryUpdatePacket().addNewItem(actor, item));
+		actor.sendPacket(new InventoryUpdatePacket(actor).addNewItem(item));
 		if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 		{
 			actor.sendPacket(new ExAdenaInvenCount(actor));
@@ -557,10 +557,10 @@ public class PcInventory extends Inventory
 	{
 		Player actor = getActor();
 
-		InventoryUpdatePacket iu = new InventoryUpdatePacket();
+		InventoryUpdatePacket iu = new InventoryUpdatePacket(actor);
 		for (ItemInstance item : items)
 		{
-			iu.addModifiedItem(actor, item);
+			iu.addModifiedItem(item);
 		}
 
 		actor.sendPacket(iu);
@@ -586,7 +586,7 @@ public class PcInventory extends Inventory
 	public void sendRemoveItem(ItemInstance item)
 	{
 		Player actor = getActor();
-		actor.sendPacket(new InventoryUpdatePacket().addRemovedItem(actor, item));
+		actor.sendPacket(new InventoryUpdatePacket(actor).addRemovedItem(item));
 		if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 		{
 			actor.sendPacket(new ExAdenaInvenCount(actor));
@@ -723,6 +723,6 @@ public class PcInventory extends Inventory
 
 	public int getPaperdollVariation3Id(int pAPERDOLL_ID)
 	{
-		return 0;  
+		return 0;
 	}
 }

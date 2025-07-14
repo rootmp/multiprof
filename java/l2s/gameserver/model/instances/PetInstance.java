@@ -77,7 +77,7 @@ public class PetInstance extends Servitor
 	private int _npcState;
 
 	private final int _corpseTime;
-	
+
 	private int nameId = -1;
 	private int statSkillId = 0;
 	private int statSkillLevel = 0;
@@ -99,21 +99,29 @@ public class PetInstance extends Servitor
 			if (!rset.next())
 			{
 				if (PetDataHolder.isBabyPet(template.getId()) || PetDataHolder.isImprovedBabyPet(template.getId()) || PetDataHolder.isSpecialPet(template.getId()))
+				{
 					pet = new PetBabyInstance(IdFactory.getInstance().getNextId(), template, owner, control);
+				}
 				else
+				{
 					pet = new PetInstance(IdFactory.getInstance().getNextId(), template, owner, control);
+				}
 				return pet;
 			}
 
 			if (PetDataHolder.isBabyPet(template.getId()) || PetDataHolder.isImprovedBabyPet(template.getId()) || PetDataHolder.isSpecialPet(template.getId()))
+			{
 				pet = new PetBabyInstance(rset.getInt("objId"), template, owner, control, rset.getLong("exp"));
+			}
 			else
+			{
 				pet = new PetInstance(rset.getInt("objId"), template, owner, control, rset.getLong("exp"));
+			}
 
 			pet.setRespawned(true);
 
 			String name = rset.getString("name");
-			pet.setName(name == null || name.isEmpty() ? StringUtils.EMPTY : name);
+			pet.setName((name == null) || name.isEmpty() ? StringUtils.EMPTY : name);
 			pet.setCurrentHpMp(rset.getDouble("curHp"), rset.getInt("curMp"), true);
 			pet.setCurrentCp(pet.getMaxCp());
 			pet.setSp(rset.getInt("sp"));
@@ -160,16 +168,24 @@ public class PetInstance extends Servitor
 
 		int minLevel = _data.getMinLvl();
 		if (_level < minLevel)
+		{
 			_level = minLevel;
+		}
 
 		if (_exp < getExpForThisLevel())
+		{
 			_exp = getExpForThisLevel();
+		}
 
-		while (_exp >= getExpForNextLevel() && _level < Experience.getMaxLevel())
+		while ((_exp >= getExpForNextLevel()) && (_level < Experience.getMaxLevel()))
+		{
 			_level++;
+		}
 
-		while (_exp < getExpForThisLevel() && _level > minLevel)
+		while ((_exp < getExpForThisLevel()) && (_level > minLevel))
+		{
 			_level--;
+		}
 
 		if (_data.isOfType(PetType.KARMA) || _data.isOfType(PetType.SPECIAL))
 		{
@@ -216,7 +232,9 @@ public class PetInstance extends Servitor
 				{
 					getPlayer().sendPacket(new SystemMessagePacket(SystemMsg.YOUR_PET_WAS_HUNGRY_SO_IT_ATE_S1).addItemName(food.getItemId()));
 					if (Rnd.chance(5))
+					{
 						getPlayer().sendPacket(SystemMsg.YOUR_PET_ATE_A_LITTLE_BUT_IS_STILL_HUNGRY);
+					}
 					break;
 				}
 				food = null;
@@ -229,29 +247,41 @@ public class PetInstance extends Servitor
 	{
 		Player owner = getPlayer();
 
-		if (isHungry()) // Проверить, будет ли отниматся в данной ситуации у хозяина часть опыта,
-						// которая призначалась пету.
+		if (isHungry())
+		{ // Проверить, будет ли отниматся в данной ситуации у хозяина часть опыта,
+			// которая призначалась пету.
 			return;
+		}
 
 		if (getData().isOfType(PetType.SPECIAL))
+		{
 			return;
+		}
 
 		_exp += addToExp;
 		_sp += addToSp;
 
 		if (_exp > getMaxExp())
+		{
 			_exp = getMaxExp();
+		}
 
-		if (addToExp > 0 || addToSp > 0)
+		if ((addToExp > 0) || (addToSp > 0))
+		{
 			owner.sendPacket(new SystemMessage(SystemMessage.THE_PET_ACQUIRED_EXPERIENCE_POINTS_OF_S1).addNumber(addToExp));
+		}
 
 		int old_level = _level;
 
-		while (_exp >= getExpForNextLevel() && _level < Experience.getMaxLevel())
+		while ((_exp >= getExpForNextLevel()) && (_level < Experience.getMaxLevel()))
+		{
 			_level++;
+		}
 
-		while (_exp < getExpForThisLevel() && _level > getMinLevel())
+		while ((_exp < getExpForThisLevel()) && (_level > getMinLevel()))
+		{
 			_level--;
+		}
 
 		if (old_level < _level)
 		{
@@ -266,8 +296,10 @@ public class PetInstance extends Servitor
 			refreshPetSkills();
 		}
 
-		if (addToExp > 0 || addToSp > 0)
+		if ((addToExp > 0) || (addToSp > 0))
+		{
 			sendStatusUpdate();
+		}
 	}
 
 	@Override
@@ -279,12 +311,14 @@ public class PetInstance extends Servitor
 	private void deathPenalty()
 	{
 		if (isInZoneBattle())
+		{
 			return;
+		}
 
 		int lvl = getLevel();
-		double percentLost = -0.07 * lvl + 6.5;
+		double percentLost = (-0.07 * lvl) + 6.5;
 		// Calculate the Experience loss
-		lostExp = (int) Math.round((getExpForNextLevel() - getExpForThisLevel()) * percentLost / 100);
+		lostExp = (int) Math.round(((getExpForNextLevel() - getExpForThisLevel()) * percentLost) / 100);
 		addExpAndSp(-lostExp, 0);
 	}
 
@@ -294,10 +328,14 @@ public class PetInstance extends Servitor
 	private void destroyControlItem()
 	{
 		if (getControlItemObjId() == 0)
+		{
 			return;
+		}
 
 		if (!getPlayer().getInventory().destroyItemByObjectId(getControlItemObjId(), 1L))
+		{
 			return;
+		}
 
 		// pet control item no longer exists, delete the pet from the db
 		Connection con = null;
@@ -327,7 +365,9 @@ public class PetInstance extends Servitor
 		getPlayer().sendPacket(SystemMsg.THE_PET_HAS_BEEN_KILLED);
 
 		if (getData().isOfType(PetType.SPECIAL))
+		{
 			return;
+		}
 
 		stopFeedTask();
 		deathPenalty();
@@ -341,19 +381,25 @@ public class PetInstance extends Servitor
 		getMovement().stopMove();
 
 		if (!object.isItem())
+		{
 			return;
+		}
 
 		ItemInstance item = (ItemInstance) object;
 
 		synchronized (item)
 		{
 			if (!item.isVisible())
+			{
 				return;
+			}
 
 			if (item.isHerb())
 			{
 				for (SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
+				{
 					altUseSkill(skillEntry, this);
+				}
 				item.deleteMe();
 				return;
 			}
@@ -371,22 +417,28 @@ public class PetInstance extends Servitor
 			}
 
 			if (!item.getTemplate().getHandler().pickupItem(this, item))
+			{
 				return;
+			}
 
 			FlagItemAttachment attachment = item.getAttachment() instanceof FlagItemAttachment ? (FlagItemAttachment) item.getAttachment() : null;
 			if (attachment != null)
+			{
 				return;
+			}
 
 			item.pickupMe();
 		}
 
-		if (owner.getParty() == null || owner.getParty().getLootDistribution() == Party.ITEM_LOOTER)
+		if ((owner.getParty() == null) || (owner.getParty().getLootDistribution() == Party.ITEM_LOOTER))
 		{
 			getInventory().addItem(item);
 			sendChanges();
 		}
 		else
+		{
 			owner.getParty().distributeItem(owner, item, null);
+		}
 		broadcastPickUpMsg(item);
 	}
 
@@ -421,10 +473,14 @@ public class PetInstance extends Servitor
 	{
 		Player owner = getPlayer();
 		if (owner == null)
+		{
 			return null;
+		}
 		int item_obj_id = getControlItemObjId();
 		if (item_obj_id == 0)
+		{
 			return null;
+		}
 		return owner.getInventory().getItemByObjectId(item_obj_id);
 	}
 
@@ -438,7 +494,9 @@ public class PetInstance extends Servitor
 	public int getCurrentFed()
 	{
 		if (Config.ALT_PETS_NOT_STARVING)
+		{
 			return getMaxFed();
+		}
 		return _currentFeed;
 	}
 
@@ -534,12 +592,15 @@ public class PetInstance extends Servitor
 		return null;
 	}
 
+	@Override
 	public int getSkillLevel(int skillId)
 	{
-		if (_skills == null || _skills.get(skillId) == null)
+		if ((_skills == null) || (_skills.get(skillId) == null))
+		{
 			return -1;
+		}
 		int lvl = getLevel();
-		return lvl > 70 ? 7 + (lvl - 70) / 5 : lvl / 10;
+		return lvl > 70 ? 7 + ((lvl - 70) / 5) : lvl / 10;
 	}
 
 	@Override
@@ -568,7 +629,7 @@ public class PetInstance extends Servitor
 	{
 		if (lostExp != 0)
 		{
-			addExpAndSp((long) (lostExp * percent / 100.), 0);
+			addExpAndSp((long) ((lostExp * percent) / 100.), 0);
 			lostExp = 0;
 		}
 	}
@@ -593,13 +654,19 @@ public class PetInstance extends Servitor
 	private void startFeedTask()
 	{
 		if (isDead())
+		{
 			return;
+		}
 
 		if (_feedTask != null)
+		{
 			return;
+		}
 
 		if (Config.ALT_PETS_NOT_STARVING)
+		{
 			return;
+		}
 
 		_feedTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new FeedTask(), 10000L, 10000L);
 	}
@@ -631,7 +698,7 @@ public class PetInstance extends Servitor
 			ps.setInt(1, skillId);
 			ps.setInt(2, skillLevel);
 			ps.setInt(3, petId);
-			ps.setLong(4, getPlayer().getObjectId() * 100000L + getControlItem().getItemId());
+			ps.setLong(4, (getPlayer().getObjectId() * 100000L) + getControlItem().getItemId());
 			ps.executeUpdate();
 		}
 		catch (SQLException e)
@@ -642,7 +709,7 @@ public class PetInstance extends Servitor
 
 	public void deletePetSkills()
 	{
-		MySqlDataInsert.set(deletePetSkills, getPlayer().getObjectId() * 100000L + getControlItem().getItemId());
+		MySqlDataInsert.set(deletePetSkills, (getPlayer().getObjectId() * 100000L) + getControlItem().getItemId());
 	}
 
 	@Override
@@ -659,8 +726,10 @@ public class PetInstance extends Servitor
 
 	public void store()
 	{
-		if (getControlItemObjId() == 0 || _exp == 0)
+		if ((getControlItemObjId() == 0) || (_exp == 0))
+		{
 			return;
+		}
 
 		Connection con = null;
 		PreparedStatement statement = null;
@@ -669,9 +738,13 @@ public class PetInstance extends Servitor
 			con = DatabaseFactory.getInstance().getConnection();
 			String req;
 			if (!isRespawned())
+			{
 				req = "INSERT INTO pets (name,curHp,curMp,exp,sp,fed,objId,item_obj_id) VALUES (?,?,?,?,?,?,?,?)";
+			}
 			else
+			{
 				req = "UPDATE pets SET name=?,curHp=?,curMp=?,exp=?,sp=?,fed=?,objId=? WHERE item_obj_id = ?";
+			}
 			statement = con.prepareStatement(req);
 			statement.setString(1, getName().equalsIgnoreCase(getTemplate().name) ? "" : getName());
 			statement.setDouble(2, getCurrentHp());
@@ -718,7 +791,9 @@ public class PetInstance extends Servitor
 	{
 		ItemInstance controlItem = getControlItem();
 		if (controlItem == null)
+		{
 			return;
+		}
 		PetItemInfo petItemInfo = controlItem.getPetInfo();
 		if (petItemInfo == null)
 		{
@@ -739,7 +814,7 @@ public class PetInstance extends Servitor
 		controlItem.setJdbcState(JdbcEntityState.UPDATED);
 		controlItem.update();
 		Player player = getPlayer();
-		player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, controlItem));
+		player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(controlItem));
 	}
 
 	public int getPetIndex()
@@ -807,30 +882,42 @@ public class PetInstance extends Servitor
 	public boolean useItem(ItemInstance item, boolean ctrl, boolean sendMsg)
 	{
 		if (!_isUsingItem.compareAndSet(false, true))
+		{
 			return false;
+		}
 
 		try
 		{
 			if (isAlikeDead() || isDead() || isOutOfControl())
+			{
 				return false;
+			}
 
 			ItemTemplate template = item.getTemplate();
 
 			if (template.useItem(this, item, ctrl, true))
+			{
 				return true;
+			}
 
 			if (!item.isEquipped() && !template.testCondition(this, item, false))
 			{
 				if (sendMsg)
+				{
 					getPlayer().sendPacket(SystemMsg.YOUR_PET_CANNOT_CARRY_THIS_ITEM);
+				}
 				return false;
 			}
 
 			if (isSharedGroupDisabled(template.getReuseGroup()))
+			{
 				return false;
+			}
 
-			if (getPlayer().getInventory().isLockedItem(item)) // TODO: [Bonux] проверить.
+			if (getPlayer().getInventory().isLockedItem(item))
+			{ // TODO: [Bonux] проверить.
 				return false;
+			}
 
 			if (template.useItem(this, item, ctrl, false))
 			{
@@ -855,10 +942,14 @@ public class PetInstance extends Servitor
 	{
 		int lvlDiff = getLevel() - getPlayer().getLevel();
 		if (lvlDiff >= 20)
+		{
 			return true;
+		}
 
-		if (isHungry() && getCurrentFed() < (int) (getMaxFed() * 0.10))
+		if (isHungry() && (getCurrentFed() < (int) (getMaxFed() * 0.10)))
+		{
 			return true;
+		}
 
 		return false;
 	}
@@ -874,11 +965,17 @@ public class PetInstance extends Servitor
 	{
 		double weightproc = (getCurrentLoad() - getStat().calc(Stats.MAX_NO_PENALTY_LOAD, 0, this, null)) / getMaxLoad();
 		if (weightproc >= 50.0)
+		{
 			return 1;
+		}
 		else if (weightproc >= 60.0)
+		{
 			return 2;
+		}
 		else if (weightproc >= 80.0)
+		{
 			return 3;
+		}
 		return 0;
 	}
 
@@ -906,7 +1003,9 @@ public class PetInstance extends Servitor
 	public PetBaseStats getBaseStats()
 	{
 		if (_baseStats == null)
+		{
 			_baseStats = new PetBaseStats(this);
+		}
 		return (PetBaseStats) _baseStats;
 	}
 
@@ -926,9 +1025,13 @@ public class PetInstance extends Servitor
 				long minCount = ci.getMinCount();
 				long maxCount = ci.getMaxCount();
 				if (minCount == maxCount)
+				{
 					count = minCount;
+				}
 				else
+				{
 					count = Rnd.get(minCount, maxCount);
+				}
 				ItemFunctions.addItem(getPlayer(), ci.getId(), count, true);
 			}
 		}
@@ -940,7 +1043,7 @@ public class PetInstance extends Servitor
 
 		try (PreparedStatement ps = DatabaseFactory.getInstance().getConnection().prepareStatement(selectPetSkills))
 		{
-			ps.setLong(1, getPlayer().getObjectId() * 100000L + getControlItem().getItemId());
+			ps.setLong(1, (getPlayer().getObjectId() * 100000L) + getControlItem().getItemId());
 			ResultSet rs = ps.executeQuery();
 			if (rs.next())
 			{
@@ -962,11 +1065,15 @@ public class PetInstance extends Servitor
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillData.getId(), skillData.getLevel(getLevel()));
 			if (skillEntry == null)
+			{
 				continue;
+			}
 
 			int haveSkillLevel = getSkillLevel(skillEntry.getId(), 0);
 			if (skillEntry.getLevel() == haveSkillLevel)
+			{
 				continue;
+			}
 
 			removeSkillById(skillEntry.getId());
 			addSkill(skillEntry);
@@ -977,17 +1084,25 @@ public class PetInstance extends Servitor
 	public void onAttacked(Creature attacker)
 	{
 		if (isAttackingNow())
+		{
 			return;
+		}
 
-		if (attacker == null || getPlayer() == null)
+		if ((attacker == null) || (getPlayer() == null))
+		{
 			return;
+		}
 
-		if (getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+		if (getMovement().isMoving() || isMovementDisabled() || (getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW))
+		{
 			return;
+		}
 
 		Player player = getPlayer();
 		if (player == null)
+		{
 			return;
+		}
 
 		getMovement().moveToLocation(Location.findPointToStay(getPlayer().getLoc(), Config.FOLLOW_RANGE, Config.FOLLOW_RANGE, getGeoIndex()), 0, true); // TODO:
 																																						// Check
@@ -997,17 +1112,25 @@ public class PetInstance extends Servitor
 	public void onOwnerOfAttacks(Creature target)
 	{
 		if (isAttackingNow())
+		{
 			return;
+		}
 
-		if (target == null || getPlayer() == null)
+		if ((target == null) || (getPlayer() == null))
+		{
 			return;
+		}
 
-		if (getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+		if (getMovement().isMoving() || isMovementDisabled() || (getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW))
+		{
 			return;
+		}
 
 		Player player = getPlayer();
 		if (player == null)
+		{
 			return;
+		}
 
 		getMovement().moveToLocation(Location.findPointToStay(getPlayer().getLoc(), Config.FOLLOW_RANGE, Config.FOLLOW_RANGE, getGeoIndex()), 0, true); // TODO:
 																																						// Check
@@ -1050,10 +1173,14 @@ public class PetInstance extends Servitor
 			else
 			{
 				if (isHungry())
+				{
 					tryFeed();
+				}
 
 				if (getCurrentFed() <= (int) (getMaxFed() * 0.10))
+				{
 					getPlayer().sendPacket(SystemMsg.WHEN_YOUR_PETS_HUNGER_GAUGE_IS_AT_0_YOU_CANNOT_USE_YOUR_PET);
+				}
 				else if (getCurrentFed() <= 0)
 				{
 					getPlayer().sendPacket(SystemMsg.YOUR_PET_IS_STARVING_AND_WILL_NOT_OBEY_UNTIL_IT_GETS_ITS_FOOD);
@@ -1064,7 +1191,7 @@ public class PetInstance extends Servitor
 			consumeMeal();
 
 			ItemInstance item = getControlItem();
-			if (item != null && !item.getTemplate().testCondition(getPlayer(), item, false))
+			if ((item != null) && !item.getTemplate().testCondition(getPlayer(), item, false))
 			{
 				unSummon(false);
 			}

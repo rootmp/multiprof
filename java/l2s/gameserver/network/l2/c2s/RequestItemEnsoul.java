@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +55,9 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
+		{
 			return;
+		}
 
 		if (activeChar.isActionsDisabled())
 		{
@@ -91,17 +94,25 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 			{
 				ItemInstance ensoulItem = activeChar.getInventory().getItemByObjectId(info.itemObjectId);
 				if (ensoulItem == null)
+				{
 					continue;
+				}
 
 				Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(info.ensoulId);
 				if (ensoul == null)
+				{
 					continue;
+				}
 
 				if (ensoul.getItemId() != ensoulItem.getItemId())
+				{
 					continue;
+				}
 
 				if (!targetItem.canBeEnsoul(ensoul.getItemId()))
+				{
 					continue;
+				}
 
 				if (ensoulFee != null)
 				{
@@ -110,16 +121,22 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 					{
 						List<EnsoulFeeItem> feeItems;
 						if (!targetItem.containsEnsoul(info.type, info.id))
+						{
 							feeItems = feeInfo.getInsertFee();
+						}
 						else
+						{
 							feeItems = feeInfo.getChangeFee();
+						}
 
 						for (EnsoulFeeItem feeItem : feeItems)
 						{
 							if (feeItem.getLevel() == ensoul.getLevel())
 							{
 								if (!ItemFunctions.haveItem(activeChar, feeItem.getId(), feeItem.getCount()))
+								{
 									continue loop;
+								}
 							}
 						}
 
@@ -134,7 +151,9 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 				}
 
 				if (!ItemFunctions.deleteItem(activeChar, ensoulItem, 1))
+				{
 					continue;
+				}
 
 				targetItem.addEnsoul(info.type, info.id, ensoul, true);
 				success = true;
@@ -144,11 +163,13 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 
 			if (success)
 			{
-				activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, targetItem));
+				activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(targetItem));
 				activeChar.sendPacket(new ExEnsoulResult(targetItem.getNormalEnsouls(), targetItem.getSpecialEnsouls()));
 			}
 			else
+			{
 				activeChar.sendPacket(ExEnsoulResult.FAIL);
+			}
 		}
 		finally
 		{

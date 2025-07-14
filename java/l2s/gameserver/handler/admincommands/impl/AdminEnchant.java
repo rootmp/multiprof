@@ -40,7 +40,9 @@ public class AdminEnchant implements IAdminCommandHandler
 		Commands command = (Commands) comm;
 
 		if (!activeChar.getPlayerAccess().CanEditChar)
+		{
 			return false;
+		}
 
 		int armorType = -1;
 
@@ -108,7 +110,7 @@ public class AdminEnchant implements IAdminCommandHandler
 				break;
 		}
 
-		if (armorType == -1 || wordList.length < 2)
+		if ((armorType == -1) || (wordList.length < 2))
 		{
 			showMainPage(activeChar);
 			return true;
@@ -117,10 +119,14 @@ public class AdminEnchant implements IAdminCommandHandler
 		try
 		{
 			int ench = Integer.parseInt(wordList[1]);
-			if (ench < 0 || ench > 65535)
+			if ((ench < 0) || (ench > 65535))
+			{
 				activeChar.sendMessage("You must set the enchant level to be between 0-65535.");
+			}
 			else
+			{
 				setEnchant(activeChar, ench, armorType);
+			}
 		}
 		catch (StringIndexOutOfBoundsException e)
 		{
@@ -141,7 +147,9 @@ public class AdminEnchant implements IAdminCommandHandler
 		// get the target
 		GameObject target = activeChar.getTarget();
 		if (target == null)
+		{
 			target = activeChar;
+		}
 		if (!target.isPlayer())
 		{
 			activeChar.sendMessage("Wrong target type.");
@@ -164,7 +172,7 @@ public class AdminEnchant implements IAdminCommandHandler
 			player.getInventory().refreshEquip(itemInstance);
 
 			// send packets
-			player.sendPacket(new InventoryUpdatePacket().addModifiedItem(player, itemInstance));
+			player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(itemInstance));
 			player.broadcastCharInfo();
 
 			// informations
@@ -178,10 +186,14 @@ public class AdminEnchant implements IAdminCommandHandler
 		// get the target
 		GameObject target = activeChar.getTarget();
 		if (target == null)
+		{
 			target = activeChar;
+		}
 		Player player = activeChar;
 		if (target.isPlayer())
+		{
 			player = (Player) target;
+		}
 
 		HtmlMessage adminReply = new HtmlMessage(5);
 

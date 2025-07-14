@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.dao.JdbcEntityState;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
@@ -35,7 +36,9 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 		if (activeChar == null)
+		{
 			return;
+		}
 
 		if (activeChar.isActionsDisabled() || activeChar.isInStoreMode() || activeChar.isInTrade())
 		{
@@ -55,7 +58,7 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 		ItemAttributes set = itemToUnnchant.getAttributes();
 		Element element = Element.getElementById(_attributeId);
 
-		if (element == Element.NONE || set.getValue(element) <= 0)
+		if ((element == Element.NONE) || (set.getValue(element) <= 0))
 		{
 			activeChar.sendPacket(new ExBaseAttributeCancelResult(false, itemToUnnchant, element), ActionFailPacket.STATIC);
 			return;
@@ -74,7 +77,7 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 
 		activeChar.getInventory().refreshEquip(itemToUnnchant);
 
-		activeChar.sendPacket(new InventoryUpdatePacket().addModifiedItem(activeChar, itemToUnnchant));
+		activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(itemToUnnchant));
 		activeChar.sendPacket(new ExBaseAttributeCancelResult(true, itemToUnnchant, element));
 
 		activeChar.updateStats();
