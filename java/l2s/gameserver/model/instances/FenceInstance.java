@@ -97,10 +97,10 @@ public class FenceInstance extends GameObject
 	{
 		List<IClientOutgoingPacket> packets = new ArrayList<IClientOutgoingPacket>();
 
-		packets.add(new DeleteObjectPacket(this));
+		packets.add(new DeleteObjectPacket(forPlayer, this));
 
-		for (int objId : _heightFences)
-			packets.add(new DeleteObjectPacket(objId));
+		for(int objId : _heightFences)
+			packets.add(new DeleteObjectPacket(forPlayer, objId));
 
 		return packets;
 	}

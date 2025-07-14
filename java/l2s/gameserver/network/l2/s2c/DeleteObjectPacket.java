@@ -6,30 +6,35 @@ import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 
 /**
- * Пример: 08 a5 04 31 48 ObjectId 00 00 00 7c unk format d
+ * Пример:
+ * 08
+ * a5 04 31 48 ObjectId
+ * 00 00 00 7c unk
+ *
+ * format  d
  */
 public class DeleteObjectPacket implements IClientOutgoingPacket
 {
+	private final Player forPlayer;
 	private int _objectId;
 
-	public DeleteObjectPacket(GameObject obj)
+	public DeleteObjectPacket(Player forPlayer, GameObject obj)
 	{
+		this.forPlayer = forPlayer;
 		_objectId = obj.getObjectId();
 	}
 
-	public DeleteObjectPacket(int objId)
+	public DeleteObjectPacket(Player forPlayer, int objId)
 	{
+		this.forPlayer = forPlayer;
 		_objectId = objId;
 	}
 
 	@Override
-	protected boolean canWrite()
+	public boolean canBeWritten()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || (activeChar.getObjectId() == _objectId))
-		{
+		if(forPlayer == null || forPlayer.getObjectId() == _objectId)
 			return false;
-		}
 		return true;
 	}
 
@@ -37,14 +42,13 @@ public class DeleteObjectPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_objectId);
-		packetWriter.writeC(0x01); // Что-то странное. Если объект сидит верхом то при 0 он сперва будет ссажен,
-		// при 1 просто пропадет.
+		packetWriter.writeC(0x00); // Что-то странное. Если объект сидит верхом то при 0 он сперва будет ссажен, при 1 просто пропадет.
 		return true;
 	}
 
 	@Override
 	public String getType()
 	{
-		return super.getType() + " " + GameObjectsStorage.findObject(_objectId) + " (" + _objectId + ")";
+		return "[S] " + getClass().getSimpleName() + " " + GameObjectsStorage.findObject(_objectId) + " (" + _objectId + ")";
 	}
 }

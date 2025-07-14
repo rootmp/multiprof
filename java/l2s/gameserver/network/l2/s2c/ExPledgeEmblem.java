@@ -26,7 +26,7 @@ public class ExPledgeEmblem implements IClientOutgoingPacket
 		packetWriter.writeD(_crestPart);
 		packetWriter.writeD(_totalSize);
 		packetWriter.writeD(_data.length);
-		writeB(_data);
+		packetWriter.writeB(_data);
 		return true;
 	}
 }

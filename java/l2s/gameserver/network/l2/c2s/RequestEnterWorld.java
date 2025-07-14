@@ -7,6 +7,7 @@ import l2s.commons.network.PacketReader;
 import l2s.gameserver.Announcements;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.MailDAO;
+import l2s.gameserver.data.clientDat.CollectionsData;
 import l2s.gameserver.data.htm.HtmCache;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.instancemanager.CoupleManager;
@@ -91,12 +92,10 @@ import l2s.gameserver.network.l2.s2c.ReciveVipInfo;
 import l2s.gameserver.network.l2.s2c.RelationChangedPacket;
 import l2s.gameserver.network.l2.s2c.RidePacket;
 import l2s.gameserver.network.l2.s2c.ShortCutInitPacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.UserInfo;
 import l2s.gameserver.network.l2.s2c.collection.ExCollectionActiveEvent;
-import l2s.gameserver.network.l2.s2c.collection.ExCollectionInfo;
 import l2s.gameserver.network.l2.s2c.enchant.ExEnchantChallengePointInfo;
 import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemInfo;
 import l2s.gameserver.network.l2.s2c.magiclamp.ExMagicLampExpInfo;
@@ -491,10 +490,8 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			activeChar.sendPacket(ExNotifyPremiumItem.STATIC);
 		}
 
-		for (int i = 1; i < 8; i++)
-		{
-			activeChar.sendPacket(new ExCollectionInfo(activeChar, i));
-		}
+		CollectionsData.getInstance().sendExCollectionInfo(activeChar);
+		
 		activeChar.sendPacket(new ExCollectionActiveEvent());
 		activeChar.sendPacket(new ExOlympiadInfo(activeChar));
 		activeChar.sendPacket(new ExSteadyBoxUIInit(activeChar));

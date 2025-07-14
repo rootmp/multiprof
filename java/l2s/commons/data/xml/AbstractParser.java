@@ -32,6 +32,9 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 		_reader.setErrorHandler(new ErrorHandlerImpl(this));
 	}
 
+	protected void afterParsing()
+	{}
+	
 	public abstract File getXMLPath();
 
 	public File getCustomXMLPath()
@@ -148,6 +151,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 
 		parse();
 		_holder.process();
+		afterParsing();
+		_holder.afterParsing();
 		_holder.log();
 	}
 

@@ -391,8 +391,8 @@ public class RequestExMultiEnchantItemList implements IClientIncomingPacket
 
 			player.sendItemList(false);
 			player.broadcastUserInfo(true);
-			player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(player, true));
-
+			//player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(player, true));
+			player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(ItemFunctions.getEnchantProbInfo(player, true, false)));
 			if (_useLateAnnounce == 1)
 			{
 				player.setMultiSuccessEnchantList(_successEnchant);

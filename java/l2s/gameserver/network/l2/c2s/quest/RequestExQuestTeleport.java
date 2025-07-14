@@ -26,8 +26,8 @@ public class RequestExQuestTeleport implements IClientIncomingPacket
 			return;
 
 		
-		Quest quest = QuestHolder.getInstance().getQuest(ID);
+	/*	Quest quest = QuestHolder.getInstance().getQuest(ID);
 		if(quest!=null && quest.checkStartCondition(activeChar))
-			quest.QuestTeleport(activeChar);
+			quest.QuestTeleport(activeChar);*/
 	}
 }

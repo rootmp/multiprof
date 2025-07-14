@@ -77,7 +77,7 @@ public class SystemMessagePacket extends SysMsgContainer<SystemMessagePacket>
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeElements();
+		writeElements(packetWriter);
 		return true;
 	}
 }

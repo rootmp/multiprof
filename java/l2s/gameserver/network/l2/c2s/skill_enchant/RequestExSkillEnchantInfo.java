@@ -32,7 +32,7 @@ public class RequestExSkillEnchantInfo implements IClientIncomingPacket
 		
 		if (_skillId <= 0 || _skillLevel <= 0 || _skillSubLevel < 0)
 			return;
-
+/*
 		final Skill skill = SkillHolder.getInstance().getSkill(_skillId, _skillLevel, _skillSubLevel);
 		if (skill == null || skill.getId() != _skillId)
 			return;
@@ -42,6 +42,6 @@ public class RequestExSkillEnchantInfo implements IClientIncomingPacket
 		if(skill_p == null || skill_p.getLevel() != _skillLevel || skill_p.getSubLevel() != _skillSubLevel)
 			return;
 
-		player.sendPacket(new ExSkillEnchantInfo(player.getSkillEnchant().findEnchant(_skillId, _skillSubLevel)));
+		player.sendPacket(new ExSkillEnchantInfo(player.getSkillEnchant().findEnchant(_skillId, _skillSubLevel)));*/
 	}
 }

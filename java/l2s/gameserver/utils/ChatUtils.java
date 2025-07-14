@@ -12,12 +12,49 @@ import l2s.gameserver.network.l2.components.ChatType;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.NpcString;
-import l2s.gameserver.network.l2.s2c.ExRequestInviteParty;
 import l2s.gameserver.network.l2.s2c.NSPacket;
 import l2s.gameserver.network.l2.s2c.SayPacket2;
 
 public class ChatUtils
 {
+	public static void shoutInvParty(Player activeChar, IBroadcastPacket cs)
+	{
+		GameObject activeObject = activeChar.getObservePoint();
+		if(activeObject == null)
+			activeObject = activeChar;
+
+		int rx = MapUtils.regionX(activeObject);
+		int ry = MapUtils.regionY(activeObject);
+		if(activeChar.getVarBoolean("blockChatSpam"))
+			return;
+		
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
+		{
+			if(player == activeChar || player.isBlockAll())
+				continue;
+
+			if(player.canSeeAllShouts() && !player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+			{
+				player.sendPacket(cs);
+				continue;
+			}
+
+			GameObject obj = player.getObservePoint();
+			if(obj == null)
+				obj = player;
+
+			if(activeObject.getReflection() != obj.getReflection())
+				continue;
+
+			int tx = MapUtils.regionX(obj) - rx;
+			int ty = MapUtils.regionY(obj) - ry;
+
+			if(tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeObject.isInRangeZ(obj, Config.CHAT_RANGE))
+				if(!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+					player.sendPacket(cs);
+		}
+	}
+	
 	public static void sayInvParty(Player activeChar, IBroadcastPacket cs)
 	{
 		if(activeChar.getVarBoolean("blockChatSpam"))

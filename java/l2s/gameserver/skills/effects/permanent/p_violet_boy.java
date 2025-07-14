@@ -5,7 +5,7 @@ import l2s.gameserver.handler.effects.EffectHandler;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.templates.skill.EffectTemplate;
 
 /**
@@ -31,7 +31,7 @@ public final class p_violet_boy extends EffectHandler
 		if (player != null)
 		{
 			player.getFlags().getVioletBoy().start(this);
-			player.sendStatusUpdate(true, true, StatusUpdatePacket.PVP_FLAG);
+			player.sendStatusUpdate(true, true, UpdateType.VCP_ISGUILTY);
 			player.broadcastRelation();
 		}
 	}

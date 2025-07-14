@@ -20,14 +20,21 @@ public final class MissionLevelRewardsHolder extends AbstractHolder
 
 	private final Map<Integer, MissionLevelRewardTemplate> _rewards = new TreeMap<>();
 
-	public void addReward(MissionLevelRewardTemplate rewardTemplate)
+	public Map<Integer, MissionLevelRewardTemplate> getRewards()
 	{
-		_rewards.put(rewardTemplate.getMonth(), rewardTemplate);
+		return _rewards;
 	}
 
-	public MissionLevelRewardTemplate getRewardsInfo(int month)
+	public void addReward(MissionLevelRewardTemplate rewardTemplate)
 	{
-		return _rewards.get(month);
+		int key = rewardTemplate.getYear() * 100 + rewardTemplate.getMonth();
+		_rewards.put(key, rewardTemplate);
+	}
+
+	public MissionLevelRewardTemplate getRewardsInfo(int month, int year)
+	{
+		int key = year * 100 + month;
+		return _rewards.get(key);
 	}
 
 	@Override

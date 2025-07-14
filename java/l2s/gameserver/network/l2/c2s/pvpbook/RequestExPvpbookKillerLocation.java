@@ -1,11 +1,10 @@
 package l2s.gameserver.network.l2.c2s.pvpbook;
 
-import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.Pvpbook;
-import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.GameClient;
 import l2s.commons.network.PacketReader;
+import l2s.gameserver.model.Player;
+import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookList;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpbookKillerLocation;
@@ -17,7 +16,7 @@ public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		killerName = packet.readString();
+		killerName = packet.readSizedString();
 		return true;
 	}
 
@@ -28,19 +27,20 @@ public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 		if (activeChar == null)
 			return;
 
-		if (activeChar.getPvpbook().getLocationShowCount() <= 0)
-		{
-			activeChar.sendActionFailed();
-			return;
-		}
 
-		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName);
+		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 1);
 		if (pvpbookInfo == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
+		if (pvpbookInfo.getLocationShowCount() <= 0)
+		{
+			activeChar.sendActionFailed();
+			return;
+		}
+		
 		Player killerPlayer = pvpbookInfo.getKiller();
 		if (killerPlayer == null || !killerPlayer.isOnline())
 		{
@@ -54,13 +54,10 @@ public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 			return;
 		}
 
-		if (!activeChar.reduceAdena(Pvpbook.LOCATION_SHOW_PRICE, true))
-		{
-			activeChar.sendPacket(SystemMsg.NOT_ENOUGH_MONEY_TO_USE_THE_FUNCTION);
+		if(!activeChar.getPvpbook().reduceAdenaLocationShowCount(pvpbookInfo))
 			return;
-		}
 
-		activeChar.getPvpbook().reduceLocationShowCount();
+		pvpbookInfo.reduceLocationShowCount();
 		activeChar.sendPacket(new ExPvpBookList(activeChar));
 		activeChar.sendPacket(new ExPvpbookKillerLocation(pvpbookInfo.getKillerName(), killerPlayer.getLoc()));
 	}

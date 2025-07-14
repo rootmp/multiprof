@@ -8,19 +8,17 @@ import l2s.gameserver.skills.enums.SkillEntryType;
 
 /**
  * @author Bonux
- **/
+**/
 public class Ensoul
 {
 	private final int _id;
-	private final int _level;
 	private final int _itemId;
 	private final int _extractionItemId;
 	private final List<SkillEntry> _skills = new ArrayList<SkillEntry>();
 
-	public Ensoul(int id, int level, int itemId, int extractionItemId)
+	public Ensoul(int id, int itemId, int extractionItemId)
 	{
 		_id = id;
-		_level = level;
 		_itemId = itemId;
 		_extractionItemId = extractionItemId;
 	}
@@ -28,11 +26,6 @@ public class Ensoul
 	public int getId()
 	{
 		return _id;
-	}
-
-	public int getLevel()
-	{
-		return _level;
 	}
 
 	public int getItemId()
@@ -48,7 +41,7 @@ public class Ensoul
 	public void addSkill(int id, int level)
 	{
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.ITEM, id, level);
-		if (skillEntry != null)
+		if(skillEntry != null)
 			_skills.add(skillEntry);
 	}
 

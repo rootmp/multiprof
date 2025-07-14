@@ -5,11 +5,15 @@ import java.lang.reflect.Modifier;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+
+import org.apache.commons.lang3.tuple.Pair;
 
 import l2s.commons.annotations.Nullable;
 import l2s.commons.util.Rnd;
@@ -410,4 +414,26 @@ public class Util
 
 		return dAcquireExpRate / 2.6;
 	}
+
+	public static Map<Integer, Pair<Integer, Integer>> parseExpGrade(String expGradeStr) 
+	{
+		Map<Integer, Pair<Integer, Integer>> expGradeMap = new HashMap<>();
+		Pattern pattern = Pattern.compile("\\{(\\d+;\\d+;\\d+)\\}");
+		Matcher matcher = pattern.matcher(expGradeStr);
+
+		while (matcher.find()) 
+		{
+			String[] parts = matcher.group(1).split(";");
+			if (parts.length == 3) 
+			{
+				int key = Integer.parseInt(parts[0]);
+				int value1 = Integer.parseInt(parts[1]);
+				int value2 = Integer.parseInt(parts[2]);
+				Pair<Integer, Integer> valuePair = Pair.of(value1, value2);
+				expGradeMap.put(key, valuePair);
+			}
+		}
+		return expGradeMap;
+	}
+
 }

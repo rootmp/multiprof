@@ -15,14 +15,16 @@ public class MissionLevelRewardTemplate
 	private final int _year;
 	private final int _maxRewardLvl;
 	private final ItemData _finalReward;
+	private final ItemData _bonusReward;
 	private List<MissionLevelRewardData> _rewardData = new ArrayList<>();
 
-	public MissionLevelRewardTemplate(int month, int year, int maxRewardLvl, ItemData finalReward)
+	public MissionLevelRewardTemplate(int month, int year, int maxRewardLvl, ItemData finalReward, ItemData bonusReward)
 	{
 		_month = month;
 		_year = year;
 		_maxRewardLvl = maxRewardLvl;
 		_finalReward = finalReward;
+		_bonusReward = bonusReward;
 	}
 
 	public int getMonth()
@@ -66,5 +68,10 @@ public class MissionLevelRewardTemplate
 			}
 		}
 		return size;
+	}
+
+	public ItemData getBonusReward()
+	{
+		return _bonusReward;
 	}
 }

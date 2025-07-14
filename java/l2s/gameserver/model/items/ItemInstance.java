@@ -2189,4 +2189,9 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	{
   
 	}
+
+	public void restoreEnsoul()
+	{
+		ItemsEnsoulDAO.getInstance().restore(this);
+	}
 }

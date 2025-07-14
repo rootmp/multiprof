@@ -21,7 +21,7 @@ public class ConfirmDlgPacket extends SysMsgContainer<ConfirmDlgPacket>
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		writeElements();
+		writeElements(packetWriter);
 		packetWriter.writeD(_time);
 		packetWriter.writeD(_requestId);
 		return true;

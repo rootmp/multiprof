@@ -1,7 +1,9 @@
 package l2s.gameserver.data.xml.parser;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.dom4j.Element;
 
@@ -32,7 +34,7 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 	@Override
 	public File getXMLPath()
 	{
-		return new File(Config.DATAPACK_ROOT, "data/parser/essence/mission_level_rewards.xml");
+		return new File(Config.DATAPACK_ROOT, "data/mission_level_rewards.xml");
 	}
 
 	@Override
@@ -47,14 +49,18 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 		for (Iterator<Element> iterator = rootElement.elementIterator("date_info"); iterator.hasNext();)
 		{
 			Element firstElement = iterator.next();
-			int month = parseInt(firstElement, "month");
-			int year = parseInt(firstElement, "year");
+			String[] months = firstElement.attributeValue("month").split(";");
+			String[] years = firstElement.attributeValue("year").split(";");
+
 			int maxRewardLvl = parseInt(firstElement, "max_reward_lvl");
 			int finalRewardId = parseInt(firstElement, "final_reward_id");
 			int finalRewardCount = parseInt(firstElement, "final_reward_count");
 			ItemData finalReward = new ItemData(finalRewardId, finalRewardCount);
-			MissionLevelRewardTemplate template = new MissionLevelRewardTemplate(month, year, maxRewardLvl, finalReward);
+			String[] bonus_reward = firstElement.attributeValue("bonus_reward", "49674;10").split(";");
 
+			ItemData bonusReward = new ItemData(Integer.parseInt(bonus_reward[0]), Integer.parseInt(bonus_reward[1]));
+
+			List<MissionLevelRewardData> rewards = new ArrayList<>();
 			for (Iterator<Element> secondIterator = firstElement.elementIterator("points"); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
@@ -65,10 +71,23 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 				int additionalRewardId = parseInt(secondElement, "additional_reward_id", 0);
 				int additionalRewardCount = parseInt(secondElement, "additional_reward_count", 0);
 
-				template.addReward(new MissionLevelRewardData(level, value, baseRewardId, baseRewardCount, additionalRewardId, additionalRewardCount));
+				rewards.add(new MissionLevelRewardData(level, value, baseRewardId, baseRewardCount, additionalRewardId, additionalRewardCount));
 			}
 
-			getHolder().addReward(template);
+			for (String mStr : months)
+			{
+				int month = Integer.parseInt(mStr.trim());
+				for (String yStr : years)
+				{
+					int year = Integer.parseInt(yStr.trim());
+
+					MissionLevelRewardTemplate template = new MissionLevelRewardTemplate(month, year, maxRewardLvl, finalReward, bonusReward);
+					for (MissionLevelRewardData r : rewards)
+						template.addReward(r);
+
+					getHolder().addReward(template);
+				}
+			}
 		}
 	}
 }

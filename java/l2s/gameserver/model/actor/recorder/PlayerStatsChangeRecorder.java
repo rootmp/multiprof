@@ -13,7 +13,7 @@ import l2s.gameserver.network.l2.s2c.ExStorageMaxCountPacket;
 import l2s.gameserver.network.l2.s2c.ExUserInfoAbnormalVisualEffect;
 import l2s.gameserver.network.l2.s2c.ExUserInfoEquipSlot;
 import l2s.gameserver.network.l2.s2c.ExUserInfoInvenWeight;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
+import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.skills.enums.SkillMagicType;
 
 /**
@@ -190,7 +190,7 @@ public final class PlayerStatsChangeRecorder extends CharStatsChangeRecorder<Pla
 			_activeChar.sendPacket(new ExUserInfoInvenWeight(_activeChar));
 
 		if ((_changes & BROADCAST_KARMA) == BROADCAST_KARMA)
-			_activeChar.sendStatusUpdate(true, false, StatusUpdatePacket.KARMA);
+			_activeChar.sendStatusUpdate(true, false, UpdateType.VCP_CRIMINAL_RATE);
 
 		if ((_changes & SEND_STORAGE_INFO) == SEND_STORAGE_INFO)
 			_activeChar.sendPacket(new ExStorageMaxCountPacket(_activeChar));

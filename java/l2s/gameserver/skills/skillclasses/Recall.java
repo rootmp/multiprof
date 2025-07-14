@@ -1,5 +1,6 @@
 package l2s.gameserver.skills.skillclasses;
 
+import l2s.commons.util.Rnd;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.instancemanager.ReflectionManager;
 import l2s.gameserver.model.Creature;
@@ -267,7 +268,9 @@ public class Recall extends Skill
 
 		if (_toflag)
 		{
-			player.teleToLocation(player.bookmarkLocation, ReflectionManager.MAIN);
+			Location loc = Rnd.get(player.bookmarkLocation.getLocations());
+			
+			player.teleToLocation(loc, ReflectionManager.MAIN);
 			player.bookmarkLocation = null;
 			return;
 		}

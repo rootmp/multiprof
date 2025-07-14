@@ -2,7 +2,7 @@ package l2s.gameserver.network.l2.c2s;
 
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.FlyMove;
+//import l2s.gameserver.model.actor.instances.player.FlyMove;
 import l2s.gameserver.network.l2.GameClient;
 
 public final class RequestFlyMove implements IClientIncomingPacket
@@ -23,10 +23,10 @@ public final class RequestFlyMove implements IClientIncomingPacket
 		if(activeChar == null)
 			return;
 
-		final FlyMove flyMove = activeChar.getFlyMove();
+	/*	final FlyMove flyMove = activeChar.getFlyMove();
 		if(flyMove == null)
 			return;
 
-		flyMove.move(_pointId);
+		flyMove.move(_pointId);*/
 	}
 }

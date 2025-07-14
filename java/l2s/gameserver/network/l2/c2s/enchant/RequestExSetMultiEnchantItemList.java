@@ -6,6 +6,7 @@ import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.s2c.enchant.ExChangedEnchantTargetItemProbabilityList;
 import l2s.gameserver.network.l2.s2c.enchant.ExResultSetMultiEnchantItemList;
+import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExSetMultiEnchantItemList implements IClientIncomingPacket
 {
@@ -43,8 +44,7 @@ public class RequestExSetMultiEnchantItemList implements IClientIncomingPacket
 		}
 		
 		player.sendPacket(new ExResultSetMultiEnchantItemList(0));
-		//507 player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(ItemFunctions.getEnchantProbInfo(player, true, true)));
-		player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(player, true));
+		player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(ItemFunctions.getEnchantProbInfo(player, true, false)));
 	}
 }
 		

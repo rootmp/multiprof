@@ -141,7 +141,7 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 			item.setAppearanceStoneId(rset.getInt(16));
 			item.setVisualId(rset.getInt(17));
 			item.setBlessed(rset.getBoolean(18));
-			item.restoreEnsoul(false);
+			item.restoreEnsoul();
 		}
 
 		return item;

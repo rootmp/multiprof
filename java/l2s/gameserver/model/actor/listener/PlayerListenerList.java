@@ -9,19 +9,29 @@ import l2s.gameserver.listener.actor.player.OnExpReceiveListener;
 import l2s.gameserver.listener.actor.player.OnFishingListener;
 import l2s.gameserver.listener.actor.player.OnLearnCustomSkillListener;
 import l2s.gameserver.listener.actor.player.OnLevelChangeListener;
+import l2s.gameserver.listener.actor.player.OnNewEnchantItemListener;
 import l2s.gameserver.listener.actor.player.OnOlympiadFinishBattleListener;
 import l2s.gameserver.listener.actor.player.OnParticipateInCastleSiegeListener;
 import l2s.gameserver.listener.actor.player.OnPickupItemListener;
 import l2s.gameserver.listener.actor.player.OnPlayerChatMessageReceive;
+import l2s.gameserver.listener.actor.player.OnPlayerClanContributions;
 import l2s.gameserver.listener.actor.player.OnPlayerClanInviteListener;
 import l2s.gameserver.listener.actor.player.OnPlayerClanLeaveListener;
+import l2s.gameserver.listener.actor.player.OnPlayerCollectionComplete;
+import l2s.gameserver.listener.actor.player.OnPlayerDailymissionsComplete;
 import l2s.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2s.gameserver.listener.actor.player.OnPlayerEquipListener;
 import l2s.gameserver.listener.actor.player.OnPlayerExitListener;
+import l2s.gameserver.listener.actor.player.OnPlayerNewHennaPotenEnchant;
 import l2s.gameserver.listener.actor.player.OnPlayerPartyInviteListener;
 import l2s.gameserver.listener.actor.player.OnPlayerPartyLeaveListener;
+import l2s.gameserver.listener.actor.player.OnPlayerRandomCraft;
+import l2s.gameserver.listener.actor.player.OnPlayerSetAppearance;
 import l2s.gameserver.listener.actor.player.OnPlayerSummonServitorListener;
+import l2s.gameserver.listener.actor.player.OnPlayerUpVipLevel;
 import l2s.gameserver.listener.actor.player.OnPurgeRewardListener;
 import l2s.gameserver.listener.actor.player.OnQuestFinishListener;
+import l2s.gameserver.listener.actor.player.OnRefineItemListener;
 import l2s.gameserver.listener.actor.player.OnSocialActionListener;
 import l2s.gameserver.listener.actor.player.OnTeleportListener;
 import l2s.gameserver.listener.actor.player.OnTeleportedListener;
@@ -38,6 +48,7 @@ import l2s.gameserver.model.entity.events.impl.CastleSiegeEvent;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.c2s.RequestActionUse.Action;
 import l2s.gameserver.network.l2.components.ChatType;
+import l2s.gameserver.templates.item.support.AppearanceStone;
 
 /**
  * @author G1ta0
@@ -395,4 +406,150 @@ public class PlayerListenerList extends CharListenerList
 				if (QuestionMarkListener.class.isInstance(listener))
 					((QuestionMarkListener) listener).onQuestionMarkClicked(getActor(), questionMarkId);
 	}
+
+	public void onPlayerCollectionComplete(int collectionId)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerCollectionComplete.class.isInstance(listener))
+					((OnPlayerCollectionComplete) listener).onCollectionComplete(getActor(), collectionId);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerCollectionComplete.class.isInstance(listener))
+					((OnPlayerCollectionComplete) listener).onCollectionComplete(getActor(), collectionId);
+	}
+	
+
+	public void onPlayerDailymissionsComplete(int dailymissionsId)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerDailymissionsComplete.class.isInstance(listener))
+					((OnPlayerDailymissionsComplete) listener).onDailymissionsComplete(getActor(), dailymissionsId);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerDailymissionsComplete.class.isInstance(listener))
+					((OnPlayerDailymissionsComplete) listener).onDailymissionsComplete(getActor(), dailymissionsId);
+	}
+	
+	public void onEquipItem(ItemInstance item)
+	{
+		if (!global.getListeners().isEmpty())
+			for (Listener<Creature> listener : global.getListeners())
+				if (OnPlayerEquipListener.class.isInstance(listener))
+					((OnPlayerEquipListener) listener).onEquipItem(getActor(), item);
+
+		if (!getListeners().isEmpty())
+			for (Listener<Creature> listener : getListeners())
+				if (OnPlayerEquipListener.class.isInstance(listener))
+					((OnPlayerEquipListener) listener).onEquipItem(getActor(), item);
+	}
+	
+	public void onUnEquipItem(ItemInstance item)
+	{
+		if (!global.getListeners().isEmpty())
+			for (Listener<Creature> listener : global.getListeners())
+				if (OnPlayerEquipListener.class.isInstance(listener))
+					((OnPlayerEquipListener) listener).onUnEquipItem(getActor(), item);
+
+		if (!getListeners().isEmpty())
+			for (Listener<Creature> listener : getListeners())
+				if (OnPlayerEquipListener.class.isInstance(listener))
+					((OnPlayerEquipListener) listener).onUnEquipItem(getActor(), item);
+	}
+
+	public void onNewEnchantItem(ItemInstance item, boolean success)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnNewEnchantItemListener.class.isInstance(listener))
+					((OnNewEnchantItemListener) listener).onNewEnchantItem(getActor(), item, success);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnNewEnchantItemListener.class.isInstance(listener))
+					((OnNewEnchantItemListener) listener).onNewEnchantItem(getActor(), item, success);
+	}
+
+	public void onPlayerClanContributions(int type)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerClanContributions.class.isInstance(listener))
+					((OnPlayerClanContributions) listener).onClanContributions(getActor(), type);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerClanContributions.class.isInstance(listener))
+					((OnPlayerClanContributions) listener).onClanContributions(getActor(), type);
+	}
+
+	public void onRefineItem(ItemInstance item)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnRefineItemListener.class.isInstance(listener))
+					((OnRefineItemListener) listener).onRefineItem(getActor(), item);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnRefineItemListener.class.isInstance(listener))
+					((OnRefineItemListener) listener).onRefineItem(getActor(), item);
+	}
+
+	public void onPlayerNewHennaPotenEnchant(int slot, int old_level, int enchantLevel)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerNewHennaPotenEnchant.class.isInstance(listener))
+					((OnPlayerNewHennaPotenEnchant) listener).onPotenEnchant(getActor(), slot, old_level, enchantLevel);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerNewHennaPotenEnchant.class.isInstance(listener))
+					((OnPlayerNewHennaPotenEnchant) listener).onPotenEnchant(getActor(), slot, old_level, enchantLevel);
+	}
+	
+	public void onPlayerRandomCraft(int itemId, long itemCount)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerRandomCraft.class.isInstance(listener))
+					((OnPlayerRandomCraft) listener).randomCraftSuccessful(getActor(),itemId, itemCount);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerRandomCraft.class.isInstance(listener))
+					((OnPlayerRandomCraft) listener).randomCraftSuccessful(getActor(),itemId, itemCount);
+	}
+	
+	
+	public void onPlayerUpVipLevel(int level_old, int level_new)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerUpVipLevel.class.isInstance(listener))
+					((OnPlayerUpVipLevel) listener).upVipLevel(getActor(),level_old, level_new);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerUpVipLevel.class.isInstance(listener))
+					((OnPlayerUpVipLevel) listener).upVipLevel(getActor(),level_old, level_new);
+	}
+
+	public void onPlayerSetAppearance(ItemInstance targetItem, AppearanceStone appearanceStone)
+	{
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnPlayerSetAppearance.class.isInstance(listener))
+					((OnPlayerSetAppearance) listener).setStone(getActor(), targetItem ,appearanceStone);
+
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnPlayerSetAppearance.class.isInstance(listener))
+					((OnPlayerSetAppearance) listener).setStone(getActor(),targetItem,appearanceStone);
+	}
+
 }

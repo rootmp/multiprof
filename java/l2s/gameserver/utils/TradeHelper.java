@@ -9,6 +9,7 @@ import l2s.commons.dbutils.DbUtils;
 import l2s.commons.math.SafeMath;
 import l2s.commons.string.StringArrayUtils;
 import l2s.gameserver.Config;
+import l2s.gameserver.dao.CharacterVariablesDAO;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.instancemanager.OfflineBufferManager;
 import l2s.gameserver.instancemanager.OfflineBufferManager.BufferData;
@@ -21,7 +22,9 @@ import l2s.gameserver.model.Zone;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.components.SystemMsg;
+import l2s.gameserver.network.l2.components.hwid.HwidHolder;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
+import l2s.gameserver.security.HwidUtils;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.templates.item.ItemTemplate;
 
@@ -309,7 +312,15 @@ public final class TradeHelper
 				objectId = rset.getInt("obj_id");
 				expireTimeSecs = rset.getInt("value");
 
-				p = Player.restore(objectId, false);
+				String lastHwid = CharacterVariablesDAO.getInstance().getVarFromPlayer(objectId, "last_hwid");
+				HwidHolder hwidHolder = lastHwid != null ? HwidUtils.getInstance().createHwidHolder(lastHwid) : null;
+				if(hwidHolder == null)
+				{
+					//_log.info("Offline trader {} don't have last_hwid variable.", objectId);
+					continue;
+				}
+				
+				p = Player.restore(objectId, hwidHolder);
 				if (p == null)
 					continue;
 
@@ -394,7 +405,15 @@ public final class TradeHelper
 				skills = StringArrayUtils.stringToIntArray(rset.getString("skills"), ",");
 				title = rset.getString("title");
 
-				p = Player.restore(objectId, false);
+				String lastHwid = CharacterVariablesDAO.getInstance().getVarFromPlayer(objectId, "last_hwid");
+				HwidHolder hwidHolder = lastHwid != null ? HwidUtils.getInstance().createHwidHolder(lastHwid) : null;
+				if(hwidHolder == null)
+				{
+					//_log.info("Offline trader {} don't have last_hwid variable.", objectId);
+					continue;
+				}
+				
+				p = Player.restore(objectId, hwidHolder);
 				if (p == null)
 					continue;
 

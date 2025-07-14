@@ -26,7 +26,7 @@ public class RequestExVipAttendanceCheck implements IClientIncomingPacket
 
 		if(player.getVipAttendance().daysPassedSinceStartDate() >= cDay && cDay <= 28)
 		{
-			if(ItemFunctions.deleteItem(player, 91663, 100, "RequestExVipAttendanceCheck"))
+			if(ItemFunctions.deleteItem(player, 91663, 100))
 			{
 				player.getVipAttendance().IncAttendanceDay();
 				player.sendPacket(new ExVipAttendanceCheck(1));

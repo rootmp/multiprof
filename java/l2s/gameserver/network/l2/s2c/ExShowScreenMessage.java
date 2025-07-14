@@ -90,7 +90,7 @@ public class ExShowScreenMessage extends NpcStringContainer
 		// otherwise no effect
 		packetWriter.writeD(_time); // время отображения сообщения в милисекундах
 		packetWriter.writeD(0x01); // Угасание
-		writeElements();
+		writeElements(packetWriter);
 		return true;
 	}
 }

@@ -139,7 +139,7 @@ public class AdminMonsterRace implements IAdminCommandHandler
 				obj = MonsterRace.getInstance().getMonsters()[i];
 				// FIXME i don't know, if it's needed (Styx)
 				// L2World.removeObject(obj);
-				activeChar.broadcastPacket(new DeleteObjectPacket(obj));
+				activeChar.broadcastPacket(new DeleteObjectPacket(activeChar,obj));
 
 			}
 			state = -1;

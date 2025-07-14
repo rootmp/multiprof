@@ -1,21 +1,16 @@
 package l2s.gameserver.network.l2.s2c.randomcraft;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
-import l2s.gameserver.templates.RandomCraftInfo;
+import l2s.gameserver.templates.randomCraft.RandomCraftRewardItem;
 
-/**
- * @author nexvill
- */
 public class ExCraftRandomInfo implements IClientOutgoingPacket
 {
-	private Player _player;
-	private Map<Integer, RandomCraftInfo> _randomCraftInfo = new HashMap<>();
-
+	private final Player _player;
+	
 	public ExCraftRandomInfo(Player player)
 	{
 		_player = player;
@@ -24,50 +19,35 @@ public class ExCraftRandomInfo implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_player.getRandomCraftList().size() == 0)
+		final List<RandomCraftRewardItem> rewards = _player.getRandomCraft().getRewards();
+		int size = 5;
+		packetWriter.writeD(size); // size
+		for (int i = 0; i < rewards.size(); i++)
 		{
-			_player.generateRandomCraftList();
-		}
-
-		if (_player.getCraftPoints() > 0)
-		{
-			_randomCraftInfo = _player.getRandomCraftList();
-
-			if (_player.getVarBoolean("didCraft", true))
+			final RandomCraftRewardItem holder = rewards.get(i);
+			if ((holder != null) && (holder.getItemId() != 0))
 			{
-				packetWriter.writeD(5);
-				for (int i = 0; i < 5; i++)
-				{
-					packetWriter.writeC(0);
-					packetWriter.writeD(0);
-					packetWriter.writeD(0);
-					packetWriter.writeQ(0);
-				}
-
-				return true;
+				packetWriter.writeC(holder.isLocked() ? 1 : 0); // Locked
+				packetWriter.writeD(holder.getLockLeft()); // Rolls it will stay locked
+				packetWriter.writeD(holder.getItemId()); // Item id
+				packetWriter.writeQ(holder.getItemCount()); // Item count
 			}
-
-			packetWriter.writeD(5);
-			for (int i : _randomCraftInfo.keySet())
-			{
-				RandomCraftInfo info = _randomCraftInfo.get(i);
-
-				packetWriter.writeC(info.isLocked()); // locked slot or no
-				packetWriter.writeD(info.getRefreshToUnlockCount()); // refresh count to unlock slot (max 20)
-				packetWriter.writeD(info.getId()); // item id
-				packetWriter.writeQ(info.getCount()); // item count
-			}
-		}
-		else
-		{
-			packetWriter.writeD(5);
-			for (int i = 0; i < 5; i++)
+			else
 			{
 				packetWriter.writeC(0);
 				packetWriter.writeD(0);
 				packetWriter.writeD(0);
 				packetWriter.writeQ(0);
 			}
+			size--;
+		}
+		// Write missing
+		for (int i = size; i > 0; i--)
+		{
+			packetWriter.writeC(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeQ(0);
 		}
 		return true;
 	}

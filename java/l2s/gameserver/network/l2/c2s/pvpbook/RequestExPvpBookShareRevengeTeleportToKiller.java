@@ -1,33 +1,33 @@
 package l2s.gameserver.network.l2.c2s.pvpbook;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.instancemanager.ReflectionManager;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
+import l2s.gameserver.model.instances.MonsterInstance;
 import l2s.gameserver.network.l2.GameClient;
-import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
-import l2s.gameserver.skills.skillclasses.Call;
 
 /**
  * @author nexvill
  */
-public class RequestExPvpBookShareRevengeTeleportToKiller implements IClientIncomingPacket
+public class RequestExPvpbookShareRevengeTeleportToKiller implements IClientIncomingPacket
 {
 	private static final SkillEntry HIDE_SKILLENTRY = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 922, 1);
 
+	@SuppressWarnings("unused")
 	private String killedName;
 	private String killerName;
 
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		killedName = packet.readString();
-		killerName = packet.readString();
+		killedName = packet.readSizedString();
+		killerName = packet.readSizedString();
 		return true;
 	}
 
@@ -38,19 +38,18 @@ public class RequestExPvpBookShareRevengeTeleportToKiller implements IClientInco
 		if (activeChar == null)
 			return;
 
-		if (activeChar.getPvpbook().getTeleportCount() <= 0)
-		{
-			activeChar.sendActionFailed();
-			return;
-		}
-
-		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName);
+		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 1);
 		if (pvpbookInfo == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
+		if (pvpbookInfo.getTeleportCount() <= 0)
+		{
+			activeChar.sendActionFailed();
+			return;
+		}
 		Player killerPlayer = pvpbookInfo.getKiller();
 		if (killerPlayer == null || !killerPlayer.isOnline())
 		{
@@ -58,26 +57,46 @@ public class RequestExPvpBookShareRevengeTeleportToKiller implements IClientInco
 			return;
 		}
 
-		if (!killerPlayer.getReflection().isMain())
+		if (killerPlayer.isInPeaceZone() || !killerPlayer.getReflection().isMain() || !activeChar.getReflection().isMain())
+		{
+			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
+			return;
+		}
+		
+		if(killerPlayer.isInBoat()|| killerPlayer.isInOlympiadMode() || killerPlayer.isInObserverMode() || killerPlayer.isFlying())
+		{
+			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
+			return;
+		}
+		
+		if(activeChar.isFlying() || activeChar.isOutOfControl()/* || activeChar.isInZone(ZoneType.hellbound)*/ || activeChar.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
 
-		if (Call.canSummonHere(killerPlayer) != null || Call.canBeSummoned(activeChar) != null)
+		if (activeChar.isInBoat() /*|| killerPlayer.isInZone(ZoneType.hellbound)*/ || !checkRaid(killerPlayer))
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
 
-		if (!activeChar.getInventory().destroyItemByItemId(91663, Pvpbook.TELEPORT_PRICE))
-		{
-			activeChar.sendPacket(SystemMsg.NOT_ENOUGH_L2_COINS);
+		if(!activeChar.getPvpbook().reduceLcoinTeleportCount(pvpbookInfo))
 			return;
-		}
+		
 
 		HIDE_SKILLENTRY.getEffects(activeChar, activeChar);
-		activeChar.getPvpbook().reduceTeleportCount();
+		pvpbookInfo.reduceTeleportCount();
 		activeChar.teleToLocation(Location.findPointToStay(killerPlayer, 100, 150), ReflectionManager.MAIN);
+	}
+	
+	private boolean checkRaid(Player killerPlayer)
+	{
+		for(MonsterInstance m : killerPlayer.getAroundMonsters(3000, 300))
+		{
+			if(m.isRaid()&& !m.isDead()&& m.isVisible())
+				return false;
+		}
+		return true;
 	}
 }

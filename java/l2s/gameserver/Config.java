@@ -3256,6 +3256,12 @@ public class Config
 	public static boolean VIP_ATTENDANCE_REWARDS_REWARD_ONLY_PREMIUM = false;
 
 	public static final String WORLD_EXCHANGE_CONFIG_FILE = "config/WorldExchange.properties";
+
+	public static final boolean DISABLE_SHOPPING_IN_THE_STORE = false;
+
+	public static final int CLAN_EXP_RATE = 1;
+
+	public static boolean APPEARANCE_STONE_RETURT_STONE = false;
 	
 	public static void loadWorldExchangeSettings()
 	{

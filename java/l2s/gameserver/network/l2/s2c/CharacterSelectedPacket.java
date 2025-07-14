@@ -72,7 +72,7 @@ public class CharacterSelectedPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0);
 		packetWriter.writeD(0);
 
-		writeB(new byte[64]);
+		packetWriter.writeB(new byte[64]);
 		packetWriter.writeD(0);
 		return true;
 	}

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 
 import l2s.commons.network.PacketReader;
@@ -13,23 +14,22 @@ import l2s.gameserver.templates.item.support.EnsoulFee;
 import l2s.gameserver.templates.item.support.EnsoulFee.EnsoulFeeInfo;
 import l2s.gameserver.templates.item.support.EnsoulFee.EnsoulFeeItem;
 import l2s.gameserver.utils.ItemFunctions;
-import l2s.gameserver.utils.NpcUtils;
 
 /**
  * @author Bonux
- **/
+**/
 public class RequestTryEnSoulExtraction implements IClientIncomingPacket
 {
 	private int _itemObjectId;
 	private int _ensoulType;
-	private int _ensoulId;
+	private int _position;
 
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_itemObjectId = packet.readD();
 		_ensoulType = packet.readC();
-		_ensoulId = packet.readC();
+		_position = packet.readC() - 1;
 		return true;
 	}
 
@@ -37,28 +37,22 @@ public class RequestTryEnSoulExtraction implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (NpcUtils.canPassPacket(activeChar, this) == null)
+		if(activeChar.isBlocked() || activeChar.isAlikeDead())
 		{
 			activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 			return;
 		}
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
-		{
-			activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
-			return;
-		}
-
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 			return;
@@ -68,62 +62,53 @@ public class RequestTryEnSoulExtraction implements IClientIncomingPacket
 		try
 		{
 			ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_itemObjectId);
-			if (targetItem == null)
+			if(targetItem == null)
 			{
 				activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 				return;
 			}
 
-			Ensoul ensoul = targetItem.getEnsoul(_ensoulType, _ensoulId);
-			if (ensoul == null)
+			Ensoul ensoul = targetItem.getEnsoul(_ensoulType, _position);
+			if(ensoul == null)
 			{
 				activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 				return;
 			}
 
 			int extractionItemId = ensoul.getExtractionItemId();
-			if (extractionItemId <= 0)
+			if(extractionItemId <= 0)
 			{
 				activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 				return;
 			}
 
-			EnsoulFee ensoulFee = EnsoulHolder.getInstance().getEnsoulFee(targetItem.getGrade());
-			if (ensoulFee == null)
+			EnsoulFee ensoulFee = EnsoulHolder.getInstance().getEnsoulFee(targetItem.getBodyPart(), ensoul.getId());
+			if(ensoulFee == null)
 			{
 				activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 				return;
 			}
 
-			EnsoulFeeInfo feeInfo = ensoulFee.getFeeInfo(_ensoulType, _ensoulId);
-			if (feeInfo == null)
+			EnsoulFeeInfo feeInfo = ensoulFee.getFeeInfo(1);
+			if(feeInfo == null)
 			{
 				activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
 				return;
 			}
 
 			List<EnsoulFeeItem> feeItems = feeInfo.getRemoveFee();
-			for (EnsoulFeeItem feeItem : feeItems)
+			for(EnsoulFeeItem feeItem : feeItems)
 			{
-				if (feeItem.getLevel() == ensoul.getLevel())
+				if(!ItemFunctions.haveItem(activeChar, feeItem.getId(), feeItem.getCount()))
 				{
-					if (!ItemFunctions.haveItem(activeChar, feeItem.getId(), feeItem.getCount()))
-					{
-						activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
-						return;
-					}
+					activeChar.sendPacket(ExEnSoulExtractionResult.FAIL);
+					return;
 				}
 			}
+			for(EnsoulFeeItem feeItem : feeItems)
+				ItemFunctions.deleteItem(activeChar, feeItem.getId(), feeItem.getCount());
 
-			for (EnsoulFeeItem feeItem : feeItems)
-			{
-				if (feeItem.getLevel() == ensoul.getLevel())
-				{
-					ItemFunctions.deleteItem(activeChar, feeItem.getId(), feeItem.getCount());
-				}
-			}
-
-			targetItem.removeEnsoul(_ensoulType, _ensoulId, true);
+			targetItem.removeSpecialAbility(_position, _ensoulType);
 
 			activeChar.getInventory().refreshEquip(targetItem);
 

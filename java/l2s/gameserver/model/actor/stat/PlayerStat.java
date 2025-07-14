@@ -161,4 +161,11 @@ public class PlayerStat extends CreatureStat
 	{
 		return 0;   
 	}
+
+	public double getPer(Stats enchantChanceModifierWeapon)
+	{
+		System.out.println("getPer not implemented yet.");
+		return 0;
+		    
+	}
 }

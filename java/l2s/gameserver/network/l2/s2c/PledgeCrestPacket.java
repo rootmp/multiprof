@@ -28,7 +28,7 @@ public class PledgeCrestPacket implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(_crestSize);
 			packetWriter.writeD(_crestSize);
-			writeB(_data);
+			packetWriter.writeB(_data);
 		}
 		else
 		{

@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.CHashIntObjectMap;
+import org.napile.primitive.maps.impl.CTreeIntObjectMap;
 import org.napile.primitive.pair.IntObjectPair;
 
 import l2s.commons.lang.reference.HardReference;
@@ -42,6 +43,7 @@ import l2s.gameserver.templates.CreatureTemplate;
 import l2s.gameserver.templates.item.EtcItemTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate.WeaponType;
+import l2s.gameserver.templates.option.ExOptionDataTemplate;
 
 public abstract class Playable extends Creature
 {
@@ -49,6 +51,8 @@ public abstract class Playable extends Creature
 	protected final IntObjectMap<TimeStamp> _sharedGroupReuses = new CHashIntObjectMap<TimeStamp>();
 	protected final AtomicBoolean _isUsingItem = new AtomicBoolean(false);
 
+	protected final IntObjectMap<ExOptionDataTemplate> _exOptions = new CTreeIntObjectMap<ExOptionDataTemplate>();
+	
 	public Playable(int objectId, CreatureTemplate template)
 	{
 		super(objectId, template);
@@ -829,5 +833,50 @@ public abstract class Playable extends Creature
 	public int getMaxWp()
 	{
 		return 0;
+	}
+	
+
+	public void addExOptionData(int id, int level)
+	{  
+		//addExOptionData(ExOptionDataHolder.getInstance().getExOptionData(id, level));
+	}
+	
+	public ExOptionDataTemplate addExOptionData(ExOptionDataTemplate optionData) 
+	{
+		if (optionData == null) 
+			return null;
+
+		int id = optionData.getId();
+		int level = optionData.getLevel();
+
+		ExOptionDataTemplate oldOptionData = _exOptions.get(id);
+		if (oldOptionData != null && oldOptionData.getLevel() >= level) 
+			return oldOptionData;
+
+		if (oldOptionData != null) 
+			removeExOptionData(oldOptionData);
+
+		_exOptions.put(id, optionData);
+
+		addTriggers(optionData);
+		getStat().addFuncs(optionData.getStatFuncs(optionData));
+
+		return oldOptionData;
+	}
+
+	private void removeExOptionData(ExOptionDataTemplate optionData) 
+	{
+		getStat().removeFuncsByOwner(optionData);
+		removeTriggers(optionData);
+	}
+
+	public void cleanExOptionData() 
+	{
+		for(ExOptionDataTemplate entry : _exOptions.valueCollection())
+		{
+			getStat().removeFuncsByOwner(entry);
+			removeTriggers(entry);
+		}
+		_exOptions.clear();
 	}
 }

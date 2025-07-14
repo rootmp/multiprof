@@ -75,7 +75,6 @@ import l2s.gameserver.dao.CharacterGroupReuseDAO;
 import l2s.gameserver.dao.CharacterHennaDAO;
 import l2s.gameserver.dao.CharacterPostFriendDAO;
 import l2s.gameserver.dao.CharacterPrivateStoreDAO;
-import l2s.gameserver.dao.CharacterRandomCraftDAO;
 import l2s.gameserver.dao.CharacterSubclassDAO;
 import l2s.gameserver.dao.CharacterTeleportsDAO;
 import l2s.gameserver.dao.CharacterVariablesDAO;
@@ -106,6 +105,7 @@ import l2s.gameserver.data.xml.holder.TimeRestrictFieldHolder;
 import l2s.gameserver.data.xml.holder.TransformTemplateHolder;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.database.MySqlDataInsert;
+import l2s.gameserver.enums.ChallengeEffect;
 import l2s.gameserver.geodata.GeoEngine;
 import l2s.gameserver.geometry.ILocation;
 import l2s.gameserver.geometry.Location;
@@ -171,6 +171,7 @@ import l2s.gameserver.model.actor.instances.player.ProductHistoryList;
 import l2s.gameserver.model.actor.instances.player.Pvpbook;
 import l2s.gameserver.model.actor.instances.player.PvpbookInfo;
 import l2s.gameserver.model.actor.instances.player.RelicList;
+import l2s.gameserver.model.actor.instances.player.RestartPointSetting;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
 import l2s.gameserver.model.actor.instances.player.ShortCutList;
 import l2s.gameserver.model.actor.instances.player.SpectatingList;
@@ -243,6 +244,7 @@ import l2s.gameserver.model.items.PcInventory;
 import l2s.gameserver.model.items.PcPenalty;
 import l2s.gameserver.model.items.PcRefund;
 import l2s.gameserver.model.items.PcWarehouse;
+import l2s.gameserver.model.items.PlayerRandomCraft;
 import l2s.gameserver.model.items.TradeItem;
 import l2s.gameserver.model.items.Warehouse;
 import l2s.gameserver.model.items.Warehouse.WarehouseType;
@@ -359,6 +361,7 @@ import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemDrop;
 import l2s.gameserver.network.l2.s2c.itemrestore.ExPenaltyItemInfo;
 import l2s.gameserver.network.l2.s2c.magiclamp.ExMagicLampExpInfo;
 import l2s.gameserver.network.l2.s2c.newhenna.NewHennaList;
+import l2s.gameserver.network.l2.s2c.newhenna.NewHennaPotenSelect;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeCoinInfo;
 import l2s.gameserver.network.l2.s2c.pvpbook.ExPvpBookShareRevengeNewRevengeInfo;
 import l2s.gameserver.network.l2.s2c.randomcraft.ExCraftInfo;
@@ -394,6 +397,7 @@ import l2s.gameserver.templates.PremiumAccountTemplate;
 import l2s.gameserver.templates.RandomCraftCategory;
 import l2s.gameserver.templates.RandomCraftInfo;
 import l2s.gameserver.templates.RandomCraftItem;
+import l2s.gameserver.templates.TeleportTemplate;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
 import l2s.gameserver.templates.ZoneTemplate;
 import l2s.gameserver.templates.item.ArmorTemplate.ArmorType;
@@ -403,6 +407,7 @@ import l2s.gameserver.templates.item.RecipeTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2s.gameserver.templates.item.data.ItemData;
+import l2s.gameserver.templates.item.henna.DyePotential;
 import l2s.gameserver.templates.item.henna.Henna;
 import l2s.gameserver.templates.item.henna.HennaPoten;
 import l2s.gameserver.templates.npc.NpcTemplate;
@@ -426,7 +431,7 @@ import l2s.gameserver.utils.TeleportUtils;
 import l2s.gameserver.utils.TimeUtils;
 import l2s.gameserver.utils.Util;
 
-public final class Player extends Playable implements PlayerGroup
+public final class Player extends Playable implements PlayerGroup, HaveHwid
 {
 	//@formatter:off
 	private static final Logger _log = LoggerFactory.getLogger(Player.class);
@@ -552,7 +557,7 @@ public final class Player extends Playable implements PlayerGroup
 	private final PcPenalty _penalty = new PcPenalty(this);
 
 	private final BookMarkList _bookmarks = new BookMarkList(this, 0);
-	public Location bookmarkLocation = null;
+	public TeleportTemplate bookmarkLocation = null;
 	public int bookmarkItemId = 0;
 	public long bookmarkPrice = 0L;
 
@@ -706,6 +711,7 @@ public final class Player extends Playable implements PlayerGroup
 	private final ElementalList _elementalList = new ElementalList(this);
 	private final VIP _vip = new VIP(this);
 	private final VipAttendance _vipAttendance = new VipAttendance(this);
+	private final RestartPointSetting _rPointSetting = new RestartPointSetting(this);
 	
 	private final AccountVariables _accountVar = new AccountVariables();
 	private final HuntPass _huntPass;
@@ -862,7 +868,6 @@ public final class Player extends Playable implements PlayerGroup
 
 	private TIntSet _teleportFavorites = new TIntHashSet();
 
-	private Map<Integer, RandomCraftInfo> _randomCraftInfo = new HashMap<>();
 	private boolean _onlyGainPoints = false;
 
 	private long _magicLampPoints;
@@ -6240,7 +6245,8 @@ public final class Player extends Playable implements PlayerGroup
 				player.getVIP().restore();
 				player.getProductHistoryList().restore();
 				player.getAttendanceRewards().restore();
-
+				player.restoreRandomCraft();
+				
 				player.restoreSummons();
 
 				try
@@ -6385,8 +6391,7 @@ public final class Player extends Playable implements PlayerGroup
 
 				player.setTeleportFavorites(CharacterTeleportsDAO.getInstance().restore(player.getObjectId()));
 				player.setVar("last_hwid", hwidHolder.asString());
-				
-				player.setRandomCraftList(CharacterRandomCraftDAO.getInstance().restore(player.getObjectId()));
+			
 				player.setCollectionFavorites(CharacterCollectionFavoritesDAO.getInstance().restore(player.getObjectId()));
 
 				player.setCurrentDp(player.getVarInt("currentDp", 0));
@@ -6500,9 +6505,10 @@ public final class Player extends Playable implements PlayerGroup
 			getMissionLevelReward().store();
 			getElementalList().store();
 			getPvpbook().store();
-			CharacterRandomCraftDAO.getInstance().delete(getObjectId());
-			CharacterRandomCraftDAO.getInstance().insert(this, getRandomCraftList());
 
+			if(_randomCraft != null)
+				_randomCraft.store();
+			
 			setVar("currentDp", getCurrentDp());
 			setVar("currentBp", getCurrentBp());
 
@@ -8479,6 +8485,22 @@ public final class Player extends Playable implements PlayerGroup
 		return defaultValue;
 	}
 
+	public List<Integer> getVarIntegerList(String name)
+	{
+		final String _val = getVar(name);
+		final List<Integer> result;
+		if(_val != null)
+		{
+			final String[] splitVal = _val.split(",");
+			result = new ArrayList<>(splitVal.length + 1);
+			for(String split : splitVal)
+				result.add(Integer.parseInt(split));
+		}
+		else
+			result = new ArrayList<>(1);
+		return result;
+	}
+	
 	public long getVarLong(String name)
 	{
 		return getVarLong(name, 0L);
@@ -15369,146 +15391,6 @@ public final class Player extends Playable implements PlayerGroup
 		return _craftGaugePoints;
 	}
 
-	public Map<Integer, RandomCraftInfo> generateRandomCraftList()
-	{
-		if (_randomCraftInfo.isEmpty() || (_randomCraftInfo.size() < 5))
-		{
-			for (int i = 0; i < 5; i++)
-			{
-				final RandomCraftItem item = getRandomCraftItem();
-				_randomCraftInfo.put(i, new RandomCraftInfo(item.getId(), item.getResultId(), item.getCount(), item.getEnchantLevel(), false, (byte) 20));
-			}
-		}
-		else
-		{
-			for (int i = 0; i < 5; i++)
-			{
-				final RandomCraftItem item = getRandomCraftItem();
-				if (!_randomCraftInfo.get(i).isLocked())
-				{
-					_randomCraftInfo.replace(i, new RandomCraftInfo(item.getId(), item.getResultId(), item.getCount(), item.getEnchantLevel(), false, (byte) 20));
-				}
-				else
-				{
-					byte refreshToUnlock = (byte) (_randomCraftInfo.get(i).getRefreshToUnlockCount() - 1);
-					if (refreshToUnlock == 0)
-					{
-						refreshToUnlock = 20;
-						_randomCraftInfo.get(i).setRefreshToUnlockCount((byte) 20);
-						_randomCraftInfo.get(i).setIsLocked(false);
-					}
-					else
-					{
-						_randomCraftInfo.get(i).setRefreshToUnlockCount(refreshToUnlock);
-					}
-				}
-			}
-		}
-		return _randomCraftInfo;
-	}
-
-	public RandomCraftItem getRandomCraftItem()
-	{
-		double probabilityAmount = 0.;
-
-		final RandomCraftCategory[] categories = new RandomCraftCategory[RandomCraftListHolder.getInstance().size()];
-
-		for (final Integer id : RandomCraftListHolder.getInstance().getRandomCraftList().keySet())
-		{
-			categories[id] = RandomCraftListHolder.getInstance().getRandomCraftList().get(id);
-		}
-
-		for (final RandomCraftCategory category : categories)
-		{
-			probabilityAmount += category.getProbability();
-		}
-
-		if (Rnd.chance(probabilityAmount))
-		{
-			double probabilityMod = (100. - probabilityAmount) / categories.length;
-			final List<RandomCraftCategory> successCategories = new ArrayList<RandomCraftCategory>();
-			int tryCount = 0;
-			while (successCategories.isEmpty())
-			{
-				tryCount++;
-				for (final RandomCraftCategory category : categories)
-				{
-					if ((tryCount % 10) == 0)
-					{
-						probabilityMod += 1.;
-					}
-					if (Rnd.chance(category.getProbability() + probabilityMod))
-					{
-						successCategories.add(category);
-					}
-				}
-			}
-
-			final RandomCraftCategory[] categoriesArray = successCategories.toArray(new RandomCraftCategory[successCategories.size()]);
-
-			// -----------------------------------------------------------
-
-			final RandomCraftCategory category = categoriesArray[Rnd.get(categoriesArray.length)];
-			double chanceAmount = 0.;
-			final RandomCraftItem[] items = category.getItems();
-			for (final RandomCraftItem item : items)
-			{
-				chanceAmount += item.getChance();
-			}
-
-			if (Rnd.chance(chanceAmount))
-			{
-				double chanceMod = (100. - chanceAmount) / items.length;
-				final List<RandomCraftItem> successItems = new ArrayList<RandomCraftItem>();
-				tryCount = 0;
-				while (successItems.isEmpty())
-				{
-					tryCount++;
-					for (final RandomCraftItem item : items)
-					{
-						if ((tryCount % 10) == 0)
-						{
-							chanceMod += 1.;
-						}
-						if (Rnd.chance(item.getChance() + chanceMod))
-						{
-							successItems.add(item);
-						}
-					}
-				}
-
-				final RandomCraftItem[] itemsArray = successItems.toArray(new RandomCraftItem[successItems.size()]);
-
-				return itemsArray[Rnd.get(itemsArray.length)];
-			}
-		}
-		return null;
-	}
-
-	public void setRandomCraftList(Map<Integer, RandomCraftInfo> list)
-	{
-		_randomCraftInfo = list;
-	}
-
-	public Map<Integer, RandomCraftInfo> getRandomCraftList()
-	{
-		return _randomCraftInfo;
-	}
-
-	public int getRandomCraftLockedSlots()
-	{
-		int lockedCount = 0;
-		for (final int i : _randomCraftInfo.keySet())
-		{
-			final RandomCraftInfo data = _randomCraftInfo.get(i);
-			if (data.isLocked())
-			{
-				lockedCount++;
-			}
-		}
-		return lockedCount;
-	}
-
 	public void setOnlyGainPoints(boolean value)
 	{
 		_onlyGainPoints = value;
@@ -15742,6 +15624,11 @@ public final class Player extends Playable implements PlayerGroup
 		return collections;
 	}
 
+	public TIntSet getCollectionReward()
+	{
+		return getCollectionList().getCollectionsMap().keySet().stream().filter(k -> getVarInt(PlayerVariables.COLLECTION_REWARD_ENABLED_VAR + k, 0) > 0).collect(TIntHashSet::new, TIntHashSet::add, TIntHashSet::addAll);
+	}
+	
 	public void setCollectionFavorites(TIntSet collectionFavorites)
 	{
 		_collectionFavorites = collectionFavorites;
@@ -16122,16 +16009,6 @@ public final class Player extends Playable implements PlayerGroup
 		return getVar("last_hwid", "");
 	}
 
-	public boolean isUseChatBg()
-	{
-		return false;
-	}
-
-	public int getChatBg()
-	{
-		return 0;
-	}
-
 	public AdenLab getAdenLab()
 	{
 		return _adenLab;
@@ -16446,4 +16323,84 @@ public final class Player extends Playable implements PlayerGroup
 	{
 		return _vipAttendance;
 	}
+
+	public int getChatBg()
+	{
+		return getVarInt("setChatBg", 0);  
+	}
+
+	public boolean isUseChatBg()
+	{
+		return getVarBoolean("isUseChatBg", false);
+	}
+
+	public void setUseChatBg(boolean bEnable)
+	{
+		setVar("isUseChatBg", bEnable);
+	}
+
+	public void setChatBg(int nCurrentChatBackground)
+	{
+		setVar("setChatBg", nCurrentChatBackground);	
+	}
+	
+	private ChallengeEffect _selectChallengePoint = ChallengeEffect.BLANK;
+
+	public void setEnchantChallengePoint(ChallengeEffect challengePoint)
+	{
+		_selectChallengePoint = challengePoint;
+	}
+
+	public ChallengeEffect getEnchantChallengePoint()
+	{
+		return _selectChallengePoint;
+	}
+
+	@Override
+	public HwidHolder getHwidHolder()
+	{
+		return hwidHolder;
+	}
+
+	public RestartPointSetting getRestartPointSetting()
+	{
+		return _rPointSetting;
+	}
+
+	public void potenSelect(int _slotId, int _potenId)
+	{
+		final DyePotential potential = HennaPatternPotentialDataHolder.getInstance().getPotential(_potenId);
+		final HennaPoten hennaPoten = getHennaPoten(_slotId);
+		if(hennaPoten == null)
+			return;
+		if(potential == null || potential.getSlotId() != _slotId)
+		{
+			if(hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500)
+				sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep() + 1, true));
+			else
+				sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep(), false));
+			return;
+		}
+		hennaPoten.setPotenId(_potenId);
+		CharacterHennaDAO.getInstance().storeDyePoten(this, hennaPoten, _slotId);
+
+		if(hennaPoten.getHenna() != null && hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500 && hennaPoten.getHenna().getPatternLevel() == 30)
+			sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep() + 1, true));
+		else
+			sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep(), true));
+	}
+
+	private PlayerRandomCraft _randomCraft = null;
+
+	private void restoreRandomCraft()
+	{
+		_randomCraft = new PlayerRandomCraft(this);
+		_randomCraft.restore();
+	}
+
+	public PlayerRandomCraft getRandomCraft()
+	{
+		return _randomCraft;
+	}
+
 }

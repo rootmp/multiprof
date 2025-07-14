@@ -16,7 +16,7 @@ public class ExUISettingPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(data.length);
-		writeB(data);
+		packetWriter.writeB(data);
 		return true;
 	}
 }

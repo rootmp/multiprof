@@ -27,7 +27,7 @@ public class AllianceCrestPacket implements IClientOutgoingPacket
 		{
 			packetWriter.writeD(_data.length);
 			packetWriter.writeD(_data.length);
-			writeB(_data);
+			packetWriter.writeB(_data);
 		}
 		else
 		{

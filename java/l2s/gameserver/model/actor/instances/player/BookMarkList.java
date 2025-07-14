@@ -19,6 +19,7 @@ import l2s.gameserver.model.Zone.ZoneType;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
+import l2s.gameserver.templates.TeleportTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 
 public class BookMarkList
@@ -117,8 +118,10 @@ public class BookMarkList
 			return false;
 		}
 
-		owner.bookmarkLocation = new Location(bookmark.x, bookmark.y, bookmark.z);
-
+		TeleportTemplate template = new TeleportTemplate(-1, 0, 0);
+		template.addLocation(new Location(bookmark.x, bookmark.y, bookmark.z));
+		owner.bookmarkLocation = template;
+		
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 2588, 1);
 		if (!skillEntry.checkCondition(owner, owner, false, true, true))
 		{

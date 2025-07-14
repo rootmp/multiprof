@@ -95,13 +95,13 @@ import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeV3SetAnnounce;
 import l2s.gameserver.network.l2.c2s.privatestoresearch.RequestExPrivateStoreSearchList;
 import l2s.gameserver.network.l2.c2s.privatestoresearch.RequestExPrivateStoreSearchStatistics;
 import l2s.gameserver.network.l2.c2s.prot_507.*;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpBookShareRevengeKillerLocation;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpBookShareRevengeList;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpBookShareRevengeSharedTeleportToKiller;
-import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpBookShareRevengeTeleportToKiller;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookKillerLocation;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookList;
+import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeKillerLocation;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeReqShareRevengeInfo;
+import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeSharedTeleportToKiller;
+import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookShareRevengeTeleportToKiller;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookTeleportToKiller;
 import l2s.gameserver.network.l2.c2s.quest.RequestExQuestAccept;
 import l2s.gameserver.network.l2.c2s.quest.RequestExQuestAcceptableList;
@@ -635,9 +635,9 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_COLLECTION_RECEIVE_REWARD(RequestExCollectionReceiveReward::new, ConnectionState.IN_GAME),
 	EX_PVPBOOK_SHARE_REVENGE_LIST(RequestExPvpBookShareRevengeList::new, ConnectionState.IN_GAME),
 	EX_PVPBOOK_SHARE_REVENGE_REQ_SHARE_REVENGEINFO(RequestExPvpbookShareRevengeReqShareRevengeInfo::new, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION(RequestExPvpBookShareRevengeKillerLocation::new, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_TELEPORT_TO_KILLER(RequestExPvpBookShareRevengeTeleportToKiller::new, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_SHARED_TELEPORT_TO_KILLER(RequestExPvpBookShareRevengeSharedTeleportToKiller::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION(RequestExPvpbookShareRevengeKillerLocation::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_TELEPORT_TO_KILLER(RequestExPvpbookShareRevengeTeleportToKiller::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_SHARED_TELEPORT_TO_KILLER(RequestExPvpbookShareRevengeSharedTeleportToKiller::new, ConnectionState.IN_GAME),
 	EX_PENALTY_ITEM_LIST(RequestExPenaltyItemList::new, ConnectionState.IN_GAME),
 	EX_PENALTY_ITEM_RESTORE(RequestExPenaltyItemRestore::new, ConnectionState.IN_GAME),
 	EX_USER_WATCHER_TARGET_LIST(RequestExUserWatcherTargetList::new, ConnectionState.IN_GAME),

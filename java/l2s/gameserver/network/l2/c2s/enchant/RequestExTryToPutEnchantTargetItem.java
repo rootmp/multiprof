@@ -13,6 +13,7 @@ import l2s.gameserver.network.l2.s2c.ExPutEnchantTargetItemResult;
 import l2s.gameserver.network.l2.s2c.enchant.ExChangedEnchantTargetItemProbabilityList;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.support.EnchantScroll;
+import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.Log;
 
 public class RequestExTryToPutEnchantTargetItem implements IClientIncomingPacket
@@ -151,6 +152,6 @@ public class RequestExTryToPutEnchantTargetItem implements IClientIncomingPacket
 
 		player.setEnchantItem(itemToEnchant);
 		player.sendPacket(ExPutEnchantTargetItemResult.SUCCESS);
-		player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(player, false));
+		player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(ItemFunctions.getEnchantProbInfo(player, false, false)));
 	}
 }

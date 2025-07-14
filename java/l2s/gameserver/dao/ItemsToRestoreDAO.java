@@ -78,7 +78,7 @@ public class ItemsToRestoreDAO
 			item.setVisualId(rset.getInt(17));
 			item.setBlessed(rset.getBoolean(18));
 			item.setLostDate(rset.getInt(19));
-			item.restoreEnsoul(true);
+			item.restoreEnsoul();
 		}
 
 		return item;

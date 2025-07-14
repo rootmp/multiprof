@@ -113,4 +113,18 @@ public class EnchantScroll
 	{
 		return enchantStepLimit;
 	}
+
+	public int getVariationId(int itemId)
+	{
+		System.out.println("getVariationId not implemented yet.");
+		return 0;
+		    
+	}
+
+	public int getChallengeGroup(int itemId)
+	{
+		System.out.println("getChallengeGroup not implemented yet.");
+		return 0;
+		    
+	}
 }

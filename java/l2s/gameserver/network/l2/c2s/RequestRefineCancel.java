@@ -89,7 +89,7 @@ public final class RequestRefineCancel implements IClientIncomingPacket
 			return;
 		}
 
-		VariationUtils.setVariation(activeChar, targetItem, 0, 0, 0);
+		VariationUtils.setVariation(activeChar, targetItem, 0, 0, 0, 0);
 
 		// send system message
 		SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.AUGMENTATION_HAS_BEEN_SUCCESSFULLY_REMOVED_FROM_YOUR_S1);

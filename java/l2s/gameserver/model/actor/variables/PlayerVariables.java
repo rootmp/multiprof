@@ -50,4 +50,22 @@ public class PlayerVariables
 	public static final String PTS_DAILY_QUEST_FLAG_VAR = "@pts_daily_quest_flag_";
 	
 	public static final String ITEM_ANNOUNCE_SETTING = "@ItemAnnounceSetting";
+	
+	public static final String RESTART_POINT_SETTING_VAR = "@RestartPointSetting";
+	public static final String FREE_RESURRECTION_VAR = "@FreeResurrection";
+	public static final String L_COIN_RESURRECTION_COUNT_VAR = "@LCoinResurrectionCount";
+	
+
+	public static final String VIP_SHOP_PRODUCT_COUNT_GROUP = "VSCountGroup";
+	
+	public static final String LCOIN_SHOP_PRODUCT_COUNT_GROUP = "LCSCountGroup";
+	
+	public static final String LCOIN_SHOP_PRODUCT_COUNT = "LCSCount";
+	public static final String LCOIN_SHOP_PRODUCT_ALWAYS_COUNT = "LCSAlwaysCount";
+	public static final String LCOIN_SHOP_PRODUCT_DAILY_COUNT = "LCSDailyCount";
+	public static final String LCOIN_SHOP_PRODUCT_DAILY2_COUNT = "LCSDaily2Count";
+	public static final String LCOIN_SHOP_PRODUCT_WEEK_COUNT = "LCSWeekCount";
+	public static final String LCOIN_SHOP_PRODUCT_MONTHLY_COUNT = "LCSMonthlyCount";
+	
+	public static final String COLLECTION_REWARD_ENABLED_VAR = "@collection_reward_";
 }

@@ -63,7 +63,7 @@ public class RequestExTeleportToRaidPosition implements IClientIncomingPacket
 				activeChar.bookmarkLocation.setItemId(-1);
 				activeChar.setVar(PlayerVariables.FREE_RAID_TELEPORTS_USED, ++freeTeleportsUsed);
 			}
-			else if(activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_MONEY_L, 10, "ExTeleportToRaidPosition"))
+			else if(activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_MONEY_L, 10))
 			{
 				activeChar.bookmarkLocation = teleportInfo;
 				if(activeChar.bookmarkLocation == null)

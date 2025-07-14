@@ -65,7 +65,9 @@ import l2s.gameserver.network.l2.s2c.PledgeShowMemberListUpdatePacket;
 import l2s.gameserver.network.l2.s2c.PledgeSkillListAddPacket;
 import l2s.gameserver.network.l2.s2c.PledgeSkillListPacket;
 import l2s.gameserver.network.l2.s2c.PledgeStatusChangedPacket;
+import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
+import l2s.gameserver.network.l2.s2c.pledge.ExPledgeV3Info;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.tables.ClanTable;
@@ -185,8 +187,9 @@ public class Clan implements Iterable<UnitMember>
 
 	private int arenaStage = 0;
 
-	private int _clanPoints = 0;
-
+	private int _clanPoints = 0;//удалить
+	private int _exp = 0;//есенс вариант
+	
 	private final String SELECT_ANNOUNCEMENT = "SELECT * FROM `clan_announcement` WHERE `clan_id` = ?";
 	private final String INSERT_ANNOUNCEMENT = "INSERT INTO clan_announcement (clan_id, body, showOnEnter) VALUES (?,?,?)";
 
@@ -2233,4 +2236,38 @@ public class Clan implements Iterable<UnitMember>
 	{
 		this._showAnnounceOnEnter = _showAnnounceOnEnter;
 	}
+
+	public static final int[] EXP_TABLE =
+	{
+			0,
+		100,
+		1000,
+		5000,
+		100000,
+		500000,
+		1500000,
+		4500000,
+		7500000,
+		11000000,
+		14500000,
+		20000000
+	};
+	
+	public void addExp(int value)
+	{
+		value*= Config.CLAN_EXP_RATE;
+		
+		_exp += value;
+		broadcastToOnlineMembers(new ExPledgeV3Info(_exp, getRank(), getNotice(), isShowAnnounceOnEnter()));
+		broadcastToOnlineMembers(new SystemMessage(SystemMessage.OBTAINED_S1S_CLAN_XP).addNumber(value));
+
+		if(getLevel() + 1 < EXP_TABLE.length && EXP_TABLE[Math.max(0, getLevel() + 1)] <= _exp)
+		{
+			setLevel(_level + 1);
+			onLevelChange(_level, _level + 1);
+		}
+		updateClanInDB();
+	}
+	
+	
 }

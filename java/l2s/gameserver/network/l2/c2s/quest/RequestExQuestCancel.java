@@ -25,12 +25,12 @@ public class RequestExQuestCancel implements IClientIncomingPacket
 		final Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		QuestState qs = activeChar.getQuestState(nID);
+	/*	QuestState qs = activeChar.getQuestState(nID);
 		if(qs!=null)
 		{
 			qs.abortQuest();
 			activeChar.sendPacket(new ExQuestNotificationAll(activeChar.getAllActiveQuestsStates()));
 			activeChar.sendPacket(new ExQuestUi(activeChar));
-		}
+		}*/
 	}
 }

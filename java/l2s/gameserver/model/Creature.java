@@ -15,6 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -5848,5 +5849,14 @@ public abstract class Creature extends GameObject
 		if(!isVisible())
 			return Collections.emptyList();
 		return World.getAroundMonsters(this, radius, height);
+	}
+	
+	public void broadcastPacketToOthers(Function<Player, IBroadcastPacket> packetFunc)
+	{
+		if(!isVisible() || packetFunc == null)
+			return;
+
+		for(Player target : World.getAroundObservers(this))
+			target.sendPacket(packetFunc.apply(target));
 	}
 }

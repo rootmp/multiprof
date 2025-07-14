@@ -476,7 +476,10 @@ public enum Stats
 	P_BLOCK_TRADE("p_block_trade", 0, 1, 0),
 	P_BLOCK_PRIVATE_STORE("p_block_private_store", 0, 1, 0),
 	P_BLOCK_WORLD_TRADE("p_block_world_trade", 0, 1, 0),
-	P_BLOCK_WORLD_CHAT("p_block_world_chat", 0, 1, 0), 
+	P_BLOCK_WORLD_CHAT("p_block_world_chat", 0, 1, 0),
+	
+	ENCHANT_CHANCE_MODIFIER_ARMOR("p_enchant_armor_rate", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 0.),
+	ENCHANT_CHANCE_MODIFIER_WEAPON("p_enchant_weapon_rate", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 0.),
 	;
 
 	public static final Stats[] VALUES = values();

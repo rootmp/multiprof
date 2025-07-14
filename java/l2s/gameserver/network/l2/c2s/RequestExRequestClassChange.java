@@ -63,7 +63,7 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 			giveRewards(player, 2);
 		}
 
-		player.sendPacket(new MagicSkillUse(player, 5103, 1, 1000, 0));
+		player.sendPacket(new MagicSkillUse(player, 5103, 1, 1000, 0, 0));
 		player.sendPacket(SystemMsg.CONGRATULATIONS__YOUVE_COMPLETED_A_CLASS_TRANSFER);
 		player.sendPacket(new ExElementalSpiritInfo(player, 0));
 		player.broadcastUserInfo(true);

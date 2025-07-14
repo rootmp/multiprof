@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
@@ -15,13 +16,10 @@ public class RequestSaveKeyMapping implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		int length = packet.readD();
-		if (length > packet.getReadableBytes() || length > Short.MAX_VALUE || length < 0)
+		if(length > 0)
 		{
-			_data = null;
-			return false;
+			_data = packet.readB(length);
 		}
-		_data = new byte[length];
-		readB(_data);
 		return true;
 	}
 
@@ -29,7 +27,7 @@ public class RequestSaveKeyMapping implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _data == null)
+		if(activeChar == null || _data == null)
 			return;
 		activeChar.setKeyBindings(_data);
 		activeChar.sendPacket(new ExUISettingPacket(activeChar));

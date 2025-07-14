@@ -12,10 +12,10 @@ import l2s.gameserver.geometry.Location;
 public class TeleportTemplate
 {
 	private final int _id;
-	private final int _itemId;
-	private final long _price;
+	private int _itemId;
+	private long _price;
 	private final List<Location> _locations = new ArrayList<Location>();
-
+	
 	public TeleportTemplate(int id, int itemId, long price)
 	{
 		_id = id;
@@ -33,11 +33,21 @@ public class TeleportTemplate
 		return _itemId;
 	}
 
+	public void setItemId(int itemId)
+	{
+		_itemId = itemId;
+	}
+	
 	public long getPrice()
 	{
 		return _price;
 	}
 
+	public void setPrice(int price)
+	{
+		_price = price;
+	}
+	
 	public void addLocation(Location loc)
 	{
 		_locations.add(loc);

@@ -1,8 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
 import l2s.commons.network.PacketWriter;
 
-import l2s.commons.network.PacketWriter;
-
 public class NetPingPacket implements IClientOutgoingPacket
 {
 	private final int timestamp;
@@ -15,7 +13,7 @@ public class NetPingPacket implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		packetWriter.packetWriter.writeD(timestamp);
+		packetWriter.writeD(timestamp);
 		return true;
 	}
 

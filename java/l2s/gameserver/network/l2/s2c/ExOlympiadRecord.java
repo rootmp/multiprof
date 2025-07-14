@@ -7,7 +7,7 @@ import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
-import l2s.gameserver.templates.StatsSet;
+import l2s.gameserver.templates.ranking.OlympiadRankInfo;
 
 /**
  * @author nexvill
@@ -15,7 +15,7 @@ import l2s.gameserver.templates.StatsSet;
 public class ExOlympiadRecord implements IClientOutgoingPacket
 {
 	private final Player _player;
-	private final Map<Integer, StatsSet> _playerList;
+	private final Map<Integer, OlympiadRankInfo> _data;
 
 	private final int currCyclePoints;
 	private final int currCycleWins;
@@ -31,7 +31,7 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 	public ExOlympiadRecord(Player player)
 	{
 		_player = player;
-		_playerList = RankManager.getInstance().getPreviousOlyList();
+		_data = RankManager.getInstance().getPreviousOlyList();
 
 		currCyclePoints = Olympiad.getParticipantPoints(player.getObjectId());
 		currCycleWins = Olympiad.getCompetitionWin(player.getObjectId());
@@ -57,24 +57,24 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 		int wins = 0;
 		int loses = 0;
 
-		for (int id : _playerList.keySet())
+		for(int id : _data.keySet())
 		{
-			StatsSet player = _playerList.get(id);
+			OlympiadRankInfo data = _data.get(id);
 
-			if (player.getInteger("classId") == _player.getClassId().getId())
+			if(data.nClassID == _player.getClassId().getId())
 			{
 				totalClassRankers++;
-				if (player.getInteger("objId") == _player.getObjectId())
+				if(data.nCharId == _player.getObjectId())
 				{
 					classRank = totalClassRankers;
 				}
 			}
-			if (player.getInteger("objId") == _player.getObjectId())
+			if(data.nCharId == _player.getObjectId())
 			{
 				totalRank = id;
-				points = player.getInteger("olympiad_points");
-				wins = player.getInteger("competitions_win");
-				loses = player.getInteger("competitions_lost");
+				points = data.nOlympiadPoint;
+				wins = data.nWinCount;
+				loses = data.nLoseCount;
 			}
 		}
 
@@ -84,7 +84,7 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 		packetWriter.writeD(todayFightsLeft);
 		packetWriter.writeD(_player.getClassId().getId()); // player class
 		packetWriter.writeD(totalRank); // previous cycle rank
-		packetWriter.writeD(totalRank > 0 ? _playerList.size() : 0); // previous cycle total rankers
+		packetWriter.writeD(totalRank > 0 ? _data.size() : 0); // previous cycle total rankers
 		packetWriter.writeD(totalRank > 0 ? classRank : 0); // total class rank previous cycle
 		packetWriter.writeD(totalRank > 0 ? totalClassRankers : 0); // total class rankers previous cycle
 		packetWriter.writeD(totalRank > 0 ? classRank : 0); // server class rank previous cycle

@@ -27,7 +27,7 @@ public class ShortCutInitPacket extends ShortCutPacket
 		packetWriter.writeD(_shortCuts.size());
 
 		for (final ShortcutInfo sc : _shortCuts)
-			sc.write(this);
+			sc.write(packetWriter, this);
 		
 		return true;
 	}

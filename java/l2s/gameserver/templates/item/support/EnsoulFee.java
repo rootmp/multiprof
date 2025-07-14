@@ -8,7 +8,7 @@ import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
- **/
+**/
 public class EnsoulFee
 {
 	public static class EnsoulFeeInfo
@@ -50,20 +50,13 @@ public class EnsoulFee
 
 	public static class EnsoulFeeItem
 	{
-		private final int _level;
 		private final int _id;
 		private final long _count;
 
-		public EnsoulFeeItem(int level, int id, long count)
+		public EnsoulFeeItem(int id, long count)
 		{
-			_level = level;
 			_id = id;
 			_count = count;
-		}
-
-		public int getLevel()
-		{
-			return _level;
 		}
 
 		public int getId()
@@ -77,31 +70,20 @@ public class EnsoulFee
 		}
 	}
 
-	private TIntObjectMap<TIntObjectMap<EnsoulFeeInfo>> _ensoulsFee = null;
+	private TIntObjectMap<EnsoulFeeInfo> _ensoulsFee = null;
 
-	public void addFeeInfo(int type, int id, EnsoulFeeInfo feeInfo)
+	public void addFeeInfo(int type, EnsoulFeeInfo feeInfo)
 	{
-		if (_ensoulsFee == null)
-			_ensoulsFee = new TIntObjectHashMap<TIntObjectMap<EnsoulFeeInfo>>();
-
-		TIntObjectMap<EnsoulFeeInfo> ensoulFeeInfos = _ensoulsFee.get(type);
-		if (ensoulFeeInfos == null)
-		{
-			ensoulFeeInfos = new TIntObjectHashMap<EnsoulFeeInfo>();
-			_ensoulsFee.put(type, ensoulFeeInfos);
-		}
-		ensoulFeeInfos.put(id, feeInfo);
+		if(_ensoulsFee == null)
+			_ensoulsFee = new TIntObjectHashMap<EnsoulFeeInfo>();
+		_ensoulsFee.put(type, feeInfo);
 	}
 
-	public EnsoulFeeInfo getFeeInfo(int type, int id)
+	public EnsoulFeeInfo getFeeInfo(int id)
 	{
-		if (_ensoulsFee == null)
+		if(_ensoulsFee == null)
 			return null;
 
-		TIntObjectMap<EnsoulFeeInfo> ensoulFeeInfos = _ensoulsFee.get(type);
-		if (ensoulFeeInfos == null)
-			return null;
-
-		return ensoulFeeInfos.get(id);
+		return _ensoulsFee.get(id);
 	}
 }

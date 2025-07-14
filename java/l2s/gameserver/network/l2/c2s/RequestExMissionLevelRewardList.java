@@ -28,8 +28,9 @@ public class RequestExMissionLevelRewardList implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player != null)
 		{
+			int year = Calendar.getInstance().get(Calendar.YEAR);
 			int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
-			MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month);
+			MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month, year);
 			if(template == null)
 			{
 				_log.error("month:" + month + " template == null ");

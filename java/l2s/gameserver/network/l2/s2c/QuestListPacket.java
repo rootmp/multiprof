@@ -70,8 +70,8 @@ public class QuestListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(iterator.key());
 			packetWriter.writeD(iterator.value());
 		}
-		writeB(_completedQuestsMask);
-		writeB(_unkMask);
+		packetWriter.writeB(_completedQuestsMask);
+		packetWriter.writeB(_unkMask);
 		return true;
 	}
 }

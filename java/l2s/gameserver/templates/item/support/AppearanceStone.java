@@ -2,11 +2,14 @@ package l2s.gameserver.templates.item.support;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import l2s.gameserver.model.Player;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.item.ExItemType;
 import l2s.gameserver.templates.item.ItemGrade;
+import l2s.gameserver.templates.item.Visual;
 
 /**
  * @author Bonux
@@ -37,23 +40,21 @@ public class AppearanceStone
 	private final ShapeType _type;
 	private final ItemGrade[] _grades;
 	private final long _cost;
-	private final int _extractItemId;
-	private final ExItemType[] _itemTypes;
 	private final int _period;
 	private final List<SkillEntry> _skills = new ArrayList<SkillEntry>();
+	private final Map<ExItemType, Visual> _visual;
 
-	public AppearanceStone(int itemId, ShapeTargetType[] targetTypes, ShapeType type, ItemGrade[] grades, long cost, int extractItemId, ExItemType[] itemTypes, int period)
+	public AppearanceStone(int itemId, ShapeTargetType[] targetTypes, ShapeType type, ItemGrade[] grades, long cost,  Map<ExItemType, Visual> visual, int period)
 	{
 		_itemId = itemId;
 		_targetTypes = targetTypes;
 		_type = type;
 		_grades = grades;
 		_cost = cost;
-		_extractItemId = extractItemId;
-		_itemTypes = itemTypes;
+		_visual = visual;
 		_period = period;
 
-		if (_targetTypes.length > 1)
+		if(_targetTypes.length > 1)
 			_clientTargetType = ShapeTargetType.ALL;
 		else
 			_clientTargetType = _targetTypes[0];
@@ -89,16 +90,6 @@ public class AppearanceStone
 		return _cost;
 	}
 
-	public int getExtractItemId()
-	{
-		return _extractItemId;
-	}
-
-	public ExItemType[] getItemTypes()
-	{
-		return _itemTypes;
-	}
-
 	public int getPeriod()
 	{
 		return _period;
@@ -107,7 +98,7 @@ public class AppearanceStone
 	public void addSkill(int id, int level)
 	{
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level);
-		if (skillEntry != null)
+		if(skillEntry != null)
 			_skills.add(skillEntry);
 	}
 
@@ -115,4 +106,25 @@ public class AppearanceStone
 	{
 		return _skills;
 	}
+
+	public Visual getVisual(ExItemType type)
+	{
+		return _visual.get(type);
+	}
+	
+	public Map<ExItemType, Visual> getVisual()
+	{
+		return _visual;
+	}
+
+	public int getVisual(Player player, ExItemType type)
+	{
+		Visual visual = _visual.get(type);
+		
+		if(visual.getAlternative().containsKey(player.getRace()))
+			return visual.getAlternative().get(player.getRace());
+
+		return _visual.get(type).getExtractId();
+	}
+	
 }

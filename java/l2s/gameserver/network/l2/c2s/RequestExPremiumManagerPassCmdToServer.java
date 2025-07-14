@@ -49,7 +49,7 @@ public class RequestExPremiumManagerPassCmdToServer implements IClientIncomingPa
 		ValidBypass bp = player.getBypassStorage().validate(_bypass);
 		if (bp == null)
 		{
-			LOGGER.debug("RequestExPremiumManagerPassCmdToServer: Unexpected bypass : " + _bypass + " client : " + getClient() + "!");
+			LOGGER.debug("RequestExPremiumManagerPassCmdToServer: Unexpected bypass : " + _bypass + " client : " + client + "!");
 			return;
 		}
 

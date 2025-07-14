@@ -76,7 +76,7 @@ public class ExSendUIEventPacket extends NpcStringContainer
 		packetWriter.writeS(String.valueOf(_startTime2));
 		packetWriter.writeS(String.valueOf(_endTime));
 		packetWriter.writeS(String.valueOf(_endTime2));
-		writeElements();
+		writeElements(packetWriter);
 		return true;
 	}
 }

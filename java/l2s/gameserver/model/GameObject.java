@@ -745,7 +745,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public List<IClientOutgoingPacket> deletePacketList(Player forPlayer)
 	{
-		return Collections.<IClientOutgoingPacket>singletonList(new DeleteObjectPacket(this));
+		return Collections.<IClientOutgoingPacket> singletonList(new DeleteObjectPacket(forPlayer,this));
 	}
 
 	@Override

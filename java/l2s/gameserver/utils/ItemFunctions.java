@@ -9,7 +9,11 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2s.gameserver.dao.ItemsDAO;
+import l2s.gameserver.data.xml.holder.EnchantItemHolder;
 import l2s.gameserver.data.xml.holder.EnchantStoneHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.data.xml.holder.MissionLevelRewardsHolder;
@@ -30,15 +34,22 @@ import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
+import l2s.gameserver.stats.Stats;
 import l2s.gameserver.templates.dailymissions.MissionLevelRewardTemplate;
 import l2s.gameserver.templates.item.EtcItemTemplate.EtcItemType;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2s.gameserver.templates.item.data.MissionLevelRewardData;
+import l2s.gameserver.templates.item.support.EnchantScroll;
 import l2s.gameserver.templates.item.support.EnchantStone;
+import l2s.gameserver.templates.item.support.EnchantVariation;
+import l2s.gameserver.templates.item.support.EnchantVariation.EnchantLevel;
+import l2s.gameserver.templates.skill.enchant.EnchantProbInfo;
 
 public final class ItemFunctions
 {
+	protected static final Logger _log = LoggerFactory.getLogger(ItemFunctions.class);
+	
 	private ItemFunctions()
 	{
 	}
@@ -150,12 +161,12 @@ public final class ItemFunctions
 		else if (itemId == ItemTemplate.ITEM_ID_QUEST_POINTS)
 		{
 			MissionLevelReward info = player.getPlayer().getMissionLevelReward();
+			int year = Calendar.getInstance().get(Calendar.YEAR);
 			int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
-			MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month);
+			MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month, year);
 			MissionLevelRewardData data = template.getRewards().get(info.getLevel());
 
 			player.getPlayer().getMissionLevelReward().setPoints((int) count);
-			System.out.println("add points: " + count);
 
 			if (data.getValue() <= player.getPlayer().getMissionLevelReward().getPoints())
 			{
@@ -1041,5 +1052,168 @@ public final class ItemFunctions
 		}
 
 		return true;
+	}
+
+	
+	public static List<EnchantProbInfo> getEnchantProbInfo(Player player, boolean isMultiEnchant, boolean bUseStorage)
+	{
+		List<EnchantProbInfo> result = new ArrayList<>();
+		if(player == null)
+			return result;
+		double supportRate = ItemFunctions.getEnchantSupportRate(player, isMultiEnchant);
+		double passiveRate = ItemFunctions.getEnchantPassiveRate(player);
+
+		int count = 1;
+		if (isMultiEnchant)
+			count = player.getMultiEnchantingItemsCount();
+		
+		for (int i = 1; i <= count; i++)
+		{
+			double baseRate;
+			if (!isMultiEnchant || (player.getMultiEnchantingItemsBySlot(i) != 0))
+				baseRate = ItemFunctions.getBaseRate(player,isMultiEnchant, i, bUseStorage);
+			else
+				baseRate = 0;
+			
+			double totalRate = baseRate + supportRate + passiveRate;
+			if (totalRate > 10000)
+				totalRate = 10000;
+			EnchantProbInfo enchProbInfo = new EnchantProbInfo();
+
+			if (!isMultiEnchant)
+				enchProbInfo.nItemServerId = player.getEnchantItem().getObjectId();
+			else
+				enchProbInfo.nItemServerId = player.getMultiEnchantingItemsBySlot(i);
+			
+			enchProbInfo.nTotalSuccessProbPermyriad = (int) totalRate;
+			enchProbInfo.nBaseProbPermyriad = (int) baseRate;
+			enchProbInfo.nSupportProbPermyriad= (int) supportRate;
+			enchProbInfo.nItemSkillProbPermyriad = (int) passiveRate;
+			result.add(enchProbInfo);
+		} 
+		return result;
+	}
+	
+	public static double getEnchantSupportRate(Player player, boolean isMultiEnchant)
+	{
+		double supportRate = 0;
+		if (!isMultiEnchant && (player.getSupportItem() != null))
+		{
+			EnchantStone stone = ItemFunctions.getEnchantStone(player.getEnchantItem(), player.getSupportItem());
+			if (stone != null)
+				supportRate = stone.getChance() * 100;
+		}
+		
+		if(player.getEnchantChallengePoint()!=null && (player.getEnchantChallengePoint().ordinal() == 1 ||  player.getEnchantChallengePoint().ordinal() == 2))
+			supportRate = supportRate + player.getEnchantChallengePoint().getChance()*100;
+		return supportRate;
+	}
+	
+	public static double getEnchantPassiveRate(Player player)
+	{
+		double passiveRate = 0;
+		passiveRate += player.getPremiumAccount().getEnchantChanceBonus();
+		passiveRate += player.getVIP().getTemplate().getEnchantChanceBonus();
+		passiveRate *= player.getEnchantChanceModifier();
+		passiveRate *= 100;
+		return passiveRate;
+	}
+	
+	public static int getBaseRate(Player player, boolean isMultiEnchant, int multiEnchanSlot, boolean bUseStorage)
+	{
+		double baseRate = 0;
+		if (!isMultiEnchant)
+		{
+			ItemInstance scrolItem = player.getEnchantScroll();
+			if(scrolItem == null)
+				return (int) baseRate;
+			
+			final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scrolItem.getItemId());
+			if(enchantScroll == null)
+			{
+				_log.info("EnchantScroll == null scrolItem: " + player.getEnchantScroll().getItemId());
+				return (int) baseRate;
+			}
+			final ItemInstance item = player.getEnchantItem();
+			if(item == null)
+				return (int) baseRate;
+			
+			final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId(item.getItemId()));
+			if(variation == null)
+			{
+				_log.info("EnchantVariation == null VariationId: " + enchantScroll.getVariationId(item.getItemId()));
+				return (int) baseRate;
+			}
+			
+			final EnchantLevel enchantLevel = variation.getLevel(player.getEnchantItem().getEnchantLevel() + 1);
+			if (player.getEnchantItem().getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+				baseRate = enchantLevel.getFullBodyChance() * 100;
+			else if (player.getEnchantItem().getTemplate().isMagicWeapon())
+				baseRate = enchantLevel.getMagicWeaponChance() * 100;
+			else
+				baseRate = enchantLevel.getBaseChance() * 100;
+			
+			if(player.getEnchantItem().isWeapon())
+			{
+				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) * 100.0;
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0* 100.0);
+			}
+			if(player.getEnchantItem().isArmor())
+			{
+				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) * 100.0;
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0* 100.0);
+			}
+
+		}
+		else
+		{
+			ItemInstance item = player.getInventory().getItemByObjectId(player.getMultiEnchantingItemsBySlot(multiEnchanSlot));
+			if(bUseStorage && item == null)
+			{
+				//item = player.getEnchantWarehouse().getItemByObjectId(player.getMultiEnchantingItemsBySlot(multiEnchanSlot));
+			}
+			if(item == null)
+				return (int) baseRate;
+			
+			ItemInstance scrolItem = player.getEnchantScroll();
+			if(scrolItem == null)
+				return (int) baseRate;
+			
+			final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scrolItem.getItemId());
+			if(enchantScroll == null)
+			{
+				_log.info("EnchantScroll == null scrolItem: " + scrolItem.getItemId());
+				return (int) baseRate;
+			}
+			
+			final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId(item.getItemId()));
+			if(variation == null)
+			{
+				_log.info("EnchantVariation == null VariationId: " + enchantScroll.getVariationId(item.getItemId()));
+				return (int) baseRate;
+			}
+			
+			final EnchantLevel enchantLevel = variation.getLevel(item.getEnchantLevel() + 1);
+			if (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+				baseRate = enchantLevel.getFullBodyChance() * 100;
+			else if (item.getTemplate().isMagicWeapon())
+				baseRate = enchantLevel.getMagicWeaponChance() * 100;
+			else
+				baseRate = enchantLevel.getBaseChance() * 100;
+
+			if(item.isWeapon())
+			{
+				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) * 100.0;
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0* 100.0);
+			}
+			if(item.isArmor())
+			{
+				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) * 100.0;
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0* 100.0);
+			}
+
+		}
+
+		return (int) baseRate;
 	}
 }

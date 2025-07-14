@@ -23,8 +23,8 @@ public class RequestExQuestComplete implements IClientIncomingPacket
 		final Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		QuestState questState = activeChar.getQuestState(nID);
+	/*	QuestState questState = activeChar.getQuestState(nID);
 		if(questState!=null)
-			questState.getQuest().QuestComplete(questState);
+			questState.getQuest().QuestComplete(questState);*/
 	}
 }

@@ -207,7 +207,8 @@ public abstract class ItemTemplate extends StatTemplate
 	private int _mDef = 0;
 
 	private final AgathionTemplate _agathionTemplate;
-
+	private int[] _shape_shiftable;
+	
 	private boolean collection = false;
 
 	protected ItemTemplate(final StatsSet set)
@@ -1129,4 +1130,36 @@ public abstract class ItemTemplate extends StatTemplate
 		return WorldExchangeItemSubType.ACCESSORY;
 		    
 	}
+
+	public boolean canBeisAppearancePrototype()
+	{
+		if(isArmor())
+		{
+			if(_exType != ExItemType.UPPER_PIECE && _exType != ExItemType.LOWER_PIECE && _exType != ExItemType.FULL_BODY && _exType != ExItemType.GLOVES && _exType != ExItemType.FEET && _exType != ExItemType.SHIELD && _exType != ExItemType.SIGIL)
+				return false;
+		}
+		else if(isAccessory())
+		{
+			if(_exType != ExItemType.HAIR_ACCESSORY)
+				return false;
+		}
+		else if(isWeapon())
+		{
+			if(_exType == ExItemType.OTHER_WEAPON)
+				return false;
+		}
+
+		return isAppearancePrototype();
+	}
+	
+	public final boolean isAppearanceChangeAvailable()
+	{
+		return _shape_shiftable == null? false: _shape_shiftable[0]==1;
+	}
+
+	public final boolean isAppearancePrototype()
+	{
+		return _shape_shiftable == null? false: _shape_shiftable[1]==1;
+	}
+	
 }

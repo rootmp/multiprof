@@ -39,7 +39,7 @@ public class RequestHuntPassBuyPremium implements IClientIncomingPacket
 			return;
 		}
 		
-		if (!player.getInventory().destroyItemByItemId(Config.HUNT_PASS_PREMIUM_ITEM_ID, Config.HUNT_PASS_PREMIUM_COST,"HuntPassBuyPremium"))
+		if (!player.getInventory().destroyItemByItemId(Config.HUNT_PASS_PREMIUM_ITEM_ID, Config.HUNT_PASS_PREMIUM_COST))
 		{
 			player.sendPacket(SystemMsg.NOT_ENOUGH_MONEY_TO_USE_THE_FUNCTION);
 			return;

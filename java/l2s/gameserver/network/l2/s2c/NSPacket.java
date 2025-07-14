@@ -30,7 +30,7 @@ public class NSPacket extends NpcStringContainer
 		packetWriter.writeD(_objId);
 		packetWriter.writeD(_type);
 		packetWriter.writeD(1000000 + _id);
-		writeElements();
+		writeElements(packetWriter);
 		return true;
 	}
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.function.Function;
 
 import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.Config;
@@ -14,6 +15,7 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.MonsterRace;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.HtmlMessage;
+import l2s.gameserver.network.l2.components.IBroadcastPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.DeleteObjectPacket;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
@@ -116,8 +118,8 @@ public class RaceManagerInstance extends NpcInstance
 
 	public void removeKnownPlayer(Player player)
 	{
-		for (int i = 0; i < 8; i++)
-			player.sendPacket(new DeleteObjectPacket(MonsterRace.getInstance().getMonsters()[i]));
+		for(int i = 0; i < 8; i++)
+			player.sendPacket(new DeleteObjectPacket(player, MonsterRace.getInstance().getMonsters()[i]));
 	}
 
 	class Announcement implements Runnable
@@ -480,11 +482,20 @@ public class RaceManagerInstance extends NpcInstance
 			_raceNumber++;
 			ServerVariables.set("monster_race", _raceNumber);
 
-			for (int i = 0; i < 8; i++)
-				broadcast(new DeleteObjectPacket(MonsterRace.getInstance().getMonsters()[i]));
+			for(int i = 0; i < 8; i++) {
+				int finalI = i;
+				broadcastFunc(player -> new DeleteObjectPacket(player, MonsterRace.getInstance().getMonsters()[finalI]));
+			}
 		}
 	}
 
+	protected void broadcastFunc(Function<Player, IBroadcastPacket> packetFunc)
+	{
+		for(RaceManagerInstance manager : managers)
+			if(!manager.isDead())
+				manager.broadcastPacketToOthers(packetFunc);
+	}
+	
 	public MonRaceInfoPacket getPacket()
 	{
 		return packet;

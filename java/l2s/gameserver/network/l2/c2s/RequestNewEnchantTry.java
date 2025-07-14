@@ -194,7 +194,7 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 			if(Rnd.chance(chance))
 			{
 				ItemResult succeItemData = data.getSuccessItemData();
-				List<ItemInstance> items = ItemFunctions.addItem(activeChar, succeItemData.getId(), succeItemData.getCount(), succeItemData.getEnchant(),false, true);
+				List<ItemInstance> items = ItemFunctions.addItem(activeChar, succeItemData.getId(), succeItemData.getCount(), succeItemData.getEnchant(),true);
 				activeChar.sendPacket(new ExEnchantSucess(succeItemData.getId()));
 				if(items != null && !items.isEmpty())
 				{
@@ -209,7 +209,7 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 					activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));
 				else
 				{
-					List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(),false, true);
+					List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(),true);
 					if(items != null && !items.isEmpty())
 					{
 						activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));

@@ -49,6 +49,13 @@ public class EnchantVariation
 		{
 			return _succVisualEffect;
 		}
+
+		public int getChallengeItemCount()
+		{
+			System.out.println("getChallengeItemCount not implemented yet.");
+			return 0;
+			    
+		}
 	}
 
 	private final int _id;

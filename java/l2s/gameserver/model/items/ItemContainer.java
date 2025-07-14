@@ -704,4 +704,30 @@ public abstract class ItemContainer
 		}
 		return _adena.getCount();
 	}
+	
+	public long getInventoryItemCount(int itemId, int enchantLevel, boolean includeEquipped)
+	{
+		long count = 0;
+		readLock();
+		try
+		{
+			for(ItemInstance item : _items)
+			{
+				if((item.getItemId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0)) && (includeEquipped || !item.isEquipped()))
+				{
+					if(item.isStackable())
+					{
+						count = item.getCount();
+						break;
+					}
+					count++;
+				}
+			}
+		}
+		finally
+		{
+			readUnlock();
+		}
+		return count;
+	}
 }
