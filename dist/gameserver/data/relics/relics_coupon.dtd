@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT relic EMPTY>
+<!ATTLIST relic
+	chance CDATA #IMPLIED
+	id CDATA #IMPLIED
+>
+<!ELEMENT list ((coupon+))>
+<!ELEMENT coupon ((relic+))>
+<!ATTLIST coupon
+	count CDATA #IMPLIED
+	grade CDATA #IMPLIED
+	id CDATA #REQUIRED
+>

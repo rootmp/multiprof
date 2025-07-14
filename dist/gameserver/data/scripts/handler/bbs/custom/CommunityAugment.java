@@ -111,7 +111,7 @@ public class CommunityAugment extends CustomCommunityHandler
 							{
 								if (BBSConfig.AUGMENT_SERVICE_COST_ITEM_COUNT > 0 && ItemFunctions.deleteItem(player, BBSConfig.AUGMENT_SERVICE_COST_ITEM_ID, BBSConfig.AUGMENT_SERVICE_COST_ITEM_COUNT, true))
 								{
-									VariationUtils.setVariation(player, equippedWeapon, -1, statsVariation.getId(), skillsVariation.getId());
+									VariationUtils.setVariation(player, equippedWeapon, -1, statsVariation.getId(), skillsVariation.getId(),0);
 									player.broadcastPacket(new MagicSkillUse(player, player, 23128, 1, 1, 0));
 									content.append(tpls.get(124));
 								}

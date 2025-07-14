@@ -12,7 +12,6 @@ import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.listener.script.OnInitScriptListener;
 import l2s.gameserver.model.GameObjectsStorage;
-import l2s.gameserver.tables.FakePlayersTable;
 
 /**
  * Online -> real + fake
@@ -63,7 +62,7 @@ public class totalonline implements OnInitScriptListener
 	// to array for init
 	private int getOnlineMembers()
 	{
-		return GameObjectsStorage.getPlayers(true, true).size() + FakePlayersTable.getActiveFakePlayersCount();
+		return GameObjectsStorage.getPlayers(true, true).size();
 	}
 
 	private int getOfflineMembers()

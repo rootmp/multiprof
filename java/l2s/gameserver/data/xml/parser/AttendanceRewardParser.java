@@ -10,10 +10,11 @@ import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.AttendanceRewardHolder;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.templates.item.data.AttendanceRewardData;
+import l2s.gameserver.utils.TimeUtils;
 
 /**
  * @author Bonux
- **/
+**/
 public final class AttendanceRewardParser extends AbstractParser<AttendanceRewardHolder>
 {
 	private static final AttendanceRewardParser _instance = new AttendanceRewardParser();
@@ -50,6 +51,12 @@ public final class AttendanceRewardParser extends AbstractParser<AttendanceRewar
 			{
 				if(element.attributeValue("reward_by_account") != null)
 					Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT = Boolean.parseBoolean(element.attributeValue("reward_by_account"));
+				
+				if(element.attributeValue("reward_only_premium") != null)
+					Config.VIP_ATTENDANCE_REWARDS_REWARD_ONLY_PREMIUM = Boolean.parseBoolean(element.attributeValue("reward_only_premium"));
+
+				Config.VIP_ATTENDANCE_REWARDS_START_DATE = TimeUtils.getDateFromString(element.attributeValue("start_date",""));
+
 			}
 			else if("normal_account_rewards".equalsIgnoreCase(element.getName()))
 			{

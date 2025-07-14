@@ -63,7 +63,7 @@ public class ChristmasHolidaysManagerInstance extends NpcInstance
 						return;
 					}
 				}
-				AccountVariablesDAO.getInstance().insert(player.getAccountName(), "@christmas_holidays_gift", player.getObjectId());
+				player.getAccVar().setVar("@christmas_holidays_gift", player.getObjectId());
 				ItemFunctions.addItem(player, GIFT_ITEM_ID, GIFT_ITEM_COUNT, true);
 				showChatWindow(player, "events/christmas_holidays/" + getNpcId() + "-gift_given.htm", false);
 			}

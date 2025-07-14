@@ -57,7 +57,7 @@
 		</skills>
 	</npc>
 	<npc id="112" name="Warm Hearted Sno" title="Beginner Supporter">
-		<set name="type" value="events.FightClubManager"/>
+		<!--<set name="type" value="events.FightClubManager"/>-->
 		<set name="ai_type" value="NpcAI"/>
 		<set name="collision_height" value="16.3"/>
 		<set name="collision_radius" value="9"/>

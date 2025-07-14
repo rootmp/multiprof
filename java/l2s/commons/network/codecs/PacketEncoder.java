@@ -34,7 +34,7 @@ public class PacketEncoder extends MessageToByteEncoder<IOutgoingPacket>
 			if(packet.canBeWritten())
 			{
 				PacketWriter packetWriter = new PacketWriter(out);
-				if(!packet.getClass().getSimpleName().equals("MTLPacket") && !packet.getClass().getSimpleName().equals("SocialActionPacket")
+				/*if(!packet.getClass().getSimpleName().equals("MTLPacket") && !packet.getClass().getSimpleName().equals("SocialActionPacket")
 						&& !packet.getClass().getSimpleName().equals("DeleteObjectPacket")
 						&& !packet.getClass().getSimpleName().equals("MagicSkillLaunchedPacket")
 						&& !packet.getClass().getSimpleName().equals("MagicSkillUse")
@@ -51,7 +51,7 @@ public class PacketEncoder extends MessageToByteEncoder<IOutgoingPacket>
 					}
 					System.out.println("PacketEncoder: " + packet.getClass().getSimpleName() + " [Opcode: " + opcodeStr.toString().trim() + "]");
 
-				}
+				}*/
 
 				writeOpcode(packet, out);
 				if(packet.write(packetWriter))

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE list SYSTEM "relics.dtd">
+<list>
+  <summon>
+	<slot id="1" count="1" item_id="91663" price="200" time="0" daily_limit="20">
+		<relic relics_id="1" prob="660000000"/>
+		<relic relics_id="3" prob="660000000"/>
+		<relic relics_id="5" prob="660000000"/>
+		<relic relics_id="7" prob="660000000"/>
+		<relic relics_id="9" prob="660000000"/>
+		<relic relics_id="11" prob="420000000"/>
+		<relic relics_id="15" prob="420000000"/>
+		<relic relics_id="19" prob="420000000"/>
+		<relic relics_id="23" prob="420000000"/>
+		<relic relics_id="27" prob="420000000"/>
+		<relic relics_id="31" prob="42000000"/>
+		<relic relics_id="37" prob="42000000"/>
+		<relic relics_id="43" prob="42000000"/>
+		<relic relics_id="134" prob="42000000"/>
+		<relic relics_id="140" prob="42000000"/>
+		<relic relics_id="146" prob="42000000"/>
+		<relic relics_id="152" prob="42000000"/>
+		<relic relics_id="49" prob="42000000"/>
+		<relic relics_id="55" prob="42000000"/>
+		<relic relics_id="61" prob="42000000"/>
+		<relic relics_id="67" prob="30000000"/>
+		<relic relics_id="73" prob="30000000"/>
+		<relic relics_id="79" prob="30000000"/>
+		<relic relics_id="121" prob="30000000"/>
+		<relic relics_id="127" prob="30000000"/>
+		<relic relics_id="85" prob="30000000"/>
+		<relic relics_id="2" prob="432000000"/>
+		<relic relics_id="4" prob="432000000"/>
+		<relic relics_id="6" prob="432000000"/>
+		<relic relics_id="8" prob="432000000"/>
+		<relic relics_id="10" prob="432000000"/>
+		<relic relics_id="12" prob="220320000"/>
+		<relic relics_id="16" prob="220320000"/>
+		<relic relics_id="20" prob="220320000"/>
+		<relic relics_id="24" prob="220320000"/>
+		<relic relics_id="28" prob="220320000"/>
+		<relic relics_id="32" prob="27360000"/>
+		<relic relics_id="38" prob="27360000"/>
+		<relic relics_id="44" prob="27360000"/>
+		<relic relics_id="135" prob="27360000"/>
+		<relic relics_id="141" prob="27360000"/>
+		<relic relics_id="147" prob="27360000"/>
+		<relic relics_id="153" prob="27360000"/>
+		<relic relics_id="50" prob="27360000"/>
+		<relic relics_id="56" prob="27360000"/>
+		<relic relics_id="62" prob="27360000"/>
+		<relic relics_id="68" prob="6750000"/>
+		<relic relics_id="74" prob="6750000"/>
+		<relic relics_id="80" prob="6750000"/>
+		<relic relics_id="122" prob="6750000"/>
+		<relic relics_id="128" prob="6750000"/>
+		<relic relics_id="86" prob="6750000"/>
+		<relic relics_id="91" prob="6750000"/>
+		<relic relics_id="97" prob="6750000"/>
+		<relic relics_id="103" prob="3600000"/>
+		<relic relics_id="109" prob="3600000"/>
+		<relic relics_id="115" prob="3600000"/>
+		<relic relics_id="133" prob="35000000"/>
+		<relic relics_id="13" prob="35000000"/>
+		<relic relics_id="17" prob="35000000"/>
+		<relic relics_id="21" prob="35000000"/>
+		<relic relics_id="25" prob="35000000"/>
+		<relic relics_id="29" prob="35000000"/>
+		<relic relics_id="33" prob="11130000"/>
+		<relic relics_id="39" prob="11130000"/>
+		<relic relics_id="45" prob="11130000"/>
+		<relic relics_id="136" prob="11130000"/>
+		<relic relics_id="142" prob="11130000"/>
+		<relic relics_id="148" prob="11130000"/>
+		<relic relics_id="154" prob="11130000"/>
+		<relic relics_id="51" prob="11130000"/>
+		<relic relics_id="57" prob="11130000"/>
+		<relic relics_id="63" prob="11130000"/>
+		<relic relics_id="69" prob="3456250"/>
+		<relic relics_id="75" prob="3456250"/>
+		<relic relics_id="81" prob="3456250"/>
+		<relic relics_id="123" prob="3456250"/>
+		<relic relics_id="129" prob="3456250"/>
+		<relic relics_id="87" prob="3456250"/>
+		<relic relics_id="92" prob="3456250"/>
+		<relic relics_id="98" prob="3456250"/>
+		<relic relics_id="104" prob="350000"/>
+		<relic relics_id="110" prob="350000"/>
+		<relic relics_id="116" prob="350000"/>
+		<relic relics_id="14" prob="5828000"/>
+		<relic relics_id="18" prob="5828000"/>
+		<relic relics_id="22" prob="5828000"/>
+		<relic relics_id="26" prob="5828000"/>
+		<relic relics_id="30" prob="5828000"/>
+		<relic relics_id="34" prob="1410000"/>
+		<relic relics_id="40" prob="1410000"/>
+		<relic relics_id="46" prob="1410000"/>
+		<relic relics_id="137" prob="1410000"/>
+		<relic relics_id="143" prob="1410000"/>
+		<relic relics_id="149" prob="1410000"/>
+		<relic relics_id="155" prob="1410000"/>
+		<relic relics_id="52" prob="1410000"/>
+		<relic relics_id="58" prob="1410000"/>
+		<relic relics_id="64" prob="1410000"/>
+		<relic relics_id="70" prob="452375"/>
+		<relic relics_id="76" prob="452375"/>
+		<relic relics_id="82" prob="452375"/>
+		<relic relics_id="124" prob="452375"/>
+		<relic relics_id="130" prob="452375"/>
+		<relic relics_id="88" prob="452375"/>
+		<relic relics_id="93" prob="452375"/>
+		<relic relics_id="99" prob="452375"/>
+		<relic relics_id="105" prob="47000"/>
+		<relic relics_id="111" prob="47000"/>
+		<relic relics_id="117" prob="47000"/>
+		<relic relics_id="35" prob="201600"/>
+		<relic relics_id="41" prob="201600"/>
+		<relic relics_id="47" prob="201600"/>
+		<relic relics_id="138" prob="201600"/>
+		<relic relics_id="144" prob="201600"/>
+		<relic relics_id="150" prob="201600"/>
+		<relic relics_id="156" prob="201600"/>
+		<relic relics_id="53" prob="201600"/>
+		<relic relics_id="59" prob="201600"/>
+		<relic relics_id="65" prob="201600"/>
+		<relic relics_id="71" prob="114000"/>
+		<relic relics_id="77" prob="114000"/>
+		<relic relics_id="83" prob="114000"/>
+		<relic relics_id="125" prob="114000"/>
+		<relic relics_id="131" prob="114000"/>
+		<relic relics_id="89" prob="114000"/>
+		<relic relics_id="94" prob="114000"/>
+		<relic relics_id="100" prob="114000"/>
+		<relic relics_id="106" prob="24000"/>
+		<relic relics_id="112" prob="24000"/>
+		<relic relics_id="118" prob="24000"/>
+	</slot>
+	<slot id="2" count="11" item_id="91663" price="2000" time="0"  daily_limit="2">
+		<relic relics_id="1" prob="660000000"/>
+		<relic relics_id="3" prob="660000000"/>
+		<relic relics_id="5" prob="660000000"/>
+		<relic relics_id="7" prob="660000000"/>
+		<relic relics_id="9" prob="660000000"/>
+		<relic relics_id="11" prob="420000000"/>
+		<relic relics_id="15" prob="420000000"/>
+		<relic relics_id="19" prob="420000000"/>
+		<relic relics_id="23" prob="420000000"/>
+		<relic relics_id="27" prob="420000000"/>
+		<relic relics_id="31" prob="42000000"/>
+		<relic relics_id="37" prob="42000000"/>
+		<relic relics_id="43" prob="42000000"/>
+		<relic relics_id="134" prob="42000000"/>
+		<relic relics_id="140" prob="42000000"/>
+		<relic relics_id="146" prob="42000000"/>
+		<relic relics_id="152" prob="42000000"/>
+		<relic relics_id="49" prob="42000000"/>
+		<relic relics_id="55" prob="42000000"/>
+		<relic relics_id="61" prob="42000000"/>
+		<relic relics_id="67" prob="30000000"/>
+		<relic relics_id="73" prob="30000000"/>
+		<relic relics_id="79" prob="30000000"/>
+		<relic relics_id="121" prob="30000000"/>
+		<relic relics_id="127" prob="30000000"/>
+		<relic relics_id="85" prob="30000000"/>
+		<relic relics_id="2" prob="432000000"/>
+		<relic relics_id="4" prob="432000000"/>
+		<relic relics_id="6" prob="432000000"/>
+		<relic relics_id="8" prob="432000000"/>
+		<relic relics_id="10" prob="432000000"/>
+		<relic relics_id="12" prob="220320000"/>
+		<relic relics_id="16" prob="220320000"/>
+		<relic relics_id="20" prob="220320000"/>
+		<relic relics_id="24" prob="220320000"/>
+		<relic relics_id="28" prob="220320000"/>
+		<relic relics_id="32" prob="27360000"/>
+		<relic relics_id="38" prob="27360000"/>
+		<relic relics_id="44" prob="27360000"/>
+		<relic relics_id="135" prob="27360000"/>
+		<relic relics_id="141" prob="27360000"/>
+		<relic relics_id="147" prob="27360000"/>
+		<relic relics_id="153" prob="27360000"/>
+		<relic relics_id="50" prob="27360000"/>
+		<relic relics_id="56" prob="27360000"/>
+		<relic relics_id="62" prob="27360000"/>
+		<relic relics_id="68" prob="6750000"/>
+		<relic relics_id="74" prob="6750000"/>
+		<relic relics_id="80" prob="6750000"/>
+		<relic relics_id="122" prob="6750000"/>
+		<relic relics_id="128" prob="6750000"/>
+		<relic relics_id="86" prob="6750000"/>
+		<relic relics_id="91" prob="6750000"/>
+		<relic relics_id="97" prob="6750000"/>
+		<relic relics_id="103" prob="3600000"/>
+		<relic relics_id="109" prob="3600000"/>
+		<relic relics_id="115" prob="3600000"/>
+		<relic relics_id="133" prob="35000000"/>
+		<relic relics_id="13" prob="35000000"/>
+		<relic relics_id="17" prob="35000000"/>
+		<relic relics_id="21" prob="35000000"/>
+		<relic relics_id="25" prob="35000000"/>
+		<relic relics_id="29" prob="35000000"/>
+		<relic relics_id="33" prob="11130000"/>
+		<relic relics_id="39" prob="11130000"/>
+		<relic relics_id="45" prob="11130000"/>
+		<relic relics_id="136" prob="11130000"/>
+		<relic relics_id="142" prob="11130000"/>
+		<relic relics_id="148" prob="11130000"/>
+		<relic relics_id="154" prob="11130000"/>
+		<relic relics_id="51" prob="11130000"/>
+		<relic relics_id="57" prob="11130000"/>
+		<relic relics_id="63" prob="11130000"/>
+		<relic relics_id="69" prob="3456250"/>
+		<relic relics_id="75" prob="3456250"/>
+		<relic relics_id="81" prob="3456250"/>
+		<relic relics_id="123" prob="3456250"/>
+		<relic relics_id="129" prob="3456250"/>
+		<relic relics_id="87" prob="3456250"/>
+		<relic relics_id="92" prob="3456250"/>
+		<relic relics_id="98" prob="3456250"/>
+		<relic relics_id="104" prob="350000"/>
+		<relic relics_id="110" prob="350000"/>
+		<relic relics_id="116" prob="350000"/>
+		<relic relics_id="14" prob="5828000"/>
+		<relic relics_id="18" prob="5828000"/>
+		<relic relics_id="22" prob="5828000"/>
+		<relic relics_id="26" prob="5828000"/>
+		<relic relics_id="30" prob="5828000"/>
+		<relic relics_id="34" prob="1410000"/>
+		<relic relics_id="40" prob="1410000"/>
+		<relic relics_id="46" prob="1410000"/>
+		<relic relics_id="137" prob="1410000"/>
+		<relic relics_id="143" prob="1410000"/>
+		<relic relics_id="149" prob="1410000"/>
+		<relic relics_id="155" prob="1410000"/>
+		<relic relics_id="52" prob="1410000"/>
+		<relic relics_id="58" prob="1410000"/>
+		<relic relics_id="64" prob="1410000"/>
+		<relic relics_id="70" prob="452375"/>
+		<relic relics_id="76" prob="452375"/>
+		<relic relics_id="82" prob="452375"/>
+		<relic relics_id="124" prob="452375"/>
+		<relic relics_id="130" prob="452375"/>
+		<relic relics_id="88" prob="452375"/>
+		<relic relics_id="93" prob="452375"/>
+		<relic relics_id="99" prob="452375"/>
+		<relic relics_id="105" prob="47000"/>
+		<relic relics_id="111" prob="47000"/>
+		<relic relics_id="117" prob="47000"/>
+		<relic relics_id="35" prob="201600"/>
+		<relic relics_id="41" prob="201600"/>
+		<relic relics_id="47" prob="201600"/>
+		<relic relics_id="138" prob="201600"/>
+		<relic relics_id="144" prob="201600"/>
+		<relic relics_id="150" prob="201600"/>
+		<relic relics_id="156" prob="201600"/>
+		<relic relics_id="53" prob="201600"/>
+		<relic relics_id="59" prob="201600"/>
+		<relic relics_id="65" prob="201600"/>
+		<relic relics_id="71" prob="114000"/>
+		<relic relics_id="77" prob="114000"/>
+		<relic relics_id="83" prob="114000"/>
+		<relic relics_id="125" prob="114000"/>
+		<relic relics_id="131" prob="114000"/>
+		<relic relics_id="89" prob="114000"/>
+		<relic relics_id="94" prob="114000"/>
+		<relic relics_id="100" prob="114000"/>
+		<relic relics_id="106" prob="24000"/>
+		<relic relics_id="112" prob="24000"/>
+		<relic relics_id="118" prob="24000"/>
+	</slot>
+  </summon>
+  <relic relics_id="1" item_id="100870" grade="1" skill_id="{50702;1}" enchanted="0" npc_id="1025076" level="1" sort_order="1" />
+  <relic relics_id="2" item_id="100870" grade="2" skill_id="{50702;2}" enchanted="0" npc_id="1025076" level="2" sort_order="1" />
+  <relic relics_id="3" item_id="100871" grade="1" skill_id="{50703;1}" enchanted="0" npc_id="1025933" level="1" sort_order="1" />
+  <relic relics_id="4" item_id="100871" grade="2" skill_id="{50703;2}" enchanted="0" npc_id="1025933" level="2" sort_order="1" />
+  <relic relics_id="5" item_id="100872" grade="1" skill_id="{50704;1}" enchanted="0" npc_id="1025934" level="1" sort_order="1" />
+  <relic relics_id="6" item_id="100872" grade="2" skill_id="{50704;2}" enchanted="0" npc_id="1025934" level="2" sort_order="1" />
+  <relic relics_id="7" item_id="100873" grade="1" skill_id="{50705;1}" enchanted="0" npc_id="1025936" level="1" sort_order="1" />
+  <relic relics_id="8" item_id="100873" grade="2" skill_id="{50705;2}" enchanted="0" npc_id="1025936" level="2" sort_order="1" />
+  <relic relics_id="9" item_id="100874" grade="1" skill_id="{50706;1}" enchanted="0" npc_id="1016015" level="1" sort_order="1" />
+  <relic relics_id="10" item_id="100874" grade="2" skill_id="{50706;2}" enchanted="0" npc_id="1016015" level="2" sort_order="1" />
+  <relic relics_id="11" item_id="100875" grade="1" skill_id="{50707;1}" enchanted="0" npc_id="1029120" level="1" sort_order="1" />
+  <relic relics_id="12" item_id="100875" grade="2" skill_id="{50707;2}" enchanted="0" npc_id="1029120" level="2" sort_order="1" />
+  <relic relics_id="13" item_id="100875" grade="3" skill_id="{50707;3}" enchanted="0" npc_id="1029120" level="3" sort_order="1" />
+  <relic relics_id="14" item_id="100875" grade="4" skill_id="{50707;4}" enchanted="0" npc_id="1029120" level="4" sort_order="2" />
+  <relic relics_id="15" item_id="100876" grade="1" skill_id="{50708;1}" enchanted="0" npc_id="1029121" level="1" sort_order="2" />
+  <relic relics_id="16" item_id="100876" grade="2" skill_id="{50708;2}" enchanted="0" npc_id="1029121" level="2" sort_order="2" />
+  <relic relics_id="17" item_id="100876" grade="3" skill_id="{50708;3}" enchanted="0" npc_id="1029121" level="3" sort_order="2" />
+  <relic relics_id="18" item_id="100876" grade="4" skill_id="{50708;4}" enchanted="0" npc_id="1029121" level="4" sort_order="2" />
+  <relic relics_id="19" item_id="100877" grade="1" skill_id="{50709;1}" enchanted="0" npc_id="1029122" level="1" sort_order="2" />
+  <relic relics_id="20" item_id="100877" grade="2" skill_id="{50709;2}" enchanted="0" npc_id="1029122" level="2" sort_order="2" />
+  <relic relics_id="21" item_id="100877" grade="3" skill_id="{50709;3}" enchanted="0" npc_id="1029122" level="3" sort_order="2" />
+  <relic relics_id="22" item_id="100877" grade="4" skill_id="{50709;4}" enchanted="0" npc_id="1029122" level="4" sort_order="2" />
+  <relic relics_id="23" item_id="100878" grade="1" skill_id="{50710;1}" enchanted="0" npc_id="1029123" level="1" sort_order="2" />
+  <relic relics_id="24" item_id="100878" grade="2" skill_id="{50710;2}" enchanted="0" npc_id="1029123" level="2" sort_order="2" />
+  <relic relics_id="25" item_id="100878" grade="3" skill_id="{50710;3}" enchanted="0" npc_id="1029123" level="3" sort_order="2" />
+  <relic relics_id="26" item_id="100878" grade="4" skill_id="{50710;4}" enchanted="0" npc_id="1029123" level="4" sort_order="2" />
+  <relic relics_id="27" item_id="100879" grade="1" skill_id="{50711;1}" enchanted="0" npc_id="1018834" level="1" sort_order="2" />
+  <relic relics_id="28" item_id="100879" grade="2" skill_id="{50711;2}" enchanted="0" npc_id="1018834" level="2" sort_order="2" />
+  <relic relics_id="29" item_id="100879" grade="3" skill_id="{50711;3}" enchanted="0" npc_id="1018834" level="3" sort_order="2" />
+  <relic relics_id="30" item_id="100879" grade="4" skill_id="{50711;4}" enchanted="0" npc_id="1018834" level="4" sort_order="2" />
+  <relic relics_id="31" item_id="100880" grade="1" skill_id="{50712;1}" enchanted="0" npc_id="1029047" level="1" sort_order="5" />
+  <relic relics_id="32" item_id="100880" grade="2" skill_id="{50712;2}" enchanted="0" npc_id="1029047" level="2" sort_order="5" />
+  <relic relics_id="33" item_id="100880" grade="3" skill_id="{50712;3}" enchanted="0" npc_id="1029047" level="3" sort_order="5" />
+  <relic relics_id="34" item_id="100880" grade="4" skill_id="{50712;4}" enchanted="0" npc_id="1029047" level="4" sort_order="5" />
+  <relic relics_id="35" item_id="100880" grade="5" skill_id="{50712;5}" enchanted="0" npc_id="1029047" level="5" sort_order="5" />
+  <relic relics_id="36" item_id="100880" grade="6" skill_id="{50712;6}" enchanted="0" npc_id="1029047" level="6" sort_order="5" />
+  <relic relics_id="37" item_id="100881" grade="1" skill_id="{50713;1}" enchanted="0" npc_id="1015967" level="1" sort_order="5" />
+  <relic relics_id="38" item_id="100881" grade="2" skill_id="{50713;2}" enchanted="0" npc_id="1015967" level="2" sort_order="5" />
+  <relic relics_id="39" item_id="100881" grade="3" skill_id="{50713;3}" enchanted="0" npc_id="1015967" level="3" sort_order="5" />
+  <relic relics_id="40" item_id="100881" grade="4" skill_id="{50713;4}" enchanted="0" npc_id="1015967" level="4" sort_order="5" />
+  <relic relics_id="41" item_id="100881" grade="5" skill_id="{50713;5}" enchanted="0" npc_id="1015967" level="5" sort_order="5" />
+  <relic relics_id="42" item_id="100881" grade="6" skill_id="{50713;6}" enchanted="0" npc_id="1015967" level="6" sort_order="5" />
+  <relic relics_id="43" item_id="100882" grade="1" skill_id="{50714;1}" enchanted="0" npc_id="1015968" level="1" sort_order="5" />
+  <relic relics_id="44" item_id="100882" grade="2" skill_id="{50714;2}" enchanted="0" npc_id="1015968" level="2" sort_order="5" />
+  <relic relics_id="45" item_id="100882" grade="3" skill_id="{50714;3}" enchanted="0" npc_id="1015968" level="3" sort_order="5" />
+  <relic relics_id="46" item_id="100882" grade="4" skill_id="{50714;4}" enchanted="0" npc_id="1015968" level="4" sort_order="5" />
+  <relic relics_id="47" item_id="100882" grade="5" skill_id="{50714;5}" enchanted="0" npc_id="1015968" level="5" sort_order="5" />
+  <relic relics_id="48" item_id="100882" grade="6" skill_id="{50714;6}" enchanted="0" npc_id="1015968" level="6" sort_order="5" />
+  <relic relics_id="49" item_id="101217" grade="1" skill_id="{39303;1}" enchanted="0" npc_id="1029172" level="1" sort_order="10" />
+  <relic relics_id="50" item_id="101217" grade="2" skill_id="{39303;2}" enchanted="0" npc_id="1029172" level="2" sort_order="10" />
+  <relic relics_id="51" item_id="101217" grade="3" skill_id="{39303;3}" enchanted="0" npc_id="1029172" level="3" sort_order="10" />
+  <relic relics_id="52" item_id="101217" grade="4" skill_id="{39303;4}" enchanted="0" npc_id="1029172" level="4" sort_order="10" />
+  <relic relics_id="53" item_id="101217" grade="5" skill_id="{39303;5}" enchanted="0" npc_id="1029172" level="5" sort_order="10" />
+  <relic relics_id="54" item_id="101217" grade="6" skill_id="{39303;6}" enchanted="0" npc_id="1029172" level="6" sort_order="10" />
+  <relic relics_id="55" item_id="101218" grade="1" skill_id="{39304;1}" enchanted="0" npc_id="1019785" level="1" sort_order="10" />
+  <relic relics_id="56" item_id="101218" grade="2" skill_id="{39304;2}" enchanted="0" npc_id="1019785" level="2" sort_order="10" />
+  <relic relics_id="57" item_id="101218" grade="3" skill_id="{39304;3}" enchanted="0" npc_id="1019785" level="3" sort_order="10" />
+  <relic relics_id="58" item_id="101218" grade="4" skill_id="{39304;4}" enchanted="0" npc_id="1019785" level="4" sort_order="10" />
+  <relic relics_id="59" item_id="101218" grade="5" skill_id="{39304;5}" enchanted="0" npc_id="1019785" level="5" sort_order="10" />
+  <relic relics_id="60" item_id="101218" grade="6" skill_id="{39304;6}" enchanted="0" npc_id="1019785" level="6" sort_order="10" />
+  <relic relics_id="61" item_id="101219" grade="1" skill_id="{50464;1}" enchanted="0" npc_id="1019786" level="1" sort_order="11" />
+  <relic relics_id="62" item_id="101219" grade="2" skill_id="{50464;2}" enchanted="0" npc_id="1019786" level="2" sort_order="11" />
+  <relic relics_id="63" item_id="101219" grade="3" skill_id="{50464;3}" enchanted="0" npc_id="1019786" level="3" sort_order="11" />
+  <relic relics_id="64" item_id="101219" grade="4" skill_id="{50464;4}" enchanted="0" npc_id="1019786" level="4" sort_order="11" />
+  <relic relics_id="65" item_id="101219" grade="5" skill_id="{50464;5}" enchanted="0" npc_id="1019786" level="5" sort_order="11" />
+  <relic relics_id="66" item_id="101219" grade="6" skill_id="{50464;6}" enchanted="0" npc_id="1019786" level="6" sort_order="11" />
+  <relic relics_id="67" item_id="101220" grade="1" skill_id="{50463;1}" enchanted="0" npc_id="1019783" level="1" sort_order="15" />
+  <relic relics_id="68" item_id="101220" grade="2" skill_id="{50463;2}" enchanted="0" npc_id="1019783" level="2" sort_order="15" />
+  <relic relics_id="69" item_id="101220" grade="3" skill_id="{50463;3}" enchanted="0" npc_id="1019783" level="3" sort_order="15" />
+  <relic relics_id="70" item_id="101220" grade="4" skill_id="{50463;4}" enchanted="0" npc_id="1019783" level="4" sort_order="15" />
+  <relic relics_id="71" item_id="101220" grade="5" skill_id="{50463;5}" enchanted="0" npc_id="1019783" level="5" sort_order="15" />
+  <relic relics_id="72" item_id="101220" grade="6" skill_id="{50463;6}" enchanted="0" npc_id="1019783" level="6" sort_order="15" />
+  <relic relics_id="73" item_id="101221" grade="1" skill_id="{51297;1}" enchanted="0" npc_id="1016016" level="1" sort_order="13" />
+  <relic relics_id="74" item_id="101221" grade="2" skill_id="{51297;2}" enchanted="0" npc_id="1016016" level="2" sort_order="13" />
+  <relic relics_id="75" item_id="101221" grade="3" skill_id="{51297;3}" enchanted="0" npc_id="1016016" level="3" sort_order="13" />
+  <relic relics_id="76" item_id="101221" grade="4" skill_id="{51297;4}" enchanted="0" npc_id="1016016" level="4" sort_order="13" />
+  <relic relics_id="77" item_id="101221" grade="5" skill_id="{51297;5}" enchanted="0" npc_id="1016016" level="5" sort_order="13" />
+  <relic relics_id="78" item_id="101221" grade="6" skill_id="{51297;6}" enchanted="0" npc_id="1016016" level="6" sort_order="13" />
+  <relic relics_id="79" item_id="101222" grade="1" skill_id="{39302;1}" enchanted="0" npc_id="1018914" level="1" sort_order="20" />
+  <relic relics_id="80" item_id="101222" grade="2" skill_id="{39302;2}" enchanted="0" npc_id="1018914" level="2" sort_order="20" />
+  <relic relics_id="81" item_id="101222" grade="3" skill_id="{39302;3}" enchanted="0" npc_id="1018914" level="3" sort_order="20" />
+  <relic relics_id="82" item_id="101222" grade="4" skill_id="{39302;4}" enchanted="0" npc_id="1018914" level="4" sort_order="20" />
+  <relic relics_id="83" item_id="101222" grade="5" skill_id="{39302;5}" enchanted="0" npc_id="1018914" level="5" sort_order="20" />
+  <relic relics_id="84" item_id="101222" grade="6" skill_id="{39302;6}" enchanted="0" npc_id="1018914" level="6" sort_order="20" />
+  <relic relics_id="85" item_id="101223" grade="1" skill_id="{50554;1}" enchanted="0" npc_id="1029019" level="1" sort_order="30" />
+  <relic relics_id="86" item_id="101223" grade="2" skill_id="{50554;2}" enchanted="0" npc_id="1029019" level="2" sort_order="30" />
+  <relic relics_id="87" item_id="101223" grade="3" skill_id="{50554;3}" enchanted="0" npc_id="1029019" level="3" sort_order="30" />
+  <relic relics_id="88" item_id="101223" grade="4" skill_id="{50554;4}" enchanted="0" npc_id="1029019" level="4" sort_order="30" />
+  <relic relics_id="89" item_id="101223" grade="5" skill_id="{50554;5}" enchanted="0" npc_id="1029019" level="5" sort_order="30" />
+  <relic relics_id="90" item_id="101223" grade="6" skill_id="{50554;6}" enchanted="0" npc_id="1029019" level="6" sort_order="30" />
+  <relic relics_id="91" item_id="101224" grade="2" skill_id="{50579;1}" enchanted="0" npc_id="1018921" level="1" sort_order="10" />
+  <relic relics_id="92" item_id="101224" grade="3" skill_id="{50579;2}" enchanted="0" npc_id="1018921" level="2" sort_order="10" />
+  <relic relics_id="93" item_id="101224" grade="4" skill_id="{50579;3}" enchanted="0" npc_id="1018921" level="3" sort_order="10" />
+  <relic relics_id="94" item_id="101224" grade="5" skill_id="{50579;4}" enchanted="0" npc_id="1018921" level="4" sort_order="10" />
+  <relic relics_id="95" item_id="101224" grade="6" skill_id="{50579;5}" enchanted="0" npc_id="1018921" level="5" sort_order="10" />
+  <relic relics_id="96" item_id="101224" grade="7" skill_id="{50579;6};{50579;7};{50579;8};{50579;9}" enchanted="1;2;3" npc_id="1018921" level="6" sort_order="10" />
+  <relic relics_id="97" item_id="101225" grade="2" skill_id="{50578;1}" enchanted="0" npc_id="1016022" level="1" sort_order="10" />
+  <relic relics_id="98" item_id="101225" grade="3" skill_id="{50578;2}" enchanted="0" npc_id="1016022" level="2" sort_order="10" />
+  <relic relics_id="99" item_id="101225" grade="4" skill_id="{50578;3}" enchanted="0" npc_id="1016022" level="3" sort_order="10" />
+  <relic relics_id="100" item_id="101225" grade="5" skill_id="{50578;4}" enchanted="0" npc_id="1016022" level="4" sort_order="10" />
+  <relic relics_id="101" item_id="101225" grade="6" skill_id="{50578;5}" enchanted="0" npc_id="1016022" level="5" sort_order="10" />
+  <relic relics_id="102" item_id="101225" grade="7" skill_id="{50578;6};{50578;7};{50578;8};{50578;9}" enchanted="1;2;3" npc_id="1016022" level="6" sort_order="10" />
+  <relic relics_id="103" item_id="101226" grade="2" skill_id="{50627;1}" enchanted="0" npc_id="1029212" level="1" sort_order="5" />
+  <relic relics_id="104" item_id="101226" grade="3" skill_id="{50627;2}" enchanted="0" npc_id="1029212" level="2" sort_order="5" />
+  <relic relics_id="105" item_id="101226" grade="4" skill_id="{50627;3}" enchanted="0" npc_id="1029212" level="3" sort_order="5" />
+  <relic relics_id="106" item_id="101226" grade="5" skill_id="{50627;4}" enchanted="0" npc_id="1029212" level="4" sort_order="5" />
+  <relic relics_id="107" item_id="101226" grade="6" skill_id="{50627;5}" enchanted="0" npc_id="1029212" level="5" sort_order="5" />
+  <relic relics_id="108" item_id="101226" grade="7" skill_id="{50627;6};{50627;7};{50627;8};{50627;9}" enchanted="1;2;3" npc_id="1029212" level="6" sort_order="5" />
+  <relic relics_id="109" item_id="101227" grade="2" skill_id="{50688;1}" enchanted="0" npc_id="1016017" level="1" sort_order="5" />
+  <relic relics_id="110" item_id="101227" grade="3" skill_id="{50688;2}" enchanted="0" npc_id="1016017" level="2" sort_order="5" />
+  <relic relics_id="111" item_id="101227" grade="4" skill_id="{50688;3}" enchanted="0" npc_id="1016017" level="3" sort_order="5" />
+  <relic relics_id="112" item_id="101227" grade="5" skill_id="{50688;4}" enchanted="0" npc_id="1016017" level="4" sort_order="5" />
+  <relic relics_id="113" item_id="101227" grade="6" skill_id="{50688;5}" enchanted="0" npc_id="1016017" level="5" sort_order="5" />
+  <relic relics_id="114" item_id="101227" grade="7" skill_id="{50688;6};{50688;7};{50688;8};{50688;9}" enchanted="1;2;3" npc_id="1016017" level="6" sort_order="2" />
+  <relic relics_id="115" item_id="100883" grade="2" skill_id="{50715;1}" enchanted="0" npc_id="1029240" level="1" sort_order="0" />
+  <relic relics_id="116" item_id="100883" grade="3" skill_id="{50715;2}" enchanted="0" npc_id="1029240" level="2" sort_order="0" />
+  <relic relics_id="117" item_id="100883" grade="4" skill_id="{50715;3}" enchanted="0" npc_id="1029240" level="3" sort_order="0" />
+  <relic relics_id="118" item_id="100883" grade="5" skill_id="{50715;4}" enchanted="0" npc_id="1029240" level="4" sort_order="0" />
+  <relic relics_id="119" item_id="100883" grade="6" skill_id="{50715;5}" enchanted="0" npc_id="1029240" level="5" sort_order="0" />
+  <relic relics_id="120" item_id="100883" grade="7" skill_id="{50715;6};{50715;7};{50715;8};{50715;9}" enchanted="1;2;3" npc_id="1029240" level="6" sort_order="0" />
+  <relic relics_id="121" item_id="101566" grade="1" skill_id="{50727;1}" enchanted="0" npc_id="1029247" level="1" sort_order="25" />
+  <relic relics_id="122" item_id="101566" grade="2" skill_id="{50727;2}" enchanted="0" npc_id="1029247" level="2" sort_order="25" />
+  <relic relics_id="123" item_id="101566" grade="3" skill_id="{50727;3}" enchanted="0" npc_id="1029247" level="3" sort_order="25" />
+  <relic relics_id="124" item_id="101566" grade="4" skill_id="{50727;4}" enchanted="0" npc_id="1029247" level="4" sort_order="25" />
+  <relic relics_id="125" item_id="101566" grade="5" skill_id="{50727;5}" enchanted="0" npc_id="1029247" level="5" sort_order="25" />
+  <relic relics_id="126" item_id="101566" grade="6" skill_id="{50727;6}" enchanted="0" npc_id="1029247" level="6" sort_order="25" /> 
+  
+  <!-- p507 -->
+  <relic relics_id="127" item_id="102082" grade="1" skill_id="{50777;1;0}" enchanted="0" npc_id="1016068" level="1" sort_order="25" /> 
+  <relic relics_id="128" item_id="102082" grade="2" skill_id="{50777;2;1}" enchanted="0" npc_id="1016068" level="2" sort_order="25" /> 
+  <relic relics_id="129" item_id="102082" grade="3" skill_id="{50777;3;2}" enchanted="0" npc_id="1016068" level="3" sort_order="25" /> 
+  <relic relics_id="130" item_id="102082" grade="4" skill_id="{50777;4;5}" enchanted="0" npc_id="1016068" level="4" sort_order="25" /> 
+  <relic relics_id="131" item_id="102082" grade="5" skill_id="{50777;5;10}" enchanted="0" npc_id="1016068" level="5" sort_order="25" /> 
+  <relic relics_id="132" item_id="102082" grade="6" skill_id="{50777;6;32}" enchanted="0" npc_id="1016068" level="6" sort_order="25" /> 
+  
+  <relic relics_id="133" item_id="100870" grade="3" skill_id="{50702;3;2}" enchanted="0" npc_id="1025076" level="3" sort_order="1" /> 
+  <relic relics_id="134" item_id="103053" grade="1" skill_id="{50791;1;0}" enchanted="0" npc_id="1017012" level="1" sort_order="25" /> 
+  <relic relics_id="135" item_id="103053" grade="2" skill_id="{50791;2;1}" enchanted="0" npc_id="1017012" level="2" sort_order="25" /> 
+  <relic relics_id="136" item_id="103053" grade="3" skill_id="{50791;3;2}" enchanted="0" npc_id="1017012" level="3" sort_order="25" /> 
+  <relic relics_id="137" item_id="103053" grade="4" skill_id="{50791;4;5}" enchanted="0" npc_id="1017012" level="4" sort_order="25" /> 
+  <relic relics_id="138" item_id="103053" grade="5" skill_id="{50791;5;10}" enchanted="0" npc_id="1017012" level="5" sort_order="25" /> 
+  <relic relics_id="139" item_id="103053" grade="6" skill_id="{50791;6;32}" enchanted="0" npc_id="1017012" level="6" sort_order="25" /> 
+  <relic relics_id="140" item_id="103054" grade="1" skill_id="{50792;1;0}" enchanted="0" npc_id="1017013" level="1" sort_order="25" /> 
+  <relic relics_id="141" item_id="103054" grade="2" skill_id="{50792;2;1}" enchanted="0" npc_id="1017013" level="2" sort_order="25" /> 
+  <relic relics_id="142" item_id="103054" grade="3" skill_id="{50792;3;2}" enchanted="0" npc_id="1017013" level="3" sort_order="25" /> 
+  <relic relics_id="143" item_id="103054" grade="4" skill_id="{50792;4;5}" enchanted="0" npc_id="1017013" level="4" sort_order="25" /> 
+  <relic relics_id="144" item_id="103054" grade="5" skill_id="{50792;5;10}" enchanted="0" npc_id="1017013" level="5" sort_order="25" /> 
+  <relic relics_id="145" item_id="103054" grade="6" skill_id="{50792;6;32}" enchanted="0" npc_id="1017013" level="6" sort_order="25" /> 
+  <relic relics_id="146" item_id="103055" grade="1" skill_id="{50793;1;0}" enchanted="0" npc_id="1017014" level="1" sort_order="25" /> 
+  <relic relics_id="147" item_id="103055" grade="2" skill_id="{50793;2;1}" enchanted="0" npc_id="1017014" level="2" sort_order="25" /> 
+  <relic relics_id="148" item_id="103055" grade="3" skill_id="{50793;3;2}" enchanted="0" npc_id="1017014" level="3" sort_order="25" /> 
+  <relic relics_id="149" item_id="103055" grade="4" skill_id="{50793;4;5}" enchanted="0" npc_id="1017014" level="4" sort_order="25" /> 
+  <relic relics_id="150" item_id="103055" grade="5" skill_id="{50793;5;10}" enchanted="0" npc_id="1017014" level="5" sort_order="25" /> 
+  <relic relics_id="151" item_id="103055" grade="6" skill_id="{50793;6;32}" enchanted="0" npc_id="1017014" level="6" sort_order="25" /> 
+  <relic relics_id="152" item_id="103056" grade="1" skill_id="{50794;1;0}" enchanted="0" npc_id="1017015" level="1" sort_order="25" /> 
+  <relic relics_id="153" item_id="103056" grade="2" skill_id="{50794;2;1}" enchanted="0" npc_id="1017015" level="2" sort_order="25" /> 
+  <relic relics_id="154" item_id="103056" grade="3" skill_id="{50794;3;2}" enchanted="0" npc_id="1017015" level="3" sort_order="25" /> 
+  <relic relics_id="155" item_id="103056" grade="4" skill_id="{50794;4;5}" enchanted="0" npc_id="1017015" level="4" sort_order="25" /> 
+  <relic relics_id="156" item_id="103056" grade="5" skill_id="{50794;5;10}" enchanted="0" npc_id="1017015" level="5" sort_order="25" /> 
+  <relic relics_id="157" item_id="103056" grade="6" skill_id="{50794;6;32}" enchanted="0" npc_id="1017015" level="6" sort_order="25" /> 
+</list>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (date_info)*>
+
+	<!ELEMENT date_info (points)*>
+	<!ATTLIST date_info
+		month CDATA #REQUIRED
+		year CDATA #REQUIRED
+		max_reward_lvl CDATA #REQUIRED
+		final_reward_id CDATA #REQUIRED
+		final_reward_count CDATA #REQUIRED
+		bonus_reward CDATA #REQUIRED>
+
+		<!ELEMENT points (#PCDATA)*>
+		<!ATTLIST points
+			level CDATA #REQUIRED
+			value CDATA #REQUIRED
+			base_reward_id CDATA #REQUIRED
+			base_reward_count CDATA #REQUIRED
+			additional_reward_id CDATA #IMPLIED
+			additional_reward_count CDATA #IMPLIED>

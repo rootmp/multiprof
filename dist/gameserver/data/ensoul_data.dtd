@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT skill EMPTY>
+<!ATTLIST skill
+	id CDATA #REQUIRED
+	level CDATA #REQUIRED
+>
+<!ELEMENT remove EMPTY>
+<!ATTLIST remove
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED
+>
+<!ELEMENT list ((ensoul_fee_data, ensoul_data))>
+<!ELEMENT insert EMPTY>
+<!ATTLIST insert
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED
+>
+<!ELEMENT ensoul_fee_info (((insert, change)?, remove))>
+<!ATTLIST ensoul_fee_info
+	type CDATA #REQUIRED
+>
+<!ELEMENT ensoul_fee_data ((ensoul_fee+))>
+<!ELEMENT ensoul_fee ((ensoul_fee_info+))>
+<!ATTLIST ensoul_fee
+	chest CDATA #IMPLIED
+	feet CDATA #IMPLIED
+	gloves CDATA #IMPLIED
+	head CDATA #IMPLIED
+	legs CDATA #IMPLIED
+	onepiece CDATA #IMPLIED
+	weapon CDATA #IMPLIED
+>
+<!ELEMENT ensoul_data ((ensoul+))>
+<!ELEMENT ensoul ((skill?))>
+<!ATTLIST ensoul
+	extraction_item_id CDATA #REQUIRED
+	id CDATA #REQUIRED
+	item_id CDATA #REQUIRED
+>
+<!ELEMENT change EMPTY>
+<!ATTLIST change
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED
+>

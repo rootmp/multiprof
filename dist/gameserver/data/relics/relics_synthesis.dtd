@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT relic EMPTY>
+<!ATTLIST relic
+	prob        CDATA #REQUIRED
+	relics_id        CDATA #REQUIRED
+>
+<!ELEMENT list ((grade+))>
+<!ELEMENT grade ((relic+))>
+<!ATTLIST grade
+	id        CDATA #REQUIRED
+>

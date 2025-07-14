@@ -2,6 +2,8 @@ package l2s.gameserver.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -81,5 +83,11 @@ public class TimeUtils
 	public static long getTimeFromString(String datetime, String dateFormat)
 	{
 		return getTimeFromString(datetime, dateFormat, 0L);
+	}
+
+	public static LocalDateTime getDateFromString(String datetime)
+	{
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
+		return LocalDateTime.parse(datetime, formatter);
 	}
 }

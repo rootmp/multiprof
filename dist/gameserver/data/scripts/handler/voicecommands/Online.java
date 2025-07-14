@@ -3,7 +3,6 @@ package handler.voicecommands;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.tables.FakePlayersTable;
 
 public class Online extends ScriptVoiceCommandHandler
 {
@@ -20,7 +19,7 @@ public class Online extends ScriptVoiceCommandHandler
 
 		if (command.equals("online"))
 		{
-			int i = GameObjectsStorage.getPlayers(true, true).size() + FakePlayersTable.getActiveFakePlayersCount();
+			int i = GameObjectsStorage.getPlayers(true, true).size();
 			int j = GameObjectsStorage.getOfflinePlayers().size();
 			if (activeChar.isLangRus())
 			{

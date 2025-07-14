@@ -16,7 +16,7 @@ import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.model.entity.events.impl.SingleMatchEvent;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
 import l2s.gameserver.model.instances.NpcInstance;
-import l2s.gameserver.network.l2.c2s.L2GameClientPacket;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.c2s.RequestBypassToServer;
 import l2s.gameserver.network.l2.c2s.RequestOlympiadMatchList;
 import l2s.gameserver.network.l2.components.CustomMessage;
@@ -203,7 +203,7 @@ public class CustomObservationManagerInstance extends NpcInstance
 	}
 
 	@Override
-	public boolean canPassPacket(Player player, Class<? extends L2GameClientPacket> packet, Object... arg)
+	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
 		if (packet == RequestOlympiadMatchList.class)
 		{

@@ -1,10 +1,8 @@
 DROP TABLE IF EXISTS `character_hennas`;
-CREATE TABLE `character_hennas` (
-	`char_obj_id` INT NOT NULL,
-	`class_index` TINYINT UNSIGNED NOT NULL,
-	`slot` INT NOT NULL,
-	`symbol_id` SMALLINT UNSIGNED NOT NULL DEFAULT '0',
-	`enchant_exp` INT UNSIGNED NOT NULL DEFAULT '0',
-	`potential_id` TINYINT UNSIGNED NOT NULL DEFAULT '0',
-	PRIMARY KEY  (`char_obj_id`,`class_index`,`slot`)
-) ENGINE=MyISAM;
+CREATE TABLE IF NOT EXISTS `character_hennas` (
+  `charId` INT UNSIGNED NOT NULL DEFAULT 0,
+  `symbol_id` INT,
+  `slot` INT NOT NULL DEFAULT 0,
+  `class_index` INT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`charId`,`slot`,`class_index`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;

@@ -88,7 +88,7 @@ public class GameServer
 	private long _serverStartTimeMillis;
 	private String _licenseHost;
 	private int _onlineLimit;
-	public static boolean DEVELOP = false;
+	public static boolean DEVELOP = true;
 
 	public static final int AUTH_SERVER_PROTOCOL = 4;
 

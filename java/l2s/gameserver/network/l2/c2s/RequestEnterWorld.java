@@ -37,6 +37,7 @@ import l2s.gameserver.model.mail.Mail;
 import l2s.gameserver.network.authcomm.AuthServerCommunication;
 import l2s.gameserver.network.authcomm.gs2as.ChangeAllowedHwid;
 import l2s.gameserver.network.authcomm.gs2as.ChangeAllowedIp;
+import l2s.gameserver.network.l2.ConnectionState;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.components.StatusUpdate;
@@ -136,7 +137,8 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		}
 
 		GameStats.incrementPlayerEnterGame();
-
+		client.setConnectionState(ConnectionState.IN_GAME);
+		client.setIgnoreInvalidConnectionState(false);
 		onEnterWorld(activeChar);
 	}
 
@@ -151,8 +153,6 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			activeChar.sendPacket(new ExConnectedTimeAndGettableReward(activeChar));
 			activeChar.sendPacket(new ExOneDayReceiveRewardList(activeChar));
 		}
-		activeChar.sendPacket(new ExPeriodicHenna(activeChar));
-		activeChar.sendPacket(new HennaInfoPacket(activeChar));
 
 		List<Castle> castleList = ResidenceHolder.getInstance().getResidenceList(Castle.class);
 		for(Castle c : castleList)

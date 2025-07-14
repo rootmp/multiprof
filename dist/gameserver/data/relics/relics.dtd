@@ -1,0 +1,25 @@
+<!ELEMENT list (relic | summon)*>
+
+<!ELEMENT relic EMPTY>
+<!ATTLIST relic
+    relics_id     CDATA #REQUIRED
+    prob    CDATA #IMPLIED
+    item_id       CDATA #IMPLIED
+    grade         CDATA #IMPLIED
+    skill_id      CDATA #IMPLIED
+    enchanted     CDATA #IMPLIED
+    npc_id        CDATA #IMPLIED
+    level         CDATA #IMPLIED
+    sort_order    CDATA #IMPLIED
+>
+
+<!ELEMENT summon (slot+)>
+<!ELEMENT slot ((relic+))>
+<!ATTLIST slot
+    id        CDATA #REQUIRED
+	count        CDATA #REQUIRED
+    item_id   CDATA #REQUIRED
+    price     CDATA #REQUIRED
+    time      CDATA #IMPLIED
+	daily_limit      CDATA #IMPLIED
+>

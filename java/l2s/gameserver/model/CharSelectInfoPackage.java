@@ -37,7 +37,9 @@ public class CharSelectInfoPackage
 	private long _lastAccess = 0L;
 	private int _face = 0;
 	private int _hairStyle = 0;
+	private int _beautyHairStyle = 0;
 	private int _hairColor = 0;
+	private int _beautyHaircolor = 0;
 	private int _sex = 0;
 	private int _karma = 0, _pk = 0, _pvp = 0;
 	private int _maxHp = 0;
@@ -52,6 +54,7 @@ public class CharSelectInfoPackage
 	private long _lastLogin = 0;
 	private final Map<String, CharacterVariable> _variables = new ConcurrentHashMap<>();
 
+	
 	/**
 	 * @param int1
 	 */
@@ -465,5 +468,25 @@ public class CharSelectInfoPackage
 	public void setSayhasGrace(int points)
 	{
 		_sayhasGrace = points;
+	}
+	
+	public int getBeautyHairStyle()
+	{
+		return _beautyHairStyle;
+	}
+
+	public int getBeautyHairColor()
+	{
+		return _beautyHaircolor;
+	}
+	
+	public void setBeautyHairStyle(int beautyHairStyle)
+	{
+		_beautyHairStyle=beautyHairStyle;
+	}
+
+	public void setBeautyHairColor(int beautyHaircolor)
+	{
+		_beautyHaircolor =beautyHaircolor;
 	}
 }

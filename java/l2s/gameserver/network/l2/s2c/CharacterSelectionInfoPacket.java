@@ -33,9 +33,12 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 	private final CharSelectInfoPackage[] _characterPackages;
 	private final boolean _hasPremiumAccount;
 
+	private int _rev;
+
 	public CharacterSelectionInfoPacket(GameClient client)
 	{
 		_loginName = client.getLogin();
+		_rev = client.getRevision();
 		_sessionId = client.getSessionKey().playOkID1;
 		_characterPackages = loadCharacterSelectInfo(_loginName);
 		_hasPremiumAccount = client.getPremiumAccountType() > 0 && client.getPremiumAccountExpire() > (System.currentTimeMillis() / 1000L);
@@ -46,6 +49,9 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 		return _characterPackages;
 	}
 
+	//474 Ru SdSddddddddddffQQfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhhhhhdddffdddcddddddd ffddddcccddcdcccc
+	//502 Ru SdSddddddddddffQQfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhhhhhdddffdddcddddddddffddddcccddcdccccddddddddd
+	//507 Ru SdSddddddddddffQQfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhhhhhdddffdddcddddddddffddddcccddcdccccdddddddddd
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
@@ -53,12 +59,11 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 
 		packetWriter.writeD(size);
 		packetWriter.writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Максимальное количество персонажей на сервере
-		packetWriter.writeC(size >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // 0x00 - Разрешить, 0x01 - запретить. Разрешает или
-		// запрещает создание игроков
-		packetWriter.writeC(0x00);
-		packetWriter.writeD(0x02); // 0x01 - Выводит окно, что нужно купить игру, что создавать более 2х чаров.
-		// 0х02 - обычное лобби.
-		packetWriter.writeC(0x00); // 0x01 - Предлогает купить ПА.
+		packetWriter.writeC(size >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // 0x00 - Разрешить, 0x01 - запретить. Разрешает или запрещает создание игроков
+		
+		packetWriter.writeC(1); // 0=can't play, 1=can play free until level 85, 2=100% free play
+		packetWriter.writeD(2); // if 1, Korean client
+		packetWriter.writeC(0x00); // Gift message for inactive accounts // 152
 		packetWriter.writeC(0x00); // Balthus Knights
 
 		long lastAccess = -1L;
@@ -79,7 +84,7 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeS(_loginName);
 			packetWriter.writeD(_sessionId);
 			packetWriter.writeD(charInfoPackage.getClanId());
-			packetWriter.writeD(0x00); // Builder level
+			packetWriter.writeD(0x00); // ??
 
 			packetWriter.writeD(charInfoPackage.getSex());
 			packetWriter.writeD(charInfoPackage.getRace());
@@ -104,106 +109,122 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(charInfoPackage.getPk());
 			packetWriter.writeD(charInfoPackage.getPvP());
 
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
 
-			packetWriter.writeD(0x00); // unk Ertheia
-			packetWriter.writeD(0x00); // unk Ertheia
+			packetWriter.writeD(0); // Ertheia
+			packetWriter.writeD(0); // Ertheia
 
 			for(int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 				packetWriter.writeD(charInfoPackage.getPaperdollItemId(PAPERDOLL_ID));
 
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_RHAND)); // Внешний вид оружия (ИД Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LHAND)); // Внешний вид щита (ИД Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_GLOVES)); // Внешний вид перчаток (ИД
-			// Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_CHEST)); // Внешний вид верха (ИД Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LEGS)); // Внешний вид низа (ИД Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_FEET)); // Внешний вид ботинок (ИД Итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LRHAND)); // ???
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_HAIR)); // Внешний вид шляпы (ИД итема).
-			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_DHAIR)); // Внешний вид маски (ИД итема).
-
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_RHAND)); //Внешний вид оружия (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LHAND)); //Внешний вид щита (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_GLOVES)); //Внешний вид перчаток (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_CHEST)); //Внешний вид верха (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LEGS)); //Внешний вид низа (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_FEET)); //Внешний вид ботинок (ИД Итема).
+			packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_LRHAND)); //???
+			if(charInfoPackage.isHairAccessoryEnabled())
+			{
+				packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_HAIR)); //Внешний вид шляпы (ИД итема).
+				packetWriter.writeD(charInfoPackage.getPaperdollVisualId(Inventory.PAPERDOLL_DHAIR)); //Внешний вид маски (ИД итема).
+			}
+			else
+			{
+				packetWriter.writeD(0);
+				packetWriter.writeD(0);
+			}
+			//hhhhh
 			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_CHEST));
 			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_LEGS));
 			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_HEAD));
 			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_GLOVES));
 			packetWriter.writeH(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_FEET));
 
-			packetWriter.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR)
-					> 0 ? charInfoPackage.getSex() : charInfoPackage.getHairStyle());
-			packetWriter.writeD(charInfoPackage.getHairColor());
+			//ddd
+			if(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 && !charInfoPackage.isHairAccessoryEnabled())
+			{
+				packetWriter.writeD(charInfoPackage.getBeautyHairStyle() > 0 ? charInfoPackage.getBeautyHairStyle() : charInfoPackage.getHairStyle());
+				packetWriter.writeD(charInfoPackage.getBeautyHairColor() > 0 ? charInfoPackage.getBeautyHairColor() : charInfoPackage.getHairColor());
+			}
+			else
+			{
+				packetWriter.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? charInfoPackage.getHairStyle() : (charInfoPackage.getBeautyHairStyle() > 0 ? charInfoPackage.getBeautyHairStyle() : charInfoPackage.getHairStyle()));
+				packetWriter.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? charInfoPackage.getHairColor() : charInfoPackage.getBeautyHairColor() > 0 ? charInfoPackage.getBeautyHairColor() : charInfoPackage.getHairColor());
+			}
 			packetWriter.writeD(charInfoPackage.getFace());
 
+			//ff
 			packetWriter.writeF(charInfoPackage.getMaxHp()); // hp max
 			packetWriter.writeF(charInfoPackage.getMaxMp()); // mp max
-
+			//ddd
 			packetWriter.writeD(charInfoPackage.getAccessLevel() > -100 ? charInfoPackage.getDeleteTimer() : -1);
 			packetWriter.writeD(charInfoPackage.getClassId());
 			packetWriter.writeD(i == lastUsed ? 1 : 0);
-
+			//c
 			packetWriter.writeC(Math.min(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_RHAND), 127));
+			//dddddddd prot 502
 			packetWriter.writeD(charInfoPackage.getPaperdollVariation1Id(Inventory.PAPERDOLL_RHAND));
 			packetWriter.writeD(charInfoPackage.getPaperdollVariation2Id(Inventory.PAPERDOLL_RHAND));
-			packetWriter.writeD(0x00); // Transform ID
 
-			// TODO: Pet info?
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeD(0x00);
-			packetWriter.writeF(0x00);
-			packetWriter.writeF(0x00);
-
+			packetWriter.writeD(0); // Currently on retail when you are on character select you don't see your transformation.
+			packetWriter.writeD(0); // Pet NpcId
+			packetWriter.writeD(0); // Pet level
+			packetWriter.writeD(0); // Pet Food
+			packetWriter.writeD(0); // Pet Food Level
+			packetWriter.writeD(0);
+			//ff
+			packetWriter.writeF(0); // Current pet HP
+			packetWriter.writeF(0); // Current pet MP
+			//dddd
 			packetWriter.writeD(charInfoPackage.getSayhasGrace()); // Vitality Points
-			if(_hasPremiumAccount)
-				packetWriter.writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_PA_RATE) : 0);
-			else
-				packetWriter.writeD(charInfoPackage.getSayhasGrace() > 0 ? (int) (100 * Config.ALT_SAYHAS_GRACE_RATE) : 0);
-			packetWriter.writeD(charInfoPackage.getVitalityItemsUsed()); // Use Vitality Potions Left
+			packetWriter.writeD((int) (charInfoPackage.getSayhasGrace() > 0 ? (_hasPremiumAccount ? Config.ALT_SAYHAS_GRACE_PA_RATE : Config.ALT_SAYHAS_GRACE_RATE) : 1)); //TODO Vitality Rate
+			packetWriter.writeD(5); // Use Vitality Potions Left
 			packetWriter.writeD(charInfoPackage.isAvailable());
+			//cc
 			packetWriter.writeC(0x00); // Chaos Festival Winner
 			packetWriter.writeC(charInfoPackage.isHero()); // hero glow
+			//cdd
 			packetWriter.writeC(charInfoPackage.isHairAccessoryEnabled() ? 0x01 : 0x00); // show hair accessory if enabled
-			if(charInfoPackage.getAccessLevel() > -100)
-			{
-				packetWriter.writeD(0x00);
-				packetWriter.writeD((int) (charInfoPackage.getLastLoginTime() / 1000)); // last login time
-			}
-			else
-			{
-				packetWriter.writeD(0x01);
-				packetWriter.writeD(0x00); // TODO: unban time
-			}
-			packetWriter.writeD(0); // unk 338
-			packetWriter.writeC(0); // unk 338
+			packetWriter.writeD(0x00); // 235 - ban time left
+			packetWriter.writeD((int) (charInfoPackage.getLastAccess() / 1000)); // 235 - last play time
+
+			packetWriter.writeD(0); // 338
+			packetWriter.writeC(0);//charInfoPackage.getHairColor() + 1); // 338 - DK color.
 
 			int specialMountId = 0;
 			if(charInfoPackage.getBaseClassId() == 217)
 			{
 				if(haveLearnedSkill(charInfoPackage.getObjectId(), 47865)) // wild evolution
-				{
 					specialMountId = 4;
-				}
 				else if((charInfoPackage.getClassId() == 217) || (charInfoPackage.getClassId() == 218))
-				{
 					specialMountId = 1;
-				}
 				else if(charInfoPackage.getClassId() == 219)
-				{
 					specialMountId = 2;
-				}
 				else if(charInfoPackage.getClassId() == 220)
-				{
 					specialMountId = 3;
-				}
 			}
 			packetWriter.writeC(specialMountId); // special mount type for vanguard riders
+			packetWriter.writeC(0);
+			packetWriter.writeC(0);
+			packetWriter.writeC(0);
+
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
+			packetWriter.writeD(0);
 		}
 		return true;
 	}
@@ -223,7 +244,7 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 			while(rset.next())
 			{
 				if(rset.getInt("skill_id") == skillId)
-				{ return true; }
+				 return true; 
 			}
 		}
 		catch(final Exception e)
@@ -249,8 +270,7 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement("SELECT * FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id AND cs.active=1) WHERE account_name=? ORDER BY createtime LIMIT "
-					+ Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT);
+			statement = con.prepareStatement("SELECT * FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id AND cs.active=1) WHERE account_name=? ORDER BY createtime LIMIT " + Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT);
 			statement.setString(1, loginName);
 			rset = statement.executeQuery();
 			while(rset.next()) // fills the package
@@ -343,6 +363,9 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 			int objectId = chardata.getInt("obj_Id");
 			int classid = chardata.getInt("class_id");
 			int baseClassId = ClassId.valueOf(classid).getFirstParent(chardata.getInt("sex")).getId();
+			boolean useBaseClass = chardata.getInt("type") == SubClassType.BASE_CLASS.ordinal();
+			if(!useBaseClass)
+				baseClassId = restoreBaseClassId(objectId);
 
 			Race race = ClassId.valueOf(baseClassId).getRace();
 			if(race == null)
@@ -367,11 +390,11 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 			int face = chardata.getInt("beautyFace");
 			charInfopackage.setFace(face > 0 ? face : chardata.getInt("face"));
 
-			int hairstyle = chardata.getInt("beautyHairstyle");
-			charInfopackage.setHairStyle(hairstyle > 0 ? hairstyle : chardata.getInt("hairstyle"));
+			charInfopackage.setBeautyHairStyle(chardata.getInt("beautyHairstyle"));
+			charInfopackage.setHairStyle(chardata.getInt("hairstyle"));
 
-			int haircolor = chardata.getInt("beautyHaircolor");
-			charInfopackage.setHairColor(haircolor > 0 ? haircolor : chardata.getInt("haircolor"));
+			charInfopackage.setBeautyHairColor(chardata.getInt("beautyHaircolor"));
+			charInfopackage.setHairColor(chardata.getInt("haircolor"));
 
 			charInfopackage.setSex(chardata.getInt("sex"));
 
@@ -407,7 +430,6 @@ public class CharacterSelectionInfoPacket implements IClientOutgoingPacket
 
 			if(charInfopackage.getAccessLevel() < 0 && !AutoBan.isBanned(objectId))
 				charInfopackage.setAccessLevel(0);
-
 			charInfopackage.setSayhasGrace(chardata.getInt("sayhas_grace_points"));
 
 			charInfopackage.setChangedOldName(restoreChangedOldName(objectId));

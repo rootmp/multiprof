@@ -41,7 +41,7 @@ public class Toma extends NpcAI
 
 		_lastTeleport = System.currentTimeMillis();
 
-		actor.broadcastPacket(new MagicSkillUse(actor, 4671, 1, 1000, 0L));
+		actor.broadcastPacket(new MagicSkillUse(actor, 4671, 1, 1000,0, 0L));
 		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> actor.teleToLocation(loc), 10L, 1000L);
 		return true;
 	}

@@ -1,6 +1,8 @@
 package l2s.gameserver.scripts;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -10,6 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.jar.JarEntry;
+import java.util.jar.JarInputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.FileFilterUtils;
@@ -31,37 +35,107 @@ import l2s.gameserver.model.instances.NpcInstance;
 import l2s.gameserver.scripts.annotation.OnScriptInit;
 import l2s.gameserver.scripts.annotation.OnScriptLoad;
 
-/**
- * Min rework by Hl4p3x
- * Script for loading datapack scripts.
- */
 public class Scripts
 {
-	private static final Logger LOGGER = LoggerFactory.getLogger(Scripts.class);
+	public class ScriptListenerImpl extends ListenerList<Scripts>
+	{
+		public void load()
+		{
+			for(Listener<Scripts> listener : getListeners())
+				if(OnLoadScriptListener.class.isInstance(listener))
+					((OnLoadScriptListener) listener).onLoad();
+		}
+
+		public void init()
+		{
+			for(Listener<Scripts> listener : getListeners())
+				if(OnInitScriptListener.class.isInstance(listener))
+					((OnInitScriptListener) listener).onInit();
+		}
+	}
+
+	private static final Logger _log = LoggerFactory.getLogger(Scripts.class);
+
+	private static final Scripts _instance = new Scripts();
+
+	public static Scripts getInstance()
+	{
+		return _instance;
+	}
 
 	private final Map<String, Class<?>> _classes = new TreeMap<String, Class<?>>();
 	private final Map<Class<?>, Object> _instances = new ConcurrentHashMap<Class<?>, Object>();
 	private final ScriptListenerImpl _listeners = new ScriptListenerImpl();
 
-	public Scripts()
+	private Scripts()
 	{
 		load();
 	}
 
-	protected void load()
+	/**
+	 * Вызывается при загрузке сервера. Загрузает все скрипты в data/scripts. Не инициирует объекты и обработчики.
+	 *
+	 * @return true, если загрузка прошла успешно
+	 */
+	private void load()
 	{
-		LOGGER.info("Scripts: Loading...");
+		_log.info("Scripts: Loading...");
 
-		final List<Class<?>> classes = load(new File(Config.DATAPACK_ROOT, "data/scripts"));
+		List<Class<?>> classes = load(new File(Config.DATAPACK_ROOT, "data/scripts"));
+
 		if(classes.isEmpty())
-		{ throw new Error("Failed loading scripts!"); }
+			throw new Error("Failed loading scripts!");
 
 		for(Class<?> clazz : classes)
-		{
 			_classes.put(clazz.getName(), clazz);
+
+		File f = new File("./lib/scripts.jar");
+		if(f.exists())
+		{
+			_log.info("Scripts: Loading library...");
+
+			JarInputStream stream = null;
+			try
+			{
+				stream = new JarInputStream(new FileInputStream(f));
+				JarEntry entry = null;
+				while((entry = stream.getNextJarEntry()) != null)
+				{
+					//Вложенные класс
+					if(entry.getName().contains(ClassUtils.INNER_CLASS_SEPARATOR) || !entry.getName().endsWith(".class"))
+						continue;
+
+					String name = entry.getName().replace(".class", "").replace("/", ".");
+					if(_classes.containsKey(name))
+						continue;
+
+					Class<?> clazz = getClass().getClassLoader().loadClass(name);
+					if(Modifier.isAbstract(clazz.getModifiers()))
+						continue;
+
+					_classes.put(clazz.getName(), clazz);
+				}
+			}
+			catch(Exception e)
+			{
+				throw new Error("Failed loading scripts library!");
+			}
+			finally
+			{
+				try
+				{
+					if(stream != null)
+						stream.close();
+				}
+				catch(IOException ioe)
+				{
+					//
+				}
+			}
 		}
 
-		LOGGER.info("Scripts: Loaded {} classes.", _classes.size());
+		_log.info("Scripts: Loaded " + _classes.size() + " classes.");
+
 		for(Class<?> clazz : _classes.values())
 		{
 			try
@@ -82,55 +156,57 @@ public class Scripts
 						Class<?>[] par = method.getParameterTypes();
 						if(par.length != 0)
 						{
-							LOGGER.error("Wrong parameters for load method: {}, class: {}", method.getName(), clazz.getSimpleName());
+							_log.error("Wrong parameters for load method: " + method.getName() + ", class: " + clazz.getSimpleName());
 							continue;
 						}
 
 						try
 						{
 							if(Modifier.isStatic(method.getModifiers()))
-							{
 								method.invoke(clazz);
-							}
 							else
 							{
 								if(o == null)
-								{
 									o = clazz.getDeclaredConstructor().newInstance();
-								}
 								method.invoke(o);
 							}
 						}
 						catch(Exception e)
 						{
-							LOGGER.error("Exception: {}", e);
+							_log.error("Exception: " + e, e);
 						}
 					}
 				}
 			}
 			catch(Exception e)
 			{
-				LOGGER.error("", e);
+				_log.error("", e);
 			}
 		}
 
 		_listeners.load();
 	}
 
+	/**
+	 * Вызывается при загрузке сервера. Инициализирует объекты и обработчики.
+	 */
 	public void init()
 	{
 		for(Class<?> clazz : _classes.values())
-		{
 			init(clazz);
-		}
+
 		_listeners.init();
 	}
 
+	/**
+	 * Загрузить все классы в data/scripts/target
+	 *
+	 * @param target путь до класса, или каталога со скриптами
+	 * @return список загруженых скриптов
+	 */
 	public List<Class<?>> load(File target)
 	{
 		Collection<File> scriptFiles = Collections.emptyList();
-		final List<Class<?>> classes = new ArrayList<Class<?>>();
-		final Compiler compiler = new Compiler();
 
 		if(target.isFile())
 		{
@@ -141,32 +217,32 @@ public class Scripts
 		{
 			scriptFiles = FileUtils.listFiles(target, FileFilterUtils.suffixFileFilter(".java"), FileFilterUtils.directoryFileFilter());
 		}
-
 		if(scriptFiles.isEmpty())
-		{ return Collections.emptyList(); }
+			return Collections.emptyList();
+
+		List<Class<?>> classes = new ArrayList<Class<?>>();
+		Compiler compiler = new Compiler();
 
 		if(compiler.compile(scriptFiles))
 		{
 			MemoryClassLoader classLoader = compiler.getClassLoader();
 			for(String name : classLoader.getLoadedClasses())
 			{
+				//Вложенные класс
 				if(name.contains(ClassUtils.INNER_CLASS_SEPARATOR))
-				{
 					continue;
-				}
 
 				try
 				{
 					Class<?> clazz = classLoader.loadClass(name);
 					if(Modifier.isAbstract(clazz.getModifiers()))
-					{
 						continue;
-					}
+
 					classes.add(clazz);
 				}
 				catch(ClassNotFoundException e)
 				{
-					LOGGER.error("Scripts: Can't load script class: {}", name, e);
+					_log.error("Scripts: Can't load script class: " + name, e);
 					classes.clear();
 					break;
 				}
@@ -184,9 +260,7 @@ public class Scripts
 			if(ClassUtils.isAssignable(clazz, OnInitScriptListener.class))
 			{
 				if(o == null)
-				{
 					o = clazz.getDeclaredConstructor().newInstance();
-				}
 				_listeners.add((OnInitScriptListener) o);
 			}
 
@@ -197,58 +271,50 @@ public class Scripts
 					Class<?>[] par = method.getParameterTypes();
 					if(par.length == 0 || par[0] != Player.class || par[1] != NpcInstance.class || par[2] != String[].class)
 					{
-						LOGGER.error("Wrong parameters for bypass method: {}, class: {}", method.getName(), clazz.getSimpleName());
+						_log.error("Wrong parameters for bypass method: " + method.getName() + ", class: " + clazz.getSimpleName());
 						continue;
 					}
 
 					Bypass an = method.getAnnotation(Bypass.class);
 					if(Modifier.isStatic(method.getModifiers()))
-					{
 						BypassHolder.getInstance().registerBypass(an.value(), clazz, method);
-					}
 					else
 					{
 						if(o == null)
-						{
 							o = clazz.getDeclaredConstructor().newInstance();
-						}
+						BypassHolder.getInstance().registerBypass(an.value(), o, method);
 					}
-					BypassHolder.getInstance().registerBypass(an.value(), o, method);
 				}
 				else if(method.isAnnotationPresent(OnScriptInit.class))
 				{
 					Class<?>[] par = method.getParameterTypes();
 					if(par.length != 0)
 					{
-						LOGGER.error("Wrong parameters for init method: {}, class: {}", method.getName(), clazz.getSimpleName());
+						_log.error("Wrong parameters for init method: " + method.getName() + ", class: " + clazz.getSimpleName());
 						continue;
 					}
 
 					try
 					{
 						if(Modifier.isStatic(method.getModifiers()))
-						{
 							method.invoke(clazz);
-						}
 						else
 						{
 							if(o == null)
-							{
 								o = clazz.getDeclaredConstructor().newInstance();
-							}
 							method.invoke(o);
 						}
 					}
 					catch(Exception e)
 					{
-						LOGGER.error("Exception: {}", e, e);
+						_log.error("Exception: " + e, e);
 					}
 				}
 			}
 		}
 		catch(Exception e)
 		{
-			LOGGER.error("", e);
+			_log.error("", e);
 		}
 		return o;
 	}
@@ -265,50 +331,9 @@ public class Scripts
 
 	public Object getClassInstance(String className)
 	{
-		Class<?> classes = _classes.get(className);
-		if(classes != null)
-		{ return getClassInstance(classes); }
+		Class<?> clazz = _classes.get(className);
+		if(clazz != null)
+			return getClassInstance(clazz);
 		return null;
-	}
-
-	public class ScriptListenerImpl extends ListenerList<Scripts>
-	{
-		public void load()
-		{
-			for(Listener<Scripts> listener : getListeners())
-			{
-				if(OnLoadScriptListener.class.isInstance(listener))
-				{
-					((OnLoadScriptListener) listener).onLoad();
-				}
-			}
-		}
-
-		public void init()
-		{
-			for(Listener<Scripts> listener : getListeners())
-			{
-				if(OnInitScriptListener.class.isInstance(listener))
-				{
-					((OnInitScriptListener) listener).onInit();
-				}
-			}
-		}
-	}
-
-	/**
-	 * @return the only instance of this class.
-	 */
-	public static Scripts getInstance()
-	{
-		return SingletonHolder.INSTANCE;
-	}
-
-	/**
-	 * Singleton holder for the class.
-	 */
-	private static class SingletonHolder
-	{
-		protected static final Scripts INSTANCE = new Scripts();
 	}
 }

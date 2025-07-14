@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT list ((rewards+))>
+<!ELEMENT rewards ((item+))>
+<!ATTLIST rewards
+	slot CDATA #IMPLIED
+>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	id CDATA #REQUIRED
+	count CDATA #IMPLIED
+	chance CDATA #IMPLIED
+	announce CDATA #IMPLIED
+	stage CDATA #IMPLIED
+>

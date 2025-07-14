@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "mission_level_rewards.dtd">
+<list>
+	<date_info month="1;2;3;4;5;6;7;8;9;10;11;12" year="2025;2026" max_reward_lvl="30" final_reward_id="710005" final_reward_count="1" bonus_reward="97145;50">
+		<points level="1" value="40" base_reward_id="94838" base_reward_count="5" />
+		<points level="2" value="50" base_reward_id="101921" base_reward_count="5" />
+		<points level="3" value="60" base_reward_id="100722" base_reward_count="5" />
+		<points level="4" value="70" base_reward_id="97147" base_reward_count="5" additional_reward_id="300039" additional_reward_count="1" />
+		<points level="5" value="80" base_reward_id="94328" base_reward_count="5" />
+		<points level="6" value="90" base_reward_id="94838" base_reward_count="5" />
+		<points level="7" value="100" base_reward_id="101921" base_reward_count="5" />
+		<points level="8" value="110" base_reward_id="100722" base_reward_count="5" additional_reward_id="300037" additional_reward_count="2" />
+		<points level="9" value="120" base_reward_id="97147" base_reward_count="5" />
+		<points level="10" value="130" base_reward_id="94328" base_reward_count="5" />
+		<points level="11" value="140" base_reward_id="94838" base_reward_count="10" />
+		<points level="12" value="150" base_reward_id="101921" base_reward_count="10" additional_reward_id="710004" additional_reward_count="1" />
+		<points level="13" value="160" base_reward_id="100722" base_reward_count="10" />
+		<points level="14" value="170" base_reward_id="97147" base_reward_count="10" />
+		<points level="15" value="180" base_reward_id="94328" base_reward_count="10" />
+		<points level="16" value="190" base_reward_id="94838" base_reward_count="10" additional_reward_id="300039" additional_reward_count="2" />
+		<points level="17" value="200" base_reward_id="101921" base_reward_count="10" />
+		<points level="18" value="210" base_reward_id="100722" base_reward_count="10" />
+		<points level="19" value="220" base_reward_id="97147" base_reward_count="10" />
+		<points level="20" value="230" base_reward_id="94328" base_reward_count="10" additional_reward_id="300037" additional_reward_count="4" />
+		<points level="21" value="240" base_reward_id="94838" base_reward_count="20" />
+		<points level="22" value="250" base_reward_id="101921" base_reward_count="20" />
+		<points level="23" value="260" base_reward_id="100722" base_reward_count="20" />
+		<points level="24" value="270" base_reward_id="97147" base_reward_count="20" additional_reward_id="710004" additional_reward_count="2" />
+		<points level="25" value="280" base_reward_id="94328" base_reward_count="20" />
+		<points level="26" value="290" base_reward_id="94838" base_reward_count="20" />
+		<points level="27" value="300" base_reward_id="101921" base_reward_count="20" />
+		<points level="28" value="310" base_reward_id="100722" base_reward_count="20" additional_reward_id="300036" additional_reward_count="4" />
+		<points level="29" value="320" base_reward_id="97147" base_reward_count="20" />
+		<points level="30" value="330" base_reward_id="94328" base_reward_count="20" />
+	</date_info>
+</list>

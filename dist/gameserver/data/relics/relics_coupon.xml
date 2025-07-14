@@ -1,0 +1,4573 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE list SYSTEM "relics_coupon.dtd">
+<list>
+	<coupon count="11" id="100813"><!--Купон Призыва Куклы (Обычная - Редкая) - 11 Раз-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600050"/>
+		<relic id="18" chance="5600750"/>
+		<relic id="22" chance="5600050"/>
+		<relic id="26" chance="5600050"/>
+		<relic id="30" chance="5600050"/>
+		<relic id="34" chance="729050"/>
+		<relic id="40" chance="729000"/>
+		<relic id="46" chance="729000"/>
+		<relic id="52" chance="729000"/>
+		<relic id="58" chance="729000"/>
+		<relic id="64" chance="729000"/>
+		<relic id="70" chance="420000"/>
+		<relic id="76" chance="420000"/>
+		<relic id="82" chance="420000"/>
+		<relic id="88" chance="420000"/>
+		<relic id="93" chance="420000"/>
+		<relic id="99" chance="420000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="11" id="100812"><!--Купон Призыва Куклы (Обычная - Исключительная) - 11 Раз-->
+		<relic id="1" chance="1568000000"/>
+		<relic id="3" chance="1568000000"/>
+		<relic id="5" chance="1568000000"/>
+		<relic id="7" chance="1568000000"/>
+		<relic id="9" chance="1568000000"/>
+		<relic id="11" chance="235200000"/>
+		<relic id="15" chance="235200000"/>
+		<relic id="19" chance="235200000"/>
+		<relic id="23" chance="235200000"/>
+		<relic id="27" chance="235200000"/>
+		<relic id="31" chance="98000000"/>
+		<relic id="37" chance="98000000"/>
+		<relic id="43" chance="98000000"/>
+		<relic id="49" chance="98000000"/>
+		<relic id="55" chance="98000000"/>
+		<relic id="61" chance="98000000"/>
+		<relic id="67" chance="49000000"/>
+		<relic id="73" chance="49000000"/>
+		<relic id="79" chance="49000000"/>
+		<relic id="85" chance="49000000"/>
+		<relic id="2" chance="28800000"/>
+		<relic id="4" chance="28800000"/>
+		<relic id="6" chance="28800000"/>
+		<relic id="8" chance="28800000"/>
+		<relic id="10" chance="28800000"/>
+		<relic id="12" chance="4500000"/>
+		<relic id="16" chance="4500000"/>
+		<relic id="20" chance="4500000"/>
+		<relic id="24" chance="4500000"/>
+		<relic id="28" chance="4500000"/>
+		<relic id="32" chance="1800000"/>
+		<relic id="38" chance="1800000"/>
+		<relic id="44" chance="1800000"/>
+		<relic id="50" chance="1800000"/>
+		<relic id="56" chance="1800000"/>
+		<relic id="62" chance="1800000"/>
+		<relic id="68" chance="360000"/>
+		<relic id="74" chance="360000"/>
+		<relic id="80" chance="360000"/>
+		<relic id="86" chance="360000"/>
+		<relic id="91" chance="360000"/>
+		<relic id="97" chance="360000"/>
+		<relic id="103" chance="180000"/>
+		<relic id="109" chance="180000"/>
+		<relic id="115" chance="180000"/>
+		<relic id="13" chance="3200000"/>
+		<relic id="17" chance="3200000"/>
+		<relic id="21" chance="3200000"/>
+		<relic id="25" chance="3200000"/>
+		<relic id="29" chance="3200000"/>
+		<relic id="33" chance="416670"/>
+		<relic id="39" chance="416670"/>
+		<relic id="45" chance="416670"/>
+		<relic id="51" chance="416670"/>
+		<relic id="57" chance="416660"/>
+		<relic id="63" chance="416660"/>
+		<relic id="69" chance="240000"/>
+		<relic id="75" chance="240000"/>
+		<relic id="81" chance="240000"/>
+		<relic id="87" chance="240000"/>
+		<relic id="92" chance="240000"/>
+		<relic id="98" chance="240000"/>
+		<relic id="104" chance="20000"/>
+		<relic id="110" chance="20000"/>
+		<relic id="116" chance="20000"/>
+	</coupon>
+	<coupon count="1" id="100815"><!--Купон Призыва Куклы (Обычная - Редкая) - 1 Раз-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600050"/>
+		<relic id="18" chance="5600750"/>
+		<relic id="22" chance="5600050"/>
+		<relic id="26" chance="5600050"/>
+		<relic id="30" chance="5600050"/>
+		<relic id="34" chance="729050"/>
+		<relic id="40" chance="729000"/>
+		<relic id="46" chance="729000"/>
+		<relic id="52" chance="729000"/>
+		<relic id="58" chance="729000"/>
+		<relic id="64" chance="729000"/>
+		<relic id="70" chance="420000"/>
+		<relic id="76" chance="420000"/>
+		<relic id="82" chance="420000"/>
+		<relic id="88" chance="420000"/>
+		<relic id="93" chance="420000"/>
+		<relic id="99" chance="420000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="100814"><!--Купон Призыва Куклы (Обычная - Исключительная) - 1 Раз-->
+		<relic id="1" chance="1568000000"/>
+		<relic id="3" chance="1568000000"/>
+		<relic id="5" chance="1568000000"/>
+		<relic id="7" chance="1568000000"/>
+		<relic id="9" chance="1568000000"/>
+		<relic id="11" chance="235200000"/>
+		<relic id="15" chance="235200000"/>
+		<relic id="19" chance="235200000"/>
+		<relic id="23" chance="235200000"/>
+		<relic id="27" chance="235200000"/>
+		<relic id="31" chance="98000000"/>
+		<relic id="37" chance="98000000"/>
+		<relic id="43" chance="98000000"/>
+		<relic id="49" chance="98000000"/>
+		<relic id="55" chance="98000000"/>
+		<relic id="61" chance="98000000"/>
+		<relic id="67" chance="49000000"/>
+		<relic id="73" chance="49000000"/>
+		<relic id="79" chance="49000000"/>
+		<relic id="85" chance="49000000"/>
+		<relic id="2" chance="28800000"/>
+		<relic id="4" chance="28800000"/>
+		<relic id="6" chance="28800000"/>
+		<relic id="8" chance="28800000"/>
+		<relic id="10" chance="28800000"/>
+		<relic id="12" chance="4500000"/>
+		<relic id="16" chance="4500000"/>
+		<relic id="20" chance="4500000"/>
+		<relic id="24" chance="4500000"/>
+		<relic id="28" chance="4500000"/>
+		<relic id="32" chance="1800000"/>
+		<relic id="38" chance="1800000"/>
+		<relic id="44" chance="1800000"/>
+		<relic id="50" chance="1800000"/>
+		<relic id="56" chance="1800000"/>
+		<relic id="62" chance="1800000"/>
+		<relic id="68" chance="360000"/>
+		<relic id="74" chance="360000"/>
+		<relic id="80" chance="360000"/>
+		<relic id="86" chance="360000"/>
+		<relic id="91" chance="360000"/>
+		<relic id="97" chance="360000"/>
+		<relic id="103" chance="180000"/>
+		<relic id="109" chance="180000"/>
+		<relic id="115" chance="180000"/>
+		<relic id="13" chance="3200000"/>
+		<relic id="17" chance="3200000"/>
+		<relic id="21" chance="3200000"/>
+		<relic id="25" chance="3200000"/>
+		<relic id="29" chance="3200000"/>
+		<relic id="33" chance="416670"/>
+		<relic id="39" chance="416670"/>
+		<relic id="45" chance="416670"/>
+		<relic id="51" chance="416670"/>
+		<relic id="57" chance="416660"/>
+		<relic id="63" chance="416660"/>
+		<relic id="69" chance="240000"/>
+		<relic id="75" chance="240000"/>
+		<relic id="81" chance="240000"/>
+		<relic id="87" chance="240000"/>
+		<relic id="92" chance="240000"/>
+		<relic id="98" chance="240000"/>
+		<relic id="104" chance="20000"/>
+		<relic id="110" chance="20000"/>
+		<relic id="116" chance="20000"/>
+	</coupon>
+	<coupon count="1" id="100887"><!--Купон Призыва Обычной Куклы Королева Муравьев-->
+		<relic id="49" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100889"><!--Купон Призыва Обычной Куклы Ядро-->
+		<relic id="61" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100888"><!--Купон Призыва Обычной Куклы Орфен-->
+		<relic id="55" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100891"><!--Купон Призыва Обычной Куклы Закен-->
+		<relic id="67" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100890"><!--Купон Призыва Обычной Куклы Фринтеза-->
+		<relic id="73" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100893"><!--Купон Призыва Обычной Куклы Антарас-->
+		<relic id="85" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100892"><!--Купон Призыва Обычной Куклы Баюм-->
+		<relic id="79" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100895"><!--Купон Призыва Улучшенной Куклы Орфен-->
+		<relic id="56" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100894"><!--Купон Призыва Улучшенной Куклы Королева Муравьев-->
+		<relic id="50" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100897"><!--Купон Призыва Улучшенной Куклы Фринтеза-->
+		<relic id="74" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100896"><!--Купон Призыва Улучшенной Куклы Ядро-->
+		<relic id="62" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100899"><!--Купон Призыва Улучшенной Куклы Баюм-->
+		<relic id="80" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100898"><!--Купон Призыва Улучшенной Куклы Закен-->
+		<relic id="68" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100901"><!--Купон Призыва Улучшенной Куклы Чудовище-->
+		<relic id="97" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100900"><!--Купон Призыва Улучшенной Куклы Антарас-->
+		<relic id="86" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100903"><!--Купон Призыва Улучшенной Куклы Андреас ван Холтер-->
+		<relic id="103" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100902"><!--Купон Призыва Улучшенной Куклы Клакиес-->
+		<relic id="91" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100905"><!--Купон Призыва Исключительной Куклы Королева Муравьев-->
+		<relic id="51" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100904"><!--Купон Призыва Улучшенной Куклы Кельбим-->
+		<relic id="109" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100907"><!--Купон Призыва Исключительной Куклы Ядро-->
+		<relic id="63" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100906"><!--Купон Призыва Исключительной Куклы Орфен-->
+		<relic id="57" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100909"><!--Купон Призыва Исключительной Куклы Закен-->
+		<relic id="69" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100908"><!--Купон Призыва Исключительной Куклы Фринтеза-->
+		<relic id="75" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100911"><!--Купон Призыва Исключительной Куклы Антарас-->
+		<relic id="87" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100910"><!--Купон Призыва Исключительной Куклы Баюм-->
+		<relic id="81" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100913"><!--Купон Призыва Исключительной Куклы Клакиес-->
+		<relic id="92" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100912"><!--Купон Призыва Исключительной Куклы Чудовище-->
+		<relic id="98" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100915"><!--Купон Призыва Исключительной Куклы Кельбим-->
+		<relic id="110" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100914"><!--Купон Призыва Исключительной Куклы Андреас ван Холтер-->
+		<relic id="104" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100917"><!--Купон Призыва Редкой Куклы Орфен-->
+		<relic id="58" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100916"><!--Купон Призыва Редкой Куклы Королева Муравьев-->
+		<relic id="52" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100919"><!--Купон Призыва Редкой Куклы Фринтеза-->
+		<relic id="76" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100918"><!--Купон Призыва Редкой Куклы Ядро-->
+		<relic id="64" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100921"><!--Купон Призыва Редкой Куклы Баюм-->
+		<relic id="82" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100920"><!--Купон Призыва Редкой Куклы Закен-->
+		<relic id="70" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100923"><!--Купон Призыва Редкой Куклы Чудовище-->
+		<relic id="99" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100922"><!--Купон Призыва Редкой Куклы Антарас-->
+		<relic id="88" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100925"><!--Купон Призыва Редкой Куклы Андреас ван Холтер-->
+		<relic id="105" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100924"><!--Купон Призыва Редкой Куклы Клакиес-->
+		<relic id="93" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100927"><!--Купон Призыва Героической Куклы Королева Муравьев-->
+		<relic id="53" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100926"><!--Купон Призыва Редкой Куклы Кельбим-->
+		<relic id="111" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100929"><!--Купон Призыва Героической Куклы Ядро-->
+		<relic id="65" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100928"><!--Купон Призыва Героической Куклы Орфен-->
+		<relic id="59" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100931"><!--Купон Призыва Героической Куклы Закен-->
+		<relic id="71" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100930"><!--Купон Призыва Героической Куклы Фринтеза-->
+		<relic id="77" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100933"><!--Купон Призыва Героической Куклы Антарас-->
+		<relic id="89" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100932"><!--Купон Призыва Героической Куклы Баюм-->
+		<relic id="83" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100935"><!--Купон Призыва Героической Куклы Клакиес-->
+		<relic id="94" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100934"><!--Купон Призыва Героической Куклы Чудовище-->
+		<relic id="100" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100937"><!--Купон Призыва Героической Куклы Кельбим-->
+		<relic id="112" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100936"><!--Купон Призыва Героической Куклы Андреас ван Холтер-->
+		<relic id="106" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100939"><!--Купон Призыва Легендарной Куклы Орфен-->
+		<relic id="60" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100938"><!--Купон Призыва Легендарной Куклы Королева Муравьев-->
+		<relic id="54" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100941"><!--Купон Призыва Легендарной Куклы Фринтеза-->
+		<relic id="78" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100940"><!--Купон Призыва Легендарной Куклы Ядро-->
+		<relic id="66" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100943"><!--Купон Призыва Легендарной Куклы Баюм-->
+		<relic id="84" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100942"><!--Купон Призыва Легендарной Куклы Закен-->
+		<relic id="72" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100945"><!--Купон Призыва Легендарной Куклы Чудовище-->
+		<relic id="101" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100944"><!--Купон Призыва Легендарной Куклы Антарас-->
+		<relic id="90" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100947"><!--Купон Призыва Легендарной Куклы Андреас ван Холтер-->
+		<relic id="107" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100946"><!--Купон Призыва Легендарной Куклы Клакиес-->
+		<relic id="95" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100949"><!--Купон Призыва Мифической Куклы Чудовище-->
+		<relic id="102" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100948"><!--Купон Призыва Легендарной Куклы Кельбим-->
+		<relic id="113" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100951"><!--Купон Призыва Мифической Куклы Андреас ван Холтер-->
+		<relic id="108" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100950"><!--Купон Призыва Мифической Куклы Клакиес-->
+		<relic id="96" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="100952"><!--Купон Призыва Мифической Куклы Кельбим-->
+		<relic id="114" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101211"><!--Купон Призыва Куклы (Улучшенная) - 1 Раз-->
+		<relic id="2" chance="1600000000"/>
+		<relic id="4" chance="1600000000"/>
+		<relic id="6" chance="1600000000"/>
+		<relic id="8" chance="1600000000"/>
+		<relic id="10" chance="1600000000"/>
+		<relic id="12" chance="250000000"/>
+		<relic id="16" chance="250000000"/>
+		<relic id="20" chance="250000000"/>
+		<relic id="24" chance="250000000"/>
+		<relic id="28" chance="250000000"/>
+		<relic id="32" chance="100000000"/>
+		<relic id="38" chance="100000000"/>
+		<relic id="44" chance="100000000"/>
+		<relic id="50" chance="100000000"/>
+		<relic id="56" chance="100000000"/>
+		<relic id="62" chance="100000000"/>
+		<relic id="68" chance="20000000"/>
+		<relic id="74" chance="20000000"/>
+		<relic id="80" chance="20000000"/>
+		<relic id="86" chance="20000000"/>
+		<relic id="91" chance="20000000"/>
+		<relic id="97" chance="20000000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="101210"><!--Купон Призыва Куклы (Обычная) - 1 Раз-->
+		<relic id="1" chance="1600000000"/>
+		<relic id="3" chance="1600000000"/>
+		<relic id="5" chance="1600000000"/>
+		<relic id="7" chance="1600000000"/>
+		<relic id="9" chance="1600000000"/>
+		<relic id="11" chance="240000000"/>
+		<relic id="15" chance="240000000"/>
+		<relic id="19" chance="240000000"/>
+		<relic id="23" chance="240000000"/>
+		<relic id="27" chance="240000000"/>
+		<relic id="31" chance="100000000"/>
+		<relic id="37" chance="100000000"/>
+		<relic id="43" chance="100000000"/>
+		<relic id="49" chance="100000000"/>
+		<relic id="55" chance="100000000"/>
+		<relic id="61" chance="100000000"/>
+		<relic id="67" chance="50000000"/>
+		<relic id="73" chance="50000000"/>
+		<relic id="79" chance="50000000"/>
+		<relic id="85" chance="50000000"/>
+	</coupon>
+	<coupon count="1" id="101212"><!--Купон Призыва Куклы (Исключительная) - 1 Раз-->
+		<relic id="13" chance="1600000000"/>
+		<relic id="17" chance="1600000000"/>
+		<relic id="21" chance="1600000000"/>
+		<relic id="25" chance="1600000000"/>
+		<relic id="29" chance="1600000000"/>
+		<relic id="33" chance="208333334"/>
+		<relic id="39" chance="208333334"/>
+		<relic id="45" chance="208333333"/>
+		<relic id="51" chance="208333333"/>
+		<relic id="57" chance="208333333"/>
+		<relic id="63" chance="208333333"/>
+		<relic id="69" chance="120000000"/>
+		<relic id="75" chance="120000000"/>
+		<relic id="81" chance="120000000"/>
+		<relic id="87" chance="120000000"/>
+		<relic id="92" chance="120000000"/>
+		<relic id="98" chance="120000000"/>
+		<relic id="104" chance="10000000"/>
+		<relic id="110" chance="10000000"/>
+		<relic id="116" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="101251"><!--Купон Призыва Куклы (Улучшенная) - 1 Раз-->
+		<relic id="2" chance="1600000000"/>
+		<relic id="4" chance="1600000000"/>
+		<relic id="6" chance="1600000000"/>
+		<relic id="8" chance="1600000000"/>
+		<relic id="10" chance="1600000000"/>
+		<relic id="12" chance="250000000"/>
+		<relic id="16" chance="250000000"/>
+		<relic id="20" chance="250000000"/>
+		<relic id="24" chance="250000000"/>
+		<relic id="28" chance="250000000"/>
+		<relic id="32" chance="100000000"/>
+		<relic id="38" chance="100000000"/>
+		<relic id="44" chance="100000000"/>
+		<relic id="50" chance="100000000"/>
+		<relic id="56" chance="100000000"/>
+		<relic id="62" chance="100000000"/>
+		<relic id="68" chance="20000000"/>
+		<relic id="74" chance="20000000"/>
+		<relic id="80" chance="20000000"/>
+		<relic id="86" chance="20000000"/>
+		<relic id="91" chance="20000000"/>
+		<relic id="97" chance="20000000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="101250"><!--Купон Призыва Куклы (Обычная) - 1 Раз-->
+		<relic id="1" chance="1600000000"/>
+		<relic id="3" chance="1600000000"/>
+		<relic id="5" chance="1600000000"/>
+		<relic id="7" chance="1600000000"/>
+		<relic id="9" chance="1600000000"/>
+		<relic id="11" chance="240000000"/>
+		<relic id="15" chance="240000000"/>
+		<relic id="19" chance="240000000"/>
+		<relic id="23" chance="240000000"/>
+		<relic id="27" chance="240000000"/>
+		<relic id="31" chance="100000000"/>
+		<relic id="37" chance="100000000"/>
+		<relic id="43" chance="100000000"/>
+		<relic id="49" chance="100000000"/>
+		<relic id="55" chance="100000000"/>
+		<relic id="61" chance="100000000"/>
+		<relic id="67" chance="50000000"/>
+		<relic id="73" chance="50000000"/>
+		<relic id="79" chance="50000000"/>
+		<relic id="85" chance="50000000"/>
+	</coupon>
+	<coupon count="1" id="101252"><!--Купон Призыва Куклы (Исключительная) - 1 Раз-->
+		<relic id="13" chance="1600000000"/>
+		<relic id="17" chance="1600000000"/>
+		<relic id="21" chance="1600000000"/>
+		<relic id="25" chance="1600000000"/>
+		<relic id="29" chance="1600000000"/>
+		<relic id="33" chance="208333334"/>
+		<relic id="39" chance="208333334"/>
+		<relic id="45" chance="208333333"/>
+		<relic id="51" chance="208333333"/>
+		<relic id="57" chance="208333333"/>
+		<relic id="63" chance="208333333"/>
+		<relic id="69" chance="120000000"/>
+		<relic id="75" chance="120000000"/>
+		<relic id="81" chance="120000000"/>
+		<relic id="87" chance="120000000"/>
+		<relic id="92" chance="120000000"/>
+		<relic id="98" chance="120000000"/>
+		<relic id="104" chance="10000000"/>
+		<relic id="110" chance="10000000"/>
+		<relic id="116" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="101267"><!--Купон Призыва Обычной Куклы Король Петрам-->
+		<relic id="23" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101269"><!--Купон Призыва Обычной Куклы Принцесса Молранг-->
+		<relic id="1" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101268"><!--Купон Призыва Обычной Куклы Король Прочелла-->
+		<relic id="19" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="101315"><!--Купон Призыва Куклы (Обычная - Редкая) - 11 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600050"/>
+		<relic id="18" chance="5600750"/>
+		<relic id="22" chance="5600050"/>
+		<relic id="26" chance="5600050"/>
+		<relic id="30" chance="5600050"/>
+		<relic id="34" chance="729050"/>
+		<relic id="40" chance="729000"/>
+		<relic id="46" chance="729000"/>
+		<relic id="52" chance="729000"/>
+		<relic id="58" chance="729000"/>
+		<relic id="64" chance="729000"/>
+		<relic id="70" chance="420000"/>
+		<relic id="76" chance="420000"/>
+		<relic id="82" chance="420000"/>
+		<relic id="88" chance="420000"/>
+		<relic id="93" chance="420000"/>
+		<relic id="99" chance="420000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="11" id="101314"><!--Купон Призыва Куклы (Обычная - Исключительная) - 11 Раз (Временно)-->
+		<relic id="1" chance="1568000000"/>
+		<relic id="3" chance="1568000000"/>
+		<relic id="5" chance="1568000000"/>
+		<relic id="7" chance="1568000000"/>
+		<relic id="9" chance="1568000000"/>
+		<relic id="11" chance="235200000"/>
+		<relic id="15" chance="235200000"/>
+		<relic id="19" chance="235200000"/>
+		<relic id="23" chance="235200000"/>
+		<relic id="27" chance="235200000"/>
+		<relic id="31" chance="98000000"/>
+		<relic id="37" chance="98000000"/>
+		<relic id="43" chance="98000000"/>
+		<relic id="49" chance="98000000"/>
+		<relic id="55" chance="98000000"/>
+		<relic id="61" chance="98000000"/>
+		<relic id="67" chance="49000000"/>
+		<relic id="73" chance="49000000"/>
+		<relic id="79" chance="49000000"/>
+		<relic id="85" chance="49000000"/>
+		<relic id="2" chance="28800000"/>
+		<relic id="4" chance="28800000"/>
+		<relic id="6" chance="28800000"/>
+		<relic id="8" chance="28800000"/>
+		<relic id="10" chance="28800000"/>
+		<relic id="12" chance="4500000"/>
+		<relic id="16" chance="4500000"/>
+		<relic id="20" chance="4500000"/>
+		<relic id="24" chance="4500000"/>
+		<relic id="28" chance="4500000"/>
+		<relic id="32" chance="1800000"/>
+		<relic id="38" chance="1800000"/>
+		<relic id="44" chance="1800000"/>
+		<relic id="50" chance="1800000"/>
+		<relic id="56" chance="1800000"/>
+		<relic id="62" chance="1800000"/>
+		<relic id="68" chance="360000"/>
+		<relic id="74" chance="360000"/>
+		<relic id="80" chance="360000"/>
+		<relic id="86" chance="360000"/>
+		<relic id="91" chance="360000"/>
+		<relic id="97" chance="360000"/>
+		<relic id="103" chance="180000"/>
+		<relic id="109" chance="180000"/>
+		<relic id="115" chance="180000"/>
+		<relic id="13" chance="3200000"/>
+		<relic id="17" chance="3200000"/>
+		<relic id="21" chance="3200000"/>
+		<relic id="25" chance="3200000"/>
+		<relic id="29" chance="3200000"/>
+		<relic id="33" chance="416670"/>
+		<relic id="39" chance="416670"/>
+		<relic id="45" chance="416670"/>
+		<relic id="51" chance="416670"/>
+		<relic id="57" chance="416660"/>
+		<relic id="63" chance="416660"/>
+		<relic id="69" chance="240000"/>
+		<relic id="75" chance="240000"/>
+		<relic id="81" chance="240000"/>
+		<relic id="87" chance="240000"/>
+		<relic id="92" chance="240000"/>
+		<relic id="98" chance="240000"/>
+		<relic id="104" chance="20000"/>
+		<relic id="110" chance="20000"/>
+		<relic id="116" chance="20000"/>
+	</coupon>
+	<coupon count="1" id="101317"><!--Купон Призыва Куклы (Обычная - Редкая) - 1 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600050"/>
+		<relic id="18" chance="5600750"/>
+		<relic id="22" chance="5600050"/>
+		<relic id="26" chance="5600050"/>
+		<relic id="30" chance="5600050"/>
+		<relic id="34" chance="729050"/>
+		<relic id="40" chance="729000"/>
+		<relic id="46" chance="729000"/>
+		<relic id="52" chance="729000"/>
+		<relic id="58" chance="729000"/>
+		<relic id="64" chance="729000"/>
+		<relic id="70" chance="420000"/>
+		<relic id="76" chance="420000"/>
+		<relic id="82" chance="420000"/>
+		<relic id="88" chance="420000"/>
+		<relic id="93" chance="420000"/>
+		<relic id="99" chance="420000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101316"><!--Купон Призыва Куклы (Обычная - Исключительная) - 1 Раз (Временно)-->
+		<relic id="1" chance="1568000000"/>
+		<relic id="3" chance="1568000000"/>
+		<relic id="5" chance="1568000000"/>
+		<relic id="7" chance="1568000000"/>
+		<relic id="9" chance="1568000000"/>
+		<relic id="11" chance="235200000"/>
+		<relic id="15" chance="235200000"/>
+		<relic id="19" chance="235200000"/>
+		<relic id="23" chance="235200000"/>
+		<relic id="27" chance="235200000"/>
+		<relic id="31" chance="98000000"/>
+		<relic id="37" chance="98000000"/>
+		<relic id="43" chance="98000000"/>
+		<relic id="49" chance="98000000"/>
+		<relic id="55" chance="98000000"/>
+		<relic id="61" chance="98000000"/>
+		<relic id="67" chance="49000000"/>
+		<relic id="73" chance="49000000"/>
+		<relic id="79" chance="49000000"/>
+		<relic id="85" chance="49000000"/>
+		<relic id="2" chance="28800000"/>
+		<relic id="4" chance="28800000"/>
+		<relic id="6" chance="28800000"/>
+		<relic id="8" chance="28800000"/>
+		<relic id="10" chance="28800000"/>
+		<relic id="12" chance="4500000"/>
+		<relic id="16" chance="4500000"/>
+		<relic id="20" chance="4500000"/>
+		<relic id="24" chance="4500000"/>
+		<relic id="28" chance="4500000"/>
+		<relic id="32" chance="1800000"/>
+		<relic id="38" chance="1800000"/>
+		<relic id="44" chance="1800000"/>
+		<relic id="50" chance="1800000"/>
+		<relic id="56" chance="1800000"/>
+		<relic id="62" chance="1800000"/>
+		<relic id="68" chance="360000"/>
+		<relic id="74" chance="360000"/>
+		<relic id="80" chance="360000"/>
+		<relic id="86" chance="360000"/>
+		<relic id="91" chance="360000"/>
+		<relic id="97" chance="360000"/>
+		<relic id="103" chance="180000"/>
+		<relic id="109" chance="180000"/>
+		<relic id="115" chance="180000"/>
+		<relic id="13" chance="3200000"/>
+		<relic id="17" chance="3200000"/>
+		<relic id="21" chance="3200000"/>
+		<relic id="25" chance="3200000"/>
+		<relic id="29" chance="3200000"/>
+		<relic id="33" chance="416670"/>
+		<relic id="39" chance="416670"/>
+		<relic id="45" chance="416670"/>
+		<relic id="51" chance="416670"/>
+		<relic id="57" chance="416660"/>
+		<relic id="63" chance="416660"/>
+		<relic id="69" chance="240000"/>
+		<relic id="75" chance="240000"/>
+		<relic id="81" chance="240000"/>
+		<relic id="87" chance="240000"/>
+		<relic id="92" chance="240000"/>
+		<relic id="98" chance="240000"/>
+		<relic id="104" chance="20000"/>
+		<relic id="110" chance="20000"/>
+		<relic id="116" chance="20000"/>
+	</coupon>
+	<coupon count="1" id="101319"><!--Купон Призыва Куклы (Улучшенная - Исключительная) - 1 Раз-->
+		<relic id="2" chance="1440000000"/>
+		<relic id="4" chance="1440000000"/>
+		<relic id="6" chance="1440000000"/>
+		<relic id="8" chance="1440000000"/>
+		<relic id="10" chance="1440000000"/>
+		<relic id="12" chance="225000000"/>
+		<relic id="16" chance="225000000"/>
+		<relic id="20" chance="225000000"/>
+		<relic id="24" chance="225000000"/>
+		<relic id="28" chance="225000000"/>
+		<relic id="32" chance="90000000"/>
+		<relic id="38" chance="90000000"/>
+		<relic id="44" chance="90000000"/>
+		<relic id="50" chance="90000000"/>
+		<relic id="56" chance="90000000"/>
+		<relic id="62" chance="90000000"/>
+		<relic id="68" chance="18000000"/>
+		<relic id="74" chance="18000000"/>
+		<relic id="80" chance="18000000"/>
+		<relic id="86" chance="18000000"/>
+		<relic id="91" chance="18000000"/>
+		<relic id="97" chance="18000000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="13" chance="160000000"/>
+		<relic id="17" chance="160000000"/>
+		<relic id="21" chance="160000000"/>
+		<relic id="25" chance="160000000"/>
+		<relic id="29" chance="160000000"/>
+		<relic id="33" chance="20833500"/>
+		<relic id="39" chance="20833500"/>
+		<relic id="45" chance="20833500"/>
+		<relic id="51" chance="20833500"/>
+		<relic id="57" chance="20833000"/>
+		<relic id="63" chance="20833000"/>
+		<relic id="69" chance="12000000"/>
+		<relic id="75" chance="12000000"/>
+		<relic id="81" chance="12000000"/>
+		<relic id="87" chance="12000000"/>
+		<relic id="92" chance="12000000"/>
+		<relic id="98" chance="12000000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="11" id="101318"><!--Купон Призыва Куклы (Улучшенная - Исключительная) - 11 Раз-->
+		<relic id="2" chance="1440000000"/>
+		<relic id="4" chance="1440000000"/>
+		<relic id="6" chance="1440000000"/>
+		<relic id="8" chance="1440000000"/>
+		<relic id="10" chance="1440000000"/>
+		<relic id="12" chance="225000000"/>
+		<relic id="16" chance="225000000"/>
+		<relic id="20" chance="225000000"/>
+		<relic id="24" chance="225000000"/>
+		<relic id="28" chance="225000000"/>
+		<relic id="32" chance="90000000"/>
+		<relic id="38" chance="90000000"/>
+		<relic id="44" chance="90000000"/>
+		<relic id="50" chance="90000000"/>
+		<relic id="56" chance="90000000"/>
+		<relic id="62" chance="90000000"/>
+		<relic id="68" chance="18000000"/>
+		<relic id="74" chance="18000000"/>
+		<relic id="80" chance="18000000"/>
+		<relic id="86" chance="18000000"/>
+		<relic id="91" chance="18000000"/>
+		<relic id="97" chance="18000000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="13" chance="160000000"/>
+		<relic id="17" chance="160000000"/>
+		<relic id="21" chance="160000000"/>
+		<relic id="25" chance="160000000"/>
+		<relic id="29" chance="160000000"/>
+		<relic id="33" chance="20833500"/>
+		<relic id="39" chance="20833500"/>
+		<relic id="45" chance="20833500"/>
+		<relic id="51" chance="20833500"/>
+		<relic id="57" chance="20833000"/>
+		<relic id="63" chance="20833000"/>
+		<relic id="69" chance="12000000"/>
+		<relic id="75" chance="12000000"/>
+		<relic id="81" chance="12000000"/>
+		<relic id="87" chance="12000000"/>
+		<relic id="92" chance="12000000"/>
+		<relic id="98" chance="12000000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="101391"><!--Купон Призыва Исключительной Куклы Ферион-->
+		<relic id="116" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101390"><!--Купон Призыва Улучшенной Куклы Ферион-->
+		<relic id="115" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101393"><!--Купон Призыва Героической Куклы Ферион-->
+		<relic id="118" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101392"><!--Купон Призыва Редкой Куклы Ферион-->
+		<relic id="117" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101395"><!--Купон Призыва Мифической Куклы Ферион-->
+		<relic id="120" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101394"><!--Купон Призыва Легендарной Куклы Ферион-->
+		<relic id="119" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="101447"><!--Купон Призыва Куклы (Улучшенная - Исключительная) - 11 Раз (Временно)-->
+		<relic id="2" chance="1440000000"/>
+		<relic id="4" chance="1440000000"/>
+		<relic id="6" chance="1440000000"/>
+		<relic id="8" chance="1440000000"/>
+		<relic id="10" chance="1440000000"/>
+		<relic id="12" chance="225000000"/>
+		<relic id="16" chance="225000000"/>
+		<relic id="20" chance="225000000"/>
+		<relic id="24" chance="225000000"/>
+		<relic id="28" chance="225000000"/>
+		<relic id="32" chance="90000000"/>
+		<relic id="38" chance="90000000"/>
+		<relic id="44" chance="90000000"/>
+		<relic id="50" chance="90000000"/>
+		<relic id="56" chance="90000000"/>
+		<relic id="62" chance="90000000"/>
+		<relic id="68" chance="18000000"/>
+		<relic id="74" chance="18000000"/>
+		<relic id="80" chance="18000000"/>
+		<relic id="86" chance="18000000"/>
+		<relic id="91" chance="18000000"/>
+		<relic id="97" chance="18000000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="13" chance="160000000"/>
+		<relic id="17" chance="160000000"/>
+		<relic id="21" chance="160000000"/>
+		<relic id="25" chance="160000000"/>
+		<relic id="29" chance="160000000"/>
+		<relic id="33" chance="20833500"/>
+		<relic id="39" chance="20833500"/>
+		<relic id="45" chance="20833500"/>
+		<relic id="51" chance="20833500"/>
+		<relic id="57" chance="20833000"/>
+		<relic id="63" chance="20833000"/>
+		<relic id="69" chance="12000000"/>
+		<relic id="75" chance="12000000"/>
+		<relic id="81" chance="12000000"/>
+		<relic id="87" chance="12000000"/>
+		<relic id="92" chance="12000000"/>
+		<relic id="98" chance="12000000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="101448"><!--Купон Призыва Куклы (Улучшенная - Исключительная) - 1 Раз (Временно)-->
+		<relic id="2" chance="1440000000"/>
+		<relic id="4" chance="1440000000"/>
+		<relic id="6" chance="1440000000"/>
+		<relic id="8" chance="1440000000"/>
+		<relic id="10" chance="1440000000"/>
+		<relic id="12" chance="225000000"/>
+		<relic id="16" chance="225000000"/>
+		<relic id="20" chance="225000000"/>
+		<relic id="24" chance="225000000"/>
+		<relic id="28" chance="225000000"/>
+		<relic id="32" chance="90000000"/>
+		<relic id="38" chance="90000000"/>
+		<relic id="44" chance="90000000"/>
+		<relic id="50" chance="90000000"/>
+		<relic id="56" chance="90000000"/>
+		<relic id="62" chance="90000000"/>
+		<relic id="68" chance="18000000"/>
+		<relic id="74" chance="18000000"/>
+		<relic id="80" chance="18000000"/>
+		<relic id="86" chance="18000000"/>
+		<relic id="91" chance="18000000"/>
+		<relic id="97" chance="18000000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="13" chance="160000000"/>
+		<relic id="17" chance="160000000"/>
+		<relic id="21" chance="160000000"/>
+		<relic id="25" chance="160000000"/>
+		<relic id="29" chance="160000000"/>
+		<relic id="33" chance="20833500"/>
+		<relic id="39" chance="20833500"/>
+		<relic id="45" chance="20833500"/>
+		<relic id="51" chance="20833500"/>
+		<relic id="57" chance="20833000"/>
+		<relic id="63" chance="20833000"/>
+		<relic id="69" chance="12000000"/>
+		<relic id="75" chance="12000000"/>
+		<relic id="81" chance="12000000"/>
+		<relic id="87" chance="12000000"/>
+		<relic id="92" chance="12000000"/>
+		<relic id="98" chance="12000000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="101485"><!--Купон Призыва Исключительной Куклы Королева Небула-->
+		<relic id="17" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101484"><!--Купон Призыва Исключительной Куклы Король Игнис-->
+		<relic id="13" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101487"><!--Купон Призыва Исключительной Куклы Король Петрам-->
+		<relic id="25" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101486"><!--Купон Призыва Исключительной Куклы Король Прочелла-->
+		<relic id="21" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101489"><!--Купон Призыва Исключительной Куклы Скарлет ван Халиша-->
+		<relic id="33" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101488"><!--Купон Призыва Исключительной Куклы Тирон-->
+		<relic id="29" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101491"><!--Купон Призыва Исключительной Куклы Лилит-->
+		<relic id="45" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101490"><!--Купон Призыва Исключительной Куклы Анаким-->
+		<relic id="39" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101573"><!--Купон Призыва Обычной Куклы Вулкан-->
+		<relic id="121" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101575"><!--Купон Призыва Исключительной Куклы Вулкан-->
+		<relic id="123" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101574"><!--Купон Призыва Улучшенной Куклы Вулкан-->
+		<relic id="122" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101577"><!--Купон Призыва Обычной Куклы Вулкан-->
+		<relic id="121" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101576"><!--Купон Призыва Редкой Куклы Вулкан-->
+		<relic id="124" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101579"><!--Купон Призыва Исключительной Куклы Вулкан-->
+		<relic id="123" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101578"><!--Купон Призыва Улучшенной Куклы Вулкан-->
+		<relic id="122" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101581"><!--Купон Призыва Героической Куклы Вулкан-->
+		<relic id="125" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101580"><!--Купон Призыва Редкой Куклы Вулкан-->
+		<relic id="124" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101583"><!--Купон Призыва Героической Куклы Чудовище-->
+		<relic id="100" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="101582"><!--Купон Призыва Куклы (Обычная - Редкая) - 11 Раз-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5250000"/>
+		<relic id="18" chance="5250000"/>
+		<relic id="22" chance="5250000"/>
+		<relic id="26" chance="5250000"/>
+		<relic id="30" chance="5250000"/>
+		<relic id="34" chance="904170"/>
+		<relic id="40" chance="904170"/>
+		<relic id="46" chance="904170"/>
+		<relic id="52" chance="904170"/>
+		<relic id="58" chance="904170"/>
+		<relic id="64" chance="904170"/>
+		<relic id="70" chance="536670"/>
+		<relic id="76" chance="536670"/>
+		<relic id="82" chance="536660"/>
+		<relic id="88" chance="536660"/>
+		<relic id="93" chance="536660"/>
+		<relic id="99" chance="536660"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101584"><!--Купон Призыва Куклы (Обычная - Редкая) - 1 Раз-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5250000"/>
+		<relic id="18" chance="5250000"/>
+		<relic id="22" chance="5250000"/>
+		<relic id="26" chance="5250000"/>
+		<relic id="30" chance="5250000"/>
+		<relic id="34" chance="904170"/>
+		<relic id="40" chance="904170"/>
+		<relic id="46" chance="904170"/>
+		<relic id="52" chance="904170"/>
+		<relic id="58" chance="904170"/>
+		<relic id="64" chance="904170"/>
+		<relic id="70" chance="536670"/>
+		<relic id="76" chance="536670"/>
+		<relic id="82" chance="536660"/>
+		<relic id="88" chance="536660"/>
+		<relic id="93" chance="536660"/>
+		<relic id="99" chance="536660"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101647"><!--Купон Призыва Улучшенной Куклы Лилит-->
+		<relic id="44" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101646"><!--Купон Призыва Улучшенной Куклы Анаким-->
+		<relic id="38" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101649"><!--Купон Призыва Улучшенной Куклы Лилит-->
+		<relic id="44" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101648"><!--Купон Призыва Улучшенной Куклы Анаким-->
+		<relic id="38" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101651"><!--Купон Призыва Улучшенной Куклы Орфен-->
+		<relic id="56" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101650"><!--Купон Призыва Улучшенной Куклы Королева Муравьев-->
+		<relic id="50" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101653"><!--Купон Призыва Улучшенной Куклы Фринтеза-->
+		<relic id="74" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101652"><!--Купон Призыва Улучшенной Куклы Ядро-->
+		<relic id="62" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101655"><!--Купон Призыва Улучшенной Куклы Баюм-->
+		<relic id="80" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101654"><!--Купон Призыва Улучшенной Куклы Закен-->
+		<relic id="68" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101657"><!--Купон Призыва Улучшенной Куклы Чудовище-->
+		<relic id="97" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101656"><!--Купон Призыва Улучшенной Куклы Антарас-->
+		<relic id="86" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101659"><!--Купон Призыва Улучшенной Куклы Андреас ван Холтер-->
+		<relic id="103" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101658"><!--Купон Призыва Улучшенной Куклы Клакиес-->
+		<relic id="91" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101661"><!--Купон Призыва Исключительной Куклы Королева Муравьев-->
+		<relic id="51" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101660"><!--Купон Призыва Улучшенной Куклы Кельбим-->
+		<relic id="109" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101663"><!--Купон Призыва Исключительной Куклы Ядро-->
+		<relic id="63" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101662"><!--Купон Призыва Исключительной Куклы Орфен-->
+		<relic id="57" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101665"><!--Купон Призыва Исключительной Куклы Закен-->
+		<relic id="69" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101664"><!--Купон Призыва Исключительной Куклы Фринтеза-->
+		<relic id="75" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101667"><!--Купон Призыва Исключительной Куклы Антарас-->
+		<relic id="87" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101666"><!--Купон Призыва Исключительной Куклы Баюм-->
+		<relic id="81" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101669"><!--Купон Призыва Исключительной Куклы Клакиес-->
+		<relic id="92" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101668"><!--Купон Призыва Исключительной Куклы Чудовище-->
+		<relic id="98" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101671"><!--Купон Призыва Исключительной Куклы Кельбим-->
+		<relic id="110" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101670"><!--Купон Призыва Исключительной Куклы Андреас ван Холтер-->
+		<relic id="104" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101673"><!--Купон Призыва Исключительной Куклы Лилит-->
+		<relic id="45" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101672"><!--Купон Призыва Исключительной Куклы Анаким-->
+		<relic id="39" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="101675"><!--Купон Призыва Куклы (Обычная - Редкая) - 11 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5250000"/>
+		<relic id="18" chance="5250000"/>
+		<relic id="22" chance="5250000"/>
+		<relic id="26" chance="5250000"/>
+		<relic id="30" chance="5250000"/>
+		<relic id="34" chance="904170"/>
+		<relic id="40" chance="904170"/>
+		<relic id="46" chance="904170"/>
+		<relic id="52" chance="904170"/>
+		<relic id="58" chance="904170"/>
+		<relic id="64" chance="904170"/>
+		<relic id="70" chance="536670"/>
+		<relic id="76" chance="536670"/>
+		<relic id="82" chance="536660"/>
+		<relic id="88" chance="536660"/>
+		<relic id="93" chance="536660"/>
+		<relic id="99" chance="536660"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101676"><!--Купон Призыва Куклы (Обычная - Редкая) - 1 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="41000000"/>
+		<relic id="73" chance="41000000"/>
+		<relic id="79" chance="41000000"/>
+		<relic id="85" chance="41000000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="37500000"/>
+		<relic id="16" chance="37500000"/>
+		<relic id="20" chance="37500000"/>
+		<relic id="24" chance="37500000"/>
+		<relic id="28" chance="37500000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5520840"/>
+		<relic id="39" chance="5520840"/>
+		<relic id="45" chance="5520830"/>
+		<relic id="51" chance="5520830"/>
+		<relic id="57" chance="5520830"/>
+		<relic id="63" chance="5520830"/>
+		<relic id="69" chance="3180000"/>
+		<relic id="75" chance="3180000"/>
+		<relic id="81" chance="3180000"/>
+		<relic id="87" chance="3180000"/>
+		<relic id="92" chance="3180000"/>
+		<relic id="98" chance="3180000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5250000"/>
+		<relic id="18" chance="5250000"/>
+		<relic id="22" chance="5250000"/>
+		<relic id="26" chance="5250000"/>
+		<relic id="30" chance="5250000"/>
+		<relic id="34" chance="904170"/>
+		<relic id="40" chance="904170"/>
+		<relic id="46" chance="904170"/>
+		<relic id="52" chance="904170"/>
+		<relic id="58" chance="904170"/>
+		<relic id="64" chance="904170"/>
+		<relic id="70" chance="536670"/>
+		<relic id="76" chance="536670"/>
+		<relic id="82" chance="536660"/>
+		<relic id="88" chance="536660"/>
+		<relic id="93" chance="536660"/>
+		<relic id="99" chance="536660"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101707"><!--Купон Призыва Куклы (Обычная - Редкая) - 1 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="32800000"/>
+		<relic id="73" chance="32800000"/>
+		<relic id="79" chance="32800000"/>
+		<relic id="121" chance="32800000"/>
+		<relic id="85" chance="32800000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="36900000"/>
+		<relic id="16" chance="36900000"/>
+		<relic id="20" chance="36900000"/>
+		<relic id="24" chance="36900000"/>
+		<relic id="28" chance="36900000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="122" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5300000"/>
+		<relic id="39" chance="5300000"/>
+		<relic id="45" chance="5300000"/>
+		<relic id="51" chance="5300000"/>
+		<relic id="57" chance="5300000"/>
+		<relic id="63" chance="5300000"/>
+		<relic id="69" chance="2915000"/>
+		<relic id="75" chance="2915000"/>
+		<relic id="81" chance="2915000"/>
+		<relic id="123" chance="2915000"/>
+		<relic id="87" chance="2915000"/>
+		<relic id="92" chance="2915000"/>
+		<relic id="98" chance="2915000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600000"/>
+		<relic id="18" chance="5600000"/>
+		<relic id="22" chance="5600000"/>
+		<relic id="26" chance="5600000"/>
+		<relic id="30" chance="5600000"/>
+		<relic id="34" chance="700000"/>
+		<relic id="40" chance="700000"/>
+		<relic id="46" chance="700000"/>
+		<relic id="52" chance="700000"/>
+		<relic id="58" chance="700000"/>
+		<relic id="64" chance="700000"/>
+		<relic id="70" chance="385000"/>
+		<relic id="76" chance="385000"/>
+		<relic id="82" chance="385000"/>
+		<relic id="124" chance="385000"/>
+		<relic id="88" chance="385000"/>
+		<relic id="93" chance="385000"/>
+		<relic id="99" chance="385000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="11" id="101706"><!--Купон Призыва Куклы (Обычная - Редкая) - 11 Раз (Временно)-->
+		<relic id="1" chance="1312000000"/>
+		<relic id="3" chance="1312000000"/>
+		<relic id="5" chance="1312000000"/>
+		<relic id="7" chance="1312000000"/>
+		<relic id="9" chance="1312000000"/>
+		<relic id="11" chance="196800000"/>
+		<relic id="15" chance="196800000"/>
+		<relic id="19" chance="196800000"/>
+		<relic id="23" chance="196800000"/>
+		<relic id="27" chance="196800000"/>
+		<relic id="31" chance="82000000"/>
+		<relic id="37" chance="82000000"/>
+		<relic id="43" chance="82000000"/>
+		<relic id="49" chance="82000000"/>
+		<relic id="55" chance="82000000"/>
+		<relic id="61" chance="82000000"/>
+		<relic id="67" chance="32800000"/>
+		<relic id="73" chance="32800000"/>
+		<relic id="79" chance="32800000"/>
+		<relic id="121" chance="32800000"/>
+		<relic id="85" chance="32800000"/>
+		<relic id="2" chance="240000000"/>
+		<relic id="4" chance="240000000"/>
+		<relic id="6" chance="240000000"/>
+		<relic id="8" chance="240000000"/>
+		<relic id="10" chance="240000000"/>
+		<relic id="12" chance="36900000"/>
+		<relic id="16" chance="36900000"/>
+		<relic id="20" chance="36900000"/>
+		<relic id="24" chance="36900000"/>
+		<relic id="28" chance="36900000"/>
+		<relic id="32" chance="15000000"/>
+		<relic id="38" chance="15000000"/>
+		<relic id="44" chance="15000000"/>
+		<relic id="50" chance="15000000"/>
+		<relic id="56" chance="15000000"/>
+		<relic id="62" chance="15000000"/>
+		<relic id="68" chance="3000000"/>
+		<relic id="74" chance="3000000"/>
+		<relic id="80" chance="3000000"/>
+		<relic id="122" chance="3000000"/>
+		<relic id="86" chance="3000000"/>
+		<relic id="91" chance="3000000"/>
+		<relic id="97" chance="3000000"/>
+		<relic id="103" chance="1500000"/>
+		<relic id="109" chance="1500000"/>
+		<relic id="115" chance="1500000"/>
+		<relic id="13" chance="42400000"/>
+		<relic id="17" chance="42400000"/>
+		<relic id="21" chance="42400000"/>
+		<relic id="25" chance="42400000"/>
+		<relic id="29" chance="42400000"/>
+		<relic id="33" chance="5300000"/>
+		<relic id="39" chance="5300000"/>
+		<relic id="45" chance="5300000"/>
+		<relic id="51" chance="5300000"/>
+		<relic id="57" chance="5300000"/>
+		<relic id="63" chance="5300000"/>
+		<relic id="69" chance="2915000"/>
+		<relic id="75" chance="2915000"/>
+		<relic id="81" chance="2915000"/>
+		<relic id="123" chance="2915000"/>
+		<relic id="87" chance="2915000"/>
+		<relic id="92" chance="2915000"/>
+		<relic id="98" chance="2915000"/>
+		<relic id="104" chance="265000"/>
+		<relic id="110" chance="265000"/>
+		<relic id="116" chance="265000"/>
+		<relic id="14" chance="5600000"/>
+		<relic id="18" chance="5600000"/>
+		<relic id="22" chance="5600000"/>
+		<relic id="26" chance="5600000"/>
+		<relic id="30" chance="5600000"/>
+		<relic id="34" chance="700000"/>
+		<relic id="40" chance="700000"/>
+		<relic id="46" chance="700000"/>
+		<relic id="52" chance="700000"/>
+		<relic id="58" chance="700000"/>
+		<relic id="64" chance="700000"/>
+		<relic id="70" chance="385000"/>
+		<relic id="76" chance="385000"/>
+		<relic id="82" chance="385000"/>
+		<relic id="124" chance="385000"/>
+		<relic id="88" chance="385000"/>
+		<relic id="93" chance="385000"/>
+		<relic id="99" chance="385000"/>
+		<relic id="105" chance="35000"/>
+		<relic id="111" chance="35000"/>
+		<relic id="117" chance="35000"/>
+	</coupon>
+	<coupon count="1" id="101817"><!--Купон Призыва Улучшенной Куклы Дэйман-->
+		<relic id="4" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101816"><!--Купон Призыва Улучшенной Куклы Принцесса Молранг-->
+		<relic id="2" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101819"><!--Купон Призыва Улучшенной Куклы Руминир-->
+		<relic id="8" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101818"><!--Купон Призыва Улучшенной Куклы Сатина-->
+		<relic id="6" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101821"><!--Купон Призыва Улучшенной Куклы Король Игнис-->
+		<relic id="12" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101820"><!--Купон Призыва Улучшенной Куклы Айзен Келсур-->
+		<relic id="10" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101823"><!--Купон Призыва Улучшенной Куклы Король Прочелла-->
+		<relic id="20" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101822"><!--Купон Призыва Улучшенной Куклы Королева Небула-->
+		<relic id="16" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101825"><!--Купон Призыва Улучшенной Куклы Тирон-->
+		<relic id="28" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101824"><!--Купон Призыва Улучшенной Куклы Король Петрам-->
+		<relic id="24" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101826"><!--Купон Призыва Улучшенной Куклы Скарлет ван Халиша-->
+		<relic id="32" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101983"><!--Купон Призыва Редкой Куклы Анаким-->
+		<relic id="40" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101982"><!--Купон Призыва Редкой Куклы Скарлет ван Халиша-->
+		<relic id="34" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101985"><!--Купон Призыва Героической Куклы Скарлет ван Халиша-->
+		<relic id="35" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101984"><!--Купон Призыва Редкой Куклы Лилит-->
+		<relic id="46" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101987"><!--Купон Призыва Героической Куклы Лилит-->
+		<relic id="47" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="101986"><!--Купон Призыва Героической Куклы Анаким-->
+		<relic id="41" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102085"><!--Купон Призыва Улучшенной Куклы Ацтакан-->
+		<relic id="128" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102084"><!--Купон Призыва Обычной Куклы Ацтакан-->
+		<relic id="127" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102087"><!--Купон Призыва Редкой Куклы Ацтакан-->
+		<relic id="130" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102086"><!--Купон Призыва Исключительной Куклы Ацтакан-->
+		<relic id="129" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102088"><!--Купон Призыва Героической Куклы Ацтакан-->
+		<relic id="131" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102119"><!--Купон Призыва Обычной Куклы Королева Муравьев (Временно)-->
+		<relic id="49" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102118"><!--Купон Призыва Куклы Путешествия в Аден - 1 Раз (Временно)-->
+		<relic id="1" chance="1164000000"/>
+		<relic id="3" chance="1164000000"/>
+		<relic id="5" chance="1164000000"/>
+		<relic id="7" chance="1164000000"/>
+		<relic id="9" chance="1164000000"/>
+		<relic id="11" chance="613040000"/>
+		<relic id="15" chance="613040000"/>
+		<relic id="19" chance="613040000"/>
+		<relic id="23" chance="613040000"/>
+		<relic id="27" chance="613040000"/>
+		<relic id="31" chance="97000000"/>
+		<relic id="37" chance="97000000"/>
+		<relic id="43" chance="97000000"/>
+		<relic id="49" chance="97000000"/>
+		<relic id="55" chance="97000000"/>
+		<relic id="61" chance="97000000"/>
+		<relic id="67" chance="38800000"/>
+		<relic id="73" chance="38800000"/>
+		<relic id="79" chance="38800000"/>
+		<relic id="121" chance="38800000"/>
+		<relic id="127" chance="38800000"/>
+		<relic id="85" chance="38800000"/>
+		<relic id="2" chance="36000000"/>
+		<relic id="4" chance="36000000"/>
+		<relic id="6" chance="36000000"/>
+		<relic id="8" chance="36000000"/>
+		<relic id="10" chance="36000000"/>
+		<relic id="12" chance="19320000"/>
+		<relic id="16" chance="19320000"/>
+		<relic id="20" chance="19320000"/>
+		<relic id="24" chance="19320000"/>
+		<relic id="28" chance="19320000"/>
+		<relic id="32" chance="3000000"/>
+		<relic id="38" chance="3000000"/>
+		<relic id="44" chance="3000000"/>
+		<relic id="50" chance="3000000"/>
+		<relic id="56" chance="3000000"/>
+		<relic id="62" chance="3000000"/>
+		<relic id="68" chance="562500"/>
+		<relic id="74" chance="562500"/>
+		<relic id="80" chance="562500"/>
+		<relic id="122" chance="562500"/>
+		<relic id="128" chance="562500"/>
+		<relic id="86" chance="562500"/>
+		<relic id="91" chance="562500"/>
+		<relic id="97" chance="562500"/>
+		<relic id="103" chance="300000"/>
+		<relic id="109" chance="300000"/>
+		<relic id="115" chance="300000"/>
+	</coupon>
+	<coupon count="1" id="102121"><!--Купон Призыва Обычной Куклы Ядро (Временно)-->
+		<relic id="61" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102120"><!--Купон Призыва Обычной Куклы Орфен (Временно)-->
+		<relic id="55" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102123"><!--Купон Призыва Обычной Куклы Баюм (Временно)-->
+		<relic id="79" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102122"><!--Купон Призыва Обычной Куклы Закен (Временно)-->
+		<relic id="67" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102125"><!--Купон Призыва Улучшенной Куклы Королева Муравьев (Временно)-->
+		<relic id="50" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102124"><!--Купон Призыва Обычной Куклы Антарас (Временно)-->
+		<relic id="85" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102127"><!--Купон Призыва Улучшенной Куклы Ядро (Временно)-->
+		<relic id="62" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102126"><!--Купон Призыва Улучшенной Куклы Орфен (Временно)-->
+		<relic id="56" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102129"><!--Купон Призыва Улучшенной Куклы Баюм (Временно)-->
+		<relic id="80" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102128"><!--Купон Призыва Улучшенной Куклы Закен (Временно)-->
+		<relic id="68" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102131"><!--Купон Призыва Улучшенной Куклы Путешествия в Аден - 1 Раз (Временно)-->
+		<relic id="2" chance="1200000000"/>
+		<relic id="4" chance="1200000000"/>
+		<relic id="6" chance="1200000000"/>
+		<relic id="8" chance="1200000000"/>
+		<relic id="10" chance="1200000000"/>
+		<relic id="12" chance="644000000"/>
+		<relic id="16" chance="644000000"/>
+		<relic id="20" chance="644000000"/>
+		<relic id="24" chance="644000000"/>
+		<relic id="28" chance="644000000"/>
+		<relic id="32" chance="100000000"/>
+		<relic id="38" chance="100000000"/>
+		<relic id="44" chance="100000000"/>
+		<relic id="50" chance="100000000"/>
+		<relic id="56" chance="100000000"/>
+		<relic id="62" chance="100000000"/>
+		<relic id="68" chance="18750000"/>
+		<relic id="74" chance="18750000"/>
+		<relic id="80" chance="18750000"/>
+		<relic id="122" chance="18750000"/>
+		<relic id="128" chance="18750000"/>
+		<relic id="86" chance="18750000"/>
+		<relic id="91" chance="18750000"/>
+		<relic id="97" chance="18750000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102130"><!--Купон Призыва Улучшенной Куклы Антарас (Временно)-->
+		<relic id="86" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102133"><!--Купон Призыва Исключительной Куклы Принцесса Молранг-->
+		<relic id="133" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102143"><!--Купон Призыва Обычной Куклы Дэйман-->
+		<relic id="3" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102145"><!--Купон Призыва Обычной Куклы Руминир-->
+		<relic id="7" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102144"><!--Купон Призыва Обычной Куклы Сатина-->
+		<relic id="5" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102147"><!--Купон Призыва Обычной Куклы Король Игнис-->
+		<relic id="11" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102146"><!--Купон Призыва Обычной Куклы Айзен Келсур-->
+		<relic id="9" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102149"><!--Купон Призыва Обычной Куклы Тирон-->
+		<relic id="27" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102148"><!--Купон Призыва Обычной Куклы Королева Небула-->
+		<relic id="15" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102151"><!--Купон Призыва Обычной Куклы Лилит-->
+		<relic id="43" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102150"><!--Купон Призыва Обычной Куклы Анаким-->
+		<relic id="37" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102153"><!--Купон Призыва Редкой Куклы Король Игнис-->
+		<relic id="14" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102152"><!--Купон Призыва Обычной Куклы Скарлет ван Халиша-->
+		<relic id="31" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102155"><!--Купон Призыва Редкой Куклы Король Прочелла-->
+		<relic id="22" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102154"><!--Купон Призыва Редкой Куклы Королева Небула-->
+		<relic id="18" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102157"><!--Купон Призыва Редкой Куклы Тирон-->
+		<relic id="30" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102156"><!--Купон Призыва Редкой Куклы Король Петрам-->
+		<relic id="26" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102419"><!--Купон Призыва Легендарной Куклы Анаким-->
+		<relic id="42" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102418"><!--Купон Призыва Легендарной Куклы Скарлет ван Халиша-->
+		<relic id="36" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102421"><!--Купон Призыва Легендарной Куклы Вулкан-->
+		<relic id="126" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102420"><!--Купон Призыва Легендарной Куклы Лилит-->
+		<relic id="48" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102422"><!--Купон Призыва Легендарной Куклы Ацтакан-->
+		<relic id="132" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102625"><!--Купон для Повторного Синтеза Улучшенной Куклы - 1 Раз (Временно)-->
+		<relic id="2" chance="1080000000"/>
+		<relic id="4" chance="1080000000"/>
+		<relic id="6" chance="1080000000"/>
+		<relic id="8" chance="1080000000"/>
+		<relic id="10" chance="1080000000"/>
+		<relic id="12" chance="550800000"/>
+		<relic id="16" chance="550800000"/>
+		<relic id="20" chance="550800000"/>
+		<relic id="24" chance="550800000"/>
+		<relic id="28" chance="550800000"/>
+		<relic id="32" chance="68400000"/>
+		<relic id="38" chance="68400000"/>
+		<relic id="44" chance="68400000"/>
+		<relic id="135" chance="68400000"/>
+		<relic id="141" chance="68400000"/>
+		<relic id="147" chance="68400000"/>
+		<relic id="153" chance="68400000"/>
+		<relic id="50" chance="68400000"/>
+		<relic id="56" chance="68400000"/>
+		<relic id="62" chance="68400000"/>
+		<relic id="68" chance="16875000"/>
+		<relic id="74" chance="16875000"/>
+		<relic id="80" chance="16875000"/>
+		<relic id="122" chance="16875000"/>
+		<relic id="128" chance="16875000"/>
+		<relic id="86" chance="16875000"/>
+		<relic id="91" chance="16875000"/>
+		<relic id="97" chance="16875000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="133" chance="100000000"/>
+		<relic id="13" chance="100000000"/>
+		<relic id="17" chance="100000000"/>
+		<relic id="21" chance="100000000"/>
+		<relic id="25" chance="100000000"/>
+		<relic id="29" chance="100000000"/>
+		<relic id="33" chance="31800000"/>
+		<relic id="39" chance="31800000"/>
+		<relic id="45" chance="31800000"/>
+		<relic id="136" chance="31800000"/>
+		<relic id="142" chance="31800000"/>
+		<relic id="148" chance="31800000"/>
+		<relic id="154" chance="31800000"/>
+		<relic id="51" chance="31800000"/>
+		<relic id="57" chance="31800000"/>
+		<relic id="63" chance="31800000"/>
+		<relic id="69" chance="9875000"/>
+		<relic id="75" chance="9875000"/>
+		<relic id="81" chance="9875000"/>
+		<relic id="123" chance="9875000"/>
+		<relic id="129" chance="9875000"/>
+		<relic id="87" chance="9875000"/>
+		<relic id="92" chance="9875000"/>
+		<relic id="98" chance="9875000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="102627"><!--Купон для Повторного Синтеза Редкой Куклы - 1 Раз (Временно)-->
+		<relic id="14" chance="1116000000"/>
+		<relic id="18" chance="1116000000"/>
+		<relic id="22" chance="1116000000"/>
+		<relic id="26" chance="1116000000"/>
+		<relic id="30" chance="1116000000"/>
+		<relic id="34" chance="270000000"/>
+		<relic id="40" chance="270000000"/>
+		<relic id="46" chance="270000000"/>
+		<relic id="137" chance="270000000"/>
+		<relic id="143" chance="270000000"/>
+		<relic id="149" chance="270000000"/>
+		<relic id="155" chance="270000000"/>
+		<relic id="52" chance="270000000"/>
+		<relic id="58" chance="270000000"/>
+		<relic id="64" chance="270000000"/>
+		<relic id="70" chance="86625000"/>
+		<relic id="76" chance="86625000"/>
+		<relic id="82" chance="86625000"/>
+		<relic id="124" chance="86625000"/>
+		<relic id="130" chance="86625000"/>
+		<relic id="88" chance="86625000"/>
+		<relic id="93" chance="86625000"/>
+		<relic id="99" chance="86625000"/>
+		<relic id="105" chance="9000000"/>
+		<relic id="111" chance="9000000"/>
+		<relic id="117" chance="9000000"/>
+		<relic id="35" chance="67200000"/>
+		<relic id="41" chance="67200000"/>
+		<relic id="47" chance="67200000"/>
+		<relic id="138" chance="67200000"/>
+		<relic id="144" chance="67200000"/>
+		<relic id="150" chance="67200000"/>
+		<relic id="156" chance="67200000"/>
+		<relic id="53" chance="67200000"/>
+		<relic id="59" chance="67200000"/>
+		<relic id="65" chance="67200000"/>
+		<relic id="71" chance="38000000"/>
+		<relic id="77" chance="38000000"/>
+		<relic id="83" chance="38000000"/>
+		<relic id="125" chance="38000000"/>
+		<relic id="131" chance="38000000"/>
+		<relic id="89" chance="38000000"/>
+		<relic id="94" chance="38000000"/>
+		<relic id="100" chance="38000000"/>
+		<relic id="106" chance="8000000"/>
+		<relic id="112" chance="8000000"/>
+		<relic id="118" chance="8000000"/>
+	</coupon>
+	<coupon count="1" id="102626"><!--Купон для Повторного Синтеза Исключительной Куклы - 1 Раз (Временно)-->
+		<relic id="133" chance="900000000"/>
+		<relic id="13" chance="900000000"/>
+		<relic id="17" chance="900000000"/>
+		<relic id="21" chance="900000000"/>
+		<relic id="25" chance="900000000"/>
+		<relic id="29" chance="900000000"/>
+		<relic id="33" chance="286200000"/>
+		<relic id="39" chance="286200000"/>
+		<relic id="45" chance="286200000"/>
+		<relic id="136" chance="286200000"/>
+		<relic id="142" chance="286200000"/>
+		<relic id="148" chance="286200000"/>
+		<relic id="154" chance="286200000"/>
+		<relic id="51" chance="286200000"/>
+		<relic id="57" chance="286200000"/>
+		<relic id="63" chance="286200000"/>
+		<relic id="69" chance="88875000"/>
+		<relic id="75" chance="88875000"/>
+		<relic id="81" chance="88875000"/>
+		<relic id="123" chance="88875000"/>
+		<relic id="129" chance="88875000"/>
+		<relic id="87" chance="88875000"/>
+		<relic id="92" chance="88875000"/>
+		<relic id="98" chance="88875000"/>
+		<relic id="104" chance="9000000"/>
+		<relic id="110" chance="9000000"/>
+		<relic id="116" chance="9000000"/>
+		<relic id="14" chance="124000000"/>
+		<relic id="18" chance="124000000"/>
+		<relic id="22" chance="124000000"/>
+		<relic id="26" chance="124000000"/>
+		<relic id="30" chance="124000000"/>
+		<relic id="34" chance="30000000"/>
+		<relic id="40" chance="30000000"/>
+		<relic id="46" chance="30000000"/>
+		<relic id="137" chance="30000000"/>
+		<relic id="143" chance="30000000"/>
+		<relic id="149" chance="30000000"/>
+		<relic id="155" chance="30000000"/>
+		<relic id="52" chance="30000000"/>
+		<relic id="58" chance="30000000"/>
+		<relic id="64" chance="30000000"/>
+		<relic id="70" chance="9625000"/>
+		<relic id="76" chance="9625000"/>
+		<relic id="82" chance="9625000"/>
+		<relic id="124" chance="9625000"/>
+		<relic id="130" chance="9625000"/>
+		<relic id="88" chance="9625000"/>
+		<relic id="93" chance="9625000"/>
+		<relic id="99" chance="9625000"/>
+		<relic id="105" chance="1000000"/>
+		<relic id="111" chance="1000000"/>
+		<relic id="117" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="102629"><!--Купон для Повторного Синтеза Легендарной Куклы - 1 Раз (Временно)-->
+		<relic id="36" chance="631680000"/>
+		<relic id="42" chance="631680000"/>
+		<relic id="48" chance="631680000"/>
+		<relic id="139" chance="631680000"/>
+		<relic id="145" chance="631680000"/>
+		<relic id="151" chance="631680000"/>
+		<relic id="157" chance="631680000"/>
+		<relic id="54" chance="631680000"/>
+		<relic id="60" chance="631680000"/>
+		<relic id="66" chance="631680000"/>
+		<relic id="72" chance="357200000"/>
+		<relic id="78" chance="357200000"/>
+		<relic id="84" chance="357200000"/>
+		<relic id="126" chance="357200000"/>
+		<relic id="132" chance="357200000"/>
+		<relic id="90" chance="357200000"/>
+		<relic id="95" chance="357200000"/>
+		<relic id="101" chance="357200000"/>
+		<relic id="107" chance="75200000"/>
+		<relic id="113" chance="75200000"/>
+		<relic id="119" chance="75200000"/>
+		<relic id="96" chance="246000000"/>
+		<relic id="102" chance="246000000"/>
+		<relic id="108" chance="36000000"/>
+		<relic id="114" chance="36000000"/>
+		<relic id="120" chance="36000000"/>
+	</coupon>
+	<coupon count="1" id="102628"><!--Купон для Повторного Синтеза Героической Куклы - 1 Раз (Временно)-->
+		<relic id="35" chance="604800000"/>
+		<relic id="41" chance="604800000"/>
+		<relic id="47" chance="604800000"/>
+		<relic id="138" chance="604800000"/>
+		<relic id="144" chance="604800000"/>
+		<relic id="150" chance="604800000"/>
+		<relic id="156" chance="604800000"/>
+		<relic id="53" chance="604800000"/>
+		<relic id="59" chance="604800000"/>
+		<relic id="65" chance="604800000"/>
+		<relic id="71" chance="342000000"/>
+		<relic id="77" chance="342000000"/>
+		<relic id="83" chance="342000000"/>
+		<relic id="125" chance="342000000"/>
+		<relic id="131" chance="342000000"/>
+		<relic id="89" chance="342000000"/>
+		<relic id="94" chance="342000000"/>
+		<relic id="100" chance="342000000"/>
+		<relic id="106" chance="72000000"/>
+		<relic id="112" chance="72000000"/>
+		<relic id="118" chance="72000000"/>
+		<relic id="36" chance="67200000"/>
+		<relic id="42" chance="67200000"/>
+		<relic id="48" chance="67200000"/>
+		<relic id="139" chance="67200000"/>
+		<relic id="145" chance="67200000"/>
+		<relic id="151" chance="67200000"/>
+		<relic id="157" chance="67200000"/>
+		<relic id="54" chance="67200000"/>
+		<relic id="60" chance="67200000"/>
+		<relic id="66" chance="67200000"/>
+		<relic id="72" chance="38000000"/>
+		<relic id="78" chance="38000000"/>
+		<relic id="84" chance="38000000"/>
+		<relic id="126" chance="38000000"/>
+		<relic id="132" chance="38000000"/>
+		<relic id="90" chance="38000000"/>
+		<relic id="95" chance="38000000"/>
+		<relic id="101" chance="38000000"/>
+		<relic id="107" chance="8000000"/>
+		<relic id="113" chance="8000000"/>
+		<relic id="119" chance="8000000"/>
+	</coupon>
+	<coupon count="1" id="102883"><!--Купон Призыва Куклы (Улучшенная - Исключительная) - 1 Раз (Временно)-->
+		<relic id="4" chance="1080000000"/>
+		<relic id="8" chance="1080000000"/>
+		<relic id="2" chance="1080000000"/>
+		<relic id="10" chance="1080000000"/>
+		<relic id="6" chance="1080000000"/>
+		<relic id="16" chance="579600000"/>
+		<relic id="12" chance="579600000"/>
+		<relic id="24" chance="579600000"/>
+		<relic id="20" chance="579600000"/>
+		<relic id="28" chance="579600000"/>
+		<relic id="44" chance="90000000"/>
+		<relic id="32" chance="90000000"/>
+		<relic id="38" chance="90000000"/>
+		<relic id="50" chance="90000000"/>
+		<relic id="56" chance="90000000"/>
+		<relic id="62" chance="90000000"/>
+		<relic id="91" chance="16875000"/>
+		<relic id="80" chance="16875000"/>
+		<relic id="97" chance="16875000"/>
+		<relic id="122" chance="16875000"/>
+		<relic id="128" chance="16875000"/>
+		<relic id="86" chance="16875000"/>
+		<relic id="68" chance="16875000"/>
+		<relic id="74" chance="16875000"/>
+		<relic id="103" chance="9000000"/>
+		<relic id="109" chance="9000000"/>
+		<relic id="115" chance="9000000"/>
+		<relic id="133" chance="100000000"/>
+		<relic id="17" chance="100000000"/>
+		<relic id="13" chance="100000000"/>
+		<relic id="25" chance="100000000"/>
+		<relic id="21" chance="100000000"/>
+		<relic id="29" chance="100000000"/>
+		<relic id="45" chance="53000000"/>
+		<relic id="33" chance="53000000"/>
+		<relic id="39" chance="53000000"/>
+		<relic id="51" chance="53000000"/>
+		<relic id="57" chance="53000000"/>
+		<relic id="63" chance="53000000"/>
+		<relic id="92" chance="9875000"/>
+		<relic id="81" chance="9875000"/>
+		<relic id="98" chance="9875000"/>
+		<relic id="123" chance="9875000"/>
+		<relic id="129" chance="9875000"/>
+		<relic id="87" chance="9875000"/>
+		<relic id="69" chance="9875000"/>
+		<relic id="75" chance="9875000"/>
+		<relic id="104" chance="1000000"/>
+		<relic id="110" chance="1000000"/>
+		<relic id="116" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="102884"><!--Купон Призыва Куклы (Исключительная - Редкая) - 1 Раз (Временно)-->
+		<relic id="133" chance="900000000"/>
+		<relic id="17" chance="900000000"/>
+		<relic id="13" chance="900000000"/>
+		<relic id="25" chance="900000000"/>
+		<relic id="21" chance="900000000"/>
+		<relic id="29" chance="900000000"/>
+		<relic id="45" chance="477000000"/>
+		<relic id="33" chance="477000000"/>
+		<relic id="39" chance="477000000"/>
+		<relic id="51" chance="477000000"/>
+		<relic id="57" chance="477000000"/>
+		<relic id="63" chance="477000000"/>
+		<relic id="92" chance="88875000"/>
+		<relic id="81" chance="88875000"/>
+		<relic id="98" chance="88875000"/>
+		<relic id="123" chance="88875000"/>
+		<relic id="129" chance="88875000"/>
+		<relic id="87" chance="88875000"/>
+		<relic id="69" chance="88875000"/>
+		<relic id="75" chance="88875000"/>
+		<relic id="104" chance="9000000"/>
+		<relic id="110" chance="9000000"/>
+		<relic id="116" chance="9000000"/>
+		<relic id="18" chance="122000000"/>
+		<relic id="14" chance="122000000"/>
+		<relic id="26" chance="122000000"/>
+		<relic id="22" chance="122000000"/>
+		<relic id="30" chance="122000000"/>
+		<relic id="46" chance="51500000"/>
+		<relic id="34" chance="51500000"/>
+		<relic id="40" chance="51500000"/>
+		<relic id="52" chance="51500000"/>
+		<relic id="58" chance="51500000"/>
+		<relic id="64" chance="51500000"/>
+		<relic id="93" chance="9750000"/>
+		<relic id="82" chance="9750000"/>
+		<relic id="99" chance="9750000"/>
+		<relic id="124" chance="9750000"/>
+		<relic id="130" chance="9750000"/>
+		<relic id="88" chance="9750000"/>
+		<relic id="70" chance="9750000"/>
+		<relic id="76" chance="9750000"/>
+		<relic id="105" chance="1000000"/>
+		<relic id="111" chance="1000000"/>
+		<relic id="117" chance="1000000"/>
+	</coupon>
+	<coupon count="1" id="102923"><!--Купон Призыва Легендарной Куклы Баюм (Временно)-->
+		<relic id="84" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102925"><!--Купон Призыва Куклы (Обычная) - 1 Раз (Временно)-->
+		<relic id="1" chance="1200000000"/>
+		<relic id="3" chance="1200000000"/>
+		<relic id="5" chance="1200000000"/>
+		<relic id="7" chance="1200000000"/>
+		<relic id="9" chance="1200000000"/>
+		<relic id="11" chance="632000000"/>
+		<relic id="15" chance="632000000"/>
+		<relic id="19" chance="632000000"/>
+		<relic id="23" chance="632000000"/>
+		<relic id="27" chance="632000000"/>
+		<relic id="31" chance="100000000"/>
+		<relic id="37" chance="100000000"/>
+		<relic id="43" chance="100000000"/>
+		<relic id="49" chance="100000000"/>
+		<relic id="55" chance="100000000"/>
+		<relic id="61" chance="100000000"/>
+		<relic id="67" chance="40000000"/>
+		<relic id="73" chance="40000000"/>
+		<relic id="79" chance="40000000"/>
+		<relic id="121" chance="40000000"/>
+		<relic id="127" chance="40000000"/>
+		<relic id="85" chance="40000000"/>
+	</coupon>
+	<coupon count="1" id="102927"><!--Купон Призыва Куклы (Исключительная) - 1 Раз (Временно)-->
+		<relic id="133" chance="1000000000"/>
+		<relic id="13" chance="1000000000"/>
+		<relic id="17" chance="1000000000"/>
+		<relic id="21" chance="1000000000"/>
+		<relic id="25" chance="1000000000"/>
+		<relic id="29" chance="1000000000"/>
+		<relic id="33" chance="530000000"/>
+		<relic id="39" chance="530000000"/>
+		<relic id="45" chance="530000000"/>
+		<relic id="51" chance="530000000"/>
+		<relic id="57" chance="530000000"/>
+		<relic id="63" chance="530000000"/>
+		<relic id="69" chance="98750000"/>
+		<relic id="75" chance="98750000"/>
+		<relic id="81" chance="98750000"/>
+		<relic id="123" chance="98750000"/>
+		<relic id="129" chance="98750000"/>
+		<relic id="87" chance="98750000"/>
+		<relic id="92" chance="98750000"/>
+		<relic id="98" chance="98750000"/>
+		<relic id="104" chance="10000000"/>
+		<relic id="110" chance="10000000"/>
+		<relic id="116" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102926"><!--Купон Призыва Куклы (Улучшенная) - 1 Раз (Временно)-->
+		<relic id="2" chance="1200000000"/>
+		<relic id="4" chance="1200000000"/>
+		<relic id="6" chance="1200000000"/>
+		<relic id="8" chance="1200000000"/>
+		<relic id="10" chance="1200000000"/>
+		<relic id="12" chance="644000000"/>
+		<relic id="16" chance="644000000"/>
+		<relic id="20" chance="644000000"/>
+		<relic id="24" chance="644000000"/>
+		<relic id="28" chance="644000000"/>
+		<relic id="32" chance="100000000"/>
+		<relic id="38" chance="100000000"/>
+		<relic id="44" chance="100000000"/>
+		<relic id="50" chance="100000000"/>
+		<relic id="56" chance="100000000"/>
+		<relic id="62" chance="100000000"/>
+		<relic id="68" chance="18750000"/>
+		<relic id="74" chance="18750000"/>
+		<relic id="80" chance="18750000"/>
+		<relic id="122" chance="18750000"/>
+		<relic id="128" chance="18750000"/>
+		<relic id="86" chance="18750000"/>
+		<relic id="91" chance="18750000"/>
+		<relic id="97" chance="18750000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102929"><!--Купон Призыва Куклы (Героическая) - 1 Раз (Временно)-->
+		<relic id="35" chance="1110000000"/>
+		<relic id="41" chance="1110000000"/>
+		<relic id="47" chance="1110000000"/>
+		<relic id="53" chance="1110000000"/>
+		<relic id="59" chance="1110000000"/>
+		<relic id="65" chance="1110000000"/>
+		<relic id="71" chance="387500000"/>
+		<relic id="77" chance="387500000"/>
+		<relic id="83" chance="387500000"/>
+		<relic id="125" chance="387500000"/>
+		<relic id="131" chance="387500000"/>
+		<relic id="89" chance="387500000"/>
+		<relic id="94" chance="387500000"/>
+		<relic id="100" chance="387500000"/>
+		<relic id="106" chance="80000000"/>
+		<relic id="112" chance="80000000"/>
+		<relic id="118" chance="80000000"/>
+	</coupon>
+	<coupon count="1" id="102928"><!--Купон Призыва Куклы (Редкая) - 1 Раз (Временно)-->
+		<relic id="14" chance="1220000000"/>
+		<relic id="18" chance="1220000000"/>
+		<relic id="22" chance="1220000000"/>
+		<relic id="26" chance="1220000000"/>
+		<relic id="30" chance="1220000000"/>
+		<relic id="34" chance="515000000"/>
+		<relic id="40" chance="515000000"/>
+		<relic id="46" chance="515000000"/>
+		<relic id="52" chance="515000000"/>
+		<relic id="58" chance="515000000"/>
+		<relic id="64" chance="515000000"/>
+		<relic id="70" chance="97500000"/>
+		<relic id="76" chance="97500000"/>
+		<relic id="82" chance="97500000"/>
+		<relic id="124" chance="97500000"/>
+		<relic id="130" chance="97500000"/>
+		<relic id="88" chance="97500000"/>
+		<relic id="93" chance="97500000"/>
+		<relic id="99" chance="97500000"/>
+		<relic id="105" chance="10000000"/>
+		<relic id="111" chance="10000000"/>
+		<relic id="117" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102931"><!--Купон Призыва Куклы (Обычная) - 1 Раз (Временно)-->
+		<relic id="1" chance="1200000000"/>
+		<relic id="3" chance="1200000000"/>
+		<relic id="5" chance="1200000000"/>
+		<relic id="7" chance="1200000000"/>
+		<relic id="9" chance="1200000000"/>
+		<relic id="11" chance="632000000"/>
+		<relic id="15" chance="632000000"/>
+		<relic id="19" chance="632000000"/>
+		<relic id="23" chance="632000000"/>
+		<relic id="27" chance="632000000"/>
+		<relic id="31" chance="100000000"/>
+		<relic id="37" chance="100000000"/>
+		<relic id="43" chance="100000000"/>
+		<relic id="49" chance="100000000"/>
+		<relic id="55" chance="100000000"/>
+		<relic id="61" chance="100000000"/>
+		<relic id="67" chance="40000000"/>
+		<relic id="73" chance="40000000"/>
+		<relic id="79" chance="40000000"/>
+		<relic id="121" chance="40000000"/>
+		<relic id="127" chance="40000000"/>
+		<relic id="85" chance="40000000"/>
+	</coupon>
+	<coupon count="1" id="102930"><!--Купон Призыва Куклы (Легендарная) - 1 Раз (Временно)-->
+		<relic id="36" chance="1110000000"/>
+		<relic id="42" chance="1110000000"/>
+		<relic id="48" chance="1110000000"/>
+		<relic id="54" chance="1110000000"/>
+		<relic id="60" chance="1110000000"/>
+		<relic id="66" chance="1110000000"/>
+		<relic id="72" chance="387500000"/>
+		<relic id="78" chance="387500000"/>
+		<relic id="84" chance="387500000"/>
+		<relic id="126" chance="387500000"/>
+		<relic id="132" chance="387500000"/>
+		<relic id="90" chance="387500000"/>
+		<relic id="95" chance="387500000"/>
+		<relic id="101" chance="387500000"/>
+		<relic id="107" chance="80000000"/>
+		<relic id="113" chance="80000000"/>
+		<relic id="119" chance="80000000"/>
+	</coupon>
+	<coupon count="1" id="102933"><!--Купон Призыва Куклы (Исключительная) - 1 Раз (Временно)-->
+		<relic id="133" chance="1000000000"/>
+		<relic id="13" chance="1000000000"/>
+		<relic id="17" chance="1000000000"/>
+		<relic id="21" chance="1000000000"/>
+		<relic id="25" chance="1000000000"/>
+		<relic id="29" chance="1000000000"/>
+		<relic id="33" chance="530000000"/>
+		<relic id="39" chance="530000000"/>
+		<relic id="45" chance="530000000"/>
+		<relic id="51" chance="530000000"/>
+		<relic id="57" chance="530000000"/>
+		<relic id="63" chance="530000000"/>
+		<relic id="69" chance="98750000"/>
+		<relic id="75" chance="98750000"/>
+		<relic id="81" chance="98750000"/>
+		<relic id="123" chance="98750000"/>
+		<relic id="129" chance="98750000"/>
+		<relic id="87" chance="98750000"/>
+		<relic id="92" chance="98750000"/>
+		<relic id="98" chance="98750000"/>
+		<relic id="104" chance="10000000"/>
+		<relic id="110" chance="10000000"/>
+		<relic id="116" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102932"><!--Купон Призыва Куклы (Улучшенная) - 1 Раз (Временно)-->
+		<relic id="2" chance="1200000000"/>
+		<relic id="4" chance="1200000000"/>
+		<relic id="6" chance="1200000000"/>
+		<relic id="8" chance="1200000000"/>
+		<relic id="10" chance="1200000000"/>
+		<relic id="12" chance="644000000"/>
+		<relic id="16" chance="644000000"/>
+		<relic id="20" chance="644000000"/>
+		<relic id="24" chance="644000000"/>
+		<relic id="28" chance="644000000"/>
+		<relic id="32" chance="100000000"/>
+		<relic id="38" chance="100000000"/>
+		<relic id="44" chance="100000000"/>
+		<relic id="50" chance="100000000"/>
+		<relic id="56" chance="100000000"/>
+		<relic id="62" chance="100000000"/>
+		<relic id="68" chance="18750000"/>
+		<relic id="74" chance="18750000"/>
+		<relic id="80" chance="18750000"/>
+		<relic id="122" chance="18750000"/>
+		<relic id="128" chance="18750000"/>
+		<relic id="86" chance="18750000"/>
+		<relic id="91" chance="18750000"/>
+		<relic id="97" chance="18750000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102935"><!--Купон Призыва Куклы (Героическая) - 1 Раз (Временно)-->
+		<relic id="35" chance="1110000000"/>
+		<relic id="41" chance="1110000000"/>
+		<relic id="47" chance="1110000000"/>
+		<relic id="53" chance="1110000000"/>
+		<relic id="59" chance="1110000000"/>
+		<relic id="65" chance="1110000000"/>
+		<relic id="71" chance="387500000"/>
+		<relic id="77" chance="387500000"/>
+		<relic id="83" chance="387500000"/>
+		<relic id="125" chance="387500000"/>
+		<relic id="131" chance="387500000"/>
+		<relic id="89" chance="387500000"/>
+		<relic id="94" chance="387500000"/>
+		<relic id="100" chance="387500000"/>
+		<relic id="106" chance="80000000"/>
+		<relic id="112" chance="80000000"/>
+		<relic id="118" chance="80000000"/>
+	</coupon>
+	<coupon count="1" id="102934"><!--Купон Призыва Куклы (Редкая) - 1 Раз (Временно)-->
+		<relic id="14" chance="1220000000"/>
+		<relic id="18" chance="1220000000"/>
+		<relic id="22" chance="1220000000"/>
+		<relic id="26" chance="1220000000"/>
+		<relic id="30" chance="1220000000"/>
+		<relic id="34" chance="515000000"/>
+		<relic id="40" chance="515000000"/>
+		<relic id="46" chance="515000000"/>
+		<relic id="52" chance="515000000"/>
+		<relic id="58" chance="515000000"/>
+		<relic id="64" chance="515000000"/>
+		<relic id="70" chance="97500000"/>
+		<relic id="76" chance="97500000"/>
+		<relic id="82" chance="97500000"/>
+		<relic id="124" chance="97500000"/>
+		<relic id="130" chance="97500000"/>
+		<relic id="88" chance="97500000"/>
+		<relic id="93" chance="97500000"/>
+		<relic id="99" chance="97500000"/>
+		<relic id="105" chance="10000000"/>
+		<relic id="111" chance="10000000"/>
+		<relic id="117" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="102937"><!--Купон Призыва Героической Куклы Баюм (Временно)-->
+		<relic id="83" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="102936"><!--Купон Призыва Куклы (Легендарная) - 1 Раз (Временно)-->
+		<relic id="36" chance="1110000000"/>
+		<relic id="42" chance="1110000000"/>
+		<relic id="48" chance="1110000000"/>
+		<relic id="54" chance="1110000000"/>
+		<relic id="60" chance="1110000000"/>
+		<relic id="66" chance="1110000000"/>
+		<relic id="72" chance="387500000"/>
+		<relic id="78" chance="387500000"/>
+		<relic id="84" chance="387500000"/>
+		<relic id="126" chance="387500000"/>
+		<relic id="132" chance="387500000"/>
+		<relic id="90" chance="387500000"/>
+		<relic id="95" chance="387500000"/>
+		<relic id="101" chance="387500000"/>
+		<relic id="107" chance="80000000"/>
+		<relic id="113" chance="80000000"/>
+		<relic id="119" chance="80000000"/>
+	</coupon>
+	<coupon count="11" id="102943"><!--Купон Призыва Куклы (Обычная - Героическая) - 11 Раз-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="70000000"/>
+		<relic id="37" chance="70000000"/>
+		<relic id="43" chance="70000000"/>
+		<relic id="49" chance="70000000"/>
+		<relic id="55" chance="70000000"/>
+		<relic id="61" chance="70000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="396000000"/>
+		<relic id="4" chance="396000000"/>
+		<relic id="6" chance="396000000"/>
+		<relic id="8" chance="396000000"/>
+		<relic id="10" chance="396000000"/>
+		<relic id="12" chance="252000000"/>
+		<relic id="16" chance="252000000"/>
+		<relic id="20" chance="252000000"/>
+		<relic id="24" chance="252000000"/>
+		<relic id="28" chance="252000000"/>
+		<relic id="32" chance="43200000"/>
+		<relic id="38" chance="43200000"/>
+		<relic id="44" chance="43200000"/>
+		<relic id="50" chance="43200000"/>
+		<relic id="56" chance="43200000"/>
+		<relic id="62" chance="43200000"/>
+		<relic id="68" chance="11250000"/>
+		<relic id="74" chance="11250000"/>
+		<relic id="80" chance="11250000"/>
+		<relic id="122" chance="11250000"/>
+		<relic id="128" chance="11250000"/>
+		<relic id="86" chance="11250000"/>
+		<relic id="91" chance="11250000"/>
+		<relic id="97" chance="11250000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="33250000"/>
+		<relic id="13" chance="33250000"/>
+		<relic id="17" chance="33250000"/>
+		<relic id="21" chance="33250000"/>
+		<relic id="25" chance="33250000"/>
+		<relic id="29" chance="33250000"/>
+		<relic id="33" chance="20125000"/>
+		<relic id="39" chance="20125000"/>
+		<relic id="45" chance="20125000"/>
+		<relic id="51" chance="20125000"/>
+		<relic id="57" chance="20125000"/>
+		<relic id="63" chance="20125000"/>
+		<relic id="69" chance="3587500"/>
+		<relic id="75" chance="3587500"/>
+		<relic id="81" chance="3587500"/>
+		<relic id="123" chance="3587500"/>
+		<relic id="129" chance="3587500"/>
+		<relic id="87" chance="3587500"/>
+		<relic id="92" chance="3587500"/>
+		<relic id="98" chance="3587500"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5273400"/>
+		<relic id="18" chance="5273400"/>
+		<relic id="22" chance="5273400"/>
+		<relic id="26" chance="5273400"/>
+		<relic id="30" chance="5273400"/>
+		<relic id="34" chance="2726000"/>
+		<relic id="40" chance="2726000"/>
+		<relic id="46" chance="2726000"/>
+		<relic id="52" chance="2726000"/>
+		<relic id="58" chance="2726000"/>
+		<relic id="64" chance="2726000"/>
+		<relic id="70" chance="517000"/>
+		<relic id="76" chance="517000"/>
+		<relic id="82" chance="517000"/>
+		<relic id="124" chance="517000"/>
+		<relic id="130" chance="517000"/>
+		<relic id="88" chance="517000"/>
+		<relic id="93" chance="517000"/>
+		<relic id="99" chance="517000"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="330000"/>
+		<relic id="41" chance="330000"/>
+		<relic id="47" chance="330000"/>
+		<relic id="53" chance="330000"/>
+		<relic id="59" chance="330000"/>
+		<relic id="65" chance="330000"/>
+		<relic id="71" chance="118500"/>
+		<relic id="77" chance="118500"/>
+		<relic id="83" chance="118500"/>
+		<relic id="125" chance="118500"/>
+		<relic id="131" chance="118500"/>
+		<relic id="89" chance="118500"/>
+		<relic id="94" chance="118500"/>
+		<relic id="100" chance="118500"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="102993"><!--Купон Призыва Куклы (Обычная - Героическая) - 1 Раз-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="70000000"/>
+		<relic id="37" chance="70000000"/>
+		<relic id="43" chance="70000000"/>
+		<relic id="49" chance="70000000"/>
+		<relic id="55" chance="70000000"/>
+		<relic id="61" chance="70000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="396000000"/>
+		<relic id="4" chance="396000000"/>
+		<relic id="6" chance="396000000"/>
+		<relic id="8" chance="396000000"/>
+		<relic id="10" chance="396000000"/>
+		<relic id="12" chance="252000000"/>
+		<relic id="16" chance="252000000"/>
+		<relic id="20" chance="252000000"/>
+		<relic id="24" chance="252000000"/>
+		<relic id="28" chance="252000000"/>
+		<relic id="32" chance="43200000"/>
+		<relic id="38" chance="43200000"/>
+		<relic id="44" chance="43200000"/>
+		<relic id="50" chance="43200000"/>
+		<relic id="56" chance="43200000"/>
+		<relic id="62" chance="43200000"/>
+		<relic id="68" chance="11250000"/>
+		<relic id="74" chance="11250000"/>
+		<relic id="80" chance="11250000"/>
+		<relic id="122" chance="11250000"/>
+		<relic id="128" chance="11250000"/>
+		<relic id="86" chance="11250000"/>
+		<relic id="91" chance="11250000"/>
+		<relic id="97" chance="11250000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="33250000"/>
+		<relic id="13" chance="33250000"/>
+		<relic id="17" chance="33250000"/>
+		<relic id="21" chance="33250000"/>
+		<relic id="25" chance="33250000"/>
+		<relic id="29" chance="33250000"/>
+		<relic id="33" chance="20125000"/>
+		<relic id="39" chance="20125000"/>
+		<relic id="45" chance="20125000"/>
+		<relic id="51" chance="20125000"/>
+		<relic id="57" chance="20125000"/>
+		<relic id="63" chance="20125000"/>
+		<relic id="69" chance="3587500"/>
+		<relic id="75" chance="3587500"/>
+		<relic id="81" chance="3587500"/>
+		<relic id="123" chance="3587500"/>
+		<relic id="129" chance="3587500"/>
+		<relic id="87" chance="3587500"/>
+		<relic id="92" chance="3587500"/>
+		<relic id="98" chance="3587500"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5273400"/>
+		<relic id="18" chance="5273400"/>
+		<relic id="22" chance="5273400"/>
+		<relic id="26" chance="5273400"/>
+		<relic id="30" chance="5273400"/>
+		<relic id="34" chance="2726000"/>
+		<relic id="40" chance="2726000"/>
+		<relic id="46" chance="2726000"/>
+		<relic id="52" chance="2726000"/>
+		<relic id="58" chance="2726000"/>
+		<relic id="64" chance="2726000"/>
+		<relic id="70" chance="517000"/>
+		<relic id="76" chance="517000"/>
+		<relic id="82" chance="517000"/>
+		<relic id="124" chance="517000"/>
+		<relic id="130" chance="517000"/>
+		<relic id="88" chance="517000"/>
+		<relic id="93" chance="517000"/>
+		<relic id="99" chance="517000"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="330000"/>
+		<relic id="41" chance="330000"/>
+		<relic id="47" chance="330000"/>
+		<relic id="53" chance="330000"/>
+		<relic id="59" chance="330000"/>
+		<relic id="65" chance="330000"/>
+		<relic id="71" chance="118500"/>
+		<relic id="77" chance="118500"/>
+		<relic id="83" chance="118500"/>
+		<relic id="125" chance="118500"/>
+		<relic id="131" chance="118500"/>
+		<relic id="89" chance="118500"/>
+		<relic id="94" chance="118500"/>
+		<relic id="100" chance="118500"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103065"><!--Купон Призыва Исключительной Куклы Анаис-->
+		<relic id="136" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103067"><!--Купон Призыва Исключительной Куклы Юриэль-->
+		<relic id="148" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103066"><!--Купон Призыва Исключительной Куклы Галаксия-->
+		<relic id="142" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103068"><!--Купон Призыва Исключительной Куклы Фириэль-->
+		<relic id="154" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="103139"><!--Купон Призыва Куклы (Обычная - Героическая) - 11 Раз-->
+		<relic id="1" chance="990000000"/>
+		<relic id="3" chance="990000000"/>
+		<relic id="5" chance="990000000"/>
+		<relic id="7" chance="990000000"/>
+		<relic id="9" chance="990000000"/>
+		<relic id="11" chance="630000000"/>
+		<relic id="15" chance="630000000"/>
+		<relic id="19" chance="630000000"/>
+		<relic id="23" chance="630000000"/>
+		<relic id="27" chance="630000000"/>
+		<relic id="31" chance="126000000"/>
+		<relic id="37" chance="126000000"/>
+		<relic id="43" chance="126000000"/>
+		<relic id="49" chance="126000000"/>
+		<relic id="55" chance="126000000"/>
+		<relic id="61" chance="67500000"/>
+		<relic id="67" chance="67500000"/>
+		<relic id="73" chance="67500000"/>
+		<relic id="79" chance="67500000"/>
+		<relic id="2" chance="108887900"/>
+		<relic id="4" chance="108887900"/>
+		<relic id="6" chance="108887900"/>
+		<relic id="8" chance="108887900"/>
+		<relic id="10" chance="108887900"/>
+		<relic id="12" chance="69292300"/>
+		<relic id="16" chance="69292300"/>
+		<relic id="20" chance="69292300"/>
+		<relic id="24" chance="69292300"/>
+		<relic id="28" chance="69292300"/>
+		<relic id="32" chance="13858460"/>
+		<relic id="38" chance="13858460"/>
+		<relic id="44" chance="13858460"/>
+		<relic id="50" chance="13858460"/>
+		<relic id="56" chance="13858460"/>
+		<relic id="62" chance="7424175"/>
+		<relic id="68" chance="7424175"/>
+		<relic id="74" chance="7424175"/>
+		<relic id="80" chance="7424175"/>
+		<relic id="133" chance="950000"/>
+		<relic id="13" chance="950000"/>
+		<relic id="17" chance="950000"/>
+		<relic id="21" chance="950000"/>
+		<relic id="25" chance="950000"/>
+		<relic id="29" chance="950000"/>
+		<relic id="33" chance="700000"/>
+		<relic id="39" chance="700000"/>
+		<relic id="45" chance="700000"/>
+		<relic id="51" chance="700000"/>
+		<relic id="57" chance="700000"/>
+		<relic id="63" chance="200000"/>
+		<relic id="69" chance="200000"/>
+		<relic id="75" chance="200000"/>
+		<relic id="81" chance="200000"/>
+		<relic id="14" chance="11400"/>
+		<relic id="18" chance="11400"/>
+		<relic id="22" chance="11400"/>
+		<relic id="26" chance="11400"/>
+		<relic id="30" chance="11400"/>
+		<relic id="34" chance="7000"/>
+		<relic id="40" chance="7000"/>
+		<relic id="46" chance="7000"/>
+		<relic id="52" chance="7000"/>
+		<relic id="58" chance="7000"/>
+		<relic id="64" chance="2000"/>
+		<relic id="70" chance="2000"/>
+		<relic id="76" chance="2000"/>
+		<relic id="82" chance="2000"/>
+		<relic id="35" chance="1300"/>
+		<relic id="41" chance="1300"/>
+		<relic id="47" chance="1300"/>
+		<relic id="53" chance="1300"/>
+		<relic id="59" chance="1300"/>
+		<relic id="65" chance="875"/>
+		<relic id="71" chance="875"/>
+		<relic id="77" chance="875"/>
+		<relic id="83" chance="875"/>
+	</coupon>
+	<coupon count="1" id="103138"><!--Купон Призыва Куклы - 1 Раз-->
+		<relic id="1" chance="990000000"/>
+		<relic id="3" chance="990000000"/>
+		<relic id="5" chance="990000000"/>
+		<relic id="7" chance="990000000"/>
+		<relic id="9" chance="990000000"/>
+		<relic id="11" chance="630000000"/>
+		<relic id="15" chance="630000000"/>
+		<relic id="19" chance="630000000"/>
+		<relic id="23" chance="630000000"/>
+		<relic id="27" chance="630000000"/>
+		<relic id="31" chance="126000000"/>
+		<relic id="37" chance="126000000"/>
+		<relic id="43" chance="126000000"/>
+		<relic id="49" chance="126000000"/>
+		<relic id="55" chance="126000000"/>
+		<relic id="61" chance="67500000"/>
+		<relic id="67" chance="67500000"/>
+		<relic id="73" chance="67500000"/>
+		<relic id="79" chance="67500000"/>
+		<relic id="2" chance="108887900"/>
+		<relic id="4" chance="108887900"/>
+		<relic id="6" chance="108887900"/>
+		<relic id="8" chance="108887900"/>
+		<relic id="10" chance="108887900"/>
+		<relic id="12" chance="69292300"/>
+		<relic id="16" chance="69292300"/>
+		<relic id="20" chance="69292300"/>
+		<relic id="24" chance="69292300"/>
+		<relic id="28" chance="69292300"/>
+		<relic id="32" chance="13858460"/>
+		<relic id="38" chance="13858460"/>
+		<relic id="44" chance="13858460"/>
+		<relic id="50" chance="13858460"/>
+		<relic id="56" chance="13858460"/>
+		<relic id="62" chance="7424175"/>
+		<relic id="68" chance="7424175"/>
+		<relic id="74" chance="7424175"/>
+		<relic id="80" chance="7424175"/>
+		<relic id="133" chance="950000"/>
+		<relic id="13" chance="950000"/>
+		<relic id="17" chance="950000"/>
+		<relic id="21" chance="950000"/>
+		<relic id="25" chance="950000"/>
+		<relic id="29" chance="950000"/>
+		<relic id="33" chance="700000"/>
+		<relic id="39" chance="700000"/>
+		<relic id="45" chance="700000"/>
+		<relic id="51" chance="700000"/>
+		<relic id="57" chance="700000"/>
+		<relic id="63" chance="200000"/>
+		<relic id="69" chance="200000"/>
+		<relic id="75" chance="200000"/>
+		<relic id="81" chance="200000"/>
+		<relic id="14" chance="11400"/>
+		<relic id="18" chance="11400"/>
+		<relic id="22" chance="11400"/>
+		<relic id="26" chance="11400"/>
+		<relic id="30" chance="11400"/>
+		<relic id="34" chance="7000"/>
+		<relic id="40" chance="7000"/>
+		<relic id="46" chance="7000"/>
+		<relic id="52" chance="7000"/>
+		<relic id="58" chance="7000"/>
+		<relic id="64" chance="2000"/>
+		<relic id="70" chance="2000"/>
+		<relic id="76" chance="2000"/>
+		<relic id="82" chance="2000"/>
+		<relic id="35" chance="1300"/>
+		<relic id="41" chance="1300"/>
+		<relic id="47" chance="1300"/>
+		<relic id="53" chance="1300"/>
+		<relic id="59" chance="1300"/>
+		<relic id="65" chance="875"/>
+		<relic id="71" chance="875"/>
+		<relic id="77" chance="875"/>
+		<relic id="83" chance="875"/>
+	</coupon>
+	<coupon count="1" id="103201"><!--Купон Призыва Героической Куклы Анаис-->
+		<relic id="138" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103203"><!--Купон Призыва Героической Куклы Юриэль-->
+		<relic id="150" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103202"><!--Купон Призыва Героической Куклы Галаксия-->
+		<relic id="144" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103204"><!--Купон Призыва Героической Куклы Фириэль-->
+		<relic id="156" chance="10000000000"/>
+	</coupon>
+	<coupon count="11" id="103233"><!--Купон Призыва Куклы (Обычная - Героическая) - 11 Раз-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103232"><!--Купон Призыва Куклы (Обычная - Героическая) - 1 Раз-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103247"><!--Купон Призыва Героической Куклы Закен (Временно)-->
+		<relic id="71" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103313"><!--Купон Призыва Исключительной Куклы - 1 Раз (Временно)-->
+		<relic id="133" chance="1219900000"/>
+		<relic id="13" chance="1300000000"/>
+		<relic id="17" chance="1300000000"/>
+		<relic id="21" chance="1300000000"/>
+		<relic id="25" chance="1300000000"/>
+		<relic id="29" chance="1300000000"/>
+		<relic id="33" chance="200000000"/>
+		<relic id="39" chance="200000000"/>
+		<relic id="45" chance="200000000"/>
+		<relic id="136" chance="200000000"/>
+		<relic id="142" chance="200000000"/>
+		<relic id="148" chance="200000000"/>
+		<relic id="154" chance="200000000"/>
+		<relic id="51" chance="200000000"/>
+		<relic id="57" chance="200000000"/>
+		<relic id="63" chance="200000000"/>
+		<relic id="69" chance="50000000"/>
+		<relic id="75" chance="50000000"/>
+		<relic id="81" chance="50000000"/>
+		<relic id="123" chance="50000000"/>
+		<relic id="129" chance="50000000"/>
+		<relic id="87" chance="10000000"/>
+		<relic id="92" chance="5000000"/>
+		<relic id="98" chance="5000000"/>
+		<relic id="104" chance="5000000"/>
+		<relic id="110" chance="5000000"/>
+		<relic id="116" chance="100000"/>
+	</coupon>
+	<coupon count="1" id="103314"><!--Купон Призыва Редкой Куклы - 1 Раз (Временно)-->
+		<relic id="14" chance="1240000000"/>
+		<relic id="18" chance="1240000000"/>
+		<relic id="22" chance="1240000000"/>
+		<relic id="26" chance="1240000000"/>
+		<relic id="30" chance="1240000000"/>
+		<relic id="34" chance="300000000"/>
+		<relic id="40" chance="300000000"/>
+		<relic id="46" chance="300000000"/>
+		<relic id="137" chance="300000000"/>
+		<relic id="143" chance="300000000"/>
+		<relic id="149" chance="300000000"/>
+		<relic id="155" chance="300000000"/>
+		<relic id="52" chance="300000000"/>
+		<relic id="58" chance="300000000"/>
+		<relic id="64" chance="300000000"/>
+		<relic id="70" chance="96250000"/>
+		<relic id="76" chance="96250000"/>
+		<relic id="82" chance="96250000"/>
+		<relic id="124" chance="96250000"/>
+		<relic id="130" chance="96250000"/>
+		<relic id="88" chance="96250000"/>
+		<relic id="93" chance="96250000"/>
+		<relic id="99" chance="96250000"/>
+		<relic id="105" chance="10000000"/>
+		<relic id="111" chance="10000000"/>
+		<relic id="117" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="103327"><!--Купон Призыва Куклы (Героическая - Легендарная) - 1 Раз (Временно)-->
+		<relic id="35" chance="638400000"/>
+		<relic id="41" chance="638400000"/>
+		<relic id="47" chance="638400000"/>
+		<relic id="138" chance="638400000"/>
+		<relic id="144" chance="638400000"/>
+		<relic id="150" chance="638400000"/>
+		<relic id="156" chance="638400000"/>
+		<relic id="53" chance="638400000"/>
+		<relic id="59" chance="638400000"/>
+		<relic id="65" chance="638400000"/>
+		<relic id="71" chance="361000000"/>
+		<relic id="77" chance="361000000"/>
+		<relic id="83" chance="361000000"/>
+		<relic id="125" chance="361000000"/>
+		<relic id="131" chance="361000000"/>
+		<relic id="89" chance="361000000"/>
+		<relic id="94" chance="361000000"/>
+		<relic id="100" chance="361000000"/>
+		<relic id="106" chance="76000000"/>
+		<relic id="112" chance="76000000"/>
+		<relic id="118" chance="76000000"/>
+		<relic id="36" chance="33600000"/>
+		<relic id="42" chance="33600000"/>
+		<relic id="48" chance="33600000"/>
+		<relic id="139" chance="33600000"/>
+		<relic id="145" chance="33600000"/>
+		<relic id="151" chance="33600000"/>
+		<relic id="157" chance="33600000"/>
+		<relic id="54" chance="33600000"/>
+		<relic id="60" chance="33600000"/>
+		<relic id="66" chance="33600000"/>
+		<relic id="72" chance="19000000"/>
+		<relic id="78" chance="19000000"/>
+		<relic id="84" chance="19000000"/>
+		<relic id="126" chance="19000000"/>
+		<relic id="132" chance="19000000"/>
+		<relic id="90" chance="19000000"/>
+		<relic id="95" chance="19000000"/>
+		<relic id="101" chance="19000000"/>
+		<relic id="107" chance="4000000"/>
+		<relic id="113" chance="4000000"/>
+		<relic id="119" chance="4000000"/>
+	</coupon>
+	<coupon count="1" id="103331"><!--Купон Призыва Героической Куклы - 1 Раз (Временно)-->
+		<relic id="35" chance="672000000"/>
+		<relic id="41" chance="672000000"/>
+		<relic id="47" chance="672000000"/>
+		<relic id="138" chance="672000000"/>
+		<relic id="144" chance="672000000"/>
+		<relic id="150" chance="672000000"/>
+		<relic id="156" chance="672000000"/>
+		<relic id="53" chance="672000000"/>
+		<relic id="59" chance="672000000"/>
+		<relic id="65" chance="672000000"/>
+		<relic id="71" chance="380000000"/>
+		<relic id="77" chance="380000000"/>
+		<relic id="83" chance="380000000"/>
+		<relic id="125" chance="380000000"/>
+		<relic id="131" chance="380000000"/>
+		<relic id="89" chance="380000000"/>
+		<relic id="94" chance="380000000"/>
+		<relic id="100" chance="380000000"/>
+		<relic id="106" chance="80000000"/>
+		<relic id="112" chance="80000000"/>
+		<relic id="118" chance="80000000"/>
+	</coupon>
+	<coupon count="1" id="103332"><!--Купон Призыва Куклы (Обычная - Героическая) - 1 Раз-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103369"><!--Купон Призыва Куклы (Редкая) - 1 Раз (Временно)-->
+		<relic id="14" chance="1220000000"/>
+		<relic id="18" chance="1220000000"/>
+		<relic id="22" chance="1220000000"/>
+		<relic id="26" chance="1220000000"/>
+		<relic id="30" chance="1220000000"/>
+		<relic id="34" chance="515000000"/>
+		<relic id="40" chance="515000000"/>
+		<relic id="46" chance="515000000"/>
+		<relic id="52" chance="515000000"/>
+		<relic id="58" chance="515000000"/>
+		<relic id="64" chance="515000000"/>
+		<relic id="70" chance="97500000"/>
+		<relic id="76" chance="97500000"/>
+		<relic id="82" chance="97500000"/>
+		<relic id="124" chance="97500000"/>
+		<relic id="130" chance="97500000"/>
+		<relic id="88" chance="97500000"/>
+		<relic id="93" chance="97500000"/>
+		<relic id="99" chance="97500000"/>
+		<relic id="105" chance="10000000"/>
+		<relic id="111" chance="10000000"/>
+		<relic id="117" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="103368"><!--Купон Призыва Куклы (Исключительная) - 1 Раз (Временно)-->
+		<relic id="133" chance="1000000000"/>
+		<relic id="13" chance="1000000000"/>
+		<relic id="17" chance="1000000000"/>
+		<relic id="21" chance="1000000000"/>
+		<relic id="25" chance="1000000000"/>
+		<relic id="29" chance="1000000000"/>
+		<relic id="33" chance="530000000"/>
+		<relic id="39" chance="530000000"/>
+		<relic id="45" chance="530000000"/>
+		<relic id="51" chance="530000000"/>
+		<relic id="57" chance="530000000"/>
+		<relic id="63" chance="530000000"/>
+		<relic id="69" chance="98750000"/>
+		<relic id="75" chance="98750000"/>
+		<relic id="81" chance="98750000"/>
+		<relic id="123" chance="98750000"/>
+		<relic id="129" chance="98750000"/>
+		<relic id="87" chance="98750000"/>
+		<relic id="92" chance="98750000"/>
+		<relic id="98" chance="98750000"/>
+		<relic id="104" chance="10000000"/>
+		<relic id="110" chance="10000000"/>
+		<relic id="116" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="103371"><!--Купон Призыва Редкой Куклы Анаис-->
+		<relic id="137" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103373"><!--Купон Призыва Редкой Куклы Юриэль-->
+		<relic id="149" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103372"><!--Купон Призыва Редкой Куклы Галаксия-->
+		<relic id="143" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103374"><!--Купон Призыва Редкой Куклы Фириэль-->
+		<relic id="155" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103383"><!--Купон Призыва Легендарной Куклы Галаксия-->
+		<relic id="145" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103382"><!--Купон Призыва Легендарной Куклы Анаис-->
+		<relic id="139" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103385"><!--Купон Призыва Легендарной Куклы Фириэль-->
+		<relic id="157" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103384"><!--Купон Призыва Легендарной Куклы Юриэль-->
+		<relic id="151" chance="10000000000"/>
+	</coupon>
+	<coupon count="1" id="103386"><!--Купон Призыва Куклы (Легендарная) - 1 Раз (Временно)-->
+		<relic id="36" chance="1100000000"/>
+		<relic id="42" chance="1100000000"/>
+		<relic id="48" chance="1100000000"/>
+		<relic id="54" chance="1100000000"/>
+		<relic id="60" chance="1100000000"/>
+		<relic id="66" chance="1100000000"/>
+		<relic id="72" chance="387500000"/>
+		<relic id="126" chance="387500000"/>
+		<relic id="132" chance="387500000"/>
+		<relic id="139" chance="387500000"/>
+		<relic id="145" chance="387500000"/>
+		<relic id="151" chance="387500000"/>
+		<relic id="157" chance="387500000"/>
+		<relic id="78" chance="150000000"/>
+		<relic id="84" chance="150000000"/>
+		<relic id="90" chance="150000000"/>
+		<relic id="95" chance="88000000"/>
+		<relic id="101" chance="88000000"/>
+		<relic id="107" chance="20500000"/>
+		<relic id="113" chance="20500000"/>
+		<relic id="119" chance="20500000"/>
+	</coupon>
+	<coupon count="1" id="103389"><!--Купон Призыва Улучшенной Куклы - 1 Раз (Временно)-->
+		<relic id="2" chance="1200000000"/>
+		<relic id="4" chance="1200000000"/>
+		<relic id="6" chance="1200000000"/>
+		<relic id="8" chance="1200000000"/>
+		<relic id="10" chance="1200000000"/>
+		<relic id="12" chance="612000000"/>
+		<relic id="16" chance="612000000"/>
+		<relic id="20" chance="612000000"/>
+		<relic id="24" chance="612000000"/>
+		<relic id="28" chance="612000000"/>
+		<relic id="32" chance="76000000"/>
+		<relic id="38" chance="76000000"/>
+		<relic id="44" chance="76000000"/>
+		<relic id="135" chance="76000000"/>
+		<relic id="141" chance="76000000"/>
+		<relic id="147" chance="76000000"/>
+		<relic id="153" chance="76000000"/>
+		<relic id="50" chance="76000000"/>
+		<relic id="56" chance="76000000"/>
+		<relic id="62" chance="76000000"/>
+		<relic id="68" chance="18750000"/>
+		<relic id="74" chance="18750000"/>
+		<relic id="80" chance="18750000"/>
+		<relic id="122" chance="18750000"/>
+		<relic id="128" chance="18750000"/>
+		<relic id="86" chance="18750000"/>
+		<relic id="91" chance="18750000"/>
+		<relic id="97" chance="18750000"/>
+		<relic id="103" chance="10000000"/>
+		<relic id="109" chance="10000000"/>
+		<relic id="115" chance="10000000"/>
+	</coupon>
+	<coupon count="1" id="103487"><!--Купон Призыва Куклы Деда Мороза (Обычная - Исключительная) - 1 Раз (Временно)-->
+		<relic id="1" chance="1140000000"/>
+		<relic id="3" chance="1140000000"/>
+		<relic id="5" chance="1140000000"/>
+		<relic id="7" chance="1140000000"/>
+		<relic id="9" chance="1140000000"/>
+		<relic id="11" chance="570000000"/>
+		<relic id="15" chance="570000000"/>
+		<relic id="19" chance="570000000"/>
+		<relic id="23" chance="570000000"/>
+		<relic id="27" chance="570000000"/>
+		<relic id="31" chance="72200000"/>
+		<relic id="37" chance="72200000"/>
+		<relic id="43" chance="72200000"/>
+		<relic id="134" chance="72200000"/>
+		<relic id="140" chance="72200000"/>
+		<relic id="146" chance="72200000"/>
+		<relic id="152" chance="72200000"/>
+		<relic id="49" chance="72200000"/>
+		<relic id="55" chance="72200000"/>
+		<relic id="61" chance="72200000"/>
+		<relic id="67" chance="38000000"/>
+		<relic id="73" chance="38000000"/>
+		<relic id="79" chance="38000000"/>
+		<relic id="121" chance="38000000"/>
+		<relic id="127" chance="38000000"/>
+		<relic id="85" chance="38000000"/>
+		<relic id="2" chance="54000000"/>
+		<relic id="4" chance="54000000"/>
+		<relic id="6" chance="54000000"/>
+		<relic id="8" chance="54000000"/>
+		<relic id="10" chance="54000000"/>
+		<relic id="12" chance="27540000"/>
+		<relic id="16" chance="27540000"/>
+		<relic id="20" chance="27540000"/>
+		<relic id="24" chance="27540000"/>
+		<relic id="28" chance="27540000"/>
+		<relic id="32" chance="3420000"/>
+		<relic id="38" chance="3420000"/>
+		<relic id="44" chance="3420000"/>
+		<relic id="135" chance="3420000"/>
+		<relic id="141" chance="3420000"/>
+		<relic id="147" chance="3420000"/>
+		<relic id="153" chance="3420000"/>
+		<relic id="50" chance="3420000"/>
+		<relic id="56" chance="3420000"/>
+		<relic id="62" chance="3420000"/>
+		<relic id="68" chance="843750"/>
+		<relic id="74" chance="843750"/>
+		<relic id="80" chance="843750"/>
+		<relic id="122" chance="843750"/>
+		<relic id="128" chance="843750"/>
+		<relic id="86" chance="843750"/>
+		<relic id="91" chance="843750"/>
+		<relic id="97" chance="843750"/>
+		<relic id="103" chance="450000"/>
+		<relic id="109" chance="450000"/>
+		<relic id="115" chance="450000"/>
+		<relic id="133" chance="5000000"/>
+		<relic id="13" chance="5000000"/>
+		<relic id="17" chance="5000000"/>
+		<relic id="21" chance="5000000"/>
+		<relic id="25" chance="5000000"/>
+		<relic id="29" chance="5000000"/>
+		<relic id="33" chance="1590000"/>
+		<relic id="39" chance="1590000"/>
+		<relic id="45" chance="1590000"/>
+		<relic id="136" chance="1590000"/>
+		<relic id="142" chance="1590000"/>
+		<relic id="148" chance="1590000"/>
+		<relic id="154" chance="1590000"/>
+		<relic id="51" chance="1590000"/>
+		<relic id="57" chance="1590000"/>
+		<relic id="63" chance="1590000"/>
+		<relic id="69" chance="493750"/>
+		<relic id="75" chance="493750"/>
+		<relic id="81" chance="493750"/>
+		<relic id="123" chance="493750"/>
+		<relic id="129" chance="493750"/>
+		<relic id="87" chance="493750"/>
+		<relic id="92" chance="493750"/>
+		<relic id="98" chance="493750"/>
+		<relic id="104" chance="50000"/>
+		<relic id="110" chance="50000"/>
+		<relic id="116" chance="50000"/>
+	</coupon>
+	<coupon count="1" id="103489"><!--Купон Призыва Куклы Деда Мороза (Исключительная - Героическая) - 1 Раз (Временно)-->
+		<relic id="133" chance="900000000"/>
+		<relic id="13" chance="900000000"/>
+		<relic id="17" chance="900000000"/>
+		<relic id="21" chance="900000000"/>
+		<relic id="25" chance="900000000"/>
+		<relic id="29" chance="900000000"/>
+		<relic id="33" chance="286200000"/>
+		<relic id="39" chance="286200000"/>
+		<relic id="45" chance="286200000"/>
+		<relic id="136" chance="286200000"/>
+		<relic id="142" chance="286200000"/>
+		<relic id="148" chance="286200000"/>
+		<relic id="154" chance="286200000"/>
+		<relic id="51" chance="286200000"/>
+		<relic id="57" chance="286200000"/>
+		<relic id="63" chance="286200000"/>
+		<relic id="69" chance="88875000"/>
+		<relic id="75" chance="88875000"/>
+		<relic id="81" chance="88875000"/>
+		<relic id="123" chance="88875000"/>
+		<relic id="129" chance="88875000"/>
+		<relic id="87" chance="88875000"/>
+		<relic id="92" chance="88875000"/>
+		<relic id="98" chance="88875000"/>
+		<relic id="104" chance="9000000"/>
+		<relic id="110" chance="9000000"/>
+		<relic id="116" chance="9000000"/>
+		<relic id="14" chance="111600000"/>
+		<relic id="18" chance="111600000"/>
+		<relic id="22" chance="111600000"/>
+		<relic id="26" chance="111600000"/>
+		<relic id="30" chance="111600000"/>
+		<relic id="34" chance="27000000"/>
+		<relic id="40" chance="27000000"/>
+		<relic id="46" chance="27000000"/>
+		<relic id="137" chance="27000000"/>
+		<relic id="143" chance="27000000"/>
+		<relic id="149" chance="27000000"/>
+		<relic id="155" chance="27000000"/>
+		<relic id="52" chance="27000000"/>
+		<relic id="58" chance="27000000"/>
+		<relic id="64" chance="27000000"/>
+		<relic id="70" chance="8662500"/>
+		<relic id="76" chance="8662500"/>
+		<relic id="82" chance="8662500"/>
+		<relic id="124" chance="8662500"/>
+		<relic id="130" chance="8662500"/>
+		<relic id="88" chance="8662500"/>
+		<relic id="93" chance="8662500"/>
+		<relic id="99" chance="8662500"/>
+		<relic id="105" chance="900000"/>
+		<relic id="111" chance="900000"/>
+		<relic id="117" chance="900000"/>
+		<relic id="35" chance="6720000"/>
+		<relic id="41" chance="6720000"/>
+		<relic id="47" chance="6720000"/>
+		<relic id="138" chance="6720000"/>
+		<relic id="144" chance="6720000"/>
+		<relic id="150" chance="6720000"/>
+		<relic id="156" chance="6720000"/>
+		<relic id="53" chance="6720000"/>
+		<relic id="59" chance="6720000"/>
+		<relic id="65" chance="6720000"/>
+		<relic id="71" chance="3800000"/>
+		<relic id="77" chance="3800000"/>
+		<relic id="83" chance="3800000"/>
+		<relic id="125" chance="3800000"/>
+		<relic id="131" chance="3800000"/>
+		<relic id="89" chance="3800000"/>
+		<relic id="94" chance="3800000"/>
+		<relic id="100" chance="3800000"/>
+		<relic id="106" chance="800000"/>
+		<relic id="112" chance="800000"/>
+		<relic id="118" chance="800000"/>
+	</coupon>
+	<coupon count="11" id="103488"><!--Купон Призыва Куклы Деда Мороза (Обычная - Исключительная) - 11 Раз (Временно)-->
+		<relic id="1" chance="1140000000"/>
+		<relic id="3" chance="1140000000"/>
+		<relic id="5" chance="1140000000"/>
+		<relic id="7" chance="1140000000"/>
+		<relic id="9" chance="1140000000"/>
+		<relic id="11" chance="570000000"/>
+		<relic id="15" chance="570000000"/>
+		<relic id="19" chance="570000000"/>
+		<relic id="23" chance="570000000"/>
+		<relic id="27" chance="570000000"/>
+		<relic id="31" chance="72200000"/>
+		<relic id="37" chance="72200000"/>
+		<relic id="43" chance="72200000"/>
+		<relic id="134" chance="72200000"/>
+		<relic id="140" chance="72200000"/>
+		<relic id="146" chance="72200000"/>
+		<relic id="152" chance="72200000"/>
+		<relic id="49" chance="72200000"/>
+		<relic id="55" chance="72200000"/>
+		<relic id="61" chance="72200000"/>
+		<relic id="67" chance="38000000"/>
+		<relic id="73" chance="38000000"/>
+		<relic id="79" chance="38000000"/>
+		<relic id="121" chance="38000000"/>
+		<relic id="127" chance="38000000"/>
+		<relic id="85" chance="38000000"/>
+		<relic id="2" chance="54000000"/>
+		<relic id="4" chance="54000000"/>
+		<relic id="6" chance="54000000"/>
+		<relic id="8" chance="54000000"/>
+		<relic id="10" chance="54000000"/>
+		<relic id="12" chance="27540000"/>
+		<relic id="16" chance="27540000"/>
+		<relic id="20" chance="27540000"/>
+		<relic id="24" chance="27540000"/>
+		<relic id="28" chance="27540000"/>
+		<relic id="32" chance="3420000"/>
+		<relic id="38" chance="3420000"/>
+		<relic id="44" chance="3420000"/>
+		<relic id="135" chance="3420000"/>
+		<relic id="141" chance="3420000"/>
+		<relic id="147" chance="3420000"/>
+		<relic id="153" chance="3420000"/>
+		<relic id="50" chance="3420000"/>
+		<relic id="56" chance="3420000"/>
+		<relic id="62" chance="3420000"/>
+		<relic id="68" chance="843750"/>
+		<relic id="74" chance="843750"/>
+		<relic id="80" chance="843750"/>
+		<relic id="122" chance="843750"/>
+		<relic id="128" chance="843750"/>
+		<relic id="86" chance="843750"/>
+		<relic id="91" chance="843750"/>
+		<relic id="97" chance="843750"/>
+		<relic id="103" chance="450000"/>
+		<relic id="109" chance="450000"/>
+		<relic id="115" chance="450000"/>
+		<relic id="133" chance="5000000"/>
+		<relic id="13" chance="5000000"/>
+		<relic id="17" chance="5000000"/>
+		<relic id="21" chance="5000000"/>
+		<relic id="25" chance="5000000"/>
+		<relic id="29" chance="5000000"/>
+		<relic id="33" chance="1590000"/>
+		<relic id="39" chance="1590000"/>
+		<relic id="45" chance="1590000"/>
+		<relic id="136" chance="1590000"/>
+		<relic id="142" chance="1590000"/>
+		<relic id="148" chance="1590000"/>
+		<relic id="154" chance="1590000"/>
+		<relic id="51" chance="1590000"/>
+		<relic id="57" chance="1590000"/>
+		<relic id="63" chance="1590000"/>
+		<relic id="69" chance="493750"/>
+		<relic id="75" chance="493750"/>
+		<relic id="81" chance="493750"/>
+		<relic id="123" chance="493750"/>
+		<relic id="129" chance="493750"/>
+		<relic id="87" chance="493750"/>
+		<relic id="92" chance="493750"/>
+		<relic id="98" chance="493750"/>
+		<relic id="104" chance="50000"/>
+		<relic id="110" chance="50000"/>
+		<relic id="116" chance="50000"/>
+	</coupon>
+	<coupon count="1" id="103501"><!--Купон Призыва Куклы (Обычная - Героическая) - 1 Раз (Временно)-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="11" id="103502"><!--Купон Призыва Куклы (Обычная - Героическая) - 11 Раз (Временно)-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103529"><!--Купон Призыва Героической Куклы - Особый Январский Пропуск (Временно)-->
+		<relic id="35" chance="672000000"/>
+		<relic id="41" chance="672000000"/>
+		<relic id="47" chance="672000000"/>
+		<relic id="138" chance="672000000"/>
+		<relic id="144" chance="672000000"/>
+		<relic id="150" chance="672000000"/>
+		<relic id="156" chance="672000000"/>
+		<relic id="53" chance="672000000"/>
+		<relic id="59" chance="672000000"/>
+		<relic id="65" chance="672000000"/>
+		<relic id="71" chance="380000000"/>
+		<relic id="77" chance="380000000"/>
+		<relic id="83" chance="380000000"/>
+		<relic id="125" chance="380000000"/>
+		<relic id="131" chance="380000000"/>
+		<relic id="89" chance="380000000"/>
+		<relic id="94" chance="380000000"/>
+		<relic id="100" chance="380000000"/>
+		<relic id="106" chance="80000000"/>
+		<relic id="112" chance="80000000"/>
+		<relic id="118" chance="80000000"/>
+	</coupon>
+	<coupon count="11" id="103567"><!--Купон Призыва Куклы (Обычная - Героическая) - 11 Раз (Временно)-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+	<coupon count="1" id="103566"><!--Купон Призыва Куклы (Обычная - Героическая) - 1 Раз (Временно)-->
+		<relic id="1" chance="660000000"/>
+		<relic id="3" chance="660000000"/>
+		<relic id="5" chance="660000000"/>
+		<relic id="7" chance="660000000"/>
+		<relic id="9" chance="660000000"/>
+		<relic id="11" chance="420000000"/>
+		<relic id="15" chance="420000000"/>
+		<relic id="19" chance="420000000"/>
+		<relic id="23" chance="420000000"/>
+		<relic id="27" chance="420000000"/>
+		<relic id="31" chance="42000000"/>
+		<relic id="37" chance="42000000"/>
+		<relic id="43" chance="42000000"/>
+		<relic id="134" chance="42000000"/>
+		<relic id="140" chance="42000000"/>
+		<relic id="146" chance="42000000"/>
+		<relic id="152" chance="42000000"/>
+		<relic id="49" chance="42000000"/>
+		<relic id="55" chance="42000000"/>
+		<relic id="61" chance="42000000"/>
+		<relic id="67" chance="30000000"/>
+		<relic id="73" chance="30000000"/>
+		<relic id="79" chance="30000000"/>
+		<relic id="121" chance="30000000"/>
+		<relic id="127" chance="30000000"/>
+		<relic id="85" chance="30000000"/>
+		<relic id="2" chance="432000000"/>
+		<relic id="4" chance="432000000"/>
+		<relic id="6" chance="432000000"/>
+		<relic id="8" chance="432000000"/>
+		<relic id="10" chance="432000000"/>
+		<relic id="12" chance="220320000"/>
+		<relic id="16" chance="220320000"/>
+		<relic id="20" chance="220320000"/>
+		<relic id="24" chance="220320000"/>
+		<relic id="28" chance="220320000"/>
+		<relic id="32" chance="27360000"/>
+		<relic id="38" chance="27360000"/>
+		<relic id="44" chance="27360000"/>
+		<relic id="135" chance="27360000"/>
+		<relic id="141" chance="27360000"/>
+		<relic id="147" chance="27360000"/>
+		<relic id="153" chance="27360000"/>
+		<relic id="50" chance="27360000"/>
+		<relic id="56" chance="27360000"/>
+		<relic id="62" chance="27360000"/>
+		<relic id="68" chance="6750000"/>
+		<relic id="74" chance="6750000"/>
+		<relic id="80" chance="6750000"/>
+		<relic id="122" chance="6750000"/>
+		<relic id="128" chance="6750000"/>
+		<relic id="86" chance="6750000"/>
+		<relic id="91" chance="6750000"/>
+		<relic id="97" chance="6750000"/>
+		<relic id="103" chance="3600000"/>
+		<relic id="109" chance="3600000"/>
+		<relic id="115" chance="3600000"/>
+		<relic id="133" chance="35000000"/>
+		<relic id="13" chance="35000000"/>
+		<relic id="17" chance="35000000"/>
+		<relic id="21" chance="35000000"/>
+		<relic id="25" chance="35000000"/>
+		<relic id="29" chance="35000000"/>
+		<relic id="33" chance="11130000"/>
+		<relic id="39" chance="11130000"/>
+		<relic id="45" chance="11130000"/>
+		<relic id="136" chance="11130000"/>
+		<relic id="142" chance="11130000"/>
+		<relic id="148" chance="11130000"/>
+		<relic id="154" chance="11130000"/>
+		<relic id="51" chance="11130000"/>
+		<relic id="57" chance="11130000"/>
+		<relic id="63" chance="11130000"/>
+		<relic id="69" chance="3456250"/>
+		<relic id="75" chance="3456250"/>
+		<relic id="81" chance="3456250"/>
+		<relic id="123" chance="3456250"/>
+		<relic id="129" chance="3456250"/>
+		<relic id="87" chance="3456250"/>
+		<relic id="92" chance="3456250"/>
+		<relic id="98" chance="3456250"/>
+		<relic id="104" chance="350000"/>
+		<relic id="110" chance="350000"/>
+		<relic id="116" chance="350000"/>
+		<relic id="14" chance="5828000"/>
+		<relic id="18" chance="5828000"/>
+		<relic id="22" chance="5828000"/>
+		<relic id="26" chance="5828000"/>
+		<relic id="30" chance="5828000"/>
+		<relic id="34" chance="1410000"/>
+		<relic id="40" chance="1410000"/>
+		<relic id="46" chance="1410000"/>
+		<relic id="137" chance="1410000"/>
+		<relic id="143" chance="1410000"/>
+		<relic id="149" chance="1410000"/>
+		<relic id="155" chance="1410000"/>
+		<relic id="52" chance="1410000"/>
+		<relic id="58" chance="1410000"/>
+		<relic id="64" chance="1410000"/>
+		<relic id="70" chance="452375"/>
+		<relic id="76" chance="452375"/>
+		<relic id="82" chance="452375"/>
+		<relic id="124" chance="452375"/>
+		<relic id="130" chance="452375"/>
+		<relic id="88" chance="452375"/>
+		<relic id="93" chance="452375"/>
+		<relic id="99" chance="452375"/>
+		<relic id="105" chance="47000"/>
+		<relic id="111" chance="47000"/>
+		<relic id="117" chance="47000"/>
+		<relic id="35" chance="201600"/>
+		<relic id="41" chance="201600"/>
+		<relic id="47" chance="201600"/>
+		<relic id="138" chance="201600"/>
+		<relic id="144" chance="201600"/>
+		<relic id="150" chance="201600"/>
+		<relic id="156" chance="201600"/>
+		<relic id="53" chance="201600"/>
+		<relic id="59" chance="201600"/>
+		<relic id="65" chance="201600"/>
+		<relic id="71" chance="114000"/>
+		<relic id="77" chance="114000"/>
+		<relic id="83" chance="114000"/>
+		<relic id="125" chance="114000"/>
+		<relic id="131" chance="114000"/>
+		<relic id="89" chance="114000"/>
+		<relic id="94" chance="114000"/>
+		<relic id="100" chance="114000"/>
+		<relic id="106" chance="24000"/>
+		<relic id="112" chance="24000"/>
+		<relic id="118" chance="24000"/>
+	</coupon>
+</list>

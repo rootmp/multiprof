@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * @author Bonux
- **/
+**/
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface OnScriptInit {

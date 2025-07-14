@@ -35,7 +35,7 @@ public class AdenLab
 	{
 		this.player = player;
 		_adenLab = CharacterAdenLabDAO.getInstance().load(player.getObjectId());
-		updateStats();
+		updateStats(false);
 	}
 
 	public void getBossInfo(int nBossID)
@@ -103,7 +103,7 @@ public class AdenLab
 		{
 			data.setCurrentSlot(nSlotID + 1);
 			data.setOpenCards(0);
-			updateStats();
+			updateStats(true);
 		}
 		CharacterAdenLabDAO.getInstance().save(player.getObjectId(), data);
 		player.sendPacket(new ExAdenlabNormalPlay(nBossID, nSlotID, success));
@@ -196,7 +196,7 @@ public class AdenLab
 			temp_special_options = new int[2];
 
 			player.sendPacket(new ExAdenlabSpecialFix(nBossID, nSlotID, true));
-			updateStats();
+			updateStats(true);
 		}
 	}
 
@@ -205,7 +205,7 @@ public class AdenLab
 		player.sendPacket(new ExAdenlabTranscendEnchant(nBossID, true));
 	}
 
-	private void updateStats()
+	private void updateStats(boolean send)
 	{
 		player.getStatsRecorder().block();
 		player.cleanExOptionData();
@@ -239,9 +239,12 @@ public class AdenLab
 			}
 		}
 		player.getStatsRecorder().unblock();
-		player.updateUserBonus();
-		player.sendUserInfo(true);
-		player.broadcastUserInfo(true);
+		if(send)
+		{
+			player.updateUserBonus();
+			player.sendUserInfo(true);
+			player.broadcastUserInfo(true);
+		}
 	}
 
 	public void sendTranscendProb(int nBossID)

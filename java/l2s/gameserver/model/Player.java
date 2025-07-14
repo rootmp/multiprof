@@ -5733,44 +5733,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		// Add the player subclass in the character_subclasses table of the database
 		if(!CharacterSubclassDAO.getInstance().insert(player.getObjectId(), classId, exp, sp, hp, mp, cp, hp, mp, cp, level, active, type, ElementalElement.NONE, 35000))
-		{ return null; }
-
-		Connection con = null;
-		PreparedStatement statement = null;
-		try
-		{
-			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement("INSERT INTO character_variables (obj_id, name, value, expire_time) VALUES (?,?,?,?)");
-			statement.setInt(1, player.getObjectId());
-			statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_day");
-			statement.setInt(3, (int) (System.currentTimeMillis() / 1000));
-			statement.setInt(4, -1);
-			statement.executeUpdate();
-			statement.close();
-
-			statement = con.prepareStatement("INSERT INTO character_variables (obj_id, name, value, expire_time) VALUES (?,?,?,?)");
-			statement.setInt(1, player.getObjectId());
-			statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_rank");
-			statement.setInt(3, RankManager.getInstance().getPlayerGlobalRank(player));
-			statement.setInt(4, -1);
-			statement.executeUpdate();
-			statement.close();
-
-			statement = con.prepareStatement("INSERT INTO character_variables (obj_id, name, value, expire_time) VALUES (?,?,?,?)");
-			statement.setInt(1, player.getObjectId());
-			statement.setString(2, PlayerVariables.RANKING_HISTORY_DAY + "_" + 1 + "_exp");
-			statement.setInt(3, 0);
-			statement.setInt(4, -1);
-			statement.executeUpdate();
-		}
-		catch(final Exception e)
-		{
-			_log.error("Could not insert char data: " + e.getMessage(), e);
-		}
-		finally
-		{
-			DbUtils.closeQuietly(con, statement);
-		}
+		 return null; 
 
 		return player;
 	}
@@ -8978,7 +8941,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getDailyMissionList().restore();
 		getMissionLevelReward().restore();
 		getElementalList().restore();
-
+		
+		restoreHenna();
+		
 		EffectsDAO.getInstance().restoreEffects(this);
 		restoreDisableSkills();
 
@@ -14952,23 +14917,25 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 		}
-		for(final Abnormal abnormal : _effectList)
+		if(_effectList !=null)
 		{
-			final Skill skill = abnormal.getSkill();
-			for(final EffectTemplate eff : skill.getTemplate().getEffectTemplates(EffectUseType.NORMAL))
+			for(final Abnormal abnormal : _effectList)
 			{
-				for(final Func func : eff.getStatFuncs(this))
+				final Skill skill = abnormal.getSkill();
+				for(final EffectTemplate eff : skill.getTemplate().getEffectTemplates(EffectUseType.NORMAL))
 				{
-					final String name = func.stat.toString();
-					if(name.equalsIgnoreCase("exp_rate_multiplier"))
+					for(final Func func : eff.getStatFuncs(this))
 					{
-						actives++;
-						activeBonuses += func.value * 100;
+						final String name = func.stat.toString();
+						if(name.equalsIgnoreCase("exp_rate_multiplier"))
+						{
+							actives++;
+							activeBonuses += func.value * 100;
+						}
 					}
 				}
 			}
 		}
-
 		sendPacket(new ExUserBoostStat(1, sgCounts > 0 ? sgCounts : 1, sgBonus));
 		sendPacket(new ExUserBoostStat(2, actives, activeBonuses));
 		sendPacket(new ExUserBoostStat(3, passives, passiveBonuses));
@@ -16609,6 +16576,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public PlayerRandomCraft getRandomCraft()
 	{
 		return _randomCraft;
+	}
+
+	public String getHWID()
+	{
+		return getHwidHolder().asString();    
 	}
 
 }
