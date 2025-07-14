@@ -23,10 +23,10 @@ public class AgitDecoInfoPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_clanHall.getId());
 
-		for (ResidenceFunctionType type : ResidenceFunctionType.VALUES)
+		for(ResidenceFunctionType type : ResidenceFunctionType.VALUES)
 		{
 			ResidenceFunction function = _clanHall.getActiveFunction(type);
-			if (function != null)
+			if(function != null)
 			{
 				packetWriter.writeC(function.getTemplate().getDepth());
 			}

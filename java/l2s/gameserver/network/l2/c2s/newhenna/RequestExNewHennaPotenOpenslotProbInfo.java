@@ -21,9 +21,9 @@ public class RequestExNewHennaPotenOpenslotProbInfo implements IClientIncomingPa
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		player.sendPacket(new ExNewHennaPotenOpenslotProbInfo());
 	}
 }

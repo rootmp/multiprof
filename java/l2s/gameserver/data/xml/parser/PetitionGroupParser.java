@@ -45,29 +45,29 @@ public class PetitionGroupParser extends AbstractParser<PetitionGroupHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element groupElement = iterator.next();
 			PetitionMainGroup group = new PetitionMainGroup(Integer.parseInt(groupElement.attributeValue("id")));
 			getHolder().addPetitionGroup(group);
 
-			for (Iterator<Element> subIterator = groupElement.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = groupElement.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
-				if ("name".equals(subElement.getName()))
+				if("name".equals(subElement.getName()))
 					group.setName(Language.valueOf(subElement.attributeValue("lang")), subElement.getText());
-				else if ("description".equals(subElement.getName()))
+				else if("description".equals(subElement.getName()))
 					group.setDescription(Language.valueOf(subElement.attributeValue("lang")), subElement.getText());
-				else if ("sub_group".equals(subElement.getName()))
+				else if("sub_group".equals(subElement.getName()))
 				{
 					PetitionSubGroup subGroup = new PetitionSubGroup(Integer.parseInt(subElement.attributeValue("id")), subElement.attributeValue("handler"));
 					group.addSubGroup(subGroup);
-					for (Iterator<Element> sub2Iterator = subElement.elementIterator(); sub2Iterator.hasNext();)
+					for(Iterator<Element> sub2Iterator = subElement.elementIterator(); sub2Iterator.hasNext();)
 					{
 						Element sub2Element = sub2Iterator.next();
-						if ("name".equals(sub2Element.getName()))
+						if("name".equals(sub2Element.getName()))
 							subGroup.setName(Language.valueOf(sub2Element.attributeValue("lang")), sub2Element.getText());
-						else if ("description".equals(sub2Element.getName()))
+						else if("description".equals(sub2Element.getName()))
 							subGroup.setDescription(Language.valueOf(sub2Element.attributeValue("lang")), sub2Element.getText());
 					}
 				}

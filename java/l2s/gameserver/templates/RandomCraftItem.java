@@ -49,10 +49,8 @@ public class RandomCraftItem
 
 	public static boolean isAnnounce(int id)
 	{
-		if (id > 0)
-		{
-			return _announce;
-		}
+		if(id > 0)
+		{ return _announce; }
 		return _announce;
 	}
 }

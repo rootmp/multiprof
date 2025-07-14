@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.c2s.enchant;
 
-import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.GameClient;
 import l2s.commons.network.PacketReader;
+import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 
 /**
  * @author nexvill
@@ -21,7 +21,7 @@ public class RequestExFinishMultiEnchantScroll implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		player.setEnchantItem(null);

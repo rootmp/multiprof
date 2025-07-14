@@ -18,10 +18,10 @@ public class DrainSoul extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!target.isMonster())
+		if(!target.isMonster())
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
@@ -32,7 +32,7 @@ public class DrainSoul extends Skill
 	@Override
 	public void onEndCast(Creature activeChar, Set<Creature> targets)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		// This is just a dummy skill for the soul crystal skill condition,

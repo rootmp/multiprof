@@ -94,17 +94,17 @@ public final class RecipeTemplate
 	public ChancedItemData getRandomProduct()
 	{
 		int chancesAmount = 0;
-		for (ChancedItemData product : _products)
+		for(ChancedItemData product : _products)
 			chancesAmount += product.getChance();
 
-		if (Rnd.chance(chancesAmount))
+		if(Rnd.chance(chancesAmount))
 		{
 			ChancedItemData[] successProducts = new ChancedItemData[0];
-			while (successProducts.length == 0)
+			while(successProducts.length == 0)
 			{
-				for (ChancedItemData product : _products)
+				for(ChancedItemData product : _products)
 				{
-					if (Rnd.chance(product.getChance()))
+					if(Rnd.chance(product.getChance()))
 						successProducts = ArrayUtils.add(successProducts, product);
 				}
 			}
@@ -127,14 +127,14 @@ public final class RecipeTemplate
 	public boolean canCrit()
 	{
 		RecipeTemplate template = RecipeHolder.getInstance().getRecipeByRecipeId(getId());
-		if (template == null)
+		if(template == null)
 			return false;
-		for (ItemData product : template.getProducts())
+		for(ItemData product : template.getProducts())
 		{
 			ItemTemplate itemTemplate = ItemHolder.getInstance().getTemplate(product.getId());
-			if (itemTemplate == null)
+			if(itemTemplate == null)
 				return false;
-			if (!itemTemplate.isArmor() && !itemTemplate.isWeapon() && !itemTemplate.isAccessory())
+			if(!itemTemplate.isArmor() && !itemTemplate.isWeapon() && !itemTemplate.isAccessory())
 				return false;
 		}
 		return true;

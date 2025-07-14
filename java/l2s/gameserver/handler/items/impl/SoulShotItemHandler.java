@@ -1,5 +1,7 @@
 package l2s.gameserver.handler.items.impl;
 
+import gnu.trove.map.TIntIntMap;
+import gnu.trove.map.hash.TIntIntHashMap;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.model.Player;
@@ -10,9 +12,6 @@ import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.item.ItemGrade;
 import l2s.gameserver.templates.item.WeaponTemplate;
-
-import gnu.trove.map.TIntIntMap;
-import gnu.trove.map.hash.TIntIntHashMap;
 
 public class SoulShotItemHandler extends DefaultItemHandler
 {
@@ -31,27 +30,23 @@ public class SoulShotItemHandler extends DefaultItemHandler
 	@Override
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (playable == null || !playable.isPlayer())
-		{
-			return false;
-		}
+		if(playable == null || !playable.isPlayer())
+		{ return false; }
 		Player player = (Player) playable;
 
 		// soulshot is already active
-		if (player.getChargedSoulshotPower() > 0)
-		{
-			return false;
-		}
+		if(player.getChargedSoulshotPower() > 0)
+		{ return false; }
 		int shotId = item.getItemId();
 		boolean isAutoSoulShot = false;
 
-		if (player.isAutoShot(shotId))
+		if(player.isAutoShot(shotId))
 		{
 			isAutoSoulShot = true;
 		}
-		if (player.getActiveWeaponInstance() == null)
+		if(player.getActiveWeaponInstance() == null)
 		{
-			if (!isAutoSoulShot)
+			if(!isAutoSoulShot)
 			{
 				player.sendPacket(SystemMsg.CANNOT_USE_SOULSHOTS);
 			}
@@ -61,10 +56,10 @@ public class SoulShotItemHandler extends DefaultItemHandler
 		WeaponTemplate weaponItem = player.getActiveWeaponTemplate();
 
 		int ssConsumption = weaponItem.getSoulShotCount();
-		if (ssConsumption <= 0)
+		if(ssConsumption <= 0)
 		{
 			// Can't use soulshots
-			if (isAutoSoulShot)
+			if(isAutoSoulShot)
 			{
 				player.removeAutoShot(shotId, true, SoulShotType.SOULSHOT);
 				return false;
@@ -74,18 +69,16 @@ public class SoulShotItemHandler extends DefaultItemHandler
 		}
 
 		int[] reducedSoulshot = weaponItem.getReducedSoulshot();
-		if (reducedSoulshot[0] > 0 && Rnd.chance(reducedSoulshot[0]))
+		if(reducedSoulshot[0] > 0 && Rnd.chance(reducedSoulshot[0]))
 		{
 			ssConsumption = reducedSoulshot[1];
 		}
-		if (ssConsumption <= 0)
-		{
-			return false;
-		}
+		if(ssConsumption <= 0)
+		{ return false; }
 		ItemGrade grade = weaponItem.getGrade().extGrade();
-		if (!player.getInventory().destroyItem(item, ssConsumption))
+		if(!player.getInventory().destroyItem(item, ssConsumption))
 		{
-			if (isAutoSoulShot)
+			if(isAutoSoulShot)
 			{
 				player.removeAutoShot(shotId, true, SoulShotType.SOULSHOT);
 				return false;
@@ -95,11 +88,11 @@ public class SoulShotItemHandler extends DefaultItemHandler
 		}
 
 		SkillEntry skillEntry = player.getAdditionalSSEffect(false, false);
-		if (skillEntry == null)
+		if(skillEntry == null)
 		{
 			skillEntry = item.getTemplate().getFirstSkill();
 		}
-		if (skillEntry == null)
+		if(skillEntry == null)
 		{
 			skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, SHOT_SKILLS.get(grade.ordinal()), 1);
 		}

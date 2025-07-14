@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.napile.primitive.pair.IntObjectPair;
 
 import l2s.commons.lang.ArrayUtils;
@@ -41,16 +42,16 @@ public class RequestRestartPoint implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (_restartType == null || activeChar == null)
+		if(_restartType == null || activeChar == null)
 			return;
 
-		if (activeChar.isFakeDeath())
+		if(activeChar.isFakeDeath())
 		{
 			activeChar.breakFakeDeath();
 			return;
 		}
 
-		if (!activeChar.isDead() && !activeChar.isGM())
+		if(!activeChar.isDead() && !activeChar.isGM())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -61,10 +62,10 @@ public class RequestRestartPoint implements IClientIncomingPacket
 
 	public static void requestRestart(Player activeChar, RestartType restartType)
 	{
-		switch (restartType)
+		switch(restartType)
 		{
 			case ADVENTURES_SONG:
-				if (activeChar.getAbnormalList().contains(22410) || activeChar.getAbnormalList().contains(22411))
+				if(activeChar.getAbnormalList().contains(22410) || activeChar.getAbnormalList().contains(22411))
 				{
 					activeChar.getAbnormalList().stop(22410);
 					activeChar.getAbnormalList().stop(22411);
@@ -74,20 +75,20 @@ public class RequestRestartPoint implements IClientIncomingPacket
 					activeChar.sendPacket(ActionFailPacket.STATIC, new DiePacket(activeChar));
 				break;
 			case AGATHION:
-				if (activeChar.isAgathionResAvailable())
+				if(activeChar.isAgathionResAvailable())
 					activeChar.doRevive(100);
 				else
 					activeChar.sendPacket(ActionFailPacket.STATIC, new DiePacket(activeChar));
 				break;
 			case FIXED:
-				if (activeChar.getPlayerAccess().ResurectFixed)
+				if(activeChar.getPlayerAccess().ResurectFixed)
 					activeChar.doRevive(100);
-				else if (checkFeatherOfBlessingAvailable(activeChar))
+				else if(checkFeatherOfBlessingAvailable(activeChar))
 				{
-					if (ItemFunctions.deleteItem(activeChar, 10649, 1, true) || ItemFunctions.deleteItem(activeChar, 29148, 1, true))
+					if(ItemFunctions.deleteItem(activeChar, 10649, 1, true) || ItemFunctions.deleteItem(activeChar, 29148, 1, true))
 					{
 						SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 7008, 1);
-						if (skillEntry != null)
+						if(skillEntry != null)
 						{
 							activeChar.sendPacket(SystemMsg.YOU_HAVE_USED_THE_FEATHER_OF_BLESSING_TO_RESURRECT);
 							activeChar.doRevive(100);
@@ -102,27 +103,27 @@ public class RequestRestartPoint implements IClientIncomingPacket
 				TeleportPoint teleportPoint = null;
 				Reflection ref = activeChar.getReflection();
 
-				if (ref.isMain())
+				if(ref.isMain())
 				{
-					for (Event e : activeChar.getEvents())
+					for(Event e : activeChar.getEvents())
 					{
 						Location loc = e.getRestartLoc(activeChar, restartType);
-						if (loc != null)
+						if(loc != null)
 							teleportPoint = new TeleportPoint(loc, ref);
 					}
 				}
 
-				if (teleportPoint == null)
+				if(teleportPoint == null)
 					teleportPoint = defaultPoint(restartType, activeChar);
-				if (activeChar.isInFightClub())
+				if(activeChar.isInFightClub())
 				{
 					activeChar.getFightClubEvent().requestRespawn(activeChar, restartType);
 					return;
 				}
-				if (teleportPoint != null)
+				if(teleportPoint != null)
 				{
 					IntObjectPair<OnAnswerListener> ask = activeChar.getAskListener(false);
-					if (ask != null && ask.getValue() instanceof ReviveAnswerListener && !((ReviveAnswerListener) ask.getValue()).isForPet())
+					if(ask != null && ask.getValue() instanceof ReviveAnswerListener && !((ReviveAnswerListener) ask.getValue()).isForPet())
 						activeChar.getAskListener(true);
 
 					activeChar.setPendingRevive(true);
@@ -136,11 +137,11 @@ public class RequestRestartPoint implements IClientIncomingPacket
 
 	private static boolean checkFeatherOfBlessingAvailable(Player player)
 	{
-		if (player.getAbnormalList().contains(7008))
+		if(player.getAbnormalList().contains(7008))
 			return false;
-		if (ItemFunctions.haveItem(player, 10649, 1))
+		if(ItemFunctions.haveItem(player, 10649, 1))
 			return true;
-		if (ItemFunctions.haveItem(player, 29148, 1))
+		if(ItemFunctions.haveItem(player, 29148, 1))
 			return true;
 		return false;
 	}
@@ -152,27 +153,27 @@ public class RequestRestartPoint implements IClientIncomingPacket
 		TeleportPoint teleportPoint = null;
 		Clan clan = activeChar.getClan();
 
-		switch (restartType)
+		switch(restartType)
 		{
 			case TO_CLANHALL:
-				if (clan != null && clan.getHasHideout() != 0)
+				if(clan != null && clan.getHasHideout() != 0)
 				{
 					ClanHall clanHall = activeChar.getClanHall();
 					teleportPoint = TeleportUtils.getRestartPoint(activeChar, RestartType.TO_CLANHALL);
 
 					ResidenceFunction function = clanHall.getActiveFunction(ResidenceFunctionType.RESTORE_EXP);
-					if (function != null)
+					if(function != null)
 						activeChar.restoreExp(function.getTemplate().getExpRestore() * 100);
 				}
 				break;
 			case TO_CASTLE:
-				if (clan != null && clan.getCastle() != 0)
+				if(clan != null && clan.getCastle() != 0)
 				{
 					Castle castle = activeChar.getCastle();
 					teleportPoint = TeleportUtils.getRestartPoint(activeChar, RestartType.TO_CASTLE);
 
 					ResidenceFunction function = castle.getActiveFunction(ResidenceFunctionType.RESTORE_EXP);
-					if (function != null)
+					if(function != null)
 						activeChar.restoreExp(function.getTemplate().getExpRestore() * 100);
 				}
 				break;

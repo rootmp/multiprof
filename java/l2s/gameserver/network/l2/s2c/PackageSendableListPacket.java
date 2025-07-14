@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
@@ -30,8 +30,8 @@ public class PackageSendableListPacket implements IClientOutgoingPacket
 		ItemInstance[] items = cha.getInventory().getItems();
 		Arrays.sort(items, Warehouse.ItemClassComparator.getInstance());
 		_itemList = new ArrayList<ItemInfo>(items.length);
-		for (ItemInstance item : items)
-			if (item.getTemplate().isFreightable())
+		for(ItemInstance item : items)
+			if(item.getTemplate().isFreightable())
 				_itemList.add(new ItemInfo(item, item.getTemplate().isBlocked(cha, item)));
 	}
 
@@ -39,17 +39,17 @@ public class PackageSendableListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeD(_targetObjectId);
 			packetWriter.writeQ(_adena);
 			packetWriter.writeD(_itemList.size());
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeD(_itemList.size());
 			packetWriter.writeD(_itemList.size());
-			for (ItemInfo item : _itemList)
+			for(ItemInfo item : _itemList)
 			{
 				writeItemInfo(packetWriter, item);
 				packetWriter.writeD(item.getObjectId());

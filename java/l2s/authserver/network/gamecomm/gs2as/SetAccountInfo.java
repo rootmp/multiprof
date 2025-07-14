@@ -23,12 +23,12 @@ public class SetAccountInfo extends ReceivablePacket
 		_account = readS();
 		_size = readC();
 		int size = readD();
-		if (size > 7 || size <= 0)
+		if(size > 7 || size <= 0)
 			_deleteChars = ArrayUtils.EMPTY_INT_ARRAY;
 		else
 		{
 			_deleteChars = new int[size];
-			for (int i = 0; i < _deleteChars.length; i++)
+			for(int i = 0; i < _deleteChars.length; i++)
 				_deleteChars[i] = readD();
 		}
 		return true;
@@ -38,13 +38,13 @@ public class SetAccountInfo extends ReceivablePacket
 	protected void runImpl()
 	{
 		GameServer gs = getGameServer();
-		if (gs.isAuthed())
+		if(gs.isAuthed())
 		{
 			SessionManager.Session session = SessionManager.getInstance().getSessionByName(_account);
-			if (session == null)
+			if(session == null)
 				return;
 
-			for (HostInfo host : gs.getHosts())
+			for(HostInfo host : gs.getHosts())
 				session.getAccount().addAccountInfo(host.getId(), _size, _deleteChars);
 		}
 	}

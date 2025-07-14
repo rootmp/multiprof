@@ -17,12 +17,12 @@ public abstract class MoveAction extends AbstractAction
 	public boolean checkCondition(FakeAI ai, boolean force)
 	{
 		Player player = ai.getActor();
-		if (player.isMovementDisabled())
+		if(player.isMovementDisabled())
 			return false;
 
-		if (!force)
+		if(!force)
 		{
-			if (player.getMovement().isMoving())
+			if(player.getMovement().isMoving())
 				return false;
 		}
 

@@ -40,7 +40,7 @@ public class VIP
 
 	public void restore()
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
 		setPoints(Long.parseLong(AccountVariablesDAO.getInstance().select(_owner.getAccountName(), VIP_POINTS_VAR, "0")));
@@ -51,7 +51,7 @@ public class VIP
 
 	public synchronized void startTask()
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
 		stopTask();
@@ -60,13 +60,13 @@ public class VIP
 		long delay = getPointsConsumeDelay(TimeUnit.MILLISECONDS);
 		long startTime = getPointsConsumeStartTime();
 		long leftTime = (delay + startTime) - System.currentTimeMillis();
-		if (consumeCount > 0 && delay > 0)
+		if(consumeCount > 0 && delay > 0)
 		{
-			if (startTime > 0)
+			if(startTime > 0)
 			{
 				boolean update = false;
 
-				while (leftTime <= 0)
+				while(leftTime <= 0)
 				{
 					update = true;
 
@@ -77,17 +77,17 @@ public class VIP
 					startTime += delay;
 
 					consumeCount = getPointsConsumeCount();
-					if (consumeCount <= 0)
+					if(consumeCount <= 0)
 						break;
 
 					delay = getPointsConsumeDelay(TimeUnit.MILLISECONDS);
-					if (delay <= 0)
+					if(delay <= 0)
 						break;
 
 					leftTime = (delay + startTime) - System.currentTimeMillis();
 				}
 
-				if (update)
+				if(update)
 				{
 					AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_POINTS_VAR, String.valueOf(getPoints()));
 					AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_CONSUMED_POINTS_VAR, String.valueOf(getTotalConsumedPoints()));
@@ -110,9 +110,9 @@ public class VIP
 			}
 		}
 
-		if (consumeCount <= 0 || delay <= 0 || leftTime <= 0)
+		if(consumeCount <= 0 || delay <= 0 || leftTime <= 0)
 		{
-			if (startTime > 0)
+			if(startTime > 0)
 			{
 				startTime = 0L;
 				setPointsConsumeStartTime(startTime);
@@ -126,7 +126,7 @@ public class VIP
 
 	public void stopTask()
 	{
-		if (_consumePointsTask != null)
+		if(_consumePointsTask != null)
 		{
 			_consumePointsTask.cancel(false);
 			_consumePointsTask = null;
@@ -140,7 +140,7 @@ public class VIP
 
 	private void setPoints(long value)
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
 		_points = Math.max(0L, value);
@@ -148,25 +148,25 @@ public class VIP
 
 	public synchronized void addPoints(long value)
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
-		if (value <= 0)
+		if(value <= 0)
 			return;
 
 		setPoints(getPoints() + value);
 		AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_POINTS_VAR, String.valueOf(getPoints()));
 
-		if (checkTemplate(false))
+		if(checkTemplate(false))
 			startTask();
 	}
 
 	private synchronized boolean checkTemplate(boolean onRestore)
 	{
 		VIPTemplate newTemplate = VIPDataHolder.getInstance().getVIPTemplateByPoints(getPoints());
-		if (!onRestore)
+		if(!onRestore)
 		{
-			if (newTemplate == _vipTemplate)
+			if(newTemplate == _vipTemplate)
 				return false;
 
 			_vipTemplate.onRemove(_owner);
@@ -204,7 +204,7 @@ public class VIP
 	public long getPointsConsumeLeftTime(TimeUnit timeUnit)
 	{
 		long delay = getPointsConsumeDelay(TimeUnit.MILLISECONDS);
-		if (delay > 0)
+		if(delay > 0)
 			return timeUnit.convert((delay + getPointsConsumeStartTime()) - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
 		return 0L;
 	}

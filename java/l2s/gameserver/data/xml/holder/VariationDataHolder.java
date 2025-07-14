@@ -1,16 +1,15 @@
 package l2s.gameserver.data.xml.holder;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.item.VariationType;
-import l2s.gameserver.templates.item.support.variation.VariationGroup;
-import l2s.gameserver.templates.item.support.variation.VariationProb;
-import l2s.gameserver.templates.item.support.variation.VariationStone;
-
 import java.util.Collections;
 import java.util.List;
 
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.item.VariationType;
+import l2s.gameserver.templates.item.support.variation.VariationGroup;
+import l2s.gameserver.templates.item.support.variation.VariationProb;
+import l2s.gameserver.templates.item.support.variation.VariationStone;
 
 /**
  * @author Bonux
@@ -30,7 +29,7 @@ public final class VariationDataHolder extends AbstractHolder
 	public void addStone(VariationType type, VariationStone stone)
 	{
 		TIntObjectMap<VariationStone> stones = _stones.get(type.ordinal());
-		if (stones == null)
+		if(stones == null)
 		{
 			stones = new TIntObjectHashMap<VariationStone>();
 			_stones.put(type.ordinal(), stones);
@@ -42,7 +41,7 @@ public final class VariationDataHolder extends AbstractHolder
 	public VariationStone getStone(VariationType type, int id)
 	{
 		TIntObjectMap<VariationStone> stones = _stones.get(type.ordinal());
-		if (stones == null)
+		if(stones == null)
 			return null;
 
 		return stones.get(id);
@@ -75,6 +74,6 @@ public final class VariationDataHolder extends AbstractHolder
 	{
 		System.out.println("findVariationProbs not implemented yet.");
 		return Collections.emptyList();
-		    
+
 	}
 }

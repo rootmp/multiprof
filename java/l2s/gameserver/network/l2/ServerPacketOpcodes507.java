@@ -441,7 +441,7 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/*0xFE:0xB3*/ ExReplyPostItemList,
 	/*0xFE:0xB4*/ ExChangePostState,
 	/*0xFE:0xB5*/ ExReplyWritePost,
-								ExPostItemFee,
+	ExPostItemFee,
 	/*0xFE:0xB6*/ ExInitializeSeed,
 	/*0xFE:0xB7*/ ExRaidReserveResult,
 	/*0xFE:0xB8*/ ExBuySellListPacket,
@@ -473,7 +473,7 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/*0xFE:0xD2*/ ExAgitAuctionCmdPacket,
 	/*0xFE:0xD3*/ ExConfirmAddingPostFriend,
 	/*0xFE:0xD4*/ ExReceiveShowPostFriend,
-	/*0xFE:0xD5*/ ExReceiveOlympiadPacket,//S_EX_GFX_OLYMPIAD
+	/*0xFE:0xD5*/ ExReceiveOlympiadPacket, //S_EX_GFX_OLYMPIAD
 	/*0xFE:0xD6*/ ExBR_GamePointPacket,
 	/*0xFE:0xD7*/ ExBR_ProductListPacket,
 	/*0xFE:0xD8*/ ExBR_ProductInfoPacket,
@@ -611,7 +611,7 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/*0xFE:0x15C*/ ExDivideAdenaCancel,
 	/*0xFE:0x15D*/ ExDivideAdenaDone,
 	/*0xFE:0x15E*/ PetInfoPacket,
-	/*0xFE:0x15F*/ ExAcquireAPSkillList,//EX_ACQUIRE_AP_SKILL_LIST
+	/*0xFE:0x15F*/ ExAcquireAPSkillList, //EX_ACQUIRE_AP_SKILL_LIST
 	/*0xFE:0x160*/ ExStartLuckyGame,
 	/*0xFE:0x161*/ ExBettingLuckyGameResult,
 	/*0xFE:0x162*/ ExTrainingZone_Admission,
@@ -686,7 +686,7 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/*0xFE:0x1A7*/ ExArenaCustomNotification,
 	/*0xFE:0x1A8*/ ExOneDayRewardList,
 	/*0xFE:0x1A9*/ ExOneDayRewardInfo,
-	/*0xFE:0x1AA*/ ExTodoListRecommand,//S_EX_TODOLIST_RECOMMAND
+	/*0xFE:0x1AA*/ ExTodoListRecommand, //S_EX_TODOLIST_RECOMMAND
 	/*0xFE:0x1AB*/ ExTodoListInzone,
 	/*0xFE:0x1AC*/ ExTodoListHTML,
 	/*0xFE:0x1AD*/ ExQueueTicket,
@@ -904,103 +904,103 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/*0xFE:0x280*/ ExHidePetExtractSystem, // S_EX_HIDE_PET_EXTRACT_SYSTEM
 	//306
 	/*0xFE:0x281*/ S_EX_RANKING_FESTIVAL_SIDEBAR_INFO, // S_EX_RANKING_FESTIVAL_SIDEBAR_INFO
-	/*0xFE:0x282*/  S_EX_RANKING_FESTIVAL_BUY,
-	/*0xFE:0x283*/  S_EX_RANKING_FESTIVAL_BONUS,
-	/*0xFE:0x284*/  S_EX_RANKING_FESTIVAL_RANKING,
-	/*0xFE:0x285*/  S_EX_RANKING_FESTIVAL_MYINFO,
-	/*0xFE:0x286*/  S_EX_RANKING_FESTIVAL_MY_RECEIVED_BONUS,
-	/*0xFE:0x287*/  S_EX_RANKING_FESTIVAL_REWARD,
-	/*0xFE:0x288*/  ExTimerCheck,//S_EX_TIMER_CHECK,
-	/*0xFE:0x289*/  ExSteadyBoxUIInit,
-	/*0xFE:0x28A*/  ExSteadyAllBoxUpdate,
-	/*0xFE:0x28B*/  ExSteadyOneBoxUpdate,
-	/*0xFE:0x28C*/  ExSteadyBoxReward,
-	/*0xFE:0x28D*/  ExPetRankingMyInfo,//S_EX_PET_RANKING_MY_INFO,
-	/*0xFE:0x28E*/  ExPetRankingList,//S_EX_PET_RANKING_LIST,
-	/*0xFE:0x28F*/	ExCollectionInfo,
-	/*0xFE:0x290*/	ExCollectionOpenUI,
-	/*0xFE:0x291*/	ExCollectionCloseUI,
-	/*0xFE:0x292*/	ExCollectionList,
-	/*0xFE:0x293*/	ExCollectionUpdateFavorite,
-	/*0xFE:0x294*/	ExCollectionFavoriteList,
-	/*0xFE:0x295*/	ExCollectionSummary,
-	/*0xFE:0x296*/	ExCollectionRegister,
-	/*0xFE:0x297*/  ExCollectionComplete,
-	/*0xFE:0x298*/  ExCollectionReceiveReward,
-	/*0xFE:0x299*/  ExCollectionReset,
-	/*0xFE:0x29A*/	ExCollectionActiveEvent,
-	/*0xFE:0x29B*/  ExCollectionResetReward,
-	/*0xFE:0x29C*/  ExPvpBookShareRevengeList,//S_EX_PVPBOOK_SHARE_REVENGE_LIST,
-	/*0xFE:0x29D*/  ExPvpBookShareRevengeKillerLocation,//S_EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION,
-	/*0xFE:0x29E*/  ExPvpBookShareRevengeNewRevengeInfo,//S_EX_PVPBOOK_SHARE_REVENGE_NEW_REVENGEINFO,
-	/*0xFE:0x29F*/	ExPenaltyItemDrop,//S_EX_PENALTY_ITEM_DROP
-	/*0xFE:0x2A0*/	ExPenaltyItemList,//S_EX_PENALTY_ITEM_LIST
-	/*0xFE:0x2A1*/	ExPenaltyItemRestore,//S_EX_PENALTY_ITEM_RESTORE
-	/*0xFE:0x2A2*/	ExUserWatcherTargetList,
-	/*0xFE:0x2A3*/	ExUserWatcherTargetStatus,
-	/*0xFE:0x2A4*/  S_EX_HOMUNCULUS_ACTIVATE_SLOT_RESULT,
-	/*0xFE:0x2A5*/  S_EX_SHOW_HOMUNCULUS_COUPON_UI,
-	/*0xFE:0x2A6*/  S_EX_SUMMON_HOMUNCULUS_COUPON_RESULT,
-	/*0xFE:0x2A7*/	ExPenaltyItemInfo,//S_EX_PENALTY_ITEM_INFO
-	/*0xFE:0x2A8*/  ExMagicSkillUseGround,//S_EX_MAGIC_SKILL_USE_GROUND,
-	/*0xFE:0x2A9*/	ExSubjugationSidebar,
-	/*0xFE:0x2AA*/	ExSubjugationList,
-	/*0xFE:0x2AB*/	ExSubjugationRanking,
-	/*0xFE:0x2AC*/	ExSubjugationGachaUI,
-	/*0xFE:0x2AD*/	ExSubjugationGacha,
-	/*0xFE:0x2AE*/  ExUserViewInfoParameter,//S_EX_USER_VIEW_INFO_PARAMETER
-	/*0xFE:0x2AF*/	ExPledgeDonationInfo,
-	/*0xFE:0x2B0*/	ExPledgeDonationRequest,
-	/*0xFE:0x2B1*/	ExPledgeContributionList,
-	/*0xFE:0x2B2*/	ExPledgeRankingMyInfo,
-	/*0xFE:0x2B3*/	ExPledgeRankingList,
-	/*0xFE:0x2B4*/  ExItemRestoreListPacket,
-	/*0xFE:0x2B5*/  ExItemRestorePacket,
-	/*0xFE:0x2B6*/  ExPledgeCoinInfo, //S_EX_PLEDGE_COIN_INFO
-	/*0xFE:0x2B7*/  S_EX_DETHRONE_INFO,
-	/*0xFE:0x2B8*/  S_EX_DETHRONE_RANKING_INFO,
-	/*0xFE:0x2B9*/  S_EX_DETHRONE_SERVER_INFO,
-	/*0xFE:0x2BA*/  S_EX_DETHRONE_DISTRICT_OCCUPATION_INFO,
-	/*0xFE:0x2BB*/  S_EX_DETHRONE_DAILY_MISSION_INFO,
-	/*0xFE:0x2BC*/  S_EX_DETHRONE_DAILY_MISSION_GET_REWARD,
-	/*0xFE:0x2BD*/  S_EX_DETHRONE_DAILY_MISSION_COMPLETE,
-	/*0xFE:0x2BE*/  S_EX_DETHRONE_PREV_SEASON_INFO,
-	/*0xFE:0x2BF*/  S_EX_DETHRONE_GET_REWARD,
-	/*0xFE:0x2C0*/  S_EX_DETHRONE_CHECK_NAME,
-	/*0xFE:0x2C1*/  S_EX_DETHRONE_CHANGE_NAME,
-	/*0xFE:0x2C2*/  S_EX_DETHRONE_CONNECT_CASTLE,
-	/*0xFE:0x2C3*/  S_EX_DETHRONE_DISCONNECT_CASTLE,
-	/*0xFE:0x2C4*/  S_EX_DETHRONE_SEASON_INFO,
-	/*0xFE:0x2C5*/  ExServerlimitItemAnnounce,//S_EX_SERVERLIMIT_ITEM_ANNOUNCE,
-	/*0xFE:0x2C6*/  ExChangeNickNameColorIcon,//EX_CHANGE_NICKNAME_COLOR_ICON,
-	/*0xFE:0x2C7*/  ExWorldcastlewarHostCastleSiegeHudInfo,//EX_WORLDCASTLEWAR_HOST_CASTLE_SIEGE_HUD_INFO
-	/*0xFE:0x2C8*/  ExWorldcastlewarCastleInfo,//EX_WORLDCASTLEWAR_CASTLE_INFO
-	/*0xFE:0x2C9*/  ExWorldCastlewarCastleSiegeInfo,//EX_WORLDCASTLEWAR_CASTLE_SIEGE_INFO
-	/*0xFE:0x2CA*/  ExWorldcastlewarCastleSiegeHudInfo,//EX_WORLDCASTLEWAR_CASTLE_SIEGE_HUD_INFO
-	/*0xFE:0x2CB*/  EX_WORLDCASTLEWAR_CASTLE_SIEGE_ATTACKER_LIST,
-	/*0xFE:0x2CC*/  EX_WORLDCASTLEWAR_PLEDGE_MERCENARY_MEMBER_LIST,
-	/*0xFE:0x2CD*/  EX_WORLDCASTLEWAR_PLEDGE_MERCENARY_MEMBER_JOIN,
-	/*0xFE:0x2CE*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_OCCUPY_INFO,
-	/*0xFE:0x2CF*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HERO_WEAPON_INFO,
-	/*0xFE:0x‭2D0‬*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HERO_WEAPON_USER,
-	/*0xFE:0x2D1*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_SIEGE_GOLEM_INFO,
-	/*0xFE:0x2D2*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_DOOR_INFO,
-	/*0xFE:0x2D3*/  EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HUD_INFO,
-	/*0xFE:0x2D4*/  ExPrivateStoreSearchItem,//EX_PRIVATE_STORE_SEARCH_ITEM
-	/*0xFE:0x2D5*/  ExPrivateStoreSearchHistory,//EX_PRIVATE_STORE_SEARCH_HISTORY
-	/*0xFE:0x2D6*/  ExPrivateStoreSearchStatistics,//EX_PRIVATE_STORE_SEARCH_STATISTICS
-	/*0xFE:0x2D9*/  NewHennaList,//EX_NEW_HENNA_LIST
-	/*0xFE:0x2DA*/  NewHennaEquip,//EX_NEW_HENNA_EQUIP
-	/*0xFE:0x2DB*/  NewHennaUnequip,//EX_NEW_HENNA_UNEQUIP
-	/*0xFE:0x2DC*/  NewHennaPotenSelect,//EX_NEW_HENNA_POTEN_SELECT
-	/*0xFE:0x2DD*/  NewHennaPotenEnchant,//EX_NEW_HENNA_POTEN_ENCHANT
-	/*0xFE:0x2DE*/  NewHennaPotenCompose,//EX_NEW_HENNA_COMPOSE
-	/*0xFE:0x2DF*/  ExRequestInviteParty,//EX_REQUEST_INVITE_PARTY,
-	/*0xFE:0x2E0‬*/  ExInitGlobalEventUi,
-	/*0xFE:0x2E1*/  ExShowGlobalEventUI,//EX_SHOW_GLOBAL_EVENT_UI
-	/*0xFE:0x2E2*/  HuntPassSimpleInfo,//EX_L2PASS_SIMPLE_INFO
-	/*0xFE:0x2E3*/  HuntPassInfo,//EX_L2PASS_INFO
-	/*0xFE:0x2E4*/  HuntPassSayhasSupportInfo,//EX_SAYHAS_SUPPORT_INFO,
+	/*0xFE:0x282*/ S_EX_RANKING_FESTIVAL_BUY,
+	/*0xFE:0x283*/ S_EX_RANKING_FESTIVAL_BONUS,
+	/*0xFE:0x284*/ S_EX_RANKING_FESTIVAL_RANKING,
+	/*0xFE:0x285*/ S_EX_RANKING_FESTIVAL_MYINFO,
+	/*0xFE:0x286*/ S_EX_RANKING_FESTIVAL_MY_RECEIVED_BONUS,
+	/*0xFE:0x287*/ S_EX_RANKING_FESTIVAL_REWARD,
+	/*0xFE:0x288*/ ExTimerCheck, //S_EX_TIMER_CHECK,
+	/*0xFE:0x289*/ ExSteadyBoxUIInit,
+	/*0xFE:0x28A*/ ExSteadyAllBoxUpdate,
+	/*0xFE:0x28B*/ ExSteadyOneBoxUpdate,
+	/*0xFE:0x28C*/ ExSteadyBoxReward,
+	/*0xFE:0x28D*/ ExPetRankingMyInfo, //S_EX_PET_RANKING_MY_INFO,
+	/*0xFE:0x28E*/ ExPetRankingList, //S_EX_PET_RANKING_LIST,
+	/*0xFE:0x28F*/ ExCollectionInfo,
+	/*0xFE:0x290*/ ExCollectionOpenUI,
+	/*0xFE:0x291*/ ExCollectionCloseUI,
+	/*0xFE:0x292*/ ExCollectionList,
+	/*0xFE:0x293*/ ExCollectionUpdateFavorite,
+	/*0xFE:0x294*/ ExCollectionFavoriteList,
+	/*0xFE:0x295*/ ExCollectionSummary,
+	/*0xFE:0x296*/ ExCollectionRegister,
+	/*0xFE:0x297*/ ExCollectionComplete,
+	/*0xFE:0x298*/ ExCollectionReceiveReward,
+	/*0xFE:0x299*/ ExCollectionReset,
+	/*0xFE:0x29A*/ ExCollectionActiveEvent,
+	/*0xFE:0x29B*/ ExCollectionResetReward,
+	/*0xFE:0x29C*/ ExPvpBookShareRevengeList, //S_EX_PVPBOOK_SHARE_REVENGE_LIST,
+	/*0xFE:0x29D*/ ExPvpBookShareRevengeKillerLocation, //S_EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION,
+	/*0xFE:0x29E*/ ExPvpBookShareRevengeNewRevengeInfo, //S_EX_PVPBOOK_SHARE_REVENGE_NEW_REVENGEINFO,
+	/*0xFE:0x29F*/ ExPenaltyItemDrop, //S_EX_PENALTY_ITEM_DROP
+	/*0xFE:0x2A0*/ ExPenaltyItemList, //S_EX_PENALTY_ITEM_LIST
+	/*0xFE:0x2A1*/ ExPenaltyItemRestore, //S_EX_PENALTY_ITEM_RESTORE
+	/*0xFE:0x2A2*/ ExUserWatcherTargetList,
+	/*0xFE:0x2A3*/ ExUserWatcherTargetStatus,
+	/*0xFE:0x2A4*/ S_EX_HOMUNCULUS_ACTIVATE_SLOT_RESULT,
+	/*0xFE:0x2A5*/ S_EX_SHOW_HOMUNCULUS_COUPON_UI,
+	/*0xFE:0x2A6*/ S_EX_SUMMON_HOMUNCULUS_COUPON_RESULT,
+	/*0xFE:0x2A7*/ ExPenaltyItemInfo, //S_EX_PENALTY_ITEM_INFO
+	/*0xFE:0x2A8*/ ExMagicSkillUseGround, //S_EX_MAGIC_SKILL_USE_GROUND,
+	/*0xFE:0x2A9*/ ExSubjugationSidebar,
+	/*0xFE:0x2AA*/ ExSubjugationList,
+	/*0xFE:0x2AB*/ ExSubjugationRanking,
+	/*0xFE:0x2AC*/ ExSubjugationGachaUI,
+	/*0xFE:0x2AD*/ ExSubjugationGacha,
+	/*0xFE:0x2AE*/ ExUserViewInfoParameter, //S_EX_USER_VIEW_INFO_PARAMETER
+	/*0xFE:0x2AF*/ ExPledgeDonationInfo,
+	/*0xFE:0x2B0*/ ExPledgeDonationRequest,
+	/*0xFE:0x2B1*/ ExPledgeContributionList,
+	/*0xFE:0x2B2*/ ExPledgeRankingMyInfo,
+	/*0xFE:0x2B3*/ ExPledgeRankingList,
+	/*0xFE:0x2B4*/ ExItemRestoreListPacket,
+	/*0xFE:0x2B5*/ ExItemRestorePacket,
+	/*0xFE:0x2B6*/ ExPledgeCoinInfo, //S_EX_PLEDGE_COIN_INFO
+	/*0xFE:0x2B7*/ S_EX_DETHRONE_INFO,
+	/*0xFE:0x2B8*/ S_EX_DETHRONE_RANKING_INFO,
+	/*0xFE:0x2B9*/ S_EX_DETHRONE_SERVER_INFO,
+	/*0xFE:0x2BA*/ S_EX_DETHRONE_DISTRICT_OCCUPATION_INFO,
+	/*0xFE:0x2BB*/ S_EX_DETHRONE_DAILY_MISSION_INFO,
+	/*0xFE:0x2BC*/ S_EX_DETHRONE_DAILY_MISSION_GET_REWARD,
+	/*0xFE:0x2BD*/ S_EX_DETHRONE_DAILY_MISSION_COMPLETE,
+	/*0xFE:0x2BE*/ S_EX_DETHRONE_PREV_SEASON_INFO,
+	/*0xFE:0x2BF*/ S_EX_DETHRONE_GET_REWARD,
+	/*0xFE:0x2C0*/ S_EX_DETHRONE_CHECK_NAME,
+	/*0xFE:0x2C1*/ S_EX_DETHRONE_CHANGE_NAME,
+	/*0xFE:0x2C2*/ S_EX_DETHRONE_CONNECT_CASTLE,
+	/*0xFE:0x2C3*/ S_EX_DETHRONE_DISCONNECT_CASTLE,
+	/*0xFE:0x2C4*/ S_EX_DETHRONE_SEASON_INFO,
+	/*0xFE:0x2C5*/ ExServerlimitItemAnnounce, //S_EX_SERVERLIMIT_ITEM_ANNOUNCE,
+	/*0xFE:0x2C6*/ ExChangeNickNameColorIcon, //EX_CHANGE_NICKNAME_COLOR_ICON,
+	/*0xFE:0x2C7*/ ExWorldcastlewarHostCastleSiegeHudInfo, //EX_WORLDCASTLEWAR_HOST_CASTLE_SIEGE_HUD_INFO
+	/*0xFE:0x2C8*/ ExWorldcastlewarCastleInfo, //EX_WORLDCASTLEWAR_CASTLE_INFO
+	/*0xFE:0x2C9*/ ExWorldCastlewarCastleSiegeInfo, //EX_WORLDCASTLEWAR_CASTLE_SIEGE_INFO
+	/*0xFE:0x2CA*/ ExWorldcastlewarCastleSiegeHudInfo, //EX_WORLDCASTLEWAR_CASTLE_SIEGE_HUD_INFO
+	/*0xFE:0x2CB*/ EX_WORLDCASTLEWAR_CASTLE_SIEGE_ATTACKER_LIST,
+	/*0xFE:0x2CC*/ EX_WORLDCASTLEWAR_PLEDGE_MERCENARY_MEMBER_LIST,
+	/*0xFE:0x2CD*/ EX_WORLDCASTLEWAR_PLEDGE_MERCENARY_MEMBER_JOIN,
+	/*0xFE:0x2CE*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_OCCUPY_INFO,
+	/*0xFE:0x2CF*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HERO_WEAPON_INFO,
+	/*0xFE:0x‭2D0‬*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HERO_WEAPON_USER,
+	/*0xFE:0x2D1*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_SIEGE_GOLEM_INFO,
+	/*0xFE:0x2D2*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_DOOR_INFO,
+	/*0xFE:0x2D3*/ EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HUD_INFO,
+	/*0xFE:0x2D4*/ ExPrivateStoreSearchItem, //EX_PRIVATE_STORE_SEARCH_ITEM
+	/*0xFE:0x2D5*/ ExPrivateStoreSearchHistory, //EX_PRIVATE_STORE_SEARCH_HISTORY
+	/*0xFE:0x2D6*/ ExPrivateStoreSearchStatistics, //EX_PRIVATE_STORE_SEARCH_STATISTICS
+	/*0xFE:0x2D9*/ NewHennaList, //EX_NEW_HENNA_LIST
+	/*0xFE:0x2DA*/ NewHennaEquip, //EX_NEW_HENNA_EQUIP
+	/*0xFE:0x2DB*/ NewHennaUnequip, //EX_NEW_HENNA_UNEQUIP
+	/*0xFE:0x2DC*/ NewHennaPotenSelect, //EX_NEW_HENNA_POTEN_SELECT
+	/*0xFE:0x2DD*/ NewHennaPotenEnchant, //EX_NEW_HENNA_POTEN_ENCHANT
+	/*0xFE:0x2DE*/ NewHennaPotenCompose, //EX_NEW_HENNA_COMPOSE
+	/*0xFE:0x2DF*/ ExRequestInviteParty, //EX_REQUEST_INVITE_PARTY,
+	/*0xFE:0x2E0‬*/ ExInitGlobalEventUi,
+	/*0xFE:0x2E1*/ ExShowGlobalEventUI, //EX_SHOW_GLOBAL_EVENT_UI
+	/*0xFE:0x2E2*/ HuntPassSimpleInfo, //EX_L2PASS_SIMPLE_INFO
+	/*0xFE:0x2E3*/ HuntPassInfo, //EX_L2PASS_INFO
+	/*0xFE:0x2E4*/ HuntPassSayhasSupportInfo, //EX_SAYHAS_SUPPORT_INFO,
 	/* 0xFE:0x2E3 */ ExResetEnchantItemFailRewardInfo, // S_EX_RES_ENCHANT_ITEM_FAIL_REWARD_INFO,
 	/* 0xFE:0x2E4 */ ExChangedEnchantTargetItemProbabilityList, // S_EX_CHANGED_ENCHANT_TARGET_ITEM_PROB_LIST
 	/* 0xFE:0x2E5 */ ExEnchantChallengePointInfo, // S_EX_ENCHANT_CHALLENGE_POINT_INFO
@@ -1036,11 +1036,11 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	/* 0xFE:0x303 */ ExReadyItemAutoPeel, // S_EX_READY_ITEM_AUTO_PEEL
 	/* 0xFE:0x304 */ ExResultItemAutoPeel, // S_EX_RESULT_ITEM_AUTO_PEEL
 	/* 0xFE:0x305 */ ExStopItemAutoPeel, // S_EX_STOP_ITEM_AUTO_PEEL
-	
+
 	ExTimeRestrictFieldDieLimitTime, //S_EX_TIME_RESTRICT_FIELD_DIE_LIMT_TIME, //0x306
-	ExApplyVariationOption,//S_EX_APPLY_VARIATION_OPTION, //0x307
+	ExApplyVariationOption, //S_EX_APPLY_VARIATION_OPTION, //0x307
 	S_EX_REQUEST_AUDIO_LOG_SAVE, //0x308
-	ExBRVersion,//S_EX_BR_VERSION, //0x309
+	ExBRVersion, //S_EX_BR_VERSION, //0x309
 	S_EX_NOTIFY_ATTENDANCE, //0x30A
 	S_EX_WRANKING_FESTIVAL_INFO, //0x30B
 	S_EX_WRANKING_FESTIVAL_SIDEBAR_INFO, //0x30C
@@ -1060,69 +1060,69 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	S_EX_HERO_BOOK_CHARGE, //0x31A
 	S_EX_HERO_BOOK_ENCHANT, //0x31B
 	S_EX_HERO_BOOK_CHARGE_PROB,
-	ExTeleportUi,//S_EX_TELEPORT_UI, //0x31C
+	ExTeleportUi, //S_EX_TELEPORT_UI, //0x31C
 	S_EX_GOODS_GIFT_CHANGED_NOTI, //0x31D
 	S_EX_GOODS_GIFT_LIST_INFO, //0x31E
 	S_EX_GOODS_GIFT_ACCEPT_RESULT, //0x31F
 	S_EX_GOODS_GIFT_REFUSE_RESULT, //0x320
 	S_EX_NONPVPSERVER_NOTIFY_ACTIVATEFLAG, //0x321
-	ExWorldExchangeAveragePrice,//S_EX_WORLD_EXCHANGE_AVERAGE_PRICE, //0x322
-	ExWorldExchangeTotalList,//S_EX_WORLD_EXCHANGE_TOTAL_LIST, //0x323
+	ExWorldExchangeAveragePrice, //S_EX_WORLD_EXCHANGE_AVERAGE_PRICE, //0x322
+	ExWorldExchangeTotalList, //S_EX_WORLD_EXCHANGE_TOTAL_LIST, //0x323
 	S_EX_PRISON_USER_ENTER, //0x324
 	S_EX_PRISON_USER_EXIT, //0x325
 	S_EX_PRISON_USER_INFO, //0x326
 	S_EX_PRISON_USER_DONATION, //0x327
 	ExItemRestoreOpenPacket, //0x328
-	S_EX_UNIQUE_GACHA_SIDEBAR_INFO,//1064;
-	S_EX_UNIQUE_GACHA_OPEN,//1065;
-	S_EX_UNIQUE_GACHA_GAME,//1066;
-	S_EX_UNIQUE_GACHA_INVEN_ITEM_LIST,//1067;
-	S_EX_UNIQUE_GACHA_INVEN_GET_ITEM,//1068;
-	S_EX_UNIQUE_GACHA_INVEN_ADD_ITEM,//1069;
-	S_EX_UNIQUE_GACHA_HISTORY,//1070;
-	ExFieldDieLimtTime,//S_EX_FIELD_DIE_LIMT_TIME,//1071;
-	ExElementalSpiritAttackType,//S_EX_ELEMENTAL_SPIRIT_ATTACK_TYPE,//1072;
-	ExGetPledgeCrestPreset,//S_EX_GET_PLEDGE_CREST_PRESET,//1073;
-	ExDualInventoryInfo,//1074; S_EX_DUAL_INVENTORY_INFO
-	ExSpExtractInfo,//S_EX_SP_EXTRACT_INFO,//1075;
-	ExSpExtractItem,//S_EX_SP_EXTRACT_ITEM,//1076;
-	ExQuestDialog,//S_EX_QUEST_DIALOG,//1077;
-	ExQuestNotification,//S_EX_QUEST_NOTIFICATION,//1078;
-	ExQuestNotificationAll,//S_EX_QUEST_NOTIFICATION_ALL,//1079;
-	ExQuestUi,//S_EX_QUEST_UI,//1080;
-	ExQuestAcceptableAlarm,//S_EX_QUEST_ACCEPTABLE_ALARM,//1081;
-	ExQuestAcceptableList,//S_EX_QUEST_ACCEPTABLE_LIST,//1082;
-	ExSkillEnchantInfo,//S_EX_SKILL_ENCHANT_INFO,//1083;
-	ExSkillEnchantCharge,//S_EX_SKILL_ENCHANT_CHARGE,//1084;
-	S_EX_TIME_RESTRICT_FIELD_HOST_USER_ENTER,//1085;
-	S_EX_TIME_RESTRICT_FIELD_HOST_USER_LEAVE,//1086;
-	S_EX_DETHRONE_SHOP_BUY,//1087;
-	S_EX_DETHRONE_POINT_INFO,//1088;
-	ExAcquireSkillResult,//S_EX_ACQUIRE_SKILL_RESULT,//1089;
-	S_EX_ENHANCED_ABILITY_OF_FIRE_OPEN_UI,//1090;
-	S_EX_ENHANCED_ABILITY_OF_FIRE_INIT,//1091;
-	S_EX_ENHANCED_ABILITY_OF_FIRE_EXP_UP,//1092;
-	S_EX_ENHANCED_ABILITY_OF_FIRE_LEVEL_UP,//1093;
-	ExHolyFireOpenUi,//1094;
-	S_EX_HOLY_FIRE_NOTIFY,//1095;
-	S_EX_PICK_UP_DIST_MODIFY,//1096;
+	S_EX_UNIQUE_GACHA_SIDEBAR_INFO, //1064;
+	S_EX_UNIQUE_GACHA_OPEN, //1065;
+	S_EX_UNIQUE_GACHA_GAME, //1066;
+	S_EX_UNIQUE_GACHA_INVEN_ITEM_LIST, //1067;
+	S_EX_UNIQUE_GACHA_INVEN_GET_ITEM, //1068;
+	S_EX_UNIQUE_GACHA_INVEN_ADD_ITEM, //1069;
+	S_EX_UNIQUE_GACHA_HISTORY, //1070;
+	ExFieldDieLimtTime, //S_EX_FIELD_DIE_LIMT_TIME,//1071;
+	ExElementalSpiritAttackType, //S_EX_ELEMENTAL_SPIRIT_ATTACK_TYPE,//1072;
+	ExGetPledgeCrestPreset, //S_EX_GET_PLEDGE_CREST_PRESET,//1073;
+	ExDualInventoryInfo, //1074; S_EX_DUAL_INVENTORY_INFO
+	ExSpExtractInfo, //S_EX_SP_EXTRACT_INFO,//1075;
+	ExSpExtractItem, //S_EX_SP_EXTRACT_ITEM,//1076;
+	ExQuestDialog, //S_EX_QUEST_DIALOG,//1077;
+	ExQuestNotification, //S_EX_QUEST_NOTIFICATION,//1078;
+	ExQuestNotificationAll, //S_EX_QUEST_NOTIFICATION_ALL,//1079;
+	ExQuestUi, //S_EX_QUEST_UI,//1080;
+	ExQuestAcceptableAlarm, //S_EX_QUEST_ACCEPTABLE_ALARM,//1081;
+	ExQuestAcceptableList, //S_EX_QUEST_ACCEPTABLE_LIST,//1082;
+	ExSkillEnchantInfo, //S_EX_SKILL_ENCHANT_INFO,//1083;
+	ExSkillEnchantCharge, //S_EX_SKILL_ENCHANT_CHARGE,//1084;
+	S_EX_TIME_RESTRICT_FIELD_HOST_USER_ENTER, //1085;
+	S_EX_TIME_RESTRICT_FIELD_HOST_USER_LEAVE, //1086;
+	S_EX_DETHRONE_SHOP_BUY, //1087;
+	S_EX_DETHRONE_POINT_INFO, //1088;
+	ExAcquireSkillResult, //S_EX_ACQUIRE_SKILL_RESULT,//1089;
+	S_EX_ENHANCED_ABILITY_OF_FIRE_OPEN_UI, //1090;
+	S_EX_ENHANCED_ABILITY_OF_FIRE_INIT, //1091;
+	S_EX_ENHANCED_ABILITY_OF_FIRE_EXP_UP, //1092;
+	S_EX_ENHANCED_ABILITY_OF_FIRE_LEVEL_UP, //1093;
+	ExHolyFireOpenUi, //1094;
+	S_EX_HOLY_FIRE_NOTIFY, //1095;
+	S_EX_PICK_UP_DIST_MODIFY, //1096;
 	//439
-	ExUserinfoAddPdefend,//S_EX_USERINFO_ADD_PDEFEND,// 1096;
-	ExUserinfoAddMdefend,//S_EX_USERINFO_ADD_MDEFEND,// 1097;
-	
-	ExVipAttendanceList,//S_EX_VIP_ATTENDANCE_LIST,// 1098;
-	ExVipAttendanceCheck,//S_EX_VIP_ATTENDANCE_CHECK,// 1099;
-	ExVipAttendanceReward,//S_EX_VIP_ATTENDANCE_REWARD,// 1100;
-	ExVipAttendanceNotify,//S_EX_VIP_ATTENDANCE_NOTIFY,// 1101;
-	
-	ExMagiclampInfo,//S_EX_MAGICLAMP_INFO,// 1102;
-	ExMagiclampResult,//S_EX_MAGICLAMP_RESULT,// 1103;
-	ExNewHennaPotenEnchantReset,//S_EX_NEW_HENNA_POTEN_ENCHANT_RESET,// 1104;
-	S_EX_INZONE_RANKING_MY_INFO,// 1105;
-	S_EX_INZONE_RANKING_LIST,// 1106;
-	S_EX_TIME_RESTRICT_FIELD_HOST_USER_LEAVE_BY_NPC,// 1107;
-	S_EX_TIME_RESTRICT_FIELD_HOST_USER_ENTER_BY_NPC,// 1108;
-	S_EX_PREPARE_LOGIN,// 1110;
+	ExUserinfoAddPdefend, //S_EX_USERINFO_ADD_PDEFEND,// 1096;
+	ExUserinfoAddMdefend, //S_EX_USERINFO_ADD_MDEFEND,// 1097;
+
+	ExVipAttendanceList, //S_EX_VIP_ATTENDANCE_LIST,// 1098;
+	ExVipAttendanceCheck, //S_EX_VIP_ATTENDANCE_CHECK,// 1099;
+	ExVipAttendanceReward, //S_EX_VIP_ATTENDANCE_REWARD,// 1100;
+	ExVipAttendanceNotify, //S_EX_VIP_ATTENDANCE_NOTIFY,// 1101;
+
+	ExMagiclampInfo, //S_EX_MAGICLAMP_INFO,// 1102;
+	ExMagiclampResult, //S_EX_MAGICLAMP_RESULT,// 1103;
+	ExNewHennaPotenEnchantReset, //S_EX_NEW_HENNA_POTEN_ENCHANT_RESET,// 1104;
+	S_EX_INZONE_RANKING_MY_INFO, // 1105;
+	S_EX_INZONE_RANKING_LIST, // 1106;
+	S_EX_TIME_RESTRICT_FIELD_HOST_USER_LEAVE_BY_NPC, // 1107;
+	S_EX_TIME_RESTRICT_FIELD_HOST_USER_ENTER_BY_NPC, // 1108;
+	S_EX_PREPARE_LOGIN, // 1110;
 	ExRelicsActiveInfo, //S_EX_RELICS_ACTIVE_INFO, //1110
 	ExRelicsAnnounce, //S_EX_RELICS_ANNOUNCE, //1111
 	ExRelicsList, //S_EX_RELICS_LIST, //1112
@@ -1146,54 +1146,54 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	S_EX_SERVERWAR_REWARD_INFO, //1130
 	S_EX_SERVERWAR_GET_REWARD, //1131
 	S_EX_SERVERWAR_FIELD_ENTER_HUD_INFO, //1132
-	ExRelicsUpdateList,//S_EX_RELICS_UPDATE_LIST, //1133
-	ExEnemyKillLog,//S_EX_ENEMY_KILL_LOG, //1134
-	ExAllResetRelics,//S_EX_ALL_RESET_RELICS, //1135
-	ExRelicsCollectionCompleteAnnounce,//S_EX_RELICS_COLLECTION_COMPLETE_ANNOUNCE, //1136
+	ExRelicsUpdateList, //S_EX_RELICS_UPDATE_LIST, //1133
+	ExEnemyKillLog, //S_EX_ENEMY_KILL_LOG, //1134
+	ExAllResetRelics, //S_EX_ALL_RESET_RELICS, //1135
+	ExRelicsCollectionCompleteAnnounce, //S_EX_RELICS_COLLECTION_COMPLETE_ANNOUNCE, //1136
 	S_EX_VIRTUALITEM_SYSTEM_BASE_INFO, //1137
 	S_EX_VIRTUALITEM_SYSTEM, //1138
-	S_EX_VIRTUALITEM_SYSTEM_POINT_INFO,// 1139
+	S_EX_VIRTUALITEM_SYSTEM_POINT_INFO, // 1139
 	S_EX_CROSS_EVENT_DATA, //1140
 	S_EX_CROSS_EVENT_INFO, //1141
 	S_EX_CROSS_EVENT_NORMAL_REWARD, //1142
 	S_EX_CROSS_EVENT_RARE_REWARD, //1143
 	S_EX_CROSS_EVENT_RESET, //1144
 	S_EX_CROSS_EVENT_NOTI, //1145
-	ExChatBackgroundSettingNoti,//S_EX_CHAT_BACKGROUND_SETTING_NOTI, //1146
-	ExChatBackgroundList,//S_EX_CHAT_BACKGROUND_LIST, //1147
-	
-	ExAdenlabBossList,//S_EX_ADENLAB_BOSS_LIST
-	ExAdenlabUnlockBoss,//S_EX_ADENLAB_UNLOCK_BOSS
-	ExAdenlabBossInfo,//S_EX_ADENLAB_BOSS_INFO
-	ExAdenlabNormalSlot,//S_EX_ADENLAB_NORMAL_SLOT
-	ExAdenlabNormalPlay,//S_EX_ADENLAB_NORMAL_PLAY
-	ExAdenlabSpecialSlot,//S_EX_ADENLAB_SPECIAL_SLOT
-	ExAdenlabSpecialProb,//S_EX_ADENLAB_SPECIAL_PROB
-	ExAdenlabSpecialPlay,//S_EX_ADENLAB_SPECIAL_PLAY
-	ExAdenlabSpecialFix,//S_EX_ADENLAB_SPECIAL_FIX
-	ExAdenlabTranscendEnchant,//S_EX_ADENLAB_TRANSCEND_ENCHANT
-	ExAdenlabTranscendAnnounce,//S_EX_ADENLAB_TRANSCEND_ANNOUNCE
-	ExAdenlabTooltipInfo,//S_EX_ADENLAB_TOOLTIP_INFO
-	ExAdenlabTranscendProb,//S_EX_ADENLAB_TRANSCEND_PROB
-	
+	ExChatBackgroundSettingNoti, //S_EX_CHAT_BACKGROUND_SETTING_NOTI, //1146
+	ExChatBackgroundList, //S_EX_CHAT_BACKGROUND_LIST, //1147
+
+	ExAdenlabBossList, //S_EX_ADENLAB_BOSS_LIST
+	ExAdenlabUnlockBoss, //S_EX_ADENLAB_UNLOCK_BOSS
+	ExAdenlabBossInfo, //S_EX_ADENLAB_BOSS_INFO
+	ExAdenlabNormalSlot, //S_EX_ADENLAB_NORMAL_SLOT
+	ExAdenlabNormalPlay, //S_EX_ADENLAB_NORMAL_PLAY
+	ExAdenlabSpecialSlot, //S_EX_ADENLAB_SPECIAL_SLOT
+	ExAdenlabSpecialProb, //S_EX_ADENLAB_SPECIAL_PROB
+	ExAdenlabSpecialPlay, //S_EX_ADENLAB_SPECIAL_PLAY
+	ExAdenlabSpecialFix, //S_EX_ADENLAB_SPECIAL_FIX
+	ExAdenlabTranscendEnchant, //S_EX_ADENLAB_TRANSCEND_ENCHANT
+	ExAdenlabTranscendAnnounce, //S_EX_ADENLAB_TRANSCEND_ANNOUNCE
+	ExAdenlabTooltipInfo, //S_EX_ADENLAB_TOOLTIP_INFO
+	ExAdenlabTranscendProb, //S_EX_ADENLAB_TRANSCEND_PROB
+
 	S_EX_HOMUNCULUS_EVOLVE, //1158
 	S_EX_HOMUNCULUS_SIDEBAR, //1159
-	ExExtractSkillEnchant,//S_EX_EXTRACT_SKILL_ENCHANT, //1160
-	ExRequestSkillEnchantConfirm,//S_EX_REQUEST_SKILL_ENCHANT_CONFIRM, //1161
-	ExItemScore,//S_EX_ITEM_SCORE, //1162
+	ExExtractSkillEnchant, //S_EX_EXTRACT_SKILL_ENCHANT, //1160
+	ExRequestSkillEnchantConfirm, //S_EX_REQUEST_SKILL_ENCHANT_CONFIRM, //1161
+	ExItemScore, //S_EX_ITEM_SCORE, //1162
 	S_EX_VITALITY_KEEP_VITALPOINT_INFO, //1163
-	ExPopupEventHud,// S_EX_POPUP_EVENT_HUD 1164
+	ExPopupEventHud, // S_EX_POPUP_EVENT_HUD 1164
 	ExWorldExchangeInfo, //1165
-	ExDamagePopup,//S_EX_DAMAGE_POPUP 1166
+	ExDamagePopup, //S_EX_DAMAGE_POPUP 1166
 	S_EX_LEVELAMBIENCE_CHANGEDINFO, //1167
-	ExCreateItemProbList,//S_EX_CREATE_ITEM_PROB_LIST, //1171;
-	ExCraftSlotProbList,//S_EX_CRAFT_SLOT_PROB_LIST, //1172;
-	ExNewHennaComposeProbList,//S_EX_NEW_HENNA_COMPOSE_PROB_LIST, //1173;
-	ExVariationProbList,//S_EX_VARIATION_PROB_LIST, //1174;
-	ExRelicsProbList,//S_EX_RELICS_PROB_LIST, //1175;
-	ExUpgradeSystemProbList,//S_EX_UPGRADE_SYSTEM_PROB_LIST, //1176;
-	ExCombinationProbList,//S_EX_COMBINATION_PROB_LIST, //1177;
-	
+	ExCreateItemProbList, //S_EX_CREATE_ITEM_PROB_LIST, //1171;
+	ExCraftSlotProbList, //S_EX_CRAFT_SLOT_PROB_LIST, //1172;
+	ExNewHennaComposeProbList, //S_EX_NEW_HENNA_COMPOSE_PROB_LIST, //1173;
+	ExVariationProbList, //S_EX_VARIATION_PROB_LIST, //1174;
+	ExRelicsProbList, //S_EX_RELICS_PROB_LIST, //1175;
+	ExUpgradeSystemProbList, //S_EX_UPGRADE_SYSTEM_PROB_LIST, //1176;
+	ExCombinationProbList, //S_EX_COMBINATION_PROB_LIST, //1177;
+
 	ExNewHennaPotenOpenslotProbInfo, //1179;
 	ExNewHennaPotenOpenslot, //1180;
 	ExAcquirePetSkillResult, //1181;
@@ -1206,7 +1206,7 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	ExDyeeffectAcquireHiddenskill, //1188;
 	ExDyeeffectEnchantReset, //1189;
 	ExLoadPetPreview, //1190;
-	
+
 	ExMatchinginzoneNotifyHudInfo,
 	ExMatchinginzoneFieldEnterUserInfo,
 	ExRaidAuctionDropEffect,
@@ -1221,9 +1221,9 @@ public enum ServerPacketOpcodes507 implements ServerPacketOpcodes
 	ExClassChangeFail,
 	ExBlessOptionProbList,
 	ExCompress,
-	
+
 	ExMax, //1191;
-	; 
+	;
 
 	public static final ServerPacketOpcodes507[] VALUES = values();
 

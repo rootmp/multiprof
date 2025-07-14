@@ -21,10 +21,8 @@ public class ConditionLogicAnd extends Condition
 
 	public void add(Condition condition)
 	{
-		if (condition == null)
-		{
-			return;
-		}
+		if(condition == null)
+		{ return; }
 
 		final int len = _conditions.length;
 		final Condition[] tmp = new Condition[len + 1];
@@ -36,12 +34,10 @@ public class ConditionLogicAnd extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		for (Condition c : _conditions)
+		for(Condition c : _conditions)
 		{
-			if (!c.test(env))
-			{
-				return false;
-			}
+			if(!c.test(env))
+			{ return false; }
 		}
 		return true;
 	}
@@ -61,29 +57,27 @@ public class ConditionLogicAnd extends Condition
 	 */
 	public final boolean checkCondition(Creature character, Creature aimingTarget, Creature condTarget, Object owner, double value, boolean forceUse, boolean sendMsg, boolean autoUse)
 	{
-		if (character != null)
+		if(character != null)
 		{
-			for (Event event : character.getEvents())
+			for(Event event : character.getEvents())
 			{
-				if (!event.checkCondition(character, getClass()))
-				{
-					return false;
-				}
+				if(!event.checkCondition(character, getClass()))
+				{ return false; }
 			}
-			if (!testImpl(new Env(character, aimingTarget, null)))
+			if(!testImpl(new Env(character, aimingTarget, null)))
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					SystemMsg msg = _message;
-					if (msg != null)
+					if(msg != null)
 					{
-						if (msg.size() > 0)
+						if(msg.size() > 0)
 						{
-							if (owner instanceof SkillInfo)
+							if(owner instanceof SkillInfo)
 							{
 								character.sendPacket((new SystemMessagePacket(msg)).addSkillName((SkillInfo) owner));
 							}
-							if (owner instanceof ItemInstance)
+							if(owner instanceof ItemInstance)
 							{
 								character.sendPacket((new SystemMessagePacket(msg)).addItemName(((ItemInstance) owner).getItemId()));
 							}

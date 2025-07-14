@@ -26,20 +26,20 @@ public class AdminClanHall implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditNPC)
+		if(!activeChar.getPlayerAccess().CanEditNPC)
 			return false;
 
 		ClanHall clanhall = null;
-		if (wordList.length > 1)
+		if(wordList.length > 1)
 			clanhall = ResidenceHolder.getInstance().getResidence(ClanHall.class, Integer.parseInt(wordList[1]));
 
-		if (clanhall == null)
+		if(clanhall == null)
 		{
 			showClanHallSelectPage(activeChar);
 			return true;
 		}
 
-		switch (command)
+		switch(command)
 		{
 			case admin_clanhall:
 				showClanHallSelectPage(activeChar);
@@ -47,9 +47,9 @@ public class AdminClanHall implements IAdminCommandHandler
 			case admin_clanhallset:
 				GameObject target = activeChar.getTarget();
 				Player player = activeChar;
-				if (target != null && target.isPlayer())
+				if(target != null && target.isPlayer())
 					player = (Player) target;
-				if (player.getClan() == null)
+				if(player.getClan() == null)
 					activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 				else
 				{
@@ -61,7 +61,7 @@ public class AdminClanHall implements IAdminCommandHandler
 				break;
 			case admin_clanhallteleportself:
 				Zone zone = clanhall.getZone();
-				if (zone != null)
+				if(zone != null)
 					activeChar.teleToLocation(zone.getSpawn());
 				break;
 		}
@@ -117,24 +117,29 @@ public class AdminClanHall implements IAdminCommandHandler
 		replyMSG.append("Location: &^" + clanhall.getId() + ";<br>");
 		replyMSG.append("ClanHall Owner: ");
 		Clan owner = clanhall.getOwnerId() == 0 ? null : ClanTable.getInstance().getClan(clanhall.getOwnerId());
-		if (owner == null)
+		if(owner == null)
 			replyMSG.append("none");
 		else
 			replyMSG.append(owner.getName());
 
 		replyMSG.append("<br><br><br>");
 		replyMSG.append("<table>");
-		replyMSG.append("<tr><td><button value=\"Open Doors\" action=\"bypass -h admin_clanhallopendoors " + clanhall.getId() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
-		replyMSG.append("<td><button value=\"Close Doors\" action=\"bypass -h admin_clanhallclosedoors " + clanhall.getId() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
+		replyMSG.append("<tr><td><button value=\"Open Doors\" action=\"bypass -h admin_clanhallopendoors " + clanhall.getId()
+				+ "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
+		replyMSG.append("<td><button value=\"Close Doors\" action=\"bypass -h admin_clanhallclosedoors " + clanhall.getId()
+				+ "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
 		replyMSG.append("</table>");
 		replyMSG.append("<br>");
 		replyMSG.append("<table>");
-		replyMSG.append("<tr><td><button value=\"Give ClanHall\" action=\"bypass -h admin_clanhallset " + clanhall.getId() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
-		replyMSG.append("<td><button value=\"Take ClanHall\" action=\"bypass -h admin_clanhalldel " + clanhall.getId() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
+		replyMSG.append("<tr><td><button value=\"Give ClanHall\" action=\"bypass -h admin_clanhallset " + clanhall.getId()
+				+ "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
+		replyMSG.append("<td><button value=\"Take ClanHall\" action=\"bypass -h admin_clanhalldel " + clanhall.getId()
+				+ "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
 		replyMSG.append("</table>");
 		replyMSG.append("<br>");
 		replyMSG.append("<table><tr>");
-		replyMSG.append("<td><button value=\"Teleport self\" action=\"bypass -h admin_clanhallteleportself " + clanhall.getId() + " \" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
+		replyMSG.append("<td><button value=\"Teleport self\" action=\"bypass -h admin_clanhallteleportself " + clanhall.getId()
+				+ " \" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
 		replyMSG.append("</table>");
 		replyMSG.append("</center>");
 		replyMSG.append("</body></html>");

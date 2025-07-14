@@ -81,7 +81,7 @@ public final class L2LoginClient extends MMOClient<MMOConnection<L2LoginClient>>
 		{
 			ret = _loginCrypt.decrypt(buf.array(), buf.position(), size);
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			return false;
 		}
@@ -96,7 +96,7 @@ public final class L2LoginClient extends MMOClient<MMOConnection<L2LoginClient>>
 		{
 			size = _loginCrypt.encrypt(buf.array(), offset, size);
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 			return false;
@@ -183,25 +183,25 @@ public final class L2LoginClient extends MMOClient<MMOConnection<L2LoginClient>>
 
 	public void sendPacket(L2LoginServerPacket lsp)
 	{
-		if (isConnected())
+		if(isConnected())
 			getConnection().sendPacket(lsp);
 	}
 
 	public void close(LoginFailReason reason)
 	{
-		if (isConnected())
+		if(isConnected())
 			getConnection().close(new LoginFail(reason));
 	}
 
 	public void close(AccountKickedReason reason)
 	{
-		if (isConnected())
+		if(isConnected())
 			getConnection().close(new AccountKicked(reason));
 	}
 
 	public void close(L2LoginServerPacket lsp)
 	{
-		if (isConnected())
+		if(isConnected())
 			getConnection().close(lsp);
 	}
 
@@ -218,7 +218,7 @@ public final class L2LoginClient extends MMOClient<MMOConnection<L2LoginClient>>
 	@Override
 	public String toString()
 	{
-		switch (_state)
+		switch(_state)
 		{
 			case AUTHED:
 				return "[ Account : " + getLogin() + " IP: " + getIpAddress() + "]";

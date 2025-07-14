@@ -21,13 +21,13 @@ public class CheckBans extends ReceivablePacket
 		{
 			bindType = BanBindType.VALUES[readC()];
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			return false;
 		}
 		int size = readH();
 		bans = new HashMap<>(size);
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			String bindValue = readS();
 			int endTime = readD();
@@ -40,12 +40,12 @@ public class CheckBans extends ReceivablePacket
 	@Override
 	protected void runImpl()
 	{
-		if (!bindType.isAuth())
+		if(!bindType.isAuth())
 			return;
 
 		AuthBanManager.getInstance().getCachedBans().put(bindType, bans);
 
-		for (Map.Entry<String, BanInfo> entry : bans.entrySet())
+		for(Map.Entry<String, BanInfo> entry : bans.entrySet())
 		{
 			GameBanManager.onBan(bindType, entry.getKey(), entry.getValue(), true);
 		}

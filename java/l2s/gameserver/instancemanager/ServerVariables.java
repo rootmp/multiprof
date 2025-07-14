@@ -19,7 +19,7 @@ public class ServerVariables
 
 	private static StatsSet getVars()
 	{
-		if (server_vars == null)
+		if(server_vars == null)
 		{
 			server_vars = new StatsSet();
 			LoadFromDB();
@@ -37,10 +37,10 @@ public class ServerVariables
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM server_variables");
 			rs = statement.executeQuery();
-			while (rs.next())
+			while(rs.next())
 				server_vars.set(rs.getString("name"), rs.getString("value"));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -58,7 +58,7 @@ public class ServerVariables
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			String value = getVars().getString(name, "");
-			if (value.isEmpty())
+			if(value.isEmpty())
 			{
 				statement = con.prepareStatement("DELETE FROM server_variables WHERE name = ?");
 				statement.setString(1, name);
@@ -72,7 +72,7 @@ public class ServerVariables
 				statement.execute();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

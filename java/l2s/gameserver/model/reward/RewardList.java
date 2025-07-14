@@ -41,7 +41,7 @@ public class RewardList extends ArrayList<RewardGroup>
 	public List<RewardItem> roll(Player player, double penaltyMod, NpcInstance npc)
 	{
 		List<RewardItem> temp = new ArrayList<RewardItem>();
-		for (RewardGroup g : this)
+		for(RewardGroup g : this)
 			temp.addAll(g.roll(_type, player, penaltyMod, npc));
 		return temp;
 	}
@@ -61,43 +61,44 @@ public class RewardList extends ArrayList<RewardGroup>
 		boolean autoLoot = element.attributeValue("auto_loot") != null && Boolean.parseBoolean(element.attributeValue("auto_loot"));
 		RewardList list = new RewardList(type, autoLoot);
 
-		for (Iterator<Element> nextIterator = element.elementIterator(); nextIterator.hasNext();)
+		for(Iterator<Element> nextIterator = element.elementIterator(); nextIterator.hasNext();)
 		{
 			final Element nextElement = nextIterator.next();
 			final String nextName = nextElement.getName();
 			boolean notGroupType = type == RewardType.SWEEP || type == RewardType.NOT_RATED_NOT_GROUPED;
-			if (nextName.equalsIgnoreCase("group"))
+			if(nextName.equalsIgnoreCase("group"))
 			{
-				double enterChance = nextElement.attributeValue("chance") == null ? RewardList.MAX_CHANCE : Double.parseDouble(nextElement.attributeValue("chance")) * 10000;
+				double enterChance = nextElement.attributeValue("chance")
+						== null ? RewardList.MAX_CHANCE : Double.parseDouble(nextElement.attributeValue("chance")) * 10000;
 				String time = nextElement.attributeValue("time");
 
 				RewardGroup group = notGroupType ? null : new RewardGroup(enterChance, time);
-				for (Iterator<Element> rewardIterator = nextElement.elementIterator(); rewardIterator.hasNext();)
+				for(Iterator<Element> rewardIterator = nextElement.elementIterator(); rewardIterator.hasNext();)
 				{
 					Element rewardElement = rewardIterator.next();
 					RewardData data = RewardData.parseReward(rewardElement);
-					if (Config.DISABLE_DROP_EXCEPT_ITEM_IDS.isEmpty() || Config.DISABLE_DROP_EXCEPT_ITEM_IDS.contains(data.getItemId()))
+					if(Config.DISABLE_DROP_EXCEPT_ITEM_IDS.isEmpty() || Config.DISABLE_DROP_EXCEPT_ITEM_IDS.contains(data.getItemId()))
 					{
-						if (notGroupType)
+						if(notGroupType)
 							logger.warn("Can't load rewardlist from group: " + debugString + "; type: " + type);
 						else
 							group.addData(data);
 					}
 				}
 
-				if (group != null && !group.getItems().isEmpty())
+				if(group != null && !group.getItems().isEmpty())
 					list.add(group);
 			}
-			else if (nextName.equalsIgnoreCase("reward"))
+			else if(nextName.equalsIgnoreCase("reward"))
 			{
-				if (!notGroupType)
+				if(!notGroupType)
 				{
 					logger.warn("Reward can't be without group(and not grouped): " + debugString + "; type: " + type);
 					continue;
 				}
 
 				RewardData data = RewardData.parseReward(nextElement);
-				if (Config.DISABLE_DROP_EXCEPT_ITEM_IDS.isEmpty() || Config.DISABLE_DROP_EXCEPT_ITEM_IDS.contains(data.getItemId()))
+				if(Config.DISABLE_DROP_EXCEPT_ITEM_IDS.isEmpty() || Config.DISABLE_DROP_EXCEPT_ITEM_IDS.contains(data.getItemId()))
 				{
 					RewardGroup g = new RewardGroup(RewardList.MAX_CHANCE, null);
 					g.addData(data);

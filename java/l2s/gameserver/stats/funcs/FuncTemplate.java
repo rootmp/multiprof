@@ -38,16 +38,15 @@ public final class FuncTemplate
 		try
 		{
 			_func = Class.forName("l2s.gameserver.stats.funcs.Func" + params.getString("function"));
-			_constructor = _func.getConstructor(new Class<?>[]
-			{
-				Stats.class, // stats to update
-				Integer.TYPE, // order of execution
-				Object.class, // owner
-				Double.TYPE, // value for function
-				StatsSet.class // params
+			_constructor = _func.getConstructor(new Class<?>[] {
+					Stats.class, // stats to update
+					Integer.TYPE, // order of execution
+					Object.class, // owner
+					Double.TYPE, // value for function
+					StatsSet.class // params
 			});
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -58,21 +57,21 @@ public final class FuncTemplate
 		try
 		{
 			Func f = (Func) _constructor.newInstance(_stat, _order, owner, _value, _params);
-			if (_applyCond != null)
+			if(_applyCond != null)
 				f.setCondition(_applyCond);
 			return f;
 		}
-		catch (IllegalAccessException e)
+		catch(IllegalAccessException e)
 		{
 			_log.error("", e);
 			return null;
 		}
-		catch (InstantiationException e)
+		catch(InstantiationException e)
 		{
 			_log.error("", e);
 			return null;
 		}
-		catch (InvocationTargetException e)
+		catch(InvocationTargetException e)
 		{
 			_log.error("", e);
 			return null;

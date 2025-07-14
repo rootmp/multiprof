@@ -57,10 +57,10 @@ public class SkillPchLinker
 				if(matcher.find())
 				{
 					String link = "@" + matcher.group(1);
-					final int[] array = new int [2];
+					final int[] array = new int[2];
 					//TODO на след версиях
-					final int skill_id =  (int) (Long.parseLong(matcher.group(2)) /65536/65536);
-					final int skill_level =(int) (Long.parseLong(matcher.group(2)) - 65536*65536 * skill_id);
+					final int skill_id = (int) (Long.parseLong(matcher.group(2)) / 65536 / 65536);
+					final int skill_level = (int) (Long.parseLong(matcher.group(2)) - 65536 * 65536 * skill_id);
 					//final int skill_id =  (int) (Long.parseLong(matcher.group(2)) /65536);
 					//final int skill_level =(int) (Long.parseLong(matcher.group(2)) - 65536 * skill_id);
 					array[0] = skill_id;

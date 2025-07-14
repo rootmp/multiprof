@@ -50,7 +50,7 @@ public class PrivateStoreHistoryDAO
 			statement.setInt(++i, (int) TimeUnit.MILLISECONDS.toSeconds(minTime));
 			statement.setInt(++i, (int) TimeUnit.MILLISECONDS.toSeconds(maxTime));
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				PrivateStoreHistoryItem historyItem = new PrivateStoreHistoryItem(rset.getInt("item_id"), rset.getInt("store_type"), rset.getInt("time"));
 				historyItem.setCount(rset.getLong("count"));
@@ -59,7 +59,7 @@ public class PrivateStoreHistoryDAO
 				list.add(historyItem);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("PrivateStoreHistoryDAO.restore(long,long,List): " + e, e);
 			return false;
@@ -88,7 +88,7 @@ public class PrivateStoreHistoryDAO
 			statement.setLong(++i, historyItem.getPrice());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("PrivateStoreHistoryDAO.insert(PrivateStoreHistoryItem): " + e, e);
 			return false;
@@ -112,7 +112,7 @@ public class PrivateStoreHistoryDAO
 			statement.setInt(++i, (int) TimeUnit.MILLISECONDS.toSeconds(time));
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			LOGGER.error("PrivateStoreHistoryDAO:deleteExpired(long)", e);
 		}

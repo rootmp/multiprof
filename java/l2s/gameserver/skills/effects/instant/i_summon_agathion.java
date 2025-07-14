@@ -32,17 +32,18 @@ public class i_summon_agathion extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
-		if (_template == null)
+		if(_template == null)
 		{
-			_log.warn(getClass().getSimpleName() + ": Cannot find agathion template for skill: ID[" + getSkill().getId() + "], LEVEL[" + getSkill().getLevel() + "]!");
+			_log.warn(getClass().getSimpleName() + ": Cannot find agathion template for skill: ID[" + getSkill().getId() + "], LEVEL["
+					+ getSkill().getLevel() + "]!");
 			return false;
 		}
 
 		Player player = effected.getPlayer();
-		if (player.getAgathion() != null)
+		if(player.getAgathion() != null)
 		{
 			player.sendPacket(SystemMsg.AN_AGATHION_HAS_ALREADY_BEEN_SUMMONED);
 			return false;
@@ -54,7 +55,7 @@ public class i_summon_agathion extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effected.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Agathion agathion = new Agathion(player, _template, getSkill());

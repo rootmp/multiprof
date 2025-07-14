@@ -12,7 +12,7 @@ public class PlayerUtils
 	public static void updateAttackableFlags(Player player)
 	{
 		player.broadcastRelation();
-		for (Servitor servitor : player.getServitors())
+		for(Servitor servitor : player.getServitors())
 			servitor.broadcastCharInfo();
 	}
 }

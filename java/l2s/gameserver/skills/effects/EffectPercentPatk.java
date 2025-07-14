@@ -15,7 +15,7 @@ public class EffectPercentPatk extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead() || effected.isRaid())
+		if(effected.isDead() || effected.isRaid())
 			return false;
 		return true;
 	}
@@ -23,7 +23,7 @@ public class EffectPercentPatk extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return;
 
 		double damage = (effector.getPAtk(effector) / 100 * getValue());

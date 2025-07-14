@@ -28,12 +28,12 @@ public class AdminShutdown implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanRestart)
+		if(!activeChar.getPlayerAccess().CanRestart)
 			return false;
 
 		try
 		{
-			switch (command)
+			switch(command)
 			{
 				case admin_server_shutdown:
 					Shutdown.getInstance().schedule(NumberUtils.toInt(wordList[1], -1), Shutdown.SHUTDOWN);
@@ -46,7 +46,7 @@ public class AdminShutdown implements IAdminCommandHandler
 					break;
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			sendHtmlForm(activeChar);
 		}
@@ -88,27 +88,27 @@ public class AdminShutdown implements IAdminCommandHandler
 		replyMSG.append("<tr><td width=100>Server Rates:</td><td width=200></td></tr>");
 
 		replyMSG.append("<tr><td width=100>&nbsp;&nbsp;&nbsp;XP:</td><td width=200>x" + Config.RATE_XP_BY_LVL[1]);
-		if (Config.RATE_XP_BY_LVL[1] != Config.RATE_XP_BY_LVL[Config.ALT_MAX_LEVEL])
+		if(Config.RATE_XP_BY_LVL[1] != Config.RATE_XP_BY_LVL[Config.ALT_MAX_LEVEL])
 			replyMSG.append(" - " + Config.RATE_XP_BY_LVL[Config.ALT_MAX_LEVEL]);
 		replyMSG.append("</td></tr>");
 
 		replyMSG.append("<tr><td width=100>&nbsp;&nbsp;&nbsp;SP:</td><td width=200>x" + Config.RATE_SP_BY_LVL[1]);
-		if (Config.RATE_SP_BY_LVL[1] != Config.RATE_SP_BY_LVL[Config.ALT_MAX_LEVEL])
+		if(Config.RATE_SP_BY_LVL[1] != Config.RATE_SP_BY_LVL[Config.ALT_MAX_LEVEL])
 			replyMSG.append(" - " + Config.RATE_SP_BY_LVL[Config.ALT_MAX_LEVEL]);
 		replyMSG.append("</td></tr>");
 
 		replyMSG.append("<tr><td width=100>&nbsp;&nbsp;&nbsp;Adena:</td><td width=200>x" + Config.RATE_DROP_ADENA_BY_LVL[1]);
-		if (Config.RATE_DROP_ADENA_BY_LVL[1] != Config.RATE_DROP_ADENA_BY_LVL[Config.ALT_MAX_LEVEL])
+		if(Config.RATE_DROP_ADENA_BY_LVL[1] != Config.RATE_DROP_ADENA_BY_LVL[Config.ALT_MAX_LEVEL])
 			replyMSG.append(" - " + Config.RATE_DROP_ADENA_BY_LVL[Config.ALT_MAX_LEVEL]);
 		replyMSG.append("</td></tr>");
 
 		replyMSG.append("<tr><td width=100>&nbsp;&nbsp;&nbsp;Drop:</td><td width=200>x" + Config.RATE_DROP_ITEMS_BY_LVL[1]);
-		if (Config.RATE_DROP_ITEMS_BY_LVL[1] != Config.RATE_DROP_ITEMS_BY_LVL[Config.ALT_MAX_LEVEL])
+		if(Config.RATE_DROP_ITEMS_BY_LVL[1] != Config.RATE_DROP_ITEMS_BY_LVL[Config.ALT_MAX_LEVEL])
 			replyMSG.append(" - " + Config.RATE_DROP_ITEMS_BY_LVL[Config.ALT_MAX_LEVEL]);
 		replyMSG.append("</td></tr>");
 
 		replyMSG.append("<tr><td width=100>&nbsp;&nbsp;&nbsp;Spoil:</td><td width=200>x" + Config.RATE_DROP_SPOIL_BY_LVL[1]);
-		if (Config.RATE_DROP_SPOIL_BY_LVL[1] != Config.RATE_DROP_SPOIL_BY_LVL[Config.ALT_MAX_LEVEL])
+		if(Config.RATE_DROP_SPOIL_BY_LVL[1] != Config.RATE_DROP_SPOIL_BY_LVL[Config.ALT_MAX_LEVEL])
 			replyMSG.append(" - " + Config.RATE_DROP_SPOIL_BY_LVL[Config.ALT_MAX_LEVEL]);
 		replyMSG.append("</td></tr>");
 

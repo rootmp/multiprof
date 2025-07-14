@@ -107,10 +107,10 @@ public class ItemHandler extends AbstractHolder
 
 	public IItemHandler getItemHandler(String handler)
 	{
-		if (handler.contains("ItemHandler"))
+		if(handler.contains("ItemHandler"))
 			handler = handler.replace("ItemHandler", "");
 
-		if (_handlers.isEmpty() || !_handlers.containsKey(handler))
+		if(_handlers.isEmpty() || !_handlers.containsKey(handler))
 		{
 			_log.warn("ItemHandler: Cannot find handler [" + handler + "]!");
 			return DEFAULT_HANDLER;

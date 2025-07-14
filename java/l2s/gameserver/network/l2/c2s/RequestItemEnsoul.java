@@ -88,7 +88,8 @@ public class RequestItemEnsoul implements IClientIncomingPacket
 			}
 
 			boolean success = false;
-			loop: for(EnsoulInfo info : _ensoulsInfo)
+			loop:
+			for(EnsoulInfo info : _ensoulsInfo)
 			{
 				EnsoulFee ensoulFee = EnsoulHolder.getInstance().getEnsoulFee(targetItem.getBodyPart(), info.ensoulId);
 

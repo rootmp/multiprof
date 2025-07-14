@@ -80,6 +80,5 @@ public class PlayerAccess
 	public boolean CanUseMovingObservationPoint = false;
 
 	public PlayerAccess()
-	{
-	}
+	{}
 }

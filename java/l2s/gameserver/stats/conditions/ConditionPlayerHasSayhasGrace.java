@@ -17,7 +17,7 @@ public class ConditionPlayerHasSayhasGrace extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return !_value;
 
 		return (env.character.getPlayer().getSayhasGrace() > 0) == _value;

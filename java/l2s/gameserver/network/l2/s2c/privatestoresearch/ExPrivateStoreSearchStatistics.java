@@ -3,10 +3,10 @@ package l2s.gameserver.network.l2.s2c.privatestoresearch;
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.PrivateStoreHistoryManager;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 {
@@ -23,14 +23,14 @@ public class ExPrivateStoreSearchStatistics implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(mostItems.size());
-		for (PrivateStoreHistoryItem item : mostItems)
+		for(PrivateStoreHistoryItem item : mostItems)
 		{
 			packetWriter.writeD(item.getTradesCount());
 			writeItemInfo(packetWriter, item, true, 4);
 			packetWriter.writeD(item.getObjectId());
 		}
 		packetWriter.writeD(highestItems.size());
-		for (PrivateStoreHistoryItem item : highestItems)
+		for(PrivateStoreHistoryItem item : highestItems)
 		{
 			packetWriter.writeQ(item.getPrice());
 			writeItemInfo(packetWriter, item, true, 4);

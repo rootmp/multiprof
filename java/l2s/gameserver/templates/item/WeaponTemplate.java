@@ -1,14 +1,13 @@
 package l2s.gameserver.templates.item;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.gameserver.handler.items.IItemHandler;
 import l2s.gameserver.handler.items.ItemHandler;
 import l2s.gameserver.skills.enums.SkillTrait;
 import l2s.gameserver.stats.Stats;
 import l2s.gameserver.stats.funcs.FuncTemplate;
 import l2s.gameserver.templates.StatsSet;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 public final class WeaponTemplate extends ItemTemplate
 {
@@ -41,8 +40,8 @@ public final class WeaponTemplate extends ItemTemplate
 		DUAL("Dual Sword", SkillTrait.DUAL),
 		DUALFIST("Dual Fist", SkillTrait.DUALFIST),
 		BIGSWORD("Big Sword", SkillTrait.SWORD), // Two
-													// Handed
-													// Swords
+		// Handed
+		// Swords
 		PET("Pet", SkillTrait.FIST),
 		ROD("Rod", SkillTrait.NONE),
 		BIGBLUNT("Big Blunt", SkillTrait.BLUNT),
@@ -104,21 +103,22 @@ public final class WeaponTemplate extends ItemTemplate
 		_kamaelConvert = set.getInteger("kamael_convert", 0);
 
 		_rndDam = set.getInteger("rnd_dam", 0);
-		_atkReuse = set.getInteger("reuse_delay", _type == WeaponType.BOW ? 1500 : (_type == WeaponType.CROSSBOW || _type == WeaponType.TWOHANDCROSSBOW) ? 820 : _type == WeaponType.FIREARMS ? 820 : 0);
+		_atkReuse = set.getInteger("reuse_delay", _type == WeaponType.BOW ? 1500 : (_type == WeaponType.CROSSBOW
+				|| _type == WeaponType.TWOHANDCROSSBOW) ? 820 : _type == WeaponType.FIREARMS ? 820 : 0);
 		_atkRange = set.getInteger("atk_range", getDefaultAttackRange((WeaponType) _type));
 
 		String[] damageRange = set.getString("damage_range", "").split(";"); // 0?;0?;fan sector;base attack angle
-		if (damageRange.length >= 4)
+		if(damageRange.length >= 4)
 		{
 			_attackRadius = Integer.parseInt(damageRange[2]);
 			_attackAngle = Integer.parseInt(damageRange[3]);
 		}
-		else if ((_type == WeaponType.BOW) || (_type == WeaponType.FIREARMS))
+		else if((_type == WeaponType.BOW) || (_type == WeaponType.FIREARMS))
 		{
 			_attackRadius = 10;
 			_attackAngle = 0;
 		}
-		else if (_type == WeaponType.POLE)
+		else if(_type == WeaponType.POLE)
 		{
 			_attackRadius = 66;
 			_attackAngle = 120;
@@ -133,27 +133,24 @@ public final class WeaponTemplate extends ItemTemplate
 
 		_isMagicWeapon = set.getBool("is_magic_weapon", false);
 
-		_reducedSoulshot = set.getIntegerArray("reduced_soulshot", new int[]
-		{
-			0,
-			_soulShotCount
+		_reducedSoulshot = set.getIntegerArray("reduced_soulshot", new int[] {
+				0,
+				_soulShotCount
 		});
-		_reducedSpiritshot = set.getIntegerArray("reduced_spiritshot", new int[]
-		{
-			0,
-			_spiritShotCount
+		_reducedSpiritshot = set.getIntegerArray("reduced_spiritshot", new int[] {
+				0,
+				_spiritShotCount
 		});
-		_reducedMPConsume = set.getIntegerArray("reduced_mp_consume", new int[]
-		{
-			0,
-			_mpConsume
+		_reducedMPConsume = set.getIntegerArray("reduced_mp_consume", new int[] {
+				0,
+				_mpConsume
 		});
 
 		int[] availableEnsouls = set.getIntegerArray("available_ensouls", new int[0]);
-		if (availableEnsouls.length > 0)
+		if(availableEnsouls.length > 0)
 			_availableEnsouls = new TIntHashSet(availableEnsouls);
 
-		if (_type == WeaponType.NONE)
+		if(_type == WeaponType.NONE)
 		{
 			_type1 = TYPE1_SHIELD_ARMOR;
 			_type2 = TYPE2_SHIELD_ARMOR;
@@ -164,45 +161,45 @@ public final class WeaponTemplate extends ItemTemplate
 			_type2 = TYPE2_WEAPON;
 		}
 
-		if (_type == WeaponType.SWORD && !_isMagicWeapon)
+		if(_type == WeaponType.SWORD && !_isMagicWeapon)
 			_exType = ExItemType.SWORD;
-		else if (_type == WeaponType.SWORD && _isMagicWeapon)
+		else if(_type == WeaponType.SWORD && _isMagicWeapon)
 			_exType = ExItemType.MAGIC_SWORD;
-		else if (_type == WeaponType.DAGGER)
+		else if(_type == WeaponType.DAGGER)
 			_exType = ExItemType.DAGGER;
-		else if (_type == WeaponType.RAPIER)
+		else if(_type == WeaponType.RAPIER)
 			_exType = ExItemType.RAPIER;
-		else if (_type == WeaponType.BIGSWORD)
+		else if(_type == WeaponType.BIGSWORD)
 			_exType = ExItemType.BIG_SWORD;
-		else if (_type == WeaponType.ANCIENTSWORD)
+		else if(_type == WeaponType.ANCIENTSWORD)
 			_exType = ExItemType.ANCIENT_SWORD;
-		else if (_type == WeaponType.DUAL)
+		else if(_type == WeaponType.DUAL)
 			_exType = ExItemType.DUAL_SWORD;
-		else if (_type == WeaponType.DUALDAGGER)
+		else if(_type == WeaponType.DUALDAGGER)
 			_exType = ExItemType.DUAL_DAGGER;
-		else if (_type == WeaponType.BLUNT && !_isMagicWeapon)
+		else if(_type == WeaponType.BLUNT && !_isMagicWeapon)
 			_exType = ExItemType.BLUNT_WEAPON;
-		else if (_type == WeaponType.BLUNT && _isMagicWeapon)
+		else if(_type == WeaponType.BLUNT && _isMagicWeapon)
 			_exType = ExItemType.MAGIC_BLUNT_WEAPON;
-		else if (_type == WeaponType.BIGBLUNT && !_isMagicWeapon)
+		else if(_type == WeaponType.BIGBLUNT && !_isMagicWeapon)
 			_exType = ExItemType.BIG_BLUNT_WEAPON;
-		else if (_type == WeaponType.BIGBLUNT && _isMagicWeapon)
+		else if(_type == WeaponType.BIGBLUNT && _isMagicWeapon)
 			_exType = ExItemType.BIG_MAGIC_BLUNT_WEAPON;
-		else if (_type == WeaponType.DUALBLUNT)
+		else if(_type == WeaponType.DUALBLUNT)
 			_exType = ExItemType.DUAL_BLUNT_WEAPON;
-		else if (_type == WeaponType.BOW)
+		else if(_type == WeaponType.BOW)
 			_exType = ExItemType.BOW;
-		else if (_type == WeaponType.CROSSBOW || _type == WeaponType.TWOHANDCROSSBOW)
+		else if(_type == WeaponType.CROSSBOW || _type == WeaponType.TWOHANDCROSSBOW)
 			_exType = ExItemType.CROSSBOW;
-		else if (_type == WeaponType.DUALFIST)
+		else if(_type == WeaponType.DUALFIST)
 			_exType = ExItemType.HAND_TO_HAND;
-		else if (_type == WeaponType.POLE)
+		else if(_type == WeaponType.POLE)
 			_exType = ExItemType.POLE;
-		else if (_type == WeaponType.FIREARMS)
+		else if(_type == WeaponType.FIREARMS)
 			_exType = ExItemType.FIREARMS;
-		else if (_type == WeaponType.ETC || _type == WeaponType.ROD)
+		else if(_type == WeaponType.ETC || _type == WeaponType.ROD)
 			_exType = ExItemType.OTHER_WEAPON;
-		else if (_bodyPart == ItemTemplate.SLOT_L_HAND && _type == WeaponType.NONE)
+		else if(_bodyPart == ItemTemplate.SLOT_L_HAND && _type == WeaponType.NONE)
 			_exType = ExItemType.SHIELD;
 	}
 
@@ -310,7 +307,7 @@ public final class WeaponTemplate extends ItemTemplate
 	 */
 	public static int getDefaultAttackRange(WeaponType type)
 	{
-		switch (type)
+		switch(type)
 		{
 			case BOW:
 				return 460;
@@ -329,7 +326,7 @@ public final class WeaponTemplate extends ItemTemplate
 	public void attachFunc(FuncTemplate f)
 	{
 		// TODO для параметров set с дп,может считать стат с L2ItemInstance? (VISTALL)
-		if (f._stat == Stats.BASE_P_CRITICAL_RATE && f._order == 0x08)
+		if(f._stat == Stats.BASE_P_CRITICAL_RATE && f._order == 0x08)
 		{
 			_critical = (int) Math.round(f._value / 10);
 		}
@@ -365,7 +362,7 @@ public final class WeaponTemplate extends ItemTemplate
 	@Override
 	public WeaponFightType getWeaponFightType()
 	{
-		if (_isMagicWeapon)
+		if(_isMagicWeapon)
 			return WeaponFightType.MAGE;
 		return WeaponFightType.WARRIOR;
 	}
@@ -373,15 +370,15 @@ public final class WeaponTemplate extends ItemTemplate
 	@Override
 	public boolean canBeEnsoul(int ensoulId)
 	{
-		if (!isWeapon())
+		if(!isWeapon())
 			return false;
 
-		if (_availableEnsouls == null)
+		if(_availableEnsouls == null)
 		{
-			if (getGrade().ordinal() < ItemGrade.D.ordinal())
+			if(getGrade().ordinal() < ItemGrade.D.ordinal())
 				return false;
 		}
-		else if (!_availableEnsouls.contains(ensoulId))
+		else if(!_availableEnsouls.contains(ensoulId))
 			return false;
 
 		return isEnsoulable();

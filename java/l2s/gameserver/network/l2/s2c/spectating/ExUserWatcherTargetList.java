@@ -12,7 +12,7 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExUserWatcherTargetList implements IClientOutgoingPacket
 {
 	private Spectating[] _spectatings;
-	
+
 	public ExUserWatcherTargetList(Player player)
 	{
 		_spectatings = player.getSpectatingList().values();
@@ -22,7 +22,7 @@ public class ExUserWatcherTargetList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_spectatings.length);
-		for (Spectating s : _spectatings)
+		for(Spectating s : _spectatings)
 		{
 			packetWriter.writeSizedString(s.getName());
 			packetWriter.writeD(Config.REQUEST_ID); // server id
@@ -30,7 +30,7 @@ public class ExUserWatcherTargetList implements IClientOutgoingPacket
 			packetWriter.writeD(s.getClassId());
 			packetWriter.writeC(s.isOnline());
 		}
-		
+
 		//@formatter:off
 		/*
 		int count = 0;

@@ -36,13 +36,14 @@ public class CharacterTrainingCampDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM character_training_camp");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				String accountName = rset.getString("account_name");
-				map.put(accountName, new TrainingCamp(accountName, rset.getInt("char_id"), rset.getInt("class_index"), rset.getInt("level"), rset.getLong("start_time") * 1000L, rset.getLong("end_time") * 1000L));
+				map.put(accountName, new TrainingCamp(accountName, rset.getInt("char_id"), rset.getInt("class_index"), rset.getInt("level"), rset.getLong("start_time")
+						* 1000L, rset.getLong("end_time") * 1000L));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterTrainingCampDAO.restore(): " + e, e);
 		}
@@ -68,7 +69,7 @@ public class CharacterTrainingCampDAO
 			statement.setInt(6, (int) (trainingCamp.getEndTime() / 1000));
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("CharacterTrainingCampDAO.replace(String,TrainingCamp): " + e, e);
 			return false;
@@ -91,7 +92,7 @@ public class CharacterTrainingCampDAO
 			statement.setString(1, account);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("CharacterTrainingCampDAO.delete(String): " + e, e);
 		}

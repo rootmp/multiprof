@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 
 /**
@@ -19,13 +19,13 @@ public class NpcInfoState implements IClientOutgoingPacket
 	{
 		_objectId = npc.getObjectId();
 
-		if (npc.isAlikeDead())
+		if(npc.isAlikeDead())
 			_state |= IS_DEAD;
 
-		if (npc.isInCombat())
+		if(npc.isInCombat())
 			_state |= IS_IN_COMBAT;
 
-		if (npc.isRunning())
+		if(npc.isRunning())
 			_state |= IS_RUNNING;
 	}
 

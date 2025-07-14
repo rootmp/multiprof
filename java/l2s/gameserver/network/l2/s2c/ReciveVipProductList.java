@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.ProductDataHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.product.ProductItem;
@@ -37,20 +37,20 @@ public class ReciveVipProductList implements IClientOutgoingPacket
 		packetWriter.writeQ(_silverCoins);
 		packetWriter.writeC(0x01); // UNK
 		packetWriter.writeD(_products.size());
-		for (ProductItem product : _products)
+		for(ProductItem product : _products)
 		{
 			packetWriter.writeD(product.getId()); // product id
 			packetWriter.writeC(product.getCategory()); // 11 - припасы, 12 - снаряжение, 13 - VIP, 14 - ивент, 15 - наградные монеты
 			packetWriter.writeC(product.getCategory() == 15 ? 3 : 0); // UNK, 0x03 - при типе = 15, при остальных = 0x00
 			packetWriter.writeD(product.getCategory() == 15 ? product.getGoldCoinCount() : product.getPrice()); // Price in NC or
-																									// Lucky Coins
+			// Lucky Coins
 			packetWriter.writeD(product.getCategory() == 15 ? product.getSilverCoinCount() : 0); // Price in VIP Coins
 			packetWriter.writeC(product.isNew() ? 6 : (product.isHot() ? 5 : 0)); // 5 - hot, 6 - new
 			packetWriter.writeC(product.getMinVipLevel()); // Min VIP level
 			packetWriter.writeC(product.getMaxVipLevel()); // Max VIP level
 
 			packetWriter.writeC(product.getComponents().size()); // Количество итемов в продукте.
-			for (ProductItemComponent component : product.getComponents())
+			for(ProductItemComponent component : product.getComponents())
 			{
 				packetWriter.writeD(component.getId()); // item id
 				packetWriter.writeD((int) component.getCount()); // quality

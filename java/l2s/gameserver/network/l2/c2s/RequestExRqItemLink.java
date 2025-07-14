@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.cache.ItemInfoCache;
 import l2s.gameserver.model.items.ItemInfo;
@@ -21,7 +22,7 @@ public class RequestExRqItemLink implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		ItemInfo item;
-		if ((item = ItemInfoCache.getInstance().get(_objectId)) == null)
+		if((item = ItemInfoCache.getInstance().get(_objectId)) == null)
 		{
 			client.sendPacket(ActionFailPacket.STATIC);
 		}

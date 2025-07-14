@@ -10,8 +10,8 @@ import org.dom4j.Element;
 import l2s.commons.data.xml.AbstractParser;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.CapsuleHolder;
-import l2s.gameserver.templates.item.capsule.CreateItemInfo;
 import l2s.gameserver.templates.item.capsule.CreateItemGroupInfo;
+import l2s.gameserver.templates.item.capsule.CreateItemInfo;
 
 public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 {
@@ -38,7 +38,7 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 	{
 		return new File(Config.DATAPACK_ROOT, "data/capsule/capsule_custom.xml");
 	}
-	
+
 	@Override
 	public String getDTDFileName()
 	{
@@ -56,7 +56,7 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 			if(ptsAttr != null && ptsAttr.equalsIgnoreCase("true"))
 				ptsChanceFormat = true;
 		}
-		
+
 		for(Iterator<Element> iterator = rootElement.elementIterator("capsule"); iterator.hasNext();)
 		{
 			Element capsuleElement = iterator.next();
@@ -75,27 +75,29 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 					int id = Integer.parseInt(itemElement.attributeValue("id"));
 					int enchant = itemElement.attributeValue("enchant") != null ? Integer.parseInt(itemElement.attributeValue("enchant")) : 0;
 					long count = Long.parseLong(itemElement.attributeValue("count"));
-					long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : (long) (Double.parseDouble(itemElement.attributeValue("chance")) * 100000000);
+					long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : (long) (Double.parseDouble(itemElement.attributeValue("chance"))
+							* 100000000);
 					createItems.add(new CreateItemInfo(id, enchant, count, chance));
 				}
 			}
 
 			Element randomItemsElement = capsuleElement.element("randomItems");
-			if (randomItemsElement != null)
+			if(randomItemsElement != null)
 			{
 				long totalChance = 0;
 				List<CreateItemInfo> tempList = new ArrayList<>();
 				long maxChance = 0;
 				int maxIndex = -1;
 
-				for (Iterator<Element> itemIterator = randomItemsElement.elementIterator("item"); itemIterator.hasNext();)
+				for(Iterator<Element> itemIterator = randomItemsElement.elementIterator("item"); itemIterator.hasNext();)
 				{
 					Element itemElement = itemIterator.next();
 					int id = Integer.parseInt(itemElement.attributeValue("id"));
 					int enchant = itemElement.attributeValue("enchant") != null ? Integer.parseInt(itemElement.attributeValue("enchant")) : 0;
 					long count = Long.parseLong(itemElement.attributeValue("count"));
-					long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : Math.round(Double.parseDouble(itemElement.attributeValue("chance")) * 100000000);
-					if (chance > maxChance)
+					long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : Math.round(Double.parseDouble(itemElement.attributeValue("chance"))
+							* 100000000);
+					if(chance > maxChance)
 					{
 						maxChance = chance;
 						maxIndex = tempList.size();
@@ -105,16 +107,16 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 					tempList.add(new CreateItemInfo(id, enchant, count, chance));
 				}
 
-				if (totalChance != 10000000000L)
+				if(totalChance != 10000000000L)
 				{
 					_log.warn("Capsule item id " + itemId + " has total chance " + totalChance + " in createRandomItems not equal to 10000000000.");
 
-					if (totalChance < 10000000000L && maxIndex != -1)
+					if(totalChance < 10000000000L && maxIndex != -1)
 					{
 						long diff = 10000000000L - totalChance;
 						CreateItemInfo maxItem = tempList.get(maxIndex);
 
-						CreateItemInfo updated = new CreateItemInfo(maxItem.getItemId(),maxItem.getEnchant(),maxItem.getItemCount(),maxItem.getProb() + diff);
+						CreateItemInfo updated = new CreateItemInfo(maxItem.getItemId(), maxItem.getEnchant(), maxItem.getItemCount(), maxItem.getProb() + diff);
 						tempList.set(maxIndex, updated);
 
 						_log.info("Adjusted chance for item id " + maxItem.getItemId() + " by adding " + diff + " to meet total 10000000000.");
@@ -123,7 +125,6 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 
 				createRandomItems.addAll(tempList);
 			}
-
 
 			Element multiItemsElement = capsuleElement.element("multiItems");
 			if(multiItemsElement != null)
@@ -141,7 +142,8 @@ public final class CapsuleParser extends AbstractParser<CapsuleHolder>
 						int id = Integer.parseInt(itemElement.attributeValue("id"));
 						int enchant = itemElement.attributeValue("enchant") != null ? Integer.parseInt(itemElement.attributeValue("enchant")) : 0;
 						long count = Long.parseLong(itemElement.attributeValue("count"));
-						long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : (long) (Double.parseDouble(itemElement.attributeValue("chance")) * 100000000);
+						long chance = ptsChanceFormat ? Long.parseLong(itemElement.attributeValue("chance")) : (long) (Double.parseDouble(itemElement.attributeValue("chance"))
+								* 100000000);
 						totalGroupChance += chance;
 						items.add(new CreateItemInfo(id, enchant, count, chance));
 					}

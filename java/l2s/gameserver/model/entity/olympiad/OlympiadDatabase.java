@@ -34,7 +34,7 @@ public class OlympiadDatabase
 		Olympiad._participantRank.clear();
 
 		IntIntMap tmpPlace = new HashIntIntMap();
-		for (int heroId : Hero.getInstance().getHeroes().keySet().toArray())
+		for(int heroId : Hero.getInstance().getHeroes().keySet().toArray())
 			Olympiad._participantRank.put(heroId, 1); // Герои получают 1й ранк.
 
 		Connection con = null;
@@ -46,15 +46,15 @@ public class OlympiadDatabase
 			statement = con.prepareStatement(OlympiadParticipantsDAO.GET_ALL_CLASSIFIED_PARTICIPANTS);
 			rset = statement.executeQuery();
 			int place = 1;
-			while (rset.next())
+			while(rset.next())
 			{
 				int charId = rset.getInt("char_id");
-				if (!Olympiad._participantRank.containsKey(charId))
+				if(!Olympiad._participantRank.containsKey(charId))
 					tmpPlace.put(charId, place++);
 			}
 
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Olympiad System: Error!", e);
 		}
@@ -68,7 +68,7 @@ public class OlympiadDatabase
 		int rank3 = (int) Math.round(tmpPlace.size() * 0.25);
 		int rank4 = (int) Math.round(tmpPlace.size() * 0.50);
 
-		if (rank1 == 0)
+		if(rank1 == 0)
 		{
 			rank1 = 1;
 			rank2++;
@@ -76,15 +76,15 @@ public class OlympiadDatabase
 			rank4++;
 		}
 
-		for (int charId : tmpPlace.keySet().toArray())
+		for(int charId : tmpPlace.keySet().toArray())
 		{
-			if (tmpPlace.get(charId) <= rank1)
+			if(tmpPlace.get(charId) <= rank1)
 				Olympiad._participantRank.put(charId, 2);
-			else if (tmpPlace.get(charId) <= rank2)
+			else if(tmpPlace.get(charId) <= rank2)
 				Olympiad._participantRank.put(charId, 3);
-			else if (tmpPlace.get(charId) <= rank3)
+			else if(tmpPlace.get(charId) <= rank3)
 				Olympiad._participantRank.put(charId, 4);
-			else if (tmpPlace.get(charId) <= rank4)
+			else if(tmpPlace.get(charId) <= rank4)
 				Olympiad._participantRank.put(charId, 5);
 			else
 				Olympiad._participantRank.put(charId, 6);
@@ -115,7 +115,7 @@ public class OlympiadDatabase
 			statement.setInt(1, Config.OLYMPIAD_POINTS_DEFAULT);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Olympiad System: Couldn't calculate last period!", e);
 		}
@@ -124,15 +124,15 @@ public class OlympiadDatabase
 			DbUtils.closeQuietly(con, statement);
 		}
 
-		for (OlympiadParticipiantData participantsInfo : Olympiad.getParticipantsMap().valueCollection())
+		for(OlympiadParticipiantData participantsInfo : Olympiad.getParticipantsMap().valueCollection())
 		{
 			int points = participantsInfo.getPoints();
 			int compDone = participantsInfo.getCompDone();
 			int compWin = participantsInfo.getCompWin();
 			participantsInfo.setPoints(Config.OLYMPIAD_POINTS_DEFAULT);
-			if (compDone >= Config.OLYMPIAD_BATTLES_FOR_REWARD)
+			if(compDone >= Config.OLYMPIAD_BATTLES_FOR_REWARD)
 			{
-				if (compWin > 0)
+				if(compWin > 0)
 					points += Config.OLYMPIAD_1_OR_MORE_WIN_POINTS_BONUS;
 				else
 					points += Config.OLYMPIAD_ALL_LOOSE_POINTS_BONUS;
@@ -156,7 +156,7 @@ public class OlympiadDatabase
 
 	public static synchronized List<StatsSet> computeHeroesToBe()
 	{
-		if (Olympiad._period != 1)
+		if(Olympiad._period != 1)
 			return Collections.emptyList();
 
 		List<StatsSet> heroesToBe = new ArrayList<StatsSet>();
@@ -169,12 +169,12 @@ public class OlympiadDatabase
 			con = DatabaseFactory.getInstance().getConnection();
 			StatsSet hero;
 
-			for (ClassId id3 : ClassId.VALUES)
+			for(ClassId id3 : ClassId.VALUES)
 			{
-				if (id3.isOfLevel(ClassLevel.THIRD))
+				if(id3.isOfLevel(ClassLevel.THIRD))
 				{
 					ClassId id2 = id3.getParent(0);
-					if (id2.isOfLevel(ClassLevel.SECOND))
+					if(id2.isOfLevel(ClassLevel.SECOND))
 					{
 						statement = con.prepareStatement(OlympiadParticipantsDAO.OLYMPIAD_GET_HEROS);
 						statement.setInt(1, SubClassType.BASE_CLASS.ordinal());
@@ -183,7 +183,7 @@ public class OlympiadDatabase
 						statement.setInt(4, Config.OLYMPIAD_BATTLES_FOR_REWARD);
 						rset = statement.executeQuery();
 
-						if (rset.next())
+						if(rset.next())
 						{
 							hero = new StatsSet();
 							hero.set(Hero.CLASS_ID, rset.getInt("class_id"));
@@ -197,7 +197,7 @@ public class OlympiadDatabase
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Olympiad System: Couldnt heros from db!", e);
 		}
@@ -215,7 +215,7 @@ public class OlympiadDatabase
 
 	public static synchronized void saveParticipantsData()
 	{
-		for (int participantId : Olympiad.getParticipantsMap().keySet().toArray())
+		for(int participantId : Olympiad.getParticipantsMap().keySet().toArray())
 			saveParticipantData(participantId);
 	}
 

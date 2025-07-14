@@ -24,12 +24,12 @@ public class RewardData implements Cloneable
 	public RewardData(int itemId)
 	{
 		_item = ItemHolder.getInstance().getTemplate(itemId);
-		if (_item.isArrow() || _item.isBolt() // стрелы не рейтуются
+		if(_item.isArrow() || _item.isBolt() // стрелы не рейтуются
 				|| (Config.NO_RATE_EQUIPMENT && _item.isEquipment()) // отключаемая рейтовка эквипа
 				|| (Config.NO_RATE_KEY_MATERIAL && _item.isKeyMatherial()) // отключаемая рейтовка ключевых материалов
 				|| (Config.NO_RATE_RECIPES && _item.isRecipe()) // отключаемая рейтовка рецептов
 				|| ArrayUtils.contains(Config.NO_RATE_ITEMS, itemId)) // индивидаульная отключаемая рейтовка для списка
-																		// предметов
+			// предметов
 			_notRate = true;
 	}
 
@@ -106,7 +106,7 @@ public class RewardData implements Cloneable
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o instanceof RewardData)
+		if(o instanceof RewardData)
 		{
 			RewardData drop = (RewardData) o;
 			return drop.getItemId() == getItemId();
@@ -129,14 +129,14 @@ public class RewardData implements Cloneable
 	 */
 	public RewardItem roll(Player player, double mod)
 	{
-		if (_item.isAdena())
+		if(_item.isAdena())
 			return rollAdena(mod, player.getRateAdena());
 		return rollItem(mod, player.getRateItems(), 1.);
 	}
 
 	public RewardItem roll(double mod)
 	{
-		if (_item.isAdena())
+		if(_item.isAdena())
 			return rollAdena(mod, 1.);
 		return rollItem(mod, 1., 1.);
 	}
@@ -149,19 +149,19 @@ public class RewardData implements Cloneable
 	 */
 	public RewardItem rollAdena(double mod, double rate)
 	{
-		if (notRate())
+		if(notRate())
 		{
 			mod = Math.min(mod, 1.);
 			rate = 1.;
 		}
 
-		if (mod > 0 && rate > 0)
+		if(mod > 0 && rate > 0)
 		{
 			double chance = getChance() * mod;
-			if (chance > Rnd.get(RewardList.MAX_CHANCE))
+			if(chance > Rnd.get(RewardList.MAX_CHANCE))
 			{
 				RewardItem t = new RewardItem(_item.getItemId());
-				if (getMinDrop() >= getMaxDrop())
+				if(getMinDrop() >= getMaxDrop())
 					t.count = (long) (rate * getMinDrop());
 				else
 					t.count = (long) (rate * Rnd.get(getMinDrop(), getMaxDrop()));
@@ -179,49 +179,49 @@ public class RewardData implements Cloneable
 	 */
 	public RewardItem rollItem(double mod, double rate, double countMod)
 	{
-		if (notRate())
+		if(notRate())
 		{
 			mod = Math.min(mod, 1.);
 			rate = 1.;
 		}
 
-		if (mod > 0 && rate > 0)
+		if(mod > 0 && rate > 0)
 		{
 			double chance = Math.min(RewardList.MAX_CHANCE, getChance() * mod);
-			if (chance > 0)
+			if(chance > 0)
 			{
 				int rolledCount = 0;
 				int mult = (int) Math.ceil(rate);
-				if (chance >= RewardList.MAX_CHANCE)
+				if(chance >= RewardList.MAX_CHANCE)
 				{
 					rolledCount = (int) rate;
-					if (mult > rate)
+					if(mult > rate)
 					{
-						if (chance * (rate - (mult - 1)) > Rnd.get(RewardList.MAX_CHANCE))
+						if(chance * (rate - (mult - 1)) > Rnd.get(RewardList.MAX_CHANCE))
 							rolledCount++;
 					}
 				}
 				else
 				{
-					for (int n = 0; n < mult; n++) // TODO: Реально ли оптимизировать без цикла?
+					for(int n = 0; n < mult; n++) // TODO: Реально ли оптимизировать без цикла?
 					{
-						if (chance * Math.min(rate - n, 1.0) > Rnd.get(RewardList.MAX_CHANCE))
+						if(chance * Math.min(rate - n, 1.0) > Rnd.get(RewardList.MAX_CHANCE))
 							rolledCount++;
 					}
 				}
 
-				if (rolledCount > 0)
+				if(rolledCount > 0)
 				{
 					RewardItem t = new RewardItem(_item.getItemId());
-					if (_item.isStackable())
+					if(_item.isStackable())
 					{
 						// TODO: Не стыкуемые предметы не должны поддерживать в дропе количество?!?
-						if (getMinDrop() >= getMaxDrop())
+						if(getMinDrop() >= getMaxDrop())
 							t.count = (long) (rolledCount * getMinDrop() * countMod);
 						else
 							t.count = (long) (rolledCount * Rnd.get(getMinDrop(), getMaxDrop()) * countMod);
 					}
-					if (t.count > 0)
+					if(t.count > 0)
 						return t;
 				}
 			}

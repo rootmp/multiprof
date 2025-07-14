@@ -26,8 +26,8 @@ public class SiegeUtils
 
 	public static boolean getCanRide()
 	{
-		for (Residence residence : ResidenceHolder.getInstance().getResidences())
-			if (residence != null && residence.getSiegeEvent().isInProgress())
+		for(Residence residence : ResidenceHolder.getInstance().getResidences())
+			if(residence != null && residence.getSiegeEvent().isInProgress())
 				return false;
 		return true;
 	}

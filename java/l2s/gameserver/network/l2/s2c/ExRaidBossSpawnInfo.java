@@ -28,19 +28,19 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_count);
 		boolean baiumSpawned = false;
-		for (NpcInstance npc : GameObjectsStorage.getNpcs())
+		for(NpcInstance npc : GameObjectsStorage.getNpcs())
 		{
-			if (npc.getNpcId() == 29025)
+			if(npc.getNpcId() == 29025)
 			{
 				baiumSpawned = true;
 			}
 		}
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
-			if (_aliveBosses.contains(_ids[i]))
+			if(_aliveBosses.contains(_ids[i]))
 			{
 				packetWriter.writeD(_ids[i]); // boss id
-				if (GameObjectsStorage.getNpcs(true, _ids[i]).get(0).isInCombat())
+				if(GameObjectsStorage.getNpcs(true, _ids[i]).get(0).isInCombat())
 				{
 					packetWriter.writeD(2); // in combat
 				}
@@ -50,7 +50,7 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 				}
 				packetWriter.writeD(0); // time after death
 			}
-			else if ((_ids[i] == 29020) && baiumSpawned)
+			else if((_ids[i] == 29020) && baiumSpawned)
 			{
 				packetWriter.writeD(_ids[i]);
 				packetWriter.writeD(1);

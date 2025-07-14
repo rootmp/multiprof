@@ -46,7 +46,7 @@ public class RequestExRelicsProbList implements IClientIncomingPacket
 				relicsProb = RelicHolder.getInstance().getSummonRelicsProb(Key);
 				break;
 		}
-		if(relicsProb!=null)
+		if(relicsProb != null)
 			player.sendPacket(new ExRelicsProbList(Type, Key, relicsProb));
 	}
 

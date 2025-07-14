@@ -19,11 +19,11 @@ public final class EffectInvulnerable extends EffectHandler
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		SkillEntry skillEntry = effected.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-		if (skillEntry != null && skillEntry.getSkillType() == SkillType.TAKECASTLE)
+		if(skillEntry != null && skillEntry.getSkillType() == SkillType.TAKECASTLE)
 			return false;
 
 		skillEntry = effected.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-		if (skillEntry != null && skillEntry.getSkillType() == SkillType.TAKECASTLE)
+		if(skillEntry != null && skillEntry.getSkillType() == SkillType.TAKECASTLE)
 			return false;
 
 		return true;

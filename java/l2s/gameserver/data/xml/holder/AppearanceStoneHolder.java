@@ -18,7 +18,7 @@ public class AppearanceStoneHolder extends AbstractHolder
 {
 	private static final AppearanceStoneHolder _instance = new AppearanceStoneHolder();
 
-	private static Map<Integer,ItemData>  ITEMS_DRESSING_ROOM = new HashMap<Integer,ItemData>();
+	private static Map<Integer, ItemData> ITEMS_DRESSING_ROOM = new HashMap<Integer, ItemData>();
 	private TIntObjectMap<AppearanceStone> _stones = new TIntObjectHashMap<AppearanceStone>();
 
 	public static AppearanceStoneHolder getInstance()
@@ -44,13 +44,13 @@ public class AppearanceStoneHolder extends AbstractHolder
 			{
 				if(visual.getExtractId() == visualId)
 					return stone;
-				if(visual.getAlternative().containsKey(player.getRace())&& visual.getAlternative().get(player.getRace()) == visualId)
+				if(visual.getAlternative().containsKey(player.getRace()) && visual.getAlternative().get(player.getRace()) == visualId)
 					return stone;
 			}
 		}
 		return null;
 	}
-	
+
 	@Override
 	public int size()
 	{
@@ -65,11 +65,11 @@ public class AppearanceStoneHolder extends AbstractHolder
 
 	public void addItemDreassing(int id, int price_id, long price_count)
 	{
-		ITEMS_DRESSING_ROOM.put(id, new ItemData(id,price_id,price_count,0));
+		ITEMS_DRESSING_ROOM.put(id, new ItemData(id, price_id, price_count, 0));
 	}
-	
+
 	public Map<Integer, ItemData> getItemsDreasing()
 	{
-		return 	ITEMS_DRESSING_ROOM;
+		return ITEMS_DRESSING_ROOM;
 	}
 }

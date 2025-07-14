@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 public class RecipeShopMsgPacket implements IClientOutgoingPacket

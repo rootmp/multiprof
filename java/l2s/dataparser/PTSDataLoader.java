@@ -24,7 +24,7 @@ public class PTSDataLoader
 		{
 			LOGGER.info("/======== Loading PTS scripts data ========/");
 			LinkerFactory.getInstance();
-			
+
 			SynthesisParser.getInstance().load();
 
 			Parser.clear();

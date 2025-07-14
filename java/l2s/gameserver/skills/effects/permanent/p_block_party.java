@@ -18,7 +18,7 @@ public final class p_block_party extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		return true;

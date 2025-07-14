@@ -21,7 +21,7 @@ public final class EffectHitCountBlock extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (_count > 0)
+		if(_count > 0)
 			effected.getFlags().getHitCountBlocked().start(this);
 		effected.setHitBlocks(_count);
 	}

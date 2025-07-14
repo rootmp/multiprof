@@ -45,14 +45,14 @@ public class CharacterDailyMissionsDAO
 			statement = con.prepareStatement(SELECT_QUERY);
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int mission_id = rset.getInt("mission_id");
 				boolean completed = rset.getInt("completed") > 0;
 				int value = rset.getInt("value");
 
 				DailyMissionTemplate template = DailyMissionsHolder.getInstance().getMission(mission_id);
-				if (template == null)
+				if(template == null)
 				{
 					delete(owner, mission_id);
 					continue;
@@ -61,7 +61,7 @@ public class CharacterDailyMissionsDAO
 				map.put(mission_id, new DailyMission(owner, template, completed, value));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterDailyMissionsDAO.select(Player): " + e, e);
 		}
@@ -80,7 +80,7 @@ public class CharacterDailyMissionsDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement(REPLACE_QUERY);
 			statement.setInt(1, owner.getObjectId());
-			for (DailyMission mission : missions)
+			for(DailyMission mission : missions)
 			{
 				statement.setInt(2, mission.getId());
 				statement.setInt(3, mission.isCompleted() ? 1 : 0);
@@ -89,7 +89,7 @@ public class CharacterDailyMissionsDAO
 			}
 			statement.executeBatch();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getDailyMissionList() + " could not store missions list: ", e);
 			return false;
@@ -115,7 +115,7 @@ public class CharacterDailyMissionsDAO
 			statement.setInt(4, mission.getValue());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getDailyMissionList() + " could not insert mission to missions list: " + mission, e);
 			return false;
@@ -139,7 +139,7 @@ public class CharacterDailyMissionsDAO
 			statement.setInt(2, missionId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getDailyMissionList() + " could not delete mission: OWNER_ID[" + owner.getObjectId() + "], MISSION_ID[" + missionId + "]:", e);
 			return false;

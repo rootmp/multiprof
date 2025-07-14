@@ -36,59 +36,59 @@ public class RequestExPvpbookShareRevengeSharedTeleportToKiller implements IClie
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 2);
-		if (pvpbookInfo == null)
+		if(pvpbookInfo == null)
 		{
 			pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 1);
-			if (pvpbookInfo == null)
+			if(pvpbookInfo == null)
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 		}
 
-		
-		if (pvpbookInfo.getTeleportHelpCount() <= 0)
+		if(pvpbookInfo.getTeleportHelpCount() <= 0)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		
+
 		Player killerPlayer = pvpbookInfo.getKiller();
-		if (killerPlayer == null || !killerPlayer.isOnline())
+		if(killerPlayer == null || !killerPlayer.isOnline())
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_IS_NO_ONLINE_YOU_CANT_USE_THIS_FUNCTION);
 			return;
 		}
 
-		if (!killerPlayer.getReflection().isMain() || !activeChar.getReflection().isMain())
+		if(!killerPlayer.getReflection().isMain() || !activeChar.getReflection().isMain())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
-		
-		if(killerPlayer.isInPeaceZone() || killerPlayer.isInBoat()|| killerPlayer.isInOlympiadMode() || killerPlayer.isInObserverMode() || killerPlayer.isFlying())
+
+		if(killerPlayer.isInPeaceZone() || killerPlayer.isInBoat() || killerPlayer.isInOlympiadMode() || killerPlayer.isInObserverMode()
+				|| killerPlayer.isFlying())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
-		
+
 		if(activeChar.isFlying() || activeChar.isOutOfControl()/* || activeChar.isInZone(ZoneType.hellbound)*/ || activeChar.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
 
-		if (/*killerPlayer.isInZone(ZoneType.hellbound) ||*/ !checkRaid(killerPlayer))
+		if(/*killerPlayer.isInZone(ZoneType.hellbound) ||*/ !checkRaid(killerPlayer))
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
 
-		if (!ItemFunctions.deleteItem(activeChar, 91663, Config.PVPBOOK_TELEPORT_HELP_PRICE))
+		if(!ItemFunctions.deleteItem(activeChar, 91663, Config.PVPBOOK_TELEPORT_HELP_PRICE))
 		{
 			activeChar.sendPacket(SystemMsg.NOT_ENOUGH_L2_COINS);
 			return;
@@ -98,12 +98,12 @@ public class RequestExPvpbookShareRevengeSharedTeleportToKiller implements IClie
 		pvpbookInfo.reduceTeleportHelpCount();
 		activeChar.teleToLocation(Location.findPointToStay(killerPlayer, 100, 150), ReflectionManager.MAIN);
 	}
-	
+
 	private boolean checkRaid(Player killerPlayer)
 	{
 		for(MonsterInstance m : killerPlayer.getAroundMonsters(3000, 300))
 		{
-			if(m.isRaid()&& !m.isDead()&& m.isVisible())
+			if(m.isRaid() && !m.isDead() && m.isVisible())
 				return false;
 		}
 		return true;

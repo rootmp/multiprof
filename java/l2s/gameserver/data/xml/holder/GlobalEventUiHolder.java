@@ -9,7 +9,7 @@ public class GlobalEventUiHolder extends AbstractHolder
 {
 	private static final GlobalEventUiHolder _instance = new GlobalEventUiHolder();
 
-	private Map<Integer,Integer> _EventList = new HashMap<>();
+	private Map<Integer, Integer> _EventList = new HashMap<>();
 
 	public Map<Integer, Integer> getEventList()
 	{
@@ -35,11 +35,11 @@ public class GlobalEventUiHolder extends AbstractHolder
 
 	public void addEvent(int id, int multisell)
 	{
-		_EventList.put(id, multisell);   
+		_EventList.put(id, multisell);
 	}
 
 	public int getEvent(int nEventIndex)
 	{
-		return _EventList.getOrDefault(nEventIndex, 0);   
+		return _EventList.getOrDefault(nEventIndex, 0);
 	}
 }

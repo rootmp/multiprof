@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.instances.PetInstance;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -18,9 +18,9 @@ public class PetItemListPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeH(items.length);
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 			writeItemInfo(packetWriter, item);
-		
+
 		return true;
 	}
 }

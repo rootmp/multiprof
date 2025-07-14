@@ -9,8 +9,7 @@ import l2s.gameserver.model.Player;
 public class ExBalthusEvent implements IClientOutgoingPacket
 {
 	public ExBalthusEvent(Player player)
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

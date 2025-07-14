@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.Hero;
@@ -22,10 +23,10 @@ public class RequestWriteHeroWords implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null || !player.isHero())
+		if(player == null || !player.isHero())
 			return;
 
-		if (_heroWords == null || _heroWords.length() > 300)
+		if(_heroWords == null || _heroWords.length() > 300)
 			return;
 
 		Hero.getInstance().setHeroMessage(player.getObjectId(), _heroWords);

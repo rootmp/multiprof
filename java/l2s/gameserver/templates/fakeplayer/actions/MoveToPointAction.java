@@ -28,10 +28,10 @@ public class MoveToPointAction extends MoveAction
 		Player player = ai.getActor();
 
 		Location loc = Location.findPointToStay(_loc.getX(), _loc.getY(), _loc.getZ(), _minRange, _maxRange, player.getGeoIndex());
-		if (loc == null)
+		if(loc == null)
 			return false;
 
-		if (player.getDistance(loc) > 2000 || !player.getMovement().moveToLocation(loc, 0, true))
+		if(player.getDistance(loc) > 2000 || !player.getMovement().moveToLocation(loc, 0, true))
 		{
 			player.teleToLocation(loc, 0, 0);
 		}
@@ -41,7 +41,8 @@ public class MoveToPointAction extends MoveAction
 	public static MoveToPointAction parse(Element element)
 	{
 		Location loc = Location.parse(element);
-		int minRange = element.attributeValue("range") != null ? Integer.parseInt(element.attributeValue("range")) : (element.attributeValue("min_range") != null ? Integer.parseInt(element.attributeValue("min_range")) : 0);
+		int minRange = element.attributeValue("range") != null ? Integer.parseInt(element.attributeValue("range")) : (element.attributeValue("min_range")
+				!= null ? Integer.parseInt(element.attributeValue("min_range")) : 0);
 		int maxRange = element.attributeValue("max_range") == null ? minRange : Integer.parseInt(element.attributeValue("max_range"));
 		double chance = element.attributeValue("chance") == null ? 100. : Double.parseDouble(element.attributeValue("chance"));
 		return new MoveToPointAction(loc, minRange, maxRange, chance);

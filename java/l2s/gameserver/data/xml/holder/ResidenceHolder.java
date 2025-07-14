@@ -48,7 +48,7 @@ public final class ResidenceHolder extends AbstractHolder
 	public <R extends Residence> R getResidence(Class<R> type, int id)
 	{
 		Residence r = getResidence(id);
-		if (r == null || r.getClass() != type && !type.isAssignableFrom(r.getClass()))
+		if(r == null || r.getClass() != type && !type.isAssignableFrom(r.getClass()))
 			return null;
 
 		return (R) r;
@@ -57,9 +57,9 @@ public final class ResidenceHolder extends AbstractHolder
 	public <R extends Residence> List<R> getResidenceList(Class<R> t)
 	{
 		List<R> residences = new ArrayList<R>();
-		for (Residence r : _residences.valueCollection())
+		for(Residence r : _residences.valueCollection())
 		{
-			if (r.getClass() == t || t.isAssignableFrom(r.getClass())) // fast hack
+			if(r.getClass() == t || t.isAssignableFrom(r.getClass())) // fast hack
 			{
 				residences.add((R) r);
 				continue;
@@ -81,9 +81,9 @@ public final class ResidenceHolder extends AbstractHolder
 	public <R extends Residence> R getResidenceByCoord(Class<R> type, int x, int y, int z, Reflection ref)
 	{
 		Collection<Residence> residences = type == null ? getResidences() : (Collection<Residence>) getResidenceList(type);
-		for (Residence residence : residences)
+		for(Residence residence : residences)
 		{
-			if (residence.checkIfInZone(x, y, z, ref))
+			if(residence.checkIfInZone(x, y, z, ref))
 				return (R) residence;
 		}
 		return null;
@@ -92,18 +92,18 @@ public final class ResidenceHolder extends AbstractHolder
 	public <R extends Residence> R findNearestResidence(Class<R> clazz, int x, int y, int z, Reflection ref, int offset)
 	{
 		Residence residence = getResidenceByCoord(clazz, x, y, z, ref);
-		if (residence == null)
+		if(residence == null)
 		{
 			double closestDistance = offset;
 			double distance;
-			for (Residence r : getResidenceList(clazz))
+			for(Residence r : getResidenceList(clazz))
 			{
 				Zone zone = r.getZone();
-				if (zone == null)
+				if(zone == null)
 					continue;
 
 				distance = zone.findDistanceToZone(x, y, z, false);
-				if (closestDistance > distance)
+				if(closestDistance > distance)
 				{
 					closestDistance = distance;
 					residence = r;
@@ -115,7 +115,7 @@ public final class ResidenceHolder extends AbstractHolder
 
 	public void callInit()
 	{
-		for (Residence r : getResidences())
+		for(Residence r : getResidences())
 			r.init();
 	}
 
@@ -123,12 +123,12 @@ public final class ResidenceHolder extends AbstractHolder
 	public void log()
 	{
 		info("total size: " + _residences.size());
-		for (ResidenceType type : ResidenceType.VALUES)
+		for(ResidenceType type : ResidenceType.VALUES)
 		{
 			int count = 0;
-			for (Residence r : getResidences())
+			for(Residence r : getResidences())
 			{
-				if (r.getType() == type)
+				if(r.getType() == type)
 					count++;
 			}
 			// TODO: Сделать вывод по типу или отделить временные КХ на другой тип.

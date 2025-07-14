@@ -28,7 +28,7 @@ public class RequestExAdenlabSpecialFix implements IClientIncomingPacket
 			return;
 		if(nFeeIndex < 0 || nFeeIndex > 1)
 			return;
-		
+
 		activeChar.getAdenLab().specialFix(nBossID, nSlotID, nFeeIndex);
 	}
 }

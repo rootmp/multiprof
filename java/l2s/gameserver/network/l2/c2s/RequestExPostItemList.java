@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -24,13 +25,13 @@ public class RequestExPostItemList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 			activeChar.sendActionFailed();
 
-		if (!Config.ALLOW_MAIL)
+		if(!Config.ALLOW_MAIL)
 		{
 			activeChar.sendMessage(new CustomMessage("mail.Disabled"));
 			activeChar.sendActionFailed();

@@ -21,7 +21,7 @@ public class ExBR_AgathionEnergyInfoPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_size);
-		for (ItemInstance item : _itemList)
+		for(ItemInstance item : _itemList)
 		{
 			packetWriter.writeD(item.getObjectId());
 			packetWriter.writeD(item.getItemId());

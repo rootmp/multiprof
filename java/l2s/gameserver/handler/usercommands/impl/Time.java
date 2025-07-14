@@ -17,9 +17,8 @@ import l2s.gameserver.network.l2.s2c.SystemMessage;
  */
 public class Time implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		77
+	private static final int[] COMMAND_IDS = {
+			77
 	};
 
 	private static final NumberFormat df = NumberFormat.getInstance(Locale.ENGLISH);
@@ -32,14 +31,14 @@ public class Time implements IUserCommandHandler
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (COMMAND_IDS[0] != id)
+		if(COMMAND_IDS[0] != id)
 			return false;
 
 		int h = GameTimeController.getInstance().getGameHour();
 		int m = GameTimeController.getInstance().getGameMin();
 
 		SystemMessage sm;
-		if (GameTimeController.getInstance().isNowNight())
+		if(GameTimeController.getInstance().isNowNight())
 			sm = new SystemMessage(SystemMessage.THE_CURRENT_TIME_IS_S1S2_IN_THE_NIGHT);
 		else
 			sm = new SystemMessage(SystemMessage.THE_CURRENT_TIME_IS_S1S2_IN_THE_DAY);
@@ -47,7 +46,7 @@ public class Time implements IUserCommandHandler
 
 		activeChar.sendPacket(sm);
 
-		if (Config.ALT_SHOW_SERVER_TIME)
+		if(Config.ALT_SHOW_SERVER_TIME)
 			activeChar.sendMessage(new CustomMessage("usercommandhandlers.Time.ServerTime").addString(sf.format(new Date(System.currentTimeMillis()))));
 
 		return true;

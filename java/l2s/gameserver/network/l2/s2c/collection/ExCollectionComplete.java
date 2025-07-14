@@ -6,12 +6,12 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExCollectionComplete implements IClientOutgoingPacket
 {
 	private final int _collectionId;
-	
+
 	public ExCollectionComplete(int collectionId)
 	{
 		_collectionId = collectionId;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

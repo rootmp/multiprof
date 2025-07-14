@@ -144,7 +144,7 @@ public final class PacketWriter
 		if(value != null)
 		{
 			StringBuilder sb = new StringBuilder();
-			sb.append(value).setLength(length-1);
+			sb.append(value).setLength(length - 1);
 			writeS(sb);
 		}
 		else

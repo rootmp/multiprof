@@ -26,7 +26,7 @@ public class RequestExAdenlabNormalPlay implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
+
 		if(nFeeIndex < 0 || nFeeIndex > 1)
 			return;
 

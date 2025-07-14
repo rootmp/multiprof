@@ -69,9 +69,9 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	{
 		_isInProgress = true;
 
-		for (DuelSnapshotObject $snapshot : this)
+		for(DuelSnapshotObject $snapshot : this)
 		{
-			if (canDuel0($snapshot.getPlayer(), $snapshot.getPlayer(), true) != null)
+			if(canDuel0($snapshot.getPlayer(), $snapshot.getPlayer(), true) != null)
 			{
 				abortDuel($snapshot.getPlayer());
 				return;
@@ -82,17 +82,17 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 
 		sendPackets(new ExDuelStart(this), PlaySoundPacket.B04_S01, SystemMsg.LET_THE_DUEL_BEGIN);
 
-		for (DuelSnapshotObject $snapshot : this)
+		for(DuelSnapshotObject $snapshot : this)
 			sendPacket(new ExDuelUpdateUserInfo($snapshot.getPlayer()), $snapshot.getTeam().revert());
 	}
 
 	public void sendPacket(IBroadcastPacket packet, TeamType... ar)
 	{
-		for (TeamType a : ar)
+		for(TeamType a : ar)
 		{
 			List<DuelSnapshotObject> objs = getObjects(a);
 
-			for (DuelSnapshotObject obj : objs)
+			for(DuelSnapshotObject obj : objs)
 				obj.getPlayer().sendPacket(packet);
 		}
 	}
@@ -106,7 +106,7 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	@Override
 	public void sendPackets(IBroadcastPacket... packet)
 	{
-		for (DuelSnapshotObject d : this)
+		for(DuelSnapshotObject d : this)
 			d.getPlayer().sendPacket(packet);
 	}
 
@@ -121,47 +121,50 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	protected IBroadcastPacket canDuel0(Player requestor, Player target, boolean secondCheck)
 	{
 		IBroadcastPacket packet = null;
-		if (target.isInCombat())
+		if(target.isInCombat())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_ENGAGED_IN_BATTLE).addName(target);
-		else if (target.isDead() || target.isAlikeDead() || target.getCurrentHpPercents() < 50 || target.getCurrentMpPercents() < 50 || target.getCurrentCpPercents() < 50)
+		else if(target.isDead() || target.isAlikeDead() || target.getCurrentHpPercents() < 50 || target.getCurrentMpPercents() < 50
+				|| target.getCurrentCpPercents() < 50)
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1S_HP_OR_MP_IS_BELOW_50).addName(target);
-		else if (!secondCheck && target.containsEvent(DuelEvent.class))
+		else if(!secondCheck && target.containsEvent(DuelEvent.class))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_ALREADY_ENGAGED_IN_A_DUEL).addName(target);
-		else if (secondCheck && !target.containsEvent(this))
+		else if(secondCheck && !target.containsEvent(this))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_ALREADY_ENGAGED_IN_A_DUEL).addName(target);
-		else if (target.isInZone(Zone.ZoneType.SIEGE))
+		else if(target.isInZone(Zone.ZoneType.SIEGE))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_PARTICIPATING_IN_A_SIEGE_WAR).addName(target);
-		else if (target.isInOlympiadMode() || Olympiad.isRegisteredInComp(target) || requestor.isInOlympiadMode() || Olympiad.isRegisteredInComp(requestor))
+		else if(target.isInOlympiadMode() || Olympiad.isRegisteredInComp(target) || requestor.isInOlympiadMode()
+				|| Olympiad.isRegisteredInComp(requestor))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_PARTICIPATING_IN_THE_OLYMPIAD).addName(target);
-		else if (target.isPK() || target.getPvpFlag() > 0)
+		else if(target.isPK() || target.getPvpFlag() > 0)
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_IN_A_CHAOTIC_STATE).addName(target);
-		else if (target.isInStoreMode())
+		else if(target.isInStoreMode())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_ENGAGED_IN_A_PRIVATE_STORE_OR_MANUFACTURE).addName(target);
-		else if (target.isMounted() || target.isInBoat())
+		else if(target.isMounted() || target.isInBoat())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_RIDING_A_BOAT_STEED_OR_STRIDER).addName(target);
-		else if (target.isFishing())
+		else if(target.isFishing())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_FISHING).addName(target);
-		else if (target.isInZoneBattle() || target.isInPeaceZone() || target.isInWater() || target.isInZone(Zone.ZoneType.no_restart) || target.isInTrainingCamp())
+		else if(target.isInZoneBattle() || target.isInPeaceZone() || target.isInWater() || target.isInZone(Zone.ZoneType.no_restart)
+				|| target.isInTrainingCamp())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_MAKE_A_CHALLENGE_TO_A_DUEL_BECAUSE_C1_IS_CURRENTLY_IN_A_DUELPROHIBITED_AREA_PEACEFUL_ZONE__SEVEN_SIGNS_ZONE__NEAR_WATER__RESTART_PROHIBITED_AREA).addName(target);
-		else if (!requestor.isInRangeZ(target, secondCheck ? 1200 : 250))
+		else if(!requestor.isInRangeZ(target, secondCheck ? 1200 : 250))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_RECEIVE_A_DUEL_CHALLENGE_BECAUSE_C1_IS_TOO_FAR_AWAY).addName(target);
-		else if (target.isTransformed())
+		else if(target.isTransformed())
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_POLYMORPHED).addName(target);
-		else if (!secondCheck && target.containsEvent(SingleMatchEvent.class))
+		else if(!secondCheck && target.containsEvent(SingleMatchEvent.class))
 			packet = new SystemMessagePacket(SystemMsg.C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_ENGAGED_IN_BATTLE).addName(target);
 		return packet;
 	}
 
 	protected void updatePlayers(boolean start, boolean teleport)
 	{
-		for (DuelSnapshotObject $snapshot : this)
+		for(DuelSnapshotObject $snapshot : this)
 		{
-			if (teleport)
+			if(teleport)
 				$snapshot.teleportBack();
 			else
 			{
 				Player player = $snapshot.getPlayer();
-				if (start)
+				if(start)
 				{
 					$snapshot.store();
 					player.getFlags().getUndying().start();
@@ -169,11 +172,11 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 				}
 				else
 				{
-					if (player.isUndying())
+					if(player.isUndying())
 						player.getFlags().getUndying().stop();
 
 					player.removeEvent(this);
-					if (!_aborted)
+					if(!_aborted)
 						$snapshot.restore();
 
 					player.setTeam(TeamType.NONE);
@@ -191,10 +194,10 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	@Override
 	public SystemMsg checkForAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
+		if(target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
 			return SystemMsg.INVALID_TARGET;
 
-		if (!target.containsEvent(this))
+		if(!target.containsEvent(this))
 			return SystemMsg.INVALID_TARGET;
 
 		return null;
@@ -203,7 +206,7 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	@Override
 	public boolean canAttack(Creature target, Creature attacker, Skill skill, boolean force, boolean nextAttackCheck)
 	{
-		if (target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
+		if(target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
 			return false;
 
 		return target.containsEvent(this);
@@ -212,14 +215,14 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	@Override
 	public void onAddEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 			o.getPlayer().addListener(_playerExitListener);
 	}
 
 	@Override
 	public void onRemoveEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 			o.getPlayer().removeListener(_playerExitListener);
 	}
 
@@ -246,7 +249,7 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	@Override
 	public void announce(int id, String value, int time)
 	{
-		if (id == 1)
+		if(id == 1)
 			sendPacket(new SystemMessagePacket(SystemMsg.THE_DUEL_WILL_BEGIN_IN_S1_SECONDS).addInteger(Math.abs(Integer.parseInt(value))));
 	}
 
@@ -254,9 +257,9 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	{
 		player.setTeam(TeamType.NONE);
 
-		for (DuelSnapshotObject $snapshot : this)
+		for(DuelSnapshotObject $snapshot : this)
 		{
-			if ($snapshot.getPlayer() == player)
+			if($snapshot.getPlayer() == player)
 			{
 				$snapshot.setDead();
 				break;
@@ -270,25 +273,25 @@ public abstract class DuelEvent extends AbstractDuelEvent implements Iterable<Du
 	{
 		TeamType winnerTeam = null;
 
-		for (TeamType team : TeamType.VALUES)
+		for(TeamType team : TeamType.VALUES)
 		{
 			List<DuelSnapshotObject> objects = getObjects(team);
 
 			boolean allDead = true;
-			for (DuelSnapshotObject d : objects)
+			for(DuelSnapshotObject d : objects)
 			{
-				if (!d.isDead())
+				if(!d.isDead())
 					allDead = false;
 			}
 
-			if (allDead)
+			if(allDead)
 			{
 				winnerTeam = team.revert();
 				break;
 			}
 		}
 
-		if (winnerTeam != null)
+		if(winnerTeam != null)
 		{
 			_winner = winnerTeam;
 

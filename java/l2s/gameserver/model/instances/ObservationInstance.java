@@ -24,13 +24,13 @@ public final class ObservationInstance extends NpcInstance
 	@Override
 	public void onBypassFeedback(Player player, String command)
 	{
-		if (player.isInOlympiadMode())
+		if(player.isInOlympiadMode())
 			return;
 
-		if (player.containsEvent(SingleMatchEvent.class))
+		if(player.containsEvent(SingleMatchEvent.class))
 			return;
 
-		if (command.startsWith("observeSiege"))
+		if(command.startsWith("observeSiege"))
 		{
 			String val = command.substring(13);
 			StringTokenizer st = new StringTokenizer(val);
@@ -38,9 +38,9 @@ public final class ObservationInstance extends NpcInstance
 
 			List<Zone> zones = new ArrayList<Zone>();
 			World.getZones(zones, new Location(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())), ReflectionManager.MAIN);
-			for (Zone z : zones)
+			for(Zone z : zones)
 			{
-				if (z.getType() == Zone.ZoneType.SIEGE && z.isActive())
+				if(z.getType() == Zone.ZoneType.SIEGE && z.isActive())
 				{
 					doObserve(player, val);
 					return;
@@ -49,7 +49,7 @@ public final class ObservationInstance extends NpcInstance
 
 			player.sendPacket(SystemMsg.OBSERVATION_IS_ONLY_POSSIBLE_DURING_A_SIEGE);
 		}
-		else if (command.startsWith("observe"))
+		else if(command.startsWith("observe"))
 			doObserve(player, command.substring(8));
 		else
 			super.onBypassFeedback(player, command);
@@ -69,7 +69,7 @@ public final class ObservationInstance extends NpcInstance
 		int y = Integer.parseInt(st.nextToken());
 		int z = Integer.parseInt(st.nextToken());
 
-		if (!player.reduceAdena(cost, true))
+		if(!player.reduceAdena(cost, true))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			player.sendActionFailed();

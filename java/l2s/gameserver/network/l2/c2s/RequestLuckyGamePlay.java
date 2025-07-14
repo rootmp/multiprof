@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,23 +42,23 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (_gamesCount <= 0)
+		if(_gamesCount <= 0)
 			return;
 
-		if (!Config.ALLOW_LUCKY_GAME_EVENT)
+		if(!Config.ALLOW_LUCKY_GAME_EVENT)
 			return;
 
-		if (_typeId < 0 || _typeId >= LuckyGameType.VALUES.length)
+		if(_typeId < 0 || _typeId >= LuckyGameType.VALUES.length)
 			return;
 
 		final LuckyGameData gameData = LuckyGameHolder.getInstance().getData(LuckyGameType.VALUES[_typeId]);
-		if (gameData == null)
+		if(gameData == null)
 			return;
 
-		if (player.getWeightPenalty() >= 3 || player.getInventoryLimit() * 0.8 < player.getInventory().getSize())
+		if(player.getWeightPenalty() >= 3 || player.getInventoryLimit() * 0.8 < player.getInventory().getSize())
 		{
 			player.sendPacket(new ExBettingLuckyGameResult(ExBettingLuckyGameResult.INVALID_CAPACITY, gameData.getType()));
 			player.sendPacket(SystemMsg.YOUR_INVENTORY_IS_EITHER_FULL_OR_OVERWEIGHT);
@@ -67,27 +68,27 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 		final int gamesLimit = gameData.getGamesLimit();
 		final int playedGamesCount;
 
-		if (gamesLimit > 0)
+		if(gamesLimit > 0)
 		{
 			playedGamesCount = player.getVarInt(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + gameData.getType().ordinal(), 0);
 
 			_gamesCount = Math.min(_gamesCount, gamesLimit - playedGamesCount);
-			if (_gamesCount <= 0)
+			if(_gamesCount <= 0)
 				return;
 		}
 		else
 			playedGamesCount = 0;
 
-		if (gameData.getFeeItemId() == -1)
+		if(gameData.getFeeItemId() == -1)
 		{
 			_gamesCount = Math.min(_gamesCount, (int) (player.getPremiumPoints() / gameData.getFeeItemCount()));
-			if (_gamesCount <= 0)
+			if(_gamesCount <= 0)
 				return;
 
 			final int consumePointsCount = (int) (_gamesCount * gameData.getFeeItemCount());
-			if (player.reducePremiumPoints(consumePointsCount))
+			if(player.reducePremiumPoints(consumePointsCount))
 			{
-				if (gameData.getType() == LuckyGameType.LUXURY)
+				if(gameData.getType() == LuckyGameType.LUXURY)
 					player.sendPacket(new SystemMessagePacket(SystemMsg.ROUND_S1_OF_LUXURY_FORTUNE_READING_COMPLETE).addInteger(_gamesCount));
 				else
 					player.sendPacket(new SystemMessagePacket(SystemMsg.ROUND_S1_OF_FORTUNE_READING_COMPLETE).addInteger(_gamesCount));
@@ -101,13 +102,13 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 		else
 		{
 			_gamesCount = Math.min(_gamesCount, (int) (ItemFunctions.getItemCount(player, gameData.getFeeItemId()) / gameData.getFeeItemCount()));
-			if (_gamesCount <= 0)
+			if(_gamesCount <= 0)
 				return;
 
 			final long consumeItemsCount = _gamesCount * gameData.getFeeItemCount();
-			if (ItemFunctions.deleteItem(player, gameData.getFeeItemId(), consumeItemsCount, false))
+			if(ItemFunctions.deleteItem(player, gameData.getFeeItemId(), consumeItemsCount, false))
 			{
-				if (gameData.getType() == LuckyGameType.LUXURY)
+				if(gameData.getType() == LuckyGameType.LUXURY)
 					player.sendPacket(new SystemMessagePacket(SystemMsg.ROUND_S1_OF_LUXURY_FORTUNE_READING_COMPLETE).addInteger(_gamesCount));
 				else
 					player.sendPacket(new SystemMessagePacket(SystemMsg.ROUND_S1_OF_FORTUNE_READING_COMPLETE).addInteger(_gamesCount));
@@ -121,10 +122,11 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 			}
 		}
 
-		if (gamesLimit > 0)
+		if(gamesLimit > 0)
 		{
 			SchedulingPattern reusePattern = gameData.getReusePattern();
-			player.setVar(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + gameData.getType().ordinal(), playedGamesCount + _gamesCount, reusePattern == null ? -1 : reusePattern.next(System.currentTimeMillis()));
+			player.setVar(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + gameData.getType().ordinal(), playedGamesCount
+					+ _gamesCount, reusePattern == null ? -1 : reusePattern.next(System.currentTimeMillis()));
 		}
 
 		final int serverGamesCount = ServerVariables.getInt(LuckyGameData.LUCKY_GAMES_COUNT_VAR + gameData.getType().ordinal(), 0);
@@ -135,19 +137,19 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 
 		TIntLongMap rewardsMap = new TIntLongHashMap();
 		List<LuckyGameItem> rewards = new ArrayList<LuckyGameItem>();
-		for (int i = 1; i <= _gamesCount; i++)
+		for(int i = 1; i <= _gamesCount; i++)
 		{
 			final boolean uniqueReward = ((serverGamesCount + i) % Config.LUCKY_GAME_UNIQUE_REWARD_GAMES_COUNT) == 0;
 			final boolean additionalReward = ((personalGamesCount + i) % Config.LUCKY_GAME_ADDITIONAL_REWARD_GAMES_COUNT) == 0;
 
 			LuckyGameItem reward = null;
-			if (uniqueReward)
+			if(uniqueReward)
 			{
 				reward = LuckyGameData.rollItem(gameData.getUniqueRewards(), true);
-				if (reward != null)
+				if(reward != null)
 				{
 					SystemMessagePacket sm;
-					if (gameData.getType() == LuckyGameType.LUXURY)
+					if(gameData.getType() == LuckyGameType.LUXURY)
 						sm = new SystemMessagePacket(SystemMsg.CONGRATULATIONS_C1_HAS_OBTAINED_S2_OF_S3_IN_THE_LUXURY_FORTUNE_READING);
 					else
 						sm = new SystemMessagePacket(SystemMsg.CONGRATULATIONS_C1_HAS_OBTAINED_S2_OF_S3_THROUGH_FORTUNE_READING);
@@ -159,19 +161,19 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 					Announcements.announceToAll(sm);
 				}
 			}
-			if (reward == null && additionalReward)
+			if(reward == null && additionalReward)
 				reward = LuckyGameData.rollItem(gameData.getAdditionalRewards(), true);
-			if (reward == null)
+			if(reward == null)
 				reward = LuckyGameData.rollItem(gameData.getCommonRewards(), false);
 
-			if (reward != null)
+			if(reward != null)
 			{
 				rewards.add(reward);
 				rewardsMap.put(reward.getId(), rewardsMap.get(reward.getId()) + reward.getCount());
 			}
 		}
 
-		for (TIntLongIterator iterator = rewardsMap.iterator(); iterator.hasNext();)
+		for(TIntLongIterator iterator = rewardsMap.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			ItemFunctions.addItem(player, iterator.key(), iterator.value());

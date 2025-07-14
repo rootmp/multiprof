@@ -25,13 +25,13 @@ public class AdminKill implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditNPC)
+		if(!activeChar.getPlayerAccess().CanEditNPC)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_kill:
-				if (wordList.length == 1)
+				if(wordList.length == 1)
 					handleKill(activeChar);
 				else
 					handleKill(activeChar, wordList[1]);
@@ -58,19 +58,19 @@ public class AdminKill implements IAdminCommandHandler
 	private void handleKill(Player activeChar, String player)
 	{
 		GameObject obj = activeChar.getTarget();
-		if (player != null)
+		if(player != null)
 		{
 			Player plyr = World.getPlayer(player);
-			if (plyr != null)
+			if(plyr != null)
 				obj = plyr;
 			else
 			{
 				int radius = Math.max(Integer.parseInt(player), 100);
-				for (Creature character : activeChar.getAroundCharacters(radius, 200))
+				for(Creature character : activeChar.getAroundCharacters(radius, 200))
 				{
-					if (!character.isDoor())
+					if(!character.isDoor())
 					{
-						if (character.isNpc())
+						if(character.isNpc())
 							((NpcInstance) character).getAggroList().addDamageHate(activeChar, (int) character.getCurrentHp(), 0);
 						character.doDie(activeChar);
 					}
@@ -80,11 +80,11 @@ public class AdminKill implements IAdminCommandHandler
 			}
 		}
 
-		if (obj != null && obj.isCreature())
+		if(obj != null && obj.isCreature())
 		{
 			Creature target = (Creature) obj;
 			target.doDie(activeChar);
-			if (obj.isPlayer())
+			if(obj.isPlayer())
 				activeChar.getAI().Cast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, 52020, 1), activeChar, true, false);
 		}
 		else
@@ -95,13 +95,13 @@ public class AdminKill implements IAdminCommandHandler
 	{
 		GameObject obj = activeChar.getTarget();
 
-		if (obj == null)
+		if(obj == null)
 		{
 			activeChar.sendPacket(SystemMsg.SELECT_TARGET);
 			return;
 		}
 
-		if (!obj.isCreature())
+		if(!obj.isCreature())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return;

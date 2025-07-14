@@ -10,7 +10,7 @@ import l2s.gameserver.templates.randomCraft.RandomCraftRewardItem;
 public class ExCraftRandomInfo implements IClientOutgoingPacket
 {
 	private final Player _player;
-	
+
 	public ExCraftRandomInfo(Player player)
 	{
 		_player = player;
@@ -22,10 +22,10 @@ public class ExCraftRandomInfo implements IClientOutgoingPacket
 		final List<RandomCraftRewardItem> rewards = _player.getRandomCraft().getRewards();
 		int size = 5;
 		packetWriter.writeD(size); // size
-		for (int i = 0; i < rewards.size(); i++)
+		for(int i = 0; i < rewards.size(); i++)
 		{
 			final RandomCraftRewardItem holder = rewards.get(i);
-			if ((holder != null) && (holder.getItemId() != 0))
+			if((holder != null) && (holder.getItemId() != 0))
 			{
 				packetWriter.writeC(holder.isLocked() ? 1 : 0); // Locked
 				packetWriter.writeD(holder.getLockLeft()); // Rolls it will stay locked
@@ -42,7 +42,7 @@ public class ExCraftRandomInfo implements IClientOutgoingPacket
 			size--;
 		}
 		// Write missing
-		for (int i = size; i > 0; i--)
+		for(int i = size; i > 0; i--)
 		{
 			packetWriter.writeC(0);
 			packetWriter.writeD(0);

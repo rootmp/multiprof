@@ -7,8 +7,7 @@ import l2s.gameserver.model.World;
 public class MapUtils
 {
 	private MapUtils()
-	{
-	}
+	{}
 
 	public static int regionX(GameObject o)
 	{

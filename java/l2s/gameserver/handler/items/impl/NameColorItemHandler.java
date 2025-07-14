@@ -11,9 +11,9 @@ public class NameColorItemHandler extends DefaultItemHandler
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
 		Player player;
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 			player = (Player) playable;
-		else if (playable.isPet())
+		else if(playable.isPet())
 			player = playable.getPlayer();
 		else
 			return false;

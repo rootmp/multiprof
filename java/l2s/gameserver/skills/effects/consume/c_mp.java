@@ -19,11 +19,11 @@ public final class c_mp extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return false;
 
 		final double consume = getValue() * getInterval();
-		if (consume > effected.getCurrentMp())
+		if(consume > effected.getCurrentMp())
 		{
 			effected.sendPacket(SystemMsg.YOUR_SKILL_WAS_DEACTIVATED_DUE_TO_LACK_OF_MP);
 			return false;

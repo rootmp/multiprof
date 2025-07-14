@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
@@ -22,7 +23,7 @@ public class RequestMenteeWaitingList implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if ((player == null) || maxLevel == 0 || minLevel == 0 || page == 0)
+		if((player == null) || maxLevel == 0 || minLevel == 0 || page == 0)
 			return;
 		player.sendMenteeList();
 		player.sendUserInfo(true);

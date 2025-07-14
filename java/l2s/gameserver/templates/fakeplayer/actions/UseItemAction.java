@@ -29,12 +29,12 @@ public class UseItemAction extends AbstractAction
 		try
 		{
 			ItemInstance item = player.getInventory().getItemByItemId(_itemId);
-			if (item == null)
+			if(item == null)
 			{
 				ItemFunctions.addItem(player, _itemId, 1, true);
 
 				item = player.getInventory().getItemByItemId(_itemId);
-				if (item == null)
+				if(item == null)
 				{
 					player.sendActionFailed();
 					return false;

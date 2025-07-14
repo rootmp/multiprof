@@ -41,14 +41,14 @@ public class ItemListPacket implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_type == 2)
+		if(_type == 2)
 		{
 			packetWriter.writeC(_type);
 			packetWriter.writeD(_size); // Total items
 			packetWriter.writeD(_size); // Items in this page
-			for (ItemInstance temp : _items)
+			for(ItemInstance temp : _items)
 			{
-				if (temp.getTemplate().isQuest())
+				if(temp.getTemplate().isQuest())
 				{
 					continue;
 				}

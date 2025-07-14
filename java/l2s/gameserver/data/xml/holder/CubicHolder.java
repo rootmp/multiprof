@@ -1,9 +1,8 @@
 package l2s.gameserver.data.xml.holder;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.cubic.CubicTemplate;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author VISTALL
@@ -20,8 +19,7 @@ public final class CubicHolder extends AbstractHolder
 	}
 
 	private CubicHolder()
-	{
-	}
+	{}
 
 	public void addCubicTemplate(CubicTemplate template)
 	{

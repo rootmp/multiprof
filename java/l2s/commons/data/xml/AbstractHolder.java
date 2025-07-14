@@ -8,7 +8,7 @@ import l2s.commons.logging.LoggerObject;
 public abstract class AbstractHolder extends LoggerObject
 {
 	private long parseStartTime, parseEndTime;
-	
+
 	public void log()
 	{
 		info(String.format("loaded %d%s(s) count.", size(), formatOut(getClass().getSimpleName().replace("Holder", "")).toLowerCase()));
@@ -32,9 +32,9 @@ public abstract class AbstractHolder extends LoggerObject
 	{
 		char[] chars = st.toCharArray();
 		StringBuilder buf = new StringBuilder(chars.length);
-		for (char ch : chars)
+		for(char ch : chars)
 		{
-			if (Character.isUpperCase(ch))
+			if(Character.isUpperCase(ch))
 			{
 				buf.append(" ");
 			}
@@ -47,14 +47,16 @@ public abstract class AbstractHolder extends LoggerObject
 	/**
 	 * Вызывается непосредственно перед загрузкой
 	 */
-	public void beforeParsing() {
+	public void beforeParsing()
+	{
 		parseStartTime = System.nanoTime();
 	}
 
 	/**
 	 * Вызывается после того, как были загружены все элементы.
 	 */
-	public void afterParsing() {
+	public void afterParsing()
+	{
 		parseEndTime = System.nanoTime();
 	}
 }

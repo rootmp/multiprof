@@ -6,8 +6,7 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExCraftRandomLockSlot implements IClientOutgoingPacket
 {
 	public ExCraftRandomLockSlot()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

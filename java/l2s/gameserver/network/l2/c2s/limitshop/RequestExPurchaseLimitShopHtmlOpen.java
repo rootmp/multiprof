@@ -21,16 +21,16 @@ public class RequestExPurchaseLimitShopHtmlOpen implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.isInJail())
+		if(player.isInJail())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		switch (_type)
+		switch(_type)
 		{
 			case 5: // Dimensional Merchant
 			{

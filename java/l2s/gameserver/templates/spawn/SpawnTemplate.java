@@ -48,10 +48,10 @@ public class SpawnTemplate
 	// ----------------------------------------------------------------------------------------------------------
 	public void addSpawnPoint(SpawnPoint loc)
 	{
-		if (_spawnPointList.isEmpty())
+		if(_spawnPointList.isEmpty())
 		{
 			_spawnPointList = new ArrayList<SpawnPoint>(1);
-			if (StringUtils.isEmpty(_name))
+			if(StringUtils.isEmpty(_name))
 			{
 				_name = "point: " + loc.getLoc().toXYZString();
 			}
@@ -78,10 +78,10 @@ public class SpawnTemplate
 	// ----------------------------------------------------------------------------------------------------------
 	public void addTerritory(String name, Territory territory)
 	{
-		if (_territoryList.isEmpty())
+		if(_territoryList.isEmpty())
 		{
 			_territoryList = new ArrayList<Territory>(1);
-			if (StringUtils.isEmpty(_name))
+			if(StringUtils.isEmpty(_name))
 			{
 				_name = name;
 			}

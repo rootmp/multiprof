@@ -29,10 +29,10 @@ public class Charge extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		Player player = (Player) activeChar;
@@ -41,12 +41,12 @@ public class Charge extends Skill
 
 		// Камушки можно юзать даже если заряд > 7, остальное только если заряд <
 		// уровень скила
-		if (getPower() <= 0 && getId() != 2165 && player.getIncreasedForce() >= charges)
+		if(getPower() <= 0 && getId() != 2165 && player.getIncreasedForce() >= charges)
 		{
 			activeChar.sendPacket(SystemMsg.YOUR_FORCE_HAS_REACHED_MAXIMUM_CAPACITY_);
 			return false;
 		}
-		else if (getId() == 2165)
+		else if(getId() == 2165)
 			player.sendPacket(new MagicSkillUse(player, player, 2165, 1, 0, 0, 0));
 
 		return true;
@@ -57,37 +57,38 @@ public class Charge extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (activeChar.isPlayer())
+		if(activeChar.isPlayer())
 			chargePlayer((Player) activeChar, getId());
 	}
 
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
-		if (target == activeChar)
+		if(target == activeChar)
 			return;
 
-		if (getPower() <= 0)
+		if(getPower() <= 0)
 			return;
 
 		final Creature realTarget = reflected ? activeChar : target;
 		final AttackInfo info = Formulas.calcSkillPDamage(activeChar, realTarget, this, false, isSSPossible());
-		if (info == null)
+		if(info == null)
 			return;
 
-		realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit || info.blow, false, false, info.elementalDamage, info.elementalCrit);
-		if (!info.miss || info.damage >= 1)
+		realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit
+				|| info.blow, false, false, info.elementalDamage, info.elementalCrit);
+		if(!info.miss || info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
-			else if (!reflected)
+			else if(!reflected)
 				realTarget.doCounterAttack(this, activeChar, false);
 		}
 	}
@@ -95,12 +96,12 @@ public class Charge extends Skill
 	public void chargePlayer(Player player, Integer skillId)
 	{
 		int charges = _charges == -1 ? player.getMaxIncreasedForce() : _charges;
-		if (player.getIncreasedForce() >= charges)
+		if(player.getIncreasedForce() >= charges)
 		{
 			player.sendPacket(SystemMsg.YOUR_FORCE_HAS_REACHED_MAXIMUM_CAPACITY_);
 			return;
 		}
-		if (_fullCharge)
+		if(_fullCharge)
 			player.setIncreasedForce(charges);
 		else
 			player.setIncreasedForce(player.getIncreasedForce() + 1);

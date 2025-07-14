@@ -37,11 +37,11 @@ public final class FightClubMapHolder extends AbstractHolder
 	public List<FightClubMap> getMapsForEvent(String eventName)
 	{
 		List<FightClubMap> maps = new ArrayList<FightClubMap>();
-		for (FightClubMap map : _maps)
+		for(FightClubMap map : _maps)
 		{
-			for (String possibleName : map.getEvents())
+			for(String possibleName : map.getEvents())
 			{
-				if (!possibleName.equalsIgnoreCase(eventName))
+				if(!possibleName.equalsIgnoreCase(eventName))
 				{
 					continue;
 				}
@@ -56,11 +56,11 @@ public final class FightClubMapHolder extends AbstractHolder
 	{
 		List<FightClubMap> allMaps = getMapsForEvent(eventName);
 		List<Integer> teams = new ArrayList<Integer>();
-		for (FightClubMap map : allMaps)
+		for(FightClubMap map : allMaps)
 		{
-			for (int possibility : map.getTeamCount())
+			for(int possibility : map.getTeamCount())
 			{
-				if (!teams.contains(possibility))
+				if(!teams.contains(possibility))
 				{
 					teams.add(possibility);
 				}
@@ -75,10 +75,10 @@ public final class FightClubMapHolder extends AbstractHolder
 	{
 		List<FightClubMap> allMaps = getMapsForEvent(eventName);
 		int minPlayers = Integer.MAX_VALUE;
-		for (FightClubMap map : allMaps)
+		for(FightClubMap map : allMaps)
 		{
 			int newMin = map.getMinAllPlayers();
-			if (newMin < minPlayers)
+			if(newMin < minPlayers)
 			{
 				minPlayers = newMin;
 			}
@@ -90,10 +90,10 @@ public final class FightClubMapHolder extends AbstractHolder
 	{
 		List<FightClubMap> allMaps = getMapsForEvent(eventName);
 		int maxPlayers = 0;
-		for (FightClubMap map : allMaps)
+		for(FightClubMap map : allMaps)
 		{
 			int newMax = map.getMaxAllPlayers();
-			if (newMax > maxPlayers)
+			if(newMax > maxPlayers)
 			{
 				maxPlayers = newMax;
 			}

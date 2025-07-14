@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
@@ -28,11 +29,11 @@ public class RequestPledgeWaitingUser implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		ClanSearchPlayer csPlayer = ClanSearchManager.getInstance().getApplicant(_clanId, _charId);
-		if (csPlayer == null)
+		if(csPlayer == null)
 			activeChar.sendPacket(new ExPledgeWaitingList(_clanId));
 		else
 			activeChar.sendPacket(new ExPledgeWaitingUser(_charId, csPlayer.getDesc()));

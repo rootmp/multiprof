@@ -16,7 +16,7 @@ public class ConditionUsingArmor extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (env.character.isPlayer() && ((Player) env.character).getWearingArmorType() == _armor)
+		if(env.character.isPlayer() && ((Player) env.character).getWearingArmorType() == _armor)
 			return true;
 
 		return false;

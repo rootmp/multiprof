@@ -22,11 +22,11 @@ public class Craft extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
 		Player p = (Player) activeChar;
-		if (p.isInStoreMode() || p.isProcessingRequest())
+		if(p.isInStoreMode() || p.isProcessingRequest())
 			return false;
 
 		return true;

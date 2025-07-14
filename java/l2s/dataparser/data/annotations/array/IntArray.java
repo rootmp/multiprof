@@ -18,8 +18,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface IntArray
-{
+public @interface IntArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -47,7 +46,9 @@ public @interface IntArray
 	 *
 	 * @return
 	 */
-	String[] bounds() default { "\\{", "}" };
+	String[] bounds() default {
+			"\\{", "}"
+	};
 
 	/**
 	 * Может ли поле принимать значение null true - включает дополнительную
@@ -56,10 +57,11 @@ public @interface IntArray
 	 * @return true - поле класса может принимать значение null
 	 */
 	boolean canBeNull() default true;
-  /**
-   * Если true и поле-приёмник - это java.util.List<Integer>,
-   * парсер разложит элементы «плоско» (каждое число отдельно),
-   * а не как массив int[].
-   */
-  boolean flat() default false;
+
+	/**
+	 * Если true и поле-приёмник - это java.util.List<Integer>,
+	 * парсер разложит элементы «плоско» (каждое число отдельно),
+	 * а не как массив int[].
+	 */
+	boolean flat() default false;
 }

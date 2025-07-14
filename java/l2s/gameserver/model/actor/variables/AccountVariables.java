@@ -17,7 +17,7 @@ public class AccountVariables
 	public void restoreVariables(String accountName)
 	{
 		_accountName = accountName;
-		
+
 		List<VariableContainer> variables = AccountVariablesDAO.getInstance().restore(_accountName);
 		for(VariableContainer var : variables)
 			_accountVariables.put(var.getName(), var);
@@ -35,20 +35,20 @@ public class AccountVariables
 
 	public void setVar(String name, List<Integer> list)
 	{
-		if ((list == null) || list.isEmpty())
+		if((list == null) || list.isEmpty())
 			return;
 
 		final StringBuilder sb = new StringBuilder();
-		for (int element : list)
+		for(int element : list)
 		{
 			sb.append(element);
 			sb.append(",");
 		}
 		sb.deleteCharAt(sb.length() - 1);
-		
+
 		setVar(name, sb.toString());
 	}
-	
+
 	public boolean setVar(String name, Object value, long expirationTime)
 	{
 		VariableContainer var = new VariableContainer(name, String.valueOf(value), expirationTime);
@@ -66,12 +66,12 @@ public class AccountVariables
 			return false;
 		for(String key : _accountVariables.keySet())
 		{
-			if(key.indexOf(name) != -1 && AccountVariablesDAO.getInstance().delete2(_accountName, name+"%"))
+			if(key.indexOf(name) != -1 && AccountVariablesDAO.getInstance().delete2(_accountName, name + "%"))
 				return _accountVariables.remove(key) != null;
 		}
 		return false;
 	}
-	
+
 	public boolean unsetVar(String name)
 	{
 		if(name == null || name.isEmpty())
@@ -87,23 +87,22 @@ public class AccountVariables
 	{
 		final String val = getVar(name);
 		final List<Integer> result;
-		if (val != null)
+		if(val != null)
 		{
 			final String[] splitVal = val.split(",");
 			result = new ArrayList<>(splitVal.length + 1);
-			for (String split : splitVal)
+			for(String split : splitVal)
 				result.add(Integer.parseInt(split));
 		}
 		else
 			result = new ArrayList<>(1);
 		return result;
 	}
-	
+
 	public String getVar(String name)
 	{
 		return getVar(name, null);
 	}
-
 
 	public VariableContainer getVarObject(String name)
 	{
@@ -113,7 +112,7 @@ public class AccountVariables
 
 		return null;
 	}
-	
+
 	public String getVar(String name, String defaultValue)
 	{
 		VariableContainer var = _accountVariables.get(name);

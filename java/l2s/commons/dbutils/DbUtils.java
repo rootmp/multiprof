@@ -18,7 +18,7 @@ public class DbUtils
 	 */
 	public static void close(Connection conn) throws SQLException
 	{
-		if (conn != null)
+		if(conn != null)
 			conn.close();
 	}
 
@@ -30,7 +30,7 @@ public class DbUtils
 	 */
 	public static void close(ResultSet rs) throws SQLException
 	{
-		if (rs != null)
+		if(rs != null)
 			rs.close();
 	}
 
@@ -42,7 +42,7 @@ public class DbUtils
 	 */
 	public static void close(Statement stmt) throws SQLException
 	{
-		if (stmt != null)
+		if(stmt != null)
 			stmt.close();
 	}
 
@@ -72,7 +72,7 @@ public class DbUtils
 		{
 			close(conn);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			// quiet
 		}
@@ -157,7 +157,7 @@ public class DbUtils
 		{
 			close(rs);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			// quiet
 		}
@@ -175,7 +175,7 @@ public class DbUtils
 		{
 			close(stmt);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			// quiet
 		}

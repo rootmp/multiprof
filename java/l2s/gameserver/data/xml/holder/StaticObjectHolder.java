@@ -35,8 +35,8 @@ public final class StaticObjectHolder extends AbstractHolder
 
 	public void spawnAll()
 	{
-		for (StaticObjectTemplate template : _templates.valueCollection())
-			if (template.isSpawn())
+		for(StaticObjectTemplate template : _templates.valueCollection())
+			if(template.isSpawn())
 			{
 				StaticObjectInstance obj = template.newInstance();
 

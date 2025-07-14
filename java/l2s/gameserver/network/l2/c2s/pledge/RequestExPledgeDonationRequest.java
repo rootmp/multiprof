@@ -15,11 +15,11 @@ import l2s.gameserver.model.pledge.UnitMember;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
+import l2s.gameserver.network.l2.s2c.ExBloodyCoinCount;
 import l2s.gameserver.network.l2.s2c.ExNoticePostArrived;
 import l2s.gameserver.network.l2.s2c.ExUnReadMailCount;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
-import l2s.gameserver.network.l2.s2c.ExBloodyCoinCount;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeContributionList;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeDonationInfo;
 import l2s.gameserver.network.l2.s2c.pledge.ExPledgeDonationRequest;
@@ -32,6 +32,7 @@ import l2s.gameserver.utils.ItemFunctions;
 public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 {
 	private int _donateType;
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -45,21 +46,21 @@ public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
-		if (activeChar.getClan() == null)
+
+		if(activeChar.getClan() == null)
 			return;
-		
+
 		//if (activeChar.getVarBoolean(PlayerVariables.DONATION_BLOCKED, false) == true)
-			//return;
-		
+		//return;
+
 		int donations = activeChar.getVarInt(PlayerVariables.DONATIONS_AVAILABLE, PledgeContributionHolder.getInstance().getDonationsAvailable());
 		Clan clan = activeChar.getClan();
-		if (donations < 1)
+		if(donations < 1)
 			return;
 		ClanContribution contribution = PledgeContributionHolder.getInstance().getContribution(_donateType);
-		if (contribution==null)
+		if(contribution == null)
 			return;
-		
+
 		if(!ItemFunctions.deleteItem(activeChar, contribution._ingredientItemId, contribution._ingredientCount))
 		{
 			activeChar.sendPacket(new ExPledgeDonationRequest(false, activeChar, _donateType));
@@ -68,7 +69,7 @@ public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 		else
 		{
 			activeChar.getListeners().onPlayerClanContributions(_donateType);
-			
+
 			clan.addExp(contribution._expCount);
 			int weeklyContribution = activeChar.getVarInt(PlayerVariables.WEEKLY_CONTRIBUTION, 0) + contribution._expCount;
 			int totalContribution = activeChar.getVarInt(PlayerVariables.TOTAL_CONTRIBUTION, 0) + contribution._expCount;
@@ -77,11 +78,11 @@ public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 
 			if(contribution._rewardItemId != 0)
 			{
-				if(contribution._rewardItemId ==-700)
+				if(contribution._rewardItemId == -700)
 				{
-					boolean critical = Rnd.get(100) < contribution._rewardChance? true : false;
+					boolean critical = Rnd.get(100) < contribution._rewardChance ? true : false;
 					int coins = contribution._rewardCount;
-					if (!critical)
+					if(!critical)
 					{
 						activeChar.setHonorCoins(activeChar.getHonorCoins() + coins);
 					}
@@ -96,20 +97,20 @@ public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 				}
 			}
 		}
-		
+
 		activeChar.setVar(PlayerVariables.DONATIONS_AVAILABLE, --donations);
-		
+
 		activeChar.sendPacket(new ExBloodyCoinCount(activeChar));
 		activeChar.sendPacket(new ExPledgeDonationRequest(true, activeChar, _donateType));
 		activeChar.sendPacket(new ExPledgeContributionList(activeChar.getClan()));
 		activeChar.sendPacket(new ExPledgeDonationInfo(activeChar));
 	}
-	
+
 	private static void sendMailToMembers(Player player, int count)
 	{
-		for (UnitMember member : player.getClan().getAllMembers())
+		for(UnitMember member : player.getClan().getAllMembers())
 		{
-			if (member.getObjectId() == player.getObjectId())
+			if(member.getObjectId() == player.getObjectId())
 				continue;
 			Mail mail = new Mail();
 			mail.setSenderId(1);
@@ -118,20 +119,20 @@ public class RequestExPledgeDonationRequest implements IClientIncomingPacket
 			mail.setReceiverName(member.getName());
 			mail.setTopic("Critical Donation Reward");
 			mail.setBody("Clan member " + player.getName() + " makes critical donation. This is reward to clan members.");
-			
+
 			ItemInstance item = ItemFunctions.createItem(95570);
 			item.setLocation(ItemLocation.MAIL);
 			item.setCount(count / 2);
 			item.save();
-			
+
 			mail.addAttachment(item);
 			mail.setUnread(true);
 			mail.setType(Mail.SenderType.BIRTHDAY);
 			mail.setExpireTime(720 * 3600 + (int) (System.currentTimeMillis() / 1000L));
 			mail.save();
-			
+
 			Player plr = GameObjectsStorage.getPlayer(member.getObjectId());
-			if (plr != null)
+			if(plr != null)
 			{
 				plr.sendPacket(ExNoticePostArrived.STATIC_TRUE);
 				plr.sendPacket(new ExUnReadMailCount(plr));

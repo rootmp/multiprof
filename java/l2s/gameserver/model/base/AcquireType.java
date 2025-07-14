@@ -37,9 +37,9 @@ public enum AcquireType
 
 	public static AcquireType getById(int id)
 	{
-		for (AcquireType at : VALUES)
+		for(AcquireType at : VALUES)
 		{
-			if (at.getId() == id)
+			if(at.getId() == id)
 				return at;
 		}
 		return null;

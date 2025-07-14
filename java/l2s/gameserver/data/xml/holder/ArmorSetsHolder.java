@@ -3,10 +3,9 @@ package l2s.gameserver.data.xml.holder;
 import java.util.ArrayList;
 import java.util.List;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.ArmorSet;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public final class ArmorSetsHolder extends AbstractHolder
 {
@@ -20,55 +19,55 @@ public final class ArmorSetsHolder extends AbstractHolder
 
 	public void addArmorSet(ArmorSet armorset)
 	{
-		for (int id : armorset.getChestIds())
+		for(int id : armorset.getChestIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);
 		}
 
-		for (int id : armorset.getLegIds())
+		for(int id : armorset.getLegIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);
 		}
 
-		for (int id : armorset.getHeadIds())
+		for(int id : armorset.getHeadIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);
 		}
 
-		for (int id : armorset.getGlovesIds())
+		for(int id : armorset.getGlovesIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);
 		}
 
-		for (int id : armorset.getFeetIds())
+		for(int id : armorset.getFeetIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);
 		}
 
-		for (int id : armorset.getShieldIds())
+		for(int id : armorset.getShieldIds())
 		{
 			List<ArmorSet> sets = _armorSets.get(id);
-			if (sets == null)
+			if(sets == null)
 				sets = new ArrayList<ArmorSet>();
 			sets.add(armorset);
 			_armorSets.put(id, sets);

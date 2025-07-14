@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.dao.JdbcEntityState;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.dao.MailDAO;
@@ -34,13 +35,13 @@ public class RequestExRequestReceivedPost implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Mail mail = MailDAO.getInstance().getReceivedMailByMailId(activeChar.getObjectId(), postId);
-		if (mail != null)
+		if(mail != null)
 		{
-			if (mail.isUnread())
+			if(mail.isUnread())
 			{
 				mail.setUnread(false);
 				mail.setJdbcState(JdbcEntityState.UPDATED);

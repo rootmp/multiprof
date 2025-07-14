@@ -35,7 +35,7 @@ public class ExShowSentPostList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD((int) (System.currentTimeMillis() / 1000L));
 		packetWriter.writeD(mails.size()); // количество писем
-		for (Mail mail : mails)
+		for(Mail mail : mails)
 		{
 			packetWriter.writeD(mail.getMessageId()); // уникальный id письма
 			packetWriter.writeS(mail.getTopic()); // топик

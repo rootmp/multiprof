@@ -11,17 +11,16 @@ import l2s.gameserver.templates.CollectionTemplate;
  * @author nexvill
  */
 public class ExCollectionActiveEvent implements IClientOutgoingPacket
-{	
+{
 	public ExCollectionActiveEvent()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		List<CollectionTemplate> collections = CollectionsData.getInstance().getCollectionsByTabId(7);
 		packetWriter.writeD(collections.size());
-		for (int i = 0; i < collections.size(); i++)
+		for(int i = 0; i < collections.size(); i++)
 		{
 			packetWriter.writeH(collections.get(i).getId()); //event collection id
 		}

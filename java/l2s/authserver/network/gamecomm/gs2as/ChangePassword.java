@@ -48,12 +48,12 @@ public class ChangePassword extends ReceivablePacket
 				statement.setString(1, _accname);
 				rs = statement.executeQuery();
 
-				if (rs.next())
+				if(rs.next())
 				{
 					dbPassword = rs.getString("password");
 				}
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.warn("Can't recive old password for account " + _accname + ", exciption :" + e);
 			}
@@ -66,7 +66,7 @@ public class ChangePassword extends ReceivablePacket
 			// changed or not.
 			try
 			{
-				if (!Config.DEFAULT_CRYPT.compare(_oldPass, dbPassword))
+				if(!Config.DEFAULT_CRYPT.compare(_oldPass, dbPassword))
 				{
 					ChangePasswordResponse cp1;
 					cp1 = new ChangePasswordResponse(_accname, false);
@@ -83,7 +83,7 @@ public class ChangePassword extends ReceivablePacket
 					sendPacket(cp1);
 				}
 			}
-			catch (Exception e1)
+			catch(Exception e1)
 			{
 				e1.printStackTrace();
 			}
@@ -92,7 +92,7 @@ public class ChangePassword extends ReceivablePacket
 				DbUtils.closeQuietly(statement);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}

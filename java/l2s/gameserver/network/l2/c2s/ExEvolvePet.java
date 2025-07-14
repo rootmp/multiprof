@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.NpcHolder;
@@ -23,23 +24,25 @@ public class ExEvolvePet implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		final PetInstance pet = activeChar.getPet();
-		if (pet == null)
+		if(pet == null)
 			return;
 
 		final boolean isAbleToEvolveLevel1 = pet.getLevel() >= 40 && pet.getEvolveLevel() == 0;
 		final boolean isAbleToEvolveLevel2 = pet.getLevel() >= 76 && pet.getEvolveLevel() == 1;
 
-		if (pet.getPetType() != 0 && !pet.isMounted() && !activeChar.isMounted() && !pet.isDead() && !activeChar.isDead() && !pet.isHungry() && !activeChar.isDecontrolled() && !activeChar.isInDuel() && !activeChar.isSitting() && !activeChar.isFishing() && !activeChar.isInCombat() && !pet.isInCombat())
+		if(pet.getPetType() != 0 && !pet.isMounted() && !activeChar.isMounted() && !pet.isDead() && !activeChar.isDead() && !pet.isHungry()
+				&& !activeChar.isDecontrolled() && !activeChar.isInDuel() && !activeChar.isSitting() && !activeChar.isFishing() && !activeChar.isInCombat()
+				&& !pet.isInCombat())
 		{
-			if (isAbleToEvolveLevel1 && activeChar.consumeItem(94096, 1, true))
+			if(isAbleToEvolveLevel1 && activeChar.consumeItem(94096, 1, true))
 			{
 				doEvolve(activeChar, pet, Servitor.EvolveLevel.First, Rnd.nextBoolean() ? 2 : 1);
 			}
-			else if (isAbleToEvolveLevel2 && activeChar.consumeItem(94117, 1, true))
+			else if(isAbleToEvolveLevel2 && activeChar.consumeItem(94117, 1, true))
 			{
 				doEvolve(activeChar, pet, Servitor.EvolveLevel.Second, 2);
 			}
@@ -54,7 +57,7 @@ public class ExEvolvePet implements IClientIncomingPacket
 	{
 		final ItemInstance controlItem = pet.getControlItem();
 		PetInstance evolved = PetInstance.restore(controlItem, NpcHolder.getInstance().getTemplate(pet.getNpcId() + incPetId), activeChar);
-		if (evolved == null)
+		if(evolved == null)
 		{
 			activeChar.sendMessage("Something went wrong. Pet evolve rejected");
 			return;
@@ -64,7 +67,7 @@ public class ExEvolvePet implements IClientIncomingPacket
 		evolved.setTitle(Servitor.TITLE_BY_OWNER_NAME);
 
 		activeChar.storeEvolvedPets(evolveLevel.ordinal(), pet.getNpcId() + incPetId, controlItem.getItemId());
-		if (!evolved.isRespawned())
+		if(!evolved.isRespawned())
 		{
 			evolved.store();
 		}

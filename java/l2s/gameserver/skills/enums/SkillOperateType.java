@@ -116,7 +116,7 @@ public enum SkillOperateType
 	 */
 	public boolean isActive()
 	{
-		switch (this)
+		switch(this)
 		{
 			case A1:
 			case A2:
@@ -143,7 +143,7 @@ public enum SkillOperateType
 	 */
 	public boolean isContinuous()
 	{
-		switch (this)
+		switch(this)
 		{
 			case A2:
 			case A4:
@@ -231,7 +231,7 @@ public enum SkillOperateType
 	 */
 	public boolean isChanneling()
 	{
-		switch (this)
+		switch(this)
 		{
 			case CA1:
 			case CA2:

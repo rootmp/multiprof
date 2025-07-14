@@ -2,8 +2,8 @@ package l2s.gameserver.network.l2.s2c.itemrestore;
 
 import java.util.List;
 
-import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 public class ExItemRestoreList implements IClientOutgoingPacket
 {
@@ -21,7 +21,7 @@ public class ExItemRestoreList implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(cCategory);
 		packetWriter.writeD(items.size());
-		for (PkItemRestoreNode item : items)
+		for(PkItemRestoreNode item : items)
 		{
 			packetWriter.writeD(item.nBrokenItemClassID);
 			packetWriter.writeD(item.nFixedItemClassID);

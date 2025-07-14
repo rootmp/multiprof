@@ -49,8 +49,8 @@ public class AdminOldBan implements IAdminCommandHandler
 
 		StringTokenizer st = new StringTokenizer(fullString);
 
-		if (activeChar.getPlayerAccess().CanTradeBanUnban)
-			switch (command)
+		if(activeChar.getPlayerAccess().CanTradeBanUnban)
+			switch(command)
 			{
 				case admin_trade_ban:
 					return tradeBan(st, activeChar);
@@ -58,8 +58,8 @@ public class AdminOldBan implements IAdminCommandHandler
 					return tradeUnban(st, activeChar);
 			}
 
-		if (activeChar.getPlayerAccess().CanBan)
-			switch (command)
+		if(activeChar.getPlayerAccess().CanBan)
+			switch(command)
 			{
 				case admin_old_ban:
 					ban(st, activeChar);
@@ -73,17 +73,17 @@ public class AdminOldBan implements IAdminCommandHandler
 
 					String account = st.nextToken();
 
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						banExpire = (int) (System.currentTimeMillis() / 1000L) + Integer.parseInt(st.nextToken()) * 60;
 					else
 						level = -100;
 
 					AuthServerCommunication.getInstance().sendPacket(new ChangeAccessLevel(account, level, banExpire));
 					GameClient client = AuthServerCommunication.getInstance().getAuthedClient(account);
-					if (client != null)
+					if(client != null)
 					{
 						Player player = client.getActiveChar();
-						if (player != null)
+						if(player != null)
 						{
 							player.kick();
 							activeChar.sendMessage("Player " + player.getName() + " kicked.");
@@ -100,17 +100,17 @@ public class AdminOldBan implements IAdminCommandHandler
 
 					String account = st.nextToken();
 
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						banExpire = (int) (System.currentTimeMillis() / 1000L) + Integer.parseInt(st.nextToken()) * 60;
 					else
 						level = -100;
 
 					AuthServerCommunication.getInstance().sendPacket(new ChangeAccessLevel(account, level, banExpire));
 					GameClient client = AuthServerCommunication.getInstance().getAuthedClient(account);
-					if (client != null)
+					if(client != null)
 					{
 						Player player = client.getActiveChar();
-						if (player != null)
+						if(player != null)
 						{
 							HWIDBan.getInstance().addToBlackList(client.getHWID());
 							player.kick();
@@ -139,12 +139,12 @@ public class AdminOldBan implements IAdminCommandHandler
 						String bmsg = "admin_chatban " + player + " " + period + " ";
 						String msg = fullString.substring(bmsg.length(), fullString.length());
 
-						if (AutoBan.ChatBan(player, Integer.parseInt(period), msg, activeChar.getName()))
+						if(AutoBan.ChatBan(player, Integer.parseInt(period), msg, activeChar.getName()))
 							activeChar.sendMessage("You ban chat for " + player + ".");
 						else
 							activeChar.sendMessage("Can't find char " + player + ".");
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						activeChar.sendMessage("Command syntax: //chatban char_name period reason");
 					}
@@ -160,12 +160,12 @@ public class AdminOldBan implements IAdminCommandHandler
 						st.nextToken();
 						String player = st.nextToken();
 
-						if (AutoBan.ChatUnBan(player, activeChar.getName()))
+						if(AutoBan.ChatUnBan(player, activeChar.getName()))
 							activeChar.sendMessage("You unban chat for " + player + ".");
 						else
 							activeChar.sendMessage("Can't find char " + player + ".");
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						activeChar.sendMessage("Command syntax: //chatunban char_name");
 					}
@@ -180,7 +180,7 @@ public class AdminOldBan implements IAdminCommandHandler
 
 						Player target = World.getPlayer(player);
 
-						if (target != null)
+						if(target != null)
 						{
 							target.toJail(Integer.parseInt(period));
 							target.sendMessage("You moved to jail, time to escape - " + period + " minutes, reason - " + reason + " .");
@@ -189,7 +189,7 @@ public class AdminOldBan implements IAdminCommandHandler
 						else
 							activeChar.sendMessage("Can't find char " + player + ".");
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						activeChar.sendMessage("Command syntax: //jail char_name period reason");
 					}
@@ -202,9 +202,9 @@ public class AdminOldBan implements IAdminCommandHandler
 
 						Player target = World.getPlayer(player);
 
-						if (target.isInJail())
+						if(target.isInJail())
 						{
-							if (activeChar.fromJail())
+							if(activeChar.fromJail())
 								activeChar.sendMessage("You unjailed " + player + ".");
 							else
 								activeChar.sendMessage("Cannot unjailed " + player + ".");
@@ -212,7 +212,7 @@ public class AdminOldBan implements IAdminCommandHandler
 						else
 							activeChar.sendMessage("Can't find char " + player + ".");
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						activeChar.sendMessage("Command syntax: //unjail char_name");
 					}
@@ -221,7 +221,7 @@ public class AdminOldBan implements IAdminCommandHandler
 					activeChar.sendPacket(new HtmlMessage(5).setFile("admin/cban.htm"));
 					break;
 				case admin_permaban:
-					if (activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
+					if(activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
 					{
 						Functions.sendDebugMessage(activeChar, "Target should be set and be a player instance");
 						return false;
@@ -229,7 +229,7 @@ public class AdminOldBan implements IAdminCommandHandler
 					Player banned = activeChar.getTarget().getPlayer();
 					String banaccount = banned.getAccountName();
 					AuthServerCommunication.getInstance().sendPacket(new ChangeAccessLevel(banaccount, -100, 0));
-					if (banned.isInOfflineMode())
+					if(banned.isInOfflineMode())
 						banned.setOfflineMode(false);
 					banned.kick();
 					Functions.sendDebugMessage(activeChar, "Player account " + banaccount + " is banned, player " + banned.getName() + " kicked.");
@@ -241,28 +241,29 @@ public class AdminOldBan implements IAdminCommandHandler
 
 	private boolean tradeBan(StringTokenizer st, Player activeChar)
 	{
-		if (activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
+		if(activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
 			return false;
 		st.nextToken();
 		Player targ = (Player) activeChar.getTarget();
 		long days = -1;
 		long time = -1;
-		if (st.hasMoreTokens())
+		if(st.hasMoreTokens())
 		{
 			days = Long.parseLong(st.nextToken());
 			time = days * 24 * 60 * 60 * 1000L + System.currentTimeMillis();
 		}
 		targ.setVar("tradeBan", String.valueOf(time), -1);
-		String msg = activeChar.getName() + " заблокировал торговлю персонажу " + targ.getName() + (days == -1 ? " на бессрочный период." : " на " + days + " дней.");
+		String msg = activeChar.getName() + " заблокировал торговлю персонажу " + targ.getName()
+				+ (days == -1 ? " на бессрочный период." : " на " + days + " дней.");
 
 		Log.add(targ.getName() + ":" + days + tradeToString(targ, targ.getPrivateStoreType()), "tradeBan", activeChar);
 
-		if (targ.isInOfflineMode())
+		if(targ.isInOfflineMode())
 		{
 			targ.setOfflineMode(false);
 			targ.kick();
 		}
-		else if (targ.isInStoreMode())
+		else if(targ.isInStoreMode())
 		{
 			targ.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 			targ.storePrivateStore();
@@ -271,7 +272,7 @@ public class AdminOldBan implements IAdminCommandHandler
 			targ.getBuyList().clear();
 		}
 
-		if (Config.BANCHAT_ANNOUNCE_FOR_ALL_WORLD)
+		if(Config.BANCHAT_ANNOUNCE_FOR_ALL_WORLD)
 			Announcements.announceToAll(msg);
 		else
 			Announcements.shout(activeChar, msg, ChatType.CRITICAL_ANNOUNCE);
@@ -282,31 +283,31 @@ public class AdminOldBan implements IAdminCommandHandler
 	private static String tradeToString(Player targ, int trade)
 	{
 		String ret;
-		switch (trade)
+		switch(trade)
 		{
 			case Player.STORE_PRIVATE_BUY:
 				Collection<TradeItem> buyList = targ.getBuyList();
-				if (buyList == null || buyList.isEmpty())
+				if(buyList == null || buyList.isEmpty())
 					return "";
 				ret = ":buy:";
-				for (TradeItem i : buyList)
+				for(TradeItem i : buyList)
 					ret += i.getItemId() + ";" + i.getCount() + ";" + i.getOwnersPrice() + ":";
 				return ret;
 			case Player.STORE_PRIVATE_SELL:
 			case Player.STORE_PRIVATE_SELL_PACKAGE:
 				Map<Integer, TradeItem> sellList = targ.getSellList();
-				if (sellList == null || sellList.isEmpty())
+				if(sellList == null || sellList.isEmpty())
 					return "";
 				ret = ":sell:";
-				for (TradeItem i : sellList.values())
+				for(TradeItem i : sellList.values())
 					ret += i.getItemId() + ";" + i.getCount() + ";" + i.getOwnersPrice() + ":";
 				return ret;
 			case Player.STORE_PRIVATE_MANUFACTURE:
 				Map<Integer, ManufactureItem> createList = targ.getCreateList();
-				if (createList == null || createList.isEmpty())
+				if(createList == null || createList.isEmpty())
 					return "";
 				ret = ":mf:";
-				for (ManufactureItem i : createList.values())
+				for(ManufactureItem i : createList.values())
 					ret += i.getRecipeId() + ";" + i.getCost() + ":";
 				return ret;
 			default:
@@ -316,13 +317,13 @@ public class AdminOldBan implements IAdminCommandHandler
 
 	private boolean tradeUnban(StringTokenizer st, Player activeChar)
 	{
-		if (activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
+		if(activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
 			return false;
 		Player targ = (Player) activeChar.getTarget();
 
 		targ.unsetVar("tradeBan");
 
-		if (Config.BANCHAT_ANNOUNCE_FOR_ALL_WORLD)
+		if(Config.BANCHAT_ANNOUNCE_FOR_ALL_WORLD)
 			Announcements.announceToAll(activeChar + " разблокировал торговлю персонажу " + targ + ".");
 		else
 			Announcements.shout(activeChar, activeChar + " разблокировал торговлю персонажу " + targ + ".", ChatType.CRITICAL_ANNOUNCE);
@@ -342,19 +343,19 @@ public class AdminOldBan implements IAdminCommandHandler
 			int time = 0;
 			String msg = "";
 
-			if (st.hasMoreTokens())
+			if(st.hasMoreTokens())
 				time = Integer.parseInt(st.nextToken());
 
-			if (st.hasMoreTokens())
+			if(st.hasMoreTokens())
 			{
 				msg = "admin_old_ban " + player + " " + time + " ";
-				while (st.hasMoreTokens())
+				while(st.hasMoreTokens())
 					msg += st.nextToken() + " ";
 				msg.trim();
 			}
 
 			Player plyr = World.getPlayer(player);
-			if (plyr != null)
+			if(plyr != null)
 			{
 				plyr.sendMessage(new CustomMessage("admincommandhandlers.YoureBannedByGM"));
 				plyr.setAccessLevel(-100);
@@ -362,12 +363,12 @@ public class AdminOldBan implements IAdminCommandHandler
 				plyr.kick();
 				activeChar.sendMessage("You banned " + plyr.getName());
 			}
-			else if (AutoBan.Banned(player, -100, time, msg, activeChar.getName()))
+			else if(AutoBan.Banned(player, -100, time, msg, activeChar.getName()))
 				activeChar.sendMessage("You banned " + player);
 			else
 				activeChar.sendMessage("Can't find char: " + player);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			activeChar.sendMessage("Command syntax: //ban char_name days reason");
 		}
@@ -376,7 +377,7 @@ public class AdminOldBan implements IAdminCommandHandler
 
 	public void unbanChar(Player gm, String name)
 	{
-		if (AutoBan.Banned(name, 0, 0, "unbaned cha", gm.getName()))
+		if(AutoBan.Banned(name, 0, 0, "unbaned cha", gm.getName()))
 			gm.sendMessage("Unbanned player " + name);
 		else
 			gm.sendMessage("Player cannot unbaned " + name);

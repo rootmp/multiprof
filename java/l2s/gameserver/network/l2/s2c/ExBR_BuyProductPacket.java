@@ -29,15 +29,15 @@ public class ExBR_BuyProductPacket implements IClientOutgoingPacket
 	public static final IClientOutgoingPacket RESULT_NOT_ENOUGH_FREE_COINS = new ExBR_BuyProductPacket(-26);
 	// -27 - Не выполнено условие даты создания персонажа, покупка невозможна.
 	public static final IClientOutgoingPacket RESULT_ITEM_LIMITED = new ExBR_BuyProductPacket(-28); // При покупке
-																									// количество этих
-																									// предметов на один
-																									// аккаунт
-																									// ограничено.
-																									// Куплено
-																									// максимальное
-																									// количество,
-																									// больше купить
-																									// нельзя.
+	// количество этих
+	// предметов на один
+	// аккаунт
+	// ограничено.
+	// Куплено
+	// максимальное
+	// количество,
+	// больше купить
+	// нельзя.
 
 	private final int _result;
 

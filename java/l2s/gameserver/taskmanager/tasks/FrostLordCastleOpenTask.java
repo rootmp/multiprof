@@ -23,9 +23,9 @@ public class FrostLordCastleOpenTask extends AutomaticTask
 	{
 		super();
 		LocalDateTime now = LocalDateTime.now(ZoneId.systemDefault());
-		if ((now.getDayOfWeek() == DayOfWeek.TUESDAY) || (now.getDayOfWeek() == DayOfWeek.THURSDAY) || (now.getDayOfWeek() == DayOfWeek.SATURDAY))
+		if((now.getDayOfWeek() == DayOfWeek.TUESDAY) || (now.getDayOfWeek() == DayOfWeek.THURSDAY) || (now.getDayOfWeek() == DayOfWeek.SATURDAY))
 		{
-			if (now.getHour() >= 18)
+			if(now.getHour() >= 18)
 			{
 				ServerVariables.set("frost_lord_castle_open", true);
 			}

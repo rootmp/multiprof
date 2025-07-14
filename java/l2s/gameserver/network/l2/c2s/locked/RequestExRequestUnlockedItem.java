@@ -1,14 +1,9 @@
 package l2s.gameserver.network.l2.c2s.locked;
 
-import l2s.commons.dao.JdbcEntityState;
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.s2c.ExLockedResult;
-import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
-import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExRequestUnlockedItem implements IClientIncomingPacket
 {
@@ -25,20 +20,20 @@ public class RequestExRequestUnlockedItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-	/*	if(player == null)
-			return;
-		ItemInstance item = player.getInventory().getItemByObjectId(nTargetItemId);
-		if(!item.getTemplate().possiblyLock() || !item.isLocked())
-			return;
-		
-		if(ItemFunctions.deleteItem(player, 48401, 1, "ExRequestLockedItem"))
-		{
-			item.setLocked(false);
-			item.setJdbcState(JdbcEntityState.UPDATED);
-			item.update();
-			player.getInventory().refreshEquip(item);
-			player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
-			player.sendPacket(new ExLockedResult(0,1));
-		}*/
+		/*	if(player == null)
+				return;
+			ItemInstance item = player.getInventory().getItemByObjectId(nTargetItemId);
+			if(!item.getTemplate().possiblyLock() || !item.isLocked())
+				return;
+			
+			if(ItemFunctions.deleteItem(player, 48401, 1, "ExRequestLockedItem"))
+			{
+				item.setLocked(false);
+				item.setJdbcState(JdbcEntityState.UPDATED);
+				item.update();
+				player.getInventory().refreshEquip(item);
+				player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
+				player.sendPacket(new ExLockedResult(0,1));
+			}*/
 	}
 }

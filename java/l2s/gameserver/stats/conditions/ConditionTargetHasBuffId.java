@@ -23,18 +23,18 @@ public final class ConditionTargetHasBuffId extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.target;
-		if (target == null)
+		if(target == null)
 			return false;
 
-		for (Abnormal effect : target.getAbnormalList())
+		for(Abnormal effect : target.getAbnormalList())
 		{
-			if (effect.getSkill().getId() != _id)
+			if(effect.getSkill().getId() != _id)
 				continue;
 
-			if (_level == -1)
+			if(_level == -1)
 				return true;
 
-			if (effect.getSkill().getLevel() >= _level)
+			if(effect.getSkill().getLevel() >= _level)
 				return true;
 		}
 
@@ -45,9 +45,9 @@ public final class ConditionTargetHasBuffId extends Condition
 	public void init()
 	{
 		// Для заглушки отображения кондишона требующий эффект у цели.
-		if (_level == -1)
+		if(_level == -1)
 		{
-			for (Skill skill : SkillHolder.getInstance().getSkills(_id))
+			for(Skill skill : SkillHolder.getInstance().getSkills(_id))
 			{
 				skill.setShowPlayerAbnormal(true);
 				skill.setShowNpcAbnormal(true);
@@ -56,7 +56,7 @@ public final class ConditionTargetHasBuffId extends Condition
 		else
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, _id, _level);
-			if (skillEntry != null)
+			if(skillEntry != null)
 			{
 				skillEntry.getTemplate().setShowPlayerAbnormal(true);
 				skillEntry.getTemplate().setShowNpcAbnormal(true);

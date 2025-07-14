@@ -29,9 +29,9 @@ public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 		packetWriter.writeC(1); // max pages
 		packetWriter.writeD(pvpbookInfos.size()); // size
 
-		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
+		for(PvpbookInfo pvpbookInfo : pvpbookInfos)
 		{
-			packetWriter.writeD(pvpbookInfo.isRequestForHelp()==1?0: pvpbookInfo.getShareType()); // share type
+			packetWriter.writeD(pvpbookInfo.isRequestForHelp() == 1 ? 0 : pvpbookInfo.getShareType()); // share type
 			packetWriter.writeD(pvpbookInfo.getDeathTime()); // death time
 			packetWriter.writeD(pvpbookInfo.getLocationShowCount()); // nShowKillerCount
 			packetWriter.writeD(pvpbookInfo.getTeleportCount()); // nTeleportKillerCount

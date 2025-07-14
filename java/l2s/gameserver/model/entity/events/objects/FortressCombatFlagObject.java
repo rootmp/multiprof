@@ -42,10 +42,8 @@ public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttach
 
 	public boolean dropFlag(FortressSiegeEvent event, NpcInstance dropper, Location loc, Reflection reflection)
 	{
-		if (flagItem != null)
-		{
-			return false;
-		}
+		if(flagItem != null)
+		{ return false; }
 		flagItem = ItemFunctions.createItem(FLAG_ITEM_ID);
 		Objects.requireNonNull(flagItem);
 		flagItem.setAttachment(this);
@@ -59,12 +57,12 @@ public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttach
 	@Override
 	public void spawnObject(Event event, Reflection reflection)
 	{
-		if (!(event instanceof FortressSiegeEvent))
+		if(!(event instanceof FortressSiegeEvent))
 		{
 			LOGGER.info("FortressCombatFlagObject: can't spawn in not FortressSiegeEvent!");
 			return;
 		}
-		if (!dropFlag((FortressSiegeEvent) event, null, location, reflection))
+		if(!dropFlag((FortressSiegeEvent) event, null, location, reflection))
 		{
 			LOGGER.info("FortressCombatFlagObject: can't spawn twice: " + event);
 		}
@@ -73,13 +71,11 @@ public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttach
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (flagItem == null)
-		{
-			return;
-		}
+		if(flagItem == null)
+		{ return; }
 
 		Player owner = GameObjectsStorage.getPlayer(flagItem.getOwnerId());
-		if (owner != null)
+		if(owner != null)
 		{
 			owner.getInventory().destroyItem(flagItem);
 			owner.sendDisarmMessage(flagItem);
@@ -130,21 +126,17 @@ public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttach
 	@Override
 	public boolean canPickUp(Player player)
 	{
-		if ((player.getActiveWeaponFlagAttachment() != null) || player.isMounted())
-		{
-			return false;
-		}
-		if (!player.containsEvent(getEvent()))
-		{
-			return false;
-		}
+		if((player.getActiveWeaponFlagAttachment() != null) || player.isMounted())
+		{ return false; }
+		if(!player.containsEvent(getEvent()))
+		{ return false; }
 		Clan clan = player.getClan();
-		if ((clan == null) || (clan.getLevel() < 5))
+		if((clan == null) || (clan.getLevel() < 5))
 		{
 			player.sendPacket(SystemMsg.A_FLAG_CAN_BE_CAPTURED_ONLY_BY_A_CLAN_MEMBER_OF_LV_5_OR_HIGHER);
 			return false;
 		}
-		if (clan.getHasFortress() > 0)
+		if(clan.getHasFortress() > 0)
 		{
 			player.sendPacket(SystemMsg.A_CLAN_THAT_OWNS_A_CASTLE_CANNOT_GET_A_FLAG_);
 			return false;
@@ -170,14 +162,12 @@ public class FortressCombatFlagObject implements SpawnableObject, FlagItemAttach
 	public boolean canCast(Player player, Skill skill)
 	{
 		ItemTemplate weaponTemplate = player.getActiveWeaponTemplate();
-		if (weaponTemplate != null)
+		if(weaponTemplate != null)
 		{
-			for (SkillEntry skillEntry : weaponTemplate.getAttachedSkills())
+			for(SkillEntry skillEntry : weaponTemplate.getAttachedSkills())
 			{
-				if (skillEntry.getTemplate().equals(skill))
-				{
-					return true;
-				}
+				if(skillEntry.getTemplate().equals(skill))
+				{ return true; }
 			}
 		}
 		player.sendPacket(SystemMsg.THAT_WEAPON_CANNOT_USE_ANY_OTHER_SKILL_EXCEPT_THE_WEAPONS_SKILL);

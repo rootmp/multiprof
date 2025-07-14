@@ -20,11 +20,11 @@ public class ExQuestUi implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(questInfos.length);//size
-		for(QuestState qs: questInfos)
+		for(QuestState qs : questInfos)
 		{
 			packetWriter.writeD(qs.getQuest().getId());//id
 			packetWriter.writeD(qs.getQuestCond());//count
-			packetWriter.writeC(qs.isCompleted()?2:1);//state
+			packetWriter.writeC(qs.isCompleted() ? 2 : 1);//state
 		}
 		packetWriter.writeD(_ProceedingQuestCount);//nProceedingQuestCount
 		return true;

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.data.xml.holder.SkillHolder;
@@ -32,33 +33,25 @@ public class RequestAcquireSkillInfo implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		if ((_id <= 0) || (_level <= 0))
-		{
-			return;
-		}
+		if((_id <= 0) || (_level <= 0))
+		{ return; }
 
 		Player player = client.getActiveChar();
-		if (player == null || player.isTransformed() || SkillHolder.getInstance().getSkill(_id, _level) == null || _type == null)
-		{
-			return;
-		}
+		if(player == null || player.isTransformed() || SkillHolder.getInstance().getSkill(_id, _level) == null || _type == null)
+		{ return; }
 
-		if (_type != AcquireType.NORMAL && _type != AcquireType.MULTICLASS && _type != AcquireType.CUSTOM)
+		if(_type != AcquireType.NORMAL && _type != AcquireType.MULTICLASS && _type != AcquireType.CUSTOM)
 		{
 			NpcInstance trainer = player.getLastNpc();
-			if ((trainer == null || !player.checkInteractionDistance(trainer)) && !player.isGM())
-			{
-				return;
-			}
+			if((trainer == null || !player.checkInteractionDistance(trainer)) && !player.isGM())
+			{ return; }
 		}
 
 		ClassId selectedMultiClassId = player.getSelectedMultiClassId();
-		if (_type == AcquireType.MULTICLASS)
+		if(_type == AcquireType.MULTICLASS)
 		{
-			if (selectedMultiClassId == null)
-			{
-				return;
-			}
+			if(selectedMultiClassId == null)
+			{ return; }
 		}
 		else
 		{
@@ -66,12 +59,10 @@ public class RequestAcquireSkillInfo implements IClientIncomingPacket
 		}
 
 		final SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, selectedMultiClassId, _id, _level, _type);
-		if (skillLearn == null)
-		{
-			return;
-		}
+		if(skillLearn == null)
+		{ return; }
 
-		if (_type == AcquireType.NORMAL)
+		if(_type == AcquireType.NORMAL)
 		{
 			client.sendPacket(new ExAcquireSkillInfo(player, _type, skillLearn));
 		}

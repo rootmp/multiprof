@@ -24,11 +24,12 @@ public class RequestExSpExtractItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if(player ==null)
+		if(player == null)
 			return;
 		if(player.getSp() >= 5000000000L && player.getVarInt(PlayerVariables.SP_EXTRACT_ITEM_VAR, 0) < 5 && ItemFunctions.haveItem(player, 57, 3000000))
 		{
-			player.setVar(PlayerVariables.SP_EXTRACT_ITEM_VAR, player.getVarInt(PlayerVariables.SP_EXTRACT_ITEM_VAR, 0) + 1,TimeUtils.DAILY_DATE_PATTERN.next(System.currentTimeMillis()));
+			player.setVar(PlayerVariables.SP_EXTRACT_ITEM_VAR, player.getVarInt(PlayerVariables.SP_EXTRACT_ITEM_VAR, 0)
+					+ 1, TimeUtils.DAILY_DATE_PATTERN.next(System.currentTimeMillis()));
 			player.setSp(player.getSp() - 5000000000L);
 			ItemFunctions.deleteItem(player, 57, 3000000);
 			ItemFunctions.addItem(player, 98232, 1);

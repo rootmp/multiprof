@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.TradeItem;
@@ -22,11 +22,11 @@ public class ShopPreviewListPacket implements IClientOutgoingPacket
 		_money = player.getAdena();
 		List<TradeItem> tradeList = list.getItems();
 		_itemList = new ArrayList<ItemInfo>(tradeList.size());
-		for (TradeItem item : tradeList)
+		for(TradeItem item : tradeList)
 		{
-			if (item.getItem().isEquipable() && (item.getItem().isArmor() || item.getItem().isWeapon())) // TODO:
-																											// [Bonux]
-																											// Проверить.
+			if(item.getItem().isEquipable() && (item.getItem().isArmor() || item.getItem().isWeapon())) // TODO:
+				// [Bonux]
+				// Проверить.
 				_itemList.add(item);
 		}
 	}
@@ -39,21 +39,21 @@ public class ShopPreviewListPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_listId);
 		packetWriter.writeH(_itemList.size());
 
-		for (ItemInfo item : _itemList)
-			if (item.getItem().isEquipable())
+		for(ItemInfo item : _itemList)
+			if(item.getItem().isEquipable())
 			{
 				packetWriter.writeD(item.getItemId());
 				packetWriter.writeH(item.getItem().getType2()); // item type2
 				packetWriter.writeQ(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
 				packetWriter.writeQ(getWearPrice(item.getItem()));
 			}
-			
+
 		return true;
 	}
 
 	public static int getWearPrice(ItemTemplate item)
 	{
-		switch (item.getGrade())
+		switch(item.getGrade())
 		{
 			case D:
 				return 50;

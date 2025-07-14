@@ -21,7 +21,7 @@ public final class RestorationInfo
 		_itemConsumeId = itemConsumeId;
 		_itemConsumeCount = itemConsumeCount;
 
-		if (onFailMessage > 0)
+		if(onFailMessage > 0)
 		{
 			_onFailMessage = SystemMsg.valueOf(onFailMessage);
 		}
@@ -56,26 +56,26 @@ public final class RestorationInfo
 	public List<RestorationItem> getRandomGroupItems()
 	{
 		double chancesAmount = 0;
-		for (RestorationGroup group : _restorationGroups)
+		for(RestorationGroup group : _restorationGroups)
 		{
 			chancesAmount += group.getChance();
 		}
 
-		if (Rnd.chance(chancesAmount))
+		if(Rnd.chance(chancesAmount))
 		{
 			double chanceMod = (100. - chancesAmount) / _restorationGroups.size();
 			List<RestorationGroup> successGroups = new ArrayList<RestorationGroup>();
 			int tryCount = 0;
-			while (successGroups.isEmpty())
+			while(successGroups.isEmpty())
 			{
 				tryCount++;
-				for (RestorationGroup group : _restorationGroups)
+				for(RestorationGroup group : _restorationGroups)
 				{
-					if ((tryCount % 10) == 0)
+					if((tryCount % 10) == 0)
 					{
 						chanceMod += 1.;
 					}
-					if (Rnd.chance(group.getChance() + chanceMod))
+					if(Rnd.chance(group.getChance() + chanceMod))
 					{
 						successGroups.add(group);
 					}

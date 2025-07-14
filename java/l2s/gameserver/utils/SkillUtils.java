@@ -13,11 +13,11 @@ import l2s.gameserver.skills.enums.SkillEntryType;
  **/
 public final class SkillUtils
 {
-	public static int getSkillLevelMask(final int skillLevel, final int subSkillLevel) 
+	public static int getSkillLevelMask(final int skillLevel, final int subSkillLevel)
 	{
 		return skillLevel | subSkillLevel << 16;
 	}
-	
+
 	public static int getSkillPTSHash(int skillId, int skillLevelMask)
 	{
 		return skillLevelMask | (skillId << 16);
@@ -54,34 +54,34 @@ public final class SkillUtils
 
 	public static boolean checkSkill(Player player, SkillEntry skillEntry)
 	{
-		if (!Config.ALT_REMOVE_SKILLS_ON_DELEVEL)
+		if(!Config.ALT_REMOVE_SKILLS_ON_DELEVEL)
 			return false;
 
 		SkillLearn learn = SkillAcquireHolder.getInstance().getSkillLearn(player, skillEntry.getId(), skillEntry.getLevel(), AcquireType.NORMAL);
-		if (learn == null)
+		if(learn == null)
 			return false;
 
 		boolean update = false;
 
 		int lvlDiff = learn.isFreeAutoGet(AcquireType.NORMAL) ? 1 : 4;
-		if (learn.getMinLevel() >= (player.getLevel() + lvlDiff))
+		if(learn.getMinLevel() >= (player.getLevel() + lvlDiff))
 		{
 			player.removeSkill(skillEntry, true);
 
 			// если у нас низкий лвл для скила, то заточка обнуляется 100%
 			// и ищем от большего к меньшему подходящий лвл для скила
-			for (int i = skillEntry.getLevel() - 1; i != 0; i--)
+			for(int i = skillEntry.getLevel() - 1; i != 0; i--)
 			{
 				SkillLearn learn2 = SkillAcquireHolder.getInstance().getSkillLearn(player, skillEntry.getId(), i, AcquireType.NORMAL);
-				if (learn2 == null)
+				if(learn2 == null)
 					continue;
 
 				int lvlDiff2 = learn2.isFreeAutoGet(AcquireType.NORMAL) ? 1 : 4;
-				if (learn2.getMinLevel() >= (player.getLevel() + lvlDiff2))
+				if(learn2.getMinLevel() >= (player.getLevel() + lvlDiff2))
 					continue;
 
 				SkillEntry newSkillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillEntry.getId(), i);
-				if (newSkillEntry != null)
+				if(newSkillEntry != null)
 				{
 					player.addSkill(newSkillEntry, true);
 					break;
@@ -90,28 +90,28 @@ public final class SkillUtils
 			update = true;
 		}
 
-		if (player.isTransformed())
+		if(player.isTransformed())
 		{
 			learn = player.getTransform().getAdditionalSkill(skillEntry.getId(), skillEntry.getLevel());
-			if (learn == null)
+			if(learn == null)
 				return false;
 
-			if (learn.getMinLevel() >= player.getLevel() + 1)
+			if(learn.getMinLevel() >= player.getLevel() + 1)
 			{
 				player.removeTransformSkill(skillEntry);
 				player.removeSkill(skillEntry, false);
 
-				for (int i = skillEntry.getLevel() - 1; i != 0; i--)
+				for(int i = skillEntry.getLevel() - 1; i != 0; i--)
 				{
 					SkillLearn learn2 = player.getTransform().getAdditionalSkill(skillEntry.getId(), i);
-					if (learn2 == null)
+					if(learn2 == null)
 						continue;
 
-					if (learn2.getMinLevel() >= player.getLevel() + 1)
+					if(learn2.getMinLevel() >= player.getLevel() + 1)
 						continue;
 
 					SkillEntry newSkillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillEntry.getId(), i);
-					if (newSkillEntry != null)
+					if(newSkillEntry != null)
 					{
 						player.addTransformSkill(newSkillEntry);
 						player.addSkill(newSkillEntry, false);

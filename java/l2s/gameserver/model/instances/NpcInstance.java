@@ -16,6 +16,10 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.collections.MultiValueSet;
 import l2s.commons.geometry.Circle;
 import l2s.commons.geometry.Shape;
@@ -125,11 +129,6 @@ import l2s.gameserver.utils.MapUtils;
 import l2s.gameserver.utils.ReflectionUtils;
 import l2s.gameserver.utils.WarehouseFunctions;
 
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
-
 public class NpcInstance extends Creature
 {
 	public static final int BASE_CORPSE_TIME = 7;
@@ -230,7 +229,7 @@ public class NpcInstance extends Creature
 	{
 		super(objectId, template);
 
-		if (template == null)
+		if(template == null)
 			throw new NullPointerException("No template for Npc. Please check your datapack is setup correctly.");
 
 		setParameters(template.getAIParams());
@@ -247,7 +246,7 @@ public class NpcInstance extends Creature
 
 		_isImmortal = getParameter(IS_IMMORTAL, false);
 
-		for (Skill skill : template.getSkills().valueCollection())
+		for(Skill skill : template.getSkills().valueCollection())
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill));
 
 		setName(template.name);
@@ -262,7 +261,7 @@ public class NpcInstance extends Creature
 		setFlying(getParameter("isFlying", false));
 
 		int enchant = Math.min(127, getTemplate().getEnchantEffect());
-		if (enchant == 0 && Config.NPC_RANDOM_ENCHANT)
+		if(enchant == 0 && Config.NPC_RANDOM_ENCHANT)
 			enchant = Rnd.get(0, 18);
 
 		_enchantEffect = enchant;
@@ -290,11 +289,11 @@ public class NpcInstance extends Creature
 	@Override
 	public NpcAI getAI()
 	{
-		if (_ai == null)
+		if(_ai == null)
 		{
 			synchronized (this)
 			{
-				if (_ai == null)
+				if(_ai == null)
 					_ai = getTemplate().getNewAI(this);
 			}
 		}
@@ -341,13 +340,13 @@ public class NpcInstance extends Creature
 	protected void onReduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean isDot)
 	{
 		Creature damager = attacker;
-		if (attacker.isConfused())
+		if(attacker.isConfused())
 		{
-			for (Abnormal abnormal : attacker.getAbnormalList())
+			for(Abnormal abnormal : attacker.getAbnormalList())
 			{
-				for (EffectHandler effect : abnormal.getEffects())
+				for(EffectHandler effect : abnormal.getEffects())
 				{
-					if (effect.getName().equalsIgnoreCase("Discord"))
+					if(effect.getName().equalsIgnoreCase("Discord"))
 					{
 						damager = abnormal.getEffector();
 						break;
@@ -366,7 +365,7 @@ public class NpcInstance extends Creature
 	{
 		_deathTime = System.currentTimeMillis();
 
-		if (isMonster() && ((MonsterInstance) this).isSpoiled())
+		if(isMonster() && ((MonsterInstance) this).isSpoiled())
 			startDecay(20000L);
 		else
 			startDecay(_corpseTime * 1000L);
@@ -379,21 +378,21 @@ public class NpcInstance extends Creature
 		stopAttackStanceTask();
 		stopRandomAnimation();
 
-		if (getLeader() != null)
+		if(getLeader() != null)
 			getLeader().notifyMinionDied(this);
 
-		if (hasMinions())
+		if(hasMinions())
 			getMinionList().onMasterDeath();
 
-		for (ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_KILL))
+		for(ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_KILL))
 		{
-			if (killer != null && killer.getPlayer() != null)
+			if(killer != null && killer.getPlayer() != null)
 				hook.onNpcKill(this, killer.getPlayer());
 		}
 
-		for (ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_KILL))
+		for(ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_KILL))
 		{
-			if (killer != null && killer.getPlayer() != null)
+			if(killer != null && killer.getPlayer() != null)
 				hook.onNpcKill(this, killer.getPlayer());
 		}
 
@@ -430,7 +429,7 @@ public class NpcInstance extends Creature
 
 	public MinionList getMinionList()
 	{
-		if (_minionList == null)
+		if(_minionList == null)
 			_minionList = new MinionList(this);
 
 		return _minionList;
@@ -451,23 +450,23 @@ public class NpcInstance extends Creature
 		final int offset = 200;
 		final int minRadius = (int) getCurrentCollisionRadius() + 30;
 
-		for (int i = 0; i < 100; i++)
+		for(int i = 0; i < 100; i++)
 		{
 			int x = Rnd.get(minRadius * 2, offset * 2); // x
 			int y = Rnd.get(x, offset * 2); // distance
 			y = (int) Math.sqrt((y * y) - (x * x)); // y
-			if (x > (offset + minRadius))
+			if(x > (offset + minRadius))
 				x = (getX() + x) - offset;
 			else
 				x = (getX() - x) + minRadius;
 
-			if (y > (offset + minRadius))
+			if(y > (offset + minRadius))
 				y = (getY() + y) - offset;
 			else
 				y = (getY() - y) + minRadius;
 
 			int tempz = GeoEngine.getLowerHeight(x, y, getZ(), getGeoIndex());
-			if (Math.abs(getZ() - tempz) < 200 && GeoEngine.getLowerNSWE(x, y, tempz, getGeoIndex()) == GeoEngine.NSWE_ALL)
+			if(Math.abs(getZ() - tempz) < 200 && GeoEngine.getLowerNSWE(x, y, tempz, getGeoIndex()) == GeoEngine.NSWE_ALL)
 				return new Location(x, y, tempz);
 		}
 		return Location.findPointToStay(getX(), getY(), getZ(), offset, offset, getGeoIndex());
@@ -481,12 +480,12 @@ public class NpcInstance extends Creature
 	@Override
 	public boolean setReflection(Reflection reflection)
 	{
-		if (!super.setReflection(reflection))
+		if(!super.setReflection(reflection))
 			return false;
 
-		if (hasMinions())
+		if(hasMinions())
 		{
-			for (NpcInstance m : getMinionList().getAliveMinions())
+			for(NpcInstance m : getMinionList().getAliveMinions())
 				m.setReflection(reflection);
 		}
 		return true;
@@ -494,28 +493,28 @@ public class NpcInstance extends Creature
 
 	public void dropItem(Player lastAttacker, int itemId, long itemCount)
 	{
-		if (itemCount == 0 || lastAttacker == null)
+		if(itemCount == 0 || lastAttacker == null)
 			return;
 
 		ItemInstance item;
 
-		for (long i = 0; i < itemCount; i++)
+		for(long i = 0; i < itemCount; i++)
 		{
 			item = ItemFunctions.createItem(itemId);
-			for (Event e : getEvents())
+			for(Event e : getEvents())
 				item.addEvent(e);
 
 			// Set the Item quantity dropped if L2ItemInstance is stackable
-			if (item.isStackable())
+			if(item.isStackable())
 			{
 				i = itemCount; // Set so loop won't happent again
 				item.setCount(itemCount); // Set item count
 			}
 
-			if (isRaid())
+			if(isRaid())
 			{
 				SystemMessagePacket sm;
-				if (itemId == 57)
+				if(itemId == 57)
 				{
 					sm = new SystemMessagePacket(SystemMsg.C1_HAS_DIED_AND_DROPPED_S2_ADENA);
 					sm.addName(this);
@@ -537,13 +536,13 @@ public class NpcInstance extends Creature
 
 	public void dropItem(Player lastAttacker, ItemInstance item)
 	{
-		if (item.getCount() == 0)
+		if(item.getCount() == 0)
 			return;
 
-		if (isRaid())
+		if(isRaid())
 		{
 			SystemMessagePacket sm;
-			if (item.getItemId() == 57)
+			if(item.getItemId() == 57)
 			{
 				sm = new SystemMessagePacket(SystemMsg.C1_HAS_DIED_AND_DROPPED_S2_ADENA);
 				sm.addName(this);
@@ -594,47 +593,47 @@ public class NpcInstance extends Creature
 
 		getListeners().onSpawn();
 
-		for (ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_SPAWN))
+		for(ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_SPAWN))
 			hook.onNpcSpawn(this);
 
-		if (getAI().isGlobalAI() || getCurrentRegion() != null && getCurrentRegion().isActive())
+		if(getAI().isGlobalAI() || getCurrentRegion() != null && getCurrentRegion().isActive())
 		{
 			getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 			getAI().startAITask();
 			startRandomAnimation();
 		}
 
-		if (!hasMinions()) // Если миньоны были добавлены спавном, или в скриптах, то базовых миньонов не
-							// добавляем.
+		if(!hasMinions()) // Если миньоны были добавлены спавном, или в скриптах, то базовых миньонов не
+		// добавляем.
 		{
 			List<MinionData> minionsData = getTemplate().getMinionData();
-			if (!minionsData.isEmpty())
+			if(!minionsData.isEmpty())
 			{
-				for (MinionData minionData : minionsData)
+				for(MinionData minionData : minionsData)
 					getMinionList().addMinion(minionData);
 			}
 		}
 
-		if (hasMinions() && !isArenaRaid())
+		if(hasMinions() && !isArenaRaid())
 			ThreadPoolManager.getInstance().schedule(() -> getMinionList().spawnMinions(), 1500L); // DS: AI мастера
-																									// должен
-																									// запуститься
-																									// раньше спавна
-																									// миньонов.
+		// должен
+		// запуститься
+		// раньше спавна
+		// миньонов.
 
-		if (getLeader() != null)
+		if(getLeader() != null)
 			getLeader().onSpawnMinion(this);
 
-		if (_supportSpawnGroup != null)
+		if(_supportSpawnGroup != null)
 			getReflection().spawnByGroup(_supportSpawnGroup);
 
 		int eventTriggerId = getParameter(EVENT_TRIGGER_ID, 0);
-		if (eventTriggerId != 0)
+		if(eventTriggerId != 0)
 			_eventTriggers.add(eventTriggerId);
 
-		for (int triggerId : _eventTriggers.toArray())
+		for(int triggerId : _eventTriggers.toArray())
 		{
-			if (getReflection().isMain())
+			if(getReflection().isMain())
 				EventTriggersManager.getInstance().addTrigger(MapUtils.regionX(getX()), MapUtils.regionY(getY()), triggerId);
 			else
 				EventTriggersManager.getInstance().addTrigger(getReflection(), triggerId);
@@ -654,15 +653,15 @@ public class NpcInstance extends Creature
 
 		super.onDespawn();
 
-		if (_supportSpawnGroup != null)
+		if(_supportSpawnGroup != null)
 			getReflection().despawnByGroup(_supportSpawnGroup);
 
-		for (ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_DESPAWN))
+		for(ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_DESPAWN))
 			hook.onNpcDespawn(this);
 
-		for (int triggerId : _eventTriggers.toArray())
+		for(int triggerId : _eventTriggers.toArray())
 		{
-			if (getReflection().isMain())
+			if(getReflection().isMain())
 				EventTriggersManager.getInstance().removeTrigger(MapUtils.regionX(getX()), MapUtils.regionY(getY()), triggerId);
 			else
 				EventTriggersManager.getInstance().removeTrigger(getReflection(), triggerId);
@@ -701,10 +700,10 @@ public class NpcInstance extends Creature
 
 	public int getAggroRange()
 	{
-		if (_unAggred)
+		if(_unAggred)
 			return 0;
 
-		if (_personalAggroRange >= 0)
+		if(_personalAggroRange >= 0)
 			return _personalAggroRange;
 
 		return getTemplate().aggroRange;
@@ -779,15 +778,15 @@ public class NpcInstance extends Creature
 		getAI().stopAllTaskAndTimers();
 
 		stopDecay();
-		if (_spawn != null)
+		if(_spawn != null)
 			_spawn.stopRespawn();
 		setSpawn(null);
 
-		if (hasMinions())
+		if(hasMinions())
 			getMinionList().onMasterDelete();
 
 		NpcInstance leader = getLeader();
-		if (leader != null && leader.hasMinions())
+		if(leader != null && leader.hasMinions())
 			leader.getMinionList().onMinionDelete(this);
 
 		super.onDelete();
@@ -819,13 +818,13 @@ public class NpcInstance extends Creature
 
 		_spawnAnimation = 2;
 
-		if (!hasMinions() || !getMinionList().hasAliveMinions())
+		if(!hasMinions() || !getMinionList().hasAliveMinions())
 		{
-			if (_spawn != null)
+			if(_spawn != null)
 				_spawn.decreaseCount(this);
 			else
 				deleteMe(); // Если этот моб заспавнен не через стандартный механизм спавна значит посмертие
-							// ему не положено и он умирает насовсем
+			// ему не положено и он умирает насовсем
 		}
 	}
 
@@ -843,7 +842,7 @@ public class NpcInstance extends Creature
 	 */
 	public void stopDecay()
 	{
-		if (_decayTask != null)
+		if(_decayTask != null)
 		{
 			_decayTask.cancel(false);
 			_decayTask = null;
@@ -855,7 +854,7 @@ public class NpcInstance extends Creature
 	 */
 	public void endDecayTask()
 	{
-		if (_decayTask != null)
+		if(_decayTask != null)
 		{
 			_decayTask.cancel(false);
 			_decayTask = null;
@@ -905,13 +904,13 @@ public class NpcInstance extends Creature
 		// Get the weapon identifier equipped in the right hand of the L2NpcInstance
 		int weaponId = getTemplate().rhand;
 
-		if (weaponId < 1)
+		if(weaponId < 1)
 			return null;
 
 		// Get the weapon item equipped in the right hand of the L2NpcInstance
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(getTemplate().rhand);
 
-		if (!(item instanceof WeaponTemplate))
+		if(!(item instanceof WeaponTemplate))
 			return null;
 
 		return (WeaponTemplate) item;
@@ -930,13 +929,13 @@ public class NpcInstance extends Creature
 		// Get the weapon identifier equipped in the right hand of the L2NpcInstance
 		int weaponId = getTemplate().lhand;
 
-		if (weaponId < 1)
+		if(weaponId < 1)
 			return null;
 
 		// Get the weapon item equipped in the right hand of the L2NpcInstance
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(getTemplate().lhand);
 
-		if (!(item instanceof WeaponTemplate))
+		if(!(item instanceof WeaponTemplate))
 			return null;
 
 		return (WeaponTemplate) item;
@@ -945,7 +944,7 @@ public class NpcInstance extends Creature
 	@Override
 	public void sendChanges()
 	{
-		if (isFlying()) // FIXME
+		if(isFlying()) // FIXME
 			return;
 		super.sendChanges();
 	}
@@ -954,41 +953,41 @@ public class NpcInstance extends Creature
 
 	public void onMenuSelect(Player player, int ask, long reply, int state)
 	{
-		for (QuestState qs : player.getAllQuestsStates())
+		for(QuestState qs : player.getAllQuestsStates())
 		{
-			if (qs.getQuest().getId() == ask && !qs.isCompleted())
+			if(qs.getQuest().getId() == ask && !qs.isCompleted())
 			{
-				if (qs.getQuest().notifyMenuSelect((int) reply, qs, this))
+				if(qs.getQuest().notifyMenuSelect((int) reply, qs, this))
 					return;
 				break;
 			}
 		}
 
-		if (ask == -303)
+		if(ask == -303)
 		{
 			Castle castle = getCastle(player);
 			MultiSellHolder.getInstance().SeparateAndSend((int) reply, player, castle != null ? castle.getTaxRate() : 0);
 		}
-		else if (ask == -1000)
+		else if(ask == -1000)
 		{
-			if (reply == 1)
+			if(reply == 1)
 				onBypassFeedback(player, "TerritoryStatus");
 		}
-		else if (ask == -1816)
+		else if(ask == -1816)
 		{
 			onBypassFeedback(player, "teleport_fi_to");
 		}
-		else if (ask == 255)
+		else if(ask == 255)
 		{
 			onBypassFeedback(player, "teleport_mdt_to");
 		}
 
 		getAI().notifyEvent(CtrlEvent.EVT_MENU_SELECTED, player, ask, reply);
 
-		for (ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_ASK))
+		for(ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_ASK))
 			hook.onNpcAsk(this, ask, reply, state, player);
 
-		for (ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_ASK))
+		for(ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_ASK))
 			hook.onNpcAsk(this, ask, reply, state, player);
 	}
 
@@ -1005,10 +1004,10 @@ public class NpcInstance extends Creature
 	@Override
 	public void broadcastCharInfo()
 	{
-		if (!isVisible())
+		if(!isVisible())
 			return;
 
-		if (_broadcastCharInfoTask != null)
+		if(_broadcastCharInfoTask != null)
 			return;
 
 		_broadcastCharInfoTask = ThreadPoolManager.getInstance().schedule(new BroadcastCharInfoTask(), Config.BROADCAST_CHAR_INFO_INTERVAL);
@@ -1017,15 +1016,15 @@ public class NpcInstance extends Creature
 	@Override
 	public void broadcastCharInfoImpl(IUpdateTypeComponent... components)
 	{
-		if (components.length == 0)
+		if(components.length == 0)
 		{
 			_log.warn(getClass().getSimpleName() + ": Trying broadcast char info without components!", new Exception());
 			return;
 		}
 
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 		{
-			if (isInvisible(player))
+			if(isInvisible(player))
 				continue;
 			player.sendPacket(new NpcInfoPacket(this, player).update(components));
 		}
@@ -1034,7 +1033,7 @@ public class NpcInstance extends Creature
 	// У NPC всегда 2
 	public void onRandomAnimation()
 	{
-		if (System.currentTimeMillis() - _lastSocialAction > 10000L)
+		if(System.currentTimeMillis() - _lastSocialAction > 10000L)
 		{
 			broadcastPacket(new SocialActionPacket(getObjectId(), 2));
 			_lastSocialAction = System.currentTimeMillis();
@@ -1043,14 +1042,14 @@ public class NpcInstance extends Creature
 
 	public void startRandomAnimation()
 	{
-		if (!hasRandomAnimation())
+		if(!hasRandomAnimation())
 			return;
 		_animationTask = LazyPrecisionTaskManager.getInstance().addNpcAnimationTask(this);
 	}
 
 	public void stopRandomAnimation()
 	{
-		if (_animationTask != null)
+		if(_animationTask != null)
 		{
 			_animationTask.cancel(false);
 			_animationTask = null;
@@ -1079,15 +1078,15 @@ public class NpcInstance extends Creature
 
 	public Castle getCastle()
 	{
-		if (getReflection() == ReflectionManager.PARNASSUS && Config.SERVICES_PARNASSUS_NOTAX)
+		if(getReflection() == ReflectionManager.PARNASSUS && Config.SERVICES_PARNASSUS_NOTAX)
 			return null;
-		if (Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && getReflection() == ReflectionManager.GIRAN_HARBOR)
+		if(Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && getReflection() == ReflectionManager.GIRAN_HARBOR)
 			return null;
-		if (Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && getReflection() == ReflectionManager.PARNASSUS)
+		if(Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && getReflection() == ReflectionManager.PARNASSUS)
 			return null;
-		if (Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && isInZone(ZoneType.offshore))
+		if(Config.SERVICES_OFFSHORE_NO_CASTLE_TAX && isInZone(ZoneType.offshore))
 			return null;
-		if (_nearestCastle == null)
+		if(_nearestCastle == null)
 			_nearestCastle = ResidenceHolder.getInstance().getResidence(getTemplate().getCastleId());
 		return _nearestCastle;
 	}
@@ -1099,7 +1098,7 @@ public class NpcInstance extends Creature
 
 	public Fortress getFortress()
 	{
-		if (_nearestFortress == null)
+		if(_nearestFortress == null)
 			_nearestFortress = ResidenceHolder.getInstance().findNearestResidence(Fortress.class, getX(), getY(), getZ(), getReflection(), 32768);
 
 		return _nearestFortress;
@@ -1107,7 +1106,7 @@ public class NpcInstance extends Creature
 
 	public ClanHall getClanHall()
 	{
-		if (_nearestClanHall == null)
+		if(_nearestClanHall == null)
 			_nearestClanHall = ResidenceHolder.getInstance().findNearestResidence(ClanHall.class, getX(), getY(), getZ(), getReflection(), 32768);
 
 		return _nearestClanHall;
@@ -1118,96 +1117,96 @@ public class NpcInstance extends Creature
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (!isTargetable(player))
+		if(!isTargetable(player))
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
 			return;
 		}
 
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, NpcInstance.class, this, true))
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, NpcInstance.class, this, true))
 			return;
 
-		if (player.isInFightClub())
+		if(player.isInFightClub())
 		{
-			if (player.getFightClubEvent().onTalkNpc(player, this))
+			if(player.getFightClubEvent().onTalkNpc(player, this))
 			{
 				player.sendActionFailed();
 				return;
 			}
 		}
-		
-		if (isAutoAttackable(player))
+
+		if(isAutoAttackable(player))
 		{
 			player.getAI().Attack(this, false, shift);
 			return;
 		}
 
-		if (!player.checkInteractionDistance(this))
+		if(!player.checkInteractionDistance(this))
 		{
-			if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
+			if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
 				player.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this, null);
 			return;
 		}
 
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && player.isPK() && !player.isGM())
+		if(!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && player.isPK() && !player.isGM())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
 		// С NPC нельзя разговаривать мертвым, сидя и во время каста
-		if ((!Config.ALLOW_TALK_WHILE_SITTING && player.isSitting()) || player.isActionsDisabled())
+		if((!Config.ALLOW_TALK_WHILE_SITTING && player.isSitting()) || player.isActionsDisabled())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
 		player.sendActionFailed();
-		if (player.getMovement().isMoving())
+		if(player.getMovement().isMoving())
 			player.getMovement().stopMove();
 		player.sendPacket(new MoveToPawnPacket(player, this, player.getInteractionDistance(this)));
 
-		if (_isBusy)
+		if(_isBusy)
 			showBusyWindow(player);
-		else if (isHasChatWindow())
+		else if(isHasChatWindow())
 		{
 			boolean flag = false;
 			Set<Quest> quests = getTemplate().getEventQuests(QuestEventType.NPC_FIRST_TALK);
-			if (quests != null)
+			if(quests != null)
 			{
-				for (Quest quest : quests)
+				for(Quest quest : quests)
 				{
 					QuestState qs = player.getQuestState(quest);
-					if ((qs == null || !qs.isCompleted()) && quest.notifyFirstTalk(this, player))
+					if((qs == null || !qs.isCompleted()) && quest.notifyFirstTalk(this, player))
 						flag = true;
 				}
 			}
 
-			if (!flag)
+			if(!flag)
 			{
-				for (ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_FIRST_TALK))
+				for(ListenerHook hook : getTemplate().getListenerHooks(ListenerHookType.NPC_FIRST_TALK))
 				{
-					if (hook.onNpcFirstTalk(this, player))
+					if(hook.onNpcFirstTalk(this, player))
 						flag = true;
 				}
 
-				for (ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_FIRST_TALK))
+				for(ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.NPC_FIRST_TALK))
 				{
-					if (hook.onNpcFirstTalk(this, player))
+					if(hook.onNpcFirstTalk(this, player))
 						flag = true;
 				}
 			}
 
-			if (!flag && !isDead())
+			if(!flag && !isDead())
 			{
 				showChatWindow(player, 0, true);
-				if (Config.NPC_DIALOG_PLAYER_DELAY > 0)
+				if(Config.NPC_DIALOG_PLAYER_DELAY > 0)
 					player.setNpcDialogEndTime((int) (System.currentTimeMillis() / 1000L) + Config.NPC_DIALOG_PLAYER_DELAY);
 			}
 		}
@@ -1215,17 +1214,17 @@ public class NpcInstance extends Creature
 
 	public void showQuestWindow(Player player, int questId)
 	{
-		if (!player.isQuestContinuationPossible(true))
+		if(!player.isQuestContinuationPossible(true))
 			return;
 
 		int count = 0;
-		for (QuestState qs : player.getAllQuestsStates())
+		for(QuestState qs : player.getAllQuestsStates())
 		{
-			if (qs != null && qs.getQuest().isVisible(player) && qs.isStarted() && qs.getCond() > 0)
+			if(qs != null && qs.getQuest().isVisible(player) && qs.isStarted() && qs.getCond() > 0)
 				count++;
 		}
 
-		if (count > 40)
+		if(count > 40)
 		{
 			showChatWindow(player, "quest-limit.htm", false);
 			return;
@@ -1235,27 +1234,27 @@ public class NpcInstance extends Creature
 		{
 			// Get the state of the selected quest
 			QuestState qs = player.getQuestState(questId);
-			if (qs != null)
+			if(qs != null)
 			{
-				if (qs.isCompleted())
+				if(qs.isCompleted())
 				{
-					if (qs.getQuest().notifyCompleted(this, qs))
+					if(qs.getQuest().notifyCompleted(this, qs))
 						return;
 				}
-				if (qs.getQuest().notifyTalk(this, qs))
+				if(qs.getQuest().notifyTalk(this, qs))
 					return;
 			}
 			else
 			{
 				Quest quest = QuestHolder.getInstance().getQuest(questId);
-				if (quest != null)
+				if(quest != null)
 				{
 					// check for start point
 					Set<Quest> quests = getTemplate().getEventQuests(QuestEventType.QUEST_START);
-					if (quests != null && quests.contains(quest))
+					if(quests != null && quests.contains(quest))
 					{
 						qs = quest.newQuestState(player);
-						if (qs.getQuest().notifyTalk(this, qs))
+						if(qs.getQuest().notifyTalk(this, qs))
 							return;
 					}
 				}
@@ -1263,7 +1262,7 @@ public class NpcInstance extends Creature
 
 			showChatWindow(player, "no-quest.htm", false);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("problem with npc text(QUEST ID[" + questId + "]" + e);
 			_log.error("", e);
@@ -1274,7 +1273,7 @@ public class NpcInstance extends Creature
 
 	public boolean canBypassCheck(Player player)
 	{
-		if (player.isDead() || !player.checkInteractionDistance(this))
+		if(player.isDead() || !player.checkInteractionDistance(this))
 		{
 			player.sendActionFailed();
 			return false;
@@ -1288,17 +1287,17 @@ public class NpcInstance extends Creature
 		{
 			StringTokenizer st = new StringTokenizer(command, "_");
 			String cmd = st.nextToken();
-			if (command.equalsIgnoreCase("TerritoryStatus"))
+			if(command.equalsIgnoreCase("TerritoryStatus"))
 			{
 				HtmlMessage html = new HtmlMessage(this);
 
 				Castle castle = getCastle(player);
-				if (castle != null && castle.getId() > 0)
+				if(castle != null && castle.getId() > 0)
 				{
-					if (castle.getOwnerId() > 0)
+					if(castle.getOwnerId() > 0)
 					{
 						Clan clan = ClanTable.getInstance().getClan(castle.getOwnerId());
-						if (clan != null)
+						if(clan != null)
 						{
 							html.setFile("merchant/territorystatus.htm");
 							html.replace("%castlename%", HtmlUtils.htmlResidenceName(castle.getId()));
@@ -1323,22 +1322,22 @@ public class NpcInstance extends Creature
 
 				player.sendPacket(html);
 			}
-			else if (command.startsWith("QuestEvent"))
+			else if(command.startsWith("QuestEvent"))
 			{
 				StringTokenizer tokenizer = new StringTokenizer(command);
 				tokenizer.nextToken();
 
 				String questName = tokenizer.nextToken();
 				int questId = Integer.parseInt(questName);
-				if (command.length() > (12 + questName.length()))
+				if(command.length() > (12 + questName.length()))
 					player.processQuestEvent(questId, command.substring(12 + questName.length()), this);
 				else
 					player.processQuestEvent(questId, "", this);
 			}
-			else if (command.startsWith("Quest"))
+			else if(command.startsWith("Quest"))
 			{
 				String quest = command.substring(5).trim();
-				if (quest.length() == 0)
+				if(quest.length() == 0)
 					showQuestWindow(player);
 				else
 				{
@@ -1347,35 +1346,35 @@ public class NpcInstance extends Creature
 						int questId = Integer.parseInt(quest);
 						showQuestWindow(player, questId);
 					}
-					catch (NumberFormatException nfe)
+					catch(NumberFormatException nfe)
 					{
 						_log.error("", nfe);
 					}
 				}
 			}
-			else if (command.startsWith("Chat") || command.startsWith("chat"))
+			else if(command.startsWith("Chat") || command.startsWith("chat"))
 			{
 				try
 				{
 					int val = Integer.parseInt(command.substring(5));
 					showChatWindow(player, val, false);
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					String filename = command.substring(5).trim();
-					if (filename.length() == 0)
+					if(filename.length() == 0)
 						showChatWindow(player, "npcdefault.htm", false);
 					else
 						showChatWindow(player, filename, false);
 				}
 			}
-			else if (command.startsWith("AttributeCancel"))
+			else if(command.startsWith("AttributeCancel"))
 				player.sendPacket(new ExShowBaseAttributeCancelWindow(player));
-			else if (command.startsWith("NpcLocationInfo"))
+			else if(command.startsWith("NpcLocationInfo"))
 			{
 				int val = Integer.parseInt(command.substring(16));
 				List<NpcInstance> npcs = GameObjectsStorage.getNpcs(true, val);
-				if (!npcs.isEmpty())
+				if(!npcs.isEmpty())
 				{
 					// Убираем флажок на карте и стрелку на компасе
 					player.sendPacket(new RadarControlPacket(2, 2, npcs.get(0).getLoc()));
@@ -1383,87 +1382,87 @@ public class NpcInstance extends Creature
 					player.sendPacket(new RadarControlPacket(0, 1, npcs.get(0).getLoc()));
 				}
 			}
-			else if (command.startsWith("Multisell") || command.startsWith("multisell"))
+			else if(command.startsWith("Multisell") || command.startsWith("multisell"))
 			{
 				String listId = command.substring(9).trim();
 				Castle castle = getCastle(player);
 				MultiSellHolder.getInstance().SeparateAndSend(Integer.parseInt(listId), player, castle != null ? castle.getTaxRate() : 0);
 			}
-			else if (command.equalsIgnoreCase("ClanSkillList"))
+			else if(command.equalsIgnoreCase("ClanSkillList"))
 				showClanSkillList(player);
-			else if (command.startsWith("SubUnitSkillList"))
+			else if(command.startsWith("SubUnitSkillList"))
 				showSubUnitSkillList(player);
-			else if (command.startsWith("Link"))
+			else if(command.startsWith("Link"))
 				showChatWindow(player, command.substring(5), false);
-			else if (cmd.equalsIgnoreCase("teleport"))
+			else if(cmd.equalsIgnoreCase("teleport"))
 			{
-				if (!st.hasMoreTokens())
+				if(!st.hasMoreTokens())
 				{
 					errorBypass(command, player);
 					return;
 				}
 
 				String cmd2 = st.nextToken();
-				if (cmd2.equalsIgnoreCase("list"))
+				if(cmd2.equalsIgnoreCase("list"))
 				{
 					int listId = 1;
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						listId = Integer.parseInt(st.nextToken());
 
 					showTeleportList(player, listId);
 				}
-				else if (cmd2.equalsIgnoreCase("id"))
+				else if(cmd2.equalsIgnoreCase("id"))
 				{
 					int listId = Integer.parseInt(st.nextToken());
 					int teleportNameId = Integer.parseInt(st.nextToken());
 
 					List<TeleportLocation> list = getTemplate().getTeleportList(listId);
-					if (list == null || list.isEmpty())
+					if(list == null || list.isEmpty())
 					{
 						errorBypass(command, player);
 						return;
 					}
 
 					TeleportLocation teleportLocation = null;
-					for (TeleportLocation tl : list)
+					for(TeleportLocation tl : list)
 					{
-						if (tl.getName() == teleportNameId)
+						if(tl.getName() == teleportNameId)
 						{
 							teleportLocation = tl;
 							break;
 						}
 					}
 
-					if (teleportLocation == null)
+					if(teleportLocation == null)
 					{
 						errorBypass(command, player);
 						return;
 					}
 
 					long itemCount = calcTeleportPrice(player, teleportLocation);
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						itemCount = Long.parseLong(st.nextToken());
 
 					teleportPlayer(player, teleportLocation, itemCount);
 				}
-				else if (cmd2.equalsIgnoreCase("mdt"))
+				else if(cmd2.equalsIgnoreCase("mdt"))
 				{
-					if (!st.hasMoreTokens())
+					if(!st.hasMoreTokens())
 					{
 						errorBypass(command, player);
 						return;
 					}
 
 					String cmd3 = st.nextToken();
-					if (cmd3.equalsIgnoreCase("to"))
+					if(cmd3.equalsIgnoreCase("to"))
 					{
 						player.setVar("@mdt_back_cords", player.getLoc().toXYZString(), -1);
 						player.teleToLocation(12661, 181687, -3540);
 					}
-					else if (cmd3.equalsIgnoreCase("from"))
+					else if(cmd3.equalsIgnoreCase("from"))
 					{
 						String var = player.getVar("@mdt_back_cords");
-						if (var == null || var.isEmpty())
+						if(var == null || var.isEmpty())
 						{
 							player.teleToLocation(12902, 181011, -3563);
 							return;
@@ -1471,19 +1470,19 @@ public class NpcInstance extends Creature
 						player.teleToLocation(Location.parseLoc(var));
 					}
 				}
-				else if (cmd2.equalsIgnoreCase("fi"))
+				else if(cmd2.equalsIgnoreCase("fi"))
 				{
-					if (!st.hasMoreTokens())
+					if(!st.hasMoreTokens())
 					{
 						errorBypass(command, player);
 						return;
 					}
 
 					String cmd3 = st.nextToken();
-					if (cmd3.equalsIgnoreCase("to"))
+					if(cmd3.equalsIgnoreCase("to"))
 					{
 						player.setVar("@fi_back_cords", player.getLoc().toXYZString(), -1);
-						switch (Rnd.get(4))
+						switch(Rnd.get(4))
 						{
 							case 1:
 								player.teleToLocation(-60695, -56896, -2032);
@@ -1499,10 +1498,10 @@ public class NpcInstance extends Creature
 								break;
 						}
 					}
-					else if (cmd3.equalsIgnoreCase("from"))
+					else if(cmd3.equalsIgnoreCase("from"))
 					{
 						String var = player.getVar("@fi_back_cords");
-						if (var == null || var.isEmpty())
+						if(var == null || var.isEmpty())
 						{
 							player.teleToLocation(12902, 181011, -3563);
 							return;
@@ -1512,7 +1511,7 @@ public class NpcInstance extends Creature
 				}
 				else
 				{
-					if (st.countTokens() < 2)
+					if(st.countTokens() < 2)
 					{
 						errorBypass(command, player);
 						return;
@@ -1523,87 +1522,86 @@ public class NpcInstance extends Creature
 					int z = Integer.parseInt(st.nextToken());
 
 					int itemId = 0;
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						itemId = Integer.parseInt(st.nextToken());
 
 					int itemCount = 0;
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						itemCount = Integer.parseInt(st.nextToken());
 
 					int castleId = 0;
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						castleId = Integer.parseInt(st.nextToken());
 
 					int reflectionId = 0;
-					if (st.hasMoreTokens())
+					if(st.hasMoreTokens())
 						reflectionId = Integer.parseInt(st.nextToken());
 
-					teleportPlayer(player, x, y, z, itemId, itemCount, new int[]
-					{
-						castleId
+					teleportPlayer(player, x, y, z, itemId, itemCount, new int[] {
+							castleId
 					}, reflectionId);
 				}
 			}
-			else if (command.startsWith("open_gate"))
+			else if(command.startsWith("open_gate"))
 			{
 				int val = Integer.parseInt(command.substring(10));
 				ReflectionUtils.getDoor(val).openMe();
 				player.sendActionFailed();
 			}
-			else if (command.startsWith("ExitFromQuestInstance"))
+			else if(command.startsWith("ExitFromQuestInstance"))
 			{
 				Reflection r = player.getReflection();
-				if (r.isDefault())
+				if(r.isDefault())
 					return;
 				r.startCollapseTimer(1, true);
 				player.teleToLocation(r.getReturnLoc(), ReflectionManager.MAIN);
-				if (command.length() > 22)
+				if(command.length() > 22)
 					try
 					{
 						int val = Integer.parseInt(command.substring(22));
 						showChatWindow(player, val, false);
 					}
-					catch (NumberFormatException nfe)
+					catch(NumberFormatException nfe)
 					{
 						String filename = command.substring(22).trim();
-						if (filename.length() > 0)
+						if(filename.length() > 0)
 							showChatWindow(player, filename, false);
 					}
 			}
-			else if (cmd.equalsIgnoreCase("WithdrawP"))
+			else if(cmd.equalsIgnoreCase("WithdrawP"))
 				WarehouseFunctions.showRetrieveWindow(player);
-			else if (cmd.equalsIgnoreCase("DepositP"))
+			else if(cmd.equalsIgnoreCase("DepositP"))
 				WarehouseFunctions.showDepositWindow(player);
-			else if (cmd.equalsIgnoreCase("WithdrawC"))
+			else if(cmd.equalsIgnoreCase("WithdrawC"))
 				WarehouseFunctions.showWithdrawWindowClan(player);
-			else if (cmd.equalsIgnoreCase("DepositC"))
+			else if(cmd.equalsIgnoreCase("DepositC"))
 				WarehouseFunctions.showDepositWindowClan(player);
-			else if (cmd.equalsIgnoreCase("deposit_items"))
+			else if(cmd.equalsIgnoreCase("deposit_items"))
 				player.sendPacket(new PackageToListPacket(player));
-			else if (cmd.equalsIgnoreCase("withdraw_items"))
+			else if(cmd.equalsIgnoreCase("withdraw_items"))
 				WarehouseFunctions.showFreightWindow(player);
-			else if (cmd.equalsIgnoreCase("ensoul"))
+			else if(cmd.equalsIgnoreCase("ensoul"))
 			{
-				if (!st.hasMoreTokens())
+				if(!st.hasMoreTokens())
 				{
 					errorBypass(command, player);
 					return;
 				}
 
 				String cmd2 = st.nextToken();
-				if (cmd2.equalsIgnoreCase("add"))
+				if(cmd2.equalsIgnoreCase("add"))
 					player.sendPacket(ExShowEnsoulWindow.STATIC);
-				else if (cmd2.equalsIgnoreCase("remove"))
+				else if(cmd2.equalsIgnoreCase("remove"))
 					player.sendPacket(ExEnSoulExtractionShow.STATIC);
 			}
-			else if (cmd.startsWith("Augment"))
+			else if(cmd.startsWith("Augment"))
 			{
-				if (Config.ALLOW_AUGMENTATION)
+				if(Config.ALLOW_AUGMENTATION)
 				{
 					int cmdChoice = Integer.parseInt(command.substring(8, 9).trim());
-					if (cmdChoice == 1)
+					if(cmdChoice == 1)
 						player.sendPacket(SystemMsg.SELECT_THE_ITEM_TO_BE_AUGMENTED, ExShowVariationMakeWindow.STATIC);
-					else if (cmdChoice == 2)
+					else if(cmdChoice == 2)
 						player.sendPacket(SystemMsg.SELECT_THE_ITEM_FROM_WHICH_YOU_WISH_TO_REMOVE_AUGMENTATION, ExShowVariationCancelWindow.STATIC);
 				}
 			}
@@ -1613,17 +1611,17 @@ public class NpcInstance extends Creature
 				String args = command.substring(word.length()).trim();
 
 				Pair<Object, Method> b = BypassHolder.getInstance().getBypass(word);
-				if (b != null)
+				if(b != null)
 					b.getValue().invoke(b.getKey(), player, this, StringUtils.isEmpty(args) ? new String[0] : args.split("\\s+"));
 				else
 					_log.warn("Unknown command=[" + command + "] npcId:" + getTemplate().getId());
 			}
 		}
-		catch (NumberFormatException nfe)
+		catch(NumberFormatException nfe)
 		{
 			_log.warn("Invalid bypass to Server command parameter! npcId=" + getTemplate().getId() + " command=[" + command + "]", nfe);
 		}
-		catch (Exception sioobe)
+		catch(Exception sioobe)
 		{
 			_log.warn("Incorrect htm bypass! npcId=" + getTemplate().getId() + " command=[" + command + "]", sioobe);
 		}
@@ -1636,10 +1634,10 @@ public class NpcInstance extends Creature
 
 	public boolean teleportPlayer(Player player, int x, int y, int z, int itemId, long itemCount, int[] castleIds, int reflectionId)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (player.getMountType() == MountType.WYVERN)
+		if(player.getMountType() == MountType.WYVERN)
 		{
 			// player.sendMessage("Телепортация верхом на виверне невозможна."); //TODO:
 			// [Bonux] Найти нужное сообщение!
@@ -1651,7 +1649,7 @@ public class NpcInstance extends Creature
 		 * конфиге Off Like >= 56 lvl, данные по ограничению lvl'a устанавливаются в
 		 * altsettings.properties.
 		 */
-		switch (getNpcId())
+		switch(getNpcId())
 		{
 			case 32864:
 			case 32865:
@@ -1660,7 +1658,7 @@ public class NpcInstance extends Creature
 			case 32868:
 			case 32869:
 			case 32870:
-				if (player.getLevel() < 80)
+				if(player.getLevel() < 80)
 				{
 					showChatWindow(player, "teleporter/" + getNpcId() + "-no.htm", false);
 					return false;
@@ -1668,11 +1666,11 @@ public class NpcInstance extends Creature
 				break;
 		}
 
-		if (itemId > 0 && itemCount > 0)
+		if(itemId > 0 && itemCount > 0)
 		{
-			if (ItemFunctions.getItemCount(player, itemId) < itemCount)
+			if(ItemFunctions.getItemCount(player, itemId) < itemCount)
 			{
-				if (itemId == ItemTemplate.ITEM_ID_ADENA)
+				if(itemId == ItemTemplate.ITEM_ID_ADENA)
 					player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 				else
 					player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
@@ -1680,18 +1678,18 @@ public class NpcInstance extends Creature
 			}
 		}
 
-		if (castleIds.length > 0 && player.getReflection().isMain() && !Config.ALT_TELEPORT_TO_TOWN_DURING_SIEGE)
+		if(castleIds.length > 0 && player.getReflection().isMain() && !Config.ALT_TELEPORT_TO_TOWN_DURING_SIEGE)
 		{
-			for (int castleId : castleIds)
+			for(int castleId : castleIds)
 			{
 				Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, castleId);
-				if (castle != null && castle.getSiegeEvent() != null && castle.getSiegeEvent().isInProgress()) // Нельзя
-																												// телепортироваться
-																												// в
-																												// города,
-																												// где
-																												// идет
-																												// осада
+				if(castle != null && castle.getSiegeEvent() != null && castle.getSiegeEvent().isInProgress()) // Нельзя
+				// телепортироваться
+				// в
+				// города,
+				// где
+				// идет
+				// осада
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_TELEPORT_TO_A_VILLAGE_THAT_IS_IN_A_SIEGE);
 					return false;
@@ -1699,17 +1697,17 @@ public class NpcInstance extends Creature
 			}
 		}
 
-		if (itemId > 0 && itemCount > 0)
+		if(itemId > 0 && itemCount > 0)
 		{
-			if (!ItemFunctions.deleteItem(player, itemId, itemCount, true))
+			if(!ItemFunctions.deleteItem(player, itemId, itemCount, true))
 				return false;
 		}
 
 		Location pos = Location.findPointToStay(x, y, z, 50, 100, player.getGeoIndex());
-		if (reflectionId > -1)
+		if(reflectionId > -1)
 		{
 			Reflection reflection = ReflectionManager.getInstance().get(reflectionId);
-			if (reflection == null)
+			if(reflection == null)
 			{
 				_log.warn("Cannot teleport to reflection ID: " + reflectionId + "!");
 				return false;
@@ -1738,14 +1736,14 @@ public class NpcInstance extends Creature
 
 	private boolean teleportPlayer(Player player, TeleportLocation loc, long itemCount)
 	{
-		if (teleportPlayer(player, loc, loc.getItemId(), itemCount, loc.getCastleIds(), -1))
+		if(teleportPlayer(player, loc, loc.getItemId(), itemCount, loc.getCastleIds(), -1))
 			return true;
 		return false;
 	}
 
 	private long calcTeleportPrice(Player player, TeleportLocation loc)
 	{
-		if (loc.getItemId() != ItemTemplate.ITEM_ID_ADENA)
+		if(loc.getItemId() != ItemTemplate.ITEM_ID_ADENA)
 			return loc.getPrice();
 
 		double pricemod = (loc.isPrimeHours() && player.getLevel() <= Config.GATEKEEPER_FREE) ? 0. : Config.GATEKEEPER_MODIFIER;
@@ -1764,46 +1762,46 @@ public class NpcInstance extends Creature
 		sb.append("&$556;").append("<br><br>");
 
 		List<TeleportLocation> list = getTemplate().getTeleportList(listId);
-		if (list != null && !list.isEmpty() && player.getPlayerAccess().UseTeleport)
+		if(list != null && !list.isEmpty() && player.getPlayerAccess().UseTeleport)
 		{
-			for (TeleportLocation tl : list)
+			for(TeleportLocation tl : list)
 			{
-				if (tl.getQuestZoneId() > 0 && tl.getQuestZoneId() == player.getQuestZoneId())
+				if(tl.getQuestZoneId() > 0 && tl.getQuestZoneId() == player.getQuestZoneId())
 				{
-					if (tl.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+					if(tl.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 					{
 						long price = calcTeleportPrice(player, tl);
 						sb.append("<Button ALIGN=LEFT ICON=\"QUEST\" action=\"bypass -h npc_%objectId%_teleport_id_").append(listId).append("_").append(tl.getName()).append("_").append(price).append("\" msg=\"811;F;").append(tl.getName()).append("\">").append(HtmlUtils.htmlNpcString(tl.getName()));
-						if (price > 0)
+						if(price > 0)
 							sb.append(" - ").append(price).append(" ").append(HtmlUtils.htmlItemName(ItemTemplate.ITEM_ID_ADENA));
 						sb.append("</button>");
 					}
 					else
 					{
 						sb.append("<Button ALIGN=LEFT ICON=\"QUEST\" action=\"bypass -h npc_%objectId%_teleport_id_").append(listId).append("_").append(tl.getName()).append("\" msg=\"811;F;").append(tl.getName()).append("\">").append(HtmlUtils.htmlNpcString(tl.getName()));
-						if (tl.getItemId() > 0 && tl.getPrice() > 0)
+						if(tl.getItemId() > 0 && tl.getPrice() > 0)
 							sb.append(" - ").append(tl.getPrice()).append(" ").append(HtmlUtils.htmlItemName(tl.getItemId()));
 						sb.append("</button>");
 					}
 				}
 			}
 
-			for (TeleportLocation tl : list)
+			for(TeleportLocation tl : list)
 			{
-				if (tl.getQuestZoneId() <= 0 || tl.getQuestZoneId() != player.getQuestZoneId())
+				if(tl.getQuestZoneId() <= 0 || tl.getQuestZoneId() != player.getQuestZoneId())
 				{
-					if (tl.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+					if(tl.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 					{
 						long price = calcTeleportPrice(player, tl);
 						sb.append("<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h npc_%objectId%_teleport_id_").append(listId).append("_").append(tl.getName()).append("_").append(price).append("\" msg=\"811;F;").append(tl.getName()).append("\">").append(HtmlUtils.htmlNpcString(tl.getName()));
-						if (price > 0)
+						if(price > 0)
 							sb.append(" - ").append(price).append(" ").append(HtmlUtils.htmlItemName(ItemTemplate.ITEM_ID_ADENA));
 						sb.append("</button>");
 					}
 					else
 					{
 						sb.append("<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h npc_%objectId%_teleport_id_").append(listId).append("_").append(tl.getName()).append("\" msg=\"811;F;").append(tl.getName()).append("\">").append(HtmlUtils.htmlNpcString(tl.getName()));
-						if (tl.getItemId() > 0 && tl.getPrice() > 0)
+						if(tl.getItemId() > 0 && tl.getPrice() > 0)
 							sb.append(" - ").append(tl.getPrice()).append(" ").append(HtmlUtils.htmlItemName(tl.getItemId()));
 						sb.append("</button>");
 					}
@@ -1849,23 +1847,23 @@ public class NpcInstance extends Creature
 			int questId1 = quest.getId();
 			int questId2 = info.getQuest().getId();
 
-			if (quest1 == 1 && quest2 == 2)
+			if(quest1 == 1 && quest2 == 2)
 				return 1;
-			else if (quest1 == 2 && quest2 == 1)
+			else if(quest1 == 2 && quest2 == 1)
 				return -1;
-			else if (quest1 == 3 && quest2 == 4)
+			else if(quest1 == 3 && quest2 == 4)
 				return 1;
-			else if (quest1 == 4 && quest2 == 3)
+			else if(quest1 == 4 && quest2 == 3)
 				return -1;
-			else if (quest1 > quest2)
+			else if(quest1 > quest2)
 				return 1;
-			else if (quest1 < quest2)
+			else if(quest1 < quest2)
 				return -1;
 			else
 			{
-				if (questId1 > questId2)
+				if(questId1 > questId2)
 					return 1;
-				else if (questId1 < questId2)
+				else if(questId1 < questId2)
 					return -1;
 				else
 					// Недостижимая ситуация.
@@ -1880,35 +1878,35 @@ public class NpcInstance extends Creature
 		TIntObjectMap<QuestInfo> options = new TIntObjectHashMap<QuestInfo>();
 
 		Set<Quest> quests = getTemplate().getEventQuests(QuestEventType.QUEST_START);
-		if (quests != null)
+		if(quests != null)
 		{
-			for (Quest quest : quests)
+			for(Quest quest : quests)
 			{
-				if (quest.isVisible(player) && quest.checkStartNpc(this, player) && !options.containsKey(quest.getId()))
+				if(quest.isVisible(player) && quest.checkStartNpc(this, player) && !options.containsKey(quest.getId()))
 					options.put(quest.getId(), new QuestInfo(quest, player, true));
 			}
 		}
 
 		List<QuestState> awaits = player.getQuestsForEvent(this, QuestEventType.QUEST_TALK);
-		if (awaits != null)
+		if(awaits != null)
 		{
-			for (QuestState qs : awaits)
+			for(QuestState qs : awaits)
 			{
 				Quest quest = qs.getQuest();
-				if (quest.isVisible(player) && quest.checkTalkNpc(this, qs) && !options.containsKey(quest.getId()))
+				if(quest.isVisible(player) && quest.checkTalkNpc(this, qs) && !options.containsKey(quest.getId()))
 					options.put(quest.getId(), new QuestInfo(quest, player, false));
 			}
 		}
 
 		// Display a QuestChooseWindow (if several quests are available) or QuestWindow
-		if (options.size() > 1)
+		if(options.size() > 1)
 		{
 			List<QuestInfo> list = new ArrayList<QuestInfo>();
 			list.addAll(options.valueCollection());
 			Collections.sort(list);
 			showQuestChooseWindow(player, list);
 		}
-		else if (options.size() == 1)
+		else if(options.size() == 1)
 			showQuestWindow(player, options.values(new QuestInfo[1])[0].getQuest().getId());
 		else
 			showChatWindow(player, "no-quest.htm", false);
@@ -1920,10 +1918,10 @@ public class NpcInstance extends Creature
 
 		sb.append("<html><body>");
 
-		for (QuestInfo info : quests)
+		for(QuestInfo info : quests)
 		{
 			Quest q = info.getQuest();
-			if (!q.isVisible(player))
+			if(!q.isVisible(player))
 				continue;
 
 			sb.append("<button icon=quest align=left action=\"bypass -h npc_").append(getObjectId()).append("_Quest ").append(q.getId()).append("\">").append(q.getDescr(this, player, info.isStart())).append("</button>");
@@ -1943,7 +1941,7 @@ public class NpcInstance extends Creature
 
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... replace)
 	{
-		if (val == 0)
+		if(val == 0)
 		{
 			showMainChatWindow(player, firstTalk, replace);
 			return;
@@ -1954,7 +1952,7 @@ public class NpcInstance extends Creature
 	public void showChatWindow(Player player, String filename, boolean firstTalk, Object... replace)
 	{
 		HtmlMessage packet;
-		if (filename.endsWith(".htm"))
+		if(filename.endsWith(".htm"))
 			packet = new HtmlMessage(this, filename);
 		else
 		{
@@ -1964,9 +1962,9 @@ public class NpcInstance extends Creature
 
 		packet.setPlayVoice(firstTalk);
 
-		if (replace.length % 2 == 0)
+		if(replace.length % 2 == 0)
 		{
-			for (int i = 0; i < replace.length; i += 2)
+			for(int i = 0; i < replace.length; i += 2)
 				packet.replace(String.valueOf(replace[i]), String.valueOf(replace[i + 1]));
 		}
 
@@ -1976,7 +1974,7 @@ public class NpcInstance extends Creature
 	public String getHtmlFilename(int val, Player player)
 	{
 		String filename;
-		if (val == 0)
+		if(val == 0)
 			filename = getNpcId() + ".htm";
 		else
 			filename = getNpcId() + "-" + val + ".htm";
@@ -1985,34 +1983,34 @@ public class NpcInstance extends Creature
 
 	public String getHtmlDir(String filename, Player player)
 	{
-		if (getTemplate().getHtmRoot() != null)
+		if(getTemplate().getHtmRoot() != null)
 		{
-			if (HtmCache.getInstance().getIfExists(getTemplate().getHtmRoot() + filename, player) != null)
+			if(HtmCache.getInstance().getIfExists(getTemplate().getHtmRoot() + filename, player) != null)
 				return getTemplate().getHtmRoot();
 		}
 
-		if (HtmCache.getInstance().getIfExists(filename, player) != null)
+		if(HtmCache.getInstance().getIfExists(filename, player) != null)
 			return "";
 
-		if (HtmCache.getInstance().getIfExists("default/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("default/" + filename, player) != null)
 			return "default/";
 
-		if (HtmCache.getInstance().getIfExists("blacksmith/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("blacksmith/" + filename, player) != null)
 			return "blacksmith/";
 
-		if (HtmCache.getInstance().getIfExists("merchant/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("merchant/" + filename, player) != null)
 			return "merchant/";
 
-		if (HtmCache.getInstance().getIfExists("teleporter/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("teleporter/" + filename, player) != null)
 			return "teleporter/";
 
-		if (HtmCache.getInstance().getIfExists("petmanager/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("petmanager/" + filename, player) != null)
 			return "petmanager/";
 
-		if (HtmCache.getInstance().getIfExists("mammons/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("mammons/" + filename, player) != null)
 			return "mammons/";
 
-		if (HtmCache.getInstance().getIfExists("warehouse/" + filename, player) != null)
+		if(HtmCache.getInstance().getIfExists("warehouse/" + filename, player) != null)
 			return "warehouse/";
 
 		return null;
@@ -2024,11 +2022,11 @@ public class NpcInstance extends Creature
 
 		// If the file is not found, the standard message "I have nothing to say to you"
 		// is returned
-		if (dir == null)
+		if(dir == null)
 			return "npcdefault.htm";
 
 		String path = dir + filename;
-		if (HtmCache.getInstance().getIfExists(path, player) != null)
+		if(HtmCache.getInstance().getIfExists(path, player) != null)
 			return path;
 
 		return "npcdefault.htm";
@@ -2072,7 +2070,7 @@ public class NpcInstance extends Creature
 
 	public static void showClanSkillList(Player player)
 	{
-		if (player.getClan() == null || !player.isClanLeader())
+		if(player.getClan() == null || !player.isClanLeader())
 		{
 			player.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_IS_ENABLED);
 			player.sendActionFailed();
@@ -2088,10 +2086,10 @@ public class NpcInstance extends Creature
 
 		final ExAcquirableSkillListByClass asl = new ExAcquirableSkillListByClass(t, skills.size());
 
-		for (SkillLearn s : skills)
+		for(SkillLearn s : skills)
 			asl.addSkill(s.getId(), s.getLevel(), s.getLevel(), s.getCost(), s.getMinLevel());
 
-		if (skills.size() == 0)
+		if(skills.size() == 0)
 		{
 			player.sendPacket(AcquireSkillDonePacket.STATIC);
 			player.sendPacket(SystemMsg.THERE_ARE_NO_OTHER_SKILLS_TO_LEARN);
@@ -2105,25 +2103,25 @@ public class NpcInstance extends Creature
 	public static void showSubUnitSkillList(Player player)
 	{
 		Clan clan = player.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
-		if ((player.getClanPrivileges() & Clan.CP_CL_TROOPS_FAME) != Clan.CP_CL_TROOPS_FAME)
+		if((player.getClanPrivileges() & Clan.CP_CL_TROOPS_FAME) != Clan.CP_CL_TROOPS_FAME)
 		{
 			player.sendPacket(SystemMsg.YOU_ARE_NOT_AUTHORIZED_TO_DO_THAT);
 			return;
 		}
 
 		Set<SkillLearn> learns = new TreeSet<SkillLearn>();
-		for (SubUnit sub : player.getClan().getAllSubUnits())
+		for(SubUnit sub : player.getClan().getAllSubUnits())
 			learns.addAll(SkillAcquireHolder.getInstance().getAvailableSkills(player, AcquireType.SUB_UNIT, sub));
 
 		final ExAcquirableSkillListByClass asl = new ExAcquirableSkillListByClass(AcquireType.SUB_UNIT, learns.size());
 
-		for (SkillLearn s : learns)
+		for(SkillLearn s : learns)
 			asl.addSkill(s.getId(), s.getLevel(), s.getLevel(), s.getCost(), 1, Clan.SUBUNIT_KNIGHT4);
 
-		if (learns.size() == 0)
+		if(learns.size() == 0)
 		{
 			player.sendPacket(AcquireSkillDonePacket.STATIC);
 			player.sendPacket(SystemMsg.THERE_ARE_NO_OTHER_SKILLS_TO_LEARN);
@@ -2145,7 +2143,7 @@ public class NpcInstance extends Creature
 
 	public int calculateLevelDiffForDrop(int charLevel)
 	{
-		if (!Config.DEEPBLUE_DROP_RULES)
+		if(!Config.DEEPBLUE_DROP_RULES)
 			return 0;
 
 		int mobLevel = getLevel();
@@ -2196,10 +2194,10 @@ public class NpcInstance extends Creature
 	@Override
 	public NpcListenerList getListeners()
 	{
-		if (listeners == null)
+		if(listeners == null)
 			synchronized (this)
 			{
-				if (listeners == null)
+				if(listeners == null)
 					listeners = new NpcListenerList(this);
 			}
 
@@ -2219,10 +2217,10 @@ public class NpcInstance extends Creature
 	@Override
 	public NpcStatsChangeRecorder getStatsRecorder()
 	{
-		if (_statsRecorder == null)
+		if(_statsRecorder == null)
 			synchronized (this)
 			{
-				if (_statsRecorder == null)
+				if(_statsRecorder == null)
 					_statsRecorder = new NpcStatsChangeRecorder(this);
 			}
 
@@ -2243,16 +2241,16 @@ public class NpcInstance extends Creature
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		if (isInvisible(forPlayer))
+		if(isInvisible(forPlayer))
 			return Collections.emptyList();
 
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(3);
 		list.add(new NpcInfoPacket(this, forPlayer).init());
 
-		if (isInCombat())
+		if(isInCombat())
 			list.add(new AutoAttackStartPacket(getObjectId()));
 
-		if (getMovement().isMoving() || getMovement().isFollow())
+		if(getMovement().isMoving() || getMovement().isFollow())
 			list.add(movePacket());
 
 		return list;
@@ -2270,11 +2268,11 @@ public class NpcInstance extends Creature
 		int geoZ = super.getGeoZ(x, y, z);
 
 		Location spawnedLoc = getSpawnedLoc();
-		if (spawnedLoc.equals(x, y, z))
+		if(spawnedLoc.equals(x, y, z))
 		{
 			// Заглушка для точечного спавна. Некоторые НПС заспавнены в местах, где нет
 			// геодаты.
-			if (Math.abs(geoZ - z) > Config.MIN_LAYER_HEIGHT)
+			if(Math.abs(geoZ - z) > Config.MIN_LAYER_HEIGHT)
 				return z;
 		}
 		return geoZ;
@@ -2288,11 +2286,11 @@ public class NpcInstance extends Creature
 	@Override
 	public Clan getClan()
 	{
-		if (_clan != null)
+		if(_clan != null)
 			return _clan;
 
 		Castle castle = getCastle();
-		if (castle == null)
+		if(castle == null)
 			return null;
 		return castle.getOwner();
 	}
@@ -2339,7 +2337,7 @@ public class NpcInstance extends Creature
 
 	public void setParameter(String str, Object val)
 	{
-		if (_parameters == StatsSet.EMPTY)
+		if(_parameters == StatsSet.EMPTY)
 			_parameters = new StatsSet();
 
 		_parameters.set(str, val);
@@ -2347,10 +2345,10 @@ public class NpcInstance extends Creature
 
 	public void setParameters(MultiValueSet<String> set)
 	{
-		if (set.isEmpty())
+		if(set.isEmpty())
 			return;
 
-		if (_parameters == StatsSet.EMPTY)
+		if(_parameters == StatsSet.EMPTY)
 			_parameters = new MultiValueSet<String>(set.size());
 
 		_parameters.putAll(set);
@@ -2405,7 +2403,7 @@ public class NpcInstance extends Creature
 	@Override
 	public double getCurrentCollisionRadius()
 	{
-		if (isVisualTransformed()) // TODO: Проверить, влияет ли еффект Grow на трансформации у НПС.
+		if(isVisualTransformed()) // TODO: Проверить, влияет ли еффект Grow на трансформации у НПС.
 			return super.getCollisionRadius();
 		return super.getCollisionRadius() * getCollisionRadiusModifier();
 	}
@@ -2413,7 +2411,7 @@ public class NpcInstance extends Creature
 	@Override
 	public double getCurrentCollisionHeight()
 	{
-		if (isVisualTransformed()) // TODO: Проверить, влияет ли еффект Grow на трансформации у НПС.
+		if(isVisualTransformed()) // TODO: Проверить, влияет ли еффект Grow на трансформации у НПС.
 			return super.getCollisionHeight();
 		return super.getCollisionHeight() * getCollisionHeightModifier();
 	}
@@ -2464,7 +2462,8 @@ public class NpcInstance extends Creature
 
 	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
-		return packet == RequestItemEnsoul.class || packet == RequestTryEnSoulExtraction.class || packet == RequestRefine.class || packet == RequestRefineCancel.class;
+		return packet == RequestItemEnsoul.class || packet == RequestTryEnSoulExtraction.class || packet == RequestRefine.class
+				|| packet == RequestRefineCancel.class;
 	}
 
 	public boolean noShiftClick()
@@ -2507,7 +2506,7 @@ public class NpcInstance extends Creature
 	public void setOwner(Player owner)
 	{
 		_ownerName = owner == null ? StringUtils.EMPTY : owner.getName();
-		_ownerRef = owner == null ? HardReferences.<Player>emptyRef() : owner.getRef();
+		_ownerRef = owner == null ? HardReferences.<Player> emptyRef() : owner.getRef();
 	}
 
 	@Override
@@ -2518,9 +2517,9 @@ public class NpcInstance extends Creature
 
 	public boolean addEventTrigger(int triggerId)
 	{
-		if (_eventTriggers.add(triggerId))
+		if(_eventTriggers.add(triggerId))
 		{
-			if (getReflection().isMain())
+			if(getReflection().isMain())
 				return EventTriggersManager.getInstance().addTrigger(MapUtils.regionX(getX()), MapUtils.regionY(getY()), triggerId);
 			else
 				return EventTriggersManager.getInstance().addTrigger(getReflection(), triggerId);
@@ -2530,9 +2529,9 @@ public class NpcInstance extends Creature
 
 	public boolean removeEventTrigger(int triggerId)
 	{
-		if (_eventTriggers.remove(triggerId))
+		if(_eventTriggers.remove(triggerId))
 		{
-			if (getReflection().isMain())
+			if(getReflection().isMain())
 				return EventTriggersManager.getInstance().removeTrigger(MapUtils.regionX(getX()), MapUtils.regionY(getY()), triggerId);
 			else
 				return EventTriggersManager.getInstance().removeTrigger(getReflection(), triggerId);
@@ -2553,10 +2552,10 @@ public class NpcInstance extends Creature
 	public String correctBypassLink(Player player, String link)
 	{
 		String dir = getHtmlDir(link, player);
-		if (dir != null)
+		if(dir != null)
 		{
 			String path = dir + link;
-			if (HtmCache.getInstance().getIfExists(path, player) != null)
+			if(HtmCache.getInstance().getIfExists(path, player) != null)
 				return path;
 		}
 		return link;
@@ -2586,7 +2585,7 @@ public class NpcInstance extends Creature
 	@Override
 	public boolean onTeleported()
 	{
-		if (!super.onTeleported())
+		if(!super.onTeleported())
 			return false;
 
 		getAI().notifyEvent(CtrlEvent.EVT_TELEPORTED);
@@ -2610,7 +2609,7 @@ public class NpcInstance extends Creature
 
 	public int getLifeTime()
 	{
-		if (_spawnTime == 0)
+		if(_spawnTime == 0)
 			return 0;
 
 		return (int) ((System.currentTimeMillis() - _spawnTime) / 1000);
@@ -2618,11 +2617,11 @@ public class NpcInstance extends Creature
 
 	public boolean inMyTerritory(Creature creature)
 	{
-		if (getLeader() != null)
+		if(getLeader() != null)
 			return getLeader().inMyTerritory(creature);
 
 		SpawnRange spawnRange = getSpawnRange();
-		if (spawnRange != null && (spawnRange instanceof Territory))
+		if(spawnRange != null && (spawnRange instanceof Territory))
 			return ((Territory) spawnRange).isInside(creature.getX(), creature.getY(), creature.getZ());
 
 		return true;
@@ -2630,7 +2629,7 @@ public class NpcInstance extends Creature
 
 	public NpcInstance createOnePrivate(int npcId, String ai, int weight, int respawn)
 	{
-		if (isVisible()) // Хозяин заспавнен.
+		if(isVisible()) // Хозяин заспавнен.
 		{
 			MinionSpawner spawner = getMinionList().addMinion(npcId, ai, 1, respawn);
 			return spawner.spawnOne();
@@ -2640,7 +2639,7 @@ public class NpcInstance extends Creature
 
 	public NpcInstance createOnePrivateEx(int npcId, String ai, int weight, int respawn, int x, int y, int z, int h, long p1, long p2, long p3)
 	{
-		if (isVisible()) // Хозяин заспавнен.
+		if(isVisible()) // Хозяин заспавнен.
 		{
 			// MinionSpawner spawner = getMinionList().addMinion(npcId, ai, 1, respawn, x,
 			// y, z, h);
@@ -2651,7 +2650,7 @@ public class NpcInstance extends Creature
 
 	public Collection<RewardList> getRewardLists()
 	{
-		if (_rewardLists == null || _rewardLists.isEmpty())
+		if(_rewardLists == null || _rewardLists.isEmpty())
 			return getTemplate().getRewards();
 
 		List<RewardList> rewardLists = new ArrayList<RewardList>(getTemplate().getRewards().size() + _rewardLists.size());
@@ -2662,14 +2661,14 @@ public class NpcInstance extends Creature
 
 	public void addRewardList(RewardList list)
 	{
-		if (_rewardLists == null)
+		if(_rewardLists == null)
 			_rewardLists = new ArrayList<RewardList>();
 		_rewardLists.add(list);
 	}
 
 	public void removeRewardList(RewardList list)
 	{
-		if (_rewardLists != null)
+		if(_rewardLists != null)
 			_rewardLists.remove(list);
 	}
 
@@ -2677,7 +2676,7 @@ public class NpcInstance extends Creature
 	public final String getVisibleName(Player receiver)
 	{
 		String name = getName();
-		if (name.equals(getTemplate().name))
+		if(name.equals(getTemplate().name))
 			name = StringUtils.EMPTY;
 		return name;
 	}
@@ -2686,24 +2685,24 @@ public class NpcInstance extends Creature
 	public final String getVisibleTitle(Player receiver)
 	{
 		String title = getTitle();
-		if (title.equals(Servitor.TITLE_BY_OWNER_NAME))
+		if(title.equals(Servitor.TITLE_BY_OWNER_NAME))
 		{
 			Player player = getPlayer();
-			if (player != null)
+			if(player != null)
 				title = player.getVisibleName(receiver);
 			else
 				title = _ownerName;
 		}
-		else if (title.equals(getTemplate().title))
+		else if(title.equals(getTemplate().title))
 		{
-			if (isMonster() && Config.ALT_SHOW_MONSTERS_LVL)
+			if(isMonster() && Config.ALT_SHOW_MONSTERS_LVL)
 			{
 				title = "Lv: " + getLevel();
-				if (Config.ALT_SHOW_MONSTERS_AGRESSION)
+				if(Config.ALT_SHOW_MONSTERS_AGRESSION)
 				{
-					if (isAggressive())
+					if(isAggressive())
 						title += " (A)";
-					else if (getFaction() != Faction.NONE)
+					else if(getFaction() != Faction.NONE)
 						title += " (S)";
 				}
 			}
@@ -2745,7 +2744,7 @@ public class NpcInstance extends Creature
 	@Override
 	public NpcStat getStat()
 	{
-		if (_stat == null)
+		if(_stat == null)
 			_stat = new NpcStat(this);
 		return (NpcStat) _stat;
 	}
@@ -2764,11 +2763,11 @@ public class NpcInstance extends Creature
 
 	public int getCloneObjId()
 	{
-		return 0;  
+		return 0;
 	}
 
 	public int getChestItem()
 	{
-		return 0; 
+		return 0;
 	}
 }

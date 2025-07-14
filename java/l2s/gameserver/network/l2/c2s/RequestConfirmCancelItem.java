@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -23,7 +24,7 @@ public class RequestConfirmCancelItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (!Config.ALLOW_AUGMENTATION)
+		if(!Config.ALLOW_AUGMENTATION)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -31,13 +32,13 @@ public class RequestConfirmCancelItem implements IClientIncomingPacket
 
 		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemId);
 
-		if (item == null)
+		if(item == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!item.isAugmented())
+		if(!item.isAugmented())
 		{
 			activeChar.sendPacket(SystemMsg.AUGMENTATION_REMOVAL_CAN_ONLY_BE_DONE_ON_AN_AUGMENTED_ITEM);
 			return;

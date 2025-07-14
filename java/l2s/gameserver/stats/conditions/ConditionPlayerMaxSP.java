@@ -15,7 +15,7 @@ public class ConditionPlayerMaxSP extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		long sp = env.character.getPlayer().getSp() + _spToAdd;

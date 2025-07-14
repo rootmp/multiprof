@@ -29,7 +29,6 @@ import l2s.gameserver.network.l2.s2c.MagicSkillCanceled;
 import l2s.gameserver.network.l2.s2c.MagicSkillLaunchedPacket;
 import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.network.l2.s2c.MoveToPawnPacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
@@ -54,24 +53,24 @@ public class CreatureSkillCast
 		public void run()
 		{
 			final SkillEntry skillEntry = getSkillEntry();
-			if (skillEntry == null)
+			if(skillEntry == null)
 				return;
 
 			final Creature target = getTarget();
-			if (target == null)
+			if(target == null)
 				return;
 
 			final Set<Creature> targets = skillEntry.getTemplate().getTargets(skillEntry, _actor, target, _forceUse);
 
 			_targets = targets;
 
-			if ((_targets.size() == 0) && (skillEntry.getDisplayId() == 47001))
+			if((_targets.size() == 0) && (skillEntry.getDisplayId() == 47001))
 				return;
 
-			if (!skillEntry.getTemplate().isNotBroadcastable() && (skillEntry.getDisplayId() != 47001))
-				_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(),0, targets, _castingType));
+			if(!skillEntry.getTemplate().isNotBroadcastable() && (skillEntry.getDisplayId() != 47001))
+				_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), 0, targets, _castingType));
 
-			if (_castLeftTime > 0)
+			if(_castLeftTime > 0)
 				_skillTask = ThreadPoolManager.getInstance().schedule(CreatureSkillCast.this::onMagicUseTimer, _castLeftTime);
 			else
 				onMagicUseTimer();
@@ -161,10 +160,10 @@ public class CreatureSkillCast
 
 	public boolean doCast(SkillEntry skillEntry, Creature target, boolean forceUse)
 	{
-		if (!_isCastingNow.compareAndSet(false, true))
+		if(!_isCastingNow.compareAndSet(false, true))
 			return false;
 
-		if (!doCast0(skillEntry, target, forceUse))
+		if(!doCast0(skillEntry, target, forceUse))
 		{
 			clearVars();
 			return false;
@@ -174,64 +173,64 @@ public class CreatureSkillCast
 
 	private boolean doCast0(SkillEntry skillEntry, Creature target, boolean forceUse)
 	{
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return false;
 
-		if (_actor.isPlayer())
-			if (_actor.getPlayer().getRace() == Race.SYLPH)
+		if(_actor.isPlayer())
+			if(_actor.getPlayer().getRace() == Race.SYLPH)
 				_actor.getPlayer().addAbnormalBoard();
 
 		final Skill skill = skillEntry.getTemplate();
 
-		if (isDual())
+		if(isDual())
 		{
-			if (!_actor.isDualCastEnable() || !skill.isDouble())
+			if(!_actor.isDualCastEnable() || !skill.isDouble())
 				return false;
 		}
 
 		final Creature aimingTarget;
-		if (target != null)
+		if(target != null)
 			aimingTarget = target;
 		else
 			aimingTarget = skill.getAimingTarget(_actor, getTarget());
 
-		if (aimingTarget == null)
+		if(aimingTarget == null)
 			return false;
 
 		_skillEntry = skillEntry;
 		_target = aimingTarget.getRef();
 		_forceUse = forceUse;
 
-		if (skill.getReferenceItemId() > 0 && !_actor.consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
+		if(skill.getReferenceItemId() > 0 && !_actor.consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
 			return false;
 
 		double mpConsume1 = skill.getMpConsume1();
-		if (mpConsume1 > 0)
+		if(mpConsume1 > 0)
 		{
-			if (_actor.getCurrentMp() < mpConsume1)
+			if(_actor.getCurrentMp() < mpConsume1)
 			{
 				_actor.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 				return false;
 			}
 		}
 
-		if (!skill.isHandler() && _actor.isPlayable())
+		if(!skill.isHandler() && _actor.isPlayable())
 		{
-			if (skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
+			if(skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
 			{
-				if (skill.isItemConsumeFromMaster())
+				if(skill.isItemConsumeFromMaster())
 				{
 					Player master = _actor.getPlayer();
-					if (master == null)
+					if(master == null)
 						return false;
 
-					if (ItemFunctions.getItemCount(master, skill.getItemConsumeId()) < skill.getItemConsume())
+					if(ItemFunctions.getItemCount(master, skill.getItemConsumeId()) < skill.getItemConsume())
 					{
 						master.sendPacket(SystemMsg.THERE_ARE_NOT_ENOUGH_NECESSARY_ITEMS_TO_USE_THE_SKILL);
 						return false;
 					}
 				}
-				else if (ItemFunctions.getItemCount((Playable) _actor, skill.getItemConsumeId()) < skill.getItemConsume())
+				else if(ItemFunctions.getItemCount((Playable) _actor, skill.getItemConsumeId()) < skill.getItemConsume())
 				{
 					_actor.sendPacket(SystemMsg.THERE_ARE_NOT_ENOUGH_NECESSARY_ITEMS_TO_USE_THE_SKILL);
 					return false;
@@ -242,16 +241,16 @@ public class CreatureSkillCast
 		_actor.getListeners().onMagicUse(skill, aimingTarget, false);
 
 		Location groundLoc = null;
-		if (skill.getTargetType() == SkillTargetType.TARGET_GROUND)
+		if(skill.getTargetType() == SkillTargetType.TARGET_GROUND)
 		{
-			if (_actor.isPlayer())
+			if(_actor.isPlayer())
 			{
 				groundLoc = _actor.getPlayer().getGroundSkillLoc();
-				if (groundLoc != null)
+				if(groundLoc != null)
 					_actor.setHeading(PositionUtils.calculateHeadingFrom(_actor.getX(), _actor.getY(), groundLoc.getX(), groundLoc.getY()), true);
 			}
 		}
-		else if (_actor != aimingTarget)
+		else if(_actor != aimingTarget)
 		{
 			_actor.setHeading(PositionUtils.calculateHeadingFrom(_actor, aimingTarget), true);
 			_actor.sendPacket(new MoveToPawnPacket(_actor, aimingTarget, _actor.getDistance(aimingTarget)));
@@ -260,18 +259,18 @@ public class CreatureSkillCast
 		int hitTime = skill.isSkillTimePermanent() ? skill.getHitTime() : Formulas.calcSkillCastSpd(_actor, skill, skill.getHitTime());
 		int hitCancelTime = skill.isSkillTimePermanent() ? skill.getHitCancelTime() : Formulas.calcSkillCastSpd(_actor, skill, skill.getHitCancelTime());
 
-		if (skill.isMagic() && !skill.isSkillTimePermanent() && _actor.getChargedSpiritshotPower() > 0)
+		if(skill.isMagic() && !skill.isSkillTimePermanent() && _actor.getChargedSpiritshotPower() > 0)
 		{
 			hitTime = (int) (0.70 * hitTime);
 			hitCancelTime = (int) (0.70 * hitCancelTime);
 		}
 
-		if (!skill.isSkillTimePermanent())
+		if(!skill.isSkillTimePermanent())
 		{
-			if (skill.isMagic())
+			if(skill.isMagic())
 			{
 				int minCastTimeMagical = Math.min(Config.SKILLS_CAST_TIME_MIN_MAGICAL, skill.getHitTime());
-				if (hitTime < minCastTimeMagical)
+				if(hitTime < minCastTimeMagical)
 				{
 					hitTime = minCastTimeMagical;
 					hitCancelTime = 0;
@@ -280,7 +279,7 @@ public class CreatureSkillCast
 			else
 			{
 				int minCastTimePhysical = Math.min(Config.SKILLS_CAST_TIME_MIN_PHYSICAL, skill.getHitTime());
-				if (hitTime < minCastTimePhysical)
+				if(hitTime < minCastTimePhysical)
 				{
 					hitTime = minCastTimePhysical;
 					hitCancelTime = 0;
@@ -293,19 +292,19 @@ public class CreatureSkillCast
 		boolean criticalBlow = skill.calcCriticalBlow(_actor, aimingTarget);
 
 		long reuseDelay = Math.max(0, Formulas.calcSkillReuseDelay(_actor, skill));
-		if (reuseDelay > 10)
+		if(reuseDelay > 10)
 			_actor.disableSkill(skill, reuseDelay);
 
-		if (!skill.isNotBroadcastable())
+		if(!skill.isNotBroadcastable())
 		{
 			MagicSkillUse msu = new MagicSkillUse(_actor, aimingTarget, skill.getDisplayId(), skill.getDisplayLevel(), hitTime, reuseDelay, _castingType);
 			msu.setReuseSkillId(skill.getReuseSkillId());
 			msu.setGroundLoc(groundLoc);
 			msu.setCriticalBlow(criticalBlow);
-			if (_actor.isServitor()) // TODO: [Bonux] Переделать.
+			if(_actor.isServitor()) // TODO: [Bonux] Переделать.
 			{
 				Servitor.UsedSkill servitorUsedSkill = ((Servitor) _actor).getUsedSkill();
-				if (servitorUsedSkill != null && servitorUsedSkill.getSkill() == skill)
+				if(servitorUsedSkill != null && servitorUsedSkill.getSkill() == skill)
 				{
 					msu.setServitorSkillInfo(servitorUsedSkill.getActionId());
 					((Servitor) _actor).setUsedSkill(null);
@@ -314,37 +313,37 @@ public class CreatureSkillCast
 			_actor.broadcastPacket(msu);
 		}
 
-		if (skill.getTargetType() == SkillTargetType.TARGET_HOLY)
+		if(skill.getTargetType() == SkillTargetType.TARGET_HOLY)
 			aimingTarget.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, _actor, 1);
 
-		if (_actor.isPlayer())
+		if(_actor.isPlayer())
 		{
-			if (skill.getSkillType() == SkillType.PET_SUMMON)
+			if(skill.getSkillType() == SkillType.PET_SUMMON)
 				_actor.sendPacket(SystemMsg.SUMMONING_YOUR_PET);
 			else
 			{
-				if ((skill.getId() != 47002) && (skill.getId() != 47005) && (skill.getId() != 47008) && (skill.getId() != 47011))
+				if((skill.getId() != 47002) && (skill.getId() != 47005) && (skill.getId() != 47008) && (skill.getId() != 47011))
 				{
 					_actor.sendPacket(new SystemMessagePacket(SystemMsg.YOU_USE_S1).addSkillName(skill));
 				}
 			}
 		}
 
-		if (mpConsume1 > 0)
+		if(mpConsume1 > 0)
 		{
-			if (skill.isMagic())
+			if(skill.isMagic())
 				mpConsume1 = _actor.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, mpConsume1, aimingTarget, skill);
 			_actor.reduceCurrentMp(mpConsume1, null);
 		}
 
-		if (!skill.isHandler() && _actor.isPlayable())
+		if(!skill.isHandler() && _actor.isPlayable())
 		{
-			if (skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
+			if(skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
 			{
-				if (skill.isItemConsumeFromMaster())
+				if(skill.isItemConsumeFromMaster())
 				{
 					Player master = _actor.getPlayer();
-					if (master != null)
+					if(master != null)
 						master.consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), true);
 				}
 				else
@@ -353,32 +352,33 @@ public class CreatureSkillCast
 		}
 
 		Location flyLoc = null;
-		switch (skill.getFlyType())
+		switch(skill.getFlyType())
 		{
 			case CHARGE:
 				flyLoc = _actor.getFlyLocation(aimingTarget, skill);
-				if (flyLoc != null)
+				if(flyLoc != null)
 					_actor.broadcastPacket(new FlyToLocationPacket(_actor, flyLoc, skill.getFlyType(), skill.getFlySpeed(), skill.getFlyDelay(), skill.getFlyAnimationSpeed()));
 				break;
 			case WARP_BACK:
 			case WARP_FORWARD:
 				flyLoc = _actor.getFlyLocation(_actor, skill);
-				if (flyLoc != null)
-					_actor.broadcastPacket(new FlyToLocationPacket(_actor, flyLoc, skill.getFlyType(), (skill.getFlyRadius() / hitTime) * 1000, skill.getFlyDelay(), skill.getFlyAnimationSpeed()));
+				if(flyLoc != null)
+					_actor.broadcastPacket(new FlyToLocationPacket(_actor, flyLoc, skill.getFlyType(), (skill.getFlyRadius() / hitTime)
+							* 1000, skill.getFlyDelay(), skill.getFlyAnimationSpeed()));
 				break;
 		}
 
-		if (criticalBlow)
+		if(criticalBlow)
 			_isCriticalBlow = true;
 
-		if (flyLoc != null)
+		if(flyLoc != null)
 			_flyLoc = flyLoc;
 
 		_castLeftTime = hitTime - hitCancelTime;
 
 		_skillTask = ThreadPoolManager.getInstance().schedule(new MagicLaunchedTask(), hitCancelTime);
 
-		if (skill.isChanneling())
+		if(skill.isChanneling())
 			_skillTickTask = ThreadPoolManager.getInstance().schedule(() -> onMagicTickTimer(), skill.getChannelingStart());
 
 		skill.onStartCast(skillEntry, _actor, aimingTarget);
@@ -389,7 +389,7 @@ public class CreatureSkillCast
 	private void onMagicTickTimer()
 	{
 		final SkillEntry skillEntry = getSkillEntry();
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return;
 
 		final Creature aimingTarget = getTarget();
@@ -398,30 +398,30 @@ public class CreatureSkillCast
 
 		_targets = targets;
 
-		if (!skill.isNotBroadcastable())
-			_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(),0, targets, _castingType));
+		if(!skill.isNotBroadcastable())
+			_actor.broadcastPacket(new MagicSkillLaunchedPacket(_actor.getObjectId(), skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), 0, targets, _castingType));
 
 		double mpConsumeTick = skill.getMpConsumeTick();
-		if (mpConsumeTick > 0)
+		if(mpConsumeTick > 0)
 		{
-			if (skill.isMusic())
+			if(skill.isMusic())
 			{
 				double inc = mpConsumeTick / 2;
 				double add = 0;
-				for (Abnormal e : _actor.getAbnormalList())
+				for(Abnormal e : _actor.getAbnormalList())
 				{
-					if (e.getSkill().getId() != skillEntry.getId() && e.getSkill().isMusic() && e.getTimeLeft() > 30)
+					if(e.getSkill().getId() != skillEntry.getId() && e.getSkill().isMusic() && e.getTimeLeft() > 30)
 						add += inc;
 				}
 				mpConsumeTick += add;
 				mpConsumeTick = _actor.getStat().calc(Stats.MP_DANCE_SKILL_CONSUME, mpConsumeTick, aimingTarget, skill);
 			}
-			else if (skill.isMagic())
+			else if(skill.isMagic())
 				mpConsumeTick = _actor.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, mpConsumeTick, aimingTarget, skill);
 			else
 				mpConsumeTick = _actor.getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, mpConsumeTick, aimingTarget, skill);
 
-			if (_actor.getCurrentMp() < mpConsumeTick && _actor.isPlayable())
+			if(_actor.getCurrentMp() < mpConsumeTick && _actor.isPlayable())
 			{
 				_actor.sendPacket(SystemMsg.YOUR_SKILL_WAS_DEACTIVATED_DUE_TO_LACK_OF_MP);
 				_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
@@ -434,7 +434,7 @@ public class CreatureSkillCast
 		skill.onTickCast(_actor, targets);
 		_actor.useTriggers(aimingTarget, TriggerType.ON_TICK_CAST, null, skill, 0);
 
-		if (skill.getTickInterval() > 0)
+		if(skill.getTickInterval() > 0)
 			_skillTickTask = ThreadPoolManager.getInstance().schedule(() -> onMagicTickTimer(), skill.getTickInterval());
 	}
 
@@ -443,7 +443,7 @@ public class CreatureSkillCast
 		final SkillEntry skillEntry = getSkillEntry();
 		final Set<Creature> targets = getTargets();
 		final Creature aimingTarget = getTarget();
-		if (skillEntry == null || targets == null)
+		if(skillEntry == null || targets == null)
 		{
 			_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
 			clearVars();
@@ -451,22 +451,22 @@ public class CreatureSkillCast
 		}
 
 		Skill skill = skillEntry.getTemplate();
-		switch (skill.getFlyType())
+		switch(skill.getFlyType())
 		{
 			case CHARGE:
 			case WARP_BACK:
 			case WARP_FORWARD:
-				if (_flyLoc != null)
+				if(_flyLoc != null)
 					_actor.setLoc(_flyLoc);
 				break;
 		}
 
-		if (!skill.isDebuff() && _actor.getAggressionTarget() != null)
+		if(!skill.isDebuff() && _actor.getAggressionTarget() != null)
 			_forceUse = true;
 
 		skill.checkTargetsEffectiveRange(_actor, targets); // Чистим цели, которые вышли за радиус 'effective_range'
 
-		if (skill.oneTarget() && targets.isEmpty())
+		if(skill.oneTarget() && targets.isEmpty())
 		{
 			_actor.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 			_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
@@ -474,16 +474,16 @@ public class CreatureSkillCast
 			return;
 		}
 
-		if (!skillEntry.checkCondition(_actor, aimingTarget, _forceUse, false, false))
+		if(!skillEntry.checkCondition(_actor, aimingTarget, _forceUse, false, false))
 		{
-			if (skill.getSkillType() == SkillType.PET_SUMMON && _actor.isPlayer())
+			if(skill.getSkillType() == SkillType.PET_SUMMON && _actor.isPlayer())
 				_actor.getPlayer().setPetControlItem(null);
 			_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
 			onCastEndTime(false);
 			return;
 		}
 
-		if (skill.getCastRange() != -2 && skill.getSkillType() != SkillType.TAKECASTLE && !GeoEngine.canSeeTarget(_actor, aimingTarget))
+		if(skill.getCastRange() != -2 && skill.getSkillType() != SkillType.TAKECASTLE && !GeoEngine.canSeeTarget(_actor, aimingTarget))
 		{
 			_actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 			_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
@@ -492,34 +492,34 @@ public class CreatureSkillCast
 		}
 
 		int fameConsume = skill.getFameConsume();
-		if (fameConsume > 0)
+		if(fameConsume > 0)
 			_actor.getPlayer().setFame(_actor.getPlayer().getFame() - fameConsume, "clan skills", true);
 
 		int hpConsume = skill.getHpConsume();
-		if (hpConsume > 0)
+		if(hpConsume > 0)
 			_actor.setCurrentHp(Math.max(0, _actor.getCurrentHp() - hpConsume), false);
 
 		double mpConsume2 = skill.getMpConsume2();
-		if (mpConsume2 > 0)
+		if(mpConsume2 > 0)
 		{
-			if (skill.isMusic())
+			if(skill.isMusic())
 			{
 				double inc = mpConsume2 / 2;
 				double add = 0;
-				for (Abnormal e : _actor.getAbnormalList())
+				for(Abnormal e : _actor.getAbnormalList())
 				{
-					if (e.getSkill().getId() != skill.getId() && e.getSkill().isMusic() && e.getTimeLeft() > 30)
+					if(e.getSkill().getId() != skill.getId() && e.getSkill().isMusic() && e.getTimeLeft() > 30)
 						add += inc;
 				}
 				mpConsume2 += add;
 				mpConsume2 = _actor.getStat().calc(Stats.MP_DANCE_SKILL_CONSUME, mpConsume2, aimingTarget, skill);
 			}
-			else if (skill.isMagic())
+			else if(skill.isMagic())
 				mpConsume2 = _actor.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, mpConsume2, aimingTarget, skill);
 			else
 				mpConsume2 = _actor.getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, mpConsume2, aimingTarget, skill);
 
-			if (_actor.getCurrentMp() < mpConsume2 && _actor.isPlayable())
+			if(_actor.getCurrentMp() < mpConsume2 && _actor.isPlayable())
 			{
 				_actor.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 				_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
@@ -530,9 +530,9 @@ public class CreatureSkillCast
 		}
 
 		int dpConsume = skill.getDpConsume();
-		if (dpConsume > 0)
+		if(dpConsume > 0)
 		{
-			if (_actor.getCurrentDp() < dpConsume && _actor.isPlayer())
+			if(_actor.getCurrentDp() < dpConsume && _actor.isPlayer())
 			{
 				_actor.sendPacket(SystemMsg.NOT_ENOUGH_MONSTER_HUNTING_COUNT); // TODO: find proper dialog
 				_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
@@ -540,48 +540,48 @@ public class CreatureSkillCast
 				return;
 			}
 			_actor.setCurrentDp(_actor.getCurrentDp() - dpConsume);
-			if (_actor.isPlayer())
+			if(_actor.isPlayer())
 				_actor.broadcastPacket(new StatusUpdate(_actor, StatusType.Normal, UpdateType.VCP_MAXDP, UpdateType.VCP_DP));
 		}
 
 		int bpConsume = skill.getBpConsume();
-		if (bpConsume > 0)
+		if(bpConsume > 0)
 		{
-			if (_actor.getCurrentBp() < bpConsume && _actor.isPlayer())
+			if(_actor.getCurrentBp() < bpConsume && _actor.isPlayer())
 			{
 				_actor.broadcastPacket(new MagicSkillCanceled(_actor.getObjectId()));
 				onCastEndTime(false);
 				return;
 			}
 			_actor.setCurrentBp(_actor.getCurrentBp() - bpConsume);
-			if (_actor.isPlayer())
+			if(_actor.isPlayer())
 				_actor.broadcastPacket(new StatusUpdate(_actor, StatusType.Normal, UpdateType.VCP_MAXBP, UpdateType.VCP_BP));
 		}
 
 		_actor.callSkill(aimingTarget, skillEntry, targets, true, false);
 
-		if (_actor.getIncreasedForce() > 0)
+		if(_actor.getIncreasedForce() > 0)
 		{
 			int decreasedForce = skill.getNumCharges();
-			if (decreasedForce <= 0)
+			if(decreasedForce <= 0)
 				decreasedForce = skill.getCondCharges();
-			if (decreasedForce > 15)
+			if(decreasedForce > 15)
 				decreasedForce = 5;
-			if (decreasedForce > 0)
+			if(decreasedForce > 0)
 				_actor.setIncreasedForce(_actor.getIncreasedForce() - skill.getNumCharges());
 		}
 
-		switch (skill.getFlyType())
+		switch(skill.getFlyType())
 		{
 			// @Rivelia. Targets fly types.
 			case THROW_UP:
 			case THROW_HORIZONTAL:
 			case PUSH_HORIZONTAL:
 			case PUSH_DOWN_HORIZONTAL:
-				for (Creature target : targets)
+				for(Creature target : targets)
 				{
 					Location flyLoc = target.getFlyLocation(_actor, skill);
-					if (flyLoc == null)
+					if(flyLoc == null)
 						_log.warn(skill.getFlyType() + " have null flyLoc.");
 					else
 					{
@@ -593,11 +593,11 @@ public class CreatureSkillCast
 			// @Rivelia. Caster fly types.
 			case DUMMY:
 				Creature dummyTarget = aimingTarget;
-				if (skill.getTargetType() == SkillTargetType.TARGET_AURA)
+				if(skill.getTargetType() == SkillTargetType.TARGET_AURA)
 					dummyTarget = _actor;
 
 				Location flyLoc = _actor.getFlyLocation(dummyTarget, skill);
-				if (flyLoc != null)
+				if(flyLoc != null)
 				{
 					_actor.broadcastPacket(new FlyToLocationPacket(_actor, flyLoc, skill.getFlyType(), skill.getFlySpeed(), skill.getFlyDelay(), skill.getFlyAnimationSpeed()));
 					_actor.setLoc(flyLoc);
@@ -611,15 +611,15 @@ public class CreatureSkillCast
 
 		// @Rivelia. Add the fly speed in the skill cooltime to make the travelling end
 		// before the creature can take action again.
-		if (skill.getFlyType() == FlyType.CHARGE && skill.getFlySpeed() > 0)
+		if(skill.getFlyType() == FlyType.CHARGE && skill.getFlySpeed() > 0)
 			chargeAddition = (_actor.getDistance(aimingTarget) / skill.getFlySpeed()) * 1000;
 
-		if (!skill.isSkillTimePermanent())
+		if(!skill.isSkillTimePermanent())
 			skillCoolTime = Formulas.calcSkillCastSpd(_actor, skill, skill.getCoolTime() + chargeAddition);
 		else
 			skillCoolTime = skill.getCoolTime() + chargeAddition;
 
-		if (skillCoolTime > 0)
+		if(skillCoolTime > 0)
 			ThreadPoolManager.getInstance().schedule(() -> onCastEndTime(true), skillCoolTime);
 		else
 			onCastEndTime(true);
@@ -643,10 +643,10 @@ public class CreatureSkillCast
 
 	public boolean abortCast(boolean force)
 	{
-		if (isCastingNow() && (force || canAbortCast()))
+		if(isCastingNow() && (force || canAbortCast()))
 		{
 			final SkillEntry skillEntry = getSkillEntry();
-			if (skillEntry != null && skillEntry.getTemplate().isAbortable())
+			if(skillEntry != null && skillEntry.getTemplate().isAbortable())
 			{
 				clearVars();
 				return true;
@@ -665,12 +665,12 @@ public class CreatureSkillCast
 		_animationEndTime = 0;
 		_skillEntry = null;
 		_isCriticalBlow = false;
-		if (_skillTask != null)
+		if(_skillTask != null)
 		{
 			_skillTask.cancel(false);
 			_skillTask = null;
 		}
-		if (_skillTickTask != null)
+		if(_skillTickTask != null)
 		{
 			_skillTickTask.cancel(false);
 			_skillTickTask = null;

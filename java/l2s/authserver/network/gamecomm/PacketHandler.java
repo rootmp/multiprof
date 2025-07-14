@@ -33,8 +33,8 @@ public class PacketHandler
 
 		int id = buf.get() & 0xff;
 
-		if (!gs.isAuthed())
-			switch (id)
+		if(!gs.isAuthed())
+			switch(id)
 			{
 				case 0x00:
 					packet = new AuthRequest();
@@ -43,7 +43,7 @@ public class PacketHandler
 					_log.error("Received unknown packet: " + Integer.toHexString(id));
 			}
 		else
-			switch (id)
+			switch(id)
 			{
 				case 0x01:
 					packet = new OnlineStatus();

@@ -38,20 +38,20 @@ public class FishingZoneListener implements OnZoneEnterLeaveListener
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
+			if(player == null)
 			{
 				stopAndRemoveNotifyTask(_objectId);
 				return;
 			}
 
-			if (!player.isInZone(ZoneType.FISHING))
+			if(!player.isInZone(ZoneType.FISHING))
 			{
 				player.sendPacket(ExAutoFishAvailable.REMOVE);
 				stopAndRemoveNotifyTask(player.getObjectId());
 				return;
 			}
 
-			if (player.isFishing())
+			if(player.isFishing())
 			{
 				player.sendPacket(ExAutoFishAvailable.FISHING);
 			}
@@ -65,15 +65,11 @@ public class FishingZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneEnter(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
-		if (_notifyTasks.containsKey(actor.getObjectId()))
-		{
-			return;
-		}
+		if(_notifyTasks.containsKey(actor.getObjectId()))
+		{ return; }
 
 		_notifyTasks.put(actor.getObjectId(), ThreadPoolManager.getInstance().scheduleAtFixedRate(new NotifyPacketTask(zone, actor.getPlayer()), 0L, 5000L));
 	}
@@ -81,10 +77,8 @@ public class FishingZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneLeave(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
 		// На оффе при выходе из зоны не посылается, посылается во время таска, что не
 		// сильно красиво.
@@ -95,7 +89,7 @@ public class FishingZoneListener implements OnZoneEnterLeaveListener
 	private void stopAndRemoveNotifyTask(int objectId)
 	{
 		ScheduledFuture<?> notifyTask = _notifyTasks.remove(objectId);
-		if (notifyTask != null)
+		if(notifyTask != null)
 		{
 			notifyTask.cancel(false);
 		}

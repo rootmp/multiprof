@@ -28,7 +28,7 @@ public class PvpbookInfo
 	private int teleportHelpCount;
 	private int shareType;
 	private int request_for_help;
-	
+
 	protected PvpbookInfo(Pvpbook pvpbook, Player killed, Player killer, int deathTime, int sharedTime, int locationShow, int teleportCount, int teleportHelpCount, int shareType, int request_for_help)
 	{
 		this.pvpbook = pvpbook;
@@ -49,7 +49,7 @@ public class PvpbookInfo
 		this.sharedTime = sharedTime;
 		this.locationShow = locationShow;
 		this.teleportCount = teleportCount;
-		this.teleportHelpCount =teleportHelpCount;
+		this.teleportHelpCount = teleportHelpCount;
 		this.shareType = shareType;
 		this.request_for_help = request_for_help;
 	}
@@ -106,11 +106,11 @@ public class PvpbookInfo
 	{
 		deathTime = time;
 	}
-	
+
 	public String getKilledName()
 	{
 		Player player = getKilled();
-		if (player != null)
+		if(player != null)
 			killedName = player.getVisibleName(pvpbook.getOwner());
 		return killedName;
 	}
@@ -118,7 +118,7 @@ public class PvpbookInfo
 	public String getKillerName()
 	{
 		Player player = getKiller();
-		if (player != null)
+		if(player != null)
 			killerName = player.getVisibleName(pvpbook.getOwner());
 		return killerName;
 	}
@@ -126,7 +126,7 @@ public class PvpbookInfo
 	public int getKilledLevel()
 	{
 		Player player = getKilled();
-		if (player != null)
+		if(player != null)
 			killedLevel = player.getLevel();
 		return killedLevel;
 	}
@@ -134,7 +134,7 @@ public class PvpbookInfo
 	public int getKillerLevel()
 	{
 		Player player = getKiller();
-		if (player != null)
+		if(player != null)
 			killerLevel = player.getLevel();
 		return killerLevel;
 	}
@@ -142,7 +142,7 @@ public class PvpbookInfo
 	public int getKilledClassId()
 	{
 		Player player = getKilled();
-		if (player != null)
+		if(player != null)
 			killedClassId = player.getClassId().getId();
 		return killedClassId;
 	}
@@ -150,7 +150,7 @@ public class PvpbookInfo
 	public int getKillerClassId()
 	{
 		Player player = getKiller();
-		if (player != null)
+		if(player != null)
 			killerClassId = player.getClassId().getId();
 		return killerClassId;
 	}
@@ -158,7 +158,7 @@ public class PvpbookInfo
 	public String getKilledClanName()
 	{
 		Player player = getKilled();
-		if (player != null)
+		if(player != null)
 		{
 			Clan clan = player.getClan();
 			killedClanName = clan != null ? clan.getName() : "";
@@ -169,7 +169,7 @@ public class PvpbookInfo
 	public String getKillerClanName()
 	{
 		Player player = getKiller();
-		if (player != null)
+		if(player != null)
 		{
 			Clan clan = player.getClan();
 			killerClanName = clan != null ? clan.getName() : "";
@@ -180,7 +180,7 @@ public class PvpbookInfo
 	public boolean isOnline()
 	{
 		Player player = getKiller();
-		if (player != null)
+		if(player != null)
 			return player.isOnline();
 		return false;
 	}
@@ -214,18 +214,18 @@ public class PvpbookInfo
 	{
 		return locationShow;
 	}
-	
+
 	public void setLocationShowCount(int count)
 	{
 		locationShow = count;
 	}
-	
+
 	public void reduceLocationShowCount()
 	{
-		locationShow--;   
+		locationShow--;
 		PvpbookDAO.getInstance().insert(pvpbook.getOwner(), this);
 	}
-	
+
 	public int getTeleportCount()
 	{
 		return teleportCount;
@@ -233,10 +233,10 @@ public class PvpbookInfo
 
 	public void reduceTeleportCount()
 	{
-		teleportCount--;   
+		teleportCount--;
 		PvpbookDAO.getInstance().insert(pvpbook.getOwner(), this);
 	}
-	
+
 	public void setTeleportCount(int count)
 	{
 		teleportCount = count;
@@ -244,15 +244,15 @@ public class PvpbookInfo
 
 	public int getTeleportHelpCount()
 	{
-		return teleportHelpCount;    
+		return teleportHelpCount;
 	}
 
 	public void reduceTeleportHelpCount()
 	{
-		teleportHelpCount--;  
+		teleportHelpCount--;
 		PvpbookDAO.getInstance().insert(pvpbook.getOwner(), this);
 	}
-	
+
 	public void setTeleportHelpCount(int count)
 	{
 		teleportHelpCount = count;
@@ -260,14 +260,14 @@ public class PvpbookInfo
 
 	public int getShareType()
 	{
-		return shareType;    
+		return shareType;
 	}
-	
+
 	public int isRequestForHelp()
 	{
-		return request_for_help;    
+		return request_for_help;
 	}
-	
+
 	public void setRequestForHelp()
 	{
 		request_for_help = 1;

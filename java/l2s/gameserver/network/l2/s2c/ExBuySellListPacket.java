@@ -37,7 +37,7 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 				opcodes.writeShortLE(exOpcode);
 			return opcodes.retain();
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{
@@ -45,7 +45,7 @@ public abstract class ExBuySellListPacket implements IClientOutgoingPacket
 		}
 		return Unpooled.EMPTY_BUFFER;
 	}
-	
+
 	public static class BuyList extends ExBuySellListPacket
 	{
 		private final int _listId;

@@ -14,7 +14,7 @@ public final class LureTemplate
 	public LureTemplate(int id, double failChance, int failDuration)
 	{
 		_id = id;
-		if (failChance > 0 && failDuration > 0)
+		if(failChance > 0 && failDuration > 0)
 			_fishes.add(new FishTemplate(0, failChance, failDuration, 0));
 	}
 

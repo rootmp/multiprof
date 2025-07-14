@@ -16,7 +16,7 @@ public class EffectHate extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc() && effected.isMonster())
+		if(effected.isNpc() && effected.isMonster())
 			effected.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, effector, getValue());
 		return true;
 	}

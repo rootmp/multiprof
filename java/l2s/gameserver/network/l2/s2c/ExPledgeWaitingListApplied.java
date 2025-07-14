@@ -25,13 +25,13 @@ public class ExPledgeWaitingListApplied implements IClientOutgoingPacket
 
 	public ExPledgeWaitingListApplied(ClanSearchPlayer playerHolder)
 	{
-		if (playerHolder != null)
+		if(playerHolder != null)
 		{
 			ClanSearchClan clanHolder = ClanSearchManager.getInstance().getClan(playerHolder.getPrefferedClanId());
-			if (clanHolder != null)
+			if(clanHolder != null)
 			{
 				Clan clan = ClanTable.getInstance().getClan(clanHolder.getClanId());
-				if (clan != null)
+				if(clan != null)
 				{
 					_clanId = clanHolder.getClanId();
 					_clanName = clan.getName();

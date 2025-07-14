@@ -1,6 +1,5 @@
 package l2s.gameserver.network.l2.c2s.newhenna;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,12 +23,12 @@ import l2s.gameserver.utils.ItemFunctions;
 public class RequestExNewHennaCompose implements IClientIncomingPacket
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RequestExNewHennaCompose.class);
-	
+
 	private int _slotOneIndex;
 	@SuppressWarnings("unused")
 	private int _slotOneItemId;
 	private int _slotTwoItemId;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -43,17 +42,17 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		Henna henna = player.getHenna(_slotOneIndex);
-		if(henna==null)
+		if(henna == null)
 			return;
 
 		ItemInstance item2 = player.getInventory().getItemByObjectId(_slotTwoItemId);
 		if(item2 == null)
 			return;
-		
+
 		SynthesisData data = null;
 		for(SynthesisData d : SynthesisHolder.getInstance().getDatas())
 		{
@@ -65,21 +64,20 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 		}
 		if(data == null)
 			return;
-		
-		
-		if(Math.round(data.getPrice()/2) > 0&&!player.reduceAdena(Math.round(data.getPrice()/2), true))
+
+		if(Math.round(data.getPrice() / 2) > 0 && !player.reduceAdena(Math.round(data.getPrice() / 2), true))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			return;
 		}
-		
+
 		if(data.getSuccessItemData().getChance() < 0)
 		{
 			player.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
 			LOGGER.warn("Chance in synthesis data ID1[" + data.getItem1Id() + "] ID2[" + data.getItem2Id() + "] not specified!");
 			return;
 		}
-		
+
 		final Inventory inventory = player.getInventory();
 
 		inventory.writeLock();
@@ -104,7 +102,7 @@ public class RequestExNewHennaCompose implements IClientIncomingPacket
 					player.sendPacket(new NewHennaPotenCompose(henna_new.getDyeId(), -1, false));
 				}
 			}
-	
+
 			player.setSynthesisItem1(null);
 			player.setSynthesisItem2(null);
 		}

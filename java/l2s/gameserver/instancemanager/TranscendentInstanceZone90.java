@@ -35,13 +35,13 @@ public class TranscendentInstanceZone90 extends Reflection
 		@Override
 		public void onMagicUse(Creature actor, Skill skill, Creature target, boolean alt)
 		{
-			if (actor.isNpc())
+			if(actor.isNpc())
 			{
-				if (actor.getNpcId() == BUNCH)
+				if(actor.getNpcId() == BUNCH)
 				{
-					for (Player player : getPlayers())
+					for(Player player : getPlayers())
 					{
-						if (_isFirstEnter)
+						if(_isFirstEnter)
 						{
 							player.sendPacket(new ExSendUIEventPacket(player, 0, 0, 600, 0, NpcString.TIME_REMAINING));
 							_timeStart = System.currentTimeMillis();
@@ -49,50 +49,49 @@ public class TranscendentInstanceZone90 extends Reflection
 							_player = player;
 							_objId = player.getObjectId();
 
-							_runTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-							{
+							_runTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 								int variant = Rnd.get(6);
 								List<Spawner> spawners = new ArrayList<Spawner>();
-								for (int i = 1; i <= 15; i++)
+								for(int i = 1; i <= 15; i++)
 								{
-									if (Rnd.get(100) < 70)
+									if(Rnd.get(100) < 70)
 									{
 										spawners.addAll(spawnByGroup("transcendent_90_variant_" + (variant + 1) + "_" + i));
 									}
 								}
-								for (int i = 1; i <= 12; i++)
+								for(int i = 1; i <= 12; i++)
 								{
-									if (Rnd.get(100) < 10)
+									if(Rnd.get(100) < 10)
 									{
 										spawners.addAll(spawnByGroup("transcendent_90_box_" + i));
 									}
 								}
-								if (System.currentTimeMillis() >= (_timeStart + (240 * 1000)) && !_firstSpawn)
+								if(System.currentTimeMillis() >= (_timeStart + (240 * 1000)) && !_firstSpawn)
 								{
 									_firstSpawn = true;
 									NpcInstance npc = addSpawnWithoutRespawn(22424, new Location(185976, 57608, -4577, 16578), 0);
 									int result = Rnd.get(4);
-									if (result == 0)
+									if(result == 0)
 									{
 										npc.setTitle("Enhanced with Spirit Ore");
 									}
-									else if (result == 1)
+									else if(result == 1)
 									{
 										npc.setTitle("Enhanced with Spirit");
 									}
-									else if (result == 2)
+									else if(result == 2)
 									{
 										npc.setTitle("Enhanced with Grace");
 									}
-									else if (result == 3)
+									else if(result == 3)
 									{
 										npc.setTitle("Enhanced with Supplies");
 									}
 								}
 
-								for (Spawner spawner : spawners)
+								for(Spawner spawner : spawners)
 								{
-									for (NpcInstance npc : spawner.getAllSpawned())
+									for(NpcInstance npc : spawner.getAllSpawned())
 									{
 										npc.setTarget(player);
 										npc.getAI().Attack(player, true, false);
@@ -113,32 +112,32 @@ public class TranscendentInstanceZone90 extends Reflection
 		@Override
 		public void onDeath(Creature victim, Creature killer)
 		{
-			if (!victim.isPlayer())
+			if(!victim.isPlayer())
 			{
-				if (victim.isNpc())
+				if(victim.isNpc())
 				{
-					if (victim.getNpcId() == 22424)
+					if(victim.getNpcId() == 22424)
 					{
-						if (victim.getTitle() == "Enhanced with Spirit Ore")
+						if(victim.getTitle() == "Enhanced with Spirit Ore")
 						{
 							ItemFunctions.addItem(killer.getPlayer(), 3031, Rnd.get(1500, 2500));
 						}
-						else if (victim.getTitle() == "Enhanced with Spirit")
+						else if(victim.getTitle() == "Enhanced with Spirit")
 						{
 							ItemFunctions.addItem(killer.getPlayer(), 90907, Rnd.get(25, 35));
 						}
-						else if (victim.getTitle() == "Enhanced with Grace")
+						else if(victim.getTitle() == "Enhanced with Grace")
 						{
 							ItemFunctions.addItem(killer.getPlayer(), 93274, Rnd.get(250, 350));
 						}
-						else if (victim.getTitle() == "Enhanced with Supplies")
+						else if(victim.getTitle() == "Enhanced with Supplies")
 						{
 							ItemFunctions.addItem(killer.getPlayer(), 3031, Rnd.get(600, 750));
 							ItemFunctions.addItem(killer.getPlayer(), 90907, 20);
 							ItemFunctions.addItem(killer.getPlayer(), 93274, Rnd.get(75, 100));
 						}
 
-						if (Rnd.get(100) < 30)
+						if(Rnd.get(100) < 30)
 						{
 							addSpawnWithoutRespawn(22424, new Location(185976, 57608, -4577, 16578), 0);
 						}
@@ -147,9 +146,9 @@ public class TranscendentInstanceZone90 extends Reflection
 				return;
 			}
 
-			for (Abnormal e : victim.getAbnormalList())
+			for(Abnormal e : victim.getAbnormalList())
 			{
-				if ((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198) || (e.getSkill().getId() == 59829))
+				if((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198) || (e.getSkill().getId() == 59829))
 				{
 					e.exit();
 				}
@@ -162,18 +161,19 @@ public class TranscendentInstanceZone90 extends Reflection
 		@Override
 		public void onZoneEnter(Zone zone, Creature cha)
 		{
-			if (!cha.isPlayer())
+			if(!cha.isPlayer())
 				return;
 
-			if (!_isFirstEnter)
+			if(!_isFirstEnter)
 			{
-				cha.getPlayer().sendPacket(new ExSendUIEventPacket(cha.getPlayer(), 0, 0, (int) ((System.currentTimeMillis() - _timeStart) / 1000), 0, NpcString.TIME_REMAINING));
+				cha.getPlayer().sendPacket(new ExSendUIEventPacket(cha.getPlayer(), 0, 0, (int) ((System.currentTimeMillis() - _timeStart)
+						/ 1000), 0, NpcString.TIME_REMAINING));
 			}
 
-			if (zone == _instanceZone)
+			if(zone == _instanceZone)
 			{
 				cha.addListener(_deathListener);
-				if (_collapseTask != null)
+				if(_collapseTask != null)
 				{
 					_collapseTask.cancel(true);
 					_collapseTask = null;
@@ -184,12 +184,12 @@ public class TranscendentInstanceZone90 extends Reflection
 		@Override
 		public void onZoneLeave(Zone zone, Creature cha)
 		{
-			if (cha.isPlayer() && zone == _instanceZone)
+			if(cha.isPlayer() && zone == _instanceZone)
 			{
 				cha.removeListener(_deathListener);
-				for (Abnormal e : cha.getAbnormalList())
+				for(Abnormal e : cha.getAbnormalList())
 				{
-					if ((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198) || (e.getSkill().getId() == 59829))
+					if((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198) || (e.getSkill().getId() == 59829))
 					{
 						e.exit();
 					}
@@ -234,12 +234,12 @@ public class TranscendentInstanceZone90 extends Reflection
 
 	private void stopTask()
 	{
-		if (_runTask != null)
+		if(_runTask != null)
 		{
 			_runTask.cancel(true);
 			_runTask = null;
 		}
-		for (Player player : getPlayers())
+		for(Player player : getPlayers())
 		{
 			player.sendPacket(new ExSendUIEventPacket(player, 1, 0, 0, 0));
 		}
@@ -249,7 +249,7 @@ public class TranscendentInstanceZone90 extends Reflection
 	@Override
 	protected void onCollapse()
 	{
-		if (_player != null)
+		if(_player != null)
 		{
 			_player.setVar(PlayerVariables.RESTRICT_FIELD_USED, true);
 		}

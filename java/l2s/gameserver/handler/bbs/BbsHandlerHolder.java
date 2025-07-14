@@ -26,10 +26,11 @@ public class BbsHandlerHolder extends AbstractHolder
 
 	public void registerHandler(IBbsHandler commHandler)
 	{
-		for (String bypass : commHandler.getBypassCommands())
+		for(String bypass : commHandler.getBypassCommands())
 		{
-			if (_handlers.containsKey(bypass))
-				warn("BbsHandlerHolder: dublicate bypass registered! First handler: " + _handlers.get(bypass).getClass().getSimpleName() + " second: " + commHandler.getClass().getSimpleName());
+			if(_handlers.containsKey(bypass))
+				warn("BbsHandlerHolder: dublicate bypass registered! First handler: " + _handlers.get(bypass).getClass().getSimpleName() + " second: "
+						+ commHandler.getClass().getSimpleName());
 
 			_handlers.put(bypass, commHandler);
 		}
@@ -37,19 +38,19 @@ public class BbsHandlerHolder extends AbstractHolder
 
 	public void removeHandler(IBbsHandler handler)
 	{
-		for (String bypass : handler.getBypassCommands())
+		for(String bypass : handler.getBypassCommands())
 			_handlers.remove(bypass);
 		_log.info("BbsHandlerHolder: " + handler.getClass().getSimpleName() + " unloaded.");
 	}
 
 	public IBbsHandler getCommunityHandler(String bypass)
 	{
-		if (!Config.BBS_ENABLED || _handlers.isEmpty())
+		if(!Config.BBS_ENABLED || _handlers.isEmpty())
 			return null;
 
-		for (Map.Entry<String, IBbsHandler> entry : _handlers.entrySet())
+		for(Map.Entry<String, IBbsHandler> entry : _handlers.entrySet())
 		{
-			if (bypass.toLowerCase().startsWith(entry.getKey().toLowerCase()))
+			if(bypass.toLowerCase().startsWith(entry.getKey().toLowerCase()))
 				return entry.getValue();
 		}
 		return null;

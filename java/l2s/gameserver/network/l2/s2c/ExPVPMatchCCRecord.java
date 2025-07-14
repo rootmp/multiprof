@@ -19,7 +19,7 @@ public class ExPVPMatchCCRecord implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(0x00); // Open/Dont Open
 		packetWriter.writeD(_scores.size());
-		for (Entry<String, Integer> p : _scores.entrySet())
+		for(Entry<String, Integer> p : _scores.entrySet())
 		{
 			packetWriter.writeS(p.getKey());
 			packetWriter.writeD(p.getValue());

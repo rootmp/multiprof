@@ -6,8 +6,7 @@ import java.io.StringWriter;
 public class LogUtils
 {
 	private LogUtils()
-	{
-	}
+	{}
 
 	/**
 	 * This method works the same as Thread.dumpStack(), but the only difference is

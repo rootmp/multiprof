@@ -17,6 +17,6 @@ public abstract class SendablePacket<T extends MMOClient> extends l2s.commons.ne
 	{
 		return (T) ((SelectorThread) Thread.currentThread()).getWriteClient();
 	}
-	
+
 	protected abstract boolean write();
 }

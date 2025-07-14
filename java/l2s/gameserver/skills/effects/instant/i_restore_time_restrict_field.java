@@ -33,13 +33,12 @@ public class i_restore_time_restrict_field extends i_abstract_effect
 		final Player player = effected.getPlayer();
 
 		final TimeRestrictFieldInfo field = TimeRestrictFieldHolder.getInstance().getFields().get(fieldId);
-		if (field == null)
-		{
-			return;
-		}
+		if(field == null)
+		{ return; }
 
-		int remainTimeRefill = player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + fieldId + "_refill", field.getRemainTimeMax() - field.getRemainTimeBase());
-		if (remainTimeRefill > 0)
+		int remainTimeRefill = player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + fieldId + "_refill", field.getRemainTimeMax()
+				- field.getRemainTimeBase());
+		if(remainTimeRefill > 0)
 		{
 			boolean isInTimeRestrictField = player.getReflection().getId() < -4 ? true : false;
 			player.stopTimedHuntingZoneTask(false, false);
@@ -49,7 +48,7 @@ public class i_restore_time_restrict_field extends i_abstract_effect
 			remainTime += field.getRemainTimeBase();
 			player.setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + fieldId, remainTime);
 			player.sendPacket(new ExTimeRestrictFieldUserChargeResult(fieldId, remainTime, field.getRemainTimeBase() / 60));
-			if (isInTimeRestrictField)
+			if(isInTimeRestrictField)
 			{
 				player.startTimeRestrictField();
 			}

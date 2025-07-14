@@ -35,13 +35,13 @@ public class Decoy extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (activeChar.isAlikeDead() || !activeChar.isPlayer() || activeChar != target) // only TARGET_SELF
+		if(activeChar.isAlikeDead() || !activeChar.isPlayer() || activeChar != target) // only TARGET_SELF
 			return false;
 
-		if (_npcId <= 0)
+		if(_npcId <= 0)
 			return false;
 
 		/*
@@ -58,13 +58,13 @@ public class Decoy extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		Player player = activeChar.getPlayer();
 
 		NpcTemplate DecoyTemplate = NpcHolder.getInstance().getTemplate(getNpcId());
-		for (int i = 0; i < _numbersOfDecoys; i++)
+		for(int i = 0; i < _numbersOfDecoys; i++)
 		{
 			DecoyInstance decoy = new DecoyInstance(IdFactory.getInstance().getNextId(), DecoyTemplate, player, _lifeTime);
 			decoy.setCurrentHp(decoy.getMaxHp(), false);

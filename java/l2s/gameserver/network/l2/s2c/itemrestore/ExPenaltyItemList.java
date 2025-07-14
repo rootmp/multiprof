@@ -2,10 +2,10 @@ package l2s.gameserver.network.l2.s2c.itemrestore;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -24,18 +24,18 @@ public class ExPenaltyItemList implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_itemsToRestore.size() == 0)
+		if(_itemsToRestore.size() == 0)
 			packetWriter.writeD(0);
 		else
 		{
 			packetWriter.writeD(_itemsToRestore.size());
-			for (ItemInstance item : _itemsToRestore)
+			for(ItemInstance item : _itemsToRestore)
 			{
 				packetWriter.writeD(item.getObjectId()); // on off unknown value special for any item, maybe id from items to restore
-											// global list
+				// global list
 				packetWriter.writeD(item.getLostDate());
 				packetWriter.writeQ(item.getTemplate().getReferencePrice() > 0 ? item.getTemplate().getReferencePrice() : 10000); // adena
-																														// price
+				// price
 				packetWriter.writeD(5); // lcoin price
 				packetWriter.writeD(49); // ? 49 on JP.. 0 cause not shown item, and next item row are wrong
 				packetWriter.writeD(0); // ?
@@ -53,7 +53,7 @@ public class ExPenaltyItemList implements IClientOutgoingPacket
 				packetWriter.writeH(1); // ?
 				packetWriter.writeC(0); // ?
 				packetWriter.writeD(item.getObjectId()); // on off unknown value special for any item, maybe id from items to restore
-											// global list
+				// global list
 			}
 		}
 		return true;

@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Player;
@@ -30,13 +30,13 @@ public class AcquireSkillListPacket implements IClientOutgoingPacket
 	{
 		_player = player;
 		_skills = SkillAcquireHolder.getInstance().getAcquirableSkillListByClass(player);
-		
-		for (SkillLearn learn : _skills)
+
+		for(SkillLearn learn : _skills)
 		{
-			for (Skill skill : learn.getBlockedSkills())
+			for(Skill skill : learn.getBlockedSkills())
 			{
 				SkillEntry knownSkill = player.getKnownSkill(skill.getId());
-				if (knownSkill != null && knownSkill.getLevel() >= skill.getLevel())
+				if(knownSkill != null && knownSkill.getLevel() >= skill.getLevel())
 				{
 					_blockedSkills.computeIfAbsent(learn, k -> new ArrayList<>()).add(skill);
 				}
@@ -48,10 +48,10 @@ public class AcquireSkillListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(_skills.size());
-		for (SkillLearn sk : _skills)
+		for(SkillLearn sk : _skills)
 		{
 			Skill skill = SkillHolder.getInstance().getSkill(sk.getId(), sk.getLevel());
-			if (skill == null)
+			if(skill == null)
 				continue;
 
 			packetWriter.writeD(sk.getId());
@@ -63,7 +63,7 @@ public class AcquireSkillListPacket implements IClientOutgoingPacket
 
 			List<AlterItemData> requiredItems = sk.getRequiredItemsForLearn(AcquireType.NORMAL);
 			packetWriter.writeC(requiredItems.size());
-			for (AlterItemData item : requiredItems)
+			for(AlterItemData item : requiredItems)
 			{
 				packetWriter.writeD(item.getId());
 				packetWriter.writeQ(item.getCount());
@@ -71,7 +71,7 @@ public class AcquireSkillListPacket implements IClientOutgoingPacket
 
 			List<Skill> blocked = _blockedSkills.getOrDefault(sk, Collections.emptyList());
 			packetWriter.writeC(blocked.size());
-			for (Skill s : blocked)
+			for(Skill s : blocked)
 			{
 				packetWriter.writeD(s.getId());
 				packetWriter.writeH(s.getLevel()); // Main writeD, Essence writeH.

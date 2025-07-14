@@ -39,10 +39,8 @@ public class TimeStamp
 
 	public long getReuseBasic()
 	{
-		if (_reuse == 0)
-		{
-			return getReuseCurrent();
-		}
+		if(_reuse == 0)
+		{ return getReuseCurrent(); }
 
 		return _reuse;
 	}

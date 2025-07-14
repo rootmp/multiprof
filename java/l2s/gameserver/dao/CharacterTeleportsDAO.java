@@ -7,12 +7,11 @@ import java.sql.ResultSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.model.Player;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author nexvill
@@ -45,12 +44,12 @@ public class CharacterTeleportsDAO
 			statement = con.prepareStatement(SELECT_QUERY);
 			statement.setInt(1, objectId);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				result.add(rset.getInt("teleport_id"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterTeleportsDAO.restore(int): " + e, e);
 		}
@@ -73,7 +72,7 @@ public class CharacterTeleportsDAO
 			statement.setInt(2, teleportId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getFriendList() + " could not add teleport favorite id: " + teleportId, e);
 		}
@@ -95,7 +94,7 @@ public class CharacterTeleportsDAO
 			statement.setInt(2, teleportId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(getClass().getSimpleName() + ": could not delete teleport id: " + teleportId + " ownerId: " + ownerId, e);
 		}

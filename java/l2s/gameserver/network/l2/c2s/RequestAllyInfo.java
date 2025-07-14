@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,11 +25,11 @@ public class RequestAllyInfo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Alliance ally = player.getAlliance();
-		if (ally == null)
+		if(ally == null)
 			return;
 
 		int clancount = 0;
@@ -37,7 +38,7 @@ public class RequestAllyInfo implements IClientIncomingPacket
 		int[] online = new int[clancount + 1];
 		int[] count = new int[clancount + 1];
 		Clan[] clans = player.getAlliance().getMembers();
-		for (int i = 0; i < clancount; i++)
+		for(int i = 0; i < clancount; i++)
 		{
 			online[i + 1] = clans[i].getOnlineMembers().size();
 			count[i + 1] = clans[i].getAllSize();
@@ -51,9 +52,9 @@ public class RequestAllyInfo implements IClientIncomingPacket
 		packets.add(new SystemMessage(SystemMessage.CONNECTION_S1_TOTAL_S2).addNumber(online[0]).addNumber(count[0])); // Connection
 		packets.add(new SystemMessage(SystemMessage.ALLIANCE_LEADER_S2_OF_S1).addString(leaderclan.getName()).addString(leaderclan.getLeaderName()));
 		packets.add(new SystemMessage(SystemMessage.AFFILIATED_CLANS_TOTAL_S1_CLAN_S).addNumber(clancount)); // clan
-																												// count
+		// count
 		packets.add(SystemMsg.CLAN_INFORMATION);
-		for (int i = 0; i < clancount; i++)
+		for(int i = 0; i < clancount; i++)
 		{
 			packets.add(new SystemMessage(SystemMessage.CLAN_NAME_S1).addString(clans[i].getName()));
 			packets.add(new SystemMessage(SystemMessage.CLAN_LEADER_S1).addString(clans[i].getLeaderName()));

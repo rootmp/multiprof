@@ -21,14 +21,14 @@ public class AdminDebug implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditNPC)
+		if(!activeChar.getPlayerAccess().CanEditNPC)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_cansee:
 				GameObject target = activeChar.getTarget();
-				if (target != null)
+				if(target != null)
 				{
 					boolean seeActiveChar = GeoEngine.canSeeTarget(activeChar, target);
 					boolean seeTarget = GeoEngine.canSeeTarget(target, activeChar);

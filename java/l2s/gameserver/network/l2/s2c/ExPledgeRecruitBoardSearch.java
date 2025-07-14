@@ -34,13 +34,13 @@ public class ExPledgeRecruitBoardSearch implements IClientOutgoingPacket
 
 		packetWriter.writeD(_clans.size());
 
-		for (ClanSearchClan clanHolder : _clans)
+		for(ClanSearchClan clanHolder : _clans)
 		{
 			packetWriter.writeD(clanHolder.getClanId());
 			packetWriter.writeD(0); // Alliance
 		}
 
-		for (ClanSearchClan clanHolder : _clans)
+		for(ClanSearchClan clanHolder : _clans)
 		{
 			Clan clan = ClanTable.getInstance().getClan(clanHolder.getClanId());
 

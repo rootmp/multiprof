@@ -63,17 +63,17 @@ public class MultiSellParser extends AbstractParser<MultiSellHolder>
 		MultisellType type = MultisellType.NORMAL;
 
 		Element configElement = rootElement.element("config");
-		if (configElement != null)
+		if(configElement != null)
 		{
-			if (configElement.attributeValue("show_all") != null)
+			if(configElement.attributeValue("show_all") != null)
 				showAll = Boolean.parseBoolean(configElement.attributeValue("show_all"));
-			if (configElement.attributeValue("keep_enchanted") != null)
+			if(configElement.attributeValue("keep_enchanted") != null)
 				keepEnchanted = Boolean.parseBoolean(configElement.attributeValue("keep_enchanted"));
-			if (configElement.attributeValue("no_tax") != null)
+			if(configElement.attributeValue("no_tax") != null)
 				noTax = Boolean.parseBoolean(configElement.attributeValue("no_tax"));
-			if (configElement.attributeValue("no_key") != null)
+			if(configElement.attributeValue("no_key") != null)
 				noKey = Boolean.parseBoolean(configElement.attributeValue("no_key"));
-			if (configElement.attributeValue("type") != null)
+			if(configElement.attributeValue("type") != null)
 				type = MultisellType.valueOf(configElement.attributeValue("type").toUpperCase());
 		}
 
@@ -85,13 +85,13 @@ public class MultiSellParser extends AbstractParser<MultiSellHolder>
 		list.setType(type);
 
 		int entryId = 0;
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("item".equalsIgnoreCase(element.getName()))
+			if("item".equalsIgnoreCase(element.getName()))
 			{
 				MultiSellEntry e = parseEntry(element, listId);
-				if (e != null)
+				if(e != null)
 				{
 					e.setEntryId(entryId++);
 					list.addEntry(e);
@@ -105,16 +105,16 @@ public class MultiSellParser extends AbstractParser<MultiSellHolder>
 	{
 		MultiSellEntry entry = new MultiSellEntry();
 
-		for (Iterator<Element> iterator = n.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = n.elementIterator(); iterator.hasNext();)
 		{
 			Element d = iterator.next();
-			if ("ingredient".equalsIgnoreCase(d.getName()))
+			if("ingredient".equalsIgnoreCase(d.getName()))
 			{
 				int id = Integer.parseInt(d.attributeValue("id"));
 				long count = Long.parseLong(d.attributeValue("count"));
 				entry.addIngredient(new MultiSellIngredient(id, count));
 			}
-			else if ("production".equalsIgnoreCase(d.getName()))
+			else if("production".equalsIgnoreCase(d.getName()))
 			{
 				int id = Integer.parseInt(d.attributeValue("id"));
 				long count = Long.parseLong(d.attributeValue("count"));
@@ -122,11 +122,11 @@ public class MultiSellParser extends AbstractParser<MultiSellHolder>
 
 				int flags = 0;
 				String[] flagsArray = d.attributeValue("flags") == null ? null : d.attributeValue("flags").split(";");
-				if (flagsArray != null)
+				if(flagsArray != null)
 				{
-					for (String flag : flagsArray)
+					for(String flag : flagsArray)
 					{
-						switch (flag)
+						switch(flag)
 						{
 							case "FLAG_NO_DROP":
 								flags |= ItemInstance.FLAG_NO_DROP;
@@ -149,43 +149,43 @@ public class MultiSellParser extends AbstractParser<MultiSellHolder>
 			}
 		}
 
-		if (entry.getIngredients().isEmpty() || entry.getProduction().isEmpty())
+		if(entry.getIngredients().isEmpty() || entry.getProduction().isEmpty())
 		{
 			_log.warn("MultiSell [" + multiSellId + "] is empty!");
 			return null;
 		}
 
-		for (MultiSellIngredient ingridient : entry.getIngredients())
+		for(MultiSellIngredient ingridient : entry.getIngredients())
 		{
-			if (ingridient.getItemId() == ItemTemplate.ITEM_ID_ADENA && ingridient.getItemCount() == -1)
+			if(ingridient.getItemId() == ItemTemplate.ITEM_ID_ADENA && ingridient.getItemCount() == -1)
 			{
 				long price = 0;
-				for (MultiSellIngredient product : entry.getProduction())
+				for(MultiSellIngredient product : entry.getProduction())
 				{
 					ItemTemplate item = ItemHolder.getInstance().getTemplate(product.getItemId());
-					if (item == null)
+					if(item == null)
 						continue;
 
 					price += item.getReferencePrice() * product.getItemCount();
 				}
 
-				if (price <= 0)
+				if(price <= 0)
 					return null;
 
 				ingridient.setItemCount(price);
 			}
 
-			if (ingridient.getItemCount() <= 0)
+			if(ingridient.getItemCount() <= 0)
 			{
 				_log.warn("MultiSell [" + multiSellId + "] ingridient ID[" + ingridient.getItemId() + "] has negative item count!");
 				return null;
 			}
 		}
 
-		if (entry.getIngredients().size() == 1 && entry.getProduction().size() == 1 && entry.getIngredients().get(0).getItemId() == 57)
+		if(entry.getIngredients().size() == 1 && entry.getProduction().size() == 1 && entry.getIngredients().get(0).getItemId() == 57)
 		{
 			ItemTemplate item = ItemHolder.getInstance().getTemplate(entry.getProduction().get(0).getItemId());
-			if (item == null)
+			if(item == null)
 			{
 				_log.warn("MultiSell [" + multiSellId + "] Production [" + entry.getProduction().get(0).getItemId() + "] not found!");
 				return null;

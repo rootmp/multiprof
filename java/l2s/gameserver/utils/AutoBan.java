@@ -35,13 +35,13 @@ public final class AutoBan
 			statement.setInt(1, ObjectId);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				Long endban = rset.getLong("endban") * 1000L;
 				res = endban > System.currentTimeMillis();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not restore ban data: " + e);
 		}
@@ -56,9 +56,9 @@ public final class AutoBan
 	public static void Banned(Player actor, int period, String msg, String GM)
 	{
 		int endban = 0;
-		if (period == -1)
+		if(period == -1)
 			endban = Integer.MAX_VALUE;
-		else if (period > 0)
+		else if(period > 0)
 		{
 			Calendar end = Calendar.getInstance();
 			end.add(Calendar.DAY_OF_MONTH, period);
@@ -72,7 +72,7 @@ public final class AutoBan
 
 		String date = new SimpleDateFormat("yy.MM.dd H:mm:ss").format(new Date());
 		String enddate = new SimpleDateFormat("yy.MM.dd H:mm:ss").format(new Date(endban * 1000L));
-		if (endban * 1000L <= Calendar.getInstance().getTimeInMillis())
+		if(endban * 1000L <= Calendar.getInstance().getTimeInMillis())
 		{
 			_log.warn("Negative ban period | From " + date + " to " + enddate);
 			return;
@@ -93,7 +93,7 @@ public final class AutoBan
 			statement.setLong(7, endban);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("could not store bans data:" + e);
 		}
@@ -109,7 +109,7 @@ public final class AutoBan
 		boolean res;
 		int obj_id = CharacterDAO.getInstance().getObjectIdByName(actor);
 		res = obj_id > 0;
-		if (!res)
+		if(!res)
 			return false;
 
 		Connection con = null;
@@ -123,12 +123,12 @@ public final class AutoBan
 			statement.executeUpdate();
 			DbUtils.close(statement);
 
-			if (acc_level < 0)
+			if(acc_level < 0)
 			{
 				int endban = 0;
-				if (period == -1)
+				if(period == -1)
 					endban = Integer.MAX_VALUE;
-				else if (period > 0)
+				else if(period > 0)
 				{
 					Calendar end = Calendar.getInstance();
 					end.add(Calendar.DAY_OF_MONTH, period);
@@ -142,7 +142,7 @@ public final class AutoBan
 
 				String date = new SimpleDateFormat("yy.MM.dd H:mm:ss").format(new Date());
 				String enddate = new SimpleDateFormat("yy.MM.dd H:mm:ss").format(new Date(endban * 1000L));
-				if (endban * 1000L <= Calendar.getInstance().getTimeInMillis())
+				if(endban * 1000L <= Calendar.getInstance().getTimeInMillis())
 				{
 					_log.warn("Negative ban period | From " + date + " to " + enddate);
 					return false;
@@ -164,7 +164,7 @@ public final class AutoBan
 				statement.execute();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 			_log.warn("could not store bans data:" + e);
@@ -195,7 +195,7 @@ public final class AutoBan
 			statement.setString(5, GM);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("could not store bans data:" + e);
 		}
@@ -215,13 +215,13 @@ public final class AutoBan
 		boolean res = true;
 		long NoChannel = period * 60000;
 		int obj_id = CharacterDAO.getInstance().getObjectIdByName(actor);
-		if (obj_id == 0)
+		if(obj_id == 0)
 			return false;
 		Player plyr = World.getPlayer(actor);
 
 		Connection con = null;
 		PreparedStatement statement = null;
-		if (plyr != null)
+		if(plyr != null)
 		{
 
 			plyr.sendMessage(new CustomMessage("l2s.Util.AutoBan.ChatBan").addString(GM).addNumber(period));
@@ -236,7 +236,7 @@ public final class AutoBan
 				statement.setInt(2, obj_id);
 				statement.executeUpdate();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				res = false;
 				_log.warn("Could not activate nochannel:" + e);
@@ -254,12 +254,12 @@ public final class AutoBan
 		boolean res = true;
 		Player plyr = World.getPlayer(actor);
 		int obj_id = CharacterDAO.getInstance().getObjectIdByName(actor);
-		if (obj_id == 0)
+		if(obj_id == 0)
 			return false;
 
 		Connection con = null;
 		PreparedStatement statement = null;
-		if (plyr != null)
+		if(plyr != null)
 		{
 			plyr.sendMessage(new CustomMessage("l2s.Util.AutoBan.ChatUnBan").addString(GM));
 			plyr.updateNoChannel(0);
@@ -273,7 +273,7 @@ public final class AutoBan
 				statement.setInt(2, obj_id);
 				statement.executeUpdate();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				res = false;
 				_log.warn("Could not activate nochannel:" + e);

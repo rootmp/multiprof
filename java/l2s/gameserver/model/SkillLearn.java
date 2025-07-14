@@ -123,7 +123,7 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 
 	public void addRequiredItem(int[] id, long count)
 	{
-		if (id.length > 0 && count > 0)
+		if(id.length > 0 && count > 0)
 		{
 			_allRequiredItems.add(new AlterItemData(id, count));
 		}
@@ -141,11 +141,10 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 
 	public void addAdditionalRequiredItem(int id, long count)
 	{
-		if (id > 0 && count > 0)
+		if(id > 0 && count > 0)
 		{
-			AlterItemData item = new AlterItemData(new int[]
-			{
-				id
+			AlterItemData item = new AlterItemData(new int[] {
+					id
 			}, count);
 
 			_additionalRequiredItems.add(item);
@@ -166,10 +165,8 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 
 	public List<AlterItemData> getRequiredItemsForLearn(AcquireType type)
 	{
-		if (Config.DISABLED_SPELLBOOKS_FOR_ACQUIRE_TYPES.contains(type))
-		{
-			return _additionalRequiredItems;
-		}
+		if(Config.DISABLED_SPELLBOOKS_FOR_ACQUIRE_TYPES.contains(type))
+		{ return _additionalRequiredItems; }
 
 		return _allRequiredItems;
 	}
@@ -191,19 +188,15 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 
 	public boolean testCondition(Player player)
 	{
-		if (_conditions.isEmpty())
-		{
-			return true;
-		}
+		if(_conditions.isEmpty())
+		{ return true; }
 
 		Env env = new Env();
 		env.character = player;
-		for (Condition condition : _conditions)
+		for(Condition condition : _conditions)
 		{
-			if (!condition.test(env))
-			{
-				return false;
-			}
+			if(!condition.test(env))
+			{ return false; }
 		}
 		return true;
 	}
@@ -217,7 +210,7 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 	@Override
 	public int compareTo(SkillLearn o)
 	{
-		if (getId() == o.getId())
+		if(getId() == o.getId())
 		{
 			return getLevel() - o.getLevel();
 		}
@@ -230,6 +223,6 @@ public final class SkillLearn implements SkillInfo, Comparable<SkillLearn>
 	@Override
 	public int getSubLevel()
 	{
-		return 0;    
+		return 0;
 	}
 }

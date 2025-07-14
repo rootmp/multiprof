@@ -44,27 +44,27 @@ public class DoorAI extends CharacterAI
 	protected void onEvtAttacked(Creature attacker, Skill skill, int damage)
 	{
 		Creature actor;
-		if (attacker == null || (actor = getActor()) == null)
+		if(attacker == null || (actor = getActor()) == null)
 			return;
 
 		Player player = attacker.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		List<SiegeEvent> doorSiegeEvents = actor.getEvents(SiegeEvent.class);
-		if (doorSiegeEvents.isEmpty())
+		if(doorSiegeEvents.isEmpty())
 			return;
 
 		List<SiegeEvent> playerSiegeEvents = player.getEvents(SiegeEvent.class);
 
 		boolean inSameSiege = false;
-		if (playerSiegeEvents.isEmpty())
+		if(playerSiegeEvents.isEmpty())
 			inSameSiege = true;
 		else
 		{
-			for (SiegeEvent<?, ?> event : playerSiegeEvents)
+			for(SiegeEvent<?, ?> event : playerSiegeEvents)
 			{
-				if (doorSiegeEvents.contains(event) && event.getSiegeClan(SiegeEvent.ATTACKERS, player.getClan()) != null)
+				if(doorSiegeEvents.contains(event) && event.getSiegeClan(SiegeEvent.ATTACKERS, player.getClan()) != null)
 				{
 					inSameSiege = true;
 					break;
@@ -72,14 +72,14 @@ public class DoorAI extends CharacterAI
 			}
 		}
 
-		if (inSameSiege)
+		if(inSameSiege)
 		{
-			for (NpcInstance npc : actor.getAroundNpc(900, 200))
+			for(NpcInstance npc : actor.getAroundNpc(900, 200))
 			{
-				if (!npc.isSiegeGuard())
+				if(!npc.isSiegeGuard())
 					continue;
 
-				if (Rnd.chance(20))
+				if(Rnd.chance(20))
 					npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, attacker, 10000);
 				else
 					npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, attacker, 2000);

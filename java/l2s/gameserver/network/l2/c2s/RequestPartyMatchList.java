@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -34,23 +35,23 @@ public class RequestPartyMatchList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Party party = player.getParty();
-		if (party != null && party.getPartyLeader() != player)
+		if(party != null && party.getPartyLeader() != player)
 			return;
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null)
+		if(room == null)
 		{
 			room = new PartyMatchingRoom(player, _minLevel, _maxLevel, _maxMembers, _lootDist, _roomTitle);
-			if (party != null)
-				for (Player member : party.getPartyMembers())
-					if (member != null && member != player)
+			if(party != null)
+				for(Player member : party.getPartyMembers())
+					if(member != null && member != player)
 						room.addMemberForce(member);
 		}
-		else if (room.getId() == _roomId && room.getType() == MatchingRoom.PARTY_MATCHING && room.getLeader() == player)
+		else if(room.getId() == _roomId && room.getType() == MatchingRoom.PARTY_MATCHING && room.getLeader() == player)
 		{
 			room.setMinLevel(_minLevel);
 			room.setMaxLevel(_maxLevel);

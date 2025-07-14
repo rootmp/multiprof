@@ -79,7 +79,7 @@ public class Log
 		final StringBuilder output = new StringBuilder();
 
 		output.append(cat);
-		if (player != null)
+		if(player != null)
 		{
 			output.append(' ');
 			output.append(player);
@@ -112,7 +112,7 @@ public class Log
 		output.append(' ');
 		output.append('[');
 		output.append(player);
-		if (target != null)
+		if(target != null)
 		{
 			output.append(" -> ");
 			output.append(target);
@@ -128,7 +128,7 @@ public class Log
 	{
 		final StringBuilder output = new StringBuilder();
 
-		if (success)
+		if(success)
 		{
 			output.append("SUCCESS");
 		}
@@ -139,7 +139,7 @@ public class Log
 
 		output.append(' ');
 		output.append(player);
-		if (target != null)
+		if(target != null)
 		{
 			output.append(" -> ");
 			output.append(target);
@@ -234,7 +234,8 @@ public class Log
 
 	public static void LogBan(Player activeChar, String command, BanBindType bindType, Object bindValueObj, int endTime, String reason, boolean auth)
 	{
-		_logBans.info(String.format("%s[%s (%d)] %s BAN: BIND_TYPE[%s] BIND_VALUE[%s] END_TIME[%s] REASON[%s] COMMAND[%s]", activeChar.isGM() ? "GM" : "MODERATOR", activeChar.getName(), activeChar.getObjectId(), auth ? "AUTH" : "GAME", bindType, bindValueObj, endTime > 0 ? TimeUtils.toSimpleFormat(endTime) : "NEVER", reason, command));
+		_logBans.info(String.format("%s[%s (%d)] %s BAN: BIND_TYPE[%s] BIND_VALUE[%s] END_TIME[%s] REASON[%s] COMMAND[%s]", activeChar.isGM() ? "GM" : "MODERATOR", activeChar.getName(), activeChar.getObjectId(), auth ? "AUTH" : "GAME", bindType, bindValueObj, endTime
+				> 0 ? TimeUtils.toSimpleFormat(endTime) : "NEVER", reason, command));
 	}
 
 	public static void LogUnban(Player activeChar, String command, BanBindType bindType, Object bindValueObj, boolean auth)

@@ -20,7 +20,7 @@ public class RequestExRequestPotentialSkillList implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
+
 		activeChar.sendPacket(new ExAcquireAPSkillList(activeChar, 2));
 	}
 }

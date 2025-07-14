@@ -36,7 +36,7 @@ public class PvPEventHook extends ListenerHook
 	public void onPlayerQuitGame(Player player)
 	{
 		List<PvPEvent> events = EventHolder.getInstance().getEvents(PvPEvent.class);
-		for (PvPEvent event : events)
+		for(PvPEvent event : events)
 		{
 			event.removeObject("registered_players", player);
 		}
@@ -46,32 +46,31 @@ public class PvPEventHook extends ListenerHook
 	public void onPlayerDie(Player player, Creature killer)
 	{
 		final PvPEvent event = player.getEvent(PvPEvent.class);
-		if (event == null)
+		if(event == null)
 			return;
 
 		final PvPEventArenaObject arena = event.getArena(player);
-		if (arena == null)
+		if(arena == null)
 			return;
 
-		if (arena != player.getReflection())
+		if(arena != player.getReflection())
 			return;
 
 		final PvPEventPlayerObject member = arena.getParticipant(player);
-		if (member == null)
+		if(member == null)
 			return;
 
 		member.addCountDie();
 
-		if (event.getCountDieFromExit() != -1 && member.getCountDie() >= event.getCountDieFromExit())
+		if(event.getCountDieFromExit() != -1 && member.getCountDie() >= event.getCountDieFromExit())
 		{
 			arena.removePlayer(player);
 		}
 		else
 		{
-			ThreadPoolManager.getInstance().schedule(() ->
-			{
+			ThreadPoolManager.getInstance().schedule(() -> {
 				int teamId = member.getTeam();
-				if (teamId == -1)
+				if(teamId == -1)
 				{
 					teamId = 0;
 				}
@@ -82,41 +81,42 @@ public class PvPEventHook extends ListenerHook
 			}, 3000);
 		}
 
-		if (event.checkStop())
+		if(event.checkStop())
 			arena.check();
 
-		if (!(killer instanceof Playable))
+		if(!(killer instanceof Playable))
 			return;
 
-		if (member.getTeam() != -1 && player.getTeam() == killer.getTeam())
+		if(member.getTeam() != -1 && player.getTeam() == killer.getTeam())
 			return;
 
 		PvPEventPlayerObject killerMember = event.getParticipant(killer.getPlayer());
-		if (killerMember != null)
+		if(killerMember != null)
 		{
 			killerMember.addPoint();
-			if (event.isIncPvP())
+			if(event.isIncPvP())
 			{
 				killer.getPlayer().setPvpKills(killer.getPlayer().getPvpKills() + 1);
 			}
 		}
 
 		List<RewardObject> rewards = event.getObjects("reward_for_kill");
-		rewards.stream().filter(reward -> Rnd.chance(reward.getChance())).forEach(reward -> ItemFunctions.addItem(killer.getPlayer(), reward.getItemId(), Rnd.get(reward.getMinCount(), reward.getMaxCount()) * (killer.getPlayer().hasPremiumAccount() ? event.getModRewardForPremium() : 1)));
+		rewards.stream().filter(reward -> Rnd.chance(reward.getChance())).forEach(reward -> ItemFunctions.addItem(killer.getPlayer(), reward.getItemId(), Rnd.get(reward.getMinCount(), reward.getMaxCount())
+				* (killer.getPlayer().hasPremiumAccount() ? event.getModRewardForPremium() : 1)));
 	}
 
 	@Override
 	public void onPlayerTeleport(Player player, int reflectionId)
 	{
 		final PvPEvent event = player.getEvent(PvPEvent.class);
-		if (event == null)
+		if(event == null)
 			return;
 
 		final PvPEventArenaObject arena = event.getArena(player);
-		if (arena == null)
+		if(arena == null)
 			return;
 
-		if (arena == player.getReflection())
+		if(arena == player.getReflection())
 			return;
 
 		arena.removePlayer(player);

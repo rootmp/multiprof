@@ -22,7 +22,7 @@ public class ExChangeAttributeItemList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_itemId);
 		packetWriter.writeD(_itemsList.length); // size
-		for (ItemInfo item : _itemsList)
+		for(ItemInfo item : _itemsList)
 		{
 			writeItemInfo(packetWriter, item);
 		}

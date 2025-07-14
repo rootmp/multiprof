@@ -31,22 +31,22 @@ public final class i_target_cancel extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (effected.getAI() instanceof DefaultAI)
+		if(effected.getAI() instanceof DefaultAI)
 			((DefaultAI) effected.getAI()).setGlobalAggro(System.currentTimeMillis() + 3000L);
 
 		effected.setTarget(null);
 
-		if (_stopTarget)
+		if(_stopTarget)
 			effected.getMovement().stopMove();
 
 		effected.abortAttack(true, true);
 
 		SkillEntry castingSkillEntry = effected.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-		if (castingSkillEntry == null || castingSkillEntry.getSkillType() != SkillType.TAKECASTLE)
+		if(castingSkillEntry == null || castingSkillEntry.getSkillType() != SkillType.TAKECASTLE)
 			effected.abortCast(true, true, true, false);
 
 		castingSkillEntry = effected.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-		if (castingSkillEntry == null || castingSkillEntry.getSkillType() != SkillType.TAKECASTLE)
+		if(castingSkillEntry == null || castingSkillEntry.getSkillType() != SkillType.TAKECASTLE)
 			effected.abortCast(true, true, false, true);
 
 		effected.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, effector);

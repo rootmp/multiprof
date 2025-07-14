@@ -43,7 +43,7 @@ public class CharacterElementalsDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.setInt(2, owner.getActiveClassId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				Elemental elemental = new Elemental(ElementalElement.getElementById(rset.getInt("element_id")));
 				elemental.setEvolutionLevel(rset.getInt("evolution_level"));
@@ -55,7 +55,7 @@ public class CharacterElementalsDAO
 				map.put(elemental.getElement(), elemental);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterElementalsDAO.select(Player): " + e, e);
 		}
@@ -75,7 +75,7 @@ public class CharacterElementalsDAO
 			statement = con.prepareStatement("REPLACE INTO character_elementals (char_obj_id,class_index,element_id,evolution_level,exp,attack_points,defence_points,crit_rate_points,crit_attack_points) VALUES(?,?,?,?,?,?,?,?,?)");
 			statement.setInt(1, owner.getObjectId());
 			statement.setInt(2, owner.getActiveClassId());
-			for (Elemental elemental : elementals)
+			for(Elemental elemental : elementals)
 			{
 				statement.setInt(3, elemental.getElementId());
 				statement.setInt(4, elemental.getEvolutionLevel());
@@ -88,7 +88,7 @@ public class CharacterElementalsDAO
 			}
 			statement.executeBatch();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getElementalList() + " could not store elementals list: ", e);
 			return false;

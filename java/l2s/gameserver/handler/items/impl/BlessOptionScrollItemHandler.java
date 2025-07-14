@@ -27,16 +27,12 @@ public class BlessOptionScrollItemHandler extends DefaultItemHandler
 {
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (playable == null || !playable.isPlayer() || item == null)
-		{
-			return false;
-		}
+		if(playable == null || !playable.isPlayer() || item == null)
+		{ return false; }
 
 		Player player = (Player) playable;
-		if (player.getObjectId() != item.getOwnerId())
-		{
-			return false;
-		}
+		if(player.getObjectId() != item.getOwnerId())
+		{ return false; }
 
 		player.setEnchantScroll(item);
 		player.sendPacket(new ExOpenBlessOptionScroll(player, item));

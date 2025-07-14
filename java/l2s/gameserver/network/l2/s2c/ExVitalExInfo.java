@@ -23,9 +23,9 @@ public class ExVitalExInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD((int) (_player.getLimitedSayhaGraceEndTime() / 1000)); // currentmilis / 1000, when limited
-																					// sayha ends
+		// sayha ends
 		packetWriter.writeD((int) (_player.getSayhaGraceSupportEndTime() / 1000)); // currentmilis / 1000, when sayha
-																					// grace suport ends
+		// grace suport ends
 		packetWriter.writeD(_vitalityBonus); // Limited sayha bonus
 		packetWriter.writeD(_additionalBonus); // Limited sayha bonus adena (shown as 130%, actually 30%)
 		return true;

@@ -30,17 +30,15 @@ public class Log
 {
 	private final static Logger _log = LoggerFactory.getLogger(Log.class);
 	private static final Logger _logAuth = LoggerFactory.getLogger("auth");
-	
+
 	private static final SimpleDateFormat SIMPLE_FORMAT = new SimpleDateFormat("HH:mm dd.MM.yyyy");
-	
+
 	private static final String INSERTINFO = "INSERT INTO account_log (time, login, ip) VALUES(?,?,?)";
 
 	public static void LogAccount(Account account)
 	{
-		if (!Config.LOGIN_LOG)
-		{
-			return;
-		}
+		if(!Config.LOGIN_LOG)
+		{ return; }
 
 		StringBuilder output = new StringBuilder();
 		output.append("ACCOUNT[");
@@ -52,7 +50,7 @@ public class Log
 		output.append("]");
 		_logAuth.info(output.toString());
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection(); 
+		try (Connection con = DatabaseFactory.getInstance().getConnection();
 				PreparedStatement statement = con.prepareStatement(INSERTINFO))
 		{
 			statement.setInt(1, account.getLastAccess());
@@ -60,7 +58,7 @@ public class Log
 			statement.setString(3, account.getLastIP());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

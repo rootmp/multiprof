@@ -24,17 +24,17 @@ public class AdminScripts implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanReload)
+		if(!activeChar.getPlayerAccess().CanReload)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_run_script:
 			case admin_runs:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 					return false;
 				String param = wordList[1];
-				if (!run(param))
+				if(!run(param))
 					activeChar.sendMessage("Can't run script.");
 				else
 					activeChar.sendMessage("Running script...");
@@ -46,13 +46,13 @@ public class AdminScripts implements IAdminCommandHandler
 	private boolean run(String target)
 	{
 		File file = new File(Config.DATAPACK_ROOT, "data/scripts/" + target.replace(".", "/") + ".java");
-		if (!file.exists())
+		if(!file.exists())
 			return false;
 
 		List<Class<?>> classes = Scripts.getInstance().load(file);
-		for (Class<?> clazz : classes)
+		for(Class<?> clazz : classes)
 		{
-			if (!ClassUtils.isAssignable(clazz, Runnable.class))
+			if(!ClassUtils.isAssignable(clazz, Runnable.class))
 				return false;
 
 			Runnable r;
@@ -60,7 +60,7 @@ public class AdminScripts implements IAdminCommandHandler
 			{
 				r = (Runnable) clazz.getDeclaredConstructor().newInstance();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				return false;
 			}

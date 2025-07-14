@@ -18,8 +18,7 @@ public class EmptyIterator<E> implements Iterator<E>
 	}
 
 	private EmptyIterator()
-	{
-	}
+	{}
 
 	@Override
 	public boolean hasNext()

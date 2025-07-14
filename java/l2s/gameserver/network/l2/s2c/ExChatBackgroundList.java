@@ -8,7 +8,7 @@ import l2s.gameserver.model.Player;
 public class ExChatBackgroundList implements IClientOutgoingPacket
 {
 	private List<Integer> chatBackgrounds;
-	
+
 	public ExChatBackgroundList(Player player)
 	{
 		chatBackgrounds = player.getVarIntegerList("chatBackgrounds");

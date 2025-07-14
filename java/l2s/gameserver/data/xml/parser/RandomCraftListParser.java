@@ -43,13 +43,13 @@ public class RandomCraftListParser extends AbstractParser<RandomCraftListHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("rewards"); iterator.hasNext(); )
+		for(Iterator<Element> iterator = rootElement.elementIterator("rewards"); iterator.hasNext();)
 		{
 			Element rewardsElement = iterator.next();
 			int slot = parseInt(rewardsElement, "slot");
 			long prob = 0;
 			List<RandomCraftRewardData> data = new ArrayList<>();
-			for (Iterator<Element> itemIterator = rewardsElement.elementIterator("item"); itemIterator.hasNext(); )
+			for(Iterator<Element> itemIterator = rewardsElement.elementIterator("item"); itemIterator.hasNext();)
 			{
 				Element itemElement = itemIterator.next();
 
@@ -59,20 +59,21 @@ public class RandomCraftListParser extends AbstractParser<RandomCraftListHolder>
 				boolean announce = parseBoolean(itemElement, "announce", false);
 				int stage = parseInt(itemElement, "stage", -1);
 				if(announce)//убрать
-					stage=1;
+					stage = 1;
 				long internalChance = BigDecimal.valueOf(chance).multiply(BigDecimal.valueOf(1_000_000)).setScale(0, RoundingMode.HALF_UP).longValue();
-				prob+=internalChance;
-				
-				data.add(new RandomCraftRewardData(id,count,internalChance,stage));
+				prob += internalChance;
+
+				data.add(new RandomCraftRewardData(id, count, internalChance, stage));
 				if(announce)
 					getHolder().addAnnounce(id);
 			}
 			if(slot == -1)
 			{
 				for(int i = 0; i < 5; i++)
-					getHolder().addRandomCraftInfo(i,data, prob);
-			}else
-				getHolder().addRandomCraftInfo(slot,data, prob);
+					getHolder().addRandomCraftInfo(i, data, prob);
+			}
+			else
+				getHolder().addRandomCraftInfo(slot, data, prob);
 		}
 	}
 

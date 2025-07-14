@@ -166,24 +166,21 @@ public class AutoFarm
 
 	public void setShowAutoFarmRange(boolean showAutoFarmRange)
 	{
-		if (_showAutoFarmRange == showAutoFarmRange)
+		if(_showAutoFarmRange == showAutoFarmRange)
 			return;
 		_showAutoFarmRange = showAutoFarmRange;
 		_owner.setVar(SHOW_AUTO_FARM_RANGE_VAR, showAutoFarmRange);
-		if (isFarmActivate())
+		if(isFarmActivate())
 		{
-			if (showAutoFarmRange)
+			if(showAutoFarmRange)
 			{
-				if (!isFixedFarmRange())
-				{
-				}
-				else if (_fixedFarmRangePoint != null)
-				{
-				}
+				if(!isFixedFarmRange())
+				{}
+				else if(_fixedFarmRangePoint != null)
+				{}
 			}
-			else if (!showAutoFarmRange)
-			{
-			}
+			else if(!showAutoFarmRange)
+			{}
 		}
 	}
 
@@ -199,7 +196,7 @@ public class AutoFarm
 
 	public void setTargetRaidBoss(boolean target)
 	{
-		if (_targetRaidBoss == target)
+		if(_targetRaidBoss == target)
 			return;
 		_targetRaidBoss = target;
 		_owner.setVar(TARGET_RAID_BOSS_VAR, target);
@@ -207,7 +204,7 @@ public class AutoFarm
 
 	public void setFixedFarmRange(boolean fixedFarmRange)
 	{
-		if (_fixedFarmRange == fixedFarmRange)
+		if(_fixedFarmRange == fixedFarmRange)
 			return;
 		_fixedFarmRange = fixedFarmRange;
 		_owner.setVar(FIXED_FARM_RANGE_VAR, fixedFarmRange);
@@ -216,11 +213,11 @@ public class AutoFarm
 
 	public void onMove(Location loc, boolean manual)
 	{
-		if (!isFarmActivate())
+		if(!isFarmActivate())
 			return;
-		if (isFixedFarmRange())
+		if(isFixedFarmRange())
 		{
-			if (manual)
+			if(manual)
 			{
 				updateFixedFarmRangePoint(loc);
 			}
@@ -230,13 +227,13 @@ public class AutoFarm
 	private void debugAutofarmRange(Location loc)
 	{
 		final ExServerPrimitivePacket packet = new ExServerPrimitivePacket("AutoFarmRange", loc.getX(), loc.getY(), 65535 + loc.getZ());
-		if (isFarmActivate() && isShowAutoFarmRange())
+		if(isFarmActivate() && isShowAutoFarmRange())
 		{
 			final int circleRadius = getFarmDistance();
-			for (int step = 0; step < 3; step++)
+			for(int step = 0; step < 3; step++)
 			{
 				final int z = loc.getZ() + 10 + (step * 30);
-				for (int degrees = 0; degrees < 360; degrees += 6)
+				for(int degrees = 0; degrees < 360; degrees += 6)
 				{
 					final int x1 = (int) (loc.getX() - circleRadius * Math.sin(Math.toRadians(degrees)));
 					final int y1 = (int) (loc.getY() + circleRadius * Math.cos(Math.toRadians(degrees)));
@@ -255,14 +252,14 @@ public class AutoFarm
 
 	private void updateFixedFarmRangePoint(Location loc)
 	{
-		if (isShowAutoFarmRange())
+		if(isShowAutoFarmRange())
 		{
 			debugAutofarmRange(loc);
 		}
-		if (isFixedFarmRange())
+		if(isFixedFarmRange())
 		{
 			_fixedFarmRangePoint = loc;
-			if (isFarmActivate() && isShowAutoFarmRange())
+			if(isFarmActivate() && isShowAutoFarmRange())
 			{
 				debugAutofarmRange(loc);
 			}
@@ -275,9 +272,9 @@ public class AutoFarm
 
 	private Location getFarmRangePoint()
 	{
-		if (isFixedFarmRange())
+		if(isFixedFarmRange())
 		{
-			if (_fixedFarmRangePoint == null)
+			if(_fixedFarmRangePoint == null)
 			{
 				updateFixedFarmRangePoint(_owner.getLoc());
 			}
@@ -293,17 +290,17 @@ public class AutoFarm
 
 	public void setMeleeFarmDistance(int meleeFarmDistance)
 	{
-		if (_meleeFarmDistance == meleeFarmDistance)
+		if(_meleeFarmDistance == meleeFarmDistance)
 			return;
 		_meleeFarmDistance = meleeFarmDistance;
 		_owner.setVar(MELEE_FARM_DISTANCE_VAR, meleeFarmDistance);
-		if (isFarmActivate() && isShowAutoFarmRange())
+		if(isFarmActivate() && isShowAutoFarmRange())
 		{
-			if (!isFixedFarmRange())
+			if(!isFixedFarmRange())
 			{
 				debugAutofarmRange(_owner.getLoc());
 			}
-			else if (isFixedFarmRange())
+			else if(isFixedFarmRange())
 			{
 				debugAutofarmRange(_owner.getLoc());
 			}
@@ -317,17 +314,17 @@ public class AutoFarm
 
 	public void setLongRangeFarmDistance(int longRangeFarmDistance)
 	{
-		if (_longRangeFarmDistance == longRangeFarmDistance)
+		if(_longRangeFarmDistance == longRangeFarmDistance)
 			return;
 		_longRangeFarmDistance = longRangeFarmDistance;
 		_owner.setVar(LONG_RANGE_FARM_DISTANCE_VAR, longRangeFarmDistance);
-		if (isFarmActivate() && isShowAutoFarmRange())
+		if(isFarmActivate() && isShowAutoFarmRange())
 		{
-			if (!isFixedFarmRange())
+			if(!isFixedFarmRange())
 			{
 				debugAutofarmRange(_owner.getLoc());
 			}
-			else if (isFixedFarmRange())
+			else if(isFixedFarmRange())
 			{
 				debugAutofarmRange(_owner.getLoc());
 			}
@@ -339,18 +336,18 @@ public class AutoFarm
 		_onUseLock.lock();
 		try
 		{
-			if (getTargetType() == TargetType.PAYBACK_ATTACK)
+			if(getTargetType() == TargetType.PAYBACK_ATTACK)
 			{
 				final Player player = attacker.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
 					final GameObject target = _owner.getTarget();
-					if (target == null || !target.isPlayer() && target != player)
+					if(target == null || !target.isPlayer() && target != player)
 					{
 						final Abnormal abnormal = player.getAbnormalList().getAbnormal(60002);
-						if (abnormal != null && abnormal.getLevel() >= 3)
+						if(abnormal != null && abnormal.getLevel() >= 3)
 						{
-							if (checkTargetCondition(player, TargetType.PAYBACK_ATTACK))
+							if(checkTargetCondition(player, TargetType.PAYBACK_ATTACK))
 							{
 								_owner.setTarget(player);
 							}
@@ -370,22 +367,22 @@ public class AutoFarm
 		_onUseLock.lock();
 		try
 		{
-			if (_owner.isTeleporting() || _owner.isDead())
+			if(_owner.isTeleporting() || _owner.isDead())
 			{
 				_farmActivate = false;
 				// _farmTask.cancel(false);
 				_owner.sendPacket(new ExAutoplaySetting(_owner));
 
 			}
-			if (_owner.isMounted() || _owner.isTransformed())
+			if(_owner.isMounted() || _owner.isTransformed())
 			{
 				_farmActivate = false;
 				_owner.sendPacket(new ExAutoplaySetting(_owner));
 				return;
 			}
-			if (!isFarmActivate())
+			if(!isFarmActivate())
 			{
-				if (_farmTask != null)
+				if(_farmTask != null)
 				{
 					_farmTask.cancel(false);
 					_farmTask = null;
@@ -393,22 +390,22 @@ public class AutoFarm
 				return;
 			}
 
-			if (_farmTask == null)
+			if(_farmTask == null)
 			{
 				_farmTask = ThreadPoolManager.getInstance().scheduleAtFixedDelay(this::doAutoFarm, 500L, 500L);
 			}
 
-			if (_owner.getAI().getIntention() == CtrlIntention.AI_INTENTION_PICK_UP)
+			if(_owner.getAI().getIntention() == CtrlIntention.AI_INTENTION_PICK_UP)
 				return;
 
 			GameObject target = _owner.getTarget();
-			if (!checkTargetCondition(target, getTargetType()))
+			if(!checkTargetCondition(target, getTargetType()))
 			{
 				_owner.setTarget(null);
 				target = findAutoFarmTarget();
-				if (target != null)
+				if(target != null)
 				{
-					if (target.isItem())
+					if(target.isItem())
 					{
 						_owner.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, target, null);
 						return;
@@ -417,15 +414,15 @@ public class AutoFarm
 				}
 			}
 
-			if ((target == null) || (_owner.isInPeaceZone() && !Config.AUTOFARM_IN_PEACE_ZONE))
+			if((target == null) || (_owner.isInPeaceZone() && !Config.AUTOFARM_IN_PEACE_ZONE))
 				return;
 
-			if (_owner.isInPeaceZone() && (_owner.getTarget() != null) && (!_owner.getTarget().isMonster()))
+			if(_owner.isInPeaceZone() && (_owner.getTarget() != null) && (!_owner.getTarget().isMonster()))
 				return;
 
-			if (!_owner.getAutoShortCuts().autoSkillsActive())
+			if(!_owner.getAutoShortCuts().autoSkillsActive())
 			{
-				if (!_owner.isMageClass() || _owner.getAutoShortCuts().autoAttackActive())
+				if(!_owner.isMageClass() || _owner.getAutoShortCuts().autoAttackActive())
 				{
 					_owner.sendPacket(new ExAutoplayDoMacro());
 				}
@@ -444,13 +441,14 @@ public class AutoFarm
 		{
 			final TargetType targetType = getTargetType();
 
-			if (isAutoPickUpItems())
+			if(isAutoPickUpItems())
 			{
 				final List<ItemInstance> items = World.getAroundItems(_owner, 2000, 500);
 				items.sort(_distanceComparator);
-				for (final ItemInstance item : items)
+				for(final ItemInstance item : items)
 				{
-					if (!item.isVisible() || !ItemFunctions.checkIfCanPickup(_owner, item) || (item.getDropTimeOwner() <= System.currentTimeMillis()) || !GeoEngine.canMoveToCoord(_owner, item))
+					if(!item.isVisible() || !ItemFunctions.checkIfCanPickup(_owner, item) || (item.getDropTimeOwner() <= System.currentTimeMillis())
+							|| !GeoEngine.canMoveToCoord(_owner, item))
 					{
 						continue;
 					}
@@ -459,7 +457,7 @@ public class AutoFarm
 			}
 
 			List<GameObject> targets;
-			switch (targetType)
+			switch(targetType)
 			{
 				case MONSTER:
 				case PAYBACK_ATTACK:
@@ -476,18 +474,18 @@ public class AutoFarm
 			}
 			targets.sort(_distanceComparator);
 
-			if (_owner.hasServitor() || _owner.isInParty())
+			if(_owner.hasServitor() || _owner.isInParty())
 			{
-				for (final GameObject target : targets)
+				for(final GameObject target : targets)
 				{
-					if (checkTargetCondition(target, true, targetType))
+					if(checkTargetCondition(target, true, targetType))
 						return target;
 				}
 			}
 
-			for (final GameObject target : targets)
+			for(final GameObject target : targets)
 			{
-				if (checkTargetCondition(target, false, targetType))
+				if(checkTargetCondition(target, false, targetType))
 					return target;
 			}
 		}
@@ -500,14 +498,14 @@ public class AutoFarm
 
 	private boolean checkTargetCondition(GameObject target, TargetType targetType)
 	{
-		if (target == null)
+		if(target == null)
 			return false;
 		return checkTargetCondition(target, false, targetType);
 	}
 
 	private boolean checkTargetCondition(GameObject target, boolean help, TargetType targetType)
 	{
-		if (!checkTargetCondition0(target, help, targetType))
+		if(!checkTargetCondition0(target, help, targetType))
 			return false;
 		return GeoEngine.canSeeTarget(_owner, target) && GeoEngine.canMoveToCoord(_owner, target);
 	}
@@ -517,85 +515,84 @@ public class AutoFarm
 		_onUseLock.lock();
 		try
 		{
-			if (!target.isVisible() || !target.isCreature())
+			if(!target.isVisible() || !target.isCreature())
 				return false;
 			final Creature creature = (Creature) target;
-			if (creature.isAlikeDead() || (creature.getReflectionId() != _owner.getReflectionId()))
+			if(creature.isAlikeDead() || (creature.getReflectionId() != _owner.getReflectionId()))
 				return false;
 
-			if (targetType == TargetType.PAYBACK_ATTACK && creature.isPlayer())
+			if(targetType == TargetType.PAYBACK_ATTACK && creature.isPlayer())
 			{
 				final Player player = creature.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
-					if (!player.isInRange(_owner, 5000) || (!player.isAutoAttackable(_owner) && player.getPvpFlag() <= 0) || player.isInvisible(_owner))
+					if(!player.isInRange(_owner, 5000) || (!player.isAutoAttackable(_owner) && player.getPvpFlag() <= 0) || player.isInvisible(_owner))
 						return false;
 					return true;
 				}
 			}
 
-			if (creature.isMonster())
+			if(creature.isMonster())
 			{
-				if (targetType != TargetType.ANY && targetType != TargetType.MONSTER && targetType != TargetType.PAYBACK_ATTACK)
+				if(targetType != TargetType.ANY && targetType != TargetType.MONSTER && targetType != TargetType.PAYBACK_ATTACK)
 					return false;
 				final NpcInstance npc = (NpcInstance) creature;
-				if (npc.isRaid())
+				if(npc.isRaid())
 					return false;
 				final NpcInstance leader = npc.getLeader();
-				if (leader != null && leader.isRaid())
+				if(leader != null && leader.isRaid())
 					return false;
 			}
-			else if (creature.isNpc())
+			else if(creature.isNpc())
 			{
-				if (targetType != TargetType.ANY && targetType != TargetType.NPC)
+				if(targetType != TargetType.ANY && targetType != TargetType.NPC)
 					return false;
 			}
-			else if (creature.isPlayable())
+			else if(creature.isPlayable())
 			{
-				if (targetType != TargetType.ANY && targetType != TargetType.PLAYER)
+				if(targetType != TargetType.ANY && targetType != TargetType.PLAYER)
 					return false;
 			}
 
-			if (creature.isInvulnerable())
+			if(creature.isInvulnerable())
 				return false;
 
-			if (!help)
+			if(!help)
 			{
 				final int attackRange = isMeleeAttackMode() ? 600 : 1200;
-				if (!creature.isInRange(_owner, attackRange))
+				if(!creature.isInRange(_owner, attackRange))
 					return false;
 			}
-			if (!creature.isAutoAttackable(_owner) || creature.isInvisible(_owner))
+			if(!creature.isAutoAttackable(_owner) || creature.isInvisible(_owner))
 				return false;
 
-			final Creature[] npcTargets = new Creature[]
-			{
-				creature.getAI().getAttackTarget(),
-				creature.getAI().getCastTarget()
+			final Creature[] npcTargets = new Creature[] {
+					creature.getAI().getAttackTarget(),
+					creature.getAI().getCastTarget()
 			};
-			if (creature.isInCombat())
+			if(creature.isInCombat())
 			{
-				for (final Creature attackTarget : npcTargets)
+				for(final Creature attackTarget : npcTargets)
 				{
-					if (attackTarget != null)
+					if(attackTarget != null)
 					{
-						if ((!help && attackTarget == _owner) || _owner.isMyServitor(attackTarget.getObjectId()))
+						if((!help && attackTarget == _owner) || _owner.isMyServitor(attackTarget.getObjectId()))
 							return true;
 						final Player attackTargetPlayer = attackTarget.getPlayer();
-						if (attackTargetPlayer != null && _owner.isInSameParty(attackTargetPlayer))
+						if(attackTargetPlayer != null && _owner.isInSameParty(attackTargetPlayer))
 							return true;
 					}
 				}
 			}
 
-			if (help)
+			if(help)
 				return false;
 
-			if (isPoliteFarm() && creature.isInCombat())
+			if(isPoliteFarm() && creature.isInCombat())
 			{ // Вежливая охота
-				for (final Creature attackTarget : npcTargets)
+				for(final Creature attackTarget : npcTargets)
 				{
-					if (attackTarget != null && attackTarget.isPlayable())
+					if(attackTarget != null && attackTarget.isPlayable())
 						return false;
 				}
 			}

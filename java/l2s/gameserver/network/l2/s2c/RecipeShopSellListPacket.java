@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.stats.Stats;
@@ -34,7 +34,7 @@ public class RecipeShopSellListPacket implements IClientOutgoingPacket
 		packetWriter.writeD(maxMp);// Creator's MP
 		packetWriter.writeQ(adena);
 		packetWriter.writeD(createList.size());
-		for (ManufactureItem mi : createList)
+		for(ManufactureItem mi : createList)
 		{
 			packetWriter.writeD(mi.getRecipeId());
 			packetWriter.writeD(0x00); // Can craft

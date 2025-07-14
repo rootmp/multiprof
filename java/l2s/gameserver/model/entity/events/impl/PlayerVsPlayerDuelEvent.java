@@ -34,7 +34,7 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 		@Override
 		public void onAttack(Creature actor, Creature target)
 		{
-			if (!actor.containsEvent(PlayerVsPlayerDuelEvent.this) || !target.containsEvent(PlayerVsPlayerDuelEvent.this))
+			if(!actor.containsEvent(PlayerVsPlayerDuelEvent.this) || !target.containsEvent(PlayerVsPlayerDuelEvent.this))
 				stopEvent(false);
 		}
 
@@ -52,18 +52,18 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 
 		private void checkMoveZone(Creature actor)
 		{
-			if (actor.isInZoneBattle() || actor.isInPeaceZone() || actor.isInWater() || actor.isInSiegeZone() || actor.isInZone(Zone.ZoneType.no_restart)) // TODO:
-																																							// Проверить
-																																							// условия
-																																							// на
-																																							// оффе.
+			if(actor.isInZoneBattle() || actor.isInPeaceZone() || actor.isInWater() || actor.isInSiegeZone() || actor.isInZone(Zone.ZoneType.no_restart)) // TODO:
+				// Проверить
+				// условия
+				// на
+				// оффе.
 				stopEvent(false);
 			else
 			{
-				for (DuelSnapshotObject d : PlayerVsPlayerDuelEvent.this)
+				for(DuelSnapshotObject d : PlayerVsPlayerDuelEvent.this)
 				{
 					Player player = d.getPlayer();
-					if (player != actor && !actor.isInRangeZ(player, 1200))
+					if(player != actor && !actor.isInRangeZ(player, 1200))
 						stopEvent(false);
 				}
 			}
@@ -85,14 +85,14 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 	@Override
 	public void onAddEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 			o.getPlayer().addListener(_duelListeners);
 	}
 
 	@Override
 	public void onRemoveEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 			o.getPlayer().removeListener(_duelListeners);
 	}
 
@@ -100,14 +100,14 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 	public boolean canDuel(Player player, Player target, boolean first)
 	{
 		IBroadcastPacket sm = canDuel0(player, target, false);
-		if (sm != null)
+		if(sm != null)
 		{
 			player.sendPacket(sm);
 			return false;
 		}
 
 		sm = canDuel0(target, player, false);
-		if (sm != null)
+		if(sm != null)
 		{
 			player.sendPacket(SystemMsg.YOU_ARE_UNABLE_TO_REQUEST_A_DUEL_AT_THIS_TIME);
 			return false;
@@ -145,7 +145,7 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 	@Override
 	public void stopEvent(boolean force)
 	{
-		if (!_isInProgress)
+		if(!_isInProgress)
 			return;
 
 		_isInProgress = false;
@@ -154,17 +154,17 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 
 		updatePlayers(false, false);
 
-		for (DuelSnapshotObject d : this)
+		for(DuelSnapshotObject d : this)
 		{
 			d.blockUnblock();
 
 			d.getPlayer().sendPacket(new ExDuelEnd(this));
 			GameObject target = d.getPlayer().getTarget();
-			if (target != null)
+			if(target != null)
 				d.getPlayer().getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, target);
 		}
 
-		switch (_winner)
+		switch(_winner)
 		{
 			case NONE:
 				sendPacket(SystemMsg.THE_DUEL_HAS_ENDED_IN_A_TIE);
@@ -174,10 +174,10 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 				List<DuelSnapshotObject> winners = getObjects(_winner);
 				List<DuelSnapshotObject> lossers = getObjects(_winner.revert());
 
-				if (winners != null && !winners.isEmpty())
+				if(winners != null && !winners.isEmpty())
 					sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_WON_THE_DUEL).addName(winners.get(0).getPlayer()));
 
-				for (DuelSnapshotObject d : lossers)
+				for(DuelSnapshotObject d : lossers)
 					d.getPlayer().broadcastPacket(new SocialActionPacket(d.getPlayer().getObjectId(), SocialActionPacket.BOW));
 				break;
 		}
@@ -190,7 +190,7 @@ public class PlayerVsPlayerDuelEvent extends DuelEvent
 	public void onDie(Player player)
 	{
 		TeamType team = player.getTeam();
-		if (team == TeamType.NONE || _aborted)
+		if(team == TeamType.NONE || _aborted)
 			return;
 
 		playerLost(player);

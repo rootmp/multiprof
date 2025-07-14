@@ -19,7 +19,7 @@ public class p_defence_trait extends EffectHandler
 		super(template);
 
 		String traitName = getTemplate().getParams().getString("type").toUpperCase();
-		if (traitName.startsWith("TRAIT_"))
+		if(traitName.startsWith("TRAIT_"))
 			traitName = traitName.substring(6).trim();
 		_type = SkillTrait.valueOf(traitName);
 		_power = ((double) getTemplate().getParams().getInteger("power") + 100.) / 100.;
@@ -28,7 +28,7 @@ public class p_defence_trait extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (_power == 1.)
+		if(_power == 1.)
 			return;
 
 		/*
@@ -43,7 +43,7 @@ public class p_defence_trait extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (_power == 1.)
+		if(_power == 1.)
 			return;
 
 		/*

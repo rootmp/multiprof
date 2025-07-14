@@ -7,7 +7,7 @@ public class RelicsCollection
 	public int nCollectionID;
 	public byte bComplete;
 	public List<CollectionRelicsInfo> relicsList;
-	
+
 	public RelicsCollection(int nCollectionID, byte bComplete, List<CollectionRelicsInfo> relicsList)
 	{
 		this.nCollectionID = nCollectionID;

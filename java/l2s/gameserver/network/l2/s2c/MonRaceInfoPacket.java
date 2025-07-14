@@ -28,7 +28,7 @@ public class MonRaceInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_unknown1);
 		packetWriter.writeD(_unknown2);
 		packetWriter.writeD(8);
-		for (int i = 0; i < 8; i++)
+		for(int i = 0; i < 8; i++)
 		{
 			packetWriter.writeD(_monsters[i].getObjectId()); // npcObjectID
 			packetWriter.writeD(_monsters[i].getNpcId() + 1000000); // npcID
@@ -41,9 +41,9 @@ public class MonRaceInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeF(_monsters[i].getCurrentCollisionHeight()); // coll. height
 			packetWriter.writeF(_monsters[i].getCurrentCollisionRadius()); // coll. radius
 			packetWriter.writeD(120); // ?? unknown
-			for (int j = 0; j < 20; j++)
+			for(int j = 0; j < 20; j++)
 			{
-				if (_unknown1 == 0)
+				if(_unknown1 == 0)
 				{
 					packetWriter.writeC(_speeds[i][j]);
 				}

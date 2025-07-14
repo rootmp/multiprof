@@ -2,13 +2,12 @@ package l2s.gameserver.data.xml.holder;
 
 import java.util.Collection;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.commons.lang.ArrayUtils;
-import l2s.gameserver.templates.item.ItemTemplate;
-
 import gnu.trove.iterator.TIntObjectIterator;
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.commons.lang.ArrayUtils;
+import l2s.gameserver.templates.item.ItemTemplate;
 
 public final class ItemHolder extends AbstractHolder
 {
@@ -36,13 +35,13 @@ public final class ItemHolder extends AbstractHolder
 	{
 		int highestId = 0;
 
-		for (int id : _items.keys())
-			if (id > highestId)
+		for(int id : _items.keys())
+			if(id > highestId)
 				highestId = id;
 
 		_allTemplates = new ItemTemplate[highestId + 1];
 
-		for (TIntObjectIterator<ItemTemplate> iterator = _items.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<ItemTemplate> iterator = _items.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			_allTemplates[iterator.key()] = iterator.value();
@@ -57,7 +56,7 @@ public final class ItemHolder extends AbstractHolder
 	public ItemTemplate getTemplate(int id)
 	{
 		ItemTemplate item = ArrayUtils.valid(_allTemplates, id);
-		if (item == null)
+		if(item == null)
 		{
 			warn("Not defined item id : " + id + ", or out of range!", new Exception());
 			return null;
@@ -90,7 +89,7 @@ public final class ItemHolder extends AbstractHolder
 
 	public void callInit()
 	{
-		for (ItemTemplate itemTemplate : getAllTemplates())
+		for(ItemTemplate itemTemplate : getAllTemplates())
 			itemTemplate.init();
 	}
 }

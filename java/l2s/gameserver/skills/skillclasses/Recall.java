@@ -31,7 +31,7 @@ public class Recall extends Skill
 		_castle = set.getBool("castle", false);
 		_toflag = set.getBool("to_flag", false);
 		String cords = set.getString("loc", null);
-		if (cords != null)
+		if(cords != null)
 			_loc = Location.parseLoc(cords);
 		else
 			_loc = null;
@@ -40,24 +40,24 @@ public class Recall extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
 		// BSOE в кланхолл/замок работает только при наличии оного
-		if (getHitTime() == 200)
+		if(getHitTime() == 200)
 		{
 			Player player = activeChar.getPlayer();
-			if (_clanhall)
+			if(_clanhall)
 			{
-				if (player.getClan() == null || player.getClan().getHasHideout() == 0)
+				if(player.getClan() == null || player.getClan().getHasHideout() == 0)
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
 				}
 			}
-			else if (_castle)
+			else if(_castle)
 			{
-				if (player.getClan() == null || player.getClan().getCastle() == 0)
+				if(player.getClan() == null || player.getClan().getCastle() == 0)
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
@@ -65,37 +65,37 @@ public class Recall extends Skill
 			}
 		}
 
-		if (activeChar.isPlayer())
+		if(activeChar.isPlayer())
 		{
 			Player p = (Player) activeChar;
-			if (_toflag && p.bookmarkLocation == null)
+			if(_toflag && p.bookmarkLocation == null)
 				return false;
 
-			if (p.getActiveWeaponFlagAttachment() != null)
+			if(p.getActiveWeaponFlagAttachment() != null)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_TELEPORT_WHILE_IN_POSSESSION_OF_A_WARD);
 				return false;
 			}
-			if (!p.isInDuel() && p.getTeam() != TeamType.NONE)
+			if(!p.isInDuel() && p.getTeam() != TeamType.NONE)
 			{
 				activeChar.sendMessage(new CustomMessage("common.RecallInDuel"));
 				return false;
 			}
-			if (p.isInOlympiadMode())
+			if(p.isInOlympiadMode())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_USE_THAT_SKILL_IN_A_GRAND_OLYMPIAD_MATCH);
 				return false;
 			}
-			if (p.isInFightClub())
+			if(p.isInFightClub())
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_TARGET_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING);
 				return false;
 			}
-			for (Event e : p.getEvents())
+			for(Event e : p.getEvents())
 			{
-				if (!e.canUseTeleport(p))
+				if(!e.canUseTeleport(p))
 				{
-					if (getItemConsumeId() > 0)
+					if(getItemConsumeId() > 0)
 						activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					else
 						activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
@@ -103,9 +103,9 @@ public class Recall extends Skill
 				}
 			}
 
-			if (p.isEscapeBlocked())
+			if(p.isEscapeBlocked())
 			{
-				if (getItemConsumeId() > 0)
+				if(getItemConsumeId() > 0)
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 				else
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
@@ -113,9 +113,10 @@ public class Recall extends Skill
 			}
 		}
 
-		if (activeChar.isInZone(ZoneType.no_escape) || _townId > 0 && activeChar.getReflection() != null && activeChar.getReflection().getCoreLoc() != null)
+		if(activeChar.isInZone(ZoneType.no_escape)
+				|| _townId > 0 && activeChar.getReflection() != null && activeChar.getReflection().getCoreLoc() != null)
 		{
-			if (activeChar.isPlayer())
+			if(activeChar.isPlayer())
 				activeChar.sendMessage(new CustomMessage("l2s.gameserver.skills.skillclasses.Recall.Here"));
 			return false;
 		}
@@ -126,91 +127,91 @@ public class Recall extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 			return;
 
 		final Player player = target.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (!player.getPlayerAccess().UseTeleport)
+		if(!player.getPlayerAccess().UseTeleport)
 			return;
 
-		if (player.isInRange(new Location(-114598, -249431, -2984), 5000))
+		if(player.isInRange(new Location(-114598, -249431, -2984), 5000))
 			return;
 
-		if (player.getActiveWeaponFlagAttachment() != null)
+		if(player.getActiveWeaponFlagAttachment() != null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TELEPORT_WHILE_IN_POSSESSION_OF_A_WARD);
 			return;
 		}
 
-		if (player.isInOlympiadMode())
+		if(player.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_SUMMON_PLAYERS_WHO_ARE_CURRENTLY_PARTICIPATING_IN_THE_GRAND_OLYMPIAD);
 			return;
 		}
 
-		if (player.isInObserverMode())
+		if(player.isInObserverMode())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return;
 		}
 
-		if (player.isInFightClub())
+		if(player.isInFightClub())
 		{
 			activeChar.sendMessage("Cannot do that while target is in Fight Club!");
 			return;
 		}
 
-		for (Event e : player.getEvents())
+		for(Event e : player.getEvents())
 		{
-			if (!e.canUseTeleport(player))
+			if(!e.canUseTeleport(player))
 			{
 				activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 				return;
 			}
 		}
 
-		if (!player.isInDuel() && player.getTeam() != TeamType.NONE)
+		if(!player.isInDuel() && player.getTeam() != TeamType.NONE)
 		{
 			activeChar.sendMessage(new CustomMessage("common.RecallInDuel"));
 			return;
 		}
 
-		if (isHandler())
+		if(isHandler())
 		{
 			// TODO: переделать SOE по TownId на SOE по Loc_id
-			if (getItemConsumeId() == 7127) // hardin's academy
+			if(getItemConsumeId() == 7127) // hardin's academy
 			{
 				player.teleToLocation(105918, 109759, -3207, ReflectionManager.MAIN);
 				return;
 			}
-			if (getItemConsumeId() == 7130) // ivory
+			if(getItemConsumeId() == 7130) // ivory
 			{
 				player.teleToLocation(85475, 16087, -3672, ReflectionManager.MAIN);
 				return;
 			}
-			if (getItemConsumeId() == 7618)
+			if(getItemConsumeId() == 7618)
 			{
 				player.teleToLocation(149864, -81062, -5618, ReflectionManager.MAIN);
 				return;
 			}
-			if (getItemConsumeId() == 7619)
+			if(getItemConsumeId() == 7619)
 			{
 				player.teleToLocation(108275, -53785, -2524, ReflectionManager.MAIN);
 				return;
 			}
 		}
 
-		if (_loc != null)
+		if(_loc != null)
 		{
 			player.teleToLocation(_loc, ReflectionManager.MAIN);
 			return;
 		}
 
 		// FIXME [G1ta0] перенести координаты в скиллы
-		switch (_townId)
+		switch(_townId)
 		// To town by Id
 		{
 			case 1: // Talking Island
@@ -254,22 +255,22 @@ public class Recall extends Skill
 				return;
 		}
 
-		if (_castle) // To castle
+		if(_castle) // To castle
 		{
 			player.teleToCastle();
 			return;
 		}
 
-		if (_clanhall) // to clanhall
+		if(_clanhall) // to clanhall
 		{
 			player.teleToClanhall();
 			return;
 		}
 
-		if (_toflag)
+		if(_toflag)
 		{
 			Location loc = Rnd.get(player.bookmarkLocation.getLocations());
-			
+
 			player.teleToLocation(loc, ReflectionManager.MAIN);
 			player.bookmarkLocation = null;
 			return;

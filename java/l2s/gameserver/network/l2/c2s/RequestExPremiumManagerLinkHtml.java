@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,13 +27,14 @@ public class RequestExPremiumManagerLinkHtml implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		ValidBypass bp = player.getBypassStorage().validate(_link);
-		if (bp == null)
+		if(bp == null)
 		{
-			LOGGER.warn("RequestExPremiumManagerLinkHtml: Unexpected link : " + _link + " from player " + player.getName() + " at location " + player.getLoc() + "!");
+			LOGGER.warn("RequestExPremiumManagerLinkHtml: Unexpected link : " + _link + " from player " + player.getName() + " at location "
+					+ player.getLoc() + "!");
 			return;
 		}
 
@@ -40,13 +42,13 @@ public class RequestExPremiumManagerLinkHtml implements IClientIncomingPacket
 		int itemId = 0;
 
 		String[] params = link.split(".htm#");
-		if (params.length >= 2)
+		if(params.length >= 2)
 		{
 			link = params[0] + ".htm";
 			itemId = !Util.isDigit(params[1]) ? -1 : Integer.parseInt(params[1]);
 		}
 
-		if (link.contains("..") || !link.endsWith(".htm") || itemId == -1)
+		if(link.contains("..") || !link.endsWith(".htm") || itemId == -1)
 		{
 			LOGGER.warn("RequestExPremiumManagerLinkHtml: hack? link contains prohibited characters: '" + link + "'!");
 			return;

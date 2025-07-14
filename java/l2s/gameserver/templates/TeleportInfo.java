@@ -41,7 +41,7 @@ public class TeleportInfo
 
 	public long getPrice(Player player)
 	{
-		if (player == null || !player.hasPremiumAccount())
+		if(player == null || !player.hasPremiumAccount())
 			return price;
 		return (long) (price * .5);
 	}

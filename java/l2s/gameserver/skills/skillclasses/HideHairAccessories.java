@@ -23,18 +23,18 @@ public class HideHairAccessories extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		final Inventory inventory = activeChar.getPlayer().getInventory();
 		ItemInstance item = inventory.getPaperdollItem(Inventory.PAPERDOLL_HAIR);
-		if (item == null)
+		if(item == null)
 			item = inventory.getPaperdollItem(Inventory.PAPERDOLL_DHAIR);
 
-		if (item == null)
+		if(item == null)
 		{
 			activeChar.sendPacket(SystemMsg.PLEASE_EQUIP_THE_HAIR_ACCESSORY_AND_TRY_AGAIN);
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
@@ -48,13 +48,13 @@ public class HideHairAccessories extends Skill
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
 		Player player = target.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		player.setHideHeadAccessories(!player.hideHeadAccessories());
 		player.sendUserInfo(true);
 
-		if (player.hideHeadAccessories())
+		if(player.hideHeadAccessories())
 			player.sendPacket(SystemMsg.HAIR_ACCESSORIES_WILL_NO_LONGER_BE_DISPLAYED);
 		else
 			player.sendPacket(SystemMsg.HAIR_ACCESSORIES_WILL_BE_DISPLAYED_FROM_NOW_ON);

@@ -56,7 +56,7 @@ public class FightClubGameRoom
 		_map = Rnd.get(FightClubMapHolder.getInstance().getMapsForEvent(eventName));
 		_roomMaxPlayers = _map.getMaxAllPlayers();
 
-		if (event.isTeamed())
+		if(event.isTeamed())
 		{
 			_teamsCount = Rnd.get(_map.getTeamCount()); // += ?
 		}
@@ -126,11 +126,11 @@ public class FightClubGameRoom
 	public static PlayerClass getPlayerClassGroup(Player player)
 	{
 		PlayerClass classType = null;
-		for (PlayerClass iClassType : PlayerClass.values())
+		for(PlayerClass iClassType : PlayerClass.values())
 		{
-			for (ClassId id : iClassType.getClasses())
+			for(ClassId id : iClassType.getClasses())
 			{
-				if (id == player.getClassId())
+				if(id == player.getClassId())
 				{
 					classType = iClassType;
 				}

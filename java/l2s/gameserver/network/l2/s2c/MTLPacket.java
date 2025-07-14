@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.utils.Log;
@@ -17,7 +17,7 @@ public class MTLPacket implements IClientOutgoingPacket
 		_current = cha.getLoc();
 		_destination = cha.getMovement().getDestination();
 
-		if (_destination == null)
+		if(_destination == null)
 		{
 			Log.debug("MTLPacket: desc is null, but moving. L2Character: " + cha.getObjectId() + ":" + cha.getName() + "; Loc: " + _current);
 			_destination = _current;

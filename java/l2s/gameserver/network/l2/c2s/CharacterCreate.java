@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,33 +62,34 @@ public class CharacterCreate implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		ClassId cid = ClassId.valueOf(_classId);
-		if (cid == null || !cid.isOfLevel(ClassLevel.NONE))
+		if(cid == null || !cid.isOfLevel(ClassLevel.NONE))
 			return;
 
-		if (!Util.isMatchingRegexp(_name, Config.CNAME_TEMPLATE))
+		if(!Util.isMatchingRegexp(_name, Config.CNAME_TEMPLATE))
 			return;
 
-		if (CharacterDAO.getInstance().getObjectIdByName(_name) > 0)
+		if(CharacterDAO.getInstance().getObjectIdByName(_name) > 0)
 			return;
 
-		if (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0 && CharacterDAO.getInstance().accountCharNumber(client.getLogin()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT)
+		if(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0
+				&& CharacterDAO.getInstance().accountCharNumber(client.getLogin()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT)
 			return;
 
-		if (_face > 2 || _face < 0)
+		if(_face > 2 || _face < 0)
 		{
 			_log.warn("Character Creation Failure: Character face " + _face + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		if (_hairStyle < 0 || (_sex == 0 && _hairStyle > 4) || (_sex != 0 && _hairStyle > 6))
+		if(_hairStyle < 0 || (_sex == 0 && _hairStyle > 4) || (_sex != 0 && _hairStyle > 6))
 		{
 			_log.warn("Character Creation Failure: Character hair style " + _hairStyle + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		if (_hairColor > 3 || _hairColor < 0)
+		if(_hairColor > 3 || _hairColor < 0)
 		{
 			_log.warn("Character Creation Failure: Character hair color " + _hairColor + " is invalid. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
@@ -95,14 +97,14 @@ public class CharacterCreate implements IClientIncomingPacket
 		}
 
 		Player newChar = Player.create(client.getHwidHolder(), _classId, _sex, client.getLogin(), _name, _hairStyle, _hairColor, _face);
-		if (newChar == null)
+		if(newChar == null)
 		{
 			_log.warn("Character Creation Failure: Player.create returned null. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
 			return;
 		}
 
-		if (!initNewChar(newChar))
+		if(!initNewChar(newChar))
 		{
 			_log.warn("Character Creation Failure: Could not init new char. Possible client hack. " + client);
 			client.sendPacket(CharacterCreateFailPacket.REASON_CREATION_FAILED);
@@ -119,13 +121,13 @@ public class CharacterCreate implements IClientIncomingPacket
 
 	public static boolean initNewChar(Player newChar)
 	{
-		if (!newChar.getSubClassList().restore())
+		if(!newChar.getSubClassList().restore())
 			return false;
 
 		PlayerTemplate template = newChar.getTemplate();
 		newChar.setLoc(template.getStartLocation());
 
-		if (Config.CHAR_TITLE)
+		if(Config.CHAR_TITLE)
 			newChar.setTitle(Config.ADD_CHAR_TITLE);
 		else
 			newChar.setTitle("");
@@ -133,45 +135,45 @@ public class CharacterCreate implements IClientIncomingPacket
 		newChar.setCurrentHpMp(newChar.getMaxHp(), newChar.getMaxMp());
 		newChar.setCurrentCp(0); // retail
 
-		for (StartItem i : template.getStartItems())
+		for(StartItem i : template.getStartItems())
 		{
 			ItemInstance item = ItemFunctions.createItem(i.getId());
-			if (i.getEnchantLevel() > 0)
+			if(i.getEnchantLevel() > 0)
 				item.setEnchantLevel(i.getEnchantLevel());
 
 			long count = i.getCount();
-			if (item.isStackable())
+			if(item.isStackable())
 			{
 				item.setCount(count);
 				newChar.getInventory().addItem(item);
 			}
 			else
 			{
-				for (long n = 0; n < count; n++)
+				for(long n = 0; n < count; n++)
 				{
 					item = ItemFunctions.createItem(i.getId());
-					if (i.getEnchantLevel() > 0)
+					if(i.getEnchantLevel() > 0)
 						item.setEnchantLevel(i.getEnchantLevel());
 					newChar.getInventory().addItem(item);
 				}
-				if (item.isEquipable() && i.isEquiped())
+				if(item.isEquipable() && i.isEquiped())
 					newChar.getInventory().equipItem(item);
 			}
 		}
 
-		for (ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_CREATE))
+		for(ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_CREATE))
 			hook.onPlayerCreate(newChar);
 
 		newChar.rewardSkills(false, false, false, true);
 
 		Map<Integer, Integer> initedMacroses = new HashMap<>();
 
-		for (Macro macro : InitialShortCutsHolder.getInstance().getInitialMacroses())
+		for(Macro macro : InitialShortCutsHolder.getInstance().getInitialMacroses())
 		{
-			if (!macro.isEnabled())
+			if(!macro.isEnabled())
 				continue;
 
-			if (newChar.getMacroses().getAllMacroses().length > 48)
+			if(newChar.getMacroses().getAllMacroses().length > 48)
 			{
 				_log.warn("Character Initial Macro Failure: Cannot register more than 48 macros.");
 				break;
@@ -182,12 +184,12 @@ public class CharacterCreate implements IClientIncomingPacket
 			initedMacroses.put(macro.getId(), newMacro.getId());
 		}
 
-		for (ShortCut shortCut : InitialShortCutsHolder.getInstance().getInitialShortCuts(newChar.getRace(), newChar.getClassId().getType()))
+		for(ShortCut shortCut : InitialShortCutsHolder.getInstance().getInitialShortCuts(newChar.getRace(), newChar.getClassId().getType()))
 		{
-			if (shortCut.getType() == ShortCut.ShortCutType.MACRO)
+			if(shortCut.getType() == ShortCut.ShortCutType.MACRO)
 			{
 				Integer initedMacroId = initedMacroses.get(shortCut.getId());
-				if (initedMacroId != null)
+				if(initedMacroId != null)
 					newChar.registerShortCut(new ShortCut(shortCut.getSlot(), shortCut.getPage(), shortCut.getAutoUse(), shortCut.getType(), initedMacroId, 0, 1));
 				continue;
 			}

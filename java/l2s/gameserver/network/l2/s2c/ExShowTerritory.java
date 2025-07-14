@@ -23,7 +23,7 @@ public class ExShowTerritory implements IClientOutgoingPacket
 		packetWriter.writeD(points.length);
 		packetWriter.writeD(_shape.getZmin());
 		packetWriter.writeD(_shape.getZmax());
-		for (Point2D point : points)
+		for(Point2D point : points)
 		{
 			packetWriter.writeD(point.getX());
 			packetWriter.writeD(point.getY());

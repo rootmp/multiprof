@@ -14,21 +14,17 @@ public class RequestExCraftRandomInfo implements IClientIncomingPacket
 	{
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client) throws Exception
 	{
-		if (!Config.RANDOM_CRAFT_SYSTEM_ENABLED)
-		{
-			return;
-		}
-		
+		if(!Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		{ return; }
+
 		final Player player = client.getActiveChar();
-		if (player == null)
-		{
-			return;
-		}
-		
+		if(player == null)
+		{ return; }
+
 		player.sendPacket(new ExCraftRandomInfo(player));
 	}
 }

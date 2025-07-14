@@ -17,7 +17,7 @@ public class ClanSearchQueries
 	public static String getAddWaitingPlayerQuery(int waiterCount)
 	{
 		StringBuilder query = new StringBuilder("INSERT IGNORE INTO `clan_search_waiting_players` VALUES (?, ?, ?, ?, ?, UNIX_TIMESTAMP())");
-		for (int i = 0; i < waiterCount - 1; i++)
+		for(int i = 0; i < waiterCount - 1; i++)
 		{
 			query.append(", (?, ?, ?, ?, ?, UNIX_TIMESTAMP())");
 		}
@@ -27,7 +27,7 @@ public class ClanSearchQueries
 	public static String getAddApplicantPlayerQuery(int applicantCount)
 	{
 		StringBuilder query = new StringBuilder("INSERT IGNORE INTO `clan_search_clan_applicants` VALUES (?, ?, ?, ?, ?, ?, ?, UNIX_TIMESTAMP())");
-		for (int i = 0; i < applicantCount - 1; i++)
+		for(int i = 0; i < applicantCount - 1; i++)
 		{
 			query.append(", (?, ?, ?, ?, ?, ?, ?, UNIX_TIMESTAMP())");
 		}
@@ -37,7 +37,7 @@ public class ClanSearchQueries
 	public static String getRemoveClanQuery(int clanCount)
 	{
 		StringBuilder query = new StringBuilder("DELETE FROM `clan_search_registered_clans` WHERE `clan_id` IN (?");
-		for (int i = 0; i < clanCount - 1; i++)
+		for(int i = 0; i < clanCount - 1; i++)
 		{
 			query.append(", ?");
 		}
@@ -48,7 +48,7 @@ public class ClanSearchQueries
 	public static String getRemoveClanApplicants(int clanCount)
 	{
 		StringBuilder query = new StringBuilder("DELETE FROM `clan_search_clan_applicants` WHERE `preffered_clan_id` IN (?");
-		for (int i = 0; i < clanCount - 1; i++)
+		for(int i = 0; i < clanCount - 1; i++)
 		{
 			query.append(", ?");
 		}
@@ -59,7 +59,7 @@ public class ClanSearchQueries
 	public static String getRemoveWaiterQuery(int waiterCount)
 	{
 		StringBuilder query = new StringBuilder("DELETE FROM `clan_search_waiting_players` WHERE `char_id` IN (?");
-		for (int i = 0; i < waiterCount - 1; i++)
+		for(int i = 0; i < waiterCount - 1; i++)
 		{
 			query.append(", ?");
 		}
@@ -70,7 +70,7 @@ public class ClanSearchQueries
 	public static String getRemoveApplicantQuery(int applicantCount)
 	{
 		StringBuilder query = new StringBuilder("DELETE FROM `clan_search_clan_applicants` WHERE `char_id` IN (?");
-		for (int i = 0; i < applicantCount - 1; i++)
+		for(int i = 0; i < applicantCount - 1; i++)
 		{
 			query.append(", ?");
 		}

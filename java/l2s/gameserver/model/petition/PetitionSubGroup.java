@@ -21,7 +21,7 @@ public class PetitionSubGroup extends PetitionGroup
 		{
 			_handler = (IPetitionHandler) clazz.getDeclaredConstructor().newInstance();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			throw new Error(e);
 		}

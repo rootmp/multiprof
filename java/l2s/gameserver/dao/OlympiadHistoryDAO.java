@@ -50,7 +50,7 @@ public class OlympiadHistoryDAO
 			map.put(Boolean.TRUE, new ArrayList<OlympiadHistory>());
 			map.put(Boolean.FALSE, new ArrayList<OlympiadHistory>());
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int objectId1 = rset.getInt("object_id_1");
 				int objectId2 = rset.getInt("object_id_2");
@@ -68,7 +68,7 @@ public class OlympiadHistoryDAO
 				map.get(old).add(history);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			map = Collections.emptyMap();
 			_log.error("OlympiadHistoryDAO: select(): " + e, e);
@@ -101,7 +101,7 @@ public class OlympiadHistoryDAO
 			statement.setInt(11, 0);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("OlympiadHistoryDAO: insert(OlympiadHistory): " + e, e);
 		}
@@ -124,7 +124,7 @@ public class OlympiadHistoryDAO
 			statement = con.createStatement();
 			statement.execute(UPDATE_SQL_QUERY);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("OlympiadHistoryDAO: select(): " + e, e);
 		}

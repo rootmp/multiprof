@@ -25,7 +25,7 @@ public class GMViewSkillInfoPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_charName);
 		packetWriter.writeD(_skills.size());
-		for (SkillEntry skillEntry : _skills)
+		for(SkillEntry skillEntry : _skills)
 		{
 			Skill temp = skillEntry.getTemplate();
 			packetWriter.writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется

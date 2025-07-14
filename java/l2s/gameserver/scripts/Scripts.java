@@ -53,36 +53,34 @@ public class Scripts
 		LOGGER.info("Scripts: Loading...");
 
 		final List<Class<?>> classes = load(new File(Config.DATAPACK_ROOT, "data/scripts"));
-		if (classes.isEmpty())
-		{
-			throw new Error("Failed loading scripts!");
-		}
+		if(classes.isEmpty())
+		{ throw new Error("Failed loading scripts!"); }
 
-		for (Class<?> clazz : classes)
+		for(Class<?> clazz : classes)
 		{
 			_classes.put(clazz.getName(), clazz);
 		}
 
 		LOGGER.info("Scripts: Loaded {} classes.", _classes.size());
-		for (Class<?> clazz : _classes.values())
+		for(Class<?> clazz : _classes.values())
 		{
 			try
 			{
 				Object o = getClassInstance(clazz);
-				if (ClassUtils.isAssignable(clazz, OnLoadScriptListener.class))
+				if(ClassUtils.isAssignable(clazz, OnLoadScriptListener.class))
 				{
-					if (o == null)
+					if(o == null)
 						o = clazz.getDeclaredConstructor().newInstance();
 
 					_listeners.add((OnLoadScriptListener) o);
 				}
 
-				for (Method method : clazz.getMethods())
+				for(Method method : clazz.getMethods())
 				{
-					if (method.isAnnotationPresent(OnScriptLoad.class))
+					if(method.isAnnotationPresent(OnScriptLoad.class))
 					{
 						Class<?>[] par = method.getParameterTypes();
-						if (par.length != 0)
+						if(par.length != 0)
 						{
 							LOGGER.error("Wrong parameters for load method: {}, class: {}", method.getName(), clazz.getSimpleName());
 							continue;
@@ -90,27 +88,27 @@ public class Scripts
 
 						try
 						{
-							if (Modifier.isStatic(method.getModifiers()))
+							if(Modifier.isStatic(method.getModifiers()))
 							{
 								method.invoke(clazz);
 							}
 							else
 							{
-								if (o == null)
+								if(o == null)
 								{
 									o = clazz.getDeclaredConstructor().newInstance();
 								}
 								method.invoke(o);
 							}
 						}
-						catch (Exception e)
+						catch(Exception e)
 						{
 							LOGGER.error("Exception: {}", e);
 						}
 					}
 				}
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				LOGGER.error("", e);
 			}
@@ -121,7 +119,7 @@ public class Scripts
 
 	public void init()
 	{
-		for (Class<?> clazz : _classes.values())
+		for(Class<?> clazz : _classes.values())
 		{
 			init(clazz);
 		}
@@ -134,27 +132,25 @@ public class Scripts
 		final List<Class<?>> classes = new ArrayList<Class<?>>();
 		final Compiler compiler = new Compiler();
 
-		if (target.isFile())
+		if(target.isFile())
 		{
 			scriptFiles = new ArrayList<File>(1);
 			scriptFiles.add(target);
 		}
-		else if (target.isDirectory())
+		else if(target.isDirectory())
 		{
 			scriptFiles = FileUtils.listFiles(target, FileFilterUtils.suffixFileFilter(".java"), FileFilterUtils.directoryFileFilter());
 		}
 
-		if (scriptFiles.isEmpty())
-		{
-			return Collections.emptyList();
-		}
+		if(scriptFiles.isEmpty())
+		{ return Collections.emptyList(); }
 
-		if (compiler.compile(scriptFiles))
+		if(compiler.compile(scriptFiles))
 		{
 			MemoryClassLoader classLoader = compiler.getClassLoader();
-			for (String name : classLoader.getLoadedClasses())
+			for(String name : classLoader.getLoadedClasses())
 			{
-				if (name.contains(ClassUtils.INNER_CLASS_SEPARATOR))
+				if(name.contains(ClassUtils.INNER_CLASS_SEPARATOR))
 				{
 					continue;
 				}
@@ -162,13 +158,13 @@ public class Scripts
 				try
 				{
 					Class<?> clazz = classLoader.loadClass(name);
-					if (Modifier.isAbstract(clazz.getModifiers()))
+					if(Modifier.isAbstract(clazz.getModifiers()))
 					{
 						continue;
 					}
 					classes.add(clazz);
 				}
-				catch (ClassNotFoundException e)
+				catch(ClassNotFoundException e)
 				{
 					LOGGER.error("Scripts: Can't load script class: {}", name, e);
 					classes.clear();
@@ -185,44 +181,44 @@ public class Scripts
 		Object o = getClassInstance(clazz);
 		try
 		{
-			if (ClassUtils.isAssignable(clazz, OnInitScriptListener.class))
+			if(ClassUtils.isAssignable(clazz, OnInitScriptListener.class))
 			{
-				if (o == null)
+				if(o == null)
 				{
 					o = clazz.getDeclaredConstructor().newInstance();
 				}
 				_listeners.add((OnInitScriptListener) o);
 			}
 
-			for (Method method : clazz.getMethods())
+			for(Method method : clazz.getMethods())
 			{
-				if (method.isAnnotationPresent(Bypass.class))
+				if(method.isAnnotationPresent(Bypass.class))
 				{
 					Class<?>[] par = method.getParameterTypes();
-					if (par.length == 0 || par[0] != Player.class || par[1] != NpcInstance.class || par[2] != String[].class)
+					if(par.length == 0 || par[0] != Player.class || par[1] != NpcInstance.class || par[2] != String[].class)
 					{
 						LOGGER.error("Wrong parameters for bypass method: {}, class: {}", method.getName(), clazz.getSimpleName());
 						continue;
 					}
 
 					Bypass an = method.getAnnotation(Bypass.class);
-					if (Modifier.isStatic(method.getModifiers()))
+					if(Modifier.isStatic(method.getModifiers()))
 					{
 						BypassHolder.getInstance().registerBypass(an.value(), clazz, method);
 					}
 					else
 					{
-						if (o == null)
+						if(o == null)
 						{
 							o = clazz.getDeclaredConstructor().newInstance();
 						}
 					}
 					BypassHolder.getInstance().registerBypass(an.value(), o, method);
 				}
-				else if (method.isAnnotationPresent(OnScriptInit.class))
+				else if(method.isAnnotationPresent(OnScriptInit.class))
 				{
 					Class<?>[] par = method.getParameterTypes();
-					if (par.length != 0)
+					if(par.length != 0)
 					{
 						LOGGER.error("Wrong parameters for init method: {}, class: {}", method.getName(), clazz.getSimpleName());
 						continue;
@@ -230,27 +226,27 @@ public class Scripts
 
 					try
 					{
-						if (Modifier.isStatic(method.getModifiers()))
+						if(Modifier.isStatic(method.getModifiers()))
 						{
 							method.invoke(clazz);
 						}
 						else
 						{
-							if (o == null)
+							if(o == null)
 							{
 								o = clazz.getDeclaredConstructor().newInstance();
 							}
 							method.invoke(o);
 						}
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						LOGGER.error("Exception: {}", e, e);
 					}
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("", e);
 		}
@@ -270,10 +266,8 @@ public class Scripts
 	public Object getClassInstance(String className)
 	{
 		Class<?> classes = _classes.get(className);
-		if (classes != null)
-		{
-			return getClassInstance(classes);
-		}
+		if(classes != null)
+		{ return getClassInstance(classes); }
 		return null;
 	}
 
@@ -281,9 +275,9 @@ public class Scripts
 	{
 		public void load()
 		{
-			for (Listener<Scripts> listener : getListeners())
+			for(Listener<Scripts> listener : getListeners())
 			{
-				if (OnLoadScriptListener.class.isInstance(listener))
+				if(OnLoadScriptListener.class.isInstance(listener))
 				{
 					((OnLoadScriptListener) listener).onLoad();
 				}
@@ -292,9 +286,9 @@ public class Scripts
 
 		public void init()
 		{
-			for (Listener<Scripts> listener : getListeners())
+			for(Listener<Scripts> listener : getListeners())
 			{
-				if (OnInitScriptListener.class.isInstance(listener))
+				if(OnInitScriptListener.class.isInstance(listener))
 				{
 					((OnInitScriptListener) listener).onInit();
 				}

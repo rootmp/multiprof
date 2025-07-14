@@ -28,7 +28,7 @@ public class GeometryUtils
 		double distAB, theCos, theSin, newX, ABpos;
 
 		// Fail if either line is undefined.
-		if (a.x == b.x && a.y == b.y || c.x == d.x && c.y == d.y)
+		if(a.x == b.x && a.y == b.y || c.x == d.x && c.y == d.y)
 			return false;
 
 		// (1) Translate the system so that point A is on the origin.
@@ -53,7 +53,7 @@ public class GeometryUtils
 		Dx = newX;
 
 		// Fail if the lines are parallel.
-		if (Cy == Dy)
+		if(Cy == Dy)
 			return false;
 
 		// (3) Discover the position of the intersection point along line A-B.
@@ -61,7 +61,7 @@ public class GeometryUtils
 
 		// (4) Apply the discovered position to line A-B in the original coordinate
 		// system.
-		if (r != null)
+		if(r != null)
 		{
 			r.x = (int) (a.x + ABpos * theCos);
 			r.y = (int) (a.y + ABpos * theSin);
@@ -92,11 +92,11 @@ public class GeometryUtils
 		double distAB, theCos, theSin, newX, ABpos;
 
 		// Fail if either line is undefined.
-		if (a.x == b.x && a.y == b.y || c.x == d.x && c.y == d.y)
+		if(a.x == b.x && a.y == b.y || c.x == d.x && c.y == d.y)
 			return false;
 
 		// Fail if the segments share an end-point.
-		if (a.x == c.x && a.y == c.y || b.x == c.x && b.y == c.y || a.x == d.x && a.y == d.y || b.x == d.x && b.y == d.y)
+		if(a.x == c.x && a.y == c.y || b.x == c.x && b.y == c.y || a.x == d.x && a.y == d.y || b.x == d.x && b.y == d.y)
 			return false;
 
 		// (1) Translate the system so that point A is on the origin.
@@ -121,19 +121,19 @@ public class GeometryUtils
 		Dx = newX;
 
 		// Fail if segment C-D doesn't cross line A-B.
-		if (Cy < 0. && Dy < 0. || Cy >= 0. && Dy >= 0.)
+		if(Cy < 0. && Dy < 0. || Cy >= 0. && Dy >= 0.)
 			return false;
 
 		// (3) Discover the position of the intersection point along line A-B.
 		ABpos = Dx + (Cx - Dx) * Dy / (Dy - Cy);
 
 		// Fail if segment C-D crosses line A-B outside of segment A-B.
-		if (ABpos < 0. || ABpos > distAB)
+		if(ABpos < 0. || ABpos > distAB)
 			return false;
 
 		// (4) Apply the discovered position to line A-B in the original coordinate
 		// system.
-		if (r != null)
+		if(r != null)
 		{
 			r.x = (int) (a.x + ABpos * theCos);
 			r.y = (int) (a.y + ABpos * theSin);
@@ -163,7 +163,7 @@ public class GeometryUtils
 		long dx = x1 - x2;
 		long dy = y1 - y2;
 
-		if (includeZAxis)
+		if(includeZAxis)
 		{
 			long dz = z1 - z2;
 			return (int) Math.sqrt(dx * dx + dy * dy + dz * dz);
@@ -179,7 +179,7 @@ public class GeometryUtils
 	public static double calculateAngleFrom(int x1, int y1, int x2, int y2)
 	{
 		double angleTarget = Math.toDegrees(Math.atan2(y2 - y1, x2 - x1));
-		if (angleTarget < 0)
+		if(angleTarget < 0)
 			angleTarget = 360 + angleTarget;
 		return angleTarget;
 	}
@@ -190,7 +190,7 @@ public class GeometryUtils
 	public static Point2D applyOffset(Point2D a, Point2D b, int offset, boolean add)
 	{
 		Point2D result = new Point2D();
-		if (offset <= 0)
+		if(offset <= 0)
 		{
 			result.x = a.x;
 			result.y = a.y;
@@ -202,9 +202,9 @@ public class GeometryUtils
 
 		double distance = Math.sqrt(dx * dx + dy * dy);
 
-		if (!add)
+		if(!add)
 		{
-			if (distance <= offset)
+			if(distance <= offset)
 			{
 				result.x = b.x;
 				result.y = b.y;
@@ -214,7 +214,7 @@ public class GeometryUtils
 		else
 			offset += distance;
 
-		if (distance >= 1)
+		if(distance >= 1)
 		{
 			double cut = offset / distance;
 			result.x = a.x - (int) (dx * cut + 0.5);
@@ -269,23 +269,23 @@ public class GeometryUtils
 	public static Point2D getNearestPointOnPolygon(Point2D[] points, int x, int y)
 	{
 		Point2D nearestPoint = new Point2D();
-		if (points.length == 0)
+		if(points.length == 0)
 		{
 			nearestPoint = null;
 		}
-		else if (points.length == 1)
+		else if(points.length == 1)
 		{
 			nearestPoint.x = points[0].x;
 			nearestPoint.y = points[0].y;
 		}
 		else
 		{
-			for (int i = 1; i <= points.length; i++)
+			for(int i = 1; i <= points.length; i++)
 			{
 				Point2D p1 = points[i - 1];
 				Point2D p2 = i == points.length ? points[0] : points[i];
 				Point2D n = getNearestPointOnLine(p1, p2, x, y);
-				if (calculateDistance(n.x, n.y, x, y) < calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
+				if(calculateDistance(n.x, n.y, x, y) < calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
 					nearestPoint = n;
 			}
 		}
@@ -295,17 +295,17 @@ public class GeometryUtils
 	// Проверяем находится ли точка на периметре полигона.
 	public static boolean isOnPolygonPerimeter(Point2D[] points, int x, int y, CoordsConverter c)
 	{
-		if (points.length == 0)
+		if(points.length == 0)
 			return false;
 
-		if (points.length == 1)
+		if(points.length == 1)
 			return c.convertX(points[0].x) == x && c.convertY(points[1].y) == y;
 
-		for (int i = 1; i <= points.length; i++)
+		for(int i = 1; i <= points.length; i++)
 		{
 			Point2D p1 = points[i - 1];
 			Point2D p2 = i == points.length ? points[0] : points[i];
-			if (isOnLine(p1, p2, x, y, c))
+			if(isOnLine(p1, p2, x, y, c))
 				return true;
 		}
 		return false;

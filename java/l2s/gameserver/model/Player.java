@@ -96,7 +96,6 @@ import l2s.gameserver.data.xml.holder.NpcHolder;
 import l2s.gameserver.data.xml.holder.PetDataHolder;
 import l2s.gameserver.data.xml.holder.PlayerTemplateHolder;
 import l2s.gameserver.data.xml.holder.PremiumAccountHolder;
-import l2s.gameserver.data.xml.holder.RandomCraftListHolder;
 import l2s.gameserver.data.xml.holder.RecipeHolder;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.data.xml.holder.SkillAcquireHolder;
@@ -394,9 +393,6 @@ import l2s.gameserver.templates.CreatureTemplate;
 import l2s.gameserver.templates.InstantZone;
 import l2s.gameserver.templates.OptionDataTemplate;
 import l2s.gameserver.templates.PremiumAccountTemplate;
-import l2s.gameserver.templates.RandomCraftCategory;
-import l2s.gameserver.templates.RandomCraftInfo;
-import l2s.gameserver.templates.RandomCraftItem;
 import l2s.gameserver.templates.TeleportTemplate;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
 import l2s.gameserver.templates.ZoneTemplate;
@@ -435,42 +431,6 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 {
 	//@formatter:off
 	private static final Logger _log = LoggerFactory.getLogger(Player.class);
-
-	public final static int CLIENTS_HASHCODE;
-	public final static Map<String, Integer> CLIENTS = new HashMap<String, Integer>();
-	static
-	{
-		CLIENTS.put(new String(new byte[]
-		{
-			0x31,
-			0x34,
-			0x38,
-			0x2E,
-			0x32,
-			0x35,
-			0x31,
-			0x2E,
-			0x36,
-			0x38,
-			0x2E,
-			0x31,
-			0x30,
-			0x30
-		}), -1); // -1 = UNLIMITED
-		CLIENTS.put(new String(new byte[]
-		{
-			0x31,
-			0x32,
-			0x37,
-			0x2E,
-			0x30,
-			0x2E,
-			0x30,
-			0x2E,
-			0x31
-		}), -1); // -1 = UNLIMITED
-		CLIENTS_HASHCODE = CLIENTS.hashCode();
-	}
 
 	public static final int DEFAULT_NAME_COLOR = 0xFFFFFF;
 	public static final int DEFAULT_TITLE_COLOR = 0xFFFF77;
@@ -712,10 +672,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private final VIP _vip = new VIP(this);
 	private final VipAttendance _vipAttendance = new VipAttendance(this);
 	private final RestartPointSetting _rPointSetting = new RestartPointSetting(this);
-	
+
 	private final AccountVariables _accountVar = new AccountVariables();
 	private final HuntPass _huntPass;
-	
+
 	private boolean _hero = false;
 
 	private PremiumAccountTemplate _premiumAccount = PremiumAccountHolder.getInstance().getPremiumAccount(0);
@@ -853,11 +813,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private final int expertiseIndex = 0;
 
-	private final boolean[] _announce =
-	{
-		false,
-		false,
-		false
+	private final boolean[] _announce = {
+			false,
+			false,
+			false
 	};
 	private ScheduledFuture<?> _timeRestrictFieldFinishTask = null;
 	private int _remainTime = 0;
@@ -875,9 +834,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public final long MAX_MAGIC_LAMP_POINTS = 3_000_000_000L;
 	public final int MAX_RANDOM_CRAFT_POINTS = 99_000_000;
 	private int _honorCoins;
-	
+
 	private final HwidHolder hwidHolder;
-	
+
 	private LimitedShopContainer _limitedShop = null;
 
 	private ScheduledFuture<?> _bowTask = null;
@@ -887,9 +846,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private TIntSet _collectionFavorites = new TIntHashSet();
 
 	private int _killedMobs = 0;
-	
+
 	private final AdenLab _adenLab;
-	
+
 	private final EnchantBrokenItemList enchantBrokenItemList = new EnchantBrokenItemList(this);
 
 	public final String selectEvolvedPets = "SELECT * FROM petsEvolved WHERE hashId=?";
@@ -904,7 +863,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			ps.setLong(3, (getObjectId() * 100000L) + controlItem);
 			ps.execute();
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.warn("failed to update evolved pets ", e);
 		}
@@ -925,14 +884,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		_lastNotAfkTime = 0L;
 	}
 
-
 	private Player(final int objectId, final PlayerTemplate template, HwidHolder hwidHolder)
 	{
 		this(objectId, template, null, hwidHolder);
 
 		_ai = new PlayerAI(this);
 
-		if (!Config.EVERYBODY_HAS_ADMIN_RIGHTS)
+		if(!Config.EVERYBODY_HAS_ADMIN_RIGHTS)
 		{
 			setPlayerAccess(Config.gmlist.get(objectId));
 		}
@@ -951,19 +909,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public String getAccountName()
 	{
-		if (_connection == null)
-		{
-			return _login;
-		}
+		if(_connection == null)
+		{ return _login; }
 		return _connection.getLogin();
 	}
 
 	public String getIP()
 	{
-		if (_connection == null)
-		{
-			return NOT_CONNECTED;
-		}
+		if(_connection == null)
+		{ return NOT_CONNECTED; }
 		return _connection.getIpAddr();
 	}
 
@@ -996,7 +950,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public final void setTemplate(CreatureTemplate template)
 	{
-		if (isBaseClassActive())
+		if(isBaseClassActive())
 		{
 			_baseTemplate = (PlayerTemplate) template;
 		}
@@ -1031,20 +985,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public synchronized final void setTransform(TransformTemplate transform)
 	{
-		if ((transform == _transform) || ((transform != null) && (_transform != null)))
-		{
-			return;
-		}
+		if((transform == _transform) || ((transform != null) && (_transform != null)))
+		{ return; }
 
 		// Для каждой трансформации свой набор скилов
-		if (transform == null) // Обычная форма
+		if(transform == null) // Обычная форма
 		{
-			if (!_transformSkills.isEmpty())
+			if(!_transformSkills.isEmpty())
 			{
 				// Удаляем скилы трансформации
-				for (final SkillEntry skillEntry : _transformSkills.valueCollection())
+				for(final SkillEntry skillEntry : _transformSkills.valueCollection())
 				{
-					if (!SkillAcquireHolder.getInstance().isSkillPossible(this, skillEntry.getTemplate()))
+					if(!SkillAcquireHolder.getInstance().isSkillPossible(this, skillEntry.getTemplate()))
 					{
 						super.removeSkill(skillEntry);
 					}
@@ -1052,7 +1004,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				_transformSkills.clear();
 			}
 
-			if (_transform.getItemCheckType() != LockType.NONE)
+			if(_transform.getItemCheckType() != LockType.NONE)
 			{
 				getInventory().unlock();
 			}
@@ -1068,19 +1020,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			final boolean isFlying = transform.getType() == TransformType.FLYING;
 
-			if (isFlying)
+			if(isFlying)
 			{
-				for (final Servitor servitor : getServitors())
+				for(final Servitor servitor : getServitors())
 				{
 					servitor.unSummon(false);
 				}
 			}
 
 			// Добавляем скиллы трансформации
-			for (final SkillLearn sl : transform.getSkills())
+			for(final SkillLearn sl : transform.getSkills())
 			{
 				final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-				if (skillEntry == null)
+				if(skillEntry == null)
 				{
 					continue;
 				}
@@ -1089,21 +1041,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 
 			// Добавляем скиллы трансформации зависящие от уровня персонажа
-			for (final SkillLearn sl : transform.getAddtionalSkills())
+			for(final SkillLearn sl : transform.getAddtionalSkills())
 			{
-				if (sl.getMinLevel() > getLevel())
+				if(sl.getMinLevel() > getLevel())
 				{
 					continue;
 				}
 
 				SkillEntry skillEntry = _transformSkills.get(sl.getId());
-				if ((skillEntry != null) && (skillEntry.getLevel() >= sl.getLevel()))
+				if((skillEntry != null) && (skillEntry.getLevel() >= sl.getLevel()))
 				{
 					continue;
 				}
 
 				skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-				if (skillEntry == null)
+				if(skillEntry == null)
 				{
 					continue;
 				}
@@ -1111,12 +1063,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				_transformSkills.put(skillEntry.getId(), skillEntry);
 			}
 
-			for (final SkillEntry skillEntry : _transformSkills.valueCollection())
+			for(final SkillEntry skillEntry : _transformSkills.valueCollection())
 			{
 				addSkill(skillEntry, false);
 			}
 
-			if (transform.getItemCheckType() != LockType.NONE)
+			if(transform.getItemCheckType() != LockType.NONE)
 			{
 				getInventory().unlock();
 				getInventory().lockItems(transform.getItemCheckType(), transform.getItemCheckIDs());
@@ -1147,13 +1099,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void changeSex()
 	{
 		final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(getRace(), getClassId(), getSex().revert());
-		if (template == null)
-		{
-			return;
-		}
+		if(template == null)
+		{ return; }
 
 		setTemplate(template);
-		if (isTransformed())
+		if(isTransformed())
 		{
 			final int transformId = getTransform().getId();
 			setTransform(null);
@@ -1180,31 +1130,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sendReuseMessage(Skill skill)
 	{
-		if ((getSkillLevel(skill.getId(), 0) > 0) || (getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (!isDualCastEnable() || getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow())))
-		{
-			return;
-		}
+		if((getSkillLevel(skill.getId(), 0) > 0) || (getSkillCast(SkillCastingType.NORMAL).isCastingNow()
+				&& (!isDualCastEnable() || getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow())))
+		{ return; }
 
 		final TimeStamp sts = getSkillReuse(skill);
-		if ((sts == null) || !sts.hasNotPassed())
-		{
-			return;
-		}
+		if((sts == null) || !sts.hasNotPassed())
+		{ return; }
 
 		final long timeleft = sts.getReuseCurrent();
-		if ((!Config.ALT_SHOW_REUSE_MSG && (timeleft < 10000)) || (timeleft < 500))
-		{
-			return;
-		}
+		if((!Config.ALT_SHOW_REUSE_MSG && (timeleft < 10000)) || (timeleft < 500))
+		{ return; }
 
 		final int hours = (int) TimeUnit.MILLISECONDS.toHours(timeleft);
 		final int minutes = (int) TimeUnit.MILLISECONDS.toMinutes(timeleft - TimeUnit.HOURS.toMillis(hours));
-		final int seconds = (int) Math.max(1, TimeUnit.MILLISECONDS.toSeconds((timeleft - TimeUnit.HOURS.toMillis(hours) - TimeUnit.MINUTES.toMillis(minutes))));
-		if (hours > 0)
+		final int seconds = (int) Math.max(1, TimeUnit.MILLISECONDS.toSeconds((timeleft - TimeUnit.HOURS.toMillis(hours)
+				- TimeUnit.MINUTES.toMillis(minutes))));
+		if(hours > 0)
 		{
 			sendPacket(new SystemMessagePacket(SystemMsg.THERE_ARE_S2_HOURS_S3_MINUTES_AND_S4_SECONDS_REMAINING_IN_S1S_REUSE_TIME).addSkillName(skill).addByte((byte) hours).addByte((byte) minutes).addByte((byte) seconds));
 		}
-		else if (minutes > 0)
+		else if(minutes > 0)
 		{
 			sendPacket(new SystemMessagePacket(SystemMsg.THERE_ARE_S2_MINUTES_S3_SECONDS_REMAINING_IN_S1S_REUSE_TIME).addSkillName(skill).addByte((byte) minutes).addByte((byte) seconds));
 		}
@@ -1293,7 +1239,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void offline(int delay)
 	{
-		if (_connection != null)
+		if(_connection != null)
 		{
 			_connection.setActiveChar(null);
 			_connection.close(ServerCloseSocketPacket.STATIC);
@@ -1303,7 +1249,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		startAbnormalEffect(Config.SERVICES_OFFLINE_TRADE_ABNORMAL_EFFECT);
 		setOfflineMode(true);
 
-		if (isInBuffStore())
+		if(isInBuffStore())
 		{
 			OfflineBufferManager.getInstance().storeBufferData(this);
 		}
@@ -1312,7 +1258,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			storePrivateStore();
 		}
 
-		if (delay > 0)
+		if(delay > 0)
 		{
 			setVar(isInBuffStore() ? "offlinebuff" : "offline", delay + (System.currentTimeMillis() / 1000));
 			startKickTask(delay * 1000L);
@@ -1323,24 +1269,24 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final Party party = getParty();
-		if (party != null)
+		if(party != null)
 		{
 			leaveParty(false);
 		}
 
-		if (isAutoSearchParty())
+		if(isAutoSearchParty())
 		{
 			PartySubstituteManager.getInstance().removeWaitingPlayer(this);
 		}
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.unSummon(false);
 		}
 
 		Olympiad.logoutPlayer(this);
 
-		if (isFishing())
+		if(isFishing())
 		{
 			getFishing().stop();
 		}
@@ -1352,8 +1298,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		stopPremiumAccountTask();
 		stopHourlyTask();
 		stopPcBangPointsTask();
-		stopTrainingCampTask();
-		;
+		stopTrainingCampTask();;
 		stopAutoSaveTask();
 		stopQuestTimers();
 		stopEnableUserRelationTask();
@@ -1364,7 +1309,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			getInventory().store();
 		}
-		catch (final Throwable t)
+		catch(final Throwable t)
 		{
 			_log.error("", t);
 		}
@@ -1373,7 +1318,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			store(false);
 		}
-		catch (final Throwable t)
+		catch(final Throwable t)
 		{
 			_log.error("", t);
 		}
@@ -1386,7 +1331,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void kick()
 	{
 		prepareToLogout1();
-		if (_connection != null)
+		if(_connection != null)
 		{
 			_connection.close(LogOutOkPacket.STATIC);
 			setNetConnection(null);
@@ -1402,7 +1347,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void restart()
 	{
 		prepareToLogout1();
-		if (_connection != null)
+		if(_connection != null)
 		{
 			_connection.setActiveChar(null);
 			setNetConnection(null);
@@ -1418,7 +1363,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void logout()
 	{
 		prepareToLogout1();
-		if (_connection != null)
+		if(_connection != null)
 		{
 			_connection.close(ServerCloseSocketPacket.STATIC);
 			setNetConnection(null);
@@ -1429,15 +1374,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void prepareToLogout1()
 	{
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			sendPacket(new PetDeletePacket(servitor.getObjectId(), servitor.getServitorType()));
 		}
 
-		if (isProcessingRequest())
+		if(isProcessingRequest())
 		{
 			final Request request = getRequest();
-			if (isInTrade())
+			if(isInTrade())
 			{
 				final Player parthner = request.getOtherPlayer(this);
 				parthner.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -1450,23 +1395,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void prepareToLogout2()
 	{
-		if (_isLogout.getAndSet(true))
-		{
-			return;
-		}
+		if(_isLogout.getAndSet(true))
+		{ return; }
 
-		for (final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_QUIT_GAME))
+		for(final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_QUIT_GAME))
 		{
 			hook.onPlayerQuitGame(this);
 		}
 
-		for (final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_QUIT_GAME))
+		for(final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_QUIT_GAME))
 		{
 			hook.onPlayerQuitGame(this);
 		}
 
 		final FlagItemAttachment attachment = getActiveWeaponFlagAttachment();
-		if (attachment != null)
+		if(attachment != null)
 		{
 			attachment.onLogout(this);
 		}
@@ -1476,30 +1419,30 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		getListeners().onExit();
 
-		if (isFlying() && !checkLandingState())
+		if(isFlying() && !checkLandingState())
 		{
 			_stablePoint = TeleportUtils.getRestartPoint(this, RestartType.TO_VILLAGE).getLoc();
 		}
 
-		if (isCastingNow())
+		if(isCastingNow())
 		{
 			abortCast(true, true);
 		}
 
 		final Party party = getParty();
-		if (party != null)
+		if(party != null)
 		{
 			leaveParty(false);
 		}
 
-		if (_observableArena != null)
+		if(_observableArena != null)
 		{
 			_observableArena.removeObserver(_observePoint);
 		}
 
 		Olympiad.logoutPlayer(this);
 
-		if (isFishing())
+		if(isFishing())
 		{
 			getFishing().stop();
 		}
@@ -1507,12 +1450,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// if(_stablePoint != null)
 		// teleToLocation(_stablePoint);
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.unSummon(true);
 		}
 
-		if (isMounted())
+		if(isMounted())
 		{
 			_mount.onLogout();
 		}
@@ -1520,38 +1463,38 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		_friendList.notifyFriends(false);
 		_spectatingList.notifySpectatings(false);
 
-		if (getClan() != null)
+		if(getClan() != null)
 		{
 			getClan().loginClanCond(this, false);
 		}
 
-		if (isProcessingRequest())
+		if(isProcessingRequest())
 		{
 			getRequest().cancel();
 		}
 
 		stopAllTimers();
 
-		if (isInBoat())
+		if(isInBoat())
 		{
 			getBoat().removePlayer(this);
 		}
 
 		final SubUnit unit = getSubUnit();
 		final UnitMember member = unit == null ? null : unit.getUnitMember(getObjectId());
-		if (member != null)
+		if(member != null)
 		{
 			final int sponsor = member.getSponsor();
 			final int apprentice = getApprentice();
 			final PledgeShowMemberListUpdatePacket memberUpdate = new PledgeShowMemberListUpdatePacket(this);
-			for (final Player clanMember : _clan.getOnlineMembers(getObjectId()))
+			for(final Player clanMember : _clan.getOnlineMembers(getObjectId()))
 			{
 				clanMember.sendPacket(memberUpdate);
-				if (clanMember.getObjectId() == sponsor)
+				if(clanMember.getObjectId() == sponsor)
 				{
 					clanMember.sendPacket(new SystemMessage(SystemMessage.S1_YOUR_CLAN_ACADEMYS_APPRENTICE_HAS_LOGGED_OUT).addString(_name));
 				}
-				else if (clanMember.getObjectId() == apprentice)
+				else if(clanMember.getObjectId() == apprentice)
 				{
 					clanMember.sendPacket(new SystemMessage(SystemMessage.S1_YOUR_CLAN_ACADEMYS_SPONSOR_HAS_LOGGED_OUT).addString(_name));
 				}
@@ -1560,9 +1503,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final MatchingRoom room = getMatchingRoom();
-		if (room != null)
+		if(room != null)
 		{
-			if (room.getLeader() == this)
+			if(room.getLeader() == this)
 			{
 				room.disband();
 			}
@@ -1577,9 +1520,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		destroyAllTraps();
 
-		if (!_decoys.isEmpty())
+		if(!_decoys.isEmpty())
 		{
-			for (final DecoyInstance decoy : getDecoys())
+			for(final DecoyInstance decoy : getDecoys())
 			{
 				decoy.unSummon();
 				removeDecoy(decoy);
@@ -1590,9 +1533,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		final Reflection ref = getReflection();
 
-		if (!ref.isMain())
+		if(!ref.isMain())
 		{
-			if (ref.getReturnLoc() != null)
+			if(ref.getReturnLoc() != null)
 			{
 				_stablePoint = ref.getReturnLoc();
 			}
@@ -1605,7 +1548,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			getInventory().store();
 			getRefund().clear();
 		}
-		catch (final Throwable t)
+		catch(final Throwable t)
 		{
 			_log.error("", t);
 		}
@@ -1614,7 +1557,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			store(false);
 		}
-		catch (final Throwable t)
+		catch(final Throwable t)
 		{
 			_log.error("", t);
 		}
@@ -1655,12 +1598,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void registerRecipe(final RecipeTemplate recipe, boolean saveDB)
 	{
-		if (recipe == null)
-		{
-			return;
-		}
+		if(recipe == null)
+		{ return; }
 
-		if (recipe.isCommon())
+		if(recipe.isCommon())
 		{
 			_commonrecipebook.put(recipe.getId(), recipe);
 		}
@@ -1669,7 +1610,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			_recipebook.put(recipe.getId(), recipe);
 		}
 
-		if (saveDB)
+		if(saveDB)
 		{
 			MySqlDataInsert.set("REPLACE INTO character_recipebook (char_id, id) VALUES(?,?)", getObjectId(), recipe.getId());
 		}
@@ -1681,12 +1622,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void unregisterRecipe(final int RecipeID)
 	{
-		if (_recipebook.containsKey(RecipeID))
+		if(_recipebook.containsKey(RecipeID))
 		{
 			MySqlDataInsert.set("DELETE FROM `character_recipebook` WHERE `char_id`=? AND `id`=? LIMIT 1", getObjectId(), RecipeID);
 			_recipebook.remove(RecipeID);
 		}
-		else if (_commonrecipebook.containsKey(RecipeID))
+		else if(_commonrecipebook.containsKey(RecipeID))
 		{
 			MySqlDataInsert.set("DELETE FROM `character_recipebook` WHERE `char_id`=? AND `id`=? LIMIT 1", getObjectId(), RecipeID);
 			_commonrecipebook.remove(RecipeID);
@@ -1736,9 +1677,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public Quest[] getAllActiveQuests()
 	{
 		final List<Quest> quests = new ArrayList<Quest>(_quests.size());
-		for (final QuestState qs : _quests.valueCollection())
+		for(final QuestState qs : _quests.valueCollection())
 		{
-			if (qs.isStarted())
+			if(qs.isStarted())
 			{
 				quests.add(qs.getQuest());
 			}
@@ -1755,13 +1696,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final List<QuestState> states = new ArrayList<QuestState>();
 		final Set<Quest> quests = npc.getTemplate().getEventQuests(event);
-		if (quests != null)
+		if(quests != null)
 		{
 			QuestState qs;
-			for (final Quest quest : quests)
+			for(final Quest quest : quests)
 			{
 				qs = getQuestState(quest);
-				if ((qs != null) && !qs.isCompleted())
+				if((qs != null) && !qs.isCompleted())
 				{
 					states.add(getQuestState(quest));
 				}
@@ -1772,35 +1713,31 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void processQuestEvent(int questId, String event, NpcInstance npc)
 	{
-		if (event == null)
+		if(event == null)
 		{
 			event = "";
 		}
 		QuestState qs = getQuestState(questId);
-		if (qs == null)
+		if(qs == null)
 		{
 			final Quest q = QuestHolder.getInstance().getQuest(questId);
-			if (q == null)
+			if(q == null)
 			{
 				_log.warn("Quest ID[" + questId + "] not found!");
 				return;
 			}
 			qs = q.newQuestState(this);
 		}
-		if ((qs == null) || qs.isCompleted())
-		{
-			return;
-		}
+		if((qs == null) || qs.isCompleted())
+		{ return; }
 		qs.getQuest().notifyEvent(event, qs, npc);
 		sendPacket(new QuestListPacket(this)); // TODO: Зачем? о.0
 	}
 
 	public boolean isInventoryFull()
 	{
-		if ((getWeightPenalty() >= 3) || ((getInventoryLimit() * 0.8) < getInventory().getSize()))
-		{
-			return true;
-		}
+		if((getWeightPenalty() >= 3) || ((getInventoryLimit() * 0.8) < getInventory().getSize()))
+		{ return true; }
 		return false;
 	}
 
@@ -1811,9 +1748,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public boolean isQuestContinuationPossible(boolean msg)
 	{
-		if (isInventoryFull() || ((Config.QUEST_INVENTORY_MAXIMUM * 0.8) < getInventory().getQuestSize()))
+		if(isInventoryFull() || ((Config.QUEST_INVENTORY_MAXIMUM * 0.8) < getInventory().getQuestSize()))
 		{
-			if (msg)
+			if(msg)
 			{
 				sendPacket(SystemMsg.PROGRESS_IN_A_QUEST_IS_POSSIBLE_ONLY_WHEN_YOUR_INVENTORYS_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
 			}
@@ -1827,9 +1764,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void stopQuestTimers()
 	{
-		for (final QuestState qs : getAllQuestsStates())
+		for(final QuestState qs : getAllQuestsStates())
 		{
-			if (qs.isStarted())
+			if(qs.isStarted())
 			{
 				qs.pauseQuestTimers();
 			}
@@ -1845,7 +1782,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void resumeQuestTimers()
 	{
-		for (final QuestState qs : getAllQuestsStates())
+		for(final QuestState qs : getAllQuestsStates())
 		{
 			qs.resumeQuestTimers();
 		}
@@ -1946,11 +1883,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setRecomHave(int value)
 	{
-		if (value > 255)
+		if(value > 255)
 		{
 			_recomHave = 255;
 		}
-		else if (value < 0)
+		else if(value < 0)
 		{
 			_recomHave = 0;
 		}
@@ -1973,11 +1910,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void giveRecom(final Player target)
 	{
 		final int targetRecom = target.getRecomHave();
-		if (targetRecom < 255)
+		if(targetRecom < 255)
 		{
 			target.addRecomHave(1);
 		}
-		if (getRecomLeft() > 0)
+		if(getRecomLeft() > 0)
 		{
 			setRecomLeft(getRecomLeft() - 1);
 		}
@@ -1999,27 +1936,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setKarma(int karma)
 	{
-		if (karma < -33840)
+		if(karma < -33840)
 		{
 			final SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 60002, 5);
 			skill.getEffects(this, this);
 		}
-		else if (karma < -30240)
+		else if(karma < -30240)
 		{
 			final SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 60002, 4);
 			skill.getEffects(this, this);
 		}
-		else if (karma <= -27000)
+		else if(karma <= -27000)
 		{
 			final SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 60002, 3);
 			skill.getEffects(this, this);
 		}
-		else if (karma < -18000)
+		else if(karma < -18000)
 		{
 			final SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 60002, 2);
 			skill.getEffects(this, this);
 		}
-		else if (karma <= -1)
+		else if(karma <= -1)
 		{
 			final SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 60002, 1);
 			skill.getEffects(this, this);
@@ -2029,16 +1966,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			getAbnormalList().stop(60002);
 		}
 
-		if (_karma == karma)
-		{
-			return;
-		}
+		if(_karma == karma)
+		{ return; }
 
 		_karma = Math.min(0, karma);
 
 		sendChanges();
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.broadcastCharInfo();
 		}
@@ -2053,10 +1988,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void updateAbnormalIcons()
 	{
-		if (entering || isLogoutStarted())
-		{
-			return;
-		}
+		if(entering || isLogoutStarted())
+		{ return; }
 
 		super.updateAbnormalIcons();
 	}
@@ -2070,11 +2003,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final PartySpelledPacket ps = new PartySpelledPacket(this, false);
 		final AbnormalStatusUpdatePacket abnormalStatus = new AbnormalStatusUpdatePacket();
 
-		for (final Abnormal effect : effects)
+		for(final Abnormal effect : effects)
 		{
-			if (effect != null)
+			if(effect != null)
 			{
-				if (effect.checkAbnormalType(AbnormalType.HP_RECOVER))
+				if(effect.checkAbnormalType(AbnormalType.HP_RECOVER))
 				{
 					sendPacket(new ShortBuffStatusUpdatePacket(effect));
 				}
@@ -2082,7 +2015,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				{
 					effect.addIcon(abnormalStatus);
 				}
-				if (_party != null)
+				if(_party != null)
 				{
 					effect.addPartySpelledIcon(ps);
 				}
@@ -2090,21 +2023,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		sendPacket(abnormalStatus);
-		if (_party != null)
+		if(_party != null)
 		{
 			_party.broadCast(ps);
 		}
 
-		if (isInOlympiadMode() && isOlympiadCompStart())
+		if(isInOlympiadMode() && isOlympiadCompStart())
 		{
 			final OlympiadGame olymp_game = _olympiadGame;
-			if (olymp_game != null)
+			if(olymp_game != null)
 			{
 				final ExOlympiadSpelledInfoPacket olympiadSpelledInfo = new ExOlympiadSpelledInfoPacket();
 
-				for (final Abnormal effect : effects)
+				for(final Abnormal effect : effects)
 				{
-					if (effect != null)
+					if(effect != null)
 					{
 						effect.addOlympiadSpelledIcon(this, olympiadSpelledInfo);
 					}
@@ -2112,7 +2045,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				sendPacket(olympiadSpelledInfo);
 
-				for (final ObservePoint observer : olymp_game.getObservers())
+				for(final ObservePoint observer : olymp_game.getObservers())
 				{
 					observer.sendPacket(olympiadSpelledInfo);
 				}
@@ -2120,7 +2053,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final List<SingleMatchEvent> events = getEvents(SingleMatchEvent.class);
-		for (final SingleMatchEvent event : events)
+		for(final SingleMatchEvent event : events)
 		{
 			event.onEffectIconsUpdate(this, effects);
 		}
@@ -2136,28 +2069,26 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void refreshOverloaded()
 	{
-		if (isLogoutStarted() || (getMaxLoad() <= 0))
-		{
-			return;
-		}
+		if(isLogoutStarted() || (getMaxLoad() <= 0))
+		{ return; }
 
 		setOverloaded(getCurrentLoad() > getMaxLoad());
 		final double weightproc = (100. * (getCurrentLoad() - getStat().calc(Stats.MAX_NO_PENALTY_LOAD, 0, this, null))) / getMaxLoad();
 		int newWeightPenalty = 0;
 
-		if (weightproc < 50)
+		if(weightproc < 50)
 		{
 			newWeightPenalty = 0;
 		}
-		else if (weightproc < 66.6)
+		else if(weightproc < 66.6)
 		{
 			newWeightPenalty = 1;
 		}
-		else if (weightproc < 80)
+		else if(weightproc < 80)
 		{
 			newWeightPenalty = 2;
 		}
-		else if (weightproc < 100)
+		else if(weightproc < 100)
 		{
 			newWeightPenalty = 3;
 		}
@@ -2167,29 +2098,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final int current = getWeightPenalty();
-		if (current == newWeightPenalty)
-		{
-			return;
-		}
+		if(current == newWeightPenalty)
+		{ return; }
 
 		boolean update = false;
-		if (newWeightPenalty > 0)
+		if(newWeightPenalty > 0)
 		{
 			final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 4270, newWeightPenalty);
-			if (skillEntry != null)
+			if(skillEntry != null)
 			{
-				if (!skillEntry.equals(addSkill(skillEntry)))
+				if(!skillEntry.equals(addSkill(skillEntry)))
 				{
 					update = true;
 				}
 			}
 		}
-		else if (super.removeSkill(getKnownSkill(4270)) != null)
+		else if(super.removeSkill(getKnownSkill(4270)) != null)
 		{
 			update = true;
 		}
 
-		if (update)
+		if(update)
 		{
 			sendSkillList();
 			sendEtcStatusUpdate();
@@ -2209,14 +2138,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getExpertisePenalty(ItemInstance item)
 	{
-		if (item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON)
+		if(item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON)
 		{
 			return getWeaponsExpertisePenalty();
 		}
-		else if ((item.getTemplate().getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR) || (item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY))
-		{
-			return getArmorsExpertisePenalty();
-		}
+		else if((item.getTemplate().getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR) || (item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY))
+		{ return getArmorsExpertisePenalty(); }
 		return 0;
 	}
 
@@ -2248,19 +2175,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public synchronized boolean setClassId(final int id, boolean noban)
 	{
 		final ClassId classId = ClassId.valueOf(id);
-		if (classId.isDummy())
-		{
-			return false;
-		}
+		if(classId.isDummy())
+		{ return false; }
 
-		if (!noban && !(classId.equalsOrChildOf(getClassId()) || getPlayerAccess().CanChangeClass || Config.EVERYBODY_HAS_ADMIN_RIGHTS))
+		if(!noban && !(classId.equalsOrChildOf(getClassId()) || getPlayerAccess().CanChangeClass || Config.EVERYBODY_HAS_ADMIN_RIGHTS))
 		{
 			Thread.dumpStack();
 			return false;
 		}
 
 		final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(getRace(), classId, getSex());
-		if (template == null)
+		if(template == null)
 		{
 			_log.error("Missing template for classId: " + id);
 			return false;
@@ -2268,7 +2193,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		setTemplate(template);
 
 		// Если новый ID не принадлежит имеющимся классам значит это новая профа
-		if (!_subClassList.containsClassId(id))
+		if(!_subClassList.containsClassId(id))
 		{
 			final SubClass cclass = getActiveSubClass();
 			final ClassId oldClass = ClassId.valueOf(cclass.getClassId());
@@ -2282,7 +2207,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 			getListeners().onClassChange(oldClass, classId);
 
-			for (final QuestState qs : getAllQuestsStates())
+			for(final QuestState qs : getAllQuestsStates())
 			{
 				qs.getQuest().notifyTutorialEvent("CE", false, "100", qs);
 			}
@@ -2295,15 +2220,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		broadcastUserInfo(true);
 
 		// Update class icon in party and clan
-		if (isInParty())
+		if(isInParty())
 		{
 			getParty().broadCast(new PartySmallWindowUpdatePacket(this));
 		}
-		if (getClan() != null)
+		if(getClan() != null)
 		{
 			getClan().broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(this));
 		}
-		if (_matchingRoom != null)
+		if(_matchingRoom != null)
 		{
 			_matchingRoom.broadcastPlayerUpdate(this);
 		}
@@ -2313,18 +2238,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void onReceiveNewClassId(ClassId oldClass, ClassId newClass)
 	{
-		if (oldClass != null)
+		if(oldClass != null)
 		{
-			if (isBaseClassActive())
+			if(isBaseClassActive())
 			{
 				final OlympiadParticipiantData participant = Olympiad.getParticipantInfo(getObjectId());
-				if (participant != null)
+				if(participant != null)
 				{
 					participant.setClassId(newClass.getId());
 				}
 			}
 
-			if (!newClass.equalsOrChildOf(oldClass))
+			if(!newClass.equalsOrChildOf(oldClass))
 			{
 				removeAllSkills();
 				restoreSkills();
@@ -2503,19 +2428,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addExpAndCheckBonus(MonsterInstance mob, final double noRateExp, double noRateSp)
 	{
-		if (getActiveSubClass() == null)
-		{
-			return;
-		}
+		if(getActiveSubClass() == null)
+		{ return; }
 
-		if (noRateExp > 0)
+		if(noRateExp > 0)
 		{
 			useTriggers(mob, TriggerType.ON_ADD_EXP_FROM_MONSTER, null, null, 0);
 
-			if (!(getVarBoolean("NoExp") && (getExp() == (Experience.getExpForLevel(getLevel() + 1) - 1))))
+			if(!(getVarBoolean("NoExp") && (getExp() == (Experience.getExpForLevel(getLevel() + 1) - 1))))
 			{
 				double dPointsAdd = Util.getDecrementValue(getLevel()) * Util.getNpcExpRatePenalty(mob.getTemplate().getAcquireExpRate());
-				dPointsAdd = dPointsAdd * Config.ALT_SAYHAS_GRACE_CONSUME_RATE * getStat().calc(Stats.SAYHAS_GRACE_CONSUME) * getStat().calc(Stats.SAYHAS_BLOCK_CONSUME);
+				dPointsAdd = dPointsAdd
+						* Config.ALT_SAYHAS_GRACE_CONSUME_RATE
+						* getStat().calc(Stats.SAYHAS_GRACE_CONSUME)
+						* getStat().calc(Stats.SAYHAS_BLOCK_CONSUME);
 
 				if((getHuntPass() == null) || !getHuntPass().toggleSayha())
 				{
@@ -2529,20 +2455,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 
 				final Clan clan = getClan();
-				if (clan != null)
+				if(clan != null)
 				{
 					// TODO: [Bonux] Переделать формулу по оффу.
-					final int huntingPoints = Math.max((int) (((noRateExp * (getRateExp() / Config.RATE_XP_BY_LVL[getLevel()])) / Math.pow(getLevel(), 2)) * Config.CLAN_HUNTING_PROGRESS_RATE), 1);
+					final int huntingPoints = Math.max((int) (((noRateExp * (getRateExp() / Config.RATE_XP_BY_LVL[getLevel()])) / Math.pow(getLevel(), 2))
+							* Config.CLAN_HUNTING_PROGRESS_RATE), 1);
 					clan.addHuntingProgress(huntingPoints);
 				}
 			}
 		}
 
 		final Elemental elemental = getElementalList().get(mob.getActiveElement().getDominant());
-		if (elemental != null)
+		if(elemental != null)
 		{
 			long elementalExp = 0;
-			if (getParty() != null)
+			if(getParty() != null)
 			{
 				elementalExp = (long) ((Config.RATE_ELEMENTAL_XP * mob.getElementalExpReward()) / getParty().getMemberCount());
 			}
@@ -2550,7 +2477,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			{
 				elementalExp = (long) (Config.RATE_ELEMENTAL_XP * mob.getElementalExpReward());
 			}
-			if (elementalExp > 0)
+			if(elementalExp > 0)
 			{
 				elemental.addExp(this, elementalExp);
 			}
@@ -2562,7 +2489,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final long expWithoutBonus = (long) (noRateExp * Config.RATE_XP_BY_LVL[getLevel()]);
 		final long spWithoutBonus = (long) (noRateSp * Config.RATE_SP_BY_LVL[getLevel()]);
 
-		if ((getBaseClassType() == ClassType.DEATH_KNIGHT) && (getCurrentDp() < getMaxDp()))
+		if((getBaseClassType() == ClassType.DEATH_KNIGHT) && (getCurrentDp() < getMaxDp()))
 		{
 			setCurrentDp(getCurrentDp() + 1);
 			sendPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_MAXDP, UpdateType.VCP_DP));
@@ -2577,10 +2504,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				getHuntPass().addPassPoint(mob);
 			}
 		}
-		
-		if ((normalExp > 0) && Config.MAGIC_LAMP_ENABLED)
+
+		if((normalExp > 0) && Config.MAGIC_LAMP_ENABLED)
 		{
-			if (normalExp > MAX_MAGIC_LAMP_POINTS)
+			if(normalExp > MAX_MAGIC_LAMP_POINTS)
 			{
 				setMagicLampPoints(MAX_MAGIC_LAMP_POINTS);
 			}
@@ -2597,7 +2524,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void addExpAndSp(long exp, long sp)
 	{
-		addExpAndSp(exp, sp, -1, -1, false, false, (Config.ALT_DELEVEL_ON_DEATH_PENALTY_MIN_LEVEL > -1) && (getLevel() > Config.ALT_DELEVEL_ON_DEATH_PENALTY_MIN_LEVEL), true, true);
+		addExpAndSp(exp, sp, -1, -1, false, false, (Config.ALT_DELEVEL_ON_DEATH_PENALTY_MIN_LEVEL > -1)
+				&& (getLevel() > Config.ALT_DELEVEL_ON_DEATH_PENALTY_MIN_LEVEL), true, true);
 	}
 
 	public void addExpAndSp(long exp, long sp, boolean delevel)
@@ -2607,33 +2535,31 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addExpAndSp(long addToExp, long addToSp, long bonusAddExp, long bonusAddSp, boolean applyRate, boolean applyToPet, boolean delevel, boolean clearKarma, boolean sendMsg)
 	{
-		if ((getActiveSubClass() == null) || ((addToExp < 0) && isFakePlayer()))
-		{
-			return;
-		}
+		if((getActiveSubClass() == null) || ((addToExp < 0) && isFakePlayer()))
+		{ return; }
 
-		if (applyRate)
+		if(applyRate)
 		{
 			addToExp *= getRateExp();
 			addToSp *= getRateSp();
 		}
 
 		final PetInstance pet = getPet();
-		if (addToExp > 0)
+		if(addToExp > 0)
 		{
-			if (applyToPet)
+			if(applyToPet)
 			{
-				if ((pet != null) && !pet.isDead() && !pet.getData().isOfType(PetType.SPECIAL))
+				if((pet != null) && !pet.isDead() && !pet.getData().isOfType(PetType.SPECIAL))
 				{
 					// Sin Eater забирает всю экспу у персонажа
-					if (pet.getData().isOfType(PetType.KARMA))
+					if(pet.getData().isOfType(PetType.KARMA))
 					{
 						pet.addExpAndSp(addToExp, 0);
 						addToExp = 0;
 					}
-					else if (pet.getExpPenalty() > 0f)
+					else if(pet.getExpPenalty() > 0f)
 					{
-						if ((pet.getLevel() > (getLevel() - 20)) && (pet.getLevel() < (getLevel() + 5)))
+						if((pet.getLevel() > (getLevel() - 20)) && (pet.getLevel() < (getLevel() + 5)))
 						{
 							pet.addExpAndSp((long) (addToExp * pet.getExpPenalty()), 0);
 							addToExp *= 1. - pet.getExpPenalty();
@@ -2644,30 +2570,30 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 							addToExp *= 1. - (pet.getExpPenalty() / 5.);
 						}
 					}
-					else if (pet.isSummon())
+					else if(pet.isSummon())
 					{
 						addToExp *= 1. - pet.getExpPenalty();
 					}
 				}
 			}
 
-			if (clearKarma)
+			if(clearKarma)
 			{
 				// Remove Karma when the player kills L2MonsterInstance
 				// TODO [G1ta0] двинуть в метод начисления наград при убйистве моба
-				if (isPK() && !isInZoneBattle())
+				if(isPK() && !isInZoneBattle())
 				{
 					final int karmaLost = Formulas.calculateKarmaLost(this, addToExp);
-					if (karmaLost > 0)
+					if(karmaLost > 0)
 					{
 						_karma += karmaLost;
-						if (_karma > 0)
+						if(_karma > 0)
 						{
 							_karma = 0;
 						}
 						setKarma(_karma); // update/ clean Einhasad's Overseeing effect if need
 
-						if (sendMsg)
+						if(sendMsg)
 						{
 							sendPacket(new SystemMessagePacket(SystemMsg.YOUR_FAME_HAS_BEEN_CHANGED_TO_S1).addInteger(_karma));
 						}
@@ -2684,47 +2610,47 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getActiveSubClass().addExp(addToExp, delevel);
 		getActiveSubClass().addSp(addToSp);
 
-		if (addToExp > 0)
+		if(addToExp > 0)
 		{
 			getListeners().onExpReceive(addToExp, bonusAddExp >= 0);
 			_receivedExp += addToExp;
 		}
 
-		if (sendMsg)
+		if(sendMsg)
 		{
-			if (((addToExp > 0) || (addToSp > 0)) && (bonusAddExp >= 0) && (bonusAddSp >= 0))
+			if(((addToExp > 0) || (addToSp > 0)) && (bonusAddExp >= 0) && (bonusAddSp >= 0))
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_ACQUIRED_S1_EXP_BONUS_S2_AND_S3_SP_BONUS_S4).addLong(addToExp).addLong(bonusAddExp).addInteger(addToSp).addInteger((int) bonusAddSp));
 			}
-			else if ((addToSp > 0) && (addToExp == 0))
+			else if((addToSp > 0) && (addToExp == 0))
 			{
 				sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_ACQUIRED_S1_SP).addNumber(addToSp));
 			}
-			else if ((addToSp > 0) && (addToExp > 0))
+			else if((addToSp > 0) && (addToExp > 0))
 			{
 				sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_EARNED_S1_EXPERIENCE_AND_S2_SP).addNumber(addToExp).addNumber(addToSp));
 			}
-			else if ((addToSp == 0) && (addToExp > 0))
+			else if((addToSp == 0) && (addToExp > 0))
 			{
 				sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_EARNED_S1_EXPERIENCE).addNumber(addToExp));
 			}
 		}
 
 		final int level = getActiveSubClass().getLevel();
-		if (level != oldLvl)
+		if(level != oldLvl)
 		{
 			levelSet(level - oldLvl);
 			getListeners().onLevelChange(oldLvl, level);
 
 			sendClassChangeAlert();
 
-			for (final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_GLOBAL_LEVEL_UP))
+			for(final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_GLOBAL_LEVEL_UP))
 			{
 				hook.onPlayerGlobalLevelUp(this, oldLvl, level);
 			}
 		}
 
-		if ((pet != null) && pet.getData().isOfType(PetType.SPECIAL))
+		if((pet != null) && pet.getData().isOfType(PetType.SPECIAL))
 		{
 			pet.setLevel(getLevel());
 			pet.setExp(pet.getExpForNextLevel());
@@ -2743,19 +2669,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int rewardSkills(boolean send, boolean checkShortCuts, boolean learnAllSkills, boolean checkRequiredItems)
 	{
-		if (_dontRewardSkills)
-		{
-			return 0;
-		}
+		if(_dontRewardSkills)
+		{ return 0; }
 
 		final List<SkillLearn> skillLearns = new ArrayList<SkillLearn>(SkillAcquireHolder.getInstance().getAvailableNextLevelsSkills(this, AcquireType.NORMAL));
 		Collections.sort(skillLearns);
 		Collections.reverse(skillLearns);
 
 		final IntObjectMap<SkillLearn> skillsToLearnMap = new HashIntObjectMap<SkillLearn>();
-		for (final SkillLearn sl : skillLearns)
+		for(final SkillLearn sl : skillLearns)
 		{
-			if (!(sl.isAutoGet() && ((learnAllSkills && (!checkRequiredItems || !sl.haveRequiredItemsForLearn(AcquireType.NORMAL))) || sl.isFreeAutoGet(AcquireType.NORMAL))))
+			if(!(sl.isAutoGet() && ((learnAllSkills && (!checkRequiredItems || !sl.haveRequiredItemsForLearn(AcquireType.NORMAL)))
+					|| sl.isFreeAutoGet(AcquireType.NORMAL))))
 			{
 				// Если предыдущий уровень умения учится НЕ БЕСПЛАТНО, то не учим бесплатно
 				// больший уровень умения.
@@ -2763,12 +2688,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				continue;
 			}
 
-			if (isBlockedSkill(sl))
+			if(isBlockedSkill(sl))
 			{
 				continue;
 			}
 
-			if (!skillsToLearnMap.containsKey(sl.getId()))
+			if(!skillsToLearnMap.containsKey(sl.getId()))
 			{
 				skillsToLearnMap.put(sl.getId(), sl);
 			}
@@ -2777,20 +2702,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean update = false;
 		int addedSkillsCount = 0;
 
-		for (final SkillLearn sl : skillsToLearnMap.valueCollection())
+		for(final SkillLearn sl : skillsToLearnMap.valueCollection())
 		{
 			final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
 				continue;
 			}
 
-			if (addSkill(skillEntry, true) == null)
+			if(addSkill(skillEntry, true) == null)
 			{
 				addedSkillsCount++;
 			}
 
-			if (checkShortCuts && (getAllShortCuts().size() > 0) && (skillEntry.getLevel() > 1))
+			if(checkShortCuts && (getAllShortCuts().size() > 0) && (skillEntry.getLevel() > 1))
 			{
 				updateSkillShortcuts(skillEntry.getId(), skillEntry.getLevel());
 			}
@@ -2798,25 +2723,25 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			update = true;
 		}
 
-		if (isTransformed())
+		if(isTransformed())
 		{
 			boolean added = false;
 			// Добавляем скиллы трансформации зависящие от уровня персонажа
-			for (final SkillLearn sl : _transform.getAddtionalSkills())
+			for(final SkillLearn sl : _transform.getAddtionalSkills())
 			{
-				if (sl.getMinLevel() > getLevel())
+				if(sl.getMinLevel() > getLevel())
 				{
 					continue;
 				}
 
 				SkillEntry skillEntry = _transformSkills.get(sl.getId());
-				if ((skillEntry != null) && (skillEntry.getLevel() >= sl.getLevel()))
+				if((skillEntry != null) && (skillEntry.getLevel() >= sl.getLevel()))
 				{
 					continue;
 				}
 
 				skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-				if (skillEntry == null)
+				if(skillEntry == null)
 				{
 					continue;
 				}
@@ -2828,11 +2753,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				added = true;
 			}
 
-			if (added)
+			if(added)
 			{
-				for (final SkillEntry skillEntry : _transformSkills.valueCollection())
+				for(final SkillEntry skillEntry : _transformSkills.valueCollection())
 				{
-					if (addSkill(skillEntry, false) == null)
+					if(addSkill(skillEntry, false) == null)
 					{
 						addedSkillsCount++;
 					}
@@ -2842,7 +2767,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		updateStats();
 
-		if (send && update)
+		if(send && update)
 		{
 			sendSkillList();
 		}
@@ -2867,7 +2792,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setSp(long sp)
 	{
-		if (getActiveSubClass() != null)
+		if(getActiveSubClass() != null)
 		{
 			getActiveSubClass().setSp(sp);
 		}
@@ -2907,11 +2832,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getOnlineTime()
 	{
 		long result = _onlineTime;
-		if (_onlineBeginTime > 0)
+		if(_onlineBeginTime > 0)
 		{
 			result += System.currentTimeMillis() - _onlineBeginTime;
 		}
-		if (_offlineStartTime > 0)
+		if(_offlineStartTime > 0)
 		{
 			result -= System.currentTimeMillis() - _offlineStartTime;
 		}
@@ -2926,12 +2851,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setNoChannel(final long time)
 	{
 		_NoChannel = time;
-		if ((_NoChannel > 2145909600000L) || (_NoChannel < 0))
+		if((_NoChannel > 2145909600000L) || (_NoChannel < 0))
 		{
 			_NoChannel = -1;
 		}
 
-		if (_NoChannel > 0)
+		if(_NoChannel > 0)
 		{
 			_NoChannelBegin = System.currentTimeMillis();
 		}
@@ -2949,20 +2874,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public long getNoChannelRemained()
 	{
 		final long remained = (_NoChannel - System.currentTimeMillis()) + _NoChannelBegin;
-		if (_NoChannel == 0)
+		if(_NoChannel == 0)
 		{
 			return 0;
 		}
-		else if (_NoChannel < 0)
+		else if(_NoChannel < 0)
 		{
 			return -1;
 		}
 		else
 		{
-			if (remained < 0)
-			{
-				return 0;
-			}
+			if(remained < 0)
+			{ return 0; }
 			return remained;
 		}
 	}
@@ -2999,12 +2922,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean canJoinClan()
 	{
-		if (_leaveClanTime == 0)
-		{
-			return true;
-		}
+		if(_leaveClanTime == 0)
+		{ return true; }
 
-		if ((System.currentTimeMillis() - _leaveClanTime) >= (Config.ALT_CLAN_LEAVE_PENALTY_TIME * 60 * 60 * 1000L))
+		if((System.currentTimeMillis() - _leaveClanTime) >= (Config.ALT_CLAN_LEAVE_PENALTY_TIME * 60 * 60 * 1000L))
 		{
 			_leaveClanTime = 0;
 			return true;
@@ -3014,12 +2935,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean canCreateClan()
 	{
-		if (_deleteClanTime == 0)
-		{
-			return true;
-		}
+		if(_deleteClanTime == 0)
+		{ return true; }
 
-		if ((System.currentTimeMillis() - _deleteClanTime) >= (Config.ALT_CLAN_CREATE_PENALTY_TIME * 60 * 60 * 1000L))
+		if((System.currentTimeMillis() - _deleteClanTime) >= (Config.ALT_CLAN_CREATE_PENALTY_TIME * 60 * 60 * 1000L))
 		{
 			_deleteClanTime = 0;
 			return true;
@@ -3030,53 +2949,37 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public IBroadcastPacket canJoinParty(Player inviter)
 	{
 		final Request request = getRequest();
-		if ((request != null) && request.isInProgress() && (request.getOtherPlayer(this) != inviter))
+		if((request != null) && request.isInProgress() && (request.getOtherPlayer(this) != inviter))
 		{
 			return SystemMsg.WAITING_FOR_ANOTHER_REPLY.packet(inviter); // занят
 		}
-		if (isBlockAll() || getMessageRefusal())
-		{
-			return SystemMsg.THAT_PERSON_IS_IN_MESSAGE_REFUSAL_MODE.packet(inviter);
-		}
+		if(isBlockAll() || getMessageRefusal())
+		{ return SystemMsg.THAT_PERSON_IS_IN_MESSAGE_REFUSAL_MODE.packet(inviter); }
 		// уже
-		if (isInParty())
-		{
-			return new SystemMessagePacket(SystemMsg.C1_IS_A_MEMBER_OF_ANOTHER_PARTY_AND_CANNOT_BE_INVITED).addName(this);
-		}
+		if(isInParty())
+		{ return new SystemMessagePacket(SystemMsg.C1_IS_A_MEMBER_OF_ANOTHER_PARTY_AND_CANNOT_BE_INVITED).addName(this); }
 		// Забанен на вход в группу.
-		if (isPartyBlocked())
-		{
-			return new SystemMessagePacket(SystemMsg.C1_HAS_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_CANNOT_JOIN_A_PARTY).addName(this);
-		}
+		if(isPartyBlocked())
+		{ return new SystemMessagePacket(SystemMsg.C1_HAS_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_CANNOT_JOIN_A_PARTY).addName(this); }
 		// в разных инстантах
-		if (inviter.getReflection() != getReflection())
+		if(inviter.getReflection() != getReflection())
 		{
-			if (!inviter.getReflection().isMain() && !getReflection().isMain())
-			{
-				return SystemMsg.INVALID_TARGET.packet(inviter);
-			}
+			if(!inviter.getReflection().isMain() && !getReflection().isMain())
+			{ return SystemMsg.INVALID_TARGET.packet(inviter); }
 		}
 		// олимпиада
-		if (inviter.isInOlympiadMode() || isInOlympiadMode())
-		{
-			return SystemMsg.A_USER_CURRENTLY_PARTICIPATING_IN_THE_OLYMPIAD_CANNOT_SEND_PARTY_AND_FRIEND_INVITATIONS.packet(inviter);
-		}
+		if(inviter.isInOlympiadMode() || isInOlympiadMode())
+		{ return SystemMsg.A_USER_CURRENTLY_PARTICIPATING_IN_THE_OLYMPIAD_CANNOT_SEND_PARTY_AND_FRIEND_INVITATIONS.packet(inviter); }
 		// низя
-		if (!inviter.getPlayerAccess().CanJoinParty || !getPlayerAccess().CanJoinParty)
+		if(!inviter.getPlayerAccess().CanJoinParty || !getPlayerAccess().CanJoinParty)
+		{ return SystemMsg.INVALID_TARGET.packet(inviter); }
+		for(final Event event : getEvents())
 		{
-			return SystemMsg.INVALID_TARGET.packet(inviter);
+			if(!event.canJoinParty(inviter, this))
+			{ return SystemMsg.INVALID_TARGET.packet(inviter); }
 		}
-		for (final Event event : getEvents())
-		{
-			if (!event.canJoinParty(inviter, this))
-			{
-				return SystemMsg.INVALID_TARGET.packet(inviter);
-			}
-		}
-		if (isInFightClub() && !getFightClubEvent().canJoinParty(inviter, this))
-		{
-			return SystemMsg.INVALID_TARGET.packet(inviter);
-		}
+		if(isInFightClub() && !getFightClubEvent().canJoinParty(inviter, this))
+		{ return SystemMsg.INVALID_TARGET.packet(inviter); }
 		return null;
 	}
 
@@ -3131,12 +3034,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sitDown(ChairInstance chair)
 	{
-		if (isSitting() || sittingTaskLaunched || isAlikeDead())
-		{
-			return;
-		}
+		if(isSitting() || sittingTaskLaunched || isAlikeDead())
+		{ return; }
 
-		if (isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || isCastingNow() || getMovement().isMoving())
+		if(isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || isCastingNow() || getMovement().isMoving())
 		{
 			getAI().setNextAction(AINextAction.REST, null, null, false, false);
 			return;
@@ -3145,10 +3046,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		resetWaitSitTime();
 		getAI().setIntention(CtrlIntention.AI_INTENTION_REST, null, null);
 
-		if (chair == null)
+		if(chair == null)
 		{
 			broadcastPacket(new ChangeWaitTypePacket(this, ChangeWaitTypePacket.WT_SITTING));
-			if (getRace() == Race.SYLPH)
+			if(getRace() == Race.SYLPH)
 			{
 				addAbnormalBoard();
 			}
@@ -3168,15 +3069,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void standUp()
 	{
-		if (!isSitting() || sittingTaskLaunched || isInStoreMode() || isAlikeDead())
-		{
-			return;
-		}
+		if(!isSitting() || sittingTaskLaunched || isInStoreMode() || isAlikeDead())
+		{ return; }
 
-		if (isInFightClub() && !getFightClubEvent().canStandUp(this))
-		{
-			return;
-		}
+		if(isInFightClub() && !getFightClubEvent().canStandUp(this))
+		{ return; }
 
 		// FIXME [G1ta0] эффект сам отключается во время действия, если персонаж не
 		// сидит, возможно стоит убрать
@@ -3185,12 +3082,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		getAI().clearNextAction();
 		broadcastPacket(new ChangeWaitTypePacket(this, ChangeWaitTypePacket.WT_STANDING));
-		if (getRace() == Race.SYLPH)
+		if(getRace() == Race.SYLPH)
 		{
 			removeAbnormalBoard();
 		}
 
-		if (_chairObject != null)
+		if(_chairObject != null)
 		{
 			_chairObject.setSeatedPlayer(this);
 		}
@@ -3203,7 +3100,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void updateWaitSitTime()
 	{
-		if (_waitTimeWhenSit < 200)
+		if(_waitTimeWhenSit < 200)
 		{
 			_waitTimeWhenSit += 2;
 		}
@@ -3233,7 +3130,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		return _penalty;
 	}
-	
+
 	public long getAdena()
 	{
 		return getInventory().getAdena();
@@ -3254,16 +3151,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public boolean reduceAdena(long adena, boolean notify)
 	{
-		if (adena < 0)
-		{
-			return false;
-		}
-		if (adena == 0)
-		{
-			return true;
-		}
+		if(adena < 0)
+		{ return false; }
+		if(adena == 0)
+		{ return true; }
 		final boolean result = getInventory().reduceAdena(adena);
-		if (notify && result)
+		if(notify && result)
 		{
 			sendPacket(SystemMessagePacket.removeItems(ItemTemplate.ITEM_ID_ADENA, adena));
 		}
@@ -3285,12 +3178,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public ItemInstance addAdena(long adena, boolean notify)
 	{
-		if (adena < 1)
-		{
-			return null;
-		}
+		if(adena < 1)
+		{ return null; }
 		final ItemInstance item = getInventory().addAdena(adena);
-		if ((item != null) && notify)
+		if((item != null) && notify)
 		{
 			sendPacket(SystemMessagePacket.obtainItems(ItemTemplate.ITEM_ID_ADENA, adena, 0));
 		}
@@ -3325,37 +3216,35 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void onAction(final Player player, boolean shift)
 	{
-		if (!isTargetable(player))
+		if(!isTargetable(player))
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (isFrozen())
+		if(isFrozen())
 		{
 			player.sendPacket(ActionFailPacket.STATIC);
 			return;
 		}
 
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, Player.class, this, true))
-		{
-			return;
-		}
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, Player.class, this, true))
+		{ return; }
 
 		// Check if the other player already target this Player
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
-			if (player.getTarget() != this)
+			if(player.getTarget() != this)
 			{
 				player.sendPacket(ActionFailPacket.STATIC);
 			}
 		}
-		else if (getPrivateStoreType() != STORE_PRIVATE_NONE)
+		else if(getPrivateStoreType() != STORE_PRIVATE_NONE)
 		{
-			if (!player.checkInteractionDistance(this) && (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT))
+			if(!player.checkInteractionDistance(this) && (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT))
 			{
-				if (!shift)
+				if(!shift)
 				{
 					player.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this, null);
 				}
@@ -3369,15 +3258,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				player.doInteract(this);
 			}
 		}
-		else if (isAutoAttackable(player))
+		else if(isAutoAttackable(player))
 		{
 			player.getAI().Attack(this, false, shift);
 		}
-		else if (player != this)
+		else if(player != this)
 		{
-			if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
 			{
-				if (!shift)
+				if(!shift)
 				{
 					player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
 				}
@@ -3400,16 +3289,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void broadcastStatusUpdate()
 	{
-		if (!needStatusUpdate())
+		if(!needStatusUpdate())
 		{ // По идее еше должно срезать траффик. Будут глюки с отображением - убрать это
 			// условие.
-						return;
+			return;
 		}
 
 		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP, UpdateType.VCP_CP, UpdateType.VCP_MAXCP, UpdateType.VCP_DP, UpdateType.VCP_MAXDP, UpdateType.VCP_BP, UpdateType.VCP_MAXBP));
 
 		// Check if a party is in progress
-		if (isInParty())
+		if(isInParty())
 		{
 			// Send the Server->Client packet PartySmallWindowUpdatePacket with current HP,
 			// MP and Level to all other Player of the Party
@@ -3417,14 +3306,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final List<SingleMatchEvent> events = getEvents(SingleMatchEvent.class);
-		for (final SingleMatchEvent event : events)
+		for(final SingleMatchEvent event : events)
 		{
 			event.onStatusUpdate(this);
 		}
 
-		if (isInOlympiadMode() && isOlympiadCompStart())
+		if(isInOlympiadMode() && isOlympiadCompStart())
 		{
-			if (_olympiadGame != null)
+			if(_olympiadGame != null)
 			{
 				_olympiadGame.broadcastInfo(this, null, false);
 			}
@@ -3453,19 +3342,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		sendUserInfo(force);
 
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
-		if (Config.BROADCAST_CHAR_INFO_INTERVAL == 0)
+		if(Config.BROADCAST_CHAR_INFO_INTERVAL == 0)
 		{
 			force = true;
 		}
 
-		if (force)
+		if(force)
 		{
-			if (_broadcastCharInfoTask != null)
+			if(_broadcastCharInfoTask != null)
 			{
 				_broadcastCharInfoTask.cancel(false);
 				_broadcastCharInfoTask = null;
@@ -3474,10 +3361,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return;
 		}
 
-		if (_broadcastCharInfoTask != null)
-		{
-			return;
-		}
+		if(_broadcastCharInfoTask != null)
+		{ return; }
 
 		_broadcastCharInfoTask = ThreadPoolManager.getInstance().schedule(new BroadcastCharInfoTask(), Config.BROADCAST_CHAR_INFO_INTERVAL);
 	}
@@ -3505,14 +3390,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void broadcastCharInfoImpl(IUpdateTypeComponent... components)
 	{
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
-		for (final Player target : World.getAroundObservers(this))
+		for(final Player target : World.getAroundObservers(this))
 		{
-			if (isInvisible(target))
+			if(isInvisible(target))
 			{
 				continue;
 			}
@@ -3524,10 +3407,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendEtcStatusUpdate()
 	{
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
 		sendPacket(new EtcStatusUpdatePacket(this));
 	}
@@ -3556,14 +3437,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendUserInfo(boolean force)
 	{
-		if (!isVisible() || entering || isLogoutStarted() || isFakePlayer())
-		{
-			return;
-		}
+		if(!isVisible() || entering || isLogoutStarted() || isFakePlayer())
+		{ return; }
 
-		if ((Config.USER_INFO_INTERVAL == 0) || force)
+		if((Config.USER_INFO_INTERVAL == 0) || force)
 		{
-			if (_userInfoTask != null)
+			if(_userInfoTask != null)
 			{
 				_userInfoTask.cancel(false);
 				_userInfoTask = null;
@@ -3572,10 +3451,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return;
 		}
 
-		if (_userInfoTask != null)
-		{
-			return;
-		}
+		if(_userInfoTask != null)
+		{ return; }
 
 		_userInfoTask = ThreadPoolManager.getInstance().schedule(new UserInfoTask(), Config.USER_INFO_INTERVAL);
 	}
@@ -3593,9 +3470,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void updateSkillShortcuts(int skillId, int skillLevel)
 	{
-		for (final ShortCut sc : getAllShortCuts())
+		for(final ShortCut sc : getAllShortCuts())
 		{
-			if ((sc.getId() == skillId) && (sc.getType() == ShortCut.ShortCutType.SKILL))
+			if((sc.getId() == skillId) && (sc.getType() == ShortCut.ShortCutType.SKILL))
 			{
 				final ShortCut newsc = new ShortCut(sc.getSlot(), sc.getPage(), sc.getAutoUse(), sc.getType(), sc.getId(), skillLevel, 1);
 				sendPacket(new ShortCutRegisterPacket(this, newsc));
@@ -3607,9 +3484,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void sendStatusUpdate(boolean broadCast, boolean withPet, UpdateType... fields)
 	{
 		if((fields.length == 0) || (entering && !broadCast))
-		{
-			return;
-		}
+		{ return; }
 
 		StatusUpdate su = new StatusUpdate(this, StatusType.Normal, fields);
 
@@ -3650,13 +3525,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sendPacket(IBroadcastPacket p)
 	{
-		if ((p == null) || isPacketIgnored(p))
-		{
-			return;
-		}
+		if((p == null) || isPacketIgnored(p))
+		{ return; }
 
 		final GameClient connection = getNetConnection();
-		if ((connection != null) && connection.isConnected())
+		if((connection != null) && connection.isConnected())
 		{
 			_connection.sendPacket(p.packet(this));
 		}
@@ -3665,7 +3538,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sendPacket(IBroadcastPacket... packets)
 	{
-		for (final IBroadcastPacket p : packets)
+		for(final IBroadcastPacket p : packets)
 		{
 			sendPacket(p);
 		}
@@ -3674,12 +3547,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sendPacket(List<? extends IBroadcastPacket> packets)
 	{
-		if (packets == null)
-		{
-			return;
-		}
+		if(packets == null)
+		{ return; }
 
-		for (final IBroadcastPacket p : packets)
+		for(final IBroadcastPacket p : packets)
 		{
 			sendPacket(p);
 		}
@@ -3687,10 +3558,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private boolean isPacketIgnored(IBroadcastPacket p)
 	{
-		if (p == null)
-		{
-			return true;
-		}
+		if(p == null)
+		{ return true; }
 
 		// if(_notShowTraders && (p.getClass() == PrivateStoreBuyMsg.class ||
 		// p.getClass() == PrivateStoreMsg.class || p.getClass() ==
@@ -3702,36 +3571,36 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void doInteract(GameObject target)
 	{
-		if ((target == null) || isActionsDisabled())
+		if((target == null) || isActionsDisabled())
 		{
 			sendActionFailed();
 			return;
 		}
-		if (target.isPlayer())
+		if(target.isPlayer())
 		{
-			if (checkInteractionDistance(target))
+			if(checkInteractionDistance(target))
 			{
 				final Player temp = (Player) target;
 
-				if ((temp.getPrivateStoreType() == STORE_PRIVATE_SELL) || (temp.getPrivateStoreType() == STORE_PRIVATE_SELL_PACKAGE))
+				if((temp.getPrivateStoreType() == STORE_PRIVATE_SELL) || (temp.getPrivateStoreType() == STORE_PRIVATE_SELL_PACKAGE))
 				{
 					sendPacket(new PrivateStoreList(this, temp));
 				}
-				else if (temp.getPrivateStoreType() == STORE_PRIVATE_BUY)
+				else if(temp.getPrivateStoreType() == STORE_PRIVATE_BUY)
 				{
 					sendPacket(new PrivateStoreBuyList(this, temp));
 				}
-				else if (temp.getPrivateStoreType() == STORE_PRIVATE_MANUFACTURE)
+				else if(temp.getPrivateStoreType() == STORE_PRIVATE_MANUFACTURE)
 				{
 					sendPacket(new RecipeShopSellListPacket(this, temp));
 				}
-				else if (temp.getPrivateStoreType() == STORE_PRIVATE_BUFF)
+				else if(temp.getPrivateStoreType() == STORE_PRIVATE_BUFF)
 				{
 					OfflineBufferManager.getInstance().processBypass(this, "bufflist_" + temp.getObjectId());
 				}
 				sendActionFailed();
 			}
-			else if (getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
+			else if(getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
 			{
 				getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this, null);
 			}
@@ -3746,28 +3615,28 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final boolean forceAutoloot = fromNpc.isFlying() || getReflection().isAutolootForced();
 
-		if (fromNpc.isRaid() && !Config.AUTO_LOOT_FROM_RAIDS && !item.isHerb() && !forceAutoloot)
+		if(fromNpc.isRaid() && !Config.AUTO_LOOT_FROM_RAIDS && !item.isHerb() && !forceAutoloot)
 		{
 			item.dropToTheGround(this, fromNpc);
 			return;
 		}
 
 		// Herbs
-		if (item.isHerb())
+		if(item.isHerb())
 		{
-			if (!AutoLootHerbs && !forceAutoloot)
+			if(!AutoLootHerbs && !forceAutoloot)
 			{
 				item.dropToTheGround(this, fromNpc);
 				return;
 			}
 
-			for (final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
+			for(final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
 			{
 				altUseSkill(skillEntry, this);
 
-				for (final Servitor servitor : getServitors())
+				for(final Servitor servitor : getServitors())
 				{
-					if (servitor.isSummon() && !servitor.isDead())
+					if(servitor.isSummon() && !servitor.isDead())
 					{
 						servitor.altUseSkill(skillEntry, servitor);
 					}
@@ -3777,16 +3646,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return;
 		}
 
-		if (!forceAutoloot && !(_autoLoot && (Config.AUTO_LOOT_ITEM_ID_LIST.isEmpty() || Config.AUTO_LOOT_ITEM_ID_LIST.contains(item.getItemId()))) && !(_autoLootOnlyAdena && item.getTemplate().isAdena()))
+		if(!forceAutoloot && !(_autoLoot && (Config.AUTO_LOOT_ITEM_ID_LIST.isEmpty() || Config.AUTO_LOOT_ITEM_ID_LIST.contains(item.getItemId())))
+				&& !(_autoLootOnlyAdena && item.getTemplate().isAdena()))
 		{
 			item.dropToTheGround(this, fromNpc);
 			return;
 		}
 
 		// Check if the Player is in a Party
-		if (!isInParty())
+		if(!isInParty())
 		{
-			if (!pickupItem(item, Log.Pickup))
+			if(!pickupItem(item, Log.Pickup))
 			{
 				item.dropToTheGround(this, fromNpc);
 				return;
@@ -3804,7 +3674,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void doPickupItem(final GameObject object)
 	{
 		// Check if the L2Object to pick up is a L2ItemInstance
-		if (!object.isItem())
+		if(!object.isItem())
 		{
 			_log.warn("trying to pickup wrong target." + getTarget());
 			return;
@@ -3817,17 +3687,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		synchronized (item)
 		{
-			if (!item.isVisible())
-			{
-				return;
-			}
+			if(!item.isVisible())
+			{ return; }
 
 			// Check if me not owner of item and, if in party, not in owner party and
 			// nonowner pickup delay still active
-			if (!ItemFunctions.checkIfCanPickup(this, item))
+			if(!ItemFunctions.checkIfCanPickup(this, item))
 			{
 				SystemMessage sm;
-				if (item.getItemId() == 57)
+				if(item.getItemId() == 57)
 				{
 					sm = new SystemMessage(SystemMessage.YOU_HAVE_FAILED_TO_PICK_UP_S1_ADENA);
 					sm.addNumber(item.getCount());
@@ -3842,9 +3710,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 
 			// Herbs
-			if (item.isHerb())
+			if(item.isHerb())
 			{
-				for (final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
+				for(final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
 				{
 					altUseSkill(skillEntry, this);
 				}
@@ -3856,9 +3724,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 			final FlagItemAttachment attachment = item.getAttachment() instanceof FlagItemAttachment ? (FlagItemAttachment) item.getAttachment() : null;
 
-			if (!isInParty() || (attachment != null))
+			if(!isInParty() || (attachment != null))
 			{
-				if (pickupItem(item, Log.Pickup))
+				if(pickupItem(item, Log.Pickup))
 				{
 					broadcastPacket(new GetItemPacket(item, getObjectId()));
 					broadcastPickUpMsg(item);
@@ -3876,18 +3744,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final PickableAttachment attachment = item.getAttachment() instanceof PickableAttachment ? (PickableAttachment) item.getAttachment() : null;
 
-		if (!ItemFunctions.canAddItem(this, item))
-		{
-			return false;
-		}
+		if(!ItemFunctions.canAddItem(this, item))
+		{ return false; }
 
 		Log.LogItem(this, log, item);
 		sendPacket(SystemMessagePacket.obtainItems(item));
 
 		// Crafting herbs
-		if ((((item.getItemId() >= 92908) && (item.getItemId() <= 92919)) || ((item.getItemId() >= 92995) && (item.getItemId() <= 92999)) || (item.getItemId() == 92974)) && Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		if((((item.getItemId() >= 92908) && (item.getItemId() <= 92919)) || ((item.getItemId() >= 92995) && (item.getItemId() <= 92999))
+				|| (item.getItemId() == 92974)) && Config.RANDOM_CRAFT_SYSTEM_ENABLED)
 		{
-			switch (item.getItemId())
+			switch(item.getItemId())
 			{
 				case 92908:
 				case 92996:
@@ -3962,7 +3829,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			getInventory().addItem(item);
 		}
 
-		if (attachment != null)
+		if(attachment != null)
 		{
 			attachment.pickUp(this);
 		}
@@ -3977,19 +3844,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setTarget(GameObject newTarget)
 	{
 		// Check if the new target is visible
-		if ((newTarget != null) && !newTarget.isVisible())
+		if((newTarget != null) && !newTarget.isVisible())
 		{
 			newTarget = null;
 		}
 
 		final GameObject oldTarget = getTarget();
 
-		if (oldTarget != null)
+		if(oldTarget != null)
 		{
-			if (oldTarget.equals(newTarget))
+			if(oldTarget.equals(newTarget))
 			{
 				// Validate location of the target.
-				if ((newTarget != null) && (newTarget.getObjectId() != getObjectId()))
+				if((newTarget != null) && (newTarget.getObjectId() != getObjectId()))
 				{
 					sendPacket(new ValidateLocationPacket(newTarget));
 				}
@@ -3999,14 +3866,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		super.setTarget(newTarget);
 
-		if (newTarget != null)
+		if(newTarget != null)
 		{
-			if (newTarget.isCreature())
+			if(newTarget.isCreature())
 			{
 				final Creature target = (Creature) newTarget;
 
 				// Validate location of the new target.
-				if (target.getObjectId() != getObjectId())
+				if(target.getObjectId() != getObjectId())
 				{
 					sendPacket(new ValidateLocationPacket(target));
 				}
@@ -4015,7 +3882,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				sendPacket(new MyTargetSelectedPacket(this, target));
 
 				// Send max/current hp.
-				if (target.isServitor())
+				if(target.isServitor())
 				{
 					sendPacket(new StatusUpdate(target, this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 				}
@@ -4041,23 +3908,23 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			broadcastPacket(new TargetUnselectedPacket(this));
 		}
 
-		if ((newTarget != null) && (newTarget != this) && (getDecoys() != null) && !getDecoys().isEmpty() && newTarget.isCreature())
+		if((newTarget != null) && (newTarget != this) && (getDecoys() != null) && !getDecoys().isEmpty() && newTarget.isCreature())
 		{
-			for (final DecoyInstance dec : getDecoys())
+			for(final DecoyInstance dec : getDecoys())
 			{
-				if (dec == null)
+				if(dec == null)
 				{
 					continue;
 				}
-				if (dec.getAI() == null)
+				if(dec.getAI() == null)
 				{
 					_log.info("This decoy has NULL AI");
 					continue;
 				}
-				if (newTarget.isCreature())
+				if(newTarget.isCreature())
 				{
 					final Creature _nt = (Creature) newTarget;
-					if (_nt.isInPeaceZone())
+					if(_nt.isInPeaceZone())
 					{ // won't attack in peace zone anyone.
 						continue;
 					}
@@ -4088,18 +3955,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
 
-		if (weapon == null)
-		{
-			return null;
-		}
+		if(weapon == null)
+		{ return null; }
 
 		final ItemTemplate template = weapon.getTemplate();
-		if (template == null)
-		{
-			return null;
-		}
+		if(template == null)
+		{ return null; }
 
-		if (!(template instanceof WeaponTemplate))
+		if(!(template instanceof WeaponTemplate))
 		{
 			_log.warn("Template in active weapon not WeaponTemplate! (Item ID[" + weapon.getItemId() + "])");
 			return null;
@@ -4128,17 +3991,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final ItemInstance weapon = getSecondaryWeaponInstance();
 
-		if (weapon == null)
-		{
-			return null;
-		}
+		if(weapon == null)
+		{ return null; }
 
 		final ItemTemplate item = weapon.getTemplate();
 
-		if (item instanceof WeaponTemplate)
-		{
-			return (WeaponTemplate) item;
-		}
+		if(item instanceof WeaponTemplate)
+		{ return (WeaponTemplate) item; }
 
 		return null;
 	}
@@ -4146,28 +4005,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public ArmorType getWearingArmorType()
 	{
 		final ItemInstance chest = getInventory().getPaperdollItem(Inventory.PAPERDOLL_CHEST);
-		if (chest == null)
-		{
-			return ArmorType.NONE;
-		}
+		if(chest == null)
+		{ return ArmorType.NONE; }
 
 		final ItemType chestItemType = chest.getItemType();
-		if (!(chestItemType instanceof ArmorType))
-		{
-			return ArmorType.NONE;
-		}
+		if(!(chestItemType instanceof ArmorType))
+		{ return ArmorType.NONE; }
 
 		final ArmorType chestArmorType = (ArmorType) chestItemType;
-		if (chest.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
-		{
-			return chestArmorType;
-		}
+		if(chest.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+		{ return chestArmorType; }
 
 		final ItemInstance legs = getInventory().getPaperdollItem(Inventory.PAPERDOLL_LEGS);
-		if ((legs == null) || (legs.getItemType() != chestArmorType))
-		{
-			return ArmorType.NONE;
-		}
+		if((legs == null) || (legs.getItemType() != chestArmorType))
+		{ return ArmorType.NONE; }
 
 		return chestArmorType;
 	}
@@ -4175,25 +4026,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void reduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean canReflectAndAbsorb, boolean transferDamage, boolean isDot, boolean sendReceiveMessage, boolean sendGiveMessage, boolean crit, boolean miss, boolean shld, double elementalDamage, boolean elementalCrit)
 	{
-		if ((attacker == null) || isDead() || (attacker.isDead() && !isDot))
-		{
-			return;
-		}
+		if((attacker == null) || isDead() || (attacker.isDead() && !isDot))
+		{ return; }
 
 		// 5182 = Blessing of protection, работает если разница уровней больше 10 и не в
 		// зоне осады
-		if (attacker.isPlayer() && (Math.abs(attacker.getLevel() - getLevel()) > 10))
+		if(attacker.isPlayer() && (Math.abs(attacker.getLevel() - getLevel()) > 10))
 		{
 			// ПК не может нанести урон чару с блессингом
-			if (attacker.isPK() && getAbnormalList().contains(5182) && !isInSiegeZone())
-			{
-				return;
-			}
+			if(attacker.isPK() && getAbnormalList().contains(5182) && !isInSiegeZone())
+			{ return; }
 			// чар с блессингом не может нанести урон ПК
-			if (isPK() && attacker.getAbnormalList().contains(5182) && !attacker.isInSiegeZone())
-			{
-				return;
-			}
+			if(isPK() && attacker.getAbnormalList().contains(5182) && !attacker.isInSiegeZone())
+			{ return; }
 		}
 
 		// Reduce the current HP of the Player
@@ -4203,15 +4048,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	protected void onReduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean isDot)
 	{
-		if (damage <= 0)
-		{
-			return;
-		}
+		if(damage <= 0)
+		{ return; }
 
-		if (standUp)
+		if(standUp)
 		{
 			standUp();
-			if (isFakeDeath())
+			if(isFakeDeath())
 			{
 				breakFakeDeath();
 			}
@@ -4219,12 +4062,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		final double originDamage = damage;
 
-		if (attacker.isPlayable())
+		if(attacker.isPlayable())
 		{
-			if (!directHp && (getCurrentCp() > 0))
+			if(!directHp && (getCurrentCp() > 0))
 			{
 				double cp = getCurrentCp();
-				if (cp >= damage)
+				if(cp >= damage)
 				{
 					cp -= damage;
 					damage = 0;
@@ -4235,7 +4078,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					cp = 0;
 				}
 				setCurrentCp(cp, !isDot);
-				if (isDot)
+				if(isDot)
 				{
 					final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_CP);
 					attacker.sendPacket(su);
@@ -4249,9 +4092,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final double hp = getCurrentHp();
 
 		final DuelEvent duelEvent = getEvent(DuelEvent.class);
-		if (duelEvent != null)
+		if(duelEvent != null)
 		{
-			if (((hp - damage) <= 1) && !isDeathImmune()) // если хп <= 1 - убит
+			if(((hp - damage) <= 1) && !isDeathImmune()) // если хп <= 1 - убит
 			{
 				setCurrentHp(1, false);
 				duelEvent.onDie(this);
@@ -4259,12 +4102,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 		}
 
-		if (isInOlympiadMode())
+		if(isInOlympiadMode())
 		{
 			final OlympiadGame game = _olympiadGame;
 
 			final Player player = attacker.getPlayer();
-			if ((player != null) && (getObjectId() != player.getObjectId()) && ((skill == null) || skill.isDebuff()))
+			if((player != null) && (getObjectId() != player.getObjectId()) && ((skill == null) || skill.isDebuff()))
 			{ // считаем
 				// дамаг
 				// от
@@ -4276,7 +4119,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				game.addDealedDamage(player, Math.min(hp, originDamage));
 			}
 
-			if (((hp - damage) <= 1) && !isDeathImmune()) // если хп <= 1 - убит
+			if(((hp - damage) <= 1) && !isDeathImmune()) // если хп <= 1 - убит
 			{
 				setCurrentHp(1, false);
 				attacker.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
@@ -4286,7 +4129,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 		}
 
-		if ((getStat().calc(Stats.RestoreHPGiveDamage) == 1) && Rnd.chance(1))
+		if((getStat().calc(Stats.RestoreHPGiveDamage) == 1) && Rnd.chance(1))
 		{
 			setCurrentHp(getCurrentHp() + (getMaxHp() / 10), false);
 		}
@@ -4298,27 +4141,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		// Reduce the Experience of the Player in function of the calculated Death
 		// Penalty
-		if (!Config.ALT_GAME_DELEVEL)
-		{
-			return;
-		}
-		if ((killer == null) || isInFightClub())
-		{
-			return;
-		}
+		if(!Config.ALT_GAME_DELEVEL)
+		{ return; }
+		if((killer == null) || isInFightClub())
+		{ return; }
 		deathPenalty(killer);
 	}
 
 	public final boolean atWarWith(final Player player)
 	{
 		final Clan playerClan = getClan();
-		if (playerClan != null)
+		if(playerClan != null)
 		{
 			final ClanWar war = playerClan.getWarWith(player.getClanId());
-			if (war != null)
-			{
-				return (getPledgeType() != Clan.SUBUNIT_ACADEMY) && (player.getPledgeType() != Clan.SUBUNIT_ACADEMY);
-			}
+			if(war != null)
+			{ return (getPledgeType() != Clan.SUBUNIT_ACADEMY) && (player.getPledgeType() != Clan.SUBUNIT_ACADEMY); }
 		}
 		return false;
 	}
@@ -4326,13 +4163,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean atMutualWarWith(Player player)
 	{
 		final Clan playerClan = getClan();
-		if (playerClan != null)
+		if(playerClan != null)
 		{
 			final ClanWar war = playerClan.getWarWith(player.getClanId());
-			if ((war != null) && (war.getPeriod() == ClanWarPeriod.MUTUAL))
-			{
-				return (getPledgeType() != Clan.SUBUNIT_ACADEMY) && (player.getPledgeType() != Clan.SUBUNIT_ACADEMY);
-			}
+			if((war != null) && (war.getPeriod() == ClanWarPeriod.MUTUAL))
+			{ return (getPledgeType() != Clan.SUBUNIT_ACADEMY) && (player.getPledgeType() != Clan.SUBUNIT_ACADEMY); }
 		}
 		return false;
 	}
@@ -4347,14 +4182,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public final void doKillInPeace(final Player killer) // Check if the Player killed haven't Karma
 	{
-		if (!isPK())
+		if(!isPK())
 		{
 			doPurePk(killer);
 		}
 		else
 		{
 			final String var = PK_KILL_VAR + "_" + getObjectId();
-			if (!killer.getVarBoolean(var))
+			if(!killer.getVarBoolean(var))
 			{
 				final long expirationTime = System.currentTimeMillis() + (30 * 60 * 1000);
 				killer.setVar(var, true, expirationTime);
@@ -4364,7 +4199,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void checkAddItemToDrop(List<ItemInstance> array, List<ItemInstance> items, int maxCount)
 	{
-		for (int i = 0; (i < maxCount) && !items.isEmpty(); i++)
+		for(int i = 0; (i < maxCount) && !items.isEmpty(); i++)
 		{
 			array.add(items.remove(Rnd.get(items.size())));
 		}
@@ -4373,78 +4208,66 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public FlagItemAttachment getActiveWeaponFlagAttachment()
 	{
 		final ItemInstance item = getActiveWeaponInstance();
-		if ((item == null) || !(item.getAttachment() instanceof FlagItemAttachment))
-		{
-			return null;
-		}
+		if((item == null) || !(item.getAttachment() instanceof FlagItemAttachment))
+		{ return null; }
 		return (FlagItemAttachment) item.getAttachment();
 	}
 
 	protected void doPKPVPManage(Creature killer)
 	{
 		final FlagItemAttachment attachment = getActiveWeaponFlagAttachment();
-		if (attachment != null)
+		if(attachment != null)
 		{
 			attachment.onDeath(this, killer);
 		}
 
-		if ((killer == null) || isMyServitor(killer.getObjectId()) || (killer == this))
-		{
-			return;
-		}
+		if((killer == null) || isMyServitor(killer.getObjectId()) || (killer == this))
+		{ return; }
 
-		if (killer.isServitor() && ((killer = killer.getPlayer()) == null))
-		{
-			return;
-		}
+		if(killer.isServitor() && ((killer = killer.getPlayer()) == null))
+		{ return; }
 
-		if (killer.isPlayer())
+		if(killer.isPlayer())
 		{
 			PvPRewardManager.tryGiveReward(this, killer.getPlayer());
 		}
 
-		if ((killer.getTeam() != TeamType.NONE) && (getTeam() != TeamType.NONE))
-		{
-			return;
-		}
+		if((killer.getTeam() != TeamType.NONE) && (getTeam() != TeamType.NONE))
+		{ return; }
 
-		if (isInFightClub())
-		{
-			return;
-		}
+		if(isInFightClub())
+		{ return; }
 
 		ClanWar clanWar = null;
 
 		// Processing Karma/PKCount/PvPCount for killer
-		if (killer.isPlayer() || (killer instanceof FakePlayer)) // addon if killer is clone instance should do also this
-																// method.
+		if(killer.isPlayer() || (killer instanceof FakePlayer)) // addon if killer is clone instance should do also this
+		// method.
 		{
 			final Player pk = killer.getPlayer();
-			if ((pk.getPreviousPvpRank() > 0) && (pk.getPreviousPvpRank() < 4))
+			if((pk.getPreviousPvpRank() > 0) && (pk.getPreviousPvpRank() < 4))
 			{
 				pk.getAI().Cast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, 52020, 1), pk, true, false);
 			}
 
 			final boolean war = atMutualWarWith(pk);
 
-			if ((getPledgeType() != Clan.SUBUNIT_ACADEMY) && (pk.getPledgeType() != Clan.SUBUNIT_ACADEMY))
+			if((getPledgeType() != Clan.SUBUNIT_ACADEMY) && (pk.getPledgeType() != Clan.SUBUNIT_ACADEMY))
 			{
 				final Clan clan = getClan();
-				if (clan != null)
+				if(clan != null)
 				{
 					clanWar = clan.getWarWith(pk.getClanId());
-					if (clanWar != null)
+					if(clanWar != null)
 					{
 						clanWar.onKill(pk, this);
 					}
 				}
 			}
 
-			if (isInSiegeZone())
-			{
-				return;
-			}
-			
+			if(isInSiegeZone())
+			{ return; }
+
 			final PvpbookInfo pkPvpbookInfo = pk.getPvpbook().getInfo(getObjectId(), 1);
 			if((pkPvpbookInfo != null) && !pkPvpbookInfo.isRevenged())
 			{
@@ -4458,7 +4281,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					final Player player = pkPvpbookInfo.getKilled();
 					if(player != null)
 					{
-						final PvpbookInfo reqPvpbookInfo = player.getPvpbook().getInfo(getObjectId(),1);
+						final PvpbookInfo reqPvpbookInfo = player.getPvpbook().getInfo(getObjectId(), 1);
 						if((reqPvpbookInfo != null) && !reqPvpbookInfo.isRevenged())
 						{
 							reqPvpbookInfo.setRevenged(true);
@@ -4475,22 +4298,22 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 			final boolean isInPvpZone = isInZoneBattle() || killer.isInZoneBattle();
 			final Castle castle = getCastle();
-			if ((getPvpFlag() > 0) || isInPvpZone || war || ((castle != null) && (castle.getResidenceSide() == ResidenceSide.DARK)))
+			if((getPvpFlag() > 0) || isInPvpZone || war || ((castle != null) && (castle.getResidenceSide() == ResidenceSide.DARK)))
 			{
 				pk.setPvpKills(pk.getPvpKills() + 1);
 
-				if ((pk.getLevel() >= 40) && (pk.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal()))
+				if((pk.getLevel() >= 40) && (pk.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal()))
 				{
 					updatePvpRanking(pk);
 				}
 
 				int pvpKills = pk.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0) + 1;
-				if (pvpKills > Config.STEADY_BOX_KILL_PLAYERS)
+				if(pvpKills > Config.STEADY_BOX_KILL_PLAYERS)
 				{
 					pvpKills = Config.STEADY_BOX_KILL_PLAYERS;
 				}
 				pk.setVar(PlayerVariables.SB_KILLED_PLAYERS, pvpKills);
-				if (pvpKills == Config.STEADY_BOX_KILL_PLAYERS)
+				if(pvpKills == Config.STEADY_BOX_KILL_PLAYERS)
 				{
 					pk.generateSteadyBox(true);
 				}
@@ -4500,10 +4323,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				doKillInPeace(pk);
 			}
 
-			if (getReflection().isMain() && !isInPvpZone)
+			if(getReflection().isMain() && !isInPvpZone)
 			{
-				PvpbookInfo pvpbookInfo= getPvpbook().getInfo(pk.getObjectId(), 1);
-				if(pvpbookInfo!=null)
+				PvpbookInfo pvpbookInfo = getPvpbook().getInfo(pk.getObjectId(), 1);
+				if(pvpbookInfo != null)
 				{
 					pvpbookInfo.setDeathTime((int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
 				}
@@ -4511,7 +4334,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				{
 					pvpbookInfo = getPvpbook().addInfo(this, pk, (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()), 0, Pvpbook.MAX_LOCATION_SHOW_COUNT_PER_DAY, Pvpbook.MAX_TELEPORT_COUNT_PER_DAY, Pvpbook.MAX_TELEPORT_HELP_COUNT_PER_DAY, 1, 0);
 				}
-				
+
 				if(pvpbookInfo != null)
 				{
 					sendPacket(new ExPvpBookShareRevengeNewRevengeInfo(getName(), pvpbookInfo.getKillerName(), 1));
@@ -4522,30 +4345,26 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final int karma = _karma;
-		if (isPK())
+		if(isPK())
 		{
 			increaseKarma(Config.KARMA_LOST_BASE);
-			if (_karma > 0)
+			if(_karma > 0)
 			{
 				_karma = 0;
 			}
 		}
 
 		// No drop from GM's
-		if (isFakePlayer() || (!Config.KARMA_DROP_GM && isGM()))
-		{
-			return;
-		}
+		if(isFakePlayer() || (!Config.KARMA_DROP_GM && isGM()))
+		{ return; }
 
 		// в нормальных условиях вещи теряются только при смерти от игрока
 		final boolean isPvP = killer.isPlayable();
 
-		if (isPvP)
+		if(isPvP)
 		{
-			if ((_pkKills < Config.MIN_PK_TO_ITEMS_DROP) || (Config.KARMA_NEEDED_TO_DROP && (karma >= 0)))
-			{
-				return;
-			}
+			if((_pkKills < Config.MIN_PK_TO_ITEMS_DROP) || (Config.KARMA_NEEDED_TO_DROP && (karma >= 0)))
+			{ return; }
 		}
 		else
 		{
@@ -4555,14 +4374,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		int max_drop_count = 0;
 
 		double dropRate = 0; // базовый шанс в процентах
-		if (isPvP)
+		if(isPvP)
 		{
-			if (karma >= 0)
+			if(karma >= 0)
 			{
 				dropRate = Config.KARMA_DROPCHANCE_1 * Config.KARMA_DROPCHANCE_MOD;
 				max_drop_count = Config.KARMA_ITEMSDROP_1;
 			}
-			else if (karma >= -18000)
+			else if(karma >= -18000)
 			{
 				dropRate = Config.KARMA_DROPCHANCE_2 * Config.KARMA_DROPCHANCE_MOD;
 				max_drop_count = Config.KARMA_ITEMSDROP_2;
@@ -4576,56 +4395,53 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		int dropCount = 0;
 
-		for (int i = 0; (i < Math.ceil(dropRate / 100)) && (i < max_drop_count); i++)
+		for(int i = 0; (i < Math.ceil(dropRate / 100)) && (i < max_drop_count); i++)
 		{
-			if (Rnd.chance(dropRate))
+			if(Rnd.chance(dropRate))
 			{
 				dropCount++;
 			}
 		}
 
-		final List<ItemInstance> 
-		drop = new LazyArrayList<ItemInstance>(), 
-		dropItem = new LazyArrayList<ItemInstance>();
+		final List<ItemInstance> drop = new LazyArrayList<ItemInstance>(),
+				dropItem = new LazyArrayList<ItemInstance>();
 		getInventory().writeLock();
 		getPenalty().writeLock();
 		try
 		{
-			for (final ItemInstance item : getInventory().getItems())
+			for(final ItemInstance item : getInventory().getItems())
 			{
-				if (!item.canBeDropped(this, true) || Config.KARMA_LIST_NONDROPPABLE_ITEMS.contains(item.getItemId()))
+				if(!item.canBeDropped(this, true) || Config.KARMA_LIST_NONDROPPABLE_ITEMS.contains(item.getItemId()))
 				{
 					continue;
 				}
-		
-				if ((item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON) || (item.getTemplate().getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR) || (item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY))
+
+				if((item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON) || (item.getTemplate().getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR)
+						|| (item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY))
 				{
 					dropItem.add(item);
 				}
 			}
-		
+
 			checkAddItemToDrop(drop, dropItem, dropCount);
-		
+
 			// Dropping items, if present
-			if (drop.isEmpty())
-			{
-				return;
-			}
-		
+			if(drop.isEmpty())
+			{ return; }
+
 			_droppedItemsInfo.clear();
 			final int i = 1;
-		
-		
-			for (ItemInstance item : drop)
+
+			for(ItemInstance item : drop)
 			{
 				ItemInstance remove_item = getInventory().removeItemByObjectId(item.getObjectId(), item.getCount());
 				remove_item.setLostDate((int) (System.currentTimeMillis() / 1000));
-				
+
 				getPenalty().addItem(remove_item);
-				
+
 				_droppedItemsInfo.put(i, new DroppedItemsHolder(item.getItemId(), item.getEnchantLevel(), (int) item.getCount()));
-		
-				if (item.getEnchantLevel() > 0)
+
+				if(item.getEnchantLevel() > 0)
 				{
 					sendPacket(new SystemMessage(SystemMessage.DROPPED__S1_S2).addNumber(item.getEnchantLevel()).addItemName(item.getItemId()));
 				}
@@ -4633,12 +4449,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				{
 					sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_DROPPED_S1).addItemName(item.getItemId()));
 				}
-		
-				
+
 				broadcastPacket(new ExPenaltyItemDrop(Location.findAroundPosition(this, Config.KARMA_RANDOM_DROP_LOCATION_LIMIT), item.getItemId()));
 			}
-		
-			if(getPenalty().getItems().length>0)
+
+			if(getPenalty().getItems().length > 0)
 			{
 				sendPacket(new ExPenaltyItemInfo(this));
 			}
@@ -4650,7 +4465,6 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 		sendChanges();
 	}
-
 
 	public Map<Integer, DroppedItemsHolder> getDroppedItemsInfo()
 	{
@@ -4672,15 +4486,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	protected void onDeath(Creature killer)
 	{
-		if (isInStoreMode())
+		if(isInStoreMode())
 		{
 			setPrivateStoreType(STORE_PRIVATE_NONE);
 			storePrivateStore();
 		}
-		if (isProcessingRequest())
+		if(isProcessingRequest())
 		{
 			final Request request = getRequest();
-			if (isInTrade())
+			if(isInTrade())
 			{
 				final Player parthner = request.getOtherPlayer(this);
 				sendPacket(TradeDonePacket.FAIL);
@@ -4694,11 +4508,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean checkPvp = true;
 
 		final Player killerPlayer = killer.getPlayer();
-		if (killerPlayer != null)
+		if(killerPlayer != null)
 		{
-			for (final SingleMatchEvent event : getEvents(SingleMatchEvent.class))
+			for(final SingleMatchEvent event : getEvents(SingleMatchEvent.class))
 			{
-				if (!event.canIncreasePvPPKCounter(killerPlayer, this))
+				if(!event.canIncreasePvPPKCounter(killerPlayer, this))
 				{
 					checkPvp = false;
 					break;
@@ -4708,7 +4522,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			broadcastRelation();
 		}
 
-		if (checkPvp)
+		if(checkPvp)
 		{
 			doPKPVPManage(killer);
 			altDeathPenalty(killer);
@@ -4718,33 +4532,33 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		stopWaterTask();
 
-		if (!isSalvation() && isInSiegeZone() && isCharmOfCourage())
+		if(!isSalvation() && isInSiegeZone() && isCharmOfCourage())
 		{
 			ask(new ConfirmDlgPacket(SystemMsg.YOUR_CHARM_OF_COURAGE_IS_TRYING_TO_RESURRECT_YOU, 60000), new ReviveAnswerListener(this, 100, false));
 			setCharmOfCourage(false);
 		}
 
-		for (final QuestState qs : getAllQuestsStates())
+		for(final QuestState qs : getAllQuestsStates())
 		{
 			qs.getQuest().notifyTutorialEvent("CE", false, "200", qs);
 		}
 
-		if (isMounted())
+		if(isMounted())
 		{
 			_mount.onDeath();
 		}
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.notifyMasterDeath();
 		}
 
-		for (final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_DIE))
+		for(final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_DIE))
 		{
 			hook.onPlayerDie(this, killer);
 		}
 
-		for (final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_DIE))
+		for(final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_DIE))
 		{
 			hook.onPlayerDie(this, killer);
 		}
@@ -4759,21 +4573,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void restoreExp(double percent)
 	{
-		if (percent == 0)
-		{
-			return;
-		}
+		if(percent == 0)
+		{ return; }
 
 		long lostexp = 0;
 
 		final String lostexps = getVar("lostexp");
-		if (lostexps != null)
+		if(lostexps != null)
 		{
 			lostexp = Long.parseLong(lostexps);
 			unsetVar("lostexp");
 		}
 
-		if (lostexp != 0)
+		if(lostexp != 0)
 		{
 			addExpAndSp((long) ((lostexp * percent) / 100), 0);
 		}
@@ -4781,10 +4593,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void deathPenalty(Creature killer)
 	{
-		if ((killer == null) || isHaveZoneParam(ZoneTemplate.NOT_LOST_EXP_PARAM) || (getReflectionId() <= -1000))
-		{
-			return;
-		}
+		if((killer == null) || isHaveZoneParam(ZoneTemplate.NOT_LOST_EXP_PARAM) || (getReflectionId() <= -1000))
+		{ return; }
 
 		final boolean atwar = (killer.getPlayer() != null) && atMutualWarWith(killer.getPlayer());
 
@@ -4793,30 +4603,28 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// The death steal you some Exp: 10-40 lvl 8% loose
 		double percentLost = Config.PERCENT_LOST_ON_DEATH[getLevel()];
 
-		if (isPK())
+		if(isPK())
 		{
 			percentLost *= Config.PERCENT_LOST_ON_DEATH_MOD_FOR_PK;
 		}
-		else if (isInPeaceZone())
+		else if(isInPeaceZone())
 		{
 			percentLost *= Config.PERCENT_LOST_ON_DEATH_MOD_IN_PEACE_ZONE;
 		}
 		else
 		{
-			if (atwar)
+			if(atwar)
 			{ // TODO: Проверить, должен ли влиять данный подификатор на ПК!
 				percentLost *= Config.PERCENT_LOST_ON_DEATH_MOD_IN_WAR;
 			}
-			else if ((killer.getPlayer() != null) && (killer.getPlayer() != this))
+			else if((killer.getPlayer() != null) && (killer.getPlayer() != this))
 			{
 				percentLost *= Config.PERCENT_LOST_ON_DEATH_MOD_IN_PVP;
 			}
 		}
 
-		if (percentLost <= 0)
-		{
-			return;
-		}
+		if(percentLost <= 0)
+		{ return; }
 
 		// Calculate the Experience loss
 		long lostexp = (long) (((Experience.getExpForLevel(level + 1) - Experience.getExpForLevel(level)) * percentLost) / 100);
@@ -4824,41 +4632,41 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		// На зарегистрированной осаде нет потери опыта, на чужой осаде - как при
 		// обычной смерти от *моба*
-		if (isInSiegeZone())
+		if(isInSiegeZone())
 		{
 			final boolean onSiegeEvent = containsEvent(SiegeEvent.class);
-			if (onSiegeEvent)
+			if(onSiegeEvent)
 			{
 				lostexp = 0;
 			}
 
-			if (onSiegeEvent)
+			if(onSiegeEvent)
 			{
 				int syndromeLvl = 0;
-				for (final Abnormal e : getAbnormalList())
+				for(final Abnormal e : getAbnormalList())
 				{
-					if (e.getSkill().getId() == Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME)
+					if(e.getSkill().getId() == Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME)
 					{
 						syndromeLvl = e.getSkill().getLevel();
 						break;
 					}
 				}
 
-				if (syndromeLvl == 0)
+				if(syndromeLvl == 0)
 				{
 					final Skill skill = SkillHolder.getInstance().getSkill(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME, 1);
-					if (skill != null)
+					if(skill != null)
 					{
 						skill.getEffects(this, this);
 					}
 				}
-				else if (syndromeLvl < 5)
+				else if(syndromeLvl < 5)
 				{
 					getAbnormalList().stop(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME);
 					final Skill skill = SkillHolder.getInstance().getSkill(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME, syndromeLvl + 1);
 					skill.getEffects(this, this);
 				}
-				else if (syndromeLvl == 5)
+				else if(syndromeLvl == 5)
 				{
 					getAbnormalList().stop(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME);
 					final Skill skill = SkillHolder.getInstance().getSkill(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME, 5);
@@ -4871,7 +4679,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		addExpAndSp(-lostexp, 0);
 		final long lost = before - getExp();
 
-		if (lost > 0)
+		if(lost > 0)
 		{
 			setVar("lostexp", lost);
 		}
@@ -4894,15 +4702,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public boolean isBusy()
 	{
-		return isProcessingRequest() || isOutOfControl() || isInOlympiadMode() || (getTeam() != TeamType.NONE) || isInStoreMode() || isInDuel() || getMessageRefusal() || isBlockAll() || isInvisible(null);
+		return isProcessingRequest() || isOutOfControl() || isInOlympiadMode() || (getTeam() != TeamType.NONE) || isInStoreMode() || isInDuel()
+				|| getMessageRefusal() || isBlockAll() || isInvisible(null);
 	}
 
 	public boolean isProcessingRequest()
 	{
-		if ((_request == null) || !_request.isInProgress())
-		{
-			return false;
-		}
+		if((_request == null) || !_request.isInProgress())
+		{ return false; }
 		return true;
 	}
 
@@ -4913,10 +4720,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public List<IClientOutgoingPacket> addVisibleObject(GameObject object, Creature dropper)
 	{
-		if (isLogoutStarted() || (object == null) || (object.getObjectId() == getObjectId()) || !object.isVisible() || object.isObservePoint())
-		{
-			return Collections.emptyList();
-		}
+		if(isLogoutStarted() || (object == null) || (object.getObjectId() == getObjectId()) || !object.isVisible() || object.isObservePoint())
+		{ return Collections.emptyList(); }
 
 		return object.addPacketList(this, dropper);
 	}
@@ -4924,65 +4729,67 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		if ((isInvisible(forPlayer) && (forPlayer.getObjectId() != getObjectId())) || (isInStoreMode() && forPlayer.getVarBoolean(NO_TRADERS_VAR)))
-		{
-			return Collections.emptyList();
-		}
+		if((isInvisible(forPlayer) && (forPlayer.getObjectId() != getObjectId())) || (isInStoreMode() && forPlayer.getVarBoolean(NO_TRADERS_VAR)))
+		{ return Collections.emptyList(); }
 
 		final List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
-		if (forPlayer.getObjectId() != getObjectId())
+		if(forPlayer.getObjectId() != getObjectId())
 		{
 			list.add(isPolymorphed() ? new NpcInfoPoly(this, forPlayer) : new ExCharInfo(this, forPlayer));
 		}
 
-		if (isSitting() && (_chairObject != null))
+		if(isSitting() && (_chairObject != null))
 		{
 			list.add(new ChairSitPacket(this, _chairObject));
 		}
 
-		if (isInStoreMode())
+		if(isInStoreMode())
 		{
 			list.add(getPrivateStoreMsgPacket(forPlayer));
 		}
 
 		CreatureSkillCast skillCast = getSkillCast(SkillCastingType.NORMAL);
-		if (skillCast.isCastingNow())
+		if(skillCast.isCastingNow())
 		{
 			final Creature castingTarget = skillCast.getTarget();
 			final SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 			final long animationEndTime = skillCast.getAnimationEndTime();
-			if ((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature() && (animationEndTime > 0))
+			if((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature()
+					&& (animationEndTime > 0))
 			{
-				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0, SkillCastingType.NORMAL));
+				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+						- System.currentTimeMillis()), 0, SkillCastingType.NORMAL));
 			}
 		}
 
 		skillCast = getSkillCast(SkillCastingType.NORMAL_SECOND);
-		if (skillCast.isCastingNow())
+		if(skillCast.isCastingNow())
 		{
 			final Creature castingTarget = skillCast.getTarget();
 			final SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 			final long animationEndTime = skillCast.getAnimationEndTime();
-			if ((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature() && (animationEndTime > 0))
+			if((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature()
+					&& (animationEndTime > 0))
 			{
-				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0, SkillCastingType.NORMAL_SECOND));
+				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+						- System.currentTimeMillis()), 0, SkillCastingType.NORMAL_SECOND));
 			}
 		}
 
-		if (isInCombat())
+		if(isInCombat())
 		{
 			list.add(new AutoAttackStartPacket(getObjectId()));
 		}
 
 		list.add(new RelationChangedPacket(this, forPlayer));
 
-		if (isInBoat())
+		if(isInBoat())
 		{
 			list.add(getBoat().getOnPacket(this, getInBoatPosition()));
 		}
 		else
 		{
-			if (getMovement().isMoving() || getMovement().isFollow())
+			if(getMovement().isMoving() || getMovement().isFollow())
 			{
 				list.add(movePacket());
 			}
@@ -4991,7 +4798,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// VISTALL: во время ездовой трансформы, нужно послать второй раз при появлении
 		// обьекта
 		// DS: для магазина то же самое, иначе иногда не виден после входа в игру
-		if (/* isInMountTransform() || */(isInStoreMode() && entering))
+		if(/* isInMountTransform() || */(isInStoreMode() && entering))
 		{
 			list.add(new ExCharInfo(this, forPlayer));
 			// list.add(new ExBR_ExtraUserInfo(this));
@@ -5002,21 +4809,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public List<IClientOutgoingPacket> removeVisibleObject(GameObject object, List<IClientOutgoingPacket> list)
 	{
-		if (isLogoutStarted() || (object == null) || (object.getObjectId() == getObjectId()) || object.isObservePoint())
+		if(isLogoutStarted() || (object == null) || (object.getObjectId() == getObjectId()) || object.isObservePoint())
 		{ // FIXME
 			// ||
-																																	// isTeleporting()
-						return Collections.emptyList();
+			// isTeleporting()
+			return Collections.emptyList();
 		}
 
 		final List<IClientOutgoingPacket> result = list == null ? object.deletePacketList(this) : list;
 
-		if ((getParty() != null) && (object instanceof Creature))
+		if((getParty() != null) && (object instanceof Creature))
 		{
 			getParty().removeTacticalSign((Creature) object);
 		}
 
-		if (!isInObserverMode())
+		if(!isInObserverMode())
 		{
 			getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, object);
 		}
@@ -5026,7 +4833,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void levelSet(int levels)
 	{
-		if (levels > 0)
+		if(levels > 0)
 		{
 			checkLevelUpReward(false);
 
@@ -5036,7 +4843,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			setCurrentHpMp(getMaxHp(), getMaxMp());
 			setCurrentCp(getMaxCp());
 
-			for (final QuestState qs : getAllQuestsStates())
+			for(final QuestState qs : getAllQuestsStates())
 			{
 				qs.getQuest().notifyTutorialEvent("CE", false, "300", qs);
 			}
@@ -5045,7 +4852,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			rewardSkills(false);
 			notifyNewSkills();
 		}
-		else if (levels < 0)
+		else if(levels < 0)
 		{
 			checkSkills();
 		}
@@ -5054,21 +4861,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		sendSkillList();
 
 		// Recalculate the party level
-		if (isInParty())
+		if(isInParty())
 		{
 			getParty().recalculatePartyData();
 		}
 
-		if (_clan != null)
+		if(_clan != null)
 		{
 			_clan.broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(this));
 		}
 
-		if (_matchingRoom != null)
+		if(_matchingRoom != null)
 		{
 			_matchingRoom.broadcastPlayerUpdate(this);
 		}
-		if (getLevel() >= 40)
+		if(getLevel() >= 40)
 		{
 			checkElementalInfo();
 		}
@@ -5077,15 +4884,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean notifyNewSkills()
 	{
 		final Collection<SkillLearn> skills = SkillAcquireHolder.getInstance().getAvailableSkills(this, AcquireType.NORMAL);
-		for (final SkillLearn s : skills)
+		for(final SkillLearn s : skills)
 		{
-			if (s.isFreeAutoGet(AcquireType.NORMAL))
+			if(s.isFreeAutoGet(AcquireType.NORMAL))
 			{
 				continue;
 			}
 
 			final Skill sk = SkillHolder.getInstance().getSkill(s.getId(), s.getLevel());
-			if (sk == null)
+			if(sk == null)
 			{
 				continue;
 			}
@@ -5102,9 +4909,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean checkSkills()
 	{
 		boolean update = false;
-		for (final SkillEntry sk : getAllSkillsArray())
+		for(final SkillEntry sk : getAllSkillsArray())
 		{
-			if (SkillUtils.checkSkill(this, sk))
+			if(SkillUtils.checkSkill(this, sk))
 			{
 				update = true;
 			}
@@ -5142,7 +4949,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getProductHistoryList().stopTask();
 		getVIP().stopTask();
 
-		for (final ScheduledFuture<?> task : _tasks)
+		for(final ScheduledFuture<?> task : _tasks)
 		{
 			task.cancel(false);
 		}
@@ -5153,21 +4960,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean isMyServitor(int objId)
 	{
-		if (((_summon != null) && (_summon.getObjectId() == objId)) || ((_pet != null) && (_pet.getObjectId() == objId)))
-		{
-			return true;
-		}
+		if(((_summon != null) && (_summon.getObjectId() == objId)) || ((_pet != null) && (_pet.getObjectId() == objId)))
+		{ return true; }
 		return false;
 	}
 
 	public int getServitorsCount()
 	{
 		int count = 0;
-		if (_summon != null)
+		if(_summon != null)
 		{
 			count++;
 		}
-		if (_pet != null)
+		if(_pet != null)
 		{
 			count++;
 		}
@@ -5183,11 +4988,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public List<Servitor> getServitors()
 	{
 		final List<Servitor> servitors = new ArrayList<Servitor>();
-		if (_summon != null)
+		if(_summon != null)
 		{
 			servitors.add(_summon);
 		}
-		if (_pet != null)
+		if(_pet != null)
 		{
 			servitors.add(_pet);
 		}
@@ -5207,14 +5012,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public Servitor getServitor(int objId)
 	{
-		if ((_summon != null) && (_summon.getObjectId() == objId))
-		{
-			return _summon;
-		}
-		if ((_pet != null) && (_pet.getObjectId() == objId))
-		{
-			return _pet;
-		}
+		if((_summon != null) && (_summon.getObjectId() == objId))
+		{ return _summon; }
+		if((_pet != null) && (_pet.getObjectId() == objId))
+		{ return _pet; }
 		return null;
 	}
 
@@ -5230,20 +5031,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setSummon(SummonInstance summon)
 	{
-		if (_summon == summon)
-		{
-			return;
-		}
+		if(_summon == summon)
+		{ return; }
 
 		_summon = summon;
-		if ((_summon == null) && (_pet == null))
+		if((_summon == null) && (_pet == null))
 		{
 			removeAutoShot(SoulShotType.BEAST_SOULSHOT);
 			removeAutoShot(SoulShotType.BEAST_SPIRITSHOT);
 		}
 		autoShot(); // TODO: [Bonux] проверить, нужно ли.
 
-		if (summon == null)
+		if(summon == null)
 		{
 			getAbnormalList().stop(4140); // TODO: [Bonux] Проверить что это и с чем едят.
 		}
@@ -5251,11 +5050,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void deleteServitor(int objId)
 	{
-		if ((_summon != null) && (_summon.getObjectId() == objId))
+		if((_summon != null) && (_summon.getObjectId() == objId))
 		{
 			setSummon(null);
 		}
-		else if ((_pet != null) && (_pet.getObjectId() == objId))
+		else if((_pet != null) && (_pet.getObjectId() == objId))
 		{
 			setPet(null);
 		}
@@ -5271,20 +5070,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final boolean petDeleted = _pet != null;
 		_pet = pet;
 		unsetVar("pet");
-		if (pet == null)
+		if(pet == null)
 		{
-			if (petDeleted)
+			if(petDeleted)
 			{
-				if (isLogoutStarted())
+				if(isLogoutStarted())
 				{
-					if (getPetControlItem() != null)
+					if(getPetControlItem() != null)
 					{
 						setVar("pet", getPetControlItem().getObjectId());
 					}
 				}
 				setPetControlItem(null);
 
-				if ((_summon == null) && (_pet == null))
+				if((_summon == null) && (_pet == null))
 				{
 					removeAutoShot(SoulShotType.BEAST_SOULSHOT);
 					removeAutoShot(SoulShotType.BEAST_SPIRITSHOT);
@@ -5300,7 +5099,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		long time = 0L;
 
-		if (Config.SERVICES_ENABLE_NO_CARRIER)
+		if(Config.SERVICES_ENABLE_NO_CARRIER)
 		{
 			time = NumberUtils.toInt(getVar("noCarrier"), Config.SERVICES_NO_CARRIER_DEFAULT_TIME);
 		}
@@ -5321,16 +5120,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void scheduleDelete(long time)
 	{
-		if (isLogoutStarted() || isInOfflineMode())
-		{
-			return;
-		}
+		if(isLogoutStarted() || isInOfflineMode())
+		{ return; }
 
 		broadcastCharInfo();
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
-			if (!isConnected())
+		ThreadPoolManager.getInstance().schedule(() -> {
+			if(!isConnected())
 			{
 				prepareToLogout1();
 				prepareToLogout2();
@@ -5347,7 +5143,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		super.onDelete();
 
 		// Убираем фэйк в точке наблюдения
-		if (_observePoint != null)
+		if(_observePoint != null)
 		{
 			_observePoint.deleteMe();
 		}
@@ -5405,7 +5201,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setSellList(boolean packageSell, Map<Integer, TradeItem> list)
 	{
-		if (packageSell)
+		if(packageSell)
 		{
 			_packageSellList = list;
 		}
@@ -5487,7 +5283,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public IClientOutgoingPacket getPrivateStoreMsgPacket(Player forPlayer)
 	{
-		switch (getPrivateStoreType())
+		switch(getPrivateStoreType())
 		{
 			case STORE_PRIVATE_BUY:
 				return new PrivateStoreBuyMsg(this, canTalkWith(forPlayer));
@@ -5504,14 +5300,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void broadcastPrivateStoreInfo()
 	{
-		if (!isVisible() || (_privatestore == STORE_PRIVATE_NONE))
-		{
-			return;
-		}
+		if(!isVisible() || (_privatestore == STORE_PRIVATE_NONE))
+		{ return; }
 
 		sendPacket(getPrivateStoreMsgPacket(this));
 
-		for (final Player target : World.getAroundObservers(this))
+		for(final Player target : World.getAroundObservers(this))
 		{
 			target.sendPacket(getPrivateStoreMsgPacket(target));
 		}
@@ -5525,15 +5319,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void setClan(Clan clan)
 	{
-		if ((_clan != clan) && (_clan != null))
+		if((_clan != clan) && (_clan != null))
 		{
 			unsetVar("canWhWithdraw");
 		}
 
 		final Clan oldClan = _clan;
-		if ((oldClan != null) && (clan == null))
+		if((oldClan != null) && (clan == null))
 		{
-			for (final SkillEntry skillEntry : oldClan.getSkills())
+			for(final SkillEntry skillEntry : oldClan.getSkills())
 			{
 				removeSkill(skillEntry, false);
 			}
@@ -5541,7 +5335,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		_clan = clan;
 
-		if (clan == null)
+		if(clan == null)
 		{
 			_pledgeType = Clan.SUBUNIT_NONE;
 			_pledgeRank = PledgeRank.VAGABOND;
@@ -5552,7 +5346,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return;
 		}
 
-		if (!clan.isAnyMember(getObjectId()))
+		if(!clan.isAnyMember(getObjectId()))
 		{
 			setClan(null);
 			setTitle("");
@@ -5600,10 +5394,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void reduceArrowCount()
 	{
-		if ((_arrowItem != null) && _arrowItem.getTemplate().isQuiver())
-		{
-			return;
-		}
+		if((_arrowItem != null) && _arrowItem.getTemplate().isQuiver())
+		{ return; }
 		final ItemInstance activeWeapon = getActiveWeaponInstance();
 		sendPacket(SystemMsg.YOU_CAREFULLY_NOCK_AN_ARROW);
 		getPlayer().getInventory().destroyItemByItemId(getInventory().findArrowForBow(activeWeapon.getTemplate()).getItemId(), 1L);
@@ -5616,17 +5408,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean checkAndEquipArrows()
 	{
 		final ItemInstance activeWeapon = getActiveWeaponInstance();
-		if (activeWeapon != null)
+		if(activeWeapon != null)
 		{
-			if (activeWeapon.getItemType() == WeaponType.BOW)
+			if(activeWeapon.getItemType() == WeaponType.BOW)
 			{
 				_arrowItem = getInventory().findArrowForBow(activeWeapon.getTemplate());
 			}
-			else if ((activeWeapon.getItemType() == WeaponType.CROSSBOW) || (activeWeapon.getItemType() == WeaponType.TWOHANDCROSSBOW))
+			else if((activeWeapon.getItemType() == WeaponType.CROSSBOW) || (activeWeapon.getItemType() == WeaponType.TWOHANDCROSSBOW))
 			{
 				_arrowItem = getInventory().findArrowForCrossbow(activeWeapon.getTemplate());
 			}
-			else if (activeWeapon.getItemType() == WeaponType.FIREARMS)
+			else if(activeWeapon.getItemType() == WeaponType.FIREARMS)
 			{
 				_arrowItem = getInventory().findOrbForFirearms(activeWeapon.getTemplate());
 			}
@@ -5657,7 +5449,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void joinParty(final Party party, final boolean force)
 	{
-		if (party != null)
+		if(party != null)
 		{
 			party.addPartyMember(this, force);
 		}
@@ -5665,7 +5457,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void leaveParty(final boolean force)
 	{
-		if (isInParty())
+		if(isInParty())
 		{
 			_party.removePartyMember(this, false, force);
 		}
@@ -5710,7 +5502,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setPlayerAccess(final PlayerAccess pa)
 	{
-		if (pa != null)
+		if(pa != null)
 		{
 			_playerAccess = pa;
 		}
@@ -5735,12 +5527,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void updateStats(boolean refreshOverloaded)
 	{
-		if (entering || isLogoutStarted())
-		{
-			return;
-		}
+		if(entering || isLogoutStarted())
+		{ return; }
 
-		if (refreshOverloaded)
+		if(refreshOverloaded)
 		{
 			refreshOverloaded();
 		}
@@ -5749,7 +5539,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		sendPacket(new ExUserViewInfoParameter(this));
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.updateStats();
 		}
@@ -5764,10 +5554,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void sendChanges()
 	{
-		if (entering || isLogoutStarted())
-		{
-			return;
-		}
+		if(entering || isLogoutStarted())
+		{ return; }
 		super.sendChanges();
 	}
 
@@ -5778,7 +5566,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void updateKarma(boolean flagChanged)
 	{
 		sendStatusUpdate(true, true, UpdateType.VCP_CRIMINAL_RATE);
-		if (flagChanged)
+		if(flagChanged)
 		{
 			broadcastRelation();
 		}
@@ -5814,7 +5602,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(4, getObjectId());
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 		}
@@ -5831,7 +5619,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			if (StringUtils.isEmpty(hwid))
+			if(StringUtils.isEmpty(hwid))
 			{
 				statement = con.prepareStatement("UPDATE characters SET last_ip=? WHERE obj_Id=? LIMIT 1");
 				statement.setString(1, ip);
@@ -5846,7 +5634,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not store " + toString() + " IP and HWID: ", e);
 		}
@@ -5861,17 +5649,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final boolean flagChanged = _karma >= 0;
 		long new_karma = _karma - val;
 
-		if (new_karma < -36000)
+		if(new_karma < -36000)
 		{
 			new_karma = 36000;
 		}
 
-		if ((_karma >= 0) && (new_karma < 0))
+		if((_karma >= 0) && (new_karma < 0))
 		{
-			if (_pvpFlag > 0)
+			if(_pvpFlag > 0)
 			{
 				_pvpFlag = 0;
-				if (_PvPRegTask != null)
+				if(_PvPRegTask != null)
 				{
 					_PvPRegTask.cancel(true);
 					_PvPRegTask = null;
@@ -5889,14 +5677,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final boolean flagChanged = _karma < 0;
 		long new_karma = _karma + val;
-		if (new_karma > Integer.MAX_VALUE)
+		if(new_karma > Integer.MAX_VALUE)
 		{
 			new_karma = Integer.MAX_VALUE;
 		}
 
 		setKarma((int) new_karma);
 
-		if (_karma > 0)
+		if(_karma > 0)
 		{
 			updateKarma(flagChanged);
 		}
@@ -5909,10 +5697,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public static Player create(HwidHolder hwidHolder, int classId, int sex, String accountName, final String name, final int hairStyle, final int hairColor, final int face)
 	{
 		final ClassId classID = ClassId.valueOf(classId);
-		if ((classID == null) || classID.isDummy() || !classID.isOfLevel(ClassLevel.NONE))
-		{
-			return null;
-		}
+		if((classID == null) || classID.isDummy() || !classID.isOfLevel(ClassLevel.NONE))
+		{ return null; }
 
 		final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(classID.getRace(), classID, Sex.VALUES[sex]);
 
@@ -5927,16 +5713,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		player.setCreateTime(System.currentTimeMillis());
 		player.setMagicLampPoints(0);
 
-		if (Config.PC_BANG_POINTS_BY_ACCOUNT)
+		if(Config.PC_BANG_POINTS_BY_ACCOUNT)
 		{
 			player.setPcBangPoints(Integer.parseInt(AccountVariablesDAO.getInstance().select(player.getAccountName(), PC_BANG_POINTS_VAR, "0")), false);
 		}
 
 		// Add the player in the characters table of the database
-		if (!CharacterDAO.getInstance().insert(player))
-		{
-			return null;
-		}
+		if(!CharacterDAO.getInstance().insert(player))
+		{ return null; }
 
 		final int level = Config.STARTING_LVL;
 		final double hp = classID.getBaseHp(level);
@@ -5948,10 +5732,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final SubClassType type = SubClassType.BASE_CLASS;
 
 		// Add the player subclass in the character_subclasses table of the database
-		if (!CharacterSubclassDAO.getInstance().insert(player.getObjectId(), classId, exp, sp, hp, mp, cp, hp, mp, cp, level, active, type, ElementalElement.NONE, 35000))
-		{
-			return null;
-		}
+		if(!CharacterSubclassDAO.getInstance().insert(player.getObjectId(), classId, exp, sp, hp, mp, cp, hp, mp, cp, level, active, type, ElementalElement.NONE, 35000))
+		{ return null; }
 
 		Connection con = null;
 		PreparedStatement statement = null;
@@ -5981,7 +5763,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(4, -1);
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not insert char data: " + e.getMessage(), e);
 		}
@@ -5995,7 +5777,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public static Player restore(final int objectId, HwidHolder hwidHolder)
 	{
-		if (GameObjectsStorage.getPlayers(false, false).size() >= GameServer.getInstance().getOnlineLimit())
+		if(GameObjectsStorage.getPlayers(false, false).size() >= GameServer.getInstance().getOnlineLimit())
 		{
 			_log.warn("Player:restore: Impossible to restore character. Exceeded the number of online players!");
 			return null;
@@ -6016,17 +5798,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement = con.createStatement();
 			statement2 = con.createStatement();
 			rset = statement.executeQuery("SELECT * FROM `characters` WHERE `obj_Id`=" + objectId + " LIMIT 1");
-			rset2 = statement2.executeQuery("SELECT `class_id` FROM `character_subclasses` WHERE `char_obj_id`=" + objectId + " AND `type`=" + SubClassType.BASE_CLASS.ordinal() + " LIMIT 1");
+			rset2 = statement2.executeQuery("SELECT `class_id` FROM `character_subclasses` WHERE `char_obj_id`=" + objectId + " AND `type`="
+					+ SubClassType.BASE_CLASS.ordinal() + " LIMIT 1");
 
-			if (rset.next() && rset2.next())
+			if(rset.next() && rset2.next())
 			{
 				final ClassId classId = ClassId.valueOf(rset2.getInt("class_id"));
 				final PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(classId.getRace(), classId, Sex.VALUES[rset.getInt("sex")]);
 
 				player = new Player(objectId, template, hwidHolder);
-				
 
-				if (!player.getSubClassList().restore())
+				if(!player.getSubClassList().restore())
 				{
 					_log.warn("Player:restore: Could not restore character due to a failure when restoring sub-classes!");
 					return null;
@@ -6061,18 +5843,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				player.setPvpKills(rset.getInt("pvpkills"));
 				player.setPkKills(rset.getInt("pkkills"));
 				player.setLeaveClanTime(rset.getLong("leaveclan") * 1000L);
-				if ((player.getLeaveClanTime() > 0) && player.canJoinClan())
+				if((player.getLeaveClanTime() > 0) && player.canJoinClan())
 				{
 					player.setLeaveClanTime(0);
 				}
 				player.setDeleteClanTime(rset.getLong("deleteclan") * 1000L);
-				if ((player.getDeleteClanTime() > 0) && player.canCreateClan())
+				if((player.getDeleteClanTime() > 0) && player.canCreateClan())
 				{
 					player.setDeleteClanTime(0);
 				}
 
 				player.setNoChannel(rset.getLong("nochannel") * 1000L);
-				if ((player.getNoChannel() > 0) && (player.getNoChannelRemained() < 0))
+				if((player.getNoChannel() > 0) && (player.getNoChannelRemained() < 0))
 				{
 					player.setNoChannel(0);
 				}
@@ -6080,7 +5862,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				player.setOnlineTime(rset.getLong("onlinetime") * 1000L);
 
 				final int clanId = rset.getInt("clanid");
-				if (clanId > 0)
+				if(clanId > 0)
 				{
 					player.setClan(ClanTable.getInstance().getClan(clanId));
 					player.setPledgeType(rset.getInt("pledge_type"));
@@ -6094,18 +5876,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				player.setTitle(rset.getString("title"));
 
-				if (player.getVar("titlecolor") != null)
+				if(player.getVar("titlecolor") != null)
 				{
 					player.setTitleColor(Integer.decode("0x" + player.getVar("titlecolor")));
 				}
 
-				if (player.getVar("namecolor") == null)
+				if(player.getVar("namecolor") == null)
 				{
-					if (player.isGM())
+					if(player.isGM())
 					{
 						player.setNameColor(Config.GM_NAME_COLOUR);
 					}
-					else if ((player.getClan() != null) && (player.getClan().getLeaderId() == player.getObjectId()))
+					else if((player.getClan() != null) && (player.getClan().getLeaderId() == player.getObjectId()))
 					{
 						player.setNameColor(Config.CLANLEADER_NAME_COLOUR);
 					}
@@ -6119,7 +5901,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					player.setNameColor(Integer.decode("0x" + player.getVar("namecolor")));
 				}
 
-				if (Config.AUTO_LOOT_INDIVIDUAL)
+				if(Config.AUTO_LOOT_INDIVIDUAL)
 				{
 					player._autoLoot = player.getVarBoolean("AutoLoot", Config.AUTO_LOOT);
 					player._autoLootOnlyAdena = player.getVarBoolean("AutoLootOnlyAdena", Config.AUTO_LOOT);
@@ -6132,13 +5914,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				player.setRecomHave(rset.getInt("rec_have"));
 				player.setRecomLeft(rset.getInt("rec_left"));
 
-				if (!Config.USE_CLIENT_LANG && Config.CAN_SELECT_LANGUAGE)
+				if(!Config.USE_CLIENT_LANG && Config.CAN_SELECT_LANGUAGE)
 				{
 					player.setLanguage(player.getVar(Language.LANG_VAR));
 				}
 
 				player.setKeyBindings(rset.getBytes("key_bindings"));
-				if (Config.PC_BANG_POINTS_BY_ACCOUNT)
+				if(Config.PC_BANG_POINTS_BY_ACCOUNT)
 				{
 					player.setPcBangPoints(Integer.parseInt(AccountVariablesDAO.getInstance().select(player.getAccountName(), PC_BANG_POINTS_VAR, "0")), false);
 				}
@@ -6161,12 +5943,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				player.restoreRecipeBook();
 
-				if (Config.ENABLE_OLYMPIAD)
+				if(Config.ENABLE_OLYMPIAD)
 				{
 					player.setHero(Hero.getInstance().isHero(player.getObjectId()));
 				}
 
-				if (!player.isHero())
+				if(!player.isHero())
 				{
 					player.setHero(CustomHeroDAO.getInstance().isCustomHero(player.getObjectId()));
 				}
@@ -6178,10 +5960,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				int reflection = 0;
 
 				final long jailExpireTime = player.getVarExpireTime(JAILED_VAR);
-				if (jailExpireTime > System.currentTimeMillis())
+				if(jailExpireTime > System.currentTimeMillis())
 				{
 					reflection = ReflectionManager.JAIL.getId();
-					if (!player.isInZone("[gm_prison]"))
+					if(!player.isInZone("[gm_prison]"))
 					{
 						player.setLoc(Location.findPointToStay(player, AdminFunctions.JAIL_SPAWN, 50, 200));
 					}
@@ -6191,13 +5973,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				else
 				{
 					final String ref = player.getVar("reflection");
-					if (ref != null)
+					if(ref != null)
 					{
 						reflection = Integer.parseInt(ref);
-						if (reflection <= -1000)
+						if(reflection <= -1000)
 						{
 							final Location loc = ReflectionManager.getInstance().get(reflection).getReturnLoc();
-							if (loc != null)
+							if(loc != null)
 							{
 								player.setLoc(loc);
 							}
@@ -6207,15 +5989,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 							}
 							reflection = 0;
 						}
-						else if ((reflection != ReflectionManager.PARNASSUS.getId()) && (reflection != ReflectionManager.GIRAN_HARBOR.getId())) // не
-																																			// портаем
-																																			// назад
-																																			// из
-																																			// ГХ,
-																																			// парнаса
+						else if((reflection != ReflectionManager.PARNASSUS.getId()) && (reflection != ReflectionManager.GIRAN_HARBOR.getId())) // не
+						// портаем
+						// назад
+						// из
+						// ГХ,
+						// парнаса
 						{
 							final String back = player.getVar("backCoords");
-							if (back != null)
+							if(back != null)
 							{
 								player.setLoc(Location.parseLoc(back));
 								player.unsetVar("backCoords");
@@ -6246,18 +6028,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				player.getProductHistoryList().restore();
 				player.getAttendanceRewards().restore();
 				player.restoreRandomCraft();
-				
+
 				player.restoreSummons();
 
 				try
 				{
 					final String var = player.getVar("ExpandInventory");
-					if (var != null)
+					if(var != null)
 					{
 						player.setExpandInventory(Integer.parseInt(var));
 					}
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -6265,12 +6047,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				try
 				{
 					final String var = player.getVar("ExpandWarehouse");
-					if (var != null)
+					if(var != null)
 					{
 						player.setExpandWarehouse(Integer.parseInt(var));
 					}
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -6278,12 +6060,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				try
 				{
 					final String var = player.getVar(NO_ANIMATION_OF_CAST_VAR);
-					if (var != null)
+					if(var != null)
 					{
 						player.setNotShowBuffAnim(Boolean.parseBoolean(var));
 					}
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -6291,12 +6073,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				try
 				{
 					final String var = player.getVar(NO_TRADERS_VAR);
-					if (var != null)
+					if(var != null)
 					{
 						player.setNotShowTraders(Boolean.parseBoolean(var));
 					}
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -6304,12 +6086,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				try
 				{
 					final String var = player.getVar("pet");
-					if (var != null)
+					if(var != null)
 					{
 						player.setPetControlItem(Integer.parseInt(var));
 					}
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -6318,7 +6100,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				statement3.setString(1, player._login);
 				statement3.setInt(2, objectId);
 				rset3 = statement3.executeQuery();
-				while (rset3.next())
+				while(rset3.next())
 				{
 					final Integer charId = rset3.getInt("obj_Id");
 					final String charName = rset3.getString("char_name");
@@ -6333,31 +6115,31 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 					World.getZones(zones, player.getLoc(), player.getReflection());
 
-					if (!zones.isEmpty())
+					if(!zones.isEmpty())
 					{
-						for (final Zone zone : zones)
+						for(final Zone zone : zones)
 						{
-							if (zone.getType() == ZoneType.no_restart)
+							if(zone.getType() == ZoneType.no_restart)
 							{
-								if (((System.currentTimeMillis() / 1000L) - player.getLastAccess()) > zone.getRestartTime())
+								if(((System.currentTimeMillis() / 1000L) - player.getLastAccess()) > zone.getRestartTime())
 								{
 									player.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.EnterWorld.TeleportedReasonNoRestart"));
 									player.setLoc(TeleportUtils.getRestartPoint(player, RestartType.TO_VILLAGE).getLoc());
 								}
 							}
-							else if (zone.getType() == ZoneType.SIEGE)
+							else if(zone.getType() == ZoneType.SIEGE)
 							{
 								SiegeEvent<?, ?> currentSiegeEvent = null;
-								for (final SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
+								for(final SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
 								{
-									if (zone.containsEvent(siegeEvent))
+									if(zone.containsEvent(siegeEvent))
 									{
 										currentSiegeEvent = siegeEvent;
 										break;
 									}
 								}
 
-								if (currentSiegeEvent != null)
+								if(currentSiegeEvent != null)
 								{
 									player.setLoc(currentSiegeEvent.getEnterLoc(player, zone));
 								}
@@ -6391,7 +6173,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				player.setTeleportFavorites(CharacterTeleportsDAO.getInstance().restore(player.getObjectId()));
 				player.setVar("last_hwid", hwidHolder.asString());
-			
+
 				player.setCollectionFavorites(CharacterCollectionFavoritesDAO.getInstance().restore(player.getObjectId()));
 
 				player.setCurrentDp(player.getVarInt("currentDp", 0));
@@ -6399,16 +6181,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				GameObjectsStorage.put(player);
 
-				for (final Abnormal e : player.getAbnormalList())
+				for(final Abnormal e : player.getAbnormalList())
 				{
-					if ((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198))
+					if((e.getSkill().getId() == 45197) || (e.getSkill().getId() == 45198))
 					{
 						e.exit();
 					}
 				}
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Player:restore: Could not restore char data!", e);
 		}
@@ -6443,8 +6225,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(5, getHairColor());
 			statement.setInt(6, getBeautyHairColor());
 			statement.setInt(7, getSex().ordinal());
-			if (_stablePoint == null) // если игрок находится в точке в которой его сохранять не стоит (например на
-										// виверне) то сохраняются последние координаты
+			if(_stablePoint == null) // если игрок находится в точке в которой его сохранять не стоит (например на
+			// виверне) то сохраняются последние координаты
 			{
 				statement.setInt(8, getX());
 				statement.setInt(9, getY());
@@ -6492,7 +6274,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.executeUpdate();
 			GameStats.increaseUpdatePlayerBase();
 
-			if (!fast)
+			if(!fast)
 			{
 				EffectsDAO.getInstance().insert(this);
 				CharacterGroupReuseDAO.getInstance().insert(this);
@@ -6508,16 +6290,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 			if(_randomCraft != null)
 				_randomCraft.store();
-			
+
 			setVar("currentDp", getCurrentDp());
 			setVar("currentBp", getCurrentBp());
 
-			if (Config.PC_BANG_POINTS_BY_ACCOUNT)
+			if(Config.PC_BANG_POINTS_BY_ACCOUNT)
 			{
 				AccountVariablesDAO.getInstance().insert(getAccountName(), PC_BANG_POINTS_VAR, String.valueOf(getPcBangPoints()));
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not store char data: " + this + "!", e);
 		}
@@ -6535,21 +6317,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public SkillEntry addSkill(final SkillEntry newSkillEntry, final boolean store)
 	{
-		if (newSkillEntry == null)
-		{
-			return null;
-		}
+		if(newSkillEntry == null)
+		{ return null; }
 
 		// Add a skill to the Player _skills and its Func objects to the calculator
 		// set of the Player
 		final SkillEntry oldSkillEntry = addSkill(newSkillEntry);
-		if (newSkillEntry.equals(oldSkillEntry))
-		{
-			return oldSkillEntry;
-		}
+		if(newSkillEntry.equals(oldSkillEntry))
+		{ return oldSkillEntry; }
 
 		// Add or update a Player skill in the character_skills table of the database
-		if (store)
+		if(store)
 		{
 			storeSkill(newSkillEntry);
 		}
@@ -6561,10 +6339,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public SkillEntry removeSkill(SkillInfo skillInfo, boolean fromDB)
 	{
-		if (skillInfo == null)
-		{
-			return null;
-		}
+		if(skillInfo == null)
+		{ return null; }
 		return removeSkill(skillInfo.getId(), fromDB);
 	}
 
@@ -6581,12 +6357,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// of the L2Character
 		final SkillEntry oldSkillEntry = removeSkillById(id);
 
-		if (!fromDB)
-		{
-			return oldSkillEntry;
-		}
+		if(!fromDB)
+		{ return oldSkillEntry; }
 
-		if (oldSkillEntry != null)
+		if(oldSkillEntry != null)
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -6601,7 +6375,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				statement.setInt(3, getActiveClassId());
 				statement.execute();
 			}
-			catch (final Exception e)
+			catch(final Exception e)
 			{
 				_log.error("Could not delete skill!", e);
 			}
@@ -6619,7 +6393,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	private void storeSkill(final SkillEntry newSkillEntry)
 	{
-		if (newSkillEntry == null) // вообще-то невозможно
+		if(newSkillEntry == null) // вообще-то невозможно
 		{
 			_log.warn("could not store new skill. its NULL");
 			return;
@@ -6637,7 +6411,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(3, newSkillEntry.getLevel());
 
 			// Скиллы сертификации доступны на всех саб-классах.
-			if (SkillAcquireHolder.getInstance().containsInTree(newSkillEntry.getTemplate(), AcquireType.CERTIFICATION))
+			if(SkillAcquireHolder.getInstance().containsInTree(newSkillEntry.getTemplate(), AcquireType.CERTIFICATION))
 			{
 				statement.setInt(4, -1);
 			}
@@ -6648,7 +6422,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Error could not store skills!", e);
 		}
@@ -6671,19 +6445,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(2, getActiveClassId());
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, rset.getInt("skill_id"), rset.getInt("skill_level"));
-				if (skillEntry == null)
+				if(skillEntry == null)
 				{
 					continue;
 				}
 
 				// Remove skill if not possible
-				if (!isGM())
+				if(!isGM())
 				{
 					final Skill skill = skillEntry.getTemplate();
-					if (!SkillAcquireHolder.getInstance().isSkillPossible(this, skill))
+					if(!SkillAcquireHolder.getInstance().isSkillPossible(this, skill))
 					{
 						removeSkill(skillEntry, true);
 						// removeSkillFromShortCut(skill.getId());
@@ -6699,30 +6473,30 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			checkHeroSkills();
 
 			// Restore clan skills
-			if (_clan != null)
+			if(_clan != null)
 			{
 				_clan.addSkillsQuietly(this);
 			}
 
-			if (Config.UNSTUCK_SKILL && (getSkillLevel(1050) < 0))
+			if(Config.UNSTUCK_SKILL && (getSkillLevel(1050) < 0))
 			{
 				addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, 2099, 1));
 			}
 
-			for (final OptionDataTemplate optionData : _options.valueCollection())
+			for(final OptionDataTemplate optionData : _options.valueCollection())
 			{
-				for (final SkillEntry skillEntry : optionData.getSkills())
+				for(final SkillEntry skillEntry : optionData.getSkills())
 				{
 					addSkill(skillEntry);
 				}
 			}
 
-			if (isGM())
+			if(isGM())
 			{
 				giveGMSkills();
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("Could not restore skills for player objId: " + getObjectId());
 			_log.error("", e);
@@ -6741,20 +6515,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
-			statement.executeUpdate("DELETE FROM character_skills_save WHERE char_obj_id = " + getObjectId() + " AND class_index=" + getActiveClassId() + " AND `end_time` < " + System.currentTimeMillis());
+			statement.executeUpdate("DELETE FROM character_skills_save WHERE char_obj_id = " + getObjectId() + " AND class_index=" + getActiveClassId()
+					+ " AND `end_time` < " + System.currentTimeMillis());
 
-			if (_skillReuses.isEmpty())
-			{
-				return;
-			}
+			if(_skillReuses.isEmpty())
+			{ return; }
 
 			final SqlBatch b = new SqlBatch("REPLACE INTO `character_skills_save` (`char_obj_id`,`skill_id`,`skill_level`,`class_index`,`end_time`,`reuse_delay_org`) VALUES");
 			synchronized (_skillReuses)
 			{
 				StringBuilder sb;
-				for (final TimeStamp timeStamp : _skillReuses.valueCollection())
+				for(final TimeStamp timeStamp : _skillReuses.valueCollection())
 				{
-					if (timeStamp.hasNotPassed())
+					if(timeStamp.hasNotPassed())
 					{
 						sb = new StringBuilder("(");
 						sb.append(getObjectId()).append(",");
@@ -6767,12 +6540,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					}
 				}
 			}
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 			{
 				statement.executeUpdate(b.close());
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("Could not store disable skills data: " + e);
 		}
@@ -6793,8 +6566,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
-			rset = statement.executeQuery("SELECT skill_id,skill_level,end_time,reuse_delay_org FROM character_skills_save WHERE char_obj_id=" + getObjectId() + " AND class_index=" + getActiveClassId());
-			while (rset.next())
+			rset = statement.executeQuery("SELECT skill_id,skill_level,end_time,reuse_delay_org FROM character_skills_save WHERE char_obj_id="
+					+ getObjectId() + " AND class_index=" + getActiveClassId());
+			while(rset.next())
 			{
 				final int skillId = rset.getInt("skill_id");
 				final int skillLevel = rset.getInt("skill_level");
@@ -6804,7 +6578,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 				final Skill skill = SkillHolder.getInstance().getSkill(skillId, skillLevel);
 
-				if ((skill != null) && ((endTime - curTime) > 500))
+				if((skill != null) && ((endTime - curTime) > 500))
 				{
 					_skillReuses.put(skill.getReuseHash(), new TimeStamp(skill, endTime, rDelayOrg));
 				}
@@ -6812,9 +6586,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			DbUtils.close(statement);
 
 			statement = con.createStatement();
-			statement.executeUpdate("DELETE FROM character_skills_save WHERE char_obj_id = " + getObjectId() + " AND class_index=" + getActiveClassId() + " AND `end_time` < " + System.currentTimeMillis());
+			statement.executeUpdate("DELETE FROM character_skills_save WHERE char_obj_id = " + getObjectId() + " AND class_index=" + getActiveClassId()
+					+ " AND `end_time` < " + System.currentTimeMillis());
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not restore active skills data!", e);
 		}
@@ -6833,12 +6608,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean consumeItemMp(int itemId, int mp)
 	{
-		for (final ItemInstance item : getInventory().getPaperdollItems())
+		for(final ItemInstance item : getInventory().getPaperdollItems())
 		{
-			if ((item != null) && (item.getItemId() == itemId))
+			if((item != null) && (item.getItemId() == itemId))
 			{
 				final int newMp = item.getLifeTime() - mp;
-				if (newMp >= 0)
+				if(newMp >= 0)
 				{
 					item.setLifeTime(newMp);
 					sendPacket(new InventoryUpdatePacket(this).addModifiedItem(item));
@@ -6868,24 +6643,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@SuppressWarnings("rawtypes")
 	public boolean checkLandingState()
 	{
-		if (isInZone(ZoneType.no_landing))
-		{
-			return false;
-		}
+		if(isInZone(ZoneType.no_landing))
+		{ return false; }
 
 		final List<SiegeEvent> siegeEvents = getEvents(SiegeEvent.class);
-		if (siegeEvents.isEmpty())
-		{
-			return true;
-		}
+		if(siegeEvents.isEmpty())
+		{ return true; }
 
-		for (final SiegeEvent<?, ?> siege : siegeEvents)
+		for(final SiegeEvent<?, ?> siege : siegeEvents)
 		{
 			final Residence unit = siege.getResidence();
-			if ((unit != null) && (getClan() != null) && isClanLeader() && (getClan().getCastle() == unit.getId()))
-			{
-				return true;
-			}
+			if((unit != null) && (getClan() != null) && isClanLeader() && (getClan().getCastle() == unit.getId()))
+			{ return true; }
 		}
 
 		return false;
@@ -6894,7 +6663,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setMount(int controlItemObjId, int npcId, int level, int currentFeed)
 	{
 		final Mount mount = Mount.create(this, controlItemObjId, npcId, level, currentFeed);
-		if (mount != null)
+		if(mount != null)
 		{
 			setMount(mount);
 		}
@@ -6902,19 +6671,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setMount(Mount mount)
 	{
-		if (_mount == mount)
-		{
-			return;
-		}
+		if(_mount == mount)
+		{ return; }
 
 		final Mount oldMount = _mount;
 		_mount = null;
-		if (oldMount != null)
+		if(oldMount != null)
 		{ // Dismount
 			oldMount.onUnride();
 		}
 
-		if (mount != null)
+		if(mount != null)
 		{
 			_mount = mount;
 			_mount.onRide();
@@ -6955,14 +6722,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void unEquipWeapon()
 	{
 		ItemInstance wpn = getSecondaryWeaponInstance();
-		if (wpn != null)
+		if(wpn != null)
 		{
 			sendDisarmMessage(wpn);
 			getInventory().unEquipItem(wpn);
 		}
 
 		wpn = getActiveWeaponInstance();
-		if (wpn != null)
+		if(wpn != null)
 		{
 			sendDisarmMessage(wpn);
 			getInventory().unEquipItem(wpn);
@@ -6974,7 +6741,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendDisarmMessage(ItemInstance wpn)
 	{
-		if (wpn.getEnchantLevel() > 0)
+		if(wpn.getEnchantLevel() > 0)
 		{
 			final SystemMessage sm = new SystemMessage(SystemMessage.EQUIPMENT_OF__S1_S2_HAS_BEEN_REMOVED);
 			sm.addNumber(wpn.getEnchantLevel());
@@ -7021,13 +6788,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public Collection<Cubic> getCubics()
 	{
-		return _cubics == null ? Collections.<Cubic>emptyList() : _cubics.valueCollection();
+		return _cubics == null ? Collections.<Cubic> emptyList() : _cubics.valueCollection();
 	}
 
 	@Override
 	public void deleteCubics()
 	{
-		for (final Cubic cubic : getCubics())
+		for(final Cubic cubic : getCubics())
 		{
 			cubic.delete();
 		}
@@ -7035,13 +6802,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addCubic(Cubic cubic)
 	{
-		if (_cubics == null)
+		if(_cubics == null)
 		{
 			_cubics = new CHashIntObjectMap<Cubic>(3);
 		}
 
 		final Cubic oldCubic = _cubics.get(cubic.getSlot());
-		if (oldCubic != null)
+		if(oldCubic != null)
 		{
 			oldCubic.delete();
 		}
@@ -7053,7 +6820,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeCubic(int slot)
 	{
-		if (_cubics != null)
+		if(_cubics != null)
 		{
 			_cubics.remove(slot);
 		}
@@ -7082,10 +6849,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getEnchantEffect()
 	{
 		final ItemInstance wpn = getActiveWeaponInstance();
-		if (wpn == null)
-		{
-			return 0;
-		}
+		if(wpn == null)
+		{ return 0; }
 
 		return Math.min(127, wpn.getFixedEnchantLevel(this));
 	}
@@ -7093,10 +6858,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getVariation1Id()
 	{
 		final ItemInstance wpn = getActiveWeaponInstance();
-		if (wpn == null)
-		{
-			return 0;
-		}
+		if(wpn == null)
+		{ return 0; }
 
 		return wpn.getVariation1Id();
 	}
@@ -7104,10 +6867,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getVariation2Id()
 	{
 		final ItemInstance wpn = getActiveWeaponInstance();
-		if (wpn == null)
-		{
-			return 0;
-		}
+		if(wpn == null)
+		{ return 0; }
 
 		return wpn.getVariation2Id();
 	}
@@ -7119,7 +6880,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public void setLastNpc(final NpcInstance npc)
 	{
-		if (npc == null)
+		if(npc == null)
 		{
 			_lastNpc = HardReferences.emptyRef();
 		}
@@ -7153,12 +6914,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean unChargeShots(boolean spirit)
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon == null)
-		{
-			return false;
-		}
+		if(weapon == null)
+		{ return false; }
 
-		if (spirit)
+		if(spirit)
 		{
 			weapon.setChargedSpiritshotPower(0, 0, 0);
 		}
@@ -7174,10 +6933,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean unChargeFishShot()
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon == null)
-		{
-			return false;
-		}
+		if(weapon == null)
+		{ return false; }
 
 		weapon.setChargedFishshotPower(0);
 
@@ -7187,11 +6944,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void autoShot()
 	{
-		for (final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
+		for(final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
 		{
 			final int shotId = entry.getKey();
 			final ItemInstance item = getInventory().getItemByItemId(shotId);
-			if (item == null)
+			if(item == null)
 			{
 				removeAutoShot(shotId, false, entry.getValue());
 				continue;
@@ -7204,10 +6961,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getChargedSoulshotPower()
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if ((weapon != null) && (weapon.getChargedSoulshotPower() > 0))
-		{
-			return getStat().calc(Stats.SOULSHOT_POWER, weapon.getChargedSoulshotPower());
-		}
+		if((weapon != null) && (weapon.getChargedSoulshotPower() > 0))
+		{ return getStat().calc(Stats.SOULSHOT_POWER, weapon.getChargedSoulshotPower()); }
 		return 0;
 	}
 
@@ -7215,7 +6970,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setChargedSoulshotPower(double val)
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon != null)
+		if(weapon != null)
 		{
 			weapon.setChargedSoulshotPower(val);
 		}
@@ -7225,10 +6980,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getChargedSpiritshotPower()
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if ((weapon != null) && (weapon.getChargedSpiritshotPower() > 0))
-		{
-			return getStat().calc(Stats.SPIRITSHOT_POWER, weapon.getChargedSpiritshotPower());
-		}
+		if((weapon != null) && (weapon.getChargedSpiritshotPower() > 0))
+		{ return getStat().calc(Stats.SPIRITSHOT_POWER, weapon.getChargedSpiritshotPower()); }
 		return 0;
 	}
 
@@ -7236,10 +6989,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getChargedSpiritshotHealBonus()
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon != null)
-		{
-			return weapon.getChargedSpiritshotHealBonus();
-		}
+		if(weapon != null)
+		{ return weapon.getChargedSpiritshotHealBonus(); }
 		return 0;
 	}
 
@@ -7247,7 +6998,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setChargedSpiritshotPower(double power, int unk, double healBonus)
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon != null)
+		if(weapon != null)
 		{
 			weapon.setChargedSpiritshotPower(power, unk, healBonus);
 		}
@@ -7256,17 +7007,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getChargedFishshotPower()
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon != null)
-		{
-			return weapon.getChargedFishshotPower();
-		}
+		if(weapon != null)
+		{ return weapon.getChargedFishshotPower(); }
 		return 0;
 	}
 
 	public void setChargedFishshotPower(double val)
 	{
 		final ItemInstance weapon = getActiveWeaponInstance();
-		if (weapon != null)
+		if(weapon != null)
 		{
 			weapon.setChargedFishshotPower(val);
 		}
@@ -7274,50 +7023,44 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean addAutoShot(int itemId, boolean sendMessage, SoulShotType type)
 	{
-		if (Config.EX_USE_AUTO_SOUL_SHOT)
+		if(Config.EX_USE_AUTO_SOUL_SHOT)
 		{
-			for (final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
+			for(final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
 			{
-				if (entry.getValue() == type)
+				if(entry.getValue() == type)
 				{
 					_activeAutoShots.remove(entry.getKey());
 				}
 			}
 
-			if ((type == SoulShotType.SOULSHOT) || (type == SoulShotType.SPIRITSHOT))
+			if((type == SoulShotType.SOULSHOT) || (type == SoulShotType.SPIRITSHOT))
 			{
 				final WeaponTemplate weaponTemplate = getActiveWeaponTemplate();
-				if (weaponTemplate == null)
-				{
-					return false;
-				}
+				if(weaponTemplate == null)
+				{ return false; }
 
 				final ItemTemplate shotTemplate = ItemHolder.getInstance().getTemplate(itemId);
-				if (shotTemplate == null)
-				{
-					return false;
-				}
+				if(shotTemplate == null)
+				{ return false; }
 
 				// if(shotTemplate.getGrade().extGrade() !=
 				// weaponTemplate.getGrade().extGrade())
 				// return false;
 			}
-			else if ((type == SoulShotType.BEAST_SOULSHOT) || (type == SoulShotType.BEAST_SPIRITSHOT))
+			else if((type == SoulShotType.BEAST_SOULSHOT) || (type == SoulShotType.BEAST_SPIRITSHOT))
 			{
-				if (getServitorsCount() == 0)
-				{
-					return false;
-				}
+				if(getServitorsCount() == 0)
+				{ return false; }
 			}
 		}
 
-		if (_activeAutoShots.put(itemId, type) != type)
+		if(_activeAutoShots.put(itemId, type) != type)
 		{
-			if (!Config.EX_USE_AUTO_SOUL_SHOT)
+			if(!Config.EX_USE_AUTO_SOUL_SHOT)
 			{
 				sendPacket(new ExAutoSoulShot(itemId, 1, type));
 			}
-			if (sendMessage)
+			if(sendMessage)
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.THE_AUTOMATIC_USE_OF_S1_HAS_BEEN_ACTIVATED).addItemName(itemId));
 			}
@@ -7328,11 +7071,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean manuallyAddAutoShot(int itemId, SoulShotType type, boolean save)
 	{
-		if (addAutoShot(itemId, true, type))
+		if(addAutoShot(itemId, true, type))
 		{
-			if (Config.EX_USE_AUTO_SOUL_SHOT)
+			if(Config.EX_USE_AUTO_SOUL_SHOT)
 			{
-				if (save)
+				if(save)
 				{
 					setVar(ACTIVE_SHOT_ID_VAR + "_" + type.ordinal(), itemId);
 				}
@@ -7348,12 +7091,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendActiveAutoShots()
 	{
-		if (Config.EX_USE_AUTO_SOUL_SHOT)
-		{
-			return;
-		}
+		if(Config.EX_USE_AUTO_SOUL_SHOT)
+		{ return; }
 
-		for (final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
+		for(final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
 		{
 			sendPacket(new ExAutoSoulShot(entry.getKey(), 1, entry.getValue()));
 		}
@@ -7361,14 +7102,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void initActiveAutoShots()
 	{
-		if (!Config.EX_USE_AUTO_SOUL_SHOT)
-		{
-			return;
-		}
+		if(!Config.EX_USE_AUTO_SOUL_SHOT)
+		{ return; }
 
-		for (final SoulShotType type : SoulShotType.VALUES)
+		for(final SoulShotType type : SoulShotType.VALUES)
 		{
-			if (!initSavedActiveShot(type))
+			if(!initSavedActiveShot(type))
 			{
 				sendPacket(new ExAutoSoulShot(0, 1, type));
 			}
@@ -7377,11 +7116,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendMenteeList()
 	{
-		ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
-			for (final GameObject visibleObject : GameObjectsStorage.getObjects())
+		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
+			for(final GameObject visibleObject : GameObjectsStorage.getObjects())
 			{
-				if (visibleObject == null)
+				if(visibleObject == null)
 				{
 					continue;
 				}
@@ -7392,21 +7130,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean initSavedActiveShot(SoulShotType type)
 	{
-		if (!Config.EX_USE_AUTO_SOUL_SHOT)
-		{
-			return false;
-		}
+		if(!Config.EX_USE_AUTO_SOUL_SHOT)
+		{ return false; }
 
 		final int shotId = getVarInt(ACTIVE_SHOT_ID_VAR + "_" + type.ordinal(), 0);
-		if (shotId > 0)
+		if(shotId > 0)
 		{
 			final ItemInstance item = getInventory().getItemByItemId(shotId);
-			if (item != null)
+			if(item != null)
 			{
 				final IItemHandler handler = item.getTemplate().getHandler();
-				if ((handler != null) && handler.isAutoUse())
+				if((handler != null) && handler.isAutoUse())
 				{
-					if (addAutoShot(shotId, true, type))
+					if(addAutoShot(shotId, true, type))
 					{
 						sendPacket(new ExAutoSoulShot(shotId, 3, type));
 						useItem(item, false, false);
@@ -7415,7 +7151,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 		}
-		else if (shotId == -1)
+		else if(shotId == -1)
 		{
 			sendPacket(new ExAutoSoulShot(0, 2, type));
 			return true;
@@ -7430,20 +7166,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeAutoShots(boolean uncharge)
 	{
-		if (Config.EX_USE_AUTO_SOUL_SHOT)
-		{
-			return;
-		}
+		if(Config.EX_USE_AUTO_SOUL_SHOT)
+		{ return; }
 
-		for (final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
+		for(final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
 		{
 			removeAutoShot(entry.getKey(), false, entry.getValue());
 		}
 
-		if (uncharge)
+		if(uncharge)
 		{
 			final ItemInstance weapon = getActiveWeaponInstance();
-			if (weapon != null)
+			if(weapon != null)
 			{
 				weapon.setChargedSoulshotPower(0);
 				weapon.setChargedSpiritshotPower(0, 0, 0);
@@ -7454,13 +7188,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean removeAutoShot(int itemId, boolean sendMessage, SoulShotType type)
 	{
-		if (_activeAutoShots.remove(itemId) != null)
+		if(_activeAutoShots.remove(itemId) != null)
 		{
-			if (!Config.EX_USE_AUTO_SOUL_SHOT)
+			if(!Config.EX_USE_AUTO_SOUL_SHOT)
 			{
 				sendPacket(new ExAutoSoulShot(itemId, 0, type));
 			}
-			if (sendMessage)
+			if(sendMessage)
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.THE_AUTOMATIC_USE_OF_S1_HAS_BEEN_DEACTIVATED).addItemName(itemId));
 			}
@@ -7471,11 +7205,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean manuallyRemoveAutoShot(int itemId, SoulShotType type, boolean save)
 	{
-		if (removeAutoShot(itemId, true, type))
+		if(removeAutoShot(itemId, true, type))
 		{
-			if (Config.EX_USE_AUTO_SOUL_SHOT)
+			if(Config.EX_USE_AUTO_SOUL_SHOT)
 			{
-				if (save)
+				if(save)
 				{
 					setVar(ACTIVE_SHOT_ID_VAR + "_" + type.ordinal(), -1);
 				}
@@ -7491,19 +7225,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeAutoShot(SoulShotType type)
 	{
-		if (!Config.EX_USE_AUTO_SOUL_SHOT)
-		{
-			return;
-		}
+		if(!Config.EX_USE_AUTO_SOUL_SHOT)
+		{ return; }
 
-		for (final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
+		for(final IntObjectPair<SoulShotType> entry : _activeAutoShots.entrySet())
 		{
-			if (entry.getValue() == type)
+			if(entry.getValue() == type)
 			{
 				removeAutoShot(entry.getKey(), false, entry.getValue());
 				sendPacket(new ExAutoSoulShot(entry.getKey(), 1, entry.getValue())); // TODO: Не оффлайк заглушка для
-																						// фикса визуального бага. Найти
-																						// оффлайк решение.
+				// фикса визуального бага. Найти
+				// оффлайк решение.
 			}
 		}
 	}
@@ -7521,20 +7253,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean isInvisible(GameObject observer)
 	{
-		if (observer != null)
+		if(observer != null)
 		{
-			if ((getObjectId() == observer.getObjectId()) || isMyServitor(observer.getObjectId()))
-			{
-				return false;
-			}
-			if (observer.isPlayer())
+			if((getObjectId() == observer.getObjectId()) || isMyServitor(observer.getObjectId()))
+			{ return false; }
+			if(observer.isPlayer())
 			{
 				// TODO: Проверить на оффе.
 				final Player observPlayer = (Player) observer;
-				if (isInSameParty(observPlayer) || observPlayer.getPlayerAccess().CanSeeInHide)
-				{
-					return false;
-				}
+				if(isInSameParty(observPlayer) || observPlayer.getPlayerAccess().CanSeeInHide)
+				{ return false; }
 			}
 		}
 		return super.isInvisible(observer) || isGMInvisible();
@@ -7543,7 +7271,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean startInvisible(Object owner, boolean withServitors)
 	{
-		if (super.startInvisible(owner, withServitors))
+		if(super.startInvisible(owner, withServitors))
 		{
 			sendUserInfo(true);
 			return true;
@@ -7554,7 +7282,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean stopInvisible(Object owner, boolean withServitors)
 	{
-		if (super.stopInvisible(owner, withServitors))
+		if(super.stopInvisible(owner, withServitors))
 		{
 			sendUserInfo(true);
 			return true;
@@ -7569,10 +7297,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean setGMInvisible(boolean value)
 	{
-		if (value)
-		{
-			return _gmInvisible.getAndSet(true);
-		}
+		if(value)
+		{ return _gmInvisible.getAndSet(true); }
 		return _gmInvisible.setAndGet(false);
 	}
 
@@ -7589,32 +7315,22 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean setGMUndying(boolean value)
 	{
-		if (value)
-		{
-			return _gmUndying.getAndSet(true);
-		}
+		if(value)
+		{ return _gmUndying.getAndSet(true); }
 		return _gmUndying.setAndGet(false);
 	}
 
 	public int getClanPrivileges()
 	{
-		if (_clan == null)
-		{
-			return 0;
-		}
-		if (isClanLeader())
-		{
-			return Clan.CP_ALL;
-		}
-		if ((_powerGrade < 1) || (_powerGrade > 9))
-		{
-			return 0;
-		}
+		if(_clan == null)
+		{ return 0; }
+		if(isClanLeader())
+		{ return Clan.CP_ALL; }
+		if((_powerGrade < 1) || (_powerGrade > 9))
+		{ return 0; }
 		final RankPrivs privs = _clan.getRankPrivs(_powerGrade);
-		if (privs != null)
-		{
-			return privs.getPrivs();
-		}
+		if(privs != null)
+		{ return privs.getPrivs(); }
 		return 0;
 	}
 
@@ -7654,17 +7370,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean onTeleported()
 	{
-		if (!super.onTeleported())
-		{
-			return false;
-		}
+		if(!super.onTeleported())
+		{ return false; }
 
-		if (isFakeDeath())
+		if(isFakeDeath())
 		{
 			breakFakeDeath();
 		}
 
-		if (isInBoat())
+		if(isInBoat())
 		{
 			setLoc(getBoat().getLoc());
 		}
@@ -7675,7 +7389,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		spawnMe();
 
-		if (isPendingRevive())
+		if(isPendingRevive())
 		{
 			doRevive();
 		}
@@ -7684,16 +7398,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		getAI().notifyEvent(CtrlEvent.EVT_TELEPORTED);
 
-		if (isLockedTarget() && (getTarget() != null))
+		if(isLockedTarget() && (getTarget() != null))
 		{
 			sendPacket(new MyTargetSelectedPacket(this, getTarget()));
 		}
 
 		sendUserInfo(true);
 
-		if (!_isInReplaceTeleport)
+		if(!_isInReplaceTeleport)
 		{
-			for (final Servitor servitor : getServitors())
+			for(final Servitor servitor : getServitors())
 			{
 				servitor.teleportToOwner();
 			}
@@ -7701,12 +7415,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		getListeners().onTeleported();
 
-		for (final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_TELEPORT))
+		for(final ListenerHook hook : getListenerHooks(ListenerHookType.PLAYER_TELEPORT))
 		{
 			hook.onPlayerTeleport(this, getReflectionId());
 		}
 
-		for (final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_TELEPORT))
+		for(final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_TELEPORT))
 		{
 			hook.onPlayerTeleport(this, getReflectionId());
 		}
@@ -7717,10 +7431,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean enterObserverMode(Location loc)
 	{
 		final WorldRegion observerRegion = World.getRegion(loc);
-		if ((observerRegion == null) || !_observerMode.compareAndSet(OBSERVER_NONE, OBSERVER_STARTING))
-		{
-			return false;
-		}
+		if((observerRegion == null) || !_observerMode.compareAndSet(OBSERVER_NONE, OBSERVER_STARTING))
+		{ return false; }
 
 		setTarget(null);
 		getMovement().stopMove();
@@ -7747,10 +7459,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final Location enterPoint = arena.getObserverEnterPoint(this);
 
 		final WorldRegion observerRegion = World.getRegion(enterPoint);
-		if ((observerRegion == null) || !_observerMode.compareAndSet(isInArenaObserverMode() ? OBSERVER_STARTED : OBSERVER_NONE, OBSERVER_STARTING))
-		{
-			return false;
-		}
+		if((observerRegion == null) || !_observerMode.compareAndSet(isInArenaObserverMode() ? OBSERVER_STARTED : OBSERVER_NONE, OBSERVER_STARTING))
+		{ return false; }
 
 		sendPacket(new TeleportToLocationPacket(this, enterPoint));
 
@@ -7760,7 +7470,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// Очищаем все видимые обьекты
 		World.removeObjectsFromPlayer(this);
 
-		if (_observableArena != null)
+		if(_observableArena != null)
 		{
 			_observableArena.removeObserver(_observePoint);
 			_observableArena.onChangeObserverArena(this);
@@ -7788,16 +7498,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void appearObserverMode()
 	{
-		if (!_observerMode.compareAndSet(OBSERVER_STARTING, OBSERVER_STARTED))
-		{
-			return;
-		}
+		if(!_observerMode.compareAndSet(OBSERVER_STARTING, OBSERVER_STARTED))
+		{ return; }
 
 		_observePoint.spawnMe();
 
 		sendUserInfo(true);
 
-		if (_observableArena != null)
+		if(_observableArena != null)
 		{
 			_observableArena.addObserver(_observePoint);
 			_observableArena.onAppearObserver(_observePoint);
@@ -7806,14 +7514,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void leaveObserverMode()
 	{
-		if (!_observerMode.compareAndSet(OBSERVER_STARTED, OBSERVER_LEAVING))
-		{
-			return;
-		}
+		if(!_observerMode.compareAndSet(OBSERVER_STARTED, OBSERVER_LEAVING))
+		{ return; }
 
 		final ObservableArena arena = _observableArena;
 
-		if (arena != null)
+		if(arena != null)
 		{
 			// "Телепортируемся"
 			sendPacket(new TeleportToLocationPacket(this, getLoc()));
@@ -7829,7 +7535,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getMovement().stopMove();
 
 		// Выходим из режима обсервинга
-		if (arena != null)
+		if(arena != null)
 		{
 			arena.onExitObserverArena(this);
 			sendPacket(new ExTeleportToLocationActivate(this, getLoc()));
@@ -7842,10 +7548,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void returnFromObserverMode()
 	{
-		if (!_observerMode.compareAndSet(OBSERVER_LEAVING, OBSERVER_NONE))
-		{
-			return;
-		}
+		if(!_observerMode.compareAndSet(OBSERVER_LEAVING, OBSERVER_NONE))
+		{ return; }
 
 		standUp();
 		setFlying(false);
@@ -7989,43 +7693,43 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	/* varka silenos and ketra orc quests related functions */
 	public void updateKetraVarka()
 	{
-		if (ItemFunctions.getItemCount(this, 7215) > 0)
+		if(ItemFunctions.getItemCount(this, 7215) > 0)
 		{
 			_ketra = 5;
 		}
-		else if (ItemFunctions.getItemCount(this, 7214) > 0)
+		else if(ItemFunctions.getItemCount(this, 7214) > 0)
 		{
 			_ketra = 4;
 		}
-		else if (ItemFunctions.getItemCount(this, 7213) > 0)
+		else if(ItemFunctions.getItemCount(this, 7213) > 0)
 		{
 			_ketra = 3;
 		}
-		else if (ItemFunctions.getItemCount(this, 7212) > 0)
+		else if(ItemFunctions.getItemCount(this, 7212) > 0)
 		{
 			_ketra = 2;
 		}
-		else if (ItemFunctions.getItemCount(this, 7211) > 0)
+		else if(ItemFunctions.getItemCount(this, 7211) > 0)
 		{
 			_ketra = 1;
 		}
-		else if (ItemFunctions.getItemCount(this, 7225) > 0)
+		else if(ItemFunctions.getItemCount(this, 7225) > 0)
 		{
 			_varka = 5;
 		}
-		else if (ItemFunctions.getItemCount(this, 7224) > 0)
+		else if(ItemFunctions.getItemCount(this, 7224) > 0)
 		{
 			_varka = 4;
 		}
-		else if (ItemFunctions.getItemCount(this, 7223) > 0)
+		else if(ItemFunctions.getItemCount(this, 7223) > 0)
 		{
 			_varka = 3;
 		}
-		else if (ItemFunctions.getItemCount(this, 7222) > 0)
+		else if(ItemFunctions.getItemCount(this, 7222) > 0)
 		{
 			_varka = 2;
 		}
-		else if (ItemFunctions.getItemCount(this, 7221) > 0)
+		else if(ItemFunctions.getItemCount(this, 7221) > 0)
 		{
 			_varka = 1;
 		}
@@ -8048,11 +7752,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void updateRam()
 	{
-		if (ItemFunctions.getItemCount(this, 7247) > 0)
+		if(ItemFunctions.getItemCount(this, 7247) > 0)
 		{
 			_ram = 2;
 		}
-		else if (ItemFunctions.getItemCount(this, 7246) > 0)
+		else if(ItemFunctions.getItemCount(this, 7246) > 0)
 		{
 			_ram = 1;
 		}
@@ -8094,7 +7798,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void updatePledgeRank()
 	{
-		if (isGM()) // Хай все ГМы будут императорами мира Lineage 2 ;)
+		if(isGM()) // Хай все ГМы будут императорами мира Lineage 2 ;)
 		{
 			_pledgeRank = PledgeRank.EMPEROR;
 			return;
@@ -8108,10 +7812,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean IS_GUARD_CAPTAIN = false, IS_KNIGHT_COMMANDER = false, IS_LEADER = false;
 
 		final SubUnit unit = getSubUnit();
-		if (unit != null)
+		if(unit != null)
 		{
 			final UnitMember unitMember = unit.getUnitMember(getObjectId());
-			if (unitMember == null)
+			if(unitMember == null)
 			{
 				_log.warn("Player: unitMember null, clan: " + _clan.getClanId() + "; pledgeType: " + unit.getType());
 				return;
@@ -8121,7 +7825,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			IS_LEADER = unitMember.isLeaderOf() == Clan.SUBUNIT_MAIN_CLAN;
 		}
 
-		switch (CLAN_LEVEL)
+		switch(CLAN_LEVEL)
 		{
 			case -1:
 				_pledgeRank = PledgeRank.VAGABOND;
@@ -8133,7 +7837,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				_pledgeRank = PledgeRank.VASSAL;
 				break;
 			case 4:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.KNIGHT;
 				}
@@ -8143,11 +7847,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 5:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.WISEMAN;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
@@ -8157,19 +7861,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 6:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.BARON;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.WISEMAN;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.HEIR;
 				}
@@ -8179,27 +7883,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 7:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.COUNT;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.VISCOUNT;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.KNIGHT;
 				}
-				else if (IS_KNIGHT_COMMANDER)
+				else if(IS_KNIGHT_COMMANDER)
 				{
 					_pledgeRank = PledgeRank.BARON;
 				}
-				else if (IS_KNIGHT)
+				else if(IS_KNIGHT)
 				{
 					_pledgeRank = PledgeRank.HEIR;
 				}
@@ -8209,27 +7913,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 8:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.MARQUIS;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.COUNT;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.WISEMAN;
 				}
-				else if (IS_KNIGHT_COMMANDER)
+				else if(IS_KNIGHT_COMMANDER)
 				{
 					_pledgeRank = PledgeRank.VISCOUNT;
 				}
-				else if (IS_KNIGHT)
+				else if(IS_KNIGHT)
 				{
 					_pledgeRank = PledgeRank.KNIGHT;
 				}
@@ -8239,27 +7943,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 9:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.DUKE;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.MARQUIS;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.BARON;
 				}
-				else if (IS_KNIGHT_COMMANDER)
+				else if(IS_KNIGHT_COMMANDER)
 				{
 					_pledgeRank = PledgeRank.COUNT;
 				}
-				else if (IS_KNIGHT)
+				else if(IS_KNIGHT)
 				{
 					_pledgeRank = PledgeRank.WISEMAN;
 				}
@@ -8269,27 +7973,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 10:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.GRAND_DUKE;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.VISCOUNT;
 				}
-				else if (IS_KNIGHT)
+				else if(IS_KNIGHT)
 				{
 					_pledgeRank = PledgeRank.BARON;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.DUKE;
 				}
-				else if (IS_KNIGHT_COMMANDER)
+				else if(IS_KNIGHT_COMMANDER)
 				{
 					_pledgeRank = PledgeRank.MARQUIS;
 				}
@@ -8299,27 +8003,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 				break;
 			case 11:
-				if (IS_LEADER)
+				if(IS_LEADER)
 				{
 					_pledgeRank = PledgeRank.DISTINGUISHED_KING;
 				}
-				else if (IN_ACADEMY)
+				else if(IN_ACADEMY)
 				{
 					_pledgeRank = PledgeRank.VASSAL;
 				}
-				else if (IS_GUARD)
+				else if(IS_GUARD)
 				{
 					_pledgeRank = PledgeRank.COUNT;
 				}
-				else if (IS_KNIGHT)
+				else if(IS_KNIGHT)
 				{
 					_pledgeRank = PledgeRank.VISCOUNT;
 				}
-				else if (IS_GUARD_CAPTAIN)
+				else if(IS_GUARD_CAPTAIN)
 				{
 					_pledgeRank = PledgeRank.GRAND_DUKE;
 				}
-				else if (IS_KNIGHT_COMMANDER)
+				else if(IS_KNIGHT_COMMANDER)
 				{
 					_pledgeRank = PledgeRank.DUKE;
 				}
@@ -8330,7 +8034,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				break;
 		}
 
-		if (isHero() && (_pledgeRank.ordinal() < PledgeRank.MARQUIS.ordinal()))
+		if(isHero() && (_pledgeRank.ordinal() < PledgeRank.MARQUIS.ordinal()))
 		{
 			_pledgeRank = PledgeRank.MARQUIS;
 		}
@@ -8364,21 +8068,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public int getNameColor()
 	{
-		if (isInObserverMode())
-		{
-			return Color.black.getRGB();
-		}
+		if(isInObserverMode())
+		{ return Color.black.getRGB(); }
 
 		return _nameColor;
 	}
 
 	public void setNameColor(final int nameColor)
 	{
-		if ((nameColor != Config.NORMAL_NAME_COLOUR) && (nameColor != Config.CLANLEADER_NAME_COLOUR) && (nameColor != Config.GM_NAME_COLOUR) && (nameColor != Config.SERVICES_OFFLINE_TRADE_NAME_COLOR))
+		if((nameColor != Config.NORMAL_NAME_COLOUR) && (nameColor != Config.CLANLEADER_NAME_COLOUR) && (nameColor != Config.GM_NAME_COLOUR)
+				&& (nameColor != Config.SERVICES_OFFLINE_TRADE_NAME_COLOR))
 		{
 			setVar("namecolor", Integer.toHexString(nameColor));
 		}
-		else if (nameColor == Config.NORMAL_NAME_COLOUR)
+		else if(nameColor == Config.NORMAL_NAME_COLOUR)
 		{
 			unsetVar("namecolor");
 		}
@@ -8388,7 +8091,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setNameColor(final int red, final int green, final int blue)
 	{
 		_nameColor = (red & 0xFF) + ((green & 0xFF) << 8) + ((blue & 0xFF) << 16);
-		if ((_nameColor != Config.NORMAL_NAME_COLOUR) && (_nameColor != Config.CLANLEADER_NAME_COLOUR) && (_nameColor != Config.GM_NAME_COLOUR) && (_nameColor != Config.SERVICES_OFFLINE_TRADE_NAME_COLOR))
+		if((_nameColor != Config.NORMAL_NAME_COLOUR) && (_nameColor != Config.CLANLEADER_NAME_COLOUR) && (_nameColor != Config.GM_NAME_COLOUR)
+				&& (_nameColor != Config.SERVICES_OFFLINE_TRADE_NAME_COLOR))
 		{
 			setVar("namecolor", Integer.toHexString(_nameColor));
 		}
@@ -8401,7 +8105,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private void restoreVariables()
 	{
 		final List<CharacterVariable> variables = CharacterVariablesDAO.getInstance().restore(getObjectId());
-		for (final CharacterVariable var : variables)
+		for(final CharacterVariable var : variables)
 		{
 			_variables.put(var.getName(), var);
 		}
@@ -8420,7 +8124,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean setVar(String name, Object value, long expirationTime)
 	{
 		final CharacterVariable var = new CharacterVariable(name, String.valueOf(value), expirationTime);
-		if (CharacterVariablesDAO.getInstance().insert(getObjectId(), var))
+		if(CharacterVariablesDAO.getInstance().insert(getObjectId(), var))
 		{
 			_variables.put(name, var);
 			return true;
@@ -8430,15 +8134,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean unsetVar(String name)
 	{
-		if ((name == null) || name.isEmpty())
-		{
-			return false;
-		}
+		if((name == null) || name.isEmpty())
+		{ return false; }
 
-		if (_variables.containsKey(name) && CharacterVariablesDAO.getInstance().delete(getObjectId(), name))
-		{
-			return _variables.remove(name) != null;
-		}
+		if(_variables.containsKey(name) && CharacterVariablesDAO.getInstance().delete(getObjectId(), name))
+		{ return _variables.remove(name) != null; }
 
 		return false;
 	}
@@ -8451,10 +8151,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public String getVar(String name, String defaultValue)
 	{
 		final CharacterVariable var = _variables.get(name);
-		if ((var != null) && !var.isExpired())
-		{
-			return var.getValue();
-		}
+		if((var != null) && !var.isExpired())
+		{ return var.getValue(); }
 
 		return defaultValue;
 	}
@@ -8462,10 +8160,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public long getVarExpireTime(String name)
 	{
 		final CharacterVariable var = _variables.get(name);
-		if (var != null)
-		{
-			return var.getExpireTime();
-		}
+		if(var != null)
+		{ return var.getExpireTime(); }
 		return 0;
 	}
 
@@ -8477,10 +8173,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getVarInt(String name, int defaultValue)
 	{
 		final String var = getVar(name);
-		if (var != null)
-		{
-			return Integer.parseInt(var);
-		}
+		if(var != null)
+		{ return Integer.parseInt(var); }
 
 		return defaultValue;
 	}
@@ -8500,7 +8194,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			result = new ArrayList<>(1);
 		return result;
 	}
-	
+
 	public long getVarLong(String name)
 	{
 		return getVarLong(name, 0L);
@@ -8509,10 +8203,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public long getVarLong(String name, long defaultValue)
 	{
 		final String var = getVar(name);
-		if (var != null)
-		{
-			return Long.parseLong(var);
-		}
+		if(var != null)
+		{ return Long.parseLong(var); }
 
 		return defaultValue;
 	}
@@ -8525,10 +8217,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getVarDouble(String name, double defaultValue)
 	{
 		final String var = getVar(name);
-		if (var != null)
-		{
-			return Double.parseDouble(var);
-		}
+		if(var != null)
+		{ return Double.parseDouble(var); }
 
 		return defaultValue;
 	}
@@ -8541,10 +8231,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean getVarBoolean(String name, boolean defaultValue)
 	{
 		final String var = getVar(name);
-		if (var != null)
-		{
-			return !(var.equals("0") || var.equalsIgnoreCase("false"));
-		}
+		if(var != null)
+		{ return !(var.equals("0") || var.equalsIgnoreCase("false")); }
 
 		return defaultValue;
 	}
@@ -8557,23 +8245,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public Language getLanguage()
 	{
-		if (Config.USE_CLIENT_LANG && (getNetConnection() != null))
-		{
-			return getNetConnection().getLanguage();
-		}
-		if (Config.CAN_SELECT_LANGUAGE)
-		{
-			return _language;
-		}
+		if(Config.USE_CLIENT_LANG && (getNetConnection() != null))
+		{ return getNetConnection().getLanguage(); }
+		if(Config.CAN_SELECT_LANGUAGE)
+		{ return _language; }
 		return Config.DEFAULT_LANG;
 	}
 
 	public int getLocationId()
 	{
-		if (getNetConnection() != null)
-		{
-			return getNetConnection().getLanguage().getId();
-		}
+		if(getNetConnection() != null)
+		{ return getNetConnection().getLanguage().getId(); }
 		return -1;
 	}
 
@@ -8584,7 +8266,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopWaterTask()
 	{
-		if (_taskWater != null)
+		if(_taskWater != null)
 		{
 			_taskWater.cancel(false);
 			_taskWater = null;
@@ -8595,15 +8277,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startWaterTask()
 	{
-		if (isDead())
+		if(isDead())
 		{
 			stopWaterTask();
 		}
-		else if (Config.ALLOW_WATER && (_taskWater == null))
+		else if(Config.ALLOW_WATER && (_taskWater == null))
 		{
 			final int timeinwater = (int) (getStat().calc(Stats.BREATH, getBaseStats().getBreathBonus(), null, null) * 1000L);
 			sendPacket(new SetupGaugePacket(this, SetupGaugePacket.Colors.BLUE, timeinwater));
-			if (isTransformed() && !getTransform().isCanSwim())
+			if(isTransformed() && !getTransform().isCanSwim())
 			{
 				setTransform(null);
 			}
@@ -8628,7 +8310,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		autoShot();
 		setKiller(null);
 		broadcastRelation();
-		if (isMounted())
+		if(isMounted())
 		{
 			_mount.onRevive();
 		}
@@ -8649,27 +8331,28 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void reviveRequest(Player reviver, double percent, boolean pet)
 	{
-		final ReviveAnswerListener reviveAsk = (_askDialog != null) && (_askDialog.getValue() instanceof ReviveAnswerListener) ? (ReviveAnswerListener) _askDialog.getValue() : null;
-		if (reviveAsk != null)
+		final ReviveAnswerListener reviveAsk = (_askDialog != null)
+				&& (_askDialog.getValue() instanceof ReviveAnswerListener) ? (ReviveAnswerListener) _askDialog.getValue() : null;
+		if(reviveAsk != null)
 		{
-			if ((reviveAsk.isForPet() == pet) && (reviveAsk.getPower() >= percent))
+			if((reviveAsk.isForPet() == pet) && (reviveAsk.getPower() >= percent))
 			{
 				reviver.sendPacket(SystemMsg.RESURRECTION_HAS_ALREADY_BEEN_PROPOSED);
 				return;
 			}
-			if (pet && !reviveAsk.isForPet())
+			if(pet && !reviveAsk.isForPet())
 			{
 				reviver.sendPacket(SystemMsg.A_PET_CANNOT_BE_RESURRECTED_WHILE_ITS_OWNER_IS_IN_THE_PROCESS_OF_RESURRECTING);
 				return;
 			}
-			if (pet && isDead())
+			if(pet && isDead())
 			{
 				reviver.sendPacket(SystemMsg.WHILE_A_PET_IS_BEING_RESURRECTED_IT_CANNOT_HELP_IN_RESURRECTING_ITS_MASTER);
 				return;
 			}
 		}
 
-		if ((pet && (getPet() != null) && getPet().isDead()) || (!pet && isDead()))
+		if((pet && (getPet() != null) && getPet().isDead()) || (!pet && isDead()))
 		{
 
 			final ConfirmDlgPacket pkt = new ConfirmDlgPacket(SystemMsg.C1_IS_MAKING_AN_ATTEMPT_TO_RESURRECT_YOU_IF_YOU_CHOOSE_THIS_PATH_S2_EXPERIENCE_WILL_BE_RETURNED_FOR_YOU, 0);
@@ -8693,22 +8376,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void increaseBotRating()
 	{
 		final int bot_points = getBotRating();
-		if ((bot_points + 1) >= Config.MAX_BOT_POINTS)
-		{
-			return;
-		}
+		if((bot_points + 1) >= Config.MAX_BOT_POINTS)
+		{ return; }
 		setBotRating(bot_points + 1);
 	}
 
 	public void decreaseBotRating()
 	{
 		final int bot_points = getBotRating();
-		if ((bot_points - 1) <= Config.MINIMAL_BOT_RATING_TO_BAN)
+		if((bot_points - 1) <= Config.MINIMAL_BOT_RATING_TO_BAN)
 		{
-			if (toJail(Config.AUTO_BOT_BAN_JAIL_TIME))
+			if(toJail(Config.AUTO_BOT_BAN_JAIL_TIME))
 			{
 				sendMessage("You moved to jail, time to escape - " + Config.AUTO_BOT_BAN_JAIL_TIME + " minutes, reason - botting .");
-				if (Config.ANNOUNCE_AUTO_BOT_BAN)
+				if(Config.ANNOUNCE_AUTO_BOT_BAN)
 				{
 					Announcements.announceToAll("Player " + getName() + " jailed for botting!");
 				}
@@ -8717,7 +8398,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		else
 		{
 			setBotRating(bot_points - 1);
-			if (Config.ON_WRONG_QUESTION_KICK)
+			if(Config.ON_WRONG_QUESTION_KICK)
 			{
 				kick();
 			}
@@ -8746,21 +8427,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean toJail(int time)
 	{
-		if (isInJail())
-		{
-			return false;
-		}
+		if(isInJail())
+		{ return false; }
 
 		setIsInJail(true);
 		setVar(JAILED_VAR, true, System.currentTimeMillis() + (time * 60000));
 		startUnjailTask(this, time);
 
-		if (getReflection().isMain())
+		if(getReflection().isMain())
 		{
 			setVar("backCoords", getLoc().toXYZString(), -1);
 		}
 
-		if (isInStoreMode())
+		if(isInStoreMode())
 		{
 			setPrivateStoreType(STORE_PRIVATE_NONE);
 			storePrivateStore();
@@ -8772,17 +8451,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean fromJail()
 	{
-		if (!isInJail())
-		{
-			return false;
-		}
+		if(!isInJail())
+		{ return false; }
 
 		setIsInJail(false);
 		unsetVar(JAILED_VAR);
 		stopUnjailTask();
 
 		final String back = getVar("backCoords");
-		if (back != null)
+		if(back != null)
 		{
 			teleToLocation(Location.parseLoc(back), ReflectionManager.MAIN);
 			unsetVar("backCoords");
@@ -8814,7 +8491,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(2, getObjectId());
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("Could not activate nochannel:" + e);
 		}
@@ -8837,17 +8514,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		int daysPassed = 0;
 		long lastAccessTime = _lastAccess * 1000L;
-		while (lastAccessTime < System.currentTimeMillis())
+		while(lastAccessTime < System.currentTimeMillis())
 		{
 			final long nextDayTime = DAILY_TIME_PATTERN.next(lastAccessTime);
-			if (nextDayTime < System.currentTimeMillis())
+			if(nextDayTime < System.currentTimeMillis())
 			{
 				daysPassed++;
 			}
 			lastAccessTime = nextDayTime;
 		}
 
-		if (daysPassed > 0)
+		if(daysPassed > 0)
 		{
 			restartDailyCounters(true);
 		}
@@ -8858,18 +8535,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getPvpbook().reset();
 
 		// World chat
-		if (Config.ALLOW_WORLD_CHAT)
+		if(Config.ALLOW_WORLD_CHAT)
 		{
 			setUsedWorldChatPoints(0);
-			if (!onRestore)
+			if(!onRestore)
 			{
 				sendPacket(new ExWorldChatCnt(this));
 			}
 		}
 
-		for (final SubClass sub : getSubClassList().values())
+		for(final SubClass sub : getSubClassList().values())
 		{
-			if (sub.getSayhasGrace() < 140000)
+			if(sub.getSayhasGrace() < 140000)
 			{
 				sub.setSayhasGrace(Math.min(sub.getSayhasGrace() + 35000, 140000));
 			}
@@ -8894,17 +8571,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		int weeksPassed = 0;
 		long lastAccessTime = _lastAccess * 1000L;
-		while (lastAccessTime < System.currentTimeMillis())
+		while(lastAccessTime < System.currentTimeMillis())
 		{
 			final long nextDayTime = WEEKLY_TIME_PATTERN.next(lastAccessTime);
-			if (nextDayTime < System.currentTimeMillis())
+			if(nextDayTime < System.currentTimeMillis())
 			{
 				weeksPassed++;
 			}
 			lastAccessTime = nextDayTime;
 		}
 
-		if (weeksPassed > 0)
+		if(weeksPassed > 0)
 		{
 			restartWeeklyCounters(true);
 		}
@@ -8922,17 +8599,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		int monthsPassed = 0;
 		long lastAccessTime = _lastAccess * 1000L;
-		while (lastAccessTime < System.currentTimeMillis())
+		while(lastAccessTime < System.currentTimeMillis())
 		{
 			final long nextDayTime = MONTHLY_TIME_PATTERN.next(lastAccessTime);
-			if (nextDayTime < System.currentTimeMillis())
+			if(nextDayTime < System.currentTimeMillis())
 			{
 				monthsPassed++;
 			}
 			lastAccessTime = nextDayTime;
 		}
 
-		if (monthsPassed > 0)
+		if(monthsPassed > 0)
 		{
 			restartMonthlyCounters(true);
 		}
@@ -8955,10 +8632,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getBaseClassId()
 	{
-		if (getBaseSubClass() != null)
-		{
-			return getBaseSubClass().getClassId();
-		}
+		if(getBaseSubClass() != null)
+		{ return getBaseSubClass().getClassId(); }
 
 		return -1;
 	}
@@ -8985,10 +8660,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getMaxLevel()
 	{
-		if (getActiveSubClass() != null)
-		{
-			return getActiveSubClass().getMaxLevel();
-		}
+		if(getActiveSubClass() != null)
+		{ return getActiveSubClass().getMaxLevel(); }
 
 		return Experience.getMaxLevel();
 	}
@@ -9079,7 +8752,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.executeUpdate();
 			DbUtils.close(statement);
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("", e);
 		}
@@ -9095,7 +8768,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void storeCharSubClasses()
 	{
 		final SubClass main = getActiveSubClass();
-		if (main != null)
+		if(main != null)
 		{
 			main.setCp(getCurrentCp());
 			main.setHp(getCurrentHp());
@@ -9127,35 +8800,29 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private boolean addSubClass(final int oldClassId, final int classId, boolean storeOld, SubClassType type, long exp, long sp)
 	{
 		final ClassId newId = ClassId.valueOf(classId);
-		if (newId.isDummy() || newId.isOfLevel(ClassLevel.NONE) || newId.isOfLevel(ClassLevel.FIRST))
-		{
-			return false;
-		}
+		if(newId.isDummy() || newId.isOfLevel(ClassLevel.NONE) || newId.isOfLevel(ClassLevel.FIRST))
+		{ return false; }
 
 		final SubClass newClass = new SubClass(this);
 		newClass.setType(type);
 		newClass.setClassId(classId);
-		if (exp > 0L)
+		if(exp > 0L)
 		{
 			newClass.setExp(exp, true);
 		}
-		if (sp > 0)
+		if(sp > 0)
 		{
 			newClass.setSp(sp);
 		}
-		if (!getSubClassList().add(newClass))
-		{
-			return false;
-		}
+		if(!getSubClassList().add(newClass))
+		{ return false; }
 
 		final int level = newClass.getLevel();
 		final double hp = newId.getBaseHp(level);
 		final double mp = newId.getBaseMp(level);
 		final double cp = newId.getBaseCp(level);
-		if (!CharacterSubclassDAO.getInstance().insert(getObjectId(), newClass.getClassId(), newClass.getExp(), newClass.getSp(), hp, mp, cp, hp, mp, cp, level, false, type, ElementalElement.NONE, getSayhasGrace()))
-		{
-			return false;
-		}
+		if(!CharacterSubclassDAO.getInstance().insert(getObjectId(), newClass.getClassId(), newClass.getExp(), newClass.getSp(), hp, mp, cp, hp, mp, cp, level, false, type, ElementalElement.NONE, getSayhasGrace()))
+		{ return false; }
 
 		setActiveSubClass(classId, storeOld, false);
 
@@ -9179,22 +8846,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean modifySubClass(final int oldClassId, final int newClassId, final boolean safeExpSp)
 	{
 		final SubClass originalClass = getSubClassList().getByClassId(oldClassId);
-		if ((originalClass == null) || originalClass.isBase())
-		{
-			return false;
-		}
+		if((originalClass == null) || originalClass.isBase())
+		{ return false; }
 
 		final SubClassType type = originalClass.getType();
 		long exp = 0L;
 		long sp = 0;
-		if (safeExpSp)
+		if(safeExpSp)
 		{
 			exp = originalClass.getExp();
 			sp = originalClass.getSp();
 		}
 
 		final TrainingCamp trainingCamp = TrainingCampManager.getInstance().getTrainingCamp(this);
-		if ((trainingCamp != null) && (trainingCamp.getClassIndex() == originalClass.getIndex()))
+		if((trainingCamp != null) && (trainingCamp.getClassIndex() == originalClass.getIndex()))
 		{
 			TrainingCampManager.getInstance().removeTrainingCamp(this);
 		}
@@ -9205,7 +8870,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			// Remove all basic info stored about this sub-class.
-			statement = con.prepareStatement("DELETE FROM character_subclasses WHERE char_obj_id=? AND class_id=? AND type != " + SubClassType.BASE_CLASS.ordinal());
+			statement = con.prepareStatement("DELETE FROM character_subclasses WHERE char_obj_id=? AND class_id=? AND type != "
+					+ SubClassType.BASE_CLASS.ordinal());
 			statement.setInt(1, getObjectId());
 			statement.setInt(2, oldClassId);
 			statement.execute();
@@ -9246,7 +8912,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.execute();
 			DbUtils.close(statement);
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("Could not delete char sub-class: " + e);
 			_log.error("", e);
@@ -9265,13 +8931,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		abortAttack(true, false);
 		abortCast(true, false);
 
-		if (!onRestore)
+		if(!onRestore)
 		{
 			final SubClass oldActiveSub = getActiveSubClass();
-			if (oldActiveSub != null)
+			if(oldActiveSub != null)
 			{
 				storeDisableSkills();
-				if (store)
+				if(store)
 				{
 					oldActiveSub.setCp(getCurrentCp());
 					oldActiveSub.setHp(getCurrentHp());
@@ -9281,10 +8947,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final SubClass newActiveSub = _subClassList.changeActiveSubClass(subId);
-		if (newActiveSub == null)
-		{
-			return false;
-		}
+		if(newActiveSub == null)
+		{ return false; }
 
 		setClassId(subId, false);
 
@@ -9293,9 +8957,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getAbnormalList().stopAll();
 		deleteCubics();
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
-			if ((servitor != null) && servitor.isSummon())
+			if((servitor != null) && servitor.isSummon())
 			{
 				servitor.unSummon(false);
 			}
@@ -9319,7 +8983,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		restoreDisableSkills();
 
 		getRelics().restore();
-		
+
 		setCurrentCp(newActiveSub.getCp(), false);
 		setCurrentMp(newActiveSub.getMp(), false);
 		setCurrentHp(newActiveSub.getHp(), false);
@@ -9356,7 +9020,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopKickTask()
 	{
-		if (_kickTask != null)
+		if(_kickTask != null)
 		{
 			_kickTask.cancel(false);
 			_kickTask = null;
@@ -9365,16 +9029,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean givePremiumAccount(PremiumAccountTemplate premiumAccount, int delay)
 	{
-		if (getNetConnection() == null)
-		{
-			return false;
-		}
+		if(getNetConnection() == null)
+		{ return false; }
 
 		final int type = premiumAccount.getType();
-		if (type == 0)
-		{
-			return false;
-		}
+		if(type == 0)
+		{ return false; }
 
 		int expireTime = (delay > 0) ? (int) ((delay * 60 * 60) + (System.currentTimeMillis() / 1000)) : Integer.MAX_VALUE;
 
@@ -9382,22 +9042,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		final int oldAccountType = getNetConnection().getPremiumAccountType();
 		final int oldAccountExpire = getNetConnection().getPremiumAccountExpire();
-		if ((oldAccountType == type) && (oldAccountExpire > (System.currentTimeMillis() / 1000)))
+		if((oldAccountType == type) && (oldAccountExpire > (System.currentTimeMillis() / 1000)))
 		{
 			expireTime += (int) (oldAccountExpire - (System.currentTimeMillis() / 1000));
 			extended = true;
 		}
 
-		if (Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
+		if(Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 		{
 			PremiumAccountDAO.getInstance().insert(getAccountName(), type, expireTime);
 		}
 		else
 		{
-			if (AuthServerCommunication.getInstance().isShutdown())
-			{
-				return false;
-			}
+			if(AuthServerCommunication.getInstance().isShutdown())
+			{ return false; }
 
 			AuthServerCommunication.getInstance().sendPacket(new BonusRequest(getAccountName(), type, expireTime));
 		}
@@ -9405,11 +9063,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getNetConnection().setPremiumAccountType(type);
 		getNetConnection().setPremiumAccountExpire(expireTime);
 
-		if (startPremiumAccountTask())
+		if(startPremiumAccountTask())
 		{
-			if (!extended)
+			if(!extended)
 			{
-				if (getParty() != null)
+				if(getParty() != null)
 				{
 					getParty().recalculatePartyData();
 				}
@@ -9426,21 +9084,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean removePremiumAccount()
 	{
 		final PremiumAccountTemplate oldPremiumAccount = getPremiumAccount();
-		if (oldPremiumAccount.getType() == 0)
-		{
-			return false;
-		}
+		if(oldPremiumAccount.getType() == 0)
+		{ return false; }
 
 		oldPremiumAccount.onRemove(this);
 
 		_premiumAccount = PremiumAccountHolder.getInstance().getPremiumAccount(0);
 
-		if (getParty() != null)
+		if(getParty() != null)
 		{
 			getParty().recalculatePartyData();
 		}
 
-		if (Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
+		if(Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 		{
 			PremiumAccountDAO.getInstance().delete(getAccountName());
 		}
@@ -9449,7 +9105,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			AuthServerCommunication.getInstance().sendPacket(new BonusRequest(getAccountName(), 0, 0));
 		}
 
-		if (getNetConnection() != null)
+		if(getNetConnection() != null)
 		{
 			getNetConnection().setPremiumAccountType(0);
 			getNetConnection().setPremiumAccountExpire(0);
@@ -9468,32 +9124,26 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private boolean tryGiveFreePremiumAccount()
 	{
-		if ((Config.FREE_PA_TYPE == 0) || (Config.FREE_PA_DELAY <= 0))
-		{
-			return false;
-		}
+		if((Config.FREE_PA_TYPE == 0) || (Config.FREE_PA_DELAY <= 0))
+		{ return false; }
 
 		final PremiumAccountTemplate premiumAccount = PremiumAccountHolder.getInstance().getPremiumAccount(Config.FREE_PA_TYPE);
-		if (premiumAccount == null)
-		{
-			return false;
-		}
+		if(premiumAccount == null)
+		{ return false; }
 
 		final boolean recieved = Boolean.parseBoolean(AccountVariablesDAO.getInstance().select(getAccountName(), FREE_PA_RECIEVED, "false"));
-		if (recieved)
-		{
-			return false;
-		}
+		if(recieved)
+		{ return false; }
 
-		if (givePremiumAccount(premiumAccount, Config.FREE_PA_DELAY))
+		if(givePremiumAccount(premiumAccount, Config.FREE_PA_DELAY))
 		{
 			AccountVariablesDAO.getInstance().insert(getAccountName(), FREE_PA_RECIEVED, "true");
 
-			if (Config.ENABLE_FREE_PA_NOTIFICATION)
+			if(Config.ENABLE_FREE_PA_NOTIFICATION)
 			{
 				CustomMessage message = null;
 				final int accountExpire = getNetConnection().getPremiumAccountExpire();
-				if (accountExpire != Integer.MAX_VALUE)
+				if(accountExpire != Integer.MAX_VALUE)
 				{
 					message = new CustomMessage("l2s.gameserver.model.Player.GiveFreePA");
 					message.addString(TimeUtils.toSimpleFormat(accountExpire * 1000L));
@@ -9512,41 +9162,37 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private boolean startPremiumAccountTask()
 	{
-		if (!Config.PREMIUM_ACCOUNT_ENABLED)
-		{
-			return false;
-		}
+		if(!Config.PREMIUM_ACCOUNT_ENABLED)
+		{ return false; }
 
 		stopPremiumAccountTask();
 
-		if (getNetConnection() == null)
-		{
-			return false;
-		}
+		if(getNetConnection() == null)
+		{ return false; }
 
 		final int accountType = getNetConnection().getPremiumAccountType();
 		final PremiumAccountTemplate premiumAccount = accountType == 0 ? null : PremiumAccountHolder.getInstance().getPremiumAccount(accountType);
-		if (premiumAccount != null)
+		if(premiumAccount != null)
 		{
 			final int accountExpire = getNetConnection().getPremiumAccountExpire();
-			if (accountExpire > (System.currentTimeMillis() / 1000L))
+			if(accountExpire > (System.currentTimeMillis() / 1000L))
 			{
 				_premiumAccount = premiumAccount;
 
 				premiumAccount.onAdd(this);
 
 				final int itemsReceivedType = getVarInt(PA_ITEMS_RECIEVED);
-				if (itemsReceivedType != premiumAccount.getType())
+				if(itemsReceivedType != premiumAccount.getType())
 				{
 					removePremiumAccountItems(false);
 
 					final List<ItemData> items = premiumAccount.getGiveItemsOnStart();
-					if (!items.isEmpty())
+					if(!items.isEmpty())
 					{
-						if (!isInventoryFull())
+						if(!isInventoryFull())
 						{
 							sendPacket(SystemMsg.THE_PREMIUM_ITEM_FOR_THIS_ACCOUNT_WAS_PROVIDED_IF_THE_PREMIUM_ACCOUNT_IS_TERMINATED_THIS_ITEM_WILL_BE_DELETED);
-							for (final ItemData item : items)
+							for(final ItemData item : items)
 							{
 								ItemFunctions.addItem(this, item.getId(), item.getCount(), true);
 							}
@@ -9559,7 +9205,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					}
 				}
 
-				if (accountExpire != Integer.MAX_VALUE)
+				if(accountExpire != Integer.MAX_VALUE)
 				{
 					_premiumAccountExpirationTask = LazyPrecisionTaskManager.getInstance().startPremiumAccountExpirationTask(this, accountExpire);
 				}
@@ -9567,7 +9213,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 			else
 			{
-				if (!Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
+				if(!Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 				{
 					AuthServerCommunication.getInstance().sendPacket(new BonusRequest(getAccountName(), 0, 0));
 				}
@@ -9576,17 +9222,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		removePremiumAccountItems(true);
 
-		if (tryGiveFreePremiumAccount())
-		{
-			return false;
-		}
+		if(tryGiveFreePremiumAccount())
+		{ return false; }
 
-		if (Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
+		if(Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 		{
 			PremiumAccountDAO.getInstance().delete(getAccountName());
 		}
 
-		if (getNetConnection() != null)
+		if(getNetConnection() != null)
 		{
 			getNetConnection().setPremiumAccountType(0);
 			getNetConnection().setPremiumAccountExpire(0);
@@ -9596,7 +9240,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void stopPremiumAccountTask()
 	{
-		if (_premiumAccountExpirationTask != null)
+		if(_premiumAccountExpirationTask != null)
 		{
 			_premiumAccountExpirationTask.cancel(false);
 			_premiumAccountExpirationTask = null;
@@ -9606,20 +9250,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private void removePremiumAccountItems(boolean notify)
 	{
 		final PremiumAccountTemplate premiumAccount = PremiumAccountHolder.getInstance().getPremiumAccount(getVarInt(PA_ITEMS_RECIEVED));
-		if (premiumAccount != null)
+		if(premiumAccount != null)
 		{
 			final List<ItemData> items = premiumAccount.getTakeItemsOnEnd();
-			if (!items.isEmpty())
+			if(!items.isEmpty())
 			{
-				if (notify)
+				if(notify)
 				{
 					sendPacket(SystemMsg.THE_PREMIUM_ACCOUNT_HAS_BEEN_TERMINATED_THE_PROVIDED_PREMIUM_ITEM_WAS_DELETED);
 				}
-				for (final ItemData item : items)
+				for(final ItemData item : items)
 				{
 					ItemFunctions.deleteItem(this, item.getId(), item.getCount(), notify);
 				}
-				for (final ItemData item : items)
+				for(final ItemData item : items)
 				{
 					ItemFunctions.deleteItemsEverywhere(this, item.getId());
 				}
@@ -9656,7 +9300,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean getAndSetLastItemAuctionRequest()
 	{
-		if ((_lastItemAuctionInfoRequest + 2000L) < System.currentTimeMillis())
+		if((_lastItemAuctionInfoRequest + 2000L) < System.currentTimeMillis())
 		{
 			_lastItemAuctionInfoRequest = System.currentTimeMillis();
 			return true;
@@ -9676,23 +9320,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public GameObject getVisibleObject(int id)
 	{
-		if (getObjectId() == id)
-		{
-			return this;
-		}
+		if(getObjectId() == id)
+		{ return this; }
 
 		GameObject target = null;
 
-		if (getTargetId() == id)
+		if(getTargetId() == id)
 		{
 			target = getTarget();
 		}
 
-		if ((target == null) && isInParty())
+		if((target == null) && isInParty())
 		{
-			for (final Player p : _party.getPartyMembers())
+			for(final Player p : _party.getPartyMembers())
 			{
-				if ((p != null) && (p.getObjectId() == id))
+				if((p != null) && (p.getObjectId() == id))
 				{
 					target = p;
 					break;
@@ -9700,7 +9342,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 		}
 
-		if (target == null)
+		if(target == null)
 		{
 			target = World.getAroundObjectById(this, id);
 		}
@@ -9721,7 +9363,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setTitleColor(final int titlecolor)
 	{
-		if (titlecolor != DEFAULT_TITLE_COLOR)
+		if(titlecolor != DEFAULT_TITLE_COLOR)
 		{
 			setVar("titlecolor", Integer.toHexString(titlecolor), -1);
 		}
@@ -9790,13 +9432,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getPremiumAccountLeftTime()
 	{
-		if (hasPremiumAccount())
+		if(hasPremiumAccount())
 		{
 			final GameClient client = getNetConnection();
-			if (client != null)
-			{
-				return (int) Math.max(0, client.getPremiumAccountExpire() - (System.currentTimeMillis() / 1000));
-			}
+			if(client != null)
+			{ return (int) Math.max(0, client.getPremiumAccountExpire() - (System.currentTimeMillis() / 1000)); }
 		}
 		return 0;
 	}
@@ -9821,7 +9461,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public double getRateExp()
 	{
-		final double baseRate = Config.RATE_XP_BY_LVL[getLevel()] * (isInParty() ? _party.getRateExp(this) : getPremiumAccount().getExpRate()) * getVIP().getTemplate().getExpRate();
+		final double baseRate = Config.RATE_XP_BY_LVL[getLevel()]
+				* (isInParty() ? _party.getRateExp(this) : getPremiumAccount().getExpRate())
+				* getVIP().getTemplate().getExpRate();
 		double rate = baseRate;
 		rate += baseRate * (getSayhasGraceBonus() - 1.);
 		rate += baseRate * getStat().calc(Stats.EXP_RATE_MULTIPLIER, 0, null, null);
@@ -9830,7 +9472,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public double getRateSp()
 	{
-		final double baseRate = Config.RATE_SP_BY_LVL[getLevel()] * (isInParty() ? _party.getRateSp(this) : getPremiumAccount().getSpRate()) * getVIP().getTemplate().getSpRate();
+		final double baseRate = Config.RATE_SP_BY_LVL[getLevel()]
+				* (isInParty() ? _party.getRateSp(this) : getPremiumAccount().getSpRate())
+				* getVIP().getTemplate().getSpRate();
 		double rate = baseRate;
 		rate += baseRate * (getSayhasGraceBonus() - 1.);
 		rate += baseRate * getStat().calc(Stats.SP_RATE_MULTIPLIER, 0, null, null);
@@ -9962,12 +9606,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		@Override
 		public void onChatMessageReceive(Player player, ChatType type, String charName, String text)
 		{
-			if (_snoopListenerPlayers.size() > 0)
+			if(_snoopListenerPlayers.size() > 0)
 			{
 				final SnoopPacket sn = new SnoopPacket(getObjectId(), getName(), type.ordinal(), charName, text);
-				for (final Player pci : _snoopListenerPlayers)
+				for(final Player pci : _snoopListenerPlayers)
 				{
-					if (pci != null)
+					if(pci != null)
 					{
 						pci.sendPacket(sn);
 					}
@@ -9978,12 +9622,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addSnooper(Player pci)
 	{
-		if (!_snoopListenerPlayers.contains(pci))
+		if(!_snoopListenerPlayers.contains(pci))
 		{
 			_snoopListenerPlayers.add(pci);
 		}
 
-		if (!_snoopListenerPlayers.isEmpty() && (_snoopListener == null))
+		if(!_snoopListenerPlayers.isEmpty() && (_snoopListener == null))
 		{
 			_snoopListener = new SnoopListener();
 			addListener(_snoopListener);
@@ -9994,7 +9638,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		_snoopListenerPlayers.remove(pci);
 
-		if (_snoopListenerPlayers.isEmpty() && (_snoopListener != null))
+		if(_snoopListenerPlayers.isEmpty() && (_snoopListener != null))
 		{
 			removeListener(_snoopListener);
 			_snoopListener = null;
@@ -10038,7 +9682,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		i = Math.min(i, getMaxIncreasedForce());
 		i = Math.max(i, 0);
 
-		if ((i != 0) && (i > _increasedForce))
+		if((i != 0) && (i > _increasedForce))
 		{
 			sendPacket(new SystemMessage(SystemMessage.YOUR_FORCE_HAS_INCREASED_TO_S1_LEVEL).addNumber(i));
 		}
@@ -10062,12 +9706,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		value = Math.min(100, value);
 
-		if (currentSouls == value)
-		{
-			return;
-		}
+		if(currentSouls == value)
+		{ return; }
 
-		if (value <= 0)
+		if(value <= 0)
 		{
 			_consumedSouls[type] = 0;
 			sendEtcStatusUpdate();
@@ -10079,7 +9721,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		sendPacket(new EtcStatusUpdatePacket(this));
 
 		final int diff = value - currentSouls;
-		if (diff > 0)
+		if(diff > 0)
 		{
 			sendPacket(new SystemMessage(SystemMessage.YOUR_SOUL_HAS_INCREASED_BY_S1_SO_IT_IS_NOW_AT_S2).addNumber(diff).addNumber(value));
 			useTriggers(this, type == 0 ? TriggerType.ON_ADD_LIGHT_SOUL : TriggerType.ON_ADD_DARK_SOUL, null, null, value);
@@ -10093,26 +9735,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public final boolean isFalling(int z)
 	{
-		if (!Config.DAMAGE_FROM_FALLING || isDead() || isFlying() || isInWater() || isInBoat())
-		{
-			return false;
-		}
+		if(!Config.DAMAGE_FROM_FALLING || isDead() || isFlying() || isInWater() || isInBoat())
+		{ return false; }
 
-		if (System.currentTimeMillis() < _fallingTimestamp)
-		{
-			return true;
-		}
+		if(System.currentTimeMillis() < _fallingTimestamp)
+		{ return true; }
 
 		final double deltaZ = Math.abs(getZ() - z);
 		// If there is no geodata loaded for the place we are client Z correction might
 		// cause falling damage.
-		if ((deltaZ <= getBaseStats().getSafeFallHeight()) || !GeoEngine.hasGeo(getX(), getY(), getGeoIndex()))
-		{
-			return false;
-		}
+		if((deltaZ <= getBaseStats().getSafeFallHeight()) || !GeoEngine.hasGeo(getX(), getY(), getGeoIndex()))
+		{ return false; }
 
 		final int damage = (int) getStat().calc(Stats.FALL, (deltaZ * getMaxHp()) / 1000., null, null);
-		if (damage > 0)
+		if(damage > 0)
 		{
 			setCurrentHp(Math.max(1, (int) (getCurrentHp() - damage)), false);
 			sendPacket(new SystemMessage(SystemMessage.YOU_RECEIVED_S1_DAMAGE_FROM_TAKING_A_HIGH_FALL).addNumber(damage));
@@ -10139,33 +9775,29 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void checkHpMessages(double curHp, double newHp)
 	{
 		// сюда пасивные скиллы
-		final int[] _hp =
-		{
-			30,
-			30
+		final int[] _hp = {
+				30,
+				30
 		};
-		final int[] skills =
-		{
-			290,
-			291
+		final int[] skills = {
+				290,
+				291
 		};
 
 		// сюда активные эффекты
-		final int[] _effects_skills_id =
-		{
-			139,
-			176,
-			292,
-			292,
-			420
+		final int[] _effects_skills_id = {
+				139,
+				176,
+				292,
+				292,
+				420
 		};
-		final int[] _effects_hp =
-		{
-			30,
-			30,
-			30,
-			60,
-			30
+		final int[] _effects_hp = {
+				30,
+				30,
+				30,
+				60,
+				30
 		};
 
 		final double percent = getMaxHp() / 100;
@@ -10174,17 +9806,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean needsUpdate = false;
 
 		// check for passive skills
-		for (int i = 0; i < skills.length; i++)
+		for(int i = 0; i < skills.length; i++)
 		{
 			final int level = getSkillLevel(skills[i]);
-			if (level > 0)
+			if(level > 0)
 			{
-				if ((_curHpPercent > _hp[i]) && (_newHpPercent <= _hp[i]))
+				if((_curHpPercent > _hp[i]) && (_newHpPercent <= _hp[i]))
 				{
 					sendPacket(new SystemMessage(SystemMessage.SINCE_HP_HAS_DECREASED_THE_EFFECT_OF_S1_CAN_BE_FELT).addSkillName(skills[i], level));
 					needsUpdate = true;
 				}
-				else if ((_curHpPercent <= _hp[i]) && (_newHpPercent > _hp[i]))
+				else if((_curHpPercent <= _hp[i]) && (_newHpPercent > _hp[i]))
 				{
 					sendPacket(new SystemMessage(SystemMessage.SINCE_HP_HAS_INCREASED_THE_EFFECT_OF_S1_WILL_DISAPPEAR).addSkillName(skills[i], level));
 					needsUpdate = true;
@@ -10193,16 +9825,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		// check for active effects
-		for (Integer i = 0; i < _effects_skills_id.length; i++)
+		for(Integer i = 0; i < _effects_skills_id.length; i++)
 		{
-			if (getAbnormalList().contains(_effects_skills_id[i]))
+			if(getAbnormalList().contains(_effects_skills_id[i]))
 			{
-				if ((_curHpPercent > _effects_hp[i]) && (_newHpPercent <= _effects_hp[i]))
+				if((_curHpPercent > _effects_hp[i]) && (_newHpPercent <= _effects_hp[i]))
 				{
 					sendPacket(new SystemMessage(SystemMessage.SINCE_HP_HAS_DECREASED_THE_EFFECT_OF_S1_CAN_BE_FELT).addSkillName(_effects_skills_id[i], 1));
 					needsUpdate = true;
 				}
-				else if ((_curHpPercent <= _effects_hp[i]) && (_newHpPercent > _effects_hp[i]))
+				else if((_curHpPercent <= _effects_hp[i]) && (_newHpPercent > _effects_hp[i]))
 				{
 					sendPacket(new SystemMessage(SystemMessage.SINCE_HP_HAS_INCREASED_THE_EFFECT_OF_S1_WILL_DISAPPEAR).addSkillName(_effects_skills_id[i], 1));
 					needsUpdate = true;
@@ -10210,7 +9842,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 		}
 
-		if (needsUpdate)
+		if(needsUpdate)
 		{
 			sendChanges();
 		}
@@ -10222,9 +9854,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void checkDayNightMessages()
 	{
 		final int level = getSkillLevel(294);
-		if (level > 0)
+		if(level > 0)
 		{
-			if (GameTimeController.getInstance().isNowNight())
+			if(GameTimeController.getInstance().isNowNight())
 			{
 				sendPacket(new SystemMessage(SystemMessage.IT_IS_NOW_MIDNIGHT_AND_THE_EFFECT_OF_S1_CAN_BE_FELT).addSkillName(294, level));
 			}
@@ -10247,10 +9879,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		super.onUpdateZones(leaving, entering);
 
-		if (((leaving == null) || leaving.isEmpty()) && ((entering == null) || entering.isEmpty()))
-		{
-			return;
-		}
+		if(((leaving == null) || leaving.isEmpty()) && ((entering == null) || entering.isEmpty()))
+		{ return; }
 
 		final boolean lastInCombatZone = (_zoneMask & ZONE_PVP_FLAG) == ZONE_PVP_FLAG;
 		final boolean lastInDangerArea = (_zoneMask & ZONE_ALTERED_FLAG) == ZONE_ALTERED_FLAG;
@@ -10268,47 +9898,47 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final int lastZoneMask = _zoneMask;
 		_zoneMask = 0;
 
-		if (isInCombatZone)
+		if(isInCombatZone)
 		{
 			_zoneMask |= ZONE_PVP_FLAG;
 		}
-		if (isInDangerArea)
+		if(isInDangerArea)
 		{
 			_zoneMask |= ZONE_ALTERED_FLAG;
 		}
-		if (isOnSiegeField)
+		if(isOnSiegeField)
 		{
 			_zoneMask |= ZONE_SIEGE_FLAG;
 		}
-		if (isInPeaceZone)
+		if(isInPeaceZone)
 		{
 			_zoneMask |= ZONE_PEACE_FLAG;
 		}
-		if (isInSSQZone)
+		if(isInSSQZone)
 		{
 			_zoneMask |= ZONE_SSQ_FLAG;
 		}
 
-		if (lastZoneMask != _zoneMask)
+		if(lastZoneMask != _zoneMask)
 		{
 			sendPacket(new ExSetCompassZoneCode(this));
 		}
 
 		boolean broadcastRelation = false;
-		if (lastInCombatZone != isInCombatZone)
+		if(lastInCombatZone != isInCombatZone)
 		{
 			broadcastRelation = true;
 		}
 
-		if (lastInDangerArea != isInDangerArea)
+		if(lastInDangerArea != isInDangerArea)
 		{
 			sendPacket(new EtcStatusUpdatePacket(this));
 		}
 
-		if (lastOnSiegeField != isOnSiegeField)
+		if(lastOnSiegeField != isOnSiegeField)
 		{
 			broadcastRelation = true;
-			if (isOnSiegeField)
+			if(isOnSiegeField)
 			{
 				sendPacket(SystemMsg.YOU_HAVE_ENTERED_A_COMBAT_ZONE);
 			}
@@ -10318,38 +9948,38 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				// спавним в дефолтное место.
 				// TODO: [Bonux] Проверить как на оффе.
 				final FlagItemAttachment attachment = getActiveWeaponFlagAttachment();
-				if (attachment != null)
+				if(attachment != null)
 				{
 					attachment.onLeaveSiegeZone(this);
 				}
 
 				sendPacket(SystemMsg.YOU_HAVE_LEFT_A_COMBAT_ZONE);
-				if (!isTeleporting() && (getPvpFlag() == 0))
+				if(!isTeleporting() && (getPvpFlag() == 0))
 				{
 					startPvPFlag(null);
 				}
 			}
 		}
 
-		if ((isInPeaceZone) && ((RankManager.getInstance().getPlayerGlobalRank(this)) == 1) && (_bowTask == null))
+		if((isInPeaceZone) && ((RankManager.getInstance().getPlayerGlobalRank(this)) == 1) && (_bowTask == null))
 		{
 			_bowTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(this::sendBowAction, 20000, 180000);
 		}
-		else if (!isInPeaceZone || (RankManager.getInstance().getPlayerGlobalRank(this) != 1))
+		else if(!isInPeaceZone || (RankManager.getInstance().getPlayerGlobalRank(this) != 1))
 		{
-			if (_bowTask != null)
+			if(_bowTask != null)
 			{
 				_bowTask.cancel(true);
 				_bowTask = null;
 			}
 		}
 
-		if (broadcastRelation)
+		if(broadcastRelation)
 		{
 			broadcastRelation();
 		}
 
-		if (isInWater())
+		if(isInWater())
 		{
 			startWaterTask();
 		}
@@ -10361,10 +9991,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void sendBowAction()
 	{
-		for (final Creature crt : getAroundCharacters(1000, 1000))
+		for(final Creature crt : getAroundCharacters(1000, 1000))
 		{
 			final CtrlIntention intention = crt.getAI().getIntention();
-			if (crt.isPlayer()//
+			if(crt.isPlayer()//
 					&& ((intention == CtrlIntention.AI_INTENTION_ACTIVE) || (intention == CtrlIntention.AI_INTENTION_IDLE))//
 					&& !crt.isSitting() && !crt.isCastingNow())
 			{
@@ -10376,11 +10006,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startAutoSaveTask()
 	{
-		if (!Config.AUTOSAVE)
-		{
-			return;
-		}
-		if (_autoSaveTask == null)
+		if(!Config.AUTOSAVE)
+		{ return; }
+		if(_autoSaveTask == null)
 		{
 			_autoSaveTask = AutoSaveManager.getInstance().addAutoSaveTask(this);
 		}
@@ -10388,7 +10016,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopAutoSaveTask()
 	{
-		if (_autoSaveTask != null)
+		if(_autoSaveTask != null)
 		{
 			_autoSaveTask.cancel(false);
 		}
@@ -10397,11 +10025,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startPcBangPointsTask()
 	{
-		if (!Config.ALT_PCBANG_POINTS_ENABLED || (Config.ALT_PCBANG_POINTS_DELAY <= 0))
-		{
-			return;
-		}
-		if (_pcCafePointsTask == null)
+		if(!Config.ALT_PCBANG_POINTS_ENABLED || (Config.ALT_PCBANG_POINTS_DELAY <= 0))
+		{ return; }
+		if(_pcCafePointsTask == null)
 		{
 			_pcCafePointsTask = LazyPrecisionTaskManager.getInstance().addPCCafePointsTask(this);
 		}
@@ -10409,7 +10035,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopPcBangPointsTask()
 	{
-		if (_pcCafePointsTask != null)
+		if(_pcCafePointsTask != null)
 		{
 			_pcCafePointsTask.cancel(false);
 		}
@@ -10418,7 +10044,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startUnjailTask(Player player, int time)
 	{
-		if (_unjailTask != null)
+		if(_unjailTask != null)
 		{
 			_unjailTask.cancel(false);
 		}
@@ -10427,7 +10053,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopUnjailTask()
 	{
-		if (_unjailTask != null)
+		if(_unjailTask != null)
 		{
 			_unjailTask.cancel(false);
 		}
@@ -10436,7 +10062,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startTrainingCampTask(long timeRemaining)
 	{
-		if ((_trainingCampTask == null) && isInTrainingCamp())
+		if((_trainingCampTask == null) && isInTrainingCamp())
 		{
 			_trainingCampTask = ThreadPoolManager.getInstance().schedule(() -> TrainingCampManager.getInstance().onExitTrainingCamp(this), timeRemaining);
 		}
@@ -10444,7 +10070,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopTrainingCampTask()
 	{
-		if (_trainingCampTask != null)
+		if(_trainingCampTask != null)
 		{
 			_trainingCampTask.cancel(false);
 			_trainingCampTask = null;
@@ -10484,83 +10110,83 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		long result = 0;
 
-		if (isInZoneBattle())
+		if(isInZoneBattle())
 		{
 			result |= RelationChangedPacket.RelationChangedType.INSIDE_BATTLEFIELD.getRelationState();
 		}
 
-		if (isPK())
+		if(isPK())
 		{
 			result |= RelationChangedPacket.RelationChangedType.CHAOTIC.getRelationState();
 		}
 
-		if (getPvpFlag() != 0)
+		if(getPvpFlag() != 0)
 		{
 			result |= RelationChangedPacket.RelationChangedType.IN_PVP.getRelationState();
 		}
 
-		if (clan != null)
+		if(clan != null)
 		{
 			result |= RelationChangedPacket.RelationChangedType.IN_PLEDGE.getRelationState();
 
-			if (clan == targetClan)
+			if(clan == targetClan)
 			{
 				result |= RelationChangedPacket.RelationChangedType.SAME_PLEDGE.getRelationState();
 			}
 
 			final Alliance ally = clan.getAlliance();
-			if (ally != null)
+			if(ally != null)
 			{
 				result |= RelationChangedPacket.RelationChangedType.IN_ALLIANCE.getRelationState();
 
-				if (ally.getAllyId() == target.getAllyId())
+				if(ally.getAllyId() == target.getAllyId())
 				{
 					result |= RelationChangedPacket.RelationChangedType.SAME_ALLIANCE.getRelationState();
 				}
 			}
 
-			if (isClanLeader())
+			if(isClanLeader())
 			{
 				result |= RelationChangedPacket.RelationChangedType.PLEDGE_LEADER.getRelationState();
 
-				if ((ally != null) && (clan == ally.getLeader()))
+				if((ally != null) && (clan == ally.getLeader()))
 				{
 					result |= RelationChangedPacket.RelationChangedType.ALLIANCE_LEADER.getRelationState();
 				}
 			}
 		}
 
-		if (party != null)
+		if(party != null)
 		{
 			result |= RelationChangedPacket.RelationChangedType.IN_PARTY.getRelationState();
 
-			if (party.isLeader(this))
+			if(party.isLeader(this))
 			{
 				result |= RelationChangedPacket.RelationChangedType.PARTY_LEADER.getRelationState();
 			}
 
-			if (party == target.getParty())
+			if(party == target.getParty())
 			{
 				result |= RelationChangedPacket.RelationChangedType.SAME_PARTY.getRelationState();
 			}
 		}
 
-		if ((clan != null) && (targetClan != null))
+		if((clan != null) && (targetClan != null))
 		{
-			if ((getPledgeType() != Clan.SUBUNIT_ACADEMY) && (target.getPledgeType() != Clan.SUBUNIT_ACADEMY))
+			if((getPledgeType() != Clan.SUBUNIT_ACADEMY) && (target.getPledgeType() != Clan.SUBUNIT_ACADEMY))
 			{
 				final ClanWar war = clan.getWarWith(target.getClanId());
-				if (war != null)
+				if(war != null)
 				{
-					switch (war.getPeriod())
+					switch(war.getPeriod())
 					{
 						case PREPARATION:
 						{
-							if (war.isAttacker(clan))
+							if(war.isAttacker(clan))
 							{
 								result |= RelationChangedPacket.RelationChangedType.CLAN_WAR_ATTACKER.getRelationState();
 							}
-							else if (war.isAttacked(clan))
+							else if(war.isAttacked(clan))
 							{
 								result |= RelationChangedPacket.RelationChangedType.CLAN_WAR_ATTACKED.getRelationState();
 							}
@@ -10576,16 +10202,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			}
 		}
 
-		if (target.getSpectatingList().contains(this))
+		if(target.getSpectatingList().contains(this))
 		{
 			result |= RelationChangedPacket.RelationChangedType.SURVEILLANCE.getRelationState();
 		}
 
-		if ((getKiller() != null) && getKiller().isDeathKnight())
+		if((getKiller() != null) && getKiller().isDeathKnight())
 		{
 			result |= RelationChangedPacket.RelationChangedType.KILLED_BY_DEATH_KNIGHT.getRelationState();
 		}
-		for (final Event e : getEvents())
+		for(final Event e : getEvents())
 		{
 			result = e.getRelation(this, target, result);
 		}
@@ -10619,27 +10245,23 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void startPvPFlag(Creature target)
 	{
-		if (isPK() || isVioletBoy())
-		{
-			return;
-		}
+		if(isPK() || isVioletBoy())
+		{ return; }
 
 		long startTime = System.currentTimeMillis();
-		if ((target != null) && (target.getPvpFlag() != 0))
+		if((target != null) && (target.getPvpFlag() != 0))
 		{
 			startTime -= Config.PVP_TIME / 2;
 		}
 
-		if ((getPvpFlag() != 0) && (getLastPvPAttack() >= startTime))
-		{
-			return;
-		}
+		if((getPvpFlag() != 0) && (getLastPvPAttack() >= startTime))
+		{ return; }
 
 		_lastPvPAttack = startTime;
 
 		updatePvPFlag(1);
 
-		if (_PvPRegTask == null)
+		if(_PvPRegTask == null)
 		{
 			_PvPRegTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new PvPFlagTask(this), 1000, 1000);
 		}
@@ -10647,7 +10269,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopPvPFlag()
 	{
-		if (_PvPRegTask != null)
+		if(_PvPRegTask != null)
 		{
 			_PvPRegTask.cancel(false);
 			_PvPRegTask = null;
@@ -10657,10 +10279,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void updatePvPFlag(int value)
 	{
-		if (getPvpFlag() == value)
-		{
-			return;
-		}
+		if(getPvpFlag() == value)
+		{ return; }
 
 		setPvpFlag(value);
 
@@ -10728,7 +10348,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setKeyBindings(byte[] keyBindings)
 	{
-		if (keyBindings == null)
+		if(keyBindings == null)
 		{
 			keyBindings = ArrayUtils.EMPTY_BYTE_ARRAY;
 		}
@@ -10742,17 +10362,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public final Collection<SkillEntry> getAllSkills()
 	{
 		// Трансформация неактивна
-		if (!isTransformed())
-		{
-			return super.getAllSkills();
-		}
+		if(!isTransformed())
+		{ return super.getAllSkills(); }
 
 		// Трансформация активна
 		final IntObjectMap<SkillEntry> temp = new HashIntObjectMap<SkillEntry>();
-		for (final SkillEntry skillEntry : super.getAllSkills())
+		for(final SkillEntry skillEntry : super.getAllSkills())
 		{
 			final Skill skill = skillEntry.getTemplate();
-			if (!skill.isActive() && !skill.isToggle())
+			if(!skill.isActive() && !skill.isToggle())
 			{
 				temp.put(skillEntry.getId(), skillEntry);
 			}
@@ -10774,7 +10392,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void deleteAgathion()
 	{
-		if (_agathion != null)
+		if(_agathion != null)
 		{
 			_agathion.delete();
 		}
@@ -10782,10 +10400,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setAgathion(Agathion agathion)
 	{
-		if (_agathion == agathion)
-		{
-			return;
-		}
+		if(_agathion == agathion)
+		{ return; }
 
 		_agathion = agathion;
 
@@ -10827,9 +10443,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		_pcBangPoints = val;
 
-		if (store)
+		if(store)
 		{
-			if (Config.PC_BANG_POINTS_BY_ACCOUNT)
+			if(Config.PC_BANG_POINTS_BY_ACCOUNT)
 			{
 				AccountVariablesDAO.getInstance().insert(getAccountName(), PC_BANG_POINTS_VAR, String.valueOf(getPcBangPoints()));
 			}
@@ -10845,7 +10461,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					st.setInt(2, getObjectId());
 					st.executeUpdate();
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					_log.error("", e);
 				}
@@ -10859,14 +10475,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addPcBangPoints(int count, boolean doublePoints, boolean notify)
 	{
-		if (doublePoints)
+		if(doublePoints)
 		{
 			count *= 2;
 		}
 
 		setPcBangPoints(getPcBangPoints() + count, true);
 
-		if ((count > 0) && notify)
+		if((count > 0) && notify)
 		{
 			sendPacket(new SystemMessage(doublePoints ? SystemMessage.DOUBLE_POINTS_YOU_AQUIRED_S1_PC_BANG_POINT : SystemMessage.YOU_ACQUIRED_S1_PC_BANG_POINT).addNumber(count));
 		}
@@ -10875,14 +10491,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean reducePcBangPoints(int count, boolean notify)
 	{
-		if (getPcBangPoints() < count)
-		{
-			return false;
-		}
+		if(getPcBangPoints() < count)
+		{ return false; }
 
 		setPcBangPoints(getPcBangPoints() - count, true);
 
-		if (notify)
+		if(notify)
 		{
 			sendPacket(new SystemMessage(SystemMessage.YOU_ARE_USING_S1_POINT).addNumber(count));
 		}
@@ -10909,7 +10523,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	 */
 	public boolean isLogoutStarted()
 	{
-		if (_isLogout == null)
+		if(_isLogout == null)
 		{ // Хуй пойми как, но сервер иногда ругается на НПЕ _isLogout. БАГНУТАЯ ЯВА?!?
 			return false;
 		}
@@ -10918,10 +10532,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setOfflineMode(boolean val)
 	{
-		if (val == isInOfflineMode())
-		{
-			return;
-		}
+		if(val == isInOfflineMode())
+		{ return; }
 
 		GameObjectsStorage.remove(this);
 
@@ -10929,7 +10541,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		GameObjectsStorage.put(this);
 
-		if (!isInOfflineMode())
+		if(!isInOfflineMode())
 		{
 			unsetVar("offline");
 		}
@@ -10944,22 +10556,22 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final int storeType = getPrivateStoreType();
 
-		if (storeType == STORE_PRIVATE_NONE)
+		if(storeType == STORE_PRIVATE_NONE)
 		{
 			unsetVar("storemode");
 		}
-		else if (Config.ALT_SAVE_PRIVATE_STORE || isInOfflineMode())
+		else if(Config.ALT_SAVE_PRIVATE_STORE || isInOfflineMode())
 		{
 			setVar("storemode", storeType);
 		}
 
 		final List<TradeItem> buyList = getBuyList();
-		if (!buyList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_BUY))))
+		if(!buyList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_BUY))))
 		{
-			if (CharacterPrivateStoreDAO.getInstance().insertBuys(this, buyList))
+			if(CharacterPrivateStoreDAO.getInstance().insertBuys(this, buyList))
 			{
 				final String title = getBuyStoreName();
-				if ((title != null) && !title.isEmpty())
+				if((title != null) && !title.isEmpty())
 				{
 					setVar("buystorename", title, -1);
 				}
@@ -10980,12 +10592,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final Map<Integer, TradeItem> sellList = getSellList(false);
-		if (!sellList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_SELL))))
+		if(!sellList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_SELL))))
 		{
-			if (CharacterPrivateStoreDAO.getInstance().insertSells(this, sellList, false))
+			if(CharacterPrivateStoreDAO.getInstance().insertSells(this, sellList, false))
 			{
 				final String title = getSellStoreName();
-				if ((title != null) && !title.isEmpty())
+				if((title != null) && !title.isEmpty())
 				{
 					setVar("sellstorename", title, -1);
 				}
@@ -11006,12 +10618,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final Map<Integer, TradeItem> packageSellList = getSellList(true);
-		if (!packageSellList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_SELL_PACKAGE))))
+		if(!packageSellList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_SELL_PACKAGE))))
 		{
-			if (CharacterPrivateStoreDAO.getInstance().insertSells(this, packageSellList, true))
+			if(CharacterPrivateStoreDAO.getInstance().insertSells(this, packageSellList, true))
 			{
 				final String title = getPackageSellStoreName();
-				if ((title != null) && !title.isEmpty())
+				if((title != null) && !title.isEmpty())
 				{
 					setVar("packagesellstorename", title, -1);
 				}
@@ -11032,12 +10644,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final Map<Integer, ManufactureItem> createList = getCreateList();
-		if (!createList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_MANUFACTURE))))
+		if(!createList.isEmpty() && (Config.ALT_SAVE_PRIVATE_STORE || (isInOfflineMode() && (storeType == STORE_PRIVATE_MANUFACTURE))))
 		{
-			if (CharacterPrivateStoreDAO.getInstance().insertManufactures(this, createList))
+			if(CharacterPrivateStoreDAO.getInstance().insertManufactures(this, createList))
 			{
 				final String title = getManufactureName();
-				if ((title != null) && !title.isEmpty())
+				if((title != null) && !title.isEmpty())
 				{
 					setVar("manufacturename", title, -1);
 				}
@@ -11061,55 +10673,55 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void restorePrivateStore()
 	{
 		final List<TradeItem> buyList = CharacterPrivateStoreDAO.getInstance().selectBuys(this);
-		if (!buyList.isEmpty())
+		if(!buyList.isEmpty())
 		{
 			setBuyList(buyList);
 
 			final String name = getVar("buystorename");
-			if (name != null)
+			if(name != null)
 			{
 				setBuyStoreName(name);
 			}
 		}
 
 		final Map<Integer, TradeItem> sellList = CharacterPrivateStoreDAO.getInstance().selectSells(this, false);
-		if (!sellList.isEmpty())
+		if(!sellList.isEmpty())
 		{
 			setSellList(false, sellList);
 
 			final String name = getVar("sellstorename");
-			if (name != null)
+			if(name != null)
 			{
 				setSellStoreName(name);
 			}
 		}
 
 		final Map<Integer, TradeItem> packageSellList = CharacterPrivateStoreDAO.getInstance().selectSells(this, true);
-		if (!packageSellList.isEmpty())
+		if(!packageSellList.isEmpty())
 		{
 			setSellList(true, packageSellList);
 
 			final String name = getVar("packagesellstorename");
-			if (name != null)
+			if(name != null)
 			{
 				setPackageSellStoreName(name);
 			}
 		}
 
 		final Map<Integer, ManufactureItem> createList = CharacterPrivateStoreDAO.getInstance().selectManufactures(this);
-		if (!createList.isEmpty())
+		if(!createList.isEmpty())
 		{
 			setCreateList(createList);
 
 			final String name = getVar("manufacturename");
-			if (name != null)
+			if(name != null)
 			{
 				setManufactureName(name);
 			}
 		}
 
 		final int storeType = getVarInt("storemode", STORE_PRIVATE_NONE);
-		if (storeType != STORE_PRIVATE_NONE)
+		if(storeType != STORE_PRIVATE_NONE)
 		{
 			setPrivateStoreType(storeType);
 			setSitting(true);
@@ -11128,14 +10740,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			statement.setInt(1, getObjectId());
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				final int id = rset.getInt("id");
 				final RecipeTemplate recipe = RecipeHolder.getInstance().getRecipeByRecipeId(id);
 				registerRecipe(recipe, false);
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.warn("count not recipe skills:" + e);
 			_log.error("", e);
@@ -11169,28 +10781,24 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean setReflection(Reflection reflection)
 	{
-		if (getReflection() == reflection)
-		{
-			return true;
-		}
+		if(getReflection() == reflection)
+		{ return true; }
 
-		if (!super.setReflection(reflection))
-		{
-			return false;
-		}
+		if(!super.setReflection(reflection))
+		{ return false; }
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
-			if (!servitor.isDead())
+			if(!servitor.isDead())
 			{
 				servitor.setReflection(reflection);
 			}
 		}
 
-		if (!reflection.isMain())
+		if(!reflection.isMain())
 		{
 			final String var = getVar("reflection");
-			if ((var == null) || !var.equals(String.valueOf(reflection.getId())))
+			if((var == null) || !var.equals(String.valueOf(reflection.getId())))
 			{
 				setVar("reflection", String.valueOf(reflection.getId()), -1);
 			}
@@ -11223,11 +10831,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setFame(int fame, String log, boolean notify)
 	{
 		fame = Math.min(Config.LIM_FAME, fame);
-		if ((log != null) && !log.isEmpty())
+		if((log != null) && !log.isEmpty())
 		{
 			Log.add(_name + "|" + (fame - _fame) + "|" + fame + "|" + log, "fame");
 		}
-		if ((fame > _fame) && notify)
+		if((fame > _fame) && notify)
 		{
 			sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_ACQUIRED_S1_REPUTATION_SCORE).addNumber(fame - _fame));
 		}
@@ -11289,7 +10897,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void enterMovieMode()
 	{
-		if (isInMovie())
+		if(isInMovie())
 		{ // already in movie
 			return;
 		}
@@ -11338,7 +10946,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startScenePlayer(SceneMovie movie)
 	{
-		if (isInMovie())
+		if(isInMovie())
 		{ // already in movie
 			return;
 		}
@@ -11348,9 +10956,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getMovement().stopMove();
 		setMovieId(movie.getId());
 		sendPacket(movie.packet(this));
-		_sceneMovieEndTask = ThreadPoolManager.getInstance().schedule(() ->
-		{
-			if (_sceneMovieEndTask != null)
+		_sceneMovieEndTask = ThreadPoolManager.getInstance().schedule(() -> {
+			if(_sceneMovieEndTask != null)
 			{
 				_sceneMovieEndTask.cancel(false);
 				_sceneMovieEndTask = null;
@@ -11362,7 +10969,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void startScenePlayer(int movieId)
 	{
 		final SceneMovie movie = SceneMovie.getMovie(movieId);
-		if (movie != null)
+		if(movie != null)
 		{
 			startScenePlayer(movie);
 		}
@@ -11370,25 +10977,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void endScenePlayer(boolean force)
 	{
-		if (!isInMovie())
-		{
-			return;
-		}
+		if(!isInMovie())
+		{ return; }
 
 		final SceneMovie movie = SceneMovie.getMovie(getMovieId());
-		if (movie != null)
+		if(movie != null)
 		{
-			if (force && !movie.isCancellable() && (_sceneMovieEndTask != null))
-			{
-				return;
-			}
+			if(force && !movie.isCancellable() && (_sceneMovieEndTask != null))
+			{ return; }
 		}
-		else if (force)
-		{
-			return;
-		}
+		else if(force)
+		{ return; }
 
-		if (_sceneMovieEndTask != null)
+		if(_sceneMovieEndTask != null)
 		{
 			_sceneMovieEndTask.cancel(false);
 			_sceneMovieEndTask = null;
@@ -11398,7 +10999,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		// decayMe();
 		// spawnMe();
 
-		if (force && (movie != null))
+		if(force && (movie != null))
 		{
 			sendPacket(new ExStopScenePlayerPacket(movie.getId()));
 		}
@@ -11406,7 +11007,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setAutoLoot(boolean enable)
 	{
-		if (Config.AUTO_LOOT_INDIVIDUAL)
+		if(Config.AUTO_LOOT_INDIVIDUAL)
 		{
 			_autoLoot = enable;
 			setVar("AutoLoot", String.valueOf(enable), -1);
@@ -11415,7 +11016,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setAutoLootOnlyAdena(boolean enable)
 	{
-		if (Config.AUTO_LOOT_INDIVIDUAL && Config.AUTO_LOOT_ONLY_ADENA)
+		if(Config.AUTO_LOOT_INDIVIDUAL && Config.AUTO_LOOT_ONLY_ADENA)
 		{
 			_autoLootOnlyAdena = enable;
 			setVar("AutoLootOnlyAdena", String.valueOf(enable), -1);
@@ -11424,7 +11025,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setAutoLootHerbs(boolean enable)
 	{
-		if (Config.AUTO_LOOT_INDIVIDUAL)
+		if(Config.AUTO_LOOT_INDIVIDUAL)
 		{
 			AutoLootHerbs = enable;
 			setVar("AutoLootHerbs", String.valueOf(enable), -1);
@@ -11436,7 +11037,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		getInventory().validateItems();
 		getInventory().refreshEquip();
 
-		for (ItemInstance items : getInventory().getItems())
+		for(ItemInstance items : getInventory().getItems())
 		{
 			items.onRefreshEquip(this, true);
 		}
@@ -11467,12 +11068,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public final void reName(String name, boolean saveToDB)
 	{
 		setName(name);
-		if (saveToDB)
+		if(saveToDB)
 		{
 			saveNameToDB();
 
 			final OlympiadParticipiantData participant = Olympiad.getParticipantInfo(getObjectId());
-			if (participant != null)
+			if(participant != null)
 			{
 				participant.setName(name);
 			}
@@ -11480,10 +11081,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		sendUserInfo(true);
 
-		for (final Player p : World.getAroundObservers(this))
+		for(final Player p : World.getAroundObservers(this))
 		{
 			p.sendPacket(p.removeVisibleObject(this, null));
-			if (isVisible() && !isInvisible(p))
+			if(isVisible() && !isInvisible(p))
 			{
 				p.sendPacket(p.addVisibleObject(this, null));
 			}
@@ -11494,13 +11095,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final Party party = getParty();
-		if (party != null)
+		if(party != null)
 		{
 			party.updatePartyInfo();
 		}
 
 		final Clan clan = getClan();
-		if (clan != null)
+		if(clan != null)
 		{
 			clan.broadcastClanStatus(true, false, false);
 		}
@@ -11523,7 +11124,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			st.setInt(2, getObjectId());
 			st.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 		}
@@ -11609,10 +11210,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		setNonAggroTime(0);
 		setNonPvpTime(0);
 
-		if (isActive.getAndSet(true))
-		{
-			return;
-		}
+		if(isActive.getAndSet(true))
+		{ return; }
 
 		onActive();
 	}
@@ -11621,16 +11220,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		sendPacket(SystemMsg.YOU_ARE_NO_LONGER_PROTECTED_FROM_AGGRESSIVE_MONSTERS);
 
-		if ((getPetControlItem() != null) || ((_restoredSummons != null) && !_restoredSummons.isEmpty()))
+		if((getPetControlItem() != null) || ((_restoredSummons != null) && !_restoredSummons.isEmpty()))
 		{
-			ThreadPoolManager.getInstance().execute(() ->
-			{
-				if (getPetControlItem() != null)
+			ThreadPoolManager.getInstance().execute(() -> {
+				if(getPetControlItem() != null)
 				{
 					summonPet();
 				}
 
-				if ((_restoredSummons != null) && !_restoredSummons.isEmpty())
+				if((_restoredSummons != null) && !_restoredSummons.isEmpty())
 				{
 					spawnRestoredSummons();
 				}
@@ -11641,26 +11239,24 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void summonPet()
 	{
-		if (getPet() != null)
-		{
-			return;
-		}
+		if(getPet() != null)
+		{ return; }
 
 		final ItemInstance controlItem = getInventory().getItemByObjectId(getPetControlItem().getObjectId());
-		if (controlItem == null)
+		if(controlItem == null)
 		{
 			setPetControlItem(null);
 			return;
 		}
 
 		final PetData randomSortByItem = PetDataHolder.getInstance().getTemplateByItemId(controlItem.getItemId());
-		if (randomSortByItem == null)
+		if(randomSortByItem == null)
 		{
 			setPetControlItem(null);
 			return;
 		}
 		PetData petTemplate = PetDataHolder.getInstance().getFirstBySameType(randomSortByItem.getPetType());
-		if (petTemplate == null)
+		if(petTemplate == null)
 		{
 			petTemplate = randomSortByItem;
 		}
@@ -11671,11 +11267,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			final ResultSet rs = ps.executeQuery();
 			NpcTemplate npcTemplate = null;
 			int level = 0;
-			if (rs.next())
+			if(rs.next())
 			{
 				level = rs.getInt("level");
 				final int petId = rs.getInt("petId");
-				if (petId != 0)
+				if(petId != 0)
 				{
 					npcTemplate = NpcHolder.getInstance().getTemplate(petId);
 				}
@@ -11685,25 +11281,25 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				npcTemplate = NpcHolder.getInstance().getTemplate(petTemplate.getNpcId());
 			}
 
-			if (npcTemplate == null)
+			if(npcTemplate == null)
 			{
 				setPetControlItem(null);
 				return;
 			}
 			pet = PetInstance.restore(controlItem, npcTemplate, this);
-			if (pet == null)
+			if(pet == null)
 			{
 				setPetControlItem(null);
 				return;
 			}
 			pet.setEvolveLevel(Servitor.EvolveLevel.values()[level] == null ? Servitor.EvolveLevel.None : Servitor.EvolveLevel.values()[level]);
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.warn("failed to select evolved pets ", e);
 		}
 
-		if (pet == null)
+		if(pet == null)
 		{
 			setPetControlItem(null);
 			return;
@@ -11712,7 +11308,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		setPet(pet);
 		pet.setTitle(Servitor.TITLE_BY_OWNER_NAME);
 
-		if (!pet.isRespawned())
+		if(!pet.isRespawned())
 		{
 			pet.setCurrentHp(pet.getMaxHp(), false);
 			pet.setCurrentMp(pet.getMaxMp());
@@ -11731,7 +11327,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		pet.setFollowMode(true);
 		pet.getInventory().validateItems();
 
-		if (pet instanceof PetBabyInstance)
+		if(pet instanceof PetBabyInstance)
 		{
 			((PetBabyInstance) pet).startBuffTask();
 		}
@@ -11746,20 +11342,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	private void spawnRestoredSummons()
 	{
-		if ((_restoredSummons == null) || _restoredSummons.isEmpty())
-		{
-			return;
-		}
+		if((_restoredSummons == null) || _restoredSummons.isEmpty())
+		{ return; }
 
-		for (final RestoredSummon summon : _restoredSummons)
+		for(final RestoredSummon summon : _restoredSummons)
 		{
 			final Skill skill = SkillHolder.getInstance().getSkill(summon.skillId, summon.skillLvl);
-			if (skill == null)
+			if(skill == null)
 			{
 				continue;
 			}
 
-			if (skill instanceof Summon)
+			if(skill instanceof Summon)
 			{
 				((Summon) skill).summon(this, null, summon);
 			}
@@ -11775,7 +11369,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addTrap(TrapInstance trap)
 	{
-		if (_traps == Collections.<TrapInstance>emptyList())
+		if(_traps == Collections.<TrapInstance> emptyList())
 		{
 			_traps = new CopyOnWriteArrayList<TrapInstance>();
 		}
@@ -11790,7 +11384,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void destroyAllTraps()
 	{
-		for (final TrapInstance t : _traps)
+		for(final TrapInstance t : _traps)
 		{
 			t.deleteMe();
 		}
@@ -11799,11 +11393,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public PlayerListenerList getListeners()
 	{
-		if (listeners == null)
+		if(listeners == null)
 		{
 			synchronized (this)
 			{
-				if (listeners == null)
+				if(listeners == null)
 				{
 					listeners = new PlayerListenerList(this);
 				}
@@ -11815,11 +11409,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public PlayerStatsChangeRecorder getStatsRecorder()
 	{
-		if (_statsRecorder == null)
+		if(_statsRecorder == null)
 		{
 			synchronized (this)
 			{
-				if (_statsRecorder == null)
+				if(_statsRecorder == null)
 				{
 					_statsRecorder = new PlayerStatsChangeRecorder(this);
 				}
@@ -11843,7 +11437,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopHourlyTask()
 	{
-		if (_hourlyTask != null)
+		if(_hourlyTask != null)
 		{
 			_hourlyTask.cancel(false);
 			_hourlyTask = null;
@@ -11852,31 +11446,25 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public long getPremiumPoints()
 	{
-		if (Config.IM_PAYMENT_ITEM_ID > 0)
-		{
-			return ItemFunctions.getItemCount(this, Config.IM_PAYMENT_ITEM_ID);
-		}
+		if(Config.IM_PAYMENT_ITEM_ID > 0)
+		{ return ItemFunctions.getItemCount(this, Config.IM_PAYMENT_ITEM_ID); }
 
-		if (getNetConnection() != null)
-		{
-			return getNetConnection().getPoints();
-		}
+		if(getNetConnection() != null)
+		{ return getNetConnection().getPoints(); }
 
 		return 0;
 	}
 
 	public boolean addPremiumPoints(final int val)
 	{
-		if (Config.IM_PAYMENT_ITEM_ID > 0)
+		if(Config.IM_PAYMENT_ITEM_ID > 0)
 		{
-			if (!ItemFunctions.addItem(this, Config.IM_PAYMENT_ITEM_ID, val, true).isEmpty())
-			{
-				return true;
-			}
+			if(!ItemFunctions.addItem(this, Config.IM_PAYMENT_ITEM_ID, val, true).isEmpty())
+			{ return true; }
 			return false;
 		}
 
-		if (getNetConnection() != null)
+		if(getNetConnection() != null)
 		{
 			getNetConnection().setPoints((int) (getPremiumPoints() + val));
 			AuthServerCommunication.getInstance().sendPacket(new ReduceAccountPoints(getAccountName(), -val));
@@ -11887,16 +11475,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean reducePremiumPoints(final int val)
 	{
-		if (Config.IM_PAYMENT_ITEM_ID > 0)
+		if(Config.IM_PAYMENT_ITEM_ID > 0)
 		{
-			if (ItemFunctions.deleteItem(this, Config.IM_PAYMENT_ITEM_ID, val, true))
-			{
-				return true;
-			}
+			if(ItemFunctions.deleteItem(this, Config.IM_PAYMENT_ITEM_ID, val, true))
+			{ return true; }
 			return false;
 		}
 
-		if (getNetConnection() != null)
+		if(getNetConnection() != null)
 		{
 			getNetConnection().setPoints((int) (getPremiumPoints() - val));
 			AuthServerCommunication.getInstance().sendPacket(new ReduceAccountPoints(getAccountName(), val));
@@ -11924,21 +11510,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public String getSessionVar(String key)
 	{
-		if (_userSession == null)
-		{
-			return null;
-		}
+		if(_userSession == null)
+		{ return null; }
 		return _userSession.get(key);
 	}
 
 	public void setSessionVar(String key, String val)
 	{
-		if (_userSession == null)
+		if(_userSession == null)
 		{
 			_userSession = new ConcurrentHashMap<String, String>();
 		}
 
-		if ((val == null) || val.isEmpty())
+		if((val == null) || val.isEmpty())
 		{
 			_userSession.remove(key);
 		}
@@ -12020,36 +11604,37 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void sendItemList(boolean show)
 	{
-		final ItemInstance[] items = Arrays.stream(getInventory().getItems()).filter(it -> !(it.isEquipped() && (it.getLocation() == ItemLocation.PET_PAPERDOLL))).toArray(ItemInstance[]::new);
+		final ItemInstance[] items = Arrays.stream(getInventory().getItems()).filter(it -> !(it.isEquipped()
+				&& (it.getLocation() == ItemLocation.PET_PAPERDOLL))).toArray(ItemInstance[]::new);
 		final LockType lockType = getInventory().getLockType();
 		final int[] lockItems = getInventory().getLockItems();
 
 		final int allSize = items.length;
 		int questItemsSize = 0;
 		int agathionItemsSize = 0;
-		for (final ItemInstance item : items)
+		for(final ItemInstance item : items)
 		{
-			if (item.getTemplate().isQuest())
+			if(item.getTemplate().isQuest())
 			{
 				questItemsSize++;
 			}
-			if (item.getTemplate().getAgathionMaxEnergy() > 0)
+			if(item.getTemplate().getAgathionMaxEnergy() > 0)
 			{
 				agathionItemsSize++;
 			}
 		}
 
 		sendPacket(new ItemListPacket(1, this, allSize - questItemsSize, items, show, lockType, lockItems));
-		if ((allSize - questItemsSize) > 0)
+		if((allSize - questItemsSize) > 0)
 		{
 			sendPacket(new ItemListPacket(2, this, allSize - questItemsSize, items, show, lockType, lockItems));
 		}
 		sendPacket(new ExQuestItemListPacket(1, questItemsSize, items, lockType, lockItems));
-		if (questItemsSize > 0)
+		if(questItemsSize > 0)
 		{
 			sendPacket(new ExQuestItemListPacket(2, questItemsSize, items, lockType, lockItems));
 		}
-		if (agathionItemsSize > 0)
+		if(agathionItemsSize > 0)
 		{
 			sendPacket(new ExBR_AgathionEnergyInfoPacket(agathionItemsSize, items));
 		}
@@ -12058,16 +11643,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getBeltInventoryIncrease()
 	{
 		final ItemInstance item = getInventory().getPaperdollItem(Inventory.PAPERDOLL_BELT);
-		if ((item != null) && (item.getTemplate().getAttachedSkills() != null))
+		if((item != null) && (item.getTemplate().getAttachedSkills() != null))
 		{
-			for (final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
+			for(final SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
 			{
-				for (final FuncTemplate func : skillEntry.getTemplate().getAttachedFuncs())
+				for(final FuncTemplate func : skillEntry.getTemplate().getAttachedFuncs())
 				{
-					if (func._stat == Stats.INVENTORY_LIMIT)
-					{
-						return (int) func._value;
-					}
+					if(func._stat == Stats.INVENTORY_LIMIT)
+					{ return (int) func._value; }
 				}
 			}
 		}
@@ -12082,57 +11665,57 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean checkCoupleAction(Player target)
 	{
-		if (target.getPrivateStoreType() != STORE_PRIVATE_NONE)
+		if(target.getPrivateStoreType() != STORE_PRIVATE_NONE)
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IN_PRIVATE_STORE).addName(target));
 			return false;
 		}
-		if (target.isFishing())
+		if(target.isFishing())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_FISHING).addName(target));
 			return false;
 		}
-		if (target.isInTrainingCamp())
+		if(target.isInTrainingCamp())
 		{
 			sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
 			return false;
 		}
-		if (target.isTransformed())
+		if(target.isTransformed())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_IN_TRANSFORM).addName(target));
 			return false;
 		}
-		if (target.isInCombat() || target.isVisualTransformed())
+		if(target.isInCombat() || target.isVisualTransformed())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_IN_COMBAT).addName(target));
 			return false;
 		}
-		if (target.isInOlympiadMode())
+		if(target.isInOlympiadMode())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_IN_OLYMPIAD).addName(target));
 			return false;
 		}
-		if (target.isInSiegeZone())
+		if(target.isInSiegeZone())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_IN_SIEGE).addName(target));
 			return false;
 		}
-		if (target.isInBoat() || (target.getMountNpcId() != 0))
+		if(target.isInBoat() || (target.getMountNpcId() != 0))
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_IN_VEHICLE_MOUNT_OTHER).addName(target));
 			return false;
 		}
-		if (target.isTeleporting())
+		if(target.isTeleporting())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_TELEPORTING).addName(target));
 			return false;
 		}
-		if (target.isDead())
+		if(target.isDead())
 		{
 			sendPacket(new SystemMessage(SystemMessage.COUPLE_ACTION_CANNOT_C1_TARGET_IS_DEAD).addName(target));
 			return false;
 		}
-		if (isInFightClub() && !getFightClubEvent().isFriend(this, target))
+		if(isInFightClub() && !getFightClubEvent().isFriend(this, target))
 		{
 			sendMessage("You cannot request couple action while player is your enemy!");
 			return false;
@@ -12145,7 +11728,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		startAttackStanceTask0();
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
 			servitor.startAttackStanceTask0();
 		}
@@ -12156,9 +11739,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		super.displayGiveDamageMessage(target, skill, damage, servitorTransferedDamage, transferedDamage, crit, miss, shld, blocked, elementalDamage, elementalCrit);
 
-		if (miss)
+		if(miss)
 		{
-			if (skill == null)
+			if(skill == null)
 			{
 				sendPacket(new SystemMessage(SystemMessage.C1S_ATTACK_WENT_ASTRAY).addName(this));
 			}
@@ -12174,11 +11757,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		 * a,none\0 5176 1 u,$s1 наносит цели $s2 $s3 урона (урон стихией: $s4).\0 3 79
 		 * 9B B0 FF 6 6 0 0 0 0 0 a, a, a, a,damage\0
 		 */
-		if (crit)
+		if(crit)
 		{
-			if (skill != null)
+			if(skill != null)
 			{
-				if (skill.isMagic())
+				if(skill.isMagic())
 				{
 					sendPacket(SystemMsg.MAGIC_CRITICAL_HIT);
 				}
@@ -12191,32 +11774,32 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		final ElementalElement element = getActiveElement();
-		if (element != ElementalElement.NONE)
+		if(element != ElementalElement.NONE)
 		{
-			if (elementalCrit)
+			if(elementalCrit)
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.S1_ATTACK_CRITICAL_IS_ACTIVATED).addElementName(element.getId() - 1));
 			}
 		}
 
-		if (blocked)
+		if(blocked)
 		{
 			sendPacket(SystemMsg.THE_ATTACK_HAS_BEEN_BLOCKED);
 			sendPacket(new ExMagicAttackInfo(getObjectId(), target.getObjectId(), target.isInvulnerable() ? ExMagicAttackInfo.IMMUNE : ExMagicAttackInfo.BLOCKED));
 		}
-		else if (target.isDoor() || (target instanceof SiegeToggleNpcInstance))
+		else if(target.isDoor() || (target instanceof SiegeToggleNpcInstance))
 		{
 			sendPacket(new SystemMessagePacket(SystemMsg.YOU_HIT_FOR_S1_DAMAGE).addInteger(damage));
 		}
 		else
 		{
-			if ((element != ElementalElement.NONE) && (elementalDamage != 0))
+			if((element != ElementalElement.NONE) && (elementalDamage != 0))
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.S1_HAS_DELIVERED_S3_ATTRIBUTE_DAMAGE_S4_TO_S2).addName(this).addName(target).addInteger(damage).addInteger(elementalDamage).addHpChange(target.getObjectId(), getObjectId(), -damage));
 			}
 			else
 			{
-				if ((servitorTransferedDamage != null) && (transferedDamage > 0))
+				if((servitorTransferedDamage != null) && (transferedDamage > 0))
 				{
 					final SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.C1_INFLICTED_S3_DAMAGE_ON_C2_AND_S4_DAMAGE_ON_THE_DAMAGE_TRANSFER_TARGET);
 					sm.addName(this);
@@ -12233,19 +11816,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 
-			if (shld)
+			if(shld)
 			{
-				if (damage == Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE)
+				if(damage == Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE)
 				{
-					if ((skill != null) && skill.isMagic())
+					if((skill != null) && skill.isMagic())
 					{
 						sendPacket(new SystemMessagePacket(SystemMsg.C1_RESISTED_C2S_MAGIC).addName(target).addName(this));
 						sendPacket(new ExMagicAttackInfo(getObjectId(), target.getObjectId(), ExMagicAttackInfo.RESISTED));
 					}
 				}
-				else if (damage > 0)
+				else if(damage > 0)
 				{
-					if ((skill != null) && skill.isMagic())
+					if((skill != null) && skill.isMagic())
 					{
 						sendPacket(new SystemMessagePacket(SystemMsg.YOUR_OPPONENT_HAS_RESISTANCE_TO_MAGIC_THE_DAMAGE_WAS_DECREASED));
 					}
@@ -12257,12 +11840,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void displayReceiveDamageMessage(Creature attacker, int damage, Servitor servitorTransferedDamage, int transferedDamage, int elementalDamage)
 	{
-		if (attacker != this)
+		if(attacker != this)
 		{
 			final ElementalElement element = getActiveElement();
-			if ((element != ElementalElement.NONE) && (elementalDamage != 0))
+			if((element != ElementalElement.NONE) && (elementalDamage != 0))
 			{
-				if ((servitorTransferedDamage != null) && (transferedDamage > 0))
+				if((servitorTransferedDamage != null) && (transferedDamage > 0))
 				{
 					final SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.S1_HAS_DELIVERED_S3_ATTRIBUTE_DAMAGE_S5_TO_S2_S4_DAMAGE_TO_THE_DAMAGE_TRANSFERENCE_TARGET);
 					sm.addName(this);
@@ -12299,21 +11882,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void sendReuseMessage(ItemInstance item)
 	{
 		final TimeStamp sts = getSharedGroupReuse(item.getTemplate().getReuseGroup());
-		if ((sts == null) || !sts.hasNotPassed())
-		{
-			return;
-		}
+		if((sts == null) || !sts.hasNotPassed())
+		{ return; }
 
 		final long timeleft = sts.getReuseCurrent();
 		final long hours = timeleft / 3600000;
 		final long minutes = (timeleft - (hours * 3600000)) / 60000;
 		final long seconds = (long) Math.max(1, Math.ceil((timeleft - (hours * 3600000) - (minutes * 60000)) / 1000.));
 
-		if (hours > 0)
+		if(hours > 0)
 		{
 			sendPacket(new SystemMessagePacket(item.getTemplate().getReuseType().getMessages()[2]).addItemName(item.getTemplate().getItemId()).addInteger(hours).addInteger(minutes).addInteger(seconds));
 		}
-		else if (minutes > 0)
+		else if(minutes > 0)
 		{
 			sendPacket(new SystemMessagePacket(item.getTemplate().getReuseType().getMessages()[1]).addItemName(item.getTemplate().getItemId()).addInteger(minutes).addInteger(seconds));
 		}
@@ -12325,10 +11906,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void ask(ConfirmDlgPacket dlg, OnAnswerListener listener)
 	{
-		if (_askDialog != null)
-		{
-			return;
-		}
+		if(_askDialog != null)
+		{ return; }
 		final int rnd = Rnd.nextInt();
 		_askDialog = new IntObjectPairImpl<OnAnswerListener>(rnd, listener);
 		dlg.setRequestId(rnd);
@@ -12337,7 +11916,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public IntObjectPair<OnAnswerListener> getAskListener(boolean clear)
 	{
-		if (!clear)
+		if(!clear)
 		{
 			return _askDialog;
 		}
@@ -12366,10 +11945,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setAgathionEnergy(int val)
 	{
 		final ItemInstance item = getInventory().getPaperdollItem(Inventory.PAPERDOLL_LBRACELET);
-		if (item == null)
-		{
-			return;
-		}
+		if(item == null)
+		{ return; }
 		item.setAgathionEnergy(val);
 		item.setJdbcState(JdbcEntityState.UPDATED);
 
@@ -12389,7 +11966,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void setMatchingRoom(MatchingRoom matchingRoom)
 	{
 		_matchingRoom = matchingRoom;
-		if (matchingRoom == null)
+		if(matchingRoom == null)
 		{
 			_matchingRoomWindowOpened = false;
 		}
@@ -12407,20 +11984,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void dispelBuffs()
 	{
-		for (final Abnormal e : getAbnormalList())
+		for(final Abnormal e : getAbnormalList())
 		{
-			if (e.isOffensive() && !e.getSkill().isNewbie() && e.isCancelable() && !e.getSkill().isPreservedOnDeath() && !isSpecialAbnormal(e.getSkill()))
+			if(e.isOffensive() && !e.getSkill().isNewbie() && e.isCancelable() && !e.getSkill().isPreservedOnDeath() && !isSpecialAbnormal(e.getSkill()))
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(e.getSkill().getId(), e.getSkill().getLevel(), e.getSkill().getSubLevel()));
 				e.exit();
 			}
 		}
 
-		for (final Servitor servitor : getServitors())
+		for(final Servitor servitor : getServitors())
 		{
-			for (final Abnormal e : servitor.getAbnormalList())
+			for(final Abnormal e : servitor.getAbnormalList())
 			{
-				if (!e.isOffensive() && !e.getSkill().isNewbie() && e.isCancelable() && !e.getSkill().isPreservedOnDeath() && !servitor.isSpecialAbnormal(e.getSkill()))
+				if(!e.isOffensive() && !e.getSkill().isNewbie() && e.isCancelable() && !e.getSkill().isPreservedOnDeath()
+						&& !servitor.isSpecialAbnormal(e.getSkill()))
 				{
 					e.exit();
 				}
@@ -12430,7 +12008,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setInstanceReuse(int id, long time, boolean notify)
 	{
-		if (notify)
+		if(notify)
 		{
 			sendPacket(new SystemMessage(SystemMessage.INSTANT_ZONE_FROM_HERE__S1_S_ENTRY_HAS_BEEN_RESTRICTED_YOU_CAN_CHECK_THE_NEXT_ENTRY_POSSIBLE).addString(getName()));
 		}
@@ -12440,7 +12018,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeInstanceReuse(int id)
 	{
-		if (_instancesReuses.remove(id) != null)
+		if(_instancesReuses.remove(id) != null)
 		{
 			MySqlDataInsert.set("DELETE FROM `character_instances` WHERE `obj_id`=? AND `id`=? LIMIT 1", getObjectId(), id);
 		}
@@ -12454,9 +12032,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeInstanceReusesByGroupId(int groupId)
 	{
-		for (final int i : InstantZoneHolder.getInstance().getSharedReuseInstanceIdsByGroup(groupId))
+		for(final int i : InstantZoneHolder.getInstance().getSharedReuseInstanceIdsByGroup(groupId))
 		{
-			if (getInstanceReuse(i) != null)
+			if(getInstanceReuse(i) != null)
 			{
 				removeInstanceReuse(i);
 			}
@@ -12484,14 +12062,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			offline = con.prepareStatement("SELECT * FROM character_instances WHERE obj_id = ?");
 			offline.setInt(1, getObjectId());
 			rs = offline.executeQuery();
-			while (rs.next())
+			while(rs.next())
 			{
 				final int id = rs.getInt("id");
 				final long reuse = rs.getLong("reuse");
 				_instancesReuses.put(id, reuse);
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 		}
@@ -12515,24 +12093,22 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final InstantZone iz = InstantZoneHolder.getInstance().getInstantZone(instancedZoneId);
 
-		if (isDead())
-		{
-			return false;
-		}
+		if(isDead())
+		{ return false; }
 
-		if (ReflectionManager.getInstance().size() > Config.MAX_REFLECTIONS_COUNT)
+		if(ReflectionManager.getInstance().size() > Config.MAX_REFLECTIONS_COUNT)
 		{
 			sendPacket(SystemMsg.THE_MAXIMUM_NUMBER_OF_INSTANCE_ZONES_HAS_BEEN_EXCEEDED);
 			return false;
 		}
 
-		if (iz == null)
+		if(iz == null)
 		{
 			sendPacket(SystemMsg.SYSTEM_ERROR);
 			return false;
 		}
 
-		if (ReflectionManager.getInstance().getCountByIzId(instancedZoneId) >= iz.getMaxChannels())
+		if(ReflectionManager.getInstance().getCountByIzId(instancedZoneId) >= iz.getMaxChannels())
 		{
 			sendPacket(SystemMsg.THE_MAXIMUM_NUMBER_OF_INSTANCE_ZONES_HAS_BEEN_EXCEEDED);
 			return false;
@@ -12543,14 +12119,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean canReenterInstance(int instancedZoneId)
 	{
-		if (((getActiveReflection() != null) && (getActiveReflection().getInstancedZoneId() != instancedZoneId)) || !getReflection().isMain())
+		if(((getActiveReflection() != null) && (getActiveReflection().getInstancedZoneId() != instancedZoneId)) || !getReflection().isMain())
 		{
 			sendPacket(SystemMsg.YOU_HAVE_ENTERED_ANOTHER_INSTANCE_ZONE_THEREFORE_YOU_CANNOT_ENTER_CORRESPONDING_DUNGEON);
 			return false;
 		}
 
 		final InstantZone iz = InstantZoneHolder.getInstance().getInstantZone(instancedZoneId);
-		if (iz.isDispelBuffs())
+		if(iz.isDispelBuffs())
 		{
 			dispelBuffs();
 		}
@@ -12594,9 +12170,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public PlayerGroup getPlayerGroup()
 	{
-		if (getParty() != null)
+		if(getParty() != null)
 		{
-			if (getParty().getCommandChannel() != null)
+			if(getParty().getCommandChannel() != null)
 			{
 				return getParty().getCommandChannel();
 			}
@@ -12623,7 +12199,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void unblockActions(String... actions)
 	{
-		for (final String action : actions)
+		for(final String action : actions)
 		{
 			_blockedActions.remove(action);
 		}
@@ -12676,17 +12252,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startEnableUserRelationTask(long time, SiegeEvent<?, ?> siegeEvent)
 	{
-		if (_enableRelationTask != null)
-		{
-			return;
-		}
+		if(_enableRelationTask != null)
+		{ return; }
 
 		_enableRelationTask = ThreadPoolManager.getInstance().schedule(new EnableUserRelationTask(this, siegeEvent), time);
 	}
 
 	public void stopEnableUserRelationTask()
 	{
-		if (_enableRelationTask != null)
+		if(_enableRelationTask != null)
 		{
 			_enableRelationTask.cancel(false);
 			_enableRelationTask = null;
@@ -12695,21 +12269,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void broadcastRelation()
 	{
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
-		for (final Player target : World.getAroundObservers(this))
+		for(final Player target : World.getAroundObservers(this))
 		{
-			if (isInvisible(target))
+			if(isInvisible(target))
 			{
 				continue;
 			}
 
 			final RelationChangedPacket relationChanged = new RelationChangedPacket(this, target);
 
-			for (final Servitor servitor : getServitors())
+			for(final Servitor servitor : getServitors())
 			{
 				relationChanged.add(servitor, target);
 			}
@@ -12773,12 +12345,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void disableAnalogSkills(Skill skill)
 	{
-		if (!skill.haveAnalogSkills())
-		{
-			return;
-		}
+		if(!skill.haveAnalogSkills())
+		{ return; }
 
-		for (final int removeSkillId : skill.getAnalogSkillIDs())
+		for(final int removeSkillId : skill.getAnalogSkillIDs())
 		{
 			removeSkillById(removeSkillId);
 			_disabledAnalogSkills.add(removeSkillId);
@@ -12788,12 +12358,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void removeDisabledAnalogSkills(Skill skill)
 	{
-		if (!skill.haveAnalogSkills())
-		{
-			return;
-		}
+		if(!skill.haveAnalogSkills())
+		{ return; }
 
-		for (final int analogSkillId : skill.getAnalogSkillIDs())
+		for(final int analogSkillId : skill.getAnalogSkillIDs())
 		{
 			_disabledAnalogSkills.remove(analogSkillId);
 		}
@@ -12808,12 +12376,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void disableSkillToReplace(Skill skill)
 	{
-		if (!(skill.getSkillsToReplace().size() > 0))
-		{
-			return;
-		}
+		if(!(skill.getSkillsToReplace().size() > 0))
+		{ return; }
 
-		for (final int disabledSkillId : skill.getSkillsToReplace().toArray())
+		for(final int disabledSkillId : skill.getSkillsToReplace().toArray())
 		{
 			_disabledSkillsToReplace.add(disabledSkillId);
 		}
@@ -12822,12 +12388,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public void removeDisabledSkillToReplace(Skill skill)
 	{
-		if (!(skill.getSkillsToReplace().size() > 0))
-		{
-			return;
-		}
+		if(!(skill.getSkillsToReplace().size() > 0))
+		{ return; }
 
-		for (final int disabledSkillId : skill.getSkillsToReplace().toArray())
+		for(final int disabledSkillId : skill.getSkillsToReplace().toArray())
 		{
 			_disabledSkillsToReplace.remove(disabledSkillId);
 		}
@@ -12866,39 +12430,33 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean useItem(ItemInstance item, boolean ctrl, boolean sendMsg)
 	{
-		if (!_isUsingItem.compareAndSet(false, true))
-		{
-			return false;
-		}
+		if(!_isUsingItem.compareAndSet(false, true))
+		{ return false; }
 		try
 		{
-			if (!ItemFunctions.checkForceUseItem(this, item, sendMsg))
-			{
-				return false;
-			}
+			if(!ItemFunctions.checkForceUseItem(this, item, sendMsg))
+			{ return false; }
 
 			final ItemTemplate template = item.getTemplate();
-			if (template.useItem(this, item, ctrl, true)) // force use
+			if(template.useItem(this, item, ctrl, true)) // force use
 			{
 				getListeners().onUseItem(item, true);
 				return true;
 			}
 
-			if (!ItemFunctions.checkUseItem(this, item, sendMsg))
-			{
-				return false;
-			}
+			if(!ItemFunctions.checkUseItem(this, item, sendMsg))
+			{ return false; }
 
-			if (template.useItem(this, item, ctrl, false))
+			if(template.useItem(this, item, ctrl, false))
 			{
 				final long nextTimeUse = template.getReuseType().next(item);
-				if (nextTimeUse > System.currentTimeMillis())
+				if(nextTimeUse > System.currentTimeMillis())
 				{
 					final TimeStamp timeStamp = new TimeStamp(item.getItemId(), nextTimeUse, template.getReuseDelay());
 					addSharedGroupReuse(template.getReuseGroup(), timeStamp);
 					sendPacket(new InventoryUpdatePacket(this).addModifiedItem(item));
 
-					if (template.getReuseDelay() > 0)
+					if(template.getReuseDelay() > 0)
 					{
 						sendPacket(new ExUseSharedGroupItem(template.getDisplayReuseGroup(), timeStamp));
 					}
@@ -12938,13 +12496,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final Party activeCharP = getParty();
 		final Party targetP = target.getParty();
-		if ((activeCharP != null) && (targetP != null))
+		if((activeCharP != null) && (targetP != null))
 		{
 			final CommandChannel chan = activeCharP.getCommandChannel();
-			if ((chan != null) && (chan == targetP.getCommandChannel()))
-			{
-				return true;
-			}
+			if((chan != null) && (chan == targetP.getCommandChannel()))
+			{ return true; }
 		}
 		return false;
 	}
@@ -12962,42 +12518,34 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean isInPvPEvent()
 	{
 		final PvPEvent event = getEvent(PvPEvent.class);
-		if ((event != null) && event.isBattleActive())
-		{
-			return true;
-		}
+		if((event != null) && event.isBattleActive())
+		{ return true; }
 		return false;
 	}
 
 	public boolean isRelatedTo(Creature character)
 	{
-		if (character == this)
-		{
-			return true;
-		}
+		if(character == this)
+		{ return true; }
 
-		if (character.isServitor())
+		if(character.isServitor())
 		{
-			if (isMyServitor(character.getObjectId()))
+			if(isMyServitor(character.getObjectId()))
 			{
 				return true;
 			}
-			else if (character.getPlayer() != null)
+			else if(character.getPlayer() != null)
 			{
 				final Player Spc = character.getPlayer();
-				if (isInSameParty(Spc) || isInSameChannel(Spc) || isInSameClan(Spc) || isInSameAlly(Spc))
-				{
-					return true;
-				}
+				if(isInSameParty(Spc) || isInSameChannel(Spc) || isInSameClan(Spc) || isInSameAlly(Spc))
+				{ return true; }
 			}
 		}
-		else if (character.isPlayer())
+		else if(character.isPlayer())
 		{
 			final Player pc = character.getPlayer();
-			if (isInSameParty(pc) || isInSameChannel(pc) || isInSameClan(pc) || isInSameAlly(pc))
-			{
-				return true;
-			}
+			if(isInSameParty(pc) || isInSameChannel(pc) || isInSameClan(pc) || isInSameAlly(pc))
+			{ return true; }
 		}
 		return false;
 	}
@@ -13016,7 +12564,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void disablePartySearch(boolean disableFlag)
 	{
-		if (_autoSearchParty)
+		if(_autoSearchParty)
 		{
 			PartySubstituteManager.getInstance().removeWaitingPlayer(this);
 			sendPacket(ExWaitWaitingSubStituteInfo.CLOSE);
@@ -13026,13 +12574,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean refreshPartySearchStatus(boolean sendMsg)
 	{
-		if (!mayPartySearch(false, sendMsg))
+		if(!mayPartySearch(false, sendMsg))
 		{
 			disablePartySearch(false);
 			return false;
 		}
 
-		if (isAutoSearchParty())
+		if(isAutoSearchParty())
 		{
 			enableAutoSearchParty();
 			return true;
@@ -13042,16 +12590,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean mayPartySearch(boolean first, boolean msg)
 	{
-		if (getParty() != null)
-		{
-			return false;
-		}
+		if(getParty() != null)
+		{ return false; }
 
-		if (isPK())
+		if(isPK())
 		{
-			if (msg)
+			if(msg)
 			{
-				if (first)
+				if(first)
 				{
 					sendPacket(SystemMsg.WAITING_LIST_REGISTRATION_IS_NOT_ALLOWED_WHILE_THE_CURSED_SWORD_IS_BEING_USED_OR_THE_STATUS_IS_IN_A_CHAOTIC_STATE);
 				}
@@ -13063,11 +12609,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return false;
 		}
 
-		if (isInDuel() && (getTeam() != TeamType.NONE))
+		if(isInDuel() && (getTeam() != TeamType.NONE))
 		{
-			if (msg)
+			if(msg)
 			{
-				if (first)
+				if(first)
 				{
 					sendPacket(SystemMsg.YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_DURING_A_DUEL);
 				}
@@ -13079,11 +12625,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return false;
 		}
 
-		if (isInOlympiadMode())
+		if(isInOlympiadMode())
 		{
-			if (msg)
+			if(msg)
 			{
-				if (first)
+				if(first)
 				{
 					sendPacket(SystemMsg.YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_PARTICIPATING_IN_OLYMPIAD);
 				}
@@ -13095,9 +12641,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return false;
 		}
 
-		if (isInSiegeZone())
+		if(isInSiegeZone())
 		{
-			if (msg && first)
+			if(msg && first)
 			{
 				sendPacket(SystemMsg.YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_BEING_INSIDE_OF_A_BATTLEGROUND_CASTLE_SIEGEFORTRESS_SIEGETERRITORY_WAR);
 			}
@@ -13105,9 +12651,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return false;
 		}
 
-		if (isInZoneBattle() || (getReflectionId() != 0))
+		if(isInZoneBattle() || (getReflectionId() != 0))
 		{
-			if (msg && first)
+			if(msg && first)
 			{
 				sendPacket(SystemMsg.YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_PARTICIPATING_IN_BLOCK_CHECKERCOLISEUMKRATEIS_CUBE);
 			}
@@ -13115,20 +12661,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			return false;
 		}
 
-		if (isInZone(ZoneType.no_escape) || isInZone(ZoneType.epic) || !Config.ENABLE_PARTY_SEARCH)
-		{
-			return false;
-		}
+		if(isInZone(ZoneType.no_escape) || isInZone(ZoneType.epic) || !Config.ENABLE_PARTY_SEARCH)
+		{ return false; }
 		return true;
 	}
 
 	public void startSubstituteTask()
 	{
-		if (!isPartySubstituteStarted())
+		if(!isPartySubstituteStarted())
 		{
 			_substituteTask = PartySubstituteManager.getInstance().SubstituteSearchTask(this);
 			sendUserInfo();
-			if (isInParty())
+			if(isInParty())
 			{
 				getParty().getPartyLeader().sendPacket(new PartySmallWindowUpdatePacket(this));
 			}
@@ -13137,12 +12681,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopSubstituteTask()
 	{
-		if (isPartySubstituteStarted())
+		if(isPartySubstituteStarted())
 		{
 			PartySubstituteManager.getInstance().removePartyMember(this);
 			_substituteTask.cancel(true);
 			sendUserInfo();
-			if (isInParty())
+			if(isInParty())
 			{
 				getParty().getPartyLeader().sendPacket(new PartySmallWindowUpdatePacket(this));
 			}
@@ -13157,7 +12701,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public int getSkillLevel(int skillId)
 	{
-		switch (skillId)
+		switch(skillId)
 		{
 			case 1566: // Смена Класса
 			case 1567: // Смена Класса
@@ -13192,10 +12736,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private boolean checkActiveToggleEffects()
 	{
 		final boolean dispelled = false;
-		for (final Abnormal effect : getAbnormalList())
+		for(final Abnormal effect : getAbnormalList())
 		{
 			final Skill skill = effect.getSkill();
-			if ((skill == null) || !skill.isToggle() || getAllSkills().contains(skill))
+			if((skill == null) || !skill.isToggle() || getAllSkills().contains(skill))
 			{
 				continue;
 			}
@@ -13209,15 +12753,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public Servitor getServitorForTransfereDamage(double transferDamage)
 	{
 		final SummonInstance summon = getSummon();
-		if ((summon == null) || summon.isDead() || (summon.getCurrentHp() < transferDamage))
-		 {
+		if((summon == null) || summon.isDead() || (summon.getCurrentHp() < transferDamage))
+		{
 			return null; // try next summmon
 		}
 
-		if (summon.isInRangeZ(this, 1200))
-		{
-			return summon;
-		}
+		if(summon.isInRangeZ(this, 1200))
+		{ return summon; }
 
 		// getAbnormalList().stop("AbsorbDamageToSummon"); На оффе эффект не отменяется.
 		return null;
@@ -13227,26 +12769,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getDamageForTransferToServitor(double damage)
 	{
 		final double transferToSummonDam = getStat().calc(Stats.TRANSFER_TO_SUMMON_DAMAGE_PERCENT, 0.);
-		if (transferToSummonDam > 0)
-		{
-			return (damage * transferToSummonDam) * .01;
-		}
+		if(transferToSummonDam > 0)
+		{ return (damage * transferToSummonDam) * .01; }
 		return 0.;
 	}
 
 	public boolean canFixedRessurect()
 	{
-		if (getPlayerAccess().ResurectFixed)
-		{
-			return true;
-		}
+		if(getPlayerAccess().ResurectFixed)
+		{ return true; }
 
-		if (!isInSiegeZone())
+		if(!isInSiegeZone())
 		{
-			if (getInventory().getCountOf(10649) > 0)
-			{
-				return true;
-			}
+			if(getInventory().getCountOf(10649) > 0)
+			{ return true; }
 		}
 
 		return false;
@@ -13255,10 +12791,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public double getLevelBonus()
 	{
-		if ((getTransform() != null) && (getTransform().getLevelBonus(getLevel()) > 0))
-		{
-			return getTransform().getLevelBonus(getLevel());
-		}
+		if((getTransform() != null) && (getTransform().getLevelBonus(getLevel()) > 0))
+		{ return getTransform().getLevelBonus(getLevel()); }
 
 		return super.getLevelBonus();
 	}
@@ -13266,7 +12800,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public PlayerBaseStats getBaseStats()
 	{
-		if (_baseStats == null)
+		if(_baseStats == null)
 		{
 			_baseStats = new PlayerBaseStats(this);
 		}
@@ -13276,7 +12810,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public PlayerStat getStat()
 	{
-		if (_stat == null)
+		if(_stat == null)
 		{
 			_stat = new PlayerStat(this);
 		}
@@ -13286,7 +12820,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public PlayerFlags getFlags()
 	{
-		if (_statuses == null)
+		if(_statuses == null)
 		{
 			_statuses = new PlayerFlags(this);
 		}
@@ -13296,19 +12830,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public final String getVisibleName(Player receiver)
 	{
-		if (getMercenaryId() > 0)
-		{
-			return CastleSiegeMercenaryObject.getName(getMercenaryId());
-		}
+		if(getMercenaryId() > 0)
+		{ return CastleSiegeMercenaryObject.getName(getMercenaryId()); }
 
 		String name;
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			name = event.getVisibleName(this, receiver);
-			if (name != null)
-			{
-				return name;
-			}
+			if(name != null)
+			{ return name; }
 		}
 		return getName();
 	}
@@ -13316,28 +12846,24 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public final String getVisibleTitle(Player receiver)
 	{
-		if (isInBuffStore())
+		if(isInBuffStore())
 		{
 			final BufferData bufferData = OfflineBufferManager.getInstance().getBuffStore(getObjectId());
-			if (bufferData != null)
-			{
-				return bufferData.getSaleTitle();
-			}
+			if(bufferData != null)
+			{ return bufferData.getSaleTitle(); }
 		}
 
-		if (getPrivateStoreType() != STORE_PRIVATE_NONE)
+		if(getPrivateStoreType() != STORE_PRIVATE_NONE)
 		{
-			if ((getReflection() == ReflectionManager.GIRAN_HARBOR) || (getReflection() == ReflectionManager.PARNASSUS))
-			{
-				return "";
-			}
+			if((getReflection() == ReflectionManager.GIRAN_HARBOR) || (getReflection() == ReflectionManager.PARNASSUS))
+			{ return ""; }
 		}
 
-		if (isInAwayingMode())
+		if(isInAwayingMode())
 		{
 			final String awayText = AwayManager.getInstance().getAwayText(this);
 			// TODO: Вынести в ДП сообщение.
-			if ((awayText == null) || (awayText.length() <= 1))
+			if((awayText == null) || (awayText.length() <= 1))
 			{
 				return isLangRus() ? "<Отошел>" : "<Away>";
 			}
@@ -13348,154 +12874,126 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 
 		String title;
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			title = event.getVisibleTitle(this, receiver);
-			if (title != null)
-			{
-				return title;
-			}
+			if(title != null)
+			{ return title; }
 		}
 		return getTitle();
 	}
 
 	public final int getVisibleNameColor(Player receiver)
 	{
-		if (isInBuffStore())
+		if(isInBuffStore())
 		{
 			final BufferData bufferData = OfflineBufferManager.getInstance().getBuffStore(getObjectId());
-			if (bufferData != null)
+			if(bufferData != null)
 			{
-				if (isInOfflineMode())
-				{
-					return Config.BUFF_STORE_OFFLINE_NAME_COLOR;
-				}
+				if(isInOfflineMode())
+				{ return Config.BUFF_STORE_OFFLINE_NAME_COLOR; }
 				return Config.BUFF_STORE_NAME_COLOR;
 			}
 		}
 
-		if (isInStoreMode())
+		if(isInStoreMode())
 		{
-			if (isInOfflineMode())
-			{
-				return Config.SERVICES_OFFLINE_TRADE_NAME_COLOR;
-			}
+			if(isInOfflineMode())
+			{ return Config.SERVICES_OFFLINE_TRADE_NAME_COLOR; }
 		}
 
 		Integer color;
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			color = event.getVisibleNameColor(this, receiver);
-			if (color != null)
-			{
-				return color.intValue();
-			}
+			if(color != null)
+			{ return color.intValue(); }
 		}
 
 		final int premiumNameColor = getPremiumAccount().getNameColor();
-		if (premiumNameColor != -1)
-		{
-			return premiumNameColor;
-		}
+		if(premiumNameColor != -1)
+		{ return premiumNameColor; }
 
 		final int vipNameColor = getVIP().getTemplate().getNameColor();
-		if (vipNameColor != -1)
-		{
-			return vipNameColor;
-		}
+		if(vipNameColor != -1)
+		{ return vipNameColor; }
 
 		return getNameColor();
 	}
 
 	public final int getVisibleTitleColor(Player receiver)
 	{
-		if (isInBuffStore())
+		if(isInBuffStore())
 		{
 			final BufferData bufferData = OfflineBufferManager.getInstance().getBuffStore(getObjectId());
-			if (bufferData != null)
+			if(bufferData != null)
 			{
-				if (!isInOfflineMode())
-				{
-					return Config.BUFF_STORE_TITLE_COLOR;
-				}
+				if(!isInOfflineMode())
+				{ return Config.BUFF_STORE_TITLE_COLOR; }
 			}
 		}
 
-		if (isInAwayingMode())
-		{
-			return Config.AWAY_TITLE_COLOR;
-		}
+		if(isInAwayingMode())
+		{ return Config.AWAY_TITLE_COLOR; }
 
 		Integer color;
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			color = event.getVisibleTitleColor(this, receiver);
-			if (color != null)
-			{
-				return color.intValue();
-			}
+			if(color != null)
+			{ return color.intValue(); }
 		}
 
 		final int premiumTitleColor = getPremiumAccount().getTitleColor();
-		if (premiumTitleColor != -1)
-		{
-			return premiumTitleColor;
-		}
+		if(premiumTitleColor != -1)
+		{ return premiumTitleColor; }
 
 		final int vipTitleColor = getVIP().getTemplate().getTitleColor();
-		if (vipTitleColor != -1)
-		{
-			return vipTitleColor;
-		}
+		if(vipTitleColor != -1)
+		{ return vipTitleColor; }
 
 		return getTitleColor();
 	}
 
 	public final boolean isPledgeVisible(Player receiver)
 	{
-		if (getPrivateStoreType() != STORE_PRIVATE_NONE)
+		if(getPrivateStoreType() != STORE_PRIVATE_NONE)
 		{
-			if ((getReflection() == ReflectionManager.GIRAN_HARBOR) || (getReflection() == ReflectionManager.PARNASSUS))
-			{
-				return false;
-			}
+			if((getReflection() == ReflectionManager.GIRAN_HARBOR) || (getReflection() == ReflectionManager.PARNASSUS))
+			{ return false; }
 		}
 
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
-			if (!event.isPledgeVisible(this, receiver))
-			{
-				return false;
-			}
+			if(!event.isPledgeVisible(this, receiver))
+			{ return false; }
 		}
 		return true;
 	}
 
 	public final Clan getVisibleClan(Player receiver)
 	{
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			final Clan clan = event.getVisibleClan(this, receiver);
-			if (clan != null)
-			{
-				return clan;
-			}
+			if(clan != null)
+			{ return clan; }
 		}
 		return getClan();
 	}
 
 	public void checkAndDeleteOlympiadItems()
 	{
-		if (!isHero())
+		if(!isHero())
 		{
 			ItemFunctions.deleteItemsEverywhere(this, ItemTemplate.ITEM_ID_HERO_WING); // TODO: Должны ли удалять?
 			final int rank = Olympiad.getRank(this);
-			if ((rank != 2) && (rank != 3))
+			if((rank != 2) && (rank != 3))
 			{
 				ItemFunctions.deleteItemsEverywhere(this, ItemTemplate.ITEM_ID_FAME_CLOAK);
 			}
 
-			for (final int itemId : ItemTemplate.HERO_WEAPON_IDS)
+			for(final int itemId : ItemTemplate.HERO_WEAPON_IDS)
 			{
 				ItemFunctions.deleteItemsEverywhere(this, itemId);
 			}
@@ -13510,18 +13008,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean isSpecialAbnormal(Skill skill)
 	{
-		if (skill.isNecessaryToggle())
-		{
-			return true;
-		}
+		if(skill.isNecessaryToggle())
+		{ return true; }
 
 		final int skillId = skill.getId();
-		if ((skillId == 7008) || (skillId == 6038) || (skillId == 6039) || (skillId == 6040) || (skillId == 6055) || (skillId == 6056) || (skillId == 6057) || (skillId == 6058) || (skillId == 51152))
+		if((skillId == 7008) || (skillId == 6038) || (skillId == 6039) || (skillId == 6040) || (skillId == 6055) || (skillId == 6056) || (skillId == 6057)
+				|| (skillId == 6058) || (skillId == 51152))
 		{ // TODO[Bonux]:
 			// Вынести
-																																																	// в
-																																																	// датапак?
-						return true;
+			// в
+			// датапак?
+			return true;
 		}
 
 		return false;
@@ -13584,14 +13081,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		boolean rewarded = false;
 
-		if (playerLvl > lastRewarded)
+		if(playerLvl > lastRewarded)
 		{
-			for (int i = playerLvl; i > lastRewarded; i--)
+			for(int i = playerLvl; i > lastRewarded; i--)
 			{
 				final TIntLongMap items = LevelUpRewardHolder.getInstance().getRewardData(i);
-				if (items != null)
+				if(items != null)
 				{
-					for (final TIntLongIterator iterator = items.iterator(); iterator.hasNext();)
+					for(final TIntLongIterator iterator = items.iterator(); iterator.hasNext();)
 					{
 						iterator.advance();
 						getPremiumItemList().add(new PremiumItem(iterator.key(), iterator.value(), ""));
@@ -13603,7 +13100,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			setVar(LVL_UP_REWARD_VAR, playerLvl);
 		}
 
-		if (rewarded)
+		if(rewarded)
 		{
 			sendPacket(ExNotifyPremiumItem.STATIC);
 		}
@@ -13612,17 +13109,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void checkHeroSkills()
 	{
 		final boolean hero = isHero() && isBaseClassActive();
-		for (final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(hero ? this : null, AcquireType.HERO))
+		for(final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(hero ? this : null, AcquireType.HERO))
 		{
 			final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
 				continue;
 			}
 
-			if (hero)
+			if(hero)
 			{
-				if (getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
+				if(getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
 				{
 					addSkill(skillEntry, true);
 				}
@@ -13636,15 +13133,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void activateHeroSkills(boolean activate)
 	{
-		for (final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(null, AcquireType.HERO))
+		for(final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(null, AcquireType.HERO))
 		{
 			final Skill skill = SkillHolder.getInstance().getSkill(sl.getId(), sl.getLevel());
-			if (skill == null)
+			if(skill == null)
 			{
 				continue;
 			}
 
-			if (!activate)
+			if(!activate)
 			{
 				addUnActiveSkill(skill);
 			}
@@ -13657,20 +13154,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void giveGMSkills()
 	{
-		if (!isGM())
-		{
-			return;
-		}
+		if(!isGM())
+		{ return; }
 
-		for (final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(this, AcquireType.GM))
+		for(final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(this, AcquireType.GM))
 		{
 			final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
 				continue;
 			}
 
-			if (getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
+			if(getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
 			{
 				addSkill(skillEntry, true);
 			}
@@ -13747,47 +13242,44 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		_synthesisItem2 = value;
 	}
 
-	private static final int[] ADDITIONAL_SS_EFFECTS = new int[]
-	{
-		92072, // Onyx 8
-		92071, // Onyx 7
-		92070, // Onyx 6
-		94521, // Onyx 5
-		92069, // Onyx 4
-		92068, // Onyx 3
-		92067, // Onyx 2
-		92066, // Onyx 1
-		70455, // Ruby - Lv. 5
-		70454, // Ruby - Lv. 4
-		70453, // Ruby - Lv. 3
-		70452, // Ruby - Lv. 2
-		70451, // Ruby - Lv. 1
-		90332, // Ruby - Lv. 5
-		90331, // Ruby - Lv. 4
-		90330, // Ruby - Lv. 3
-		90329, // Ruby - Lv. 2
-		90328, // Ruby - Lv. 1
-		70460, // Sapphire - Lv. 5
-		70459, // Sapphire - Lv. 4
-		70458, // Sapphire - Lv. 3
-		70457, // Sapphire - Lv. 2
-		70456, // Sapphire - Lv. 1
-		90337, // Sapphire - Lv. 5
-		90336, // Sapphire - Lv. 4
-		90335, // Sapphire - Lv. 3
-		90334, // Sapphire - Lv. 2
-		90333 // Sapphire - Lv. 1
+	private static final int[] ADDITIONAL_SS_EFFECTS = new int[] {
+			92072, // Onyx 8
+			92071, // Onyx 7
+			92070, // Onyx 6
+			94521, // Onyx 5
+			92069, // Onyx 4
+			92068, // Onyx 3
+			92067, // Onyx 2
+			92066, // Onyx 1
+			70455, // Ruby - Lv. 5
+			70454, // Ruby - Lv. 4
+			70453, // Ruby - Lv. 3
+			70452, // Ruby - Lv. 2
+			70451, // Ruby - Lv. 1
+			90332, // Ruby - Lv. 5
+			90331, // Ruby - Lv. 4
+			90330, // Ruby - Lv. 3
+			90329, // Ruby - Lv. 2
+			90328, // Ruby - Lv. 1
+			70460, // Sapphire - Lv. 5
+			70459, // Sapphire - Lv. 4
+			70458, // Sapphire - Lv. 3
+			70457, // Sapphire - Lv. 2
+			70456, // Sapphire - Lv. 1
+			90337, // Sapphire - Lv. 5
+			90336, // Sapphire - Lv. 4
+			90335, // Sapphire - Lv. 3
+			90334, // Sapphire - Lv. 2
+			90333 // Sapphire - Lv. 1
 	};
 
 	@Override
 	public int getAdditionalVisualSSEffect()
 	{
-		for (final int id : ADDITIONAL_SS_EFFECTS)
+		for(final int id : ADDITIONAL_SS_EFFECTS)
 		{
-			if (ItemFunctions.checkIsEquipped(this, -1, id, 0))
-			{
-				return id;
-			}
+			if(ItemFunctions.checkIsEquipped(this, -1, id, 0))
+			{ return id; }
 		}
 		return 0;
 	}
@@ -13795,83 +13287,83 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public SkillEntry getAdditionalSSEffect(boolean spiritshot, boolean blessed)
 	{
-		if (!spiritshot)
+		if(!spiritshot)
 		{
-			if (!blessed)
+			if(!blessed)
 			{
 				// Ruby's
-				if (ItemFunctions.checkIsEquipped(this, -1, 70455, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70455, 0))
 				{ // Ruby - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17817, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70454, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70454, 0))
 				{ // Ruby - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17816, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70453, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70453, 0))
 				{ // Ruby - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17815, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70452, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70452, 0))
 				{ // Ruby - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70451, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70451, 0))
 				{ // Ruby - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 1);
 				}
 				//
-				if (ItemFunctions.checkIsEquipped(this, -1, 90332, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90332, 0))
 				{ // Ruby - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17817, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90331, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90331, 0))
 				{ // Ruby - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17816, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90330, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90330, 0))
 				{ // Ruby - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17815, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90329, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90329, 0))
 				{ // Ruby - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90328, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90328, 0))
 				{ // Ruby - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 1);
 				}
 
 				// Onyx ss
-				if (ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 8);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 7);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 6);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 5);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 3);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50198, 1);
 				}
@@ -13879,78 +13371,78 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			else
 			{
 				// Ruby's
-				if (ItemFunctions.checkIsEquipped(this, -1, 70455, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70455, 0))
 				{ // Ruby - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17817, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70454, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70454, 0))
 				{ // Ruby - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17816, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70453, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70453, 0))
 				{ // Ruby - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17815, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70452, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70452, 0))
 				{ // Ruby - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70451, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70451, 0))
 				{ // Ruby - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 3);
 				}
 				//
-				if (ItemFunctions.checkIsEquipped(this, -1, 90332, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90332, 0))
 				{ // Ruby - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17817, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90331, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90331, 0))
 				{ // Ruby - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17816, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90330, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90330, 0))
 				{ // Ruby - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17815, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90329, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90329, 0))
 				{ // Ruby - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90328, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90328, 0))
 				{ // Ruby - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17814, 3);
 				}
 
 				// Onyx bss
-				if (ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 8);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 7);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 6);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 5);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 3);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50199, 1);
 				}
@@ -13958,81 +13450,81 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		}
 		else
 		{
-			if (!blessed)
+			if(!blessed)
 			{
 				// Sapphire's
-				if (ItemFunctions.checkIsEquipped(this, -1, 70460, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70460, 0))
 				{ // Sapphire - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17821, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70459, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70459, 0))
 				{ // Sapphire - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17820, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70458, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70458, 0))
 				{ // Sapphire - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17819, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70457, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70457, 0))
 				{ // Sapphire - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70456, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70456, 0))
 				{ // Sapphire - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 1);
 				}
 				//
-				if (ItemFunctions.checkIsEquipped(this, -1, 90337, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90337, 0))
 				{ // Sapphire - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17821, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90336, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90336, 0))
 				{ // Sapphire - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17820, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90335, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90335, 0))
 				{ // Sapphire - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17819, 1);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90334, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90334, 0))
 				{ // Sapphire - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90333, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90333, 0))
 				{ // Sapphire - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 1);
 				}
 
 				// Onyx bsps
-				if (ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 8);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 7);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 6);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 5);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 3);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50202, 1);
 				}
@@ -14040,78 +13532,78 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			else
 			{
 				// Sapphire's
-				if (ItemFunctions.checkIsEquipped(this, -1, 70460, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70460, 0))
 				{ // Sapphire - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17821, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70459, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70459, 0))
 				{ // Sapphire - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17820, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70458, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70458, 0))
 				{ // Sapphire - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17819, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70457, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70457, 0))
 				{ // Sapphire - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 70456, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 70456, 0))
 				{ // Sapphire - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 3);
 				}
 				//
-				if (ItemFunctions.checkIsEquipped(this, -1, 90337, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90337, 0))
 				{ // Sapphire - Lv. 5
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17821, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90336, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90336, 0))
 				{ // Sapphire - Lv. 4
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17820, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90335, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90335, 0))
 				{ // Sapphire - Lv. 3
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17819, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90334, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90334, 0))
 				{ // Sapphire - Lv. 2
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 90333, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 90333, 0))
 				{ // Sapphire - Lv. 1
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17818, 3);
 				}
 
 				// Onyx bsps
-				if (ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92072, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 8);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92071, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 7);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92070, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 6);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 94521, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 5);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92069, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 4);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92068, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 3);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92067, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 2);
 				}
-				if (ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
+				if(ItemFunctions.checkIsEquipped(this, -1, 92066, 0))
 				{ // Onyx - Lv. 8
 					return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50201, 1);
 				}
@@ -14120,7 +13612,6 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 		return null;
 	}
-
 
 	public boolean isInAwayingMode()
 	{
@@ -14135,7 +13626,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public double getMPCostDiff(SkillMagicType type)
 	{
 		double value = 0;
-		switch (type)
+		switch(type)
 		{
 			case PHYSIC:
 			{
@@ -14167,7 +13658,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addListenerHook(ListenerHookType type, ListenerHook hook)
 	{
-		if (!scriptHookTypeList.containsKey(type))
+		if(!scriptHookTypeList.containsKey(type))
 		{
 			final CopyOnWriteArraySet<ListenerHook> hooks = new CopyOnWriteArraySet<>();
 			hooks.add(hook);
@@ -14182,7 +13673,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeListenerHookType(ListenerHookType type, ListenerHook hook)
 	{
-		if (scriptHookTypeList.containsKey(type))
+		if(scriptHookTypeList.containsKey(type))
 		{
 			final Set<ListenerHook> hooks = scriptHookTypeList.get(type);
 			hooks.remove(hook);
@@ -14192,7 +13683,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public Set<ListenerHook> getListenerHooks(ListenerHookType type)
 	{
 		Set<ListenerHook> hooks = scriptHookTypeList.get(type);
-		if (hooks == null)
+		if(hooks == null)
 		{
 			hooks = Collections.emptySet();
 		}
@@ -14209,23 +13700,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public OptionDataTemplate addOptionData(OptionDataTemplate optionData)
 	{
-		if (optionData == null)
-		{
-			return null;
-		}
+		if(optionData == null)
+		{ return null; }
 
 		final OptionDataTemplate oldOptionData = _options.get(optionData.getId());
-		if (optionData == oldOptionData)
-		{
-			return oldOptionData;
-		}
+		if(optionData == oldOptionData)
+		{ return oldOptionData; }
 
 		_options.put(optionData.getId(), optionData);
 
 		addTriggers(optionData);
 		getStat().addFuncs(optionData.getStatFuncs(optionData));
 
-		for (final SkillEntry skillEntry : optionData.getSkills())
+		for(final SkillEntry skillEntry : optionData.getSkills())
 		{
 			addSkill(skillEntry);
 		}
@@ -14236,12 +13723,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public OptionDataTemplate removeOptionData(int id)
 	{
 		final OptionDataTemplate oldOptionData = _options.remove(id);
-		if (oldOptionData != null)
+		if(oldOptionData != null)
 		{
 			removeTriggers(oldOptionData);
 			getStat().removeFuncsByOwner(oldOptionData);
 
-			for (final SkillEntry skillEntry : oldOptionData.getSkills())
+			for(final SkillEntry skillEntry : oldOptionData.getSkills())
 			{
 				removeSkill(skillEntry);
 			}
@@ -14284,16 +13771,14 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		super.onAddSkill(skillEntry);
 
 		final Skill skill = skillEntry.getTemplate();
-		if (skill.isNecessaryToggle())
+		if(skill.isNecessaryToggle())
 		{
-			if (skill.isToggleGrouped() && (skill.getToggleGroupId() > 0))
+			if(skill.isToggleGrouped() && (skill.getToggleGroupId() > 0))
 			{
-				for (final Abnormal abnormal : getAbnormalList())
+				for(final Abnormal abnormal : getAbnormalList())
 				{
-					if (abnormal.getSkill().isToggleGrouped() && (abnormal.getSkill().getToggleGroupId() == skill.getToggleGroupId()))
-					{
-						return;
-					}
+					if(abnormal.getSkill().isToggleGrouped() && (abnormal.getSkill().getToggleGroupId() == skill.getToggleGroupId()))
+					{ return; }
 				}
 			}
 			forceUseSkill(skillEntry, this);
@@ -14346,63 +13831,63 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean sendBuffStore = true;
 		boolean sendEnterMessage = true;
 		boolean blockActions = true;
-		for (final Zone z : getZones())
+		for(final Zone z : getZones())
 		{
-			if (z == zone)
+			if(z == zone)
 			{
 				continue;
 			}
 
-			if ((zone.getType() == ZoneType.buff_store) && (z.getType() == ZoneType.buff_store))
+			if((zone.getType() == ZoneType.buff_store) && (z.getType() == ZoneType.buff_store))
 			{
 				sendBuffStore = false;
 			}
-			if (zone.getEnteringMessageId() == z.getEnteringMessageId())
+			if(zone.getEnteringMessageId() == z.getEnteringMessageId())
 			{
 				sendEnterMessage = false;
 			}
-			if (Arrays.equals(zone.getTemplate().getBlockedActions(), z.getTemplate().getBlockedActions()))
+			if(Arrays.equals(zone.getTemplate().getBlockedActions(), z.getTemplate().getBlockedActions()))
 			{
 				blockActions = false;
 			}
 		}
 
-		if (zone.getType() == ZoneType.SIEGE)
+		if(zone.getType() == ZoneType.SIEGE)
 		{
-			for (final CastleSiegeEvent siegeEvent : zone.getEvents(CastleSiegeEvent.class))
+			for(final CastleSiegeEvent siegeEvent : zone.getEvents(CastleSiegeEvent.class))
 			{
 				// Запоминаем, что игрок участвовал в осаде.
-				if (containsEvent(siegeEvent))
+				if(containsEvent(siegeEvent))
 				{
 					siegeEvent.addVisitedParticipant(this);
 				}
 			}
 		}
-		if (sendBuffStore)
+		if(sendBuffStore)
 		{
-			if ((zone.getType() == ZoneType.buff_store) && Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(getClassId().getId()))
+			if((zone.getType() == ZoneType.buff_store) && Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(getClassId().getId()))
 			{
 				sendPacket(new SayPacket2(0, ChatType.BATTLEFIELD, 0, getName(), new CustomMessage("l2s.gameserver.model.Player.EnterOfflineBufferZone").toString(this)));
 			}
 		}
-		if (sendEnterMessage)
+		if(sendEnterMessage)
 		{
-			if (zone.getEnteringMessageId() != 0)
+			if(zone.getEnteringMessageId() != 0)
 			{
 				sendPacket(new SystemMessage(zone.getEnteringMessageId()));
 			}
 		}
-		if (blockActions)
+		if(blockActions)
 		{
-			if (zone.getTemplate().getBlockedActions() != null)
+			if(zone.getTemplate().getBlockedActions() != null)
 			{
 				blockActions(zone.getTemplate().getBlockedActions());
 			}
 		}
-		if (zone.getType() == ZoneType.peace_zone)
+		if(zone.getType() == ZoneType.peace_zone)
 		{
 			final DuelEvent duel = getEvent(DuelEvent.class);
-			if (duel != null)
+			if(duel != null)
 			{
 				duel.abortDuel(this);
 			}
@@ -14415,44 +13900,44 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		boolean sendBuffStore = true;
 		boolean sendLeavingMessage = true;
 		boolean unblockActions = true;
-		for (final Zone z : getZones())
+		for(final Zone z : getZones())
 		{
-			if (z == zone)
+			if(z == zone)
 			{
 				continue;
 			}
 
-			if ((zone.getType() == ZoneType.buff_store) && (z.getType() == ZoneType.buff_store))
+			if((zone.getType() == ZoneType.buff_store) && (z.getType() == ZoneType.buff_store))
 			{
 				sendBuffStore = false;
 			}
-			if (zone.getLeavingMessageId() == z.getLeavingMessageId())
+			if(zone.getLeavingMessageId() == z.getLeavingMessageId())
 			{
 				sendLeavingMessage = false;
 			}
-			if (Arrays.equals(zone.getTemplate().getBlockedActions(), z.getTemplate().getBlockedActions()))
+			if(Arrays.equals(zone.getTemplate().getBlockedActions(), z.getTemplate().getBlockedActions()))
 			{
 				unblockActions = false;
 			}
 		}
 
-		if (sendBuffStore)
+		if(sendBuffStore)
 		{
-			if ((zone.getType() == ZoneType.buff_store) && Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(getClassId().getId()))
+			if((zone.getType() == ZoneType.buff_store) && Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(getClassId().getId()))
 			{
 				sendPacket(new SayPacket2(0, ChatType.BATTLEFIELD, 0, getName(), new CustomMessage("l2s.gameserver.model.Player.ExitOfflineBufferZone").toString(this)));
 			}
 		}
-		if (sendLeavingMessage)
+		if(sendLeavingMessage)
 		{
-			if (zone.getLeavingMessageId() != 0)
+			if(zone.getLeavingMessageId() != 0)
 			{
 				sendPacket(new SystemMessage(zone.getLeavingMessageId()));
 			}
 		}
-		if (unblockActions)
+		if(unblockActions)
 		{
-			if (zone.getTemplate().getBlockedActions() != null)
+			if(zone.getTemplate().getBlockedActions() != null)
 			{
 				unblockActions(zone.getTemplate().getBlockedActions());
 			}
@@ -14467,10 +13952,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean addTask(ScheduledFuture<?> task)
 	{
-		if (task != null)
-		{
-			return _tasks.add(task);
-		}
+		if(task != null)
+		{ return _tasks.add(task); }
 		return false;
 	}
 
@@ -14482,51 +13965,40 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean canReceiveStatusUpdate(Creature creature, StatusType statusType, UpdateType field)
 	{
 		if(creature == this)
-		{
-			return true;
-		}
+		{ return true; }
 
-		final boolean isRegenOrDamage = (statusType == StatusType.HPUpdate) || (/* updateType == UpdateType.CONSUME || */statusType == StatusType.DotEffect);
+		final boolean isRegenOrDamage = (statusType == StatusType.HPUpdate)
+				|| (/* updateType == UpdateType.CONSUME || */statusType == StatusType.DotEffect);
 
 		if(creature.isNpc() || creature.isDoor())
 		{
 			if(isRegenOrDamage || (getTarget() == creature) || (getDistance(creature) < 700))
 			{
 				if((field == UpdateType.VCP_HP) || (field == UpdateType.VCP_MAXHP))
-				{
-					return true;
-				}
+				{ return true; }
 			}
 			if(isRegenOrDamage)
 			{
 				if((field == UpdateType.VCP_MP) || (field == UpdateType.VCP_MAXMP))
-				{
-					return true;
-				}
+				{ return true; }
 			}
 		}
 		else if(creature.isPlayable())
 		{
 			if((field == UpdateType.VCP_CRIMINAL_RATE) || (field == UpdateType.VCP_ISGUILTY))
-			{
-				return true;
-			}
+			{ return true; }
 
 			if(creature.isServitor())
 			{
 				if(isRegenOrDamage || (getTarget() == creature) || (getDistance(creature) < 700))
 				{
 					if((field == UpdateType.VCP_HP) || (field == UpdateType.VCP_MAXHP))
-					{
-						return true;
-					}
+					{ return true; }
 				}
 				if(isRegenOrDamage || (getTarget() == creature))
 				{
 					if((field == UpdateType.VCP_MP) || (field == UpdateType.VCP_MAXMP))
-					{
-						return true;
-					}
+					{ return true; }
 				}
 			}
 			else
@@ -14637,38 +14109,32 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean startBanEndTask(BanBindType bindType, int endTime)
 	{
 		final Pair<Integer, Future<?>> taskInfo = banTasks.get(bindType);
-		if (taskInfo != null)
+		if(taskInfo != null)
 		{
-			if (taskInfo.getKey() == endTime)
-			{
-				return false;
-			}
+			if(taskInfo.getKey() == endTime)
+			{ return false; }
 
 			final Future<?> task = taskInfo.getValue();
-			if (task != null)
+			if(task != null)
 			{
 				task.cancel(false);
 			}
 		}
 
 		Future<?> task = null;
-		if (endTime != -1)
+		if(endTime != -1)
 		{
 			final long delay = (endTime * 1000L) - System.currentTimeMillis();
-			if (delay <= 0)
-			{
-				return false;
-			}
+			if(delay <= 0)
+			{ return false; }
 
-			if (bindType == BanBindType.CHAT)
+			if(bindType == BanBindType.CHAT)
 			{
 				task = ThreadPoolManager.getInstance().schedule(() -> GameBanManager.onUnban(bindType, getObjectId(), false), delay);
 			}
 
-			if (task == null)
-			{
-				return false;
-			}
+			if(task == null)
+			{ return false; }
 		}
 		banTasks.put(bindType, Pair.of(endTime, task));
 		return true;
@@ -14677,16 +14143,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean stopBanEndTask(BanBindType bindType)
 	{
 		final Pair<Integer, Future<?>> taskInfo = banTasks.remove(bindType);
-		if (taskInfo == null)
-		{
-			return false;
-		}
+		if(taskInfo == null)
+		{ return false; }
 
 		final Future<?> task = taskInfo.getValue();
-		if (task == null)
-		{
-			return false;
-		}
+		if(task == null)
+		{ return false; }
 
 		task.cancel(false);
 		return true;
@@ -14694,10 +14156,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopBanEndTasks()
 	{
-		for (final Pair<Integer, Future<?>> taskInfo : banTasks.values())
+		for(final Pair<Integer, Future<?>> taskInfo : banTasks.values())
 		{
 			final Future<?> task = taskInfo.getValue();
-			if (task != null)
+			if(task != null)
 			{
 				task.cancel(false);
 			}
@@ -14712,13 +14174,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean changeActiveElement(ElementalElement element)
 	{
-		if (getActiveElement() == element)
-		{
-			return false;
-		}
+		if(getActiveElement() == element)
+		{ return false; }
 
 		final int leftTime = (int) TimeUnit.MILLISECONDS.toSeconds(_lastChangeActiveElementTime - System.currentTimeMillis());
-		if (leftTime > CHANGE_ACTIVE_ELEMENT_DELAY)
+		if(leftTime > CHANGE_ACTIVE_ELEMENT_DELAY)
 		{
 			sendPacket(new SystemMessagePacket(SystemMsg.ATTACK_ATTRIBUTE_CAN_BE_CHANGED_AFTER_S1_SECONDS).addInteger(leftTime));
 			return false;
@@ -14737,7 +14197,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setActiveElement(ElementalElement element)
 	{
-		if (getActiveSubClass() != null)
+		if(getActiveSubClass() != null)
 		{
 			getActiveSubClass().setActiveElement(element);
 		}
@@ -14746,10 +14206,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public ElementalElement getActiveElement()
 	{
-		if (!Config.ELEMENTAL_SYSTEM_ENABLED || (getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()))
-		{
-			return ElementalElement.NONE;
-		}
+		if(!Config.ELEMENTAL_SYSTEM_ENABLED || (getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()))
+		{ return ElementalElement.NONE; }
 
 		return getActiveSubClass() == null ? ElementalElement.NONE : getActiveSubClass().getActiveElement();
 	}
@@ -14772,24 +14230,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean canClassChange()
 	{
 		final int nextClassLevel = getClassId().getClassMinLevel(true);
-		if ((nextClassLevel == -1) || (getLevel() < nextClassLevel))
-		{
-			return false;
-		}
-		if (Config.NEED_QUEST_FOR_PROOF)
+		if((nextClassLevel == -1) || (getLevel() < nextClassLevel))
+		{ return false; }
+		if(Config.NEED_QUEST_FOR_PROOF)
 		{
 			final QuestState qs = getQuestState(10673);
-			if ((getClassLevel() == ClassLevel.SECOND) && ((qs == null) || !qs.isCompleted()))
-			{
-				return false;
-			}
+			if((getClassLevel() == ClassLevel.SECOND) && ((qs == null) || !qs.isCompleted()))
+			{ return false; }
 		}
 		return true;
 	}
 
 	public void sendClassChangeAlert()
 	{
-		if (canClassChange())
+		if(canClassChange())
 		{
 			sendPacket(ExClaschangeSetAlarm.STATIC);
 		}
@@ -14797,7 +14251,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getTotalStatPoints()
 	{
-		if (getLevel() >= 76)
+		if(getLevel() >= 76)
 		{
 			final int elixirPoints = getVarInt("elixirs_used", 0);
 			return (getLevel() - 75) + elixirPoints;
@@ -14807,7 +14261,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setStatBonus(int stat, int bonus)
 	{
-		switch (stat)
+		switch(stat)
 		{
 			case 0: // STR
 			{
@@ -14845,7 +14299,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getStatBonus(int stat)
 	{
-		switch (stat)
+		switch(stat)
 		{
 			case 0:
 			{
@@ -14897,80 +14351,80 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		removeSkill(witSkillId, false);
 		removeSkill(menSkillId, false);
 
-		if (getSTR() >= 90)
+		if(getSTR() >= 90)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, strSkillId, 3));
 		}
-		else if (getSTR() >= 70)
+		else if(getSTR() >= 70)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, strSkillId, 2));
 		}
-		else if (getSTR() >= 60)
+		else if(getSTR() >= 60)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, strSkillId, 1));
 		}
 
-		if (getDEX() >= 80)
+		if(getDEX() >= 80)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, dexSkillId, 3));
 		}
-		else if (getDEX() >= 60)
+		else if(getDEX() >= 60)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, dexSkillId, 2));
 		}
-		else if (getDEX() >= 50)
+		else if(getDEX() >= 50)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, dexSkillId, 1));
 		}
 
-		if (getCON() >= 90)
+		if(getCON() >= 90)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, conSkillId, 3));
 		}
-		else if (getCON() >= 65)
+		else if(getCON() >= 65)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, conSkillId, 2));
 		}
-		else if (getCON() >= 50)
+		else if(getCON() >= 50)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, conSkillId, 1));
 		}
 
-		if (getINT() >= 90)
+		if(getINT() >= 90)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, intSkillId, 3));
 		}
-		else if (getINT() >= 70)
+		else if(getINT() >= 70)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, intSkillId, 2));
 		}
-		else if (getINT() >= 60)
+		else if(getINT() >= 60)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, intSkillId, 1));
 		}
 
-		if (getWIT() >= 70)
+		if(getWIT() >= 70)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, witSkillId, 3));
 		}
-		else if (getWIT() >= 50)
+		else if(getWIT() >= 50)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, witSkillId, 2));
 		}
-		else if (getWIT() >= 40)
+		else if(getWIT() >= 40)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, witSkillId, 1));
 		}
 
-		if (getMEN() >= 85)
+		if(getMEN() >= 85)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, menSkillId, 3));
 		}
-		else if (getMEN() >= 60)
+		else if(getMEN() >= 60)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, menSkillId, 2));
 		}
-		else if (getMEN() >= 45)
+		else if(getMEN() >= 45)
 		{
 			addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, menSkillId, 1));
 		}
@@ -14980,12 +14434,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final Map<Integer, TimeRestrictFieldInfo> fields = TimeRestrictFieldHolder.getInstance().getFields();
 
-		for (final int id : fields.keySet())
+		for(final int id : fields.keySet())
 		{
 			final TimeRestrictFieldInfo field = fields.get(id);
 
 			int refId = 0;
-			switch (field.getFieldId())
+			switch(field.getFieldId())
 			{
 				case 1:
 				{
@@ -15014,7 +14468,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 
-			if (!daily || (field.getResetCycle() == 1))
+			if(!daily || (field.getResetCycle() == 1))
 			{
 				setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + refId, field.getRemainTimeBase());
 				setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + refId + "_refill", field.getRemainTimeMax());
@@ -15028,17 +14482,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		final int timeRemain = getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + id, 0);
 		final long ms = System.currentTimeMillis();
 
-		if (timeRemain != 0)
+		if(timeRemain != 0)
 		{
 			final long timeStart = getVarLong(PlayerVariables.RESTRICT_FIELD_TIMESTART + "_" + id, ms);
-			if (((timeRemain * 1000) + timeStart) <= ms)
+			if(((timeRemain * 1000) + timeStart) <= ms)
 			{
 				setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + id, 0);
 			}
 			else
 			{
 				final int newTimeLimit = (int) (((timeRemain * 1000) - (ms - timeStart)) / 1000);
-				if (exit)
+				if(exit)
 				{
 					setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + id, newTimeLimit);
 					_remainTime = 0;
@@ -15049,17 +14503,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 		}
-		if (exit)
+		if(exit)
 		{
 			unsetVar(PlayerVariables.RESTRICT_FIELD_TIMESTART + "_" + id);
 			abortCast(true, false);
-			for (int i = 0; i < 3; i++)
+			for(int i = 0; i < 3; i++)
 			{
 				setAnnounced(i, false);
 			}
 			// auto-hunt stopped?
 
-			if ((id <= -1000) && !exitFromGame)
+			if((id <= -1000) && !exitFromGame)
 			{
 				final int fieldId = convertReflectionIdToFieldId(id);
 				sendPacket(new ExTimeRestrictFieldUserExit(fieldId));
@@ -15074,34 +14528,33 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		final int id = getReflection().getId();
 
-		_timeRestrictFieldFinishTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
+		_timeRestrictFieldFinishTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 			final int fieldId = convertReflectionIdToFieldId(id);
 			final int timeRemain = getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + id, 0);
 			final long ms = System.currentTimeMillis();
-			if (timeRemain != 0)
+			if(timeRemain != 0)
 			{
 				final long timeStart = getVarLong(PlayerVariables.RESTRICT_FIELD_TIMESTART + "_" + id, ms);
-				if (((timeRemain * 1000) + timeStart) <= ms)
+				if(((timeRemain * 1000) + timeStart) <= ms)
 				{
 					updateTimeRestrictFieldInDb(true, false);
 				}
 				else
 				{
 					final long remainTime = ((timeRemain * 1000) + timeStart) - ms;
-					if ((remainTime >= 596000) && (remainTime < 604000) && !isAnnounced(0))
+					if((remainTime >= 596000) && (remainTime < 604000) && !isAnnounced(0))
 					{
 						sendPacket(new SystemMessagePacket(SystemMsg.THE_TIME_FOR_HUNTING_IN_THIS_ZONE_EXPIRES_IN_S1_MIN_PLEASE_ADD_MORE_TIME).addInteger(10));
 						sendPacket(new ExTimeRestrictFieldUserAlarm(fieldId, 600));
 						setAnnounced(0, true);
 					}
-					else if ((remainTime >= 296000) && (remainTime <= 304000) && !isAnnounced(1))
+					else if((remainTime >= 296000) && (remainTime <= 304000) && !isAnnounced(1))
 					{
 						sendPacket(new SystemMessagePacket(SystemMsg.THE_TIME_FOR_HUNTING_IN_THIS_ZONE_EXPIRES_IN_S1_MIN_PLEASE_ADD_MORE_TIME).addInteger(5));
 						sendPacket(new ExTimeRestrictFieldUserAlarm(fieldId, 300));
 						setAnnounced(1, true);
 					}
-					else if ((remainTime >= 57000) && (remainTime <= 65000) && !isAnnounced(2))
+					else if((remainTime >= 57000) && (remainTime <= 65000) && !isAnnounced(2))
 					{
 						sendPacket(new SystemMessagePacket(SystemMsg.THE_TIME_FOR_HUNTING_IN_THIS_ZONE_EXPIRES_IN_S1_MIN_PLEASE_ADD_MORE_TIME).addInteger(1));
 						sendPacket(new ExTimeRestrictFieldUserAlarm(fieldId, 60));
@@ -15115,7 +14568,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopTimedHuntingZoneTask(boolean exit, boolean exitFromGame)
 	{
-		if (_timeRestrictFieldFinishTask != null)
+		if(_timeRestrictFieldFinishTask != null)
 		{
 			_timeRestrictFieldFinishTask.cancel(true);
 			_timeRestrictFieldFinishTask = null;
@@ -15136,7 +14589,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int convertReflectionIdToFieldId(int reflectionId)
 	{
 		int fieldId = 0;
-		switch (reflectionId)
+		switch(reflectionId)
 		{
 			case -1000:
 			{
@@ -15184,7 +14637,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addTeleportFavorite(int teleportId)
 	{
-		if (_teleportFavorites.add(teleportId))
+		if(_teleportFavorites.add(teleportId))
 		{
 			CharacterTeleportsDAO.getInstance().insert(this, teleportId);
 		}
@@ -15192,49 +14645,35 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeTeleportFavorite(int teleportId)
 	{
-		if (_teleportFavorites.remove(teleportId))
+		if(_teleportFavorites.remove(teleportId))
 		{
 			CharacterTeleportsDAO.getInstance().delete(getObjectId(), teleportId);
 		}
 	}
 
-	public int getPreviousPvpRank() 
+	public int getPreviousPvpRank()
 	{
-		return RankManager.getInstance().getOldPvpRankList().entrySet().stream()
-				.filter(entry -> entry.getValue().nCharId == getObjectId())
-				.map(Map.Entry::getKey)
-				.findFirst()
-				.orElse(0);
+		return RankManager.getInstance().getOldPvpRankList().entrySet().stream().filter(entry -> entry.getValue().nCharId
+				== getObjectId()).map(Map.Entry::getKey).findFirst().orElse(0);
 	}
 
-
-	private int getPvpRankPoints() 
+	private int getPvpRankPoints()
 	{
-		return RankManager.getInstance().getPvpRankList().values().stream()
-				.filter(player -> player.nCharId == getObjectId())
-				.mapToInt(player -> (int) player.nPVPPoint)
-				.findFirst()
-				.orElse(0);
+		return RankManager.getInstance().getPvpRankList().values().stream().filter(player -> player.nCharId
+				== getObjectId()).mapToInt(player -> (int) player.nPVPPoint).findFirst().orElse(0);
 	}
 
-	private int getPvpRankKills() 
+	private int getPvpRankKills()
 	{
-		return RankManager.getInstance().getPvpRankList().values().stream()
-				.filter(player -> player.nCharId == getObjectId())
-				.mapToInt(player -> player.nKillCount)
-				.findFirst()
-				.orElse(0);
+		return RankManager.getInstance().getPvpRankList().values().stream().filter(player -> player.nCharId
+				== getObjectId()).mapToInt(player -> player.nKillCount).findFirst().orElse(0);
 	}
 
-	private int getPvpRankDeaths() 
+	private int getPvpRankDeaths()
 	{
-		return RankManager.getInstance().getPvpRankList().values().stream()
-				.filter(player -> player.nCharId == getObjectId())
-				.mapToInt(player -> player.nDieCount)
-				.findFirst()
-				.orElse(0);
+		return RankManager.getInstance().getPvpRankList().values().stream().filter(player -> player.nCharId
+				== getObjectId()).mapToInt(player -> player.nDieCount).findFirst().orElse(0);
 	}
-
 
 	private void updatePvpRanking(Player killer)
 	{
@@ -15292,7 +14731,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		for(int i = 7; i > 0; i--)
 		{
 			final int j = i + 1;
-			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day",0);
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day", 0);
 			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day");
 			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_day", old_value);
 		}
@@ -15300,15 +14739,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		for(int i = 7; i > 0; i--)
 		{
 			final int j = i + 1;
-			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank",0);
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank", 0);
 			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank");
 			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_rank", old_value);
 		}
 
 		for(int i = 7; i > 0; i--)
 		{
-			final int j = i + 1;				
-			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp",0);
+			final int j = i + 1;
+			long old_value = getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp", 0);
 			unsetVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp");
 			setVar(PlayerVariables.RANKING_HISTORY_DAY + "_" + j + "_exp", old_value);
 		}
@@ -15339,21 +14778,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			DbUtils.closeQuietly(con, statement, rset);
 		}
 	}
-	
+
 	public void setCraftPoints(int craftPoints, String log)
 	{
 		craftPoints = Math.min(Config.LIM_CRAFT_POINTS, craftPoints);
-		if ((log != null) && !log.isEmpty())
+		if((log != null) && !log.isEmpty())
 		{
 			Log.add(_name + "|" + (craftPoints - _craftPoints) + "|" + craftPoints + "|" + log, "craftPoints");
 		}
-		if (craftPoints < _craftPoints)
+		if(craftPoints < _craftPoints)
 		{
 			setOnlyGainPoints(true);
 		}
 		_craftPoints = craftPoints;
 
-		if (Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		if(Config.RANDOM_CRAFT_SYSTEM_ENABLED)
 		{
 			sendPacket(new ExCraftInfo(this));
 		}
@@ -15366,11 +14805,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setCraftGaugePoints(int craftGaugePoints, String log)
 	{
-		if ((log != null) && !log.isEmpty())
+		if((log != null) && !log.isEmpty())
 		{
 			Log.add(_name + "|" + (craftGaugePoints - _craftGaugePoints) + "|" + craftGaugePoints + "|" + log, "craftGaugePoints");
 		}
-		if (craftGaugePoints < 1000000)
+		if(craftGaugePoints < 1000000)
 		{
 			_craftGaugePoints = craftGaugePoints;
 		}
@@ -15380,7 +14819,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			setCraftPoints(getCraftPoints() + (craftGaugePoints / 1000000), "Player");
 		}
 
-		if (Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		if(Config.RANDOM_CRAFT_SYSTEM_ENABLED)
 		{
 			sendPacket(new ExCraftInfo(this));
 		}
@@ -15413,22 +14852,22 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setSayhasGrace(int val, boolean send, boolean bonus)
 	{
-		if (bonus)
+		if(bonus)
 		{
 			val = (int) (val * (1. + getStat().calc(Stats.BLESSED_BY_SAYHA, 0., null, null)));
 			val = (int) (val * (1. + getStat().calc(Stats.VITAL_RATE, 0., null, null)));
 		}
 
 		int toAdd = getSayhasGrace() + val;
-		if (toAdd < 0)
+		if(toAdd < 0)
 		{
 			toAdd = 0;
 		}
-		if (getActiveSubClass() != null)
+		if(getActiveSubClass() != null)
 		{
 			getActiveSubClass().setSayhasGrace(toAdd);
 		}
-		if (send)
+		if(send)
 		{
 			sendPacket(new ExVitalityEffectInfo(this));
 			sendUserInfo(true);
@@ -15448,23 +14887,21 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public double getSayhasGraceBonus()
 	{
-		if (getLimitedSayhaGraceEndTime() > System.currentTimeMillis())
-		{
-			return Config.RATE_LIMITED_SAYHA_GRACE_EXP_MULTIPLIER;
-		}
+		if(getLimitedSayhaGraceEndTime() > System.currentTimeMillis())
+		{ return Config.RATE_LIMITED_SAYHA_GRACE_EXP_MULTIPLIER; }
 		return (getSayhasGrace() > 0) ? (hasPremiumAccount() ? Config.ALT_SAYHAS_GRACE_PA_RATE : Config.ALT_SAYHAS_GRACE_RATE) : 1.;
 	}
 
 	public void updateUserBonus()
 	{
 		int sgBonus = 0;
-		if (getSayhasGrace() > 0)
+		if(getSayhasGrace() > 0)
 		{
-			if (hasPremiumAccount())
+			if(hasPremiumAccount())
 			{
 				sgBonus = (int) (Config.ALT_SAYHAS_GRACE_PA_RATE * 100);
 			}
-			else if (getLimitedSayhaGraceEndTime() > System.currentTimeMillis())
+			else if(getLimitedSayhaGraceEndTime() > System.currentTimeMillis())
 			{
 				sgBonus = (int) Config.RATE_LIMITED_SAYHA_GRACE_EXP_MULTIPLIER * 100;
 			}
@@ -15479,19 +14916,19 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		int passives = 0;
 		int passiveBonuses = 0;
 
-		for (final SkillEntry skill : getAllSkills())
+		for(final SkillEntry skill : getAllSkills())
 		{
-			if (skill.getTemplate().isPassive())
+			if(skill.getTemplate().isPassive())
 			{
 				boolean isCond = false;
-				for (final Condition cond : skill.getTemplate().getConditions())
+				for(final Condition cond : skill.getTemplate().getConditions())
 				{
-					if ((cond != null) && (cond.getClass().getSimpleName() == "ConditionPlayerHasSayhasGrace"))
+					if((cond != null) && (cond.getClass().getSimpleName() == "ConditionPlayerHasSayhasGrace"))
 					{
-						for (final Func func : skill.getTemplate().getStatFuncs())
+						for(final Func func : skill.getTemplate().getStatFuncs())
 						{
 							final String name = func.stat.toString();
-							if (name.equalsIgnoreCase("exp_rate_multiplier"))
+							if(name.equalsIgnoreCase("exp_rate_multiplier"))
 							{
 								sgCounts++;
 								sgBonus += func.value * 100;
@@ -15501,12 +14938,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					}
 				}
 
-				if (!isCond)
+				if(!isCond)
 				{
-					for (final Func func : skill.getTemplate().getStatFuncs())
+					for(final Func func : skill.getTemplate().getStatFuncs())
 					{
 						final String name = func.stat.toString();
-						if (name.equalsIgnoreCase("exp_rate_multiplier"))
+						if(name.equalsIgnoreCase("exp_rate_multiplier"))
 						{
 							passives++;
 							passiveBonuses += func.value * 100;
@@ -15515,15 +14952,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 		}
-		for (final Abnormal abnormal : _effectList)
+		for(final Abnormal abnormal : _effectList)
 		{
 			final Skill skill = abnormal.getSkill();
-			for (final EffectTemplate eff : skill.getTemplate().getEffectTemplates(EffectUseType.NORMAL))
+			for(final EffectTemplate eff : skill.getTemplate().getEffectTemplates(EffectUseType.NORMAL))
 			{
-				for (final Func func : eff.getStatFuncs(this))
+				for(final Func func : eff.getStatFuncs(this))
 				{
 					final String name = func.stat.toString();
-					if (name.equalsIgnoreCase("exp_rate_multiplier"))
+					if(name.equalsIgnoreCase("exp_rate_multiplier"))
 					{
 						actives++;
 						activeBonuses += func.value * 100;
@@ -15541,7 +14978,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean setLimitedSayhaGraceEndTime(long endTime)
 	{
-		if (endTime > getVarLong(PlayerVariables.LIMITED_SAYHA_GRACE_ENDTIME, 0L))
+		if(endTime > getVarLong(PlayerVariables.LIMITED_SAYHA_GRACE_ENDTIME, 0L))
 		{
 			setVar(PlayerVariables.LIMITED_SAYHA_GRACE_ENDTIME, Long.valueOf(endTime));
 			updateUserBonus();
@@ -15558,7 +14995,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setSayhaGraceSupportEndTime(long endTime)
 	{
-		if (getVarLong(PlayerVariables.SAYHA_GRACE_SUPPORT_ENDTIME, 0) < System.currentTimeMillis())
+		if(getVarLong(PlayerVariables.SAYHA_GRACE_SUPPORT_ENDTIME, 0) < System.currentTimeMillis())
 		{
 			setVar(PlayerVariables.SAYHA_GRACE_SUPPORT_ENDTIME, Long.valueOf(endTime));
 			updateUserBonus();
@@ -15575,7 +15012,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	{
 		_magicLampPoints = value;
 
-		if (Config.MAGIC_LAMP_ENABLED)
+		if(Config.MAGIC_LAMP_ENABLED)
 		{
 			sendPacket(new ExMagicLampExpInfo(this));
 		}
@@ -15626,9 +15063,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public TIntSet getCollectionReward()
 	{
-		return getCollectionList().getCollectionsMap().keySet().stream().filter(k -> getVarInt(PlayerVariables.COLLECTION_REWARD_ENABLED_VAR + k, 0) > 0).collect(TIntHashSet::new, TIntHashSet::add, TIntHashSet::addAll);
+		return getCollectionList().getCollectionsMap().keySet().stream().filter(k -> getVarInt(PlayerVariables.COLLECTION_REWARD_ENABLED_VAR + k, 0)
+				> 0).collect(TIntHashSet::new, TIntHashSet::add, TIntHashSet::addAll);
 	}
-	
+
 	public void setCollectionFavorites(TIntSet collectionFavorites)
 	{
 		_collectionFavorites = collectionFavorites;
@@ -15641,7 +15079,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addCollectionFavorite(int collectionId)
 	{
-		if (_collectionFavorites.add(collectionId))
+		if(_collectionFavorites.add(collectionId))
 		{
 			CharacterCollectionFavoritesDAO.getInstance().insert(this, collectionId);
 		}
@@ -15649,7 +15087,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void removeCollectionFavorite(int collectionId)
 	{
-		if (_collectionFavorites.remove(collectionId))
+		if(_collectionFavorites.remove(collectionId))
 		{
 			CharacterCollectionFavoritesDAO.getInstance().delete(getObjectId(), collectionId);
 		}
@@ -15663,16 +15101,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void addAbnormalBoard()
 	{
 		final int rank = RankManager.getInstance().getPlayerRaceRank(this);
-		if ((rank > 0) && (rank < 4))
+		if((rank > 0) && (rank < 4))
 		{
 			startAbnormalEffect(AbnormalEffect.BOARD_RANKER);
 		}
 		else
 		{
 			final SkillEntry skill = getKnownSkill(47101); // Elemental Spirit
-			if (skill != null)
+			if(skill != null)
 			{
-				switch (skill.getLevel())
+				switch(skill.getLevel())
 				{
 					case 1:
 					{
@@ -15710,14 +15148,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void addKilledMob()
 	{
-		if (getClan() == null)
-		{
-			return;
-		}
+		if(getClan() == null)
+		{ return; }
 
 		_killedMobs = getVarInt(PlayerVariables.KILLED_MOBS, 0) + 1;
 
-		if (Config.CLAN_KILLED_MOBS_TO_POINT <= _killedMobs)
+		if(Config.CLAN_KILLED_MOBS_TO_POINT <= _killedMobs)
 		{
 			_killedMobs -= Config.CLAN_KILLED_MOBS_TO_POINT;
 			getClan().setPoints(getClan().getPoints() + 1);
@@ -15733,16 +15169,16 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void generateSteadyBox(boolean hide)
 	{
 		final int slots = getVarInt(PlayerVariables.SB_BOX_SLOTS, 1);
-		for (int i = 1; i <= slots; i++)
+		for(int i = 1; i <= slots; i++)
 		{
-			if (getVarLong(PlayerVariables.SB_REWARD_TIME + "_" + i, -2) == -2)
+			if(getVarLong(PlayerVariables.SB_REWARD_TIME + "_" + i, -2) == -2)
 			{
 				final int killedMobs = getVarInt(PlayerVariables.SB_KILLED_MOBS, 0);
 				final int killedPlayers = getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0);
 
-				if ((killedMobs == Config.STEADY_BOX_KILL_MOBS) || (killedPlayers == Config.STEADY_BOX_KILL_PLAYERS))
+				if((killedMobs == Config.STEADY_BOX_KILL_MOBS) || (killedPlayers == Config.STEADY_BOX_KILL_PLAYERS))
 				{
-					if (killedMobs == Config.STEADY_BOX_KILL_MOBS)
+					if(killedMobs == Config.STEADY_BOX_KILL_MOBS)
 					{
 						setVar(PlayerVariables.SB_KILLED_MOBS, 0);
 					}
@@ -15753,11 +15189,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					setVar(PlayerVariables.SB_REWARD_TIME + "_" + i, -1);
 					int boxType = 1;
 					final int chance = Rnd.get(100);
-					if (chance > 30)
+					if(chance > 30)
 					{
 						boxType = 1;
 					}
-					else if (chance > 5)
+					else if(chance > 5)
 					{
 						boxType = 2;
 					}
@@ -15770,7 +15206,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 				}
 			}
 		}
-		if (hide)
+		if(hide)
 		{
 			sendPacket(new ExSteadyBoxUIInit(this));
 		}
@@ -15782,13 +15218,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void checkElementalInfo()
 	{
-		if (getActiveElement() == ElementalElement.NONE)
+		if(getActiveElement() == ElementalElement.NONE)
 		{
 			setActiveElement(ElementalElement.FIRE);
-			for (final ElementalElement element : ElementalElement.VALUES)
+			for(final ElementalElement element : ElementalElement.VALUES)
 			{
 				final Elemental elemental = getElementalList().get(element);
-				if (elemental != null)
+				if(elemental != null)
 				{
 					elemental.setEvolutionLevel(1);
 				}
@@ -15811,12 +15247,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	@Override
 	public boolean isBlockedSkill(SkillInfo skillInfo)
 	{
-		for (final Skill skill : blockedSkills)
+		for(final Skill skill : blockedSkills)
 		{
-			if ((skillInfo.getId() == skill.getId()) && (skillInfo.getLevel() >= skill.getLevel()))
-			{
-				return true;
-			}
+			if((skillInfo.getId() == skill.getId()) && (skillInfo.getLevel() >= skill.getLevel()))
+			{ return true; }
 		}
 		return false;
 	}
@@ -15824,10 +15258,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void blockSkills(Skill skill)
 	{
 		final List<Skill> skills = SkillAcquireHolder.getInstance().getBlockedSkills(this, skill);
-		for (final Skill s : skills)
+		for(final Skill s : skills)
 		{
 			final SkillEntry knownSkill = getKnownSkill(s.getId());
-			if ((knownSkill != null) && (knownSkill.getLevel() >= s.getLevel()))
+			if((knownSkill != null) && (knownSkill.getLevel() >= s.getLevel()))
 			{
 				removeSkill(knownSkill, false);
 				blockedKnownSkills.put(knownSkill.getId(), knownSkill);
@@ -15839,11 +15273,11 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void unblockSkills(Skill skill)
 	{
 		final List<Skill> skills = SkillAcquireHolder.getInstance().getBlockedSkills(this, skill);
-		for (final Skill s : skills)
+		for(final Skill s : skills)
 		{
 			blockedSkills.remove(s);
 			final SkillEntry knownSkill = blockedKnownSkills.get(s.getId());
-			if ((knownSkill != null) && (knownSkill.getLevel() >= s.getLevel()))
+			if((knownSkill != null) && (knownSkill.getLevel() >= s.getLevel()))
 			{
 				blockedKnownSkills.remove(s.getId());
 				addSkill(knownSkill);
@@ -15876,7 +15310,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void startRooted()
 	{
-		if (!isImmobilized())
+		if(!isImmobilized())
 		{
 			getFlags().getImmobilized().start();
 		}
@@ -15885,7 +15319,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void stopRooted()
 	{
-		if (isImmobilized())
+		if(isImmobilized())
 		{
 			getFlags().getImmobilized().stop();
 		}
@@ -15894,17 +15328,17 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public void handleHeroesForFightClub(boolean add)
 	{
 		final boolean hero = isHero() && isBaseClassActive();
-		for (final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(hero ? this : null, AcquireType.HERO))
+		for(final SkillLearn sl : SkillAcquireHolder.getInstance().getAvailableMaxLvlSkills(hero ? this : null, AcquireType.HERO))
 		{
 			final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
 				continue;
 			}
 
-			if (hero)
+			if(hero)
 			{
-				if (getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
+				if(getSkillLevel(skillEntry.getId()) < skillEntry.getLevel())
 				{
 					addSkill(skillEntry, true);
 				}
@@ -15924,10 +15358,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public boolean isInFightClub()
 	{
 		AbstractFightClub event = getFightClubEvent();
-		if (event == null)
-		{
-			return false;
-		}
+		if(event == null)
+		{ return false; }
 		return event.getFightClubPlayer(this) != null;
 	}
 
@@ -15959,45 +15391,834 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private int _announceType = 1;
 	private final Map<ItemHolder, Integer> _peelitems = new ConcurrentHashMap<>();
 
-		private final int[] _blueItems =
-		{
-			287,7889,2626,91900,7893,234,175,7901,171,210,268,97,91885,79,7883,243,91,264,142,229,92,91901,7900,267,7892,148,94884,284,91886,300,78,93429,93432,93430, //
-			93435,95307,93427,93425,93433,93424,93426,93428,93423,93434,93422,93431,95012,94925,95019,94947,95002,94926,95326,95311,95021,95306,94951,95418,95032, //
-			95318,95042,94918,93538,93539,93540,93526,93528,93527,93550,93551,93552,93502,93506,93511,93514,93517,94934,93541,93542,93543,93529,93530,93531,93553, //
-			93554,93555,93507,93512,93515,93518,95132,95131,93535,93536,93537,93532,93534,93533,93513,93504,93501,93508,93519,93510,93523,93524,93525,93520,93521, //
-			93522,93516,93505,93503,93509,93544,93546,93545,93547,93548,93549,95997,95996,95998,95978,95980,95979,95975,95977,95976,95972,95974,95973,95981,95983, //
-			95982,95942,95954,95953,95955,95944,95941,95948,95951,95959,95950,95952,95947,95966,95968,95967,95963,95965,95964,95960,95962,95961,95969,95971,95970, //
-			95956,95958,95957,95946,95945,95943,95949,95990,95992,95991,95984,95986,95985,95987,95989,95988,95993,95995,95994,110,5734,5736,5735,2439,601,5738,5740, //
-			5739,358,2398,2399,2404,2391,2392,2381,2403,2380,5718,5720,5719,90461,90463,90462,2487,2475,2416,2417,5722,5724,5723,90464,90466,90465,673,633,5730,5732, //
-			5731,5726,5728,5727,600,554,2397,2376,357,2384,2406,2390,5714,5716,5715,5710,5712,5711,2464,612,2402,2379,383,2388,90455,90457,90456,90458,90460,90459,2415, //
-			503,95380,95377,95408,95405,95395,95390,864,856,926,918,895,887,91953,91952,95719,95718,91032,91031,91033,91034,93500,93499,95599,95600,95601,95602,95603,95604, //
-			95605,95606,95607,95677,95678,95608,95609,95675,95610,95611,95612,95676,95621,95622,95623,95624,95625,95626,95628,95679,95680,95939,95940,93252,92975,92976,92977,92978,92979,92980,97147 //
-		};
-		private final int[] _redItems =
-		{
-			8938,8687,8686,8683,94886,91902,8678,8685,8679,8684,91887,8681,8680,8688,8682,5706,98,91889,7899,5705,80,5233,305,288,7884,289,7894,164,150,94885,236,151,213,235,269,2504, //
-			91904,7895,81,270,7902,212,91888,2500,91903,92966,92964,92963,92960,95420,92970,92955,92962,92956,92961,92967,92958,92957,92965,92959,92949,92932,92969,92953,92948,92930, //
-			92947,92944,92942,92950,92943,92951,92935,92933,95419,92939,92934,92937,92938,92940,92946,92972,92952,92931,92941,92954,92936,92968,92945,92971,92276,93120,92295,92297,92296, //
-			92298,92300,92299,92271,92266,92256,92262,92272,92267,92283,92285,92284,92286,92288,92287,92307,92309,92308,92310,92312,92311,92260,92292,92294,92293,92289,92291,92290,92268, //
-			92255,92263,92261,92265,92270,92280,92282,92281,92277,92279,92278,92269,92264,92257,92301,92303,92302,92304,92306,92305,2498,93094,5783,5785,5784,5786,5788,5787,2408,2394,374, //
-			2383,2409,2395,5771,5773,5772,5774,5776,5775,90473,90475,90474,90476,90478,90477,641,5780,5782,5781,5777,5779,5778,2400,365,2385,2382,2393,2407,5768,5770,5769,5765,5767,5766, //
-			2405,2389,388,90467,90469,90468,90470,90472,90471,95381,95425,95409,95429,95396,95394,871,862,933,924,902,893,93268,93269,93270,93271,93255,93256,93257,93258,95999,96000,9591, //
-			90890,90934,93448,93449,95613,95614,95615,95616,95617,95618,95619,95620,95627,93147,93148,93149,93150,93151,93152,93153,93154,93155,93156,93157,93158,93159,93160,93161,93162, //
-			93163,93167,93168,93169,93170,93171,93185,93186,93188,93189,93165,95686,96607,96608,96605,96606,96287,96288,96611,96612,96609,96610,94500,95543,94501,95544,94497,95540,94505, //
-			95548,94507,95550,94503,95546,94502,95545,94504,95547,95862,95870,96038,96052,95863,95871,95856,95864,93386,95506,93384,95504,96666,96678,96667,96679,96668,96680,93870,95514, //
-			93385,95505,94137,95519,93631,95510,95356,95640,95365,95366,95352,95353,93869,95513,96669,96681,96044,96058,96041,96055,94670,95554,94674,95558,94671,95555,96283,96284,96285, //
-			96286,94499,95542,96665,96677,94326,95531,94327,95532,95349,95568,94324,95529,95348,95567,94325,95530,95350,95351,96040,96054,96037,96051,96043,96057,93103,95503
-		};
-		private final int[] _purpleItems =
-		{
-			49683,49580,90763,6660,6661,6662,91550,90992,94383,94384,94385,94386,92404,92405,92407,92408,92421,94888,96268,93291,93292,93293,93294,93295,95422,96269,94263,94299,94301,94083, //
-			94085,93733,93734,93139,93140,93315,93316,93075,94264,94300,94302,94084,94086,93735,93736,93141,93142,93317,93318,93076,94840,94841,94844,94845,94848,94849,95932,95933,95934,95663, //
-			95665,94842,94843,94846,94847,94850,94851,95935,95936,95937,95664,95666,95725,95726,95727,95728,95729,95730,95731,95732,95733,95734,95735,95736,95737,96751,96752,96753,96754,96755, //
-			96756,96757,96758,96759,96760,96761,96762,96763,97242,97243,97244,93387,95507,96289,96290,96291,96292,96873,96887,96670,96682,95346,95565,97182,97191,94861,95562,96671, //
-			96683,97183,97192,94862,95563,96293,96294,96672,96684,97184,97193,96295,96296,94863,95564,94498,95541,95508,95551,94668,95552,94673,95557,97111,97119,95347,95566,95861,95869, //
-			95354,95355,85025
-		};
-		//@formatter:on
+	private final int[] _blueItems = {
+			287,
+			7889,
+			2626,
+			91900,
+			7893,
+			234,
+			175,
+			7901,
+			171,
+			210,
+			268,
+			97,
+			91885,
+			79,
+			7883,
+			243,
+			91,
+			264,
+			142,
+			229,
+			92,
+			91901,
+			7900,
+			267,
+			7892,
+			148,
+			94884,
+			284,
+			91886,
+			300,
+			78,
+			93429,
+			93432,
+			93430, //
+			93435,
+			95307,
+			93427,
+			93425,
+			93433,
+			93424,
+			93426,
+			93428,
+			93423,
+			93434,
+			93422,
+			93431,
+			95012,
+			94925,
+			95019,
+			94947,
+			95002,
+			94926,
+			95326,
+			95311,
+			95021,
+			95306,
+			94951,
+			95418,
+			95032, //
+			95318,
+			95042,
+			94918,
+			93538,
+			93539,
+			93540,
+			93526,
+			93528,
+			93527,
+			93550,
+			93551,
+			93552,
+			93502,
+			93506,
+			93511,
+			93514,
+			93517,
+			94934,
+			93541,
+			93542,
+			93543,
+			93529,
+			93530,
+			93531,
+			93553, //
+			93554,
+			93555,
+			93507,
+			93512,
+			93515,
+			93518,
+			95132,
+			95131,
+			93535,
+			93536,
+			93537,
+			93532,
+			93534,
+			93533,
+			93513,
+			93504,
+			93501,
+			93508,
+			93519,
+			93510,
+			93523,
+			93524,
+			93525,
+			93520,
+			93521, //
+			93522,
+			93516,
+			93505,
+			93503,
+			93509,
+			93544,
+			93546,
+			93545,
+			93547,
+			93548,
+			93549,
+			95997,
+			95996,
+			95998,
+			95978,
+			95980,
+			95979,
+			95975,
+			95977,
+			95976,
+			95972,
+			95974,
+			95973,
+			95981,
+			95983, //
+			95982,
+			95942,
+			95954,
+			95953,
+			95955,
+			95944,
+			95941,
+			95948,
+			95951,
+			95959,
+			95950,
+			95952,
+			95947,
+			95966,
+			95968,
+			95967,
+			95963,
+			95965,
+			95964,
+			95960,
+			95962,
+			95961,
+			95969,
+			95971,
+			95970, //
+			95956,
+			95958,
+			95957,
+			95946,
+			95945,
+			95943,
+			95949,
+			95990,
+			95992,
+			95991,
+			95984,
+			95986,
+			95985,
+			95987,
+			95989,
+			95988,
+			95993,
+			95995,
+			95994,
+			110,
+			5734,
+			5736,
+			5735,
+			2439,
+			601,
+			5738,
+			5740, //
+			5739,
+			358,
+			2398,
+			2399,
+			2404,
+			2391,
+			2392,
+			2381,
+			2403,
+			2380,
+			5718,
+			5720,
+			5719,
+			90461,
+			90463,
+			90462,
+			2487,
+			2475,
+			2416,
+			2417,
+			5722,
+			5724,
+			5723,
+			90464,
+			90466,
+			90465,
+			673,
+			633,
+			5730,
+			5732, //
+			5731,
+			5726,
+			5728,
+			5727,
+			600,
+			554,
+			2397,
+			2376,
+			357,
+			2384,
+			2406,
+			2390,
+			5714,
+			5716,
+			5715,
+			5710,
+			5712,
+			5711,
+			2464,
+			612,
+			2402,
+			2379,
+			383,
+			2388,
+			90455,
+			90457,
+			90456,
+			90458,
+			90460,
+			90459,
+			2415, //
+			503,
+			95380,
+			95377,
+			95408,
+			95405,
+			95395,
+			95390,
+			864,
+			856,
+			926,
+			918,
+			895,
+			887,
+			91953,
+			91952,
+			95719,
+			95718,
+			91032,
+			91031,
+			91033,
+			91034,
+			93500,
+			93499,
+			95599,
+			95600,
+			95601,
+			95602,
+			95603,
+			95604, //
+			95605,
+			95606,
+			95607,
+			95677,
+			95678,
+			95608,
+			95609,
+			95675,
+			95610,
+			95611,
+			95612,
+			95676,
+			95621,
+			95622,
+			95623,
+			95624,
+			95625,
+			95626,
+			95628,
+			95679,
+			95680,
+			95939,
+			95940,
+			93252,
+			92975,
+			92976,
+			92977,
+			92978,
+			92979,
+			92980,
+			97147 //
+	};
+	private final int[] _redItems = {
+			8938,
+			8687,
+			8686,
+			8683,
+			94886,
+			91902,
+			8678,
+			8685,
+			8679,
+			8684,
+			91887,
+			8681,
+			8680,
+			8688,
+			8682,
+			5706,
+			98,
+			91889,
+			7899,
+			5705,
+			80,
+			5233,
+			305,
+			288,
+			7884,
+			289,
+			7894,
+			164,
+			150,
+			94885,
+			236,
+			151,
+			213,
+			235,
+			269,
+			2504, //
+			91904,
+			7895,
+			81,
+			270,
+			7902,
+			212,
+			91888,
+			2500,
+			91903,
+			92966,
+			92964,
+			92963,
+			92960,
+			95420,
+			92970,
+			92955,
+			92962,
+			92956,
+			92961,
+			92967,
+			92958,
+			92957,
+			92965,
+			92959,
+			92949,
+			92932,
+			92969,
+			92953,
+			92948,
+			92930, //
+			92947,
+			92944,
+			92942,
+			92950,
+			92943,
+			92951,
+			92935,
+			92933,
+			95419,
+			92939,
+			92934,
+			92937,
+			92938,
+			92940,
+			92946,
+			92972,
+			92952,
+			92931,
+			92941,
+			92954,
+			92936,
+			92968,
+			92945,
+			92971,
+			92276,
+			93120,
+			92295,
+			92297,
+			92296, //
+			92298,
+			92300,
+			92299,
+			92271,
+			92266,
+			92256,
+			92262,
+			92272,
+			92267,
+			92283,
+			92285,
+			92284,
+			92286,
+			92288,
+			92287,
+			92307,
+			92309,
+			92308,
+			92310,
+			92312,
+			92311,
+			92260,
+			92292,
+			92294,
+			92293,
+			92289,
+			92291,
+			92290,
+			92268, //
+			92255,
+			92263,
+			92261,
+			92265,
+			92270,
+			92280,
+			92282,
+			92281,
+			92277,
+			92279,
+			92278,
+			92269,
+			92264,
+			92257,
+			92301,
+			92303,
+			92302,
+			92304,
+			92306,
+			92305,
+			2498,
+			93094,
+			5783,
+			5785,
+			5784,
+			5786,
+			5788,
+			5787,
+			2408,
+			2394,
+			374, //
+			2383,
+			2409,
+			2395,
+			5771,
+			5773,
+			5772,
+			5774,
+			5776,
+			5775,
+			90473,
+			90475,
+			90474,
+			90476,
+			90478,
+			90477,
+			641,
+			5780,
+			5782,
+			5781,
+			5777,
+			5779,
+			5778,
+			2400,
+			365,
+			2385,
+			2382,
+			2393,
+			2407,
+			5768,
+			5770,
+			5769,
+			5765,
+			5767,
+			5766, //
+			2405,
+			2389,
+			388,
+			90467,
+			90469,
+			90468,
+			90470,
+			90472,
+			90471,
+			95381,
+			95425,
+			95409,
+			95429,
+			95396,
+			95394,
+			871,
+			862,
+			933,
+			924,
+			902,
+			893,
+			93268,
+			93269,
+			93270,
+			93271,
+			93255,
+			93256,
+			93257,
+			93258,
+			95999,
+			96000,
+			9591, //
+			90890,
+			90934,
+			93448,
+			93449,
+			95613,
+			95614,
+			95615,
+			95616,
+			95617,
+			95618,
+			95619,
+			95620,
+			95627,
+			93147,
+			93148,
+			93149,
+			93150,
+			93151,
+			93152,
+			93153,
+			93154,
+			93155,
+			93156,
+			93157,
+			93158,
+			93159,
+			93160,
+			93161,
+			93162, //
+			93163,
+			93167,
+			93168,
+			93169,
+			93170,
+			93171,
+			93185,
+			93186,
+			93188,
+			93189,
+			93165,
+			95686,
+			96607,
+			96608,
+			96605,
+			96606,
+			96287,
+			96288,
+			96611,
+			96612,
+			96609,
+			96610,
+			94500,
+			95543,
+			94501,
+			95544,
+			94497,
+			95540,
+			94505, //
+			95548,
+			94507,
+			95550,
+			94503,
+			95546,
+			94502,
+			95545,
+			94504,
+			95547,
+			95862,
+			95870,
+			96038,
+			96052,
+			95863,
+			95871,
+			95856,
+			95864,
+			93386,
+			95506,
+			93384,
+			95504,
+			96666,
+			96678,
+			96667,
+			96679,
+			96668,
+			96680,
+			93870,
+			95514, //
+			93385,
+			95505,
+			94137,
+			95519,
+			93631,
+			95510,
+			95356,
+			95640,
+			95365,
+			95366,
+			95352,
+			95353,
+			93869,
+			95513,
+			96669,
+			96681,
+			96044,
+			96058,
+			96041,
+			96055,
+			94670,
+			95554,
+			94674,
+			95558,
+			94671,
+			95555,
+			96283,
+			96284,
+			96285, //
+			96286,
+			94499,
+			95542,
+			96665,
+			96677,
+			94326,
+			95531,
+			94327,
+			95532,
+			95349,
+			95568,
+			94324,
+			95529,
+			95348,
+			95567,
+			94325,
+			95530,
+			95350,
+			95351,
+			96040,
+			96054,
+			96037,
+			96051,
+			96043,
+			96057,
+			93103,
+			95503
+	};
+	private final int[] _purpleItems = {
+			49683,
+			49580,
+			90763,
+			6660,
+			6661,
+			6662,
+			91550,
+			90992,
+			94383,
+			94384,
+			94385,
+			94386,
+			92404,
+			92405,
+			92407,
+			92408,
+			92421,
+			94888,
+			96268,
+			93291,
+			93292,
+			93293,
+			93294,
+			93295,
+			95422,
+			96269,
+			94263,
+			94299,
+			94301,
+			94083, //
+			94085,
+			93733,
+			93734,
+			93139,
+			93140,
+			93315,
+			93316,
+			93075,
+			94264,
+			94300,
+			94302,
+			94084,
+			94086,
+			93735,
+			93736,
+			93141,
+			93142,
+			93317,
+			93318,
+			93076,
+			94840,
+			94841,
+			94844,
+			94845,
+			94848,
+			94849,
+			95932,
+			95933,
+			95934,
+			95663, //
+			95665,
+			94842,
+			94843,
+			94846,
+			94847,
+			94850,
+			94851,
+			95935,
+			95936,
+			95937,
+			95664,
+			95666,
+			95725,
+			95726,
+			95727,
+			95728,
+			95729,
+			95730,
+			95731,
+			95732,
+			95733,
+			95734,
+			95735,
+			95736,
+			95737,
+			96751,
+			96752,
+			96753,
+			96754,
+			96755, //
+			96756,
+			96757,
+			96758,
+			96759,
+			96760,
+			96761,
+			96762,
+			96763,
+			97242,
+			97243,
+			97244,
+			93387,
+			95507,
+			96289,
+			96290,
+			96291,
+			96292,
+			96873,
+			96887,
+			96670,
+			96682,
+			95346,
+			95565,
+			97182,
+			97191,
+			94861,
+			95562,
+			96671, //
+			96683,
+			97183,
+			97192,
+			94862,
+			95563,
+			96293,
+			96294,
+			96672,
+			96684,
+			97184,
+			97193,
+			96295,
+			96296,
+			94863,
+			95564,
+			94498,
+			95541,
+			95508,
+			95551,
+			94668,
+			95552,
+			94673,
+			95557,
+			97111,
+			97119,
+			95347,
+			95566,
+			95861,
+			95869, //
+			95354,
+			95355,
+			85025
+	};
+	//@formatter:on
 
 	public Map<ItemHolder, Integer> getItems()
 	{
@@ -16026,13 +16247,13 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private void restoreHenna()
 	{
 		_hennaPoten = CharacterHennaDAO.getInstance().restoreHenna(this);
-		for (HennaPoten henna : _hennaPoten)
+		for(HennaPoten henna : _hennaPoten)
 		{
-			if (henna.getHenna() != null)
+			if(henna.getHenna() != null)
 			{
-				for (Skill skill : henna.getHenna().getSkills())// Reward henna skills
+				for(Skill skill : henna.getHenna().getSkills())// Reward henna skills
 				{
-					if (skill.getLevel() > getSkillLevel(skill.getId()))
+					if(skill.getLevel() > getSkillLevel(skill.getId()))
 					{
 						addSkill(skill.getEntry(), false);
 					}
@@ -16047,16 +16268,12 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean removeHenna(int slot)
 	{
-		if ((slot < 1) || (slot > _hennaPoten.length))
-		{
-			return false;
-		}
+		if((slot < 1) || (slot > _hennaPoten.length))
+		{ return false; }
 
 		final Henna henna = _hennaPoten[slot - 1].getHenna();
-		if (henna == null)
-		{
-			return false;
-		}
+		if(henna == null)
+		{ return false; }
 
 		_hennaPoten[slot - 1].setHenna(null);
 
@@ -16066,18 +16283,18 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		sendPacket(new UserInfo(this, false).addComponentType(UserInfoType.BASE_STATS, UserInfoType.ADDITIONAL_STATS, UserInfoType.STATS_INCREASE, UserInfoType.MAX_HPCPMP, UserInfoType.STATS, UserInfoType.SPEED));
 
 		// Remove henna skills
-		for (Skill skill : henna.getSkills())
+		for(Skill skill : henna.getSkills())
 		{
 			removeSkill(skill, false);
 		}
 
-		for (HennaPoten h : _hennaPoten)
+		for(HennaPoten h : _hennaPoten)
 		{
-			if (h.getHenna() != null)
+			if(h.getHenna() != null)
 			{
-				for (Skill skill : h.getHenna().getSkills())// Reward henna skills
+				for(Skill skill : h.getHenna().getSkills())// Reward henna skills
 				{
-					if (skill.getLevel() > getSkillLevel(skill.getId()))
+					if(skill.getLevel() > getSkillLevel(skill.getId()))
 					{
 						addSkill(skill.getEntry(), false);
 					}
@@ -16091,12 +16308,10 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public boolean addHenna(int slotId, Henna henna, boolean enchant)
 	{
-		if (slotId > getAvailableHennaSlots())
-		{
-			return false;
-		}
+		if(slotId > getAvailableHennaSlots())
+		{ return false; }
 
-		if (_hennaPoten[slotId - 1].getHenna() == null)
+		if(_hennaPoten[slotId - 1].getHenna() == null)
 		{
 			_hennaPoten[slotId - 1].setHenna(henna);
 			recalcHennaStats();
@@ -16104,9 +16319,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 			CharacterHennaDAO.getInstance().addHenna(this, henna, slotId);
 
 			// Reward henna skills
-			for (Skill skill : henna.getSkills())
+			for(Skill skill : henna.getSkills())
 			{
-				if (skill.getLevel() > getSkillLevel(skill.getId()))
+				if(skill.getLevel() > getSkillLevel(skill.getId()))
 				{
 					addSkill(skill.getEntry(), false);
 				}
@@ -16123,27 +16338,25 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	public int getHennaEmptySlots()
 	{
 		int totalSlots = 0;
-		if (getClassId().level() == 1)
+		if(getClassId().level() == 1)
 		{
 			totalSlots = 2;
 		}
-		else if (getClassId().level() > 1)
+		else if(getClassId().level() > 1)
 		{
 			totalSlots = getAvailableHennaSlots();
 		}
 
-		for (int i = 0; i < _hennaPoten.length; i++)
+		for(int i = 0; i < _hennaPoten.length; i++)
 		{
-			if (_hennaPoten[i].getHenna() != null)
+			if(_hennaPoten[i].getHenna() != null)
 			{
 				totalSlots--;
 			}
 		}
 
-		if (totalSlots <= 0)
-		{
-			return 0;
-		}
+		if(totalSlots <= 0)
+		{ return 0; }
 
 		return totalSlots;
 	}
@@ -16151,15 +16364,15 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 	private void recalcHennaStats()
 	{
 		_hennaBaseStats.clear();
-		for (HennaPoten hennaPoten : _hennaPoten)
+		for(HennaPoten hennaPoten : _hennaPoten)
 		{
 			final Henna henna = hennaPoten.getHenna();
-			if (henna == null)
+			if(henna == null)
 			{
 				continue;
 			}
 
-			for (Entry<BaseStats, Integer> entry : henna.getBaseStats().entrySet())
+			for(Entry<BaseStats, Integer> entry : henna.getBaseStats().entrySet())
 			{
 				_hennaBaseStats.merge(entry.getKey(), entry.getValue(), Integer::sum);
 			}
@@ -16168,20 +16381,20 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void applyDyePotenSkills()
 	{
-		for (int i = 1; i <= _hennaPoten.length; i++)
+		for(int i = 1; i <= _hennaPoten.length; i++)
 		{
 			final HennaPoten hennaPoten = _hennaPoten[i - 1];
 
-			for (int skillId : HennaPatternPotentialDataHolder.getInstance().getSkillIdsBySlotId(i))
+			for(int skillId : HennaPatternPotentialDataHolder.getInstance().getSkillIdsBySlotId(i))
 			{
 				removeSkill(skillId, true);
 			}
 
-			if ((hennaPoten.getPotenId() > 0) && hennaPoten.isPotentialAvailable() && (hennaPoten.getActiveStep() > 0))
+			if((hennaPoten.getPotenId() > 0) && hennaPoten.isPotentialAvailable() && (hennaPoten.getActiveStep() > 0))
 			{
 				Skill hennaSkill = null;
 
-				if ((hennaPoten.getEnchantLevel() == 30) && (hennaPoten.getEnchantExp() == 2500))
+				if((hennaPoten.getEnchantLevel() == 30) && (hennaPoten.getEnchantExp() == 2500))
 				{
 					hennaSkill = HennaPatternPotentialDataHolder.getInstance().getPotentialSkill(hennaPoten.getPotenId(), i, hennaPoten.getActiveStep() + 1);
 				}
@@ -16190,9 +16403,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 					hennaSkill = HennaPatternPotentialDataHolder.getInstance().getPotentialSkill(hennaPoten.getPotenId(), i, hennaPoten.getActiveStep());
 				}
 
-				if (hennaSkill != null)
+				if(hennaSkill != null)
 				{
-					if (hennaSkill.getLevel() > getSkillLevel(hennaSkill.getId()))
+					if(hennaSkill.getLevel() > getSkillLevel(hennaSkill.getId()))
 					{
 						addSkill(hennaSkill.getEntry(), false);
 					}
@@ -16207,33 +16420,27 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public HennaPoten getHennaPoten(int slot)
 	{
-		if ((slot < 1) || (slot > _hennaPoten.length))
-		{
-			return null;
-		}
+		if((slot < 1) || (slot > _hennaPoten.length))
+		{ return null; }
 
 		return _hennaPoten[slot - 1];
 	}
 
 	public Henna getHenna(int slot)
 	{
-		if ((slot < 1) || (slot > getAvailableHennaSlots()))
-		{
-			return null;
-		}
+		if((slot < 1) || (slot > getAvailableHennaSlots()))
+		{ return null; }
 
 		return _hennaPoten[slot - 1].getHenna();
 	}
 
 	public boolean hasHennas()
 	{
-		for (HennaPoten hennaPoten : _hennaPoten)
+		for(HennaPoten hennaPoten : _hennaPoten)
 		{
 			final Henna henna = hennaPoten.getHenna();
-			if (henna != null)
-			{
-				return true;
-			}
+			if(henna != null)
+			{ return true; }
 		}
 		return false;
 	}
@@ -16326,7 +16533,7 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public int getChatBg()
 	{
-		return getVarInt("setChatBg", 0);  
+		return getVarInt("setChatBg", 0);
 	}
 
 	public boolean isUseChatBg()
@@ -16341,9 +16548,9 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 
 	public void setChatBg(int nCurrentChatBackground)
 	{
-		setVar("setChatBg", nCurrentChatBackground);	
+		setVar("setChatBg", nCurrentChatBackground);
 	}
-	
+
 	private ChallengeEffect _selectChallengePoint = ChallengeEffect.BLANK;
 
 	public void setEnchantChallengePoint(ChallengeEffect challengePoint)
@@ -16384,7 +16591,8 @@ public final class Player extends Playable implements PlayerGroup, HaveHwid
 		hennaPoten.setPotenId(_potenId);
 		CharacterHennaDAO.getInstance().storeDyePoten(this, hennaPoten, _slotId);
 
-		if(hennaPoten.getHenna() != null && hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500 && hennaPoten.getHenna().getPatternLevel() == 30)
+		if(hennaPoten.getHenna() != null && hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500
+				&& hennaPoten.getHenna().getPatternLevel() == 30)
 			sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep() + 1, true));
 		else
 			sendPacket(new NewHennaPotenSelect(_slotId, _potenId, hennaPoten.getActiveStep(), true));

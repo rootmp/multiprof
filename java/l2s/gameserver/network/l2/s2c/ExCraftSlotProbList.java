@@ -9,7 +9,7 @@ public class ExCraftSlotProbList implements IClientOutgoingPacket
 {
 	private int nSlot;
 	private List<RandomCraftRewardData> items;
-	
+
 	public ExCraftSlotProbList(int nSlot, List<RandomCraftRewardData> items)
 	{
 		this.nSlot = nSlot;

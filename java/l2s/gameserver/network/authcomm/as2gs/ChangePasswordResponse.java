@@ -30,14 +30,14 @@ public class ChangePasswordResponse extends ReceivablePacket
 	protected void runImpl()
 	{
 		GameClient client = AuthServerCommunication.getInstance().getAuthedClient(_account);
-		if (client == null)
+		if(client == null)
 			return;
 
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_changed)
+		if(_changed)
 			activeChar.sendPacket(new ExShowScreenMessage(new CustomMessage("scripts.commands.user.password.ResultTrue").toString(activeChar), 3000, ScreenMessageAlign.BOTTOM_CENTER, true));
 		else
 			activeChar.sendPacket(new ExShowScreenMessage(new CustomMessage("scripts.commands.user.password.ResultFalse").toString(activeChar), 3000, ScreenMessageAlign.BOTTOM_CENTER, true));

@@ -18,10 +18,10 @@ public final class i_delete_hate_of_me extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 
-		if (!effected.isMonster())
+		if(!effected.isMonster())
 			return false;
 
 		return true;

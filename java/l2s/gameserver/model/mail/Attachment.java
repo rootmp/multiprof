@@ -42,11 +42,11 @@ public class Attachment
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != this.getClass())
+		if(o.getClass() != this.getClass())
 			return false;
 		return ((Attachment) o).getItem() == getItem();
 	}

@@ -36,7 +36,7 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 		packetWriter.writeC(1); // max page
 		packetWriter.writeD(_size);
 
-		for (int i = 0; i < _size; i++)
+		for(int i = 0; i < _size; i++)
 		{
 			final LimitedShopEntry entry = _list.get(i);
 			LimitedShopProduction product = entry.getProduction().get(0);
@@ -45,38 +45,37 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 			packetWriter.writeD(product.getInfo().getInteger("product1Id"));
 
 			int ingredientsSize = entry.getIngredients().size();
-			if ((ingredientsSize > 5) || (ingredientsSize == 0))
-			{
-				return true;
-			}
+			if((ingredientsSize > 5) || (ingredientsSize == 0))
+			{ return true; }
 
-			for (LimitedShopIngredient ingredient : entry.getIngredients())
+			for(LimitedShopIngredient ingredient : entry.getIngredients())
 			{
 				packetWriter.writeD(ingredient.getItemId());
 			}
-			for (int j = 5; j > ingredientsSize; j--)
+			for(int j = 5; j > ingredientsSize; j--)
 			{
 				packetWriter.writeD(0);
 			}
 
-			for (LimitedShopIngredient ingredient : entry.getIngredients())
+			for(LimitedShopIngredient ingredient : entry.getIngredients())
 			{
 				packetWriter.writeQ(ingredient.getItemCount());
 			}
-			for (int j = 5; j > ingredientsSize; j--)
+			for(int j = 5; j > ingredientsSize; j--)
 			{
 				packetWriter.writeQ(0);
 			}
 
-			for (LimitedShopIngredient ingredient : entry.getIngredients())
+			for(LimitedShopIngredient ingredient : entry.getIngredients())
 			{
 				packetWriter.writeH(ingredient.getEnchantLevel());
 			}
-			for (int j = 5; j > ingredientsSize; j--)
+			for(int j = 5; j > ingredientsSize; j--)
 			{
 				packetWriter.writeH(0); // sCostItemEnchantment
 			}
-			packetWriter.writeD(_player.getVarInt(PlayerVariables.LIMIT_ITEM_REMAIN + "_" + product.getInfo().getInteger("product1Id"), product.getInfo().getInteger("dailyLimit"))); // nRemainItemAmount
+			packetWriter.writeD(_player.getVarInt(PlayerVariables.LIMIT_ITEM_REMAIN + "_"
+					+ product.getInfo().getInteger("product1Id"), product.getInfo().getInteger("dailyLimit"))); // nRemainItemAmount
 			packetWriter.writeD(0); // nRemainSec
 			packetWriter.writeD(0); // remain server item amount
 			packetWriter.writeH(0); // circle num

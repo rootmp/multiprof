@@ -5,12 +5,12 @@ public class ShortCut
 	public enum ShortCutType
 	{
 		/* 0 */NONE,
-		/* 1 */ITEM,// ddddddddd
-		/* 2 */SKILL,// dddcd
-		/* 3 */ACTION,// dd
-		/* 4 */MACRO,// dd
-		/* 5 */RECIPE,// dd
-		/* 6 */TPBOOKMARK,// dd
+		/* 1 */ITEM, // ddddddddd
+		/* 2 */SKILL, // dddcd
+		/* 3 */ACTION, // dd
+		/* 4 */MACRO, // dd
+		/* 5 */RECIPE, // dd
+		/* 6 */TPBOOKMARK, // dd
 		/* 7 */ATTRIBUTE,
 		/* 8 */DELETED_ITEM;// ddddddddd
 

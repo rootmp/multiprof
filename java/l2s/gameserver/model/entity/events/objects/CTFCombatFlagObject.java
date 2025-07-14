@@ -28,7 +28,7 @@ public class CTFCombatFlagObject implements SpawnableObject, FlagItemAttachment
 	@Override
 	public void spawnObject(Event event, Reflection reflection)
 	{
-		if (_item != null)
+		if(_item != null)
 		{
 			_log.info("FortressCombatFlagObject: can't spawn twice: " + event);
 			return;
@@ -47,12 +47,11 @@ public class CTFCombatFlagObject implements SpawnableObject, FlagItemAttachment
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (_item == null) {
-			return;
-		}
-		
+		if(_item == null)
+		{ return; }
+
 		Player owner = GameObjectsStorage.getPlayer(_item.getOwnerId());
-		if (owner != null)
+		if(owner != null)
 		{
 			owner.getInventory().destroyItem(_item);
 			owner.sendDisarmMessage(_item);
@@ -103,11 +102,11 @@ public class CTFCombatFlagObject implements SpawnableObject, FlagItemAttachment
 	public boolean canCast(Player player, Skill skill)
 	{
 		ItemTemplate weaponTemplate = player.getActiveWeaponTemplate();
-		if (weaponTemplate != null)
+		if(weaponTemplate != null)
 		{
-			for (SkillEntry skillEntry : weaponTemplate.getAttachedSkills())
+			for(SkillEntry skillEntry : weaponTemplate.getAttachedSkills())
 			{
-				if (skillEntry.getTemplate().equals(skill))
+				if(skillEntry.getTemplate().equals(skill))
 					return true;
 			}
 		}

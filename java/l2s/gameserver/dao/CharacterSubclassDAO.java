@@ -55,7 +55,7 @@ public class CharacterSubclassDAO
 			statement.setInt(15, points);
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterSubclassDAO:insert(player)", e);
 			return false;
@@ -80,7 +80,7 @@ public class CharacterSubclassDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, player.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				SubClass subClass = new SubClass(player);
 				// Порядок не менять, будут плохие последствия!
@@ -97,7 +97,7 @@ public class CharacterSubclassDAO
 				result.add(subClass);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterSubclassDAO:restore(player)", e);
 		}
@@ -118,7 +118,7 @@ public class CharacterSubclassDAO
 			statement = con.createStatement();
 
 			StringBuilder sb;
-			for (SubClass subClass : player.getSubClassList().values())
+			for(SubClass subClass : player.getSubClassList().values())
 			{
 				sb = new StringBuilder("UPDATE character_subclasses SET ");
 				sb.append("exp=").append(subClass.getExp()).append(",");
@@ -142,7 +142,7 @@ public class CharacterSubclassDAO
 			sb.append(" WHERE char_obj_id=").append(player.getObjectId()).append(" AND active=1 LIMIT 1");
 			statement.executeUpdate(sb.toString());
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterSubclassDAO:store(player)", e);
 			return false;

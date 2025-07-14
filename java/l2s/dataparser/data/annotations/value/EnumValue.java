@@ -15,8 +15,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EnumValue
-{
+public @interface EnumValue {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -33,7 +32,7 @@ public @interface EnumValue
 	 * @return true - поиск по шаблону, false - поиск по имени
 	 */
 	boolean withoutName() default false;
-	
+
 	/**
 	 * <p/>
 	 * Если true - в поиск строкового значения не будут включены символы [] Если
@@ -42,9 +41,12 @@ public @interface EnumValue
 	 * @return true - поиск без [], false - стандартный поиск
 	 */
 	boolean withoutBounds() default false;
-	
+
 	char[] replaceChars() default {};
+
 	String customRegex() default "";
+
 	String customRegexNoCache() default "";
+
 	boolean log() default false;
 }

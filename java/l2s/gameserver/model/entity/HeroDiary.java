@@ -34,7 +34,7 @@ public class HeroDiary
 	public Map.Entry<String, String> toString(Player player)
 	{
 		CustomMessage message = null;
-		switch (_id)
+		switch(_id)
 		{
 			case ACTION_RAID_KILLED:
 				message = new CustomMessage("l2s.gameserver.model.entity.Hero.RaidBossKilled").addString(HtmlUtils.htmlNpcName(_param));

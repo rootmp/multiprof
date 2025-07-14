@@ -15,7 +15,7 @@ public class OlympiadHeroInfo
 	public int nDrawCount;
 	public int nOlympiadPoint;
 	public int nPledgeLevel;
-	
+
 	public OlympiadHeroInfo()
 	{
 		sCharName = "";

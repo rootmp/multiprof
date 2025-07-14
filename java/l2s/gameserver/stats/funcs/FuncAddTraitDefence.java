@@ -19,7 +19,7 @@ public class FuncAddTraitDefence extends Func
 	@Override
 	public void calc(Env env, StatModifierType modifierType)
 	{
-		if (value >= 100)
+		if(value >= 100)
 			env.value = Double.POSITIVE_INFINITY;
 		env.value += value;
 	}

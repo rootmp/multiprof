@@ -15,7 +15,7 @@ public final class EffectHpToOne extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 		return true;
 	}

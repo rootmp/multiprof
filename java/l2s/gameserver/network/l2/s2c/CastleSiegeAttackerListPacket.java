@@ -48,7 +48,7 @@ public class CastleSiegeAttackerListPacket implements IClientOutgoingPacket
 		_id = residence.getId();
 
 		SiegeEvent<?, ?> siegeEvent = residence.getSiegeEvent();
-		if (siegeEvent != null)
+		if(siegeEvent != null)
 		{
 			_registrationValid = !siegeEvent.isRegistrationOver() ? 1 : 0;
 			_clans = siegeEvent.getObjects(SiegeEvent.ATTACKERS);
@@ -67,7 +67,7 @@ public class CastleSiegeAttackerListPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_clans.size());
 		packetWriter.writeD(_clans.size());
 
-		for (SiegeClanObject siegeClan : _clans)
+		for(SiegeClanObject siegeClan : _clans)
 		{
 			Clan clan = siegeClan.getClan();
 
@@ -79,7 +79,7 @@ public class CastleSiegeAttackerListPacket implements IClientOutgoingPacket
 
 			Alliance alliance = clan.getAlliance();
 			packetWriter.writeD(clan.getAllyId());
-			if (alliance != null)
+			if(alliance != null)
 			{
 				packetWriter.writeS(alliance.getAllyName());
 				packetWriter.writeS(alliance.getAllyLeaderName());

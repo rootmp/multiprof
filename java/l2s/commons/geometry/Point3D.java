@@ -6,8 +6,7 @@ public class Point3D extends Point2D
 	public int z;
 
 	public Point3D()
-	{
-	}
+	{}
 
 	public Point3D(int x, int y, int z)
 	{
@@ -29,11 +28,11 @@ public class Point3D extends Point2D
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != getClass())
+		if(o.getClass() != getClass())
 			return false;
 		return equals((Point3D) o);
 	}

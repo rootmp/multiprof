@@ -41,7 +41,7 @@ public class EffectDamageHealToEffector extends EffectHandler
 			public void onCurrentHpDamage(Creature actor, double damage, Creature attacker, Skill skill)
 			{
 				Creature effector = _effectorRef.get();
-				if (effector == null)
+				if(effector == null)
 					return;
 
 				final List<Servitor> servitors = _healServitors ? effector.getServitors() : Collections.emptyList();
@@ -49,22 +49,22 @@ public class EffectDamageHealToEffector extends EffectHandler
 				final double hp = (damage * _hpAbsorbPercent / 100) / (servitors.size() + 1);
 				final double mp = (damage * _mpAbsorbPercent / 100) / (servitors.size() + 1);
 
-				for (Servitor servitor : servitors)
+				for(Servitor servitor : servitors)
 				{
-					if (hp > 0)
+					if(hp > 0)
 						servitor.setCurrentHp(servitor.getCurrentHp() + hp, false);
 
-					if (mp > 0)
+					if(mp > 0)
 						servitor.setCurrentMp(servitor.getCurrentMp() + mp);
 				}
 
-				if (hp > 0)
+				if(hp > 0)
 				{
 					effector.setCurrentHp(effector.getCurrentHp() + hp, false);
 					effector.sendPacket(new SystemMessagePacket(SystemMsg.S1_HP_HAS_BEEN_RESTORED).addInteger(Math.round(hp)));
 				}
 
-				if (mp > 0)
+				if(mp > 0)
 				{
 					effector.setCurrentMp(effector.getCurrentMp() + mp);
 					effector.sendPacket(new SystemMessagePacket(SystemMsg.S1_MP_HAS_BEEN_RESTORED).addInteger(Math.round(mp)));
@@ -89,7 +89,7 @@ public class EffectDamageHealToEffector extends EffectHandler
 		@Override
 		public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 		{
-			if (effected.isDead())
+			if(effected.isDead())
 				effected.removeListener(_damageListener);
 
 			return super.onActionTime(abnormal, effector, effected);

@@ -21,28 +21,28 @@ public class ConditionPlayerSummonSiegeGolem extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Player player = env.character.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
 		Zone zone = player.getZone(Zone.ZoneType.RESIDENCE);
-		if (zone != null)
+		if(zone != null)
 			return false;
 
 		zone = player.getZone(Zone.ZoneType.SIEGE);
-		if (zone == null)
+		if(zone == null)
 			return false;
 
-		for (SiegeEvent<?, ?> event : player.getEvents(SiegeEvent.class))
+		for(SiegeEvent<?, ?> event : player.getEvents(SiegeEvent.class))
 		{
-			if (event instanceof CastleSiegeEvent)
+			if(event instanceof CastleSiegeEvent)
 			{
-				if (zone.getParams().getInteger("residence") == event.getId())
+				if(zone.getParams().getInteger("residence") == event.getId())
 				{
-					if (event.getSiegeClan(CastleSiegeEvent.ATTACKERS, player.getClan()) != null)
+					if(event.getSiegeClan(CastleSiegeEvent.ATTACKERS, player.getClan()) != null)
 						return true;
 				}
 			}
-			else if (event.getSiegeClan(CastleSiegeEvent.DEFENDERS, player.getClan()) != null)
+			else if(event.getSiegeClan(CastleSiegeEvent.DEFENDERS, player.getClan()) != null)
 				return true;
 		}
 		return false;

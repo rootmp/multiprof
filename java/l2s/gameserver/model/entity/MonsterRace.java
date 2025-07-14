@@ -26,7 +26,7 @@ public class MonsterRace
 
 	public static MonsterRace getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new MonsterRace();
 		return _instance;
 	}
@@ -35,20 +35,20 @@ public class MonsterRace
 	{
 		int random = 0;
 
-		for (int i = 0; i < 8; i++)
+		for(int i = 0; i < 8; i++)
 		{
 			int id = 31003;
 			random = Rnd.get(24);
-			for (int j = i - 1; j >= 0; j--)
+			for(int j = i - 1; j >= 0; j--)
 			{
-				if (monsters[j].getNpcId() == id + random)
+				if(monsters[j].getNpcId() == id + random)
 					random = Rnd.get(24);
 			}
 			try
 			{
 				monsters[i] = NpcUtils.newInstance(id + random);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -62,25 +62,25 @@ public class MonsterRace
 		int total = 0;
 		first[1] = 0;
 		second[1] = 0;
-		for (int i = 0; i < 8; i++)
+		for(int i = 0; i < 8; i++)
 		{
 			total = 0;
-			for (int j = 0; j < 20; j++)
+			for(int j = 0; j < 20; j++)
 			{
-				if (j == 19)
+				if(j == 19)
 					speeds[i][j] = 100;
 				else
 					speeds[i][j] = Rnd.get(65, 124);
 				total += speeds[i][j];
 			}
-			if (total >= first[1])
+			if(total >= first[1])
 			{
 				second[0] = first[0];
 				second[1] = first[1];
 				first[0] = 8 - i;
 				first[1] = total;
 			}
-			else if (total >= second[1])
+			else if(total >= second[1])
 			{
 				second[0] = 8 - i;
 				second[1] = total;

@@ -30,12 +30,12 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 		{
 			super(0);
 			OlympiadManager manager = Olympiad._manager;
-			if (manager != null)
+			if(manager != null)
 			{
 				_arenaList = new ArrayList<>();
-				for (OlympiadGame game : manager.getGames())
+				for(OlympiadGame game : manager.getGames())
 				{
-					if (game.getState() > OlympiadGame.NONE_STATE)
+					if(game.getState() > OlympiadGame.NONE_STATE)
 					{
 						_arenaList.add(new ArenaInfo(game.getId(), game.getState(), game.getType().ordinal(), game.getTeamName1(), game.getTeamName2()));
 					}
@@ -55,7 +55,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 			super.write(packetWriter);
 			packetWriter.writeD(_arenaList.size());
 			packetWriter.writeD(0x00); // unknown
-			for (ArenaInfo arena : _arenaList)
+			for(ArenaInfo arena : _arenaList)
 			{
 				packetWriter.writeD(arena._id);
 				packetWriter.writeD(arena._matchType);
@@ -104,11 +104,11 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 
 		public void addPlayer(TeamType team, String name, String clanName, int clanId, int classId, int damage, int points, int resultPoints, int arenaIndex)
 		{
-			if ((team == winnerTeam) || ((winnerTeam == TeamType.NONE) && (team == TeamType.BLUE)))
+			if((team == winnerTeam) || ((winnerTeam == TeamType.NONE) && (team == TeamType.BLUE)))
 			{
 				teamOne.add(new PlayerInfo(name, clanName, clanId, classId, damage, points, resultPoints, arenaIndex));
 			}
-			else if ((team == winnerTeam.revert()) || ((winnerTeam == TeamType.NONE) && (team == TeamType.RED)))
+			else if((team == winnerTeam.revert()) || ((winnerTeam == TeamType.NONE) && (team == TeamType.RED)))
 			{
 				teamTwo.add(new PlayerInfo(name, clanName, clanId, classId, damage, points, resultPoints, arenaIndex));
 			}
@@ -122,8 +122,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 			packetWriter.writeS(winnerTopDamagerName);
 			packetWriter.writeD(1); // Team type
 			packetWriter.writeD(teamOne.size());
-			teamOne.forEach(p ->
-			{
+			teamOne.forEach(p -> {
 				packetWriter.writeS(p.name);
 				packetWriter.writeS(p.clanName);
 				packetWriter.writeD(p.pledgeId);
@@ -135,8 +134,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 			});
 			packetWriter.writeD(2); // Team type
 			packetWriter.writeD(teamTwo.size());
-			teamTwo.forEach(p ->
-			{
+			teamTwo.forEach(p -> {
 				packetWriter.writeS(p.name);
 				packetWriter.writeS(p.clanName);
 				packetWriter.writeD(p.pledgeId);
@@ -188,7 +186,7 @@ public abstract class ExReceiveOlympiadPacket implements IClientOutgoingPacket
 				opcodes.writeShortLE(exOpcode);
 			return opcodes.retain();
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{

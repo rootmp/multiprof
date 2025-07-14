@@ -16,7 +16,7 @@ public class ExCleftState implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(CleftState);
-		switch (CleftState)
+		switch(CleftState)
 		{
 			case CleftState_Total:
 				// dddddSS - BTeam Point:%d CatID:%d CatName:%s RemainSec:%d RTeam Point:%d

@@ -21,7 +21,7 @@ public class HWIDBan
 
 	public static HWIDBan getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new HWIDBan();
 		return _instance;
 	}
@@ -37,14 +37,14 @@ public class HWIDBan
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM ban_hwid");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				hwid = rset.getString("hwid");
-				if (hwid != "")
+				if(hwid != "")
 					_banList.add(hwid);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("not loaded?");
 		}
@@ -66,7 +66,7 @@ public class HWIDBan
 			statement.setString(1, hwid);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			// fuck the what don't care
 		}
@@ -89,7 +89,7 @@ public class HWIDBan
 			statement.setString(1, hwid);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			// fuck the what don't care
 		}

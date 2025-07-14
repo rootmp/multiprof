@@ -23,7 +23,7 @@ public class EnableUserRelationTask implements Runnable
 	public void run()
 	{
 		Player player = _playerRef.get();
-		if (player == null)
+		if(player == null)
 			return;
 
 		// _siegeEvent.removeBlockFame(player);

@@ -20,32 +20,32 @@ public class Sweep extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (isNotTargetAoE())
+		if(isNotTargetAoE())
 			return true;
 
-		if (target == null)
+		if(target == null)
 			return false;
 
-		if (!target.isMonster() || !target.isDead())
+		if(!target.isMonster() || !target.isDead())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
 		final MonsterInstance monter = (MonsterInstance) target;
-		if (monter.isSweeped())
+		if(monter.isSweeped())
 			return false;
 
-		if (!monter.isSpoiled())
+		if(!monter.isSpoiled())
 		{
 			activeChar.sendPacket(SystemMsg.SWEEPER_FAILED_TARGET_NOT_SPOILED);
 			return false;
 		}
 
-		if (!monter.isSpoiled((Player) activeChar))
+		if(!monter.isSpoiled((Player) activeChar))
 		{
 			activeChar.sendPacket(SystemMsg.THERE_ARE_NO_PRIORITY_RIGHTS_ON_A_SWEEPER);
 			return false;
@@ -57,18 +57,18 @@ public class Sweep extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
-		if (target == null || !target.isMonster() || !target.isDead())
+		if(target == null || !target.isMonster() || !target.isDead())
 			return;
 
 		final MonsterInstance monter = (MonsterInstance) target;
-		if (monter.isSweeped() || !monter.isSpoiled())
+		if(monter.isSweeped() || !monter.isSpoiled())
 			return;
 
 		final Player player = activeChar.getPlayer();
-		if (!monter.isSpoiled(player))
+		if(!monter.isSpoiled(player))
 		{
 			activeChar.sendPacket(SystemMsg.THERE_ARE_NO_PRIORITY_RIGHTS_ON_A_SWEEPER);
 			return;
@@ -80,13 +80,13 @@ public class Sweep extends Skill
 	@Override
 	public void onFinishCast(Creature aimingTarget, Creature activeChar, Set<Creature> targets)
 	{
-		for (Creature target : targets)
+		for(Creature target : targets)
 		{
-			if (!target.isMonster() || !target.isDead())
+			if(!target.isMonster() || !target.isDead())
 				continue;
 
 			final MonsterInstance monter = (MonsterInstance) target;
-			if (!monter.isSweeped())
+			if(!monter.isSweeped())
 				continue;
 
 			monter.endDecayTask();

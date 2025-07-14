@@ -52,22 +52,25 @@ public final class VIPDataParser extends StatParser<VIPDataHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("default"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("default"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
-			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsRefillPercent(element.attributeValue("points_refill_percent") == null ? 0. : Double.parseDouble(element.attributeValue("points_refill_percent")));
-			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsConsumeCount(element.attributeValue("points_consume_count") == null ? 0L : Long.parseLong(element.attributeValue("points_consume_count")));
-			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsConsumeDelay(element.attributeValue("points_consume_delay") == null ? 0 : Integer.parseInt(element.attributeValue("points_consume_delay")));
+			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsRefillPercent(element.attributeValue("points_refill_percent")
+					== null ? 0. : Double.parseDouble(element.attributeValue("points_refill_percent")));
+			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsConsumeCount(element.attributeValue("points_consume_count")
+					== null ? 0L : Long.parseLong(element.attributeValue("points_consume_count")));
+			VIPTemplate.DEFAULT_VIP_TEMPLATE.setPointsConsumeDelay(element.attributeValue("points_consume_delay")
+					== null ? 0 : Integer.parseInt(element.attributeValue("points_consume_delay")));
 		}
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("vip"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("vip"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			StatsSet set = new StatsSet();
 
-			for (Iterator<Element> subIterator = element.elementIterator("set"); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator("set"); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 				set.set(subElement.attributeValue("name"), subElement.attributeValue("value"));
@@ -75,26 +78,29 @@ public final class VIPDataParser extends StatParser<VIPDataHolder>
 
 			int vip_level = Integer.parseInt(element.attributeValue("level"));
 			long points = Long.parseLong(element.attributeValue("points"));
-			double points_refill_percent = element.attributeValue("points_refill_percent") == null ? VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsRefillPercent() : Double.parseDouble(element.attributeValue("points_refill_percent"));
-			long points_consume_count = element.attributeValue("points_consume_count") == null ? VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsConsumeCount() : Long.parseLong(element.attributeValue("points_consume_count"));
-			int points_consume_delay = element.attributeValue("points_consume_delay") == null ? (int) VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsConsumeDelay(TimeUnit.HOURS) : Integer.parseInt(element.attributeValue("points_consume_delay"));
+			double points_refill_percent = element.attributeValue("points_refill_percent")
+					== null ? VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsRefillPercent() : Double.parseDouble(element.attributeValue("points_refill_percent"));
+			long points_consume_count = element.attributeValue("points_consume_count")
+					== null ? VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsConsumeCount() : Long.parseLong(element.attributeValue("points_consume_count"));
+			int points_consume_delay = element.attributeValue("points_consume_delay")
+					== null ? (int) VIPTemplate.DEFAULT_VIP_TEMPLATE.getPointsConsumeDelay(TimeUnit.HOURS) : Integer.parseInt(element.attributeValue("points_consume_delay"));
 			VIPTemplate template = new VIPTemplate(vip_level, points, points_refill_percent, points_consume_count, points_consume_delay, set);
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("stats".equalsIgnoreCase(subElement.getName()))
+				if("stats".equalsIgnoreCase(subElement.getName()))
 				{
 					parseFor(subElement, template);
 				}
-				else if ("triggers".equalsIgnoreCase(subElement.getName()))
+				else if("triggers".equalsIgnoreCase(subElement.getName()))
 				{
 					parseTriggers(subElement, template);
 				}
-				else if ("skills".equalsIgnoreCase(subElement.getName()))
+				else if("skills".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Iterator<Element> nextIterator = subElement.elementIterator("skill"); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = subElement.elementIterator("skill"); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("id"));
@@ -102,9 +108,9 @@ public final class VIPDataParser extends StatParser<VIPDataHolder>
 						template.attachSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level));
 					}
 				}
-				else if ("rewards".equalsIgnoreCase(subElement.getName()))
+				else if("rewards".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int itemId = Integer.parseInt(e.attributeValue("id"));
 						long minItemCount = Long.parseLong(e.attributeValue("min_count"));

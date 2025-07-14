@@ -47,7 +47,7 @@ public class CastleHiredGuardDAO
 			statement.setInt(1, r.getId());
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int itemId = rset.getInt("item_id");
 				Location loc = new Location(rset.getInt("x"), rset.getInt("y"), rset.getInt("z"));
@@ -58,7 +58,7 @@ public class CastleHiredGuardDAO
 				r.getSpawnMerchantTickets().add(item);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleHiredGuardDAO:load(Castle): " + e, e);
 		}
@@ -83,7 +83,7 @@ public class CastleHiredGuardDAO
 			statement.setInt(5, loc.z);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleHiredGuardDAO:insert(Residence, int, Location): " + e, e);
 		}
@@ -108,7 +108,7 @@ public class CastleHiredGuardDAO
 			statement.setInt(5, item.getLoc().z);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleHiredGuardDAO:delete(Residence): " + e, e);
 		}
@@ -129,7 +129,7 @@ public class CastleHiredGuardDAO
 			statement.setInt(1, residence.getId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleHiredGuardDAO:delete(Residence): " + e, e);
 		}

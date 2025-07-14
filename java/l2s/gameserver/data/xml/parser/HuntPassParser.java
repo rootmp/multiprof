@@ -12,14 +12,14 @@ import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.templates.item.data.ItemData;
 
 public class HuntPassParser extends AbstractParser<HuntPassHolder>
-{	
+{
 	private static HuntPassParser _instance = new HuntPassParser();
 
 	public static HuntPassParser getInstance()
 	{
 		return _instance;
 	}
-	
+
 	private HuntPassParser()
 	{
 		super(HuntPassHolder.getInstance());
@@ -37,26 +37,25 @@ public class HuntPassParser extends AbstractParser<HuntPassHolder>
 		return "HuntPass.dtd";
 	}
 
-
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
 		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			
+
 			final int itemId = Integer.parseInt(element.attributeValue("id"));
 			final int itemCount = Integer.parseInt(element.attributeValue("count"));
 			final int premiumitemId = Integer.parseInt(element.attributeValue("premiumId"));
 			final int premiumitemCount = Integer.parseInt(element.attributeValue("premiumCount"));
-			
-			if(ItemHolder.getInstance().getTemplate(itemId)!=null )
-				getHolder().addRewards(new ItemData(itemId,itemCount));
-			
-			if(ItemHolder.getInstance().getTemplate(premiumitemId)!=null)
+
+			if(ItemHolder.getInstance().getTemplate(itemId) != null)
+				getHolder().addRewards(new ItemData(itemId, itemCount));
+
+			if(ItemHolder.getInstance().getTemplate(premiumitemId) != null)
 				getHolder().addPremiumRewards(new ItemData(premiumitemId, premiumitemCount));
 
 		}
-		
+
 	}
 }

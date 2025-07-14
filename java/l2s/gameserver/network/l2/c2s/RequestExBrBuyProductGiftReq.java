@@ -47,21 +47,21 @@ public class RequestExBrBuyProductGiftReq implements IClientIncomingPacket
 	{
 		if(!Config.EX_USE_PRIME_SHOP)
 			return;
-		
+
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
+
 		if(_count > 100 || _count <= 0)
 			return;
-		
+
 		final int receiverId = CharacterDAO.getInstance().getObjectIdByName(_charName);
-		if(receiverId <=0 || player.getObjectId() == receiverId)
+		if(receiverId <= 0 || player.getObjectId() == receiverId)
 		{
 			player.sendPacket(ExBR_BuyProductPacket.RESULT_RECIPIENT_DOESNT_EXIST);
 			return;
 		}
-		
+
 		ProductItem product = ProductDataHolder.getInstance().getProduct(_productId);
 		if(product == null)
 		{
@@ -80,7 +80,7 @@ public class RequestExBrBuyProductGiftReq implements IClientIncomingPacket
 			player.sendPacket(ExBR_BuyProductPacket.RESULT_ITEM_LIMITED);
 			return;
 		}
-		
+
 		player.getProductHistoryList().writeLock();
 		try
 		{
@@ -129,7 +129,7 @@ public class RequestExBrBuyProductGiftReq implements IClientIncomingPacket
 				player.sendPacket(new ExBR_NewIConCashBtnWnd(player));
 
 				Mail mail = new Mail();
-				
+
 				mail.setType(SenderType.PRESENT);
 				mail.setReceiverId(receiverId);
 				mail.setReceiverName(_charName);
@@ -137,20 +137,20 @@ public class RequestExBrBuyProductGiftReq implements IClientIncomingPacket
 				mail.setSenderId(player.getObjectId());
 				mail.setTopic(_mailTitle);
 				mail.setBody(_mailBody);
-				
+
 				for(ProductItemComponent $comp : product.getComponents())
 				{
 					ItemInstance item = ItemFunctions.createItem($comp.getId());
 					item.setCount($comp.getCount() * _count);
 					item.setLocation(ItemLocation.MAIL);
 					item.save();
-					
+
 					mail.setUnread(true);
 					mail.addAttachment(item);
 					mail.save();
 				}
 				Player p_receiver = GameObjectsStorage.getPlayer(receiverId);
-				if(p_receiver!=null)
+				if(p_receiver != null)
 				{
 					p_receiver.sendPacket(ExNoticePostArrived.STATIC_TRUE);
 					p_receiver.sendPacket(new ExUnReadMailCount(p_receiver));

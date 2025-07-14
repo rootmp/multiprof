@@ -18,8 +18,7 @@ public final class Env
 	public boolean reflected;
 
 	public Env()
-	{
-	}
+	{}
 
 	public Env(Creature cha, Creature tar, Skill sk)
 	{

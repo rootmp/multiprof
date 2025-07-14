@@ -6,7 +6,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
-
 public class ExPledgeDonationInfo implements IClientOutgoingPacket
 {
 	private Player _player;

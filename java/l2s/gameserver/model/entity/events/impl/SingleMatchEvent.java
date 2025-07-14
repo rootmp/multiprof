@@ -49,24 +49,19 @@ public abstract class SingleMatchEvent extends Event
 	}
 
 	public void onStatusUpdate(Player player)
-	{
-	}
+	{}
 
 	public void onEffectIconsUpdate(Player player, Abnormal[] effects)
-	{
-	}
+	{}
 
 	public void onDie(Player player)
-	{
-	}
+	{}
 
 	public void sendPacket(IBroadcastPacket packet)
-	{
-	}
+	{}
 
 	public void sendPackets(IBroadcastPacket... packet)
-	{
-	}
+	{}
 
 	public boolean canUseCommunityFunctions(Player player)
 	{

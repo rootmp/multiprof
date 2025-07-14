@@ -57,13 +57,13 @@ public class Friend
 		_level = player.getLevel();
 		_name = player.getName();
 		_classId = player.getActiveClassId();
-		_playerRef = set ? player.getRef() : HardReferences.<Player>emptyRef();
+		_playerRef = set ? player.getRef() : HardReferences.<Player> emptyRef();
 		_clanId = player.getClanId();
 		_allyId = player.getAllyId();
-		if (player.getClan() != null)
+		if(player.getClan() != null)
 		{
 			_clanName = player.getClan().getName();
-			if (player.getClan().getAlliance() != null)
+			if(player.getClan().getAlliance() != null)
 				_allyName = player.getClan().getAlliance().getAllyName();
 			else
 				_allyName = "";
@@ -121,10 +121,10 @@ public class Friend
 	public String getClanName()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return _clanName;
 
-		if (player.getClan() == null)
+		if(player.getClan() == null)
 			return "";
 
 		return player.getClan().getName();
@@ -139,10 +139,10 @@ public class Friend
 	public String getAllyName()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return _allyName;
 
-		if (player.getClan() == null || player.getClan().getAlliance() == null)
+		if(player.getClan() == null || player.getClan().getAlliance() == null)
 			return "";
 
 		return player.getClan().getAlliance().getAllyName();

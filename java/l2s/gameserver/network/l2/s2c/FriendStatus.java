@@ -22,7 +22,7 @@ public class FriendStatus implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_login);
 		packetWriter.writeS(_friend.getName());
-		if (!_login)
+		if(!_login)
 		{
 			packetWriter.writeD(_friend.getObjectId());
 		}

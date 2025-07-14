@@ -37,7 +37,7 @@ public class SkillEnchantCharge
 	{
 		return commissionItemId;
 	}
-	
+
 	public int getGroupId()
 	{
 		return groupId;

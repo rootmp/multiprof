@@ -76,38 +76,32 @@ public class CharacterAI extends AbstractAI
 
 	@Override
 	protected void onIntentionInteract(GameObject object)
-	{
-	}
+	{}
 
 	@Override
 	protected void onIntentionPickUp(GameObject item)
-	{
-	}
+	{}
 
 	@Override
 	protected void onIntentionRest()
-	{
-	}
+	{}
 
 	@Override
 	protected void onIntentionCoupleAction(Player player, Integer socialId)
-	{
-	}
+	{}
 
 	protected void onIntentionReturnHome(boolean running)
-	{
-	}
+	{}
 
 	@Override
 	protected void onIntentionWalkerRoute()
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtArrivedBlocked(Location blocked_at_pos)
 	{
 		// If the Intention was AI_INTENTION_MOVE_TO, set the Intention to
-		if ((getIntention() == CtrlIntention.AI_INTENTION_CAST))
+		if((getIntention() == CtrlIntention.AI_INTENTION_CAST))
 		{
 			setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 		}
@@ -124,31 +118,31 @@ public class CharacterAI extends AbstractAI
 	protected void onEvtForgetObject(GameObject object)
 	{
 		final Creature actor = getActor();
-		if (actor.isAttackingNow() && getAttackTarget() == object)
+		if(actor.isAttackingNow() && getAttackTarget() == object)
 		{
 			actor.abortAttack(true, true);
 		}
-		if (actor.isCastingNow() && getCastTarget() == object)
+		if(actor.isCastingNow() && getCastTarget() == object)
 		{
 			actor.abortCast(true, true);
 		}
-		if (getAttackTarget() == object)
+		if(getAttackTarget() == object)
 		{
 			setAttackTarget(null);
 		}
-		if (getCastTarget() == object)
+		if(getCastTarget() == object)
 		{
 			setCastTarget(null);
 		}
-		if (actor.getTargetId() == object.getObjectId())
+		if(actor.getTargetId() == object.getObjectId())
 		{
 			actor.setTarget(null);
 		}
-		if (actor.getMovement().getFollowTarget() == object)
+		if(actor.getMovement().getFollowTarget() == object)
 		{
 			actor.getMovement().setFollowTarget(null);
 		}
-		for (Servitor servitor : actor.getServitors())
+		for(Servitor servitor : actor.getServitors())
 		{
 			servitor.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, object);
 		}
@@ -163,7 +157,7 @@ public class CharacterAI extends AbstractAI
 		actor.abortCast(true, true);
 		actor.getMovement().stopMove();
 		actor.broadcastPacket(new DiePacket(actor));
-		if (actor.isPlayer())
+		if(actor.isPlayer())
 		{
 			actor.broadcastPacket(new ExDieInfo(actor.getPlayer()));
 			actor.sendPacket(new ExPenaltyItemInfo(actor.getPlayer()));
@@ -193,23 +187,19 @@ public class CharacterAI extends AbstractAI
 
 	@Override
 	protected void onEvtClanAttacked(NpcInstance member, Creature attacker, int damage)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtClanDied(NpcInstance member, Creature killer)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtPartyAttacked(NpcInstance minion, Creature attacker, int damage)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtPartyDied(NpcInstance minion, Creature killer)
-	{
-	}
+	{}
 
 	public void Attack(GameObject target, boolean forceUse, boolean dontMove)
 	{
@@ -229,33 +219,27 @@ public class CharacterAI extends AbstractAI
 
 	@Override
 	protected void onEvtThink()
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtAggression(Creature target, int aggro)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtFinishCasting(Skill skill, Creature target, boolean success)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtReadyToAct()
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtArrived()
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtArrivedTarget()
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtTeleported()
@@ -265,34 +249,27 @@ public class CharacterAI extends AbstractAI
 
 	@Override
 	protected void onEvtSeeSpell(Skill skill, Creature caster, Creature target)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtSpawn()
-	{
-	}
+	{}
 
 	@Override
 	public void onEvtDeSpawn()
-	{
-	}
+	{}
 
 	public void stopAITask()
-	{
-	}
+	{}
 
 	public void startAITask()
-	{
-	}
+	{}
 
 	public void setNextAction(AINextAction action, Object arg0, Object arg1, boolean arg2, boolean arg3)
-	{
-	}
+	{}
 
 	public void clearNextAction()
-	{
-	}
+	{}
 
 	public AINextAction getNextAction()
 	{
@@ -301,10 +278,9 @@ public class CharacterAI extends AbstractAI
 
 	public Object[] getNextActionArgs()
 	{
-		return new Object[]
-		{
-			null,
-			null
+		return new Object[] {
+				null,
+				null
 		};
 	}
 
@@ -319,10 +295,8 @@ public class CharacterAI extends AbstractAI
 		stopTask(timerId);
 
 		final Creature actor = getActor();
-		if (actor == null)
-		{
-			return;
-		}
+		if(actor == null)
+		{ return; }
 		actor.onEvtTimer(timerId, arg1, arg2);
 	}
 
@@ -330,17 +304,14 @@ public class CharacterAI extends AbstractAI
 	protected void onEvtScriptEvent(String event, Object arg1, Object arg2)
 	{
 		final Creature actor = getActor();
-		if (actor == null)
-		{
-			return;
-		}
+		if(actor == null)
+		{ return; }
 		actor.onEvtScriptEvent(event, arg1, arg2);
 	}
 
 	@Override
 	protected void onEvtMenuSelected(Player player, int ask, int reply)
-	{
-	}
+	{}
 
 	@Override
 	protected void onEvtKnockDown(Creature attacker)
@@ -406,7 +377,7 @@ public class CharacterAI extends AbstractAI
 	public void addTimer(int timerId, Object arg1, Object arg2, long delay)
 	{
 		final ScheduledFuture<?> timer = ThreadPoolManager.getInstance().schedule(new Timer(timerId, arg1, arg2), delay);
-		if (timer != null)
+		if(timer != null)
 		{
 			_timers.add(timer);
 		}
@@ -427,7 +398,7 @@ public class CharacterAI extends AbstractAI
 		stopTask(timerId);
 
 		final ScheduledFuture<?> task = ThreadPoolManager.getInstance().schedule(new Timer(timerId, arg1, arg2), delay);
-		if (task != null)
+		if(task != null)
 		{
 			_tasks.put(timerId, task);
 		}
@@ -442,7 +413,7 @@ public class CharacterAI extends AbstractAI
 	public void stopTask(int timerId)
 	{
 		ScheduledFuture<?> task = _tasks.remove(timerId);
-		if (task != null)
+		if(task != null)
 		{
 			task.cancel(false);
 			task = null;
@@ -451,11 +422,11 @@ public class CharacterAI extends AbstractAI
 
 	public void stopAllTaskAndTimers()
 	{
-		for (ScheduledFuture<?> timer : _timers)
+		for(ScheduledFuture<?> timer : _timers)
 		{
 			timer.cancel(false);
 		}
-		for (ScheduledFuture<?> task : _tasks.valueCollection())
+		for(ScheduledFuture<?> task : _tasks.valueCollection())
 		{
 			task.cancel(false);
 		}
@@ -489,10 +460,8 @@ public class CharacterAI extends AbstractAI
 
 		public void run()
 		{
-			if (_blockedTimers.contains(_timerId))
-			{
-				return;
-			}
+			if(_blockedTimers.contains(_timerId))
+			{ return; }
 			notifyEvent(CtrlEvent.EVT_TIMER, _timerId, _arg1, _arg2);
 		}
 	}
@@ -510,7 +479,7 @@ public class CharacterAI extends AbstractAI
 	public void broadCastScriptEvent(String event, Object arg1, Object arg2, int radius)
 	{
 		List<NpcInstance> npcs = World.getAroundNpc(getActor(), radius, radius);
-		for (NpcInstance npc : npcs)
+		for(NpcInstance npc : npcs)
 		{
 			npc.getAI().notifyEvent(CtrlEvent.EVT_SCRIPT_EVENT, event, arg1, arg2);
 		}

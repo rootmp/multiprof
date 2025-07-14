@@ -35,7 +35,8 @@ public class MinionSpawner extends Spawner
 		_referenceCount = minionData.getAmount();
 		_maximumCount = minionData.getAmount();
 
-		final int respawnTime = minionData.getRespawnTime() == -1 ? (master.isRaid() ? Config.DEFAULT_RAID_MINIONS_RESPAWN_DELAY : 0) : minionData.getRespawnTime();
+		final int respawnTime = minionData.getRespawnTime()
+				== -1 ? (master.isRaid() ? Config.DEFAULT_RAID_MINIONS_RESPAWN_DELAY : 0) : minionData.getRespawnTime();
 		_respawnDelay = respawnTime;
 		_respawnDelayRandom = 0;
 		_respawnPattern = null;
@@ -70,19 +71,17 @@ public class MinionSpawner extends Spawner
 		oldNpc.setSpawn(null);
 		oldNpc.deleteMe();
 
-		if (!_spawned.remove(oldNpc))
-		{
-			return;
-		}
+		if(!_spawned.remove(oldNpc))
+		{ return; }
 
-		if (!hasRespawn())
+		if(!hasRespawn())
 		{
 			decreaseCount0(null, null, oldNpc.getDeathTime());
 			return;
 		}
 
 		NpcTemplate template = NpcHolder.getInstance().getTemplate(_minionData.getMinionId());
-		if (template == null)
+		if(template == null)
 		{
 			decreaseCount0(null, null, oldNpc.getDeathTime());
 			return;
@@ -100,10 +99,8 @@ public class MinionSpawner extends Spawner
 	public NpcInstance doSpawn(boolean spawn)
 	{
 		NpcTemplate template = NpcHolder.getInstance().getTemplate(_minionData.getMinionId());
-		if (template == null)
-		{
-			return null;
-		}
+		if(template == null)
+		{ return null; }
 		return doSpawn0(template, spawn, _minionData.getParameters(), Collections.emptyList());
 	}
 
@@ -138,7 +135,7 @@ public class MinionSpawner extends Spawner
 	{
 		super.deleteAll();
 
-		for (NpcInstance npc : _reSpawned)
+		for(NpcInstance npc : _reSpawned)
 		{
 			npc.setSpawn(null);
 			npc.deleteMe();
@@ -150,10 +147,8 @@ public class MinionSpawner extends Spawner
 	@Override
 	public SpawnRange getRandomSpawnRange()
 	{
-		if (_spawnLoc != null)
-		{
-			return _spawnLoc;
-		}
+		if(_spawnLoc != null)
+		{ return _spawnLoc; }
 		return _master.getMinionList().getMinionSpawnRange(_minionData);
 	}
 

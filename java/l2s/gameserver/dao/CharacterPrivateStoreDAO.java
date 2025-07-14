@@ -59,7 +59,7 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int itemId = rset.getInt("item_id");
 				long itemCount = rset.getLong("item_count");
@@ -75,7 +75,7 @@ public class CharacterPrivateStoreDAO
 				result.add(tradeItem);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.selectBuys(Player): " + e, e);
 		}
@@ -101,17 +101,17 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(2, packageType ? 1 : 0);
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int itemObjectId = rset.getInt("item_object_id");
 				long itemCount = rset.getLong("item_count");
 				long ownerPrice = rset.getLong("owner_price");
 
 				ItemInstance itemToSell = owner.getInventory().getItemByObjectId(itemObjectId);
-				if (itemCount < 1 || itemToSell == null)
+				if(itemCount < 1 || itemToSell == null)
 					continue;
 
-				if (itemCount > itemToSell.getCount())
+				if(itemCount > itemToSell.getCount())
 					itemCount = itemToSell.getCount();
 
 				TradeItem i = new TradeItem(itemToSell);
@@ -121,7 +121,7 @@ public class CharacterPrivateStoreDAO
 				result.put(i.getObjectId(), i);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.selectSells(Player,boolean): " + e, e);
 		}
@@ -146,17 +146,17 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int recipeId = rset.getInt("recipe_id");
 				long cost = rset.getLong("cost");
-				if (!owner.findRecipe(recipeId))
+				if(!owner.findRecipe(recipeId))
 					continue;
 
 				result.put(recipeId, new ManufactureItem(recipeId, cost));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.selectManufactures(Player): " + e, e);
 		}
@@ -178,12 +178,12 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.execute();
 
-			if (buyList.isEmpty())
+			if(buyList.isEmpty())
 				return true;
 
 			SqlBatch b = new SqlBatch(INSERT_BUYS_QUERY);
 			int i = 1;
-			for (TradeItem tradeItem : buyList)
+			for(TradeItem tradeItem : buyList)
 			{
 				StringBuilder sb = new StringBuilder("(");
 				sb.append(owner.getObjectId()).append(",");
@@ -196,10 +196,10 @@ public class CharacterPrivateStoreDAO
 				i++;
 			}
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.insertBuys(Player,List): " + e, e);
 			return false;
@@ -223,12 +223,12 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(2, packageType ? 1 : 0);
 			statement.execute();
 
-			if (sellList.isEmpty())
+			if(sellList.isEmpty())
 				return true;
 
 			SqlBatch b = new SqlBatch(INSERT_SELLS_QUERY);
 			int i = 1;
-			for (TradeItem tradeItem : sellList.values())
+			for(TradeItem tradeItem : sellList.values())
 			{
 				StringBuilder sb = new StringBuilder("(");
 				sb.append(owner.getObjectId()).append(",");
@@ -241,10 +241,10 @@ public class CharacterPrivateStoreDAO
 				i++;
 			}
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.insertSells(Player,Map,boolean): " + e, e);
 			return false;
@@ -267,12 +267,12 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.execute();
 
-			if (manufactureList.isEmpty())
+			if(manufactureList.isEmpty())
 				return true;
 
 			SqlBatch b = new SqlBatch(INSERT_MANUFACTURES_QUERY);
 			int i = 1;
-			for (ManufactureItem manufactureItem : manufactureList.values())
+			for(ManufactureItem manufactureItem : manufactureList.values())
 			{
 				StringBuilder sb = new StringBuilder("(");
 				sb.append(owner.getObjectId()).append(",");
@@ -283,10 +283,10 @@ public class CharacterPrivateStoreDAO
 				i++;
 			}
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.insertManufactures(Player,Map): " + e, e);
 			return false;
@@ -309,7 +309,7 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.deleteBuys(Player): " + e, e);
 			return false;
@@ -333,7 +333,7 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(2, packageType ? 1 : 0);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.deleteSells(Player,boolean): " + e, e);
 			return false;
@@ -356,7 +356,7 @@ public class CharacterPrivateStoreDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("CharacterPrivateStoreDAO.deleteManufactures(Player): " + e, e);
 			return false;

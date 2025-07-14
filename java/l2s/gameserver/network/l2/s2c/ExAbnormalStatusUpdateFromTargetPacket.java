@@ -46,7 +46,7 @@ public class ExAbnormalStatusUpdateFromTargetPacket implements IClientOutgoingPa
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeH(_effects.size());
-		for (Abnormal temp : _effects)
+		for(Abnormal temp : _effects)
 		{
 			packetWriter.writeD(temp.skillId);
 			packetWriter.writeH(temp.skillLvl);

@@ -23,9 +23,9 @@ public class BayleeInterfaceHandler extends AbstractHolder
 	public void registerCommand(IBayleeInterfaceHandler handler)
 	{
 		final String[] ids = handler.getCommandList();
-		if (ids == null)
+		if(ids == null)
 			return;
-		for (final String element : ids)
+		for(final String element : ids)
 		{
 			_datatable.put(element, handler);
 		}
@@ -34,7 +34,7 @@ public class BayleeInterfaceHandler extends AbstractHolder
 	public IBayleeInterfaceHandler getBayleeInterfaceHandler(String cmd)
 	{
 		String command = cmd;
-		if (cmd.indexOf(" ") != -1)
+		if(cmd.indexOf(" ") != -1)
 		{
 			command = cmd.substring(0, cmd.indexOf(" "));
 		}

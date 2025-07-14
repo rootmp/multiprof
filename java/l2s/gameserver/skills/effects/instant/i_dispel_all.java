@@ -29,27 +29,27 @@ public class i_dispel_all extends i_abstract_effect
 		Collections.sort(abnormals, AbnormalsComparator.getInstance()); // ToFix: Comparator to HF
 		Collections.reverse(abnormals);
 
-		for (Abnormal abnormal : abnormals)
+		for(Abnormal abnormal : abnormals)
 		{
-			if (!abnormal.isCancelable())
+			if(!abnormal.isCancelable())
 				continue;
 
 			Skill effectSkill = abnormal.getSkill();
-			if (effectSkill == null)
+			if(effectSkill == null)
 				continue;
 
-			if (effectSkill.isToggle())
+			if(effectSkill.isToggle())
 				continue;
 
-			if (effectSkill.isPassive())
+			if(effectSkill.isPassive())
 				continue;
 
-			if (effected.isSpecialAbnormal(effectSkill))
+			if(effected.isSpecialAbnormal(effectSkill))
 				continue;
 
 			abnormal.exit();
 
-			if (!abnormal.isHidden())
+			if(!abnormal.isHidden())
 				effected.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(effectSkill));
 		}
 	}

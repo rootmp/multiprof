@@ -19,18 +19,18 @@ public class ConditionPlayerHasBuffId extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
+		if(character == null)
 			return false;
 
-		for (Abnormal effect : character.getAbnormalList())
+		for(Abnormal effect : character.getAbnormalList())
 		{
-			if (effect.getSkill().getId() != _id)
+			if(effect.getSkill().getId() != _id)
 				continue;
 
-			if (_level == -1)
+			if(_level == -1)
 				return true;
 
-			if (effect.getSkill().getLevel() >= _level)
+			if(effect.getSkill().getLevel() >= _level)
 				return true;
 		}
 		return false;

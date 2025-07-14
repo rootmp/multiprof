@@ -27,7 +27,7 @@ public class FrostLordCastleFirstRbTask extends AutomaticTask
 	public void doTask() throws Exception
 	{
 		_log.info("Frost Lord Castle First RB spawn Task: Started.");
-		if (Rnd.get(100) < 50)
+		if(Rnd.get(100) < 50)
 		{
 			NpcUtils.spawnSingle(25942, 149224, 143816, -12232, 25769, ReflectionManager.FROST_LORD_CASTLE, 1_800_000); // Reggiesys
 			ServerVariables.set("frost_lord_castle_first_rb", "reggiesys");

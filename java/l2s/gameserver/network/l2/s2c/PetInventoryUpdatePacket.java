@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
 
@@ -17,8 +17,7 @@ public class PetInventoryUpdatePacket implements IClientOutgoingPacket
 	private final List<ItemInfo> _items = new ArrayList<ItemInfo>(1);
 
 	public PetInventoryUpdatePacket()
-	{
-	}
+	{}
 
 	public PetInventoryUpdatePacket addNewItem(ItemInstance item)
 	{
@@ -49,7 +48,7 @@ public class PetInventoryUpdatePacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(_items.size());
-		for (ItemInfo temp : _items)
+		for(ItemInfo temp : _items)
 		{
 			packetWriter.writeH(temp.getLastChange());
 			writeItemInfo(packetWriter, temp);

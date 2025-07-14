@@ -13,9 +13,9 @@ public class RequestExLoadPetPreviewBySid implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-    nPetCollarServerId = packet.readD();
-    bIsInWorldServer = packet.readC();
-    
+		nPetCollarServerId = packet.readD();
+		bIsInWorldServer = packet.readC();
+
 		return true;
 	}
 
@@ -23,9 +23,9 @@ public class RequestExLoadPetPreviewBySid implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		player.sendPacket(new ExLoadPetPreview());
 	}
 }

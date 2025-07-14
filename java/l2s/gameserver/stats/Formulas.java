@@ -60,28 +60,28 @@ public class Formulas
 		{
 			// TODO: Переделать по оффу.
 			final ElementalElement element = attacker.getActiveElement();
-			if (element != ElementalElement.NONE)
+			if(element != ElementalElement.NONE)
 			{
 				// Influence protection right,judging on
 				// table:https://4gameforum.com/threads/709735/
 				final double elementalDamagePower = attacker.getStat().getElementalAttackPower(element) - target.getStat().getElementalDefence(element);
 				double damage = 0.;
-				if (skill == null)
+				if(skill == null)
 				{
 					damage = attacker.getPAtk(target) * atkMod;
-					if (useShot)
+					if(useShot)
 					{
 						damage *= ((100 + attacker.getChargedSoulshotPower()) / 100.);
 					}
 					damage *= 135. / target.getPDef(attacker);
 					damage *= elementalDamagePower / 806.;
 				}
-				else if (power > 0)
+				else if(power > 0)
 				{
-					if (skill.isMagic())
+					if(skill.isMagic())
 					{
 						double mAtk = attacker.getMAtk(target, skill) * atkMod;
-						if (useShot)
+						if(useShot)
 						{
 							mAtk *= ((100 + attacker.getChargedSpiritshotPower()) / 100.);
 						}
@@ -92,7 +92,7 @@ public class Formulas
 					else
 					{
 						damage = attacker.getPAtk(target) * atkMod + power;
-						if (useShot)
+						if(useShot)
 						{
 							damage *= ((100 + attacker.getChargedSoulshotPower()) / 100.);
 						}
@@ -101,10 +101,10 @@ public class Formulas
 					}
 				}
 
-				if (damage != 0)
+				if(damage != 0)
 				{
 					final double critChance = attacker.getStat().getElementalCritRate(element) / 100. + 1 * 10;
-					if (Rnd.chance(critChance))
+					if(Rnd.chance(critChance))
 					{
 						info.elementalCrit = true;
 						final double critMod = 1. + attacker.getStat().getElementalCritAttack(element) * 0.4;
@@ -145,12 +145,12 @@ public class Formulas
 			final boolean isPvP = attacker.isPlayable() && target.isPlayable();
 			final boolean isPvE = attacker.isPlayable() && target.isNpc();
 
-			if (info.shld)
+			if(info.shld)
 			{
 				info.defence += target.getShldDef();
 			}
 
-			if (info.crit)
+			if(info.crit)
 			{
 				double critDmg = info.damage;
 				critDmg *= 2 * attacker.getStat().getMul(Stats.CRITICAL_DAMAGE, target, null);
@@ -160,7 +160,7 @@ public class Formulas
 				info.damage += critDmg;
 			}
 
-			if (range)
+			if(range)
 			{
 				info.damage += Math.max(0, (Config.LONG_RANGE_AUTO_ATTACK_P_ATK_MOD - 1)) * pAtk;
 			}
@@ -169,13 +169,13 @@ public class Formulas
 				info.damage += Math.max(0, (Config.SHORT_RANGE_AUTO_ATTACK_P_ATK_MOD - 1)) * pAtk;
 			}
 
-			if (attacker.isDistortedSpace())
+			if(attacker.isDistortedSpace())
 			{
 				info.damage += pAtk * 0.2;
 			}
 			else
 			{
-				switch (PositionUtils.getDirectionTo(target, attacker))
+				switch(PositionUtils.getDirectionTo(target, attacker))
 				{
 					case BEHIND:
 						info.damage += pAtk * 0.2;
@@ -188,7 +188,7 @@ public class Formulas
 
 			info.damage *= 1 + (Rnd.get() * attacker.getRandomDamage() * 2 - attacker.getRandomDamage()) / 100.;
 
-			if (useShot)
+			if(useShot)
 			{
 				info.damage *= ((100 + attacker.getChargedSoulshotPower()) / 100.);
 			}
@@ -200,27 +200,27 @@ public class Formulas
 			info.damage = attacker.getStat().calc(Stats.INFLICTS_P_DAMAGE_POWER, info.damage, target, null);
 			info.damage = target.getStat().calc(Stats.RECEIVE_P_DAMAGE_POWER, info.damage, attacker, null);
 
-			if (info.shld)
+			if(info.shld)
 			{
-				if (Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
+				if(Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
 				{
 					info.damage = Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE;
 					return info;
 				}
 			}
 
-			if (isPvP)
+			if(isPvP)
 			{
 				info.damage *= attacker.getStat().calc(Stats.PVP_PHYS_DMG_BONUS, 1);
 				info.damage /= target.getStat().calc(Stats.PVP_PHYS_DEFENCE_BONUS, 1);
 			}
-			else if (isPvE)
+			else if(isPvE)
 			{
 				info.damage *= attacker.getStat().calc(Stats.PVE_PHYS_DMG_BONUS, 1);
 				info.damage /= target.getStat().calc(Stats.PVE_PHYS_DEFENCE_BONUS, 1);
 			}
 
-			if (info.crit)
+			if(info.crit)
 			{
 				info.damage = info.damage * getPCritDamageMode(attacker, true);
 			}
@@ -230,7 +230,7 @@ public class Formulas
 			}
 
 			final AttackInfo elementalInfo = calcElementalDamage(attacker, target, null, pAtkMod, useShot);
-			if (elementalInfo != null)
+			if(elementalInfo != null)
 			{
 				info.elementalDamage = elementalInfo.elementalDamage;
 				info.elementalCrit = elementalInfo.elementalCrit;
@@ -256,7 +256,7 @@ public class Formulas
 		try
 		{
 			// @Rivelia. Send empty AttackInfo so it does not show up in system messages.
-			if (power == 0)
+			if(power == 0)
 				return info;
 
 			final double pAtk = attacker.getPAtk(target);
@@ -269,22 +269,22 @@ public class Formulas
 			final boolean isPvP = attacker.isPlayable() && target.isPlayable();
 			final boolean isPvE = attacker.isPlayable() && target.isNpc();
 
-			if (info.shld)
+			if(info.shld)
 			{
 				double shldDef = target.getShldDef();
-				if (skill.getShieldIgnorePercent() > 0)
+				if(skill.getShieldIgnorePercent() > 0)
 				{
 					shldDef -= shldDef * skill.getShieldIgnorePercent() / 100.;
 				}
 				info.defence += shldDef;
 			}
 
-			if (skill.getDefenceIgnorePercent() > 0)
+			if(skill.getDefenceIgnorePercent() > 0)
 			{
 				info.defence *= (1. - (skill.getDefenceIgnorePercent() / 100.));
 			}
 
-			if (info.damage > 0 && skill.canBeEvaded() && Rnd.chance(target.getStat().calc(Stats.P_SKILL_EVASION, 100, attacker, skill) - 100))
+			if(info.damage > 0 && skill.canBeEvaded() && Rnd.chance(target.getStat().calc(Stats.P_SKILL_EVASION, 100, attacker, skill) - 100))
 			{
 				// @Rivelia. info.miss makes the Damage Text "Evaded" appear.
 				info.miss = true;
@@ -296,12 +296,12 @@ public class Formulas
 			info.damage += attacker.getStat().calc(Stats.P_SKILL_POWER_STATIC);
 
 			// Заряжаемые скилы имеют постоянный урон
-			if (!skill.isChargeBoost())
+			if(!skill.isChargeBoost())
 			{
 				info.damage *= 1 + (Rnd.get() * attacker.getRandomDamage() * 2 - attacker.getRandomDamage()) / 100.;
 			}
 
-			if (info.blow)
+			if(info.blow)
 			{
 				double critDmg = info.damage;
 				critDmg *= attacker.getStat().getMul(Stats.CRITICAL_DAMAGE, target, skill) * 0.666;
@@ -311,10 +311,10 @@ public class Formulas
 				info.damage += critDmg;
 			}
 
-			if (skill.isChargeBoost())
+			if(skill.isChargeBoost())
 			{
 				int force = attacker.getIncreasedForce();
-				if (force > 3)
+				if(force > 3)
 				{
 					force = 3;
 				}
@@ -324,9 +324,9 @@ public class Formulas
 				info.damage *= 1 + 0.1 * force;
 			}
 
-			if (info.crit)
+			if(info.crit)
 			{
-				if (info.blow)
+				if(info.blow)
 				{
 					info.damage *= 2;
 				}
@@ -340,20 +340,20 @@ public class Formulas
 			}
 
 			final ElementalElement element = attacker.getActiveElement();
-			if (element != ElementalElement.NONE)
+			if(element != ElementalElement.NONE)
 			{
 				// TODO: Make formulas.
 				// info.elementalDamage = 1;
 				// info.elementalCrit = Rnd.chance(5);
 			}
 
-			if (attacker.isDistortedSpace())
+			if(attacker.isDistortedSpace())
 			{
 				info.damage += pAtk * 0.2;
 			}
 			else
 			{
-				switch (PositionUtils.getDirectionTo(target, attacker))
+				switch(PositionUtils.getDirectionTo(target, attacker))
 				{
 					case BEHIND:
 						info.damage += pAtk * 0.2;
@@ -364,7 +364,7 @@ public class Formulas
 				}
 			}
 
-			if (useShot)
+			if(useShot)
 			{
 				info.damage *= ((100 + attacker.getChargedSoulshotPower()) / 100.);
 			}
@@ -377,52 +377,54 @@ public class Formulas
 			info.damage = attacker.getStat().calc(Stats.INFLICTS_P_DAMAGE_POWER, info.damage, target, skill);
 			info.damage = target.getStat().calc(Stats.RECEIVE_P_DAMAGE_POWER, info.damage, attacker, skill);
 
-			if (info.shld)
+			if(info.shld)
 			{
-				if (Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
+				if(Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
 				{
 					info.damage = Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE;
 					return info;
 				}
 			}
 
-			if (isPvP)
+			if(isPvP)
 			{
 				info.damage *= attacker.getStat().calc(Stats.PVP_PHYS_SKILL_DMG_BONUS, 1);
 				info.damage /= target.getStat().calc(Stats.PVP_PHYS_SKILL_DEFENCE_BONUS, 1);
 			}
-			else if (isPvE)
+			else if(isPvE)
 			{
 				info.damage *= attacker.getStat().calc(Stats.PVE_PHYS_SKILL_DMG_BONUS, 1);
 				info.damage /= target.getStat().calc(Stats.PVE_PHYS_SKILL_DEFENCE_BONUS, 1);
 			}
 
-			if (info.crit)
+			if(info.crit)
 			{
 				info.damage = info.damage * getPCritDamageMode(attacker, false);
 			}
-			if (info.blow)
+			if(info.blow)
 			{
 				info.damage = info.damage * Config.ALT_BLOW_DAMAGE_MOD;
 			}
-			if (!info.crit && !info.blow)
+			if(!info.crit && !info.blow)
 			{
 				info.damage = info.damage * getPDamModifier(attacker);
 			}
 
-			if (info.damage > 0 && skill.isDeathlink())
+			if(info.damage > 0 && skill.isDeathlink())
 			{
 				info.damage *= 1.8 * ((skill.isPhysic() ? 2.0 : 1.0) - attacker.getCurrentHpRatio());
 			}
 
-			if (info.blow)
+			if(info.blow)
 			{
 				// Тупая заглушка, переделать.
-				if (attacker.getSkillCast(SkillCastingType.NORMAL).isCriticalBlow() && attacker.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate().equals(skill))
+				if(attacker.getSkillCast(SkillCastingType.NORMAL).isCriticalBlow()
+						&& attacker.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate().equals(skill))
 				{
 					//
 				}
-				else if (attacker.getSkillCast(SkillCastingType.NORMAL_SECOND).isCriticalBlow() && attacker.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate().equals(skill))
+				else if(attacker.getSkillCast(SkillCastingType.NORMAL_SECOND).isCriticalBlow()
+						&& attacker.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate().equals(skill))
 				{
 					//
 				}
@@ -431,40 +433,40 @@ public class Formulas
 			}
 
 			final AttackInfo elementalInfo = calcElementalDamage(attacker, target, skill, 1., useShot);
-			if (elementalInfo != null)
+			if(elementalInfo != null)
 			{
 				info.elementalDamage = elementalInfo.elementalDamage;
 				info.elementalCrit = elementalInfo.elementalCrit;
 				info.damage += elementalInfo.elementalDamage;
 			}
 
-			if (info.damage > 0)
+			if(info.damage > 0)
 			{
 				final WeaponTemplate weaponItem = attacker.getActiveWeaponTemplate();
-				if (skill.getIncreaseOnPole() > 0. && weaponItem != null && weaponItem.getItemType() == WeaponType.POLE)
+				if(skill.getIncreaseOnPole() > 0. && weaponItem != null && weaponItem.getItemType() == WeaponType.POLE)
 				{
 					info.damage *= skill.getIncreaseOnPole();
 				}
-				if (skill.getDecreaseOnNoPole() > 0. && weaponItem != null && weaponItem.getItemType() != WeaponType.POLE)
+				if(skill.getDecreaseOnNoPole() > 0. && weaponItem != null && weaponItem.getItemType() != WeaponType.POLE)
 				{
 					info.damage *= skill.getDecreaseOnNoPole();
 				}
 
-				if (calcStunBreak(info.crit, true, false))
+				if(calcStunBreak(info.crit, true, false))
 				{
 					target.getAbnormalList().stop(AbnormalType.STUN);
 					target.getAbnormalList().stop(AbnormalType.TURN_FLEE);
 				}
 
-				if (calcCastBreak(target, info.crit))
+				if(calcCastBreak(target, info.crit))
 				{
 					target.abortCast(false, true);
 				}
 
-				for (final Abnormal abnormal : target.getAbnormalList())
+				for(final Abnormal abnormal : target.getAbnormalList())
 				{
 					final double chance = info.crit ? abnormal.getSkill().getOnCritCancelChance() : abnormal.getSkill().getOnAttackCancelChance();
-					if (chance > 0 && Rnd.chance(chance))
+					if(chance > 0 && Rnd.chance(chance))
 					{
 						abnormal.exit();
 					}
@@ -484,16 +486,16 @@ public class Formulas
 		double damage = 0.;
 		try
 		{
-			if ((skill == null) || target.isLethalImmune())
+			if((skill == null) || target.isLethalImmune())
 				return 0.;
 
 			final double deathRcpt = 0.01 * target.getStat().calc(Stats.DEATH_VULNERABILITY, attacker, skill);
 			final double lethal1Chance = skill.getLethal1(attacker) * deathRcpt;
 			final double lethal2Chance = skill.getLethal2(attacker) * deathRcpt;
 
-			if (Rnd.chance(lethal2Chance))
+			if(Rnd.chance(lethal2Chance))
 			{
-				if (target.isPlayer())
+				if(target.isPlayer())
 				{
 					damage = target.getCurrentHp() + target.getCurrentCp() - 1.1;
 					target.sendPacket(SystemMsg.LETHAL_STRIKE);
@@ -504,9 +506,9 @@ public class Formulas
 				}
 				attacker.sendPacket(SystemMsg.YOUR_LETHAL_STRIKE_WAS_SUCCESSFUL);
 			}
-			else if (Rnd.chance(lethal1Chance))
+			else if(Rnd.chance(lethal1Chance))
 			{
-				if (target.isPlayer())
+				if(target.isPlayer())
 				{
 					damage = target.getCurrentCp();
 					target.sendPacket(SystemMsg.YOUR_CP_WAS_DRAINED_BECAUSE_YOU_WERE_HIT_WITH_A_CP_SIPHON_SKILL);
@@ -527,55 +529,43 @@ public class Formulas
 
 	private static double getMSimpleDamageMode(Creature attacker) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_M_SIMPLE_DAMAGE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_M_SIMPLE_DAMAGE_MOD; }
 		return Config.ALT_M_SIMPLE_DAMAGE_MOD;
 	}
 
 	public static double getMCritDamageMode(Creature attacker) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_M_CRIT_DAMAGE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_M_CRIT_DAMAGE_MOD; }
 		return Config.ALT_M_CRIT_DAMAGE_MOD;
 	}
 
 	private static double getPDamModifier(Creature attacker) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_P_DAMAGE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_P_DAMAGE_MOD; }
 		return Config.ALT_P_DAMAGE_MOD;
 	}
 
 	private static double getPCritDamageMode(Creature attacker, boolean notSkill) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_P_CRIT_DAMAGE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_P_CRIT_DAMAGE_MOD; }
 		return Config.ALT_P_CRIT_DAMAGE_MOD;
 	}
 
 	private static double getPCritChanceMode(Creature attacker) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_P_CRIT_CHANCE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_P_CRIT_CHANCE_MOD; }
 		return Config.ALT_P_CRIT_CHANCE_MOD;
 	}
 
 	private static double getMCritChanceMode(Creature attacker) // ONLY for 4-th proffs
 	{
-		if (!attacker.isPlayer())
-		{
-			return Config.ALT_M_CRIT_CHANCE_MOD;
-		}
+		if(!attacker.isPlayer())
+		{ return Config.ALT_M_CRIT_CHANCE_MOD; }
 		return Config.ALT_M_CRIT_CHANCE_MOD;
 	}
 
@@ -598,44 +588,44 @@ public class Formulas
 
 			double mAtk = attacker.getMAtk(target, skill);
 
-			if (useShot)
+			if(useShot)
 			{
 				mAtk *= ((100 + attacker.getChargedSpiritshotPower()) / 100.);
 			}
 
 			double mdef = target.getMDef(null, skill);
 
-			if (shield)
+			if(shield)
 			{
 				double shldDef = target.getShldDef();
-				if (skill.getShieldIgnorePercent() > 0)
+				if(skill.getShieldIgnorePercent() > 0)
 				{
 					shldDef -= shldDef * skill.getShieldIgnorePercent() / 100.;
 				}
 				mdef += shldDef;
 			}
 
-			if (skill.getDefenceIgnorePercent() > 0)
+			if(skill.getDefenceIgnorePercent() > 0)
 			{
 				mdef *= (1. - (skill.getDefenceIgnorePercent() / 100.));
 			}
 
 			mdef = Math.max(mdef, 1);
 
-			if (power == 0)
+			if(power == 0)
 				return info;
 
 			info.damage = (91 * power * Math.sqrt(mAtk)) / mdef; // 41?
 
-			if (target.isTargetUnderDebuff())
+			if(target.isTargetUnderDebuff())
 			{
 				info.damage *= skill.getPercentDamageIfTargetDebuff();
 			}
 
-			if (canMiss)
+			if(canMiss)
 			{
 				// TODO: [Bonux] Переделать по оффу.
-				if (calcMagicHitMiss(skill, attacker, target))
+				if(calcMagicHitMiss(skill, attacker, target))
 				{
 					info.miss = true;
 					info.damage = 0;
@@ -644,14 +634,15 @@ public class Formulas
 			}
 
 			info.damage *= 1 + (((Rnd.get() * attacker.getRandomDamage() * 2) - attacker.getRandomDamage()) / 100.);
-			info.damage += Math.max(0., attacker.getStat().calc(Stats.M_SKILL_POWER, (attacker.isServitor() ? Config.SERVITOR_M_SKILL_POWER_MODIFIER : 1.) + power));
+			info.damage += Math.max(0., attacker.getStat().calc(Stats.M_SKILL_POWER, (attacker.isServitor() ? Config.SERVITOR_M_SKILL_POWER_MODIFIER : 1.)
+					+ power));
 			info.crit = calcMCrit(attacker, target, skill);
 
-			if (info.crit)
+			if(info.crit)
 			{
 				// @Rivelia. Based on config, Magic skills can be reduced by Critical Damage
 				// Reduction if Critical Damage Receptive < 1.
-				if (Config.ENABLE_CRIT_DMG_REDUCTION_ON_MAGIC)
+				if(Config.ENABLE_CRIT_DMG_REDUCTION_ON_MAGIC)
 				{
 					double critDmg = info.damage;
 					critDmg *= 1 + attacker.getStat().getMul(Stats.MAGIC_CRITICAL_DMG, target, skill);
@@ -678,7 +669,7 @@ public class Formulas
 			info.damage *= calcAttributeBonus(attacker, target, skill);
 
 			final ElementalElement element = attacker.getActiveElement();
-			if (element != ElementalElement.NONE)
+			if(element != ElementalElement.NONE)
 			{
 				// TODO: Make formulas.
 				info.elementalDamage = 1;
@@ -688,10 +679,10 @@ public class Formulas
 			info.damage = attacker.getStat().calc(Stats.INFLICTS_M_DAMAGE_POWER, info.damage, target, skill);
 			info.damage = target.getStat().calc(Stats.RECEIVE_M_DAMAGE_POWER, info.damage, attacker, skill);
 
-			if (shield)
+			if(shield)
 			{
 				info.shld = true;
-				if (Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
+				if(Rnd.chance(Config.EXCELLENT_SHIELD_BLOCK_CHANCE))
 				{
 					info.damage = Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE;
 					return info;
@@ -699,39 +690,40 @@ public class Formulas
 			}
 
 			final int levelDiff = target.getLevel() - attacker.getLevel();
-			if (info.damage > 0 && skill.isDeathlink())
+			if(info.damage > 0 && skill.isDeathlink())
 			{
 				info.damage *= 1.8 * (1.0 - attacker.getCurrentHpRatio());
 			}
 
-			if (info.damage > 0 && skill.isBasedOnTargetDebuff())
+			if(info.damage > 0 && skill.isBasedOnTargetDebuff())
 			{
 				info.damage *= 1 + 0.05 * target.getAbnormalList().size();
 			}
 
-			if (skill.getSkillType() == SkillType.MANADAM)
+			if(skill.getSkillType() == SkillType.MANADAM)
 			{
 				info.damage = Math.max(1, info.damage / 4.);
 			}
-			else if (info.damage > 0)
+			else if(info.damage > 0)
 			{
-				if (isPvP)
+				if(isPvP)
 				{
 					info.damage *= attacker.getStat().calc(Stats.PVP_MAGIC_SKILL_DMG_BONUS, 1);
 					info.damage /= target.getStat().calc(Stats.PVP_MAGIC_SKILL_DEFENCE_BONUS, 1);
 				}
-				else if (isPvE)
+				else if(isPvE)
 				{
 					info.damage *= attacker.getStat().calc(Stats.PVE_MAGIC_SKILL_DMG_BONUS, 1);
 					info.damage /= target.getStat().calc(Stats.PVE_MAGIC_SKILL_DEFENCE_BONUS, 1);
 				}
 			}
 
-			final double magic_rcpt = target.getStat().calc(Stats.MAGIC_RESIST, attacker, skill) - attacker.getStat().calc(Stats.MAGIC_POWER, target, skill);
+			final double magic_rcpt = target.getStat().calc(Stats.MAGIC_RESIST, attacker, skill)
+					- attacker.getStat().calc(Stats.MAGIC_POWER, target, skill);
 			final double failChance = 4. * Math.max(1., levelDiff) * (1. + magic_rcpt / 100.);
-			if (Rnd.chance(failChance))
+			if(Rnd.chance(failChance))
 			{
-				if (levelDiff > 9)
+				if(levelDiff > 9)
 				{
 					info.damage = 0;
 					final SystemMessagePacket msg = new SystemMessagePacket(SystemMsg.C1_RESISTED_C2S_MAGIC).addName(target).addName(attacker);
@@ -751,7 +743,7 @@ public class Formulas
 			else
 			{
 				final AttackInfo elementalInfo = calcElementalDamage(attacker, target, skill, power, 1., useShot);
-				if (elementalInfo != null)
+				if(elementalInfo != null)
 				{
 					info.elementalDamage = elementalInfo.elementalDamage;
 					info.elementalCrit = elementalInfo.elementalCrit;
@@ -759,22 +751,22 @@ public class Formulas
 				}
 			}
 
-			if (calcCastBreak(target, info.crit))
+			if(calcCastBreak(target, info.crit))
 			{
 				target.abortCast(false, true);
 			}
 
-			if (calcStunBreak(info.crit, true, true) && info.damage > 0)
+			if(calcStunBreak(info.crit, true, true) && info.damage > 0)
 			{
 				target.getAbnormalList().stop(AbnormalType.STUN);
 				// target.getAbnormalList().stop(AbnormalType.TURN_FLEE); На классике вроде как
 				// не должно сбивать.
 			}
 
-			for (final Abnormal abnormal : target.getAbnormalList())
+			for(final Abnormal abnormal : target.getAbnormalList())
 			{
 				final double chance = info.crit ? abnormal.getSkill().getOnCritCancelChance() : abnormal.getSkill().getOnAttackCancelChance();
-				if (chance > 0 && Rnd.chance(chance))
+				if(chance > 0 && Rnd.chance(chance))
 				{
 					abnormal.exit();
 				}
@@ -794,15 +786,13 @@ public class Formulas
 	 */
 	public static boolean calcStunBreak(boolean crit, boolean isSkill, boolean isMagic)
 	{
-		if (!Config.ENABLE_STUN_BREAK_ON_ATTACK)
+		if(!Config.ENABLE_STUN_BREAK_ON_ATTACK)
 			return false;
 
-		if (isSkill)
+		if(isSkill)
 		{
-			if (isMagic)
-			{
-				return Rnd.chance(crit ? Config.CRIT_STUN_BREAK_CHANCE_ON_MAGICAL_SKILL : Config.NORMAL_STUN_BREAK_CHANCE_ON_MAGICAL_SKILL);
-			}
+			if(isMagic)
+			{ return Rnd.chance(crit ? Config.CRIT_STUN_BREAK_CHANCE_ON_MAGICAL_SKILL : Config.NORMAL_STUN_BREAK_CHANCE_ON_MAGICAL_SKILL); }
 			return Rnd.chance(crit ? Config.CRIT_STUN_BREAK_CHANCE_ON_PHYSICAL_SKILL : Config.NORMAL_STUN_BREAK_CHANCE_ON_PHYSICAL_SKILL);
 		}
 		return Rnd.chance(crit ? Config.CRIT_STUN_BREAK_CHANCE_ON_REGULAR_HIT : Config.NORMAL_STUN_BREAK_CHANCE_ON_REGULAR_HIT);
@@ -814,17 +804,17 @@ public class Formulas
 		// TODO: Правильная ли формула резиста блов умений?
 		final double vulnMod = target.getStat().calc(Stats.BLOW_RESIST, activeChar, skill);
 		final double profMod = activeChar.getStat().calc(Stats.BLOW_POWER, target, skill);
-		if (vulnMod == Double.POSITIVE_INFINITY || profMod == Double.NEGATIVE_INFINITY)
+		if(vulnMod == Double.POSITIVE_INFINITY || profMod == Double.NEGATIVE_INFINITY)
 			return false;
 
-		if (vulnMod == Double.NEGATIVE_INFINITY || profMod == Double.POSITIVE_INFINITY)
+		if(vulnMod == Double.NEGATIVE_INFINITY || profMod == Double.POSITIVE_INFINITY)
 			return true;
 
 		final WeaponTemplate weapon = activeChar.getActiveWeaponTemplate();
 
 		final double base_weapon_crit = weapon == null ? 4. : weapon.getCritical();
 		double crit_height_bonus = 1;
-		if (Config.ENABLE_CRIT_HEIGHT_BONUS)
+		if(Config.ENABLE_CRIT_HEIGHT_BONUS)
 		{
 			crit_height_bonus = 0.008 * Math.min(25, Math.max(-25, target.getZ() - activeChar.getZ())) + 1.1;
 		}
@@ -834,23 +824,23 @@ public class Formulas
 		final double skill_mod = skill.isBehind() ? Config.BLOW_SKILL_CHANCE_MOD_ON_BEHIND : Config.BLOW_SKILL_CHANCE_MOD_ON_FRONT;
 		double chance = base_weapon_crit * buffs_mult * crit_height_bonus * skill_mod;
 		final double modDiff = profMod - vulnMod;
-		if (modDiff != 1)
+		if(modDiff != 1)
 		{
 			chance *= 1. + ((80 + modDiff) / 200.);
 		}
 
-		if (!target.isInCombat())
+		if(!target.isInCombat())
 		{
 			chance *= 1.1;
 		}
 
-		if (activeChar.isDistortedSpace())
+		if(activeChar.isDistortedSpace())
 		{
 			chance *= 1.3;
 		}
 		else
 		{
-			switch (PositionUtils.getDirectionTo(target, activeChar))
+			switch(PositionUtils.getDirectionTo(target, activeChar))
 			{
 				case BEHIND:
 					chance *= 1.3;
@@ -859,7 +849,7 @@ public class Formulas
 					chance *= 1.1;
 					break;
 				case FRONT:
-					if (skill.isBehind())
+					if(skill.isBehind())
 					{
 						chance = 3.0;
 					}
@@ -875,7 +865,7 @@ public class Formulas
 	/** Возвращает шанс крита в процентах */
 	public static boolean calcPCrit(Creature attacker, Creature target, Skill skill, boolean blow)
 	{
-		if (skill != null)
+		if(skill != null)
 		{
 			final boolean dexDep = attacker.getStat().calc(Stats.P_SKILL_CRIT_RATE_DEX_DEPENDENCE) > 0;
 			final double skillCritRate = skill.getCriticalRate();
@@ -886,10 +876,10 @@ public class Formulas
 			final double blowCritModifier = Config.ALT_BLOW_CRIT_RATE_MODIFIER;
 			double finalRate = critRate;
 			double statModifier;
-			if (dexDep)
+			if(dexDep)
 			{
 				statModifier = BaseStats.DEX.calcBonus(attacker);
-				if (blow)
+				if(blow)
 				{
 					statModifier *= Config.BLOW_SKILL_DEX_CHANCE_MOD;
 				}
@@ -905,7 +895,7 @@ public class Formulas
 
 			finalRate *= statModifier;
 
-			if (blow)
+			if(blow)
 			{
 				finalRate *= blowCritModifier;
 			}
@@ -920,13 +910,13 @@ public class Formulas
 			final double pCritChanceMode = getPCritChanceMode(attacker);
 			final double critRate = pCriticalHit * pCritChanceReceptive * pCritChanceMode;
 			double directionRate = 1.;
-			if (attacker.isDistortedSpace())
+			if(attacker.isDistortedSpace())
 			{
 				directionRate *= 1.4;
 			}
 			else
 			{
-				switch (PositionUtils.getDirectionTo(target, attacker))
+				switch(PositionUtils.getDirectionTo(target, attacker))
 				{
 					case BEHIND:
 						directionRate *= 1.4;
@@ -959,7 +949,7 @@ public class Formulas
 		final double skillCriticalRateMod = skill.getCriticalRateMod();
 		final double mCritChanceMode = getMCritChanceMode(attacker);
 		final double critRate;
-		if (target == null || !skill.isDebuff())
+		if(target == null || !skill.isDebuff())
 		{
 			critRate = mCriticalHit * skillCriticalRateMod * mCritChanceMode;
 			return Math.min(critRate, 320) > Rnd.get(1000);
@@ -971,7 +961,7 @@ public class Formulas
 		double finalRate = critRate;
 
 		double levelDiffChanceAdd = 0;
-		if (attacker.getLevel() >= 78 && target.getLevel() >= 78)
+		if(attacker.getLevel() >= 78 && target.getLevel() >= 78)
 		{
 			levelDiffChanceAdd = Math.sqrt(attacker.getLevel()) + ((attacker.getLevel() - target.getLevel()) / 25);
 			finalRate += levelDiffChanceAdd;
@@ -988,29 +978,25 @@ public class Formulas
 
 	public static boolean calcCastBreak(Creature target, boolean crit)
 	{
-		if (target == null || target.isInvulnerable() || target.isRaid() || !target.isCastingNow())
+		if(target == null || target.isInvulnerable() || target.isRaid() || !target.isCastingNow())
 			return false;
 
 		Skill skill = null;
 		SkillEntry skillEntry = target.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
 
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
 			skill = skillEntry.getTemplate();
-			if (skill.isPhysic() || skill.getSkillType() == SkillType.TAKECASTLE)
-			{
-				return false;
-			}
+			if(skill.isPhysic() || skill.getSkillType() == SkillType.TAKECASTLE)
+			{ return false; }
 		}
 
 		skillEntry = target.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
 			skill = skillEntry.getTemplate();
-			if (skill.isPhysic() || skill.getSkillType() == SkillType.TAKECASTLE)
-			{
-				return false;
-			}
+			if(skill.isPhysic() || skill.getSkillType() == SkillType.TAKECASTLE)
+			{ return false; }
 		}
 
 		return Rnd.chance(target.getStat().calc(Stats.CAST_INTERRUPT, crit ? 75 : 10, null, skill));
@@ -1019,55 +1005,49 @@ public class Formulas
 	/** Calculate delay (in milliseconds) before next ATTACK */
 	public static int calcPAtkSpd(double rate)
 	{
-		if (rate < 2)
-		{
-			return 2700;
-		}
+		if(rate < 2)
+		{ return 2700; }
 		return (int) (470000 / rate);
 	}
 
 	/** Calculate delay (in milliseconds) for skills cast */
 	public static int calcSkillCastSpd(Creature attacker, Skill skill, double skillTime)
 	{
-		if (skill.isMagic())
-		{
-			return (int) (skillTime * 333 / Math.max(attacker.getMAtkSpd(), 1));
-		}
-		if (skill.isPhysic())
-		{
-			return (int) (skillTime * 333 / Math.max(attacker.getPAtkSpd(), 1));
-		}
+		if(skill.isMagic())
+		{ return (int) (skillTime * 333 / Math.max(attacker.getMAtkSpd(), 1)); }
+		if(skill.isPhysic())
+		{ return (int) (skillTime * 333 / Math.max(attacker.getPAtkSpd(), 1)); }
 		return (int) skillTime;
 	}
 
 	/** Calculate reuse delay (in milliseconds) for skills */
 	public static long calcSkillReuseDelay(Creature actor, Skill skill)
 	{
-		if (actor.isPlayer())
+		if(actor.isPlayer())
 		{
 			final Player plr = actor.getPlayer();
 
 			final int effectId = skill.getRemoveReuseOnActiveEffect();
-			if (effectId != 0)
+			if(effectId != 0)
 			{
-				for (final Abnormal e : plr.getAbnormalList())
+				for(final Abnormal e : plr.getAbnormalList())
 				{
-					if (e.getSkill().getId() == effectId)
+					if(e.getSkill().getId() == effectId)
 						return 0;
 				}
 			}
 		}
 
 		long reuseDelay = skill.getReuseDelay();
-		if (actor.isMonster())
+		if(actor.isMonster())
 		{
 			reuseDelay = skill.getReuseForMonsters();
 		}
-		if (skill.isHandler() || skill.isItemSkill() || skill.isReuseDelayPermanent())
+		if(skill.isHandler() || skill.isItemSkill() || skill.isReuseDelayPermanent())
 			return reuseDelay;
-		if (skill.isMusic())
+		if(skill.isMusic())
 			return (long) actor.getStat().calc(Stats.MUSIC_REUSE_RATE, reuseDelay, null, skill);
-		if (skill.isMagic())
+		if(skill.isMagic())
 			return (long) actor.getStat().calc(Stats.MAGIC_REUSE_RATE, reuseDelay, null, skill);
 		return (long) actor.getStat().calc(Stats.PHYSIC_REUSE_RATE, reuseDelay, null, skill);
 	}
@@ -1076,29 +1056,29 @@ public class Formulas
 	{
 		double mod = 100;
 		// Get high or low bonus
-		if ((attacker.getZ() - target.getZ()) > 50)
+		if((attacker.getZ() - target.getZ()) > 50)
 		{
 			mod += HitCondBonusHolder.getInstance().getHitCondBonus(HitCondBonusType.HIGH);
 		}
-		else if ((attacker.getZ() - target.getZ()) < -50)
+		else if((attacker.getZ() - target.getZ()) < -50)
 		{
 			mod += HitCondBonusHolder.getInstance().getHitCondBonus(HitCondBonusType.LOW);
 		}
 
 		// Get weather bonus
-		if (GameTimeController.getInstance().isNowNight())
+		if(GameTimeController.getInstance().isNowNight())
 		{
 			mod += HitCondBonusHolder.getInstance().getHitCondBonus(HitCondBonusType.DARK);
 		}
 
-		if (attacker.isDistortedSpace())
+		if(attacker.isDistortedSpace())
 		{
 			mod += HitCondBonusHolder.getInstance().getHitCondBonus(HitCondBonusType.BACK);
 		}
 		else
 		{
 			final PositionUtils.TargetDirection direction = PositionUtils.getDirectionTo(attacker, target);
-			switch (direction)
+			switch(direction)
 			{
 				case BEHIND:
 					mod += HitCondBonusHolder.getInstance().getHitCondBonus(HitCondBonusType.BACK);
@@ -1143,21 +1123,21 @@ public class Formulas
 	public static boolean calcShldUse(Creature attacker, Creature target)
 	{
 		final WeaponTemplate template = target.getSecondaryWeaponTemplate();
-		if (template == null || template.getItemType() != WeaponTemplate.WeaponType.NONE)
+		if(template == null || template.getItemType() != WeaponTemplate.WeaponType.NONE)
 			return false;
 		final int angle = (int) target.getStat().calc(Stats.SHIELD_ANGLE, attacker, null);
-		if (angle < 360 && !PositionUtils.isFacing(target, attacker, angle))
+		if(angle < 360 && !PositionUtils.isFacing(target, attacker, angle))
 			return false;
 		return Rnd.chance((int) target.getStat().calc(Stats.SHIELD_RATE, attacker, null));
 	}
 
 	public static boolean calcEffectsSuccess(Creature caster, Creature target, Skill skill, int activateRate)
 	{
-		if (activateRate == -1)
+		if(activateRate == -1)
 			return true;
 
 		int magicLevel = skill.getMagicLevel();
-		if (magicLevel <= -1)
+		if(magicLevel <= -1)
 		{
 			magicLevel = target.getLevel() + 3;
 		}
@@ -1167,7 +1147,8 @@ public class Formulas
 		final double elementMod = calcAttributeBonus(caster, target, skill);
 		final double traitMod = calcGeneralTraitBonus(caster, target, skill.getTraitType(), false);
 		final double basicPropertyResist = getBasicPropertyResistBonus(skill.getBasicProperty(), target);
-		final double buffDebuffMod = 1. + ((skill.isDebuff() ? target.getStat().calc(Stats.RESIST_ABNORMAL_DEBUFF, 0) : target.getStat().calc(Stats.RESIST_ABNORMAL_BUFF, 0)) / 100.);
+		final double buffDebuffMod = 1.
+				+ ((skill.isDebuff() ? target.getStat().calc(Stats.RESIST_ABNORMAL_DEBUFF, 0) : target.getStat().calc(Stats.RESIST_ABNORMAL_BUFF, 0)) / 100.);
 		final double rate = baseMod * elementMod * traitMod * buffDebuffMod;
 		final double finalRate = traitMod > 0 ? Math.min(skill.getMaxChance(), Math.max(rate, skill.getMinChance())) * basicPropertyResist : 0;
 
@@ -1177,24 +1158,24 @@ public class Formulas
 
 	public static double calcDamageResists(Skill skill, Creature attacker, Creature defender, double value)
 	{
-		if (attacker == defender) // это дамаг от местности вроде ожога в лаве, наносится от своего имени
+		if(attacker == defender) // это дамаг от местности вроде ожога в лаве, наносится от своего имени
 			return value; // TODO: по хорошему надо учитывать защиту, но поскольку эти скиллы немагические
-							// то надо делать отдельный механизм
+		// то надо делать отдельный механизм
 		// DEPRECATED
-		if (attacker.isBoss())
+		if(attacker.isBoss())
 		{
 			value *= Config.RATE_EPIC_ATTACK;
 		}
-		else if (attacker.isRaid())
+		else if(attacker.isRaid())
 		{
 			value *= Config.RATE_RAID_ATTACK;
 		}
 
-		if (defender.isBoss())
+		if(defender.isBoss())
 		{
 			value /= Config.RATE_EPIC_DEFENSE;
 		}
-		else if (defender.isRaid())
+		else if(defender.isRaid())
 		{
 			value /= Config.RATE_RAID_DEFENSE;
 		}
@@ -1204,7 +1185,7 @@ public class Formulas
 		// если уровень игрока ниже чем на 2 и более уровней моба 78+, то его урон по
 		// мобу снижается
 		final int diff = defender.getLevel() - (pAttacker != null ? pAttacker.getLevel() : attacker.getLevel());
-		if (attacker.isPlayable() && defender.isMonster() && defender.getLevel() >= 78 && diff > 2)
+		if(attacker.isPlayable() && defender.isMonster() && defender.getLevel() >= 78 && diff > 2)
 		{
 			value *= .7 / Math.pow(diff - 2, .25);
 		}
@@ -1213,7 +1194,7 @@ public class Formulas
 		double power = 0.;
 
 		// использует элемент умения
-		if (skill != null)
+		if(skill != null)
 		{
 			element = skill.getTemplate().getElement();
 			power = skill.getTemplate().getElementPower();
@@ -1224,10 +1205,8 @@ public class Formulas
 			element = getAttackElement(attacker, defender);
 		}
 
-		if (element == Element.NONE)
-		{
-			return value;
-		}
+		if(element == Element.NONE)
+		{ return value; }
 
 		return value * getElementMod(defender.getStat().calc(element.getDefence(), 0.), attacker.getStat().calc(element.getAttack(), power));
 	}
@@ -1246,11 +1225,11 @@ public class Formulas
 	private static double getElementMod(double defense, double attack)
 	{
 		double diff = attack - defense;
-		if (diff > 0)
+		if(diff > 0)
 		{
 			diff = 1.025 + Math.sqrt(Math.pow(Math.abs(diff), 3) / 2.) * 0.0001;
 		}
-		else if (diff < 0)
+		else if(diff < 0)
 		{
 			diff = 0.975 - Math.sqrt(Math.pow(Math.abs(diff), 3) / 2.) * 0.0001;
 		}
@@ -1275,20 +1254,20 @@ public class Formulas
 	{
 		double val, max = Double.MIN_VALUE;
 		Element result = Element.NONE;
-		for (final Element e : Element.VALUES)
+		for(final Element e : Element.VALUES)
 		{
 			val = attacker.getStat().calc(e.getAttack(), 0.);
-			if (val <= 0.)
+			if(val <= 0.)
 			{
 				continue;
 			}
 
-			if (target != null)
+			if(target != null)
 			{
 				val -= target.getStat().calc(e.getDefence(), 0.);
 			}
 
-			if (val > max)
+			if(val > max)
 			{
 				result = e;
 				max = val;
@@ -1300,11 +1279,11 @@ public class Formulas
 
 	public static int calculateKarmaLost(Player player, long exp)
 	{
-		if (Config.RATE_KARMA_LOST_STATIC != -1)
+		if(Config.RATE_KARMA_LOST_STATIC != -1)
 			return Config.RATE_KARMA_LOST_STATIC;
 
 		final double karmaLooseMul = KarmaIncreaseDataHolder.getInstance().getData(player.getLevel());
-		if (exp > 0)
+		if(exp > 0)
 		{ // Received exp
 			exp /= Config.KARMA_RATE_KARMA_LOST == -1 ? Config.RATE_XP_BY_LVL[player.getLevel()] : Config.KARMA_RATE_KARMA_LOST;
 		}
@@ -1328,7 +1307,7 @@ public class Formulas
 
 	public static double getAbnormalResist(BasicProperty basicProperty, Creature target)
 	{
-		switch (basicProperty)
+		switch(basicProperty)
 		{
 			case PHYSICAL_ABNORMAL_RESIST:
 				return target.getPhysicalAbnormalResist();
@@ -1356,16 +1335,16 @@ public class Formulas
 		int attack_attribute;
 		int defence_attribute;
 
-		if (skill != null)
+		if(skill != null)
 		{
-			if ((skill.getElement() == Element.NONE) || (skill.getElement() == Element.NONE_ARMOR))
+			if((skill.getElement() == Element.NONE) || (skill.getElement() == Element.NONE_ARMOR))
 			{
 				attack_attribute = 0;
 				defence_attribute = target.getDefence(Element.NONE_ARMOR);
 			}
 			else
 			{
-				if (attacker.getAttackElement() == skill.getElement())
+				if(attacker.getAttackElement() == skill.getElement())
 				{
 					attack_attribute = attacker.getAttack(attacker.getAttackElement()) + skill.getElementPower();
 					defence_attribute = target.getDefence(attacker.getAttackElement());
@@ -1384,10 +1363,10 @@ public class Formulas
 		}
 
 		final int diff = attack_attribute - defence_attribute;
-		if (diff > 0)
+		if(diff > 0)
 			return Math.min(1.025 + (Math.sqrt(Math.pow(diff, 3) / 2) * 0.0001), 1.25);
 
-		if (diff < 0)
+		if(diff < 0)
 			return Math.max(0.975 - (Math.sqrt(Math.pow(-diff, 3) / 2) * 0.0001), 0.75);
 
 		return 1;
@@ -1395,7 +1374,7 @@ public class Formulas
 
 	public static double calcGeneralTraitBonus(Creature attacker, Creature target, SkillTrait trait, boolean ignoreResistance)
 	{
-		if (trait == SkillTrait.NONE)
+		if(trait == SkillTrait.NONE)
 			return 1.;
 
 		final Stats defenceStat = trait.getDefence();
@@ -1405,17 +1384,17 @@ public class Formulas
 		final Stats attackStat = trait.getAttack();
 		final double attackerAttackModifier = ((attackStat == null ? 0. : attacker.getStat().calc(attackStat) * trait.getAttackMod()) + 100.) / 100.;
 
-		switch (trait.getType())
+		switch(trait.getType())
 		{
 			case WEAKNESS:
 			{
-				if (attackerAttackModifier == 1. || targetDefenceModifier == 1.)
+				if(attackerAttackModifier == 1. || targetDefenceModifier == 1.)
 					return 1.;
 				break;
 			}
 			case RESISTANCE:
 			{
-				if (ignoreResistance)
+				if(ignoreResistance)
 					return 1.;
 				break;
 			}
@@ -1423,7 +1402,7 @@ public class Formulas
 				return 1.;
 		}
 
-		if (targetDefence == Double.POSITIVE_INFINITY)
+		if(targetDefence == Double.POSITIVE_INFINITY)
 			return 0.;
 
 		final double result = (attackerAttackModifier - targetDefenceModifier) + 1.;
@@ -1434,7 +1413,7 @@ public class Formulas
 	{
 		final SkillTrait type = attacker.getBaseStats().getAttackType().getTrait();
 		final Stats defenceStat = type.getDefence();
-		if (defenceStat != null)
+		if(defenceStat != null)
 		{
 			final double targetDefenceModifier = (target.getStat().calc(defenceStat) * type.getDefenceMod() + 100.) / 100.;
 			final double result = targetDefenceModifier - 1.;
@@ -1446,16 +1425,16 @@ public class Formulas
 	public static double calcAttackTraitBonus(Creature attacker, Creature target)
 	{
 		final double weaponTraitBonus = calcWeaponTraitBonus(attacker, target);
-		if (weaponTraitBonus == 0)
+		if(weaponTraitBonus == 0)
 			return 0;
 
 		double weaknessBonus = 1.;
-		for (final SkillTrait traitType : SkillTrait.VALUES)
+		for(final SkillTrait traitType : SkillTrait.VALUES)
 		{
-			if (traitType.getType() == SkillTraitType.WEAKNESS)
+			if(traitType.getType() == SkillTraitType.WEAKNESS)
 			{
 				weaknessBonus *= calcGeneralTraitBonus(attacker, target, traitType, true);
-				if (weaknessBonus == 0)
+				if(weaknessBonus == 0)
 					return 0;
 			}
 		}
@@ -1467,11 +1446,11 @@ public class Formulas
 		_lock.lock();
 		try
 		{
-			if ((basicProperty == BasicProperty.NONE) || !target.hasBasicPropertyResist())
+			if((basicProperty == BasicProperty.NONE) || !target.hasBasicPropertyResist())
 				return 1.0;
 
 			final BasicPropertyResist resist = target.getBasicPropertyResist(basicProperty);
-			switch (resist.getResistLevel())
+			switch(resist.getResistLevel())
 			{
 				case 0:
 					return 1.0;
@@ -1500,7 +1479,7 @@ public class Formulas
 		_lock.lock();
 		try
 		{
-			switch (attackType)
+			switch(attackType)
 			{
 				// Bows
 				case BOW:
@@ -1514,7 +1493,7 @@ public class Formulas
 				case DUAL:
 				case DUALFIST:
 				{
-					if (secondHit)
+					if(secondHit)
 						return (int) (totalAttackTime * 0.6);
 					return (int) (totalAttackTime * 0.2426);
 				}

@@ -16,24 +16,25 @@ public class LethalShot extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
-		if (getPower() <= 0)
+		if(getPower() <= 0)
 			return;
 
 		final Creature realTarget = reflected ? activeChar : target;
 		final AttackInfo info = Formulas.calcSkillPDamage(activeChar, realTarget, this, false, isSSPossible());
-		if (info == null)
+		if(info == null)
 			return;
 
-		realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit || info.blow, false, false, info.elementalDamage, info.elementalCrit);
-		if (!info.miss || info.damage >= 1)
+		realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit
+				|| info.blow, false, false, info.elementalDamage, info.elementalCrit);
+		if(!info.miss || info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
-			else if (!reflected)
+			else if(!reflected)
 				realTarget.doCounterAttack(this, activeChar, false);
 		}
 	}

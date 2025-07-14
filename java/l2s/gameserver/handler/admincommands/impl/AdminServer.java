@@ -32,10 +32,10 @@ public class AdminServer implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Menu)
+		if(!activeChar.getPlayerAccess().Menu)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_server:
 				try
@@ -43,20 +43,20 @@ public class AdminServer implements IAdminCommandHandler
 					String val = fullString.substring(13);
 					showHelpPage(activeChar, val);
 				}
-				catch (StringIndexOutOfBoundsException e)
+				catch(StringIndexOutOfBoundsException e)
 				{
 					// case of empty filename
 				}
 				break;
 			case admin_check_actor:
 				GameObject obj = activeChar.getTarget();
-				if (obj == null)
+				if(obj == null)
 				{
 					activeChar.sendMessage("target == null");
 					return false;
 				}
 
-				if (!obj.isCreature())
+				if(!obj.isCreature())
 				{
 					activeChar.sendMessage("target is not a character");
 					return false;
@@ -64,14 +64,14 @@ public class AdminServer implements IAdminCommandHandler
 
 				Creature target = (Creature) obj;
 				CharacterAI ai = target.getAI();
-				if (ai == null)
+				if(ai == null)
 				{
 					activeChar.sendMessage("ai == null");
 					return false;
 				}
 
 				Creature actor = ai.getActor();
-				if (actor == null)
+				if(actor == null)
 				{
 					activeChar.sendMessage("actor == null");
 					return false;
@@ -80,7 +80,7 @@ public class AdminServer implements IAdminCommandHandler
 				activeChar.sendMessage("actor: " + actor);
 				break;
 			case admin_setvar:
-				if (wordList.length != 3)
+				if(wordList.length != 3)
 				{
 					activeChar.sendMessage("Incorrect argument count!!!");
 					return false;
@@ -89,7 +89,7 @@ public class AdminServer implements IAdminCommandHandler
 				activeChar.sendMessage("Value changed.");
 				break;
 			case admin_set_ai_interval:
-				if (wordList.length != 2)
+				if(wordList.length != 2)
 				{
 					activeChar.sendMessage("Incorrect argument count!!!");
 					return false;
@@ -97,31 +97,31 @@ public class AdminServer implements IAdminCommandHandler
 				int interval = Integer.parseInt(wordList[1]);
 				int count = 0;
 				int count2 = 0;
-				for (final NpcInstance npc : GameObjectsStorage.getNpcs())
+				for(final NpcInstance npc : GameObjectsStorage.getNpcs())
 				{
-					if (npc == null || npc instanceof RaidBossInstance)
+					if(npc == null || npc instanceof RaidBossInstance)
 						continue;
 					final CharacterAI char_ai = npc.getAI();
-					if (char_ai instanceof DefaultAI)
+					if(char_ai instanceof DefaultAI)
 						try
 						{
 							final java.lang.reflect.Field field = l2s.gameserver.ai.DefaultAI.class.getDeclaredField("AI_TASK_DELAY");
 							field.setAccessible(true);
 							field.set(char_ai, interval);
 
-							if (char_ai.isActive())
+							if(char_ai.isActive())
 							{
 								char_ai.stopAITask();
 								count++;
 								WorldRegion region = npc.getCurrentRegion();
-								if (region != null && region.isActive())
+								if(region != null && region.isActive())
 								{
 									char_ai.startAITask();
 									count2++;
 								}
 							}
 						}
-						catch (Exception e)
+						catch(Exception e)
 						{
 
 						}

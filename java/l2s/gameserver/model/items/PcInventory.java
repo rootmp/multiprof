@@ -91,20 +91,16 @@ public class PcInventory extends Inventory
 	public int getPaperdollVariation1Id(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if ((item != null) && item.isAugmented())
-		{
-			return item.getVariation1Id();
-		}
+		if((item != null) && item.isAugmented())
+		{ return item.getVariation1Id(); }
 		return 0;
 	}
 
 	public int getPaperdollVariation2Id(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if ((item != null) && item.isAugmented())
-		{
-			return item.getVariation2Id();
-		}
+		if((item != null) && item.isAugmented())
+		{ return item.getVariation2Id(); }
 		return 0;
 	}
 
@@ -115,9 +111,9 @@ public class PcInventory extends Inventory
 
 		int itemId = super.getPaperdollVisualId(slot);
 
-		if (player.isInTrainingCamp())
+		if(player.isInTrainingCamp())
 		{
-			if ((slot == PAPERDOLL_RHAND) || (slot == PAPERDOLL_LRHAND))
+			if((slot == PAPERDOLL_RHAND) || (slot == PAPERDOLL_LRHAND))
 			{
 				itemId = 135;
 			}
@@ -139,9 +135,9 @@ public class PcInventory extends Inventory
 	 */
 	public void validateItems()
 	{
-		for (ItemInstance item : _paperdoll)
+		for(ItemInstance item : _paperdoll)
 		{
-			if ((item != null) && ((ItemFunctions.checkIfCanEquip(getActor(), item) != null) || !item.getTemplate().testCondition(getActor(), item, false)))
+			if((item != null) && ((ItemFunctions.checkIfCanEquip(getActor(), item) != null) || !item.getTemplate().testCondition(getActor(), item, false)))
 			{
 				unEquipItem(item);
 				getActor().sendDisarmMessage(item);
@@ -154,17 +150,17 @@ public class PcInventory extends Inventory
 		final Player actor = getActor();
 
 		int flags = 0;
-		for (ItemInstance item : getItems())
+		for(ItemInstance item : getItems())
 		{
 			flags |= item.onRefreshEquip(actor, false);
 		}
 
-		if ((flags & UPDATE_STATS_FLAG) == UPDATE_STATS_FLAG)
+		if((flags & UPDATE_STATS_FLAG) == UPDATE_STATS_FLAG)
 		{
 			actor.updateStats();
 		}
 
-		if ((flags & UPDATE_SKILLS_FLAG) == UPDATE_SKILLS_FLAG)
+		if((flags & UPDATE_SKILLS_FLAG) == UPDATE_SKILLS_FLAG)
 		{
 			actor.sendSkillList();
 		}
@@ -172,7 +168,7 @@ public class PcInventory extends Inventory
 
 	public void refreshEquip(ItemInstance item)
 	{
-		if (containsItem(item))
+		if(containsItem(item))
 		{
 			item.onRefreshEquip(getActor());
 		}
@@ -184,18 +180,18 @@ public class PcInventory extends Inventory
 	public void sort(int[][] order)
 	{
 		boolean needSort = false;
-		for (int[] element : order)
+		for(int[] element : order)
 		{
 			ItemInstance item = getItemByObjectId(element[0]);
-			if (item == null)
+			if(item == null)
 			{
 				continue;
 			}
-			if (item.getLocation() != ItemLocation.INVENTORY)
+			if(item.getLocation() != ItemLocation.INVENTORY)
 			{
 				continue;
 			}
-			if (item.getLocData() == element[1])
+			if(item.getLocData() == element[1])
 			{
 				continue;
 			}
@@ -203,7 +199,7 @@ public class PcInventory extends Inventory
 			item.setJdbcState(JdbcEntityState.UPDATED); // lazy update
 			needSort = true;
 		}
-		if (needSort)
+		if(needSort)
 		{
 			Collections.sort(_items, ItemOrderComparator.getInstance());
 		}
@@ -212,16 +208,14 @@ public class PcInventory extends Inventory
 	public ItemInstance findArrowForBow(ItemTemplate bow)
 	{
 		ItemInstance res = null;
-		for (ItemInstance temp : getItems())
+		for(ItemInstance temp : getItems())
 		{
-			if ((temp.getItemType() == EtcItemType.ARROW) || (temp.getItemType() == EtcItemType.ARROW_QUIVER))
+			if((temp.getItemType() == EtcItemType.ARROW) || (temp.getItemType() == EtcItemType.ARROW_QUIVER))
 			{
-				if (bow.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
+				if(bow.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
 				{
-					if (temp.getLocation() == ItemLocation.INVENTORY)
-					{
-						return temp;
-					}
+					if(temp.getLocation() == ItemLocation.INVENTORY)
+					{ return temp; }
 				}
 			}
 		}
@@ -231,16 +225,14 @@ public class PcInventory extends Inventory
 	public ItemInstance findArrowForCrossbow(ItemTemplate crossbow)
 	{
 		ItemInstance res = null;
-		for (ItemInstance temp : getItems())
+		for(ItemInstance temp : getItems())
 		{
-			if ((temp.getItemType() == EtcItemType.BOLT) || (temp.getItemType() == EtcItemType.BOLT_QUIVER))
+			if((temp.getItemType() == EtcItemType.BOLT) || (temp.getItemType() == EtcItemType.BOLT_QUIVER))
 			{
-				if (crossbow.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
+				if(crossbow.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
 				{
-					if (temp.getLocation() == ItemLocation.INVENTORY)
-					{
-						return temp;
-					}
+					if(temp.getLocation() == ItemLocation.INVENTORY)
+					{ return temp; }
 				}
 			}
 		}
@@ -250,16 +242,14 @@ public class PcInventory extends Inventory
 	public ItemInstance findOrbForFirearms(ItemTemplate firearms)
 	{
 		ItemInstance res = null;
-		for (ItemInstance temp : getItems())
+		for(ItemInstance temp : getItems())
 		{
-			if (temp.getItemType() == EtcItemType.ORB)
+			if(temp.getItemType() == EtcItemType.ORB)
 			{
-				if (firearms.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
+				if(firearms.getGrade().extOrdinal() == temp.getGrade().extOrdinal())
 				{
-					if (temp.getLocation() == ItemLocation.INVENTORY)
-					{
-						return temp;
-					}
+					if(temp.getLocation() == ItemLocation.INVENTORY)
+					{ return temp; }
 				}
 			}
 		}
@@ -268,10 +258,8 @@ public class PcInventory extends Inventory
 
 	public void lockItems(LockType lock, int[] items)
 	{
-		if (_lockType != LockType.NONE)
-		{
-			return;
-		}
+		if(_lockType != LockType.NONE)
+		{ return; }
 
 		_lockType = lock;
 		_lockItems = items;
@@ -281,10 +269,8 @@ public class PcInventory extends Inventory
 
 	public void unlock()
 	{
-		if (_lockType == LockType.NONE)
-		{
-			return;
-		}
+		if(_lockType == LockType.NONE)
+		{ return; }
 
 		_lockType = LockType.NONE;
 		_lockItems = ArrayUtils.EMPTY_INT_ARRAY;
@@ -294,7 +280,7 @@ public class PcInventory extends Inventory
 
 	public boolean isLockedItem(ItemInstance item)
 	{
-		switch (_lockType)
+		switch(_lockType)
 		{
 			case INCLUDE:
 				return ArrayUtils.contains(_lockItems, item.getItemId());
@@ -320,12 +306,12 @@ public class PcInventory extends Inventory
 	{
 		super.onRestoreItem(item);
 
-		if (item.getTemplate().isRune())
+		if(item.getTemplate().isRune())
 		{
 			item.onEquip(-1, getActor());
 		}
 
-		for (QuestState state : _owner.getAllQuestsStates())
+		for(QuestState state : _owner.getAllQuestsStates())
 		{
 			state.getQuest().notifyUpdateItem(item, state);
 		}
@@ -337,27 +323,27 @@ public class PcInventory extends Inventory
 		Player p = getActor();
 		super.onAddItem(item);
 
-		if (item.getItemId() == 999999999)
+		if(item.getItemId() == 999999999)
 		{ // chaos aura
 			p.broadcastUserInfo(true);
 		}
 
-		if (item.getTemplate().isRune())
+		if(item.getTemplate().isRune())
 		{
 			item.onEquip(-1, getActor());
 		}
 
-		if (item.getTemplate().isArrow() || item.getTemplate().isBolt() || item.getTemplate().isQuiver())
+		if(item.getTemplate().isArrow() || item.getTemplate().isBolt() || item.getTemplate().isQuiver())
 		{
 			getActor().checkAndEquipArrows();
 		}
 
-		for (QuestState state : _owner.getAllQuestsStates())
+		for(QuestState state : _owner.getAllQuestsStates())
 		{
 			state.getQuest().notifyUpdateItem(item, state);
 		}
 
-		if (item.getTemplate().isQuest())
+		if(item.getTemplate().isQuest())
 		{
 			refreshItemsSize();
 		}
@@ -368,12 +354,12 @@ public class PcInventory extends Inventory
 	{
 		super.onModifyItem(item);
 
-		for (QuestState state : _owner.getAllQuestsStates())
+		for(QuestState state : _owner.getAllQuestsStates())
 		{
 			state.getQuest().notifyUpdateItem(item, state);
 		}
 
-		if (item.getTemplate().isQuest())
+		if(item.getTemplate().isQuest())
 		{
 			refreshItemsSize();
 		}
@@ -387,36 +373,36 @@ public class PcInventory extends Inventory
 		Player owner = getActor();
 		owner.removeItemFromShortCut(item.getObjectId());
 
-		if (item.getItemId() == 999999999)
+		if(item.getItemId() == 999999999)
 		{
 			owner.broadcastUserInfo(true);
 		}
 
-		if (item.getTemplate().isRune())
+		if(item.getTemplate().isRune())
 		{
 			item.onUnequip(-1, getActor());
 		}
 
-		if (owner.getMountControlItemObjId() == item.getObjectId())
+		if(owner.getMountControlItemObjId() == item.getObjectId())
 		{
 			owner.setMount(null);
 		}
 
-		if (owner.getPetControlItem() == item)
+		if(owner.getPetControlItem() == item)
 		{
 			PetInstance pet = owner.getPet();
-			if (pet != null)
+			if(pet != null)
 			{
 				pet.unSummon(false);
 			}
 		}
 
-		for (QuestState state : _owner.getAllQuestsStates())
+		for(QuestState state : _owner.getAllQuestsStates())
 		{
 			state.getQuest().notifyUpdateItem(item, state);
 		}
 
-		if (item.getTemplate().isQuest())
+		if(item.getTemplate().isQuest())
 		{
 			refreshItemsSize();
 		}
@@ -425,12 +411,10 @@ public class PcInventory extends Inventory
 	@Override
 	protected boolean onEquip(int slot, ItemInstance item)
 	{
-		if (!super.onEquip(slot, item))
-		{
-			return false;
-		}
+		if(!super.onEquip(slot, item))
+		{ return false; }
 
-		if (item.isShadowItem())
+		if(item.isShadowItem())
 		{
 			item.startManaConsumeTask(new ManaConsumeTask(item));
 		}
@@ -443,14 +427,14 @@ public class PcInventory extends Inventory
 	{
 		boolean equipped = super.onReequip(slot, newItem, oldItem);
 
-		if (oldItem.isShadowItem())
+		if(oldItem.isShadowItem())
 		{
 			oldItem.stopManaConsumeTask();
 		}
 
-		if (equipped)
+		if(equipped)
 		{
-			if (newItem.isShadowItem())
+			if(newItem.isShadowItem())
 			{
 				newItem.startManaConsumeTask(new ManaConsumeTask(newItem));
 			}
@@ -464,7 +448,7 @@ public class PcInventory extends Inventory
 	{
 		super.onUnequip(slot, item);
 
-		if (item.isShadowItem())
+		if(item.isShadowItem())
 		{
 			item.stopManaConsumeTask();
 		}
@@ -480,7 +464,7 @@ public class PcInventory extends Inventory
 		{
 			Collection<ItemInstance> items = _itemsDAO.getItemsByOwnerIdAndLoc(ownerId, getBaseLocation());
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				_items.add(item);
 				onRestoreItem(item);
@@ -489,16 +473,17 @@ public class PcInventory extends Inventory
 
 			items = _itemsDAO.getItemsByOwnerIdAndLoc(ownerId, getEquipLocation());
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				_items.add(item);
 				onRestoreItem(item);
-				if ((item.getEquipSlot() >= PAPERDOLL_MAX) || !checkPaperdollItem(item, item.getEquipSlot()) || (getPaperdollItem(item.getEquipSlot()) != null))
+				if((item.getEquipSlot() >= PAPERDOLL_MAX) || !checkPaperdollItem(item, item.getEquipSlot())
+						|| (getPaperdollItem(item.getEquipSlot()) != null))
 				{
 					// Неверный слот - возвращаем предмет в инвентарь.
 					item.setLocation(getBaseLocation());
 					item.setLocData(0); // Немного некрасиво, но инвентарь еще весь не загружен и свободный слот не
-										// найти
+					// найти
 					item.setEquipped(false);
 					item.setJdbcState(JdbcEntityState.UPDATED);
 					continue;
@@ -538,15 +523,15 @@ public class PcInventory extends Inventory
 		Player actor = getActor();
 
 		actor.sendPacket(new InventoryUpdatePacket(actor).addNewItem(item));
-		if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+		if(item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 		{
 			actor.sendPacket(new ExAdenaInvenCount(actor));
 		}
-		if (item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
+		if(item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
 		{
 			actor.sendPacket(new ExBloodyCoinCount(actor));
 		}
-		if (item.getTemplate().getAgathionMaxEnergy() > 0)
+		if(item.getTemplate().getAgathionMaxEnergy() > 0)
 		{
 			actor.sendPacket(new ExBR_AgathionEnergyInfoPacket(1, item));
 		}
@@ -558,24 +543,24 @@ public class PcInventory extends Inventory
 		Player actor = getActor();
 
 		InventoryUpdatePacket iu = new InventoryUpdatePacket(actor);
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			iu.addModifiedItem(item);
 		}
 
 		actor.sendPacket(iu);
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
-			if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+			if(item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 			{
 				actor.sendPacket(new ExAdenaInvenCount(actor));
 			}
-			if (item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
+			if(item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
 			{
 				actor.sendPacket(new ExBloodyCoinCount(actor));
 			}
-			if (item.getTemplate().getAgathionMaxEnergy() > 0)
+			if(item.getTemplate().getAgathionMaxEnergy() > 0)
 			{
 				actor.sendPacket(new ExBR_AgathionEnergyInfoPacket(1, item));
 			}
@@ -587,11 +572,11 @@ public class PcInventory extends Inventory
 	{
 		Player actor = getActor();
 		actor.sendPacket(new InventoryUpdatePacket(actor).addRemovedItem(item));
-		if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+		if(item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 		{
 			actor.sendPacket(new ExAdenaInvenCount(actor));
 		}
-		if (item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
+		if(item.getItemId() == ItemTemplate.ITEM_ID_MONEY_L)
 		{
 			actor.sendPacket(new ExBloodyCoinCount(actor));
 		}
@@ -607,7 +592,7 @@ public class PcInventory extends Inventory
 	@Override
 	protected void onItemVisualTimeEnd(ItemInstance item)
 	{
-		if (item.isEquipped())
+		if(item.isEquipped())
 		{
 			sendEquipInfo(item.getEquipSlot());
 		}
@@ -628,7 +613,7 @@ public class PcInventory extends Inventory
 
 	public void stopTimers()
 	{
-		for (ItemInstance item : getItems())
+		for(ItemInstance item : getItems())
 		{
 			item.stopManaConsumeTask();
 		}
@@ -648,43 +633,41 @@ public class PcInventory extends Inventory
 		{
 			Player player = getActor();
 
-			if (!item.isEquipped())
-			{
-				return;
-			}
+			if(!item.isEquipped())
+			{ return; }
 
 			int mana = item.getShadowLifeTime();
 
-			if (mana > 0)
+			if(mana > 0)
 			{
 				item.setLifeTime(item.getLifeTime() - 1);
 				mana = item.getShadowLifeTime();
 			}
 
-			if (mana <= 0)
+			if(mana <= 0)
 			{
 				destroyItem(item);
 			}
 
 			SystemMessage sm = null;
-			if (mana == 10)
+			if(mana == 10)
 			{
 				sm = new SystemMessage(SystemMessage.S1S_REMAINING_MANA_IS_NOW_10);
 			}
-			else if (mana == 5)
+			else if(mana == 5)
 			{
 				sm = new SystemMessage(SystemMessage.S1S_REMAINING_MANA_IS_NOW_5);
 			}
-			else if (mana == 1)
+			else if(mana == 1)
 			{
 				sm = new SystemMessage(SystemMessage.S1S_REMAINING_MANA_IS_NOW_1_IT_WILL_DISAPPEAR_SOON);
 			}
-			else if (mana <= 0)
+			else if(mana <= 0)
 			{
 				sm = new SystemMessage(SystemMessage.S1S_REMAINING_MANA_IS_NOW_0_AND_THE_ITEM_HAS_DISAPPEARED);
 			}
 
-			if (sm != null)
+			if(sm != null)
 			{
 				sm.addItemName(item.getItemId());
 				player.sendPacket(sm);
@@ -701,9 +684,9 @@ public class PcInventory extends Inventory
 	private void refreshItemsSize()
 	{
 		int size = 0;
-		for (ItemInstance item : getItems())
+		for(ItemInstance item : getItems())
 		{
-			if (item.getTemplate().isQuest())
+			if(item.getTemplate().isQuest())
 			{
 				size++;
 			}

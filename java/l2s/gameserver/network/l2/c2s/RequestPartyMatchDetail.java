@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -28,24 +29,24 @@ public class RequestPartyMatchDetail implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.getMatchingRoom() != null)
+		if(player.getMatchingRoom() != null)
 			return;
 
-		if (_roomId > 0)
+		if(_roomId > 0)
 		{
 			MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.PARTY_MATCHING, _roomId);
-			if (room == null)
+			if(room == null)
 				return;
 
 			room.addMember(player);
 		}
 		else
 		{
-			for (MatchingRoom room : MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.PARTY_MATCHING, _locations, _level == 1, player))
-				if (room.addMember(player))
+			for(MatchingRoom room : MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.PARTY_MATCHING, _locations, _level == 1, player))
+				if(room.addMember(player))
 					break;
 		}
 	}

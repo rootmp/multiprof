@@ -30,13 +30,15 @@ public class AdminGeodata implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanReload)
+		if(!activeChar.getPlayerAccess().CanReload)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_geo_z:
-				activeChar.sendMessage("GeoEngine: Geo_Lower_Z = " + GeoEngine.getLowerHeight(activeChar.getLoc(), activeChar.getGeoIndex()) + " Geo_Upper_Z = " + GeoEngine.getUpperHeight(activeChar.getLoc(), activeChar.getGeoIndex()) + " Loc_Z = " + activeChar.getZ() + " Corrected_Z = " + activeChar.getGeoZ(activeChar.getLoc()));
+				activeChar.sendMessage("GeoEngine: Geo_Lower_Z = " + GeoEngine.getLowerHeight(activeChar.getLoc(), activeChar.getGeoIndex())
+						+ " Geo_Upper_Z = " + GeoEngine.getUpperHeight(activeChar.getLoc(), activeChar.getGeoIndex()) + " Loc_Z = " + activeChar.getZ()
+						+ " Corrected_Z = " + activeChar.getGeoZ(activeChar.getLoc()));
 				break;
 			case admin_geo_type:
 				int type = GeoEngine.getType(activeChar.getX(), activeChar.getY(), activeChar.getGeoIndex());
@@ -45,19 +47,19 @@ public class AdminGeodata implements IAdminCommandHandler
 			case admin_geo_nswe:
 				String result = "";
 				byte nswe = GeoEngine.getLowerNSWE(activeChar.getX(), activeChar.getY(), activeChar.getZ(), activeChar.getGeoIndex());
-				if ((nswe & 8) == 0)
+				if((nswe & 8) == 0)
 					result += " N";
-				if ((nswe & 4) == 0)
+				if((nswe & 4) == 0)
 					result += " S";
-				if ((nswe & 2) == 0)
+				if((nswe & 2) == 0)
 					result += " W";
-				if ((nswe & 1) == 0)
+				if((nswe & 1) == 0)
 					result += " E";
 				activeChar.sendMessage("GeoEngine: Geo_NSWE -> " + nswe + "->" + result);
 				break;
 			case admin_geo_los:
-				if (activeChar.getTarget() != null)
-					if (GeoEngine.canSeeTarget(activeChar, activeChar.getTarget()))
+				if(activeChar.getTarget() != null)
+					if(GeoEngine.canSeeTarget(activeChar, activeChar.getTarget()))
 						activeChar.sendMessage("GeoEngine: Can See Target");
 					else
 						activeChar.sendMessage("GeoEngine: Can't See Target");
@@ -65,7 +67,7 @@ public class AdminGeodata implements IAdminCommandHandler
 					activeChar.sendMessage("None Target!");
 				break;
 			case admin_geo_load:
-				if (wordList.length != 3)
+				if(wordList.length != 3)
 					activeChar.sendMessage("Usage: //geo_load <regionX> <regionY>");
 				else
 				{
@@ -74,14 +76,14 @@ public class AdminGeodata implements IAdminCommandHandler
 						int rx = Byte.parseByte(wordList[1]);
 						int ry = Byte.parseByte(wordList[2]);
 
-						if (rx < Config.GEO_X_FIRST || ry < Config.GEO_Y_FIRST || rx > Config.GEO_X_LAST || ry > Config.GEO_Y_LAST)
+						if(rx < Config.GEO_X_FIRST || ry < Config.GEO_Y_FIRST || rx > Config.GEO_X_LAST || ry > Config.GEO_Y_LAST)
 						{
 							activeChar.sendMessage("Region [" + rx + "," + ry + "] is out of range!");
 							return false;
 						}
 
 						File geoDir = new File(Config.GEODATA_ROOT, "");
-						if (!geoDir.exists() || !geoDir.isDirectory())
+						if(!geoDir.exists() || !geoDir.isDirectory())
 						{
 							activeChar.sendMessage("GeoEngine: Files missing, loading aborted.");
 							return false;
@@ -89,9 +91,9 @@ public class AdminGeodata implements IAdminCommandHandler
 
 						int blobOff;
 						File geoFile;
-						if ((geoFile = new File(geoDir, String.format("%2d_%2d" + GeoEngine.L2S_EXTENSION, rx, ry))).exists())
+						if((geoFile = new File(geoDir, String.format("%2d_%2d" + GeoEngine.L2S_EXTENSION, rx, ry))).exists())
 							blobOff = 4;
-						else if ((geoFile = new File(geoDir, String.format("%2d_%2d" + GeoEngine.L2J_EXTENSION, rx, ry))).exists())
+						else if((geoFile = new File(geoDir, String.format("%2d_%2d" + GeoEngine.L2J_EXTENSION, rx, ry))).exists())
 							blobOff = 0;
 						else
 						{
@@ -99,19 +101,19 @@ public class AdminGeodata implements IAdminCommandHandler
 							return false;
 						}
 
-						if (GeoEngine.LoadGeodataFile(rx, ry, geoFile, blobOff))
+						if(GeoEngine.LoadGeodataFile(rx, ry, geoFile, blobOff))
 							activeChar.sendMessage("GeoEngine: Region [" + rx + "," + ry + "] loaded.");
 						else
 							activeChar.sendMessage("GeoEngine: Region [" + rx + "," + ry + "] not loaded.");
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						activeChar.sendMessage(new CustomMessage("common.Error"));
 					}
 				}
 				break;
 			case admin_geo_dump:
-				if (wordList.length > 2)
+				if(wordList.length > 2)
 				{
 					// GeoEngine.DumpGeodataFileMap(Byte.parseByte(wordList[1]),
 					// Byte.parseByte(wordList[2]));
@@ -121,14 +123,14 @@ public class AdminGeodata implements IAdminCommandHandler
 				activeChar.sendMessage("Actual geo square saved.");
 				break;
 			case admin_geo_trace:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 				{
 					activeChar.sendMessage("Usage: //geo_trace on|off");
 					return false;
 				}
-				if (wordList[1].equalsIgnoreCase("on"))
+				if(wordList[1].equalsIgnoreCase("on"))
 					activeChar.setVar("trace", "1", -1);
-				else if (wordList[1].equalsIgnoreCase("off"))
+				else if(wordList[1].equalsIgnoreCase("off"))
 					activeChar.unsetVar("trace");
 				else
 					activeChar.sendMessage("Usage: //geo_trace on|off");
@@ -144,7 +146,7 @@ public class AdminGeodata implements IAdminCommandHandler
 				{
 					GeodataUtils.debugGrid(activeChar, Integer.parseInt(wordList[1]));
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					GeodataUtils.debugGrid(activeChar, 10);
 				}

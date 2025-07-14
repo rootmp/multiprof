@@ -61,8 +61,7 @@ import l2s.gameserver.utils.TeleportUtils;
 /**
  * @author Bonux
  **/
-public class FakeAI extends PlayerAI
-		implements OnDeathListener, OnLevelChangeListener, OnTeleportListener, OnPlayerChatMessageReceive
+public class FakeAI extends PlayerAI implements OnDeathListener, OnLevelChangeListener, OnTeleportListener, OnPlayerChatMessageReceive
 {
 	private class DistanceComparator implements Comparator<GameObject>
 	{
@@ -70,7 +69,7 @@ public class FakeAI extends PlayerAI
 		public int compare(GameObject o1, GameObject o2)
 		{
 			Player player = getActor();
-			if (player != null)
+			if(player != null)
 				return Integer.compare(o1.getDistance(player), o2.getDistance(player));
 			return 0;
 		}
@@ -122,9 +121,9 @@ public class FakeAI extends PlayerAI
 
 		actor.addListener(this);
 
-		if (actor.entering)
+		if(actor.entering)
 		{
-			if (actor.getOnlineTime() == 0)
+			if(actor.getOnlineTime() == 0)
 				planActions(_aiTemplate.getOnCreateAction());
 		}
 
@@ -168,11 +167,11 @@ public class FakeAI extends PlayerAI
 	{
 		clearPlannedActions();
 
-		if (action == null)
+		if(action == null)
 			return false;
 
 		List<AbstractAction> actions = makeActionsList(action.makeActionsList());
-		if (actions.isEmpty())
+		if(actions.isEmpty())
 			return false;
 
 		// TODO: Проверку на количество действий
@@ -182,17 +181,17 @@ public class FakeAI extends PlayerAI
 
 	private List<AbstractAction> makeActionsList(List<AbstractAction> actions)
 	{
-		if (actions.isEmpty())
+		if(actions.isEmpty())
 			return Collections.emptyList();
 
 		List<AbstractAction> actionsList = new ArrayList<AbstractAction>();
-		for (AbstractAction action : actions)
+		for(AbstractAction action : actions)
 		{
 			double chance = action.getChance();
-			if (chance <= 0 || chance >= 100 || Rnd.chance(chance))
+			if(chance <= 0 || chance >= 100 || Rnd.chance(chance))
 			{
 				List<AbstractAction> tempList = action.makeActionsList();
-				if (tempList == null)
+				if(tempList == null)
 					actionsList.add(action);
 				else
 					actionsList.addAll(makeActionsList(tempList));
@@ -218,34 +217,34 @@ public class FakeAI extends PlayerAI
 
 	private synchronized boolean performNextAction(boolean force)
 	{
-		if (deleted.get())
+		if(deleted.get())
 			return false;
 
-		if (_nextShoutChatTime < System.currentTimeMillis())
+		if(_nextShoutChatTime < System.currentTimeMillis())
 		{
 			FakePlayerUtils.writeToRandomChat(this);
 			_nextShoutChatTime = System.currentTimeMillis() + Rnd.get(SHOUT_CHAT_MIN_DELAY, SHOUT_CHAT_MAX_DELAY);
 		}
 
-		if (isWait())
+		if(isWait())
 			return false;
 
 		Player player = getActor();
 
-		if (!player.isAlikeDead())
+		if(!player.isAlikeDead())
 		{
 			IntList todoEquip = this.todoEquip;
-			if (todoEquip != null && !todoEquip.isEmpty())
+			if(todoEquip != null && !todoEquip.isEmpty())
 			{
 				int itemId = todoEquip.removeByIndex(0);
-				if (FakePlayerUtils.addEquip(this, itemId))
+				if(FakePlayerUtils.addEquip(this, itemId))
 				{
 					startWait(100, 1000);
 					return true;
 				}
 			}
 
-			if ((_lastCheckInventoryTime + CHECK_INVENTORY_DELAY) < System.currentTimeMillis())
+			if((_lastCheckInventoryTime + CHECK_INVENTORY_DELAY) < System.currentTimeMillis())
 			{
 				FakePlayerUtils.checkInventory(this);
 				_lastCheckInventoryTime = System.currentTimeMillis();
@@ -253,21 +252,22 @@ public class FakeAI extends PlayerAI
 
 			int dropCount = 0;
 			ItemInstance dropItem = null;
-			if (Rnd.chance(player.isInPeaceZone() ? 3 : 97))
+			if(Rnd.chance(player.isInPeaceZone() ? 3 : 97))
 			{
-				for (GameObject object : World.getAroundObjects(player, 2000, 1000))
+				for(GameObject object : World.getAroundObjects(player, 2000, 1000))
 				{
-					if (object instanceof ItemInstance)
+					if(object instanceof ItemInstance)
 					{
 						ItemInstance item = (ItemInstance) object;
-						if (item.getItemId() != 8190 && item.getItemId() != 8689) // Не подымаем проклятое оружие.
+						if(item.getItemId() != 8190 && item.getItemId() != 8689) // Не подымаем проклятое оружие.
 						{
-							if (player.getDistance(item) > 10000 || !GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), item.getX(), item.getY(), item.getZ(), player.getGeoIndex()))
+							if(player.getDistance(item) > 10000
+									|| !GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), item.getX(), item.getY(), item.getZ(), player.getGeoIndex()))
 								continue;
 
-							if (ItemFunctions.checkIfCanPickup(player, item))
+							if(ItemFunctions.checkIfCanPickup(player, item))
 							{
-								if (dropItem == null || player.getDistance(item) < player.getDistance(dropItem))
+								if(dropItem == null || player.getDistance(item) < player.getDistance(dropItem))
 									dropItem = item;
 								dropCount++;
 							}
@@ -277,18 +277,20 @@ public class FakeAI extends PlayerAI
 			}
 
 			GameObject target = player.getTarget();
-			if ((target instanceof Creature) && Rnd.chance(95))
+			if((target instanceof Creature) && Rnd.chance(95))
 			{
 				Creature creatureTarget = (Creature) target;
-				if (!player.isInPeaceZone() || creatureTarget.isMonster())
+				if(!player.isInPeaceZone() || creatureTarget.isMonster())
 				{
 					boolean attackable = creatureTarget.isAutoAttackable(player);
 
 					Player targetPlayer = creatureTarget.getPlayer();
-					if (targetPlayer != null)
+					if(targetPlayer != null)
 						attackable = targetPlayer.isCtrlAttackable(player, (targetPlayer.isPK() || targetPlayer.getPvpFlag() > 0), false);
 
-					if (!attackable || creatureTarget.isAlikeDead() || !creatureTarget.isVisible() || creatureTarget.isInvisible(player) || player.getDistance(creatureTarget) > 10000 || !GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), creatureTarget.getX(), creatureTarget.getY(), creatureTarget.getZ(), player.getGeoIndex()))
+					if(!attackable || creatureTarget.isAlikeDead() || !creatureTarget.isVisible() || creatureTarget.isInvisible(player)
+							|| player.getDistance(creatureTarget) > 10000
+							|| !GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), creatureTarget.getX(), creatureTarget.getY(), creatureTarget.getZ(), player.getGeoIndex()))
 					{
 						player.setTarget(null);
 						player.abortAttack(true, false);
@@ -296,7 +298,8 @@ public class FakeAI extends PlayerAI
 						startWait(100, dropCount == 0 ? 2000 : 700);
 						return true;
 					}
-					else if (player.getAI().getAttackTarget() != creatureTarget && player.getAI().getCastTarget() != creatureTarget || getIntention() != AI_INTENTION_ATTACK || Rnd.chance(5))
+					else if(player.getAI().getAttackTarget() != creatureTarget && player.getAI().getCastTarget() != creatureTarget
+							|| getIntention() != AI_INTENTION_ATTACK || Rnd.chance(5))
 					{
 						attack(creatureTarget);
 						return true;
@@ -304,48 +307,50 @@ public class FakeAI extends PlayerAI
 				}
 			}
 
-			if (_plannedActions.isEmpty() && getIntention() == AI_INTENTION_ACTIVE || Rnd.chance(5))
+			if(_plannedActions.isEmpty() && getIntention() == AI_INTENTION_ACTIVE || Rnd.chance(5))
 			{
-				if (dropItem != null && !player.getMovement().isMoving() && !player.isMovementDisabled())
+				if(dropItem != null && !player.getMovement().isMoving() && !player.isMovementDisabled())
 				{
 					dropItem.onAction(player, false);
 					startWait(500, dropCount == 1 ? 3000 : 1000);
 					return true;
 				}
 
-				if (!player.isInPeaceZone())
+				if(!player.isInPeaceZone())
 				{
-					if ((_lastSearchPvPPKTime + SEARCH_PVP_PK_DELAY) < System.currentTimeMillis())
+					if((_lastSearchPvPPKTime + SEARCH_PVP_PK_DELAY) < System.currentTimeMillis())
 					{
-						for (Creature pk : player.getAroundCharacters(1000, 250))
+						for(Creature pk : player.getAroundCharacters(1000, 250))
 						{
-							if (pk.isPlayer())
+							if(pk.isPlayer())
 							{
 								Player targetPlayer = pk.getPlayer();
-								if (!targetPlayer.isAlikeDead() && targetPlayer.isVisible() && !targetPlayer.isInvisible(player) && player.getDistance(targetPlayer) <= 10000 && GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), pk.getX(), pk.getY(), pk.getZ(), player.getGeoIndex()))
+								if(!targetPlayer.isAlikeDead() && targetPlayer.isVisible() && !targetPlayer.isInvisible(player)
+										&& player.getDistance(targetPlayer) <= 10000
+										&& GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), pk.getX(), pk.getY(), pk.getZ(), player.getGeoIndex()))
 								{
 									double attackChance = 0;
 
 									boolean targeted = targetPlayer.getAI().getAttackTarget() == player && targetPlayer.getAI().getCastTarget() == player;
 									boolean attackable = targetPlayer.isCtrlAttackable(player, false, false);
-									if (attackable)
+									if(attackable)
 									{
 										attackChance = 20;
-										if (!targeted)
+										if(!targeted)
 											attackChance /= 5;
 									}
 									else
 									{
 										attackable = targetPlayer.isCtrlAttackable(player, true, false);
-										if (attackable)
+										if(attackable)
 										{
 											attackChance = 5;
-											if (!targeted)
+											if(!targeted)
 												attackChance /= 5;
 										}
 									}
 
-									if (Rnd.chance(attackChance))
+									if(Rnd.chance(attackChance))
 									{
 										player.setTarget(targetPlayer);
 										startWait(1000, 3000);
@@ -359,10 +364,10 @@ public class FakeAI extends PlayerAI
 				}
 			}
 
-			if ((_lastBuffTime + BUFF_DELAY) < System.currentTimeMillis())
+			if((_lastBuffTime + BUFF_DELAY) < System.currentTimeMillis())
 			{
 				// TODO: Переделать.
-				if (player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
+				if(player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
 					_plannedActions.add(new UseCommunityAction("_cbbsbuffer get 0 1_0 1", 100));
 				else
 					_plannedActions.add(new UseCommunityAction("_cbbsbuffer get 0 1_0 2", 100));
@@ -371,17 +376,17 @@ public class FakeAI extends PlayerAI
 			}
 		}
 
-		if (!_plannedActions.isEmpty())
+		if(!_plannedActions.isEmpty())
 		{
 			AbstractAction action = _plannedActions.get(0);
 
 			_lastActionTryCount++;
-			if (_lastActionTryCount <= MAX_ACTION_TRY_COUNT) // Заглушка, чтобы боты не зависали.
+			if(_lastActionTryCount <= MAX_ACTION_TRY_COUNT) // Заглушка, чтобы боты не зависали.
 			{
-				if (!action.checkCondition(this, force))
+				if(!action.checkCondition(this, force))
 					return false;
 
-				if (!action.performAction(this))
+				if(!action.performAction(this))
 					return false;
 			}
 			else
@@ -389,11 +394,11 @@ public class FakeAI extends PlayerAI
 
 			_plannedActions.remove(action);
 		}
-		else if (player.isDead())
+		else if(player.isDead())
 		{
 			doRevive();
 		}
-		else if (_currentFarmZone != null)
+		else if(_currentFarmZone != null)
 		{
 			farm();
 		}
@@ -402,11 +407,12 @@ public class FakeAI extends PlayerAI
 			Location closestTownLoc = TeleportUtils.getRestartPoint(player, RestartType.TO_VILLAGE).getLoc();
 
 			TownZoneTemplate townZone = null;
-			loop1: for (TownZoneTemplate t : FakePlayersHolder.getInstance().getTownZones())
+			loop1:
+			for(TownZoneTemplate t : FakePlayersHolder.getInstance().getTownZones())
 			{
-				for (Zone zone : t.getZones())
+				for(Zone zone : t.getZones())
 				{
-					if (zone.checkIfInZone(closestTownLoc.x, closestTownLoc.y, closestTownLoc.z))
+					if(zone.checkIfInZone(closestTownLoc.x, closestTownLoc.y, closestTownLoc.z))
 					{
 						townZone = t;
 						break loop1;
@@ -414,11 +420,11 @@ public class FakeAI extends PlayerAI
 				}
 			}
 
-			if (townZone != null)
+			if(townZone != null)
 			{
-				for (Zone zone : townZone.getZones())
+				for(Zone zone : townZone.getZones())
 				{
-					if (zone.checkIfInZone(player))
+					if(zone.checkIfInZone(player))
 					{
 						planActions(townZone.getActions());
 						return true;
@@ -427,28 +433,29 @@ public class FakeAI extends PlayerAI
 			}
 
 			FarmZoneTemplate farmZone = null;
-			loop2: for (FarmZoneTemplate f : _aiTemplate.getFarmZones())
+			loop2:
+			for(FarmZoneTemplate f : _aiTemplate.getFarmZones())
 			{
-				for (Zone zone : f.getZones())
+				for(Zone zone : f.getZones())
 				{
-					if (zone.checkIfInZone(player))
+					if(zone.checkIfInZone(player))
 					{
-						if (farmZone == null || (player.getLevel() - farmZone.getMaxLevel()) > (player.getLevel() - f.getMaxLevel()))
+						if(farmZone == null || (player.getLevel() - farmZone.getMaxLevel()) > (player.getLevel() - f.getMaxLevel()))
 						{
 							farmZone = f;
 
-							if (farmZone.checkCondition(player))
+							if(farmZone.checkCondition(player))
 								break loop2;
 						}
 					}
 				}
 			}
 
-			if (farmZone != null)
+			if(farmZone != null)
 			{
-				if (!farmZone.checkCondition(player))
+				if(!farmZone.checkCondition(player))
 				{
-					if (player.getLevel() >= farmZone.getMaxLevel())
+					if(player.getLevel() >= farmZone.getMaxLevel())
 						planActions(farmZone.getOnObtainMaxLevelAction());
 					else
 					{
@@ -464,7 +471,7 @@ public class FakeAI extends PlayerAI
 			}
 			else
 			{
-				if (townZone == null)
+				if(townZone == null)
 					return performFarm();
 
 				// TODO: Сделать список глобальных действий и вынести в датапак.
@@ -478,18 +485,19 @@ public class FakeAI extends PlayerAI
 	{
 		Player player = getActor();
 
-		if (_currentFarmZone == null)
+		if(_currentFarmZone == null)
 		{
 			List<FarmZoneTemplate> availableFarmZones = new ArrayList<FarmZoneTemplate>();
-			loop: for (FarmZoneTemplate f : _aiTemplate.getFarmZones()) // Выбираем подходящие зоны, в которых уже
-																		// находимся.
+			loop:
+			for(FarmZoneTemplate f : _aiTemplate.getFarmZones()) // Выбираем подходящие зоны, в которых уже
+			// находимся.
 			{
-				if (!f.checkCondition(player))
+				if(!f.checkCondition(player))
 					continue;
 
-				for (Zone zone : f.getZones())
+				for(Zone zone : f.getZones())
 				{
-					if (!zone.checkIfInZone(player))
+					if(!zone.checkIfInZone(player))
 						continue;
 
 					availableFarmZones.add(f);
@@ -497,17 +505,17 @@ public class FakeAI extends PlayerAI
 				}
 			}
 
-			if (availableFarmZones.isEmpty())
+			if(availableFarmZones.isEmpty())
 			{
-				for (FarmZoneTemplate f : _aiTemplate.getFarmZones())
+				for(FarmZoneTemplate f : _aiTemplate.getFarmZones())
 				{
-					if (f.checkCondition(player))
+					if(f.checkCondition(player))
 						availableFarmZones.add(f);
 				}
 			}
 
 			FarmZoneTemplate farmZone = availableFarmZones.isEmpty() ? null : Rnd.get(availableFarmZones);
-			if (farmZone == null)
+			if(farmZone == null)
 			{
 				deleteFake(player);
 				// _log.warn("Cannot find farm zone from player RACE[" + player.getRace() + "],
@@ -526,19 +534,19 @@ public class FakeAI extends PlayerAI
 
 	private void farm()
 	{
-		if (isWait())
+		if(isWait())
 			return;
 
 		Player player = getActor();
 
-		if (player.getMovement().isMoving() || player.isMovementDisabled())
+		if(player.getMovement().isMoving() || player.isMovementDisabled())
 			return;
 
-		if (!_currentFarmZone.checkCondition(player))
+		if(!_currentFarmZone.checkCondition(player))
 		{
 			FarmZoneTemplate currentFarmZone = _currentFarmZone;
 			clearCurrentFarmZone();
-			if (player.getLevel() >= currentFarmZone.getMaxLevel())
+			if(player.getLevel() >= currentFarmZone.getMaxLevel())
 				planActions(currentFarmZone.getOnObtainMaxLevelAction());
 			else
 				clearPlannedActions();
@@ -546,13 +554,13 @@ public class FakeAI extends PlayerAI
 		}
 
 		GoToTownActions goToTownActions = _currentFarmZone.getGoToTownActions();
-		if (goToTownActions != null)
+		if(goToTownActions != null)
 		{
-			if (_goToTownTime == -1L)
+			if(_goToTownTime == -1L)
 			{
 				_goToTownTime = System.currentTimeMillis() + (Rnd.get(goToTownActions.getMinFarmTime(), goToTownActions.getMaxFarmTime()) * 1000L);
 			}
-			else if (_goToTownTime < System.currentTimeMillis())
+			else if(_goToTownTime < System.currentTimeMillis())
 			{
 				_goToTownTime = Long.MAX_VALUE;
 				planActions(goToTownActions);
@@ -563,31 +571,31 @@ public class FakeAI extends PlayerAI
 
 		List<NpcInstance> npcs = new ArrayList<NpcInstance>();
 
-		for (Zone zone : _currentFarmZone.getZones())
+		for(Zone zone : _currentFarmZone.getZones())
 		{
 			npcs.addAll(getNpcsForAttack(zone.getInsideNpcs()));
 		}
 
 		Collections.sort(npcs, _distanceComparator);
 
-		for (NpcInstance npc : npcs)
+		for(NpcInstance npc : npcs)
 		{
-			if (prepareAttack(npc))
+			if(prepareAttack(npc))
 				return;
 		}
 
 		List<NpcInstance> arroundNpcs = getNpcsForAttack(player.getAroundNpc(2000, 1000));
 		Collections.sort(arroundNpcs, _distanceComparator);
 
-		for (NpcInstance npc : arroundNpcs)
+		for(NpcInstance npc : arroundNpcs)
 		{
-			if (prepareAttack(npc))
+			if(prepareAttack(npc))
 				return;
 		}
 
 		NpcInstance npc = npcs.isEmpty() ? null : npcs.get(0);
 
-		if ((_lastAttackTime + ATTACK_WAIT_DELAY) < System.currentTimeMillis())
+		if((_lastAttackTime + ATTACK_WAIT_DELAY) < System.currentTimeMillis())
 		{
 			_lastAttackTime = System.currentTimeMillis();
 
@@ -596,30 +604,32 @@ public class FakeAI extends PlayerAI
 			return;
 		}
 
-		if (npc != null || !isInside(_currentFarmZone.getZones(), player.getX(), player.getY(), player.getZ()))
+		if(npc != null || !isInside(_currentFarmZone.getZones(), player.getX(), player.getY(), player.getZ()))
 		{
 			Location loc = npc != null ? npc.getLoc() : getRandomLoc(_currentFarmZone.getZones(), player.getGeoIndex(), player.isFlying());
-			if (player.getDistance(loc) > 10000 || !player.getMovement().moveToLocation(Location.findAroundPosition(loc, 0, player.getGeoIndex()), 0, true, 50))
+			if(player.getDistance(loc) > 10000
+					|| !player.getMovement().moveToLocation(Location.findAroundPosition(loc, 0, player.getGeoIndex()), 0, true, 50))
 			{
 				Location restartLoc = Rnd.get(_currentFarmZone.getSpawnPoints());
-				if (!isInside(_currentFarmZone.getZones(), restartLoc.x, restartLoc.y, restartLoc.z))
+				if(!isInside(_currentFarmZone.getZones(), restartLoc.x, restartLoc.y, restartLoc.z))
 				{
 					// TODO: Придумать алгоритм поиска ближайшей точки зоны к заданой точке и
 					// измерять дистанцию от нее.
-					if (PositionUtils.calculateDistance(restartLoc.x, restartLoc.y, loc.x, loc.y) > 10000)
+					if(PositionUtils.calculateDistance(restartLoc.x, restartLoc.y, loc.x, loc.y) > 10000)
 					{
 						// _log.warn("PK restart point for farm zone \"" + zoneTemplate.getName() + "\"
 						// is long away!");
 						restartLoc = null;
 					}
 				}
-				if (restartLoc == null)
+				if(restartLoc == null)
 					restartLoc = loc;
-				if (player.isInRange(restartLoc, 50))
+				if(player.isInRange(restartLoc, 50))
 					restartLoc = loc;
-				if (!player.isInRange(restartLoc, 50))
+				if(!player.isInRange(restartLoc, 50))
 				{
-					if (player.getDistance(restartLoc) > 10000 || !player.getMovement().moveToLocation(Location.findAroundPosition(restartLoc, 50, 150, player.getGeoIndex()), 0, true, 50))
+					if(player.getDistance(restartLoc) > 10000
+							|| !player.getMovement().moveToLocation(Location.findAroundPosition(restartLoc, 50, 150, player.getGeoIndex()), 0, true, 50))
 						player.teleToLocation(restartLoc, 0, 0);
 					return;
 				}
@@ -629,7 +639,8 @@ public class FakeAI extends PlayerAI
 		}
 
 		Location loc = Location.coordsRandomize(player.getLoc(), 100, 300);
-		if (isInside(_currentFarmZone.getZones(), loc.x, loc.y, loc.z) && player.getMovement().moveToLocation(Location.findAroundPosition(loc, 0, player.getGeoIndex()), 0, true, 50))
+		if(isInside(_currentFarmZone.getZones(), loc.x, loc.y, loc.z)
+				&& player.getMovement().moveToLocation(Location.findAroundPosition(loc, 0, player.getGeoIndex()), 0, true, 50))
 			startWait(1000, 10000);
 	}
 
@@ -638,38 +649,39 @@ public class FakeAI extends PlayerAI
 		Player player = getActor();
 
 		List<NpcInstance> npcs = new ArrayList<NpcInstance>();
-		for (NpcInstance n : avaialbleNpcs)
+		for(NpcInstance n : avaialbleNpcs)
 		{
-			if (n.isAlikeDead())
+			if(n.isAlikeDead())
 				continue;
 
-			if (n.isInvulnerable())
+			if(n.isInvulnerable())
 				continue;
 
-			if (!n.isVisible())
+			if(!n.isVisible())
 				continue;
 
-			if (n.isInvisible(player))
+			if(n.isInvisible(player))
 				continue;
 
-			if (_currentFarmZone.isIgnoredMonster(n.getNpcId()))
+			if(_currentFarmZone.isIgnoredMonster(n.getNpcId()))
 				continue;
 
 			IntSet farmMonsters = _currentFarmZone.getFarmMonsters();
-			if (farmMonsters.isEmpty())
+			if(farmMonsters.isEmpty())
 			{
-				if (Math.abs(player.getLevel() - n.getLevel()) > 10)
+				if(Math.abs(player.getLevel() - n.getLevel()) > 10)
 					continue;
 			}
-			else if (!farmMonsters.contains(n.getNpcId()))
+			else if(!farmMonsters.contains(n.getNpcId()))
 				continue;
 
-			if (!n.isMonster() || n.isRaid())
+			if(!n.isMonster() || n.isRaid())
 				continue;
 
-			if (n.getAI().getAttackTarget() != null && n.getAI().getAttackTarget() != player || n.getAI().getCastTarget() != null && n.getAI().getCastTarget() != player)
+			if(n.getAI().getAttackTarget() != null && n.getAI().getAttackTarget() != player
+					|| n.getAI().getCastTarget() != null && n.getAI().getCastTarget() != player)
 			{
-				if (Rnd.chance(95))
+				if(Rnd.chance(95))
 					continue;
 			}
 
@@ -682,32 +694,33 @@ public class FakeAI extends PlayerAI
 	{
 		Player player = getActor();
 
-		if (player.getDistance(target) <= 10000 && GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), target.getX(), target.getY(), target.getZ(), player.getGeoIndex()))
+		if(player.getDistance(target) <= 10000
+				&& GeoEngine.canMoveToCoord(player.getX(), player.getY(), player.getZ(), target.getX(), target.getY(), target.getZ(), player.getGeoIndex()))
 		{
-			if (Rnd.chance(80))
+			if(Rnd.chance(80))
 			{
 				int distanceToTarget = player.getDistance(target);
-				for (Creature neighbor : target.getAroundCharacters(distanceToTarget + 5000, 250))
+				for(Creature neighbor : target.getAroundCharacters(distanceToTarget + 5000, 250))
 				{
-					if (!neighbor.isFakePlayer())
+					if(!neighbor.isFakePlayer())
 						continue;
 
-					if (neighbor.getTarget() != target && neighbor.getAI().getAttackTarget() != target && neighbor.getAI().getCastTarget() != target)
+					if(neighbor.getTarget() != target && neighbor.getAI().getAttackTarget() != target && neighbor.getAI().getCastTarget() != target)
 						continue;
 
 					return false;
 				}
 			}
 
-			if (Rnd.chance(20))
+			if(Rnd.chance(20))
 			{
 				player.setCurrentHp(player.getMaxHp(), true, true);
 				player.setCurrentMp(player.getMaxMp());
 			}
 
-			if (Rnd.chance(10))
+			if(Rnd.chance(10))
 			{
-				if (player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
+				if(player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
 					player.getMovement().moveToLocation(Location.findAroundPosition(target, 80, 180), 0, true);
 				else
 					player.getMovement().moveToLocation(Location.findAroundPosition(target, 160, 360), 0, true);
@@ -735,58 +748,58 @@ public class FakeAI extends PlayerAI
 		 * (), 500, 1000, player.getGeoIndex()), 250, true); return; }
 		 */
 
-		if (Rnd.chance(80))
+		if(Rnd.chance(80))
 		{
-			if (tryRunOff(target))
+			if(tryRunOff(target))
 				return;
 		}
 
-		if (Rnd.chance(5))
+		if(Rnd.chance(5))
 		{
 			Skill skill = getRandomSkillSelf();
-			if (skill != null)
+			if(skill != null)
 			{
 				Cast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill), player);
 				return;
 			}
 		}
 
-		if (!GeoEngine.canSeeTarget(player, target))
+		if(!GeoEngine.canSeeTarget(player, target))
 		{
-			if (!player.getMovement().isMoving())
+			if(!player.getMovement().isMoving())
 			{
-				if (!player.getMovement().moveToLocation(Location.findAroundPosition(target, 50, 150), 0, true, 50))
+				if(!player.getMovement().moveToLocation(Location.findAroundPosition(target, 50, 150), 0, true, 50))
 					player.setTarget(null);
 				return;
 			}
 		}
 
 		Skill skill = getRandomSkill(player, target);
-		if (skill == null && player.isMageClass() && !player.getClassId().isOfRace(Race.ORC) && Rnd.chance(90))
+		if(skill == null && player.isMageClass() && !player.getClassId().isOfRace(Race.ORC) && Rnd.chance(90))
 			return;
 
-		if (skill != null)
+		if(skill != null)
 		{
-			if (Rnd.chance(30))
+			if(Rnd.chance(30))
 			{
 				Cast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill), target, false, false);
 				return;
 			}
 		}
 
-		if (player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
+		if(player.getClassId().isOfRace(Race.ORC) || !player.isMageClass())
 			Attack(target, true, false);
 	}
 
 	private boolean tryRunOff(Creature target)
 	{
-		if (target.isAlikeDead())
+		if(target.isAlikeDead())
 			return false;
 
 		Player player = getActor();
-		if (player.getPhysicalAttackRange() > 100 || (!player.getClassId().isOfRace(Race.ORC) && player.isMageClass()))
+		if(player.getPhysicalAttackRange() > 100 || (!player.getClassId().isOfRace(Race.ORC) && player.isMageClass()))
 		{
-			if (player.getDistance(target) <= 200 && !player.getMovement().isMoving())
+			if(player.getDistance(target) <= 200 && !player.getMovement().isMoving())
 			{
 				int posX = player.getX();
 				int posY = player.getY();
@@ -805,10 +818,10 @@ public class FakeAI extends PlayerAI
 				posY += signy * range;
 				posZ = GeoEngine.getLowerHeight(posX, posY, posZ, player.getGeoIndex());
 
-				if (GeoEngine.canMoveToCoord(old_posX, old_posY, old_posZ, posX, posY, posZ, player.getGeoIndex()))
+				if(GeoEngine.canMoveToCoord(old_posX, old_posY, old_posZ, posX, posY, posZ, player.getGeoIndex()))
 				{
 					player.abortAttack(true, false);
-					if (player.getMovement().moveToLocation(Location.findAroundPosition(posX, posY, posZ, 0, 0, player.getGeoIndex()), 0, true))
+					if(player.getMovement().moveToLocation(Location.findAroundPosition(posX, posY, posZ, 0, 0, player.getGeoIndex()), 0, true))
 						return true;
 				}
 			}
@@ -819,27 +832,28 @@ public class FakeAI extends PlayerAI
 	private Skill getRandomSkillSelf()
 	{
 		List<Skill> skills = new ArrayList<>();
-		loop: for (SkillEntry skillEntry : getActor().getAllSkills())
+		loop:
+		for(SkillEntry skillEntry : getActor().getAllSkills())
 		{
 			Skill skill = skillEntry.getTemplate();
-			if (!skill.isActive() && !skill.isToggle())
+			if(!skill.isActive() && !skill.isToggle())
 				continue;
 
-			if (skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
+			if(skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
 				continue;
 
-			if (getActor().isSkillDisabled(skill))
+			if(getActor().isSkillDisabled(skill))
 				continue;
 
-			if (skill.getSkillType() == SkillType.BUFF)
+			if(skill.getSkillType() == SkillType.BUFF)
 			{
-				for (Abnormal e : getActor().getAbnormalList())
+				for(Abnormal e : getActor().getAbnormalList())
 				{
-					if (checkAbnormal(e, skill))
+					if(checkAbnormal(e, skill))
 						continue loop;
 				}
 
-				switch (skill.getTargetType())
+				switch(skill.getTargetType())
 				{
 					case TARGET_ONE:
 					case TARGET_SELF:
@@ -863,13 +877,13 @@ public class FakeAI extends PlayerAI
 	{
 		List<Skill> weakSkills = new ArrayList<>();
 		List<Skill> skills = new ArrayList<>();
-		for (SkillEntry skillEntry : player.getAllSkills())
+		for(SkillEntry skillEntry : player.getAllSkills())
 		{
 			Skill skill = skillEntry.getTemplate();
-			if (!skill.isActive())
+			if(!skill.isActive())
 				continue;
 
-			switch (skill.getId())
+			switch(skill.getId())
 			{
 				case 11030:
 				case 30546:
@@ -877,15 +891,15 @@ public class FakeAI extends PlayerAI
 					continue;
 			}
 
-			if (player.isSkillDisabled(skill))
+			if(player.isSkillDisabled(skill))
 				continue;
 
-			if (!skillEntry.checkCondition(player, target, false, false, true))
+			if(!skillEntry.checkCondition(player, target, false, false, true))
 				continue;
 
 			double chance = 0;
 
-			switch (skill.getSkillType())
+			switch(skill.getSkillType())
 			{
 				case DEBUFF:
 				case PARALYZE:
@@ -920,7 +934,7 @@ public class FakeAI extends PlayerAI
 					break;
 			}
 
-			switch (skill.getTargetType())
+			switch(skill.getTargetType())
 			{
 				case TARGET_AURA:
 				case TARGET_AREA:
@@ -933,16 +947,16 @@ public class FakeAI extends PlayerAI
 					break;
 			}
 
-			if (Rnd.chance(chance))
+			if(Rnd.chance(chance))
 			{
-				if (skill.getMagicLevel() < (player.getLevel() - 10))
+				if(skill.getMagicLevel() < (player.getLevel() - 10))
 					weakSkills.add(skill);
 				else
 					skills.add(skill);
 			}
 		}
 
-		if (skills.isEmpty())
+		if(skills.isEmpty())
 			skills = weakSkills;
 
 		return Rnd.get(skills);
@@ -953,18 +967,18 @@ public class FakeAI extends PlayerAI
 	{
 		synchronized (this)
 		{
-			if (Rnd.chance(60))
+			if(Rnd.chance(60))
 			{
-				if (tryRunOff(attacker))
+				if(tryRunOff(attacker))
 					return;
 			}
 
-			if (damage > 0)
+			if(damage > 0)
 			{
 				Player player = getActor();
-				if (attacker.isNpc())
+				if(attacker.isNpc())
 				{
-					if (Rnd.chance(25))
+					if(Rnd.chance(25))
 					{
 						player.setCurrentHp(player.getCurrentHp() + (player.getMaxHp() / 5), true, true);
 						player.setCurrentMp(player.getCurrentMp() + (player.getMaxMp() / 5));
@@ -974,15 +988,15 @@ public class FakeAI extends PlayerAI
 				double chance = 25;
 
 				GameObject target = player.getTarget();
-				if (target != null)
+				if(target != null)
 				{
-					if (target == attacker)
+					if(target == attacker)
 						return;
 
-					if (target instanceof Creature)
+					if(target instanceof Creature)
 					{
 						Creature creatureTarget = (Creature) target;
-						if (creatureTarget.getAI().getAttackTarget() != player && creatureTarget.getAI().getCastTarget() != player)
+						if(creatureTarget.getAI().getAttackTarget() != player && creatureTarget.getAI().getCastTarget() != player)
 							chance = 80;
 						else
 							chance = 5;
@@ -991,13 +1005,13 @@ public class FakeAI extends PlayerAI
 						return;
 				}
 
-				if (attacker.isPlayable())
+				if(attacker.isPlayable())
 					chance = 30;
 
-				if ((attacker.getLevel() - player.getLevel()) >= 10)
+				if((attacker.getLevel() - player.getLevel()) >= 10)
 					chance /= 5;
 
-				if (Rnd.chance(chance))
+				if(Rnd.chance(chance))
 				{
 					player.setTarget(attacker);
 					stopWait();
@@ -1025,13 +1039,13 @@ public class FakeAI extends PlayerAI
 	@Override
 	public void onLevelChange(Player player, int oldLvl, int newLvl)
 	{
-		if (player.isFakePlayer())
+		if(player.isFakePlayer())
 		{
 			FakePlayerUtils.setProf(player);
 			todoEquip = FakePlayerUtils.checkEquip(this);
 		}
 
-		if (player.getLevel() == Config.ALT_MAX_LEVEL) // TODO: Переделать.
+		if(player.getLevel() == Config.ALT_MAX_LEVEL) // TODO: Переделать.
 		{
 			deleteFake(player);
 		}
@@ -1039,10 +1053,10 @@ public class FakeAI extends PlayerAI
 
 	private void deleteFake(Player player)
 	{
-		if (!player.isFakePlayer())
+		if(!player.isFakePlayer())
 			return;
 
-		if (!deleted.compareAndSet(false, true))
+		if(!deleted.compareAndSet(false, true))
 			return;
 
 		int objectId = player.getObjectId();
@@ -1058,11 +1072,12 @@ public class FakeAI extends PlayerAI
 			startWait(2000, 5000);
 
 			TownZoneTemplate townZone = null;
-			loop1: for (TownZoneTemplate t : FakePlayersHolder.getInstance().getTownZones())
+			loop1:
+			for(TownZoneTemplate t : FakePlayersHolder.getInstance().getTownZones())
 			{
-				for (Zone zone : t.getZones())
+				for(Zone zone : t.getZones())
 				{
-					if (zone.checkIfInZone(x, y, z))
+					if(zone.checkIfInZone(x, y, z))
 					{
 						townZone = t;
 						break loop1;
@@ -1070,9 +1085,9 @@ public class FakeAI extends PlayerAI
 				}
 			}
 
-			if (townZone != null)
+			if(townZone != null)
 			{
-				if (clearCurrentFarmZone())
+				if(clearCurrentFarmZone())
 					clearPlannedActions();
 			}
 		}
@@ -1081,7 +1096,7 @@ public class FakeAI extends PlayerAI
 	@Override
 	public void onChatMessageReceive(Player player, ChatType type, String charName, String text)
 	{
-		if (type == ChatType.TELL)
+		if(type == ChatType.TELL)
 			FakePlayerUtils.writeInPrivateChat(this, charName);
 	}
 
@@ -1089,7 +1104,7 @@ public class FakeAI extends PlayerAI
 	public void run()
 	{
 		Player actor = getActor();
-		if (actor == null || deleted.get())
+		if(actor == null || deleted.get())
 		{
 			stopActionTask();
 			return;
@@ -1099,13 +1114,13 @@ public class FakeAI extends PlayerAI
 
 	private synchronized void startActionTask()
 	{
-		if (_actionTask == null)
+		if(_actionTask == null)
 			_actionTask = ThreadPoolManager.getInstance().scheduleAtFixedDelay(this, 500L, 500L);
 	}
 
 	private synchronized void stopActionTask()
 	{
-		if (_actionTask != null)
+		if(_actionTask != null)
 		{
 			_actionTask.cancel(true);
 			_actionTask = null;
@@ -1115,16 +1130,16 @@ public class FakeAI extends PlayerAI
 	private static Location getRandomLoc(List<Zone> zones, int geoIndex, boolean fly)
 	{
 		Zone zone = Rnd.get(zones);
-		if (zone != null)
+		if(zone != null)
 			return zone.getTerritory().getRandomLoc(geoIndex, fly);
 		return new Location();
 	}
 
 	private static boolean isInside(List<Zone> zones, int x, int y, int z)
 	{
-		for (Zone zone : zones)
+		for(Zone zone : zones)
 		{
-			if (zone.checkIfInZone(x, y, z))
+			if(zone.checkIfInZone(x, y, z))
 				return true;
 		}
 		return false;

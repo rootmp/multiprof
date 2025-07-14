@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExRelicsSummonResult implements IClientOutgoingPacket
 {
 	public static final ExRelicsSummonResult FAIL = new ExRelicsSummonResult();
-	
+
 	private int cResult;
 	private int nItemID;
 	private List<Integer> relicsList;
@@ -18,7 +18,7 @@ public class ExRelicsSummonResult implements IClientOutgoingPacket
 	{
 		this.relicsList = Collections.emptyList();
 	}
-	
+
 	public ExRelicsSummonResult(int cResult, int nItemID, List<Integer> relicsList)
 	{
 		this.cResult = cResult;

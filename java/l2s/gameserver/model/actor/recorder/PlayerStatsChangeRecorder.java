@@ -97,7 +97,7 @@ public final class PlayerStatsChangeRecorder extends CharStatsChangeRecorder<Pla
 		_maxLoad = set(SEND_INVENTORY_LOAD, _maxLoad, _activeChar.getMaxLoad());
 		_curLoad = set(SEND_INVENTORY_LOAD, _curLoad, _activeChar.getCurrentLoad());
 
-		for (Element e : Element.VALUES)
+		for(Element e : Element.VALUES)
 		{
 			_attackElement[e.getId()] = set(SEND_CHAR_INFO, _attackElement[e.getId()], _activeChar.getAttack(e));
 			_defenceElement[e.getId()] = set(SEND_CHAR_INFO, _defenceElement[e.getId()], _activeChar.getDefence(e));
@@ -118,7 +118,9 @@ public final class PlayerStatsChangeRecorder extends CharStatsChangeRecorder<Pla
 		_recipeDwarven = set(SEND_STORAGE_INFO, _recipeDwarven, _activeChar.getDwarvenRecipeLimit());
 		_recipeCommon = set(SEND_STORAGE_INFO, _recipeCommon, _activeChar.getCommonRecipeLimit());
 		_cubicsHash = set(BROADCAST_CHAR_INFO, _cubicsHash, CollectionUtils.hashCode(_activeChar.getCubics()));
-		_partyRoom = set(BROADCAST_CHAR_INFO, _partyRoom, _activeChar.getMatchingRoom() != null && _activeChar.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && _activeChar.getMatchingRoom().getLeader() == _activeChar ? _activeChar.getMatchingRoom().getId() : 0);
+		_partyRoom = set(BROADCAST_CHAR_INFO, _partyRoom, _activeChar.getMatchingRoom() != null
+				&& _activeChar.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING
+				&& _activeChar.getMatchingRoom().getLeader() == _activeChar ? _activeChar.getMatchingRoom().getId() : 0);
 		_team = set(BROADCAST_CHAR_INFO2, _team, _activeChar.getTeam());
 		_title = set(BROADCAST_CHAR_INFO, _title, _activeChar.getTitle());
 
@@ -137,71 +139,72 @@ public final class PlayerStatsChangeRecorder extends CharStatsChangeRecorder<Pla
 	{
 		super.onSendChanges();
 
-		if ((_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO)
+		if((_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO)
 			_activeChar.broadcastUserInfo(true);
-		else if ((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & BROADCAST_CHAR_INFO2) == BROADCAST_CHAR_INFO2 || (_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO)
+		else if((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & BROADCAST_CHAR_INFO2) == BROADCAST_CHAR_INFO2
+				|| (_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO)
 		{
-			if ((_changes & FORCE_SEND_CHAR_INFO) == FORCE_SEND_CHAR_INFO)
+			if((_changes & FORCE_SEND_CHAR_INFO) == FORCE_SEND_CHAR_INFO)
 				_activeChar.broadcastUserInfo(true);
 			else
 				_activeChar.broadcastCharInfo();
 		}
 		else
 		{
-			if ((_changes & FORCE_SEND_CHAR_INFO) == FORCE_SEND_CHAR_INFO)
+			if((_changes & FORCE_SEND_CHAR_INFO) == FORCE_SEND_CHAR_INFO)
 			{
-				if ((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
+				if((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
 					_activeChar.broadcastUserInfo(true);
 				else
 					_activeChar.sendUserInfo(true);
 			}
-			else if ((_changes & SEND_CHAR_INFO) == SEND_CHAR_INFO)
+			else if((_changes & SEND_CHAR_INFO) == SEND_CHAR_INFO)
 			{
-				if ((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
+				if((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
 					_activeChar.broadcastCharInfo();
 				else
 					_activeChar.sendUserInfo();
 			}
 		}
 
-		if ((_changes & BROADCAST_CHAR_INFO2) == BROADCAST_CHAR_INFO2)
+		if((_changes & BROADCAST_CHAR_INFO2) == BROADCAST_CHAR_INFO2)
 		{
-			for (Servitor servitor : _activeChar.getServitors())
+			for(Servitor servitor : _activeChar.getServitors())
 				servitor.broadcastCharInfo();
 		}
 
-		if ((_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
+		if((_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
 		{
 			_activeChar.sendPacket(new ExUserInfoEquipSlot(_activeChar));
 			_activeChar.sendPacket(new ExUserInfoAbnormalVisualEffect(_activeChar));
 		}
 		else
 		{
-			if ((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
+			if((_changes & BROADCAST_EQUIP_SLOT) == BROADCAST_EQUIP_SLOT)
 			{
 				_activeChar.sendPacket(new ExUserInfoEquipSlot(_activeChar));
 				_activeChar.broadcastCharInfoImpl();
 			}
-			if ((_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO)
+			if((_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO)
 				_activeChar.sendPacket(new ExUserInfoAbnormalVisualEffect(_activeChar));
 		}
 
-		if ((_changes & SEND_INVENTORY_LOAD) == SEND_INVENTORY_LOAD)
+		if((_changes & SEND_INVENTORY_LOAD) == SEND_INVENTORY_LOAD)
 			_activeChar.sendPacket(new ExUserInfoInvenWeight(_activeChar));
 
-		if ((_changes & BROADCAST_KARMA) == BROADCAST_KARMA)
+		if((_changes & BROADCAST_KARMA) == BROADCAST_KARMA)
 			_activeChar.sendStatusUpdate(true, false, UpdateType.VCP_CRIMINAL_RATE);
 
-		if ((_changes & SEND_STORAGE_INFO) == SEND_STORAGE_INFO)
+		if((_changes & SEND_STORAGE_INFO) == SEND_STORAGE_INFO)
 			_activeChar.sendPacket(new ExStorageMaxCountPacket(_activeChar));
 
-		if ((_changes & CHAGE_MP_COST_PHYSIC) == CHAGE_MP_COST_PHYSIC)
+		if((_changes & CHAGE_MP_COST_PHYSIC) == CHAGE_MP_COST_PHYSIC)
 			_activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.PHYSIC, _physicMPCost));
 
-		if ((_changes & CHAGE_MP_COST_MAGIC) == CHAGE_MP_COST_MAGIC)
+		if((_changes & CHAGE_MP_COST_MAGIC) == CHAGE_MP_COST_MAGIC)
 			_activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.MAGIC, _magicMPCost));
 
-		if ((_changes & CHAGE_MP_COST_MUSIC) == CHAGE_MP_COST_MUSIC)
+		if((_changes & CHAGE_MP_COST_MUSIC) == CHAGE_MP_COST_MUSIC)
 			_activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.MUSIC, _musicMPCost));
 	}
 }

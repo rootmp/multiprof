@@ -22,9 +22,9 @@ public class EffectMuteChance extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return false;
-		if (Rnd.chance(50))
+		if(Rnd.chance(50))
 			effected.abortCast(true, true);
 		return true;
 	}

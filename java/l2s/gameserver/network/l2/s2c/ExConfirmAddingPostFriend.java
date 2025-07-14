@@ -11,7 +11,7 @@ public class ExConfirmAddingPostFriend implements IClientOutgoingPacket
 	public static int NAME_IS_NOT_EXISTS = 0;
 	public static int SUCCESS = 1;
 	public static int PREVIOS_NAME_IS_BEEN_REGISTERED = -1; // The previous name is being registered. Please try again
-															// later.
+	// later.
 	public static int NAME_IS_NOT_EXISTS2 = -2;
 	public static int LIST_IS_FULL = -3;
 	public static int ALREADY_ADDED = -4;

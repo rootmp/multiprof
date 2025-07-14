@@ -24,22 +24,20 @@ public abstract class AbstractOptionDataListener implements OnEquipListener
 
 	protected int refreshOptionDatas(Playable actor, ItemInstance item, List<OptionDataTemplate> optionDatas)
 	{
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 		int flags = 0;
 		IntObjectMap<OptionDataTemplate> removedOptionDatas = item.removeEquippedOptionDatas(this);
 
-		for (OptionDataTemplate optionData : optionDatas)
+		for(OptionDataTemplate optionData : optionDatas)
 		{
-			if (player.addOptionData(optionData) != optionData)
+			if(player.addOptionData(optionData) != optionData)
 			{
 				flags |= Inventory.UPDATE_STATS_FLAG;
 
-				if (!optionData.getSkills().isEmpty())
+				if(!optionData.getSkills().isEmpty())
 				{
 					flags |= Inventory.UPDATE_SKILLS_FLAG;
 				}
@@ -47,7 +45,7 @@ public abstract class AbstractOptionDataListener implements OnEquipListener
 
 			item.addEquippedOptionData(this, optionData);
 
-			if (removedOptionDatas != null)
+			if(removedOptionDatas != null)
 			{
 				removedOptionDatas.remove(optionData.getId());
 			}
@@ -59,30 +57,26 @@ public abstract class AbstractOptionDataListener implements OnEquipListener
 
 	protected int removeOptionDatas(Playable actor, IntObjectMap<OptionDataTemplate> optionDataMap)
 	{
-		if (optionDataMap == null)
-		{
-			return 0;
-		}
+		if(optionDataMap == null)
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 
 		int flags = 0;
-		for (OptionDataTemplate optionData : optionDataMap.valueCollection())
+		for(OptionDataTemplate optionData : optionDataMap.valueCollection())
 		{
 			OptionDataTemplate template = player.removeOptionData(optionData.getId());
-			if (template == null)
+			if(template == null)
 			{
 				continue;
 			}
 
 			flags |= Inventory.UPDATE_STATS_FLAG;
 
-			if (!template.getSkills().isEmpty())
+			if(!template.getSkills().isEmpty())
 			{
 				flags |= Inventory.UPDATE_SKILLS_FLAG;
 			}

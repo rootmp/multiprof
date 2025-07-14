@@ -42,7 +42,7 @@ public class ChangePhoneNumber extends ReceivablePacket
 			statement.execute();
 			statement.close();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("ChangePhoneNumber: Could not write data. Reason: " + e);
 		}
@@ -50,10 +50,10 @@ public class ChangePhoneNumber extends ReceivablePacket
 		{
 			try
 			{
-				if (con != null)
+				if(con != null)
 					con.close();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				e.printStackTrace();
 			}

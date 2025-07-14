@@ -1,5 +1,6 @@
 package l2s.gameserver.handler.usercommands;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.handler.usercommands.impl.ClanPenalty;
 import l2s.gameserver.handler.usercommands.impl.ClanWarsList;
@@ -11,8 +12,6 @@ import l2s.gameserver.handler.usercommands.impl.MyBirthday;
 import l2s.gameserver.handler.usercommands.impl.OlympiadStat;
 import l2s.gameserver.handler.usercommands.impl.PartyInfo;
 import l2s.gameserver.handler.usercommands.impl.Time;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class UserCommandHandler extends AbstractHolder
 {
@@ -42,7 +41,7 @@ public class UserCommandHandler extends AbstractHolder
 	public void registerUserCommandHandler(IUserCommandHandler handler)
 	{
 		int[] ids = handler.getUserCommandList();
-		for (int element : ids)
+		for(int element : ids)
 			_datatable.put(element, handler);
 	}
 

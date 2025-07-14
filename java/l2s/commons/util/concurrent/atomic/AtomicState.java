@@ -19,8 +19,7 @@ public class AtomicState
 	}
 
 	public AtomicState()
-	{
-	}
+	{}
 
 	public final boolean get()
 	{
@@ -34,14 +33,14 @@ public class AtomicState
 
 	private boolean getBool(int value)
 	{
-		if (value < 0)
+		if(value < 0)
 			throw new IllegalStateException();
 		return value > 0;
 	}
 
 	public final boolean setAndGet(boolean newValue)
 	{
-		if (newValue)
+		if(newValue)
 			return getBool(stateUpdater.incrementAndGet(this));
 		else
 			return getBool(stateUpdater.decrementAndGet(this));
@@ -49,7 +48,7 @@ public class AtomicState
 
 	public final boolean getAndSet(boolean newValue)
 	{
-		if (newValue)
+		if(newValue)
 			return getBool(stateUpdater.getAndIncrement(this));
 		else
 			return getBool(stateUpdater.getAndDecrement(this));

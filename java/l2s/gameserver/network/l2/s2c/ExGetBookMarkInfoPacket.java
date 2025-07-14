@@ -25,7 +25,7 @@ public class ExGetBookMarkInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(bookmarksCapacity);
 		packetWriter.writeD(bookmarks.length);
 		int slotId = 0;
-		for (BookMark bookmark : bookmarks)
+		for(BookMark bookmark : bookmarks)
 		{
 			packetWriter.writeD(++slotId);
 			packetWriter.writeD(bookmark.x);

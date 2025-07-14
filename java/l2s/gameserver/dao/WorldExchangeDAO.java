@@ -68,7 +68,7 @@ public class WorldExchangeDAO
 				long endTime = rs.getLong("end_time");
 				final int listing_type = rs.getInt("listing_type");
 				final int currency_type = rs.getInt("currency_type");
-				
+
 				if(endTime < System.currentTimeMillis())
 				{
 					if((storeType == WorldExchangeItemStatusType.WORLD_EXCHANGE_OUT_TIME) || (storeType == WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD))
@@ -122,7 +122,7 @@ public class WorldExchangeDAO
 				statement.setLong(8, holder.getEndTime());
 				statement.setInt(9, holder.getListingType());
 				statement.setInt(10, holder.getCurrencyType());
-				
+
 				statement.addBatch();
 			}
 			statement.executeBatch();
@@ -130,7 +130,7 @@ public class WorldExchangeDAO
 		catch(SQLException e)
 		{
 			_log.warn("Error while saving World Exchange item bids:\n", e);
-		}		
+		}
 		finally
 		{
 			DbUtils.closeQuietly(con, statement);
@@ -147,7 +147,7 @@ public class WorldExchangeDAO
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement(INSERT_WORLD_EXCHANGE);
-			
+
 			statement.setLong(1, holder.getWorldExchangeId());
 			statement.setLong(2, holder.getItemInstance().getObjectId());
 			statement.setInt(3, holder.getStoreType().getId());

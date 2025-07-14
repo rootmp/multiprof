@@ -84,7 +84,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	private void clearRef()
 	{
 		HardReference<? extends GameObject> reference = getRef();
-		if (reference != null)
+		if(reference != null)
 		{
 			reference.clear();
 		}
@@ -107,18 +107,14 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public boolean setReflection(Reflection reflection)
 	{
-		if (_reflection == reflection)
-		{
-			return true;
-		}
+		if(_reflection == reflection)
+		{ return true; }
 
-		if (reflection.isCollapseStarted())
-		{
-			return false;
-		}
+		if(reflection.isCollapseStarted())
+		{ return false; }
 
 		boolean respawn = false;
-		if (isVisible())
+		if(isVisible())
 		{
 			decayMe();
 			respawn = true;
@@ -128,7 +124,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 		_reflection = reflection;
 
-		if (respawn)
+		if(respawn)
 		{
 			spawnMe();
 		}
@@ -139,7 +135,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	public boolean setReflection(int reflectionId)
 	{
 		Reflection r = ReflectionManager.getInstance().get(reflectionId);
-		if (r == null)
+		if(r == null)
 		{
 			Log.debug("Trying to set unavailable reflection: " + reflectionId + " for object: " + this + "!", new Throwable().fillInStackTrace());
 			return false;
@@ -219,22 +215,20 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 		z = World.validCoordZ(z);
 		z = getGeoZ(x, y, z);
 
-		if (!isBoat())
+		if(!isBoat())
 		{
-			if (isFlying())
+			if(isFlying())
 			{
 				z += 32;
 			}
-			else if (isInWater())
+			else if(isInWater())
 			{
 				z += 16;
 			}
 		}
 
-		if ((_x == x) && (_y == y) && (_z == z))
-		{
-			return false;
-		}
+		if((_x == x) && (_y == y) && (_z == z))
+		{ return false; }
 
 		_x = x;
 		_y = y;
@@ -250,26 +244,24 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	public boolean setZ(int z, boolean checkGeoZ)
 	{
 		z = World.validCoordZ(z);
-		if (checkGeoZ)
+		if(checkGeoZ)
 		{
 			z = getGeoZ(getX(), getY(), z);
-			if (!isBoat())
+			if(!isBoat())
 			{
-				if (isFlying())
+				if(isFlying())
 				{
 					z += 32;
 				}
-				else if (isInWater())
+				else if(isInWater())
 				{
 					z += 16;
 				}
 			}
 		}
 
-		if (_z == z)
-		{
-			return false;
-		}
+		if(_z == z)
+		{ return false; }
 
 		_z = z;
 
@@ -325,15 +317,11 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	 */
 	protected void spawn0(Creature dropper)
 	{
-		if (_reflection.isCollapseStarted())
-		{
-			return;
-		}
+		if(_reflection.isCollapseStarted())
+		{ return; }
 
-		if (!_state.compareAndSet(CREATED, VISIBLE))
-		{
-			return;
-		}
+		if(!_state.compareAndSet(CREATED, VISIBLE))
+		{ return; }
 
 		World.addVisibleObject(this, dropper);
 
@@ -344,7 +332,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public void toggleVisible()
 	{
-		if (isVisible())
+		if(isVisible())
 		{
 			decayMe();
 		}
@@ -375,10 +363,8 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	 */
 	public final void decayMe()
 	{
-		if (!_state.compareAndSet(VISIBLE, CREATED))
-		{
-			return;
-		}
+		if(!_state.compareAndSet(VISIBLE, CREATED))
+		{ return; }
 
 		World.removeVisibleObject(this);
 
@@ -397,10 +383,8 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	{
 		decayMe();
 
-		if (!_state.compareAndSet(CREATED, DELETED))
-		{
-			return;
-		}
+		if(!_state.compareAndSet(CREATED, DELETED))
+		{ return; }
 
 		onDelete();
 	}
@@ -418,10 +402,8 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public void onAction(Player player, boolean shift)
 	{
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, GameObject.class, this, true))
-		{
-			return;
-		}
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, GameObject.class, this, true))
+		{ return; }
 
 		player.sendActionFailed();
 	}
@@ -445,48 +427,32 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	 */
 	public final boolean isInRange(GameObject obj, int range)
 	{
-		if (obj == null)
-		{
-			return false;
-		}
-		if (obj.getReflection() != getReflection())
-		{
-			return false;
-		}
+		if(obj == null)
+		{ return false; }
+		if(obj.getReflection() != getReflection())
+		{ return false; }
 		long dx = Math.abs(obj.getX() - getX());
-		if (dx > range)
-		{
-			return false;
-		}
+		if(dx > range)
+		{ return false; }
 		long dy = Math.abs(obj.getY() - getY());
-		if (dy > range)
-		{
-			return false;
-		}
+		if(dy > range)
+		{ return false; }
 		long dz = Math.abs(obj.getZ() - getZ());
 		return (dz <= 1500) && (((dx * dx) + (dy * dy)) <= ((long) range * range));
 	}
 
 	public final boolean isInRangeZ(GameObject obj, int range)
 	{
-		if (obj == null)
-		{
-			return false;
-		}
-		if (obj.getReflection() != getReflection())
-		{
-			return false;
-		}
+		if(obj == null)
+		{ return false; }
+		if(obj.getReflection() != getReflection())
+		{ return false; }
 		long dx = Math.abs(obj.getX() - getX());
-		if (dx > range)
-		{
-			return false;
-		}
+		if(dx > range)
+		{ return false; }
 		long dy = Math.abs(obj.getY() - getY());
-		if (dy > range)
-		{
-			return false;
-		}
+		if(dy > range)
+		{ return false; }
 		long dz = Math.abs(obj.getZ() - getZ());
 		return (dz <= range) && (((dx * dx) + (dy * dy) + (dz * dz)) <= ((long) range * range));
 	}
@@ -504,11 +470,11 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	public final int getRealDistance3D(GameObject obj, boolean ignoreZ)
 	{
 		int distance = ignoreZ ? getDistance(obj) : getDistance3D(obj);
-		if (isCreature())
+		if(isCreature())
 		{
 			distance -= ((Creature) this).getCurrentCollisionRadius();
 		}
-		if (obj.isCreature())
+		if(obj.isCreature())
 		{
 			distance -= ((Creature) obj).getCurrentCollisionRadius();
 		}
@@ -745,7 +711,7 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public List<IClientOutgoingPacket> deletePacketList(Player forPlayer)
 	{
-		return Collections.<IClientOutgoingPacket> singletonList(new DeleteObjectPacket(forPlayer,this));
+		return Collections.<IClientOutgoingPacket> singletonList(new DeleteObjectPacket(forPlayer, this));
 	}
 
 	@Override
@@ -767,18 +733,12 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (obj == this)
-		{
-			return true;
-		}
-		if (obj == null)
-		{
-			return false;
-		}
-		if (obj.getClass() != getClass())
-		{
-			return false;
-		}
+		if(obj == this)
+		{ return true; }
+		if(obj == null)
+		{ return false; }
+		if(obj.getClass() != getClass())
+		{ return false; }
 		return ((GameObject) obj).getObjectId() == getObjectId();
 	}
 
@@ -858,46 +818,34 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public final boolean activateGeoControl()
 	{
-		if (!Config.ALLOW_GEODATA)
-		{
-			return true;
-		}
+		if(!Config.ALLOW_GEODATA)
+		{ return true; }
 
 		_geoLock.lock();
 		try
 		{
-			if (!isGeoControlEnabled())
-			{
-				return false;
-			}
+			if(!isGeoControlEnabled())
+			{ return false; }
 
-			if (isGeoControlActivated())
-			{
-				return false;
-			}
+			if(isGeoControlActivated())
+			{ return false; }
 
-			if (!isVisible())
-			{
-				return false;
-			}
+			if(!isVisible())
+			{ return false; }
 
-			if (getGeoShape() == null)
+			if(getGeoShape() == null)
 			{
 				Shape shape = makeGeoShape();
-				if (shape == null)
-				{
-					return false;
-				}
+				if(shape == null)
+				{ return false; }
 
 				setGeoShape(shape);
 			}
 
 			int geoIndex = getGeoIndex();
 
-			if (!GeoEngine.applyGeoControl(this, geoIndex))
-			{
-				return false;
-			}
+			if(!GeoEngine.applyGeoControl(this, geoIndex))
+			{ return false; }
 
 			_geoControlIndex = geoIndex;
 			return true;
@@ -910,23 +858,17 @@ public abstract class GameObject extends EventOwner implements GeoControl, ILoca
 
 	public final boolean deactivateGeoControl()
 	{
-		if (!Config.ALLOW_GEODATA)
-		{
-			return true;
-		}
+		if(!Config.ALLOW_GEODATA)
+		{ return true; }
 
 		_geoLock.lock();
 		try
 		{
-			if (!isGeoControlActivated())
-			{
-				return false;
-			}
+			if(!isGeoControlActivated())
+			{ return false; }
 
-			if (!GeoEngine.returnGeoControl(this))
-			{
-				return false;
-			}
+			if(!GeoEngine.returnGeoControl(this))
+			{ return false; }
 
 			_geoControlIndex = 0;
 			return true;

@@ -51,10 +51,10 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
+		if(!activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_show_skills:
 				showSkillsPage(activeChar);
@@ -72,7 +72,7 @@ public class AdminSkill implements IAdminCommandHandler
 				activeChar.sendPacket(new HtmlMessage(5).setFile("admin/skills.htm"));
 				break;
 			case admin_skill_index:
-				if (wordList.length > 1)
+				if(wordList.length > 1)
 					activeChar.sendPacket(new HtmlMessage(5).setFile("admin/skills/" + wordList[1] + ".htm"));
 				break;
 			case admin_add_skill:
@@ -96,7 +96,7 @@ public class AdminSkill implements IAdminCommandHandler
 			case admin_remove_cooldown:
 				GameObject target = activeChar.getTarget();
 				Player player = null;
-				if (target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+				if(target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 					player = (Player) target;
 				else
 				{
@@ -110,7 +110,7 @@ public class AdminSkill implements IAdminCommandHandler
 				showSkillsPage(activeChar);
 				break;
 			case admin_buff:
-				for (int i = 7041; i <= 7064; i++)
+				for(int i = 7041; i <= 7064; i++)
 					activeChar.addSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, i, 1));
 				activeChar.sendSkillList();
 				break;
@@ -126,7 +126,7 @@ public class AdminSkill implements IAdminCommandHandler
 	private void debug_stats(Player activeChar)
 	{
 		GameObject target_obj = activeChar.getTarget();
-		if (!target_obj.isCreature())
+		if(!target_obj.isCreature())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return;
@@ -138,21 +138,21 @@ public class AdminSkill implements IAdminCommandHandler
 
 		String log_str = "--- Debug for " + target.getName() + " ---\r\n";
 
-		for (Calculator calculator : calculators)
+		for(Calculator calculator : calculators)
 		{
-			if (calculator == null)
+			if(calculator == null)
 				continue;
 			Env env = new Env(target, activeChar, null);
 			env.value = calculator.getBase();
 			log_str += "Stat: " + calculator._stat.getValue() + ", prevValue: " + calculator.getLast() + "\r\n";
 			Func[] funcs = calculator.getFunctions();
-			for (int i = 0; i < funcs.length; i++)
+			for(int i = 0; i < funcs.length; i++)
 			{
 				String order = Integer.toHexString(funcs[i].order).toUpperCase();
-				if (order.length() == 1)
+				if(order.length() == 1)
 					order = "0" + order;
 				log_str += "\tFunc #" + i + "@ [0x" + order + "]" + funcs[i].getClass().getSimpleName() + "\t" + env.value;
-				if (funcs[i].getCondition() == null || funcs[i].getCondition().test(env))
+				if(funcs[i].getCondition() == null || funcs[i].getCondition().test(env))
 					funcs[i].calc(env, null);
 				log_str += " -> " + env.value + (funcs[i].owner != null ? "; owner: " + funcs[i].owner.toString() : "; no owner") + "\r\n";
 			}
@@ -171,7 +171,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player = null;
-		if (target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -192,7 +192,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -215,8 +215,9 @@ public class AdminSkill implements IAdminCommandHandler
 		replyMSG.append("<br><center>Click on the skill you wish to remove:</center>");
 		replyMSG.append("<br><table width=270>");
 		replyMSG.append("<tr><td width=80>Name:</td><td width=60>Level:</td><td width=40>Id:</td></tr>");
-		for (SkillEntry element : skills)
-			replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_remove_skill " + element.getId() + "\">" + element.getName(activeChar) + "</a></td><td width=60>" + element.getLevel() + "</td><td width=40>" + element.getId() + "</td></tr>");
+		for(SkillEntry element : skills)
+			replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_remove_skill " + element.getId() + "\">" + element.getName(activeChar)
+					+ "</a></td><td width=60>" + element.getLevel() + "</td><td width=40>" + element.getId() + "</td></tr>");
 		replyMSG.append("</table>");
 		replyMSG.append("<br><center><table>");
 		replyMSG.append("Remove custom skill:");
@@ -235,7 +236,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -244,9 +245,9 @@ public class AdminSkill implements IAdminCommandHandler
 		}
 
 		Collection<SkillEntry> skills = player.getAllSkills();
-		for (SkillEntry skillEntry : skills)
+		for(SkillEntry skillEntry : skills)
 		{
-			if (skillEntry != null)
+			if(skillEntry != null)
 				player.removeSkill(skillEntry, true);
 		}
 
@@ -262,7 +263,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -300,7 +301,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -324,8 +325,9 @@ public class AdminSkill implements IAdminCommandHandler
 		replyMSG.append("\" action=\"bypass -h admin_show_effects\" width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" /></center>");
 		replyMSG.append("<br>");
 
-		for (Abnormal e : player.getAbnormalList())
-			replyMSG.append(e.getSkill().getName(activeChar)).append(" ").append(e.getSkill().getLevel()).append(" - ").append(e.getSkill().isToggle() ? "Infinity" : (e.getTimeLeft() + " seconds")).append("<br1>");
+		for(Abnormal e : player.getAbnormalList())
+			replyMSG.append(e.getSkill().getName(activeChar)).append(" ").append(e.getSkill().getLevel()).append(" - ").append(e.getSkill().isToggle() ? "Infinity" : (e.getTimeLeft()
+					+ " seconds")).append("<br1>");
 		replyMSG.append("<br></body></html>");
 
 		adminReply.setHtml(replyMSG.toString());
@@ -336,7 +338,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -344,15 +346,15 @@ public class AdminSkill implements IAdminCommandHandler
 			return;
 		}
 
-		if (player.getName().equals(activeChar.getName()))
+		if(player.getName().equals(activeChar.getName()))
 			player.sendMessage("There is no point in doing it on your character.");
 		else
 		{
 			Collection<SkillEntry> skills = player.getAllSkills();
 			adminSkills = activeChar.getAllSkillsArray();
-			for (SkillEntry element : adminSkills)
+			for(SkillEntry element : adminSkills)
 				activeChar.removeSkill(element, true);
-			for (SkillEntry element : skills)
+			for(SkillEntry element : skills)
 				activeChar.addSkill(element, true);
 			activeChar.sendUserInfo();
 			activeChar.updateStats();
@@ -367,7 +369,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player = null;
-		if (target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -397,7 +399,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player;
-		if (target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target != null && target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -405,14 +407,14 @@ public class AdminSkill implements IAdminCommandHandler
 			return;
 		}
 
-		if (wordList.length >= 2)
+		if(wordList.length >= 2)
 		{
 			int id = Integer.parseInt(wordList[1]);
 			int level = 1;
-			if (wordList.length >= 3)
+			if(wordList.length >= 3)
 				level = Integer.parseInt(wordList[2]);
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level);
-			if (skillEntry != null)
+			if(skillEntry != null)
 			{
 				player.addSkill(skillEntry, true);
 				player.sendUserInfo();
@@ -433,7 +435,7 @@ public class AdminSkill implements IAdminCommandHandler
 	{
 		GameObject target = activeChar.getTarget();
 		Player player = null;
-		if (target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
+		if(target.isPlayer() && (activeChar == target || activeChar.getPlayerAccess().CanEditCharAll))
 			player = (Player) target;
 		else
 		{
@@ -441,12 +443,12 @@ public class AdminSkill implements IAdminCommandHandler
 			return;
 		}
 
-		if (wordList.length == 2)
+		if(wordList.length == 2)
 		{
 			int id = Integer.parseInt(wordList[1]);
 			int level = player.getSkillLevel(id);
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level);
-			if (skillEntry != null)
+			if(skillEntry != null)
 			{
 				player.sendMessage("Admin removed the skill " + skillEntry.getName(player) + ".");
 				player.removeSkill(skillEntry, true);
@@ -465,14 +467,14 @@ public class AdminSkill implements IAdminCommandHandler
 	private void adminCallSkill(Player player, String[] wordList)
 	{
 		GameObject target = player.getTarget();
-		if (target == null)
+		if(target == null)
 			target = player;
 
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 			return;
 
 		Skill skill = SkillHolder.getInstance().getSkill(Integer.parseInt(wordList[1]), Integer.parseInt(wordList[2]));
-		if (skill == null)
+		if(skill == null)
 			return;
 
 		Set<Creature> targets = new HashSet<Creature>();

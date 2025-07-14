@@ -72,10 +72,10 @@ public class PvPEvent extends SingleMatchEvent
 	{
 		super(set);
 
-		if (set.getBool("enabled", false))
+		if(set.getBool("enabled", false))
 		{
 			String cron = set.getString("start_time", "");
-			if (!cron.isEmpty())
+			if(!cron.isEmpty())
 				datePattern = new SchedulingPattern(cron);
 		}
 
@@ -184,13 +184,13 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public void reCalcNextTime(boolean onInit)
 	{
-		if (datePattern != null)
+		if(datePattern != null)
 		{
 			clearActions();
 			_startTimeMillis = datePattern.next(System.currentTimeMillis());
 			registerActions();
 
-			if (!onInit)
+			if(!onInit)
 				printInfo();
 		}
 	}
@@ -218,7 +218,7 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public void startEvent()
 	{
-		if (!isEventActive.compareAndSet(false, true))
+		if(!isEventActive.compareAndSet(false, true))
 			return;
 
 		super.startEvent();
@@ -232,24 +232,24 @@ public class PvPEvent extends SingleMatchEvent
 	{
 		_isForceScheduled = false;
 
-		if (force)
+		if(force)
 			action("battle", false);
 
 		isEventActive.set(false);
 		removeObjects("registered_players");
 
-		if (!force)
+		if(!force)
 			reCalcNextTime(false);
 	}
 
 	@Override
 	public void action(String name, boolean start)
 	{
-		switch (name)
+		switch(name)
 		{
 			case "registration":
 			{
-				if (start)
+				if(start)
 				{
 					isRegActive.set(true);
 					Announcements.announceToAllFromStringHolder("l2s.gameserver.model.entity.events.impl.PvPEvent.registration.start", getEventName());
@@ -257,12 +257,12 @@ public class PvPEvent extends SingleMatchEvent
 					CustomMessage askMessage = new CustomMessage("l2s.gameserver.model.entity.events.impl.PvPEvent.registration.ask").addCustomMessage(getEventName());
 
 					int count = 0;
-					for (Player player : GameObjectsStorage.getPlayers(true, false))
+					for(Player player : GameObjectsStorage.getPlayers(true, false))
 					{
 						/*
 						 * if(player.isFakePlayer()) { if(player.getLevel() > 99 && count <= 30) {
 						 * reg(player); count++; } } else
-						 */if (player.getLevel() >= getMinLevel() && player.getLevel() <= getMaxLevel())
+						 */if(player.getLevel() >= getMinLevel() && player.getLevel() <= getMaxLevel())
 							player.ask(new ConfirmDlgPacket(SystemMsg.S1, 60000).addString(askMessage.toString(player)), new EventAnswerListner(player, getId()));
 					}
 				}
@@ -271,7 +271,7 @@ public class PvPEvent extends SingleMatchEvent
 					isRegActive.set(false);
 
 					List<Player> registeredPlayers = getObjects("registered_players");
-					if (registeredPlayers.size() < _minPlayers)
+					if(registeredPlayers.size() < _minPlayers)
 					{
 						Announcements.announceToAllFromStringHolder("l2s.gameserver.model.entity.events.impl.PvPEvent.registration.cancel", getEventName());
 						stopEvent(false);
@@ -294,7 +294,7 @@ public class PvPEvent extends SingleMatchEvent
 			{
 				isBattleActive.set(true);
 				List<PvPEventArenaObject> arenas = getObjects("arenas");
-				for (PvPEventArenaObject arena : arenas)
+				for(PvPEventArenaObject arena : arenas)
 				{
 					arena.teleportPlayers();
 				}
@@ -303,14 +303,14 @@ public class PvPEvent extends SingleMatchEvent
 			case "battle":
 			{
 				List<PvPEventArenaObject> arenas = getObjects("arenas");
-				for (PvPEventArenaObject arena : arenas)
+				for(PvPEventArenaObject arena : arenas)
 				{
-					if (start)
+					if(start)
 						arena.startBattle();
 					else
 						arena.stopBattle();
 				}
-				if (!start)
+				if(!start)
 				{
 					isBattleActive.set(false);
 					stopEvent(false);
@@ -326,38 +326,38 @@ public class PvPEvent extends SingleMatchEvent
 
 	private boolean checkReg(Player player)
 	{
-		if (player.getLevel() > getMaxLevel() || player.getLevel() < getMinLevel())
+		if(player.getLevel() > getMaxLevel() || player.getLevel() < getMinLevel())
 			return false;
 
-		if (player.isMounted() || player.isDead() || player.isInObserverMode())
+		if(player.isMounted() || player.isDead() || player.isInObserverMode())
 			return false;
 
 		final SingleMatchEvent evt = player.getEvent(SingleMatchEvent.class);
-		if (evt != null && evt != this)
+		if(evt != null && evt != this)
 			return false;
 
-		if (player.getTeam() != TeamType.NONE)
+		if(player.getTeam() != TeamType.NONE)
 			return false;
 
-		if (/* !player.isFakePlayer() && */player.getOlympiadGame() != null || Olympiad.isRegistered(player))
+		if(/* !player.isFakePlayer() && */player.getOlympiadGame() != null || Olympiad.isRegistered(player))
 			return false;
 
-		if (player.isTeleporting())
+		if(player.isTeleporting())
 			return false;
 
-		if (!player.getReflection().isMain())
+		if(!player.getReflection().isMain())
 			return false;
 
-		if (isRegistered(player))
+		if(isRegistered(player))
 			return false;
 
-		for (PvPEvent events : EventHolder.getInstance().getEvents(PvPEvent.class))
+		for(PvPEvent events : EventHolder.getInstance().getEvents(PvPEvent.class))
 		{
-			if (events.isRegistered(player))
+			if(events.isRegistered(player))
 				return false;
 		}
 
-		if (player.isInZone(Zone.ZoneType.epic))
+		if(player.isInZone(Zone.ZoneType.epic))
 			return false;
 
 		return true;
@@ -365,13 +365,13 @@ public class PvPEvent extends SingleMatchEvent
 
 	public void showReg()
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
-			if (isRegActive())
+			if(isRegActive())
 			{
-				if (isRegistered(player))
+				if(isRegistered(player))
 					Functions.show("events/event_yesreg.htm", player);
-				else if (checkReg(player))
+				else if(checkReg(player))
 					Functions.show("events/event_" + getId() + ".htm", player);
 			}
 			else
@@ -381,7 +381,7 @@ public class PvPEvent extends SingleMatchEvent
 
 	public void reg(Player player)
 	{
-		if (isRegActive.get() && (checkReg(player)/* || player.isFakePlayer() */))
+		if(isRegActive.get() && (checkReg(player)/* || player.isFakePlayer() */))
 		{
 			addObject("registered_players", player);
 			player.addListenerHook(ListenerHookType.PLAYER_QUIT_GAME, PvPEventHook.getInstance());
@@ -405,17 +405,17 @@ public class PvPEvent extends SingleMatchEvent
 	public void abnormals(Player player, boolean start)
 	{
 		PvPEventPlayerObject member = getParticipant(player);
-		if (member == null)
+		if(member == null)
 			return;
 
 		int teamId = member.getTeam();
-		if (teamId == -1)
+		if(teamId == -1)
 			teamId = 0;
 
 		List<AbnormalEffect> abnormalEffects = getObjects("abnormal" + teamId);
-		for (AbnormalEffect abnormalEffect : abnormalEffects)
+		for(AbnormalEffect abnormalEffect : abnormalEffects)
 		{
-			if (start)
+			if(start)
 				player.startAbnormalEffect(abnormalEffect);
 			else
 				player.stopAbnormalEffect(abnormalEffect);
@@ -427,7 +427,7 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public SystemMsg checkForAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (!isEnemy(target, attacker))
+		if(!isEnemy(target, attacker))
 			return SystemMsg.INVALID_TARGET;
 		return null;
 	}
@@ -441,10 +441,10 @@ public class PvPEvent extends SingleMatchEvent
 	private boolean isEnemy(Creature target, Creature attacker)
 	{
 		PvPEventPlayerObject attackerMember = getParticipant(attacker.getPlayer());
-		if (attackerMember == null)
+		if(attackerMember == null)
 			return false;
 		PvPEventPlayerObject targetMember = getParticipant(target.getPlayer());
-		if (targetMember == null)
+		if(targetMember == null)
 			return false;
 		return attackerMember.getTeam() == -1 || attackerMember.getTeam() != targetMember.getTeam();
 	}
@@ -454,9 +454,9 @@ public class PvPEvent extends SingleMatchEvent
 	public boolean isRegistered(Player player)
 	{
 		List<Player> players = getObjects("registered_players");
-		for (Player temp : players)
+		for(Player temp : players)
 		{
-			if (player.equals(temp))
+			if(player.equals(temp))
 				return true;
 		}
 		return false;
@@ -465,9 +465,9 @@ public class PvPEvent extends SingleMatchEvent
 	public PvPEventArenaObject getArena(Player player)
 	{
 		List<PvPEventArenaObject> arenas = getObjects("arenas");
-		for (PvPEventArenaObject arena : arenas)
+		for(PvPEventArenaObject arena : arenas)
 		{
-			if (arena.getParticipant(player) != null)
+			if(arena.getParticipant(player) != null)
 				return arena;
 		}
 		return null;
@@ -476,7 +476,7 @@ public class PvPEvent extends SingleMatchEvent
 	public PvPEventPlayerObject getParticipant(Player player)
 	{
 		PvPEventArenaObject arena = getArena(player);
-		if (arena != null)
+		if(arena != null)
 			return arena.getParticipant(player);
 		return null;
 	}
@@ -484,9 +484,9 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public String getVisibleName(Player player, Player observer)
 	{
-		if (player != observer)
+		if(player != observer)
 		{
-			if (isBattleActive() && isHideNick())
+			if(isBattleActive() && isHideNick())
 				return new CustomMessage("l2s.gameserver.model.entity.events.impl.PvPEvent.playername").toString(observer);
 		}
 		return null;
@@ -495,9 +495,9 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public String getVisibleTitle(Player player, Player observer)
 	{
-		if (player != observer)
+		if(player != observer)
 		{
-			if (isBattleActive() && isHideNick())
+			if(isBattleActive() && isHideNick())
 				return "";
 		}
 		return null;
@@ -506,9 +506,9 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public Integer getVisibleNameColor(Player player, Player observer)
 	{
-		if (player != observer)
+		if(player != observer)
 		{
-			if (isBattleActive() && isHideNick())
+			if(isBattleActive() && isHideNick())
 				return Player.DEFAULT_NAME_COLOR;
 		}
 		return null;
@@ -517,9 +517,9 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public Integer getVisibleTitleColor(Player player, Player observer)
 	{
-		if (player != observer)
+		if(player != observer)
 		{
-			if (isBattleActive() && isHideNick())
+			if(isBattleActive() && isHideNick())
 				return Player.DEFAULT_TITLE_COLOR;
 		}
 		return null;
@@ -528,9 +528,9 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public boolean isPledgeVisible(Player player, Player observer)
 	{
-		if (player != observer)
+		if(player != observer)
 		{
-			if (isBattleActive() && isHideNick())
+			if(isBattleActive() && isHideNick())
 				return false;
 		}
 		return true;
@@ -539,11 +539,11 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public boolean checkCondition(Creature creature, Class<? extends Condition> conditionClass)
 	{
-		if (isBattleActive() && _enableHeroCond)
+		if(isBattleActive() && _enableHeroCond)
 		{
-			if (conditionClass == ConditionPlayerOlympiad.class)
+			if(conditionClass == ConditionPlayerOlympiad.class)
 				return false;
-			if (conditionClass.isAssignableFrom(ConditionPlayerOlympiad.class)) // TODO: Нужно ли?
+			if(conditionClass.isAssignableFrom(ConditionPlayerOlympiad.class)) // TODO: Нужно ли?
 				return false;
 		}
 		return true;
@@ -568,20 +568,18 @@ public class PvPEvent extends SingleMatchEvent
 
 	private int[][] parseBuffs(String buffs)
 	{
-		if (buffs == null || buffs.isEmpty())
-			return new int[][]
-			{};
+		if(buffs == null || buffs.isEmpty())
+			return new int[][] {};
 
 		StringTokenizer st = new StringTokenizer(buffs, ";");
 		int[][] realBuffs = new int[st.countTokens()][2];
 		int index = 0;
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			String[] skillLevel = st.nextToken().split(",");
-			int[] realHourMin =
-			{
-				Integer.parseInt(skillLevel[0]),
-				Integer.parseInt(skillLevel[1])
+			int[] realHourMin = {
+					Integer.parseInt(skillLevel[0]),
+					Integer.parseInt(skillLevel[1])
 			};
 			realBuffs[index] = realHourMin;
 			index++;
@@ -604,10 +602,10 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public boolean forceScheduleEvent()
 	{
-		if (isForceScheduled())
+		if(isForceScheduled())
 			return false;
 
-		if (isInProgress())
+		if(isInProgress())
 			return false;
 
 		_isForceScheduled = true;
@@ -620,7 +618,7 @@ public class PvPEvent extends SingleMatchEvent
 	@Override
 	public boolean forceCancelEvent()
 	{
-		if (!isForceScheduled())
+		if(!isForceScheduled())
 			return false;
 
 		_isForceScheduled = false;

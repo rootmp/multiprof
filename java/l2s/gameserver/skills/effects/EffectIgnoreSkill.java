@@ -1,12 +1,11 @@
 package l2s.gameserver.skills.effects;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.gameserver.handler.effects.EffectHandler;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.templates.skill.EffectTemplate;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author Bonux
@@ -20,7 +19,7 @@ public class EffectIgnoreSkill extends EffectHandler
 		super(template);
 
 		String[] skills = getParams().getString("skillId", "").split(";");
-		for (String skill : skills)
+		for(String skill : skills)
 			_ignoredSkill.add(Integer.parseInt(skill));
 	}
 

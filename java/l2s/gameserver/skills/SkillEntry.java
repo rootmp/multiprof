@@ -148,11 +148,11 @@ public class SkillEntry implements SkillInfo
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (this == obj)
+		if(this == obj)
 			return true;
-		if (obj == null)
+		if(obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if(getClass() != obj.getClass())
 			return false;
 		return hashCode() == obj.hashCode();
 	}
@@ -171,7 +171,7 @@ public class SkillEntry implements SkillInfo
 
 	public static SkillEntry makeSkillEntry(SkillEntryType entryType, Skill skill)
 	{
-		if (skill == null)
+		if(skill == null)
 			return null;
 		return new SkillEntry(entryType, skill);
 	}
@@ -185,10 +185,10 @@ public class SkillEntry implements SkillInfo
 	{
 		return makeSkillEntry(entryType, SkillHolder.getInstance().getSkill(skillId, skillLevel));
 	}
-	
+
 	@Override
 	public int getSubLevel()
 	{
-		return 0;  
+		return 0;
 	}
 }

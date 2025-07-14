@@ -11,7 +11,7 @@ import l2s.gameserver.tables.ClanTable;
 public class PledgeHuntingSaveTask extends AutomaticTask
 {
 	private static final Logger _log = LoggerFactory.getLogger(PledgeHuntingSaveTask.class);
-	
+
 	private static final long SAVE_DELAY = 10 * 60 * 1000; // 10 minutes
 
 	public PledgeHuntingSaveTask()
@@ -23,7 +23,7 @@ public class PledgeHuntingSaveTask extends AutomaticTask
 	public void doTask() throws Exception
 	{
 		long t = System.currentTimeMillis();
-		
+
 		_log.info("Clan Hunting Task: Database save started.");
 		ClanTable.getInstance().saveClanHuntingProgress();
 		_log.info("Clan Hunting Task: Database saved finished in: " + (System.currentTimeMillis() - t) + " ms.");

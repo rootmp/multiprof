@@ -4,6 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.concurrent.ScheduledFuture;
+
 import l2s.gameserver.Config;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.dao.HuntPassDAO;
@@ -101,13 +102,14 @@ public class HuntPass
 	{
 		if(Config.ENABLE_HUNT_PASS)
 		{
-      DayOfWeek dayOfWeek = LocalDateTime.now().getDayOfWeek();
-      boolean isWeekend = dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY;
-      
-			int gm_mod = isWeekend ? 2:1;
+			DayOfWeek dayOfWeek = LocalDateTime.now().getDayOfWeek();
+			boolean isWeekend = dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY;
+
+			int gm_mod = isWeekend ? 2 : 1;
 			int seasonPasspoint = Config.HUNT_PASS_POINTS_FOR_MOB * gm_mod;
 
-			if(!mob.getReflection().isMain() && mob.getReflection().getInstancedZone() != null && (mob.getReflection().getInstancedZone().isStatic() || mob.getReflection().getInstancedZoneId() == 228))
+			if(!mob.getReflection().isMain() && mob.getReflection().getInstancedZone() != null
+					&& (mob.getReflection().getInstancedZone().isStatic() || mob.getReflection().getInstancedZoneId() == 228))
 				seasonPasspoint = Config.HUNT_PASS_POINTS_FOR_MOB_INSTANCE * gm_mod;
 
 			int calculate = seasonPasspoint + getPoints();

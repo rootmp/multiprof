@@ -16,7 +16,7 @@ public class ConditionPlayerRace extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 		return ((Player) env.character).getRace() == _race;
 	}

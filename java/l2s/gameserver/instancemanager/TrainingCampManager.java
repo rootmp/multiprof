@@ -30,13 +30,13 @@ public class TrainingCampManager
 		public void onPlayerEnter(Player player)
 		{
 			final TrainingCamp trainingCamp = getTrainingCamp(player);
-			if (trainingCamp == null)
+			if(trainingCamp == null)
 				return;
 
-			if (trainingCamp.isValid(player) && trainingCamp.isTraining())
+			if(trainingCamp.isValid(player) && trainingCamp.isTraining())
 			{
 				final int elapsedTime = trainingCamp.getElapsedTime();
-				if (elapsedTime < trainingCamp.getMaxDuration())
+				if(elapsedTime < trainingCamp.getMaxDuration())
 				{
 					onEnterTrainingCamp(player);
 					player.startTrainingCampTask(trainingCamp.getRemainingTime() * 1000);
@@ -72,7 +72,7 @@ public class TrainingCampManager
 
 	public void init()
 	{
-		if (!Config.TRAINING_CAMP_ENABLE)
+		if(!Config.TRAINING_CAMP_ENABLE)
 			return;
 
 		CharacterTrainingCampDAO.getInstance().restore(_trainingCamps);
@@ -82,7 +82,7 @@ public class TrainingCampManager
 
 	public boolean addTrainingCamp(Player player, TrainingCamp trainingCamp)
 	{
-		if (CharacterTrainingCampDAO.getInstance().replace(player.getAccountName(), trainingCamp))
+		if(CharacterTrainingCampDAO.getInstance().replace(player.getAccountName(), trainingCamp))
 		{
 			_trainingCamps.put(player.getAccountName(), trainingCamp);
 			return true;
@@ -97,7 +97,7 @@ public class TrainingCampManager
 
 	public void removeTrainingCamp(Player player)
 	{
-		if (_trainingCamps.remove(player.getAccountName()) != null)
+		if(_trainingCamps.remove(player.getAccountName()) != null)
 		{
 			CharacterTrainingCampDAO.getInstance().delete(player.getAccountName());
 		}

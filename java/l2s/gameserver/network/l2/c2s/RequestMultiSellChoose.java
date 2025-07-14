@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,7 +74,7 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 		@Override
 		public boolean equals(Object obj)
 		{
-			if (!(obj instanceof ItemData))
+			if(!(obj instanceof ItemData))
 				return false;
 
 			ItemData i = (ItemData) obj;
@@ -104,11 +105,11 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _amount < 1)
+		if(activeChar == null || _amount < 1)
 			return;
 
 		MultiSellListContainer list1 = activeChar.getMultisell();
-		if (list1 == null)
+		if(list1 == null)
 		{
 			activeChar.sendActionFailed();
 			activeChar.setMultisell(null);
@@ -116,7 +117,7 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 		}
 
 		// Проверяем, не подменили ли id
-		if (list1.getListId() != _listId)
+		if(list1.getListId() != _listId)
 		{
 			// TODO audit
 			activeChar.sendActionFailed();
@@ -124,57 +125,57 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
+		if(!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (System.currentTimeMillis() <= (activeChar.getLastMultisellBuyTime() + BUY_DELAY))
+		if(System.currentTimeMillis() <= (activeChar.getLastMultisellBuyTime() + BUY_DELAY))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		MultiSellEntry entry = null;
-		for (MultiSellEntry $entry : list1.getEntries())
-			if ($entry.getEntryId() == _entryId)
+		for(MultiSellEntry $entry : list1.getEntries())
+			if($entry.getEntryId() == _entryId)
 			{
 				entry = $entry;
 				break;
 			}
 
-		if (entry == null)
+		if(entry == null)
 			return;
 
 		final boolean keepenchant = list1.isKeepEnchant();
@@ -195,43 +196,43 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 
 			long slots = 0;
 			long weight = 0;
-			for (MultiSellIngredient i : entry.getProduction())
+			for(MultiSellIngredient i : entry.getProduction())
 			{
-				if (i.getItemId() <= 0)
+				if(i.getItemId() <= 0)
 					continue;
 
 				ItemTemplate item = ItemHolder.getInstance().getTemplate(i.getItemId());
-				if (item == null)
+				if(item == null)
 				{
 					_log.warn("Cannot find production item template ID[" + i.getItemId() + "] in multisell list ID[" + _listId + "]!");
 					return;
 				}
 
 				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(SafeMath.mulAndCheck(i.getItemCount(), _amount), item.getWeight()));
-				if (item.isStackable())
+				if(item.isStackable())
 				{
-					if (inventory.getItemByItemId(i.getItemId()) == null)
+					if(inventory.getItemByItemId(i.getItemId()) == null)
 						slots++;
 				}
 				else
 					slots = SafeMath.addAndCheck(slots, _amount);
 			}
 
-			if (!inventory.validateWeight(weight))
+			if(!inventory.validateWeight(weight))
 			{
 				activeChar.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_WEIGHT_LIMIT);
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (!inventory.validateCapacity(slots))
+			if(!inventory.validateCapacity(slots))
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL);
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (entry.getIngredients().size() == 0)
+			if(entry.getIngredients().size() == 0)
 			{
 				activeChar.sendActionFailed();
 				activeChar.setMultisell(null);
@@ -242,100 +243,101 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 			int lifeTime = 0;
 
 			// Перебор всех ингридиентов, проверка наличия и создание списка забираемого
-			for (MultiSellIngredient ingridient : entry.getIngredients())
+			for(MultiSellIngredient ingridient : entry.getIngredients())
 			{
 				int ingridientItemId = ingridient.getItemId();
 				long ingridientItemCount = ingridient.getItemCount();
 				int ingridientEnchant = ingridient.getItemEnchant();
 				long totalAmount = !ingridient.getMantainIngredient() ? SafeMath.mulAndCheck(ingridientItemCount, _amount) : ingridientItemCount;
 
-				if (ingridientItemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+				if(ingridientItemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 				{
-					if (activeChar.getClan() == null)
+					if(activeChar.getClan() == null)
 					{
 						activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_A_CLAN_MEMBER_AND_CANNOT_PERFORM_THIS_ACTION);
 						return;
 					}
 
-					if (activeChar.getClan().getReputationScore() < totalAmount)
+					if(activeChar.getClan().getReputationScore() < totalAmount)
 					{
 						activeChar.sendPacket(SystemMsg.THE_CLAN_REPUTATION_SCORE_IS_TOO_LOW);
 						return;
 					}
 
-					if (activeChar.getClan().getLeaderId() != activeChar.getObjectId())
+					if(activeChar.getClan().getLeaderId() != activeChar.getObjectId())
 					{
 						activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_IS_NOT_A_CLAN_LEADER).addName(activeChar));
 						return;
 					}
-					if (!ingridient.getMantainIngredient())
+					if(!ingridient.getMantainIngredient())
 						items.add(new ItemData(ingridientItemId, totalAmount, null));
 				}
-				else if (ingridientItemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+				else if(ingridientItemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 				{
-					if (activeChar.getPcBangPoints() < totalAmount)
+					if(activeChar.getPcBangPoints() < totalAmount)
 					{
 						activeChar.sendPacket(SystemMsg.YOU_ARE_SHORT_OF_ACCUMULATED_POINTS);
 						return;
 					}
-					if (!ingridient.getMantainIngredient())
+					if(!ingridient.getMantainIngredient())
 						items.add(new ItemData(ingridientItemId, totalAmount, null));
 				}
-				else if (ingridientItemId == ItemTemplate.ITEM_ID_FAME)
+				else if(ingridientItemId == ItemTemplate.ITEM_ID_FAME)
 				{
-					if (activeChar.getFame() < totalAmount)
+					if(activeChar.getFame() < totalAmount)
 					{
 						activeChar.sendPacket(SystemMsg.YOU_DONT_HAVE_ENOUGH_REPUTATION_TO_DO_THAT);
 						return;
 					}
-					if (!ingridient.getMantainIngredient())
+					if(!ingridient.getMantainIngredient())
 						items.add(new ItemData(ingridientItemId, totalAmount, null));
 				}
-				else if (ingridientItemId == ItemTemplate.ITEM_ID_CRAFT_POINTS)
+				else if(ingridientItemId == ItemTemplate.ITEM_ID_CRAFT_POINTS)
 				{
-					if (activeChar.getCraftPoints() < totalAmount)
+					if(activeChar.getCraftPoints() < totalAmount)
 					{
 						activeChar.sendPacket(SystemMsg.YOU_ARE_SHORT_OF_ACCUMULATED_POINTS); // TODO: find correct, if
-																								// exist
+						// exist
 						return;
 					}
-					if (!ingridient.getMantainIngredient())
+					if(!ingridient.getMantainIngredient())
 						items.add(new ItemData(ingridientItemId, totalAmount, null));
 				}
 				else
 				{
 					ItemTemplate template = ItemHolder.getInstance().getTemplate(ingridientItemId);
-					if (template == null)
+					if(template == null)
 					{
 						_log.warn("Cannot find ingridient item template ID[" + ingridientItemId + "] in multisell list ID[" + _listId + "]!");
 						return;
 					}
 
-					if (!template.isStackable())
-						for (int i = 0; i < ingridientItemCount * _amount; i++)
+					if(!template.isStackable())
+						for(int i = 0; i < ingridientItemCount * _amount; i++)
 						{
 							List<ItemInstance> list = inventory.getItemsByItemId(ingridientItemId);
 							// Если энчант имеет значение - то ищем вещи с точно таким энчантом
-							if (keepenchant)
+							if(keepenchant)
 							{
 								ItemInstance itemToTake = null;
-								for (ItemInstance item : list)
+								for(ItemInstance item : list)
 								{
 									ItemData itmd = new ItemData(item.getItemId(), item.getCount(), item);
-									if ((item.getEnchantLevel() == ingridientEnchant || !item.getTemplate().isEquipment()) && !items.contains(itmd) && !item.isShadowItem() && !item.isTemporalItem()/*
-																																																		 * &&
-																																																		 * (
-																																																		 * !
-																																																		 * item
-																																																		 * .
-																																																		 * isAugmented
-																																																		 * (
-																																																		 * )
-																																																		 * ||
-																																																		 * Config
-																																																		 * .
-																																																		 * ALT_ALLOW_DROP_AUGMENTED)
-																																																		 */
+									if((item.getEnchantLevel() == ingridientEnchant || !item.getTemplate().isEquipment()) && !items.contains(itmd)
+											&& !item.isShadowItem() && !item.isTemporalItem()/*
+																																				* &&
+																																				* (
+																																				* !
+																																				* item
+																																				* .
+																																				* isAugmented
+																																				* (
+																																				* )
+																																				* ||
+																																				* Config
+																																				* .
+																																				* ALT_ALLOW_DROP_AUGMENTED)
+																																				*/
 											&& ItemFunctions.checkIfCanDiscard(activeChar, item))
 									{
 										itemToTake = item;
@@ -343,55 +345,58 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 									}
 								}
 
-								if (itemToTake == null)
+								if(itemToTake == null)
 								{
 									activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 									return;
 								}
 
-								if (!ingridient.getMantainIngredient())
+								if(!ingridient.getMantainIngredient())
 									items.add(new ItemData(itemToTake.getItemId(), 1, itemToTake));
 							}
 							// Если энчант не обрабатывается берется вещь с наименьшим энчантом
 							else
 							{
 								ItemInstance itemToTake = null;
-								for (ItemInstance item : list)
-									if (!items.contains(new ItemData(item.getItemId(), item.getCount(), item)) && (itemToTake == null || item.getEnchantLevel() < itemToTake.getEnchantLevel()) && !item.isShadowItem() && !item.isTemporalItem() && (!item.isAugmented() || Config.ALT_ALLOW_DROP_AUGMENTED) && ItemFunctions.checkIfCanDiscard(activeChar, item))
+								for(ItemInstance item : list)
+									if(!items.contains(new ItemData(item.getItemId(), item.getCount(), item))
+											&& (itemToTake == null || item.getEnchantLevel() < itemToTake.getEnchantLevel()) && !item.isShadowItem()
+											&& !item.isTemporalItem() && (!item.isAugmented() || Config.ALT_ALLOW_DROP_AUGMENTED)
+											&& ItemFunctions.checkIfCanDiscard(activeChar, item))
 									{
 										itemToTake = item;
-										if (itemToTake.getEnchantLevel() == 0)
+										if(itemToTake.getEnchantLevel() == 0)
 											break;
 									}
 
-								if (itemToTake == null)
+								if(itemToTake == null)
 								{
 									activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 									return;
 								}
 
-								if (!ingridient.getMantainIngredient())
+								if(!ingridient.getMantainIngredient())
 									items.add(new ItemData(itemToTake.getItemId(), 1, itemToTake));
 							}
 						}
 					else
 					{
-						if (ingridientItemId == 57)
+						if(ingridientItemId == 57)
 							totalPrice = SafeMath.addAndCheck(totalPrice, SafeMath.mulAndCheck(ingridientItemCount, _amount));
 						ItemInstance item = inventory.getItemByItemId(ingridientItemId);
 
-						if (item == null || item.getCount() < totalAmount)
+						if(item == null || item.getCount() < totalAmount)
 						{
 							activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 							return;
 						}
 
-						if (!ingridient.getMantainIngredient())
+						if(!ingridient.getMantainIngredient())
 							items.add(new ItemData(item.getItemId(), totalAmount, item));
 					}
 				}
 
-				if (activeChar.getAdena() < totalPrice)
+				if(activeChar.getAdena() < totalPrice)
 				{
 					activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 					return;
@@ -407,76 +412,76 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 			int appearanceStoneId = 0;
 			int[] normalEnsouls = null;
 			int[] specialEnsouls = null;
-			
-			for (ItemData id : items)
+
+			for(ItemData id : items)
 			{
 				long count = id.getCount();
-				if (count > 0)
-					if (id.getId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+				if(count > 0)
+					if(id.getId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 					{
 						activeChar.getClan().incReputation((int) -count, false, "MultiSell");
 						activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_THE_CLANS_REPUTATION).addLong(count));
 					}
-					else if (id.getId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+					else if(id.getId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 						activeChar.reducePcBangPoints((int) count, true);
-					else if (id.getId() == ItemTemplate.ITEM_ID_FAME)
+					else if(id.getId() == ItemTemplate.ITEM_ID_FAME)
 					{
 						activeChar.setFame(activeChar.getFame() - (int) count, "MultiSell", true);
 						activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S2_S1_HAS_DISAPPEARED).addLong(count).addString("Fame"));
 					}
-					else if (id.getId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
+					else if(id.getId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
 						activeChar.setCraftPoints(activeChar.getCraftPoints() - (int) count, "MultiSell");
 					else
 					{
-						if (inventory.destroyItem(id.getItem(), count))
+						if(inventory.destroyItem(id.getItem(), count))
 						{
-							if (keepenchant)
+							if(keepenchant)
 							{
-								if (id.getItem().canBeEnchanted())
+								if(id.getItem().canBeEnchanted())
 									enchantLevel = id.getItem().getEnchantLevel();
-								if (id.getItem().canBeAugmented(activeChar))
+								if(id.getItem().canBeAugmented(activeChar))
 								{
 									variationStoneId = id.getItem().getVariationStoneId();
 									variation1Id = id.getItem().getVariation1Id();
 									variation2Id = id.getItem().getVariation2Id();
 								}
-								if (id.getItem().canBeAppearance())
+								if(id.getItem().canBeAppearance())
 								{
 									visualId = id.getItem().getVisualId();
 									appearanceStoneId = id.getItem().getAppearanceStoneId();
 								}
-								if (id.getItem().canBeBlessed())
+								if(id.getItem().canBeBlessed())
 									blessed = id.getItem().isBlessed();
-								
+
 								if(!id.getItem().getNormalEnsouls().isEmpty())
 									normalEnsouls = id.getItem().getEnsoulOptionsArray();
 								if(!id.getItem().getSpecialEnsouls().isEmpty())
-									specialEnsouls  = id.getItem().getEnsoulSpecialOptionsArray();
+									specialEnsouls = id.getItem().getEnsoulSpecialOptionsArray();
 							}
-							else if (!Config.RETAIL_MULTISELL_ENCHANT_TRANSFER && id.getItem().canBeEnchanted())
+							else if(!Config.RETAIL_MULTISELL_ENCHANT_TRANSFER && id.getItem().canBeEnchanted())
 							{
-								if (id.getItem().getEnchantLevel() > 0)
+								if(id.getItem().getEnchantLevel() > 0)
 									enchantLevel = id.getItem().getEnchantLevel();
-								if (id.getItem().getVariationStoneId() > 0)
+								if(id.getItem().getVariationStoneId() > 0)
 									variationStoneId = id.getItem().getVariationStoneId();
-								if (id.getItem().getVariation1Id() > 0)
+								if(id.getItem().getVariation1Id() > 0)
 									variation1Id = id.getItem().getVariation1Id();
-								if (id.getItem().getVariation2Id() > 0)
+								if(id.getItem().getVariation2Id() > 0)
 									variation2Id = id.getItem().getVariation2Id();
-								if (id.getItem().getVisualId() > 0)
+								if(id.getItem().getVisualId() > 0)
 									visualId = id.getItem().getVisualId();
-								if (id.getItem().getAppearanceStoneId() > 0)
+								if(id.getItem().getAppearanceStoneId() > 0)
 									appearanceStoneId = id.getItem().getAppearanceStoneId();
-								if (id.getItem().isBlessed())
+								if(id.getItem().isBlessed())
 									blessed = true;
-								
+
 								if(!id.getItem().getNormalEnsouls().isEmpty())
 									normalEnsouls = id.getItem().getEnsoulOptionsArray();
 								if(!id.getItem().getSpecialEnsouls().isEmpty())
-									specialEnsouls  = id.getItem().getEnsoulSpecialOptionsArray();
+									specialEnsouls = id.getItem().getEnsoulSpecialOptionsArray();
 							}
 
-							if (id.getItem().isWeapon() || id.getItem().isArmor() || id.getItem().isAccessory())
+							if(id.getItem().isWeapon() || id.getItem().isArmor() || id.getItem().isAccessory())
 							{
 								customFlags = id.getItem().getCustomFlags();
 								lifeTime = id.getItem().getTemporalLifeTime();
@@ -491,43 +496,43 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 					}
 			}
 
-			if (tax > 0 && !notax)
+			if(tax > 0 && !notax)
 			{
-				if (castle != null)
+				if(castle != null)
 				{
-					if (merchant != null && merchant.getReflection().isMain())
+					if(merchant != null && merchant.getReflection().isMain())
 						castle.addToTreasury(tax, true);
 				}
 			}
 
 			List<MultiSellIngredient> products = entry.getProduction();
-			if (list1.getType() == MultisellType.CHANCED)
+			if(list1.getType() == MultisellType.CHANCED)
 			{
 				int chancesAmount = 0;
 				List<MultiSellIngredient> productsTemp = new ArrayList<MultiSellIngredient>();
-				for (MultiSellIngredient in : products)
+				for(MultiSellIngredient in : products)
 				{
 					int chance = in.getChance();
-					if (chance <= 0)
+					if(chance <= 0)
 						continue;
 
 					chancesAmount += chance;
 					productsTemp.add(in);
 				}
 
-				if (Rnd.chance(chancesAmount))
+				if(Rnd.chance(chancesAmount))
 				{
 					double chanceMod = (100. - chancesAmount) / productsTemp.size();
 					List<MultiSellIngredient> successProducts = new ArrayList<MultiSellIngredient>();
 					int tryCount = 0;
-					while (successProducts.isEmpty())
+					while(successProducts.isEmpty())
 					{
 						tryCount++;
-						for (MultiSellIngredient in : productsTemp)
+						for(MultiSellIngredient in : productsTemp)
 						{
-							if ((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
+							if((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
 								chanceMod += 1.;
-							if (Rnd.chance(in.getChance() + chanceMod))
+							if(Rnd.chance(in.getChance() + chanceMod))
 								successProducts.add(in);
 						}
 					}
@@ -537,58 +542,60 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 				}
 			}
 
-			for (MultiSellIngredient in : products)
+			for(MultiSellIngredient in : products)
 			{
-				if (in.getItemId() <= 0)
+				if(in.getItemId() <= 0)
 				{
-					if (in.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+					if(in.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 					{
 						activeChar.getClan().incReputation((int) (in.getItemCount() * _amount), false, "MultiSell");
-						activeChar.sendPacket(new SystemMessage(SystemMessage.YOUR_CLAN_HAS_ADDED_1S_POINTS_TO_ITS_CLAN_REPUTATION_SCORE).addNumber(in.getItemCount() * _amount));
+						activeChar.sendPacket(new SystemMessage(SystemMessage.YOUR_CLAN_HAS_ADDED_1S_POINTS_TO_ITS_CLAN_REPUTATION_SCORE).addNumber(in.getItemCount()
+								* _amount));
 					}
-					else if (in.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+					else if(in.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 						activeChar.addPcBangPoints((int) (in.getItemCount() * _amount), false, true);
-					else if (in.getItemId() == ItemTemplate.ITEM_ID_FAME)
+					else if(in.getItemId() == ItemTemplate.ITEM_ID_FAME)
 						activeChar.setFame(activeChar.getFame() + (int) (in.getItemCount() * _amount), "MultiSell", true);
-					else if (in.getItemId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
+					else if(in.getItemId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
 						activeChar.setCraftPoints(activeChar.getCraftPoints() + (int) (in.getItemCount() * _amount), "MultiSell");
 				}
-				else if (ItemHolder.getInstance().getTemplate(in.getItemId()).isStackable())
+				else if(ItemHolder.getInstance().getTemplate(in.getItemId()).isStackable())
 				{
 					long total = SafeMath.mulAndLimit(in.getItemCount(), _amount);
 					ItemFunctions.addItem(activeChar, in.getItemId(), total, true);
-					Log.LogMultisell("Character " + activeChar.getName() + " bought " + total + " of " + in.getItemId() + " ingridients: ID: " + in.getItemId() + " count: " + in.getItemCount());
+					Log.LogMultisell("Character " + activeChar.getName() + " bought " + total + " of " + in.getItemId() + " ingridients: ID: " + in.getItemId()
+							+ " count: " + in.getItemCount());
 				}
 				else
 				{
-					for (int i = 0; i < _amount; i++)
+					for(int i = 0; i < _amount; i++)
 					{
 						ItemInstance product = ItemFunctions.createItem(in.getItemId());
 
-						if (keepenchant)
+						if(keepenchant)
 						{
-							if (product.canBeEnchanted())
+							if(product.canBeEnchanted())
 							{
 								product.setEnchantLevel(enchantLevel);
 							}
-							if (product.canBeAugmented(activeChar))
+							if(product.canBeAugmented(activeChar))
 							{
-								if (variationStoneId > 0)
+								if(variationStoneId > 0)
 									product.setVariationStoneId(variationStoneId);
-								if (variation1Id != 0)
+								if(variation1Id != 0)
 									product.setVariation1Id(variation1Id);
-								if (variation2Id != 0)
+								if(variation2Id != 0)
 									product.setVariation2Id(variation2Id);
 							}
-							if (product.canBeAppearance())
+							if(product.canBeAppearance())
 							{
-								if (visualId != 0)
+								if(visualId != 0)
 									product.setVisualId(visualId);
-								if (appearanceStoneId != 0)
+								if(appearanceStoneId != 0)
 									product.setAppearanceStoneId(appearanceStoneId);
 							}
-							if (product.canBeBlessed())
-								if (blessed)
+							if(product.canBeBlessed())
+								if(blessed)
 									product.setBlessed(true);
 							enchantLevel = 0;
 							variationStoneId = 0;
@@ -602,16 +609,16 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 						{
 							product.setEnchantLevel(in.getItemEnchant());
 							product.setAttributes(in.getItemAttributes().clone());
-							if (in.getFlags() >= 0)
+							if(in.getFlags() >= 0)
 								customFlags = in.getFlags();
-							if (in.getDurability() >= 0)
+							if(in.getDurability() >= 0)
 								lifeTime = in.getDurability();
 						}
 
-						if (customFlags > 0)
+						if(customFlags > 0)
 						{
 							product.setCustomFlags(customFlags);
-							if (lifeTime > 0)
+							if(lifeTime > 0)
 								product.setLifeTime((int) (System.currentTimeMillis() / 1000L) + lifeTime);
 							customFlags = 0;
 							lifeTime = 0;
@@ -622,42 +629,43 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 
 						// Если выше, то из за foreign key при сохранении выбивает ошибку, т.к. итем в
 						// базе еще не существует
-						if (keepenchant)
+						if(keepenchant)
 						{
-							if(normalEnsouls!=null)
+							if(normalEnsouls != null)
 							{
-								if(normalEnsouls[0]>0)
+								if(normalEnsouls[0] > 0)
 								{
 									Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(normalEnsouls[0]);
-									if(ensoul!=null)
+									if(ensoul != null)
 										product.addSpecialAbility(ensoul, 0, 1, true);
 								}
-								if(normalEnsouls[1]>0)
+								if(normalEnsouls[1] > 0)
 								{
 									Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(normalEnsouls[1]);
-									if(ensoul!=null)
+									if(ensoul != null)
 										product.addSpecialAbility(ensoul, 1, 1, true);
 								}
 							}
 
-							if(specialEnsouls!=null &&  specialEnsouls[0]>0)
+							if(specialEnsouls != null && specialEnsouls[0] > 0)
 							{
 								Ensoul ensoul = EnsoulHolder.getInstance().getEnsoul(specialEnsouls[0]);
-								if(ensoul!=null)
+								if(ensoul != null)
 								{
 									product.addSpecialAbility(ensoul, 0, 2, true);
 								}
 							}
 						}
 
-						Log.LogMultisell("Character " + activeChar.getName() + " bought 1 of " + product.getItemId() + " igridients: Id: " + in.getItemId() + " count: " + in.getItemCount() + "");
+						Log.LogMultisell("Character " + activeChar.getName() + " bought 1 of " + product.getItemId() + " igridients: Id: " + in.getItemId()
+								+ " count: " + in.getItemCount() + "");
 					}
 				}
 			}
 			activeChar.sendPacket(ExMultiSellResult.SUCCESS);
 			activeChar.sendPacket(SystemMsg.THE_TRADE_WAS_SUCCESSFUL);
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			// TODO audit
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
@@ -670,8 +678,9 @@ public class RequestMultiSellChoose implements IClientIncomingPacket
 
 		activeChar.sendChanges();
 
-		if (!list1.isShowAll()) // Если показывается только то, на что хватает материалов обновить окно у игрока
-			MultiSellHolder.getInstance().SeparateAndSend(list1, activeChar, castle == null ? 0 : castle.getTaxRate(), MultiSellListPacket.WindowType.NORMAL);
+		if(!list1.isShowAll()) // Если показывается только то, на что хватает материалов обновить окно у игрока
+			MultiSellHolder.getInstance().SeparateAndSend(list1, activeChar, castle
+					== null ? 0 : castle.getTaxRate(), MultiSellListPacket.WindowType.NORMAL);
 
 		activeChar.setLastMultisellBuyTime(System.currentTimeMillis());
 	}

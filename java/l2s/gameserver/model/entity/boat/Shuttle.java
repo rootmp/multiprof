@@ -1,5 +1,6 @@
 package l2s.gameserver.model.entity.boat;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Playable;
@@ -14,8 +15,6 @@ import l2s.gameserver.network.l2.s2c.ExSuttleMovePacket;
 import l2s.gameserver.network.l2.s2c.ExValidateLocationInShuttlePacket;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.gameserver.templates.ShuttleTemplate;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -33,7 +32,7 @@ public class Shuttle extends Boat
 
 		public void run()
 		{
-			if (_shuttle == null)
+			if(_shuttle == null)
 				return;
 
 			_shuttle.getCurrentWayEvent().stopEvent(false);
@@ -172,7 +171,7 @@ public class Shuttle extends Boat
 	{
 		// Во время движения транспорта, игрок не может зайти на него. Отправляем на
 		// стабильную точку.
-		if (getMovement().isMoving())
+		if(getMovement().isMoving())
 		{
 			player.teleToLocation(getReturnLoc());
 			return;
@@ -184,7 +183,7 @@ public class Shuttle extends Boat
 	{
 		// Во время движения транспорта, игрок не может выйти из него. Отправляем на
 		// стабильную точку.
-		if (getMovement().isMoving())
+		if(getMovement().isMoving())
 		{
 			player.teleToLocation(getReturnLoc());
 			return;
@@ -205,10 +204,10 @@ public class Shuttle extends Boat
 	private ShuttleWayEvent getNextWayEvent()
 	{
 		int ways = _wayEvents.size() - 1;
-		if (!_moveBack)
+		if(!_moveBack)
 		{
 			_currentWay++;
-			if (_currentWay > ways)
+			if(_currentWay > ways)
 			{
 				_currentWay = ways - 1;
 				_moveBack = true;
@@ -217,7 +216,7 @@ public class Shuttle extends Boat
 		else
 		{
 			_currentWay--;
-			if (_currentWay < 0)
+			if(_currentWay < 0)
 			{
 				_currentWay = 1;
 				_moveBack = false;

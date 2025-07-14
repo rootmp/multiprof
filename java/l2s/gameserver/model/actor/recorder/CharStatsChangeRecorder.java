@@ -61,28 +61,28 @@ public class CharStatsChangeRecorder<T extends Creature>
 
 	protected int set(int flag, int oldValue, int newValue)
 	{
-		if (oldValue != newValue)
+		if(oldValue != newValue)
 			_changes |= flag;
 		return newValue;
 	}
 
 	protected long set(int flag, long oldValue, long newValue)
 	{
-		if (oldValue != newValue)
+		if(oldValue != newValue)
 			_changes |= flag;
 		return newValue;
 	}
 
 	protected double set(int flag, double oldValue, double newValue)
 	{
-		if (oldValue != newValue)
+		if(oldValue != newValue)
 			_changes |= flag;
 		return newValue;
 	}
 
 	protected String set(int flag, String oldValue, String newValue)
 	{
-		if (!oldValue.equals(newValue))
+		if(!oldValue.equals(newValue))
 			_changes |= flag;
 		return newValue;
 	}
@@ -91,7 +91,7 @@ public class CharStatsChangeRecorder<T extends Creature>
 	{
 		synchronized (oldValue)
 		{
-			if (oldValue.size() != newValue.size() || !newValue.equals(oldValue))
+			if(oldValue.size() != newValue.size() || !newValue.equals(oldValue))
 			{
 				_changes |= flag;
 
@@ -104,7 +104,7 @@ public class CharStatsChangeRecorder<T extends Creature>
 
 	protected <E extends Enum<E>> E set(int flag, E oldValue, E newValue)
 	{
-		if (oldValue != newValue)
+		if(oldValue != newValue)
 			_changes |= flag;
 		return newValue;
 	}
@@ -145,7 +145,7 @@ public class CharStatsChangeRecorder<T extends Creature>
 
 	public final void sendChanges()
 	{
-		if (_blocked.get())
+		if(_blocked.get())
 			return;
 
 		refreshStats();
@@ -155,7 +155,7 @@ public class CharStatsChangeRecorder<T extends Creature>
 
 	protected void onSendChanges()
 	{
-		if ((_changes & SEND_STATUS_INFO) == SEND_STATUS_INFO)
+		if((_changes & SEND_STATUS_INFO) == SEND_STATUS_INFO)
 			_activeChar.broadcastStatusUpdate();
 	}
 

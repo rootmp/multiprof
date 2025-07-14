@@ -3,6 +3,7 @@ package l2s.gameserver.network.l2.s2c.timerestrictfield;
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.TimeRestrictFieldHolder;
 import l2s.gameserver.instancemanager.ReflectionManager;
 import l2s.gameserver.instancemanager.TranscendentInstanceZone40;
@@ -16,7 +17,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
 import l2s.gameserver.utils.ReflectionUtils;
 
@@ -41,13 +41,13 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 	{
 		TimeRestrictFieldInfo field = _fields.get(_fieldId);
 
-		if (_fieldId > 100)
+		if(_fieldId > 100)
 		{
 			boolean used = _player.getVarBoolean(PlayerVariables.RESTRICT_FIELD_USED, false);
-			if (!used && _player.consumeItem(field.getItemId(), field.getItemCount(), true))
+			if(!used && _player.consumeItem(field.getItemId(), field.getItemCount(), true))
 			{
 				int izId = 0;
-				if (field.getFieldId() < 105)
+				if(field.getFieldId() < 105)
 				{
 					izId = field.getFieldId() + 107;
 				}
@@ -55,7 +55,7 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 				{
 					izId = field.getFieldId() + 106;
 				}
-				switch (izId)
+				switch(izId)
 				{
 					case 208:
 					{
@@ -101,7 +101,7 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 		}
 
 		int reflectionId = 0;
-		switch (field.getFieldId())
+		switch(field.getFieldId())
 		{
 			case 1:
 			{
@@ -132,12 +132,12 @@ public class ExTimeRestrictFieldUserEnter implements IClientOutgoingPacket
 
 		int remainTime = _player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + reflectionId, field.getRemainTimeBase());
 
-		if (_player.consumeItem(field.getItemId(), field.getItemCount(), true))
+		if(_player.consumeItem(field.getItemId(), field.getItemCount(), true))
 		{
 			_player.setVar(PlayerVariables.RESTRICT_FIELD_TIMESTART + "_" + reflectionId, System.currentTimeMillis());
 			_player.setVar(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + reflectionId, remainTime);
 
-			switch (field.getFieldId())
+			switch(field.getFieldId())
 			{
 				case 1:
 				{

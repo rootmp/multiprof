@@ -45,12 +45,12 @@ public class ReflectionUtils
 	public static List<Zone> getZonesByType(Zone.ZoneType zoneType)
 	{
 		Collection<Zone> zones = ReflectionManager.MAIN.getZones();
-		if (zones.isEmpty())
+		if(zones.isEmpty())
 			return Collections.emptyList();
 
 		List<Zone> zones2 = new ArrayList<Zone>(5);
-		for (Zone z : zones)
-			if (z.getType() == zoneType)
+		for(Zone z : zones)
+			if(z.getType() == zoneType)
 				zones2.add(z);
 
 		return zones2;
@@ -72,22 +72,22 @@ public class ReflectionUtils
 	{
 		r.init(iz);
 
-		if (r.getReturnLoc() == null)
+		if(r.getReturnLoc() == null)
 			r.setReturnLoc(invoker.getLoc());
 
-		switch (iz.getEntryType(invoker))
+		switch(iz.getEntryType(invoker))
 		{
 			case SOLO:
-				if (iz.getRemovedItemId() > 0)
+				if(iz.getRemovedItemId() > 0)
 					ItemFunctions.deleteItem(invoker, iz.getRemovedItemId(), iz.getRemovedItemCount(), true);
-				if (iz.getGiveItemId() > 0)
+				if(iz.getGiveItemId() > 0)
 					ItemFunctions.addItem(invoker, iz.getGiveItemId(), iz.getGiveItemCount(), true);
-				if (iz.isDispelBuffs())
+				if(iz.isDispelBuffs())
 					invoker.dispelBuffs();
-				if (iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
+				if(iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
 					invoker.setInstanceReuse(iz.getId(), System.currentTimeMillis(), iz.isNotifyOnSetReuse());
 				invoker.setVar("backCoords", invoker.getLoc().toXYZString(), -1);
-				if (iz.getTeleportCoord() != null)
+				if(iz.getTeleportCoord() != null)
 					invoker.teleToLocation(iz.getTeleportCoord(), r);
 				break;
 			case PARTY:
@@ -96,31 +96,31 @@ public class ReflectionUtils
 				party.setReflection(r);
 				r.setParty(party);
 
-				for (Player member : party.getPartyMembers())
+				for(Player member : party.getPartyMembers())
 				{
-					if (iz.getRemovedItemId() > 0)
+					if(iz.getRemovedItemId() > 0)
 						ItemFunctions.deleteItem(member, iz.getRemovedItemId(), iz.getRemovedItemCount(), true);
-					if (iz.getGiveItemId() > 0)
+					if(iz.getGiveItemId() > 0)
 						ItemFunctions.addItem(member, iz.getGiveItemId(), iz.getGiveItemCount(), true);
-					if (iz.isDispelBuffs())
+					if(iz.isDispelBuffs())
 						member.dispelBuffs();
-					if (iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
+					if(iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
 						member.setInstanceReuse(iz.getId(), System.currentTimeMillis(), iz.isNotifyOnSetReuse());
 					member.setVar("backCoords", member.getLoc().toXYZString(), -1);
-					if (iz.getTeleportCoord() != null)
+					if(iz.getTeleportCoord() != null)
 						member.teleToLocation(iz.getTeleportCoord(), r);
 				}
 				break;
 			case COMMAND_CHANNEL:
-				for (Player member : invoker.getParty().getCommandChannel())
+				for(Player member : invoker.getParty().getCommandChannel())
 				{
-					if (iz.getRemovedItemId() > 0)
+					if(iz.getRemovedItemId() > 0)
 						ItemFunctions.deleteItem(member, iz.getRemovedItemId(), iz.getRemovedItemCount(), true);
-					if (iz.getGiveItemId() > 0)
+					if(iz.getGiveItemId() > 0)
 						ItemFunctions.addItem(member, iz.getGiveItemId(), iz.getGiveItemCount(), true);
-					if (iz.isDispelBuffs())
+					if(iz.isDispelBuffs())
 						member.dispelBuffs();
-					if (iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
+					if(iz.getSetReuseUponEntry() && iz.getResetReuse().next(System.currentTimeMillis()) > System.currentTimeMillis())
 						member.setInstanceReuse(iz.getId(), System.currentTimeMillis(), iz.isNotifyOnSetReuse());
 					member.setVar("backCoords", member.getLoc().toXYZString(), -1);
 					member.teleToLocation(iz.getTeleportCoord(), r);

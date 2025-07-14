@@ -27,9 +27,10 @@ public class PCCouponHandler
 
 	public void registerHandler(IPCCouponHandler handler)
 	{
-		if (_handlers.containsKey(handler.getType()))
+		if(_handlers.containsKey(handler.getType()))
 		{
-			_log.warn(getClass().getSimpleName() + ": dublicate bypass registered! First handler: " + _handlers.get(handler.getType()).getClass().getSimpleName() + " second: " + handler.getClass().getSimpleName());
+			_log.warn(getClass().getSimpleName() + ": dublicate bypass registered! First handler: "
+					+ _handlers.get(handler.getType()).getClass().getSimpleName() + " second: " + handler.getClass().getSimpleName());
 			return;
 		}
 		_handlers.put(handler.getType(), handler);
@@ -37,7 +38,7 @@ public class PCCouponHandler
 
 	public void removeHandler(IPCCouponHandler handler)
 	{
-		if (_handlers.remove(handler.getType()) != null)
+		if(_handlers.remove(handler.getType()) != null)
 			_log.info(getClass().getSimpleName() + ": " + handler.getClass().getSimpleName() + " unloaded.");
 	}
 

@@ -33,23 +33,24 @@ public class i_summon_cubic extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
-		if (_template == null)
+		if(_template == null)
 		{
-			_log.warn(getClass().getSimpleName() + ": Cannot find cubic template for skill: ID[" + getSkill().getId() + "], LEVEL[" + getSkill().getLevel() + "]!");
+			_log.warn(getClass().getSimpleName() + ": Cannot find cubic template for skill: ID[" + getSkill().getId() + "], LEVEL[" + getSkill().getLevel()
+					+ "]!");
 			return false;
 		}
 
 		Player player = effected.getPlayer();
-		if (player.getCubic(_template.getSlot()) != null)
+		if(player.getCubic(_template.getSlot()) != null)
 			return true;
 
 		int size = (int) player.getStat().calc(Stats.CUBICS_LIMIT, 1);
-		if (player.getCubics().size() >= size)
+		if(player.getCubics().size() >= size)
 		{
-			if (effector == player)
+			if(effector == player)
 				player.sendPacket(SystemMsg.CUBIC_SUMMONING_FAILED); // todo un hard code it
 			return false;
 		}
@@ -61,7 +62,7 @@ public class i_summon_cubic extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effected.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Cubic cubic = new Cubic(player, _template, getSkill());

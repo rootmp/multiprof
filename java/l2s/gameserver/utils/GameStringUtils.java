@@ -11,10 +11,10 @@ public class GameStringUtils
 
 	public static String checkTitle(String title, int maxLength, boolean removeIcons)
 	{
-		if (removeIcons)
+		if(removeIcons)
 		{
 			title = title.replaceAll(TITLE_ICON_REGEX, "");
-			if (title.length() > maxLength)
+			if(title.length() > maxLength)
 			{
 				title = title.substring(0, maxLength);
 			}
@@ -25,7 +25,7 @@ public class GameStringUtils
 			String tempNickName = title;
 			Pattern pattern = Pattern.compile(TITLE_ICON_REGEX);
 			Matcher matcher = pattern.matcher(tempNickName);
-			while (matcher.find())
+			while(matcher.find())
 			{
 				String icon = matcher.group(0);
 				icons.add(icon);
@@ -33,18 +33,18 @@ public class GameStringUtils
 			}
 
 			int titleLength = (icons.size() * 2) + tempNickName.length();
-			if (titleLength > maxLength)
+			if(titleLength > maxLength)
 			{
-				if (icons.isEmpty())
+				if(icons.isEmpty())
 				{
 					title = title.substring(0, maxLength);
 				}
 				else
 				{
-					while (titleLength > maxLength)
+					while(titleLength > maxLength)
 					{
 						String lastIcon = icons.get(icons.size() - 1);
-						if (title.endsWith(lastIcon))
+						if(title.endsWith(lastIcon))
 						{
 							icons.remove(icons.size() - 1);
 							title = title.substring(0, title.length() - lastIcon.length());

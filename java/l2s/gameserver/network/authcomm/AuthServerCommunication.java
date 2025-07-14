@@ -70,7 +70,7 @@ public class AuthServerCommunication extends Thread
 		{
 			selector = Selector.open();
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 		}
@@ -91,7 +91,7 @@ public class AuthServerCommunication extends Thread
 
 	public void sendPacket(SendablePacket packet)
 	{
-		if (isShutdown())
+		if(isShutdown())
 			return;
 
 		boolean wakeUp;
@@ -102,7 +102,7 @@ public class AuthServerCommunication extends Thread
 			sendQueue.add(packet);
 			wakeUp = enableWriteInterest();
 		}
-		catch (CancelledKeyException e)
+		catch(CancelledKeyException e)
 		{
 			return;
 		}
@@ -111,13 +111,13 @@ public class AuthServerCommunication extends Thread
 			sendLock.unlock();
 		}
 
-		if (wakeUp)
+		if(wakeUp)
 			selector.wakeup();
 	}
 
 	private boolean disableWriteInterest() throws CancelledKeyException
 	{
-		if (isPengingWrite.compareAndSet(true, false))
+		if(isPengingWrite.compareAndSet(true, false))
 		{
 			key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
 			return true;
@@ -127,7 +127,7 @@ public class AuthServerCommunication extends Thread
 
 	private boolean enableWriteInterest() throws CancelledKeyException
 	{
-		if (isPengingWrite.getAndSet(true) == false)
+		if(isPengingWrite.getAndSet(true) == false)
 		{
 			key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);
 			return true;
@@ -153,33 +153,34 @@ public class AuthServerCommunication extends Thread
 		SelectionKey key;
 		int opts;
 
-		while (!shutdown)
+		while(!shutdown)
 		{
 			restart = false;
 
 			try
 			{
-				loop: while (!isShutdown())
+				loop:
+				while(!isShutdown())
 				{
 					connect();
 
 					selector.select(5000L);
 					keys = selector.selectedKeys();
-					if (keys.isEmpty())
+					if(keys.isEmpty())
 						throw new IOException("Connection timeout.");
 
 					iterator = keys.iterator();
 
 					try
 					{
-						while (iterator.hasNext())
+						while(iterator.hasNext())
 						{
 							key = iterator.next();
 							iterator.remove();
 
 							opts = key.readyOps();
 
-							switch (opts)
+							switch(opts)
 							{
 								case SelectionKey.OP_CONNECT:
 									connect(key);
@@ -187,14 +188,15 @@ public class AuthServerCommunication extends Thread
 							}
 						}
 					}
-					catch (CancelledKeyException e)
+					catch(CancelledKeyException e)
 					{
 						// Exit selector loop
 						break;
 					}
 				}
 
-				loop: while (!isShutdown())
+				loop:
+				while(!isShutdown())
 				{
 					selector.select();
 					keys = selector.selectedKeys();
@@ -202,14 +204,14 @@ public class AuthServerCommunication extends Thread
 
 					try
 					{
-						while (iterator.hasNext())
+						while(iterator.hasNext())
 						{
 							key = iterator.next();
 							iterator.remove();
 
 							opts = key.readyOps();
 
-							switch (opts)
+							switch(opts)
 							{
 								case SelectionKey.OP_WRITE:
 									write(key);
@@ -224,14 +226,14 @@ public class AuthServerCommunication extends Thread
 							}
 						}
 					}
-					catch (CancelledKeyException e)
+					catch(CancelledKeyException e)
 					{
 						// Exit selector loop
 						break loop;
 					}
 				}
 			}
-			catch (IOException e)
+			catch(IOException e)
 			{
 				_log.error("AuthServer I/O error: " + e.getMessage());
 			}
@@ -242,7 +244,7 @@ public class AuthServerCommunication extends Thread
 			{
 				Thread.sleep(5000L);
 			}
-			catch (InterruptedException e)
+			catch(InterruptedException e)
 			{
 
 			}
@@ -258,38 +260,35 @@ public class AuthServerCommunication extends Thread
 
 		count = channel.read(buf);
 
-		if (count == -1)
+		if(count == -1)
 			throw new IOException("End of stream.");
 
-		if (count == 0)
+		if(count == 0)
 			return;
 
 		buf.flip();
 
-		while (tryReadPacket(key, buf))
-			;
+		while(tryReadPacket(key, buf));
 	}
 
 	private boolean tryReadPacket(SelectionKey key, ByteBuffer buf) throws IOException
 	{
 		int pos = buf.position();
 		// проверяем, хватает ли нам байт для чтения заголовка и не пустого тела пакета
-		if (buf.remaining() > 2)
+		if(buf.remaining() > 2)
 		{
 			// получаем ожидаемый размер пакета
 			int size = buf.getShort() & 0xffff;
 
 			// проверяем корректность размера
-			if (size <= 2)
-			{
-				throw new IOException("Incorrect packet size: <= 2");
-			}
+			if(size <= 2)
+			{ throw new IOException("Incorrect packet size: <= 2"); }
 
 			// ожидаемый размер тела пакета
 			size -= 2;
 
 			// проверяем, хватает ли байт на чтение тела
-			if (size <= buf.remaining())
+			if(size <= buf.remaining())
 			{
 				// apply limit
 				int limit = buf.limit();
@@ -297,9 +296,9 @@ public class AuthServerCommunication extends Thread
 
 				ReceivablePacket rp = PacketHandler.handlePacket(buf);
 
-				if (rp != null)
+				if(rp != null)
 				{
-					if (rp.read())
+					if(rp.read())
 						ThreadPoolManager.getInstance().execute(rp);
 				}
 
@@ -307,7 +306,7 @@ public class AuthServerCommunication extends Thread
 				buf.position(pos + size + 2);
 
 				// закончили чтение из буфера, почистим
-				if (!buf.hasRemaining())
+				if(!buf.hasRemaining())
 				{
 					buf.clear();
 					return false;
@@ -337,7 +336,7 @@ public class AuthServerCommunication extends Thread
 		{
 			int i = 0;
 			SendablePacket sp;
-			while (i++ < 64 && (sp = sendQueue.poll()) != null)
+			while(i++ < 64 && (sp = sendQueue.poll()) != null)
 			{
 				int headerPos = buf.position();
 				buf.position(headerPos + 2);
@@ -345,7 +344,7 @@ public class AuthServerCommunication extends Thread
 				sp.write();
 
 				int dataSize = buf.position() - headerPos - 2;
-				if (dataSize == 0)
+				if(dataSize == 0)
 				{
 					buf.position(headerPos);
 					continue;
@@ -358,7 +357,7 @@ public class AuthServerCommunication extends Thread
 			}
 
 			done = sendQueue.isEmpty();
-			if (done)
+			if(done)
 				disableWriteInterest();
 		}
 		finally
@@ -369,7 +368,7 @@ public class AuthServerCommunication extends Thread
 
 		channel.write(buf);
 
-		if (buf.remaining() > 0)
+		if(buf.remaining() > 0)
 		{
 			buf.compact();
 			done = false;
@@ -379,9 +378,9 @@ public class AuthServerCommunication extends Thread
 			buf.clear();
 		}
 
-		if (!done)
+		if(!done)
 		{
-			if (enableWriteInterest())
+			if(enableWriteInterest())
 				selector.wakeup();
 		}
 	}
@@ -418,15 +417,14 @@ public class AuthServerCommunication extends Thread
 
 		try
 		{
-			if (key != null)
+			if(key != null)
 			{
 				key.channel().close();
 				key.cancel();
 			}
 		}
-		catch (IOException e)
-		{
-		}
+		catch(IOException e)
+		{}
 
 		writeLock.lock();
 		try
@@ -502,9 +500,9 @@ public class AuthServerCommunication extends Thread
 		readLock.lock();
 		try
 		{
-			for (GameClient client : waitingClients.values())
+			for(GameClient client : waitingClients.values())
 			{
-				if (client.getIpAddr().equalsIgnoreCase(ip))
+				if(client.getIpAddr().equalsIgnoreCase(ip))
 					clients.add(client);
 			}
 		}
@@ -518,16 +516,16 @@ public class AuthServerCommunication extends Thread
 	public List<GameClient> getWaitingClientsByHWID(String hwid)
 	{
 		List<GameClient> clients = new ArrayList<GameClient>();
-		if (StringUtils.isEmpty(hwid))
+		if(StringUtils.isEmpty(hwid))
 			return clients;
 
 		readLock.lock();
 		try
 		{
-			for (GameClient client : waitingClients.values())
+			for(GameClient client : waitingClients.values())
 			{
 				String h = client.getHWID();
-				if (!StringUtils.isEmpty(h) && h.equalsIgnoreCase(hwid))
+				if(!StringUtils.isEmpty(h) && h.equalsIgnoreCase(hwid))
 					clients.add(client);
 			}
 		}
@@ -584,9 +582,9 @@ public class AuthServerCommunication extends Thread
 		readLock.lock();
 		try
 		{
-			for (GameClient client : authedClients.values())
+			for(GameClient client : authedClients.values())
 			{
-				if (client.getIpAddr().equalsIgnoreCase(ip))
+				if(client.getIpAddr().equalsIgnoreCase(ip))
 					clients.add(client);
 			}
 		}
@@ -600,16 +598,16 @@ public class AuthServerCommunication extends Thread
 	public List<GameClient> getAuthedClientsByHWID(String hwid)
 	{
 		List<GameClient> clients = new ArrayList<GameClient>();
-		if (StringUtils.isEmpty(hwid))
+		if(StringUtils.isEmpty(hwid))
 			return clients;
 
 		readLock.lock();
 		try
 		{
-			for (GameClient client : authedClients.values())
+			for(GameClient client : authedClients.values())
 			{
 				String h = client.getHWID();
-				if (!StringUtils.isEmpty(h) && h.equalsIgnoreCase(hwid))
+				if(!StringUtils.isEmpty(h) && h.equalsIgnoreCase(hwid))
 					clients.add(client);
 			}
 		}
@@ -625,7 +623,7 @@ public class AuthServerCommunication extends Thread
 		writeLock.lock();
 		try
 		{
-			if (client.isAuthed())
+			if(client.isAuthed())
 				return authedClients.remove(client.getLogin());
 			else
 				return waitingClients.remove(client.getLogin());

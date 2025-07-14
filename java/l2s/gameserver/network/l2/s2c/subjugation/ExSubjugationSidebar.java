@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c.subjugation;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -29,21 +29,19 @@ public class ExSubjugationSidebar implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		int points = 0;
-		if (_zoneId == 0)
+		if(_zoneId == 0)
 		{
-			for (int i = 1; i < 8; i++)
+			for(int i = 1; i < 8; i++)
 			{
-				if (_player.getVarInt(PlayerVariables.SUBJUGATION_ZONE_POINTS + "_" + i, 0) > points)
+				if(_player.getVarInt(PlayerVariables.SUBJUGATION_ZONE_POINTS + "_" + i, 0) > points)
 				{
 					points = _player.getVarInt(PlayerVariables.SUBJUGATION_ZONE_POINTS + "_" + i);
 					_zoneId = i;
 				}
 			}
 
-			if (points == 0)
-			{
-				return false;
-			}
+			if(points == 0)
+			{ return false; }
 		}
 		else
 		{

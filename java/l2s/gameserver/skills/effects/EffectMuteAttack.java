@@ -21,7 +21,7 @@ public class EffectMuteAttack extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getAMuted().start(this))
+		if(effected.getFlags().getAMuted().start(this))
 		{
 			effected.abortCast(true, true);
 			effected.abortAttack(true, true);

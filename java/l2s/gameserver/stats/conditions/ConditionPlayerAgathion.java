@@ -15,9 +15,9 @@ public class ConditionPlayerAgathion extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
-		if (((Player) env.character).getAgathionId() > 0 && _agathionId == -1)
+		if(((Player) env.character).getAgathionId() > 0 && _agathionId == -1)
 			return true;
 		return ((Player) env.character).getAgathionId() == _agathionId;
 	}

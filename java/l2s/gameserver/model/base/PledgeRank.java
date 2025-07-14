@@ -27,16 +27,16 @@ public enum PledgeRank
 
 	public static PledgeRank valueOfXml(String name)
 	{
-		if (StringUtils.isNumeric(name))
+		if(StringUtils.isNumeric(name))
 		{
 			int id = Integer.parseInt(name);
 			return VALUES[id];
 		}
 
 		String upperCaseName = name.toUpperCase();
-		for (PledgeRank type : VALUES)
+		for(PledgeRank type : VALUES)
 		{
-			if (type.name().equals(upperCaseName))
+			if(type.name().equals(upperCaseName))
 				return type;
 		}
 		throw new NoSuchElementException("Unknown name '" + name + "' for enum PledgeRank");

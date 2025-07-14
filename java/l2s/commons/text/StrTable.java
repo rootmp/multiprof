@@ -29,7 +29,7 @@ public class StrTable
 
 	public StrTable(String title)
 	{
-		if (title != null)
+		if(title != null)
 			titles.add(title);
 	}
 
@@ -87,7 +87,7 @@ public class StrTable
 	{
 		Map<String, String> row;
 
-		if (rows.containsKey(rowIndex))
+		if(rows.containsKey(rowIndex))
 			row = rows.get(rowIndex);
 		else
 		{
@@ -98,9 +98,9 @@ public class StrTable
 		row.put(colName, val);
 
 		int columnSize;
-		if (!columns.containsKey(colName))
+		if(!columns.containsKey(colName))
 			columnSize = Math.max(colName.length(), val.length());
-		else if (columns.get(colName) >= (columnSize = val.length()))
+		else if(columns.get(colName) >= (columnSize = val.length()))
 			return this;
 		columns.put(colName, columnSize);
 
@@ -116,8 +116,8 @@ public class StrTable
 	private static StringBuilder right(StringBuilder result, String s, int sz)
 	{
 		result.append(s);
-		if ((sz -= s.length()) > 0)
-			for (int i = 0; i < sz; i++)
+		if((sz -= s.length()) > 0)
+			for(int i = 0; i < sz; i++)
 				result.append(" ");
 		return result;
 	}
@@ -127,10 +127,10 @@ public class StrTable
 		int offset = result.length();
 		result.append(s);
 		int i;
-		while ((i = sz - (result.length() - offset)) > 0)
+		while((i = sz - (result.length() - offset)) > 0)
 		{
 			result.append(" ");
-			if (i > 1)
+			if(i > 1)
 				result.insert(offset, " ");
 		}
 		return result;
@@ -138,7 +138,7 @@ public class StrTable
 
 	private static StringBuilder repeat(StringBuilder result, String s, int sz)
 	{
-		for (int i = 0; i < sz; i++)
+		for(int i = 0; i < sz; i++)
 			result.append(s);
 		return result;
 	}
@@ -148,22 +148,22 @@ public class StrTable
 	{
 		StringBuilder result = new StringBuilder();
 
-		if (columns.isEmpty())
+		if(columns.isEmpty())
 			return result.toString();
 
 		StringBuilder header = new StringBuilder("|");
 		StringBuilder line = new StringBuilder("|");
-		for (String c : columns.keySet())
+		for(String c : columns.keySet())
 		{
 			center(header, c, columns.get(c) + 2).append("|");
 			repeat(line, "-", columns.get(c) + 2).append("|");
 		}
 
-		if (!titles.isEmpty())
+		if(!titles.isEmpty())
 		{
 			result.append(" ");
 			repeat(result, "-", header.length() - 2).append(" ").append("\n");
-			for (String title : titles)
+			for(String title : titles)
 			{
 				result.append("| ");
 				right(result, title, header.length() - 3).append("|").append("\n");
@@ -176,10 +176,10 @@ public class StrTable
 		result.append(header).append("\n");
 		result.append(line).append("\n");
 
-		for (Map<String, String> row : rows.values())
+		for(Map<String, String> row : rows.values())
 		{
 			result.append("|");
-			for (String c : columns.keySet())
+			for(String c : columns.keySet())
 			{
 				center(result, row.containsKey(c) ? row.get(c) : "-", columns.get(c) + 2).append("|");
 			}

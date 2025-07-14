@@ -66,7 +66,7 @@ public class AppearanceStoneParser extends AbstractParser<AppearanceStoneHolder>
 			int price_count = Integer.parseInt(stoneElement.attributeValue("price_count"));
 			getHolder().addItemDreassing(id, price_id, price_count);
 		}
-		
+
 		for(Iterator<Element> iterator = rootElement.elementIterator("stone"); iterator.hasNext();)
 		{
 			Element stoneElement = iterator.next();
@@ -87,7 +87,7 @@ public class AppearanceStoneParser extends AbstractParser<AppearanceStoneHolder>
 			long cost = stoneElement.attributeValue("cost") == null ? 0L : Long.parseLong(stoneElement.attributeValue("cost"));
 
 			int period = stoneElement.attributeValue("period") == null ? -1 : Integer.parseInt(stoneElement.attributeValue("period"));
-			Map<ExItemType,Visual> _visual = new HashMap<ExItemType,Visual>();
+			Map<ExItemType, Visual> _visual = new HashMap<ExItemType, Visual>();
 
 			for(Iterator<Element> visualIterator = stoneElement.elementIterator("visual"); visualIterator.hasNext();)
 			{
@@ -95,18 +95,18 @@ public class AppearanceStoneParser extends AbstractParser<AppearanceStoneHolder>
 
 				Map<Race, Integer> _alternative = new HashMap<Race, Integer>();
 
-				Stream.of(visualElement.attributeValue("alternative","").split(",")).filter(t->!t.isEmpty()).forEach(o->{
+				Stream.of(visualElement.attributeValue("alternative", "").split(",")).filter(t -> !t.isEmpty()).forEach(o -> {
 					String[] s = o.split(":");
-					if(s.length==2)
+					if(s.length == 2)
 						_alternative.put(Race.valueOf(s[0].toLowerCase()), Integer.parseInt(s[1]));
 				});
 
 				int extract_id = Integer.parseInt(visualElement.attributeValue("extract_id"));
 				ExItemType item_type = ExItemType.valueOf(visualElement.attributeValue("item_type").toUpperCase());
-				
-				_visual.put(item_type, new Visual(extract_id,_alternative));
+
+				_visual.put(item_type, new Visual(extract_id, _alternative));
 			}
-			
+
 			AppearanceStone stone = new AppearanceStone(itemId, targetTypes, type, grades, cost, _visual, period);
 
 			for(Iterator<Element> skillIterator = stoneElement.elementIterator("skill"); skillIterator.hasNext();)

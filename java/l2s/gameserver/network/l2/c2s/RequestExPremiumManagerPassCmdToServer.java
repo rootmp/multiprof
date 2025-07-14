@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.StringTokenizer;
 
 import org.slf4j.Logger;
@@ -33,21 +34,21 @@ public class RequestExPremiumManagerPassCmdToServer implements IClientIncomingPa
 	@Override
 	public void run(GameClient client)
 	{
-		if (_bypass.isEmpty())
+		if(_bypass.isEmpty())
 			return;
 
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.isInJail())
+		if(player.isInJail())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
 		ValidBypass bp = player.getBypassStorage().validate(_bypass);
-		if (bp == null)
+		if(bp == null)
 		{
 			LOGGER.debug("RequestExPremiumManagerPassCmdToServer: Unexpected bypass : " + _bypass + " client : " + client + "!");
 			return;
@@ -55,10 +56,10 @@ public class RequestExPremiumManagerPassCmdToServer implements IClientIncomingPa
 
 		try
 		{
-			if (player.isGM())
+			if(player.isGM())
 				player.sendMessage("premium bypass:" + bp.bypass);
 
-			if (bp.bypass.startsWith("menu_select_dimensional?"))
+			if(bp.bypass.startsWith("menu_select_dimensional?"))
 			{
 				String params = bp.bypass.substring(bp.bypass.indexOf("?") + 1);
 				StringTokenizer st = new StringTokenizer(params, "&");
@@ -67,32 +68,32 @@ public class RequestExPremiumManagerPassCmdToServer implements IClientIncomingPa
 				int state = st.hasMoreTokens() ? Integer.parseInt(st.nextToken().split("=")[1]) : 0;
 				DimensionalMerchantUtils.onMenuSelect(null, player, ask, reply, state);
 			}
-			else if (bp.bypass.equals("package_deposit"))
+			else if(bp.bypass.equals("package_deposit"))
 			{
 				player.sendPacket(new PackageToListPacket(player));
 			}
-			else if (bp.bypass.equals("package_withdraw"))
+			else if(bp.bypass.equals("package_withdraw"))
 			{
 				WarehouseFunctions.showFreightWindow(player);
 			}
-			else if (bp.bypass.startsWith("multisell "))
+			else if(bp.bypass.startsWith("multisell "))
 			{
 				int multisellId = Integer.parseInt(bp.bypass.substring(10).trim());
 				MultiSellHolder.getInstance().SeparateAndSend(multisellId, player, 0);
 			}
-			else if (bp.bypass.startsWith("Augment "))
+			else if(bp.bypass.startsWith("Augment "))
 			{
-				if (Config.ALLOW_AUGMENTATION)
+				if(Config.ALLOW_AUGMENTATION)
 				{
 					int cmdChoice = Integer.parseInt(bp.bypass.substring(8).trim());
-					if (cmdChoice == 1)
+					if(cmdChoice == 1)
 						player.sendPacket(SystemMsg.SELECT_THE_ITEM_TO_BE_AUGMENTED, ExShowVariationMakeWindow.STATIC);
-					else if (cmdChoice == 2)
+					else if(cmdChoice == 2)
 						player.sendPacket(SystemMsg.SELECT_THE_ITEM_FROM_WHICH_YOU_WISH_TO_REMOVE_AUGMENTATION, ExShowVariationCancelWindow.STATIC);
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("Error while handling bypass: " + bp.bypass, e);
 		}

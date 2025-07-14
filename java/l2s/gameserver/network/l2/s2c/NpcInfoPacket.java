@@ -36,13 +36,13 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 			super(summon, attacker);
 		}
 	}
-	
+
 	private final byte[] _masks = new byte[5];
-	
+
 	private final Creature _creature;
 	private final int _npcId;
 	private final boolean _isAttackable;
-	private final int _rHand; 
+	private final int _rHand;
 	private final int _lHand;
 	private final int _chest;
 	private final String _name, _title;
@@ -68,7 +68,6 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 	private int _allyId, _allyCrestId;
 	private int _cloneOid = 0;
 	private int _summoned_type = 0;
-
 
 	public NpcInfoPacket(NpcInstance npc, Creature attacker)
 	{
@@ -120,7 +119,7 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 
 		if(servitor.isShowName())
 			addComponentType(NpcInfoType.IS_SHOW_NAME_TAG);
-		
+
 		common(attacker.getPlayer());
 	}
 
@@ -139,10 +138,14 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 		_flying = _creature.isFlying();
 		_inWater = _creature.isInWater();
 		_team = _creature.getTeam();
-		_currentHP = attacker != null && attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_HP) ? (int) _creature.getCurrentHp() : (int) _creature.getCurrentHpPercents();
-		_currentMP = attacker != null && attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MP) ? (int) _creature.getCurrentMp() : (int) _creature.getCurrentMpPercents();
-		_maxHP = attacker != null && attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MAXHP) ? _creature.getMaxHp() : 100;
-		_maxMP = attacker != null && attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MAXMP) ? _creature.getMaxMp() : 100;
+		_currentHP = attacker != null
+				&& attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_HP) ? (int) _creature.getCurrentHp() : (int) _creature.getCurrentHpPercents();
+		_currentMP = attacker != null
+				&& attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MP) ? (int) _creature.getCurrentMp() : (int) _creature.getCurrentMpPercents();
+		_maxHP = attacker != null
+				&& attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MAXHP) ? _creature.getMaxHp() : 100;
+		_maxMP = attacker != null
+				&& attacker.canReceiveStatusUpdate(_creature, StatusUpdatePacket.StatusType.Normal, UpdateType.VCP_MAXMP) ? _creature.getMaxMp() : 100;
 		_enchantEffect = _creature.getEnchantEffect();
 		_transformId = _creature.getVisualTransformId();
 		_AbnormalVisualEffects = _creature.getAbnormalEffectsArray();
@@ -225,13 +228,13 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 
 		if(_creature.getKarma() != 0)
 			addComponentType(NpcInfoType.REPUTATION);
-		
+
 		if(_nameNpcString != NpcString.NONE)
 			addComponentType(NpcInfoType.NAME_NPCSTRINGID);
 
 		if(_titleNpcString != NpcString.NONE)
 			addComponentType(NpcInfoType.TITLE_NPCSTRINGID);
-		
+
 		if(_creature.isInCombat())
 			addComponentType(NpcInfoType.COMBAT_MODE);
 
@@ -244,7 +247,7 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 	public NpcInfoPacket update(IUpdateTypeComponent... components)
 	{
 		_showSpawnAnimation = 1;
-		
+
 		addComponentType(NpcInfoType.ATTACKABLE, NpcInfoType.RELATIONS, NpcInfoType.ID, NpcInfoType.POSITION, NpcInfoType.STOP_MODE, NpcInfoType.MOVE_MODE);
 
 		for(IUpdateTypeComponent component : components)
@@ -293,7 +296,7 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 			}
 		}
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
@@ -315,7 +318,7 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 			packetWriter.writeS(_title);
 
 		// Block 2
-		packetWriter.writeH(_blockSize+1);//+1 status mask
+		packetWriter.writeH(_blockSize + 1);//+1 status mask
 
 		if(containsMask(NpcInfoType.ID))
 			packetWriter.writeD(_npcId + 1000000);
@@ -387,13 +390,13 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 
 		if(containsMask(NpcInfoType.CURRENT_MP))
 			packetWriter.writeD(_currentMP);
-		
+
 		if(containsMask(NpcInfoType.MAX_HP))
 			packetWriter.writeQ(_maxHP);
-		
+
 		if(containsMask(NpcInfoType.MAX_MP))
 			packetWriter.writeD(_maxMP);
-		
+
 		if(containsMask(NpcInfoType.DOPPELGANGER_TYPE))
 			packetWriter.writeC(_summoned_type); // тип клона 1 == приманка, 2 = клон у ножа
 
@@ -426,13 +429,17 @@ public class NpcInfoPacket extends AbstractMaskPacket<NpcInfoType>
 			packetWriter.writeD(_allyId);
 			packetWriter.writeD(_allyCrestId);
 		}
-		
+
 		byte _statusMask = 0x00;
-		if (containsMask(NpcInfoType.COMBAT_MODE)) _statusMask |= (1 << (7 - 7));
-		if (containsMask(NpcInfoType.IS_DEAD)) _statusMask |= (1 << (7 - 6));
-		if (containsMask(NpcInfoType.IS_TARGETABLE)) _statusMask |= (1 << (7 - 5));
-		if (containsMask(NpcInfoType.IS_SHOW_NAME_TAG)) _statusMask |= (1 << (7 - 4));
-		
+		if(containsMask(NpcInfoType.COMBAT_MODE))
+			_statusMask |= (1 << (7 - 7));
+		if(containsMask(NpcInfoType.IS_DEAD))
+			_statusMask |= (1 << (7 - 6));
+		if(containsMask(NpcInfoType.IS_TARGETABLE))
+			_statusMask |= (1 << (7 - 5));
+		if(containsMask(NpcInfoType.IS_SHOW_NAME_TAG))
+			_statusMask |= (1 << (7 - 4));
+
 		packetWriter.writeC(_statusMask);
 
 		if(containsMask(NpcInfoType.WORLD_ID))

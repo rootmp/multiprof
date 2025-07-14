@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
@@ -25,12 +26,12 @@ public class RequestOustPledgeMember implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null || !((activeChar.getClanPrivileges() & Clan.CP_CL_DISMISS) == Clan.CP_CL_DISMISS))
+		if(activeChar == null || !((activeChar.getClanPrivileges() & Clan.CP_CL_DISMISS) == Clan.CP_CL_DISMISS))
 			return;
 
 		Clan clan = activeChar.getClan();
 		UnitMember member = clan.getAnyMember(_target);
-		if (member == null)
+		if(member == null)
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_MUST_BE_A_CLAN_MEMBER);
 			return;
@@ -38,13 +39,13 @@ public class RequestOustPledgeMember implements IClientIncomingPacket
 
 		Player memberPlayer = member.getPlayer();
 
-		if (member.isOnline() && member.getPlayer().isInCombat())
+		if(member.isOnline() && member.getPlayer().isInCombat())
 		{
 			activeChar.sendPacket(SystemMsg.A_CLAN_MEMBER_MAY_NOT_BE_DISMISSED_DURING_COMBAT);
 			return;
 		}
 
-		if (member.isClanLeader())
+		if(member.isClanLeader())
 		{
 			activeChar.sendPacket(SystemMsg.THIS_CLAN_MEMBER_CANNOT_WITHDRAW_OR_BE_EXPELLED_WHILE_PARTICIPATING_IN_A_TERRITORY_WAR);
 			return;
@@ -53,20 +54,20 @@ public class RequestOustPledgeMember implements IClientIncomingPacket
 		int subUnitType = member.getPledgeType();
 		clan.removeClanMember(subUnitType, member.getObjectId());
 		clan.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.CLAN_MEMBER_S1_HAS_BEEN_EXPELLED).addString(_target), new PledgeShowMemberListDeletePacket(_target));
-		if (subUnitType != Clan.SUBUNIT_ACADEMY)
+		if(subUnitType != Clan.SUBUNIT_ACADEMY)
 			clan.setExpelledMember();
 
-		if (memberPlayer == null)
+		if(memberPlayer == null)
 			return;
 
-		if (subUnitType == Clan.SUBUNIT_ACADEMY)
+		if(subUnitType == Clan.SUBUNIT_ACADEMY)
 			memberPlayer.setLvlJoinedAcademy(0);
 		memberPlayer.setClan(null);
 		memberPlayer.getListeners().onClanLeave();
 
 		memberPlayer.setTitle("");
 
-		if (subUnitType != Clan.SUBUNIT_ACADEMY)
+		if(subUnitType != Clan.SUBUNIT_ACADEMY)
 			memberPlayer.setLeaveClanCurTime();
 
 		memberPlayer.broadcastCharInfo();

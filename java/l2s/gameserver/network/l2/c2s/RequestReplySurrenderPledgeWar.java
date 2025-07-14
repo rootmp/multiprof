@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,21 +34,21 @@ public final class RequestReplySurrenderPledgeWar implements IClientIncomingPack
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.CLAN_WAR_SURRENDER))
+		if(request == null || !request.isTypeOf(L2RequestType.CLAN_WAR_SURRENDER))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -55,14 +56,14 @@ public final class RequestReplySurrenderPledgeWar implements IClientIncomingPack
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -70,21 +71,21 @@ public final class RequestReplySurrenderPledgeWar implements IClientIncomingPack
 		}
 
 		Clan clan = requestor.getClan();
-		if (clan == null)
+		if(clan == null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_answer == 1)
+		if(_answer == 1)
 		{
 			try
 			{
 				// requestor.deathPenalty(false, false, false);
 
 				ClanWar war = clan.getWarWith(activeChar.getClanId());
-				if (war != null)
+				if(war != null)
 					war.setPeriod(ClanWarPeriod.PEACE);
 			}
 			finally

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -312,8 +313,8 @@ public class RequestActionUse implements IClientIncomingPacket
 
 		public static Action find(int id)
 		{
-			for (Action action : Action.values())
-				if (action.id == id)
+			for(Action action : Action.values())
+				if(action.id == id)
 					return action;
 			return null;
 		}
@@ -332,53 +333,53 @@ public class RequestActionUse implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Action action = Action.find(_actionId);
-		if (action == null)
+		if(action == null)
 		{
 			_log.warn("unhandled action type " + _actionId + " by player " + activeChar.getName());
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isTransformed() && !activeChar.getTransform().haveAction(action.id))
+		if(activeChar.isTransformed() && !activeChar.getTransform().haveAction(action.id))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (action.type == 0) // Действия с игроками
+		if(action.type == 0) // Действия с игроками
 		{
 			// dont do anything if player is dead or confused
-			if ((activeChar.isOutOfControl() || activeChar.isActionsDisabled()) && !(activeChar.isFakeDeath() && _actionId == 0))
+			if((activeChar.isOutOfControl() || activeChar.isActionsDisabled()) && !(activeChar.isFakeDeath() && _actionId == 0))
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
 			final GameObject target = activeChar.getTarget();
-			switch (action.id)
+			switch(action.id)
 			{
 				case 0: // Сесть/встать
 					// На страйдере нельзя садиться
-					if (activeChar.isMounted())
+					if(activeChar.isMounted())
 					{
 						activeChar.sendActionFailed();
 						break;
 					}
 
-					if (activeChar.isFakeDeath())
+					if(activeChar.isFakeDeath())
 					{
 						activeChar.breakFakeDeath();
 						activeChar.updateAbnormalIcons();
 						break;
 					}
 
-					if (!activeChar.isSitting())
+					if(!activeChar.isSitting())
 					{
-						if (target != null && target instanceof ChairInstance && ((ChairInstance) target).canSit(activeChar))
+						if(target != null && target instanceof ChairInstance && ((ChairInstance) target).canSit(activeChar))
 							activeChar.sitDown((ChairInstance) target);
 						else
 							activeChar.sitDown(null);
@@ -388,7 +389,7 @@ public class RequestActionUse implements IClientIncomingPacket
 
 					break;
 				case 1: // Изменить тип передвижения, шаг/бег
-					if (activeChar.isRunning())
+					if(activeChar.isRunning())
 						activeChar.setWalking();
 					else
 						activeChar.setRunning();
@@ -397,19 +398,19 @@ public class RequestActionUse implements IClientIncomingPacket
 				case 10: // Запрос на создание приватного магазина продажи
 				case 61: // Запрос на создание приватного магазина продажи (Package)
 				{
-					if (activeChar.getSittingTask())
+					if(activeChar.getSittingTask())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.isInStoreMode())
+					if(activeChar.isInStoreMode())
 					{
 						activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 						activeChar.storePrivateStore();
 						activeChar.standUp();
 						activeChar.broadcastCharInfo();
 					}
-					else if (!TradeHelper.checksIfCanOpenStore(activeChar, _actionId == 61 ? Player.STORE_PRIVATE_SELL_PACKAGE : Player.STORE_PRIVATE_SELL))
+					else if(!TradeHelper.checksIfCanOpenStore(activeChar, _actionId == 61 ? Player.STORE_PRIVATE_SELL_PACKAGE : Player.STORE_PRIVATE_SELL))
 					{
 						activeChar.sendActionFailed();
 						return;
@@ -420,19 +421,19 @@ public class RequestActionUse implements IClientIncomingPacket
 				}
 				case 28: // Запрос на создание приватного магазина покупки
 				{
-					if (activeChar.getSittingTask())
+					if(activeChar.getSittingTask())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.isInStoreMode())
+					if(activeChar.isInStoreMode())
 					{
 						activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 						activeChar.storePrivateStore();
 						activeChar.standUp();
 						activeChar.broadcastCharInfo();
 					}
-					else if (!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_BUY))
+					else if(!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_BUY))
 					{
 						activeChar.sendActionFailed();
 						return;
@@ -443,24 +444,24 @@ public class RequestActionUse implements IClientIncomingPacket
 				}
 				case 37: // Создание магазина Dwarven Craft
 				{
-					if (activeChar.getSittingTask())
+					if(activeChar.getSittingTask())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.getDwarvenRecipeBook().isEmpty())
+					if(activeChar.getDwarvenRecipeBook().isEmpty())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.isInStoreMode())
+					if(activeChar.isInStoreMode())
 					{
 						activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 						activeChar.storePrivateStore();
 						activeChar.standUp();
 						activeChar.broadcastCharInfo();
 					}
-					else if (!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_MANUFACTURE))
+					else if(!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_MANUFACTURE))
 					{
 						activeChar.sendActionFailed();
 						return;
@@ -470,24 +471,24 @@ public class RequestActionUse implements IClientIncomingPacket
 				}
 				case 51: // Создание магазина Common Craft
 				{
-					if (activeChar.getSittingTask())
+					if(activeChar.getSittingTask())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.getCommonRecipeBook().isEmpty())
+					if(activeChar.getCommonRecipeBook().isEmpty())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
-					if (activeChar.isInStoreMode())
+					if(activeChar.isInStoreMode())
 					{
 						activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 						activeChar.storePrivateStore();
 						activeChar.standUp();
 						activeChar.broadcastCharInfo();
 					}
-					else if (!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_MANUFACTURE))
+					else if(!TradeHelper.checksIfCanOpenStore(activeChar, Player.STORE_PRIVATE_MANUFACTURE))
 					{
 						activeChar.sendActionFailed();
 						return;
@@ -504,20 +505,20 @@ public class RequestActionUse implements IClientIncomingPacket
 				case 38: // Mount
 				{
 					final PetInstance pet = activeChar.getPet();
-					if (activeChar.isTransformed())
+					if(activeChar.isTransformed())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (pet == null || !pet.isMountable())
+					else if(pet == null || !pet.isMountable())
 					{
-						if (activeChar.isMounted())
+						if(activeChar.isMounted())
 						{
-							if (activeChar.getMount().isHungry())
+							if(activeChar.getMount().isHungry())
 							{
 								// На оффе сообщение нет, просто не дает слезть.
 								// activeChar.sendPacket(SystemMsg.A_HUNGRY_STRIDER_CANNOT_BE_MOUNTED_OR_DISMOUNTED);
 								return;
 							}
 
-							if (activeChar.isFlying() && !activeChar.checkLandingState()) // Виверна
+							if(activeChar.isFlying() && !activeChar.checkLandingState()) // Виверна
 							{
 								activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_ALLOWED_TO_DISMOUNT_IN_THIS_LOCATION, ActionFailPacket.STATIC);
 								return;
@@ -525,29 +526,29 @@ public class RequestActionUse implements IClientIncomingPacket
 							activeChar.setMount(null);
 						}
 					}
-					else if (activeChar.isMounted() || activeChar.isInBoat())
+					else if(activeChar.isMounted() || activeChar.isInBoat())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isDead())
+					else if(activeChar.isDead())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (pet.isDead())
+					else if(pet.isDead())
 						activeChar.sendPacket(SystemMsg.A_DEAD_STRIDER_CANNOT_BE_RIDDEN);
-					else if (activeChar.isInDuel())
+					else if(activeChar.isInDuel())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isInCombat() || pet.isInCombat())
+					else if(activeChar.isInCombat() || pet.isInCombat())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isInTrainingCamp())
+					else if(activeChar.isInTrainingCamp())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isSitting())
+					else if(activeChar.isSitting())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isFishing())
+					else if(activeChar.isFishing())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.getActiveWeaponFlagAttachment() != null)
+					else if(activeChar.getActiveWeaponFlagAttachment() != null)
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isCastingNow())
+					else if(activeChar.isCastingNow())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (activeChar.isDecontrolled())
+					else if(activeChar.isDecontrolled())
 						activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-					else if (pet.isHungry())
+					else if(pet.isHungry())
 						activeChar.sendPacket(SystemMsg.A_HUNGRY_STRIDER_CANNOT_BE_MOUNTED_OR_DISMOUNTED);
 					else
 					{
@@ -561,11 +562,11 @@ public class RequestActionUse implements IClientIncomingPacket
 					BotReportManager.getInstance().reportBot(activeChar);
 					break;
 				case 76:
-					if (target == null)
+					if(target == null)
 						return;
 
 					IBroadcastPacket msg = activeChar.getFriendList().requestFriendInvite(target);
-					if (msg != null)
+					if(msg != null)
 					{
 						activeChar.sendPacket(msg);
 						activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_ADD_A_FRIEND_TO_YOUR_FRIENDS_LIST);
@@ -603,58 +604,58 @@ public class RequestActionUse implements IClientIncomingPacket
 			}
 			return;
 		}
-		else if (action.type == 1) // Действия петов
+		else if(action.type == 1) // Действия петов
 		{
-			if (activeChar.isDead()) // Мертвый хозяин не может управлять петами.
+			if(activeChar.isDead()) // Мертвый хозяин не может управлять петами.
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
 			final PetInstance pet = activeChar.getPet();
-			if (pet == null || pet.isOutOfControl())
+			if(pet == null || pet.isOutOfControl())
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (action.value > 0)
+			if(action.value > 0)
 			{
-				if (!servitorUseSkill(activeChar, pet, action.value, action.id))
+				if(!servitorUseSkill(activeChar, pet, action.value, action.id))
 					activeChar.sendActionFailed();
 				return;
 			}
 
-			if (pet.isDepressed())
+			if(pet.isDepressed())
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_PETSERVITOR_IS_UNRESPONSIVE_AND_WILL_NOT_OBEY_ANY_ORDERS);
 				return;
 			}
 
 			final GameObject target = activeChar.getTarget();
-			switch (action.id)
+			switch(action.id)
 			{
 				case 15: // Follow для пета
 					pet.setFollowMode(!pet.isFollowMode());
 					break;
 				case 16: // Атака петом
-					if (target == null || !target.isCreature() || target == activeChar || pet == target || pet.isDead())
+					if(target == null || !target.isCreature() || target == activeChar || pet == target || pet.isDead())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
 
-					if (activeChar.isInOlympiadMode() && !activeChar.isOlympiadCompStart())
+					if(activeChar.isInOlympiadMode() && !activeChar.isOlympiadCompStart())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
 
 					// Sin Eater
-					if (pet.getData().isOfType(PetType.KARMA))
+					if(pet.getData().isOfType(PetType.KARMA))
 						return;
 
-					if (pet.isNotControlled())
+					if(pet.isNotControlled())
 					{
 						activeChar.sendPacket(SystemMsg.YOUR_PET_IS_TOO_HIGH_LEVEL_TO_CONTROL);
 						return;
@@ -666,19 +667,19 @@ public class RequestActionUse implements IClientIncomingPacket
 					pet.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 					break;
 				case 19: // Отзыв пета
-					if (pet.isDead())
+					if(pet.isDead())
 					{
 						activeChar.sendPacket(SystemMsg.DEAD_PETS_CANNOT_BE_RETURNED_TO_THEIR_SUMMONING_ITEM, ActionFailPacket.STATIC);
 						return;
 					}
 
-					if (pet.isInCombat())
+					if(pet.isInCombat())
 					{
 						activeChar.sendPacket(SystemMsg.A_PET_CANNOT_BE_UNSUMMONED_DURING_BATTLE, ActionFailPacket.STATIC);
 						break;
 					}
 
-					if (pet.isHungry())
+					if(pet.isHungry())
 					{
 						activeChar.sendPacket(SystemMsg.YOU_MAY_NOT_RESTORE_A_HUNGRY_PET, ActionFailPacket.STATIC);
 						break;
@@ -687,14 +688,14 @@ public class RequestActionUse implements IClientIncomingPacket
 					pet.unSummon(false);
 					break;
 				case 54: // Передвинуть пета к цели
-					if (target != null && pet != target && !pet.isMovementDisabled())
+					if(target != null && pet != target && !pet.isMovementDisabled())
 					{
 						pet.setFollowMode(false);
 						pet.getMovement().moveToLocation(target.getLoc(), 100, true);
 					}
 					break;
 				case 1070: // TODO: [Bonux] Проверить.
-					if (pet instanceof PetBabyInstance)
+					if(pet instanceof PetBabyInstance)
 						((PetBabyInstance) pet).triggerBuff();
 					break;
 				default:
@@ -702,54 +703,54 @@ public class RequestActionUse implements IClientIncomingPacket
 			}
 			return;
 		}
-		else if (action.type == 2 || action.type == 5) // Действия одного и более саммона
+		else if(action.type == 2 || action.type == 5) // Действия одного и более саммона
 		{
-			if (activeChar.isDead()) // Мертвый хозяин не может управлять саммонами.
+			if(activeChar.isDead()) // Мертвый хозяин не может управлять саммонами.
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
 			SummonInstance summon = activeChar.getSummon();
-			if (summon == null || summon.isOutOfControl())
+			if(summon == null || summon.isOutOfControl())
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
 			final GameObject target = activeChar.getTarget();
-			if (action.value > 0)
+			if(action.value > 0)
 			{
 				// TODO перенести эти условия в скиллы
-				if (action.id == 1000 && target != null && !target.isDoor()) // Siege Golem - Siege Hammer
+				if(action.id == 1000 && target != null && !target.isDoor()) // Siege Golem - Siege Hammer
 				{
 					activeChar.sendActionFailed();
 					return;
 				}
-				if ((action.id == 1039 || action.id == 1040) && (target.isDoor() || target instanceof SiegeFlagInstance)) // Swoop
-																															// Cannon
-																															// (не
-																															// может
-																															// атаковать
-																															// двери
-																															// и
-																															// флаги)
+				if((action.id == 1039 || action.id == 1040) && (target.isDoor() || target instanceof SiegeFlagInstance)) // Swoop
+				// Cannon
+				// (не
+				// может
+				// атаковать
+				// двери
+				// и
+				// флаги)
 				{
 					activeChar.sendActionFailed();
 					return;
 				}
-				if (!servitorUseSkill(activeChar, summon, action.value, action.id))
+				if(!servitorUseSkill(activeChar, summon, action.value, action.id))
 					activeChar.sendActionFailed();
 				return;
 			}
 
-			if (summon.isDepressed())
+			if(summon.isDepressed())
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_PETSERVITOR_IS_UNRESPONSIVE_AND_WILL_NOT_OBEY_ANY_ORDERS);
 				return;
 			}
 
-			switch (action.id)
+			switch(action.id)
 			{
 				case 21: // Follow для пета
 					summon.setFollowMode(!summon.isFollowMode());
@@ -757,13 +758,13 @@ public class RequestActionUse implements IClientIncomingPacket
 				case 22: // Атака
 				case 1099: // Атака
 				{
-					if (target == null || !target.isCreature() || target == activeChar || summon == target || summon.isDead())
+					if(target == null || !target.isCreature() || target == activeChar || summon == target || summon.isDead())
 					{
 						activeChar.sendActionFailed();
 						return;
 					}
 
-					if (activeChar.isInOlympiadMode() && !activeChar.isOlympiadCompStart())
+					if(activeChar.isInOlympiadMode() && !activeChar.isOlympiadCompStart())
 					{
 						activeChar.sendActionFailed();
 						return;
@@ -777,7 +778,7 @@ public class RequestActionUse implements IClientIncomingPacket
 					summon.setFollowMode(true);
 					break;
 				case 52: // Отзыв саммона
-					if (summon.isInCombat())
+					if(summon.isInCombat())
 					{
 						activeChar.sendPacket(SystemMsg.A_PET_CANNOT_BE_UNSUMMONED_DURING_BATTLE);
 						activeChar.sendActionFailed();
@@ -786,14 +787,14 @@ public class RequestActionUse implements IClientIncomingPacket
 						summon.unSummon(false);
 					break;
 				case 53: // Передвинуть пета к цели
-					if (target != null && summon != target && !summon.isMovementDisabled())
+					if(target != null && summon != target && !summon.isMovementDisabled())
 					{
 						summon.setFollowMode(false);
 						summon.getMovement().moveToLocation(target.getLoc(), 100, true);
 					}
 					break;
 				case 1100: // Передвинуть пета к цели
-					if (target != null && summon != target && !summon.isMovementDisabled())
+					if(target != null && summon != target && !summon.isMovementDisabled())
 					{
 						summon.setFollowMode(false);
 						summon.getMovement().moveToLocation(target.getLoc(), 100, true);
@@ -804,7 +805,7 @@ public class RequestActionUse implements IClientIncomingPacket
 					summon.setFollowMode(true);
 					break;
 				case 1102: // Отзыв саммона
-					if (summon.isInCombat())
+					if(summon.isInCombat())
 					{
 						activeChar.sendPacket(SystemMsg.A_PET_CANNOT_BE_UNSUMMONED_DURING_BATTLE);
 						activeChar.sendActionFailed();
@@ -823,25 +824,26 @@ public class RequestActionUse implements IClientIncomingPacket
 			}
 			return;
 		}
-		else if (action.type == 3) // Социальные действия
+		else if(action.type == 3) // Социальные действия
 		{
-			if (activeChar.isOutOfControl() || activeChar.isTransformed() || activeChar.isActionsDisabled() || activeChar.isSitting() || activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE || activeChar.isProcessingRequest())
+			if(activeChar.isOutOfControl() || activeChar.isTransformed() || activeChar.isActionsDisabled() || activeChar.isSitting()
+					|| activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE || activeChar.isProcessingRequest())
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
-			if (activeChar.isFishing())
+			if(activeChar.isFishing())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING_2);
 				return;
 			}
-			if (activeChar.isInTrainingCamp())
+			if(activeChar.isInTrainingCamp())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 				return;
 			}
 			activeChar.broadcastPacket(new SocialActionPacket(activeChar.getObjectId(), action.value));
-			if (Config.ALT_SOCIAL_ACTION_REUSE)
+			if(Config.ALT_SOCIAL_ACTION_REUSE)
 			{
 				ThreadPoolManager.getInstance().schedule(new SocialTask(activeChar), 2600);
 				activeChar.getFlags().getParalyzed().start();
@@ -850,55 +852,56 @@ public class RequestActionUse implements IClientIncomingPacket
 			activeChar.getListeners().onSocialAction(action);
 
 			final GameObject target = activeChar.getTarget();
-			if (target != null && target.isNpc())
+			if(target != null && target.isNpc())
 			{
 				NpcInstance npc = (NpcInstance) target;
-				if (activeChar.checkInteractionDistance(npc))
+				if(activeChar.checkInteractionDistance(npc))
 					npc.onSeeSocialAction(activeChar, action.value);
 			}
 
-			for (QuestState state : activeChar.getAllQuestsStates())
+			for(QuestState state : activeChar.getAllQuestsStates())
 				state.getQuest().notifySocialActionUse(state, action.value);
 			return;
 		}
-		else if (action.type == 4) // Парные социальные действия
+		else if(action.type == 4) // Парные социальные действия
 		{
-			if (activeChar.isOutOfControl() || activeChar.isActionsDisabled() || activeChar.isSitting())
+			if(activeChar.isOutOfControl() || activeChar.isActionsDisabled() || activeChar.isSitting())
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
 			final GameObject target = activeChar.getTarget();
-			if (target == null || !target.isPlayer())
+			if(target == null || !target.isPlayer())
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 			final Player pcTarget = target.getPlayer();
-			if (pcTarget.isProcessingRequest() && pcTarget.getRequest().isTypeOf(L2RequestType.COUPLE_ACTION))
+			if(pcTarget.isProcessingRequest() && pcTarget.getRequest().isTypeOf(L2RequestType.COUPLE_ACTION))
 			{
 				activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_PARTICIPATING_IN_A_COUPLE_ACTION_AND_CANNOT_BE_REQUESTED_FOR_ANOTHER_COUPLE_ACTION).addName(pcTarget));
 				return;
 			}
-			if (pcTarget.isProcessingRequest())
+			if(pcTarget.isProcessingRequest())
 			{
 				activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addName(pcTarget));
 				return;
 			}
-			if (!activeChar.isInRange(pcTarget, 300) || activeChar.isInRange(pcTarget, 25) || activeChar.getTargetId() == activeChar.getObjectId() || !GeoEngine.canSeeTarget(activeChar, pcTarget))
+			if(!activeChar.isInRange(pcTarget, 300) || activeChar.isInRange(pcTarget, 25) || activeChar.getTargetId() == activeChar.getObjectId()
+					|| !GeoEngine.canSeeTarget(activeChar, pcTarget))
 			{
 				activeChar.sendPacket(SystemMsg.THE_REQUEST_CANNOT_BE_COMPLETED_BECAUSE_THE_TARGET_DOES_NOT_MEET_LOCATION_REQUIREMENTS);
 				return;
 			}
-			if (!activeChar.checkCoupleAction(pcTarget))
+			if(!activeChar.checkCoupleAction(pcTarget))
 				return;
 
 			new Request(L2RequestType.COUPLE_ACTION, activeChar, pcTarget).setTimeout(10000L);
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_REQUESTED_A_COUPLE_ACTION_WITH_C1).addName(pcTarget));
 			pcTarget.sendPacket(new ExAskCoupleAction(activeChar.getObjectId(), action.value));
 
-			if (Config.ALT_SOCIAL_ACTION_REUSE)
+			if(Config.ALT_SOCIAL_ACTION_REUSE)
 			{
 				ThreadPoolManager.getInstance().schedule(new SocialTask(activeChar), 2600);
 				activeChar.getFlags().getParalyzed().start();
@@ -910,13 +913,13 @@ public class RequestActionUse implements IClientIncomingPacket
 
 	private void summonsUseSkill(Player player, int skillId, int actionId)
 	{
-		if (player.hasSummon())
+		if(player.hasSummon())
 		{
 			SummonInstance s = player.getSummon();
-			if (s == null || s.isOutOfControl())
+			if(s == null || s.isOutOfControl())
 				return;
 
-			if (s.isDepressed())
+			if(s.isDepressed())
 			{
 				player.sendPacket(SystemMsg.YOUR_PETSERVITOR_IS_UNRESPONSIVE_AND_WILL_NOT_OBEY_ANY_ORDERS);
 				return;
@@ -930,35 +933,37 @@ public class RequestActionUse implements IClientIncomingPacket
 
 	private boolean servitorUseSkill(Player player, Servitor servitor, int skillId, int actionId)
 	{
-		if (servitor == null)
+		if(servitor == null)
 			return false;
 
 		int skillLevel = servitor.getActiveSkillLevel(skillId);
-		if (skillLevel == 0)
+		if(skillLevel == 0)
 			return false;
 
 		Skill skill = SkillHolder.getInstance().getSkill(skillId, skillLevel);
-		if (skill == null)
+		if(skill == null)
 			return false;
 
-		if (servitor.isDepressed())
+		if(servitor.isDepressed())
 		{
 			player.sendPacket(SystemMsg.YOUR_PETSERVITOR_IS_UNRESPONSIVE_AND_WILL_NOT_OBEY_ANY_ORDERS);
 			return false;
 		}
 
-		if (servitor.isNotControlled()) // TODO: [Bonux] Проверить, распостраняется ли данное правило на саммонов.
+		if(servitor.isNotControlled()) // TODO: [Bonux] Проверить, распостраняется ли данное правило на саммонов.
 		{
 			player.sendPacket(SystemMsg.YOUR_PET_IS_TOO_HIGH_LEVEL_TO_CONTROL);
 			return false;
 		}
 
-		if (skill.getId() != 6054)
+		if(skill.getId() != 6054)
 		{
 			int npcId = servitor.getNpcId();
-			if (npcId == 16051 || npcId == 16052 || npcId == 16053 || npcId == 1601 || npcId == 1602 || npcId == 1603 || npcId == 1562 || npcId == 1563 || npcId == 1564 || npcId == 1565 || npcId == 1566 || npcId == 1567 || npcId == 1568 || npcId == 1569 || npcId == 1570 || npcId == 1571 || npcId == 1572 || npcId == 1573)
+			if(npcId == 16051 || npcId == 16052 || npcId == 16053 || npcId == 1601 || npcId == 1602 || npcId == 1603 || npcId == 1562 || npcId == 1563
+					|| npcId == 1564 || npcId == 1565 || npcId == 1566 || npcId == 1567 || npcId == 1568 || npcId == 1569 || npcId == 1570 || npcId == 1571
+					|| npcId == 1572 || npcId == 1573)
 			{
-				if (!servitor.getAbnormalList().contains(6054))
+				if(!servitor.getAbnormalList().contains(6054))
 				{
 					player.sendPacket(SystemMsg.A_PET_ON_AUXILIARY_MODE_CANNOT_USE_SKILLS);
 					return false;
@@ -966,22 +971,22 @@ public class RequestActionUse implements IClientIncomingPacket
 			}
 		}
 
-		if (skill.isToggle())
+		if(skill.isToggle())
 		{
-			if (servitor.getAbnormalList().contains(skill))
+			if(servitor.getAbnormalList().contains(skill))
 			{
-				if (skill.isNecessaryToggle())
+				if(skill.isNecessaryToggle())
 					servitor.getAbnormalList().stop(skill.getId());
 				return true;
 			}
 		}
 
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.SERVITOR, skill);
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return false;
 
 		Creature aimingTarget = skill.getAimingTarget(servitor, player.getTarget());
-		if (!skill.checkCondition(skillEntry, servitor, aimingTarget, _ctrlPressed, _shiftPressed, true))
+		if(!skill.checkCondition(skillEntry, servitor, aimingTarget, _ctrlPressed, _shiftPressed, true))
 			return false;
 
 		servitor.setUsedSkill(skill, actionId); // TODO: [Bonux] Переделать.
@@ -1007,10 +1012,10 @@ public class RequestActionUse implements IClientIncomingPacket
 
 	private void changeTacticalSign(Player player, int sign, GameObject target)
 	{
-		if (!player.isInParty())
+		if(!player.isInParty())
 			return;
 
-		if (target == null || !target.isCreature() || !target.isTargetable(player))
+		if(target == null || !target.isCreature() || !target.isTargetable(player))
 			return;
 
 		player.getParty().changeTacticalSign(player, sign, (Creature) target);
@@ -1018,11 +1023,11 @@ public class RequestActionUse implements IClientIncomingPacket
 
 	private void findTacticalTarget(Player player, int sign)
 	{
-		if (!player.isInParty())
+		if(!player.isInParty())
 			return;
 
 		Creature target = player.getParty().findTacticalTarget(player, sign);
-		if (target == null || target.isAlikeDead() || !target.isTargetable(player))
+		if(target == null || target.isAlikeDead() || !target.isTargetable(player))
 			return;
 
 		player.setTarget(target);

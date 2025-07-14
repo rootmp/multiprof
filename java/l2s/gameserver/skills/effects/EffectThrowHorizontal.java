@@ -29,7 +29,7 @@ public class EffectThrowHorizontal extends EffectFlyAbstract
 		@Override
 		protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 		{
-			if (effected.isThrowAndKnockImmune())
+			if(effected.isThrowAndKnockImmune())
 			{
 				effected.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 				return false;
@@ -37,13 +37,13 @@ public class EffectThrowHorizontal extends EffectFlyAbstract
 
 			// Тычок/отброс нельзя наложить на осадных саммонов
 			Player player = effected.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
-				if (effected.isSummon())
+				if(effected.isSummon())
 				{
-					for (SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
+					for(SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
 					{
-						if (siegeEvent.containsSiegeSummon((SummonInstance) effected))
+						if(siegeEvent.containsSiegeSummon((SummonInstance) effected))
 						{
 							effector.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 							return false;
@@ -52,14 +52,14 @@ public class EffectThrowHorizontal extends EffectFlyAbstract
 				}
 			}
 
-			if (effected.isInPeaceZone())
+			if(effected.isInPeaceZone())
 			{
 				effector.sendPacket(SystemMsg.YOU_MAY_NOT_ATTACK_IN_A_PEACEFUL_ZONE);
 				return false;
 			}
 
 			_flyLoc = effected.getFlyLocation(effector, getSkill());
-			if (_flyLoc == null)
+			if(_flyLoc == null)
 				return false;
 
 			return true;

@@ -28,7 +28,7 @@ public class ExResponseShowStepTwo implements IClientOutgoingPacket
 		Collection<PetitionSubGroup> subGroups = _petitionMainGroup.getSubGroups();
 		packetWriter.writeD(subGroups.size());
 		packetWriter.writeS(_petitionMainGroup.getDescription(_language));
-		for (PetitionSubGroup g : subGroups)
+		for(PetitionSubGroup g : subGroups)
 		{
 			packetWriter.writeC(g.getId());
 			packetWriter.writeS(g.getName(_language));

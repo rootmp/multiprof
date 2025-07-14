@@ -37,10 +37,10 @@ public class Mount
 		@Override
 		public void run()
 		{
-			if (isHungry())
+			if(isHungry())
 				tryFeed();
 
-			if (_currentFeed <= 0)
+			if(_currentFeed <= 0)
 			{
 				_rider.sendPacket(SystemMsg.YOU_ARE_OUT_OF_FEED);
 				_rider.setMount(null);
@@ -181,7 +181,7 @@ public class Mount
 
 	public void onRide()
 	{
-		switch (getType())
+		switch(getType())
 		{
 			case WYVERN:
 				_rider.setFlying(true);
@@ -206,11 +206,11 @@ public class Mount
 		_rider.setFlying(false);
 
 		boolean sendSkillList = false;
-		if (_rider.removeSkillById(Skill.SKILL_STRIDER_ASSAULT) != null)
+		if(_rider.removeSkillById(Skill.SKILL_STRIDER_ASSAULT) != null)
 			sendSkillList = true;
-		if (_rider.removeSkillById(Skill.SKILL_WYVERN_BREATH) != null)
+		if(_rider.removeSkillById(Skill.SKILL_WYVERN_BREATH) != null)
 			sendSkillList = true;
-		if (sendSkillList)
+		if(sendSkillList)
 			_rider.sendSkillList();
 
 		_rider.getAbnormalList().stop(Skill.SKILL_HINDER_STRIDER);
@@ -243,10 +243,10 @@ public class Mount
 
 	private void startFeedTask()
 	{
-		if (_currentFeed == -1)
+		if(_currentFeed == -1)
 			return;
 
-		if (_feedTask != null)
+		if(_feedTask != null)
 			return;
 
 		_feedTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new FeedTask(), 10000L, 10000L);
@@ -254,7 +254,7 @@ public class Mount
 
 	private void stopFeedTask()
 	{
-		if (_feedTask != null)
+		if(_feedTask != null)
 		{
 			_feedTask.cancel(false);
 			_feedTask = null;
@@ -264,7 +264,7 @@ public class Mount
 	private void consumeMeal()
 	{
 		_currentFeed -= _rider.isInCombat() ? _data.getBattleMealConsumeOnRide() : _data.getNormalMealConsumeOnRide();
-		if (_currentFeed < 0)
+		if(_currentFeed < 0)
 			_currentFeed = 0;
 		updateStatus();
 	}
@@ -280,7 +280,7 @@ public class Mount
 
 	public boolean isHungry()
 	{
-		if (_controlItemObjId == 0)
+		if(_controlItemObjId == 0)
 			return false;
 
 		return _currentFeed < (int) (_data.getMaxMeal() * 0.01 * _data.getHungryLimit());
@@ -289,12 +289,12 @@ public class Mount
 	private void tryFeed()
 	{
 		ItemInstance food = null;
-		for (int foodId : _data.getFood())
+		for(int foodId : _data.getFood())
 		{
 			food = _rider.getInventory().getItemByItemId(foodId);
-			if (food != null)
+			if(food != null)
 			{
-				if (food.getTemplate().useItem(_rider, food, false, false))
+				if(food.getTemplate().useItem(_rider, food, false, false))
 					break;
 				food = null;
 			}
@@ -303,7 +303,7 @@ public class Mount
 
 	public void store()
 	{
-		if (_controlItemObjId == 0)
+		if(_controlItemObjId == 0)
 			return;
 
 		Connection con = null;
@@ -317,7 +317,7 @@ public class Mount
 			statement.setInt(2, _controlItemObjId);
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Could not store mount current feed!", e);
 		}
@@ -329,15 +329,15 @@ public class Mount
 
 	public static Mount create(Player rider, int controlItemObjId, int npcId, int level, int currentFeed)
 	{
-		if (rider == null)
+		if(rider == null)
 			return null;
 
 		PetData template = PetDataHolder.getInstance().getTemplateByNpcId(npcId);
-		if (template == null)
+		if(template == null)
 			return null;
 
 		PetLevelData data = template.getLvlData(level);
-		if (data == null)
+		if(data == null)
 			return null;
 
 		return new Mount(rider, controlItemObjId, npcId, level, currentFeed, template.getFormId(level), data, template.getMountType());

@@ -26,7 +26,7 @@ public class GameCrypt implements ICrypt
 		}
 
 		int a = 0;
-		while (buf.isReadable())
+		while(buf.isReadable())
 		{
 			final int b = buf.readByte() & 0xFF;
 			a = b ^ _outKey[(buf.readerIndex() - 1) & 15] ^ a;
@@ -39,12 +39,11 @@ public class GameCrypt implements ICrypt
 	@Override
 	public void decrypt(ByteBuf buf)
 	{
-		if(!_isEnabled) {
-			return;
-		}
+		if(!_isEnabled)
+		{ return; }
 
 		int a = 0;
-		while (buf.isReadable())
+		while(buf.isReadable())
 		{
 			final int b = buf.readByte() & 0xFF;
 			buf.setByte(buf.readerIndex() - 1, b ^ _inKey[(buf.readerIndex() - 1) & 15] ^ a);

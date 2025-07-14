@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c.magiclamp;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -27,7 +27,7 @@ public class ExMagicLampGameInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		int lampsExist = 0;
-		if ((_player.getMagicLampPoints() / MAX_LAMP_EXP) >= 1)
+		if((_player.getMagicLampPoints() / MAX_LAMP_EXP) >= 1)
 		{
 			lampsExist = (int) (_player.getMagicLampPoints() / MAX_LAMP_EXP);
 		}
@@ -39,7 +39,7 @@ public class ExMagicLampGameInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_gameType); // game type (standard or extended)
 		packetWriter.writeD(_gameType == 1 ? 1 : 0); // if extended game, additional Sayha's Blessing used
 
-		if (_gameType == 1) // if extended game selected
+		if(_gameType == 1) // if extended game selected
 		{
 			packetWriter.writeD(1); // items size for one game
 			packetWriter.writeD(SAYHAS_BLESSING); // item id

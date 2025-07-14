@@ -16,17 +16,17 @@ public interface JdbcEntity extends Serializable
 
 	default void updated(boolean store)
 	{
-		if (getJdbcState().isPersisted())
+		if(getJdbcState().isPersisted())
 		{
 			setJdbcState(JdbcEntityState.UPDATED);
-			if (store)
+			if(store)
 			{
 				update();
 			}
 		}
-		else if (getJdbcState().isSavable())
+		else if(getJdbcState().isSavable())
 		{
-			if (store)
+			if(store)
 			{
 				save();
 			}

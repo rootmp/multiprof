@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;
@@ -17,10 +18,10 @@ public class RequestExRankingCharBuffzoneNpcPosition implements IClientIncomingP
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (RankManager.getInstance().getPlayerGlobalRank(activeChar) != 1)
+		if(RankManager.getInstance().getPlayerGlobalRank(activeChar) != 1)
 			return;
 
 		activeChar.sendPacket(new ExRankingCharBuffzoneNpcInfo());

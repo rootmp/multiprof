@@ -28,7 +28,7 @@ public final class SpawnHolder extends AbstractHolder
 	public List<SpawnTemplate> getAllTemplates()
 	{
 		final List<SpawnTemplate> result = new ArrayList<>();
-		for (String group : _spawns.keySet())
+		for(String group : _spawns.keySet())
 		{
 			result.addAll(_spawns.get(group));
 		}
@@ -44,9 +44,9 @@ public final class SpawnHolder extends AbstractHolder
 	{
 		final String filename = _filesToTemplate.get(template);
 		final List<SpawnTemplate> templates = new ArrayList<>();
-		for (SpawnTemplate temp : _filesToTemplate.keySet())
+		for(SpawnTemplate temp : _filesToTemplate.keySet())
 		{
-			if (_filesToTemplate.get(temp).equals(filename))
+			if(_filesToTemplate.get(temp).equals(filename))
 			{
 				templates.add(temp);
 			}
@@ -57,14 +57,14 @@ public final class SpawnHolder extends AbstractHolder
 	public List<SpawnTemplate> getSpawn(String name)
 	{
 		final List<SpawnTemplate> template = _spawns.get(name);
-		return template == null ? Collections.<SpawnTemplate>emptyList() : template;
+		return template == null ? Collections.<SpawnTemplate> emptyList() : template;
 	}
 
 	@Override
 	public int size()
 	{
 		int i = 0;
-		for (List<SpawnTemplate> l : _spawns.values())
+		for(List<SpawnTemplate> l : _spawns.values())
 		{
 			i += l.size();
 		}
@@ -81,12 +81,12 @@ public final class SpawnHolder extends AbstractHolder
 	{
 		return _spawns;
 	}
-	
- 	public static SpawnHolder getInstance()
+
+	public static SpawnHolder getInstance()
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected final static SpawnHolder _instance = new SpawnHolder();

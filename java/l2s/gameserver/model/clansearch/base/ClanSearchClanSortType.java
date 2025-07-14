@@ -17,7 +17,7 @@ public enum ClanSearchClanSortType
 
 	public static ClanSearchClanSortType valueOf(int value)
 	{
-		if (value < VALUES.length)
+		if(value < VALUES.length)
 			return VALUES[value];
 		return SORT_TYPE_NONE;
 	}

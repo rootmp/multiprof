@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.matching.MatchingRoom;
@@ -22,14 +23,14 @@ public class RequestDismissPartyRoom implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getId() != _roomId || room.getType() != MatchingRoom.PARTY_MATCHING)
+		if(room == null || room.getId() != _roomId || room.getType() != MatchingRoom.PARTY_MATCHING)
 			return;
 
-		if (room.getLeader() != player)
+		if(room.getLeader() != player)
 			return;
 
 		room.disband();

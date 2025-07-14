@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -19,25 +20,25 @@ public class RequestWithDrawalParty implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Party party = activeChar.getParty();
-		if (party == null)
+		if(party == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInOlympiadMode())
+		if(activeChar.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_WITHDRAW_FROM_THE_PARTY);
 			return;
 		}
 
-		for (Event event : activeChar.getEvents())
+		for(Event event : activeChar.getEvents())
 		{
-			if (!event.canLeaveParty(activeChar))
+			if(!event.canLeaveParty(activeChar))
 			{
 				activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_WITHDRAW_FROM_THE_PARTY);
 				return;
@@ -45,7 +46,7 @@ public class RequestWithDrawalParty implements IClientIncomingPacket
 		}
 
 		Reflection r = activeChar.getParty().getReflection();
-		if (r != null && activeChar.isInCombat())
+		if(r != null && activeChar.isInCombat())
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_WITHDRAW_FROM_THE_PARTY); // TODO: Check.
 		else
 			activeChar.leaveParty(false);

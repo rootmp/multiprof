@@ -29,9 +29,9 @@ public class AntharasLairCloseTask extends AutomaticTask
 		_log.info("Antharas' Lair Close Task: launched.");
 		ServerVariables.set("antharas_lair_open", false);
 		_log.info("Antharas' Lair Close Task: completed.");
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
-			if (player.getReflectionId() == ReflectionManager.ANTHARAS_LAIR.getId())
+			if(player.getReflectionId() == ReflectionManager.ANTHARAS_LAIR.getId())
 			{
 				player.teleToLocation(player.getReflection().getReturnLoc(), ReflectionManager.MAIN);
 			}

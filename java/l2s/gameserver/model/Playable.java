@@ -52,7 +52,7 @@ public abstract class Playable extends Creature
 	protected final AtomicBoolean _isUsingItem = new AtomicBoolean(false);
 
 	protected final IntObjectMap<ExOptionDataTemplate> _exOptions = new CTreeIntObjectMap<ExOptionDataTemplate>();
-	
+
 	public Playable(int objectId, CreatureTemplate template)
 	{
 		super(objectId, template);
@@ -80,40 +80,41 @@ public abstract class Playable extends Creature
 	{
 		final Player player = getPlayer();
 
-		if (isDead() || target == null || player == null || target == this || target == player || player.isMyServitor(target.getObjectId()) || player.isPK())
+		if(isDead() || target == null || player == null || target == this || target == player || player.isMyServitor(target.getObjectId())
+				|| player.isPK())
 			return false;
 
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
-			if (skillEntry.isAltUse())
+			if(skillEntry.isAltUse())
 				return false;
-			if (skillEntry.getTemplate().getTargetType() == SkillTargetType.TARGET_UNLOCKABLE)
+			if(skillEntry.getTemplate().getTargetType() == SkillTargetType.TARGET_UNLOCKABLE)
 				return false;
-			if (skillEntry.getTemplate().getTargetType() == SkillTargetType.TARGET_CHEST)
+			if(skillEntry.getTemplate().getTargetType() == SkillTargetType.TARGET_CHEST)
 				return false;
 		}
 
 		// Duel check... Members of the same duel are not flagged
-		for (final SingleMatchEvent event : getEvents(SingleMatchEvent.class))
+		for(final SingleMatchEvent event : getEvents(SingleMatchEvent.class))
 		{
-			if (!event.checkPvPFlag(player, target))
+			if(!event.checkPvPFlag(player, target))
 				return false;
 		}
 
-		if ((isInPeaceZone() && target.isInPeaceZone()) || (isInZoneBattle() && target.isInZoneBattle()))
+		if((isInPeaceZone() && target.isInPeaceZone()) || (isInZoneBattle() && target.isInZoneBattle()))
 			return false;
-		if (isInSiegeZone() && target.isInSiegeZone())
+		if(isInSiegeZone() && target.isInSiegeZone())
 			return false;
-		if (getPlayer().isInFightClub())
+		if(getPlayer().isInFightClub())
 			return false;
-		if (skillEntry == null || skillEntry.getTemplate().isDebuff())
+		if(skillEntry == null || skillEntry.getTemplate().isDebuff())
 		{
-			if (target.isPK())
+			if(target.isPK())
 				return false;
-			if (target.isPlayable())
+			if(target.isPlayable())
 				return true;
 		}
-		else if (target.getPvpFlag() > 0 || target.isPK() || (target.isMonster() && !skillEntry.getTemplate().isNoFlagNoForce()))
+		else if(target.getPvpFlag() > 0 || target.isPK() || (target.isMonster() && !skillEntry.getTemplate().isNoFlagNoForce()))
 			return true;
 
 		return false;
@@ -125,65 +126,65 @@ public abstract class Playable extends Creature
 	public boolean checkTarget(Creature target)
 	{
 		final Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (target == null || target.isDead())
+		if(target == null || target.isDead())
 		{
 			player.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
-		if (!isInRange(target, 2000))
+		if(!isInRange(target, 2000))
 		{
 			player.sendPacket(SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE);
 			return false;
 		}
 
-		if (target.isInvisible(this) || getReflection() != target.getReflection())
+		if(target.isInvisible(this) || getReflection() != target.getReflection())
 		{
 			player.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 			return false;
 		}
 
-		if (player.isInZone(ZoneType.epic) != target.isInZone(ZoneType.epic))
+		if(player.isInZone(ZoneType.epic) != target.isInZone(ZoneType.epic))
 		{
 			player.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
-		if (target.isPlayable())
+		if(target.isPlayable())
 		{
-			if (!player.getPlayerAccess().PeaceAttack)
+			if(!player.getPlayerAccess().PeaceAttack)
 			{
 				// You cannot attack someone who is in the arena if you yourself are not in the
 				// arena
-				if (isInZoneBattle() != target.isInZoneBattle())
+				if(isInZoneBattle() != target.isInZoneBattle())
 				{
 					player.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;
 				}
 
 				// If the target or the attacker is in a peaceful zone, you cannot attack
-				if (isInPeaceZone() || target.isInPeaceZone())
+				if(isInPeaceZone() || target.isInPeaceZone())
 				{
 					player.sendPacket(SystemMsg.YOU_MAY_NOT_ATTACK_THIS_TARGET_IN_A_PEACEFUL_ZONE);
 					return false;
 				}
 			}
-			if (player.isInOlympiadMode() && !player.isOlympiadCompStart())
+			if(player.isInOlympiadMode() && !player.isOlympiadCompStart())
 				return false;
 		}
 
-		if (!target.isAttackable(this))
+		if(!target.isAttackable(this))
 		{
 			player.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
-		if (target.paralizeOnAttack(this))
+		if(target.paralizeOnAttack(this))
 		{
-			if (Config.PARALIZE_ON_RAID_DIFF)
+			if(Config.PARALIZE_ON_RAID_DIFF)
 			{
 				paralizeMe(target);
 				return false;
@@ -197,19 +198,19 @@ public abstract class Playable extends Creature
 	public void doAttack(Creature target)
 	{
 		final Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (isAMuted() || isAttackingNow() || player.isInObserverMode())
+		if(isAMuted() || isAttackingNow() || player.isInObserverMode())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (!checkTarget(target))
+		if(!checkTarget(target))
 		{
 			// On the offe, the summon still tries to attack an unattacked target.
-			if (!isServitor())
+			if(!isServitor())
 			{
 				getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 			}
@@ -219,34 +220,35 @@ public abstract class Playable extends Creature
 
 		// Break duels if the target is not a duelist
 		final DuelEvent duelEvent = getEvent(DuelEvent.class);
-		if (duelEvent != null && target.getEvent(DuelEvent.class) != duelEvent)
+		if(duelEvent != null && target.getEvent(DuelEvent.class) != duelEvent)
 		{
 			duelEvent.abortDuel(getPlayer());
 		}
 
 		final WeaponTemplate weaponItem = getActiveWeaponTemplate();
-		if (weaponItem != null)
+		if(weaponItem != null)
 		{
 			int weaponMpConsume = weaponItem.getMpConsume();
 			final int[] reducedMPConsume = weaponItem.getReducedMPConsume();
-			if (reducedMPConsume[0] > 0 && Rnd.chance(reducedMPConsume[0]))
+			if(reducedMPConsume[0] > 0 && Rnd.chance(reducedMPConsume[0]))
 			{
 				weaponMpConsume = reducedMPConsume[1];
 			}
 
-			final boolean isBowOrCrossbow = weaponItem.getItemType() == WeaponType.BOW || weaponItem.getItemType() == WeaponType.CROSSBOW || weaponItem.getItemType() == WeaponType.TWOHANDCROSSBOW || weaponItem.getItemType() == WeaponType.FIREARMS;
-			if (isBowOrCrossbow)
+			final boolean isBowOrCrossbow = weaponItem.getItemType() == WeaponType.BOW || weaponItem.getItemType() == WeaponType.CROSSBOW
+					|| weaponItem.getItemType() == WeaponType.TWOHANDCROSSBOW || weaponItem.getItemType() == WeaponType.FIREARMS;
+			if(isBowOrCrossbow)
 			{
 				final double cheapShot = getStat().calc(Stats.CHEAP_SHOT, 0., target, null);
-				if (Rnd.chance(cheapShot))
+				if(Rnd.chance(cheapShot))
 				{
 					weaponMpConsume = 0;
 				}
 			}
 
-			if (weaponMpConsume > 0)
+			if(weaponMpConsume > 0)
 			{
-				if (_currentMp < weaponMpConsume)
+				if(_currentMp < weaponMpConsume)
 				{
 					getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 					player.sendPacket(SystemMsg.NOT_ENOUGH_MP);
@@ -256,16 +258,17 @@ public abstract class Playable extends Creature
 				reduceCurrentMp(weaponMpConsume, null);
 			}
 
-			if (isBowOrCrossbow)
+			if(isBowOrCrossbow)
 			{
-				if (!player.checkAndEquipArrows())
+				if(!player.checkAndEquipArrows())
 				{
 					getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
-					if (player.getActiveWeaponInstance().getItemType() == WeaponType.BOW)
+					if(player.getActiveWeaponInstance().getItemType() == WeaponType.BOW)
 					{
 						player.sendPacket(SystemMsg.YOU_HAVE_RUN_OUT_OF_ARROWS);
 					}
-					else if (player.getActiveWeaponInstance().getItemType() == WeaponType.CROSSBOW || player.getActiveWeaponInstance().getItemType() == WeaponType.TWOHANDCROSSBOW)
+					else if(player.getActiveWeaponInstance().getItemType() == WeaponType.CROSSBOW
+							|| player.getActiveWeaponInstance().getItemType() == WeaponType.TWOHANDCROSSBOW)
 					{
 						player.sendPacket(SystemMsg.NOT_ENOUGH_BOLTS);
 					}
@@ -285,19 +288,19 @@ public abstract class Playable extends Creature
 	@Override
 	public boolean doCast(final SkillEntry skillEntry, final Creature target, boolean forceUse)
 	{
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return false;
 
 		// Прерывать дуэли если цель не дуэлянт
 		final DuelEvent duelEvent = getEvent(DuelEvent.class);
-		if (duelEvent != null && target.getEvent(DuelEvent.class) != duelEvent)
+		if(duelEvent != null && target.getEvent(DuelEvent.class) != duelEvent)
 		{
 			duelEvent.abortDuel(getPlayer());
 		}
 
 		final Skill skill = skillEntry.getTemplate();
 
-		if (skill.getSkillType() == SkillType.DEBUFF && target.isNpc() && target.isInvulnerable() && !target.isMonster())
+		if(skill.getSkillType() == SkillType.DEBUFF && target.isNpc() && target.isInvulnerable() && !target.isMonster())
 		{
 			getPlayer().sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
@@ -309,18 +312,18 @@ public abstract class Playable extends Creature
 	@Override
 	public void reduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean canReflectAndAbsorb, boolean transferDamage, boolean isDot, boolean sendReceiveMessage, boolean sendGiveMessage, boolean crit, boolean miss, boolean shld, double elementalDamage, boolean elementalCrit)
 	{
-		if (attacker == null || isDead() || (attacker.isDead() && !isDot))
+		if(attacker == null || isDead() || (attacker.isDead() && !isDot))
 			return;
 
 		final boolean damageBlocked = isDamageBlocked(attacker);
-		if (damageBlocked && transferDamage)
+		if(damageBlocked && transferDamage)
 			return;
 
-		if (damageBlocked && attacker != this)
+		if(damageBlocked && attacker != this)
 		{
-			if (attacker.isPlayer())
+			if(attacker.isPlayer())
 			{
-				if (sendGiveMessage)
+				if(sendGiveMessage)
 				{
 					attacker.sendPacket(SystemMsg.THE_ATTACK_HAS_BEEN_BLOCKED);
 				}
@@ -328,23 +331,23 @@ public abstract class Playable extends Creature
 			return; // return anyway, if damage is blocked it's blocked from everyone!!
 		}
 
-		if (attacker != this && attacker.isPlayable())
+		if(attacker != this && attacker.isPlayable())
 		{
 			final Player player = getPlayer();
 			final Player pcAttacker = attacker.getPlayer();
-			if (pcAttacker != player)
-				if (player.isInOlympiadMode() && !player.isOlympiadCompStart())
+			if(pcAttacker != player)
+				if(player.isInOlympiadMode() && !player.isOlympiadCompStart())
 				{
-					if (sendGiveMessage)
+					if(sendGiveMessage)
 					{
 						pcAttacker.sendPacket(SystemMsg.INVALID_TARGET);
 					}
 					return;
 				}
 
-			if (isInZoneBattle() != attacker.isInZoneBattle())
+			if(isInZoneBattle() != attacker.isInZoneBattle())
 			{
-				if (sendGiveMessage)
+				if(sendGiveMessage)
 				{
 					attacker.getPlayer().sendPacket(SystemMsg.INVALID_TARGET);
 				}
@@ -352,7 +355,7 @@ public abstract class Playable extends Creature
 			}
 
 			final DuelEvent duelEvent = getEvent(DuelEvent.class);
-			if (duelEvent != null && attacker.getEvent(DuelEvent.class) != duelEvent)
+			if(duelEvent != null && attacker.getEvent(DuelEvent.class) != duelEvent)
 			{
 				duelEvent.abortDuel(player);
 			}
@@ -380,62 +383,64 @@ public abstract class Playable extends Creature
 	public boolean isCtrlAttackable(Creature attacker, boolean force, boolean nextAttackCheck)
 	{
 		final Player player = getPlayer();
-		if (attacker == null || player == null || attacker == this || attacker == player && !force || isDead() || attacker.isAlikeDead())
+		if(attacker == null || player == null || attacker == this || attacker == player && !force || isDead() || attacker.isAlikeDead())
 			return false;
 
-		if (player.isMyServitor(attacker.getObjectId()) || isInvisible(attacker) || getReflection() != attacker.getReflection())
+		if(player.isMyServitor(attacker.getObjectId()) || isInvisible(attacker) || getReflection() != attacker.getReflection())
 			return false;
 
 		Boat boat = player.getBoat();
-		if (boat != null)
+		if(boat != null)
 			return false;
 
 		final Player pcAttacker = attacker.getPlayer();
-		if (isPlayer() && pcAttacker == this)
+		if(isPlayer() && pcAttacker == this)
 			return false;
 
-		if (pcAttacker != null && pcAttacker != player)
+		if(pcAttacker != null && pcAttacker != player)
 		{
 			boat = pcAttacker.getBoat();
-			if (boat != null)
+			if(boat != null)
 				return false;
-			if ((player.isInOlympiadMode() || pcAttacker.isInOlympiadMode()) && player.getOlympiadGame() != pcAttacker.getOlympiadGame())
+			if((player.isInOlympiadMode() || pcAttacker.isInOlympiadMode()) && player.getOlympiadGame() != pcAttacker.getOlympiadGame())
 				return false;
-			if (player.isInOlympiadMode() && !player.isOlympiadCompStart()) // Бой еще не начался
+			if(player.isInOlympiadMode() && !player.isOlympiadCompStart()) // Бой еще не начался
 				return false;
-			if (player.isInOlympiadMode() && player.isOlympiadCompStart() && player.getOlympiadSide() == pcAttacker.getOlympiadSide() && !force) // нельзя
+			if(player.isInOlympiadMode() && player.isOlympiadCompStart() && player.getOlympiadSide() == pcAttacker.getOlympiadSide() && !force) // нельзя
 				return false;
-			if (player.isInNonPvpTime())
+			if(player.isInNonPvpTime())
 				return false;
-			if (!force && player.getParty() != null && player.getParty() == pcAttacker.getParty())
+			if(!force && player.getParty() != null && player.getParty() == pcAttacker.getParty())
 				return false;
-			if (!force && player.isInParty() && player.getParty().getCommandChannel() != null && pcAttacker.isInParty() && pcAttacker.getParty().getCommandChannel() != null && player.getParty().getCommandChannel() == pcAttacker.getParty().getCommandChannel())
+			if(!force && player.isInParty() && player.getParty().getCommandChannel() != null && pcAttacker.isInParty()
+					&& pcAttacker.getParty().getCommandChannel() != null && player.getParty().getCommandChannel() == pcAttacker.getParty().getCommandChannel())
 				return false;
 
-			for (final Event e : attacker.getEvents())
-				if (e.checkForAttack(this, attacker, null, force) != null)
+			for(final Event e : attacker.getEvents())
+				if(e.checkForAttack(this, attacker, null, force) != null)
 					return false;
 
-			if (isInZoneBattle())
+			if(isInZoneBattle())
 				return true;
-			if (isInPeaceZone())
+			if(isInPeaceZone())
 				return false;
 
-			for (final Event e : attacker.getEvents())
-				if (e.canAttack(this, attacker, null, force, nextAttackCheck))
+			for(final Event e : attacker.getEvents())
+				if(e.canAttack(this, attacker, null, force, nextAttackCheck))
 					return true;
 
-			if (!force && player.getClan() != null && player.getClan() == pcAttacker.getClan())
+			if(!force && player.getClan() != null && player.getClan() == pcAttacker.getClan())
 				return false;
-			if (!force && player.getClan() != null && player.getClan().getAlliance() != null && pcAttacker.getClan() != null && pcAttacker.getClan().getAlliance() != null && player.getClan().getAlliance() == pcAttacker.getClan().getAlliance())
+			if(!force && player.getClan() != null && player.getClan().getAlliance() != null && pcAttacker.getClan() != null
+					&& pcAttacker.getClan().getAlliance() != null && player.getClan().getAlliance() == pcAttacker.getClan().getAlliance())
 				return false;
-			if (isInSiegeZone())
+			if(isInSiegeZone())
 				return true;
-			if (pcAttacker.atMutualWarWith(player))
+			if(pcAttacker.atMutualWarWith(player))
 				return true;
-			if (player.isPK())
+			if(player.isPK())
 				return true;
-			if (player.getPvpFlag() != 0)
+			if(player.getPvpFlag() != 0)
 				return !nextAttackCheck;
 
 			return force;
@@ -455,21 +460,21 @@ public abstract class Playable extends Creature
 	public void callSkill(Creature aimingTarget, SkillEntry skillEntry, Set<Creature> targets, boolean useActionSkills, boolean trigger)
 	{
 		final Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		final Skill skill = skillEntry.getTemplate();
 
-		for (final Creature target : targets)
+		for(final Creature target : targets)
 		{
-			if (target.isNpc())
+			if(target.isNpc())
 			{
-				if (!trigger && skill.isDebuff()) // На оффе триггеры не накладывают паралич. Проверено 20.08.16
+				if(!trigger && skill.isDebuff()) // На оффе триггеры не накладывают паралич. Проверено 20.08.16
 				{
 					// mobs will hate on debuff
-					if (target.paralizeOnAttack(player))
+					if(target.paralizeOnAttack(player))
 					{
-						if (Config.PARALIZE_ON_RAID_DIFF)
+						if(Config.PARALIZE_ON_RAID_DIFF)
 						{
 							paralizeMe(target);
 							return;
@@ -479,25 +484,25 @@ public abstract class Playable extends Creature
 				target.getAI().notifyEvent(CtrlEvent.EVT_SEE_SPELL, skill, this, target);
 			}
 			else // исключать баффы питомца на владельца
-			if (target.isPlayable() && player != target && !player.isMyServitor(target.getObjectId()))
+			if(target.isPlayable() && player != target && !player.isMyServitor(target.getObjectId()))
 			{
 				final int aggro = skill.getEffectPoint();
 
 				final List<NpcInstance> npcs = World.getAroundNpc(target);
-				for (final NpcInstance npc : npcs)
+				for(final NpcInstance npc : npcs)
 				{
 					npc.getAI().notifyEvent(CtrlEvent.EVT_SEE_SPELL, skill, this, target);
 
-					if (!trigger && useActionSkills && !skillEntry.isAltUse() && !npc.isDead() && npc.isInRangeZ(this, 2000))
+					if(!trigger && useActionSkills && !skillEntry.isAltUse() && !npc.isDead() && npc.isInRangeZ(this, 2000))
 					{
-						if (npc.getAggroList().getHate(target) > 0)
+						if(npc.getAggroList().getHate(target) > 0)
 						{
-							if (!skill.isHandler() && npc.paralizeOnAttack(player))
+							if(!skill.isHandler() && npc.paralizeOnAttack(player))
 							{
-								if (Config.PARALIZE_ON_RAID_DIFF)
+								if(Config.PARALIZE_ON_RAID_DIFF)
 								{
 									final Skill revengeSkill = SkillHolder.getInstance().getSkill(Skill.SKILL_RAID_CURSE_2, 1);
-									if (revengeSkill != null)
+									if(revengeSkill != null)
 									{
 										revengeSkill.getEffects(npc, this);
 									}
@@ -506,17 +511,17 @@ public abstract class Playable extends Creature
 							}
 						}
 
-						if (aggro > 0)
+						if(aggro > 0)
 						{
 							final AggroInfo ai = npc.getAggroList().get(target);
 							// Skip if the target is not in the hitlist
 							// If the hate is less than 100, skip
-							if ((ai == null) || (ai.hate < 100))
+							if((ai == null) || (ai.hate < 100))
 							{
 								continue;
 							}
 
-							if (GeoEngine.canSeeTarget(npc, target))
+							if(GeoEngine.canSeeTarget(npc, target))
 							{
 								// Mob will only aggro if it sees a target that you are healing/buffing.
 								npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, this, ai.damage == 0 ? aggro / 2 : aggro);
@@ -527,7 +532,7 @@ public abstract class Playable extends Creature
 			}
 
 			// Check for PvP Flagging / Drawing Aggro
-			if (!trigger && checkPvP(target, skillEntry))
+			if(!trigger && checkPvP(target, skillEntry))
 			{
 				startPvPFlag(target);
 			}
@@ -544,14 +549,14 @@ public abstract class Playable extends Creature
 	{
 		final Player player = getPlayer();
 
-		if (item == null || player == null)
+		if(item == null || player == null)
 			return;
 
-		if (item.isEquipable() && !(item.getTemplate() instanceof EtcItemTemplate))
+		if(item.isEquipable() && !(item.getTemplate() instanceof EtcItemTemplate))
 		{
 			SystemMessage msg = null;
 			final String player_name = player.getName();
-			if (item.getEnchantLevel() > 0)
+			if(item.getEnchantLevel() > 0)
 			{
 				final int msg_id = isPlayer() ? SystemMessage.ATTENTION_S1_PICKED_UP__S2_S3 : SystemMessage.ATTENTION_S1_PET_PICKED_UP__S2_S3;
 				msg = new SystemMessage(msg_id).addString(player_name).addNumber(item.getEnchantLevel()).addItemName(item.getItemId());
@@ -561,9 +566,9 @@ public abstract class Playable extends Creature
 				final int msg_id = isPlayer() ? SystemMessage.ATTENTION_S1_PICKED_UP_S2 : SystemMessage.ATTENTION_S1_PET_PICKED_UP__S2_S3;
 				msg = new SystemMessage(msg_id).addString(player_name).addItemName(item.getItemId());
 			}
-			for (final Player target : World.getAroundObservers(this))
+			for(final Player target : World.getAroundObservers(this))
 			{
-				if (!isInvisible(target))
+				if(!isInvisible(target))
 				{
 					target.sendPacket(msg);
 				}
@@ -592,13 +597,13 @@ public abstract class Playable extends Creature
 	{
 		getListeners().onRevive();
 
-		if (!isTeleporting())
+		if(!isTeleporting())
 		{
 			setPendingRevive(false);
 			setNonAggroTime(System.currentTimeMillis() + Config.NONAGGRO_TIME_ONTELEPORT);
 			setNonPvpTime(System.currentTimeMillis() + Config.NONPVP_TIME_ONTELEPORT);
 
-			if (isSalvation() || (isPlayer() && getPlayer().isInFightClub()))
+			if(isSalvation() || (isPlayer() && getPlayer().isInFightClub()))
 			{
 				getAbnormalList().stop(AbnormalType.RESURRECTION_SPECIAL);
 				setCurrentHp(getMaxHp(), true);
@@ -609,12 +614,12 @@ public abstract class Playable extends Creature
 			{
 				setCurrentHp(Math.max(1, getMaxHp() * Config.RESPAWN_RESTORE_HP), true);
 
-				if (Config.RESPAWN_RESTORE_MP >= 0)
+				if(Config.RESPAWN_RESTORE_MP >= 0)
 				{
 					setCurrentMp(getMaxMp() * Config.RESPAWN_RESTORE_MP);
 				}
 
-				if (isPlayer() && Config.RESPAWN_RESTORE_CP >= 0)
+				if(isPlayer() && Config.RESPAWN_RESTORE_CP >= 0)
 				{
 					setCurrentCp(getMaxCp() * Config.RESPAWN_RESTORE_CP);
 				}
@@ -631,12 +636,10 @@ public abstract class Playable extends Creature
 	public abstract void doPickupItem(GameObject object);
 
 	public void sitDown(ChairInstance chair)
-	{
-	}
+	{}
 
 	public void standUp()
-	{
-	}
+	{}
 
 	private long _nonAggroTime;
 
@@ -690,9 +693,9 @@ public abstract class Playable extends Creature
 	public boolean isSharedGroupDisabled(int groupId)
 	{
 		final TimeStamp sts = getSharedGroupReuse(groupId);
-		if (sts == null)
+		if(sts == null)
 			return false;
-		if (sts.hasNotPassed())
+		if(sts.hasNotPassed())
 			return true;
 		_sharedGroupReuses.remove(groupId);
 		return false;
@@ -717,12 +720,10 @@ public abstract class Playable extends Creature
 	{
 		TimeStamp sts = getSharedGroupReuse(groupId);
 		if(sts != null && sts.hasNotPassed())
-		{
-			return (int) sts.getReuseCurrent();
-		}
+		{ return (int) sts.getReuseCurrent(); }
 		return 0;
 	}
-	
+
 	public boolean useItem(ItemInstance item, boolean ctrl, boolean sendMsg)
 	{
 		return false;
@@ -778,7 +779,7 @@ public abstract class Playable extends Creature
 	@Override
 	public PlayableBaseStats getBaseStats()
 	{
-		if (_baseStats == null)
+		if(_baseStats == null)
 		{
 			_baseStats = new PlayableBaseStats(this);
 		}
@@ -788,7 +789,7 @@ public abstract class Playable extends Creature
 	@Override
 	public PlayableFlags getFlags()
 	{
-		if (_statuses == null)
+		if(_statuses == null)
 		{
 			_statuses = new PlayableFlags(this);
 		}
@@ -800,60 +801,59 @@ public abstract class Playable extends Creature
 	public long getRelation(Player target)
 	{
 		final Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.getRelation(target);
 		return 0;
 	}
 
 	public int getCurrentAp()
 	{
-		return 0; 
+		return 0;
 	}
 
 	public int getMaxAp()
 	{
-		return 0;  
+		return 0;
 	}
 
 	public int getCurrentLp()
 	{
-		return 0;  
+		return 0;
 	}
 
 	public int getMaxLp()
 	{
-		return 0;  
+		return 0;
 	}
 
 	public int getCurrentWp()
 	{
-		return 0; 
+		return 0;
 	}
 
 	public int getMaxWp()
 	{
 		return 0;
 	}
-	
 
 	public void addExOptionData(int id, int level)
-	{  
+	{
 		//addExOptionData(ExOptionDataHolder.getInstance().getExOptionData(id, level));
 	}
-	
-	public ExOptionDataTemplate addExOptionData(ExOptionDataTemplate optionData) 
+
+	public ExOptionDataTemplate addExOptionData(ExOptionDataTemplate optionData)
 	{
-		if (optionData == null) 
+		if(optionData == null)
 			return null;
 
 		int id = optionData.getId();
 		int level = optionData.getLevel();
 
 		ExOptionDataTemplate oldOptionData = _exOptions.get(id);
-		if (oldOptionData != null && oldOptionData.getLevel() >= level) 
+		if(oldOptionData != null && oldOptionData.getLevel() >= level)
 			return oldOptionData;
 
-		if (oldOptionData != null) 
+		if(oldOptionData != null)
 			removeExOptionData(oldOptionData);
 
 		_exOptions.put(id, optionData);
@@ -864,13 +864,13 @@ public abstract class Playable extends Creature
 		return oldOptionData;
 	}
 
-	private void removeExOptionData(ExOptionDataTemplate optionData) 
+	private void removeExOptionData(ExOptionDataTemplate optionData)
 	{
 		getStat().removeFuncsByOwner(optionData);
 		removeTriggers(optionData);
 	}
 
-	public void cleanExOptionData() 
+	public void cleanExOptionData()
 	{
 		for(ExOptionDataTemplate entry : _exOptions.valueCollection())
 		{

@@ -21,7 +21,7 @@ public class ExChangePostState implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_receivedBoard ? 1 : 0);
 		packetWriter.writeD(_mails.length);
-		for (Mail mail : _mails)
+		for(Mail mail : _mails)
 		{
 			packetWriter.writeD(mail.getMessageId()); // postId
 			packetWriter.writeD(_changeId); // state

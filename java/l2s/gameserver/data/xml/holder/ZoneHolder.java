@@ -43,9 +43,9 @@ public class ZoneHolder extends AbstractHolder
 		String _zoneName = "";
 		int index = Rnd.get(1, getZones().size() - 1);
 		int inx = 0;
-		for (String tmp : getZones().keySet())
+		for(String tmp : getZones().keySet())
 		{
-			if (index == inx)
+			if(index == inx)
 			{
 				_zoneName = tmp;
 				break;
@@ -54,7 +54,7 @@ public class ZoneHolder extends AbstractHolder
 		}
 
 		Zone zone = ReflectionUtils.getZone(_zoneName);
-		if (zone == null)
+		if(zone == null)
 		{
 			System.out.println("null zone randomized");
 			return getRandomZone();

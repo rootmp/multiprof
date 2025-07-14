@@ -3,12 +3,12 @@ package l2s.gameserver.network.l2.s2c.timerestrictfield;
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.TimeRestrictFieldHolder;
 import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
 
 /**
@@ -30,9 +30,9 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_fields.size());
 
-		if (_fields.size() > 0)
+		if(_fields.size() > 0)
 		{
-			for (int id : _fields.keySet())
+			for(int id : _fields.keySet())
 			{
 				final TimeRestrictFieldInfo field = _fields.get(id);
 
@@ -45,7 +45,7 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				packetWriter.writeD(field.getMaxLevel());
 
 				int reflectionId = 0;
-				switch (id)
+				switch(id)
 				{
 					case 1:
 					{
@@ -75,7 +75,7 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				}
 
 				int remainTime = 0;
-				if ((_player.getReflection().getId() <= -1000) && (_player.getReflection().getId() == reflectionId))
+				if((_player.getReflection().getId() <= -1000) && (_player.getReflection().getId() == reflectionId))
 				{
 					remainTime = _player.getTimeRestrictFieldRemainTime();
 				}
@@ -83,7 +83,8 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				{
 					remainTime = _player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + reflectionId, field.getRemainTimeBase());
 				}
-				int remainTimeRefill = _player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + reflectionId + "_refill", field.getRemainTimeMax() - field.getRemainTimeBase());
+				int remainTimeRefill = _player.getVarInt(PlayerVariables.RESTRICT_FIELD_TIMELEFT + "_" + reflectionId + "_refill", field.getRemainTimeMax()
+						- field.getRemainTimeBase());
 
 				boolean used = _player.getVarBoolean(PlayerVariables.RESTRICT_FIELD_USED, false);
 
@@ -92,7 +93,8 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				packetWriter.writeD(field.getRemainTimeMax());
 				packetWriter.writeD(remainTimeRefill);
 				packetWriter.writeD(field.getRemainTimeMax() - field.getRemainTimeBase());
-				if (((id == 18) && !ServerVariables.getBool("frost_lord_castle_open", false)) || ((id == 12) && !ServerVariables.getBool("antharas_lair_open", false)))
+				if(((id == 18) && !ServerVariables.getBool("frost_lord_castle_open", false))
+						|| ((id == 12) && !ServerVariables.getBool("antharas_lair_open", false)))
 				{
 					packetWriter.writeC(0);
 				}
@@ -100,7 +102,7 @@ public class ExTimeRestrictFieldList implements IClientOutgoingPacket
 				{
 					packetWriter.writeC(1); // is field active
 				}
-				if (id > 100)
+				if(id > 100)
 				{
 					packetWriter.writeC(used ? 1 : 0);
 				}

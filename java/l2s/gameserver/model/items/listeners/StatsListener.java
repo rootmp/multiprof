@@ -12,7 +12,7 @@ public final class StatsListener implements OnEquipListener
 	public int onEquip(int slot, ItemInstance item, Playable actor)
 	{
 		Func[] funcs = item.getStatFuncs();
-		if (funcs.length > 0)
+		if(funcs.length > 0)
 		{
 			actor.getStat().addFuncs(funcs);
 			return Inventory.UPDATE_STATS_FLAG;
@@ -23,7 +23,7 @@ public final class StatsListener implements OnEquipListener
 	@Override
 	public int onUnequip(int slot, ItemInstance item, Playable actor)
 	{
-		if (item.getStatFuncs().length > 0)
+		if(item.getStatFuncs().length > 0)
 		{
 			actor.getStat().removeFuncsByOwner(item);
 			return Inventory.UPDATE_STATS_FLAG;

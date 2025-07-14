@@ -54,11 +54,11 @@ public class PledgeHuntingProgress implements JdbcEntity
 	@Override
 	public void update()
 	{
-		if (!getJdbcState().isUpdatable())
+		if(!getJdbcState().isUpdatable())
 			return;
 
 		int clanId = _clan.getClanId();
-		if (clanId == 0)
+		if(clanId == 0)
 		{
 			_log.warn("HuntingProgress#update() with empty ClanId");
 			Thread.dumpStack();
@@ -77,7 +77,7 @@ public class PledgeHuntingProgress implements JdbcEntity
 
 			setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("HuntingProgress#update(): ", e);
 		}

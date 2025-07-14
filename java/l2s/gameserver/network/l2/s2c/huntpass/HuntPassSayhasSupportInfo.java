@@ -15,7 +15,8 @@ public class HuntPassSayhasSupportInfo implements IClientOutgoingPacket
 	{
 		_huntPass = player.getHuntPass();
 		_sayhaToggle = _huntPass.toggleSayha();
-		_timeUsed = _huntPass.getUsedSayhaTime() + (int) (_huntPass.getToggleStartTime() > 0 ? (System.currentTimeMillis() / 1000) - _huntPass.getToggleStartTime() : 0);
+		_timeUsed = _huntPass.getUsedSayhaTime()
+				+ (int) (_huntPass.getToggleStartTime() > 0 ? (System.currentTimeMillis() / 1000) - _huntPass.getToggleStartTime() : 0);
 	}
 
 	@Override

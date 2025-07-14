@@ -37,7 +37,9 @@ public class NetworkManager
 				//.option(ChannelOption.AUTO_CLOSE, false)
 				.option(ChannelOption.SO_BACKLOG, 1024)
 				//.option(ChannelOption.ALLOW_HALF_CLOSURE, true)
-				.childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT).childOption(ChannelOption.SO_SNDBUF, 1024 * 1024).childOption(ChannelOption.SO_RCVBUF, 1024 * 1024).childOption(ChannelOption.SO_LINGER, 1_000).childOption(ChannelOption.AUTO_CLOSE, false);
+				.childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT).childOption(ChannelOption.SO_SNDBUF, 1024
+						* 1024).childOption(ChannelOption.SO_RCVBUF, 1024
+								* 1024).childOption(ChannelOption.SO_LINGER, 1_000).childOption(ChannelOption.AUTO_CLOSE, false);
 	}
 
 	public Collection<ChannelFuture> getChannelFuture()

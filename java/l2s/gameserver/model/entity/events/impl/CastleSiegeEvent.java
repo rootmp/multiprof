@@ -70,11 +70,11 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		@Override
 		public void onPlayerEnter(Player player)
 		{
-			if (isInPrepare() || isInProgress())
+			if(isInPrepare() || isInProgress())
 			{
 				player.sendPacket(new ExMercenaryCastlewarCastleSiegeHudInfo(CastleSiegeEvent.this));
 				CastleSiegeMercenaryObject mercenaryObject = getMercenary(player.getObjectId());
-				if (mercenaryObject != null)
+				if(mercenaryObject != null)
 					player.setMercenaryId(mercenaryObject.getMercenaryId());
 			}
 		}
@@ -130,7 +130,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 		addObjects(BOUGHT_ZONES, CastleDamageZoneDAO.getInstance().load(getResidence()));
 
-		for (DoorObject doorObject : doorObjects)
+		for(DoorObject doorObject : doorObjects)
 		{
 			doorObject.setUpgradeValue(this, CastleDoorUpgradeDAO.getInstance().load(doorObject.getId()));
 			doorObject.getDoor().addListener(_doorDeathListener);
@@ -153,10 +153,10 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		getResidence().changeOwner(newOwnerClan);
 
 		// если есть овнер в резиденции, делаем его аттакером
-		if (oldOwnerClan != null)
+		if(oldOwnerClan != null)
 		{
 			SiegeClanObject ownerSiegeClan = getSiegeClan(DEFENDERS, oldOwnerClan);
-			if (ownerSiegeClan != null)
+			if(ownerSiegeClan != null)
 			{
 				removeObject(DEFENDERS, ownerSiegeClan);
 
@@ -168,7 +168,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		{
 			// Если атакуется замок, принадлежащий NPC, и только 1 атакующий - закончить
 			// осаду
-			if (getObjects(ATTACKERS).size() == 1)
+			if(getObjects(ATTACKERS).size() == 1)
 			{
 				stopEvent(false);
 				return;
@@ -177,17 +177,17 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 			// Если атакуется замок, принадлежащий NPC, и все атакующие в одном альянсе -
 			// закончить осаду
 			int allianceObjectId = newOwnerClan.getAllyId();
-			if (allianceObjectId > 0)
+			if(allianceObjectId > 0)
 			{
 				List<SiegeClanObject> attackers = getObjects(ATTACKERS);
 				boolean sameAlliance = true;
-				for (SiegeClanObject sc : attackers)
+				for(SiegeClanObject sc : attackers)
 				{
-					if (sc != null && sc.getClan().getAllyId() != allianceObjectId)
+					if(sc != null && sc.getClan().getAllyId() != allianceObjectId)
 						sameAlliance = false;
 				}
 
-				if (sameAlliance)
+				if(sameAlliance)
 				{
 					stopEvent(false);
 					return;
@@ -204,7 +204,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 		// у нас защитник ток овнер
 		List<SiegeClanObject> defenders = removeObjects(DEFENDERS);
-		for (SiegeClanObject siegeClan : defenders)
+		for(SiegeClanObject siegeClan : defenders)
 			siegeClan.setType(ATTACKERS);
 
 		// новый овнер это защитник
@@ -214,18 +214,18 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		addObjects(ATTACKERS, defenders);
 
 		// При захвате замка, удаляем из списка участвующих на других осадах замков.
-		for (CastleSiegeEvent castleSiege : EventHolder.getInstance().getEvents(CastleSiegeEvent.class))
+		for(CastleSiegeEvent castleSiege : EventHolder.getInstance().getEvents(CastleSiegeEvent.class))
 		{
-			if (castleSiege == this)
+			if(castleSiege == this)
 				continue;
 
 			SiegeClanObject siegeClan = castleSiege.getSiegeClan(ATTACKERS, newOwnerClan);
-			if (siegeClan != null)
+			if(siegeClan != null)
 			{
 				siegeClan.deleteFlag();
 				castleSiege.removeObject(ATTACKERS, siegeClan);
 
-				for (Player player : newOwnerClan.getOnlineMembers())
+				for(Player player : newOwnerClan.getOnlineMembers())
 				{
 					player.removeEvent(castleSiege);
 					player.broadcastCharInfo();
@@ -233,12 +233,12 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 			}
 
 			siegeClan = castleSiege.getSiegeClan(DEFENDERS, newOwnerClan);
-			if (siegeClan != null)
+			if(siegeClan != null)
 			{
 				siegeClan.deleteFlag();
 				castleSiege.removeObject(DEFENDERS, siegeClan);
 
-				for (Player player : newOwnerClan.getOnlineMembers())
+				for(Player player : newOwnerClan.getOnlineMembers())
 				{
 					player.removeEvent(castleSiege);
 					player.broadcastCharInfo();
@@ -251,15 +251,15 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		teleportPlayers(FROM_RESIDENCE_TO_TOWN);
 
 		// ток при первом захвате обнуляем мерчант гвардов и убираем апгрейд дверей
-		if (!_firstStep)
+		if(!_firstStep)
 		{
 			_firstStep = true;
 
 			broadcastTo(SystemMsg.THE_TEMPORARY_ALLIANCE_OF_THE_CASTLE_ATTACKER_TEAM_HAS_BEEN_DISSOLVED, ATTACKERS, DEFENDERS);
 
-			if (_oldOwner != null)
+			if(_oldOwner != null)
 			{
-				if (containsObjects(HIRED_GUARDS))
+				if(containsObjects(HIRED_GUARDS))
 				{
 					spawnAction(HIRED_GUARDS, false);
 					removeObjects(HIRED_GUARDS);
@@ -273,7 +273,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 				spawnAction(GUARDS, false);
 
 			List<DoorObject> doorObjects = getObjects(DOORS);
-			for (DoorObject doorObject : doorObjects)
+			for(DoorObject doorObject : doorObjects)
 			{
 				doorObject.setWeak(true);
 				doorObject.setUpgradeValue(this, 0);
@@ -283,7 +283,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		}
 
 		spawnAction(DOORS, true);
-		if (getId() == 3 || getId() == 7)
+		if(getId() == 3 || getId() == 7)
 		{ // Giran, Goddard
 			spawnAction(ARTEFACT, false);
 			spawnAction(RELIC, true);
@@ -293,22 +293,20 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 	private void startPrepare()
 	{
-		if (isInProgress())
+		if(isInProgress())
 			return;
 
-		if (isInPrepare())
+		if(isInPrepare())
 			return;
 
-		if (!canStartSiege())
-		{
-			return;
-		}
+		if(!canStartSiege())
+		{ return; }
 		addState(PREPARE_STATE);
 		broadcastToWorld(new ExMercenaryCastlewarCastleSiegeHudInfo(this));
 		CharListenerList.addGlobal(globalEventListeners);
 
 		Clan owner = getResidence().getOwner();
-		if (owner != null && getSiegeClan(DEFENDERS, owner) == null)
+		if(owner != null && getSiegeClan(DEFENDERS, owner) == null)
 		{
 			addObject(DEFENDERS, newSiegeClan(DEFENDERS, owner.getClanId(), 0, System.currentTimeMillis()));
 		}
@@ -316,7 +314,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 	private void stopPrepare()
 	{
-		if (!isInPrepare())
+		if(!isInPrepare())
 			return;
 
 		removeState(PREPARE_STATE);
@@ -327,18 +325,18 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public void startEvent()
 	{
-		if (isInProgress())
+		if(isInProgress())
 			return;
 
 		removeState(PREPARE_STATE);
 
-		if (!canStartSiege())
+		if(!canStartSiege())
 			return;
 
 		List<SiegeClanObject> attackers = getObjects(ATTACKERS);
-		if (attackers.isEmpty())
+		if(attackers.isEmpty())
 		{
-			if (getResidence().getOwner() == null)
+			if(getResidence().getOwner() == null)
 				broadcastToWorld(new SystemMessagePacket(SystemMsg.THE_SIEGE_OF_S1_HAS_BEEN_CANCELED_DUE_TO_LACK_OF_INTEREST).addResidenceName(getResidence()));
 			else
 			{
@@ -358,11 +356,11 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		CharListenerList.addGlobal(globalEventListeners);
 
 		_oldOwner = getResidence().getOwner();
-		if (_oldOwner != null)
+		if(_oldOwner != null)
 		{
-			if (getResidence().getSpawnMerchantTickets().size() > 0)
+			if(getResidence().getSpawnMerchantTickets().size() > 0)
 			{
-				for (ItemInstance item : getResidence().getSpawnMerchantTickets())
+				for(ItemInstance item : getResidence().getSpawnMerchantTickets())
 				{
 					MerchantGuard guard = getResidence().getMerchantGuard(item.getItemId());
 
@@ -373,7 +371,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 				CastleHiredGuardDAO.getInstance().delete(getResidence());
 
-				if (containsObjects(HIRED_GUARDS))
+				if(containsObjects(HIRED_GUARDS))
 					spawnAction(HIRED_GUARDS, true);
 			}
 		}
@@ -388,7 +386,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 		super.startEvent();
 
-		if (_oldOwner == null)
+		if(_oldOwner == null)
 			initControlTowers();
 		else
 			damageZoneAction(true);
@@ -402,7 +400,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public void stopEvent(boolean force)
 	{
-		if (!isInProgress())
+		if(!isInProgress())
 		{
 			stopPrepare();
 			return;
@@ -410,7 +408,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 		CharListenerList.removeGlobal(globalEventListeners);
 
-		if (!isInProgress())
+		if(!isInProgress())
 		{
 			removeMercenaries(false);
 			removeObjects(ATTACKERS);
@@ -421,13 +419,13 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		else
 		{
 			List<DoorObject> doorObjects = getObjects(DOORS);
-			for (DoorObject doorObject : doorObjects)
+			for(DoorObject doorObject : doorObjects)
 				doorObject.setWeak(false);
 
-			for (int objectId : _visitedParticipants.toArray())
+			for(int objectId : _visitedParticipants.toArray())
 			{
 				Player player = GameObjectsStorage.getPlayer(objectId);
-				if (player != null)
+				if(player != null)
 					player.getListeners().onParticipateInCastleSiege(this);
 			}
 
@@ -438,7 +436,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 			removeMercenaries(true);
 
 			List<SiegeClanObject> attackers = removeObjects(ATTACKERS);
-			for (SiegeClanObject siegeClan : attackers)
+			for(SiegeClanObject siegeClan : attackers)
 				siegeClan.deleteFlag();
 
 			broadcastToWorld(new SystemMessagePacket(SystemMsg.THE_SIEGE_OF_S1_IS_FINISHED).addResidenceName(getResidence()));
@@ -448,9 +446,9 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 			removeObjects(DEFENDERS_REFUSED);
 
 			Clan ownerClan = getResidence().getOwner();
-			if (ownerClan != null)
+			if(ownerClan != null)
 			{
-				if (_oldOwner == ownerClan)
+				if(_oldOwner == ownerClan)
 				{
 					getResidence().getOwner().setCastleDefendCount(getResidence().getOwner().getCastleDefendCount() + 1);
 					getResidence().getOwner().updateClanInDB();
@@ -463,37 +461,37 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 					ownerClan.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.SINCE_YOUR_CLAN_EMERGED_VICTORIOUS_FROM_THE_SIEGE_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLANS_REPUTATION_SCORE).addInteger(ownerClan.incReputation(3000, false, toString())));
 
-					if (_oldOwner != null)
+					if(_oldOwner != null)
 						_oldOwner.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.YOUR_CLAN_HAS_FAILED_TO_DEFEND_THE_CASTLE_S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_YOU_CLAN_REPUTATION_SCORE_AND_ADDED_TO_YOUR_OPPONENTS).addInteger(-_oldOwner.incReputation(-3000, false, toString())));
 
-					for (UnitMember member : ownerClan)
+					for(UnitMember member : ownerClan)
 					{
 						Player player = member.getPlayer();
-						if (player != null)
+						if(player != null)
 						{
 							player.sendPacket(PlaySoundPacket.SIEGE_VICTORY);
-							if (player.isOnline() && player.isHero())
+							if(player.isOnline() && player.isHero())
 								Hero.getInstance().addHeroDiary(player.getObjectId(), HeroDiary.ACTION_CASTLE_TAKEN, getResidence().getId());
 						}
 					}
 				}
 
-				for (Castle castle : ResidenceHolder.getInstance().getResidenceList(Castle.class))
+				for(Castle castle : ResidenceHolder.getInstance().getResidenceList(Castle.class))
 				{
-					if (castle == getResidence())
+					if(castle == getResidence())
 						continue;
 
 					SiegeEvent<?, ?> siegeEvent = castle.getSiegeEvent();
-					if (siegeEvent == null)
+					if(siegeEvent == null)
 						continue;
 
 					SiegeClanObject siegeClan = siegeEvent.getSiegeClan(ATTACKERS, ownerClan);
-					if (siegeClan == null)
+					if(siegeClan == null)
 						siegeClan = siegeEvent.getSiegeClan(DEFENDERS, ownerClan);
-					if (siegeClan == null)
+					if(siegeClan == null)
 						siegeClan = siegeEvent.getSiegeClan(DEFENDERS_WAITING, ownerClan);
 
-					if (siegeClan != null)
+					if(siegeClan != null)
 					{
 						siegeEvent.getObjects(siegeClan.getType()).remove(siegeClan);
 
@@ -533,9 +531,9 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 			despawnSiegeSummons();
 
-			if (_oldOwner != null)
+			if(_oldOwner != null)
 			{
-				if (containsObjects(HIRED_GUARDS))
+				if(containsObjects(HIRED_GUARDS))
 				{
 					spawnAction(HIRED_GUARDS, false);
 					removeObjects(HIRED_GUARDS);
@@ -557,15 +555,15 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		clanObjects.addAll(getObjects(ATTACKERS));
 		clanObjects.addAll(getObjects(DEFENDERS));
 
-		for (CastleSiegeClanObject clanObject : clanObjects)
+		for(CastleSiegeClanObject clanObject : clanObjects)
 		{
 			int type = clanObject.getType().equals(ATTACKERS) ? 1 : (clanObject.getType().equals(DEFENDERS) ? 2 : 0);
-			for (CastleSiegeMercenaryObject mercenaryObject : clanObject.getMercenaries())
+			for(CastleSiegeMercenaryObject mercenaryObject : clanObject.getMercenaries())
 			{
 				Player player = mercenaryObject.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
-					if (giveRewards)
+					if(giveRewards)
 					{
 						/*
 						 * TODO: Реализовать награду наемникам. msg_begin id=9001 UNK_0=1 message=[Я
@@ -635,18 +633,18 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	{
 		clearActions();
 
-		if (onInit)
+		if(onInit)
 		{
 			final long currentTimeMillis = System.currentTimeMillis();
 			final Calendar startSiegeDate = getResidence().getSiegeDate();
-			if (startSiegeDate.getTimeInMillis() > currentTimeMillis)
+			if(startSiegeDate.getTimeInMillis() > currentTimeMillis)
 				registerActions();
-			else if (startSiegeDate.getTimeInMillis() == 0 || startSiegeDate.getTimeInMillis() <= currentTimeMillis)
+			else if(startSiegeDate.getTimeInMillis() == 0 || startSiegeDate.getTimeInMillis() <= currentTimeMillis)
 				setNextSiegeTime();
 		}
 		else
 		{
-			if (getResidence().getOwner() != null)
+			if(getResidence().getOwner() != null)
 			{
 				getResidence().getSiegeDate().setTimeInMillis(0);
 				getResidence().setJdbcState(JdbcEntityState.UPDATED);
@@ -664,10 +662,9 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		addObjects(DEFENDERS_WAITING, SiegeClanDAO.getInstance().load(getResidence(), DEFENDERS_WAITING));
 		addObjects(DEFENDERS_REFUSED, SiegeClanDAO.getInstance().load(getResidence(), DEFENDERS_REFUSED));
 
-		for (String type : new String[]
-		{
-			ATTACKERS,
-			DEFENDERS
+		for(String type : new String[] {
+				ATTACKERS,
+				DEFENDERS
 		})
 		{
 			List<CastleSiegeClanObject> siegeClanObjects = getObjects(type);
@@ -678,16 +675,16 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public void announce(int id, String value, int time)
 	{
-		if (id == 1)
+		if(id == 1)
 		{
 			SystemMessagePacket msg;
 			int seconds = Integer.parseInt(value);
 			int min = seconds / 60;
 			int hour = min / 60;
 
-			if (hour > 0)
+			if(hour > 0)
 				msg = new SystemMessagePacket(SystemMsg.S1_HOURS_UNTIL_CASTLE_SIEGE_CONCLUSION).addInteger(hour);
-			else if (min > 0)
+			else if(min > 0)
 				msg = new SystemMessagePacket(SystemMsg.S1_MINUTES_UNTIL_CASTLE_SIEGE_CONCLUSION).addInteger(min);
 			else
 				msg = new SystemMessagePacket(SystemMsg.THIS_CASTLE_SIEGE_WILL_END_IN_S1_SECONDS).addInteger(seconds);
@@ -703,7 +700,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	{
 		List<SpawnExObject> objects = getObjects(GUARDS);
 		List<Spawner> spawns = new ArrayList<Spawner>();
-		for (SpawnExObject o : objects)
+		for(SpawnExObject o : objects)
 			spawns.addAll(o.getSpawns());
 
 		List<SiegeToggleNpcObject> ct = getObjects(CONTROL_TOWERS);
@@ -711,19 +708,19 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		SiegeToggleNpcInstance closestCt;
 		double distance, distanceClosest;
 
-		for (Spawner spawn : spawns)
+		for(Spawner spawn : spawns)
 		{
 			Location spawnLoc = spawn.getRandomSpawnRange().getRandomLoc(ReflectionManager.MAIN.getGeoIndex(), false);
 
 			closestCt = null;
 			distanceClosest = 0;
 
-			for (SiegeToggleNpcObject c : ct)
+			for(SiegeToggleNpcObject c : ct)
 			{
 				SiegeToggleNpcInstance npcTower = c.getToggleNpc();
 				distance = npcTower.getDistance(spawnLoc);
 
-				if (closestCt == null || distance < distanceClosest)
+				if(closestCt == null || distance < distanceClosest)
 				{
 					closestCt = npcTower;
 					distanceClosest = distance;
@@ -739,7 +736,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	// ========================================================================================================================================================================
 	private void damageZoneAction(boolean active)
 	{
-		if (containsObjects(BOUGHT_ZONES))
+		if(containsObjects(BOUGHT_ZONES))
 			zoneAction(BOUGHT_ZONES, active);
 	}
 
@@ -752,7 +749,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	private void setNextSiegeTime()
 	{
 		long startTime = generateSiegeDateTime(_startTimePattern);
-		if (startTime == 0)
+		if(startTime == 0)
 			return;
 
 		broadcastToWorld(new SystemMessagePacket(SystemMsg.S1_HAS_ANNOUNCED_THE_NEXT_CASTLE_SIEGE_TIME).addResidenceName(getResidence()));
@@ -778,7 +775,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		boolean targetInZone = checkIfInZone(target);
 		// если оба вне зоны - рес разрешен
 		// если таргет вне осадный зоны - рес разрешен
-		if (!targetInZone)
+		if(!targetInZone)
 			return true;
 
 		Player resurectPlayer = active.getPlayer();
@@ -786,11 +783,11 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 		// если оба незареганы - невозможно ресать
 		// если таргет незареган - невозможно ресать
-		if (!resurectPlayer.containsEvent(this) || !targetPlayer.containsEvent(this))
+		if(!resurectPlayer.containsEvent(this) || !targetPlayer.containsEvent(this))
 		{
-			if (!quiet)
+			if(!quiet)
 			{
-				if (force)
+				if(force)
 					targetPlayer.sendPacket(SystemMsg.IT_IS_NOT_POSSIBLE_TO_RESURRECT_IN_BATTLEFIELDS_WHERE_A_SIEGE_WAR_IS_TAKING_PLACE);
 				active.sendPacket(force ? SystemMsg.IT_IS_NOT_POSSIBLE_TO_RESURRECT_IN_BATTLEFIELDS_WHERE_A_SIEGE_WAR_IS_TAKING_PLACE : SystemMsg.INVALID_TARGET);
 			}
@@ -798,17 +795,17 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		}
 
 		SiegeClanObject targetSiegeClan = getSiegeClan(ATTACKERS, targetPlayer);
-		if (targetSiegeClan == null)
+		if(targetSiegeClan == null)
 			targetSiegeClan = getSiegeClan(DEFENDERS, targetPlayer);
 
-		if (targetSiegeClan == null || targetSiegeClan.getType() == ATTACKERS)
+		if(targetSiegeClan == null || targetSiegeClan.getType() == ATTACKERS)
 		{
 			// если нету флага - рес запрещен
-			if (targetSiegeClan == null || targetSiegeClan.getFlag() == null)
+			if(targetSiegeClan == null || targetSiegeClan.getFlag() == null)
 			{
-				if (!quiet)
+				if(!quiet)
 				{
-					if (force)
+					if(force)
 						targetPlayer.sendPacket(SystemMsg.IF_A_BASE_CAMP_DOES_NOT_EXIST_RESURRECTION_IS_NOT_POSSIBLE);
 					active.sendPacket(force ? SystemMsg.IF_A_BASE_CAMP_DOES_NOT_EXIST_RESURRECTION_IS_NOT_POSSIBLE : SystemMsg.INVALID_TARGET);
 				}
@@ -820,16 +817,16 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 			List<SiegeToggleNpcObject> towers = getObjects(CONTROL_TOWERS);
 
 			boolean canRes = false;
-			for (SiegeToggleNpcObject t : towers)
+			for(SiegeToggleNpcObject t : towers)
 			{
-				if (t.isAlive())
+				if(t.isAlive())
 				{
 					canRes = true;
 					break;
 				}
 			}
 
-			if (!canRes)
+			if(!canRes)
 			{
 				targetPlayer.sendPacket(SystemMsg.THE_GUARDIAN_TOWER_HAS_BEEN_DESTROYED_AND_RESURRECTION_IS_NOT_POSSIBLE);
 				active.sendPacket(SystemMsg.THE_GUARDIAN_TOWER_HAS_BEEN_DESTROYED_AND_RESURRECTION_IS_NOT_POSSIBLE);
@@ -848,9 +845,9 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public boolean ifVar(String name)
 	{
-		if (name.equals(LIGHT_SIDE))
+		if(name.equals(LIGHT_SIDE))
 			return getResidence().getResidenceSide() == ResidenceSide.LIGHT;
-		if (name.equals(DARK_SIDE))
+		if(name.equals(DARK_SIDE))
 			return getResidence().getResidenceSide() == ResidenceSide.DARK;
 
 		return super.ifVar(name);
@@ -863,39 +860,39 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 	public boolean canRegisterOnSiege(Player player, Clan clan, boolean attacker)
 	{
-		if (attacker)
+		if(attacker)
 		{
-			if (getResidence().getOwnerId() == clan.getClanId())
+			if(getResidence().getOwnerId() == clan.getClanId())
 			{
 				player.sendPacket(SystemMsg.CASTLE_OWNING_CLANS_ARE_AUTOMATICALLY_REGISTERED_ON_THE_DEFENDING_SIDE);
 				return false;
 			}
 
 			Alliance alliance = clan.getAlliance();
-			if (alliance != null)
+			if(alliance != null)
 			{
-				for (Clan c : alliance.getMembers())
+				for(Clan c : alliance.getMembers())
 				{
-					if (c.getCastle() == getResidence().getId())
+					if(c.getCastle() == getResidence().getId())
 					{
 						player.sendPacket(SystemMsg.YOU_CANNOT_REGISTER_AS_AN_ATTACKER_BECAUSE_YOU_ARE_IN_AN_ALLIANCE_WITH_THE_CASTLE_OWNING_CLAN);
 						return false;
 					}
 				}
 			}
-			if (clan.getCastle() != 0)
+			if(clan.getCastle() != 0)
 			{
 				player.sendPacket(SystemMsg.A_CLAN_THAT_OWNS_A_CASTLE_CANNOT_PARTICIPATE_IN_ANOTHER_SIEGE);
 				return false;
 			}
 
-			if (getSiegeClan(ATTACKERS, clan) != null)
+			if(getSiegeClan(ATTACKERS, clan) != null)
 			{
 				player.sendPacket(SystemMsg.YOU_HAVE_ALREADY_REQUESTED_A_CASTLE_SIEGE);
 				return false;
 			}
 
-			if (getSiegeClan(DEFENDERS, clan) != null || getSiegeClan(DEFENDERS_WAITING, clan) != null || getSiegeClan(DEFENDERS_REFUSED, clan) != null)
+			if(getSiegeClan(DEFENDERS, clan) != null || getSiegeClan(DEFENDERS_WAITING, clan) != null || getSiegeClan(DEFENDERS_REFUSED, clan) != null)
 			{
 				player.sendPacket(SystemMsg.YOU_HAVE_ALREADY_REGISTERED_TO_THE_DEFENDER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST);
 				return false;
@@ -903,45 +900,45 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 		}
 		else
 		{
-			if (getResidence().getOwnerId() == 0)
+			if(getResidence().getOwnerId() == 0)
 			{
 				player.sendPacket(SystemMsg.NO_MORE_REGISTRATIONS_MAY_BE_ACCEPTED_FOR_THE_DEFENDER_SIDE);
 				return false;
 			}
 
-			if (getResidence().getOwnerId() == clan.getClanId())
+			if(getResidence().getOwnerId() == clan.getClanId())
 			{
 				player.sendPacket(SystemMsg.CASTLE_OWNING_CLANS_ARE_AUTOMATICALLY_REGISTERED_ON_THE_DEFENDING_SIDE);
 				return false;
 			}
 
-			if (clan.getCastle() != 0)
+			if(clan.getCastle() != 0)
 			{
 				player.sendPacket(SystemMsg.A_CLAN_THAT_OWNS_A_CASTLE_CANNOT_PARTICIPATE_IN_ANOTHER_SIEGE);
 				return false;
 			}
 
-			if (getSiegeClan(DEFENDERS, clan) != null || getSiegeClan(DEFENDERS_WAITING, clan) != null || getSiegeClan(DEFENDERS_REFUSED, clan) != null)
+			if(getSiegeClan(DEFENDERS, clan) != null || getSiegeClan(DEFENDERS_WAITING, clan) != null || getSiegeClan(DEFENDERS_REFUSED, clan) != null)
 			{
 				player.sendPacket(SystemMsg.YOU_HAVE_ALREADY_REQUESTED_A_CASTLE_SIEGE);
 				return false;
 			}
 
-			if (getSiegeClan(ATTACKERS, clan) != null)
+			if(getSiegeClan(ATTACKERS, clan) != null)
 			{
 				player.sendPacket(SystemMsg.YOU_ARE_ALREADY_REGISTERED_TO_THE_ATTACKER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST);
 				return false;
 			}
 		}
 
-		if (isMercenary(player.getObjectId()))
+		if(isMercenary(player.getObjectId()))
 		{
 			player.sendPacket(SystemMsg.YOU_CANT_REGISTER_FOR_ATTACKERS_OR_DEFENDERS_IN_THE_MERCENARY_MODE_);
 			return false;
 		}
 
 		IBroadcastPacket msg = checkSiegeClanLevel(clan);
-		if (msg != null)
+		if(msg != null)
 		{
 			player.sendPacket(msg);
 			return false;
@@ -952,7 +949,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 
 	public IBroadcastPacket checkSiegeClanLevel(Clan clan)
 	{
-		if (clan.getLevel() < SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
+		if(clan.getLevel() < SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
 			return SystemMsg.ONLY_CLANS_OF_LEVEL_5_OR_HIGHER_MAY_REGISTER_FOR_A_CASTLE_SIEGE;
 		return null;
 	}
@@ -970,9 +967,9 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public void action(String name, boolean start)
 	{
-		if (name.equalsIgnoreCase(PREPARE))
+		if(name.equalsIgnoreCase(PREPARE))
 		{
-			if (start)
+			if(start)
 			{
 				startPrepare();
 			}
@@ -990,21 +987,21 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	{
 		super.addOnTimeAction(time, action);
 
-		if (action instanceof StartStopAction)
+		if(action instanceof StartStopAction)
 		{
 			StartStopAction startStopAction = (StartStopAction) action;
-			if (!startStopAction.isStart() && startStopAction.getName().equalsIgnoreCase(EVENT))
+			if(!startStopAction.isStart() && startStopAction.getName().equalsIgnoreCase(EVENT))
 				siegeDuration = time;
 		}
 	}
 
 	private boolean canStartSiege()
 	{
-		for (CastleSiegeEvent siegeEvent : EventHolder.getInstance().getEvents(getClass()))
+		for(CastleSiegeEvent siegeEvent : EventHolder.getInstance().getEvents(getClass()))
 		{
-			if (siegeEvent != this && (siegeEvent.isInPrepare() || siegeEvent.isInProgress()))
+			if(siegeEvent != this && (siegeEvent.isInPrepare() || siegeEvent.isInProgress()))
 			{
-				if (TimeUnit.MILLISECONDS.toSeconds(siegeEvent.startTimeMillis()) != TimeUnit.MILLISECONDS.toSeconds(startTimeMillis()))
+				if(TimeUnit.MILLISECONDS.toSeconds(siegeEvent.startTimeMillis()) != TimeUnit.MILLISECONDS.toSeconds(startTimeMillis()))
 				{
 					warn("Cannot start two or more castle sieges in same time! Please change siege time for castle siege ID: " + getId());
 					return false;
@@ -1027,16 +1024,16 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	@Override
 	public void checkRestartLocs(Player player, Map<RestartType, Boolean> r)
 	{
-		if (!isParticipant(DEFENDERS, player))
+		if(!isParticipant(DEFENDERS, player))
 		{
-			if (getId() == 3)
+			if(getId() == 3)
 			{
-				if (TeleportListHolder.getInstance().getTeleportInfo(422) != null)
+				if(TeleportListHolder.getInstance().getTeleportInfo(422) != null)
 					r.put(RestartType.TO_FLAG, Boolean.TRUE);
 			}
-			else if (getId() == 7)
+			else if(getId() == 7)
 			{
-				if (TeleportListHolder.getInstance().getTeleportInfo(4227) != null)
+				if(TeleportListHolder.getInstance().getTeleportInfo(4227) != null)
 					r.put(RestartType.TO_FLAG, Boolean.TRUE);
 			}
 		}
@@ -1051,10 +1048,10 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	public CastleSiegeMercenaryObject getMercenary(String type, int objectId)
 	{
 		List<CastleSiegeClanObject> siegeClanObjects = getObjects(type);
-		for (CastleSiegeClanObject siegeClanObject : siegeClanObjects)
+		for(CastleSiegeClanObject siegeClanObject : siegeClanObjects)
 		{
 			CastleSiegeMercenaryObject mercenaryObject = siegeClanObject.getMercenary(objectId);
-			if (mercenaryObject != null)
+			if(mercenaryObject != null)
 				return mercenaryObject;
 		}
 		return null;
@@ -1063,7 +1060,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	public CastleSiegeMercenaryObject getMercenary(int objectId)
 	{
 		CastleSiegeMercenaryObject mercenaryObject = getMercenary(ATTACKERS, objectId);
-		if (mercenaryObject == null)
+		if(mercenaryObject == null)
 			mercenaryObject = getMercenary(DEFENDERS, objectId);
 		return mercenaryObject;
 	}
@@ -1089,7 +1086,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	public int getSiegeClanId(Player player)
 	{
 		CastleSiegeMercenaryObject mercenaryObject = getMercenary(player.getObjectId());
-		if (mercenaryObject != null)
+		if(mercenaryObject != null)
 			return mercenaryObject.getClanId();
 		return super.getSiegeClanId(player);
 	}
@@ -1098,7 +1095,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, CastleSiegeClanObject>
 	public Clan getVisibleClan(Player player, Player observer)
 	{
 		int clanId = getSiegeClanId(player);
-		if (clanId > 0)
+		if(clanId > 0)
 			return ClanTable.getInstance().getClan(clanId);
 		return null;
 	}

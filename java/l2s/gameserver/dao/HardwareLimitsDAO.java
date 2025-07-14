@@ -33,11 +33,11 @@ public class HardwareLimitsDAO
 
 	public int[] select(String hardware)
 	{
-		if (hardware == null || hardware.isEmpty())
+		if(hardware == null || hardware.isEmpty())
 			return new int[2];
 
 		int[] limits = _cache.get(hardware);
-		if (limits != null)
+		if(limits != null)
 			return limits;
 
 		limits = new int[2];
@@ -51,13 +51,13 @@ public class HardwareLimitsDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setString(1, hardware);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				limits[0] = rset.getInt("windows_limit");
 				limits[1] = rset.getInt("limit_expire");
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("HardwareLimitsDAO.select(String): " + e, e);
 		}
@@ -80,7 +80,7 @@ public class HardwareLimitsDAO
 			statement.setString(1, hardware);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("HardwareLimitsDAO.delete(String): " + e, e);
 		}
@@ -104,17 +104,16 @@ public class HardwareLimitsDAO
 			statement.setInt(3, expire);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("HardwareLimitsDAO.insert(String, int): " + e, e);
 		}
 		finally
 		{
 			DbUtils.closeQuietly(con, statement);
-			_cache.put(hardware, new int[]
-			{
-				limit,
-				expire
+			_cache.put(hardware, new int[] {
+					limit,
+					expire
 			});
 		}
 	}

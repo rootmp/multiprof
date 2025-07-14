@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
@@ -32,21 +33,21 @@ public class RequestPledgeWaitingApply implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.getClan() != null)
+		if(activeChar.getClan() != null)
 		{
 			activeChar.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_OR_SOMEONE_WITH_RANK_MANAGEMENT_AUTHORITY_MAY_REGISTER_THE_CLAN);
 			return;
 		}
 
 		ClanSearchPlayer csPlayer = new ClanSearchPlayer(activeChar.getObjectId(), activeChar.getName(), activeChar.getLevel(), activeChar.getBaseClassId(), _clanId, _searchType, _desc);
-		if (ClanSearchManager.getInstance().addPlayer(csPlayer))
+		if(ClanSearchManager.getInstance().addPlayer(csPlayer))
 			activeChar.sendPacket(ExPledgeRecruitApplyInfo.WAITING);
 		else
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_MAY_APPLY_FOR_ENTRY_AFTER_S1_MINUTES_DUE_TO_CANCELLING_YOUR_APPLICATION).addInteger(5)); // TODO[Bonux]:
-																																									// Fix
-																																									// me.
+		// Fix
+		// me.
 	}
 }

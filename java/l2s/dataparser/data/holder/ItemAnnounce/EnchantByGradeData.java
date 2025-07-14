@@ -5,12 +5,16 @@ import l2s.dataparser.data.annotations.value.IntValue;
 import l2s.dataparser.data.holder.itemdata.ItemData.ItemType;
 import l2s.gameserver.templates.item.ItemGrade;
 
-public class EnchantByGradeData 
+public class EnchantByGradeData
 {
-	@EnumValue(customRegex = "\\s*?=\\s*?([\\S*]+)", replaceChars = { '[', ']' })
-	public ItemGrade item_grade; 
-	@EnumValue(customRegexNoCache = "\\s*?=\\s*?([\\S*]+)", replaceChars = { '[', ']' })
+	@EnumValue(customRegex = "\\s*?=\\s*?([\\S*]+)", replaceChars = {
+			'[', ']'
+	})
+	public ItemGrade item_grade;
+	@EnumValue(customRegexNoCache = "\\s*?=\\s*?([\\S*]+)", replaceChars = {
+			'[', ']'
+	})
 	public ItemType item_type;
 	@IntValue
-	public int announce_level;	
+	public int announce_level;
 }

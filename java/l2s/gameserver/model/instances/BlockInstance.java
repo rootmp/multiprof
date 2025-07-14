@@ -35,8 +35,7 @@ public class BlockInstance extends NpcInstance
 
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... arg)
-	{
-	}
+	{}
 
 	@Override
 	public boolean isNameAbove()

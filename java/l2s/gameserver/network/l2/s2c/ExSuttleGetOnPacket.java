@@ -18,7 +18,7 @@ public class ExSuttleGetOnPacket implements IClientOutgoingPacket
 		_playerObjectId = cha.getObjectId();
 		_shuttleId = shuttle.getBoatId();
 		_loc = loc;
-		if (_loc == null)
+		if(_loc == null)
 		{
 			_loc = cha.getLoc();
 		}

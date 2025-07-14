@@ -35,7 +35,7 @@ public class i_death extends i_abstract_effect
 
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (!effector.isDead() && Rnd.get(100) < _chance)
+		if(!effector.isDead() && Rnd.get(100) < _chance)
 		{
 			effector.doDie(effector);
 		}

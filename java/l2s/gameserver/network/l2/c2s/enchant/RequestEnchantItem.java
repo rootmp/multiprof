@@ -54,12 +54,10 @@ public class RequestEnchantItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
-		if (player.isActionsDisabled())
+		if(player.isActionsDisabled())
 		{
 			player.setEnchantScroll(null);
 			player.setSupportItem(null);
@@ -67,7 +65,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			return;
 		}
 
-		if (player.isInTrade())
+		if(player.isInTrade())
 		{
 			player.setEnchantScroll(null);
 			player.setSupportItem(null);
@@ -75,7 +73,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			return;
 		}
 
-		if (System.currentTimeMillis() <= (player.getLastEnchantItemTime() + ENCHANT_DELAY))
+		if(System.currentTimeMillis() <= (player.getLastEnchantItemTime() + ENCHANT_DELAY))
 		{
 			player.setEnchantScroll(null);
 			player.setSupportItem(null);
@@ -83,7 +81,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			return;
 		}
 
-		if (player.isInStoreMode())
+		if(player.isInStoreMode())
 		{
 			player.setEnchantScroll(null);
 			player.setSupportItem(null);
@@ -102,25 +100,26 @@ public class RequestEnchantItem implements IClientIncomingPacket
 
 			ItemInstance catalyst = player.getSupportItem() == null ? null : inventory.getItemByObjectId(player.getSupportItem().getObjectId());
 			EnchantStone enchantStone = ItemFunctions.getEnchantStone(item, catalyst);
-			if (enchantStone == null)
+			if(enchantStone == null)
 			{
 				catalyst = null;
 			}
 
-			if ((item == null) || (scroll == null))
+			if((item == null) || (scroll == null))
 			{
 				player.sendActionFailed();
 				return;
 			}
 
 			final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scroll.getItemId());
-			if (enchantScroll == null)
+			if(enchantScroll == null)
 			{
 				player.sendActionFailed();
 				return;
 			}
 
-			if ((item.getEnchantLevel() < enchantScroll.getMinEnchant()) || ((enchantScroll.getMaxEnchant() != -1) && (item.getEnchantLevel() >= enchantScroll.getMaxEnchant())))
+			if((item.getEnchantLevel() < enchantScroll.getMinEnchant())
+					|| ((enchantScroll.getMaxEnchant() != -1) && (item.getEnchantLevel() >= enchantScroll.getMaxEnchant())))
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendPacket(SystemMsg.INAPPROPRIATE_ENCHANT_CONDITIONS);
@@ -128,9 +127,9 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				return;
 			}
 
-			if (enchantScroll.getItems().size() > 0)
+			if(enchantScroll.getItems().size() > 0)
 			{
-				if (!enchantScroll.getItems().contains(item.getItemId()))
+				if(!enchantScroll.getItems().contains(item.getItemId()))
 				{
 					player.sendPacket(EnchantResult.CANCEL);
 					player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -140,7 +139,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			}
 			else
 			{
-				if (!enchantScroll.containsGrade(item.getGrade()))
+				if(!enchantScroll.containsGrade(item.getGrade()))
 				{
 					player.sendPacket(EnchantResult.CANCEL);
 					player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -149,10 +148,10 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				}
 
 				final int itemType = item.getTemplate().getType2();
-				switch (enchantScroll.getType())
+				switch(enchantScroll.getType())
 				{
 					case ARMOR:
-						if ((itemType == ItemTemplate.TYPE2_WEAPON) || item.getTemplate().isHairAccessory())
+						if((itemType == ItemTemplate.TYPE2_WEAPON) || item.getTemplate().isHairAccessory())
 						{
 							player.sendPacket(EnchantResult.CANCEL);
 							player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -161,7 +160,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 						}
 						break;
 					case WEAPON:
-						if ((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || item.getTemplate().isHairAccessory())
+						if((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || item.getTemplate().isHairAccessory())
 						{
 							player.sendPacket(EnchantResult.CANCEL);
 							player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -170,7 +169,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 						}
 						break;
 					case HAIR_ACCESSORY:
-						if (!item.getTemplate().isHairAccessory())
+						if(!item.getTemplate().isHairAccessory())
 						{
 							player.sendPacket(EnchantResult.CANCEL);
 							player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
@@ -181,7 +180,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 				}
 			}
 
-			if (!enchantScroll.getItems().contains(item.getItemId()) && !item.canBeEnchanted())
+			if(!enchantScroll.getItems().contains(item.getItemId()) && !item.canBeEnchanted())
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendPacket(SystemMsg.INAPPROPRIATE_ENCHANT_CONDITIONS);
@@ -190,22 +189,23 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			}
 
 			final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId());
-			if (variation == null)
+			if(variation == null)
 			{
 				player.sendActionFailed();
-				_log.warn("RequestEnchantItem: Cannot find variation ID[" + enchantScroll.getVariationId() + "] for enchant scroll ID[" + enchantScroll.getItemId() + "]!");
+				_log.warn("RequestEnchantItem: Cannot find variation ID[" + enchantScroll.getVariationId() + "] for enchant scroll ID["
+						+ enchantScroll.getItemId() + "]!");
 				return;
 			}
 
 			int minEnchantSteep = enchantScroll.getMinEnchantStep();
 			int maxEnchantSteep = enchantScroll.getMaxEnchantStep();
-			if (enchantStone != null)
+			if(enchantStone != null)
 			{
 				minEnchantSteep = Math.max(minEnchantSteep, enchantStone.getMinEnchantStep());
 				maxEnchantSteep = Math.max(maxEnchantSteep, enchantStone.getMaxEnchantStep());
 			}
 
-			if (item.getEnchantLevel() >= enchantScroll.getEnchantStepLimit())
+			if(item.getEnchantLevel() >= enchantScroll.getEnchantStepLimit())
 			{
 				minEnchantSteep = 1;
 				maxEnchantSteep = 1;
@@ -213,7 +213,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 
 			int newEnchantLvl = item.getEnchantLevel() + Rnd.get(minEnchantSteep, maxEnchantSteep);
 			newEnchantLvl = Math.min(newEnchantLvl, enchantScroll.getMaxEnchant());
-			if (newEnchantLvl < item.getEnchantLevel()) // А вдруг?
+			if(newEnchantLvl < item.getEnchantLevel()) // А вдруг?
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendActionFailed();
@@ -221,14 +221,15 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			}
 
 			final EnchantLevel enchantLevel = variation.getLevel(item.getEnchantLevel() + 1);
-			if (enchantLevel == null)
+			if(enchantLevel == null)
 			{
 				player.sendActionFailed();
-				_log.warn("RequestEnchantItem: Cannot find variation ID[" + enchantScroll.getVariationId() + "] enchant level[" + (item.getEnchantLevel() + 1) + "] for enchant scroll ID[" + enchantScroll.getItemId() + "]!");
+				_log.warn("RequestEnchantItem: Cannot find variation ID[" + enchantScroll.getVariationId() + "] enchant level[" + (item.getEnchantLevel() + 1)
+						+ "] for enchant scroll ID[" + enchantScroll.getItemId() + "]!");
 				return;
 			}
 
-			if (!inventory.destroyItem(scroll, 1L) || ((catalyst != null) && !inventory.destroyItem(catalyst, 1L)))
+			if(!inventory.destroyItem(scroll, 1L) || ((catalyst != null) && !inventory.destroyItem(catalyst, 1L)))
 			{
 				player.sendPacket(EnchantResult.CANCEL);
 				player.sendActionFailed();
@@ -236,11 +237,11 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			}
 
 			final double baseChance;
-			if (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+			if(item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
 			{
 				baseChance = enchantLevel.getFullBodyChance();
 			}
-			else if (item.getTemplate().isMagicWeapon())
+			else if(item.getTemplate().isMagicWeapon())
 			{
 				baseChance = enchantLevel.getMagicWeaponChance();
 			}
@@ -251,7 +252,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 
 			double chance = baseChance;
 
-			if (enchantStone != null)
+			if(enchantStone != null)
 			{
 				chance += enchantStone.getChance();
 			}
@@ -259,14 +260,14 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			chance += player.getPremiumAccount().getEnchantChanceBonus();
 			chance += player.getVIP().getTemplate().getEnchantChanceBonus();
 
-			if (item.getGrade() != ItemGrade.NONE)
+			if(item.getGrade() != ItemGrade.NONE)
 			{
 				chance *= player.getEnchantChanceModifier();
 			}
 
 			chance = Math.min(100, chance);
 
-			if (Rnd.chance(chance))
+			if(Rnd.chance(chance))
 			{
 				item.setEnchantLevel(newEnchantLvl);
 				item.setJdbcState(JdbcEntityState.UPDATED);
@@ -277,7 +278,7 @@ public class RequestEnchantItem implements IClientIncomingPacket
 
 				player.sendPacket(new EnchantResult(0, 0, 0, item.getEnchantLevel(), item.getEnchantLevel()));
 
-				if (enchantLevel.haveSuccessVisualEffect())
+				if(enchantLevel.haveSuccessVisualEffect())
 				{
 					player.broadcastPacket(new SystemMessage(SystemMessage.C1_HAS_SUCCESSFULY_ENCHANTED_A__S2_S3).addName(player).addNumber(item.getEnchantLevel()).addItemName(item.getItemId()));
 					player.broadcastPacket(new MagicSkillUse(player, player, SUCCESS_VISUAL_EFF_ID, 1, 0, 500, 1500));
@@ -289,22 +290,22 @@ public class RequestEnchantItem implements IClientIncomingPacket
 			else
 			{
 				FailResultType resultType = enchantScroll.getResultType();
-				if ((enchantStone != null) && (enchantStone.getResultType().ordinal() > resultType.ordinal()))
+				if((enchantStone != null) && (enchantStone.getResultType().ordinal() > resultType.ordinal()))
 				{
 					resultType = enchantStone.getResultType();
 				}
 
-				switch (resultType)
+				switch(resultType)
 				{
 					case CRYSTALS:
-						if (item.isEquipped())
+						if(item.isEquipped())
 						{
 							player.sendDisarmMessage(item);
 						}
 
 						Log.LogItem(player, Log.EnchantFail, item);
 
-						if (!inventory.destroyItem(item, 1L))
+						if(!inventory.destroyItem(item, 1L))
 						{
 							player.sendActionFailed();
 							return;
@@ -317,11 +318,11 @@ public class RequestEnchantItem implements IClientIncomingPacket
 						int[] stone = item.getEnchantFailStone();
 						int stoneId = stone[0];
 						int stoneCount = stone[1];
-						if ((crystalId > 0) && (crystalAmount > 0) && !item.isFlagNoCrystallize())
+						if((crystalId > 0) && (crystalAmount > 0) && !item.isFlagNoCrystallize())
 						{
 							player.sendPacket(new EnchantResult(1, crystalId, crystalAmount, 0));
 							ItemFunctions.addItem(player, crystalId, crystalAmount, true);
-							if ((stoneId > 0) && (stoneCount > 0))
+							if((stoneId > 0) && (stoneCount > 0))
 							{
 								ItemFunctions.addItem(player, stoneId, stoneCount, true);
 							}
@@ -331,14 +332,14 @@ public class RequestEnchantItem implements IClientIncomingPacket
 							player.sendPacket(EnchantResult.FAILED_NO_CRYSTALS);
 						}
 
-						if (enchantScroll.showFailEffect())
+						if(enchantScroll.showFailEffect())
 						{
 							player.broadcastPacket(new MagicSkillUse(player, player, FAIL_VISUAL_EFF_ID, 1, 500, 1500));
 						}
 						break;
 					case DROP_ENCHANT:
 						int enchantDropCount = enchantScroll.getEnchantDropCount();
-						if ((enchantStone != null) && (enchantStone.getEnchantDropCount() < enchantDropCount))
+						if((enchantStone != null) && (enchantStone.getEnchantDropCount() < enchantDropCount))
 						{
 							enchantDropCount = enchantStone.getEnchantDropCount();
 						}

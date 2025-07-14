@@ -17,7 +17,7 @@ public class ProductItem implements Comparable<ProductItem>
 	public static final int NOT_LIMITED_END_HOUR = 23;
 	public static final int NOT_LIMITED_START_MIN = 0;
 	public static final int NOT_LIMITED_END_MIN = 59;
-	
+
 	public static final SchedulingPattern DEFAULT_LIMIT_REFRESH_PATTERN = new SchedulingPattern("30 6 * * *");
 
 	private final int _id;
@@ -48,11 +48,11 @@ public class ProductItem implements Comparable<ProductItem>
 	private final int _endMin;
 	private final int _discount;
 	private final int _mainCategory;
-	
+
 	private final ProductPointsType _pointsType;
 	private int _repurchase_interval;
-	
-	public ProductItem(int id, int category, int price, int silverCoinCount, int goldCoinCount, int minVipLevel, int maxVipLevel, int limit, int groupLimit, String limitRefreshPattern, boolean isHot, boolean isNew, long startTimeSale, long endTimeSale, boolean onSale, int locationId, ProductPointsType pointsType, int tabId,int mainCategoryId,int discount, int repurchase_interval)
+
+	public ProductItem(int id, int category, int price, int silverCoinCount, int goldCoinCount, int minVipLevel, int maxVipLevel, int limit, int groupLimit, String limitRefreshPattern, boolean isHot, boolean isNew, long startTimeSale, long endTimeSale, boolean onSale, int locationId, ProductPointsType pointsType, int tabId, int mainCategoryId, int discount, int repurchase_interval)
 	{
 		_id = id;
 		_category = category;
@@ -63,20 +63,21 @@ public class ProductItem implements Comparable<ProductItem>
 		_maxVipLevel = maxVipLevel;
 		_limit = limit;
 		_groupLimit = groupLimit;
-		_limitRefreshPattern = limitRefreshPattern == null ? DEFAULT_LIMIT_REFRESH_PATTERN : (limitRefreshPattern.equals("-1") ? null : new SchedulingPattern(limitRefreshPattern));
+		_limitRefreshPattern = limitRefreshPattern
+				== null ? DEFAULT_LIMIT_REFRESH_PATTERN : (limitRefreshPattern.equals("-1") ? null : new SchedulingPattern(limitRefreshPattern));
 		_isHot = isHot;
 		_isNew = isNew;
 		_onSale = onSale;
 		_startTimeSale = startTimeSale > 0 ? startTimeSale : NOT_LIMITED_START_TIME;
 		_endTimeSale = endTimeSale > 0 ? endTimeSale : NOT_LIMITED_END_TIME;
 		_locationId = locationId;
-		
+
 		_tabId = tabId;
 		_discount = discount;
 		_mainCategory = mainCategoryId;
-		
+
 		_pointsType = pointsType;
-		
+
 		Calendar calendar;
 		if(startTimeSale > 0)
 		{
@@ -90,7 +91,7 @@ public class ProductItem implements Comparable<ProductItem>
 			_startHour = NOT_LIMITED_START_HOUR;
 			_startMin = NOT_LIMITED_START_MIN;
 		}
-		
+
 		if(endTimeSale > 0)
 		{
 			calendar = Calendar.getInstance();
@@ -159,9 +160,9 @@ public class ProductItem implements Comparable<ProductItem>
 
 	public int getAvailable(Player player)
 	{
-		return Math.max(0, getLimit() - player.getAccVar().getVarInt(PlayerVariables.VIP_SHOP_PRODUCT_COUNT_GROUP+getGroupLimit(), 0));
+		return Math.max(0, getLimit() - player.getAccVar().getVarInt(PlayerVariables.VIP_SHOP_PRODUCT_COUNT_GROUP + getGroupLimit(), 0));
 	}
-	
+
 	public SchedulingPattern getLimitRefreshPattern()
 	{
 		return _limitRefreshPattern;
@@ -207,7 +208,7 @@ public class ProductItem implements Comparable<ProductItem>
 	{
 		return _groupLimit;
 	}
-	
+
 	public ProductPointsType getPointsType()
 	{
 		return _pointsType;
@@ -219,17 +220,17 @@ public class ProductItem implements Comparable<ProductItem>
 			return (int) (getPrice() * ((100 - _discount) * 0.01));
 		return getPrice();
 	}
-	
+
 	public int getTabId()
 	{
 		return _tabId;
 	}
-	
+
 	public int getMainCategory()
 	{
 		return _mainCategory;
 	}
-	
+
 	public int getStartHour()
 	{
 		return _startHour;
@@ -249,7 +250,7 @@ public class ProductItem implements Comparable<ProductItem>
 	{
 		return _endMin;
 	}
-	
+
 	public int getDiscount()
 	{
 		return _discount;

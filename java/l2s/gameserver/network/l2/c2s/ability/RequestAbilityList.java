@@ -20,11 +20,11 @@ public class RequestAbilityList implements IClientIncomingPacket
 		if(activeChar == null)
 			return;
 
-	/*	if(activeChar.getAbilitiesManager().getActiveSchemeId() == -1)
-		{
-			activeChar.sendPacket(SystemMsg.ABILITIES_CAN_BE_USED_BY_NOBLESSE_LV_99_OR_ABOVE);
-			return;
-		}*/
+		/*	if(activeChar.getAbilitiesManager().getActiveSchemeId() == -1)
+			{
+				activeChar.sendPacket(SystemMsg.ABILITIES_CAN_BE_USED_BY_NOBLESSE_LV_99_OR_ABOVE);
+				return;
+			}*/
 
 		activeChar.sendAbilitiesInfo();
 	}

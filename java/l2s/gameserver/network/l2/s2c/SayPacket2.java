@@ -125,17 +125,17 @@ public class SayPacket2 extends NpcStringContainer
 				break;
 		}
 		Player player = GameObjectsStorage.getPlayer(_objectId);
-		
+
 		packetWriter.writeC(RankManager.getInstance().getPlayerGlobalRankByChat(player)); // Char global rank
 		packetWriter.writeC(castleId); // Castle ID
 
 		//реализовать менеджер if(_isLocSharing == 1 && player != null)
-			//packetWriter.writeD(SharedTeleportManager.getInstance().nextId(player));
+		//packetWriter.writeD(SharedTeleportManager.getInstance().nextId(player));
 		//else
 		packetWriter.writeD(0);
-		
+
 		packetWriter.writeC(0);
-		if(player!=null && player.isUseChatBg())
+		if(player != null && player.isUseChatBg())
 			packetWriter.writeD(player.getChatBg());
 		else
 			packetWriter.writeD(0);

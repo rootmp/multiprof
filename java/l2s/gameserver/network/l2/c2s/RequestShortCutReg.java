@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
@@ -18,7 +19,7 @@ public class RequestShortCutReg implements IClientIncomingPacket
 		{
 			_type = ShortCut.ShortCutType.VALUES[packet.readD()];
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			return false;
 		}
@@ -40,17 +41,17 @@ public class RequestShortCutReg implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_page < 0 || _page > ShortCut.PAGE_MAX)
+		if(_page < 0 || _page > ShortCut.PAGE_MAX)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		IBroadcastPacket msg = activeChar.getAutoShortCuts().canRegShortCut(_slot, _page, _type, _id);
-		if (msg != null)
+		if(msg != null)
 		{
 			activeChar.sendPacket(msg);
 			return;
@@ -60,7 +61,7 @@ public class RequestShortCutReg implements IClientIncomingPacket
 		activeChar.sendPacket(new ShortCutRegisterPacket(activeChar, shortCut));
 		activeChar.registerShortCut(shortCut);
 
-		if ((_slot == 1) && (_page == 23))
+		if((_slot == 1) && (_page == 23))
 			activeChar.getAutoShortCuts().activate(277, true);
 	}
 }

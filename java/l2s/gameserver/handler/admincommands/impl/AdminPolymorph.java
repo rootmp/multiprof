@@ -24,18 +24,18 @@ public class AdminPolymorph implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanPolymorph)
+		if(!activeChar.getPlayerAccess().CanPolymorph)
 			return false;
 
 		GameObject target = activeChar.getTarget();
 
-		switch (command)
+		switch(command)
 		{
 			case admin_polyself:
 				target = activeChar;
 			case admin_polymorph:
 			case admin_poly:
-				if (target == null || !target.isPlayer())
+				if(target == null || !target.isPlayer())
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;
@@ -43,13 +43,13 @@ public class AdminPolymorph implements IAdminCommandHandler
 				try
 				{
 					int id = Integer.parseInt(wordList[1]);
-					if (NpcHolder.getInstance().getTemplate(id) != null)
+					if(NpcHolder.getInstance().getTemplate(id) != null)
 					{
 						((Player) target).setPolyId(id);
 						((Player) target).broadcastCharInfo();
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					activeChar.sendMessage("USAGE: //poly id [type:npc|item]");
 					return false;
@@ -59,7 +59,7 @@ public class AdminPolymorph implements IAdminCommandHandler
 				target = activeChar;
 			case admin_unpolymorph:
 			case admin_unpoly:
-				if (target == null || !target.isPlayer())
+				if(target == null || !target.isPlayer())
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;

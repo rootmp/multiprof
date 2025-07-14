@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -30,14 +31,14 @@ public class RequestConfirmGemStone implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		if (_feeItemCount <= 0)
+		if(_feeItemCount <= 0)
 			return;
 
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (!Config.ALLOW_AUGMENTATION)
+		if(!Config.ALLOW_AUGMENTATION)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -47,26 +48,26 @@ public class RequestConfirmGemStone implements IClientIncomingPacket
 		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(_refinerItemObjId);
 		ItemInstance feeItem = activeChar.getInventory().getItemByObjectId(_feeItemObjectId);
 
-		if (targetItem == null || refinerItem == null || feeItem == null)
+		if(targetItem == null || refinerItem == null || feeItem == null)
 		{
 			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
 			return;
 		}
 
-		if (!targetItem.canBeAugmented(activeChar))
+		if(!targetItem.canBeAugmented(activeChar))
 		{
 			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
 			return;
 		}
 
 		VariationFee fee = VariationUtils.getVariationFee(targetItem, refinerItem);
-		if (fee == null)
+		if(fee == null)
 		{
 			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
 			return;
 		}
 
-		if (fee.getFeeItemId() != feeItem.getItemId())
+		if(fee.getFeeItemId() != feeItem.getItemId())
 		{
 			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
 			return;

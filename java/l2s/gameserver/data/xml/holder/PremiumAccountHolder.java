@@ -29,7 +29,7 @@ public class PremiumAccountHolder extends AbstractHolder
 
 	public PremiumAccountTemplate getPremiumAccount(int type)
 	{
-		if (type == 0 && !_premiumAccounts.containsKey(type))
+		if(type == 0 && !_premiumAccounts.containsKey(type))
 			return PremiumAccountTemplate.DEFAULT_ACCOUNT_TEMPLATE;
 		return _premiumAccounts.get(type);
 	}

@@ -55,11 +55,11 @@ public class CubicTemplate
 	public CubicSkillInfo getTimeSkill(int lifeTime)
 	{
 		CubicSkillInfo skill = null;
-		for (IntObjectPair<CubicSkillInfo> pair : _timeSkills.entrySet())
+		for(IntObjectPair<CubicSkillInfo> pair : _timeSkills.entrySet())
 		{
-			if ((lifeTime % pair.getKey()) == 0)
+			if((lifeTime % pair.getKey()) == 0)
 			{
-				if (skill == null || skill.getDelay() > pair.getKey())
+				if(skill == null || skill.getDelay() > pair.getKey())
 					skill = pair.getValue();
 			}
 		}

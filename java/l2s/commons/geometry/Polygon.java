@@ -15,7 +15,7 @@ public class Polygon extends AbstractShape
 
 	public Polygon add(Point2D p)
 	{
-		if (points.length == 0)
+		if(points.length == 0)
 		{
 			min.y = p.y;
 			min.x = p.x;
@@ -54,7 +54,7 @@ public class Polygon extends AbstractShape
 	@Override
 	public boolean isInside(int x, int y, CoordsConverter c)
 	{
-		if (x < c.convertX(min.x) || x > c.convertX(max.x) || y < c.convertY(min.y) || y > c.convertY(max.y))
+		if(x < c.convertX(min.x) || x > c.convertX(max.x) || y < c.convertY(min.y) || y > c.convertY(max.y))
 			return false;
 
 		int hits = 0;
@@ -62,19 +62,19 @@ public class Polygon extends AbstractShape
 		Point2D last = points[npoints - 1];
 
 		Point2D cur;
-		for (int i = 0; i < npoints; last = cur, i++)
+		for(int i = 0; i < npoints; last = cur, i++)
 		{
 			cur = points[i];
 
-			if (c.convertY(cur.y) == c.convertY(last.y))
+			if(c.convertY(cur.y) == c.convertY(last.y))
 			{
 				continue;
 			}
 
 			int leftx;
-			if (c.convertX(cur.x) < c.convertX(last.x))
+			if(c.convertX(cur.x) < c.convertX(last.x))
 			{
-				if (x >= c.convertX(last.x))
+				if(x >= c.convertX(last.x))
 				{
 					continue;
 				}
@@ -82,7 +82,7 @@ public class Polygon extends AbstractShape
 			}
 			else
 			{
-				if (x >= c.convertX(cur.x))
+				if(x >= c.convertX(cur.x))
 				{
 					continue;
 				}
@@ -90,13 +90,13 @@ public class Polygon extends AbstractShape
 			}
 
 			double test1, test2;
-			if (c.convertY(cur.y) < c.convertY(last.y))
+			if(c.convertY(cur.y) < c.convertY(last.y))
 			{
-				if (y < c.convertY(cur.y) || y >= c.convertY(last.y))
+				if(y < c.convertY(cur.y) || y >= c.convertY(last.y))
 				{
 					continue;
 				}
-				if (x < leftx)
+				if(x < leftx)
 				{
 					hits++;
 					continue;
@@ -106,11 +106,11 @@ public class Polygon extends AbstractShape
 			}
 			else
 			{
-				if (y < c.convertY(last.y) || y >= c.convertY(cur.y))
+				if(y < c.convertY(last.y) || y >= c.convertY(cur.y))
 				{
 					continue;
 				}
-				if (x < leftx)
+				if(x < leftx)
 				{
 					hits++;
 					continue;
@@ -119,7 +119,7 @@ public class Polygon extends AbstractShape
 				test2 = y - c.convertY(last.y);
 			}
 
-			if (test1 < (test2 / (c.convertY(last.y) - c.convertY(cur.y)) * (c.convertX(last.x) - c.convertX(cur.x))))
+			if(test1 < (test2 / (c.convertY(last.y) - c.convertY(cur.y)) * (c.convertX(last.x) - c.convertX(cur.x))))
 			{
 				hits++;
 			}
@@ -139,25 +139,23 @@ public class Polygon extends AbstractShape
 	 */
 	public boolean validate()
 	{
-		if (points.length < 3)
+		if(points.length < 3)
 			return false;
 
 		// треугольник не может быть самопересекающимся
-		if (points.length > 3)
+		if(points.length > 3)
 			// внешний цикл - перебираем все грани многоугольника
-			for (int i = 1; i < points.length; i++)
+			for(int i = 1; i < points.length; i++)
 			{
 				int ii = i + 1 < points.length ? i + 1 : 0; // вторая точка первой линии
 				// внутренний цикл - перебираем все грани многоугольниках кроме той, что во
 				// внешнем цикле и соседних
-				for (int n = i; n < points.length; n++)
-					if (Math.abs(n - i) > 1)
+				for(int n = i; n < points.length; n++)
+					if(Math.abs(n - i) > 1)
 					{
 						int nn = n + 1 < points.length ? n + 1 : 0; // вторая точка второй линии
-						if (GeometryUtils.checkIfLineSegementsIntersects(points[i], points[ii], points[n], points[nn]))
-						{
-							return false;
-						}
+						if(GeometryUtils.checkIfLineSegementsIntersects(points[i], points[ii], points[n], points[nn]))
+						{ return false; }
 					}
 			}
 
@@ -169,10 +167,10 @@ public class Polygon extends AbstractShape
 	{
 		StringBuilder sb = new StringBuilder();
 		sb.append("[");
-		for (int i = 0; i < points.length; i++)
+		for(int i = 0; i < points.length; i++)
 		{
 			sb.append(points[i]);
-			if (i < points.length - 1)
+			if(i < points.length - 1)
 				sb.append(",");
 		}
 		sb.append("]");

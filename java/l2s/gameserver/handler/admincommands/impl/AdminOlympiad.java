@@ -31,18 +31,18 @@ public class AdminOlympiad implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_oly_save:
 			{
-				if (!Config.ENABLE_OLYMPIAD)
+				if(!Config.ENABLE_OLYMPIAD)
 					return false;
 
 				try
 				{
 					OlympiadDatabase.save();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 
 				}
@@ -51,7 +51,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 			}
 			case admin_add_oly_points:
 			{
-				if (wordList.length < 3)
+				if(wordList.length < 3)
 				{
 					activeChar.sendMessage("Command syntax: //add_oly_points <char_name> <point_to_add>");
 					activeChar.sendMessage("This command can be applied only for online players.");
@@ -59,7 +59,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 				}
 
 				Player player = World.getPlayer(wordList[1]);
-				if (player == null)
+				if(player == null)
 				{
 					activeChar.sendMessage("Character " + wordList[1] + " not found in game.");
 					return false;
@@ -71,7 +71,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 				{
 					pointToAdd = Integer.parseInt(wordList[2]);
 				}
-				catch (NumberFormatException e)
+				catch(NumberFormatException e)
 				{
 					activeChar.sendMessage("Please specify integer value for olympiad points.");
 					return false;
@@ -103,7 +103,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 				{
 					OlympiadDatabase.save();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 
 				}
@@ -112,7 +112,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 			}
 			case admin_add_hero:
 			{
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 				{
 					activeChar.sendMessage("Command syntax: //add_hero <char_name>");
 					activeChar.sendMessage("This command can be applied only for online players.");
@@ -120,7 +120,7 @@ public class AdminOlympiad implements IAdminCommandHandler
 				}
 
 				Player player = World.getPlayer(wordList[1]);
-				if (player == null)
+				if(player == null)
 				{
 					activeChar.sendMessage("Character " + wordList[1] + " not found in game.");
 					return false;

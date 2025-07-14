@@ -49,6 +49,6 @@ public class SkillEnchant
 			if(enchant.getSkillID() == skillID && enchant.getSubLevel() == subLevel)
 				return enchant;
 		}
-		return addEnchant(skillID, subLevel,0); // Enchant not found
+		return addEnchant(skillID, subLevel, 0); // Enchant not found
 	}
 }

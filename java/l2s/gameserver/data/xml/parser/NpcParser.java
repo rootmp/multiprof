@@ -70,7 +70,7 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> npcIterator = rootElement.elementIterator(); npcIterator.hasNext();)
+		for(Iterator<Element> npcIterator = rootElement.elementIterator(); npcIterator.hasNext();)
 		{
 			Element npcElement = npcIterator.next();
 			int npcId = Integer.parseInt(npcElement.attributeValue("id"));
@@ -86,45 +86,45 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 			set.set("baseCpReg", 0);
 			set.set("baseCpMax", 0);
 
-			for (Iterator<Element> firstIterator = npcElement.elementIterator(); firstIterator.hasNext();)
+			for(Iterator<Element> firstIterator = npcElement.elementIterator(); firstIterator.hasNext();)
 			{
 				Element firstElement = firstIterator.next();
-				if (firstElement.getName().equalsIgnoreCase("set"))
+				if(firstElement.getName().equalsIgnoreCase("set"))
 				{
 					set.set(firstElement.attributeValue("name"), firstElement.attributeValue("value"));
 				}
-				else if (firstElement.getName().equalsIgnoreCase("equip"))
+				else if(firstElement.getName().equalsIgnoreCase("equip"))
 				{
-					for (Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
+					for(Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
 					{
 						Element eElement = eIterator.next();
 						set.set(eElement.getName(), eElement.attributeValue("item_id"));
 					}
 				}
-				else if (firstElement.getName().equalsIgnoreCase("ai_params"))
+				else if(firstElement.getName().equalsIgnoreCase("ai_params"))
 				{
 					StatsSet ai = new StatsSet();
-					for (Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
+					for(Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
 					{
 						Element eElement = eIterator.next();
 						ai.set(eElement.attributeValue("name"), eElement.attributeValue("value"));
 					}
 					set.set("aiParams", ai);
 				}
-				else if (firstElement.getName().equalsIgnoreCase("attributes"))
+				else if(firstElement.getName().equalsIgnoreCase("attributes"))
 				{
 					int[] attributeAttack = new int[6];
 					int[] attributeDefence = new int[6];
-					for (Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
+					for(Iterator<Element> eIterator = firstElement.elementIterator(); eIterator.hasNext();)
 					{
 						Element eElement = eIterator.next();
 						l2s.gameserver.model.base.Element element;
-						if (eElement.getName().equalsIgnoreCase("defence"))
+						if(eElement.getName().equalsIgnoreCase("defence"))
 						{
 							element = l2s.gameserver.model.base.Element.getElementByName(eElement.attributeValue("attribute"));
 							attributeDefence[element.getId()] = Integer.parseInt(eElement.attributeValue("value"));
 						}
-						else if (eElement.getName().equalsIgnoreCase("attack"))
+						else if(eElement.getName().equalsIgnoreCase("attack"))
 						{
 							element = l2s.gameserver.model.base.Element.getElementByName(eElement.attributeValue("attribute"));
 							attributeAttack[element.getId()] = Integer.parseInt(eElement.attributeValue("value"));
@@ -138,16 +138,16 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 
 			NpcTemplate template = new NpcTemplate(set);
 
-			for (Iterator<Element> secondIterator = npcElement.elementIterator(); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = npcElement.elementIterator(); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
 				String nodeName = secondElement.getName();
-				if (nodeName.equalsIgnoreCase("faction"))
+				if(nodeName.equalsIgnoreCase("faction"))
 				{
 					String factionNames = secondElement.attributeValue("names");
 					int factionRange = Integer.parseInt(secondElement.attributeValue("range"));
 					Faction faction = new Faction(factionNames, factionRange);
-					for (Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
 					{
 						final Element nextElement = nextIterator.next();
 						int ignoreId = Integer.parseInt(nextElement.attributeValue("npc_id"));
@@ -155,18 +155,18 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 					}
 					template.setFaction(faction);
 				}
-				else if (nodeName.equalsIgnoreCase("rewardlist"))
+				else if(nodeName.equalsIgnoreCase("rewardlist"))
 					template.addRewardList(RewardList.parseRewardList(getLogger(), secondElement, RewardType.valueOf(secondElement.attributeValue("type")), String.valueOf(npcId)));
-				else if (nodeName.equalsIgnoreCase("client_skills") || nodeName.equalsIgnoreCase("skills"))
+				else if(nodeName.equalsIgnoreCase("client_skills") || nodeName.equalsIgnoreCase("skills"))
 				{
-					for (Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("id"));
 						int level = Integer.parseInt(nextElement.attributeValue("level"));
 
 						// Для определения расы используется скилл 4416
-						if (id == 4416)
+						if(id == 4416)
 						{
 							template.setRace(level);
 						}
@@ -176,21 +176,21 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 						// TODO
 						// if(skill == null || skill.getSkillType() == L2Skill.SkillType.NOTDONE)
 						// unimpl.add(Integer.valueOf(skillId));
-						if (skill == null)
+						if(skill == null)
 						{
 							continue;
 						}
 
 						String use_type = nextElement.attributeValue("use_type");
-						if (use_type != null)
+						if(use_type != null)
 							template.setAIParam(use_type, id + "-" + level);
 
 						template.addSkill(skill);
 					}
 				}
-				else if (nodeName.equalsIgnoreCase("minions"))
+				else if(nodeName.equalsIgnoreCase("minions"))
 				{
-					for (Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("npc_id"));
@@ -200,15 +200,16 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 						template.addMinion(new MinionData(id, ai, count, respawn, null));
 					}
 				}
-				else if (nodeName.equalsIgnoreCase("teleportlist"))
+				else if(nodeName.equalsIgnoreCase("teleportlist"))
 				{
-					for (Iterator<Element> sublistIterator = secondElement.elementIterator(); sublistIterator.hasNext();)
+					for(Iterator<Element> sublistIterator = secondElement.elementIterator(); sublistIterator.hasNext();)
 					{
 						Element subListElement = sublistIterator.next();
 						int id = Integer.parseInt(subListElement.attributeValue("id"));
-						boolean prime_hours = subListElement.attributeValue("prime_hours") == null ? true : Boolean.parseBoolean(subListElement.attributeValue("prime_hours"));
+						boolean prime_hours = subListElement.attributeValue("prime_hours")
+								== null ? true : Boolean.parseBoolean(subListElement.attributeValue("prime_hours"));
 						List<TeleportLocation> list = new ArrayList<TeleportLocation>();
-						for (Iterator<Element> targetIterator = subListElement.elementIterator(); targetIterator.hasNext();)
+						for(Iterator<Element> targetIterator = subListElement.elementIterator(); targetIterator.hasNext();)
 						{
 							Element targetElement = targetIterator.next();
 							int itemId = Integer.parseInt(targetElement.attributeValue("item_id", "57"));
@@ -223,22 +224,25 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 						template.addTeleportList(id, list);
 					}
 				}
-				else if (nodeName.equalsIgnoreCase("walker_route"))
+				else if(nodeName.equalsIgnoreCase("walker_route"))
 				{
 					int id = Integer.parseInt(secondElement.attributeValue("id"));
-					WalkerRouteType type = secondElement.attributeValue("type") == null ? WalkerRouteType.LENGTH : WalkerRouteType.valueOf(secondElement.attributeValue("type").toUpperCase());
+					WalkerRouteType type = secondElement.attributeValue("type")
+							== null ? WalkerRouteType.LENGTH : WalkerRouteType.valueOf(secondElement.attributeValue("type").toUpperCase());
 					WalkerRoute walkerRoute = new WalkerRoute(id, type);
-					for (Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						Location loc = Location.parse(nextElement);
 
-						int[] phrasesIds = StringArrayUtils.stringToIntArray(nextElement.attributeValue("phrase_id") == null ? "" : nextElement.attributeValue("phrase_id"), ";");
+						int[] phrasesIds = StringArrayUtils.stringToIntArray(nextElement.attributeValue("phrase_id")
+								== null ? "" : nextElement.attributeValue("phrase_id"), ";");
 						NpcString[] phrases = new NpcString[phrasesIds.length];
-						for (int i = 0; i < phrasesIds.length; i++)
+						for(int i = 0; i < phrasesIds.length; i++)
 							phrases[i] = NpcString.valueOf(phrasesIds[i]);
 
-						int socialActionId = nextElement.attributeValue("social_action_id") == null ? -1 : Integer.parseInt(nextElement.attributeValue("social_action_id"));
+						int socialActionId = nextElement.attributeValue("social_action_id")
+								== null ? -1 : Integer.parseInt(nextElement.attributeValue("social_action_id"));
 						int delay = nextElement.attributeValue("delay") == null ? 0 : Integer.parseInt(nextElement.attributeValue("delay"));
 						boolean running = nextElement.attributeValue("running") == null ? false : Boolean.parseBoolean(nextElement.attributeValue("running"));
 						boolean teleport = nextElement.attributeValue("teleport") == null ? false : Boolean.parseBoolean(nextElement.attributeValue("teleport"));
@@ -246,16 +250,19 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 					}
 					template.addWalkerRoute(walkerRoute);
 				}
-				else if (nodeName.equalsIgnoreCase("random_actions"))
+				else if(nodeName.equalsIgnoreCase("random_actions"))
 				{
-					boolean random_order = secondElement.attributeValue("random_order") == null ? false : Boolean.parseBoolean(secondElement.attributeValue("random_order"));
+					boolean random_order = secondElement.attributeValue("random_order")
+							== null ? false : Boolean.parseBoolean(secondElement.attributeValue("random_order"));
 					RandomActions randomActions = new RandomActions(random_order);
-					for (Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator(); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("id"));
-						NpcString phrase = nextElement.attributeValue("phrase_id") == null ? null : NpcString.valueOf(Integer.parseInt(nextElement.attributeValue("phrase_id")));
-						int socialActionId = nextElement.attributeValue("social_action_id") == null ? -1 : Integer.parseInt(nextElement.attributeValue("social_action_id"));
+						NpcString phrase = nextElement.attributeValue("phrase_id")
+								== null ? null : NpcString.valueOf(Integer.parseInt(nextElement.attributeValue("phrase_id")));
+						int socialActionId = nextElement.attributeValue("social_action_id")
+								== null ? -1 : Integer.parseInt(nextElement.attributeValue("social_action_id"));
 						int delay = nextElement.attributeValue("delay") == null ? 0 : Integer.parseInt(nextElement.attributeValue("delay"));
 						randomActions.addAction(new RandomActions.Action(id, phrase, socialActionId, delay));
 					}
@@ -263,58 +270,58 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 				}
 			}
 
-			for (Iterator<Element> secondIterator = npcElement.elementIterator("database_rewardlist"); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = npcElement.elementIterator("database_rewardlist"); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
 
 				RewardList list = new RewardList(RewardType.RATED_GROUPED, false);
-				if (!template.isInstanceOf(RaidBossInstance.class))
+				if(!template.isInstanceOf(RaidBossInstance.class))
 				{
 					RewardGroup equipAndPiecesGroup = null;
 					RewardGroup etcGroup = null;
 
-					for (Iterator<Element> nextIterator = secondElement.elementIterator("reward"); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator("reward"); nextIterator.hasNext();)
 					{
 						final Element nextElement = nextIterator.next();
 
 						RewardData data = RewardData.parseReward(nextElement);
 						ItemTemplate itemTemplate = data.getItem();
-						if (itemTemplate.isAdena())
+						if(itemTemplate.isAdena())
 						{
 							RewardGroup adenaGroup = new RewardGroup(data.getChance(), null);
 							data.setChance(RewardList.MAX_CHANCE);
 							adenaGroup.addData(data);
 							list.add(adenaGroup);
 						}
-						else if (itemTemplate.isArmor() || itemTemplate.isWeapon() || itemTemplate.isAccessory() || itemTemplate.isKeyMatherial())
+						else if(itemTemplate.isArmor() || itemTemplate.isWeapon() || itemTemplate.isAccessory() || itemTemplate.isKeyMatherial())
 						{
-							if (equipAndPiecesGroup == null)
+							if(equipAndPiecesGroup == null)
 								equipAndPiecesGroup = new RewardGroup(RewardList.MAX_CHANCE, null);
 							equipAndPiecesGroup.addData(data);
 						}
 						else
 						{
-							if (etcGroup == null)
+							if(etcGroup == null)
 								etcGroup = new RewardGroup(RewardList.MAX_CHANCE, null);
 							etcGroup.addData(data);
 						}
 					}
 
-					if (equipAndPiecesGroup != null)
+					if(equipAndPiecesGroup != null)
 					{
 						equipAndPiecesGroup.setChance(RewardList.MAX_CHANCE);
 
-						for (RewardData data : equipAndPiecesGroup.getItems())
+						for(RewardData data : equipAndPiecesGroup.getItems())
 							data.setChance(data.getChance());
 
 						list.add(equipAndPiecesGroup);
 					}
 
-					if (etcGroup != null)
+					if(etcGroup != null)
 					{
 						etcGroup.setChance(RewardList.MAX_CHANCE);
 
-						for (RewardData data : etcGroup.getItems())
+						for(RewardData data : etcGroup.getItems())
 							data.setChance(data.getChance());
 
 						list.add(etcGroup);
@@ -322,7 +329,7 @@ public final class NpcParser extends AbstractParser<NpcHolder>
 				}
 				else
 				{
-					for (Iterator<Element> nextIterator = secondElement.elementIterator("reward"); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = secondElement.elementIterator("reward"); nextIterator.hasNext();)
 					{
 						final Element nextElement = nextIterator.next();
 

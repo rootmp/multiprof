@@ -41,6 +41,5 @@ public final class DroppedItemsHolder extends AbstractHolder
 
 	@Override
 	public void clear()
-	{
-	}
+	{}
 }

@@ -2,14 +2,8 @@ package l2s.gameserver.network.l2.c2s.skill_enchant;
 
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.skills.SkillEntry;
-import l2s.gameserver.skills.enums.SkillEntryType;
-import l2s.gameserver.templates.skill.enchant.CouponSetting;
-import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 {
@@ -24,7 +18,7 @@ public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 		nSkillID = packet.readD();
 		nConfirmItemClassID = packet.readD();
 		nCommisionClassID = packet.readD();
-			
+
 		return true;
 	}
 
@@ -37,7 +31,7 @@ public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 		/*Skill skill = player.getSkillById(nSkillID);
 		if(skill == null)
 			return;
-
+		
 		CouponSetting setting = SkillEnchantSettingsHolder.getInstance().getCouponSetting(nConfirmItemClassID);
 		if(setting!=null)
 		{
@@ -69,7 +63,7 @@ public class RequestExSkillEnchantConfirm implements IClientIncomingPacket
 				player.sendPacket(new ExRequestSkillEnchantConfirm(1,nSkillID, skill.getLevel(), skill.getSubLevel()));
 				return;
 			}
-
+		
 			player.addSkill(enchantedSkill, true);
 			player.enableSkill(enchantedSkill.getTemplate());
 			

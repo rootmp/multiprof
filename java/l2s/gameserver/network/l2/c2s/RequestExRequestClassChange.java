@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.ClassId;
@@ -24,23 +25,23 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		ClassId classId = ClassId.valueOf(_classId);
-		if (classId == null)
+		if(classId == null)
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (!player.canClassChange())
+		if(!player.canClassChange())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (!player.isInPeaceZone() || player.isInCombat())
+		if(!player.isInPeaceZone() || player.isInCombat())
 		{
 			player.sendActionFailed();
 			player.sendPacket(SystemMsg.YOU_CANNOT_TRANSFER_YOUR_CLASS_IN_A_NON_PEACE_ZONE_LOCATION);
@@ -48,17 +49,17 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 			return;
 		}
 
-		if (!player.setClassId(classId.getId(), false))
+		if(!player.setClassId(classId.getId(), false))
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.getClassId().isOfLevel(ClassLevel.FIRST))
+		if(player.getClassId().isOfLevel(ClassLevel.FIRST))
 		{
 			giveRewards(player, 1);
 		}
-		else if (player.getClassId().isOfLevel(ClassLevel.SECOND))
+		else if(player.getClassId().isOfLevel(ClassLevel.SECOND))
 		{
 			giveRewards(player, 2);
 		}
@@ -71,12 +72,12 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 
 	private void giveRewards(Player player, int classLevel)
 	{
-		if (classLevel == 2)
+		if(classLevel == 2)
 		{
 			player.getInventory().addItem(91665, 10); // Scroll: 100,000 SP (Sealed)
 			player.getInventory().addItem(95489, 1); // 2nd Class Change Gift Box
 		}
-		else if (classLevel == 1)
+		else if(classLevel == 1)
 		{
 			int FIRST_CLASS_CHANGE_GIFT_BOX = 93496;
 			int MOON_ARMOR_SET = 93493;
@@ -103,7 +104,7 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 			int armorId = 0;
 			int additionalId = 0;
 
-			switch (player.getClassId())
+			switch(player.getClassId())
 			{
 				case WARRIOR:
 				{
@@ -207,12 +208,12 @@ public class RequestExRequestClassChange implements IClientIncomingPacket
 			}
 
 			player.getInventory().addItem(weaponId1, 1);
-			if (weaponId2 != 0)
+			if(weaponId2 != 0)
 			{
 				player.getInventory().addItem(weaponId2, 1);
 			}
 			player.getInventory().addItem(armorId, 1);
-			if (additionalId != 0)
+			if(additionalId != 0)
 			{
 				player.getInventory().addItem(additionalId, 1);
 			}

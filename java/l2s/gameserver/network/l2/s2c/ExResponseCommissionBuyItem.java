@@ -30,10 +30,8 @@ public class ExResponseCommissionBuyItem implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_code);
-		if (_code == 0)
-		{
-			return true;
-		}
+		if(_code == 0)
+		{ return true; }
 
 		packetWriter.writeD(0x00); // unk, maybe item object Id
 		packetWriter.writeD(_itemId);

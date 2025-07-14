@@ -32,12 +32,10 @@ public class AdminCreateItem implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().UseGMShop)
-		{
-			return false;
-		}
+		if(!activeChar.getPlayerAccess().UseGMShop)
+		{ return false; }
 
-		switch (command)
+		switch(command)
 		{
 			case admin_itemcreate:
 				activeChar.sendPacket(new HtmlMessage(5).setFile("admin/itemcreation.htm"));
@@ -46,7 +44,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 			case admin_create_item:
 				try
 				{
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						activeChar.sendMessage("USAGE: create_item id [count]");
 						return false;
@@ -55,11 +53,11 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					long item_count = wordList.length < 3 ? 1 : Long.parseLong(wordList[2]);
 					ItemInstance item = null;
-					if ((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
+					if((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
 					{
 						item = createItem(activeChar, item_id, item_count);
 					}
-					else if (activeChar.getTarget() instanceof Player)
+					else if(activeChar.getTarget() instanceof Player)
 					{
 						item = createItem(activeChar.getTarget().getPlayer(), item_id, item_count);
 					}
@@ -68,12 +66,12 @@ public class AdminCreateItem implements IAdminCommandHandler
 						item = createItem(activeChar, item_id, item_count);
 					}
 
-					if (item == null)
+					if(item == null)
 					{
 						activeChar.sendMessage("Undefined item id!");
 					}
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					activeChar.sendMessage("USAGE: create_item id [count]");
 				}
@@ -82,7 +80,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 			case admin_hidden_item:
 				try
 				{
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						activeChar.sendMessage(new CustomMessage("common.Admin.Createitem.CreateItemUssage"));
 						return false;
@@ -90,11 +88,11 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					long item_count = wordList.length < 3 ? 1 : Long.parseLong(wordList[2]);
 
-					if ((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
+					if((activeChar.getTarget() == null) || (activeChar.getTarget() == activeChar))
 					{
 						createItemH(activeChar, item_id, item_count);
 					}
-					else if (activeChar.getTarget().isPlayer())
+					else if(activeChar.getTarget().isPlayer())
 					{
 						createItemH(activeChar.getTarget().getPlayer(), item_id, item_count);
 					}
@@ -103,7 +101,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 						createItemH(activeChar, item_id, item_count);
 					}
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					activeChar.sendMessage(new CustomMessage("common.Admin.Createitem.CreateItemUssage"));
 				}
@@ -114,10 +112,10 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int id = Integer.parseInt(wordList[1]);
 					int num = wordList.length > 2 ? Integer.parseInt(wordList[2]) : 1;
 					long count = wordList.length > 3 ? Long.parseLong(wordList[3]) : 1;
-					for (int i = 0; i < num; i++)
+					for(int i = 0; i < num; i++)
 					{
 						ItemInstance createditem = ItemFunctions.createItem(id);
-						if (createditem == null)
+						if(createditem == null)
 						{
 							activeChar.sendMessage("Undefined item id!");
 							break;
@@ -126,11 +124,11 @@ public class AdminCreateItem implements IAdminCommandHandler
 						createditem.dropMe(activeChar, Location.findPointToStay(activeChar, 100));
 					}
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					activeChar.sendMessage("Specify a valid number.");
 				}
-				catch (StringIndexOutOfBoundsException e)
+				catch(StringIndexOutOfBoundsException e)
 				{
 					activeChar.sendMessage("Can't create this item.");
 				}
@@ -138,7 +136,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 			case admin_create_item_element:
 				try
 				{
-					if (wordList.length < 4)
+					if(wordList.length < 4)
 					{
 						activeChar.sendMessage("USAGE: create_item_attribue [id] [element id] [value]");
 						return false;
@@ -147,19 +145,19 @@ public class AdminCreateItem implements IAdminCommandHandler
 					int item_id = Integer.parseInt(wordList[1]);
 					int elementId = Integer.parseInt(wordList[2]);
 					int value = Integer.parseInt(wordList[3]);
-					if ((elementId > 5) || (elementId < 0))
+					if((elementId > 5) || (elementId < 0))
 					{
 						activeChar.sendMessage("Improper element Id");
 						return false;
 					}
-					if ((value < 1) || (value > 300))
+					if((value < 1) || (value > 300))
 					{
 						activeChar.sendMessage("Improper element value");
 						return false;
 					}
 
 					ItemInstance item = createItem(activeChar, item_id, 1);
-					if (item == null)
+					if(item == null)
 					{
 						activeChar.sendMessage("Undefined item id!");
 						return false;
@@ -171,7 +169,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 					item.update();
 					activeChar.sendPacket(new InventoryUpdatePacket(activeChar).addModifiedItem(item));
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					activeChar.sendMessage("USAGE: create_item id [count]");
 				}
@@ -190,25 +188,23 @@ public class AdminCreateItem implements IAdminCommandHandler
 
 	private ItemInstance createItem(Player activeChar, int itemId, long count)
 	{
-		if (ItemHolder.getInstance().getTemplate(itemId) == null)
-		{
-			return null;
-		}
+		if(ItemHolder.getInstance().getTemplate(itemId) == null)
+		{ return null; }
 
 		ItemInstance createditem = ItemFunctions.createItem(itemId);
 		createditem.setCount(count);
 		Log.LogItem(activeChar, Log.Create, createditem);
 
-		if (itemId == 95570)
+		if(itemId == 95570)
 		{
 			activeChar.setHonorCoins((int) (activeChar.getHonorCoins() + count));
 		}
 		else
 		{
 			activeChar.getInventory().addItem(createditem);
-			if (!createditem.isStackable())
+			if(!createditem.isStackable())
 			{
-				for (long i = 0; i < (count - 1); i++)
+				for(long i = 0; i < (count - 1); i++)
 				{
 					createditem = ItemFunctions.createItem(itemId);
 					Log.LogItem(activeChar, Log.Create, createditem);
@@ -227,9 +223,9 @@ public class AdminCreateItem implements IAdminCommandHandler
 		// Log.LogItem(activeChar, Log.Create, createditem);
 		activeChar.getInventory().addItem(createditem);
 		HidenItemsDAO.addHiddenItem(createditem);
-		if (!createditem.isStackable())
+		if(!createditem.isStackable())
 		{
-			for (long i = 0; i < (count - 1); i++)
+			for(long i = 0; i < (count - 1); i++)
 			{
 				createditem = ItemFunctions.createItem(itemId);
 				// Log.LogItem(activeChar, Log.Create, createditem);

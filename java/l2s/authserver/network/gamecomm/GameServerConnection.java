@@ -49,9 +49,9 @@ public class GameServerConnection
 		@Override
 		public void run()
 		{
-			if (Config.GAME_SERVER_PING_RETRY > 0)
+			if(Config.GAME_SERVER_PING_RETRY > 0)
 			{
-				if (_pingRetry > Config.GAME_SERVER_PING_RETRY)
+				if(_pingRetry > Config.GAME_SERVER_PING_RETRY)
 				{
 					_log.warn("Gameserver IP[" + getIpAddress() + "]: ping timeout!");
 					closeNow();
@@ -79,7 +79,7 @@ public class GameServerConnection
 			sendQueue.add(packet);
 			wakeUp = enableWriteInterest();
 		}
-		catch (CancelledKeyException e)
+		catch(CancelledKeyException e)
 		{
 			return;
 		}
@@ -88,13 +88,13 @@ public class GameServerConnection
 			sendLock.unlock();
 		}
 
-		if (wakeUp)
+		if(wakeUp)
 			selector.wakeup();
 	}
 
 	protected boolean disableWriteInterest() throws CancelledKeyException
 	{
-		if (isPengingWrite.compareAndSet(true, false))
+		if(isPengingWrite.compareAndSet(true, false))
 		{
 			key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
 			return true;
@@ -104,7 +104,7 @@ public class GameServerConnection
 
 	protected boolean enableWriteInterest() throws CancelledKeyException
 	{
-		if (isPengingWrite.getAndSet(true) == false)
+		if(isPengingWrite.getAndSet(true) == false)
 		{
 			key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);
 			return true;
@@ -138,7 +138,7 @@ public class GameServerConnection
 
 			isPengingWrite.set(false);
 
-			if (gameServer != null && gameServer.isAuthed())
+			if(gameServer != null && gameServer.isAuthed())
 			{
 				_log.info("Connection with gameserver IP[" + getIpAddress() + "] lost.");
 				_log.info("Setting gameserver down.");
@@ -147,7 +147,7 @@ public class GameServerConnection
 
 			gameServer = null;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -180,7 +180,7 @@ public class GameServerConnection
 
 	public void startPingTask()
 	{
-		if (Config.GAME_SERVER_PING_DELAY == 0)
+		if(Config.GAME_SERVER_PING_DELAY == 0)
 			return;
 
 		_pingTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new PingTask(), Config.GAME_SERVER_PING_DELAY, Config.GAME_SERVER_PING_DELAY);
@@ -188,7 +188,7 @@ public class GameServerConnection
 
 	public void stopPingTask()
 	{
-		if (_pingTask != null)
+		if(_pingTask != null)
 		{
 			_pingTask.cancel(false);
 			_pingTask = null;

@@ -5,7 +5,6 @@ import java.util.Set;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
-import l2s.gameserver.GameServer;
 import l2s.gameserver.data.xml.holder.NpcHolder;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
@@ -26,7 +25,9 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 	private static final int IS_TARGETABLE = 1 << 2;
 	private static final int IS_SHOW_NAME = 1 << 3;
 
-	private final byte[] _masks = new byte[] { (byte) 0x00, (byte) 0x0C, (byte) 0x0C, (byte) 0x00, (byte) 0x00 };
+	private final byte[] _masks = new byte[] {
+			(byte) 0x00, (byte) 0x0C, (byte) 0x0C, (byte) 0x00, (byte) 0x00
+	};
 
 	private final int _npcId;
 	private final boolean _isAttackable;
@@ -82,7 +83,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 		_maxMP = player.getMaxMp();
 		_enchantEffect = player.getEnchantEffect();
 		_transformId = 0;
-		
+
 		_AbnormalVisualEffects = player.getAbnormalEffects();
 
 		for(NpcInfoType component : NpcInfoType.VALUES)
@@ -154,10 +155,10 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 		packetWriter.writeC(_initSize);
 		if(containsMask(NpcInfoType.ATTACKABLE))
 			packetWriter.writeC(_isAttackable);
-		
+
 		if(containsMask(NpcInfoType.RELATIONS))
 			packetWriter.writeQ(0);
-		
+
 		if(containsMask(NpcInfoType.TITLE))
 			packetWriter.writeS(_title);
 
@@ -174,10 +175,10 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 		}
 		if(containsMask(NpcInfoType.HEADING))
 			packetWriter.writeD(_loc.h);
-		
+
 		if(containsMask(NpcInfoType.VEHICLE))
 			packetWriter.writeD(0x00); // Unknown
-		
+
 		if(containsMask(NpcInfoType.ATK_CAST_SPEED))
 		{
 			packetWriter.writeD(_pAtkSpd);
@@ -189,26 +190,26 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 			packetWriter.writeE((float) _runSpdMul);
 			packetWriter.writeE((float) _atkSpdMul);
 		}
-		
+
 		if(containsMask(NpcInfoType.EQUIPSLOT))
 		{
 			packetWriter.writeD(_rHand);
 			packetWriter.writeD(0x00); // Armor id?
 			packetWriter.writeD(_lHand);
 		}
-		
+
 		if(containsMask(NpcInfoType.STOP_MODE))
 			packetWriter.writeC(1);
-		
+
 		if(containsMask(NpcInfoType.MOVE_MODE))
 			packetWriter.writeC(_running);
-		
+
 		if(containsMask(NpcInfoType.ENVIRONMENT))
 			packetWriter.writeC(_inWater ? 1 : _flying ? 2 : 0);
-		
+
 		if(containsMask(NpcInfoType.EVENT_MATCH_TEAM_ID))
 			packetWriter.writeC(_team.ordinal());
-		
+
 		if(containsMask(NpcInfoType.ENCHANT))
 			packetWriter.writeD(_enchantEffect);
 
@@ -217,7 +218,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 
 		if(containsMask(NpcInfoType.DOPPELGANGER_SUMMONERS_ID))
 			packetWriter.writeD(0); // Player ObjectId with Decoy
-		
+
 		if(containsMask(NpcInfoType.EVOLUTION_ID))
 		{
 			// No visual effect
@@ -226,10 +227,10 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 
 		if(containsMask(NpcInfoType.STATE))
 			packetWriter.writeD(0);
-		
+
 		if(containsMask(NpcInfoType.MORPH_ID))
 			packetWriter.writeD(_transformId);
-		
+
 		if(containsMask(NpcInfoType.CURRENT_HP))
 			packetWriter.writeQ(_currentHP);
 
@@ -238,12 +239,12 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 
 		if(containsMask(NpcInfoType.MAX_HP))
 			packetWriter.writeQ(_maxHP);
-		
+
 		if(containsMask(NpcInfoType.MAX_MP))
 			packetWriter.writeD(_maxMP);
 		if(containsMask(NpcInfoType.DOPPELGANGER_TYPE))
 			packetWriter.writeC(0x00); // тип клона 1 == приманка, 2 = клон у ножа
-		
+
 		if(containsMask(NpcInfoType.FOLLOWING_INFO))
 		{
 			packetWriter.writeD(0x00);
@@ -257,7 +258,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 
 		if(containsMask(NpcInfoType.TITLE_NPCSTRINGID))
 			packetWriter.writeD(-1); // NPCStringId for title
-		
+
 		if(containsMask(NpcInfoType.PVP_FLAG))
 			packetWriter.writeC(_pvpFlag); // PVP flag
 
@@ -272,10 +273,10 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 			packetWriter.writeD(_allyId);
 			packetWriter.writeD(_allyCrestId);
 		}
-		
+
 		if(containsMask(NpcInfoType.WORLD_ID))
 			packetWriter.writeD(_statusMask);
-		
+
 		if(containsMask(NpcInfoType.ABNORMAL_VISUAL_EFFECT))
 		{
 			packetWriter.writeH(_AbnormalVisualEffects.size());
@@ -284,7 +285,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 		}
 		return true;
 	}
-	
+
 	@Override
 	public ByteBuf getOpcodes()
 	{
@@ -298,7 +299,7 @@ public class NpcInfoPoly extends AbstractMaskPacket<NpcInfoType>
 				opcodes.writeShortLE(exOpcode);
 			return opcodes.retain();
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{

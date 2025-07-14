@@ -56,44 +56,45 @@ public final class ArmorTemplate extends ItemTemplate
 
 		_type = set.getEnum("type", ArmorType.class);
 
-		if ((SLOTS_JEWELRY & _bodyPart) == _bodyPart)
+		if((SLOTS_JEWELRY & _bodyPart) == _bodyPart)
 			_type1 = TYPE1_WEAPON_RING_EARRING_NECKLACE;
-		else if (_bodyPart == SLOT_HAIR || _bodyPart == SLOT_DHAIR || _bodyPart == SLOT_HAIRALL)
+		else if(_bodyPart == SLOT_HAIR || _bodyPart == SLOT_DHAIR || _bodyPart == SLOT_HAIRALL)
 			_type1 = TYPE1_OTHER;
 		else
 			_type1 = TYPE1_SHIELD_ARMOR;
 
-		if (_type == ArmorType.SIGIL)
+		if(_type == ArmorType.SIGIL)
 			_exType = ExItemType.SIGIL;
-		else if (_bodyPart == ItemTemplate.SLOT_HEAD)
+		else if(_bodyPart == ItemTemplate.SLOT_HEAD)
 			_exType = ExItemType.HELMET;
-		else if (_bodyPart == ItemTemplate.SLOT_CHEST)
+		else if(_bodyPart == ItemTemplate.SLOT_CHEST)
 			_exType = ExItemType.UPPER_PIECE;
-		else if (_bodyPart == ItemTemplate.SLOT_LEGS)
+		else if(_bodyPart == ItemTemplate.SLOT_LEGS)
 			_exType = ExItemType.LOWER_PIECE;
-		else if (_bodyPart == ItemTemplate.SLOT_FULL_ARMOR || _bodyPart == ItemTemplate.SLOT_FORMAL_WEAR)
+		else if(_bodyPart == ItemTemplate.SLOT_FULL_ARMOR || _bodyPart == ItemTemplate.SLOT_FORMAL_WEAR)
 			_exType = ExItemType.FULL_BODY;
-		else if (_bodyPart == ItemTemplate.SLOT_GLOVES)
+		else if(_bodyPart == ItemTemplate.SLOT_GLOVES)
 			_exType = ExItemType.GLOVES;
-		else if (_bodyPart == ItemTemplate.SLOT_FEET)
+		else if(_bodyPart == ItemTemplate.SLOT_FEET)
 			_exType = ExItemType.FEET;
-		else if (_bodyPart == ItemTemplate.SLOT_PENDANT)
+		else if(_bodyPart == ItemTemplate.SLOT_PENDANT)
 			_exType = ExItemType.PENDANT;
-		else if (_bodyPart == ItemTemplate.SLOT_BACK)
+		else if(_bodyPart == ItemTemplate.SLOT_BACK)
 			_exType = ExItemType.CLOAK;
-		else if ((_bodyPart & ItemTemplate.SLOT_R_FINGER) == ItemTemplate.SLOT_R_FINGER || (_bodyPart & ItemTemplate.SLOT_L_FINGER) == ItemTemplate.SLOT_L_FINGER)
+		else if((_bodyPart & ItemTemplate.SLOT_R_FINGER) == ItemTemplate.SLOT_R_FINGER
+				|| (_bodyPart & ItemTemplate.SLOT_L_FINGER) == ItemTemplate.SLOT_L_FINGER)
 			_exType = ExItemType.RING;
-		else if ((_bodyPart & ItemTemplate.SLOT_R_EAR) == ItemTemplate.SLOT_R_EAR || (_bodyPart & ItemTemplate.SLOT_L_EAR) == ItemTemplate.SLOT_L_EAR)
+		else if((_bodyPart & ItemTemplate.SLOT_R_EAR) == ItemTemplate.SLOT_R_EAR || (_bodyPart & ItemTemplate.SLOT_L_EAR) == ItemTemplate.SLOT_L_EAR)
 			_exType = ExItemType.EARRING;
-		else if (_bodyPart == ItemTemplate.SLOT_NECK)
+		else if(_bodyPart == ItemTemplate.SLOT_NECK)
 			_exType = ExItemType.NECKLACE;
-		else if (_bodyPart == ItemTemplate.SLOT_BELT)
+		else if(_bodyPart == ItemTemplate.SLOT_BELT)
 			_exType = ExItemType.BELT;
-		else if (_bodyPart == ItemTemplate.SLOT_R_BRACELET || _bodyPart == ItemTemplate.SLOT_L_BRACELET)
+		else if(_bodyPart == ItemTemplate.SLOT_R_BRACELET || _bodyPart == ItemTemplate.SLOT_L_BRACELET)
 			_exType = ExItemType.BRACELET;
-		else if (_bodyPart == ItemTemplate.SLOT_HAIR || _bodyPart == ItemTemplate.SLOT_DHAIR || _bodyPart == ItemTemplate.SLOT_HAIRALL)
+		else if(_bodyPart == ItemTemplate.SLOT_HAIR || _bodyPart == ItemTemplate.SLOT_DHAIR || _bodyPart == ItemTemplate.SLOT_HAIRALL)
 			_exType = ExItemType.HAIR_ACCESSORY;
-		else if (_bodyPart == ItemTemplate.SLOT_AGATHION)
+		else if(_bodyPart == ItemTemplate.SLOT_AGATHION)
 			_exType = ExItemType.AGATHION;
 
 		_type2 = _exType == ExItemType.OTHER_ITEMS ? TYPE2_ACCESSORY : _exType.mask();

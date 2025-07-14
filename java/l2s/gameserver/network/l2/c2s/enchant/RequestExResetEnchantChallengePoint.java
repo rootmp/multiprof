@@ -8,7 +8,6 @@ import l2s.gameserver.network.l2.s2c.enchant.ExChangedEnchantTargetItemProbabili
 import l2s.gameserver.network.l2.s2c.enchant.ExResetEnchantChallengePoint;
 import l2s.gameserver.utils.ItemFunctions;
 
-
 public class RequestExResetEnchantChallengePoint implements IClientIncomingPacket
 {
 
@@ -25,7 +24,7 @@ public class RequestExResetEnchantChallengePoint implements IClientIncomingPacke
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 		if(_cDummy == 0)
 		{

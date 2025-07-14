@@ -22,7 +22,7 @@ public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 	{
 		_type = room.getMemberType(activeChar);
 		_members = new ArrayList<PartyRoomMemberInfo>(room.getPlayers().size());
-		for (Player $member : room.getPlayers())
+		for(Player $member : room.getPlayers())
 		{
 			_members.add(new PartyRoomMemberInfo($member, room.getMemberType($member)));
 		}
@@ -33,7 +33,7 @@ public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_members.size());
-		for (PartyRoomMemberInfo member_info : _members)
+		for(PartyRoomMemberInfo member_info : _members)
 		{
 			packetWriter.writeD(member_info.objectId);
 			packetWriter.writeS(member_info.name);
@@ -42,7 +42,7 @@ public class ExPartyRoomMemberPacket implements IClientOutgoingPacket
 			packetWriter.writeD(member_info.location);
 			packetWriter.writeD(member_info.memberType);
 			packetWriter.writeD(member_info.instanceReuses.size());
-			for (int i : member_info.instanceReuses)
+			for(int i : member_info.instanceReuses)
 			{
 				packetWriter.writeD(i);
 			}

@@ -24,7 +24,7 @@ public class DailyMission implements Comparable<DailyMission>
 		_completed = completed;
 		_value = value;
 		_finallyCompleted = completed && !_template.getHandler().isReusable(); // После рестарта не отображаем
-																				// окончательно завершенные задания.
+		// окончательно завершенные задания.
 	}
 
 	public int getId()
@@ -44,18 +44,18 @@ public class DailyMission implements Comparable<DailyMission>
 
 	public boolean isCompleted()
 	{
-		if (_completed)
+		if(_completed)
 		{
-			if (_template.getHandler().isReusable())
+			if(_template.getHandler().isReusable())
 			{
 				int value = getValue();
 				long reuseTime = _template.getHandler().getReusePattern().next(value * 1000L);
-				if (reuseTime <= System.currentTimeMillis())
+				if(reuseTime <= System.currentTimeMillis())
 				{
 					setValue(0);
 					setCompleted(false);
 
-					if (!CharacterDailyMissionsDAO.getInstance().insert(_owner, this))
+					if(!CharacterDailyMissionsDAO.getInstance().insert(_owner, this))
 					{
 						setValue(value);
 						setCompleted(true);
@@ -86,9 +86,9 @@ public class DailyMission implements Comparable<DailyMission>
 
 	public DailyMissionStatus getStatus()
 	{
-		if (!Config.EX_USE_TO_DO_LIST)
+		if(!Config.EX_USE_TO_DO_LIST)
 			return DailyMissionStatus.NOT_AVAILABLE;
-		if (_owner.getLevel() < _template.getMinLevel() || _owner.getLevel() > _template.getMaxLevel())
+		if(_owner.getLevel() < _template.getMinLevel() || _owner.getLevel() > _template.getMaxLevel())
 			return DailyMissionStatus.NOT_AVAILABLE;
 		return _template.getHandler().getStatus(_owner, this);
 	}
@@ -100,10 +100,10 @@ public class DailyMission implements Comparable<DailyMission>
 
 	public int getCurrentProgress()
 	{
-		if (!Config.EX_USE_TO_DO_LIST)
+		if(!Config.EX_USE_TO_DO_LIST)
 			return 0;
 
-		if (isCompleted())
+		if(isCompleted())
 			return getRequiredProgress();
 
 		return _template.getHandler().getProgress(_owner, this);

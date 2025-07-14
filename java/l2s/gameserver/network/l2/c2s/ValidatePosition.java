@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.geodata.GeoEngine;
 import l2s.gameserver.model.Player;
@@ -39,7 +40,7 @@ public class ValidatePosition implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		validatePosition(activeChar, _clientX, _clientY, _clientZ, _clientHeading);
@@ -47,27 +48,27 @@ public class ValidatePosition implements IClientIncomingPacket
 
 	public static boolean validatePosition(Player player, int clientX, int clientY, int clientZ, int clientHeading)
 	{
-		if (player.isTeleporting() || player.isInObserverMode() || player.isFalling(clientZ))
+		if(player.isTeleporting() || player.isInObserverMode() || player.isFalling(clientZ))
 			return false;
 
 		// We trust client heading.
-		if (clientHeading >= 0)
+		if(clientHeading >= 0)
 		{
 			player.setHeading(clientHeading);
 		}
 
 		// We trust client Z if there is no geodata (not retail-like but we want server
 		// to work without geodata too).
-		if (!GeoEngine.hasGeo(player.getX(), player.getY(), player.getGeoIndex()))
+		if(!GeoEngine.hasGeo(player.getX(), player.getY(), player.getGeoIndex()))
 		{
 			player.setXYZ(player.getX(), player.getY(), clientZ, true);
 		}
 
 		// We don't trust the client coordinates so we move client to server coordinates
 		// if difference is too big.
-		if (!PositionUtils.checkIfInRange(MAX_VALID_DIST, player.getX(), player.getY(), player.getZ(), clientX, clientY, clientZ, true))
+		if(!PositionUtils.checkIfInRange(MAX_VALID_DIST, player.getX(), player.getY(), player.getZ(), clientX, clientY, clientZ, true))
 		{
-			if (player.isInBoat())
+			if(player.isInBoat())
 				player.sendPacket(player.getBoat().validateLocationPacket(player));
 			else
 				player.sendPacket(new ValidateLocationPacket(player));

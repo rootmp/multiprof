@@ -20,25 +20,25 @@ public class RareUpgradeData
 	public long commission;
 	@IntArray
 	public int[] result_item;
-	
+
 	public int getItemId()
 	{
-		return upgrade_item.id;   
+		return upgrade_item.id;
 	}
-	
+
 	public int getEnchantLevel()
 	{
-		return upgrade_item.enchant;   
+		return upgrade_item.enchant;
 	}
 
 	public long getPrice()
 	{
-		return commission;  
+		return commission;
 	}
-	
+
 	public List<UpgradeItemData> getRequiredItems()
 	{
-		return material_items;   
+		return material_items;
 	}
 
 	public int getResultItemId()
@@ -53,6 +53,6 @@ public class RareUpgradeData
 
 	public int getResultItemCount()
 	{
-		return 1; 
+		return 1;
 	}
 }

@@ -58,7 +58,7 @@ public class RequestHuntPassReward implements IClientIncomingPacket
 
 		if(reward == null)
 			return;
-		
+
 		//проверка лимита инвентаря 
 		if(reward.getId() != 72286)
 		{

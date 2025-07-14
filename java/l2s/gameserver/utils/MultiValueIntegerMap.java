@@ -29,7 +29,7 @@ public class MultiValueIntegerMap
 	public TIntList allValues()
 	{
 		final TIntList result = new TIntArrayList();
-		for (TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			result.addAll(iterator.value());
@@ -75,12 +75,12 @@ public class MultiValueIntegerMap
 	public Integer remove(final Integer key, final Integer value)
 	{
 		final TIntList valuesForKey = map.get(key);
-		if (valuesForKey == null)
+		if(valuesForKey == null)
 			return null;
 		final boolean removed = valuesForKey.remove(value);
-		if (!removed)
+		if(!removed)
 			return null;
-		if (valuesForKey.isEmpty())
+		if(valuesForKey.isEmpty())
 			this.remove(key);
 		return value;
 	}
@@ -88,15 +88,15 @@ public class MultiValueIntegerMap
 	public int removeValue(int value)
 	{
 		final TIntList toRemove = new TIntArrayList(1);
-		for (TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			iterator.value().remove(value);
-			if (iterator.value().isEmpty())
+			if(iterator.value().isEmpty())
 				toRemove.add(iterator.key());
 		}
 
-		for (int key : toRemove.toArray())
+		for(int key : toRemove.toArray())
 			remove(key);
 
 		return value;
@@ -105,7 +105,7 @@ public class MultiValueIntegerMap
 	public Integer put(int key, int value)
 	{
 		TIntList coll = map.get(key);
-		if (coll == null)
+		if(coll == null)
 		{
 			coll = new TSynchronizedIntList(new TIntArrayList());
 			map.put(key, coll);
@@ -116,10 +116,10 @@ public class MultiValueIntegerMap
 
 	public boolean containsValue(int value)
 	{
-		for (TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
-			if (iterator.value().contains(value))
+			if(iterator.value().contains(value))
 				return true;
 		}
 		return false;
@@ -134,23 +134,23 @@ public class MultiValueIntegerMap
 	public int size(final Integer key)
 	{
 		final TIntList coll = map.get(key);
-		if (coll == null)
+		if(coll == null)
 			return 0;
 		return coll.size();
 	}
 
 	public boolean putAll(int key, TIntCollection values)
 	{
-		if (values == null || values.size() == 0)
+		if(values == null || values.size() == 0)
 			return false;
 
 		boolean result = false;
 		TIntList coll = map.get(key);
-		if (coll == null)
+		if(coll == null)
 		{
 			coll = new TSynchronizedIntList(new TIntArrayList());
 			coll.addAll(values);
-			if (coll.size() > 0)
+			if(coll.size() > 0)
 			{
 				map.put(key, coll);
 				result = true;
@@ -165,7 +165,7 @@ public class MultiValueIntegerMap
 	public int totalSize()
 	{
 		int total = 0;
-		for (TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<TIntList> iterator = map.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			total += iterator.value().size();

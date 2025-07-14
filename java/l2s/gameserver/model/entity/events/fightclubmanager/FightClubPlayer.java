@@ -102,7 +102,7 @@ public class FightClubPlayer implements Serializable
 
 	public void increaseKills(boolean player1Pet0)
 	{
-		if (player1Pet0)
+		if(player1Pet0)
 		{
 			_playerKills++;
 		}
@@ -114,7 +114,7 @@ public class FightClubPlayer implements Serializable
 
 	public void setKills(int value, boolean player1Pet0)
 	{
-		if (player1Pet0)
+		if(player1Pet0)
 		{
 			_playerKills = value;
 		}
@@ -126,17 +126,15 @@ public class FightClubPlayer implements Serializable
 
 	public int getKills(boolean player1Pet0)
 	{
-		if (player1Pet0)
-		{
-			return _playerKills;
-		}
+		if(player1Pet0)
+		{ return _playerKills; }
 		return _petKills;
 	}
 
 	public void increaseEventSpecificScore(String scoreKey)
 	{
 		int value = _otherCreaturesScores.get(scoreKey);
-		if (!_otherCreaturesScores.containsKey(scoreKey))
+		if(!_otherCreaturesScores.containsKey(scoreKey))
 		{
 			_otherCreaturesScores.put(scoreKey, 0);
 		}
@@ -150,10 +148,8 @@ public class FightClubPlayer implements Serializable
 
 	public int getEventSpecificScore(String scoreKey)
 	{
-		if (!_otherCreaturesScores.containsKey(scoreKey))
-		{
-			return 0;
-		}
+		if(!_otherCreaturesScores.containsKey(scoreKey))
+		{ return 0; }
 		return _otherCreaturesScores.get(scoreKey);
 	}
 

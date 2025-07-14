@@ -25,10 +25,8 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 		_charName = activeChar.getName();
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
-		{
-			return;
-		}
+		if(clan == null)
+		{ return; }
 
 		_clanObjectId = clan.getClanId();
 		_unitName = clan.getName();
@@ -38,7 +36,7 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 		_hasCastle = clan.getCastle();
 
 		ClanHall clanHall = ResidenceHolder.getInstance().getResidence(ClanHall.class, clan.getHasHideout());
-		if (clanHall != null)
+		if(clanHall != null)
 		{
 			_hasClanHall = clanHall.getId();
 			_hasInstantClanHall = clanHall.getInstantZoneId();
@@ -56,14 +54,14 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 
 		Alliance ally = clan.getAlliance();
 
-		if (ally != null)
+		if(ally != null)
 		{
 			_allianceObjectId = ally.getAllyId();
 			_allianceName = ally.getAllyName();
 			_allianceCrestId = ally.getAllyCrestId();
 		}
 
-		for (UnitMember m : clan)
+		for(UnitMember m : clan)
 		{
 			_members.add(new PledgePacketMember(m));
 		}
@@ -82,12 +80,12 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_clanCrestId); // crest id .. is used again
 		packetWriter.writeD(_level);
 		packetWriter.writeD(_hasCastle);
-		if (_hasInstantClanHall > 0)
+		if(_hasInstantClanHall > 0)
 		{
 			packetWriter.writeD(1);
 			packetWriter.writeD(_hasInstantClanHall);
 		}
-		else if (_hasClanHall != 0)
+		else if(_hasClanHall != 0)
 		{
 			packetWriter.writeD(0);
 			packetWriter.writeD(_hasClanHall);
@@ -109,7 +107,7 @@ public class GMViewPledgeInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0x00);// territory Id
 
 		packetWriter.writeD(_members.size());
-		for (PledgePacketMember m : _members)
+		for(PledgePacketMember m : _members)
 		{
 			packetWriter.writeS(m._name);
 			packetWriter.writeD(m._level);

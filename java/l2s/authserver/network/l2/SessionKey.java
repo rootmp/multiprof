@@ -35,7 +35,7 @@ public class SessionKey
 		hashCode *= 17;
 		hashCode += playOK2;
 		hashCode *= 37;
-		if (Config.SHOW_LICENCE)
+		if(Config.SHOW_LICENCE)
 		{
 			hashCode += loginOK1;
 			hashCode *= 51;
@@ -57,16 +57,16 @@ public class SessionKey
 
 	public boolean equals(Object o)
 	{
-		if (this == o)
+		if(this == o)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() == this.getClass())
+		if(o.getClass() == this.getClass())
 		{
 			SessionKey skey = (SessionKey) o;
-			if (playOkID1 == skey.playOkID1 && playOkID2 == skey.playOkID2)
+			if(playOkID1 == skey.playOkID1 && playOkID2 == skey.playOkID2)
 			{
-				if (Config.SHOW_LICENCE)
+				if(Config.SHOW_LICENCE)
 					return skey.checkLoginPair(loginOkID1, loginOkID2);
 				return true;
 			}

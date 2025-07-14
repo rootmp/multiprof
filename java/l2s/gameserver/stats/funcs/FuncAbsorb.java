@@ -25,7 +25,7 @@ public class FuncAbsorb extends Func
 	public void calc(Env env, StatModifierType modifierType)
 	{
 		double chance = this.chance * Config.ALT_VAMPIRIC_CHANCE_MOD;
-		if (chance >= 100 || Rnd.chance(chance))
+		if(chance >= 100 || Rnd.chance(chance))
 			env.value += value;
 	}
 }

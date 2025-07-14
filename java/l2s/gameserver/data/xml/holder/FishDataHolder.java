@@ -1,12 +1,11 @@
 package l2s.gameserver.data.xml.holder;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.fish.FishRewardsTemplate;
 import l2s.gameserver.templates.fish.LureTemplate;
 import l2s.gameserver.templates.fish.RodTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux

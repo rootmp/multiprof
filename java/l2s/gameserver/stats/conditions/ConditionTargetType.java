@@ -28,7 +28,7 @@ public class ConditionTargetType extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.target;
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case PLAYABLE:
 				return target != null && target.isPlayable();

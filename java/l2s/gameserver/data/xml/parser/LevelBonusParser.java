@@ -41,12 +41,12 @@ public final class LevelBonusParser extends AbstractParser<LevelBonusHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("lvl_bonus".equalsIgnoreCase(element.getName()))
+			if("lvl_bonus".equalsIgnoreCase(element.getName()))
 			{
-				for (Element e : element.elements())
+				for(Element e : element.elements())
 				{
 					int lvl = Integer.parseInt(e.attributeValue("lvl"));
 					double bonusMod = Double.parseDouble(e.attributeValue("value"));

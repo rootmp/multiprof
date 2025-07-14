@@ -30,7 +30,7 @@ public final class LinePointIterator
 		_sx = srcX < dstX ? 1 : -1;
 		_sy = srcY < dstY ? 1 : -1;
 
-		if (_dx >= _dy)
+		if(_dx >= _dy)
 		{
 			_error = _dx / 2;
 		}
@@ -44,19 +44,19 @@ public final class LinePointIterator
 
 	public boolean next()
 	{
-		if (_first)
+		if(_first)
 		{
 			_first = false;
 			return true;
 		}
-		else if (_dx >= _dy)
+		else if(_dx >= _dy)
 		{
-			if (_srcX != _dstX)
+			if(_srcX != _dstX)
 			{
 				_srcX += _sx;
 
 				_error += _dy;
-				if (_error >= _dx)
+				if(_error >= _dx)
 				{
 					_srcY += _sy;
 					_error -= _dx;
@@ -67,12 +67,12 @@ public final class LinePointIterator
 		}
 		else
 		{
-			if (_srcY != _dstY)
+			if(_srcY != _dstY)
 			{
 				_srcY += _sy;
 
 				_error += _dx;
-				if (_error >= _dy)
+				if(_error >= _dy)
 				{
 					_srcX += _sx;
 					_error -= _dy;

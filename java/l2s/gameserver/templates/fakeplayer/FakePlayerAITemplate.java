@@ -59,7 +59,7 @@ public class FakePlayerAITemplate
 	public static FakePlayerAITemplate parse(Element element)
 	{
 		Element charCreateElement = element.element("on_character_create");
-		if (charCreateElement == null)
+		if(charCreateElement == null)
 		{
 			_log.warn("Cannot find \"on_character_create\" element!");
 			return null;
@@ -72,12 +72,12 @@ public class FakePlayerAITemplate
 		OrdinaryActions onCreateAction = OrdinaryActions.parse(actionsHolder, charCreateElement);
 
 		FakePlayerAITemplate template = new FakePlayerAITemplate(race, type, onCreateAction);
-		for (Iterator<Element> iterator = element.elementIterator("farm"); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator("farm"); iterator.hasNext();)
 		{
 			template.addFarmZone(FarmZoneTemplate.parse(actionsHolder, iterator.next()));
 		}
 
-		for (Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
 		{
 			Element e = iterator.next();
 			int actionId = Integer.parseInt(e.attributeValue("id"));

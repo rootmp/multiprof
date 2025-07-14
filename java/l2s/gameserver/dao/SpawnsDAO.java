@@ -49,7 +49,7 @@ public class SpawnsDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int npcId = rset.getInt("npc_id");
 				int x = rset.getInt("x");
@@ -66,7 +66,7 @@ public class SpawnsDAO
 				result.add(template);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SpawnsDAO:restore()", e);
 		}
@@ -94,7 +94,7 @@ public class SpawnsDAO
 			statement.setInt(7, count);
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("SpawnsDAO:insert(npcId,x,y,z,heading,respawn,count)", e);
 			return false;
@@ -125,7 +125,7 @@ public class SpawnsDAO
 			statement = con.prepareStatement(DELETE_SQL_QUERY);
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("SpawnsDAO:delete(npc)", e);
 			return false;

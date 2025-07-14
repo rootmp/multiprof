@@ -5,12 +5,11 @@ import java.util.Iterator;
 
 import org.dom4j.Element;
 
+import gnu.trove.map.TIntLongMap;
+import gnu.trove.map.hash.TIntLongHashMap;
 import l2s.commons.data.xml.AbstractParser;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.LevelUpRewardHolder;
-
-import gnu.trove.map.TIntLongMap;
-import gnu.trove.map.hash.TIntLongHashMap;
 
 /**
  * @author Bonux
@@ -44,15 +43,15 @@ public final class LevelUpRewardParser extends AbstractParser<LevelUpRewardHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("reward".equalsIgnoreCase(element.getName()))
+			if("reward".equalsIgnoreCase(element.getName()))
 			{
 				int level = Integer.parseInt(element.attributeValue("level"));
 				TIntLongMap items = new TIntLongHashMap();
 
-				for (Element e : element.elements())
+				for(Element e : element.elements())
 				{
 					int id = Integer.parseInt(e.attributeValue("id"));
 					long count = Long.parseLong(e.attributeValue("count"));

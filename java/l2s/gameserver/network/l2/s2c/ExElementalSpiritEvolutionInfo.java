@@ -23,12 +23,12 @@ public class ExElementalSpiritEvolutionInfo implements IClientOutgoingPacket
 	{
 		_elementId = elementId;
 		_elemental = player.getElementalList().get(elementId);
-		if (_elemental != null)
+		if(_elemental != null)
 		{
 			_currentEvolutionId = _elemental.getEvolution().getId();
 
 			ElementalEvolution nextEvolution = _elemental.getTemplate().getEvolution(_elemental.getEvolutionLevel() + 1);
-			if (nextEvolution != null)
+			if(nextEvolution != null)
 			{
 				_canRise = true;
 				_nextEvolutionId = nextEvolution.getId();
@@ -53,14 +53,14 @@ public class ExElementalSpiritEvolutionInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_elementId);
 		packetWriter.writeD(_currentEvolutionId);
 		packetWriter.writeD(_canRise);
-		if (_canRise)
+		if(_canRise)
 		{
 			packetWriter.writeD(_nextEvolutionId);
 			packetWriter.writeF(100); // Required percents?!?
 
 			List<ItemData> riseLevelCost = _elemental.getEvolution().getRiseLevelCost();
 			packetWriter.writeD(riseLevelCost.size()); // Elementals Count
-			for (ItemData item : riseLevelCost)
+			for(ItemData item : riseLevelCost)
 			{
 				packetWriter.writeD(item.getId()); // Item ID
 				packetWriter.writeQ(item.getCount()); // Item Count

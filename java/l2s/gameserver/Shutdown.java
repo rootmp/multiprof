@@ -55,7 +55,7 @@ public class Shutdown extends Thread
 		@Override
 		public void run()
 		{
-			switch (shutdownCounter)
+			switch(shutdownCounter)
 			{
 				case 1800:
 				case 900:
@@ -65,7 +65,7 @@ public class Shutdown extends Thread
 				case 180:
 				case 120:
 				case 60:
-					if (Config.SHUTDOWN_ANN_TYPE == FULL_ANNOUNCES)
+					if(Config.SHUTDOWN_ANN_TYPE == FULL_ANNOUNCES)
 					{
 						Announcements.announceToAllFromStringHolder("THE_SERVER_WILL_BE_COMING_DOWN_IN_S1_MINUTES", String.valueOf(shutdownCounter / 60));
 					}
@@ -74,13 +74,13 @@ public class Shutdown extends Thread
 				case 20:
 				case 10:
 				case 5:
-					if (Config.SHUTDOWN_ANN_TYPE == FULL_ANNOUNCES || Config.SHUTDOWN_ANN_TYPE == OFFLIKE_ANNOUNCES)
+					if(Config.SHUTDOWN_ANN_TYPE == FULL_ANNOUNCES || Config.SHUTDOWN_ANN_TYPE == OFFLIKE_ANNOUNCES)
 					{
 						Announcements.announceToAll(new SystemMessagePacket(SystemMsg.THE_SERVER_WILL_BE_COMING_DOWN_IN_S1_SECONDS__PLEASE_FIND_A_SAFE_PLACE_TO_LOG_OUT).addInteger(shutdownCounter));
 					}
 					break;
 				case 0:
-					switch (shutdownMode)
+					switch(shutdownMode)
 					{
 						case SHUTDOWN:
 							Runtime.getRuntime().exit(SHUTDOWN);
@@ -135,10 +135,10 @@ public class Shutdown extends Thread
 	 */
 	public synchronized void schedule(int seconds, int shutdownMode)
 	{
-		if (seconds < 0)
+		if(seconds < 0)
 			return;
 
-		if (counter != null)
+		if(counter != null)
 			counter.cancel();
 
 		this.shutdownMode = shutdownMode;
@@ -163,7 +163,7 @@ public class Shutdown extends Thread
 		{
 			cronTime = new SchedulingPattern(time);
 		}
-		catch (InvalidPatternException e)
+		catch(InvalidPatternException e)
 		{
 			return;
 		}
@@ -178,7 +178,7 @@ public class Shutdown extends Thread
 	public synchronized void cancel()
 	{
 		shutdownMode = NONE;
-		if (counter != null)
+		if(counter != null)
 			counter.cancel();
 		counter = null;
 	}
@@ -193,7 +193,7 @@ public class Shutdown extends Thread
 		disconnectAllPlayers();
 
 		GameServer gameServer = GameServer.getInstance();
-		if (gameServer != null)
+		if(gameServer != null)
 			gameServer.getListeners().onShutdown();
 
 		System.out.println("Saving data...");
@@ -204,7 +204,7 @@ public class Shutdown extends Thread
 			System.out.println("Shutting down thread pool...");
 			ThreadPoolManager.getInstance().shutdown();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -224,7 +224,7 @@ public class Shutdown extends Thread
 			System.out.println("Shutting down database communication...");
 			DatabaseFactory.getInstance().close();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -239,29 +239,29 @@ public class Shutdown extends Thread
 			RaidBossSpawnManager.getInstance().updateAllStatusDb();
 			System.out.println("RaidBossSpawnManager: Data saved.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 
-		if (Config.ENABLE_OLYMPIAD)
+		if(Config.ENABLE_OLYMPIAD)
 			try
 			{
 				OlympiadDatabase.save();
 				System.out.println("Olympiad: Data saved.");
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
 
-		if (Config.ALLOW_WEDDING)
+		if(Config.ALLOW_WEDDING)
 			try
 			{
 				CoupleManager.getInstance().store();
 				System.out.println("CoupleManager: Data saved.");
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
@@ -271,7 +271,7 @@ public class Shutdown extends Thread
 			Hero.getInstance().shutdown();
 			System.out.println("Hero: Data saved.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -281,7 +281,7 @@ public class Shutdown extends Thread
 			ClanTable.getInstance().storeClanWars();
 			System.out.println("Clan War: Data saved.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -291,7 +291,7 @@ public class Shutdown extends Thread
 			ClanTable.getInstance().saveClanHuntingProgress();
 			System.out.println("Clan Data: Hunting progress saved.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -301,20 +301,20 @@ public class Shutdown extends Thread
 			ClanSearchManager.getInstance().save();
 			System.out.println("ClanSearchManager: Data saved.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 
 		// Save bot reports to database
-		if (Config.BOTREPORT_ENABLED)
+		if(Config.BOTREPORT_ENABLED)
 		{
 			try
 			{
 				BotReportManager.getInstance().saveReportedCharData();
 				System.out.println("BotReportManager: Data saved.");
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
@@ -323,13 +323,13 @@ public class Shutdown extends Thread
 
 	private void disconnectAllPlayers()
 	{
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 		{
 			try
 			{
 				player.logout();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				System.out.println("Error while disconnecting: " + player + "!");
 				e.printStackTrace();

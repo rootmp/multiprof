@@ -18,9 +18,9 @@ public class ExEventMatchTeamInfo implements IClientOutgoingPacket
 		leader_id = party.get(0).getObjectId();
 		loot = party.get(0).getParty().getLootDistribution();
 
-		for (Player member : party)
+		for(Player member : party)
 		{
-			if (!member.equals(exclude))
+			if(!member.equals(exclude))
 			{
 				members.add(new EventMatchTeamInfo(member));
 			}
@@ -56,7 +56,7 @@ public class ExEventMatchTeamInfo implements IClientOutgoingPacket
 
 			m_servitors = new ArrayList<MathMember>();
 
-			for (Servitor s : player.getServitors())
+			for(Servitor s : player.getServitors())
 			{
 				MathMember m_servitor = new MathMember();
 				m_servitor.name = s.getName();

@@ -22,21 +22,17 @@ public class ConditionPlayerHasMpBetween extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
-		{
-			return false;
-		}
+		if(character == null)
+		{ return false; }
 
-		if (_percentage)
+		if(_percentage)
 		{
 			int hpPer = (int) character.getCurrentMpPercents();
 			return (hpPer >= _min && hpPer <= _max);
 		}
-		if (_max == -1)
-		{
-			return (character.getMaxMp() >= _min);
-		}
-		
+		if(_max == -1)
+		{ return (character.getMaxMp() >= _min); }
+
 		return (character.getMaxMp() >= _min && character.getMaxMp() <= _max);
 	}
 }

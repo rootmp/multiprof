@@ -43,13 +43,13 @@ public class PledgeBonusUtils
 		int level = 0;
 
 		int temp = MAX_ATTENDANCE_PROGRESS / 4;
-		if (progress >= temp * 4)
+		if(progress >= temp * 4)
 			level = 4;
-		else if (progress >= temp * 3)
+		else if(progress >= temp * 3)
 			level = 3;
-		else if (progress >= temp * 2)
+		else if(progress >= temp * 2)
 			level = 2;
-		else if (progress >= temp * 1)
+		else if(progress >= temp * 1)
 			level = 1;
 
 		return level;
@@ -60,13 +60,13 @@ public class PledgeBonusUtils
 		int level = 0;
 
 		int temp = MAX_HUNTING_PROGRESS / 4;
-		if (progress >= temp * 4)
+		if(progress >= temp * 4)
 			level = 4;
-		else if (progress >= temp * 3)
+		else if(progress >= temp * 3)
 			level = 3;
-		else if (progress >= temp * 2)
+		else if(progress >= temp * 2)
 			level = 2;
-		else if (progress >= temp * 1)
+		else if(progress >= temp * 1)
 			level = 1;
 
 		return level;
@@ -85,33 +85,33 @@ public class PledgeBonusUtils
 	public static boolean tryReceiveReward(int type, Player player)
 	{
 		Clan clan = player.getClan();
-		if (clan == null)
+		if(clan == null)
 			return false;
 
-		switch (type)
+		switch(type)
 		{
 			case 0:
 			{
-				if (!isAttendanceRewardAvailable(player))
+				if(!isAttendanceRewardAvailable(player))
 					return false;
 
 				int rewardId = ATTENDANCE_REWARDS.get(clan.getYesterdayAttendanceReward());
-				if (rewardId <= 0)
+				if(rewardId <= 0)
 					return false;
 
 				SkillEntry skill = SkillEntry.makeSkillEntry(SkillEntryType.NONE, rewardId, 1);
-				if (skill != null)
+				if(skill != null)
 					skill.getEffects(player, player);
 
 				player.setVar(ATTENDANCE_REWARD_RECEIVED_VAR, true, TimeUtils.DAILY_DATE_PATTERN.next(System.currentTimeMillis()));
 				return true;
 			}
 			case 1:
-				if (!isHuntingRewardAvailable(player))
+				if(!isHuntingRewardAvailable(player))
 					return false;
 
 				int rewardId = HUNTING_REWARDS.get(clan.getYesterdayHuntingReward());
-				if (rewardId <= 0)
+				if(rewardId <= 0)
 					return false;
 
 				ItemFunctions.addItem(player, rewardId, 1, true);

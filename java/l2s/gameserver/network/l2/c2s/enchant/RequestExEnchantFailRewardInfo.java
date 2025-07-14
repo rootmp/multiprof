@@ -24,12 +24,12 @@ public class RequestExEnchantFailRewardInfo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.getEnchantItem() == null || player.getEnchantScroll() == null)
+		if(player.getEnchantItem() == null || player.getEnchantScroll() == null)
 			return;
-		
+
 		player.sendPacket(new ExResetEnchantItemFailRewardInfo(player, _itemObjId));
 	}
 }

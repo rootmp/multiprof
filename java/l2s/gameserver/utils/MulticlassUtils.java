@@ -27,13 +27,13 @@ public final class MulticlassUtils
 	{
 		StringTokenizer st = new StringTokenizer(bypass, "_");
 		String cmd = st.nextToken();
-		if (cmd.equalsIgnoreCase("list"))
+		if(cmd.equalsIgnoreCase("list"))
 		{
-			if (st.hasMoreTokens())
+			if(st.hasMoreTokens())
 			{
 				int raceId = Integer.parseInt(st.nextToken());
 				Race race = Race.VALUES[raceId];
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int classTypeId = Integer.parseInt(st.nextToken());
 					ClassType classType = ClassType.VALUES[classTypeId];
@@ -49,14 +49,14 @@ public final class MulticlassUtils
 				showMulticlassList(player);
 			}
 		}
-		else if (cmd.equalsIgnoreCase("learn"))
+		else if(cmd.equalsIgnoreCase("learn"))
 		{
-			if (!st.hasMoreTokens())
+			if(!st.hasMoreTokens())
 				return;
 
 			int id = Integer.parseInt(st.nextToken());
 			ClassId classId = ClassId.valueOf(id);
-			if (!checkMulticlass(player.getClassId(), classId))
+			if(!checkMulticlass(player.getClassId(), classId))
 				return;
 
 			showMulticlassAcquireList(player, classId);
@@ -65,7 +65,7 @@ public final class MulticlassUtils
 
 	private static void showMulticlassList(Player player, Race race, ClassType classType)
 	{
-		if (!Config.MULTICLASS_SYSTEM_ENABLED)
+		if(!Config.MULTICLASS_SYSTEM_ENABLED)
 			return;
 
 		HtmTemplates tpls = HtmCache.getInstance().getTemplates("custom/multiclass.htm", player);
@@ -77,9 +77,9 @@ public final class MulticlassUtils
 		String backButton = "";
 
 		StringBuilder content = new StringBuilder();
-		if (race == null)
+		if(race == null)
 		{
-			for (Race r : Race.VALUES)
+			for(Race r : Race.VALUES)
 			{
 				String tempClassButton = tpls.get(1);
 				tempClassButton = tempClassButton.replace("<?bypass?>", "list_" + r.ordinal());
@@ -88,27 +88,27 @@ public final class MulticlassUtils
 				content.append(tempClassButton);
 			}
 		}
-		else if (classType == null && showByClassType)
+		else if(classType == null && showByClassType)
 		{
-			for (ClassType c : ClassType.VALUES)
+			for(ClassType c : ClassType.VALUES)
 			{
-				for (ClassId classId : ClassId.VALUES)
+				for(ClassId classId : ClassId.VALUES)
 				{
-					if (classId.isDummy())
+					if(classId.isDummy())
 						continue;
 
-					if (!classId.isOfRace(race))
+					if(!classId.isOfRace(race))
 						continue;
 
-					if (!classId.isOfType(c))
+					if(!classId.isOfType(c))
 						continue;
 
-					if (!checkMulticlass(playerClassId, classId))
+					if(!checkMulticlass(playerClassId, classId))
 						continue;
 
 					String tempClassButton = tpls.get(1);
 					tempClassButton = tempClassButton.replace("<?bypass?>", "list_" + race.ordinal() + "_" + c.ordinal());
-					if (classId.getClassLevel() == ClassLevel.NONE) // В клиенте нет иконок для 1й профессии.
+					if(classId.getClassLevel() == ClassLevel.NONE) // В клиенте нет иконок для 1й профессии.
 						tempClassButton = tempClassButton.replace("<?image?>", tpls.get(2).replace("<?image_mark?>", classId.getRace().toString()));
 					else
 						tempClassButton = tempClassButton.replace("<?image?>", tpls.get(2).replace("<?image_mark?>", String.valueOf(classId.getId())));
@@ -122,23 +122,23 @@ public final class MulticlassUtils
 		}
 		else
 		{
-			for (ClassId classId : ClassId.VALUES)
+			for(ClassId classId : ClassId.VALUES)
 			{
-				if (classId.isDummy())
+				if(classId.isDummy())
 					continue;
 
-				if (!classId.isOfRace(race))
+				if(!classId.isOfRace(race))
 					continue;
 
-				if (classType != null && showByClassType && !classId.isOfType(classType))
+				if(classType != null && showByClassType && !classId.isOfType(classType))
 					continue;
 
-				if (!checkMulticlass(playerClassId, classId))
+				if(!checkMulticlass(playerClassId, classId))
 					continue;
 
 				String tempClassButton = tpls.get(1);
 				tempClassButton = tempClassButton.replace("<?bypass?>", "learn_" + classId.getId());
-				if (classId.getClassLevel() == ClassLevel.NONE) // В клиенте нет иконок для 1й профессии.
+				if(classId.getClassLevel() == ClassLevel.NONE) // В клиенте нет иконок для 1й профессии.
 					tempClassButton = tempClassButton.replace("<?image?>", tpls.get(2).replace("<?image_mark?>", classId.getRace().toString()));
 				else
 					tempClassButton = tempClassButton.replace("<?image?>", tpls.get(2).replace("<?image_mark?>", String.valueOf(classId.getId())));
@@ -146,7 +146,7 @@ public final class MulticlassUtils
 				content.append(tempClassButton);
 			}
 			backButton = tpls.get(3);
-			if (classType != null && showByClassType)
+			if(classType != null && showByClassType)
 				backButton = backButton.replace("<?bypass?>", "list_" + race.ordinal());
 			else
 				backButton = backButton.replace("<?bypass?>", "list");
@@ -175,10 +175,10 @@ public final class MulticlassUtils
 
 		final ExAcquirableSkillListByClass asl = new ExAcquirableSkillListByClass(AcquireType.MULTICLASS, skills.size());
 
-		for (SkillLearn s : skills)
+		for(SkillLearn s : skills)
 			asl.addSkill(s.getId(), s.getLevel(), s.getLevel(), s.getCost(), s.getMinLevel());
 
-		if (skills.size() == 0)
+		if(skills.size() == 0)
 		{
 			player.sendPacket(AcquireSkillDonePacket.STATIC);
 			player.sendPacket(SystemMsg.THERE_ARE_NO_OTHER_SKILLS_TO_LEARN);
@@ -194,13 +194,13 @@ public final class MulticlassUtils
 
 	public static boolean checkMulticlass(ClassId playerClassId, ClassId multiClassId)
 	{
-		if (playerClassId == multiClassId)
+		if(playerClassId == multiClassId)
 			return false;
 
-		if (multiClassId.isDummy())
+		if(multiClassId.isDummy())
 			return false;
 
-		if (!playerClassId.isOfLevel(multiClassId.getClassLevel()))
+		if(!playerClassId.isOfLevel(multiClassId.getClassLevel()))
 			return false;
 
 		return true;

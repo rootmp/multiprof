@@ -22,10 +22,10 @@ public class ItemsEnsoulDAO
 
 	private static final String RESTORE_ITEM_ENSOUL = "SELECT type, id, ensoul_id FROM items_ensoul WHERE object_id = ?";
 	private static final String REMOVE_ITEM_ENSOUL = "DELETE FROM items_ensoul WHERE object_id = ? AND type=? AND id=?";
-	
+
 	private static final String STORE_ITEM_ENSOUL = "INSERT INTO items_ensoul (`object_id`, `type`, `id` , `ensoul_id`) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE type = ?, id = ?, ensoul_id = ?";
 	private static final String DELETE_ITEM_ENSOUL2 = "DELETE FROM items_ensoul WHERE object_id = ?";
-	
+
 	private static final ItemsEnsoulDAO instance = new ItemsEnsoulDAO();
 
 	public static final ItemsEnsoulDAO getInstance()
@@ -93,7 +93,7 @@ public class ItemsEnsoulDAO
 			DbUtils.closeQuietly(con, statement);
 		}
 	}
-	
+
 	public void delete(int objectId, int type, int id)
 	{
 		Connection con = null;
@@ -125,40 +125,40 @@ public class ItemsEnsoulDAO
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement(STORE_ITEM_ENSOUL);
-			
+
 			statement.setInt(1, objectId);
-			for (int i = 0; i < _ensoulOptions.length; i++)
+			for(int i = 0; i < _ensoulOptions.length; i++)
 			{
-				if (_ensoulOptions[i] == null)
+				if(_ensoulOptions[i] == null)
 				{
 					continue;
 				}
-				
+
 				statement.setInt(2, 1); // regular options
 				statement.setInt(3, i);
 				statement.setInt(4, _ensoulOptions[i].getId());
-				
+
 				statement.setInt(5, 1); // regular options
 				statement.setInt(6, i);
 				statement.setInt(7, _ensoulOptions[i].getId());
 				statement.execute();
 			}
-			
-			for (int i = 0; i < _ensoulSpecialOptions.length; i++)
+
+			for(int i = 0; i < _ensoulSpecialOptions.length; i++)
 			{
-				if (_ensoulSpecialOptions[i] == null)
+				if(_ensoulSpecialOptions[i] == null)
 				{
 					continue;
 				}
-				
+
 				statement.setInt(2, 2); // special options
 				statement.setInt(3, i);
 				statement.setInt(4, _ensoulSpecialOptions[i].getId());
-				
+
 				statement.setInt(5, 2); // special options
 				statement.setInt(6, i);
 				statement.setInt(7, _ensoulSpecialOptions[i].getId());
-				
+
 				statement.execute();
 			}
 		}

@@ -2,8 +2,9 @@ package l2s.gameserver.templates.relics;
 
 import java.util.List;
 import java.util.Map;
-import l2s.gameserver.skills.SkillEntry;
+
 import l2s.gameserver.data.xml.holder.SkillHolder;
+import l2s.gameserver.skills.SkillEntry;
 
 public class RelicsTemplate
 {
@@ -32,7 +33,7 @@ public class RelicsTemplate
 	{
 		return relics_id;
 	}
-	
+
 	public int getItemId()
 	{
 		return item_id;

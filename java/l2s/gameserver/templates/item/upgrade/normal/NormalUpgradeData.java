@@ -88,10 +88,8 @@ public class NormalUpgradeData
 
 	public void setSuccessResult(NormalUpgradeResult successResult)
 	{
-		if (_successResult != null)
-		{
-			return;
-		}
+		if(_successResult != null)
+		{ return; }
 		_successResult = successResult;
 	}
 
@@ -102,10 +100,8 @@ public class NormalUpgradeData
 
 	public void setFailResult(NormalUpgradeResult failResult)
 	{
-		if (_failResult != null)
-		{
-			return;
-		}
+		if(_failResult != null)
+		{ return; }
 		_failResult = failResult;
 	}
 
@@ -116,10 +112,8 @@ public class NormalUpgradeData
 
 	public void setBonusResult(NormalUpgradeResult bonusResult)
 	{
-		if (_bonusResult != null)
-		{
-			return;
-		}
+		if(_bonusResult != null)
+		{ return; }
 		_bonusResult = bonusResult;
 	}
 }

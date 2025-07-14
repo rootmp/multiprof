@@ -46,7 +46,7 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("date_info"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("date_info"); iterator.hasNext();)
 		{
 			Element firstElement = iterator.next();
 			String[] months = firstElement.attributeValue("month").split(";");
@@ -61,7 +61,7 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 			ItemData bonusReward = new ItemData(Integer.parseInt(bonus_reward[0]), Integer.parseInt(bonus_reward[1]));
 
 			List<MissionLevelRewardData> rewards = new ArrayList<>();
-			for (Iterator<Element> secondIterator = firstElement.elementIterator("points"); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = firstElement.elementIterator("points"); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
 				int level = parseInt(secondElement, "level");
@@ -74,15 +74,15 @@ public class MissionLevelRewardsParser extends AbstractParser<MissionLevelReward
 				rewards.add(new MissionLevelRewardData(level, value, baseRewardId, baseRewardCount, additionalRewardId, additionalRewardCount));
 			}
 
-			for (String mStr : months)
+			for(String mStr : months)
 			{
 				int month = Integer.parseInt(mStr.trim());
-				for (String yStr : years)
+				for(String yStr : years)
 				{
 					int year = Integer.parseInt(yStr.trim());
 
 					MissionLevelRewardTemplate template = new MissionLevelRewardTemplate(month, year, maxRewardLvl, finalReward, bonusReward);
-					for (MissionLevelRewardData r : rewards)
+					for(MissionLevelRewardData r : rewards)
 						template.addReward(r);
 
 					getHolder().addReward(template);

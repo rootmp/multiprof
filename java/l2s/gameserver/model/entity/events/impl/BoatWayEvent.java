@@ -36,7 +36,7 @@ public class BoatWayEvent extends Event
 		_ticketId = set.getInteger("ticketId", 0);
 		_returnLoc = Location.parseLoc(set.getString("return_point"));
 		String className = set.getString("class", null);
-		if (className != null)
+		if(className != null)
 		{
 			_boat = BoatHolder.getInstance().initBoat(getName(), className);
 			Location loc = Location.parseLoc(set.getString("spawn_point"));
@@ -50,7 +50,7 @@ public class BoatWayEvent extends Event
 		_boat.setWay(className != null ? 1 : 0, this);
 
 		final String brPoints = set.getString("broadcast_point", null);
-		if (brPoints == null)
+		if(brPoints == null)
 		{
 			_broadcastPoints = new Location[1];
 			_broadcastPoints[0] = _boat.getLoc();
@@ -59,27 +59,26 @@ public class BoatWayEvent extends Event
 		{
 			final String[] points = brPoints.split(";");
 			_broadcastPoints = new Location[points.length];
-			for (int i = 0; i < points.length; i++)
+			for(int i = 0; i < points.length; i++)
 				_broadcastPoints[i] = Location.parseLoc(points[i]);
 		}
 	}
 
 	@Override
 	public void initEvent()
-	{
-	}
+	{}
 
 	@Override
 	public void startEvent()
 	{
 		IClientOutgoingPacket startPacket = _boat.startPacket();
-		for (Player player : _boat.getPlayers())
+		for(Player player : _boat.getPlayers())
 		{
-			if (_ticketId > 0)
+			if(_ticketId > 0)
 			{
-				if (player.consumeItem(_ticketId, 1, true))
+				if(player.consumeItem(_ticketId, 1, true))
 				{
-					if (startPacket != null)
+					if(startPacket != null)
 						player.sendPacket(startPacket);
 				}
 				else
@@ -90,7 +89,7 @@ public class BoatWayEvent extends Event
 			}
 			else
 			{
-				if (startPacket != null)
+				if(startPacket != null)
 					player.sendPacket(startPacket);
 			}
 		}
@@ -102,7 +101,7 @@ public class BoatWayEvent extends Event
 	{
 		List<BoatPoint> points = getObjects(BOAT_POINTS);
 
-		if (_boat.getRunState() >= points.size())
+		if(_boat.getRunState() >= points.size())
 		{
 			_boat.trajetEnded(true);
 			clearActions();
@@ -111,17 +110,17 @@ public class BoatWayEvent extends Event
 
 		final BoatPoint bp = points.get(_boat.getRunState());
 
-		if (bp.getSpeed1() >= 0)
+		if(bp.getSpeed1() >= 0)
 			_boat.setMoveSpeed(bp.getSpeed1());
-		if (bp.getSpeed2() >= 0)
+		if(bp.getSpeed2() >= 0)
 			_boat.setRotationSpeed(bp.getSpeed2());
 
-		if (_boat.getRunState() == 0)
+		if(_boat.getRunState() == 0)
 			_boat.broadcastCharInfo();
 
 		_boat.setRunState(_boat.getRunState() + 1);
 
-		if (bp.isTeleport())
+		if(bp.isTeleport())
 			_boat.teleportShip(bp.getX(), bp.getY(), bp.getZ());
 		else
 			_boat.getMovement().moveToLocation(bp.getX(), bp.getY(), bp.getZ(), 0, false);
@@ -149,32 +148,32 @@ public class BoatWayEvent extends Event
 	public List<Player> broadcastPlayers(int range)
 	{
 		List<Player> players = new LazyArrayList<Player>(64);
-		if (range > 0)
+		if(range > 0)
 		{
-			for (Location loc : _broadcastPoints)
+			for(Location loc : _broadcastPoints)
 			{
-				for (Player player : GameObjectsStorage.getPlayers(false, false))
+				for(Player player : GameObjectsStorage.getPlayers(false, false))
 				{
-					if (!player.getReflection().isMain())
+					if(!player.getReflection().isMain())
 						continue;
-					if (player.isInRangeZ(loc, range) && !players.contains(player))
+					if(player.isInRangeZ(loc, range) && !players.contains(player))
 						players.add(player);
 				}
 			}
 		}
 		else
 		{
-			for (Location loc : _broadcastPoints)
+			for(Location loc : _broadcastPoints)
 			{
 				int rx = MapUtils.regionX(loc.getX());
 				int ry = MapUtils.regionY(loc.getY());
-				for (Player player : GameObjectsStorage.getPlayers(false, false))
+				for(Player player : GameObjectsStorage.getPlayers(false, false))
 				{
-					if (!player.getReflection().isMain())
+					if(!player.getReflection().isMain())
 						continue;
 					int tx = MapUtils.regionX(player) - rx;
 					int ty = MapUtils.regionY(player) - ry;
-					if (tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET && !players.contains(player))
+					if(tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET && !players.contains(player))
 						players.add(player);
 				}
 			}

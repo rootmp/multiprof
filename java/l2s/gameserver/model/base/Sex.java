@@ -9,7 +9,7 @@ public enum Sex
 
 	public Sex revert()
 	{
-		switch (this)
+		switch(this)
 		{
 			case MALE:
 				return FEMALE;

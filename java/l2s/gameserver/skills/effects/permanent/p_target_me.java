@@ -18,9 +18,9 @@ public class p_target_me extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
-		if (effected == effector)
+		if(effected == effector)
 			return false;
 		return true;
 	}

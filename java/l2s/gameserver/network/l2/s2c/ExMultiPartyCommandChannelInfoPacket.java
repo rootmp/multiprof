@@ -20,10 +20,10 @@ public class ExMultiPartyCommandChannelInfoPacket implements IClientOutgoingPack
 		MemberCount = channel.getMemberCount();
 
 		parties = new ArrayList<ChannelPartyInfo>();
-		for (Party party : channel.getParties())
+		for(Party party : channel.getParties())
 		{
 			Player leader = party.getPartyLeader();
-			if (leader != null)
+			if(leader != null)
 			{
 				parties.add(new ChannelPartyInfo(leader.getName(), leader.getObjectId(), party.getMemberCount()));
 			}
@@ -38,7 +38,7 @@ public class ExMultiPartyCommandChannelInfoPacket implements IClientOutgoingPack
 		packetWriter.writeD(MemberCount); // общее число человек в СС
 		packetWriter.writeD(parties.size()); // общее число партий в СС
 
-		for (ChannelPartyInfo party : parties)
+		for(ChannelPartyInfo party : parties)
 		{
 			packetWriter.writeS(party.Leader_name); // имя лидера партии
 			packetWriter.writeD(party.Leader_obj_id); // ObjId пати лидера

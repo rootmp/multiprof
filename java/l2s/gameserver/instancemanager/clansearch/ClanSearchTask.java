@@ -7,18 +7,17 @@ import java.sql.SQLException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2s.commons.dbutils.DbUtils;
-import l2s.gameserver.ThreadPoolManager;
-import l2s.gameserver.database.DatabaseFactory;
-import l2s.gameserver.model.clansearch.ClanSearchClan;
-import l2s.gameserver.model.clansearch.ClanSearchPlayer;
-
 import gnu.trove.list.TIntList;
 import gnu.trove.list.array.TIntArrayList;
 import gnu.trove.map.TIntLongMap;
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntLongHashMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.dbutils.DbUtils;
+import l2s.gameserver.ThreadPoolManager;
+import l2s.gameserver.database.DatabaseFactory;
+import l2s.gameserver.model.clansearch.ClanSearchClan;
+import l2s.gameserver.model.clansearch.ClanSearchPlayer;
 
 /**
  * @author GodWorld
@@ -78,7 +77,7 @@ public class ClanSearchTask implements Runnable
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			for (ClanSearchClan csClan : _newClans.valueCollection())
+			for(ClanSearchClan csClan : _newClans.valueCollection())
 			{
 				statement = con.prepareStatement(ClanSearchQueries.ADD_CLAN);
 				statement.setInt(1, csClan.getClanId());
@@ -95,18 +94,18 @@ public class ClanSearchTask implements Runnable
 				DbUtils.closeQuietly(statement);
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			failed(e);
 		}
 
-		if (_newWaiters.size() > 0)
+		if(_newWaiters.size() > 0)
 		{
 			int offset = 0;
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getAddWaitingPlayerQuery(_newWaiters.size()));
-				for (ClanSearchPlayer csPlayer : _newWaiters.valueCollection())
+				for(ClanSearchPlayer csPlayer : _newWaiters.valueCollection())
 				{
 					statement.setInt(++offset, csPlayer.getCharId());
 					statement.setString(++offset, csPlayer.getName());
@@ -116,7 +115,7 @@ public class ClanSearchTask implements Runnable
 				}
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -126,13 +125,13 @@ public class ClanSearchTask implements Runnable
 			}
 		}
 
-		if (_newApplicants.size() > 0)
+		if(_newApplicants.size() > 0)
 		{
 			int offset = 0;
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getAddApplicantPlayerQuery(_newApplicants.size()));
-				for (ClanSearchPlayer csPlayer : _newApplicants.valueCollection())
+				for(ClanSearchPlayer csPlayer : _newApplicants.valueCollection())
 				{
 					statement.setInt(++offset, csPlayer.getCharId());
 					statement.setInt(++offset, csPlayer.getPrefferedClanId());
@@ -144,7 +143,7 @@ public class ClanSearchTask implements Runnable
 				}
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -154,17 +153,17 @@ public class ClanSearchTask implements Runnable
 			}
 		}
 
-		if (_removalClans.size() > 0)
+		if(_removalClans.size() > 0)
 		{
 			int offset = 0;
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getRemoveClanQuery(_removalClans.size()));
-				for (int clanId : _removalClans.toArray())
+				for(int clanId : _removalClans.toArray())
 					statement.setInt(++offset, clanId);
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -177,11 +176,11 @@ public class ClanSearchTask implements Runnable
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getRemoveClanApplicants(_removalClans.size()));
-				for (int clanId : _removalClans.toArray())
+				for(int clanId : _removalClans.toArray())
 					statement.setInt(++offset, clanId);
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -191,17 +190,17 @@ public class ClanSearchTask implements Runnable
 			}
 		}
 
-		if (_removalWaiters.size() > 0)
+		if(_removalWaiters.size() > 0)
 		{
 			int offset = 0;
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getRemoveWaiterQuery(_removalWaiters.size()));
-				for (int playerId : _removalWaiters.toArray())
+				for(int playerId : _removalWaiters.toArray())
 					statement.setInt(++offset, playerId);
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -211,17 +210,17 @@ public class ClanSearchTask implements Runnable
 			}
 		}
 
-		if (_removalApplicants.size() > 0)
+		if(_removalApplicants.size() > 0)
 		{
 			int offset = 0;
 			try
 			{
 				statement = con.prepareStatement(ClanSearchQueries.getRemoveApplicantQuery(_removalApplicants.size()));
-				for (int charId : _removalApplicants.toArray())
+				for(int charId : _removalApplicants.toArray())
 					statement.setInt(++offset, charId);
 				statement.executeUpdate();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				failed(e);
 			}
@@ -236,7 +235,7 @@ public class ClanSearchTask implements Runnable
 			statement = con.prepareStatement(ClanSearchQueries.CLEAN_CLANS);
 			statement.executeUpdate();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			failed(e);
 		}
@@ -250,7 +249,7 @@ public class ClanSearchTask implements Runnable
 			statement = con.prepareStatement(ClanSearchQueries.CLEAN_APPLICANTS);
 			statement.executeUpdate();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			failed(e);
 		}
@@ -264,7 +263,7 @@ public class ClanSearchTask implements Runnable
 			statement = con.prepareStatement(ClanSearchQueries.CLEAN_WAITERS);
 			statement.executeUpdate();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			failed(e);
 		}
@@ -290,8 +289,7 @@ public class ClanSearchTask implements Runnable
 	{
 		_clanLocks.put(clanId, System.currentTimeMillis() + lockTime);
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			_clanLocks.remove(clanId);
 		}, lockTime);
 	}
@@ -310,8 +308,7 @@ public class ClanSearchTask implements Runnable
 	{
 		_waiterLocks.put(charId, System.currentTimeMillis() + lockTime);
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			_waiterLocks.remove(charId);
 		}, lockTime);
 	}
@@ -330,8 +327,7 @@ public class ClanSearchTask implements Runnable
 	{
 		_applicantLocks.put(charId, System.currentTimeMillis() + lockTime);
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			_applicantLocks.remove(charId);
 		}, lockTime);
 	}

@@ -24,39 +24,36 @@ public final class RandomCraftListHolder extends AbstractHolder
 	{
 		return _instance;
 	}
-	
+
 	public RandomCraftRewardItem getNewReward(int slot, List<RandomCraftRewardItem> rewardList)
 	{
 		List<RandomCraftRewardData> candidates = REWARD_DATA.get(slot);
-		if (candidates == null || candidates.isEmpty())
+		if(candidates == null || candidates.isEmpty())
 			return null;
 
+		List<RandomCraftRewardData> filtered = candidates.stream().filter(c -> rewardList.stream().noneMatch(r -> r.getItemId()
+				== c.getItemId())).collect(Collectors.toList());
 
-		List<RandomCraftRewardData> filtered = candidates.stream().filter(c -> rewardList.stream().noneMatch(r -> r.getItemId() == c.getItemId())).collect(Collectors.toList());
-
-		if (filtered.isEmpty())
+		if(filtered.isEmpty())
 			return null;
 
 		long totalChance = filtered.stream().mapToLong(RandomCraftRewardData::getChance).sum();
-		if (totalChance <= 0)
+		if(totalChance <= 0)
 			return null;
-		
+
 		Collections.shuffle(filtered);
 
 		long roll = Rnd.get(totalChance);
 		long cumulative = 0;
 
-		for (RandomCraftRewardData data : filtered)
+		for(RandomCraftRewardData data : filtered)
 		{
 			cumulative += data.getChance();
-			if (roll < cumulative)
-			{
-				return new RandomCraftRewardItem(data.getItemId(), data.getCount(), 0, false, 20);
-			}
+			if(roll < cumulative)
+			{ return new RandomCraftRewardItem(data.getItemId(), data.getCount(), 0, false, 20); }
 		}
 		return null;
 	}
-
 
 	@Override
 	public int size()
@@ -69,17 +66,17 @@ public final class RandomCraftListHolder extends AbstractHolder
 	{
 		REWARD_DATA.clear();
 	}
-	
+
 	public boolean isEmpty()
 	{
 		return REWARD_DATA.isEmpty();
 	}
-	
+
 	public List<RandomCraftRewardData> getRewardData(int slot)
 	{
 		return REWARD_DATA.get(slot);
 	}
-	
+
 	public void addRandomCraftInfo(int slot, List<RandomCraftRewardData> data, long prob)
 	{
 		REWARD_DATA.put(slot, data);
@@ -92,6 +89,6 @@ public final class RandomCraftListHolder extends AbstractHolder
 
 	public void addAnnounce(int id)
 	{
-		REWARD_DATA_ANNOUNCE.add(id);  
+		REWARD_DATA_ANNOUNCE.add(id);
 	}
 }

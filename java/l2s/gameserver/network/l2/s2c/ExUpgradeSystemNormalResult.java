@@ -39,11 +39,11 @@ public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
 		packetWriter.writeC(success); // IsSuccess
 		int unk = 0;
 		packetWriter.writeD(unk); // Count
-		if (unk <= 0)
+		if(unk <= 0)
 		{
 			packetWriter.writeC(0); // IsBonus
 			packetWriter.writeD(items.size());
-			for (ItemInfo item : items)
+			for(ItemInfo item : items)
 			{
 				packetWriter.writeD(item.getObjectId()); // ItemServerID
 				packetWriter.writeD(item.getItemId()); // ItemClassID
@@ -53,7 +53,7 @@ public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
 		}
 		else
 		{
-			for (ItemInfo item : items)
+			for(ItemInfo item : items)
 			{
 				packetWriter.writeD(item.getObjectId()); // ItemServerID
 				packetWriter.writeD(item.getItemId()); // ItemClassID

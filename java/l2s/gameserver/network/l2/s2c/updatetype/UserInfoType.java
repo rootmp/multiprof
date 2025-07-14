@@ -47,7 +47,7 @@ public enum UserInfoType implements IUpdateTypeComponent
 		_mask = mask;
 		_blockLength = blockLength;
 	}
-	
+
 	/**
 	 * Gets the int mask.
 	 * @return the int mask

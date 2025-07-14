@@ -19,7 +19,7 @@ public class EffectKnockDown extends EffectFlyAbstract
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isThrowAndKnockImmune())
+		if(effected.isThrowAndKnockImmune())
 		{
 			effected.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
@@ -39,16 +39,16 @@ public class EffectKnockDown extends EffectFlyAbstract
 		double dz = effector.getZ() - curZ;
 		double distance = Math.sqrt(dx * dx + dy * dy);
 
-		if (distance > 2000.0D)
+		if(distance > 2000.0D)
 			return;
 
 		int offset = Math.min((int) distance + getFlyRadius(), 1400);
 		offset = (int) (offset + Math.abs(dz));
 
-		if (offset < 5)
+		if(offset < 5)
 			offset = 5;
 
-		if (distance < 1.0D)
+		if(distance < 1.0D)
 			return;
 
 		double sin = dy / distance;
@@ -59,13 +59,13 @@ public class EffectKnockDown extends EffectFlyAbstract
 		int z = effected.getZ();
 
 		Location destiny = GeoEngine.moveCheck(effected.getX(), effected.getY(), effected.getZ(), x, y, effected.getGeoIndex());
-		if (destiny == null)
+		if(destiny == null)
 			return;
 
 		x = destiny.getX();
 		y = destiny.getY();
 
-		if (effected.getFlags().getKnockDowned().start(this))
+		if(effected.getFlags().getKnockDowned().start(this))
 		{
 			effected.abortAttack(true, true);
 			effected.abortCast(true, true);
@@ -81,9 +81,9 @@ public class EffectKnockDown extends EffectFlyAbstract
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getKnockDowned().stop(this))
+		if(effected.getFlags().getKnockDowned().stop(this))
 		{
-			if (!effected.isPlayer())
+			if(!effected.isPlayer())
 				effected.getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
 	}

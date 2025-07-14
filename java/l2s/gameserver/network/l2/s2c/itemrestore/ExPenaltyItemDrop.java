@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c.itemrestore;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill

@@ -39,7 +39,7 @@ public class ChangeAllowedHwid extends ReceivablePacket
 			statement.execute();
 			statement.close();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("ChangeAllowedIP: Could not write data. Reason: " + e);
 		}
@@ -47,10 +47,10 @@ public class ChangeAllowedHwid extends ReceivablePacket
 		{
 			try
 			{
-				if (con != null)
+				if(con != null)
 					con.close();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				e.printStackTrace();
 			}

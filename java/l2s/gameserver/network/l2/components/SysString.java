@@ -29,8 +29,8 @@ public enum SysString
 
 	public static SysString valueOf2(String id)
 	{
-		for (SysString m : VALUES)
-			if (m.name().equals(id))
+		for(SysString m : VALUES)
+			if(m.name().equals(id))
 				return m;
 
 		return null;
@@ -38,8 +38,8 @@ public enum SysString
 
 	public static SysString valueOf(int id)
 	{
-		for (SysString m : VALUES)
-			if (m.getId() == id)
+		for(SysString m : VALUES)
+			if(m.getId() == id)
 				return m;
 
 		return null;

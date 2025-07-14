@@ -1,14 +1,13 @@
 package l2s.gameserver.network.l2.c2s.events;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.GameClient;
-import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.events.ExFestivalBMAllItemInfo;
-import l2s.gameserver.network.l2.s2c.events.ExFestivalBMGame;
 import l2s.gameserver.network.l2.s2c.events.ExFestivalBMInfo;
 
 /**
@@ -29,15 +28,15 @@ public class RequestExFestivalBMGame implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_participate == 1)
+		if(_participate == 1)
 		{
 			final PcInventory inventory = activeChar.getInventory();
 			final boolean success = inventory.destroyItemByItemId(Config.BM_FESTIVAL_ITEM_TO_PLAY, Config.BM_FESTIVAL_ITEM_TO_PLAY_COUNT);
 
-			if (success)
+			if(success)
 			{
 				//activeChar.sendPacket(new ExFestivalBMGame(activeChar));
 				activeChar.sendPacket(new ExFestivalBMInfo(activeChar));

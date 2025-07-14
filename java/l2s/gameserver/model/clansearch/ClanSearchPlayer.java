@@ -63,7 +63,7 @@ public class ClanSearchPlayer
 	{
 		Player player = World.getPlayer(_charId);
 
-		if (player != null)
+		if(player != null)
 			_charName = player.getName();
 
 		return _charName;
@@ -73,7 +73,7 @@ public class ClanSearchPlayer
 	{
 		Player player = World.getPlayer(_charId);
 
-		if (player != null)
+		if(player != null)
 			_charLevel = player.getLevel();
 
 		return _charLevel;
@@ -83,7 +83,7 @@ public class ClanSearchPlayer
 	{
 		Player player = World.getPlayer(_charId);
 
-		if (player != null)
+		if(player != null)
 			_charClassId = player.getBaseClassId();
 
 		return _charClassId;

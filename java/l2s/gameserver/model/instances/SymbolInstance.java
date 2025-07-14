@@ -26,9 +26,9 @@ public class SymbolInstance extends NpcInstance
 		@Override
 		public void run()
 		{
-			if (isDead())
+			if(isDead())
 			{
-				if (_castTask != null)
+				if(_castTask != null)
 				{
 					_castTask.cancel(false);
 					_castTask = null;
@@ -58,12 +58,12 @@ public class SymbolInstance extends NpcInstance
 		_skillDelay = getParameter(SKILL_DELAY_PARAMETER, 1) * 1000;
 
 		String skillsStr = getParameter(UNION_SKILL_PARAMETER, null);
-		if (skillsStr != null)
+		if(skillsStr != null)
 		{
 			int[][] skills = StringArrayUtils.stringToIntArray2X(skillsStr, ";", "-");
-			for (int[] skill : skills)
+			for(int[] skill : skills)
 			{
-				if (skill.length < 2)
+				if(skill.length < 2)
 					continue;
 
 				_unionSkills.add(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill[0], skill[1]));
@@ -75,7 +75,7 @@ public class SymbolInstance extends NpcInstance
 	public void setOwner(Player owner)
 	{
 		super.setOwner(owner);
-		if (owner != null)
+		if(owner != null)
 		{
 			setLevel(owner.getLevel());
 			setTitle(owner.getName());
@@ -89,7 +89,7 @@ public class SymbolInstance extends NpcInstance
 
 		startDeleteTask(_despawnTime);
 
-		if (_unionSkills != null && !_unionSkills.isEmpty())
+		if(_unionSkills != null && !_unionSkills.isEmpty())
 			_castTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new SkillCast(), _skillDelay, _skillDelay);
 	}
 
@@ -97,10 +97,10 @@ public class SymbolInstance extends NpcInstance
 	protected void onDelete()
 	{
 		Player owner = getPlayer();
-		if (owner != null)
+		if(owner != null)
 			owner.setSymbol(null);
 
-		if (_castTask != null)
+		if(_castTask != null)
 		{
 			_castTask.cancel(false);
 			_castTask = null;
@@ -116,10 +116,10 @@ public class SymbolInstance extends NpcInstance
 
 		_usedSkillIndx++;
 
-		if (_usedSkillIndx >= _unionSkills.size())
+		if(_usedSkillIndx >= _unionSkills.size())
 			_usedSkillIndx = 0;
 
-		if (_usedSkillIndx == 0)
+		if(_usedSkillIndx == 0)
 			return;
 
 		doCast(_unionSkills.get(_usedSkillIndx), null, false);

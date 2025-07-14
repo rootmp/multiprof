@@ -6,8 +6,7 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExCraftRandomRefresh implements IClientOutgoingPacket
 {
 	public ExCraftRandomRefresh()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

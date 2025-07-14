@@ -16,7 +16,6 @@ import java.util.concurrent.ScheduledFuture;
 import org.apache.commons.lang3.reflect.MethodUtils;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -96,19 +95,18 @@ public abstract class AbstractFightClub extends Event
 	private static final int TIME_MAX_SECONDS_OUTSIDE_ZONE = 10;
 	private static final int TIME_TO_BE_AFK = 30;
 
-	private static final String[] ROUND_NUMBER_IN_STRING =
-	{
-		"",
-		"1st",
-		"2nd",
-		"3rd",
-		"4th",
-		"5th",
-		"6th",
-		"7th",
-		"8th",
-		"9th",
-		"10th"
+	private static final String[] ROUND_NUMBER_IN_STRING = {
+			"",
+			"1st",
+			"2nd",
+			"3rd",
+			"4th",
+			"5th",
+			"6th",
+			"7th",
+			"8th",
+			"9th",
+			"10th"
 	};
 
 	private final int _objId;
@@ -191,7 +189,7 @@ public abstract class AbstractFightClub extends Event
 		_map = room.getMap();
 		_room = room;
 
-		for (Player player : room.getAllPlayers())
+		for(Player player : room.getAllPlayers())
 		{
 			addObject(REGISTERED_PLAYERS, new FightClubPlayer(player));
 			player.addEvent(this);
@@ -209,41 +207,41 @@ public abstract class AbstractFightClub extends Event
 
 		IntObjectMap<DoorTemplate> doors = new HashIntObjectMap<DoorTemplate>(0);
 		Map<String, ZoneTemplate> zones = new HashMap<String, ZoneTemplate>();
-		for (Entry<Integer, Map<String, ZoneTemplate>> entry : getMap().getTerritories().entrySet())
+		for(Entry<Integer, Map<String, ZoneTemplate>> entry : getMap().getTerritories().entrySet())
 		{
-			for (Entry<String, ZoneTemplate> team : entry.getValue().entrySet())
+			for(Entry<String, ZoneTemplate> team : entry.getValue().entrySet())
 			{
 				zones.put(team.getKey(), team.getValue());
 			}
 		}
 
-		if (isInstanced())
+		if(isInstanced())
 		{
 			createReflection(doors, zones);
 		}
 
 		final List<FightClubPlayer> playersToRemove = new ArrayList<FightClubPlayer>();
-		for (final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
 		{
 			stopInvisibility(iFPlayer.getPlayer());
-			if (!checkIfRegisteredPlayerMeetCriteria(iFPlayer))
+			if(!checkIfRegisteredPlayerMeetCriteria(iFPlayer))
 			{
 				playersToRemove.add(iFPlayer);
 				continue;
 			}
 
-			if (isHidePersonality())
+			if(isHidePersonality())
 			{
 				iFPlayer.getPlayer().setPolyId(FightClubGameRoom.getPlayerClassGroup(iFPlayer.getPlayer()).getTransformId());
 			}
 		}
 
-		for (FightClubPlayer playerToRemove : playersToRemove)
+		for(FightClubPlayer playerToRemove : playersToRemove)
 		{
 			unregister(playerToRemove.getPlayer());
 		}
 
-		if (isTeamed())
+		if(isTeamed())
 		{
 			spreadIntoTeamsAndPartys();
 		}
@@ -252,7 +250,7 @@ public abstract class AbstractFightClub extends Event
 
 		updateEveryScore();
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS))
 		{
 			iFPlayer.getPlayer().isntAfk();
 			iFPlayer.getPlayer().setFightClubGameRoom(null);
@@ -269,9 +267,9 @@ public abstract class AbstractFightClub extends Event
 
 		_currentRound++;
 
-		if (isRoundEvent())
+		if(isRoundEvent())
 		{
-			if (_currentRound == _rounds)
+			if(_currentRound == _rounds)
 			{
 				sendMessageToFighting(MessageType.SCREEN_BIG, "Last Round STARTED!", true); // TODO: Вынести в ДП.
 			}
@@ -287,18 +285,18 @@ public abstract class AbstractFightClub extends Event
 
 		unrootPlayers();
 
-		if (getRoundRuntime() > 0)
+		if(getRoundRuntime() > 0)
 		{
 			startNewTimer(true, (int) ((double) getRoundRuntime() / 2 * 60000), "endRoundTimer", (int) ((double) getRoundRuntime() / 2 * 60));
 		}
 
-		if (_currentRound == 1)
+		if(_currentRound == 1)
 		{
 			ThreadPoolManager.getInstance().schedule(new TimeSpentOnEventThread(), 10000L);
 			ThreadPoolManager.getInstance().schedule(new CheckAfkThread(), 1000L);
 		}
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			hideScores(iFPlayer.getPlayer());
 			iFPlayer.getPlayer().broadcastUserInfo(true);
@@ -309,7 +307,7 @@ public abstract class AbstractFightClub extends Event
 	{
 		_state = EventState.OVER;
 
-		if (!isLastRound())
+		if(!isLastRound())
 		{
 			sendMessageToFighting(MessageType.SCREEN_BIG, new StringBuilder().append("Round ").append(_currentRound).append(" is over!").toString(), false);
 		}
@@ -320,25 +318,24 @@ public abstract class AbstractFightClub extends Event
 
 		ressAndHealPlayers();
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			showScores(iFPlayer.getPlayer());
 			handleAfk(iFPlayer, false);
 		}
 
-		if (!isLastRound())
+		if(!isLastRound())
 		{
-			if (isTeamed())
+			if(isTeamed())
 			{
-				for (FightClubTeam team : getTeams())
+				for(FightClubTeam team : getTeams())
 				{
 					team.setSpawnLoc(null);
 				}
 			}
 
-			ThreadPoolManager.getInstance().schedule(() ->
-			{
-				for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+			ThreadPoolManager.getInstance().schedule(() -> {
+				for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 				{
 					teleportSinglePlayer(iFPlayer, false, true);
 				}
@@ -351,7 +348,7 @@ public abstract class AbstractFightClub extends Event
 		{
 			ThreadPoolManager.getInstance().schedule(() -> stopEvent(false), 5 * 1000);
 
-			if (isTeamed())
+			if(isTeamed())
 			{
 				announceWinnerTeam(true, null);
 			}
@@ -361,7 +358,7 @@ public abstract class AbstractFightClub extends Event
 			}
 		}
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			iFPlayer.getPlayer().broadcastUserInfo(true);
 		}
@@ -369,13 +366,11 @@ public abstract class AbstractFightClub extends Event
 
 	private void announceTopKillers(FightClubPlayer[] topKillers)
 	{
-		if (topKillers == null)
+		if(topKillers == null)
+		{ return; }
+		for(FightClubPlayer fPlayer : topKillers)
 		{
-			return;
-		}
-		for (FightClubPlayer fPlayer : topKillers)
-		{
-			if (fPlayer != null)
+			if(fPlayer != null)
 			{
 				String message = fPlayer.getPlayer().getName() + " had most kills" + " on " + getName() + " Event!";
 				FightClubEventManager.getInstance().sendToAllMsg(this, message);
@@ -396,30 +391,29 @@ public abstract class AbstractFightClub extends Event
 		announceTopKillers(topKillers);
 		giveRewards(topKillers);
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			iFPlayer.getPlayer().broadcastCharInfo();
-			if (iFPlayer.getPlayer().getSummon() != null)
+			if(iFPlayer.getPlayer().getSummon() != null)
 			{
 				iFPlayer.getPlayer().getSummon().broadcastCharInfo();
 			}
 		}
 
-		for (Player player : getAllFightingPlayers())
+		for(Player player : getAllFightingPlayers())
 		{
 			showScores(player);
 		}
 
 		FightClubEventManager.clearBoxes();
-		ThreadPoolManager.getInstance().schedule(new Runnable()
-		{
+		ThreadPoolManager.getInstance().schedule(new Runnable(){
 			@Override
 			public void run()
 			{
-				for (Player player : getAllFightingPlayers())
+				for(Player player : getAllFightingPlayers())
 				{
 					leaveEvent(player, true);
-					if (player.isImmobilized())
+					if(player.isImmobilized())
 					{
 						player.getFlags().getImmobilized().stop();
 						player.stopAbnormalEffect(AbnormalEffect.ROOT);
@@ -428,8 +422,7 @@ public abstract class AbstractFightClub extends Event
 					}
 					player.sendPacket(new ExShowScreenMessage("Teleporting to town!", 10, ExShowScreenMessage.ScreenMessageAlign.TOP_LEFT, false));
 				}
-				ThreadPoolManager.getInstance().schedule(() ->
-				{
+				ThreadPoolManager.getInstance().schedule(() -> {
 					destroyMe();
 				}, (15 + TIME_TELEPORT_BACK_TOWN) * 1000);
 			}
@@ -438,14 +431,14 @@ public abstract class AbstractFightClub extends Event
 
 	public void destroyMe()
 	{
-		if (getReflection() != null)
+		if(getReflection() != null)
 		{
-			for (Zone zone : getReflection().getZones())
+			for(Zone zone : getReflection().getZones())
 				zone.removeListener(_zoneListener);
 			getReflection().collapse();
 		}
 
-		if (_timer != null)
+		if(_timer != null)
 		{
 			_timer.cancel(false);
 		}
@@ -459,7 +452,7 @@ public abstract class AbstractFightClub extends Event
 		_room = null;
 		_zoneListener = null;
 
-		for (Player player : GameObjectsStorage.getAllPlayersForIterate())
+		for(Player player : GameObjectsStorage.getAllPlayersForIterate())
 		{
 			player.removeListener(_exitListener);
 		}
@@ -469,15 +462,15 @@ public abstract class AbstractFightClub extends Event
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if (victim.isPlayer() && getRespawnTime() > 0)
+		if(victim.isPlayer() && getRespawnTime() > 0)
 		{
 			showScores(victim);
 		}
-		if (actor != null && actor.isPlayer() && getFightClubPlayer(actor) != null)
+		if(actor != null && actor.isPlayer() && getFightClubPlayer(actor) != null)
 		{
 			FightClubLastStatsManager.getInstance().updateStat(actor.getPlayer(), FightClubLastStatsManager.FightClubStatType.KILL_PLAYER, getFightClubPlayer(actor).getKills(true));
 		}
-		if (victim.isPlayer() && getRespawnTime() > 0 && !_ressAllowed && getFightClubPlayer(victim.getPlayer()) != null)
+		if(victim.isPlayer() && getRespawnTime() > 0 && !_ressAllowed && getFightClubPlayer(victim.getPlayer()) != null)
 		{
 			startNewTimer(false, 0, "ressurectionTimer", getRespawnTime(), getFightClubPlayer(victim));
 		}
@@ -485,7 +478,7 @@ public abstract class AbstractFightClub extends Event
 
 	public void requestRespawn(Player activeChar, RestartType restartType)
 	{
-		if (getRespawnTime() > 0)
+		if(getRespawnTime() > 0)
 		{
 			startNewTimer(false, 0, "ressurectionTimer", getRespawnTime(), getFightClubPlayer(activeChar));
 		}
@@ -493,54 +486,42 @@ public abstract class AbstractFightClub extends Event
 
 	public boolean canAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (_state != EventState.STARTED)
-		{
-			return false;
-		}
+		if(_state != EventState.STARTED)
+		{ return false; }
 
-		if (_preparing)
+		if(_preparing)
 		{
 			attacker.setTarget((GameObject) attacker);
 		}
 
 		Player player = attacker.getPlayer();
-		if (player == null || target == null)
-		{
-			return false;
-		}
-		if (player == target || player == target.getPlayer())
-		{
-			return false;
-		}
+		if(player == null || target == null)
+		{ return false; }
+		if(player == target || player == target.getPlayer())
+		{ return false; }
 
 		final FightClubPlayer targetFPlayer = getFightClubPlayer(target);
 		final FightClubPlayer attackerFPlayer = getFightClubPlayer(attacker);
-		if (targetFPlayer == null && attackerFPlayer == null)
-		{
-			return false;
-		}
-		if (isTeamed() && (targetFPlayer == null || attackerFPlayer == null || targetFPlayer.getTeam().equals(attackerFPlayer.getTeam())))
-		{
-			return false;
-		}
+		if(targetFPlayer == null && attackerFPlayer == null)
+		{ return false; }
+		if(isTeamed() && (targetFPlayer == null || attackerFPlayer == null || targetFPlayer.getTeam().equals(attackerFPlayer.getTeam())))
+		{ return false; }
 
 		return true;
 	}
 
 	public boolean canUseSkill(Creature caster, Creature target, Skill skill)
 	{
-		if (_preparing)
+		if(_preparing)
 		{
 			caster.setTarget((GameObject) caster);
 		}
-		if (_excludedSkills != null)
+		if(_excludedSkills != null)
 		{
-			for (int id : _excludedSkills)
+			for(int id : _excludedSkills)
 			{
-				if (skill.getId() == id)
-				{
-					return false;
-				}
+				if(skill.getId() == id)
+				{ return false; }
 			}
 		}
 		return true;
@@ -548,14 +529,12 @@ public abstract class AbstractFightClub extends Event
 
 	public SystemMsg checkForAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (_preparing)
+		if(_preparing)
 		{
 			attacker.setTarget((GameObject) attacker);
 		}
-		if (!canAttack(target, attacker, skill, force))
-		{
-			return SystemMsg.INVALID_TARGET;
-		}
+		if(!canAttack(target, attacker, skill, force))
+		{ return SystemMsg.INVALID_TARGET; }
 		return null;
 	}
 
@@ -577,7 +556,7 @@ public abstract class AbstractFightClub extends Event
 	public void checkRestartLocs(Player player, Map<RestartType, Boolean> r)
 	{
 		r.clear();
-		if (isTeamed() && getRespawnTime() > 0 && getFightClubPlayer(player) != null && _ressAllowed)
+		if(isTeamed() && getRespawnTime() > 0 && getFightClubPlayer(player) != null && _ressAllowed)
 		{
 			r.put(RestartType.TO_FLAG, Boolean.valueOf(true));
 		}
@@ -586,15 +565,15 @@ public abstract class AbstractFightClub extends Event
 	public boolean canUseBuffer(Player player, boolean heal)
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
-		if (!getBuffer())
+		if(!getBuffer())
 			return false;
-		if (player.isInCombat())
+		if(player.isInCombat())
 			return false;
-		if (heal)
+		if(heal)
 		{
-			if (player.isDead())
+			if(player.isDead())
 				return false;
-			if (_state != EventState.STARTED)
+			if(_state != EventState.STARTED)
 				return true;
 
 			return fPlayer.isInvisible();
@@ -606,9 +585,9 @@ public abstract class AbstractFightClub extends Event
 	public boolean canUsePositiveMagic(Creature user, Creature target)
 	{
 		Player player = user.getPlayer();
-		if (player == null)
+		if(player == null)
 			return true;
-		if (!isFriend(user, target))
+		if(!isFriend(user, target))
 			return false;
 
 		return !isInvisible(player, player);
@@ -616,7 +595,7 @@ public abstract class AbstractFightClub extends Event
 
 	public int getRelation(Player thisPlayer, Player target, int oldRelation)
 	{
-		if (_state == EventState.STARTED)
+		if(_state == EventState.STARTED)
 			return isFriend(thisPlayer, target) ? getFriendRelation() : getWarRelation();
 		return oldRelation;
 	}
@@ -653,21 +632,21 @@ public abstract class AbstractFightClub extends Event
 
 	public boolean isFriend(Creature c1, Creature c2)
 	{
-		if (c1.equals(c2))
+		if(c1.equals(c2))
 			return true;
-		if (!c1.isPlayable() || !c2.isPlayable())
-			return true;
-
-		if (c1.isSummon() && c2.isPlayer() && c2.getPlayer().getAnyServitor() != null && c2.getPlayer().getAnyServitor().equals(c1))
+		if(!c1.isPlayable() || !c2.isPlayable())
 			return true;
 
-		if (c2.isSummon() && c1.isPlayer() && c1.getPlayer().getAnyServitor() != null && c1.getPlayer().getAnyServitor().equals(c2))
+		if(c1.isSummon() && c2.isPlayer() && c2.getPlayer().getAnyServitor() != null && c2.getPlayer().getAnyServitor().equals(c1))
+			return true;
+
+		if(c2.isSummon() && c1.isPlayer() && c1.getPlayer().getAnyServitor() != null && c1.getPlayer().getAnyServitor().equals(c2))
 			return true;
 
 		FightClubPlayer fPlayer1 = getFightClubPlayer(c1.getPlayer());
 		FightClubPlayer fPlayer2 = getFightClubPlayer(c2.getPlayer());
 
-		if (isTeamed())
+		if(isTeamed())
 			return fPlayer1 != null && fPlayer2 != null && fPlayer1.getTeam() == fPlayer2.getTeam();
 
 		return false;
@@ -680,7 +659,7 @@ public abstract class AbstractFightClub extends Event
 
 	public String getVisibleName(Player player, String currentName, boolean toMe)
 	{
-		if (isHidePersonality() && !toMe)
+		if(isHidePersonality() && !toMe)
 			return "Player";
 		return currentName;
 	}
@@ -697,7 +676,7 @@ public abstract class AbstractFightClub extends Event
 
 	public int getVisibleNameColor(Player player, int currentNameColor, boolean toMe)
 	{
-		if (isTeamed())
+		if(isTeamed())
 		{
 			FightClubPlayer fPlayer = getFightClubPlayer(player);
 			return fPlayer.getTeam().getNickColor();
@@ -707,7 +686,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected int getBadgesEarned(FightClubPlayer fPlayer, int currentValue, boolean topKiller)
 	{
-		if (fPlayer == null)
+		if(fPlayer == null)
 			return 0;
 		currentValue += addMultipleBadgeToPlayer(fPlayer.getKills(true), _badgesKillPlayer);
 
@@ -716,7 +695,7 @@ public abstract class AbstractFightClub extends Event
 		int minutesAFK = (int) Math.round(fPlayer.getTotalAfkSeconds() / 60.0D);
 		currentValue += minutesAFK * BADGES_FOR_MINUTE_OF_AFK;
 
-		if (topKiller)
+		if(topKiller)
 		{
 			currentValue += topKillerReward;
 		}
@@ -749,7 +728,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected void teleportRegisteredPlayers()
 	{
-		for (final FightClubPlayer player : getPlayers(REGISTERED_PLAYERS))
+		for(final FightClubPlayer player : getPlayers(REGISTERED_PLAYERS))
 		{
 			teleportSinglePlayer(player, true, true);
 		}
@@ -759,7 +738,7 @@ public abstract class AbstractFightClub extends Event
 	{
 		Player player = fPlayer.getPlayer();
 
-		if (healAndRess)
+		if(healAndRess)
 		{
 			ressurectPlayer(player);
 		}
@@ -767,49 +746,49 @@ public abstract class AbstractFightClub extends Event
 		Location[] spawns = null;
 		Location loc = null;
 
-		if (!isTeamed())
+		if(!isTeamed())
 			spawns = getMap().getPlayerSpawns();
 		else
 			loc = getTeamSpawn(fPlayer, true);
 
-		if (!isTeamed())
+		if(!isTeamed())
 			loc = getSafeLocation(spawns);
 
 		loc = Location.findPointToStay(loc, 0, CLOSE_LOCATIONS_VALUE / 2, fPlayer.getPlayer().getGeoIndex());
 
-		if (isInstanced())
+		if(isInstanced())
 			player.teleToLocation(loc, getReflection());
 		else
 			player.teleToLocation(loc);
 
-		if (_state == EventState.PREPARATION || _state == EventState.OVER)
+		if(_state == EventState.PREPARATION || _state == EventState.OVER)
 			rootPlayer(player);
 
 		cancelNegativeEffects(player);
-		if (player.getPet() != null)
+		if(player.getPet() != null)
 			cancelNegativeEffects(player.getPet());
 
-		if (firstTime)
+		if(firstTime)
 		{
 			removeObject(REGISTERED_PLAYERS, fPlayer);
 			addObject(FIGHTING_PLAYERS, fPlayer);
 
 			player.getAbnormalList().stopAll();
-			if (player.getAnyServitor() != null)
+			if(player.getAnyServitor() != null)
 				player.getAnyServitor().getAbnormalList().stopAll();
 
 			player.store(true);
 			player.sendPacket(new ShowTutorialMarkPacket(false, 100));
 
 			player.sendPacket(new SayPacket2(0, ChatType.ALL, 0, getName(), "Normal Chat is visible for every player in event."));
-			if (isTeamed())
+			if(isTeamed())
 			{
 				player.sendPacket(new SayPacket2(0, ChatType.ALL, 0, getName(), "Battlefield(^) Chat is visible only to your team!"));
 				player.sendPacket(new SayPacket2(0, ChatType.BATTLEFIELD, 0, getName(), "Battlefield(^) Chat is visible only to your team!"));
 			}
 		}
 
-		if (healAndRess)
+		if(healAndRess)
 			buffPlayer(fPlayer.getPlayer());
 	}
 
@@ -824,28 +803,25 @@ public abstract class AbstractFightClub extends Event
 	public boolean leaveEvent(Player player, boolean teleportTown)
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
-		if (fPlayer == null)
-		{
-			return true;
-		}
+		if(fPlayer == null)
+		{ return true; }
 
-		if (_state == EventState.NOT_ACTIVE)
+		if(_state == EventState.NOT_ACTIVE)
 		{
-			if (fPlayer.isInvisible())
+			if(fPlayer.isInvisible())
 			{
 				stopInvisibility(player);
 			}
 			removeObject(FIGHTING_PLAYERS, fPlayer);
-			if (isTeamed())
+			if(isTeamed())
 			{
 				fPlayer.getTeam().removePlayer(fPlayer);
 			}
 			player.removeEvent(this);
 
-			if (teleportTown)
+			if(teleportTown)
 			{
-				ThreadPoolManager.getInstance().schedule(() ->
-				{
+				ThreadPoolManager.getInstance().schedule(() -> {
 					ressurectPlayer(player);
 					teleportBackToTown(player);
 				}, 5000);
@@ -858,7 +834,7 @@ public abstract class AbstractFightClub extends Event
 		else
 		{
 			rewardPlayer(fPlayer, false);
-			if (teleportTown)
+			if(teleportTown)
 			{
 				setInvisible(player, 30, false);
 			}
@@ -871,10 +847,9 @@ public abstract class AbstractFightClub extends Event
 			player.doDie(null);
 			player.removeEvent(this);
 
-			if (teleportTown)
+			if(teleportTown)
 			{
-				ThreadPoolManager.getInstance().schedule(() ->
-				{
+				ThreadPoolManager.getInstance().schedule(() -> {
 					ressurectPlayer(player);
 					teleportBackToTown(player);
 					startNewTimer(false, 0, "teleportBackSinglePlayerTimer", TIME_TELEPORT_BACK_TOWN, player);
@@ -886,8 +861,7 @@ public abstract class AbstractFightClub extends Event
 			}
 		}
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
 			player.setCurrentCp(player.getMaxCp());
 		}, 5000L);
@@ -895,15 +869,14 @@ public abstract class AbstractFightClub extends Event
 		hideScores(player);
 		updateScreenScores();
 
-		if (getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS).isEmpty())
+		if(getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS).isEmpty())
 		{
-			ThreadPoolManager.getInstance().schedule(() ->
-			{
+			ThreadPoolManager.getInstance().schedule(() -> {
 				destroyMe();
 			}, (15 + TIME_TELEPORT_BACK_TOWN) * 1000);
 		}
 
-		if (player.getParty() != null)
+		if(player.getParty() != null)
 		{
 			player.getParty().removePartyMember(player, true, true);
 		}
@@ -913,11 +886,10 @@ public abstract class AbstractFightClub extends Event
 
 	protected static void ressurectPlayer(Player player)
 	{
-		if (player.isDead())
+		if(player.isDead())
 		{
 			player.doRevive(100.0D);
-			ThreadPoolManager.getInstance().schedule(() ->
-			{
+			ThreadPoolManager.getInstance().schedule(() -> {
 				player.restoreExp();
 				player.setCurrentCp(player.getMaxCp());
 				player.setCurrentHp(player.getMaxHp(), true);
@@ -951,7 +923,7 @@ public abstract class AbstractFightClub extends Event
 	protected void rewardPlayer(FightClubPlayer fPlayer, boolean isTopKiller)
 	{
 		int badgesToGive = getBadgesEarned(fPlayer, 0, isTopKiller);
-		if (getState() == EventState.NOT_ACTIVE)
+		if(getState() == EventState.NOT_ACTIVE)
 		{
 			badgesToGive += getEndEventBadges(fPlayer);
 		}
@@ -967,17 +939,17 @@ public abstract class AbstractFightClub extends Event
 		int bestScore = -1;
 		FightClubTeam bestTeam = null;
 		boolean draw = false;
-		if (wholeEvent)
+		if(wholeEvent)
 		{
-			for (FightClubTeam team : getTeams())
+			for(FightClubTeam team : getTeams())
 			{
-				if (team.getScore() > bestScore)
+				if(team.getScore() > bestScore)
 				{
 					draw = false;
 					bestScore = team.getScore();
 					bestTeam = team;
 				}
-				else if (team.getScore() == bestScore)
+				else if(team.getScore() == bestScore)
 				{
 					draw = true;
 				}
@@ -989,10 +961,10 @@ public abstract class AbstractFightClub extends Event
 		}
 
 		SayPacket2 packet;
-		if (!draw)
+		if(!draw)
 		{
 			packet = new SayPacket2(0, ChatType.COMMANDCHANNEL_ALL, 0, new StringBuilder().append(bestTeam.getName()).append(" Team").toString(), new StringBuilder().append("We won ").append(wholeEvent ? getName() : " Round").append("!").toString());
-			for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+			for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 			{
 				iFPlayer.getPlayer().sendPacket(packet);
 			}
@@ -1005,18 +977,18 @@ public abstract class AbstractFightClub extends Event
 		int bestScore = -1;
 		FightClubPlayer bestPlayer = null;
 		boolean draw = false;
-		if (wholeEvent)
+		if(wholeEvent)
 		{
-			for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+			for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 			{
-				if (iFPlayer.getPlayer() != null && iFPlayer.getPlayer().isOnline())
+				if(iFPlayer.getPlayer() != null && iFPlayer.getPlayer().isOnline())
 				{
-					if (iFPlayer.getScore() > bestScore)
+					if(iFPlayer.getScore() > bestScore)
 					{
 						bestScore = iFPlayer.getScore();
 						bestPlayer = iFPlayer;
 					}
-					else if (iFPlayer.getScore() == bestScore)
+					else if(iFPlayer.getScore() == bestScore)
 					{
 						draw = true;
 					}
@@ -1029,10 +1001,10 @@ public abstract class AbstractFightClub extends Event
 		}
 
 		SayPacket2 packet;
-		if (!draw && bestPlayer != null)
+		if(!draw && bestPlayer != null)
 		{
 			packet = new SayPacket2(0, ChatType.COMMANDCHANNEL_ALL, 0, bestPlayer.getPlayer().getName(), new StringBuilder().append("I Won ").append(wholeEvent ? getName() : "Round").append("!").toString());
-			for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+			for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 			{
 				iFPlayer.getPlayer().sendPacket(packet);
 			}
@@ -1043,7 +1015,7 @@ public abstract class AbstractFightClub extends Event
 	protected void updateScreenScores()
 	{
 		String msg = getScreenScores(inScreenShowBeScoreNotKills(), inScreenShowBeTeamNotInvidual());
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			sendMessageToPlayer(iFPlayer, MessageType.SCREEN_SMALL, msg);
 		}
@@ -1051,7 +1023,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected void updateScreenScores(Player player)
 	{
-		if (getFightClubPlayer(player) != null)
+		if(getFightClubPlayer(player) != null)
 		{
 			sendMessageToPlayer(getFightClubPlayer(player), MessageType.SCREEN_SMALL, getScreenScores(inScreenShowBeScoreNotKills(), inScreenShowBeTeamNotInvidual()));
 		}
@@ -1067,7 +1039,7 @@ public abstract class AbstractFightClub extends Event
 		_scores.put(getScorePlayerName(fPlayer), Integer.valueOf(fPlayer.getKills(true)));
 		_scoredUpdated = true;
 
-		if (!isTeamed())
+		if(!isTeamed())
 			updateScreenScores();
 	}
 
@@ -1076,7 +1048,7 @@ public abstract class AbstractFightClub extends Event
 		Map<String, Integer> scores = getBestScores();
 		FightClubPlayer fPlayer = getFightClubPlayer(c);
 
-		if (fPlayer != null)
+		if(fPlayer != null)
 		{
 			fPlayer.setShowRank(true);
 		}
@@ -1092,17 +1064,17 @@ public abstract class AbstractFightClub extends Event
 	{
 		Player player = fPlayer.getPlayer();
 
-		if (setAsAfk)
+		if(setAsAfk)
 		{
 			fPlayer.setAfk(true);
 			fPlayer.setAfkStartTime(player.getLastNotAfkTime());
 			sendMessageToPlayer(player, MessageType.CRITICAL, "You are considered as AFK Player!");
 		}
-		else if (fPlayer.isAfk())
+		else if(fPlayer.isAfk())
 		{
 			int totalAfkTime = (int) ((System.currentTimeMillis() - fPlayer.getAfkStartTime()) / 1000L);
 			totalAfkTime -= TIME_TO_BE_AFK;
-			if (totalAfkTime > 5)
+			if(totalAfkTime > 5)
 			{
 				fPlayer.setAfk(false);
 				fPlayer.addTotalAfkSeconds(totalAfkTime);
@@ -1119,7 +1091,7 @@ public abstract class AbstractFightClub extends Event
 		player.startInvisible(this, true);
 		player.sendUserInfo(true);
 
-		if (seconds > 0)
+		if(seconds > 0)
 		{
 			startNewTimer(false, 0, "setInvisible", seconds, fPlayer, sendMessages);
 		}
@@ -1128,7 +1100,7 @@ public abstract class AbstractFightClub extends Event
 	protected void stopInvisibility(Player player)
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
-		if (fPlayer != null)
+		if(fPlayer != null)
 		{
 			fPlayer.setInvisible(false);
 		}
@@ -1139,18 +1111,16 @@ public abstract class AbstractFightClub extends Event
 
 	protected void rootPlayer(Player player)
 	{
-		if (!isRootBetweenRounds())
-		{
-			return;
-		}
+		if(!isRootBetweenRounds())
+		{ return; }
 
 		List<Playable> toRoot = new ArrayList<Playable>();
 		toRoot.add(player);
-		if (player.getAnyServitor() != null)
+		if(player.getAnyServitor() != null)
 		{
 			toRoot.add(player.getAnyServitor());
 		}
-		if (!player.isImmobilized())
+		if(!player.isImmobilized())
 		{
 			player.startRooted();
 		}
@@ -1160,22 +1130,20 @@ public abstract class AbstractFightClub extends Event
 
 	protected void unrootPlayers()
 	{
-		if (!isRootBetweenRounds())
-		{
-			return;
-		}
+		if(!isRootBetweenRounds())
+		{ return; }
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			final Player player = iFPlayer.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
-				if (player.isImmobilized())
+				if(player.isImmobilized())
 				{
 					player.stopRooted();
 					player.stopAbnormalEffect(AbnormalEffect.ROOT);
 				}
-				if (!player.isDead())
+				if(!player.isDead())
 				{
 					player.setCurrentCp(player.getMaxCp());
 					player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
@@ -1186,13 +1154,13 @@ public abstract class AbstractFightClub extends Event
 
 	protected void ressAndHealPlayers()
 	{
-		for (final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			Player player = fPlayer.getPlayer();
 
 			ressurectPlayer(player);
 			cancelNegativeEffects(player);
-			if (player.getAnyServitor() != null)
+			if(player.getAnyServitor() != null)
 			{
 				cancelNegativeEffects((Playable) player.getAnyServitor());
 			}
@@ -1236,7 +1204,7 @@ public abstract class AbstractFightClub extends Event
 		spawn.setRespawnDelay(Math.max(0, respawnInSeconds));
 		spawn.setReflection(getReflection());
 
-		if (respawnInSeconds <= 0)
+		if(respawnInSeconds <= 0)
 		{
 			spawn.stopRespawn();
 		}
@@ -1247,7 +1215,7 @@ public abstract class AbstractFightClub extends Event
 	{
 		int minutes = seconds / 60;
 		String result = "";
-		if (seconds >= 60)
+		if(seconds >= 60)
 		{
 			result = new StringBuilder().append(minutes).append(" minute").append(minutes > 1 ? "s" : "").toString();
 		}
@@ -1260,10 +1228,10 @@ public abstract class AbstractFightClub extends Event
 
 	private void buffPlayer(Player player)
 	{
-		if (getBuffer())
+		if(getBuffer())
 		{
 			giveBuffs(player, player.isMageClass() ? _mageBuffs : _fighterBuffs);
-			if (player.getAnyServitor() != null)
+			if(player.getAnyServitor() != null)
 			{
 				giveBuffs(player.getAnyServitor(), _fighterBuffs);
 			}
@@ -1272,18 +1240,17 @@ public abstract class AbstractFightClub extends Event
 
 	private static void giveBuffs(final Playable playable, int[][] buffs)
 	{
-		for (int i = 0; i < buffs.length; i++)
+		for(int i = 0; i < buffs.length; i++)
 		{
 			Skill buff = SkillHolder.getInstance().getSkill(buffs[i][0], buffs[i][1]);
-			if (buff == null)
+			if(buff == null)
 			{
 				continue;
 			}
 			buff.getEffects(playable, playable);
 		}
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			playable.setCurrentHp(playable.getMaxHp(), true);
 			playable.setCurrentMp(playable.getMaxMp());
 			playable.setCurrentCp(playable.getMaxCp());
@@ -1298,7 +1265,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected void sendMessageToTeam(FightClubTeam team, MessageType type, String msg)
 	{
-		for (FightClubPlayer iFPlayer : team.getPlayers())
+		for(FightClubPlayer iFPlayer : team.getPlayers())
 		{
 			sendMessageToPlayer(iFPlayer, type, msg);
 		}
@@ -1306,9 +1273,9 @@ public abstract class AbstractFightClub extends Event
 
 	protected void sendMessageToFighting(MessageType type, String msg, boolean skipJustTeleported)
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
-			if (!skipJustTeleported || !iFPlayer.isInvisible())
+			if(!skipJustTeleported || !iFPlayer.isInvisible())
 			{
 				sendMessageToPlayer(iFPlayer, type, msg);
 			}
@@ -1317,7 +1284,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected void sendMessageToRegistered(MessageType type, String msg)
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
 		{
 			sendMessageToPlayer(iFPlayer, type, msg);
 		}
@@ -1330,7 +1297,7 @@ public abstract class AbstractFightClub extends Event
 
 	protected void sendMessageToPlayer(Player player, MessageType type, String msg)
 	{
-		switch (type)
+		switch(type)
 		{
 			case GM:
 				player.sendPacket(new SayPacket2(0, ChatType.CRITICAL_ANNOUNCE, 0, player.getName(), msg));
@@ -1480,10 +1447,10 @@ public abstract class AbstractFightClub extends Event
 
 	protected int getTeamTotalKills(FightClubTeam team)
 	{
-		if (!isTeamed())
+		if(!isTeamed())
 			return 0;
 		int totalKills = 0;
-		for (FightClubPlayer iFPlayer : team.getPlayers())
+		for(FightClubPlayer iFPlayer : team.getPlayers())
 		{
 			totalKills += iFPlayer.getKills(true);
 		}
@@ -1497,7 +1464,7 @@ public abstract class AbstractFightClub extends Event
 
 	public List<FightClubPlayer> getPlayers(String... groups)
 	{
-		if (groups.length == 1)
+		if(groups.length == 1)
 		{
 			final List<FightClubPlayer> fPlayers = getObjects(groups[0]);
 			return fPlayers;
@@ -1505,7 +1472,7 @@ public abstract class AbstractFightClub extends Event
 		else
 		{
 			final List<FightClubPlayer> newList = new ArrayList<>();
-			for (final String group : groups)
+			for(final String group : groups)
 			{
 				final List<FightClubPlayer> fPlayers = getObjects(group);
 				newList.addAll(fPlayers);
@@ -1518,7 +1485,7 @@ public abstract class AbstractFightClub extends Event
 	{
 		final List<FightClubPlayer> fPlayers = getPlayers(FIGHTING_PLAYERS);
 		final List<Player> players = new ArrayList<>(fPlayers.size());
-		for (FightClubPlayer fPlayer : fPlayers)
+		for(FightClubPlayer fPlayer : fPlayers)
 		{
 			players.add(fPlayer.getPlayer());
 		}
@@ -1531,16 +1498,16 @@ public abstract class AbstractFightClub extends Event
 		final List<FightClubPlayer> fPlayers = getPlayers(FIGHTING_PLAYERS);
 		final List<Player> players = new ArrayList<Player>(fPlayers.size());
 
-		if (!isTeamed())
+		if(!isTeamed())
 		{
 			player.sendPacket(new SayPacket2(0, ChatType.BATTLEFIELD, 0, getName(), "(There are no teams, only you can see the message)"));
 			players.add(player);
 		}
 		else
 		{
-			for (FightClubPlayer iFPlayer : fPlayers)
+			for(FightClubPlayer iFPlayer : fPlayers)
 			{
-				if (iFPlayer.getTeam().equals(fTeam))
+				if(iFPlayer.getTeam().equals(fTeam))
 				{
 					players.add(iFPlayer.getPlayer());
 				}
@@ -1556,36 +1523,32 @@ public abstract class AbstractFightClub extends Event
 
 	public FightClubPlayer getFightClubPlayer(Creature creature, String... groups)
 	{
-		if (creature == null || !creature.isPlayable())
-		{
-			return null;
-		}
+		if(creature == null || !creature.isPlayable())
+		{ return null; }
 
 		final int lookedPlayerId = creature.getPlayer().getObjectId();
 
-		for (FightClubPlayer iFPlayer : getPlayers(groups))
+		for(FightClubPlayer iFPlayer : getPlayers(groups))
 		{
-			if (iFPlayer.getPlayer().getObjectId() == lookedPlayerId)
-			{
-				return iFPlayer;
-			}
+			if(iFPlayer.getPlayer().getObjectId() == lookedPlayerId)
+			{ return iFPlayer; }
 		}
 		return null;
 	}
 
 	private void spreadIntoTeamsAndPartys()
 	{
-		for (int i = 0; i < _room.getTeamsCount(); i++)
+		for(int i = 0; i < _room.getTeamsCount(); i++)
 		{
 			_teams.add(new FightClubTeam(i + 1));
 		}
 		int index = 0;
-		for (Player player : _room.getAllPlayers())
+		for(Player player : _room.getAllPlayers())
 		{
 			FightClubTeam team = _teams.get(index % _room.getTeamsCount());
 			final FightClubPlayer fPlayer = getFightClubPlayer(player, REGISTERED_PLAYERS);
 
-			if (fPlayer == null)
+			if(fPlayer == null)
 			{
 				continue;
 			}
@@ -1595,10 +1558,10 @@ public abstract class AbstractFightClub extends Event
 			index++;
 		}
 
-		for (FightClubTeam team : _teams)
+		for(FightClubTeam team : _teams)
 		{
 			List<List<Player>> partys = spreadTeamInPartys(team);
-			for (List<Player> party : partys)
+			for(List<Player> party : partys)
 			{
 				createParty(party);
 			}
@@ -1608,16 +1571,16 @@ public abstract class AbstractFightClub extends Event
 	private List<List<Player>> spreadTeamInPartys(FightClubTeam team)
 	{
 		Map<PlayerClass, List<Player>> classesMap = new HashMap<>();
-		for (PlayerClass getPlayerClass : PlayerClass.values())
+		for(PlayerClass getPlayerClass : PlayerClass.values())
 		{
 			classesMap.put(getPlayerClass, new ArrayList<Player>());
 		}
 
-		for (FightClubPlayer iFPlayer : team.getPlayers())
+		for(FightClubPlayer iFPlayer : team.getPlayers())
 		{
 			Player player = iFPlayer.getPlayer();
 			PlayerClass getClassGroup = FightClubGameRoom.getPlayerClassGroup(player);
-			if (getClassGroup != null)
+			if(getClassGroup != null)
 			{
 				classesMap.get(getClassGroup).add(player);
 			}
@@ -1631,24 +1594,22 @@ public abstract class AbstractFightClub extends Event
 		int partyCount = (int) Math.ceil(team.getPlayers().size() / Party.MAX_SIZE);
 
 		List<List<Player>> partys = new ArrayList<List<Player>>();
-		for (int i = 0; i < partyCount; i++)
+		for(int i = 0; i < partyCount; i++)
 		{
 			partys.add(new ArrayList<Player>());
 		}
 
-		if (partyCount == 0)
-		{
-			return partys;
-		}
+		if(partyCount == 0)
+		{ return partys; }
 
 		int finishedOnIndex = 0;
-		for (Entry<PlayerClass, List<Player>> getClassEntry : classesMap.entrySet())
+		for(Entry<PlayerClass, List<Player>> getClassEntry : classesMap.entrySet())
 		{
-			for (Player player : getClassEntry.getValue())
+			for(Player player : getClassEntry.getValue())
 			{
 				partys.get(finishedOnIndex).add(player);
 				finishedOnIndex++;
-				if (finishedOnIndex == partyCount)
+				if(finishedOnIndex == partyCount)
 				{
 					finishedOnIndex = 0;
 				}
@@ -1659,20 +1620,18 @@ public abstract class AbstractFightClub extends Event
 
 	private void createParty(List<Player> listOfPlayers)
 	{
-		if (listOfPlayers.size() <= 1)
-		{
-			return;
-		}
+		if(listOfPlayers.size() <= 1)
+		{ return; }
 
 		Party newParty = null;
-		for (Player player : listOfPlayers)
+		for(Player player : listOfPlayers)
 		{
-			if (player.getParty() != null)
+			if(player.getParty() != null)
 			{
 				player.getParty().removePartyMember(player, true, true);
 			}
 
-			if (newParty == null)
+			if(newParty == null)
 			{
 				player.setParty(newParty = new Party(player, 4));
 			}
@@ -1691,7 +1650,7 @@ public abstract class AbstractFightClub extends Event
 		_reflection.init(iz);
 		_reflection.init(doors, zones);
 
-		for (Zone zone : _reflection.getZones())
+		for(Zone zone : _reflection.getZones())
 		{
 			zone.addListener(_zoneListener);
 		}
@@ -1703,13 +1662,13 @@ public abstract class AbstractFightClub extends Event
 		int checkedCount = 0;
 		boolean isOk = false;
 
-		while (!isOk)
+		while(!isOk)
 		{
 			safeLoc = Rnd.get(locations);
 			isOk = nobodyIsClose(safeLoc);
 			checkedCount++;
 
-			if (checkedCount > locations.length * 2)
+			if(checkedCount > locations.length * 2)
 			{
 				isOk = true;
 			}
@@ -1722,47 +1681,47 @@ public abstract class AbstractFightClub extends Event
 		FightClubTeam team = fPlayer.getTeam();
 		Location[] spawnLocs = getMap().getTeamSpawns().get(team.getIndex());
 
-		if (randomNotClosestToPt || _state != EventState.STARTED)
+		if(randomNotClosestToPt || _state != EventState.STARTED)
 		{
 			return Rnd.get(spawnLocs);
 		}
 		else
 		{
 			List<Player> playersToCheck = new ArrayList<Player>();
-			if (fPlayer.getParty() != null)
+			if(fPlayer.getParty() != null)
 			{
 				playersToCheck = fPlayer.getParty().getPartyMembers();
 			}
 			else
 			{
-				for (FightClubPlayer iFPlayer : team.getPlayers())
+				for(FightClubPlayer iFPlayer : team.getPlayers())
 				{
 					playersToCheck.add(iFPlayer.getPlayer());
 				}
 			}
 
 			final Map<Location, Integer> spawnLocations = new HashMap<>(spawnLocs.length);
-			for (Location loc : spawnLocs)
+			for(Location loc : spawnLocs)
 			{
 				spawnLocations.put(loc, 0);
 			}
 
-			for (Player player : playersToCheck)
+			for(Player player : playersToCheck)
 			{
-				if (player != null && player.isOnline() && !player.isDead())
+				if(player != null && player.isOnline() && !player.isDead())
 				{
 					Location winner = null;
 					double winnerDist = -1;
-					for (Location loc : spawnLocs)
+					for(Location loc : spawnLocs)
 					{
-						if (winnerDist <= 0 || winnerDist < player.getDistance(loc))
+						if(winnerDist <= 0 || winnerDist < player.getDistance(loc))
 						{
 							winner = loc;
 							winnerDist = player.getDistance(loc);
 						}
 					}
 
-					if (winner != null)
+					if(winner != null)
 					{
 						spawnLocations.put(winner, spawnLocations.get(winner) + 1);
 					}
@@ -1771,28 +1730,26 @@ public abstract class AbstractFightClub extends Event
 
 			Location winner = null;
 			double points = -1;
-			for (Entry<Location, Integer> spawn : spawnLocations.entrySet())
+			for(Entry<Location, Integer> spawn : spawnLocations.entrySet())
 			{
-				if (points < spawn.getValue())
+				if(points < spawn.getValue())
 				{
 					winner = spawn.getKey();
 					points = spawn.getValue();
 				}
 			}
 
-			if (points <= 0.0D)
-			{
-				return Rnd.get(spawnLocs);
-			}
+			if(points <= 0.0D)
+			{ return Rnd.get(spawnLocs); }
 			return winner;
 		}
 	}
 
 	private void giveRewards(FightClubPlayer[] topKillers)
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
-			if (iFPlayer != null)
+			if(iFPlayer != null)
 			{
 				rewardPlayer(iFPlayer, Util.arrayContains(topKillers, iFPlayer));
 			}
@@ -1801,11 +1758,11 @@ public abstract class AbstractFightClub extends Event
 
 	private void showLastAFkMessage()
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			int minutesAFK = (int) Math.round(iFPlayer.getTotalAfkSeconds() / 60.0D);
 			int badgesDecreased = -minutesAFK * BADGES_FOR_MINUTE_OF_AFK;
-			if (badgesDecreased > 0)
+			if(badgesDecreased > 0)
 			{
 				sendMessageToPlayer(iFPlayer, MessageType.NORMAL_MESSAGE, new StringBuilder().append("Reward decreased by ").append(badgesDecreased).append(" FA for AFK time!").toString());
 			}
@@ -1814,17 +1771,15 @@ public abstract class AbstractFightClub extends Event
 
 	private Map<String, Integer> getBestScores()
 	{
-		if (!_scoredUpdated)
-		{
-			return _bestScores;
-		}
+		if(!_scoredUpdated)
+		{ return _bestScores; }
 
 		List<Integer> points = new ArrayList<Integer>(_scores.values());
 		Collections.sort(points);
 		Collections.reverse(points);
 
 		int cap;
-		if (points.size() <= 26)
+		if(points.size() <= 26)
 		{
 			cap = points.size() - 1;
 		}
@@ -1833,22 +1788,22 @@ public abstract class AbstractFightClub extends Event
 			cap = 25;
 		}
 		Map<String, Integer> finalResult = new LinkedHashMap<String, Integer>();
-		for (Map.Entry<String, Integer> i : _scores.entrySet())
+		for(Map.Entry<String, Integer> i : _scores.entrySet())
 		{
-			if (i.getValue() > cap)
+			if(i.getValue() > cap)
 			{
 				finalResult.put(i.getKey(), i.getValue());
 			}
 		}
 
-		if (finalResult.size() < 25)
+		if(finalResult.size() < 25)
 		{
-			for (Map.Entry<String, Integer> i : _scores.entrySet())
+			for(Map.Entry<String, Integer> i : _scores.entrySet())
 			{
-				if (i.getValue() == cap)
+				if(i.getValue() == cap)
 				{
 					finalResult.put(i.getKey(), i.getValue());
-					if (finalResult.size() == 25)
+					if(finalResult.size() == 25)
 						break;
 				}
 			}
@@ -1861,7 +1816,7 @@ public abstract class AbstractFightClub extends Event
 
 	private void updateEveryScore()
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			iFPlayer.getPlayer().sendUserInfo(true);
 			iFPlayer.getPlayer().broadcastCharInfo();
@@ -1873,11 +1828,11 @@ public abstract class AbstractFightClub extends Event
 	private String getScreenScores(boolean showScoreNotKills, boolean teamPointsNotInvidual)
 	{
 		String msg = "";
-		if (isTeamed() && teamPointsNotInvidual)
+		if(isTeamed() && teamPointsNotInvidual)
 		{
 			List<FightClubTeam> teams = getTeams();
 			Collections.sort(teams, new BestTeamComparator(showScoreNotKills));
-			for (FightClubTeam team : teams)
+			for(FightClubTeam team : teams)
 			{
 				msg = new StringBuilder().append(msg).append(team.getName()).append(" Team: ").append(showScoreNotKills ? team.getScore() : getTeamTotalKills(team)).append(" ").append(showScoreNotKills ? "Points" : "Kills").append("\n").toString();
 			}
@@ -1890,7 +1845,7 @@ public abstract class AbstractFightClub extends Event
 
 			Collections.sort(changedFPlayers, new BestPlayerComparator(showScoreNotKills));
 			int max = Math.min(10, changedFPlayers.size());
-			for (int i = 0; i < max; i++)
+			for(int i = 0; i < max; i++)
 			{
 				msg = new StringBuilder().append(msg).append(changedFPlayers.get(i).getPlayer().getName()).append(" ").append(showScoreNotKills ? "Score" : "Kills").append(": ").append(showScoreNotKills ? changedFPlayers.get(i).getScore() : changedFPlayers.get(i).getKills(true)).append("\n").toString();
 			}
@@ -1900,61 +1855,51 @@ public abstract class AbstractFightClub extends Event
 
 	protected int getRewardForWinningTeam(FightClubPlayer fPlayer, boolean atLeast1Kill)
 	{
-		if ((!_teamed) || ((_state != EventState.OVER) && (_state != EventState.NOT_ACTIVE)))
-		{
-			return 0;
-		}
-		if ((atLeast1Kill) && (fPlayer.getKills(true) <= 0) && (FightClubGameRoom.getPlayerClassGroup(fPlayer.getPlayer()) != PlayerClass.HEALERS))
-		{
-			return 0;
-		}
+		if((!_teamed) || ((_state != EventState.OVER) && (_state != EventState.NOT_ACTIVE)))
+		{ return 0; }
+		if((atLeast1Kill) && (fPlayer.getKills(true) <= 0) && (FightClubGameRoom.getPlayerClassGroup(fPlayer.getPlayer()) != PlayerClass.HEALERS))
+		{ return 0; }
 		FightClubTeam winner = null;
 		int winnerPoints = -1;
 		boolean sameAmount = false;
-		for (FightClubTeam team : getTeams())
+		for(FightClubTeam team : getTeams())
 		{
-			if (team.getScore() > winnerPoints)
+			if(team.getScore() > winnerPoints)
 			{
 				winner = team;
 				winnerPoints = team.getScore();
 				sameAmount = false;
 			}
-			else if (team.getScore() == winnerPoints)
+			else if(team.getScore() == winnerPoints)
 			{
 				sameAmount = true;
 			}
 		}
 
-		if ((!sameAmount) && (fPlayer.getTeam().equals(winner)))
-		{
-			return (int) _badgeWin;
-		}
+		if((!sameAmount) && (fPlayer.getTeam().equals(winner)))
+		{ return (int) _badgeWin; }
 
 		return 0;
 	}
 
 	private boolean nobodyIsClose(Location loc)
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
 			final Location playerLoc = iFPlayer.getPlayer().getLoc();
-			if (Math.abs(playerLoc.getX() - loc.getX()) <= CLOSE_LOCATIONS_VALUE)
-			{
-				return false;
-			}
-			if (Math.abs(playerLoc.getY() - loc.getY()) <= CLOSE_LOCATIONS_VALUE)
-			{
-				return false;
-			}
+			if(Math.abs(playerLoc.getX() - loc.getX()) <= CLOSE_LOCATIONS_VALUE)
+			{ return false; }
+			if(Math.abs(playerLoc.getY() - loc.getY()) <= CLOSE_LOCATIONS_VALUE)
+			{ return false; }
 		}
 		return true;
 	}
 
 	private void checkIfRegisteredMeetCriteria()
 	{
-		for (final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(REGISTERED_PLAYERS))
 		{
-			if (iFPlayer != null)
+			if(iFPlayer != null)
 			{
 				checkIfRegisteredPlayerMeetCriteria(iFPlayer);
 			}
@@ -1970,15 +1915,15 @@ public abstract class AbstractFightClub extends Event
 	{
 		List<Abnormal> _buffList = new ArrayList<>();
 
-		for (Abnormal e : playable.getAbnormalList().values())
+		for(Abnormal e : playable.getAbnormalList().values())
 		{
-			if (e.isOffensive() && e.isCancelable())
+			if(e.isOffensive() && e.isCancelable())
 			{
 				_buffList.add(e);
 			}
 		}
 
-		for (Abnormal e : _buffList)
+		for(Abnormal e : _buffList)
 		{
 			e.exit();
 		}
@@ -1986,15 +1931,13 @@ public abstract class AbstractFightClub extends Event
 
 	private PlayerClass[] parseExcludedClasses(String classes)
 	{
-		if (classes.isEmpty())
-		{
-			return new PlayerClass[0];
-		}
+		if(classes.isEmpty())
+		{ return new PlayerClass[0]; }
 
 		String[] classType = classes.split(";");
 		PlayerClass[] realTypes = new PlayerClass[classType.length];
 
-		for (int i = 0; i < classType.length; i++)
+		for(int i = 0; i < classType.length; i++)
 		{
 			realTypes[i] = PlayerClass.valueOf(classType[i]);
 		}
@@ -2004,15 +1947,13 @@ public abstract class AbstractFightClub extends Event
 
 	protected int[] parseExcludedSkills(String ids)
 	{
-		if (ids == null || ids.isEmpty())
-		{
-			return null;
-		}
+		if(ids == null || ids.isEmpty())
+		{ return null; }
 
 		StringTokenizer st = new StringTokenizer(ids, ";");
 		int[] realIds = new int[st.countTokens()];
 		int index = 0;
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			realIds[index] = Integer.parseInt(st.nextToken());
 			index++;
@@ -2022,19 +1963,18 @@ public abstract class AbstractFightClub extends Event
 
 	private int[][] parseAutoStartTimes(String times)
 	{
-		if (times == null || times.isEmpty())
+		if(times == null || times.isEmpty())
 			return (int[][]) null;
 
 		StringTokenizer st = new StringTokenizer(times, ",");
 		int[][] realTimes = new int[st.countTokens()][2];
 		int index = 0;
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			String[] hourMin = st.nextToken().split(":");
-			int[] realHourMin =
-			{
-				Integer.parseInt(hourMin[0]),
-				Integer.parseInt(hourMin[1])
+			int[] realHourMin = {
+					Integer.parseInt(hourMin[0]),
+					Integer.parseInt(hourMin[1])
 			};
 			realTimes[index] = realHourMin;
 			index++;
@@ -2044,19 +1984,18 @@ public abstract class AbstractFightClub extends Event
 
 	private int[][] parseBuffs(String buffs)
 	{
-		if (buffs == null || buffs.isEmpty())
+		if(buffs == null || buffs.isEmpty())
 			return (int[][]) null;
 
 		StringTokenizer st = new StringTokenizer(buffs, ";");
 		int[][] realBuffs = new int[st.countTokens()][2];
 		int index = 0;
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			String[] skillLevel = st.nextToken().split(",");
-			int[] realHourMin =
-			{
-				Integer.parseInt(skillLevel[0]),
-				Integer.parseInt(skillLevel[1])
+			int[] realHourMin = {
+					Integer.parseInt(skillLevel[0]),
+					Integer.parseInt(skillLevel[1])
 			};
 			realBuffs[index] = realHourMin;
 			index++;
@@ -2065,23 +2004,22 @@ public abstract class AbstractFightClub extends Event
 	}
 
 	public void onDamage(Creature actor, Creature victim, double damage)
-	{
-	}
+	{}
 
 	public boolean canAttackDoor(DoorInstance door, Creature attacker)
 	{
 		Player player;
 		FightClubPlayer fPlayer;
-		switch (door.getDoorType())
+		switch(door.getDoorType())
 		{
 			case WALL:
 				return false;
 			case DOOR:
 				player = attacker.getPlayer();
-				if (player == null)
+				if(player == null)
 					return false;
 				fPlayer = getFightClubPlayer((Creature) player);
-				if (fPlayer == null)
+				if(fPlayer == null)
 					return false;
 				break;
 		}
@@ -2097,20 +2035,19 @@ public abstract class AbstractFightClub extends Event
 	{
 		int toWait = 1;
 
-		int[] stops =
-		{
-			5,
-			15,
-			30,
-			60,
-			300,
-			600,
-			900
+		int[] stops = {
+				5,
+				15,
+				30,
+				60,
+				300,
+				600,
+				900
 		};
 
-		for (int stop : stops)
+		for(int stop : stops)
 		{
-			if (totalLeftTimeInSeconds > stop)
+			if(totalLeftTimeInSeconds > stop)
 			{
 				toWait = stop;
 			}
@@ -2121,7 +2058,7 @@ public abstract class AbstractFightClub extends Event
 	public static boolean teleportWholeRoomTimer(int eventObjId, int secondsLeft)
 	{
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
-		if (secondsLeft == 0)
+		if(secondsLeft == 0)
 		{
 			event._dontLetAnyoneIn = true;
 			event.startEvent();
@@ -2138,12 +2075,13 @@ public abstract class AbstractFightClub extends Event
 	{
 		AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
 
-		if (secondsLeft > 0)
+		if(secondsLeft > 0)
 		{
 			String firstWord;
-			if (event.isRoundEvent())
+			if(event.isRoundEvent())
 			{
-				firstWord = new StringBuilder().append(event.getCurrentRound() + 1 == event.getTotalRounds() ? "Last" : ROUND_NUMBER_IN_STRING[(event.getCurrentRound() + 1)]).append(" Round").toString();
+				firstWord = new StringBuilder().append(event.getCurrentRound() + 1
+						== event.getTotalRounds() ? "Last" : ROUND_NUMBER_IN_STRING[(event.getCurrentRound() + 1)]).append(" Round").toString();
 			}
 			else
 			{
@@ -2162,7 +2100,7 @@ public abstract class AbstractFightClub extends Event
 	public static boolean endRoundTimer(int eventObjId, int secondsLeft)
 	{
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
-		if (secondsLeft > 0)
+		if(secondsLeft > 0)
 		{
 			event.sendMessageToFighting(MessageType.SCREEN_BIG, new StringBuilder().append(!event.isLastRound() ? "Round" : "Match").append(" is going to be Over in ").append(getFixedTime(secondsLeft)).append("!").toString(), false);
 		}
@@ -2177,18 +2115,18 @@ public abstract class AbstractFightClub extends Event
 	{
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
 
-		if (!FightClubEventManager.getInstance().serverShuttingDown())
+		if(!FightClubEventManager.getInstance().serverShuttingDown())
 		{
 			event._dontLetAnyoneIn = false;
 			return false;
 		}
 
-		if (secondsLeft < 180)
+		if(secondsLeft < 180)
 		{
-			if (!event._dontLetAnyoneIn)
+			if(!event._dontLetAnyoneIn)
 			{
 				event.sendMessageToRegistered(MessageType.CRITICAL, "You are no longer registered because of Shutdown!");
-				for (final FightClubPlayer player : event.getPlayers(REGISTERED_PLAYERS))
+				for(final FightClubPlayer player : event.getPlayers(REGISTERED_PLAYERS))
 				{
 					event.unregister(player.getPlayer());
 				}
@@ -2197,7 +2135,7 @@ public abstract class AbstractFightClub extends Event
 			}
 		}
 
-		if (secondsLeft < 60)
+		if(secondsLeft < 60)
 		{
 			event._timer.cancel(false);
 			event.sendMessageToFighting(MessageType.CRITICAL, "Event ended because of Shutdown!", false);
@@ -2214,12 +2152,10 @@ public abstract class AbstractFightClub extends Event
 	{
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
 
-		if (player == null || !player.isOnline())
-		{
-			return false;
-		}
+		if(player == null || !player.isOnline())
+		{ return false; }
 
-		if (secondsLeft > 0)
+		if(secondsLeft > 0)
 		{
 			event.sendMessageToPlayer(player, MessageType.SCREEN_BIG, new StringBuilder().append("You are going to be teleported back in ").append(getFixedTime(secondsLeft)).append("!").toString());
 		}
@@ -2235,12 +2171,10 @@ public abstract class AbstractFightClub extends Event
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
 		final Player player = fPlayer.getPlayer();
 
-		if (player == null || !player.isOnline() || !player.isDead())
-		{
-			return false;
-		}
+		if(player == null || !player.isOnline() || !player.isDead())
+		{ return false; }
 
-		if (secondsLeft > 0)
+		if(secondsLeft > 0)
 		{
 			player.sendMessage(new StringBuilder().append("Respawn in ").append(getFixedTime(secondsLeft)).append("!").toString());
 		}
@@ -2255,21 +2189,19 @@ public abstract class AbstractFightClub extends Event
 	public static boolean setInvisible(int eventObjId, int secondsLeft, FightClubPlayer fPlayer, boolean sendMessages)
 	{
 		final AbstractFightClub event = FightClubEventManager.getInstance().getEventByObjId(eventObjId);
-		if (fPlayer.getPlayer() == null || !fPlayer.getPlayer().isOnline())
-		{
-			return false;
-		}
+		if(fPlayer.getPlayer() == null || !fPlayer.getPlayer().isOnline())
+		{ return false; }
 
-		if (secondsLeft > 0)
+		if(secondsLeft > 0)
 		{
-			if (sendMessages)
+			if(sendMessages)
 			{
 				event.sendMessageToPlayer(fPlayer, MessageType.SCREEN_BIG, new StringBuilder().append("Visible in ").append(getFixedTime(secondsLeft)).append("!").toString());
 			}
 		}
 		else
 		{
-			if (sendMessages && event.getState() == EventState.STARTED)
+			if(sendMessages && event.getState() == EventState.STARTED)
 			{
 				event.sendMessageToPlayer(fPlayer, MessageType.SCREEN_BIG, "Fight!");
 			}
@@ -2281,7 +2213,7 @@ public abstract class AbstractFightClub extends Event
 	public void startNewTimer(boolean saveAsMainTimer, int firstWaitingTimeInMilis, String methodName, Object... args)
 	{
 		final ScheduledFuture<?> timer = ThreadPoolManager.getInstance().schedule(new SmartTimer(methodName, saveAsMainTimer, args), firstWaitingTimeInMilis);
-		if (saveAsMainTimer)
+		if(saveAsMainTimer)
 		{
 			_timer = timer;
 		}
@@ -2309,7 +2241,7 @@ public abstract class AbstractFightClub extends Event
 	@Override
 	public void onAddEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 		{
 			o.getPlayer().addListener(_exitListener);
 		}
@@ -2318,7 +2250,7 @@ public abstract class AbstractFightClub extends Event
 	@Override
 	public void onRemoveEvent(GameObject o)
 	{
-		if (o.isPlayer())
+		if(o.isPlayer())
 		{
 			o.getPlayer().removeListener(_exitListener);
 		}
@@ -2353,7 +2285,7 @@ public abstract class AbstractFightClub extends Event
 
 			final Object[] changedArgs = new Object[args.length + 1];
 			changedArgs[0] = Integer.valueOf(getObjectId());
-			for (int i = 0; i < args.length; i++)
+			for(int i = 0; i < args.length; i++)
 			{
 				changedArgs[(i + 1)] = args[i];
 			}
@@ -2365,7 +2297,7 @@ public abstract class AbstractFightClub extends Event
 		public void run()
 		{
 			final Class<?>[] parameterTypes = new Class<?>[_args.length];
-			for (int i = 0; i < _args.length; i++)
+			for(int i = 0; i < _args.length; i++)
 			{
 				parameterTypes[i] = _args[i] != null ? _args[i].getClass() : null;
 			}
@@ -2375,23 +2307,21 @@ public abstract class AbstractFightClub extends Event
 			try
 			{
 				Object ret = MethodUtils.invokeMethod(AbstractFightClub.this, _methodName, _args, parameterTypes);
-				if ((boolean) ret == false)
-				{
-					return;
-				}
+				if((boolean) ret == false)
+				{ return; }
 			}
-			catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e)
+			catch(IllegalAccessException | NoSuchMethodException | InvocationTargetException e)
 			{
 				e.printStackTrace();
 			}
 
-			if (waitingTime > 0)
+			if(waitingTime > 0)
 			{
 				int toWait = AbstractFightClub.this.getTimeToWait(waitingTime);
 				waitingTime -= toWait;
 				_args[1] = Integer.valueOf(waitingTime);
 				ScheduledFuture<?> timer = ThreadPoolManager.getInstance().schedule(this, toWait * 1000);
-				if (_saveAsMain)
+				if(_saveAsMain)
 				{
 					_timer = timer;
 				}
@@ -2414,10 +2344,8 @@ public abstract class AbstractFightClub extends Event
 
 		public int compare(FightClubPlayer arg0, FightClubPlayer arg1)
 		{
-			if (_scoreNotKills)
-			{
-				return Integer.compare(arg1.getScore(), arg0.getScore());
-			}
+			if(_scoreNotKills)
+			{ return Integer.compare(arg1.getScore(), arg0.getScore()); }
 			return Integer.compare(arg1.getKills(true), arg0.getKills(true));
 		}
 	}
@@ -2434,10 +2362,8 @@ public abstract class AbstractFightClub extends Event
 		@Override
 		public int compare(FightClubTeam arg0, FightClubTeam arg1)
 		{
-			if (_scoreNotKills)
-			{
-				return Integer.compare(arg1.getScore(), arg0.getScore());
-			}
+			if(_scoreNotKills)
+			{ return Integer.compare(arg1.getScore(), arg0.getScore()); }
 			return Integer.compare(getTeamTotalKills(arg1), getTeamTotalKills(arg0));
 		}
 	}
@@ -2448,46 +2374,46 @@ public abstract class AbstractFightClub extends Event
 		public void run()
 		{
 			long currentTime = System.currentTimeMillis();
-			for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+			for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 			{
 				final Player player = iFPlayer.getPlayer();
 				boolean isAfk = player.getLastNotAfkTime() + 30000L < currentTime;
 
-				if (player.isDead() && !_ressAllowed && getRespawnTime() <= 0)
+				if(player.isDead() && !_ressAllowed && getRespawnTime() <= 0)
 				{
 					isAfk = false;
 				}
 
-				if (iFPlayer.isAfk())
+				if(iFPlayer.isAfk())
 				{
-					if (!isAfk)
+					if(!isAfk)
 					{
 						handleAfk(iFPlayer, false);
 					}
-					else if (_state != EventState.OVER)
+					else if(_state != EventState.OVER)
 					{
 						sendMessageToPlayer(player, MessageType.CRITICAL, "You are in AFK mode!");
 					}
 				}
-				else if (_state == EventState.NOT_ACTIVE)
+				else if(_state == EventState.NOT_ACTIVE)
 				{
 					handleAfk(iFPlayer, false);
 				}
-				else if (isAfk)
+				else if(isAfk)
 				{
 					handleAfk(iFPlayer, true);
 				}
 			}
 
-			if (getState() != EventState.NOT_ACTIVE)
+			if(getState() != EventState.NOT_ACTIVE)
 			{
 				ThreadPoolManager.getInstance().schedule(this, 1000L);
 			}
 			else
 			{
-				for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+				for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 				{
-					if (iFPlayer.isAfk())
+					if(iFPlayer.isAfk())
 					{
 						AbstractFightClub.this.handleAfk(iFPlayer, false);
 					}
@@ -2502,10 +2428,11 @@ public abstract class AbstractFightClub extends Event
 		public void run()
 		{
 			final List<FightClubPlayer> toDelete = new ArrayList<FightClubPlayer>();
-			for (Entry<FightClubPlayer, Zone> entry : _leftZone.entrySet())
+			for(Entry<FightClubPlayer, Zone> entry : _leftZone.entrySet())
 			{
 				Player player = entry.getKey().getPlayer();
-				if (player == null || !player.isOnline() || _state == EventState.NOT_ACTIVE || entry.getValue().checkIfInZone(player) || player.isDead() || player.isTeleporting())
+				if(player == null || !player.isOnline() || _state == EventState.NOT_ACTIVE || entry.getValue().checkIfInZone(player) || player.isDead()
+						|| player.isTeleporting())
 				{
 					toDelete.add(entry.getKey());
 					continue;
@@ -2517,7 +2444,7 @@ public abstract class AbstractFightClub extends Event
 				player.sendPacket(new SayPacket2(0, ChatType.COMMANDCHANNEL_ALL, 0, "Error", "Go Back To Event Zone!"));
 				entry.getKey().increaseSecondsOutsideZone();
 
-				if (entry.getKey().getSecondsOutsideZone() >= TIME_MAX_SECONDS_OUTSIDE_ZONE)
+				if(entry.getKey().getSecondsOutsideZone() >= TIME_MAX_SECONDS_OUTSIDE_ZONE)
 				{
 					player.doDie(null);
 					toDelete.add(entry.getKey());
@@ -2525,16 +2452,16 @@ public abstract class AbstractFightClub extends Event
 				}
 			}
 
-			for (FightClubPlayer playerToDelete : toDelete)
+			for(FightClubPlayer playerToDelete : toDelete)
 			{
-				if (playerToDelete != null)
+				if(playerToDelete != null)
 				{
 					_leftZone.remove(playerToDelete);
 					playerToDelete.clearSecondsOutsideZone();
 				}
 			}
 
-			if (_state != EventState.NOT_ACTIVE)
+			if(_state != EventState.NOT_ACTIVE)
 			{
 				ThreadPoolManager.getInstance().schedule(this, 1000L);
 			}
@@ -2546,11 +2473,11 @@ public abstract class AbstractFightClub extends Event
 		@Override
 		public void run()
 		{
-			if (_state == EventState.STARTED)
+			if(_state == EventState.STARTED)
 			{
-				for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+				for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 				{
-					if (iFPlayer.getPlayer() == null || !iFPlayer.getPlayer().isOnline() || iFPlayer.isAfk())
+					if(iFPlayer.getPlayer() == null || !iFPlayer.getPlayer().isOnline() || iFPlayer.isAfk())
 					{
 						continue;
 					}
@@ -2558,7 +2485,7 @@ public abstract class AbstractFightClub extends Event
 				}
 			}
 
-			if (_state != EventState.NOT_ACTIVE)
+			if(_state != EventState.NOT_ACTIVE)
 			{
 				ThreadPoolManager.getInstance().schedule(new TimeSpentOnEventThread(), 10000L);
 			}
@@ -2570,10 +2497,10 @@ public abstract class AbstractFightClub extends Event
 		@Override
 		public void onZoneEnter(Zone zone, Creature actor)
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
 				FightClubPlayer fPlayer = getFightClubPlayer(actor);
-				if (fPlayer != null)
+				if(fPlayer != null)
 				{
 					actor.sendPacket(new EarthQuakePacket(actor.getLoc(), 0, 1));
 					_leftZone.remove(getFightClubPlayer(actor));
@@ -2584,10 +2511,10 @@ public abstract class AbstractFightClub extends Event
 		@Override
 		public void onZoneLeave(Zone zone, Creature actor)
 		{
-			if (actor.isPlayer() && _state != EventState.NOT_ACTIVE)
+			if(actor.isPlayer() && _state != EventState.NOT_ACTIVE)
 			{
 				FightClubPlayer fPlayer = getFightClubPlayer(actor);
-				if (fPlayer != null)
+				if(fPlayer != null)
 				{
 					_leftZone.put(getFightClubPlayer(actor), zone);
 				}
@@ -2606,58 +2533,46 @@ public abstract class AbstractFightClub extends Event
 
 	protected boolean isPlayerActive(Player player)
 	{
-		if (player == null)
-		{
-			return false;
-		}
-		if (player.isDead())
-		{
-			return false;
-		}
-		if (!player.getReflection().equals(getReflection()))
-		{
-			return false;
-		}
-		if (System.currentTimeMillis() - player.getLastNotAfkTime() > 120000L)
-		{
-			return false;
-		}
+		if(player == null)
+		{ return false; }
+		if(player.isDead())
+		{ return false; }
+		if(!player.getReflection().equals(getReflection()))
+		{ return false; }
+		if(System.currentTimeMillis() - player.getLastNotAfkTime() > 120000L)
+		{ return false; }
 		boolean insideZone = false;
-		for (Zone zone : getReflection().getZones())
+		for(Zone zone : getReflection().getZones())
 		{
-			if (zone.checkIfInZone(player.getX(), player.getY(), player.getZ(), player.getReflection()))
+			if(zone.checkIfInZone(player.getX(), player.getY(), player.getZ(), player.getReflection()))
 			{
 				insideZone = true;
 			}
 		}
-		if (!insideZone)
-		{
-			return false;
-		}
+		if(!insideZone)
+		{ return false; }
 		return true;
 	}
 
 	private FightClubPlayer[] getTopKillers()
 	{
-		if ((!_teamed) || (topKillerReward == 0))
-		{
-			return null;
-		}
+		if((!_teamed) || (topKillerReward == 0))
+		{ return null; }
 		FightClubPlayer[] topKillers = new FightClubPlayer[_teams.size()];
 		int[] topKillersKills = new int[_teams.size()];
 
 		int teamIndex = 0;
-		for (FightClubTeam team : _teams)
+		for(FightClubTeam team : _teams)
 		{
-			for (FightClubPlayer fPlayer : team.getPlayers())
+			for(FightClubPlayer fPlayer : team.getPlayers())
 			{
-				if (fPlayer != null)
+				if(fPlayer != null)
 				{
-					if (fPlayer.getKills(true) == topKillersKills[teamIndex])
+					if(fPlayer.getKills(true) == topKillersKills[teamIndex])
 					{
 						topKillers[teamIndex] = null;
 					}
-					else if (fPlayer.getKills(true) > topKillersKills[teamIndex])
+					else if(fPlayer.getKills(true) > topKillersKills[teamIndex])
 					{
 						topKillers[teamIndex] = fPlayer;
 						topKillersKills[teamIndex] = fPlayer.getKills(true);

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.CommandChannel;
@@ -29,26 +30,26 @@ public class RequestPartyMatchConfig implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Party party = player.getParty();
 		CommandChannel channel = party != null ? party.getCommandChannel() : null;
 
-		if (channel != null && channel.getChannelLeader() == player)
+		if(channel != null && channel.getChannelLeader() == player)
 		{
-			if (channel.getMatchingRoom() == null)
+			if(channel.getMatchingRoom() == null)
 			{
 				CCMatchingRoom room = new CCMatchingRoom(player, 1, player.getLevel(), 50, party.getLootDistribution(), player.getName());
 				channel.setMatchingRoom(room);
 			}
 		}
-		else if (channel != null && !channel.getParties().contains(party))
+		else if(channel != null && !channel.getParties().contains(party))
 			player.sendPacket(SystemMsg.THE_COMMAND_CHANNEL_AFFILIATED_PARTYS_PARTY_MEMBER_CANNOT_USE_THE_MATCHING_SCREEN);
-		else if (party != null && !party.isLeader(player))
+		else if(party != null && !party.isLeader(player))
 		{
 			final MatchingRoom room = player.getMatchingRoom();
-			if (room != null && room.getType() == MatchingRoom.PARTY_MATCHING)
+			if(room != null && room.getType() == MatchingRoom.PARTY_MATCHING)
 			{
 				player.setMatchingRoomWindowOpened(true);
 				player.sendPacket(room.infoRoomPacket(), room.membersPacket(player));
@@ -58,7 +59,7 @@ public class RequestPartyMatchConfig implements IClientIncomingPacket
 		}
 		else
 		{
-			if (party == null)
+			if(party == null)
 				MatchingRoomManager.getInstance().addToWaitingList(player);
 			player.sendPacket(new ListPartyWaitingPacket(_region, _allLevels == 1, _page, player));
 		}

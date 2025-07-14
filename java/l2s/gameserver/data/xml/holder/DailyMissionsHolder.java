@@ -5,13 +5,12 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.templates.dailymissions.DailyMissionTemplate;
 import l2s.gameserver.templates.dailymissions.DailyRewardTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -32,15 +31,15 @@ public final class DailyMissionsHolder extends AbstractHolder
 	{
 		_missions.put(mission.getId(), mission);
 
-		for (DailyRewardTemplate reward : mission.getRewards())
+		for(DailyRewardTemplate reward : mission.getRewards())
 		{
-			for (ClassId classId : ClassId.VALUES)
+			for(ClassId classId : ClassId.VALUES)
 			{
-				if (!reward.containsClassId(classId.getId()))
+				if(!reward.containsClassId(classId.getId()))
 					continue;
 
 				Set<DailyMissionTemplate> missionsByClassId = _missionsByClassId.get(classId.getId());
-				if (missionsByClassId == null)
+				if(missionsByClassId == null)
 				{
 					missionsByClassId = new HashSet<DailyMissionTemplate>();
 					_missionsByClassId.put(classId.getId(), missionsByClassId);
@@ -63,7 +62,7 @@ public final class DailyMissionsHolder extends AbstractHolder
 	public Collection<DailyMissionTemplate> getMissions(int classId)
 	{
 		Collection<DailyMissionTemplate> missions = _missionsByClassId.get(classId);
-		if (missions == null)
+		if(missions == null)
 			return Collections.emptyList();
 		return missions;
 	}

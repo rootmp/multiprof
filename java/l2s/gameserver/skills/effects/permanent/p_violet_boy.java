@@ -28,7 +28,7 @@ public final class p_violet_boy extends EffectHandler
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			player.getFlags().getVioletBoy().start(this);
 			player.sendStatusUpdate(true, true, UpdateType.VCP_ISGUILTY);
@@ -40,7 +40,7 @@ public final class p_violet_boy extends EffectHandler
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			player.getFlags().getVioletBoy().stop(this);
 			player.startPvPFlag(null);

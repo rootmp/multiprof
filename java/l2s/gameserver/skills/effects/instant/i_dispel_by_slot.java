@@ -26,7 +26,7 @@ public class i_dispel_by_slot extends i_abstract_effect
 		super(template);
 
 		_abnormalType = AbnormalType.valueOf(getParams().getString("abnormal_type", AbnormalType.NONE.toString()).toUpperCase());
-		if (_abnormalType == AbnormalType.NONE)
+		if(_abnormalType == AbnormalType.NONE)
 			_maxAbnormalLvl = 0;
 		else
 			_maxAbnormalLvl = getParams().getInteger("max_abnormal_level", 0);
@@ -47,34 +47,34 @@ public class i_dispel_by_slot extends i_abstract_effect
 		Collections.sort(abnormals, AbnormalsComparator.getInstance()); // ToFix: Comparator to HF
 		Collections.reverse(abnormals);
 
-		for (Abnormal abnormal : abnormals)
+		for(Abnormal abnormal : abnormals)
 		{
 			/*
 			 * if(!abnormal.isCancelable()) continue;
 			 */
 
 			Skill effectSkill = abnormal.getSkill();
-			if (effectSkill == null)
+			if(effectSkill == null)
 				continue;
 
-			if (effectSkill.isToggle())
+			if(effectSkill.isToggle())
 				continue;
 
-			if (effectSkill.isPassive())
+			if(effectSkill.isPassive())
 				continue;
 
-			if (target.isSpecialAbnormal(effectSkill))
+			if(target.isSpecialAbnormal(effectSkill))
 				continue;
 
-			if (abnormal.getAbnormalType() != _abnormalType)
+			if(abnormal.getAbnormalType() != _abnormalType)
 				continue;
 
-			if (_maxAbnormalLvl != -1 && abnormal.getAbnormalLvl() > _maxAbnormalLvl)
+			if(_maxAbnormalLvl != -1 && abnormal.getAbnormalLvl() > _maxAbnormalLvl)
 				continue;
 
 			abnormal.exit();
 
-			if (!abnormal.isHidden())
+			if(!abnormal.isHidden())
 				target.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(effectSkill));
 		}
 	}

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
@@ -29,55 +30,55 @@ public class AttackRequest implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		activeChar.setActive();
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!activeChar.getPlayerAccess().CanAttack)
+		if(!activeChar.getPlayerAccess().CanAttack)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		GameObject target = activeChar.getVisibleObject(_objectId);
-		if (target == null)
+		if(target == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!(target instanceof Creature))
+		if(!(target instanceof Creature))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != target && !activeChar.getAggressionTarget().isDead())
+		if(activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != target && !activeChar.getAggressionTarget().isDead())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (target.isPlayer() && (activeChar.isInBoat() || target.isInBoat()))
+		if(target.isPlayer() && (activeChar.isInBoat() || target.isInBoat()))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.getTarget() != target || activeChar.isTransformed() && !activeChar.getTransform().isNormalAttackable())
+		if(activeChar.getTarget() != target || activeChar.isTransformed() && !activeChar.getTransform().isNormalAttackable())
 		{
 			target.onAction(activeChar, _attackId == 1);
 			return;
 		}
 
-		if (target.getObjectId() != activeChar.getObjectId() && !activeChar.isInStoreMode() && !activeChar.isProcessingRequest())
+		if(target.getObjectId() != activeChar.getObjectId() && !activeChar.isInStoreMode() && !activeChar.isProcessingRequest())
 			activeChar.getAI().Attack(target, true, _attackId == 1);
 	}
 }

@@ -29,13 +29,13 @@ public final class EffectEffectImmunity extends EffectHandler
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		effected.getFlags().getEffectImmunity().start(this);
-		if (_withException)
+		if(_withException)
 		{
-			if (effected == effector)
+			if(effected == effector)
 			{
-				if (getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate()))
+				if(getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate()))
 					effected.setEffectImmunityException(effector.getSkillCast(SkillCastingType.NORMAL).getTarget());
-				else if (getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate()))
+				else if(getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate()))
 					effected.setEffectImmunityException(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getTarget());
 			}
 			else

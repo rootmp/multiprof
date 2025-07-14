@@ -56,22 +56,22 @@ public abstract class ObservableArena
 
 	public final void addObserver(ObservePoint observer)
 	{
-		if (_observers.add(observer))
+		if(_observers.add(observer))
 			onAddObserver(observer);
 	}
 
 	public final void removeObserver(ObservePoint observer)
 	{
-		if (_observers.remove(observer))
+		if(_observers.remove(observer))
 			onRemoveObserver(observer);
 	}
 
 	public final void clearObservers()
 	{
-		for (ObservePoint observer : _observers)
+		for(ObservePoint observer : _observers)
 		{
 			Player player = observer.getPlayer();
-			if (player.isInObserverMode())
+			if(player.isInObserverMode())
 				player.leaveObserverMode();
 		}
 		_observers.clear();

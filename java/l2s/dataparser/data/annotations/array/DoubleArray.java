@@ -13,8 +13,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DoubleArray
-{
+public @interface DoubleArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя

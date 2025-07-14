@@ -22,7 +22,7 @@ public class ClassIdCondition implements ICheckStartCondition
 	public ClassIdCondition(ClassId... classIds)
 	{
 		_classId = new int[classIds.length];
-		for (int i = 0; i < classIds.length; i++)
+		for(int i = 0; i < classIds.length; i++)
 			_classId[i] = classIds[i].getId();
 	}
 

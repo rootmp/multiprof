@@ -9,7 +9,7 @@ import l2s.gameserver.network.l2.GameClient;
 public class ExSendClientINI implements IClientIncomingPacket
 {
 	@SuppressWarnings("unused")
-	private int _iniType;	// 0 - Unknown, 1 - Option, 2 - ChatFilter, 3 - WindowsInfo
+	private int _iniType; // 0 - Unknown, 1 - Option, 2 - ChatFilter, 3 - WindowsInfo
 	@SuppressWarnings("unused")
 	private byte[] _content;
 

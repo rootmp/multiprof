@@ -29,19 +29,19 @@ public final class VariationUtils
 {
 	public static long getRemovePrice(ItemInstance item)
 	{
-		if (item == null)
+		if(item == null)
 			return -1;
 
 		VariationGroup group = VariationDataHolder.getInstance().getGroup(item.getTemplate().getVariationGroupId());
-		if (group == null)
+		if(group == null)
 			return -1;
 
 		int stoneId = item.getVariationStoneId();
-		if (stoneId == -1)
+		if(stoneId == -1)
 			return 0;
 
 		VariationFee fee = group.getFee(stoneId);
-		if (fee == null)
+		if(fee == null)
 			return -1;
 
 		return fee.getCancelFee();
@@ -49,14 +49,14 @@ public final class VariationUtils
 
 	public static VariationFee getVariationFee(ItemInstance item, ItemInstance stone)
 	{
-		if (item == null)
+		if(item == null)
 			return null;
 
-		if (stone == null)
+		if(stone == null)
 			return null;
 
 		VariationGroup group = VariationDataHolder.getInstance().getGroup(item.getTemplate().getVariationGroupId());
-		if (group == null)
+		if(group == null)
 			return null;
 
 		return group.getFee(stone.getItemId());
@@ -64,112 +64,107 @@ public final class VariationUtils
 
 	public static boolean tryAugmentItem(Player player, ItemInstance targetItem, ItemInstance refinerItem, ItemInstance feeItem, long feeItemCount)
 	{
-		if (!targetItem.canBeAugmented(player))
+		if(!targetItem.canBeAugmented(player))
 			return false;
 
-		if (refinerItem.getTemplate().isBlocked(player, refinerItem))
+		if(refinerItem.getTemplate().isBlocked(player, refinerItem))
 			return false;
 
 		int stoneId = refinerItem.getItemId();
 		VariationStone stone = null;
 
-		int[] standardRings =
-		{
-			91952, // Ring of Insolence
-			893, // Majestic Ring
-			902, // Phoenix Ring
-			889 // Tateossian Ring
+		int[] standardRings = {
+				91952, // Ring of Insolence
+				893, // Majestic Ring
+				902, // Phoenix Ring
+				889 // Tateossian Ring
 		};
-		int[] standardEarrings =
-		{
-			91953, // Dragon Valley Earring
-			862, // Majestic Earring
-			871, // Phoenix Earring
-			858 // Tateossian Earring
+		int[] standardEarrings = {
+				91953, // Dragon Valley Earring
+				862, // Majestic Earring
+				871, // Phoenix Earring
+				858 // Tateossian Earring
 		};
-		int[] standardNecklaces =
-		{
-			924, // Majestic Necklace
-			933, // Phoenix Necklace
-			920 // Tateossian Necklace
+		int[] standardNecklaces = {
+				924, // Majestic Necklace
+				933, // Phoenix Necklace
+				920 // Tateossian Necklace
 		};
-		int[] rareRings =
-		{
-			6660, // Queen Ant's Ring
-			6662, // Ring of Core
-			49580, // Baium's Ring
+		int[] rareRings = {
+				6660, // Queen Ant's Ring
+				6662, // Ring of Core
+				49580, // Baium's Ring
 		};
-		int[] rareEarrings =
-		{
-			6661, // Orfen's Earring
-			90763, // Zaken's Earring
-			90992, // Antharas' Earring
+		int[] rareEarrings = {
+				6661, // Orfen's Earring
+				90763, // Zaken's Earring
+				90992, // Antharas' Earring
 		};
-		int[] rareNecklaces =
-		{
-			91550, // Frintezza's Necklace
-			91117, // Nebula Necklace
-			91119, // Ignis Necklace
-			91121, // Procella Necklace
-			91123 // Petram Necklace
+		int[] rareNecklaces = {
+				91550, // Frintezza's Necklace
+				91117, // Nebula Necklace
+				91119, // Ignis Necklace
+				91121, // Procella Necklace
+				91123 // Petram Necklace
 		};
 
-		if (targetItem.isWeapon())
+		if(targetItem.isWeapon())
 			stone = VariationDataHolder.getInstance().getStone(VariationType.WEAPON, stoneId);
-		else if ((stoneId == 94187) || (stoneId == 94188) || (stoneId == 94211) || (stoneId == 94212))
+		else if((stoneId == 94187) || (stoneId == 94188) || (stoneId == 94211) || (stoneId == 94212))
 		{
-			if ((targetItem.getTemplate().getExType() == ExItemType.UPPER_PIECE) || (targetItem.getTemplate().getExType() == ExItemType.FULL_BODY))
+			if((targetItem.getTemplate().getExType() == ExItemType.UPPER_PIECE) || (targetItem.getTemplate().getExType() == ExItemType.FULL_BODY))
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR_CHEST, stoneId);
-			else if (targetItem.getTemplate().getExType() == ExItemType.LOWER_PIECE)
+			else if(targetItem.getTemplate().getExType() == ExItemType.LOWER_PIECE)
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR_LEGS, stoneId);
-			else if (targetItem.getTemplate().getExType() == ExItemType.HELMET)
+			else if(targetItem.getTemplate().getExType() == ExItemType.HELMET)
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR_HELMET, stoneId);
-			else if (targetItem.getTemplate().getExType() == ExItemType.GLOVES)
+			else if(targetItem.getTemplate().getExType() == ExItemType.GLOVES)
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR_GLOVES, stoneId);
-			else if (targetItem.getTemplate().getExType() == ExItemType.FEET)
+			else if(targetItem.getTemplate().getExType() == ExItemType.FEET)
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR_BOOTS, stoneId);
 		}
-		else if (targetItem.isArmor() && !targetItem.getTemplate().isHairAccessory() && !targetItem.getTemplate().isCloak())
+		else if(targetItem.isArmor() && !targetItem.getTemplate().isHairAccessory() && !targetItem.getTemplate().isCloak())
 		{
 			ExItemType itemType = targetItem.getTemplate().getExType();
-			if ((itemType == ExItemType.UPPER_PIECE) || (itemType == ExItemType.LOWER_PIECE || (itemType == ExItemType.FULL_BODY) || (itemType == ExItemType.HELMET) || (itemType == ExItemType.GLOVES) || (itemType == ExItemType.FEET)))
+			if((itemType == ExItemType.UPPER_PIECE) || (itemType == ExItemType.LOWER_PIECE || (itemType == ExItemType.FULL_BODY)
+					|| (itemType == ExItemType.HELMET) || (itemType == ExItemType.GLOVES) || (itemType == ExItemType.FEET)))
 				stone = VariationDataHolder.getInstance().getStone(VariationType.ARMOR, stoneId);
 		}
-		else if (ArrayUtils.contains(standardRings, targetItem.getItemId()))
+		else if(ArrayUtils.contains(standardRings, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_STANDARD_RING, stoneId);
-		else if (ArrayUtils.contains(standardEarrings, targetItem.getItemId()))
+		else if(ArrayUtils.contains(standardEarrings, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_STANDARD_EARRING, stoneId);
-		else if (ArrayUtils.contains(standardNecklaces, targetItem.getItemId()))
+		else if(ArrayUtils.contains(standardNecklaces, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_STANDARD_NECKLACE, stoneId);
-		else if (ArrayUtils.contains(rareRings, targetItem.getItemId()))
+		else if(ArrayUtils.contains(rareRings, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_RARE_RING, stoneId);
-		else if (ArrayUtils.contains(rareEarrings, targetItem.getItemId()))
+		else if(ArrayUtils.contains(rareEarrings, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_RARE_EARRING, stoneId);
-		else if (ArrayUtils.contains(rareNecklaces, targetItem.getItemId()))
+		else if(ArrayUtils.contains(rareNecklaces, targetItem.getItemId()))
 			stone = VariationDataHolder.getInstance().getStone(VariationType.ACCESSORY_RARE_NECKLACE, stoneId);
-		else if (targetItem.getItemId() == 94213)
+		else if(targetItem.getItemId() == 94213)
 			stone = VariationDataHolder.getInstance().getStone(VariationType.HEROIC_CIRCLET, stoneId);
 
-		if (stone == null)
+		if(stone == null)
 			return false;
 
 		int variation1Id = getRandomOptionId(stone.getVariation(1));
 		int variation2Id = getRandomOptionId(stone.getVariation(2));
 		int variation3Id = 0;
-		
-		if (variation1Id == 0 && variation2Id == 0)
+
+		if(variation1Id == 0 && variation2Id == 0)
 			return false;
 
-		if (player.getInventory().getCountOf(refinerItem.getItemId()) < 1L)
+		if(player.getInventory().getCountOf(refinerItem.getItemId()) < 1L)
 			return false;
 
-		if (player.getInventory().getCountOf(feeItem.getItemId()) < feeItemCount)
+		if(player.getInventory().getCountOf(feeItem.getItemId()) < feeItemCount)
 			return false;
 
-		if (!player.getInventory().destroyItem(refinerItem, 1L))
+		if(!player.getInventory().destroyItem(refinerItem, 1L))
 			return false;
 
-		if (!player.getInventory().destroyItem(feeItem, feeItemCount))
+		if(!player.getInventory().destroyItem(feeItem, feeItemCount))
 			return false;
 
 		setVariation(player, targetItem, stoneId, variation1Id, variation2Id, variation3Id);
@@ -182,7 +177,7 @@ public final class VariationUtils
 		item.setVariation1Id(variation1Id);
 		item.setVariation2Id(variation2Id);
 		item.setVariation3Id(variation3Id);
-		
+
 		player.getInventory().refreshEquip(item);
 
 		item.setJdbcState(JdbcEntityState.UPDATED);
@@ -190,9 +185,9 @@ public final class VariationUtils
 
 		player.sendPacket(new InventoryUpdatePacket(player).addModifiedItem(item));
 
-		for (ShortCut sc : player.getAllShortCuts())
+		for(ShortCut sc : player.getAllShortCuts())
 		{
-			if (sc.getId() == item.getObjectId() && sc.getType() == ShortCut.ShortCutType.ITEM)
+			if(sc.getId() == item.getObjectId() && sc.getType() == ShortCut.ShortCutType.ITEM)
 				player.sendPacket(new ShortCutRegisterPacket(player, sc));
 		}
 
@@ -201,27 +196,27 @@ public final class VariationUtils
 
 	private static int getRandomOptionId(VariationInfo variation)
 	{
-		if (variation == null)
+		if(variation == null)
 			return 0;
 
 		double probalityAmount = 0.;
 		VariationCategory[] categories = variation.getCategories();
-		for (VariationCategory category : categories)
+		for(VariationCategory category : categories)
 			probalityAmount += category.getProbability();
 
-		if (Rnd.chance(probalityAmount))
+		if(Rnd.chance(probalityAmount))
 		{
 			double probalityMod = (100. - probalityAmount) / categories.length;
 			List<VariationCategory> successCategories = new ArrayList<VariationCategory>();
 			int tryCount = 0;
-			while (successCategories.isEmpty())
+			while(successCategories.isEmpty())
 			{
 				tryCount++;
-				for (VariationCategory category : categories)
+				for(VariationCategory category : categories)
 				{
-					if ((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
+					if((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
 						probalityMod += 1.;
-					if (Rnd.chance(category.getProbability() + probalityMod))
+					if(Rnd.chance(category.getProbability() + probalityMod))
 						successCategories.add(category);
 				}
 			}
@@ -236,27 +231,27 @@ public final class VariationUtils
 
 	private static int getRandomOptionId(VariationCategory category)
 	{
-		if (category == null)
+		if(category == null)
 			return 0;
 
 		double chanceAmount = 0.;
 		VariationOption[] options = category.getOptions();
-		for (VariationOption option : options)
+		for(VariationOption option : options)
 			chanceAmount += option.getChance();
 
-		if (Rnd.chance(chanceAmount))
+		if(Rnd.chance(chanceAmount))
 		{
 			double chanceMod = (100. - chanceAmount) / options.length;
 			List<VariationOption> successOptions = new ArrayList<VariationOption>();
 			int tryCount = 0;
-			while (successOptions.isEmpty())
+			while(successOptions.isEmpty())
 			{
 				tryCount++;
-				for (VariationOption option : options)
+				for(VariationOption option : options)
 				{
-					if ((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
+					if((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
 						chanceMod += 1.;
-					if (Rnd.chance(option.getChance() + chanceMod))
+					if(Rnd.chance(option.getChance() + chanceMod))
 						successOptions.add(option);
 				}
 			}

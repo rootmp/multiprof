@@ -23,7 +23,7 @@ public class EffectCPDrain extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead() || effected.isRaid())
+		if(effected.isDead() || effected.isRaid())
 			return false;
 		return true;
 	}
@@ -31,18 +31,18 @@ public class EffectCPDrain extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return;
 
-		if (effected == effector)
+		if(effected == effector)
 			return;
 
 		double drained = getValue();
-		if (_percent)
+		if(_percent)
 			drained = effected.getMaxCp() / 100. * drained;
 
 		drained = Math.min(drained, effected.getCurrentCp());
-		if (drained <= 0)
+		if(drained <= 0)
 			return;
 
 		effected.setCurrentCp(Math.max(0., effected.getCurrentCp() - drained));
@@ -51,7 +51,7 @@ public class EffectCPDrain extends EffectHandler
 		newCp = Math.max(0, Math.min(newCp, effector.getMaxCp() / 100. * effector.getStat().calc(Stats.CP_LIMIT, null, null)));
 
 		double addToCp = newCp - effected.getCurrentCp();
-		if (addToCp > 0)
+		if(addToCp > 0)
 			effector.setCurrentCp(newCp);
 	}
 }

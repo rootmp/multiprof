@@ -17,7 +17,7 @@ public class RewardItem
 	public boolean isHerb()
 	{
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(itemId);
-		if (item == null)
+		if(item == null)
 			return false;
 		return item.isHerb();
 	}
@@ -25,7 +25,7 @@ public class RewardItem
 	public boolean isAdena()
 	{
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(itemId);
-		if (item == null)
+		if(item == null)
 			return false;
 		return item.isAdena();
 	}

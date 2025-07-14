@@ -81,10 +81,8 @@ public class TransformTemplate extends PCTemplate
 	public double getBaseHpMax(int level)
 	{
 		HpMpCpData data = _hpMpCpData.get(level);
-		if (data != null)
-		{
-			return data.getHP();
-		}
+		if(data != null)
+		{ return data.getHP(); }
 
 		return 0;
 	}
@@ -93,10 +91,8 @@ public class TransformTemplate extends PCTemplate
 	public double getBaseMpMax(int level)
 	{
 		HpMpCpData data = _hpMpCpData.get(level);
-		if (data != null)
-		{
-			return data.getMP();
-		}
+		if(data != null)
+		{ return data.getMP(); }
 
 		return 0;
 	}
@@ -105,10 +101,8 @@ public class TransformTemplate extends PCTemplate
 	public double getBaseCpMax(int level)
 	{
 		HpMpCpData data = _hpMpCpData.get(level);
-		if (data != null)
-		{
-			return data.getCP();
-		}
+		if(data != null)
+		{ return data.getCP(); }
 
 		return 0;
 	}
@@ -121,10 +115,8 @@ public class TransformTemplate extends PCTemplate
 	public double getBaseStatBonus(int value, BaseStats stat)
 	{
 		BaseStatsBonus bonus = _baseStatsBonuses.get(value);
-		if (bonus != null)
-		{
-			return bonus.get(stat);
-		}
+		if(bonus != null)
+		{ return bonus.get(stat); }
 
 		return 0;
 	}
@@ -194,12 +186,10 @@ public class TransformTemplate extends PCTemplate
 
 	public SkillLearn getAdditionalSkill(int skillId, int skillLevel)
 	{
-		for (SkillLearn skill : _additionalSkills)
+		for(SkillLearn skill : _additionalSkills)
 		{
-			if ((skill.getId() == skillId) && (skill.getLevel() == skillLevel))
-			{
-				return skill;
-			}
+			if((skill.getId() == skillId) && (skill.getLevel() == skillLevel))
+			{ return skill; }
 		}
 		return null;
 	}

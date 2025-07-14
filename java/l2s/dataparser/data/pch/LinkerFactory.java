@@ -99,7 +99,7 @@ public class LinkerFactory
 
 	public int findClearValue(String link)
 	{
-	String c_link = link.replaceAll("\\[", "").replaceAll("\\]", "");
+		String c_link = link.replaceAll("\\[", "").replaceAll("\\]", "");
 		int value = 0;
 		try
 		{
@@ -137,14 +137,13 @@ public class LinkerFactory
 	{
 		link = link.replace("[", "").replace("]", "");
 
-		if (itemlinks.containsKey("@" + link)) 
+		if(itemlinks.containsKey("@" + link))
 			return Integer.parseInt(itemlinks.get("@" + link));
-		else if (itemlinks.containsKey(link)) 
+		else if(itemlinks.containsKey(link))
 			return Integer.parseInt(itemlinks.get(link));
-		else 
+		else
 			return 0;
 	}
-
 
 	public String findLinkItemFromValue(long linkId)
 	{
@@ -155,7 +154,7 @@ public class LinkerFactory
 		LOGGER.warn("method findLinkItemFromValue returned null from ID: " + linkId);
 		return key;
 	}
-	
+
 	public String findLinkManualFromValue(long linkId)
 	{
 		final String key = "";
@@ -165,7 +164,6 @@ public class LinkerFactory
 		LOGGER.warn("method findLinkManualFromValue returned null from ID: " + linkId);
 		return key;
 	}
-
 
 	public String optionPchfindValueFor(String link)
 	{
@@ -199,25 +197,27 @@ public class LinkerFactory
 		skill_pch.put(link, objects);
 	}
 
-	public String optionSkillfindLinkFromValue(long linkId) 
+	public String optionSkillfindLinkFromValue(long linkId)
 	{
-		try 
+		try
 		{
 			final int skill_id = (int) (linkId / 65536 / 65536);
 			final int skill_level = (int) (linkId - 65536 * 65536 * skill_id);
 
-			for (Map.Entry<String, int[]> entry : skill_pch.entrySet()) 
+			for(Map.Entry<String, int[]> entry : skill_pch.entrySet())
 			{
 				int[] skillData = entry.getValue();
-				if (skillData != null && skillData.length > 0) 
+				if(skillData != null && skillData.length > 0)
 				{
-					if (skillData[0] == skill_id && skillData[1] == skill_level) 
+					if(skillData[0] == skill_id && skillData[1] == skill_level)
 						return entry.getKey().replace("@", "");
 				}
 			}
 
 			LOGGER.warn("Skill name not found for ID: {} and Level: {}", skill_id, skill_level);
-		} catch (Exception e) {
+		}
+		catch(Exception e)
+		{
 			LOGGER.error("Error while resolving skill name for linkId: " + linkId, e);
 		}
 

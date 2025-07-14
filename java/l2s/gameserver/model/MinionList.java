@@ -35,10 +35,8 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			if (_minionSpawners.containsKey(minionData))
-			{
-				return null;
-			}
+			if(_minionSpawners.containsKey(minionData))
+			{ return null; }
 
 			MinionSpawner spawner = new MinionSpawner(minionData, _master);
 			_minionSpawners.put(minionData, spawner);
@@ -84,14 +82,12 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			for (MinionSpawner spawner : _minionSpawners.values())
+			for(MinionSpawner spawner : _minionSpawners.values())
 			{
-				for (NpcInstance m : spawner.getAllSpawned())
+				for(NpcInstance m : spawner.getAllSpawned())
 				{
-					if (m.isVisible() && !m.isDead())
-					{
-						return true;
-					}
+					if(m.isVisible() && !m.isDead())
+					{ return true; }
 				}
 			}
 		}
@@ -109,11 +105,11 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			for (MinionSpawner spawner : _minionSpawners.values())
+			for(MinionSpawner spawner : _minionSpawners.values())
 			{
-				for (NpcInstance m : spawner.getAllSpawned())
+				for(NpcInstance m : spawner.getAllSpawned())
 				{
-					if (m.isVisible() && !m.isDead())
+					if(m.isVisible() && !m.isDead())
 					{
 						result.add(m);
 					}
@@ -132,7 +128,7 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			for (MinionSpawner spawner : _minionSpawners.values())
+			for(MinionSpawner spawner : _minionSpawners.values())
 			{
 				spawner.init();
 			}
@@ -148,7 +144,7 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			for (MinionSpawner spawner : _minionSpawners.values())
+			for(MinionSpawner spawner : _minionSpawners.values())
 			{
 				spawner.deleteAll();
 			}
@@ -164,7 +160,7 @@ public class MinionList
 		lock.lock();
 		try
 		{
-			if (_master.isRaid())
+			if(_master.isRaid())
 			{
 				despawnMinions();
 			}
@@ -195,10 +191,10 @@ public class MinionList
 		try
 		{
 			// Начинаем респавн лидера после смерти всех миньонов.
-			if (!_master.isVisible() && !hasAliveMinions())
+			if(!_master.isVisible() && !hasAliveMinions())
 			{
 				Spawner spawn = _master.getSpawn();
-				if (spawn != null)
+				if(spawn != null)
 				{
 					spawn.decreaseCount(_master);
 				}
@@ -220,10 +216,8 @@ public class MinionList
 		// По порядку, полукругом за спиной хозяина, радиус зависит от количества
 		// миньонов. Если миньон 1, то он спавниться сбоку (перепроверить на оффе)
 		Territory territory = minionData.getTerritory();
-		if (territory != null)
-		{
-			return territory;
-		}
+		if(territory != null)
+		{ return territory; }
 		return _master.getRndMinionPosition();
 	}
 }

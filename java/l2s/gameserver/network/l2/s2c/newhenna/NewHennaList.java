@@ -24,23 +24,22 @@ public class NewHennaList implements IClientOutgoingPacket
 		_nResetCount = player.getDyePotentialDailyResetCount();
 		_hennaId = player.getHennaPotenList();
 		_activeslots = player.getAvailableHennaSlots();
-		
+
 		int reset_count = player.getDyePotentialDailyResetCount();
 		_reset_count = 1000;
-    if (reset_count >= 3 && reset_count <= 5) 
-        _reset_count = 2000;
-     else if (reset_count >= 6) 
-        _reset_count = 5000;
-    _cSendType = cSendType;
+		if(reset_count >= 3 && reset_count <= 5)
+			_reset_count = 2000;
+		else if(reset_count >= 6)
+			_reset_count = 5000;
+		_cSendType = cSendType;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_cSendType);
 		packetWriter.writeH(_dailyStep);
 		packetWriter.writeH(_dailyCount);
-		
 
 		packetWriter.writeH(_nResetCount);
 		packetWriter.writeH(_nResetMaxCount);
@@ -51,7 +50,6 @@ public class NewHennaList implements IClientOutgoingPacket
 		packetWriter.writeD(91663);
 		packetWriter.writeQ(_reset_count);
 		//}
-
 
 		if(_dailyStep != -1)
 		{
@@ -67,13 +65,14 @@ public class NewHennaList implements IClientOutgoingPacket
 				packetWriter.writeH(hennaPoten.getEnchantLevel());
 
 				packetWriter.writeD(hennaPoten.getEnchantExp());
-				if(hennaPoten.getHenna() != null && hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500 && hennaPoten.getHenna().getPatternLevel() == 30)
+				if(hennaPoten.getHenna() != null && hennaPoten.getEnchantLevel() == 30 && hennaPoten.getEnchantExp() >= 2500
+						&& hennaPoten.getHenna().getPatternLevel() == 30)
 					packetWriter.writeH(hennaPoten.getActiveStep() + 1);
 				else
 					packetWriter.writeH(hennaPoten.getActiveStep());
-					packetWriter.writeH(0);//nDailyStep
-					packetWriter.writeH(0);//nDailyCount
-					packetWriter.writeH(30);//nOpenedSlotStep
+				packetWriter.writeH(0);//nDailyStep
+				packetWriter.writeH(0);//nDailyCount
+				packetWriter.writeH(30);//nOpenedSlotStep
 			}
 		}
 		else

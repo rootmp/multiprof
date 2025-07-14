@@ -27,11 +27,11 @@ public abstract class AbstractSkillListener implements OnEquipListener
 
 		IntObjectMap<SkillEntry> removedSkills = item.removeEquippedSkills(this);
 
-		for (SkillEntry skillEntry : skills)
+		for(SkillEntry skillEntry : skills)
 		{
-			if (canAddSkill(actor, item, skillEntry))
+			if(canAddSkill(actor, item, skillEntry))
 			{
-				if (actor.addSkill(skillEntry) != skillEntry)
+				if(actor.addSkill(skillEntry) != skillEntry)
 				{
 					flags |= onAddSkill(actor, item, skillEntry);
 					flags |= Inventory.UPDATE_SKILLS_FLAG;
@@ -40,7 +40,7 @@ public abstract class AbstractSkillListener implements OnEquipListener
 
 			item.addEquippedSkill(this, skillEntry);
 
-			if (removedSkills != null)
+			if(removedSkills != null)
 			{
 				removedSkills.remove(skillEntry.getId());
 			}
@@ -62,16 +62,14 @@ public abstract class AbstractSkillListener implements OnEquipListener
 
 	protected int removeSkills(Playable actor, IntObjectMap<SkillEntry> skillsMap)
 	{
-		if (skillsMap == null)
-		{
-			return 0;
-		}
+		if(skillsMap == null)
+		{ return 0; }
 
 		int flags = 0;
-		for (SkillEntry skillEntry : skillsMap.valueCollection())
+		for(SkillEntry skillEntry : skillsMap.valueCollection())
 		{
 			SkillEntry temp = actor.getKnownSkill(skillEntry.getId());
-			if ((temp == skillEntry) && (actor.removeSkill(skillEntry) != null))
+			if((temp == skillEntry) && (actor.removeSkill(skillEntry) != null))
 			{
 				flags |= Inventory.UPDATE_SKILLS_FLAG;
 			}

@@ -25,7 +25,7 @@ public class GeodataUtils
 
 		LinePointIterator iter = new LinePointIterator(gx, gy, tgx, tgy);
 
-		while (iter.next())
+		while(iter.next())
 		{
 			int wx = GeoEngine.getWorldX(iter.x());
 			int wy = GeoEngine.getWorldY(iter.y());
@@ -55,12 +55,12 @@ public class GeodataUtils
 		int wz = iter.z();
 		prim.addPoint(Color.RED, wx, wy, wz);
 
-		while (iter.next())
+		while(iter.next())
 		{
 			int curX = iter.x();
 			int curY = iter.y();
 
-			if ((curX != prevX) || (curY != prevY))
+			if((curX != prevX) || (curY != prevY))
 			{
 				wx = GeoEngine.getWorldX(curX);
 				wy = GeoEngine.getWorldY(curY);
@@ -78,16 +78,14 @@ public class GeodataUtils
 	private static Color getDirectionColor(int x, int y, int z, int geoIndex, byte NSWE)
 	{
 		// TODO: Цвет зависящий от положения персонажа и высоты слоя.
-		if ((GeoEngine.getLowerNSWE(x, y, z, geoIndex) & NSWE) != 0)
-		{
-			return Color.GREEN;
-		}
+		if((GeoEngine.getLowerNSWE(x, y, z, geoIndex) & NSWE) != 0)
+		{ return Color.GREEN; }
 		return Color.RED;
 	}
 
 	public static void debugGrid(Player player, int geoRadius)
 	{
-		if (geoRadius < 0)
+		if(geoRadius < 0)
 			throw new IllegalArgumentException("geoRadius < 0");
 
 		final int blocksPerPacket = 10;
@@ -96,14 +94,14 @@ public class GeodataUtils
 
 		ExServerPrimitivePacket exsp = null;
 		Location playerGeoLoc = player.getLoc().clone().world2geo();
-		for (int dx = -geoRadius; dx <= geoRadius; ++dx)
+		for(int dx = -geoRadius; dx <= geoRadius; ++dx)
 		{
-			for (int dy = -geoRadius; dy <= geoRadius; ++dy)
+			for(int dy = -geoRadius; dy <= geoRadius; ++dy)
 			{
-				if (iBlock >= blocksPerPacket)
+				if(iBlock >= blocksPerPacket)
 				{
 					iBlock = 0;
-					if (exsp != null)
+					if(exsp != null)
 					{
 						++iPacket;
 						player.sendPacket(exsp);
@@ -111,10 +109,8 @@ public class GeodataUtils
 					exsp = new ExServerPrimitivePacket("DebugGrid_" + iPacket, player.getX(), player.getY(), -16000);
 				}
 
-				if (exsp == null)
-				{
-					throw new IllegalStateException();
-				}
+				if(exsp == null)
+				{ throw new IllegalStateException(); }
 
 				int gx = playerGeoLoc.getX() + dx;
 				int gy = playerGeoLoc.getY() + dy;

@@ -37,18 +37,18 @@ public class DimensionalMerchantUtils
 	public static String correctBypassLink(Player player, String link)
 	{
 		String path = DM_HTML_FILE_PATH + link;
-		if (HtmCache.getInstance().getIfExists(path, player) != null)
+		if(HtmCache.getInstance().getIfExists(path, player) != null)
 			return path;
 		return link;
 	}
 
 	public static boolean onMenuSelect(NpcInstance npc, Player player, int ask, long reply, int state)
 	{
-		if (ask == 1) // Receive incoming premium items.
+		if(ask == 1) // Receive incoming premium items.
 		{
-			if (reply == 1)
+			if(reply == 1)
 			{
-				if (player.getPremiumItemList().isEmpty())
+				if(player.getPremiumItemList().isEmpty())
 				{
 					player.sendPacket(SystemMsg.THERE_ARE_NO_MORE_VITAMIN_ITEMS_TO_BE_FOUND);
 					return true;
@@ -57,25 +57,25 @@ public class DimensionalMerchantUtils
 				return true;
 			}
 		}
-		else if (ask == -201903153)
+		else if(ask == -201903153)
 		{
-			if (reply == 300)
+			if(reply == 300)
 			{
 				player.sendPacket(ExShowEnsoulWindow.STATIC);
 				return true;
 			}
-			else if (reply == 302)
+			else if(reply == 302)
 			{
 				player.sendPacket(ExEnSoulExtractionShow.STATIC);
 				return true;
 			}
 		}
-		else if ((ask == -20200320) && (reply == 99))
+		else if((ask == -20200320) && (reply == 99))
 		{
 			player.sendPacket(new ExShowUpgradeSystemNormal(1));
 			return true;
 		}
-		else if ((ask == -9999) && (reply == 3))
+		else if((ask == -9999) && (reply == 3))
 		{
 			player.sendPacket(ExShowGlobalEventUI.STATIC);
 			return true;

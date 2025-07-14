@@ -6,12 +6,11 @@ import l2s.commons.data.xml.AbstractHolder;
 import l2s.dataparser.data.annotations.Element;
 import l2s.dataparser.data.holder.upgrade_system.NormalUpgradeData;
 
-
 public class UpgradeSystemNormalHolder extends AbstractHolder
 {
 	@Element(start = "upgradesystem_begin", end = "upgradesystem_end", keyField = "upgrade_id")
-	private Map<Integer,NormalUpgradeData> upgrade_system_normal_data;
-	
+	private Map<Integer, NormalUpgradeData> upgrade_system_normal_data;
+
 	private static UpgradeSystemNormalHolder ourInstance = new UpgradeSystemNormalHolder();
 
 	public static UpgradeSystemNormalHolder getInstance()

@@ -49,42 +49,42 @@ public final class VariationDataParser extends AbstractParser<VariationDataHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		if (!Config.ALLOW_AUGMENTATION)
+		if(!Config.ALLOW_AUGMENTATION)
 			return;
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("augmentation"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("augmentation"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			VariationType type = VariationType.valueOf(element.attributeValue("type").toUpperCase());
 
-			for (Iterator<Element> stoneIterator = element.elementIterator("stone"); stoneIterator.hasNext();)
+			for(Iterator<Element> stoneIterator = element.elementIterator("stone"); stoneIterator.hasNext();)
 			{
 				Element stoneElement = stoneIterator.next();
 
 				int stoneId = Integer.parseInt(stoneElement.attributeValue("id"));
 				VariationStone stone = new VariationStone(stoneId);
 
-				for (Iterator<Element> variationIterator = stoneElement.elementIterator("variation"); variationIterator.hasNext();)
+				for(Iterator<Element> variationIterator = stoneElement.elementIterator("variation"); variationIterator.hasNext();)
 				{
 					Element variationElement = variationIterator.next();
 
 					int variationId = Integer.parseInt(variationElement.attributeValue("id"));
 					VariationInfo variation = new VariationInfo(variationId);
 
-					for (Iterator<Element> categoryIterator = variationElement.elementIterator("category"); categoryIterator.hasNext();)
+					for(Iterator<Element> categoryIterator = variationElement.elementIterator("category"); categoryIterator.hasNext();)
 					{
 						Element categoryElement = categoryIterator.next();
 
 						double probability = Double.parseDouble(categoryElement.attributeValue("probability"));
 						VariationCategory category = new VariationCategory(probability);
 
-						for (Iterator<Element> optionIterator = categoryElement.elementIterator("option"); optionIterator.hasNext();)
+						for(Iterator<Element> optionIterator = categoryElement.elementIterator("option"); optionIterator.hasNext();)
 						{
 							Element optionElement = optionIterator.next();
 
 							int optionId = Integer.parseInt(optionElement.attributeValue("id"));
-							if (OptionDataHolder.getInstance().getTemplate(optionId) == null)
+							if(OptionDataHolder.getInstance().getTemplate(optionId) == null)
 							{
 								warn("Cannot find option ID: " + optionId + " for variation ID: " + variationId);
 								continue;
@@ -105,14 +105,14 @@ public final class VariationDataParser extends AbstractParser<VariationDataHolde
 			}
 		}
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("group"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("group"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			int groupId = Integer.parseInt(element.attributeValue("id"));
 			VariationGroup group = new VariationGroup(groupId);
 
-			for (Iterator<Element> feeIterator = element.elementIterator("fee"); feeIterator.hasNext();)
+			for(Iterator<Element> feeIterator = element.elementIterator("fee"); feeIterator.hasNext();)
 			{
 				Element feeElement = feeIterator.next();
 

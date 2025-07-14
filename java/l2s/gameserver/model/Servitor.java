@@ -59,7 +59,6 @@ import l2s.gameserver.network.l2.s2c.PetStatusShowPacket;
 import l2s.gameserver.network.l2.s2c.PetStatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.RelationChangedPacket;
 import l2s.gameserver.network.l2.s2c.SetSummonRemainTimePacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
@@ -92,10 +91,10 @@ public abstract class Servitor extends Playable
 		@Override
 		public int compare(Servitor o1, Servitor o2)
 		{
-			if (o1 == null)
+			if(o1 == null)
 				return -1;
 
-			if (o2 == null)
+			if(o2 == null)
 				return 1;
 
 			return o1.getSummonTime() - o2.getSummonTime();
@@ -169,9 +168,9 @@ public abstract class Servitor extends Playable
 		_ownerName = owner.getName();
 		_owner = owner;
 
-		if (template.getSkills().size() > 0)
+		if(template.getSkills().size() > 0)
 		{
-			for (TIntObjectIterator<Skill> iterator = template.getSkills().iterator(); iterator.hasNext();)
+			for(TIntObjectIterator<Skill> iterator = template.getSkills().iterator(); iterator.hasNext();)
 			{
 				iterator.advance();
 				addSkill(SkillEntry.makeSkillEntry(SkillEntryType.SERVITOR, iterator.value()));
@@ -196,13 +195,13 @@ public abstract class Servitor extends Playable
 
 		Player owner = getPlayer();
 		Party party = owner.getParty();
-		if (party != null)
+		if(party != null)
 			party.broadcastToPartyMembers(owner, new ExPartyPetWindowAdd(this));
 		getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 
 		EffectsDAO.getInstance().restoreEffects(this);
 
-		if (owner.isInOlympiadMode() || owner.isInFightClub())
+		if(owner.isInOlympiadMode() || owner.isInFightClub())
 			getAbnormalList().stopAll();
 
 		transferOwnerBuffs();
@@ -210,17 +209,17 @@ public abstract class Servitor extends Playable
 		_summonTime = (int) (System.currentTimeMillis() / 1000);
 		_index = owner.getServitorsCount();
 
-		if (owner.isGMInvisible())
+		if(owner.isGMInvisible())
 			startAbnormalEffect(AbnormalEffect.STEALTH);
 	}
 
 	@Override
 	public ServitorAI getAI()
 	{
-		if (_ai == null)
+		if(_ai == null)
 			synchronized (this)
 			{
-				if (_ai == null)
+				if(_ai == null)
 					_ai = new ServitorAI(this);
 			}
 
@@ -257,42 +256,42 @@ public abstract class Servitor extends Playable
 	public void onAction(final Player player, boolean shift)
 	{
 		Player owner = getPlayer();
-		if (!isTargetable(player))
+		if(!isTargetable(player))
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (isFrozen())
+		if(isFrozen())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, (Class<Servitor>) getClass(), this, true))
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, (Class<Servitor>) getClass(), this, true))
 			return;
 
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
 		}
-		else if (player == owner)
+		else if(player == owner)
 		{
 			player.sendPacket(new MyPetSummonInfoPacket(this).update());
-			if (isPet())
+			if(isPet())
 				player.sendPacket(new ExPetSkillList((PetInstance) this, false));
-			if (!player.isActionsDisabled())
+			if(!player.isActionsDisabled())
 				player.sendPacket(new PetStatusShowPacket(this));
 
 			player.sendPacket(ActionFailPacket.STATIC);
 		}
-		else if (isAutoAttackable(player))
+		else if(isAutoAttackable(player))
 			player.getAI().Attack(this, false, shift);
 		else
 		{
-			if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
 			{
-				if (!shift)
+				if(!shift)
 					player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
 				else
 					player.sendActionFailed();
@@ -376,42 +375,42 @@ public abstract class Servitor extends Playable
 
 		Player owner = getPlayer();
 
-		if (killer == null || killer == owner || killer == this || isInZoneBattle() || killer.isInZoneBattle())
+		if(killer == null || killer == owner || killer == this || isInZoneBattle() || killer.isInZoneBattle())
 			return;
 
-		if (killer.isServitor())
+		if(killer.isServitor())
 			killer = killer.getPlayer();
 
-		if (killer == null)
+		if(killer == null)
 			return;
 
-		if (owner.isInFightClub() || (killer.isPlayable() && killer.getPlayer().isInFightClub()))
+		if(owner.isInFightClub() || (killer.isPlayable() && killer.getPlayer().isInFightClub()))
 			return;
 
-		if (killer.isPlayer())
+		if(killer.isPlayer())
 		{
-			if (killer.isMyServitor(getObjectId()))
+			if(killer.isMyServitor(getObjectId()))
 				return;
 
-			if (isInSiegeZone())
+			if(isInSiegeZone())
 				return;
 
 			Player pk = (Player) killer;
 
-			if (getPvpFlag() == 0 && !getPlayer().atMutualWarWith(pk) && !isPK())
+			if(getPvpFlag() == 0 && !getPlayer().atMutualWarWith(pk) && !isPK())
 			{
 				boolean eventPvPFlag = true;
 
-				for (SingleMatchEvent matchEvent : getEvents(SingleMatchEvent.class))
+				for(SingleMatchEvent matchEvent : getEvents(SingleMatchEvent.class))
 				{
-					if (!matchEvent.canIncreasePvPPKCounter(pk, owner))
+					if(!matchEvent.canIncreasePvPPKCounter(pk, owner))
 					{
 						eventPvPFlag = false;
 						break;
 					}
 				}
 
-				if (eventPvPFlag)
+				if(eventPvPFlag)
 				{
 					int pkCountMulti = Math.max(pk.getPkKills() / 2, 1);
 					pk.decreaseKarma(Config.KARMA_MIN_KARMA * pkCountMulti);
@@ -429,7 +428,7 @@ public abstract class Servitor extends Playable
 
 	protected void stopDecay()
 	{
-		if (_decayTask != null)
+		if(_decayTask != null)
 		{
 			_decayTask.cancel(false);
 			_decayTask = null;
@@ -451,7 +450,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public void broadcastStatusUpdate()
 	{
-		if (!needStatusUpdate())
+		if(!needStatusUpdate())
 			return;
 
 		Player owner = getPlayer();
@@ -461,7 +460,7 @@ public abstract class Servitor extends Playable
 		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 
 		Party party = owner.getParty();
-		if (party != null)
+		if(party != null)
 			party.broadcastToPartyMembers(owner, new ExPartyPetWindowUpdate(this));
 	}
 
@@ -477,14 +476,14 @@ public abstract class Servitor extends Playable
 		Player owner = getPlayer();
 
 		Party party = owner.getParty();
-		if (party != null)
+		if(party != null)
 			party.broadcastToPartyMembers(owner, new ExPartyPetWindowDelete(this));
 		owner.sendPacket(new PetDeletePacket(getObjectId(), getServitorType()));
 		owner.deleteServitor(getObjectId());
 
-		for (Servitor servitor : owner.getServitors())
+		for(Servitor servitor : owner.getServitors())
 		{
-			if (_index < servitor.getIndex()) // Индекс теперь свободен, уменьшаем остальным саммонам.
+			if(_index < servitor.getIndex()) // Индекс теперь свободен, уменьшаем остальным саммонам.
 				servitor.setIndex(servitor.getIndex() - 1);
 		}
 
@@ -501,12 +500,10 @@ public abstract class Servitor extends Playable
 	public void storeEffects(boolean clean)
 	{
 		Player owner = getPlayer();
-		if (owner == null)
-		{
-			return;
-		}
+		if(owner == null)
+		{ return; }
 
-		if (clean || owner.isInOlympiadMode() || owner.isInFightClub())
+		if(clean || owner.isInOlympiadMode() || owner.isInFightClub())
 		{
 			getAbnormalList().stopAll();
 		}
@@ -518,14 +515,14 @@ public abstract class Servitor extends Playable
 		Player owner = getPlayer();
 		_follow = state;
 
-		if (_follow)
+		if(_follow)
 		{
-			if (getAI().getIntention() == CtrlIntention.AI_INTENTION_ACTIVE)
+			if(getAI().getIntention() == CtrlIntention.AI_INTENTION_ACTIVE)
 			{
 				getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, owner, Config.FOLLOW_RANGE);
 			}
 		}
-		else if (getAI().getIntention() == CtrlIntention.AI_INTENTION_FOLLOW)
+		else if(getAI().getIntention() == CtrlIntention.AI_INTENTION_FOLLOW)
 		{
 			getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 		}
@@ -542,7 +539,7 @@ public abstract class Servitor extends Playable
 		Player owner = getPlayer();
 		PartySpelledPacket ps = new PartySpelledPacket(this, true);
 		Party party = owner.getParty();
-		if (party != null)
+		if(party != null)
 			party.broadCast(ps);
 		else
 			owner.sendPacket(ps);
@@ -563,8 +560,7 @@ public abstract class Servitor extends Playable
 
 	@Override
 	public void doPickupItem(final GameObject object)
-	{
-	}
+	{}
 
 	@Override
 	public void doRevive()
@@ -608,18 +604,18 @@ public abstract class Servitor extends Playable
 	{
 		super.displayGiveDamageMessage(target, skill, damage, servitorTransferedDamage, transferedDamage, crit, miss, shld, blocked, elementalDamage, elementalCrit);
 
-		if (miss)
+		if(miss)
 		{
-			if (skill == null)
+			if(skill == null)
 				getPlayer().sendPacket(new SystemMessage(SystemMessage.C1S_ATTACK_WENT_ASTRAY).addName(this));
 			else
 				getPlayer().sendPacket(new ExMagicAttackInfo(getPlayer().getObjectId(), target.getObjectId(), ExMagicAttackInfo.EVADED)); // TODO:
-																																			// Нужно
-																																			// ли?
+			// Нужно
+			// ли?
 			return;
 		}
 
-		if (crit)
+		if(crit)
 		{
 			/*
 			 * if(skill != null) { if(skill.isMagic())
@@ -630,21 +626,21 @@ public abstract class Servitor extends Playable
 			getPlayer().sendPacket(new SystemMessage(SystemMessage.C1_HAD_A_CRITICAL_HIT).addName(this));
 		}
 
-		if (blocked)
+		if(blocked)
 		{
 			getPlayer().sendPacket(SystemMsg.THE_ATTACK_HAS_BEEN_BLOCKED);
 			getPlayer().sendPacket(new ExMagicAttackInfo(getPlayer().getObjectId(), target.getObjectId(), target.isInvulnerable() ? ExMagicAttackInfo.IMMUNE : ExMagicAttackInfo.BLOCKED)); // TODO:
-																																															// Нужно
-																																															// ли?
+			// Нужно
+			// ли?
 		}
-		else if (!target.isDoor() && !(target instanceof SiegeToggleNpcInstance)) // TODO: Проверить на оффе.
+		else if(!target.isDoor() && !(target instanceof SiegeToggleNpcInstance)) // TODO: Проверить на оффе.
 			getPlayer().sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_DONE_S3_POINTS_OF_DAMAGE_TO_C2).addName(this).addName(target).addInteger(damage).addHpChange(target.getObjectId(), getObjectId(), -damage));
 	}
 
 	@Override
 	public void displayReceiveDamageMessage(Creature attacker, int damage, Servitor servitorTransferedDamage, int transferedDamage, int elementalDamage)
 	{
-		if (attacker != this)
+		if(attacker != this)
 			getPlayer().sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RECEIVED_S3_DAMAGE_FROM_C2).addName(this).addName(attacker).addInteger(damage).addHpChange(getObjectId(), attacker.getObjectId(), -damage));
 	}
 
@@ -653,9 +649,9 @@ public abstract class Servitor extends Playable
 	{
 		Player owner = getPlayer();
 
-		if (spirit)
+		if(spirit)
 		{
-			if (_chargedSpiritshotPower > 0 || _chargedSpiritshotHealBonus > 0)
+			if(_chargedSpiritshotPower > 0 || _chargedSpiritshotHealBonus > 0)
 			{
 				_chargedSpiritshotPower = 0;
 				_chargedSpiritshotHealBonus = 0;
@@ -663,7 +659,7 @@ public abstract class Servitor extends Playable
 				return true;
 			}
 		}
-		else if (_chargedSoulshotPower > 0)
+		else if(_chargedSoulshotPower > 0)
 		{
 			_chargedSoulshotPower = 0;
 			owner.autoShot();
@@ -676,7 +672,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public double getChargedSoulshotPower()
 	{
-		if (_chargedSoulshotPower > 0)
+		if(_chargedSoulshotPower > 0)
 			return getStat().calc(Stats.SOULSHOT_POWER, _chargedSoulshotPower);
 		return 0.;
 	}
@@ -690,7 +686,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public double getChargedSpiritshotPower()
 	{
-		if (_chargedSpiritshotPower > 0)
+		if(_chargedSpiritshotPower > 0)
 			return getStat().calc(Stats.SPIRITSHOT_POWER, _chargedSpiritshotPower);
 		return 0.;
 	}
@@ -698,7 +694,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public double getChargedSpiritshotHealBonus()
 	{
-		if (_chargedSpiritshotHealBonus > 0)
+		if(_chargedSpiritshotHealBonus > 0)
 			return _chargedSpiritshotHealBonus;
 		return 0.;
 	}
@@ -742,12 +738,12 @@ public abstract class Servitor extends Playable
 
 		setNonAggroTime(System.currentTimeMillis() + Config.NONAGGRO_TIME_ONTELEPORT);
 		setNonPvpTime(System.currentTimeMillis() + Config.NONPVP_TIME_ONTELEPORT);
-		if (owner.isInOlympiadMode())
+		if(owner.isInOlympiadMode())
 			teleToLocation(owner.getLoc(), owner.getReflection());
 		else
 			teleToLocation(Location.findPointToStay(owner, 50, 150), owner.getReflection());
 
-		if (!isDead() && _follow)
+		if(!isDead() && _follow)
 			getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, owner, Config.FOLLOW_RANGE);
 	}
 
@@ -766,7 +762,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public void broadcastCharInfo()
 	{
-		if (_broadcastCharInfoTask != null)
+		if(_broadcastCharInfoTask != null)
 			return;
 
 		_broadcastCharInfoTask = ThreadPoolManager.getInstance().schedule(new BroadcastCharInfoTask(), Config.BROADCAST_CHAR_INFO_INTERVAL);
@@ -780,7 +776,7 @@ public abstract class Servitor extends Playable
 
 	public void broadcastCharInfoImpl(Iterable<Player> players, IUpdateTypeComponent... components)
 	{
-		if (components.length == 0)
+		if(components.length == 0)
 		{
 			_log.warn(getClass().getSimpleName() + ": Trying broadcast char info without components!", new Exception());
 			return;
@@ -788,19 +784,19 @@ public abstract class Servitor extends Playable
 
 		Player owner = getPlayer();
 
-		for (Player player : players)
+		for(Player player : players)
 		{
-			if (player == owner)
+			if(player == owner)
 			{
 				player.sendPacket(new MyPetSummonInfoPacket(this).update());
 				if(isPet())
 					player.sendPacket(new ExPetSkillList((PetInstance) this, false));
 			}
-			else if (!owner.isInvisible(player))
+			else if(!owner.isInvisible(player))
 			{
-				if (isPet())
+				if(isPet())
 					player.sendPacket(new PetInfoPacket((PetInstance) this, player).update(components));
-				else if (isSummon())
+				else if(isSummon())
 					player.sendPacket(new SummonInfoPacket((SummonInstance) this, player).update(components));
 				else
 					player.sendPacket(new NpcInfoPacket(this, player).update(components));
@@ -826,7 +822,7 @@ public abstract class Servitor extends Playable
 		Player owner = getPlayer();
 		owner.sendPacket(new MyPetSummonInfoPacket(this).update());
 		if(isPet())
-			owner.sendPacket(new ExPetSkillList((PetInstance)this, false));
+			owner.sendPacket(new ExPetSkillList((PetInstance) this, false));
 	}
 
 	public void sendPetInfo()
@@ -836,9 +832,9 @@ public abstract class Servitor extends Playable
 
 	public void sendPetInfo(boolean force)
 	{
-		if (Config.USER_INFO_INTERVAL == 0 || force)
+		if(Config.USER_INFO_INTERVAL == 0 || force)
 		{
-			if (_petInfoTask != null)
+			if(_petInfoTask != null)
 			{
 				_petInfoTask.cancel(false);
 				_petInfoTask = null;
@@ -847,7 +843,7 @@ public abstract class Servitor extends Playable
 			return;
 		}
 
-		if (_petInfoTask != null)
+		if(_petInfoTask != null)
 			return;
 
 		_petInfoTask = ThreadPoolManager.getInstance().schedule(new PetInfoTask(), Config.USER_INFO_INTERVAL);
@@ -902,10 +898,10 @@ public abstract class Servitor extends Playable
 	@Override
 	public ServitorStatsChangeRecorder getStatsRecorder()
 	{
-		if (_statsRecorder == null)
+		if(_statsRecorder == null)
 			synchronized (this)
 			{
-				if (_statsRecorder == null)
+				if(_statsRecorder == null)
 					_statsRecorder = new ServitorStatsChangeRecorder(this);
 			}
 
@@ -918,48 +914,48 @@ public abstract class Servitor extends Playable
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		Player owner = getPlayer();
 
-		if (owner == forPlayer)
+		if(owner == forPlayer)
 		{
 			list.add(new MyPetSummonInfoPacket(this));
 			if(isPet())
-				list.add(new ExPetSkillList((PetInstance)this, false));
+				list.add(new ExPetSkillList((PetInstance) this, false));
 			list.add(new SetSummonRemainTimePacket(this));
 			list.add(new PartySpelledPacket(this, true));
-			if (getNpcState() != 101)
+			if(getNpcState() != 101)
 				list.add(new ExChangeNPCState(getObjectId(), getNpcState()));
 
-			if (isPet())
+			if(isPet())
 				list.add(new PetItemListPacket((PetInstance) this));
 		}
-		else if (!getPlayer().isInvisible(forPlayer))
+		else if(!getPlayer().isInvisible(forPlayer))
 		{
 			Party party = forPlayer.getParty();
-			if (getReflection() == ReflectionManager.GIRAN_HARBOR && (owner == null || party == null || party != owner.getParty()))
+			if(getReflection() == ReflectionManager.GIRAN_HARBOR && (owner == null || party == null || party != owner.getParty()))
 				return list;
 
-			if (isPet())
+			if(isPet())
 				list.add(new PetInfoPacket((PetInstance) this, forPlayer).init());
-			else if (isSummon())
+			else if(isSummon())
 				list.add(new SummonInfoPacket((SummonInstance) this, forPlayer).init());
 			else
 				list.add(new NpcInfoPacket(this, forPlayer).init());
 
-			if (owner != null && party != null && party == owner.getParty())
+			if(owner != null && party != null && party == owner.getParty())
 				list.add(new PartySpelledPacket(this, true));
 		}
 		else
 			return Collections.emptyList();
 
-		if (isInCombat())
+		if(isInCombat())
 			list.add(new AutoAttackStartPacket(getObjectId()));
 
 		list.add(new RelationChangedPacket(this, forPlayer)); // TODO: Надо ли?
 
-		if (isInBoat())
+		if(isInBoat())
 			list.add(getBoat().getOnPacket(this, getInBoatPosition()));
 		else
 		{
-			if (getMovement().isMoving() || getMovement().isFollow())
+			if(getMovement().isMoving() || getMovement().isFollow())
 				list.add(movePacket());
 		}
 		return list;
@@ -970,7 +966,7 @@ public abstract class Servitor extends Playable
 	{
 		startAttackStanceTask0();
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			player.startAttackStanceTask0();
 	}
 
@@ -978,7 +974,7 @@ public abstract class Servitor extends Playable
 	public <E extends Event> E getEvent(Class<E> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.getEvent(eventClass);
 		else
 			return super.getEvent(eventClass);
@@ -988,7 +984,7 @@ public abstract class Servitor extends Playable
 	public <E extends Event> List<E> getEvents(Class<E> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.getEvents(eventClass);
 		else
 			return super.getEvents(eventClass);
@@ -998,7 +994,7 @@ public abstract class Servitor extends Playable
 	public boolean containsEvent(Event event)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.containsEvent(event);
 		else
 			return super.containsEvent(event);
@@ -1008,7 +1004,7 @@ public abstract class Servitor extends Playable
 	public boolean containsEvent(Class<? extends Event> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.containsEvent(eventClass);
 		else
 			return super.containsEvent(eventClass);
@@ -1018,7 +1014,7 @@ public abstract class Servitor extends Playable
 	public Set<Event> getEvents()
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.getEvents();
 		else
 			return super.getEvents();
@@ -1028,17 +1024,17 @@ public abstract class Servitor extends Playable
 	public void sendReuseMessage(Skill skill)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
-			if (getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (!isDualCastEnable() || getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow()))
+			if(getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (!isDualCastEnable() || getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow()))
 				return;
 
 			TimeStamp sts = getSkillReuse(skill);
-			if (sts == null || !sts.hasNotPassed())
+			if(sts == null || !sts.hasNotPassed())
 				return;
 
 			long timeleft = sts.getReuseCurrent();
-			if (!Config.ALT_SHOW_REUSE_MSG && timeleft < 10000 || timeleft < 500)
+			if(!Config.ALT_SHOW_REUSE_MSG && timeleft < 10000 || timeleft < 500)
 				return;
 
 			player.sendPacket(SystemMsg.THAT_PET_SERVITOR_SKILL_CANNOT_BE_USED_BECAUSE_IT_IS_RECHARGING);
@@ -1094,16 +1090,16 @@ public abstract class Servitor extends Playable
 	public void transferOwnerBuffs()
 	{
 		Collection<Abnormal> abnormals = getPlayer().getAbnormalList().values();
-		for (Abnormal a : abnormals)
+		for(Abnormal a : abnormals)
 		{
 			Skill skill = a.getSkill();
-			if (a.isOffensive() || skill.isToggle() || skill.isCubicSkill())
+			if(a.isOffensive() || skill.isToggle() || skill.isCubicSkill())
 				continue;
 
-			if (isSummon() && !skill.applyEffectsOnSummon())
+			if(isSummon() && !skill.applyEffectsOnSummon())
 				continue;
 
-			if (isPet() && !skill.applyEffectsOnPet())
+			if(isPet() && !skill.applyEffectsOnPet())
 				continue;
 
 			Abnormal abnormal = new Abnormal(a.getEffector(), this, a);
@@ -1116,9 +1112,9 @@ public abstract class Servitor extends Playable
 	@Override
 	public boolean checkPvP(final Creature target, SkillEntry skillEntry)
 	{
-		if (target != this && target.isServitor() && getPlayer().isMyServitor(target.getObjectId()))
+		if(target != this && target.isServitor() && getPlayer().isMyServitor(target.getObjectId()))
 		{
-			if (skillEntry == null || skillEntry.getTemplate().isDebuff())
+			if(skillEntry == null || skillEntry.getTemplate().isDebuff())
 				return true;
 		}
 
@@ -1154,7 +1150,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public boolean isSpecialAbnormal(Skill skill)
 	{
-		if (getPlayer() != null)
+		if(getPlayer() != null)
 			return getPlayer().isSpecialAbnormal(skill);
 
 		return false;
@@ -1184,88 +1180,88 @@ public abstract class Servitor extends Playable
 	@Override
 	public SkillEntry getAdditionalSSEffect(boolean spiritshot, boolean blessed)
 	{
-		if (!spiritshot)
+		if(!spiritshot)
 		{
 			// Ruby's
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70455, 0)) // Ruby - Lv. 5
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70455, 0)) // Ruby - Lv. 5
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17891, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70454, 0)) // Ruby - Lv. 4
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70454, 0)) // Ruby - Lv. 4
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17890, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70453, 0)) // Ruby - Lv. 3
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70453, 0)) // Ruby - Lv. 3
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17889, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70452, 0)) // Ruby - Lv. 2
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70452, 0)) // Ruby - Lv. 2
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17888, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70451, 0)) // Ruby - Lv. 1
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70451, 0)) // Ruby - Lv. 1
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17888, 1);
 			//
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90332, 0)) // Ruby - Lv. 5
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90332, 0)) // Ruby - Lv. 5
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17891, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90331, 0)) // Ruby - Lv. 4
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90331, 0)) // Ruby - Lv. 4
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17890, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90330, 0)) // Ruby - Lv. 3
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90330, 0)) // Ruby - Lv. 3
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17889, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90329, 0)) // Ruby - Lv. 2
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90329, 0)) // Ruby - Lv. 2
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17888, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90328, 0)) // Ruby - Lv. 1
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90328, 0)) // Ruby - Lv. 1
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 17888, 1);
 			// Onyx ss
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92072, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92072, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 8);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92071, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92071, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 7);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92070, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92070, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 6);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 94521, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 94521, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 5);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92069, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92069, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 4);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92068, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92068, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 3);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92067, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92067, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92066, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92066, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50200, 1);
 		}
 		else
 		{
 			// Sapphire's
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70460, 0)) // Sapphire - Lv. 5
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70460, 0)) // Sapphire - Lv. 5
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39242, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70459, 0)) // Sapphire - Lv. 4
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70459, 0)) // Sapphire - Lv. 4
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39241, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70458, 0)) // Sapphire - Lv. 3
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70458, 0)) // Sapphire - Lv. 3
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39240, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70457, 0)) // Sapphire - Lv. 2
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70457, 0)) // Sapphire - Lv. 2
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39239, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 70456, 0)) // Sapphire - Lv. 1
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 70456, 0)) // Sapphire - Lv. 1
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39239, 1);
 			//
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90337, 0)) // Sapphire - Lv. 5
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90337, 0)) // Sapphire - Lv. 5
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39242, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90336, 0)) // Sapphire - Lv. 4
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90336, 0)) // Sapphire - Lv. 4
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39241, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90335, 0)) // Sapphire - Lv. 3
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90335, 0)) // Sapphire - Lv. 3
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39240, 1);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90334, 0)) // Sapphire - Lv. 2
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90334, 0)) // Sapphire - Lv. 2
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39239, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 90333, 0)) // Sapphire - Lv. 1
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 90333, 0)) // Sapphire - Lv. 1
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 39239, 1);
 			// Onyx bsps
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92072, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92072, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 8);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92071, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92071, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 7);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92070, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92070, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 6);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 94521, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 94521, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 5);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92069, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92069, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 4);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92068, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92068, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 3);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92067, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92067, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 2);
-			if (ItemFunctions.checkIsEquipped(getPlayer(), -1, 92066, 0)) // Onyx - Lv. 8
+			if(ItemFunctions.checkIsEquipped(getPlayer(), -1, 92066, 0)) // Onyx - Lv. 8
 				return SkillEntry.makeSkillEntry(SkillEntryType.CUNSUMABLE_ITEM, 50203, 1);
 		}
 
@@ -1292,21 +1288,21 @@ public abstract class Servitor extends Playable
 	public boolean isInvisible(GameObject observer)
 	{
 		Player owner = getPlayer();
-		if (owner != null)
+		if(owner != null)
 		{
-			if (owner == observer)
+			if(owner == observer)
 				return false;
-			if (observer != null)
+			if(observer != null)
 			{
-				if (observer.isPlayer())
+				if(observer.isPlayer())
 				{
 					// TODO: Проверить на оффе.
 					Player observPlayer = (Player) observer;
-					if (owner.isInSameParty(observPlayer))
+					if(owner.isInSameParty(observPlayer))
 						return false;
 				}
 			}
-			if (owner.isGMInvisible())
+			if(owner.isGMInvisible())
 				return true;
 		}
 		return super.isInvisible(observer);
@@ -1315,9 +1311,9 @@ public abstract class Servitor extends Playable
 	@Override
 	public boolean isTargetable(Creature creature)
 	{
-		if (!_targetable)
+		if(!_targetable)
 			return false;
-		if (getPlayer() == creature)
+		if(getPlayer() == creature)
 			return true;
 		return super.isTargetable(creature);
 	}
@@ -1360,7 +1356,7 @@ public abstract class Servitor extends Playable
 	public final String getVisibleName(Player receiver)
 	{
 		String name = getName();
-		if (name.equals(getTemplate().name))
+		if(name.equals(getTemplate().name))
 			name = StringUtils.EMPTY;
 		return name;
 	}
@@ -1369,10 +1365,10 @@ public abstract class Servitor extends Playable
 	public final String getVisibleTitle(Player receiver)
 	{
 		String title = getTitle();
-		if (title.equals(Servitor.TITLE_BY_OWNER_NAME))
+		if(title.equals(Servitor.TITLE_BY_OWNER_NAME))
 		{
 			Player player = getPlayer();
-			if (player == null || player == receiver)
+			if(player == null || player == receiver)
 				title = _ownerName;
 			else
 				title = player.getVisibleName(receiver);
@@ -1384,7 +1380,7 @@ public abstract class Servitor extends Playable
 	public ElementalElement getActiveElement()
 	{
 		Player owner = getPlayer();
-		if (owner != null)
+		if(owner != null)
 			return owner.getActiveElement();
 		return ElementalElement.NONE;
 	}
@@ -1392,7 +1388,7 @@ public abstract class Servitor extends Playable
 	@Override
 	public ServitorStat getStat()
 	{
-		if (_stat == null)
+		if(_stat == null)
 			_stat = new ServitorStat(this);
 		return (ServitorStat) _stat;
 	}
@@ -1418,7 +1414,7 @@ public abstract class Servitor extends Playable
 
 	public void startRooted()
 	{
-		if (!isImmobilized())
+		if(!isImmobilized())
 		{
 			getFlags().getImmobilized().start();
 		}
@@ -1427,7 +1423,7 @@ public abstract class Servitor extends Playable
 
 	public void stopRooted()
 	{
-		if (isImmobilized())
+		if(isImmobilized())
 		{
 			getFlags().getImmobilized().stop();
 		}

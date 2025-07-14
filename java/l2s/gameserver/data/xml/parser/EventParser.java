@@ -104,7 +104,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 	@SuppressWarnings("unchecked")
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("event"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("event"); iterator.hasNext();)
 		{
 			Element eventElement = iterator.next();
 			int id = Integer.parseInt(eventElement.attributeValue("id"));
@@ -115,12 +115,12 @@ public final class EventParser extends AbstractParser<EventHolder>
 			{
 				eventClass = (Class<Event>) Class.forName("l2s.gameserver.model.entity.events.impl." + impl + "Event");
 			}
-			catch (ClassNotFoundException e)
+			catch(ClassNotFoundException e)
 			{
 				eventClass = (Class<Event>) Scripts.getInstance().getClasses().get("events." + impl + "Event");
 			}
 
-			if (eventClass == null)
+			if(eventClass == null)
 			{
 				info("Not found impl class: " + impl + "; File: " + getCurrentFileName());
 				continue;
@@ -132,7 +132,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 			set.set("id", id);
 			set.set("name", name);
 
-			for (Iterator<Element> parameterIterator = eventElement.elementIterator("parameter"); parameterIterator.hasNext();)
+			for(Iterator<Element> parameterIterator = eventElement.elementIterator("parameter"); parameterIterator.hasNext();)
 			{
 				Element parameterElement = parameterIterator.next();
 				set.set(parameterElement.attributeValue("name"), parameterElement.attributeValue("value"));
@@ -145,18 +145,18 @@ public final class EventParser extends AbstractParser<EventHolder>
 			event.addOnInitActions(parseActions(eventElement.element("on_init"), null));
 
 			Element onTime = eventElement.element("on_time");
-			if (onTime != null)
+			if(onTime != null)
 			{
-				for (Iterator<Element> onTimeIterator = onTime.elementIterator("on"); onTimeIterator.hasNext();)
+				for(Iterator<Element> onTimeIterator = onTime.elementIterator("on"); onTimeIterator.hasNext();)
 				{
 					Element on = onTimeIterator.next();
 					int time = 0;
-					if (Util.isNumber(on.attributeValue("time")))
+					if(Util.isNumber(on.attributeValue("time")))
 						time = Integer.parseInt(on.attributeValue("time"));
 					else
 						time = set.getInteger(on.attributeValue("time"));
 
-					if (on.attributeValue("time_unit") != null)
+					if(on.attributeValue("time_unit") != null)
 					{
 						TimeUnit timeUnit = TimeUnit.valueOf(on.attributeValue("time_unit").toUpperCase());
 						time = (int) TimeUnit.SECONDS.convert(time, timeUnit);
@@ -167,9 +167,9 @@ public final class EventParser extends AbstractParser<EventHolder>
 			}
 
 			Element onAct = eventElement.element("on_act");
-			if (onAct != null)
+			if(onAct != null)
 			{
-				for (Iterator<Element> onActIterator = onAct.elementIterator("on"); onActIterator.hasNext();)
+				for(Iterator<Element> onActIterator = onAct.elementIterator("on"); onActIterator.hasNext();)
 				{
 					Element on = onActIterator.next();
 					String act = on.attributeValue("act");
@@ -177,7 +177,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 				}
 			}
 
-			for (Iterator<Element> objectIterator = eventElement.elementIterator("objects"); objectIterator.hasNext();)
+			for(Iterator<Element> objectIterator = eventElement.elementIterator("objects"); objectIterator.hasNext();)
 			{
 				Element objectElement = objectIterator.next();
 				String objectsName = objectElement.attributeValue("name");
@@ -192,27 +192,27 @@ public final class EventParser extends AbstractParser<EventHolder>
 
 	private List<Object> parseObjects(Element element, String str)
 	{
-		if (element == null)
+		if(element == null)
 			return Collections.emptyList();
 
 		List<Object> objects = new ArrayList<Object>(2);
-		for (Iterator<Element> objectIterator = element.elementIterator(); objectIterator.hasNext();)
+		for(Iterator<Element> objectIterator = element.elementIterator(); objectIterator.hasNext();)
 		{
 			Element objectElement = objectIterator.next();
 			final String nodeName = objectElement.getName();
-			if (nodeName.equalsIgnoreCase("boat_point"))
+			if(nodeName.equalsIgnoreCase("boat_point"))
 				objects.add(BoatPoint.parse(objectElement));
-			else if (nodeName.equalsIgnoreCase("point"))
+			else if(nodeName.equalsIgnoreCase("point"))
 				objects.add(Location.parse(objectElement));
-			else if (nodeName.equalsIgnoreCase("spawn"))
+			else if(nodeName.equalsIgnoreCase("spawn"))
 				objects.add(new SpawnObject(objectElement.attributeValue("name")));
-			else if (nodeName.equalsIgnoreCase("spawn_ex"))
+			else if(nodeName.equalsIgnoreCase("spawn_ex"))
 				objects.add(new SpawnExObject(objectElement.attributeValue("name")));
-			else if (nodeName.equalsIgnoreCase("door"))
+			else if(nodeName.equalsIgnoreCase("door"))
 				objects.add(new DoorObject(Integer.parseInt(objectElement.attributeValue("id"))));
-			else if (nodeName.equalsIgnoreCase("static_object"))
+			else if(nodeName.equalsIgnoreCase("static_object"))
 				objects.add(new StaticObjectObject(Integer.parseInt(objectElement.attributeValue("id"))));
-			else if (nodeName.equalsIgnoreCase("spawn_npc"))
+			else if(nodeName.equalsIgnoreCase("spawn_npc"))
 			{
 				int id = Integer.parseInt(objectElement.attributeValue("id"));
 				int x = Integer.parseInt(objectElement.attributeValue("x"));
@@ -220,14 +220,14 @@ public final class EventParser extends AbstractParser<EventHolder>
 				int z = Integer.parseInt(objectElement.attributeValue("z"));
 				objects.add(new SpawnSimpleObject(id, new Location(x, y, z)));
 			}
-			else if (nodeName.equalsIgnoreCase("combat_flag"))
+			else if(nodeName.equalsIgnoreCase("combat_flag"))
 			{
 				int x = Integer.parseInt(objectElement.attributeValue("x"));
 				int y = Integer.parseInt(objectElement.attributeValue("y"));
 				int z = Integer.parseInt(objectElement.attributeValue("z"));
 				objects.add(new FortressCombatFlagObject(new Location(x, y, z)));
 			}
-			else if (nodeName.equalsIgnoreCase("siege_toggle_npc"))
+			else if(nodeName.equalsIgnoreCase("siege_toggle_npc"))
 			{
 				int id = Integer.parseInt(objectElement.attributeValue("id"));
 				int fakeId = Integer.parseInt(objectElement.attributeValue("fake_id"));
@@ -236,16 +236,16 @@ public final class EventParser extends AbstractParser<EventHolder>
 				int z = Integer.parseInt(objectElement.attributeValue("z"));
 				int hp = Integer.parseInt(objectElement.attributeValue("hp"));
 				Set<String> set = Collections.emptySet();
-				for (Iterator<Element> oIterator = objectElement.elementIterator(); oIterator.hasNext();)
+				for(Iterator<Element> oIterator = objectElement.elementIterator(); oIterator.hasNext();)
 				{
 					Element sub = oIterator.next();
-					if (set.isEmpty())
+					if(set.isEmpty())
 						set = new HashSet<String>();
 					set.add(sub.attributeValue("name"));
 				}
 				objects.add(new SiegeToggleNpcObject(id, fakeId, new Location(x, y, z), hp, set));
 			}
-			else if (nodeName.equalsIgnoreCase("reward"))
+			else if(nodeName.equalsIgnoreCase("reward"))
 			{
 				int item_id = Integer.parseInt(objectElement.attributeValue("item_id"));
 				long min = Long.parseLong(objectElement.attributeValue("min"));
@@ -253,22 +253,22 @@ public final class EventParser extends AbstractParser<EventHolder>
 				double chance = objectElement.attributeValue("chance") == null ? 100. : Double.parseDouble(objectElement.attributeValue("chance"));
 				objects.add(new RewardObject(item_id, min, max, chance));
 			}
-			else if (nodeName.equalsIgnoreCase("item"))
+			else if(nodeName.equalsIgnoreCase("item"))
 			{
 				int item_id = Integer.parseInt(objectElement.attributeValue("id"));
 				long item_count = objectElement.attributeValue("count") == null ? -1 : Long.parseLong(objectElement.attributeValue("count"));
 				objects.add(new ItemObject(item_id, item_count));
 			}
-			else if (nodeName.equalsIgnoreCase("castle_zone"))
+			else if(nodeName.equalsIgnoreCase("castle_zone"))
 			{
 				long price = Long.parseLong(objectElement.attributeValue("price"));
 				objects.add(new CastleDamageZoneObject(objectElement.attributeValue("name"), price));
 			}
-			else if (nodeName.equalsIgnoreCase("zone"))
+			else if(nodeName.equalsIgnoreCase("zone"))
 			{
 				objects.add(new ZoneObject(objectElement.attributeValue("name")));
 			}
-			else if (nodeName.equalsIgnoreCase("ctb_team"))
+			else if(nodeName.equalsIgnoreCase("ctb_team"))
 			{
 				int mobId = Integer.parseInt(objectElement.attributeValue("mob_id"));
 				int flagId = Integer.parseInt(objectElement.attributeValue("id"));
@@ -276,20 +276,22 @@ public final class EventParser extends AbstractParser<EventHolder>
 
 				objects.add(new CTBTeamObject(mobId, flagId, loc));
 			}
-			else if (nodeName.equalsIgnoreCase("rewardlist"))
+			else if(nodeName.equalsIgnoreCase("rewardlist"))
 				objects.add(RewardList.parseRewardList(getLogger(), objectElement, RewardType.valueOf(objectElement.attributeValue("type")), str));
-			else if (nodeName.equalsIgnoreCase("abnormal"))
+			else if(nodeName.equalsIgnoreCase("abnormal"))
 				objects.add(AbnormalEffect.valueOf(objectElement.attributeValue("name")));
-			else if (nodeName.equalsIgnoreCase("task"))
+			else if(nodeName.equalsIgnoreCase("task"))
 			{
-				boolean fixed_rate = objectElement.attributeValue("fixed_rate") == null ? false : Boolean.parseBoolean(objectElement.attributeValue("fixed_rate"));
+				boolean fixed_rate = objectElement.attributeValue("fixed_rate")
+						== null ? false : Boolean.parseBoolean(objectElement.attributeValue("fixed_rate"));
 				int delay = Integer.parseInt(objectElement.attributeValue("delay"));
-				int initial_delay = objectElement.attributeValue("initial_delay") == null ? delay : Integer.parseInt(objectElement.attributeValue("initial_delay"));
+				int initial_delay = objectElement.attributeValue("initial_delay")
+						== null ? delay : Integer.parseInt(objectElement.attributeValue("initial_delay"));
 				TaskObject task = new TaskObject(fixed_rate, initial_delay, delay);
 				task.setActions(parseActions(objectElement, null));
 				objects.add(task);
 			}
-			else if (nodeName.equalsIgnoreCase("fence"))
+			else if(nodeName.equalsIgnoreCase("fence"))
 			{
 				int x = Integer.parseInt(objectElement.attributeValue("x"));
 				int y = Integer.parseInt(objectElement.attributeValue("y"));
@@ -306,111 +308,113 @@ public final class EventParser extends AbstractParser<EventHolder>
 
 	private List<EventAction> parseActions(Element element, String param)
 	{
-		if (element == null)
+		if(element == null)
 			return Collections.emptyList();
 
 		IfElseAction lastIf = null;
 		List<EventAction> actions = new ArrayList<EventAction>(0);
-		for (Iterator<Element> iterator = element.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator(); iterator.hasNext();)
 		{
 			Element actionElement = iterator.next();
-			if (actionElement.getName().equalsIgnoreCase("start"))
+			if(actionElement.getName().equalsIgnoreCase("start"))
 			{
 				String name = actionElement.attributeValue("name");
 				StartStopAction startStopAction = new StartStopAction(name, true);
 				actions.add(startStopAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("stop"))
+			else if(actionElement.getName().equalsIgnoreCase("stop"))
 			{
 				String name = actionElement.attributeValue("name");
 				StartStopAction startStopAction = new StartStopAction(name, false);
 				actions.add(startStopAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("spawn"))
+			else if(actionElement.getName().equalsIgnoreCase("spawn"))
 			{
 				String name = actionElement.attributeValue("name");
 				SpawnDespawnAction spawnDespawnAction = new SpawnDespawnAction(name, true);
 				actions.add(spawnDespawnAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("despawn"))
+			else if(actionElement.getName().equalsIgnoreCase("despawn"))
 			{
 				String name = actionElement.attributeValue("name");
 				SpawnDespawnAction spawnDespawnAction = new SpawnDespawnAction(name, false);
 				actions.add(spawnDespawnAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("respawn"))
+			else if(actionElement.getName().equalsIgnoreCase("respawn"))
 			{
 				String name = actionElement.attributeValue("name");
 				RespawnAction respawnAction = new RespawnAction(name);
 				actions.add(respawnAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("open"))
+			else if(actionElement.getName().equalsIgnoreCase("open"))
 			{
 				String name = actionElement.attributeValue("name");
 				OpenCloseAction a = new OpenCloseAction(true, name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("close"))
+			else if(actionElement.getName().equalsIgnoreCase("close"))
 			{
 				String name = actionElement.attributeValue("name");
 				OpenCloseAction a = new OpenCloseAction(false, name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("active"))
+			else if(actionElement.getName().equalsIgnoreCase("active"))
 			{
 				String name = actionElement.attributeValue("name");
 				ActiveDeactiveAction a = new ActiveDeactiveAction(true, name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("deactive"))
+			else if(actionElement.getName().equalsIgnoreCase("deactive"))
 			{
 				String name = actionElement.attributeValue("name");
 				ActiveDeactiveAction a = new ActiveDeactiveAction(false, name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("refresh"))
+			else if(actionElement.getName().equalsIgnoreCase("refresh"))
 			{
 				String name = actionElement.attributeValue("name");
 				RefreshAction a = new RefreshAction(name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("init"))
+			else if(actionElement.getName().equalsIgnoreCase("init"))
 			{
 				String name = actionElement.attributeValue("name");
 				InitAction a = new InitAction(name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("global_add_reward"))
+			else if(actionElement.getName().equalsIgnoreCase("global_add_reward"))
 			{
 				String name = actionElement.attributeValue("name");
 				int minLevel = actionElement.attributeValue("min_level") == null ? 1 : Integer.parseInt(actionElement.attributeValue("min_level"));
-				int maxLevel = actionElement.attributeValue("max_level") == null ? Integer.MAX_VALUE : Integer.parseInt(actionElement.attributeValue("max_level"));
+				int maxLevel = actionElement.attributeValue("max_level")
+						== null ? Integer.MAX_VALUE : Integer.parseInt(actionElement.attributeValue("max_level"));
 				actions.add(new GlobalRewardListAction(true, name, minLevel, maxLevel));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("global_remove_reward"))
+			else if(actionElement.getName().equalsIgnoreCase("global_remove_reward"))
 			{
 				String name = actionElement.attributeValue("name");
 				int minLevel = actionElement.attributeValue("min_level") == null ? 1 : Integer.parseInt(actionElement.attributeValue("min_level"));
-				int maxLevel = actionElement.attributeValue("max_level") == null ? Integer.MAX_VALUE : Integer.parseInt(actionElement.attributeValue("max_level"));
+				int maxLevel = actionElement.attributeValue("max_level")
+						== null ? Integer.MAX_VALUE : Integer.parseInt(actionElement.attributeValue("max_level"));
 				actions.add(new GlobalRewardListAction(false, name, minLevel, maxLevel));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("global_remove_items"))
+			else if(actionElement.getName().equalsIgnoreCase("global_remove_items"))
 			{
 				String name = actionElement.attributeValue("name");
 				actions.add(new GlobalRemoveItemsAction(name));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("global_remove_abnormals"))
+			else if(actionElement.getName().equalsIgnoreCase("global_remove_abnormals"))
 			{
 				int skillId = Integer.parseInt(actionElement.attributeValue("skill_id"));
 				actions.add(new GlobalRemoveAbnormalsAction(skillId));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("global_remove_variables"))
+			else if(actionElement.getName().equalsIgnoreCase("global_remove_variables"))
 			{
 				String name = actionElement.attributeValue("name");
 				GlobalRemoveVariablesAction.VariableType type = GlobalRemoveVariablesAction.VariableType.valueOf(actionElement.attributeValue("type").toUpperCase());
 				actions.add(new GlobalRemoveVariablesAction(name, type));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("npc_say"))
+			else if(actionElement.getName().equalsIgnoreCase("npc_say"))
 			{
 				int npc = Integer.parseInt(actionElement.attributeValue("npc"));
 				ChatType chat = ChatType.valueOf(actionElement.attributeValue("chat"));
@@ -419,7 +423,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 				NpcSayAction action = new NpcSayAction(npc, range, chat, string);
 				actions.add(action);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("play_sound"))
+			else if(actionElement.getName().equalsIgnoreCase("play_sound"))
 			{
 				int range = Integer.parseInt(actionElement.attributeValue("range"));
 				String sound = actionElement.attributeValue("sound");
@@ -428,7 +432,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 				PlaySoundAction action = new PlaySoundAction(range, sound, type);
 				actions.add(action);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("give_item"))
+			else if(actionElement.getName().equalsIgnoreCase("give_item"))
 			{
 				int itemId = Integer.parseInt(actionElement.attributeValue("id"));
 				long count = Integer.parseInt(actionElement.attributeValue("count"));
@@ -436,21 +440,21 @@ public final class EventParser extends AbstractParser<EventHolder>
 				GiveItemAction action = new GiveItemAction(itemId, count);
 				actions.add(action);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("announce"))
+			else if(actionElement.getName().equalsIgnoreCase("announce"))
 			{
 				int id = Integer.parseInt(actionElement.attributeValue("id"));
 				String value = actionElement.attributeValue("value");
 				int time = Integer.MAX_VALUE;
-				if (param != null)
+				if(param != null)
 				{
-					if (value == null)
+					if(value == null)
 						value = param;
-					if (Util.isNumber(param))
+					if(Util.isNumber(param))
 						time = Integer.parseInt(param);
 				}
 				actions.add(new AnnounceAction(id, value, time));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("if"))
+			else if(actionElement.getName().equalsIgnoreCase("if"))
 			{
 				String name = actionElement.attributeValue("name");
 				IfElseAction action = new IfElseAction(name, false);
@@ -460,7 +464,7 @@ public final class EventParser extends AbstractParser<EventHolder>
 
 				lastIf = action;
 			}
-			else if (actionElement.getName().equalsIgnoreCase("ifnot"))
+			else if(actionElement.getName().equalsIgnoreCase("ifnot"))
 			{
 				String name = actionElement.attributeValue("name");
 				IfElseAction action = new IfElseAction(name, true);
@@ -470,14 +474,14 @@ public final class EventParser extends AbstractParser<EventHolder>
 
 				lastIf = action;
 			}
-			else if (actionElement.getName().equalsIgnoreCase("else"))
+			else if(actionElement.getName().equalsIgnoreCase("else"))
 			{
-				if (lastIf == null)
+				if(lastIf == null)
 					info("Not find <if> for <else> tag");
 				else
 					lastIf.setElseList(parseActions(actionElement, param));
 			}
-			else if (actionElement.getName().equalsIgnoreCase("say"))
+			else if(actionElement.getName().equalsIgnoreCase("say"))
 			{
 				ChatType chat = ChatType.valueOf(actionElement.attributeValue("chat"));
 				int range = Integer.parseInt(actionElement.attributeValue("range"));
@@ -488,26 +492,26 @@ public final class EventParser extends AbstractParser<EventHolder>
 				SysString sysString = SysString.valueOf2(how);
 
 				SayAction sayAction = null;
-				if (sysString != null)
+				if(sysString != null)
 					sayAction = new SayAction(range, chat, sysString, SystemMsg.valueOf(text));
 				else
 					sayAction = new SayAction(range, chat, how, NpcString.valueOf(text));
 
 				actions.add(sayAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("teleport_players"))
+			else if(actionElement.getName().equalsIgnoreCase("teleport_players"))
 			{
 				String name = actionElement.attributeValue("id");
 				TeleportPlayersAction a = new TeleportPlayersAction(name);
 				actions.add(a);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("schedule_task"))
+			else if(actionElement.getName().equalsIgnoreCase("schedule_task"))
 			{
 				String name = actionElement.attributeValue("name");
 				ScheduleCancelAction scheduleCancelAction = new ScheduleCancelAction(name, true);
 				actions.add(scheduleCancelAction);
 			}
-			else if (actionElement.getName().equalsIgnoreCase("cancel_task"))
+			else if(actionElement.getName().equalsIgnoreCase("cancel_task"))
 			{
 				String name = actionElement.attributeValue("name");
 				ScheduleCancelAction scheduleCancelAction = new ScheduleCancelAction(name, false);
@@ -515,6 +519,6 @@ public final class EventParser extends AbstractParser<EventHolder>
 			}
 		}
 
-		return actions.isEmpty() ? Collections.<EventAction>emptyList() : actions;
+		return actions.isEmpty() ? Collections.<EventAction> emptyList() : actions;
 	}
 }

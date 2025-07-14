@@ -16,100 +16,94 @@ public final class ArmorSetListener extends AbstractSkillListener
 	@Override
 	public int onEquip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!item.isEquipable())
-		{
-			return 0;
-		}
+		if(!item.isEquipable())
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		List<ArmorSet> armorSets = ArmorSetsHolder.getInstance().getArmorSets(item.getItemId());
-		if ((armorSets == null) || armorSets.isEmpty())
-		{
-			return 0;
-		}
+		if((armorSets == null) || armorSets.isEmpty())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 		int armorSetEnchant = 0;
 		int flags = 0;
 		List<SkillEntry> addedSkills = new ArrayList<SkillEntry>();
 
-		for (ArmorSet armorSet : armorSets)
+		for(ArmorSet armorSet : armorSets)
 		{
 			// checks if equipped item is part of set
-			if (armorSet.containItem(slot, item.getItemId()))
+			if(armorSet.containItem(slot, item.getItemId()))
 			{
 				List<SkillEntry> skills = armorSet.getSkills(armorSet.getEquipedSetPartsCount(player));
-				for (SkillEntry skillEntry : skills)
+				for(SkillEntry skillEntry : skills)
 				{
 					addedSkills.add(skillEntry);
 				}
 
-				if (armorSet.containAll(player))
+				if(armorSet.containAll(player))
 				{
-					if (armorSet.containShield(player)) // has shield from set
+					if(armorSet.containShield(player)) // has shield from set
 					{
 						skills = armorSet.getShieldSkills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
 
 					int enchantLevel = armorSet.getEnchantLevel(player);
-					if (enchantLevel >= 6) // has all parts of set enchanted to 6 or more
+					if(enchantLevel >= 6) // has all parts of set enchanted to 6 or more
 					{
 						skills = armorSet.getEnchant6skills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
-					if (enchantLevel >= 7) // has all parts of set enchanted to 7 or more
+					if(enchantLevel >= 7) // has all parts of set enchanted to 7 or more
 					{
 						skills = armorSet.getEnchant7skills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
-					if (enchantLevel >= 8) // has all parts of set enchanted to 8 or more
+					if(enchantLevel >= 8) // has all parts of set enchanted to 8 or more
 					{
 						skills = armorSet.getEnchant8skills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
-					if (enchantLevel >= 9) // has all parts of set enchanted to 9 or more
+					if(enchantLevel >= 9) // has all parts of set enchanted to 9 or more
 					{
 						skills = armorSet.getEnchant9skills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
-					if (enchantLevel >= 10) // has all parts of set enchanted to 10 or more
+					if(enchantLevel >= 10) // has all parts of set enchanted to 10 or more
 					{
 						skills = armorSet.getEnchant10skills();
-						for (SkillEntry skillEntry : skills)
+						for(SkillEntry skillEntry : skills)
 						{
 							addedSkills.add(skillEntry);
 						}
 					}
-					if (enchantLevel > armorSetEnchant)
+					if(enchantLevel > armorSetEnchant)
 					{
 						armorSetEnchant = enchantLevel;
 					}
 				}
 			}
-			else if (armorSet.containShield(item.getItemId()) && armorSet.containAll(player))
+			else if(armorSet.containShield(item.getItemId()) && armorSet.containAll(player))
 			{
 				List<SkillEntry> skills = armorSet.getShieldSkills();
-				for (SkillEntry skillEntry : skills)
+				for(SkillEntry skillEntry : skills)
 				{
 					addedSkills.add(skillEntry);
 				}
@@ -124,21 +118,15 @@ public final class ArmorSetListener extends AbstractSkillListener
 	@Override
 	public int onUnequip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!item.isEquipable())
-		{
-			return 0;
-		}
+		if(!item.isEquipable())
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		List<ArmorSet> armorSets = ArmorSetsHolder.getInstance().getArmorSets(item.getItemId());
-		if ((armorSets == null) || armorSets.isEmpty())
-		{
-			return 0;
-		}
+		if((armorSets == null) || armorSets.isEmpty())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 
@@ -146,7 +134,7 @@ public final class ArmorSetListener extends AbstractSkillListener
 
 		int armorSetEnchant = 0;
 
-		for (ArmorSet armorSet : armorSets)
+		for(ArmorSet armorSet : armorSets)
 		{
 			boolean remove = false;
 			List<SkillEntry> removeSkillId1 = new ArrayList<SkillEntry>(); // set skill
@@ -157,7 +145,7 @@ public final class ArmorSetListener extends AbstractSkillListener
 			List<SkillEntry> removeSkillId6 = new ArrayList<SkillEntry>(); // enchant +9 skill
 			List<SkillEntry> removeSkillId7 = new ArrayList<SkillEntry>(); // enchant +10 skill
 
-			if (armorSet.containItem(slot, item.getItemId())) // removed part of set
+			if(armorSet.containItem(slot, item.getItemId())) // removed part of set
 			{
 				remove = true;
 				removeSkillId1 = armorSet.getSkillsToRemove();
@@ -168,59 +156,59 @@ public final class ArmorSetListener extends AbstractSkillListener
 				removeSkillId6 = armorSet.getEnchant9skills();
 				removeSkillId7 = armorSet.getEnchant10skills();
 			}
-			else if (armorSet.containShield(item.getItemId())) // removed shield
+			else if(armorSet.containShield(item.getItemId())) // removed shield
 			{
 				remove = true;
 				removeSkillId2 = armorSet.getShieldSkills();
 			}
 
-			if (remove)
+			if(remove)
 			{
-				for (SkillEntry skillEntry : removeSkillId1)
+				for(SkillEntry skillEntry : removeSkillId1)
 				{
-					if (player.removeSkill(skillEntry, false) != null)
+					if(player.removeSkill(skillEntry, false) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId2)
+				for(SkillEntry skillEntry : removeSkillId2)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId3)
+				for(SkillEntry skillEntry : removeSkillId3)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId4)
+				for(SkillEntry skillEntry : removeSkillId4)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId5)
+				for(SkillEntry skillEntry : removeSkillId5)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId6)
+				for(SkillEntry skillEntry : removeSkillId6)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
 				}
-				for (SkillEntry skillEntry : removeSkillId7)
+				for(SkillEntry skillEntry : removeSkillId7)
 				{
-					if (player.removeSkill(skillEntry) != null)
+					if(player.removeSkill(skillEntry) != null)
 					{
 						flags |= Inventory.UPDATE_SKILLS_FLAG;
 					}
@@ -228,15 +216,15 @@ public final class ArmorSetListener extends AbstractSkillListener
 			}
 
 			int enchantLevel = armorSet.getEnchantLevel(player);
-			if (enchantLevel > armorSetEnchant)
+			if(enchantLevel > armorSetEnchant)
 			{
 				armorSetEnchant = enchantLevel;
 			}
 
 			List<SkillEntry> skills = armorSet.getSkills(armorSet.getEquipedSetPartsCount(player));
-			for (SkillEntry skillEntry : skills)
+			for(SkillEntry skillEntry : skills)
 			{
-				if (player.addSkill(skillEntry, false) != skillEntry)
+				if(player.addSkill(skillEntry, false) != skillEntry)
 				{
 					flags |= Inventory.UPDATE_SKILLS_FLAG;
 				}

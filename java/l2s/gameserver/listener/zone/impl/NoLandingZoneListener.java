@@ -17,12 +17,12 @@ public class NoLandingZoneListener implements OnZoneEnterLeaveListener
 	public void onZoneEnter(Zone zone, Creature actor)
 	{
 		Player player = actor.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
-			if (player.isFlying() && (player.getMountType() == MountType.WYVERN))
+			if(player.isFlying() && (player.getMountType() == MountType.WYVERN))
 			{
 				Residence residence = ResidenceHolder.getInstance().getResidence(zone.getParams().getInteger("residence", 0));
-				if ((residence != null) && (player.getClan() != null) && (residence.getOwner() == player.getClan()))
+				if((residence != null) && (player.getClan() != null) && (residence.getOwner() == player.getClan()))
 				{
 					//
 				}
@@ -38,6 +38,5 @@ public class NoLandingZoneListener implements OnZoneEnterLeaveListener
 
 	@Override
 	public void onZoneLeave(Zone zone, Creature cha)
-	{
-	}
+	{}
 }

@@ -23,13 +23,13 @@ public class i_spoil extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (!effector.isPlayer())
+		if(!effector.isPlayer())
 			return false;
 
-		if (effected.isDead())
+		if(effected.isDead())
 			return false;
 
-		if (!effected.isMonster())
+		if(!effected.isMonster())
 			return false;
 
 		return true;
@@ -39,7 +39,7 @@ public class i_spoil extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		final MonsterInstance monster = (MonsterInstance) effected;
-		if (monster.isSpoiled())
+		if(monster.isSpoiled())
 		{
 			effector.sendPacket(SystemMsg.IT_HAS_ALREADY_BEEN_SPOILED);
 			return;
@@ -50,17 +50,17 @@ public class i_spoil extends i_abstract_effect
 		final int modifier = Math.abs(monsterLevel - player.getLevel());
 		double rateOfSpoil = Config.BASE_SPOIL_RATE;
 
-		if (modifier > 8)
+		if(modifier > 8)
 			rateOfSpoil = rateOfSpoil - rateOfSpoil * (modifier - 8) * 9 / 100;
 
 		rateOfSpoil = rateOfSpoil * getSkill().getMagicLevel() / monsterLevel;
 
-		if (rateOfSpoil < Config.MINIMUM_SPOIL_RATE)
+		if(rateOfSpoil < Config.MINIMUM_SPOIL_RATE)
 			rateOfSpoil = Config.MINIMUM_SPOIL_RATE;
-		else if (rateOfSpoil > 99.)
+		else if(rateOfSpoil > 99.)
 			rateOfSpoil = 99.;
 
-		if (player.isGM())
+		if(player.isGM())
 			player.sendMessage(new CustomMessage("l2s.gameserver.skills.skillclasses.Spoil.Chance").addNumber((long) rateOfSpoil));
 
 		doSpoil(effector, effected, Rnd.chance(rateOfSpoil));
@@ -68,7 +68,7 @@ public class i_spoil extends i_abstract_effect
 
 	protected void doSpoil(Creature effector, Creature effected, boolean success)
 	{
-		if (success)
+		if(success)
 		{
 			((MonsterInstance) effected).setSpoiled(effector.getPlayer());
 			effector.sendPacket(SystemMsg.THE_SPOIL_CONDITION_HAS_BEEN_ACTIVATED);

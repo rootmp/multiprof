@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.SubUnit;
 import l2s.gameserver.skills.SkillEntry;
@@ -23,12 +23,12 @@ public class PledgeSkillListPacket implements IClientOutgoingPacket
 		Collection<SkillEntry> skills = clan.getSkills();
 		_allSkills = new ArrayList<SkillInfo>(skills.size());
 
-		for (SkillEntry sk : skills)
+		for(SkillEntry sk : skills)
 			_allSkills.add(new SkillInfo(sk.getId(), sk.getLevel()));
 
-		for (SubUnit subUnit : clan.getAllSubUnits())
+		for(SubUnit subUnit : clan.getAllSubUnits())
 		{
-			for (SkillEntry sk : subUnit.getSkills())
+			for(SkillEntry sk : subUnit.getSkills())
 				_unitSkills.add(new UnitSkillInfo(subUnit.getType(), sk.getId(), sk.getLevel()));
 		}
 	}
@@ -39,13 +39,13 @@ public class PledgeSkillListPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_allSkills.size());
 		packetWriter.writeD(_unitSkills.size());
 
-		for (SkillInfo info : _allSkills)
+		for(SkillInfo info : _allSkills)
 		{
 			packetWriter.writeD(info._id);
 			packetWriter.writeD(info._level);
 		}
 
-		for (UnitSkillInfo info : _unitSkills)
+		for(UnitSkillInfo info : _unitSkills)
 		{
 			packetWriter.writeD(info._type);
 			packetWriter.writeD(info._id);

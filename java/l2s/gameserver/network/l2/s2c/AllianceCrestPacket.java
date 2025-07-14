@@ -23,7 +23,7 @@ public class AllianceCrestPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_clanId);
 		packetWriter.writeD(_crestId);
-		if (_data.length > 0)
+		if(_data.length > 0)
 		{
 			packetWriter.writeD(_data.length);
 			packetWriter.writeD(_data.length);

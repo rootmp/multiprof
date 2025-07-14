@@ -24,7 +24,7 @@ public class Spectating
 		_classId = classId;
 		_level = level;
 		Player player = GameObjectsStorage.getPlayer(objectId);
-		_playerRef = player != null ? player.getRef() : HardReferences.<Player>emptyRef();
+		_playerRef = player != null ? player.getRef() : HardReferences.<Player> emptyRef();
 	}
 
 	public void update(Player player, boolean set)
@@ -32,7 +32,7 @@ public class Spectating
 		_level = player.getLevel();
 		_name = player.getName();
 		_classId = player.getActiveClassId();
-		_playerRef = set ? player.getRef() : HardReferences.<Player>emptyRef();
+		_playerRef = set ? player.getRef() : HardReferences.<Player> emptyRef();
 	}
 
 	public int getObjectId()

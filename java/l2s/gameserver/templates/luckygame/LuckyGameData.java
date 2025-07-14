@@ -90,24 +90,24 @@ public class LuckyGameData
 
 	public static LuckyGameItem rollItem(List<LuckyGameItem> items, boolean fantastic)
 	{
-		if (items.isEmpty())
+		if(items.isEmpty())
 			return null;
 
 		double chancesAmount = 0;
-		for (LuckyGameItem item : items)
+		for(LuckyGameItem item : items)
 			chancesAmount += item.getChance();
 
 		double chanceMod = (100. - chancesAmount) / items.size();
 		List<LuckyGameItem> successItems = new ArrayList<LuckyGameItem>();
 		int tryCount = 0;
-		while (successItems.isEmpty())
+		while(successItems.isEmpty())
 		{
 			tryCount++;
-			for (LuckyGameItem item : items)
+			for(LuckyGameItem item : items)
 			{
-				if ((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
+				if((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
 					chanceMod += 1.;
-				if (Rnd.chance(item.getChance() + chanceMod))
+				if(Rnd.chance(item.getChance() + chanceMod))
 					successItems.add(item);
 			}
 		}

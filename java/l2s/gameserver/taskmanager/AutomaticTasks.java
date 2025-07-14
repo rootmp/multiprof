@@ -25,7 +25,7 @@ public class AutomaticTasks
 {
 	public static void init()
 	{
-		if (Config.ENABLE_OLYMPIAD)
+		if(Config.ENABLE_OLYMPIAD)
 			new OlympiadSaveTask();
 
 		new DailyTask();
@@ -36,7 +36,7 @@ public class AutomaticTasks
 		new PledgeHuntingSaveTask();
 		new SubjugationStopTask();
 		new SubjugationStartTask();
-		if (!Config.HELLBOUND_ENABLED_ALL_TIME)
+		if(!Config.HELLBOUND_ENABLED_ALL_TIME)
 		{
 			new HellboundOpenTask();
 			new HellboundCloseTask();

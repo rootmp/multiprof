@@ -40,7 +40,7 @@ public class TeleportListParser extends AbstractParser<TeleportListHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("teleport"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("teleport"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -50,11 +50,11 @@ public class TeleportListParser extends AbstractParser<TeleportListHolder>
 
 			TeleportTemplate teleport = new TeleportTemplate(id, itemId, price);
 
-			for (Iterator<Element> coordsIterator = element.elementIterator("coords"); coordsIterator.hasNext();)
+			for(Iterator<Element> coordsIterator = element.elementIterator("coords"); coordsIterator.hasNext();)
 			{
 				Element coordsElement = coordsIterator.next();
-				if (coordsElement.getName().equals("coords"))
-					for (Element e : coordsElement.elements())
+				if(coordsElement.getName().equals("coords"))
+					for(Element e : coordsElement.elements())
 					{
 						int x = Integer.parseInt(e.attributeValue("x"));
 						int y = Integer.parseInt(e.attributeValue("y"));

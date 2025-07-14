@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
@@ -26,50 +27,50 @@ public class RequestCrystallizeEstimate implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
-		if (item == null)
+		if(item == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!item.canBeCrystallized(activeChar))
+		if(!item.canBeCrystallized(activeChar))
 		{
-			if (item.isFlagNoCrystallize())
+			if(item.isFlagNoCrystallize())
 				ItemFunctions.deleteItem(activeChar, item, 1, true);
 			else
 				activeChar.sendPacket(SystemMsg.THIS_ITEM_CANNOT_BE_CRYSTALLIZED);
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
@@ -79,7 +80,7 @@ public class RequestCrystallizeEstimate implements IClientIncomingPacket
 
 		// can player crystallize?
 		int level = activeChar.getSkillLevel(Skill.SKILL_CRYSTALLIZE);
-		if (level < 1 || externalOrdinal > level)
+		if(level < 1 || externalOrdinal > level)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_MAY_NOT_CRYSTALLIZE_THIS_ITEM);
 			activeChar.sendActionFailed();

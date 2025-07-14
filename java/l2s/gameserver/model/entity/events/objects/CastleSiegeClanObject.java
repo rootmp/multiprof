@@ -49,10 +49,9 @@ public class CastleSiegeClanObject extends SiegeClanObject
 	public void broadcast(IBroadcastPacket... packet)
 	{
 		super.broadcast(packet);
-		getMercenaries().forEach(m ->
-		{
+		getMercenaries().forEach(m -> {
 			Player player = m.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
 				player.sendPacket(packet);
 			}
@@ -63,12 +62,11 @@ public class CastleSiegeClanObject extends SiegeClanObject
 	public void setEvent(boolean start, SiegeEvent<?, ?> event)
 	{
 		super.setEvent(start, event);
-		if (start)
+		if(start)
 		{
-			getMercenaries().forEach(m ->
-			{
+			getMercenaries().forEach(m -> {
 				Player player = m.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
 					player.addEvent(event);
 					player.broadcastCharInfo();
@@ -77,10 +75,9 @@ public class CastleSiegeClanObject extends SiegeClanObject
 		}
 		else
 		{
-			getMercenaries().forEach(m ->
-			{
+			getMercenaries().forEach(m -> {
 				Player player = m.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
 					player.removeEvent(event);
 					// player.getAbnormalList().stop(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME);
@@ -93,7 +90,7 @@ public class CastleSiegeClanObject extends SiegeClanObject
 	public void select()
 	{
 		List<Integer> objectIds = SiegePlayerDAO.getInstance().select(getSiegeEvent().getResidence(), getClan().getClanId());
-		for (int objId : objectIds)
+		for(int objId : objectIds)
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -104,13 +101,13 @@ public class CastleSiegeClanObject extends SiegeClanObject
 				statement = con.prepareStatement("SELECT class_id FROM character_subclasses WHERE active=1 AND obj_Id=?");
 				statement.setInt(1, objId);
 				rset = statement.executeQuery();
-				if (rset.next())
+				if(rset.next())
 				{
 					ClassId classId = ClassId.valueOf(rset.getInt("class_id"));
 					addMercenary(new CastleSiegeMercenaryObject(objId, getSiegeEvent().getLastMercenaryId().incrementAndGet(), getClan().getClanId(), classId));
 				}
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				LOGGER.error("CastleSiegeClanObject.restore(): " + e, e);
 			}

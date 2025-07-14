@@ -7,5 +7,5 @@ public enum LinkedType
 	linked_item,
 	linked_skill,
 	linked_option
-	
+
 }

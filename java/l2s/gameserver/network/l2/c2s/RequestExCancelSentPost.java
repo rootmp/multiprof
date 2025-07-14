@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.Set;
 
 import l2s.commons.math.SafeMath;
@@ -37,55 +38,55 @@ public class RequestExCancelSentPost implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_CANCEL_BECAUSE_THE_PRIVATE_SHOP_OR_WORKSHOP_IS_IN_PROGRESS);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_CANCEL_DURING_AN_EXCHANGE);
 			return;
 		}
 
-		if (activeChar.getEnchantScroll() != null)
+		if(activeChar.getEnchantScroll() != null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_CANCEL_DURING_AN_ITEM_ENHANCEMENT_OR_ATTRIBUTE_ENHANCEMENT);
 			return;
 		}
 
-		if (!activeChar.isInPeaceZone())
+		if(!activeChar.isInPeaceZone())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_CANCEL_IN_A_NONPEACE_ZONE_LOCATION);
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
 		Mail mail = MailDAO.getInstance().getSentMailByMailId(activeChar.getObjectId(), postId);
-		if (mail != null)
+		if(mail != null)
 		{
-			if (mail.getAttachments().isEmpty())
+			if(mail.getAttachments().isEmpty())
 			{
 				activeChar.sendActionFailed();
 				return;
@@ -95,20 +96,20 @@ public class RequestExCancelSentPost implements IClientIncomingPacket
 			{
 				int slots = 0;
 				long weight = 0;
-				for (ItemInstance item : mail.getAttachments())
+				for(ItemInstance item : mail.getAttachments())
 				{
 					weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(item.getCount(), item.getTemplate().getWeight()));
-					if (!item.getTemplate().isStackable() || activeChar.getInventory().getItemByItemId(item.getItemId()) == null)
+					if(!item.getTemplate().isStackable() || activeChar.getInventory().getItemByItemId(item.getItemId()) == null)
 						slots++;
 				}
 
-				if (!activeChar.getInventory().validateWeight(weight))
+				if(!activeChar.getInventory().validateWeight(weight))
 				{
 					activeChar.sendPacket(SystemMsg.YOU_COULD_NOT_CANCEL_RECEIPT_BECAUSE_YOUR_INVENTORY_IS_FULL);
 					return;
 				}
 
-				if (!activeChar.getInventory().validateCapacity(slots))
+				if(!activeChar.getInventory().validateCapacity(slots))
 				{
 					activeChar.sendPacket(SystemMsg.YOU_COULD_NOT_CANCEL_RECEIPT_BECAUSE_YOUR_INVENTORY_IS_FULL);
 					return;
@@ -123,7 +124,7 @@ public class RequestExCancelSentPost implements IClientIncomingPacket
 					attachments.clear();
 				}
 
-				for (ItemInstance item : items)
+				for(ItemInstance item : items)
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_ACQUIRED_S2_S1).addItemName(item.getItemId()).addLong(item.getCount()));
 					Log.LogItem(activeChar, Log.PostCancel, item);
@@ -134,7 +135,7 @@ public class RequestExCancelSentPost implements IClientIncomingPacket
 
 				activeChar.sendPacket(SystemMsg.MAIL_SUCCESSFULLY_CANCELLED);
 			}
-			catch (ArithmeticException ae)
+			catch(ArithmeticException ae)
 			{
 				// TODO audit
 			}

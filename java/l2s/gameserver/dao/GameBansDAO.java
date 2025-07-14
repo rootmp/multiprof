@@ -33,7 +33,7 @@ public class GameBansDAO
 
 	public void select(Map<String, BanInfo> bans, BanBindType bindType)
 	{
-		if (!bindType.isGame())
+		if(!bindType.isGame())
 			return;
 
 		Connection con = null;
@@ -45,21 +45,21 @@ public class GameBansDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setString(1, bindType.toString().toLowerCase());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int endTime = rset.getInt("end_time");
-				if (endTime != -1 && endTime < (System.currentTimeMillis() / 1000))
+				if(endTime != -1 && endTime < (System.currentTimeMillis() / 1000))
 					continue;
 
 				String bindValue = rset.getString("bind_value");
-				if (StringUtils.isEmpty(bindValue))
+				if(StringUtils.isEmpty(bindValue))
 					continue;
 
 				String reason = rset.getString("reason");
 				bans.put(bindValue, new BanInfo(endTime, reason));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("GameBansDAO.select(Map,BanBindType): ", e);
 		}
@@ -71,7 +71,7 @@ public class GameBansDAO
 
 	public boolean insert(BanBindType bindType, String bindValue, BanInfo banInfo)
 	{
-		if (!bindType.isGame())
+		if(!bindType.isGame())
 			return false;
 
 		Connection con = null;
@@ -86,7 +86,7 @@ public class GameBansDAO
 			statement.setString(4, banInfo.getReason());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("GameBansDAO.insert(BanBindType,String,BanInfo): ", e);
 			return false;
@@ -100,7 +100,7 @@ public class GameBansDAO
 
 	public boolean delete(BanBindType bindType, String bindValue)
 	{
-		if (!bindType.isGame())
+		if(!bindType.isGame())
 			return false;
 
 		Connection con = null;
@@ -113,7 +113,7 @@ public class GameBansDAO
 			statement.setString(2, bindValue);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("GameBansDAO.delete(BanBindType,String): ", e);
 			return false;
@@ -136,9 +136,9 @@ public class GameBansDAO
 			statement.setInt(1, (int) (System.currentTimeMillis() / 1000));
 			statement.execute();
 
-			for (BanBindType bindType : BanBindType.VALUES)
+			for(BanBindType bindType : BanBindType.VALUES)
 			{
-				if (bindType.isGame())
+				if(bindType.isGame())
 					continue;
 
 				DbUtils.closeQuietly(statement);
@@ -148,7 +148,7 @@ public class GameBansDAO
 				statement.execute();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("GameBansDAO.cleanUp(): ", e);
 		}

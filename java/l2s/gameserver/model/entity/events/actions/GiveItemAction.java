@@ -22,7 +22,7 @@ public class GiveItemAction implements EventAction
 	@Override
 	public void call(Event event)
 	{
-		for (Player player : event.itemObtainPlayers())
+		for(Player player : event.itemObtainPlayers())
 			event.giveItem(player, _itemId, _count);
 	}
 }

@@ -68,10 +68,10 @@ public class StatusUpdatePacket implements IClientOutgoingPacket
 		VCP_AP(0x2C),
 		VCP_MAXAP(0x2D),
 		VCP_LP(0x2E),
-		VCP_MAXLP(0x2F),//max WP lp bp
+		VCP_MAXLP(0x2F), //max WP lp bp
 		VCP_LL(0x30),
 		VCP_UNK2(0x31),
-		VCP_WP(0x32),//WP Lp bp
+		VCP_WP(0x32), //WP Lp bp
 		VCP_MAXWP(0x33),
 		VCP_MAX(0x34);
 

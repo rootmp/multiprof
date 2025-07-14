@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -41,7 +40,7 @@ public final class DatParser
 
 	private Map<Integer, StatsSet> _itemNameData = new HashMap<Integer, StatsSet>();
 	private Map<Integer, StatsSet> _itemNameDataEu = new HashMap<Integer, StatsSet>();
-	
+
 	private Map<Integer, StatsSet> _itemNameDataAutoUse = new HashMap<Integer, StatsSet>();
 
 	private Map<Integer, StatsSet> _itemStatData = new HashMap<Integer, StatsSet>();
@@ -55,7 +54,7 @@ public final class DatParser
 	private Map<Long, StatsSet> _mSConditionData = new HashMap<Long, StatsSet>();
 
 	private Map<Integer, SkillAutoUseType> _autoUse = new HashMap<Integer, SkillAutoUseType>();
-	
+
 	private Map<Integer, SkillEnchantCharge> _enchantChargeData_ClassicAden = new HashMap<Integer, SkillEnchantCharge>();
 
 	private Map<Integer, StatsSet> _ensoul_stone_client_ClassicAden;
@@ -115,10 +114,11 @@ public final class DatParser
 		for(StatsSet skillParam : auto_use)
 			_autoUse.put(skillParam.getInteger("skill_id"), SkillAutoUseType.values()[skillParam.getInteger("auto_use_type")]);
 
-		
 		//_UpgradeSystem_Normal_ClassicAden = loadtxtToList("UpgradeSystem_Normal_ClassicAden.txt", "upgradesystem_begin", "upgradesystem_end", new String[] { "[", "]" });
 
-		_collectionData = loadtxtToMap("collection_ClassicAden-ru.txt", "collection_ID", "collection_begin", "collection_end", new String[] { "[", "]" });
+		_collectionData = loadtxtToMap("collection_ClassicAden-ru.txt", "collection_ID", "collection_begin", "collection_end", new String[] {
+				"[", "]"
+		});
 		for(StatsSet collection : _collectionData.values())
 		{
 			int _collection_id = collection.getInteger("collection_ID");
@@ -150,8 +150,10 @@ public final class DatParser
 			CollectionsData.getInstance().addCollection(colltemplate);
 		}
 
-		Map<Integer, StatsSet> _relicsCollectionData = loadtxtToMap("relics_collection_ClassicAden-ru.txt", "relics_collection_id", "relics_collection_begin", "relics_collection_end", new String[] { "[", "]" });
-		for(StatsSet relic: _relicsCollectionData.values())
+		Map<Integer, StatsSet> _relicsCollectionData = loadtxtToMap("relics_collection_ClassicAden-ru.txt", "relics_collection_id", "relics_collection_begin", "relics_collection_end", new String[] {
+				"[", "]"
+		});
+		for(StatsSet relic : _relicsCollectionData.values())
 		{
 			int relics_collection_id = relic.getInteger("relics_collection_id");
 			RelicsData.getInstance().addRelicCollection(relics_collection_id, new RelicsCollectionTemplate(relic));
@@ -161,24 +163,40 @@ public final class DatParser
 		//_NpcNameData = loadtxtToMap("NpcName_ClassicAden-eu.txt", "id", "npc_begin", "npc_end", new String[] { "[", "]" });
 		//_NpcgrpData = loadtxtToMap("Npcgrp_ClassicAden.txt", "npc_id", "npc_begin", "npc_end", new String[] { "[", "]" });
 
-		_itemNameData = loadtxtToMap("ItemName_ClassicAden-ru.txt", "id", "item_name_begin", "item_name_end", new String[] { "[", "]" });
+		_itemNameData = loadtxtToMap("ItemName_ClassicAden-ru.txt", "id", "item_name_begin", "item_name_end", new String[] {
+				"[", "]"
+		});
 
-		_itemNameDataAutoUse = loadtxtToMap("ItemName_ClassicAden-ru.txt", "Item_id", "automatic_use_begin", "automatic_use_end", new String[] {"[","]" });
+		_itemNameDataAutoUse = loadtxtToMap("ItemName_ClassicAden-ru.txt", "Item_id", "automatic_use_begin", "automatic_use_end", new String[] {
+				"[", "]"
+		});
 
-		_itemNameDataEu = loadtxtToMap("ItemName_ClassicAden-eu.txt", "id", "item_name_begin", "item_name_end", new String[] { "[", "]" });
+		_itemNameDataEu = loadtxtToMap("ItemName_ClassicAden-eu.txt", "id", "item_name_begin", "item_name_end", new String[] {
+				"[", "]"
+		});
 
 		//_itemStatData = loadtxtToMap("ItemStatData_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] { "{", "}", "[", "]" });
 
-			//_itemBaseinfoData = loadtxtToMap("item_baseinfo_ClassicAden.txt", "id", "item_baseinfo_begin", "item_baseinfo_end", new String[] {"{","}","[","]" });
+		//_itemBaseinfoData = loadtxtToMap("item_baseinfo_ClassicAden.txt", "id", "item_baseinfo_begin", "item_baseinfo_end", new String[] {"{","}","[","]" });
 
-		_weapongrpData = loadtxtToMap("Weapongrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] { "{", "}", "[", "]" });
-		_armorgrpData = loadtxtToMap("Armorgrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] { "{", "}", "[", "]" });
-		_etcItemgrpData = loadtxtToMap("EtcItemgrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] { "{", "}", "[", "]" });
+		_weapongrpData = loadtxtToMap("Weapongrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] {
+				"{", "}", "[", "]"
+		});
+		_armorgrpData = loadtxtToMap("Armorgrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] {
+				"{", "}", "[", "]"
+		});
+		_etcItemgrpData = loadtxtToMap("EtcItemgrp_ClassicAden.txt", "object_id", "item_begin", "item_end", new String[] {
+				"{", "}", "[", "]"
+		});
 
 		_itemsIcon = loadItemsIcon();
-		_skillgrpData = loadtxtToMapSkillLong("Skillgrp_ClassicAden.txt", "skill_id", "skill_begin", "skill_end", new String[] { "{", "}", "[", "]" });
+		_skillgrpData = loadtxtToMapSkillLong("Skillgrp_ClassicAden.txt", "skill_id", "skill_begin", "skill_end", new String[] {
+				"{", "}", "[", "]"
+		});
 
-		_mSConditionData = loadtxtToMapSkillLong("MSConditionData_ClassicAden.txt", "skill_id", "skill_begin", "skill_end", new String[] { "{", "}", "[", "]" });
+		_mSConditionData = loadtxtToMapSkillLong("MSConditionData_ClassicAden.txt", "skill_id", "skill_begin", "skill_end", new String[] {
+				"{", "}", "[", "]"
+		});
 
 		_log.info("=======================================================================");
 		_log.info("");
@@ -192,8 +210,6 @@ public final class DatParser
 		_etcItemgrpData.entrySet().forEach(s -> result.put(s.getKey(), getIcon(s.getValue().getString("icon"))));
 		return result;
 	}
-
-
 
 	public String getItemIcon(int item_id)
 	{
@@ -238,7 +254,8 @@ public final class DatParser
 
 					baseDat.set(tmp[0], value);
 				}
-				if(file_name.equalsIgnoreCase("Skillgrp_ClassicAden.txt")|| file_name.equalsIgnoreCase("SkillName_ClassicAden-ru.txt") || file_name.equalsIgnoreCase("SkillName_ClassicAden-eu.txt") || file_name.equalsIgnoreCase("MSConditionData_Classic.txt"))
+				if(file_name.equalsIgnoreCase("Skillgrp_ClassicAden.txt") || file_name.equalsIgnoreCase("SkillName_ClassicAden-ru.txt")
+						|| file_name.equalsIgnoreCase("SkillName_ClassicAden-eu.txt") || file_name.equalsIgnoreCase("MSConditionData_Classic.txt"))
 					_result.put((baseDat.getInteger(name_id) * 65536) + baseDat.getInteger("skill_level"), baseDat);
 				else
 					_result.put(baseDat.getInteger(name_id), baseDat);
@@ -294,7 +311,8 @@ public final class DatParser
 
 					baseDat.set(tmp[0], value);
 				}
-				if(file_name.equalsIgnoreCase("Skillgrp_ClassicAden.txt")|| file_name.equalsIgnoreCase("SkillName_ClassicAden-ru.txt") || file_name.equalsIgnoreCase("SkillName_ClassicAden-eu.txt") || file_name.equalsIgnoreCase("MSConditionData_ClassicAden.txt"))
+				if(file_name.equalsIgnoreCase("Skillgrp_ClassicAden.txt") || file_name.equalsIgnoreCase("SkillName_ClassicAden-ru.txt")
+						|| file_name.equalsIgnoreCase("SkillName_ClassicAden-eu.txt") || file_name.equalsIgnoreCase("MSConditionData_ClassicAden.txt"))
 					_result.put(SkillUtils.getSkillPTSLongHash(baseDat.getInteger(name_id), SkillUtils.getSkillLevelMask(baseDat.getInteger("skill_level"), baseDat.getInteger("skill_sublevel"))), baseDat);
 				else
 					_result.put(baseDat.getLong(name_id), baseDat);
@@ -319,7 +337,8 @@ public final class DatParser
 			String line;
 
 			// Считываем файл до конца
-			loop: while((line = br.readLine()) != null)
+			loop:
+			while((line = br.readLine()) != null)
 			{
 				line = line.trim();
 
@@ -364,7 +383,7 @@ public final class DatParser
 	public StatsSet getItemBaseInfoById(int id)
 	{
 		StatsSet data = _itemBaseinfoData.get(id);
-		if(data==null)
+		if(data == null)
 			return new StatsSet();
 		return _itemBaseinfoData.get(id);
 	}
@@ -451,7 +470,7 @@ public final class DatParser
 			return new StatsSet();
 		return _itemStatData.get(id);
 	}
-	
+
 	public Map<Integer, StatsSet> getItemNameDataEu()
 	{
 		return _itemNameDataEu;
@@ -489,17 +508,16 @@ public final class DatParser
 
 	public StatsSet getNpcgrpDataById(int key)
 	{
-		return _NpcgrpData.get(key);    
+		return _NpcgrpData.get(key);
 	}
 
-	public void generateRuTxtFile(List<StatsSet> _skillNameRuData) 
+	public void generateRuTxtFile(List<StatsSet> _skillNameRuData)
 	{
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter("ru.txt"))) 
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("ru.txt")))
 		{
-			_skillNameRuData.stream()
-			.sorted(Comparator.comparingLong(stats -> stats.getLong("skill_id")))
-			.forEach(stats -> {
-				try {
+			_skillNameRuData.stream().sorted(Comparator.comparingLong(stats -> stats.getLong("skill_id"))).forEach(stats -> {
+				try
+				{
 					// Извлекаем данные
 					long skillId = stats.getLong("skill_id");
 					int skillLevel = stats.getInteger("skill_level");
@@ -517,15 +535,19 @@ public final class DatParser
 							writer.newLine();
 						}
 					}
-				} catch (IOException e) {
+				}
+				catch(IOException e)
+				{
 					e.printStackTrace();
 				}
 			});
-		} catch (IOException e) {
+		}
+		catch(IOException e)
+		{
 			e.printStackTrace();
 		}
 	}
-	
+
 	public StatsSet getSkillNameRuData(long skillPTSLongHash)
 	{
 		return _skillNameRuData.get(skillPTSLongHash);

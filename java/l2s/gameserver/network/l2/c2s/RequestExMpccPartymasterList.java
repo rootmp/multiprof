@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,16 +24,16 @@ public class RequestExMpccPartymasterList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getType() != MatchingRoom.CC_MATCHING)
+		if(room == null || room.getType() != MatchingRoom.CC_MATCHING)
 			return;
 
 		Set<String> set = new HashSet<String>();
-		for (Player $member : room.getPlayers())
-			if ($member.getParty() != null)
+		for(Player $member : room.getPlayers())
+			if($member.getParty() != null)
 				set.add($member.getParty().getPartyLeader().getName());
 
 		player.sendPacket(new ExMpccPartymasterList(set));

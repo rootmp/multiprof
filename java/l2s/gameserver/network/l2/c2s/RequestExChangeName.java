@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.StringUtils;
 
 import l2s.commons.network.PacketReader;
@@ -35,29 +36,29 @@ public class RequestExChangeName implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_type == ExNeedToChangeName.TYPE_PLAYER)
+		if(_type == ExNeedToChangeName.TYPE_PLAYER)
 		{
 			String changedOldName = activeChar.getVar(Player.CHANGED_OLD_NAME);
-			if (changedOldName == null || StringUtils.isEmpty(changedOldName))
+			if(changedOldName == null || StringUtils.isEmpty(changedOldName))
 			{
 				activeChar.unsetVar(Player.CHANGED_OLD_NAME);
 				client.sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 				return;
 			}
-			if (_newName == null || _newName.isEmpty())
+			if(_newName == null || _newName.isEmpty())
 			{
 				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
-			if (!Util.isMatchingRegexp(_newName, Config.CNAME_TEMPLATE))
+			if(!Util.isMatchingRegexp(_newName, Config.CNAME_TEMPLATE))
 			{
 				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
-			if (!activeChar.getName().equalsIgnoreCase(_newName) && CharacterDAO.getInstance().getObjectIdByName(_newName) > 0)
+			if(!activeChar.getName().equalsIgnoreCase(_newName) && CharacterDAO.getInstance().getObjectIdByName(_newName) > 0)
 			{
 				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
@@ -68,54 +69,54 @@ public class RequestExChangeName implements IClientIncomingPacket
 			activeChar.unsetVar(Player.CHANGED_OLD_NAME);
 			client.sendPacket(new CharacterSelectedPacket(activeChar, client.getSessionKey().playOkID1));
 		}
-		else if (_type == ExNeedToChangeName.TYPE_PLEDGE)
+		else if(_type == ExNeedToChangeName.TYPE_PLEDGE)
 		{
 			String changedOldName = activeChar.getVar(Player.CHANGED_PLEDGE_NAME);
-			if (changedOldName == null || StringUtils.isEmpty(changedOldName))
+			if(changedOldName == null || StringUtils.isEmpty(changedOldName))
 			{
 				activeChar.unsetVar(Player.CHANGED_PLEDGE_NAME);
 				return;
 			}
 
 			Clan clan = activeChar.getClan();
-			if (clan == null)
+			if(clan == null)
 			{
 				activeChar.unsetVar(Player.CHANGED_PLEDGE_NAME);
 				return;
 			}
 
 			SubUnit subUnit = null;
-			for (SubUnit s : clan.getAllSubUnits())
+			for(SubUnit s : clan.getAllSubUnits())
 			{
-				if (s.getLeaderObjectId() == activeChar.getObjectId())
+				if(s.getLeaderObjectId() == activeChar.getObjectId())
 				{
 					subUnit = s;
 					break;
 				}
 			}
 
-			if (subUnit == null)
+			if(subUnit == null)
 			{
 				activeChar.unsetVar(Player.CHANGED_PLEDGE_NAME);
 				return;
 			}
 
-			if (!Util.isMatchingRegexp(_newName, Config.CLAN_NAME_TEMPLATE))
+			if(!Util.isMatchingRegexp(_newName, Config.CLAN_NAME_TEMPLATE))
 			{
 				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;
 			}
 
-			for (SubUnit s : clan.getAllSubUnits())
+			for(SubUnit s : clan.getAllSubUnits())
 			{
-				if (s.getName().equalsIgnoreCase(_newName))
+				if(s.getName().equalsIgnoreCase(_newName))
 				{
 					client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 					return;
 				}
 			}
 
-			if (!subUnit.getName().equalsIgnoreCase(_newName) && ClanTable.getInstance().getClanByName(_newName) != null)
+			if(!subUnit.getName().equalsIgnoreCase(_newName) && ClanTable.getInstance().getClanByName(_newName) != null)
 			{
 				client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NAME_ALREADY_IN_USE_OR_INCORRECT_REASON, changedOldName));
 				return;

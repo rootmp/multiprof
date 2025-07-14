@@ -49,9 +49,9 @@ public final class StatsUtils
 	{
 		double maxMem = memMXbean.getHeapMemoryUsage().getMax() / 1024.; // maxMemory is the upper limit the jvm can use
 		double allocatedMem = memMXbean.getHeapMemoryUsage().getCommitted() / 1024.; // totalMemory the size of the
-																						// current allocation pool
+		// current allocation pool
 		double usedMem = memMXbean.getHeapMemoryUsage().getUsed() / 1024.; // freeMemory the unused memory in the
-																			// allocation pool
+		// allocation pool
 		double nonAllocatedMem = maxMem - allocatedMem; // non allocated memory till jvm limit
 		double cachedMem = allocatedMem - usedMem; // really used memory
 		double useableMem = maxMem - usedMem; // allocated, but non-used and non-allocated memory
@@ -59,12 +59,18 @@ public final class StatsUtils
 		StringBuilder list = new StringBuilder();
 
 		list.append("AllowedMemory: ........... ").append((int) maxMem).append(" KB").append("\n");
-		list.append("     Allocated: .......... ").append((int) allocatedMem).append(" KB (").append(((double) Math.round(allocatedMem / maxMem * 1000000) / 10000)).append("%)").append("\n");
-		list.append("     Non-Allocated: ...... ").append((int) nonAllocatedMem).append(" KB (").append((double) Math.round(nonAllocatedMem / maxMem * 1000000) / 10000).append("%)").append("\n");
+		list.append("     Allocated: .......... ").append((int) allocatedMem).append(" KB (").append(((double) Math.round(allocatedMem / maxMem * 1000000)
+				/ 10000)).append("%)").append("\n");
+		list.append("     Non-Allocated: ...... ").append((int) nonAllocatedMem).append(" KB (").append((double) Math.round(nonAllocatedMem
+				/ maxMem
+				* 1000000) / 10000).append("%)").append("\n");
 		list.append("AllocatedMemory: ......... ").append((int) allocatedMem).append(" KB").append("\n");
-		list.append("     Used: ............... ").append((int) usedMem).append(" KB (").append((double) Math.round(usedMem / maxMem * 1000000) / 10000).append("%)").append("\n");
-		list.append("     Unused (cached): .... ").append((int) cachedMem).append(" KB (").append((double) Math.round(cachedMem / maxMem * 1000000) / 10000).append("%)").append("\n");
-		list.append("UseableMemory: ........... ").append((int) useableMem).append(" KB (").append((double) Math.round(useableMem / maxMem * 1000000) / 10000).append("%)").append("\n");
+		list.append("     Used: ............... ").append((int) usedMem).append(" KB (").append((double) Math.round(usedMem / maxMem * 1000000)
+				/ 10000).append("%)").append("\n");
+		list.append("     Unused (cached): .... ").append((int) cachedMem).append(" KB (").append((double) Math.round(cachedMem / maxMem * 1000000)
+				/ 10000).append("%)").append("\n");
+		list.append("UseableMemory: ........... ").append((int) useableMem).append(" KB (").append((double) Math.round(useableMem / maxMem * 1000000)
+				/ 10000).append("%)").append("\n");
 
 		return list;
 	}
@@ -93,24 +99,24 @@ public final class StatsUtils
 	{
 		StringBuilder list = new StringBuilder();
 
-		for (ThreadInfo info : threadMXbean.dumpAllThreads(lockedMonitors, lockedSynchronizers))
+		for(ThreadInfo info : threadMXbean.dumpAllThreads(lockedMonitors, lockedSynchronizers))
 		{
 			list.append("Thread #").append(info.getThreadId()).append(" (").append(info.getThreadName()).append(")").append("\n");
 			list.append("=================================================\n");
 			list.append("\tgetThreadState: ...... ").append(info.getThreadState()).append("\n");
-			for (MonitorInfo monitorInfo : info.getLockedMonitors())
+			for(MonitorInfo monitorInfo : info.getLockedMonitors())
 			{
 				list.append("\tLocked monitor: ....... ").append(monitorInfo).append("\n");
 				list.append("\t\t[").append(monitorInfo.getLockedStackDepth()).append(".]: at ").append(monitorInfo.getLockedStackFrame()).append("\n");
 			}
 
-			for (LockInfo lockInfo : info.getLockedSynchronizers())
+			for(LockInfo lockInfo : info.getLockedSynchronizers())
 				list.append("\tLocked synchronizer: ...").append(lockInfo).append("\n");
 
-			if (stackTrace)
+			if(stackTrace)
 			{
 				list.append("\tgetStackTace: ..........\n");
-				for (StackTraceElement trace : info.getStackTrace())
+				for(StackTraceElement trace : info.getStackTrace())
 					list.append("\t\tat ").append(trace).append("\n");
 			}
 			list.append("=================================================\n");
@@ -123,7 +129,7 @@ public final class StatsUtils
 	{
 		StringBuilder list = new StringBuilder();
 
-		for (GarbageCollectorMXBean gcBean : ManagementFactory.getGarbageCollectorMXBeans())
+		for(GarbageCollectorMXBean gcBean : ManagementFactory.getGarbageCollectorMXBeans())
 		{
 			list.append("GarbageCollector (").append(gcBean.getName()).append(")\n");
 			list.append("=================================================\n");

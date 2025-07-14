@@ -26,7 +26,7 @@ public class WeeklyTask extends AutomaticTask
 	public void doTask() throws Exception
 	{
 		_log.info("Weekly Global Task: launched.");
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 			player.restartWeeklyCounters(false);
 		MySqlDataInsert.set("UPDATE character_variables SET value = 0 WHERE name = \"weekly_contribution\"");
 		_log.info("Weekly Global Task: completed.");

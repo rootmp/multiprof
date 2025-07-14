@@ -22,20 +22,16 @@ public class ConditionPlayerHasCpBetween extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
-		{
-			return false;
-		}
+		if(character == null)
+		{ return false; }
 
-		if (_percentage)
+		if(_percentage)
 		{
 			int hpPer = (int) character.getCurrentCpPercents();
 			return (hpPer >= _min && hpPer <= _max);
 		}
-		if (_max == -1)
-		{
-			return (character.getMaxCp() >= _min);
-		}
+		if(_max == -1)
+		{ return (character.getMaxCp() >= _min); }
 
 		return (character.getMaxCp() >= _min && character.getMaxCp() <= _max);
 	}

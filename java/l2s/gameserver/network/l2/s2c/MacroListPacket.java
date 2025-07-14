@@ -37,7 +37,7 @@ public class MacroListPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_macroId); // Macro ID
 		packetWriter.writeC(_count); // count of Macros
 
-		if (_macro != null)
+		if(_macro != null)
 		{
 			packetWriter.writeC(1); // checked
 			packetWriter.writeD(_macro.getId()); // Macro ID
@@ -48,7 +48,7 @@ public class MacroListPacket implements IClientOutgoingPacket
 
 			packetWriter.writeC(_macro.getCommands().length); // count
 
-			for (int i = 0; i < _macro.getCommands().length; i++)
+			for(int i = 0; i < _macro.getCommands().length; i++)
 			{
 				Macro.L2MacroCmd cmd = _macro.getCommands()[i];
 				packetWriter.writeC(i + 1); // i of count

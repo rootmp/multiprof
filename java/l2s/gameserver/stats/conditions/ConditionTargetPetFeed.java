@@ -18,13 +18,13 @@ public class ConditionTargetPetFeed extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.character;
-		if (target.isPet())
+		if(target.isPet())
 		{
 			PetInstance pet = (PetInstance) target;
 			return pet.isMyFeed(_itemId);
 		}
 
-		if (target.isPlayer() && target.getPlayer().isMounted())
+		if(target.isPlayer() && target.getPlayer().isMounted())
 		{
 			Mount mount = target.getPlayer().getMount();
 			return mount.isMyFeed(_itemId);

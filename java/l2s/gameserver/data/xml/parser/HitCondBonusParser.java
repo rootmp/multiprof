@@ -42,7 +42,7 @@ public final class HitCondBonusParser extends AbstractParser<HitCondBonusHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 

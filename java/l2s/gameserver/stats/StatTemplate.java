@@ -25,7 +25,7 @@ public class StatTemplate
 
 	public void addTrigger(TriggerInfo f)
 	{
-		if (_triggerList.isEmpty())
+		if(_triggerList.isEmpty())
 			_triggerList = new ArrayList<TriggerInfo>(4);
 		_triggerList.add(f);
 	}
@@ -37,7 +37,7 @@ public class StatTemplate
 
 	public void attachFuncs(FuncTemplate... funcs)
 	{
-		for (FuncTemplate f : funcs)
+		for(FuncTemplate f : funcs)
 			attachFunc(f);
 	}
 
@@ -55,11 +55,11 @@ public class StatTemplate
 
 	public Func[] getStatFuncs(Object owner)
 	{
-		if (_funcTemplates.length == 0)
+		if(_funcTemplates.length == 0)
 			return Func.EMPTY_FUNC_ARRAY;
 
 		Func[] funcs = new Func[_funcTemplates.length];
-		for (int i = 0; i < funcs.length; i++)
+		for(int i = 0; i < funcs.length; i++)
 		{
 			funcs[i] = _funcTemplates[i].getFunc(owner);
 		}

@@ -19,12 +19,12 @@ public class ListenerHook
 		try
 		{
 			NpcTemplate template = NpcHolder.getInstance().getTemplate(npcId);
-			if (template != null)
+			if(template != null)
 			{
 				template.addListenerHook(type, this);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -32,7 +32,7 @@ public class ListenerHook
 
 	protected void addHookNpc(ListenerHookType type, int... npcIds)
 	{
-		for (int npcId : npcIds)
+		for(int npcId : npcIds)
 		{
 			addHookNpc(type, npcId);
 		}
@@ -60,16 +60,13 @@ public class ListenerHook
 	// ----------------------------------------------------------------------------------------------
 
 	public void onNpcKill(NpcInstance npc, Player killer)
-	{
-	}
+	{}
 
 	public void onNpcAttack(NpcInstance npc, int damage, Player attacker)
-	{
-	}
+	{}
 
 	public void onNpcAsk(NpcInstance npc, int ask, long reply, int state, Player player)
-	{
-	}
+	{}
 
 	public boolean onNpcFirstTalk(NpcInstance npc, Player player)
 	{
@@ -77,38 +74,30 @@ public class ListenerHook
 	}
 
 	public void onNpcSpawn(NpcInstance npc)
-	{
-	}
+	{}
 
 	public void onNpcDespawn(NpcInstance npc)
-	{
-	}
+	{}
 
 	// ----------------------------------------------------------------------------------------------
 
 	public void onPlayerFinishCastSkill(Player player, int skillId)
-	{
-	}
+	{}
 
 	public void onPlayerDie(Player player, Creature killer)
-	{
-	}
+	{}
 
 	public void onPlayerEnterGame(Player player)
-	{
-	}
+	{}
 
 	public void onPlayerQuitGame(Player player)
-	{
-	}
+	{}
 
 	public void onPlayerTeleport(Player player, int reflectionId)
-	{
-	}
+	{}
 
 	public void onPlayerCreate(Player player)
-	{
-	}
+	{}
 
 	// ----------------------------------------------------------------------------------------------
 
@@ -117,7 +106,7 @@ public class ListenerHook
 	private static void addGlobalListenerHookType(ListenerHookType type, ListenerHook hook)
 	{
 		Set<ListenerHook> hooks = _globalListenerHooks.get(type);
-		if (hooks == null)
+		if(hooks == null)
 		{
 			hooks = new HashSet<ListenerHook>();
 			_globalListenerHooks.put(type, hooks);
@@ -128,7 +117,7 @@ public class ListenerHook
 	public static Set<ListenerHook> getGlobalListenerHooks(ListenerHookType type)
 	{
 		Set<ListenerHook> hooks = _globalListenerHooks.get(type);
-		if (hooks == null)
+		if(hooks == null)
 			return Collections.emptySet();
 		return hooks;
 	}
@@ -136,48 +125,37 @@ public class ListenerHook
 	// ----------------------------------------------------------------------------------------------
 
 	public void onGlobalBbs(String command, Player player)
-	{
-	}
+	{}
 
 	// ----------------------------------------------------------------------------------------------
 
 	public void onPlayerGlobalLevelUp(Player player, int oldLevel, int newLevel)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalDie(Player player)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalFriendAdd(Player player)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalItemAdd(Player player, int itemId, long count)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalKill(Player player, Player killer)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalPvPUp(Player player, int oldPvP)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalPKUp(Player player, int oldPK)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalStartCastleSiegeInClan(int objectId)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalTakeCastle(Player player)
-	{
-	}
+	{}
 
 	public void onPlayerGlobalTakeDamage(Player player, Creature attacker)
-	{
-	}
+	{}
 }

@@ -18,20 +18,14 @@ public final class ItemAugmentationListener extends AbstractOptionDataListener
 	@Override
 	public int onEquip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!item.isEquipable())
-		{
-			return 0;
-		}
+		if(!item.isEquipable())
+		{ return 0; }
 
-		if (!item.isAugmented())
-		{
-			return 0;
-		}
+		if(!item.isAugmented())
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 
@@ -40,17 +34,16 @@ public final class ItemAugmentationListener extends AbstractOptionDataListener
 		List<OptionDataTemplate> addedOptionDatas = new ArrayList<OptionDataTemplate>();
 
 		// При несоотвествии грейда аугмент не применяется
-		if ((item.getTemplate().getType2() != ItemTemplate.TYPE2_WEAPON) || (player.getWeaponsExpertisePenalty() == 0))
+		if((item.getTemplate().getType2() != ItemTemplate.TYPE2_WEAPON) || (player.getWeaponsExpertisePenalty() == 0))
 		{
-			int[] stats =
-			{
-				item.getVariation1Id(),
-				item.getVariation2Id()
+			int[] stats = {
+					item.getVariation1Id(),
+					item.getVariation2Id()
 			};
-			for (int i : stats)
+			for(int i : stats)
 			{
 				OptionDataTemplate template = OptionDataHolder.getInstance().getTemplate(i);
-				if (template == null)
+				if(template == null)
 				{
 					continue;
 				}

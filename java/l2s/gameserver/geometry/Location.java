@@ -15,8 +15,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	public int h;
 
 	public Location()
-	{
-	}
+	{}
 
 	/**
 	 * Позиция (x, y, z, heading)
@@ -151,7 +150,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	public static Location parseLoc(String s) throws IllegalArgumentException
 	{
 		String[] xyzh = s.split("[\\s,;]+");
-		if (xyzh.length < 3)
+		if(xyzh.length < 3)
 			throw new IllegalArgumentException("Can't parse location from string: " + s);
 		int x = Integer.parseInt(xyzh[0]);
 		int y = Integer.parseInt(xyzh[1]);
@@ -183,7 +182,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	 */
 	public static Location findFrontPosition(GameObject obj, GameObject obj2, int radiusmin, int radiusmax)
 	{
-		if (radiusmax <= 0 || radiusmax < radiusmin)
+		if(radiusmax <= 0 || radiusmax < radiusmin)
 			return new Location(obj);
 
 		double collision = obj.getCurrentCollisionRadius() + obj2.getCurrentCollisionRadius();
@@ -191,7 +190,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 		int minangle = 0;
 		int maxangle = 360;
 
-		if (!obj.equals(obj2))
+		if(!obj.equals(obj2))
 		{
 			double angle = PositionUtils.calculateAngleFrom(obj, obj2);
 			minangle = (int) angle - 45;
@@ -199,7 +198,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 		}
 
 		Location pos = new Location();
-		for (int i = 0; i < 100; i++)
+		for(int i = 0; i < 100; i++)
 		{
 			randomRadius = Rnd.get(radiusmin, radiusmax);
 			randomAngle = Rnd.get(minangle, maxangle);
@@ -207,10 +206,10 @@ public class Location extends Point3D implements ILocation, SpawnRange
 			pos.y = obj.getY() + (int) ((collision + randomRadius) * Math.sin(Math.toRadians(randomAngle)));
 			pos.z = obj.getZ();
 			tempz = GeoEngine.getLowerHeight(pos.x, pos.y, pos.z, obj.getGeoIndex());
-			if (Math.abs(pos.z - tempz) < 200 && GeoEngine.getLowerNSWE(pos.x, pos.y, tempz, obj.getGeoIndex()) == GeoEngine.NSWE_ALL)
+			if(Math.abs(pos.z - tempz) < 200 && GeoEngine.getLowerNSWE(pos.x, pos.y, tempz, obj.getGeoIndex()) == GeoEngine.NSWE_ALL)
 			{
 				pos.z = tempz;
-				if (!obj.equals(obj2))
+				if(!obj.equals(obj2))
 					pos.h = PositionUtils.getHeadingTo(pos, obj2.getLoc());
 				else
 					pos.h = obj.getHeading();
@@ -234,16 +233,16 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	 */
 	public static Location findAroundPosition(int x, int y, int z, int radiusmin, int radiusmax, int geoIndex)
 	{
-		if (radiusmax <= 0 || radiusmax < radiusmin)
+		if(radiusmax <= 0 || radiusmax < radiusmin)
 			return new Location(x, y, z);
 
 		Location pos;
 		int tempz;
-		for (int i = 0; i < 100; i++)
+		for(int i = 0; i < 100; i++)
 		{
 			pos = Location.coordsRandomize(x, y, z, 0, radiusmin, radiusmax);
 			tempz = GeoEngine.getLowerHeight(pos.x, pos.y, pos.z, geoIndex);
-			if (GeoEngine.canMoveToCoord(x, y, z, pos.x, pos.y, tempz, geoIndex) && GeoEngine.canMoveToCoord(pos.x, pos.y, tempz, x, y, z, geoIndex))
+			if(GeoEngine.canMoveToCoord(x, y, z, pos.x, pos.y, tempz, geoIndex) && GeoEngine.canMoveToCoord(pos.x, pos.y, tempz, x, y, z, geoIndex))
 			{
 				pos.z = tempz;
 				return pos;
@@ -290,16 +289,16 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	 */
 	public static Location findPointToStay(int x, int y, int z, int radiusmin, int radiusmax, int geoIndex, int maxZDiff)
 	{
-		if (radiusmax <= 0 || radiusmax < radiusmin)
+		if(radiusmax <= 0 || radiusmax < radiusmin)
 			return new Location(x, y, z);
 
 		Location pos;
 		int tempz;
-		for (int i = 0; i < 100; i++)
+		for(int i = 0; i < 100; i++)
 		{
 			pos = Location.coordsRandomize(x, y, z, 0, radiusmin, radiusmax);
 			tempz = GeoEngine.getLowerHeight(pos.x, pos.y, pos.z, geoIndex);
-			if (Math.abs(pos.z - tempz) < maxZDiff && GeoEngine.getLowerNSWE(pos.x, pos.y, tempz, geoIndex) == GeoEngine.NSWE_ALL)
+			if(Math.abs(pos.z - tempz) < maxZDiff && GeoEngine.getLowerNSWE(pos.x, pos.y, tempz, geoIndex) == GeoEngine.NSWE_ALL)
 			{
 				pos.z = tempz;
 				return pos;
@@ -345,7 +344,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 
 	public static Location coordsRandomize(int x, int y, int z, int heading, int radiusmin, int radiusmax)
 	{
-		if (radiusmax <= 0 || radiusmax < radiusmin)
+		if(radiusmax <= 0 || radiusmax < radiusmin)
 			return new Location(x, y, z, heading);
 		int radius = Rnd.get(radiusmin, radiusmax);
 		double angle = Rnd.nextDouble() * 2 * Math.PI;
@@ -355,11 +354,11 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	public static Location findNearest(ILocation loc, Location[] locs)
 	{
 		Location defloc = null;
-		for (Location l : locs)
+		for(Location l : locs)
 		{
-			if (defloc == null)
+			if(defloc == null)
 				defloc = l;
-			else if (loc.getDistance(l) < loc.getDistance(defloc))
+			else if(loc.getDistance(l) < loc.getDistance(defloc))
 				defloc = l;
 		}
 		return defloc;
@@ -374,7 +373,7 @@ public class Location extends Point3D implements ILocation, SpawnRange
 	public Location getRandomLoc(int geoIndex, boolean fly)
 	{
 		Location loc = clone();
-		if (loc.h == -1)
+		if(loc.h == -1)
 			loc.h = getRandomHeading();
 		return loc;
 	}

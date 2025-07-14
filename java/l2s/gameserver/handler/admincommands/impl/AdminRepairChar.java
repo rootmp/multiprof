@@ -24,10 +24,10 @@ public class AdminRepairChar implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (activeChar.getPlayerAccess() == null || !activeChar.getPlayerAccess().CanEditChar)
+		if(activeChar.getPlayerAccess() == null || !activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
-		if (wordList.length != 2)
+		if(wordList.length != 2)
 			return false;
 
 		Connection con = null;
@@ -45,12 +45,12 @@ public class AdminRepairChar implements IAdminCommandHandler
 			statement = con.prepareStatement("SELECT obj_id FROM characters where char_name=?");
 			statement.setString(1, wordList[1]);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 				objId = rset.getInt(1);
 
 			DbUtils.close(statement, rset);
 
-			if (objId == 0)
+			if(objId == 0)
 				return false;
 
 			// con = DatabaseFactory.getInstance().getConnection();
@@ -65,7 +65,7 @@ public class AdminRepairChar implements IAdminCommandHandler
 			statement.execute();
 			DbUtils.close(statement);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 
 		}

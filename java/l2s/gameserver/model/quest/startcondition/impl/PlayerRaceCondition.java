@@ -19,33 +19,33 @@ public class PlayerRaceCondition implements ICheckStartCondition
 	public PlayerRaceCondition(boolean human, boolean elf, boolean delf, boolean orc, boolean dwarf)
 	{
 		_classRace = false;
-		if (human)
+		if(human)
 			_races.add(Race.HUMAN);
-		if (elf)
+		if(elf)
 			_races.add(Race.ELF);
-		if (delf)
+		if(delf)
 			_races.add(Race.DARKELF);
-		if (orc)
+		if(orc)
 			_races.add(Race.ORC);
-		if (dwarf)
+		if(dwarf)
 			_races.add(Race.DWARF);
 	}
 
 	public PlayerRaceCondition(boolean classRace, Race[] races)
 	{
 		_classRace = classRace;
-		for (Race race : races)
+		for(Race race : races)
 			_races.add(race);
 	}
 
 	@Override
 	public boolean checkCondition(Player player)
 	{
-		if (_races.isEmpty())
+		if(_races.isEmpty())
 			return true;
 
 		Race race = player.getClassId().getRace();
-		if (!_classRace || race == null)
+		if(!_classRace || race == null)
 			race = player.getRace();
 
 		return _races.contains(race);

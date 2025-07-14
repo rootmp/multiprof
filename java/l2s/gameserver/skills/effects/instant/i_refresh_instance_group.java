@@ -24,10 +24,10 @@ public final class i_refresh_instance_group extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			int groupId = (int) getValue();
-			if (groupId == -1)
+			if(groupId == -1)
 				player.removeAllInstanceReuses();
 			else
 				player.removeInstanceReusesByGroupId(groupId);

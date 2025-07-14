@@ -23,9 +23,9 @@ public class AntharasLairOpenTask extends AutomaticTask
 	{
 		super();
 		LocalDateTime now = LocalDateTime.now(ZoneId.systemDefault());
-		if ((now.getDayOfWeek() == DayOfWeek.MONDAY) || (now.getDayOfWeek() == DayOfWeek.WEDNESDAY) || (now.getDayOfWeek() == DayOfWeek.FRIDAY))
+		if((now.getDayOfWeek() == DayOfWeek.MONDAY) || (now.getDayOfWeek() == DayOfWeek.WEDNESDAY) || (now.getDayOfWeek() == DayOfWeek.FRIDAY))
 		{
-			if (now.getHour() >= 18)
+			if(now.getHour() >= 18)
 			{
 				ServerVariables.set("antharas_lair_open", true);
 			}

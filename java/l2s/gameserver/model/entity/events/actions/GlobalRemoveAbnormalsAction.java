@@ -21,10 +21,10 @@ public class GlobalRemoveAbnormalsAction implements EventAction
 	@Override
 	public void call(Event event)
 	{
-		if (_skillId <= 0)
+		if(_skillId <= 0)
 			return;
 
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 		{
 			player.getAbnormalList().stop(_skillId);
 		}

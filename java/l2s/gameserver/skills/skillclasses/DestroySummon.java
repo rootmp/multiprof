@@ -19,14 +19,14 @@ public class DestroySummon extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (getActivateRate() > 0 && !Formulas.calcEffectsSuccess(activeChar, target, this, getActivateRate()))
+		if(getActivateRate() > 0 && !Formulas.calcEffectsSuccess(activeChar, target, this, getActivateRate()))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RESISTED_YOUR_S2).addName(target).addSkillName(getId(), getLevel(), 0));
 			activeChar.sendPacket(new ExMagicAttackInfo(activeChar.getObjectId(), target.getObjectId(), ExMagicAttackInfo.RESISTED));
 			return;
 		}
 
-		if (target.isSummon())
+		if(target.isSummon())
 			((Servitor) target).unSummon(false);
 	}
 }

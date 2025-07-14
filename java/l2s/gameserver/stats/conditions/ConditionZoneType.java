@@ -15,7 +15,7 @@ public class ConditionZoneType extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 		return env.character.isInZone(_zoneType);
 	}

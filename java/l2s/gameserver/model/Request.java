@@ -62,18 +62,17 @@ public class Request extends MultiValueSet<String>
 	{
 		_id = _nextId.incrementAndGet();
 		_requestor = requestor.getRef();
-		_reciever = reciever != null ? reciever.getRef() : HardReferences.<Player>emptyRef();
+		_reciever = reciever != null ? reciever.getRef() : HardReferences.<Player> emptyRef();
 		_type = type;
 		requestor.setRequest(this);
-		if (reciever != null)
+		if(reciever != null)
 			reciever.setRequest(this);
 	}
 
 	public Request setTimeout(long timeout)
 	{
 		_timeout = timeout > 0 ? System.currentTimeMillis() + timeout : 0;
-		_timeoutTask = ThreadPoolManager.getInstance().schedule(() ->
-		{
+		_timeoutTask = ThreadPoolManager.getInstance().schedule(() -> {
 			timeout();
 		}, timeout);
 		return this;
@@ -86,17 +85,17 @@ public class Request extends MultiValueSet<String>
 
 	private void cancel0(IBroadcastPacket... packets)
 	{
-		if (_timeoutTask != null)
+		if(_timeoutTask != null)
 			_timeoutTask.cancel(false);
 		_timeoutTask = null;
 		Player player = getRequestor();
-		if (player != null && player.getRequest() == this)
+		if(player != null && player.getRequest() == this)
 		{
 			player.setRequest(null);
 			player.sendPacket(packets);
 		}
 		player = getReciever();
-		if (player != null && player.getRequest() == this)
+		if(player != null && player.getRequest() == this)
 		{
 			player.setRequest(null);
 			player.sendPacket(packets);
@@ -127,17 +126,17 @@ public class Request extends MultiValueSet<String>
 	public void timeout(IBroadcastPacket... packets)
 	{
 		Player player = getReciever();
-		if (player != null)
-			if (player.getRequest() == this)
+		if(player != null)
+			if(player.getRequest() == this)
 				player.sendPacket(SystemMsg.TIME_EXPIRED);
 		cancel(packets);
 	}
 
 	public Player getOtherPlayer(Player player)
 	{
-		if (player == getRequestor())
+		if(player == getRequestor())
 			return getReciever();
-		if (player == getReciever())
+		if(player == getReciever())
 			return getRequestor();
 		return null;
 	}
@@ -157,13 +156,13 @@ public class Request extends MultiValueSet<String>
 	 */
 	public boolean isInProgress()
 	{
-		if (_isCancelled)
+		if(_isCancelled)
 			return false;
-		if (_isDone)
+		if(_isDone)
 			return false;
-		if (_timeout == 0)
+		if(_timeout == 0)
 			return true;
-		if (_timeout > System.currentTimeMillis())
+		if(_timeout > System.currentTimeMillis())
 			return true;
 		return false;
 	}
@@ -181,9 +180,9 @@ public class Request extends MultiValueSet<String>
 	 */
 	public void confirm(Player player)
 	{
-		if (player == getRequestor())
+		if(player == getRequestor())
 			_isRequestorConfirmed = true;
-		else if (player == getReciever())
+		else if(player == getReciever())
 			_isRecieverConfirmed = true;
 	}
 
@@ -192,9 +191,9 @@ public class Request extends MultiValueSet<String>
 	 */
 	public boolean isConfirmed(Player player)
 	{
-		if (player == getRequestor())
+		if(player == getRequestor())
 			return _isRequestorConfirmed;
-		else if (player == getReciever())
+		else if(player == getReciever())
 			return _isRecieverConfirmed;
 		return false; // WTF???
 	}

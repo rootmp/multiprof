@@ -20,7 +20,7 @@ public class ExBlessOptionProbList implements IClientOutgoingPacket
 		this.optionProbList = optionProbList;
 		this.shapeProbList = shapeProbList;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

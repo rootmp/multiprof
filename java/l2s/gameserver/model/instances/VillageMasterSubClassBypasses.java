@@ -20,7 +20,7 @@ public class VillageMasterSubClassBypasses
 	public static void getSubJobList(VillageMasterInstance npc, Player player, int ask, int state)
 	{
 		final String dialogSuffix = npc.getSubClassDialogSuffix();
-		if (dialogSuffix == null)
+		if(dialogSuffix == null)
 			return;
 
 		final SubClass mainClass = player.getSubClassList().getByIndex(1);
@@ -39,257 +39,258 @@ public class VillageMasterSubClassBypasses
 		final int subClass3Id = subClass3 == null ? -1 : subClass3.getClassId();
 		final int subClass3Level = subClass3 == null ? 0 : subClass3.getLevel();
 
-		if (ask >= 1 && ask <= 10)
+		if(ask >= 1 && ask <= 10)
 		{
 			final ClassId newSubClassId = npc.getNewSubClassId(ask);
-			if (newSubClassId == null)
+			if(newSubClassId == null)
 				return;
 
-			if (player.getRace() == Race.ELF && newSubClassId.isOfRace(Race.DARKELF) || player.getRace() == Race.DARKELF && newSubClassId.isOfRace(Race.ELF))
+			if(player.getRace() == Race.ELF && newSubClassId.isOfRace(Race.DARKELF) || player.getRace() == Race.DARKELF && newSubClassId.isOfRace(Race.ELF))
 			{
 				npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_15.htm", false);
 				return;
 			}
 
-			if (ClassId.isDagger(newSubClassId.getId()))
+			if(ClassId.isDagger(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass2Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
+					if(ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass2Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_08.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isDagger(subClass2Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
+					if(ClassId.isDagger(subClass2Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_08.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
+					if(ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass3Id) || ClassId.isDagger(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_08.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass2Id) || ClassId.isDagger(mainClassId))
+					if(ClassId.isDagger(subClass1Id) || ClassId.isDagger(subClass2Id) || ClassId.isDagger(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_08.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isBow(newSubClassId.getId()))
+			else if(ClassId.isBow(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isBow(subClass1Id) || ClassId.isBow(subClass2Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
+					if(ClassId.isBow(subClass1Id) || ClassId.isBow(subClass2Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_09.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isBow(subClass2Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
+					if(ClassId.isBow(subClass2Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_09.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isBow(subClass1Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
+					if(ClassId.isBow(subClass1Id) || ClassId.isBow(subClass3Id) || ClassId.isBow(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_09.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isBow(subClass1Id) || ClassId.isBow(subClass2Id) || ClassId.isBow(mainClassId))
+					if(ClassId.isBow(subClass1Id) || ClassId.isBow(subClass2Id) || ClassId.isBow(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_09.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isKnight(newSubClassId.getId()))
+			else if(ClassId.isKnight(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass2Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
+					if(ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass2Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_10.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isKnight(subClass2Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
+					if(ClassId.isKnight(subClass2Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_10.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
+					if(ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass3Id) || ClassId.isKnight(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_10.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass2Id) || ClassId.isKnight(mainClassId))
+					if(ClassId.isKnight(subClass1Id) || ClassId.isKnight(subClass2Id) || ClassId.isKnight(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_10.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isSummoner(newSubClassId.getId()))
+			else if(ClassId.isSummoner(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
+					if(ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_11.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
+					if(ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_11.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
+					if(ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass3Id) || ClassId.isSummoner(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_11.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(mainClassId))
+					if(ClassId.isSummoner(subClass1Id) || ClassId.isSummoner(subClass2Id) || ClassId.isSummoner(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_11.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isHalfHealer(newSubClassId.getId()))
+			else if(ClassId.isHalfHealer(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(subClass3Id) || ClassId.isHalfHealer(mainClassId))
+					if(ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(subClass3Id)
+							|| ClassId.isHalfHealer(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_12.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(subClass3Id) || ClassId.isHalfHealer(mainClassId))
+					if(ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(subClass3Id) || ClassId.isHalfHealer(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_12.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass3Id) || ClassId.isHalfHealer(mainClassId))
+					if(ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass3Id) || ClassId.isHalfHealer(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_12.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(mainClassId))
+					if(ClassId.isHalfHealer(subClass1Id) || ClassId.isHalfHealer(subClass2Id) || ClassId.isHalfHealer(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_12.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isDance(newSubClassId.getId()))
+			else if(ClassId.isDance(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isDance(subClass1Id) || ClassId.isDance(subClass2Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
+					if(ClassId.isDance(subClass1Id) || ClassId.isDance(subClass2Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_13.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isDance(subClass2Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
+					if(ClassId.isDance(subClass2Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_13.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isDance(subClass1Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
+					if(ClassId.isDance(subClass1Id) || ClassId.isDance(subClass3Id) || ClassId.isDance(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_13.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isDance(subClass1Id) || ClassId.isDance(subClass2Id) || ClassId.isDance(mainClassId))
+					if(ClassId.isDance(subClass1Id) || ClassId.isDance(subClass2Id) || ClassId.isDance(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_13.htm", false);
 						return;
 					}
 				}
 			}
-			else if (ClassId.isWizard(newSubClassId.getId()))
+			else if(ClassId.isWizard(newSubClassId.getId()))
 			{
-				if (state == 0)
+				if(state == 0)
 				{
-					if (ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass2Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
+					if(ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass2Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_14.htm", false);
 						return;
 					}
 				}
-				if (state == 1)
+				if(state == 1)
 				{
-					if (ClassId.isWizard(subClass2Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
+					if(ClassId.isWizard(subClass2Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_14.htm", false);
 						return;
 					}
 				}
-				if (state == 2)
+				if(state == 2)
 				{
-					if (ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
+					if(ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass3Id) || ClassId.isWizard(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_14.htm", false);
 						return;
 					}
 				}
-				if (state == 3)
+				if(state == 3)
 				{
-					if (ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass2Id) || ClassId.isWizard(mainClassId))
+					if(ClassId.isWizard(subClass1Id) || ClassId.isWizard(subClass2Id) || ClassId.isWizard(mainClassId))
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_14.htm", false);
 						return;
@@ -298,13 +299,15 @@ public class VillageMasterSubClassBypasses
 			}
 
 			final int[] availableSubClasses = SubClassTable.getInstance().getAvailableSubClasses(player, player.getActiveClassId());
-			if (state == 0)
+			if(state == 0)
 			{
-				if (subClass1Id == -1 || (subClass1Id != -1 && subClass1Level >= Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS && subClass2Id == -1) || (subClass2Id != -1 && subClass2Level >= Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS && subClass3Id == -1))
+				if(subClass1Id == -1 || (subClass1Id != -1 && subClass1Level >= Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS && subClass2Id == -1)
+						|| (subClass2Id != -1 && subClass2Level >= Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS && subClass3Id == -1))
 				{
-					if (ArrayUtils.contains(availableSubClasses, newSubClassId.getId()) && subClass3Id == -1 && (player.getClassId().isOfLevel(ClassLevel.SECOND) || player.getClassId().isOfLevel(ClassLevel.THIRD)))
+					if(ArrayUtils.contains(availableSubClasses, newSubClassId.getId()) && subClass3Id == -1
+							&& (player.getClassId().isOfLevel(ClassLevel.SECOND) || player.getClassId().isOfLevel(ClassLevel.THIRD)))
 					{
-						if (!player.addSubClass(newSubClassId.getId(), true, 0, 0))
+						if(!player.addSubClass(newSubClassId.getId(), true, 0, 0))
 							npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_17.htm", false);
 						else
 							npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_06.htm", false);
@@ -315,30 +318,30 @@ public class VillageMasterSubClassBypasses
 				else
 					npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_04.htm", false);
 			}
-			else if (ArrayUtils.contains(availableSubClasses, newSubClassId.getId()))
+			else if(ArrayUtils.contains(availableSubClasses, newSubClassId.getId()))
 			{
 				int oldClassId = -1;
-				if (state == 1)
+				if(state == 1)
 				{
-					if (subClass1Level < 40)
+					if(subClass1Level < 40)
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_hef_19.htm", false);
 						return;
 					}
 					oldClassId = subClass1Id;
 				}
-				else if (state == 2)
+				else if(state == 2)
 				{
-					if (subClass2Level < 40)
+					if(subClass2Level < 40)
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_hef_19.htm", false);
 						return;
 					}
 					oldClassId = subClass2Id;
 				}
-				else if (state == 3)
+				else if(state == 3)
 				{
-					if (subClass3Level < 40)
+					if(subClass3Level < 40)
 					{
 						npc.showChatWindow(player, "villagemaster/subclass/master_lv3_hef_19.htm", false);
 						return;
@@ -346,7 +349,7 @@ public class VillageMasterSubClassBypasses
 					oldClassId = subClass3Id;
 				}
 
-				if (!player.modifySubClass(oldClassId, newSubClassId.getId(), false))
+				if(!player.modifySubClass(oldClassId, newSubClassId.getId(), false))
 					npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_18.htm", false);
 				else
 					npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_05.htm", false);
@@ -354,9 +357,9 @@ public class VillageMasterSubClassBypasses
 			else
 				npc.showChatWindow(player, "villagemaster/subclass/subclass_error_02.htm", false);
 		}
-		else if (ask == 11)
+		else if(ask == 11)
 		{
-			if (subClass1Id == -1)
+			if(subClass1Id == -1)
 			{
 				npc.showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_07.htm", false);
 			}
@@ -365,10 +368,10 @@ public class VillageMasterSubClassBypasses
 				state = 0;
 
 				HtmlMessage html = new HtmlMessage(npc, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_03.htm");
-				if (npc.isMyApprentice(mainClassId))
+				if(npc.isMyApprentice(mainClassId))
 				{
 					int stringId;
-					if (mainClassId > 87)
+					if(mainClassId > 87)
 					{
 						stringId = mainClassId + 1114000;
 					}
@@ -383,10 +386,10 @@ public class VillageMasterSubClassBypasses
 					state = state + 1;
 					html.replace("<?reply1?>", "");
 				}
-				if (subClass1Id != -1 && npc.isMyApprentice(subClass1Id))
+				if(subClass1Id != -1 && npc.isMyApprentice(subClass1Id))
 				{
 					int stringId;
-					if (subClass1Id > 87)
+					if(subClass1Id > 87)
 					{
 						stringId = subClass1Id + 1114000;
 					}
@@ -401,10 +404,10 @@ public class VillageMasterSubClassBypasses
 					state = state + 1;
 					html.replace("<?reply2?>", "");
 				}
-				if (subClass2Id != -1 && npc.isMyApprentice(subClass2Id))
+				if(subClass2Id != -1 && npc.isMyApprentice(subClass2Id))
 				{
 					int stringId;
-					if (subClass2Id > 87)
+					if(subClass2Id > 87)
 					{
 						stringId = subClass2Id + 1114000;
 					}
@@ -419,10 +422,10 @@ public class VillageMasterSubClassBypasses
 					state = state + 1;
 					html.replace("<?reply3?>", "");
 				}
-				if (subClass3Id != -1 && npc.isMyApprentice(subClass3Id))
+				if(subClass3Id != -1 && npc.isMyApprentice(subClass3Id))
 				{
 					int stringId;
-					if (subClass3Id > 87)
+					if(subClass3Id > 87)
 					{
 						stringId = subClass3Id + 1114000;
 					}
@@ -437,7 +440,7 @@ public class VillageMasterSubClassBypasses
 					state = state + 1;
 					html.replace("<?reply4?>", "");
 				}
-				if (state != 4)
+				if(state != 4)
 				{
 					player.sendPacket(html);
 				}
@@ -447,16 +450,16 @@ public class VillageMasterSubClassBypasses
 				}
 			}
 		}
-		else if (ask == 20)
+		else if(ask == 20)
 		{
 			HtmlMessage html = new HtmlMessage(npc, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_01a.htm");
 
 			int string1Id;
-			if (subClass1Id > 87)
+			if(subClass1Id > 87)
 			{
 				string1Id = subClass1Id + 1110970;
 			}
-			else if (subClass1Id != -1)
+			else if(subClass1Id != -1)
 			{
 				string1Id = subClass1Id + 1111000;
 			}
@@ -467,11 +470,11 @@ public class VillageMasterSubClassBypasses
 			html.replace("<?reply5?>", HtmlUtils.htmlNpcString(string1Id));
 
 			int string2Id;
-			if (subClass2Id > 87)
+			if(subClass2Id > 87)
 			{
 				string2Id = subClass2Id + 1111970;
 			}
-			else if (subClass2Id != -1)
+			else if(subClass2Id != -1)
 			{
 				string2Id = subClass2Id + 1112000;
 			}
@@ -482,11 +485,11 @@ public class VillageMasterSubClassBypasses
 			html.replace("<?reply6?>", HtmlUtils.htmlNpcString(string2Id));
 
 			int string3Id;
-			if (subClass3Id > 87)
+			if(subClass3Id > 87)
 			{
 				string3Id = subClass3Id + 1112970;
 			}
-			else if (subClass3Id != -1)
+			else if(subClass3Id != -1)
 			{
 				string3Id = subClass3Id + 1113000;
 			}

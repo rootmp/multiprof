@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
+
 import l2s.commons.network.IConnectionState;
 import l2s.commons.network.IIncomingPacket;
 import l2s.commons.network.IIncomingPackets;
@@ -21,7 +22,17 @@ import l2s.gameserver.network.l2.c2s.ability.RequestExResetPotentialSkill;
 import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdena;
 import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdenaCancel;
 import l2s.gameserver.network.l2.c2s.adenadistribution.RequestDivideAdenaStart;
-import l2s.gameserver.network.l2.c2s.adenlab.*;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabBossInfo;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabBossList;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabNormalPlay;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabNormalSlot;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabSpecialFix;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabSpecialPlay;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabSpecialProb;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabSpecialSlot;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabTranscendEnchant;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabTranscendProb;
+import l2s.gameserver.network.l2.c2s.adenlab.RequestExAdenlabUnlockBoss;
 import l2s.gameserver.network.l2.c2s.blessing.RequestExBlessOptionCancel;
 import l2s.gameserver.network.l2.c2s.blessing.RequestExBlessOptionEnchant;
 import l2s.gameserver.network.l2.c2s.blessing.RequestExBlessOptionPutItem;
@@ -94,7 +105,12 @@ import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeV3Info;
 import l2s.gameserver.network.l2.c2s.pledge.RequestExPledgeV3SetAnnounce;
 import l2s.gameserver.network.l2.c2s.privatestoresearch.RequestExPrivateStoreSearchList;
 import l2s.gameserver.network.l2.c2s.privatestoresearch.RequestExPrivateStoreSearchStatistics;
-import l2s.gameserver.network.l2.c2s.prot_507.*;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExBlessOptionProbList;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExChatBanEnd;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExChatBanStart;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExClassChange;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExMatchinginzoneFieldEnterUserInfo;
+import l2s.gameserver.network.l2.c2s.prot_507.RequestExRepairAllEquipment;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpBookShareRevengeList;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookKillerLocation;
 import l2s.gameserver.network.l2.c2s.pvpbook.RequestExPvpbookList;
@@ -115,8 +131,25 @@ import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomInfo;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomLockSlot;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomMake;
 import l2s.gameserver.network.l2.c2s.randomcraft.RequestExCraftRandomRefresh;
-import l2s.gameserver.network.l2.c2s.relics.*;
-import l2s.gameserver.network.l2.c2s.skill_enchant.*;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsActive;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsCloseUi;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsCombination;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsCombinationComplete;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsConfirmCombination;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsExchange;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsExchangeConfirm;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsIdSummon;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsOpenUi;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsSummon;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsSummonCloseUi;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsSummonList;
+import l2s.gameserver.network.l2.c2s.relics.RequestExRelicsUpgrade;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestEnchantSkillInfo;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExExtractSkillEnchant;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantCharge;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantConfirm;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestExSkillEnchantInfo;
+import l2s.gameserver.network.l2.c2s.skill_enchant.RequestReqEnchantSkill;
 import l2s.gameserver.network.l2.c2s.spExtract.RequestExSpExtractInfo;
 import l2s.gameserver.network.l2.c2s.spExtract.RequestExSpExtractItem;
 import l2s.gameserver.network.l2.c2s.spectating.RequestExUserWatcherAdd;
@@ -739,7 +772,7 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_VARIATION_CLOSE_UI(RequestExVariationCloseUi::new, ConnectionState.IN_GAME),
 	EX_APPLY_VARIATION_OPTION(RequestExApplyVariationOption::new, ConnectionState.IN_GAME),
 	EX_REQUEST_AUDIO_LOG_SAVE(null, ConnectionState.IN_GAME),
-	EX_BR_VERSION(RequestExBRVersion::new, ConnectionState.AUTHENTICATED, ConnectionState.CONNECTED, ConnectionState.JOINING_GAME,  ConnectionState.IN_GAME),
+	EX_BR_VERSION(RequestExBRVersion::new, ConnectionState.AUTHENTICATED, ConnectionState.CONNECTED, ConnectionState.JOINING_GAME, ConnectionState.IN_GAME),
 	EX_WRANKING_FESTIVAL_INFO(null, ConnectionState.IN_GAME),
 	EX_WRANKING_FESTIVAL_OPEN(null, ConnectionState.IN_GAME),
 	EX_WRANKING_FESTIVAL_BUY(null, ConnectionState.IN_GAME),
@@ -822,7 +855,7 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_SERVERWAR_GET_REWARD(null, ConnectionState.IN_GAME), //870
 	EX_RELICS_COMBINATION_COMPLETE(RequestExRelicsCombinationComplete::new, ConnectionState.IN_GAME), //871
 	EX_VIRTUALITEM_SYSTEM(null, ConnectionState.IN_GAME), //872
-	
+
 	EX_CROSS_EVENT_DATA(null, ConnectionState.IN_GAME), //874;
 	EX_CROSS_EVENT_INFO(null, ConnectionState.IN_GAME), //875;
 	EX_CROSS_EVENT_NORMAL_REWARD(null, ConnectionState.IN_GAME), //876;
@@ -838,12 +871,12 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_ADENLAB_SPECIAL_PLAY(RequestExAdenlabSpecialPlay::new, ConnectionState.JOINING_GAME, ConnectionState.IN_GAME), //885;
 	EX_ADENLAB_SPECIAL_FIX(RequestExAdenlabSpecialFix::new, ConnectionState.JOINING_GAME, ConnectionState.IN_GAME), //886;
 	EX_ADENLAB_TRANSCEND_ENCHANT(RequestExAdenlabTranscendEnchant::new, ConnectionState.JOINING_GAME, ConnectionState.IN_GAME), //887;
-	
+
 	EX_ADENLAB_TRANSCEND_PROB(RequestExAdenlabTranscendProb::new, ConnectionState.JOINING_GAME, ConnectionState.IN_GAME),
-	
+
 	EX_CHAT_BACKGROUND_SETTING(RequestExChatBackgroundSetting::new, ConnectionState.IN_GAME), //888;
 	EX_HOMUNCULUS_EVOLVE(null, ConnectionState.IN_GAME), //889;
-	
+
 	EX_EXTRACT_SKILL_ENCHANT(RequestExExtractSkillEnchant::new, ConnectionState.IN_GAME), //890;
 	EX_REQUEST_SKILL_ENCHANT_CONFIRM(RequestExSkillEnchantConfirm::new, ConnectionState.IN_GAME), //891;
 
@@ -859,7 +892,6 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_RELICS_SUMMON_LIST(RequestExRelicsSummonList::new, ConnectionState.IN_GAME),
 	EX_RELICS_CONFIRM_COMBINATION(RequestExRelicsConfirmCombination::new, ConnectionState.IN_GAME),
 
-	
 	EX_NEW_HENNA_POTEN_OPENSLOT_PROB_INFO(RequestExNewHennaPotenOpenslotProbInfo::new, ConnectionState.IN_GAME), //905;
 	EX_NEW_HENNA_POTEN_OPENSLOT(RequestExNewHennaPotenOpenslot::new, ConnectionState.IN_GAME), //906;
 
@@ -871,34 +903,33 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	EX_LOAD_PET_PREVIEW_BY_SID(RequestExLoadPetPreviewBySid::new, ConnectionState.IN_GAME),
 	EX_LOAD_PET_PREVIEW_BY_DBID(RequestExLoadPetPreviewByDbid::new, ConnectionState.IN_GAME),
 	EX_CHECK_CLIENT_INFO(RequestExCheckClientInfo::new, ConnectionState.IN_GAME),
-	
-  EX_MATCHINGINZONE_FIELD_ENTER_USER_INFO(RequestExMatchinginzoneFieldEnterUserInfo::new, ConnectionState.IN_GAME),
-  EX_RAID_AUCTION_BID(RequestExRaidAuctionBid::new, ConnectionState.IN_GAME),
-  EX_RAID_AUCTION_CANCEL_BID(RequestExRaidAuctionCancelBid::new, ConnectionState.IN_GAME),
-  EX_RAID_AUCTION_POST_LIST(RequestExRaidAuctionPostList::new, ConnectionState.IN_GAME),
-  EX_RAID_AUCTION_POST_RECEIVE(RequestExRaidAuctionPostReceive::new, ConnectionState.IN_GAME),
-  EX_RAID_AUCTION_POST_RECEIVE_ALL(RequestExRaidAuctionPostReceiveAll::new, ConnectionState.IN_GAME),
-  EX_REPAIR_ALL_EQUIPMENT(RequestExRepairAllEquipment::new, ConnectionState.IN_GAME),
-  EX_CLASS_CHANGE(RequestExClassChange::new, ConnectionState.IN_GAME),
-  EX_CHAT_BAN_START(RequestExChatBanStart::new, ConnectionState.IN_GAME),
-  EX_CHAT_BAN_END(RequestExChatBanEnd::new, ConnectionState.IN_GAME),
-  EX_BLESS_OPTION_PROB_LIST(RequestExBlessOptionProbList::new, ConnectionState.IN_GAME),
-	
-	
+
+	EX_MATCHINGINZONE_FIELD_ENTER_USER_INFO(RequestExMatchinginzoneFieldEnterUserInfo::new, ConnectionState.IN_GAME),
+	EX_RAID_AUCTION_BID(RequestExRaidAuctionBid::new, ConnectionState.IN_GAME),
+	EX_RAID_AUCTION_CANCEL_BID(RequestExRaidAuctionCancelBid::new, ConnectionState.IN_GAME),
+	EX_RAID_AUCTION_POST_LIST(RequestExRaidAuctionPostList::new, ConnectionState.IN_GAME),
+	EX_RAID_AUCTION_POST_RECEIVE(RequestExRaidAuctionPostReceive::new, ConnectionState.IN_GAME),
+	EX_RAID_AUCTION_POST_RECEIVE_ALL(RequestExRaidAuctionPostReceiveAll::new, ConnectionState.IN_GAME),
+	EX_REPAIR_ALL_EQUIPMENT(RequestExRepairAllEquipment::new, ConnectionState.IN_GAME),
+	EX_CLASS_CHANGE(RequestExClassChange::new, ConnectionState.IN_GAME),
+	EX_CHAT_BAN_START(RequestExChatBanStart::new, ConnectionState.IN_GAME),
+	EX_CHAT_BAN_END(RequestExChatBanEnd::new, ConnectionState.IN_GAME),
+	EX_BLESS_OPTION_PROB_LIST(RequestExBlessOptionProbList::new, ConnectionState.IN_GAME),
+
 	EX_MAX(null, ConnectionState.IN_GAME), //901;
-	
+
 	EX_BOOK_MARK_SLOT_INFO(78, 0, RequestBookMarkSlotInfo::new, ConnectionState.IN_GAME),
 	EX_SAVE_BOOK_MARK_SLOT(78, 1, RequestSaveBookMarkSlot::new, ConnectionState.IN_GAME),
 	EX_MODIFY_BOOK_MARK_SLOT(78, 2, RequestModifyBookMarkSlot::new, ConnectionState.IN_GAME),
 	EX_DELETE_BOOK_MARK_SLOT(78, 3, RequestDeleteBookMarkSlot::new, ConnectionState.IN_GAME),
 	EX_TELEPORT_BOOK_MARK(78, 4, RequestTeleportBookMark::new, ConnectionState.IN_GAME),
-	EX_CHANGE_BOOK_MARK_SLOT(78, 5, RequestChangeBookMarkSlot::new, ConnectionState.IN_GAME),	
+	EX_CHANGE_BOOK_MARK_SLOT(78, 5, RequestChangeBookMarkSlot::new, ConnectionState.IN_GAME),
 	;
 
 	public static final IncomingExPackets507[] PACKET_ARRAY;
 	public static final IncomingExPackets507[] PACKET_EX_ARRAY;
 	public static final IncomingExPackets507[] PACKET_BOOK_MARK_ARRAY;
-	
+
 	static
 	{
 		final short maxPacketId = (short) Arrays.stream(values()).mapToInt(IncomingExPackets507::getPacketId).max().orElse(0);
@@ -907,16 +938,20 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 		{
 			PACKET_ARRAY[incomingPacket.getPacketId()] = incomingPacket;
 		}
-		
-    List<IncomingExPackets507> customPacketsList = Arrays.stream(values()).filter(packet -> packet._id_ex > 0 && packet._id == 401).toList();
-    final int maxPacketExId = customPacketsList.stream().mapToInt(packet -> packet._id_ex).max().orElse(0);
-    PACKET_EX_ARRAY = new IncomingExPackets507[maxPacketExId + 1];
-    customPacketsList.forEach(incomingPacket -> {PACKET_EX_ARRAY[incomingPacket._id_ex] = incomingPacket;});
-    
-    List<IncomingExPackets507> BookMarkPacketsList = Arrays.stream(values()).filter(packet -> packet._id_ex >= 0 && packet._id == 78).toList();
-    final int maxPacketBookMarkId = BookMarkPacketsList.stream().mapToInt(packet -> packet._id_ex).max().orElse(0);
-    PACKET_BOOK_MARK_ARRAY = new IncomingExPackets507[maxPacketBookMarkId + 1];
-    BookMarkPacketsList.forEach(incomingPacket -> {PACKET_BOOK_MARK_ARRAY[incomingPacket._id_ex] = incomingPacket;});
+
+		List<IncomingExPackets507> customPacketsList = Arrays.stream(values()).filter(packet -> packet._id_ex > 0 && packet._id == 401).toList();
+		final int maxPacketExId = customPacketsList.stream().mapToInt(packet -> packet._id_ex).max().orElse(0);
+		PACKET_EX_ARRAY = new IncomingExPackets507[maxPacketExId + 1];
+		customPacketsList.forEach(incomingPacket -> {
+			PACKET_EX_ARRAY[incomingPacket._id_ex] = incomingPacket;
+		});
+
+		List<IncomingExPackets507> BookMarkPacketsList = Arrays.stream(values()).filter(packet -> packet._id_ex >= 0 && packet._id == 78).toList();
+		final int maxPacketBookMarkId = BookMarkPacketsList.stream().mapToInt(packet -> packet._id_ex).max().orElse(0);
+		PACKET_BOOK_MARK_ARRAY = new IncomingExPackets507[maxPacketBookMarkId + 1];
+		BookMarkPacketsList.forEach(incomingPacket -> {
+			PACKET_BOOK_MARK_ARRAY[incomingPacket._id_ex] = incomingPacket;
+		});
 	}
 
 	private final int _id;
@@ -924,7 +959,7 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	private Set<IConnectionState> _connectionStates;
 	private int _id_ex;
 	private ConnectionState[] _connectionStates2;
-	
+
 	IncomingExPackets507(Supplier<IIncomingPacket<GameClient>> incomingPacketFactory, ConnectionState... connectionStates)
 	{
 		this(-1, -1, incomingPacketFactory, connectionStates);
@@ -933,13 +968,13 @@ public enum IncomingExPackets507 implements IIncomingPackets<GameClient>
 	IncomingExPackets507(int id, int id_ex, Supplier<IIncomingPacket<GameClient>> incomingPacketFactory, ConnectionState... connectionStates)
 	{
 		_id = id > 0 ? id : ordinal();
-		if(id_ex>0)
-			id_ex=id_ex--;
-		_id_ex =id_ex;
+		if(id_ex > 0)
+			id_ex = id_ex--;
+		_id_ex = id_ex;
 		// packetId is an unsigned short
 		if(id > 0xFFFF)
-		 throw new IllegalArgumentException("packetId must not be bigger than 0xFFFF"); 
-		
+			throw new IllegalArgumentException("packetId must not be bigger than 0xFFFF");
+
 		_incomingPacketFactory = incomingPacketFactory != null ? incomingPacketFactory : () -> null;
 		_connectionStates2 = connectionStates;
 		_connectionStates = Set.of(connectionStates);

@@ -8,14 +8,14 @@ public class NewHennaPotenCompose implements IClientOutgoingPacket
 	private final int _resultHennaId;
 	private final int _resultItemId;
 	private final boolean _success;
-	
+
 	public NewHennaPotenCompose(int resultHennaId, int resultItemId, boolean success)
 	{
 		_resultHennaId = resultHennaId;
 		_resultItemId = resultItemId;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

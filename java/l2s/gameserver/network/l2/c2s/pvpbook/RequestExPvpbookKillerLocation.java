@@ -24,31 +24,30 @@ public class RequestExPvpbookKillerLocation implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
-
 
 		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 1);
-		if (pvpbookInfo == null)
+		if(pvpbookInfo == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (pvpbookInfo.getLocationShowCount() <= 0)
+		if(pvpbookInfo.getLocationShowCount() <= 0)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		
+
 		Player killerPlayer = pvpbookInfo.getKiller();
-		if (killerPlayer == null || !killerPlayer.isOnline())
+		if(killerPlayer == null || !killerPlayer.isOnline())
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_IS_NO_ONLINE_YOU_CANT_USE_THIS_FUNCTION);
 			return;
 		}
 
-		if (!killerPlayer.getReflection().isMain())
+		if(!killerPlayer.getReflection().isMain())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION);
 			return;

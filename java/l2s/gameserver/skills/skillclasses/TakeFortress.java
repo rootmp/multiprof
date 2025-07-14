@@ -39,49 +39,47 @@ public class TakeFortress extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
-		{
-			return false;
-		}
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		{ return false; }
 
-		if ((activeChar == null) || !activeChar.isPlayer())
-		{
-			return false;
-		}
+		if((activeChar == null) || !activeChar.isPlayer())
+		{ return false; }
 
 		GameObject flagPole = activeChar.getTarget();
-		if (!(flagPole instanceof StaticObjectInstance) || (((StaticObjectInstance) flagPole).getType() != 3))
+		if(!(flagPole instanceof StaticObjectInstance) || (((StaticObjectInstance) flagPole).getType() != 3))
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_IS_NOT_A_FLAGPOLE_SO_A_FLAG_CANNOT_BE_DISPLAYED);
 			return false;
 		}
 
-		if (first)
+		if(first)
 		{
 			List<Creature> around = World.getAroundCharacters(flagPole, getAffectRange() * 2, 100);
-			for (Creature ch : around)
+			for(Creature ch : around)
 			{
-				if (ch.getSkillCast(SkillCastingType.NORMAL).isCastingNow() && ch.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate().equals(this)) // проверяел
-																																									// ли
-																																									// ктото
-																																									// возле
-																																									// нас
-																																									// кастует
-																																									// накойже
-																																									// скил
+				if(ch.getSkillCast(SkillCastingType.NORMAL).isCastingNow()
+						&& ch.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate().equals(this)) // проверяел
+				// ли
+				// ктото
+				// возле
+				// нас
+				// кастует
+				// накойже
+				// скил
 				{
 					activeChar.sendPacket(SystemMsg.A_FLAG_IS_ALREADY_BEING_DISPLAYED_ANOTHER_FLAG_CANNOT_BE_DISPLAYED);
 					return false;
 				}
 
-				if (ch.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow() && ch.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate().equals(this)) // проверяел
-																																													// ли
-																																													// ктото
-																																													// возле
-																																													// нас
-																																													// кастует
-																																													// накойже
-																																													// скил
+				if(ch.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow()
+						&& ch.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate().equals(this)) // проверяел
+				// ли
+				// ктото
+				// возле
+				// нас
+				// кастует
+				// накойже
+				// скил
 				{
 					activeChar.sendPacket(SystemMsg.A_FLAG_IS_ALREADY_BEING_DISPLAYED_ANOTHER_FLAG_CANNOT_BE_DISPLAYED);
 					return false;
@@ -90,13 +88,13 @@ public class TakeFortress extends Skill
 		}
 
 		Player player = (Player) activeChar;
-		if (player.getClan() == null)
+		if(player.getClan() == null)
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if (player.getClan().getLevel() < 4)
+		if(player.getClan().getLevel() < 4)
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
@@ -110,7 +108,7 @@ public class TakeFortress extends Skill
 		// return false;
 		// }
 
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
@@ -118,32 +116,30 @@ public class TakeFortress extends Skill
 
 		FortressSiegeEvent siegeEvent = null;
 		List<Fortress> forts = ResidenceHolder.getInstance().getResidenceList(Fortress.class);
-		for (Fortress fortress : forts)
+		for(Fortress fortress : forts)
 		{
-			if ((fortress.getId() == 117) && fortress.getSiegeEvent().isInProgress())
+			if((fortress.getId() == 117) && fortress.getSiegeEvent().isInProgress())
 			{
 				siegeEvent = fortress.getSiegeEvent();
-				if (siegeEvent == null)
-				{
-					return false;
-				}
+				if(siegeEvent == null)
+				{ return false; }
 			}
 		}
 
 		ItemAttachment attach = player.getActiveWeaponFlagAttachment();
-		if (!(attach instanceof FortressCombatFlagObject) || (((FortressCombatFlagObject) attach).getEvent() != siegeEvent))
+		if(!(attach instanceof FortressCombatFlagObject) || (((FortressCombatFlagObject) attach).getEvent() != siegeEvent))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if ((getCastRange() > 0) && !player.isInRangeZ(target, getCastRange()))
+		if((getCastRange() > 0) && !player.isInRangeZ(target, getCastRange()))
 		{
 			player.sendPacket(SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE);
 			return false;
 		}
 
-		if (first)
+		if(first)
 		{
 			siegeEvent.broadcastTo(new SystemMessagePacket(SystemMsg.S1_CLAN_IS_TRYING_TO_DISPLAY_A_FLAG).addString(player.getClan().getName()), SiegeEvent.DEFENDERS);
 		}
@@ -155,10 +151,8 @@ public class TakeFortress extends Skill
 	public void onFinishCast(Creature aimingTarget, Creature activeChar, Set<Creature> targets)
 	{
 		GameObject flagPole = activeChar.getTarget();
-		if (!(flagPole instanceof StaticObjectInstance) || (((StaticObjectInstance) flagPole).getType() != 3))
-		{
-			return;
-		}
+		if(!(flagPole instanceof StaticObjectInstance) || (((StaticObjectInstance) flagPole).getType() != 3))
+		{ return; }
 
 		// Player player = (Player) activeChar;
 		// FortressSiegeEvent siegeEvent = player.getEvent(FortressSiegeEvent.class);
@@ -167,23 +161,19 @@ public class TakeFortress extends Skill
 
 		FortressSiegeEvent siegeEvent = null;
 		List<Fortress> forts = ResidenceHolder.getInstance().getResidenceList(Fortress.class);
-		for (Fortress fortress : forts)
+		for(Fortress fortress : forts)
 		{
-			if ((fortress.getId() == 117) && fortress.getSiegeEvent().isInProgress())
+			if((fortress.getId() == 117) && fortress.getSiegeEvent().isInProgress())
 			{
 				siegeEvent = fortress.getSiegeEvent();
-				if (siegeEvent == null)
-				{
-					return;
-				}
+				if(siegeEvent == null)
+				{ return; }
 			}
 		}
 
 		StaticObjectObject object = siegeEvent.getFirstObject(FortressSiegeEvent.FLAG_POLE);
-		if (((StaticObjectInstance) flagPole).getUId() != object.getUId())
-		{
-			return;
-		}
+		if(((StaticObjectInstance) flagPole).getUId() != object.getUId())
+		{ return; }
 
 		siegeEvent.processStep(activeChar.getPlayer().getClan());
 		sendMail(activeChar.getPlayer());
@@ -201,7 +191,7 @@ public class TakeFortress extends Skill
 		mail.setBody("You successfully take fortress");
 
 		ItemInstance item = ItemFunctions.createItem(Config.FORTRESS_REWARD_ID);
-		if (item != null)
+		if(item != null)
 		{
 			item.setLocation(ItemLocation.MAIL);
 			item.setCount(Config.FORTRESS_REWARD_COUNT);
@@ -213,7 +203,7 @@ public class TakeFortress extends Skill
 			mail.setExpireTime((720 * 3600) + (int) (System.currentTimeMillis() / 1000L));
 			mail.save();
 
-			if (player != null)
+			if(player != null)
 			{
 				player.sendPacket(ExNoticePostArrived.STATIC_TRUE);
 				player.sendPacket(new ExUnReadMailCount(player));

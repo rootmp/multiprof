@@ -22,7 +22,7 @@ public class ExMpccPartymasterList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_members.size());
-		for (String t : _members)
+		for(String t : _members)
 		{
 			packetWriter.writeS(t);
 		}

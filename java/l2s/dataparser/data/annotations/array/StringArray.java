@@ -13,8 +13,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface StringArray
-{
+public @interface StringArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -37,7 +36,9 @@ public @interface StringArray
 	 *
 	 * @return
 	 */
-	String[] bounds() default { "\\{", "}" };
+	String[] bounds() default {
+			"\\{", "}"
+	};
 
 	/**
 	 * @return Строка - разделитель для элементов массива

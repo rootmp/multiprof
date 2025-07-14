@@ -28,10 +28,10 @@ public class ConditionPlayerState extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		switch (_check)
+		switch(_check)
 		{
 			case RESTING:
-				if (env.character.isPlayer())
+				if(env.character.isPlayer())
 					return ((Player) env.character).isSitting() == _required;
 				return !_required;
 			case MOVING:
@@ -39,15 +39,15 @@ public class ConditionPlayerState extends Condition
 			case RUNNING:
 				return (env.character.getMovement().isMoving() && env.character.isRunning()) == _required;
 			case STANDING:
-				if (env.character.isPlayer())
+				if(env.character.isPlayer())
 					return ((Player) env.character).isSitting() != _required && env.character.getMovement().isMoving() != _required;
 				return env.character.getMovement().isMoving() != _required;
 			case FLYING:
-				if (env.character.isPlayer())
+				if(env.character.isPlayer())
 					return env.character.isFlying() == _required;
 				return !_required;
 			case FLYING_TRANSFORM:
-				if (env.character.isPlayer())
+				if(env.character.isPlayer())
 					return ((Player) env.character).isInFlyingTransform() == _required;
 				return !_required;
 		}

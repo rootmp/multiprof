@@ -16,8 +16,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EnumArray
-{
+public @interface EnumArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -39,7 +38,8 @@ public @interface EnumArray
 	 * @return Строка - разделитель для элементов массива
 	 */
 	String splitter() default ";";
-	
+
 	char[] replaceChars() default {};
+
 	String customRegex() default "";
 }

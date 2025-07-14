@@ -1,9 +1,8 @@
 package l2s.gameserver.data.xml.holder;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.player.ClassData;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux

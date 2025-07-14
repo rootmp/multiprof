@@ -27,7 +27,7 @@ public class NpcUtils
 	public static <T extends NpcInstance> T newInstance(int npcId)
 	{
 		NpcTemplate template = NpcHolder.getInstance().getTemplate(npcId);
-		if (template == null)
+		if(template == null)
 			throw new NullPointerException("Npc template id : " + npcId + " not found!");
 
 		return (T) template.getNewInstance();
@@ -36,7 +36,8 @@ public class NpcUtils
 	public static NpcInstance canPassPacket(Player player, IClientIncomingPacket packet, Object... arg)
 	{
 		final NpcInstance npcInstance = player.getLastNpc();
-		return (npcInstance != null && player.checkInteractionDistance(npcInstance) && npcInstance.canPassPacket(player, packet.getClass(), arg)) ? npcInstance : null;
+		return (npcInstance != null && player.checkInteractionDistance(npcInstance)
+				&& npcInstance.canPassPacket(player, packet.getClass(), arg)) ? npcInstance : null;
 	}
 
 	public static NpcInstance createNpc(int npcId)
@@ -48,7 +49,7 @@ public class NpcUtils
 	{
 		NpcInstance npc = newInstance(npcId);
 		npc.setCurrentHpMp(npc.getMaxHp(), npc.getMaxMp(), true);
-		if (title != null)
+		if(title != null)
 			npc.setTitle(title);
 
 		return npc;
@@ -92,7 +93,7 @@ public class NpcUtils
 		npc.setReflection(reflection);
 		npc.spawnMe(npc.getSpawnedLoc());
 
-		if (despawnTime > 0)
+		if(despawnTime > 0)
 			npc.startDeleteTask(despawnTime);
 	}
 
@@ -144,7 +145,7 @@ public class NpcUtils
 	public static NpcInstance spawnSingle(int npcId, SpawnRange spawnRange, Reflection reflection, long despawnTime, String title)
 	{
 		NpcInstance npc = createNpc(npcId, title);
-		if (npc == null)
+		if(npc == null)
 			return null;
 
 		spawnNpc(npc, spawnRange, reflection, despawnTime);
@@ -154,7 +155,7 @@ public class NpcUtils
 	public static WalkerRoute makeWalkerRoute(Location[] path, boolean running, WalkerRouteType type)
 	{
 		WalkerRoute walkerRoute = new WalkerRoute(IdFactory.getInstance().getNextId(), type);
-		for (Location loc : path)
+		for(Location loc : path)
 			walkerRoute.addPoint(new WalkerRoutePoint(loc, new NpcString[0], -1, 0, running, false));
 		return walkerRoute;
 	}

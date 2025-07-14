@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c.collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -22,7 +22,7 @@ public class ExCollectionFavoriteList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_collectionFavorites.length);
-		for (int i = 0; i < _collectionFavorites.length; i++)
+		for(int i = 0; i < _collectionFavorites.length; i++)
 		{
 			packetWriter.writeH(_collectionFavorites[i]); // collection id
 			packetWriter.writeD(0); // expiration time?

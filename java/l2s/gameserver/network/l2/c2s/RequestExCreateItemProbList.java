@@ -25,7 +25,7 @@ public class RequestExCreateItemProbList implements IClientIncomingPacket
 		if(player == null)
 			return;
 		CapsuleData _capsule = CapsuleHolder.getInstance().getCapsule(nClassID);
-		if(_capsule!=null)
+		if(_capsule != null)
 			player.sendPacket(new ExCreateItemProbList(_capsule));
 	}
 

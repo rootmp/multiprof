@@ -46,10 +46,10 @@ public class CastleDamageZoneDAO
 			rset = statement.executeQuery();
 
 			set = new ArrayList<String>();
-			while (rset.next())
+			while(rset.next())
 				set.add(rset.getString("zone"));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDamageZoneDAO:load(Residence): " + e, e);
 		}
@@ -73,7 +73,7 @@ public class CastleDamageZoneDAO
 			statement.setString(2, name);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDamageZoneDAO:insert(Residence, String): " + e, e);
 		}
@@ -94,7 +94,7 @@ public class CastleDamageZoneDAO
 			statement.setInt(1, residence.getId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDamageZoneDAO:delete(Residence): " + e, e);
 		}

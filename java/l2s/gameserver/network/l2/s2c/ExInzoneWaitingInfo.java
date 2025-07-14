@@ -21,16 +21,16 @@ public class ExInzoneWaitingInfo implements IClientOutgoingPacket
 		_openWindow = openWindow;
 		_instanceTimes = new TIntIntHashMap();
 
-		if (player.getActiveReflection() != null)
+		if(player.getActiveReflection() != null)
 		{
 			_currentInzoneID = player.getActiveReflection().getInstancedZoneId();
 		}
 
 		int limit;
-		for (int i : player.getInstanceReuses().keySet())
+		for(int i : player.getInstanceReuses().keySet())
 		{
 			limit = InstantZoneHolder.getInstance().getMinutesToNextEntrance(i, player);
-			if (limit > 0)
+			if(limit > 0)
 			{
 				_instanceTimes.put(i, limit * 60);
 			}
@@ -45,7 +45,7 @@ public class ExInzoneWaitingInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_instanceTimes.size());
 
 		TIntIntIterator iterator = _instanceTimes.iterator();
-		while (iterator.hasNext())
+		while(iterator.hasNext())
 		{
 			iterator.advance();
 			packetWriter.writeD(iterator.key());

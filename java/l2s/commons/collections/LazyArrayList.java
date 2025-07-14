@@ -82,7 +82,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 		{
 			return (LazyArrayList<E>) POOL.borrowObject();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -102,7 +102,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 		{
 			POOL.returnObject(obj);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -123,8 +123,8 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	 */
 	public LazyArrayList(int initialCapacity)
 	{
-		if (initialCapacity < H)
-			while (capacity < initialCapacity)
+		if(initialCapacity < H)
+			while(capacity < initialCapacity)
 				capacity <<= 1;
 		else
 			capacity = initialCapacity;
@@ -207,7 +207,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	{
 		rangeCheck(index);
 
-		if (c == null || c.isEmpty())
+		if(c == null || c.isEmpty())
 			return false;
 
 		Object[] a = c.toArray();
@@ -215,7 +215,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 		ensureCapacity(size + numNew);
 
 		int numMoved = size - index;
-		if (numMoved > 0)
+		if(numMoved > 0)
 			System.arraycopy(elementData, index, elementData, index + numNew, numMoved);
 		System.arraycopy(a, 0, elementData, index, numNew);
 		size += numNew;
@@ -231,28 +231,28 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	 */
 	protected void ensureCapacity(int newSize)
 	{
-		if (newSize > capacity)
+		if(newSize > capacity)
 		{
-			if (newSize < H)
-				while (capacity < newSize)
+			if(newSize < H)
+				while(capacity < newSize)
 					capacity <<= 1;
 			else
-				while (capacity < newSize)
+				while(capacity < newSize)
 					capacity = capacity * 3 / 2;
 
 			Object[] elementDataResized = new Object[capacity];
-			if (elementData != null)
+			if(elementData != null)
 				System.arraycopy(elementData, 0, elementDataResized, 0, size);
 			elementData = elementDataResized;
 		}
 		else // Инициализация массива
-		if (elementData == null)
+		if(elementData == null)
 			elementData = new Object[capacity];
 	}
 
 	protected void rangeCheck(int index)
 	{
-		if (index < 0 || index >= size)
+		if(index < 0 || index >= size)
 			throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
 	}
 
@@ -291,18 +291,18 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean remove(Object o)
 	{
-		if (size == 0)
+		if(size == 0)
 			return false;
 
 		int index = -1;
-		for (int i = 0; i < size; i++)
-			if (elementData[i] == o)
+		for(int i = 0; i < size; i++)
+			if(elementData[i] == o)
 			{
 				index = i;
 				break;
 			}
 
-		if (index == -1)
+		if(index == -1)
 			return false;
 
 		size--;
@@ -325,11 +325,11 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean contains(Object o)
 	{
-		if (size == 0)
+		if(size == 0)
 			return false;
 
-		for (int i = 0; i < size; i++)
-			if (elementData[i] == o)
+		for(int i = 0; i < size; i++)
+			if(elementData[i] == o)
 				return true;
 
 		return false;
@@ -347,12 +347,12 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public int indexOf(Object o)
 	{
-		if (size == 0)
+		if(size == 0)
 			return -1;
 
 		int index = -1;
-		for (int i = 0; i < size; i++)
-			if (elementData[i] == o)
+		for(int i = 0; i < size; i++)
+			if(elementData[i] == o)
 			{
 				index = i;
 				break;
@@ -373,12 +373,12 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public int lastIndexOf(Object o)
 	{
-		if (size == 0)
+		if(size == 0)
 			return -1;
 
 		int index = -1;
-		for (int i = 0; i < size; i++)
-			if (elementData[i] == o)
+		for(int i = 0; i < size; i++)
+			if(elementData[i] == o)
 				index = i;
 
 		return index;
@@ -414,7 +414,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	public Object clone()
 	{
 		LazyArrayList<E> clone = new LazyArrayList<E>();
-		if (size > 0)
+		if(size > 0)
 		{
 			clone.capacity = capacity;
 			clone.elementData = new Object[elementData.length];
@@ -429,10 +429,10 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public void clear()
 	{
-		if (size == 0)
+		if(size == 0)
 			return;
 
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 			elementData[i] = null;
 
 		size = 0;
@@ -481,7 +481,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean addAll(Collection<? extends E> c)
 	{
-		if (c == null || c.isEmpty())
+		if(c == null || c.isEmpty())
 			return false;
 		Object[] a = c.toArray();
 		int numNew = a.length;
@@ -502,13 +502,13 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean containsAll(Collection<?> c)
 	{
-		if (c == null)
+		if(c == null)
 			return false;
-		if (c.isEmpty())
+		if(c.isEmpty())
 			return true;
 		Iterator<?> e = c.iterator();
-		while (e.hasNext())
-			if (!contains(e.next()))
+		while(e.hasNext())
+			if(!contains(e.next()))
 				return false;
 		return true;
 	}
@@ -525,12 +525,12 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean retainAll(Collection<?> c)
 	{
-		if (c == null)
+		if(c == null)
 			return false;
 		boolean modified = false;
 		Iterator<E> e = iterator();
-		while (e.hasNext())
-			if (!c.contains(e.next()))
+		while(e.hasNext())
+			if(!c.contains(e.next()))
 			{
 				e.remove();
 				modified = true;
@@ -549,12 +549,12 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public boolean removeAll(Collection<?> c)
 	{
-		if (c == null || c.isEmpty())
+		if(c == null || c.isEmpty())
 			return false;
 		boolean modified = false;
 		Iterator<?> e = iterator();
-		while (e.hasNext())
-			if (c.contains(e.next()))
+		while(e.hasNext())
+			if(c.contains(e.next()))
 			{
 				e.remove();
 				modified = true;
@@ -566,7 +566,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	public Object[] toArray()
 	{
 		Object[] r = new Object[size];
-		if (size > 0)
+		if(size > 0)
 			System.arraycopy(elementData, 0, r, 0, size);
 		return r;
 	}
@@ -575,9 +575,9 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	public <T> T[] toArray(T[] a)
 	{
 		T[] r = a.length >= size ? a : (T[]) java.lang.reflect.Array.newInstance(a.getClass().getComponentType(), size);
-		if (size > 0)
+		if(size > 0)
 			System.arraycopy(elementData, 0, r, 0, size);
-		if (r.length > size)
+		if(r.length > size)
 			r[size] = null;
 		return r;
 	}
@@ -622,10 +622,10 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 		@Override
 		public void remove()
 		{
-			if (lastRet == -1)
+			if(lastRet == -1)
 				throw new IllegalStateException();
 			LazyArrayList.this.remove(lastRet);
-			if (lastRet < cursor)
+			if(lastRet < cursor)
 				cursor--;
 			lastRet = -1;
 		}
@@ -668,7 +668,7 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 		@Override
 		public void set(E e)
 		{
-			if (lastRet == -1)
+			if(lastRet == -1)
 				throw new IllegalStateException();
 			LazyArrayList.this.set(lastRet, e);
 		}
@@ -684,17 +684,17 @@ public class LazyArrayList<E> implements List<E>, RandomAccess, Cloneable
 	@Override
 	public String toString()
 	{
-		if (size == 0)
+		if(size == 0)
 			return "[]";
 
 		StringBuilder sb = new StringBuilder();
 		sb.append('[');
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			Object e = elementData[i];
 			sb.append(e == this ? "this" : e);
 
-			if (i == size - 1)
+			if(i == size - 1)
 				sb.append(']');
 			else
 				sb.append(", ");

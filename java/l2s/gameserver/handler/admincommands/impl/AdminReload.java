@@ -64,15 +64,14 @@ public class AdminReload implements IAdminCommandHandler
 	{
 		final Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanReload)
+		if(!activeChar.getPlayerAccess().CanReload)
 			return false;
 
-		activeChar.ask(new ConfirmDlgPacket(SystemMsg.S1, 0).addString(activeChar.isLangRus() ? "Перезагрузка компонентов сервера может привести к непредсказуемым последствиям! Продолжить?" : "Rebooting server components can lead to unpredictable consequences! Continue?"), new OnAnswerListener()
-		{
+		activeChar.ask(new ConfirmDlgPacket(SystemMsg.S1, 0).addString(activeChar.isLangRus() ? "Перезагрузка компонентов сервера может привести к непредсказуемым последствиям! Продолжить?" : "Rebooting server components can lead to unpredictable consequences! Continue?"), new OnAnswerListener(){
 			@Override
 			public void sayYes()
 			{
-				switch (command)
+				switch(command)
 				{
 					case admin_reload_config:
 					{
@@ -81,7 +80,7 @@ public class AdminReload implements IAdminCommandHandler
 							Config.load();
 							HtmCache.getInstance().reload();
 						}
-						catch (Exception e)
+						catch(Exception e)
 						{
 							activeChar.sendMessage("Error: " + e.getMessage() + "!");
 							return;
@@ -91,14 +90,14 @@ public class AdminReload implements IAdminCommandHandler
 					}
 					case admin_reload_qs:
 					{
-						if (fullString.endsWith("all"))
-							for (Player p : GameObjectsStorage.getPlayers(false, false))
+						if(fullString.endsWith("all"))
+							for(Player p : GameObjectsStorage.getPlayers(false, false))
 								reloadQuestStates(p);
 						else
 						{
 							GameObject t = activeChar.getTarget();
 
-							if (t != null && t.isPlayer())
+							if(t != null && t.isPlayer())
 							{
 								Player p = (Player) t;
 								reloadQuestStates(p);
@@ -161,7 +160,7 @@ public class AdminReload implements IAdminCommandHandler
 			}
 		});
 
-		switch (command)
+		switch(command)
 		{
 			case admin_reload:
 				break;
@@ -176,15 +175,15 @@ public class AdminReload implements IAdminCommandHandler
 				try
 				{
 					Config.loadGMAccess();
-					for (Player player : GameObjectsStorage.getPlayers(false, false))
+					for(Player player : GameObjectsStorage.getPlayers(false, false))
 					{
-						if (!Config.EVERYBODY_HAS_ADMIN_RIGHTS)
+						if(!Config.EVERYBODY_HAS_ADMIN_RIGHTS)
 							player.setPlayerAccess(Config.gmlist.get(player.getObjectId()));
 						else
 							player.setPlayerAccess(Config.gmlist.get(0));
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					return false;
 				}
@@ -243,7 +242,7 @@ public class AdminReload implements IAdminCommandHandler
 
 	private void reloadQuestStates(Player p)
 	{
-		for (QuestState qs : p.getAllQuestsStates())
+		for(QuestState qs : p.getAllQuestsStates())
 			p.removeQuestState(qs.getQuest());
 		Quest.restoreQuestStates(p);
 	}

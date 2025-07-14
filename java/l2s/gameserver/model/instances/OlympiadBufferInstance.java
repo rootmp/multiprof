@@ -3,6 +3,7 @@ package l2s.gameserver.model.instances;
 import java.util.HashSet;
 import java.util.Set;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.SkillHolder;
@@ -14,8 +15,6 @@ import l2s.gameserver.network.l2.s2c.MagicSkillUse;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.npc.NpcTemplate;
-
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author Bonux
@@ -32,10 +31,10 @@ public class OlympiadBufferInstance extends NpcInstance
 	@Override
 	public void onMenuSelect(Player player, int ask, long reply, int state)
 	{
-		if (ask == -301)
+		if(ask == -301)
 		{
 			int buffId = (int) (reply) - 1;
-			if (buffId < 0 || buffId >= Olympiad.BUFFS_LIST.length)
+			if(buffId < 0 || buffId >= Olympiad.BUFFS_LIST.length)
 				return;
 
 			int[] buff = Olympiad.BUFFS_LIST[buffId];
@@ -45,7 +44,7 @@ public class OlympiadBufferInstance extends NpcInstance
 			Skill skill = SkillHolder.getInstance().getSkill(id, lvl);
 			Set<Creature> targets = new HashSet<Creature>();
 			targets.add(player);
-			if (!skill.isNotBroadcastable())
+			if(!skill.isNotBroadcastable())
 				broadcastPacket(new MagicSkillUse(this, player, id, lvl, 0, 0));
 			callSkill(player, SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill), targets, true, false);
 			buffs.add(id);
@@ -65,11 +64,11 @@ public class OlympiadBufferInstance extends NpcInstance
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... replace)
 	{
-		if (val == 0)
+		if(val == 0)
 		{
-			if (buffs.size() > 4)
+			if(buffs.size() > 4)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_master003.htm", firstTalk, replace);
-			else if (buffs.size() > 0)
+			else if(buffs.size() > 0)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_master002.htm", firstTalk, replace);
 			else
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_master001.htm", firstTalk, replace);
@@ -81,7 +80,7 @@ public class OlympiadBufferInstance extends NpcInstance
 	@Override
 	public boolean isAttackable(Creature attacker)
 	{
-		if (Config.OLYMPIAD_CANATTACK_BUFFER)
+		if(Config.OLYMPIAD_CANATTACK_BUFFER)
 			return true;
 
 		return false;

@@ -107,7 +107,7 @@ public class Zone extends EventOwner
 		public void stop()
 		{
 			active = false;
-			if (future != null)
+			if(future != null)
 			{
 				future.cancel(false);
 				future = null;
@@ -116,14 +116,10 @@ public class Zone extends EventOwner
 
 		public void next()
 		{
-			if (!active)
-			{
-				return;
-			}
-			if ((getTemplate().getUnitTick() == 0) && (getTemplate().getRandomTick() == 0))
-			{
-				return;
-			}
+			if(!active)
+			{ return; }
+			if((getTemplate().getUnitTick() == 0) && (getTemplate().getRandomTick() == 0))
+			{ return; }
 			future = EffectTaskManager.getInstance().schedule(this, (getTemplate().getUnitTick() + Rnd.get(0, getTemplate().getRandomTick())) * 1000L);
 		}
 	}
@@ -141,23 +137,17 @@ public class Zone extends EventOwner
 		@Override
 		public void run()
 		{
-			if (!isActive())
-			{
-				return;
-			}
+			if(!isActive())
+			{ return; }
 
-			if (!checkTarget(cha))
-			{
-				return;
-			}
+			if(!checkTarget(cha))
+			{ return; }
 
 			Skill skill = getZoneSkill();
-			if (skill == null)
-			{
-				return;
-			}
+			if(skill == null)
+			{ return; }
 
-			if (Rnd.chance(getTemplate().getSkillProb()) && !cha.isDead())
+			if(Rnd.chance(getTemplate().getSkillProb()) && !cha.isDead())
 			{
 				skill.getEffects(cha, cha);
 			}
@@ -179,38 +169,32 @@ public class Zone extends EventOwner
 		@Override
 		public void run()
 		{
-			if (!isActive())
-			{
-				return;
-			}
+			if(!isActive())
+			{ return; }
 
-			if (!checkTarget(cha))
-			{
-				return;
-			}
+			if(!checkTarget(cha))
+			{ return; }
 
 			int hp = getDamageOnHP();
 			int mp = getDamageOnMP();
 			int message = getDamageMessageId();
 
-			if ((hp == 0) && (mp == 0))
-			{
-				return;
-			}
+			if((hp == 0) && (mp == 0))
+			{ return; }
 
-			if (hp > 0)
+			if(hp > 0)
 			{
 				cha.reduceCurrentHp(hp, cha, null, false, false, true, false, false, true, true);
-				if (message > 0)
+				if(message > 0)
 				{
 					cha.sendPacket(new SystemMessage(message).addNumber(hp));
 				}
 			}
 
-			if (mp > 0)
+			if(mp > 0)
 			{
 				cha.reduceCurrentMp(mp, null);
-				if (message > 0)
+				if(message > 0)
 				{
 					cha.sendPacket(new SystemMessage(message).addNumber(mp));
 				}
@@ -224,9 +208,9 @@ public class Zone extends EventOwner
 	{
 		public void onEnter(Creature actor)
 		{
-			if (!getListeners().isEmpty())
+			if(!getListeners().isEmpty())
 			{
-				for (Listener<Zone> listener : getListeners())
+				for(Listener<Zone> listener : getListeners())
 				{
 					((OnZoneEnterLeaveListener) listener).onZoneEnter(Zone.this, actor);
 				}
@@ -235,9 +219,9 @@ public class Zone extends EventOwner
 
 		public void onLeave(Creature actor)
 		{
-			if (!getListeners().isEmpty())
+			if(!getListeners().isEmpty())
 			{
-				for (Listener<Zone> listener : getListeners())
+				for(Listener<Zone> listener : getListeners())
 				{
 					((OnZoneEnterLeaveListener) listener).onZoneLeave(Zone.this, actor);
 				}
@@ -406,20 +390,16 @@ public class Zone extends EventOwner
 
 	public Location getSpawn()
 	{
-		if (getRestartPoints() == null)
-		{
-			return null;
-		}
+		if(getRestartPoints() == null)
+		{ return null; }
 		Location loc = getRestartPoints().get(Rnd.get(getRestartPoints().size()));
 		return loc.clone();
 	}
 
 	public Location getPKSpawn()
 	{
-		if (getPKRestartPoints() == null)
-		{
-			return getSpawn();
-		}
+		if(getPKRestartPoints() == null)
+		{ return getSpawn(); }
 		Location loc = getPKRestartPoints().get(Rnd.get(getPKRestartPoints().size()));
 		return loc.clone();
 	}
@@ -467,7 +447,8 @@ public class Zone extends EventOwner
 
 	public final double findDistanceToZone(int x, int y, int z, boolean includeZAxis)
 	{
-		return PositionUtils.calculateDistance(x, y, z, (getTerritory().getXmax() + getTerritory().getXmin()) / 2, (getTerritory().getYmax() + getTerritory().getYmin()) / 2, (getTerritory().getZmax() + getTerritory().getZmin()) / 2, includeZAxis);
+		return PositionUtils.calculateDistance(x, y, z, (getTerritory().getXmax() + getTerritory().getXmin())
+				/ 2, (getTerritory().getYmax() + getTerritory().getYmin()) / 2, (getTerritory().getZmax() + getTerritory().getZmin()) / 2, includeZAxis);
 	}
 
 	/**
@@ -484,7 +465,7 @@ public class Zone extends EventOwner
 		writeLock.lock();
 		try
 		{
-			if (!_objects.contains(cha))
+			if(!_objects.contains(cha))
 			{
 				added = _objects.add(cha);
 			}
@@ -494,7 +475,7 @@ public class Zone extends EventOwner
 			writeLock.unlock();
 		}
 
-		if (added)
+		if(added)
 		{
 			onZoneEnter(cha);
 		}
@@ -533,7 +514,7 @@ public class Zone extends EventOwner
 			writeLock.unlock();
 		}
 
-		if (removed)
+		if(removed)
 		{
 			onZoneLeave(cha);
 		}
@@ -562,13 +543,13 @@ public class Zone extends EventOwner
 		boolean update = false;
 
 		// Проверка цели
-		if (checkTarget(cha))
+		if(checkTarget(cha))
 		{
 			// Скорость движения накладывается только на L2Playable
 			// affectRace в базе не указан, если надо будет влияние, то поправим
-			if (getMoveBonus() != 0)
+			if(getMoveBonus() != 0)
 			{
-				if (cha.isPlayable())
+				if(cha.isPlayable())
 				{
 					cha.getStat().addFuncs(new FuncAdd(Stats.RUN_SPEED, ZONE_STATS_ORDER, this, getMoveBonus(), StatsSet.EMPTY));
 					update = true;
@@ -576,14 +557,14 @@ public class Zone extends EventOwner
 			}
 
 			// Если у нас есть что регенить
-			if (getRegenBonusHP() != 0)
+			if(getRegenBonusHP() != 0)
 			{
 				cha.getStat().addFuncs(new FuncAdd(Stats.REGENERATE_HP_RATE, ZONE_STATS_ORDER, this, getRegenBonusHP(), StatsSet.EMPTY));
 				update = true;
 			}
 
 			// Если у нас есть что регенить
-			if (getRegenBonusMP() != 0)
+			if(getRegenBonusMP() != 0)
 			{
 				cha.getStat().addFuncs(new FuncAdd(Stats.REGENERATE_MP_RATE, ZONE_STATS_ORDER, this, getRegenBonusMP(), StatsSet.EMPTY));
 				update = true;
@@ -591,13 +572,13 @@ public class Zone extends EventOwner
 		}
 
 		Func[] funcs = getStatFuncs();
-		if (funcs.length > 0)
+		if(funcs.length > 0)
 		{
 			cha.getStat().addFuncs(getStatFuncs()); // Обычные статты не проверяем цель, для них есть кондишоны.
 			update = true;
 		}
 
-		if (update)
+		if(update)
 		{
 			cha.updateStats();
 		}
@@ -611,10 +592,8 @@ public class Zone extends EventOwner
 	private void removeZoneStats(Creature cha)
 	{
 		Func[] funcs = getStatFuncs();
-		if ((getRegenBonusHP() == 0) && (getRegenBonusMP() == 0) && (getMoveBonus() == 0) && (funcs.length == 0))
-		{
-			return;
-		}
+		if((getRegenBonusHP() == 0) && (getRegenBonusMP() == 0) && (getMoveBonus() == 0) && (funcs.length == 0))
+		{ return; }
 
 		cha.getStat().removeFuncsByOwner(this);
 		cha.updateStats();
@@ -628,17 +607,17 @@ public class Zone extends EventOwner
 	 */
 	private void checkEffects(Creature cha, boolean enter)
 	{
-		if (checkTarget(cha))
+		if(checkTarget(cha))
 		{
-			if (enter)
+			if(enter)
 			{
-				if (getZoneSkill() != null)
+				if(getZoneSkill() != null)
 				{
 					ZoneTimer timer = new SkillTimer(cha);
 					_zoneTimers.put(cha, timer);
 					timer.start();
 				}
-				else if ((getDamageOnHP() > 0) || (getDamageOnHP() > 0))
+				else if((getDamageOnHP() > 0) || (getDamageOnHP() > 0))
 				{
 					ZoneTimer timer = new DamageTimer(cha);
 					_zoneTimers.put(cha, timer);
@@ -648,12 +627,12 @@ public class Zone extends EventOwner
 			else
 			{
 				ZoneTimer timer = _zoneTimers.remove(cha);
-				if (timer != null)
+				if(timer != null)
 				{
 					timer.stop();
 				}
 
-				if (getZoneSkill() != null)
+				if(getZoneSkill() != null)
 				{
 					cha.getAbnormalList().stop(getZoneSkill(), true);
 				}
@@ -669,42 +648,32 @@ public class Zone extends EventOwner
 	 */
 	private boolean checkTarget(Creature cha)
 	{
-		switch (getZoneTarget())
+		switch(getZoneTarget())
 		{
 			case pc:
-				if (!cha.isPlayable())
-				{
-					return false;
-				}
+				if(!cha.isPlayable())
+				{ return false; }
 				break;
 			case only_pc:
-				if (!cha.isPlayer())
-				{
-					return false;
-				}
+				if(!cha.isPlayer())
+				{ return false; }
 				break;
 			case npc:
-				if (!cha.isNpc())
-				{
-					return false;
-				}
+				if(!cha.isNpc())
+				{ return false; }
 				break;
 		}
 
 		// Если у нас раса не "all"
-		if (getAffectRace() != null)
+		if(getAffectRace() != null)
 		{
 			Player player = cha.getPlayer();
 			// если не игровой персонаж
-			if (player == null)
-			{
-				return false;
-			}
+			if(player == null)
+			{ return false; }
 			// если раса не подходит
-			if (player.getRace() != getAffectRace())
-			{
-				return false;
-			}
+			if(player.getRace() != getAffectRace())
+			{ return false; }
 		}
 
 		return true;
@@ -730,9 +699,9 @@ public class Zone extends EventOwner
 		try
 		{
 			Creature cha;
-			for (int i = 0; i < _objects.size(); i++)
+			for(int i = 0; i < _objects.size(); i++)
 			{
-				if (((cha = _objects.get(i)) != null) && cha.isPlayer())
+				if(((cha = _objects.get(i)) != null) && cha.isPlayer())
 				{
 					result.add((Player) cha);
 				}
@@ -752,9 +721,9 @@ public class Zone extends EventOwner
 		try
 		{
 			Creature cha;
-			for (int i = 0; i < _objects.size(); i++)
+			for(int i = 0; i < _objects.size(); i++)
 			{
-				if (((cha = _objects.get(i)) != null) && cha.isPlayable())
+				if(((cha = _objects.get(i)) != null) && cha.isPlayable())
 				{
 					result.add((Playable) cha);
 				}
@@ -774,9 +743,9 @@ public class Zone extends EventOwner
 		try
 		{
 			Creature cha;
-			for (int i = 0; i < _objects.size(); i++)
+			for(int i = 0; i < _objects.size(); i++)
 			{
-				if (((cha = _objects.get(i)) != null) && cha.isNpc())
+				if(((cha = _objects.get(i)) != null) && cha.isNpc())
 				{
 					result.add((NpcInstance) cha);
 				}
@@ -800,10 +769,8 @@ public class Zone extends EventOwner
 		writeLock.lock();
 		try
 		{
-			if (_active == value)
-			{
-				return;
-			}
+			if(_active == value)
+			{ return; }
 			_active = value;
 		}
 		finally
@@ -811,7 +778,7 @@ public class Zone extends EventOwner
 			writeLock.unlock();
 		}
 
-		if (isActive())
+		if(isActive())
 		{
 			World.addZone(Zone.this);
 		}
@@ -871,13 +838,13 @@ public class Zone extends EventOwner
 	{
 		List<Player> insideZoners = getInsidePlayers();
 
-		if ((insideZoners != null) && !insideZoners.isEmpty())
+		if((insideZoners != null) && !insideZoners.isEmpty())
 		{
-			for (Player player : insideZoners)
+			for(Player player : insideZoners)
 			{
-				if (toAliveOnly)
+				if(toAliveOnly)
 				{
-					if (!player.isDead())
+					if(!player.isDead())
 					{
 						player.broadcastPacket(packet);
 					}
@@ -892,7 +859,7 @@ public class Zone extends EventOwner
 
 	public void refreshListeners()
 	{
-		for (Creature creature : getObjects())
+		for(Creature creature : getObjects())
 		{
 			listeners.onLeave(creature);
 			listeners.onEnter(creature);

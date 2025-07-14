@@ -27,7 +27,7 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 	@Override
 	public void startEvent()
 	{
-		if (getObjects(ATTACKERS).size() == 0)
+		if(getObjects(ATTACKERS).size() == 0)
 		{
 			broadcastInZone2(new SystemMessagePacket(SystemMsg.THE_SIEGE_OF_S1_HAS_BEEN_CANCELED_DUE_TO_LACK_OF_INTEREST).addResidenceName(getResidence()));
 			reCalcNextTime(false);
@@ -35,7 +35,7 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 		}
 
 		_oldOwner = getResidence().getOwner();
-		if (_oldOwner != null)
+		if(_oldOwner != null)
 		{
 			getResidence().changeOwner(null);
 
@@ -55,7 +55,7 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 	public void stopEvent(boolean force)
 	{
 		Clan newOwner = getResidence().getOwner();
-		if (newOwner != null)
+		if(newOwner != null)
 		{
 			newOwner.broadcastToOnlineMembers(PlaySoundPacket.SIEGE_VICTORY);
 
@@ -81,14 +81,14 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 	{
 		super.removeState(val);
 
-		if (val == REGISTRATION_STATE)
+		if(val == REGISTRATION_STATE)
 			broadcastTo(new SystemMessagePacket(SystemMsg.THE_DEADLINE_TO_REGISTER_FOR_THE_SIEGE_OF_S1_HAS_PASSED).addResidenceName(getResidence()), ATTACKERS);
 	}
 
 	@Override
 	public void processStep(Clan clan)
 	{
-		if (clan != null)
+		if(clan != null)
 			getResidence().changeOwner(clan);
 
 		stopEvent(true);
@@ -119,7 +119,7 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 		boolean targetInZone = checkIfInZone(target);
 		// если оба вне зоны - рес разрешен
 		// если таргет вне осадный зоны - рес разрешен
-		if (!playerInZone && !targetInZone || !targetInZone)
+		if(!playerInZone && !targetInZone || !targetInZone)
 			return true;
 
 		Player resurectPlayer = active.getPlayer();
@@ -127,11 +127,11 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 
 		// если оба незареганы - невозможно ресать
 		// если таргет незареган - невозможно ресать
-		if (!resurectPlayer.containsEvent(this) || !targetPlayer.containsEvent(this))
+		if(!resurectPlayer.containsEvent(this) || !targetPlayer.containsEvent(this))
 		{
-			if (!quiet)
+			if(!quiet)
 			{
-				if (force)
+				if(force)
 					targetPlayer.sendPacket(SystemMsg.IT_IS_NOT_POSSIBLE_TO_RESURRECT_IN_BATTLEFIELDS_WHERE_A_SIEGE_WAR_IS_TAKING_PLACE);
 				active.sendPacket(force ? SystemMsg.IT_IS_NOT_POSSIBLE_TO_RESURRECT_IN_BATTLEFIELDS_WHERE_A_SIEGE_WAR_IS_TAKING_PLACE : SystemMsg.INVALID_TARGET);
 			}
@@ -141,22 +141,22 @@ public class ClanHallSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeClanO
 		SiegeClanObject targetSiegeClan = getSiegeClan(ATTACKERS, targetPlayer.getClan());
 
 		// если нету флага - рес запрещен
-		if (targetSiegeClan == null || targetSiegeClan.getFlag() == null)
+		if(targetSiegeClan == null || targetSiegeClan.getFlag() == null)
 		{
-			if (!quiet)
+			if(!quiet)
 			{
-				if (force)
+				if(force)
 					targetPlayer.sendPacket(SystemMsg.IF_A_BASE_CAMP_DOES_NOT_EXIST_RESURRECTION_IS_NOT_POSSIBLE);
 				active.sendPacket(force ? SystemMsg.IF_A_BASE_CAMP_DOES_NOT_EXIST_RESURRECTION_IS_NOT_POSSIBLE : SystemMsg.INVALID_TARGET);
 			}
 			return false;
 		}
 
-		if (force)
+		if(force)
 			return true;
 		else
 		{
-			if (!quiet)
+			if(!quiet)
 				active.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}

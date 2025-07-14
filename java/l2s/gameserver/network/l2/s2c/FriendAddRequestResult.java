@@ -5,8 +5,7 @@ import l2s.commons.network.PacketWriter;
 public class FriendAddRequestResult implements IClientOutgoingPacket
 {
 	public FriendAddRequestResult()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

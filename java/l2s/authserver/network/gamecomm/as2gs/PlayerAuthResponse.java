@@ -24,7 +24,7 @@ public class PlayerAuthResponse extends SendablePacket
 		Account account = session.getAccount();
 		this.login = account.getLogin();
 		this.authed = authed;
-		if (authed)
+		if(authed)
 		{
 			playOkID1 = gameSkey.playOkID1;
 			playOkID2 = gameSkey.playOkID2;
@@ -50,7 +50,7 @@ public class PlayerAuthResponse extends SendablePacket
 		writeC(0x02);
 		writeS(login);
 		writeC(authed ? 1 : 0);
-		if (authed)
+		if(authed)
 		{
 			writeD(playOkID1);
 			writeD(playOkID2);

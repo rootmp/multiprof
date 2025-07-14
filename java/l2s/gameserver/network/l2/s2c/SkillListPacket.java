@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.skills.SkillEntry;
@@ -34,12 +34,12 @@ public class SkillListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_skills.size() - _player.getDisabledSkillsToReplace().size() - _player.getHiddenSkills().size());
-		for (SkillEntry skillEntry : _skills)
+		for(SkillEntry skillEntry : _skills)
 		{
-			if (_player.isDisabledSkillToReplace(skillEntry.getId()))
+			if(_player.isDisabledSkillToReplace(skillEntry.getId()))
 				continue;
 
-			if (_player.getHiddenSkills().contains(skillEntry.getId()))
+			if(_player.getHiddenSkills().contains(skillEntry.getId()))
 				continue;
 
 			Skill temp = skillEntry.getTemplate();

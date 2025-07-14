@@ -44,7 +44,7 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> i1 = rootElement.elementIterator("normal_upgrade"); i1.hasNext();)
+		for(Iterator<Element> i1 = rootElement.elementIterator("normal_upgrade"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
 
@@ -57,13 +57,13 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 
 			NormalUpgradeData data = new NormalUpgradeData(id, type, itemId, enchantLevel, price, locationId);
 
-			for (Iterator<Element> i2 = e1.elementIterator(); i2.hasNext();)
+			for(Iterator<Element> i2 = e1.elementIterator(); i2.hasNext();)
 			{
 				Element e2 = i2.next();
 
-				if ("required_items".equalsIgnoreCase(e2.getName()))
+				if("required_items".equalsIgnoreCase(e2.getName()))
 				{
-					for (Iterator<Element> i3 = e2.elementIterator("item"); i3.hasNext();)
+					for(Iterator<Element> i3 = e2.elementIterator("item"); i3.hasNext();)
 					{
 						Element e3 = i3.next();
 						int id1 = parseInt(e3, "id");
@@ -72,14 +72,14 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 						data.addRequiredItem(new UpgradeItemData(id1, count, enchant));
 					}
 				}
-				else if ("results".equalsIgnoreCase(e2.getName()))
+				else if("results".equalsIgnoreCase(e2.getName()))
 				{
 					Element successElement = e2.element("success");
-					if (successElement != null)
+					if(successElement != null)
 					{
 						double chance = parseDouble(successElement, "chance");
 						NormalUpgradeResult result = new NormalUpgradeResult(NormalUpgradeResultType.SUCCESS, chance);
-						for (Iterator<Element> i3 = successElement.elementIterator("item"); i3.hasNext();)
+						for(Iterator<Element> i3 = successElement.elementIterator("item"); i3.hasNext();)
 						{
 							Element e3 = i3.next();
 							int id1 = parseInt(e3, "id");
@@ -91,11 +91,11 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 					}
 
 					Element failElement = e2.element("fail");
-					if (failElement != null)
+					if(failElement != null)
 					{
 						double chance = parseDouble(failElement, "chance");
 						NormalUpgradeResult result = new NormalUpgradeResult(NormalUpgradeResultType.FAIL, chance);
-						for (Iterator<Element> i3 = failElement.elementIterator("item"); i3.hasNext();)
+						for(Iterator<Element> i3 = failElement.elementIterator("item"); i3.hasNext();)
 						{
 							Element e3 = i3.next();
 							int id1 = parseInt(e3, "id");
@@ -107,11 +107,11 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 					}
 
 					Element bonusElement = e2.element("bonus");
-					if (bonusElement != null)
+					if(bonusElement != null)
 					{
 						double chance = parseDouble(bonusElement, "chance");
 						NormalUpgradeResult result = new NormalUpgradeResult(NormalUpgradeResultType.BONUS, chance);
-						for (Iterator<Element> i3 = bonusElement.elementIterator("item"); i3.hasNext();)
+						for(Iterator<Element> i3 = bonusElement.elementIterator("item"); i3.hasNext();)
 						{
 							Element e3 = i3.next();
 							int id1 = parseInt(e3, "id");
@@ -127,7 +127,7 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 			getHolder().addNormalUpgradeData(data);
 		}
 
-		for (Iterator<Element> i1 = rootElement.elementIterator("rare_upgrade"); i1.hasNext();)
+		for(Iterator<Element> i1 = rootElement.elementIterator("rare_upgrade"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
 
@@ -141,7 +141,7 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 			int resultItemEnchant = 0;
 
 			Element resultElement = e1.element("result_item");
-			if (resultElement != null)
+			if(resultElement != null)
 			{
 				resultItemId = parseInt(resultElement, "id");
 				resultItemCount = parseLong(resultElement, "count", 1);
@@ -155,13 +155,13 @@ public final class UpgradeSystemParser extends AbstractParser<UpgradeSystemHolde
 
 			RareUpgradeData data = new RareUpgradeData(id, itemId, enchantLevel, price, locationId, resultItemId, resultItemCount, resultItemEnchant);
 
-			for (Iterator<Element> i2 = e1.elementIterator(); i2.hasNext();)
+			for(Iterator<Element> i2 = e1.elementIterator(); i2.hasNext();)
 			{
 				Element e2 = i2.next();
 
-				if ("required_items".equalsIgnoreCase(e2.getName()))
+				if("required_items".equalsIgnoreCase(e2.getName()))
 				{
-					for (Iterator<Element> i3 = e2.elementIterator("item"); i3.hasNext();)
+					for(Iterator<Element> i3 = e2.elementIterator("item"); i3.hasNext();)
 					{
 						Element e3 = i3.next();
 						int id1 = parseInt(e3, "id");

@@ -47,18 +47,17 @@ public class SessionManager
 
 	private SessionManager()
 	{
-		ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
+		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 			lock.lock();
 			try
 			{
 				// Чистка просроченных сессий
 				long currentMillis = System.currentTimeMillis();
 				Session session;
-				for (Iterator<Session> itr = sessions.values().iterator(); itr.hasNext();)
+				for(Iterator<Session> itr = sessions.values().iterator(); itr.hasNext();)
 				{
 					session = itr.next();
-					if (session.getExpireTime() < currentMillis)
+					if(session.getExpireTime() < currentMillis)
 						itr.remove();
 				}
 			}
@@ -99,9 +98,9 @@ public class SessionManager
 
 	public Session getSessionByName(String name)
 	{
-		for (Session session : sessions.values())
+		for(Session session : sessions.values())
 		{
-			if (session.account.getLogin().equalsIgnoreCase(name))
+			if(session.account.getLogin().equalsIgnoreCase(name))
 				return session;
 		}
 		return null;

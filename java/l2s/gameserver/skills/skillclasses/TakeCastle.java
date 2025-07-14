@@ -27,71 +27,71 @@ public class TakeCastle extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (activeChar == null || !activeChar.isPlayer())
+		if(activeChar == null || !activeChar.isPlayer())
 			return false;
 
 		Player player = activeChar.getPlayer();
 		Clan clan = player.getClan();
-		if (clan == null || !player.isClanLeader() || clan.getCastle() != 0)
+		if(clan == null || !player.isClanLeader() || clan.getCastle() != 0)
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if (!player.isInRangeZ(target, 185))
+		if(!player.isInRangeZ(target, 185))
 		{
 			player.sendPacket(SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE);
 			return false;
 		}
 
-		if (!target.isArtefact())
+		if(!target.isArtefact())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
 		List<CastleSiegeEvent> siegeEvents = player.getEvents(CastleSiegeEvent.class);
-		if (siegeEvents.isEmpty())
+		if(siegeEvents.isEmpty())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
 		List<CastleSiegeEvent> targetEvents = target.getEvents(CastleSiegeEvent.class);
-		if (targetEvents.isEmpty())
+		if(targetEvents.isEmpty())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
 		boolean success = false;
-		for (CastleSiegeEvent event : targetEvents)
+		for(CastleSiegeEvent event : targetEvents)
 		{
-			if (!siegeEvents.contains(event))
+			if(!siegeEvents.contains(event))
 				continue;
 
-			if (event.getSiegeClan(CastleSiegeEvent.ATTACKERS, clan) == null)
+			if(event.getSiegeClan(CastleSiegeEvent.ATTACKERS, clan) == null)
 				continue;
 
-			if (!event.canCastSeal(player)) // TODO: Должно ли быть особое сообщение?
+			if(!event.canCastSeal(player)) // TODO: Должно ли быть особое сообщение?
 				continue;
 
-			if (first)
+			if(first)
 				event.broadcastTo(SystemMsg.THE_OPPOSING_CLAN_HAS_STARTED_TO_ENGRAVE_THE_HOLY_ARTIFACT, CastleSiegeEvent.DEFENDERS);
 
 			success = true;
 		}
 
-		if (!success)
+		if(!success)
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
@@ -103,21 +103,21 @@ public class TakeCastle extends Skill
 	@Override
 	public void onFinishCast(Creature aimingTarget, Creature activeChar, Set<Creature> targets)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
-		if (!aimingTarget.isArtefact())
+		if(!aimingTarget.isArtefact())
 			return;
 
 		final Player player = activeChar.getPlayer();
 
 		final List<CastleSiegeEvent> siegeEvents = player.getEvents(CastleSiegeEvent.class);
-		if (!siegeEvents.isEmpty())
+		if(!siegeEvents.isEmpty())
 		{
 			List<CastleSiegeEvent> targetEvents = aimingTarget.getEvents(CastleSiegeEvent.class);
-			for (CastleSiegeEvent event : targetEvents)
+			for(CastleSiegeEvent event : targetEvents)
 			{
-				if (siegeEvents.contains(event))
+				if(siegeEvents.contains(event))
 				{
 					event.broadcastTo(new SystemMessagePacket(SystemMsg.CLAN_S1_HAS_SUCCEEDED_IN_S2).addString(player.getClan().getName()).addResidenceName(event.getResidence()), CastleSiegeEvent.ATTACKERS, CastleSiegeEvent.DEFENDERS);
 					event.takeCastle(player.getClan(), _side);

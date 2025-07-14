@@ -17,9 +17,10 @@ public class ServitorStatsChangeRecorder extends CharStatsChangeRecorder<Servito
 	{
 		super.onSendChanges();
 
-		if ((_changes & SEND_CHAR_INFO) == SEND_CHAR_INFO)
+		if((_changes & SEND_CHAR_INFO) == SEND_CHAR_INFO)
 			_activeChar.sendPetInfo();
-		else if ((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO || (_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO || (_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
+		else if((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO
+				|| (_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO || (_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
 			_activeChar.broadcastCharInfo();
 	}
 }

@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Servitor;
@@ -19,8 +19,8 @@ public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 		leaderId = leader.getObjectId();
 		loot = party.getLootDistribution();
 
-		for (Player member : party.getPartyMembers())
-			if (member != exclude)
+		for(Player member : party.getPartyMembers())
+			if(member != exclude)
 				members.add(new PartySmallWindowMemberInfo(member));
 	}
 
@@ -30,7 +30,7 @@ public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 		packetWriter.writeD(leaderId); // c3 party leader id
 		packetWriter.writeC(loot); // c3 party loot type (0,1,2,....)
 		packetWriter.writeC(members.size());
-		for (PartySmallWindowMemberInfo mi : members)
+		for(PartySmallWindowMemberInfo mi : members)
 		{
 			packetWriter.writeD(mi.member.objId);
 			packetWriter.writeS(mi.member.name);
@@ -47,7 +47,7 @@ public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 			packetWriter.writeH(mi.member.raceId);
 			packetWriter.writeD(0);
 			packetWriter.writeD(mi.m_servitors.size()); // Pet Count
-			for (PartyMember servitor : mi.m_servitors)
+			for(PartyMember servitor : mi.m_servitors)
 			{
 				packetWriter.writeD(servitor.objId);
 				packetWriter.writeD(servitor.npcId);
@@ -88,7 +88,7 @@ public class PartySmallWindowAllPacket implements IClientOutgoingPacket
 
 			m_servitors = new ArrayList<PartyMember>();
 
-			for (Servitor s : player.getServitors())
+			for(Servitor s : player.getServitors())
 			{
 				PartyMember m_servitor = new PartyMember();
 				m_servitor.name = s.getName();

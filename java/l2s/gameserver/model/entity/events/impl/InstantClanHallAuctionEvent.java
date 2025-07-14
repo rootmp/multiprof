@@ -45,9 +45,9 @@ public class InstantClanHallAuctionEvent extends SiegeEvent<InstantClanHall, Sie
 
 		final Calendar siegeDate = getResidence().getSiegeDate();
 
-		if (_endAuctionDate.getTimeInMillis() <= System.currentTimeMillis())
+		if(_endAuctionDate.getTimeInMillis() <= System.currentTimeMillis())
 		{
-			if (onStart)
+			if(onStart)
 			{
 				// Выдаем КХ новым хозяинам, если во время окончания ивента сервер был выключен.
 				checkWinners();
@@ -60,12 +60,12 @@ public class InstantClanHallAuctionEvent extends SiegeEvent<InstantClanHall, Sie
 			siegeDate.set(Calendar.SECOND, 0);
 			siegeDate.set(Calendar.MILLISECOND, 0);
 
-			while (siegeDate.getTimeInMillis() <= System.currentTimeMillis())
+			while(siegeDate.getTimeInMillis() <= System.currentTimeMillis())
 				siegeDate.add(Calendar.DAY_OF_MONTH, getResidence().getRentalPeriod());
 
 			siegeDate.set(Calendar.DAY_OF_WEEK, Calendar.SATURDAY);
 
-			while (siegeDate.getTimeInMillis() <= System.currentTimeMillis())
+			while(siegeDate.getTimeInMillis() <= System.currentTimeMillis())
 				siegeDate.add(Calendar.DAY_OF_MONTH, 7);
 
 			getResidence().setJdbcState(JdbcEntityState.UPDATED);
@@ -92,7 +92,7 @@ public class InstantClanHallAuctionEvent extends SiegeEvent<InstantClanHall, Sie
 	@Override
 	public void startEvent()
 	{
-		for (Clan clan : getResidence().getOwners())
+		for(Clan clan : getResidence().getOwners())
 		{
 			// TODO: Должно ли быть сообщение?
 			getResidence().removeOwner(clan, true);
@@ -117,39 +117,41 @@ public class InstantClanHallAuctionEvent extends SiegeEvent<InstantClanHall, Sie
 	{
 		List<SiegeClanObject> siegeClanObjects = removeObjects(ATTACKERS);
 
-		if (!siegeClanObjects.isEmpty())
+		if(!siegeClanObjects.isEmpty())
 		{
 			// Удаляем кланы, которые уже владеют КХ.
-			for (Iterator<SiegeClanObject> itr = siegeClanObjects.iterator(); itr.hasNext();)
+			for(Iterator<SiegeClanObject> itr = siegeClanObjects.iterator(); itr.hasNext();)
 			{
 				SiegeClanObject siegeClan = itr.next();
-				if (siegeClan.getClan().getHasHideout() != 0)
+				if(siegeClan.getClan().getHasHideout() != 0)
 					itr.remove();
 			}
 
 			List<SiegeClanObject> winnersSiegeClans = new ArrayList<SiegeClanObject>();
 
-			if (siegeClanObjects.size() <= getResidence().getMaxCount())
+			if(siegeClanObjects.size() <= getResidence().getMaxCount())
 				winnersSiegeClans.addAll(siegeClanObjects);
 			else
 			{
-				while (winnersSiegeClans.size() < getResidence().getMaxCount())
+				while(winnersSiegeClans.size() < getResidence().getMaxCount())
 				{
 					SiegeClanObject winnerSiegeClan = Rnd.get(siegeClanObjects);
 					winnersSiegeClans.add(winnerSiegeClan);
 					siegeClanObjects.remove(winnerSiegeClan);
 				}
 
-				for (SiegeClanObject siegeClan : siegeClanObjects)
+				for(SiegeClanObject siegeClan : siegeClanObjects)
 				{
 					siegeClan.getClan().broadcastToOnlineMembers(SystemMsg.YOUR_BID_FOR_THE_PROVISIONAL_CLAN_HALL_LOST);
-					siegeClan.getClan().getWarehouse().addItem(ItemTemplate.ITEM_ID_ADENA, getResidence().getRentalFee() * (100 - getResidence().getCommissionPercent()) / 100);
+					siegeClan.getClan().getWarehouse().addItem(ItemTemplate.ITEM_ID_ADENA, getResidence().getRentalFee()
+							* (100 - getResidence().getCommissionPercent())
+							/ 100);
 				}
 			}
 
-			if (!winnersSiegeClans.isEmpty())
+			if(!winnersSiegeClans.isEmpty())
 			{
-				for (SiegeClanObject siegeClan : winnersSiegeClans)
+				for(SiegeClanObject siegeClan : winnersSiegeClans)
 				{
 					Clan clan = siegeClan.getClan();
 					getResidence().addOwner(clan, true);

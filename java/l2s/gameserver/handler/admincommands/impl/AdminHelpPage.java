@@ -16,13 +16,13 @@ public class AdminHelpPage implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Menu)
+		if(!activeChar.getPlayerAccess().Menu)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_showhtml:
-				if (wordList.length != 2)
+				if(wordList.length != 2)
 				{
 					activeChar.sendMessage("Usage: //showhtml <file>");
 					return false;
@@ -37,7 +37,7 @@ public class AdminHelpPage implements IAdminCommandHandler
 	public static void showHelpHtml(Player targetChar, String content)
 	{
 		HtmlMessage adminReply = new HtmlMessage(5);
-		if (content.contains(".htm"))
+		if(content.contains(".htm"))
 			adminReply.setFile("admin/" + content);
 		else
 			adminReply.setHtml(content);

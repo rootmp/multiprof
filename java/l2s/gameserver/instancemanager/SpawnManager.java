@@ -32,7 +32,7 @@ public class SpawnManager
 
 	private SpawnManager()
 	{
-		for (Map.Entry<String, List<SpawnTemplate>> entry : SpawnHolder.getInstance().getSpawns().entrySet())
+		for(Map.Entry<String, List<SpawnTemplate>> entry : SpawnHolder.getInstance().getSpawns().entrySet())
 		{
 			fillSpawn(entry.getKey(), entry.getValue());
 		}
@@ -44,18 +44,16 @@ public class SpawnManager
 
 	public List<Spawner> fillSpawn(String group, List<SpawnTemplate> templateList)
 	{
-		if (Config.DONTLOADSPAWN)
-		{
-			return Collections.emptyList();
-		}
+		if(Config.DONTLOADSPAWN)
+		{ return Collections.emptyList(); }
 
 		List<Spawner> spawnerList = _spawns.get(group);
-		if (spawnerList == null)
+		if(spawnerList == null)
 		{
 			_spawns.put(group, spawnerList = new ArrayList<Spawner>(templateList.size()));
 		}
 
-		for (SpawnTemplate template : templateList)
+		for(SpawnTemplate template : templateList)
 		{
 			HardSpawner spawner = new HardSpawner(template);
 			spawnerList.add(spawner);
@@ -65,7 +63,8 @@ public class SpawnManager
 			boolean saveable = npcTemplate.isRaid || npcTemplate.isInstanceOf(SaveableMonsterInstance.class);
 
 			int count = template.getCount();
-			if ((Config.RATE_MOB_SPAWN > 0) && npcTemplate.isInstanceOf(MonsterInstance.class) && !saveable && (npcTemplate.level >= Config.RATE_MOB_SPAWN_MIN_LEVEL) && (npcTemplate.level <= Config.RATE_MOB_SPAWN_MAX_LEVEL))
+			if((Config.RATE_MOB_SPAWN > 0) && npcTemplate.isInstanceOf(MonsterInstance.class) && !saveable
+					&& (npcTemplate.level >= Config.RATE_MOB_SPAWN_MIN_LEVEL) && (npcTemplate.level <= Config.RATE_MOB_SPAWN_MAX_LEVEL))
 			{
 				count = (int) Math.max(1, count * Config.RATE_MOB_SPAWN);
 			}
@@ -75,7 +74,7 @@ public class SpawnManager
 			spawner.setRespawnPattern(template.getRespawnPattern());
 			spawner.setReflection(ReflectionManager.MAIN);
 			spawner.setRespawnTime(0);
-			if (saveable && group.equals(PeriodOfDay.NONE.name()))
+			if(saveable && group.equals(PeriodOfDay.NONE.name()))
 			{
 				RaidBossSpawnManager.getInstance().addNewSpawn(npcTemplate.getId(), spawner);
 			}
@@ -87,23 +86,23 @@ public class SpawnManager
 	public void spawnAll()
 	{
 		spawn(PeriodOfDay.NONE.name());
-		if (Config.ALLOW_EVENT_GATEKEEPER)
+		if(Config.ALLOW_EVENT_GATEKEEPER)
 		{
 			spawn("event_gatekeeper");
 		}
-		if (Config.SPAWN_VITAMIN_MANAGER)
+		if(Config.SPAWN_VITAMIN_MANAGER)
 		{
 			spawn("vitamin_manager");
 		}
-		if (Config.ENABLE_OLYMPIAD)
+		if(Config.ENABLE_OLYMPIAD)
 		{
 			spawn("olympiad");
 		}
-		if (Config.TRAINING_CAMP_ENABLE)
+		if(Config.TRAINING_CAMP_ENABLE)
 		{
 			spawn("training_camp");
 		}
-		if (Config.ELEMENTAL_SYSTEM_ENABLED)
+		if(Config.ELEMENTAL_SYSTEM_ENABLED)
 		{
 			spawn("elemental_manager");
 		}
@@ -113,9 +112,9 @@ public class SpawnManager
 	{
 		RaidBossSpawnManager.getInstance().cleanUp();
 
-		for (List<Spawner> spawnerList : _spawns.values())
+		for(List<Spawner> spawnerList : _spawns.values())
 		{
-			for (Spawner spawner : spawnerList)
+			for(Spawner spawner : spawnerList)
 			{
 				spawner.deleteAll();
 			}
@@ -125,24 +124,22 @@ public class SpawnManager
 	public List<Spawner> spawn(String group, boolean logging)
 	{
 		List<Spawner> spawnerList = _spawns.get(group);
-		if (spawnerList == null)
-		{
-			return Collections.emptyList();
-		}
+		if(spawnerList == null)
+		{ return Collections.emptyList(); }
 
 		int npcSpawnCount = 0;
 
-		for (Spawner spawner : spawnerList)
+		for(Spawner spawner : spawnerList)
 		{
 			npcSpawnCount += spawner.init();
 
-			if (logging && ((npcSpawnCount % 1000) == 0) && (npcSpawnCount != 0))
+			if(logging && ((npcSpawnCount % 1000) == 0) && (npcSpawnCount != 0))
 			{
 				_log.info("SpawnManager: spawned " + npcSpawnCount + " npc for group: " + group);
 			}
 		}
 
-		if (logging)
+		if(logging)
 		{
 			_log.info("SpawnManager: spawned " + npcSpawnCount + " npc; spawns: " + spawnerList.size() + "; group: " + group);
 		}
@@ -158,12 +155,10 @@ public class SpawnManager
 	public void despawn(String group)
 	{
 		List<Spawner> spawnerList = _spawns.get(group);
-		if (spawnerList == null)
-		{
-			return;
-		}
+		if(spawnerList == null)
+		{ return; }
 
-		for (Spawner spawner : spawnerList)
+		for(Spawner spawner : spawnerList)
 		{
 			spawner.deleteAll();
 		}
@@ -172,7 +167,7 @@ public class SpawnManager
 	public List<Spawner> getSpawners(String group)
 	{
 		List<Spawner> list = _spawns.get(group);
-		return list == null ? Collections.<Spawner>emptyList() : list;
+		return list == null ? Collections.<Spawner> emptyList() : list;
 	}
 
 	public void reloadAll()
@@ -183,7 +178,7 @@ public class SpawnManager
 
 		spawnAll();
 
-		if (GameTimeController.getInstance().isNowNight())
+		if(GameTimeController.getInstance().isNowNight())
 		{
 			_listeners.onNight(false);
 		}

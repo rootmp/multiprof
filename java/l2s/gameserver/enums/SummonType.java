@@ -21,5 +21,5 @@ public enum SummonType
 	public int getCount()
 	{
 		return _count;
-	}	
+	}
 }

@@ -23,7 +23,7 @@ public class GameObjectTasks
 		{
 			Creature c = _ref.get();
 
-			if (c != null)
+			if(c != null)
 			{
 				c.deleteMe();
 			}
@@ -46,17 +46,15 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 
 			long diff = Math.abs(System.currentTimeMillis() - player.getLastPvPAttack());
-			if (diff > Config.PVP_TIME)
+			if(diff > Config.PVP_TIME)
 			{
 				player.stopPvPFlag();
 			}
-			else if (diff > (Config.PVP_TIME - 20000))
+			else if(diff > (Config.PVP_TIME - 20000))
 			{
 				player.updatePvPFlag(2);
 			}
@@ -81,10 +79,8 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 			// Каждый час в игре оповещаем персонажу сколько часов он играет.
 			int hoursInGame = player.getHoursInGame().incrementAndGet();
 			player.sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_BEEN_PLAYING_FOR_AN_EXTENDED_PERIOD_OF_TIME_PLEASE_CONSIDER_TAKING_A_BREAK).addNumber(hoursInGame));
@@ -105,11 +101,9 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
-			if (player.isDead() || !player.isInWater())
+			if(player == null)
+			{ return; }
+			if(player.isDead() || !player.isInWater())
 			{
 				player.stopWaterTask();
 				return;
@@ -136,10 +130,8 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 			player.setOfflineMode(false);
 			player.kick();
 		}
@@ -159,10 +151,8 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 
 			player.fromJail();
 		}
@@ -182,10 +172,8 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 			player.sittingTaskLaunched = false;
 			player.getAI().clearNextAction();
 		}
@@ -205,13 +193,11 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 			player.sittingTaskLaunched = false;
 			player.setSitting(false);
-			if (!player.getAI().setNextIntention())
+			if(!player.getAI().setNextIntention())
 			{
 				player.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 			}
@@ -231,12 +217,10 @@ public class GameObjectTasks
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 			player.setFakeDeath(false);
-			if (!player.getAI().setNextIntention())
+			if(!player.getAI().setNextIntention())
 			{
 				player.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 			}
@@ -275,19 +259,15 @@ public class GameObjectTasks
 		public void run()
 		{
 			Creature character, target;
-			if (((character = _charRef.get()) == null) || ((target = _targetRef.get()) == null))
-			{
-				return;
-			}
+			if(((character = _charRef.get()) == null) || ((target = _targetRef.get()) == null))
+			{ return; }
 
-			if (character.isAttackAborted())
-			{
-				return;
-			}
+			if(character.isAttackAborted())
+			{ return; }
 
 			character.onHitTimer(target, _damage, _crit, _miss, _soulshot, _shld, _unchargeSS, _elementalDamage, _elementalCrit);
 
-			if (_notify)
+			if(_notify)
 			{
 				ThreadPoolManager.getInstance().schedule(new NotifyAITask(character, CtrlEvent.EVT_READY_TO_ACT), _sAtk / 2);
 			}
@@ -321,10 +301,8 @@ public class GameObjectTasks
 		public void run()
 		{
 			Creature character = _charRef.get();
-			if ((character == null) || !character.hasAI())
-			{
-				return;
-			}
+			if((character == null) || !character.hasAI())
+			{ return; }
 
 			character.getAI().notifyEvent(_evt, _agr0, _agr1, _agr2);
 		}

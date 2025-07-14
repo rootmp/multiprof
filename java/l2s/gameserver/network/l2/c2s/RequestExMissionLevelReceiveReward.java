@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
 
 import java.util.Calendar;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.MissionLevelRewardsHolder;
 import l2s.gameserver.model.Player;
@@ -33,7 +34,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 		final Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
+
 		MissionLevelReward info = player.getMissionLevelReward();
 		int currentLvl = info.getLevel();
 		if(currentLvl < _level)
@@ -46,11 +47,11 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 		int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
 		MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month, year);
 
-		if (_level > template.getRewards().size() && _rewardType == 4) 
+		if(_level > template.getRewards().size() && _rewardType == 4)
 			// Если уровень превышает количество стандартных наград, обрабатываем как бонусную награду
 			handlePostFinalBonusReward(player, info, _level, template);
-		 else 
-		 {
+		else
+		{
 			MissionLevelRewardData data = template.getRewards().get(_level - 1);
 
 			switch(_rewardType)
@@ -65,7 +66,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 					handleFinalReward(player, info, template);
 					break;
 				case 4:
-					handlePostFinalBonusReward(player, info,_level, template);
+					handlePostFinalBonusReward(player, info, _level, template);
 					break;
 				default:
 					sendError(player);
@@ -128,7 +129,7 @@ public class RequestExMissionLevelReceiveReward implements IClientIncomingPacket
 		else
 		{
 			ItemData bonusReward = template.getBonusReward();
-			if (bonusReward != null)
+			if(bonusReward != null)
 			{
 				info.setLastTakenBonus(level);
 				ItemFunctions.addItem(player, bonusReward.getId(), bonusReward.getCount());

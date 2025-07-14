@@ -6,8 +6,7 @@ package l2s.commons.geometry;
  **/
 public interface CoordsConverter
 {
-	public static final CoordsConverter DEFAULT_CONVERTER = new CoordsConverter()
-	{
+	public static final CoordsConverter DEFAULT_CONVERTER = new CoordsConverter(){
 		@Override
 		public int convertX(int x)
 		{

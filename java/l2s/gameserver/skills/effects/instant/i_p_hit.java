@@ -30,7 +30,7 @@ public class i_p_hit extends i_abstract_effect
 		boolean dual = false;
 		boolean bow = false;
 
-		switch (effector.getBaseStats().getAttackType())
+		switch(effector.getBaseStats().getAttackType())
 		{
 			case DUAL:
 			case DUALFIST:
@@ -47,7 +47,7 @@ public class i_p_hit extends i_abstract_effect
 		}
 
 		double power = getValue();
-		if (dual)
+		if(dual)
 			power /= 2;
 
 		int damage = 0;
@@ -57,7 +57,7 @@ public class i_p_hit extends i_abstract_effect
 		boolean elementalCrit = false;
 
 		AttackInfo info = Formulas.calcAutoAttackDamage(effector, effected, power, bow, effector.getChargedSoulshotPower() > 0, _canCrit);
-		if (info != null)
+		if(info != null)
 		{
 			damage = (int) info.damage;
 			shld = info.shld;
@@ -68,14 +68,14 @@ public class i_p_hit extends i_abstract_effect
 
 		effected.reduceCurrentHp(damage, effector, null, true, true, false, true, false, false, true, true, crit, false, shld, elementalDamage, elementalCrit);
 
-		if (dual)
+		if(dual)
 		{
 			damage = 0;
 			shld = false;
 			crit = false;
 
 			info = Formulas.calcAutoAttackDamage(effector, effected, power, bow, effector.getChargedSoulshotPower() > 0, _canCrit);
-			if (info != null)
+			if(info != null)
 			{
 				damage = (int) info.damage;
 				shld = info.shld;

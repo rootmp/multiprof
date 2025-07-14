@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.AppearanceStoneHolder;
@@ -35,12 +36,10 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
-		if (player.isActionsDisabled() || player.isInStoreMode() || player.isInTrade())
+		if(player.isActionsDisabled() || player.isInStoreMode() || player.isInTrade())
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
@@ -51,27 +50,27 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 		ItemInstance targetItem = inventory.getItemByObjectId(_targetItemObjId);
 		ItemInstance extracItem = inventory.getItemByObjectId(_extracItemObjId);
 		ItemInstance stone = player.getAppearanceStone();
-		if ((targetItem == null) || (extracItem == null) || (stone == null))
+		if((targetItem == null) || (extracItem == null) || (stone == null))
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
 			return;
 		}
 
-		if (!extracItem.canBeAppearance())
+		if(!extracItem.canBeAppearance())
 		{
 			player.sendPacket(ExPut_Shape_Shifting_Extraction_Item_Result.FAIL);
 			return;
 		}
 
-		if ((extracItem.getLocation() != ItemLocation.INVENTORY) && (extracItem.getLocation() != ItemLocation.PAPERDOLL))
+		if((extracItem.getLocation() != ItemLocation.INVENTORY) && (extracItem.getLocation() != ItemLocation.PAPERDOLL))
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
 			return;
 		}
 
-		if ((stone = inventory.getItemByObjectId(stone.getObjectId())) == null)
+		if((stone = inventory.getItemByObjectId(stone.getObjectId())) == null)
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
@@ -79,14 +78,14 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 		}
 
 		AppearanceStone appearanceStone = AppearanceStoneHolder.getInstance().getAppearanceStone(stone.getItemId());
-		if (appearanceStone == null)
+		if(appearanceStone == null)
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
 			return;
 		}
 
-		if ((appearanceStone.getType() == ShapeType.RESTORE) || (appearanceStone.getType() == ShapeType.FIXED))
+		if((appearanceStone.getType() == ShapeType.RESTORE) || (appearanceStone.getType() == ShapeType.FIXED))
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			return;
@@ -98,44 +97,47 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 		 * return; }
 		 */
 
-		if (!extracItem.getTemplate().isHairAccessory() && (targetItem.getGrade().ordinal() < extracItem.getGrade().ordinal()))
+		if(!extracItem.getTemplate().isHairAccessory() && (targetItem.getGrade().ordinal() < extracItem.getGrade().ordinal()))
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_EXTRACT_FROM_ITEMS_THAT_ARE_HIGHERGRADE_THAN_ITEMS_TO_BE_MODIFIED);
 			return;
 		}
 
-		if (extracItem.getVisualId() > 0)
+		if(extracItem.getVisualId() > 0)
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_EXTRACT_FROM_A_MODIFIED_ITEM);
 			return;
 		}
 
-		if (targetItem.getExType() != extracItem.getExType())
+		if(targetItem.getExType() != extracItem.getExType())
 		{
-			if ((targetItem.getExType() != ExItemType.UPPER_PIECE) && (extracItem.getExType() != ExItemType.FULL_BODY))
+			if((targetItem.getExType() != ExItemType.UPPER_PIECE) && (extracItem.getExType() != ExItemType.FULL_BODY))
 			{
 				player.sendPacket(SystemMsg.THIS_ITEM_DOES_NOT_MEET_REQUIREMENTS);
 				return;
 			}
 		}
 
-		if (targetItem.isWeapon())
+		if(targetItem.isWeapon())
 		{
-			if (targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
+			if(targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
 			{
 				player.sendPacket(SystemMsg.THIS_ITEM_DOES_NOT_MEET_REQUIREMENTS);
 				return;
 			}
 		}
-		else if (targetItem.isArmor())
+		else if(targetItem.isArmor())
 		{
-			if (Config.APPEARANCE_STONE_CHECK_ARMOR_TYPE)
+			if(Config.APPEARANCE_STONE_CHECK_ARMOR_TYPE)
 			{
-				if ((targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST) || (targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR) || (targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
+				if((targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST) || (targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+						|| (targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
 				{
-					if (extracItem.getTemplate().isArmor() && ((extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST) || (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR) || (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS)))
+					if(extracItem.getTemplate().isArmor() && ((extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST)
+							|| (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+							|| (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS)))
 					{
-						if (targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
+						if(targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
 						{
 							player.sendPacket(SystemMsg.THIS_ITEM_DOES_NOT_MEET_REQUIREMENTS);
 							return;
@@ -146,7 +148,7 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 		}
 
 		// Запрет на обработку чужих вещей, баг может вылезти на серверных лагах
-		if (extracItem.getOwnerId() != player.getObjectId())
+		if(extracItem.getOwnerId() != player.getObjectId())
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);

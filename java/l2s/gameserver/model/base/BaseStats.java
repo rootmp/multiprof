@@ -68,20 +68,20 @@ public enum BaseStats
 
 	public double calcBonus(Creature actor)
 	{
-		if (actor == null)
+		if(actor == null)
 			return 1.;
 
 		int value = getStat(actor);
 
-		if (actor.isPlayer())
+		if(actor.isPlayer())
 		{
 			Player player = actor.getPlayer();
-			if (player.isTransformed() && player.getTransform().getBaseStatBonus(value, this) != 0)
+			if(player.isTransformed() && player.getTransform().getBaseStatBonus(value, this) != 0)
 				return player.getTransform().getBaseStatBonus(value, this);
 		}
 
 		BaseStatsBonus bonus = BaseStatsBonusHolder.getInstance().getBaseStatsBonus(value);
-		if (bonus == null)
+		if(bonus == null)
 			return 1.; // TODO: [Bonux] Проверить на оффе.
 
 		return bonus.get(this);

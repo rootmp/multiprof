@@ -1,6 +1,7 @@
 package l2s.gameserver.data.xml.parser;
 
 import java.io.File;
+
 import org.dom4j.Element;
 
 import l2s.commons.data.xml.AbstractParser;
@@ -36,7 +37,7 @@ public final class GlobalEventUiParser extends AbstractParser<GlobalEventUiHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Element element : rootElement.elements("event"))
+		for(Element element : rootElement.elements("event"))
 		{
 			int Id = parseInt(element, "id");
 			int multisell = parseInt(element, "multisell");

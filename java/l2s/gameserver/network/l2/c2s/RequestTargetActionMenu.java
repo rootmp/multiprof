@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.GameObjectsStorage;
@@ -23,23 +24,23 @@ public class RequestTargetActionMenu implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		GameObject target = GameObjectsStorage.findObject(_targetObjectId);
-		if (target == null)
+		if(target == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!target.isTargetable(activeChar))
+		if(!target.isTargetable(activeChar))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != target)
+		if(activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != target)
 		{
 			activeChar.sendActionFailed();
 			return;

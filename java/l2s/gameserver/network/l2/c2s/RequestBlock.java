@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,7 +28,7 @@ public class RequestBlock implements IClientIncomingPacket
 	{
 		_type = packet.readD(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
 
-		if (_type == BLOCK || _type == UNBLOCK)
+		if(_type == BLOCK || _type == UNBLOCK)
 			targetName = packet.readS(16);
 		return true;
 	}
@@ -36,10 +37,10 @@ public class RequestBlock implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		switch (_type)
+		switch(_type)
 		{
 			case BLOCK:
 				activeChar.getBlockList().add(targetName);

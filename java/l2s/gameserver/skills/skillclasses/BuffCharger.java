@@ -20,9 +20,9 @@ public class BuffCharger extends Skill
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
 		int level = 0;
-		for (Abnormal effect : target.getAbnormalList())
+		for(Abnormal effect : target.getAbnormalList())
 		{
-			if (effect.getSkill().getId() == _target)
+			if(effect.getSkill().getId() == _target)
 			{
 				level = effect.getSkill().getLevel();
 				break;
@@ -30,12 +30,12 @@ public class BuffCharger extends Skill
 		}
 
 		Skill next = SkillHolder.getInstance().getSkill(_target, level + 1);
-		if (next != null)
+		if(next != null)
 			next.getEffects(activeChar, target);
 		else // @Rivelia. Buff Chargers are able to maintain their level.
 		{
 			next = SkillHolder.getInstance().getSkill(_target, level);
-			if (next != null)
+			if(next != null)
 				next.getEffects(activeChar, target);
 		}
 	}

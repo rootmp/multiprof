@@ -9,13 +9,13 @@ public class ExCraftRandomMake implements IClientOutgoingPacket
 	private final long nAmount;
 	private int cResult;
 	private int cEnchanted;
-	
+
 	public ExCraftRandomMake(int itemId, long itemCount, int enchanted)
 	{
 		cResult = 0;
 		nItemClassID = itemId;
 		nAmount = itemCount;
-		cEnchanted= enchanted;
+		cEnchanted = enchanted;
 	}
 
 	@Override

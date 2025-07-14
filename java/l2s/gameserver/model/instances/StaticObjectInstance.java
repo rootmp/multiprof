@@ -53,30 +53,30 @@ public class StaticObjectInstance extends GameObject
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, StaticObjectInstance.class, this, true))
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, StaticObjectInstance.class, this, true))
 			return;
 
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
 			return;
 		}
 
-		if (!player.checkInteractionDistance(this))
+		if(!player.checkInteractionDistance(this))
 		{
-			if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
+			if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
 				player.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this, null);
 			return;
 		}
 
-		if (_template.getType() == 0) // Arena Board
+		if(_template.getType() == 0) // Arena Board
 			player.sendPacket(new HtmlMessage(getUId()).setFile("newspaper/arena.htm"));
-		else if (_template.getType() == 2) // Village map
+		else if(_template.getType() == 2) // Village map
 		{
 			player.sendPacket(new ShowTownMapPacket(_template.getFilePath(), _template.getMapX(), _template.getMapY()));
 			player.sendActionFailed();
 		}
-		else if (_template.getType() == 4)
+		else if(_template.getType() == 4)
 		{
 			// World Statistic
 		}
@@ -85,7 +85,7 @@ public class StaticObjectInstance extends GameObject
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		return Collections.<IClientOutgoingPacket>singletonList(new StaticObjectPacket(this));
+		return Collections.<IClientOutgoingPacket> singletonList(new StaticObjectPacket(this));
 	}
 
 	@Override
@@ -97,7 +97,7 @@ public class StaticObjectInstance extends GameObject
 	public void broadcastInfo(boolean force)
 	{
 		StaticObjectPacket p = new StaticObjectPacket(this);
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 			player.sendPacket(p);
 	}
 

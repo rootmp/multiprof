@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.network.l2.GameClient;
@@ -18,7 +19,7 @@ public class RequestEx2ndPasswordReq implements IClientIncomingPacket
 	{
 		_changePass = packet.readC();
 		_password = packet.readS();
-		if (_changePass == 2)
+		if(_changePass == 2)
 			_newPassword = packet.readS();
 		return true;
 	}
@@ -26,18 +27,18 @@ public class RequestEx2ndPasswordReq implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.EX_SECOND_AUTH_ENABLED)
+		if(!Config.EX_SECOND_AUTH_ENABLED)
 			return;
 
 		SecondaryPasswordAuth spa = client.getSecondaryAuth();
 		boolean exVal = false;
 
-		if (_changePass == 0 && !spa.passwordExist())
+		if(_changePass == 0 && !spa.passwordExist())
 			exVal = spa.savePassword(_password);
-		else if (_changePass == 2 && spa.passwordExist())
+		else if(_changePass == 2 && spa.passwordExist())
 			exVal = spa.changePassword(_password, _newPassword);
 
-		if (exVal)
+		if(exVal)
 			client.sendPacket(new Ex2NDPasswordAckPacket(Ex2NDPasswordAckPacket.SUCCESS));
 	}
 }

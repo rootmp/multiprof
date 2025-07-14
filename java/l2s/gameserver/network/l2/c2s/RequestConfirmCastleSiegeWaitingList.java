@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.dao.SiegeClanDAO;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
@@ -32,17 +33,17 @@ public class RequestConfirmCastleSiegeWaitingList implements IClientIncomingPack
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, _unitId);
-		if (castle == null)
+		if(castle == null)
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (!player.isGM() && (player.getClan() == null || player.getClan().getCastle() != castle.getId() || !player.isClanLeader()))
+		if(!player.isGM() && (player.getClan() == null || player.getClan().getCastle() != castle.getId() || !player.isClanLeader()))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_THE_AUTHORITY_TO_MODIFY_THE_CASTLE_DEFENDER_LIST);
 			return;
@@ -51,20 +52,20 @@ public class RequestConfirmCastleSiegeWaitingList implements IClientIncomingPack
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 
 		SiegeClanObject siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS_WAITING, _clanId);
-		if (siegeClan == null)
+		if(siegeClan == null)
 			siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS, _clanId);
 
-		if (siegeClan == null)
+		if(siegeClan == null)
 			return;
 
-		if (siegeEvent.isRegistrationOver())
+		if(siegeEvent.isRegistrationOver())
 		{
 			player.sendPacket(SystemMsg.THIS_IS_NOT_THE_TIME_FOR_SIEGE_REGISTRATION_AND_SO_REGISTRATIONS_CANNOT_BE_ACCEPTED_OR_REJECTED);
 			return;
 		}
 
 		int allSize = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS).size();
-		if (allSize >= CastleSiegeEvent.MAX_SIEGE_CLANS)
+		if(allSize >= CastleSiegeEvent.MAX_SIEGE_CLANS)
 		{
 			player.sendPacket(SystemMsg.NO_MORE_REGISTRATIONS_MAY_BE_ACCEPTED_FOR_THE_DEFENDER_SIDE);
 			return;
@@ -72,7 +73,7 @@ public class RequestConfirmCastleSiegeWaitingList implements IClientIncomingPack
 
 		siegeEvent.removeObject(siegeClan.getType(), siegeClan);
 
-		if (_approved)
+		if(_approved)
 			siegeClan.setType(CastleSiegeEvent.DEFENDERS);
 		else
 			siegeClan.setType(CastleSiegeEvent.DEFENDERS_REFUSED);

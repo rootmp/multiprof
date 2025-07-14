@@ -31,18 +31,18 @@ public class ExShuttleInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_shuttle.getHeading()); // Maybe H
 		packetWriter.writeD(_shuttle.getBoatId()); // Shuttle ID (Arkan: 1,2; Cruma: 3)
 		packetWriter.writeD(_stops.size()); // doors_count
-		for (ShuttleStop stop : _stops)
+		for(ShuttleStop stop : _stops)
 		{
 			int stopId = stop.getId();
 			packetWriter.writeD(stopId); // Stop ID
-			for (Location loc : stop.getDimensions())
+			for(Location loc : stop.getDimensions())
 			{
 				packetWriter.writeD(loc.getX());
 				packetWriter.writeD(loc.getY());
 				packetWriter.writeD(loc.getZ());
 			}
 
-			if (_shuttle.getCurrentWayEvent().containsStop(stopId))
+			if(_shuttle.getCurrentWayEvent().containsStop(stopId))
 			{
 				packetWriter.writeD(_shuttle.isDocked());
 				packetWriter.writeD(true);

@@ -18,7 +18,6 @@ import l2s.gameserver.network.l2.s2c.worldexchange.ExWorldExchangeItemList;
 import l2s.gameserver.templates.WorldExchangeHolder;
 import l2s.gameserver.utils.Language;
 
-
 public class RequestExWorldExchangeItemList implements IClientIncomingPacket
 {
 	protected final Logger _log = LoggerFactory.getLogger(RequestExWorldExchangeItemList.class);
@@ -28,7 +27,7 @@ public class RequestExWorldExchangeItemList implements IClientIncomingPacket
 	private int cListingType;
 	private int cCurrencyType;
 	private int nPage;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -38,31 +37,31 @@ public class RequestExWorldExchangeItemList implements IClientIncomingPacket
 		cCurrencyType = packet.readC();
 		nPage = packet.readD(); // page
 		int size = packet.readD();
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			_itemIdList.add(packet.readD());
 		}
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.ENABLE_WORLD_EXCHANGE || _category > 25)
+		if(!Config.ENABLE_WORLD_EXCHANGE || _category > 25)
 			return;
 
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		final Language lang = Config.CAN_SELECT_LANGUAGE ? player.getLanguage() : Config.WORLD_EXCHANGE_DEFAULT_LANG;
-		if (_itemIdList.isEmpty())
+		if(_itemIdList.isEmpty())
 		{
 			WorldExchangeSortType sortType = WorldExchangeSortType.getWorldExchangeSortType(_sortType);
 			if(sortType == null)
 				_log.error("WorldExchangeSortType == null sortType:" + _sortType);
-			
-			final List<WorldExchangeHolder> holders = WorldExchangeManager.getInstance().getItemBids(player.getObjectId(), nPage , WorldExchangeItemSubType.getWorldExchangeItemSubType(_category), sortType, lang, cListingType, cCurrencyType);
+
+			final List<WorldExchangeHolder> holders = WorldExchangeManager.getInstance().getItemBids(player.getObjectId(), nPage, WorldExchangeItemSubType.getWorldExchangeItemSubType(_category), sortType, lang, cListingType, cCurrencyType);
 			player.sendPacket(new ExWorldExchangeItemList(player, holders, WorldExchangeItemSubType.getWorldExchangeItemSubType(_category)));
 		}
 		else

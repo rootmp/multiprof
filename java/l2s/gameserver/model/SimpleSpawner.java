@@ -19,10 +19,8 @@ public class SimpleSpawner extends Spawner implements Cloneable
 
 	public SimpleSpawner(NpcTemplate mobTemplate)
 	{
-		if (mobTemplate == null)
-		{
-			throw new NullPointerException();
-		}
+		if(mobTemplate == null)
+		{ throw new NullPointerException(); }
 
 		_npcTemplate = mobTemplate;
 		_spawned = new ArrayList<NpcInstance>(1);
@@ -31,10 +29,8 @@ public class SimpleSpawner extends Spawner implements Cloneable
 	public SimpleSpawner(int npcId)
 	{
 		NpcTemplate mobTemplate = NpcHolder.getInstance().getTemplate(npcId);
-		if (mobTemplate == null)
-		{
-			throw new NullPointerException("Not find npc: " + npcId);
-		}
+		if(mobTemplate == null)
+		{ throw new NullPointerException("Not find npc: " + npcId); }
 
 		_npcTemplate = mobTemplate;
 		_spawned = new ArrayList<NpcInstance>(1);

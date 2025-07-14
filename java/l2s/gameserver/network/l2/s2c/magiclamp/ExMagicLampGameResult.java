@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c.magiclamp;
 
+import l2s.commons.network.PacketWriter;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -23,15 +23,15 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_gameType == 0)
+		if(_gameType == 0)
 		{
 			_player.setMagicLampPoints(_player.getMagicLampPoints() - (10000000 * _gamesCount));
-			giveRewards(packetWriter , _player, false);
+			giveRewards(packetWriter, _player, false);
 		}
 		else
 		{
 			_player.setMagicLampPoints(_player.getMagicLampPoints() - (100000000 * _gamesCount));
-			if (!_player.getInventory().destroyItemByItemId(91641, _gamesCount * 5))
+			if(!_player.getInventory().destroyItemByItemId(91641, _gamesCount * 5))
 				return false;
 			giveRewards(packetWriter, _player, true);
 		}
@@ -47,14 +47,14 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 		int slot2wins = 0;
 		int slot3wins = 0;
 		int slot4wins = 0;
-		for (int i = 0; i < _gamesCount; i++)
+		for(int i = 0; i < _gamesCount; i++)
 		{
 			int number = Rnd.get(100);
-			if (number < 10)
+			if(number < 10)
 				slot1wins++;
-			else if (number < 30)
+			else if(number < 30)
 				slot2wins++;
-			else if (number < 60)
+			else if(number < 60)
 				slot3wins++;
 			else
 				slot4wins++;
@@ -65,10 +65,10 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 		long exp = 0;
 		long sp = 0;
 		int x = 1;
-		if (isSpecialGame)
+		if(isSpecialGame)
 			x = 12;
 
-		if (slot1wins > 0)
+		if(slot1wins > 0)
 		{
 			packetWriter.writeC(1); // slot id
 			packetWriter.writeD(slot1wins); // count wins
@@ -78,7 +78,7 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 			exp += (100_000_000 * x * slot1wins);
 			sp += (2_700_000 * x * slot1wins);
 		}
-		if (slot2wins > 0)
+		if(slot2wins > 0)
 		{
 			packetWriter.writeC(2);
 			packetWriter.writeD(slot2wins);
@@ -88,7 +88,7 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 			exp += (30_000_000 * x * slot2wins);
 			sp += (810_000 * x * slot2wins);
 		}
-		if (slot3wins > 0)
+		if(slot3wins > 0)
 		{
 			packetWriter.writeC(3);
 			packetWriter.writeD(slot3wins);
@@ -98,7 +98,7 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 			exp += (10_000_000 * x * slot3wins);
 			sp += (270_000 * x * slot3wins);
 		}
-		if (slot4wins > 0)
+		if(slot4wins > 0)
 		{
 			packetWriter.writeC(4);
 			packetWriter.writeD(slot4wins);

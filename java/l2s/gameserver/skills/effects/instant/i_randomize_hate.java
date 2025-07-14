@@ -19,7 +19,7 @@ public class i_randomize_hate extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 		return effected.isMonster();
 	}
@@ -29,23 +29,19 @@ public class i_randomize_hate extends i_abstract_effect
 	{
 
 		List<Creature> targetList = new ArrayList<>();
-		if ((effected == effector) || !effected.isAttackable(effector))
+		if((effected == effector) || !effected.isAttackable(effector))
+		{ return; }
+		for(Creature target : effected.getAroundCharacters(700, 500))
 		{
-			return;
-		}
-		for (Creature target : effected.getAroundCharacters(700, 500))
-		{
-			if (target.isPlayer() && target != effector)
+			if(target.isPlayer() && target != effector)
 				targetList.add(target);
 
 		}
-		if (targetList.isEmpty())
-		{
-			return;
-		}
+		if(targetList.isEmpty())
+		{ return; }
 
 		Creature target2 = targetList.get(Rnd.get(targetList.size()));
-		if (target2 == effector)
+		if(target2 == effector)
 			return;
 
 		effected.abortAttack(true, false);

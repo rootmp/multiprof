@@ -4,10 +4,9 @@ import java.util.Iterator;
 
 import org.dom4j.Element;
 
+import gnu.trove.map.hash.TIntIntHashMap;
 import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Skill;
-
-import gnu.trove.map.hash.TIntIntHashMap;
 
 /**
  * @author Bonux
@@ -82,24 +81,27 @@ public class CubicSkillInfo
 		int id = Integer.parseInt(element.attributeValue("id"));
 		int level = Integer.parseInt(element.attributeValue("level"));
 		int useChance = element.attributeValue("use_chance") == null ? 100 : Integer.parseInt(element.attributeValue("use_chance"));
-		CubicTargetType targetType = element.attributeValue("target_type") == null ? CubicTargetType.TARGET : CubicTargetType.valueOf(element.attributeValue("target_type").toUpperCase());
-		boolean canAttackDoor = element.attributeValue("can_attack_door") == null ? false : Boolean.parseBoolean(element.attributeValue("can_attack_door"));
+		CubicTargetType targetType = element.attributeValue("target_type")
+				== null ? CubicTargetType.TARGET : CubicTargetType.valueOf(element.attributeValue("target_type").toUpperCase());
+		boolean canAttackDoor = element.attributeValue("can_attack_door")
+				== null ? false : Boolean.parseBoolean(element.attributeValue("can_attack_door"));
 		int delay = element.attributeValue("delay") == null ? -1 : Integer.parseInt(element.attributeValue("delay"));
-		CubicReuseType reuse = element.attributeValue("reuse") == null ? CubicReuseType.DEFAULT : CubicReuseType.valueOf(element.attributeValue("reuse").toUpperCase());
+		CubicReuseType reuse = element.attributeValue("reuse")
+				== null ? CubicReuseType.DEFAULT : CubicReuseType.valueOf(element.attributeValue("reuse").toUpperCase());
 
 		Skill skill = SkillHolder.getInstance().getSkill(id, level);
-		if (skill == null)
+		if(skill == null)
 			return null;
 
 		CubicSkillInfo skillInfo = new CubicSkillInfo(skill, useChance, targetType, canAttackDoor, delay, reuse);
 
-		for (Iterator<Element> chanceIterator = element.elementIterator(); chanceIterator.hasNext();)
+		for(Iterator<Element> chanceIterator = element.elementIterator(); chanceIterator.hasNext();)
 		{
 			Element chanceElement = chanceIterator.next();
 			int min_hp_percent = Integer.parseInt(chanceElement.attributeValue("min_hp_percent"));
 			int max_hp_percent = Integer.parseInt(chanceElement.attributeValue("max_hp_percent"));
 			int value = Integer.parseInt(chanceElement.attributeValue("value"));
-			for (int i = min_hp_percent; i <= max_hp_percent; i++)
+			for(int i = min_hp_percent; i <= max_hp_percent; i++)
 				skillInfo.addChance(i, value);
 		}
 

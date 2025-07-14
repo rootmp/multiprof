@@ -24,8 +24,7 @@ public class ExShowAgitSiegeInfo implements IClientOutgoingPacket
 
 		_infos = new ArrayList<AgitInfo>(clanHalls.size());
 
-		clanHalls.forEach(clanHall ->
-		{
+		clanHalls.forEach(clanHall -> {
 			int ch_id = clanHall.getId();
 			int getType = clanHall.getClanHallType().ordinal();
 			Clan clan = ClanTable.getInstance().getClan(clanHall.getOwnerId());
@@ -40,8 +39,7 @@ public class ExShowAgitSiegeInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_infos.size());
-		_infos.forEach(info ->
-		{
+		_infos.forEach(info -> {
 			packetWriter.writeD(info.ch_id);
 			packetWriter.writeD(info.siegeDate);
 			packetWriter.writeSizedString(info.clan_name);

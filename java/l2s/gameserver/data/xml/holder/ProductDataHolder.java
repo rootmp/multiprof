@@ -4,12 +4,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.product.ProductItem;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -37,24 +36,24 @@ public final class ProductDataHolder extends AbstractHolder
 	public Collection<ProductItem> getProductsOnSale(Player player)
 	{
 		List<ProductItem> products = new ArrayList<ProductItem>();
-		for (ProductItem product : getProducts())
+		for(ProductItem product : getProducts())
 		{
-			if (!product.isOnSale())
+			if(!product.isOnSale())
 				continue;
 
-			if (product.getMinVipLevel() > player.getVIP().getLevel())
+			if(product.getMinVipLevel() > player.getVIP().getLevel())
 				continue;
 
-			if (product.getMaxVipLevel() < player.getVIP().getLevel())
+			if(product.getMaxVipLevel() < player.getVIP().getLevel())
 				continue;
 
-			if (System.currentTimeMillis() < product.getStartTimeSale())
+			if(System.currentTimeMillis() < product.getStartTimeSale())
 				continue;
 
-			if (System.currentTimeMillis() > product.getEndTimeSale())
+			if(System.currentTimeMillis() > product.getEndTimeSale())
 				continue;
 
-			if (product.getLocationId() != -1 && product.getLocationId() != player.getLocationId())
+			if(product.getLocationId() != -1 && product.getLocationId() != player.getLocationId())
 				continue;
 
 			products.add(product);

@@ -15,9 +15,9 @@ public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 	public GMViewQuestInfoPacket(Player targetCharacter)
 	{
 		_characterName = targetCharacter.getName();
-		for (QuestState quest : targetCharacter.getAllQuestsStates())
+		for(QuestState quest : targetCharacter.getAllQuestsStates())
 		{
-			if (quest.getQuest().isVisible(targetCharacter) && quest.isStarted())
+			if(quest.getQuest().isVisible(targetCharacter) && quest.isStarted())
 			{
 				_quests.put(quest.getQuest().getId(), quest.getCondsMask());
 			}
@@ -29,7 +29,7 @@ public class GMViewQuestInfoPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeS(_characterName);
 		packetWriter.writeH(_quests.size());
-		for (TIntIntIterator iterator = _quests.iterator(); iterator.hasNext();)
+		for(TIntIntIterator iterator = _quests.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 

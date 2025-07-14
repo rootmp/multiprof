@@ -21,7 +21,7 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 
 		final int first = Math.max((page - 1) * ITEMS_PER_PAGE, 0);
 		final int firstNot = Math.min(page * ITEMS_PER_PAGE, _fullSize);
-		for (int i = first; i < firstNot; i++)
+		for(int i = first; i < firstNot; i++)
 		{
 			_waitingList.add(new PartyMatchingWaitingInfo(temp.get(i)));
 		}
@@ -32,14 +32,14 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_fullSize);
 		packetWriter.writeD(_waitingList.size());
-		for (PartyMatchingWaitingInfo waitingInfo : _waitingList)
+		for(PartyMatchingWaitingInfo waitingInfo : _waitingList)
 		{
 			packetWriter.writeS(waitingInfo.name);
 			packetWriter.writeD(waitingInfo.classId);
 			packetWriter.writeD(waitingInfo.level);
 			packetWriter.writeD(waitingInfo.locationId);
 			packetWriter.writeD(waitingInfo.instanceReuses.size());
-			for (int i : waitingInfo.instanceReuses)
+			for(int i : waitingInfo.instanceReuses)
 			{
 				packetWriter.writeD(i);
 			}

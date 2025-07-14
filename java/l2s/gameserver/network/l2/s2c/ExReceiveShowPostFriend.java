@@ -22,7 +22,7 @@ public class ExReceiveShowPostFriend implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_list.size());
-		for (String t : _list.valueCollection())
+		for(String t : _list.valueCollection())
 		{
 			packetWriter.writeS(t);
 		}

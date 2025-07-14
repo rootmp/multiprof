@@ -65,13 +65,13 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 			int instanceId;
 			String name;
 			SchedulingPattern resetReuse = TimeUtils.DAILY_DATE_PATTERN; // Сброс реюза по умолчанию в каждые сутки в
-																			// 6:30
+			// 6:30
 			int timelimit = -1;
 			int timer = 60;
 			boolean dispelBuffs = false;
@@ -97,7 +97,7 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 			name = element.attributeValue("name");
 
 			String n = element.attributeValue("timelimit");
-			if (n != null)
+			if(n != null)
 				timelimit = Integer.parseInt(n);
 
 			n = element.attributeValue("collapseIfEmpty");
@@ -113,63 +113,63 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 			List<Location> teleportLocs = Collections.emptyList();
 			Location ret = null;
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("level".equalsIgnoreCase(subElement.getName()))
+				if("level".equalsIgnoreCase(subElement.getName()))
 				{
 					minLevel = subElement.attributeValue("min") == null ? 1 : Integer.parseInt(subElement.attributeValue("min"));
 					maxLevel = subElement.attributeValue("max") == null ? Integer.MAX_VALUE : Integer.parseInt(subElement.attributeValue("max"));
 				}
-				else if ("collapse".equalsIgnoreCase(subElement.getName()))
+				else if("collapse".equalsIgnoreCase(subElement.getName()))
 				{
 					onPartyDismiss = Boolean.parseBoolean(subElement.attributeValue("on-party-dismiss"));
 					timer = Integer.parseInt(subElement.attributeValue("timer"));
 				}
-				else if ("party".equalsIgnoreCase(subElement.getName()))
+				else if("party".equalsIgnoreCase(subElement.getName()))
 				{
 					minParty = Integer.parseInt(subElement.attributeValue("min"));
 					maxParty = Integer.parseInt(subElement.attributeValue("max"));
 				}
-				else if ("return".equalsIgnoreCase(subElement.getName()))
+				else if("return".equalsIgnoreCase(subElement.getName()))
 					ret = Location.parseLoc(subElement.attributeValue("loc"));
-				else if ("teleport".equalsIgnoreCase(subElement.getName()))
+				else if("teleport".equalsIgnoreCase(subElement.getName()))
 				{
-					if (teleportLocs.isEmpty())
+					if(teleportLocs.isEmpty())
 						teleportLocs = new ArrayList<Location>(1);
 					teleportLocs.add(Location.parseLoc(subElement.attributeValue("loc")));
 				}
-				else if ("remove".equalsIgnoreCase(subElement.getName()))
+				else if("remove".equalsIgnoreCase(subElement.getName()))
 				{
 					removedItemId = Integer.parseInt(subElement.attributeValue("itemId"));
 					removedItemCount = Integer.parseInt(subElement.attributeValue("count"));
 					removedItemNecessity = Boolean.parseBoolean(subElement.attributeValue("necessary"));
 				}
-				else if ("give".equalsIgnoreCase(subElement.getName()))
+				else if("give".equalsIgnoreCase(subElement.getName()))
 				{
 					giveItemId = Integer.parseInt(subElement.attributeValue("itemId"));
 					givedItemCount = Integer.parseInt(subElement.attributeValue("count"));
 				}
-				else if ("quest".equalsIgnoreCase(subElement.getName()))
+				else if("quest".equalsIgnoreCase(subElement.getName()))
 				{
 					requiredQuestId = Integer.parseInt(subElement.attributeValue("id"));
 				}
-				else if ("reuse".equalsIgnoreCase(subElement.getName()))
+				else if("reuse".equalsIgnoreCase(subElement.getName()))
 				{
 					resetReuse = new SchedulingPattern(subElement.attributeValue("resetReuse"));
-					if (subElement.attributeValue("sharedReuseGroup") != null)
+					if(subElement.attributeValue("sharedReuseGroup") != null)
 						sharedReuseGroup = Integer.parseInt(subElement.attributeValue("sharedReuseGroup"));
-					if (subElement.attributeValue("setUponEntry") != null)
+					if(subElement.attributeValue("setUponEntry") != null)
 						setReuseUponEntry = Boolean.parseBoolean(subElement.attributeValue("setUponEntry"));
-					if (subElement.attributeValue("notify_on_set_reuse") != null)
+					if(subElement.attributeValue("notify_on_set_reuse") != null)
 						notifyOnSetReuse = Boolean.parseBoolean(subElement.attributeValue("notify_on_set_reuse"));
 				}
-				else if ("doors".equalsIgnoreCase(subElement.getName()))
+				else if("doors".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if (doors.isEmpty())
+						if(doors.isEmpty())
 							doors = new HashIntObjectMap<InstantZone.DoorInfo>();
 
 						boolean opened = e.attributeValue("opened") != null && Boolean.parseBoolean(e.attributeValue("opened"));
@@ -178,16 +178,16 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 						doors.put(template.getId(), new InstantZone.DoorInfo(template, opened, invul));
 					}
 				}
-				else if ("zones".equalsIgnoreCase(subElement.getName()))
+				else if("zones".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if (zones.isEmpty())
+						if(zones.isEmpty())
 							zones = new HashMap<String, InstantZone.ZoneInfo>();
 
 						boolean active = e.attributeValue("active") != null && Boolean.parseBoolean(e.attributeValue("active"));
 						ZoneTemplate template = ZoneHolder.getInstance().getTemplate(e.attributeValue("name"));
-						if (template == null)
+						if(template == null)
 						{
 							error("Zone: " + e.attributeValue("name") + " not found; file: " + getCurrentFileName());
 							continue;
@@ -195,31 +195,31 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 						zones.put(template.getName(), new InstantZone.ZoneInfo(template, active));
 					}
 				}
-				else if ("add_parameters".equalsIgnoreCase(subElement.getName()))
+				else if("add_parameters".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
-						if ("param".equalsIgnoreCase(e.getName()))
+					for(Element e : subElement.elements())
+						if("param".equalsIgnoreCase(e.getName()))
 							params.set(e.attributeValue("name"), e.attributeValue("value"));
 				}
-				else if ("spawns".equalsIgnoreCase(subElement.getName()))
+				else if("spawns".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
-						if ("group".equalsIgnoreCase(e.getName()))
+					for(Element e : subElement.elements())
+						if("group".equalsIgnoreCase(e.getName()))
 						{
 							String group = e.attributeValue("name");
 							boolean spawned = e.attributeValue("spawned") != null && Boolean.parseBoolean(e.attributeValue("spawned"));
 							List<SpawnTemplate> templates = SpawnHolder.getInstance().getSpawn(group);
-							if (templates == null)
+							if(templates == null)
 								info("not find spawn group: " + group + " in file: " + getCurrentFileName());
 							else
 							{
-								if (spawns2.isEmpty())
+								if(spawns2.isEmpty())
 									spawns2 = new Hashtable<String, InstantZone.SpawnInfo2>();
 
 								spawns2.put(group, new InstantZone.SpawnInfo2(templates, spawned));
 							}
 						}
-						else if ("spawn".equalsIgnoreCase(e.getName()))
+						else if("spawn".equalsIgnoreCase(e.getName()))
 						{
 							String[] mobs = e.attributeValue("mobId").split(" ");
 
@@ -236,33 +236,33 @@ public class InstantZoneParser extends AbstractParser<InstantZoneHolder>
 							spawnType = 0;
 
 							String spawnTypeNode = e.attributeValue("type");
-							if (spawnTypeNode == null || spawnTypeNode.equalsIgnoreCase("point"))
+							if(spawnTypeNode == null || spawnTypeNode.equalsIgnoreCase("point"))
 								spawnType = 0;
-							else if (spawnTypeNode.equalsIgnoreCase("rnd"))
+							else if(spawnTypeNode.equalsIgnoreCase("rnd"))
 								spawnType = 1;
-							else if (spawnTypeNode.equalsIgnoreCase("loc"))
+							else if(spawnTypeNode.equalsIgnoreCase("loc"))
 								spawnType = 2;
 							else
 								error("Spawn type  '" + spawnTypeNode + "' is unknown!");
 
-							for (Element e2 : e.elements())
-								if ("coords".equalsIgnoreCase(e2.getName()))
+							for(Element e2 : e.elements())
+								if("coords".equalsIgnoreCase(e2.getName()))
 									coords.add(Location.parseLoc(e2.attributeValue("loc")));
 
 							Territory territory = null;
-							if (spawnType == 2)
+							if(spawnType == 2)
 							{
 								Polygon poly = new Polygon();
-								for (Location loc : coords)
+								for(Location loc : coords)
 									poly.add(loc.x, loc.y).setZmin(loc.z).setZmax(loc.z);
 
-								if (!poly.validate())
+								if(!poly.validate())
 									error("invalid spawn territory for instance id : " + instanceId + " - " + poly + "!");
 
 								territory = new Territory().add(poly);
 							}
 
-							for (String mob : mobs)
+							for(String mob : mobs)
 							{
 								mobId = Integer.parseInt(mob);
 								spawnDat = new InstantZone.SpawnInfo(spawnType, mobId, count, respawn, respawnRnd, coords, territory);

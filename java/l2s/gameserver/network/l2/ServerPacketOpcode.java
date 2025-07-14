@@ -4,10 +4,10 @@ public final class ServerPacketOpcode
 {
 	private int _id;
 	private int _exId;
-	
+
 	public ServerPacketOpcode(int id, int exId)
 	{
-		_id=id;
+		_id = id;
 		_exId = exId;
 	}
 
@@ -20,5 +20,5 @@ public final class ServerPacketOpcode
 	{
 		return _exId;
 	}
-	
+
 }

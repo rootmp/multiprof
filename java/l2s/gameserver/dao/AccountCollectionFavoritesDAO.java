@@ -24,6 +24,7 @@ public class AccountCollectionFavoritesDAO
 	private static final String INSERT_QUERY = "INSERT INTO account_collection_favorites (account_name,collection_id) VALUES(?,?)";
 	private static final String SELECT_QUERY = "SELECT collection_id FROM account_collection_favorites WHERE account_name = ?";
 	private static final String DELETE_QUERY = "DELETE FROM account_collection_favorites WHERE account_name=? AND collection_id=?";
+
 	public static AccountCollectionFavoritesDAO getInstance()
 	{
 		return _instance;
@@ -57,7 +58,7 @@ public class AccountCollectionFavoritesDAO
 		}
 		return result;
 	}
-	
+
 	public void insert(String account_name, int collectionId)
 	{
 		Connection con = null;
@@ -79,7 +80,7 @@ public class AccountCollectionFavoritesDAO
 			DbUtils.closeQuietly(con, statement);
 		}
 	}
-	
+
 	public void delete(String account_name, int collectionId)
 	{
 		Connection con = null;

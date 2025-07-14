@@ -15,10 +15,9 @@ import l2s.gameserver.utils.HtmlUtils;
  */
 public class ClanPenalty implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		100,
-		114
+	private static final int[] COMMAND_IDS = {
+			100,
+			114
 	};
 
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
@@ -26,38 +25,38 @@ public class ClanPenalty implements IUserCommandHandler
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (COMMAND_IDS[0] != id)
+		if(COMMAND_IDS[0] != id)
 			return false;
 
 		long leaveClan = 0;
-		if (activeChar.getLeaveClanTime() != 0)
+		if(activeChar.getLeaveClanTime() != 0)
 			leaveClan = activeChar.getLeaveClanTime() + Config.ALT_CLAN_LEAVE_PENALTY_TIME * 60 * 60 * 1000L;
 
 		long deleteClan = 0;
-		if (activeChar.getDeleteClanTime() != 0)
+		if(activeChar.getDeleteClanTime() != 0)
 			deleteClan = activeChar.getDeleteClanTime() + Config.ALT_CLAN_CREATE_PENALTY_TIME * 60 * 60 * 1000L;
 
 		String html = HtmCache.getInstance().getHtml("command/penalty.htm", activeChar);
 
-		if (activeChar.getClanId() == 0)
+		if(activeChar.getClanId() == 0)
 		{
-			if (leaveClan == 0 && deleteClan == 0)
+			if(leaveClan == 0 && deleteClan == 0)
 			{
 				html = html.replace("%reason%", new CustomMessage("l2s.gameserver.handler.usercommands.impl.ClanPenalty.PenaltyImposed").toString(activeChar));
 				html = html.replace("%expiration%", " ");
 			}
-			else if (leaveClan > 0 && deleteClan == 0)
+			else if(leaveClan > 0 && deleteClan == 0)
 			{
 				html = html.replace("%reason%", new CustomMessage("l2s.gameserver.handler.usercommands.impl.ClanPenalty.PenaltyLeaving").toString(activeChar));
 				html = html.replace("%expiration%", DATE_FORMAT.format(leaveClan));
 			}
-			else if (deleteClan > 0)
+			else if(deleteClan > 0)
 			{
 				html = html.replace("%reason%", new CustomMessage("l2s.gameserver.handler.usercommands.impl.ClanPenalty.PenaltyDissolving").toString(activeChar));
 				html = html.replace("%expiration%", DATE_FORMAT.format(deleteClan));
 			}
 		}
-		else if (activeChar.getClan().canInvite())
+		else if(activeChar.getClan().canInvite())
 		{
 			html = html.replace("%reason%", new CustomMessage("l2s.gameserver.handler.usercommands.impl.ClanPenalty.PenaltyImposed").toString(activeChar));
 			html = html.replace("%expiration%", " ");

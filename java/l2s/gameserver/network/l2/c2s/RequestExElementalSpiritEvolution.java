@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
@@ -27,11 +28,11 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Elemental elemental = activeChar.getElementalList().get(_elementId);
-		if (elemental == null)
+		if(elemental == null)
 		{
 			activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -39,7 +40,7 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isInCombat())
+		if(activeChar.isInCombat())
 		{
 			activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -47,7 +48,7 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 			return;
 		}
 
-		if (elemental.getLevel() < 10 || elemental.getExp() < elemental.getMaxExp())
+		if(elemental.getLevel() < 10 || elemental.getExp() < elemental.getMaxExp())
 		{
 			activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -56,7 +57,7 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 		}
 
 		int nextEvolutionLevel = elemental.getEvolutionLevel() + 1;
-		if (elemental.getTemplate().getEvolution(nextEvolutionLevel) == null)
+		if(elemental.getTemplate().getEvolution(nextEvolutionLevel) == null)
 		{
 			activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -67,9 +68,9 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 		activeChar.getInventory().writeLock();
 		try
 		{
-			for (ItemData item : elemental.getEvolution().getRiseLevelCost())
+			for(ItemData item : elemental.getEvolution().getRiseLevelCost())
 			{
-				if (!ItemFunctions.haveItem(activeChar, item.getId(), item.getCount()))
+				if(!ItemFunctions.haveItem(activeChar, item.getId(), item.getCount()))
 				{
 					activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 					activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -78,7 +79,7 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 				}
 			}
 
-			if (!elemental.setEvolutionLevel(nextEvolutionLevel))
+			if(!elemental.setEvolutionLevel(nextEvolutionLevel))
 			{
 				activeChar.sendPacket(new ExElementalSpiritEvolution(activeChar, false, _elementId));
 				activeChar.sendPacket(new ExElementalSpiritEvolutionInfo(activeChar, _elementId));
@@ -86,7 +87,7 @@ public class RequestExElementalSpiritEvolution implements IClientIncomingPacket
 				return;
 			}
 
-			for (ItemData item : elemental.getEvolution().getRiseLevelCost())
+			for(ItemData item : elemental.getEvolution().getRiseLevelCost())
 				ItemFunctions.deleteItem(activeChar, item.getId(), item.getCount(), true);
 		}
 		finally

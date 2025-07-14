@@ -20,16 +20,16 @@ public class Disablers extends Skill
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
 		final Creature realTarget = reflected ? activeChar : target;
-		if (_skillInterrupt)
+		if(_skillInterrupt)
 		{
-			if (!realTarget.isRaid())
+			if(!realTarget.isRaid())
 			{
 				SkillEntry skillEntry = realTarget.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-				if (skillEntry != null && !skillEntry.getTemplate().isMagic())
+				if(skillEntry != null && !skillEntry.getTemplate().isMagic())
 					realTarget.abortCast(false, true, true, false);
 
 				skillEntry = realTarget.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-				if (skillEntry != null && !skillEntry.getTemplate().isMagic())
+				if(skillEntry != null && !skillEntry.getTemplate().isMagic())
 					realTarget.abortCast(false, true, false, true);
 
 				realTarget.abortAttack(true, true);

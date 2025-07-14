@@ -54,7 +54,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 
 	public void decreaseScheduledCount()
 	{
-		if (_scheduledCount > 0)
+		if(_scheduledCount > 0)
 		{
 			_scheduledCount--;
 		}
@@ -73,7 +73,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 	public void setReflection(Reflection reflection)
 	{
 		_reflection = reflection;
-		for (NpcInstance npc : _spawned)
+		for(NpcInstance npc : _spawned)
 		{
 			npc.setReflection(reflection);
 		}
@@ -101,10 +101,8 @@ public abstract class Spawner extends EventOwner implements Cloneable
 
 	public boolean hasRespawn()
 	{
-		if (getRespawnDelay() == 0 && getRespawnDelayRandom() == 0 && getRespawnPattern() == null)
-		{
-			return false;
-		}
+		if(getRespawnDelay() == 0 && getRespawnDelayRandom() == 0 && getRespawnPattern() == null)
+		{ return false; }
 		return true;
 	}
 
@@ -120,7 +118,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 
 	public void setAmount(int amount)
 	{
-		if (_referenceCount == 0)
+		if(_referenceCount == 0)
 		{
 			_referenceCount = amount;
 		}
@@ -130,7 +128,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 	public void deleteAll()
 	{
 		stopRespawn();
-		for (NpcInstance npc : _spawned)
+		for(NpcInstance npc : _spawned)
 		{
 			npc.deleteMe();
 		}
@@ -159,7 +157,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 	// -----------------------------------------------------------------------------------------------------------------------------------
 	public int init()
 	{
-		while (_currentCount + _scheduledCount < _maximumCount)
+		while(_currentCount + _scheduledCount < _maximumCount)
 		{
 			doSpawn(false);
 		}
@@ -197,7 +195,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 
 	public void setRespawnDelay(int respawnDelay, int respawnDelayRandom)
 	{
-		if (respawnDelay < 0)
+		if(respawnDelay < 0)
 		{
 			_log.warn("respawn delay is negative");
 		}
@@ -224,25 +222,23 @@ public abstract class Spawner extends EventOwner implements Cloneable
 	// -----------------------------------------------------------------------------------------------------------------------------------
 	protected NpcInstance doSpawn0(NpcTemplate template, boolean spawn, MultiValueSet<String> set, List<MinionData> minions)
 	{
-		if (template.isInstanceOf(PetInstance.class))
+		if(template.isInstanceOf(PetInstance.class))
 		{
 			_currentCount++;
 			return null;
 		}
 
 		NpcInstance tmp = template.getNewInstance(set);
-		if (tmp == null)
-		{
-			return null;
-		}
+		if(tmp == null)
+		{ return null; }
 
-		if (!minions.isEmpty())
+		if(!minions.isEmpty())
 		{
-			for (MinionData minionData : minions)
+			for(MinionData minionData : minions)
 				tmp.getMinionList().addMinion(minionData);
 		}
 
-		if (!spawn)
+		if(!spawn)
 		{
 			spawn = _respawnTime <= System.currentTimeMillis() / 1000 + MIN_RESPAWN_DELAY;
 		}
@@ -262,17 +258,18 @@ public abstract class Spawner extends EventOwner implements Cloneable
 		mob.setSpawnedLoc(newLoc);
 
 		// Является ли моб "подземным" мобом?
-		mob.setUnderground(GeoEngine.getLowerHeight(newLoc, getReflection().getGeoIndex()) < GeoEngine.getLowerHeight(newLoc.clone().changeZ(5000), getReflection().getGeoIndex()));
+		mob.setUnderground(GeoEngine.getLowerHeight(newLoc, getReflection().getGeoIndex())
+				< GeoEngine.getLowerHeight(newLoc.clone().changeZ(5000), getReflection().getGeoIndex()));
 
-		for (Event e : getEvents())
+		for(Event e : getEvents())
 			mob.addEvent(e);
 
-		if (spawn)
+		if(spawn)
 		{
 			// Спавнится в указанном отражении
 			mob.setReflection(getReflection());
 
-			if (mob.isMonster())
+			if(mob.isMonster())
 			{
 				((MonsterInstance) mob).setChampion();
 			}
@@ -302,22 +299,16 @@ public abstract class Spawner extends EventOwner implements Cloneable
 
 	public void decreaseCount0(NpcTemplate template, NpcInstance spawnedNpc, long deathTime)
 	{
-		if (_currentCount <= 0)
-		{
-			return;
-		}
-		
+		if(_currentCount <= 0)
+		{ return; }
+
 		_currentCount--;
 
-		if (template == null || spawnedNpc == null)
-		{
-			return;
-		}
-		if (!hasRespawn())
-		{
-			return;
-		}
-		if (isDoRespawn() && _scheduledCount + _currentCount < _maximumCount)
+		if(template == null || spawnedNpc == null)
+		{ return; }
+		if(!hasRespawn())
+		{ return; }
+		if(isDoRespawn() && _scheduledCount + _currentCount < _maximumCount)
 		{
 			// Update the current number of SpawnTask in progress or stand by of this
 			// L2Spawn
@@ -333,7 +324,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 		final int respawnTime;
 		final long delay = (long) (isRaid ? Config.ALT_RAID_RESPAWN_MULTIPLIER : 1.) * getRespawnDelayWithRnd() * 1000L;
 
-		if (getRespawnPattern() != null)
+		if(getRespawnPattern() != null)
 		{
 			respawnTime = (int) (getRespawnPattern().next(deathTime) / 1000);
 		}
@@ -348,7 +339,7 @@ public abstract class Spawner extends EventOwner implements Cloneable
 	public List<NpcInstance> initAndReturn()
 	{
 		List<NpcInstance> spawnedNpcs = new ArrayList<NpcInstance>();
-		while ((_currentCount + _scheduledCount) < (_maximumCount))
+		while((_currentCount + _scheduledCount) < (_maximumCount))
 		{
 			spawnedNpcs.add(doSpawn(false));
 		}

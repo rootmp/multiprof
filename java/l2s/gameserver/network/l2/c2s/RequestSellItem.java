@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.ArrayUtils;
 
 import l2s.commons.math.SafeMath;
@@ -30,7 +31,7 @@ public class RequestSellItem implements IClientIncomingPacket
 	{
 		_listId = packet.readD();
 		_count = packet.readD();
-		if (_count * 16 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 16 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
@@ -38,12 +39,12 @@ public class RequestSellItem implements IClientIncomingPacket
 		_items = new int[_count];
 		_itemQ = new long[_count];
 
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			_items[i] = packet.readD(); // object id
 			packet.readD(); // item id
 			_itemQ[i] = packet.readQ(); // count
-			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			if(_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
 				break;
@@ -56,47 +57,47 @@ public class RequestSellItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _count == 0)
+		if(activeChar == null || _count == 0)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
+		if(!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		NpcInstance merchant = NpcUtils.canPassPacket(activeChar, this);
-		if (!Config.BBS_SELL_ITEMS_ENABLED && merchant == null && !activeChar.isGM())
+		if(!Config.BBS_SELL_ITEMS_ENABLED && merchant == null && !activeChar.isGM())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -107,10 +108,10 @@ public class RequestSellItem implements IClientIncomingPacket
 		double taxRate = 0;
 
 		Castle castle = null;
-		if (merchant != null)
+		if(merchant != null)
 		{
 			castle = merchant.getCastle(activeChar);
-			if (castle != null)
+			if(castle != null)
 				taxRate = castle.getTaxRate();
 		}
 
@@ -120,20 +121,20 @@ public class RequestSellItem implements IClientIncomingPacket
 		activeChar.getRefund().writeLock();
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for(int i = 0; i < _count; i++)
 			{
 				int objectId = _items[i];
 				long count = _itemQ[i];
-				if (count <= 0)
+				if(count <= 0)
 					continue;
 
 				ItemInstance item = inventory.getItemByObjectId(objectId);
-				if (item == null || item.getCount() < count || !item.canBeSold(activeChar))
+				if(item == null || item.getCount() < count || !item.canBeSold(activeChar))
 					continue;
 
 				totalPrice = SafeMath.addAndCheck(totalPrice, Config.ALT_SELL_ITEM_ONE_ADENA ? 1 : SafeMath.mulAndCheck(item.getReferencePrice(), count) / 2);
 
-				if (Config.ALLOW_ITEMS_REFUND)
+				if(Config.ALLOW_ITEMS_REFUND)
 				{
 					ItemInstance refund = inventory.removeItemByObjectId(objectId, count);
 					Log.LogItem(activeChar, Log.RefundSell, refund);
@@ -146,7 +147,7 @@ public class RequestSellItem implements IClientIncomingPacket
 				}
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			return;
@@ -164,9 +165,9 @@ public class RequestSellItem implements IClientIncomingPacket
 		activeChar.addAdena(totalPrice);
 
 		// Add tax to castle treasury if not owned by npc clan
-		if (castle != null)
+		if(castle != null)
 		{
-			if (tax > 0 && castle.getOwnerId() > 0 && activeChar.getReflection().isMain())
+			if(tax > 0 && castle.getOwnerId() > 0 && activeChar.getReflection().isMain())
 				castle.addToTreasury(tax, true);
 		}
 

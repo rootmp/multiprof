@@ -41,7 +41,7 @@ public class CharacterPremiumItemsDAO
 			statement = con.prepareStatement("SELECT receive_time, item_id, item_count, sender FROM character_premium_items WHERE char_id = ?");
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int receive_time = rset.getInt("receive_time");
 				int item_id = rset.getInt("item_id");
@@ -51,7 +51,7 @@ public class CharacterPremiumItemsDAO
 				list.add(new PremiumItem(receive_time, item_id, item_count, sender));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterPremiumItemsDAO.select(L2Player): " + e, e);
 		}
@@ -77,7 +77,7 @@ public class CharacterPremiumItemsDAO
 			statement.setString(5, item.getSender());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not add item to premium item list: " + item, e);
 			return false;
@@ -104,7 +104,7 @@ public class CharacterPremiumItemsDAO
 			statement.setString(5, item.getSender());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not delete item: " + item + " ownerId: " + owner.getObjectId(), e);
 			return false;
@@ -132,7 +132,7 @@ public class CharacterPremiumItemsDAO
 			statement.setString(6, item.getSender());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not update item: " + item, e);
 			return false;

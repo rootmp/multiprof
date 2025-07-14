@@ -33,13 +33,13 @@ public class HidenItemsDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM hidden_items");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				hidden_obj = rset.getInt("obj_id");
 				_l.add(hidden_obj);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("not working?");
 		}
@@ -53,7 +53,7 @@ public class HidenItemsDAO
 
 	public static void addHiddenItem(ItemInstance item)
 	{
-		if (_l.contains(item.getObjectId()))
+		if(_l.contains(item.getObjectId()))
 			return;
 		Connection con = null;
 		PreparedStatement statement = null;
@@ -64,7 +64,7 @@ public class HidenItemsDAO
 			statement.setInt(1, item.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Hidden Item:" + e, e);
 		}
@@ -82,9 +82,9 @@ public class HidenItemsDAO
 
 	public static boolean isHidden(ItemInstance item)
 	{
-		if (item == null)
+		if(item == null)
 			return false;
-		if (_l.contains(item.getObjectId()))
+		if(_l.contains(item.getObjectId()))
 			return true;
 		return false;
 	}

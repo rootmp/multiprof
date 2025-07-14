@@ -48,7 +48,7 @@ public class ObservePoint extends Creature
 	{
 		super.onSpawn();
 
-		if (getReflection().isMain() && !isMovementDisabled() && !getPlayer().getPlayerAccess().CanUseMovingObservationPoint)
+		if(getReflection().isMain() && !isMovementDisabled() && !getPlayer().getPlayerAccess().CanUseMovingObservationPoint)
 			Log.add("Movable observation point from player " + getPlayer().toString() + " somehow appeared in main world !", "warning");
 	}
 

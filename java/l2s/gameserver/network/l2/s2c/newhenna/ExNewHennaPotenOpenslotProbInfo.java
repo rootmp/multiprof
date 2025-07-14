@@ -10,27 +10,27 @@ import l2s.gameserver.templates.item.data.ItemData;
 public class ExNewHennaPotenOpenslotProbInfo implements IClientOutgoingPacket
 {
 	private int nReqOpenSlotStep;
-  private int nReqOpenSlotProb;
+	private int nReqOpenSlotProb;
 	private List<ItemData> vReqOpenSlotCostItemList = Collections.emptyList();
-	
+
 	public ExNewHennaPotenOpenslotProbInfo()
 	{
 		//System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(nReqOpenSlotStep);
 		packetWriter.writeD(nReqOpenSlotProb);
-		
+
 		packetWriter.writeD(vReqOpenSlotCostItemList.size());
 		for(ItemData failItem : vReqOpenSlotCostItemList)
 		{
 			packetWriter.writeD(failItem.getId());
 			packetWriter.writeD((int) failItem.getCount());
 		}
-		
+
 		return true;
 	}
 }

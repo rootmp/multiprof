@@ -38,7 +38,7 @@ public class DuelSnapshotObject
 	{
 		_player = player;
 		_team = team;
-		if (store)
+		if(store)
 			store();
 	}
 
@@ -46,7 +46,8 @@ public class DuelSnapshotObject
 	{
 		_classIndex = _player.getActiveSubClass().getIndex();
 
-		_returnLoc = _player.getStablePoint() == null ? _player.getReflection().getReturnLoc() == null ? _player.getLoc() : _player.getReflection().getReturnLoc() : _player.getStablePoint();
+		_returnLoc = _player.getStablePoint() == null ? _player.getReflection().getReturnLoc()
+				== null ? _player.getLoc() : _player.getReflection().getReturnLoc() : _player.getStablePoint();
 
 		_currentCp = _player.getCurrentCp();
 		_currentHp = _player.getCurrentHp();
@@ -57,23 +58,23 @@ public class DuelSnapshotObject
 
 	public void restore()
 	{
-		if (_player == null)
+		if(_player == null)
 			return;
 
 		// Отменяем дебаффы повешенные во время дуэли.
-		for (Abnormal abnormal : _player.getAbnormalList())
+		for(Abnormal abnormal : _player.getAbnormalList())
 		{
-			if (!abnormal.isOffensive())
+			if(!abnormal.isOffensive())
 				continue;
 
-			if (_abnormals.contains(abnormal))
+			if(_abnormals.contains(abnormal))
 				continue;
 
 			abnormal.exit();
 		}
 
-		if (_classIndex == _player.getActiveSubClass().getIndex()) // если саб был сменен во время дуэли бафы не
-																	// восстанавливаем
+		if(_classIndex == _player.getActiveSubClass().getIndex()) // если саб был сменен во время дуэли бафы не
+		// восстанавливаем
 		{
 			_player.setCurrentCp(_currentCp);
 			_player.setCurrentHpMp(_currentHp, _currentMp);
@@ -87,13 +88,12 @@ public class DuelSnapshotObject
 
 	public void teleportBack()
 	{
-		if (_player == null)
+		if(_player == null)
 			return;
 
 		_player.setStablePoint(null);
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			_player.getFlags().getFrozen().stop();
 			_player.teleToLocation(_returnLoc, ReflectionManager.MAIN);
 		}, 5000L);
@@ -101,19 +101,18 @@ public class DuelSnapshotObject
 
 	public void blockUnblock()
 	{
-		if (_player == null)
+		if(_player == null)
 			return;
 
 		_player.block();
 
 		final List<Servitor> servitors = _player.getServitors();
-		for (Servitor servitor : servitors)
+		for(Servitor servitor : servitors)
 			servitor.block();
 
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			_player.unblock();
-			for (Servitor servitor : servitors)
+			for(Servitor servitor : servitors)
 				servitor.unblock();
 		}, 3000L);
 	}

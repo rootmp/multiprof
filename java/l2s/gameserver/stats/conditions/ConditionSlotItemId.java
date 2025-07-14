@@ -19,7 +19,7 @@ public final class ConditionSlotItemId extends ConditionInventory
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		return ItemFunctions.checkIsEquipped(env.character.getPlayer(), _slot, _itemId, _enchantLevel);

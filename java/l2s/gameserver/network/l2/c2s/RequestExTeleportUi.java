@@ -18,11 +18,11 @@ public class RequestExTeleportUi implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if(player==null)
+		if(player == null)
 			return;
 		if(player.isInJail())
 			player.sendPacket(SystemMsg.S_13749);
-		
+
 		player.sendPacket(new ExTeleportUi());
 	}
 }

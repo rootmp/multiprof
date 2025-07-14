@@ -49,8 +49,7 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 
 	private final Cache cache;
 
-	private final JdbcEntityStats stats = new JdbcEntityStats()
-	{
+	private final JdbcEntityStats stats = new JdbcEntityStats(){
 		@Override
 		public long getLoadCount()
 		{
@@ -119,7 +118,7 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	{
 		ItemInstance item = null;
 
-		if (rset.next())
+		if(rset.next())
 		{
 			int objectId = rset.getInt(1);
 			item = new ItemInstance(objectId);
@@ -259,7 +258,7 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 		ItemInstance item;
 
 		Element ce = cache.get(objectId);
-		if (ce != null)
+		if(ce != null)
 		{
 			item = (ItemInstance) ce.getObjectValue();
 			return item;
@@ -268,14 +267,12 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 		try
 		{
 			item = load0(objectId);
-			if (item == null)
-			{
-				return null;
-			}
+			if(item == null)
+			{ return null; }
 
 			item.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while restoring item : " + objectId, e);
 			return null;
@@ -290,18 +287,16 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	{
 		Collection<ItemInstance> list = Collections.emptyList();
 
-		if (objectIds.isEmpty())
-		{
-			return list;
-		}
+		if(objectIds.isEmpty())
+		{ return list; }
 
 		list = new ArrayList<ItemInstance>(objectIds.size());
 
 		ItemInstance item;
-		for (Integer objectId : objectIds)
+		for(Integer objectId : objectIds)
 		{
 			item = load(objectId);
-			if (item != null)
+			if(item != null)
 			{
 				list.add(item);
 			}
@@ -313,17 +308,15 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	@Override
 	public void save(ItemInstance item)
 	{
-		if (!item.getJdbcState().isSavable())
-		{
-			return;
-		}
+		if(!item.getJdbcState().isSavable())
+		{ return; }
 
 		try
 		{
 			save0(item);
 			item.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while saving item : " + item, e);
 			return;
@@ -334,12 +327,10 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 
 	public void save(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
-		{
-			return;
-		}
+		if(items.isEmpty())
+		{ return; }
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			save(item);
 		}
@@ -348,17 +339,15 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	@Override
 	public void update(ItemInstance item)
 	{
-		if (!item.getJdbcState().isUpdatable())
-		{
-			return;
-		}
+		if(!item.getJdbcState().isUpdatable())
+		{ return; }
 
 		try
 		{
 			update0(item);
 			item.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while updating item : " + item, e);
 			return;
@@ -369,12 +358,10 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 
 	public void update(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
-		{
-			return;
-		}
+		if(items.isEmpty())
+		{ return; }
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			update(item);
 		}
@@ -383,11 +370,11 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	@Override
 	public void saveOrUpdate(ItemInstance item)
 	{
-		if (item.getJdbcState().isSavable())
+		if(item.getJdbcState().isSavable())
 		{
 			save(item);
 		}
-		else if (item.getJdbcState().isUpdatable())
+		else if(item.getJdbcState().isUpdatable())
 		{
 			update(item);
 		}
@@ -395,12 +382,10 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 
 	public void saveOrUpdate(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
-		{
-			return;
-		}
+		if(items.isEmpty())
+		{ return; }
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			saveOrUpdate(item);
 		}
@@ -409,17 +394,15 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 	@Override
 	public void delete(ItemInstance item)
 	{
-		if (!item.getJdbcState().isDeletable())
-		{
-			return;
-		}
+		if(!item.getJdbcState().isDeletable())
+		{ return; }
 
 		try
 		{
 			delete0(item);
 			item.setJdbcState(JdbcEntityState.DELETED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while deleting item : " + item, e);
 			return;
@@ -430,12 +413,10 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 
 	public void delete(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
-		{
-			return;
-		}
+		if(items.isEmpty())
+		{ return; }
 
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			delete(item);
 		}
@@ -456,12 +437,12 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 			statement.setString(2, loc.name());
 			rset = statement.executeQuery();
 			objectIds = new ArrayList<Integer>();
-			while (rset.next())
+			while(rset.next())
 			{
 				objectIds.add(rset.getInt(1));
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while restore items of owner : " + ownerId, e);
 			objectIds.clear();
@@ -486,7 +467,7 @@ public class ItemsDAO implements JdbcDAO<Integer, ItemInstance>
 			statement.setString(2, description);
 			statement.execute();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while global remove item: " + itemId + "(" + description + ")", e);
 		}

@@ -31,13 +31,13 @@ public class AbstractHardReference<T> implements HardReference<T>
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (!(o instanceof AbstractHardReference))
+		if(!(o instanceof AbstractHardReference))
 			return false;
-		if ((((AbstractHardReference) o)).get() == null)
+		if((((AbstractHardReference) o)).get() == null)
 			return false;
 		return ((((AbstractHardReference) o)).get().equals(get()));
 	}

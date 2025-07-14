@@ -6,7 +6,6 @@ import l2s.gameserver.model.Request;
 import l2s.gameserver.model.Request.L2RequestType;
 import l2s.gameserver.network.l2.GameClient;
 
-
 public class RequestExVariationCloseUi implements IClientIncomingPacket
 {
 	@Override
@@ -19,11 +18,11 @@ public class RequestExVariationCloseUi implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Request request = player.getRequest();
-		if(request!= null && request.isTypeOf(L2RequestType.REFINE_REQUEST))
+		if(request != null && request.isTypeOf(L2RequestType.REFINE_REQUEST))
 		{
 			request.cancel();
 			return;

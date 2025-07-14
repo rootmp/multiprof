@@ -19,7 +19,7 @@ public class ConditionTargetMinDistance extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.target;
-		if (target == null)
+		if(target == null)
 			return false;
 
 		return !env.character.isInRange(target.getLoc(), _distance);

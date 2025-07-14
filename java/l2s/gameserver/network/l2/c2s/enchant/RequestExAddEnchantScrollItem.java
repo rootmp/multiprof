@@ -1,12 +1,12 @@
 package l2s.gameserver.network.l2.c2s.enchant;
 
+import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.EnchantItemHolder;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.PcInventory;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.GameClient;
-import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.ExPutEnchantScrollItemResult;
 import l2s.gameserver.templates.item.support.EnchantScroll;
@@ -30,10 +30,10 @@ public class RequestExAddEnchantScrollItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.isActionsDisabled() || player.isInStoreMode() || player.isInTrade())
+		if(player.isActionsDisabled() || player.isInStoreMode() || player.isInTrade())
 		{
 			player.sendPacket(ExPutEnchantScrollItemResult.FAIL);
 			return;
@@ -42,7 +42,7 @@ public class RequestExAddEnchantScrollItem implements IClientIncomingPacket
 		PcInventory inventory = player.getInventory();
 		ItemInstance scroll = inventory.getItemByObjectId(_scrollObjectId);
 
-		if (scroll == null)
+		if(scroll == null)
 		{
 			player.sendPacket(ExPutEnchantScrollItemResult.FAIL);
 			return;
@@ -52,21 +52,21 @@ public class RequestExAddEnchantScrollItem implements IClientIncomingPacket
 
 		EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scrollId);
 
-		if (enchantScroll == null)
+		if(enchantScroll == null)
 		{
 			player.sendPacket(ExPutEnchantScrollItemResult.FAIL);
 			player.sendPacket(SystemMsg.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
 			return;
 		}
 
-		if (player.isInStoreMode())
+		if(player.isInStoreMode())
 		{
 			player.sendPacket(ExPutEnchantScrollItemResult.FAIL);
 			player.sendPacket(SystemMsg.YOU_CANNOT_ENCHANT_WHILE_OPERATING_A_PRIVATE_STORE_OR_PRIVATE_WORKSHOP);
 			return;
 		}
 
-		if ((scroll = inventory.getItemByObjectId(scroll.getObjectId())) == null)
+		if((scroll = inventory.getItemByObjectId(scroll.getObjectId())) == null)
 		{
 			player.sendPacket(ExPutEnchantScrollItemResult.FAIL);
 			return;

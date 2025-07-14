@@ -3,6 +3,7 @@ package l2s.gameserver.network.l2.s2c.items.autopeel;
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.model.Playable;
@@ -10,7 +11,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.item.data.CapsuledItemData;
@@ -47,7 +47,7 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 		packetWriter.writeQ(_remainPeelCount);
 		packetWriter.writeD(_size); // TODO Wrong amount if items are isStackable()
 
-		for (int i = 0; i < _size; i++)
+		for(int i = 0; i < _size; i++)
 		{
 			packetWriter.writeD(_items.get(i).getItemId());
 			packetWriter.writeQ(_items.get(i).getCount());
@@ -64,26 +64,22 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 	private boolean getResultItems(Player player, ItemInstance item)
 	{
 		_items.clear();
-		if (!canBeExtracted(player, item))
-		{
-			return false;
-		}
+		if(!canBeExtracted(player, item))
+		{ return false; }
 
-		if (!reduceItem(player, item))
-		{
-			return false;
-		}
+		if(!reduceItem(player, item))
+		{ return false; }
 
 		List<CapsuledItemData> capsuled_items = item.getTemplate().getCapsuledItems();
-		for (CapsuledItemData ci : capsuled_items)
+		for(CapsuledItemData ci : capsuled_items)
 		{
-			if (Rnd.chance(ci.getChance()))
+			if(Rnd.chance(ci.getChance()))
 			{
 				long count;
 				long minCount = ci.getMinCount();
 				long maxCount = ci.getMaxCount();
 				int enchantLevel = ci.getEnchantLevel();
-				if (minCount == maxCount)
+				if(minCount == maxCount)
 				{
 					count = minCount;
 				}
@@ -94,7 +90,7 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 
 				ItemTemplate t = ItemHolder.getInstance().getTemplate(ci.getId());
 
-				if (t.isStackable())
+				if(t.isStackable())
 				{
 					ItemInstance itm = ItemFunctions.createItem(ci.getId());
 					itm.setCount(count);
@@ -103,7 +99,7 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 				}
 				else
 				{
-					for (long i = 0; i < count; i++)
+					for(long i = 0; i < count; i++)
 					{
 						_size++;
 						ItemInstance itm = player.getInventory().addItem(ci.getId(), 1, enchantLevel);
@@ -116,17 +112,17 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 		}
 
 		ChancedItemData ci = item.getTemplate().getCreateItems().chance();
-		if (ci != null)
+		if(ci != null)
 		{
 			ItemTemplate t = ItemHolder.getInstance().getTemplate(ci.getId());
-			if (t.isStackable())
+			if(t.isStackable())
 			{
 				_items.add(player.getInventory().addItem(ci.getId(), ci.getCount()));
 				player.sendPacket(SystemMessagePacket.obtainItems(ci.getId(), ci.getEnchant(), 0));
 			}
 			else
 			{
-				for (long i = 0; i < ci.getCount(); i++)
+				for(long i = 0; i < ci.getCount(); i++)
 				{
 					_size++;
 					ItemInstance itm = player.getInventory().addItem(ci.getId(), ci.getCount(), ci.getEnchant());
@@ -142,7 +138,7 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 
 	public static boolean canBeExtracted(Player player, ItemInstance item)
 	{
-		if ((player.getWeightPenalty() >= 3) || (player.getInventory().getSize() > (player.getInventoryLimit() - 10)))
+		if((player.getWeightPenalty() >= 3) || (player.getInventory().getSize() > (player.getInventoryLimit() - 10)))
 		{
 			player.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addItemName(item.getItemId()));
 			return false;
@@ -152,10 +148,8 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 
 	public static boolean reduceItem(Playable playable, ItemInstance item)
 	{
-		if (playable.getInventory().destroyItem(item, 1))
-		{
-			return true;
-		}
+		if(playable.getInventory().destroyItem(item, 1))
+		{ return true; }
 		return false;
 	}
 }

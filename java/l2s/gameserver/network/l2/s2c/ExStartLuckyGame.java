@@ -17,7 +17,7 @@ public class ExStartLuckyGame implements IClientOutgoingPacket
 	{
 		_type = data.getType().ordinal();
 
-		if (data.getFeeItemId() == -1)
+		if(data.getFeeItemId() == -1)
 		{
 			_availableGamesCount = player.getPremiumPoints() / data.getFeeItemCount();
 		}
@@ -27,7 +27,7 @@ public class ExStartLuckyGame implements IClientOutgoingPacket
 		}
 
 		int gamesLimit = data.getGamesLimit();
-		if (gamesLimit > 0)
+		if(gamesLimit > 0)
 		{
 			int playedGamesCount = player.getVarInt(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + data.getType().ordinal(), 0);
 			_availableGamesCount = Math.max(0, Math.min(_availableGamesCount, gamesLimit - playedGamesCount));

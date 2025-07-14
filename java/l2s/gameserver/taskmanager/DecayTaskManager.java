@@ -39,7 +39,7 @@ public class DecayTaskManager extends SteppingRunnableQueueManager
 	{
 		return SingletonHolder.INSTANCE;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected static final DecayTaskManager INSTANCE = new DecayTaskManager();

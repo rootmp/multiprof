@@ -8,12 +8,12 @@ import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 
 public class RequestExChangeAbilityPreset implements IClientIncomingPacket
 {
-	private AbilitiesScheme cPreset; 
+	private AbilitiesScheme cPreset;
 
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		cPreset = AbilitiesScheme.valueOf(packet.readC()); 
+		cPreset = AbilitiesScheme.valueOf(packet.readC());
 		return true;
 	}
 
@@ -24,6 +24,6 @@ public class RequestExChangeAbilityPreset implements IClientIncomingPacket
 		if(activeChar == null)
 			return;
 		//activeChar.getAbilitiesManager().changeActiveScheme(cPreset);
-		
+
 	}
 }

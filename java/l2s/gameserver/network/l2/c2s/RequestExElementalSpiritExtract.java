@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Elemental;
@@ -28,11 +29,11 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Elemental elemental = activeChar.getElementalList().get(_elementId);
-		if (elemental == null)
+		if(elemental == null)
 		{
 			activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
@@ -40,7 +41,7 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isInCombat())
+		if(activeChar.isInCombat())
 		{
 			activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
@@ -48,7 +49,7 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isInventoryFull())
+		if(activeChar.isInventoryFull())
 		{
 			activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
@@ -57,7 +58,7 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 		}
 
 		ItemData extractItem = elemental.getLevelData().getExtractItem();
-		if (extractItem == null)
+		if(extractItem == null)
 		{
 			activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
@@ -65,7 +66,7 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 			return;
 		}
 
-		if (extractItem.getCount() <= 0)
+		if(extractItem.getCount() <= 0)
 		{
 			activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
@@ -76,13 +77,13 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 		activeChar.getInventory().writeLock();
 		try
 		{
-			for (ItemData costItem : elemental.getLevelData().getExtractCost())
+			for(ItemData costItem : elemental.getLevelData().getExtractCost())
 			{
-				if (!ItemFunctions.haveItem(activeChar, costItem.getId(), costItem.getCount()))
+				if(!ItemFunctions.haveItem(activeChar, costItem.getId(), costItem.getCount()))
 				{
 					activeChar.sendPacket(new ExElementalSpiritSetTalent(activeChar, false, _elementId));
 					activeChar.sendPacket(new ExElementalSpiritExtractInfo(activeChar, _elementId));
-					if (costItem.getId() == ItemTemplate.ITEM_ID_ADENA)
+					if(costItem.getId() == ItemTemplate.ITEM_ID_ADENA)
 						activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 					else
 						activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
@@ -92,7 +93,7 @@ public class RequestExElementalSpiritExtract implements IClientIncomingPacket
 
 			elemental.setExp(0);
 
-			for (ItemData costItem : elemental.getLevelData().getExtractCost())
+			for(ItemData costItem : elemental.getLevelData().getExtractCost())
 				ItemFunctions.deleteItem(activeChar, costItem.getId(), costItem.getCount(), true);
 		}
 		finally

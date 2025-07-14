@@ -18,7 +18,7 @@ public class ExVipAttendanceList implements IClientOutgoingPacket
 	private int cFollowBaseDay;
 	private int bCheckable;
 	private String sDate;
-	
+
 	public ExVipAttendanceList(Player player)
 	{
 		RewardItems = AttendanceRewardHolder.getInstance().getRewards(player.hasPremiumAccount());
@@ -30,7 +30,7 @@ public class ExVipAttendanceList implements IClientOutgoingPacket
 
 		cFollowBaseDay = player.getVipAttendance().getAttendanceDay();//getFollowBaseDay();
 		bCheckable = nRemainCheckTime > 0 ? 1 : 0;
-		
+
 		sDate = AttendanceRewardHolder.getInstance().getEndDate();
 	}
 

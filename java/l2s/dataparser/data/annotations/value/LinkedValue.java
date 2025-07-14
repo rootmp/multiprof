@@ -13,8 +13,7 @@ import l2s.dataparser.data.common.LinkedType;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LinkedValue
-{
+public @interface LinkedValue {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -40,6 +39,6 @@ public @interface LinkedValue
 	 * @return true - поиск без [], false - стандартный поиск
 	 */
 	boolean withoutBounds() default false;
-	
+
 	LinkedType LinkedType() default LinkedType.linked_all;
 }

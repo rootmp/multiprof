@@ -110,7 +110,7 @@ public class VipAttendanceDAO
 		if(set.isEmpty() || set.getString("account_name", "").isEmpty())
 			return;
 		long endTime = Config.VIP_ATTENDANCE_REWARDS_END_DATE.atZone(ZoneId.systemDefault()).toEpochSecond();
-		
+
 		Connection con = null;
 		PreparedStatement statement = null;
 

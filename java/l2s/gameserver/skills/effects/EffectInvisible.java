@@ -17,10 +17,10 @@ public final class EffectInvisible extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isPlayer())
+		if(effected.isPlayer())
 		{
 			Player player = effected.getPlayer();
-			if (player.getActiveWeaponFlagAttachment() != null)
+			if(player.getActiveWeaponFlagAttachment() != null)
 				return false;
 		}
 		return true;
@@ -29,7 +29,7 @@ public final class EffectInvisible extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return;
 
 		effected.startInvisible(this, true);
@@ -38,14 +38,14 @@ public final class EffectInvisible extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isPlayer())
+		if(effected.isPlayer())
 		{
 			effected.stopInvisible(this, true);
 
-			for (Servitor servitor : effected.getServitors())
+			for(Servitor servitor : effected.getServitors())
 				servitor.getAbnormalList().stop(getSkill(), false);
 		}
-		else if (effected.isServitor())
+		else if(effected.isServitor())
 		{
 			effected.getPlayer().getAbnormalList().stop(getSkill(), false);
 		}

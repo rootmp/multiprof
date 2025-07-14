@@ -7,13 +7,13 @@ public class NewHennaUnequip implements IClientOutgoingPacket
 {
 	private final int _slotId;
 	private final int _success;
-	
+
 	public NewHennaUnequip(int slotId, int success)
 	{
 		_slotId = slotId;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

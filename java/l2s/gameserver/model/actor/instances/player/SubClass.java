@@ -77,7 +77,7 @@ public class SubClass
 
 	public void setClassId(int id)
 	{
-		if (_classId == id)
+		if(_classId == id)
 			return;
 
 		_classId = id;
@@ -87,7 +87,7 @@ public class SubClass
 	{
 		_exp = val;
 
-		if (!delevel)
+		if(!delevel)
 			_exp = Math.min(Math.max(Experience.getExpForLevel(_level), _exp), _maxExp);
 
 		_exp = Math.min(_exp, _maxExp);
@@ -162,12 +162,12 @@ public class SubClass
 
 	public void setType(final SubClassType type)
 	{
-		if (_type == type)
+		if(_type == type)
 			return;
 
 		_type = type;
 
-		if (_type == SubClassType.SUBCLASS)
+		if(_type == SubClassType.SUBCLASS)
 		{
 			_maxLvl = Experience.getMaxSubLevel();
 			_minExp = Experience.getExpForLevel(Config.SUB_START_LEVEL);
@@ -237,6 +237,6 @@ public class SubClass
 
 	public int getBonusPointUsed()
 	{
-		return 0;  
+		return 0;
 	}
 }

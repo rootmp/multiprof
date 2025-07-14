@@ -19,10 +19,9 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 	private final int nClassID;
 	private final int nWorldID;
 	private int nElectionMatchCount;
-	
+
 	private final Map<Integer, OlympiadRankInfo> _playerList;
 	private final Map<Integer, OlympiadRankInfo> _snapshotList;
-
 
 	public ExOlympiadRankingInfo(Player player, int cRankingType, int cRankingScope, int bCurrentSeason, int nClassID, int nWorldID)
 	{
@@ -130,19 +129,16 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 		packetWriter.writeSizedString(player.sCharName);
 		packetWriter.writeSizedString(player.sPledgeName);
 		packetWriter.writeD(rank); // nRank
-		
+
 		// nPrevRank
-		int prevRank = 0; 
-		if (_snapshotList.size() > 0)
+		int prevRank = 0;
+		if(_snapshotList.size() > 0)
 		{
-			prevRank = _snapshotList.entrySet().stream()
-				.filter(entry -> entry.getValue().nCharId == player.nCharId)
-				.map(Map.Entry::getKey)
-				.findFirst()
-				.orElse(0);
+			prevRank = _snapshotList.entrySet().stream().filter(entry -> entry.getValue().nCharId
+					== player.nCharId).map(Map.Entry::getKey).findFirst().orElse(0);
 		}
 		packetWriter.writeD(prevRank);
-		
+
 		packetWriter.writeD(player.nElectionRank); //nElectionRank
 		packetWriter.writeD(Config.REQUEST_ID); // nWorldID
 		packetWriter.writeD(player.nLevel); // nLevel

@@ -15,10 +15,10 @@ public class ExConnectedTimeAndGettableReward implements IClientOutgoingPacket
 
 	public ExConnectedTimeAndGettableReward(Player player)
 	{
-		for (DailyMissionTemplate missionTemplate : player.getDailyMissionList().getAvailableMissions())
+		for(DailyMissionTemplate missionTemplate : player.getDailyMissionList().getAvailableMissions())
 		{
 			DailyMission mission = player.getDailyMissionList().get(missionTemplate);
-			if ((mission.getStatus() == DailyMissionStatus.AVAILABLE) && (mission.getCurrentProgress() >= mission.getRequiredProgress()))
+			if((mission.getStatus() == DailyMissionStatus.AVAILABLE) && (mission.getCurrentProgress() >= mission.getRequiredProgress()))
 			{
 				_count++;
 			}

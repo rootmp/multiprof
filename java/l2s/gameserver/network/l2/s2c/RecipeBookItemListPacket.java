@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.templates.item.RecipeTemplate;
 
@@ -16,7 +16,7 @@ public class RecipeBookItemListPacket implements IClientOutgoingPacket
 	{
 		_isDwarvenCraft = isDwarvenCraft;
 		_currentMp = (int) player.getCurrentMp();
-		if (isDwarvenCraft)
+		if(isDwarvenCraft)
 			_recipes = player.getDwarvenRecipeBook();
 		else
 			_recipes = player.getCommonRecipeBook();
@@ -30,7 +30,7 @@ public class RecipeBookItemListPacket implements IClientOutgoingPacket
 
 		packetWriter.writeD(_recipes.size());
 
-		for (RecipeTemplate recipe : _recipes)
+		for(RecipeTemplate recipe : _recipes)
 		{
 			packetWriter.writeD(recipe.getId());
 			packetWriter.writeD(1); // ??

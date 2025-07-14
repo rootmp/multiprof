@@ -42,10 +42,10 @@ public class AdminZone implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (activeChar == null || !activeChar.getPlayerAccess().CanTeleport)
+		if(activeChar == null || !activeChar.getPlayerAccess().CanTeleport)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_zone_check:
 			{
@@ -53,8 +53,9 @@ public class AdminZone implements IAdminCommandHandler
 				activeChar.sendMessage("Zone list:");
 				List<Zone> zones = new ArrayList<Zone>();
 				World.getZones(zones, activeChar.getLoc(), activeChar.getReflection());
-				for (Zone zone : zones)
-					activeChar.sendMessage(zone.getType().toString() + ", name: " + zone.getName() + ", state: " + (zone.isActive() ? "active" : "not active") + ", inside: " + zone.checkIfInZone(activeChar) + "/" + zone.checkIfInZone(activeChar.getX(), activeChar.getY(), activeChar.getZ()));
+				for(Zone zone : zones)
+					activeChar.sendMessage(zone.getType().toString() + ", name: " + zone.getName() + ", state: " + (zone.isActive() ? "active" : "not active")
+							+ ", inside: " + zone.checkIfInZone(activeChar) + "/" + zone.checkIfInZone(activeChar.getX(), activeChar.getY(), activeChar.getZ()));
 
 				break;
 			}
@@ -63,14 +64,14 @@ public class AdminZone implements IAdminCommandHandler
 				try
 				{
 					String zoneName = fullString.replaceFirst("admin_print_zone ", "");
-					if (StringUtils.isEmpty(zoneName))
+					if(StringUtils.isEmpty(zoneName))
 					{
 						activeChar.sendMessage("USAGE: //print_zone [ZONE_NAME]");
 						return false;
 					}
 
 					Zone zone = activeChar.getReflection().getZone(zoneName);
-					if (zone == null)
+					if(zone == null)
 					{
 						activeChar.sendMessage("Zone \'" + zoneName + "\' not found!");
 						return false;
@@ -80,7 +81,7 @@ public class AdminZone implements IAdminCommandHandler
 					activeChar.sendMessage("Zone \'" + zoneName + "\' success printed to world!");
 					return true;
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					activeChar.sendMessage("USAGE: //print_zone [ZONE_NAME]");
 				}
@@ -90,8 +91,8 @@ public class AdminZone implements IAdminCommandHandler
 			{
 				activeChar.sendMessage("Current region: " + activeChar.getCurrentRegion());
 				activeChar.sendMessage("Objects list:");
-				for (GameObject o : activeChar.getCurrentRegion())
-					if (o != null)
+				for(GameObject o : activeChar.getCurrentRegion())
+					if(o != null)
 						activeChar.sendMessage(o.toString());
 				break;
 			}
@@ -103,7 +104,9 @@ public class AdminZone implements IAdminCommandHandler
 			}
 			case admin_pos:
 			{
-				String pos = activeChar.getX() + ", " + activeChar.getY() + ", " + activeChar.getZ() + ", " + activeChar.getHeading() + " Geo [" + (activeChar.getX() - World.MAP_MIN_X >> 4) + ", " + (activeChar.getY() - World.MAP_MIN_Y >> 4) + "] Ref " + activeChar.getReflectionId();
+				String pos = activeChar.getX() + ", " + activeChar.getY() + ", " + activeChar.getZ() + ", " + activeChar.getHeading() + " Geo ["
+						+ (activeChar.getX() - World.MAP_MIN_X >> 4) + ", " + (activeChar.getY() - World.MAP_MIN_Y >> 4) + "] Ref "
+						+ activeChar.getReflectionId();
 				activeChar.sendMessage("Pos: " + pos);
 				break;
 			}
@@ -111,7 +114,7 @@ public class AdminZone implements IAdminCommandHandler
 			{
 				DomainArea domain = MapRegionManager.getInstance().getRegionData(DomainArea.class, activeChar);
 				Castle castle = domain != null ? ResidenceHolder.getInstance().getResidence(Castle.class, domain.getId()) : null;
-				if (castle != null)
+				if(castle != null)
 					activeChar.sendMessage("Domain: " + castle.getName());
 				else
 					activeChar.sendMessage("Domain: Unknown");
@@ -128,10 +131,10 @@ public class AdminZone implements IAdminCommandHandler
 			case admin_target_loc:
 			{
 				GameObject target = activeChar.getTarget();
-				if (target == null)
+				if(target == null)
 					target = activeChar;
 				System.out.println("x=\"" + target.getX() + "\" y=\"" + target.getY() + "\" z=\"" + target.getZ());
-				if (target == activeChar)
+				if(target == activeChar)
 					activeChar.sendMessage("Point saved.");
 				else
 					activeChar.sendMessage("Target point saved.");
@@ -149,13 +152,13 @@ public class AdminZone implements IAdminCommandHandler
 				{
 					new File("dumps").mkdir();
 					File f = new File("dumps/locdump.txt");
-					if (!f.exists())
+					if(!f.exists())
 						f.createNewFile();
 					FileWriter writer = new FileWriter(f, true);
 					writer.write("Loc: " + activeChar.getLoc().x + ", " + activeChar.getLoc().y + ", " + activeChar.getLoc().z + "\n");
 					writer.close();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					//
 				}
@@ -163,7 +166,7 @@ public class AdminZone implements IAdminCommandHandler
 			}
 			case admin_locmove:
 			{
-				if (wordList.length < 3)
+				if(wordList.length < 3)
 				{
 					activeChar.sendMessage("Use //locmove MIN_RANGE MAX_RANGE");
 					return false;
@@ -171,7 +174,8 @@ public class AdminZone implements IAdminCommandHandler
 
 				int minRange = Integer.parseInt(wordList[1]);
 				int maxRange = Integer.parseInt(wordList[2]);
-				System.out.println("<move_to_point x=\"" + activeChar.getX() + "\" y=\"" + activeChar.getY() + "\" z=\"" + activeChar.getZ() + "\" min_range=\"" + minRange + "\" max_range=\"" + maxRange + "\"/>");
+				System.out.println("<move_to_point x=\"" + activeChar.getX() + "\" y=\"" + activeChar.getY() + "\" z=\"" + activeChar.getZ()
+						+ "\" min_range=\"" + minRange + "\" max_range=\"" + maxRange + "\"/>");
 				activeChar.sendMessage("Move point saved.");
 				ItemInstance temp = ItemFunctions.createItem(57);
 				temp.dropMe(activeChar, activeChar.getLoc());
@@ -179,7 +183,8 @@ public class AdminZone implements IAdminCommandHandler
 			}
 			case admin_loczone:
 			{
-				System.out.println("<coords loc=\"" + activeChar.getX() + " " + activeChar.getY() + " " + (activeChar.getZ() - 150) + " " + (activeChar.getZ() + 150) + "\"/>");
+				System.out.println("<coords loc=\"" + activeChar.getX() + " " + activeChar.getY() + " " + (activeChar.getZ() - 150) + " "
+						+ (activeChar.getZ() + 150) + "\"/>");
 				activeChar.sendMessage("Zone point saved.");
 				ItemInstance temp = ItemFunctions.createItem(1060);
 				temp.dropMe(activeChar, activeChar.getLoc());
@@ -187,7 +192,8 @@ public class AdminZone implements IAdminCommandHandler
 			}
 			case admin_locspawn:
 			{
-				System.out.println("<add x=\"" + activeChar.getX() + "\" y=\"" + activeChar.getY() + "\" zmin=\"" + (activeChar.getZ() - 100) + "\" zmax=\"" + (activeChar.getZ() + 200) + "\"/>");
+				System.out.println("<add x=\"" + activeChar.getX() + "\" y=\"" + activeChar.getY() + "\" zmin=\"" + (activeChar.getZ() - 100) + "\" zmax=\""
+						+ (activeChar.getZ() + 200) + "\"/>");
 				activeChar.sendMessage("Zone point saved.");
 				ItemInstance temp = ItemFunctions.createItem(1060);
 				temp.dropMe(activeChar, activeChar.getLoc());

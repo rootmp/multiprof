@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c.pledge;
 
 import java.util.Map;
+
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.instancemanager.RankManager;
 import l2s.gameserver.model.Player;

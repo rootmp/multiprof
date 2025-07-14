@@ -24,13 +24,14 @@ public class ExAdenFortressSiegeHUDInfo implements IClientOutgoingPacket
 		fortressId = fortressSiegeEvent.getResidence().getId();
 		status = fortressSiegeEvent.isInProgress() ? IN_PROGRESS_STATUS : (!fortressSiegeEvent.isRegistrationOver() ? PREPARE_STATUS : DONE_STATUS);
 		currentTime = (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
-		if (status == PREPARE_STATUS)
+		if(status == PREPARE_STATUS)
 		{
 			prepareLeftTime = (int) TimeUnit.MILLISECONDS.toSeconds(fortressSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis());
 		}
-		else if (status == IN_PROGRESS_STATUS)
+		else if(status == IN_PROGRESS_STATUS)
 		{
-			prepareLeftTime = (int) (TimeUnit.MINUTES.toSeconds(30) + (int) TimeUnit.MILLISECONDS.toSeconds(fortressSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis()));
+			prepareLeftTime = (int) (TimeUnit.MINUTES.toSeconds(30)
+					+ (int) TimeUnit.MILLISECONDS.toSeconds(fortressSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis()));
 		}
 		else
 		{

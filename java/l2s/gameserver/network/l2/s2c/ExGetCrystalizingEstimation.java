@@ -20,7 +20,7 @@ public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if ((_crystalId > 0) && (_crystalCount > 0))
+		if((_crystalId > 0) && (_crystalCount > 0))
 		{
 			packetWriter.writeD(0x01);
 			packetWriter.writeD(_crystalId);

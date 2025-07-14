@@ -15,11 +15,11 @@ public class EpicZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneEnter(Zone zone, Creature cha)
 	{
-		if (cha.isPlayable() && !cha.getPlayer().isGM())
+		if(cha.isPlayable() && !cha.getPlayer().isGM())
 		{
-			if (cha.getLevel() > zone.getParams().getInteger("levelLimit", Integer.MAX_VALUE))
+			if(cha.getLevel() > zone.getParams().getInteger("levelLimit", Integer.MAX_VALUE))
 			{
-				if (cha.isPlayer())
+				if(cha.isPlayer())
 				{
 					cha.getPlayer().sendMessage(new CustomMessage("scripts.zones.epic.banishMsg"));
 				}
@@ -27,12 +27,12 @@ public class EpicZoneListener implements OnZoneEnterLeaveListener
 			}
 			else
 			{
-				if (!Config.ALT_USE_TRANSFORM_IN_EPIC_ZONE)
+				if(!Config.ALT_USE_TRANSFORM_IN_EPIC_ZONE)
 				{
-					if (cha.isPlayer())
+					if(cha.isPlayer())
 					{
 						Player player = cha.getPlayer();
-						if (player.isTransformed())
+						if(player.isTransformed())
 						{
 							// TODO: Нужно ли тут какое-то сообщение?
 							player.setTransform(null);

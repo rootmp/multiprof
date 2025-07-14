@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
@@ -37,23 +37,23 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 		// Проверяем список вещей в инвентаре, если вещь остутствует - убираем из списка
 		// продажи
 		Iterator<Map.Entry<Integer, TradeItem>> iterator = _sellList0.entrySet().iterator();
-		while (iterator.hasNext())
+		while(iterator.hasNext())
 		{
 			Map.Entry<Integer, TradeItem> entry = iterator.next();
 
 			TradeItem si = entry.getValue();
-			if (si.getCount() <= 0)
+			if(si.getCount() <= 0)
 			{
 				iterator.remove();
 				continue;
 			}
 
 			ItemInstance item = seller.getInventory().getItemByObjectId(si.getObjectId());
-			if (item == null)
+			if(item == null)
 				// вещь недоступна, пробуем найти такую же по itemId
 				item = seller.getInventory().getItemByItemId(si.getItemId());
 
-			if (item == null || !item.canBePrivateStore(seller) || item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+			if(item == null || !item.canBePrivateStore(seller) || item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 			{
 				iterator.remove();
 				continue;
@@ -66,13 +66,14 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 		ItemInstance[] items = seller.getInventory().getItems();
 		// Проверяем список вещей в инвентаре, если вещь остутствует в списке продажи,
 		// добавляем в список доступных для продажи
-		loop: for (ItemInstance item : items)
-			if (item.canBePrivateStore(seller) && item.getItemId() != ItemTemplate.ITEM_ID_ADENA)
+		loop:
+		for(ItemInstance item : items)
+			if(item.canBePrivateStore(seller) && item.getItemId() != ItemTemplate.ITEM_ID_ADENA)
 			{
-				for (TradeItem si : _sellList0.values())
-					if (si.getObjectId() == item.getObjectId())
+				for(TradeItem si : _sellList0.values())
+					if(si.getObjectId() == item.getObjectId())
 					{
-						if (si.getCount() == item.getCount())
+						if(si.getCount() == item.getCount())
 							continue loop;
 						// Показывает остаток вещей для продажи
 						TradeItem ti = new TradeItem(item, item.getTemplate().isBlocked(seller, item));
@@ -88,14 +89,14 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeD(_sellerId);
 			packetWriter.writeD(_package ? 1 : 0);
 			packetWriter.writeQ(_adena);
 			packetWriter.writeD(_sellList0.size());
 			// Список вещей уже поставленых на продажу
-			for (TradeItem si : _sellList0.values())
+			for(TradeItem si : _sellList0.values())
 			{
 				writeItemInfo(packetWriter, si);
 				packetWriter.writeQ(si.getOwnersPrice());
@@ -103,12 +104,12 @@ public class PrivateStoreManageList implements IClientOutgoingPacket
 			}
 			packetWriter.writeD(_sellList.size());
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			// Список имеющихся вещей
 			packetWriter.writeD(_sellList.size());
 			packetWriter.writeD(_sellList.size());
-			for (TradeItem si : _sellList)
+			for(TradeItem si : _sellList)
 			{
 				writeItemInfo(packetWriter, si);
 				packetWriter.writeQ(si.getStorePrice());

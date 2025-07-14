@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.entity.olympiad.Olympiad;
@@ -21,12 +22,12 @@ public class RequestExOlympiadMatchMakingCancel implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (!Olympiad.isRegistrationActive())
+		if(!Olympiad.isRegistrationActive())
 		{
-			if (type == 0)
+			if(type == 0)
 			{
 				activeChar.sendPacket(SystemMsg.THE_3_VS_3_OLYMPIAD_IS_NOT_HELD_RIGHT_NOW);
 			}

@@ -111,7 +111,7 @@ public class Net implements Comparable<Net>
 		{
 			return InetAddress.getByAddress(_address).toString() + "/" + size;
 		}
-		catch (UnknownHostException e)
+		catch(UnknownHostException e)
 		{
 			return "Invalid";
 		}

@@ -43,7 +43,7 @@ public class LocationsList implements SpawnRange, Iterable<Location>
 	@Override
 	public Location getRandomLoc(int geoIndex, boolean fly)
 	{
-		if (_locations.isEmpty())
+		if(_locations.isEmpty())
 			return null;
 		return Rnd.get(_locations).getRandomLoc(geoIndex, fly);
 	}

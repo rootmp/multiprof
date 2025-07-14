@@ -23,14 +23,14 @@ public class AdminRide implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Rider)
+		if(!activeChar.getPlayerAccess().Rider)
 			return false;
 
 		Player rideTarget = activeChar;
-		if (command == Commands.admin_wr || command == Commands.admin_sr || command == Commands.admin_ur)
+		if(command == Commands.admin_wr || command == Commands.admin_sr || command == Commands.admin_ur)
 		{
 			GameObject target = activeChar.getTarget();
-			if (target != null && target.isPlayer())
+			if(target != null && target.isPlayer())
 				rideTarget = (Player) target;
 			else
 			{
@@ -39,15 +39,15 @@ public class AdminRide implements IAdminCommandHandler
 			}
 		}
 
-		switch (command)
+		switch(command)
 		{
 			case admin_ride:
-				if (activeChar.isMounted() || activeChar.hasServitor())
+				if(activeChar.isMounted() || activeChar.hasServitor())
 				{
 					activeChar.sendMessage("Already Have a Pet or Mounted.");
 					return false;
 				}
-				if (wordList.length != 2)
+				if(wordList.length != 2)
 				{
 					activeChar.sendMessage("Incorrect id.");
 					return false;
@@ -56,7 +56,7 @@ public class AdminRide implements IAdminCommandHandler
 				break;
 			case admin_ride_wyvern:
 			case admin_wr:
-				if (rideTarget.isMounted() || rideTarget.hasServitor())
+				if(rideTarget.isMounted() || rideTarget.hasServitor())
 				{
 					activeChar.sendMessage("Already Have a Pet or Mounted.");
 					return false;
@@ -65,7 +65,7 @@ public class AdminRide implements IAdminCommandHandler
 				break;
 			case admin_ride_strider:
 			case admin_sr:
-				if (rideTarget.isMounted() || rideTarget.hasServitor())
+				if(rideTarget.isMounted() || rideTarget.hasServitor())
 				{
 					activeChar.sendMessage("Already Have a Pet or Mounted.");
 					return false;
@@ -74,7 +74,7 @@ public class AdminRide implements IAdminCommandHandler
 				break;
 			case admin_unride:
 			case admin_ur:
-				if (rideTarget.isMounted())
+				if(rideTarget.isMounted())
 					rideTarget.setMount(null);
 				break;
 		}

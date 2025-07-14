@@ -30,7 +30,7 @@ public abstract class L2LoginServerPacket extends SendablePacket<L2LoginClient>
 			writeImpl();
 			return true;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Client: " + getClient() + " - Failed writing: " + getClass().getSimpleName() + "!", e);
 		}

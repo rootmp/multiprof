@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.napile.primitive.maps.IntObjectMap;
 
 import l2s.commons.network.PacketReader;
@@ -30,30 +31,30 @@ public class RequestExAddPostFriendForPostBox implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		int targetObjectId = CharacterDAO.getInstance().getObjectIdByName(_name);
-		if (targetObjectId == 0)
+		if(targetObjectId == 0)
 		{
 			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.NAME_IS_NOT_EXISTS));
 			return;
 		}
 
-		if (_name.equalsIgnoreCase(player.getName()))
+		if(_name.equalsIgnoreCase(player.getName()))
 		{
 			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.NAME_IS_NOT_REGISTERED));
 			return;
 		}
 
 		IntObjectMap<String> postFriend = player.getPostFriends();
-		if (postFriend.size() >= Player.MAX_POST_FRIEND_SIZE)
+		if(postFriend.size() >= Player.MAX_POST_FRIEND_SIZE)
 		{
 			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.LIST_IS_FULL));
 			return;
 		}
 
-		if (postFriend.containsKey(targetObjectId))
+		if(postFriend.containsKey(targetObjectId))
 		{
 			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.ALREADY_ADDED));
 			return;

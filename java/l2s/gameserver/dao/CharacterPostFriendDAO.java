@@ -43,10 +43,10 @@ public class CharacterPostFriendDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, player.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 				set.put(rset.getInt(1), rset.getString(2) == null ? "" : rset.getString(2));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterPostFriendDAO.load(L2Player): " + e, e);
 		}
@@ -69,7 +69,7 @@ public class CharacterPostFriendDAO
 			statement.setInt(2, val);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterPostFriendDAO.insert(L2Player, int): " + e, e);
 		}
@@ -91,7 +91,7 @@ public class CharacterPostFriendDAO
 			statement.setInt(2, val);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterPostFriendDAO.delete(L2Player, int): " + e, e);
 		}

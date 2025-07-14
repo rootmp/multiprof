@@ -166,9 +166,9 @@ public enum SceneMovie implements IBroadcastPacket
 
 	public static SceneMovie getMovie(int id)
 	{
-		for (SceneMovie movie : VALUES)
+		for(SceneMovie movie : VALUES)
 		{
-			if (movie.getId() == id)
+			if(movie.getId() == id)
 				return movie;
 		}
 		return null;

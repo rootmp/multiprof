@@ -26,8 +26,7 @@ public class ThreadPoolManager
 		_executor.setRejectedExecutionHandler(new RejectedExecutionHandlerImpl());
 		_executor.prestartAllCoreThreads();
 
-		scheduleAtFixedRate(() ->
-		{
+		scheduleAtFixedRate(() -> {
 			_scheduledExecutor.purge();
 			_executor.purge();
 		}, 600000L, 600000L);

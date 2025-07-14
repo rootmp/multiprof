@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.ClanWar;
 
@@ -29,7 +29,7 @@ public class PledgeReceiveWarList implements IClientOutgoingPacket
 		Collection<ClanWar> wars = _clan.getWars().valueCollection();
 
 		packetWriter.writeD(wars.size());
-		for (ClanWar war : wars)
+		for(ClanWar war : wars)
 		{
 			packetWriter.writeS(war.getOpposingClan(_clan).getName());
 			packetWriter.writeD(war.getClanWarState(_clan).ordinal());

@@ -57,11 +57,11 @@ public class Util
 		{
 			pattern = Pattern.compile(template);
 		}
-		catch (PatternSyntaxException e) // invalid template
+		catch(PatternSyntaxException e) // invalid template
 		{
 			e.printStackTrace();
 		}
-		if (pattern == null)
+		if(pattern == null)
 			return false;
 		Matcher regexp = pattern.matcher(text);
 		return regexp.matches();
@@ -69,11 +69,11 @@ public class Util
 
 	public static String formatDouble(double x, String nanString, boolean forceExponents)
 	{
-		if (Double.isNaN(x))
+		if(Double.isNaN(x))
 			return nanString;
-		if (forceExponents)
+		if(forceExponents)
 			return df.format(x);
-		if ((long) x == x)
+		if((long) x == x)
 			return String.valueOf((long) x);
 		return String.valueOf(x);
 	}
@@ -94,7 +94,7 @@ public class Util
 	 */
 	public static String formatTime(int time)
 	{
-		if (time == 0)
+		if(time == 0)
 			return "now";
 		time = Math.abs(time);
 		String ret = "";
@@ -105,13 +105,13 @@ public class Util
 		long numMins = time / 60;
 		time -= numMins * 60;
 		long numSeconds = time;
-		if (numDays > 0)
+		if(numDays > 0)
 			ret += numDays + "d ";
-		if (numHours > 0)
+		if(numHours > 0)
 			ret += numHours + "h ";
-		if (numMins > 0)
+		if(numMins > 0)
 			ret += numMins + "m ";
-		if (numSeconds > 0)
+		if(numSeconds > 0)
 			ret += numSeconds + "s";
 		return ret.trim();
 	}
@@ -123,17 +123,17 @@ public class Util
 	 */
 	public static long rollDrop(long min, long max, double calcChance, double rate)
 	{
-		if (calcChance <= 0 || min <= 0 || max <= 0)
+		if(calcChance <= 0 || min <= 0 || max <= 0)
 			return 0;
 		int dropmult = 1;
 		calcChance *= rate;
-		if (calcChance > RewardList.MAX_CHANCE)
-			if (calcChance % RewardList.MAX_CHANCE == 0) // если кратен 100% то тупо умножаем количество
+		if(calcChance > RewardList.MAX_CHANCE)
+			if(calcChance % RewardList.MAX_CHANCE == 0) // если кратен 100% то тупо умножаем количество
 				dropmult = (int) (calcChance / RewardList.MAX_CHANCE);
 			else
 			{
 				dropmult = (int) Math.ceil(calcChance / RewardList.MAX_CHANCE); // множитель равен шанс / 100%
-																				// округление вверх
+				// округление вверх
 				calcChance = calcChance / dropmult; // шанс равен шанс / множитель
 			}
 		return Rnd.chance(calcChance / 10000.) ? Rnd.get(min * dropmult, max * dropmult) : 0;
@@ -142,19 +142,19 @@ public class Util
 	public static int packInt(int[] a, int bits) throws Exception
 	{
 		int m = 32 / bits;
-		if (a.length > m)
+		if(a.length > m)
 			throw new Exception("Overflow");
 
 		int result = 0;
 		int next;
 		int mval = (int) Math.pow(2, bits);
-		for (int i = 0; i < m; i++)
+		for(int i = 0; i < m; i++)
 		{
 			result <<= bits;
-			if (a.length > i)
+			if(a.length > i)
 			{
 				next = a[i];
-				if (next >= mval || next < 0)
+				if(next >= mval || next < 0)
 					throw new Exception("Overload, value is out of range");
 			}
 			else
@@ -167,19 +167,19 @@ public class Util
 	public static long packLong(int[] a, int bits) throws Exception
 	{
 		int m = 64 / bits;
-		if (a.length > m)
+		if(a.length > m)
 			throw new Exception("Overflow");
 
 		long result = 0;
 		int next;
 		int mval = (int) Math.pow(2, bits);
-		for (int i = 0; i < m; i++)
+		for(int i = 0; i < m; i++)
 		{
 			result <<= bits;
-			if (a.length > i)
+			if(a.length > i)
 			{
 				next = a[i];
-				if (next >= mval || next < 0)
+				if(next >= mval || next < 0)
 					throw new Exception("Overload, value is out of range");
 			}
 			else
@@ -195,7 +195,7 @@ public class Util
 		int mval = (int) Math.pow(2, bits);
 		int[] result = new int[m];
 		int next;
-		for (int i = m; i > 0; i--)
+		for(int i = m; i > 0; i--)
 		{
 			next = a;
 			a = a >> bits;
@@ -210,7 +210,7 @@ public class Util
 		int mval = (int) Math.pow(2, bits);
 		int[] result = new int[m];
 		long next;
-		for (int i = m; i > 0; i--)
+		for(int i = m; i > 0; i--)
 		{
 			next = a;
 			a = a >> bits;
@@ -221,33 +221,33 @@ public class Util
 
 	public static float[] parseCommaSeparatedFloatArray(String s)
 	{
-		if (s.isEmpty())
+		if(s.isEmpty())
 			return new float[0];
 		String[] tmp = s.replaceAll(",", ";").replaceAll("\\n", ";").split(";");
 		float[] val = new float[tmp.length];
-		for (int i = 0; i < tmp.length; i++)
+		for(int i = 0; i < tmp.length; i++)
 			val[i] = Float.parseFloat(tmp[i]);
 		return val;
 	}
 
 	public static int[] parseCommaSeparatedIntegerArray(String s)
 	{
-		if (s.isEmpty())
+		if(s.isEmpty())
 			return new int[0];
 		String[] tmp = s.replaceAll(",", ";").replaceAll("\\n", ";").split(";");
 		int[] val = new int[tmp.length];
-		for (int i = 0; i < tmp.length; i++)
+		for(int i = 0; i < tmp.length; i++)
 			val[i] = Integer.parseInt(tmp[i]);
 		return val;
 	}
 
 	public static long[] parseCommaSeparatedLongArray(String s)
 	{
-		if (s.isEmpty())
+		if(s.isEmpty())
 			return new long[0];
 		String[] tmp = s.replaceAll(",", ";").replaceAll("\\n", ";").split(";");
 		long[] val = new long[tmp.length];
-		for (int i = 0; i < tmp.length; i++)
+		for(int i = 0; i < tmp.length; i++)
 			val[i] = Long.parseLong(tmp[i]);
 		return val;
 	}
@@ -257,7 +257,7 @@ public class Util
 		String[] temp = s.replaceAll("\\n", ";").split(";");
 		long[][] val = new long[temp.length][];
 
-		for (int i = 0; i < temp.length; i++)
+		for(int i = 0; i < temp.length; i++)
 			val[i] = parseCommaSeparatedLongArray(temp[i]);
 		return val;
 	}
@@ -280,7 +280,7 @@ public class Util
 		{
 			Double.parseDouble(s);
 		}
-		catch (NumberFormatException e)
+		catch(NumberFormatException e)
 		{
 			return false;
 		}
@@ -293,32 +293,32 @@ public class Util
 		String val, type, result = "[" + (simpleTypes ? cls.getSimpleName() : cls.getName()) + "\n";
 		Object fldObj;
 		List<Field> fields = new ArrayList<Field>();
-		while (cls != null)
+		while(cls != null)
 		{
-			for (Field fld : cls.getDeclaredFields())
-				if (!fields.contains(fld))
+			for(Field fld : cls.getDeclaredFields())
+				if(!fields.contains(fld))
 				{
-					if (ignoreStatics && Modifier.isStatic(fld.getModifiers()))
+					if(ignoreStatics && Modifier.isStatic(fld.getModifiers()))
 						continue;
 					fields.add(fld);
 				}
 			cls = cls.getSuperclass();
-			if (!parentFields)
+			if(!parentFields)
 				break;
 		}
 
-		for (Field fld : fields)
+		for(Field fld : fields)
 		{
 			fld.setAccessible(true);
 			try
 			{
 				fldObj = fld.get(o);
-				if (fldObj == null)
+				if(fldObj == null)
 					val = "NULL";
 				else
 					val = fldObj.toString();
 			}
-			catch (Throwable e)
+			catch(Throwable e)
 			{
 				e.printStackTrace();
 				val = "<ERROR>";
@@ -336,12 +336,12 @@ public class Util
 
 	public static HtmTemplates parseTemplates(String filename, Language lang, String html)
 	{
-		if (html == null)
+		if(html == null)
 			return null;
 
 		Matcher m = _pattern.matcher(html);
 		HtmTemplates tpls = new HtmTemplates(filename, lang);
-		while (m.find())
+		while(m.find())
 		{
 			tpls.put(Integer.parseInt(m.group(2)), m.group(3));
 			html = html.replace(m.group(0), "");
@@ -356,14 +356,12 @@ public class Util
 		return (text != null) && (text.matches("[0-9]+"));
 	}
 
-	public static boolean arrayContains(@Nullable
-	Object[] array, @Nullable
-	Object objectToLookFor)
+	public static boolean arrayContains(@Nullable Object[] array, @Nullable Object objectToLookFor)
 	{
-		if (array == null || objectToLookFor == null)
+		if(array == null || objectToLookFor == null)
 			return false;
-		for (Object objectInArray : array)
-			if (objectInArray != null && objectInArray.equals(objectToLookFor))
+		for(Object objectInArray : array)
+			if(objectInArray != null && objectInArray.equals(objectToLookFor))
 				return true;
 		return false;
 	}
@@ -415,16 +413,16 @@ public class Util
 		return dAcquireExpRate / 2.6;
 	}
 
-	public static Map<Integer, Pair<Integer, Integer>> parseExpGrade(String expGradeStr) 
+	public static Map<Integer, Pair<Integer, Integer>> parseExpGrade(String expGradeStr)
 	{
 		Map<Integer, Pair<Integer, Integer>> expGradeMap = new HashMap<>();
 		Pattern pattern = Pattern.compile("\\{(\\d+;\\d+;\\d+)\\}");
 		Matcher matcher = pattern.matcher(expGradeStr);
 
-		while (matcher.find()) 
+		while(matcher.find())
 		{
 			String[] parts = matcher.group(1).split(";");
-			if (parts.length == 3) 
+			if(parts.length == 3)
 			{
 				int key = Integer.parseInt(parts[0]);
 				int value1 = Integer.parseInt(parts[1]);

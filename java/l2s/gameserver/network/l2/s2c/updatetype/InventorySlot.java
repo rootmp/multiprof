@@ -72,9 +72,9 @@ public enum InventorySlot implements IUpdateTypeComponent
 
 	public static InventorySlot valueOf(int slot)
 	{
-		for (InventorySlot s : VALUES)
+		for(InventorySlot s : VALUES)
 		{
-			if (s.getSlot() == slot)
+			if(s.getSlot() == slot)
 				return s;
 		}
 		return null;

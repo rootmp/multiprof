@@ -21,30 +21,30 @@ public class Replace extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		final Player player = activeChar.getPlayer();
 		final Location loc = player.getLoc();
 		final int heading = PositionUtils.calculateHeadingFrom(player, target);
 
-		if (_faceToFace)
+		if(_faceToFace)
 			player.setHeading(PositionUtils.calculateHeadingFrom(target, player));
 
 		player.broadcastPacket(new FlyToLocationPacket(player, target.getLoc(), FlyToLocationPacket.FlyType.DUMMY, 0, 0, 0));
 		player.setLoc(target.getLoc());
 
-		if (_faceToFace)
+		if(_faceToFace)
 			target.setHeading(heading);
 
 		target.broadcastPacket(new FlyToLocationPacket(target, loc, FlyToLocationPacket.FlyType.DUMMY, 0, 0, 0));
 		target.setLoc(loc);
 
-		for (Creature creature : player.getAroundCharacters(1000, 100))
+		for(Creature creature : player.getAroundCharacters(1000, 100))
 		{
-			if (creature.getTarget() == player)
+			if(creature.getTarget() == player)
 				creature.setTarget(target);
-			if (creature.getTarget() == target)
+			if(creature.getTarget() == target)
 				creature.setTarget(creature);
 		}
 	}

@@ -16,7 +16,7 @@ public class ConditionPlayerSoulsCount extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 		return env.character.getPlayer().getConsumedSouls(type) >= soulsCount;
 	}

@@ -20,17 +20,17 @@ public class AdminShop implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().UseGMShop)
+		if(!activeChar.getPlayerAccess().UseGMShop)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_buy:
 				try
 				{
 					handleBuyRequest(activeChar, fullString.substring(10));
 				}
-				catch (IndexOutOfBoundsException e)
+				catch(IndexOutOfBoundsException e)
 				{
 					activeChar.sendMessage("Please specify buylist.");
 				}
@@ -57,14 +57,14 @@ public class AdminShop implements IAdminCommandHandler
 		{
 			val = Integer.parseInt(command);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 
 		}
 
 		BuyListTemplate list = BuyListHolder.getInstance().getBuyList(-1, val);
 
-		if (list != null)
+		if(list != null)
 			activeChar.sendPacket(new ExBuySellListPacket.BuyList(list, activeChar, 0.), new ExBuySellListPacket.SellRefundList(activeChar, false, 0.));
 
 		activeChar.sendActionFailed();

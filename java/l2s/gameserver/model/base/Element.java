@@ -53,8 +53,8 @@ public enum Element
 
 	public static Element getElementById(int id)
 	{
-		for (Element e : VALUES)
-			if (e.getId() == id)
+		for(Element e : VALUES)
+			if(e.getId() == id)
 				return e;
 		return NONE;
 	}
@@ -66,7 +66,7 @@ public enum Element
 	 */
 	public static Element getReverseElement(Element element)
 	{
-		switch (element)
+		switch(element)
 		{
 			case WATER:
 				return FIRE;
@@ -87,8 +87,8 @@ public enum Element
 
 	public static Element getElementByName(String name)
 	{
-		for (Element e : VALUES)
-			if (e.name().equalsIgnoreCase(name))
+		for(Element e : VALUES)
+			if(e.name().equalsIgnoreCase(name))
 				return e;
 		return NONE;
 	}

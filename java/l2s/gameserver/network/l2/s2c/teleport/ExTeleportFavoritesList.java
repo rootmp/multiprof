@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c.teleport;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -23,7 +23,7 @@ public class ExTeleportFavoritesList implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_activate);
 		packetWriter.writeD(_teleportFavorites.length); // teleports size
-		for (int i = 0; i < _teleportFavorites.length; i++)
+		for(int i = 0; i < _teleportFavorites.length; i++)
 		{
 			packetWriter.writeD(_teleportFavorites[i]); // teleport id
 		}

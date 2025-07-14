@@ -11,15 +11,15 @@ public class ExDyeeffectEnchantReset implements IClientOutgoingPacket
 
 	public ExDyeeffectEnchantReset()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-    packetWriter.writeD(nResult);
-    packetWriter.writeD(nCategory);
-    packetWriter.writeD(nSlotID);
+		packetWriter.writeD(nResult);
+		packetWriter.writeD(nCategory);
+		packetWriter.writeD(nSlotID);
 
 		return true;
 	}

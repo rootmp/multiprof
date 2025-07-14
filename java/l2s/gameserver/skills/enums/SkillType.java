@@ -148,7 +148,7 @@ public enum SkillType
 			final Constructor<? extends Skill> c = _classSkill.getConstructor(StatsSet.class);
 			return c.newInstance(set);
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			LOGGER.error("Skill ID[" + set.getInteger("skill_id") + "], LEVEL[" + set.getInteger("level") + "]", e);
 			throw new RuntimeException(e);
@@ -157,7 +157,7 @@ public enum SkillType
 
 	public final boolean isPvM()
 	{
-		switch (this)
+		switch(this)
 		{
 			case DISCORD:
 				return true;
@@ -168,7 +168,7 @@ public enum SkillType
 
 	public boolean isAI()
 	{
-		switch (this)
+		switch(this)
 		{
 			case AIEFFECTS:
 			case DELETE_HATE:
@@ -180,7 +180,7 @@ public enum SkillType
 
 	public final boolean isPvpSkill()
 	{
-		switch (this)
+		switch(this)
 		{
 			case DEBUFF:
 			case DOT:
@@ -202,7 +202,7 @@ public enum SkillType
 
 	public boolean isDebuff()
 	{
-		switch (this)
+		switch(this)
 		{
 			case AIEFFECTS:
 			case DEBUFF:

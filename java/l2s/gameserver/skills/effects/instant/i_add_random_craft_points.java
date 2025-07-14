@@ -18,10 +18,8 @@ public class i_add_random_craft_points extends i_abstract_effect
 	{
 		int resultValue = effected.getPlayer().getCraftGaugePoints() + (int) getValue();
 
-		if (resultValue > effected.getPlayer().MAX_RANDOM_CRAFT_POINTS)
-		{
-			return false;
-		}
+		if(resultValue > effected.getPlayer().MAX_RANDOM_CRAFT_POINTS)
+		{ return false; }
 
 		return true;
 	}

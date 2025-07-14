@@ -55,7 +55,7 @@ public abstract class Boat extends Creature
 	@Override
 	public boolean setXYZ(int x, int y, int z, boolean MoveTask)
 	{
-		if (super.setXYZ(x, y, z, MoveTask))
+		if(super.setXYZ(x, y, z, MoveTask))
 		{
 			updatePeopleInTheBoat(x, y, z);
 			return true;
@@ -76,13 +76,13 @@ public abstract class Boat extends Creature
 
 	protected void updatePeopleInTheBoat(int x, int y, int z)
 	{
-		for (Player player : _players)
+		for(Player player : _players)
 		{
-			if (player != null)
+			if(player != null)
 			{
 				player.setXYZ(x, y, z, true);
 
-				for (Servitor servitor : player.getServitors())
+				for(Servitor servitor : player.getServitors())
 					servitor.setXYZ(x, y, z, true);
 			}
 		}
@@ -100,7 +100,7 @@ public abstract class Boat extends Creature
 			player.broadcastPacket(getOnPacket(player, boatLoc));
 			player.setLoc(getLoc(), true);
 
-			for (Servitor servitor : player.getServitors())
+			for(Servitor servitor : player.getServitors())
 			{
 				servitor.setBoat(this);
 				servitor.getMovement().moveToLocation(getLoc(), 0, false);
@@ -112,32 +112,32 @@ public abstract class Boat extends Creature
 
 	public void moveInBoat(Playable playable, Location ori, Location loc)
 	{
-		if (!playable.isPlayer())
+		if(!playable.isPlayer())
 			return;
 
 		Player player = playable.getPlayer();
-		if (!isShuttle())
+		if(!isShuttle())
 		{
-			if (player.hasServitor())
+			if(player.hasServitor())
 			{
 				player.sendPacket(SystemMsg.YOU_SHOULD_RELEASE_YOUR_PET_OR_SERVITOR_SO_THAT_IT_DOES_NOT_FALL_OFF_OF_THE_BOAT_AND_DROWN, ActionFailPacket.STATIC);
 				return;
 			}
 
-			if (player.isTransformed())
+			if(player.isTransformed())
 			{
 				player.sendPacket(SystemMsg.YOU_CANNOT_BOARD_A_SHIP_WHILE_YOU_ARE_POLYMORPHED, ActionFailPacket.STATIC);
 				return;
 			}
 		}
 
-		if (player.isMovementDisabled() || player.isSitting())
+		if(player.isMovementDisabled() || player.isSitting())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (!player.isInBoat())
+		if(!player.isInBoat())
 			player.setBoat(this);
 
 		loc.h = PositionUtils.getHeadingTo(ori, loc);
@@ -151,10 +151,10 @@ public abstract class Boat extends Creature
 		_fromHome = _fromHome == 1 ? 0 : 1;
 
 		IClientOutgoingPacket checkLocation = checkLocationPacket();
-		if (checkLocation != null)
+		if(checkLocation != null)
 			broadcastPacket(infoPacket(), checkLocation);
 
-		if (oust)
+		if(oust)
 		{
 			oustPlayers();
 			getCurrentWay().reCalcNextTime(false);
@@ -163,10 +163,10 @@ public abstract class Boat extends Creature
 
 	public void teleportShip(int x, int y, int z)
 	{
-		if (getMovement().isMoving())
+		if(getMovement().isMoving())
 			getMovement().stopMove(false);
 
-		for (Player player : _players)
+		for(Player player : _players)
 			player.teleToLocation(x, y, z);
 
 		setHeading(calcHeading(x, y));
@@ -186,10 +186,10 @@ public abstract class Boat extends Creature
 			player.broadcastPacket(getOffPacket(player, loc));
 			player.setLoc(loc.correctGeoZ(player.getGeoIndex()), true);
 
-			if (teleport)
+			if(teleport)
 				player.teleToLocation(loc);
 
-			for (Servitor servitor : player.getServitors())
+			for(Servitor servitor : player.getServitors())
 			{
 				servitor.setBoat(null);
 				servitor.setInBoatPosition(null);
@@ -211,7 +211,7 @@ public abstract class Boat extends Creature
 
 	public void broadcastPacketToPassengers(IBroadcastPacket packet)
 	{
-		for (Player player : _players)
+		for(Player player : _players)
 			player.sendPacket(packet);
 	}
 
@@ -240,7 +240,7 @@ public abstract class Boat extends Creature
 	@Override
 	public CharacterAI getAI()
 	{
-		if (_ai == null)
+		if(_ai == null)
 			_ai = new BoatAI(this);
 
 		return _ai;
@@ -255,14 +255,13 @@ public abstract class Boat extends Creature
 	@Override
 	public void broadcastPacket(IBroadcastPacket... packets)
 	{
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 			player.sendPacket(packets);
 	}
 
 	@Override
 	public void sendChanges()
-	{
-	}
+	{}
 
 	@Override
 	public int getMoveSpeed()
@@ -372,7 +371,7 @@ public abstract class Boat extends Creature
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		if (!getMovement().isMoving())
+		if(!getMovement().isMoving())
 		{
 			return Collections.singletonList(infoPacket());
 		}

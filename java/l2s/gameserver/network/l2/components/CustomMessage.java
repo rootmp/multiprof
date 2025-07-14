@@ -71,7 +71,7 @@ public class CustomMessage implements IBroadcastPacket
 		public String toString(Language lang)
 		{
 			String name = ItemNameHolder.getInstance().getItemName(lang, _itemId);
-			if (name == null)
+			if(name == null)
 				return "null";
 			return name;
 		}
@@ -92,7 +92,7 @@ public class CustomMessage implements IBroadcastPacket
 		public String toString(Language lang)
 		{
 			String name = SkillNameHolder.getInstance().getSkillName(lang, _skillId, _skillLvl);
-			if (name == null)
+			if(name == null)
 				return "null";
 			return name;
 		}
@@ -100,18 +100,17 @@ public class CustomMessage implements IBroadcastPacket
 
 	private static final Logger _log = LoggerFactory.getLogger(CustomMessage.class);
 
-	private static final String[] PARAMS =
-	{
-		"{0}",
-		"{1}",
-		"{2}",
-		"{3}",
-		"{4}",
-		"{5}",
-		"{6}",
-		"{7}",
-		"{8}",
-		"{9}"
+	private static final String[] PARAMS = {
+			"{0}",
+			"{1}",
+			"{2}",
+			"{3}",
+			"{4}",
+			"{5}",
+			"{6}",
+			"{7}",
+			"{8}",
+			"{9}"
 	};
 
 	private String _address;
@@ -124,7 +123,7 @@ public class CustomMessage implements IBroadcastPacket
 
 	public CustomMessage addString(String text)
 	{
-		if (_args == null)
+		if(_args == null)
 			_args = new ArrayList<IArgument>();
 		_args.add(new StringArgument(text));
 		return this;
@@ -142,9 +141,9 @@ public class CustomMessage implements IBroadcastPacket
 
 	public CustomMessage addCustomMessage(CustomMessage msg)
 	{
-		if (msg != this) // Иначе будет рекурсия.
+		if(msg != this) // Иначе будет рекурсия.
 		{
-			if (_args == null)
+			if(_args == null)
 				_args = new ArrayList<IArgument>();
 			_args.add(new CustomMessageArgument(msg));
 		}
@@ -153,7 +152,7 @@ public class CustomMessage implements IBroadcastPacket
 
 	public CustomMessage addItemName(int itemId)
 	{
-		if (_args == null)
+		if(_args == null)
 			_args = new ArrayList<IArgument>();
 		_args.add(new ItemNameArgument(itemId));
 		return this;
@@ -161,7 +160,7 @@ public class CustomMessage implements IBroadcastPacket
 
 	public CustomMessage addSkillName(int skillId, int skillLvl)
 	{
-		if (_args == null)
+		if(_args == null)
 			_args = new ArrayList<IArgument>();
 		_args.add(new SkillNameArgument(skillId, skillLvl));
 		return this;
@@ -182,20 +181,20 @@ public class CustomMessage implements IBroadcastPacket
 		String msg = null;
 
 		String text = StringsHolder.getInstance().getString(_address, lang);
-		if (text != null)
+		if(text != null)
 		{
 			msg = new String(text);
 
-			if (_args != null)
+			if(_args != null)
 			{
-				for (int i = 0; i < _args.size(); i++)
+				for(int i = 0; i < _args.size(); i++)
 				{
 					msg.replaceFirst(PARAMS[i], _args.get(i).toString(lang));
 				}
 			}
 		}
 
-		if (StringUtils.isEmpty(msg))
+		if(StringUtils.isEmpty(msg))
 		{
 			_log.warn("CustomMessage: string: " + _address + " not found for lang: " + lang + "!");
 			return StringUtils.EMPTY;

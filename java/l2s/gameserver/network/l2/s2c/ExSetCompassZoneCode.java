@@ -34,23 +34,23 @@ public class ExSetCompassZoneCode implements IClientOutgoingPacket
 
 	public ExSetCompassZoneCode(int zoneMask)
 	{
-		if ((zoneMask & ZONE_ALTERED_FLAG) == ZONE_ALTERED_FLAG)
+		if((zoneMask & ZONE_ALTERED_FLAG) == ZONE_ALTERED_FLAG)
 		{
 			_zone = ZONE_ALTERED;
 		}
-		else if ((zoneMask & ZONE_SIEGE_FLAG) == ZONE_SIEGE_FLAG)
+		else if((zoneMask & ZONE_SIEGE_FLAG) == ZONE_SIEGE_FLAG)
 		{
 			_zone = ZONE_SIEGE;
 		}
-		else if ((zoneMask & ZONE_PVP_FLAG) == ZONE_PVP_FLAG)
+		else if((zoneMask & ZONE_PVP_FLAG) == ZONE_PVP_FLAG)
 		{
 			_zone = ZONE_PVP;
 		}
-		else if ((zoneMask & ZONE_PEACE_FLAG) == ZONE_PEACE_FLAG)
+		else if((zoneMask & ZONE_PEACE_FLAG) == ZONE_PEACE_FLAG)
 		{
 			_zone = ZONE_PEACE;
 		}
-		else if ((zoneMask & ZONE_SSQ_FLAG) == ZONE_SSQ_FLAG)
+		else if((zoneMask & ZONE_SSQ_FLAG) == ZONE_SSQ_FLAG)
 		{
 			_zone = ZONE_SSQ;
 		}

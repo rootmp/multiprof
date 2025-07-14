@@ -16,19 +16,15 @@ public class TeleportingZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneEnter(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
 		Player player = actor.getPlayer();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
 		Location loc = zone.getTemplate().getTeleportLocation();
-		if (loc != null)
+		if(loc != null)
 		{
 			player.teleToLocation(loc);
 		}

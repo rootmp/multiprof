@@ -5,12 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import gnu.trove.iterator.TIntObjectIterator;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.commons.lang.ArrayUtils;
 import l2s.gameserver.templates.npc.NpcTemplate;
-
-import gnu.trove.iterator.TIntObjectIterator;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author: VISTALL
@@ -43,7 +42,7 @@ public final class NpcHolder extends AbstractHolder
 	public NpcTemplate getTemplate(int id)
 	{
 		NpcTemplate npc = ArrayUtils.valid(_allTemplates, id);
-		if (npc == null)
+		if(npc == null)
 		{
 			warn("Not defined npc id : " + id + ", or out of range!", new Exception());
 			return null;
@@ -72,12 +71,12 @@ public final class NpcHolder extends AbstractHolder
 		_npcsNames = new HashMap<String, NpcTemplate>();
 
 		int highestId = 0;
-		for (int id : _npcs.keys())
-			if (id > highestId)
+		for(int id : _npcs.keys())
+			if(id > highestId)
 				highestId = id;
 
 		_allTemplates = new NpcTemplate[highestId + 1];
-		for (TIntObjectIterator<NpcTemplate> iterator = _npcs.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<NpcTemplate> iterator = _npcs.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			int npcId = iterator.key();
@@ -86,7 +85,7 @@ public final class NpcHolder extends AbstractHolder
 			_allTemplates[npcId] = npc;
 
 			List<NpcTemplate> byLevel;
-			if ((byLevel = _npcsByLevel.get(npc.level)) == null)
+			if((byLevel = _npcsByLevel.get(npc.level)) == null)
 				_npcsByLevel.put(npcId, byLevel = new ArrayList<NpcTemplate>());
 			byLevel.add(npc);
 

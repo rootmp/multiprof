@@ -36,7 +36,7 @@ public class ItemInfo
 	private boolean _isBlessed;
 	private int _used_count;
 	private boolean _isLocked;
-	
+
 	// Attributes
 	private int _attrFire;
 	private int _attrWater;
@@ -46,12 +46,12 @@ public class ItemInfo
 	private int _attrUnholy;
 
 	private boolean _isBlocked;
-	
+
 	private Collection<Ensoul> _normalEnsouls = Collections.emptyList();
 	private Collection<Ensoul> _specialEnsouls = Collections.emptyList();
 
 	private PetParam _petParam = new PetParam();
-	
+
 	private ItemTemplate _item;
 
 	private PetItemInfo _petInfo;
@@ -126,7 +126,7 @@ public class ItemInfo
 	public void setItemId(int itemId)
 	{
 		_itemId = itemId;
-		if (itemId > 0)
+		if(itemId > 0)
 		{
 			_item = ItemHolder.getInstance().getTemplate(getItemId());
 		}
@@ -134,7 +134,7 @@ public class ItemInfo
 		{
 			_item = null;
 		}
-		if (_item != null)
+		if(_item != null)
 		{
 			setType1(_item.getType1());
 			setType2(_item.getType2());
@@ -340,22 +340,14 @@ public class ItemInfo
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (this == obj)
-		{
-			return true;
-		}
-		if (obj == null)
-		{
-			return false;
-		}
-		if (getClass() != obj.getClass())
-		{
-			return false;
-		}
-		if (getObjectId() == 0)
-		{
-			return getItemId() == ((ItemInfo) obj).getItemId();
-		}
+		if(this == obj)
+		{ return true; }
+		if(obj == null)
+		{ return false; }
+		if(getClass() != obj.getClass())
+		{ return false; }
+		if(getObjectId() == 0)
+		{ return getItemId() == ((ItemInfo) obj).getItemId(); }
 		return getObjectId() == ((ItemInfo) obj).getObjectId();
 	}
 
@@ -439,61 +431,54 @@ public class ItemInfo
 
 	private int[] getAttackElementInfo()
 	{
-		if (getItem().isWeapon())
+		if(getItem().isWeapon())
 		{
-			if (_attrFire > 0)
+			if(_attrFire > 0)
 			{
-				return new int[]
-				{
-					Element.FIRE.getId(),
-					_attrFire
+				return new int[] {
+						Element.FIRE.getId(),
+						_attrFire
 				};
 			}
-			if (_attrWater > 0)
+			if(_attrWater > 0)
 			{
-				return new int[]
-				{
-					Element.WATER.getId(),
-					_attrWater
+				return new int[] {
+						Element.WATER.getId(),
+						_attrWater
 				};
 			}
-			if (_attrWind > 0)
+			if(_attrWind > 0)
 			{
-				return new int[]
-				{
-					Element.WIND.getId(),
-					_attrWind
+				return new int[] {
+						Element.WIND.getId(),
+						_attrWind
 				};
 			}
-			if (_attrEarth > 0)
+			if(_attrEarth > 0)
 			{
-				return new int[]
-				{
-					Element.EARTH.getId(),
-					_attrEarth
+				return new int[] {
+						Element.EARTH.getId(),
+						_attrEarth
 				};
 			}
-			if (_attrHoly > 0)
+			if(_attrHoly > 0)
 			{
-				return new int[]
-				{
-					Element.HOLY.getId(),
-					_attrHoly
+				return new int[] {
+						Element.HOLY.getId(),
+						_attrHoly
 				};
 			}
-			if (_attrUnholy > 0)
+			if(_attrUnholy > 0)
 			{
-				return new int[]
-				{
-					Element.UNHOLY.getId(),
-					_attrUnholy
+				return new int[] {
+						Element.UNHOLY.getId(),
+						_attrUnholy
 				};
 			}
 		}
-		return new int[]
-		{
-			Element.NONE.getId(),
-			0
+		return new int[] {
+				Element.NONE.getId(),
+				0
 		};
 	}
 
@@ -576,7 +561,7 @@ public class ItemInfo
 	{
 		return _used_count;
 	}
-	
+
 	public boolean isLocked()
 	{
 		return _isLocked;
@@ -585,7 +570,7 @@ public class ItemInfo
 	public int getReuseTime()
 	{
 		return 0;
-		    
+
 	}
 
 	public PetParam getPetParam()

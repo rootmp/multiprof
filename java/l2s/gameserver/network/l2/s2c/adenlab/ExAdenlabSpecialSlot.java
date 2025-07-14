@@ -23,13 +23,13 @@ public class ExAdenlabSpecialSlot implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(nBossID);
 		packetWriter.writeD(nSlotID);
-		
+
 		packetWriter.writeD(drawnOptionGrades.length);
 		for(int option : drawnOptionGrades)
 		{
 			packetWriter.writeD(option);
 		}
-		
+
 		packetWriter.writeD(fixedOptionGrades.length);
 		for(int option : fixedOptionGrades)
 		{

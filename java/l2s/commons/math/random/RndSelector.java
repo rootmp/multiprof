@@ -53,7 +53,7 @@ public class RndSelector<E>
 	public void add(E value, double chance)
 	{
 		int weight = BigDecimal.valueOf(chance).multiply(CHANCE_WEIGHT_MOD).intValue();
-		if (weight <= 0 && chance > 0)
+		if(weight <= 0 && chance > 0)
 		{
 			totalWeight++;
 			faultWeight++;
@@ -67,7 +67,7 @@ public class RndSelector<E>
 
 	public void addAll(Collection<E> collection, ToDoubleFunction<E> weightFunction)
 	{
-		for (E e : collection)
+		for(E e : collection)
 		{
 			add(e, weightFunction.applyAsDouble(e));
 		}
@@ -76,19 +76,19 @@ public class RndSelector<E>
 	private E get(long maxWeight, boolean reduce)
 	{
 		maxWeight -= faultWeight;
-		if (maxWeight <= 0)
+		if(maxWeight <= 0)
 			return null;
 
 		Collections.shuffle(nodes);
 
 		long r = Rnd.get(maxWeight);
 		long weight = 0;
-		for (Iterator<Node<E>> it = nodes.iterator(); it.hasNext();)
+		for(Iterator<Node<E>> it = nodes.iterator(); it.hasNext();)
 		{
 			Node<E> node = it.next();
-			if ((weight += node.weight) > r)
+			if((weight += node.weight) > r)
 			{
-				if (reduce)
+				if(reduce)
 				{
 					totalWeight -= node.weight;
 					it.remove();

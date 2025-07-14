@@ -17,10 +17,10 @@ public class ExQuestNotificationAll implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_allActiveQuestsStates.length);//size
-		for (QuestState q : _allActiveQuestsStates)
+		for(QuestState q : _allActiveQuestsStates)
 		{
 			packetWriter.writeD(q.getQuest().getId());//id
-			packetWriter.writeD(q.getCond()-1);//count
+			packetWriter.writeD(q.getCond() - 1);//count
 		}
 		return true;
 	}

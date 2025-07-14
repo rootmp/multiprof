@@ -20,11 +20,11 @@ public final class p_get_item_by_exp extends EffectHandler
 			@Override
 			public void onExpReceive(Player player, long value, boolean hunting)
 			{
-				if (hunting)
+				if(hunting)
 				{
 					_receivedExp += value;
 
-					if (_receivedExp >= _exp)
+					if(_receivedExp >= _exp)
 					{
 						_receivedExp = 0L;
 						ItemFunctions.addItem(player, _itemId, _itemCount, true);

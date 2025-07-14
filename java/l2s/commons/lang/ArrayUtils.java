@@ -17,9 +17,9 @@ public final class ArrayUtils
 	 */
 	public static <T> T valid(T[] array, int index)
 	{
-		if (array == null)
+		if(array == null)
 			return null;
-		if (index < 0 || array.length <= index)
+		if(index < 0 || array.length <= index)
 			return null;
 		return array[index];
 	}
@@ -31,10 +31,9 @@ public final class ArrayUtils
 	 * @param element
 	 * @return new array with element
 	 */
-	@SuppressWarnings(
-	{
-		"unchecked",
-		"rawtypes"
+	@SuppressWarnings({
+			"unchecked",
+			"rawtypes"
 	})
 	public static <T> T[] add(T[] array, T element)
 	{
@@ -47,7 +46,7 @@ public final class ArrayUtils
 	@SuppressWarnings("unchecked")
 	private static <T> T[] copyArrayGrow(T[] array, Class<? extends T> type)
 	{
-		if (array != null)
+		if(array != null)
 		{
 			int arrayLength = Array.getLength(array);
 			T[] newArray = (T[]) Array.newInstance(array.getClass().getComponentType(), arrayLength + 1);
@@ -66,11 +65,11 @@ public final class ArrayUtils
 	 */
 	public static <T> boolean contains(T[] array, T value)
 	{
-		if (array == null)
+		if(array == null)
 			return false;
 
-		for (int i = 0; i < array.length; i++)
-			if (value == array[i])
+		for(int i = 0; i < array.length; i++)
+			if(value == array[i])
 				return true;
 		return false;
 	}
@@ -86,11 +85,11 @@ public final class ArrayUtils
 	 */
 	public static <T> int indexOf(T[] array, T value, int index)
 	{
-		if (index < 0 || array.length <= index)
+		if(index < 0 || array.length <= index)
 			return INDEX_NOT_FOUND;
 
-		for (int i = index; i < array.length; i++)
-			if (value == array[i])
+		for(int i = index; i < array.length; i++)
+			if(value == array[i])
 				return i;
 
 		return INDEX_NOT_FOUND;
@@ -106,19 +105,19 @@ public final class ArrayUtils
 	@SuppressWarnings("unchecked")
 	public static <T> T[] remove(T[] array, T value)
 	{
-		if (array == null)
+		if(array == null)
 			return null;
 
 		int index = indexOf(array, value, 0);
 
-		if (index == INDEX_NOT_FOUND)
+		if(index == INDEX_NOT_FOUND)
 			return array;
 
 		int length = array.length;
 
 		T[] newArray = (T[]) Array.newInstance(array.getClass().getComponentType(), length - 1);
 		System.arraycopy(array, 0, newArray, 0, index);
-		if (index < length - 1)
+		if(index < length - 1)
 			System.arraycopy(array, index + 1, newArray, index, length - index - 1);
 
 		return newArray;
@@ -128,7 +127,7 @@ public final class ArrayUtils
 	{
 		int[] ar = new int[collection.size()];
 		int i = 0;
-		for (Integer t : collection)
+		for(Integer t : collection)
 			ar[i++] = t;
 		return ar;
 	}
@@ -138,7 +137,7 @@ public final class ArrayUtils
 		int length = max - min;
 		int[] array = new int[length + 1];
 		int x = 0;
-		for (int i = min; i <= max; i++, x++)
+		for(int i = min; i <= max; i++, x++)
 			array[x] = i;
 		return array;
 	}

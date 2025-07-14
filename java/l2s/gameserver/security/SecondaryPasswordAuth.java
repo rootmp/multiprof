@@ -44,26 +44,26 @@ public class SecondaryPasswordAuth
 	{
 		String accountName = _activeClient.getLogin();
 		String password = AccountVariablesDAO.getInstance().select(accountName, VAR_PWD);
-		if (password != null)
+		if(password != null)
 		{
 			_password = password;
 
 			String wrongAttempts = AccountVariablesDAO.getInstance().select(accountName, VAR_WTE);
-			if (wrongAttempts != null)
+			if(wrongAttempts != null)
 				_wrongAttempts = Integer.parseInt(wrongAttempts);
 		}
 	}
 
 	public boolean savePassword(String password)
 	{
-		if (passwordExist())
+		if(passwordExist())
 		{
 			_log.warn("[SecondaryPasswordAuth]" + _activeClient.getLogin() + " forced savePassword");
 			_activeClient.closeNow();
 			return false;
 		}
 
-		if (!validatePassword(password))
+		if(!validatePassword(password))
 		{
 			_activeClient.sendPacket(new Ex2NDPasswordAckPacket(Ex2NDPasswordAckPacket.WRONG_PATTERN));
 			return false;
@@ -87,17 +87,17 @@ public class SecondaryPasswordAuth
 
 	public boolean changePassword(String oldPassword, String newPassword)
 	{
-		if (!passwordExist())
+		if(!passwordExist())
 		{
 			_log.warn("[SecondaryPasswordAuth]" + _activeClient.getLogin() + " forced changePassword");
 			_activeClient.closeNow();
 			return false;
 		}
 
-		if (!checkPassword(oldPassword, true))
+		if(!checkPassword(oldPassword, true))
 			return false;
 
-		if (!validatePassword(newPassword))
+		if(!validatePassword(newPassword))
 		{
 			_activeClient.sendPacket(new Ex2NDPasswordAckPacket(Ex2NDPasswordAckPacket.WRONG_PATTERN));
 			return false;
@@ -117,10 +117,10 @@ public class SecondaryPasswordAuth
 	{
 		password = cryptPassword(password);
 
-		if (!password.equals(_password))
+		if(!password.equals(_password))
 		{
 			_wrongAttempts++;
-			if (_wrongAttempts < Config.EX_SECOND_AUTH_MAX_ATTEMPTS)
+			if(_wrongAttempts < Config.EX_SECOND_AUTH_MAX_ATTEMPTS)
 			{
 				_activeClient.sendPacket(new Ex2NDPasswordVerifyPacket(Ex2NDPasswordVerifyPacket.PASSWORD_WRONG, _wrongAttempts));
 				insertWrongAttempt(_wrongAttempts);
@@ -131,13 +131,14 @@ public class SecondaryPasswordAuth
 				int banExpire = (int) (System.currentTimeMillis() / 1000L) + Config.EX_SECOND_AUTH_BAN_TIME * 60;
 				int accessLvl = Config.EX_SECOND_AUTH_BAN_TIME > 0 ? 0 : -100;
 				AuthServerCommunication.getInstance().sendPacket(new ChangeAccessLevel(_activeClient.getLogin(), accessLvl, banExpire));
-				_log.warn(_activeClient.getLogin() + " - (" + _activeClient.getIpAddr() + ") has inputted the wrong password " + _wrongAttempts + " times in row.");
+				_log.warn(_activeClient.getLogin() + " - (" + _activeClient.getIpAddr() + ") has inputted the wrong password " + _wrongAttempts
+						+ " times in row.");
 				insertWrongAttempt(0);
 				_activeClient.close(new Ex2NDPasswordVerifyPacket(Ex2NDPasswordVerifyPacket.PASSWORD_BAN, Config.EX_SECOND_AUTH_MAX_ATTEMPTS));
 				return false;
 			}
 		}
-		if (!skipAuth)
+		if(!skipAuth)
 		{
 			_authed = true;
 			_activeClient.sendPacket(new Ex2NDPasswordVerifyPacket(Ex2NDPasswordVerifyPacket.PASSWORD_OK, _wrongAttempts));
@@ -153,7 +154,7 @@ public class SecondaryPasswordAuth
 
 	public void openDialog()
 	{
-		if (passwordExist())
+		if(passwordExist())
 			_activeClient.sendPacket(new Ex2NDPasswordCheckPacket(Ex2NDPasswordCheckPacket.PASSWORD_PROMPT));
 		else
 			_activeClient.sendPacket(new Ex2NDPasswordCheckPacket(Ex2NDPasswordCheckPacket.PASSWORD_NEW));
@@ -173,11 +174,11 @@ public class SecondaryPasswordAuth
 			byte[] hash = md.digest(raw);
 			return Base64.getEncoder().encodeToString(hash);
 		}
-		catch (NoSuchAlgorithmException e)
+		catch(NoSuchAlgorithmException e)
 		{
 			_log.error("[SecondaryPasswordAuth] Unsupported Algorythm", e);
 		}
-		catch (UnsupportedEncodingException e)
+		catch(UnsupportedEncodingException e)
 		{
 			_log.error("[SecondaryPasswordAuth] Unsupported Encoding", e);
 		}
@@ -186,10 +187,10 @@ public class SecondaryPasswordAuth
 
 	private boolean validatePassword(String password)
 	{
-		if (!Strings.isDigit(password))
+		if(!Strings.isDigit(password))
 			return false;
 
-		if (password.length() < 6 || password.length() > 8)
+		if(password.length() < 6 || password.length() > 8)
 			return false;
 
 		_wrongAttempts = 0;

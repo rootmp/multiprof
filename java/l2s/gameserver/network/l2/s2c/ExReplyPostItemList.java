@@ -24,9 +24,9 @@ public class ExReplyPostItemList implements IClientOutgoingPacket
 		_type = type;
 
 		ItemInstance[] items = activeChar.getInventory().getItems();
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
-			if (item.canBeTraded(activeChar))
+			if(item.canBeTraded(activeChar))
 			{
 				_itemsList.add(new ItemInfo(item, item.getTemplate().isBlocked(activeChar, item)));
 			}
@@ -38,10 +38,10 @@ public class ExReplyPostItemList implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_type);
 		packetWriter.writeD(_itemsList.size());
-		if (_type == 2)
+		if(_type == 2)
 		{
 			packetWriter.writeD(_itemsList.size());
-			for (ItemInfo item : _itemsList)
+			for(ItemInfo item : _itemsList)
 			{
 				writeItemInfo(packetWriter, item);
 			}

@@ -1,7 +1,7 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.network.l2.GameClient;
-
 
 public class RequestTeleport implements IClientIncomingPacket
 {
@@ -12,12 +12,12 @@ public class RequestTeleport implements IClientIncomingPacket
 	{
 		unk = packet.readD();
 		_type = packet.readD();
-		if (_type == 2)
+		if(_type == 2)
 		{
 			unk2 = packet.readD();
 			unk3 = packet.readD();
 		}
-		else if (_type == 3)
+		else if(_type == 3)
 		{
 			unk2 = packet.readD();
 			unk3 = packet.readD();

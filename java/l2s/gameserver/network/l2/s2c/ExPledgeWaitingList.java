@@ -23,7 +23,7 @@ public class ExPledgeWaitingList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_applicants.size());
-		for (ClanSearchPlayer applicant : _applicants)
+		for(ClanSearchPlayer applicant : _applicants)
 		{
 			packetWriter.writeD(applicant.getCharId());
 			packetWriter.writeS(applicant.getName());

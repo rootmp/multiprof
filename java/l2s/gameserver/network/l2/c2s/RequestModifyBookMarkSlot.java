@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.BookMark;
@@ -27,10 +28,10 @@ public class RequestModifyBookMarkSlot implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar != null)
+		if(activeChar != null)
 		{
 			final BookMark mark = activeChar.getBookMarkList().get(slot);
-			if (mark != null)
+			if(mark != null)
 			{
 				mark.setName(name);
 				mark.setIcon(icon);

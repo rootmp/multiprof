@@ -32,14 +32,14 @@ public class RequestServerLogin extends L2LoginClientPacket
 	protected void runImpl()
 	{
 		L2LoginClient client = getClient();
-		if (!client.isPasswordCorrect())
+		if(!client.isPasswordCorrect())
 		{
 			client.close(PlayFail.REASON_USER_OR_PASS_WRONG);
 			return;
 		}
 
 		SessionKey skey = client.getSessionKey();
-		if (skey == null || Config.SHOW_LICENCE && !skey.checkLoginPair(_loginOkID1, _loginOkID2))
+		if(skey == null || Config.SHOW_LICENCE && !skey.checkLoginPair(_loginOkID1, _loginOkID2))
 		{
 			client.close(PlayFail.REASON_ACCESS_FAILED);
 			return;
@@ -47,19 +47,19 @@ public class RequestServerLogin extends L2LoginClientPacket
 
 		Account account = client.getAccount();
 		GameServer gs = GameServerManager.getInstance().getGameServerById(_serverId);
-		if (gs == null || !gs.isAuthed())
+		if(gs == null || !gs.isAuthed())
 		{
 			client.close(PlayFail.REASON_ACCESS_FAILED);
 			return;
 		}
 
-		if (gs.isGmOnly() && account.getAccessLevel() < 100)
+		if(gs.isGmOnly() && account.getAccessLevel() < 100)
 		{
 			client.close(PlayFail.REASON_SERVER_MAINTENANCE);
 			return;
 		}
 
-		if (gs.getOnline() >= gs.getMaxPlayers() && account.getAccessLevel() < 50)
+		if(gs.getOnline() >= gs.getMaxPlayers() && account.getAccessLevel() < 50)
 		{
 			client.close(PlayFail.REASON_SERVER_OVERLOADED);
 			return;

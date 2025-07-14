@@ -36,15 +36,13 @@ public class HardSpawner extends Spawner
 	public void decreaseCount(NpcInstance oldNpc)
 	{
 		oldNpc.setSpawn(null); // [VISTALL] нужно убирать спавн что бы не вызвать зацикливания, и остановки
-								// спавна
+		// спавна
 		oldNpc.deleteMe();
 
-		if (!_spawned.remove(oldNpc))
-		{
-			return;
-		}
+		if(!_spawned.remove(oldNpc))
+		{ return; }
 
-		if (!hasRespawn())
+		if(!hasRespawn())
 		{
 			decreaseCount0(null, null, oldNpc.getDeathTime());
 			return;
@@ -56,9 +54,9 @@ public class HardSpawner extends Spawner
 		npc.setSpawn(this);
 
 		List<MinionData> minionsData = npcInfo.getMinionData();
-		if (!minionsData.isEmpty())
+		if(!minionsData.isEmpty())
 		{
-			for (MinionData minionData : minionsData)
+			for(MinionData minionData : minionsData)
 			{
 				npc.getMinionList().addMinion(minionData);
 			}
@@ -104,7 +102,7 @@ public class HardSpawner extends Spawner
 	{
 		super.deleteAll();
 
-		for (NpcInstance npc : _reSpawned)
+		for(NpcInstance npc : _reSpawned)
 		{
 			npc.setSpawn(null);
 			npc.deleteMe();
@@ -122,10 +120,8 @@ public class HardSpawner extends Spawner
 	public SpawnRange getRandomSpawnRange()
 	{
 		List<SpawnPoint> spawnPoints = _template.getSpawnPointList();
-		if (!spawnPoints.isEmpty())
-		{
-			return Rnd.get(spawnPoints);
-		}
+		if(!spawnPoints.isEmpty())
+		{ return Rnd.get(spawnPoints); }
 		return Rnd.get(_template.getTerritoryList());
 	}
 

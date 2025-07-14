@@ -26,10 +26,10 @@ public class AdminGiveAll implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().UseGMShop)
+		if(!activeChar.getPlayerAccess().UseGMShop)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_giveall:
 			{
@@ -38,13 +38,13 @@ public class AdminGiveAll implements IAdminCommandHandler
 					int id = Integer.parseInt(wordList[1]);
 					long count = wordList.length >= 3 ? Long.parseLong(wordList[2]) : 1L;
 					IntSet objIds = CharacterDAO.getInstance().getAllPlayersObjectIds();
-					for (int objId : objIds.toArray())
+					for(int objId : objIds.toArray())
 					{
-						if (objId == activeChar.getObjectId())
+						if(objId == activeChar.getObjectId())
 							continue;
 
 						Player player = GameObjectsStorage.getPlayer(objId);
-						if (player != null)
+						if(player != null)
 						{
 							player.sendPacket(new CustomMessage("admincommandhandlers.AdminGiveAll.YouHaveBeenRewarded"));
 							ItemFunctions.addItem(player, id, count);
@@ -53,7 +53,7 @@ public class AdminGiveAll implements IAdminCommandHandler
 							DelayedItemsManager.addDelayed(objId, id, count, 0, "GM reward by //giveall command.");
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					activeChar.sendMessage("USAGE: //giveall itemId count");
 					return false;
@@ -67,12 +67,12 @@ public class AdminGiveAll implements IAdminCommandHandler
 					int id = Integer.parseInt(wordList[1]);
 					long count = wordList.length >= 3 ? Long.parseLong(wordList[2]) : 1L;
 					Set<String> ips = new HashSet<String>();
-					for (Player player : GameObjectsStorage.getPlayers(false, false))
+					for(Player player : GameObjectsStorage.getPlayers(false, false))
 					{
-						if (player == activeChar)
+						if(player == activeChar)
 							continue;
 
-						if (ips.contains(player.getIP()))
+						if(ips.contains(player.getIP()))
 							continue;
 
 						ips.add(player.getIP());
@@ -80,7 +80,7 @@ public class AdminGiveAll implements IAdminCommandHandler
 						ItemFunctions.addItem(player, id, count);
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					activeChar.sendMessage("USAGE: //giveall_online itemId count");
 					return false;

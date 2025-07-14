@@ -32,33 +32,33 @@ public final class AdditionalDropParser extends AbstractParser<AdditionalDropHol
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Element element : rootElement.elements("drop"))
+		for(Element element : rootElement.elements("drop"))
 		{
 			int minLevel = parseInt(element, "min_level", 1);
 			int maxLevel = parseInt(element, "max_level", Integer.MAX_VALUE);
 			boolean levelPenalty = parseBoolean(element, "level_penalty", true);
 			int monsterType = parseInt(element, "monster_type", 0);
 			AdditionalDrop additionalDrop = new AdditionalDrop(minLevel, maxLevel, levelPenalty, monsterType);
-			for (Element element1 : element.elements("npcs"))
+			for(Element element1 : element.elements("npcs"))
 			{
-				for (Element element2 : element1.elements("npc"))
+				for(Element element2 : element1.elements("npc"))
 				{
 					additionalDrop.getNpcs().add(parseInt(element2, "id"));
 				}
 			}
-			for (Element element1 : element.elements("reward"))
+			for(Element element1 : element.elements("reward"))
 			{
 				additionalDrop.getRewardItems().add(RewardData.parseReward(element1));
 			}
 			getHolder().addDrop(additionalDrop);
 		}
 	}
-	
+
 	public static AdditionalDropParser getInstance()
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected final static AdditionalDropParser _instance = new AdditionalDropParser();

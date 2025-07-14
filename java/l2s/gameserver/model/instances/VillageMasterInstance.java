@@ -58,10 +58,10 @@ public final class VillageMasterInstance extends NpcInstance
 	public String correctBypassLink(Player player, String link)
 	{
 		String path = "villagemaster/occupation/" + link;
-		if (HtmCache.getInstance().getIfExists(path, player) != null)
+		if(HtmCache.getInstance().getIfExists(path, player) != null)
 			return path;
 		path = "villagemaster/subclass/" + link;
-		if (HtmCache.getInstance().getIfExists(path, player) != null)
+		if(HtmCache.getInstance().getIfExists(path, player) != null)
 			return path;
 		return super.correctBypassLink(player, link);
 	}
@@ -71,126 +71,126 @@ public final class VillageMasterInstance extends NpcInstance
 	{
 		StringTokenizer st = new StringTokenizer(command, "_");
 		String cmd = st.nextToken();
-		if (command.equals("manage_clan"))
+		if(command.equals("manage_clan"))
 		{
 			showChatWindow(player, "pledge/pl001.htm", false);
 		}
-		else if (command.equals("manage_alliance"))
+		else if(command.equals("manage_alliance"))
 		{
 			showChatWindow(player, "pledge/al001.htm", false);
 		}
-		else if (command.equals("create_clan_check"))
+		else if(command.equals("create_clan_check"))
 		{
-			if (player.getLevel() <= 9)
+			if(player.getLevel() <= 9)
 				showChatWindow(player, "pledge/pl002.htm", false);
-			else if (player.isClanLeader())
+			else if(player.isClanLeader())
 				showChatWindow(player, "pledge/pl003.htm", false);
-			else if (player.getClan() != null)
+			else if(player.getClan() != null)
 				showChatWindow(player, "pledge/pl004.htm", false);
 			else
 				showChatWindow(player, "pledge/pl005.htm", false);
 		}
-		else if (command.equals("lvlup_clan_check"))
+		else if(command.equals("lvlup_clan_check"))
 		{
-			if (!player.isClanLeader())
+			if(!player.isClanLeader())
 			{
 				showChatWindow(player, "pledge/pl014.htm", false);
 				return;
 			}
 			showChatWindow(player, "pledge/pl013.htm", false);
 		}
-		else if (command.equals("disband_clan_check"))
+		else if(command.equals("disband_clan_check"))
 		{
-			if (!player.isClanLeader())
+			if(!player.isClanLeader())
 			{
 				showChatWindow(player, "pledge/pl_err_master.htm", false);
 				return;
 			}
 			showChatWindow(player, "pledge/pl007.htm", false);
 		}
-		else if (command.equals("restore_clan_check"))
+		else if(command.equals("restore_clan_check"))
 		{
-			if (!player.isClanLeader())
+			if(!player.isClanLeader())
 			{
 				showChatWindow(player, "pledge/pl011.htm", false);
 				return;
 			}
 			showChatWindow(player, "pledge/pl010.htm", false);
 		}
-		else if (command.equals("change_leader_check"))
+		else if(command.equals("change_leader_check"))
 		{
 			showChatWindow(player, "pledge/pl_master.htm", false);
 		}
-		else if (command.startsWith("request_change_leader_check"))
+		else if(command.startsWith("request_change_leader_check"))
 		{
-			if (!player.isClanLeader())
+			if(!player.isClanLeader())
 			{
 				showChatWindow(player, "pledge/pl_err_master.htm", false);
 				return;
 			}
 			showChatWindow(player, "pledge/pl_transfer_master.htm", false);
 		}
-		else if (command.startsWith("cancel_change_leader_check"))
+		else if(command.startsWith("cancel_change_leader_check"))
 		{
-			if (!player.isClanLeader())
+			if(!player.isClanLeader())
 			{
 				showChatWindow(player, "pledge/pl_err_master.htm", false);
 				return;
 			}
 			showChatWindow(player, "pledge/pl_cancel_master.htm", false);
 		}
-		else if (command.startsWith("create_clan"))
+		else if(command.startsWith("create_clan"))
 		{
-			if (command.length() > 12)
+			if(command.length() > 12)
 			{
 				String val = command.substring(12);
 				VillageMasterPledgeBypasses.createClan(this, player, val);
 			}
 		}
-		else if (command.startsWith("change_leader"))
+		else if(command.startsWith("change_leader"))
 		{
 			StringTokenizer tokenizer = new StringTokenizer(command);
-			if (tokenizer.countTokens() != 3)
+			if(tokenizer.countTokens() != 3)
 				return;
 
 			tokenizer.nextToken();
 
 			VillageMasterPledgeBypasses.changeLeader(this, player, Integer.parseInt(tokenizer.nextToken()), tokenizer.nextToken());
 		}
-		else if (command.startsWith("cancel_change_leader"))
+		else if(command.startsWith("cancel_change_leader"))
 			VillageMasterPledgeBypasses.cancelLeaderChange(this, player);
-		else if (command.startsWith("check_create_ally"))
+		else if(command.startsWith("check_create_ally"))
 			showChatWindow(player, "pledge/al005.htm", false);
-		else if (command.startsWith("create_ally"))
+		else if(command.startsWith("create_ally"))
 		{
-			if (command.length() > 12)
+			if(command.length() > 12)
 			{
 				String val = command.substring(12);
-				if (VillageMasterPledgeBypasses.createAlly(player, val))
+				if(VillageMasterPledgeBypasses.createAlly(player, val))
 					showChatWindow(player, "pledge/al006.htm", false);
 			}
 		}
-		else if (command.startsWith("dissolve_clan"))
+		else if(command.startsWith("dissolve_clan"))
 			VillageMasterPledgeBypasses.dissolveClan(this, player);
-		else if (command.startsWith("restore_clan"))
+		else if(command.startsWith("restore_clan"))
 			VillageMasterPledgeBypasses.restoreClan(this, player);
-		else if (command.startsWith("learn_clan_skills"))
+		else if(command.startsWith("learn_clan_skills"))
 			VillageMasterPledgeBypasses.showClanSkillList(this, player);
-		else if (cmd.equalsIgnoreCase("changeclass"))
+		else if(cmd.equalsIgnoreCase("changeclass"))
 		{
 			int classListId = getClassListId(player);
 
 			String html = null;
-			if (player.getClassId().isOfLevel(ClassLevel.THIRD))
+			if(player.getClassId().isOfLevel(ClassLevel.THIRD))
 				html = getParameter("fnYouAreFourthClass", "master_lv3_hef005.htm");
-			else if (classListId == -1)
+			else if(classListId == -1)
 				html = getParameter("fnYouAreFirstClass", null);
-			else if (classListId == 0)
+			else if(classListId == 0)
 				html = getParameter("fnClassMismatch", null);
 			else
 				html = getParameter("fnClassList" + classListId, null);
 
-			if (html != null)
+			if(html != null)
 				showChatWindow(player, "villagemaster/occupation/" + html, false);
 		}
 		else
@@ -200,175 +200,175 @@ public final class VillageMasterInstance extends NpcInstance
 	@Override
 	public void onMenuSelect(Player player, int ask, long reply, int state)
 	{
-		if (ask == -2)
+		if(ask == -2)
 		{
-			if (!Config.ENABLE_SUB_CLASSES)
+			if(!Config.ENABLE_SUB_CLASSES)
 			{
 				super.onMenuSelect(player, ask, reply, state);
 				return;
 			}
 
 			final String dialogSuffix = getSubClassDialogSuffix();
-			if (dialogSuffix == null)
+			if(dialogSuffix == null)
 			{
 				super.onMenuSelect(player, ask, reply, state);
 				return;
 			}
 
-			if (player.containsEvent(SingleMatchEvent.class)) // Не позволяем во время PvP ивентов менять саб-класс.
+			if(player.containsEvent(SingleMatchEvent.class)) // Не позволяем во время PvP ивентов менять саб-класс.
 				return;
 
-			if (reply == 5) // Меню 'Саб Класс'
+			if(reply == 5) // Меню 'Саб Класс'
 			{
-				if (!player.isTransformed())
+				if(!player.isTransformed())
 					showChatWindow(player, "villagemaster/subclass/subclass_01.htm", false);
 				else
 					showChatWindow(player, "villagemaster/subclass/subclass_06.htm", false);
 			}
-			else if (reply == 10) // Добавить подкласс
+			else if(reply == 10) // Добавить подкласс
 			{
-				if (player.hasServitor())
+				if(player.hasServitor())
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_02.htm", false);
 				else
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_01.htm", false);
 			}
-			else if (reply == 11)
+			else if(reply == 11)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 1, 0);
 			}
-			else if (reply == 12)
+			else if(reply == 12)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 2, 0);
 			}
-			else if (reply == 13)
+			else if(reply == 13)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 3, 0);
 			}
-			else if (reply == 14)
+			else if(reply == 14)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 4, 0);
 			}
-			else if (reply == 15)
+			else if(reply == 15)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 5, 0);
 			}
-			else if (reply == 16)
+			else if(reply == 16)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 6, 0);
 			}
-			else if (reply == 17)
+			else if(reply == 17)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 7, 0);
 			}
-			else if (reply == 18)
+			else if(reply == 18)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 8, 0);
 			}
-			else if (reply == 19)
+			else if(reply == 19)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 9, 0);
 			}
-			else if (reply == 20)
+			else if(reply == 20)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 10, 0);
 			}
-			else if (reply == 30) // Изменить подкласс
+			else if(reply == 30) // Изменить подкласс
 			{
-				if (player.hasServitor())
+				if(player.hasServitor())
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_02.htm", false);
-				else if (player.isTransformed())
+				else if(player.isTransformed())
 					showChatWindow(player, "villagemaster/subclass/subclass_06.htm", false);
 				else
 					VillageMasterSubClassBypasses.getSubJobList(this, player, 11, 0);
 			}
-			else if (reply == 40) // Отменить текущий подкласс и активировать новый
+			else if(reply == 40) // Отменить текущий подкласс и активировать новый
 			{
-				if (player.getLevel() < 40)
+				if(player.getLevel() < 40)
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_hef_19.htm", false);
 					return;
 				}
 
-				if (player.hasServitor())
+				if(player.hasServitor())
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_02.htm", false);
 				else
 					VillageMasterSubClassBypasses.getSubJobList(this, player, 20, 0);
 			}
-			else if (reply == 41)
+			else if(reply == 41)
 			{
-				if (player.hasServitor())
+				if(player.hasServitor())
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_02.htm", false);
 				}
-				else if (state == 1)
+				else if(state == 1)
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_01b.htm", false);
 				}
-				else if (state == 2)
+				else if(state == 2)
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_01c.htm", false);
 				}
-				else if (state == 3)
+				else if(state == 3)
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_01d.htm", false);
 				}
 			}
-			else if (reply == 42)
+			else if(reply == 42)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 1, state);
 			}
-			else if (reply == 43)
+			else if(reply == 43)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 2, state);
 			}
-			else if (reply == 44)
+			else if(reply == 44)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 3, state);
 			}
-			else if (reply == 45)
+			else if(reply == 45)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 4, state);
 			}
-			else if (reply == 46)
+			else if(reply == 46)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 5, state);
 			}
-			else if (reply == 47)
+			else if(reply == 47)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 6, state);
 			}
-			else if (reply == 48)
+			else if(reply == 48)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 7, state);
 			}
-			else if (reply == 49)
+			else if(reply == 49)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 8, state);
 			}
-			else if (reply == 50)
+			else if(reply == 50)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 9, state);
 			}
-			else if (reply == 51)
+			else if(reply == 51)
 			{
 				VillageMasterSubClassBypasses.getSubJobList(this, player, 10, state);
 			}
-			else if (reply >= 324 && reply <= 410)
+			else if(reply >= 324 && reply <= 410)
 			{
 				int id = (int) (reply - (reply >= 380 ? 292 : 322));
 				ClassId classId = ClassId.valueOf(id);
-				if (!isMyApprentice(classId.getId()))
+				if(!isMyApprentice(classId.getId()))
 					return;
 
-				if (player.getClassId() == classId)
+				if(player.getClassId() == classId)
 				{
 					showChatWindow(player, "villagemaster/subclass/master_lv3_" + dialogSuffix + "_16.htm", false);
 					return;
 				}
 
-				if (!player.isDead())
+				if(!player.isDead())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					player.setActiveSubClass(classId.getId(), true, false);
@@ -377,21 +377,21 @@ public final class VillageMasterInstance extends NpcInstance
 			else
 				super.onMenuSelect(player, ask, reply, state);
 		}
-		else if (ask == -2418)
+		else if(ask == -2418)
 		{
-			if (reply == 1)
+			if(reply == 1)
 			{
 				player.sendPacket(new ExShowUpgradeSystem(1));
 			}
-			else if (reply == 2)
+			else if(reply == 2)
 			{
 				player.sendPacket(new ExShowUpgradeSystemNormal(1));
 			}
-			else if (reply == 3)
+			else if(reply == 3)
 			{
 				player.sendPacket(new ExShowUpgradeSystemNormal(2));
 			}
-			else if (reply == 4)
+			else if(reply == 4)
 			{
 				showChatWindow(player, "villagemaster/upgrade_system001.htm", false);
 			}
@@ -409,37 +409,37 @@ public final class VillageMasterInstance extends NpcInstance
 	@Override
 	public void onChangeClassBypass(Player player, int classId)
 	{
-		if (!player.isQuestContinuationPossible(true))
+		if(!player.isQuestContinuationPossible(true))
 			return;
 
 		String html = null;
 
 		ClassId newClassId = ClassId.valueOf(classId);
-		if (player.getClassId().isOfLevel(ClassLevel.FIRST) && newClassId.isOfLevel(ClassLevel.FIRST))
+		if(player.getClassId().isOfLevel(ClassLevel.FIRST) && newClassId.isOfLevel(ClassLevel.FIRST))
 			html = getParameter("fnYouAreSecondClass", null);
 
-		if (player.getClassId().isOfLevel(ClassLevel.SECOND) && (newClassId.isOfLevel(ClassLevel.FIRST) || newClassId.isOfLevel(ClassLevel.SECOND)))
+		if(player.getClassId().isOfLevel(ClassLevel.SECOND) && (newClassId.isOfLevel(ClassLevel.FIRST) || newClassId.isOfLevel(ClassLevel.SECOND)))
 			html = getParameter("fnYouAreThirdClass", null);
 
-		if (player.getClassId().isOfLevel(ClassLevel.THIRD))
+		if(player.getClassId().isOfLevel(ClassLevel.THIRD))
 			html = getParameter("fnYouAreSecondClass", null);
 
-		if (html != null)
+		if(html != null)
 		{
 			showChatWindow(player, "villagemaster/occupation/" + html, false);
 			return;
 		}
 
-		if (!newClassId.childOf(player.getClassId()))
+		if(!newClassId.childOf(player.getClassId()))
 			return;
 
-		if ((newClassId.getClassLevel().ordinal() - player.getClassId().getClassLevel().ordinal()) != 1)
+		if((newClassId.getClassLevel().ordinal() - player.getClassId().getClassLevel().ordinal()) != 1)
 			return;
 
 		boolean noHaveItems = false;
-		for (int itemId : newClassId.getChangeClassItemIds())
+		for(int itemId : newClassId.getChangeClassItemIds())
 		{
-			if (ItemFunctions.getItemCount(player, itemId) == 0)
+			if(ItemFunctions.getItemCount(player, itemId) == 0)
 			{
 				noHaveItems = true;
 				break;
@@ -448,7 +448,7 @@ public final class VillageMasterInstance extends NpcInstance
 
 		int classListId = getClassListId(player);
 		int classIdInList = 0;
-		switch (newClassId)
+		switch(newClassId)
 		{
 			case WARRIOR:
 			case WIZARD:
@@ -513,14 +513,14 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 		}
 
-		if (player.getClassId().getClassMinLevel(true) > player.getLevel())
+		if(player.getClassId().getClassMinLevel(true) > player.getLevel())
 		{
-			if (noHaveItems)
+			if(noHaveItems)
 				html = getParameter("fnLowLevelNoProof" + classListId + classIdInList, null);
 			else
 				html = getParameter("fnLowLevel" + classListId + classIdInList, null);
 		}
-		else if (noHaveItems)
+		else if(noHaveItems)
 		{
 			html = getParameter("fnNoProof" + classListId + classIdInList, null);
 		}
@@ -531,38 +531,38 @@ public final class VillageMasterInstance extends NpcInstance
 			broadcastPacket(new MagicSkillUse(this, player, 5103, 1, 1000, 0, 0));
 			player.sendPacket(SystemMsg.CONGRATULATIONS__YOUVE_COMPLETED_A_CLASS_TRANSFER);
 
-			for (int itemId : newClassId.getChangeClassItemIds())
+			for(int itemId : newClassId.getChangeClassItemIds())
 				ItemFunctions.deleteItem(player, itemId, 1, true);
 
 			html = getParameter("fnAfterClassChange" + classListId + classIdInList, null);
 		}
 
-		if (html != null)
+		if(html != null)
 			showChatWindow(player, "villagemaster/occupation/" + html, false);
 	}
 
 	private int getClassListId(Player player)
 	{
 		int classListId = 0;
-		switch (_type)
+		switch(_type)
 		{
 			case HUMAN_1ST_CLASS_MAGE:
 			{
-				if (player.isMageClass() && player.getRace() == Race.HUMAN)
+				if(player.isMageClass() && player.getRace() == Race.HUMAN)
 					classListId = 1;
 				break;
 			}
 			case HUMAN_1ST_CLASS_FIGHTER:
 			{
-				if (!player.isMageClass() && player.getRace() == Race.HUMAN)
+				if(!player.isMageClass() && player.getRace() == Race.HUMAN)
 					classListId = 1;
 				break;
 			}
 			case ELF_1ST_CLASS:
 			{
-				if (player.getRace() == Race.ELF)
+				if(player.getRace() == Race.ELF)
 				{
-					if (!player.isMageClass())
+					if(!player.isMageClass())
 						classListId = 1;
 					else
 						classListId = 2;
@@ -571,31 +571,31 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case HUMAN_ELF_1ST_CLASS_MAGE:
 			{
-				if (player.isMageClass())
+				if(player.isMageClass())
 				{
-					if (player.getRace() == Race.HUMAN)
+					if(player.getRace() == Race.HUMAN)
 						classListId = 1;
-					else if (player.getRace() == Race.ELF)
+					else if(player.getRace() == Race.ELF)
 						classListId = 2;
 				}
 				break;
 			}
 			case HUMAN_ELF_1ST_CLASS_FIGHTER:
 			{
-				if (!player.isMageClass())
+				if(!player.isMageClass())
 				{
-					if (player.getRace() == Race.HUMAN)
+					if(player.getRace() == Race.HUMAN)
 						classListId = 1;
-					else if (player.getRace() == Race.ELF)
+					else if(player.getRace() == Race.ELF)
 						classListId = 2;
 				}
 				break;
 			}
 			case DARKELF_1ST_CLASS:
 			{
-				if (player.getRace() == Race.DARKELF)
+				if(player.getRace() == Race.DARKELF)
 				{
-					if (!player.isMageClass())
+					if(!player.isMageClass())
 						classListId = 1;
 					else
 						classListId = 2;
@@ -604,9 +604,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case ORC_1ST_CLASS:
 			{
-				if (player.getRace() == Race.ORC)
+				if(player.getRace() == Race.ORC)
 				{
-					if (!player.isMageClass())
+					if(!player.isMageClass())
 						classListId = 1;
 					else
 						classListId = 2;
@@ -615,15 +615,15 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DWARVEN_1ST_CLASS:
 			{
-				if (player.getRace() == Race.DWARF)
+				if(player.getRace() == Race.DWARF)
 					classListId = 1;
 				break;
 			}
 			case HUMAN_ELF_2ND_CLASS_MYSTIC:
 			{
-				if (player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
+				if(player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case WIZARD:
 						case SORCERER:
@@ -651,9 +651,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case HUMAN_ELF_2ND_CLASS_PRIEST:
 			{
-				if (player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
+				if(player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case CLERIC:
 						case BISHOP:
@@ -679,9 +679,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case HUMAN_ELF_2ND_CLASS_FIGHTER:
 			{
-				if (!player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
+				if(!player.isMageClass() && (player.getRace() == Race.HUMAN || player.getRace() == Race.ELF))
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case WARRIOR:
 						case GLADIATOR:
@@ -729,9 +729,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DARKELF_2ND_CLASS:
 			{
-				if (player.getRace() == Race.DARKELF)
+				if(player.getRace() == Race.DARKELF)
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case PALUS_KNIGHT:
 						case SHILLEN_KNIGHT:
@@ -771,9 +771,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case ORC_2ND_CLASS:
 			{
-				if (player.getRace() == Race.ORC)
+				if(player.getRace() == Race.ORC)
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case ORC_RAIDER:
 						case DESTROYER:
@@ -805,9 +805,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DWARVEN_2ND_CLASS_WAREHOUSE:
 			{
-				if (player.getRace() == Race.DWARF)
+				if(player.getRace() == Race.DWARF)
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case SCAVENGER:
 						case BOUNTY_HUNTER:
@@ -826,9 +826,9 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DWARVEN_2ND_CLASS_BLACKSMITH:
 			{
-				if (player.getRace() == Race.DWARF)
+				if(player.getRace() == Race.DWARF)
 				{
-					switch (player.getClassId())
+					switch(player.getClassId())
 					{
 						case ARTISAN:
 						case WARSMITH:
@@ -851,13 +851,13 @@ public final class VillageMasterInstance extends NpcInstance
 
 	public void setLeader(Player leader, String newLeader)
 	{
-		if (!leader.isClanLeader())
+		if(!leader.isClanLeader())
 		{
 			leader.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_IS_ENABLED);
 			return;
 		}
 
-		if (leader.containsEvent(SiegeEvent.class))
+		if(leader.containsEvent(SiegeEvent.class))
 		{
 			leader.sendMessage(new CustomMessage("scripts.services.Rename.SiegeNow"));
 			return;
@@ -867,13 +867,13 @@ public final class VillageMasterInstance extends NpcInstance
 		SubUnit mainUnit = clan.getSubUnit(Clan.SUBUNIT_MAIN_CLAN);
 		UnitMember member = mainUnit.getUnitMember(newLeader);
 
-		if (member == null)
+		if(member == null)
 		{
 			showChatWindow(leader, "pledge/pl_err_man.htm", false);
 			return;
 		}
 
-		if (member.isLeaderOf() != Clan.SUBUNIT_NONE)
+		if(member.isLeaderOf() != Clan.SUBUNIT_NONE)
 		{
 			leader.sendMessage(new CustomMessage("l2s.gameserver.model.instances.L2VillageMasterInstance.CannotAssignUnitLeader"));
 			return;
@@ -886,16 +886,16 @@ public final class VillageMasterInstance extends NpcInstance
 	{
 		player.sendMessage(new CustomMessage("l2s.gameserver.model.instances.L2VillageMasterInstance.ClanLeaderWillBeChangedFromS1ToS2").addString(clan.getLeaderName()).addString(newLeader.getName()));
 
-		if (clan.getLevel() >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
+		if(clan.getLevel() >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
 		{
-			if (clan.getLeader() != null)
+			if(clan.getLeader() != null)
 			{
 				Player oldLeaderPlayer = clan.getLeader().getPlayer();
-				if (oldLeaderPlayer != null)
+				if(oldLeaderPlayer != null)
 					SiegeUtils.removeSiegeSkills(oldLeaderPlayer);
 			}
 			Player newLeaderPlayer = newLeader.getPlayer();
-			if (newLeaderPlayer != null)
+			if(newLeaderPlayer != null)
 				SiegeUtils.addSiegeSkills(newLeaderPlayer);
 		}
 
@@ -907,7 +907,7 @@ public final class VillageMasterInstance extends NpcInstance
 	public String getSubClassDialogSuffix()
 	{
 		String suffix = null;
-		switch (_type)
+		switch(_type)
 		{
 			case HUMAN_ELF_2ND_CLASS_MYSTIC:
 				suffix = "hew";
@@ -936,11 +936,11 @@ public final class VillageMasterInstance extends NpcInstance
 
 	public ClassId getNewSubClassId(int ask)
 	{
-		switch (_type)
+		switch(_type)
 		{
 			case HUMAN_ELF_2ND_CLASS_MYSTIC:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.SORCERER;
@@ -957,7 +957,7 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case HUMAN_ELF_2ND_CLASS_PRIEST:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.BISHOP;
@@ -970,7 +970,7 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case HUMAN_ELF_2ND_CLASS_FIGHTER:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.GLADIATOR;
@@ -997,7 +997,7 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DARKELF_2ND_CLASS:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.SHILLEN_KNIGHT;
@@ -1018,7 +1018,7 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case ORC_2ND_CLASS:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.DESTROYER;
@@ -1031,7 +1031,7 @@ public final class VillageMasterInstance extends NpcInstance
 			}
 			case DWARVEN_2ND_CLASS_WAREHOUSE:
 			{
-				switch (ask)
+				switch(ask)
 				{
 					case 1:
 						return ClassId.BOUNTY_HUNTER;
@@ -1043,97 +1043,97 @@ public final class VillageMasterInstance extends NpcInstance
 
 	public boolean isMyApprentice(int id)
 	{
-		if (id < 0)
+		if(id < 0)
 			return false;
 
 		ClassId classId = ClassId.valueOf(id);
-		switch (_type)
+		switch(_type)
 		{
 			case HUMAN_ELF_2ND_CLASS_MYSTIC:
 			{
-				if (classId == ClassId.SORCERER || classId == ClassId.ARCHMAGE)
+				if(classId == ClassId.SORCERER || classId == ClassId.ARCHMAGE)
 					return true;
-				if (classId == ClassId.NECROMANCER || classId == ClassId.SOULTAKER)
+				if(classId == ClassId.NECROMANCER || classId == ClassId.SOULTAKER)
 					return true;
-				if (classId == ClassId.WARLOCK || classId == ClassId.ARCANA_LORD)
+				if(classId == ClassId.WARLOCK || classId == ClassId.ARCANA_LORD)
 					return true;
-				if (classId == ClassId.SPELLSINGER || classId == ClassId.MYSTIC_MUSE)
+				if(classId == ClassId.SPELLSINGER || classId == ClassId.MYSTIC_MUSE)
 					return true;
-				if (classId == ClassId.ELEMENTAL_SUMMONER || classId == ClassId.ELEMENTAL_MASTER)
+				if(classId == ClassId.ELEMENTAL_SUMMONER || classId == ClassId.ELEMENTAL_MASTER)
 					return true;
 				return false;
 			}
 			case HUMAN_ELF_2ND_CLASS_PRIEST:
 			{
-				if (classId == ClassId.BISHOP || classId == ClassId.CARDINAL)
+				if(classId == ClassId.BISHOP || classId == ClassId.CARDINAL)
 					return true;
-				if (classId == ClassId.PROPHET || classId == ClassId.HIEROPHANT)
+				if(classId == ClassId.PROPHET || classId == ClassId.HIEROPHANT)
 					return true;
-				if (classId == ClassId.ELDER || classId == ClassId.EVAS_SAINT)
+				if(classId == ClassId.ELDER || classId == ClassId.EVAS_SAINT)
 					return true;
 				return false;
 			}
 			case HUMAN_ELF_2ND_CLASS_FIGHTER:
 			{
-				if (classId == ClassId.GLADIATOR || classId == ClassId.DUELIST)
+				if(classId == ClassId.GLADIATOR || classId == ClassId.DUELIST)
 					return true;
-				if (classId == ClassId.WARLORD || classId == ClassId.DREADNOUGHT)
+				if(classId == ClassId.WARLORD || classId == ClassId.DREADNOUGHT)
 					return true;
-				if (classId == ClassId.PALADIN || classId == ClassId.PHOENIX_KNIGHT)
+				if(classId == ClassId.PALADIN || classId == ClassId.PHOENIX_KNIGHT)
 					return true;
-				if (classId == ClassId.DARK_AVENGER || classId == ClassId.HELL_KNIGHT)
+				if(classId == ClassId.DARK_AVENGER || classId == ClassId.HELL_KNIGHT)
 					return true;
-				if (classId == ClassId.TREASURE_HUNTER || classId == ClassId.ADVENTURER)
+				if(classId == ClassId.TREASURE_HUNTER || classId == ClassId.ADVENTURER)
 					return true;
-				if (classId == ClassId.HAWKEYE || classId == ClassId.SAGITTARIUS)
+				if(classId == ClassId.HAWKEYE || classId == ClassId.SAGITTARIUS)
 					return true;
-				if (classId == ClassId.TEMPLE_KNIGHT || classId == ClassId.EVAS_TEMPLAR)
+				if(classId == ClassId.TEMPLE_KNIGHT || classId == ClassId.EVAS_TEMPLAR)
 					return true;
-				if (classId == ClassId.SWORDSINGER || classId == ClassId.SWORD_MUSE)
+				if(classId == ClassId.SWORDSINGER || classId == ClassId.SWORD_MUSE)
 					return true;
-				if (classId == ClassId.PLAIN_WALKER || classId == ClassId.WIND_RIDER)
+				if(classId == ClassId.PLAIN_WALKER || classId == ClassId.WIND_RIDER)
 					return true;
-				if (classId == ClassId.SILVER_RANGER || classId == ClassId.MOONLIGHT_SENTINEL)
+				if(classId == ClassId.SILVER_RANGER || classId == ClassId.MOONLIGHT_SENTINEL)
 					return true;
 				return false;
 			}
 			case DARKELF_2ND_CLASS:
 			{
-				if (classId == ClassId.SHILLEN_KNIGHT || classId == ClassId.SHILLIEN_TEMPLAR)
+				if(classId == ClassId.SHILLEN_KNIGHT || classId == ClassId.SHILLIEN_TEMPLAR)
 					return true;
-				if (classId == ClassId.BLADEDANCER || classId == ClassId.SPECTRAL_DANCER)
+				if(classId == ClassId.BLADEDANCER || classId == ClassId.SPECTRAL_DANCER)
 					return true;
-				if (classId == ClassId.ABYSS_WALKER || classId == ClassId.GHOST_HUNTER)
+				if(classId == ClassId.ABYSS_WALKER || classId == ClassId.GHOST_HUNTER)
 					return true;
-				if (classId == ClassId.PHANTOM_RANGER || classId == ClassId.GHOST_SENTINEL)
+				if(classId == ClassId.PHANTOM_RANGER || classId == ClassId.GHOST_SENTINEL)
 					return true;
-				if (classId == ClassId.SPELLHOWLER || classId == ClassId.STORM_SCREAMER)
+				if(classId == ClassId.SPELLHOWLER || classId == ClassId.STORM_SCREAMER)
 					return true;
-				if (classId == ClassId.PHANTOM_SUMMONER || classId == ClassId.SPECTRAL_MASTER)
+				if(classId == ClassId.PHANTOM_SUMMONER || classId == ClassId.SPECTRAL_MASTER)
 					return true;
-				if (classId == ClassId.SHILLEN_ELDER || classId == ClassId.SHILLIEN_SAINT)
+				if(classId == ClassId.SHILLEN_ELDER || classId == ClassId.SHILLIEN_SAINT)
 					return true;
 				return false;
 			}
 			case ORC_2ND_CLASS:
 			{
-				if (classId == ClassId.DESTROYER || classId == ClassId.TITAN)
+				if(classId == ClassId.DESTROYER || classId == ClassId.TITAN)
 					return true;
-				if (classId == ClassId.TYRANT || classId == ClassId.GRAND_KHAVATARI)
+				if(classId == ClassId.TYRANT || classId == ClassId.GRAND_KHAVATARI)
 					return true;
-				if (classId == ClassId.WARCRYER || classId == ClassId.DOOMCRYER)
+				if(classId == ClassId.WARCRYER || classId == ClassId.DOOMCRYER)
 					return true;
 				return false;
 			}
 			case DWARVEN_2ND_CLASS_WAREHOUSE:
 			{
-				if (classId == ClassId.BOUNTY_HUNTER || classId == ClassId.FORTUNE_SEEKER)
+				if(classId == ClassId.BOUNTY_HUNTER || classId == ClassId.FORTUNE_SEEKER)
 					return true;
 				return false;
 			}
 			case DWARVEN_2ND_CLASS_BLACKSMITH:
 			{
-				if (classId == ClassId.WARSMITH || classId == ClassId.MAESTRO)
+				if(classId == ClassId.WARSMITH || classId == ClassId.MAESTRO)
 					return true;
 				return false;
 			}

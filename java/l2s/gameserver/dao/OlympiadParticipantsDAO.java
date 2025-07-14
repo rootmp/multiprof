@@ -48,7 +48,7 @@ public class OlympiadParticipantsDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, SubClassType.BASE_CLASS.ordinal());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				OlympiadParticipiantData data = new OlympiadParticipiantData(rset.getInt("char_id"), rset.getString("char_name"), rset.getInt("class_id"));
 
@@ -65,7 +65,7 @@ public class OlympiadParticipantsDAO
 				Olympiad.getParticipantsMap().put(data.getObjectId(), data);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("OlympiadParticipantsDAO:select():", e);
 		}
@@ -78,7 +78,7 @@ public class OlympiadParticipantsDAO
 	public void replace(int participantId)
 	{
 		OlympiadParticipiantData data = Olympiad.getParticipantInfo(participantId);
-		if (data == null)
+		if(data == null)
 		{
 			delete(participantId);
 			return;
@@ -102,7 +102,7 @@ public class OlympiadParticipantsDAO
 			statement.setInt(10, data.getTeamGamesCount());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("OlympiadParticipantsDAO:replace(int): " + participantId, e);
 		}
@@ -123,7 +123,7 @@ public class OlympiadParticipantsDAO
 			statement.setInt(1, participantId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("OlympiadParticipantsDAO:delete(int): " + participantId, e);
 		}

@@ -33,7 +33,7 @@ public class ItemAnnounceDataHolder extends AbstractHolder
 
 	@Element(start = "relics_begin", end = "relics_end")
 	public RelicsData _relicsData;
-	
+
 	@Element(start = "enchant_by_grade_begin", end = "enchant_by_grade_end")
 	public List<EnchantByGradeData> _enchantByGradeData;
 
@@ -44,7 +44,7 @@ public class ItemAnnounceDataHolder extends AbstractHolder
 	private Map<Integer, Integer> _itemEnchantByidDataMap;
 	private List<Integer> _purchaseLimitShop;
 	private List<Integer> _relics;
-	
+
 	private static ItemAnnounceDataHolder ourInstance = new ItemAnnounceDataHolder();
 
 	public static ItemAnnounceDataHolder getInstance()

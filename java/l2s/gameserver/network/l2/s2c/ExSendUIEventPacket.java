@@ -71,7 +71,7 @@ public class ExSendUIEventPacket extends NpcStringContainer
 		packetWriter.writeD(0x00);// unknown
 		packetWriter.writeD(0x00);// unknown
 		packetWriter.writeS(String.valueOf(_countUp)); // 0 = count down, 1 = count up timer always disappears 10
-														// seconds before end
+		// seconds before end
 		packetWriter.writeS(String.valueOf(_startTime));
 		packetWriter.writeS(String.valueOf(_startTime2));
 		packetWriter.writeS(String.valueOf(_endTime));

@@ -41,11 +41,11 @@ public class TriggerInfo extends Skill.AddedSkill
 	public boolean checkCondition(Creature actor, Creature target, Creature aimTarget, Skill owner, double damage)
 	{
 		SkillEntry skillEntry = getSkill();
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return false;
 
 		// Скилл проверяется и кастуется на aimTarget
-		if (skillEntry.checkTarget(actor, aimTarget, aimTarget, false, false, true) != null)
+		if(skillEntry.checkTarget(actor, aimTarget, aimTarget, false, false, true) != null)
 			return false;
 
 		Env env = new Env();
@@ -54,9 +54,9 @@ public class TriggerInfo extends Skill.AddedSkill
 		env.target = target; // В условии проверяется реальная цель.
 		env.value = damage;
 
-		for (Condition c : _conditions)
+		for(Condition c : _conditions)
 		{
-			if (!c.test(env))
+			if(!c.test(env))
 				return false;
 		}
 		return true;

@@ -67,16 +67,12 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 	public synchronized void displayFlag(Player player)
 	{
-		if (flagDisplayer != null)
-		{
-			return;
-		}
+		if(flagDisplayer != null)
+		{ return; }
 
 		Clan clan = player.getClan();
-		if ((clan == null) || (clan.getCastle() != 0))
-		{
-			return;
-		}
+		if((clan == null) || (clan.getCastle() != 0))
+		{ return; }
 
 		flagDisplayer = player;
 
@@ -87,10 +83,8 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	@Override
 	public void processStep(Clan newOwnerClan)
 	{
-		if (newOwnerClan.getCastle() != 0)
-		{
-			return;
-		}
+		if(newOwnerClan.getCastle() != 0)
+		{ return; }
 		getResidence().changeOwner(newOwnerClan);
 		stopEvent(true);
 	}
@@ -104,10 +98,8 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 	private void startPrepare()
 	{
-		if (!canStartSiege())
-		{
-			return;
-		}
+		if(!canStartSiege())
+		{ return; }
 		addState(PREPARE_STATE);
 		broadcastToWorld(new ExAdenFortressSiegeHUDInfo(this));
 		CharListenerList.addGlobal(globalEventListeners);
@@ -119,10 +111,8 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	{
 		removeState(PREPARE_STATE);
 
-		if (!canStartSiege())
-		{
-			return;
-		}
+		if(!canStartSiege())
+		{ return; }
 
 		CharListenerList.addGlobal(globalEventListeners);
 
@@ -130,7 +120,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 		getResidence().changeOwner(null);
 
-		for (ZoneObject zoneObject : getObjects(SIEGE_ZONES, ZoneObject.class))
+		for(ZoneObject zoneObject : getObjects(SIEGE_ZONES, ZoneObject.class))
 		{
 			zoneObject.getZone().addListener(siegeZoneListener);
 		}
@@ -152,7 +142,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 		broadcastInZone(new SystemMessagePacket(SystemMsg.THE_FORTRESS_BATTLE_IS_OVER));
 
 		Clan ownerClan = getResidence().getOwner();
-		if (ownerClan != null)
+		if(ownerClan != null)
 		{
 			ownerClan.broadcastToOnlineMembers(PlaySoundPacket.SIEGE_VICTORY);
 			broadcastInZone(new SystemMessagePacket(SystemMsg.S1_IS_VICTORIOUS_IN_THE_FORTRESS_BATTLE_OF_S2).addString(ownerClan.getName()).addResidenceName(getResidence()));
@@ -170,7 +160,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 		flagPoleUpdate(false);
 
-		if (flagDisplayer != null)
+		if(flagDisplayer != null)
 		{
 			sendRewardMail(flagDisplayer);
 			flagDisplayer = null;
@@ -178,7 +168,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 		super.stopEvent(force);
 
-		for (ZoneObject zoneObject : getObjects(SIEGE_ZONES, ZoneObject.class))
+		for(ZoneObject zoneObject : getObjects(SIEGE_ZONES, ZoneObject.class))
 		{
 			zoneObject.getZone().removeListener(siegeZoneListener);
 		}
@@ -189,15 +179,15 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	@Override
 	public void announce(int id, String value, int time)
 	{
-		if (id == 1)
+		if(id == 1)
 		{
 			broadcastInZone(new SystemMessagePacket(SystemMsg.THE_FORTRESS_BATTLE_WILL_START_IN_S1_MIN).addInteger(Integer.parseInt(value)));
 		}
-		else if (id == 2)
+		else if(id == 2)
 		{
 			broadcastInZone(new SystemMessagePacket(SystemMsg.THE_FORTRESS_BATTLE_WILL_BE_OVER_IN_S1_MIN).addInteger(Integer.parseInt(value)));
 		}
-		else if (id == 3)
+		else if(id == 3)
 		{
 			broadcastInZone(new ExShowScreenMessage(NpcString.FLAG_SENTRY_GREG_HAS_APPEARED, 10000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, true));
 		}
@@ -206,7 +196,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	public void flagPoleUpdate(boolean dis)
 	{
 		StaticObjectObject object = getFirstObject(FLAG_POLE);
-		if (object != null)
+		if(object != null)
 		{
 			object.setMeshIndex(dis ? 0 : (getResidence().getOwner() != null ? 1 : 0));
 		}
@@ -233,12 +223,10 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	@Override
 	public SystemMsg checkForAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (target.isPlayable() && attacker.isPlayable())
+		if(target.isPlayable() && attacker.isPlayable())
 		{
-			if (!target.isInZoneBattle() || !attacker.isInZoneBattle())
-			{
-				return SystemMsg.INVALID_TARGET;
-			}
+			if(!target.isInZoneBattle() || !attacker.isInZoneBattle())
+			{ return SystemMsg.INVALID_TARGET; }
 			return null;
 		}
 		return super.checkForAttack(target, attacker, skill, force);
@@ -247,9 +235,9 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	@Override
 	public void action(String name, boolean start)
 	{
-		if (name.equalsIgnoreCase(PREPARE))
+		if(name.equalsIgnoreCase(PREPARE))
 		{
-			if (start)
+			if(start)
 			{
 				startPrepare();
 			}
@@ -272,9 +260,9 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 	private boolean canStartSiege()
 	{
-		for (FortressSiegeEvent siegeEvent : EventHolder.getInstance().getEvents(getClass()))
+		for(FortressSiegeEvent siegeEvent : EventHolder.getInstance().getEvents(getClass()))
 		{
-			if ((siegeEvent != this) && (siegeEvent.isInPrepare() || siegeEvent.isInProgress()))
+			if((siegeEvent != this) && (siegeEvent.isInPrepare() || siegeEvent.isInProgress()))
 			{
 				warn("Cannot start two or more fortress sieges in same time! Please change siege time for fortress siege ID: " + getId());
 				return false;
@@ -286,9 +274,9 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 	public synchronized void dropFlag(NpcInstance npc)
 	{
 		List<FortressCombatFlagObject> combatFlags = getObjects(COMBAT_FLAGS, FortressCombatFlagObject.class);
-		for (FortressCombatFlagObject flagObject : combatFlags)
+		for(FortressCombatFlagObject flagObject : combatFlags)
 		{
-			if (flagObject.dropFlag(this, npc, Location.findPointToStay(npc, 100, 200), getReflection()))
+			if(flagObject.dropFlag(this, npc, Location.findPointToStay(npc, 100, 200), getReflection()))
 			{
 				break;
 			}
@@ -297,10 +285,8 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 
 	private void sendRewardMail(Player receiver)
 	{
-		if (flagDisplayReward <= 0)
-		{
-			return;
-		}
+		if(flagDisplayReward <= 0)
+		{ return; }
 
 		Mail mail = new Mail();
 		mail.setSenderId(receiver.getObjectId());
@@ -313,12 +299,12 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 		mail.setUnread(true);
 		mail.setType(Mail.SenderType.NEWS_INFORMER); // TODO: Подобрать правильный тип.
 		mail.setExpireTime((int) (TimeUnit.DAYS.toSeconds(365) + (System.currentTimeMillis() / 1000L))); // Ставим год
-																											// (На оффе
-																											// 15 дней,
-																											// но через
-																											// 15 дней
-																											// письмо не
-																											// пропадает).
+		// (На оффе
+		// 15 дней,
+		// но через
+		// 15 дней
+		// письмо не
+		// пропадает).
 		mail.setSystemTopic(SystemMsg.A_LETTER_FROM_THE_FORTRESS_MANAGER_ARRIVED);
 		mail.setSystemBody(SystemMsg.THANK_YOU_FOR_RECAPTURING_THE_FORTRESS_INVADED_BY_ORCS_HERE_IS_YOUR_REWARD_FOR_DISPLAYING_A_FLAG_FORTRESS_MANAGER);
 
@@ -343,7 +329,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 		@Override
 		public void onPlayerEnter(Player player)
 		{
-			if (isInPrepare() || isInProgress())
+			if(isInPrepare() || isInProgress())
 			{
 				player.sendPacket(new ExAdenFortressSiegeHUDInfo(FortressSiegeEvent.this));
 			}
@@ -355,7 +341,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 		@Override
 		public void onZoneEnter(Zone zone, Creature actor)
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
 				actor.addEvent(FortressSiegeEvent.this);
 			}
@@ -364,12 +350,10 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 		@Override
 		public void onZoneLeave(Zone zone, Creature actor)
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
-				if (checkIfInZone(actor))
-				{
-					return;
-				}
+				if(checkIfInZone(actor))
+				{ return; }
 				actor.removeEvent(FortressSiegeEvent.this);
 			}
 		}

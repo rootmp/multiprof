@@ -34,7 +34,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 
 	protected void afterParsing()
 	{}
-	
+
 	public abstract File getXMLPath();
 
 	public File getCustomXMLPath()
@@ -71,16 +71,16 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	protected void parse()
 	{
 		File path = getXMLPath();
-		if (!path.exists())
+		if(!path.exists())
 		{
 			warn("directory or file " + path.getAbsolutePath() + " not exists");
 			return;
 		}
 
-		if (path.isDirectory())
+		if(path.isDirectory())
 		{
 			File dtd = new File(path, getDTDFileName());
-			if (!dtd.exists())
+			if(!dtd.exists())
 			{
 				error("DTD file: " + dtd.getName() + " not exists.");
 				return;
@@ -93,7 +93,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 		else
 		{
 			File dtd = new File(path.getParent(), getDTDFileName());
-			if (!dtd.exists())
+			if(!dtd.exists())
 			{
 				info("DTD file: " + dtd.getName() + " not exists.");
 				return;
@@ -105,19 +105,19 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 			{
 				parseDocument(new FileInputStream(path), path.getName());
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				warn("Exception: " + e, e);
 			}
 
 			File customPath = getCustomXMLPath();
-			if (customPath != null && customPath.exists())
+			if(customPath != null && customPath.exists())
 			{
 				try
 				{
 					parseDocument(new FileInputStream(customPath), customPath.getName());
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					warn("Exception: " + e, e);
 				}
@@ -143,7 +143,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 
 	public void load()
 	{
-		if (isDisabled())
+		if(isDisabled())
 		{
 			info("disabled.");
 			return;
@@ -165,12 +165,10 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 
 	private void parseDir(File dir)
 	{
-		if (dir == null)
-		{
-			return;
-		}
+		if(dir == null)
+		{ return; }
 
-		if (!dir.exists())
+		if(!dir.exists())
 		{
 			warn("Dir " + dir.getAbsolutePath() + " not exists");
 			return;
@@ -179,17 +177,17 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 		try
 		{
 			Collection<File> files = FileUtils.listFiles(dir, FileFilterUtils.suffixFileFilter(".xml"), FileFilterUtils.directoryFileFilter());
-			for (File f : files)
+			for(File f : files)
 			{
-				if (!f.isHidden())
+				if(!f.isHidden())
 				{
-					if (!isIgnored(f))
+					if(!isIgnored(f))
 					{
 						try
 						{
 							parseDocument(new FileInputStream(f), f.getName());
 						}
-						catch (Exception e)
+						catch(Exception e)
 						{
 							info("Exception: " + e + " in file: " + f.getName(), e);
 						}
@@ -197,7 +195,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			warn("Exception: " + e, e);
 		}
@@ -206,10 +204,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public String parseString(Element element, String param, String defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null)
-		{
-			return defaultValue;
-		}
+		if(value == null)
+		{ return defaultValue; }
 		return value;
 	}
 
@@ -221,10 +217,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public int parseInt(Element element, String param, int defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null)
-		{
-			return defaultValue;
-		}
+		if(value == null)
+		{ return defaultValue; }
 		return Integer.parseInt(value);
 	}
 
@@ -236,14 +230,12 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public static int[] parseIntArr(Element element, String param, String separator, int[] defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null || value.isEmpty())
-		{
-			return defaultValue;
-		}
+		if(value == null || value.isEmpty())
+		{ return defaultValue; }
 
 		String[] separatedText = value.split(separator);
 		int[] result = new int[separatedText.length];
-		for (int i = 0; i < separatedText.length; i++)
+		for(int i = 0; i < separatedText.length; i++)
 		{
 			result[i] = Integer.parseInt(separatedText[i].trim());
 		}
@@ -260,7 +252,7 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 		String value = element.attributeValue(param);
 		String[] separatedText = value.split(separator);
 		int[] result = new int[separatedText.length];
-		for (int i = 0; i < separatedText.length; i++)
+		for(int i = 0; i < separatedText.length; i++)
 		{
 			result[i] = Integer.parseInt(separatedText[i].trim());
 		}
@@ -275,10 +267,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public long parseLong(Element element, String param, long defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null)
-		{
-			return defaultValue;
-		}
+		if(value == null)
+		{ return defaultValue; }
 
 		return Long.parseLong(value);
 	}
@@ -291,10 +281,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public double parseDouble(Element element, String param, double defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null)
-		{
-			return defaultValue;
-		}
+		if(value == null)
+		{ return defaultValue; }
 
 		return Double.parseDouble(value);
 	}
@@ -307,10 +295,8 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 	public boolean parseBoolean(Element element, String param, boolean defaultValue)
 	{
 		String value = element.attributeValue(param);
-		if (value == null)
-		{
-			return defaultValue;
-		}
+		if(value == null)
+		{ return defaultValue; }
 
 		return Boolean.parseBoolean(value);
 	}

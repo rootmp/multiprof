@@ -20,7 +20,7 @@ public class L2FriendListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_friends.length);
-		for (Friend f : _friends)
+		for(Friend f : _friends)
 		{
 			packetWriter.writeD(f.getObjectId());
 			packetWriter.writeS(f.getName());

@@ -13,6 +13,10 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.geometry.Polygon;
 import l2s.commons.lang.ArrayUtils;
 import l2s.commons.util.Rnd;
@@ -69,11 +73,6 @@ import l2s.gameserver.templates.skill.EffectTemplate;
 import l2s.gameserver.utils.ItemFunctions;
 import l2s.gameserver.utils.PositionUtils;
 
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
-
 public class Skill extends StatTemplate implements SkillInfo, Cloneable
 {
 	protected static final Logger _log = LoggerFactory.getLogger(Skill.class);
@@ -101,11 +100,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		public SkillEntry getSkill()
 		{
-			if (_skillEntry == null)
+			if(_skillEntry == null)
 			{
 				_skillEntry = SkillEntry.makeSkillEntry(entryType, id, level);
 			}
-			if (_skillEntry == null)
+			if(_skillEntry == null)
 			{
 				_log.warn("Cannot find added skill ID[" + id + "] LEVEL[" + level + "]!");
 			}
@@ -355,7 +354,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	private final SkillAutoUseType autoUseType;
 
 	private SkillEntry _entry;
-	
+
 	/**
 	 * Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ!!! Ð£ Ð½Ð°Ñ�Ð»ÐµÐ´Ð½Ð¸ÐºÐ¾Ð² Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ Ð½Ð°Ð´Ð¾
 	 * Ð¿Ð¾Ð¼ÐµÐ½Ñ�Ñ‚ÑŒ Ñ‚Ð¸Ð¿ Ð½Ð° public
@@ -397,7 +396,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		final String[] abnormalEffects = set.getString("abnormal_effect", AbnormalEffect.NONE.toString()).split(";");
 		_abnormalEffects = new AbnormalEffect[abnormalEffects.length];
-		for (int i = 0; i < abnormalEffects.length; i++)
+		for(int i = 0; i < abnormalEffects.length; i++)
 		{
 			_abnormalEffects[i] = AbnormalEffect.valueOf(abnormalEffects[i].toUpperCase());
 		}
@@ -409,7 +408,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		final String[] ride_state = set.getString("ride_state", MountType.NONE.toString()).split(";");
 		int rideState = 0;
-		for (int i = 0; i < ride_state.length; i++)
+		for(int i = 0; i < ride_state.length; i++)
 		{
 			rideState |= (1 << MountType.valueOf(ride_state[i].toUpperCase()).ordinal());
 		}
@@ -435,12 +434,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_itemConsumeFromMaster = set.getBool("consume_item_from_master", false);
 
 		final String s3 = set.getString("relationSkillsId", "");
-		if (s3.length() == 0)
+		if(s3.length() == 0)
 		{
 			_isRelation = false;
-			_relationSkillsId = new int[]
-			{
-				0
+			_relationSkillsId = new int[] {
+					0
 			};
 		}
 		else
@@ -448,7 +446,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			_isRelation = true;
 			final String[] s = s3.split(";");
 			_relationSkillsId = new int[s.length];
-			for (int i = 0; i < s.length; i++)
+			for(int i = 0; i < s.length; i++)
 			{
 				_relationSkillsId[i] = Integer.parseInt(s[i]);
 			}
@@ -463,8 +461,8 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_hitCancelTime = set.getInteger("hitCancelTime", 0);
 
 		final int[] attachedSkill = set.getIntegerArray("attached_skill", new int[2], "-"); // TODO: Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ
-																							// subLevel
-		if (attachedSkill.length > 0 && attachedSkill[0] > 0)
+		// subLevel
+		if(attachedSkill.length > 0 && attachedSkill[0] > 0)
 		{
 			_attachedSkill = new AddedSkill(SkillEntryType.NONE, attachedSkill[0], attachedSkill.length > 1 ? attachedSkill[1] : 1);
 		}
@@ -486,23 +484,23 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_behindRadius = Math.min(360, Math.max(0, set.getInteger("behind_radius", 0)));
 
 		SkillTargetType targetType = set.getEnum("target", SkillTargetType.class, null);
-		if (targetType == null)
+		if(targetType == null)
 		{
 			final String affectScope = set.getString("affect_scope", null);
-			if (affectScope != null)
+			if(affectScope != null)
 			{
 				try
 				{
 					targetType = SkillTargetType.valueOf("TARGET_" + affectScope.toUpperCase());
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					//
 				}
 			}
 		}
 
-		if (targetType == null)
+		if(targetType == null)
 		{
 			targetType = SkillTargetType.TARGET_SELF;
 		}
@@ -517,7 +515,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_mpConsumeTick = set.getInteger("mp_consume_tick", 0);
 
 		String traitName = set.getString("trait", "NONE").toUpperCase();
-		if (traitName.startsWith("TRAIT_"))
+		if(traitName.startsWith("TRAIT_"))
 		{
 			traitName = traitName.substring(6).trim();
 		}
@@ -554,7 +552,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_altUse = set.getBool("alt_use", false);
 
 		final String element = set.getString("element", "NONE");
-		if (NumberUtils.isCreatable(element))
+		if(NumberUtils.isCreatable(element))
 		{
 			_element = Element.getElementById(Integer.parseInt(element));
 		}
@@ -613,11 +611,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		AddedSkill[] addedSkills = AddedSkill.EMPTY_ARRAY;
 
 		final StringTokenizer st = new StringTokenizer(set.getString("addSkills", ""), ";");
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			final int id = Integer.parseInt(st.nextToken());
 			int level = Integer.parseInt(st.nextToken());
-			if (level == -1)
+			if(level == -1)
 			{
 				level = _level;
 			}
@@ -627,9 +625,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		_addedSkills = addedSkills;
 
 		final NextAction nextAction = NextAction.valueOf(set.getString("nextAction", "DEFAULT").toUpperCase());
-		if (nextAction == NextAction.DEFAULT)
+		if(nextAction == NextAction.DEFAULT)
 		{
-			switch (_skillType)
+			switch(_skillType)
 			{
 				case PDAM:
 				case CPDAM:
@@ -667,7 +665,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		_isItemSkill = set.getBool("is_item_skill", false);
 
-		for (final EffectUseType type : EffectUseType.VALUES)
+		for(final EffectUseType type : EffectUseType.VALUES)
 		{
 			_effectTemplates.put(type.ordinal(), new ArrayList<EffectTemplate>(0));
 		}
@@ -687,7 +685,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		_noEffectsIfFailSkill = set.getBool("no_effects_if_fail_skill", false);
 
-		if (isDebuff())
+		if(isDebuff())
 		{
 			showPlayerAbnormal = Config.SHOW_TARGET_PLAYER_DEBUFF_EFFECTS;
 			showNpcAbnormal = Config.SHOW_TARGET_NPC_DEBUFF_EFFECTS;
@@ -700,7 +698,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		autoUseType = set.getEnum("autouse_type", SkillAutoUseType.class, SkillAutoUseType.NONE);
 
-		if (!set.getBool("olympiad_use", true))
+		if(!set.getBool("olympiad_use", true))
 		{
 			final Condition cond = new ConditionPlayerOlympiad(false);
 			cond.setSystemMsg(1509);
@@ -710,12 +708,12 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public void init()
 	{
-		if (!isPassive())
+		if(!isPassive())
 		{
 			// ÐŸÑ€Ð¾Ð¿Ð¸Ñ�Ð°Ð½Ð½Ñ‹Ðµ Ñ�Ñ‚Ð°Ñ‚Ñ‚Ñ‹ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¼ Ñ�ÐºÐ¸Ð»Ð»Ð°Ð¼
 			// Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² Ñ�Ñ„Ñ„ÐµÐºÑ‚.
 			final FuncTemplate[] funcs = removeAttachedFuncs();
-			if (funcs.length > 0 || getAbnormalTime() > 0 && !hasEffects(EffectUseType.NORMAL))
+			if(funcs.length > 0 || getAbnormalTime() > 0 && !hasEffects(EffectUseType.NORMAL))
 			{
 				final EffectTemplate template = new EffectTemplate(this, StatsSet.EMPTY, EffectUseType.NORMAL, EffectTargetType.NORMAL);
 				template.attachFuncs(funcs);
@@ -723,11 +721,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 		}
 
-		if (!showPlayerAbnormal || !showNpcAbnormal)
+		if(!showPlayerAbnormal || !showNpcAbnormal)
 		{
 			// Ð”Ð»Ñ� Ð·Ð°Ð³Ð»ÑƒÑˆÐºÐ¸ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ� ÐºÐ¾Ð½Ð´Ð¸ÑˆÐ¾Ð½Ð°
 			// Ñ‚Ñ€ÐµÐ±ÑƒÑŽÑ‰Ð¸Ð¹ Ñ�Ñ„Ñ„ÐµÐºÑ‚ Ñƒ Ñ†ÐµÐ»Ð¸.
-			for (final Condition cond : getConditions())
+			for(final Condition cond : getConditions())
 			{
 				cond.init();
 			}
@@ -743,21 +741,21 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	{
 		final Player player = activeChar.getPlayer();
 
-		if (activeChar.isDead() || (!isHandler() && activeChar.isMuted(this)))
+		if(activeChar.isDead() || (!isHandler() && activeChar.isMuted(this)))
 			return false;
 
-		if (target != null && activeChar.getReflection() != target.getReflection())
+		if(target != null && activeChar.getReflection() != target.getReflection())
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 			}
 			return false;
 		}
 
-		if (!trigger && (player != null && player.isInZone(ZoneType.JUMPING) || target != null && target.isInZone(ZoneType.JUMPING)))
+		if(!trigger && (player != null && player.isInZone(ZoneType.JUMPING) || target != null && target.isInZone(ZoneType.JUMPING)))
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_USE_SKILLS_IN_THE_CORRESPONDING_REGION);
 			}
@@ -767,9 +765,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		// TODO: Ð•Ñ�Ð»Ð¸ Ñƒ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚
 		// Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ñ�ÐºÐ¸Ð»Ð» ÐµÑ�Ñ‚ÑŒ Ð¾Ñ‚ÐºÐ°Ñ‚, Ñ‚Ð¾ Ð½Ðµ
 		// ÑƒÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÐ¼ Ð¾Ñ‚ÐºÐ°Ñ‚ ÑƒÐ¼ÐµÐ½Ð¸Ñ�.
-		if (first && activeChar.isSkillDisabled(this))
+		if(first && activeChar.isSkillDisabled(this))
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendReuseMessage(this);
 			}
@@ -777,47 +775,49 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		}
 
 		// DS: Clarity Ð½Ðµ Ð²Ð»Ð¸Ñ�ÐµÑ‚ Ð½Ð° mpConsume1
-		if (first && activeChar.getCurrentMp() < (isMagic() ? _mpConsume1 + activeChar.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, _mpConsume2, target, this) : _mpConsume1 + activeChar.getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, _mpConsume2, target, this)))
+		if(first && activeChar.getCurrentMp()
+				< (isMagic() ? _mpConsume1 + activeChar.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, _mpConsume2, target, this) : _mpConsume1
+						+ activeChar.getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, _mpConsume2, target, this)))
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 			}
 			return false;
 		}
 
-		if (activeChar.getCurrentHp() < _hpConsume + 1)
+		if(activeChar.getCurrentHp() < _hpConsume + 1)
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.NOT_ENOUGH_HP);
 			}
 			return false;
 		}
 
-		if (activeChar.getCurrentDp() < _dpConsume)
+		if(activeChar.getCurrentDp() < _dpConsume)
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.NOT_ENOUGH_MONSTER_HUNTING_COUNT); // TODO: find proper dialog
 			}
 			return false;
 		}
 
-		if (activeChar.getCurrentBp() < _bpConsume)
+		if(activeChar.getCurrentBp() < _bpConsume)
 			// TODO: msg?
 			return false;
 
-		if (activeChar.getCurrentBp() < _minBpToUse)
+		if(activeChar.getCurrentBp() < _minBpToUse)
 			// TODO: msg?
 			return false;
 
 		// recheck the sys messages, this are the suitible ones.
-		if (getFameConsume() > 0)
+		if(getFameConsume() > 0)
 		{
-			if (player == null || player.getFame() < _fameConsume)
+			if(player == null || player.getFame() < _fameConsume)
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					activeChar.sendPacket(SystemMsg.YOU_DONT_HAVE_ENOUGH_REPUTATION_TO_DO_THAT);
 				}
@@ -825,67 +825,67 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 		}
 
-		if (_targetType == SkillTargetType.TARGET_GROUND)
+		if(_targetType == SkillTargetType.TARGET_GROUND)
 		{
-			if (!activeChar.isPlayer())
+			if(!activeChar.isPlayer())
 				return false;
 
-			if (player.getGroundSkillLoc() == null)
+			if(player.getGroundSkillLoc() == null)
 				return false;
 		}
 
-		if (isNotTargetAoE() && isDebuff() && activeChar.isInPeaceZone())
+		if(isNotTargetAoE() && isDebuff() && activeChar.isInPeaceZone())
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(SystemMsg.A_MALICIOUS_SKILL_CANNOT_BE_USED_IN_A_PEACE_ZONE);
 			}
 			return false;
 		}
 
-		if (activeChar.getIncreasedForce() < getCondCharges())
+		if(activeChar.getIncreasedForce() < getCondCharges())
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			}
 			return false;
 		}
 
-		if (player != null)
+		if(player != null)
 		{
-			if (player.isInFlyingTransform() && isHandler() && !flyingTransformUsage())
+			if(player.isInFlyingTransform() && isHandler() && !flyingTransformUsage())
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 				}
 				return false;
 			}
 
-			if (!checkRideState(player.getMountType()))
+			if(!checkRideState(player.getMountType()))
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 				}
 				return false;
 			}
 
-			if (player.isInObserverMode())
+			if(player.isInObserverMode())
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					activeChar.sendPacket(SystemMsg.OBSERVERS_CANNOT_PARTICIPATE);
 				}
 				return false;
 			}
 
-			if (!isHandler() && activeChar.isPlayable() && first && getItemConsumeId() > 0 && getItemConsume() > 0)
+			if(!isHandler() && activeChar.isPlayable() && first && getItemConsumeId() > 0 && getItemConsume() > 0)
 			{
-				if (ItemFunctions.getItemCount(isItemConsumeFromMaster() ? player : (Playable) activeChar, getItemConsumeId()) < getItemConsume())
+				if(ItemFunctions.getItemCount(isItemConsumeFromMaster() ? player : (Playable) activeChar, getItemConsumeId()) < getItemConsume())
 				{
-					if ((isItemConsumeFromMaster() || activeChar == player) && sendMsg)
+					if((isItemConsumeFromMaster() || activeChar == player) && sendMsg)
 					{
 						player.sendPacket(SystemMsg.THERE_ARE_NOT_ENOUGH_NECESSARY_ITEMS_TO_USE_THE_SKILL);
 					}
@@ -893,18 +893,18 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				}
 			}
 
-			if (player.isFishing() && !skillEntry.isAltUse() && !activeChar.isServitor())
+			if(player.isFishing() && !skillEntry.isAltUse() && !activeChar.isServitor())
 			{
-				if (activeChar == player && sendMsg)
+				if(activeChar == player && sendMsg)
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 				}
 				return false;
 			}
 
-			if (player.isInTrainingCamp())
+			if(player.isInTrainingCamp())
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 				}
@@ -912,25 +912,25 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 		}
 
-		switch (getFlyType())
+		switch(getFlyType())
 		{
 			case WARP_BACK:
 			case WARP_FORWARD:
 			case CHARGE:
 			case DUMMY:
-				if (activeChar.getStat().calc(Stats.BlockFly) == 1)
+				if(activeChar.getStat().calc(Stats.BlockFly) == 1)
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
 				}
 		}
 
-		if (first && target != null && getFlyType() == FlyType.CHARGE)
+		if(first && target != null && getFlyType() == FlyType.CHARGE)
 		{
 			final Location flyLoc = activeChar.getFlyLocation(target, this);
-			if (flyLoc == null)
+			if(flyLoc == null)
 			{
-				if (sendMsg)
+				if(sendMsg)
 				{
 					activeChar.sendPacket(SystemMsg.THE_TARGET_IS_LOCATED_WHERE_YOU_CANNOT_CHARGE);
 				}
@@ -939,25 +939,25 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		}
 
 		final SystemMsg msg = checkTarget(skillEntry, activeChar, target, target, forceUse, first, trigger);
-		if (msg != null && player != null)
+		if(msg != null && player != null)
 		{
-			if (sendMsg)
+			if(sendMsg)
 			{
 				player.sendPacket(msg);
 			}
 			return false;
 		}
 
-		if (first)
+		if(first)
 		{
-			for (final Event event : activeChar.getEvents())
+			for(final Event event : activeChar.getEvents())
 			{
-				if (!event.canUseSkill(activeChar, target, this, sendMsg))
+				if(!event.canUseSkill(activeChar, target, this, sendMsg))
 					return false;
 			}
 		}
 
-		if (_preCondition.length == 0)
+		if(_preCondition.length == 0)
 			return true;
 
 		final Env env = new Env();
@@ -965,18 +965,18 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		env.skill = this;
 		env.target = target;
 
-		if (first)
+		if(first)
 		{
-			for (final Condition con : _preCondition)
+			for(final Condition con : _preCondition)
 			{
-				if (!con.test(env))
+				if(!con.test(env))
 				{
-					if (sendMsg)
+					if(sendMsg)
 					{
 						final SystemMsg cond_msg = con.getSystemMsg();
-						if (cond_msg != null)
+						if(cond_msg != null)
 						{
-							if (cond_msg.size() > 0)
+							if(cond_msg.size() > 0)
 							{
 								activeChar.sendPacket(new SystemMessagePacket(cond_msg).addSkillName(this));
 							}
@@ -1001,222 +1001,212 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public SystemMsg checkTarget(SkillEntry skillEntry, Creature activeChar, Creature target, Creature aimingTarget, boolean forceUse, boolean first, boolean trigger)
 	{
-		if (_skillType == SkillType.TAKECASTLE || _skillType == SkillType.TAKEFORTRESS)
+		if(_skillType == SkillType.TAKECASTLE || _skillType == SkillType.TAKEFORTRESS)
 			return null;
 
-		if (target == activeChar && isNotTargetAoE())
-		{
-			return null;
-		}
+		if(target == activeChar && isNotTargetAoE())
+		{ return null; }
 
-		if (target == null)
-		{
-			return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
-		}
+		if(target == null)
+		{ return SystemMsg.THAT_IS_AN_INCORRECT_TARGET; }
 
-		if (target == activeChar)
+		if(target == activeChar)
 		{
-			if (_targetType != SkillTargetType.TARGET_SELF && isDebuff())
-			{
-				return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
-			}
+			if(_targetType != SkillTargetType.TARGET_SELF && isDebuff())
+			{ return SystemMsg.THAT_IS_AN_INCORRECT_TARGET; }
 			return null;
 		}
 
-		if (isPvpSkill() && target.isPeaceNpc())
-		{
-			return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
-		}
+		if(isPvpSkill() && target.isPeaceNpc())
+		{ return SystemMsg.THAT_IS_AN_INCORRECT_TARGET; }
 
-		if (activeChar.getReflection() != target.getReflection())
+		if(activeChar.getReflection() != target.getReflection())
 			return SystemMsg.CANNOT_SEE_TARGET;
 
-		if (!trigger)
+		if(!trigger)
 		{
-			if (!first && target == aimingTarget && getCastRange() > 0 && !activeChar.isInRange(target.getLoc(), getCastRange() + (getCastRange() < 200 ? 400 : 500)))
-			{
-				return SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE;
-			}
+			if(!first && target == aimingTarget && getCastRange() > 0
+					&& !activeChar.isInRange(target.getLoc(), getCastRange() + (getCastRange() < 200 ? 400 : 500)))
+			{ return SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE; }
 		}
 
-		if (activeChar.isMyServitor(target.getObjectId()) && _targetType == SkillTargetType.TARGET_SERVITOR_AURA)
+		if(activeChar.isMyServitor(target.getObjectId()) && _targetType == SkillTargetType.TARGET_SERVITOR_AURA)
 			return null;
 
 		final boolean isCorpseSkill = isCorpse() || (target == aimingTarget && _targetType == SkillTargetType.TARGET_AREA_AIM_CORPSE);
-		if (target.isDead() != isCorpseSkill || _isUndeadOnly && !target.isUndead())
+		if(target.isDead() != isCorpseSkill || _isUndeadOnly && !target.isUndead())
 			return SystemMsg.INVALID_TARGET;
 
-		if (_targetType == SkillTargetType.TARGET_CORPSE || (target == aimingTarget && _targetType == SkillTargetType.TARGET_AREA_AIM_CORPSE))
+		if(_targetType == SkillTargetType.TARGET_CORPSE || (target == aimingTarget && _targetType == SkillTargetType.TARGET_AREA_AIM_CORPSE))
 		{
-			if (!target.isNpc() && !target.isSummon())
-			{
-				return SystemMsg.INVALID_TARGET;
-			}
+			if(!target.isNpc() && !target.isSummon())
+			{ return SystemMsg.INVALID_TARGET; }
 			return null;
 		}
 
-		if (skillEntry.isAltUse() || _targetType == SkillTargetType.TARGET_UNLOCKABLE || _targetType == SkillTargetType.TARGET_CHEST)
+		if(skillEntry.isAltUse() || _targetType == SkillTargetType.TARGET_UNLOCKABLE || _targetType == SkillTargetType.TARGET_CHEST)
 			return null;
 
-		if (isDebuff() && target.isFakePlayer() && target.isInPeaceZone())
+		if(isDebuff() && target.isFakePlayer() && target.isInPeaceZone())
 			return SystemMsg.YOU_MAY_NOT_ATTACK_THIS_TARGET_IN_A_PEACEFUL_ZONE;
 
 		final Player player = activeChar.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			final Player pcTarget = target.getPlayer();
-			if (pcTarget != null)
+			if(pcTarget != null)
 			{
-				if (isPvM())
-				{
-					return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
-				}
+				if(isPvM())
+				{ return SystemMsg.THAT_IS_AN_INCORRECT_TARGET; }
 
-				if (pcTarget != player)
+				if(pcTarget != player)
 				{
-					if (player.isInZone(ZoneType.epic) != pcTarget.isInZone(ZoneType.epic))
+					if(player.isInZone(ZoneType.epic) != pcTarget.isInZone(ZoneType.epic))
 						return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 
-					if (pcTarget.isInOlympiadMode() && (!player.isInOlympiadMode() || player.getOlympiadGame() != pcTarget.getOlympiadGame()))
+					if(pcTarget.isInOlympiadMode() && (!player.isInOlympiadMode() || player.getOlympiadGame() != pcTarget.getOlympiadGame()))
 						return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 				}
 
-				if (isDebuff())
+				if(isDebuff())
 				{
-					if (pcTarget != player)
+					if(pcTarget != player)
 					{
-						if (player.isInOlympiadMode() && !player.isOlympiadCompStart())
+						if(player.isInOlympiadMode() && !player.isOlympiadCompStart())
 							return SystemMsg.INVALID_TARGET;
 
-						if (player.isInOlympiadMode() && player.isOlympiadCompStart() && player.getOlympiadSide() == pcTarget.getOlympiadSide() && !forceUse)
+						if(player.isInOlympiadMode() && player.isOlympiadCompStart() && player.getOlympiadSide() == pcTarget.getOlympiadSide() && !forceUse)
 							return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 
-						if (pcTarget.isInNonPvpTime())
+						if(pcTarget.isInNonPvpTime())
 							return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 					}
 
-					if (isAoE() && (getCastRange() < Integer.MAX_VALUE) && !GeoEngine.canSeeTarget(activeChar, target))
+					if(isAoE() && (getCastRange() < Integer.MAX_VALUE) && !GeoEngine.canSeeTarget(activeChar, target))
 						return SystemMsg.CANNOT_SEE_TARGET;
 
-					if (pcTarget != player)
+					if(pcTarget != player)
 					{
-						if (activeChar.isInZoneBattle() != target.isInZoneBattle() && !player.getPlayerAccess().PeaceAttack)
+						if(activeChar.isInZoneBattle() != target.isInZoneBattle() && !player.getPlayerAccess().PeaceAttack)
 							return SystemMsg.YOU_MAY_NOT_ATTACK_THIS_TARGET_IN_A_PEACEFUL_ZONE;
 					}
 
-					if ((activeChar.isInPeaceZone() || target.isInPeaceZone()) && !player.getPlayerAccess().PeaceAttack)
+					if((activeChar.isInPeaceZone() || target.isInPeaceZone()) && !player.getPlayerAccess().PeaceAttack)
 						return SystemMsg.YOU_MAY_NOT_ATTACK_THIS_TARGET_IN_A_PEACEFUL_ZONE;
 
-					if (pcTarget != player)
+					if(pcTarget != player)
 					{
 						SystemMsg msg = null;
-						for (final Event e : activeChar.getEvents())
-							if ((msg = e.checkForAttack(target, activeChar, this, forceUse)) != null)
+						for(final Event e : activeChar.getEvents())
+							if((msg = e.checkForAttack(target, activeChar, this, forceUse)) != null)
 								return msg;
 
-						for (final Event e : activeChar.getEvents())
-							if (e.canAttack(target, activeChar, this, forceUse, false))
+						for(final Event e : activeChar.getEvents())
+							if(e.canAttack(target, activeChar, this, forceUse, false))
 								return null;
 
-						if (activeChar.isInZoneBattle())
+						if(activeChar.isInZoneBattle())
 						{
-							if (!forceUse && !isForceUse() && player.getParty() != null && player.getParty() == pcTarget.getParty())
+							if(!forceUse && !isForceUse() && player.getParty() != null && player.getParty() == pcTarget.getParty())
 								return SystemMsg.INVALID_TARGET;
 							return null;
 						}
 
-						if (isProvoke())
+						if(isProvoke())
 						{
-							if (!forceUse && player.getParty() != null && player.getParty() == pcTarget.getParty())
+							if(!forceUse && player.getParty() != null && player.getParty() == pcTarget.getParty())
 								return SystemMsg.INVALID_TARGET;
 							return null;
 						}
 					}
 
-					if (isPvpSkill() || !forceUse || isAoE())
+					if(isPvpSkill() || !forceUse || isAoE())
 					{
-						if (player == pcTarget)
+						if(player == pcTarget)
 							return SystemMsg.INVALID_TARGET;
-						if (player.getParty() != null && player.getParty() == pcTarget.getParty())
+						if(player.getParty() != null && player.getParty() == pcTarget.getParty())
 							return SystemMsg.INVALID_TARGET;
-						if (player.isInParty() && player.getParty().getCommandChannel() != null && pcTarget.isInParty() && pcTarget.getParty().getCommandChannel() != null && player.getParty().getCommandChannel() == pcTarget.getParty().getCommandChannel())
+						if(player.isInParty() && player.getParty().getCommandChannel() != null && pcTarget.isInParty()
+								&& pcTarget.getParty().getCommandChannel() != null
+								&& player.getParty().getCommandChannel() == pcTarget.getParty().getCommandChannel())
 							return SystemMsg.INVALID_TARGET;
-						if (player.getClanId() != 0 && player.getClanId() == pcTarget.getClanId())
+						if(player.getClanId() != 0 && player.getClanId() == pcTarget.getClanId())
 							return SystemMsg.INVALID_TARGET;
-						if (player.getClan() != null && player.getClan().getAlliance() != null && pcTarget.getClan() != null && pcTarget.getClan().getAlliance() != null && player.getClan().getAlliance() == pcTarget.getClan().getAlliance())
+						if(player.getClan() != null && player.getClan().getAlliance() != null && pcTarget.getClan() != null
+								&& pcTarget.getClan().getAlliance() != null && player.getClan().getAlliance() == pcTarget.getClan().getAlliance())
 							return SystemMsg.INVALID_TARGET;
 					}
 
-					if (pcTarget != player)
+					if(pcTarget != player)
 					{
-						if (activeChar.isInSiegeZone() && target.isInSiegeZone())
+						if(activeChar.isInSiegeZone() && target.isInSiegeZone())
 							return null;
-						if (player.atMutualWarWith(pcTarget))
+						if(player.atMutualWarWith(pcTarget))
 							return null;
 					}
 
-					if (isForceUse())
+					if(isForceUse())
 						return null;
 
-					if (pcTarget != player)
+					if(pcTarget != player)
 					{
-						if (pcTarget.getPvpFlag() != 0)
+						if(pcTarget.getPvpFlag() != 0)
 							return null;
-						if (pcTarget.isPK())
+						if(pcTarget.isPK())
 							return null;
 					}
 
-					if (forceUse && !isPvpSkill() && (!isAoE() || aimingTarget == target))
+					if(forceUse && !isPvpSkill() && (!isAoE() || aimingTarget == target))
 						return null;
 
 					return SystemMsg.INVALID_TARGET;
 				}
 
-				if (pcTarget == player)
+				if(pcTarget == player)
 					return null;
 
-				if (player.isInOlympiadMode() && !forceUse && player.getOlympiadSide() != pcTarget.getOlympiadSide())
+				if(player.isInOlympiadMode() && !forceUse && player.getOlympiadSide() != pcTarget.getOlympiadSide())
 					return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 
-				if (player.getTeam() != TeamType.NONE && pcTarget.getTeam() != TeamType.NONE && player.getTeam() != pcTarget.getTeam())
+				if(player.getTeam() != TeamType.NONE && pcTarget.getTeam() != TeamType.NONE && player.getTeam() != pcTarget.getTeam())
 					return SystemMsg.THAT_IS_AN_INCORRECT_TARGET;
 
-				if (!activeChar.isInZoneBattle() && target.isInZoneBattle())
+				if(!activeChar.isInZoneBattle() && target.isInZoneBattle())
 					return SystemMsg.INVALID_TARGET;
 
-				if (forceUse || isForceUse())
+				if(forceUse || isForceUse())
 					return null;
 
-				if (player.getParty() != null && player.getParty() == pcTarget.getParty())
+				if(player.getParty() != null && player.getParty() == pcTarget.getParty())
 					return null;
 
-				if (player.getClanId() != 0 && player.getClanId() == pcTarget.getClanId())
+				if(player.getClanId() != 0 && player.getClanId() == pcTarget.getClanId())
 					return null;
 
-				if (player.atMutualWarWith(pcTarget))
+				if(player.atMutualWarWith(pcTarget))
 					return SystemMsg.INVALID_TARGET;
-				if (pcTarget.getPvpFlag() != 0)
+				if(pcTarget.getPvpFlag() != 0)
 					return SystemMsg.INVALID_TARGET;
-				if (pcTarget.isPK())
+				if(pcTarget.isPK())
 					return SystemMsg.INVALID_TARGET;
 
 				return null;
 			}
 		}
 
-		if (!trigger || target != aimingTarget)
+		if(!trigger || target != aimingTarget)
 		{
-			if (isAoE() && isDebuff() && !GeoEngine.canSeeTarget(activeChar, target))
+			if(isAoE() && isDebuff() && !GeoEngine.canSeeTarget(activeChar, target))
 				return SystemMsg.CANNOT_SEE_TARGET;
 		}
-		if (!forceUse && !isForceUse() && !isNoFlagNoForce())
+		if(!forceUse && !isForceUse() && !isNoFlagNoForce())
 		{
-			if (!isDebuff() && target.isAutoAttackable(activeChar))
+			if(!isDebuff() && target.isAutoAttackable(activeChar))
 				return SystemMsg.INVALID_TARGET;
-			if (isDebuff() && !target.isAutoAttackable(activeChar))
+			if(isDebuff() && !target.isAutoAttackable(activeChar))
 				return SystemMsg.INVALID_TARGET;
 		}
-		if (!target.isAttackable(activeChar))
+		if(!target.isAttackable(activeChar))
 			return SystemMsg.INVALID_TARGET;
 
 		return null;
@@ -1225,7 +1215,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	public final Creature getAimingTarget(Creature activeChar, GameObject obj)
 	{
 		Creature target = obj == null || !obj.isCreature() ? null : (Creature) obj;
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case TARGET_ALLY:
 			case TARGET_CLAN:
@@ -1254,7 +1244,8 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				return activeChar;
 			case TARGET_ONE_SERVITOR:
 			case TARGET_SERVITOR_AURA:
-				return target != null && target.isServitor() && activeChar.isMyServitor(target.getObjectId()) && target.isDead() == isCorpse() ? target : null;
+				return target != null && target.isServitor() && activeChar.isMyServitor(target.getObjectId())
+						&& target.isDead() == isCorpse() ? target : null;
 			case TARGET_ONE_SERVITOR_NO_TARGET:
 				target = activeChar.getPlayer().getAnyServitor();
 				return target != null && target.isDead() == isCorpse() ? target : null;
@@ -1265,7 +1256,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				target = activeChar.isPlayer() ? activeChar.getPlayer().getPet() : null;
 				return target != null && target.isDead() == isCorpse() ? target : null;
 			case TARGET_OWNER:
-				if (activeChar.isServitor())
+				if(activeChar.isServitor())
 				{
 					target = activeChar.getPlayer();
 				}
@@ -1273,63 +1264,73 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 					return null;
 				return target != null && target.isDead() == isCorpse() ? target : null;
 			case TARGET_ENEMY_PET:
-				if (target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isPet())
+				if(target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isPet())
 					return null;
 				return target;
 			case TARGET_ENEMY_SUMMON:
-				if (target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isSummon())
+				if(target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isSummon())
 					return null;
 				return target;
 			case TARGET_ENEMY_SERVITOR:
-				if (target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isServitor())
+				if(target == null || activeChar.isMyServitor(target.getObjectId()) || !target.isServitor())
 					return null;
 				return target;
 			case TARGET_ONE:
-				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()) ? target : null;
+				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff())
+						&& (!_isUndeadOnly || target.isUndead()) ? target : null;
 			case TARGET_CLAN_ONE:
-//				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()) && activeChar.getPlayer().isInSameClan(target.getPlayer()) ? target : null;
-				if (target == null)
+				//				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()) && activeChar.getPlayer().isInSameClan(target.getPlayer()) ? target : null;
+				if(target == null)
 					return null;
 				final Player cplayer = activeChar.getPlayer();
 				final Player cptarget = target.getPlayer();
 				// self or self pet.
-				if (cptarget != null && cptarget == activeChar)
+				if(cptarget != null && cptarget == activeChar)
 					return target;
 				// olympiad party member or olympiad party member pet.
-				if (cplayer != null && cplayer.isInOlympiadMode() && cptarget != null && cplayer.getOlympiadSide() == cptarget.getOlympiadSide() && cplayer.getOlympiadGame() == cptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(cplayer != null && cplayer.isInOlympiadMode() && cptarget != null && cplayer.getOlympiadSide() == cptarget.getOlympiadSide()
+						&& cplayer.getOlympiadGame() == cptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff())
+						&& (!_isUndeadOnly || target.isUndead()))
 					return target;
 				// party member or party member pet.
-				if (cptarget != null && cplayer != null && cplayer.getClan() != null && cplayer.isInSameClan(cptarget) && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(cptarget != null && cplayer != null && cplayer.getClan() != null && cplayer.isInSameClan(cptarget) && target.isDead() == isCorpse()
+						&& !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
 					return target;
 				return null;
 			case TARGET_PARTY_ONE:
-				if (target == null)
+				if(target == null)
 					return null;
 				Player player = activeChar.getPlayer();
 				Player ptarget = target.getPlayer();
 				// self or self pet.
-				if (ptarget != null && ptarget == activeChar)
+				if(ptarget != null && ptarget == activeChar)
 					return target;
 				// olympiad party member or olympiad party member pet.
-				if (player != null && player.isInOlympiadMode() && ptarget != null && player.getOlympiadSide() == ptarget.getOlympiadSide() && player.getOlympiadGame() == ptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(player != null && player.isInOlympiadMode() && ptarget != null && player.getOlympiadSide() == ptarget.getOlympiadSide()
+						&& player.getOlympiadGame() == ptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff())
+						&& (!_isUndeadOnly || target.isUndead()))
 					return target;
 				// party member or party member pet.
-				if (ptarget != null && player != null && player.getParty() != null && player.getParty().containsMember(ptarget) && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(ptarget != null && player != null && player.getParty() != null && player.getParty().containsMember(ptarget)
+						&& target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
 					return target;
 				return null;
 			case TARGET_PARTY_ONE_WITHOUT_ME:
-				if (target == null)
+				if(target == null)
 					return null;
 				player = activeChar.getPlayer();
 				ptarget = target.getPlayer();
 				// self or self pet.
-				if (ptarget != null && ptarget == activeChar)
+				if(ptarget != null && ptarget == activeChar)
 					return null;
 				// olympiad party member or olympiad party member pet.
-				if (player != null && player.isInOlympiadMode() && ptarget != null && player.getOlympiadSide() == ptarget.getOlympiadSide() && player.getOlympiadGame() == ptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(player != null && player.isInOlympiadMode() && ptarget != null && player.getOlympiadSide() == ptarget.getOlympiadSide()
+						&& player.getOlympiadGame() == ptarget.getOlympiadGame() && target.isDead() == _isCorpse && !(target == activeChar && isDebuff())
+						&& (!_isUndeadOnly || target.isUndead()))
 					return target;
 				// party member or party member pet.
-				if (ptarget != null && player != null && player.getParty() != null && player.getParty().containsMember(ptarget) && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
+				if(ptarget != null && player != null && player.getParty() != null && player.getParty().containsMember(ptarget)
+						&& target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()))
 					return target;
 				return null;
 			case TARGET_AREA:
@@ -1337,13 +1338,14 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			case TARGET_SQUARE:
 			case TARGET_RANGE:
 			case TARGET_RING_RANGE:
-				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff()) && (!_isUndeadOnly || target.isUndead()) ? target : null;
+				return target != null && target.isDead() == isCorpse() && !(target == activeChar && isDebuff())
+						&& (!_isUndeadOnly || target.isUndead()) ? target : null;
 			case TARGET_AREA_AIM_CORPSE:
 				return target != null && target.isDead() ? target : null;
 			case TARGET_CORPSE:
-				if (target == null || !target.isDead())
+				if(target == null || !target.isDead())
 					return null;
-				if (target.isSummon() && !activeChar.isMyServitor(target.getObjectId()))
+				if(target.isSummon() && !activeChar.isMyServitor(target.getObjectId()))
 					return target;
 				return target.isNpc() ? target : null;
 			case TARGET_CORPSE_PLAYER:
@@ -1358,19 +1360,19 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public Set<Creature> getTargets(SkillEntry skillEntry, Creature activeChar, Creature aimingTarget, boolean forceUse)
 	{
-		if (oneTarget() || isAoE() && isDebuff() && activeChar.isInPeaceZone())
+		if(oneTarget() || isAoE() && isDebuff() && activeChar.isInPeaceZone())
 		{
 			Set<Creature> set = new HashSet<Creature>(1);
-			if (!aimingTarget.isInvisible(activeChar))
+			if(!aimingTarget.isInvisible(activeChar))
 			{
 				set.add(aimingTarget);
 			}
-			if (_addSelfTarget)
+			if(_addSelfTarget)
 			{
 				set.add(activeChar);
 			}
 
-			for (final Event e : activeChar.getEvents())
+			for(final Event e : activeChar.getEvents())
 			{
 				e.checkTargetsForSkill(this, set, activeChar, aimingTarget, forceUse);
 			}
@@ -1379,31 +1381,31 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		}
 
 		Set<Creature> targets = new HashSet<>();
-		if (_addSelfTarget)
+		if(_addSelfTarget)
 		{
 			targets.add(activeChar);
 		}
 
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case TARGET_SELF_AND_SUMMON:
 			{
 				targets.add(activeChar);
 
-				if (!activeChar.isPlayer())
+				if(!activeChar.isPlayer())
 				{
 					break;
 				}
 
 				final SummonInstance summon = activeChar.getPlayer().getSummon();
-				if (summon != null)
+				if(summon != null)
 				{
 					final int fanAffectRange = getFanRange()[2];
-					if (fanAffectRange <= 0 || !summon.isInRange(activeChar, fanAffectRange))
+					if(fanAffectRange <= 0 || !summon.isInRange(activeChar, fanAffectRange))
 					{
-						if (activeChar.isInRange(summon, getAffectRange()))
+						if(activeChar.isInRange(summon, getAffectRange()))
 						{
-							if (!summon.isInvisible(activeChar))
+							if(!summon.isInvisible(activeChar))
 							{
 								targets.add(summon);
 							}
@@ -1418,9 +1420,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			case TARGET_SQUARE:
 			case TARGET_RANGE:
 			{
-				if (aimingTarget.isDead() == isCorpse() && (!_isUndeadOnly || aimingTarget.isUndead()))
+				if(aimingTarget.isDead() == isCorpse() && (!_isUndeadOnly || aimingTarget.isUndead()))
 				{
-					if (!aimingTarget.isInvisible(activeChar))
+					if(!aimingTarget.isInvisible(activeChar))
 					{
 						targets.add(aimingTarget);
 					}
@@ -1440,23 +1442,23 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 			case TARGET_COMMCHANNEL:
 			{
-				if (activeChar.getPlayer() != null)
+				if(activeChar.getPlayer() != null)
 				{
-					if (activeChar.getPlayer().isInParty())
+					if(activeChar.getPlayer().isInParty())
 					{
-						if (activeChar.getPlayer().getParty().isInCommandChannel())
+						if(activeChar.getPlayer().getParty().isInCommandChannel())
 						{
-							for (final Player p : activeChar.getPlayer().getParty().getCommandChannel())
+							for(final Player p : activeChar.getPlayer().getParty().getCommandChannel())
 							{
 								final int fanAffectRange = getFanRange()[2];
-								if (fanAffectRange > 0 && p.isInRange(activeChar, fanAffectRange))
+								if(fanAffectRange > 0 && p.isInRange(activeChar, fanAffectRange))
 								{
 									continue;
 								}
 
-								if (!p.isDead() && (getAffectRange() == -1 || p.isInRange(activeChar, getAffectRange() == 0 ? 600 : getAffectRange())))
+								if(!p.isDead() && (getAffectRange() == -1 || p.isInRange(activeChar, getAffectRange() == 0 ? 600 : getAffectRange())))
 								{
-									if (!p.isInvisible(activeChar))
+									if(!p.isInvisible(activeChar))
 									{
 										targets.add(p);
 									}
@@ -1465,17 +1467,17 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 							addTargetAndPetToList(targets, activeChar.getPlayer(), activeChar.getPlayer());
 							break;
 						}
-						for (final Player p : activeChar.getPlayer().getParty().getPartyMembers())
+						for(final Player p : activeChar.getPlayer().getParty().getPartyMembers())
 						{
 							final int fanAffectRange = getFanRange()[2];
-							if (fanAffectRange > 0 && p.isInRange(activeChar, fanAffectRange))
+							if(fanAffectRange > 0 && p.isInRange(activeChar, fanAffectRange))
 							{
 								continue;
 							}
 
-							if (!p.isDead() && p.isInRange(activeChar, (getAffectRange() == -1 || getAffectRange() == 0 ? 600 : getAffectRange())))
+							if(!p.isDead() && p.isInRange(activeChar, (getAffectRange() == -1 || getAffectRange() == 0 ? 600 : getAffectRange())))
 							{
-								if (!p.isInvisible(activeChar))
+								if(!p.isInvisible(activeChar))
 								{
 									targets.add(p);
 								}
@@ -1491,17 +1493,17 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 			case TARGET_SERVITORS:
 			{
-				for (final Servitor servitor : activeChar.getServitors())
+				for(final Servitor servitor : activeChar.getServitors())
 				{
 					final int fanAffectRange = getFanRange()[2];
-					if (fanAffectRange > 0 && servitor.isInRange(activeChar, fanAffectRange))
+					if(fanAffectRange > 0 && servitor.isInRange(activeChar, fanAffectRange))
 					{
 						continue;
 					}
 
-					if (activeChar.isInRange(servitor, getAffectRange()))
+					if(activeChar.isInRange(servitor, getAffectRange()))
 					{
-						if (!servitor.isInvisible(activeChar))
+						if(!servitor.isInvisible(activeChar))
 						{
 							targets.add(servitor);
 						}
@@ -1520,27 +1522,27 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			case TARGET_CLAN_ONLY:
 			case TARGET_ALLY:
 			{
-				if (activeChar.isMonster() || activeChar.isSiegeGuard())
+				if(activeChar.isMonster() || activeChar.isSiegeGuard())
 				{
-					if (_targetType != SkillTargetType.TARGET_PARTY_WITHOUT_ME)
+					if(_targetType != SkillTargetType.TARGET_PARTY_WITHOUT_ME)
 					{
 						targets.add(activeChar);
 					}
-					for (final Creature c : World.getAroundCharacters(activeChar, getAffectRange(), 600))
+					for(final Creature c : World.getAroundCharacters(activeChar, getAffectRange(), 600))
 					{
 						final int fanAffectRange = getFanRange()[2];
-						if (fanAffectRange > 0 && c.isInRange(activeChar, fanAffectRange))
+						if(fanAffectRange > 0 && c.isInRange(activeChar, fanAffectRange))
 						{
 							continue;
 						}
 
-						if (!c.isDead() && (c.isMonster() || c.isSiegeGuard()) /*
-																				 * && ((L2MonsterInstance)
-																				 * c).getFactionId().equals(mob.
-																				 * getFactionId())
-																				 */)
+						if(!c.isDead() && (c.isMonster() || c.isSiegeGuard()) /*
+																																	* && ((L2MonsterInstance)
+																																	* c).getFactionId().equals(mob.
+																																	* getFactionId())
+																																	*/)
 						{
-							if (!c.isInvisible(activeChar))
+							if(!c.isInvisible(activeChar))
 							{
 								targets.add(c);
 							}
@@ -1549,42 +1551,44 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 					break;
 				}
 				final Player player = activeChar.getPlayer();
-				if (player == null)
+				if(player == null)
 				{
 					break;
 				}
-				for (final Player target : World.getAroundPlayers(activeChar, getAffectRange(), 600))
+				for(final Player target : World.getAroundPlayers(activeChar, getAffectRange(), 600))
 				{
 					boolean check = false;
-					switch (_targetType)
+					switch(_targetType)
 					{
 						case TARGET_PARTY_WITHOUT_ME:
 						case TARGET_PARTY:
 							check = player.getParty() != null && player.getParty() == target.getParty();
 							break;
 						case TARGET_CLAN:
-							check = player.getClanId() != 0 && target.getClanId() == player.getClanId() || player.getParty() != null && target.getParty() == player.getParty();
+							check = player.getClanId() != 0 && target.getClanId() == player.getClanId()
+									|| player.getParty() != null && target.getParty() == player.getParty();
 							break;
 						case TARGET_CLAN_ONLY:
 							check = player.getClanId() != 0 && target.getClanId() == player.getClanId();
 							break;
 						case TARGET_ALLY:
-							check = player.getClanId() != 0 && target.getClanId() == player.getClanId() || player.getAllyId() != 0 && target.getAllyId() == player.getAllyId();
+							check = player.getClanId() != 0 && target.getClanId() == player.getClanId()
+									|| player.getAllyId() != 0 && target.getAllyId() == player.getAllyId();
 							break;
 					}
 					// Ð¸Ð³Ð½Ð¾Ñ€Ð¸Ñ€ÑƒÐµÐ¼ Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð½Ð¸ÐºÐ° Ð½Ð° Ð¾Ð»Ð¸Ð¼Ð¿Ð¸Ð°Ð´Ðµ
-					if (!check || (player.isInOlympiadMode() && target.isInOlympiadMode() && player.getOlympiadSide() != target.getOlympiadSide()))
+					if(!check || (player.isInOlympiadMode() && target.isInOlympiadMode() && player.getOlympiadSide() != target.getOlympiadSide()))
 					{
 						continue;
 					}
 
 					final int fanAffectRange = getFanRange()[2];
-					if (fanAffectRange > 0 && target.isInRange(activeChar, fanAffectRange))
+					if(fanAffectRange > 0 && target.isInRange(activeChar, fanAffectRange))
 					{
 						continue;
 					}
 
-					if (checkTarget(skillEntry, player, target, aimingTarget, forceUse, false) != null)
+					if(checkTarget(skillEntry, player, target, aimingTarget, forceUse, false) != null)
 					{
 						continue;
 					}
@@ -1595,15 +1599,15 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 		}
 
-		for (final Event e : activeChar.getEvents())
+		for(final Event e : activeChar.getEvents())
 		{
 			e.checkTargetsForSkill(this, targets, activeChar, aimingTarget, forceUse);
 		}
 
 		// FIXME [G1ta0] Ñ‚ÑƒÐ¿Ð¾Ð¹ Ñ…Ð°Ðº
-		if (getId() == SKILL_DETECTION || getId() == SKILL_DETECTION2)
+		if(getId() == SKILL_DETECTION || getId() == SKILL_DETECTION2)
 		{
-			for (final Creature target : targets)
+			for(final Creature target : targets)
 			{
 				target.checkAndRemoveInvisible();
 			}
@@ -1614,22 +1618,23 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	private void addTargetAndPetToList(Set<Creature> targets, Creature actor, Creature target)
 	{
 		final int fanAffectRange = getFanRange()[2];
-		if ((actor == target || getAffectRange() == -1 || actor.isInRange(target, getAffectRange())) && (fanAffectRange <= 0 || !actor.isInRange(target, fanAffectRange)) && target.isDead() == isCorpse())
+		if((actor == target || getAffectRange() == -1 || actor.isInRange(target, getAffectRange()))
+				&& (fanAffectRange <= 0 || !actor.isInRange(target, fanAffectRange)) && target.isDead() == isCorpse())
 		{
 			// if(!target.isInvisible(actor))
 			targets.add(target);
 		}
 
-		for (final Servitor servitor : target.getServitors())
+		for(final Servitor servitor : target.getServitors())
 		{
-			if (fanAffectRange > 0 && actor.isInRange(servitor, fanAffectRange))
+			if(fanAffectRange > 0 && actor.isInRange(servitor, fanAffectRange))
 			{
 				continue;
 			}
 
-			if ((getAffectRange() == -1 || actor.isInRange(servitor, getAffectRange())) && servitor.isDead() == isCorpse())
+			if((getAffectRange() == -1 || actor.isInRange(servitor, getAffectRange())) && servitor.isDead() == isCorpse())
 			{
-				if (!servitor.isInvisible(actor))
+				if(!servitor.isInvisible(actor))
 				{
 					targets.add(servitor);
 				}
@@ -1639,7 +1644,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	private void addTargetsToList(SkillEntry skillEntry, Set<Creature> targets, Creature aimingTarget, Creature activeChar, boolean forceUse)
 	{
-		if (_targetType == SkillTargetType.TARGET_FAN || _targetType == SkillTargetType.TARGET_FAN_PB)
+		if(_targetType == SkillTargetType.TARGET_FAN || _targetType == SkillTargetType.TARGET_FAN_PB)
 		{
 			final double headingAngle = PositionUtils.convertHeadingToDegree(activeChar.getHeading());
 			final int fanStartAngle = getFanRange()[1];
@@ -1651,29 +1656,30 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			// Target checks.
 			int affectedCount = targets.size();
 
-			for (final Creature c : activeChar.getAroundCharacters(fanRadius, 300))
+			for(final Creature c : activeChar.getAroundCharacters(fanRadius, 300))
 			{
-				if (affectedCount >= affectLimit)
+				if(affectedCount >= affectLimit)
 				{
 					break;
 				}
 
-				if (c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
+				if(c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
 				{
 					continue;
 				}
 
-				if ((Math.abs(PositionUtils.calculateAngleFrom(activeChar, c) - (headingAngle + fanStartAngle)) > fanHalfAngle) || (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null))
+				if((Math.abs(PositionUtils.calculateAngleFrom(activeChar, c) - (headingAngle + fanStartAngle)) > fanHalfAngle)
+						|| (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null))
 				{
 					continue;
 				}
 
-				if (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
+				if(checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
 					continue;
 
 				targets.add(c);
 
-				if (activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
+				if(activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
 				{
 					activeChar.sendPacket(new ExShowTracePacket(30000).addTrace(c));
 				}
@@ -1681,7 +1687,8 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				affectedCount++;
 			}
 		}
-		else if (_targetType == SkillTargetType.TARGET_SQUARE || _targetType == SkillTargetType.TARGET_SQUARE_PB || _targetType == SkillTargetType.TARGET_SHOOTING)
+		else if(_targetType == SkillTargetType.TARGET_SQUARE || _targetType == SkillTargetType.TARGET_SQUARE_PB
+				|| _targetType == SkillTargetType.TARGET_SHOOTING)
 		{
 			final int squareStartAngle = getFanRange()[1];
 			final int squareLength = getFanRange()[2];
@@ -1698,14 +1705,14 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			// Target checks.
 			int affectedCount = targets.size();
 
-			for (final Creature c : activeChar.getAroundCharacters(radius * (_targetType == SkillTargetType.TARGET_SQUARE ? 2 : 1), 300))
+			for(final Creature c : activeChar.getAroundCharacters(radius * (_targetType == SkillTargetType.TARGET_SQUARE ? 2 : 1), 300))
 			{
-				if (affectedCount >= affectLimit)
+				if(affectedCount >= affectLimit)
 				{
 					break;
 				}
 
-				if (c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
+				if(c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
 				{
 					continue;
 				}
@@ -1715,9 +1722,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				final double yp = c.getY() - activeChar.getY();
 				final double xr = (activeChar.getX() + (xp * cos)) - (yp * sin);
 				final double yr = activeChar.getY() + (xp * sin) + (yp * cos);
-				if ((xr > rectX) && (xr < (rectX + squareLength)) && (yr > rectY) && (yr < (rectY + squareWidth)))
+				if((xr > rectX) && (xr < (rectX + squareLength)) && (yr > rectY) && (yr < (rectY + squareWidth)))
 				{
-					if (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
+					if(checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
 					{
 						continue;
 					}
@@ -1727,7 +1734,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 					targets.add(c);
 
-					if (activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
+					if(activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
 					{
 						activeChar.sendPacket(new ExShowTracePacket(30000).addTrace(c));
 					}
@@ -1736,7 +1743,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				}
 			}
 		}
-		else if (_targetType == SkillTargetType.TARGET_RANGE)
+		else if(_targetType == SkillTargetType.TARGET_RANGE)
 		{
 			final int affectRange = getAffectRange();
 			final int affectLimit = getAffectLimit();
@@ -1744,26 +1751,26 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			// Target checks.
 			int affectedCount = targets.size();
 
-			for (final Creature c : aimingTarget.getAroundCharacters(affectRange, 300))
+			for(final Creature c : aimingTarget.getAroundCharacters(affectRange, 300))
 			{
-				if (affectedCount >= affectLimit)
+				if(affectedCount >= affectLimit)
 				{
 					break;
 				}
 
-				if (c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
+				if(c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
 				{
 					continue;
 				}
 
-				if (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
+				if(checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null)
 				{
 					continue;
 				}
 
 				targets.add(c);
 
-				if (activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
+				if(activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
 				{
 					activeChar.sendPacket(new ExShowTracePacket(30000).addTrace(c));
 				}
@@ -1772,7 +1779,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 			return;
 		}
-		else if (_targetType == SkillTargetType.TARGET_RING_RANGE)
+		else if(_targetType == SkillTargetType.TARGET_RING_RANGE)
 		{
 			final int affectRange = getAffectRange();
 			final int affectLimit = getAffectLimit();
@@ -1781,26 +1788,26 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			// Target checks.
 			int affectedCount = targets.size();
 
-			for (final Creature c : aimingTarget.getAroundCharacters(affectRange, 300))
+			for(final Creature c : aimingTarget.getAroundCharacters(affectRange, 300))
 			{
-				if (affectedCount >= affectLimit)
+				if(affectedCount >= affectLimit)
 				{
 					break;
 				}
 
-				if (c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
+				if(c == null || activeChar == c || activeChar.getPlayer() != null && activeChar.getPlayer() == c.getPlayer())
 				{
 					continue;
 				}
 
-				if (c.isInRange(aimingTarget, startRange) || (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null))
+				if(c.isInRange(aimingTarget, startRange) || (checkTarget(skillEntry, activeChar, c, aimingTarget, forceUse, false) != null))
 				{
 					continue;
 				}
 
 				targets.add(c);
 
-				if (activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
+				if(activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
 				{
 					activeChar.sendPacket(new ExShowTracePacket(30000).addTrace(c));
 				}
@@ -1813,13 +1820,13 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		{
 			List<Creature> arround;
 			Polygon terr = null;
-			if (_targetType == SkillTargetType.TARGET_GROUND)
+			if(_targetType == SkillTargetType.TARGET_GROUND)
 			{
-				if (!activeChar.isPlayer())
+				if(!activeChar.isPlayer())
 					return;
 
 				final Location loc = activeChar.getPlayer().getGroundSkillLoc();
-				if (loc == null)
+				if(loc == null)
 					return;
 
 				arround = World.getAroundCharacters(loc, aimingTarget.getObjectId(), aimingTarget.getReflectionId(), getAffectRange(), 300);
@@ -1828,9 +1835,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			{
 				arround = aimingTarget.getAroundCharacters(getAffectRange(), 300);
 
-				if (_targetType == SkillTargetType.TARGET_AREA)
+				if(_targetType == SkillTargetType.TARGET_AREA)
 				{
-					if (getBehindRadius() > 0)
+					if(getBehindRadius() > 0)
 					{
 						final int zmin1 = activeChar.getZ() - 200;
 						final int zmax1 = activeChar.getZ() + 200;
@@ -1838,7 +1845,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 						final int zmax2 = aimingTarget.getZ() + 200;
 
 						double radian = PositionUtils.convertHeadingToDegree(activeChar.getHeading()) + getBehindRadius() / 2;
-						if (radian > 360)
+						if(radian > 360)
 						{
 							radian -= 360;
 						}
@@ -1849,7 +1856,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 						final int y1 = aimingTarget.getY() + (int) (Math.sin(radian) * getAffectRange());
 
 						radian = PositionUtils.convertHeadingToDegree(activeChar.getHeading()) - getBehindRadius() / 2;
-						if (radian > 360)
+						if(radian > 360)
 						{
 							radian -= 360;
 						}
@@ -1865,9 +1872,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			}
 
 			int affectLimit = getAffectLimit();
-			if (affectLimit == 0)
+			if(affectLimit == 0)
 			{
-				if (isDebuff() && !activeChar.isRaid())
+				if(isDebuff() && !activeChar.isRaid())
 				{
 					affectLimit = 20;
 				}
@@ -1880,31 +1887,31 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			// Target checks.
 			int affectedCount = targets.size();
 
-			for (final Creature target : arround)
+			for(final Creature target : arround)
 			{
-				if (affectedCount >= affectLimit)
+				if(affectedCount >= affectLimit)
 				{
 					break;
 				}
 
-				if (terr != null && !terr.isInside(target.getX(), target.getY(), target.getZ()))
+				if(terr != null && !terr.isInside(target.getX(), target.getY(), target.getZ()))
 				{
 					continue;
 				}
 
-				if (target == null || activeChar == target || activeChar.getPlayer() != null && activeChar.getPlayer() == target.getPlayer())
+				if(target == null || activeChar == target || activeChar.getPlayer() != null && activeChar.getPlayer() == target.getPlayer())
 				{
 					continue;
 				}
 
-				if (checkTarget(skillEntry, activeChar, target, aimingTarget, forceUse, false) != null)
+				if(checkTarget(skillEntry, activeChar, target, aimingTarget, forceUse, false) != null)
 				{
 					continue;
 				}
 
 				targets.add(target);
 
-				if (activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
+				if(activeChar.getPlayer() != null && activeChar.getPlayer().isDebug())
 				{
 					activeChar.sendPacket(new ExShowTracePacket(30000).addTrace(target));
 				}
@@ -1916,13 +1923,13 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public void checkTargetsEffectiveRange(Creature caster, Set<Creature> targets)
 	{
-		if (targets == null)
+		if(targets == null)
 			return;
 
-		for (final Iterator<Creature> iterator = targets.iterator(); iterator.hasNext();)
+		for(final Iterator<Creature> iterator = targets.iterator(); iterator.hasNext();)
 		{
 			final Creature target = iterator.next();
-			if (getEffectiveRange() != -1 && !caster.isInRangeZ(target, getEffectiveRange()))
+			if(getEffectiveRange() != -1 && !caster.isInRangeZ(target, getEffectiveRange()))
 			{
 				iterator.remove();
 			}
@@ -1937,11 +1944,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	public final boolean calcEffectsSuccess(final Creature effector, final Creature effected, final boolean showMsg)
 	{
 		final int chance = getActivateRate();
-		if (chance >= 0)
+		if(chance >= 0)
 		{
-			if (!Formulas.calcEffectsSuccess(effector, effected, this, chance))
+			if(!Formulas.calcEffectsSuccess(effector, effected, this, chance))
 			{
-				if (showMsg)
+				if(showMsg)
 				{
 					effector.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RESISTED_YOUR_S2).addName(effected).addSkillName(this));
 					effector.sendPacket(new ExMagicAttackInfo(effector.getObjectId(), effected.getObjectId(), ExMagicAttackInfo.RESISTED));
@@ -1949,9 +1956,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				return false;
 			}
 		}
-		if (effected.getStat().calc(Stats.MarkOfTrick) == 1 && Rnd.chance(20))
+		if(effected.getStat().calc(Stats.MarkOfTrick) == 1 && Rnd.chance(20))
 		{
-			if (showMsg)
+			if(showMsg)
 			{
 				effector.sendPacket(new SystemMessagePacket(SystemMsg.S1_HAS_FAILED).addSkillName(this));
 			}
@@ -1969,19 +1976,19 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	{
 		double timeMult = 1.0;
 
-		if (isMusic())
+		if(isMusic())
 		{
 			timeMult = Config.SONGDANCETIME_MODIFIER;
 		}
-		else if (getId() >= 4342 && getId() <= 4360)
+		else if(getId() >= 4342 && getId() <= 4360)
 		{
 			timeMult = Config.CLANHALL_BUFFTIME_MODIFIER;
 		}
-		else if (Config.BUFFTIME_MODIFIER_SKILLS.length > 0)
+		else if(Config.BUFFTIME_MODIFIER_SKILLS.length > 0)
 		{
-			for (final int i : Config.BUFFTIME_MODIFIER_SKILLS)
+			for(final int i : Config.BUFFTIME_MODIFIER_SKILLS)
 			{
-				if (i == getId())
+				if(i == getId())
 				{
 					timeMult = Config.BUFFTIME_MODIFIER;
 				}
@@ -2003,17 +2010,17 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	private final boolean getEffects(final Creature effector, final Creature effected, final EffectUseType useType, final int timeConst, final double timeMult, final boolean saveable)
 	{
-		if (isPassive() || effector == null)
+		if(isPassive() || effector == null)
 			return false;
 
-		if (useType.isInstant())
+		if(useType.isInstant())
 		{
 			_log.warn("Cannot get effects from instant effect use type:");
 			Thread.dumpStack();
 			return false;
 		}
 
-		if (!isToggle())
+		if(!isToggle())
 		{
 			/*
 			 * if(useType.isSelf() && !_operateType.isSelfContinuous()) return false;
@@ -2021,33 +2028,33 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			 */
 		}
 
-		if (!hasEffects(useType))
+		if(!hasEffects(useType))
 			return true;
 
-		if (effected == null || effected.isDoor() || effected.isDead() && !isPreservedOnDeath()) // why alike dead??
+		if(effected == null || effected.isDoor() || effected.isDead() && !isPreservedOnDeath()) // why alike dead??
 			return false;
 
-		if (effector != effected)
+		if(effector != effected)
 		{
-			if (useType == EffectUseType.NORMAL)
+			if(useType == EffectUseType.NORMAL)
 			{
-				if (effected.isEffectImmune(effector))
+				if(effected.isEffectImmune(effector))
 					return false;
 			}
 		}
 
 		boolean reflected = false;
-		if (useType == EffectUseType.NORMAL)
+		if(useType == EffectUseType.NORMAL)
 		{
 			reflected = effected.checkReflectDebuff(effector, this);
 		}
 
 		final Set<Creature> targets = new HashSet<Creature>(1);
-		if (useType == EffectUseType.SELF)
+		if(useType == EffectUseType.SELF)
 		{
 			targets.add(effector);
 		}
-		else if (reflected)
+		else if(reflected)
 		{
 			targets.add(effector);
 		}
@@ -2056,12 +2063,12 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			targets.add(effected);
 		}
 
-		if (useType == EffectUseType.NORMAL)
+		if(useType == EffectUseType.NORMAL)
 		{
-			if ((applyEffectsOnSummon() || applyEffectsOnPet()) && !isDebuff() && !isToggle() && !isCubicSkill())
+			if((applyEffectsOnSummon() || applyEffectsOnPet()) && !isDebuff() && !isToggle() && !isCubicSkill())
 			{
 				Creature owner;
-				if (reflected)
+				if(reflected)
 				{
 					owner = effector;
 				}
@@ -2070,15 +2077,15 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 					owner = effected;
 				}
 
-				if (owner.isPlayer())
+				if(owner.isPlayer())
 				{
-					for (final Servitor servitor : owner.getPlayer().getServitors())
+					for(final Servitor servitor : owner.getPlayer().getServitors())
 					{
-						if (applyEffectsOnSummon() && servitor.isSummon())
+						if(applyEffectsOnSummon() && servitor.isSummon())
 						{
 							targets.add(servitor);
 						}
-						else if (applyEffectsOnPet() && servitor.isPet())
+						else if(applyEffectsOnPet() && servitor.isPet())
 						{
 							targets.add(servitor);
 						}
@@ -2088,53 +2095,53 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 		}
 
 		boolean successOnEffected = false;
-		for (final Creature target : targets)
+		for(final Creature target : targets)
 		{
 			final Abnormal abnormal = new Abnormal(effector, target, this, useType, saveable);
 			double abnormalTimeModifier = Math.max(1., timeMult);
-			if (!isToggle() && !isCubicSkill())
+			if(!isToggle() && !isCubicSkill())
 			{
 				abnormalTimeModifier *= target.getStat().calc(isDebuff() ? Stats.DEBUFF_TIME_MODIFIER : Stats.BUFF_TIME_MODIFIER, null, null);
 			}
 
 			int duration = abnormal.getDuration();
 
-			if (timeConst > 0)
+			if(timeConst > 0)
 			{
 				duration = timeConst / 1000;
 			}
-			else if (abnormalTimeModifier > 1.0)
+			else if(abnormalTimeModifier > 1.0)
 			{
 				duration *= abnormalTimeModifier;
 			}
 
 			abnormal.setDuration(duration);
 
-			if (abnormal.apply(effected))
+			if(abnormal.apply(effected))
 			{
-				if (abnormal.isActive())
+				if(abnormal.isActive())
 				{
-					for (final EffectHandler effect : abnormal.getEffects())
+					for(final EffectHandler effect : abnormal.getEffects())
 					{
 						effect.onApplied(abnormal, abnormal.getEffector(), abnormal.getEffected());
 					}
 				}
 
 				// Check for mesmerizing debuffs and increase resist level.
-				if (isDebuff() && (getBasicProperty() != BasicProperty.NONE) && target.hasBasicPropertyResist())
+				if(isDebuff() && (getBasicProperty() != BasicProperty.NONE) && target.hasBasicPropertyResist())
 				{
 					target.getBasicPropertyResist(getBasicProperty()).increaseResistLevel();
 				}
 
-				if (target == effected)
+				if(target == effected)
 				{
 					successOnEffected = true;
 				}
 			}
 
-			if (target == effected)
+			if(target == effected)
 			{
-				if (reflected)
+				if(reflected)
 				{
 					target.sendPacket(new SystemMessage(SystemMessage.YOU_COUNTERED_C1S_ATTACK).addName(effector));
 					effector.sendPacket(new SystemMessage(SystemMessage.C1_DODGES_THE_ATTACK).addName(target));
@@ -2146,7 +2153,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final void attachEffect(EffectTemplate effect)
 	{
-		if (effect == null)
+		if(effect == null)
 			return;
 
 		_effectTemplates.get(effect.getUseType().ordinal()).add(effect);
@@ -2170,9 +2177,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	public boolean hasEffect(EffectUseType useType, String name)
 	{
 		final List<EffectTemplate> templates = getEffectTemplates(useType);
-		for (final EffectTemplate et : templates)
+		for(final EffectTemplate et : templates)
 		{
-			if (et.getName().equalsIgnoreCase(name))
+			if(et.getName().equalsIgnoreCase(name))
 				return true;
 		}
 		return false;
@@ -2186,10 +2193,10 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (this == obj)
+		if(this == obj)
 			return true;
 
-		if (!(obj instanceof Skill))
+		if(!(obj instanceof Skill))
 			return false;
 
 		final Skill skill = (Skill) obj;
@@ -2294,9 +2301,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public Abnormal getSameByAbnormalType(Collection<Abnormal> list)
 	{
-		for (final Abnormal abnormal : list)
+		for(final Abnormal abnormal : list)
 		{
-			if (abnormal != null && AbnormalList.checkAbnormalType(abnormal.getSkill(), this))
+			if(abnormal != null && AbnormalList.checkAbnormalType(abnormal.getSkill(), this))
 				return abnormal;
 		}
 		return null;
@@ -2324,7 +2331,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public SkillEntry getFirstAddedSkill()
 	{
-		if (_addedSkills.length == 0)
+		if(_addedSkills.length == 0)
 			return null;
 		return _addedSkills[0].getSkill();
 	}
@@ -2366,7 +2373,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final int getHitTime()
 	{
-		if (_hitTime < Config.MIN_HIT_TIME)
+		if(_hitTime < Config.MIN_HIT_TIME)
 			return Config.MIN_HIT_TIME;
 		return _hitTime;
 	}
@@ -2558,11 +2565,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final double getPower(Creature target)
 	{
-		if (target != null)
+		if(target != null)
 		{
-			if (target.isPlayable())
+			if(target.isPlayable())
 				return getPowerPvP();
-			if (target.isNpc())
+			if(target.isNpc())
 				return getPowerPvE();
 		}
 		return getPower();
@@ -2635,9 +2642,9 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final int getAffectLimit()
 	{
-		if (_affectLimit[0] == 0 || _affectLimit[1] == 0)
+		if(_affectLimit[0] == 0 || _affectLimit[1] == 0)
 			return Integer.MAX_VALUE; // OFFLIKE
-		if (_affectLimit[0] > 0 || _affectLimit[1] > 0)
+		if(_affectLimit[0] > 0 || _affectLimit[1] > 0)
 			return _affectLimit[0] + (_affectLimit[1] > 0 ? Rnd.get(_affectLimit[1]) : 0);
 		return 0;
 	}
@@ -2695,10 +2702,10 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	private double getAddedLethal2(Creature self)
 	{
 		final Player player = self.getPlayer();
-		if ((player == null) || _lethal2Addon == 0. || _lethal2SkillDepencensyAddon == 0)
+		if((player == null) || _lethal2Addon == 0. || _lethal2SkillDepencensyAddon == 0)
 			return 0.;
 
-		if (player.getAbnormalList().contains(_lethal2SkillDepencensyAddon))
+		if(player.getAbnormalList().contains(_lethal2SkillDepencensyAddon))
 			return _lethal2Addon;
 
 		return 0.;
@@ -2707,10 +2714,10 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	private double getAddedLethal1(Creature self)
 	{
 		final Player player = self.getPlayer();
-		if ((player == null) || _lethal1Addon == 0. || _lethal1SkillDepencensyAddon == 0)
+		if((player == null) || _lethal1Addon == 0. || _lethal1SkillDepencensyAddon == 0)
 			return 0.;
 
-		if (player.getAbnormalList().contains(_lethal1SkillDepencensyAddon))
+		if(player.getAbnormalList().contains(_lethal1SkillDepencensyAddon))
 			return _lethal1Addon;
 
 		return 0.;
@@ -2728,7 +2735,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final boolean isSelfDispellable()
 	{
-		if (isMusic() && Config.CAN_SELF_DISPEL_SONG)
+		if(isMusic() && Config.CAN_SELF_DISPEL_SONG)
 			return true;
 		return _isSelfDispellable && !hasEffect(EffectUseType.NORMAL, "Transformation") && !isToggle() && !isDebuff() && !isMusic();
 	}
@@ -2755,7 +2762,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final boolean isPhysic()
 	{
-		if (_magicType == SkillMagicType.UNK_MAG_TYPE_21) // TODO: Check.
+		if(_magicType == SkillMagicType.UNK_MAG_TYPE_21) // TODO: Check.
 			return true;
 		return _magicType == SkillMagicType.PHYSIC || _magicType == SkillMagicType.MUSIC || _magicType == SkillMagicType.ITEM;
 	}
@@ -2792,7 +2799,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public boolean isSaveable()
 	{
-		if (!Config.ALT_SAVE_UNSAVEABLE && (isMusic() || isAbnormalInstant()))
+		if(!Config.ALT_SAVE_UNSAVEABLE && (isMusic() || isAbnormalInstant()))
 			return false;
 		return _isSaveable || (isToggle() && isNecessaryToggle());
 	}
@@ -2847,45 +2854,45 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	 */
 	public boolean isSSPossible()
 	{
-		if (isAura())
+		if(isAura())
 			return false;
 
-		if (_isUseSS == Ternary.TRUE)
+		if(_isUseSS == Ternary.TRUE)
 			return true;
 
-		if (_isUseSS == Ternary.FALSE)
+		if(_isUseSS == Ternary.FALSE)
 			return false;
 
-		if (_isUseSS == Ternary.DEFAULT)
+		if(_isUseSS == Ternary.DEFAULT)
 		{
-			if (isHandler() || isSpecial() || isMusic() || !isActive())
+			if(isHandler() || isSpecial() || isMusic() || !isActive())
 				return false;
-			if (getTargetType() == SkillTargetType.TARGET_SELF && !isMagic())
+			if(getTargetType() == SkillTargetType.TARGET_SELF && !isMagic())
 				return false;
 			// i_p_attack;i_p_soul_attack;i_m_attack;i_mp_burn;i_hp_drain;i_fatal_blow;i_soul_blow;i_backstab;i_death_link;i_p_attack_hp_link;i_energy_attack;i_seven_arrows
-			if (isPhysic())
+			if(isPhysic())
 			{
-				if (getSkillType() == SkillType.CHARGE)
+				if(getSkillType() == SkillType.CHARGE)
 					return true;
-				else if (getSkillType() == SkillType.DRAIN)
+				else if(getSkillType() == SkillType.DRAIN)
 					return true;
-				else if (getSkillType() == SkillType.LETHAL_SHOT)
+				else if(getSkillType() == SkillType.LETHAL_SHOT)
 					return true;
-				else if (getSkillType() == SkillType.PDAM)
+				else if(getSkillType() == SkillType.PDAM)
 					return true;
-				else if (getSkillType() == SkillType.DEBUFF)
+				else if(getSkillType() == SkillType.DEBUFF)
 				{
-					for (final EffectUseType useType : EffectUseType.VALUES)
+					for(final EffectUseType useType : EffectUseType.VALUES)
 					{
-						if (useType.isSelf())
+						if(useType.isSelf())
 						{
 							continue;
 						}
-						if (hasEffect(useType, "i_p_attack"))
+						if(hasEffect(useType, "i_p_attack"))
 							return true;
-						if (hasEffect(useType, "i_m_attack"))
+						if(hasEffect(useType, "i_m_attack"))
 							return true;
-						if (hasEffect(useType, "i_hp_drain"))
+						if(hasEffect(useType, "i_hp_drain"))
 							return true;
 					}
 				}
@@ -2984,7 +2991,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	private final boolean applyEffectPoint(Creature activeChar, Creature target)
 	{
-		if (!isAI() && getEffectPoint() < 0)
+		if(!isAI() && getEffectPoint() < 0)
 		{
 			activeChar.getAI().notifyEvent(CtrlEvent.EVT_ATTACK, target, this, Math.abs(getEffectPoint()));
 			target.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, activeChar, this, Math.abs(getEffectPoint()));
@@ -2995,33 +3002,33 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final void onStartCast(SkillEntry skillEntry, Creature activeChar, Creature target)
 	{
-		if ((target == null) || isPassive() || !hasEffects(EffectUseType.START))
+		if((target == null) || isPassive() || !hasEffects(EffectUseType.START))
 			return;
 
 		boolean startAttackStance = false;
 
-		if (!checkCastTarget(target))
+		if(!checkCastTarget(target))
 			return;
 
-		if (applyEffectPoint(activeChar, target))
+		if(applyEffectPoint(activeChar, target))
 		{
 			startAttackStance = true;
 		}
 
-		for (final EffectTemplate et : getEffectTemplates(EffectUseType.START))
+		for(final EffectTemplate et : getEffectTemplates(EffectUseType.START))
 		{
 			useInstantEffect(et, activeChar, target, false);
 		}
 
-		if (isSSPossible())
+		if(isSSPossible())
 		{
-			if (!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
+			if(!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
 			{
 				activeChar.unChargeShots(isMagic());
 			}
 		}
 
-		if (startAttackStance)
+		if(startAttackStance)
 		{
 			activeChar.startAttackStanceTask();
 		}
@@ -3029,33 +3036,33 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public final void onTickCast(Creature activeChar, Set<Creature> targets)
 	{
-		if (isPassive() || !isChanneling())
+		if(isPassive() || !isChanneling())
 			return;
 
 		boolean startAttackStance = false;
 
 		final AddedSkill attachedSkill = getAttachedSkill();
-		if (attachedSkill != null)
+		if(attachedSkill != null)
 		{
 			final SkillEntry skillEntry = attachedSkill.getSkill();
-			if (skillEntry == null)
+			if(skillEntry == null)
 				return;
 
 			final Skill skill = skillEntry.getTemplate();
 
-			for (final Creature target : targets)
+			for(final Creature target : targets)
 			{
-				if (target == null)
+				if(target == null)
 				{
 					continue;
 				}
 
-				if (!skill.checkCastTarget(target))
+				if(!skill.checkCastTarget(target))
 				{
 					continue;
 				}
 
-				if (skill.applyEffectPoint(activeChar, target))
+				if(skill.applyEffectPoint(activeChar, target))
 				{
 					startAttackStance = true;
 				}
@@ -3063,57 +3070,57 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 				final boolean reflected = target.checkReflectSkill(activeChar, skill);
 				final boolean successEffect = skill.hasEffects(EffectUseType.NORMAL) && skill.calcEffectsSuccess(activeChar, target, true);
 
-				if (successEffect || !skill.hasEffects(EffectUseType.NORMAL) || !_noEffectsIfFailSkill)
+				if(successEffect || !skill.hasEffects(EffectUseType.NORMAL) || !_noEffectsIfFailSkill)
 				{
 					skill.useSkill(activeChar, target, reflected);
 
-					for (final EffectTemplate et : skill.getEffectTemplates(EffectUseType.NORMAL_INSTANT))
+					for(final EffectTemplate et : skill.getEffectTemplates(EffectUseType.NORMAL_INSTANT))
 					{
 						skill.useInstantEffect(et, activeChar, target, reflected);
 					}
 				}
 
-				if (successEffect)
+				if(successEffect)
 				{
 					skill.getEffects(activeChar, target);
 				}
 			}
 		}
-		else if (hasEffects(EffectUseType.TICK))
+		else if(hasEffects(EffectUseType.TICK))
 		{
-			for (final Creature target : targets)
+			for(final Creature target : targets)
 			{
-				if (target == null)
+				if(target == null)
 				{
 					continue;
 				}
 
-				if (!checkCastTarget(target))
+				if(!checkCastTarget(target))
 				{
 					continue;
 				}
 
-				if (applyEffectPoint(activeChar, target))
+				if(applyEffectPoint(activeChar, target))
 				{
 					startAttackStance = true;
 				}
 
-				for (final EffectTemplate et : getEffectTemplates(EffectUseType.TICK))
+				for(final EffectTemplate et : getEffectTemplates(EffectUseType.TICK))
 				{
 					useInstantEffect(et, activeChar, target, false);
 				}
 			}
 		}
 
-		if (isSSPossible())
+		if(isSSPossible())
 		{
-			if (!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
+			if(!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
 			{
 				activeChar.unChargeShots(isMagic());
 			}
 		}
 
-		if (startAttackStance)
+		if(startAttackStance)
 		{
 			activeChar.startAttackStanceTask();
 		}
@@ -3121,12 +3128,12 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public void onEndCast(Creature activeChar, Set<Creature> targets)
 	{
-		if (isPassive())
+		if(isPassive())
 			return;
 
-		if (!(isNotTargetAoE() && isDebuff() && targets.size() == 0)) // TODO: Check this.
+		if(!(isNotTargetAoE() && isDebuff() && targets.size() == 0)) // TODO: Check this.
 		{
-			for (final EffectTemplate et : getEffectTemplates(EffectUseType.SELF_INSTANT))
+			for(final EffectTemplate et : getEffectTemplates(EffectUseType.SELF_INSTANT))
 			{
 				useInstantEffect(et, activeChar, activeChar, false);
 			}
@@ -3136,14 +3143,14 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 		boolean startAttackStance = false;
 
-		for (final Creature target : targets)
+		for(final Creature target : targets)
 		{
-			if ((target == null) || !checkCastTarget(target))
+			if((target == null) || !checkCastTarget(target))
 			{
 				continue;
 			}
 
-			if (applyEffectPoint(activeChar, target))
+			if(applyEffectPoint(activeChar, target))
 			{
 				startAttackStance = true;
 			}
@@ -3151,35 +3158,35 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 			final boolean reflected = target.checkReflectSkill(activeChar, this);
 			final boolean successEffect = hasEffects(EffectUseType.NORMAL) && calcEffectsSuccess(activeChar, target, true);
 
-			if (successEffect || !hasEffects(EffectUseType.NORMAL) || !_noEffectsIfFailSkill)
+			if(successEffect || !hasEffects(EffectUseType.NORMAL) || !_noEffectsIfFailSkill)
 			{
 				useSkill(activeChar, target, reflected);
 
-				for (final EffectTemplate et : getEffectTemplates(EffectUseType.NORMAL_INSTANT))
+				for(final EffectTemplate et : getEffectTemplates(EffectUseType.NORMAL_INSTANT))
 				{
 					useInstantEffect(et, activeChar, target, reflected);
 				}
 			}
 
-			if (successEffect)
+			if(successEffect)
 			{
 				getEffects(activeChar, target);
 			}
 		}
 
-		if (isSSPossible())
+		if(isSSPossible())
 		{
-			if (!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
+			if(!(Config.SAVING_SPS && _skillType == SkillType.BUFF))
 			{
 				activeChar.unChargeShots(isMagic());
 			}
 		}
 
-		if (isSuicideAttack())
+		if(isSuicideAttack())
 		{
 			activeChar.doDie(null);
 		}
-		else if (startAttackStance)
+		else if(startAttackStance)
 		{
 			activeChar.startAttackStanceTask();
 		}
@@ -3187,28 +3194,28 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public void onFinishCast(Creature aimingTarget, Creature activeChar, Set<Creature> targets)
 	{
-		if (isDebuff())
+		if(isDebuff())
 		{
-			if (getTargetType() == SkillTargetType.TARGET_AREA_AIM_CORPSE)
+			if(getTargetType() == SkillTargetType.TARGET_AREA_AIM_CORPSE)
 			{
-				if (aimingTarget.isNpc())
+				if(aimingTarget.isNpc())
 				{
 					((NpcInstance) aimingTarget).endDecayTask();
 				}
-				else if (aimingTarget.isSummon())
+				else if(aimingTarget.isSummon())
 				{
 					((SummonInstance) aimingTarget).endDecayTask();
 				}
 			}
-			else if (getTargetType() == SkillTargetType.TARGET_CORPSE)
+			else if(getTargetType() == SkillTargetType.TARGET_CORPSE)
 			{
-				for (final Creature target : targets)
+				for(final Creature target : targets)
 				{
-					if (target.isNpc())
+					if(target.isNpc())
 					{
 						((NpcInstance) target).endDecayTask();
 					}
-					else if (target.isSummon())
+					else if(target.isSummon())
 					{
 						((SummonInstance) target).endDecayTask();
 					}
@@ -3219,10 +3226,10 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public void onAbnormalTimeEnd(Creature activeChar, Creature target)
 	{
-		if (!checkCastTarget(target))
+		if(!checkCastTarget(target))
 			return;
 
-		for (final EffectTemplate et : getEffectTemplates(EffectUseType.END))
+		for(final EffectTemplate et : getEffectTemplates(EffectUseType.END))
 		{
 			useInstantEffect(et, activeChar, target, false);
 		}
@@ -3235,11 +3242,11 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	private boolean useInstantEffect(EffectTemplate et, Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!et.isInstant() || !et.getTargetType().checkTarget(target) || (et.getChance() >= 0 && !Rnd.chance(et.getChance())))
+		if(!et.isInstant() || !et.getTargetType().checkTarget(target) || (et.getChance() >= 0 && !Rnd.chance(et.getChance())))
 			return false;
 
 		final EffectHandler handler = et.getHandler();
-		if (!handler.checkConditionImpl(activeChar, target))
+		if(!handler.checkConditionImpl(activeChar, target))
 			return false;
 
 		handler.instantUse(activeChar, target, reflected);
@@ -3248,7 +3255,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public boolean isAoE()
 	{
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case TARGET_AREA:
 			case TARGET_AREA_AIM_CORPSE:
@@ -3271,7 +3278,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public boolean isNotTargetAoE()
 	{
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case TARGET_AURA:
 			case TARGET_ALLY:
@@ -3322,7 +3329,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public boolean oneTarget()
 	{
-		switch (_targetType)
+		switch(_targetType)
 		{
 			case TARGET_CORPSE:
 			case TARGET_CORPSE_PLAYER:
@@ -3401,7 +3408,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public double getSimpleDamage(Creature attacker, Creature target)
 	{
-		if (isMagic())
+		if(isMagic())
 		{
 			// Ð¼Ð°Ð³Ð¸Ñ‡ÐµÑ�ÐºÐ¸Ð¹ ÑƒÑ€Ð¾Ð½
 			final double mAtk = attacker.getMAtk(target, this);
@@ -3421,7 +3428,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	public long getReuseForMonsters()
 	{
 		long min = 1000;
-		switch (_skillType)
+		switch(_skillType)
 		{
 			case PARALYZE:
 			case DEBUFF:
@@ -3510,14 +3517,14 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public Skill[] getAnalogSkills(Player player)
 	{
-		if (!haveAnalogSkills())
+		if(!haveAnalogSkills())
 			return new Skill[0];
 
 		final List<Skill> analogSkills = new ArrayList<Skill>();
-		for (final int analogId : getAnalogSkillIDs())
+		for(final int analogId : getAnalogSkillIDs())
 		{
 			final SkillEntry analogSkill = player.getKnownSkill(analogId);
-			if (analogSkill == null)
+			if(analogSkill == null)
 			{
 				continue;
 			}
@@ -3650,7 +3657,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 
 	public boolean canBeEvaded()
 	{
-		switch (getSkillType())
+		switch(getSkillType())
 		{
 			case CHARGE:
 			case PDAM:
@@ -3765,7 +3772,7 @@ public class Skill extends StatTemplate implements SkillInfo, Cloneable
 	@Override
 	public int getSubLevel()
 	{
-		return 0;   
+		return 0;
 	}
 
 	public SkillEntry getEntry()

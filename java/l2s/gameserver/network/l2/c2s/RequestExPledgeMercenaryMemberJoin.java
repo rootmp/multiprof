@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -27,11 +28,11 @@ public class RequestExPledgeMercenaryMemberJoin implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || activeChar.getObjectId() != charObjectId)
+		if(activeChar == null || activeChar.getObjectId() != charObjectId)
 			return;
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, castleId);
-		if (castle == null)
+		if(castle == null)
 			return;
 
 		activeChar.sendPacket(SystemMsg.YOU_CANNOT_APPLY_FOR_MERCENARY_NOW);

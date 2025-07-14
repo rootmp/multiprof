@@ -39,7 +39,7 @@ public final class SkillHolder extends AbstractHolder
 	{
 		return getSkillEntry(id, level, 0);
 	}
-	
+
 	public SkillEntry getSkillEntry(int id, int level, int subLevel)
 	{
 		Skill skill = getSkill(id, level, subLevel);
@@ -47,18 +47,18 @@ public final class SkillHolder extends AbstractHolder
 			return null;
 		return SkillEntry.makeSkillEntry(SkillEntryType.NONE, getSkill(id, level, subLevel));
 	}
-	
+
 	public int getHashCode(int skillId, int skillLevel)
 	{
 		IntIntMap hashCodes = _cachedHashCodes.get(skillId);
-		if (hashCodes == null)
+		if(hashCodes == null)
 		{
 			hashCodes = new HashIntIntMap();
 			_cachedHashCodes.put(skillId, hashCodes);
 		}
 
 		int index = hashCodes.get(skillLevel);
-		if (index == 0)
+		if(index == 0)
 		{
 			index = _lastHashCode.incrementAndGet();
 			hashCodes.put(skillLevel, index);
@@ -71,7 +71,7 @@ public final class SkillHolder extends AbstractHolder
 		_skills.put(skill.hashCode(), skill);
 
 		List<Skill> skills = _skillsById.get(skill.getId());
-		if (skills == null)
+		if(skills == null)
 		{
 			skills = new ArrayList<Skill>();
 			_skillsById.put(skill.getId(), skills);
@@ -100,7 +100,7 @@ public final class SkillHolder extends AbstractHolder
 	{
 		return getSkill(getHashCode(id, level));
 	}
-	
+
 	public List<Skill> getSkills(int id)
 	{
 		return _skillsById.get(id);
@@ -113,7 +113,7 @@ public final class SkillHolder extends AbstractHolder
 
 	public void callInit()
 	{
-		for (Skill skill : getSkills())
+		for(Skill skill : getSkills())
 			skill.init();
 	}
 

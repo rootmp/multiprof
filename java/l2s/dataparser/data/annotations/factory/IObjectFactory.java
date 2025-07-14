@@ -1,4 +1,5 @@
 package l2s.dataparser.data.annotations.factory;
+
 /**
  * @author : Camelion
  * @date : 24.08.12 22:56

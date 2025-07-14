@@ -92,7 +92,7 @@ public class NpcAI extends CharacterAI
 		_currentWalkerPoint = -1;
 		_delete = false;
 
-		if (isActive())
+		if(isActive())
 			setIntention(CtrlIntention.AI_INTENTION_WALKER_ROUTE);
 	}
 
@@ -107,7 +107,7 @@ public class NpcAI extends CharacterAI
 		NpcInstance actor = getActor();
 
 		Location sloc = actor.getSpawnedLoc();
-		if (sloc != null && sloc.h >= 0 && actor.isInRangeZ(sloc, 32))
+		if(sloc != null && sloc.h >= 0 && actor.isInRangeZ(sloc, 32))
 			actor.setHeading(sloc.h);
 
 		actor.broadcastPacket(new ExRotation(actor.getObjectId(), actor.getHeading()));
@@ -138,7 +138,7 @@ public class NpcAI extends CharacterAI
 		super.onEvtDead(killer);
 
 		// TODO: Переделать по оффу систему ExPrivates
-		for (NpcInstance minion : _exPrivates)
+		for(NpcInstance minion : _exPrivates)
 			minion.deleteMe();
 	}
 
@@ -146,10 +146,10 @@ public class NpcAI extends CharacterAI
 	public NpcInstance createOnePrivateEx(int npcId, String ai, int weight, int respawn, int x, int y, int z, int h, long p1, long p2, long p3)
 	{
 		NpcInstance actor = getActor();
-		if (actor.isVisible() && !actor.isDead()) // Хозяин заспавнен.
+		if(actor.isVisible() && !actor.isDead()) // Хозяин заспавнен.
 		{
 			NpcInstance npc = NpcUtils.spawnSingle(npcId, x, y, z, h, actor.getReflection(), 0);
-			if (npc != null)
+			if(npc != null)
 			{
 				_exPrivates.add(npc);
 				return npc;
@@ -188,7 +188,7 @@ public class NpcAI extends CharacterAI
 	@Override
 	protected void onIntentionWalkerRoute()
 	{
-		if (_haveWalkerRoute)
+		if(_haveWalkerRoute)
 		{
 			clientStopMoving();
 			moveToNextPoint(0);
@@ -200,14 +200,14 @@ public class NpcAI extends CharacterAI
 	protected void onEvtTimer(int timerId, Object arg1, Object arg2)
 	{
 		NpcInstance actor = getActor();
-		if (timerId == WALKER_ROUTE_TIMER_ID)
+		if(timerId == WALKER_ROUTE_TIMER_ID)
 		{
-			if (_haveWalkerRoute)
+			if(_haveWalkerRoute)
 				moveToNextPoint(0);
 		}
-		else if (timerId == RANDOM_ACTION_TIMER_ID)
+		else if(timerId == RANDOM_ACTION_TIMER_ID)
 		{
-			if (_haveRandomActions)
+			if(_haveRandomActions)
 				makeRandomAction();
 		}
 		actor.onTimerFired(timerId);
@@ -217,17 +217,17 @@ public class NpcAI extends CharacterAI
 	protected void onEvtThink()
 	{
 		NpcInstance actor = getActor();
-		if (actor == null || actor.isActionsDisabled())
+		if(actor == null || actor.isActionsDisabled())
 			return;
 
-		if (!_thinking.tryLock())
+		if(!_thinking.tryLock())
 			return;
 
 		try
 		{
 			lookNeighbor(actor.getAggroRange(), false);
 
-			if (getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+			if(getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 				thinkActive();
 		}
 		finally
@@ -239,19 +239,19 @@ public class NpcAI extends CharacterAI
 	protected boolean thinkActive()
 	{
 		NpcInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return false;
 
-		if (_haveWalkerRoute)
+		if(_haveWalkerRoute)
 		{
-			if (getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+			if(getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 			{
-				if (!actor.getMovement().isMoving() && !haveTask(WALKER_ROUTE_TIMER_ID))
+				if(!actor.getMovement().isMoving() && !haveTask(WALKER_ROUTE_TIMER_ID))
 				{
 					// Если по какой-то причине моб сбился и не идет, то с 10й попытки принуждаем
 					// его идти дальше.
 					_walkTryCount++;
-					if (_walkTryCount >= 10)
+					if(_walkTryCount >= 10)
 					{
 						moveToNextPoint(0);
 						return true;
@@ -270,19 +270,19 @@ public class NpcAI extends CharacterAI
 
 	public final synchronized void startAITask()
 	{
-		if (_aiTask == null)
+		if(_aiTask == null)
 		{
 			_currentAITaskDelay = _activeAITaskDelay;
 			_aiTask = AiTaskManager.getInstance().scheduleAtFixedRate(this, 0L, _currentAITaskDelay);
 		}
 
-		if (_haveWalkerRoute)
+		if(_haveWalkerRoute)
 			setIntention(CtrlIntention.AI_INTENTION_WALKER_ROUTE);
 
-		if (_haveRandomActions)
+		if(_haveRandomActions)
 		{
 			RandomActions.Action action = _randomActions.getAction(1);
-			if (action != null)
+			if(action != null)
 			{
 				// При спауне начинаем делать действия через случайное время, иначе все нпс
 				// будут одновременно начинать, что будет не очень красиво.
@@ -293,9 +293,9 @@ public class NpcAI extends CharacterAI
 
 	protected final synchronized void switchAITask(long delay)
 	{
-		if (_aiTask != null)
+		if(_aiTask != null)
 		{
-			if (_currentAITaskDelay == delay)
+			if(_currentAITaskDelay == delay)
 				return;
 			_aiTask.cancel(false);
 		}
@@ -306,7 +306,7 @@ public class NpcAI extends CharacterAI
 
 	public final synchronized void stopAITask()
 	{
-		if (_aiTask != null)
+		if(_aiTask != null)
 		{
 			_aiTask.cancel(false);
 			_aiTask = null;
@@ -328,16 +328,16 @@ public class NpcAI extends CharacterAI
 	@Override
 	public void run()
 	{
-		if (!isActive())
+		if(!isActive())
 			return;
 
 		// проверяем, если NPC вышел в неактивный регион, отключаем AI
-		if (!isGlobalAI() && System.currentTimeMillis() - _lastActiveCheck > 60000L)
+		if(!isGlobalAI() && System.currentTimeMillis() - _lastActiveCheck > 60000L)
 		{
 			_lastActiveCheck = System.currentTimeMillis();
 			NpcInstance actor = getActor();
 			WorldRegion region = actor == null ? null : actor.getCurrentRegion();
-			if (region == null || !region.isActive())
+			if(region == null || !region.isActive())
 			{
 				stopAITask();
 				return;
@@ -348,17 +348,17 @@ public class NpcAI extends CharacterAI
 
 	private void continueWalkerRoute()
 	{
-		if (!isActive() || getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+		if(!isActive() || getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 			return;
 
 		// Когда дошли, говорим фразу, делаем социальное действие, и через указаный
 		// промежуток времени начием идти дальше
-		if (_haveWalkerRoute)
+		if(_haveWalkerRoute)
 		{
-			if (_currentWalkerPoint >= 0)
+			if(_currentWalkerPoint >= 0)
 			{
 				WalkerRoutePoint route = _walkerRoute.getPoint(_currentWalkerPoint);
-				if (route == null)
+				if(route == null)
 				{
 					moveToNextPoint(0);
 					return; // todo
@@ -367,11 +367,11 @@ public class NpcAI extends CharacterAI
 				NpcInstance actor = getActor();
 
 				int socialActionId = route.getSocialActionId();
-				if (socialActionId >= 0)
+				if(socialActionId >= 0)
 					actor.broadcastPacket(new SocialActionPacket(actor.getObjectId(), socialActionId));
 
 				NpcString phrase = Rnd.get(route.getPhrases());
-				if (phrase != null)
+				if(phrase != null)
 					Functions.npcSay(actor, phrase);
 
 				moveToNextPoint(route.getDelay());
@@ -383,13 +383,13 @@ public class NpcAI extends CharacterAI
 
 	private void moveToNextPoint(int delay)
 	{
-		if (!isActive() || getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+		if(!isActive() || getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 			return;
 
-		if (!_haveWalkerRoute)
+		if(!_haveWalkerRoute)
 			return;
 
-		if (delay > 0)
+		if(delay > 0)
 		{
 			addTask(WALKER_ROUTE_TIMER_ID, delay * 1000L);
 			return;
@@ -398,22 +398,22 @@ public class NpcAI extends CharacterAI
 		_walkTryCount = 0;
 
 		NpcInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return;
 
-		switch (_walkerRoute.getType())
+		switch(_walkerRoute.getType())
 		{
 			case LENGTH:
 			{
-				if (_toBackWay)
+				if(_toBackWay)
 					_currentWalkerPoint--;
 				else
 					_currentWalkerPoint++;
 
-				if (_currentWalkerPoint >= _walkerRoute.size() - 1)
+				if(_currentWalkerPoint >= _walkerRoute.size() - 1)
 					_toBackWay = true;
 
-				if (_currentWalkerPoint == 0)
+				if(_currentWalkerPoint == 0)
 					_toBackWay = false;
 				break;
 			}
@@ -421,36 +421,36 @@ public class NpcAI extends CharacterAI
 			{
 				_currentWalkerPoint++;
 
-				if (_currentWalkerPoint >= _walkerRoute.size())
+				if(_currentWalkerPoint >= _walkerRoute.size())
 					_currentWalkerPoint = 0;
 				break;
 			}
 			case RANDOM:
 			{
-				if (_walkerRoute.size() > 1)
+				if(_walkerRoute.size() > 1)
 				{
 					int oldPoint = _currentWalkerPoint;
-					while (oldPoint == _currentWalkerPoint)
+					while(oldPoint == _currentWalkerPoint)
 						_currentWalkerPoint = Rnd.get(_walkerRoute.size() - 1);
 				}
 				break;
 			}
 			case DELETE:
 			{
-				if (_delete)
+				if(_delete)
 				{
 					actor.deleteMe(); // TODO: [Bonux] Мб сделать, чтобы он респаунился? Если респаун указан в спавне.
 					return;
 				}
 				_currentWalkerPoint++;
-				if (_currentWalkerPoint >= _walkerRoute.size())
+				if(_currentWalkerPoint >= _walkerRoute.size())
 					_delete = true;
 				break;
 			}
 			case FINISH:
 			{
 				_currentWalkerPoint++;
-				if (_currentWalkerPoint >= _walkerRoute.size())
+				if(_currentWalkerPoint >= _walkerRoute.size())
 				{
 					actor.getMovement().stopMove();
 					int routeId = _walkerRoute.getId();
@@ -463,15 +463,15 @@ public class NpcAI extends CharacterAI
 		}
 
 		WalkerRoutePoint route = _walkerRoute.getPoint(_currentWalkerPoint);
-		if (route == null)
+		if(route == null)
 			return; // todo
 
-		if (route.isRunning())
+		if(route.isRunning())
 			actor.setRunning();
 		else
 			actor.setWalking();
 
-		if (route.isTeleport())
+		if(route.isTeleport())
 		{
 			actor.teleToLocation(route.getLocation());
 			continueWalkerRoute();
@@ -482,32 +482,32 @@ public class NpcAI extends CharacterAI
 
 	private void makeRandomAction()
 	{
-		if (!isActive())
+		if(!isActive())
 			return;
 
-		if (!_haveRandomActions)
+		if(!_haveRandomActions)
 			return;
 
 		NpcInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return;
 
-		if (getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+		if(getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 		{
 			_currentActionId++;
-			if (_currentActionId > _randomActions.getActionsCount())
+			if(_currentActionId > _randomActions.getActionsCount())
 				_currentActionId = 1;
 
 			RandomActions.Action action = _randomActions.getAction(_currentActionId);
-			if (action == null)
+			if(action == null)
 				return; // todo
 
 			int socialActionId = action.getSocialActionId();
-			if (socialActionId >= 0)
+			if(socialActionId >= 0)
 				actor.broadcastPacket(new SocialActionPacket(actor.getObjectId(), socialActionId));
 
 			NpcString phrase = action.getPhrase();
-			if (phrase != null)
+			if(phrase != null)
 				Functions.npcSay(actor, phrase);
 
 			addTask(RANDOM_ACTION_TIMER_ID, action.getDelay() * 1000L);
@@ -519,15 +519,15 @@ public class NpcAI extends CharacterAI
 	private void moveToLocation(Location loc)
 	{
 		NpcInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return;
 
-		if (getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
+		if(getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE)
 		{
 			loc = Location.findPointToStay(loc, 50, actor.getGeoIndex());
 			loc.h = -1;
 			actor.setSpawnedLoc(loc);
-			if (!actor.getMovement().moveToLocation(loc, 0, true))
+			if(!actor.getMovement().moveToLocation(loc, 0, true))
 			{
 				clientStopMoving();
 				actor.teleToLocation(loc);
@@ -553,21 +553,21 @@ public class NpcAI extends CharacterAI
 
 	protected boolean lookNeighbor(int range, boolean force)
 	{
-		if (!isActive())
+		if(!isActive())
 			return false;
 
-		if (range <= 0)
+		if(range <= 0)
 			return false;
 
 		NpcInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return false;
 
 		_lockLookNeighbor.lock();
 		try
 		{
 			long now = System.currentTimeMillis();
-			if ((now - _lookNeighborTimestamp) > 500L)
+			if((now - _lookNeighborTimestamp) > 500L)
 			{
 				_lookNeighborTimestamp = now;
 
@@ -577,19 +577,19 @@ public class NpcAI extends CharacterAI
 				 * System.currentTimeMillis(); _neighbors.clear(); }
 				 */
 
-				for (Creature creature : actor.getAroundCharacters(range, 250))
+				for(Creature creature : actor.getAroundCharacters(range, 250))
 				{
-					if (!_neighbors.contains(creature) && !creature.isInvisible(actor))
+					if(!_neighbors.contains(creature) && !creature.isInvisible(actor))
 					{
 						notifyEvent(CtrlEvent.EVT_SEE_CREATURE, creature);
 						_neighbors.add(creature);
 					}
 				}
 
-				for (Iterator<Creature> itr = _neighbors.iterator(); itr.hasNext();)
+				for(Iterator<Creature> itr = _neighbors.iterator(); itr.hasNext();)
 				{
 					Creature creature = itr.next();
-					if (!actor.isInRangeZ(creature, range) || creature.isInvisible(actor))
+					if(!actor.isInRangeZ(creature, range) || creature.isInvisible(actor))
 					{
 						itr.remove();
 						notifyEvent(CtrlEvent.EVT_DISAPPEAR_CREATURE, creature);
@@ -610,7 +610,7 @@ public class NpcAI extends CharacterAI
 		_lockLookNeighbor.lock();
 		try
 		{
-			if (_neighbors.remove(creature))
+			if(_neighbors.remove(creature))
 				notifyEvent(CtrlEvent.EVT_DISAPPEAR_CREATURE, creature);
 		}
 		finally
@@ -624,7 +624,7 @@ public class NpcAI extends CharacterAI
 	{
 		super.onEvtForgetObject(object);
 
-		if (object.isCreature())
+		if(object.isCreature())
 			removeNeighbor((Creature) object);
 	}
 

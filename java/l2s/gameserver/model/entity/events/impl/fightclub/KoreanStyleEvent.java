@@ -52,19 +52,18 @@ public class KoreanStyleEvent extends AbstractFightClub
 		super(set);
 		_lastKill = 0L;
 		_fightingPlayers = new FightClubPlayer[2];
-		_lastTeamChosenSpawn = new int[]
-		{
-			0,
-			0
+		_lastTeamChosenSpawn = new int[] {
+				0,
+				0
 		};
 	}
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if ((actor != null) && (actor.isPlayable()))
+		if((actor != null) && (actor.isPlayable()))
 		{
 			FightClubPlayer realActor = getFightClubPlayer(actor.getPlayer());
-			if ((victim.isPlayer()) && (realActor != null))
+			if((victim.isPlayer()) && (realActor != null))
 			{
 				realActor.increaseKills(true);
 				updatePlayerScore(realActor);
@@ -74,11 +73,11 @@ public class KoreanStyleEvent extends AbstractFightClub
 			actor.getPlayer().sendUserInfo();
 		}
 
-		if (victim.isPlayer())
+		if(victim.isPlayer())
 		{
 			FightClubPlayer realVictim = getFightClubPlayer(victim);
 			realVictim.increaseDeaths();
-			if (actor != null)
+			if(actor != null)
 				sendMessageToPlayer(realVictim, MessageType.GM, "You have been killed by " + actor.getName());
 			victim.broadcastCharInfo();
 
@@ -91,9 +90,9 @@ public class KoreanStyleEvent extends AbstractFightClub
 	public void loggedOut(Player player)
 	{
 		super.loggedOut(player);
-		for (FightClubPlayer fPlayer : _fightingPlayers)
+		for(FightClubPlayer fPlayer : _fightingPlayers)
 		{
-			if ((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(player)))
+			if((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(player)))
 			{
 				checkFightingPlayers();
 			}
@@ -103,7 +102,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 	@Override
 	public void stopEvent(boolean force)
 	{
-		for (int i = 0; i < _fightingPlayers.length; i++)
+		for(int i = 0; i < _fightingPlayers.length; i++)
 			_fightingPlayers[i] = null;
 		super.stopEvent(force);
 	}
@@ -113,21 +112,20 @@ public class KoreanStyleEvent extends AbstractFightClub
 		super.leaveEvent(player, teleportTown);
 		try
 		{
-			if (player.isImmobilized())
+			if(player.isImmobilized())
 			{
 				player.stopRooted();
 			}
 		}
-		catch (IllegalStateException e)
-		{
-		}
+		catch(IllegalStateException e)
+		{}
 
 		player.stopAbnormalEffect(AbnormalEffect.ROOT);
-		if (getState() != EventState.STARTED)
+		if(getState() != EventState.STARTED)
 			return true;
-		for (FightClubPlayer fPlayer : _fightingPlayers)
+		for(FightClubPlayer fPlayer : _fightingPlayers)
 		{
-			if ((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(player)))
+			if((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(player)))
 				checkFightingPlayers();
 		}
 		return true;
@@ -136,21 +134,21 @@ public class KoreanStyleEvent extends AbstractFightClub
 	public void startEvent()
 	{
 		super.startEvent();
-		for (final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS))
+		for(final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS, REGISTERED_PLAYERS))
 		{
 			final Player player = fPlayer.getPlayer();
-			if (player.isDead())
+			if(player.isDead())
 			{
 				player.doRevive();
 			}
-			if (player.isFakeDeath())
+			if(player.isFakeDeath())
 			{
 				player.setFakeDeath(false);
 			}
 			player.sitDown(null);
 			player.resetReuse();
 			player.sendSkillList();
-			if (player.getSummon() != null)
+			if(player.getSummon() != null)
 			{
 				player.getSummon().startAbnormalEffect(AbnormalEffect.ROOT);
 			}
@@ -163,7 +161,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 	{
 		super.startRound();
 		checkFightingPlayers();
-		if (_fightTask != null)
+		if(_fightTask != null)
 		{
 			_fightTask.cancel(false);
 			_fightTask = null;
@@ -175,7 +173,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 	{
 		super.endRound();
 		super.unrootPlayers();
-		if (_fightTask != null)
+		if(_fightTask != null)
 		{
 			_fightTask.cancel(false);
 			_fightTask = null;
@@ -184,27 +182,25 @@ public class KoreanStyleEvent extends AbstractFightClub
 
 	private void checkFightingPlayers()
 	{
-		if ((getState() == EventState.OVER) || (getState() == EventState.NOT_ACTIVE))
-		{
-			return;
-		}
+		if((getState() == EventState.OVER) || (getState() == EventState.NOT_ACTIVE))
+		{ return; }
 		boolean changed = false;
-		for (int i = 0; i < _fightingPlayers.length; i++)
+		for(int i = 0; i < _fightingPlayers.length; i++)
 		{
 			final FightClubPlayer oldPlayer = _fightingPlayers[i];
-			if ((oldPlayer == null) || (!isPlayerActive(oldPlayer.getPlayer())) || (getFightClubPlayer(oldPlayer.getPlayer()) == null))
+			if((oldPlayer == null) || (!isPlayerActive(oldPlayer.getPlayer())) || (getFightClubPlayer(oldPlayer.getPlayer()) == null))
 			{
-				if ((oldPlayer != null) && (!oldPlayer.getPlayer().isDead()))
+				if((oldPlayer != null) && (!oldPlayer.getPlayer().isDead()))
 				{
 					oldPlayer.getPlayer().doDie(null);
 					return;
 				}
 				FightClubPlayer newPlayer = chooseNewPlayer(i + 1);
-				if (newPlayer == null)
+				if(newPlayer == null)
 				{
-					for (FightClubTeam team : getTeams())
+					for(FightClubTeam team : getTeams())
 					{
-						if (team.getIndex() != i + 1)
+						if(team.getIndex() != i + 1)
 						{
 							team.incScore(1);
 						}
@@ -218,12 +214,12 @@ public class KoreanStyleEvent extends AbstractFightClub
 			}
 		}
 
-		if (changed)
+		if(changed)
 		{
 			StringBuilder msg = new StringBuilder();
-			for (int i = 0; i < _fightingPlayers.length; i++)
+			for(int i = 0; i < _fightingPlayers.length; i++)
 			{
-				if (i > 0)
+				if(i > 0)
 				{
 					msg.append(" VS ");
 				}
@@ -237,37 +233,33 @@ public class KoreanStyleEvent extends AbstractFightClub
 	private FightClubPlayer chooseNewPlayer(int teamIndex)
 	{
 		final List<FightClubPlayer> alivePlayersFromTeam = new java.util.ArrayList<FightClubPlayer>();
-		for (final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer fPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
-			if ((fPlayer.getPlayer().isSitting()) && (fPlayer.getTeam().getIndex() == teamIndex))
+			if((fPlayer.getPlayer().isSitting()) && (fPlayer.getTeam().getIndex() == teamIndex))
 			{
 				alivePlayersFromTeam.add(fPlayer);
 			}
 		}
 
-		if (alivePlayersFromTeam.isEmpty())
-		{
-			return null;
-		}
-		if (alivePlayersFromTeam.size() == 1)
-		{
-			return alivePlayersFromTeam.get(0);
-		}
+		if(alivePlayersFromTeam.isEmpty())
+		{ return null; }
+		if(alivePlayersFromTeam.size() == 1)
+		{ return alivePlayersFromTeam.get(0); }
 		return Rnd.get(alivePlayersFromTeam);
 	}
 
 	private void preparePlayers()
 	{
-		for (int i = 0; i < _fightingPlayers.length; i++)
+		for(int i = 0; i < _fightingPlayers.length; i++)
 		{
 			final FightClubPlayer fPlayer = _fightingPlayers[i];
 			final Player player = fPlayer.getPlayer();
 
-			if (player.isBlocked())
+			if(player.isBlocked())
 			{
 				player.unblock();
 			}
-			if (player.isImmobilized())
+			if(player.isImmobilized())
 			{
 				player.stopRooted();
 			}
@@ -277,7 +269,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 			player.resetReuse();
 			player.sendPacket(new SkillCoolTimePacket(player));
 			healFull(player);
-			if ((player.getAnyServitor() != null) && (!player.getAnyServitor().isDead()))
+			if((player.getAnyServitor() != null) && (!player.getAnyServitor().isDead()))
 			{
 				healFull(player.getAnyServitor());
 			}
@@ -288,14 +280,14 @@ public class KoreanStyleEvent extends AbstractFightClub
 
 	private static void healFull(Playable playable)
 	{
-		if (!playable.isDead())
+		if(!playable.isDead())
 		{
 			cleanse(playable);
 			playable.setCurrentHp(playable.getMaxHp(), false);
 			playable.setCurrentMp(playable.getMaxMp());
 			playable.setCurrentCp(playable.getMaxCp());
 		}
-		else if (playable.isPlayer())
+		else if(playable.isPlayer())
 		{
 			ressurectPlayer(playable.getPlayer());
 		}
@@ -306,44 +298,43 @@ public class KoreanStyleEvent extends AbstractFightClub
 		try
 		{
 			List<Abnormal> buffList = new ArrayList<>();
-			for (Abnormal value : playable.getAbnormalList().values())
+			for(Abnormal value : playable.getAbnormalList().values())
 			{
-				if (value.isOffensive() && (value.isCancelable()))
+				if(value.isOffensive() && (value.isCancelable()))
 				{
 					buffList.add(value);
 				}
 			}
-			for (Abnormal effects : buffList)
+			for(Abnormal effects : buffList)
 			{
 				effects.exit();
 			}
 		}
-		catch (IllegalStateException illegalStateException)
-		{
-		}
+		catch(IllegalStateException illegalStateException)
+		{}
 	}
 
 	public boolean canAttack(Creature target, Creature attacker, Skill skill, boolean force)
 	{
-		if (_preparing)
+		if(_preparing)
 		{
 			attacker.setTarget(attacker);
 			return false;
 		}
-		if (getState() != EventState.STARTED)
+		if(getState() != EventState.STARTED)
 			return false;
-		if ((target == null) || (!target.isPlayable()) || (attacker == null) || (!attacker.isPlayable()))
+		if((target == null) || (!target.isPlayable()) || (attacker == null) || (!attacker.isPlayable()))
 			return false;
-		if ((isFighting(target)) && (isFighting(attacker)))
+		if((isFighting(target)) && (isFighting(attacker)))
 			return true;
 		return false;
 	}
 
 	private boolean isFighting(Creature actor)
 	{
-		for (FightClubPlayer fPlayer : _fightingPlayers)
+		for(FightClubPlayer fPlayer : _fightingPlayers)
 		{
-			if ((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(actor.getPlayer())))
+			if((fPlayer != null) && (fPlayer.getPlayer() != null) && (fPlayer.getPlayer().equals(actor.getPlayer())))
 				return true;
 		}
 		return false;
@@ -360,29 +351,27 @@ public class KoreanStyleEvent extends AbstractFightClub
 
 		public void run()
 		{
-			if (_fightClub.getState() != EventState.STARTED)
-			{
-				return;
-			}
-			if (_fightClub._lastKill + MAX_FIGHT_TIME < System.currentTimeMillis())
+			if(_fightClub.getState() != EventState.STARTED)
+			{ return; }
+			if(_fightClub._lastKill + MAX_FIGHT_TIME < System.currentTimeMillis())
 			{
 				double playerToKillHp = Double.MAX_VALUE;
 				Player playerToKill = null;
-				for (FightClubPlayer fPlayer : _fightClub._fightingPlayers)
+				for(FightClubPlayer fPlayer : _fightClub._fightingPlayers)
 				{
-					if ((fPlayer != null) && (fPlayer.getPlayer() != null))
+					if((fPlayer != null) && (fPlayer.getPlayer() != null))
 					{
-						if (!fPlayer.getPlayer().getNetConnection().isConnected())
+						if(!fPlayer.getPlayer().getNetConnection().isConnected())
 						{
 							playerToKill = fPlayer.getPlayer();
 							playerToKillHp = -100.0D;
 						}
-						else if (System.currentTimeMillis() - fPlayer.getPlayer().getLastNotAfkTime() > 8000L)
+						else if(System.currentTimeMillis() - fPlayer.getPlayer().getLastNotAfkTime() > 8000L)
 						{
 							playerToKill = fPlayer.getPlayer();
 							playerToKillHp = -1.0D;
 						}
-						else if (fPlayer.getPlayer().getCurrentHpPercents() < playerToKillHp)
+						else if(fPlayer.getPlayer().getCurrentHpPercents() < playerToKillHp)
 						{
 							playerToKill = fPlayer.getPlayer();
 							playerToKillHp = fPlayer.getPlayer().getCurrentHpPercents();
@@ -390,7 +379,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 					}
 				}
 
-				if (playerToKill != null)
+				if(playerToKill != null)
 				{
 					playerToKill.doDie(null);
 				}
@@ -405,7 +394,7 @@ public class KoreanStyleEvent extends AbstractFightClub
 		int ordinalTeamIndex = fPlayer.getTeam().getIndex() - 1;
 		int lastSpawnIndex = _lastTeamChosenSpawn[ordinalTeamIndex];
 		lastSpawnIndex++;
-		if (lastSpawnIndex >= spawnLocations.length)
+		if(lastSpawnIndex >= spawnLocations.length)
 			lastSpawnIndex = 0;
 		_lastTeamChosenSpawn[ordinalTeamIndex] = lastSpawnIndex;
 		return spawnLocations[lastSpawnIndex];
@@ -417,12 +406,10 @@ public class KoreanStyleEvent extends AbstractFightClub
 	}
 
 	protected void handleAfk(FightClubPlayer fPlayer, boolean setAsAfk)
-	{
-	}
+	{}
 
 	protected void unrootPlayers()
-	{
-	}
+	{}
 
 	protected boolean inScreenShowBeScoreNotKills()
 	{
@@ -441,9 +428,9 @@ public class KoreanStyleEvent extends AbstractFightClub
 
 	public boolean canStandUp(Player player)
 	{
-		for (FightClubPlayer fPlayer : _fightingPlayers)
+		for(FightClubPlayer fPlayer : _fightingPlayers)
 		{
-			if ((fPlayer != null) && (fPlayer.getPlayer().equals(player)))
+			if((fPlayer != null) && (fPlayer.getPlayer().equals(player)))
 				return true;
 		}
 		return false;

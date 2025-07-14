@@ -51,7 +51,7 @@ public class Fishing
 		{
 			_inProcess = false;
 
-			if (_fish.getId() == -1)
+			if(_fish.getId() == -1)
 			{
 				_owner.sendPacket(SystemMsg.THE_BAIT_HAS_BEEN_LOST_BECAUSE_THE_FISH_GOT_AWAY);
 				_owner.broadcastPacket(new ExUserInfoFishing(_owner));
@@ -61,13 +61,13 @@ public class Fishing
 			else
 			{
 				FishRewardsTemplate rewards = FishDataHolder.getInstance().getRewards(_fish.getRewardType());
-				if (rewards != null)
+				if(rewards != null)
 				{
 					long exp = 0L;
 					long sp = 0L;
-					for (FishRewardTemplate reward : rewards.getRewards())
+					for(FishRewardTemplate reward : rewards.getRewards())
 					{
-						if (_owner.getLevel() >= reward.getMinLevel() && _owner.getLevel() <= reward.getMaxLevel())
+						if(_owner.getLevel() >= reward.getMinLevel() && _owner.getLevel() <= reward.getMaxLevel())
 						{
 							exp += reward.getExp();
 							sp += reward.getSp();
@@ -75,8 +75,16 @@ public class Fishing
 					}
 
 					// TODO: Проверить, влияет ли виталити и прочие бонусы на оффе.
-					exp = (long) (exp * _rod.getRewardModifier() * Config.RATE_XP_BY_LVL[_owner.getLevel()] * _owner.getPremiumAccount().getFishingExpRate() * _owner.getVIP().getTemplate().getFishingExpRate());
-					sp = (long) (sp * _rod.getRewardModifier() * Config.RATE_SP_BY_LVL[_owner.getLevel()] * _owner.getPremiumAccount().getFishingSpRate() * _owner.getVIP().getTemplate().getFishingSpRate());
+					exp = (long) (exp
+							* _rod.getRewardModifier()
+							* Config.RATE_XP_BY_LVL[_owner.getLevel()]
+							* _owner.getPremiumAccount().getFishingExpRate()
+							* _owner.getVIP().getTemplate().getFishingExpRate());
+					sp = (long) (sp
+							* _rod.getRewardModifier()
+							* Config.RATE_SP_BY_LVL[_owner.getLevel()]
+							* _owner.getPremiumAccount().getFishingSpRate()
+							* _owner.getVIP().getTemplate().getFishingSpRate());
 
 					_owner.addExpAndSp(exp, sp, 0, 0, false, false, false, false, true);
 				}
@@ -96,7 +104,7 @@ public class Fishing
 		@Override
 		public void run()
 		{
-			if (!throwHook(false, null))
+			if(!throwHook(false, null))
 				stop();
 		}
 	}
@@ -165,30 +173,30 @@ public class Fishing
 	private boolean throwHook(boolean start, Location hookLoc)
 	{
 		WeaponTemplate weaponItem = _owner.getActiveWeaponTemplate();
-		if (weaponItem == null || weaponItem.getItemType() != WeaponType.ROD)
+		if(weaponItem == null || weaponItem.getItemType() != WeaponType.ROD)
 			return false;
 
-		if (_rod.getId() != weaponItem.getItemId())
+		if(_rod.getId() != weaponItem.getItemId())
 			return false;
 
 		ItemInstance lureItem = _owner.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-		if (lureItem == null || lureItem.getCount() < _rod.getShotConsumeCount())
+		if(lureItem == null || lureItem.getCount() < _rod.getShotConsumeCount())
 		{
 			_owner.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_BAIT);
 			return false;
 		}
 
-		if (_lure.getId() != lureItem.getItemId())
+		if(_lure.getId() != lureItem.getItemId())
 		{
 			_owner.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_BAIT);
 			return false;
 		}
 
 		List<FishTemplate> fishes = _lure.getFishes();
-		if (fishes.isEmpty())
+		if(fishes.isEmpty())
 			return false;
 
-		if (!ItemFunctions.deleteItem(_owner, lureItem, _rod.getShotConsumeCount(), false))
+		if(!ItemFunctions.deleteItem(_owner, lureItem, _rod.getShotConsumeCount(), false))
 		{
 			_owner.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_BAIT);
 			return false;
@@ -197,34 +205,34 @@ public class Fishing
 		double shotPower = 1 + (_owner.getChargedFishshotPower() / 100.);
 
 		double chancesAmount = 0;
-		for (FishTemplate fish : fishes)
+		for(FishTemplate fish : fishes)
 			chancesAmount += fish.getChance() / (fish.getId() == -1 ? shotPower : 1);
 
 		double chanceMod = (100. - chancesAmount) / fishes.size();
 		List<FishTemplate> successFishes = new ArrayList<FishTemplate>();
 		int tryCount = 0;
-		while (successFishes.isEmpty())
+		while(successFishes.isEmpty())
 		{
 			tryCount++;
-			for (FishTemplate fish : fishes)
+			for(FishTemplate fish : fishes)
 			{
-				if ((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
+				if((tryCount % 10) == 0) // Немного теряем шанс, но зато зацикливания будут меньше.
 					chanceMod += 1.;
-				if (Rnd.chance((fish.getChance() / (fish.getId() == 0 ? shotPower : 1)) + chanceMod))
+				if(Rnd.chance((fish.getChance() / (fish.getId() == 0 ? shotPower : 1)) + chanceMod))
 					successFishes.add(fish);
 			}
 		}
 
 		FishTemplate fish = Rnd.get(successFishes);
-		if (fish == null) // В принципе не может произойти.
+		if(fish == null) // В принципе не может произойти.
 			return false;
 
 		_hookLoc = hookLoc == null ? findHookLocation() : hookLoc;
 
-		if (_hookLoc == null)
+		if(_hookLoc == null)
 			return false;
 
-		if (!start)
+		if(!start)
 			_owner.unChargeFishShot();
 
 		stopProcessTask();
@@ -239,7 +247,7 @@ public class Fishing
 
 	private void stopProcessTask()
 	{
-		if (_processTask != null)
+		if(_processTask != null)
 		{
 			_processTask.cancel(false);
 			_processTask = null;
@@ -260,39 +268,39 @@ public class Fishing
 
 		Set<Zone> zones = new HashSet<Zone>();
 
-		if (GeoEngine.canSeeCoord(_owner, baitX, baitY, baitZ, true))
+		if(GeoEngine.canSeeCoord(_owner, baitX, baitY, baitZ, true))
 		{
 			World.getZones(zones, baitX, baitY, _owner.getReflection());
-			for (Zone zone : zones)
+			for(Zone zone : zones)
 			{
-				if (zone.getType() == ZoneType.water)
+				if(zone.getType() == ZoneType.water)
 				{
 					// z - уровень воды
 					int waterZ = zone.getTerritory().getZmax();
-					if (!GeoEngine.canSeeCoord(baitX, baitY, baitZ, true, baitX, baitY, waterZ, true, _owner.getGeoIndex(), false))
+					if(!GeoEngine.canSeeCoord(baitX, baitY, baitZ, true, baitX, baitY, waterZ, true, _owner.getGeoIndex(), false))
 						continue;
 					return new Location(baitX, baitY, waterZ);
 				}
 			}
 		}
 
-		for (distance = MAX_BAIT_DISTANCE; distance >= MIN_BAIT_DISTANCE; --distance)
+		for(distance = MAX_BAIT_DISTANCE; distance >= MIN_BAIT_DISTANCE; --distance)
 		{
 			baitX = (int) (_owner.getX() + (cos * distance));
 			baitY = (int) (_owner.getY() + (sin * distance));
 
-			if (GeoEngine.canSeeCoord(_owner, baitX, baitY, baitZ, true))
+			if(GeoEngine.canSeeCoord(_owner, baitX, baitY, baitZ, true))
 			{
 				zones.clear();
 
 				World.getZones(zones, baitX, baitY, _owner.getReflection());
-				for (Zone zone : zones)
+				for(Zone zone : zones)
 				{
-					if (zone.getType() == ZoneType.water)
+					if(zone.getType() == ZoneType.water)
 					{
 						// z - уровень воды
 						int waterZ = zone.getTerritory().getZmax();
-						if (!GeoEngine.canSeeCoord(baitX, baitY, baitZ, true, baitX, baitY, waterZ, true, _owner.getGeoIndex(), false))
+						if(!GeoEngine.canSeeCoord(baitX, baitY, baitZ, true, baitX, baitY, waterZ, true, _owner.getGeoIndex(), false))
 							continue;
 						return new Location(baitX, baitY, waterZ);
 					}

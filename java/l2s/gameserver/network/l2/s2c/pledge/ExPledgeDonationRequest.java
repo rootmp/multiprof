@@ -26,7 +26,7 @@ public class ExPledgeDonationRequest implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_donationType); // donation type
 		packetWriter.writeD(_success ? 1 : 0); // trying donation?
-		
+
 		packetWriter.writeH(0); // bCritical
 		packetWriter.writeD(3); // nPledgeCoin
 		packetWriter.writeD(14); // nPledgeExp

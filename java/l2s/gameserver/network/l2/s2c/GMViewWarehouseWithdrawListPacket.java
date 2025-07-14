@@ -23,17 +23,17 @@ public class GMViewWarehouseWithdrawListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeS(_charName);
 			packetWriter.writeQ(_charAdena);
 			packetWriter.writeD(_items.length);
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeD(_items.length);
 			packetWriter.writeD(_items.length);
-			for (ItemInstance temp : _items)
+			for(ItemInstance temp : _items)
 			{
 				writeItemInfo(packetWriter, temp);
 				packetWriter.writeD(temp.getObjectId());

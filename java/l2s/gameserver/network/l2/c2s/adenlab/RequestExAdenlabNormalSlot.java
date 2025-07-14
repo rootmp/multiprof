@@ -15,7 +15,7 @@ public class RequestExAdenlabNormalSlot implements IClientIncomingPacket
 	{
 		nBossID = packet.readD();
 		nSlotID = packet.readD();
-			
+
 		return true;
 	}
 

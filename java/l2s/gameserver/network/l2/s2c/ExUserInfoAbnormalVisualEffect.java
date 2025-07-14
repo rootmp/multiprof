@@ -28,7 +28,7 @@ public class ExUserInfoAbnormalVisualEffect implements IClientOutgoingPacket
 		packetWriter.writeD(_objectId);
 		packetWriter.writeD(_transformId);
 		packetWriter.writeD(_abnormalEffects.size());
-		for (AbnormalEffect abnormal : _abnormalEffects)
+		for(AbnormalEffect abnormal : _abnormalEffects)
 		{
 			packetWriter.writeH(abnormal.getId());
 		}

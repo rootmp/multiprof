@@ -19,5 +19,4 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 // Target class
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ParseSuper
-{}
+public @interface ParseSuper {}

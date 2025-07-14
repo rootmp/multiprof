@@ -130,17 +130,17 @@ public class SummonInstance extends Servitor
 		public void run()
 		{
 			Player owner = getPlayer();
-			if (owner == null)
+			if(owner == null)
 			{
 				unSummon(false);
 				return;
 			}
 
 			int usedtime = CYCLE; // CYCLE / 4? for what? in god there're no summon life time only for special
-									// traps or npcs no need to compare battle status.
+			// traps or npcs no need to compare battle status.
 			_lifetimeCountdown -= usedtime;
 
-			if (_lifetimeCountdown <= 0)
+			if(_lifetimeCountdown <= 0)
 			{
 				owner.sendPacket(SystemMsg.YOUR_SERVITOR_HAS_VANISHED_YOULL_NEED_TO_SUMMON_A_NEW_ONE);
 				unSummon(false);
@@ -148,9 +148,9 @@ public class SummonInstance extends Servitor
 			}
 
 			_consumeCountdown -= usedtime;
-			if (getItemConsumeIdInTime() > 0 && getItemConsumeCountInTime() > 0 && _consumeCountdown <= 0)
+			if(getItemConsumeIdInTime() > 0 && getItemConsumeCountInTime() > 0 && _consumeCountdown <= 0)
 			{
-				if (owner.getInventory().destroyItemByItemId(getItemConsumeIdInTime(), getItemConsumeCountInTime()))
+				if(owner.getInventory().destroyItemByItemId(getItemConsumeIdInTime(), getItemConsumeCountInTime()))
 				{
 					_consumeCountdown = _itemConsumeDelay;
 					owner.sendPacket(new SystemMessage(SystemMessage.A_SUMMONED_MONSTER_USES_S1).addItemName(getItemConsumeIdInTime()));
@@ -191,7 +191,7 @@ public class SummonInstance extends Servitor
 
 	protected synchronized void stopDisappear()
 	{
-		if (_disappearTask != null)
+		if(_disappearTask != null)
 		{
 			_disappearTask.cancel(false);
 			_disappearTask = null;
@@ -201,11 +201,11 @@ public class SummonInstance extends Servitor
 	@Override
 	public void unSummon(boolean logout)
 	{
-		if (logout)
+		if(logout)
 			SummonsDAO.getInstance().insert(this);
-		else if (isSiegeSummon())
+		else if(isSiegeSummon())
 		{
-			for (SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
+			for(SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
 				siegeEvent.removeSiegeSummon(getPlayer(), this);
 		}
 
@@ -229,9 +229,9 @@ public class SummonInstance extends Servitor
 	public void onAction(Player player, boolean shift)
 	{
 		super.onAction(player, shift);
-		if (shift)
+		if(shift)
 		{
-			if (!player.getPlayerAccess().CanViewChar)
+			if(!player.getPlayerAccess().CanViewChar)
 				return;
 
 			String dialog;
@@ -337,24 +337,24 @@ public class SummonInstance extends Servitor
 	@Override
 	public void onAttacked(Creature attacker)
 	{
-		if (isAttackingNow())
+		if(isAttackingNow())
 			return;
 
-		if (attacker == null || getPlayer() == null)
+		if(attacker == null || getPlayer() == null)
 			return;
 
-		if (getAttackMode() == AttackMode.DEFENCE)
+		if(getAttackMode() == AttackMode.DEFENCE)
 		{
 			setTarget(attacker);
 			getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, attacker);
 		}
 		else
 		{
-			if (getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			if(getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
 				return;
 
 			Player player = getPlayer();
-			if (player == null)
+			if(player == null)
 				return;
 
 			getMovement().moveToLocation(Location.findPointToStay(getPlayer().getLoc(), Config.FOLLOW_RANGE, Config.FOLLOW_RANGE, getGeoIndex()), 0, true);
@@ -364,24 +364,24 @@ public class SummonInstance extends Servitor
 	@Override
 	public void onOwnerOfAttacks(Creature target)
 	{
-		if (isAttackingNow())
+		if(isAttackingNow())
 			return;
 
-		if (target == null)
+		if(target == null)
 			return;
 
-		if (getAttackMode() == AttackMode.DEFENCE)
+		if(getAttackMode() == AttackMode.DEFENCE)
 		{
 			setTarget(target);
 			getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, target);
 		}
 		else
 		{
-			if (getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			if(getMovement().isMoving() || isMovementDisabled() || getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
 				return;
 
 			Player player = getPlayer();
-			if (player == null)
+			if(player == null)
 				return;
 
 			getMovement().moveToLocation(Location.findPointToStay(getPlayer().getLoc(), Config.FOLLOW_RANGE, Config.FOLLOW_RANGE, getGeoIndex()), 0, true);
@@ -402,6 +402,5 @@ public class SummonInstance extends Servitor
 
 	@Override
 	public void setEvolveLevel(EvolveLevel evolveLevel)
-	{
-	}
+	{}
 }

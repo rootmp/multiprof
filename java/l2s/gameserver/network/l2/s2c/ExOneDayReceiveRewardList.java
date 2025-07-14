@@ -37,26 +37,26 @@ public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 		_classId = player.getBaseClassId();
 		_dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
 
-		for (DailyMissionTemplate missionTemplate : player.getDailyMissionList().getAvailableMissions())
+		for(DailyMissionTemplate missionTemplate : player.getDailyMissionList().getAvailableMissions())
 		{
 			DailyMission mission = player.getDailyMissionList().get(missionTemplate);
 
-			if (missionTemplate.getCompletedMission() != 0)
+			if(missionTemplate.getCompletedMission() != 0)
 			{
 				DailyMissionTemplate completedMissionTemplate = DailyMissionsHolder.getInstance().getMission(missionTemplate.getCompletedMission());
-				if (completedMissionTemplate == null)
+				if(completedMissionTemplate == null)
 				{
 					continue;
 				}
 
 				DailyMission completedMission = player.getDailyMissionList().get(completedMissionTemplate);
-				if (completedMission.getStatus() != DailyMissionStatus.COMPLETED)
+				if(completedMission.getStatus() != DailyMissionStatus.COMPLETED)
 				{
 					continue;
 				}
 			}
 
-			if (!mission.isFinallyCompleted())
+			if(!mission.isFinallyCompleted())
 			{
 				_missions.add(mission);
 			}
@@ -84,7 +84,7 @@ public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 		packetWriter.writeD(_classId);
 		packetWriter.writeD(_dayOfWeek);
 		packetWriter.writeD(_missions.size());
-		for (DailyMission mission : _missions)
+		for(DailyMission mission : _missions)
 		{
 			packetWriter.writeH(mission.getId()); // Reward
 			packetWriter.writeC(mission.getStatus().ordinal()); // 1 Available, 2 Not Available, 3 Complete

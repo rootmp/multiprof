@@ -17,20 +17,20 @@ public class ShiftAggression extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (activeChar.getPlayer() == null)
+		if(activeChar.getPlayer() == null)
 			return;
 
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 			return;
 
-		for (NpcInstance npc : World.getAroundNpc(activeChar, getAffectRange(), getAffectRange()))
+		for(NpcInstance npc : World.getAroundNpc(activeChar, getAffectRange(), getAffectRange()))
 		{
 			int fanAffectRange = getFanRange()[2];
-			if (fanAffectRange > 0 && npc.isInRange(activeChar, fanAffectRange))
+			if(fanAffectRange > 0 && npc.isInRange(activeChar, fanAffectRange))
 				continue;
 
 			AggroInfo ai = npc.getAggroList().get(activeChar);
-			if (ai == null)
+			if(ai == null)
 				continue;
 
 			npc.getAggroList().addDamageHate(target.getPlayer(), 0, ai.hate);

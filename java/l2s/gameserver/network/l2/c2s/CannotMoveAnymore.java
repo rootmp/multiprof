@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.ai.CtrlEvent;
 import l2s.gameserver.geometry.Location;
@@ -27,11 +28,11 @@ public class CannotMoveAnymore implements IClientIncomingPacket
 		public void run(GameClient client)
 		{
 			Player activeChar = client.getActiveChar();
-			if (activeChar == null)
+			if(activeChar == null)
 				return;
 
 			l2s.gameserver.model.entity.boat.Boat boat = activeChar.getBoat();
-			if (boat != null && boat.getBoatId() == _boatId)
+			if(boat != null && boat.getBoatId() == _boatId)
 			{
 				activeChar.setInBoatPosition(_loc);
 				activeChar.setHeading(_loc.h);
@@ -71,13 +72,13 @@ public class CannotMoveAnymore implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isInObserverMode())
+		if(activeChar.isInObserverMode())
 		{
 			ObservePoint observer = activeChar.getObservePoint();
-			if (observer != null)
+			if(observer != null)
 				observer.getMovement().stopMove();
 			return;
 		}

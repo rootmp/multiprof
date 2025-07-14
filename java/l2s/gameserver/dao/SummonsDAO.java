@@ -48,7 +48,7 @@ public class SummonsDAO
 			statement = con.prepareStatement("SELECT `skill_id`,`skill_level`,`curHp`,`curMp`,`time` FROM `character_summons_save` WHERE `owner_obj_id`=?");
 			statement.setInt(1, objectId);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				int skillId = rset.getInt("skill_id");
 				int skillLvl = rset.getInt("skill_level");
@@ -66,7 +66,7 @@ public class SummonsDAO
 			statement.execute();
 			DbUtils.close(statement);
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not restore active summon data!", e);
 		}
@@ -79,11 +79,11 @@ public class SummonsDAO
 
 	public void insert(SummonInstance summon)
 	{
-		if (!summon.isSaveable())
+		if(!summon.isSaveable())
 			return;
 
 		Player owner = summon.getPlayer();
-		if (owner == null)
+		if(owner == null)
 			return;
 
 		Connection con = null;
@@ -104,10 +104,10 @@ public class SummonsDAO
 			sb.append(summon.getConsumeCountdown()).append(")");
 			b.write(sb.toString());
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not store active summon data!", e);
 		}

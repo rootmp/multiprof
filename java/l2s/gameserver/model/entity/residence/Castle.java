@@ -43,11 +43,11 @@ public class Castle extends Residence
 	private ResidenceSide _residenceSide = ResidenceSide.NEUTRAL;
 
 	private static final SkillEntry GIRAN_CASTLE_OWNER = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 52023, 1); // Giran
-																													// Castle
-																													// Owner
+	// Castle
+	// Owner
 	private static final SkillEntry GODDARD_CASTLE_OWNER = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 52024, 1); // Goddard
-																														// Castle
-																														// Owner
+	// Castle
+	// Owner
 
 	private Set<ItemInstance> _spawnMerchantTickets = new CopyOnWriteArraySet<ItemInstance>();
 
@@ -68,19 +68,19 @@ public class Castle extends Residence
 	public void changeOwner(Clan newOwner)
 	{
 		// Если клан уже владел каким-либо замком/крепостью, отбираем его.
-		if (newOwner != null)
+		if(newOwner != null)
 		{
-			if (newOwner.getCastle() != 0)
+			if(newOwner.getCastle() != 0)
 			{
 				Castle oldCastle = ResidenceHolder.getInstance().getResidence(Castle.class, newOwner.getCastle());
-				if (oldCastle != null)
+				if(oldCastle != null)
 					oldCastle.changeOwner(null);
 			}
 		}
 
 		Clan oldOwner = null;
 		// Если этим замком уже кто-то владел, отбираем у него замок
-		if (getOwnerId() > 0 && (newOwner == null || newOwner.getClanId() != getOwnerId()))
+		if(getOwnerId() > 0 && (newOwner == null || newOwner.getClanId() != getOwnerId()))
 		{
 			// Удаляем замковые скилы у старого владельца
 			removeSkills();
@@ -88,14 +88,14 @@ public class Castle extends Residence
 			cancelCycleTask();
 
 			oldOwner = getOwner();
-			if (oldOwner != null)
+			if(oldOwner != null)
 			{
 				// Переносим сокровищницу в вархауз старого владельца
 				long amount = getTreasury();
-				if (amount > 0)
+				if(amount > 0)
 				{
 					Warehouse warehouse = oldOwner.getWarehouse();
-					if (warehouse != null)
+					if(warehouse != null)
 					{
 						warehouse.addItem(ItemTemplate.ITEM_ID_ADENA, amount);
 						addToTreasuryNoTax(-amount, false);
@@ -105,8 +105,8 @@ public class Castle extends Residence
 
 				// Проверяем членов старого клана владельца, снимаем короны замков и корону
 				// лорда с лидера
-				for (Player clanMember : oldOwner.getOnlineMembers())
-					if (clanMember != null && clanMember.getInventory() != null)
+				for(Player clanMember : oldOwner.getOnlineMembers())
+					if(clanMember != null && clanMember.getInventory() != null)
 						clanMember.getInventory().validateItems();
 
 				// Отнимаем замок у старого владельца
@@ -119,7 +119,7 @@ public class Castle extends Residence
 		removeFunctions();
 
 		// Выдаем замок новому владельцу
-		if (newOwner != null)
+		if(newOwner != null)
 		{
 			newOwner.setHasCastle(getId());
 			newOwner.broadcastClanStatus(true, false, false);
@@ -169,40 +169,40 @@ public class Castle extends Residence
 	/** Add amount to castle instance's treasury (warehouse). */
 	public void addToTreasury(long amount, boolean shop)
 	{
-		if (getOwnerId() <= 0)
+		if(getOwnerId() <= 0)
 			return;
 
-		if (amount == 0)
+		if(amount == 0)
 			return;
 
 		// TODO [Bonux]: Вынести в датапак.
 		double deleteAmount = 0.4;
-		if (getId() == 3) // Giran
+		if(getId() == 3) // Giran
 			deleteAmount = 0.75;
-		else if (getId() == 6) // Innadril
+		else if(getId() == 6) // Innadril
 			deleteAmount = 0.;
 
 		amount = (long) Math.max(0, amount - (amount * deleteAmount));
 
-		if (amount > 1 && getId() != 5 && getId() != 8) // If current castle instance is not Aden or Rune
+		if(amount > 1 && getId() != 5 && getId() != 8) // If current castle instance is not Aden or Rune
 		{
 			Castle royal = ResidenceHolder.getInstance().getResidence(Castle.class, getId() >= 7 ? 8 : 5);
-			if (royal != null)
+			if(royal != null)
 			{
 				// TODO [Bonux]: Вынести в датапак.
 				double royalTaxRate = 0.25;
-				if (getId() == 3) // Giran
+				if(getId() == 3) // Giran
 					royalTaxRate = 0.50;
 
 				long royalTax = (long) (amount * royalTaxRate);
 
-				if (royal.getOwnerId() > 0)
+				if(royal.getOwnerId() > 0)
 				{
 					royal.addToTreasury(royalTax, shop); // Only bother to really add the tax to the treasury if not npc
-															// owned
-					if (getId() == 5)
+					// owned
+					if(getId() == 5)
 						Log.add("Aden|" + royalTax + "|Castle:adenTax", "treasury");
-					else if (getId() == 8)
+					else if(getId() == 8)
 						Log.add("Rune|" + royalTax + "|Castle:runeTax", "treasury");
 				}
 
@@ -216,16 +216,16 @@ public class Castle extends Residence
 	/** Add amount to castle instance's treasury (warehouse), no tax paying. */
 	public void addToTreasuryNoTax(long amount, boolean shop)
 	{
-		if (getOwnerId() <= 0)
+		if(getOwnerId() <= 0)
 			return;
 
-		if (amount == 0)
+		if(amount == 0)
 			return;
 
 		// Add to the current treasury total. Use "-" to substract from treasury
 		_treasury = SafeMath.addAndLimit(_treasury, amount);
 
-		if (shop)
+		if(shop)
 			_collectedShops += amount;
 
 		setJdbcState(JdbcEntityState.UPDATED);
@@ -280,36 +280,35 @@ public class Castle extends Residence
 
 	@Override
 	public void startCycleTask()
-	{
-	}
+	{}
 
 	@Override
 	public void setResidenceSide(ResidenceSide side, boolean onRestore)
 	{
-		if (!onRestore && _residenceSide == side)
+		if(!onRestore && _residenceSide == side)
 			return;
 
 		_residenceSide = side;
 
 		removeSkills();
 
-		if (getId() == 3)
+		if(getId() == 3)
 		{
 			addSkill(GIRAN_CASTLE_OWNER);
 		}
-		else if (getId() == 7)
+		else if(getId() == 7)
 		{
 			addSkill(GODDARD_CASTLE_OWNER);
 		}
 		rewardSkills();
 
-		if (!onRestore)
+		if(!onRestore)
 		{
 			setJdbcState(JdbcEntityState.UPDATED);
 			update();
 
 			CastleSiegeEvent siege = getSiegeEvent();
-			if (siege != null)
+			if(siege != null)
 				siege.actActions("change_castle_side");
 		}
 	}
@@ -329,6 +328,6 @@ public class Castle extends Residence
 	public int getSellTaxPercent()
 	{
 		return 0;
-		    
+
 	}
 }

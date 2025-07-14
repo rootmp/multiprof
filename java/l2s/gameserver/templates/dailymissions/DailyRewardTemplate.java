@@ -3,9 +3,8 @@ package l2s.gameserver.templates.dailymissions;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2s.gameserver.templates.item.data.ItemData;
-
 import gnu.trove.set.TIntSet;
+import l2s.gameserver.templates.item.data.ItemData;
 
 /**
  * @author Bonux
@@ -22,7 +21,7 @@ public class DailyRewardTemplate
 
 	public boolean containsClassId(int classId)
 	{
-		if (_classIds == null)
+		if(_classIds == null)
 			return true;
 		return _classIds.contains(classId);
 	}

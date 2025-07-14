@@ -6,24 +6,23 @@ import l2s.commons.util.Rnd;
 
 public class LoginCrypt
 {
-	private static final byte[] STATIC_BLOWFISH_KEY =
-	{
-		(byte) 0x6b,
-		(byte) 0x60,
-		(byte) 0xcb,
-		(byte) 0x5b,
-		(byte) 0x82,
-		(byte) 0xce,
-		(byte) 0x90,
-		(byte) 0xb1,
-		(byte) 0xcc,
-		(byte) 0x2b,
-		(byte) 0x6c,
-		(byte) 0x55,
-		(byte) 0x6c,
-		(byte) 0x6c,
-		(byte) 0x6c,
-		(byte) 0x6c
+	private static final byte[] STATIC_BLOWFISH_KEY = {
+			(byte) 0x6b,
+			(byte) 0x60,
+			(byte) 0xcb,
+			(byte) 0x5b,
+			(byte) 0x82,
+			(byte) 0xce,
+			(byte) 0x90,
+			(byte) 0xb1,
+			(byte) 0xcc,
+			(byte) 0x2b,
+			(byte) 0x6c,
+			(byte) 0x55,
+			(byte) 0x6c,
+			(byte) 0x6c,
+			(byte) 0x6c,
+			(byte) 0x6c
 	};
 
 	private NewCrypt _staticCrypt;
@@ -47,7 +46,7 @@ public class LoginCrypt
 		// reserve checksum
 		size += 4;
 
-		if (_static)
+		if(_static)
 		{
 			// reserve for XOR "key"
 			size += 4;
@@ -67,7 +66,7 @@ public class LoginCrypt
 			size += 8 - padding;
 			size += 8;
 
-			if (padding == 2)
+			if(padding == 2)
 				// size -= 8;
 
 				NewCrypt.appendChecksum(raw, offset, size);

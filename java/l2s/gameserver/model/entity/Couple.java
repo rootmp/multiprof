@@ -72,7 +72,7 @@ public class Couple
 			statement.setLong(6, _weddingDate);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

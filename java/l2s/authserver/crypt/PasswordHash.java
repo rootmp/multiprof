@@ -23,7 +23,7 @@ public class PasswordHash
 		{
 			return encrypt(password).equals(expected);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error(_name + ": encryption error!", e);
 			return false;

@@ -61,15 +61,15 @@ public class CharSelectInfoPackage
 		_name = name;
 		Collection<ItemInstance> items = ItemsDAO.getInstance().getItemsByOwnerIdAndLoc(objectId, ItemLocation.PAPERDOLL);
 		_paperdoll = new ItemInstance[Inventory.PAPERDOLL_MAX];
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
-			if (item.getEquipSlot() < Inventory.PAPERDOLL_MAX)
+			if(item.getEquipSlot() < Inventory.PAPERDOLL_MAX)
 			{
 				_paperdoll[item.getEquipSlot()] = item;
 			}
 		}
 		List<CharacterVariable> variables = CharacterVariablesDAO.getInstance().restore(getObjectId());
-		for (CharacterVariable var : variables)
+		for(CharacterVariable var : variables)
 		{
 			_variables.put(var.getName(), var);
 		}
@@ -208,60 +208,48 @@ public class CharSelectInfoPackage
 	public int getPaperdollObjectId(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if (item != null)
-		{
-			return item.getObjectId();
-		}
+		if(item != null)
+		{ return item.getObjectId(); }
 		return 0;
 	}
 
 	public int getPaperdollVariation1Id(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if ((item != null) && item.isAugmented())
-		{
-			return item.getVariation1Id();
-		}
+		if((item != null) && item.isAugmented())
+		{ return item.getVariation1Id(); }
 		return 0;
 	}
 
 	public int getPaperdollVariation2Id(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if ((item != null) && item.isAugmented())
-		{
-			return item.getVariation2Id();
-		}
+		if((item != null) && item.isAugmented())
+		{ return item.getVariation2Id(); }
 		return 0;
 	}
 
 	public int getPaperdollItemId(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if (item != null)
-		{
-			return item.getItemId();
-		}
+		if(item != null)
+		{ return item.getItemId(); }
 		return 0;
 	}
 
 	public int getPaperdollVisualId(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if (item != null)
-		{
-			return item.getVisualId();
-		}
+		if(item != null)
+		{ return item.getVisualId(); }
 		return 0;
 	}
 
 	public int getPaperdollEnchantEffect(int slot)
 	{
 		ItemInstance item = _paperdoll[slot];
-		if (item != null)
-		{
-			return item.getEnchantLevel();
-		}
+		if(item != null)
+		{ return item.getEnchantLevel(); }
 		return 0;
 	}
 
@@ -287,12 +275,10 @@ public class CharSelectInfoPackage
 
 	public String getName(boolean oldIfExists)
 	{
-		if (oldIfExists)
+		if(oldIfExists)
 		{
-			if (_changedOldName != null)
-			{
-				return _changedOldName;
-			}
+			if(_changedOldName != null)
+			{ return _changedOldName; }
 		}
 		return _name;
 	}
@@ -419,10 +405,8 @@ public class CharSelectInfoPackage
 
 	public boolean isHero()
 	{
-		if (Config.ENABLE_OLYMPIAD && Hero.getInstance().isHero(getObjectId()))
-		{
-			return true;
-		}
+		if(Config.ENABLE_OLYMPIAD && Hero.getInstance().isHero(getObjectId()))
+		{ return true; }
 
 		return CustomHeroDAO.getInstance().isCustomHero(getObjectId());
 	}
@@ -455,10 +439,8 @@ public class CharSelectInfoPackage
 	public int getVarInt(String name, int defaultValue)
 	{
 		String var = getVar(name);
-		if (var != null)
-		{
-			return Integer.parseInt(var);
-		}
+		if(var != null)
+		{ return Integer.parseInt(var); }
 		return defaultValue;
 	}
 
@@ -470,10 +452,8 @@ public class CharSelectInfoPackage
 	public String getVar(String name, String defaultValue)
 	{
 		CharacterVariable var = _variables.get(name);
-		if ((var != null) && !var.isExpired())
-		{
-			return var.getValue();
-		}
+		if((var != null) && !var.isExpired())
+		{ return var.getValue(); }
 		return defaultValue;
 	}
 

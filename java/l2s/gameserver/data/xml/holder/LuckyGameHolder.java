@@ -23,12 +23,12 @@ public final class LuckyGameHolder extends AbstractHolder
 
 	public void addData(LuckyGameData data)
 	{
-		if (_data.containsKey(data.getType()))
+		if(_data.containsKey(data.getType()))
 		{
 			warn("Conflict while parsing lucky game data! Dublicate game data by type: " + data.getType());
 			return;
 		}
-		if (data.getCommonRewards().isEmpty())
+		if(data.getCommonRewards().isEmpty())
 			warn("Lucky game dont have common rewards type: " + data.getType());
 		_data.put(data.getType(), data);
 	}

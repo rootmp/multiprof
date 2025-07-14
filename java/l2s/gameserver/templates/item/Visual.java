@@ -9,7 +9,7 @@ public final class Visual
 	private final int _extract_id;
 	private final Map<Race, Integer> _alternative;
 
-	public Visual(int extract_id,Map<Race, Integer> alternative)
+	public Visual(int extract_id, Map<Race, Integer> alternative)
 	{
 		_extract_id = extract_id;
 		_alternative = alternative;

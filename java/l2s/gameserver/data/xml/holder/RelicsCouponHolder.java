@@ -1,13 +1,13 @@
 package l2s.gameserver.data.xml.holder;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.relics.RelicsCoupon;
-import l2s.gameserver.templates.relics.RelicsProb;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.relics.RelicsCoupon;
+import l2s.gameserver.templates.relics.RelicsProb;
 
 public final class RelicsCouponHolder extends AbstractHolder
 {
@@ -41,7 +41,7 @@ public final class RelicsCouponHolder extends AbstractHolder
 	{
 		coupons.clear();
 	}
-	
+
 	public List<RelicsProb> getCouponProb(int key)
 	{
 		RelicsCoupon coupon = getCoupon(key);

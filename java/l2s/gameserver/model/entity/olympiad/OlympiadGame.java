@@ -104,13 +104,11 @@ public class OlympiadGame extends ObservableArena
 		@Override
 		public Boolean isInvisible(Creature creature, GameObject observer)
 		{
-			if (OlympiadGame.this.getType() == CompType.TEAM)
+			if(OlympiadGame.this.getType() == CompType.TEAM)
 			{
 				Player player = creature.getPlayer();
-				if (player != null)
-				{
-					return isDead(player);
-				}
+				if(player != null)
+				{ return isDead(player); }
 			}
 			return null;
 		}
@@ -118,7 +116,7 @@ public class OlympiadGame extends ObservableArena
 		@Override
 		public SystemMsg checkForAttack(Creature target, Creature attacker, Skill skill, boolean force)
 		{
-			if (!isEnemy(target, attacker))
+			if(!isEnemy(target, attacker))
 				return SystemMsg.INVALID_TARGET;
 			return null;
 		}
@@ -132,10 +130,8 @@ public class OlympiadGame extends ObservableArena
 		@Override
 		public SystemMsg canUseItem(Player player, ItemInstance item)
 		{
-			if (!isRegistered(player) || isDead(player))
-			{
-				return SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS;
-			}
+			if(!isRegistered(player) || isDead(player))
+			{ return SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS; }
 			return super.canUseItem(player, item);
 		}
 
@@ -144,10 +140,10 @@ public class OlympiadGame extends ObservableArena
 		{
 			Player player = caster.getPlayer();
 			player.sendMessage("canUseSkill #1");
-			if (!isRegistered(player) || isDead(player))
+			if(!isRegistered(player) || isDead(player))
 			{
 				player.sendMessage("canUseSkill #2");
-				if (sendMsg)
+				if(sendMsg)
 					caster.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(skill));
 				return false;
 			}
@@ -175,20 +171,20 @@ public class OlympiadGame extends ObservableArena
 
 		private boolean isEnemy(Creature target, Creature attacker)
 		{
-			if (getState() != BATTLE_STATE)
+			if(getState() != BATTLE_STATE)
 				return false;
-			if (OlympiadGame.this.getType() == CompType.TEAM)
+			if(OlympiadGame.this.getType() == CompType.TEAM)
 			{
-				if (target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
+				if(target.getTeam() == TeamType.NONE || attacker.getTeam() == TeamType.NONE || target.getTeam() == attacker.getTeam())
 					return false;
 			}
 			Player attackerPlayer = attacker.getPlayer();
-			if (attackerPlayer == null)
+			if(attackerPlayer == null)
 				return false;
 			Player targetPlayer = target.getPlayer();
-			if (targetPlayer == null)
+			if(targetPlayer == null)
 				return false;
-			if (attackerPlayer.getOlympiadSide() == targetPlayer.getOlympiadSide())
+			if(attackerPlayer.getOlympiadSide() == targetPlayer.getOlympiadSide())
 				return false;
 			return !isDead(attacker.getPlayer()) && !isDead(target.getPlayer());
 		}
@@ -196,16 +192,16 @@ public class OlympiadGame extends ObservableArena
 		@Override
 		public void onEffectIconsUpdate(Player player, Abnormal[] effects)
 		{
-			if (getState() != BATTLE_STATE)
+			if(getState() != BATTLE_STATE)
 				return;
 			ExOlympiadSpelledInfoPacket olympiadSpelledInfo = new ExOlympiadSpelledInfoPacket();
-			for (Abnormal effect : effects)
+			for(Abnormal effect : effects)
 			{
-				if (effect != null)
+				if(effect != null)
 					effect.addOlympiadSpelledIcon(player, olympiadSpelledInfo);
 			}
 			SkillEntry passiveSkillEntry = player.getKnownSkill(6040);
-			if (passiveSkillEntry != null)
+			if(passiveSkillEntry != null)
 			{
 				olympiadSpelledInfo.addSpellRecivedPlayer(player);
 				olympiadSpelledInfo.addEffect(passiveSkillEntry.getDisplayId(), passiveSkillEntry.getDisplayLevel(), AbnormalStatusUpdatePacket.INFINITIVE_EFFECT, -1);
@@ -216,7 +212,7 @@ public class OlympiadGame extends ObservableArena
 		@Override
 		public void onStatusUpdate(Player player)
 		{
-			if (getState() != BATTLE_STATE)
+			if(getState() != BATTLE_STATE)
 				return;
 			broadcastInfo(player, null, false);
 		}
@@ -248,18 +244,16 @@ public class OlympiadGame extends ObservableArena
 
 	public static OlympiadGame makeGame(int id, CompType type, OlympiadParticipiantData[] participants1, OlympiadParticipiantData[] participants2)
 	{
-		int instantZoneId = type == CompType.TEAM ? Rnd.get(new int[]
-		{
-			151,
-			152,
-			153
-		}) : Rnd.get(new int[]
-		{
-			147,
-			/* 148, */149
+		int instantZoneId = type == CompType.TEAM ? Rnd.get(new int[] {
+				151,
+				152,
+				153
+		}) : Rnd.get(new int[] {
+				147,
+				/* 148, */149
 				/* , 150 */ });
 		InstantZone instantZone = InstantZoneHolder.getInstance().getInstantZone(instantZoneId);
-		if (instantZone == null)
+		if(instantZone == null)
 		{
 			LOGGER.warn(String.format("Not found instance zone ID[%d] for olympiad game!", instantZoneId));
 			return null;
@@ -297,10 +291,10 @@ public class OlympiadGame extends ObservableArena
 
 	public void managerShout()
 	{
-		for (NpcInstance npc : Olympiad.getNpcs())
+		for(NpcInstance npc : Olympiad.getNpcs())
 		{
 			NpcString npcString;
-			switch (_type)
+			switch(_type)
 			{
 				case CLASSED:
 					npcString = NpcString.OLYMPIAD_CLASS_INDIVIDUAL_MATCH_IS_GOING_TO_BEGIN_IN_ARENA_S1_IN_A_MOMENT;
@@ -341,34 +335,34 @@ public class OlympiadGame extends ObservableArena
 
 	public boolean validatePlayers()
 	{
-		for (OlympiadMember member : team1.getMembers())
+		for(OlympiadMember member : team1.getMembers())
 		{
 			boolean valid = true;
 			Player player = member.getPlayer();
-			for (Player p : getAllPlayers(false))
+			for(Player p : getAllPlayers(false))
 			{
-				if (p != player)
+				if(p != player)
 				{
-					if (!Olympiad.validPlayer(p, player, getType(), true))
+					if(!Olympiad.validPlayer(p, player, getType(), true))
 						valid = false;
 				}
 			}
-			if (!valid)
+			if(!valid)
 				return false;
 		}
-		for (OlympiadMember member : team2.getMembers())
+		for(OlympiadMember member : team2.getMembers())
 		{
 			boolean valid = true;
 			Player player = member.getPlayer();
-			for (Player p : getAllPlayers(false))
+			for(Player p : getAllPlayers(false))
 			{
-				if (p != player)
+				if(p != player)
 				{
-					if (!Olympiad.validPlayer(p, player, getType(), true))
+					if(!Olympiad.validPlayer(p, player, getType(), true))
 						valid = false;
 				}
 			}
-			if (!valid)
+			if(!valid)
 				return false;
 		}
 		return true;
@@ -387,7 +381,7 @@ public class OlympiadGame extends ObservableArena
 
 		state.set(FINISH_STATE);
 
-		if (!validated.compareAndSet(false, true))
+		if(!validated.compareAndSet(false, true))
 		{
 			Log.add("Olympiad Result: (" + team1.getName() + ") vs (" + team2.getName() + ") ... double validate check!!!", "olympiad");
 			return;
@@ -395,7 +389,7 @@ public class OlympiadGame extends ObservableArena
 
 		// Если игра закончилась до телепортации на стадион, то забираем очки у вышедших
 		// из игры, не засчитывая никому победу
-		if (prevState < 1 && aborted)
+		if(prevState < 1 && aborted)
 		{
 			broadcastPacket(SystemMsg.YOUR_OPPONENT_MADE_HASTE_WITH_THEIR_TAIL_BETWEEN_THEIR_LEGS_THE_MATCH_HAS_BEEN_CANCELLED, true, false);
 			return;
@@ -404,17 +398,17 @@ public class OlympiadGame extends ObservableArena
 		boolean member1Check = team1.checkPlayers();
 		boolean member2Check = team2.checkPlayers();
 
-		if (winner == TeamType.NONE)
+		if(winner == TeamType.NONE)
 		{
-			if (!member1Check && !member2Check)
+			if(!member1Check && !member2Check)
 				winner = TeamType.NONE;
-			else if (!member2Check)
+			else if(!member2Check)
 				winner = TeamType.BLUE; // Выиграла первая команда
-			else if (!member1Check)
+			else if(!member1Check)
 				winner = TeamType.RED; // Выиграла вторая команда
-			else if (team1.getDamage() < team2.getDamage()) // Вторая команда нанесла вреда меньше, чем первая
+			else if(team1.getDamage() < team2.getDamage()) // Вторая команда нанесла вреда меньше, чем первая
 				winner = TeamType.BLUE; // Выиграла первая команда
-			else if (team1.getDamage() > team2.getDamage()) // Вторая команда нанесла вреда больше, чем первая
+			else if(team1.getDamage() > team2.getDamage()) // Вторая команда нанесла вреда больше, чем первая
 				winner = TeamType.RED; // Выиграла вторая команда
 		}
 
@@ -430,12 +424,12 @@ public class OlympiadGame extends ObservableArena
 	{
 		OlympiadTeam winnerTeam;
 		OlympiadTeam looseTeam;
-		if (winner == TeamType.BLUE)
+		if(winner == TeamType.BLUE)
 		{
 			winnerTeam = team1;
 			looseTeam = team2;
 		}
-		else if (winner == TeamType.RED)
+		else if(winner == TeamType.RED)
 		{
 			winnerTeam = team2;
 			looseTeam = team1;
@@ -453,16 +447,14 @@ public class OlympiadGame extends ObservableArena
 		looseTeam.getMembers().forEach(OlympiadMember::incGameCount);
 
 		int winnerPoints = getType().getWinnerPoints();
-		winnerTeam.getMembers().forEach(m ->
-		{
+		winnerTeam.getMembers().forEach(m -> {
 			OlympiadParticipiantData data = m.getStat();
 			data.setPoints(data.getPoints() + winnerPoints);
 			packet.addPlayer(m, winnerPoints, getId());
 		});
 
 		int loosePoints = getType().getLoosePoints();
-		looseTeam.getMembers().forEach(m ->
-		{
+		looseTeam.getMembers().forEach(m -> {
 			OlympiadParticipiantData data = m.getStat();
 			data.setPoints(data.getPoints() + loosePoints);
 			packet.addPlayer(m, loosePoints, getId());
@@ -470,28 +462,26 @@ public class OlympiadGame extends ObservableArena
 
 		int diff = (int) ((System.currentTimeMillis() - startTime) / 1000L);
 
-		team1.getMembers().forEach(m ->
-		{
+		team1.getMembers().forEach(m -> {
 			OlympiadMember topEnemy = team2.getTopDamager();
 			OlympiadHistory h = new OlympiadHistory(m.getObjectId(), topEnemy.getObjectId(), m.getClassId(), topEnemy.getClassId(), m.getName(), topEnemy.getName(), startTime, diff, winner.ordinal(), getType().ordinal());
 			OlympiadHistoryManager.getInstance().saveHistory(h);
 		});
 
-		team2.getMembers().forEach(m ->
-		{
+		team2.getMembers().forEach(m -> {
 			OlympiadMember topEnemy = team1.getTopDamager();
 			OlympiadHistory h = new OlympiadHistory(m.getObjectId(), topEnemy.getObjectId(), m.getClassId(), topEnemy.getClassId(), m.getName(), topEnemy.getName(), startTime, diff, winner.ordinal(), getType().ordinal());
 			OlympiadHistoryManager.getInstance().saveHistory(h);
 		});
 
-		for (OlympiadMember member : winnerTeam.getMembers())
+		for(OlympiadMember member : winnerTeam.getMembers())
 		{
 			Player player = member.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
-				if (getType().getRewardId() != 0 && getType().getWinnerReward() > 0)
+				if(getType().getRewardId() != 0 && getType().getWinnerReward() > 0)
 				{
-					if (getType() == CompType.TEAM)
+					if(getType() == CompType.TEAM)
 					{
 						player.sendPacket(SystemMsg.YOUVE_RECEIVED_THE_REWARD_FOR_WINNING_A_3_VS_3_OLYMPIAD_MATCH);
 					}
@@ -501,14 +491,14 @@ public class OlympiadGame extends ObservableArena
 			}
 		}
 
-		for (OlympiadMember member : looseTeam.getMembers())
+		for(OlympiadMember member : looseTeam.getMembers())
 		{
 			Player player = member.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
-				if (getType().getRewardId() != 0 && getType().getLooserReward() > 0)
+				if(getType().getRewardId() != 0 && getType().getLooserReward() > 0)
 				{
-					if (getType() == CompType.TEAM)
+					if(getType() == CompType.TEAM)
 					{
 						player.sendPacket(SystemMsg.YOUVE_RECEIVED_THE_CONSOLATION_PRIZE_FOR_PARTICIPATING_IN_THE_3_VS_3_OLYMPIAD);
 					}
@@ -518,17 +508,17 @@ public class OlympiadGame extends ObservableArena
 			}
 		}
 
-		for (OlympiadTeam team : getAllTeams())
+		for(OlympiadTeam team : getAllTeams())
 		{
-			for (OlympiadMember member : team.getMembers())
+			for(OlympiadMember member : team.getMembers())
 			{
 				Player player = member.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
 					player.getListeners().onOlympiadFinishBattle(winnerTeam == team);
-					for (QuestState qs : player.getAllQuestsStates())
+					for(QuestState qs : player.getAllQuestsStates())
 					{
-						if (qs.isStarted())
+						if(qs.isStarted())
 							qs.getQuest().onOlympiadEnd(this, qs);
 					}
 				}
@@ -548,14 +538,15 @@ public class OlympiadGame extends ObservableArena
 		// SystemMessagePacket(SystemMsg.C1_HAS_LOST_S2_POINTS_IN_THE_GRAND_OLYMPIAD_GAMES).addString(looseMember.getName()).addInteger(pointDiff),
 		// true, false);
 
-		Log.add("Olympiad Result: (" + winnerTeam.getName() + ") vs (" + looseTeam.getName() + ") ... (" + (int) winnerTeam.getDamage() + " vs " + (int) looseTeam.getDamage() + ") " + winnerTeam.getName() + " win " + winnerPoints + " points", "olympiad");
+		Log.add("Olympiad Result: (" + winnerTeam.getName() + ") vs (" + looseTeam.getName() + ") ... (" + (int) winnerTeam.getDamage() + " vs "
+				+ (int) looseTeam.getDamage() + ") " + winnerTeam.getName() + " win " + winnerPoints + " points", "olympiad");
 	}
 
 	private void tie()
 	{
 		ExReceiveOlympiadPacket.MatchResult packet = new ExReceiveOlympiadPacket.MatchResult(TeamType.NONE, getType(), StringUtils.EMPTY);
 
-		for (OlympiadMember member : team1.getMembers())
+		for(OlympiadMember member : team1.getMembers())
 		{
 			member.incGameCount();
 			int points = getType().getTiePoints();
@@ -564,7 +555,7 @@ public class OlympiadGame extends ObservableArena
 			data.setPoints(data.getPoints() + points);
 		}
 
-		for (OlympiadMember member : team2.getMembers())
+		for(OlympiadMember member : team2.getMembers())
 		{
 			member.incGameCount();
 			int points = getType().getTiePoints();
@@ -575,27 +566,25 @@ public class OlympiadGame extends ObservableArena
 
 		int diff = (int) ((System.currentTimeMillis() - startTime) / 1000L);
 
-		team1.getMembers().forEach(m ->
-		{
+		team1.getMembers().forEach(m -> {
 			OlympiadMember topEnemy = team2.getTopDamager();
 			OlympiadHistory h = new OlympiadHistory(m.getObjectId(), topEnemy.getObjectId(), m.getClassId(), topEnemy.getClassId(), m.getName(), topEnemy.getName(), startTime, diff, 0, getType().ordinal());
 			OlympiadHistoryManager.getInstance().saveHistory(h);
 		});
 
-		team2.getMembers().forEach(m ->
-		{
+		team2.getMembers().forEach(m -> {
 			OlympiadMember topEnemy = team1.getTopDamager();
 			OlympiadHistory h = new OlympiadHistory(m.getObjectId(), topEnemy.getObjectId(), m.getClassId(), topEnemy.getClassId(), m.getName(), topEnemy.getName(), startTime, diff, 0, getType().ordinal());
 			OlympiadHistoryManager.getInstance().saveHistory(h);
 		});
 
-		for (Player player : getAllPlayers(false))
+		for(Player player : getAllPlayers(false))
 		{
 			player.getListeners().onOlympiadFinishBattle(false);
 
-			for (QuestState qs : player.getAllQuestsStates())
+			for(QuestState qs : player.getAllQuestsStates())
 			{
-				if (qs.isStarted())
+				if(qs.isStarted())
 					qs.getQuest().onOlympiadEnd(this, qs);
 			}
 		}
@@ -608,9 +597,9 @@ public class OlympiadGame extends ObservableArena
 
 	public void openDoors()
 	{
-		if (getType() != CompType.TEAM)
+		if(getType() != CompType.TEAM)
 		{
-			for (DoorInstance door : reflection.getDoors())
+			for(DoorInstance door : reflection.getDoors())
 				door.openMe();
 		}
 	}
@@ -630,7 +619,7 @@ public class OlympiadGame extends ObservableArena
 	public Location getObserverEnterPoint(Player player)
 	{
 		List<Location> spawns = getReflection().getInstancedZone().getTeleportCoords();
-		if (spawns.size() < 3)
+		if(spawns.size() < 3)
 		{
 			Location c1 = spawns.get(0);
 			Location c2 = spawns.get(1);
@@ -643,7 +632,7 @@ public class OlympiadGame extends ObservableArena
 	@Override
 	public boolean showObservableArenasList(Player player)
 	{
-		if (!Olympiad.inCompPeriod() || Olympiad.isOlympiadEnd())
+		if(!Olympiad.inCompPeriod() || Olympiad.isOlympiadEnd())
 		{
 			player.sendPacket(SystemMsg.THE_GRAND_OLYMPIAD_GAMES_ARE_NOT_CURRENTLY_IN_PROGRESS);
 			return false;
@@ -684,7 +673,7 @@ public class OlympiadGame extends ObservableArena
 
 	public boolean isRegistered(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 		return isRegistered(player.getObjectId());
 	}
@@ -702,20 +691,20 @@ public class OlympiadGame extends ObservableArena
 		// ExEventMatchTeamUnlocked
 		// ExEventMatchUserInfo
 
-		if (sender != null)
-			if (receiver != null)
+		if(sender != null)
+			if(receiver != null)
 				receiver.sendPacket(new ExOlympiadUserInfoPacket(sender, sender.getOlympiadSide()));
 			else
 				broadcastPacket(new ExOlympiadUserInfoPacket(sender, sender.getOlympiadSide()), !onlyToObservers, true);
 		else
 		{
 			// Рассылаем информацию о первой команде
-			for (OlympiadMember member : team1.getMembers())
+			for(OlympiadMember member : team1.getMembers())
 			{
 				Player player = member.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
-					if (receiver != null)
+					if(receiver != null)
 						receiver.sendPacket(new ExOlympiadUserInfoPacket(player, player.getOlympiadSide()));
 					else
 					{
@@ -726,12 +715,12 @@ public class OlympiadGame extends ObservableArena
 			}
 
 			// Рассылаем информацию о второй команде
-			for (OlympiadMember member : team2.getMembers())
+			for(OlympiadMember member : team2.getMembers())
 			{
 				Player player = member.getPlayer();
-				if (player != null)
+				if(player != null)
 				{
-					if (receiver != null)
+					if(receiver != null)
 						receiver.sendPacket(new ExOlympiadUserInfoPacket(player, player.getOlympiadSide()));
 					else
 					{
@@ -745,7 +734,7 @@ public class OlympiadGame extends ObservableArena
 
 	public void broadcastRelation()
 	{
-		for (Player player : getAllPlayers(false))
+		for(Player player : getAllPlayers(false))
 		{
 			PlayerUtils.updateAttackableFlags(player);
 		}
@@ -753,17 +742,17 @@ public class OlympiadGame extends ObservableArena
 
 	public void broadcastPacket(IBroadcastPacket packet, boolean toTeams, boolean toObservers)
 	{
-		if (toTeams)
+		if(toTeams)
 		{
-			for (Player player : getAllPlayers(false))
+			for(Player player : getAllPlayers(false))
 			{
 				player.sendPacket(packet);
 			}
 		}
 
-		if (toObservers)
+		if(toObservers)
 		{
-			for (ObservePoint observer : getObservers())
+			for(ObservePoint observer : getObservers())
 				observer.sendPacket(packet);
 		}
 	}
@@ -771,24 +760,24 @@ public class OlympiadGame extends ObservableArena
 	public List<Player> getAllPlayers(boolean withObservers)
 	{
 		List<Player> result = new ArrayList<>();
-		for (OlympiadMember member : team1.getMembers())
+		for(OlympiadMember member : team1.getMembers())
 		{
 			Player player = member.getPlayer();
-			if (player != null)
+			if(player != null)
 				result.add(player);
 		}
-		for (OlympiadMember member : team2.getMembers())
+		for(OlympiadMember member : team2.getMembers())
 		{
 			Player player = member.getPlayer();
-			if (player != null)
+			if(player != null)
 				result.add(player);
 		}
-		if (withObservers)
+		if(withObservers)
 		{
-			for (ObservePoint observer : getObservers())
+			for(ObservePoint observer : getObservers())
 			{
 				Player player = observer.getPlayer();
-				if (player != null)
+				if(player != null)
 					result.add(player);
 			}
 		}
@@ -802,26 +791,25 @@ public class OlympiadGame extends ObservableArena
 
 	public OlympiadTeam getWinnerTeam()
 	{
-		if (winner == TeamType.BLUE) // Выиграла первая команда
+		if(winner == TeamType.BLUE) // Выиграла первая команда
 			return team1;
-		else if (winner == TeamType.RED) // Выиграла вторая команда
+		else if(winner == TeamType.RED) // Выиграла вторая команда
 			return team2;
 		return null;
 	}
 
 	public OlympiadTeam[] getAllTeams()
 	{
-		return new OlympiadTeam[]
-		{
-			team1,
-			team2
+		return new OlympiadTeam[] {
+				team1,
+				team2
 		};
 	}
 
 	public void setState(int value)
 	{
 		state.set(value);
-		if (value == 1)
+		if(value == 1)
 			startTime = System.currentTimeMillis();
 	}
 
@@ -832,9 +820,9 @@ public class OlympiadGame extends ObservableArena
 
 	public void addDealedDamage(Player player, double damage)
 	{
-		if (player.getOlympiadSide() == 1)
+		if(player.getOlympiadSide() == 1)
 			team1.addDealedDamage(player, damage);
-		else if (player.getOlympiadSide() == 2)
+		else if(player.getOlympiadSide() == 2)
 			team2.addDealedDamage(player, damage);
 	}
 
@@ -846,14 +834,14 @@ public class OlympiadGame extends ObservableArena
 	public void logoutPlayer(Player player)
 	{
 		boolean result = false;
-		if (player != null)
+		if(player != null)
 		{
-			if (player.getOlympiadSide() == 1)
+			if(player.getOlympiadSide() == 1)
 				result = team1.logout(player);
-			else if (player.getOlympiadSide() == 2)
+			else if(player.getOlympiadSide() == 2)
 				result = team2.logout(player);
 		}
-		if (result && !isValidated())
+		if(result && !isValidated())
 		{
 			endGame(20, true);
 		}
@@ -865,14 +853,14 @@ public class OlympiadGame extends ObservableArena
 	public void doDie(Player player)
 	{
 		boolean result = false;
-		if (player != null)
+		if(player != null)
 		{
-			if (player.getOlympiadSide() == 1)
+			if(player.getOlympiadSide() == 1)
 				result = team1.doDie(player);
-			else if (player.getOlympiadSide() == 2)
+			else if(player.getOlympiadSide() == 2)
 				result = team2.doDie(player);
 		}
-		if (result)
+		if(result)
 		{
 			setWinner(player.getOlympiadSide() == 1 ? 2 : 1);
 			endGame(20, false);
@@ -881,22 +869,20 @@ public class OlympiadGame extends ObservableArena
 
 	public boolean isDead(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
-		if (player.getOlympiadSide() == 1)
+		if(player.getOlympiadSide() == 1)
 		{
 			return team1.isDead(player);
 		}
-		else if (player.getOlympiadSide() == 2)
-		{
-			return team2.isDead(player);
-		}
+		else if(player.getOlympiadSide() == 2)
+		{ return team2.isDead(player); }
 		return false;
 	}
 
 	public synchronized void sheduleTask(OlympiadGameTask task)
 	{
-		if (_shedule != null)
+		if(_shedule != null)
 			_shedule.cancel(false);
 		_task = task;
 		_shedule = task.shedule();
@@ -909,7 +895,7 @@ public class OlympiadGame extends ObservableArena
 
 	public BattleStatus getStatus()
 	{
-		if (_task != null)
+		if(_task != null)
 			return _task.getStatus();
 		return BattleStatus.Begining;
 	}
@@ -920,7 +906,7 @@ public class OlympiadGame extends ObservableArena
 		{
 			validateWinner(aborted);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("", e);
 		}

@@ -27,15 +27,15 @@ public class EnergyReplenish extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		Player player = (Player) activeChar;
 		ItemInstance item = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LBRACELET);
-		if (item == null || (item.getTemplate().getAgathionMaxEnergy() - item.getAgathionEnergy()) < _addEnergy)
+		if(item == null || (item.getTemplate().getAgathionMaxEnergy() - item.getAgathionEnergy()) < _addEnergy)
 		{
 			player.sendPacket(SystemMsg.YOUR_ENERGY_CANNOT_BE_REPLENISHED_BECAUSE_CONDITIONS_ARE_NOT_MET);
 			return false;

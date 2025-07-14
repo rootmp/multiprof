@@ -34,13 +34,13 @@ public final class InitialShortCutsHolder extends AbstractHolder
 
 	public void addInitialShortCut(Race race, ClassType classType, ShortCut shortCut)
 	{
-		if (race == null)
+		if(race == null)
 		{
-			for (Race r : Race.VALUES)
+			for(Race r : Race.VALUES)
 			{
-				if (classType == null)
+				if(classType == null)
 				{
-					for (ClassType ct : ClassType.VALUES)
+					for(ClassType ct : ClassType.VALUES)
 						addInitialShortCut0(r, ct, shortCut);
 				}
 				else
@@ -60,7 +60,7 @@ public final class InitialShortCutsHolder extends AbstractHolder
 	public List<ShortCut> getInitialShortCuts(Race race, ClassType classType)
 	{
 		List<ShortCut> shortCuts = initialShortCuts.get(makeHashCode(race, classType));
-		if (shortCuts == null)
+		if(shortCuts == null)
 			return Collections.emptyList();
 		return shortCuts;
 	}
@@ -79,7 +79,7 @@ public final class InitialShortCutsHolder extends AbstractHolder
 	public void log()
 	{
 		Set<ShortCut> shortCuts = new HashSet<>();
-		for (Collection<ShortCut> shortCutList : initialShortCuts.values())
+		for(Collection<ShortCut> shortCutList : initialShortCuts.values())
 		{
 			shortCuts.addAll(shortCutList);
 		}

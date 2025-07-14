@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.napile.primitive.pair.IntObjectPair;
 
 import l2s.commons.network.PacketReader;
@@ -23,15 +24,15 @@ public class ConfirmDlg implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		IntObjectPair<OnAnswerListener> entry = activeChar.getAskListener(true);
-		if (entry == null || entry.getKey() != _requestId)
+		if(entry == null || entry.getKey() != _requestId)
 			return;
 
 		OnAnswerListener listener = entry.getValue();
-		if (_answer == 1)
+		if(_answer == 1)
 			listener.sayYes();
 		else
 			listener.sayNo();

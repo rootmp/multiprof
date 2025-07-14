@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
@@ -23,21 +24,21 @@ public class RequestExOustFromMpccRoom implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getType() != MatchingRoom.CC_MATCHING)
+		if(room == null || room.getType() != MatchingRoom.CC_MATCHING)
 			return;
 
-		if (room.getLeader() != player)
+		if(room.getLeader() != player)
 			return;
 
 		Player member = GameObjectsStorage.getPlayer(_objectId);
-		if (member == null)
+		if(member == null)
 			return;
 
-		if (member == room.getLeader())
+		if(member == room.getLeader())
 			return;
 
 		room.removeMember(member, true);

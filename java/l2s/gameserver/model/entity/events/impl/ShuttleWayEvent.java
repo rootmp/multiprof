@@ -1,14 +1,13 @@
 package l2s.gameserver.model.entity.events.impl;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.data.BoatHolder;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.entity.boat.Shuttle;
 import l2s.gameserver.model.entity.events.Event;
 import l2s.gameserver.model.entity.events.EventType;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author Bonux
@@ -25,7 +24,7 @@ public class ShuttleWayEvent extends Event
 	{
 		super(set);
 		int shuttleId = set.getInteger("shuttle_id", -1);
-		if (shuttleId > 0)
+		if(shuttleId > 0)
 		{
 			_shuttle = BoatHolder.getInstance().initShuttle(getName(), shuttleId);
 			Location loc = Location.parseLoc(set.getString("spawn_point"));
@@ -65,7 +64,7 @@ public class ShuttleWayEvent extends Event
 	@Override
 	public void reCalcNextTime(boolean onInit)
 	{
-		if (onInit)
+		if(onInit)
 			return;
 
 		clearActions();

@@ -5,12 +5,12 @@ import l2s.commons.network.IConnectionState;
 /**
  * @author Nos
  */
-public enum ConnectionState implements IConnectionState 
+public enum ConnectionState implements IConnectionState
 {
-    CONNECTED,
-    DISCONNECTED,
-    CLOSING,
-    AUTHENTICATED,
-    JOINING_GAME,
-    IN_GAME
+	CONNECTED,
+	DISCONNECTED,
+	CLOSING,
+	AUTHENTICATED,
+	JOINING_GAME,
+	IN_GAME
 }

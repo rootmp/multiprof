@@ -30,49 +30,50 @@ public class RequestExRequestInviteParty implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
+
 		if(_cSayType == null)
 			return;
-		
+
 		if(activeChar.isChatBlocked())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_ALLOWED_TO_CHAT_WITH_A_CONTACT_WHILE_A_CHATTING_BLOCK_IS_IMPOSED);
 			return;
 		}
-		
-		switch (_cReqType)
+
+		switch(_cReqType)
 		{
 			case 0:
 			{
-				if (activeChar.isInParty())
+				if(activeChar.isInParty())
 				{
 					if(activeChar.getParty().isLeader(activeChar) && activeChar.getParty().getCommandChannel() == null)
-						_cReqType =1;//костыль??
+						_cReqType = 1;//костыль??
 					else
-					return;
+						return;
 				}
 				break;
 			}
 			case 1: //CC
 			{
 				final Party party = activeChar.getParty();
-				if ((party == null) || !party.isLeader(activeChar) || (party.getCommandChannel() != null))
+				if((party == null) || !party.isLeader(activeChar) || (party.getCommandChannel() != null))
 					return;
 				break;
 			}
 			default:
 				break;
 		}
-		
-		if (activeChar.isInOlympiadMode())
+
+		if(activeChar.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.S_4172);
 			return;
 		}
-		
-		if(_cSayType!=ChatType.ALL &&_cSayType!=ChatType.SHOUT && _cSayType!=ChatType.TRADE&& _cSayType!=ChatType.PARTY&& _cSayType!=ChatType.CLAN&& _cSayType!=ChatType.ALLIANCE)
+
+		if(_cSayType != ChatType.ALL && _cSayType != ChatType.SHOUT && _cSayType != ChatType.TRADE && _cSayType != ChatType.PARTY
+				&& _cSayType != ChatType.CLAN && _cSayType != ChatType.ALLIANCE)
 			return;
-		
+
 		ExRequestInviteParty cs = new ExRequestInviteParty(activeChar, _cReqType, _cSayType.ordinal());
 		switch(_cSayType)
 		{

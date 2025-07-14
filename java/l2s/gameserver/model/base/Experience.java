@@ -47,12 +47,12 @@ public class Experience
 	public static int getLevel(long thisExp)
 	{
 		int level = 0;
-		for (int i = 1; i <= getMaxAvailableLevel(); i++)
+		for(int i = 1; i <= getMaxAvailableLevel(); i++)
 		{
-			if (thisExp >= ExperienceDataHolder.getInstance().getData(i).getExp())
+			if(thisExp >= ExperienceDataHolder.getInstance().getData(i).getExp())
 				level = i;
 		}
-		if (level == 0)
+		if(level == 0)
 		{
 			_log.warn("Cannot find level for [" + thisExp + "] experience!");
 			return 1;
@@ -63,7 +63,7 @@ public class Experience
 	public static long getExpForLevel(int lvl)
 	{
 		ExperienceData data = ExperienceDataHolder.getInstance().getData(lvl);
-		if (data == null)
+		if(data == null)
 			return 0;
 		return data.getExp();
 	}
@@ -71,7 +71,7 @@ public class Experience
 	public static double getTrainingRate(int lvl)
 	{
 		ExperienceData data = ExperienceDataHolder.getInstance().getData(lvl);
-		if (data == null)
+		if(data == null)
 			return 1.;
 		return data.getTrainingRate();
 	}

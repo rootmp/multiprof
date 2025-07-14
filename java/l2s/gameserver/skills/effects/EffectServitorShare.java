@@ -31,7 +31,7 @@ public class EffectServitorShare extends EffectHandler
 		{
 			double val = 0;
 			// временный хардкод, до переписи статов
-			switch (stat)
+			switch(stat)
 			{
 				case MAX_HP:
 					val = env.character.getPlayer().getMaxHp();
@@ -93,7 +93,7 @@ public class EffectServitorShare extends EffectHandler
 		{
 			FuncTemplate[] funcTemplates = getTemplate().getAttachedFuncs();
 			Func[] funcs = new Func[funcTemplates.length];
-			for (int i = 0; i < funcs.length; i++)
+			for(int i = 0; i < funcs.length; i++)
 				funcs[i] = new FuncShare(funcTemplates[i]._stat, funcTemplates[i]._order, EffectServitorShare.this, funcTemplates[i]._value, StatsSet.EMPTY);
 
 			servitor.getStat().addFuncs(funcs);
@@ -119,7 +119,7 @@ public class EffectServitorShare extends EffectHandler
 	{
 		effected.addListener(_listener);
 
-		for (Servitor servitor : effected.getServitors())
+		for(Servitor servitor : effected.getServitors())
 			_listener.onSummonServitor(null, servitor);
 	}
 
@@ -128,7 +128,7 @@ public class EffectServitorShare extends EffectHandler
 	{
 		effected.removeListener(_listener);
 
-		for (Servitor servitor : effected.getServitors())
+		for(Servitor servitor : effected.getServitors())
 		{
 			servitor.getStat().removeFuncsByOwner(this);
 			servitor.updateStats();

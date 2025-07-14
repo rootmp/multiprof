@@ -45,14 +45,14 @@ public class CharacterGroupReuseDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, player.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int group = rset.getInt("reuse_group");
 				int item_id = rset.getInt("item_id");
 				long endTime = rset.getLong("end_time");
 				long reuse = rset.getLong("reuse");
 
-				if (endTime - curTime > 500)
+				if(endTime - curTime > 500)
 				{
 					TimeStamp stamp = new TimeStamp(item_id, endTime, reuse);
 					player.addSharedGroupReuse(group, stamp);
@@ -64,7 +64,7 @@ public class CharacterGroupReuseDAO
 			statement.setInt(1, player.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterGroupReuseDAO.select(Player):", e);
 		}
@@ -86,15 +86,15 @@ public class CharacterGroupReuseDAO
 			statement.execute();
 
 			Collection<IntObjectPair<TimeStamp>> reuses = player.getSharedGroupReuses();
-			if (reuses.isEmpty())
+			if(reuses.isEmpty())
 				return;
 
 			SqlBatch b = new SqlBatch(INSERT_SQL_QUERY);
-			for (IntObjectPair<TimeStamp> entry : reuses)
+			for(IntObjectPair<TimeStamp> entry : reuses)
 			{
 				int group = entry.getKey();
 				TimeStamp timeStamp = entry.getValue();
-				if (timeStamp.hasNotPassed())
+				if(timeStamp.hasNotPassed())
 				{
 					StringBuilder sb = new StringBuilder("(");
 					sb.append(player.getObjectId()).append(",");
@@ -106,10 +106,10 @@ public class CharacterGroupReuseDAO
 				}
 			}
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterGroupReuseDAO.insert(Player):", e);
 		}

@@ -173,7 +173,7 @@ public class ExServerPrimitivePacket implements IClientOutgoingPacket
 		packetWriter.writeD(_points.size() + _lines.size());
 		// System.out.println("points size: " + _points.size());
 		// System.out.println("line size: " + _lines.size());
-		for (Point point : _points)
+		for(Point point : _points)
 		{
 			packetWriter.writeC(1); // Its the type in this case Point
 			packetWriter.writeS(point.getName());
@@ -190,7 +190,7 @@ public class ExServerPrimitivePacket implements IClientOutgoingPacket
 			// "+point.getX()+" point y: "+point.getY()+" point z: "+point.getZ()+"");
 		}
 
-		for (Line line : _lines)
+		for(Line line : _lines)
 		{
 			packetWriter.writeC(2); // Its the type in this case Line
 			packetWriter.writeS(line.getName());

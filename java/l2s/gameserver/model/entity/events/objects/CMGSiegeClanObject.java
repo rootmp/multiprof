@@ -49,12 +49,12 @@ public class CMGSiegeClanObject extends SiegeClanObject
 	@Override
 	public void setEvent(boolean start, SiegeEvent<?, ?> event)
 	{
-		for (int i : _players.toArray())
+		for(int i : _players.toArray())
 		{
 			Player player = GameObjectsStorage.getPlayer(i);
-			if (player != null)
+			if(player != null)
 			{
-				if (start)
+				if(start)
 					player.addEvent(event);
 				else
 					player.removeEvent(event);

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
@@ -35,30 +36,30 @@ public class RequestPledgeRecruitBoardAccess implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 		{
 			activeChar.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_OR_SOMEONE_WITH_RANK_MANAGEMENT_AUTHORITY_MAY_REGISTER_THE_CLAN);
 			return;
 		}
 
-		if ((activeChar.getClanPrivileges() & Clan.CP_CL_MANAGE_RANKS) != Clan.CP_CL_MANAGE_RANKS)
+		if((activeChar.getClanPrivileges() & Clan.CP_CL_MANAGE_RANKS) != Clan.CP_CL_MANAGE_RANKS)
 		{
 			activeChar.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_OR_SOMEONE_WITH_RANK_MANAGEMENT_AUTHORITY_MAY_REGISTER_THE_CLAN);
 			return;
 		}
 
-		if (_desc.length() > 256)
+		if(_desc.length() > 256)
 			_desc = _desc.substring(0, 255);
 
-		if (ClanSearchManager.getInstance().addClan(new ClanSearchClan(clan.getClanId(), _searchType, _desc, _application, _subUnit)))
+		if(ClanSearchManager.getInstance().addClan(new ClanSearchClan(clan.getClanId(), _searchType, _desc, _application, _subUnit)))
 			activeChar.sendPacket(SystemMsg.ENTRY_APPLICATION_COMPLETE_USE_ENTRY_APPLICATION_INFO_TO_CHECK_OR_CANCEL_YOUR_APPLICATION);
 		else
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_MAY_APPLY_FOR_ENTRY_AFTER_S1_MINUTES_DUE_TO_CANCELLING_YOUR_APPLICATION).addInteger(5)); // TODO[Bonux]:
-																																									// Fix
-																																									// me.
+		// Fix
+		// me.
 	}
 }

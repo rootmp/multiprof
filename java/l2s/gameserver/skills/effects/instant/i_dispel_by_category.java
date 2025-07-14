@@ -42,7 +42,7 @@ public class i_dispel_by_category extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (_dispelChance == 0 || _maxCount == 0)
+		if(_dispelChance == 0 || _maxCount == 0)
 			return false;
 		return true;
 	}
@@ -54,84 +54,84 @@ public class i_dispel_by_category extends i_abstract_effect
 		Collections.sort(effects, AbnormalsComparator.getInstance()); // ToFix: Comparator to HF
 		Collections.reverse(effects);
 
-		if (_abnormalCategory == AbnormalCategory.slot_debuff)
+		if(_abnormalCategory == AbnormalCategory.slot_debuff)
 		{
 			int dispelled = 0;
-			for (Abnormal abnormal : effects)
+			for(Abnormal abnormal : effects)
 			{
-				if (!abnormal.isCancelable())
+				if(!abnormal.isCancelable())
 					continue;
 
 				Skill effectSkill = abnormal.getSkill();
-				if (effectSkill == null)
+				if(effectSkill == null)
 					continue;
 
-				if (!abnormal.isOffensive())
+				if(!abnormal.isOffensive())
 					continue;
 
-				if (effectSkill.isToggle())
+				if(effectSkill.isToggle())
 					continue;
 
-				if (effectSkill.isPassive())
+				if(effectSkill.isPassive())
 					continue;
 
-				if (effected.isSpecialAbnormal(effectSkill))
+				if(effected.isSpecialAbnormal(effectSkill))
 					continue;
 
-				if (effectSkill.getMagicLevel() <= 0)
+				if(effectSkill.getMagicLevel() <= 0)
 					continue;
 
-				if (Rnd.chance(_dispelChance))
+				if(Rnd.chance(_dispelChance))
 				{
 					abnormal.exit();
 
-					if (!abnormal.isHidden())
+					if(!abnormal.isHidden())
 						effected.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(effectSkill));
-					if (_maxCount > 0 && dispelled >= _maxCount)
+					if(_maxCount > 0 && dispelled >= _maxCount)
 						break;
 				}
-				if (dispelled >= _maxCount)
+				if(dispelled >= _maxCount)
 					break;
 				dispelled++;
 			}
 		}
-		else if (_abnormalCategory == AbnormalCategory.slot_buff && !effected.getAbnormalEffects().contains(AbnormalEffect.INVINCIBILITY))
+		else if(_abnormalCategory == AbnormalCategory.slot_buff && !effected.getAbnormalEffects().contains(AbnormalEffect.INVINCIBILITY))
 		{
 			int dispelled = 0;
-			for (Abnormal abnormal : effects)
+			for(Abnormal abnormal : effects)
 			{
-				if (!abnormal.isCancelable())
+				if(!abnormal.isCancelable())
 					continue;
 
 				Skill effectSkill = abnormal.getSkill();
-				if (effectSkill == null)
+				if(effectSkill == null)
 					continue;
 
-				if (abnormal.isOffensive())
+				if(abnormal.isOffensive())
 					continue;
 
-				if (effectSkill.isToggle())
+				if(effectSkill.isToggle())
 					continue;
 
-				if (effectSkill.isPassive())
+				if(effectSkill.isPassive())
 					continue;
 
-				if (effected.isSpecialAbnormal(effectSkill))
+				if(effected.isSpecialAbnormal(effectSkill))
 					continue;
 
-				if (effectSkill.getMagicLevel() <= 0)
+				if(effectSkill.getMagicLevel() <= 0)
 					continue;
 
-				if (Formulas.calcCancelSuccess(effector, effected, _dispelChance, getSkill(), abnormal))
+				if(Formulas.calcCancelSuccess(effector, effected, _dispelChance, getSkill(), abnormal))
 				{
 					abnormal.exit();
 
-					if (!abnormal.isHidden())
+					if(!abnormal.isHidden())
 						effected.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(effectSkill));
-					if (_maxCount > 0 && dispelled >= _maxCount)
+					if(_maxCount > 0 && dispelled >= _maxCount)
 						break;
 				}
-				if (dispelled >= _maxCount)
+				if(dispelled >= _maxCount)
 					break;
 				dispelled++;
 			}

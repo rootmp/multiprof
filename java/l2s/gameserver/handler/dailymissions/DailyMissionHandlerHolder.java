@@ -32,7 +32,7 @@ public class DailyMissionHandlerHolder extends AbstractHolder
 	public void registerHandler(IDailyMissionHandler handler)
 	{
 		CharListener listener = handler.getListener();
-		if (listener != null)
+		if(listener != null)
 			CharListenerList.addGlobal(listener);
 
 		_handlers.put(handler.getClass().getSimpleName().replace("DailyMissionHandler", ""), handler);
@@ -40,10 +40,10 @@ public class DailyMissionHandlerHolder extends AbstractHolder
 
 	public IDailyMissionHandler getHandler(String handler)
 	{
-		if (handler.contains("DailyMissionHandler"))
+		if(handler.contains("DailyMissionHandler"))
 			handler = handler.replace("DailyMissionHandler", "");
 
-		if (_handlers.isEmpty() || !_handlers.containsKey(handler))
+		if(_handlers.isEmpty() || !_handlers.containsKey(handler))
 		{
 			warn(getClass().getSimpleName() + ": Cannot find handler [" + handler + "]!");
 			return DEFAULT_DAILY_MISSION_HANDLER;

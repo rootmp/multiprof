@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.ObservableArena;
 import l2s.gameserver.model.Player;
@@ -21,14 +22,14 @@ public class RequestOlympiadMatchList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (NpcUtils.canPassPacket(player, this) != null)
+		if(NpcUtils.canPassPacket(player, this) != null)
 			return;
 
 		ObservableArena arena = player.getObservableArena();
-		if (arena == null)
+		if(arena == null)
 			return;
 
 		arena.showObservableArenasList(player);

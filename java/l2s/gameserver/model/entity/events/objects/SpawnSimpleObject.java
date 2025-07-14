@@ -27,14 +27,14 @@ public class SpawnSimpleObject implements SpawnableObject
 	public void spawnObject(Event event, Reflection reflection)
 	{
 		_npc = NpcUtils.spawnSingle(_npcId, _loc, reflection);
-		if (_npc != null)
+		if(_npc != null)
 			_npc.addEvent(event);
 	}
 
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (_npc != null)
+		if(_npc != null)
 		{
 			_npc.removeEvent(event);
 			_npc.deleteMe();
@@ -45,7 +45,7 @@ public class SpawnSimpleObject implements SpawnableObject
 	@Override
 	public void respawnObject(Event event, Reflection reflection)
 	{
-		if (_npc != null && !_npc.isVisible())
+		if(_npc != null && !_npc.isVisible())
 		{
 			_npc.setCurrentHpMp(_npc.getMaxHp(), _npc.getMaxMp(), true);
 			_npc.setHeading(_loc.h);

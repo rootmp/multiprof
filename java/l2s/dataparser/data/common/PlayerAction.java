@@ -1,4 +1,5 @@
 package l2s.dataparser.data.common;
+
 /**
  * @author : Camelion
  * @date : 25.08.12 0:34

@@ -22,7 +22,7 @@ public class ExMpccRoomMember implements IClientOutgoingPacket
 		_type = room.getMemberType(player);
 		_members = new ArrayList<MpccRoomMemberInfo>(room.getPlayers().size());
 
-		for (Player member : room.getPlayers())
+		for(Player member : room.getPlayers())
 		{
 			_members.add(new MpccRoomMemberInfo(member, room.getMemberType(member)));
 		}
@@ -33,7 +33,7 @@ public class ExMpccRoomMember implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_members.size());
-		for (MpccRoomMemberInfo member : _members)
+		for(MpccRoomMemberInfo member : _members)
 		{
 			packetWriter.writeD(member.objectId);
 			packetWriter.writeS(member.name);

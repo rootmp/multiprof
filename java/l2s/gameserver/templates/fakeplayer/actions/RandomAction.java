@@ -22,7 +22,7 @@ public class RandomAction extends OrdinaryActions
 	public List<AbstractAction> makeActionsList()
 	{
 		AbstractAction action = Rnd.get(super.makeActionsList());
-		if (action != null)
+		if(action != null)
 			return Collections.singletonList(action);
 		return Collections.emptyList();
 	}

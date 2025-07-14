@@ -21,7 +21,7 @@ public class RequestExBlessOptionPutItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		activeChar.sendPacket(new ExBlessOptionPutItem(activeChar, _itemObjId));

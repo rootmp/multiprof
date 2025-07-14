@@ -19,14 +19,14 @@ public class t_hp_magic extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return true;
 
 		double hp = getValue() * getInterval(); // В PTS скриптах сила эффекта указывается без учета интервала.
 		double damage = Formulas.calcMagicDam(effector, effected, getSkill(), Math.abs(hp), getSkill().isSSPossible(), false).damage;
 		damage = Math.min(damage, effected.getCurrentHp() - 1);
 
-		if (getSkill().getAbsorbPart() > 0)
+		if(getSkill().getAbsorbPart() > 0)
 			effector.setCurrentHp(getSkill().getAbsorbPart() * Math.min(effected.getCurrentHp(), damage) + effector.getCurrentHp(), false);
 
 		boolean awake = !effected.isNpc() && effected != effector; // TODO: Check this.

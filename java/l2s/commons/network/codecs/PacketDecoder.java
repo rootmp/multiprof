@@ -57,16 +57,17 @@ public class PacketDecoder<T extends ChannelInboundHandler<?>> extends ByteToMes
 			}
 
 			final IConnectionState connectionState = ctx.channel().attr(IConnectionState.CONNECTION_STATE_ATTRIBUTE_KEY).get();
-			
+
 			ChannelInboundHandler<?> channelHandler = null;
-			
+
 			if((_client instanceof ChannelInboundHandler))
 				channelHandler = (ChannelInboundHandler<?>) _client;
 
 			if(channelHandler == null)
 				return;
 
-			if(!channelHandler.getIgnoreInvalidConnectionState() && (connectionState == null || !incomingPacket.getConnectionStates().contains(connectionState)))
+			if(!channelHandler.getIgnoreInvalidConnectionState()
+					&& (connectionState == null || !incomingPacket.getConnectionStates().contains(connectionState)))
 			{
 				logger.warn("{}: Connection at invalid state: {} Required States: {}", incomingPacket, connectionState, incomingPacket.getConnectionStates());
 				_client.onUnknownPacket();

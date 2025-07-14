@@ -405,10 +405,10 @@ public class RankManager
 
 	private void replaceClassRankSkills(Player player, int classRank)
 	{
-			if(classRank == 1)
-				SERVER_RANKING_CLASS.getEffects(player, player);
-			else
-				player.getAbnormalList().stop(SERVER_RANKING_CLASS, false);
+		if(classRank == 1)
+			SERVER_RANKING_CLASS.getEffects(player, player);
+		else
+			player.getAbnormalList().stop(SERVER_RANKING_CLASS, false);
 	}
 
 	private void replaceServerRankScoreSkills(Player player, int rank)
@@ -506,8 +506,9 @@ public class RankManager
 						HUMAN_LEVEL_RANKING_1ST_CLASS.getEffects(player, player);
 					else
 						player.getAbnormalList().stop(HUMAN_LEVEL_RANKING_1ST_CLASS, false);
-					
-					if((classId != ClassId.H_DEATH_BLADE) && (classId != ClassId.H_DEATH_KNIGHT) && (classId != ClassId.H_DEATH_MESSENGER)&& (classId != ClassId.H_DEATH_PILGRIM))
+
+					if((classId != ClassId.H_DEATH_BLADE) && (classId != ClassId.H_DEATH_KNIGHT) && (classId != ClassId.H_DEATH_MESSENGER)
+							&& (classId != ClassId.H_DEATH_PILGRIM))
 						player.addSkill(HUMAN_RANKING_BENEFIT, false);
 					else
 						player.addSkill(DEATH_KNIGHT_RANKING_BENEFIT, false);
@@ -682,7 +683,8 @@ public class RankManager
 			// -------- class rank (2-я + 3-я профа) --------
 			ClassId classId = p.getClassId();
 			int groupKey = RankingGenerateDAO.getClassGroupKey(classId);
-			int classRank = (int) _mainList.values().stream().filter(d -> RankingGenerateDAO.getClassGroupKey(ClassId.valueOf(d.nClassId))== groupKey).count() + 1;
+			int classRank = (int) _mainList.values().stream().filter(d -> RankingGenerateDAO.getClassGroupKey(ClassId.valueOf(d.nClassId))
+					== groupKey).count() + 1;
 
 			// -------- race rank --------
 			int raceId = p.getRace().ordinal();

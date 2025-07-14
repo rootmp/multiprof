@@ -48,18 +48,18 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 		for(Iterator<Element> firstIterator = rootElement.elementIterator(); firstIterator.hasNext();)
 		{
 			Element firstElement = firstIterator.next();
-			switch (firstElement.getName())
+			switch(firstElement.getName())
 			{
 				case "enchantFees":
 				{
 					for(Iterator<Element> secondIterator = firstElement.elementIterator(); secondIterator.hasNext();)
 					{
 						Element secondElement = secondIterator.next();
-						if ("fee".equals(secondElement.getName()))
+						if("fee".equals(secondElement.getName()))
 						{
 							final StatsSet set = new StatsSet();
 
-							for (Attribute attr: secondElement.attributes())
+							for(Attribute attr : secondElement.attributes())
 								set.set(attr.getName(), attr.getValue());
 
 							final int step = Integer.parseInt(secondElement.attributeValue("step"));
@@ -72,7 +72,7 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 							for(Iterator<Element> thirdIterator = secondElement.elementIterator(); thirdIterator.hasNext();)
 							{
 								Element thirdElement = thirdIterator.next();
-								switch (thirdElement.getName())
+								switch(thirdElement.getName())
 								{
 									case "requiredItem":
 									{
@@ -93,11 +93,11 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 									}
 									case "enchantExp":
 									{
-										enchantExp.put(Integer.parseInt(thirdElement.attributeValue("count")),Double.parseDouble(thirdElement.attributeValue("chance")));
+										enchantExp.put(Integer.parseInt(thirdElement.attributeValue("count")), Double.parseDouble(thirdElement.attributeValue("chance")));
 										break;
 									}
 									default:
-						        break;
+										break;
 								}
 							}
 							getHolder().addPotenFees(step, new DyePotentialFee(step, new ItemData(itemId, itemCount), new ItemData(altItemId, altItemCount), dailyCount, enchantExp));
@@ -111,17 +111,17 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 					{
 						Element secondElement = secondIterator.next();
 
-						if ("hiddenPower".equals(secondElement.getName()))
+						if("hiddenPower".equals(secondElement.getName()))
 						{
 
 							final StatsSet set = new StatsSet();
-							for (Attribute attr: secondElement.attributes())
+							for(Attribute attr : secondElement.attributes())
 								set.set(attr.getName(), attr.getValue());
 							final int level = Integer.parseInt(secondElement.attributeValue("level"));
 							final int exp = Integer.parseInt(secondElement.attributeValue("exp"));
 							getHolder().addPotenExpTable(level, exp);
 
-							if (getHolder().getMaxPotenLevel() < level)
+							if(getHolder().getMaxPotenLevel() < level)
 								getHolder().setMaxPotenLevel(level);
 						}
 					}
@@ -132,10 +132,10 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 					for(Iterator<Element> secondIterator = firstElement.elementIterator(); secondIterator.hasNext();)
 					{
 						Element secondElement = secondIterator.next();
-						if ("poten".equals(secondElement.getName()))
+						if("poten".equals(secondElement.getName()))
 						{
 							final StatsSet set = new StatsSet();
-							for (Attribute attr: secondElement.attributes())
+							for(Attribute attr : secondElement.attributes())
 								set.set(attr.getName(), attr.getValue());
 
 							final int id = Integer.parseInt(secondElement.attributeValue("id"));
@@ -148,7 +148,7 @@ public class HennaPatternPotentialDataParser extends AbstractParser<HennaPattern
 					break;
 				}
 				default:
-	        break;
+					break;
 			}
 		}
 	}

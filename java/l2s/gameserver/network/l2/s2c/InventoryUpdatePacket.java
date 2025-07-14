@@ -26,7 +26,7 @@ public class InventoryUpdatePacket implements IClientOutgoingPacket
 
 	private final List<ItemInfo> _items = new ArrayList<>(1);
 	private final Player _player;
-	
+
 	public InventoryUpdatePacket(Player player)
 	{
 		_player = player;

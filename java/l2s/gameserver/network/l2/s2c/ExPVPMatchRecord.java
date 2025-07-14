@@ -66,14 +66,14 @@ public class ExPVPMatchRecord implements IClientOutgoingPacket
 		packetWriter.writeD(_blueKills);
 		packetWriter.writeD(_redKills);
 		packetWriter.writeD(_blueList.size());
-		for (Member member : _blueList)
+		for(Member member : _blueList)
 		{
 			packetWriter.writeS(member.name);
 			packetWriter.writeD(member.kills);
 			packetWriter.writeD(member.deaths);
 		}
 		packetWriter.writeD(_redList.size());
-		for (Member member : _redList)
+		for(Member member : _redList)
 		{
 			packetWriter.writeS(member.name);
 			packetWriter.writeD(member.kills);

@@ -51,7 +51,7 @@ public class SiegeClanObject implements Comparable<SiegeClanObject>
 
 	public void deleteFlag()
 	{
-		if (_flag != null)
+		if(_flag != null)
 		{
 			_flag.deleteMe();
 			_flag = null;
@@ -80,9 +80,9 @@ public class SiegeClanObject implements Comparable<SiegeClanObject>
 
 	public void setEvent(boolean start, SiegeEvent<?, ?> event)
 	{
-		if (start)
+		if(start)
 		{
-			for (Player player : _clan.getOnlineMembers())
+			for(Player player : _clan.getOnlineMembers())
 			{
 				player.addEvent(event);
 				player.broadcastCharInfo();
@@ -90,7 +90,7 @@ public class SiegeClanObject implements Comparable<SiegeClanObject>
 		}
 		else
 		{
-			for (Player player : _clan.getOnlineMembers())
+			for(Player player : _clan.getOnlineMembers())
 			{
 				player.removeEvent(event);
 				// player.getAbnormalList().stop(Skill.SKILL_BATTLEFIELD_DEATH_SYNDROME);
@@ -122,7 +122,8 @@ public class SiegeClanObject implements Comparable<SiegeClanObject>
 	@Override
 	public String toString()
 	{
-		return getClass().getSimpleName() + "[" + getClan().getName() + ", reg: " + TimeUtils.toSimpleFormat(getDate()) + ", param: " + getParam() + ", type: " + _type + "]";
+		return getClass().getSimpleName() + "[" + getClan().getName() + ", reg: " + TimeUtils.toSimpleFormat(getDate()) + ", param: " + getParam()
+				+ ", type: " + _type + "]";
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public final class EffectHealBlock extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isRaid() || effected.isHealBlocked())
+		if(effected.isRaid() || effected.isHealBlocked())
 			return false;
 		return true;
 	}

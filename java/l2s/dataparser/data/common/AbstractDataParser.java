@@ -46,8 +46,7 @@ public abstract class AbstractDataParser<H extends AbstractHolder> extends Abstr
 				try (Stream<Path> fileStream = Files.list(path))
 				{
 					StringBuilder combinedBuffer = new StringBuilder();
-					fileStream.filter(file -> file.toString().endsWith(".txt")).sorted().forEach(file -> 
-					{
+					fileStream.filter(file -> file.toString().endsWith(".txt")).sorted().forEach(file -> {
 						try (BufferedReader br = Files.newBufferedReader(file, StandardCharsets.UTF_16))
 						{
 							String line;

@@ -83,17 +83,17 @@ public class Account
 		this.allowedIpList.clear();
 		this.allowedIP = allowedIP;
 
-		if (allowedIP.isEmpty())
+		if(allowedIP.isEmpty())
 			return;
 
 		String[] masks = allowedIP.split("[\\s,;]+");
-		for (String mask : masks)
+		for(String mask : masks)
 		{
 			try
 			{
 				this.allowedIpList.add(Net.valueOf(mask));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -223,7 +223,7 @@ public class Account
 			statement.setString(1, login);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				setPasswordHash(rset.getString("password"));
 				setAccessLevel(rset.getInt("access_level"));
@@ -239,7 +239,7 @@ public class Account
 				setPhoneNumber(rset.getLong("phone_nubmer"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -258,7 +258,7 @@ public class Account
 			statement.setString(2, getPasswordHash());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -283,7 +283,7 @@ public class Account
 			statement.setString(12, getLogin());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -298,7 +298,7 @@ public class Account
 			statement.setString(2, account);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

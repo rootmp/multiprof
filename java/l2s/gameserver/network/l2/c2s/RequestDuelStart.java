@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.EventHolder;
@@ -27,42 +28,42 @@ public class RequestDuelStart implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.isActionsDisabled())
+		if(player.isActionsDisabled())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isProcessingRequest())
+		if(player.isProcessingRequest())
 		{
 			player.sendPacket(SystemMsg.WAITING_FOR_ANOTHER_REPLY);
 			return;
 		}
 
 		DuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, _duelType);
-		if (duelEvent == null)
+		if(duelEvent == null)
 			return;
 
 		Player target = World.getPlayer(_name);
-		if (target == null || target == player)
+		if(target == null || target == player)
 		{
 			player.sendPacket(SystemMsg.THERE_IS_NO_OPPONENT_TO_RECEIVE_YOUR_CHALLENGE_FOR_A_DUEL);
 			return;
 		}
 
-		if (!duelEvent.canDuel(player, target, true))
+		if(!duelEvent.canDuel(player, target, true))
 			return;
 
-		if (target.isBusy())
+		if(target.isBusy())
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addName(target));
 			return;
 		}
 
-		if (target.isInFightClub())
+		if(target.isInFightClub())
 		{
 			player.sendMessage(target.getName() + " is in Fight Club Event. Please try again later.");
 			return;

@@ -26,55 +26,55 @@ public class OlympiadMonumentInstance extends NpcInstance
 	@Override
 	public void onMenuSelect(Player player, int ask, long reply, int state)
 	{
-		if (ask == -50)
+		if(ask == -50)
 		{
-			if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+			if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001.htm", false);
 			else
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001a.htm", false);
 		}
-		if (ask == -51)
+		if(ask == -51)
 		{
-			if (reply == 1)
+			if(reply == 1)
 			{
-				if (Hero.getInstance().isInactiveHero(player.getObjectId()))
+				if(Hero.getInstance().isInactiveHero(player.getObjectId()))
 				{
-					if (Olympiad.isValidationPeriod())
+					if(Olympiad.isValidationPeriod())
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010c.htm", false);
 					else
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010.htm", false);
 				}
-				else if (player.isHero())
+				else if(player.isHero())
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010b.htm", false);
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010a.htm", false);
 			}
-			else if (reply == 2)
+			else if(reply == 2)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
-					if (ItemFunctions.getItemCount(player, 6611) >= 1)
+					if(ItemFunctions.getItemCount(player, 6611) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6612) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6612) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6613) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6613) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6614) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6614) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6616) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6616) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6617) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6617) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6618) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6618) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6619) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6619) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6620) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6620) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
-					else if (ItemFunctions.getItemCount(player, 6621) >= 1)
+					else if(ItemFunctions.getItemCount(player, 6621) >= 1)
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
 					else
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020.htm", false);
@@ -82,21 +82,21 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			else if (reply == 3)
+			else if(reply == 3)
 			{
 				//
 			}
-			else if (reply == 4)
+			else if(reply == 4)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_HERO_WING) >= 1)
+					if(ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_HERO_WING) >= 1)
 					{
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020c.htm", false);
 					}
-					else if (player.isHero())
+					else if(player.isHero())
 					{
-						if (!player.isQuestContinuationPossible(true))
+						if(!player.isQuestContinuationPossible(true))
 							return;
 
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_HERO_WING, 1);
@@ -108,15 +108,15 @@ public class OlympiadMonumentInstance extends NpcInstance
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020d.htm", false);
 			}
 		}
-		else if (ask == -52)
+		else if(ask == -52)
 		{
-			if (reply == 1)
+			if(reply == 1)
 			{
-				if (Hero.getInstance().isInactiveHero(player.getObjectId()))
+				if(Hero.getInstance().isInactiveHero(player.getObjectId()))
 				{
-					if (player.isBaseClassActive())
+					if(player.isBaseClassActive())
 					{
-						if (player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+						if(player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 							Hero.getInstance().activateHero(player);
 						else
 							showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010d.htm", false);
@@ -128,20 +128,21 @@ public class OlympiadMonumentInstance extends NpcInstance
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk010a.htm", false);
 			}
 		}
-		else if (ask == -53)
+		else if(ask == -53)
 		{
 			//
 		}
-		else if (ask == -54)
+		else if(ask == -54)
 		{
-			if (reply == 1)
+			if(reply == 1)
 			{
 				int rank = Olympiad.getRank(player);
-				if (rank == 1)
+				if(rank == 1)
 				{
-					if (ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_HERO_CLOAK) < 1 && ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_FAME_CLOAK) < 1)
+					if(ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_HERO_CLOAK) < 1
+							&& ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_FAME_CLOAK) < 1)
 					{
-						if (!player.isQuestContinuationPossible(true))
+						if(!player.isQuestContinuationPossible(true))
 							return;
 
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_HERO_CLOAK, 1);
@@ -149,27 +150,31 @@ public class OlympiadMonumentInstance extends NpcInstance
 					else
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk040c.htm", false);
 				}
-				else if (rank == 0 || rank > 1)
+				else if(rank == 0 || rank > 1)
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk040d.htm", false);
 			}
 		}
-		else if (ask == -60)
+		else if(ask == -60)
 		{
-			if (ItemFunctions.getItemCount(player, 6611) >= 1 || ItemFunctions.getItemCount(player, 6612) >= 1 || ItemFunctions.getItemCount(player, 6613) >= 1 || ItemFunctions.getItemCount(player, 6614) >= 1 || ItemFunctions.getItemCount(player, 6616) >= 1)
+			if(ItemFunctions.getItemCount(player, 6611) >= 1 || ItemFunctions.getItemCount(player, 6612) >= 1
+					|| ItemFunctions.getItemCount(player, 6613) >= 1 || ItemFunctions.getItemCount(player, 6614) >= 1
+					|| ItemFunctions.getItemCount(player, 6616) >= 1)
 			{
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
 				return;
 			}
-			if (ItemFunctions.getItemCount(player, 6617) >= 1 || ItemFunctions.getItemCount(player, 6618) >= 1 || ItemFunctions.getItemCount(player, 6619) >= 1 || ItemFunctions.getItemCount(player, 6620) >= 1 || ItemFunctions.getItemCount(player, 6621) >= 1)
+			if(ItemFunctions.getItemCount(player, 6617) >= 1 || ItemFunctions.getItemCount(player, 6618) >= 1
+					|| ItemFunctions.getItemCount(player, 6619) >= 1 || ItemFunctions.getItemCount(player, 6620) >= 1
+					|| ItemFunctions.getItemCount(player, 6621) >= 1)
 			{
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020b.htm", false);
 				return;
 			}
-			if (reply == 1)
+			if(reply == 1)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6611, 1);
@@ -177,11 +182,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 2)
+			if(reply == 2)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6612, 1);
@@ -189,11 +194,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 3)
+			if(reply == 3)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6613, 1);
@@ -201,11 +206,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 4)
+			if(reply == 4)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6614, 1);
@@ -213,11 +218,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 5)
+			if(reply == 5)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6616, 1);
@@ -225,11 +230,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 6)
+			if(reply == 6)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6617, 1);
@@ -237,11 +242,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 7)
+			if(reply == 7)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6618, 1);
@@ -249,11 +254,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 8)
+			if(reply == 8)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6619, 1);
@@ -261,11 +266,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 9)
+			if(reply == 9)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6620, 1);
@@ -273,11 +278,11 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 10)
+			if(reply == 10)
 			{
-				if (player.isHero())
+				if(player.isHero())
 				{
-					if (!player.isQuestContinuationPossible(true))
+					if(!player.isQuestContinuationPossible(true))
 						return;
 
 					ItemFunctions.addItem(player, 6621, 1);
@@ -285,35 +290,35 @@ public class OlympiadMonumentInstance extends NpcInstance
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk020a.htm", false);
 			}
-			if (reply == 0)
+			if(reply == 0)
 			{
-				if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+				if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001.htm", false);
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001a.htm", false);
 			}
 		}
-		else if (ask == -61)
+		else if(ask == -61)
 		{
-			if (reply == 0)
+			if(reply == 0)
 			{
-				if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+				if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001.htm", false);
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001a.htm", false);
 			}
 		}
-		else if (ask == -62)
+		else if(ask == -62)
 		{
-			if (reply == 0)
+			if(reply == 0)
 			{
-				if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+				if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001.htm", false);
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "obelisk001a.htm", false);
 			}
 		}
-		else if (ask == -70)
+		else if(ask == -70)
 		{
 			//
 		}
@@ -324,7 +329,7 @@ public class OlympiadMonumentInstance extends NpcInstance
 	@Override
 	public void onBypassFeedback(Player player, String command)
 	{
-		if (command.equalsIgnoreCase("_heroes"))
+		if(command.equalsIgnoreCase("_heroes"))
 		{
 			player.sendPacket(new ExHeroListPacket());
 			return;
@@ -342,10 +347,10 @@ public class OlympiadMonumentInstance extends NpcInstance
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... arg)
 	{
-		if (val == 0) // Grand Olympiad Manager
+		if(val == 0) // Grand Olympiad Manager
 		{
 			String fileName = Olympiad.OLYMPIAD_HTML_PATH;
-			if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+			if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 				fileName += "obelisk001.htm";
 			else
 				fileName += "obelisk001a.htm";

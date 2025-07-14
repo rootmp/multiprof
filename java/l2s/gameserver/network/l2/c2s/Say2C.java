@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -76,7 +77,7 @@ public class Say2C implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		writeToChat(activeChar, _text, _type, _target);
@@ -85,7 +86,7 @@ public class Say2C implements IClientIncomingPacket
 	public static void writeToChat(Player activeChar, String text, ChatType type, String target)
 	{
 		SayPacket2 cs;
-		if (type == null || text == null || text.length() == 0)
+		if(type == null || text == null || text.length() == 0)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -93,18 +94,18 @@ public class Say2C implements IClientIncomingPacket
 
 		text = text.replaceAll("\\\\n", "\n");
 
-		if (text.contains("\n"))
+		if(text.contains("\n"))
 		{
 			final String[] lines = text.split("\n");
 			text = StringUtils.EMPTY;
-			for (int i = 0; i < lines.length; i++)
+			for(int i = 0; i < lines.length; i++)
 			{
 				lines[i] = lines[i].trim();
-				if (lines[i].length() == 0)
+				if(lines[i].length() == 0)
 				{
 					continue;
 				}
-				if (text.length() > 0)
+				if(text.length() > 0)
 				{
 					text += "\n  >";
 				}
@@ -112,31 +113,31 @@ public class Say2C implements IClientIncomingPacket
 			}
 		}
 
-		if (text.length() == 0)
+		if(text.length() == 0)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (Config.BAN_FOR_CFG_USAGE)
-			if (text.startsWith("//cfg") || text.startsWith("///cfg") || text.startsWith("////cfg"))
+		if(Config.BAN_FOR_CFG_USAGE)
+			if(text.startsWith("//cfg") || text.startsWith("///cfg") || text.startsWith("////cfg"))
 			{
 				activeChar.kick();
 			}
 
-		if (text.startsWith("."))
+		if(text.startsWith("."))
 		{
-			if (Config.ALLOW_VOICED_COMMANDS)
+			if(Config.ALLOW_VOICED_COMMANDS)
 			{
 				final String fullcmd = text.substring(1).trim();
 				final String command = fullcmd.split("\\s+")[0];
 				final String args = fullcmd.substring(command.length()).trim();
 
-				if (command.length() > 0)
+				if(command.length() > 0)
 				{
 					// then check for VoicedCommands
 					final IVoicedCommandHandler vch = VoicedCommandHandler.getInstance().getVoicedCommandHandler(command);
-					if (vch != null)
+					if(vch != null)
 					{
 						vch.useVoicedCommand(command, activeChar, args);
 						return;
@@ -146,12 +147,12 @@ public class Say2C implements IClientIncomingPacket
 				return;
 			}
 		}
-		if (type == ChatType.HANDLER)
+		if(type == ChatType.HANDLER)
 		{
 			final String command = text.contains(";") ? text.split(";")[0].toUpperCase() : text;
 			final String args = command != text ? text.substring(command.length() + 1).trim() : text;
 			final IBayleeInterfaceHandler BayleeInterface = BayleeInterfaceHandler.getInstance().getBayleeInterfaceHandler(command);
-			if (BayleeInterface == null)
+			if(BayleeInterface == null)
 				return;
 			else
 			{
@@ -159,23 +160,23 @@ public class Say2C implements IClientIncomingPacket
 				return;
 			}
 		}
-		else if (text.startsWith("=="))
+		else if(text.startsWith("=="))
 		{
 			final String expression = text.substring(2);
 			Expression expr = null;
 
-			if (!expression.isEmpty())
+			if(!expression.isEmpty())
 			{
 				try
 				{
 					expr = ExpressionTree.parse(expression);
 				}
-				catch (final ExpressionParseException epe)
+				catch(final ExpressionParseException epe)
 				{
 
 				}
 
-				if (expr != null)
+				if(expr != null)
 				{
 					double result;
 
@@ -187,7 +188,7 @@ public class Say2C implements IClientIncomingPacket
 						activeChar.sendMessage(expression);
 						activeChar.sendMessage("=" + Util.formatDouble(result, "NaN", false));
 					}
-					catch (final Exception e)
+					catch(final Exception e)
 					{
 
 					}
@@ -197,19 +198,19 @@ public class Say2C implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isChatBlocked())
+		if(activeChar.isChatBlocked())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_ALLOWED_TO_CHAT_WITH_A_CONTACT_WHILE_A_CHATTING_BLOCK_IS_IMPOSED);
 			return;
 		}
 
 		final boolean globalchat = type != ChatType.ALLIANCE && type != ChatType.CLAN && type != ChatType.PARTY;
-		if (globalchat || ArrayUtils.contains(Config.BAN_CHANNEL_LIST, type.ordinal()))
+		if(globalchat || ArrayUtils.contains(Config.BAN_CHANNEL_LIST, type.ordinal()))
 		{
 			final BanInfo banInfo = GameBanManager.getInstance().getBanInfoIfBanned(BanBindType.CHAT, activeChar.getObjectId());
-			if (banInfo != null)
+			if(banInfo != null)
 			{
-				if (banInfo.getEndTime() == -1)
+				if(banInfo.getEndTime() == -1)
 				{
 					activeChar.sendMessage(new CustomMessage("common.ChatBannedPermanently"));
 				}
@@ -221,13 +222,14 @@ public class Say2C implements IClientIncomingPacket
 				return;
 			}
 
-			if (activeChar.getNoChannel() != 0L)
+			if(activeChar.getNoChannel() != 0L)
 			{
-				if (activeChar.getNoChannelRemained() > 0L || activeChar.getNoChannel() < 0L)
+				if(activeChar.getNoChannelRemained() > 0L || activeChar.getNoChannel() < 0L)
 				{
-					if (activeChar.getNoChannel() > 0L)
+					if(activeChar.getNoChannel() > 0L)
 					{
-						activeChar.sendMessage(new CustomMessage("common.ChatBanned").addString(TimeUtils.toSimpleFormat(System.currentTimeMillis() + activeChar.getNoChannelRemained())));
+						activeChar.sendMessage(new CustomMessage("common.ChatBanned").addString(TimeUtils.toSimpleFormat(System.currentTimeMillis()
+								+ activeChar.getNoChannelRemained())));
 					}
 					else
 					{
@@ -240,13 +242,13 @@ public class Say2C implements IClientIncomingPacket
 			}
 		}
 
-		if (globalchat)
+		if(globalchat)
 		{
-			if (Config.ABUSEWORD_REPLACE)
+			if(Config.ABUSEWORD_REPLACE)
 			{
 				text = Config.replaceAbuseWords(text, Config.ABUSEWORD_REPLACE_STRING);
 			}
-			else if (Config.ABUSEWORD_BANCHAT && Config.containsAbuseWord(text))
+			else if(Config.ABUSEWORD_BANCHAT && Config.containsAbuseWord(text))
 			{
 				activeChar.sendMessage(new CustomMessage("common.ChatBanned").addNumber(Config.ABUSEWORD_BANTIME * 60));
 				Log.add(activeChar + ": " + text, "abuse");
@@ -261,17 +263,17 @@ public class Say2C implements IClientIncomingPacket
 		ItemInstance item;
 		int objectId;
 
-		while (m.find())
+		while(m.find())
 		{
 			objectId = Integer.parseInt(m.group(1));
 			item = activeChar.getInventory().getItemByObjectId(objectId);
 
-			if (item == null)
+			if(item == null)
 			{
 				activeChar.sendActionFailed();
 				break;
 			}
-			if (HidenItemsDAO.isHidden(item))
+			if(HidenItemsDAO.isHidden(item))
 			{
 				activeChar.sendActionFailed();
 				return;
@@ -280,13 +282,13 @@ public class Say2C implements IClientIncomingPacket
 		}
 
 		final String translit = activeChar.getVar("translit");
-		if (translit != null)
+		if(translit != null)
 		{
 			// Исключаем из транслитерации ссылки на предметы
 			m = SKIP_ITEM_LINK_PATTERN.matcher(text);
 			final StringBuilder sb = new StringBuilder();
 			int end = 0;
-			while (m.find())
+			while(m.find())
 			{
 				sb.append(Strings.fromTranslit(text.substring(end, end = m.start()), translit.equals("tl") ? 1 : 2));
 				sb.append(text.substring(end, end = m.end()));
@@ -297,7 +299,7 @@ public class Say2C implements IClientIncomingPacket
 
 		Log.LogChat(type.name(), activeChar.getName(), target, text);
 
-		if (activeChar.isInFightClub() && activeChar.getFightClubEvent().isHidePersonality())
+		if(activeChar.isInFightClub() && activeChar.getFightClubEvent().isHidePersonality())
 		{
 			cs = new SayPacket2(0, type, 0, "Player", text);
 		}
@@ -305,46 +307,44 @@ public class Say2C implements IClientIncomingPacket
 		{
 			cs = new SayPacket2(activeChar.getObjectId(), type, _isLocSharing, activeChar.getName(), text);
 		}
-		if (_isLocSharing == 1)
+		if(_isLocSharing == 1)
 		{
-			if (activeChar.isInOlympiadMode() || activeChar.getReflectionId() != 0)
-			{
-				return;
-			}
+			if(activeChar.isInOlympiadMode() || activeChar.getReflectionId() != 0)
+			{ return; }
 
 			final ItemInstance l2coin = activeChar.getInventory().getItemByItemId(ItemTemplate.ITEM_ID_MONEY_L);
 			final int previousRank = activeChar.getPreviousPvpRank();
 			boolean allowFree = false;
-			if ((previousRank > 0) && (previousRank < 4))
+			if((previousRank > 0) && (previousRank < 4))
 			{
 				allowFree = true;
 			}
 
-			if (!allowFree && ((l2coin == null) || (l2coin.getCount() < Config.SHARE_POSITION_COST)))
+			if(!allowFree && ((l2coin == null) || (l2coin.getCount() < Config.SHARE_POSITION_COST)))
 			{
 				activeChar.sendPacket(new SystemMessage(SystemMsg.NOT_ENOUGH_L2_COINS));
 				return;
 			}
 		}
-		switch (type)
+		switch(type)
 		{
 			case TELL:
 				final Player receiver = World.getPlayer(target);
-				if (receiver != null && receiver.isInOfflineMode())
+				if(receiver != null && receiver.isInOfflineMode())
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_IS_NOT_CURRENTLY_LOGGED_IN).addString(target), ActionFailPacket.STATIC);
 				}
-				else if (receiver != null && !receiver.getBlockList().contains(activeChar) && !receiver.isBlockAll())
+				else if(receiver != null && !receiver.getBlockList().contains(activeChar) && !receiver.isBlockAll())
 				{
-					if (!receiver.getMessageRefusal())
+					if(!receiver.getMessageRefusal())
 					{
-						if (!activeChar.getAntiFlood().canTell(receiver.getObjectId(), text))
+						if(!activeChar.getAntiFlood().canTell(receiver.getObjectId(), text))
 							return;
 
-						if (activeChar.canTalkWith(receiver))
+						if(activeChar.canTalkWith(receiver))
 						{
 							cs.setSenderInfo(activeChar, receiver);
-							if (receiver.isFakePlayer())
+							if(receiver.isFakePlayer())
 							{
 								receiver.getListeners().onChatMessageReceive(type, activeChar.getName(), text);
 							}
@@ -365,7 +365,7 @@ public class Say2C implements IClientIncomingPacket
 						activeChar.sendPacket(SystemMsg.THAT_PERSON_IS_IN_MESSAGE_REFUSAL_MODE);
 					}
 				}
-				else if (receiver == null)
+				else if(receiver == null)
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_IS_NOT_CURRENTLY_LOGGED_IN).addString(target), ActionFailPacket.STATIC);
 				}
@@ -375,16 +375,16 @@ public class Say2C implements IClientIncomingPacket
 				}
 				break;
 			case SHOUT:
-				if (activeChar.isInObserverMode())
+				if(activeChar.isInObserverMode())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_CANNOT_CHAT_WHILE_IN_OBSERVATION_MODE);
 					return;
 				}
 
-				if (!activeChar.getAntiFlood().canShout(text))
+				if(!activeChar.getAntiFlood().canShout(text))
 					return;
 
-				if (Config.GLOBAL_SHOUT)
+				if(Config.GLOBAL_SHOUT)
 				{
 					ChatUtils.announce(activeChar, cs);
 				}
@@ -396,16 +396,16 @@ public class Say2C implements IClientIncomingPacket
 				activeChar.sendPacket(cs);
 				break;
 			case TRADE:
-				if (activeChar.isInObserverMode())
+				if(activeChar.isInObserverMode())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_CANNOT_CHAT_WHILE_IN_OBSERVATION_MODE);
 					return;
 				}
 
-				if (!activeChar.getAntiFlood().canTrade(text))
+				if(!activeChar.getAntiFlood().canTrade(text))
 					return;
 
-				if (Config.GLOBAL_TRADE_CHAT)
+				if(Config.GLOBAL_TRADE_CHAT)
 				{
 					ChatUtils.announce(activeChar, cs);
 				}
@@ -417,26 +417,26 @@ public class Say2C implements IClientIncomingPacket
 				activeChar.sendPacket(cs);
 				break;
 			case ALL:
-				if (activeChar.isInObserverMode())
+				if(activeChar.isInObserverMode())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_CANNOT_CHAT_WHILE_IN_OBSERVATION_MODE);
 					return;
 				}
 
-				if (!activeChar.getAntiFlood().canAll(text))
+				if(!activeChar.getAntiFlood().canAll(text))
 					return;
 
-				if (activeChar.isInOlympiadMode())
+				if(activeChar.isInOlympiadMode())
 				{
 					final OlympiadGame game = activeChar.getOlympiadGame();
-					if (game != null)
+					if(game != null)
 					{
 						ChatUtils.say(activeChar, game.getAllPlayers(true), cs);
 						break;
 					}
 				}
 
-				if (activeChar.isInFightClub())
+				if(activeChar.isInFightClub())
 				{
 					ChatUtils.say(activeChar, activeChar.getFightClubEvent().getAllFightingPlayers(), cs);
 				}
@@ -448,43 +448,43 @@ public class Say2C implements IClientIncomingPacket
 				}
 				break;
 			case CLAN:
-				if (activeChar.getClan() != null)
+				if(activeChar.getClan() != null)
 				{
 					activeChar.getClan().broadcastToOnlineMembers(cs);
 				}
 				break;
 			case ALLIANCE:
-				if (activeChar.getClan() != null && activeChar.getClan().getAlliance() != null)
+				if(activeChar.getClan() != null && activeChar.getClan().getAlliance() != null)
 				{
 					activeChar.getClan().getAlliance().broadcastToOnlineMembers(cs);
 				}
 				break;
 			case PARTY:
-				if (activeChar.isInParty())
+				if(activeChar.isInParty())
 				{
 					activeChar.getParty().broadCast(cs);
 				}
 				break;
 			case PARTY_ROOM:
 				final MatchingRoom room = activeChar.getMatchingRoom();
-				if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
+				if(room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
 					return;
 
-				for (final Player roomMember : room.getPlayers())
+				for(final Player roomMember : room.getPlayers())
 				{
-					if (activeChar.canTalkWith(roomMember))
+					if(activeChar.canTalkWith(roomMember))
 					{
 						roomMember.sendPacket(cs);
 					}
 				}
 				break;
 			case COMMANDCHANNEL_ALL:
-				if (!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+				if(!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_THE_AUTHORITY_TO_USE_THE_COMMAND_CHANNEL);
 					return;
 				}
-				if (activeChar.getParty().getCommandChannel().getChannelLeader() == activeChar)
+				if(activeChar.getParty().getCommandChannel().getChannelLeader() == activeChar)
 				{
 					activeChar.getParty().getCommandChannel().broadCast(cs);
 				}
@@ -494,12 +494,12 @@ public class Say2C implements IClientIncomingPacket
 				}
 				break;
 			case COMMANDCHANNEL_COMMANDER:
-				if (!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+				if(!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_THE_AUTHORITY_TO_USE_THE_COMMAND_CHANNEL);
 					return;
 				}
-				if (activeChar.getParty().isLeader(activeChar))
+				if(activeChar.getParty().isLeader(activeChar))
 				{
 					activeChar.getParty().getCommandChannel().broadcastToChannelPartyLeaders(cs);
 				}
@@ -509,13 +509,13 @@ public class Say2C implements IClientIncomingPacket
 				}
 				break;
 			case HERO_VOICE:
-				if (!activeChar.isHero() && !activeChar.getPlayerAccess().CanAnnounce)
+				if(!activeChar.isHero() && !activeChar.getPlayerAccess().CanAnnounce)
 					return;
 
 				// Ограничение только для героев, гм-мы пускай говорят.
-				if (!activeChar.getPlayerAccess().CanAnnounce)
+				if(!activeChar.getPlayerAccess().CanAnnounce)
 				{
-					if (!activeChar.getAntiFlood().canHero(text))
+					if(!activeChar.getAntiFlood().canHero(text))
 						return;
 				}
 
@@ -525,7 +525,7 @@ public class Say2C implements IClientIncomingPacket
 				break;
 			case PETITION_PLAYER:
 			case PETITION_GM:
-				if (!PetitionManager.getInstance().isPlayerInConsultation(activeChar))
+				if(!PetitionManager.getInstance().isPlayerInConsultation(activeChar))
 				{
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_ARE_CURRENTLY_NOT_IN_A_PETITION_CHAT));
 					return;
@@ -534,32 +534,33 @@ public class Say2C implements IClientIncomingPacket
 				PetitionManager.getInstance().sendActivePetitionMessage(activeChar, text);
 				break;
 			case BATTLEFIELD:
-				if (activeChar.isInFightClub())
+				if(activeChar.isInFightClub())
 				{
 					List<Player> list = activeChar.getFightClubEvent().getMyTeamFightingPlayers(activeChar);
-					for (Player player : list)
+					for(Player player : list)
 					{
 						player.sendPacket(cs);
 					}
 					return;
 				}
-				if (activeChar.getBattlefieldChatId() == 0)
+				if(activeChar.getBattlefieldChatId() == 0)
 					return;
 
-				for (final Player player : GameObjectsStorage.getPlayers(false, false))
-					if (!player.getBlockList().contains(activeChar) && !player.isBlockAll() && activeChar.canTalkWith(player) && player.getBattlefieldChatId() == activeChar.getBattlefieldChatId())
+				for(final Player player : GameObjectsStorage.getPlayers(false, false))
+					if(!player.getBlockList().contains(activeChar) && !player.isBlockAll() && activeChar.canTalkWith(player)
+							&& player.getBattlefieldChatId() == activeChar.getBattlefieldChatId())
 					{
 						player.sendPacket(cs);
 					}
 				break;
 			case MPCC_ROOM:
 				final MatchingRoom mpccRoom = activeChar.getMatchingRoom();
-				if (mpccRoom == null || mpccRoom.getType() != MatchingRoom.CC_MATCHING)
+				if(mpccRoom == null || mpccRoom.getType() != MatchingRoom.CC_MATCHING)
 					return;
 
-				for (final Player roomMember : mpccRoom.getPlayers())
+				for(final Player roomMember : mpccRoom.getPlayers())
 				{
-					if (activeChar.canTalkWith(roomMember))
+					if(activeChar.canTalkWith(roomMember))
 					{
 						roomMember.sendPacket(cs);
 					}
@@ -575,16 +576,16 @@ public class Say2C implements IClientIncomingPacket
 				 * ", fake: " + (total - online - offtrade)); return; }
 				 */
 
-				if (!Config.ALLOW_WORLD_CHAT)
+				if(!Config.ALLOW_WORLD_CHAT)
 					return;
 
-				if (activeChar.isInObserverMode())
+				if(activeChar.isInObserverMode())
 				{
 					activeChar.sendPacket(SystemMsg.YOU_CANNOT_CHAT_WHILE_IN_OBSERVATION_MODE);
 					return;
 				}
 
-				if (!activeChar.getAntiFlood().canWorld(text))
+				if(!activeChar.getAntiFlood().canWorld(text))
 					return;
 
 				ChatUtils.announce(activeChar, cs);

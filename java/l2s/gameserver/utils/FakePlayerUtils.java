@@ -53,14 +53,14 @@ public class FakePlayerUtils
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/fake_players/shout_messages.txt");
 			reader = new LineNumberReader(new FileReader(file));
 			String line = null;
-			while ((line = reader.readLine()) != null)
+			while((line = reader.readLine()) != null)
 			{
 				String msg = line.trim();
-				if (!StringUtils.isEmpty(msg))
+				if(!StringUtils.isEmpty(msg))
 					messages.add(msg);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			//
 		}
@@ -70,7 +70,7 @@ public class FakePlayerUtils
 			{
 				reader.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -85,14 +85,14 @@ public class FakePlayerUtils
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/fake_players/private_messages.txt");
 			reader = new LineNumberReader(new FileReader(file));
 			String line = null;
-			while ((line = reader.readLine()) != null)
+			while((line = reader.readLine()) != null)
 			{
 				String msg = line.trim();
-				if (!StringUtils.isEmpty(msg))
+				if(!StringUtils.isEmpty(msg))
 					messages.add(msg);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			//
 		}
@@ -102,7 +102,7 @@ public class FakePlayerUtils
 			{
 				reader.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -117,14 +117,14 @@ public class FakePlayerUtils
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/fake_players/trade_messages.txt");
 			reader = new LineNumberReader(new FileReader(file));
 			String line = null;
-			while ((line = reader.readLine()) != null)
+			while((line = reader.readLine()) != null)
 			{
 				String msg = line.trim();
-				if (!StringUtils.isEmpty(msg))
+				if(!StringUtils.isEmpty(msg))
 					messages.add(msg);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			//
 		}
@@ -134,7 +134,7 @@ public class FakePlayerUtils
 			{
 				reader.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -145,7 +145,7 @@ public class FakePlayerUtils
 
 	public static void writeInPrivateChat(FakeAI ai, String receiver)
 	{
-		if (PM_MESSAGES.length > 0 && Rnd.chance(80))
+		if(PM_MESSAGES.length > 0 && Rnd.chance(80))
 		{
 			ThreadPoolManager.getInstance().schedule(() -> Say2C.writeToChat(ai.getActor(), Rnd.get(PM_MESSAGES), ChatType.TELL, receiver), Rnd.get(3000, 20000));
 		}
@@ -153,11 +153,11 @@ public class FakePlayerUtils
 
 	public static void writeToRandomChat(FakeAI ai)
 	{
-		if (SHOUT_MESSAGES.length > 0 && Rnd.chance(10))
+		if(SHOUT_MESSAGES.length > 0 && Rnd.chance(10))
 		{
 			Say2C.writeToChat(ai.getActor(), Rnd.get(SHOUT_MESSAGES), ChatType.SHOUT, null);
 		}
-		else if (TRADE_MESSAGES.length > 0 && Rnd.chance(10))
+		else if(TRADE_MESSAGES.length > 0 && Rnd.chance(10))
 		{
 			Say2C.writeToChat(ai.getActor(), Rnd.get(TRADE_MESSAGES), ChatType.TRADE, null);
 		}
@@ -169,13 +169,13 @@ public class FakePlayerUtils
 		player.getInventory().writeLock();
 		try
 		{
-			for (ItemInstance item : player.getInventory().getItems())
+			for(ItemInstance item : player.getInventory().getItems())
 			{
-				if (item.isEquipped())
+				if(item.isEquipped())
 					continue;
-				if (player.isAutoShot(item.getItemId()))
+				if(player.isAutoShot(item.getItemId()))
 					continue;
-				if (item.getItemId() == 1785 || item.getItemId() == 3031)
+				if(item.getItemId() == 1785 || item.getItemId() == 3031)
 					continue;
 				player.getInventory().removeItem(item);
 			}
@@ -188,9 +188,9 @@ public class FakePlayerUtils
 		addArrow(player);
 		addShot(player);
 
-		if (ItemFunctions.getItemCount(player, 1785) < 1000)
+		if(ItemFunctions.getItemCount(player, 1785) < 1000)
 			ItemFunctions.addItem(player, 1785, 1000, false);
-		if (ItemFunctions.getItemCount(player, 3031) < 1000)
+		if(ItemFunctions.getItemCount(player, 3031) < 1000)
 			ItemFunctions.addItem(player, 3031, 1000, false);
 	}
 
@@ -227,31 +227,31 @@ public class FakePlayerUtils
 
 		boolean checkAllEquip = (equipedGrade == 0 || equipedGrade < expertiseIndex) && Rnd.chance(player.getLevel());
 
-		if (checkAllEquip)
+		if(checkAllEquip)
 			player.setVar("equiped_grade", expertiseIndex);
 
 		IntList equip = new ArrayIntList();
 
-		if (checkAllEquip || checkAccessory)
+		if(checkAllEquip || checkAccessory)
 			equip.addAll(FakeItemHolder.getInstance().getRandomItems(player, "Accessory", expertiseIndex));
 
-		if (checkAllEquip || checkArmor)
+		if(checkAllEquip || checkArmor)
 			equip.addAll(FakeItemHolder.getInstance().getRandomItems(player, "Armor", expertiseIndex));
 
-		if (checkAllEquip || checkWeapon)
+		if(checkAllEquip || checkWeapon)
 			equip.addAll(FakeItemHolder.getInstance().getRandomItems(player, "Weapon", expertiseIndex));
 
-		if (checkHairs && Rnd.chance(25) || Rnd.chance(5))
+		if(checkHairs && Rnd.chance(25) || Rnd.chance(5))
 		{
 			IntList hairs = FakeItemHolder.getInstance().getHairAccessories();
-			if (!hairs.isEmpty())
+			if(!hairs.isEmpty())
 				equip.add(Rnd.get(hairs.toArray()));
 		}
 
-		if (checkCloak && Rnd.chance(25) || Rnd.chance(5))
+		if(checkCloak && Rnd.chance(25) || Rnd.chance(5))
 		{
 			IntList cloaks = FakeItemHolder.getInstance().getCloaks();
-			if (!cloaks.isEmpty())
+			if(!cloaks.isEmpty())
 				equip.add(Rnd.get(cloaks.toArray()));
 		}
 		return equip;
@@ -260,14 +260,14 @@ public class FakePlayerUtils
 	public static void checkAutoShots(FakeAI ai)
 	{
 		Player player = ai.getActor();
-		for (ItemInstance item : player.getInventory().getItems())
+		for(ItemInstance item : player.getInventory().getItems())
 		{
 			IItemHandler handler = item.getTemplate().getHandler();
-			if (handler != null && handler.isAutoUse())
+			if(handler != null && handler.isAutoUse())
 			{
-				if ((handler instanceof SpiritShotItemHandler) || (handler instanceof BlessedSpiritShotItemHandler))
+				if((handler instanceof SpiritShotItemHandler) || (handler instanceof BlessedSpiritShotItemHandler))
 					player.addAutoShot(item.getItemId(), true, SoulShotType.SPIRITSHOT);
-				else if (handler instanceof SoulShotItemHandler)
+				else if(handler instanceof SoulShotItemHandler)
 					player.addAutoShot(item.getItemId(), true, SoulShotType.SOULSHOT);
 				player.useItem(item, false, false);
 			}
@@ -277,7 +277,7 @@ public class FakePlayerUtils
 	public static boolean addEquip(FakeAI ai, int itemId)
 	{
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(itemId);
-		if (item == null)
+		if(item == null)
 			return false;
 
 		Player player = ai.getActor();
@@ -285,14 +285,14 @@ public class FakePlayerUtils
 		try
 		{
 			ItemInstance itemInstance = player.getInventory().addItem(itemId, 1);
-			if (ItemFunctions.checkIfCanEquip(player, itemInstance) == null)
+			if(ItemFunctions.checkIfCanEquip(player, itemInstance) == null)
 			{
-				if (itemInstance.canBeEnchanted() && itemInstance.getGrade() != ItemGrade.NONE)
+				if(itemInstance.canBeEnchanted() && itemInstance.getGrade() != ItemGrade.NONE)
 				{
 					int enchant = 0;
-					for (int i = 0; i <= 10; i++)
+					for(int i = 0; i <= 10; i++)
 					{
-						if (Rnd.chance(30))
+						if(Rnd.chance(30))
 							enchant++;
 						else
 							break;
@@ -312,11 +312,13 @@ public class FakePlayerUtils
 
 	public static void addArrow(Player player)
 	{
-		if (player.getActiveWeaponTemplate() != null && (player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.BOW || player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.TWOHANDCROSSBOW))
+		if(player.getActiveWeaponTemplate() != null && (player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.BOW
+				|| player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW
+				|| player.getActiveWeaponTemplate().getItemType() == WeaponTemplate.WeaponType.TWOHANDCROSSBOW))
 		{
 			int itemId = 0;
 			int itemId2 = 0;
-			switch (player.getActiveWeaponTemplate().getGrade())
+			switch(player.getActiveWeaponTemplate().getGrade())
 			{
 				case NONE:
 					itemId = 17;
@@ -334,20 +336,20 @@ public class FakePlayerUtils
 					itemId = 1344;
 					break;
 			}
-			if (player.getInventory().getCountOf(itemId) < 1000)
+			if(player.getInventory().getCountOf(itemId) < 1000)
 				ItemFunctions.addItem(player, itemId, 1000, false);
-			if (player.getInventory().getCountOf(itemId2) < 1000)
+			if(player.getInventory().getCountOf(itemId2) < 1000)
 				ItemFunctions.addItem(player, itemId2, 1000, false);
 		}
 	}
 
 	public static void addShot(Player player)
 	{
-		if (player.getActiveWeaponTemplate() != null)
+		if(player.getActiveWeaponTemplate() != null)
 		{
 			int itemIdSS = 0;
 			int itemIdBSS = 0;
-			switch (player.getActiveWeaponTemplate().getGrade())
+			switch(player.getActiveWeaponTemplate().getGrade())
 			{
 				case NONE:
 					itemIdSS = 1835;
@@ -371,16 +373,16 @@ public class FakePlayerUtils
 					break;
 			}
 
-			if (itemIdSS > 0)
+			if(itemIdSS > 0)
 			{
-				if (player.getInventory().getCountOf(itemIdSS) < 3000)
+				if(player.getInventory().getCountOf(itemIdSS) < 3000)
 					ItemFunctions.addItem(player, itemIdSS, 3000, false);
 				player.addAutoShot(itemIdSS, true, SoulShotType.SOULSHOT);
 			}
 
-			if (itemIdBSS > 0)
+			if(itemIdBSS > 0)
 			{
-				if (player.getInventory().getCountOf(itemIdBSS) < 1000)
+				if(player.getInventory().getCountOf(itemIdBSS) < 1000)
 					ItemFunctions.addItem(player, itemIdBSS, 1000, false);
 				player.addAutoShot(itemIdBSS, true, SoulShotType.SPIRITSHOT);
 			}
@@ -390,7 +392,7 @@ public class FakePlayerUtils
 	public static void setProf(Player player)
 	{
 		List<Integer> allowClassIds = getAllowClassIds(player);
-		if (!allowClassIds.isEmpty())
+		if(!allowClassIds.isEmpty())
 		{
 			int classId = allowClassIds.get(Rnd.get(allowClassIds.size()));
 			player.setClassId(classId, true);
@@ -406,14 +408,15 @@ public class FakePlayerUtils
 		int playerClassLevel = playerClassId.getClassLevel().ordinal();
 		int playerLevel = player.getLevel();
 
-		if (playerLevel >= 20 && playerClassLevel == 0 || playerLevel >= 40 && playerClassLevel == 1 || playerLevel >= 76 && playerClassLevel == 2 || playerLevel >= 85 && playerClassLevel == 3)
+		if(playerLevel >= 20 && playerClassLevel == 0 || playerLevel >= 40 && playerClassLevel == 1 || playerLevel >= 76 && playerClassLevel == 2
+				|| playerLevel >= 85 && playerClassLevel == 3)
 		{
-			for (ClassId classId : ClassId.VALUES)
+			for(ClassId classId : ClassId.VALUES)
 			{
-				if (classId.isDummy())
+				if(classId.isDummy())
 					continue;
 
-				switch (classId)
+				switch(classId)
 				{
 					case WARLOCK:
 					case CLERIC:
@@ -425,7 +428,7 @@ public class FakePlayerUtils
 						continue;
 				}
 
-				if (classId.childOf(playerClassId) && classId.getClassLevel().ordinal() == playerClassId.getClassLevel().ordinal() + 1)
+				if(classId.childOf(playerClassId) && classId.getClassLevel().ordinal() == playerClassId.getClassLevel().ordinal() + 1)
 					allowClassId.add(classId.getId());
 			}
 		}

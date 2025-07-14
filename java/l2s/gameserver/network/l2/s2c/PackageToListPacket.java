@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collections;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 
 /**
@@ -23,7 +23,7 @@ public class PackageToListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_characters.size());
-		for (Map.Entry<Integer, String> entry : _characters.entrySet())
+		for(Map.Entry<Integer, String> entry : _characters.entrySet())
 		{
 			packetWriter.writeD(entry.getKey());
 			packetWriter.writeS(entry.getValue());

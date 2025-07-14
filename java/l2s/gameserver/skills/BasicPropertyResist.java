@@ -53,7 +53,7 @@ public class BasicPropertyResist
 	public synchronized void increaseResistLevel()
 	{
 		// Check if the level needs to be reset due to timer warn off.
-		if (isExpired())
+		if(isExpired())
 		{
 			_resistanceLevel = 1;
 			_resistanceEndTime = Instant.now().plus(RESIST_DURATION);

@@ -15,7 +15,7 @@ public class RequestExChatBackgroundSetting implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		nCurrentChatBackground = packet.readD();
-		bEnable = packet.readC()==1;
+		bEnable = packet.readC() == 1;
 		return true;
 	}
 

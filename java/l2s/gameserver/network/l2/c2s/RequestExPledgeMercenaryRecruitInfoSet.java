@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -30,25 +31,25 @@ public class RequestExPledgeMercenaryRecruitInfoSet implements IClientIncomingPa
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, castleId);
-		if (castle == null)
+		if(castle == null)
 			return;
 
-		if (castle.getId() != 3 && castle.getId() != 7)
+		if(castle.getId() != 3 && castle.getId() != 7)
 		{
 			activeChar.sendPacket(new CustomMessage("l2s.gameserver.model.entity.siege.Siege.NoMercenariesHired"));
 			return;
 		}
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
-		if (siegeEvent == null)
+		if(siegeEvent == null)
 			return;
 
 		Clan playerClan = activeChar.getClan();
-		if (playerClan == null)
+		if(playerClan == null)
 		{
 			activeChar.sendPacket(SystemMsg.TO_RECRUIT_MERCENARIES_CLANS_MUST_PARTICIPATE_IN_THE_CASTLE_SIEGE_);
 			return;

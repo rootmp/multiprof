@@ -28,14 +28,14 @@ public class SelectorStats
 
 	public void increaseIncomingBytes(int size)
 	{
-		if (size > _bytesMaxPerRead.get())
+		if(size > _bytesMaxPerRead.get())
 			_bytesMaxPerRead.set(size);
 		_incomingBytesTotal.addAndGet(size);
 	}
 
 	public void increaseOutgoingBytes(int size)
 	{
-		if (size > _bytesMaxPerWrite.get())
+		if(size > _bytesMaxPerWrite.get())
 			_bytesMaxPerWrite.set(size);
 		_outgoingBytesTotal.addAndGet(size);
 	}

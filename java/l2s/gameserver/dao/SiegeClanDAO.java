@@ -50,19 +50,19 @@ public class SiegeClanDAO
 			statement.setString(2, name);
 			rset = statement.executeQuery();
 			siegeClans = new ArrayList<SiegeClanObject>();
-			while (rset.next())
+			while(rset.next())
 			{
 				int clanId = rset.getInt("clan_id");
 				long param = rset.getLong("param");
 				long date = rset.getLong("date");
 				SiegeClanObject object = residence.getSiegeEvent().newSiegeClan(name, clanId, param, date);
-				if (object != null)
+				if(object != null)
 					siegeClans.add(object);
 				else
 					_log.info("SiegeClanDAO#load(Residence, String): null clan: " + clanId + "; residence: " + residence.getId());
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("SiegeClanDAO#load(Residence, String): " + e, e);
 		}
@@ -88,7 +88,7 @@ public class SiegeClanDAO
 			statement.setLong(5, siegeClan.getDate());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("SiegeClanDAO#insert(Residence, SiegeClan): " + e, e);
 		}
@@ -111,7 +111,7 @@ public class SiegeClanDAO
 			statement.setString(3, siegeClan.getType());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("SiegeClanDAO#delete(Residence, SiegeClan): " + e, e);
 		}
@@ -132,7 +132,7 @@ public class SiegeClanDAO
 			statement.setInt(1, residence.getId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("SiegeClanDAO#delete(Residence): " + e, e);
 		}
@@ -156,7 +156,7 @@ public class SiegeClanDAO
 			statement.setInt(4, siegeClan.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("SiegeClanDAO#update(Residence, SiegeClan): " + e, e);
 		}

@@ -16,7 +16,7 @@ public class ConditionPlayerClassType extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		Player player = env.character.getPlayer();

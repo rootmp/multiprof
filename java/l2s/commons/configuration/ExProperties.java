@@ -29,10 +29,10 @@ public class ExProperties extends Properties
 		{
 			try
 			{
-				if (is != null)
+				if(is != null)
 					is.close();
 			}
-			catch (IOException ioe)
+			catch(IOException ioe)
 			{
 				//
 			}
@@ -41,33 +41,25 @@ public class ExProperties extends Properties
 
 	public static boolean parseBoolean(String s)
 	{
-		switch (s.length())
+		switch(s.length())
 		{
 			case 1:
 			{
 				char ch0 = s.charAt(0);
-				if (ch0 == 'y' || ch0 == 'Y' || ch0 == '1')
-				{
-					return true;
-				}
-				if (ch0 == 'n' || ch0 == 'N' || ch0 == '0')
-				{
-					return false;
-				}
+				if(ch0 == 'y' || ch0 == 'Y' || ch0 == '1')
+				{ return true; }
+				if(ch0 == 'n' || ch0 == 'N' || ch0 == '0')
+				{ return false; }
 				break;
 			}
 			case 2:
 			{
 				char ch0 = s.charAt(0);
 				char ch1 = s.charAt(1);
-				if ((ch0 == 'o' || ch0 == 'O') && (ch1 == 'n' || ch1 == 'N'))
-				{
-					return true;
-				}
-				if ((ch0 == 'n' || ch0 == 'N') && (ch1 == 'o' || ch1 == 'O'))
-				{
-					return false;
-				}
+				if((ch0 == 'o' || ch0 == 'O') && (ch1 == 'n' || ch1 == 'N'))
+				{ return true; }
+				if((ch0 == 'n' || ch0 == 'N') && (ch1 == 'o' || ch1 == 'O'))
+				{ return false; }
 				break;
 			}
 			case 3:
@@ -75,14 +67,10 @@ public class ExProperties extends Properties
 				char ch0 = s.charAt(0);
 				char ch1 = s.charAt(1);
 				char ch2 = s.charAt(2);
-				if ((ch0 == 'y' || ch0 == 'Y') && (ch1 == 'e' || ch1 == 'E') && (ch2 == 's' || ch2 == 'S'))
-				{
-					return true;
-				}
-				if ((ch0 == 'o' || ch0 == 'O') && (ch1 == 'f' || ch1 == 'F') && (ch2 == 'f' || ch2 == 'F'))
-				{
-					return false;
-				}
+				if((ch0 == 'y' || ch0 == 'Y') && (ch1 == 'e' || ch1 == 'E') && (ch2 == 's' || ch2 == 'S'))
+				{ return true; }
+				if((ch0 == 'o' || ch0 == 'O') && (ch1 == 'f' || ch1 == 'F') && (ch2 == 'f' || ch2 == 'F'))
+				{ return false; }
 				break;
 			}
 			case 4:
@@ -91,10 +79,8 @@ public class ExProperties extends Properties
 				char ch1 = s.charAt(1);
 				char ch2 = s.charAt(2);
 				char ch3 = s.charAt(3);
-				if ((ch0 == 't' || ch0 == 'T') && (ch1 == 'r' || ch1 == 'R') && (ch2 == 'u' || ch2 == 'U') && (ch3 == 'e' || ch3 == 'E'))
-				{
-					return true;
-				}
+				if((ch0 == 't' || ch0 == 'T') && (ch1 == 'r' || ch1 == 'R') && (ch2 == 'u' || ch2 == 'U') && (ch3 == 'e' || ch3 == 'E'))
+				{ return true; }
 				break;
 			}
 			case 5:
@@ -104,10 +90,9 @@ public class ExProperties extends Properties
 				char ch2 = s.charAt(2);
 				char ch3 = s.charAt(3);
 				char ch4 = s.charAt(4);
-				if ((ch0 == 'f' || ch0 == 'F') && (ch1 == 'a' || ch1 == 'A') && (ch2 == 'l' || ch2 == 'L') && (ch3 == 's' || ch3 == 'S') && (ch4 == 'e' || ch4 == 'E'))
-				{
-					return false;
-				}
+				if((ch0 == 'f' || ch0 == 'F') && (ch1 == 'a' || ch1 == 'A') && (ch2 == 'l' || ch2 == 'L') && (ch3 == 's' || ch3 == 'S')
+						&& (ch4 == 'e' || ch4 == 'E'))
+				{ return false; }
 				break;
 			}
 		}
@@ -121,7 +106,7 @@ public class ExProperties extends Properties
 
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 			val = parseBoolean(value);
 
 		return val;
@@ -133,7 +118,7 @@ public class ExProperties extends Properties
 
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 			val = Integer.parseInt(value);
 
 		return val;
@@ -145,7 +130,7 @@ public class ExProperties extends Properties
 
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 			val = Long.parseLong(value);
 
 		return val;
@@ -157,7 +142,7 @@ public class ExProperties extends Properties
 
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 			val = Double.parseDouble(value);
 
 		return val;
@@ -173,7 +158,7 @@ public class ExProperties extends Properties
 		String[] val = defaultValue;
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 			val = value.split(delimiter);
 
 		return val;
@@ -189,11 +174,11 @@ public class ExProperties extends Properties
 		boolean[] val = defaultValue;
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 		{
 			String[] values = value.split(delimiter);
 			val = new boolean[values.length];
-			for (int i = 0; i < val.length; i++)
+			for(int i = 0; i < val.length; i++)
 				val[i] = parseBoolean(values[i]);
 		}
 
@@ -210,11 +195,11 @@ public class ExProperties extends Properties
 		int[] val = defaultValue;
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 		{
 			String[] values = value.split(delimiter);
 			val = new int[values.length];
-			for (int i = 0; i < val.length; i++)
+			for(int i = 0; i < val.length; i++)
 				val[i] = Integer.parseInt(values[i]);
 		}
 
@@ -231,11 +216,11 @@ public class ExProperties extends Properties
 		long[] val = defaultValue;
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 		{
 			String[] values = value.split(delimiter);
 			val = new long[values.length];
-			for (int i = 0; i < val.length; i++)
+			for(int i = 0; i < val.length; i++)
 				val[i] = Long.parseLong(values[i]);
 		}
 
@@ -252,11 +237,11 @@ public class ExProperties extends Properties
 		double[] val = defaultValue;
 		String value;
 
-		if ((value = super.getProperty(name, null)) != null && !value.isEmpty())
+		if((value = super.getProperty(name, null)) != null && !value.isEmpty())
 		{
 			String[] values = value.split(delimiter);
 			val = new double[values.length];
-			for (int i = 0; i < val.length; i++)
+			for(int i = 0; i < val.length; i++)
 				val[i] = Double.parseDouble(values[i]);
 		}
 

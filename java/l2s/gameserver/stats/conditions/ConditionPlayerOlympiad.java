@@ -16,7 +16,7 @@ public class ConditionPlayerOlympiad extends Condition
 	protected boolean testImpl(Env env)
 	{
 		final Player player = env.character.getPlayer();
-		if (player != null)
+		if(player != null)
 			return player.isInOlympiadMode() == _value;
 		return !_value;
 	}

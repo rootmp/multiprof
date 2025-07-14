@@ -1,7 +1,7 @@
 package l2s.gameserver.network.l2.s2c.enchant;
 
-import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author nexvill
@@ -18,7 +18,7 @@ public class ExEnchantChallengePointInfo implements IClientOutgoingPacket
 	{
 		int count = 1;
 		packetWriter.writeD(count);
-		for (int i = 0; i < count; i++)
+		for(int i = 0; i < count; i++)
 		{
 			packetWriter.writeD(0); // points group id
 			packetWriter.writeD(0); // challenge point

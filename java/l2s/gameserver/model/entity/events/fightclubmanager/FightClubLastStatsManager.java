@@ -66,7 +66,7 @@ public class FightClubLastStatsManager
 	{
 		FightClubLastPlayerStats myStat = getMyStat(player);
 
-		if (myStat == null)
+		if(myStat == null)
 		{
 			myStat = new FightClubLastPlayerStats(player, type.getName(), score);
 			_allStats.add(myStat);
@@ -79,12 +79,10 @@ public class FightClubLastStatsManager
 
 	private FightClubLastPlayerStats getMyStat(Player player)
 	{
-		for (FightClubLastPlayerStats stat : _allStats)
+		for(FightClubLastPlayerStats stat : _allStats)
 		{
-			if (stat.isMyStat(player))
-			{
-				return stat;
-			}
+			if(stat.isMyStat(player))
+			{ return stat; }
 		}
 		return null;
 	}
@@ -93,7 +91,7 @@ public class FightClubLastStatsManager
 	{
 		List<FightClubLastPlayerStats> listToSort = new ArrayList<FightClubLastPlayerStats>();
 		listToSort.addAll(_allStats);
-		if (sortByScore)
+		if(sortByScore)
 		{
 			Collections.sort(listToSort, new SortRanking());
 		}
@@ -109,7 +107,7 @@ public class FightClubLastStatsManager
 
 	public static FightClubLastStatsManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 		{
 			_instance = new FightClubLastStatsManager();
 		}

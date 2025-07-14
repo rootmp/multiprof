@@ -20,12 +20,12 @@ public class ConditionTargetNpcClass extends Condition
 		{
 			classType = (Class<NpcInstance>) Class.forName("l2s.gameserver.model.instances." + name + "Instance");
 		}
-		catch (ClassNotFoundException e)
+		catch(ClassNotFoundException e)
 		{
 			classType = (Class<NpcInstance>) Scripts.getInstance().getClasses().get("npc.model." + name + "Instance");
 		}
 
-		if (classType == null)
+		if(classType == null)
 			throw new IllegalArgumentException("Not found type class for type: " + name + ".");
 		else
 			_npcClass = classType;

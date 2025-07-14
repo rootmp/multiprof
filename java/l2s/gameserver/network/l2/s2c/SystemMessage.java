@@ -8,7 +8,6 @@ import org.apache.commons.lang3.StringUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
-import l2s.gameserver.GameServer;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.instances.DoorInstance;
@@ -3110,7 +3109,7 @@ public class SystemMessage implements IClientOutgoingPacket
 	public static final int YOUR_LEVEL_CANNOT_PURCHASE_THIS_ITEM = 6129;
 	//Clan's Level is too low
 	public static final int CLANS_LEVEL_IS_TOO_LOW = 13391;
-	
+
 	public static final int YOU_HAVE_EXCEEDED_THE_CORRECT_CALCULATION_RANGE_PLEASE_ENTER_AGAIN = 3093; // Вы превысили лимит цены. Пожалуйста, введите цену еще раз.
 	public static final int PLEASE_HELP_RAISE_REINDEER_FOR_SANTA_S_CHRISTMAS_DELIVERY = 6029; // Позаботьтесь о Рудольфе и вырастите его! Он нужен для доставки новогодних подарков.
 	public static final int SANTA_HAS_STARTED_DELIVERING_THE_CHRISTMAS_GIFTS_TO_ADEN = 6030; // Седобородый Дед Мороз начинает развозить новогодние подарки по миру Аден.
@@ -3148,7 +3147,7 @@ public class SystemMessage implements IClientOutgoingPacket
 	public static final int YOU_EXCEEDED_THE_LIMIT_AND_CANNOT_COMPLETE_THE_TASK = 4462;
 	public static final int YOU_HAVE_ACQUIRED_S1_CRAFT_SCALE_POINTS = 13100;
 	public static final int ITEMS_CAN_NO_LONGER_BE_DEPOSITED = 13101;
-	
+
 	public static final int YOU_CANNOT_DO_THAT_WHILE_IN_A_PRIVATE_STORE_OR_PRIVATE_WORKSHOP = 4217;
 
 	public static final int YOU_GET_THE_LETTER_COLLECTOR_S_REWARD = 13071; //You get the Letter Collector's reward
@@ -3180,7 +3179,7 @@ public class SystemMessage implements IClientOutgoingPacket
 		args.add(new Arg(TYPE_PLAYER_NAME, StringUtils.defaultString(text)));
 		return this;
 	}
-	
+
 	public SystemMessage addString(String text)
 	{
 		args.add(new Arg(TYPE_TEXT, StringUtils.defaultString(text)));
@@ -3207,8 +3206,9 @@ public class SystemMessage implements IClientOutgoingPacket
 
 	public SystemMessage addName(Creature cha)
 	{
-		return addName(cha,null);
+		return addName(cha, null);
 	}
+
 	/**
 	 * Устанавливает имя если это playable или id если это npc
 	 */
@@ -3230,9 +3230,9 @@ public class SystemMessage implements IClientOutgoingPacket
 		}
 		if(cha.isPlayer())
 		{
-			if(receiver!=null && receiver.isPlayer())
+			if(receiver != null && receiver.isPlayer())
 				return addPlayerName(cha.getVisibleName(receiver.getPlayer()));
-			
+
 			return addPlayerName(cha.getName());
 		}
 		return addString(cha.getName());
@@ -3264,7 +3264,9 @@ public class SystemMessage implements IClientOutgoingPacket
 
 	public SystemMessage addSkillName(int id, int level)
 	{
-		args.add(new Arg(TYPE_SKILL_NAME, new int[] { id, level }));
+		args.add(new Arg(TYPE_SKILL_NAME, new int[] {
+				id, level
+		}));
 		return this;
 	}
 
@@ -3407,7 +3409,7 @@ public class SystemMessage implements IClientOutgoingPacket
 			obj = _obj;
 		}
 	}
-	
+
 	@Override
 	public ByteBuf getOpcodes()
 	{
@@ -3421,7 +3423,7 @@ public class SystemMessage implements IClientOutgoingPacket
 				opcodes.writeShortLE(exOpcode);
 			return opcodes.retain();
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{

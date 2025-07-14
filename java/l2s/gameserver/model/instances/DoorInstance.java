@@ -41,7 +41,7 @@ public final class DoorInstance extends Creature
 		@Override
 		public void run()
 		{
-			if (_open)
+			if(_open)
 				openMe(null, true);
 			else
 				closeMe(null, true);
@@ -95,7 +95,7 @@ public final class DoorInstance extends Creature
 	 */
 	public void scheduleAutoAction(boolean open, long actionDelay)
 	{
-		if (_autoActionTask != null)
+		if(_autoActionTask != null)
 		{
 			_autoActionTask.cancel(false);
 			_autoActionTask = null;
@@ -119,25 +119,25 @@ public final class DoorInstance extends Creature
 	@Override
 	public boolean isAttackable(Creature attacker)
 	{
-		if (attacker == null || isOpen() || isInvulnerable())
+		if(attacker == null || isOpen() || isInvulnerable())
 			return false;
 
-	    if (attacker.isPlayable() && attacker.getPlayer().isInFightClub())
-	        return attacker.getPlayer().getFightClubEvent().canAttackDoor(this, attacker); 
-	    
-		for (SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
+		if(attacker.isPlayable() && attacker.getPlayer().isInFightClub())
+			return attacker.getPlayer().getFightClubEvent().canAttackDoor(this, attacker);
+
+		for(SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
 		{
-			switch (getDoorType())
+			switch(getDoorType())
 			{
 				case WALL:
-					if (attacker.isSummon() && siegeEvent.containsSiegeSummon((SummonInstance) attacker))
+					if(attacker.isSummon() && siegeEvent.containsSiegeSummon((SummonInstance) attacker))
 						return true;
 					break;
 				case DOOR:
 					Player player = attacker.getPlayer();
-					if (player == null)
+					if(player == null)
 						return false;
-					if (siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, player.getClan()) != null)
+					if(siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, player.getClan()) != null)
 						return false;
 					break;
 			}
@@ -147,8 +147,7 @@ public final class DoorInstance extends Creature
 
 	@Override
 	public void sendChanges()
-	{
-	}
+	{}
 
 	@Override
 	public ItemInstance getActiveWeaponInstance()
@@ -177,24 +176,24 @@ public final class DoorInstance extends Creature
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, DoorInstance.class, this, true))
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, DoorInstance.class, this, true))
 			return;
 
-		if (this != player.getTarget())
+		if(this != player.getTarget())
 		{
 			player.setTarget(this);
 		}
 		else
 		{
-			if (isAutoAttackable(player))
+			if(isAutoAttackable(player))
 			{
 				player.getAI().Attack(this, false, shift);
 				return;
 			}
 
-			if (!player.checkInteractionDistance(this))
+			if(!player.checkInteractionDistance(this))
 			{
-				if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
+				if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_INTERACT)
 					player.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this, null);
 				return;
 			}
@@ -206,10 +205,10 @@ public final class DoorInstance extends Creature
 	@Override
 	public DoorAI getAI()
 	{
-		if (_ai == null)
+		if(_ai == null)
 			synchronized (this)
 			{
-				if (_ai == null)
+				if(_ai == null)
 					_ai = getTemplate().getNewAI(this);
 			}
 
@@ -225,11 +224,11 @@ public final class DoorInstance extends Creature
 		 * getTemplate().isReversed() ? !isOpen() : isOpen()); }
 		 */
 
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 		{
 			player.sendPacket(new StaticObjectPacket(this, player));
 			player.sendPacket(new DoorStatusUpdatePacket(this, player));
-			if (oe != null)
+			if(oe != null)
 			{
 				player.sendPacket(oe);
 			}
@@ -253,18 +252,18 @@ public final class DoorInstance extends Creature
 
 	public boolean openMe(Player opener, boolean autoClose)
 	{
-		if (!setOpen(true))
+		if(!setOpen(true))
 			return false;
 
 		broadcastStatusUpdate();
 
-		if (autoClose && getTemplate().getCloseTime() > 0)
+		if(autoClose && getTemplate().getCloseTime() > 0)
 			scheduleAutoAction(false, this.getTemplate().getCloseTime() * 1000L);
 
 		getAI().onEvtOpen(opener);
 
-		for (Listener<Creature> l : getListeners().getListeners())
-			if (l instanceof OnOpenCloseListener)
+		for(Listener<Creature> l : getListeners().getListeners())
+			if(l instanceof OnOpenCloseListener)
 				((OnOpenCloseListener) l).onOpen(this);
 
 		return true;
@@ -277,15 +276,15 @@ public final class DoorInstance extends Creature
 
 	public boolean closeMe(Player closer, boolean autoOpen)
 	{
-		if (!setOpen(false))
+		if(!setOpen(false))
 			return false;
 
 		broadcastStatusUpdate();
 
-		if (autoOpen && getTemplate().getOpenTime() > 0)
+		if(autoOpen && getTemplate().getOpenTime() > 0)
 		{
 			long openDelay = getTemplate().getOpenTime() * 1000L;
-			if (getTemplate().getRandomTime() > 0)
+			if(getTemplate().getRandomTime() > 0)
 				openDelay += Rnd.get(0, getTemplate().getRandomTime()) * 1000L;
 
 			scheduleAutoAction(true, openDelay);
@@ -293,8 +292,8 @@ public final class DoorInstance extends Creature
 
 		getAI().onEvtClose(closer);
 
-		for (Listener<Creature> l : getListeners().getListeners())
-			if (l instanceof OnOpenCloseListener)
+		for(Listener<Creature> l : getListeners().getListeners())
+			if(l instanceof OnOpenCloseListener)
 				((OnOpenCloseListener) l).onClose(this);
 
 		return true;
@@ -333,7 +332,7 @@ public final class DoorInstance extends Creature
 	@Override
 	protected void onDespawn()
 	{
-		if (_autoActionTask != null)
+		if(_autoActionTask != null)
 		{
 			_autoActionTask.cancel(false);
 			_autoActionTask = null;
@@ -371,13 +370,13 @@ public final class DoorInstance extends Creature
 	@Override
 	public boolean isInvulnerable()
 	{
-		if (!getTemplate().isHPVisible())
+		if(!getTemplate().isHPVisible())
 			return true;
 		else
 		{
-			for (SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
+			for(SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
 			{
-				if (siegeEvent.isInProgress())
+				if(siegeEvent.isInProgress())
 					return false;
 			}
 			return super.isInvulnerable();
@@ -391,15 +390,15 @@ public final class DoorInstance extends Creature
 	 */
 	protected synchronized boolean setOpen(boolean open)
 	{
-		if (!open && isDead()) // Мертвую дверь нельзя закрыть
+		if(!open && isDead()) // Мертвую дверь нельзя закрыть
 			return false;
 
-		if (!_open.compareAndSet(!open, open))
+		if(!_open.compareAndSet(!open, open))
 			return false;
 
-		if (open)
+		if(open)
 		{
-			if (!deactivateGeoControl())
+			if(!deactivateGeoControl())
 			{
 				_open.set(false);
 				return false;
@@ -408,7 +407,7 @@ public final class DoorInstance extends Creature
 		}
 		else
 		{
-			if (!activateGeoControl())
+			if(!activateGeoControl())
 			{
 				_open.set(true);
 				return false;

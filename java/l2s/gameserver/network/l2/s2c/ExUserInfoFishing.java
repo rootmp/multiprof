@@ -16,7 +16,7 @@ public class ExUserInfoFishing implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_activeChar.getObjectId());
-		if (_activeChar.getFishing().isInProcess())
+		if(_activeChar.getFishing().isInProcess())
 		{
 			packetWriter.writeC(1);
 			packetWriter.writeD(_activeChar.getFishing().getHookLocation().getX());

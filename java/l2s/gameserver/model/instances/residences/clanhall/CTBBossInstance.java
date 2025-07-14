@@ -32,7 +32,7 @@ public abstract class CTBBossInstance extends MonsterInstance
 	@Override
 	public void reduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean canReflectAndAbsorb, boolean transferDamage, boolean isDot, boolean sendReceiveMessage, boolean sendGiveMessage, boolean crit, boolean miss, boolean shld, double elementalDamage, boolean elementalCrit)
 	{
-		if (attacker.getLevel() > (getLevel() + 8) && !attacker.getAbnormalList().contains(SKILL.getId()))
+		if(attacker.getLevel() > (getLevel() + 8) && !attacker.getAbnormalList().contains(SKILL.getId()))
 		{
 			doCast(SKILL, attacker, false);
 			return;
@@ -45,10 +45,10 @@ public abstract class CTBBossInstance extends MonsterInstance
 	public boolean isAttackable(Creature attacker)
 	{
 		CTBSiegeClanObject clan = _matchTeamObject.getSiegeClan();
-		if (clan != null && attacker.isPlayable())
+		if(clan != null && attacker.isPlayable())
 		{
 			Player player = attacker.getPlayer();
-			if (player.getClan() == clan.getClan())
+			if(player.getClan() == clan.getClan())
 				return false;
 		}
 		return true;

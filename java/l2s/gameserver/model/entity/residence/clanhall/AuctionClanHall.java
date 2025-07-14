@@ -44,7 +44,7 @@ public class AuctionClanHall extends NormalClanHall
 		super.init();
 
 		// если это Аукционный КХ, и есть овнер, и КХ, непродается
-		if (getSiegeEvent() != null && getSiegeEvent().getClass() == ClanHallAuctionEvent.class && _owner != null && getAuctionLength() == 0)
+		if(getSiegeEvent() != null && getSiegeEvent().getClass() == ClanHallAuctionEvent.class && _owner != null && getAuctionLength() == 0)
 			startCycleTask();
 	}
 
@@ -59,7 +59,7 @@ public class AuctionClanHall extends NormalClanHall
 	{
 		super.changeOwner(clan);
 
-		if (clan == null && getSiegeEvent().getClass() == ClanHallAuctionEvent.class)
+		if(clan == null && getSiegeEvent().getClass() == ClanHallAuctionEvent.class)
 			getSiegeEvent().reCalcNextTime(false);
 	}
 
@@ -118,9 +118,9 @@ public class AuctionClanHall extends NormalClanHall
 	{
 		super.chanceCycle();
 
-		if (getPaidCycle() >= REWARD_CYCLE)
+		if(getPaidCycle() >= REWARD_CYCLE)
 		{
-			if (_owner.getWarehouse().getCountOf(ItemTemplate.ITEM_ID_ADENA) > _rentalFee)
+			if(_owner.getWarehouse().getCountOf(ItemTemplate.ITEM_ID_ADENA) > _rentalFee)
 			{
 				_owner.getWarehouse().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, _rentalFee);
 				setPaidCycle(0);
@@ -129,7 +129,7 @@ public class AuctionClanHall extends NormalClanHall
 			{
 				UnitMember member = _owner.getLeader();
 
-				if (member.isOnline())
+				if(member.isOnline())
 					member.getPlayer().sendPacket(SystemMsg.THE_CLAN_HALL_FEE_IS_ONE_WEEK_OVERDUE_THEREFORE_THE_CLAN_HALL_OWNERSHIP_HAS_BEEN_REVOKED);
 				else
 					PlayerMessageStack.getInstance().mailto(member.getObjectId(), SystemMsg.THE_CLAN_HALL_FEE_IS_ONE_WEEK_OVERDUE_THEREFORE_THE_CLAN_HALL_OWNERSHIP_HAS_BEEN_REVOKED.packet(null));

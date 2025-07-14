@@ -28,9 +28,9 @@ public class SubjugationStartTask extends AutomaticTask
 	{
 		_log.info("Subjugation Start Global Task: launched.");
 		Config.SUBJUGATION_ENABLED = true;
-		for (int i = 1; i < 8; i++)
+		for(int i = 1; i < 8; i++)
 		{
-			for (Player player : GameObjectsStorage.getPlayers(true, true))
+			for(Player player : GameObjectsStorage.getPlayers(true, true))
 			{
 				player.setVar(PlayerVariables.SUBJUGATION_ZONE_POINTS + "_" + i, 0);
 				player.setVar(PlayerVariables.SUBJUGATION_ZONE_KEYS_USED + "_" + i, 0);

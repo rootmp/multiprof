@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,20 +54,20 @@ public class RequestExMagicSkillUseGround implements IClientIncomingPacket
 	public void run(GameClient client) throws InterruptedException
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		Skill skill = SkillHolder.getInstance().getSkill(_skillId, activeChar.getSkillLevel(_skillId));
-		if (skill != null)
+		if(skill != null)
 		{
 			// В режиме трансформации доступны только скилы трансформы
-			if (activeChar.isTransformed() && !activeChar.getAllSkills().contains(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill)))
+			if(activeChar.isTransformed() && !activeChar.getAllSkills().contains(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill)))
 				return;
 
 			Creature target = skill.getAimingTarget(activeChar, activeChar.getTarget());
@@ -77,38 +78,38 @@ public class RequestExMagicSkillUseGround implements IClientIncomingPacket
 			activeChar.broadcastPacketToOthers(new ValidateLocationPacket(activeChar));
 			activeChar.setGroundSkillLoc(_loc);
 			activeChar.getAI().Cast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill), target, _ctrlPressed, _shiftPressed);
-			if (skill.getId() == 47001)
+			if(skill.getId() == 47001)
 			{
 				TriggerInfo trigger = new TriggerInfo(47020, 1, TriggerType.ON_FINISH_CAST, 100, false, 0, false, "");
 				skill.addTrigger(trigger);
 				GameObject oldTarget = activeChar.getTarget();
 				List<Creature> characters = new ArrayList<Creature>();
 				List<Creature> fullList = new ArrayList<Creature>();
-				for (Creature cr : World.getAroundCharacters(_loc, activeChar.getObjectId(), activeChar.getReflectionId(), 200, 300))
+				for(Creature cr : World.getAroundCharacters(_loc, activeChar.getObjectId(), activeChar.getReflectionId(), 200, 300))
 				{
-					if (activeChar.isInRange(_loc, 1500))
+					if(activeChar.isInRange(_loc, 1500))
 					{
 						characters.add(cr);
 						fullList.add(cr);
 					}
 				}
-				for (Creature cr : World.getAroundCharacters(activeChar, 100, 300))
+				for(Creature cr : World.getAroundCharacters(activeChar, 100, 300))
 				{
-					if (activeChar.isInRange(_loc, 1500))
+					if(activeChar.isInRange(_loc, 1500))
 					{
-						if (!characters.contains(cr))
+						if(!characters.contains(cr))
 						{
 							fullList.add(cr);
 						}
 					}
 				}
 				SkillEntry entry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 47001, 1);
-				activeChar.broadcastPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), entry.getDisplayId(), entry.getDisplayLevel(),0, fullList, SkillCastingType.NORMAL));
+				activeChar.broadcastPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), entry.getDisplayId(), entry.getDisplayLevel(), 0, fullList, SkillCastingType.NORMAL));
 				activeChar.sendPacket(new ExMagicSkillUseGround(activeChar, _loc));
 				Thread.sleep(skill.getHitTime() + skill.getCoolTime() + 100);
-				for (Creature cr : fullList)
+				for(Creature cr : fullList)
 				{
-					if (activeChar.isInRange(_loc, 1500))
+					if(activeChar.isInRange(_loc, 1500))
 					{
 						activeChar.setTarget(cr);
 						activeChar.useTriggers(cr, TriggerType.ON_FINISH_CAST, null, skill, 0);

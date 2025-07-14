@@ -20,7 +20,7 @@ public class RequestExRelicsConfirmCombination implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 	}

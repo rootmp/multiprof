@@ -38,14 +38,12 @@ public class AdminAttributes implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
-		{
-			return false;
-		}
+		if(!activeChar.getPlayerAccess().CanEditChar)
+		{ return false; }
 
 		int armorType = -1;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_attribute:
 				showMainPage(activeChar);
@@ -100,7 +98,7 @@ public class AdminAttributes implements IAdminCommandHandler
 				break;
 		}
 
-		if ((armorType == -1) || (wordList.length < 7))
+		if((armorType == -1) || (wordList.length < 7))
 		{
 			showMainPage(activeChar);
 			return true;
@@ -114,7 +112,8 @@ public class AdminAttributes implements IAdminCommandHandler
 			int wind = Integer.parseInt(wordList[4]);
 			int holy = Integer.parseInt(wordList[5]);
 			int dark = Integer.parseInt(wordList[6]);
-			if ((fire < 0) || (water < 0) || (earth < 0) || (wind < 0) || (holy < 0) || (dark < 0) || (fire > 65535) || (water > 65535) || (earth > 65535) || (wind > 65535) || (holy > 65535) || (dark > 65535))
+			if((fire < 0) || (water < 0) || (earth < 0) || (wind < 0) || (holy < 0) || (dark < 0) || (fire > 65535) || (water > 65535) || (earth > 65535)
+					|| (wind > 65535) || (holy > 65535) || (dark > 65535))
 			{
 				activeChar.sendMessage("You must set the attribute level to be between 0-65535.");
 			}
@@ -123,11 +122,11 @@ public class AdminAttributes implements IAdminCommandHandler
 				setAttribute(activeChar, fire, water, earth, wind, holy, dark, armorType);
 			}
 		}
-		catch (StringIndexOutOfBoundsException e)
+		catch(StringIndexOutOfBoundsException e)
 		{
 			activeChar.sendMessage("Please specify a new attribute value.");
 		}
-		catch (NumberFormatException e)
+		catch(NumberFormatException e)
 		{
 			activeChar.sendMessage("Please specify a valid new attribute value.");
 		}
@@ -141,12 +140,12 @@ public class AdminAttributes implements IAdminCommandHandler
 	{
 		// get the target
 		GameObject target = activeChar.getTarget();
-		if (target == null)
+		if(target == null)
 		{
 			target = activeChar;
 		}
 
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 		{
 			activeChar.sendMessage("Wrong target type.");
 			return;
@@ -164,36 +163,36 @@ public class AdminAttributes implements IAdminCommandHandler
 
 		// only attempt to attribute if there is a weapon equipped
 		ItemInstance itemInstance = player.getInventory().getPaperdollItem(armorType);
-		if (itemInstance != null)
+		if(itemInstance != null)
 		{
-			if (itemInstance.isWeapon())
+			if(itemInstance.isWeapon())
 			{
-				if ((fire > 0) && ((water > 0) || (earth > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
+				if((fire > 0) && ((water > 0) || (earth > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
 				}
-				if ((water > 0) && ((fire > 0) || (earth > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
+				if((water > 0) && ((fire > 0) || (earth > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
 				}
-				if ((earth > 0) && ((fire > 0) || (water > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
+				if((earth > 0) && ((fire > 0) || (water > 0) || (wind > 0) || (holy > 0) || (dark > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
 				}
-				if ((wind > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (holy > 0) || (dark > 0)))
+				if((wind > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (holy > 0) || (dark > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
 				}
-				if ((holy > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (wind > 0) || (dark > 0)))
+				if((holy > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (wind > 0) || (dark > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
 				}
-				if ((dark > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (wind > 0) || (holy > 0)))
+				if((dark > 0) && ((fire > 0) || (water > 0) || (earth > 0) || (wind > 0) || (holy > 0)))
 				{
 					activeChar.sendMessage("Error! Cannot attribute weapon item on two or more attributes! Please, select one attribute.");
 					return;
@@ -223,8 +222,12 @@ public class AdminAttributes implements IAdminCommandHandler
 			player.broadcastCharInfo();
 
 			// informations
-			activeChar.sendMessage("Changed attributes of " + player.getName() + "'s " + itemInstance.getName() + " from Fire[" + curFire + "] Water[" + curWater + "] Earth[" + curEarth + "] Wind[" + curWind + "] Holy[" + curHoly + "] Dark[" + curDark + "] to Fire[" + fire + "] Water[" + water + "] Earth[" + earth + "] Wind[" + wind + "] Holy[" + holy + "] Dark[" + dark + "].");
-			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getName() + " from Fire[" + curFire + "] Water[" + curWater + "] Earth[" + curEarth + "] Wind[" + curWind + "] Holy[" + curHoly + "] Dark[" + curDark + "] to Fire[" + fire + "] Water[" + water + "] Earth[" + earth + "] Wind[" + wind + "] Holy[" + holy + "] Dark[" + dark + "].");
+			activeChar.sendMessage("Changed attributes of " + player.getName() + "'s " + itemInstance.getName() + " from Fire[" + curFire + "] Water["
+					+ curWater + "] Earth[" + curEarth + "] Wind[" + curWind + "] Holy[" + curHoly + "] Dark[" + curDark + "] to Fire[" + fire + "] Water["
+					+ water + "] Earth[" + earth + "] Wind[" + wind + "] Holy[" + holy + "] Dark[" + dark + "].");
+			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getName() + " from Fire[" + curFire + "] Water[" + curWater
+					+ "] Earth[" + curEarth + "] Wind[" + curWind + "] Holy[" + curHoly + "] Dark[" + curDark + "] to Fire[" + fire + "] Water[" + water
+					+ "] Earth[" + earth + "] Wind[" + wind + "] Holy[" + holy + "] Dark[" + dark + "].");
 		}
 	}
 
@@ -232,12 +235,12 @@ public class AdminAttributes implements IAdminCommandHandler
 	{
 		// get the target
 		GameObject target = activeChar.getTarget();
-		if (target == null)
+		if(target == null)
 		{
 			target = activeChar;
 		}
 		Player player = activeChar;
-		if (target.isPlayer())
+		if(target.isPlayer())
 		{
 			player = (Player) target;
 		}

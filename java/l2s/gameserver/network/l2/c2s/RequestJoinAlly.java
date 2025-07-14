@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.GameObject;
@@ -27,66 +28,64 @@ public class RequestJoinAlly implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || activeChar.getAlliance() == null)
+		if(activeChar == null || activeChar.getAlliance() == null)
 			return;
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isProcessingRequest())
+		if(activeChar.isProcessingRequest())
 		{
 			activeChar.sendPacket(SystemMsg.WAITING_FOR_ANOTHER_REPLY);
 			return;
 		}
 
-		if (activeChar.getAlliance().getMembersCount() >= Config.ALT_MAX_ALLY_SIZE)
+		if(activeChar.getAlliance().getMembersCount() >= Config.ALT_MAX_ALLY_SIZE)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_INVITE_A_CLAN_INTO_THE_ALLIANCE);
 			return;
 		}
 
-		if (!activeChar.isAllyLeader())
+		if(!activeChar.isAllyLeader())
 		{
 			activeChar.sendPacket(SystemMsg.THIS_FEATURE_IS_ONLY_AVAILABLE_TO_ALLIANCE_LEADERS);
 			return;
 		}
 
-		if (!activeChar.getAlliance().canInvite())
+		if(!activeChar.getAlliance().canInvite())
 		{
 			activeChar.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.RequestJoinAlly.InvitePenalty"));
 			return;
 		}
 
 		GameObject obj = activeChar.getVisibleObject(_objectId);
-		if (obj == null || !obj.isPlayer() || obj == activeChar)
+		if(obj == null || !obj.isPlayer() || obj == activeChar)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return;
 		}
 
 		Player target = (Player) obj;
-		if (target == null)
-		{
-			return;
-		}
+		if(target == null)
+		{ return; }
 
-		if (activeChar.isInFightClub() && !activeChar.getFightClubEvent().canReceiveInvitations(activeChar, target))
+		if(activeChar.isInFightClub() && !activeChar.getFightClubEvent().canReceiveInvitations(activeChar, target))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addString(target.getName()));
 			return;
 		}
 
 		Clan targetClan = target.getClan();
-		if (targetClan != null)
+		if(targetClan != null)
 		{
-			if (target.getAlliance() != null || activeChar.getAlliance().isMember(targetClan.getClanId()))
+			if(target.getAlliance() != null || activeChar.getAlliance().isMember(targetClan.getClanId()))
 			{
 				// same or another alliance - no need to invite
 				SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.S1_CLAN_IS_ALREADY_A_MEMBER_OF_S2_ALLIANCE);
@@ -97,19 +96,19 @@ public class RequestJoinAlly implements IClientIncomingPacket
 			}
 		}
 
-		if (targetClan == null || !target.isClanLeader())
+		if(targetClan == null || !target.isClanLeader())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_IS_NOT_A_CLAN_LEADER).addName(target));
 			return;
 		}
 
-		if (clan.isAtWarWith(targetClan.getClanId()))
+		if(clan.isAtWarWith(targetClan.getClanId()))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_MAY_NOT_ALLY_WITH_A_CLAN_YOU_ARE_CURRENTLY_AT_WAR_WITH);
 			return;
 		}
 
-		if (!targetClan.canJoinAlly())
+		if(!targetClan.canJoinAlly())
 		{
 			SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.S1_CLAN_CANNOT_JOIN_THE_ALLIANCE_BECAUSE_ONE_DAY_HAS_NOT_YET_PASSED_SINCE_THEY_LEFT_ANOTHER_ALLIANCE);
 			sm.addString(targetClan.getName());
@@ -117,13 +116,13 @@ public class RequestJoinAlly implements IClientIncomingPacket
 			return;
 		}
 
-		if (target.isBusy())
+		if(target.isBusy())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addString(target.getName()));
 			return;
 		}
 
-		if (target.isInTrainingCamp())
+		if(target.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
 			return;

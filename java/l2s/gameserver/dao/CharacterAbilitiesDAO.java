@@ -41,12 +41,13 @@ public class CharacterAbilitiesDAO
 				data[1] = rset.getString("b");
 				data[2] = rset.getString("active");
 				data[3] = String.valueOf(rset.getInt("points"));
-			}else
+			}
+			else
 			{
-        data[0] = "";
-        data[1] = "";
-        data[2] = "A";
-        data[3] = "0";
+				data[0] = "";
+				data[1] = "";
+				data[2] = "A";
+				data[3] = "0";
 			}
 		}
 		catch(SQLException e)

@@ -88,7 +88,8 @@ public class RequestExTryToPutShapeShiftingTargetItem implements IClientIncoming
 			return;
 		}
 
-		if(appearanceStone.getType() != ShapeType.RESTORE && targetItem.getVisualId() > 0 || appearanceStone.getType() == ShapeType.RESTORE && targetItem.getVisualId() == 0)
+		if(appearanceStone.getType() != ShapeType.RESTORE && targetItem.getVisualId() > 0
+				|| appearanceStone.getType() == ShapeType.RESTORE && targetItem.getVisualId() == 0)
 		{
 			player.sendPacket(ExPut_Shape_Shifting_Target_Item_Result.FAIL);
 			return;
@@ -145,7 +146,7 @@ public class RequestExTryToPutShapeShiftingTargetItem implements IClientIncoming
 				}
 			}
 		}
-		if(appearanceStone.getType() !=ShapeType.RESTORE && appearanceStone.getVisual(targetItem.getExType())==null)
+		if(appearanceStone.getType() != ShapeType.RESTORE && appearanceStone.getVisual(targetItem.getExType()) == null)
 		{
 			player.sendPacket(SystemMsg.THIS_ITEM_DOES_NOT_MEET_REQUIREMENTS);
 			return;
@@ -153,10 +154,12 @@ public class RequestExTryToPutShapeShiftingTargetItem implements IClientIncoming
 
 		if(Config.APPEARANCE_STONE_CHECK_ARMOR_TYPE && appearanceStone.getType() == ShapeType.FIXED && appearanceStone.getVisual().size() > 0)
 		{
-			if(targetItem.isArmor() && (targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
+			if(targetItem.isArmor() && (targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR
+					|| targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
 			{
 				ItemTemplate extracItemTemplate = ItemHolder.getInstance().getTemplate(appearanceStone.getVisual(player, ExItemType.FULL_BODY));//TODO ??
-				if(extracItemTemplate != null && extracItemTemplate.isArmor() && (extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_CHEST || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_LEGS))
+				if(extracItemTemplate != null && extracItemTemplate.isArmor() && (extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_CHEST
+						|| extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_LEGS))
 				{
 					if(targetItem.getTemplate().getItemType() != extracItemTemplate.getItemType())
 					{

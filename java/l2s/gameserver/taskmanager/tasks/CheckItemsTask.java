@@ -23,16 +23,16 @@ public class CheckItemsTask extends AutomaticTask
 	@Override
 	public void doTask()
 	{
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 		{
 			player.getInventory().checkItems();
 			PetInstance pet = player.getPet();
-			if (pet != null)
+			if(pet != null)
 				pet.getInventory().checkItems();
 			player.getWarehouse().checkItems();
 		}
 
-		for (Clan clan : ClanTable.getInstance().getClans())
+		for(Clan clan : ClanTable.getInstance().getClans())
 		{
 			clan.getWarehouse().checkItems();
 		}

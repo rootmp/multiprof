@@ -80,8 +80,7 @@ public class Config
 
 	// it has no instancies
 	private Config()
-	{
-	}
+	{}
 
 	public final static void load()
 	{
@@ -93,8 +92,8 @@ public class Config
 	{
 		DEFAULT_CRYPT = new PasswordHash(Config.DEFAULT_PASSWORD_HASH);
 		List<PasswordHash> legacy = new ArrayList<PasswordHash>();
-		for (String method : Config.LEGACY_PASSWORD_HASH.split(";"))
-			if (!method.equalsIgnoreCase(Config.DEFAULT_PASSWORD_HASH))
+		for(String method : Config.LEGACY_PASSWORD_HASH.split(";"))
+			if(!method.equalsIgnoreCase(Config.DEFAULT_PASSWORD_HASH))
 				legacy.add(new PasswordHash(method));
 		LEGACY_CRYPT = legacy.toArray(new PasswordHash[legacy.size()]);
 
@@ -106,15 +105,15 @@ public class Config
 		RSAKeyGenParameterSpec spec = new RSAKeyGenParameterSpec(1024, RSAKeyGenParameterSpec.F4);
 		keygen.initialize(spec);
 
-		for (int i = 0; i < _keyPairs.length; i++)
+		for(int i = 0; i < _keyPairs.length; i++)
 			_keyPairs[i] = new ScrambledKeyPair(keygen.generateKeyPair());
 
 		LOG.info("Cached " + _keyPairs.length + " KeyPairs for RSA communication");
 
 		_blowfishKeys = new byte[Config.LOGIN_BLOWFISH_KEYS][16];
 
-		for (int i = 0; i < _blowfishKeys.length; i++)
-			for (int j = 0; j < _blowfishKeys[i].length; j++)
+		for(int i = 0; i < _blowfishKeys.length; i++)
+			for(int j = 0; j < _blowfishKeys[i].length; j++)
 				_blowfishKeys[i][j] = (byte) (Rnd.get(255) + 1);
 
 		LOG.info("Stored " + _blowfishKeys.length + " keys for Blowfish communication");
@@ -131,10 +130,10 @@ public class Config
 
 			Element root = document.getRootElement();
 
-			for (Iterator<Element> itr = root.elementIterator(); itr.hasNext();)
+			for(Iterator<Element> itr = root.elementIterator(); itr.hasNext();)
 			{
 				Element node = itr.next();
-				if (node.getName().equalsIgnoreCase("server"))
+				if(node.getName().equalsIgnoreCase("server"))
 				{
 					Integer id = Integer.valueOf(node.attributeValue("id"));
 					String name = node.attributeValue("name");
@@ -144,7 +143,7 @@ public class Config
 
 			LOG.info("Loaded " + SERVER_NAMES.size() + " server names");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOG.error("", e);
 		}
@@ -166,7 +165,8 @@ public class Config
 		int databasePort = serverSettings.getProperty("DATABASE_PORT", 3306);
 		String databaseName = serverSettings.getProperty("DATABASE_NAME", "l2auth");
 
-		DATABASE_URL = serverSettings.getProperty("DATABASE_URL", "jdbc:mariadb://" + databaseHost + ":" + databasePort + "/" + databaseName + "?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
+		DATABASE_URL = serverSettings.getProperty("DATABASE_URL", "jdbc:mariadb://" + databaseHost + ":" + databasePort + "/" + databaseName
+				+ "?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
 		DATABASE_LOGIN = serverSettings.getProperty("DATABASE_LOGIN", "root");
 		DATABASE_PASSWORD = serverSettings.getProperty("DATABASE_PASSWORD", "root");
 
@@ -210,7 +210,7 @@ public class Config
 		{
 			result.load(file);
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			LOG.error("", e);
 		}

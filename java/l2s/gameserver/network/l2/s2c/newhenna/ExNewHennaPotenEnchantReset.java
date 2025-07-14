@@ -11,7 +11,7 @@ public class ExNewHennaPotenEnchantReset implements IClientOutgoingPacket
 	{
 		_cSuccess = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

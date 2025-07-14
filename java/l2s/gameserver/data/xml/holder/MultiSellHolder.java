@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.MultiSellListContainer;
@@ -14,8 +15,6 @@ import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.s2c.MultiSellListPacket;
 import l2s.gameserver.templates.item.ItemTemplate;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * Multisell list manager
@@ -43,7 +42,7 @@ public class MultiSellHolder extends AbstractHolder
 
 	public void addMultiSellListContainer(int id, MultiSellListContainer list)
 	{
-		if (_entries.containsKey(id))
+		if(_entries.containsKey(id))
 			_log.warn("MultiSell redefined: " + id);
 
 		list.setListId(id);
@@ -67,20 +66,19 @@ public class MultiSellHolder extends AbstractHolder
 
 	private long[] parseItemIdAndCount(String s)
 	{
-		if (s == null || s.isEmpty())
+		if(s == null || s.isEmpty())
 			return null;
 		String[] a = s.split(":");
 		try
 		{
 			long id = Integer.parseInt(a[0]);
 			long count = a.length > 1 ? Long.parseLong(a[1]) : 1;
-			return new long[]
-			{
-				id,
-				count
+			return new long[] {
+					id,
+					count
 			};
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("", e);
 			return null;
@@ -89,15 +87,15 @@ public class MultiSellHolder extends AbstractHolder
 
 	public MultiSellEntry parseEntryFromStr(String s)
 	{
-		if (s == null || s.isEmpty())
+		if(s == null || s.isEmpty())
 			return null;
 
 		String[] a = s.split("->");
-		if (a.length != 2)
+		if(a.length != 2)
 			return null;
 
 		long[] ingredient, production;
-		if ((ingredient = parseItemIdAndCount(a[0])) == null || (production = parseItemIdAndCount(a[1])) == null)
+		if((ingredient = parseItemIdAndCount(a[0])) == null || (production = parseItemIdAndCount(a[1])) == null)
 			return null;
 
 		MultiSellEntry entry = new MultiSellEntry();
@@ -108,26 +106,26 @@ public class MultiSellHolder extends AbstractHolder
 
 	public void SeparateAndSend(int listId, Player player, double taxRate)
 	{
-		for (int i : Config.ALT_DISABLED_MULTISELL)
-			if (i == listId)
+		for(int i : Config.ALT_DISABLED_MULTISELL)
+			if(i == listId)
 			{
 				player.sendMessage(new CustomMessage("common.Disabled"));
 				return;
 			}
 
 		MultiSellListContainer list = getList(listId);
-		if (list == null)
+		if(list == null)
 		{
 			player.sendMessage(new CustomMessage("common.Disabled"));
 			return;
 		}
 
 		MultiSellListPacket.WindowType windowType;
-		if (listId == 915)
+		if(listId == 915)
 		{
 			windowType = MultiSellListPacket.WindowType.MATERIALS;
 		}
-		else if (listId == 1048)
+		else if(listId == 1048)
 		{
 			windowType = MultiSellListPacket.WindowType.BLACK_COUPON;
 		}
@@ -152,9 +150,9 @@ public class MultiSellHolder extends AbstractHolder
 		// Запоминаем отсылаемый лист, чтобы не подменили
 		player.setMultisell(list);
 
-		for (MultiSellEntry e : list.getEntries())
+		for(MultiSellEntry e : list.getEntries())
 		{
-			if (temp.getEntries().size() == Config.MULTISELL_SIZE)
+			if(temp.getEntries().size() == Config.MULTISELL_SIZE)
 			{
 				player.sendPacket(new MultiSellListPacket(temp, page, 0, windowType));
 				page++;
@@ -186,42 +184,42 @@ public class MultiSellHolder extends AbstractHolder
 		list.setNoKey(nokey);
 
 		ItemInstance[] items = player.getInventory().getItems();
-		for (MultiSellEntry origEntry : container.getEntries())
+		for(MultiSellEntry origEntry : container.getEntries())
 		{
 			MultiSellEntry ent = origEntry.clone();
 
 			// Обработка налога, если лист не безналоговый
 			// Адены добавляются в лист если отсутствуют или прибавляются к существующим
 			List<MultiSellIngredient> ingridients;
-			if (!notax && taxRate > 0.)
+			if(!notax && taxRate > 0.)
 			{
 				double tax = 0;
 				long adena = 0;
 				ingridients = new ArrayList<MultiSellIngredient>(ent.getIngredients().size() + 1);
-				for (MultiSellIngredient i : ent.getIngredients())
+				for(MultiSellIngredient i : ent.getIngredients())
 				{
-					if (i.getItemId() == 57)
+					if(i.getItemId() == 57)
 					{
 						adena += i.getItemCount();
 						tax += i.getItemCount() * taxRate;
 						continue;
 					}
 					ingridients.add(i);
-					if (i.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+					if(i.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 						// FIXME hardcoded. Налог на клановую репутацию. Формула проверена на с6 и
 						// соответсвует на 100%.
 						// TODO Проверить на корейском(?) оффе налог на банг поинты и fame
 						tax += i.getItemCount() / 120 * 1000 * taxRate * 100;
-					if (i.getItemId() < 1)
+					if(i.getItemId() < 1)
 						continue;
 
 					ItemTemplate item = ItemHolder.getInstance().getTemplate(i.getItemId());
-					if (item.isStackable())
+					if(item.isStackable())
 						tax += item.getReferencePrice() * i.getItemCount() * taxRate;
 				}
 
 				adena = Math.round(adena + tax);
-				if (adena > 0)
+				if(adena > 0)
 					ingridients.add(new MultiSellIngredient(57, adena));
 
 				ent.setTax(Math.round(tax));
@@ -233,70 +231,71 @@ public class MultiSellHolder extends AbstractHolder
 				ingridients = ent.getIngredients();
 
 			// Если стоит флаг "показывать все" не проверять наличие ингридиентов
-			if (showall)
+			if(showall)
 				list.addEntry(ent);
 			else
 			{
 				List<Integer> itms = new ArrayList<Integer>();
 				// Проверка наличия у игрока ингридиентов
-				for (MultiSellIngredient ingredient : ingridients)
+				for(MultiSellIngredient ingredient : ingridients)
 				{
 					ItemTemplate template = ingredient.getItemId() <= 0 ? null : ItemHolder.getInstance().getTemplate(ingredient.getItemId());
-					if (ingredient.getItemId() <= 0 || nokey || template.isEquipment())
+					if(ingredient.getItemId() <= 0 || nokey || template.isEquipment())
 					{
-						if (ingredient.getItemId() == 12374) // Mammon's Varnish Enhancer
+						if(ingredient.getItemId() == 12374) // Mammon's Varnish Enhancer
 							continue;
 
 						// TODO: а мы должны тут сверять count?
-						if (ingredient.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+						if(ingredient.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 						{
-							if (!itms.contains(ingredient.getItemId()) && player.getClan() != null && player.getClan().getReputationScore() >= ingredient.getItemCount())
+							if(!itms.contains(ingredient.getItemId()) && player.getClan() != null
+									&& player.getClan().getReputationScore() >= ingredient.getItemCount())
 								itms.add(ingredient.getItemId());
 							continue;
 						}
-						else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+						else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 						{
-							if (!itms.contains(ingredient.getItemId()) && player.getPcBangPoints() >= ingredient.getItemCount())
+							if(!itms.contains(ingredient.getItemId()) && player.getPcBangPoints() >= ingredient.getItemCount())
 								itms.add(ingredient.getItemId());
 							continue;
 						}
-						else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_FAME)
+						else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_FAME)
 						{
-							if (!itms.contains(ingredient.getItemId()) && player.getFame() >= ingredient.getItemCount())
+							if(!itms.contains(ingredient.getItemId()) && player.getFame() >= ingredient.getItemCount())
 								itms.add(ingredient.getItemId());
 							continue;
 						}
-						else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
+						else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_CRAFT_POINTS)
 						{
-							if (!itms.contains(ingredient.getItemId()) && player.getCraftPoints() >= ingredient.getItemCount())
+							if(!itms.contains(ingredient.getItemId()) && player.getCraftPoints() >= ingredient.getItemCount())
 								itms.add(ingredient.getItemId());
 							continue;
 						}
 
-						for (final ItemInstance item : items)
+						for(final ItemInstance item : items)
 						{
-							if (item.getItemId() == ingredient.getItemId())
+							if(item.getItemId() == ingredient.getItemId())
 							{
 								// FIX ME если перевалит за long - косяк(VISTALL)
-								if (itms.contains(enchant ? ingredient.getItemId() + ingredient.getItemEnchant() * 100000L : ingredient.getItemId())) // Не
-																																						// проверять
-																																						// одинаковые
-																																						// вещи
+								if(itms.contains(enchant ? ingredient.getItemId() + ingredient.getItemEnchant() * 100000L : ingredient.getItemId())) // Не
+									// проверять
+									// одинаковые
+									// вещи
 									continue;
 
-								if (item.getEnchantLevel() < ingredient.getItemEnchant()) // Некоторые мультиселлы
-																							// требуют заточки
+								if(item.getEnchantLevel() < ingredient.getItemEnchant()) // Некоторые мультиселлы
+									// требуют заточки
 									continue;
 
-								if (item.isStackable() && item.getCount() < ingredient.getItemCount())
+								if(item.isStackable() && item.getCount() < ingredient.getItemCount())
 									break;
 
 								itms.add(enchant ? ingredient.getItemId() + ingredient.getItemEnchant() * 100000 : ingredient.getItemId());
 								MultiSellEntry possibleEntry = new MultiSellEntry(enchant ? ent.getEntryId() + item.getEnchantLevel() * 100000 : ent.getEntryId());
 
-								for (MultiSellIngredient p : ent.getProduction())
+								for(MultiSellIngredient p : ent.getProduction())
 								{
-									if (enchant && template.canBeEnchanted())
+									if(enchant && template.canBeEnchanted())
 									{
 										p.setItemEnchant(item.getEnchantLevel());
 										p.setItemAttributes(item.getAttributes().clone());
@@ -304,9 +303,9 @@ public class MultiSellHolder extends AbstractHolder
 									possibleEntry.addProduct(p);
 								}
 
-								for (MultiSellIngredient ig : ingridients)
+								for(MultiSellIngredient ig : ingridients)
 								{
-									if (enchant && ig.getItemId() > 0 && ItemHolder.getInstance().getTemplate(ig.getItemId()).canBeEnchanted())
+									if(enchant && ig.getItemId() > 0 && ItemHolder.getInstance().getTemplate(ig.getItemId()).canBeEnchanted())
 									{
 										ig.setItemEnchant(item.getEnchantLevel());
 										ig.setItemAttributes(item.getAttributes().clone());

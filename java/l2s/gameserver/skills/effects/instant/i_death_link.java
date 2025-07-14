@@ -25,13 +25,14 @@ public class i_death_link extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		final Creature realTarget = reflected ? effector : effected;
-		final AttackInfo info = Formulas.calcMagicDam(effector, realTarget, getSkill(), getValue() * (-((effector.getCurrentHp() * 2) / effector.getMaxHp()) + 2), getSkill().isSSPossible(), false);
+		final AttackInfo info = Formulas.calcMagicDam(effector, realTarget, getSkill(), getValue()
+				* (-((effector.getCurrentHp() * 2) / effector.getMaxHp()) + 2), getSkill().isSSPossible(), false);
 
 		realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, false, true, false, false, getTemplate().isInstant(), getTemplate().isInstant(), info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-		if (info.damage >= 1)
+		if(info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(effector, realTarget, getSkill());
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, effector, getSkill(), true, true, false, false, false, false, false);
 		}
 	}

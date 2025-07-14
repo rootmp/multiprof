@@ -10,7 +10,6 @@ import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.PledgeContributionHolder;
 import l2s.gameserver.templates.ClanContribution;
 
-
 public class PledgeContributionParser extends AbstractParser<PledgeContributionHolder>
 {
 	private static PledgeContributionParser _instance = new PledgeContributionParser();
@@ -43,29 +42,29 @@ public class PledgeContributionParser extends AbstractParser<PledgeContributionH
 		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			
-			if ("donations_available".equals(element.getName()))
-				getHolder().setDonationsAvailable(Integer.parseInt(element.attributeValue("count","3")));
-			
-			if ("contribution".equals(element.getName()))
+
+			if("donations_available".equals(element.getName()))
+				getHolder().setDonationsAvailable(Integer.parseInt(element.attributeValue("count", "3")));
+
+			if("contribution".equals(element.getName()))
 			{
 				ClanContribution _contribution = new ClanContribution();
 				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
-					if ("ingredient".equals(subElement.getName()))
+					if("ingredient".equals(subElement.getName()))
 					{
 						_contribution._ingredientItemId = Integer.parseInt(subElement.attributeValue("id"));
 						_contribution._ingredientCount = Integer.parseInt(subElement.attributeValue("count"));
 					}
-					if ("clan_exp".equals(subElement.getName()))
+					if("clan_exp".equals(subElement.getName()))
 						_contribution._expCount = Integer.parseInt(subElement.attributeValue("count"));
-					
-					if ("reward".equals(subElement.getName()))
+
+					if("reward".equals(subElement.getName()))
 					{
-						_contribution._rewardChance = Integer.parseInt(subElement.attributeValue("chance","0"));
-						_contribution._rewardItemId = Integer.parseInt(subElement.attributeValue("id","0"));
-						_contribution._rewardCount = Integer.parseInt(subElement.attributeValue("count","0"));
+						_contribution._rewardChance = Integer.parseInt(subElement.attributeValue("chance", "0"));
+						_contribution._rewardItemId = Integer.parseInt(subElement.attributeValue("id", "0"));
+						_contribution._rewardCount = Integer.parseInt(subElement.attributeValue("count", "0"));
 					}
 				}
 				getHolder().addContribution(Integer.parseInt(element.attributeValue("id")), _contribution);

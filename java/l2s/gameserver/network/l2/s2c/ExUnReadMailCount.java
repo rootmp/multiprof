@@ -18,9 +18,9 @@ public class ExUnReadMailCount implements IClientOutgoingPacket
 	{
 		int count = 0;
 		List<Mail> mails = MailDAO.getInstance().getReceivedMailByOwnerId(player.getObjectId());
-		for (Mail mail : mails)
+		for(Mail mail : mails)
 		{
-			if (mail.isUnread())
+			if(mail.isUnread())
 			{
 				count++;
 			}

@@ -35,15 +35,15 @@ public class LazyPrecisionTaskManager extends SteppingRunnableQueueManager
 	{
 		long delay = Config.ALT_PCBANG_POINTS_DELAY * 60000L;
 
-		return scheduleAtFixedRate(() ->
-		{
-			if (player.isInOfflineMode() || player.getLevel() < Config.ALT_PCBANG_POINTS_MIN_LVL)
+		return scheduleAtFixedRate(() -> {
+			if(player.isInOfflineMode() || player.getLevel() < Config.ALT_PCBANG_POINTS_MIN_LVL)
 				return;
 
-			if (Config.ALT_PCBANG_POINTS_ONLY_PREMIUM && !player.hasPremiumAccount())
+			if(Config.ALT_PCBANG_POINTS_ONLY_PREMIUM && !player.hasPremiumAccount())
 				return;
 
-			player.addPcBangPoints(Config.ALT_PCBANG_POINTS_BONUS, Config.ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE > 0 && Rnd.chance(Config.ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE), true);
+			player.addPcBangPoints(Config.ALT_PCBANG_POINTS_BONUS, Config.ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE > 0
+					&& Rnd.chance(Config.ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE), true);
 		}, delay, delay);
 	}
 
@@ -55,9 +55,8 @@ public class LazyPrecisionTaskManager extends SteppingRunnableQueueManager
 
 	public Future<?> addNpcAnimationTask(final NpcInstance npc)
 	{
-		return scheduleAtFixedRate(() ->
-		{
-			if (npc.isVisible() && !npc.isActionsDisabled() && !npc.getMovement().isMoving() && !npc.isInCombat())
+		return scheduleAtFixedRate(() -> {
+			if(npc.isVisible() && !npc.isActionsDisabled() && !npc.getMovement().isMoving() && !npc.isInCombat())
 				npc.onRandomAnimation();
 		}, 1000L, Rnd.get(Config.MIN_NPC_ANIMATION, Config.MAX_NPC_ANIMATION) * 1000L);
 	}

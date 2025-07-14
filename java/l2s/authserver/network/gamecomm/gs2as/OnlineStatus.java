@@ -22,7 +22,7 @@ public class OnlineStatus extends ReceivablePacket
 	protected void runImpl()
 	{
 		GameServer gameServer = getGameServer();
-		if (!gameServer.isAuthed())
+		if(!gameServer.isAuthed())
 			return;
 
 		gameServer.setOnline(_online);

@@ -53,10 +53,10 @@ public class PCCafeCouponManager
 	public List<String> generateCodes(int count, int type, String value)
 	{
 		List<String> codes = new ArrayList<String>();
-		for (int i = 0; i < count; i++)
+		for(int i = 0; i < count; i++)
 		{
 			String code = generateCode(type, value);
-			if (code != null)
+			if(code != null)
 				codes.add(code);
 		}
 		return codes;
@@ -67,17 +67,17 @@ public class PCCafeCouponManager
 		_lock.lock();
 		try
 		{
-			for (int i = 0; i < 100; i++) // 100 попыток, избегаем зацикливания.
+			for(int i = 0; i < 100; i++) // 100 попыток, избегаем зацикливания.
 			{
 				String generatedCode = "";
-				for (int c = 0; c < CODE_LENGTH; c++)
+				for(int c = 0; c < CODE_LENGTH; c++)
 				{
 					generatedCode += CODE_CHARACTERS_ARRAY[Rnd.get(CODE_CHARACTERS_ARRAY.length)];
 				}
 
 				generatedCode = generatedCode.toLowerCase();
 
-				if (!Util.isMatchingRegexp(generatedCode, COUPON_TEMPLATE))
+				if(!Util.isMatchingRegexp(generatedCode, COUPON_TEMPLATE))
 					continue;
 
 				Connection con = null;
@@ -89,7 +89,7 @@ public class PCCafeCouponManager
 					statement = con.prepareStatement(SELECT_PCCAFE_CODE);
 					statement.setString(1, generatedCode);
 					rset = statement.executeQuery();
-					if (rset.next())
+					if(rset.next())
 						continue;
 
 					DbUtils.closeQuietly(statement, rset);
@@ -101,7 +101,7 @@ public class PCCafeCouponManager
 					statement.setInt(4, 0);
 					statement.execute();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error(getClass().getSimpleName() + ": Error while generate coupon code.", e);
 				}
@@ -126,7 +126,7 @@ public class PCCafeCouponManager
 		{
 			couponCode = couponCode.toLowerCase();
 
-			if (!Util.isMatchingRegexp(couponCode, COUPON_TEMPLATE))
+			if(!Util.isMatchingRegexp(couponCode, COUPON_TEMPLATE))
 			{
 				onWrongCode(player);
 				return false;
@@ -141,15 +141,15 @@ public class PCCafeCouponManager
 				statement = con.prepareStatement(SELECT_PCCAFE_CODE);
 				statement.setString(1, couponCode);
 				rset = statement.executeQuery();
-				if (rset.next())
+				if(rset.next())
 				{
 					int type = rset.getInt("type");
 					String value = rset.getString("value");
 					int used_by = rset.getInt("used_by");
 
-					if (used_by > 0)
+					if(used_by > 0)
 					{
-						if (used_by == player.getObjectId())
+						if(used_by == player.getObjectId())
 							player.sendPacket(SystemMsg.SINCE_YOU_HAVE_ALREADY_USED_THIS_COUPON_YOU_MAY_NOT_USE_THIS_SERIAL_NUMBER);
 						else
 							player.sendPacket(SystemMsg.THIS_SERIAL_NUMBER_HAS_ALREADY_BEEN_USED);
@@ -161,7 +161,7 @@ public class PCCafeCouponManager
 				else
 					onWrongCode(player);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error(getClass().getSimpleName() + ": Error while reading coupon code.", e);
 			}
@@ -185,13 +185,13 @@ public class PCCafeCouponManager
 			couponCode = couponCode.toLowerCase();
 
 			IPCCouponHandler handler = PCCouponHandler.getInstance().getHandler(type);
-			if (handler == null)
+			if(handler == null)
 			{
 				_log.warn(getClass().getSimpleName() + ": Not found handler for coupon TYPE[" + type + "]!");
 				return false;
 			}
 
-			if (!handler.useCoupon(player, value))
+			if(!handler.useCoupon(player, value))
 				return false;
 
 			Connection con = null;
@@ -207,7 +207,7 @@ public class PCCafeCouponManager
 
 				player.unsetVar(PC_CODE_ATTEMPS_VAR);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error(getClass().getSimpleName() + ": Error while use coupon code.", e);
 			}
@@ -226,10 +226,10 @@ public class PCCafeCouponManager
 	private void onWrongCode(Player player)
 	{
 		int pcCodeAttempts = player.getVarInt(PC_CODE_ATTEMPS_VAR, 0) + 1;
-		if (pcCodeAttempts > Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS)
+		if(pcCodeAttempts > Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS)
 		{
 			long leftTime = player.getVarExpireTime(PC_CODE_ATTEMPS_VAR) - System.currentTimeMillis();
-			if (leftTime > 0)
+			if(leftTime > 0)
 			{
 				player.sendPacket(new SystemMessagePacket(SystemMsg.THIS_SERIAL_NUMBER_CANNOT_BE_ENTERED_PLEASE_TRY_AGAIN_IN_S1_MINUTES).addInteger(TimeUnit.MILLISECONDS.toMinutes(leftTime)));
 				return;
@@ -237,7 +237,7 @@ public class PCCafeCouponManager
 			pcCodeAttempts = 0;
 		}
 
-		if (pcCodeAttempts == Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS)
+		if(pcCodeAttempts == Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS)
 		{
 			player.setVar(PC_CODE_ATTEMPS_VAR, pcCodeAttempts, System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(Config.ALT_PCBANG_POINTS_BAN_TIME));
 			player.sendPacket(SystemMsg.INVALID_SERIAL_NUMBER_YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_5_TIMES_PLEASE_TRY_AGAIN_IN_4_HOURS);
@@ -245,7 +245,8 @@ public class PCCafeCouponManager
 		else
 		{
 			player.setVar(PC_CODE_ATTEMPS_VAR, pcCodeAttempts);
-			player.sendPacket(new SystemMessagePacket(SystemMsg.INVALID_SERIAL_NUMBER__YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_S1_TIMES_YOU_WILL_BE_ALLOWED_TO_MAKE_S2_MORE_ATTEMPTS).addInteger(pcCodeAttempts).addInteger(Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS - pcCodeAttempts));
+			player.sendPacket(new SystemMessagePacket(SystemMsg.INVALID_SERIAL_NUMBER__YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_S1_TIMES_YOU_WILL_BE_ALLOWED_TO_MAKE_S2_MORE_ATTEMPTS).addInteger(pcCodeAttempts).addInteger(Config.ALT_PCBANG_POINTS_MAX_CODE_ENTER_ATTEMPTS
+					- pcCodeAttempts));
 		}
 	}
 }

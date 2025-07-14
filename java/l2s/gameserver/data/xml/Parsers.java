@@ -183,7 +183,7 @@ public abstract class Parsers
 		FakePlayersParser.getInstance().load();
 
 		GameServer.printSection("Fight Club Events");
-		if (Config.FIGHT_CLUB_ENABLED)
+		if(Config.FIGHT_CLUB_ENABLED)
 		{
 			FightClubMapParser.getInstance().load();
 		}

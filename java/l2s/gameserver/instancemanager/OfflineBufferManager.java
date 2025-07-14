@@ -56,9 +56,9 @@ public class OfflineBufferManager
 			_owner = player;
 			_saleTitle = title;
 			_buffPrice = price;
-			if (buffs != null)
+			if(buffs != null)
 			{
-				for (SkillEntry buff : buffs)
+				for(SkillEntry buff : buffs)
 					_buffs.put(buff.getId(), buff);
 			}
 		}
@@ -145,9 +145,9 @@ public class OfflineBufferManager
 		final StringTokenizer st = new StringTokenizer(command, "_");
 		String cmd = st.nextToken();
 		// Sets a new buff store
-		if (cmd.equalsIgnoreCase("create"))
+		if(cmd.equalsIgnoreCase("create"))
 		{
-			if (!st.hasMoreTokens())
+			if(!st.hasMoreTokens())
 			{
 				final HtmlMessage html = new HtmlMessage(0);
 				html.setFile("command/buffstore/buff_store_create.htm");
@@ -160,7 +160,7 @@ public class OfflineBufferManager
 			{
 				writedPrice = Long.parseLong(st.nextToken().trim());
 			}
-			catch (NumberFormatException e)
+			catch(NumberFormatException e)
 			{
 				final HtmlMessage html = new HtmlMessage(0);
 				html.setFile("command/buffstore/buff_store_create.htm");
@@ -170,25 +170,25 @@ public class OfflineBufferManager
 			}
 
 			// Check if the player already has an active store, just in case
-			if (_buffStores.containsKey(player.getObjectId()))
+			if(_buffStores.containsKey(player.getObjectId()))
 				return;
 
 			// Check for store
-			if (player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
+			if(player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.1"));
 				return;
 			}
 
 			// Check if the player can set a store
-			if (!Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(player.getClassId().getId()))
+			if(!Config.BUFF_STORE_ALLOWED_CLASS_LIST.contains(player.getClassId().getId()))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.2"));
 				return;
 			}
 
 			// Check all the conditions to see if the player can open a private store
-			if (!TradeHelper.checksIfCanOpenStore(player, Player.STORE_PRIVATE_BUFF))
+			if(!TradeHelper.checksIfCanOpenStore(player, Player.STORE_PRIVATE_BUFF))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.3"));
 				return;
@@ -196,21 +196,21 @@ public class OfflineBufferManager
 
 			final long price = Math.max(Config.BUFF_STORE_MIN_PRICE, Math.min(Config.BUFF_STORE_MAX_PRICE, writedPrice));
 			String title = !st.hasMoreTokens() ? "" : st.nextToken();
-			if (!title.isEmpty() && title.charAt(0) == ' ')
+			if(!title.isEmpty() && title.charAt(0) == ' ')
 				title = title.substring(1);
-			while (st.hasMoreTokens())
+			while(st.hasMoreTokens())
 				title += "_" + st.nextToken();
 			title = title.trim();
 
 			// Check the title
-			if (title.isEmpty() && !Util.isMatchingRegexp(title, Config.CLAN_TITLE_TEMPLATE))
+			if(title.isEmpty() && !Util.isMatchingRegexp(title, Config.CLAN_TITLE_TEMPLATE))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.4"));
 				return;
 			}
 
 			// Check price limits
-			if (price < 1)
+			if(price < 1)
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.5"));
 				return;
@@ -219,14 +219,15 @@ public class OfflineBufferManager
 			// Buff Stores can only be put inside areas designated to it and in clan halls
 			final ClanHall ch = ResidenceHolder.getInstance().getResidenceByObject(ClanHall.class, player);
 			final Zone chZone = player.getZone(ZoneType.RESIDENCE);
-			if (!player.isGM() && !player.isInZone(ZoneType.buff_store) && (ch == null || chZone == null || ch != chZone.getParams().get("residence")))
+			if(!player.isGM() && !player.isInZone(ZoneType.buff_store) && (ch == null || chZone == null || ch != chZone.getParams().get("residence")))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.6"));
 				return;
 			}
 
 			// Check for conditions
-			if (player.isAlikeDead() || player.isInOlympiadMode() || player.isMounted() || player.isCastingNow() || player.getObservableArena() != null || player.getOlympiadGame() != null || Olympiad.isRegisteredInComp(player))
+			if(player.isAlikeDead() || player.isInOlympiadMode() || player.isMounted() || player.isCastingNow() || player.getObservableArena() != null
+					|| player.getOlympiadGame() != null || Olympiad.isRegisteredInComp(player))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.7"));
 				return;
@@ -235,32 +236,32 @@ public class OfflineBufferManager
 			final BufferData buffer = new BufferData(player, title, price, null);
 
 			// Add all the buffs
-			for (SkillEntry skillEntry : player.getAllSkills())
+			for(SkillEntry skillEntry : player.getAllSkills())
 			{
 				Skill skill = skillEntry.getTemplate();
 				// Only active skills
-				if (!skill.isActive())
+				if(!skill.isActive())
 					continue;
 
-				if (skill.isDebuff())
+				if(skill.isDebuff())
 					continue;
 
 				// Only buffs
-				if (skill.getSkillType() != SkillType.BUFF)
+				if(skill.getSkillType() != SkillType.BUFF)
 					continue;
 
 				// Allowed skill list
-				if (!Config.BUFF_STORE_ALLOWED_SKILL_LIST.contains(skillEntry.getId()))
+				if(!Config.BUFF_STORE_ALLOWED_SKILL_LIST.contains(skillEntry.getId()))
 					continue;
 
-				if (!SUITABLE_TARGET_TYPES.contains(skill.getTargetType()))
+				if(!SUITABLE_TARGET_TYPES.contains(skill.getTargetType()))
 					continue;
 
 				buffer.getBuffs().put(skillEntry.getId(), skillEntry);
 			}
 
 			// Case of empty buff list
-			if (buffer.getBuffs().isEmpty())
+			if(buffer.getBuffs().isEmpty())
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.8"));
 				return;
@@ -278,9 +279,9 @@ public class OfflineBufferManager
 			player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.create.9"));
 		}
 		// Stops the current store
-		else if (cmd.equalsIgnoreCase("stopstore"))
+		else if(cmd.equalsIgnoreCase("stopstore"))
 		{
-			if (player.getPrivateStoreType() != Player.STORE_PRIVATE_BUFF)
+			if(player.getPrivateStoreType() != Player.STORE_PRIVATE_BUFF)
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.stopstore.1"));
 				return;
@@ -298,24 +299,24 @@ public class OfflineBufferManager
 			player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.stopstore.2"));
 		}
 		// Shows the buff list of the selected buffer
-		else if (cmd.equalsIgnoreCase("bufflist"))
+		else if(cmd.equalsIgnoreCase("bufflist"))
 		{
 			final int playerId = Integer.parseInt(st.nextToken());
 			final int page = (st.hasMoreTokens() ? Integer.parseInt(st.nextToken()) : 0);
 
 			// Check if the buffer exists
 			final BufferData buffer = _buffStores.get(playerId);
-			if (buffer == null)
+			if(buffer == null)
 				return;
 
 			// Check if the player is in the right distance from the buffer
-			if (!player.checkInteractionDistance(buffer.getOwner()))
+			if(!player.checkInteractionDistance(buffer.getOwner()))
 				return;
 
 			showStoreWindow(player, buffer, page);
 		}
 		// Purchases a particular buff of the store
-		else if (cmd.equalsIgnoreCase("purchasebuff"))
+		else if(cmd.equalsIgnoreCase("purchasebuff"))
 		{
 			final int playerId = Integer.parseInt(st.nextToken());
 			final boolean self = (st.hasMoreTokens() ? st.nextToken().equalsIgnoreCase("self") : true);
@@ -324,21 +325,21 @@ public class OfflineBufferManager
 
 			// Check if the buffer exists
 			final BufferData buffer = _buffStores.get(playerId);
-			if (buffer == null)
+			if(buffer == null)
 				return;
 
 			// Check if the buffer has this buff
-			if (!buffer.getBuffs().containsKey(buffId))
+			if(!buffer.getBuffs().containsKey(buffId))
 				return;
 
 			Player caster = buffer.getOwner();
 
 			// Check if the player is in the right distance from the buffer
-			if (!player.checkInteractionDistance(caster))
+			if(!player.checkInteractionDistance(caster))
 				return;
 
 			// Check if the player has a summon before buffing
-			if (!self && !player.hasServitor())
+			if(!self && !player.hasServitor())
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.1"));
 
@@ -348,14 +349,16 @@ public class OfflineBufferManager
 			}
 
 			// Check buffing conditions
-			if (player.getPvpFlag() > 0 || player.isInCombat() || player.getKarma() > 0 || player.isAlikeDead() || player.isInJail() || player.isInOlympiadMode() || player.isInStoreMode() || player.isInTrade() || player.getEnchantScroll() != null || player.isFishing() || player.isInTrainingCamp())
+			if(player.getPvpFlag() > 0 || player.isInCombat() || player.getKarma() > 0 || player.isAlikeDead() || player.isInJail()
+					|| player.isInOlympiadMode() || player.isInStoreMode() || player.isInTrade() || player.getEnchantScroll() != null || player.isFishing()
+					|| player.isInTrainingCamp())
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.2"));
 				return;
 			}
 
 			final SkillEntry skillEntry = buffer.getBuffs().get(buffId);
-			if (skillEntry == null)
+			if(skillEntry == null)
 				return;
 
 			final Skill skill = skillEntry.getTemplate();
@@ -363,7 +366,7 @@ public class OfflineBufferManager
 			final double buffMpCost = (Config.BUFF_STORE_MP_ENABLED ? skill.getMpConsume() * Config.BUFF_STORE_MP_CONSUME_MULTIPLIER : 0);
 
 			// Check if the buffer has enough mp to sell this buff
-			if (buffMpCost > 0 && caster.getCurrentMp() < buffMpCost)
+			if(buffMpCost > 0 && caster.getCurrentMp() < buffMpCost)
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.3"));
 
@@ -372,9 +375,9 @@ public class OfflineBufferManager
 				return;
 			}
 
-			if (skill.getReferenceItemId() > 0)
+			if(skill.getReferenceItemId() > 0)
 			{
-				if (!caster.consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
+				if(!caster.consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
 				{
 					player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.4"));
 
@@ -384,7 +387,7 @@ public class OfflineBufferManager
 				}
 			}
 
-			if (!skill.checkCondition(skillEntry, caster, player, false, false, false, false, false))
+			if(!skill.checkCondition(skillEntry, caster, player, false, false, false, false, false))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.2"));
 
@@ -393,7 +396,8 @@ public class OfflineBufferManager
 				return;
 			}
 
-			if (!IGNORE_TARGET_CONDITIONS_TARGET_TYPES.contains(skill.getTargetType()) && !skill.getTargets(skillEntry, caster, player, false).contains(player))
+			if(!IGNORE_TARGET_CONDITIONS_TARGET_TYPES.contains(skill.getTargetType())
+					&& !skill.getTargets(skillEntry, caster, player, false).contains(player))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.2"));
 
@@ -402,11 +406,11 @@ public class OfflineBufferManager
 				return;
 			}
 
-			if (Config.BUFF_STORE_ITEM_CONSUME_ENABLED)
+			if(Config.BUFF_STORE_ITEM_CONSUME_ENABLED)
 			{
-				if (!skill.isHandler() && skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
+				if(!skill.isHandler() && skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
 				{
-					if (ItemFunctions.getItemCount(caster, skill.getItemConsumeId()) < skill.getItemConsume())
+					if(ItemFunctions.getItemCount(caster, skill.getItemConsumeId()) < skill.getItemConsume())
 					{
 						player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.5"));
 
@@ -421,29 +425,29 @@ public class OfflineBufferManager
 			final long buffPrice = player.getClanId() == caster.getClanId() && player.getClanId() != 0 ? 0 : buffer.getBuffPrice();
 
 			// Check if the player has enough adena to purchase this buff
-			if (buffPrice > 0 && (player.getAdena() < buffPrice || !player.reduceAdena(buffPrice, true)))
+			if(buffPrice > 0 && (player.getAdena() < buffPrice || !player.reduceAdena(buffPrice, true)))
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.6"));
 				return;
 			}
 
 			// Give the adena to the buffer
-			if (buffPrice > 0)
+			if(buffPrice > 0)
 				caster.addAdena(buffPrice, true);
 
 			// Reduce the buffer's mp if it consumes something
-			if (buffMpCost > 0)
+			if(buffMpCost > 0)
 				caster.reduceCurrentMp(buffMpCost, null);
 
 			// Send message
 			player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.OfflineBufferManager.purchasebuff.7").addString(skill.getName(player)).addString(caster.getName()));
 
 			// Give the target the buff
-			if (self)
+			if(self)
 				skill.getEffects(player, player);
 			else
 			{
-				for (Servitor servitor : player.getServitors())
+				for(Servitor servitor : player.getServitors())
 					skill.getEffects(servitor, servitor);
 			}
 
@@ -477,10 +481,10 @@ public class OfflineBufferManager
 		int i = 0;
 		boolean changeColor = false;
 
-		while (it.hasNext())
+		while(it.hasNext())
 		{
 			// Solo mostramos los buffs que sean de esta pagina
-			if (i < currentPage * MAX_ENTRANCES_PER_ROW)
+			if(i < currentPage * MAX_ENTRANCES_PER_ROW)
 			{
 				it.next();
 				i++;
@@ -488,7 +492,7 @@ public class OfflineBufferManager
 			}
 
 			// Si llegamos al final de la pagina salimos
-			if (i >= (currentPage * MAX_ENTRANCES_PER_ROW + MAX_ENTRANCES_PER_ROW))
+			if(i >= (currentPage * MAX_ENTRANCES_PER_ROW + MAX_ENTRANCES_PER_ROW))
 				break;
 
 			buff = it.next();
@@ -509,14 +513,14 @@ public class OfflineBufferManager
 
 		// Make the arrows buttons
 		String previousPageButton = "";
-		if (currentPage > 0)
+		if(currentPage > 0)
 		{
 			previousPageButton = tpls.get(2);
 			previousPageButton = previousPageButton.replace("<?page_id?>", String.valueOf(currentPage - 1));
 		}
 
 		String nextPageButton = "";
-		if (currentPage < maxPage)
+		if(currentPage < maxPage)
 		{
 			nextPageButton = tpls.get(3);
 			nextPageButton = nextPageButton.replace("<?page_id?>", String.valueOf(currentPage + 1));
@@ -527,7 +531,8 @@ public class OfflineBufferManager
 		html = html.replace("<?next_page_button?>", nextPageButton);
 		html = html.replace("<?buffer_object_id?>", String.valueOf(buffer.getOwner().getObjectId()));
 		html = html.replace("<?buffer_class?>", buffer.getOwner().getClassId().getName(buffer.getOwner()));
-		html = html.replace("<?buffer_level?>", (String.valueOf(buffer.getOwner().getLevel() >= 76 && buffer.getOwner().getLevel() < 80 ? 76 : (buffer.getOwner().getLevel() >= 84 ? 84 : Math.round(buffer.getOwner().getLevel() / 10) * 10))));
+		html = html.replace("<?buffer_level?>", (String.valueOf(buffer.getOwner().getLevel() >= 76
+				&& buffer.getOwner().getLevel() < 80 ? 76 : (buffer.getOwner().getLevel() >= 84 ? 84 : Math.round(buffer.getOwner().getLevel() / 10) * 10))));
 		html = html.replace("<?buffer_name?>", buffer.getOwner().getName());
 		html = html.replace("<?buffer_mp?>", String.valueOf((int) buffer.getOwner().getCurrentMp()));
 		html = html.replace("<?buff_price?>", Util.formatAdena(buffer.getBuffPrice()));
@@ -540,7 +545,7 @@ public class OfflineBufferManager
 	public synchronized void storeBufferData(Player trader)
 	{
 		BufferData buffer = getBuffStore(trader.getObjectId());
-		if (buffer != null)
+		if(buffer != null)
 		{
 			trader.setVar("offlinebuff_price", buffer.getBuffPrice());
 			trader.setVar("offlinebuff_skills", joinAllSkillsToString(buffer.getBuffs().valueCollection()));
@@ -550,11 +555,11 @@ public class OfflineBufferManager
 
 	private static String joinAllSkillsToString(Collection<SkillEntry> skills)
 	{
-		if (skills.isEmpty())
+		if(skills.isEmpty())
 			return "";
 
 		String result = "";
-		for (SkillEntry val : skills)
+		for(SkillEntry val : skills)
 			result += val.getId() + ",";
 
 		return result.substring(0, result.length() - 1);

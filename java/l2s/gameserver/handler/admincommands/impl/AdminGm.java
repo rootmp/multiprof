@@ -19,13 +19,13 @@ public class AdminGm implements IAdminCommandHandler
 		Commands command = (Commands) comm;
 
 		// TODO зачем отключено?
-		if (Boolean.TRUE)
+		if(Boolean.TRUE)
 			return false;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
+		if(!activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_gm:
 				handleGm(activeChar);
@@ -43,7 +43,7 @@ public class AdminGm implements IAdminCommandHandler
 
 	private void handleGm(Player activeChar)
 	{
-		if (activeChar.isGM())
+		if(activeChar.isGM())
 		{
 			activeChar.getPlayerAccess().IsGM = false;
 			activeChar.sendMessage("You no longer have GM status.");

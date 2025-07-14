@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
@@ -54,38 +55,38 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
 			return;
 		}
 
-		if (activeChar.isProcessingRequest())
+		if(activeChar.isProcessingRequest())
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
@@ -93,7 +94,7 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		}
 
 		NormalUpgradeData upgradeData = UpgradeSystemHolder.getInstance().getNormalUpgradeData(upgradeId);
-		if (upgradeData == null || upgradeData.getType() != upgradeType || !Language.checkLocation(activeChar, upgradeData.getLocationId()))
+		if(upgradeData == null || upgradeData.getType() != upgradeType || !Language.checkLocation(activeChar, upgradeData.getLocationId()))
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
@@ -102,7 +103,7 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 
 		NormalUpgradeResult successResult = upgradeData.getSuccessResult();
 		NormalUpgradeResult failResult = upgradeData.getFailResult();
-		if (successResult == null && failResult == null)
+		if(successResult == null && failResult == null)
 		{ // Нету результата, апгрейд невозможен.
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
@@ -110,13 +111,13 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		}
 
 		double totalChance = 0.;
-		if (successResult != null)
+		if(successResult != null)
 			totalChance += successResult.getChance();
-		if (failResult != null)
+		if(failResult != null)
 			totalChance += failResult.getChance();
 
 		double totalFailChance = 100. - totalChance;
-		if (totalFailChance > 0 && Rnd.chance(totalFailChance))
+		if(totalFailChance > 0 && Rnd.chance(totalFailChance))
 		{ // Тотальный фейл, не сыграл шанс успеха и фейла.
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
@@ -125,17 +126,17 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 
 		List<NormalUpgradeResult> rolledResults = new ArrayList<>();
 		int rollCount = 1;
-		while (rolledResults.isEmpty())
+		while(rolledResults.isEmpty())
 		{ // Разыгрываем результаты.
-			if (successResult != null && Rnd.chance(successResult.getChance() * rollCount))
+			if(successResult != null && Rnd.chance(successResult.getChance() * rollCount))
 				rolledResults.add(successResult);
-			if (failResult != null && Rnd.chance(failResult.getChance() * rollCount))
+			if(failResult != null && Rnd.chance(failResult.getChance() * rollCount))
 				rolledResults.add(failResult);
 			rollCount += 10;
 		}
 
 		NormalUpgradeResult result = Rnd.get(rolledResults); // Берем рендомно 1 из разыграных результатов.
-		if (result == null)
+		if(result == null)
 		{
 			activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 			activeChar.sendPacket(SystemMsg.FAILED_THE_OPERATION);
@@ -157,14 +158,14 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		try
 		{
 			ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(targetItemObjectId);
-			if (targetItem == null)
+			if(targetItem == null)
 			{ // Улучшаемый итем не найден.
 				activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 				activeChar.sendPacket(SystemMsg.FAILED_BECAUSE_THE_TARGET_ITEM_DOES_NOT_EXIST);
 				return;
 			}
 
-			if (targetItem.getEnchantLevel() != upgradeData.getEnchantLevel())
+			if(targetItem.getEnchantLevel() != upgradeData.getEnchantLevel())
 			{ // Заточка улучшаемого итема не
 				// соответствует требованиям.
 				activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
@@ -172,23 +173,24 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 				return;
 			}
 
-			if (activeChar.getAdena() < upgradeData.getPrice())
+			if(activeChar.getAdena() < upgradeData.getPrice())
 			{ // Проверяем наличие адены.
 				activeChar.sendPacket(ExUpgradeSystemNormalResult.FAIL);
 				activeChar.sendPacket(SystemMsg.FAILED_BECAUSE_THERES_NOT_ENOUGH_ADENA);
 				return;
 			}
 
-			loop1: for (UpgradeItemData requiredItem : upgradeData.getRequiredItems())
+			loop1:
+			for(UpgradeItemData requiredItem : upgradeData.getRequiredItems())
 			{ // Проверяем наличие требуемых
 				// предметов.
-				if (requiredItem.getCount() == 0)
+				if(requiredItem.getCount() == 0)
 					continue;
 
 				List<ItemInstance> items = activeChar.getInventory().getItemsByItemId(requiredItem.getId());
-				for (ItemInstance item : items)
+				for(ItemInstance item : items)
 				{
-					if (item == null || item.getCount() < requiredItem.getCount() || item.getEnchantLevel() != requiredItem.getEnchantLevel())
+					if(item == null || item.getCount() < requiredItem.getCount() || item.getEnchantLevel() != requiredItem.getEnchantLevel())
 						continue;
 					continue loop1;
 				}
@@ -207,7 +209,7 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 			normalEnsouls = targetItem.getNormalEnsouls();
 			specialEnsouls = targetItem.getSpecialEnsouls();
 
-			if (targetItem.isWeapon() || targetItem.isArmor() || targetItem.isAccessory())
+			if(targetItem.isWeapon() || targetItem.isArmor() || targetItem.isAccessory())
 			{
 				customFlags = targetItem.getCustomFlags();
 				lifeTime = targetItem.getTemporalLifeTime();
@@ -217,18 +219,19 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 			activeChar.sendPacket(SystemMessagePacket.removeItems(targetItem.getItemId(), 1));
 			activeChar.reduceAdena(upgradeData.getPrice(), true); // Забираем оплату.
 
-			loop2: for (UpgradeItemData requiredItem : upgradeData.getRequiredItems())
+			loop2:
+			for(UpgradeItemData requiredItem : upgradeData.getRequiredItems())
 			{ // Забираем требуемые предметы.
-				if (requiredItem.getCount() == 0)
+				if(requiredItem.getCount() == 0)
 					continue;
 
 				List<ItemInstance> items = activeChar.getInventory().getItemsByItemId(requiredItem.getId());
-				for (ItemInstance item : items)
+				for(ItemInstance item : items)
 				{
-					if (item == null || item.getCount() < requiredItem.getCount() || item.getEnchantLevel() != requiredItem.getEnchantLevel())
+					if(item == null || item.getCount() < requiredItem.getCount() || item.getEnchantLevel() != requiredItem.getEnchantLevel())
 						continue;
 
-					if (!activeChar.getInventory().destroyItemByObjectId(item.getObjectId(), requiredItem.getCount()))
+					if(!activeChar.getInventory().destroyItemByObjectId(item.getObjectId(), requiredItem.getCount()))
 						continue;// TODO audit
 
 					activeChar.sendPacket(SystemMessagePacket.removeItems(requiredItem.getId(), requiredItem.getCount()));
@@ -243,51 +246,51 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 
 		Map<Integer, ItemInfo> resultItems = new LinkedHashMap<>();
 
-		for (UpgradeItemData resultItem : result.getItems())
+		for(UpgradeItemData resultItem : result.getItems())
 		{ // Выдаем предметы разыгранного результата.
 			List<ItemInstance> items;
-			if (Objects.requireNonNull(ItemHolder.getInstance().getTemplate(resultItem.getId())).isStackable())
+			if(Objects.requireNonNull(ItemHolder.getInstance().getTemplate(resultItem.getId())).isStackable())
 			{
 				items = ItemFunctions.addItem(activeChar, resultItem.getId(), resultItem.getCount(), resultItem.getEnchantLevel(), true); // Выдаем
-																																			// предмет
-																																			// разыгранного
-																																			// результата.
+				// предмет
+				// разыгранного
+				// результата.
 			}
 			else
 			{
 				items = new ArrayList<>();
 
-				for (int i = 0; i < resultItem.getCount(); i++)
+				for(int i = 0; i < resultItem.getCount(); i++)
 				{
 					ItemInstance newItem = ItemFunctions.createItem(resultItem.getId());
-					if (newItem.isEquipable())
+					if(newItem.isEquipable())
 					{
-						if (resultItem.getEnchantLevel() > 0)
+						if(resultItem.getEnchantLevel() > 0)
 							newItem.setEnchantLevel(resultItem.getEnchantLevel());
-						if (newItem.canBeAugmented(activeChar))
+						if(newItem.canBeAugmented(activeChar))
 						{
-							if (variationStoneId > 0)
+							if(variationStoneId > 0)
 								newItem.setVariationStoneId(variationStoneId);
-							if (variation1Id != 0)
+							if(variation1Id != 0)
 								newItem.setVariation1Id(variation1Id);
-							if (variation2Id != 0)
+							if(variation2Id != 0)
 								newItem.setVariation2Id(variation2Id);
 						}
-						if (newItem.canBeAppearance())
+						if(newItem.canBeAppearance())
 						{
-							if (visualId != 0)
+							if(visualId != 0)
 								newItem.setVisualId(visualId);
-							if (appearanceStoneId != 0)
+							if(appearanceStoneId != 0)
 								newItem.setAppearanceStoneId(appearanceStoneId);
 						}
 
-						if (newItem.canBeBlessed() && blessed)
+						if(newItem.canBeBlessed() && blessed)
 							newItem.setBlessed(true);
 
-						if (customFlags > 0)
+						if(customFlags > 0)
 						{
 							newItem.setCustomFlags(customFlags);
-							if (lifeTime > 0)
+							if(lifeTime > 0)
 								newItem.setLifeTime((int) (System.currentTimeMillis() / 1000L) + lifeTime);
 						}
 					}
@@ -328,12 +331,12 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		}
 
 		boolean success = result.getType() == NormalUpgradeResultType.SUCCESS;
-		if (success)
+		if(success)
 		{ // При успешном результате разыгрываем и выдаем бонусную награду.
 			NormalUpgradeResult bonusResult = upgradeData.getBonusResult();
-			if (bonusResult != null && Rnd.chance(bonusResult.getChance()))
+			if(bonusResult != null && Rnd.chance(bonusResult.getChance()))
 			{
-				for (UpgradeItemData resultItem : bonusResult.getItems())
+				for(UpgradeItemData resultItem : bonusResult.getItems())
 				{
 					List<ItemInstance> addedItems = ItemFunctions.addItem(activeChar, resultItem.getId(), resultItem.getCount(), resultItem.getEnchantLevel(), true);
 					giveResultItem1(resultItem, addedItems, resultItems);
@@ -346,17 +349,17 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 
 	private static void giveResultItem1(UpgradeItemData resultItem, List<ItemInstance> addedItems, Map<Integer, ItemInfo> resultItems)
 	{
-		for (ItemInstance addedItem : addedItems)
+		for(ItemInstance addedItem : addedItems)
 		{
 			ItemInfo itemInfo = resultItems.get(addedItem.getObjectId());
-			if (itemInfo == null)
+			if(itemInfo == null)
 			{
 				itemInfo = new ItemInfo(addedItem);
 				itemInfo.setCount(0);
 				resultItems.put(addedItem.getObjectId(), itemInfo);
 			}
 
-			if (addedItem.isStackable())
+			if(addedItem.isStackable())
 				itemInfo.setCount(itemInfo.getCount() + resultItem.getCount());
 			else
 				itemInfo.setCount(1);

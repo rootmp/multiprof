@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 
 import l2s.commons.math.SafeMath;
@@ -35,24 +36,24 @@ public class AddTradeItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player parthner1 = client.getActiveChar();
-		if (parthner1 == null || _amount < 1)
+		if(parthner1 == null || _amount < 1)
 			return;
 
 		Request request = parthner1.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.TRADE))
+		if(request == null || !request.isTypeOf(L2RequestType.TRADE))
 		{
 			parthner1.sendActionFailed();
 			return;
 		}
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel(TradeDonePacket.FAIL);
 			parthner1.sendActionFailed();
 			return;
 		}
 
-		if (parthner1.isOutOfControl())
+		if(parthner1.isOutOfControl())
 		{
 			request.cancel(TradeDonePacket.FAIL);
 			parthner1.sendActionFailed();
@@ -60,7 +61,7 @@ public class AddTradeItem implements IClientIncomingPacket
 		}
 
 		Player parthner2 = request.getOtherPlayer(parthner1);
-		if (parthner2 == null)
+		if(parthner2 == null)
 		{
 			request.cancel(TradeDonePacket.FAIL);
 			parthner1.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -68,14 +69,14 @@ public class AddTradeItem implements IClientIncomingPacket
 			return;
 		}
 
-		if (parthner2.getRequest() != request)
+		if(parthner2.getRequest() != request)
 		{
 			request.cancel(TradeDonePacket.FAIL);
 			parthner1.sendActionFailed();
 			return;
 		}
 
-		if (request.isConfirmed(parthner1) || request.isConfirmed(parthner2))
+		if(request.isConfirmed(parthner1) || request.isConfirmed(parthner2))
 		{
 			parthner1.sendPacket(SystemMsg.YOU_MAY_NO_LONGER_ADJUST_ITEMS_IN_THE_TRADE_BECAUSE_THE_TRADE_HAS_BEEN_CONFIRMED);
 			parthner1.sendActionFailed();
@@ -83,7 +84,7 @@ public class AddTradeItem implements IClientIncomingPacket
 		}
 
 		ItemInstance item = parthner1.getInventory().getItemByObjectId(_objectId);
-		if (item == null || !item.canBeTraded(parthner1))
+		if(item == null || !item.canBeTraded(parthner1))
 		{
 			parthner1.sendPacket(SystemMsg.THIS_ITEM_CANNOT_BE_TRADED_OR_SOLD);
 			return;
@@ -96,8 +97,8 @@ public class AddTradeItem implements IClientIncomingPacket
 
 		try
 		{
-			for (TradeItem ti : parthner1.getTradeList())
-				if (ti.getObjectId() == _objectId)
+			for(TradeItem ti : parthner1.getTradeList())
+				if(ti.getObjectId() == _objectId)
 				{
 					count = SafeMath.addAndCheck(count, ti.getCount());
 					count = Math.min(count, item.getCount());
@@ -106,13 +107,13 @@ public class AddTradeItem implements IClientIncomingPacket
 					break;
 				}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			parthner1.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 			return;
 		}
 
-		if (tradeItem == null)
+		if(tradeItem == null)
 		{
 			// добавляем новую вещь в список
 			tradeItem = new TradeItem(item);
@@ -121,7 +122,8 @@ public class AddTradeItem implements IClientIncomingPacket
 		}
 
 		parthner1.sendPacket(new TradeOwnAddPacket(1, tradeItem, tradeItem.getCount()), new TradeOwnAddPacket(2, tradeItem, tradeItem.getCount()));
-		parthner1.sendPacket(new TradeUpdatePacket(1, tradeItem, item.getCount() - tradeItem.getCount()), new TradeUpdatePacket(2, tradeItem, item.getCount() - tradeItem.getCount()));
+		parthner1.sendPacket(new TradeUpdatePacket(1, tradeItem, item.getCount()
+				- tradeItem.getCount()), new TradeUpdatePacket(2, tradeItem, item.getCount() - tradeItem.getCount()));
 		parthner2.sendPacket(new TradeOtherAddPacket(1, tradeItem, tradeItem.getCount()), new TradeOtherAddPacket(2, tradeItem, tradeItem.getCount()));
 	}
 }

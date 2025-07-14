@@ -28,60 +28,60 @@ public final class ArmorSet
 
 	public ArmorSet(String[] chests, String[] legs, String[] head, String[] gloves, String[] feet, String[] shield, String[] shield_skills, String[] enchant6skills, String[] enchant7skills, String[] enchant8skills, String[] enchant9skills, String[] enchant10skills)
 	{
-		if (chests != null)
+		if(chests != null)
 		{
-			for (String chestId : chests)
+			for(String chestId : chests)
 			{
 				_chests.add(Integer.parseInt(chestId));
 			}
 		}
 
-		if (legs != null)
+		if(legs != null)
 		{
-			for (String legsId : legs)
+			for(String legsId : legs)
 			{
 				_legs.add(Integer.parseInt(legsId));
 			}
 		}
 
-		if (head != null)
+		if(head != null)
 		{
-			for (String headId : head)
+			for(String headId : head)
 			{
 				_head.add(Integer.parseInt(headId));
 			}
 		}
 
-		if (gloves != null)
+		if(gloves != null)
 		{
-			for (String glovesId : gloves)
+			for(String glovesId : gloves)
 			{
 				_gloves.add(Integer.parseInt(glovesId));
 			}
 		}
 
-		if (feet != null)
+		if(feet != null)
 		{
-			for (String feetId : feet)
+			for(String feetId : feet)
 			{
 				_feet.add(Integer.parseInt(feetId));
 			}
 		}
 
-		if (shield != null)
+		if(shield != null)
 		{
-			for (String shieldId : shield)
+			for(String shieldId : shield)
 			{
 				_shield.add(Integer.parseInt(shieldId));
 			}
 		}
 
-		if (shield_skills != null)
+		if(shield_skills != null)
 		{
-			for (String skill : shield_skills)
+			for(String skill : shield_skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -90,12 +90,12 @@ public final class ArmorSet
 			}
 		}
 
-		if (enchant6skills != null)
+		if(enchant6skills != null)
 		{
-			for (String skill : enchant6skills)
+			for(String skill : enchant6skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -104,12 +104,12 @@ public final class ArmorSet
 			}
 		}
 
-		if (enchant7skills != null)
+		if(enchant7skills != null)
 		{
-			for (String skill : enchant7skills)
+			for(String skill : enchant7skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -118,12 +118,12 @@ public final class ArmorSet
 			}
 		}
 
-		if (enchant8skills != null)
+		if(enchant8skills != null)
 		{
-			for (String skill : enchant8skills)
+			for(String skill : enchant8skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -132,12 +132,12 @@ public final class ArmorSet
 			}
 		}
 
-		if (enchant9skills != null)
+		if(enchant9skills != null)
 		{
-			for (String skill : enchant9skills)
+			for(String skill : enchant9skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -146,12 +146,12 @@ public final class ArmorSet
 			}
 		}
 
-		if (enchant10skills != null)
+		if(enchant10skills != null)
 		{
-			for (String skill : enchant10skills)
+			for(String skill : enchant10skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -164,12 +164,12 @@ public final class ArmorSet
 	public void addSkills(int partsCount, String[] skills)
 	{
 		List<SkillEntry> skillList = new ArrayList<SkillEntry>();
-		if (skills != null)
+		if(skills != null)
 		{
-			for (String skill : skills)
+			for(String skill : skills)
 			{
 				StringTokenizer st = new StringTokenizer(skill, "-");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					int skillId = Integer.parseInt(st.nextToken());
 					int skillLvl = Integer.parseInt(st.nextToken());
@@ -202,23 +202,23 @@ public final class ArmorSet
 		int gloves = 0;
 		int feet = 0;
 
-		if (chestItem != null)
+		if(chestItem != null)
 		{
 			chest = chestItem.getItemId();
 		}
-		if (legsItem != null)
+		if(legsItem != null)
 		{
 			legs = legsItem.getItemId();
 		}
-		if (headItem != null)
+		if(headItem != null)
 		{
 			head = headItem.getItemId();
 		}
-		if (glovesItem != null)
+		if(glovesItem != null)
 		{
 			gloves = glovesItem.getItemId();
 		}
-		if (feetItem != null)
+		if(feetItem != null)
 		{
 			feet = feetItem.getItemId();
 		}
@@ -229,33 +229,23 @@ public final class ArmorSet
 
 	public boolean containAll(int chest, int legs, int head, int gloves, int feet)
 	{
-		if (!_chests.isEmpty() && !_chests.contains(chest))
-		{
-			return false;
-		}
-		if (!_legs.isEmpty() && !_legs.contains(legs))
-		{
-			return false;
-		}
-		if (!_head.isEmpty() && !_head.contains(head))
-		{
-			return false;
-		}
-		if (!_gloves.isEmpty() && !_gloves.contains(gloves))
-		{
-			return false;
-		}
-		if (!_feet.isEmpty() && !_feet.contains(feet))
-		{
-			return false;
-		}
+		if(!_chests.isEmpty() && !_chests.contains(chest))
+		{ return false; }
+		if(!_legs.isEmpty() && !_legs.contains(legs))
+		{ return false; }
+		if(!_head.isEmpty() && !_head.contains(head))
+		{ return false; }
+		if(!_gloves.isEmpty() && !_gloves.contains(gloves))
+		{ return false; }
+		if(!_feet.isEmpty() && !_feet.contains(feet))
+		{ return false; }
 
 		return true;
 	}
 
 	public boolean containItem(int slot, int itemId)
 	{
-		switch (slot)
+		switch(slot)
 		{
 			case Inventory.PAPERDOLL_CHEST:
 				return _chests.contains(itemId);
@@ -288,45 +278,45 @@ public final class ArmorSet
 		int gloves = 0;
 		int feet = 0;
 
-		if (chestItem != null)
+		if(chestItem != null)
 		{
 			chest = chestItem.getItemId();
 		}
-		if (legsItem != null)
+		if(legsItem != null)
 		{
 			legs = legsItem.getItemId();
 		}
-		if (headItem != null)
+		if(headItem != null)
 		{
 			head = headItem.getItemId();
 		}
-		if (glovesItem != null)
+		if(glovesItem != null)
 		{
 			gloves = glovesItem.getItemId();
 		}
-		if (feetItem != null)
+		if(feetItem != null)
 		{
 			feet = feetItem.getItemId();
 		}
 
 		int result = 0;
-		if (!_chests.isEmpty() && _chests.contains(chest))
+		if(!_chests.isEmpty() && _chests.contains(chest))
 		{
 			result++;
 		}
-		if (!_legs.isEmpty() && _legs.contains(legs))
+		if(!_legs.isEmpty() && _legs.contains(legs))
 		{
 			result++;
 		}
-		if (!_head.isEmpty() && _head.contains(head))
+		if(!_head.isEmpty() && _head.contains(head))
 		{
 			result++;
 		}
-		if (!_gloves.isEmpty() && _gloves.contains(gloves))
+		if(!_gloves.isEmpty() && _gloves.contains(gloves))
 		{
 			result++;
 		}
-		if (!_feet.isEmpty() && _feet.contains(feet))
+		if(!_feet.isEmpty() && _feet.contains(feet))
 		{
 			result++;
 		}
@@ -336,10 +326,8 @@ public final class ArmorSet
 
 	public List<SkillEntry> getSkills(int partsCount)
 	{
-		if (_skills.get(partsCount) == null)
-		{
-			return new ArrayList<SkillEntry>();
-		}
+		if(_skills.get(partsCount) == null)
+		{ return new ArrayList<SkillEntry>(); }
 
 		return _skills.get(partsCount);
 	}
@@ -347,12 +335,12 @@ public final class ArmorSet
 	public List<SkillEntry> getSkillsToRemove()
 	{
 		List<SkillEntry> result = new ArrayList<SkillEntry>();
-		for (int i : _skills.keys())
+		for(int i : _skills.keys())
 		{
 			List<SkillEntry> skills = _skills.get(i);
-			if (skills != null)
+			if(skills != null)
 			{
-				for (SkillEntry skill : skills)
+				for(SkillEntry skill : skills)
 				{
 					result.add(skill);
 				}
@@ -396,20 +384,16 @@ public final class ArmorSet
 		Inventory inv = player.getInventory();
 
 		ItemInstance shieldItem = inv.getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-		if ((shieldItem != null) && _shield.contains(shieldItem.getItemId()))
-		{
-			return true;
-		}
+		if((shieldItem != null) && _shield.contains(shieldItem.getItemId()))
+		{ return true; }
 
 		return false;
 	}
 
 	public boolean containShield(int shield_id)
 	{
-		if (_shield.isEmpty())
-		{
-			return false;
-		}
+		if(_shield.isEmpty())
+		{ return false; }
 
 		return _shield.contains(shield_id);
 	}
@@ -423,10 +407,8 @@ public final class ArmorSet
 	public int getEnchantLevel(Player player)
 	{
 		// Player don't have full set
-		if (!containAll(player))
-		{
-			return 0;
-		}
+		if(!containAll(player))
+		{ return 0; }
 
 		Inventory inv = player.getInventory();
 
@@ -437,27 +419,27 @@ public final class ArmorSet
 		ItemInstance feetItem = inv.getPaperdollItem(Inventory.PAPERDOLL_FEET);
 
 		int value = -1;
-		if (!_chests.isEmpty())
+		if(!_chests.isEmpty())
 		{
 			value = value > -1 ? Math.min(value, chestItem.getFixedEnchantLevel(player)) : chestItem.getFixedEnchantLevel(player);
 		}
 
-		if (!_legs.isEmpty())
+		if(!_legs.isEmpty())
 		{
 			value = value > -1 ? Math.min(value, legsItem.getFixedEnchantLevel(player)) : legsItem.getFixedEnchantLevel(player);
 		}
 
-		if (!_gloves.isEmpty())
+		if(!_gloves.isEmpty())
 		{
 			value = value > -1 ? Math.min(value, glovesItem.getFixedEnchantLevel(player)) : glovesItem.getFixedEnchantLevel(player);
 		}
 
-		if (!_head.isEmpty())
+		if(!_head.isEmpty())
 		{
 			value = value > -1 ? Math.min(value, headItem.getFixedEnchantLevel(player)) : headItem.getFixedEnchantLevel(player);
 		}
 
-		if (!_feet.isEmpty())
+		if(!_feet.isEmpty())
 		{
 			value = value > -1 ? Math.min(value, feetItem.getFixedEnchantLevel(player)) : feetItem.getFixedEnchantLevel(player);
 		}

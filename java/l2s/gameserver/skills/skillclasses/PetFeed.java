@@ -20,11 +20,11 @@ public class PetFeed extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
 		// TODO: [Bonux] проверить условия.
-		if (!target.isPet() && !(target.isPlayer() && target.getPlayer().isMounted()))
+		if(!target.isPet() && !(target.isPlayer() && target.getPlayer().isMounted()))
 			return false;
 
 		return true;
@@ -33,7 +33,7 @@ public class PetFeed extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isPet())
+		if(target.isPet())
 		{
 			PetInstance pet = (PetInstance) target;
 			int feedPowerIndx = Math.min(_feedPower.length - 1, pet.getFormId());
@@ -41,7 +41,7 @@ public class PetFeed extends Skill
 			pet.setCurrentFed(pet.getCurrentFed() + power, true);
 			pet.sendStatusUpdate();
 		}
-		else if (target.isPlayer() && target.getPlayer().isMounted())
+		else if(target.isPlayer() && target.getPlayer().isMounted())
 		{
 			Mount mount = target.getPlayer().getMount();
 			int feedPowerIndx = Math.min(_feedPower.length - 1, mount.getFormId());

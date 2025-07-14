@@ -30,67 +30,67 @@ public class OrdinaryActions extends AbstractAction
 	public static List<AbstractAction> parseActions(FakePlayerActionsHolder actionsHolder, Element element)
 	{
 		List<AbstractAction> actions = new ArrayList<AbstractAction>();
-		for (Iterator<Element> iterator = element.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator(); iterator.hasNext();)
 		{
 			Element actionElement = iterator.next();
 			String actionElementName = actionElement.getName();
-			if (actionElementName.equals("action"))
+			if(actionElementName.equals("action"))
 			{
 				actions.add(ActionById.parse(actionsHolder, actionElement));
 			}
-			else if (actionElementName.equals("add_item"))
+			else if(actionElementName.equals("add_item"))
 			{
 				actions.add(AddItemAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("add_level"))
+			else if(actionElementName.equals("add_level"))
 			{
 				actions.add(AddLevelAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("farm"))
+			else if(actionElementName.equals("farm"))
 			{
 				actions.add(FarmAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("move_to_npc"))
+			else if(actionElementName.equals("move_to_npc"))
 			{
 				actions.add(MoveToNpcAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("move_to_point"))
+			else if(actionElementName.equals("move_to_point"))
 			{
 				actions.add(MoveToPointAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("ordinary_actions"))
+			else if(actionElementName.equals("ordinary_actions"))
 			{
 				actions.add(OrdinaryActions.parse(actionsHolder, actionElement));
 			}
-			else if (actionElementName.equals("random_action"))
+			else if(actionElementName.equals("random_action"))
 			{
 				actions.add(RandomAction.parse(actionsHolder, actionElement));
 			}
-			else if (actionElementName.equals("repeat_actions"))
+			else if(actionElementName.equals("repeat_actions"))
 			{
 				actions.add(RepeatActions.parse(actionsHolder, actionElement));
 			}
-			else if (actionElementName.equals("speak_with_npc"))
+			else if(actionElementName.equals("speak_with_npc"))
 			{
 				actions.add(SpeakWithNpcAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("teleport_to_closest_town"))
+			else if(actionElementName.equals("teleport_to_closest_town"))
 			{
 				actions.add(TeleportToClosestTownAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("teleport_to_point"))
+			else if(actionElementName.equals("teleport_to_point"))
 			{
 				actions.add(TeleportToPointAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("use_community"))
+			else if(actionElementName.equals("use_community"))
 			{
 				actions.add(UseCommunityAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("use_item"))
+			else if(actionElementName.equals("use_item"))
 			{
 				actions.add(UseItemAction.parse(actionElement));
 			}
-			else if (actionElementName.equals("wait"))
+			else if(actionElementName.equals("wait"))
 			{
 				actions.add(WaitAction.parse(actionElement));
 			}

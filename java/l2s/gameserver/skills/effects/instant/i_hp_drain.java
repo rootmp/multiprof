@@ -23,11 +23,11 @@ public class i_hp_drain extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (getValue() <= 0)
+		if(getValue() <= 0)
 			return false;
-		if (!effected.isPlayable() && Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
+		if(!effected.isPlayable() && Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
 			return false;
-		if (effector.getPvpFlag() != 0)
+		if(effector.getPvpFlag() != 0)
 			return false;
 		return true;
 	}
@@ -37,21 +37,21 @@ public class i_hp_drain extends i_abstract_effect
 	{
 		final Creature realTarget = reflected ? effector : effected;
 
-		if (realTarget.isDead())
+		if(realTarget.isDead())
 			return;
 
 		final double targetHp = realTarget.getCurrentHp();
 		final double targetCP = realTarget.getCurrentCp();
 
 		double damage = 0.;
-		if (getSkill().isMagic())
+		if(getSkill().isMagic())
 		{
 			AttackInfo info = Formulas.calcMagicDam(effector, realTarget, getSkill(), getValue(), getSkill().isSSPossible(), true);
 			realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, false, true, false, false, true, true, info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-			if (info.damage >= 1)
+			if(info.damage >= 1)
 			{
 				double lethalDmg = Formulas.calcLethalDamage(effector, realTarget, getSkill());
-				if (lethalDmg > 0)
+				if(lethalDmg > 0)
 					realTarget.reduceCurrentHp(lethalDmg, effector, getSkill(), true, true, false, false, false, false, false);
 			}
 			damage = info.damage;
@@ -59,35 +59,37 @@ public class i_hp_drain extends i_abstract_effect
 		else
 		{
 			AttackInfo info = Formulas.calcSkillPDamage(effector, realTarget, getSkill(), getValue(), false, getSkill().isSSPossible());
-			if (info != null)
+			if(info != null)
 			{
-				realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, false, true, false, false, true, true, info.crit || info.blow, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-				if (!info.miss || info.damage >= 1)
+				realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, false, true, false, false, true, true, info.crit
+						|| info.blow, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
+				if(!info.miss || info.damage >= 1)
 				{
 					double lethalDmg = Formulas.calcLethalDamage(effector, realTarget, getSkill());
-					if (lethalDmg > 0)
+					if(lethalDmg > 0)
 						realTarget.reduceCurrentHp(lethalDmg, effector, getSkill(), true, true, false, false, false, false, false);
-					else if (!reflected)
+					else if(!reflected)
 						realTarget.doCounterAttack(getSkill(), effector, false);
 				}
 				damage = info.damage;
 			}
 		}
 
-		if (_absorbPercent > 0 && !effector.isHealBlocked())
+		if(_absorbPercent > 0 && !effector.isHealBlocked())
 		{
 			double hp = 0.;
 
 			// Нельзя восстанавливать HP из CP
-			if (damage > targetCP || !realTarget.isPlayer())
+			if(damage > targetCP || !realTarget.isPlayer())
 				hp = (damage - targetCP) * (_absorbPercent / 100);
 
 			// Нельзя восстановить больше hp, чем есть у цели.
-			if (hp > targetHp)
+			if(hp > targetHp)
 				hp = targetHp;
 
-			double addToHp = Math.max(0, Math.min(hp, effector.getStat().calc(Stats.HP_LIMIT, null, null) * effector.getMaxHp() / 100. - effector.getCurrentHp()));
-			if (addToHp > 0)
+			double addToHp = Math.max(0, Math.min(hp, effector.getStat().calc(Stats.HP_LIMIT, null, null) * effector.getMaxHp() / 100.
+					- effector.getCurrentHp()));
+			if(addToHp > 0)
 				effector.setCurrentHp(effector.getCurrentHp() + addToHp, false);
 		}
 	}

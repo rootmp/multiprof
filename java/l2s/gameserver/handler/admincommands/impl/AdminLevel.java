@@ -20,13 +20,13 @@ public class AdminLevel implements IAdminCommandHandler
 
 	private void setLevel(Player activeChar, GameObject target, int level)
 	{
-		if (target == null || !(target.isPlayer() || target.isPet()))
+		if(target == null || !(target.isPlayer() || target.isPet()))
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return;
 		}
 
-		if (target.isPlayer())
+		if(target.isPlayer())
 		{
 			Player player = (Player) target;
 			level = Math.min(level, player.getMaxLevel() + 1);
@@ -35,7 +35,7 @@ public class AdminLevel implements IAdminCommandHandler
 			Long exp_add = Experience.getExpForLevel(level) - player.getExp();
 			player.addExpAndSp(exp_add, 0, true);
 		}
-		else if (target.isPet())
+		else if(target.isPet())
 		{
 			PetInstance pet = (PetInstance) target;
 			level = Math.min(level, pet.getData().getMaxLvl() + 1);
@@ -51,22 +51,22 @@ public class AdminLevel implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
+		if(!activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
 		GameObject target = activeChar.getTarget();
-		if (target == null || !(target.isPlayer() || target.isPet()))
+		if(target == null || !(target.isPlayer() || target.isPet()))
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 		int level;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_add_level:
 			case admin_addLevel:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 				{
 					activeChar.sendMessage("USAGE: //addLevel level");
 					return false;
@@ -75,7 +75,7 @@ public class AdminLevel implements IAdminCommandHandler
 				{
 					level = Integer.parseInt(wordList[1]);
 				}
-				catch (NumberFormatException e)
+				catch(NumberFormatException e)
 				{
 					activeChar.sendMessage("You must specify level");
 					return false;
@@ -84,7 +84,7 @@ public class AdminLevel implements IAdminCommandHandler
 				break;
 			case admin_set_level:
 			case admin_setLevel:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 				{
 					activeChar.sendMessage("USAGE: //setLevel level");
 					return false;
@@ -93,7 +93,7 @@ public class AdminLevel implements IAdminCommandHandler
 				{
 					level = Integer.parseInt(wordList[1]);
 				}
-				catch (NumberFormatException e)
+				catch(NumberFormatException e)
 				{
 					activeChar.sendMessage("You must specify level");
 					return false;

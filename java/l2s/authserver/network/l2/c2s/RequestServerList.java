@@ -28,7 +28,7 @@ public class RequestServerList extends L2LoginClientPacket
 	{
 		L2LoginClient client = getClient();
 		SessionKey skey = client.getSessionKey();
-		if (skey == null || !skey.checkLoginPair(_loginOkID1, _loginOkID2))
+		if(skey == null || !skey.checkLoginPair(_loginOkID1, _loginOkID2))
 		{
 			client.close(LoginFailReason.REASON_ACCESS_FAILED);
 			return;

@@ -44,7 +44,7 @@ public class RaidBossInstance extends MonsterInstance
 		@Override
 		public void run()
 		{
-			if (_prepare)
+			if(_prepare)
 			{
 				_raidBerserkTask = ThreadPoolManager.getInstance().schedule(new BerserkTask(false), TimeUnit.MINUTES.toMillis(5));
 				broadcastPacket(new ExShowScreenMessage(NpcString._5_MINUTES_UNTIL_RAID_BOSS_GOES_BERSERK, 10000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, true));
@@ -101,43 +101,43 @@ public class RaidBossInstance extends MonsterInstance
 	{
 		stopRaidBerserkTask();
 
-		if (isReflectionBoss())
+		if(isReflectionBoss())
 		{
 			super.onDeath(killer);
 			return;
 		}
 
-		if (killer != null && killer.isPlayable())
+		if(killer != null && killer.isPlayable())
 		{
 			Player player = killer.getPlayer();
-			if (player.isInParty())
+			if(player.isInParty())
 			{
-				for (Player member : player.getParty().getPartyMembers())
-					if (member.isHero())
+				for(Player member : player.getParty().getPartyMembers())
+					if(member.isHero())
 						Hero.getInstance().addHeroDiary(member.getObjectId(), HeroDiary.ACTION_RAID_KILLED, getNpcId());
 				player.getParty().broadCast(SystemMsg.CONGRATULATIONS_YOUR_RAID_WAS_SUCCESSFUL);
 			}
 			else
 			{
-				if (player.isHero())
+				if(player.isHero())
 					Hero.getInstance().addHeroDiary(player.getObjectId(), HeroDiary.ACTION_RAID_KILLED, getNpcId());
 				player.sendPacket(SystemMsg.CONGRATULATIONS_YOUR_RAID_WAS_SUCCESSFUL);
 			}
 
 			Quest q = QuestHolder.getInstance().getQuest(508);
-			if (q != null)
+			if(q != null)
 			{
-				if (player.getClan() != null && player.getClan().getLeader().isOnline())
+				if(player.getClan() != null && player.getClan().getLeader().isOnline())
 				{
 					QuestState st = player.getClan().getLeader().getPlayer().getQuestState(q);
-					if (st != null)
+					if(st != null)
 						st.getQuest().onKill(this, st);
 				}
 			}
 		}
 
 		int boxId = 0;
-		switch (getNpcId())
+		switch(getNpcId())
 		{
 			case 25035: // Shilens Messenger Cabrio
 				boxId = 31027;
@@ -153,10 +153,10 @@ public class RaidBossInstance extends MonsterInstance
 				break;
 		}
 
-		if (boxId != 0)
+		if(boxId != 0)
 		{
 			NpcTemplate boxTemplate = NpcHolder.getInstance().getTemplate(boxId);
-			if (boxTemplate != null)
+			if(boxTemplate != null)
 			{
 				final NpcInstance box = new NpcInstance(IdFactory.getInstance().getNextId(), boxTemplate, StatsSet.EMPTY);
 				box.spawnMe(getLoc());
@@ -165,43 +165,43 @@ public class RaidBossInstance extends MonsterInstance
 			}
 		}
 
-		if (killer != null && killer.getPlayer() != null && Config.RAID_DROP_GLOBAL_ITEMS)
+		if(killer != null && killer.getPlayer() != null && Config.RAID_DROP_GLOBAL_ITEMS)
 		{
-			if (getLevel() >= Config.MIN_RAID_LEVEL_TO_DROP)
+			if(getLevel() >= Config.MIN_RAID_LEVEL_TO_DROP)
 			{
-				for (Config.RaidGlobalDrop drop_inf : Config.RAID_GLOBAL_DROP)
+				for(Config.RaidGlobalDrop drop_inf : Config.RAID_GLOBAL_DROP)
 				{
 					int id = drop_inf.getId();
 					long count = drop_inf.getCount();
 					double chance = drop_inf.getChance();
-					if (Rnd.chance(chance))
+					if(Rnd.chance(chance))
 						ItemFunctions.addItem(killer.getPlayer(), id, count, true);
 				}
 			}
 		}
 
-		if (_spawnDeathKnight && !isBoss() && getReflection().isMain() && Rnd.chance(10))
+		if(_spawnDeathKnight && !isBoss() && getReflection().isMain() && Rnd.chance(10))
 		{
 			int knightId = 0;
-			if (getLevel() >= 20 && getLevel() < 30)
+			if(getLevel() >= 20 && getLevel() < 30)
 				knightId = 25787;
-			else if (getLevel() >= 30 && getLevel() < 40)
+			else if(getLevel() >= 30 && getLevel() < 40)
 				knightId = 25788;
-			else if (getLevel() >= 40 && getLevel() < 50)
+			else if(getLevel() >= 40 && getLevel() < 50)
 				knightId = 25789;
-			else if (getLevel() >= 50 && getLevel() < 60)
+			else if(getLevel() >= 50 && getLevel() < 60)
 				knightId = 25790;
-			else if (getLevel() >= 60 && getLevel() < 70)
+			else if(getLevel() >= 60 && getLevel() < 70)
 				knightId = 25791;
-			else if (getLevel() >= 70 && getLevel() < 80)
+			else if(getLevel() >= 70 && getLevel() < 80)
 				knightId = 25792;
 
-			if (knightId > 0)
+			if(knightId > 0)
 			{
 				NpcInstance npc = NpcUtils.spawnSingle(knightId, getLoc(), getReflection(), 900000L); // TODO: Проверить
-																										// процесс
-																										// деспавна на
-																										// оффе.
+				// процесс
+				// деспавна на
+				// оффе.
 				npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, killer, 1000);
 			}
 		}
@@ -264,9 +264,9 @@ public class RaidBossInstance extends MonsterInstance
 	@Override
 	public void onZoneEnter(Zone zone)
 	{
-		if (!zone.checkIfInZone(getSpawnedLoc().getX(), getSpawnedLoc().getY(), getSpawnedLoc().getZ()))
+		if(!zone.checkIfInZone(getSpawnedLoc().getX(), getSpawnedLoc().getY(), getSpawnedLoc().getZ()))
 		{
-			if (zone.getType() == ZoneType.peace_zone || zone.getType() == ZoneType.battle_zone || zone.getType() == ZoneType.SIEGE)
+			if(zone.getType() == ZoneType.peace_zone || zone.getType() == ZoneType.battle_zone || zone.getType() == ZoneType.SIEGE)
 				getAI().returnHomeAndRestore(isRunning());
 		}
 	}
@@ -280,13 +280,13 @@ public class RaidBossInstance extends MonsterInstance
 
 	public void startRaidBerserkTask()
 	{
-		if (!_canRaidBerserk)
+		if(!_canRaidBerserk)
 			return;
 
-		if (_raidBerserkTask != null)
+		if(_raidBerserkTask != null)
 			return;
 
-		if (getAbnormalList().contains(RAID_BERSERK_SKILL_ID))
+		if(getAbnormalList().contains(RAID_BERSERK_SKILL_ID))
 			return;
 
 		_raidBerserkTask = ThreadPoolManager.getInstance().schedule(new BerserkTask(true), TimeUnit.MINUTES.toMillis(10));
@@ -294,7 +294,7 @@ public class RaidBossInstance extends MonsterInstance
 
 	public void stopRaidBerserkTask()
 	{
-		if (_raidBerserkTask != null)
+		if(_raidBerserkTask != null)
 		{
 			_raidBerserkTask.cancel(false);
 			_raidBerserkTask = null;

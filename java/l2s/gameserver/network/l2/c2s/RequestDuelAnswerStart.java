@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.EventHolder;
 import l2s.gameserver.model.Player;
@@ -28,21 +29,21 @@ public class RequestDuelAnswerStart implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.DUEL))
+		if(request == null || !request.isTypeOf(L2RequestType.DUEL))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -50,7 +51,7 @@ public class RequestDuelAnswerStart implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -58,14 +59,14 @@ public class RequestDuelAnswerStart implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_duelType != request.getInteger("duelType"))
+		if(_duelType != request.getInteger("duelType"))
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -74,11 +75,11 @@ public class RequestDuelAnswerStart implements IClientIncomingPacket
 
 		AbstractDuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, request.getInteger("eventId", _duelType));
 
-		switch (_response)
+		switch(_response)
 		{
 			case 0:
 				request.cancel();
-				if (_duelType == 1)
+				if(_duelType == 1)
 					requestor.sendPacket(SystemMsg.THE_OPPOSING_PARTY_HAS_DECLINED_YOUR_CHALLENGE_TO_A_DUEL);
 				else
 					requestor.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_DECLINED_YOUR_CHALLENGE_TO_A_PARTY_DUEL).addName(activeChar));
@@ -88,14 +89,14 @@ public class RequestDuelAnswerStart implements IClientIncomingPacket
 				requestor.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_SET_TO_REFUSE_DUEL_REQUESTS_AND_CANNOT_RECEIVE_A_DUEL_REQUEST).addName(activeChar));
 				break;
 			case 1:
-				if (!duelEvent.canDuel(requestor, activeChar, false))
+				if(!duelEvent.canDuel(requestor, activeChar, false))
 				{
 					request.cancel();
 					return;
 				}
 
 				SystemMessagePacket msg1, msg2;
-				if (_duelType == 1)
+				if(_duelType == 1)
 				{
 					msg1 = new SystemMessagePacket(SystemMsg.YOU_HAVE_ACCEPTED_C1S_CHALLENGE_TO_A_PARTY_DUEL);
 					msg2 = new SystemMessagePacket(SystemMsg.S1_HAS_ACCEPTED_YOUR_CHALLENGE_TO_DUEL_AGAINST_THEIR_PARTY);

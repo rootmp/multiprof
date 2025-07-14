@@ -77,10 +77,10 @@ public abstract class MatchingRoom implements PlayerGroup
 	// ===============================================================================================================================================
 	public boolean addMember(Player player)
 	{
-		if (_members.contains(player))
+		if(_members.contains(player))
 			return true;
 
-		if (player.getLevel() < getMinLevel() || player.getLevel() > getMaxLevel() || getPlayers().size() >= getMaxMembersSize())
+		if(player.getLevel() < getMinLevel() || player.getLevel() > getMaxLevel() || getPlayers().size() >= getMaxMembersSize())
 		{
 			player.sendPacket(notValidMessage());
 			return false;
@@ -91,10 +91,10 @@ public abstract class MatchingRoom implements PlayerGroup
 
 	public boolean addMemberForce(Player player)
 	{
-		if (_members.contains(player))
+		if(_members.contains(player))
 			return true;
 
-		if (getPlayers().size() >= getMaxMembersSize())
+		if(getPlayers().size() >= getMaxMembersSize())
 		{
 			player.sendPacket(notValidMessage());
 			return false;
@@ -105,19 +105,19 @@ public abstract class MatchingRoom implements PlayerGroup
 
 	private boolean addMember0(Player player, IClientOutgoingPacket p, boolean sendInfo)
 	{
-		if (!_members.isEmpty())
+		if(!_members.isEmpty())
 			player.addListener(_listener);
 
 		_members.add(player);
 
 		player.setMatchingRoom(this);
 
-		for (Player $member : this)
-			if ($member != player && $member.isMatchingRoomWindowOpened())
+		for(Player $member : this)
+			if($member != player && $member.isMatchingRoomWindowOpened())
 				$member.sendPacket(p, addMemberPacket($member, player));
 
 		MatchingRoomManager.getInstance().removeFromWaitingList(player);
-		if (sendInfo)
+		if(sendInfo)
 		{
 			player.setMatchingRoomWindowOpened(true);
 			player.sendPacket(infoRoomPacket(), membersPacket(player));
@@ -128,20 +128,20 @@ public abstract class MatchingRoom implements PlayerGroup
 
 	public void removeMember(Player member, boolean oust)
 	{
-		if (!_members.remove(member))
+		if(!_members.remove(member))
 			return;
 
 		member.removeListener(_listener);
 		member.setMatchingRoom(null);
-		if (_members.isEmpty())
+		if(_members.isEmpty())
 			disband();
 		else
 		{
 			IClientOutgoingPacket infoPacket = infoRoomPacket();
 			SystemMsg exitMessage0 = exitMessage(true, oust);
 			IClientOutgoingPacket exitMessage = exitMessage0 != null ? new SystemMessagePacket(exitMessage0).addName(member) : null;
-			for (Player player : this)
-				if (player.isMatchingRoomWindowOpened())
+			for(Player player : this)
+				if(player.isMatchingRoomWindowOpened())
 					player.sendPacket(infoPacket, removeMemberPacket(player, member), exitMessage);
 		}
 
@@ -154,17 +154,17 @@ public abstract class MatchingRoom implements PlayerGroup
 
 	public void broadcastPlayerUpdate(Player player)
 	{
-		for (Player $member : MatchingRoom.this)
-			if ($member.isMatchingRoomWindowOpened())
+		for(Player $member : MatchingRoom.this)
+			if($member.isMatchingRoomWindowOpened())
 				$member.sendPacket(updateMemberPacket($member, player));
 	}
 
 	public void disband()
 	{
-		for (Player player : this)
+		for(Player player : this)
 		{
 			player.removeListener(_listener);
-			if (player.isMatchingRoomWindowOpened())
+			if(player.isMatchingRoomWindowOpened())
 			{
 				player.sendPacket(closeRoomMessage());
 				player.sendPacket(closeRoomPacket());
@@ -182,18 +182,18 @@ public abstract class MatchingRoom implements PlayerGroup
 	{
 		_leader = leader;
 
-		if (!_members.contains(leader))
+		if(!_members.contains(leader))
 			addMember0(leader, null, true);
 		else
 		{
-			if (!leader.isMatchingRoomWindowOpened())
+			if(!leader.isMatchingRoomWindowOpened())
 			{
 				leader.setMatchingRoomWindowOpened(true);
 				leader.sendPacket(infoRoomPacket(), membersPacket(leader));
 			}
 			SystemMsg changeLeaderMessage = changeLeaderMessage();
-			for (Player $member : this)
-				if ($member.isMatchingRoomWindowOpened())
+			for(Player $member : this)
+				if($member.isMatchingRoomWindowOpened())
 					$member.sendPacket(updateMemberPacket($member, leader), changeLeaderMessage);
 		}
 	}
@@ -233,7 +233,7 @@ public abstract class MatchingRoom implements PlayerGroup
 	@Override
 	public void broadCast(IBroadcastPacket... arg)
 	{
-		for (Player player : this)
+		for(Player player : this)
 			player.sendPacket(arg);
 	}
 

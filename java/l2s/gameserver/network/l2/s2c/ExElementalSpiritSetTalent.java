@@ -27,7 +27,7 @@ public class ExElementalSpiritSetTalent implements IClientOutgoingPacket
 
 		int evolutionLevel = _elemental.getEvolutionLevel();
 		packetWriter.writeC(evolutionLevel > 0);
-		if (evolutionLevel > 0)
+		if(evolutionLevel > 0)
 		{
 			packetWriter.writeC(evolutionLevel); // Evolution Level (1-3)
 			packetWriter.writeD(_elemental.getEvolution().getId()); // Evolution ID from client
@@ -48,7 +48,7 @@ public class ExElementalSpiritSetTalent implements IClientOutgoingPacket
 
 			ElementalLevelData[] datas = _elemental.getEvolution().getLevelDatas();
 			packetWriter.writeC(datas.length);
-			for (ElementalLevelData data : datas)
+			for(ElementalLevelData data : datas)
 			{
 				packetWriter.writeH(data.getLevel()); // Level
 				packetWriter.writeQ(data.getExp()); // EXP

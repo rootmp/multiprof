@@ -26,20 +26,20 @@ public enum CubicTargetType
 		{
 			Player player = cubic.getOwner();
 			Skill skill = skillInfo.getSkill();
-			if (skill.isDebuff() && !player.isInCombat())
+			if(skill.isDebuff() && !player.isInCombat())
 				return null;
 
 			GameObject object = player.getTarget();
-			if (object != null && object.isCreature())
+			if(object != null && object.isCreature())
 			{
 				Creature target = (Creature) object;
-				if (target.isDead())
+				if(target.isDead())
 					return null;
-				if (target.isDoor() && !skillInfo.isCanAttackDoor())
+				if(target.isDoor() && !skillInfo.isCanAttackDoor())
 					return null;
-				if (skill.isDebuff() && (!target.isInCombat() || !target.isAutoAttackable(cubic.getOwner())))
+				if(skill.isDebuff() && (!target.isInCombat() || !target.isAutoAttackable(cubic.getOwner())))
 					return null;
-				if (!cubic.canCastSkill(target, skill, false))
+				if(!cubic.canCastSkill(target, skill, false))
 					return null;
 				return target;
 			}
@@ -53,13 +53,13 @@ public enum CubicTargetType
 		{
 			Player player = cubic.getOwner();
 			Skill skill = skillInfo.getSkill();
-			if (player.getParty() == null)
+			if(player.getParty() == null)
 			{
-				if (player.isDead())
+				if(player.isDead())
 					return null;
-				if (player.isCurrentHpFull())
+				if(player.isCurrentHpFull())
 					return null;
-				if (!cubic.canCastSkill(player, skill, false))
+				if(!cubic.canCastSkill(player, skill, false))
 					return null;
 				return player;
 			}
@@ -67,17 +67,17 @@ public enum CubicTargetType
 			{
 				Creature target = null;
 				double currentHp = Integer.MAX_VALUE;
-				for (Player member : player.getParty())
+				for(Player member : player.getParty())
 				{
-					if (member == null)
+					if(member == null)
 						continue;
-					if (member.isDead())
+					if(member.isDead())
 						continue;
-					if (member.isCurrentHpFull())
+					if(member.isCurrentHpFull())
 						continue;
-					if (member.getCurrentHp() >= currentHp)
+					if(member.getCurrentHp() >= currentHp)
 						continue;
-					if (!cubic.canCastSkill(member, skill, true))
+					if(!cubic.canCastSkill(member, skill, true))
 						continue;
 					currentHp = member.getCurrentHp();
 					target = member;
@@ -93,13 +93,13 @@ public enum CubicTargetType
 		{
 			Player player = cubic.getOwner();
 			Skill skill = skillInfo.getSkill();
-			if (player.getParty() == null)
+			if(player.getParty() == null)
 			{
-				if (player.isDead())
+				if(player.isDead())
 					return null;
-				if (player.isCurrentMpFull())
+				if(player.isCurrentMpFull())
 					return null;
-				if (!cubic.canCastSkill(player, skill, false))
+				if(!cubic.canCastSkill(player, skill, false))
 					return null;
 				return player;
 			}
@@ -107,17 +107,17 @@ public enum CubicTargetType
 			{
 				Creature target = null;
 				double currentMp = Integer.MAX_VALUE;
-				for (Player member : player.getParty().getPartyMembers())
+				for(Player member : player.getParty().getPartyMembers())
 				{
-					if (member == null)
+					if(member == null)
 						continue;
-					if (member.isDead())
+					if(member.isDead())
 						continue;
-					if (member.isCurrentMpFull())
+					if(member.isCurrentMpFull())
 						continue;
-					if (member.getCurrentMp() >= currentMp)
+					if(member.getCurrentMp() >= currentMp)
 						continue;
-					if (!cubic.canCastSkill(member, skill, true))
+					if(!cubic.canCastSkill(member, skill, true))
 						continue;
 					currentMp = member.getCurrentMp();
 					target = member;
@@ -133,7 +133,7 @@ public enum CubicTargetType
 		{
 			Player player = cubic.getOwner();
 			Skill skill = skillInfo.getSkill();
-			if (!cubic.canCastSkill(player, skill, false))
+			if(!cubic.canCastSkill(player, skill, false))
 				return null;
 			return player;
 		}

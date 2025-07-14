@@ -14,8 +14,8 @@ public class RequestExDyeeffectAcquireHiddenskill implements IClientIncomingPack
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-    nCategory = packet.readD();
-    nSlotID = packet.readD();
+		nCategory = packet.readD();
+		nSlotID = packet.readD();
 		return true;
 	}
 
@@ -23,9 +23,9 @@ public class RequestExDyeeffectAcquireHiddenskill implements IClientIncomingPack
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		player.sendPacket(new ExDyeeffectAcquireHiddenskill());
 	}
 }

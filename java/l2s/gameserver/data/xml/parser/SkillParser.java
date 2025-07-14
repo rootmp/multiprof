@@ -73,13 +73,13 @@ public final class SkillParser extends StatParser<SkillHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> itemIterator = rootElement.elementIterator(); itemIterator.hasNext();)
+		for(Iterator<Element> itemIterator = rootElement.elementIterator(); itemIterator.hasNext();)
 		{
 			Element skillElement = itemIterator.next();
 
 			final int skillId = Integer.parseInt(skillElement.attributeValue("id"));
 			final int levels = Integer.parseInt(skillElement.attributeValue("levels"));
-			if (levels > 100)
+			if(levels > 100)
 			{
 				warn("Error while parse skill[" + skillId + "] (Max level should be less than or equal to 100)!");
 				continue;
@@ -95,23 +95,23 @@ public final class SkillParser extends StatParser<SkillHolder>
 
 			final IntObjectMap<RestorationInfo> restorations = new TreeIntObjectMap<RestorationInfo>();
 
-			for (Iterator<Element> subIterator = skillElement.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = skillElement.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
 				final String subName = subElement.getName();
-				if (subName.equalsIgnoreCase("set"))
+				if(subName.equalsIgnoreCase("set"))
 					set.set(subElement.attributeValue("name"), subElement.attributeValue("value"));
-				else if (subName.equalsIgnoreCase("table"))
+				else if(subName.equalsIgnoreCase("table"))
 					parseTable(subElement, skillId, 1, levels);
-				else if (subName.equalsIgnoreCase("restoration"))
+				else if(subName.equalsIgnoreCase("restoration"))
 					parseRestoration(subElement, restorations);
 			}
 
-			for (int skillLevel = 1; skillLevel <= levels; skillLevel++)
+			for(int skillLevel = 1; skillLevel <= levels; skillLevel++)
 			{
 				final StatsSet currentSet = set.clone();
-				for (Entry<String, Object> entry : currentSet.entrySet())
+				for(Entry<String, Object> entry : currentSet.entrySet())
 					currentSet.set(entry.getKey(), parseTableValue(entry.getValue(), skillId, skillLevel, levels));
 
 				currentSet.set("level", skillLevel);
@@ -120,27 +120,27 @@ public final class SkillParser extends StatParser<SkillHolder>
 
 				Skill skill = currentSet.getEnum("skillType", SkillType.class, SkillType.EFFECT).makeSkill(currentSet);
 
-				if ((skill.getSkillType() == SkillType.NOTDONE) || (skill.getSkillType() == SkillType.NOTUSED))
+				if((skill.getSkillType() == SkillType.NOTDONE) || (skill.getSkillType() == SkillType.NOTUSED))
 				{
-					if (Config.ALT_LOG_NOTDONE_SKILLS && !Config.ALT_LOG_NOTDONE_ONLY_FOR_LEARN_SKILLS)
+					if(Config.ALT_LOG_NOTDONE_SKILLS && !Config.ALT_LOG_NOTDONE_ONLY_FOR_LEARN_SKILLS)
 					{
 						warn("Skill ID[" + skill.getId() + "] LEVEL[" + skill.getLevel() + "] not done!");
 					}
 				}
 
-				for (Iterator<Element> subIterator = skillElement.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = skillElement.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 
 					final String subName = subElement.getName();
-					if (subName.equalsIgnoreCase("for"))
+					if(subName.equalsIgnoreCase("for"))
 						parseFor(subElement, skill, skillId, skillLevel, levels);
-					else if (subName.equalsIgnoreCase("cond"))
+					else if(subName.equalsIgnoreCase("cond"))
 					{
 						Condition condition = parseFirstCond(subElement, skillId, skillLevel, levels);
-						if (condition != null)
+						if(condition != null)
 						{
-							if (subElement.attributeValue("msgId") != null)
+							if(subElement.attributeValue("msgId") != null)
 							{
 								int msgId = parseTableNumber(subElement.attributeValue("msgId")).intValue();
 								condition.setSystemMsg(msgId);
@@ -149,7 +149,7 @@ public final class SkillParser extends StatParser<SkillHolder>
 							skill.attachCondition(condition);
 						}
 					}
-					else if (subName.equalsIgnoreCase("triggers"))
+					else if(subName.equalsIgnoreCase("triggers"))
 						parseTriggers(subElement, skill, skillId, skillLevel, levels);
 				}
 				getHolder().addSkill(skill);
@@ -160,7 +160,7 @@ public final class SkillParser extends StatParser<SkillHolder>
 	@Override
 	protected Object getTableValue(String name, int... arg)
 	{
-		if (arg.length < 3)
+		if(arg.length < 3)
 		{
 			warn("Error while read table[" + name + "] value for skill (Bad arg's length)!", new Exception());
 			return null;
@@ -171,20 +171,20 @@ public final class SkillParser extends StatParser<SkillHolder>
 		Object result = null;
 
 		IntObjectMap<StatsSet> tables = _skillsTables.get(skillId);
-		if (tables == null)
+		if(tables == null)
 		{
 			warn("Error while read table[" + name + "] value for skill ID[" + skillId + "], LEVEL[" + skillLevel + "] (Cannot find tables)!");
 			return null;
 		}
 
 		StatsSet set = tables.get(skillLevel);
-		if (set != null)
+		if(set != null)
 			result = set.get(name);
 
-		if (result != null)
+		if(result != null)
 		{
 			String value = String.valueOf(result);
-			if (value.isEmpty())
+			if(value.isEmpty())
 				warn("Error in table[" + name + "] value[" + value + "] for skill ID[" + skillId + "], LEVEL[" + skillLevel + "] (Empty value)!");
 			return result;
 		}
@@ -198,82 +198,82 @@ public final class SkillParser extends StatParser<SkillHolder>
 	{
 		super.parseFor(forElement, template, arg);
 
-		if (!(template instanceof Skill))
+		if(!(template instanceof Skill))
 			return;
 
 		Skill skill = (Skill) template;
-		for (Iterator<Element> iterator = forElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = forElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 			final String elementName = element.getName();
-			if (elementName.equalsIgnoreCase("start_effect"))
+			if(elementName.equalsIgnoreCase("start_effect"))
 				attachEffect(element, skill, EffectUseType.START, EffectTargetType.NORMAL, arg);
-			else if (elementName.equalsIgnoreCase("tick_effect"))
+			else if(elementName.equalsIgnoreCase("tick_effect"))
 				attachEffect(element, skill, EffectUseType.TICK, EffectTargetType.NORMAL, arg);
-			else if (elementName.equalsIgnoreCase("self_effect"))
+			else if(elementName.equalsIgnoreCase("self_effect"))
 				attachEffect(element, skill, EffectUseType.SELF, EffectTargetType.NORMAL, arg);
-			else if (elementName.equalsIgnoreCase("effect"))
+			else if(elementName.equalsIgnoreCase("effect"))
 				attachEffect(element, skill, EffectUseType.NORMAL, EffectTargetType.NORMAL, arg);
-			else if (elementName.equalsIgnoreCase("pvp_effect"))
+			else if(elementName.equalsIgnoreCase("pvp_effect"))
 				attachEffect(element, skill, EffectUseType.NORMAL, EffectTargetType.PVP, arg);
-			else if (elementName.equalsIgnoreCase("pve_effect"))
+			else if(elementName.equalsIgnoreCase("pve_effect"))
 				attachEffect(element, skill, EffectUseType.NORMAL, EffectTargetType.PVE, arg);
-			else if (elementName.equalsIgnoreCase("end_effect"))
+			else if(elementName.equalsIgnoreCase("end_effect"))
 				attachEffect(element, skill, EffectUseType.END, EffectTargetType.NORMAL, arg);
 		}
 	}
 
 	private void attachEffect(Element element, Skill skill, EffectUseType useType, EffectTargetType targetType, int... arg)
 	{
-		if (element.attributeValue("enabled") != null)
+		if(element.attributeValue("enabled") != null)
 		{
-			if (!parseTableBoolean(element.attributeValue("enabled"), arg))
+			if(!parseTableBoolean(element.attributeValue("enabled"), arg))
 				return;
 		}
 
 		final StatsSet set = new StatsSet();
 
-		if (element.attributeValue("chance") != null)
+		if(element.attributeValue("chance") != null)
 		{
 			int chance = parseTableNumber(element.attributeValue("chance"), arg).intValue();
-			if (chance <= 0)
+			if(chance <= 0)
 				return;
 
 			set.set("chance", chance);
 		}
 
-		if (element.attributeValue("name") != null)
+		if(element.attributeValue("name") != null)
 			set.set("name", parseTableString(element.attributeValue("name"), arg));
 
-		if (element.attributeValue("value") != null)
+		if(element.attributeValue("value") != null)
 			set.set("value", parseTableNumber(element.attributeValue("value"), arg).doubleValue());
 
-		if (element.attributeValue("interval") != null)
+		if(element.attributeValue("interval") != null)
 			set.set("interval", parseTableNumber(element.attributeValue("interval"), arg).doubleValue());
 
-		if (element.attributeValue("instant") != null)
+		if(element.attributeValue("instant") != null)
 			set.set("instant", parseTableBoolean(element.attributeValue("instant"), arg));
 
-		if (element.attributeValue("type") != null)
+		if(element.attributeValue("type") != null)
 			set.set("type", parseTableValue(element.attributeValue("type"), arg));
 
 		EffectTemplate effectTemplate = new EffectTemplate(skill, set, useType, targetType);
 
 		parseFor(element, effectTemplate, arg);
 
-		for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+		for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 		{
 			Element subElement = subIterator.next();
 
 			final String subElementName = subElement.getName();
-			if (subElementName.equalsIgnoreCase("def"))
+			if(subElementName.equalsIgnoreCase("def"))
 				set.set(subElement.attributeValue("name"), parseTableValue(subElement.attributeValue("value"), arg));
-			else if (subElementName.equalsIgnoreCase("triggers"))
+			else if(subElementName.equalsIgnoreCase("triggers"))
 				parseTriggers(subElement, effectTemplate, arg);
 			else
 			{
 				Condition condition = parseCond(subElement, arg);
-				if (condition != null)
+				if(condition != null)
 					effectTemplate.attachCond(condition);
 			}
 		}
@@ -288,12 +288,12 @@ public final class SkillParser extends StatParser<SkillHolder>
 		int consumeItemCount = element.attributeValue("consume_item_count") == null ? 1 : Integer.parseInt(element.attributeValue("consume_item_count"));
 		int onFailMessage = element.attributeValue("on_fail_message") == null ? -1 : Integer.parseInt(element.attributeValue("on_fail_message"));
 		RestorationInfo restorationInfo = new RestorationInfo(consumeItemId, consumeItemCount, onFailMessage);
-		for (Iterator<Element> groupIterator = element.elementIterator(); groupIterator.hasNext();)
+		for(Iterator<Element> groupIterator = element.elementIterator(); groupIterator.hasNext();)
 		{
 			Element groupElement = groupIterator.next();
 			double chance = Double.parseDouble(groupElement.attributeValue("chance"));
 			RestorationGroup restorationGroup = new RestorationGroup(chance);
-			for (Iterator<Element> itemIterator = groupElement.elementIterator(); itemIterator.hasNext();)
+			for(Iterator<Element> itemIterator = groupElement.elementIterator(); itemIterator.hasNext();)
 			{
 				Element itemElement = itemIterator.next();
 				int id = Integer.parseInt(itemElement.attributeValue("id"));
@@ -310,46 +310,48 @@ public final class SkillParser extends StatParser<SkillHolder>
 	private void parseTable(Element element, int skillId, int firstLevel, int lastLevel)
 	{
 		String name = element.attributeValue("name");
-		if (name.charAt(0) != '#')
+		if(name.charAt(0) != '#')
 		{
 			warn("Error while parse table[" + name + "] value for skill ID[" + skillId + "] (Table name must start with #)!");
 			return;
 		}
 
-		if (name.lastIndexOf('#') != 0)
+		if(name.lastIndexOf('#') != 0)
 		{
-			warn("Error while parse table[" + name + "] value for skill ID[" + skillId + "] (Table name should not contain # character, but only start with #)!");
+			warn("Error while parse table[" + name + "] value for skill ID[" + skillId
+					+ "] (Table name should not contain # character, but only start with #)!");
 			return;
 		}
 
-		if (name.contains(";") || name.contains(":") || name.contains(" ") || name.contains("-"))
+		if(name.contains(";") || name.contains(":") || name.contains(" ") || name.contains("-"))
 		{
-			warn("Error while parse table[" + name + "] value for skill ID[" + skillId + "] (Table name should not contain characters: ';' ':' '-' or space)!");
+			warn("Error while parse table[" + name + "] value for skill ID[" + skillId
+					+ "] (Table name should not contain characters: ';' ':' '-' or space)!");
 			return;
 		}
 
 		StringTokenizer data = new StringTokenizer(element.getText());
 		List<String> values = new ArrayList<String>();
-		while (data.hasMoreTokens())
+		while(data.hasMoreTokens())
 			values.add(data.nextToken());
 
 		IntObjectMap<StatsSet> tables = _skillsTables.get(skillId);
-		if (tables == null)
+		if(tables == null)
 		{
 			tables = new TreeIntObjectMap<StatsSet>();
 			_skillsTables.put(skillId, tables);
 		}
 
 		int i = 0;
-		for (int lvl = firstLevel; lvl <= lastLevel; lvl++)
+		for(int lvl = firstLevel; lvl <= lastLevel; lvl++)
 		{
 			StatsSet set = tables.get(lvl);
-			if (set == null)
+			if(set == null)
 			{
 				set = new StatsSet();
 				tables.put(lvl, set);
 			}
-			else if (set.containsKey(name))
+			else if(set.containsKey(name))
 			{
 				warn("Error while parse table[" + name + "] value for skill ID[" + skillId + "] (Skill have tables with the same name)!");
 				return;

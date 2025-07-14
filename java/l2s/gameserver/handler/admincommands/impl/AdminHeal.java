@@ -19,13 +19,13 @@ public class AdminHeal implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Heal)
+		if(!activeChar.getPlayerAccess().Heal)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_heal:
-				if (wordList.length == 1)
+				if(wordList.length == 1)
 					handleRes(activeChar);
 				else
 					handleRes(activeChar, wordList[1]);
@@ -50,19 +50,19 @@ public class AdminHeal implements IAdminCommandHandler
 	{
 
 		GameObject obj = activeChar.getTarget();
-		if (player != null)
+		if(player != null)
 		{
 			Player plyr = World.getPlayer(player);
 
-			if (plyr != null)
+			if(plyr != null)
 				obj = plyr;
 			else
 			{
 				int radius = Math.max(Integer.parseInt(player), 100);
-				for (Creature character : activeChar.getAroundCharacters(radius, 200))
+				for(Creature character : activeChar.getAroundCharacters(radius, 200))
 				{
 					character.setCurrentHpMp(character.getMaxHp(), character.getMaxMp());
-					if (character.isPlayer())
+					if(character.isPlayer())
 						character.setCurrentCp(character.getMaxCp());
 				}
 				activeChar.sendMessage("Healed within " + radius + " unit radius.");
@@ -70,14 +70,14 @@ public class AdminHeal implements IAdminCommandHandler
 			}
 		}
 
-		if (obj == null)
+		if(obj == null)
 			obj = activeChar;
 
-		if (obj instanceof Creature)
+		if(obj instanceof Creature)
 		{
 			Creature target = (Creature) obj;
 			target.setCurrentHpMp(target.getMaxHp(), target.getMaxMp());
-			if (target.isPlayer())
+			if(target.isPlayer())
 				target.setCurrentCp(target.getMaxCp());
 		}
 		else

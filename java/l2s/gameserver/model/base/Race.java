@@ -54,5 +54,5 @@ public enum Race
 	{
 		return ordinal();
 	}
-	
+
 }

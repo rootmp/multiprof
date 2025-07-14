@@ -59,7 +59,7 @@ public class FightClubEventManager
 	public static final Location RETURN_LOC = new Location(83208, 147672, -3494, 0);
 	public static final int FIGHT_CLUB_BADGE_ID = 6673;
 	public static final String BYPASS = "_fightclub";
-	
+
 	private Map<Integer, AbstractFightClub> _activeEvents = new ConcurrentHashMap<Integer, AbstractFightClub>();
 	private List<FightClubGameRoom> _rooms = new CopyOnWriteArrayList<FightClubGameRoom>();
 	private boolean _shutDown = false;
@@ -79,16 +79,16 @@ public class FightClubEventManager
 	public void signForEvent(Player player, AbstractFightClub event)
 	{
 		FightClubGameRoom roomFound = null;
-		for (FightClubGameRoom room : getEventRooms(event))
+		for(FightClubGameRoom room : getEventRooms(event))
 		{
-			if (room.getSlotsLeft() > 0)
+			if(room.getSlotsLeft() > 0)
 			{
 				roomFound = room;
 				break;
 			}
 		}
 
-		if (roomFound == null)
+		if(roomFound == null)
 		{
 			AbstractFightClub duplicatedEvent = prepareNewEvent(event);
 			roomFound = createRoom(duplicatedEvent);
@@ -100,16 +100,14 @@ public class FightClubEventManager
 
 	public void trySignForEvent(Player player, AbstractFightClub event, boolean checkConditions)
 	{
-		if (checkConditions && !canPlayerParticipate(player, true, false))
-		{
-			return;
-		}
+		if(checkConditions && !canPlayerParticipate(player, true, false))
+		{ return; }
 
-		if (!isRegistrationOpened(event))
+		if(!isRegistrationOpened(event))
 		{
 			player.sendMessage("You cannot participate in " + event.getName() + " right now!");
 		}
-		else if (isPlayerRegistered(player))
+		else if(isPlayerRegistered(player))
 		{
 			player.sendMessage("You are already registered in event!");
 		}
@@ -121,9 +119,9 @@ public class FightClubEventManager
 
 	public void unsignFromEvent(Player player)
 	{
-		for (FightClubGameRoom room : _rooms)
+		for(FightClubGameRoom room : _rooms)
 		{
-			if (room.containsPlayer(player))
+			if(room.containsPlayer(player))
 			{
 				room.leaveRoom(player);
 			}
@@ -134,28 +132,24 @@ public class FightClubEventManager
 
 	public boolean isRegistrationOpened(AbstractFightClub event)
 	{
-		for (FightClubGameRoom room : _rooms)
+		for(FightClubGameRoom room : _rooms)
 		{
-			if (room.getGame() != null && room.getGame().getEventId() == event.getEventId())
-			{
-				return true;
-			}
+			if(room.getGame() != null && room.getGame().getEventId() == event.getEventId())
+			{ return true; }
 		}
 		return false;
 	}
 
 	public boolean isPlayerRegistered(Player player)
 	{
-		if (player.isInFightClub())
-		{
-			return true;
-		}
+		if(player.isInFightClub())
+		{ return true; }
 
-		for (FightClubGameRoom room : _rooms)
+		for(FightClubGameRoom room : _rooms)
 		{
-			for (Player iPlayer : room.getAllPlayers())
+			for(Player iPlayer : room.getAllPlayers())
 			{
-				if (iPlayer.equals(player))
+				if(iPlayer.equals(player))
 					return true;
 			}
 		}
@@ -172,8 +166,7 @@ public class FightClubEventManager
 		sendToAllMsg(duplicatedEvent, "Registration to " + duplicatedEvent.getName() + " started!"); // ДП.
 		sendEventInvitations(event);
 
-		ThreadPoolManager.getInstance().schedule(new Runnable()
-		{
+		ThreadPoolManager.getInstance().schedule(new Runnable(){
 			@Override
 			public void run()
 			{
@@ -182,7 +175,7 @@ public class FightClubEventManager
 				{
 					Thread.sleep(3 * 60000);
 				}
-				catch (InterruptedException e)
+				catch(InterruptedException e)
 				{
 					e.printStackTrace();
 				}
@@ -193,7 +186,7 @@ public class FightClubEventManager
 				{
 					Thread.sleep(45000L);
 				}
-				catch (InterruptedException e)
+				catch(InterruptedException e)
 				{
 					e.printStackTrace();
 				}
@@ -204,7 +197,7 @@ public class FightClubEventManager
 				{
 					Thread.sleep(15000L);
 				}
-				catch (InterruptedException e)
+				catch(InterruptedException e)
 				{
 					e.printStackTrace();
 				}
@@ -217,9 +210,9 @@ public class FightClubEventManager
 
 	private void notifyConditions(AbstractFightClub event)
 	{
-		for (FightClubGameRoom room : getEventRooms(event))
+		for(FightClubGameRoom room : getEventRooms(event))
 		{
-			for (Player player : room.getAllPlayers())
+			for(Player player : room.getAllPlayers())
 			{
 				canPlayerParticipate(player, true, false);
 			}
@@ -230,10 +223,10 @@ public class FightClubEventManager
 	{
 		List<FightClubGameRoom> eventRooms = getEventRooms(event);
 		equalizeRooms(eventRooms);
-		for (FightClubGameRoom room : eventRooms)
+		for(FightClubGameRoom room : eventRooms)
 		{
 			_rooms.remove(room);
-			if (room.getPlayersCount() < 2)
+			if(room.getPlayersCount() < 2)
 			{
 				_log.info(event.getName() + ": Removing room because it doesnt have enough players");
 				_log.info(event.getName() + ": Player Counts: " + room.getPlayersCount());
@@ -246,7 +239,7 @@ public class FightClubEventManager
 	private void equalizeRooms(List<FightClubGameRoom> eventRooms)
 	{
 		double players = 0.0;
-		for (FightClubGameRoom room : eventRooms)
+		for(FightClubGameRoom room : eventRooms)
 		{
 			players += room.getPlayersCount();
 		}
@@ -254,25 +247,26 @@ public class FightClubEventManager
 		final double average = players / eventRooms.size();
 		final List<Player> playersToChange = new ArrayList<Player>();
 
-		for (FightClubGameRoom room : eventRooms)
+		for(FightClubGameRoom room : eventRooms)
 		{
 			final int before = room.getPlayersCount();
 			final int toRemove = room.getPlayersCount() - (int) Math.ceil(average);
-			for (int i = 0; i < toRemove; i++)
+			for(int i = 0; i < toRemove; i++)
 			{
 				final Player player = room.getAllPlayers().iterator().next();
 				room.leaveRoom(player);
 				playersToChange.add(player);
 			}
-			_log.info("Equalizing FC Room, before:" + before + " toRemove:" + toRemove + " after:" + room.getPlayersCount() + " to Change:" + playersToChange.size());
+			_log.info("Equalizing FC Room, before:" + before + " toRemove:" + toRemove + " after:" + room.getPlayersCount() + " to Change:"
+					+ playersToChange.size());
 		}
 
-		for (FightClubGameRoom room : eventRooms)
+		for(FightClubGameRoom room : eventRooms)
 		{
 			final int before = room.getPlayersCount();
 			final int toAdd = Math.min((int) Math.floor(average) - before, playersToChange.size());
 
-			for (int i = 0; i < toAdd; i++)
+			for(int i = 0; i < toAdd; i++)
 			{
 				final Player player = playersToChange.remove(0);
 				room.addAlonePlayer(player);
@@ -284,9 +278,9 @@ public class FightClubEventManager
 	private List<FightClubGameRoom> getEventRooms(AbstractFightClub event)
 	{
 		final List<FightClubGameRoom> eventRooms = new ArrayList<FightClubGameRoom>();
-		for (FightClubGameRoom room : _rooms)
+		for(FightClubGameRoom room : _rooms)
 		{
-			if (room.getGame() != null && room.getGame().getEventId() == event.getEventId())
+			if(room.getGame() != null && room.getGame().getEventId() == event.getEventId())
 			{
 				eventRooms.add(room);
 			}
@@ -296,11 +290,12 @@ public class FightClubEventManager
 
 	private void sendEventInvitations(AbstractFightClub event)
 	{
-		for (Player player : GameObjectsStorage.getAllPlayersForIterate())
+		for(Player player : GameObjectsStorage.getAllPlayersForIterate())
 		{
-			if (canPlayerParticipate(player, false, true) && player.getEvent(AbstractFightClub.class) == null)
+			if(canPlayerParticipate(player, false, true) && player.getEvent(AbstractFightClub.class) == null)
 			{
-				player.ask(new ConfirmDlgPacket(SystemMsg.S1, 60000).addString("Would you like to join " + event.getName() + " event?"), new AnswerEventInvitation(player, event));
+				player.ask(new ConfirmDlgPacket(SystemMsg.S1, 60000).addString("Would you like to join " + event.getName()
+						+ " event?"), new AnswerEventInvitation(player, event));
 			}
 		}
 	}
@@ -326,7 +321,7 @@ public class FightClubEventManager
 	public void sendToAllMsg(AbstractFightClub event, String msg)
 	{
 		SayPacket2 packet = new SayPacket2(0, ChatType.CRITICAL_ANNOUNCE, 0, event.getName(), msg);
-		for (Player player : GameObjectsStorage.getAllPlayersForIterate())
+		for(Player player : GameObjectsStorage.getAllPlayersForIterate())
 		{
 			player.sendPacket(packet);
 		}
@@ -346,7 +341,7 @@ public class FightClubEventManager
 
 			_activeEvents.put(Integer.valueOf(duplicatedEvent.getObjectId()), duplicatedEvent);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -359,10 +354,10 @@ public class FightClubEventManager
 		AbstractFightClub closestEvent = null;
 		long closestEventTime = Long.MAX_VALUE;
 
-		for (int i = 1; i <= EventHolder.FIGHT_CLUB_EVENTS; i++)
+		for(int i = 1; i <= EventHolder.FIGHT_CLUB_EVENTS; i++)
 		{
 			AbstractFightClub event = (AbstractFightClub) EventHolder.getInstance().getEvent(EventType.FIGHT_CLUB_EVENT, i);
-			if (!event.isAutoTimed())
+			if(!event.isAutoTimed())
 			{
 				continue;
 			}
@@ -372,7 +367,7 @@ public class FightClubEventManager
 			event.printScheduledTime(nextEventDate.getTimeInMillis());
 			ThreadPoolManager.getInstance().schedule(new EventRunThread(event), nextEventDate.getTimeInMillis() - System.currentTimeMillis());
 
-			if (closestEventTime > nextEventDate.getTimeInMillis())
+			if(closestEventTime > nextEventDate.getTimeInMillis())
 			{
 				closestEvent = event;
 				closestEventTime = nextEventDate.getTimeInMillis();
@@ -388,9 +383,9 @@ public class FightClubEventManager
 		Calendar nextStartTime = null;
 		Calendar testStartTime = null;
 
-		for (final int[] hourMin : dates)
+		for(final int[] hourMin : dates)
 		{
-			if (hourMin[0] == -1 && hourMin[1] == -1)
+			if(hourMin[0] == -1 && hourMin[1] == -1)
 			{
 				nextStartTime = Calendar.getInstance();
 				nextStartTime.setLenient(true);
@@ -404,12 +399,12 @@ public class FightClubEventManager
 				testStartTime.set(Calendar.HOUR_OF_DAY, hourMin[0]);
 				testStartTime.set(Calendar.MINUTE, hourMin[1]);
 
-				if (testStartTime.getTimeInMillis() < currentTime.getTimeInMillis())
+				if(testStartTime.getTimeInMillis() < currentTime.getTimeInMillis())
 				{
 					testStartTime.add(Calendar.DAY_OF_MONTH, 1);
 				}
 
-				if (nextStartTime == null || testStartTime.getTimeInMillis() < nextStartTime.getTimeInMillis())
+				if(nextStartTime == null || testStartTime.getTimeInMillis() < nextStartTime.getTimeInMillis())
 				{
 					nextStartTime = testStartTime;
 				}
@@ -420,92 +415,90 @@ public class FightClubEventManager
 
 	public boolean canPlayerParticipate(Player player, boolean sendMessage, boolean justMostImportant)
 	{
-		if (player == null)
-		{
-			return false;
-		}
+		if(player == null)
+		{ return false; }
 
-		if (!player.getClassId().isOfLevel(ClassLevel.THIRD))
+		if(!player.getClassId().isOfLevel(ClassLevel.THIRD))
 		{
 			sendErrorMessageToPlayer(player, "Your class is too weak for the Fight Club!");
 			return false;
 		}
 
-		if (Olympiad.isRegistered(player))
+		if(Olympiad.isRegistered(player))
 		{
-			if (sendMessage)
+			if(sendMessage)
 				sendErrorMessageToPlayer(player, "Players registered to Olympiad Match may not participate in Fight Club!");
 			return false;
 		}
 
-		if (player.isInOlympiadMode() || player.getOlympiadGame() != null)
+		if(player.isInOlympiadMode() || player.getOlympiadGame() != null)
 		{
-			if (sendMessage)
+			if(sendMessage)
 				sendErrorMessageToPlayer(player, "Players fighting in Olympiad Match may not participate in Fight Club!");
 			return false;
 		}
 
-		if (player.isInObserverMode())
+		if(player.isInObserverMode())
 		{
-			if (sendMessage)
+			if(sendMessage)
 				sendErrorMessageToPlayer(player, "Players in Observation mode may not participate in Fight Club!");
 			return false;
 		}
 
-		if (!justMostImportant)
+		if(!justMostImportant)
 		{
-			if (player.isDead() || player.isAlikeDead())
+			if(player.isDead() || player.isAlikeDead())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Dead players may not participate in Fight Club!");
 				return false;
 			}
 
-			if (player.isBlocked())
+			if(player.isBlocked())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Blocked players may not participate in Fight Club!");
 				return false;
 			}
 
-			if (!player.isInPeaceZone() && player.getPvpFlag() > 0)
+			if(!player.isInPeaceZone() && player.getPvpFlag() > 0)
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Players in PvP Battle may not participate in Fight Club!");
 				return false;
 			}
 
-			if (player.isInCombat())
+			if(player.isInCombat())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Players in Combat may not participate in Fight Club Battle!");
 				return false;
 			}
 
-			if (player.getEvent(DuelEvent.class) != null)
+			if(player.getEvent(DuelEvent.class) != null)
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Players engaged in Duel may not participate in Fight Club Battle!");
 				return false;
 			}
 
-			if (player.getKarma() > 0)
+			if(player.getKarma() > 0)
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Chaotic players may not participate in Fight Club!");
 				return false;
 			}
 
-			if (player.isInOfflineMode())
+			if(player.isInOfflineMode())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Players in Offline mode may not participate in Fight Club!");
 				return false;
 			}
 
-			if (player.isInStoreMode())
+			if(player.isInStoreMode())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					sendErrorMessageToPlayer(player, "Players in Store mode may not participate in Fight Club!");
 				return false;
 			}
@@ -517,24 +510,18 @@ public class FightClubEventManager
 	public void requestEventPlayerMenuBypass(Player player, String bypass)
 	{
 		player.sendPacket(TutorialCloseHtmlPacket.STATIC);
-		
-		final AbstractFightClub event = player.getFightClubEvent();		
-		if (event == null)
-		{
-			return;
-		}
-		
+
+		final AbstractFightClub event = player.getFightClubEvent();
+		if(event == null)
+		{ return; }
+
 		final FightClubPlayer fPlayer = event.getFightClubPlayer(player);
-		if (fPlayer == null)
-		{
-			return;
-		}
+		if(fPlayer == null)
+		{ return; }
 
 		fPlayer.setShowTutorial(false);
-		if (!bypass.startsWith(BYPASS))
-		{
-			return;
-		}
+		if(!bypass.startsWith(BYPASS))
+		{ return; }
 		StringTokenizer st = new StringTokenizer(bypass, " ");
 		st.nextToken();
 
@@ -542,16 +529,16 @@ public class FightClubEventManager
 		String str1 = action;
 		int i = -1;
 
-		switch (str1.hashCode())
+		switch(str1.hashCode())
 		{
 			case 102846135:
-				if (!str1.equals("leave"))
+				if(!str1.equals("leave"))
 					break;
 				i = 0;
 				break;
 		}
 
-		switch (i)
+		switch(i)
 		{
 			case 0:
 				askQuestion(player, "Are you sure You want to leave the event?"); // TODO: Вынести в ДП.
@@ -562,10 +549,8 @@ public class FightClubEventManager
 	public void sendEventPlayerMenu(Player player)
 	{
 		AbstractFightClub event = player.getFightClubEvent();
-		if (event == null || event.getFightClubPlayer(player) == null)
-		{
-			return;
-		}
+		if(event == null || event.getFightClubPlayer(player) == null)
+		{ return; }
 
 		FightClubPlayer fPlayer = event.getFightClubPlayer(player);
 		fPlayer.setShowTutorial(true);
@@ -615,14 +600,12 @@ public class FightClubEventManager
 	private void leaveEvent(Player player)
 	{
 		AbstractFightClub event = player.getFightClubEvent();
-		if (event == null)
-		{
-			return;
-		}
+		if(event == null)
+		{ return; }
 
-		if (event.leaveEvent(player, true))
+		if(event.leaveEvent(player, true))
 		{
-			if (boxes.containsKey(player.getObjectId()))
+			if(boxes.containsKey(player.getObjectId()))
 			{
 				boxes.remove(player.getObjectId());
 			}
@@ -675,16 +658,14 @@ public class FightClubEventManager
 		{
 			startEventCountdown(_event);
 
-			if (!_event.isAutoTimed())
-			{
-				return;
-			}
+			if(!_event.isAutoTimed())
+			{ return; }
 
 			try
 			{
 				Thread.sleep(60000L);
 			}
-			catch (InterruptedException e)
+			catch(InterruptedException e)
 			{
 				e.printStackTrace();
 			}
@@ -726,7 +707,7 @@ public class FightClubEventManager
 
 	public static FightClubEventManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 		{
 			_instance = new FightClubEventManager();
 		}

@@ -50,7 +50,7 @@ public class Files
 		{
 			FileUtils.writeStringToFile(new File(path), string, "UTF-8");
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("Error while saving file : " + path, e);
 		}
@@ -63,7 +63,7 @@ public class Files
 			FileUtils.copyFile(new File(srcFile), new File(destFile), false);
 			return true;
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("Error while copying file : " + srcFile + " to " + destFile, e);
 		}

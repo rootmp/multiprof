@@ -35,12 +35,10 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
-		{
-			return;
-		}
+		if(activeChar == null)
+		{ return; }
 
-		if (activeChar.isActionsDisabled() || activeChar.isInStoreMode() || activeChar.isInTrade())
+		if(activeChar.isActionsDisabled() || activeChar.isInStoreMode() || activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -49,7 +47,7 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 		PcInventory inventory = activeChar.getInventory();
 		ItemInstance itemToUnnchant = inventory.getItemByObjectId(_objectId);
 
-		if (itemToUnnchant == null)
+		if(itemToUnnchant == null)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -58,14 +56,14 @@ public class RequestExRemoveItemAttribute implements IClientIncomingPacket
 		ItemAttributes set = itemToUnnchant.getAttributes();
 		Element element = Element.getElementById(_attributeId);
 
-		if ((element == Element.NONE) || (set.getValue(element) <= 0))
+		if((element == Element.NONE) || (set.getValue(element) <= 0))
 		{
 			activeChar.sendPacket(new ExBaseAttributeCancelResult(false, itemToUnnchant, element), ActionFailPacket.STATIC);
 			return;
 		}
 
 		// проверка делается клиентом, если зашло в эту проверку знач чит
-		if (!activeChar.reduceAdena(ExShowBaseAttributeCancelWindow.getAttributeRemovePrice(itemToUnnchant), true))
+		if(!activeChar.reduceAdena(ExShowBaseAttributeCancelWindow.getAttributeRemovePrice(itemToUnnchant), true))
 		{
 			activeChar.sendPacket(new ExBaseAttributeCancelResult(false, itemToUnnchant, element), SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, ActionFailPacket.STATIC);
 			return;

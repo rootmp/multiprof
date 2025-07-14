@@ -70,21 +70,21 @@ public final class ServerList extends L2LoginServerPacket
 		_lastServer = account.getLastServer();
 		_paddedBytes = 1;
 
-		for (GameServer gs : GameServerManager.getInstance().getGameServers())
+		for(GameServer gs : GameServerManager.getInstance().getGameServers())
 		{
-			for (HostInfo host : gs.getHosts())
+			for(HostInfo host : gs.getHosts())
 			{
 				InetAddress adress;
 				try
 				{
 					String adrStr = host.checkAddress(account.getLastIP());
-					if (adrStr == null)
+					if(adrStr == null)
 						continue;
 
-					if (adrStr.equals("*"))
+					if(adrStr.equals("*"))
 					{
 						GameServerConnection connection = gs.getConnection();
-						if (connection != null)
+						if(connection != null)
 							adrStr = connection.getIpAddress();
 						else
 							adrStr = "0.0.0.0";
@@ -92,7 +92,7 @@ public final class ServerList extends L2LoginServerPacket
 
 					adress = InetAddress.getByName(adrStr);
 				}
-				catch (UnknownHostException e)
+				catch(UnknownHostException e)
 				{
 					_log.error("Error with gameserver host adress: " + e, e);
 					continue;
@@ -102,7 +102,7 @@ public final class ServerList extends L2LoginServerPacket
 				int[] deleteChars;
 
 				Pair<Integer, int[]> entry = account.getAccountInfo(host.getId());
-				if (entry != null)
+				if(entry != null)
 				{
 					playerSize = entry.getKey();
 					deleteChars = entry.getValue();
@@ -126,7 +126,7 @@ public final class ServerList extends L2LoginServerPacket
 		writeC(0x04);
 		writeC(_servers.size());
 		writeC(_lastServer);
-		for (ServerData server : _servers)
+		for(ServerData server : _servers)
 		{
 			writeC(server.serverId);
 			byte[] raw = server.adress.getAddress();
@@ -146,7 +146,7 @@ public final class ServerList extends L2LoginServerPacket
 
 		writeH(_paddedBytes);
 
-		for (ServerData server : _servers)
+		for(ServerData server : _servers)
 		{
 			writeC(server.serverId);
 			writeC(server.playerSize); // acc player size

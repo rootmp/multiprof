@@ -203,7 +203,7 @@ public class SchedulingPattern implements NextTime
 		{
 			new SchedulingPattern(schedulingPattern);
 		}
-		catch (InvalidPatternException e)
+		catch(InvalidPatternException e)
 		{
 			return false;
 		}
@@ -263,32 +263,28 @@ public class SchedulingPattern implements NextTime
 	{
 		this.asString = pattern;
 		StringTokenizer st1 = new StringTokenizer(pattern, "|");
-		if (st1.countTokens() < 1)
-		{
-			throw new InvalidPatternException("invalid pattern: \"" + pattern + "\"");
-		}
-		while (st1.hasMoreTokens())
+		if(st1.countTokens() < 1)
+		{ throw new InvalidPatternException("invalid pattern: \"" + pattern + "\""); }
+		while(st1.hasMoreTokens())
 		{
 			String localPattern = st1.nextToken();
 			StringTokenizer st2 = new StringTokenizer(localPattern, " \t");
 			int tokCnt = st2.countTokens();
-			if (tokCnt < 5 || tokCnt > 6)
-			{
-				throw new InvalidPatternException("invalid pattern: \"" + localPattern + "\"");
-			}
+			if(tokCnt < 5 || tokCnt > 6)
+			{ throw new InvalidPatternException("invalid pattern: \"" + localPattern + "\""); }
 			try
 			{
 				String minutePattern = st2.nextToken();
 				String[] minutePatternParts = minutePattern.split(":");
-				if (minutePatternParts.length > 1)
+				if(minutePatternParts.length > 1)
 				{
-					for (int i = 0; i < minutePatternParts.length - 1; i++)
+					for(int i = 0; i < minutePatternParts.length - 1; i++)
 					{
-						if (minutePatternParts[i].length() > 1)
+						if(minutePatternParts[i].length() > 1)
 						{
-							if (minutePatternParts[i].startsWith("+"))
+							if(minutePatternParts[i].startsWith("+"))
 								minuteAdder.put(matcherSize, Integer.parseInt(minutePatternParts[i].substring(1)));
-							else if (minutePatternParts[i].startsWith("~"))
+							else if(minutePatternParts[i].startsWith("~"))
 								minuteAdderRnd.put(matcherSize, Integer.parseInt(minutePatternParts[i].substring(1)));
 							else
 								throw new InvalidPatternException("Unknown hour modifier \"" + minutePatternParts[i] + "\"");
@@ -298,7 +294,7 @@ public class SchedulingPattern implements NextTime
 				}
 				minuteMatchers.add(buildValueMatcher(minutePattern, MINUTE_VALUE_PARSER));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing minutes field: " + e.getMessage() + ".");
 			}
@@ -306,15 +302,15 @@ public class SchedulingPattern implements NextTime
 			{
 				String hourPattern = st2.nextToken();
 				String[] hourPatternParts = hourPattern.split(":");
-				if (hourPatternParts.length > 1)
+				if(hourPatternParts.length > 1)
 				{
-					for (int i = 0; i < hourPatternParts.length - 1; i++)
+					for(int i = 0; i < hourPatternParts.length - 1; i++)
 					{
-						if (hourPatternParts[i].length() > 1)
+						if(hourPatternParts[i].length() > 1)
 						{
-							if (hourPatternParts[i].startsWith("+"))
+							if(hourPatternParts[i].startsWith("+"))
 								hourAdder.put(matcherSize, Integer.parseInt(hourPatternParts[i].substring(1)));
-							else if (hourPatternParts[i].startsWith("~"))
+							else if(hourPatternParts[i].startsWith("~"))
 								hourAdderRnd.put(matcherSize, Integer.parseInt(hourPatternParts[i].substring(1)));
 							else
 								throw new InvalidPatternException("Unknown hour modifier \"" + hourPatternParts[i] + "\"");
@@ -324,7 +320,7 @@ public class SchedulingPattern implements NextTime
 				}
 				hourMatchers.add(buildValueMatcher(hourPattern, HOUR_VALUE_PARSER));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing hours field: " + e.getMessage() + ".");
 			}
@@ -332,13 +328,13 @@ public class SchedulingPattern implements NextTime
 			{
 				String dayOfMonthPattern = st2.nextToken();
 				String[] dayOfMonthPatternParts = dayOfMonthPattern.split(":");
-				if (dayOfMonthPatternParts.length > 1)
+				if(dayOfMonthPatternParts.length > 1)
 				{
-					for (int i = 0; i < dayOfMonthPatternParts.length - 1; i++)
+					for(int i = 0; i < dayOfMonthPatternParts.length - 1; i++)
 					{
-						if (dayOfMonthPatternParts[i].length() > 1)
+						if(dayOfMonthPatternParts[i].length() > 1)
 						{
-							if (dayOfMonthPatternParts[i].startsWith("+"))
+							if(dayOfMonthPatternParts[i].startsWith("+"))
 								dayOfYearAdder.put(matcherSize, Integer.parseInt(dayOfMonthPatternParts[i].substring(1)));
 							else
 								throw new InvalidPatternException("Unknown day modifier \"" + dayOfMonthPatternParts[i] + "\"");
@@ -348,7 +344,7 @@ public class SchedulingPattern implements NextTime
 				}
 				dayOfMonthMatchers.add(buildValueMatcher(dayOfMonthPattern, DAY_OF_MONTH_VALUE_PARSER));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing days of month field: " + e.getMessage() + ".");
 			}
@@ -356,7 +352,7 @@ public class SchedulingPattern implements NextTime
 			{
 				monthMatchers.add(buildValueMatcher(st2.nextToken(), MONTH_VALUE_PARSER));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing months field: " + e.getMessage() + ".");
 			}
@@ -364,23 +360,21 @@ public class SchedulingPattern implements NextTime
 			{
 				dayOfWeekMatchers.add(buildValueMatcher(st2.nextToken(), DAY_OF_WEEK_VALUE_PARSER));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing days of week field: " + e.getMessage() + ".");
 			}
-			if (st2.hasMoreTokens())
+			if(st2.hasMoreTokens())
 			{
 				try
 				{
 					String weekOfYearAdderText = st2.nextToken();
-					if (weekOfYearAdderText.charAt(0) != '+')
-					{
-						throw new InvalidPatternException("Unknown week of year addition in pattern \"" + localPattern + "\".");
-					}
+					if(weekOfYearAdderText.charAt(0) != '+')
+					{ throw new InvalidPatternException("Unknown week of year addition in pattern \"" + localPattern + "\"."); }
 					weekOfYearAdderText = weekOfYearAdderText.substring(1);
 					weekOfYearAdder.put(matcherSize, Integer.parseInt(weekOfYearAdderText));
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					throw new InvalidPatternException("invalid pattern \"" + localPattern + "\". Error parsing days of week field: " + e.getMessage() + ".");
 				}
@@ -399,13 +393,11 @@ public class SchedulingPattern implements NextTime
 	 */
 	private ValueMatcher buildValueMatcher(String str, ValueParser parser) throws Exception
 	{
-		if (str.length() == 1 && str.equals("*"))
-		{
-			return new AlwaysTrueValueMatcher();
-		}
+		if(str.length() == 1 && str.equals("*"))
+		{ return new AlwaysTrueValueMatcher(); }
 		List<Integer> values = new ArrayList<Integer>();
 		StringTokenizer st = new StringTokenizer(str, ",");
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 		{
 			String element = st.nextToken();
 			List<Integer> local;
@@ -413,24 +405,22 @@ public class SchedulingPattern implements NextTime
 			{
 				local = parseListElement(element, parser);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new Exception("invalid field \"" + str + "\", invalid element \"" + element + "\", " + e.getMessage());
 			}
-			for (Iterator<Integer> i = local.iterator(); i.hasNext();)
+			for(Iterator<Integer> i = local.iterator(); i.hasNext();)
 			{
 				Integer value = i.next();
-				if (!values.contains(value))
+				if(!values.contains(value))
 				{
 					values.add(value);
 				}
 			}
 		}
-		if (values.size() == 0)
-		{
-			throw new Exception("invalid field \"" + str + "\"");
-		}
-		if (parser == DAY_OF_MONTH_VALUE_PARSER)
+		if(values.size() == 0)
+		{ throw new Exception("invalid field \"" + str + "\""); }
+		if(parser == DAY_OF_MONTH_VALUE_PARSER)
 		{
 			return new DayOfMonthValueMatcher(values);
 		}
@@ -452,20 +442,18 @@ public class SchedulingPattern implements NextTime
 	{
 		StringTokenizer st = new StringTokenizer(str, "/");
 		int size = st.countTokens();
-		if (size < 1 || size > 2)
-		{
-			throw new Exception("syntax error");
-		}
+		if(size < 1 || size > 2)
+		{ throw new Exception("syntax error"); }
 		List<Integer> values;
 		try
 		{
 			values = parseRange(st.nextToken(), parser);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			throw new Exception("invalid range, " + e.getMessage());
 		}
-		if (size == 2)
+		if(size == 2)
 		{
 			String dStr = st.nextToken();
 			int div;
@@ -473,16 +461,14 @@ public class SchedulingPattern implements NextTime
 			{
 				div = Integer.parseInt(dStr);
 			}
-			catch (NumberFormatException e)
+			catch(NumberFormatException e)
 			{
 				throw new Exception("invalid divisor \"" + dStr + "\"");
 			}
-			if (div < 1)
-			{
-				throw new Exception("non positive divisor \"" + div + "\"");
-			}
+			if(div < 1)
+			{ throw new Exception("non positive divisor \"" + div + "\""); }
 			List<Integer> values2 = new ArrayList<Integer>();
-			for (int i = 0; i < values.size(); i += div)
+			for(int i = 0; i < values.size(); i += div)
 			{
 				values2.add(values.get(i));
 			}
@@ -504,12 +490,12 @@ public class SchedulingPattern implements NextTime
 	 */
 	private List<Integer> parseRange(String str, ValueParser parser) throws Exception
 	{
-		if (str.equals("*"))
+		if(str.equals("*"))
 		{
 			int min = parser.getMinValue();
 			int max = parser.getMaxValue();
 			List<Integer> values = new ArrayList<Integer>();
-			for (int i = min; i <= max; i++)
+			for(int i = min; i <= max; i++)
 			{
 				values.add(i);
 			}
@@ -517,21 +503,19 @@ public class SchedulingPattern implements NextTime
 		}
 		StringTokenizer st = new StringTokenizer(str, "-");
 		int size = st.countTokens();
-		if (size < 1 || size > 2)
-		{
-			throw new Exception("syntax error");
-		}
+		if(size < 1 || size > 2)
+		{ throw new Exception("syntax error"); }
 		String v1Str = st.nextToken();
 		int v1;
 		try
 		{
 			v1 = parser.parse(v1Str);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			throw new Exception("invalid value \"" + v1Str + "\", " + e.getMessage());
 		}
-		if (size == 1)
+		if(size == 1)
 		{
 			List<Integer> values = new ArrayList<Integer>();
 			values.add(v1);
@@ -545,27 +529,27 @@ public class SchedulingPattern implements NextTime
 			{
 				v2 = parser.parse(v2Str);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				throw new Exception("invalid value \"" + v2Str + "\", " + e.getMessage());
 			}
 			List<Integer> values = new ArrayList<Integer>();
-			if (v1 < v2)
+			if(v1 < v2)
 			{
-				for (int i = v1; i <= v2; i++)
+				for(int i = v1; i <= v2; i++)
 				{
 					values.add(i);
 				}
 			}
-			else if (v1 > v2)
+			else if(v1 > v2)
 			{
 				int min = parser.getMinValue();
 				int max = parser.getMaxValue();
-				for (int i = v1; i <= max; i++)
+				for(int i = v1; i <= max; i++)
 				{
 					values.add(i);
 				}
-				for (int i = min; i <= v2; i++)
+				for(int i = min; i <= v2; i++)
 				{
 					values.add(i);
 				}
@@ -594,18 +578,18 @@ public class SchedulingPattern implements NextTime
 		gc.set(Calendar.SECOND, 0);
 		gc.set(Calendar.MILLISECOND, 0);
 
-		for (int i = 0; i < matcherSize; i++)
+		for(int i = 0; i < matcherSize; i++)
 		{
-			if (weekOfYearAdder.containsKey(i))
+			if(weekOfYearAdder.containsKey(i))
 				gc.add(Calendar.WEEK_OF_YEAR, -weekOfYearAdder.get(i));
 
-			if (dayOfYearAdder.containsKey(i))
+			if(dayOfYearAdder.containsKey(i))
 				gc.add(Calendar.DAY_OF_YEAR, -dayOfYearAdder.get(i));
 
-			if (hourAdder.containsKey(i))
+			if(hourAdder.containsKey(i))
 				gc.add(Calendar.HOUR, -hourAdder.get(i));
 
-			if (minuteAdder.containsKey(i))
+			if(minuteAdder.containsKey(i))
 				gc.add(Calendar.MINUTE, -minuteAdder.get(i));
 
 			int minute = gc.get(Calendar.MINUTE);
@@ -620,11 +604,11 @@ public class SchedulingPattern implements NextTime
 			ValueMatcher dayOfMonthMatcher = dayOfMonthMatchers.get(i);
 			ValueMatcher monthMatcher = monthMatchers.get(i);
 			ValueMatcher dayOfWeekMatcher = dayOfWeekMatchers.get(i);
-			boolean eval = minuteMatcher.match(minute) && hourMatcher.match(hour) && ((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, gc.isLeapYear(year)) : dayOfMonthMatcher.match(dayOfMonth)) && monthMatcher.match(month) && dayOfWeekMatcher.match(dayOfWeek);
-			if (eval)
-			{
-				return true;
-			}
+			boolean eval = minuteMatcher.match(minute) && hourMatcher.match(hour)
+					&& ((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, gc.isLeapYear(year)) : dayOfMonthMatcher.match(dayOfMonth))
+					&& monthMatcher.match(month) && dayOfWeekMatcher.match(dayOfWeek);
+			if(eval)
+			{ return true; }
 		}
 		return false;
 	}
@@ -655,23 +639,23 @@ public class SchedulingPattern implements NextTime
 
 		GregorianCalendar gc = new GregorianCalendar(timezone);
 
-		for (int i = 0; i < matcherSize; i++)
+		for(int i = 0; i < matcherSize; i++)
 		{
 			long next = -1L;
 			gc.setTimeInMillis(millis);
 			gc.set(Calendar.SECOND, 0);
 			gc.set(Calendar.MILLISECOND, 0);
 
-			if (weekOfYearAdder.containsKey(i))
+			if(weekOfYearAdder.containsKey(i))
 				gc.add(Calendar.WEEK_OF_YEAR, weekOfYearAdder.get(i));
 
-			if (dayOfYearAdder.containsKey(i))
+			if(dayOfYearAdder.containsKey(i))
 				gc.add(Calendar.DAY_OF_YEAR, dayOfYearAdder.get(i));
 
-			if (hourAdder.containsKey(i))
+			if(hourAdder.containsKey(i))
 				gc.add(Calendar.HOUR, hourAdder.get(i));
 
-			if (minuteAdder.containsKey(i))
+			if(minuteAdder.containsKey(i))
 				gc.add(Calendar.MINUTE, minuteAdder.get(i));
 
 			ValueMatcher minuteMatcher = minuteMatchers.get(i);
@@ -680,46 +664,47 @@ public class SchedulingPattern implements NextTime
 			ValueMatcher monthMatcher = monthMatchers.get(i);
 			ValueMatcher dayOfWeekMatcher = dayOfWeekMatchers.get(i);
 
-			loop: for (;;)
+			loop:
+			for(;;)
 			{
 				int year = gc.get(Calendar.YEAR);
 				boolean isLeapYear = gc.isLeapYear(year);
 
-				for (int month = gc.get(Calendar.MONTH) + 1; month <= MONTH_MAX_VALUE; month++)
+				for(int month = gc.get(Calendar.MONTH) + 1; month <= MONTH_MAX_VALUE; month++)
 				{
-					if (monthMatcher.match(month))
+					if(monthMatcher.match(month))
 					{
 						gc.set(Calendar.MONTH, month - 1);
 						int maxDayOfMonth = DayOfMonthValueMatcher.getLastDayOfMonth(month, isLeapYear);
-						for (int dayOfMonth = gc.get(Calendar.DAY_OF_MONTH); dayOfMonth <= maxDayOfMonth; dayOfMonth++)
+						for(int dayOfMonth = gc.get(Calendar.DAY_OF_MONTH); dayOfMonth <= maxDayOfMonth; dayOfMonth++)
 						{
-							if ((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, isLeapYear) : dayOfMonthMatcher.match(dayOfMonth))
+							if((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, isLeapYear) : dayOfMonthMatcher.match(dayOfMonth))
 							{
 								gc.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 								int dayOfWeek = gc.get(Calendar.DAY_OF_WEEK) - 1;
-								if (dayOfWeekMatcher.match(dayOfWeek))
+								if(dayOfWeekMatcher.match(dayOfWeek))
 								{
-									for (int hour = gc.get(Calendar.HOUR_OF_DAY); hour <= HOUR_MAX_VALUE; hour++)
+									for(int hour = gc.get(Calendar.HOUR_OF_DAY); hour <= HOUR_MAX_VALUE; hour++)
 									{
-										if (hourMatcher.match(hour))
+										if(hourMatcher.match(hour))
 										{
 											gc.set(Calendar.HOUR_OF_DAY, hour);
-											for (int minute = gc.get(Calendar.MINUTE); minute <= MINUTE_MAX_VALUE; minute++)
+											for(int minute = gc.get(Calendar.MINUTE); minute <= MINUTE_MAX_VALUE; minute++)
 											{
-												if (minuteMatcher.match(minute))
+												if(minuteMatcher.match(minute))
 												{
 													gc.set(Calendar.MINUTE, minute);
 													long next0 = gc.getTimeInMillis();
-													if (next0 > millis)
+													if(next0 > millis)
 													{
-														if (next != -1L && next0 >= next)
+														if(next != -1L && next0 >= next)
 															break loop;
 
 														next = next0;
-														if (hourAdderRnd.containsKey(i))
+														if(hourAdderRnd.containsKey(i))
 															next += Rnd.get(hourAdderRnd.get(i)) * 60 * 60 * 1000L;
 
-														if (!minuteAdderRnd.containsKey(i))
+														if(!minuteAdderRnd.containsKey(i))
 															break loop;
 
 														next += Rnd.get(minuteAdderRnd.get(i)) * 60 * 1000L;
@@ -746,7 +731,7 @@ public class SchedulingPattern implements NextTime
 				gc.roll(Calendar.YEAR, true);
 			}
 
-			if (next > millis && (result == -1L || next < result))
+			if(next > millis && (result == -1L || next < result))
 				result = next;
 		}
 
@@ -776,10 +761,10 @@ public class SchedulingPattern implements NextTime
 
 		long prevTime = gc.getTimeInMillis();
 		long result = -1L;
-		for (;;)
+		for(;;)
 		{
 			prevTime = next(prevTime);
-			if (prevTime >= millis)
+			if(prevTime >= millis)
 				break;
 			result = prevTime;
 		}
@@ -813,12 +798,10 @@ public class SchedulingPattern implements NextTime
 	 */
 	private static int parseAlias(String value, String[] aliases, int offset) throws Exception
 	{
-		for (int i = 0; i < aliases.length; i++)
+		for(int i = 0; i < aliases.length; i++)
 		{
-			if (aliases[i].equalsIgnoreCase(value))
-			{
-				return offset + i;
-			}
+			if(aliases[i].equalsIgnoreCase(value))
+			{ return offset + i; }
 		}
 		throw new Exception("invalid alias \"" + value + "\"");
 	}
@@ -838,8 +821,7 @@ public class SchedulingPattern implements NextTime
 		 * Package-reserved construction.
 		 */
 		InvalidPatternException()
-		{
-		}
+		{}
 
 		/**
 		 * Package-reserved construction.
@@ -918,14 +900,12 @@ public class SchedulingPattern implements NextTime
 			{
 				i = Integer.parseInt(value);
 			}
-			catch (NumberFormatException e)
+			catch(NumberFormatException e)
 			{
 				throw new Exception("invalid integer value");
 			}
-			if (i < minValue || i > maxValue)
-			{
-				throw new Exception("value out of range");
-			}
+			if(i < minValue || i > maxValue)
+			{ throw new Exception("value out of range"); }
 			return i;
 		}
 
@@ -996,7 +976,7 @@ public class SchedulingPattern implements NextTime
 		@Override
 		public int parse(String value) throws Exception
 		{
-			if (value.equalsIgnoreCase("L"))
+			if(value.equalsIgnoreCase("L"))
 			{
 				return 32;
 			}
@@ -1017,20 +997,19 @@ public class SchedulingPattern implements NextTime
 		/**
 		 * Months aliases.
 		 */
-		private static String[] ALIASES =
-		{
-			"jan",
-			"feb",
-			"mar",
-			"apr",
-			"may",
-			"jun",
-			"jul",
-			"aug",
-			"sep",
-			"oct",
-			"nov",
-			"dec"
+		private static String[] ALIASES = {
+				"jan",
+				"feb",
+				"mar",
+				"apr",
+				"may",
+				"jun",
+				"jul",
+				"aug",
+				"sep",
+				"oct",
+				"nov",
+				"dec"
 		};
 
 		/**
@@ -1049,7 +1028,7 @@ public class SchedulingPattern implements NextTime
 				// try as a simple value
 				return super.parse(value);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				// try as an alias
 				return parseAlias(value, ALIASES, 1);
@@ -1067,15 +1046,14 @@ public class SchedulingPattern implements NextTime
 		/**
 		 * Days of week aliases.
 		 */
-		private static String[] ALIASES =
-		{
-			"sun",
-			"mon",
-			"tue",
-			"wed",
-			"thu",
-			"fri",
-			"sat"
+		private static String[] ALIASES = {
+				"sun",
+				"mon",
+				"tue",
+				"wed",
+				"thu",
+				"fri",
+				"sat"
 		};
 
 		/**
@@ -1094,7 +1072,7 @@ public class SchedulingPattern implements NextTime
 				// try as a simple value
 				return super.parse(value) % 7;
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				// try as an alias
 				return parseAlias(value, ALIASES, 0);
@@ -1165,13 +1143,13 @@ public class SchedulingPattern implements NextTime
 		{
 			int size = integers.size();
 			values = new int[size];
-			for (int i = 0; i < size; i++)
+			for(int i = 0; i < size; i++)
 			{
 				try
 				{
 					values[i] = integers.get(i).intValue();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					throw new IllegalArgumentException(e.getMessage());
 				}
@@ -1184,12 +1162,10 @@ public class SchedulingPattern implements NextTime
 		@Override
 		public boolean match(int value)
 		{
-			for (int i = 0; i < values.length; i++)
+			for(int i = 0; i < values.length; i++)
 			{
-				if (values[i] == value)
-				{
-					return true;
-				}
+				if(values[i] == value)
+				{ return true; }
 			}
 			return false;
 		}
@@ -1206,20 +1182,19 @@ public class SchedulingPattern implements NextTime
 	private static class DayOfMonthValueMatcher extends IntArrayValueMatcher
 	{
 
-		private static final int[] lastDays =
-		{
-			31,
-			28,
-			31,
-			30,
-			31,
-			30,
-			31,
-			31,
-			30,
-			31,
-			30,
-			31
+		private static final int[] lastDays = {
+				31,
+				28,
+				31,
+				30,
+				31,
+				30,
+				31,
+				31,
+				30,
+				31,
+				30,
+				31
 		};
 
 		/**
@@ -1246,7 +1221,7 @@ public class SchedulingPattern implements NextTime
 
 		public static int getLastDayOfMonth(int month, boolean isLeapYear)
 		{
-			if (isLeapYear && month == 2)
+			if(isLeapYear && month == 2)
 			{
 				return 29;
 			}

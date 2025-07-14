@@ -18,7 +18,7 @@ public class ExAcquireAPSkillList implements IClientOutgoingPacket
 	private int nAP;
 	private int nAcquiredAbilityCount;
 	private final Collection<SkillEntry> _learnedSkills;
-	
+
 	public ExAcquireAPSkillList(Player player, int result)
 	{
 		cResult = result;

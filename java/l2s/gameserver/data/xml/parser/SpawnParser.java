@@ -60,40 +60,42 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		Map<String, Territory> territories = new HashMap<String, Territory>();
-		for (Iterator<Element> spawnIterator = rootElement.elementIterator(); spawnIterator.hasNext();)
+		for(Iterator<Element> spawnIterator = rootElement.elementIterator(); spawnIterator.hasNext();)
 		{
 			Element spawnElement = spawnIterator.next();
-			if (spawnElement.getName().equalsIgnoreCase("territory"))
+			if(spawnElement.getName().equalsIgnoreCase("territory"))
 			{
 				final String terName = spawnElement.attributeValue("name");
 				final Territory territory = parseTerritory(terName, spawnElement);
 				territories.put(terName, territory);
 			}
-			else if (spawnElement.getName().equalsIgnoreCase("spawn"))
+			else if(spawnElement.getName().equalsIgnoreCase("spawn"))
 			{
 				String group = spawnElement.attributeValue("group");
 				String name = spawnElement.attributeValue("name") == null ? (group == null ? "" : group) : spawnElement.attributeValue("name");
 				int respawn = spawnElement.attributeValue("respawn") == null ? 60 : Integer.parseInt(spawnElement.attributeValue("respawn"));
-				int respawnRandom = spawnElement.attributeValue("respawn_random") == null ? 0 : Integer.parseInt(spawnElement.attributeValue("respawn_random"));
+				int respawnRandom = spawnElement.attributeValue("respawn_random")
+						== null ? 0 : Integer.parseInt(spawnElement.attributeValue("respawn_random"));
 				String respawnPattern = spawnElement.attributeValue("respawn_pattern");
 				int count = spawnElement.attributeValue("count") == null ? 1 : Integer.parseInt(spawnElement.attributeValue("count"));
-				PeriodOfDay periodOfDay = spawnElement.attributeValue("period_of_day") == null ? PeriodOfDay.NONE : PeriodOfDay.valueOf(spawnElement.attributeValue("period_of_day").toUpperCase());
+				PeriodOfDay periodOfDay = spawnElement.attributeValue("period_of_day")
+						== null ? PeriodOfDay.NONE : PeriodOfDay.valueOf(spawnElement.attributeValue("period_of_day").toUpperCase());
 
-				if (spawnElement.attributeValue("group") == null)
+				if(spawnElement.attributeValue("group") == null)
 				{
 					group = periodOfDay.name();
 				}
 
 				SpawnTemplate template = new SpawnTemplate(name, periodOfDay, count, respawn, respawnRandom, respawnPattern);
 				String territory = spawnElement.attributeValue("territory");
-				if (territory != null)
+				if(territory != null)
 				{
 					StringTokenizer st = new StringTokenizer(territory, ";");
-					while (st.hasMoreTokens())
+					while(st.hasMoreTokens())
 					{
 						String terName = st.nextToken().trim();
 						Territory t = territories.get(terName);
-						if (t == null)
+						if(t == null)
 						{
 							error("Invalid territory name: " + terName + "; " + getCurrentFileName());
 							continue;
@@ -102,10 +104,10 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 					}
 				}
 
-				for (Iterator<Element> subIterator = spawnElement.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = spawnElement.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
-					if (subElement.getName().equalsIgnoreCase("point"))
+					if(subElement.getName().equalsIgnoreCase("point"))
 					{
 						int x = Integer.parseInt(subElement.attributeValue("x"));
 						int y = Integer.parseInt(subElement.attributeValue("y"));
@@ -114,7 +116,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 						double chance = subElement.attributeValue("chance") == null ? 100. : Double.parseDouble(subElement.attributeValue("chance"));
 						template.addSpawnPoint(new SpawnPoint(x, y, z, h, chance));
 					}
-					else if (subElement.getName().equalsIgnoreCase("rectangle"))
+					else if(subElement.getName().equalsIgnoreCase("rectangle"))
 					{
 						int x1 = Integer.parseInt(subElement.attributeValue("x1"));
 						int y1 = Integer.parseInt(subElement.attributeValue("y1"));
@@ -132,7 +134,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 
 						template.addTerritory("rectangle: " + x1 + " " + y1 + " " + x2 + " " + y2 + " " + zmin + " " + zmax, t);
 					}
-					else if (subElement.getName().equalsIgnoreCase("circle"))
+					else if(subElement.getName().equalsIgnoreCase("circle"))
 					{
 						int x = Integer.parseInt(subElement.attributeValue("x"));
 						int y = Integer.parseInt(subElement.attributeValue("y"));
@@ -149,13 +151,13 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 
 						template.addTerritory("circle: " + x + " " + y + " " + zmin + " " + zmax + " " + radius, t);
 					}
-					else if (subElement.getName().equalsIgnoreCase("territory"))
+					else if(subElement.getName().equalsIgnoreCase("territory"))
 					{
 						String terName = subElement.attributeValue("name");
-						if (terName != null)
+						if(terName != null)
 						{
 							Territory t = territories.get(terName);
-							if (t == null)
+							if(t == null)
 							{
 								error("Invalid territory name: " + terName + "; " + getCurrentFileName());
 								continue;
@@ -168,49 +170,50 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 							Point2D[] points = temp.getPoints();
 							Point2D firstPoint = points[0];
 							Point2D lastPoint = points[points.length - 1];
-							template.addTerritory("territory: [" + firstPoint.getX() + " " + firstPoint.getY() + "] [" + lastPoint.getX() + " " + lastPoint.getY() + "]", temp);
+							template.addTerritory("territory: [" + firstPoint.getX() + " " + firstPoint.getY() + "] [" + lastPoint.getX() + " " + lastPoint.getY()
+									+ "]", temp);
 						}
 					}
-					else if (subElement.getName().equalsIgnoreCase("npc"))
+					else if(subElement.getName().equalsIgnoreCase("npc"))
 					{
 						int npcId = Integer.parseInt(subElement.attributeValue("id"));
 						int max = subElement.attributeValue("max") == null ? 0 : Integer.parseInt(subElement.attributeValue("max"));
 						MultiValueSet<String> parameters = StatsSet.EMPTY;
 						List<MinionData> minions = Collections.emptyList();
 						String ai = subElement.attributeValue("ai");
-						if (ai != null)
+						if(ai != null)
 						{
-							if (parameters.isEmpty())
+							if(parameters.isEmpty())
 							{
 								parameters = new MultiValueSet<String>();
 							}
 							parameters.set("ai_type", ai);
 						}
-						for (Iterator<Element> npcIterator = subElement.elementIterator(); npcIterator.hasNext();)
+						for(Iterator<Element> npcIterator = subElement.elementIterator(); npcIterator.hasNext();)
 						{
 							Element npcElement = npcIterator.next();
-							if (npcElement.getName().equalsIgnoreCase("set"))
+							if(npcElement.getName().equalsIgnoreCase("set"))
 							{
-								if (parameters.isEmpty())
+								if(parameters.isEmpty())
 								{
 									parameters = new MultiValueSet<String>();
 								}
 								parameters.set(npcElement.attributeValue("name"), npcElement.attributeValue("value"));
 							}
-							else if (npcElement.getName().equalsIgnoreCase("minions"))
+							else if(npcElement.getName().equalsIgnoreCase("minions"))
 							{
 								Territory t = null;
 								String terName = npcElement.attributeValue("spawn_by_territory");
-								if (terName != null)
+								if(terName != null)
 								{
 									t = territories.get(terName);
-									if (t == null)
+									if(t == null)
 									{
 										error("Invalid territory name: " + terName + "; " + getCurrentFileName());
 										continue;
 									}
 								}
-								for (Iterator<Element> nextIterator = npcElement.elementIterator(); nextIterator.hasNext();)
+								for(Iterator<Element> nextIterator = npcElement.elementIterator(); nextIterator.hasNext();)
 								{
 									Element nextElement = nextIterator.next();
 									int minionId = Integer.parseInt(nextElement.attributeValue("npc_id"));
@@ -218,7 +221,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 									int minionCount = Integer.parseInt(nextElement.attributeValue("count"));
 									int minionRespawn = nextElement.attributeValue("respawn") == null ? -1 : Integer.parseInt(nextElement.attributeValue("respawn"));
 
-									if (minions.isEmpty())
+									if(minions.isEmpty())
 									{
 										minions = new ArrayList<MinionData>();
 									}
@@ -230,13 +233,13 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 					}
 				}
 
-				if (template.getNpcList().isEmpty())
+				if(template.getNpcList().isEmpty())
 				{
 					warn("Npc id is zero! File: " + getCurrentFileName());
 					continue;
 				}
 
-				if (template.getSpawnPointList().isEmpty() && template.getTerritoryList().isEmpty())
+				if(template.getSpawnPointList().isEmpty() && template.getTerritoryList().isEmpty())
 				{
 					warn("No points to spawn! File: " + getCurrentFileName());
 					continue;
@@ -250,7 +253,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 	{
 		Territory t = new Territory();
 		t.add(parsePolygon0(name, e));
-		for (Iterator<Element> iterator = e.elementIterator("banned_territory"); iterator.hasNext();)
+		for(Iterator<Element> iterator = e.elementIterator("banned_territory"); iterator.hasNext();)
 		{
 			t.addBanned(parsePolygon0(name, iterator.next()));
 		}
@@ -260,7 +263,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 	private Polygon parsePolygon0(String name, Element e)
 	{
 		Polygon temp = new Polygon();
-		for (Iterator<Element> addIterator = e.elementIterator("add"); addIterator.hasNext();)
+		for(Iterator<Element> addIterator = e.elementIterator("add"); addIterator.hasNext();)
 		{
 			Element addElement = addIterator.next();
 			int x = Integer.parseInt(addElement.attributeValue("x"));
@@ -270,7 +273,7 @@ public final class SpawnParser extends AbstractParser<SpawnHolder>
 			temp.add(x, y).setZmin(zmin).setZmax(zmax);
 		}
 
-		if (!temp.validate())
+		if(!temp.validate())
 		{
 			error("Invalid polygon: " + name + "{" + temp + "}. File: " + getCurrentFileName());
 		}

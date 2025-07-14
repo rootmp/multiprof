@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
@@ -28,7 +28,7 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 		_inventoryUsedSlots = player.getInventory().getSize();
 
 		ItemInstance[] items;
-		switch (whType)
+		switch(whType)
 		{
 			case PRIVATE:
 				items = player.getWarehouse().getItems();
@@ -46,7 +46,7 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 
 		_itemList = new ArrayList<ItemInfo>(items.length);
 		Arrays.sort(items, ItemClassComparator.getInstance());
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 			_itemList.add(new ItemInfo(item));
 	}
 
@@ -54,9 +54,9 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
-			if (_whType == WarehouseType.FREIGHT.ordinal())
+			if(_whType == WarehouseType.FREIGHT.ordinal())
 				packetWriter.writeH(1);
 			else
 				packetWriter.writeH(_whType);
@@ -64,7 +64,7 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_inventoryUsedSlots); // Количество занятых ячеек в инвентаре.
 			packetWriter.writeD(_itemList.size());
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeH(0x00);
 			/*
@@ -75,7 +75,7 @@ public class WareHouseWithdrawListPacket implements IClientOutgoingPacket
 			 */
 			packetWriter.writeD(_itemList.size());
 			packetWriter.writeD(_itemList.size());
-			for (ItemInfo item : _itemList)
+			for(ItemInfo item : _itemList)
 			{
 				writeItemInfo(packetWriter, item);
 				packetWriter.writeD(item.getObjectId());

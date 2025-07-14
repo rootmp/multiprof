@@ -1,12 +1,13 @@
 package l2s.gameserver.dao;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.database.DatabaseFactory;
@@ -103,7 +104,9 @@ public class CharacterAdenLabDAO
 				int slotId = rset.getInt("slot");
 				int option1Level = rset.getInt("option1_level");
 				int option2Level = rset.getInt("option2_level");
-				specialSlots.put(slotId, new int[] {option1Level, option2Level});
+				specialSlots.put(slotId, new int[] {
+						option1Level, option2Level
+				});
 			}
 		}
 		catch(Exception e)

@@ -138,7 +138,8 @@ public final class PacketReader
 		final int stringLengthInBytes = _buf.readShortLE() * 2;
 		if(stringLengthInBytes > getReadableBytes())
 		{
-			throw new IndexOutOfBoundsException("readerIndex(" + _buf.readerIndex() + ") + length(" + stringLengthInBytes + ") exceeds writerIndex(" + _buf.writerIndex() + "): " + _buf);
+			throw new IndexOutOfBoundsException("readerIndex(" + _buf.readerIndex() + ") + length(" + stringLengthInBytes + ") exceeds writerIndex("
+					+ _buf.writerIndex() + "): " + _buf);
 		}
 
 		return _buf.readCharSequence(stringLengthInBytes, StandardCharsets.UTF_16LE).toString();

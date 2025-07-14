@@ -46,17 +46,17 @@ public class InstantZoneHolder extends AbstractHolder
 	public int getMinutesToNextEntrance(int id, Player player)
 	{
 		SchedulingPattern resetReuse = getResetReuseById(id);
-		if (resetReuse == null)
+		if(resetReuse == null)
 			return 0;
 
 		Long time = null;
-		if (getSharedReuseInstanceIds(id) != null && !getSharedReuseInstanceIds(id).isEmpty())
+		if(getSharedReuseInstanceIds(id) != null && !getSharedReuseInstanceIds(id).isEmpty())
 		{
 			List<Long> reuses = new ArrayList<Long>();
-			for (int i : getSharedReuseInstanceIds(id))
-				if (player.getInstanceReuse(i) != null)
+			for(int i : getSharedReuseInstanceIds(id))
+				if(player.getInstanceReuse(i) != null)
 					reuses.add(player.getInstanceReuse(i));
-			if (!reuses.isEmpty())
+			if(!reuses.isEmpty())
 			{
 				Collections.sort(reuses);
 				time = reuses.get(reuses.size() - 1);
@@ -64,27 +64,27 @@ public class InstantZoneHolder extends AbstractHolder
 		}
 		else
 			time = player.getInstanceReuse(id);
-		if (time == null)
+		if(time == null)
 			return 0;
 		return (int) Math.max((resetReuse.next(time) - System.currentTimeMillis()) / 60000L, 0);
 	}
 
 	public List<Integer> getLockedInstancesList(Player player)
 	{
-		if (player.getInstanceReuses().isEmpty())
+		if(player.getInstanceReuses().isEmpty())
 			return Collections.emptyList();
 
 		List<Integer> result = new ArrayList<Integer>();
-		for (Entry<Integer, Long> reuse : player.getInstanceReuses().entrySet())
+		for(Entry<Integer, Long> reuse : player.getInstanceReuses().entrySet())
 		{
-			if (reuse == null || reuse.getKey() == null || reuse.getValue() == null)
+			if(reuse == null || reuse.getKey() == null || reuse.getValue() == null)
 				continue;
 
 			SchedulingPattern resetReuse = getResetReuseById(reuse.getKey());
-			if (resetReuse == null)
+			if(resetReuse == null)
 				continue;
 
-			if (resetReuse.next(reuse.getValue()) > System.currentTimeMillis())
+			if(resetReuse.next(reuse.getValue()) > System.currentTimeMillis())
 				result.add(reuse.getKey());
 		}
 		return result;
@@ -92,22 +92,23 @@ public class InstantZoneHolder extends AbstractHolder
 
 	public List<Integer> getSharedReuseInstanceIds(int id)
 	{
-		if (getInstantZone(id).getSharedReuseGroup() < 1)
+		if(getInstantZone(id).getSharedReuseGroup() < 1)
 			return null;
 		List<Integer> sharedInstanceIds = new ArrayList<Integer>();
-		for (InstantZone iz : _zones.valueCollection())
-			if (iz.getSharedReuseGroup() > 0 && getInstantZone(id).getSharedReuseGroup() > 0 && iz.getSharedReuseGroup() == getInstantZone(id).getSharedReuseGroup())
+		for(InstantZone iz : _zones.valueCollection())
+			if(iz.getSharedReuseGroup() > 0 && getInstantZone(id).getSharedReuseGroup() > 0
+					&& iz.getSharedReuseGroup() == getInstantZone(id).getSharedReuseGroup())
 				sharedInstanceIds.add(iz.getId());
 		return sharedInstanceIds;
 	}
 
 	public List<Integer> getSharedReuseInstanceIdsByGroup(int groupId)
 	{
-		if (groupId < 1)
+		if(groupId < 1)
 			return null;
 		List<Integer> sharedInstanceIds = new ArrayList<Integer>();
-		for (InstantZone iz : _zones.valueCollection())
-			if (iz.getSharedReuseGroup() > 0 && iz.getSharedReuseGroup() == groupId)
+		for(InstantZone iz : _zones.valueCollection())
+			if(iz.getSharedReuseGroup() > 0 && iz.getSharedReuseGroup() == groupId)
 				sharedInstanceIds.add(iz.getId());
 		return sharedInstanceIds;
 	}

@@ -80,7 +80,9 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 	private final int _totalStatPoints;
 	private final int _bonusSTR, _bonusDEX, _bonusCON, _bonusINT, _bonusWIT, _bonusMEN, _elixirsUsed;
 
-	private final byte[] _masks = new byte[] { (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00 };
+	private final byte[] _masks = new byte[] {
+			(byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00
+	};
 
 	private int _initSize = 5;
 	private int _specialMountId;
@@ -242,8 +244,10 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		}
 		else
 		{
-			hair_style = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? player.getHairStyle() : (player.getBeautyHairStyle() > 0 ? player.getBeautyHairStyle() : player.getHairStyle());
-			hair_color = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? player.getHairColor() : player.getBeautyHairColor() > 0 ? player.getBeautyHairColor() : player.getHairColor();
+			hair_style = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR)
+					> 0 ? player.getHairStyle() : (player.getBeautyHairStyle() > 0 ? player.getBeautyHairStyle() : player.getHairStyle());
+			hair_color = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR)
+					> 0 ? player.getHairColor() : player.getBeautyHairColor() > 0 ? player.getBeautyHairColor() : player.getHairColor();
 		}
 		face = player.getBeautyFace() > 0 ? player.getBeautyFace() : player.getFace();
 		gm_commands = player.isGM() || player.getPlayerAccess().CanUseAltG ? 1 : 0;
@@ -281,7 +285,8 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		agathion = player.getAgathionNpcId();
 		fame = player.getFame();
 		sayhas_grace_points = player.getSayhasGrace();
-		partyRoom = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
+		partyRoom = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING
+				&& player.getMatchingRoom().getLeader() == player;
 		_moveType = player.isInFlyingTransform() ? 0x02 : (player.isInWater() ? 0x01 : 0x00);
 		talismans = player.getTalismanCount();
 		_jewelsLimit = player.getJewelsLimit();
@@ -315,7 +320,7 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 
 		_powerAttackWeapon = (int) player.getStat().getDiff(Stats.POWER_ATTACK_WEAPON);
 		_magicAttackWeapon = (int) player.getStat().getDiff(Stats.MAGIC_ATTACK_WEAPON);
-		
+
 		_elixirsUsed = player.getActiveSubClass().getBonusPointUsed();
 		if(base_class == 217)
 		{
@@ -347,7 +352,7 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 				switch(infoType)
 				{
 					case VANGUARD_MOUNT:
-						if(_specialMountId!=0)
+						if(_specialMountId != 0)
 							addComponentType(infoType);
 						break;
 					default:
@@ -404,9 +409,9 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		packetWriter.writeD(obj_id);
 
 		packetWriter.writeD(_initSize);
-	
+
 		packetWriter.writeH(30);
-		
+
 		packetWriter.writeB(_masks);
 
 		if(containsMask(UserInfoType.RELATION))
@@ -462,7 +467,7 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 		if(containsMask(UserInfoType.ENCHANTLEVEL))
 		{
 			packetWriter.writeH(UserInfoType.ENCHANTLEVEL.getBlockLength());
-			
+
 			packetWriter.writeC(_weaponEnchant);
 			packetWriter.writeC(_armorSetEnchant);
 			packetWriter.writeC(0); // 338 - cBackEnchant?
@@ -705,9 +710,9 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 
 		if(containsMask(UserInfoType.ELIXIR_USED))
 			packetWriter.writeD(_elixirsUsed);
-		
-		if (containsMask(UserInfoType.VANGUARD_MOUNT) ) 
-			packetWriter.writeC(_specialMountId); 
+
+		if(containsMask(UserInfoType.VANGUARD_MOUNT))
+			packetWriter.writeC(_specialMountId);
 		return true;
 	}
 }

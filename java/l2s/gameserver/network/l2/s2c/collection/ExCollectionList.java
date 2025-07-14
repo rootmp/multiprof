@@ -19,7 +19,7 @@ public class ExCollectionList implements IClientOutgoingPacket
 {
 	private Player _player;
 	private int _tabId;
-	
+
 	public ExCollectionList(Player player, int tabId)
 	{
 		_player = player;
@@ -30,7 +30,7 @@ public class ExCollectionList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_tabId); // tab id
-		if (_tabId != 7)
+		if(_tabId != 7)
 		{
 			packetWriter.writeD(0);
 		}
@@ -39,16 +39,16 @@ public class ExCollectionList implements IClientOutgoingPacket
 			List<CollectionTemplate> list = CollectionsData.getInstance().getCollectionsByTabId(_tabId);
 			int count = 0;
 			Map<Integer, Integer> collections = new HashMap<>();
-			for (CollectionTemplate template : list)
+			for(CollectionTemplate template : list)
 			{
-				if (_player.getCollectionList().contains(template.getId()))
+				if(_player.getCollectionList().contains(template.getId()))
 				{
 					count++;
 					collections.put(count, template.getId());
 				}
 			}
 			packetWriter.writeD(count);
-			for (int id : collections.keySet())
+			for(int id : collections.keySet())
 			{
 				packetWriter.writeH(collections.get(id)); //nCollectionID
 				packetWriter.writeD(0); //nRemainTime expiration time in seconds

@@ -3,9 +3,9 @@ package l2s.gameserver.network.l2.s2c.enchant;
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.item.data.ItemData;
 
 /**
@@ -53,7 +53,7 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_error)
+		if(_error)
 		{
 			packetWriter.writeC(0);
 			return true;
@@ -62,12 +62,12 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 		packetWriter.writeC(1);
 
 		// EnchantSuccessItem
-		if (_failureReward.size() == 0)
+		if(_failureReward.size() == 0)
 		{
 			packetWriter.writeD(_successEnchant.size());
-			if (_successEnchant.size() != 0)
+			if(_successEnchant.size() != 0)
 			{
-				for (int i : _successEnchant.keySet())
+				for(int i : _successEnchant.keySet())
 				{
 					int[] intArray = _successEnchant.get(i);
 					packetWriter.writeD(intArray[0]);
@@ -82,9 +82,9 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 
 		// EnchantFailItem
 		packetWriter.writeD(_failureEnchant.size());
-		if (_failureEnchant.size() != 0)
+		if(_failureEnchant.size() != 0)
 		{
-			for (int i : _failureEnchant.keySet())
+			for(int i : _failureEnchant.keySet())
 			{
 				packetWriter.writeD(_failureEnchant.get(i));
 				packetWriter.writeD(0);
@@ -96,17 +96,17 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 		}
 
 		// EnchantFailRewardItem
-		if (((_successEnchant.size() == 0) && (_player.getMultiFailItemsCount() != 0)) || (_isResult && (_player.getMultiFailItemsCount() != 0)))
+		if(((_successEnchant.size() == 0) && (_player.getMultiFailItemsCount() != 0)) || (_isResult && (_player.getMultiFailItemsCount() != 0)))
 		{
 			packetWriter.writeD(_player.getMultiFailItemsCount());
 			_failureReward = _player.getMultiEnchantFailItems();
-			for (int i : _failureReward.keySet())
+			for(int i : _failureReward.keySet())
 			{
 				ItemData item = _failureReward.get(i);
 				packetWriter.writeD(item.getId());
 				packetWriter.writeD((int) item.getCount());
 			}
-			if (_isResult)
+			if(_isResult)
 			{
 				_player.clearMultiSuccessEnchantList();
 				_player.clearMultiFailureEnchantList();

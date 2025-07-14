@@ -17,11 +17,10 @@ public class i_add_sayha_grace_points extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		int resultValue = effected.getPlayer().getSayhasGrace() + (int) effected.getStat().calc(Stats.SAYHAS_GRACE_CHARGING_RATE_MULTIPLIER, (int) getValue());
-		if (resultValue > effected.getPlayer().MAX_SAYHAS_GRACE_POINTS)
-		{
-			return false;
-		}
+		int resultValue = effected.getPlayer().getSayhasGrace()
+				+ (int) effected.getStat().calc(Stats.SAYHAS_GRACE_CHARGING_RATE_MULTIPLIER, (int) getValue());
+		if(resultValue > effected.getPlayer().MAX_SAYHAS_GRACE_POINTS)
+		{ return false; }
 
 		return true;
 	}
@@ -29,7 +28,8 @@ public class i_add_sayha_grace_points extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		int resultValue = effected.getPlayer().getSayhasGrace() + (int) effected.getStat().calc(Stats.SAYHAS_GRACE_CHARGING_RATE_MULTIPLIER, (int) getValue());
+		int resultValue = effected.getPlayer().getSayhasGrace()
+				+ (int) effected.getStat().calc(Stats.SAYHAS_GRACE_CHARGING_RATE_MULTIPLIER, (int) getValue());
 		effected.getPlayer().setSayhasGrace(resultValue);
 		effected.getPlayer().updateUserBonus();
 	}

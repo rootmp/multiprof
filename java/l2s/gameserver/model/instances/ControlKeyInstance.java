@@ -29,7 +29,7 @@ public class ControlKeyInstance extends GameObject
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
 			return;

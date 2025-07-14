@@ -34,7 +34,7 @@ public class ElementalList implements Iterable<Elemental>
 
 	public ElementalList(Player owner)
 	{
-		if (Config.ELEMENTAL_SYSTEM_ENABLED)
+		if(Config.ELEMENTAL_SYSTEM_ENABLED)
 			_elementals = new TreeMap<ElementalElement, Elemental>();
 		else
 			_elementals = Collections.emptyMap();
@@ -59,13 +59,13 @@ public class ElementalList implements Iterable<Elemental>
 
 	public void restore()
 	{
-		if (Config.ELEMENTAL_SYSTEM_ENABLED)
+		if(Config.ELEMENTAL_SYSTEM_ENABLED)
 			CharacterElementalsDAO.getInstance().restore(_owner, _elementals);
 	}
 
 	public void store()
 	{
-		if (Config.ELEMENTAL_SYSTEM_ENABLED)
+		if(Config.ELEMENTAL_SYSTEM_ENABLED)
 			CharacterElementalsDAO.getInstance().store(_owner, _elementals.values());
 	}
 
@@ -76,13 +76,13 @@ public class ElementalList implements Iterable<Elemental>
 
 	public Elemental get(ElementalElement element)
 	{
-		if (!Config.ELEMENTAL_SYSTEM_ENABLED)
+		if(!Config.ELEMENTAL_SYSTEM_ENABLED)
 			return null;
 
-		if (element != ElementalElement.NONE)
+		if(element != ElementalElement.NONE)
 		{
 			Elemental elemental = _elementals.get(element);
-			if (elemental == null)
+			if(elemental == null)
 			{
 				elemental = new Elemental(element);
 				_elementals.put(elemental.getElement(), elemental);

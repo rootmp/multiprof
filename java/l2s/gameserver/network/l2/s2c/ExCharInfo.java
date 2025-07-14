@@ -40,7 +40,8 @@ public class ExCharInfo implements IClientOutgoingPacket
 			Inventory.PAPERDOLL_LRHAND,
 			Inventory.PAPERDOLL_HAIR,
 			Inventory.PAPERDOLL_DHAIR,
-			Inventory.PAPERDOLL_BACK};
+			Inventory.PAPERDOLL_BACK
+	};
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ExCharInfo.class);
 
@@ -199,7 +200,8 @@ public class ExCharInfo implements IClientOutgoingPacket
 		speedAtack = (float) player.getAttackSpeedMultiplier();
 		colRadius = (float) player.getCurrentCollisionRadius();
 		colHeight = (float) player.getCurrentCollisionHeight();
-		hairStyle = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? sex : (player.getBeautyHairStyle() > 0 ? player.getBeautyHairStyle() : player.getHairStyle());
+		hairStyle = player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR)
+				> 0 ? sex : (player.getBeautyHairStyle() > 0 ? player.getBeautyHairStyle() : player.getHairStyle());
 		hairColor = player.getBeautyHairColor() > 0 ? player.getBeautyHairColor() : player.getHairColor();
 		face = player.getBeautyFace() > 0 ? player.getBeautyFace() : player.getFace();
 		if(clanId > 0 && player.getClan() != null)
@@ -226,7 +228,8 @@ public class ExCharInfo implements IClientOutgoingPacket
 		pledgeType = player.getPledgeType();
 		transformId = player.getVisualTransformId();
 		agathionId = player.getAgathionNpcId();
-		partyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
+		partyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING
+				&& player.getMatchingRoom().getLeader() == player;
 		flying = player.isInFlyingTransform();
 		curHp = (int) player.getCurrentHp();//receiver.canReceiveStatusUpdate(player, StatusType.Normal, UpdateType.VCP_HP) ? (int) player.getCurrentHp() : 0;
 		maxHp = player.getMaxHp();//receiver.canReceiveStatusUpdate(player, StatusType.Normal, UpdateType.VCP_MAXHP) ? player.getMaxHp() : 0;
@@ -291,7 +294,6 @@ public class ExCharInfo implements IClientOutgoingPacket
 		for(int paperdollId : PAPERDOLL_ORDER)
 			packetWriter.writeD(paperdolls[paperdollId][0]);
 
-
 		packetWriter.writeH(CharInfoType.VARIATION.getBlockLength());
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][1]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_RHAND][2]);
@@ -322,8 +324,6 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_BACK][2]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_BACK][3]);
 
-
-
 		packetWriter.writeC(armorSetEnchant); //nMinNewSetItemEchantedEffect Armor Enchant Abnormal
 
 		//SlotItemShapeShiftClassID
@@ -339,7 +339,7 @@ public class ExCharInfo implements IClientOutgoingPacket
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_HAIR][4]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_DHAIR][4]);
 		packetWriter.writeD(paperdolls[Inventory.PAPERDOLL_BACK][4]);
-		
+
 		packetWriter.writeC(pvpFlag); //cGuilty
 		packetWriter.writeD(karma);//nCriminalRate
 

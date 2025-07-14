@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Party;
@@ -30,44 +31,44 @@ public class RequestJoinParty implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isProcessingRequest())
+		if(activeChar.isProcessingRequest())
 		{
 			activeChar.sendPacket(SystemMsg.WAITING_FOR_ANOTHER_REPLY);
 			return;
 		}
 
-		if (activeChar.isPartyBlocked())
+		if(activeChar.isPartyBlocked())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_PARTICIPATING_IN_A_PARTY_IS_NOT_ALLOWED);
 			return;
 		}
 
 		Player target = World.getPlayer(_name);
-		if (target == null)
+		if(target == null)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
 			return;
 		}
 
-		if (target == activeChar)
+		if(target == activeChar)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		for (PvPEvent event : activeChar.getEvents(PvPEvent.class))
+		for(PvPEvent event : activeChar.getEvents(PvPEvent.class))
 		{
-			if (!event.canJoinParty(activeChar, target))
+			if(!event.canJoinParty(activeChar, target))
 			{
 				activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 				activeChar.sendActionFailed();
@@ -75,35 +76,35 @@ public class RequestJoinParty implements IClientIncomingPacket
 			}
 		}
 
-		if (target.isBusy())
+		if(target.isBusy())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addName(target));
 			return;
 		}
 
-		if (target.isInTrainingCamp())
+		if(target.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
 		IBroadcastPacket problem = target.canJoinParty(activeChar);
-		if (problem != null)
+		if(problem != null)
 		{
 			activeChar.sendPacket(problem);
 			return;
 		}
 
-		if (activeChar.isInParty())
+		if(activeChar.isInParty())
 		{
-			if (activeChar.getParty().getMemberCount() >= Party.MAX_SIZE)
+			if(activeChar.getParty().getMemberCount() >= Party.MAX_SIZE)
 			{
 				activeChar.sendPacket(SystemMsg.THE_PARTY_IS_FULL);
 				return;
 			}
 
 			// Только Party Leader может приглашать новых членов
-			if (Config.PARTY_LEADER_ONLY_CAN_INVITE && !activeChar.getParty().isLeader(activeChar))
+			if(Config.PARTY_LEADER_ONLY_CAN_INVITE && !activeChar.getParty().isLeader(activeChar))
 			{
 				activeChar.sendPacket(SystemMsg.ONLY_THE_LEADER_CAN_GIVE_OUT_INVITATIONS);
 				return;

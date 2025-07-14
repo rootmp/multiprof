@@ -56,10 +56,10 @@ public final class EnsoulParser extends AbstractParser<EnsoulHolder>
 			for(Iterator<Element> feeIterator = element.elementIterator("ensoul_fee"); feeIterator.hasNext();)
 			{
 				Element feeElement = feeIterator.next();
-				if(feeElement.attributeValue("weapon") !=null)
+				if(feeElement.attributeValue("weapon") != null)
 				{
 					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("weapon").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
+					Stream.of(feeElement.attributeValue("weapon").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
 
 					EnsoulFee ensoulFee = new EnsoulFee();
 
@@ -71,202 +71,202 @@ public final class EnsoulParser extends AbstractParser<EnsoulHolder>
 
 						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
 					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_HAND,_option_id, ensoulFee);
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_LR_HAND,_option_id, ensoulFee);
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_HAND, _option_id, ensoulFee);
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_LR_HAND, _option_id, ensoulFee);
 				}
+
+				if(feeElement.attributeValue("legs") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("legs").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_LEGS, _option_id, ensoulFee);
+				}
+
+				if(feeElement.attributeValue("feet") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("feet").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_FEET, _option_id, ensoulFee);
+				}
+
+				if(feeElement.attributeValue("head") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("head").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_HEAD, _option_id, ensoulFee);
+				}
+				if(feeElement.attributeValue("gloves") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("gloves").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_GLOVES, _option_id, ensoulFee);
+				}
+
+				if(feeElement.attributeValue("onepiece") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("onepiece").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_FULL_ARMOR, _option_id, ensoulFee);
+				}
+				if(feeElement.attributeValue("chest") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("chest").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_CHEST, _option_id, ensoulFee);
+				}
+				if(feeElement.attributeValue("finger") != null) //TODO
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("finger").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_FINGER, _option_id, ensoulFee);
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_L_FINGER, _option_id, ensoulFee);
+				}
+				if(feeElement.attributeValue("ear") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("ear").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_EAR, _option_id, ensoulFee);
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_L_EAR, _option_id, ensoulFee);
+				}
+				if(feeElement.attributeValue("neck") != null)
+				{
+					List<Integer> _option_id = new ArrayList<Integer>();
+					Stream.of(feeElement.attributeValue("neck").split(",")).forEach(o -> _option_id.add(Integer.parseInt(o)));
+
+					EnsoulFee ensoulFee = new EnsoulFee();
+
+					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					{
+						Element feeInfoElement = feeInfoIterator.next();
+
+						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+
+						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+					}
+					getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK, _option_id, ensoulFee);
+				}
+				/*	if(feeElement.attributeValue("shield") !=null)
+					{
+						List<Integer> _option_id = new ArrayList<Integer>();
+						Stream.of(feeElement.attributeValue("shield").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
 				
-				if(feeElement.attributeValue("legs") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("legs").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_LEGS,_option_id, ensoulFee);
-				}
+						EnsoulFee ensoulFee = new EnsoulFee();
 				
-				if(feeElement.attributeValue("feet") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("feet").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_FEET,_option_id, ensoulFee);
-				}
+						for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+						{
+							Element feeInfoElement = feeInfoIterator.next();
 				
-				if(feeElement.attributeValue("head") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("head").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_HEAD,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("gloves") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("gloves").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_GLOVES,_option_id, ensoulFee);
-				}
+							int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
 				
-				if(feeElement.attributeValue("onepiece") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("onepiece").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+							ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+						}
+						getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK,_option_id, ensoulFee);
 					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_FULL_ARMOR,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("chest") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("chest").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+					if(feeElement.attributeValue("sigil") !=null)
 					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_CHEST,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("finger") !=null) //TODO
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("finger").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_FINGER,_option_id, ensoulFee);
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_L_FINGER,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("ear") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("ear").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_R_EAR,_option_id, ensoulFee);
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_L_EAR,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("neck") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("neck").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK,_option_id, ensoulFee);
-				}
-			/*	if(feeElement.attributeValue("shield") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("shield").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK,_option_id, ensoulFee);
-				}
-				if(feeElement.attributeValue("sigil") !=null)
-				{
-					List<Integer> _option_id = new ArrayList<Integer>();
-					Stream.of(feeElement.attributeValue("sigil").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
-
-					EnsoulFee ensoulFee = new EnsoulFee();
-
-					for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
-					{
-						Element feeInfoElement = feeInfoIterator.next();
-
-						int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
-
-						ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
-					}
-					getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK,_option_id, ensoulFee);
-				}*/
+						List<Integer> _option_id = new ArrayList<Integer>();
+						Stream.of(feeElement.attributeValue("sigil").split(",")).forEach(o->_option_id.add(Integer.parseInt(o)));
+				
+						EnsoulFee ensoulFee = new EnsoulFee();
+				
+						for(Iterator<Element> feeInfoIterator = feeElement.elementIterator("ensoul_fee_info"); feeInfoIterator.hasNext();)
+						{
+							Element feeInfoElement = feeInfoIterator.next();
+				
+							int type = Integer.parseInt(feeInfoElement.attributeValue("type"));
+				
+							ensoulFee.addFeeInfo(type, parseFeeInfo(feeInfoElement));
+						}
+						getHolder().addEnsoulFee(ItemTemplate.SLOT_NECK,_option_id, ensoulFee);
+					}*/
 			}
 		}
 
@@ -280,7 +280,8 @@ public final class EnsoulParser extends AbstractParser<EnsoulHolder>
 
 				int id = Integer.parseInt(ensoulElement.attributeValue("id"));
 				int itemId = ensoulElement.attributeValue("item_id") == null ? 0 : Integer.parseInt(ensoulElement.attributeValue("item_id"));
-				int extractionItemId = ensoulElement.attributeValue("extraction_item_id") == null ? 0 : Integer.parseInt(ensoulElement.attributeValue("extraction_item_id"));
+				int extractionItemId = ensoulElement.attributeValue("extraction_item_id")
+						== null ? 0 : Integer.parseInt(ensoulElement.attributeValue("extraction_item_id"));
 				Ensoul ensoul = new Ensoul(id, itemId, extractionItemId);
 
 				for(Iterator<Element> skillIterator = ensoulElement.elementIterator("skill"); skillIterator.hasNext();)
@@ -319,10 +320,10 @@ public final class EnsoulParser extends AbstractParser<EnsoulHolder>
 	private static List<EnsoulFeeItem> parseFeeItems(Element rootElement)
 	{
 		List<EnsoulFeeItem> items = new ArrayList<EnsoulFeeItem>();
-			int itemId = Integer.parseInt(rootElement.attributeValue("id"));
-			long itemCount = Long.parseLong(rootElement.attributeValue("count"));
-			items.add(new EnsoulFeeItem(itemId, itemCount));
-		
+		int itemId = Integer.parseInt(rootElement.attributeValue("id"));
+		long itemCount = Long.parseLong(rootElement.attributeValue("count"));
+		items.add(new EnsoulFeeItem(itemId, itemCount));
+
 		return items;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Alliance;
@@ -22,17 +23,17 @@ public class RequestOustAlly implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Clan leaderClan = activeChar.getClan();
-		if (leaderClan == null)
+		if(leaderClan == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 		Alliance alliance = leaderClan.getAlliance();
-		if (alliance == null)
+		if(alliance == null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS);
 			return;
@@ -40,26 +41,26 @@ public class RequestOustAlly implements IClientIncomingPacket
 
 		Clan clan;
 
-		if (!activeChar.isAllyLeader())
+		if(!activeChar.isAllyLeader())
 		{
 			activeChar.sendPacket(SystemMsg.THIS_FEATURE_IS_ONLY_AVAILABLE_TO_ALLIANCE_LEADERS);
 			return;
 		}
 
-		if (_clanName == null)
+		if(_clanName == null)
 			return;
 
 		clan = ClanTable.getInstance().getClanByName(_clanName);
 
-		if (clan != null)
+		if(clan != null)
 		{
-			if (!alliance.isMember(clan.getClanId()))
+			if(!alliance.isMember(clan.getClanId()))
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (alliance.getLeader().equals(clan))
+			if(alliance.getLeader().equals(clan))
 			{
 				activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_WITHDRAW_FROM_THE_ALLIANCE);
 				return;

@@ -16,6 +16,9 @@ import org.napile.primitive.pair.IntObjectPair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.impl.sync.TSynchronizedIntList;
+import gnu.trove.list.TIntList;
+import gnu.trove.list.array.TIntArrayList;
 import l2s.commons.configuration.ExProperties;
 import l2s.gameserver.Config;
 import l2s.gameserver.ThreadPoolManager;
@@ -43,10 +46,6 @@ import l2s.gameserver.network.l2.s2c.ExOlympiadRecord;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.utils.TimeUtils;
 
-import gnu.trove.impl.sync.TSynchronizedIntList;
-import gnu.trove.list.TIntList;
-import gnu.trove.list.array.TIntArrayList;
-
 public class Olympiad
 {
 	private static class GlobalListeners implements OnPlayerEnterListener, OnLevelChangeListener, OnClassChangeListener
@@ -54,9 +53,9 @@ public class Olympiad
 		@Override
 		public void onPlayerEnter(Player player)
 		{
-			if (canParticipate(player))
+			if(canParticipate(player))
 			{
-				if (!isParticipant(player))
+				if(!isParticipant(player))
 					createParticipant(player);
 				player.sendPacket(new ExOlympiadInfo(player));
 			}
@@ -65,9 +64,9 @@ public class Olympiad
 		@Override
 		public void onClassChange(Player player, ClassId oldClass, ClassId newClass)
 		{
-			if (canParticipate(player))
+			if(canParticipate(player))
 			{
-				if (!isParticipant(player))
+				if(!isParticipant(player))
 				{
 					createParticipant(player);
 					player.sendPacket(new ExOlympiadInfo(player));
@@ -78,9 +77,9 @@ public class Olympiad
 		@Override
 		public void onLevelChange(Player player, int oldLvl, int newLvl)
 		{
-			if (canParticipate(player))
+			if(canParticipate(player))
 			{
-				if (!isParticipant(player))
+				if(!isParticipant(player))
 				{
 					createParticipant(player);
 					player.sendPacket(new ExOlympiadInfo(player));
@@ -105,44 +104,43 @@ public class Olympiad
 
 	public static final String OLYMPIAD_HTML_PATH = "olympiad/";
 
-	public static final int[][] BUFFS_LIST =
-	{
-		{
-			4357,
-			1
-		}, // Haste
-		{
-			4355,
-			1
-		}, // Acumen
-		{
-			4342,
-			1
-		}, // Wind Walk
-		{
-			4345,
-			1
-		}, // Might
-		{
-			4344,
-			1
-		}, // Shield
-		{
-			4349,
-			1
-		}, // Magic Barrier
-		{
-			4347,
-			1
-		}, // Blessed Body
-		{
-			4348,
-			1
-		}, // Blessed Soul
-		{
-			4352,
-			1
-		} // Berserker Spirit
+	public static final int[][] BUFFS_LIST = {
+			{
+					4357,
+					1
+			}, // Haste
+			{
+					4355,
+					1
+			}, // Acumen
+			{
+					4342,
+					1
+			}, // Wind Walk
+			{
+					4345,
+					1
+			}, // Might
+			{
+					4344,
+					1
+			}, // Shield
+			{
+					4349,
+					1
+			}, // Magic Barrier
+			{
+					4347,
+					1
+			}, // Blessed Body
+			{
+					4348,
+					1
+			}, // Blessed Soul
+			{
+					4352,
+					1
+			} // Berserker Spirit
 	};
 
 	private static long _olympiadPeriodStartTime;
@@ -183,12 +181,13 @@ public class Olympiad
 		OlympiadParticipantsDAO.getInstance().select();
 		OlympiadDatabase.loadParticipantsRank();
 
-		getParticipantsMap().valueCollection().stream().filter(p -> System.currentTimeMillis() > TimeUtils.DAILY_DATE_PATTERN.next(TimeUnit.SECONDS.toMillis(p.getLastGameTime()))).forEach(p -> p.setDailyGameCount(0));
+		getParticipantsMap().valueCollection().stream().filter(p -> System.currentTimeMillis()
+				> TimeUtils.DAILY_DATE_PATTERN.next(TimeUnit.SECONDS.toMillis(p.getLastGameTime()))).forEach(p -> p.setDailyGameCount(0));
 
-		switch (_period)
+		switch(_period)
 		{
 			case 0:
-				if (getOlympiadPeriodEndTime() < System.currentTimeMillis())
+				if(getOlympiadPeriodEndTime() < System.currentTimeMillis())
 					OlympiadDatabase.setNewOlympiadStartTime();
 				else
 					_isOlympiadEnd = false;
@@ -203,7 +202,7 @@ public class Olympiad
 		}
 
 		_log.info("Olympiad System: Loading Olympiad System....");
-		if (_period == 0)
+		if(_period == 0)
 			_log.info("Olympiad System: Currently in Olympiad Period");
 		else
 			_log.info("Olympiad System: Currently in Validation Period");
@@ -211,7 +210,7 @@ public class Olympiad
 		_log.info("Olympiad System: Period Ends....");
 
 		long milliToEnd;
-		if (_period == 0)
+		if(_period == 0)
 			milliToEnd = getMillisToOlympiadEnd();
 		else
 			milliToEnd = getMillisToValidationEnd();
@@ -225,7 +224,7 @@ public class Olympiad
 
 		_log.info("Olympiad System: In " + numDays + " days, " + numHours + " hours and " + numMins + " mins.");
 
-		if (_period == 0)
+		if(_period == 0)
 		{
 			_log.info("Olympiad System: Next Weekly Change is in....");
 
@@ -243,7 +242,7 @@ public class Olympiad
 
 		_log.info("Olympiad System: Loaded " + _participants.size() + " participants.");
 
-		if (_period == 0)
+		if(_period == 0)
 			init();
 
 		CharListenerList.addGlobal(GLOBAL_LISTENERS);
@@ -251,35 +250,35 @@ public class Olympiad
 
 	public static void init()
 	{
-		if (isValidationPeriod())
+		if(isValidationPeriod())
 			return;
 
 		setNewCompBegin();
 		startOlympiadEndTask(getMillisToOlympiadEnd());
 		updateCompStatus();
 
-		if (_scheduledWeeklyTask != null)
+		if(_scheduledWeeklyTask != null)
 			_scheduledWeeklyTask.cancel(false);
 		_scheduledWeeklyTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new WeeklyTask(), getMillisToWeekChange(), Config.ALT_OLY_WPERIOD);
 	}
 
 	public static void startOlympiadEndTask(long delay)
 	{
-		if (_scheduledOlympiadEnd != null)
+		if(_scheduledOlympiadEnd != null)
 			_scheduledOlympiadEnd.cancel(false);
 		_scheduledOlympiadEnd = ThreadPoolManager.getInstance().schedule(new OlympiadEndTask(), delay);
 	}
 
 	public static void startCompStartTask(long delay)
 	{
-		if (_scheduledCompStartTask != null)
+		if(_scheduledCompStartTask != null)
 			_scheduledCompStartTask.cancel(false);
 		_scheduledCompStartTask = ThreadPoolManager.getInstance().schedule(new CompStartTask(), delay);
 	}
 
 	public static void startCompEndTask(long delay)
 	{
-		if (_scheduledCompEndTask != null)
+		if(_scheduledCompEndTask != null)
 			_scheduledCompEndTask.cancel(false);
 		_scheduledCompEndTask = ThreadPoolManager.getInstance().schedule(new CompEndTask(), delay);
 	}
@@ -296,38 +295,38 @@ public class Olympiad
 
 	public static boolean isRegistrationActive()
 	{
-		if (!_inCompPeriod || _isOlympiadEnd)
+		if(!_inCompPeriod || _isOlympiadEnd)
 			return false;
-		if (getMillisToOlympiadEnd() <= 600 * 1000)
+		if(getMillisToOlympiadEnd() <= 600 * 1000)
 			return false;
-		if (getMillisToCompEnd() <= Config.OLYMPIAD_REGISTRATION_DELAY)
+		if(getMillisToCompEnd() <= Config.OLYMPIAD_REGISTRATION_DELAY)
 			return false;
 		return true;
 	}
 
 	public static synchronized boolean registerParticipant(Player player)
 	{
-		if (!isRegistrationActive())
+		if(!isRegistrationActive())
 		{
 			player.sendPacket(SystemMsg.THE_GRAND_OLYMPIAD_GAMES_ARE_NOT_CURRENTLY_IN_PROGRESS);
 			return false;
 		}
 
-		if (!validPlayer(player, player, getCompType(), false))
+		if(!validPlayer(player, player, getCompType(), false))
 			return false;
 
-		if (getParticipantPoints(player.getObjectId()) == 0)
+		if(getParticipantPoints(player.getObjectId()) == 0)
 			return false;
 
-		if (player.getOlympiadGame() != null)
+		if(player.getOlympiadGame() != null)
 			return false;
 
 		registeredParticipants.add(player.getObjectId());
 
-		if (Config.ALT_OLY_BY_SAME_BOX_NUMBER > 0)
+		if(Config.ALT_OLY_BY_SAME_BOX_NUMBER > 0)
 			_playersHWID.put(player.getObjectId(), player.getNetConnection().getHWID()); // put player ID and HWID
 
-		switch (getCompType())
+		switch(getCompType())
 		{
 			case TEAM:
 			{
@@ -351,83 +350,83 @@ public class Olympiad
 
 	public static boolean validPlayer(Player sendPlayer, Player validPlayer, CompType compType, boolean gameValidation)
 	{
-		if (validPlayer.getLevel() < Config.OLYMPIAD_MIN_LEVEL) // TODO: [Bonux] Добавить сообщение, если такое есть.
+		if(validPlayer.getLevel() < Config.OLYMPIAD_MIN_LEVEL) // TODO: [Bonux] Добавить сообщение, если такое есть.
 			return false;
 
-		if (validPlayer.getClassId().getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()) // TODO: [Bonux] Добавить
-																								// сообщение, если такое
-																								// есть.
+		if(validPlayer.getClassId().getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()) // TODO: [Bonux] Добавить
+			// сообщение, если такое
+			// есть.
 			return false;
 
-		if (!validPlayer.isBaseClassActive())
+		if(!validPlayer.isBaseClassActive())
 		{
 			sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_DOES_NOT_MEET_THE_PARTICIPATION_REQUIREMENTS_SUBCLASS_CHARACTER_CANNOT_PARTICIPATE_IN_THE_OLYMPIAD).addName(validPlayer));
 			return false;
 		}
 
-		if (validPlayer.isFishing())
+		if(validPlayer.isFishing())
 		{
-			if (validPlayer == sendPlayer) // TODO: А какое сообщение отправлять противнику?
+			if(validPlayer == sendPlayer) // TODO: А какое сообщение отправлять противнику?
 				sendPlayer.sendPacket(SystemMsg.YOU_CANNOT_PARTICIPATE_IN_THE_OLYMPIAD_WHILE_FISHING);
 			return false;
 		}
 
-		if (validPlayer.isInTrainingCamp())
+		if(validPlayer.isInTrainingCamp())
 		{
 			sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_CURRENTLY_IN_THE_ROYAL_TRAINING_CAMP_AND_CANNOT_PARTICIPATE_IN_THE_OLYMPIAD).addName(validPlayer));
 			return false;
 		}
 
-		if (validPlayer.containsEvent(SingleMatchEvent.class))
+		if(validPlayer.containsEvent(SingleMatchEvent.class))
 		{
-			if (validPlayer == sendPlayer) // TODO: А какое сообщение отправлять противнику?
+			if(validPlayer == sendPlayer) // TODO: А какое сообщение отправлять противнику?
 				sendPlayer.sendPacket(SystemMsg.YOU_CANNOT_BE_SIMULTANEOUSLY_REGISTERED_FOR_PVP_MATCHES_SUCH_AS_THE_OLYMPIAD_UNDERGROUND_COLISEUM_AERIAL_CLEFT_KRATEIS_CUBE_AND_HANDYS_BLOCK_CHECKERS);
 			return false;
 		}
 
-		if (validPlayer.isRegisteredInEvent())
+		if(validPlayer.isRegisteredInEvent())
 		{
 			sendPlayer.sendMessage(new CustomMessage("l2s.gameserver.model.entity.Olympiad.isRegisteredInEvent"));
 			return false;
 		}
 
-		if (!gameValidation)
+		if(!gameValidation)
 		{
 			int gamesLeft = getGamesLeft(validPlayer.getObjectId());
 
-			switch (compType)
+			switch(compType)
 			{
 				case TEAM:
-					if (registeredParticipants.contains(validPlayer.getObjectId()))
+					if(registeredParticipants.contains(validPlayer.getObjectId()))
 					{
 						sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_REGISTERED_ON_THE_MATCH_WAITING_LIST).addName(validPlayer));
 						return false;
 					}
-					if (gamesLeft <= 0)
+					if(gamesLeft <= 0)
 					{
 						validPlayer.sendPacket(SystemMsg.YOUVE_USED_UP_ALL_YOUR_MATCHES);
 						return false;
 					}
 					break;
 				case CLASSED:
-					if (registeredParticipants.contains(validPlayer.getObjectId()))
+					if(registeredParticipants.contains(validPlayer.getObjectId()))
 					{
 						sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_REGISTERED_ON_THE_CLASS_MATCH_WAITING_LIST).addName(validPlayer));
 						return false;
 					}
-					if (gamesLeft <= 0)
+					if(gamesLeft <= 0)
 					{
 						validPlayer.sendPacket(SystemMsg.THE_TOTAL_NUMBER_OF_MATCHES_THAT_CAN_BE_ENTERED_IN_1_WEEK_IS_60_CLASS_IRRELEVANT_INDIVIDUAL_MATCHES_30_SPECIFIC_MATCHES_AND_10_TEAM_MATCHES);
 						return false;
 					}
 					break;
 				case NON_CLASSED:
-					if (registeredParticipants.contains(validPlayer.getObjectId()))
+					if(registeredParticipants.contains(validPlayer.getObjectId()))
 					{
 						sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_REGISTERED_ON_THE_WAITING_LIST_FOR_THE_CLASS_IRRELEVANT_INDIVIDUAL_MATCH).addName(validPlayer));
 						return false;
 					}
-					if (gamesLeft <= 0)
+					if(gamesLeft <= 0)
 					{
 						validPlayer.sendPacket(SystemMsg.THE_TOTAL_NUMBER_OF_MATCHES_THAT_CAN_BE_ENTERED_IN_1_WEEK_IS_60_CLASS_IRRELEVANT_INDIVIDUAL_MATCHES_30_SPECIFIC_MATCHES_AND_10_TEAM_MATCHES);
 						return false;
@@ -435,13 +434,13 @@ public class Olympiad
 					break;
 			}
 
-			if (gamesLeft <= 0)
+			if(gamesLeft <= 0)
 			{
 				validPlayer.sendPacket(SystemMsg.THE_MAXIMUM_MATCHES_YOU_CAN_PARTICIPATE_IN_1_WEEK_IS_70);
 				return false;
 			}
 
-			if (isRegisteredInComp(validPlayer))
+			if(isRegisteredInComp(validPlayer))
 			{
 				sendPlayer.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_REGISTERED_ON_THE_MATCH_WAITING_LIST).addName(validPlayer));
 				return false;
@@ -457,15 +456,15 @@ public class Olympiad
 		_playersHWID.remove(player.getObjectId()); // obj id? remove by key
 
 		OlympiadGame game = player.getOlympiadGame();
-		if (game != null)
+		if(game != null)
 		{
 			try
 			{
 				game.logoutPlayer(player);
-				if (!game.isValidated())
+				if(!game.isValidated())
 					game.endGame(20000, true);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -474,22 +473,22 @@ public class Olympiad
 
 	public static synchronized boolean unregisterParticipant(Player player)
 	{
-		if (!_inCompPeriod || _isOlympiadEnd)
+		if(!_inCompPeriod || _isOlympiadEnd)
 		{
 			player.sendPacket(SystemMsg.THE_GRAND_OLYMPIAD_GAMES_ARE_NOT_CURRENTLY_IN_PROGRESS);
 			return false;
 		}
 
-		if (!isRegistered(player, true))
+		if(!isRegistered(player, true))
 		{
 			player.sendPacket(SystemMsg.YOU_ARE_NOT_CURRENTLY_REGISTERED_FOR_THE_GRAND_OLYMPIAD);
 			return false;
 		}
 
 		OlympiadGame game = player.getOlympiadGame();
-		if (game != null)
+		if(game != null)
 		{
-			if (game.getStatus() == BattleStatus.Begin_Countdown)
+			if(game.getStatus() == BattleStatus.Begin_Countdown)
 			{
 				// TODO: System Message
 				// TODO [VISTALL] узнать ли прерывается бой и если так ли это та мессага
@@ -501,10 +500,10 @@ public class Olympiad
 			try
 			{
 				game.logoutPlayer(player);
-				if (!game.isValidated())
+				if(!game.isValidated())
 					game.endGame(20000, true);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -590,9 +589,9 @@ public class Olympiad
 
 	private static long getMillisToCompBegin()
 	{
-		if (_compStart.getTimeInMillis() < System.currentTimeMillis())
+		if(_compStart.getTimeInMillis() < System.currentTimeMillis())
 		{
-			if (_compEnd > System.currentTimeMillis())
+			if(_compEnd > System.currentTimeMillis())
 				return 10L;
 
 			return setNewCompBegin();
@@ -604,7 +603,7 @@ public class Olympiad
 	{
 		long compStart1x1 = Config.OLYMPIAD_START_TIME_1x1.next(System.currentTimeMillis() - Config.ALT_OLY_CPERIOD);
 		long compEnd1x1 = compStart1x1 + Config.ALT_OLY_CPERIOD;
-		if (compEnd1x1 < System.currentTimeMillis())
+		if(compEnd1x1 < System.currentTimeMillis())
 		{
 			compStart1x1 = Config.OLYMPIAD_START_TIME_1x1.next(System.currentTimeMillis());
 			compEnd1x1 = _compStart.getTimeInMillis() + Config.ALT_OLY_CPERIOD;
@@ -612,13 +611,13 @@ public class Olympiad
 
 		long compStart3x3 = Config.OLYMPIAD_START_TIME_3x3.next(System.currentTimeMillis() - Config.ALT_OLY_CPERIOD);
 		long compEnd3x3 = compStart3x3 + Config.ALT_OLY_CPERIOD;
-		if (compEnd3x3 < System.currentTimeMillis())
+		if(compEnd3x3 < System.currentTimeMillis())
 		{
 			compStart3x3 = Config.OLYMPIAD_START_TIME_3x3.next(System.currentTimeMillis());
 			compEnd3x3 = _compStart.getTimeInMillis() + Config.ALT_OLY_CPERIOD;
 		}
 
-		if (compStart1x1 > compStart3x3)
+		if(compStart1x1 > compStart3x3)
 		{
 			_compStart.setTimeInMillis(compStart3x3);
 			_compEnd = compEnd3x3;
@@ -628,7 +627,7 @@ public class Olympiad
 		{
 			_compStart.setTimeInMillis(compStart1x1);
 			_compEnd = compEnd1x1;
-			if (isClassedBattlesAllowed())
+			if(isClassedBattlesAllowed())
 				compType = CompType.CLASSED;
 			else
 				compType = CompType.NON_CLASSED;
@@ -666,10 +665,10 @@ public class Olympiad
 
 	public static synchronized void doWeekTasks()
 	{
-		if (isValidationPeriod())
+		if(isValidationPeriod())
 			return;
 
-		for (IntObjectPair<OlympiadParticipiantData> entry : _participants.entrySet())
+		for(IntObjectPair<OlympiadParticipiantData> entry : _participants.entrySet())
 		{
 			OlympiadParticipiantData data = entry.getValue();
 			data.setPoints(data.getPoints() + Config.OLYMPIAD_POINTS_WEEKLY);
@@ -678,7 +677,7 @@ public class Olympiad
 			data.setTeamGamesCount(0);
 
 			Player player = GameObjectsStorage.getPlayer(entry.getKey());
-			if (player != null)
+			if(player != null)
 				player.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_EARNED_S2_POINTS_IN_THE_GRAND_OLYMPIAD_GAMES).addName(player).addInteger(Config.OLYMPIAD_POINTS_WEEKLY));
 		}
 	}
@@ -690,25 +689,26 @@ public class Olympiad
 
 	public static synchronized void addObserver(int id, Player observer)
 	{
-		if (observer.getOlympiadGame() != null || isRegistered(observer, false) || Olympiad.isRegisteredInComp(observer))
+		if(observer.getOlympiadGame() != null || isRegistered(observer, false) || Olympiad.isRegisteredInComp(observer))
 		{
 			observer.sendPacket(SystemMsg.YOU_MAY_NOT_OBSERVE_A_GRAND_OLYMPIAD_GAMES_MATCH_WHILE_YOU_ARE_ON_THE_WAITING_LIST);
 			return;
 		}
 
-		if (_manager == null || _manager.getGame(id) == null || _manager.getGame(id).getStatus() == BattleStatus.Begining || _manager.getGame(id).getStatus() == BattleStatus.Begin_Countdown)
+		if(_manager == null || _manager.getGame(id) == null || _manager.getGame(id).getStatus() == BattleStatus.Begining
+				|| _manager.getGame(id).getStatus() == BattleStatus.Begin_Countdown)
 		{
 			observer.sendPacket(SystemMsg.THE_GRAND_OLYMPIAD_GAMES_ARE_NOT_CURRENTLY_IN_PROGRESS);
 			return;
 		}
 
-		if (observer.isInCombat() || observer.getPvpFlag() > 0 || observer.containsEvent(SingleMatchEvent.class))
+		if(observer.isInCombat() || observer.getPvpFlag() > 0 || observer.containsEvent(SingleMatchEvent.class))
 		{
 			observer.sendPacket(SystemMsg.YOU_CANNOT_OBSERVE_WHILE_YOU_ARE_IN_COMBAT);
 			return;
 		}
 
-		for (Servitor servitor : observer.getServitors())
+		for(Servitor servitor : observer.getServitors())
 			servitor.unSummon(false);
 
 		observer.enterArenaObserverMode(getOlympiadGame(id));
@@ -716,7 +716,7 @@ public class Olympiad
 
 	public static synchronized void removeObserver(int id, ObservePoint observer)
 	{
-		if (_manager == null || _manager.getGame(id) == null)
+		if(_manager == null || _manager.getGame(id) == null)
 			return;
 
 		_manager.getGame(id).removeObserver(observer);
@@ -724,21 +724,21 @@ public class Olympiad
 
 	public static List<ObservePoint> getObservers(int id)
 	{
-		if (_manager == null || _manager.getGame(id) == null)
+		if(_manager == null || _manager.getGame(id) == null)
 			return null;
 		return _manager.getGame(id).getObservers();
 	}
 
 	public static OlympiadGame getOlympiadGame(int gameId)
 	{
-		if (_manager == null || gameId < 0)
+		if(_manager == null || gameId < 0)
 			return null;
 		return _manager.getGame(gameId);
 	}
 
 	public static synchronized int getWaitingList()
 	{
-		if (!inCompPeriod())
+		if(!inCompPeriod())
 			return 0;
 
 		return registeredParticipants.size();
@@ -749,15 +749,15 @@ public class Olympiad
 		int objId = player.getObjectId();
 
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 
 		int points = participant.getPointsPast();
-		if (points == 0) // Уже получил бонус
+		if(points == 0) // Уже получил бонус
 			return 0;
 
 		int rank = _participantRank.get(objId) - 1;
-		switch (rank)
+		switch(rank)
 		{
 			case 0: // Герой
 			case 1:
@@ -776,10 +776,10 @@ public class Olympiad
 				points = Config.ALT_OLY_RANK5_POINTS;
 		}
 
-		if (Hero.getInstance().isInactiveHero(player.getObjectId()) || Hero.getInstance().isHero(player.getObjectId()))
+		if(Hero.getInstance().isInactiveHero(player.getObjectId()) || Hero.getInstance().isHero(player.getObjectId()))
 			points += Config.ALT_OLY_HERO_POINTS;
 
-		if (remove)
+		if(remove)
 		{
 			participant.setPointsPast(0);
 			OlympiadDatabase.saveParticipantData(objId);
@@ -790,7 +790,7 @@ public class Olympiad
 
 	public static synchronized int getRank(Player player)
 	{
-		if (_participantRank.containsKey(player.getObjectId()))
+		if(_participantRank.containsKey(player.getObjectId()))
 			return _participantRank.get(player.getObjectId());
 		return 0;
 	}
@@ -802,26 +802,26 @@ public class Olympiad
 
 	public static synchronized boolean isRegistered(Player player, boolean unregister)
 	{
-		if (registeredParticipants.contains(player.getObjectId()))
+		if(registeredParticipants.contains(player.getObjectId()))
 			return true;
 
-		if (Config.ALT_OLY_BY_SAME_BOX_NUMBER > 0 && !unregister) // for unregister we won't count anything
+		if(Config.ALT_OLY_BY_SAME_BOX_NUMBER > 0 && !unregister) // for unregister we won't count anything
 		{
 			GameClient client = player.getNetConnection();
-			if (client == null)
+			if(client == null)
 				return true;
 
 			String playerHWID = client.getHWID();
-			if (StringUtils.isEmpty(playerHWID) || !_playersHWID.containsValue(playerHWID))
+			if(StringUtils.isEmpty(playerHWID) || !_playersHWID.containsValue(playerHWID))
 				return false;
 
 			int boxesCount = 0;
-			for (String hwid : _playersHWID.values())
+			for(String hwid : _playersHWID.values())
 			{
-				if (hwid != null && hwid.equals(playerHWID))
+				if(hwid != null && hwid.equals(playerHWID))
 					boxesCount++;
 			}
-			if (boxesCount >= Config.ALT_OLY_BY_SAME_BOX_NUMBER)
+			if(boxesCount >= Config.ALT_OLY_BY_SAME_BOX_NUMBER)
 			{
 				player.sendMessage(new CustomMessage("l2s.gameserver.model.entity.Olympiad.isRegistered.ActiveBoxesLimit").addNumber(Config.ALT_OLY_BY_SAME_BOX_NUMBER));
 				return true;
@@ -832,12 +832,12 @@ public class Olympiad
 
 	public static synchronized boolean isRegisteredInComp(Player player)
 	{
-		if (isRegistered(player, false))
+		if(isRegistered(player, false))
 			return true;
-		if (_manager == null || _manager.getGames() == null)
+		if(_manager == null || _manager.getGames() == null)
 			return false;
-		for (OlympiadGame g : _manager.getGames())
-			if (g != null && g.isRegistered(player.getObjectId()))
+		for(OlympiadGame g : _manager.getGames())
+			if(g != null && g.isRegistered(player.getObjectId()))
 				return true;
 		return false;
 	}
@@ -851,7 +851,7 @@ public class Olympiad
 	public static synchronized int getParticipantPoints(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getPoints();
 	}
@@ -865,7 +865,7 @@ public class Olympiad
 	public static synchronized int getParticipantPointsPast(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getPointsPast();
 	}
@@ -873,7 +873,7 @@ public class Olympiad
 	public static synchronized int getCompetitionDone(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getCompDone();
 	}
@@ -881,7 +881,7 @@ public class Olympiad
 	public static synchronized int getCompetitionWin(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getCompWin();
 	}
@@ -889,7 +889,7 @@ public class Olympiad
 	public static synchronized int getCompetitionLoose(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getCompLoose();
 	}
@@ -922,7 +922,7 @@ public class Olympiad
 	public static void changeParticipantName(int objId, String newName)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return;
 		participant.setName(newName);
 		OlympiadDatabase.saveParticipantData(objId);
@@ -931,7 +931,7 @@ public class Olympiad
 	public static String getParticipantName(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return null;
 		return participant.getName();
 	}
@@ -939,7 +939,7 @@ public class Olympiad
 	public static int getParticipantClass(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return 0;
 		return participant.getClassId();
 	}
@@ -947,7 +947,7 @@ public class Olympiad
 	public static void manualSetParticipantPoints(int objId, int points)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return;
 		participant.setPoints(points);
 		OlympiadDatabase.saveParticipantData(objId);
@@ -956,12 +956,12 @@ public class Olympiad
 	public static int convertParticipantClassId(int baseClassId)
 	{
 		ClassId classId = ClassId.valueOf(baseClassId);
-		if (classId.getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()) // Если это не 2-я профа или 3-я профа, то
-																				// исправляем со N-й на 2-ю.
+		if(classId.getClassLevel().ordinal() < ClassLevel.SECOND.ordinal()) // Если это не 2-я профа или 3-я профа, то
+		// исправляем со N-й на 2-ю.
 		{
-			for (ClassId id : ClassId.VALUES)
+			for(ClassId id : ClassId.VALUES)
 			{
-				if (id.isOfLevel(ClassLevel.SECOND) && id.childOf(classId))
+				if(id.isOfLevel(ClassLevel.SECOND) && id.childOf(classId))
 					return id.getId();
 			}
 		}
@@ -976,9 +976,9 @@ public class Olympiad
 	public static synchronized OlympiadParticipiantData createParticipant(Player player)
 	{
 		OlympiadParticipiantData participantData = getParticipantInfo(player.getObjectId());
-		if (participantData == null)
+		if(participantData == null)
 		{
-			if (canParticipate(player))
+			if(canParticipate(player))
 			{
 				participantData = new OlympiadParticipiantData(player.getObjectId(), player.getName(), player.getBaseClassId());
 				participantData.setPoints(Config.OLYMPIAD_POINTS_DEFAULT);
@@ -991,13 +991,13 @@ public class Olympiad
 
 	public static synchronized void addParticipant(OlympiadParticipiantData participantData)
 	{
-		if (_participants.put(participantData.getObjectId(), participantData) != participantData)
+		if(_participants.put(participantData.getObjectId(), participantData) != participantData)
 			OlympiadDatabase.saveParticipantData(participantData.getObjectId());
 	}
 
 	public static synchronized void removeParticipant(Player participant)
 	{
-		if (_participants.remove(participant.getObjectId()) != null)
+		if(_participants.remove(participant.getObjectId()) != null)
 			OlympiadDatabase.deleteParticipantData(participant.getObjectId());
 	}
 
@@ -1013,18 +1013,12 @@ public class Olympiad
 
 	public static boolean canShowHud(Player player)
 	{
-		if (!Olympiad.isRegistrationActive())
-		{
-			return false;
-		}
-		if (!Olympiad.isParticipant(player))
-		{
-			return false;
-		}
-		if (player.isInOlympiadMode())
-		{
-			return false;
-		}
+		if(!Olympiad.isRegistrationActive())
+		{ return false; }
+		if(!Olympiad.isParticipant(player))
+		{ return false; }
+		if(player.isInOlympiadMode())
+		{ return false; }
 		return true;
 	}
 
@@ -1036,7 +1030,7 @@ public class Olympiad
 	public static int getGamesLeft(int objId)
 	{
 		OlympiadParticipiantData participant = getParticipantInfo(objId);
-		if (participant == null)
+		if(participant == null)
 			return Config.OLYMPIAD_GAME_MAX_LIMIT;
 		return Config.OLYMPIAD_GAME_MAX_LIMIT - participant.getDailyGameCount();
 	}

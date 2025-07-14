@@ -59,7 +59,7 @@ public abstract class ShortCutPacket implements IClientOutgoingPacket
 		private int _variation1Id;
 		private int _variation2Id;
 		private int _variation3Id;
-		
+
 		public ItemShortcutInfo(ShortCut.ShortCutType type, int page, boolean autoUse, int id, int reuseGroup, int currentReuse, int basicReuse, int variation1Id, int variation2Id, int variation3Id, int characterType)
 		{
 			super(type, page, autoUse, id, characterType);

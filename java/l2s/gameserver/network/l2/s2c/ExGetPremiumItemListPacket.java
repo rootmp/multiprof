@@ -22,7 +22,7 @@ public class ExGetPremiumItemListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeQ(_list.length);
-		for (PremiumItem premiumItem : _list)
+		for(PremiumItem premiumItem : _list)
 		{
 			packetWriter.writeD(_objectId);
 			packetWriter.writeQ(premiumItem.getItemCount());

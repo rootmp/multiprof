@@ -18,10 +18,10 @@ public class NpcStatsChangeRecorder extends CharStatsChangeRecorder<NpcInstance>
 	{
 		super.onSendChanges();
 
-		if ((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO)
+		if((_changes & BROADCAST_CHAR_INFO) == BROADCAST_CHAR_INFO || (_changes & FORCE_BROADCAST_CHAR_INFO) == FORCE_BROADCAST_CHAR_INFO)
 			_activeChar.broadcastCharInfo();
 
-		if ((_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO || (_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
+		if((_changes & SEND_ABNORMAL_INFO) == SEND_ABNORMAL_INFO || (_changes & SEND_TRANSFORMATION_INFO) == SEND_TRANSFORMATION_INFO)
 			_activeChar.broadcastPacket(new NpcInfoAbnormalVisualEffect(_activeChar));
 	}
 }

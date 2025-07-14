@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.CommandChannel;
 import l2s.gameserver.model.Party;
@@ -29,22 +30,22 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isProcessingRequest())
+		if(activeChar.isProcessingRequest())
 		{
 			activeChar.sendPacket(SystemMsg.WAITING_FOR_ANOTHER_REPLY);
 			return;
 		}
 
-		if (!activeChar.isInParty())
+		if(!activeChar.isInParty())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_AUTHORITY_TO_INVITE_SOMEONE_TO_THE_COMMAND_CHANNEL);
 			return;
@@ -53,14 +54,14 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 		Player target = World.getPlayer(_name);
 
 		// Чар с таким именем не найден в мире
-		if (target == null)
+		if(target == null)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_CURRENTLY_ONLINE);
 			return;
 		}
 
 		// Нельзя приглашать безпартийных или члена своей партии
-		if (activeChar == target || !target.isInParty() || activeChar.getParty() == target.getParty())
+		if(activeChar == target || !target.isInParty() || activeChar.getParty() == target.getParty())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_INVITED_THE_WRONG_TARGET);
 			return;
@@ -68,34 +69,34 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 
 		// Если приглашен в СС не лидер партии, то посылаем приглашение лидеру его
 		// партии
-		if (target.isInParty() && !target.getParty().isLeader(target))
+		if(target.isInParty() && !target.getParty().isLeader(target))
 			target = target.getParty().getPartyLeader();
 
-		if (target == null)
+		if(target == null)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_CURRENTLY_ONLINE);
 			return;
 		}
 
-		if (target.getParty().isInCommandChannel())
+		if(target.getParty().isInCommandChannel())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1S_PARTY_IS_ALREADY_A_MEMBER_OF_THE_COMMAND_CHANNEL).addName(target));
 			return;
 		}
 
-		if (target.isBusy())
+		if(target.isBusy())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addName(target));
 			return;
 		}
 
-		if (target.isInTrainingCamp())
+		if(target.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (target.isInFightClub() && !target.getFightClubEvent().canReceiveInvitations(activeChar, target))
+		if(target.isInFightClub() && !target.getFightClubEvent().canReceiveInvitations(activeChar, target))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addString(target.getName()));
 			return;
@@ -103,11 +104,11 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 
 		Party activeParty = activeChar.getParty();
 
-		if (activeParty.isInCommandChannel())
+		if(activeParty.isInCommandChannel())
 		{
 			// Приглашение в уже существующий СС
 			// Приглашать в СС может только лидер CC
-			if (activeParty.getCommandChannel().getChannelLeader() != activeChar)
+			if(activeParty.getCommandChannel().getChannelLeader() != activeChar)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_AUTHORITY_TO_INVITE_SOMEONE_TO_THE_COMMAND_CHANNEL);
 				return;
@@ -116,8 +117,8 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 			sendInvite(activeChar, target);
 		}
 		else // СС еще не существует. Отсылаем запрос на инвайт и в случае согласия создаем
-				// канал
-		if (CommandChannel.checkAuthority(activeChar))
+					// канал
+		if(CommandChannel.checkAuthority(activeChar))
 			sendInvite(activeChar, target);
 	}
 
@@ -126,6 +127,6 @@ public class RequestExMPCCAskJoin implements IClientIncomingPacket
 		new Request(L2RequestType.CHANNEL, requestor, target).setTimeout(10000L);
 		target.sendPacket(new ExAskJoinMPCCPacket(requestor.getName()));
 		requestor.sendMessage("You invited " + target.getName() + " to your Command Channel."); // TODO [G1ta0] custom
-																								// message
+		// message
 	}
 }

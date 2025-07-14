@@ -51,24 +51,23 @@ public class PartySubstituteManager extends SteppingRunnableQueueManager
 		ThreadPoolManager.getInstance().scheduleAtFixedRate(this, 10000L, 10000L);
 		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> PartySubstituteManager.this.purge(), 60000L, 60000L);
 
-		scheduleAtFixedRate(() ->
-		{
-			if (!waitingMembers.isEmpty() && !waitingPlayers.isEmpty())
+		scheduleAtFixedRate(() -> {
+			if(!waitingMembers.isEmpty() && !waitingPlayers.isEmpty())
 			{
-				for (Player player : waitingMembers)
+				for(Player player : waitingMembers)
 				{
-					if (player == null || !player.isOnline() || player.getRequest() != null)
+					if(player == null || !player.isOnline() || player.getRequest() != null)
 						continue;
 
-					if (!player.isPartySubstituteStarted() || player.getParty() == null)
+					if(!player.isPartySubstituteStarted() || player.getParty() == null)
 						continue;
 
-					for (Player wait : waitingPlayers)
+					for(Player wait : waitingPlayers)
 					{
-						if (wait == null || wait.getParty() != null || wait.getRequest() != null)
+						if(wait == null || wait.getParty() != null || wait.getRequest() != null)
 							continue;
 
-						if (wait.getClassId() == player.getClassId() && wait.getLevel() == player.getLevel())
+						if(wait.getClassId() == player.getClassId() && wait.getLevel() == player.getLevel())
 						{
 							// player.getParty().getPartyLeader().sendMessage("finded new member
 							// "+wait.getPlayer().getName());
@@ -86,14 +85,13 @@ public class PartySubstituteManager extends SteppingRunnableQueueManager
 
 	public Future<?> SubstituteSearchTask(final Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return null;
 
 		waitingMembers.add(player);
-		return schedule(() ->
-		{
+		return schedule(() -> {
 			waitingMembers.remove(player);
-			if (player.getParty() != null)
+			if(player.getParty() != null)
 			{
 				// player.getParty().getPartyLeader().sendPacket(new
 				// ExTimeOverPartySubstitute(player.getObjectId()));

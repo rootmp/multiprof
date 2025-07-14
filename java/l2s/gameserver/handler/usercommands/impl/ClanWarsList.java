@@ -17,18 +17,17 @@ import l2s.gameserver.network.l2.s2c.SystemMessage;
  */
 public class ClanWarsList implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		88,
-		89,
-		90
+	private static final int[] COMMAND_IDS = {
+			88,
+			89,
+			90
 	};
 
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 		{
 			activeChar.sendPacket(SystemMsg.NOT_JOINED_IN_ANY_CLAN);
 			return false;
@@ -36,52 +35,52 @@ public class ClanWarsList implements IUserCommandHandler
 
 		SystemMessage sm;
 		List<Clan> data = new ArrayList<Clan>();
-		if (id == 88)
+		if(id == 88)
 		{
 			// attack list
 			activeChar.sendPacket(SystemMsg.CLANS_YOUVE_DECLARED_WAR_ON);
 
-			for (ClanWar war : clan.getWars().valueCollection())
+			for(ClanWar war : clan.getWars().valueCollection())
 			{
-				if (war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isAttacker(clan))
+				if(war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isAttacker(clan))
 					continue;
 
 				Clan opposingClan = war.getAttackedClan();
-				if (opposingClan == null)
+				if(opposingClan == null)
 					continue;
 
 				data.add(opposingClan);
 			}
 		}
-		else if (id == 89)
+		else if(id == 89)
 		{
 			// under attack list
 			activeChar.sendPacket(SystemMsg.CLANS_THAT_HAVE_DECLARED_WAR_ON_YOU);
 
-			for (ClanWar war : clan.getWars().valueCollection())
+			for(ClanWar war : clan.getWars().valueCollection())
 			{
-				if (war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isAttacked(clan))
+				if(war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isAttacked(clan))
 					continue;
 
 				Clan attackerClan = war.getAttackerClan();
-				if (attackerClan == null)
+				if(attackerClan == null)
 					continue;
 
 				data.add(attackerClan);
 			}
 		}
-		else if (id == 90)
+		else if(id == 90)
 		{
 			// war list
 			activeChar.sendPacket(SystemMsg.WAR_LIST);
 
-			for (ClanWar war : clan.getWars().valueCollection())
+			for(ClanWar war : clan.getWars().valueCollection())
 			{
-				if (war.getPeriod() != ClanWarPeriod.MUTUAL)
+				if(war.getPeriod() != ClanWarPeriod.MUTUAL)
 					continue;
 
 				Clan opposingClan = war.getOpposingClan(clan);
-				if (opposingClan == null)
+				if(opposingClan == null)
 					continue;
 
 				data.add(opposingClan);
@@ -90,11 +89,11 @@ public class ClanWarsList implements IUserCommandHandler
 		else
 			return false;
 
-		for (Clan c : data)
+		for(Clan c : data)
 		{
 			String clanName = c.getName();
 			Alliance alliance = c.getAlliance();
-			if (alliance != null)
+			if(alliance != null)
 				sm = new SystemMessage(SystemMessage.S1_S2_ALLIANCE).addString(clanName).addString(alliance.getAllyName());
 			else
 				sm = new SystemMessage(SystemMessage.S1_NO_ALLIANCE_EXISTS).addString(clanName);

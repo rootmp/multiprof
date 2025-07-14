@@ -40,28 +40,28 @@ public class SubClassList implements Iterable<SubClass>
 		_listByClassId.clear();
 
 		List<SubClass> subclasses = CharacterSubclassDAO.getInstance().restore(_owner);
-		if (subclasses.isEmpty())
+		if(subclasses.isEmpty())
 		{
 			_log.warn("SubClassList:restore: Could not restore any sub-classes! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 			return false;
 		}
 
 		int index = 2;
-		for (SubClass sub : subclasses)
+		for(SubClass sub : subclasses)
 		{
-			if (sub == null) // Невозможно, но хай будет.
+			if(sub == null) // Невозможно, но хай будет.
 				continue;
 
-			if (size() >= MAX_SUB_COUNT)
+			if(size() >= MAX_SUB_COUNT)
 			{
 				_log.warn("SubClassList:restore: Limit is subclass! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 				break;
 			}
 
-			if (sub.isActive())
+			if(sub.isActive())
 				_activeSubClass = sub;
 
-			if (sub.isBase())
+			if(sub.isBase())
 			{
 				_baseSubClass = sub;
 				sub.setIndex(1);
@@ -72,29 +72,30 @@ public class SubClassList implements Iterable<SubClass>
 				index++;
 			}
 
-			if (_listByIndex.containsKey(sub.getIndex()))
+			if(_listByIndex.containsKey(sub.getIndex()))
 				_log.warn("SubClassList:restore: Duplicate index in player subclasses! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 			_listByIndex.put(sub.getIndex(), sub);
 
-			if (_listByClassId.containsKey(sub.getClassId()))
+			if(_listByClassId.containsKey(sub.getClassId()))
 				_log.warn("SubClassList:restore: Duplicate class_id in player subclasses! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 			_listByClassId.put(sub.getClassId(), sub);
 		}
 
-		if (_baseSubClass == null)
+		if(_baseSubClass == null)
 		{
 			_log.warn("SubClassList:restore: Could not restore base sub-class! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 			return false;
 		}
 
-		if (_activeSubClass == null)
+		if(_activeSubClass == null)
 		{
 			_activeSubClass = _baseSubClass;
 			_activeSubClass.setActive(true);
-			_log.warn("SubClassList:restore: Could not restore active sub-class! Base class applied to active sub-class. Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
+			_log.warn("SubClassList:restore: Could not restore active sub-class! Base class applied to active sub-class. Player: " + _owner.getName() + "("
+					+ _owner.getObjectId() + ")");
 		}
 
-		if (_listByIndex.size() != _listByClassId.size()) // Невозможно, но хай будет.
+		if(_listByIndex.size() != _listByClassId.size()) // Невозможно, но хай будет.
 			_log.warn("SubClassList:restore: The size of the lists do not match! Player: " + _owner.getName() + "(" + _owner.getObjectId() + ")");
 
 		return true;
@@ -123,7 +124,7 @@ public class SubClassList implements Iterable<SubClass>
 
 	public void removeByClassId(int classId)
 	{
-		if (!_listByClassId.containsKey(classId))
+		if(!_listByClassId.containsKey(classId))
 			return;
 
 		int index = _listByClassId.get(classId).getIndex();
@@ -153,10 +154,10 @@ public class SubClassList implements Iterable<SubClass>
 
 	public boolean changeSubClassId(int oldClassId, int newClassId)
 	{
-		if (!_listByClassId.containsKey(oldClassId))
+		if(!_listByClassId.containsKey(oldClassId))
 			return false;
 
-		if (_listByClassId.containsKey(newClassId))
+		if(_listByClassId.containsKey(newClassId))
 			return false;
 
 		SubClass sub = _listByClassId.get(oldClassId);
@@ -169,17 +170,17 @@ public class SubClassList implements Iterable<SubClass>
 
 	public boolean add(SubClass sub)
 	{
-		if (sub == null)
+		if(sub == null)
 			return false;
 
-		if (size() >= MAX_SUB_COUNT)
+		if(size() >= MAX_SUB_COUNT)
 			return false;
 
-		if (_listByClassId.containsKey(sub.getClassId()))
+		if(_listByClassId.containsKey(sub.getClassId()))
 			return false;
 
 		int index = 1;
-		while (_listByIndex.containsKey(index))
+		while(_listByIndex.containsKey(index))
 			index++;
 
 		sub.setIndex(index);
@@ -192,10 +193,10 @@ public class SubClassList implements Iterable<SubClass>
 	public SubClass changeActiveSubClass(int classId)
 	{
 		SubClass sub = _listByClassId.get(classId);
-		if (sub == null)
+		if(sub == null)
 			return null;
 
-		if (_activeSubClass != null)
+		if(_activeSubClass != null)
 			_activeSubClass.setActive(false);
 
 		sub.setActive(true);

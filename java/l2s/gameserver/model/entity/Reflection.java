@@ -23,6 +23,7 @@ import org.napile.primitive.maps.impl.HashIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.listener.Listener;
 import l2s.commons.listener.ListenerList;
 import l2s.gameserver.ThreadPoolManager;
@@ -68,16 +69,14 @@ import l2s.gameserver.templates.ZoneTemplate;
 import l2s.gameserver.templates.spawn.SpawnTemplate;
 import l2s.gameserver.utils.NpcUtils;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 public class Reflection
 {
 	public class ReflectionListenerList extends ListenerList<Reflection>
 	{
 		public void onCollapse()
 		{
-			if (!getListeners().isEmpty())
-				for (Listener<Reflection> listener : getListeners())
+			if(!getListeners().isEmpty())
+				for(Listener<Reflection> listener : getListeners())
 					((OnReflectionCollapseListener) listener).onReflectionCollapse(Reflection.this);
 		}
 	}
@@ -93,9 +92,9 @@ public class Reflection
 	private final int _geoIndex;
 
 	private Location _resetLoc; // место, к которому кидает при использовании SoE/unstuck, иначе выбрасывает в
-								// основной мир
+	// основной мир
 	private Location _returnLoc; // если не прописано reset, но прописан return, то телепортит туда, одновременно
-									// перемещая в основной мир
+	// перемещая в основной мир
 	private Location _teleportLoc; // точка входа
 
 	protected Set<Spawner> _spawns = new HashSet<Spawner>();
@@ -232,9 +231,9 @@ public class Reflection
 
 	public void addZone(Zone zone)
 	{
-		if (zone.getReflection() == this)
+		if(zone.getReflection() == this)
 		{
-			if (_zones.isEmpty())
+			if(_zones.isEmpty())
 				_zones = new HashMap<String, Zone>();
 			_zones.put(zone.getName(), zone);
 		}
@@ -252,7 +251,7 @@ public class Reflection
 	 */
 	public void startCollapseTimer(int minutes, boolean message)
 	{
-		if (isDefault())
+		if(isDefault())
 		{
 			new Exception("Basic reflection " + _id + " could not be collapsed!").printStackTrace();
 			return;
@@ -261,30 +260,29 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			if (_collapseTask != null)
+			if(_collapseTask != null)
 			{
 				_collapseTask.cancel(false);
 				_collapseTask = null;
 			}
 
-			if (_collapse1minTask != null)
+			if(_collapse1minTask != null)
 			{
 				_collapse1minTask.cancel(false);
 				_collapse1minTask = null;
 			}
 
-			if (message)
+			if(message)
 				broadcastExpireMsg(minutes);
 
-			if (minutes > 0)
+			if(minutes > 0)
 			{
 				_collapseTask = ThreadPoolManager.getInstance().schedule(() -> collapse(), TimeUnit.MINUTES.toMillis(minutes));
 
-				if (minutes > 1)
+				if(minutes > 1)
 				{
-					_collapse1minTask = ThreadPoolManager.getInstance().schedule(() ->
-					{
-						if (_isCollapseStarted)
+					_collapse1minTask = ThreadPoolManager.getInstance().schedule(() -> {
+						if(_isCollapseStarted)
 							return;
 
 						broadcastExpireMsg(1);
@@ -305,13 +303,13 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			if (_collapseTask != null)
+			if(_collapseTask != null)
 			{
 				_collapseTask.cancel(false);
 				_collapseTask = null;
 			}
 
-			if (_collapse1minTask != null)
+			if(_collapse1minTask != null)
 			{
 				_collapse1minTask.cancel(false);
 				_collapse1minTask = null;
@@ -325,14 +323,14 @@ public class Reflection
 
 	public long getDelayToCollapse()
 	{
-		if (_collapseTask != null)
+		if(_collapseTask != null)
 			return _collapseTask.getDelay(TimeUnit.MILLISECONDS);
 		return -1;
 	}
 
 	public void collapse()
 	{
-		if (_id <= 0)
+		if(_id <= 0)
 		{
 			new Exception("Basic reflection " + _id + " could not be collapsed!").printStackTrace();
 			return;
@@ -341,7 +339,7 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			if (_isCollapseStarted)
+			if(_isCollapseStarted)
 				return;
 
 			_isCollapseStarted = true;
@@ -350,24 +348,24 @@ public class Reflection
 			try
 			{
 				stopCollapseTimer();
-				if (_hiddencollapseTask != null)
+				if(_hiddencollapseTask != null)
 				{
 					_hiddencollapseTask.cancel(false);
 					_hiddencollapseTask = null;
 				}
 
-				for (Spawner s : _spawns)
+				for(Spawner s : _spawns)
 					s.deleteAll();
 
-				for (String group : _spawners.keySet())
+				for(String group : _spawners.keySet())
 					despawnByGroup(group);
 
-				for (DoorInstance d : _doors.valueCollection())
+				for(DoorInstance d : _doors.valueCollection())
 					d.deleteMe();
 
 				_doors.clear();
 
-				for (Zone zone : _zones.values())
+				for(Zone zone : _zones.values())
 					zone.setActive(false);
 
 				_zones.clear();
@@ -378,26 +376,26 @@ public class Reflection
 				List<ObservePoint> observers = new ArrayList<ObservePoint>();
 				List<GameObject> delete = new ArrayList<GameObject>();
 
-				for (GameObject o : _objects)
+				for(GameObject o : _objects)
 				{
-					if (o.isPlayer())
+					if(o.isPlayer())
 						teleport.add((Player) o);
-					else if (o.isObservePoint())
+					else if(o.isObservePoint())
 						observers.add((ObservePoint) o);
-					else if (!o.isPlayable())
+					else if(!o.isPlayable())
 						delete.add(o);
 				}
 
-				for (Player player : teleport)
+				for(Player player : teleport)
 				{
-					if (player.getParty() != null)
+					if(player.getParty() != null)
 					{
-						if (equals(player.getParty().getReflection()))
+						if(equals(player.getParty().getReflection()))
 							player.getParty().setReflection(null);
 					}
-					if (equals(player.getReflection()))
+					if(equals(player.getReflection()))
 					{
-						if (getReturnLoc() != null)
+						if(getReturnLoc() != null)
 							player.teleToLocation(getReturnLoc(), ReflectionManager.MAIN);
 						else
 							player.setReflection(ReflectionManager.MAIN);
@@ -405,26 +403,26 @@ public class Reflection
 					onPlayerExit(player);
 				}
 
-				for (Player player : GameObjectsStorage.getPlayers(true, true))
+				for(Player player : GameObjectsStorage.getPlayers(true, true))
 				{
-					if (player.getActiveReflection() == this)
+					if(player.getActiveReflection() == this)
 						player.setActiveReflection(null);
 				}
 
-				for (ObservePoint o : observers)
+				for(ObservePoint o : observers)
 				{
 					Player observer = o.getPlayer();
-					if (observer != null)
+					if(observer != null)
 						observer.leaveObserverMode();
 				}
 
-				if (_party != null)
+				if(_party != null)
 				{
 					_party.setReflection(null);
 					_party = null;
 				}
 
-				for (GameObject o : delete)
+				for(GameObject o : delete)
 					o.deleteMe();
 
 				_spawns.clear();
@@ -455,29 +453,29 @@ public class Reflection
 
 	public void addObject(GameObject o)
 	{
-		if (_isCollapseStarted)
+		if(_isCollapseStarted)
 			return;
 
 		lock.lock();
 		try
 		{
-			if (!_objects.add(o))
+			if(!_objects.add(o))
 				return;
 
 			onAddObject(o);
 
-			if (o.isPlayer())
+			if(o.isPlayer())
 			{
 				_playerCount++;
 				_visitors.add(o.getObjectId());
 
 				Player player = o.getPlayer();
-				if (!isDefault())
+				if(!isDefault())
 					player.setActiveReflection(this);
 				onPlayerEnter(player);
 			}
 
-			if (_hiddencollapseTask != null)
+			if(_hiddencollapseTask != null)
 			{
 				_hiddencollapseTask.cancel(false);
 				_hiddencollapseTask = null;
@@ -491,30 +489,29 @@ public class Reflection
 
 	public void removeObject(GameObject o)
 	{
-		if (_isCollapseStarted)
+		if(_isCollapseStarted)
 			return;
 
 		lock.lock();
 		try
 		{
-			if (!_objects.remove(o))
+			if(!_objects.remove(o))
 				return;
 
 			onRemoveObject(o);
 
-			if (o.isPlayer())
+			if(o.isPlayer())
 			{
 				_playerCount--;
 				onPlayerExit(o.getPlayer());
 
-				if (_playerCount <= 0 && !isDefault() && _hiddencollapseTask == null && _collapseIfEmptyTime >= 0)
+				if(_playerCount <= 0 && !isDefault() && _hiddencollapseTask == null && _collapseIfEmptyTime >= 0)
 				{
-					if (_collapseIfEmptyTime == 0)
+					if(_collapseIfEmptyTime == 0)
 						collapse();
 					else
 					{
-						_hiddencollapseTask = ThreadPoolManager.getInstance().schedule(() ->
-						{
+						_hiddencollapseTask = ThreadPoolManager.getInstance().schedule(() -> {
 							collapse();
 						}, _collapseIfEmptyTime * 60 * 1000L);
 					}
@@ -541,7 +538,7 @@ public class Reflection
 	{
 		player.getInventory().validateItems();
 
-		for (int triggerId : EventTriggersManager.getInstance().getTriggers(this, false))
+		for(int triggerId : EventTriggersManager.getInstance().getTriggers(this, false))
 			player.sendPacket(new EventTriggerPacket(triggerId, true));
 	}
 
@@ -549,15 +546,15 @@ public class Reflection
 	{
 		player.getInventory().validateItems();
 
-		for (int triggerId : EventTriggersManager.getInstance().getTriggers(this, true))
+		for(int triggerId : EventTriggersManager.getInstance().getTriggers(this, true))
 			player.sendPacket(new EventTriggerPacket(triggerId, false));
 
-		if (player.getActiveSubClass() != null)
+		if(player.getActiveSubClass() != null)
 		{
 			// Для квеста _129_PailakaDevilsLegacy
-			for (Servitor servitor : player.getServitors())
+			for(Servitor servitor : player.getServitors())
 			{
-				if (servitor != null && (servitor.getNpcId() == 14916 || servitor.getNpcId() == 14917))
+				if(servitor != null && (servitor.getNpcId() == 14916 || servitor.getNpcId() == 14917))
 					servitor.unSummon(false);
 			}
 		}
@@ -569,9 +566,9 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			for (GameObject o : _objects)
+			for(GameObject o : _objects)
 			{
-				if (o.isPlayer())
+				if(o.isPlayer())
 					result.add((Player) o);
 			}
 		}
@@ -588,9 +585,9 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			for (GameObject o : _objects)
+			for(GameObject o : _objects)
 			{
-				if (o.isPlayer() || o.isObservePoint())
+				if(o.isPlayer() || o.isObservePoint())
 					result.add((Creature) o);
 			}
 		}
@@ -607,9 +604,9 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			for (GameObject o : _objects)
+			for(GameObject o : _objects)
 			{
-				if (o.isObservePoint())
+				if(o.isObservePoint())
 					result.add((Creature) o);
 			}
 		}
@@ -626,9 +623,9 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			for (GameObject o : _objects)
+			for(GameObject o : _objects)
 			{
-				if (o.isNpc())
+				if(o.isNpc())
 					result.add((NpcInstance) o);
 			}
 		}
@@ -650,12 +647,13 @@ public class Reflection
 		lock.lock();
 		try
 		{
-			for (GameObject o : _objects)
+			for(GameObject o : _objects)
 			{
-				if (o.isNpc())
+				if(o.isNpc())
 				{
 					NpcInstance npc = (NpcInstance) o;
-					if ((npcIds.length == 0 || ArrayUtils.contains(npcIds, npc.getNpcId())) && (!onlyAlive || !npc.isDead()) && (!onlySpawned || npc.isVisible()))
+					if((npcIds.length == 0 || ArrayUtils.contains(npcIds, npc.getNpcId())) && (!onlyAlive || !npc.isDead())
+							&& (!onlySpawned || npc.isVisible()))
 						result.add(npc);
 				}
 			}
@@ -684,35 +682,35 @@ public class Reflection
 
 	public void addSpawn(Spawner spawn)
 	{
-		if (spawn != null)
+		if(spawn != null)
 			_spawns.add(spawn);
 	}
 
 	public void fillSpawns(List<InstantZone.SpawnInfo> si)
 	{
-		if (si == null)
+		if(si == null)
 			return;
-		for (InstantZone.SpawnInfo s : si)
+		for(InstantZone.SpawnInfo s : si)
 		{
-			switch (s.getSpawnType())
+			switch(s.getSpawnType())
 			{
 				case 0: // точечный спаун, в каждой указанной точке
-					for (Location loc : s.getCoords())
+					for(Location loc : s.getCoords())
 					{
 						addSpawn(NpcUtils.spawnSimple(s.getNpcId(), loc, this, 1, s.getRespawnDelay(), s.getRespawnRnd(), /*
-																															 * TODO
-																															 */null));
+																																																							* TODO
+																																																							*/null));
 					}
 					break;
 				case 1: // один точечный спаун в рандомной точке
 					addSpawn(NpcUtils.spawnSimple(s.getNpcId(), new LocationsList(s.getCoords()), this, 1, s.getRespawnDelay(), s.getRespawnRnd(), /*
-																																					 * TODO
-																																					 */null));
+																																																																					* TODO
+																																																																					*/null));
 					break;
 				case 2: // локационный спаун
 					addSpawn(NpcUtils.spawnSimple(s.getNpcId(), s.getLoc(), this, s.getCount(), s.getRespawnDelay(), s.getRespawnRnd(), /*
-																																		 * TODO
-																																		 */null));
+																																																															* TODO
+																																																															*/null));
 					break;
 			}
 		}
@@ -721,16 +719,16 @@ public class Reflection
 	// FIXME [VISTALL] сдвинуть в один?
 	public void init(IntObjectMap<DoorTemplate> doors, Map<String, ZoneTemplate> zones)
 	{
-		if (!doors.isEmpty())
+		if(!doors.isEmpty())
 			_doors = new HashIntObjectMap<DoorInstance>(doors.size());
 
-		for (DoorTemplate template : doors.valueCollection())
+		for(DoorTemplate template : doors.valueCollection())
 		{
 			DoorInstance door = new DoorInstance(IdFactory.getInstance().getNextId(), template);
 			door.setReflection(this);
 			door.getFlags().getInvulnerable().start();
 			door.spawnMe(template.getLoc());
-			if (template.isOpened())
+			if(template.isOpened())
 				door.openMe();
 
 			_doors.put(template.getId(), door);
@@ -738,14 +736,14 @@ public class Reflection
 
 		initDoors();
 
-		if (!zones.isEmpty())
+		if(!zones.isEmpty())
 			_zones = new HashMap<String, Zone>(zones.size());
 
-		for (ZoneTemplate template : zones.values())
+		for(ZoneTemplate template : zones.values())
 		{
 			Zone zone = new Zone(template);
 			zone.setReflection(this);
-			switch (zone.getType())
+			switch(zone.getType())
 			{
 				case no_landing:
 					zone.addListener(NoLandingZoneListener.STATIC);
@@ -768,10 +766,10 @@ public class Reflection
 					break;
 			}
 
-			if (template.getPresentSceneMovie() != null)
+			if(template.getPresentSceneMovie() != null)
 				zone.addListener(new PresentSceneMovieZoneListener(template.getPresentSceneMovie()));
 
-			if (template.isEnabled())
+			if(template.isEnabled())
 				zone.setActive(true);
 
 			_zones.put(template.getName(), zone);
@@ -783,35 +781,35 @@ public class Reflection
 	// FIXME [VISTALL] сдвинуть в один?
 	private void init0(IntObjectMap<InstantZone.DoorInfo> doors, Map<String, InstantZone.ZoneInfo> zones)
 	{
-		if (!doors.isEmpty())
+		if(!doors.isEmpty())
 		{
 			_doors = new HashIntObjectMap<DoorInstance>(doors.size());
 		}
 
-		for (InstantZone.DoorInfo info : doors.valueCollection())
+		for(InstantZone.DoorInfo info : doors.valueCollection())
 		{
 			DoorInstance door = new DoorInstance(IdFactory.getInstance().getNextId(), info.getTemplate());
 			door.setReflection(this);
-			if (info.isInvulnerable() && !door.isInvulnerable())
+			if(info.isInvulnerable() && !door.isInvulnerable())
 				door.getFlags().getInvulnerable().start();
-			else if (!info.isInvulnerable() && door.isInvulnerable())
+			else if(!info.isInvulnerable() && door.isInvulnerable())
 				door.getFlags().getInvulnerable().stop();
 			door.spawnMe(info.getTemplate().getLoc());
-			if (info.isOpened())
+			if(info.isOpened())
 				door.openMe();
 			_doors.put(info.getTemplate().getId(), door);
 		}
 
 		initDoors();
 
-		if (!zones.isEmpty())
+		if(!zones.isEmpty())
 			_zones = new HashMap<String, Zone>(zones.size());
 
-		for (InstantZone.ZoneInfo t : zones.values())
+		for(InstantZone.ZoneInfo t : zones.values())
 		{
 			Zone zone = new Zone(t.getTemplate());
 			zone.setReflection(this);
-			switch (zone.getType())
+			switch(zone.getType())
 			{
 				case no_landing:
 					zone.addListener(NoLandingZoneListener.STATIC);
@@ -834,10 +832,10 @@ public class Reflection
 					break;
 			}
 
-			if (t.getTemplate().getPresentSceneMovie() != null)
+			if(t.getTemplate().getPresentSceneMovie() != null)
 				zone.addListener(new PresentSceneMovieZoneListener(t.getTemplate().getPresentSceneMovie()));
 
-			if (t.isActive())
+			if(t.isActive())
 				zone.setActive(true);
 
 			_zones.put(t.getTemplate().getName(), zone);
@@ -846,9 +844,9 @@ public class Reflection
 
 	private void initDoors()
 	{
-		for (DoorInstance door : _doors.valueCollection())
+		for(DoorInstance door : _doors.valueCollection())
 		{
-			if (door.getTemplate().getMasterDoor() > 0)
+			if(door.getTemplate().getMasterDoor() > 0)
 			{
 				DoorInstance masterDoor = getDoor(door.getTemplate().getMasterDoor());
 
@@ -863,7 +861,7 @@ public class Reflection
 	public void openDoor(int doorId)
 	{
 		DoorInstance door = _doors.get(doorId);
-		if (door != null)
+		if(door != null)
 			door.openMe();
 	}
 
@@ -873,7 +871,7 @@ public class Reflection
 	public void closeDoor(int doorId)
 	{
 		DoorInstance door = _doors.get(doorId);
-		if (door != null)
+		if(door != null)
 			door.closeMe();
 	}
 
@@ -883,10 +881,10 @@ public class Reflection
 	 */
 	public void clearReflection(int timeInMinutes, boolean message)
 	{
-		if (isDefault())
+		if(isDefault())
 			return;
 
-		for (NpcInstance n : getNpcs())
+		for(NpcInstance n : getNpcs())
 			n.deleteMe();
 
 		startCollapseTimer(timeInMinutes, message);
@@ -895,22 +893,22 @@ public class Reflection
 	public void broadcastExpireMsg(int minutesToExpire)
 	{
 		IBroadcastPacket msg;
-		if (isDungeon())
+		if(isDungeon())
 			msg = new SystemMessagePacket(SystemMsg.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTES_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES).addInteger(minutesToExpire);
 		else
 			msg = new SystemMessagePacket(SystemMsg.THIS_INSTANT_ZONE_WILL_BE_TERMINATED_IN_S1_MINUTES_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES).addInteger(minutesToExpire);
 
-		for (Player player : getPlayers())
+		for(Player player : getPlayers())
 			player.sendPacket(msg);
 	}
 
 	public NpcInstance addSpawnWithoutRespawn(int npcId, Location loc, int randomOffset)
 	{
-		if (_isCollapseStarted)
+		if(_isCollapseStarted)
 			return null;
 
 		Location newLoc;
-		if (randomOffset > 0)
+		if(randomOffset > 0)
 			newLoc = Location.findPointToStay(loc, 0, randomOffset, getGeoIndex()).setH(loc.h);
 		else
 			newLoc = loc;
@@ -920,10 +918,11 @@ public class Reflection
 
 	public NpcInstance addSpawnWithRespawn(int npcId, Location loc, int randomOffset, int respawnDelay)
 	{
-		if (_isCollapseStarted)
+		if(_isCollapseStarted)
 			return null;
 
-		Spawner sp = NpcUtils.spawnSimple(npcId, randomOffset > 0 ? Location.findPointToStay(loc, 0, randomOffset, getGeoIndex()) : loc, this, 1, respawnDelay, 0);
+		Spawner sp = NpcUtils.spawnSimple(npcId, randomOffset
+				> 0 ? Location.findPointToStay(loc, 0, randomOffset, getGeoIndex()) : loc, this, 1, respawnDelay, 0);
 		return sp.getLastSpawn();
 	}
 
@@ -965,21 +964,21 @@ public class Reflection
 			lock.unlock();
 		}
 
-		if (players != null)
+		if(players != null)
 		{
 			Player player;
 
-			for (int objectId : players)
+			for(int objectId : players)
 			{
 				try
 				{
 					player = World.getPlayer(objectId);
-					if (player != null)
+					if(player != null)
 						player.setInstanceReuse(getInstancedZoneId(), time, notify);
 					else
 						MySqlDataInsert.set("REPLACE INTO character_instances (obj_id, id, reuse) VALUES (?,?,?)", objectId, getInstancedZoneId(), time);
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					e.printStackTrace();
 				}
@@ -1000,7 +999,7 @@ public class Reflection
 	 */
 	public static Reflection createReflection(int id)
 	{
-		if (id > 0)
+		if(id > 0)
 			throw new IllegalArgumentException("id should be <= 0");
 
 		return new Reflection(id);
@@ -1011,19 +1010,19 @@ public class Reflection
 		setName(instantZone.getName());
 		setInstancedZone(instantZone);
 		setTeleportLoc(instantZone.getTeleportCoord());
-		if (instantZone.getReturnCoords() != null)
+		if(instantZone.getReturnCoords() != null)
 			setReturnLoc(instantZone.getReturnCoords());
 		fillSpawns(instantZone.getSpawnsInfo());
 
-		if (instantZone.getSpawns().size() > 0)
+		if(instantZone.getSpawns().size() > 0)
 		{
 			_spawners = new HashMap<String, List<Spawner>>(instantZone.getSpawns().size());
-			for (Map.Entry<String, InstantZone.SpawnInfo2> entry : instantZone.getSpawns().entrySet())
+			for(Map.Entry<String, InstantZone.SpawnInfo2> entry : instantZone.getSpawns().entrySet())
 			{
 				List<Spawner> spawnList = new ArrayList<Spawner>(entry.getValue().getTemplates().size());
 				_spawners.put(entry.getKey(), spawnList);
 
-				for (SpawnTemplate template : entry.getValue().getTemplates())
+				for(SpawnTemplate template : entry.getValue().getTemplates())
 				{
 					HardSpawner spawner = new HardSpawner(template);
 					spawnList.add(spawner);
@@ -1035,14 +1034,14 @@ public class Reflection
 					spawner.setRespawnTime(0);
 				}
 
-				if (entry.getValue().isSpawned())
+				if(entry.getValue().isSpawned())
 					spawnByGroup(entry.getKey());
 			}
 		}
 
 		init0(instantZone.getDoors(), instantZone.getZones());
 		setCollapseIfEmptyTime(instantZone.getCollapseIfEmpty());
-		if (instantZone.getTimelimit() > 0)
+		if(instantZone.getTimelimit() > 0)
 			startCollapseTimer(instantZone.getTimelimit(), false);
 
 		onCreate();
@@ -1050,13 +1049,13 @@ public class Reflection
 
 	public List<Spawner> spawnByGroup(String name)
 	{
-		if (isMain())
+		if(isMain())
 			return SpawnManager.getInstance().spawn(name, false);
 
 		List<Spawner> list = _spawners.get(name);
-		if (list == null)
+		if(list == null)
 		{
-			if (_spawners.isEmpty())
+			if(_spawners.isEmpty())
 				_spawners = new HashMap<String, List<Spawner>>(1);
 
 			List<SpawnTemplate> templates = SpawnHolder.getInstance().getSpawn(name);
@@ -1064,7 +1063,7 @@ public class Reflection
 
 			_spawners.put(name, spawnList);
 
-			for (SpawnTemplate template : templates)
+			for(SpawnTemplate template : templates)
 			{
 				HardSpawner spawner = new HardSpawner(template);
 				spawnList.add(spawner);
@@ -1079,7 +1078,7 @@ public class Reflection
 			return spawnList;
 		}
 
-		for (Spawner s : list)
+		for(Spawner s : list)
 			s.init();
 
 		return list;
@@ -1087,14 +1086,14 @@ public class Reflection
 
 	public void despawnByGroup(String name)
 	{
-		if (isMain())
+		if(isMain())
 			SpawnManager.getInstance().despawn(name);
 		else
 		{
 			List<Spawner> list = _spawners.get(name);
-			if (list != null)
+			if(list != null)
 			{
-				for (Spawner s : list)
+				for(Spawner s : list)
 					s.deleteAll();
 			}
 		}
@@ -1102,13 +1101,13 @@ public class Reflection
 
 	public void despawnAll()
 	{
-		if (isMain())
+		if(isMain())
 			SpawnManager.getInstance().despawnAll();
 		else
 		{
-			for (List<Spawner> list : _spawners.values())
+			for(List<Spawner> list : _spawners.values())
 			{
-				for (Spawner s : list)
+				for(Spawner s : list)
 					s.deleteAll();
 			}
 		}
@@ -1116,11 +1115,11 @@ public class Reflection
 
 	public List<Spawner> getSpawners(String group)
 	{
-		if (isMain())
+		if(isMain())
 			return SpawnManager.getInstance().getSpawners(group);
 
 		List<Spawner> list = _spawners.get(group);
-		return list == null ? Collections.<Spawner>emptyList() : list;
+		return list == null ? Collections.<Spawner> emptyList() : list;
 	}
 
 	public Collection<Zone> getZones()
@@ -1145,18 +1144,18 @@ public class Reflection
 
 	public void broadcastPacket(IBroadcastPacket... packets)
 	{
-		for (Player player : getPlayers())
+		for(Player player : getPlayers())
 		{
-			if (player != null)
+			if(player != null)
 				player.sendPacket(packets);
 		}
 	}
 
 	public void broadcastPacket(List<IBroadcastPacket> packets)
 	{
-		for (Player player : getPlayers())
+		for(Player player : getPlayers())
 		{
-			if (player != null)
+			if(player != null)
 				player.sendPacket(packets);
 		}
 	}
@@ -1168,7 +1167,7 @@ public class Reflection
 
 	public final void setVariable(String name, Object value)
 	{
-		if (_variables == StatsSet.EMPTY)
+		if(_variables == StatsSet.EMPTY)
 			_variables = new StatsSet();
 		_variables.set(name, value);
 	}

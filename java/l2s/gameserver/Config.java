@@ -41,6 +41,8 @@ import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.configuration.ExProperties;
 import l2s.commons.net.nio.impl.SelectorConfig;
 import l2s.commons.string.StringArrayUtils;
@@ -52,9 +54,6 @@ import l2s.gameserver.network.authcomm.ServerType;
 import l2s.gameserver.skills.enums.AbnormalEffect;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.utils.Language;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 public class Config
 {
@@ -102,37 +101,37 @@ public class Config
 
 	public static final String PHANTOM_PLAYERS_AKK = "rebellion";
 
-	public static Map<Integer,Integer> CLAN_POINTS_FOR_KILL_RB;
-	static 
+	public static Map<Integer, Integer> CLAN_POINTS_FOR_KILL_RB;
+	static
 	{
-    CLAN_POINTS_FOR_KILL_RB = new HashMap<>();
-    
-    // 1 очко за убийство РБ
-    CLAN_POINTS_FOR_KILL_RB.put(25742, 1); // Жрец Ядра Дакар
-    CLAN_POINTS_FOR_KILL_RB.put(25738, 1); // Трутень-Жрец Королевы Муравьев
-    CLAN_POINTS_FOR_KILL_RB.put(25743, 1); // Жрец Орфен Лорд Ипос
-    CLAN_POINTS_FOR_KILL_RB.put(25739, 1); // Ангел-Жрец Баюма
-    
-    // 2 очка за убийство РБ
-    CLAN_POINTS_FOR_KILL_RB.put(29001, 2); // Королева Муравьев
-    CLAN_POINTS_FOR_KILL_RB.put(29014, 2); // Орфен
-    CLAN_POINTS_FOR_KILL_RB.put(29006, 2); // Ядро
-    CLAN_POINTS_FOR_KILL_RB.put(29022, 2); // Закен
-    CLAN_POINTS_FOR_KILL_RB.put(29020, 2); // Баюм
-    CLAN_POINTS_FOR_KILL_RB.put(25286, 2); // Анаким
-    CLAN_POINTS_FOR_KILL_RB.put(25283, 2); // Лилит
-    
-    // 3 очка за убийство РБ
-    CLAN_POINTS_FOR_KILL_RB.put(29176, 3); // Бессмертный Баюм
-    CLAN_POINTS_FOR_KILL_RB.put(29151, 3); // Антарас (1)
-    CLAN_POINTS_FOR_KILL_RB.put(29152, 3); // Антарас (2)
-    CLAN_POINTS_FOR_KILL_RB.put(29153, 3); // Антарас (3)
-    CLAN_POINTS_FOR_KILL_RB.put(25912, 3); // Чудовище
-    CLAN_POINTS_FOR_KILL_RB.put(25935, 3); // Совершенное Чудовище
-    CLAN_POINTS_FOR_KILL_RB.put(29172, 3); // Хаотическая Королева Муравьёв
-    CLAN_POINTS_FOR_KILL_RB.put(29171, 3); // Хаотическая Орфен
-    CLAN_POINTS_FOR_KILL_RB.put(29173, 3); // Хаотический Закен
-    CLAN_POINTS_FOR_KILL_RB.put(29170, 3); // Хаотическое Ядро
+		CLAN_POINTS_FOR_KILL_RB = new HashMap<>();
+
+		// 1 очко за убийство РБ
+		CLAN_POINTS_FOR_KILL_RB.put(25742, 1); // Жрец Ядра Дакар
+		CLAN_POINTS_FOR_KILL_RB.put(25738, 1); // Трутень-Жрец Королевы Муравьев
+		CLAN_POINTS_FOR_KILL_RB.put(25743, 1); // Жрец Орфен Лорд Ипос
+		CLAN_POINTS_FOR_KILL_RB.put(25739, 1); // Ангел-Жрец Баюма
+
+		// 2 очка за убийство РБ
+		CLAN_POINTS_FOR_KILL_RB.put(29001, 2); // Королева Муравьев
+		CLAN_POINTS_FOR_KILL_RB.put(29014, 2); // Орфен
+		CLAN_POINTS_FOR_KILL_RB.put(29006, 2); // Ядро
+		CLAN_POINTS_FOR_KILL_RB.put(29022, 2); // Закен
+		CLAN_POINTS_FOR_KILL_RB.put(29020, 2); // Баюм
+		CLAN_POINTS_FOR_KILL_RB.put(25286, 2); // Анаким
+		CLAN_POINTS_FOR_KILL_RB.put(25283, 2); // Лилит
+
+		// 3 очка за убийство РБ
+		CLAN_POINTS_FOR_KILL_RB.put(29176, 3); // Бессмертный Баюм
+		CLAN_POINTS_FOR_KILL_RB.put(29151, 3); // Антарас (1)
+		CLAN_POINTS_FOR_KILL_RB.put(29152, 3); // Антарас (2)
+		CLAN_POINTS_FOR_KILL_RB.put(29153, 3); // Антарас (3)
+		CLAN_POINTS_FOR_KILL_RB.put(25912, 3); // Чудовище
+		CLAN_POINTS_FOR_KILL_RB.put(25935, 3); // Совершенное Чудовище
+		CLAN_POINTS_FOR_KILL_RB.put(29172, 3); // Хаотическая Королева Муравьёв
+		CLAN_POINTS_FOR_KILL_RB.put(29171, 3); // Хаотическая Орфен
+		CLAN_POINTS_FOR_KILL_RB.put(29173, 3); // Хаотический Закен
+		CLAN_POINTS_FOR_KILL_RB.put(29170, 3); // Хаотическое Ядро
 	}
 
 	// Services Engine
@@ -1354,7 +1353,7 @@ public class Config
 
 	public static boolean VIP_ATTENDANCE_REWARDS_ENABLED;
 	public static boolean VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT = true;
-	
+
 	public static LocalDateTime VIP_ATTENDANCE_REWARDS_START_DATE;
 	public static LocalDateTime VIP_ATTENDANCE_REWARDS_END_DATE;
 
@@ -1522,7 +1521,7 @@ public class Config
 		RANDOM_CRAFT_TRY_COMMISSION = essenceSettings.getProperty("RandomCraftTryCommission", 300000);
 
 		VITALITY_MAX_ITEMS_ALLOWED = essenceSettings.getProperty("VitalityMaxItemsAllowed", 999);
-		if (VITALITY_MAX_ITEMS_ALLOWED == 0)
+		if(VITALITY_MAX_ITEMS_ALLOWED == 0)
 			VITALITY_MAX_ITEMS_ALLOWED = Integer.MAX_VALUE;
 
 		MAGIC_LAMP_ENABLED = essenceSettings.getProperty("EnableMagicLampGame", true);
@@ -1572,22 +1571,22 @@ public class Config
 		double RATE_XP = rateServerSettings.getProperty("RateXp", 1.);
 		RATE_XP_BY_LVL = new double[Byte.MAX_VALUE];
 		double prevRateXp = RATE_XP;
-		for (int i = 1; i < RATE_XP_BY_LVL.length; i++)
+		for(int i = 1; i < RATE_XP_BY_LVL.length; i++)
 		{
 			double rate = rateServerSettings.getProperty("RateXpByLevel" + i, prevRateXp);
 			RATE_XP_BY_LVL[i] = rate;
-			if (rate != prevRateXp)
+			if(rate != prevRateXp)
 				prevRateXp = rate;
 		}
 
 		double RATE_SP = rateServerSettings.getProperty("RateSp", 1.);
 		RATE_SP_BY_LVL = new double[Byte.MAX_VALUE];
 		double prevRateSp = RATE_SP;
-		for (int i = 1; i < RATE_SP_BY_LVL.length; i++)
+		for(int i = 1; i < RATE_SP_BY_LVL.length; i++)
 		{
 			double rate = rateServerSettings.getProperty("RateSpByLevel" + i, prevRateSp);
 			RATE_SP_BY_LVL[i] = rate;
-			if (rate != prevRateSp)
+			if(rate != prevRateSp)
 				prevRateSp = rate;
 		}
 
@@ -1600,22 +1599,22 @@ public class Config
 		double RATE_DROP_ADENA = rateServerSettings.getProperty("RateDropAdena", 1.);
 		RATE_DROP_ADENA_BY_LVL = new double[Byte.MAX_VALUE];
 		double prevRateAdena = RATE_DROP_ADENA;
-		for (int i = 1; i < RATE_DROP_ADENA_BY_LVL.length; i++)
+		for(int i = 1; i < RATE_DROP_ADENA_BY_LVL.length; i++)
 		{
 			double rate = rateServerSettings.getProperty("RateDropAdenaByLevel" + i, prevRateAdena);
 			RATE_DROP_ADENA_BY_LVL[i] = rate;
-			if (rate != prevRateAdena)
+			if(rate != prevRateAdena)
 				prevRateAdena = rate;
 		}
 
 		double RATE_DROP_ITEMS = rateServerSettings.getProperty("RateDropItems", 1.);
 		RATE_DROP_ITEMS_BY_LVL = new double[Byte.MAX_VALUE];
 		double prevRateItems = RATE_DROP_ITEMS;
-		for (int i = 1; i < RATE_DROP_ITEMS_BY_LVL.length; i++)
+		for(int i = 1; i < RATE_DROP_ITEMS_BY_LVL.length; i++)
 		{
 			double rate = rateServerSettings.getProperty("RateDropItemsByLevel" + i, prevRateItems);
 			RATE_DROP_ITEMS_BY_LVL[i] = rate;
-			if (rate != prevRateItems)
+			if(rate != prevRateItems)
 				prevRateItems = rate;
 		}
 
@@ -1625,11 +1624,11 @@ public class Config
 		double RATE_DROP_SPOIL = rateServerSettings.getProperty("RateDropSpoil", 1.);
 		RATE_DROP_SPOIL_BY_LVL = new double[Byte.MAX_VALUE];
 		double prevRateSpoil = RATE_DROP_SPOIL;
-		for (int i = 1; i < RATE_DROP_SPOIL_BY_LVL.length; i++)
+		for(int i = 1; i < RATE_DROP_SPOIL_BY_LVL.length; i++)
 		{
 			double rate = rateServerSettings.getProperty("RateDropSpoilByLevel" + i, prevRateSpoil);
 			RATE_DROP_SPOIL_BY_LVL[i] = rate;
-			if (rate != prevRateSpoil)
+			if(rate != prevRateSpoil)
 				prevRateSpoil = rate;
 		}
 
@@ -1653,20 +1652,19 @@ public class Config
 		DROP_COUNT_MODIFIER_BOSS = rateServerSettings.getProperty("DROP_COUNT_MODIFIER_BOSS", 1.);
 		DISABLE_DROP_EXCEPT_ITEM_IDS = new TIntHashSet();
 		DISABLE_DROP_EXCEPT_ITEM_IDS.addAll(rateServerSettings.getProperty("DISABLE_DROP_EXCEPT_ITEM_IDS", new int[0]));
-		NO_RATE_ITEMS = rateServerSettings.getProperty("NoRateItemIds", new int[]
-		{
-			6660,
-			6662,
-			6661,
-			6659,
-			6656,
-			6658,
-			8191,
-			6657,
-			10170,
-			10314,
-			16025,
-			16026
+		NO_RATE_ITEMS = rateServerSettings.getProperty("NoRateItemIds", new int[] {
+				6660,
+				6662,
+				6661,
+				6659,
+				6656,
+				6658,
+				8191,
+				6657,
+				10170,
+				10314,
+				16025,
+				16026
 		});
 		NO_RATE_EQUIPMENT = rateServerSettings.getProperty("NoRateEquipment", false);
 		NO_RATE_KEY_MATERIAL = rateServerSettings.getProperty("NoRateKeyMaterial", false);
@@ -1675,18 +1673,18 @@ public class Config
 		PA_RATE_IN_PARTY_MODE = rateServerSettings.getProperty("PA_RATE_IN_PARTY_MODE", 0);
 
 		String[] ignoreAllDropButThis = rateServerSettings.getProperty("IgnoreAllDropButThis", "-1").split(";");
-		for (String dropId : ignoreAllDropButThis)
+		for(String dropId : ignoreAllDropButThis)
 		{
-			if (dropId == null || dropId.isEmpty())
+			if(dropId == null || dropId.isEmpty())
 				continue;
 
 			try
 			{
 				int itemId = Integer.parseInt(dropId);
-				if (itemId > 0)
+				if(itemId > 0)
 					DROP_ONLY_THIS.add(itemId);
 			}
-			catch (NumberFormatException e)
+			catch(NumberFormatException e)
 			{
 				_log.error("", e);
 			}
@@ -1714,9 +1712,9 @@ public class Config
 		AUTH_SERVER_GM_ONLY = serverSettings.getProperty("ServerGMOnly", false);
 		AUTH_SERVER_BRACKETS = serverSettings.getProperty("ServerBrackets", false);
 		AUTH_SERVER_IS_PVP = serverSettings.getProperty("PvPServer", false);
-		for (String a : serverSettings.getProperty("ServerType", ArrayUtils.EMPTY_STRING_ARRAY))
+		for(String a : serverSettings.getProperty("ServerType", ArrayUtils.EMPTY_STRING_ARRAY))
 		{
-			if (a.trim().isEmpty())
+			if(a.trim().isEmpty())
 			{
 				continue;
 			}
@@ -1757,7 +1755,7 @@ public class Config
 		{
 			DATAPACK_ROOT = new File(serverSettings.getProperty("DatapackRoot", ".")).getCanonicalFile();
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 		}
@@ -1770,13 +1768,13 @@ public class Config
 
 		final String[] protocols = serverSettings.getProperty("AvailableProtocolRevisions", "362").split(";");
 		AVAILABLE_PROTOCOL_REVISIONS = new ArrayList<>(protocols.length);
-		for (final String protocol : protocols)
+		for(final String protocol : protocols)
 		{
 			try
 			{
 				AVAILABLE_PROTOCOL_REVISIONS.add(Integer.parseInt(protocol.trim()));
 			}
-			catch (final NumberFormatException e)
+			catch(final NumberFormatException e)
 			{
 				_log.info("Wrong config protocol version: " + protocol + ". Skipped.");
 			}
@@ -1795,7 +1793,8 @@ public class Config
 		int databasePort = serverSettings.getProperty("DATABASE_PORT", 3306);
 		String databaseName = serverSettings.getProperty("DATABASE_NAME", "l2game");
 
-		DATABASE_URL = serverSettings.getProperty("DATABASE_URL", "jdbc:mariadb://" + databaseHost + ":" + databasePort + "/" + databaseName + "?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
+		DATABASE_URL = serverSettings.getProperty("DATABASE_URL", "jdbc:mariadb://" + databaseHost + ":" + databasePort + "/" + databaseName
+				+ "?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
 		DATABASE_LOGIN = serverSettings.getProperty("DATABASE_LOGIN", "root");
 		DATABASE_PASSWORD = serverSettings.getProperty("DATABASE_PASSWORD", "root");
 
@@ -1824,9 +1823,8 @@ public class Config
 		CHAT_MESSAGE_MAX_LEN = serverSettings.getProperty("ChatMessageLimit", 1000);
 		ABUSEWORD_BANCHAT = serverSettings.getProperty("ABUSEWORD_BANCHAT", false);
 		int counter = 0;
-		for (int id : serverSettings.getProperty("ABUSEWORD_BAN_CHANNEL", new int[]
-		{
-			0
+		for(int id : serverSettings.getProperty("ABUSEWORD_BAN_CHANNEL", new int[] {
+				0
 		}))
 		{
 			BAN_CHANNEL_LIST[counter] = id;
@@ -1873,13 +1871,13 @@ public class Config
 		AVAILABLE_LANGUAGES.add(Language.RUSSIAN);
 		AVAILABLE_LANGUAGES.add(DEFAULT_LANG);
 
-		if (USE_CLIENT_LANG || CAN_SELECT_LANGUAGE)
+		if(USE_CLIENT_LANG || CAN_SELECT_LANGUAGE)
 		{
 			String[] availableLanguages = serverSettings.getProperty("AVAILABLE_LANGUAGES", new String[0], ";");
-			for (String availableLanguage : availableLanguages)
+			for(String availableLanguage : availableLanguages)
 			{
 				Language lang = Language.valueOf(availableLanguage.toUpperCase());
-				if (!lang.isCustom() || CAN_SELECT_LANGUAGE)
+				if(!lang.isCustom() || CAN_SELECT_LANGUAGE)
 					AVAILABLE_LANGUAGES.add(lang);
 			}
 		}
@@ -2029,20 +2027,19 @@ public class Config
 		CLANLEADER_NAME_COLOUR = Integer.decode("0x" + otherSettings.getProperty("ClanleaderNameColour", "FFFFFF"));
 		SHOW_HTML_WELCOME = otherSettings.getProperty("ShowHTMLWelcome", false);
 
-		MONSTER_LEVEL_DIFF_EXP_PENALTY = otherSettings.getProperty("MONSTER_LEVEL_DIFF_EXP_PENALTY", new int[]
-		{
-			0,
-			0,
-			0,
-			3,
-			20,
-			39,
-			63,
-			78,
-			87,
-			92,
-			95,
-			100
+		MONSTER_LEVEL_DIFF_EXP_PENALTY = otherSettings.getProperty("MONSTER_LEVEL_DIFF_EXP_PENALTY", new int[] {
+				0,
+				0,
+				0,
+				3,
+				20,
+				39,
+				63,
+				78,
+				87,
+				92,
+				95,
+				100
 		});
 	}
 
@@ -2298,9 +2295,9 @@ public class Config
 		AUTO_LOOT_FROM_RAIDS = altSettings.getProperty("AutoLootFromRaids", false);
 
 		String[] autoLootItemIdList = altSettings.getProperty("AutoLootItemIdList", "-1").split(";");
-		for (String item : autoLootItemIdList)
+		for(String item : autoLootItemIdList)
 		{
-			if (item == null || item.isEmpty())
+			if(item == null || item.isEmpty())
 			{
 				continue;
 			}
@@ -2308,12 +2305,12 @@ public class Config
 			try
 			{
 				int itemId = Integer.parseInt(item);
-				if (itemId > 0)
+				if(itemId > 0)
 				{
 					AUTO_LOOT_ITEM_ID_LIST.add(itemId);
 				}
 			}
-			catch (NumberFormatException e)
+			catch(NumberFormatException e)
 			{
 				_log.error("", e);
 			}
@@ -2352,9 +2349,9 @@ public class Config
 		ALT_SOCIAL_ACTION_REUSE = altSettings.getProperty("AltSocialActionReuse", false);
 
 		DISABLED_SPELLBOOKS_FOR_ACQUIRE_TYPES = new HashSet<AcquireType>();
-		for (String t : altSettings.getProperty("DISABLED_SPELLBOOKS_FOR_ACQUIRE_TYPES", ArrayUtils.EMPTY_STRING_ARRAY))
+		for(String t : altSettings.getProperty("DISABLED_SPELLBOOKS_FOR_ACQUIRE_TYPES", ArrayUtils.EMPTY_STRING_ARRAY))
 		{
-			if (t.trim().isEmpty())
+			if(t.trim().isEmpty())
 			{
 				continue;
 			}
@@ -2380,18 +2377,17 @@ public class Config
 		ALT_SHOP_PRICE_LIMITS = altSettings.getProperty("ShopPriceLimits", ArrayUtils.EMPTY_INT_ARRAY);
 		ALT_SHOP_UNALLOWED_ITEMS = altSettings.getProperty("ShopUnallowedItems", ArrayUtils.EMPTY_INT_ARRAY);
 
-		ALT_ALLOWED_PET_POTIONS = altSettings.getProperty("AllowedPetPotions", new int[]
-		{
-			735,
-			1060,
-			1061,
-			1062,
-			1374,
-			1375,
-			1539,
-			1540,
-			6035,
-			6036
+		ALT_ALLOWED_PET_POTIONS = altSettings.getProperty("AllowedPetPotions", new int[] {
+				735,
+				1060,
+				1061,
+				1062,
+				1374,
+				1375,
+				1539,
+				1540,
+				6035,
+				6036
 		});
 
 		FESTIVAL_MIN_PARTY_SIZE = altSettings.getProperty("FestivalMinPartySize", 5);
@@ -2456,40 +2452,37 @@ public class Config
 
 		ALT_MAX_ALLY_SIZE = altSettings.getProperty("AltMaxAllySize", 3);
 		ALT_PARTY_DISTRIBUTION_RANGE = altSettings.getProperty("AltPartyDistributionRange", 1500);
-		ALT_PARTY_BONUS = altSettings.getProperty("AltPartyBonus", new double[]
-		{
-			1.00,
-			1.30,
-			1.35,
-			1.40,
-			1.55,
-			1.60,
-			1.70,
-			1.80,
-			2.00
+		ALT_PARTY_BONUS = altSettings.getProperty("AltPartyBonus", new double[] {
+				1.00,
+				1.30,
+				1.35,
+				1.40,
+				1.55,
+				1.60,
+				1.70,
+				1.80,
+				2.00
 		});
-		ALT_PARTY_CLAN_BONUS = altSettings.getProperty("ALT_PARTY_CLAN_BONUS", new double[]
-		{
-			1.00
+		ALT_PARTY_CLAN_BONUS = altSettings.getProperty("ALT_PARTY_CLAN_BONUS", new double[] {
+				1.00
 		});
-		ALT_PARTY_LVL_DIFF_PENALTY = altSettings.getProperty("ALT_PARTY_LVL_DIFF_PENALTY", new int[]
-		{
-			100,
-			98,
-			95,
-			93,
-			91,
-			88,
-			86,
-			83,
-			81,
-			78,
-			23,
-			22,
-			21,
-			20,
-			19,
-			0
+		ALT_PARTY_LVL_DIFF_PENALTY = altSettings.getProperty("ALT_PARTY_LVL_DIFF_PENALTY", new int[] {
+				100,
+				98,
+				95,
+				93,
+				91,
+				88,
+				86,
+				83,
+				81,
+				78,
+				23,
+				22,
+				21,
+				20,
+				19,
+				0
 		});
 
 		ALT_ALL_PHYS_SKILLS_OVERHIT = altSettings.getProperty("AltAllPhysSkillsOverhit", true);
@@ -2559,15 +2552,13 @@ public class Config
 		NEED_QUEST_FOR_PROOF = altSettings.getProperty("NeedQuestForProff", true);
 
 		LIST_OF_SELLABLE_ITEMS = new ArrayList<Integer>();
-		for (int id : altSettings.getProperty("ListOfAlwaysSellableItems", new int[]
-		{
-			57
+		for(int id : altSettings.getProperty("ListOfAlwaysSellableItems", new int[] {
+				57
 		}))
 			LIST_OF_SELLABLE_ITEMS.add(id);
 		LIST_OF_TRABLE_ITEMS = new ArrayList<Integer>();
-		for (int id : altSettings.getProperty("ListOfAlwaysTradableItems", new int[]
-		{
-			57
+		for(int id : altSettings.getProperty("ListOfAlwaysTradableItems", new int[] {
+				57
 		}))
 			LIST_OF_TRABLE_ITEMS.add(id);
 
@@ -2593,9 +2584,9 @@ public class Config
 
 		RAID_DROP_GLOBAL_ITEMS = altSettings.getProperty("AltEnableGlobalRaidDrop", false);
 		String[] infos = altSettings.getProperty("RaidGlobalDrop", new String[0], ";");
-		for (String info : infos)
+		for(String info : infos)
 		{
-			if (info.isEmpty())
+			if(info.isEmpty())
 				continue;
 
 			String[] data = info.split(",");
@@ -2638,11 +2629,11 @@ public class Config
 
 		PERCENT_LOST_ON_DEATH = new double[Byte.MAX_VALUE];
 		double prevPercentLost = 0.;
-		for (int i = 1; i < PERCENT_LOST_ON_DEATH.length; i++)
+		for(int i = 1; i < PERCENT_LOST_ON_DEATH.length; i++)
 		{
 			double percent = altSettings.getProperty("PERCENT_LOST_ON_DEATH_LVL_" + i, prevPercentLost);
 			PERCENT_LOST_ON_DEATH[i] = percent;
-			if (percent != prevPercentLost)
+			if(percent != prevPercentLost)
 				prevPercentLost = percent;
 		}
 
@@ -2660,7 +2651,7 @@ public class Config
 		ALT_SAVE_PRIVATE_STORE = altSettings.getProperty("ALT_SAVE_PRIVATE_STORE", false);
 
 		String allowedTradeZones = altSettings.getProperty("ALLOWED_TRADE_ZONES", "");
-		if (StringUtils.isEmpty(allowedTradeZones))
+		if(StringUtils.isEmpty(allowedTradeZones))
 		{
 			ALLOWED_TRADE_ZONES = new String[0];
 		}
@@ -2746,9 +2737,8 @@ public class Config
 		SERVICES_CHANGE_NICK_COLOR_ENABLED = servicesSettings.getProperty("NickColorChangeEnabled", false);
 		SERVICES_CHANGE_NICK_COLOR_PRICE = servicesSettings.getProperty("NickColorChangePrice", 100);
 		SERVICES_CHANGE_NICK_COLOR_ITEM = servicesSettings.getProperty("NickColorChangeItem", 4037);
-		SERVICES_CHANGE_NICK_COLOR_LIST = servicesSettings.getProperty("NickColorChangeList", new String[]
-		{
-			"00FF00"
+		SERVICES_CHANGE_NICK_COLOR_LIST = servicesSettings.getProperty("NickColorChangeList", new String[] {
+				"00FF00"
 		});
 
 		SERVICES_BASH_ENABLED = servicesSettings.getProperty("BashEnabled", false);
@@ -2816,21 +2806,17 @@ public class Config
 
 		ALLOW_EVENT_GATEKEEPER = servicesSettings.getProperty("AllowEventGatekeeper", false);
 
-		SERVICES_ENCHANT_VALUE = servicesSettings.getProperty("EnchantValue", new int[]
-		{
-			0
+		SERVICES_ENCHANT_VALUE = servicesSettings.getProperty("EnchantValue", new int[] {
+				0
 		});
-		SERVICES_ENCHANT_COAST = servicesSettings.getProperty("EnchantCoast", new int[]
-		{
-			0
+		SERVICES_ENCHANT_COAST = servicesSettings.getProperty("EnchantCoast", new int[] {
+				0
 		});
-		SERVICES_ENCHANT_RAID_VALUE = servicesSettings.getProperty("EnchantRaidValue", new int[]
-		{
-			0
+		SERVICES_ENCHANT_RAID_VALUE = servicesSettings.getProperty("EnchantRaidValue", new int[] {
+				0
 		});
-		SERVICES_ENCHANT_RAID_COAST = servicesSettings.getProperty("EnchantRaidCoast", new int[]
-		{
-			0
+		SERVICES_ENCHANT_RAID_COAST = servicesSettings.getProperty("EnchantRaidCoast", new int[] {
+				0
 		});
 
 		ALLOW_IP_LOCK = servicesSettings.getProperty("AllowLockIP", false);
@@ -2878,41 +2864,40 @@ public class Config
 		KARMA_DROPCHANCE_MOD = pvpSettings.getProperty("ChanceOfPKsDropMod", 1.);
 
 		KARMA_LIST_NONDROPPABLE_ITEMS = new ArrayList<Integer>();
-		for (int id : pvpSettings.getProperty("ListOfNonDroppableItems", new int[]
-		{
-			57,
-			1147,
-			425,
-			1146,
-			461,
-			10,
-			2368,
-			7,
-			6,
-			2370,
-			2369,
-			3500,
-			3501,
-			3502,
-			4422,
-			4423,
-			4424,
-			2375,
-			6648,
-			6649,
-			6650,
-			6842,
-			6834,
-			6835,
-			6836,
-			6837,
-			6838,
-			6839,
-			6840,
-			5575,
-			7694,
-			6841,
-			8181
+		for(int id : pvpSettings.getProperty("ListOfNonDroppableItems", new int[] {
+				57,
+				1147,
+				425,
+				1146,
+				461,
+				10,
+				2368,
+				7,
+				6,
+				2370,
+				2369,
+				3500,
+				3501,
+				3502,
+				4422,
+				4423,
+				4424,
+				2375,
+				6648,
+				6649,
+				6650,
+				6842,
+				6834,
+				6835,
+				6836,
+				6837,
+				6838,
+				6839,
+				6840,
+				5575,
+				7694,
+				6841,
+				8181
 		}))
 			KARMA_LIST_NONDROPPABLE_ITEMS.add(id);
 
@@ -2959,7 +2944,7 @@ public class Config
 		{
 			GEODATA_ROOT = new File(geodataSettings.getProperty("GeodataRoot", "./geodata/")).getCanonicalFile();
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 		}
@@ -2989,17 +2974,15 @@ public class Config
 		ALLOW_PVP_REWARD = pvp_manager.getProperty("AllowPvPManager", true);
 		PVP_REWARD_SEND_SUCC_NOTIF = pvp_manager.getProperty("SendNotification", true);
 
-		PVP_REWARD_REWARD_IDS = pvp_manager.getProperty("PvPRewardsIDs", new int[]
-		{
-			57,
-			6673
+		PVP_REWARD_REWARD_IDS = pvp_manager.getProperty("PvPRewardsIDs", new int[] {
+				57,
+				6673
 		});
-		PVP_REWARD_COUNTS = pvp_manager.getProperty("PvPRewardsCounts", new long[]
-		{
-			1,
-			2
+		PVP_REWARD_COUNTS = pvp_manager.getProperty("PvPRewardsCounts", new long[] {
+				1,
+				2
 		});
-		if (PVP_REWARD_REWARD_IDS.length != PVP_REWARD_COUNTS.length)
+		if(PVP_REWARD_REWARD_IDS.length != PVP_REWARD_COUNTS.length)
 			_log.warn("pvp_manager.properties: PvPRewardsIDs array length != PvPRewardsCounts array length");
 
 		PVP_REWARD_RANDOM_ONE = pvp_manager.getProperty("GiveJustOneRandom", true);
@@ -3166,9 +3149,9 @@ public class Config
 
 		String[] classes = buffStoreConfig.getProperty("BuffStoreAllowedClassList", "").split(",");
 		BUFF_STORE_ALLOWED_CLASS_LIST = new ArrayList<Integer>();
-		if (classes.length > 0)
+		if(classes.length > 0)
 		{
-			for (String classId : classes)
+			for(String classId : classes)
 			{
 				BUFF_STORE_ALLOWED_CLASS_LIST.add(Integer.valueOf(Integer.parseInt(classId)));
 			}
@@ -3183,19 +3166,19 @@ public class Config
 	public static int PVPBOOK_TELEPORT_HELP_PRICE;
 	public static Map<Integer, Integer> PVPBOOK_ADENA_LOCATION_SHOW = new HashMap<>();
 	public static Map<Integer, Integer> PVPBOOK_LCOIN_TELEPORT_COUNT = new HashMap<>();
-	
+
 	public static final String PVPBOOK_CONFIG_FILE = "config/Pvpbook.properties";
-	
+
 	public static void loadPvpbookSettings()
 	{
 		ExProperties Pvpbookconfig = load(PVPBOOK_CONFIG_FILE);
 		PVPBOOK_EXPIRATION_DELAY = Pvpbookconfig.getProperty("PvpbookExpirationDelay", 24);
 		PVPBOOK_TELEPORT_HELP_PRICE = Pvpbookconfig.getProperty("TeleportHelpPrice", 100);
-		
+
 		Pattern pattern = Pattern.compile("\\{(\\d+);(\\d+)\\}");
 		Matcher matcher = pattern.matcher(Pvpbookconfig.getProperty("AdenaLocationShow", "{1;50000};{2;100000};{3;200000}"));
 
-		while (matcher.find()) 
+		while(matcher.find())
 		{
 			int views = Integer.parseInt(matcher.group(1));
 			int price = Integer.parseInt(matcher.group(2));
@@ -3204,7 +3187,7 @@ public class Config
 
 		matcher = pattern.matcher(Pvpbookconfig.getProperty("LcoinTeleportCount", "{0;1};{2;50};{2;100};{3;100};{4;200}"));
 
-		while (matcher.find()) 
+		while(matcher.find())
 		{
 			int views = Integer.parseInt(matcher.group(1));
 			int price = Integer.parseInt(matcher.group(2));
@@ -3212,10 +3195,11 @@ public class Config
 		}
 
 	}
+
 	public static int[] ADENLAB_RESEARCH_DIARY;
 	public static long ADENLAB_ADENA_PLAY;
 	public static long ADENLAB_ADENA_FIX;
-	
+
 	public static final String HUNT_PASS_CONFIG_FILE = "config/HuntPass.properties";
 
 	// HuntPass
@@ -3227,7 +3211,7 @@ public class Config
 	public static int HUNT_PASS_POINTS_FOR_STEP;
 	public static int HUNT_PASS_POINTS_FOR_MOB;
 	public static int HUNT_PASS_POINTS_FOR_MOB_INSTANCE;
-	
+
 	public static void loadHuntPass()
 	{
 		ExProperties huntPassConfig = load(HUNT_PASS_CONFIG_FILE);
@@ -3241,7 +3225,7 @@ public class Config
 		HUNT_PASS_POINTS_FOR_MOB = huntPassConfig.getProperty("PointsForMob", 1);
 		HUNT_PASS_POINTS_FOR_MOB_INSTANCE = huntPassConfig.getProperty("PointsForMobInstance", 2);
 	}
-	
+
 	// World Exchange
 	public static boolean ENABLE_WORLD_EXCHANGE;
 	public static Language WORLD_EXCHANGE_DEFAULT_LANG;
@@ -3262,7 +3246,7 @@ public class Config
 	public static final int CLAN_EXP_RATE = 1;
 
 	public static boolean APPEARANCE_STONE_RETURT_STONE = false;
-	
+
 	public static void loadWorldExchangeSettings()
 	{
 		ExProperties worldExchangeconfig = load(WORLD_EXCHANGE_CONFIG_FILE);
@@ -3278,22 +3262,20 @@ public class Config
 		WORLD_EXCHANGE_ITEM_BACK_PERIOD = worldExchangeconfig.getProperty("ItemBackPeriod", 120);
 		WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD = worldExchangeconfig.getProperty("PaymentTakePeriod", 120);
 	}
-	
 
-	
 	public static void loadGMAccess()
 	{
 		gmlist.clear();
 		loadGMAccess(new File(GM_PERSONAL_ACCESS_FILE));
 		File dir = new File(GM_ACCESS_FILES_DIR);
-		if (!dir.exists() || !dir.isDirectory())
+		if(!dir.exists() || !dir.isDirectory())
 		{
 			_log.info("Dir " + dir.getAbsolutePath() + " not exists.");
 			return;
 		}
-		for (File f : dir.listFiles())
+		for(File f : dir.listFiles())
 		{
-			if (!f.isDirectory() && f.getName().endsWith(".xml"))
+			if(!f.isDirectory() && f.getName().endsWith(".xml"))
 			{
 				loadGMAccess(f);
 			}
@@ -3311,21 +3293,21 @@ public class Config
 			factory.setIgnoringComments(true);
 			Document doc = factory.newDocumentBuilder().parse(file);
 
-			for (Node z = doc.getFirstChild(); z != null; z = z.getNextSibling())
+			for(Node z = doc.getFirstChild(); z != null; z = z.getNextSibling())
 			{
-				for (Node n = z.getFirstChild(); n != null; n = n.getNextSibling())
+				for(Node n = z.getFirstChild(); n != null; n = n.getNextSibling())
 				{
-					if (!n.getNodeName().equalsIgnoreCase("char"))
+					if(!n.getNodeName().equalsIgnoreCase("char"))
 					{
 						continue;
 					}
 					PlayerAccess pa = new PlayerAccess();
-					for (Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+					for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
 					{
 						Class<?> cls = pa.getClass();
 						String node = d.getNodeName();
 
-						if (node.equalsIgnoreCase("#text"))
+						if(node.equalsIgnoreCase("#text"))
 						{
 							continue;
 						}
@@ -3333,17 +3315,17 @@ public class Config
 						{
 							fld = cls.getField(node);
 						}
-						catch (NoSuchFieldException e)
+						catch(NoSuchFieldException e)
 						{
 							_log.info("Not found desclarate ACCESS name: " + node + " in XML Player access Object");
 							continue;
 						}
 
-						if (fld.getType().getName().equalsIgnoreCase("boolean"))
+						if(fld.getType().getName().equalsIgnoreCase("boolean"))
 						{
 							fld.setBoolean(pa, Boolean.parseBoolean(d.getAttributes().getNamedItem("set").getNodeValue()));
 						}
-						else if (fld.getType().getName().equalsIgnoreCase("int"))
+						else if(fld.getType().getName().equalsIgnoreCase("int"))
 						{
 							fld.setInt(pa, Integer.valueOf(d.getAttributes().getNamedItem("set").getNodeValue()));
 						}
@@ -3352,7 +3334,7 @@ public class Config
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -3370,7 +3352,7 @@ public class Config
 		{
 			result.load(file);
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("Error loading config : " + file.getName() + "!");
 		}
@@ -3380,23 +3362,19 @@ public class Config
 
 	public static boolean containsAbuseWord(String s)
 	{
-		if (ABUSEWORD_PATTERN == null)
-		{
-			return false;
-		}
+		if(ABUSEWORD_PATTERN == null)
+		{ return false; }
 
 		return ABUSEWORD_PATTERN.matcher(s).matches();
 	}
 
 	public static String replaceAbuseWords(String text, String censore)
 	{
-		if (ABUSEWORD_PATTERN == null)
-		{
-			return text;
-		}
+		if(ABUSEWORD_PATTERN == null)
+		{ return text; }
 
 		Matcher m = ABUSEWORD_PATTERN.matcher(text);
-		while (m.find())
+		while(m.find())
 		{
 			text = text.replace(m.group(1), censore);
 		}
@@ -3433,8 +3411,7 @@ public class Config
 	}
 
 	private Config()
-	{
-	}
+	{}
 
 	public static void load()
 	{
@@ -3460,7 +3437,7 @@ public class Config
 		loadPvpbookSettings();
 		loadHuntPass();
 		loadWorldExchangeSettings();
-		
+
 		abuseLoad();
 		loadGMAccess();
 		pvpManagerSettings();
@@ -3478,10 +3455,10 @@ public class Config
 			String line;
 			int count = 0;
 
-			while ((line = lnr.readLine()) != null)
+			while((line = lnr.readLine()) != null)
 			{
 				StringTokenizer st = new StringTokenizer(line, "\n\r");
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 				{
 					abuses.append(st.nextToken());
 					abuses.append("|");
@@ -3489,7 +3466,7 @@ public class Config
 				}
 			}
 
-			if (count > 0)
+			if(count > 0)
 			{
 				String abusesGroup = abuses.toString();
 				abusesGroup = abusesGroup.substring(0, abusesGroup.length() - 1);
@@ -3497,7 +3474,7 @@ public class Config
 			}
 			_log.info("Abuse: Loaded " + count + " abuse words.");
 		}
-		catch (IOException e1)
+		catch(IOException e1)
 		{
 			_log.warn("Error reading abuse: " + e1);
 		}

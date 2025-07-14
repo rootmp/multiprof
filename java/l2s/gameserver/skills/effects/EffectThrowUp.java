@@ -32,16 +32,16 @@ public class EffectThrowUp extends EffectFlyAbstract
 		double dz = effector.getZ() - curZ;
 		double distance = Math.sqrt(dx * dx + dy * dy);
 
-		if (distance > 2000.0D)
+		if(distance > 2000.0D)
 			return;
 
 		int offset = Math.min((int) distance + getFlyRadius(), 1400);
 		offset = (int) (offset + Math.abs(dz));
 
-		if (offset < 5)
+		if(offset < 5)
 			offset = 5;
 
-		if (distance < 1.0D)
+		if(distance < 1.0D)
 			return;
 
 		double sin = dy / distance;
@@ -52,7 +52,7 @@ public class EffectThrowUp extends EffectFlyAbstract
 		int z = effected.getZ();
 
 		Location destiny = GeoEngine.moveCheck(effected.getX(), effected.getY(), effected.getZ(), x, y, effected.getGeoIndex());
-		if (destiny == null)
+		if(destiny == null)
 			return;
 
 		x = destiny.getX();

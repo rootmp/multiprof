@@ -20,10 +20,10 @@ public class AdminGmChat implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanAnnounce)
+		if(!activeChar.getPlayerAccess().CanAnnounce)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_gmchat:
 				try
@@ -32,20 +32,19 @@ public class AdminGmChat implements IAdminCommandHandler
 					SayPacket2 cs = new SayPacket2(0, ChatType.ALLIANCE, 0, activeChar.getName(), text);
 					GmListTable.broadcastToGMs(cs);
 				}
-				catch (StringIndexOutOfBoundsException e)
-				{
-				}
+				catch(StringIndexOutOfBoundsException e)
+				{}
 				break;
 			case admin_snoop:
 			{
 
 				GameObject target = activeChar.getTarget();
-				if (target == null)
+				if(target == null)
 				{
 					activeChar.sendMessage("You must select a target.");
 					return false;
 				}
-				if (!target.isPlayer())
+				if(!target.isPlayer())
 				{
 					activeChar.sendMessage("Target must be a player.");
 					return false;

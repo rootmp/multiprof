@@ -58,7 +58,7 @@ public class RelationChangedPacket implements IClientOutgoingPacket
 
 		public long getRelationState()
 		{
-			return getId() > 0 ? getId() :(long) Math.pow(2, ordinal()) * (SURVEILLANCE == this ? 10000_0000L : 1L);
+			return getId() > 0 ? getId() : (long) Math.pow(2, ordinal()) * (SURVEILLANCE == this ? 10000_0000L : 1L);
 		}
 
 		public int getId()
@@ -110,16 +110,16 @@ public class RelationChangedPacket implements IClientOutgoingPacket
 		data.karma = karma;
 		data.pvpFlag = pvpFlag;
 		data.isAutoAttackable = isAutoAttackable;
-		data.relation |=  relationType.getRelationState();
+		data.relation |= relationType.getRelationState();
 
 		_datas.add(data);
 
-		if (_datas.size() > 1)
+		if(_datas.size() > 1)
 			_mask |= SEND_MULTI;
-		else if (_datas.size() == 1)
+		else if(_datas.size() == 1)
 			_mask |= SEND_ONE;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

@@ -12,7 +12,7 @@ public final class PledgeContributionHolder extends AbstractHolder
 
 	private int donationsAvailable = 3;
 	private final Map<Integer, ClanContribution> _contributions = new HashMap<Integer, ClanContribution>();
-	
+
 	public static PledgeContributionHolder getInstance()
 	{
 		return _instance;
@@ -30,7 +30,7 @@ public final class PledgeContributionHolder extends AbstractHolder
 	{
 		return donationsAvailable;
 	}
-	
+
 	@Override
 	public int size()
 	{
@@ -46,7 +46,7 @@ public final class PledgeContributionHolder extends AbstractHolder
 	public void setDonationsAvailable(int value)
 	{
 		donationsAvailable = value;
-		
+
 	}
 
 	public ClanContribution getContribution(int _donateType)

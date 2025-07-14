@@ -78,7 +78,7 @@ public class Vehicle extends Boat
 	@Override
 	public IClientOutgoingPacket getOnPacket(Playable playable, Location location)
 	{
-		if (!playable.isPlayer())
+		if(!playable.isPlayer())
 			return null;
 
 		return new GetOnVehiclePacket(playable.getPlayer(), this, location);
@@ -87,7 +87,7 @@ public class Vehicle extends Boat
 	@Override
 	public IClientOutgoingPacket getOffPacket(Playable playable, Location location)
 	{
-		if (!playable.isPlayer())
+		if(!playable.isPlayer())
 			return null;
 
 		return new GetOffVehiclePacket(playable.getPlayer(), this, location);

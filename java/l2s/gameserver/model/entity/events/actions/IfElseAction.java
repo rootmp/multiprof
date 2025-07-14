@@ -27,7 +27,7 @@ public class IfElseAction implements EventAction
 	public void call(Event event)
 	{
 		List<EventAction> list = (_reverse ? !event.ifVar(_name) : event.ifVar(_name)) ? _ifList : _elseList;
-		for (EventAction action : list)
+		for(EventAction action : list)
 			action.call(event);
 	}
 

@@ -1,18 +1,18 @@
 package l2s.gameserver.data.xml.holder;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.relics.RelicsProb;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.relics.RelicsProb;
+
 public final class RelicsSynthesisHolder extends AbstractHolder
 {
 	private static final RelicsSynthesisHolder _instance = new RelicsSynthesisHolder();
-	private Map<Integer, List<RelicsProb>> _relicsSynthesis  = new HashMap<>();
-	
+	private Map<Integer, List<RelicsProb>> _relicsSynthesis = new HashMap<>();
+
 	public static RelicsSynthesisHolder getInstance()
 	{
 		return _instance;
@@ -37,6 +37,6 @@ public final class RelicsSynthesisHolder extends AbstractHolder
 
 	public List<RelicsProb> getRelicsProb(int key)
 	{
-		return _relicsSynthesis.getOrDefault(key, Collections.emptyList());    
+		return _relicsSynthesis.getOrDefault(key, Collections.emptyList());
 	}
 }

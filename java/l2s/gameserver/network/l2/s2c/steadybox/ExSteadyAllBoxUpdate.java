@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c.steadybox;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -26,20 +26,20 @@ public class ExSteadyAllBoxUpdate implements IClientOutgoingPacket
 		packetWriter.writeD(_player.getVarInt(PlayerVariables.SB_KILLED_PLAYERS, 0)); // players killed
 		packetWriter.writeD(count);
 
-		for (int i = 1; i <= count; i++)
+		for(int i = 1; i <= count; i++)
 		{
 			packetWriter.writeD(i); // slot id
 
 			int boxType = _player.getVarInt(PlayerVariables.SB_BOX_TYPE + "_" + i, 1);
 			long rewardTime = _player.getVarLong(PlayerVariables.SB_REWARD_TIME + "_" + i, -2);
 
-			if (rewardTime == -2)
+			if(rewardTime == -2)
 			{
 				packetWriter.writeD(1); // open type - 1 not available, 2- can start timer, 3 - timer going, 4 - can get
-							// reward
+				// reward
 				packetWriter.writeD(0); // box type, 1 - basic, 2 - advanced, 3 - top
 			}
-			else if (rewardTime == -1)
+			else if(rewardTime == -1)
 			{
 				packetWriter.writeD(2);
 				packetWriter.writeD(boxType);
@@ -47,7 +47,7 @@ public class ExSteadyAllBoxUpdate implements IClientOutgoingPacket
 			else
 			{
 				int diffTime = (int) ((rewardTime - System.currentTimeMillis()) / 1000);
-				if (diffTime > 0)
+				if(diffTime > 0)
 				{
 					packetWriter.writeD(3);
 					packetWriter.writeD(boxType);
@@ -61,7 +61,7 @@ public class ExSteadyAllBoxUpdate implements IClientOutgoingPacket
 		}
 
 		int timeToReward = (int) ((_player.getVarLong(PlayerVariables.SB_REWARD_TIME + "_" + 1, -2) - System.currentTimeMillis()) / 1000);
-		if (timeToReward < 0)
+		if(timeToReward < 0)
 		{
 			timeToReward = 0;
 		}

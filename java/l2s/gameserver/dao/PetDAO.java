@@ -44,7 +44,7 @@ public class PetDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, itemObjId);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 				petObjectId = rset.getInt("objId");
 
 			DbUtils.close(statement, rset);
@@ -52,10 +52,10 @@ public class PetDAO
 			Player player = owner.getPlayer();
 
 			PetInstance pet = player.getPet();
-			if (pet != null && pet.getObjectId() == petObjectId)
+			if(pet != null && pet.getObjectId() == petObjectId)
 				pet.unSummon(false);
 
-			if (player != null && player.isMounted() && player.getMountControlItemObjId() == itemObjId)
+			if(player != null && player.isMounted() && player.getMountControlItemObjId() == itemObjId)
 				player.getMount().onControlItemDelete();
 
 			// if it's a pet control item, delete the pet
@@ -63,7 +63,7 @@ public class PetDAO
 			statement.setInt(1, itemObjId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharNameTable.deletePet(ItemInstance, Creature): " + e, e);
 		}

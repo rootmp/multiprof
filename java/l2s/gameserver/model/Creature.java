@@ -168,14 +168,13 @@ public abstract class Creature extends GameObject
 	protected long _attackReuseEndTime;
 	private long _lastAttackTime = -1;
 	private int _poleAttackCount = 0;
-	private static final double[] POLE_VAMPIRIC_MOD =
-	{
-		1,
-		0.9,
-		0,
-		7,
-		0.2,
-		0.01
+	private static final double[] POLE_VAMPIRIC_MOD = {
+			1,
+			0.9,
+			0,
+			7,
+			0.2,
+			0.01
 	};
 
 	/** HashMap(Integer, L2Skill) containing all skills of the L2Character */
@@ -270,7 +269,7 @@ public abstract class Creature extends GameObject
 		StatFunctions.addPredefinedFuncs(this);
 		reference = new L2Reference<Creature>(this);
 		// We start storing the player after a full restoring.
-		if (!isPlayer())
+		if(!isPlayer())
 		{
 			GameObjectsStorage.put(this);
 		}
@@ -289,17 +288,17 @@ public abstract class Creature extends GameObject
 
 	public final void abortAttack(boolean force, boolean message)
 	{
-		if (isAttackingNow())
+		if(isAttackingNow())
 		{
 			_attackEndTime = 0;
-			if (force)
+			if(force)
 			{
 				_isAttackAborted = true;
 			}
 
 			getAI().setIntention(AI_INTENTION_ACTIVE);
 
-			if (isPlayer() && message)
+			if(isPlayer() && message)
 			{
 				sendActionFailed();
 				sendPacket(new SystemMessage(SystemMessage.C1S_ATTACK_FAILED).addName(this));
@@ -311,9 +310,9 @@ public abstract class Creature extends GameObject
 	{
 		String name = "";
 		int id = 0;
-		if (attacker != null)
+		if(attacker != null)
 		{
-			if (attacker.isPlayable())
+			if(attacker.isPlayable())
 			{
 				name = attacker.getName();
 			}
@@ -324,12 +323,12 @@ public abstract class Creature extends GameObject
 		}
 
 		int size = _damageInfo.size();
-		while (size > 29)
+		while(size > 29)
 		{
 			_damageInfo.remove(1);
 			size--;
 		}
-		if (skill != null)
+		if(skill != null)
 		{
 			type = 0;
 		}
@@ -350,29 +349,29 @@ public abstract class Creature extends GameObject
 	{
 		boolean cancelled = false;
 
-		if (normalCast)
+		if(normalCast)
 		{
-			if (getSkillCast(SkillCastingType.NORMAL).abortCast(force))
+			if(getSkillCast(SkillCastingType.NORMAL).abortCast(force))
 			{
 				cancelled = true;
 			}
 		}
 
-		if (dualCast)
+		if(dualCast)
 		{
-			if (getSkillCast(SkillCastingType.NORMAL_SECOND).abortCast(force))
+			if(getSkillCast(SkillCastingType.NORMAL_SECOND).abortCast(force))
 			{
 				cancelled = true;
 			}
 		}
 
-		if (cancelled)
+		if(cancelled)
 		{
 			broadcastPacket(new MagicSkillCanceled(getObjectId())); // broadcast packet to stop animations client-side
 
 			getAI().setIntention(AI_INTENTION_ACTIVE);
 
-			if (isPlayer() && message)
+			if(isPlayer() && message)
 			{
 				sendPacket(SystemMsg.YOUR_CASTING_HAS_BEEN_INTERRUPTED);
 			}
@@ -387,24 +386,24 @@ public abstract class Creature extends GameObject
 	// Reworked by Rivelia.
 	private double reflectDamage(Creature attacker, Skill skill, double damage)
 	{
-		if (isDead() || (damage <= 0) || !attacker.checkRange(attacker, this) || ((getCurrentHp() + getCurrentCp()) <= damage))
-		{
-			return 0.;
-		}
+		if(isDead() || (damage <= 0) || !attacker.checkRange(attacker, this) || ((getCurrentHp() + getCurrentCp()) <= damage))
+		{ return 0.; }
 
-		final boolean bow = (attacker.getBaseStats().getAttackType() == WeaponType.BOW) || (attacker.getBaseStats().getAttackType() == WeaponType.CROSSBOW) || (attacker.getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW) || (attacker.getBaseStats().getAttackType() == WeaponType.FIREARMS);
+		final boolean bow = (attacker.getBaseStats().getAttackType() == WeaponType.BOW)
+				|| (attacker.getBaseStats().getAttackType() == WeaponType.CROSSBOW) || (attacker.getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW)
+				|| (attacker.getBaseStats().getAttackType() == WeaponType.FIREARMS);
 		final double resistReflect = 1 - (attacker.getStat().calc(Stats.RESIST_REFLECT_DAM, 0, null, null) * 0.01);
 
 		double value = 0.;
 		double chanceValue = 0.;
-		if (skill != null)
+		if(skill != null)
 		{
-			if (skill.isMagic())
+			if(skill.isMagic())
 			{
 				chanceValue = getStat().calc(Stats.REFLECT_AND_BLOCK_MSKILL_DAMAGE_CHANCE, 0, attacker, skill);
 				value = getStat().calc(Stats.REFLECT_MSKILL_DAMAGE_PERCENT, 0, attacker, skill);
 			}
-			else if (skill.isPhysic())
+			else if(skill.isPhysic())
 			{
 				chanceValue = getStat().calc(Stats.REFLECT_AND_BLOCK_PSKILL_DAMAGE_CHANCE, 0, attacker, skill);
 				value = getStat().calc(Stats.REFLECT_PSKILL_DAMAGE_PERCENT, 0, attacker, skill);
@@ -413,7 +412,7 @@ public abstract class Creature extends GameObject
 		else
 		{
 			chanceValue = getStat().calc(Stats.REFLECT_AND_BLOCK_DAMAGE_CHANCE, 0, attacker, null);
-			if (bow)
+			if(bow)
 			{
 				value = getStat().calc(Stats.REFLECT_BOW_DAMAGE_PERCENT, 0, attacker, null);
 			}
@@ -424,7 +423,7 @@ public abstract class Creature extends GameObject
 		}
 
 		// If we are not lucky, set back value to 0, otherwise set it equal to damage.
-		if ((chanceValue > 0) && Rnd.chance(chanceValue))
+		if((chanceValue > 0) && Rnd.chance(chanceValue))
 		{
 			chanceValue = damage;
 		}
@@ -433,14 +432,14 @@ public abstract class Creature extends GameObject
 			chanceValue = 0.;
 		}
 
-		if ((value > 0) || (chanceValue > 0))
+		if((value > 0) || (chanceValue > 0))
 		{
 			value = (((value / 100.) * damage) + chanceValue) * resistReflect;
 			// @Rivelia. If config is on: reflected damage cannot exceed enemy's P. Def.
-			if (Config.REFLECT_DAMAGE_CAPPED_BY_PDEF)
+			if(Config.REFLECT_DAMAGE_CAPPED_BY_PDEF)
 			{
 				final int xPDef = attacker.getPDef(this);
-				if (xPDef > 0)
+				if(xPDef > 0)
 				{
 					value = Math.min(value, xPDef);
 				}
@@ -458,47 +457,44 @@ public abstract class Creature extends GameObject
 
 	private void absorbDamageHP(Creature target, Skill skill, double damage)
 	{
-		if (target.isDead() || (damage <= 0))
+		if(target.isDead() || (damage <= 0))
+		{ return; }
+
+		if(!Config.SKILL_ABSORB)
 		{
-			return;
+			if(skill != null)
+			{ return; }
 		}
 
-		if (!Config.SKILL_ABSORB)
+		final boolean bow = (getBaseStats().getAttackType() == WeaponType.BOW) || (getBaseStats().getAttackType() == WeaponType.CROSSBOW)
+				|| (getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW) || (getBaseStats().getAttackType() == WeaponType.FIREARMS);
+		if(!Config.BOW_ABSORB)
 		{
-			if (skill != null)
-			{
-				return;
-			}
+			if(bow && (skill == null))
+			{ return; }
 		}
-
-		final boolean bow = (getBaseStats().getAttackType() == WeaponType.BOW) || (getBaseStats().getAttackType() == WeaponType.CROSSBOW) || (getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW) || (getBaseStats().getAttackType() == WeaponType.FIREARMS);
-		if (!Config.BOW_ABSORB)
+		final boolean meele = (getBaseStats().getAttackType() == WeaponType.SWORD) || (getBaseStats().getAttackType() == WeaponType.BLUNT)
+				|| (getBaseStats().getAttackType() == WeaponType.DAGGER) || (getBaseStats().getAttackType() == WeaponType.POLE)
+				|| (getBaseStats().getAttackType() == WeaponType.FIST) || (getBaseStats().getAttackType() == WeaponType.DUAL)
+				|| (getBaseStats().getAttackType() == WeaponType.DUALFIST) || (getBaseStats().getAttackType() == WeaponType.BIGSWORD)
+				|| (getBaseStats().getAttackType() == WeaponType.BIGBLUNT) || (getBaseStats().getAttackType() == WeaponType.RAPIER)
+				|| (getBaseStats().getAttackType() == WeaponType.ANCIENTSWORD) || (getBaseStats().getAttackType() == WeaponType.DUALDAGGER)
+				|| (getBaseStats().getAttackType() == WeaponType.DUALBLUNT);
+		if(!Config.PHYS_ABSORB)
 		{
-			if (bow && (skill == null))
-			{
-				return;
-			}
+			if(meele && (skill == null))
+			{ return; }
 		}
-		final boolean meele = (getBaseStats().getAttackType() == WeaponType.SWORD) || (getBaseStats().getAttackType() == WeaponType.BLUNT) || (getBaseStats().getAttackType() == WeaponType.DAGGER) || (getBaseStats().getAttackType() == WeaponType.POLE) || (getBaseStats().getAttackType() == WeaponType.FIST) || (getBaseStats().getAttackType() == WeaponType.DUAL) || (getBaseStats().getAttackType() == WeaponType.DUALFIST) || (getBaseStats().getAttackType() == WeaponType.BIGSWORD) || (getBaseStats().getAttackType() == WeaponType.BIGBLUNT) || (getBaseStats().getAttackType() == WeaponType.RAPIER) || (getBaseStats().getAttackType() == WeaponType.ANCIENTSWORD) || (getBaseStats().getAttackType() == WeaponType.DUALDAGGER) || (getBaseStats().getAttackType() == WeaponType.DUALBLUNT);
-		if (!Config.PHYS_ABSORB)
-		{
-			if (meele && (skill == null))
-			{
-				return;
-			}
-		}
-		if (target.isDamageBlocked(this))
-		{
-			return;
-		}
+		if(target.isDamageBlocked(this))
+		{ return; }
 
 		final double poleMod = POLE_VAMPIRIC_MOD[Math.max(0, Math.min(_poleAttackCount, POLE_VAMPIRIC_MOD.length - 1))];
 		final double absorb = poleMod * getStat().calc(Stats.VAMPIRIC_ATTACK, 0, this, null);
 
-		if ((absorb > 0) && !target.isServitor() && !target.isInvulnerable())
+		if((absorb > 0) && !target.isServitor() && !target.isInvulnerable())
 		{
 			final double limit = (getStat().calc(Stats.HP_LIMIT, null, null) * getMaxHp()) / 100.;
-			if (getCurrentHp() < limit)
+			if(getCurrentHp() < limit)
 			{
 				double absorbDamage = (damage * absorb) / 100.;
 				absorbDamage = Math.min(absorbDamage, (int) target.getCurrentHp());
@@ -510,47 +506,44 @@ public abstract class Creature extends GameObject
 
 	private void absorbDamageMP(Creature target, Skill skill, double damage)
 	{
-		if (target.isDead() || (damage <= 0))
+		if(target.isDead() || (damage <= 0))
+		{ return; }
+
+		if(!Config.SKILL_ABSORBMP)
 		{
-			return;
+			if(skill != null)
+			{ return; }
 		}
 
-		if (!Config.SKILL_ABSORBMP)
+		final boolean bow = (getBaseStats().getAttackType() == WeaponType.BOW) || (getBaseStats().getAttackType() == WeaponType.CROSSBOW)
+				|| (getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW) || (getBaseStats().getAttackType() == WeaponType.FIREARMS);
+		if(!Config.BOW_ABSORBMP)
 		{
-			if (skill != null)
-			{
-				return;
-			}
+			if(bow && (skill == null))
+			{ return; }
 		}
-
-		final boolean bow = (getBaseStats().getAttackType() == WeaponType.BOW) || (getBaseStats().getAttackType() == WeaponType.CROSSBOW) || (getBaseStats().getAttackType() == WeaponType.TWOHANDCROSSBOW) || (getBaseStats().getAttackType() == WeaponType.FIREARMS);
-		if (!Config.BOW_ABSORBMP)
+		final boolean meele = (getBaseStats().getAttackType() == WeaponType.SWORD) || (getBaseStats().getAttackType() == WeaponType.BLUNT)
+				|| (getBaseStats().getAttackType() == WeaponType.DAGGER) || (getBaseStats().getAttackType() == WeaponType.POLE)
+				|| (getBaseStats().getAttackType() == WeaponType.FIST) || (getBaseStats().getAttackType() == WeaponType.DUAL)
+				|| (getBaseStats().getAttackType() == WeaponType.DUALFIST) || (getBaseStats().getAttackType() == WeaponType.BIGSWORD)
+				|| (getBaseStats().getAttackType() == WeaponType.BIGBLUNT) || (getBaseStats().getAttackType() == WeaponType.RAPIER)
+				|| (getBaseStats().getAttackType() == WeaponType.ANCIENTSWORD) || (getBaseStats().getAttackType() == WeaponType.DUALDAGGER)
+				|| (getBaseStats().getAttackType() == WeaponType.DUALBLUNT);
+		if(!Config.PHYS_ABSORBMP)
 		{
-			if (bow && (skill == null))
-			{
-				return;
-			}
+			if(meele && (skill == null))
+			{ return; }
 		}
-		final boolean meele = (getBaseStats().getAttackType() == WeaponType.SWORD) || (getBaseStats().getAttackType() == WeaponType.BLUNT) || (getBaseStats().getAttackType() == WeaponType.DAGGER) || (getBaseStats().getAttackType() == WeaponType.POLE) || (getBaseStats().getAttackType() == WeaponType.FIST) || (getBaseStats().getAttackType() == WeaponType.DUAL) || (getBaseStats().getAttackType() == WeaponType.DUALFIST) || (getBaseStats().getAttackType() == WeaponType.BIGSWORD) || (getBaseStats().getAttackType() == WeaponType.BIGBLUNT) || (getBaseStats().getAttackType() == WeaponType.RAPIER) || (getBaseStats().getAttackType() == WeaponType.ANCIENTSWORD) || (getBaseStats().getAttackType() == WeaponType.DUALDAGGER) || (getBaseStats().getAttackType() == WeaponType.DUALBLUNT);
-		if (!Config.PHYS_ABSORBMP)
-		{
-			if (meele && (skill == null))
-			{
-				return;
-			}
-		}
-		if (target.isDamageBlocked(this))
-		{
-			return;
-		}
+		if(target.isDamageBlocked(this))
+		{ return; }
 
 		final double poleMod = POLE_VAMPIRIC_MOD[Math.max(0, Math.min(_poleAttackCount, POLE_VAMPIRIC_MOD.length - 1))];
 
 		final double absorb = poleMod * getStat().calc(Stats.MP_VAMPIRIC_ATTACK, 0, target, null);
-		if ((absorb > 0) && !target.isServitor() && !target.isInvulnerable())
+		if((absorb > 0) && !target.isServitor() && !target.isInvulnerable())
 		{
 			final double limit = (getStat().calc(Stats.MP_LIMIT, null, null) * getMaxMp()) / 100.;
-			if (getCurrentMp() < limit)
+			if(getCurrentMp() < limit)
 			{
 				double absorbDamage = (damage * absorb) / 100.;
 				absorbDamage = Math.min(absorbDamage, (int) target.getCurrentMp());
@@ -561,26 +554,22 @@ public abstract class Creature extends GameObject
 
 	public double absorbToEffector(Creature attacker, double damage)
 	{
-		if (damage == 0)
-		{
-			return 0;
-		}
+		if(damage == 0)
+		{ return 0; }
 
 		final double transferToEffectorDam = getStat().calc(Stats.TRANSFER_TO_EFFECTOR_DAMAGE_PERCENT, 0.);
-		if (transferToEffectorDam > 0)
+		if(transferToEffectorDam > 0)
 		{
 			final Collection<Abnormal> abnormals = getAbnormalList().values();
-			if (abnormals.isEmpty())
-			{
-				return damage;
-			}
+			if(abnormals.isEmpty())
+			{ return damage; }
 
 			// TODO: Rewrite.
-			for (final Abnormal abnormal : abnormals)
+			for(final Abnormal abnormal : abnormals)
 			{
-				for (final EffectHandler effect : abnormal.getEffects())
+				for(final EffectHandler effect : abnormal.getEffects())
 				{
-					if (!effect.getName().equalsIgnoreCase("AbsorbDamageToEffector"))
+					if(!effect.getName().equalsIgnoreCase("AbsorbDamageToEffector"))
 					{
 						continue;
 					}
@@ -588,19 +577,16 @@ public abstract class Creature extends GameObject
 					final Creature effector = abnormal.getEffector();
 					// On a dead character, not an online player - we do not give absorption, and
 					// not on ourselves
-					if ((effector == this) || effector.isDead() || !isInRange(effector, 1200))
-					{
-						return damage;
-					}
+					if((effector == this) || effector.isDead() || !isInRange(effector, 1200))
+					{ return damage; }
 
 					final Player thisPlayer = getPlayer();
 					final Player effectorPlayer = effector.getPlayer();
-					if ((thisPlayer != null) && (effectorPlayer != null))
+					if((thisPlayer != null) && (effectorPlayer != null))
 					{
-						if ((thisPlayer != effectorPlayer) && (!thisPlayer.isOnline() || !thisPlayer.isInParty() || (thisPlayer.getParty() != effectorPlayer.getParty())))
-						{
-							return damage;
-						}
+						if((thisPlayer != effectorPlayer)
+								&& (!thisPlayer.isOnline() || !thisPlayer.isInParty() || (thisPlayer.getParty() != effectorPlayer.getParty())))
+						{ return damage; }
 					}
 					else
 					{
@@ -609,7 +595,7 @@ public abstract class Creature extends GameObject
 
 					final double transferDamage = (damage * transferToEffectorDam) * .01;
 
-					if (effector.getCurrentHp() > transferDamage)
+					if(effector.getCurrentHp() > transferDamage)
 					{
 						damage -= transferDamage;
 						effector.reduceCurrentHp(transferDamage, effector, null, false, false, !attacker.isPlayable(), false, true, false, true);
@@ -622,21 +608,17 @@ public abstract class Creature extends GameObject
 
 	private double reduceDamageByMp(Creature attacker, double damage)
 	{
-		if (damage == 0)
-		{
-			return 0;
-		}
+		if(damage == 0)
+		{ return 0; }
 
 		final double power = getStat().calc(Stats.TRANSFER_TO_MP_DAMAGE_PERCENT, 0.);
-		if (power <= 0)
-		{
-			return damage;
-		}
+		if(power <= 0)
+		{ return damage; }
 
 		final double mpDam = damage - ((damage * power) / 100.);
-		if (mpDam > 0)
+		if(mpDam > 0)
 		{
-			if (mpDam >= getCurrentMp())
+			if(mpDam >= getCurrentMp())
 			{
 				damage = mpDam - getCurrentMp();
 				sendPacket(SystemMsg.MP_BECAME_0_AND_THE_ARCANE_SHIELD_IS_DISAPPEARING);
@@ -665,21 +647,15 @@ public abstract class Creature extends GameObject
 
 	public SkillEntry addSkill(SkillEntry newSkillEntry)
 	{
-		if (newSkillEntry == null)
-		{
-			return null;
-		}
+		if(newSkillEntry == null)
+		{ return null; }
 
 		final SkillEntry oldSkillEntry = _skills.get(newSkillEntry.getId());
-		if (newSkillEntry.equals(oldSkillEntry))
-		{
-			return oldSkillEntry;
-		}
+		if(newSkillEntry.equals(oldSkillEntry))
+		{ return oldSkillEntry; }
 
-		if (isDisabledAnalogSkill(newSkillEntry.getId()))
-		{
-			return null;
-		}
+		if(isDisabledAnalogSkill(newSkillEntry.getId()))
+		{ return null; }
 
 		// Replace oldSkill by newSkill or Add the newSkill
 		_skills.put(newSkillEntry.getId(), newSkillEntry);
@@ -689,12 +665,12 @@ public abstract class Creature extends GameObject
 		disableAnalogSkills(newSkill);
 		disableSkillToReplace(newSkill);
 
-		if (oldSkillEntry != null)
+		if(oldSkillEntry != null)
 		{
 			final Skill oldSkill = oldSkillEntry.getTemplate();
-			if (oldSkill.isToggle())
+			if(oldSkill.isToggle())
 			{
-				if (oldSkill.getLevel() > newSkill.getLevel())
+				if(oldSkill.getLevel() > newSkill.getLevel())
 				{
 					getAbnormalList().stop(oldSkill, false);
 				}
@@ -704,11 +680,11 @@ public abstract class Creature extends GameObject
 			removeDisabledSkillToReplace(oldSkill);
 			removeTriggers(oldSkill);
 
-			if (oldSkill.isPassive())
+			if(oldSkill.isPassive())
 			{
 				getStat().removeFuncsByOwner(oldSkill);
 
-				for (final EffectTemplate et : oldSkill.getEffectTemplates(EffectUseType.NORMAL))
+				for(final EffectTemplate et : oldSkill.getEffectTemplates(EffectUseType.NORMAL))
 				{
 					getStat().removeFuncsByOwner(et.getHandler());
 				}
@@ -719,12 +695,12 @@ public abstract class Creature extends GameObject
 
 		addTriggers(newSkill);
 
-		if (newSkill.isPassive())
+		if(newSkill.isPassive())
 		{
 			// Add Func objects of newSkill to the calculator set of the L2Character
 			getStat().addFuncs(newSkill.getStatFuncs());
 
-			for (final EffectTemplate et : newSkill.getEffectTemplates(EffectUseType.NORMAL))
+			for(final EffectTemplate et : newSkill.getEffectTemplates(EffectUseType.NORMAL))
 			{
 				getStat().addFuncs(et.getHandler().getStatFuncs());
 			}
@@ -747,24 +723,22 @@ public abstract class Creature extends GameObject
 
 	public void altOnMagicUse(Creature aimingTarget, SkillEntry skillEntry)
 	{
-		if (isAlikeDead() || (skillEntry == null))
-		{
-			return;
-		}
+		if(isAlikeDead() || (skillEntry == null))
+		{ return; }
 
 		final Skill skill = skillEntry.getTemplate();
 		final int magicId = skill.getDisplayId();
 		final int level = skill.getDisplayLevel();
 		final Set<Creature> targets = skill.getTargets(skillEntry, this, aimingTarget, true);
-		if (!skill.isNotBroadcastable())
+		if(!skill.isNotBroadcastable())
 		{
 			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), magicId, level, 0, targets, SkillCastingType.NORMAL));
 		}
 		final double mpConsume2 = skill.getMpConsume2();
-		if (mpConsume2 > 0)
+		if(mpConsume2 > 0)
 		{
 			double mpConsume2WithStats;
-			if (skill.isMagic())
+			if(skill.isMagic())
 			{
 				mpConsume2WithStats = getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, mpConsume2, aimingTarget, skill);
 			}
@@ -773,7 +747,7 @@ public abstract class Creature extends GameObject
 				mpConsume2WithStats = getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, mpConsume2, aimingTarget, skill);
 			}
 
-			if (_currentMp < mpConsume2WithStats)
+			if(_currentMp < mpConsume2WithStats)
 			{
 				sendPacket(SystemMsg.NOT_ENOUGH_MP);
 				return;
@@ -785,24 +759,20 @@ public abstract class Creature extends GameObject
 
 	public final void forceUseSkill(SkillEntry skillEntry, Creature target)
 	{
-		if (skillEntry == null)
-		{
-			return;
-		}
+		if(skillEntry == null)
+		{ return; }
 
 		final Skill skill = skillEntry.getTemplate();
-		if (target == null)
+		if(target == null)
 		{
 			target = skill.getAimingTarget(this, getTarget());
-			if (target == null)
-			{
-				return;
-			}
+			if(target == null)
+			{ return; }
 		}
 
 		final Set<Creature> targets = skill.getTargets(skillEntry, this, target, true);
 
-		if (!skill.isNotBroadcastable())
+		if(!skill.isNotBroadcastable())
 		{
 			broadcastPacket(new MagicSkillUse(this, target, skill.getDisplayId(), skill.getDisplayLevel(), 0, 0));
 			broadcastPacket(new MagicSkillLaunchedPacket(getObjectId(), skill.getDisplayId(), skill.getDisplayLevel(), skill.getSubLevel(), targets, SkillCastingType.NORMAL));
@@ -813,68 +783,54 @@ public abstract class Creature extends GameObject
 
 	public void altUseSkill(SkillEntry skillEntry, Creature target)
 	{
-		if ((skillEntry == null) || isUnActiveSkill(skillEntry.getId()))
-		{
-			return;
-		}
+		if((skillEntry == null) || isUnActiveSkill(skillEntry.getId()))
+		{ return; }
 
 		final Skill skill = skillEntry.getTemplate();
-		if (isSkillDisabled(skill))
-		{
-			return;
-		}
+		if(isSkillDisabled(skill))
+		{ return; }
 
-		if (target == null)
+		if(target == null)
 		{
 			target = skill.getAimingTarget(this, getTarget());
-			if (target == null)
-			{
-				return;
-			}
+			if(target == null)
+			{ return; }
 		}
 
 		getListeners().onMagicUse(skill, target, true);
 
-		if (!skill.isHandler() && isPlayable())
+		if(!skill.isHandler() && isPlayable())
 		{
-			if ((skill.getItemConsumeId() > 0) && (skill.getItemConsume() > 0))
+			if((skill.getItemConsumeId() > 0) && (skill.getItemConsume() > 0))
 			{
-				if (skill.isItemConsumeFromMaster())
+				if(skill.isItemConsumeFromMaster())
 				{
 					final Player master = getPlayer();
-					if ((master == null) || !master.consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
-					{
-						return;
-					}
+					if((master == null) || !master.consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
+					{ return; }
 				}
-				else if (!consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
-				{
-					return;
-				}
+				else if(!consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
+				{ return; }
 			}
 		}
 
-		if (skill.getReferenceItemId() > 0)
+		if(skill.getReferenceItemId() > 0)
 		{
-			if (!consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
-			{
-				return;
-			}
+			if(!consumeItemMp(skill.getReferenceItemId(), skill.getReferenceItemMpConsume()))
+			{ return; }
 		}
 
-		if (skill.getEnergyConsume() > getAgathionEnergy())
-		{
-			return;
-		}
+		if(skill.getEnergyConsume() > getAgathionEnergy())
+		{ return; }
 
-		if (skill.getEnergyConsume() > 0)
+		if(skill.getEnergyConsume() > 0)
 		{
 			setAgathionEnergy(getAgathionEnergy() - skill.getEnergyConsume());
 		}
 
 		final long reuseDelay = Formulas.calcSkillReuseDelay(this, skill);
 
-		if (!skill.isToggle() && !skill.isNotBroadcastable())
+		if(!skill.isToggle() && !skill.isNotBroadcastable())
 		{
 			final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getDisplayLevel(), skill.getHitTime(), reuseDelay);
 			msu.setReuseSkillId(skill.getReuseSkillId());
@@ -887,8 +843,7 @@ public abstract class Creature extends GameObject
 	}
 
 	public void sendReuseMessage(Skill skill)
-	{
-	}
+	{}
 
 	public void broadcastPacket(IBroadcastPacket... packets)
 	{
@@ -904,12 +859,10 @@ public abstract class Creature extends GameObject
 
 	public void broadcastPacketToOthers(IBroadcastPacket... packets)
 	{
-		if (!isVisible() || (packets.length == 0))
-		{
-			return;
-		}
+		if(!isVisible() || (packets.length == 0))
+		{ return; }
 
-		for (final Player target : World.getAroundObservers(this))
+		for(final Player target : World.getAroundObservers(this))
 		{
 			target.sendPacket(packets);
 		}
@@ -922,10 +875,8 @@ public abstract class Creature extends GameObject
 
 	public void broadcastStatusUpdate()
 	{
-		if (!needStatusUpdate())
-		{
-			return;
-		}
+		if(!needStatusUpdate())
+		{ return; }
 
 		broadcastPacket(new StatusUpdate(this, StatusType.Normal, UpdateType.VCP_HP, UpdateType.VCP_MAXHP, UpdateType.VCP_MP, UpdateType.VCP_MAXMP));
 	}
@@ -949,17 +900,17 @@ public abstract class Creature extends GameObject
 		try
 		{
 			final Skill skill = skillEntry.getTemplate();
-			if (useActionSkills)
+			if(useActionSkills)
 			{
-				if (skill.isDebuff())
+				if(skill.isDebuff())
 				{
 					useTriggers(aimingTarget, TriggerType.OFFENSIVE_SKILL_USE, null, skill, 0);
 
-					if (skill.isMagic())
+					if(skill.isMagic())
 					{
 						useTriggers(aimingTarget, TriggerType.OFFENSIVE_MAGICAL_SKILL_USE, null, skill, 0);
 					}
-					else if (skill.isPhysic())
+					else if(skill.isPhysic())
 					{
 						useTriggers(aimingTarget, TriggerType.OFFENSIVE_PHYSICAL_SKILL_USE, null, skill, 0);
 					}
@@ -968,11 +919,11 @@ public abstract class Creature extends GameObject
 				{
 					useTriggers(aimingTarget, TriggerType.SUPPORT_SKILL_USE, null, skill, 0);
 
-					if (skill.isMagic())
+					if(skill.isMagic())
 					{
 						useTriggers(aimingTarget, TriggerType.SUPPORT_MAGICAL_SKILL_USE, null, skill, 0);
 					}
-					else if (skill.isPhysic())
+					else if(skill.isPhysic())
 					{
 						useTriggers(aimingTarget, TriggerType.SUPPORT_PHYSICAL_SKILL_USE, null, skill, 0);
 					}
@@ -982,22 +933,22 @@ public abstract class Creature extends GameObject
 			}
 
 			final Player player = getPlayer();
-			for (final Creature target : targets)
+			for(final Creature target : targets)
 			{
-				if (target == null)
+				if(target == null)
 				{
 					continue;
 				}
 
 				target.getListeners().onMagicHit(skill, this);
 
-				if ((player != null) && target.isNpc())
+				if((player != null) && target.isNpc())
 				{
 					final NpcInstance npc = (NpcInstance) target;
 					final List<QuestState> ql = player.getQuestsForEvent(npc, QuestEventType.MOB_TARGETED_BY_SKILL);
-					if (ql != null)
+					if(ql != null)
 					{
-						for (final QuestState qs : ql)
+						for(final QuestState qs : ql)
 						{
 							qs.getQuest().notifySkillUse(npc, skill, qs);
 						}
@@ -1009,7 +960,7 @@ public abstract class Creature extends GameObject
 
 			skill.onEndCast(this, targets);
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 		}
@@ -1033,7 +984,7 @@ public abstract class Creature extends GameObject
 	public void useTriggers(GameObject target, Set<Creature> targets, TriggerType type, Skill ex, Skill owner, StatTemplate triggersOwner, double damage)
 	{
 		Set<TriggerInfo> triggers = null;
-		switch (type)
+		switch(type)
 		{
 			case ON_START_CAST:
 			case ON_TICK_CAST:
@@ -1043,12 +994,12 @@ public abstract class Creature extends GameObject
 			case ON_EXIT_EFFECT:
 			case ON_FINISH_EFFECT:
 			case ON_REVIVE:
-				if (triggersOwner != null)
+				if(triggersOwner != null)
 				{
 					triggers = new CopyOnWriteArraySet<TriggerInfo>();
-					for (final TriggerInfo t : triggersOwner.getTriggerList())
+					for(final TriggerInfo t : triggersOwner.getTriggerList())
 					{
-						if (t.getType() == type)
+						if(t.getType() == type)
 						{
 							triggers.add(t);
 						}
@@ -1056,13 +1007,13 @@ public abstract class Creature extends GameObject
 				}
 				break;
 			case ON_CAST_SKILL:
-				if ((_triggers != null) && (_triggers.get(type) != null))
+				if((_triggers != null) && (_triggers.get(type) != null))
 				{
 					triggers = new CopyOnWriteArraySet<>();
-					for (final TriggerInfo t : _triggers.get(type))
+					for(final TriggerInfo t : _triggers.get(type))
 					{
 						final int skillID = (t.getArgs() == null) || t.getArgs().isEmpty() ? -1 : Integer.parseInt(t.getArgs());
-						if ((skillID == -1) || (skillID == owner.getId()))
+						if((skillID == -1) || (skillID == owner.getId()))
 						{
 							triggers.add(t);
 						}
@@ -1070,21 +1021,21 @@ public abstract class Creature extends GameObject
 				}
 				break;
 			default:
-				if (_triggers != null)
+				if(_triggers != null)
 				{
 					triggers = _triggers.get(type);
 				}
 				break;
 		}
 
-		if ((triggers != null) && !triggers.isEmpty())
+		if((triggers != null) && !triggers.isEmpty())
 		{
-			for (final TriggerInfo t : triggers)
+			for(final TriggerInfo t : triggers)
 			{
 				final SkillEntry skillEntry = t.getSkill();
-				if (skillEntry != null)
+				if(skillEntry != null)
 				{
-					if (!skillEntry.getTemplate().equals(ex))
+					if(!skillEntry.getTemplate().equals(ex))
 					{
 						useTriggerSkill(target == null ? getTarget() : target, targets, t, owner, damage);
 					}
@@ -1095,25 +1046,21 @@ public abstract class Creature extends GameObject
 
 	public void useTriggerSkill(GameObject target, Set<Creature> targets, TriggerInfo trigger, Skill owner, double damage)
 	{
-		if (!Rnd.chance(trigger.getChance()))
-		{
-			return;
-		}
+		if(!Rnd.chance(trigger.getChance()))
+		{ return; }
 
 		SkillEntry skillEntry = trigger.getSkill();
-		if (skillEntry == null)
-		{
-			return;
-		}
+		if(skillEntry == null)
+		{ return; }
 
 		Skill skill = skillEntry.getTemplate();
 		final Creature aimTarget = skill.getAimingTarget(this, target);
-		if ((aimTarget != null) && trigger.isIncreasing())
+		if((aimTarget != null) && trigger.isIncreasing())
 		{
 			int increasedTriggerLvl = 0;
-			for (final Abnormal effect : aimTarget.getAbnormalList())
+			for(final Abnormal effect : aimTarget.getAbnormalList())
 			{
-				if (effect.getSkill().getId() != skillEntry.getId())
+				if(effect.getSkill().getId() != skillEntry.getId())
 				{
 					continue;
 				}
@@ -1122,13 +1069,14 @@ public abstract class Creature extends GameObject
 				break;
 			}
 
-			if (increasedTriggerLvl == 0)
+			if(increasedTriggerLvl == 0)
 			{
-				loop: for (final Servitor servitor : aimTarget.getServitors())
+				loop:
+				for(final Servitor servitor : aimTarget.getServitors())
 				{
-					for (final Abnormal effect : servitor.getAbnormalList())
+					for(final Abnormal effect : servitor.getAbnormalList())
 					{
-						if (effect.getSkill().getId() != skillEntry.getId())
+						if(effect.getSkill().getId() != skillEntry.getId())
 						{
 							continue;
 						}
@@ -1139,10 +1087,10 @@ public abstract class Creature extends GameObject
 				}
 			}
 
-			if (increasedTriggerLvl > 0)
+			if(increasedTriggerLvl > 0)
 			{
 				final Skill newSkill = SkillHolder.getInstance().getSkill(skillEntry.getId(), increasedTriggerLvl + 1);
-				if (newSkill != null)
+				if(newSkill != null)
 				{
 					skillEntry = SkillEntry.makeSkillEntry(skillEntry.getEntryType(), newSkill);
 				}
@@ -1154,27 +1102,26 @@ public abstract class Creature extends GameObject
 			}
 		}
 
-		if ((skill.getReuseDelay() > 0) && isSkillDisabled(skill))
-		{
-			return;
-		}
+		if((skill.getReuseDelay() > 0) && isSkillDisabled(skill))
+		{ return; }
 
 		// DS: For chance skills with TARGET_SELF and "pvp" condition, the caster itself
 		// will be an aimTarget,
 		// therefore, in the conditions for the trigger, we check the real target.
 		final Creature realTarget = (target != null) && target.isCreature() ? (Creature) target : null;
-		if (trigger.checkCondition(this, realTarget, aimTarget, owner, damage) && skillEntry.checkCondition(this, aimTarget, true, true, true, false, true))
+		if(trigger.checkCondition(this, realTarget, aimTarget, owner, damage)
+				&& skillEntry.checkCondition(this, aimTarget, true, true, true, false, true))
 		{
-			if (targets == null)
+			if(targets == null)
 			{
 				targets = skill.getTargets(skillEntry, this, aimTarget, false);
 			}
 
-			if (!skill.isNotBroadcastable())
+			if(!skill.isNotBroadcastable())
 			{
-				if (trigger.getType() != TriggerType.IDLE)
+				if(trigger.getType() != TriggerType.IDLE)
 				{
-					for (final Creature cha : targets)
+					for(final Creature cha : targets)
 					{
 						broadcastPacket(new MagicSkillUse(this, cha, skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), 0, 0));
 					}
@@ -1189,34 +1136,26 @@ public abstract class Creature extends GameObject
 	private void triggerCancelEffects(TriggerInfo trigger)
 	{
 		final SkillEntry skillEntry = trigger.getSkill();
-		if (skillEntry == null)
-		{
-			return;
-		}
+		if(skillEntry == null)
+		{ return; }
 
 		getAbnormalList().stop(skillEntry.getTemplate(), false);
 	}
 
 	public boolean checkReflectSkill(Creature attacker, Skill skill)
 	{
-		if ((this == attacker) || isDead() || attacker.isDead() || !skill.isReflectable())
-		{
-			return false;
-		}
+		if((this == attacker) || isDead() || attacker.isDead() || !skill.isReflectable())
+		{ return false; }
 
 		// Do not reflect if there is invulnerability, otherwise it may cancel
-		if (isInvulnerable() || attacker.isInvulnerable() || !skill.isDebuff())
-		{
-			return false;
-		}
+		if(isInvulnerable() || attacker.isInvulnerable() || !skill.isDebuff())
+		{ return false; }
 
 		// Of the magic skills, only skills that cause damage to HP are reflected.
-		if (skill.isMagic() && (skill.getSkillType() != SkillType.MDAM))
-		{
-			return false;
-		}
+		if(skill.isMagic() && (skill.getSkillType() != SkillType.MDAM))
+		{ return false; }
 
-		if (Rnd.chance(getStat().calc(skill.isMagic() ? Stats.REFLECT_MAGIC_SKILL : Stats.REFLECT_PHYSIC_SKILL, 0, attacker, skill)))
+		if(Rnd.chance(getStat().calc(skill.isMagic() ? Stats.REFLECT_MAGIC_SKILL : Stats.REFLECT_PHYSIC_SKILL, 0, attacker, skill)))
 		{
 			sendPacket(new SystemMessage(SystemMessage.YOU_COUNTERED_C1S_ATTACK).addName(attacker));
 			attacker.sendPacket(new SystemMessage(SystemMessage.C1_DODGES_THE_ATTACK).addName(this));
@@ -1227,41 +1166,31 @@ public abstract class Creature extends GameObject
 
 	public boolean checkReflectDebuff(Creature effector, Skill skill)
 	{
-		if ((this == effector) || isDead() || effector.isDead() || effector.isTrap())
-		{
-			return false;
-		}
+		if((this == effector) || isDead() || effector.isDead() || effector.isTrap())
+		{ return false; }
 
-		if (effector.isRaid() || !skill.isReflectable())
-		{
-			return false;
-		}
+		if(effector.isRaid() || !skill.isReflectable())
+		{ return false; }
 
-		if (isInvulnerable() || effector.isInvulnerable() || !skill.isDebuff() || isDebuffImmune())
-		{
-			return false;
-		}
+		if(isInvulnerable() || effector.isInvulnerable() || !skill.isDebuff() || isDebuffImmune())
+		{ return false; }
 
 		return Rnd.chance(getStat().calc(skill.isMagic() ? Stats.REFLECT_MAGIC_DEBUFF : Stats.REFLECT_PHYSIC_DEBUFF, 0, effector, skill));
 	}
 
 	public void doCounterAttack(Skill skill, Creature attacker, boolean blow)
 	{
-		if (isDead() || isDamageBlocked(attacker) || attacker.isDamageBlocked(this))
-		{
-			return;
-		}
+		if(isDead() || isDamageBlocked(attacker) || attacker.isDamageBlocked(this))
+		{ return; }
 
-		if ((skill == null) || skill.hasEffects(EffectUseType.NORMAL) || skill.isMagic() || !skill.isDebuff() || (skill.getCastRange() > 200))
-		{
-			return;
-		}
+		if((skill == null) || skill.hasEffects(EffectUseType.NORMAL) || skill.isMagic() || !skill.isDebuff() || (skill.getCastRange() > 200))
+		{ return; }
 
-		if (Rnd.chance(getStat().calc(Stats.COUNTER_ATTACK, 0, attacker, skill)))
+		if(Rnd.chance(getStat().calc(Stats.COUNTER_ATTACK, 0, attacker, skill)))
 		{
 			final double damage = (1189 * getPAtk(attacker)) / Math.max(attacker.getPDef(this), 1);
 			attacker.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_PERFORMING_A_COUNTERATTACK).addName(this));
-			if (blow) // урон х2 для отражения blow скиллов
+			if(blow) // урон х2 для отражения blow скиллов
 			{
 				sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_PERFORMING_A_COUNTERATTACK).addName(this));
 				sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_DONE_S3_POINTS_OF_DAMAGE_TO_C2).addName(this).addName(attacker).addInteger((int) damage).addHpChange(getObjectId(), attacker.getObjectId(), (int) -damage));
@@ -1291,19 +1220,15 @@ public abstract class Creature extends GameObject
 
 	public void doAttack(Creature target)
 	{
-		if ((target == null) || isAMuted() || isAttackingNow() || isAlikeDead() || target.isDead() || !isInRange(target, 2000))
-		{
-			return;
-		}
+		if((target == null) || isAMuted() || isAttackingNow() || isAlikeDead() || target.isDead() || !isInRange(target, 2000))
+		{ return; }
 
-		if (isTransformed() && !getTransform().isNormalAttackable())
-		{
-			return;
-		}
+		if(isTransformed() && !getTransform().isNormalAttackable())
+		{ return; }
 
-		if (isPlayer())
+		if(isPlayer())
 		{
-			if (getPlayer().getRace() == Race.SYLPH)
+			if(getPlayer().getRace() == Race.SYLPH)
 			{
 				getPlayer().addAbnormalBoard();
 			}
@@ -1318,11 +1243,11 @@ public abstract class Creature extends GameObject
 		int attackReuseDelay = 0;
 		boolean ssEnabled = false;
 
-		if (isNpc())
+		if(isNpc())
 		{
 			attackReuseDelay = ((NpcTemplate) getTemplate()).getBaseReuseDelay();
 			final NpcTemplate.ShotsType shotType = ((NpcTemplate) getTemplate()).getShots();
-			if ((shotType != NpcTemplate.ShotsType.NONE) && (shotType != NpcTemplate.ShotsType.BSPIRIT) && (shotType != NpcTemplate.ShotsType.SPIRIT))
+			if((shotType != NpcTemplate.ShotsType.NONE) && (shotType != NpcTemplate.ShotsType.BSPIRIT) && (shotType != NpcTemplate.ShotsType.SPIRIT))
 			{
 				ssEnabled = true;
 			}
@@ -1330,7 +1255,7 @@ public abstract class Creature extends GameObject
 		else
 		{
 			final WeaponTemplate weaponItem = getActiveWeaponTemplate();
-			if (weaponItem != null)
+			if(weaponItem != null)
 			{
 				attackReuseDelay = weaponItem.getAttackReuseDelay();
 				ssGrade = weaponItem.getGrade().extOrdinal();
@@ -1338,14 +1263,14 @@ public abstract class Creature extends GameObject
 			ssEnabled = getChargedSoulshotPower() > 0;
 		}
 
-		if (attackReuseDelay > 0)
+		if(attackReuseDelay > 0)
 		{
 			final int reuse = (500000 + (333 * attackReuseDelay)) / getPAtkSpd();
-			if (reuse > 0)
+			if(reuse > 0)
 			{
 				sendPacket(new SetupGaugePacket(this, SetupGaugePacket.Colors.RED, reuse));
 				_attackReuseEndTime = (reuse + System.currentTimeMillis()) - 75;
-				if (reuse > sAtk)
+				if(reuse > sAtk)
 				{
 					ThreadPoolManager.getInstance().schedule(new NotifyAITask(this, CtrlEvent.EVT_READY_TO_ACT), reuse);
 				}
@@ -1364,7 +1289,7 @@ public abstract class Creature extends GameObject
 
 		setHeading(PositionUtils.calculateHeadingFrom(this, target), false);
 
-		switch (getBaseStats().getAttackType())
+		switch(getBaseStats().getAttackType())
 		{
 			case BOW:
 			case CROSSBOW:
@@ -1386,7 +1311,7 @@ public abstract class Creature extends GameObject
 				break;
 		}
 
-		if (attack.hasHits())
+		if(attack.hasHits())
 		{
 			broadcastPacket(attack);
 		}
@@ -1395,24 +1320,24 @@ public abstract class Creature extends GameObject
 	private void doAttackHitSimple(AttackPacket attack, Creature target, int sAtk)
 	{
 		final int attackcountmax = (int) Math.round(getStat().calc(Stats.ATTACK_TARGETS_COUNT, 0, target, null));
-		if ((attackcountmax > 0) && !isInPeaceZone())// Гварды с пикой, будут атаковать только одиночные цели в городе
+		if((attackcountmax > 0) && !isInPeaceZone())// Гварды с пикой, будут атаковать только одиночные цели в городе
 		{
 			final int angle = getPhysicalAttackAngle();
 			final int range = getPhysicalAttackRadius();
 
 			int attackedCount = 1;
 
-			for (final Creature t : getAroundCharacters(range, 200))
+			for(final Creature t : getAroundCharacters(range, 200))
 			{
-				if (attackedCount <= attackcountmax)
+				if(attackedCount <= attackcountmax)
 				{
-					if ((t == target) || t.isDead() || !PositionUtils.isFacing(this, t, angle))
+					if((t == target) || t.isDead() || !PositionUtils.isFacing(this, t, angle))
 					{
 						continue;
 					}
 
 					// @Rivelia. Pole should not hit targets that are flagged if we are not flagged.
-					if (t.isAutoAttackable(this) && (((this.getPvpFlag() == 0) && (t.getPvpFlag() == 0)) || (this.getPvpFlag() != 0)))
+					if(t.isAutoAttackable(this) && (((this.getPvpFlag() == 0) && (t.getPvpFlag() == 0)) || (this.getPvpFlag() != 0)))
 					{
 						doAttackHitSimple0(attack, t, 1., false, sAtk, false);
 						attackedCount++;
@@ -1436,10 +1361,10 @@ public abstract class Creature extends GameObject
 		int elementalDamage1 = 0;
 		boolean elementalCrit1 = false;
 
-		if (!miss1)
+		if(!miss1)
 		{
 			final AttackInfo info = Formulas.calcAutoAttackDamage(this, target, 1., false, attack._soulshot, true);
-			if (info != null)
+			if(info != null)
 			{
 				damage1 = (int) (info.damage * multiplier);
 				shld1 = info.shld;
@@ -1468,10 +1393,10 @@ public abstract class Creature extends GameObject
 
 		reduceArrowCount();
 
-		if (!miss1)
+		if(!miss1)
 		{
 			final AttackInfo info = Formulas.calcAutoAttackDamage(this, target, 1., true, attack._soulshot, true);
-			if (info != null)
+			if(info != null)
 			{
 				damage1 = (int) info.damage;
 				shld1 = info.shld;
@@ -1503,10 +1428,10 @@ public abstract class Creature extends GameObject
 		final boolean miss1 = Formulas.calcHitMiss(this, target);
 		final boolean miss2 = Formulas.calcHitMiss(this, target);
 
-		if (!miss1)
+		if(!miss1)
 		{
 			final AttackInfo info = Formulas.calcAutoAttackDamage(this, target, 0.5, false, attack._soulshot, true);
-			if (info != null)
+			if(info != null)
 			{
 				damage1 = (int) info.damage;
 				shld1 = info.shld;
@@ -1516,10 +1441,10 @@ public abstract class Creature extends GameObject
 			}
 		}
 
-		if (!miss2)
+		if(!miss2)
 		{
 			final AttackInfo info = Formulas.calcAutoAttackDamage(this, target, 0.5, false, attack._soulshot, true);
-			if (info != null)
+			if(info != null)
 			{
 				damage2 = (int) info.damage;
 				shld2 = info.shld;
@@ -1532,7 +1457,8 @@ public abstract class Creature extends GameObject
 		// Create a new hit task with Medium priority for hit 1 and for hit 2 with a
 		// higher delay
 		int timeToHit = Formulas.calculateTimeToHit(sAtk, getBaseStats().getAttackType(), false);
-		ThreadPoolManager.getInstance().schedule(new HitTask(this, target, damage1, crit1, miss1, attack._soulshot, shld1, true, false, sAtk / 2, elementalDamage1, elementalCrit1), timeToHit);
+		ThreadPoolManager.getInstance().schedule(new HitTask(this, target, damage1, crit1, miss1, attack._soulshot, shld1, true, false, sAtk
+				/ 2, elementalDamage1, elementalCrit1), timeToHit);
 		timeToHit = Formulas.calculateTimeToHit(sAtk, getBaseStats().getAttackType(), true);
 		ThreadPoolManager.getInstance().schedule(new HitTask(this, target, damage2, crit2, miss2, attack._soulshot, shld2, false, true, sAtk, elementalDamage2, elementalCrit2), timeToHit);
 
@@ -1549,20 +1475,20 @@ public abstract class Creature extends GameObject
 		int attackcountmax = (int) Math.round(getStat().calc(Stats.POLE_TARGET_COUNT, 0, target, null));
 		attackcountmax += (int) Math.round(getStat().calc(Stats.ATTACK_TARGETS_COUNT, 0, target, null));
 
-		if (isBoss())
+		if(isBoss())
 		{
 			attackcountmax += 27;
 		}
-		else if (isRaid())
+		else if(isRaid())
 		{
 			attackcountmax += 12;
 		}
-		else if (isMonster())
+		else if(isMonster())
 		{
 			attackcountmax += getLevel() / 7.5;
 		}
 
-		if ((attackcountmax > 0) && !isInPeaceZone())// Гварды с пикой, будут атаковать только одиночные цели в городе
+		if((attackcountmax > 0) && !isInPeaceZone())// Гварды с пикой, будут атаковать только одиночные цели в городе
 		{
 			final int angle = (int) getStat().calc(Stats.POLE_ATTACK_ANGLE, getPhysicalAttackAngle(), target, null);
 			final int range = getPhysicalAttackRange() + getPhysicalAttackRadius();
@@ -1570,17 +1496,17 @@ public abstract class Creature extends GameObject
 			double mult = 1.;
 			_poleAttackCount = 1;
 
-			for (final Creature t : getAroundCharacters(range, 200))
+			for(final Creature t : getAroundCharacters(range, 200))
 			{
-				if (_poleAttackCount <= attackcountmax)
+				if(_poleAttackCount <= attackcountmax)
 				{
-					if ((t == target) || t.isDead() || !PositionUtils.isFacing(this, t, angle))
+					if((t == target) || t.isDead() || !PositionUtils.isFacing(this, t, angle))
 					{
 						continue;
 					}
 
 					// @Rivelia. Pole should not hit targets that are flagged if we are not flagged.
-					if (t.isAutoAttackable(this) && (((this.getPvpFlag() == 0) && (t.getPvpFlag() == 0)) || (this.getPvpFlag() != 0)))
+					if(t.isAutoAttackable(this) && (((this.getPvpFlag() == 0) && (t.getPvpFlag() == 0)) || (this.getPvpFlag() != 0)))
 					{
 						doAttackHitSimple0(attack, t, mult, false, sAtk, false);
 						mult *= Config.ALT_POLE_DAMAGE_MODIFIER;
@@ -1600,27 +1526,25 @@ public abstract class Creature extends GameObject
 
 	public boolean doCast(SkillEntry skillEntry, Creature target, boolean forceUse)
 	{
-		if (getSkillCast(SkillCastingType.NORMAL).doCast(skillEntry, target, forceUse))
-		{
-			return true;
-		}
+		if(getSkillCast(SkillCastingType.NORMAL).doCast(skillEntry, target, forceUse))
+		{ return true; }
 		return getSkillCast(SkillCastingType.NORMAL_SECOND).doCast(skillEntry, target, forceUse); // Дуал каст
 	}
 
 	public Location getFlyLocation(GameObject target, Skill skill)
 	{
-		if ((target != null) && (target != this))
+		if((target != null) && (target != this))
 		{
 			Location loc;
 
 			int heading = target.getHeading();
-			if (!skill.isFlyDependsOnHeading())
+			if(!skill.isFlyDependsOnHeading())
 			{
 				heading = PositionUtils.calculateHeadingFrom(target, this);
 			}
 
 			double radian = PositionUtils.convertHeadingToDegree(heading) + skill.getFlyPositionDegree();
-			if (radian > 360)
+			if(radian > 360)
 			{
 				radian -= 360;
 			}
@@ -1629,24 +1553,20 @@ public abstract class Creature extends GameObject
 
 			loc = new Location(target.getX() + (int) (Math.cos(radian) * 40), target.getY() + (int) (Math.sin(radian) * 40), target.getZ());
 
-			if (isFlying())
+			if(isFlying())
 			{
-				if ((isInFlyingTransform() && ((loc.z <= 0) || (loc.z >= 6000))) || (GeoEngine.moveCheckInAir(this, loc.x, loc.y, loc.z) == null))
-				{
-					return null;
-				}
+				if((isInFlyingTransform() && ((loc.z <= 0) || (loc.z >= 6000))) || (GeoEngine.moveCheckInAir(this, loc.x, loc.y, loc.z) == null))
+				{ return null; }
 			}
 			else
 			{
 				loc.correctGeoZ(getGeoIndex());
 
-				if (!GeoEngine.canMoveToCoord(getX(), getY(), getZ(), loc.x, loc.y, loc.z, getGeoIndex()))
+				if(!GeoEngine.canMoveToCoord(getX(), getY(), getZ(), loc.x, loc.y, loc.z, getGeoIndex()))
 				{
 					loc = target.getLoc(); // Если не получается встать рядом с объектом, пробуем встать прямо в него
-					if (!GeoEngine.canMoveToCoord(getX(), getY(), getZ(), loc.x, loc.y, loc.z, getGeoIndex()))
-					{
-						return null;
-					}
+					if(!GeoEngine.canMoveToCoord(getX(), getY(), getZ(), loc.x, loc.y, loc.z, getGeoIndex()))
+					{ return null; }
 				}
 			}
 
@@ -1657,7 +1577,7 @@ public abstract class Creature extends GameObject
 		int y1 = 0;
 		int z1 = 0;
 
-		if (skill.getFlyType() == FlyType.THROW_UP)
+		if(skill.getFlyType() == FlyType.THROW_UP)
 		{
 			x1 = 0;
 			y1 = 0;
@@ -1670,37 +1590,33 @@ public abstract class Creature extends GameObject
 			y1 = (int) (Math.cos(radian) * skill.getFlyRadius());
 		}
 
-		if (isFlying())
-		{
-			return GeoEngine.moveCheckInAir(this, getX() + x1, getY() + y1, getZ() + z1);
-		}
+		if(isFlying())
+		{ return GeoEngine.moveCheckInAir(this, getX() + x1, getY() + y1, getZ() + z1); }
 		return GeoEngine.moveCheck(getX(), getY(), getZ(), getX() + x1, getY() + y1, getGeoIndex());
 	}
 
 	public final void doDie(Creature killer)
 	{
 		// killing is only possible one time
-		if (!isDead.compareAndSet(false, true))
-		{
-			return;
-		}
+		if(!isDead.compareAndSet(false, true))
+		{ return; }
 
 		onDeath(killer);
 	}
 
 	protected void onDeath(Creature killer)
 	{
-		if (killer != null)
+		if(killer != null)
 		{
 			final Player killerPlayer = killer.getPlayer();
-			if (killerPlayer != null)
+			if(killerPlayer != null)
 			{
 				killerPlayer.getListeners().onKillIgnorePetOrSummon(this);
 			}
 
 			killer.getListeners().onKill(this);
 
-			if (isPlayer() && killer.isPlayable())
+			if(isPlayer() && killer.isPlayable())
 			{
 				_currentCp = 0;
 			}
@@ -1721,38 +1637,38 @@ public abstract class Creature extends GameObject
 
 		_currentHp = 0;
 
-		if (isPlayable())
+		if(isPlayable())
 		{
 			final TIntSet effectsToRemove = new TIntHashSet();
 			boolean fightClubKeepBuffs = (isPlayable() && getPlayer().isInFightClub() && !getPlayer().getFightClubEvent().loseBuffsOnDeath(getPlayer()));
 			// Stop all active skills effects in progress on the L2Character
-			if (isPreserveAbnormal() || isSalvation() || fightClubKeepBuffs)
+			if(isPreserveAbnormal() || isSalvation() || fightClubKeepBuffs)
 			{
-				if (isSalvation() && isPlayer() && !getPlayer().isInOlympiadMode())
+				if(isSalvation() && isPlayer() && !getPlayer().isInOlympiadMode())
 				{
 					getPlayer().reviveRequest(getPlayer(), 100, false);
 				}
 
-				for (final Abnormal abnormal : getAbnormalList())
+				for(final Abnormal abnormal : getAbnormalList())
 				{
 					final int skillId = abnormal.getId();
-					if (skillId == Skill.SKILL_RAID_BLESSING)
+					if(skillId == Skill.SKILL_RAID_BLESSING)
 					{
 						effectsToRemove.add(skillId);
 					}
 					else
 					{
-						for (final EffectHandler effect : abnormal.getEffects())
+						for(final EffectHandler effect : abnormal.getEffects())
 						{
 							// Noblesse Blessing Buff/debuff effects are retained after
 							// death. However, Noblesse Blessing and Lucky Charm are lost as normal.
-							if (effect.getName().equalsIgnoreCase("p_preserve_abnormal"))
+							if(effect.getName().equalsIgnoreCase("p_preserve_abnormal"))
 							{
 								effectsToRemove.add(skillId);
 							}
-							else if (effect.getName().equalsIgnoreCase("AgathionResurrect"))
+							else if(effect.getName().equalsIgnoreCase("AgathionResurrect"))
 							{
-								if (isPlayer())
+								if(isPlayer())
 								{
 									getPlayer().setAgathionRes(true);
 								}
@@ -1764,10 +1680,10 @@ public abstract class Creature extends GameObject
 			}
 			else
 			{
-				for (final Abnormal abnormal : getAbnormalList())
+				for(final Abnormal abnormal : getAbnormalList())
 				{
 					// Некоторые эффекты сохраняются при смерти
-					if (!abnormal.getSkill().isPreservedOnDeath())
+					if(!abnormal.getSkill().isPreservedOnDeath())
 					{
 						effectsToRemove.add(abnormal.getSkill().getId());
 					}
@@ -1778,16 +1694,16 @@ public abstract class Creature extends GameObject
 			getAbnormalList().stop(effectsToRemove);
 		}
 
-		if (isPlayer())
+		if(isPlayer())
 		{
 			getPlayer().sendUserInfo(true);
 		}
 
-		if ((killer != null) && killer.isPlayable() && killer.getPlayer().isInFightClub())
+		if((killer != null) && killer.isPlayable() && killer.getPlayer().isInFightClub())
 		{
 			killer.getPlayer().getFightClubEvent().onKilled(killer, this);
 		}
-		else if (isPlayable() && getPlayer().isInFightClub())
+		else if(isPlayable() && getPlayer().isInFightClub())
 		{
 			getPlayer().getFightClubEvent().onKilled(killer, this);
 		}
@@ -1796,7 +1712,7 @@ public abstract class Creature extends GameObject
 
 		ThreadPoolManager.getInstance().execute(new NotifyAITask(this, CtrlEvent.EVT_DEAD, killer, null, null));
 
-		if (killer != null)
+		if(killer != null)
 		{
 			killer.useTriggers(this, TriggerType.ON_KILL, null, null, 0);
 		}
@@ -2020,19 +1936,15 @@ public abstract class Creature extends GameObject
 
 	public List<Creature> getAroundCharacters(int radius, int height)
 	{
-		if (!isVisible())
-		{
-			return Collections.emptyList();
-		}
+		if(!isVisible())
+		{ return Collections.emptyList(); }
 		return World.getAroundCharacters(this, radius, height);
 	}
 
 	public List<NpcInstance> getAroundNpc(int range, int height)
 	{
-		if (!isVisible())
-		{
-			return Collections.emptyList();
-		}
+		if(!isVisible())
+		{ return Collections.emptyList(); }
 		return World.getAroundNpc(this, range, height);
 	}
 
@@ -2048,19 +1960,15 @@ public abstract class Creature extends GameObject
 
 	public final int getMagicalAttackRange(Skill skill)
 	{
-		if (skill != null)
-		{
-			return (int) getStat().calc(Stats.MAGIC_ATTACK_RANGE, skill.getCastRange(), null, skill);
-		}
+		if(skill != null)
+		{ return (int) getStat().calc(Stats.MAGIC_ATTACK_RANGE, skill.getCastRange(), null, skill); }
 		return getBaseStats().getAtkRange();
 	}
 
 	public int getMAtk(Creature target, Skill skill)
 	{
-		if ((skill != null) && (skill.getMatak() > 0))
-		{
-			return skill.getMatak();
-		}
+		if((skill != null) && (skill.getMatak() > 0))
+		{ return skill.getMatak(); }
 
 		final double mAtk = getStat().calc(Stats.MAGIC_ATTACK, getBaseStats().getMAtk(), target, skill);
 		return (int) Math.round(mAtk);
@@ -2079,7 +1987,7 @@ public abstract class Creature extends GameObject
 	public int getMaxBp()
 	{
 		final int defaultMax = Math.max(0, (int) getStat().calc(Stats.MAX_BP, 0, null, null));
-		if (defaultMax > 0)
+		if(defaultMax > 0)
 		{
 			return defaultMax + (100 * (getCON() - 45));
 		}
@@ -2114,7 +2022,7 @@ public abstract class Creature extends GameObject
 	{
 		double distance = getCurrentCollisionRadius();
 
-		if ((obj != null) && obj.isCreature())
+		if((obj != null) && obj.isCreature())
 		{
 			distance += ((Creature) obj).getCurrentCollisionRadius();
 		}
@@ -2167,10 +2075,8 @@ public abstract class Creature extends GameObject
 	public int getRandomDamage()
 	{
 		final WeaponTemplate weaponItem = getActiveWeaponTemplate();
-		if (weaponItem == null)
-		{
-			return getBaseStats().getRandDam();
-		}
+		if(weaponItem == null)
+		{ return getBaseStats().getRandDam(); }
 		return weaponItem.getRandomDamage();
 	}
 
@@ -2202,10 +2108,8 @@ public abstract class Creature extends GameObject
 	public final int getSkillLevel(int skillId, int def)
 	{
 		final SkillEntry skill = _skills.get(skillId);
-		if (skill == null)
-		{
-			return def;
-		}
+		if(skill == null)
+		{ return def; }
 		return skill.getLevel();
 	}
 
@@ -2278,10 +2182,8 @@ public abstract class Creature extends GameObject
 	public boolean isEffectImmune(Creature effector)
 	{
 		final Creature exception = _effectImmunityException.get();
-		if ((exception != null) && (exception == effector))
-		{
-			return false;
-		}
+		if((exception != null) && (exception == effector))
+		{ return false; }
 
 		return getFlags().getEffectImmunity().get();
 	}
@@ -2330,14 +2232,10 @@ public abstract class Creature extends GameObject
 	public boolean isSkillDisabled(Skill skill)
 	{
 		final TimeStamp sts = _skillReuses.get(skill.getReuseHash());
-		if (sts == null)
-		{
-			return false;
-		}
-		if (sts.hasNotPassed())
-		{
-			return true;
-		}
+		if(sts == null)
+		{ return false; }
+		if(sts.hasNotPassed())
+		{ return true; }
 		_skillReuses.remove(skill.getReuseHash());
 		return false;
 	}
@@ -2362,26 +2260,23 @@ public abstract class Creature extends GameObject
 	 */
 	public int[] getWaterZ()
 	{
-		final int[] waterZ = new int[]
-		{
-			Integer.MIN_VALUE,
-			Integer.MAX_VALUE
+		final int[] waterZ = new int[] {
+				Integer.MIN_VALUE,
+				Integer.MAX_VALUE
 		};
-		if (!isInWater())
-		{
-			return waterZ;
-		}
+		if(!isInWater())
+		{ return waterZ; }
 
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			Zone zone = _zones.get(i);
-			if (zone.getType() == ZoneType.water)
+			if(zone.getType() == ZoneType.water)
 			{
-				if ((waterZ[0] == Integer.MIN_VALUE) || (waterZ[0] > zone.getTerritory().getZmin()))
+				if((waterZ[0] == Integer.MIN_VALUE) || (waterZ[0] > zone.getTerritory().getZmin()))
 				{
 					waterZ[0] = zone.getTerritory().getZmin();
 				}
-				if ((waterZ[1] == Integer.MAX_VALUE) || (waterZ[1] < zone.getTerritory().getZmax()))
+				if((waterZ[1] == Integer.MAX_VALUE) || (waterZ[1] < zone.getTerritory().getZmax()))
 				{
 					waterZ[1] = zone.getTerritory().getZmax();
 				}
@@ -2398,23 +2293,19 @@ public abstract class Creature extends GameObject
 
 	public IClientOutgoingPacket movePacket()
 	{
-		if (getMovement().isFollow() && !getMovement().isPathfindMoving())
+		if(getMovement().isFollow() && !getMovement().isPathfindMoving())
 		{
 			final Creature target = getMovement().getFollowTarget();
-			if (target != null)
-			{
-				return new MoveToPawnPacket(this, target, getMovement().getMoveOffset());
-			}
+			if(target != null)
+			{ return new MoveToPawnPacket(this, target, getMovement().getMoveOffset()); }
 		}
 		return new MTLPacket(this);
 	}
 
 	public void updateZones()
 	{
-		if (isTeleporting())
-		{
-			return;
-		}
+		if(isTeleporting())
+		{ return; }
 
 		final Zone[] zones = isVisible() ? getCurrentRegion().getZones() : Zone.EMPTY_L2ZONE_ARRAY;
 
@@ -2422,23 +2313,23 @@ public abstract class Creature extends GameObject
 		LazyArrayList<Zone> leaving = null;
 
 		Zone zone;
-		if (!_zones.isEmpty())
+		if(!_zones.isEmpty())
 		{
 			leaving = LazyArrayList.newInstance();
-			for (int i = 0; i < _zones.size(); i++)
+			for(int i = 0; i < _zones.size(); i++)
 			{
 				zone = _zones.get(i);
 				// зоны больше нет в регионе, либо вышли за территорию зоны
-				if (!ArrayUtils.contains(zones, zone) || !zone.checkIfInZone(getX(), getY(), getZ(), getReflection()))
+				if(!ArrayUtils.contains(zones, zone) || !zone.checkIfInZone(getX(), getY(), getZ(), getReflection()))
 				{
 					leaving.add(zone);
 				}
 			}
 
 			// Покинули зоны, убираем из списка зон персонажа
-			if (!leaving.isEmpty())
+			if(!leaving.isEmpty())
 			{
-				for (int i = 0; i < leaving.size(); i++)
+				for(int i = 0; i < leaving.size(); i++)
 				{
 					zone = leaving.get(i);
 					_zones.remove(zone);
@@ -2446,23 +2337,23 @@ public abstract class Creature extends GameObject
 			}
 		}
 
-		if (zones.length > 0)
+		if(zones.length > 0)
 		{
 			entering = LazyArrayList.newInstance();
-			for (int i = 0; i < zones.length; i++)
+			for(int i = 0; i < zones.length; i++)
 			{
 				zone = zones[i];
 				// в зону еще не заходили и зашли на территорию зоны
-				if (!_zones.contains(zone) && zone.checkIfInZone(getX(), getY(), getZ(), getReflection()))
+				if(!_zones.contains(zone) && zone.checkIfInZone(getX(), getY(), getZ(), getReflection()))
 				{
 					entering.add(zone);
 				}
 			}
 
 			// Вошли в зоны, добавим в список зон персонажа
-			if (!entering.isEmpty())
+			if(!entering.isEmpty())
 			{
-				for (int i = 0; i < entering.size(); i++)
+				for(int i = 0; i < entering.size(); i++)
 				{
 					zone = entering.get(i);
 					_zones.add(zone);
@@ -2472,12 +2363,12 @@ public abstract class Creature extends GameObject
 
 		onUpdateZones(leaving, entering);
 
-		if (leaving != null)
+		if(leaving != null)
 		{
 			LazyArrayList.recycle(leaving);
 		}
 
-		if (entering != null)
+		if(entering != null)
 		{
 			LazyArrayList.recycle(entering);
 		}
@@ -2486,18 +2377,18 @@ public abstract class Creature extends GameObject
 	protected void onUpdateZones(List<Zone> leaving, List<Zone> entering)
 	{
 		Zone zone;
-		if ((leaving != null) && !leaving.isEmpty())
+		if((leaving != null) && !leaving.isEmpty())
 		{
-			for (int i = 0; i < leaving.size(); i++)
+			for(int i = 0; i < leaving.size(); i++)
 			{
 				zone = leaving.get(i);
 				zone.doLeave(this);
 			}
 		}
 
-		if ((entering != null) && !entering.isEmpty())
+		if((entering != null) && !entering.isEmpty())
 		{
-			for (int i = 0; i < entering.size(); i++)
+			for(int i = 0; i < entering.size(); i++)
 			{
 				zone = entering.get(i);
 				zone.doEnter(this);
@@ -2512,25 +2403,21 @@ public abstract class Creature extends GameObject
 
 	public boolean isHaveZoneParam(String param)
 	{
-		for (final Zone zone : _zones)
+		for(final Zone zone : _zones)
 		{
-			if (zone.getTemplate().getParams().getBool(param, false))
-			{
-				return true;
-			}
+			if(zone.getTemplate().getParams().getBool(param, false))
+			{ return true; }
 		}
 		return false;
 	}
 
 	public boolean isInZoneBattle()
 	{
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			final Boolean result = event.isInZoneBattle(this);
-			if (result != null)
-			{
-				return result;
-			}
+			if(result != null)
+			{ return result; }
 		}
 		return isInZone(ZoneType.battle_zone);
 	}
@@ -2553,26 +2440,22 @@ public abstract class Creature extends GameObject
 
 	public boolean isInDangerArea()
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getTemplate().isShowDangerzone())
-			{
-				return true;
-			}
+			if(zone.getTemplate().isShowDangerzone())
+			{ return true; }
 		}
 		return false;
 	}
 
 	public boolean isInZone(ZoneType type)
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getType() == type)
-			{
-				return true;
-			}
+			if(zone.getType() == type)
+			{ return true; }
 		}
 		return false;
 	}
@@ -2580,12 +2463,12 @@ public abstract class Creature extends GameObject
 	public List<Event> getZoneEvents()
 	{
 		List<Event> event = Collections.emptyList();
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (!zone.getEvents().isEmpty())
+			if(!zone.getEvents().isEmpty())
 			{
-				if (event.isEmpty())
+				if(event.isEmpty())
 				{
 					event = new ArrayList<Event>(2);
 				}
@@ -2598,13 +2481,11 @@ public abstract class Creature extends GameObject
 
 	public boolean isInZone(String name)
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getName().equals(name))
-			{
-				return true;
-			}
+			if(zone.getName().equals(name))
+			{ return true; }
 		}
 		return false;
 	}
@@ -2616,13 +2497,11 @@ public abstract class Creature extends GameObject
 
 	public Zone getZone(ZoneType type)
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getType() == type)
-			{
-				return zone;
-			}
+			if(zone.getType() == type)
+			{ return zone; }
 		}
 		return null;
 	}
@@ -2634,16 +2513,14 @@ public abstract class Creature extends GameObject
 
 	public Location getRestartPoint()
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getRestartPoints() != null)
+			if(zone.getRestartPoints() != null)
 			{
 				final ZoneType type = zone.getType();
-				if ((type == ZoneType.battle_zone) || (type == ZoneType.peace_zone) || (type == ZoneType.offshore) || (type == ZoneType.dummy))
-				{
-					return zone.getSpawn();
-				}
+				if((type == ZoneType.battle_zone) || (type == ZoneType.peace_zone) || (type == ZoneType.offshore) || (type == ZoneType.dummy))
+				{ return zone.getSpawn(); }
 			}
 		}
 		return null;
@@ -2651,16 +2528,14 @@ public abstract class Creature extends GameObject
 
 	public Location getPKRestartPoint()
 	{
-		for (int i = 0; i < _zones.size(); i++)
+		for(int i = 0; i < _zones.size(); i++)
 		{
 			final Zone zone = _zones.get(i);
-			if (zone.getRestartPoints() != null)
+			if(zone.getRestartPoints() != null)
 			{
 				final ZoneType type = zone.getType();
-				if ((type == ZoneType.battle_zone) || (type == ZoneType.peace_zone) || (type == ZoneType.offshore) || (type == ZoneType.dummy))
-				{
-					return zone.getPKSpawn();
-				}
+				if((type == ZoneType.battle_zone) || (type == ZoneType.peace_zone) || (type == ZoneType.offshore) || (type == ZoneType.dummy))
+				{ return zone.getPKSpawn(); }
 			}
 		}
 
@@ -2670,42 +2545,38 @@ public abstract class Creature extends GameObject
 	@Override
 	public int getGeoZ(int x, int y, int z)
 	{
-		if (isFlying() || isInWater() || isInBoat() || isBoat() || isDoor())
-		{
-			return z;
-		}
+		if(isFlying() || isInWater() || isInBoat() || isBoat() || isDoor())
+		{ return z; }
 
 		return super.getGeoZ(x, y, z);
 	}
 
 	protected boolean needStatusUpdate()
 	{
-		if (!isVisible())
-		{
-			return false;
-		}
+		if(!isVisible())
+		{ return false; }
 
 		boolean result = false;
 
 		int bar;
 		bar = (int) ((getCurrentHp() * CLIENT_BAR_SIZE) / getMaxHp());
-		if ((bar == 0) || (bar != _lastHpBarUpdate))
+		if((bar == 0) || (bar != _lastHpBarUpdate))
 		{
 			_lastHpBarUpdate = bar;
 			result = true;
 		}
 
 		bar = (int) ((getCurrentMp() * CLIENT_BAR_SIZE) / getMaxMp());
-		if ((bar == 0) || (bar != _lastMpBarUpdate))
+		if((bar == 0) || (bar != _lastMpBarUpdate))
 		{
 			_lastMpBarUpdate = bar;
 			result = true;
 		}
 
-		if (isPlayer())
+		if(isPlayer())
 		{
 			bar = (int) ((getCurrentCp() * CLIENT_BAR_SIZE) / getMaxCp());
-			if ((bar == 0) || (bar != _lastCpBarUpdate))
+			if((bar == 0) || (bar != _lastCpBarUpdate))
 			{
 				_lastCpBarUpdate = bar;
 				result = true;
@@ -2717,16 +2588,16 @@ public abstract class Creature extends GameObject
 
 	public void onHitTimer(Creature target, int damage, boolean crit, boolean miss, boolean soulshot, boolean shld, boolean unchargeSS, int elementalDamage, boolean elementalCrit)
 	{
-		if (isAlikeDead() || target.isDead() || !isInRange(target, 2000))
+		if(isAlikeDead() || target.isDead() || !isInRange(target, 2000))
 		{
 			sendActionFailed();
 			return;
 		}
 
-		if (isPlayable() && target.isPlayable() && (isInZoneBattle() != target.isInZoneBattle()))
+		if(isPlayable() && target.isPlayable() && (isInZoneBattle() != target.isInZoneBattle()))
 		{
 			final Player player = getPlayer();
-			if (player != null)
+			if(player != null)
 			{
 				player.sendPacket(SystemMsg.INVALID_TARGET);
 				player.sendActionFailed();
@@ -2745,28 +2616,28 @@ public abstract class Creature extends GameObject
 		// attacker if necessary
 		target.reduceCurrentHp(damage, this, null, true, true, false, true, false, false, true, true, crit, miss, shld, elementalDamage, elementalCrit);
 
-		if (!miss && (damage > 0))
+		if(!miss && (damage > 0))
 		{
 			// Скиллы, кастуемые при физ атаке
-			if (!target.isDead())
+			if(!target.isDead())
 			{
-				if (crit)
+				if(crit)
 				{
 					useTriggers(target, TriggerType.CRIT, null, null, damage);
 				}
 
 				useTriggers(target, TriggerType.ATTACK, null, null, damage);
 
-				if (Formulas.calcStunBreak(crit, false, false))
+				if(Formulas.calcStunBreak(crit, false, false))
 				{
 					target.getAbnormalList().stop(AbnormalType.STUN);
 					// target.getAbnormalList().stop(AbnormalType.TURN_FLEE);
 				}
 
-				for (final Abnormal abnormal : target.getAbnormalList())
+				for(final Abnormal abnormal : target.getAbnormalList())
 				{
 					final double chance = crit ? abnormal.getSkill().getOnCritCancelChance() : abnormal.getSkill().getOnAttackCancelChance();
-					if ((chance > 0) && Rnd.chance(chance))
+					if((chance > 0) && Rnd.chance(chance))
 					{
 						abnormal.exit();
 					}
@@ -2774,26 +2645,26 @@ public abstract class Creature extends GameObject
 
 				// Manage attack or cast break of the target (calculating rate, sending
 				// message...)
-				if (Formulas.calcCastBreak(target, crit))
+				if(Formulas.calcCastBreak(target, crit))
 				{
 					target.abortCast(false, true);
 				}
 			}
 
-			if (soulshot && unchargeSS)
+			if(soulshot && unchargeSS)
 			{
 				unChargeShots(false);
 			}
 		}
 
-		if (miss)
+		if(miss)
 		{
 			target.useTriggers(this, TriggerType.UNDER_MISSED_ATTACK, null, null, damage);
 		}
 
 		startAttackStanceTask();
 
-		if (checkPvP)
+		if(checkPvP)
 		{
 			startPvPFlag(target);
 		}
@@ -2801,27 +2672,25 @@ public abstract class Creature extends GameObject
 
 	public void onCastEndTime(SkillEntry skillEntry, Creature aimingTarget, Set<Creature> targets, boolean success)
 	{
-		if (skillEntry == null)
-		{
-			return;
-		}
+		if(skillEntry == null)
+		{ return; }
 
 		final Skill skill = skillEntry.getTemplate();
 
 		getAI().notifyEvent(CtrlEvent.EVT_FINISH_CASTING, skill, aimingTarget, success);
 
-		if (success)
+		if(success)
 		{
 			skill.onFinishCast(aimingTarget, this, targets);
 			useTriggers(aimingTarget, TriggerType.ON_FINISH_CAST, null, skill, 0);
-			if (isPlayer())
+			if(isPlayer())
 			{
-				for (final ListenerHook hook : getPlayer().getListenerHooks(ListenerHookType.PLAYER_FINISH_CAST_SKILL))
+				for(final ListenerHook hook : getPlayer().getListenerHooks(ListenerHookType.PLAYER_FINISH_CAST_SKILL))
 				{
 					hook.onPlayerFinishCastSkill(getPlayer(), skill.getId());
 				}
 
-				for (final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_FINISH_CAST_SKILL))
+				for(final ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_FINISH_CAST_SKILL))
 				{
 					hook.onPlayerFinishCastSkill(getPlayer(), skill.getId());
 				}
@@ -2836,12 +2705,10 @@ public abstract class Creature extends GameObject
 
 	public void reduceCurrentHp(double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean canReflectAndAbsorb, boolean transferDamage, boolean isDot, boolean sendReceiveMessage, boolean sendGiveMessage, boolean crit, boolean miss, boolean shld, double elementalDamage, boolean elementalCrit)
 	{
-		if (isImmortal())
-		{
-			return;
-		}
+		if(isImmortal())
+		{ return; }
 
-		if (canReflectAndAbsorb)
+		if(canReflectAndAbsorb)
 		{
 			final double tempDmg = damage;
 			damage = Math.max(0.0D, damage - getStat().calc(Stats.DAMAGE_BLOCK_COUNT));
@@ -2849,20 +2716,20 @@ public abstract class Creature extends GameObject
 		}
 
 		boolean damaged = true;
-		if (miss || (damage <= 0))
+		if(miss || (damage <= 0))
 		{
 			damaged = false;
 		}
 
 		final boolean damageBlocked = isDamageBlocked(attacker);
-		if ((attacker == null) || isDead() || (attacker.isDead() && !isDot) || damageBlocked)
+		if((attacker == null) || isDead() || (attacker.isDead() && !isDot) || damageBlocked)
 		{
 			damaged = false;
 		}
 
-		if (!damaged)
+		if(!damaged)
 		{
-			if ((attacker != this) && sendGiveMessage)
+			if((attacker != this) && sendGiveMessage)
 			{
 				attacker.displayGiveDamageMessage(this, skill, 0, null, 0, crit, miss, shld, damageBlocked, 0, false);
 			}
@@ -2873,10 +2740,10 @@ public abstract class Creature extends GameObject
 		double transferedDamage = 0.;
 		Servitor servitorForTransfereDamage = null;
 
-		if (canReflectAndAbsorb)
+		if(canReflectAndAbsorb)
 		{
 			final boolean canAbsorb = canAbsorb(this, attacker);
-			if (canAbsorb)
+			if(canAbsorb)
 			{
 				damage = absorbToEffector(attacker, damage); // e.g. Noble Sacrifice.
 			}
@@ -2887,7 +2754,7 @@ public abstract class Creature extends GameObject
 			// e.g. Transfer Pain
 			transferedDamage = getDamageForTransferToServitor(damage);
 			servitorForTransfereDamage = getServitorForTransfereDamage(transferedDamage);
-			if (servitorForTransfereDamage != null)
+			if(servitorForTransfereDamage != null)
 			{
 				damage -= transferedDamage;
 			}
@@ -2898,7 +2765,7 @@ public abstract class Creature extends GameObject
 
 			reflectedDamage = reflectDamage(attacker, skill, damage);
 
-			if (canAbsorb)
+			if(canAbsorb)
 			{
 				attacker.absorbDamage(this, skill, damage);
 			}
@@ -2906,11 +2773,11 @@ public abstract class Creature extends GameObject
 
 		// Damage can be limited by ultimate effects
 		double damageLimit = -1;
-		if (skill == null)
+		if(skill == null)
 		{
 			damageLimit = getStat().calc(Stats.RECIEVE_DAMAGE_LIMIT, damage);
 		}
-		else if (skill.isMagic())
+		else if(skill.isMagic())
 		{
 			damageLimit = getStat().calc(Stats.RECIEVE_DAMAGE_LIMIT_M_SKILL, damage);
 		}
@@ -2919,39 +2786,39 @@ public abstract class Creature extends GameObject
 			damageLimit = getStat().calc(Stats.RECIEVE_DAMAGE_LIMIT_P_SKILL, damage);
 		}
 
-		if ((damageLimit >= 0.) && (damage > damageLimit))
+		if((damageLimit >= 0.) && (damage > damageLimit))
 		{
 			damage = damageLimit;
 		}
 
 		getListeners().onCurrentHpDamage(damage, attacker, skill);
 
-		if (attacker != this)
+		if(attacker != this)
 		{
-			if (sendGiveMessage)
+			if(sendGiveMessage)
 			{
 				attacker.displayGiveDamageMessage(this, skill, (int) damage, servitorForTransfereDamage, (int) transferedDamage, crit, miss, shld, damageBlocked, (int) elementalDamage, elementalCrit);
 			}
 
-			if (sendReceiveMessage)
+			if(sendReceiveMessage)
 			{
 				displayReceiveDamageMessage(attacker, (int) damage, servitorForTransfereDamage, (int) transferedDamage, (int) elementalDamage);
 			}
 
-			if (!isDot)
+			if(!isDot)
 			{
 				useTriggers(attacker, TriggerType.RECEIVE_DAMAGE, null, null, damage);
 			}
 		}
 
-		if ((servitorForTransfereDamage != null) && (transferedDamage > 0))
+		if((servitorForTransfereDamage != null) && (transferedDamage > 0))
 		{
 			servitorForTransfereDamage.reduceCurrentHp(transferedDamage, attacker, null, false, false, false, false, true, false, true);
 		}
 
 		onReduceCurrentHp(damage, attacker, skill, awake, standUp, directHp, isDot);
 
-		if (reflectedDamage > 0.)
+		if(reflectedDamage > 0.)
 		{
 			displayGiveDamageMessage(attacker, skill, (int) reflectedDamage, null, 0, false, false, false, false, 0, false);
 			attacker.reduceCurrentHp(reflectedDamage, this, null, true, true, false, false, false, false, true);
@@ -2962,29 +2829,29 @@ public abstract class Creature extends GameObject
 
 	protected void onReduceCurrentHp(final double damage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean isDot)
 	{
-		if (awake && isSleeping())
+		if(awake && isSleeping())
 		{
 			getAbnormalList().stop(AbnormalType.SLEEP);
 		}
 
-		if ((attacker != null) && attacker.isPlayable() && attacker.getPlayer().isInFightClub())
+		if((attacker != null) && attacker.isPlayable() && attacker.getPlayer().isInFightClub())
 		{
 			attacker.getPlayer().getFightClubEvent().onDamage(attacker, this, damage);
 		}
 
-		if ((attacker != this) || ((skill != null) && skill.isDebuff()))
+		if((attacker != this) || ((skill != null) && skill.isDebuff()))
 		{
 			final TIntSet effectsToRemove = new TIntHashSet();
-			for (final Abnormal effect : getAbnormalList())
+			for(final Abnormal effect : getAbnormalList())
 			{
-				if (effect.getSkill().isDispelOnDamage())
+				if(effect.getSkill().isDispelOnDamage())
 				{
 					effectsToRemove.add(effect.getSkill().getId());
 				}
 			}
 			getAbnormalList().stop(effectsToRemove);
 
-			if (isMeditated())
+			if(isMeditated())
 			{
 				getAbnormalList().stop(AbnormalType.FORCE_MEDITATION);
 			}
@@ -2993,16 +2860,14 @@ public abstract class Creature extends GameObject
 			checkAndRemoveInvisible();
 		}
 
-		if (damage <= 0)
-		{
-			return;
-		}
+		if(damage <= 0)
+		{ return; }
 
-		if (((getCurrentHp() - damage) < 10) && (getStat().calc(Stats.ShillienProtection) == 1))
+		if(((getCurrentHp() - damage) < 10) && (getStat().calc(Stats.ShillienProtection) == 1))
 		{
 			setCurrentHp(getMaxHp(), false, !isDot);
 			setCurrentCp(getMaxCp(), !isDot);
-			if (isDot)
+			if(isDot)
 			{
 				final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_HP, UpdateType.VCP_CP);
 				attacker.sendPacket(su);
@@ -3013,23 +2878,23 @@ public abstract class Creature extends GameObject
 			return;
 		}
 
-		if (((getCurrentHp() - damage) < 10) && (getStat().calc(Stats.BORN_TO_BE_DEAD) == 1))
+		if(((getCurrentHp() - damage) < 10) && (getStat().calc(Stats.BORN_TO_BE_DEAD) == 1))
 		{
 			Player player = null;
-			if (isPlayer())
+			if(isPlayer())
 			{
 				player = getPlayer();
 			}
-			if (player != null)
+			if(player != null)
 			{
-				if (player.getVarBoolean("revived", false))
+				if(player.getVarBoolean("revived", false))
 				{
 					final SkillEntry ReviveAfterDeath = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 45346, 1);
 					ReviveAfterDeath.getEffects(player, player);
 					player.setVar("revived", true, System.currentTimeMillis() + (600 * 1000));
 					setCurrentCp(1);
 					setCurrentMp(1);
-					if (player.getCurrentDp() >= 300)
+					if(player.getCurrentDp() >= 300)
 					{
 						setCurrentHp(getMaxHp(), false);
 					}
@@ -3045,7 +2910,7 @@ public abstract class Creature extends GameObject
 		final boolean isUndying = isUndying();
 
 		setCurrentHp(Math.max(getCurrentHp() - damage, isDot ? 1.5 : (isUndying ? 0.5 : 0)), false, !isDot);
-		if (isDot)
+		if(isDot)
 		{
 			final StatusUpdate su = new StatusUpdate(this, attacker, StatusType.HPUpdate, UpdateType.VCP_HP);
 			attacker.sendPacket(su);
@@ -3054,19 +2919,19 @@ public abstract class Creature extends GameObject
 			sendChanges();
 		}
 
-		if (isUndying)
+		if(isUndying)
 		{
-			if ((getCurrentHp() == 0.5) && (!isPlayer() || !getPlayer().isGMUndying()))
+			if((getCurrentHp() == 0.5) && (!isPlayer() || !getPlayer().isGMUndying()))
 			{
-				if (getFlags().getUndying().getFlag().compareAndSet(false, true))
+				if(getFlags().getUndying().getFlag().compareAndSet(false, true))
 				{
 					getListeners().onDeathFromUndying(attacker);
 				}
 			}
 		}
-		else if (getCurrentHp() < 0.5)
+		else if(getCurrentHp() < 0.5)
 		{
-			if ((attacker != this) || ((skill != null) && skill.isDebuff()))
+			if((attacker != this) || ((skill != null) && skill.isDebuff()))
 			{
 				useTriggers(attacker, TriggerType.DIE, null, null, damage);
 			}
@@ -3077,20 +2942,20 @@ public abstract class Creature extends GameObject
 
 	public void reduceCurrentMp(double i, Creature attacker)
 	{
-		if ((attacker != null) && (attacker != this))
+		if((attacker != null) && (attacker != this))
 		{
-			if (isSleeping())
+			if(isSleeping())
 			{
 				getAbnormalList().stop(AbnormalType.SLEEP);
 			}
 
-			if (isMeditated())
+			if(isMeditated())
 			{
 				getAbnormalList().stop(AbnormalType.FORCE_MEDITATION);
 			}
 		}
 
-		if (isDamageBlocked(attacker) && (attacker != null) && (attacker != this))
+		if(isDamageBlocked(attacker) && (attacker != null) && (attacker != this))
 		{
 			attacker.sendPacket(SystemMsg.THE_ATTACK_HAS_BEEN_BLOCKED);
 			return;
@@ -3098,30 +2963,26 @@ public abstract class Creature extends GameObject
 
 		// 5182 = Blessing of protection, работает если разница уровней больше 10 и не в
 		// зоне осады
-		if ((attacker != null) && attacker.isPlayer() && (Math.abs(attacker.getLevel() - getLevel()) > 10))
+		if((attacker != null) && attacker.isPlayer() && (Math.abs(attacker.getLevel() - getLevel()) > 10))
 		{
 			// ПК не может нанести урон чару с блессингом
-			if (attacker.isPK() && getAbnormalList().contains(5182) && !isInSiegeZone())
-			{
-				return;
-			}
+			if(attacker.isPK() && getAbnormalList().contains(5182) && !isInSiegeZone())
+			{ return; }
 			// чар с блессингом не может нанести урон ПК
-			if (isPK() && attacker.getAbnormalList().contains(5182) && !attacker.isInSiegeZone())
-			{
-				return;
-			}
+			if(isPK() && attacker.getAbnormalList().contains(5182) && !attacker.isInSiegeZone())
+			{ return; }
 		}
 
 		i = _currentMp - i;
 
-		if (i < 0)
+		if(i < 0)
 		{
 			i = 0;
 		}
 
 		setCurrentMp(i);
 
-		if ((attacker != null) && (attacker != this))
+		if((attacker != null) && (attacker != this))
 		{
 			startAttackStanceTask();
 		}
@@ -3131,7 +2992,7 @@ public abstract class Creature extends GameObject
 	{
 		i = _currentBp - i;
 
-		if (i < 0)
+		if(i < 0)
 		{
 			i = 0;
 		}
@@ -3141,7 +3002,7 @@ public abstract class Creature extends GameObject
 
 	public void removeAllSkills()
 	{
-		for (final SkillEntry s : getAllSkillsArray())
+		for(final SkillEntry s : getAllSkillsArray())
 		{
 			removeSkill(s);
 		}
@@ -3149,10 +3010,8 @@ public abstract class Creature extends GameObject
 
 	public SkillEntry removeSkill(SkillInfo skillInfo)
 	{
-		if (skillInfo == null)
-		{
-			return null;
-		}
+		if(skillInfo == null)
+		{ return null; }
 		return removeSkillById(skillInfo.getId());
 	}
 
@@ -3162,11 +3021,11 @@ public abstract class Creature extends GameObject
 		final SkillEntry oldSkillEntry = _skills.remove(id);
 
 		// Remove all its Func objects from the L2Character calculator set
-		if (oldSkillEntry != null)
+		if(oldSkillEntry != null)
 		{
 			final Skill oldSkill = oldSkillEntry.getTemplate();
 
-			if (oldSkill.isToggle())
+			if(oldSkill.isToggle())
 			{
 				getAbnormalList().stop(oldSkill, false);
 			}
@@ -3175,33 +3034,33 @@ public abstract class Creature extends GameObject
 			removeDisabledSkillToReplace(oldSkill);
 			removeTriggers(oldSkill);
 
-			if (oldSkill.isPassive())
+			if(oldSkill.isPassive())
 			{
 				getStat().removeFuncsByOwner(oldSkill);
 
-				for (final EffectTemplate et : oldSkill.getEffectTemplates(EffectUseType.NORMAL))
+				for(final EffectTemplate et : oldSkill.getEffectTemplates(EffectUseType.NORMAL))
 				{
 					getStat().removeFuncsByOwner(et.getHandler());
 				}
 			}
 
-			if (Config.ALT_DELETE_SA_BUFFS && (oldSkill.isItemSkill() || oldSkill.isHandler()))
+			if(Config.ALT_DELETE_SA_BUFFS && (oldSkill.isItemSkill() || oldSkill.isHandler()))
 			{
 				// Завершаем все эффекты, принадлежащие старому скиллу
 				getAbnormalList().stop(oldSkill, false);
 
 				// И с петов тоже
-				for (final Servitor servitor : getServitors())
+				for(final Servitor servitor : getServitors())
 				{
 					servitor.getAbnormalList().stop(oldSkill, false);
 				}
 			}
 
 			final AINextAction nextAction = getAI().getNextAction();
-			if ((nextAction != null) && (nextAction == AINextAction.CAST))
+			if((nextAction != null) && (nextAction == AINextAction.CAST))
 			{
 				final Object args1 = getAI().getNextActionArgs()[0];
-				if (oldSkillEntry.equals(args1))
+				if(oldSkillEntry.equals(args1))
 				{
 					getAI().clearNextAction();
 				}
@@ -3215,12 +3074,10 @@ public abstract class Creature extends GameObject
 
 	public void addTriggers(StatTemplate f)
 	{
-		if (f.getTriggerList().isEmpty())
-		{
-			return;
-		}
+		if(f.getTriggerList().isEmpty())
+		{ return; }
 
-		for (final TriggerInfo t : f.getTriggerList())
+		for(final TriggerInfo t : f.getTriggerList())
 		{
 			addTrigger(t);
 		}
@@ -3228,13 +3085,13 @@ public abstract class Creature extends GameObject
 
 	public void addTrigger(TriggerInfo t)
 	{
-		if (_triggers == null)
+		if(_triggers == null)
 		{
 			_triggers = new ConcurrentHashMap<TriggerType, Set<TriggerInfo>>();
 		}
 
 		Set<TriggerInfo> hs = _triggers.get(t.getType());
-		if (hs == null)
+		if(hs == null)
 		{
 			hs = new CopyOnWriteArraySet<TriggerInfo>();
 			_triggers.put(t.getType(), hs);
@@ -3242,11 +3099,11 @@ public abstract class Creature extends GameObject
 
 		hs.add(t);
 
-		if (t.getType() == TriggerType.ADD)
+		if(t.getType() == TriggerType.ADD)
 		{
 			useTriggerSkill(this, null, t, null, 0);
 		}
-		else if (t.getType() == TriggerType.IDLE)
+		else if(t.getType() == TriggerType.IDLE)
 		{
 			new RunnableTrigger(this, t).schedule();
 		}
@@ -3259,12 +3116,10 @@ public abstract class Creature extends GameObject
 
 	public void removeTriggers(StatTemplate f)
 	{
-		if ((_triggers == null) || f.getTriggerList().isEmpty())
-		{
-			return;
-		}
+		if((_triggers == null) || f.getTriggerList().isEmpty())
+		{ return; }
 
-		for (final TriggerInfo t : f.getTriggerList())
+		for(final TriggerInfo t : f.getTriggerList())
 		{
 			removeTrigger(t);
 		}
@@ -3272,18 +3127,14 @@ public abstract class Creature extends GameObject
 
 	public void removeTrigger(TriggerInfo t)
 	{
-		if (_triggers == null)
-		{
-			return;
-		}
+		if(_triggers == null)
+		{ return; }
 		final Set<TriggerInfo> hs = _triggers.get(t.getType());
-		if (hs == null)
-		{
-			return;
-		}
+		if(hs == null)
+		{ return; }
 		hs.remove(t);
 
-		if (t.cancelEffectsOnRemove())
+		if(t.cancelEffectsOnRemove())
 		{
 			triggerCancelEffects(t);
 		}
@@ -3301,11 +3152,11 @@ public abstract class Creature extends GameObject
 
 	public CharacterAI getAI()
 	{
-		if (_ai == null)
+		if(_ai == null)
 		{
 			synchronized (this)
 			{
-				if (_ai == null)
+				if(_ai == null)
 				{
 					_ai = new CharacterAI(this);
 				}
@@ -3317,10 +3168,8 @@ public abstract class Creature extends GameObject
 
 	public void setAI(CharacterAI newAI)
 	{
-		if (newAI == null)
-		{
-			return;
-		}
+		if(newAI == null)
+		{ return; }
 
 		final CharacterAI oldAI = _ai;
 
@@ -3329,9 +3178,9 @@ public abstract class Creature extends GameObject
 			_ai = newAI;
 		}
 
-		if (oldAI != null)
+		if(oldAI != null)
 		{
-			if (oldAI.isActive())
+			if(oldAI.isActive())
 			{
 				oldAI.stopAITask();
 				newAI.startAITask();
@@ -3342,13 +3191,11 @@ public abstract class Creature extends GameObject
 
 	public boolean canMoveAndUseAI()
 	{
-		if (GameObjectsStorage.getPlayers(false, false).size() < Config.SCHEDULED_THREAD_POOL_SIZE)
+		if(GameObjectsStorage.getPlayers(false, false).size() < Config.SCHEDULED_THREAD_POOL_SIZE)
+		{ return true; }
+		for(final Player player : World.getAroundPlayers(this, 2000, 200))
 		{
-			return true;
-		}
-		for (final Player player : World.getAroundPlayers(this, 2000, 200))
-		{
-			if (player != null)
+			if(player != null)
 			{
 				aroundPlayers.add(player);
 			}
@@ -3362,26 +3209,24 @@ public abstract class Creature extends GameObject
 
 		newHp = Math.min(maxHp, Math.max(0, newHp));
 
-		if (isDeathImmune())
+		if(isDeathImmune())
 		{
 			newHp = Math.max(1.1, newHp); // Ставим 1.1, потому что на олимпиаде 1 == Поражение, что вызовет зависание.
 		}
 
-		if ((_currentHp == newHp) || ((newHp >= 0.5) && isDead() && !canResurrect))
-		{
-			return;
-		}
+		if((_currentHp == newHp) || ((newHp >= 0.5) && isDead() && !canResurrect))
+		{ return; }
 
 		final double hpStart = _currentHp;
 
 		_currentHp = newHp;
 
-		if (isDead.compareAndSet(true, false))
+		if(isDead.compareAndSet(true, false))
 		{
 			onRevive();
-			if (isPlayer())
+			if(isPlayer())
 			{
-				if (getPlayer().getRace() == Race.SYLPH)
+				if(getPlayer().getRace() == Race.SYLPH)
 				{
 					getPlayer().addAbnormalBoard();
 				}
@@ -3390,13 +3235,13 @@ public abstract class Creature extends GameObject
 
 		checkHpMessages(hpStart, _currentHp);
 
-		if (sendInfo)
+		if(sendInfo)
 		{
 			broadcastStatusUpdate();
 			sendChanges();
 		}
 
-		if (_currentHp < maxHp)
+		if(_currentHp < maxHp)
 		{
 			startRegeneration();
 		}
@@ -3422,22 +3267,20 @@ public abstract class Creature extends GameObject
 
 		newMp = Math.min(maxMp, Math.max(0, newMp));
 
-		if ((_currentMp == newMp) || ((newMp >= 0.5) && isDead()))
-		{
-			return;
-		}
+		if((_currentMp == newMp) || ((newMp >= 0.5) && isDead()))
+		{ return; }
 
 		final double mpStart = _currentMp;
 
 		_currentMp = newMp;
 
-		if (sendInfo)
+		if(sendInfo)
 		{
 			broadcastStatusUpdate();
 			sendChanges();
 		}
 
-		if (_currentMp < maxMp)
+		if(_currentMp < maxMp)
 		{
 			startRegeneration();
 		}
@@ -3452,30 +3295,26 @@ public abstract class Creature extends GameObject
 
 	public final void setCurrentCp(double newCp, boolean sendInfo)
 	{
-		if (!isPlayer())
-		{
-			return;
-		}
+		if(!isPlayer())
+		{ return; }
 
 		final int maxCp = getMaxCp();
 		newCp = Math.min(maxCp, Math.max(0, newCp));
 
-		if ((_currentCp == newCp) || ((newCp >= 0.5) && isDead()))
-		{
-			return;
-		}
+		if((_currentCp == newCp) || ((newCp >= 0.5) && isDead()))
+		{ return; }
 
 		final double cpStart = _currentCp;
 
 		_currentCp = newCp;
 
-		if (sendInfo)
+		if(sendInfo)
 		{
 			broadcastStatusUpdate();
 			sendChanges();
 		}
 
-		if (_currentCp < maxCp)
+		if(_currentCp < maxCp)
 		{
 			startRegeneration();
 		}
@@ -3490,24 +3329,20 @@ public abstract class Creature extends GameObject
 
 	public final void setCurrentDp(int newDp, boolean sendInfo)
 	{
-		if (!isPlayer())
-		{
-			return;
-		}
+		if(!isPlayer())
+		{ return; }
 
 		final int maxDp = getMaxDp();
 		newDp = Math.min(maxDp, Math.max(0, newDp));
 
-		if ((_currentDp == newDp) || ((newDp >= 0.5) && isDead()))
-		{
-			return;
-		}
+		if((_currentDp == newDp) || ((newDp >= 0.5) && isDead()))
+		{ return; }
 
 		final int dpStart = _currentDp;
 
 		_currentDp = newDp;
 
-		if (sendInfo)
+		if(sendInfo)
 		{
 			broadcastStatusUpdate();
 			sendChanges();
@@ -3523,30 +3358,26 @@ public abstract class Creature extends GameObject
 
 	public final void setCurrentBp(int newBp, boolean sendInfo)
 	{
-		if (!isPlayer())
-		{
-			return;
-		}
+		if(!isPlayer())
+		{ return; }
 
 		final int maxBp = getMaxBp();
 		newBp = Math.min(maxBp, Math.max(0, newBp));
 
-		if ((_currentBp == newBp) || ((newBp >= 0.5) && isDead()))
-		{
-			return;
-		}
+		if((_currentBp == newBp) || ((newBp >= 0.5) && isDead()))
+		{ return; }
 
 		final int bpStart = _currentBp;
 
 		_currentBp = newBp;
 
-		if (sendInfo)
+		if(sendInfo)
 		{
 			broadcastStatusUpdate();
 			sendChanges();
 		}
 
-		if (_currentBp < maxBp)
+		if(_currentBp < maxBp)
 		{
 			startRegeneration();
 		}
@@ -3567,20 +3398,16 @@ public abstract class Creature extends GameObject
 		newHp = Math.min(maxHp, Math.max(0, newHp));
 		newMp = Math.min(maxMp, Math.max(0, newMp));
 
-		if (isDeathImmune())
+		if(isDeathImmune())
 		{
 			newHp = Math.max(1.1, newHp); // Ставим 1.1, потому что на олимпиаде 1 == Поражение, что вызовет зависание.
 		}
 
-		if ((_currentHp == newHp) && (_currentMp == newMp))
-		{
-			return;
-		}
+		if((_currentHp == newHp) && (_currentMp == newMp))
+		{ return; }
 
-		if ((newHp >= 0.5) && isDead() && !canResurrect)
-		{
-			return;
-		}
+		if((newHp >= 0.5) && isDead() && !canResurrect)
+		{ return; }
 
 		final double hpStart = _currentHp;
 		final double mpStart = _currentMp;
@@ -3588,12 +3415,12 @@ public abstract class Creature extends GameObject
 		_currentHp = newHp;
 		_currentMp = newMp;
 
-		if (isDead.compareAndSet(true, false))
+		if(isDead.compareAndSet(true, false))
 		{
 			onRevive();
-			if (isPlayer())
+			if(isPlayer())
 			{
-				if (getPlayer().getRace() == Race.SYLPH)
+				if(getPlayer().getRace() == Race.SYLPH)
 				{
 					getPlayer().addAbnormalBoard();
 				}
@@ -3605,7 +3432,7 @@ public abstract class Creature extends GameObject
 		broadcastStatusUpdate();
 		sendChanges();
 
-		if ((_currentHp < maxHp) || (_currentMp < maxMp))
+		if((_currentHp < maxHp) || (_currentMp < maxMp))
 		{
 			startRegeneration();
 		}
@@ -3638,7 +3465,7 @@ public abstract class Creature extends GameObject
 	public final void setHeading(int heading, boolean broadcast)
 	{
 		_heading = heading;
-		if (broadcast)
+		if(broadcast)
 		{
 			broadcastPacket(new ExRotation(getObjectId(), heading));
 		}
@@ -3656,7 +3483,7 @@ public abstract class Creature extends GameObject
 
 	public final void setRunning()
 	{
-		if (!_running)
+		if(!_running)
 		{
 			_running = true;
 			broadcastPacket(changeMovePacket());
@@ -3665,7 +3492,7 @@ public abstract class Creature extends GameObject
 
 	public void setAggressionTarget(Creature target)
 	{
-		if (target == null)
+		if(target == null)
 		{
 			_aggressionTarget = HardReferences.emptyRef();
 		}
@@ -3682,7 +3509,7 @@ public abstract class Creature extends GameObject
 
 	public void setTarget(GameObject object)
 	{
-		if ((object != null) && !object.isVisible())
+		if((object != null) && !object.isVisible())
 		{
 			object = null;
 		}
@@ -3694,7 +3521,7 @@ public abstract class Creature extends GameObject
 		 * getTarget()) abortCast(false, true); }
 		 */
 
-		if (object == null)
+		if(object == null)
 		{
 			_target = HardReferences.emptyRef();
 		}
@@ -3711,7 +3538,7 @@ public abstract class Creature extends GameObject
 
 	public void setWalking()
 	{
-		if (_running)
+		if(_running)
 		{
 			_running = false;
 			broadcastPacket(changeMovePacket());
@@ -3725,10 +3552,8 @@ public abstract class Creature extends GameObject
 
 	public final void startAbnormalEffect(AbnormalEffect ae)
 	{
-		if (ae == AbnormalEffect.NONE)
-		{
-			return;
-		}
+		if(ae == AbnormalEffect.NONE)
+		{ return; }
 
 		_abnormalEffects.add(ae);
 		sendChanges();
@@ -3746,7 +3571,7 @@ public abstract class Creature extends GameObject
 	protected void startAttackStanceTask0()
 	{
 		// предыдущая задача еще не закончена, увеличиваем время
-		if (isInCombat())
+		if(isInCombat())
 		{
 			_stanceEndTime = System.currentTimeMillis() + 15000L;
 			return;
@@ -3758,7 +3583,7 @@ public abstract class Creature extends GameObject
 
 		// отменяем предыдущую
 		final Future<?> task = _stanceTask;
-		if (task != null)
+		if(task != null)
 		{
 			task.cancel(false);
 		}
@@ -3766,7 +3591,8 @@ public abstract class Creature extends GameObject
 		// Добавляем задачу, которая будет проверять, если истекло время нахождения
 		// персонажа в боевой позе,
 		// отменяет задачу и останаливает анимацию.
-		_stanceTask = LazyPrecisionTaskManager.getInstance().scheduleAtFixedRate(_stanceTaskRunnable == null ? _stanceTaskRunnable = new AttackStanceTask() : _stanceTaskRunnable, 1000L, 1000L);
+		_stanceTask = LazyPrecisionTaskManager.getInstance().scheduleAtFixedRate(_stanceTaskRunnable
+				== null ? _stanceTaskRunnable = new AttackStanceTask() : _stanceTaskRunnable, 1000L, 1000L);
 	}
 
 	/**
@@ -3777,14 +3603,14 @@ public abstract class Creature extends GameObject
 		_stanceEndTime = 0L;
 
 		final Future<?> task = _stanceTask;
-		if (task != null)
+		if(task != null)
 		{
 			task.cancel(false);
 			_stanceTask = null;
 
 			broadcastPacket(new AutoAttackStopPacket(getObjectId()));
 
-			if (isPlayer() && (getPlayer().getRace() == Race.SYLPH))
+			if(isPlayer() && (getPlayer().getRace() == Race.SYLPH))
 			{
 				final Player player = getPlayer();
 				player.removeAbnormalBoard();
@@ -3797,7 +3623,7 @@ public abstract class Creature extends GameObject
 		@Override
 		public void run()
 		{
-			if (!isInCombat())
+			if(!isInCombat())
 			{
 				stopAttackStanceTask();
 			}
@@ -3816,10 +3642,8 @@ public abstract class Creature extends GameObject
 		@Override
 		public void run()
 		{
-			if (_cha == null)
-			{
-				return;
-			}
+			if(_cha == null)
+			{ return; }
 			_cha.abortCast(true, true);
 		}
 	}
@@ -3829,11 +3653,11 @@ public abstract class Creature extends GameObject
 	 */
 	protected void stopRegeneration()
 	{
-		if (_isRegenerating)
+		if(_isRegenerating)
 		{
 			_isRegenerating = false;
 
-			if (_regenTask != null)
+			if(_regenTask != null)
 			{
 				_regenTask.cancel(false);
 				_regenTask = null;
@@ -3846,15 +3670,14 @@ public abstract class Creature extends GameObject
 	 */
 	protected void startRegeneration()
 	{
-		if (!isVisible() || isDead() || (getRegenTick() == 0L) || _isRegenerating)
-		{
-			return;
-		}
+		if(!isVisible() || isDead() || (getRegenTick() == 0L) || _isRegenerating)
+		{ return; }
 
-		if (!_isRegenerating)
+		if(!_isRegenerating)
 		{
 			_isRegenerating = true;
-			_regenTask = RegenTaskManager.getInstance().scheduleAtFixedRate(_regenTaskRunnable == null ? _regenTaskRunnable = new RegenTask() : _regenTaskRunnable, getRegenTick(), getRegenTick());
+			_regenTask = RegenTaskManager.getInstance().scheduleAtFixedRate(_regenTaskRunnable
+					== null ? _regenTaskRunnable = new RegenTask() : _regenTaskRunnable, getRegenTick(), getRegenTick());
 		}
 	}
 
@@ -3868,10 +3691,8 @@ public abstract class Creature extends GameObject
 		@Override
 		public void run()
 		{
-			if (isAlikeDead() || (getRegenTick() == 0L))
-			{
-				return;
-			}
+			if(isAlikeDead() || (getRegenTick() == 0L))
+			{ return; }
 
 			final double hpStart = _currentHp;
 			final double mpStart = _currentMp;
@@ -3888,34 +3709,34 @@ public abstract class Creature extends GameObject
 			double addCp = 0.;
 			double addBp = 0.;
 
-			if (_currentHp < maxHp)
+			if(_currentHp < maxHp)
 			{
 				addHp += getHpRegen();
 			}
 
-			if (_currentMp < maxMp)
+			if(_currentMp < maxMp)
 			{
 				addMp += getMpRegen();
 			}
 
-			if (_currentCp < maxCp)
+			if(_currentCp < maxCp)
 			{
 				addCp += getCpRegen();
 			}
 
-			if (_currentBp < maxBp)
+			if(_currentBp < maxBp)
 			{
 				addBp += getBpRegen();
 			}
 
-			if (isSitting())
+			if(isSitting())
 			{
 				// Added regen bonus when character is sitting
-				if (isPlayer() && Config.REGEN_SIT_WAIT)
+				if(isPlayer() && Config.REGEN_SIT_WAIT)
 				{
 					final Player pl = getPlayer();
 					pl.updateWaitSitTime();
-					if (pl.getWaitSitTime() > 5)
+					if(pl.getWaitSitTime() > 5)
 					{
 						addHp += pl.getWaitSitTime();
 						addMp += pl.getWaitSitTime();
@@ -3930,14 +3751,14 @@ public abstract class Creature extends GameObject
 					addCp += getCpRegen() * 0.5;
 				}
 			}
-			else if (!getMovement().isMoving())
+			else if(!getMovement().isMoving())
 			{
 				// TODO: Вынести значения в датапак?
 				addHp += getHpRegen() * 0.1;
 				addMp += getMpRegen() * 0.1;
 				addCp += getCpRegen() * 0.1;
 			}
-			else if (isRunning())
+			else if(isRunning())
 			{
 				// TODO: Вынести значения в датапак?
 				addHp -= getHpRegen() * 0.3;
@@ -3945,7 +3766,7 @@ public abstract class Creature extends GameObject
 				addCp -= getCpRegen() * 0.3;
 			}
 
-			if (isRaid())
+			if(isRaid())
 			{
 				addHp *= Config.RATE_RAID_REGEN;
 				addMp *= Config.RATE_RAID_REGEN;
@@ -3957,7 +3778,7 @@ public abstract class Creature extends GameObject
 			_currentMp += Math.max(0, Math.min(addMp, ((getStat().calc(Stats.MP_LIMIT, null, null) * maxMp) / 100.) - _currentMp));
 			_currentMp = Math.min(maxMp, _currentMp);
 
-			if (isPlayer())
+			if(isPlayer())
 			{
 				_currentCp += Math.max(0, Math.min(addCp, ((getStat().calc(Stats.CP_LIMIT, null, null) * maxCp) / 100.) - _currentCp));
 				_currentCp = Math.min(maxCp, _currentCp);
@@ -3967,7 +3788,7 @@ public abstract class Creature extends GameObject
 			}
 
 			// отрегенились, останавливаем задачу
-			if ((_currentHp == maxHp) && (_currentMp == maxMp) && (_currentCp == maxCp) && (_currentBp == maxBp))
+			if((_currentHp == maxHp) && (_currentMp == maxMp) && (_currentCp == maxCp) && (_currentBp == maxBp))
 			{
 				stopRegeneration();
 			}
@@ -3975,24 +3796,24 @@ public abstract class Creature extends GameObject
 			getListeners().onChangeCurrentHp(hpStart, _currentHp);
 			getListeners().onChangeCurrentMp(mpStart, _currentMp);
 
-			if (isPlayer())
+			if(isPlayer())
 			{
 				getListeners().onChangeCurrentCp(cpStart, _currentCp);
 				getListeners().onChangeCurrentBp(bpStart, _currentBp);
 			}
 
 			List<UpdateType> updateAttributes = new ArrayList<>();
-			
-			if ((addHp > 0) && (_currentHp != hpStart))
+
+			if((addHp > 0) && (_currentHp != hpStart))
 				updateAttributes.add(UpdateType.VCP_HP);
-			if ((addMp > 0) && (_currentMp != mpStart))
+			if((addMp > 0) && (_currentMp != mpStart))
 				updateAttributes.add(UpdateType.VCP_MP);
-			if ((addCp > 0) && (_currentCp != cpStart))
+			if((addCp > 0) && (_currentCp != cpStart))
 				updateAttributes.add(UpdateType.VCP_CP);
-			if ((addBp > 0) && (_currentBp != bpStart))
+			if((addBp > 0) && (_currentBp != bpStart))
 				updateAttributes.add(UpdateType.VCP_BP);
-			
-			if (!updateAttributes.isEmpty())
+
+			if(!updateAttributes.isEmpty())
 			{
 				sendPacket(new StatusUpdate(Creature.this, StatusType.HPUpdate, updateAttributes));
 				broadcastStatusUpdate();
@@ -4033,7 +3854,7 @@ public abstract class Creature extends GameObject
 
 	public void setDamageBlockedException(Creature exception)
 	{
-		if (exception == null)
+		if(exception == null)
 		{
 			_damageBlockedException = HardReferences.emptyRef();
 		}
@@ -4045,7 +3866,7 @@ public abstract class Creature extends GameObject
 
 	public void setEffectImmunityException(Creature exception)
 	{
-		if (exception == null)
+		if(exception == null)
 		{
 			_effectImmunityException = HardReferences.emptyRef();
 		}
@@ -4058,18 +3879,14 @@ public abstract class Creature extends GameObject
 	@Override
 	public boolean isInvisible(GameObject observer)
 	{
-		if ((observer != null) && (getObjectId() == observer.getObjectId()))
-		{
-			return false;
-		}
+		if((observer != null) && (getObjectId() == observer.getObjectId()))
+		{ return false; }
 
-		for (final Event event : getEvents())
+		for(final Event event : getEvents())
 		{
 			final Boolean result = event.isInvisible(this, observer);
-			if (result != null)
-			{
-				return result;
-			}
+			if(result != null)
+			{ return result; }
 		}
 		return getFlags().getInvisible().get();
 	}
@@ -4077,7 +3894,7 @@ public abstract class Creature extends GameObject
 	public boolean startInvisible(Object owner, boolean withServitors)
 	{
 		boolean result;
-		if (owner == null)
+		if(owner == null)
 		{
 			result = getFlags().getInvisible().start();
 		}
@@ -4086,19 +3903,19 @@ public abstract class Creature extends GameObject
 			result = getFlags().getInvisible().start(owner);
 		}
 
-		if (result)
+		if(result)
 		{
-			for (final Player p : World.getAroundObservers(this))
+			for(final Player p : World.getAroundObservers(this))
 			{
-				if (isInvisible(p))
+				if(isInvisible(p))
 				{
 					p.sendPacket(p.removeVisibleObject(this, null));
 				}
 			}
 
-			if (withServitors)
+			if(withServitors)
 			{
-				for (final Servitor servitor : getServitors())
+				for(final Servitor servitor : getServitors())
 				{
 					servitor.startInvisible(owner, false);
 				}
@@ -4115,7 +3932,7 @@ public abstract class Creature extends GameObject
 	public boolean stopInvisible(Object owner, boolean withServitors)
 	{
 		boolean result;
-		if (owner == null)
+		if(owner == null)
 		{
 			result = getFlags().getInvisible().stop();
 		}
@@ -4124,20 +3941,20 @@ public abstract class Creature extends GameObject
 			result = getFlags().getInvisible().stop(owner);
 		}
 
-		if (result)
+		if(result)
 		{
 			final List<Player> players = World.getAroundObservers(this);
-			for (final Player p : players)
+			for(final Player p : players)
 			{
-				if (isVisible() && !isInvisible(p))
+				if(isVisible() && !isInvisible(p))
 				{
 					p.sendPacket(p.addVisibleObject(this, null));
 				}
 			}
 
-			if (withServitors)
+			if(withServitors)
 			{
-				for (final Servitor servitor : getServitors())
+				for(final Servitor servitor : getServitors())
 				{
 					servitor.stopInvisible(owner, false);
 				}
@@ -4163,12 +3980,10 @@ public abstract class Creature extends GameObject
 
 	public boolean isIgnoredSkill(Skill skill)
 	{
-		for (final TIntSet set : _ignoreSkillsEffects.values())
+		for(final TIntSet set : _ignoreSkillsEffects.values())
 		{
-			if (set.contains(skill.getId()))
-			{
-				return true;
-			}
+			if(set.contains(skill.getId()))
+			{ return true; }
 		}
 		return false;
 	}
@@ -4235,10 +4050,8 @@ public abstract class Creature extends GameObject
 
 	public boolean isMuted(Skill skill)
 	{
-		if ((skill == null) || skill.isNotAffectedByMute())
-		{
-			return false;
-		}
+		if((skill == null) || skill.isNotAffectedByMute())
+		{ return false; }
 		return (isMMuted() && skill.isMagic()) || (isPMuted() && !skill.isMagic());
 	}
 
@@ -4299,27 +4112,21 @@ public abstract class Creature extends GameObject
 
 	public boolean isDamageBlocked(Creature attacker)
 	{
-		if (attacker == this)
-		{
-			return false;
-		}
+		if(attacker == this)
+		{ return false; }
 
-		if (isInvulnerable())
-		{
-			return true;
-		}
+		if(isInvulnerable())
+		{ return true; }
 
-		if (getFlags().getHitCountBlocked().get())
+		if(getFlags().getHitCountBlocked().get())
 		{
-			if (attacker == null)
-			{
-				return false;
-			}
+			if(attacker == null)
+			{ return false; }
 
-			if (getHitBlocks() > 0)
+			if(getHitBlocks() > 0)
 			{
 				setHitBlocks(getHitBlocks() - 1);
-				if (getHitBlocks() == 0)
+				if(getHitBlocks() == 0)
 				{
 					getAbnormalList().stop(AbnormalType.INVINCIBILITY);
 				}
@@ -4332,44 +4139,32 @@ public abstract class Creature extends GameObject
 		}
 
 		final Creature exception = _damageBlockedException.get();
-		if ((exception != null) && (exception == attacker))
-		{
-			return false;
-		}
+		if((exception != null) && (exception == attacker))
+		{ return false; }
 
-		if ((attacker != null) && PositionUtils.isFacing(this, attacker, 100))
+		if((attacker != null) && PositionUtils.isFacing(this, attacker, 100))
 		{
 			double blockFront = getStat().calc(Stats.DAMAGE_BLOCK_FRONT);
-			if (blockFront == -1)
-			{
-				return true;
-			}
+			if(blockFront == -1)
+			{ return true; }
 		}
-		if ((attacker != null) && PositionUtils.isBehind(this, attacker))
+		if((attacker != null) && PositionUtils.isBehind(this, attacker))
 		{
 			double blockBack = getStat().calc(Stats.DAMAGE_BLOCK_BACK);
-			if (blockBack == -1)
-			{
-				return true;
-			}
+			if(blockBack == -1)
+			{ return true; }
 		}
-		if (getFlags().getDamageBlocked().get())
+		if(getFlags().getDamageBlocked().get())
 		{
 			final double blockRadius = getStat().calc(Stats.DAMAGE_BLOCK_RADIUS);
-			if (blockRadius == -1)
-			{
-				return true;
-			}
+			if(blockRadius == -1)
+			{ return true; }
 
-			if (attacker == null)
-			{
-				return false;
-			}
+			if(attacker == null)
+			{ return false; }
 
-			if ((blockRadius > 0.) && (attacker.getDistance(this) <= blockRadius))
-			{
-				return true;
-			}
+			if((blockRadius > 0.) && (attacker.getDistance(this) <= blockRadius))
+			{ return true; }
 		}
 
 		return false;
@@ -4392,7 +4187,8 @@ public abstract class Creature extends GameObject
 
 	public boolean isMovementDisabled()
 	{
-		return isBlocked() || isImmobilized() || isAlikeDead() || isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || isCastingNow() || isFrozen();
+		return isBlocked() || isImmobilized() || isAlikeDead() || isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || isCastingNow()
+				|| isFrozen();
 	}
 
 	public final boolean isActionsDisabled()
@@ -4402,7 +4198,8 @@ public abstract class Creature extends GameObject
 
 	public boolean isActionsDisabled(boolean withCast)
 	{
-		return isBlocked() || isAlikeDead() || isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || (withCast && isCastingNow()) || isFrozen();
+		return isBlocked() || isAlikeDead() || isStunned() || isSleeping() || isDecontrolled() || isAttackingNow() || (withCast && isCastingNow())
+				|| isFrozen();
 	}
 
 	public boolean isUseItemDisabled()
@@ -4452,25 +4249,23 @@ public abstract class Creature extends GameObject
 
 	public void teleToLocation(int x, int y, int z, Reflection r)
 	{
-		if (!isTeleporting.compareAndSet(false, true))
-		{
-			return;
-		}
+		if(!isTeleporting.compareAndSet(false, true))
+		{ return; }
 
-		if (isFakeDeath())
+		if(isFakeDeath())
 		{
 			breakFakeDeath();
 		}
 
 		abortCast(true, false);
-		if (!isLockedTarget())
+		if(!isLockedTarget())
 		{
 			setTarget(null);
 		}
 
 		getMovement().stopMove();
 
-		if (!isBoat() && !isFlying() && !World.isWater(new Location(x, y, z), r))
+		if(!isBoat() && !isFlying() && !World.isWater(new Location(x, y, z), r))
 		{
 			z = GeoEngine.getLowerHeight(x, y, z, r.getGeoIndex());
 		}
@@ -4478,11 +4273,11 @@ public abstract class Creature extends GameObject
 		final Location loc = Location.findPointToStay(x, y, z, 0, 50, r.getGeoIndex());
 
 		// TODO: [Bonux] Check ExTeleportToLocationActivate!
-		if (isPlayer())
+		if(isPlayer())
 		{
 			final Player player = (Player) this;
 
-			if (!player.isInObserverMode())
+			if(!player.isInObserverMode())
 			{
 				sendPacket(new TeleportToLocationPacket(this, loc.x, loc.y, loc.z));
 			}
@@ -4491,19 +4286,19 @@ public abstract class Creature extends GameObject
 			decayMe();
 			setLoc(loc);
 
-			if ((player.getReflection().getId() <= -5) && (player.getReflection().getId() != r.getId()))
+			if((player.getReflection().getId() <= -5) && (player.getReflection().getId() != r.getId()))
 			{
 				player.stopTimedHuntingZoneTask(true, false);
 			}
 
 			setReflection(r);
 
-			if (!player.isInObserverMode())
+			if(!player.isInObserverMode())
 			{
 				sendPacket(new ExTeleportToLocationActivate(this, loc.x, loc.y, loc.z));
 			}
 
-			if (player.isInObserverMode() || isFakePlayer())
+			if(player.isInObserverMode() || isFakePlayer())
 			{
 				onTeleported();
 			}
@@ -4521,7 +4316,7 @@ public abstract class Creature extends GameObject
 
 	public boolean onTeleported()
 	{
-		if (isTeleporting.compareAndSet(true, false))
+		if(isTeleporting.compareAndSet(true, false))
 		{
 			updateZones();
 			return true;
@@ -4554,11 +4349,11 @@ public abstract class Creature extends GameObject
 
 	public AbnormalList getAbnormalList()
 	{
-		if (_effectList == null)
+		if(_effectList == null)
 		{
 			synchronized (this)
 			{
-				if (_effectList == null)
+				if(_effectList == null)
 				{
 					_effectList = new AbnormalList(this);
 				}
@@ -4572,34 +4367,30 @@ public abstract class Creature extends GameObject
 	{
 		int max_attacker_level = 0xFFFF;
 
-		if (isNpc())
+		if(isNpc())
 		{
 			final NpcInstance npc = (NpcInstance) this;
 			final NpcInstance leader = npc.getLeader();
 
-			if (leader != null)
-			{
-				return leader.paralizeOnAttack(attacker);
-			}
+			if(leader != null)
+			{ return leader.paralizeOnAttack(attacker); }
 
-			if (isRaid() && !isArenaRaid())
+			if(isRaid() && !isArenaRaid())
 			{
 				max_attacker_level = getLevel() + npc.getParameter("ParalizeOnAttack", Config.RAID_MAX_LEVEL_DIFF);
 			}
 			else
 			{
 				final int max_level_diff = npc.getParameter("ParalizeOnAttack", -1000);
-				if (max_level_diff != -1000)
+				if(max_level_diff != -1000)
 				{
 					max_attacker_level = getLevel() + max_level_diff;
 				}
 			}
 		}
 
-		if (attacker.getLevel() > max_attacker_level)
-		{
-			return true;
-		}
+		if(attacker.getLevel() > max_attacker_level)
+		{ return true; }
 
 		return false;
 	}
@@ -4608,7 +4399,7 @@ public abstract class Creature extends GameObject
 	protected void onDelete()
 	{
 		final CharacterAI ai = getAI();
-		if (ai != null)
+		if(ai != null)
 		{
 			ai.stopAllTaskAndTimers();
 			ai.notifyEvent(CtrlEvent.EVT_DELETE);
@@ -4623,20 +4414,16 @@ public abstract class Creature extends GameObject
 	// ---------------------------- Not Implemented -------------------------------
 
 	public void addExpAndSp(long exp, long sp)
-	{
-	}
+	{}
 
 	public void broadcastCharInfo()
-	{
-	}
+	{}
 
 	public void broadcastCharInfoImpl(IUpdateTypeComponent... components)
-	{
-	}
+	{}
 
 	public void checkHpMessages(double currentHp, double newHp)
-	{
-	}
+	{}
 
 	public boolean checkPvP(Creature target, SkillEntry skillEntry)
 	{
@@ -4775,8 +4562,7 @@ public abstract class Creature extends GameObject
 	}
 
 	public void reduceArrowCount()
-	{
-	}
+	{}
 
 	public void sendChanges()
 	{
@@ -4784,20 +4570,16 @@ public abstract class Creature extends GameObject
 	}
 
 	public void sendMessage(String message)
-	{
-	}
+	{}
 
 	public void sendPacket(IBroadcastPacket mov)
-	{
-	}
+	{}
 
 	public void sendPacket(IBroadcastPacket... mov)
-	{
-	}
+	{}
 
 	public void sendPacket(List<? extends IBroadcastPacket> mov)
-	{
-	}
+	{}
 
 	public int getMaxIncreasedForce()
 	{
@@ -4805,16 +4587,13 @@ public abstract class Creature extends GameObject
 	}
 
 	public void setIncreasedForce(int i)
-	{
-	}
+	{}
 
 	public void setConsumedSouls(int value, int type)
-	{
-	}
+	{}
 
 	public void startPvPFlag(Creature target)
-	{
-	}
+	{}
 
 	public boolean unChargeShots(boolean spirit)
 	{
@@ -4833,9 +4612,9 @@ public abstract class Creature extends GameObject
 
 	public void updateAbnormalIcons()
 	{
-		if (Config.USER_INFO_INTERVAL == 0)
+		if(Config.USER_INFO_INTERVAL == 0)
 		{
-			if (_updateAbnormalIconsTask != null)
+			if(_updateAbnormalIconsTask != null)
 			{
 				_updateAbnormalIconsTask.cancel(false);
 				_updateAbnormalIconsTask = null;
@@ -4844,10 +4623,8 @@ public abstract class Creature extends GameObject
 			return;
 		}
 
-		if (_updateAbnormalIconsTask != null)
-		{
-			return;
-		}
+		if(_updateAbnormalIconsTask != null)
+		{ return; }
 
 		_updateAbnormalIconsTask = ThreadPoolManager.getInstance().schedule(new UpdateAbnormalIcons(), Config.USER_INFO_INTERVAL);
 	}
@@ -4863,9 +4640,10 @@ public abstract class Creature extends GameObject
 		Arrays.sort(effects, AbnormalsComparator.getInstance());
 		final ExAbnormalStatusUpdateFromTargetPacket abnormalStatus = new ExAbnormalStatusUpdateFromTargetPacket(getObjectId());
 
-		for (final Abnormal effect : effects)
+		for(final Abnormal effect : effects)
 		{
-			if ((effect != null) && !effect.checkAbnormalType(AbnormalType.HP_RECOVER) && (isPlayable() ? effect.getSkill().isShowPlayerAbnormal() : effect.getSkill().isShowNpcAbnormal()))
+			if((effect != null) && !effect.checkAbnormalType(AbnormalType.HP_RECOVER)
+					&& (isPlayable() ? effect.getSkill().isShowPlayerAbnormal() : effect.getSkill().isShowNpcAbnormal()))
 			{
 				effect.addIcon(abnormalStatus);
 			}
@@ -4875,21 +4653,19 @@ public abstract class Creature extends GameObject
 
 	public void broadcastAbnormalStatus(ExAbnormalStatusUpdateFromTargetPacket packet)
 	{
-		if (getTarget() == this)
+		if(getTarget() == this)
 		{
 			sendPacket(packet);
 		}
 
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
 		final List<Player> players = World.getAroundObservers(this);
-		for (int i = 0; i < players.size(); i++)
+		for(int i = 0; i < players.size(); i++)
 		{
 			Player target = players.get(i);
-			if (target.getTarget() == this)
+			if(target.getTarget() == this)
 			{
 				target.sendPacket(packet);
 			}
@@ -4908,28 +4684,28 @@ public abstract class Creature extends GameObject
 		final int maxDp = isPlayer() ? getMaxDp() : 0;
 		final int maxBp = isPlayer() ? getMaxBp() : 0;
 
-		if (_currentHp > maxHp)
+		if(_currentHp > maxHp)
 		{
 			setCurrentHp(maxHp, false);
 		}
-		if (_currentMp > maxMp)
+		if(_currentMp > maxMp)
 		{
 			setCurrentMp(maxMp, false);
 		}
-		if (_currentCp > maxCp)
+		if(_currentCp > maxCp)
 		{
 			setCurrentCp(maxCp, false);
 		}
-		if (_currentDp > maxDp)
+		if(_currentDp > maxDp)
 		{
 			setCurrentDp(maxDp, false);
 		}
-		if (_currentBp > maxBp)
+		if(_currentBp > maxBp)
 		{
 			setCurrentBp(maxBp, false);
 		}
 
-		if ((_currentHp < maxHp) || (_currentMp < maxMp) || (_currentCp < maxCp) || (_currentBp < maxBp))
+		if((_currentHp < maxHp) || (_currentMp < maxMp) || (_currentCp < maxCp) || (_currentBp < maxBp))
 		{
 			startRegeneration();
 		}
@@ -4942,12 +4718,10 @@ public abstract class Creature extends GameObject
 	}
 
 	public void setOverhitAttacker(Creature attacker)
-	{
-	}
+	{}
 
 	public void setOverhitDamage(double damage)
-	{
-	}
+	{}
 
 	public boolean isHero()
 	{
@@ -4993,7 +4767,7 @@ public abstract class Creature extends GameObject
 
 	public boolean setXYZ(int x, int y, int z, boolean stopMove)
 	{
-		if (!stopMove)
+		if(!stopMove)
 		{
 			getMovement().stopMove();
 		}
@@ -5001,10 +4775,8 @@ public abstract class Creature extends GameObject
 		getMovement().getMoveLock().lock();
 		try
 		{
-			if (!super.setXYZ(x, y, z))
-			{
-				return false;
-			}
+			if(!super.setXYZ(x, y, z))
+			{ return false; }
 		}
 		finally
 		{
@@ -5027,7 +4799,7 @@ public abstract class Creature extends GameObject
 	@Override
 	public void spawnMe(Location loc)
 	{
-		if (loc.h >= 0)
+		if(loc.h >= 0)
 		{
 			setHeading(loc.h);
 		}
@@ -5037,7 +4809,7 @@ public abstract class Creature extends GameObject
 	@Override
 	protected void onDespawn()
 	{
-		if (!isLockedTarget())
+		if(!isLockedTarget())
 		{
 			setTarget(null);
 		}
@@ -5052,10 +4824,8 @@ public abstract class Creature extends GameObject
 
 	public final void doDecay()
 	{
-		if (!isDead())
-		{
-			return;
-		}
+		if(!isDead())
+		{ return; }
 
 		onDecay();
 	}
@@ -5071,12 +4841,10 @@ public abstract class Creature extends GameObject
 
 	public void addUnActiveSkill(Skill skill)
 	{
-		if ((skill == null) || isUnActiveSkill(skill.getId()))
-		{
-			return;
-		}
+		if((skill == null) || isUnActiveSkill(skill.getId()))
+		{ return; }
 
-		if (skill.isToggle())
+		if(skill.isToggle())
 		{
 			getAbnormalList().stop(skill, false);
 		}
@@ -5089,10 +4857,8 @@ public abstract class Creature extends GameObject
 
 	public void removeUnActiveSkill(Skill skill)
 	{
-		if ((skill == null) || !isUnActiveSkill(skill.getId()))
-		{
-			return;
-		}
+		if((skill == null) || !isUnActiveSkill(skill.getId()))
+		{ return; }
 
 		getStat().addFuncs(skill.getStatFuncs());
 		addTriggers(skill);
@@ -5117,11 +4883,11 @@ public abstract class Creature extends GameObject
 
 	public CharListenerList getListeners()
 	{
-		if (listeners == null)
+		if(listeners == null)
 		{
 			synchronized (this)
 			{
-				if (listeners == null)
+				if(listeners == null)
 				{
 					listeners = new CharListenerList(this);
 				}
@@ -5142,11 +4908,11 @@ public abstract class Creature extends GameObject
 
 	public CharStatsChangeRecorder<? extends Creature> getStatsRecorder()
 	{
-		if (_statsRecorder == null)
+		if(_statsRecorder == null)
 		{
 			synchronized (this)
 			{
-				if (_statsRecorder == null)
+				if(_statsRecorder == null)
 				{
 					_statsRecorder = new CharStatsChangeRecorder<Creature>(this);
 				}
@@ -5164,28 +4930,28 @@ public abstract class Creature extends GameObject
 
 	public void displayGiveDamageMessage(Creature target, Skill skill, int damage, Servitor servitorTransferedDamage, int transferedDamage, boolean crit, boolean miss, boolean shld, boolean blocked, int elementalDamage, boolean elementalCrit)
 	{
-		if (miss)
+		if(miss)
 		{
-			if (target.isPlayer())
+			if(target.isPlayer())
 			{
 				target.sendPacket(new SystemMessage(SystemMessage.C1_HAS_EVADED_C2S_ATTACK).addName(target).addName(this));
 			}
 			return;
 		}
 
-		if (blocked)
+		if(blocked)
 		{
 			//
 		}
-		else if (shld)
+		else if(shld)
 		{
-			if (target.isPlayer())
+			if(target.isPlayer())
 			{
-				if (damage == Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE)
+				if(damage == Config.EXCELLENT_SHIELD_BLOCK_RECEIVED_DAMAGE)
 				{
 					target.sendPacket(SystemMsg.YOUR_EXCELLENT_SHIELD_DEFENSE_WAS_A_SUCCESS);
 				}
-				else if (damage > 0)
+				else if(damage > 0)
 				{
 					target.sendPacket(SystemMsg.YOUR_SHIELD_DEFENSE_HAS_SUCCEEDED);
 				}
@@ -5215,10 +4981,8 @@ public abstract class Creature extends GameObject
 
 	public final boolean isInFlyingTransform()
 	{
-		if (isTransformed())
-		{
-			return getTransform().getType() == TransformType.FLYING;
-		}
+		if(isTransformed())
+		{ return getTransform().getType() == TransformType.FLYING; }
 		return false;
 	}
 
@@ -5229,25 +4993,19 @@ public abstract class Creature extends GameObject
 
 	public final int getVisualTransformId()
 	{
-		if (getVisualTransform() != null)
-		{
-			return getVisualTransform().getId();
-		}
+		if(getVisualTransform() != null)
+		{ return getVisualTransform().getId(); }
 
 		return 0;
 	}
 
 	public final TransformTemplate getVisualTransform()
 	{
-		if (_isInTransformUpdate)
-		{
-			return null;
-		}
+		if(_isInTransformUpdate)
+		{ return null; }
 
-		if (_visualTransform != null)
-		{
-			return _visualTransform;
-		}
+		if(_visualTransform != null)
+		{ return _visualTransform; }
 
 		return getTransform();
 	}
@@ -5260,12 +5018,10 @@ public abstract class Creature extends GameObject
 
 	public void setVisualTransform(TransformTemplate template)
 	{
-		if (_visualTransform == template)
-		{
-			return;
-		}
+		if(_visualTransform == template)
+		{ return; }
 
-		if (((template != null) && isVisualTransformed()) || ((template == null) && isTransformed()))
+		if(((template != null) && isVisualTransformed()) || ((template == null) && isTransformed()))
 		{
 			_isInTransformUpdate = true;
 			_visualTransform = null;
@@ -5277,7 +5033,8 @@ public abstract class Creature extends GameObject
 
 		_visualTransform = template;
 
-		final Location destLoc = getLoc().correctGeoZ(getGeoIndex()).changeZ((_visualTransform == null ? 0 : _visualTransform.getSpawnHeight()) + (int) getCurrentCollisionHeight());
+		final Location destLoc = getLoc().correctGeoZ(getGeoIndex()).changeZ((_visualTransform == null ? 0 : _visualTransform.getSpawnHeight())
+				+ (int) getCurrentCollisionHeight());
 		sendPacket(new FlyToLocationPacket(this, destLoc, FlyType.DUMMY, 0, 0, 0));
 		setLoc(destLoc);
 
@@ -5291,10 +5048,8 @@ public abstract class Creature extends GameObject
 
 	public final int getTransformId()
 	{
-		if (isTransformed())
-		{
-			return getTransform().getId();
-		}
+		if(isTransformed())
+		{ return getTransform().getId(); }
 
 		return 0;
 	}
@@ -5327,50 +5082,36 @@ public abstract class Creature extends GameObject
 	@Override
 	public int getMoveSpeed()
 	{
-		if (isRunning())
-		{
-			return getRunSpeed();
-		}
+		if(isRunning())
+		{ return getRunSpeed(); }
 
 		return getWalkSpeed();
 	}
 
 	public int getRunSpeed()
 	{
-		if (isMounted())
-		{
-			return getRideRunSpeed();
-		}
+		if(isMounted())
+		{ return getRideRunSpeed(); }
 
-		if (isFlying())
-		{
-			return getFlyRunSpeed();
-		}
+		if(isFlying())
+		{ return getFlyRunSpeed(); }
 
-		if (isInWater())
-		{
-			return getSwimRunSpeed();
-		}
+		if(isInWater())
+		{ return getSwimRunSpeed(); }
 
 		return getSpeed(getBaseStats().getRunSpd());
 	}
 
 	public int getWalkSpeed()
 	{
-		if (isMounted())
-		{
-			return getRideWalkSpeed();
-		}
+		if(isMounted())
+		{ return getRideWalkSpeed(); }
 
-		if (isFlying())
-		{
-			return getFlyWalkSpeed();
-		}
+		if(isFlying())
+		{ return getFlyWalkSpeed(); }
 
-		if (isInWater())
-		{
-			return getSwimWalkSpeed();
-		}
+		if(isInWater())
+		{ return getSwimWalkSpeed(); }
 
 		return getSpeed(getBaseStats().getWalkSpd());
 	}
@@ -5524,16 +5265,17 @@ public abstract class Creature extends GameObject
 	public int getInteractionDistance(GameObject target)
 	{
 		int range = (int) Math.max(10, getMinDistance(target));
-		if (target.isNpc())
+		if(target.isNpc())
 		{
 			range += INTERACTION_DISTANCE / 2;
-			if (!target.isInRangeZ(this, range) && !GeoEngine.canMoveToCoord(getX(), getY(), getZ(), target.getX(), target.getY(), target.getZ(), getGeoIndex()))
+			if(!target.isInRangeZ(this, range)
+					&& !GeoEngine.canMoveToCoord(getX(), getY(), getZ(), target.getX(), target.getY(), target.getZ(), getGeoIndex()))
 			{
 				final List<Location> _moveList = GeoEngine.MoveList(getX(), getY(), getZ(), target.getX(), target.getY(), getGeoIndex(), false);
-				if (_moveList != null)
+				if(_moveList != null)
 				{
 					final Location moveLoc = _moveList.get(_moveList.size() - 1).geo2world();
-					if (!target.isInRangeZ(moveLoc, range) && target.isInRangeZ(moveLoc, range + (INTERACTION_DISTANCE / 2)))
+					if(!target.isInRangeZ(moveLoc, range) && target.isInRangeZ(moveLoc, range + (INTERACTION_DISTANCE / 2)))
 					{
 						range = target.getDistance3D(moveLoc) + 16;
 					}
@@ -5565,19 +5307,15 @@ public abstract class Creature extends GameObject
 	@Override
 	public boolean isTargetable(Creature creature)
 	{
-		if (creature != null)
+		if(creature != null)
 		{
-			if (creature == this)
-			{
-				return true;
-			}
+			if(creature == this)
+			{ return true; }
 
-			if (creature.isPlayer())
+			if(creature.isPlayer())
 			{
-				if (creature.getPlayer().isGM())
-				{
-					return true;
-				}
+				if(creature.getPlayer().isGM())
+				{ return true; }
 			}
 		}
 		return _isTargetable;
@@ -5600,16 +5338,14 @@ public abstract class Creature extends GameObject
 
 	private boolean canAbsorb(Creature attacked, Creature attacker)
 	{
-		if (attacked.isPlayable() || !Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
-		{
-			return true;
-		}
+		if(attacked.isPlayable() || !Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
+		{ return true; }
 		return attacker.getPvpFlag() == 0;
 	}
 
 	public CreatureBaseStats getBaseStats()
 	{
-		if (_baseStats == null)
+		if(_baseStats == null)
 		{
 			_baseStats = new CreatureBaseStats(this);
 		}
@@ -5618,7 +5354,7 @@ public abstract class Creature extends GameObject
 
 	public CreatureStat getStat()
 	{
-		if (_stat == null)
+		if(_stat == null)
 		{
 			_stat = new CreatureStat(this);
 		}
@@ -5627,7 +5363,7 @@ public abstract class Creature extends GameObject
 
 	public CreatureFlags getFlags()
 	{
-		if (_statuses == null)
+		if(_statuses == null)
 		{
 			_statuses = new CreatureFlags(this);
 		}
@@ -5662,12 +5398,10 @@ public abstract class Creature extends GameObject
 
 	public boolean isTargetUnderDebuff()
 	{
-		for (final Abnormal effect : getAbnormalList())
+		for(final Abnormal effect : getAbnormalList())
 		{
-			if (effect.isOffensive())
-			{
-				return true;
-			}
+			if(effect.isOffensive())
+			{ return true; }
 		}
 		return false;
 	}
@@ -5690,7 +5424,7 @@ public abstract class Creature extends GameObject
 
 	public void stopDeleteTask()
 	{
-		if (_deleteTask != null)
+		if(_deleteTask != null)
 		{
 			_deleteTask.cancel(false);
 			_deleteTask = null;
@@ -5733,10 +5467,8 @@ public abstract class Creature extends GameObject
 	public int getAttack(Element element)
 	{
 		final Stats stat = element.getAttack();
-		if (stat != null)
-		{
-			return (int) getStat().calc(stat);
-		}
+		if(stat != null)
+		{ return (int) getStat().calc(stat); }
 		return 0;
 	}
 
@@ -5748,10 +5480,8 @@ public abstract class Creature extends GameObject
 	public int getDefence(Element element)
 	{
 		final Stats stat = element.getDefence();
-		if (stat != null)
-		{
-			return (int) getStat().calc(stat);
-		}
+		if(stat != null)
+		{ return (int) getStat().calc(stat); }
 		return 0;
 	}
 
@@ -5762,11 +5492,11 @@ public abstract class Creature extends GameObject
 
 	public BasicPropertyResist getBasicPropertyResist(BasicProperty basicProperty)
 	{
-		if (_basicPropertyResists == null)
+		if(_basicPropertyResists == null)
 		{
 			synchronized (this)
 			{
-				if (_basicPropertyResists == null)
+				if(_basicPropertyResists == null)
 				{
 					_basicPropertyResists = new ConcurrentHashMap<>();
 				}
@@ -5810,7 +5540,7 @@ public abstract class Creature extends GameObject
 	public CreatureSkillCast getSkillCast(SkillCastingType castingType)
 	{
 		CreatureSkillCast skillCast = _skillCasts[castingType.ordinal()];
-		if (skillCast == null)
+		if(skillCast == null)
 		{
 			skillCast = new CreatureSkillCast(this, castingType);
 			_skillCasts[castingType.ordinal()] = skillCast;
@@ -5843,14 +5573,14 @@ public abstract class Creature extends GameObject
 	{
 		return 150;
 	}
-	
+
 	public List<MonsterInstance> getAroundMonsters(int radius, int height)
 	{
 		if(!isVisible())
 			return Collections.emptyList();
 		return World.getAroundMonsters(this, radius, height);
 	}
-	
+
 	public void broadcastPacketToOthers(Function<Player, IBroadcastPacket> packetFunc)
 	{
 		if(!isVisible() || packetFunc == null)

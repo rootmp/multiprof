@@ -10,7 +10,7 @@ public class WorldMapItemHandler extends DefaultItemHandler
 	@Override
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (playable == null || !playable.isPlayer())
+		if(playable == null || !playable.isPlayer())
 			return false;
 
 		Player player = (Player) playable;

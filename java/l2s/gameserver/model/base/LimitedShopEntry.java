@@ -13,8 +13,7 @@ public class LimitedShopEntry
 	private List<LimitedShopProduction> _production = new ArrayList<LimitedShopProduction>();
 
 	public LimitedShopEntry()
-	{
-	}
+	{}
 
 	public LimitedShopEntry(int id)
 	{
@@ -79,9 +78,9 @@ public class LimitedShopEntry
 	public LimitedShopEntry clone()
 	{
 		LimitedShopEntry ret = new LimitedShopEntry(_entryId);
-		for (LimitedShopIngredient i : _ingredients)
+		for(LimitedShopIngredient i : _ingredients)
 			ret.addIngredient(i.clone());
-		for (LimitedShopProduction i : _production)
+		for(LimitedShopProduction i : _production)
 			ret.addProduct(i.clone());
 		return ret;
 	}

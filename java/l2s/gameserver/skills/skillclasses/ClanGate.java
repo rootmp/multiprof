@@ -21,21 +21,21 @@ public class ClanGate extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		Player player = (Player) activeChar;
-		if (!player.isClanLeader())
+		if(!player.isClanLeader())
 		{
 			player.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_IS_ENABLED);
 			return false;
 		}
 
 		IBroadcastPacket msg = Call.canSummonHere(player);
-		if (msg != null)
+		if(msg != null)
 		{
 			activeChar.sendPacket(msg);
 			return false;
@@ -49,7 +49,7 @@ public class ClanGate extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		Player player = (Player) activeChar;

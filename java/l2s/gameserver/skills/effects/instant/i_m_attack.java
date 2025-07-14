@@ -18,7 +18,7 @@ public class i_m_attack extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return false;
 		return true;
 	}
@@ -30,10 +30,10 @@ public class i_m_attack extends i_abstract_effect
 		final AttackInfo info = Formulas.calcMagicDam(effector, realTarget, getSkill(), getValue(), getSkill().isSSPossible(), true);
 
 		realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, false, true, false, false, getTemplate().isInstant(), getTemplate().isInstant(), info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-		if (info.damage >= 1)
+		if(info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(effector, realTarget, getSkill());
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, effector, getSkill(), true, true, false, false, false, false, false);
 		}
 	}

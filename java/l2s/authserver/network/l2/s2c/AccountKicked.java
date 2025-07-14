@@ -10,8 +10,8 @@ public final class AccountKicked extends L2LoginServerPacket
 		REASON_NON_PAYEMENT_CELL_PHONE(0x04),
 		REASON_30_DAYS_SUSPENDED_CASH(0x08),
 		REASON_PERMANENTLY_SUSPENDED_CASH(0x10), // The password you have entered is incorrect. Confirm your account
-													// information
-													// and log in again later.
+		// information
+		// and log in again later.
 		REASON_PERMANENTLY_BANNED(0x20),
 		REASON_ACCOUNT_MUST_BE_VERIFIED(0x40);
 

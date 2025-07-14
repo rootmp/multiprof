@@ -6,7 +6,6 @@ import java.util.TreeMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.adenLab.AdenLabStageTemplate;
 
-
 public final class AdenLabDataHolder extends AbstractHolder
 {
 	private static final AdenLabDataHolder INSTANCE = new AdenLabDataHolder();
@@ -17,7 +16,6 @@ public final class AdenLabDataHolder extends AbstractHolder
 	}
 
 	private final Map<Integer, AdenLabStageTemplate> cardselectStage = new TreeMap<>();
-
 
 	@Override
 	public int size()
@@ -33,7 +31,7 @@ public final class AdenLabDataHolder extends AbstractHolder
 
 	public void addStage(AdenLabStageTemplate stageTemplate)
 	{
-		cardselectStage.put(stageTemplate.getId(), stageTemplate);  
+		cardselectStage.put(stageTemplate.getId(), stageTemplate);
 	}
 
 	public AdenLabStageTemplate getSlot(int nSlotID)

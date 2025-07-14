@@ -46,14 +46,14 @@ public final class RunnableStatsManager
 
 			ClassStat stat = classStats.get(cl);
 
-			if (stat == null)
+			if(stat == null)
 				stat = new ClassStat(cl);
 
 			stat.runCount++;
 			stat.runTime += runTime;
-			if (stat.minTime > runTime)
+			if(stat.minTime > runTime)
 				stat.minTime = runTime;
-			if (stat.maxTime < runTime)
+			if(stat.maxTime < runTime)
 				stat.maxTime = runTime;
 		}
 		finally
@@ -77,11 +77,10 @@ public final class RunnableStatsManager
 			lock.unlock();
 		}
 
-		Collections.sort(result, (c1, c2) ->
-		{
-			if (c1.maxTime < c2.maxTime)
+		Collections.sort(result, (c1, c2) -> {
+			if(c1.maxTime < c2.maxTime)
 				return 1;
-			if (c1.maxTime == c2.maxTime)
+			if(c1.maxTime == c2.maxTime)
 				return 0;
 			return -1;
 		});
@@ -95,7 +94,7 @@ public final class RunnableStatsManager
 
 		List<ClassStat> stats = getSortedClassStats();
 
-		for (ClassStat stat : stats)
+		for(ClassStat stat : stats)
 		{
 			list.append(stat.clazz.getName()).append(":\n");
 

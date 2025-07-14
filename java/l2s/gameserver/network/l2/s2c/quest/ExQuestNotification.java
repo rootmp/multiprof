@@ -8,14 +8,14 @@ public class ExQuestNotification implements IClientOutgoingPacket
 	private int _id;
 	private int _count;
 	private QuestNotifType _notifType;
-	
+
 	public enum QuestNotifType
 	{
 		START,
 		PROGRESS,
 		COMPLETED
 	}
-	
+
 	public ExQuestNotification(int id, int count, QuestNotifType notifType)
 	{
 		_id = id;
@@ -26,9 +26,9 @@ public class ExQuestNotification implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-	  packetWriter.writeD(_id);//nID;
-	  packetWriter.writeD(_count);//nCount;
-	  packetWriter.writeC(_notifType.ordinal());//cNotifType;
-	  return true;
+		packetWriter.writeD(_id);//nID;
+		packetWriter.writeD(_count);//nCount;
+		packetWriter.writeC(_notifType.ordinal());//cNotifType;
+		return true;
 	}
 }

@@ -17,12 +17,12 @@ public final class RejectedExecutionHandlerImpl implements RejectedExecutionHand
 	@Override
 	public void rejectedExecution(Runnable r, ThreadPoolExecutor executor)
 	{
-		if (executor.isShutdown())
+		if(executor.isShutdown())
 			return;
 
 		_log.warn(r + " from " + executor, new RejectedExecutionException());
 
-		if (Thread.currentThread().getPriority() > Thread.NORM_PRIORITY)
+		if(Thread.currentThread().getPriority() > Thread.NORM_PRIORITY)
 		{
 			new Thread(r).start();
 		}

@@ -14,10 +14,10 @@ public class BlowFishKeygen
 	{
 		// init the GS encryption keys on class load
 
-		for (int i = 0; i < CRYPT_KEYS_SIZE; i++)
+		for(int i = 0; i < CRYPT_KEYS_SIZE; i++)
 		{
 			// randomize the 8 first bytes
-			for (int j = 0; j < CRYPT_KEYS[i].length; j++)
+			for(int j = 0; j < CRYPT_KEYS[i].length; j++)
 				CRYPT_KEYS[i][j] = (byte) Rnd.get(255);
 
 			// the last 8 bytes are static

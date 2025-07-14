@@ -12,6 +12,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.ThreadPoolManager;
 import l2s.gameserver.database.DatabaseFactory;
@@ -30,9 +32,6 @@ import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.network.l2.s2c.ExPledgeWaitingListAlarm;
 import l2s.gameserver.tables.ClanTable;
 
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 /**
  * @author GodWorld
  * @reworked by Bonux
@@ -46,7 +45,7 @@ public class ClanSearchManager
 		{
 			Clan clan = player.getClan();
 			// TODO[Bonux]: Проверить условия.
-			if (clan == null || player.isClanLeader() && clan.getClanMembersLimit() > clan.getAllSize())
+			if(clan == null || player.isClanLeader() && clan.getClanMembersLimit() > clan.getAllSize())
 				player.sendPacket(new ExPledgeWaitingListAlarm());
 		}
 	}
@@ -88,7 +87,7 @@ public class ClanSearchManager
 			statement = con.prepareStatement(ClanSearchQueries.LOAD_CLANS);
 			result = statement.executeQuery();
 
-			while (result.next())
+			while(result.next())
 			{
 				try
 				{
@@ -100,7 +99,7 @@ public class ClanSearchManager
 
 					ClanSearchClan clan = new ClanSearchClan(clanId, searchType, desc, application, subUnit);
 
-					if (ClanTable.getInstance().getClan(clanId) == null)
+					if(ClanTable.getInstance().getClan(clanId) == null)
 					{
 						_scheduledTaskExecutor.scheduleClanForRemoval(clanId);
 					}
@@ -109,7 +108,7 @@ public class ClanSearchManager
 						addClan(clan);
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error(getClass().getSimpleName() + ": Failed to load Clan Search Engine clan row.", e);
 				}
@@ -120,7 +119,7 @@ public class ClanSearchManager
 			statement = con.prepareStatement(ClanSearchQueries.LOAD_APPLICANTS);
 			result = statement.executeQuery();
 
-			while (result.next())
+			while(result.next())
 			{
 				try
 				{
@@ -136,7 +135,7 @@ public class ClanSearchManager
 
 					addPlayer(player);
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error(getClass().getSimpleName() + ": Failed to load Clan Search Engine applicant.", e);
 				}
@@ -145,7 +144,7 @@ public class ClanSearchManager
 			statement = con.prepareStatement(ClanSearchQueries.LOAD_WAITERS);
 			result = statement.executeQuery();
 
-			while (result.next())
+			while(result.next())
 			{
 				try
 				{
@@ -157,13 +156,13 @@ public class ClanSearchManager
 
 					addPlayer(new ClanSearchPlayer(charId, charName, charLevel, charClassId, searchType));
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error(getClass().getSimpleName() + ": Failed to load Clan Search Engine waiter.", e);
 				}
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error(getClass().getSimpleName() + ": Failed to load Clan Search Engine clan list.", e);
 		}
@@ -196,35 +195,35 @@ public class ClanSearchManager
 
 		int page = Math.min(params.getCurrentPage(), getPageCount(paginationLimit));
 
-		for (int i = 0; i < paginationLimit; i++)
+		for(int i = 0; i < paginationLimit; i++)
 		{
 			int currentIndex = i + page * paginationLimit;
 
-			if (currentIndex >= _registeredClansList.size())
+			if(currentIndex >= _registeredClansList.size())
 				break;
 
 			ClanSearchClan csClan = _registeredClansList.get(currentIndex);
 			Clan clan = ClanTable.getInstance().getClan(csClan.getClanId());
 
-			if (clan == null)
+			if(clan == null)
 				continue;
 
-			if (params.getClanLevel() >= 0 && clan.getLevel() != params.getClanLevel())
+			if(params.getClanLevel() >= 0 && clan.getLevel() != params.getClanLevel())
 				continue;
 
-			if (params.getSearchType() != ClanSearchListType.SLT_ANY && csClan.getSearchType() != params.getSearchType())
+			if(params.getSearchType() != ClanSearchListType.SLT_ANY && csClan.getSearchType() != params.getSearchType())
 				continue;
 
-			if (!params.getName().isEmpty())
+			if(!params.getName().isEmpty())
 			{
-				switch (params.getTargetType())
+				switch(params.getTargetType())
 				{
 					case TARGET_TYPE_LEADER_NAME:
-						if (clan.getLeaderName().contains(params.getName()))
+						if(clan.getLeaderName().contains(params.getName()))
 							continue;
 						break;
 					case TARGET_TYPE_CLAN_NAME:
-						if (!clan.getName().contains(params.getName()))
+						if(!clan.getName().contains(params.getName()))
 							continue;
 						break;
 				}
@@ -234,19 +233,18 @@ public class ClanSearchManager
 		}
 
 		final ClanSearchSortOrder sortOrder = params.getSortOrder();
-		if (sortOrder != ClanSearchSortOrder.NONE)
+		if(sortOrder != ClanSearchSortOrder.NONE)
 		{
 			final ClanSearchClanSortType sortType = params.getSortType();
-			Collections.sort(clanList, (csClanLeft, csClanRight) ->
-			{
-				if (csClanLeft == csClanRight)
+			Collections.sort(clanList, (csClanLeft, csClanRight) -> {
+				if(csClanLeft == csClanRight)
 					return 0;
 
 				Clan clanLeft = ClanTable.getInstance().getClan(csClanLeft.getClanId());
 				Clan clanRight = ClanTable.getInstance().getClan(csClanRight.getClanId());
 
 				int result = 0;
-				switch (sortType)
+				switch(sortType)
 				{
 					case SORT_TYPE_CLAN_NAME:
 						result = Integer.compare(clanLeft.getLevel(), clanRight.getLevel());
@@ -265,7 +263,7 @@ public class ClanSearchManager
 						break;
 				}
 
-				if (sortOrder != ClanSearchSortOrder.DESC)
+				if(sortOrder != ClanSearchSortOrder.DESC)
 					return -result;
 
 				return result;
@@ -281,11 +279,11 @@ public class ClanSearchManager
 
 	public boolean addClan(ClanSearchClan clan)
 	{
-		if (_scheduledTaskExecutor.isClanLocked(clan.getClanId()))
+		if(_scheduledTaskExecutor.isClanLocked(clan.getClanId()))
 			return false;
 
 		ClanSearchClan existedClan = getClan(clan.getClanId());
-		if (existedClan != null)
+		if(existedClan != null)
 		{
 			existedClan.setSearchType(clan.getSearchType());
 			existedClan.setDesc(clan.getDesc());
@@ -304,7 +302,7 @@ public class ClanSearchManager
 
 	public void removeClan(ClanSearchClan clan)
 	{
-		if (_registeredClans.containsKey(clan.getClanId()))
+		if(_registeredClans.containsKey(clan.getClanId()))
 		{
 			_registeredClansList.remove(clan);
 			_registeredClans.remove(clan.getClanId());
@@ -319,9 +317,9 @@ public class ClanSearchManager
 
 	public ClanSearchPlayer findAnyApplicant(int charId)
 	{
-		for (TIntObjectMap<ClanSearchPlayer> players : _applicantPlayers.valueCollection())
+		for(TIntObjectMap<ClanSearchPlayer> players : _applicantPlayers.valueCollection())
 		{
-			if (players.containsKey(charId))
+			if(players.containsKey(charId))
 				return players.get(charId);
 		}
 		return null;
@@ -330,7 +328,7 @@ public class ClanSearchManager
 	public ClanSearchPlayer getApplicant(int clanId, int charId)
 	{
 		TIntObjectMap<ClanSearchPlayer> players = _applicantPlayers.get(clanId);
-		if (players == null)
+		if(players == null)
 			return null;
 
 		return players.get(charId);
@@ -339,7 +337,7 @@ public class ClanSearchManager
 	public boolean isApplicantRegistered(int clanId, int playerId)
 	{
 		TIntObjectMap<ClanSearchPlayer> players = _applicantPlayers.get(clanId);
-		if (players == null)
+		if(players == null)
 			return false;
 
 		return players.containsKey(playerId);
@@ -352,15 +350,15 @@ public class ClanSearchManager
 
 	public boolean addPlayer(ClanSearchPlayer player)
 	{
-		if (player.isApplicant())
+		if(player.isApplicant())
 		{
-			if (_scheduledTaskExecutor.isApplicantLocked(player.getCharId()))
+			if(_scheduledTaskExecutor.isApplicantLocked(player.getCharId()))
 				return false;
 
-			if (!isApplicantRegistered(player.getPrefferedClanId(), player.getCharId()))
+			if(!isApplicantRegistered(player.getPrefferedClanId(), player.getCharId()))
 			{
 				TIntObjectMap<ClanSearchPlayer> players = _applicantPlayers.get(player.getPrefferedClanId());
-				if (players == null)
+				if(players == null)
 				{
 					players = new TIntObjectHashMap<ClanSearchPlayer>(1);
 					_applicantPlayers.put(player.getPrefferedClanId(), players);
@@ -373,10 +371,10 @@ public class ClanSearchManager
 		}
 		else
 		{
-			if (_scheduledTaskExecutor.isWaiterLocked(player.getCharId()))
+			if(_scheduledTaskExecutor.isWaiterLocked(player.getCharId()))
 				return false;
 
-			if (!isWaiterRegistered(player.getCharId()))
+			if(!isWaiterRegistered(player.getCharId()))
 			{
 				_waitingPlayers.put(player.getCharId(), player);
 				_scheduledTaskExecutor.scheduleWaiterForAddition(player);
@@ -388,10 +386,10 @@ public class ClanSearchManager
 	public void removeApplicant(int clanId, int charId)
 	{
 		TIntObjectMap<ClanSearchPlayer> players = _applicantPlayers.get(clanId);
-		if (players == null)
+		if(players == null)
 			return;
 
-		if (!players.containsKey(charId))
+		if(!players.containsKey(charId))
 			return;
 
 		_scheduledTaskExecutor.scheduleApplicantForRemoval(charId);
@@ -403,34 +401,33 @@ public class ClanSearchManager
 	{
 		List<ClanSearchPlayer> list = new ArrayList<ClanSearchPlayer>();
 
-		for (ClanSearchPlayer csPlayer : _waitingPlayers.valueCollection())
+		for(ClanSearchPlayer csPlayer : _waitingPlayers.valueCollection())
 		{
-			if (csPlayer.getLevel() < params.getMinLevel())
+			if(csPlayer.getLevel() < params.getMinLevel())
 				continue;
 
-			if (csPlayer.getLevel() > params.getMaxLevel())
+			if(csPlayer.getLevel() > params.getMaxLevel())
 				continue;
 
-			if (!params.getRole().isClassRole(csPlayer.getClassId()))
+			if(!params.getRole().isClassRole(csPlayer.getClassId()))
 				continue;
 
-			if (params.getCharName() != null && !params.getCharName().isEmpty() && !csPlayer.getName().toLowerCase().contains(params.getCharName()))
+			if(params.getCharName() != null && !params.getCharName().isEmpty() && !csPlayer.getName().toLowerCase().contains(params.getCharName()))
 				continue;
 
 			list.add(csPlayer);
 		}
 
 		final ClanSearchSortOrder sortOrder = params.getSortOrder();
-		if (sortOrder != ClanSearchSortOrder.NONE)
+		if(sortOrder != ClanSearchSortOrder.NONE)
 		{
 			final ClanSearchPlayerSortType sortType = params.getSortType();
-			Collections.sort(list, (playerLeft, playerRight) ->
-			{
-				if (playerLeft == playerRight)
+			Collections.sort(list, (playerLeft, playerRight) -> {
+				if(playerLeft == playerRight)
 					return 0;
 
 				int result = 0;
-				switch (sortType)
+				switch(sortType)
 				{
 					case SORT_TYPE_NAME:
 						result = Integer.compare(playerLeft.getLevel(), playerRight.getLevel());
@@ -446,7 +443,7 @@ public class ClanSearchManager
 						break;
 				}
 
-				if (sortOrder != ClanSearchSortOrder.DESC)
+				if(sortOrder != ClanSearchSortOrder.DESC)
 					return -result;
 
 				return result;
@@ -459,7 +456,7 @@ public class ClanSearchManager
 	{
 		// TODO: Переделать под List? Чтобы сохранялся хоть какой-то порядок....
 		TIntObjectMap<ClanSearchPlayer> players = _applicantPlayers.get(clanId);
-		if (players == null)
+		if(players == null)
 			return Collections.emptyList();
 
 		return players.valueCollection();
@@ -467,7 +464,7 @@ public class ClanSearchManager
 
 	public boolean removeWaiter(int charId)
 	{
-		if (!_waitingPlayers.containsKey(charId))
+		if(!_waitingPlayers.containsKey(charId))
 			return false;
 
 		_waitingPlayers.remove(charId);
@@ -496,7 +493,7 @@ public class ClanSearchManager
 		{
 			_scheduledTaskExecutor.run();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error(getClass().getSimpleName() + ": Failed run save task.", e);
 		}

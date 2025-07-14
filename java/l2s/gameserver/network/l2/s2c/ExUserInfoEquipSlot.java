@@ -13,16 +13,15 @@ public class ExUserInfoEquipSlot extends AbstractMaskPacket<InventorySlot>
 {
 	private final Player _player;
 
-	private final byte[] _masks = new byte[]
-	{
-		(byte) 0x00,
-		(byte) 0x00,
-		(byte) 0x00,
-		(byte) 0x00,
-		(byte) 0x00,
-		(byte) 0x00, // 152
-		(byte) 0x00, // 152
-		(byte) 0x00 // 152
+	private final byte[] _masks = new byte[] {
+			(byte) 0x00,
+			(byte) 0x00,
+			(byte) 0x00,
+			(byte) 0x00,
+			(byte) 0x00,
+			(byte) 0x00, // 152
+			(byte) 0x00, // 152
+			(byte) 0x00 // 152
 	};
 
 	@Override
@@ -56,9 +55,9 @@ public class ExUserInfoEquipSlot extends AbstractMaskPacket<InventorySlot>
 		packetWriter.writeH(InventorySlot.VALUES.length);
 		packetWriter.writeB(_masks);
 		final PcInventory inventory = _player.getInventory();
-		for (InventorySlot slot : InventorySlot.VALUES)
+		for(InventorySlot slot : InventorySlot.VALUES)
 		{
-			if (containsMask(slot))
+			if(containsMask(slot))
 			{
 				packetWriter.writeH(22); // size
 				packetWriter.writeD(inventory.getPaperdollObjectId(slot.getSlot()));

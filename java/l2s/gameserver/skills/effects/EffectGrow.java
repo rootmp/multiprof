@@ -16,7 +16,7 @@ public final class EffectGrow extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 		{
 			NpcInstance npc = (NpcInstance) effected;
 			npc.setCollisionHeightModifier(1.24);
@@ -27,7 +27,7 @@ public final class EffectGrow extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 		{
 			NpcInstance npc = (NpcInstance) effected;
 			npc.setCollisionHeightModifier(1.0);

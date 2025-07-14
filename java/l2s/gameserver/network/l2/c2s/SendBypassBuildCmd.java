@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.handler.admincommands.AdminCommandHandler;
 import l2s.gameserver.model.Player;
@@ -13,7 +14,7 @@ public class SendBypassBuildCmd implements IClientIncomingPacket
 	{
 		_command = packet.readS();
 
-		if (_command != null)
+		if(_command != null)
 			_command = _command.trim();
 		return true;
 	}
@@ -23,12 +24,12 @@ public class SendBypassBuildCmd implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		String cmd = _command;
 
-		if (!cmd.contains("admin_"))
+		if(!cmd.contains("admin_"))
 			cmd = "admin_" + cmd;
 
 		AdminCommandHandler.getInstance().useAdminCommandHandler(activeChar, cmd);

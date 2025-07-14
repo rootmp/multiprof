@@ -1,13 +1,13 @@
 package l2s.gameserver.data.xml.holder;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.item.capsule.CreateItemInfo;
-import l2s.gameserver.templates.item.capsule.CapsuleData;
-import l2s.gameserver.templates.item.capsule.CreateItemGroupInfo;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.item.capsule.CapsuleData;
+import l2s.gameserver.templates.item.capsule.CreateItemGroupInfo;
+import l2s.gameserver.templates.item.capsule.CreateItemInfo;
 
 public final class CapsuleHolder extends AbstractHolder
 {
@@ -44,6 +44,6 @@ public final class CapsuleHolder extends AbstractHolder
 
 	public boolean isCapsule(int itemId)
 	{
-		return capsules.containsKey(Integer.valueOf(itemId));   
+		return capsules.containsKey(Integer.valueOf(itemId));
 	}
 }

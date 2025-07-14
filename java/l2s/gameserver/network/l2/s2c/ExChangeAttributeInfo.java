@@ -17,9 +17,9 @@ public class ExChangeAttributeInfo implements IClientOutgoingPacket
 	{
 		_crystalItemId = crystalItemId;
 		_attributes = 0;
-		for (Element e : Element.VALUES)
+		for(Element e : Element.VALUES)
 		{
-			if (e == item.getAttackElement())
+			if(e == item.getAttackElement())
 			{
 				continue;
 			}

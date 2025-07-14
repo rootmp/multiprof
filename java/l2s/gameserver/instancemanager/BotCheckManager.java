@@ -30,11 +30,11 @@ public class BotCheckManager
 
 	public static void loadBotQuestions()
 	{
-		if (!Config.ENABLE_ANTI_BOT_SYSTEM)
+		if(!Config.ENABLE_ANTI_BOT_SYSTEM)
 			return;
 		Document doc = null;
 		File file = new File(Config.DATAPACK_ROOT, "data/parser/bot/bot_questions.xml");
-		if (!file.exists())
+		if(!file.exists())
 		{
 			_log.warn("BotManager: bot_questions.xml file is missing.");
 			return;
@@ -47,7 +47,7 @@ public class BotCheckManager
 			factory.setIgnoringComments(true);
 			doc = factory.newDocumentBuilder().parse(file);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -56,7 +56,7 @@ public class BotCheckManager
 		{
 			parseBotQuestions(doc);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -64,13 +64,13 @@ public class BotCheckManager
 
 	protected static void parseBotQuestions(Document doc)
 	{
-		for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
+		for(Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
 		{
-			if ("list".equalsIgnoreCase(n.getNodeName()))
+			if("list".equalsIgnoreCase(n.getNodeName()))
 			{
-				for (Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+				for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
 				{
-					if ("question".equalsIgnoreCase(d.getNodeName()))
+					if("question".equalsIgnoreCase(d.getNodeName()))
 					{
 						final int id = Integer.parseInt(d.getAttributes().getNamedItem("id").getNodeValue());
 						final String question_ru = d.getAttributes().getNamedItem("question_ru").getNodeValue();
@@ -109,7 +109,7 @@ public class BotCheckManager
 
 		public String getDescr(boolean rus)
 		{
-			if (rus)
+			if(rus)
 				return _questionRus;
 			else
 				return _questionEn;
@@ -123,7 +123,7 @@ public class BotCheckManager
 
 	public static CopyOnWriteArrayList<BotCheckQuestion> getAllAquisions()
 	{
-		if (questionInfo == null)
+		if(questionInfo == null)
 			return null;
 		return questionInfo;
 	}
@@ -131,12 +131,10 @@ public class BotCheckManager
 	public static boolean checkAnswer(int qId, boolean answer)
 	{
 
-		for (BotCheckQuestion info : questionInfo)
+		for(BotCheckQuestion info : questionInfo)
 		{
-			if (info._id == qId)
-			{
-				return info.getAnswer() == answer;
-			}
+			if(info._id == qId)
+			{ return info.getAnswer() == answer; }
 		}
 		return true;
 	}
@@ -148,13 +146,14 @@ public class BotCheckManager
 
 	private static void ScheduleNextQuestion()
 	{
-		ThreadPoolManager.getInstance().schedule(new BotQuestionAsked(), Rnd.get(Config.MINIMUM_TIME_QUESTION_ASK * 60000, Config.MAXIMUM_TIME_QUESTION_ASK * 60000)); // will
-																																										// make
-																																										// random
-																																										// to
-																																										// make
-																																										// them
-																																										// confused
+		ThreadPoolManager.getInstance().schedule(new BotQuestionAsked(), Rnd.get(Config.MINIMUM_TIME_QUESTION_ASK
+				* 60000, Config.MAXIMUM_TIME_QUESTION_ASK * 60000)); // will
+		// make
+		// random
+		// to
+		// make
+		// them
+		// confused
 	}
 
 	static class BotQuestionAsked implements Runnable
@@ -162,34 +161,34 @@ public class BotCheckManager
 		@Override
 		public void run()
 		{
-			for (Player player : GameObjectsStorage.getPlayers(false, false))
+			for(Player player : GameObjectsStorage.getPlayers(false, false))
 			{
-				if (player == null)
+				if(player == null)
 					continue;
-				if (player.isGM())
+				if(player.isGM())
 					continue;
-				if (player.getPvpFlag() != 0)
+				if(player.getPvpFlag() != 0)
 					continue;
-				if (player.isInOlympiadMode())
+				if(player.isInOlympiadMode())
 					continue;
-				if (player.isInOfflineMode())
+				if(player.isInOfflineMode())
 					continue;
-				if (player.isInStoreMode())
+				if(player.isInStoreMode())
 					continue;
-				if (player.isInDuel())
+				if(player.isInDuel())
 					continue;
-				if (player.isInSiegeZone())
+				if(player.isInSiegeZone())
 					continue;
-				if (player.isInAwayingMode())
+				if(player.isInAwayingMode())
 					continue;
-				if (player.getBotRating() > Rnd.get(Config.MINIMUM_BOT_POINTS_TO_STOP_ASKING, Config.MAXIMUM_BOT_POINTS_TO_STOP_ASKING))
+				if(player.getBotRating() > Rnd.get(Config.MINIMUM_BOT_POINTS_TO_STOP_ASKING, Config.MAXIMUM_BOT_POINTS_TO_STOP_ASKING))
 					continue;
-				for (Creature mob : World.getAroundNpc(player, 1000, 1000))
-					if (mob.isMonster())
+				for(Creature mob : World.getAroundNpc(player, 1000, 1000))
+					if(mob.isMonster())
 					{
 						player.requestCheckBot(); // if the player doesn't appears to be to cond above asking the
-													// question and
-													// have a monster near by send question
+						// question and
+						// have a monster near by send question
 						break;
 					}
 				// nothing will be done to this certain player if no mob near

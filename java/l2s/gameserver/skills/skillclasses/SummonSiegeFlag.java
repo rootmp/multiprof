@@ -46,17 +46,17 @@ public class SummonSiegeFlag extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		Player player = (Player) activeChar;
-		if (player.getClan() == null || !player.isClanLeader())
+		if(player.getClan() == null || !player.isClanLeader())
 			return false;
 
-		switch (_flagType)
+		switch(_flagType)
 		{
 			case DESTROY:
 				//
@@ -64,7 +64,7 @@ public class SummonSiegeFlag extends Skill
 			case OUTPOST:
 			case NORMAL:
 			case ADVANCED:
-				if (player.isInZone(Zone.ZoneType.RESIDENCE))
+				if(player.isInZone(Zone.ZoneType.RESIDENCE))
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_SET_UP_A_BASE_HERE, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
@@ -72,12 +72,12 @@ public class SummonSiegeFlag extends Skill
 
 				List<SiegeEvent<?, ?>> siegeEvents = new ArrayList<SiegeEvent<?, ?>>();
 
-				for (SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
 				{
 					List<ZoneObject> zones = siegeEvent.getObjects(SiegeEvent.FLAG_ZONES);
-					for (ZoneObject zone : zones)
+					for(ZoneObject zone : zones)
 					{
-						if (player.isInZone(zone.getZone()))
+						if(player.isInZone(zone.getZone()))
 						{
 							siegeEvents.add(siegeEvent);
 							break;
@@ -85,7 +85,7 @@ public class SummonSiegeFlag extends Skill
 					}
 				}
 
-				if (siegeEvents.isEmpty())
+				if(siegeEvents.isEmpty())
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_SET_UP_A_BASE_HERE, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
@@ -93,24 +93,24 @@ public class SummonSiegeFlag extends Skill
 
 				boolean isAttacker = false;
 				boolean haveFlag = false;
-				for (SiegeEvent<?, ?> siegeEvent : siegeEvents)
+				for(SiegeEvent<?, ?> siegeEvent : siegeEvents)
 				{
 					SiegeClanObject siegeClan = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, player.getClan());
-					if (siegeClan != null)
+					if(siegeClan != null)
 					{
 						isAttacker = true;
-						if (siegeClan.getFlag() != null)
+						if(siegeClan.getFlag() != null)
 							haveFlag = true;
 					}
 				}
 
-				if (!isAttacker)
+				if(!isAttacker)
 				{
 					player.sendPacket(SystemMsg.YOU_CANNOT_SUMMON_THE_ENCAMPMENT_BECAUSE_YOU_ARE_NOT_A_MEMBER_OF_THE_SIEGE_CLAN_INVOLVED_IN_THE_CASTLE__FORTRESS__HIDEOUT_SIEGE, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
 				}
 
-				if (haveFlag)
+				if(haveFlag)
 				{
 					player.sendPacket(SystemMsg.AN_OUTPOST_OR_HEADQUARTERS_CANNOT_BE_BUILT_BECAUSE_ONE_ALREADY_EXISTS, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
@@ -125,27 +125,27 @@ public class SummonSiegeFlag extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		final Player player = activeChar.getPlayer();
 
 		final Clan clan = player.getClan();
-		if (clan == null || !player.isClanLeader())
+		if(clan == null || !player.isClanLeader())
 			return;
 
-		switch (_flagType)
+		switch(_flagType)
 		{
 			case DESTROY:
-				for (SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
 				{
 					SiegeClanObject siegeClan = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, clan);
-					if (siegeClan != null)
+					if(siegeClan != null)
 					{
 						List<ZoneObject> zones = siegeEvent.getObjects(SiegeEvent.FLAG_ZONES);
-						for (ZoneObject zone : zones)
+						for(ZoneObject zone : zones)
 						{
-							if (player.isInZone(zone.getZone()))
+							if(player.isInZone(zone.getZone()))
 							{
 								siegeClan.deleteFlag();
 								break;
@@ -157,15 +157,15 @@ public class SummonSiegeFlag extends Skill
 			default:
 				List<SiegeEvent<?, ?>> siegeEvents = new ArrayList<SiegeEvent<?, ?>>();
 				List<SiegeClanObject> siegeClans = new ArrayList<SiegeClanObject>();
-				for (SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : activeChar.getEvents(SiegeEvent.class))
 				{
 					SiegeClanObject siegeClan = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, clan);
-					if (siegeClan != null && siegeClan.getFlag() == null)
+					if(siegeClan != null && siegeClan.getFlag() == null)
 					{
 						List<ZoneObject> zones = siegeEvent.getObjects(SiegeEvent.FLAG_ZONES);
-						for (ZoneObject zone : zones)
+						for(ZoneObject zone : zones)
 						{
-							if (player.isInZone(zone.getZone()))
+							if(player.isInZone(zone.getZone()))
 							{
 								siegeEvents.add(siegeEvent);
 								siegeClans.add(siegeClan);
@@ -175,17 +175,18 @@ public class SummonSiegeFlag extends Skill
 					}
 				}
 
-				if (siegeClans.isEmpty())
+				if(siegeClans.isEmpty())
 					return;
 
 				// 35062/36590
-				SiegeFlagInstance flag = (SiegeFlagInstance) NpcHolder.getInstance().getTemplate(_flagType == FlagType.OUTPOST ? 36590 : 35062).getNewInstance();
+				SiegeFlagInstance flag = (SiegeFlagInstance) NpcHolder.getInstance().getTemplate(_flagType
+						== FlagType.OUTPOST ? 36590 : 35062).getNewInstance();
 				flag.setClan(clan);
 
-				for (SiegeEvent<?, ?> siegeEvent : siegeEvents)
+				for(SiegeEvent<?, ?> siegeEvent : siegeEvents)
 					flag.addEvent(siegeEvent);
 
-				if (_flagType == FlagType.ADVANCED)
+				if(_flagType == FlagType.ADVANCED)
 					flag.getStat().addFuncs(new FuncMul(Stats.MAX_HP, 0x50, flag, _advancedMult, StatsSet.EMPTY));
 
 				flag.setCurrentHpMp(flag.getMaxHp(), flag.getMaxMp(), true);
@@ -195,11 +196,11 @@ public class SummonSiegeFlag extends Skill
 				int x = (int) (player.getX() + 100 * Math.cos(player.headingToRadians(player.getHeading() - 32768)));
 				int y = (int) (player.getY() + 100 * Math.sin(player.headingToRadians(player.getHeading() - 32768)));
 				Location loc = GeoEngine.moveCheck(player.getX(), player.getY(), player.getZ(), x, y, player.getGeoIndex());
-				if (loc == null)
+				if(loc == null)
 					loc = Location.findAroundPosition(player.getLoc(), 100, player.getGeoIndex());
 				flag.spawnMe(loc);
 
-				for (SiegeClanObject siegeClan : siegeClans)
+				for(SiegeClanObject siegeClan : siegeClans)
 					siegeClan.setFlag(flag);
 				break;
 		}

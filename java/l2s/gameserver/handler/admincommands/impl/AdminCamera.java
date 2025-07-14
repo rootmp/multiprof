@@ -18,14 +18,14 @@ public class AdminCamera implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Menu)
+		if(!activeChar.getPlayerAccess().Menu)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_freelook:
 			{
-				if (fullString.length() > 15)
+				if(fullString.length() > 15)
 					fullString = fullString.substring(15);
 				else
 				{
@@ -34,7 +34,7 @@ public class AdminCamera implements IAdminCommandHandler
 				}
 
 				int mode = Integer.parseInt(fullString);
-				if (mode == 1)
+				if(mode == 1)
 				{
 					activeChar.getFlags().getInvisible().start();
 					activeChar.getFlags().getInvulnerable().start();

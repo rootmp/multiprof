@@ -11,84 +11,77 @@ import l2s.gameserver.model.Skill;
 import l2s.gameserver.templates.item.henna.DyePotential;
 import l2s.gameserver.templates.item.henna.DyePotentialFee;
 
-
 public class HennaPatternPotentialDataHolder extends AbstractHolder
 {
 	public static HennaPatternPotentialDataHolder getInstance()
 	{
 		return SingletonHolder.INSTANCE;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected static final HennaPatternPotentialDataHolder INSTANCE = new HennaPatternPotentialDataHolder();
 	}
 
-	
 	private final Map<Integer, Integer> _potenExpTable = new HashMap<>();
 	private final Map<Integer, DyePotentialFee> _potenFees = new HashMap<>();
 	private final Map<Integer, DyePotential> _potentials = new HashMap<>();
-	
+
 	private int MAX_POTEN_LEVEL = 0;
-	
-	
+
 	public DyePotentialFee getFee(int step)
 	{
 		return _potenFees.get(step);
 	}
-	
+
 	public int getMaxPotenEnchantStep()
 	{
 		return _potenFees.size();
 	}
-	
+
 	public int getExpForLevel(int level)
 	{
 		return _potenExpTable.get(level);
 	}
-	
+
 	public int getMaxPotenLevel()
 	{
 		return MAX_POTEN_LEVEL;
 	}
-	
+
 	public void setMaxPotenLevel(int i)
 	{
-		MAX_POTEN_LEVEL=i;
+		MAX_POTEN_LEVEL = i;
 	}
-	
+
 	public DyePotential getPotential(int potenId)
 	{
 		return _potentials.get(potenId);
 	}
-	
+
 	public Skill getPotentialSkill(int potenId, int slotId, int level)
 	{
 		final DyePotential potential = _potentials.get(potenId);
-		if (potential == null)
-		{
-			return null;
-		}
-		if (potential.getSlotId() == slotId)
-		{
-			return potential.getSkill(level);
-		}
+		if(potential == null)
+		{ return null; }
+		if(potential.getSlotId() == slotId)
+		{ return potential.getSkill(level); }
 		return null;
 	}
-	
+
 	public Collection<Integer> getSkillIdsBySlotId(int slotId)
 	{
 		final List<Integer> skillIds = new ArrayList<>();
-		for (DyePotential potential : _potentials.values())
+		for(DyePotential potential : _potentials.values())
 		{
-			if (potential.getSlotId() == slotId)
+			if(potential.getSlotId() == slotId)
 			{
 				skillIds.add(potential.getSkillId());
 			}
 		}
 		return skillIds;
 	}
-	
+
 	@Override
 	public int size()
 	{
@@ -115,6 +108,6 @@ public class HennaPatternPotentialDataHolder extends AbstractHolder
 
 	public void addPotentials(int id, DyePotential dyePotential)
 	{
-		_potentials.put(id,dyePotential);
+		_potentials.put(id, dyePotential);
 	}
 }

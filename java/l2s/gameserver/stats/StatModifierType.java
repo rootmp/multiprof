@@ -15,9 +15,9 @@ public enum StatModifierType
 	public static StatModifierType valueOfXml(String name)
 	{
 		String upperCaseName = name.toUpperCase();
-		for (StatModifierType s : VALUES)
+		for(StatModifierType s : VALUES)
 		{
-			if (s.toString().equalsIgnoreCase(upperCaseName))
+			if(s.toString().equalsIgnoreCase(upperCaseName))
 				return s;
 		}
 		throw new NoSuchElementException("Unknown name '" + name + "' for enum Stats");

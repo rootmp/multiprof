@@ -33,7 +33,7 @@ public class SiegeToggleNpcObject implements SpawnableObject
 	{
 		_toggleNpc.decayFake();
 
-		if (event.isInProgress())
+		if(event.isInProgress())
 			_toggleNpc.addEvent(event);
 		else
 			_toggleNpc.removeEvent(event);
@@ -61,12 +61,12 @@ public class SiegeToggleNpcObject implements SpawnableObject
 	{
 		_toggleNpc.decayFake();
 
-		if (!event.isInProgress())
+		if(!event.isInProgress())
 			_toggleNpc.removeEvent(event);
 		else
 			_toggleNpc.addEvent(event);
 
-		if (_toggleNpc.getCurrentHp() <= 0)
+		if(_toggleNpc.getCurrentHp() <= 0)
 		{
 			_toggleNpc.decayMe();
 			_toggleNpc.spawnMe(_location);

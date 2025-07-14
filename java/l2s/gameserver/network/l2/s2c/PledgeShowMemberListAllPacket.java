@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.entity.residence.ClanHall;
@@ -35,7 +35,7 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 		_hasCastle = clan.getCastle();
 
 		ClanHall clanHall = ResidenceHolder.getInstance().getResidence(ClanHall.class, clan.getHasHideout());
-		if (clanHall != null)
+		if(clanHall != null)
 		{
 			_hasClanHall = clanHall.getId();
 			_hasInstantClanHall = clanHall.getInstantZoneId();
@@ -53,7 +53,7 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 
 		Alliance ally = clan.getAlliance();
 
-		if (ally != null)
+		if(ally != null)
 		{
 			_allianceObjectId = ally.getAllyId();
 			_allianceName = ally.getAllyName();
@@ -62,7 +62,7 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 
 		_members = new ArrayList<PledgePacketMember>(sub.size());
 
-		for (UnitMember m : sub.getUnitMembers())
+		for(UnitMember m : sub.getUnitMembers())
 			_members.add(new PledgePacketMember(m));
 	}
 
@@ -79,12 +79,12 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_clanCrestId); // crest id .. is used again
 		packetWriter.writeD(_level);
 		packetWriter.writeD(_hasCastle);
-		if (_hasInstantClanHall > 0)
+		if(_hasInstantClanHall > 0)
 		{
 			packetWriter.writeD(1);
 			packetWriter.writeD(_hasInstantClanHall);
 		}
-		else if (_hasClanHall != 0)
+		else if(_hasClanHall != 0)
 		{
 			packetWriter.writeD(0);
 			packetWriter.writeD(_hasClanHall);
@@ -106,7 +106,7 @@ public class PledgeShowMemberListAllPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0x00);// territory Id
 
 		packetWriter.writeD(_members.size());
-		for (PledgePacketMember m : _members)
+		for(PledgePacketMember m : _members)
 		{
 			packetWriter.writeS(m._name);
 			packetWriter.writeD(m._level);

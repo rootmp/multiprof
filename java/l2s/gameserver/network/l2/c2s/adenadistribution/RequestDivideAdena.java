@@ -30,37 +30,35 @@ public class RequestDivideAdena implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
-		{
-			return;
-		}
+		if(activeChar == null)
+		{ return; }
 		final Party party = activeChar.getParty();
-		if (party == null)
+		if(party == null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_PROCEED_AS_YOU_ARE_NOT_IN_AN_ALLIANCE_OR_PARTY);
 			return;
 		}
 
 		final CommandChannel commandChannel = party.getCommandChannel();
-		if ((commandChannel != null) && !commandChannel.isLeaderCommandChannel(activeChar))
+		if((commandChannel != null) && !commandChannel.isLeaderCommandChannel(activeChar))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_PROCEED_AS_YOU_ARE_NOT_AN_ALLIANCE_LEADER_OR_PARTY_LEADER);
 			return;
 		}
-		else if (!party.isLeader(activeChar))
+		else if(!party.isLeader(activeChar))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_PROCEED_AS_YOU_ARE_NOT_A_PARTY_LEADER);
 			return;
 		}
-		
+
 		final List<Player> targets = commandChannel != null ? commandChannel.getMembers() : party.getPartyMembers();
-		if (activeChar.getAdena() < targets.size())
+		if(activeChar.getAdena() < targets.size())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_PROCEED_AS_THERE_IS_INSUFFICIENT_ADENA);
 			return;
 		}
 
-		if (_count > activeChar.getAdena())
+		if(_count > activeChar.getAdena())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_PROCEED_AS_THERE_IS_INSUFFICIENT_ADENA);
 			return;
@@ -69,7 +67,7 @@ public class RequestDivideAdena implements IClientIncomingPacket
 		int membersCount = activeChar.getParty().getMemberCount();
 		long dividedCount = (long) Math.floor(_count / membersCount);
 		activeChar.reduceAdena(membersCount * dividedCount, false);
-		for (Player player : activeChar.getParty().getPartyMembers())
+		for(Player player : activeChar.getParty().getPartyMembers())
 		{
 			player.addAdena(dividedCount, player.getObjectId() != activeChar.getObjectId());
 		}

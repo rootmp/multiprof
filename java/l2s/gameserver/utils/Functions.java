@@ -39,15 +39,13 @@ public class Functions
 
 	public static void show(String text, Player player, int itemId, Object... arg)
 	{
-		if ((text == null) || (player == null))
-		{
-			return;
-		}
+		if((text == null) || (player == null))
+		{ return; }
 
 		HtmlMessage msg = new HtmlMessage(5);
 
 		// приводим нашу html-ку в нужный вид
-		if (text.endsWith(".html") || text.endsWith(".htm"))
+		if(text.endsWith(".html") || text.endsWith(".htm"))
 		{
 			msg.setFile(text);
 		}
@@ -56,9 +54,9 @@ public class Functions
 			msg.setHtml(HtmlUtils.bbParse(text));
 		}
 
-		if ((arg != null) && ((arg.length % 2) == 0))
+		if((arg != null) && ((arg.length % 2) == 0))
 		{
-			for (int i = 0; i < arg.length; i = +2)
+			for(int i = 0; i < arg.length; i = +2)
 			{
 				msg.replace(String.valueOf(arg[i]), String.valueOf(arg[i + 1]));
 			}
@@ -73,15 +71,13 @@ public class Functions
 	 */
 	public static void show(String text, Player player, NpcInstance npc, Object... arg)
 	{
-		if ((text == null) || (player == null))
-		{
-			return;
-		}
+		if((text == null) || (player == null))
+		{ return; }
 
 		HtmlMessage msg = new HtmlMessage(npc);
 
 		// приводим нашу html-ку в нужный вид
-		if (text.endsWith(".html") || text.endsWith(".htm"))
+		if(text.endsWith(".html") || text.endsWith(".htm"))
 		{
 			msg.setFile(text);
 		}
@@ -90,9 +86,9 @@ public class Functions
 			msg.setHtml(HtmlUtils.bbParse(text));
 		}
 
-		if ((arg != null) && ((arg.length % 2) == 0))
+		if((arg != null) && ((arg.length % 2) == 0))
 		{
-			for (int i = 0; i < arg.length; i = +2)
+			for(int i = 0; i < arg.length; i = +2)
 			{
 				msg.replace(String.valueOf(arg[i]), String.valueOf(arg[i + 1]));
 			}
@@ -135,9 +131,9 @@ public class Functions
 	public static void npcSayInRangeCustomMessage(NpcInstance npc, int range, String address, Object... replacements)
 	{
 		CustomMessage cm = new CustomMessage(address);
-		for (Object replacement : replacements)
+		for(Object replacement : replacements)
 		{
-			if (replacement instanceof CustomMessage)
+			if(replacement instanceof CustomMessage)
 			{
 				cm.addCustomMessage((CustomMessage) replacement);
 			}
@@ -183,9 +179,9 @@ public class Functions
 	public static void npcShoutCustomMessage(NpcInstance npc, String address, Object... replacements)
 	{
 		CustomMessage cm = new CustomMessage(address);
-		for (Object replacement : replacements)
+		for(Object replacement : replacements)
 		{
-			if (replacement instanceof CustomMessage)
+			if(replacement instanceof CustomMessage)
 			{
 				cm.addCustomMessage((CustomMessage) replacement);
 			}
@@ -204,7 +200,7 @@ public class Functions
 
 	public static boolean ride(Player player, int npcId)
 	{
-		if (player.hasServitor())
+		if(player.hasServitor())
 		{
 			player.sendPacket(SystemMsg.YOU_ALREADY_HAVE_A_PET);
 			return false;
@@ -216,7 +212,7 @@ public class Functions
 
 	public static void unRide(Player player)
 	{
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			player.setMount(null);
 		}
@@ -224,9 +220,9 @@ public class Functions
 
 	public static void unSummonPet(Player player, boolean onlyPets)
 	{
-		for (Servitor servitor : player.getServitors())
+		for(Servitor servitor : player.getServitors())
 		{
-			if (!onlyPets || servitor.isPet())
+			if(!onlyPets || servitor.isPet())
 			{
 				servitor.unSummon(false);
 			}
@@ -240,11 +236,9 @@ public class Functions
 
 	public static boolean SetActive(String name, boolean active)
 	{
-		if (active == IsActive(name))
-		{
-			return false;
-		}
-		if (active)
+		if(active == IsActive(name))
+		{ return false; }
+		if(active)
 		{
 			ServerVariables.set(name, "on");
 		}
@@ -257,32 +251,25 @@ public class Functions
 
 	public static boolean SimpleCheckDrop(Creature mob, Creature killer)
 	{
-		return (mob != null) && mob.isMonster() && !mob.isRaid() && (killer != null) && (killer.getPlayer() != null) && ((killer.getLevel() - mob.getLevel()) < 9);
+		return (mob != null) && mob.isMonster() && !mob.isRaid() && (killer != null) && (killer.getPlayer() != null)
+				&& ((killer.getLevel() - mob.getLevel()) < 9);
 	}
 
 	public static void sendDebugMessage(Player player, String message)
 	{
-		if (!player.isGM())
-		{
-			return;
-		}
+		if(!player.isGM())
+		{ return; }
 		player.sendMessage(message);
 	}
 
 	public static void sendSystemMail(Player receiver, String title, String body, Map<Integer, Long> items)
 	{
-		if ((receiver == null) || !receiver.isOnline())
-		{
-			return;
-		}
-		if (title == null)
-		{
-			return;
-		}
-		if (items.keySet().size() > 8)
-		{
-			return;
-		}
+		if((receiver == null) || !receiver.isOnline())
+		{ return; }
+		if(title == null)
+		{ return; }
+		if(items.keySet().size() > 8)
+		{ return; }
 
 		Mail mail = new Mail();
 		mail.setSenderId(1);
@@ -291,7 +278,7 @@ public class Functions
 		mail.setReceiverName(receiver.getName());
 		mail.setTopic(title);
 		mail.setBody(body);
-		for (Entry<Integer, Long> itm : items.entrySet())
+		for(Entry<Integer, Long> itm : items.entrySet())
 		{
 			ItemInstance item = ItemFunctions.createItem(itm.getKey());
 			item.setLocation(ItemLocation.MAIL);

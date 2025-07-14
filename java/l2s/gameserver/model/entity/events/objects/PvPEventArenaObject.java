@@ -51,20 +51,20 @@ public class PvPEventArenaObject extends Reflection
 
 		List<DoorObject> doors = _pvpEvent.getObjects("doors");
 		IntObjectMap<DoorTemplate> doorTemplates = new HashIntObjectMap<DoorTemplate>(doors.size());
-		for (DoorObject door : doors)
+		for(DoorObject door : doors)
 		{
 			DoorTemplate doorTemplate = DoorHolder.getInstance().getTemplate(door.getId());
-			if (doorTemplate != null)
+			if(doorTemplate != null)
 				doorTemplates.put(doorTemplate.getId(), doorTemplate);
 		}
 		init(doorTemplates, new HashMap<String, ZoneTemplate>());
 
 		List<SpawnableObject> spawns = _pvpEvent.getObjects("spawns");
-		for (SpawnableObject spawn : spawns)
+		for(SpawnableObject spawn : spawns)
 			spawn.spawnObject(_pvpEvent, this);
 
 		_teamsList = new ArrayList<>(teams);
-		for (int i = 0; i < teams; i++)
+		for(int i = 0; i < teams; i++)
 		{
 			_teamsList.add(new CopyOnWriteArraySet<>());
 		}
@@ -72,7 +72,7 @@ public class PvPEventArenaObject extends Reflection
 
 	public void addPlayer(Player player, int teamId)
 	{
-		switch (teamId)
+		switch(teamId)
 		{
 			case 0:
 				player.setTeam(TeamType.BLUE);
@@ -88,16 +88,16 @@ public class PvPEventArenaObject extends Reflection
 	{
 		Collections.shuffle(players);
 		int teamId = 0;
-		for (Player player : players)
+		for(Player player : players)
 		{
-			if (_teamsList.size() == 1)
+			if(_teamsList.size() == 1)
 			{
 				player.setTeam(TeamType.RED);
 				_teamsList.get(0).add(new PvPEventPlayerObject(player, -1));
 			}
 			else
 			{
-				switch (teamId)
+				switch(teamId)
 				{
 					case 0:
 						player.setTeam(TeamType.BLUE);
@@ -110,30 +110,30 @@ public class PvPEventArenaObject extends Reflection
 				_teamsList.get(teamId).add(new PvPEventPlayerObject(player, teamId));
 				teamId++;
 
-				if (teamId == _teamsList.size())
+				if(teamId == _teamsList.size())
 					teamId = 0;
 			}
 		}
 	}
 
-//	public void teleportPlayer(Player player, int teamId)
-//	{
-//		player.leaveParty(false);
-//		player.setStablePoint(player.getLoc());
-//		player.addEvent(_pvpEvent);
-//		teleportPlayer(player, _pvpEvent.getLocation("team" + teamId));
-//		_pvpEvent.abnormals(player, true);
-//		addHook(player);
-//	}
+	//	public void teleportPlayer(Player player, int teamId)
+	//	{
+	//		player.leaveParty(false);
+	//		player.setStablePoint(player.getLoc());
+	//		player.addEvent(_pvpEvent);
+	//		teleportPlayer(player, _pvpEvent.getLocation("team" + teamId));
+	//		_pvpEvent.abnormals(player, true);
+	//		addHook(player);
+	//	}
 
 	public void teleportPlayers()
 	{
-		for (int i = 0; i < _teamsList.size(); i++)
+		for(int i = 0; i < _teamsList.size(); i++)
 		{
-			for (PvPEventPlayerObject member : _teamsList.get(i))
+			for(PvPEventPlayerObject member : _teamsList.get(i))
 			{
 				Player player = member.getPlayer();
-				if (player == null)
+				if(player == null)
 					continue;
 
 				player.leaveParty(false);
@@ -151,12 +151,12 @@ public class PvPEventArenaObject extends Reflection
 
 	public void startBattle()
 	{
-		for (int i = 0; i < _teamsList.size(); i++)
+		for(int i = 0; i < _teamsList.size(); i++)
 		{
-			for (PvPEventPlayerObject member : _teamsList.get(i))
+			for(PvPEventPlayerObject member : _teamsList.get(i))
 			{
 				Player player = member.getPlayer();
-				if (player == null)
+				if(player == null)
 					continue;
 
 				unBlock(player);
@@ -169,12 +169,12 @@ public class PvPEventArenaObject extends Reflection
 	public void stopBattle()
 	{
 		rewardTeams();
-		for (int i = 0; i < _teamsList.size(); i++)
+		for(int i = 0; i < _teamsList.size(); i++)
 		{
-			for (PvPEventPlayerObject member : _teamsList.get(i))
+			for(PvPEventPlayerObject member : _teamsList.get(i))
 			{
 				Player player = member.getPlayer();
-				if (player == null)
+				if(player == null)
 					continue;
 
 				removePlayer(player);
@@ -186,33 +186,33 @@ public class PvPEventArenaObject extends Reflection
 
 	public void check()
 	{
-		if (_teamsList.size() >= 2)
+		if(_teamsList.size() >= 2)
 		{
 			int emptyTeams = 0;
-			for (Set<PvPEventPlayerObject> team : _teamsList)
+			for(Set<PvPEventPlayerObject> team : _teamsList)
 			{
-				if (team.isEmpty())
+				if(team.isEmpty())
 					emptyTeams++;
 			}
 
-			if (_teamsList.size() - emptyTeams <= 1)
+			if(_teamsList.size() - emptyTeams <= 1)
 				stopBattle();
 		}
 		else
 		{
-			if (_teamsList.get(0).size() <= 1)
+			if(_teamsList.get(0).size() <= 1)
 			{
-				if (_teamsList.get(0).size() == 1)
+				if(_teamsList.get(0).size() == 1)
 				{
 					PvPEventPlayerObject object = _teamsList.get(0).iterator().next();
 
-					if (_pvpEvent.isAddHeroLastPlayer() && !object.getPlayer().isHero())
+					if(_pvpEvent.isAddHeroLastPlayer() && !object.getPlayer().isHero())
 						object.getPlayer().setCustomHero(1);
 
 					List<RewardObject> rewards = _pvpEvent.getObjects("reward_for_last_player");
-					for (RewardObject reward : rewards)
+					for(RewardObject reward : rewards)
 					{
-						if (Rnd.chance(reward.getChance()))
+						if(Rnd.chance(reward.getChance()))
 							ItemFunctions.addItem(object.getPlayer(), reward.getItemId(), Rnd.get(reward.getMinCount(), reward.getMaxCount()));
 					}
 
@@ -225,10 +225,10 @@ public class PvPEventArenaObject extends Reflection
 
 	public void teleportPlayer(Player player, Location location)
 	{
-		if (player.isTeleporting())
+		if(player.isTeleporting())
 			return;
 
-		if (player.isDead())
+		if(player.isDead())
 		{
 			player.doRevive(100);
 			player.setCurrentHp(player.getMaxHp(), true);
@@ -239,13 +239,13 @@ public class PvPEventArenaObject extends Reflection
 		player.setCurrentCp(player.getMaxCp());
 		player.setCurrentMp(player.getMaxMp());
 
-		if (player.isInObserverMode())
+		if(player.isInObserverMode())
 			player.leaveObserverMode();
 
-		if (_pvpEvent.isDisableHeroAndClanSkills())
+		if(_pvpEvent.isDisableHeroAndClanSkills())
 		{
 			// Un activate clan skills
-			if (player.getClan() != null)
+			if(player.getClan() != null)
 				player.getClan().disableSkills(player);
 
 			// Деактивируем геройские скиллы.
@@ -259,22 +259,22 @@ public class PvPEventArenaObject extends Reflection
 		player.abortAttack(true, true);
 
 		// Удаляем баффы и чужие кубики
-		for (Abnormal abnormal : player.getAbnormalList())
+		for(Abnormal abnormal : player.getAbnormalList())
 		{
-			if (!player.isSpecialAbnormal(abnormal.getSkill()))
+			if(!player.isSpecialAbnormal(abnormal.getSkill()))
 				abnormal.exit();
 		}
 
-		for (Cubic cubic : player.getCubics())
+		for(Cubic cubic : player.getCubics())
 		{
-			if (player.getSkillLevel(cubic.getSkill().getId()) <= 0)
+			if(player.getSkillLevel(cubic.getSkill().getId()) <= 0)
 				cubic.delete();
 		}
 
 		// Remove Servitor's Buffs
-		for (Servitor servitor : player.getServitors())
+		for(Servitor servitor : player.getServitors())
 		{
-			if (servitor.isPet())
+			if(servitor.isPet())
 				servitor.unSummon(false);
 			else
 			{
@@ -284,22 +284,22 @@ public class PvPEventArenaObject extends Reflection
 		}
 
 		// unsummon agathion
-		if (player.getAgathionNpcId() > 0)
+		if(player.getAgathionNpcId() > 0)
 			player.deleteAgathion();
 
-		if (_pvpEvent.isResetSkills())
+		if(_pvpEvent.isResetSkills())
 		{
 			// Сброс кулдауна всех скилов, время отката которых меньше 15 минут
-			for (TimeStamp sts : player.getSkillReuses())
+			for(TimeStamp sts : player.getSkillReuses())
 			{
-				if (sts == null)
+				if(sts == null)
 					continue;
 
 				Skill skill = SkillHolder.getInstance().getSkill(sts.getId(), sts.getLevel());
-				if (skill == null)
+				if(skill == null)
 					continue;
 
-				if (sts.getReuseBasic() <= 15 * 60001L)
+				if(sts.getReuseBasic() <= 15 * 60001L)
 					player.enableSkill(skill);
 			}
 		}
@@ -316,10 +316,10 @@ public class PvPEventArenaObject extends Reflection
 		player.broadcastUserInfo(true);
 
 		DuelEvent duel = player.getEvent(DuelEvent.class);
-		if (duel != null)
+		if(duel != null)
 			duel.abortDuel(player);
 
-		if (player.isSitting())
+		if(player.isSitting())
 			player.standUp();
 
 		player.setTarget(null);
@@ -341,21 +341,21 @@ public class PvPEventArenaObject extends Reflection
 
 	public void buff(Player player)
 	{
-		for (Abnormal abnormal : player.getAbnormalList())
+		for(Abnormal abnormal : player.getAbnormalList())
 		{
-			if (!player.isSpecialAbnormal(abnormal.getSkill()))
+			if(!player.isSpecialAbnormal(abnormal.getSkill()))
 				abnormal.exit();
 		}
 
-		for (int[] skillId : _pvpEvent.getBuffs())
+		for(int[] skillId : _pvpEvent.getBuffs())
 		{
 			Skill skill = SkillHolder.getInstance().getSkill(skillId[0], skillId[1]);
-			if (skill != null)
+			if(skill != null)
 				skill.getEffects(player, player);
 		}
 
 		Skill skill = SkillHolder.getInstance().getSkill(1323, 1);
-		if (skill != null)
+		if(skill != null)
 			skill.getEffects(player, player);
 	}
 
@@ -382,13 +382,13 @@ public class PvPEventArenaObject extends Reflection
 	public void removePlayer(Player player)
 	{
 		PvPEventPlayerObject member = getParticipant(player);
-		if (member == null)
+		if(member == null)
 			return;
 
 		_pvpEvent.abnormals(player, false);
 
 		int teamId = member.getTeam();
-		if (teamId == -1)
+		if(teamId == -1)
 		{
 			teamId = 0;
 		}
@@ -402,7 +402,7 @@ public class PvPEventArenaObject extends Reflection
 		player.setTeam(TeamType.NONE);
 		player.teleToLocation(player.getStablePoint(), ReflectionManager.MAIN);
 
-		if (player.isDead())
+		if(player.isDead())
 		{
 			player.doRevive(100);
 			player.setCurrentHp(player.getMaxHp(), true);
@@ -415,7 +415,7 @@ public class PvPEventArenaObject extends Reflection
 		player.setCurrentCp(player.getMaxCp());
 		player.setCurrentMp(player.getMaxMp());
 
-		if (player.getClan() != null)
+		if(player.getClan() != null)
 			player.getClan().enableSkills(player);
 
 		player.activateHeroSkills(true);
@@ -428,11 +428,11 @@ public class PvPEventArenaObject extends Reflection
 		_teamsList.sort(new WinComparator());
 
 		Set<PvPEventPlayerObject> teamWin = _teamsList.get(0);
-		if (getPointByTeam(teamWin) >= _pvpEvent.getMinKillTeamFromReward())
+		if(getPointByTeam(teamWin) >= _pvpEvent.getMinKillTeamFromReward())
 		{
 			List<RewardObject> rewards = _pvpEvent.getObjects("reward_for_win_team");
 
-			for (PvPEventPlayerObject object : teamWin)
+			for(PvPEventPlayerObject object : teamWin)
 			{
 				Player player = object.getPlayer();
 				player.sendPacket(new ExShowScreenMessage(new CustomMessage("l2s.gameserver.model.entity.events.impl.PvPEvent.win").toString(player), 5000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, 1, -1, true));
@@ -442,27 +442,27 @@ public class PvPEventArenaObject extends Reflection
 		}
 
 		List<RewardObject> rewards = _pvpEvent.getObjects("reward_for_lose_team");
-		for (int i = 1; i < _teamsList.size(); i++)
+		for(int i = 1; i < _teamsList.size(); i++)
 		{
 			Set<PvPEventPlayerObject> teamLose = _teamsList.get(i);
 
-			for (PvPEventPlayerObject object : teamLose)
+			for(PvPEventPlayerObject object : teamLose)
 			{
 				Player player = object.getPlayer();
 				player.sendPacket(new ExShowScreenMessage(new CustomMessage("l2s.gameserver.model.entity.events.impl.PvPEvent.lose").toString(player), 5000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, 1, -1, true));
 			}
 
-			if (getPointByTeam(teamLose) < _pvpEvent.getMinKillTeamFromReward())
+			if(getPointByTeam(teamLose) < _pvpEvent.getMinKillTeamFromReward())
 				continue;
 
 			takeReward(teamLose, rewards);
 		}
 	}
 
-//	public List<Set<PvPEventPlayerObject>> getTeamsCount()
-//	{
-//		return _teamsList;
-//	}
+	//	public List<Set<PvPEventPlayerObject>> getTeamsCount()
+	//	{
+	//		return _teamsList;
+	//	}
 
 	public static class WinComparator implements Comparator<Set<PvPEventPlayerObject>>
 	{
@@ -476,16 +476,16 @@ public class PvPEventArenaObject extends Reflection
 	private static int getPointByTeam(Set<PvPEventPlayerObject> players)
 	{
 		int points = 0;
-		for (PvPEventPlayerObject member : players)
+		for(PvPEventPlayerObject member : players)
 			points += member.getPoints();
 		return points;
 	}
 
 	private void takeReward(Set<PvPEventPlayerObject> players, List<RewardObject> rewards)
 	{
-		for (PvPEventPlayerObject member : players)
+		for(PvPEventPlayerObject member : players)
 		{
-			if (member.getPoints() < _pvpEvent.getMinKillFromReward())
+			if(member.getPoints() < _pvpEvent.getMinKillFromReward())
 			{
 				continue;
 			}
@@ -494,26 +494,26 @@ public class PvPEventArenaObject extends Reflection
 		}
 	}
 
-//	public void takeRewardByTeamId(int teamId, List<RewardObject> rewards)
-//	{
-//		for(PvPEventPlayerObject member : _teamsList.get(teamId))
-//		{
-//			if(member.getPoints() < _pvpEvent.getMinKillFromReward())
-//			{
-//				continue;
-//			}
-//
-//			rewards.stream().filter(reward -> Rnd.chance(reward.getChance())).forEach(reward -> ItemFunctions.addItem(member.getPlayer(), reward.getItemId(), Rnd.get(reward.getMinCount(), reward.getMaxCount())));
-//		}
-//	}
+	//	public void takeRewardByTeamId(int teamId, List<RewardObject> rewards)
+	//	{
+	//		for(PvPEventPlayerObject member : _teamsList.get(teamId))
+	//		{
+	//			if(member.getPoints() < _pvpEvent.getMinKillFromReward())
+	//			{
+	//				continue;
+	//			}
+	//
+	//			rewards.stream().filter(reward -> Rnd.chance(reward.getChance())).forEach(reward -> ItemFunctions.addItem(member.getPlayer(), reward.getItemId(), Rnd.get(reward.getMinCount(), reward.getMaxCount())));
+	//		}
+	//	}
 
 	public PvPEventPlayerObject getParticipant(Player player)
 	{
-		for (int i = 0; i < _teamsList.size(); i++)
+		for(int i = 0; i < _teamsList.size(); i++)
 		{
-			for (PvPEventPlayerObject member : _teamsList.get(i))
+			for(PvPEventPlayerObject member : _teamsList.get(i))
 			{
-				if (member.getPlayer() == player)
+				if(member.getPlayer() == player)
 					return member;
 			}
 		}

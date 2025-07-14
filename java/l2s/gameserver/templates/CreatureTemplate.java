@@ -86,7 +86,7 @@ public class CreatureTemplate
 		_baseAtkRange = set.getInteger("baseAtkRange", 0);
 
 		String[] damageRange = set.getString("damage_range", "").split(";"); // 0?;0?;fan sector;base attack angle
-		if (damageRange.length >= 4)
+		if(damageRange.length >= 4)
 		{
 			_baseAttackRadius = Integer.parseInt(damageRange[2]);
 			_baseAttackAngle = Integer.parseInt(damageRange[3]);
@@ -109,13 +109,11 @@ public class CreatureTemplate
 		_baseFlyWalkSpd = set.getDouble("baseFlyWalkSpd", 0);
 		_baseAttributeAttack = set.getIntegerArray("baseAttributeAttack", EMPTY_ATTRIBUTES);
 		_baseAttributeDefence = set.getIntegerArray("baseAttributeDefence", EMPTY_ATTRIBUTES);
-		_collisionRadius = set.getDoubleArray("collision_radius", new double[]
-		{
-			5
+		_collisionRadius = set.getDoubleArray("collision_radius", new double[] {
+				5
 		})[0];
-		_collisionHeight = set.getDoubleArray("collision_height", new double[]
-		{
-			5
+		_collisionHeight = set.getDoubleArray("collision_height", new double[] {
+				5
 		})[0];
 		_baseAttackType = WeaponType.valueOf(set.getString("baseAttackType", "FIST").toUpperCase());
 

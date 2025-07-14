@@ -25,34 +25,34 @@ public class AdminQuests implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditCharAll)
+		if(!activeChar.getPlayerAccess().CanEditCharAll)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_quests:
 
 				return ShowQuestList(getTargetChar(wordList, 1, activeChar), activeChar);
 
 			case admin_quest:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 				{
 					activeChar.sendMessage("USAGE: //quest id|name [SHOW|STATE|VAR|CLEAR] ...");
 					return true;
 				}
 				Quest _quest = QuestHolder.getInstance().getQuest(Integer.parseInt(wordList[1]));
-				if (_quest == null)
+				if(_quest == null)
 				{
 					activeChar.sendMessage("Quest " + wordList[1] + " undefined");
 					return true;
 				}
-				if (wordList.length < 3 || wordList[2].equalsIgnoreCase("SHOW"))
+				if(wordList.length < 3 || wordList[2].equalsIgnoreCase("SHOW"))
 					return cmd_Show(_quest, wordList, activeChar);
-				if (wordList[2].equalsIgnoreCase("STATE"))
+				if(wordList[2].equalsIgnoreCase("STATE"))
 					return cmd_State(_quest, wordList, activeChar);
-				if (wordList[2].equalsIgnoreCase("VAR"))
+				if(wordList[2].equalsIgnoreCase("VAR"))
 					return cmd_Var(_quest, wordList, activeChar);
-				if (wordList[2].equalsIgnoreCase("CLEAR"))
+				if(wordList[2].equalsIgnoreCase("CLEAR"))
 					return cmd_Clear(_quest, wordList, activeChar);
 				return cmd_Show(_quest, wordList, activeChar);
 		}
@@ -64,7 +64,7 @@ public class AdminQuests implements IAdminCommandHandler
 		// quest id|name CLEAR [target]
 		Player targetChar = getTargetChar(wordList, 3, activeChar);
 		QuestState qs = targetChar.getQuestState(_quest);
-		if (qs == null)
+		if(qs == null)
 		{
 			activeChar.sendMessage("Player " + targetChar.getName() + " havn't Quest [" + _quest.getName() + "]");
 			return false;
@@ -78,7 +78,7 @@ public class AdminQuests implements IAdminCommandHandler
 		// quest id|name SHOW [target]
 		Player targetChar = getTargetChar(wordList, 3, activeChar);
 		QuestState qs = targetChar.getQuestState(_quest);
-		if (qs == null)
+		if(qs == null)
 		{
 			activeChar.sendMessage("Player " + targetChar.getName() + " havn't Quest [" + _quest.getName() + "]");
 			return false;
@@ -99,65 +99,56 @@ public class AdminQuests implements IAdminCommandHandler
 
 		HtmlMessage adminReply = new HtmlMessage(5);
 		StringBuilder replyMSG = new StringBuilder("<html><body>");
-		replyMSG.append(fmtHEAD.sprintf(new Object[]
-		{
-			qs.getQuest().getClass().getSimpleName(),
-			id
+		replyMSG.append(fmtHEAD.sprintf(new Object[] {
+				qs.getQuest().getClass().getSimpleName(),
+				id
 		}));
 		replyMSG.append("<table width=260>");
-		replyMSG.append(fmtRow.sprintf(new Object[]
-		{
-			"PLAYER: ",
-			char_name,
-			""
-		}));
-		replyMSG.append(fmtRow.sprintf(new Object[]
-		{
-			"STATE: ",
-			"1"/* qs.getStateName() */,
-			fmtSetButton.sprintf(new Object[]
-			{
-				id,
-				"STATE",
-				"$new_val",
+		replyMSG.append(fmtRow.sprintf(new Object[] {
+				"PLAYER: ",
 				char_name,
 				""
-			})
 		}));
-		for (String key : vars.keySet())
-			if (!key.equalsIgnoreCase("<state>"))
-				replyMSG.append(fmtRow.sprintf(new Object[]
-				{
-					key + ": ",
-					vars.get(key),
-					fmtSetButton.sprintf(new Object[]
-					{
+		replyMSG.append(fmtRow.sprintf(new Object[] {
+				"STATE: ",
+				"1"/* qs.getStateName() */,
+				fmtSetButton.sprintf(new Object[] {
+						id,
+						"STATE",
+						"$new_val",
+						char_name,
+						""
+				})
+		}));
+		for(String key : vars.keySet())
+			if(!key.equalsIgnoreCase("<state>"))
+				replyMSG.append(fmtRow.sprintf(new Object[] {
+						key + ": ",
+						vars.get(key),
+						fmtSetButton.sprintf(new Object[] {
+								id,
+								"VAR",
+								key,
+								"$new_val",
+								char_name
+						})
+				}));
+		replyMSG.append(fmtRow.sprintf(new Object[] {
+				"<edit var=\"new_name\" width=50 height=12>",
+				"~new var~",
+				fmtSetButton.sprintf(new Object[] {
 						id,
 						"VAR",
-						key,
+						"$new_name",
 						"$new_val",
 						char_name
-					})
-				}));
-		replyMSG.append(fmtRow.sprintf(new Object[]
-		{
-			"<edit var=\"new_name\" width=50 height=12>",
-			"~new var~",
-			fmtSetButton.sprintf(new Object[]
-			{
-				id,
-				"VAR",
-				"$new_name",
-				"$new_val",
-				char_name
-			})
+				})
 		}));
 		replyMSG.append("</table>");
-		replyMSG.append(fmtFOOT.sprintf(new Object[]
-		{
-			id,
-			char_name,
-			char_name
+		replyMSG.append(fmtFOOT.sprintf(new Object[] {
+				id,
+				char_name,
+				char_name
 		}));
 		replyMSG.append("</body></html>");
 
@@ -174,22 +165,20 @@ public class AdminQuests implements IAdminCommandHandler
 	{
 		HtmlMessage adminReply = new HtmlMessage(5);
 		StringBuilder replyMSG = new StringBuilder("<html><body><table width=260>");
-		for (QuestState qs : targetChar.getAllQuestsStates())
+		for(QuestState qs : targetChar.getAllQuestsStates())
 		{
-			if (qs != null && qs.getQuest().isVisible(activeChar))
+			if(qs != null && qs.getQuest().isVisible(activeChar))
 			{
-				replyMSG.append(fmtListRow.sprintf(new Object[]
-				{
-					qs.getQuest().getId(),
-					targetChar.getName(),
-					qs.getQuest().getName(),
-					"1"
+				replyMSG.append(fmtListRow.sprintf(new Object[] {
+						qs.getQuest().getId(),
+						targetChar.getName(),
+						qs.getQuest().getName(),
+						"1"
 						/* qs.getStateName() */ }));
 			}
 		}
-		replyMSG.append(fmtListNew.sprintf(new Object[]
-		{
-			targetChar.getName()
+		replyMSG.append(fmtListNew.sprintf(new Object[] {
+				targetChar.getName()
 		}));
 		replyMSG.append("</table></body></html>");
 
@@ -201,7 +190,7 @@ public class AdminQuests implements IAdminCommandHandler
 
 	private boolean cmd_Var(Quest _quest, String[] wordList, Player activeChar)
 	{
-		if (wordList.length < 5)
+		if(wordList.length < 5)
 		{
 			activeChar.sendMessage("USAGE: //quest id|name VAR varname newvalue [target]");
 			return false;
@@ -209,13 +198,13 @@ public class AdminQuests implements IAdminCommandHandler
 
 		Player targetChar = getTargetChar(wordList, 5, activeChar);
 		QuestState qs = targetChar.getQuestState(_quest);
-		if (qs == null)
+		if(qs == null)
 		{
 			activeChar.sendMessage("Player " + targetChar.getName() + " havn't Quest [" + _quest.getName() + "], init quest by command:");
 			activeChar.sendMessage("//quest id|name STATE 1|2|3 [target]");
 			return false;
 		}
-		if (wordList[4].equalsIgnoreCase("~") || wordList[4].equalsIgnoreCase("#"))
+		if(wordList[4].equalsIgnoreCase("~") || wordList[4].equalsIgnoreCase("#"))
 			qs.unset(wordList[3]);
 		else
 			qs.set(wordList[3], wordList[4]);
@@ -224,7 +213,7 @@ public class AdminQuests implements IAdminCommandHandler
 
 	private boolean cmd_State(Quest _quest, String[] wordList, Player activeChar)
 	{
-		if (wordList.length < 4)
+		if(wordList.length < 4)
 		{
 			activeChar.sendMessage("USAGE: //quest id|name STATE 1|2|3 [target]");
 			return false;
@@ -235,7 +224,7 @@ public class AdminQuests implements IAdminCommandHandler
 		{
 			state = Integer.parseInt(wordList[3]);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			activeChar.sendMessage("Wrong State ID: " + wordList[3]);
 			return false;
@@ -243,7 +232,7 @@ public class AdminQuests implements IAdminCommandHandler
 
 		Player targetChar = getTargetChar(wordList, 4, activeChar);
 		QuestState qs = targetChar.getQuestState(_quest);
-		if (qs == null)
+		if(qs == null)
 		{
 			activeChar.sendMessage("Init Quest [" + _quest.getName() + "] for " + targetChar.getName());
 			qs = _quest.newQuestState(targetChar);
@@ -258,16 +247,16 @@ public class AdminQuests implements IAdminCommandHandler
 	private Player getTargetChar(String[] wordList, int wordListIndex, Player activeChar)
 	{
 		// цель задана аргументом
-		if (wordListIndex >= 0 && wordList.length > wordListIndex)
+		if(wordListIndex >= 0 && wordList.length > wordListIndex)
 		{
 			Player player = World.getPlayer(wordList[wordListIndex]);
-			if (player == null)
+			if(player == null)
 				activeChar.sendMessage("Can't find player: " + wordList[wordListIndex]);
 			return player;
 		}
 		// цель задана текущим таргетом
 		GameObject my_target = activeChar.getTarget();
-		if (my_target != null && my_target.isPlayer())
+		if(my_target != null && my_target.isPlayer())
 			return (Player) my_target;
 		// в качестве цели сам админ
 		return activeChar;

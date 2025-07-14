@@ -35,12 +35,12 @@ public class PlayerAI extends PlayableAI
 		super.onEvtAttack(target, skill, damage);
 
 		Player actor = getActor();
-		if (target == null || actor.isDead())
+		if(target == null || actor.isDead())
 			return;
 
-		if (damage > 0)
+		if(damage > 0)
 		{
-			for (Servitor servitor : actor.getServitors())
+			for(Servitor servitor : actor.getServitors())
 				servitor.onOwnerOfAttacks(target);
 		}
 	}
@@ -51,12 +51,12 @@ public class PlayerAI extends PlayableAI
 		super.onEvtAttacked(attacker, skill, damage);
 
 		Player actor = getActor();
-		if (attacker == null || actor.isDead())
+		if(attacker == null || actor.isDead())
 			return;
 
-		if (damage > 0)
+		if(damage > 0)
 		{
-			for (Servitor servitor : actor.getServitors())
+			for(Servitor servitor : actor.getServitors())
 				servitor.onOwnerGotAttacked(attacker);
 		}
 	}
@@ -81,12 +81,12 @@ public class PlayerAI extends PlayableAI
 	{
 		Player actor = getActor();
 
-		if (actor.getSittingTask())
+		if(actor.getSittingTask())
 		{
 			setNextAction(AINextAction.INTERACT, object, null, false, false);
 			return;
 		}
-		else if (actor.isSitting())
+		else if(actor.isSitting())
 		{
 			actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SITTING);
 			clientActionFailed();
@@ -100,12 +100,12 @@ public class PlayerAI extends PlayableAI
 	{
 		Player actor = getActor();
 
-		if (actor.getSittingTask())
+		if(actor.getSittingTask())
 		{
 			setNextAction(AINextAction.PICKUP, object, null, false, false);
 			return;
 		}
-		else if (actor.isSitting())
+		else if(actor.isSitting())
 		{
 			actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SITTING);
 			clientActionFailed();
@@ -119,21 +119,21 @@ public class PlayerAI extends PlayableAI
 	{
 		Player actor = getActor();
 
-		if (actor.isInFlyingTransform())
+		if(actor.isInFlyingTransform())
 		{
 			setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 			return;
 		}
 
 		FlagItemAttachment attachment = actor.getActiveWeaponFlagAttachment();
-		if (attachment != null && !attachment.canAttack(actor))
+		if(attachment != null && !attachment.canAttack(actor))
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
 			return;
 		}
 
-		if (actor.isFrozen())
+		if(actor.isFrozen())
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_FROZEN, ActionFailPacket.STATIC);
@@ -149,14 +149,14 @@ public class PlayerAI extends PlayableAI
 		Player actor = getActor();
 
 		FlagItemAttachment attachment = actor.getActiveWeaponFlagAttachment();
-		if (attachment != null && !attachment.canCast(actor, _skillEntry.getTemplate()))
+		if(attachment != null && !attachment.canCast(actor, _skillEntry.getTemplate()))
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
 			return false;
 		}
 
-		if (actor.isFrozen())
+		if(actor.isFrozen())
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_FROZEN, ActionFailPacket.STATIC);
@@ -170,24 +170,25 @@ public class PlayerAI extends PlayableAI
 	protected void thinkCoupleAction(Player target, Integer socialId, boolean cancel)
 	{
 		Player actor = getActor();
-		if (target == null || !target.isOnline())
+		if(target == null || !target.isOnline())
 		{
 			actor.sendPacket(SystemMsg.THE_COUPLE_ACTION_WAS_CANCELLED);
 			return;
 		}
 
-		if (cancel || !actor.isInRange(target, 50) || actor.isInRange(target, 20) || actor.getReflection() != target.getReflection() || !GeoEngine.canSeeTarget(actor, target))
+		if(cancel || !actor.isInRange(target, 50) || actor.isInRange(target, 20) || actor.getReflection() != target.getReflection()
+				|| !GeoEngine.canSeeTarget(actor, target))
 		{
 			target.sendPacket(SystemMsg.THE_COUPLE_ACTION_WAS_CANCELLED);
 			actor.sendPacket(SystemMsg.THE_COUPLE_ACTION_WAS_CANCELLED);
 			return;
 		}
-		if (_forceUse) // служит только для флага что б активировать у другого игрока социалку
+		if(_forceUse) // служит только для флага что б активировать у другого игрока социалку
 			target.getAI().setIntention(CtrlIntention.AI_INTENTION_COUPLE_ACTION, actor, socialId);
 
 		ThreadPoolManager.getInstance().schedule(() -> // Костыль, иначе через раз ВИЗУАЛЬНО начинало парные действия у
-														// одного из
-														// игроков.
+		// одного из
+		// игроков.
 		{
 			int heading = actor.calcHeading(target.getX(), target.getY());
 			actor.setHeading(heading);
@@ -201,7 +202,7 @@ public class PlayerAI extends PlayableAI
 	{
 		Player actor = getActor();
 
-		if (System.currentTimeMillis() - actor.getLastAttackPacket() < Config.ATTACK_PACKET_DELAY)
+		if(System.currentTimeMillis() - actor.getLastAttackPacket() < Config.ATTACK_PACKET_DELAY)
 		{
 			actor.sendActionFailed();
 			return;
@@ -209,12 +210,12 @@ public class PlayerAI extends PlayableAI
 
 		actor.setLastAttackPacket();
 
-		if (actor.getSittingTask())
+		if(actor.getSittingTask())
 		{
 			setNextAction(AINextAction.ATTACK, target, null, forceUse, false);
 			return;
 		}
-		else if (actor.isSitting())
+		else if(actor.isSitting())
 		{
 			actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SITTING);
 			clientActionFailed();
@@ -223,11 +224,11 @@ public class PlayerAI extends PlayableAI
 
 		// TODO Может нужно в другое место ? Проблема в том что на автоатаку через ctrl
 		// не работают все эти проверки
-		if (target instanceof Playable)
+		if(target instanceof Playable)
 		{
-			for (PvPEvent event : actor.getEvents(PvPEvent.class))
+			for(PvPEvent event : actor.getEvents(PvPEvent.class))
 			{
-				if (event.checkForAttack((Creature) target, actor, null, forceUse) != null)
+				if(event.checkForAttack((Creature) target, actor, null, forceUse) != null)
 				{
 					clientActionFailed();
 					return;
@@ -243,17 +244,17 @@ public class PlayerAI extends PlayableAI
 	{
 		Player actor = getActor();
 
-		if (actor == null)
+		if(actor == null)
 		{
 			clientActionFailed();
 			return false;
 		}
 
 		SkillEntry castingSkillEntry = actor.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-		if (castingSkillEntry != null)
+		if(castingSkillEntry != null)
 		{
 			Skill castingSkill = castingSkillEntry.getTemplate();
-			if (castingSkill.hasEffect(EffectUseType.NORMAL, "Transformation") || castingSkill.isToggle())
+			if(castingSkill.hasEffect(EffectUseType.NORMAL, "Transformation") || castingSkill.isToggle())
 			{
 				clientActionFailed();
 				return false;
@@ -261,10 +262,10 @@ public class PlayerAI extends PlayableAI
 		}
 
 		castingSkillEntry = actor.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-		if (castingSkillEntry != null)
+		if(castingSkillEntry != null)
 		{
 			Skill castingSkill = castingSkillEntry.getTemplate();
-			if (castingSkill.hasEffect(EffectUseType.NORMAL, "Transformation") || castingSkill.isToggle())
+			if(castingSkill.hasEffect(EffectUseType.NORMAL, "Transformation") || castingSkill.isToggle())
 			{
 				clientActionFailed();
 				return false;
@@ -273,12 +274,13 @@ public class PlayerAI extends PlayableAI
 
 		Skill skill = skillEntry.getTemplate();
 
-		if (!skillEntry.isAltUse() && !(skill.isToggle() && skill.getHitTime() <= 0) && !(skill.getSkillType() == SkillType.CRAFT && Config.ALLOW_TALK_WHILE_SITTING))
+		if(!skillEntry.isAltUse() && !(skill.isToggle() && skill.getHitTime() <= 0)
+				&& !(skill.getSkillType() == SkillType.CRAFT && Config.ALLOW_TALK_WHILE_SITTING))
 		{
 			// Если в этот момент встаем, то использовать скилл когда встанем
-			if (actor.getSittingTask())
+			if(actor.getSittingTask())
 			{
-				if (!skill.isHandler())
+				if(!skill.isHandler())
 				{
 					setNextAction(AINextAction.CAST, skillEntry, target, forceUse, dontMove);
 					clientActionFailed();
@@ -287,16 +289,16 @@ public class PlayerAI extends PlayableAI
 				clientActionFailed();
 				return false;
 			}
-			else if (skill.getSkillType() == SkillType.SUMMON && actor.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
+			else if(skill.getSkillType() == SkillType.SUMMON && actor.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 			{
 				actor.sendPacket(SystemMsg.YOU_CANNOT_SUMMON_DURING_A_TRADE_OR_WHILE_USING_A_PRIVATE_STORE);
 				clientActionFailed();
 				return false;
 			}
 			// если сидим - скиллы нельзя использовать
-			else if (actor.isSitting())
+			else if(actor.isSitting())
 			{
-				if (skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
+				if(skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
 					actor.sendPacket(SystemMsg.YOU_CANNOT_TRANSFORM_WHILE_SITTING);
 				else
 					actor.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SITTING);

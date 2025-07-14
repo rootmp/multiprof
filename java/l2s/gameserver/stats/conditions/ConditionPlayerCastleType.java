@@ -16,14 +16,14 @@ public class ConditionPlayerCastleType extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
-		if (env.character.getPlayer().getClan() == null)
+		if(env.character.getPlayer().getClan() == null)
 			return false;
 
 		Castle castle = env.character.getPlayer().getCastle();
-		if (castle == null)
+		if(castle == null)
 			return false;
 
 		return castle.getResidenceSide() == _type;

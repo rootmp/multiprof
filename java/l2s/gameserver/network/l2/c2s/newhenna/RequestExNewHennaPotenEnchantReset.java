@@ -20,31 +20,29 @@ public class RequestExNewHennaPotenEnchantReset implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		int _reset_count = player.getDyePotentialDailyResetCount();
 		int count = 1000;
-    if (_reset_count >= 3 && _reset_count <= 5) 
-        count = 2000;
-     else if (_reset_count >= 6) 
-        count = 5000;
-    
-    if(!ItemFunctions.haveItem(player, 91663, count))
-    {
-    	player.sendPacket(new ExNewHennaPotenEnchantReset(0));
-    	return;
-    }
-    if(ItemFunctions.deleteItem(player, 91663, count))
-    {
-    	player.resetHennaPotenDaily();
-    	player.setDyePotentialDailyResetCount(player.getDyePotentialDailyResetCount()+1);
-    	player.sendPacket(new ExNewHennaPotenEnchantReset(1));
-    	player.sendPacket(new NewHennaList(player,1));
+		if(_reset_count >= 3 && _reset_count <= 5)
+			count = 2000;
+		else if(_reset_count >= 6)
+			count = 5000;
 
-    }
+		if(!ItemFunctions.haveItem(player, 91663, count))
+		{
+			player.sendPacket(new ExNewHennaPotenEnchantReset(0));
+			return;
+		}
+		if(ItemFunctions.deleteItem(player, 91663, count))
+		{
+			player.resetHennaPotenDaily();
+			player.setDyePotentialDailyResetCount(player.getDyePotentialDailyResetCount() + 1);
+			player.sendPacket(new ExNewHennaPotenEnchantReset(1));
+			player.sendPacket(new NewHennaList(player, 1));
+
+		}
 	}
 
 }
-
-

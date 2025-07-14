@@ -8,17 +8,16 @@ import l2s.gameserver.model.Player;
  */
 public class ResetName implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		117
+	private static final int[] COMMAND_IDS = {
+			117
 	};
 
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (COMMAND_IDS[0] != id)
+		if(COMMAND_IDS[0] != id)
 			return false;
 
-		if (activeChar.getVar("oldtitle") != null)
+		if(activeChar.getVar("oldtitle") != null)
 		{
 			activeChar.setTitleColor(Player.DEFAULT_TITLE_COLOR);
 			activeChar.setTitle(activeChar.getVar("oldtitle"));

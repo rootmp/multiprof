@@ -20,11 +20,11 @@ public class GlobalRemoveItemsAction implements EventAction
 	@Override
 	public void call(Event event)
 	{
-		for (Object o : event.getObjects(_name))
+		for(Object o : event.getObjects(_name))
 		{
 			// Итемы удаляются только во время старта\рестарта сервера. На активном сервере
 			// удалять все итемы крайне опасно.
-			if (o instanceof ItemObject)
+			if(o instanceof ItemObject)
 				ItemsDAO.getInstance().glovalRemoveItem(((ItemObject) o).getItemId(), "Remove items by event: " + event.getName());
 		}
 	}

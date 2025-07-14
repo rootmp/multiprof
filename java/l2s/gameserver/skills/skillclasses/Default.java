@@ -24,8 +24,9 @@ public class Default extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (activeChar.isPlayer())
-			activeChar.sendMessage(new CustomMessage("l2s.gameserver.skills.skillclasses.Default.NotImplemented").addNumber(getId()).addString("" + getSkillType()));
+		if(activeChar.isPlayer())
+			activeChar.sendMessage(new CustomMessage("l2s.gameserver.skills.skillclasses.Default.NotImplemented").addNumber(getId()).addString(""
+					+ getSkillType()));
 
 		_log.warn("NOTDONE skill: " + getId() + ", used by" + activeChar);
 	}

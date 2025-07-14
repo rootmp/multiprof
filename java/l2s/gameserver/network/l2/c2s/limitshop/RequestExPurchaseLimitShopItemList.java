@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s.limitshop;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.LimitedShopHolder;
 import l2s.gameserver.model.Player;
@@ -23,7 +24,7 @@ public class RequestExPurchaseLimitShopItemList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		LimitedShopHolder.getInstance().SeparateAndSend(_listId, activeChar);

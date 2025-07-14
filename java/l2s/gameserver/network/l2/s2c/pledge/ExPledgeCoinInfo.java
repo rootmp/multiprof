@@ -7,12 +7,12 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 public class ExPledgeCoinInfo implements IClientOutgoingPacket
 {
 	private final long _count;
-	
+
 	public ExPledgeCoinInfo(Player player)
 	{
 		_count = player.getHonorCoins();
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

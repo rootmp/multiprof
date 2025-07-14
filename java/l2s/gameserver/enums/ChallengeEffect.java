@@ -8,7 +8,7 @@ import l2s.commons.util.Rnd;
 
 public enum ChallengeEffect
 {
-  BLANK(-1, -1, -1, -1, -1, -1, -1, null),
+	BLANK(-1, -1, -1, -1, -1, -1, -1, null),
 	ENCHANT_SUCCESS_PLUS_4_PERCENTS(0, 4, 0, 1, 7, 2, 15, Arrays.asList(1, 2, 3)),
 	ENCHANT_SUCCESS_PLUS_8_PERCENTS(1, 8, 0, 1, 7, 2, 25, Arrays.asList(1, 2, 3)),
 	ENCHANT_LEVEL_PLUS_ONE_TWO(2, 20, 80, 1, 6, 3, 50, Arrays.asList(2, 3)), // 80% +2 option
@@ -29,7 +29,7 @@ public enum ChallengeEffect
 	{
 		return Arrays.stream(ChallengeEffect.values()).filter(p -> p.getOptionIndex() == id).findFirst().orElse(null);
 	}
-	
+
 	ChallengeEffect(int optionIndex, int chance, int secondChange, int minEnchant, int maxEnchant, int groupOneMaxEnchant, int price, List<Integer> supportedGroups)
 	{
 		this.optionIndex = optionIndex;
@@ -90,7 +90,8 @@ public enum ChallengeEffect
 		if(isBlank())
 			return false;
 
-		return this.optionIndex == ENCHANT_SUCCESS_PLUS_4_PERCENTS.getOptionIndex() || this.optionIndex == ENCHANT_SUCCESS_PLUS_8_PERCENTS.getOptionIndex();
+		return this.optionIndex == ENCHANT_SUCCESS_PLUS_4_PERCENTS.getOptionIndex()
+				|| this.optionIndex == ENCHANT_SUCCESS_PLUS_8_PERCENTS.getOptionIndex();
 	}
 
 	public boolean isEnchantLess()

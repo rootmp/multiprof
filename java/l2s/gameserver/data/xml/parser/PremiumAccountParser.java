@@ -47,7 +47,7 @@ public final class PremiumAccountParser extends StatParser<PremiumAccountHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("config"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("config"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -55,19 +55,20 @@ public final class PremiumAccountParser extends StatParser<PremiumAccountHolder>
 			Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER = Boolean.parseBoolean(element.attributeValue("based_on_gameserver"));
 			Config.FREE_PA_TYPE = element.attributeValue("free_type") == null ? 0 : Integer.parseInt(element.attributeValue("free_type"));
 			Config.FREE_PA_DELAY = element.attributeValue("free_delay") == null ? 0 : Integer.parseInt(element.attributeValue("free_delay"));
-			Config.ENABLE_FREE_PA_NOTIFICATION = element.attributeValue("notify_free") == null ? false : Boolean.parseBoolean(element.attributeValue("notify_free"));
+			Config.ENABLE_FREE_PA_NOTIFICATION = element.attributeValue("notify_free")
+					== null ? false : Boolean.parseBoolean(element.attributeValue("notify_free"));
 		}
 
-		if (!Config.PREMIUM_ACCOUNT_ENABLED)
+		if(!Config.PREMIUM_ACCOUNT_ENABLED)
 			return;
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("account"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("account"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			StatsSet set = new StatsSet();
 
-			for (Iterator<Element> subIterator = element.elementIterator("set"); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator("set"); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 				set.set(subElement.attributeValue("name"), subElement.attributeValue("value"));
@@ -76,60 +77,60 @@ public final class PremiumAccountParser extends StatParser<PremiumAccountHolder>
 			int type = Integer.parseInt(element.attributeValue("type"));
 			PremiumAccountTemplate template = new PremiumAccountTemplate(type, set);
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("name".equalsIgnoreCase(subElement.getName()))
+				if("name".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						Language lang = Language.getLanguage(e.getName(), null);
-						if (lang != null)
+						if(lang != null)
 						{
 							template.addName(lang, e.getTextTrim());
 						}
 					}
 				}
-				else if ("give_items_on_start".equalsIgnoreCase(subElement.getName()))
+				else if("give_items_on_start".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int itemId = Integer.parseInt(e.attributeValue("id"));
 						long itemCount = Long.parseLong(e.attributeValue("count"));
 						template.addGiveItemOnStart(new ItemData(itemId, itemCount));
 					}
 				}
-				else if ("take_items_on_end".equalsIgnoreCase(subElement.getName()))
+				else if("take_items_on_end".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int itemId = Integer.parseInt(e.attributeValue("id"));
 						long itemCount = Long.parseLong(e.attributeValue("count"));
 						template.addTakeItemOnEnd(new ItemData(itemId, itemCount));
 					}
 				}
-				else if ("fee".equalsIgnoreCase(subElement.getName()))
+				else if("fee".equalsIgnoreCase(subElement.getName()))
 				{
 					int delay = subElement.attributeValue("delay") == null ? -1 : Integer.parseInt(subElement.attributeValue("delay"));
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int itemId = Integer.parseInt(e.attributeValue("id"));
 						long itemCount = Long.parseLong(e.attributeValue("count"));
 						template.addFee(delay, new ItemData(itemId, itemCount));
 					}
 				}
-				else if ("stats".equalsIgnoreCase(subElement.getName()))
+				else if("stats".equalsIgnoreCase(subElement.getName()))
 				{
 					parseFor(subElement, template);
 				}
-				else if ("triggers".equalsIgnoreCase(subElement.getName()))
+				else if("triggers".equalsIgnoreCase(subElement.getName()))
 				{
 					parseTriggers(subElement, template);
 				}
-				else if ("skills".equalsIgnoreCase(subElement.getName()))
+				else if("skills".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Iterator<Element> nextIterator = subElement.elementIterator("skill"); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = subElement.elementIterator("skill"); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("id"));
@@ -137,9 +138,9 @@ public final class PremiumAccountParser extends StatParser<PremiumAccountHolder>
 						template.attachSkill(SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level));
 					}
 				}
-				else if ("rewards".equalsIgnoreCase(subElement.getName()))
+				else if("rewards".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int itemId = Integer.parseInt(e.attributeValue("id"));
 						long minItemCount = Long.parseLong(e.attributeValue("min_count"));
@@ -156,7 +157,7 @@ public final class PremiumAccountParser extends StatParser<PremiumAccountHolder>
 	@Override
 	protected void onParsed()
 	{
-		if (getHolder().size() == 0)
+		if(getHolder().size() == 0)
 			Config.PREMIUM_ACCOUNT_ENABLED = false;
 	}
 

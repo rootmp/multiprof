@@ -44,13 +44,13 @@ public class CastleSiegeInfoPacket implements IClientOutgoingPacket
 		_id = residence.getId();
 		_ownerObjectId = residence.getOwnerId();
 		Clan owner = residence.getOwner();
-		if (owner != null)
+		if(owner != null)
 		{
 			_isLeader = player.isGM() || (owner.getLeaderId(Clan.SUBUNIT_MAIN_CLAN) == player.getObjectId());
 			_ownerName = owner.getName();
 			_leaderName = owner.getLeaderName(Clan.SUBUNIT_MAIN_CLAN);
 			Alliance ally = owner.getAlliance();
-			if (ally != null)
+			if(ally != null)
 			{
 				_allyId = ally.getAllyId();
 				_allyName = ally.getAllyName();

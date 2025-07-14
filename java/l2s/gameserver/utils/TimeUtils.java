@@ -42,7 +42,7 @@ public class TimeUtils
 
 			return calendar;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -51,7 +51,7 @@ public class TimeUtils
 
 	public static long getTimeFromString(String datetime, String dateFormat, TimeUnit timeUnit, long defaultValue)
 	{
-		if (datetime != null)
+		if(datetime != null)
 		{
 			try
 			{
@@ -60,7 +60,7 @@ public class TimeUtils
 				calendar.setTime(time);
 				return timeUnit.convert(calendar.getTimeInMillis(), TimeUnit.MILLISECONDS);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}

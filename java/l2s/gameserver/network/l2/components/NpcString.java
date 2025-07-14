@@ -290,8 +290,7 @@ public enum NpcString
 	YOUR_LUCKY_NUMBERS_HAVE_BEEN_SELECTED_ABOVE(1000179),
 	// Text: Prepare to die, foreign invaders! I am Gustav, the eternal ruler of
 	// this fortress and I have taken up my sword to repel thee!
-	PREPARE_TO_DIE_FOREIGN_INVADERS_I_AM_GUSTAV_THE_ETERNAL_RULER_OF_THIS_FORTRESS_AND_I_HAVE_TAKEN_UP_MY_SWORD_TO_REPEL_THEE(
-																																1000275),
+	PREPARE_TO_DIE_FOREIGN_INVADERS_I_AM_GUSTAV_THE_ETERNAL_RULER_OF_THIS_FORTRESS_AND_I_HAVE_TAKEN_UP_MY_SWORD_TO_REPEL_THEE(1000275),
 	// Text: Glory to Aden, the Kingdom of the Lion! Glory to Sir Gustav, our
 	// immortal lord!
 	GLORY_TO_ADEN_THE_KINGDOM_OF_THE_LION_GLORY_TO_SIR_GUSTAV_OUR_IMMORTAL_LORD(1000276),
@@ -475,13 +474,11 @@ public enum NpcString
 	THE_GODDESS_RESURRECTION_HAS_ALREADY_BEGUN_HUHU_INSIGNIFICANT_CREATURES_LIKE_YOU_CAN_DO_NOTHING(1010227),
 	// Text: Who dares to covet the throne of our castle! Leave immediately or you
 	// will pay the price of your audacity with your very own blood!
-	WHO_DARES_TO_COVET_THE_THRONE_OF_OUR_CASTLE__LEAVE_IMMEDIATELY_OR_YOU_WILL_PAY_THE_PRICE_OF_YOUR_AUDACITY_WITH_YOUR_VERY_OWN_BLOOD(
-																																		1010623),
+	WHO_DARES_TO_COVET_THE_THRONE_OF_OUR_CASTLE__LEAVE_IMMEDIATELY_OR_YOU_WILL_PAY_THE_PRICE_OF_YOUR_AUDACITY_WITH_YOUR_VERY_OWN_BLOOD(1010623),
 	// Text: Hmm, those who are not of the bloodline are coming this way to take
 	// over the castle?! Humph! The bitter grudges of the dead. You must not make
 	// light of their power!
-	HMM_THOSE_WHO_ARE_NOT_OF_THE_BLOODLINE_ARE_COMING_THIS_WAY_TO_TAKE_OVER_THE_CASTLE__HUMPH__THE_BITTER_GRUDGES_OF_THE_DEAD(
-																																1010624),
+	HMM_THOSE_WHO_ARE_NOT_OF_THE_BLOODLINE_ARE_COMING_THIS_WAY_TO_TAKE_OVER_THE_CASTLE__HUMPH__THE_BITTER_GRUDGES_OF_THE_DEAD(1010624),
 	// Text: Aargh...! If I die, then the magic force field of blood will...!
 	AARGH_IF_I_DIE_THEN_THE_MAGIC_FORCE_FIELD_OF_BLOOD_WILL(1010625),
 	// Text: It's not over yet... It won't be... over... like this... Never...
@@ -629,8 +626,7 @@ public enum NpcString
 	// Text: Courage! Ambition! Passion! Mercenaries who want to realize their dream
 	// of fighting in the territory war, come to me! Fortune and glory are waiting
 	// for you!
-	COURAGE_AMBITION_PASSION_MERCENARIES_WHO_WANT_TO_REALIZE_THEIR_DREAM_OF_FIGHTING_IN_THE_TERRITORY_WAR_COME_TO_ME_FORTUNE_AND_GLORY_ARE_WAITING_FOR_YOU(
-																																							1300163),
+	COURAGE_AMBITION_PASSION_MERCENARIES_WHO_WANT_TO_REALIZE_THEIR_DREAM_OF_FIGHTING_IN_THE_TERRITORY_WAR_COME_TO_ME_FORTUNE_AND_GLORY_ARE_WAITING_FOR_YOU(1300163),
 	// Text: Do you wish to fight? Are you afraid? No matter how hard you try, you
 	// have nowhere to run. But if you face it head on, our mercenary troop will
 	// help you out!
@@ -751,8 +747,7 @@ public enum NpcString
 	THE_GUARDIAN_OF_THE_SEAL_DOESNT_SEEM_TO_GET_INJURED_AT_ALL_UNTIL_THE_BARRIER_IS_DESTROYED(1029550),
 	// Text: The device located in the room in front of the guardian of the seal is
 	// definitely the barrier that controls the guardian's power.
-	THE_DEVICE_LOCATED_IN_THE_ROOM_IN_FRONT_OF_THE_GUARDIAN_OF_THE_SEAL_IS_DEFINITELY_THE_BARRIER_THAT_CONTROLS_THE_GUARDIANS_POWER(
-																																	1029551),
+	THE_DEVICE_LOCATED_IN_THE_ROOM_IN_FRONT_OF_THE_GUARDIAN_OF_THE_SEAL_IS_DEFINITELY_THE_BARRIER_THAT_CONTROLS_THE_GUARDIANS_POWER(1029551),
 	// Text: To remove the barrier, you must find the relics that fit the barrier
 	// and activate the device.
 	TO_REMOVE_THE_BARRIER_YOU_MUST_FIND_THE_RELICS_THAT_FIT_THE_BARRIER_AND_ACTIVATE_THE_DEVICE(1029552),
@@ -805,8 +800,7 @@ public enum NpcString
 	YOU_CAN_HEAR_THE_UNDEAD_OF_EKIMUS_RUSHING_TOWARD_YOU(1800263),
 	// Text: The tumor inside $s1 has been destroyed! \nIn order to draw out the
 	// cowardly Cohemenes, you must destroy all the tumors!
-	THE_TUMOR_INSIDE_S1_HAS_BEEN_DESTROYED_NIN_ORDER_TO_DRAW_OUT_THE_COWARDLY_COHEMENES_YOU_MUST_DESTROY_ALL_THE_TUMORS(
-																														1800274),
+	THE_TUMOR_INSIDE_S1_HAS_BEEN_DESTROYED_NIN_ORDER_TO_DRAW_OUT_THE_COWARDLY_COHEMENES_YOU_MUST_DESTROY_ALL_THE_TUMORS(1800274),
 	// Text: The tumor inside $s1 has completely revived. \nThe restrengthened
 	// Cohemenes has fled deeper inside the seed...
 	THE_TUMOR_INSIDE_S1_HAS_COMPLETELY_REVIVED(1800275),
@@ -867,8 +861,7 @@ public enum NpcString
 	THE_AREA_NEAR_THE_TUMOR_IS_FULL_OF_OMINOUS_ENERGY(1800265),
 	// Text: The tumor inside $s1 has been destroyed! \nThe nearby Undead that were
 	// attacking Seed of Life start losing their energy and run away!
-	THE_TUMOR_INSIDE_S1_HAS_BEEN_DESTROYED_NTHE_NEARBY_UNDEAD_THAT_WERE_ATTACKING_SEED_OF_LIFE_START_LOSING_THEIR_ENERGY_AND_RUN_AWAY(
-																																		1800300),
+	THE_TUMOR_INSIDE_S1_HAS_BEEN_DESTROYED_NTHE_NEARBY_UNDEAD_THAT_WERE_ATTACKING_SEED_OF_LIFE_START_LOSING_THEIR_ENERGY_AND_RUN_AWAY(1800300),
 	// Text: The tumor inside $s1 has completely revived. \nRecovered nearby Undead
 	// are swarming toward Seed of Life...
 	THE_TUMOR_INSIDE_S1_HAS_COMPLETELY_REVIVED_(1800301),
@@ -1223,12 +1216,10 @@ public enum NpcString
 	// Text: Congratulations! You will now graduate from the Clan Academy and leave
 	// your current clan. As a graduate of the academy, you can immediately join a
 	// clan as a regular member without being subject to any penalties.
-	CONGRATULATIONS_YOU_WILL_NOW_GRADUATE_FROM_THE_CLAN_ACADEMY_AND_LEAVE_YOUR_CURRENT_CLAN_AS_A_GRADUATE_OF_THE_ACADEMY_YOU_CAN_IMMEDIATELY_JOIN_A_CLAN_AS_A_REGULAR_MEMBER_WITHOUT_BEING_SUBJECT_TO_ANY_PENALTIES(
-																																																					17171749),
+	CONGRATULATIONS_YOU_WILL_NOW_GRADUATE_FROM_THE_CLAN_ACADEMY_AND_LEAVE_YOUR_CURRENT_CLAN_AS_A_GRADUATE_OF_THE_ACADEMY_YOU_CAN_IMMEDIATELY_JOIN_A_CLAN_AS_A_REGULAR_MEMBER_WITHOUT_BEING_SUBJECT_TO_ANY_PENALTIES(17171749),
 	// Text: The Cry of Fate pendant will be helpful to you. Please equip it and
 	// bring out the power of the pendant to prepare for the next fight.
-	THE_CRY_OF_FATE_PENDANT_WILL_BE_HELPFUL_TO_YOU_PLEASE_EQUIP_IT_AND_BRING_OUT_THE_POWER_OF_THE_PENDANT_TO_PREPARE_FOR_THE_NEXT_FIGHT(
-																																		1034124),
+	THE_CRY_OF_FATE_PENDANT_WILL_BE_HELPFUL_TO_YOU_PLEASE_EQUIP_IT_AND_BRING_OUT_THE_POWER_OF_THE_PENDANT_TO_PREPARE_FOR_THE_NEXT_FIGHT(1034124),
 	// Text: Try Kukura ...
 	TRY_KUKURA(17178345),
 	// Text: Drink the sacrifice of blood that we have
@@ -1357,8 +1348,7 @@ public enum NpcString
 	CLICK_THE_FLAME_FLOWER_THEN_DOUBLE_CLICK_THE_TROWEL(574907),
 	// Text: When the world plunges into chaos, we will need your help. At that
 	// time, please join in with us. I hope that you will become stronger.
-	WHEN_THE_WORLD_PLUNGES_INTO_CHAOS_WE_WILL_NEED_YOUR_HELP_AT_THAT_TIME_PLEASE_JOIN_IN_WITH_US_I_HOPE_THAT_YOU_WILL_BECOME_STRONGER(
-																																		1300172),
+	WHEN_THE_WORLD_PLUNGES_INTO_CHAOS_WE_WILL_NEED_YOUR_HELP_AT_THAT_TIME_PLEASE_JOIN_IN_WITH_US_I_HOPE_THAT_YOU_WILL_BECOME_STRONGER(1300172),
 	// Text: We will execute our plan on Sunday night. If you join us, I will give
 	// you a substantial reward.
 	WE_WILL_EXECUTE_OUR_PLAN_ON_SUNDAY_NIGHT_IF_YOU_JOIN_US_I_WILL_GIVE_YOU_A_SUBSTANTIAL_REWARD(1300171),
@@ -1677,7 +1667,7 @@ public enum NpcString
 	// Text: You…with the power of the gods…cease your masquerading as our masters.
 	// Or else…
 	YOUWITH_THE_POWER_OF_THE_GODSCEASE_YOUR_MASQUERADING_AS_OUR_MASTERS_OR_ELSE(540352),
-//Lindvior raid:
+	//Lindvior raid:
 	// Text: We will hold off Lindvior's minions!
 	WE_WILL_HOLD_OFF_LINDVIORS_MINIONS(1802364),
 	// Text: Activate the Generator! Hurry!
@@ -1704,43 +1694,35 @@ public enum NpcString
 	// Text: Messenger, inform the patrons of the Keucereus Alliance Base! We're
 	// gathering brave adventurers to attack Tiat's Mounted Troop that's rooted in
 	// the Seed of Destruction.
-	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_WERE_GATHERING_BRAVE_ADVENTURERS_TO_ATTACK_TIATS_MOUNTED_TROOP_THATS_ROOTED_IN_THE_SEED_OF_DESTRUCTION(
-																																										1800695),
+	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_WERE_GATHERING_BRAVE_ADVENTURERS_TO_ATTACK_TIATS_MOUNTED_TROOP_THATS_ROOTED_IN_THE_SEED_OF_DESTRUCTION(1800695),
 	// Text: Messenger, inform the patrons of the Keucereus Alliance Base! The Seed
 	// of Destruction is currently secured under the flag of the Keucereus Alliance!
-	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_SEED_OF_DESTRUCTION_IS_CURRENTLY_SECURED_UNDER_THE_FLAG_OF_THE_KEUCEREUS_ALLIANCE(
-																																						1800696),
+	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_SEED_OF_DESTRUCTION_IS_CURRENTLY_SECURED_UNDER_THE_FLAG_OF_THE_KEUCEREUS_ALLIANCE(1800696),
 	// Text: Messenger, inform the patrons of the Keucereus Alliance Base! Tiat's
 	// Mounted Troop is currently trying to retake Seed of Destruction! Commit all
 	// the available reinforcements into Seed of Destruction!
-	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_TIATS_MOUNTED_TROOP_IS_CURRENTLY_TRYING_TO_RETAKE_SEED_OF_DESTRUCTION_COMMIT_ALL_THE_AVAILABLE_REINFORCEMENTS_INTO_SEED_OF_DESTRUCTION(
-																																																		1800697),
+	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_TIATS_MOUNTED_TROOP_IS_CURRENTLY_TRYING_TO_RETAKE_SEED_OF_DESTRUCTION_COMMIT_ALL_THE_AVAILABLE_REINFORCEMENTS_INTO_SEED_OF_DESTRUCTION(1800697),
 	// Text: Messenger, inform the brothers in Kucereus' clan outpost! Brave
 	// adventurers who have challenged the Seed of Infinity are currently
 	// infiltrating the Hall of Erosion through the defensively weak Hall of
 	// Suffering!
-	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_BRAVE_ADVENTURERS_WHO_HAVE_CHALLENGED_THE_SEED_OF_INFINITY_ARE_CURRENTLY_INFILTRATING_THE_HALL_OF_EROSION_THROUGH_THE_DEFENSIVELY_WEAK_HALL_OF_SUFFERING(
-																																																					1800698),
+	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_BRAVE_ADVENTURERS_WHO_HAVE_CHALLENGED_THE_SEED_OF_INFINITY_ARE_CURRENTLY_INFILTRATING_THE_HALL_OF_EROSION_THROUGH_THE_DEFENSIVELY_WEAK_HALL_OF_SUFFERING(1800698),
 	// Text: Messenger, inform the brothers in Kucereus' clan outpost! Sweeping the
 	// Seed of Infinity is currently complete to the Heart of the Seed. Ekimus is
 	// being directly attacked, and the Undead remaining in the Hall of Suffering
 	// are being eradicated!
-	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_SWEEPING_THE_SEED_OF_INFINITY_IS_CURRENTLY_COMPLETE_TO_THE_HEART_OF_THE_SEED_EKIMUS_IS_BEING_DIRECTLY_ATTACKED_AND_THE_UNDEAD_REMAINING_IN_THE_HALL_OF_SUFFERING_ARE_BEING_ERADICATED(
-																																																													1800699),
+	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_SWEEPING_THE_SEED_OF_INFINITY_IS_CURRENTLY_COMPLETE_TO_THE_HEART_OF_THE_SEED_EKIMUS_IS_BEING_DIRECTLY_ATTACKED_AND_THE_UNDEAD_REMAINING_IN_THE_HALL_OF_SUFFERING_ARE_BEING_ERADICATED(1800699),
 	// Text: Messenger, inform the patrons of the Keucereus Alliance Base! The Seed
 	// of Infinity is currently secured under the flag of the Keucereus Alliance!
-	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_SEED_OF_INFINITY_IS_CURRENTLY_SECURED_UNDER_THE_FLAG_OF_THE_KEUCEREUS_ALLIANCE(
-																																					1800700),
+	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_SEED_OF_INFINITY_IS_CURRENTLY_SECURED_UNDER_THE_FLAG_OF_THE_KEUCEREUS_ALLIANCE(1800700),
 	// Text: Messenger, inform the patrons of the Keucereus Alliance Base! The
 	// resurrected Undead in the Seed of Infinity are pouring into the Hall of
 	// Suffering and the Hall of Erosion!
-	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_RESURRECTED_UNDEAD_IN_THE_SEED_OF_INFINITY_ARE_POURING_INTO_THE_HALL_OF_SUFFERING_AND_THE_HALL_OF_EROSION(
-																																												1800702),
+	MESSENGER_INFORM_THE_PATRONS_OF_THE_KEUCEREUS_ALLIANCE_BASE_THE_RESURRECTED_UNDEAD_IN_THE_SEED_OF_INFINITY_ARE_POURING_INTO_THE_HALL_OF_SUFFERING_AND_THE_HALL_OF_EROSION(1800702),
 	// Text: Messenger, inform the brothers in Kucereus' clan outpost! Ekimus is
 	// about to be revived by the resurrected Undead in Seed of Infinity. Send all
 	// reinforcements to the Heart and the Hall of Suffering!
-	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_EKIMUS_IS_ABOUT_TO_BE_REVIVED_BY_THE_RESURRECTED_UNDEAD_IN_SEED_OF_INFINITY_SEND_ALL_REINFORCEMENTS_TO_THE_HEART_AND_THE_HALL_OF_SUFFERING(
-																																																		1800703),
+	MESSENGER_INFORM_THE_BROTHERS_IN_KUCEREUS_CLAN_OUTPOST_EKIMUS_IS_ABOUT_TO_BE_REVIVED_BY_THE_RESURRECTED_UNDEAD_IN_SEED_OF_INFINITY_SEND_ALL_REINFORCEMENTS_TO_THE_HEART_AND_THE_HALL_OF_SUFFERING(1800703),
 	// Text: Stabbing three times!
 	STABBING_THREE_TIMES(1800704),
 	// Text: Honorable warriors have driven off Lindvior, the evil wind dragon!
@@ -1894,16 +1876,14 @@ public enum NpcString
 	TRY_USING_THE_TELEPORT_SCROLL_LEVIAN_GAVE_YOU_TO_GO_TO_ORC_BARRACKS(1802590),
 	// Text: You have finished all of Queen Navari's Letters! Grow stronger here
 	// until you receive letters from a minstrel at Lv. 85.
-	YOU_HAVE_FINISHED_ALL_OF_QUEEN_NAVARIS_LETTERS_GROW_STRONGER_HERE_UNTIL_YOU_RECEIVE_LETTERS_FROM_A_MINSTREL_AT_LV_85(
-																															1802678),
+	YOU_HAVE_FINISHED_ALL_OF_QUEEN_NAVARIS_LETTERS_GROW_STRONGER_HERE_UNTIL_YOU_RECEIVE_LETTERS_FROM_A_MINSTREL_AT_LV_85(1802678),
 	// Text: You can gather more Monster Blood.
 	YOU_CAN_GATHER_MORE_MONSTER_BLOOD(1802544),
 	// Text: You can gather more Powerful Dark Malice.
 	YOU_CAN_GATHER_MORE_POWERFUL_DARK_MALICE(1802545),
 	// Text: You have finished all of Kekropus' Letters! Grow stronger here until
 	// you receive letters from a minstrel at Lv. 85.
-	YOU_HAVE_FINISHED_ALL_OF_KEKROPUS_LETTERS_GROW_STRONGER_HERE_UNTIL_YOU_RECEIVE_LETTERS_FROM_A_MINSTREL_AT_LV_85(
-																													1802574),
+	YOU_HAVE_FINISHED_ALL_OF_KEKROPUS_LETTERS_GROW_STRONGER_HERE_UNTIL_YOU_RECEIVE_LETTERS_FROM_A_MINSTREL_AT_LV_85(1802574),
 	// Text: Grow stronger here until you receive the next letter from Kekropus at
 	// Lv. 46!
 	GROW_STRONGER_HERE_UNTIL_YOU_RECEIVE_THE_NEXT_LETTER_FROM_KEKROPUS_AT_LV_46(1802566),
@@ -2042,8 +2022,7 @@ public enum NpcString
 	THE_PORTAL_TO_THE_NEXT_ROOM_IS_NOW_OPEN(1801200),
 	// Text: Open the ability screen in the character information screen.\\nPress
 	// "Adjust Points" to adjust the acquired SP and Ability points.
-	OPEN_THE_ABILITY_SCREEN_IN_THE_CHARACTER_INFORMATION_SCREENNPRESS_ADJUST_POINTS_TO_ADJUST_THE_ACQUIRED_SP_AND_ABILITY_POINTS(
-																																	546123),
+	OPEN_THE_ABILITY_SCREEN_IN_THE_CHARACTER_INFORMATION_SCREENNPRESS_ADJUST_POINTS_TO_ADJUST_THE_ACQUIRED_SP_AND_ABILITY_POINTS(546123),
 	// Text: The letter from Lionel Hunter has arrived.\\nClick the question mark
 	// icon to read the letter's contents.
 	THE_LETTER_FROM_LIONEL_HUNTER_HAS_ARRIVEDNCLICK_THE_QUESTION_MARK_ICON_TO_READ_THE_LETTERS_CONTENTS(546151),
@@ -2114,8 +2093,7 @@ public enum NpcString
 	LEONA_BLACKBIRD_GAVE_BELETHS_RING_AS_A_GIFT_TO_S1(1802451),
 	// Text: You have defeated the forces of evil while I was gathering
 	// reinforcements. I wish to give you a reward, so please come here.
-	YOU_HAVE_DEFEATED_THE_FORCES_OF_EVIL_WHILE_I_WAS_GATHERING_REINFORCEMENTS_I_WISH_TO_GIVE_YOU_A_REWARD_SO_PLEASE_COME_HERE(
-																																1802430),
+	YOU_HAVE_DEFEATED_THE_FORCES_OF_EVIL_WHILE_I_WAS_GATHERING_REINFORCEMENTS_I_WISH_TO_GIVE_YOU_A_REWARD_SO_PLEASE_COME_HERE(1802430),
 	// Text: Is this Antharas...
 	IS_THIS_ANTHARAS(17178316),
 	// Text: We have no more chance. We must go back!
@@ -2485,8 +2463,7 @@ public enum NpcString
 	LOOK_ITS_GONNA_BREAK(1800935),
 	// Text: Now! Are you trying to eat without doing the work? Fine~ Do what you
 	// want~ I'll hate you if you don't give me any nectar!
-	NOW_ARE_YOU_TRYING_TO_EAT_WITHOUT_DOING_THE_WORK_FINE_DO_WHAT_YOU_WANT_ILL_HATE_YOU_IF_YOU_DONT_GIVE_ME_ANY_NECTAR(
-																														1800936),
+	NOW_ARE_YOU_TRYING_TO_EAT_WITHOUT_DOING_THE_WORK_FINE_DO_WHAT_YOU_WANT_ILL_HATE_YOU_IF_YOU_DONT_GIVE_ME_ANY_NECTAR(1800936),
 	// Text: Hit me more! Hit me more!
 	HIT_ME_MORE_HIT_ME_MORE(1800937),
 	// Text: I'm gonna wither like this~ Damn it~!
@@ -2660,8 +2637,7 @@ public enum NpcString
 	// Text: This is a hideout made with 'Shine Stone' used in Giant's Dimensional
 	// technique. Supposedly the capital of the Giants that have not been found is
 	// still in the dimensional gap somewhere...
-	THIS_IS_A_HIDEOUT_MADE_WITH_SHINE_STONE_USED_IN_GIANTS_DIMENSIONAL_TECHNIQUE__SUPPOSEDLY_THE_CAPITAL_OF_THE_GIANTS_THAT_HAVE_NOT_BEEN_FOUND_IS_STILL_IN_THE_DIMENSIONAL_GAP_SOMEWHERE(
-																																															1620092),
+	THIS_IS_A_HIDEOUT_MADE_WITH_SHINE_STONE_USED_IN_GIANTS_DIMENSIONAL_TECHNIQUE__SUPPOSEDLY_THE_CAPITAL_OF_THE_GIANTS_THAT_HAVE_NOT_BEEN_FOUND_IS_STILL_IN_THE_DIMENSIONAL_GAP_SOMEWHERE(1620092),
 	// Text: The evil Land Dragon Antharas has been defeated by brave heroes!!!
 	THE_EVIL_LAND_DRAGON_ANTHARAS_HAS_BEEN_DEFEATED_BY_BRAVE_HEROES_(901900150),
 	// Text: The evil Fire Dragon Valakas has been defeated!
@@ -2710,8 +2686,7 @@ public enum NpcString
 	THE_WINNER_OF_THE_CEREMONY_OF_CHAOS_HAS_BEEN_BORN(1717806),
 	// Text: You are the clan member who produced $s1, this week's winner. You have
 	// tremendous abilities and luck. I give you my master's blessing...!
-	YOU_ARE_THE_CLAN_MEMBER_WHO_PRODUCED_S1_THIS_WEEKS_WINNER_YOU_HAVE_TREMENDOUS_ABILITIES_AND_LUCK_I_GIVE_YOU_MY_MASTERS_BLESSING(
-																																	1801644),
+	YOU_ARE_THE_CLAN_MEMBER_WHO_PRODUCED_S1_THIS_WEEKS_WINNER_YOU_HAVE_TREMENDOUS_ABILITIES_AND_LUCK_I_GIVE_YOU_MY_MASTERS_BLESSING(1801644),
 	// Text: The clan that seized the most honor this week is $s1.
 	THE_CLAN_THAT_SEIZED_THE_MOST_HONOR_THIS_WEEK_IS_S1(1801645),
 	// Text: Is there no clan that can raise a true ultimate warrior...?
@@ -3020,12 +2995,10 @@ public enum NpcString
 	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_TRADER_REAHEN(1803778),
 	// Text: You've killed all the monsters.\nUse the Scroll of Escape in your
 	// inventory to return to Captain Bathis in Gludio.
-	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_CAPTAIN_BATHIS_IN_GLUDIO(
-																													1803735),
+	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_CAPTAIN_BATHIS_IN_GLUDIO(1803735),
 	// Text: You've killed all the monsters.\nUse the Scroll of Escape in your
 	// inventory to return to Armor Merchant Jackson.
-	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_ARMOR_MERCHANT_JACKSON(
-																													1803730),
+	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_ARMOR_MERCHANT_JACKSON(1803730),
 	// Text: You've killed all the monsters.\nUse the Scroll of Escape in your
 	// inventory to return to Grocer Herbiel.
 	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_GROCER_HERBIEL(1803731),
@@ -3034,12 +3007,10 @@ public enum NpcString
 	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_GROCER_VOLLODOS(1803732),
 	// Text: You've killed all the monsters.\nUse the Scroll of Escape in your
 	// inventory to return to Accessory Merchant Uska.
-	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_ACCESSORY_MERCHANT_USKA(
-																													1803733),
+	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_ACCESSORY_MERCHANT_USKA(1803733),
 	// Text: You've killed all the monsters.\nUse the Scroll of Escape in your
 	// inventory to return to Head Priest of the Earth Gerald.
-	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_HEAD_PRIEST_OF_THE_EARTH_GERALD(
-																															1803734),
+	YOUVE_KILLED_ALL_THE_MONSTERS_USE_THE_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_RETURN_TO_HEAD_PRIEST_OF_THE_EARTH_GERALD(1803734),
 	// Text: Speak to Head Trainer Kilremange
 	SPEAK_TO_HEAD_TRAINER_KILREMANGE(1803994),
 	// Text: The training in over.\nUse a Scroll of Escape in your inventory to go
@@ -3047,8 +3018,7 @@ public enum NpcString
 	THE_TRAINING_IN_OVER_USE_A_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_GO_BACK_TO_QUARTERMASTER_MATHORN(595811),
 	// Text: You've finished the tutorial.\nTake your first class transfer and
 	// complete your training with Mathorn to become stronger.
-	YOUVE_FINISHED_THE_TUTORIAL_TAKE_YOUR_FIRST_CLASS_TRANSFER_AND_COMPLETE_YOUR_TRAINING_WITH_MATHORN_TO_BECOME_STRONGER(
-																															595911),
+	YOUVE_FINISHED_THE_TUTORIAL_TAKE_YOUR_FIRST_CLASS_TRANSFER_AND_COMPLETE_YOUR_TRAINING_WITH_MATHORN_TO_BECOME_STRONGER(595911),
 	// Text: You've got Adventurer's Bracelet and Adventurer's Talisman.\nComplete
 	// the tutorial and try to use the talisman.
 	YOUVE_GOT_ADVENTURERS_BRACELET_AND_ADVENTURERS_TALISMAN_COMPLETE_THE_TUTORIAL_AND_TRY_TO_USE_THE_TALISMAN(1803785),
@@ -3060,12 +3030,10 @@ public enum NpcString
 	MONSTERS_OF_THE_GORGON_FLOWER_GARDEN_ARE_KILLED_USE_THE_TELEPORT_TO_GET_TO_HIGH_PRIEST_RAYMOND_IN_GLUDIO(596411),
 	// Text: You've got Adventurer's Agathion Bracelet and Adventurer's Agathion
 	// Griffin.\nComplete the tutorial and try to use the agathion.
-	YOUVE_GOT_ADVENTURERS_AGATHION_BRACELET_AND_ADVENTURERS_AGATHION_GRIFFIN_COMPLETE_THE_TUTORIAL_AND_TRY_TO_USE_THE_AGATHION(
-																																1803787),
+	YOUVE_GOT_ADVENTURERS_AGATHION_BRACELET_AND_ADVENTURERS_AGATHION_GRIFFIN_COMPLETE_THE_TUTORIAL_AND_TRY_TO_USE_THE_AGATHION(1803787),
 	// Text: Monsters of the Death Pass are killed.\nUse the teleport or the Scroll
 	// of Escape to get to High Priest Maximilian in Giran.
-	MONSTERS_OF_THE_DEATH_PASS_ARE_KILLED_USE_THE_TELEPORT_OR_THE_SCROLL_OF_ESCAPE_TO_GET_TO_HIGH_PRIEST_MAXIMILIAN_IN_GIRAN(
-																																596511),
+	MONSTERS_OF_THE_DEATH_PASS_ARE_KILLED_USE_THE_TELEPORT_OR_THE_SCROLL_OF_ESCAPE_TO_GET_TO_HIGH_PRIEST_MAXIMILIAN_IN_GIRAN(596511),
 	// Text: The element is active. You can open the character info window to
 	// navigate your spirit.
 	THE_ELEMENT_IS_ACTIVE_YOU_CAN_OPEN_THE_CHARACTER_INFO_WINDOW_TO_NAVIGATE_YOUR_SPIRIT(1803794),
@@ -3266,8 +3234,7 @@ public enum NpcString
 	// Text: All Cruma Tower exploration support missions are finished.\nTalk to
 	// Ivory Tower Wizard Carsus near the Cruma Tower entrance or to High Priest
 	// Orven in Aden town.
-	ALL_CRUMA_TOWER_EXPLORATION_SUPPORT_MISSIONS_ARE_FINISHED_TALK_TO_IVORY_TOWER_WIZARD_CARSUS_NEAR_THE_CRUMA_TOWER_ENTRANCE_OR_TO_HIGH_PRIEST_ORVEN_IN_ADEN_TOWN(
-																																									530011),
+	ALL_CRUMA_TOWER_EXPLORATION_SUPPORT_MISSIONS_ARE_FINISHED_TALK_TO_IVORY_TOWER_WIZARD_CARSUS_NEAR_THE_CRUMA_TOWER_ENTRANCE_OR_TO_HIGH_PRIEST_ORVEN_IN_ADEN_TOWN(530011),
 	// Text: Monsters in the Silent Valley have been defeated.\nTalk to High Priest
 	// Orven in Aden town.
 	MONSTERS_IN_THE_SILENT_VALLEY_HAVE_BEEN_DEFEATED_TALK_TO_HIGH_PRIEST_ORVEN_IN_ADEN_TOWN(530111),
@@ -3305,8 +3272,7 @@ public enum NpcString
 	THE_TRAINING_IN_OVER_USE_A_SCROLL_OF_ESCAPE_IN_YOUR_INVENTORY_TO_GO_BACK_TO_GANTAKI_ZU_URUTU(595311),
 	// Text: You've finished the tutorial.\nTake your 1st class transfer and
 	// complete your training with Bathis to become stronger.
-	YOUVE_FINISHED_THE_TUTORIAL_TAKE_YOUR_1ST_CLASS_TRANSFER_AND_COMPLETE_YOUR_TRAINING_WITH_BATHIS_TO_BECOME_STRONGER(
-																														595312);
+	YOUVE_FINISHED_THE_TUTORIAL_TAKE_YOUR_1ST_CLASS_TRANSFER_AND_COMPLETE_YOUR_TRAINING_WITH_BATHIS_TO_BECOME_STRONGER(595312);
 
 	private final int _id;
 	private final int _size;
@@ -3315,13 +3281,13 @@ public enum NpcString
 	{
 		_id = id;
 
-		if (name().contains("S4"))
+		if(name().contains("S4"))
 			_size = 4;
-		else if (name().contains("S3"))
+		else if(name().contains("S3"))
 			_size = 3;
-		else if (name().contains("S2"))
+		else if(name().contains("S2"))
 			_size = 2;
-		else if (name().contains("S1"))
+		else if(name().contains("S1"))
 			_size = 1;
 		else
 			_size = 0;
@@ -3339,8 +3305,8 @@ public enum NpcString
 
 	public static NpcString valueOf(int id)
 	{
-		for (NpcString m : values())
-			if (m.getId() == id)
+		for(NpcString m : values())
+			if(m.getId() == id)
 				return m;
 
 		throw new NoSuchElementException("Not find NpcString by id: " + id);

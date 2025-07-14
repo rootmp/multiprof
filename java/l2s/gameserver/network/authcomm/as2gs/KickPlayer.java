@@ -22,13 +22,13 @@ public class KickPlayer extends ReceivablePacket
 	protected void runImpl()
 	{
 		GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(account);
-		if (client == null)
+		if(client == null)
 			client = AuthServerCommunication.getInstance().removeAuthedClient(account);
-		if (client == null)
+		if(client == null)
 			return;
 
 		Player activeChar = client.getActiveChar();
-		if (activeChar != null)
+		if(activeChar != null)
 		{
 			// FIXME [G1ta0] сообщение чаще всего не показывается, т.к. при закрытии
 			// соединения очередь на отправку очищается

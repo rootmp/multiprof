@@ -51,7 +51,7 @@ public class OlympiadMember
 		this.team = team;
 
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			Clan clan = player.getClan();
 			this.clanId = clan == null ? 0 : clan.getClanId();
@@ -84,7 +84,7 @@ public class OlympiadMember
 	public void incGameCount()
 	{
 		OlympiadParticipiantData data = getStat();
-		switch (game.getType())
+		switch(game.getType())
 		{
 			case TEAM:
 				data.setTeamGamesCount(data.getTeamGamesCount() + 1);
@@ -103,7 +103,7 @@ public class OlympiadMember
 	public boolean checkPlayer()
 	{
 		Player player = getPlayer();
-		if (player == null || player.isLogoutStarted() || player.getOlympiadGame() == null || player.isInObserverMode())
+		if(player == null || player.isLogoutStarted() || player.getOlympiadGame() == null || player.isInObserverMode())
 			return false;
 		return true;
 	}
@@ -111,20 +111,19 @@ public class OlympiadMember
 	public void portPlayerToArena()
 	{
 		Player player = getPlayer();
-		if (!checkPlayer() || player.isTeleporting())
-		{
-			return;
-		}
+		if(!checkPlayer() || player.isTeleporting())
+		{ return; }
 
 		DuelEvent duel = player.getEvent(DuelEvent.class);
-		if (duel != null)
+		if(duel != null)
 			duel.abortDuel(player);
 
-		_returnLoc = player.getStablePoint() == null ? player.getReflection().getReturnLoc() == null ? player.getLoc() : player.getReflection().getReturnLoc() : player.getStablePoint();
+		_returnLoc = player.getStablePoint()
+				== null ? player.getReflection().getReturnLoc() == null ? player.getLoc() : player.getReflection().getReturnLoc() : player.getStablePoint();
 
-		if (player.isDead())
+		if(player.isDead())
 			player.setPendingRevive(true);
-		if (player.isSitting())
+		if(player.isSitting())
 			player.standUp();
 
 		player.setTarget(null);
@@ -135,7 +134,7 @@ public class OlympiadMember
 
 		player.leaveParty(false);
 
-		if (game.getType() == CompType.TEAM)
+		if(game.getType() == CompType.TEAM)
 			player.setTeam(getTeam());
 
 		Reflection ref = game.getReflection();
@@ -152,10 +151,10 @@ public class OlympiadMember
 	public void portPlayerBack()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (_returnLoc == null) // игрока не портнуло на стадион
+		if(_returnLoc == null) // игрока не портнуло на стадион
 			return;
 
 		player.removeEvent(game.getEvent());
@@ -165,25 +164,25 @@ public class OlympiadMember
 		player.setOlympiadGame(null);
 
 		// Удаляем баффы и чужие кубики
-		for (Abnormal abnormal : player.getAbnormalList())
+		for(Abnormal abnormal : player.getAbnormalList())
 		{
-			if (!player.isSpecialAbnormal(abnormal.getSkill()))
+			if(!player.isSpecialAbnormal(abnormal.getSkill()))
 				abnormal.exit();
 		}
 
-		for (Cubic cubic : player.getCubics())
+		for(Cubic cubic : player.getCubics())
 		{
-			if (player.getSkillLevel(cubic.getSkill().getId()) <= 0)
+			if(player.getSkillLevel(cubic.getSkill().getId()) <= 0)
 				cubic.delete();
 		}
 
-		for (Servitor servitor : player.getServitors())
+		for(Servitor servitor : player.getServitors())
 			servitor.getAbnormalList().stopAll();
 
 		player.setCurrentCp(player.getMaxCp());
 		player.setCurrentMp(player.getMaxMp());
 
-		if (player.isDead())
+		if(player.isDead())
 		{
 			player.setCurrentHp(player.getMaxHp(), true);
 			player.broadcastPacket(new RevivePacket(player));
@@ -193,7 +192,7 @@ public class OlympiadMember
 			player.setCurrentHp(player.getMaxHp(), false);
 
 		// Возвращаем клановые скиллы если репутация положительная.
-		if (player.getClan() != null)
+		if(player.getClan() != null)
 			player.getClan().enableSkills(player);
 
 		// Активируем геройские скиллы.
@@ -205,9 +204,9 @@ public class OlympiadMember
 		player.sendPacket(new ExOlympiadMatchEndPacket());
 
 		String back = player.getVar("backCoords");
-		if (_returnLoc != null)
+		if(_returnLoc != null)
 			player.teleToLocation(_returnLoc, ReflectionManager.MAIN);
-		else if (back != null)
+		else if(back != null)
 		{
 			player.teleToLocation(Location.parseLoc(back), ReflectionManager.MAIN);
 			player.unsetVar("backCoords");
@@ -222,44 +221,44 @@ public class OlympiadMember
 	public void preparePlayer1()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.isInObserverMode())
+		if(player.isInObserverMode())
 			player.leaveObserverMode();
 
 		// Un activate clan skills
-		if (player.getClan() != null)
+		if(player.getClan() != null)
 			player.getClan().disableSkills(player);
 
 		// Деактивируем геройские скиллы.
 		player.activateHeroSkills(false);
 
 		// Abort casting if player casting
-		if (player.isCastingNow())
+		if(player.isCastingNow())
 			player.abortCast(true, true);
 
 		// Abort attack if player attacking
-		if (player.isAttackingNow())
+		if(player.isAttackingNow())
 			player.abortAttack(true, true);
 
 		// Удаляем баффы и чужие кубики
-		for (Abnormal abnormal : player.getAbnormalList())
+		for(Abnormal abnormal : player.getAbnormalList())
 		{
-			if (!player.isSpecialAbnormal(abnormal.getSkill()))
+			if(!player.isSpecialAbnormal(abnormal.getSkill()))
 				abnormal.exit();
 		}
 
-		for (Cubic cubic : player.getCubics())
+		for(Cubic cubic : player.getCubics())
 		{
-			if (player.getSkillLevel(cubic.getSkill().getId()) <= 0)
+			if(player.getSkillLevel(cubic.getSkill().getId()) <= 0)
 				cubic.delete();
 		}
 
 		// Remove Servitor's Buffs
-		for (Servitor servitor : player.getServitors())
+		for(Servitor servitor : player.getServitors())
 		{
-			if (servitor.isPet())
+			if(servitor.isPet())
 				servitor.unSummon(false);
 			else
 			{
@@ -269,18 +268,18 @@ public class OlympiadMember
 		}
 
 		// unsummon agathion
-		if (player.getAgathionId() > 0)
+		if(player.getAgathionId() > 0)
 			player.deleteAgathion();
 
 		// Сброс кулдауна всех скилов, время отката которых меньше 15 минут
-		for (TimeStamp sts : player.getSkillReuses())
+		for(TimeStamp sts : player.getSkillReuses())
 		{
-			if (sts == null)
+			if(sts == null)
 				continue;
 			Skill skill = SkillHolder.getInstance().getSkill(sts.getId(), sts.getLevel());
-			if (skill == null)
+			if(skill == null)
 				continue;
-			if (skill.getReuseDelay() <= 900000L)
+			if(skill.getReuseDelay() <= 900000L)
 				player.enableSkill(skill);
 		}
 
@@ -301,7 +300,7 @@ public class OlympiadMember
 	public void preparePlayer2()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
@@ -312,11 +311,11 @@ public class OlympiadMember
 	public void doDie()
 	{
 		dead = true;
-		if (game.getType() == CompType.TEAM)
+		if(game.getType() == CompType.TEAM)
 		{
 			game.broadcastPacket(new SystemMessagePacket(SystemMsg.S1_WAS_KILLED).addString(getName()), true, true);
 			Player player = getPlayer();
-			if (player != null)
+			if(player != null)
 			{
 				Reflection ref = game.getReflection();
 				InstantZone instantZone = ref.getInstancedZone();

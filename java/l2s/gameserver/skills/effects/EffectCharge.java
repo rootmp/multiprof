@@ -19,11 +19,11 @@ public final class EffectCharge extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isPlayer())
+		if(effected.isPlayer())
 		{
 			final Player player = (Player) effected;
 
-			if (player.getIncreasedForce() >= getValue())
+			if(player.getIncreasedForce() >= getValue())
 				player.sendPacket(SystemMsg.YOUR_FORCE_HAS_REACHED_MAXIMUM_CAPACITY_);
 			else
 				player.setIncreasedForce(player.getIncreasedForce() + 1);

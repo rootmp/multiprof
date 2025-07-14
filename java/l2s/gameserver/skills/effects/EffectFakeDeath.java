@@ -23,14 +23,14 @@ public final class EffectFakeDeath extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isPlayer())
+		if(effected.isPlayer())
 		{
-			if (effected.isInvisible(null)) // same as invis cannot be invis & fake death
+			if(effected.isInvisible(null)) // same as invis cannot be invis & fake death
 				return false;
 
 			Player player = effected.getPlayer();
-			if (player.getActiveWeaponFlagAttachment() != null) // same as invis, if doing fake death during siege,
-																// cannot target? nonsense.
+			if(player.getActiveWeaponFlagAttachment() != null) // same as invis, if doing fake death during siege,
+				// cannot target? nonsense.
 				return false;
 
 			return true;
@@ -56,7 +56,7 @@ public final class EffectFakeDeath extends EffectHandler
 		player.setNonAggroTime(System.currentTimeMillis() + 5000L);
 		// player.setFakeDeath(false); //after
 		player.broadcastPacket(new ChangeWaitTypePacket(player, ChangeWaitTypePacket.WT_STOP_FAKEDEATH));
-		if (getSkill().getId() == 10528) // stupid but fine for now
+		if(getSkill().getId() == 10528) // stupid but fine for now
 			player.setTargetable(true);
 		player.broadcastPacket(new RevivePacket(player));
 		player.broadcastCharInfo();
@@ -66,14 +66,14 @@ public final class EffectFakeDeath extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return false;
 
 		double manaDam = getValue();
 
-		if (manaDam > effected.getCurrentMp())
+		if(manaDam > effected.getCurrentMp())
 		{
-			if (getSkill().isToggle())
+			if(getSkill().isToggle())
 			{
 				effected.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 				effected.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(getSkill().getId(), getSkill().getDisplayLevel()));

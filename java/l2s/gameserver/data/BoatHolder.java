@@ -2,6 +2,8 @@ package l2s.gameserver.data;
 
 import java.lang.reflect.Constructor;
 
+import gnu.trove.iterator.TIntObjectIterator;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.data.xml.holder.ShuttleTemplateHolder;
 import l2s.gameserver.idfactory.IdFactory;
@@ -9,9 +11,6 @@ import l2s.gameserver.model.entity.boat.Boat;
 import l2s.gameserver.model.entity.boat.Shuttle;
 import l2s.gameserver.templates.CreatureTemplate;
 import l2s.gameserver.templates.ShuttleTemplate;
-
-import gnu.trove.iterator.TIntObjectIterator;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author VISTALL
@@ -32,7 +31,7 @@ public final class BoatHolder extends AbstractHolder
 	public void spawnAll()
 	{
 		log();
-		for (TIntObjectIterator<Boat> iterator = _boats.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<Boat> iterator = _boats.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
 			iterator.value().spawnMe();
@@ -52,7 +51,7 @@ public final class BoatHolder extends AbstractHolder
 			addBoat(boat);
 			return boat;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("Fail to init boat: " + clazz, e);
 		}
@@ -70,7 +69,7 @@ public final class BoatHolder extends AbstractHolder
 			addBoat(shuttle);
 			return shuttle;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("Fail to init shuttle id: " + shuttleId, e);
 		}
@@ -80,10 +79,10 @@ public final class BoatHolder extends AbstractHolder
 
 	public Boat getBoat(String name)
 	{
-		for (TIntObjectIterator<Boat> iterator = _boats.iterator(); iterator.hasNext();)
+		for(TIntObjectIterator<Boat> iterator = _boats.iterator(); iterator.hasNext();)
 		{
 			iterator.advance();
-			if (iterator.value().getName().equals(name))
+			if(iterator.value().getName().equals(name))
 				return iterator.value();
 		}
 

@@ -30,15 +30,15 @@ public class PlaySoundAction implements EventAction
 	{
 		GameObject object = event.getCenterObject();
 		PlaySoundPacket packet = null;
-		if (object != null)
+		if(object != null)
 			packet = new PlaySoundPacket(_type, _sound, 1, object.getObjectId(), object.getLoc());
 		else
 			packet = new PlaySoundPacket(_type, _sound, 0, 0, 0, 0, 0);
 
 		List<Player> players = event.broadcastPlayers(_range);
-		for (Player player : players)
+		for(Player player : players)
 		{
-			if (player != null)
+			if(player != null)
 				player.sendPacket(packet);
 		}
 	}

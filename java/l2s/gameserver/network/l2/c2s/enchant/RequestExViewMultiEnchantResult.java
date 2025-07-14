@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.c2s.enchant;
 
-import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.GameClient;
 import l2s.commons.network.PacketReader;
+import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.s2c.enchant.ExResultMultiEnchantItemList;
 
 /**
@@ -22,7 +22,7 @@ public class RequestExViewMultiEnchantResult implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		player.sendPacket(new ExResultMultiEnchantItemList(player, player.getMultiSuccessEnchantList(), player.getMultiFailureEnchantList(), true));

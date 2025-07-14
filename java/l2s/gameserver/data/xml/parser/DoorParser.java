@@ -72,11 +72,11 @@ public final class DoorParser extends AbstractParser<DoorHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element doorElement = iterator.next();
 
-			if ("door".equals(doorElement.getName()))
+			if("door".equals(doorElement.getName()))
 			{
 				StatsSet doorSet = initBaseStats();
 				StatsSet aiParams = null;
@@ -106,20 +106,20 @@ public final class DoorParser extends AbstractParser<DoorHolder>
 
 				doorPos.setZ(minz + 32); // фактическая координата двери в мире
 
-				for (Iterator<Element> i = doorElement.elementIterator(); i.hasNext();)
+				for(Iterator<Element> i = doorElement.elementIterator(); i.hasNext();)
 				{
 					Element n = i.next();
-					if ("set".equals(n.getName()))
+					if("set".equals(n.getName()))
 						doorSet.set(n.attributeValue("name"), n.attributeValue("value"));
-					else if ("ai_params".equals(n.getName()))
+					else if("ai_params".equals(n.getName()))
 					{
-						if (aiParams == null)
+						if(aiParams == null)
 						{
 							aiParams = new StatsSet();
 							doorSet.set("ai_params", aiParams);
 						}
 
-						for (Iterator<Element> aiParamsIterator = n.elementIterator(); aiParamsIterator.hasNext();)
+						for(Iterator<Element> aiParamsIterator = n.elementIterator(); aiParamsIterator.hasNext();)
 						{
 							Element aiParamElement = aiParamsIterator.next();
 

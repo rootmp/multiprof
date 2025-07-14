@@ -21,15 +21,15 @@ public class EtcStatusUpdatePacket implements IClientOutgoingPacket
 		_lightSouls = player.getConsumedSouls(0);
 		_darkSouls = player.getConsumedSouls(1);
 
-		if (player.getMessageRefusal() || (player.getNoChannel() != 0) || player.isBlockAll())
+		if(player.getMessageRefusal() || (player.getNoChannel() != 0) || player.isBlockAll())
 		{
 			_flags |= NO_CHAT_FLAG;
 		}
-		if (player.isInDangerArea())
+		if(player.isInDangerArea())
 		{
 			_flags |= DANGER_AREA_FLAG;
 		}
-		if (player.isCharmOfCourage())
+		if(player.isCharmOfCourage())
 		{
 			_flags |= CHARM_OF_COURAGE_FLAG;
 		}

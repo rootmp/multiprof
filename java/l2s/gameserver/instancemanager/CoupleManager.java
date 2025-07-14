@@ -28,7 +28,7 @@ public class CoupleManager
 
 	public static CoupleManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			new CoupleManager();
 		return _instance;
 	}
@@ -51,7 +51,7 @@ public class CoupleManager
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM couples ORDER BY id");
 			rs = statement.executeQuery();
-			while (rs.next())
+			while(rs.next())
 			{
 				Couple c = new Couple(rs.getInt("id"));
 				c.setPlayer1Id(rs.getInt("player1Id"));
@@ -63,7 +63,7 @@ public class CoupleManager
 			}
 			_log.info("Loaded: " + getCouples().size() + " couples(s)");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -75,8 +75,8 @@ public class CoupleManager
 
 	public final Couple getCouple(int coupleId)
 	{
-		for (Couple c : getCouples())
-			if (c != null && c.getId() == coupleId)
+		for(Couple c : getCouples())
+			if(c != null && c.getId() == coupleId)
 				return c;
 		return null;
 	}
@@ -90,16 +90,16 @@ public class CoupleManager
 	{
 		int chaId = cha.getObjectId();
 
-		for (Couple cl : getCouples())
-			if (cl != null)
-				if (cl.getPlayer1Id() == chaId || cl.getPlayer2Id() == chaId)
+		for(Couple cl : getCouples())
+			if(cl != null)
+				if(cl.getPlayer1Id() == chaId || cl.getPlayer2Id() == chaId)
 				{
-					if (cl.getMaried())
+					if(cl.getMaried())
 						cha.setMaried(true);
 
 					cha.setCoupleId(cl.getId());
 
-					if (cl.getPlayer1Id() == chaId)
+					if(cl.getPlayer1Id() == chaId)
 						cha.setPartnerId(cl.getPlayer2Id());
 					else
 						cha.setPartnerId(cl.getPlayer1Id());
@@ -113,31 +113,31 @@ public class CoupleManager
 	 */
 	public void notifyPartner(Player cha)
 	{
-		if (cha.getPartnerId() != 0)
+		if(cha.getPartnerId() != 0)
 		{
 			Player partner = GameObjectsStorage.getPlayer(cha.getPartnerId());
-			if (partner != null)
+			if(partner != null)
 				partner.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.CoupleManager.PartnerEntered"));
 		}
 	}
 
 	public void createCouple(Player player1, Player player2)
 	{
-		if (player1 != null && player2 != null)
-			if (player1.getPartnerId() == 0 && player2.getPartnerId() == 0)
+		if(player1 != null && player2 != null)
+			if(player1.getPartnerId() == 0 && player2.getPartnerId() == 0)
 				getCouples().add(new Couple(player1, player2));
 	}
 
 	public final List<Couple> getCouples()
 	{
-		if (_couples == null)
+		if(_couples == null)
 			_couples = new CopyOnWriteArrayList<Couple>();
 		return _couples;
 	}
 
 	public List<Couple> getDeletedCouples()
 	{
-		if (_deletedCouples == null)
+		if(_deletedCouples == null)
 			_deletedCouples = new CopyOnWriteArrayList<Couple>();
 		return _deletedCouples;
 	}
@@ -155,10 +155,10 @@ public class CoupleManager
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 
-			if (_deletedCouples != null && !_deletedCouples.isEmpty())
+			if(_deletedCouples != null && !_deletedCouples.isEmpty())
 			{
 				statement = con.prepareStatement("DELETE FROM couples WHERE id = ?");
-				for (Couple c : _deletedCouples)
+				for(Couple c : _deletedCouples)
 				{
 					statement.setInt(1, c.getId());
 					statement.execute();
@@ -167,15 +167,15 @@ public class CoupleManager
 				_deletedCouples.clear();
 			}
 
-			if (_couples != null && !_couples.isEmpty())
-				for (Couple c : _couples)
-					if (c != null && c.isChanged())
+			if(_couples != null && !_couples.isEmpty())
+				for(Couple c : _couples)
+					if(c != null && c.isChanged())
 					{
 						c.store(con);
 						c.setChanged(false);
 					}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

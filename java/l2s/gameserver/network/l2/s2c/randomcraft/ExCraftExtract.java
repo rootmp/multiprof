@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c.randomcraft;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -27,23 +27,24 @@ public class ExCraftExtract implements IClientOutgoingPacket
 	{
 		int points = 0;
 		int fee = 0;
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			final ItemInstance item = _player.getInventory().getItemByObjectId(_objectId[i]);
-			if (item != null)
+			if(item != null)
 			{
 				points += item.getTemplate().getGrindPoint() * _itemCount[i];
-				points *= (item.getTemplate().getAdditionalName().contains("Sealed") || item.getTemplate().getAdditionalName().contains("Imprint")) ? 1 : 2.35;
+				points *= (item.getTemplate().getAdditionalName().contains("Sealed")
+						|| item.getTemplate().getAdditionalName().contains("Imprint")) ? 1 : 2.35;
 				fee += item.getTemplate().getGrindCommission() * _itemCount[i];
 			}
 		}
-		if (_player.getAdena() < fee)
+		if(_player.getAdena() < fee)
 			return false;
 
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			final ItemInstance item = _player.getInventory().getItemByObjectId(_objectId[i]);
-			if (item != null && item.getTemplate().getGrindPoint() > 0)
+			if(item != null && item.getTemplate().getGrindPoint() > 0)
 			{
 				_player.getInventory().destroyItem(item, _itemCount[i]);
 			}

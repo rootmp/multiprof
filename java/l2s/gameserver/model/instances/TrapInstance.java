@@ -37,43 +37,43 @@ public final class TrapInstance extends NpcInstance
 		{
 			TrapInstance trap = (TrapInstance) _trapRef.get();
 
-			if (trap == null)
+			if(trap == null)
 				return;
 
 			Creature owner = trap.getOwner();
-			if (owner == null)
+			if(owner == null)
 				return;
 
 			SkillEntry skillEntry = trap.getSkillEntry();
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
 				System.out.println("Trap Skill For Trap: " + trap.getNpcId() + "");
 				return;
 			}
-			for (Creature target : trap.getAroundCharacters(50, 50))
+			for(Creature target : trap.getAroundCharacters(50, 50))
 			{
-				if (target != owner)
+				if(target != owner)
 				{
-					if (skillEntry.checkTarget(owner, target, null, false, false) == null)
+					if(skillEntry.checkTarget(owner, target, null, false, false) == null)
 					{
 						Set<Creature> targets = new HashSet<Creature>();
-						if (skillEntry.getTemplate().getTargetType() != SkillTargetType.TARGET_AREA)
+						if(skillEntry.getTemplate().getTargetType() != SkillTargetType.TARGET_AREA)
 							targets.add(target);
 						else
 						{
-							for (Creature t : trap.getAroundCharacters(skillEntry.getTemplate().getAffectRange(), 128))
+							for(Creature t : trap.getAroundCharacters(skillEntry.getTemplate().getAffectRange(), 128))
 							{
 								int fanAffectRange = skillEntry.getTemplate().getFanRange()[2];
-								if (fanAffectRange > 0 && t.isInRange(owner, fanAffectRange))
+								if(fanAffectRange > 0 && t.isInRange(owner, fanAffectRange))
 									continue;
 
-								if (skillEntry.checkTarget(owner, t, null, false, false) == null)
+								if(skillEntry.checkTarget(owner, t, null, false, false) == null)
 									targets.add(target);
 							}
 						}
 
 						skillEntry.onEndCast(trap, targets);
-						if (target.isPlayer())
+						if(target.isPlayer())
 							target.sendMessage(new CustomMessage("common.Trap"));
 						trap.deleteMe();
 						break;
@@ -134,7 +134,7 @@ public final class TrapInstance extends NpcInstance
 	@Override
 	public void broadcastCharInfo()
 	{
-		if (!isDetected())
+		if(!isDetected())
 			return;
 		super.broadcastCharInfo();
 	}
@@ -143,9 +143,9 @@ public final class TrapInstance extends NpcInstance
 	protected void onDelete()
 	{
 		Creature owner = getOwner();
-		if (owner != null && owner.isPlayer())
+		if(owner != null && owner.isPlayer())
 			((Player) owner).removeTrap(this);
-		if (_targetTask != null)
+		if(_targetTask != null)
 			_targetTask.cancel(false);
 		_targetTask = null;
 		super.onDelete();
@@ -195,23 +195,20 @@ public final class TrapInstance extends NpcInstance
 
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... arg)
-	{
-	}
+	{}
 
 	@Override
 	public void showChatWindow(Player player, String filename, boolean firstTalk, Object... replace)
-	{
-	}
+	{}
 
 	@Override
 	public void onBypassFeedback(Player player, String command)
-	{
-	}
+	{}
 
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 			player.setTarget(this);
 
 		player.sendActionFailed();
@@ -221,7 +218,7 @@ public final class TrapInstance extends NpcInstance
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
 		// если не обезврежена и не овнер, ниче не показываем
-		if (!isDetected() && getOwner() != forPlayer)
+		if(!isDetected() && getOwner() != forPlayer)
 			return Collections.emptyList();
 
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
@@ -233,41 +230,41 @@ public final class TrapInstance extends NpcInstance
 	public void selfDestroy()
 	{
 		Creature owner = getOwner();
-		if (owner == null)
+		if(owner == null)
 			return;
 
-		if (_skillEntry == null)
+		if(_skillEntry == null)
 		{
 			System.out.println("Trap Skill For Trap: " + getNpcId() + "");
 			return;
 		}
 
-		for (Creature target : getAroundCharacters(_skillEntry.getTemplate().getAffectRange(), 250))
+		for(Creature target : getAroundCharacters(_skillEntry.getTemplate().getAffectRange(), 250))
 		{
-			if (target != owner)
+			if(target != owner)
 			{
-				if (_skillEntry != null)
+				if(_skillEntry != null)
 				{
 					int fanAffectRange = _skillEntry.getTemplate().getFanRange()[2];
-					if (fanAffectRange > 0 && target.isInRange(owner, fanAffectRange))
+					if(fanAffectRange > 0 && target.isInRange(owner, fanAffectRange))
 						continue;
 
-					if (_skillEntry.checkTarget(owner, target, null, false, false) == null)
+					if(_skillEntry.checkTarget(owner, target, null, false, false) == null)
 					{
 						Set<Creature> targets = new HashSet<Creature>();
-						if (_skillEntry.getTemplate().getTargetType() != SkillTargetType.TARGET_AREA)
+						if(_skillEntry.getTemplate().getTargetType() != SkillTargetType.TARGET_AREA)
 						{
 							targets.add(target);
 						}
 						else
 						{
-							for (Creature t : getAroundCharacters(this._skillEntry.getTemplate().getAffectRange(), 128))
+							for(Creature t : getAroundCharacters(this._skillEntry.getTemplate().getAffectRange(), 128))
 							{
 								fanAffectRange = _skillEntry.getTemplate().getFanRange()[2];
-								if (fanAffectRange > 0 && t.isInRange(owner, fanAffectRange))
+								if(fanAffectRange > 0 && t.isInRange(owner, fanAffectRange))
 									continue;
 
-								if (_skillEntry.checkTarget(owner, t, null, false, false) == null)
+								if(_skillEntry.checkTarget(owner, t, null, false, false) == null)
 								{
 									targets.add(target);
 								}
@@ -275,7 +272,7 @@ public final class TrapInstance extends NpcInstance
 						}
 						_skillEntry.onEndCast(this, targets);
 
-						if (target.isPlayer())
+						if(target.isPlayer())
 							target.sendMessage(new CustomMessage("common.Trap"));
 						deleteMe();
 						break;

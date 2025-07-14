@@ -20,18 +20,18 @@ public final class ConditionPlayerHasBuff extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
+		if(character == null)
 			return false;
 
-		for (Abnormal effect : character.getAbnormalList())
+		for(Abnormal effect : character.getAbnormalList())
 		{
-			if (effect.getAbnormalType() != _abnormalType)
+			if(effect.getAbnormalType() != _abnormalType)
 				continue;
 
-			if (_level == -1)
+			if(_level == -1)
 				return true;
 
-			if (effect.getAbnormalLvl() >= _level)
+			if(effect.getAbnormalLvl() >= _level)
 				return true;
 		}
 		return false;

@@ -75,24 +75,22 @@ public class PetEvolveData
 
 	public SkillData getRandomStat()
 	{
-		if (_randomStats.isEmpty())
-		{
-			return null;
-		}
+		if(_randomStats.isEmpty())
+		{ return null; }
 		EnumeratedDistribution<SkillData> distribution = new EnumeratedDistribution<SkillData>(_randomStats);
 		return distribution.sample();
 	}
 
 	public boolean isRandomStat(SkillInfo skillInfo)
 	{
-		for (Pair<SkillData, Double> pair : _randomStats)
+		for(Pair<SkillData, Double> pair : _randomStats)
 		{
 			SkillData skillData = pair.getKey();
-			if (skillData.getId() != skillInfo.getId())
+			if(skillData.getId() != skillInfo.getId())
 			{
 				continue;
 			}
-			if (skillData.getLevel() != skillInfo.getLevel())
+			if(skillData.getLevel() != skillInfo.getLevel())
 			{
 				continue;
 			}
@@ -108,10 +106,8 @@ public class PetEvolveData
 
 	public int getRandomName()
 	{
-		if (_randomNames.isEmpty())
-		{
-			return -1;
-		}
+		if(_randomNames.isEmpty())
+		{ return -1; }
 		EnumeratedDistribution<Integer> distribution = new EnumeratedDistribution<Integer>(_randomNames);
 		return distribution.sample().intValue();
 	}

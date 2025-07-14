@@ -33,7 +33,7 @@ public class i_get_exp extends i_abstract_effect
 		final Player player = effected.getPlayer();
 
 		long power = _power;
-		if (_percentPowerMaxLvl != 0 && player.getLevel() < _percentPowerMaxLvl)
+		if(_percentPowerMaxLvl != 0 && player.getLevel() < _percentPowerMaxLvl)
 			power = (long) (player.getExp() / 100. * _percentPower);
 
 		player.addExpAndSp(power, 0);

@@ -22,7 +22,7 @@ public class p_passive extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 		{
 			NpcInstance npc = (NpcInstance) effected;
 			npc.setUnAggred(true);
@@ -32,7 +32,7 @@ public class p_passive extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 			((NpcInstance) effected).setUnAggred(false);
 	}
 }

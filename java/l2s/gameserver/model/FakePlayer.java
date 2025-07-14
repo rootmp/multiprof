@@ -49,7 +49,7 @@ public class FakePlayer extends Playable
 		_ai = new CloneAI(this);
 		_listener = new OwnerAttakListener();
 		owner.addListener(_listener);
-		if (!disableTimer)
+		if(!disableTimer)
 		{
 			ThreadPoolManager.getInstance().schedule(new DeleteMeTimer(this), 30000L);
 		}
@@ -103,7 +103,7 @@ public class FakePlayer extends Playable
 	public void setFollowMode(boolean state)
 	{
 		Player owner = getPlayer();
-		if (getAI().getIntention() == CtrlIntention.AI_INTENTION_IDLE)
+		if(getAI().getIntention() == CtrlIntention.AI_INTENTION_IDLE)
 		{
 			getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, owner, Config.FOLLOW_RANGE);
 		}
@@ -112,35 +112,33 @@ public class FakePlayer extends Playable
 	@Override
 	public void onAction(final Player player, boolean shift)
 	{
-		if (isFrozen())
+		if(isFrozen())
 		{
 			player.sendPacket(ActionFailPacket.STATIC);
 			return;
 		}
 
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, FakePlayer.class, this, true))
-		{
-			return;
-		}
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, FakePlayer.class, this, true))
+		{ return; }
 
 		Player owner = getPlayer();
 
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 		{
 			player.setTarget(this);
 		}
-		else if (player == owner)
+		else if(player == owner)
 		{
 			player.sendPacket(new ExCharInfo(this, player));
 			player.sendPacket(ActionFailPacket.STATIC);
 		}
-		else if (isAutoAttackable(player))
+		else if(isAutoAttackable(player))
 		{
 			player.getAI().Attack(this, false, shift);
 		}
-		else if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+		else if(player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
 		{
-			if (!shift)
+			if(!shift)
 			{
 				player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
 			}
@@ -170,15 +168,11 @@ public class FakePlayer extends Playable
 	@Override
 	public void broadcastCharInfo()
 	{
-		if (!isVisible())
-		{
-			return;
-		}
+		if(!isVisible())
+		{ return; }
 
-		if (_broadcastCharInfoTask != null)
-		{
-			return;
-		}
+		if(_broadcastCharInfoTask != null)
+		{ return; }
 
 		_broadcastCharInfoTask = ThreadPoolManager.getInstance().schedule(new BroadcastCharInfoTask(), Config.BROADCAST_CHAR_INFO_INTERVAL);
 	}
@@ -186,7 +180,7 @@ public class FakePlayer extends Playable
 	@Override
 	public void broadcastCharInfoImpl(IUpdateTypeComponent... components)
 	{
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 		{
 			player.sendPacket(new ExCharInfo(this, player));
 		}
@@ -195,44 +189,46 @@ public class FakePlayer extends Playable
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		if (isInvisible(forPlayer) && (forPlayer.getObjectId() != getObjectId()))
-		{
-			return Collections.emptyList();
-		}
+		if(isInvisible(forPlayer) && (forPlayer.getObjectId() != getObjectId()))
+		{ return Collections.emptyList(); }
 
 		List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>();
 		list.add(new ExCharInfo(this, forPlayer));
 
 		CreatureSkillCast skillCast = getSkillCast(SkillCastingType.NORMAL);
-		if (skillCast.isCastingNow())
+		if(skillCast.isCastingNow())
 		{
 			Creature castingTarget = skillCast.getTarget();
 			SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 			long animationEndTime = skillCast.getAnimationEndTime();
-			if ((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature() && (animationEndTime > 0))
+			if((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature()
+					&& (animationEndTime > 0))
 			{
-				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0L, SkillCastingType.NORMAL));
+				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+						- System.currentTimeMillis()), 0L, SkillCastingType.NORMAL));
 			}
 		}
 
 		skillCast = getSkillCast(SkillCastingType.NORMAL_SECOND);
-		if (skillCast.isCastingNow())
+		if(skillCast.isCastingNow())
 		{
 			Creature castingTarget = skillCast.getTarget();
 			SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 			long animationEndTime = skillCast.getAnimationEndTime();
-			if ((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature() && (animationEndTime > 0))
+			if((castingSkillEntry != null) && !castingSkillEntry.getTemplate().isNotBroadcastable() && (castingTarget != null) && castingTarget.isCreature()
+					&& (animationEndTime > 0))
 			{
-				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0L, SkillCastingType.NORMAL_SECOND));
+				list.add(new MagicSkillUse(this, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+						- System.currentTimeMillis()), 0L, SkillCastingType.NORMAL_SECOND));
 			}
 		}
 
-		if (isInCombat())
+		if(isInCombat())
 		{
 			list.add(new AutoAttackStartPacket(getObjectId()));
 		}
 
-		if (getMovement().isMoving() || getMovement().isFollow())
+		if(getMovement().isMoving() || getMovement().isFollow())
 		{
 			list.add(movePacket());
 		}
@@ -246,7 +242,7 @@ public class FakePlayer extends Playable
 
 	public void notifyOwerStartMagicUse(Creature targets, Skill skill)
 	{
-		if (SkillAcquireHolder.getInstance().isSkillPossible(getPlayer(), skill))
+		if(SkillAcquireHolder.getInstance().isSkillPossible(getPlayer(), skill))
 		{
 			doCast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill), targets, true);
 		}
@@ -257,14 +253,10 @@ public class FakePlayer extends Playable
 		@Override
 		public void onMagicUse(Creature actor, Skill skill, Creature target, boolean alt)
 		{
-			if ((target != null) && (target == getPlayer()))
-			{
-				return;
-			}
-			if ((target != null) && (target instanceof FakePlayer) && (target.getPlayer() == getPlayer()))
-			{
-				return;
-			}
+			if((target != null) && (target == getPlayer()))
+			{ return; }
+			if((target != null) && (target instanceof FakePlayer) && (target.getPlayer() == getPlayer()))
+			{ return; }
 
 			notifyOwerStartMagicUse(target, skill);
 		}
@@ -272,14 +264,10 @@ public class FakePlayer extends Playable
 		@Override
 		public void onAttack(Creature actor, Creature target)
 		{
-			if ((target != null) && (target == getPlayer()))
-			{
-				return;
-			}
-			if ((target != null) && (target instanceof FakePlayer) && (target.getPlayer() == getPlayer()))
-			{
-				return;
-			}
+			if((target != null) && (target == getPlayer()))
+			{ return; }
+			if((target != null) && (target instanceof FakePlayer) && (target.getPlayer() == getPlayer()))
+			{ return; }
 
 			notifyOwerStartAttak(target);
 		}
@@ -305,7 +293,7 @@ public class FakePlayer extends Playable
 	public <E extends Event> E getEvent(Class<E> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			return player.getEvent(eventClass);
 		}
@@ -319,7 +307,7 @@ public class FakePlayer extends Playable
 	public <E extends Event> List<E> getEvents(Class<E> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			return player.getEvents(eventClass);
 		}
@@ -333,7 +321,7 @@ public class FakePlayer extends Playable
 	public boolean containsEvent(Event event)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			return player.containsEvent(event);
 		}
@@ -347,7 +335,7 @@ public class FakePlayer extends Playable
 	public boolean containsEvent(Class<? extends Event> eventClass)
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			return player.containsEvent(eventClass);
 		}
@@ -361,7 +349,7 @@ public class FakePlayer extends Playable
 	public Set<Event> getEvents()
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			return player.getEvents();
 		}
@@ -391,8 +379,7 @@ public class FakePlayer extends Playable
 
 	@Override
 	public void doPickupItem(GameObject object)
-	{
-	}
+	{}
 
 	@Override
 	public double getCurrentHp()

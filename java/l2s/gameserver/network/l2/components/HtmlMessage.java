@@ -29,21 +29,21 @@ import l2s.gameserver.utils.HtmlUtils;
 public class HtmlMessage implements IBroadcastPacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(HtmlMessage.class);
-	
+
 	public static final String OBJECT_ID_VAR = "OBJECT_ID";
 
 	private String _filename;
 	private String _html;
-	
+
 	private Map<String, String> _variables;
 	private Map<String, String> _replaces;
-	
+
 	private NpcInstance _npc;
-	
+
 	private int _npcObjId;
 	private int _itemId;
 	private int _questId;
-	
+
 	private boolean _playVoice;
 
 	public HtmlMessage(NpcInstance npc, String filename)
@@ -96,13 +96,13 @@ public class HtmlMessage implements IBroadcastPacket
 
 	public HtmlMessage addVar(String name, Object value)
 	{
-		if (name == null)
+		if(name == null)
 			throw new IllegalArgumentException("Name can't be null!");
-		if (value == null)
+		if(value == null)
 			throw new IllegalArgumentException("Value can't be null!");
-		if (name.startsWith("${"))
+		if(name.startsWith("${"))
 			throw new IllegalArgumentException("Incorrect name: " + name);
-		if (_variables == null)
+		if(_variables == null)
 			_variables = new HashMap<>(2);
 		_variables.put(name, String.valueOf(value));
 		return this;
@@ -110,13 +110,13 @@ public class HtmlMessage implements IBroadcastPacket
 
 	public HtmlMessage replace(String name, String value)
 	{
-		if (name == null)
+		if(name == null)
 			throw new IllegalArgumentException("Name can't be null!");
-		if (value == null)
+		if(value == null)
 			throw new IllegalArgumentException("Value can't be null!");
-		if (!(name.startsWith("%") && name.endsWith("%") || name.startsWith("<?") && name.endsWith("?>")))
+		if(!(name.startsWith("%") && name.endsWith("%") || name.startsWith("<?") && name.endsWith("?>")))
 			throw new IllegalArgumentException("Incorrect name: " + name);
-		if (_replaces == null)
+		if(_replaces == null)
 			_replaces = new LinkedHashMap<String, String>(2);
 		_replaces.put(name, value);
 		return this;
@@ -129,7 +129,7 @@ public class HtmlMessage implements IBroadcastPacket
 
 	public HtmlMessage replace(String name, NpcString npcString, Object... arg)
 	{
-		if (npcString == null)
+		if(npcString == null)
 			throw new IllegalArgumentException("NpcString can't be null!");
 		return replace(name, HtmlUtils.htmlNpcString(npcString, arg));
 	}
@@ -139,11 +139,11 @@ public class HtmlMessage implements IBroadcastPacket
 	{
 		CharSequence content = null;
 
-		if (!StringUtils.isEmpty(_html))
+		if(!StringUtils.isEmpty(_html))
 			content = make(player, _html);
-		else if (!StringUtils.isEmpty(_filename))
+		else if(!StringUtils.isEmpty(_filename))
 		{
-			if (player.isGM())
+			if(player.isGM())
 				ChatUtils.sys(player, "HTML", _filename);
 
 			String htmCache = HtmCache.getInstance().getHtml(_filename, player);
@@ -152,20 +152,20 @@ public class HtmlMessage implements IBroadcastPacket
 		else
 			_log.warn("HtmlMessage: empty dialog" + (_npc == null ? "!" : " npc id : " + _npc.getNpcId() + "!"), new Exception());
 
-		if (_itemId == 0)
+		if(_itemId == 0)
 		{
-			if (_npc != null)
+			if(_npc != null)
 				player.setLastNpc(_npc);
 			content = player.getBypassStorage().parseHtml(content.toString(), BypassType.DEFAULT, true);
 		}
 		else
 			content = player.getBypassStorage().parseHtml(content.toString(), BypassType.ITEM, true);
 
-		if (StringUtils.isEmpty(content))
+		if(StringUtils.isEmpty(content))
 			return ActionFailPacket.STATIC;
-		else if ((_npc != null) && (_npc.getNpcId() == 32478))
+		else if((_npc != null) && (_npc.getNpcId() == 32478))
 		{
-			if (_filename.contains("premium_manager.htm"))
+			if(_filename.contains("premium_manager.htm"))
 			{
 				return new ExPremiumManagerShowHTML(true, content);
 			}
@@ -174,7 +174,7 @@ public class HtmlMessage implements IBroadcastPacket
 				return new ExPremiumManagerShowHTML(false, content);
 			}
 		}
-		else if (_questId == 0)
+		else if(_questId == 0)
 			return new NpcHtmlMessagePacket(_npcObjId, _itemId, _playVoice, content);
 		else
 			return new ExNpcQuestHtmlMessage(_npcObjId, content, _questId);
@@ -182,23 +182,23 @@ public class HtmlMessage implements IBroadcastPacket
 
 	private CharSequence make(Player player, String content)
 	{
-		if (content == null)
+		if(content == null)
 			return StringUtils.EMPTY;
 
 		TextStringBuilder sb = new TextStringBuilder(content);
 
-		if (_replaces != null)
+		if(_replaces != null)
 		{
-			for (Map.Entry<String, String> e : _replaces.entrySet())
+			for(Map.Entry<String, String> e : _replaces.entrySet())
 				sb.replaceAll(e.getKey(), e.getValue());
 		}
 
 		sb.replaceAll("%playername%", player.getName());
 
-		if (_npcObjId != 0)
+		if(_npcObjId != 0)
 		{
 			sb.replaceAll("%objectId%", String.valueOf(_npcObjId));
-			if (_npc != null)
+			if(_npc != null)
 				sb.replaceAll("%npcId%", String.valueOf(_npc.getNpcId()));
 		}
 
@@ -206,7 +206,7 @@ public class HtmlMessage implements IBroadcastPacket
 
 		sb.clear();
 
-		if (!content.startsWith("<html>"))
+		if(!content.startsWith("<html>"))
 		{
 			sb.append("<html><body>");
 			sb.append(content);

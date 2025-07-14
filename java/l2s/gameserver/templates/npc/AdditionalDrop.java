@@ -44,38 +44,38 @@ public class AdditionalDrop
 
 	public boolean checkMonster(MonsterInstance monster)
 	{
-		if (minLevel > monster.getLevel())
+		if(minLevel > monster.getLevel())
 			return false;
-		if (maxLevel < monster.getLevel())
+		if(maxLevel < monster.getLevel())
 			return false;
-		if (!npcs.isEmpty() && !npcs.contains(monster.getNpcId()))
+		if(!npcs.isEmpty() && !npcs.contains(monster.getNpcId()))
 			return false;
 
-		if (monsterType == 0)
+		if(monsterType == 0)
 			return true;
 
-		if (monsterType == 1)
+		if(monsterType == 1)
 			return !monster.isRaid();
 
-		if (monsterType == 2)
+		if(monsterType == 2)
 			return monster.isRaid();
 
-		if (monsterType == 3)
+		if(monsterType == 3)
 			return monster.getReflection().isMain();
 
-		if (monsterType == 4)
+		if(monsterType == 4)
 			return !monster.isRaid() && monster.getReflection().isMain();
 
-		if (monsterType == 5)
+		if(monsterType == 5)
 			return monster.isRaid() && monster.getReflection().isMain();
 
-		if (monsterType == 6)
+		if(monsterType == 6)
 			return !monster.getReflection().isMain();
 
-		if (monsterType == 7)
+		if(monsterType == 7)
 			return !monster.isRaid() && !monster.getReflection().isMain();
 
-		if (monsterType == 8)
+		if(monsterType == 8)
 			return monster.isRaid() && !monster.getReflection().isMain();
 
 		return false;

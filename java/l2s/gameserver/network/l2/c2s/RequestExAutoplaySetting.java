@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.AutoFarm;
@@ -21,9 +22,9 @@ public class RequestExAutoplaySetting implements IClientIncomingPacket
 		try
 		{
 			_targetType = AutoFarm.TargetType.values()[packet.readH()]; // Target type: 0 - Any target, 1 - Monster, 2 - PC, 3
-																	// - NPC
+			// - NPC
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			return false;
 		}
@@ -38,7 +39,7 @@ public class RequestExAutoplaySetting implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		AutoFarm autoFarm = player.getAutoFarm();

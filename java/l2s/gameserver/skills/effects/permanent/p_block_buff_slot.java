@@ -1,13 +1,12 @@
 package l2s.gameserver.skills.effects.permanent;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.gameserver.handler.effects.EffectHandler;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.skills.enums.AbnormalType;
 import l2s.gameserver.templates.skill.EffectTemplate;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author Bonux
@@ -23,14 +22,14 @@ public class p_block_buff_slot extends EffectHandler
 		_blockedAbnormalTypes = new TIntHashSet();
 
 		String[] types = getParams().getString("abnormal_types", "").split(";");
-		for (String type : types)
+		for(String type : types)
 			_blockedAbnormalTypes.add(AbnormalType.valueOf(type.toUpperCase()).ordinal());
 	}
 
 	@Override
 	public boolean checkBlockedAbnormalType(Abnormal abnormal, Creature effector, Creature effected, AbnormalType abnormalType)
 	{
-		if (_blockedAbnormalTypes.isEmpty())
+		if(_blockedAbnormalTypes.isEmpty())
 			return false;
 
 		return _blockedAbnormalTypes.contains(abnormalType.ordinal());

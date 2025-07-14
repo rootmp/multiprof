@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -20,12 +21,12 @@ public class RequestHandOverPartyMaster implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Party party = activeChar.getParty();
 
-		if (party == null || !activeChar.getParty().isLeader(activeChar))
+		if(party == null || !activeChar.getParty().isLeader(activeChar))
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -33,13 +34,13 @@ public class RequestHandOverPartyMaster implements IClientIncomingPacket
 
 		Player member = party.getPlayerByName(_name);
 
-		if (member == activeChar)
+		if(member == activeChar)
 		{
 			activeChar.sendPacket(SystemMsg.SLOW_DOWN_YOU_ARE_ALREADY_THE_PARTY_LEADER);
 			return;
 		}
 
-		if (member == null)
+		if(member == null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_MAY_ONLY_TRANSFER_PARTY_LEADERSHIP_TO_ANOTHER_MEMBER_OF_THE_PARTY);
 			return;

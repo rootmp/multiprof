@@ -16,14 +16,14 @@ public final class i_align_direction extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 		{
 			NpcInstance npc = (NpcInstance) effected;
-			if (npc.isPeaceNpc() || npc.getNpcId() == 35062 || npc.isRaid())
+			if(npc.isPeaceNpc() || npc.getNpcId() == 35062 || npc.isRaid())
 				return false;
 
 			NpcInstance leader = npc.getLeader();
-			if (leader != null && leader.isRaid())
+			if(leader != null && leader.isRaid())
 				return false;
 		}
 		return true;

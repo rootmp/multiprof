@@ -38,7 +38,7 @@ public class AuthBanManager extends BanManager
 
 	private void startCheckBansTask()
 	{
-		if (checkBansTask != null)
+		if(checkBansTask != null)
 			return;
 
 		long interval = TimeUnit.MINUTES.toMillis(Config.CHECK_BANS_INTERVAL);
@@ -50,16 +50,16 @@ public class AuthBanManager extends BanManager
 		lock.lock();
 		try
 		{
-			for (BanBindType bindType : BanBindType.VALUES)
+			for(BanBindType bindType : BanBindType.VALUES)
 			{
-				if (!bindType.isAuth())
+				if(!bindType.isAuth())
 					continue;
 
 				Map<String, BanInfo> bans = new HashMap<>();
 				AuthBansDAO.getInstance().select(bans, bindType);
 
 				CheckBans checkBans = new CheckBans(bindType, bans);
-				for (GameServer gameServer : GameServerManager.getInstance().getGameServers())
+				for(GameServer gameServer : GameServerManager.getInstance().getGameServers())
 					gameServer.sendPacket(checkBans);
 
 				getCachedBans().put(bindType, bans);
@@ -73,20 +73,20 @@ public class AuthBanManager extends BanManager
 
 	public boolean giveBan(BanBindType bindType, String bindValue, int endTime, String reason)
 	{
-		if (!bindType.isAuth())
+		if(!bindType.isAuth())
 			return false;
 
-		if (StringUtils.isEmpty(bindValue))
+		if(StringUtils.isEmpty(bindValue))
 			return false;
 
-		if (endTime != -1 && endTime < (System.currentTimeMillis() / 1000))
+		if(endTime != -1 && endTime < (System.currentTimeMillis() / 1000))
 			return false;
 
 		lock.lock();
 		try
 		{
 			BanInfo banInfo = new BanInfo(endTime, reason);
-			if (!AuthBansDAO.getInstance().insert(bindType, bindValue, banInfo))
+			if(!AuthBansDAO.getInstance().insert(bindType, bindValue, banInfo))
 				return false;
 
 			getCachedBans().computeIfAbsent(bindType, (b) -> new HashMap<>()).put(bindValue, banInfo);
@@ -100,20 +100,20 @@ public class AuthBanManager extends BanManager
 
 	public boolean removeBan(BanBindType bindType, String bindValue)
 	{
-		if (!bindType.isAuth())
+		if(!bindType.isAuth())
 			return false;
 
-		if (StringUtils.isEmpty(bindValue))
+		if(StringUtils.isEmpty(bindValue))
 			return false;
 
 		lock.lock();
 		try
 		{
 			Map<String, BanInfo> bans = getCachedBans().get(bindType);
-			if (bans == null)
+			if(bans == null)
 				return false;
 
-			if (!AuthBansDAO.getInstance().delete(bindType, bindValue))
+			if(!AuthBansDAO.getInstance().delete(bindType, bindValue))
 				return false;
 
 			bans.remove(bindValue);

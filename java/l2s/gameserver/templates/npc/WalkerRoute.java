@@ -45,7 +45,7 @@ public class WalkerRoute
 
 	public boolean isValid()
 	{
-		if (_type == WalkerRouteType.DELETE || _type == WalkerRouteType.FINISH)
+		if(_type == WalkerRouteType.DELETE || _type == WalkerRouteType.FINISH)
 			return size() > 0;
 
 		return size() > 1;

@@ -30,7 +30,7 @@ public class RequestExRequestTeleport implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		if(activeChar.isInJail())
@@ -40,32 +40,32 @@ public class RequestExRequestTeleport implements IClientIncomingPacket
 			return;
 		}
 		TeleportTemplate teleportInfo = TeleportListHolder.getInstance().getTeleportInfo(teleportId);
-		if (teleportInfo == null)
+		if(teleportInfo == null)
 		{
 			activeChar.sendActionFailed();
-			if (activeChar.isGM())
+			if(activeChar.isGM())
 				ChatUtils.sys(activeChar, "Not found teleport info for ID: " + teleportId);
 			return;
 		}
 
-		if (!BookMarkList.checkFirstConditions(activeChar) || !BookMarkList.checkTeleportConditions(activeChar)) // TODO:Check conditions.
+		if(!BookMarkList.checkFirstConditions(activeChar) || !BookMarkList.checkTeleportConditions(activeChar)) // TODO:Check conditions.
 			return;
 
 		activeChar.bookmarkLocation = teleportInfo;
 
-		if (activeChar.bookmarkLocation == null)
+		if(activeChar.bookmarkLocation == null)
 		{
 			activeChar.sendActionFailed();
-			if (activeChar.isGM())
+			if(activeChar.isGM())
 				ChatUtils.sys(activeChar, "Not found teleport coordinates for ID: " + teleportId);
 			return;
 		}
 
 		if(activeChar.isDebug())
-			activeChar.sendMessage("Teleport id: " +teleportInfo.getId());
-		
-		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, activeChar.getSkillLevel(45429, -1) == -1? 60018:60020, 1);
-		if (!skillEntry.checkCondition(activeChar, activeChar, false, true, true))
+			activeChar.sendMessage("Teleport id: " + teleportInfo.getId());
+
+		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, activeChar.getSkillLevel(45429, -1) == -1 ? 60018 : 60020, 1);
+		if(!skillEntry.checkCondition(activeChar, activeChar, false, true, true))
 		{
 			activeChar.bookmarkLocation = null;
 			return;

@@ -39,14 +39,14 @@ public class AddItemAction extends AbstractAction
 		try
 		{
 			ItemInstance item = player.getInventory().getItemByItemId(_itemId);
-			if (item != null)
+			if(item != null)
 			{
 				IItemHandler handler = item.getTemplate().getHandler();
-				if (handler != null && handler.isAutoUse())
+				if(handler != null && handler.isAutoUse())
 				{
-					if ((handler instanceof BlessedSpiritShotItemHandler) || (handler instanceof BlessedSpiritShotItemHandler))
+					if((handler instanceof BlessedSpiritShotItemHandler) || (handler instanceof BlessedSpiritShotItemHandler))
 						player.addAutoShot(item.getItemId(), true, SoulShotType.SPIRITSHOT);
-					else if (handler instanceof SoulShotItemHandler)
+					else if(handler instanceof SoulShotItemHandler)
 						player.addAutoShot(item.getItemId(), true, SoulShotType.SOULSHOT);
 					player.useItem(item, false, false);
 				}
@@ -63,7 +63,8 @@ public class AddItemAction extends AbstractAction
 	public static AddItemAction parse(Element element)
 	{
 		int itemId = Integer.parseInt(element.attributeValue("id"));
-		long minCount = element.attributeValue("count") != null ? Long.parseLong(element.attributeValue("count")) : Long.parseLong(element.attributeValue("min_count"));
+		long minCount = element.attributeValue("count")
+				!= null ? Long.parseLong(element.attributeValue("count")) : Long.parseLong(element.attributeValue("min_count"));
 		long maxCount = element.attributeValue("max_count") == null ? minCount : Long.parseLong(element.attributeValue("max_count"));
 		double chance = element.attributeValue("chance") == null ? 100. : Double.parseDouble(element.attributeValue("chance"));
 		return new AddItemAction(itemId, minCount, maxCount, chance);

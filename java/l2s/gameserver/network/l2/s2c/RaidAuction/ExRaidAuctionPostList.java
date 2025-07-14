@@ -9,7 +9,7 @@ import l2s.gameserver.templates.item.PkRaidAuctionPost;
 public class ExRaidAuctionPostList implements IClientOutgoingPacket
 {
 	private List<PkRaidAuctionPost> _posts;
-	
+
 	public ExRaidAuctionPostList(List<PkRaidAuctionPost> posts)
 	{
 		_posts = posts;

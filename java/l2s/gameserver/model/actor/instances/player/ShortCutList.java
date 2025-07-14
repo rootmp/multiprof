@@ -36,10 +36,10 @@ public class ShortCutList
 	public void validate()
 	{
 		// Проверка ярлыков
-		for (ShortCut sc : _shortCuts.values())
+		for(ShortCut sc : _shortCuts.values())
 			// Удаляем ярлыки на предметы, которых нету в инвентаре
-			if (sc.getType() == ShortCut.ShortCutType.ITEM)
-				if (player.getInventory().getItemByObjectId(sc.getId()) == null)
+			if(sc.getType() == ShortCut.ShortCutType.ITEM)
+				if(player.getInventory().getItemByObjectId(sc.getId()) == null)
 					deleteShortCut(sc.getSlot(), sc.getPage());
 	}
 
@@ -47,8 +47,8 @@ public class ShortCutList
 	{
 		ShortCut sc = _shortCuts.get(slot + page * 12);
 		// verify shortcut
-		if (sc != null && sc.getType() == ShortCut.ShortCutType.ITEM)
-			if (player.getInventory().getItemByObjectId(sc.getId()) == null)
+		if(sc != null && sc.getType() == ShortCut.ShortCutType.ITEM)
+			if(player.getInventory().getItemByObjectId(sc.getId()) == null)
 			{
 				player.sendPacket(SystemMsg.THERE_ARE_NO_MORE_ITEMS_IN_THE_SHORTCUT);
 				deleteShortCut(sc.getSlot(), sc.getPage());
@@ -65,7 +65,7 @@ public class ShortCutList
 
 	private synchronized void registerShortCutInDb(ShortCut shortcut, ShortCut oldShortCut)
 	{
-		if (oldShortCut != null)
+		if(oldShortCut != null)
 			deleteShortCutFromDb(oldShortCut);
 
 		Connection con = null;
@@ -85,7 +85,7 @@ public class ShortCutList
 			statement.setInt(9, player.getActiveClassId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not store shortcuts:", e);
 		}
@@ -112,7 +112,7 @@ public class ShortCutList
 			statement.setInt(4, player.getActiveClassId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not delete shortcuts:", e);
 		}
@@ -131,12 +131,12 @@ public class ShortCutList
 	public void deleteShortCut(int slot, int page)
 	{
 		ShortCut old = _shortCuts.remove(slot + page * 12);
-		if (old == null)
+		if(old == null)
 			return;
 		deleteShortCutFromDb(old);
 		// При удалении с панели скила, на оффе шлется полный инит ярлыков
 		// Обработка удаления предметных ярлыков - клиент сайд.
-		if (old.getType() == ShortCut.ShortCutType.SKILL)
+		if(old.getType() == ShortCut.ShortCutType.SKILL)
 		{
 			player.sendPacket(new ShortCutInitPacket(player));
 			player.sendActiveAutoShots();
@@ -150,8 +150,8 @@ public class ShortCutList
 	 */
 	public void deleteShortCutByObjectId(int objectId)
 	{
-		for (ShortCut shortcut : _shortCuts.values())
-			if (shortcut != null && shortcut.getType() == ShortCut.ShortCutType.ITEM && shortcut.getId() == objectId)
+		for(ShortCut shortcut : _shortCuts.values())
+			if(shortcut != null && shortcut.getType() == ShortCut.ShortCutType.ITEM && shortcut.getId() == objectId)
 				deleteShortCut(shortcut.getSlot(), shortcut.getPage());
 	}
 
@@ -162,8 +162,8 @@ public class ShortCutList
 	 */
 	public void deleteShortCutBySkillId(int skillId)
 	{
-		for (ShortCut shortcut : _shortCuts.values())
-			if (shortcut != null && shortcut.getType() == ShortCut.ShortCutType.SKILL && shortcut.getId() == skillId)
+		for(ShortCut shortcut : _shortCuts.values())
+			if(shortcut != null && shortcut.getType() == ShortCut.ShortCutType.SKILL && shortcut.getId() == skillId)
 				deleteShortCut(shortcut.getSlot(), shortcut.getPage());
 	}
 
@@ -180,14 +180,14 @@ public class ShortCutList
 			statement.setInt(1, player.getObjectId());
 			statement.setInt(2, player.getActiveClassId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				ShortCut.ShortCutType type;
 				try
 				{
 					type = ShortCut.ShortCutType.VALUES[rset.getInt("type")];
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					continue;
 				}
@@ -202,7 +202,7 @@ public class ShortCutList
 				_shortCuts.put(slot + page * 12, new ShortCut(slot, page, autouse, type, id, level, character_type));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not store shortcuts:", e);
 		}

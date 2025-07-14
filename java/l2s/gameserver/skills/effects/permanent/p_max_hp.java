@@ -22,14 +22,14 @@ public final class p_max_hp extends p_abstract_stat_effect
 	@Override
 	public void onApplied(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!_restore || effected.isHealBlocked())
+		if(!_restore || effected.isHealBlocked())
 			return;
 
 		double power = getValue();
-		if (getModifierType() == StatModifierType.PER)
+		if(getModifierType() == StatModifierType.PER)
 			power = power / 100. * effected.getMaxHp();
 
-		if (power > 0)
+		if(power > 0)
 		{
 			// effected.sendPacket(new
 			// SystemMessagePacket(SystemMsg.S1_HP_HAS_BEEN_RESTORED).addInteger(power));

@@ -28,7 +28,7 @@ public enum ElementalElement
 
 	public static ElementalElement getDominant(ElementalElement element)
 	{
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				return WATER;
@@ -49,7 +49,7 @@ public enum ElementalElement
 
 	public static ElementalElement getSubordinate(ElementalElement element)
 	{
-		switch (element)
+		switch(element)
 		{
 			case WATER:
 				return FIRE;
@@ -65,9 +65,9 @@ public enum ElementalElement
 
 	public static ElementalElement getElementById(int id)
 	{
-		for (ElementalElement e : VALUES)
+		for(ElementalElement e : VALUES)
 		{
-			if (e.getId() == id)
+			if(e.getId() == id)
 				return e;
 		}
 		return NONE;

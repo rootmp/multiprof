@@ -17,13 +17,13 @@ public class ItemsAutoDestroy
 
 	private ItemsAutoDestroy()
 	{
-		if (Config.AUTODESTROY_ITEM_AFTER > 0)
+		if(Config.AUTODESTROY_ITEM_AFTER > 0)
 		{
 			_items = new ConcurrentLinkedQueue<ItemInstance>();
 			ThreadPoolManager.getInstance().scheduleAtFixedRate(new CheckItemsForDestroy(), 60000, 60000);
 		}
 
-		if (Config.AUTODESTROY_PLAYER_ITEM_AFTER > 0)
+		if(Config.AUTODESTROY_PLAYER_ITEM_AFTER > 0)
 		{
 			_playersItems = new ConcurrentLinkedQueue<ItemInstance>();
 			ThreadPoolManager.getInstance().scheduleAtFixedRate(new CheckPlayersItemsForDestroy(), 60000, 60000);
@@ -35,7 +35,7 @@ public class ItemsAutoDestroy
 
 	public static ItemsAutoDestroy getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 		{
 			_instance = new ItemsAutoDestroy();
 		}
@@ -67,13 +67,13 @@ public class ItemsAutoDestroy
 		{
 			long _sleep = Config.AUTODESTROY_ITEM_AFTER * 1000L;
 			long curtime = System.currentTimeMillis();
-			for (ItemInstance item : _items)
+			for(ItemInstance item : _items)
 			{
-				if ((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
+				if((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
 				{
 					_items.remove(item);
 				}
-				else if ((item.getLastDropTime() + _sleep) < curtime)
+				else if((item.getLastDropTime() + _sleep) < curtime)
 				{
 					item.deleteMe();
 					_items.remove(item);
@@ -89,13 +89,13 @@ public class ItemsAutoDestroy
 		{
 			long _sleep = Config.AUTODESTROY_PLAYER_ITEM_AFTER * 1000L;
 			long curtime = System.currentTimeMillis();
-			for (ItemInstance item : _playersItems)
+			for(ItemInstance item : _playersItems)
 			{
-				if ((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
+				if((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
 				{
 					_playersItems.remove(item);
 				}
-				else if ((item.getLastDropTime() + _sleep) < curtime)
+				else if((item.getLastDropTime() + _sleep) < curtime)
 				{
 					item.deleteMe();
 					_playersItems.remove(item);
@@ -112,13 +112,13 @@ public class ItemsAutoDestroy
 		public void run()
 		{
 			long curtime = System.currentTimeMillis();
-			for (ItemInstance item : _herbs)
+			for(ItemInstance item : _herbs)
 			{
-				if ((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
+				if((item == null) || (item.getLastDropTime() == 0) || (item.getLocation() != ItemLocation.VOID))
 				{
 					_herbs.remove(item);
 				}
-				else if ((item.getLastDropTime() + _sleep) < curtime)
+				else if((item.getLastDropTime() + _sleep) < curtime)
 				{
 					item.deleteMe();
 					_herbs.remove(item);

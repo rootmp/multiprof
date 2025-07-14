@@ -73,7 +73,7 @@ public class CrestCache
 
 			statement = con.prepareStatement("SELECT clan_id, crest FROM clan_data WHERE crest IS NOT NULL");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				count++;
 
@@ -90,7 +90,7 @@ public class CrestCache
 
 			statement = con.prepareStatement("SELECT clan_id, data FROM clan_largecrests WHERE crest_part=0 AND data IS NOT NULL");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				count++;
 
@@ -106,13 +106,13 @@ public class CrestCache
 
 			statement = con.prepareStatement("SELECT clan_id, crest_part, data FROM clan_largecrests WHERE data IS NOT NULL ORDER BY clan_id asc, crest_part asc");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				pledgeId = rset.getInt("clan_id");
 				crestPartId = rset.getInt("crest_part");
 				crest = rset.getBytes("data");
 
-				if (!_pledgeCrestLargeId.containsKey(pledgeId))
+				if(!_pledgeCrestLargeId.containsKey(pledgeId))
 				{
 					_log.warn("Clan large crest has crashed. Clan ID: " + pledgeId);
 					continue;
@@ -121,7 +121,7 @@ public class CrestCache
 				crestId = _pledgeCrestLargeId.get(pledgeId);
 
 				TIntObjectMap<byte[]> crestMap = _pledgeCrestLarge.get(crestId);
-				if (crestMap == null)
+				if(crestMap == null)
 					crestMap = new TIntObjectHashMap<byte[]>();
 
 				crestMap.put(crestPartId, crest);
@@ -132,7 +132,7 @@ public class CrestCache
 
 			statement = con.prepareStatement("SELECT ally_id, crest FROM ally_data WHERE crest IS NOT NULL");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				count++;
 				pledgeId = rset.getInt("ally_id");
@@ -144,7 +144,7 @@ public class CrestCache
 				_allyCrest.put(crestId, crest);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -260,12 +260,12 @@ public class CrestCache
 		readLock.lock();
 		try
 		{
-			if (_pledgeCrestLargeId.containsValue(crestId))
+			if(_pledgeCrestLargeId.containsValue(crestId))
 			{
-				for (TIntIntIterator iterator = _pledgeCrestLargeId.iterator(); iterator.hasNext();)
+				for(TIntIntIterator iterator = _pledgeCrestLargeId.iterator(); iterator.hasNext();)
 				{
 					iterator.advance();
-					if (iterator.value() == crestId)
+					if(iterator.value() == crestId)
 					{
 						pledgeId = iterator.key();
 						break;
@@ -320,7 +320,7 @@ public class CrestCache
 			statement.setInt(2, pledgeId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -351,7 +351,7 @@ public class CrestCache
 			statement.setInt(1, pledgeId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -383,7 +383,7 @@ public class CrestCache
 			statement.setInt(2, pledgeId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -418,7 +418,7 @@ public class CrestCache
 			statement.setInt(2, pledgeId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -438,24 +438,25 @@ public class CrestCache
 		try
 		{
 			TIntObjectMap<byte[]> crest = _pledgeCrestLargeTemp.get(pledgeId);
-			if (crestPart == 0)
+			if(crestPart == 0)
 			{
 				_pledgeCrestLargeTemp.remove(pledgeId);
 				crest = new TIntObjectHashMap<byte[]>();
 			}
 
-			if (crest != null)
+			if(crest != null)
 			{
 				crest.put(crestPart, data);
 
 				int tempSize = getByteMapSize(crest);
 
-				if (crestTotalSize > tempSize)
+				if(crestTotalSize > tempSize)
 					_pledgeCrestLargeTemp.put(pledgeId, crest);
-				else if (crestTotalSize < tempSize)
+				else if(crestTotalSize < tempSize)
 				{
 					_pledgeCrestLargeTemp.remove(pledgeId);
-					_log.warn("Error while save pledge large crest, clan_id: " + pledgeId + ", crest_part: " + crestPart + ", crest_total_size: " + crestTotalSize + ", temp_size: " + tempSize);
+					_log.warn("Error while save pledge large crest, clan_id: " + pledgeId + ", crest_part: " + crestPart + ", crest_total_size: "
+							+ crestTotalSize + ", temp_size: " + tempSize);
 				}
 				else
 				{
@@ -474,7 +475,7 @@ public class CrestCache
 						statement.execute();
 						DbUtils.closeQuietly(statement);
 
-						for (TIntObjectIterator<byte[]> iterator = crest.iterator(); iterator.hasNext();)
+						for(TIntObjectIterator<byte[]> iterator = crest.iterator(); iterator.hasNext();)
 						{
 							iterator.advance();
 							statement = con.prepareStatement("REPLACE INTO clan_largecrests(clan_id, crest_part, data) VALUES (?,?,?)");
@@ -485,7 +486,7 @@ public class CrestCache
 							DbUtils.closeQuietly(statement);
 						}
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						_log.error("", e);
 					}
@@ -498,7 +499,8 @@ public class CrestCache
 				}
 			}
 			else
-				_log.warn("Error while save pledge large crest, clan_id: " + pledgeId + ", crest_part: " + crestPart + ", crest_total_size: " + crestTotalSize);
+				_log.warn("Error while save pledge large crest, clan_id: " + pledgeId + ", crest_part: " + crestPart + ", crest_total_size: "
+						+ crestTotalSize);
 		}
 		finally
 		{
@@ -532,7 +534,7 @@ public class CrestCache
 			statement.setInt(2, pledgeId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -547,9 +549,9 @@ public class CrestCache
 	public static int getByteMapSize(TIntObjectMap<byte[]> map)
 	{
 		int size = 0;
-		if (map != null && !map.isEmpty())
+		if(map != null && !map.isEmpty())
 		{
-			for (byte[] tempCrest : map.valueCollection())
+			for(byte[] tempCrest : map.valueCollection())
 				size += tempCrest.length;
 		}
 		return size;

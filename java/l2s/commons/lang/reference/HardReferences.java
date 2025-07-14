@@ -13,8 +13,7 @@ import java.util.List;
 public class HardReferences
 {
 	private HardReferences()
-	{
-	}
+	{}
 
 	private static class EmptyReferencedHolder extends AbstractHardReference<Object>
 	{
@@ -43,10 +42,10 @@ public class HardReferences
 	public static <T> Collection<T> unwrap(Collection<HardReference<T>> refs)
 	{
 		List<T> result = new ArrayList<T>(refs.size());
-		for (HardReference<T> ref : refs)
+		for(HardReference<T> ref : refs)
 		{
 			T obj = ref.get();
-			if (obj != null)
+			if(obj != null)
 				result.add(obj);
 		}
 		return result;

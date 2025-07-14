@@ -24,7 +24,7 @@ public abstract class ChannelInboundHandler<T extends ChannelInboundHandler<?>> 
 	private boolean _ignoreInvalidConnectionState = false;
 	private boolean _logSPackets = false;
 	private boolean _logCPackets = false;
-	
+
 	@Override
 	public void channelActive(ChannelHandlerContext ctx)
 	{
@@ -74,7 +74,7 @@ public abstract class ChannelInboundHandler<T extends ChannelInboundHandler<?>> 
 			}
 		}
 	}
-	
+
 	public boolean isLogSPackets()
 	{
 		return _logSPackets;
@@ -84,7 +84,7 @@ public abstract class ChannelInboundHandler<T extends ChannelInboundHandler<?>> 
 	{
 		_logSPackets = log;
 	}
-	
+
 	public boolean isLogCPackets()
 	{
 		return _logCPackets;

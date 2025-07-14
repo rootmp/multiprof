@@ -9,16 +9,16 @@ public class NewHennaPotenSelect implements IClientOutgoingPacket
 	private final int _potenId;
 	private final int _activeStep;
 	private final boolean _success;
-	
+
 	public NewHennaPotenSelect(int slotId, int potenId, int activeStep, boolean success)
 	{
-		
+
 		_slotId = slotId;
 		_potenId = potenId;
 		_activeStep = activeStep;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

@@ -8,7 +8,7 @@ import io.netty.buffer.ByteBuf;
 public interface IOutgoingPacket
 {
 	boolean canBeWritten();
-	
+
 	ByteBuf getOpcodes();
 
 	/**

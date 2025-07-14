@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,11 +35,11 @@ public class RequestLinkHtml implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		ValidBypass bp = player.getBypassStorage().validate(_link);
-		if (bp == null)
+		if(bp == null)
 		{
 			_log.warn(" RequestLinkHtml: Unexpected link : " + _link + "!");
 			return;
@@ -48,32 +49,32 @@ public class RequestLinkHtml implements IClientIncomingPacket
 		int itemId = 0;
 
 		String[] params = link.split(".htm#");
-		if (params.length >= 2)
+		if(params.length >= 2)
 		{
 			link = params[0] + ".htm";
 			itemId = !Util.isDigit(params[1]) ? -1 : Integer.parseInt(params[1]);
 		}
 
-		if (link.contains("..") || !link.endsWith(".htm") || itemId == -1)
+		if(link.contains("..") || !link.endsWith(".htm") || itemId == -1)
 		{
 			_log.warn("RequestLinkHtml: hack? link contains prohibited characters: '" + link + "'!");
 			return;
 		}
 
 		HtmlMessage msg;
-		if (itemId == 0)
+		if(itemId == 0)
 		{
 			NpcInstance npc = player.getLastNpc();
-			if (npc != null)
+			if(npc != null)
 			{
-				if (!player.checkInteractionDistance(npc))
+				if(!player.checkInteractionDistance(npc))
 					return;
 
 				link = npc.correctBypassLink(player, link);
 
 				msg = new HtmlMessage(npc);
 			}
-			else if (link.contains("premium_manager"))
+			else if(link.contains("premium_manager"))
 			{
 				DimensionalMerchantUtils.showLimitShopHtml(player, link, true);
 				return;

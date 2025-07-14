@@ -41,13 +41,13 @@ public class PremiumAccountDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setString(1, account);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				bonus = rset.getInt("type");
 				time = rset.getInt("expire_time");
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("PremiumAccountDAO.select(String): " + e, e);
 		}
@@ -55,10 +55,9 @@ public class PremiumAccountDAO
 		{
 			DbUtils.closeQuietly(con, statement, rset);
 		}
-		return new int[]
-		{
-			bonus,
-			time
+		return new int[] {
+				bonus,
+				time
 		};
 	}
 
@@ -73,7 +72,7 @@ public class PremiumAccountDAO
 			statement.setString(1, account);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("PremiumAccountDAO.delete(String): " + e, e);
 		}
@@ -96,7 +95,7 @@ public class PremiumAccountDAO
 			statement.setInt(3, endTime);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.info("PremiumAccountDAO.insert(String, double, int): " + e, e);
 		}

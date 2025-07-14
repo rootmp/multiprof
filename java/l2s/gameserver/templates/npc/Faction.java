@@ -19,9 +19,9 @@ public class Faction
 	public Faction(String names, int range)
 	{
 		_namesStr = names;
-		for (String name : names.split(";"))
+		for(String name : names.split(";"))
 		{
-			if (name == null || name.isEmpty() || name.equals(none))
+			if(name == null || name.isEmpty() || name.equals(none))
 				continue;
 
 			_names.add(name.toLowerCase());
@@ -51,9 +51,9 @@ public class Faction
 
 	public boolean containsName(String name)
 	{
-		for (String n : _names)
+		for(String n : _names)
 		{
-			if (n.equalsIgnoreCase(name))
+			if(n.equalsIgnoreCase(name))
 				return true;
 		}
 		return false;
@@ -61,12 +61,12 @@ public class Faction
 
 	public boolean equals(Faction faction)
 	{
-		if (isNone())
+		if(isNone())
 			return false;
 
-		for (String name : _names)
+		for(String name : _names)
 		{
-			if (faction.containsName(name))
+			if(faction.containsName(name))
 				return true;
 		}
 		return false;
@@ -75,11 +75,11 @@ public class Faction
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != this.getClass())
+		if(o.getClass() != this.getClass())
 			return false;
 		return equals((Faction) o);
 	}

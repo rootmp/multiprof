@@ -25,8 +25,7 @@ public class PriorityThreadFactory implements ThreadFactory
 	@Override
 	public Thread newThread(Runnable r)
 	{
-		Thread t = new Thread(_group, r)
-		{
+		Thread t = new Thread(_group, r){
 			@Override
 			public void run()
 			{
@@ -34,7 +33,7 @@ public class PriorityThreadFactory implements ThreadFactory
 				{
 					super.run();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error("Exception: " + e, e);
 				}

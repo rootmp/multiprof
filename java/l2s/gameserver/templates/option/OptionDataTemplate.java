@@ -35,7 +35,7 @@ public class OptionDataTemplate extends StatTemplate
 	{
 		return _id;
 	}
-	
+
 	public final Func[] getStatFuncs()
 	{
 		return getStatFuncs(this);

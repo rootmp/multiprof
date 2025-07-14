@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
@@ -65,7 +64,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			}
 
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{
@@ -73,7 +72,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 		}
 		return Unpooled.EMPTY_BUFFER;
 	}
-	
+
 	@Override
 	default String getType()
 	{
@@ -117,7 +116,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 	{
 		writeItemInfo(packetWriter, item, item.getCount());
 	}
-	
+
 	default void writeItemInfo(PacketWriter packetWriter, ItemInfo item, long count)
 	{
 		int flags = calculateMask(packetWriter, item);
@@ -198,7 +197,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 		}
 		if(containsMask(flags, ItemListType.IS_BLESSED))
 			packetWriter.writeC(1);
-		
+
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
 			packetWriter.writeC(1);
 	}
@@ -236,13 +235,13 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			flags |= ItemListType.HAVE_ENSOUL.getMask();
 
 		//if(UseCountItemHolder.getInstance().containsItem(item.getItemId()))
-			//flags |= ItemListType.USED_COUNT.getBlockLength();
-		
+		//flags |= ItemListType.USED_COUNT.getBlockLength();
+
 		if(item.getReuseTime() > 0)
 			flags |= ItemListType.REUSE_DELAY.getMask();
-		
+
 		//if(PetDataHolder.getInstance().isPetControlItem(item.getItemId()))
-			//flags |= ItemListType.EVOLVE.getMask();
+		//flags |= ItemListType.EVOLVE.getMask();
 
 		if(item.isBlessed())
 			flags |= ItemListType.IS_BLESSED.getMask();
@@ -269,51 +268,51 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 	{
 		writeItemInfo(packetWriter, item, item.getCount(), writeSize, initSize);
 	}
-	
-	default int calculateMaskLength(PacketWriter packetWriter, ItemInfo item) 
-  {
-  	int _initSize = 45;
-  	int flags = calculateMask(packetWriter, item);
 
-		if (containsMask(flags, ItemListType.IS_AUGMENTED))
-			_initSize+=ItemListType.IS_AUGMENTED.getBlockLength();
-		
-		if (containsMask(flags, ItemListType.IS_ELEMENTED))
-			_initSize+=ItemListType.IS_ELEMENTED.getBlockLength();
+	default int calculateMaskLength(PacketWriter packetWriter, ItemInfo item)
+	{
+		int _initSize = 45;
+		int flags = calculateMask(packetWriter, item);
 
-	/*	if (containsMask(flags, ItemListType.HAVE_ENCHANT_OPTIONS))
-			_initSize+=ItemListType.HAVE_ENCHANT_OPTIONS.getBlockLength();*/
+		if(containsMask(flags, ItemListType.IS_AUGMENTED))
+			_initSize += ItemListType.IS_AUGMENTED.getBlockLength();
 
-		if (containsMask(flags, ItemListType.VISUAL_CHANGED))
-			_initSize+=ItemListType.VISUAL_CHANGED.getBlockLength();
+		if(containsMask(flags, ItemListType.IS_ELEMENTED))
+			_initSize += ItemListType.IS_ELEMENTED.getBlockLength();
 
-		if (containsMask(flags, ItemListType.HAVE_ENSOUL))
-			_initSize+=ItemListType.HAVE_ENSOUL.getBlockLength();
+		/*	if (containsMask(flags, ItemListType.HAVE_ENCHANT_OPTIONS))
+				_initSize+=ItemListType.HAVE_ENCHANT_OPTIONS.getBlockLength();*/
 
-		if (containsMask(flags, ItemListType.USED_COUNT))
-			_initSize+=ItemListType.USED_COUNT.getBlockLength();
-		
-		if (containsMask(flags, ItemListType.REUSE_DELAY))
-			_initSize+=ItemListType.REUSE_DELAY.getBlockLength();
-		
-		if (containsMask(flags, ItemListType.EVOLVE))
-			_initSize+=ItemListType.EVOLVE.getBlockLength();
-		
-		if (containsMask(flags, ItemListType.IS_BLESSED))
-			_initSize+=ItemListType.IS_BLESSED.getBlockLength();
-		
-		if (containsMask(flags, ItemListType.IS_ILLUSORY))
-			_initSize+=ItemListType.IS_ILLUSORY.getBlockLength();
-		
-  	return _initSize;
-  }
-  
+		if(containsMask(flags, ItemListType.VISUAL_CHANGED))
+			_initSize += ItemListType.VISUAL_CHANGED.getBlockLength();
+
+		if(containsMask(flags, ItemListType.HAVE_ENSOUL))
+			_initSize += ItemListType.HAVE_ENSOUL.getBlockLength();
+
+		if(containsMask(flags, ItemListType.USED_COUNT))
+			_initSize += ItemListType.USED_COUNT.getBlockLength();
+
+		if(containsMask(flags, ItemListType.REUSE_DELAY))
+			_initSize += ItemListType.REUSE_DELAY.getBlockLength();
+
+		if(containsMask(flags, ItemListType.EVOLVE))
+			_initSize += ItemListType.EVOLVE.getBlockLength();
+
+		if(containsMask(flags, ItemListType.IS_BLESSED))
+			_initSize += ItemListType.IS_BLESSED.getBlockLength();
+
+		if(containsMask(flags, ItemListType.IS_ILLUSORY))
+			_initSize += ItemListType.IS_ILLUSORY.getBlockLength();
+
+		return _initSize;
+	}
+
 	default void writeItemInfo(PacketWriter packetWriter, ItemInfo item, long count, boolean writeSize, int initSize)
 	{
 		int size = initSize + calculateMaskLength(packetWriter, item);
 		int flags = calculateMask(packetWriter, item);
 
-		if (writeSize)
+		if(writeSize)
 			packetWriter.writeD(size);
 
 		packetWriter.writeH(flags);
@@ -332,14 +331,14 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 		packetWriter.writeC(!item.isBlocked());
 		packetWriter.writeH(item.isLocked()); // 140 PROTOCOL
 
-		if (containsMask(flags, ItemListType.IS_AUGMENTED))
+		if(containsMask(flags, ItemListType.IS_AUGMENTED))
 		{
 			packetWriter.writeD(item.getVariation1Id());
 			packetWriter.writeD(item.getVariation2Id());
 			packetWriter.writeD(item.getVariation3Id());
 		}
 
-		if (containsMask(flags, ItemListType.IS_ELEMENTED))
+		if(containsMask(flags, ItemListType.IS_ELEMENTED))
 		{
 			packetWriter.writeH(item.getAttackElement());
 			packetWriter.writeH(item.getAttackElementValue());
@@ -351,10 +350,10 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			packetWriter.writeH(item.getDefenceUnholy());
 		}
 
-		if (containsMask(flags, ItemListType.VISUAL_CHANGED))
+		if(containsMask(flags, ItemListType.VISUAL_CHANGED))
 			packetWriter.writeD(item.getVisualId());
 
-		if (containsMask(flags, ItemListType.HAVE_ENSOUL))
+		if(containsMask(flags, ItemListType.HAVE_ENSOUL))
 		{
 			packetWriter.writeC(item.getNormalEnsouls().size());
 			for(Ensoul ensoul : item.getNormalEnsouls())
@@ -364,14 +363,14 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			for(Ensoul ensoul : item.getSpecialEnsouls())
 				packetWriter.writeD(ensoul.getId());
 		}
-		
-		if (containsMask(flags, ItemListType. USED_COUNT))
+
+		if(containsMask(flags, ItemListType.USED_COUNT))
 			packetWriter.writeH(item.getUsedCount());
-		
-		if (containsMask(flags, ItemListType.REUSE_DELAY))
+
+		if(containsMask(flags, ItemListType.REUSE_DELAY))
 			packetWriter.writeD(item.getReuseTime());
 
-		if (containsMask(flags, ItemListType.EVOLVE))
+		if(containsMask(flags, ItemListType.EVOLVE))
 		{
 			packetWriter.writeD(item.getPetParam().getEvolveLevel()); // petEvolve step
 			packetWriter.writeD(item.getPetParam().getRandomName());
@@ -380,14 +379,14 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			packetWriter.writeD(item.getPetParam().getPetIndex()); // pet id
 			packetWriter.writeQ(item.getPetParam().getExp());// pet exp*/
 		}
-		
-		if (containsMask(flags, ItemListType.IS_BLESSED))
+
+		if(containsMask(flags, ItemListType.IS_BLESSED))
 			packetWriter.writeC(1);
-		
+
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
 			packetWriter.writeC(1);
 	}
-	
+
 	default void writeItemInfo(PacketWriter packetWriter, Player player, ItemInstance item, long count)
 	{
 		int flags = calculateMask(packetWriter, player, item);
@@ -461,7 +460,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			packetWriter.writeH(item.getUseCount());
 
 		if(containsMask(flags, ItemListType.REUSE_DELAY))
-			packetWriter.writeD(player==null? 0 : (int) player.getSharedGroupReuse(item.getTemplate().getReuseGroup()).getReuseCurrent());
+			packetWriter.writeD(player == null ? 0 : (int) player.getSharedGroupReuse(item.getTemplate().getReuseGroup()).getReuseCurrent());
 
 		if(containsMask(flags, ItemListType.EVOLVE))
 		{
@@ -475,7 +474,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 
 		if(containsMask(flags, ItemListType.IS_BLESSED))
 			packetWriter.writeC(1);
-		
+
 		if(containsMask(flags, ItemListType.IS_ILLUSORY))
 			packetWriter.writeC(1);
 	}
@@ -514,7 +513,7 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			flags |= ItemListType.HAVE_ENSOUL.getMask();
 
 		//if(UseCountItemHolder.getInstance().containsItem(item.getItemId()))
-			//flags |= ItemListType.USED_COUNT.getMask();
+		//flags |= ItemListType.USED_COUNT.getMask();
 
 		if(player != null)
 		{
@@ -528,14 +527,14 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 		}
 
 		//if(PetDataHolder.getInstance().isPetControlItem(item.getItemId()))
-			//flags |= ItemListType.EVOLVE.getMask();
+		//flags |= ItemListType.EVOLVE.getMask();
 
 		if(item.isBlessed())
 			flags |= ItemListType.IS_BLESSED.getMask();
 
 		return flags;
 	}
-	
+
 	default void writeItemElements(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(-1); // attack element (-1 - none)
@@ -584,5 +583,4 @@ public interface IClientOutgoingPacket extends IOutgoingPacket, IBroadcastPacket
 			writeItemElements(packetWriter);
 	}
 
-	
 }

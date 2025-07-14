@@ -7,7 +7,7 @@ public class ExSetEnchantChallengePoint implements IClientOutgoingPacket
 {
 	public static final IClientOutgoingPacket FAIL = new ExSetEnchantChallengePoint(0);
 	public static final IClientOutgoingPacket SUCCESS = new ExSetEnchantChallengePoint(1);
-	
+
 	private int _bResult;
 
 	public ExSetEnchantChallengePoint(int bResult)
@@ -20,5 +20,5 @@ public class ExSetEnchantChallengePoint implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_bResult); // bResult
 		return true;
- 	}
+	}
 }

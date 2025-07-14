@@ -31,19 +31,19 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 		int lastBig = 0;
 		int i = 1;
 
-		for (IntObjectPair<Set<String>> entry : MiniGameScoreManager.getInstance().getScores().entrySet())
+		for(IntObjectPair<Set<String>> entry : MiniGameScoreManager.getInstance().getScores().entrySet())
 		{
-			for (String name : entry.getValue())
+			for(String name : entry.getValue())
 			{
 				List<Map.Entry<String, Integer>> set = _entries.get(i);
-				if (set == null)
+				if(set == null)
 				{
 					_entries.put(i, (set = new ArrayList<Map.Entry<String, Integer>>()));
 				}
 
-				if (name.equalsIgnoreCase(player.getName()))
+				if(name.equalsIgnoreCase(player.getName()))
 				{
-					if (entry.getKey() > lastBig)
+					if(entry.getKey() > lastBig)
 					{
 						_place = i;
 						_score = (lastBig = entry.getKey());
@@ -56,7 +56,7 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 
 				_lastScore = entry.getKey();
 
-				if (i > 100)
+				if(i > 100)
 				{
 					break;
 				}
@@ -71,9 +71,9 @@ public class ExBR_MiniGameLoadScores implements IClientOutgoingPacket
 		packetWriter.writeD(_score); // last big score of player
 		packetWriter.writeD(0x00); // ?
 		packetWriter.writeD(_lastScore); // last score of list
-		for (IntObjectPair<List<Map.Entry<String, Integer>>> entry : _entries.entrySet())
+		for(IntObjectPair<List<Map.Entry<String, Integer>>> entry : _entries.entrySet())
 		{
-			for (Map.Entry<String, Integer> scoreEntry : entry.getValue())
+			for(Map.Entry<String, Integer> scoreEntry : entry.getValue())
 			{
 				packetWriter.writeD(entry.getKey());
 				packetWriter.writeS(scoreEntry.getKey());

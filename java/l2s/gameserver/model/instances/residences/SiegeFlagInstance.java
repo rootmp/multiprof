@@ -46,7 +46,7 @@ public class SiegeFlagInstance extends NpcInstance
 	public boolean isAutoAttackable(Creature attacker)
 	{
 		Player player = attacker.getPlayer();
-		if (player == null || isInvulnerable())
+		if(player == null || isInvulnerable())
 			return false;
 		Clan clan = player.getClan();
 		return clan == null || _owner != clan;
@@ -61,10 +61,10 @@ public class SiegeFlagInstance extends NpcInstance
 	@Override
 	protected void onDeath(Creature killer)
 	{
-		for (SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
+		for(SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
 		{
 			SiegeClanObject siegeClan = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, _owner);
-			if (siegeClan != null)
+			if(siegeClan != null)
 				siegeClan.setFlag(null);
 		}
 		super.onDeath(killer);
@@ -73,7 +73,7 @@ public class SiegeFlagInstance extends NpcInstance
 	@Override
 	protected void onReduceCurrentHp(final double damage, final Creature attacker, Skill skill, final boolean awake, final boolean standUp, boolean directHp, boolean isDot)
 	{
-		if (System.currentTimeMillis() - _lastAnnouncedAttackedTime > 120000)
+		if(System.currentTimeMillis() - _lastAnnouncedAttackedTime > 120000)
 		{
 			_lastAnnouncedAttackedTime = System.currentTimeMillis();
 			_owner.broadcastToOnlineMembers(SystemMsg.YOUR_BASE_IS_BEING_ATTACKED);

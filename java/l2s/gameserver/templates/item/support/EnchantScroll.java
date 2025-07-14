@@ -43,7 +43,7 @@ public class EnchantScroll
 
 	public void addItemId(int id)
 	{
-		if (_items.isEmpty())
+		if(_items.isEmpty())
 			_items = new HashIntSet();
 
 		_items.add(id);
@@ -118,13 +118,13 @@ public class EnchantScroll
 	{
 		System.out.println("getVariationId not implemented yet.");
 		return 0;
-		    
+
 	}
 
 	public int getChallengeGroup(int itemId)
 	{
 		System.out.println("getChallengeGroup not implemented yet.");
 		return 0;
-		    
+
 	}
 }

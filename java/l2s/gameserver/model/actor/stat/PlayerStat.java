@@ -25,14 +25,14 @@ public class PlayerStat extends CreatureStat
 	public int getElementalAttackPower(ElementalElement element)
 	{
 		Elemental elemental = getOwner().getElementalList().get(element);
-		if (elemental == null)
+		if(elemental == null)
 			return -1;
 
 		int attack = elemental.getLevelData().getAttack();
 		attack += elemental.getAttackPoints() * 5;
 
 		Stats stat = null;
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				stat = Stats.FIRE_ELEMENTAL_ATTACK;
@@ -47,7 +47,7 @@ public class PlayerStat extends CreatureStat
 				stat = Stats.EARTH_ELEMENTAL_ATTACK;
 				break;
 		}
-		if (stat != null)
+		if(stat != null)
 		{
 			attack *= getMul(stat);
 			attack += getAdd(stat);
@@ -59,14 +59,14 @@ public class PlayerStat extends CreatureStat
 	public int getElementalDefence(ElementalElement element)
 	{
 		Elemental elemental = getOwner().getElementalList().get(element);
-		if (elemental == null)
+		if(elemental == null)
 			return 0;
 
 		int defence = elemental.getLevelData().getDefence();
 		defence += elemental.getDefencePoints() * 5;
 
 		Stats stat = null;
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				stat = Stats.FIRE_ELEMENTAL_DEFENCE;
@@ -81,7 +81,7 @@ public class PlayerStat extends CreatureStat
 				stat = Stats.EARTH_ELEMENTAL_DEFENCE;
 				break;
 		}
-		if (stat != null)
+		if(stat != null)
 		{
 			defence *= getMul(stat);
 			defence += getAdd(stat);
@@ -93,14 +93,14 @@ public class PlayerStat extends CreatureStat
 	public int getElementalCritRate(ElementalElement element)
 	{
 		Elemental elemental = getOwner().getElementalList().get(element);
-		if (elemental == null)
+		if(elemental == null)
 			return 0;
 
 		int critRate = elemental.getLevelData().getCritRate();
 		critRate += elemental.getCritRatePoints();
 
 		Stats stat = null;
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				stat = Stats.FIRE_ELEMENTAL_CRIT_RATE;
@@ -115,7 +115,7 @@ public class PlayerStat extends CreatureStat
 				stat = Stats.EARTH_ELEMENTAL_CRIT_RATE;
 				break;
 		}
-		if (stat != null)
+		if(stat != null)
 		{
 			critRate *= getMul(stat);
 			critRate += getAdd(stat);
@@ -127,14 +127,14 @@ public class PlayerStat extends CreatureStat
 	public int getElementalCritAttack(ElementalElement element)
 	{
 		Elemental elemental = getOwner().getElementalList().get(element);
-		if (elemental == null)
+		if(elemental == null)
 			return 0;
 
 		int critAttack = elemental.getLevelData().getCritAttack();
 		critAttack += elemental.getCritAttackPoints();
 
 		Stats stat = null;
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				stat = Stats.FIRE_ELEMENTAL_CRIT_ATTACK;
@@ -149,7 +149,7 @@ public class PlayerStat extends CreatureStat
 				stat = Stats.EARTH_ELEMENTAL_CRIT_ATTACK;
 				break;
 		}
-		if (stat != null)
+		if(stat != null)
 		{
 			critAttack *= getMul(stat);
 			critAttack += getAdd(stat);
@@ -159,13 +159,13 @@ public class PlayerStat extends CreatureStat
 
 	public int getDiff(Stats powerAttackWeapon)
 	{
-		return 0;   
+		return 0;
 	}
 
 	public double getPer(Stats enchantChanceModifierWeapon)
 	{
 		System.out.println("getPer not implemented yet.");
 		return 0;
-		    
+
 	}
 }

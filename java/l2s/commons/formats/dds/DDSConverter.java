@@ -14,17 +14,17 @@ public class DDSConverter
 
 		public boolean equals(Object obj)
 		{
-			if (this == obj)
+			if(this == obj)
 				return true;
 
-			if ((obj == null) || (getClass() != obj.getClass()))
+			if((obj == null) || (getClass() != obj.getClass()))
 				return false;
 
 			Color color = (Color) obj;
-			if (b != color.b)
+			if(b != color.b)
 				return false;
 
-			if (g != color.g)
+			if(g != color.g)
 				return false;
 
 			return r == color.r;
@@ -53,7 +53,7 @@ public class DDSConverter
 
 	public static ByteBuffer convertToDxt1NoTransparency(BufferedImage bufferedimage)
 	{
-		if (bufferedimage == null)
+		if(bufferedimage == null)
 			return null;
 
 		int[] ai = new int[16];
@@ -63,20 +63,20 @@ public class DDSConverter
 		buildHeaderDxt1(bytebuffer, bufferedimage.getWidth(), bufferedimage.getHeight());
 		int j = bufferedimage.getWidth() / 4;
 		int k = bufferedimage.getHeight() / 4;
-		for (int l = 0; l < k; l++)
+		for(int l = 0; l < k; l++)
 		{
-			for (int i1 = 0; i1 < j; i1++)
+			for(int i1 = 0; i1 < j; i1++)
 			{
 				BufferedImage bufferedimage1 = bufferedimage.getSubimage(i1 * 4, l * 4, 4, 4);
 				bufferedimage1.getRGB(0, 0, 4, 4, ai, 0, 4);
 				Color[] acolor = getColors888(ai);
-				for (int j1 = 0; j1 < ai.length; j1++)
+				for(int j1 = 0; j1 < ai.length; j1++)
 				{
 					ai[j1] = getPixel565(acolor[j1]);
 					acolor[j1] = getColor565(ai[j1]);
 				}
 				int[] ai1 = determineExtremeColors(acolor);
-				if (ai[ai1[0]] < ai[ai1[1]])
+				if(ai[ai1[0]] < ai[ai1[1]])
 				{
 					int k1 = ai1[0];
 					ai1[0] = ai1[1];
@@ -127,12 +127,12 @@ public class DDSConverter
 	{
 		int i = Integer.MIN_VALUE;
 		int[] ai = new int[2];
-		for (int j = 0; j < acolor.length - 1; j++)
+		for(int j = 0; j < acolor.length - 1; j++)
 		{
-			for (int k = j + 1; k < acolor.length; k++)
+			for(int k = j + 1; k < acolor.length; k++)
 			{
 				int l = distance(acolor[j], acolor[k]);
-				if (l > i)
+				if(l > i)
 				{
 					i = l;
 					ai[0] = j;
@@ -145,18 +145,17 @@ public class DDSConverter
 
 	private static long computeBitMask(Color[] acolor, int[] ai)
 	{
-		Color[] acolor1 =
-		{
-			null,
-			null,
-			new Color(),
-			new Color()
+		Color[] acolor1 = {
+				null,
+				null,
+				new Color(),
+				new Color()
 		};
 
 		acolor1[0] = acolor[ai[0]];
 		acolor1[1] = acolor[ai[1]];
 
-		if (acolor1[0].equals(acolor1[1]))
+		if(acolor1[0].equals(acolor1[1]))
 			return 0L;
 
 		acolor1[2].r = (2 * acolor1[0].r + acolor1[1].r + 1) / 3;
@@ -167,14 +166,14 @@ public class DDSConverter
 		acolor1[3].b = (acolor1[0].b + 2 * acolor1[1].b + 1) / 3;
 
 		long l = 0L;
-		for (int i = 0; i < acolor.length; i++)
+		for(int i = 0; i < acolor.length; i++)
 		{
 			int j = Integer.MAX_VALUE;
 			int k = 0;
-			for (int i1 = 0; i1 < acolor1.length; i1++)
+			for(int i1 = 0; i1 < acolor1.length; i1++)
 			{
 				int j1 = distance(acolor[i], acolor1[i1]);
-				if (j1 < j)
+				if(j1 < j)
 				{
 					j = j1;
 					k = i1;
@@ -205,7 +204,7 @@ public class DDSConverter
 	private static Color[] getColors888(int[] ai)
 	{
 		Color[] acolor = new Color[ai.length];
-		for (int i = 0; i < ai.length; i++)
+		for(int i = 0; i < ai.length; i++)
 		{
 			acolor[i] = new Color();
 			acolor[i].r = (ai[i] & 0xFF0000) >> 16;

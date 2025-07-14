@@ -24,10 +24,10 @@ public class EffectArmorBreaker extends EffectHandler
 		@Override
 		protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 		{
-			if (!effected.isPlayer())
+			if(!effected.isPlayer())
 				return false;
 
-			if (effected.getPlayer().getInventory().getPaperdollItem(Inventory.PAPERDOLL_CHEST) == null)
+			if(effected.getPlayer().getInventory().getPaperdollItem(Inventory.PAPERDOLL_CHEST) == null)
 				return false;
 
 			return true;

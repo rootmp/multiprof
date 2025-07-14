@@ -132,82 +132,55 @@ public class DefaultAI extends NpcAI
 	 */
 	protected boolean canSeeInSilentMove(Playable target)
 	{
-		if (getActor().getParameter("canSeeInSilentMove", false))
-		{
-			return true;
-		}
+		if(getActor().getParameter("canSeeInSilentMove", false))
+		{ return true; }
 		return !target.isSilentMoving();
 	}
 
 	protected boolean checkAggression(Creature target)
 	{
-		if (target == null)
-		{
-			return false;
-		}
+		if(target == null)
+		{ return false; }
 		final NpcInstance actor = getActor();
-		if (getIntention() != CtrlIntention.AI_INTENTION_ACTIVE && getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE || !isGlobalAggro() || target.isAlikeDead())
+		if(getIntention() != CtrlIntention.AI_INTENTION_ACTIVE && getIntention() != CtrlIntention.AI_INTENTION_WALKER_ROUTE || !isGlobalAggro()
+				|| target.isAlikeDead())
+		{ return false; }
+		if(!target.isTargetable(actor))
+		{ return false; }
+		if(target.isNpc() && target.isInvulnerable())
+		{ return false; }
+		if(target.isPlayable())
 		{
-			return false;
-		}
-		if (!target.isTargetable(actor))
-		{
-			return false;
-		}
-		if (target.isNpc() && target.isInvulnerable())
-		{
-			return false;
-		}
-		if (target.isPlayable())
-		{
-			if (!canSeeInSilentMove((Playable) target))
-			{
-				return false;
-			}
-			if (actor.getFaction().containsName("varka_silenos_clan") && target.getPlayer().getVarka() > 0)
-			{
-				return false;
-			}
-			if ((actor.getFaction().containsName("ketra_orc_clan") && target.getPlayer().getKetra() > 0))
-			{
-				return false;
-			}
-			if (((Playable) target).isInNonAggroTime())
-			{
-				return false;
-			}
-			if (target.isPlayer())
+			if(!canSeeInSilentMove((Playable) target))
+			{ return false; }
+			if(actor.getFaction().containsName("varka_silenos_clan") && target.getPlayer().getVarka() > 0)
+			{ return false; }
+			if((actor.getFaction().containsName("ketra_orc_clan") && target.getPlayer().getKetra() > 0))
+			{ return false; }
+			if(((Playable) target).isInNonAggroTime())
+			{ return false; }
+			if(target.isPlayer())
 			{
 				final Player player = target.getPlayer();
-				if (player.isGMInvisible() || (player.isInAwayingMode() && !Config.AWAY_PLAYER_TAKE_AGGRO) || !player.isActive())
+				if(player.isGMInvisible() || (player.isInAwayingMode() && !Config.AWAY_PLAYER_TAKE_AGGRO) || !player.isActive())
+				{ return false; }
+				if(actor.isMonster() && target.isInPeaceZone())
+				{ return false; }
+				if(actor.isMonster() || actor instanceof DecoyInstance)
 				{
-					return false;
-				}
-				if (actor.isMonster() && target.isInPeaceZone())
-				{
-					return false;
-				}
-				if (actor.isMonster() || actor instanceof DecoyInstance)
-				{
-					if (player.isInStoreMode() || player.isInOfflineMode())
-					{
-						return false;
-					}
+					if(player.isInStoreMode() || player.isInOfflineMode())
+					{ return false; }
 				}
 			}
 		}
 
-		if (!isInAggroRange(target) || !canAttackCharacter(target))
-		{
-			return false;
-		}
-		if (!GeoEngine.canSeeTarget(actor, target))
-		{
-			return false;
-		}
+		if(!isInAggroRange(target) || !canAttackCharacter(target))
+		{ return false; }
+		if(!GeoEngine.canSeeTarget(actor, target))
+		{ return false; }
 
 		actor.getAggroList().addDamageHate(target, 0, 2);
-		if (target.isSummon() || target.isPet())
+		if(target.isSummon() || target.isPet())
 		{
 			actor.getAggroList().addDamageHate(target.getPlayer(), 0, 1);
 		}
@@ -222,17 +195,13 @@ public class DefaultAI extends NpcAI
 	{
 		final NpcInstance actor = getActor();
 		final AggroInfo ai = actor.getAggroList().get(target);
-		if (ai != null && ai.hate > 0)
+		if(ai != null && ai.hate > 0)
 		{
-			if (!target.isInRangeZ(actor.getSpawnedLoc(), getMaxHateRange()))
-			{
-				return false;
-			}
+			if(!target.isInRangeZ(actor.getSpawnedLoc(), getMaxHateRange()))
+			{ return false; }
 		}
-		else if (!isAggressive() || !target.isInRangeZ(actor.getSpawnedLoc(), getAggroRange()))
-		{
-			return false;
-		}
+		else if(!isAggressive() || !target.isInRangeZ(actor.getSpawnedLoc(), getAggroRange()))
+		{ return false; }
 
 		return true;
 	}
@@ -244,17 +213,14 @@ public class DefaultAI extends NpcAI
 
 	protected boolean randomAnimation()
 	{
-		if (isHaveRandomActions())
-		{
-			return false;
-		}
+		if(isHaveRandomActions())
+		{ return false; }
 
 		final NpcInstance actor = getActor();
-		if (actor.getParameter("noRandomAnimation", false))
-		{
-			return false;
-		}
-		if (actor.hasRandomAnimation() && !actor.isActionsDisabled() && !actor.getMovement().isMoving() && !actor.isInCombat() && Rnd.chance(Config.RND_ANIMATION_RATE) && !actor.isKnockDowned() && !actor.isKnockBacked() && !actor.isFlyUp())
+		if(actor.getParameter("noRandomAnimation", false))
+		{ return false; }
+		if(actor.hasRandomAnimation() && !actor.isActionsDisabled() && !actor.getMovement().isMoving() && !actor.isInCombat()
+				&& Rnd.chance(Config.RND_ANIMATION_RATE) && !actor.isKnockDowned() && !actor.isKnockBacked() && !actor.isFlyUp())
 		{
 			setIsInRandomAnimation(3000);
 			actor.onRandomAnimation();
@@ -275,29 +241,25 @@ public class DefaultAI extends NpcAI
 	protected boolean thinkActive()
 	{
 		final NpcInstance actor = getActor();
-		if ((actor == null) || !actor.canMoveAndUseAI())
-		{
-			return false;
-		}
+		if((actor == null) || !actor.canMoveAndUseAI())
+		{ return false; }
 
-		if (actor.isMinion())
+		if(actor.isMinion())
 		{
 			// Minion is removed when switching to active mode, if the leader is dead.
 			final NpcInstance leader = actor.getLeader();
-			if (leader != null && !leader.isVisible())
+			if(leader != null && !leader.isVisible())
 			{
 				actor.deleteMe();
 				return false;
 			}
 		}
 
-		if (super.thinkActive() || actor.isActionsDisabled() || (_randomAnimationEnd > System.currentTimeMillis()))
+		if(super.thinkActive() || actor.isActionsDisabled() || (_randomAnimationEnd > System.currentTimeMillis()))
+		{ return true; }
+		if(_def_think)
 		{
-			return true;
-		}
-		if (_def_think)
-		{
-			if (doTask())
+			if(doTask())
 			{
 				clearTasks();
 			}
@@ -305,29 +267,29 @@ public class DefaultAI extends NpcAI
 		}
 
 		final long now = System.currentTimeMillis();
-		if (now - _checkAggroTimestamp > Config.AGGRO_CHECK_INTERVAL)
+		if(now - _checkAggroTimestamp > Config.AGGRO_CHECK_INTERVAL)
 		{
 			_checkAggroTimestamp = now;
 
 			final boolean aggressive = Rnd.chance(actor.getParameter("SelfAggressive", isAggressive() ? 100 : 0));
 			final int radius = !actor.getAggroList().isEmpty() ? getMaxPursueRange() : (aggressive ? (getAggroRange() > 0 ? getAggroRange() : 1000) : 0);
-			if (radius > 0)
+			if(radius > 0)
 			{
 				final List<Creature> targets = World.getAroundAttackableCreatures(actor, radius, 250);
 				try
 				{
 					Collections.sort(targets, _nearestTargetComparator);
 				}
-				catch (final Exception e)
+				catch(final Exception e)
 				{
 					// Comparison method violates its general contract!
 				}
 
-				for (final Creature target : targets)
+				for(final Creature target : targets)
 				{
-					if (aggressive || actor.getAggroList().get(target) != null)
+					if(aggressive || actor.getAggroList().get(target) != null)
 					{
-						if (checkAggression(target))
+						if(checkAggression(target))
 						{
 							notifyEvent(CtrlEvent.EVT_AGGRESSION, target, 2);
 							return true;
@@ -337,20 +299,20 @@ public class DefaultAI extends NpcAI
 			}
 		}
 
-		if (actor.isMinion() && actor.isSpawnLeaderDepends())
+		if(actor.isMinion() && actor.isSpawnLeaderDepends())
 		{
 			final NpcInstance leader = actor.getLeader();
-			if (leader != null)
+			if(leader != null)
 			{
 				final Location leaderPos = leader.getLoc();
-				if (actor.getDistance(leader) > getMaxPursueRange() || !GeoEngine.canSeeTarget(actor, leader))
+				if(actor.getDistance(leader) > getMaxPursueRange() || !GeoEngine.canSeeTarget(actor, leader))
 				{
 					_lastLeaderPos = leaderPos;
 					actor.teleToLocation(leader.getRndMinionPosition());
 					return true;
 				}
 
-				if ((_lastLeaderPos == null || !_lastLeaderPos.equals(leader.getLoc())))
+				if((_lastLeaderPos == null || !_lastLeaderPos.equals(leader.getLoc())))
 				{
 					_lastLeaderPos = leaderPos;
 					addTaskMove(leader.getRndMinionPosition(), true, false);
@@ -367,10 +329,8 @@ public class DefaultAI extends NpcAI
 	@Override
 	protected void onEvtNoDesire()
 	{
-		if (randomAnimation())
-		{
-			return;
-		}
+		if(randomAnimation())
+		{ return; }
 		randomWalk();
 	}
 
@@ -399,7 +359,7 @@ public class DefaultAI extends NpcAI
 		actor.getMovement().stopMove();
 		actor.setLastAttackTime(-1);
 
-		if (getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
+		if(getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
 		{
 			switchAITask(_activeAITaskDelay);
 			changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
@@ -420,7 +380,7 @@ public class DefaultAI extends NpcAI
 		setAttackTarget(target);
 		setGlobalAggro(0);
 
-		if (getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
+		if(getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
 		{
 			changeIntention(CtrlIntention.AI_INTENTION_ATTACK, target, null);
 			switchAITask(_attackAITaskDelay);
@@ -448,31 +408,25 @@ public class DefaultAI extends NpcAI
 	protected boolean checkTarget(Creature target, int range)
 	{
 		final NpcInstance actor = getActor();
-		if (target == null || actor == target || target.isAlikeDead() || !actor.isInRangeZ(target, range) || !target.isTargetable(actor))
-		{
-			return false;
-		}
+		if(target == null || actor == target || target.isAlikeDead() || !actor.isInRangeZ(target, range) || !target.isTargetable(actor))
+		{ return false; }
 
-		if (target.isPlayable() && ((Playable) target).isInNonAggroTime())
-		{
-			return false;
-		}
+		if(target.isPlayable() && ((Playable) target).isInNonAggroTime())
+		{ return false; }
 
 		// If we don't see spells in hide, we don't attack them
 		final boolean hidden = target.isInvisible(actor);
-		if (!hidden && actor.isConfused())
-		{
-			return true;
-		}
+		if(!hidden && actor.isConfused())
+		{ return true; }
 		// In a state of attack, we attack everyone we have a hat on
-		if (getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
+		if(getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
 		{
-			if (canAttackCharacter(target) || target.getAI().canAttackCharacter(actor))
+			if(canAttackCharacter(target) || target.getAI().canAttackCharacter(actor))
 			{
 				final AggroInfo ai = actor.getAggroList().get(target);
-				if (ai != null)
+				if(ai != null)
 				{
-					if (hidden)
+					if(hidden)
 					{
 						ai.hate = 0; // Clear Hat
 						return false;
@@ -483,42 +437,38 @@ public class DefaultAI extends NpcAI
 			}
 		}
 
-		if (hidden)
-		{
-			return false;
-		}
+		if(hidden)
+		{ return false; }
 		return canAttackCharacter(target);
 	}
 
 	protected void thinkAttack()
 	{
 		final NpcInstance actor = getActor();
-		if (actor.isDead())
-		{
-			return;
-		}
+		if(actor.isDead())
+		{ return; }
 
-		if (!actor.isInRange(actor.getSpawnedLoc(), getMaxPursueRange()))
+		if(!actor.isInRange(actor.getSpawnedLoc(), getMaxPursueRange()))
 		{
 			returnHomeAndRestore(actor.isRunning());
 			return;
 		}
 
 		// If the mob does not run to attack, then we change walking to running.
-		if (!actor.isRunning() && _runningTask == null)
+		if(!actor.isRunning() && _runningTask == null)
 		{
 			actor.setRunning();
 		}
 
-		if (doTask())
+		if(doTask())
 		{
-			if (!actor.isAttackingNow() && !actor.isCastingNow())
+			if(!actor.isAttackingNow() && !actor.isCastingNow())
 			{
-				if (!createNewTask())
+				if(!createNewTask())
 				{
-					if (actor.getLastAttackTime() > 0)
+					if(actor.getLastAttackTime() > 0)
 					{
-						if (System.currentTimeMillis() > (actor.getLastAttackTime() + MAX_ATTACK_TIMEOUT))
+						if(System.currentTimeMillis() > (actor.getLastAttackTime() + MAX_ATTACK_TIMEOUT))
 						{
 							returnHome(false);
 						}
@@ -537,7 +487,7 @@ public class DefaultAI extends NpcAI
 	{
 		setGlobalAggro(System.currentTimeMillis() + getActor().getParameter("globalAggro", 10000L));
 		setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
-		if (getActor().isMinion() && getActor().getLeader() != null)
+		if(getActor().isMinion() && getActor().getLeader() != null)
 		{
 			_isGlobal = getActor().getLeader().getAI().isGlobalAI();
 		}
@@ -571,30 +521,26 @@ public class DefaultAI extends NpcAI
 	{
 		final NpcInstance actor = getActor();
 
-		if (!actor.isInRange(actor.getSpawnedLoc(), getMaxPursueRange()))
+		if(!actor.isInRange(actor.getSpawnedLoc(), getMaxPursueRange()))
 		{
 			returnHomeAndRestore(actor.isRunning());
 			return false;
 		}
 
-		if (actor.getMovement().followToCharacter(target, range, true))
-		{
-			return true;
-		}
+		if(actor.getMovement().followToCharacter(target, range, true))
+		{ return true; }
 		// Не гонимся за персонажем, если мы его уже не видем.
-		if (!GeoEngine.canSeeTarget(actor, target))
-		{
-			return false;
-		}
+		if(!GeoEngine.canSeeTarget(actor, target))
+		{ return false; }
 
 		_pathfindFails++;
-		if (_pathfindFails >= getMaxPathfindFails() && (System.currentTimeMillis() > (actor.getLastAttackTime() + TELEPORT_TIMEOUT)))
+		if(_pathfindFails >= getMaxPathfindFails() && (System.currentTimeMillis() > (actor.getLastAttackTime() + TELEPORT_TIMEOUT)))
 		{
 			_pathfindFails = 0;
 
 			final Location targetLoc = target.getLoc();
 			Location loc = GeoEngine.moveCheckForAI(targetLoc, actor.getLoc(), actor.getGeoIndex());
-			if (loc == null || !GeoEngine.canMoveToCoord(actor.getX(), actor.getY(), actor.getZ(), loc.x, loc.y, loc.z, actor.getGeoIndex()))
+			if(loc == null || !GeoEngine.canMoveToCoord(actor.getX(), actor.getY(), actor.getZ(), loc.x, loc.y, loc.z, actor.getGeoIndex()))
 			{
 				loc = targetLoc; // For insurance
 			}
@@ -609,52 +555,40 @@ public class DefaultAI extends NpcAI
 		// Next Task
 		_tasks.remove(currentTask);
 		// If there are no more tasks, define a new one
-		if (_tasks.isEmpty())
-		{
-			return true;
-		}
+		if(_tasks.isEmpty())
+		{ return true; }
 		return false;
 	}
 
 	protected boolean doTask()
 	{
 		final NpcInstance actor = getActor();
-		if (!_def_think)
-		{
-			return true;
-		}
+		if(!_def_think)
+		{ return true; }
 
 		final Task currentTask = _tasks.pollFirst();
-		if (currentTask == null)
+		if(currentTask == null)
 		{
 			clearTasks();
 			return true;
 		}
 
-		if (actor.isDead() || actor.isAttackingNow() || actor.isCastingNow())
-		{
-			return false;
-		}
-		switch (currentTask.type)
+		if(actor.isDead() || actor.isAttackingNow() || actor.isCastingNow())
+		{ return false; }
+		switch(currentTask.type)
 		{
 			// Задание "прибежать в заданные координаты"
 			case MOVE:
 			{
-				if (actor.isMovementDisabled() || !getIsMobile())
+				if(actor.isMovementDisabled() || !getIsMobile())
+				{ return true; }
+				if(actor.isInRange(currentTask.loc, 100))
+				{ return maybeNextTask(currentTask); }
+				if(actor.getMovement().isMoving())
+				{ return false; }
+				if(!actor.getMovement().moveToLocation(currentTask.loc, 0, currentTask.pathfind))
 				{
-					return true;
-				}
-				if (actor.isInRange(currentTask.loc, 100))
-				{
-					return maybeNextTask(currentTask);
-				}
-				if (actor.getMovement().isMoving())
-				{
-					return false;
-				}
-				if (!actor.getMovement().moveToLocation(currentTask.loc, 0, currentTask.pathfind))
-				{
-					if (getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME || currentTask.teleportIfCantMove)
+					if(getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME || currentTask.teleportIfCantMove)
 					{
 						clientStopMoving();
 						_pathfindFails = 0;
@@ -668,34 +602,26 @@ public class DefaultAI extends NpcAI
 			case ATTACK:
 			{
 				final Creature target = currentTask.target.get();
-				if ((target == null) || !checkTarget(target, getMaxHateRange()))
-				{
-					return true;
-				}
+				if((target == null) || !checkTarget(target, getMaxHateRange()))
+				{ return true; }
 
 				setAttackTarget(target);
 				getActor().setTarget(target);
 				final int range = Math.max(10, actor.getPhysicalAttackRange()) + (int) actor.getMinDistance(target);
-				if (actor.isInRangeZ(target, range + 32) && GeoEngine.canSeeTarget(actor, target))
+				if(actor.isInRangeZ(target, range + 32) && GeoEngine.canSeeTarget(actor, target))
 				{
-					if (actor.isAttackingDisabled())
-					{
-						return false;
-					}
+					if(actor.isAttackingDisabled())
+					{ return false; }
 					clientStopMoving();
 					_pathfindFails = 0;
 					actor.doAttack(target);
 					return maybeNextTask(currentTask);
 				}
 
-				if (actor.getMovement().isMoving())
-				{
-					return Rnd.chance(25);
-				}
-				if (actor.isMovementDisabled() || !getIsMobile())
-				{
-					return true;
-				}
+				if(actor.getMovement().isMoving())
+				{ return Rnd.chance(25); }
+				if(actor.isMovementDisabled() || !getIsMobile())
+				{ return true; }
 				tryMoveToTarget(target, range);
 				break;
 			}
@@ -703,23 +629,17 @@ public class DefaultAI extends NpcAI
 			case CAST:
 			{
 				final Creature target = currentTask.target.get();
-				if (target == null)
-				{
-					return true;
-				}
+				if(target == null)
+				{ return true; }
 
 				final SkillEntry skillEntry = currentTask.skillEntry;
-				if (skillEntry == null)
-				{
-					return true;
-				}
+				if(skillEntry == null)
+				{ return true; }
 
 				final Skill skill = skillEntry.getTemplate();
-				if (actor.isMuted(skill) || actor.isSkillDisabled(skill) || actor.isUnActiveSkill(skill.getId()))
-				{
-					return true;
-				}
-				if (skill.isNotTargetAoE())
+				if(actor.isMuted(skill) || actor.isSkillDisabled(skill) || actor.isUnActiveSkill(skill.getId()))
+				{ return true; }
+				if(skill.isNotTargetAoE())
 				{
 					clientStopMoving();
 					_pathfindFails = 0;
@@ -727,23 +647,21 @@ public class DefaultAI extends NpcAI
 					return maybeNextTask(currentTask);
 				}
 
-				if (skill.getTargetType() == SkillTargetType.TARGET_AURA)
+				if(skill.getTargetType() == SkillTargetType.TARGET_AURA)
 				{
 					clientStopMoving();
 					actor.doCast(skillEntry, actor, false);
 					return maybeNextTask(currentTask);
 				}
 
-				if (!checkTarget(target, getMaxHateRange()))
-				{
-					return true;
-				}
+				if(!checkTarget(target, getMaxHateRange()))
+				{ return true; }
 
 				setCastTarget(target);
 				getActor().setTarget(target); // TODO
 
 				final int range = Math.max(10, actor.getMagicalAttackRange(skill)) + (int) actor.getMinDistance(target);
-				if (actor.isInRangeZ(target, range + 62) && GeoEngine.canSeeTarget(actor, target))
+				if(actor.isInRangeZ(target, range + 62) && GeoEngine.canSeeTarget(actor, target))
 				{
 					clientStopMoving();
 					_pathfindFails = 0;
@@ -751,14 +669,10 @@ public class DefaultAI extends NpcAI
 					return maybeNextTask(currentTask);
 				}
 
-				if (actor.getMovement().isMoving())
-				{
-					return Rnd.chance(10);
-				}
-				if (actor.isMovementDisabled() || !getIsMobile())
-				{
-					return true;
-				}
+				if(actor.getMovement().isMoving())
+				{ return Rnd.chance(10); }
+				if(actor.isMovementDisabled() || !getIsMobile())
+				{ return true; }
 
 				tryMoveToTarget(target, range);
 				break;
@@ -767,22 +681,16 @@ public class DefaultAI extends NpcAI
 			case BUFF:
 			{
 				final Creature target = currentTask.target.get();
-				if (target == null)
-				{
-					return true;
-				}
+				if(target == null)
+				{ return true; }
 
 				final SkillEntry skillEntry = currentTask.skillEntry;
-				if (skillEntry == null)
-				{
-					return true;
-				}
+				if(skillEntry == null)
+				{ return true; }
 				final Skill skill = skillEntry.getTemplate();
-				if (actor.isMuted(skill) || actor.isSkillDisabled(skill) || actor.isUnActiveSkill(skill.getId()))
-				{
-					return true;
-				}
-				if (skill.getTargetType() == SkillTargetType.TARGET_SELF || skill.getTargetType() == SkillTargetType.TARGET_AURA)
+				if(actor.isMuted(skill) || actor.isSkillDisabled(skill) || actor.isUnActiveSkill(skill.getId()))
+				{ return true; }
+				if(skill.getTargetType() == SkillTargetType.TARGET_SELF || skill.getTargetType() == SkillTargetType.TARGET_AURA)
 				{
 					clientStopMoving();
 					_pathfindFails = 0;
@@ -790,12 +698,10 @@ public class DefaultAI extends NpcAI
 					return maybeNextTask(currentTask);
 				}
 
-				if (target == null || target.isAlikeDead() || !actor.isInRange(target, 2000))
-				{
-					return true;
-				}
+				if(target == null || target.isAlikeDead() || !actor.isInRange(target, 2000))
+				{ return true; }
 				final int range = Math.max(10, actor.getMagicalAttackRange(skill)) + (int) actor.getMinDistance(target);
-				if (actor.isInRangeZ(target, range + 32) && GeoEngine.canSeeTarget(actor, target))
+				if(actor.isInRangeZ(target, range + 32) && GeoEngine.canSeeTarget(actor, target))
 				{
 					clientStopMoving();
 					_pathfindFails = 0;
@@ -803,14 +709,10 @@ public class DefaultAI extends NpcAI
 					return maybeNextTask(currentTask);
 				}
 
-				if (actor.getMovement().isMoving())
-				{
-					return Rnd.chance(10);
-				}
-				if (actor.isMovementDisabled() || !getIsMobile())
-				{
-					return true;
-				}
+				if(actor.getMovement().isMoving())
+				{ return Rnd.chance(10); }
+				if(actor.isMovementDisabled() || !getIsMobile())
+				{ return true; }
 				tryMoveToTarget(target, range);
 				break;
 			}
@@ -830,9 +732,9 @@ public class DefaultAI extends NpcAI
 
 		final NpcInstance actor = getActor();
 		Creature target;
-		if (actor == null || (target = prepareTarget()) == null)
+		if(actor == null || (target = prepareTarget()) == null)
 		{
-			if (getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
+			if(getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				return maybeMoveToHome(true);
@@ -849,17 +751,15 @@ public class DefaultAI extends NpcAI
 		try
 		{
 			final NpcInstance actor = getActor();
-			if (actor == null)
-			{
-				return;
-			}
+			if(actor == null)
+			{ return; }
 
-			if (Config.BATTLE_ZONE_AROUND_RAID_BOSSES_RANGE > 0 && actor.isRaid())
+			if(Config.BATTLE_ZONE_AROUND_RAID_BOSSES_RANGE > 0 && actor.isRaid())
 			{
-				if (System.currentTimeMillis() > (_lastRaidPvpZoneCheck + 1000))
+				if(System.currentTimeMillis() > (_lastRaidPvpZoneCheck + 1000))
 				{
 					_lastRaidPvpZoneCheck = System.currentTimeMillis();
-					for (final Player player : World.getAroundPlayers(actor, Config.BATTLE_ZONE_AROUND_RAID_BOSSES_RANGE, 200))
+					for(final Player player : World.getAroundPlayers(actor, Config.BATTLE_ZONE_AROUND_RAID_BOSSES_RANGE, 200))
 					{
 						player.startPvPFlag(null);
 						player.setLastPvPAttack(System.currentTimeMillis() - Config.PVP_TIME + 21000);
@@ -867,26 +767,25 @@ public class DefaultAI extends NpcAI
 				}
 			}
 
-			if (actor.isActionsDisabled() || actor.isAfraid() || (_randomAnimationEnd > System.currentTimeMillis()) || !_thinking.tryLock())
-			{
-				return;
-			}
+			if(actor.isActionsDisabled() || actor.isAfraid() || (_randomAnimationEnd > System.currentTimeMillis()) || !_thinking.tryLock())
+			{ return; }
 			try
 			{
 				lookNeighbor(actor.getAggroRange(), false);
-				if (!Config.BLOCK_ACTIVE_TASKS && (getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE))
+				if(!Config.BLOCK_ACTIVE_TASKS
+						&& (getIntention() == CtrlIntention.AI_INTENTION_ACTIVE || getIntention() == CtrlIntention.AI_INTENTION_WALKER_ROUTE))
 				{
 					thinkActive();
 				}
-				else if (getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
+				else if(getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
 				{
 					thinkAttack();
 				}
-				else if (getIntention() == CtrlIntention.AI_INTENTION_FOLLOW)
+				else if(getIntention() == CtrlIntention.AI_INTENTION_FOLLOW)
 				{
 					thinkFollow();
 				}
-				else if (getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
+				else if(getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
 				{
 					thinkReturnHome();
 				}
@@ -909,10 +808,10 @@ public class DefaultAI extends NpcAI
 
 		final int transformer = actor.getParameter("transformOnDead", 0);
 		final int chance = actor.getParameter("transformChance", 100);
-		if (transformer > 0 && Rnd.chance(chance))
+		if(transformer > 0 && Rnd.chance(chance))
 		{
 			final NpcInstance npc = NpcUtils.spawnSingle(transformer, actor.getLoc(), actor.getReflection());
-			if (killer != null && killer.isPlayable())
+			if(killer != null && killer.isPlayable())
 			{
 				npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, killer, 100);
 				killer.setTarget(npc);
@@ -927,12 +826,10 @@ public class DefaultAI extends NpcAI
 	@Override
 	protected void onEvtClanAttacked(NpcInstance member, Creature attacker, int damage)
 	{
-		if (damage > 0)
+		if(damage > 0)
 		{
-			if (Math.abs(attacker.getZ() - getActor().getZ()) > 400)
-			{
-				return;
-			}
+			if(Math.abs(attacker.getZ() - getActor().getZ()) > 400)
+			{ return; }
 			notifyEvent(CtrlEvent.EVT_AGGRESSION, attacker, (int) Math.max(1, (damage * 0.25 + 0.5)));
 		}
 	}
@@ -961,41 +858,35 @@ public class DefaultAI extends NpcAI
 		lock.lock();
 		try
 		{
-			if (getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
-			{
-				return;
-			}
+			if(getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
+			{ return; }
 
 			final NpcInstance actor = getActor();
-			if (attacker == null || actor.isDead() || attacker.isConfused())
-			{
-				return;
-			}
+			if(attacker == null || actor.isDead() || attacker.isConfused())
+			{ return; }
 			final Player player = attacker.getPlayer();
 
-			if (player != null)
+			if(player != null)
 			{
 				final List<QuestState> quests = player.getQuestsForEvent(actor, QuestEventType.ATTACKED_WITH_QUEST);
-				if (quests != null)
+				if(quests != null)
 				{
-					for (final QuestState qs : quests)
+					for(final QuestState qs : quests)
 					{
 						qs.getQuest().notifyAttack(actor, qs);
 					}
 				}
 			}
 
-			if ((damage <= 0) || attacker.isInvisible(actor) || !canAttackCharacter(attacker))
-			{
-				return;
-			}
+			if((damage <= 0) || attacker.isInvisible(actor) || !canAttackCharacter(attacker))
+			{ return; }
 			Creature myTarget = attacker;
-			if (attacker.isServitor())
+			if(attacker.isServitor())
 			{
 				final Player summoner = attacker.getPlayer();
-				if (summoner != null)
+				if(summoner != null)
 				{
-					if (_isSearchingMaster)
+					if(_isSearchingMaster)
 					{ // моб ищет и атакует хозяина саммона
 						myTarget = summoner;
 					}
@@ -1006,12 +897,12 @@ public class DefaultAI extends NpcAI
 					}
 				}
 			}
-			else if (attacker.isSymbolInstance())
+			else if(attacker.isSymbolInstance())
 			{
 				myTarget = attacker.getPlayer();
 			}
 
-			if (myTarget == null)
+			if(myTarget == null)
 			{
 				myTarget = attacker;
 			}
@@ -1020,23 +911,23 @@ public class DefaultAI extends NpcAI
 			// добавлен в L2NpcInstance.onReduceCurrentHp
 			actor.getAggroList().addDamageHate(myTarget, 0, (int) myTarget.getStat().calc(Stats.DAMAGE_HATE_BONUS, damage));
 
-			if (getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
+			if(getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
 			{
-				if (!actor.isRunning())
+				if(!actor.isRunning())
 				{
 					startRunningTask(_attackAITaskDelay);
 				}
 				setIntention(CtrlIntention.AI_INTENTION_ATTACK, myTarget);
 			}
 
-			if (actor.isRaid())
+			if(actor.isRaid())
 			{
 				((RaidBossInstance) actor).startRaidBerserkTask();
 			}
 
-			if (actor.isArenaRaid())
+			if(actor.isArenaRaid())
 			{
-				if (actor.hasMinions())
+				if(actor.hasMinions())
 				{
 					actor.getMinionList().spawnMinions();
 				}
@@ -1056,26 +947,22 @@ public class DefaultAI extends NpcAI
 		lock.lock();
 		try
 		{
-			if (getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
-			{
-				return;
-			}
+			if(getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
+			{ return; }
 
 			final NpcInstance actor = getActor();
-			if (attacker == null || actor.isDead() || attacker.isConfused())
-			{
-				return;
-			}
+			if(attacker == null || actor.isDead() || attacker.isConfused())
+			{ return; }
 
 			Creature myTarget = attacker;
-			if (aggro > 0)
+			if(aggro > 0)
 			{
-				if (attacker.isServitor())
+				if(attacker.isServitor())
 				{
 					final Player summoner = attacker.getPlayer();
-					if (summoner != null)
+					if(summoner != null)
 					{
-						if (_isSearchingMaster)
+						if(_isSearchingMaster)
 						{ // моб ищет и атакует хозяина саммона
 							myTarget = summoner;
 						}
@@ -1086,13 +973,13 @@ public class DefaultAI extends NpcAI
 						}
 					}
 				}
-				else if (attacker.isSymbolInstance())
+				else if(attacker.isSymbolInstance())
 				{
 					myTarget = attacker.getPlayer();
 				}
 			}
 
-			if (myTarget == null)
+			if(myTarget == null)
 			{
 				myTarget = attacker;
 			}
@@ -1101,7 +988,7 @@ public class DefaultAI extends NpcAI
 			// добавлен в L2NpcInstance.onReduceCurrentHp
 			actor.getAggroList().addDamageHate(myTarget, 0, aggro);
 
-			if (getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
+			if(getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
 			{
 				startRunningTask(_attackAITaskDelay);
 				setIntention(CtrlIntention.AI_INTENTION_ATTACK, myTarget);
@@ -1119,32 +1006,26 @@ public class DefaultAI extends NpcAI
 		try
 		{
 			final NpcInstance actor = getActor();
-			if (actor.isDead() || actor.isMovementDisabled())
-			{
-				return false;
-			}
+			if(actor.isDead() || actor.isMovementDisabled())
+			{ return false; }
 
 			final Location sloc = actor.getSpawnedLoc();
 			final boolean isInRange = actor.isInRangeZ(sloc, Config.MAX_DRIFT_RANGE);
-			if (!force)
+			if(!force)
 			{
 				final boolean randomWalk = hasRandomWalk();
 				// Random walk or not?
-				if (randomWalk && (!Config.RND_WALK || !Rnd.chance(Config.RND_WALK_RATE)))
-				{
-					return false;
-				}
-				if (!randomWalk && isInRange)
-				{
-					return false;
-				}
+				if(randomWalk && (!Config.RND_WALK || !Rnd.chance(Config.RND_WALK_RATE)))
+				{ return false; }
+				if(!randomWalk && isInRange)
+				{ return false; }
 			}
 
 			final Location pos = Location.findPointToStay(actor, sloc, 0, Config.MAX_DRIFT_RANGE);
 			actor.setWalking();
 
 			// Teleport home only if far from home
-			if (!actor.getMovement().moveToLocation(pos, 0, true) && !isInRange && !(actor instanceof DecoyInstance))
+			if(!actor.getMovement().moveToLocation(pos, 0, true) && !isInRange && !(actor instanceof DecoyInstance))
 			{
 				actor.broadcastPacketToOthers(new MagicSkillUse(actor, actor, 2036, 1, 500, 0));
 				ThreadPoolManager.getInstance().schedule(new Teleport(sloc), 500L);
@@ -1161,9 +1042,9 @@ public class DefaultAI extends NpcAI
 	public boolean returnHomeAndRestore(boolean running)
 	{
 		final NpcInstance actor = getActor();
-		if (returnHome(running, actor.isRaid() ? Config.ALWAYS_TELEPORT_HOME_RB : Config.ALWAYS_TELEPORT_HOME, running, true))
+		if(returnHome(running, actor.isRaid() ? Config.ALWAYS_TELEPORT_HOME_RB : Config.ALWAYS_TELEPORT_HOME, running, true))
 		{
-			if (canRestoreOnReturnHome())
+			if(canRestoreOnReturnHome())
 			{
 				actor.setCurrentHpMp(actor.getMaxHp(), actor.getMaxMp());
 			}
@@ -1188,22 +1069,20 @@ public class DefaultAI extends NpcAI
 		try
 		{
 			final NpcInstance actor = getActor();
-			if (actor.isDead())
-			{
-				return false;
-			}
+			if(actor.isDead())
+			{ return false; }
 
-			if (actor.isMovementDisabled())
+			if(actor.isMovementDisabled())
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				return false;
 			}
 
-			if (actor.isMinion())
+			if(actor.isMinion())
 			{
 				// Миньон удаляется при переходе в активный режим, если лидер мертв (оффлайк).
 				final NpcInstance leader = actor.getLeader();
-				if (leader != null && !leader.isVisible())
+				if(leader != null && !leader.isVisible())
 				{
 					actor.deleteMe();
 					return false;
@@ -1211,41 +1090,39 @@ public class DefaultAI extends NpcAI
 			}
 
 			final Location sloc = actor.getSpawnedLoc();
-			if (actor.isInRangeZ(sloc, 32))
+			if(actor.isInRangeZ(sloc, 32))
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				return false;
 			}
 
-			if (!teleport && getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
-			{
-				return false;
-			}
+			if(!teleport && getIntention() == CtrlIntention.AI_INTENTION_RETURN_HOME)
+			{ return false; }
 			// Удаляем все задания
 			clearTasks();
 			actor.getMovement().stopMove();
 
-			if (clearAggro)
+			if(clearAggro)
 			{
 				actor.getAggroList().clear(true);
 			}
 
 			setAttackTarget(null);
 
-			if (teleport)
+			if(teleport)
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				actor.broadcastPacketToOthers(new MagicSkillUse(actor, actor, 2036, 1, 500, 0));
 				ThreadPoolManager.getInstance().schedule(new Teleport(sloc), 500L);
 			}
-			else if (force)
+			else if(force)
 			{
 				setIntention(CtrlIntention.AI_INTENTION_RETURN_HOME, running);
 			}
 			else
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
-				if (running)
+				if(running)
 				{
 					actor.setRunning();
 				}
@@ -1267,7 +1144,7 @@ public class DefaultAI extends NpcAI
 	protected void onIntentionReturnHome(boolean running)
 	{
 		final NpcInstance actor = getActor();
-		if (running)
+		if(running)
 		{
 			actor.setRunning();
 		}
@@ -1285,7 +1162,7 @@ public class DefaultAI extends NpcAI
 		clearTasks();
 		final NpcInstance actor = getActor();
 		final Location spawnLoc = actor.getSpawnedLoc();
-		if (actor.isInRange(spawnLoc, Math.min(getMaxPursueRange(), 100)))
+		if(actor.isInRange(spawnLoc, Math.min(getMaxPursueRange(), 100)))
 		{
 			setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 		}
@@ -1305,24 +1182,20 @@ public class DefaultAI extends NpcAI
 	{
 		final NpcInstance actor = getActor();
 
-		if (actor.isConfused())
-		{
-			return getAttackTarget();
-		}
+		if(actor.isConfused())
+		{ return getAttackTarget(); }
 
 		final Creature agressionTarget = actor.getAggressionTarget();
-		if (agressionTarget != null)
-		{
-			return agressionTarget;
-		}
+		if(agressionTarget != null)
+		{ return agressionTarget; }
 		// Для "двинутых" боссов, иногда, выбираем случайную цель
-		if (Rnd.chance(actor.getParameter("isMadness", 0)))
+		if(Rnd.chance(actor.getParameter("isMadness", 0)))
 		{
 			final Creature randomHated = actor.getAggroList().getRandomHated(getMaxHateRange());
-			if (randomHated != null && Math.abs(actor.getZ() - randomHated.getZ()) < 1000)
+			if(randomHated != null && Math.abs(actor.getZ() - randomHated.getZ()) < 1000)
 			{
 				setAttackTarget(randomHated);
-				if (_madnessTask == null)
+				if(_madnessTask == null)
 				{
 					actor.getFlags().getConfused().start();
 					_madnessTask = ThreadPoolManager.getInstance().schedule(new MadnessTask(), 10000);
@@ -1334,10 +1207,10 @@ public class DefaultAI extends NpcAI
 		// Новая цель исходя из агрессивности
 		final List<Creature> hateList = actor.getAggroList().getHateList(-1);
 		Creature hated = null;
-		for (final Creature cha : hateList)
+		for(final Creature cha : hateList)
 		{
 			// Не подходит, очищаем хейт
-			if (!checkTarget(cha, getMaxHateRange()))
+			if(!checkTarget(cha, getMaxHateRange()))
 			{
 				actor.getAggroList().remove(cha, true);
 				continue;
@@ -1346,7 +1219,7 @@ public class DefaultAI extends NpcAI
 			break;
 		}
 
-		if (hated != null)
+		if(hated != null)
 		{
 			setAttackTarget(hated);
 			return hated;
@@ -1358,24 +1231,18 @@ public class DefaultAI extends NpcAI
 	protected boolean canUseSkill(Skill skill, Creature target, double distance)
 	{
 		final NpcInstance actor = getActor();
-		if (skill == null || skill.isNotUsedByAI() || (skill.getTargetType() == SkillTargetType.TARGET_SELF && target != actor))
-		{
-			return false;
-		}
+		if(skill == null || skill.isNotUsedByAI() || (skill.getTargetType() == SkillTargetType.TARGET_SELF && target != actor))
+		{ return false; }
 
 		final int castRange = skill.getAOECastRange();
-		if (castRange <= 200 && distance > 200)
-		{
-			return false;
-		}
+		if(castRange <= 200 && distance > 200)
+		{ return false; }
 
-		if (actor.isSkillDisabled(skill) || actor.isMuted(skill) || actor.isUnActiveSkill(skill.getId()))
-		{
-			return false;
-		}
+		if(actor.isSkillDisabled(skill) || actor.isMuted(skill) || actor.isUnActiveSkill(skill.getId()))
+		{ return false; }
 
 		double mpConsume2 = skill.getMpConsume2();
-		if (skill.isMagic())
+		if(skill.isMagic())
 		{
 			mpConsume2 = actor.getStat().calc(Stats.MP_MAGIC_SKILL_CONSUME, mpConsume2, target, skill);
 		}
@@ -1383,10 +1250,8 @@ public class DefaultAI extends NpcAI
 		{
 			mpConsume2 = actor.getStat().calc(Stats.MP_PHYSICAL_SKILL_CONSUME, mpConsume2, target, skill);
 		}
-		if ((actor.getCurrentMp() < mpConsume2) || target.getAbnormalList().contains(skill.getId()))
-		{
-			return false;
-		}
+		if((actor.getCurrentMp() < mpConsume2) || target.getAbnormalList().contains(skill.getId()))
+		{ return false; }
 		return true;
 	}
 
@@ -1397,74 +1262,65 @@ public class DefaultAI extends NpcAI
 
 	protected Skill[] selectUsableSkills(Creature target, double distance, Skill[] skills)
 	{
-		if (skills == null || skills.length == 0 || target == null)
-		{
-			return null;
-		}
+		if(skills == null || skills.length == 0 || target == null)
+		{ return null; }
 
 		Skill[] ret = null;
 		int usable = 0;
 
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if (canUseSkill(skill, target, distance))
+			if(canUseSkill(skill, target, distance))
 			{
-				if (ret == null)
+				if(ret == null)
 				{
 					ret = new Skill[skills.length];
 				}
 				ret[usable++] = skill;
 			}
 		}
-		if (ret == null || usable == skills.length)
-		{
-			return ret;
-		}
-		if (usable == 0)
-		{
-			return null;
-		}
+		if(ret == null || usable == skills.length)
+		{ return ret; }
+		if(usable == 0)
+		{ return null; }
 		ret = Arrays.copyOf(ret, usable);
 		return ret;
 	}
 
 	protected static SkillEntry selectTopSkillByDamage(Creature actor, Creature target, double distance, Skill[] skills)
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return null;
-		}
+		if(skills == null || skills.length == 0)
+		{ return null; }
 
-		if (skills.length == 1)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]);
-		}
+		if(skills.length == 1)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]); }
 
 		Skill oneTargetSkill = null;
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if (skill.oneTarget())
+			if(skill.oneTarget())
 			{
-				if (oneTargetSkill == null || skill.getCastRange() >= distance && (distance / oneTargetSkill.getCastRange()) < (distance / skill.getCastRange()))
+				if(oneTargetSkill == null
+						|| skill.getCastRange() >= distance && (distance / oneTargetSkill.getCastRange()) < (distance / skill.getCastRange()))
 				{
 					oneTargetSkill = skill;
 				}
 			}
 		}
 
-		if (oneTargetSkill != null && oneTargetSkill.getCastRange() > 300 && distance < 200)
+		if(oneTargetSkill != null && oneTargetSkill.getCastRange() > 300 && distance < 200)
 		{
 			oneTargetSkill = null;
 		}
 
 		final RndSelector<Skill> rnd = new RndSelector<Skill>(skills.length);
 		double weight;
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if (!skill.oneTarget())
+			if(!skill.oneTarget())
 			{
 				weight = skill.getSimpleDamage(actor, target) / 10 + (distance / skill.getCastRange() * 100);
-				if (weight < 1.)
+				if(weight < 1.)
 				{
 					weight = 1.;
 				}
@@ -1474,15 +1330,11 @@ public class DefaultAI extends NpcAI
 
 		final Skill aoeSkill = rnd.select();
 
-		if (aoeSkill == null)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, oneTargetSkill);
-		}
-		if (oneTargetSkill == null)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, aoeSkill);
-		}
-		if (Rnd.chance(90))
+		if(aoeSkill == null)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, oneTargetSkill); }
+		if(oneTargetSkill == null)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, aoeSkill); }
+		if(Rnd.chance(90))
 		{
 			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, oneTargetSkill);
 		}
@@ -1494,25 +1346,21 @@ public class DefaultAI extends NpcAI
 
 	protected static SkillEntry selectTopSkillByDebuff(Creature actor, Creature target, double distance, Skill[] skills) // FIXME
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return null;
-		}
+		if(skills == null || skills.length == 0)
+		{ return null; }
 
-		if (skills.length == 1)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]);
-		}
+		if(skills.length == 1)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]); }
 
 		final RndSelector<Skill> rnd = new RndSelector<Skill>(skills.length);
 		double weight;
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if (skill.getSameByAbnormalType(target) != null)
+			if(skill.getSameByAbnormalType(target) != null)
 			{
 				continue;
 			}
-			if ((weight = 100. * skill.getAOECastRange() / distance) <= 0)
+			if((weight = 100. * skill.getAOECastRange() / distance) <= 0)
 			{
 				weight = 1;
 			}
@@ -1523,25 +1371,21 @@ public class DefaultAI extends NpcAI
 
 	protected static SkillEntry selectTopSkillByBuff(Creature target, Skill[] skills)
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return null;
-		}
+		if(skills == null || skills.length == 0)
+		{ return null; }
 
-		if (skills.length == 1)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]);
-		}
+		if(skills.length == 1)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]); }
 
 		final RndSelector<Skill> rnd = new RndSelector<Skill>(skills.length);
 		double weight;
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if (skill.getSameByAbnormalType(target) != null)
+			if(skill.getSameByAbnormalType(target) != null)
 			{
 				continue;
 			}
-			if ((weight = skill.getPower()) <= 0)
+			if((weight = skill.getPower()) <= 0)
 			{
 				weight = 1;
 			}
@@ -1552,26 +1396,20 @@ public class DefaultAI extends NpcAI
 
 	protected static SkillEntry selectTopSkillByHeal(Creature target, Skill[] skills)
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return null;
-		}
+		if(skills == null || skills.length == 0)
+		{ return null; }
 
 		final double hpReduced = target.getMaxHp() - target.getCurrentHp();
-		if (hpReduced < 1)
-		{
-			return null;
-		}
-		if (skills.length == 1)
-		{
-			return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]);
-		}
+		if(hpReduced < 1)
+		{ return null; }
+		if(skills.length == 1)
+		{ return SkillEntry.makeSkillEntry(SkillEntryType.NONE, skills[0]); }
 
 		final RndSelector<Skill> rnd = new RndSelector<Skill>(skills.length);
 		double weight;
-		for (final Skill skill : skills)
+		for(final Skill skill : skills)
 		{
-			if ((weight = Math.abs(skill.getPower() - hpReduced)) <= 0)
+			if((weight = Math.abs(skill.getPower() - hpReduced)) <= 0)
 			{
 				weight = 1;
 			}
@@ -1582,12 +1420,10 @@ public class DefaultAI extends NpcAI
 
 	protected void addDesiredSkill(Map<SkillEntry, Integer> skillMap, Creature target, double distance, SkillEntry[] skills)
 	{
-		if (skills == null || skills.length == 0 || target == null)
-		{
-			return;
-		}
+		if(skills == null || skills.length == 0 || target == null)
+		{ return; }
 
-		for (final SkillEntry sk : skills)
+		for(final SkillEntry sk : skills)
 		{
 			addDesiredSkill(skillMap, target, distance, sk);
 		}
@@ -1595,50 +1431,40 @@ public class DefaultAI extends NpcAI
 
 	protected void addDesiredSkill(Map<SkillEntry, Integer> skillMap, Creature target, double distance, SkillEntry skillEntry)
 	{
-		if (skillEntry == null || target == null)
-		{
-			return;
-		}
+		if(skillEntry == null || target == null)
+		{ return; }
 
 		final Skill skill = skillEntry.getTemplate();
-		if (!canUseSkill(skill, target))
-		{
-			return;
-		}
+		if(!canUseSkill(skill, target))
+		{ return; }
 		int weight = (int) -Math.abs(skill.getAOECastRange() - distance);
-		if (skill.getAOECastRange() >= distance)
+		if(skill.getAOECastRange() >= distance)
 		{
 			weight += 1000000;
 		}
-		else if (skill.isNotTargetAoE() && skill.getTargets(skillEntry, getActor(), target, false).size() == 0)
-		{
-			return;
-		}
+		else if(skill.isNotTargetAoE() && skill.getTargets(skillEntry, getActor(), target, false).size() == 0)
+		{ return; }
 		skillMap.put(skillEntry, weight);
 	}
 
 	protected void addDesiredHeal(Map<SkillEntry, Integer> skillMap, SkillEntry[] skills)
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return;
-		}
+		if(skills == null || skills.length == 0)
+		{ return; }
 
 		final NpcInstance actor = getActor();
 		final double hpReduced = actor.getMaxHp() - actor.getCurrentHp();
 		final double hpPercent = actor.getCurrentHpPercents();
-		if (hpReduced < 1)
-		{
-			return;
-		}
+		if(hpReduced < 1)
+		{ return; }
 		int weight;
-		for (final SkillEntry sk : skills)
+		for(final SkillEntry sk : skills)
 		{
 			final Skill skill = sk.getTemplate();
-			if (canUseSkill(skill, actor) && skill.getPower() <= hpReduced)
+			if(canUseSkill(skill, actor) && skill.getPower() <= hpReduced)
 			{
 				weight = (int) skill.getPower();
-				if (hpPercent < 50)
+				if(hpPercent < 50)
 				{
 					weight += 1000000;
 				}
@@ -1649,15 +1475,13 @@ public class DefaultAI extends NpcAI
 
 	protected void addDesiredBuff(Map<SkillEntry, Integer> skillMap, SkillEntry[] skills)
 	{
-		if (skills == null || skills.length == 0)
-		{
-			return;
-		}
+		if(skills == null || skills.length == 0)
+		{ return; }
 
 		final NpcInstance actor = getActor();
-		for (final SkillEntry sk : skills)
+		for(final SkillEntry sk : skills)
 		{
-			if (canUseSkill(sk.getTemplate(), actor))
+			if(canUseSkill(sk.getTemplate(), actor))
 			{
 				skillMap.put(sk, 1000000);
 			}
@@ -1666,29 +1490,25 @@ public class DefaultAI extends NpcAI
 
 	protected SkillEntry selectTopSkill(Map<SkillEntry, Integer> skillMap)
 	{
-		if (skillMap == null || skillMap.isEmpty())
-		{
-			return null;
-		}
+		if(skillMap == null || skillMap.isEmpty())
+		{ return null; }
 
 		int nWeight, topWeight = Integer.MIN_VALUE;
-		for (final SkillEntry next : skillMap.keySet())
+		for(final SkillEntry next : skillMap.keySet())
 		{
-			if ((nWeight = skillMap.get(next)) > topWeight)
+			if((nWeight = skillMap.get(next)) > topWeight)
 			{
 				topWeight = nWeight;
 			}
 		}
-		if (topWeight == Integer.MIN_VALUE)
-		{
-			return null;
-		}
+		if(topWeight == Integer.MIN_VALUE)
+		{ return null; }
 
 		final SkillEntry[] skills = new SkillEntry[skillMap.size()];
 		nWeight = 0;
-		for (final Map.Entry<SkillEntry, Integer> e : skillMap.entrySet())
+		for(final Map.Entry<SkillEntry, Integer> e : skillMap.entrySet())
 		{
-			if (e.getValue() < topWeight)
+			if(e.getValue() < topWeight)
 			{
 				continue;
 			}
@@ -1701,25 +1521,25 @@ public class DefaultAI extends NpcAI
 	{
 		final NpcInstance actor = getActor();
 		// Использовать скилл если можно, иначе атаковать
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
 			final Skill skill = skillEntry.getTemplate();
 			// Проверка цели, и смена если необходимо
-			if (actor.isMovementDisabled() && distance > skill.getAOECastRange() + 60)
+			if(actor.isMovementDisabled() && distance > skill.getAOECastRange() + 60)
 			{
 				target = null;
-				if (skill.isDebuff())
+				if(skill.isDebuff())
 				{
 					final LazyArrayList<Creature> targets = LazyArrayList.newInstance();
-					for (final Creature cha : actor.getAggroList().getHateList(getMaxHateRange()))
+					for(final Creature cha : actor.getAggroList().getHateList(getMaxHateRange()))
 					{
-						if (!checkTarget(cha, skill.getAOECastRange() + 60) || !canUseSkill(skill, cha))
+						if(!checkTarget(cha, skill.getAOECastRange() + 60) || !canUseSkill(skill, cha))
 						{
 							continue;
 						}
 						targets.add(cha);
 					}
-					if (!targets.isEmpty())
+					if(!targets.isEmpty())
 					{
 						target = targets.get(Rnd.get(targets.size()));
 					}
@@ -1727,12 +1547,10 @@ public class DefaultAI extends NpcAI
 				}
 			}
 
-			if (target == null)
-			{
-				return false;
-			}
+			if(target == null)
+			{ return false; }
 			// Добавить новое задание
-			if (skill.isDebuff())
+			if(skill.isDebuff())
 			{
 				addTaskCast(target, skillEntry);
 			}
@@ -1744,29 +1562,27 @@ public class DefaultAI extends NpcAI
 		}
 
 		// Смена цели, если необходимо
-		if (actor.isMovementDisabled() && distance > actor.getPhysicalAttackRange() + 32)
+		if(actor.isMovementDisabled() && distance > actor.getPhysicalAttackRange() + 32)
 		{
 			target = null;
 			final LazyArrayList<Creature> targets = LazyArrayList.newInstance();
-			for (final Creature cha : actor.getAggroList().getHateList(getMaxHateRange()))
+			for(final Creature cha : actor.getAggroList().getHateList(getMaxHateRange()))
 			{
-				if (!checkTarget(cha, actor.getPhysicalAttackRange() + 32))
+				if(!checkTarget(cha, actor.getPhysicalAttackRange() + 32))
 				{
 					continue;
 				}
 				targets.add(cha);
 			}
-			if (!targets.isEmpty())
+			if(!targets.isEmpty())
 			{
 				target = targets.get(Rnd.get(targets.size()));
 			}
 			LazyArrayList.recycle(targets);
 		}
 
-		if (target == null)
-		{
-			return false;
-		}
+		if(target == null)
+		{ return false; }
 		// Добавить новое задание
 		addTaskAttack(target);
 		return true;
@@ -1782,7 +1598,7 @@ public class DefaultAI extends NpcAI
 	protected void startRunningTask(long interval)
 	{
 		final NpcInstance actor = getActor();
-		if (_runningTask == null && !actor.isRunning())
+		if(_runningTask == null && !actor.isRunning())
 		{
 			_runningTask = ThreadPoolManager.getInstance().schedule(new RunningTask(), interval);
 		}
@@ -1790,9 +1606,9 @@ public class DefaultAI extends NpcAI
 
 	protected boolean isGlobalAggro()
 	{
-		if (_globalAggro == 0)
+		if(_globalAggro == 0)
 			return true;
-		if (_globalAggro <= System.currentTimeMillis())
+		if(_globalAggro <= System.currentTimeMillis())
 		{
 			_globalAggro = 0;
 			return true;
@@ -1818,39 +1634,37 @@ public class DefaultAI extends NpcAI
 	 */
 	protected void notifyFriendsOnAttack(Creature attacker, Skill skill, int damage)
 	{
-		if (damage <= 0)
-		{
-			return;
-		}
+		if(damage <= 0)
+		{ return; }
 
 		final NpcInstance actor = getActor();
-		if ((System.currentTimeMillis() - _lastFactionNotifyTime) > _minFactionNotifyInterval)
+		if((System.currentTimeMillis() - _lastFactionNotifyTime) > _minFactionNotifyInterval)
 		{
 			_lastFactionNotifyTime = System.currentTimeMillis();
 			// Оповестить социальных мобов
-			for (final NpcInstance npc : activeFactionTargets())
+			for(final NpcInstance npc : activeFactionTargets())
 			{
 				npc.getAI().notifyEvent(CtrlEvent.EVT_CLAN_ATTACKED, actor, attacker, damage);
 			}
 		}
 
-		if (actor.isMinion())
+		if(actor.isMinion())
 		{
 			// Оповестить лидера об атаке
 			final NpcInstance master = actor.getLeader();
-			if (master != null)
+			if(master != null)
 			{
-				if (!master.isDead() && master.isVisible())
+				if(!master.isDead() && master.isVisible())
 				{
 					master.getAI().notifyEvent(CtrlEvent.EVT_PARTY_ATTACKED, actor, attacker, damage);
 				}
 
 				// Оповестить минионов лидера об атаке
-				if (master.hasMinions())
+				if(master.hasMinions())
 				{
-					for (final NpcInstance minion : master.getMinionList().getAliveMinions())
+					for(final NpcInstance minion : master.getMinionList().getAliveMinions())
 					{
-						if (minion != actor)
+						if(minion != actor)
 						{
 							minion.getAI().notifyEvent(CtrlEvent.EVT_PARTY_ATTACKED, actor, attacker, damage);
 						}
@@ -1860,9 +1674,9 @@ public class DefaultAI extends NpcAI
 		}
 
 		// Оповестить своих минионов об атаке
-		if (actor.hasMinions())
+		if(actor.hasMinions())
 		{
-			for (final NpcInstance minion : actor.getMinionList().getAliveMinions())
+			for(final NpcInstance minion : actor.getMinionList().getAliveMinions())
 			{
 				minion.getAI().notifyEvent(CtrlEvent.EVT_PARTY_ATTACKED, actor, attacker, damage);
 			}
@@ -1873,28 +1687,28 @@ public class DefaultAI extends NpcAI
 	{
 		final NpcInstance actor = getActor();
 		// Оповестить социальных мобов
-		for (final NpcInstance npc : activeFactionTargets())
+		for(final NpcInstance npc : activeFactionTargets())
 		{
 			npc.getAI().notifyEvent(CtrlEvent.EVT_CLAN_DIED, actor, killer);
 		}
 
-		if (actor.isMinion())
+		if(actor.isMinion())
 		{
 			// Оповестить лидера об атаке
 			final NpcInstance master = actor.getLeader();
-			if (master != null)
+			if(master != null)
 			{
-				if (!master.isDead() && master.isVisible())
+				if(!master.isDead() && master.isVisible())
 				{
 					master.getAI().notifyEvent(CtrlEvent.EVT_PARTY_DIED, actor, killer);
 				}
 
 				// Оповестить минионов лидера об атаке
-				if (master.hasMinions())
+				if(master.hasMinions())
 				{
-					for (final NpcInstance minion : master.getMinionList().getAliveMinions())
+					for(final NpcInstance minion : master.getMinionList().getAliveMinions())
 					{
-						if (minion != actor)
+						if(minion != actor)
 						{
 							minion.getAI().notifyEvent(CtrlEvent.EVT_PARTY_DIED, actor, killer);
 						}
@@ -1904,9 +1718,9 @@ public class DefaultAI extends NpcAI
 		}
 
 		// Оповестить своих минионов об атаке
-		if (actor.hasMinions())
+		if(actor.hasMinions())
 		{
-			for (final NpcInstance minion : actor.getMinionList().getAliveMinions())
+			for(final NpcInstance minion : actor.getMinionList().getAliveMinions())
 			{
 				minion.getAI().notifyEvent(CtrlEvent.EVT_PARTY_DIED, actor, killer);
 			}
@@ -1916,20 +1730,18 @@ public class DefaultAI extends NpcAI
 	protected List<NpcInstance> activeFactionTargets()
 	{
 		final NpcInstance actor = getActor();
-		if (actor.getFaction().isNone())
-		{
-			return Collections.emptyList();
-		}
+		if(actor.getFaction().isNone())
+		{ return Collections.emptyList(); }
 
 		final int range = actor.getFaction().getRange();
 		final List<NpcInstance> npcFriends = new LazyArrayList<NpcInstance>();
-		for (final NpcInstance npc : World.getAroundNpc(actor))
+		for(final NpcInstance npc : World.getAroundNpc(actor))
 		{
-			if (!npc.isDead())
+			if(!npc.isDead())
 			{
-				if (npc.isInRangeZ(actor, range))
+				if(npc.isInRangeZ(actor, range))
 				{
-					if (npc.isInFaction(actor))
+					if(npc.isInFaction(actor))
 					{
 						npcFriends.add(npc);
 					}
@@ -1942,34 +1754,30 @@ public class DefaultAI extends NpcAI
 	protected boolean defaultThinkBuff(int rateSelf, int rateFriends)
 	{
 		final NpcInstance actor = getActor();
-		if (actor.isDead())
-		{
-			return true;
-		}
+		if(actor.isDead())
+		{ return true; }
 
 		// TODO сделать более разумный выбор баффа, сначала выбирать подходящие а потом
 		// уже рандомно 1 из них
-		if (Rnd.chance(rateSelf))
+		if(Rnd.chance(rateSelf))
 		{
 			final double actorHp = actor.getCurrentHpPercents();
 			final Skill[] skills = actorHp < 50 ? selectUsableSkills(actor, 0, _healSkills) : selectUsableSkills(actor, 0, _buffSkills);
-			if (skills == null || skills.length == 0)
-			{
-				return false;
-			}
+			if(skills == null || skills.length == 0)
+			{ return false; }
 
 			final Skill skill = skills[Rnd.get(skills.length)];
 			addTaskBuff(actor, SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill));
 			return true;
 		}
 
-		if (Rnd.chance(rateFriends))
+		if(Rnd.chance(rateFriends))
 		{
-			for (final NpcInstance npc : activeFactionTargets())
+			for(final NpcInstance npc : activeFactionTargets())
 			{
 				final double targetHp = npc.getCurrentHpPercents();
 				final Skill[] skills = targetHp < 50 ? selectUsableSkills(actor, 0, _healSkills) : selectUsableSkills(actor, 0, _buffSkills);
-				if (skills == null || skills.length == 0)
+				if(skills == null || skills.length == 0)
 				{
 					continue;
 				}
@@ -1988,15 +1796,13 @@ public class DefaultAI extends NpcAI
 		clearTasks();
 
 		final NpcInstance actor = getActor();
-		if (actor.isDead() || actor.isAMuted())
-		{
-			return false;
-		}
+		if(actor.isDead() || actor.isAMuted())
+		{ return false; }
 
 		Creature target;
-		if ((target = prepareTarget()) == null)
+		if((target = prepareTarget()) == null)
 		{
-			if (getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
+			if(getIntention() != CtrlIntention.AI_INTENTION_ACTIVE)
 			{
 				changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				return maybeMoveToHome(true);
@@ -2016,7 +1822,7 @@ public class DefaultAI extends NpcAI
 		final Skill[] buff = Rnd.chance(getRateBUFF()) ? selectUsableSkills(actor, 0, _buffSkills) : null;
 
 		final RndSelector<Skill[]> rnd = new RndSelector<Skill[]>();
-		if (!actor.isAMuted())
+		if(!actor.isAMuted())
 		{
 			rnd.add(null, getRatePHYS());
 		}
@@ -2028,24 +1834,16 @@ public class DefaultAI extends NpcAI
 		rnd.add(stun, getRateSTUN());
 
 		final Skill[] selected = rnd.select();
-		if (selected != null)
+		if(selected != null)
 		{
-			if (selected == dam || selected == dot)
-			{
-				return chooseTaskAndTargets(selectTopSkillByDamage(actor, target, distance, selected), target, distance);
-			}
-			if (selected == debuff || selected == stun)
-			{
-				return chooseTaskAndTargets(selectTopSkillByDebuff(actor, target, distance, selected), target, distance);
-			}
-			if (selected == buff)
-			{
-				return chooseTaskAndTargets(selectTopSkillByBuff(actor, selected), actor, distance);
-			}
-			if (selected == heal)
-			{
-				return chooseTaskAndTargets(selectTopSkillByHeal(actor, selected), actor, distance);
-			}
+			if(selected == dam || selected == dot)
+			{ return chooseTaskAndTargets(selectTopSkillByDamage(actor, target, distance, selected), target, distance); }
+			if(selected == debuff || selected == stun)
+			{ return chooseTaskAndTargets(selectTopSkillByDebuff(actor, target, distance, selected), target, distance); }
+			if(selected == buff)
+			{ return chooseTaskAndTargets(selectTopSkillByBuff(actor, selected), actor, distance); }
+			if(selected == heal)
+			{ return chooseTaskAndTargets(selectTopSkillByHeal(actor, selected), actor, distance); }
 		}
 		return chooseTaskAndTargets(null, target, distance);
 	}
@@ -2103,26 +1901,27 @@ public class DefaultAI extends NpcAI
 		final Integer offset = (Integer) _intention_arg1;
 
 		// Находимся слишком далеко цели, либо цель не пригодна для следования
-		if (target == null || target.isAlikeDead() || actor.getDistance(target) > 4000 || offset == null || actor.getReflection() != target.getReflection())
+		if(target == null || target.isAlikeDead() || actor.getDistance(target) > 4000 || offset == null
+				|| actor.getReflection() != target.getReflection())
 		{
 			clientActionFailed();
 			return;
 		}
 
 		// Уже следуем за этой целью
-		if (actor.getMovement().isFollow() && actor.getMovement().getFollowTarget() == target)
+		if(actor.getMovement().isFollow() && actor.getMovement().getFollowTarget() == target)
 		{
 			clientActionFailed();
 			return;
 		}
 
 		// Находимся достаточно близко или не можем двигаться - побежим потом ?
-		if (actor.isInRange(target, offset + 16) || actor.isMovementDisabled())
+		if(actor.isInRange(target, offset + 16) || actor.isMovementDisabled())
 		{
 			clientActionFailed();
 		}
 
-		if (_followTask != null)
+		if(_followTask != null)
 		{
 			_followTask.cancel(false);
 			_followTask = null;
@@ -2136,22 +1935,20 @@ public class DefaultAI extends NpcAI
 		@Override
 		public void run()
 		{
-			if (getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
-			{
-				return;
-			}
+			if(getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			{ return; }
 
 			final Creature target = (Creature) _intention_arg0;
 			final int offset = (_intention_arg1 != null && _intention_arg1 instanceof Integer) ? (Integer) _intention_arg1 : 0;
 
 			final NpcInstance actor = getActor();
-			if (target == null || target.isAlikeDead() || actor.getDistance(target) > 4000 || actor.getReflection() != target.getReflection())
+			if(target == null || target.isAlikeDead() || actor.getDistance(target) > 4000 || actor.getReflection() != target.getReflection())
 			{
 				setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 				return;
 			}
 
-			if (!actor.isInRange(target, offset + 16) && (!actor.getMovement().isFollow() || actor.getMovement().getFollowTarget() != target))
+			if(!actor.isInRange(target, offset + 16) && (!actor.getMovement().isFollow() || actor.getMovement().getFollowTarget() != target))
 			{
 				final Location loc = new Location(target.getX() + 30, target.getY() + 30, target.getZ());
 				actor.getMovement().followToCharacter(loc, target, offset, false);
@@ -2180,11 +1977,11 @@ public class DefaultAI extends NpcAI
 	protected void onEvtMostHatedChanged()
 	{
 		clearTasks();
-		if (getActor().isAttackingNow())
+		if(getActor().isAttackingNow())
 		{
 			getActor().abortAttack(true, false);
 		}
-		if (getActor().isCastingNow())
+		if(getActor().isCastingNow())
 		{
 			getActor().abortCast(true, false);
 		}
@@ -2242,7 +2039,7 @@ public class DefaultAI extends NpcAI
 		task.target = target.getRef();
 		task.skillEntry = skillEntry;
 		task.weight = weight;
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
 			_globalAggro = 0;
 		}
@@ -2293,7 +2090,7 @@ public class DefaultAI extends NpcAI
 	@Override
 	public void addMoveAroundDesire(int p1, long desire)
 	{
-		if (getIntention() != CtrlIntention.AI_INTENTION_ACTIVE || !Rnd.chance(p1))
+		if(getIntention() != CtrlIntention.AI_INTENTION_ACTIVE || !Rnd.chance(p1))
 			return;
 
 		final Task task = new Task();
@@ -2301,7 +2098,7 @@ public class DefaultAI extends NpcAI
 		task.p1 = p1;
 
 		Location loc = getActor().getSpawnedLoc();
-		if (loc == null)
+		if(loc == null)
 		{
 			loc = getActor().getLoc();
 		}
@@ -2325,9 +2122,9 @@ public class DefaultAI extends NpcAI
 		@Override
 		public int compare(Task o1, Task o2)
 		{
-			if (o1 == null || o2 == null)
+			if(o1 == null || o2 == null)
 				return 0;
-			if (o1.weight == o2.weight)
+			if(o1.weight == o2.weight)
 				return Long.compare(o2.addTime, o1.addTime);
 			return Long.compare(o2.weight, o1.weight);
 		}
@@ -2345,11 +2142,11 @@ public class DefaultAI extends NpcAI
 		@Override
 		public int compare(Creature o1, Creature o2)
 		{
-			if (o1 == null || o2 == null || (o1 == o2) || (o1.getObjectId() == o2.getObjectId()))
+			if(o1 == null || o2 == null || (o1 == o2) || (o1.getObjectId() == o2.getObjectId()))
 				return 0;
 
 			final Creature creature = _creatureRef.get();
-			if (creature == null)
+			if(creature == null)
 				return 0;
 
 			return Integer.compare(creature.getDistance3D(o1), creature.getDistance3D(o2));

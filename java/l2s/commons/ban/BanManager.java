@@ -21,18 +21,18 @@ public class BanManager
 	public BanInfo getBanInfoIfBanned(BanBindType bindType, Object bindValueObj)
 	{
 		String bindValue = String.valueOf(bindValueObj);
-		if (StringUtils.isEmpty(bindValue))
+		if(StringUtils.isEmpty(bindValue))
 			return null;
 
 		Map<String, BanInfo> bans = getCachedBans().get(bindType);
-		if (bans == null)
+		if(bans == null)
 			return null;
 
 		BanInfo banInfo = bans.get(bindValue);
-		if (banInfo == null)
+		if(banInfo == null)
 			return null;
 
-		if (banInfo.getEndTime() != -1 && banInfo.getEndTime() < (System.currentTimeMillis() / 1000))
+		if(banInfo.getEndTime() != -1 && banInfo.getEndTime() < (System.currentTimeMillis() / 1000))
 			return null;
 
 		return banInfo;

@@ -30,16 +30,16 @@ public class RaceManager extends DefaultAI
 	protected void onEvtThink()
 	{
 		RaceManagerInstance actor = getActor();
-		if (actor == null)
+		if(actor == null)
 			return;
 
 		MonRaceInfoPacket packet = actor.getPacket();
-		if (packet == null)
+		if(packet == null)
 			return;
 
 		synchronized (this)
 		{
-			if (thinking)
+			if(thinking)
 				return;
 			thinking = true;
 		}
@@ -47,17 +47,17 @@ public class RaceManager extends DefaultAI
 		try
 		{
 			List<Player> newPlayers = new ArrayList<Player>();
-			for (Player player : World.getAroundObservers(actor))
+			for(Player player : World.getAroundObservers(actor))
 			{
-				if (player == null)
+				if(player == null)
 					continue;
 				newPlayers.add(player);
-				if (!_knownPlayers.contains(player))
+				if(!_knownPlayers.contains(player))
 					player.sendPacket(packet);
 				_knownPlayers.remove(player);
 			}
 
-			for (Player player : _knownPlayers)
+			for(Player player : _knownPlayers)
 				actor.removeKnownPlayer(player);
 
 			_knownPlayers = newPlayers;

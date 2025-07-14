@@ -26,11 +26,11 @@ public class DiePacket implements IClientOutgoingPacket
 		objectId = cha.getObjectId();
 		this.hideDieAnimation = hideDieAnimation;
 
-		if (cha.isMonster())
+		if(cha.isMonster())
 		{
 			sweepable = ((MonsterInstance) cha).isSweepActive();
 		}
-		else if (cha.isPlayer())
+		else if(cha.isPlayer())
 		{
 			Map<RestartType, Boolean> types = new HashMap<>(RestartType.VALUES.length);
 			Player player = (Player) cha;
@@ -39,9 +39,9 @@ public class DiePacket implements IClientOutgoingPacket
 			types.put(RestartType.TO_VILLAGE, true);
 			types.put(RestartType.ADVENTURES_SONG, player.getAbnormalList().contains(22410) || player.getAbnormalList().contains(22411));
 
-			for (Abnormal effect : player.getAbnormalList())
+			for(Abnormal effect : player.getAbnormalList())
 			{
-				if (effect.getSkill().getId() == 7008)
+				if(effect.getSkill().getId() == 7008)
 				{
 					blessingFeatherDelay = effect.getTimeLeft();
 					break;
@@ -49,31 +49,31 @@ public class DiePacket implements IClientOutgoingPacket
 			}
 
 			Clan clan = null;
-			if (types.getOrDefault(RestartType.TO_VILLAGE, false))
+			if(types.getOrDefault(RestartType.TO_VILLAGE, false))
 			{
 				clan = player.getClan();
 			}
 
-			if (clan != null)
+			if(clan != null)
 			{
 				types.put(RestartType.TO_CLANHALL, clan.getHasHideout() != 0);
 				types.put(RestartType.TO_CASTLE, clan.getCastle() != 0);
 				// types.put(RestartType.TO_FORTRESS, clan.getHasFortress() != 0);
 			}
 
-			for (Event e : cha.getEvents())
+			for(Event e : cha.getEvents())
 			{
 				e.checkRestartLocs(player, types);
 			}
 
-			if (!player.isInFightClub() && (player.getReflection().getId() == 400))
+			if(!player.isInFightClub() && (player.getReflection().getId() == 400))
 			{
 				types.clear();
 			}
 
-			for (Map.Entry<RestartType, Boolean> entry : types.entrySet())
+			for(Map.Entry<RestartType, Boolean> entry : types.entrySet())
 			{
-				if (entry.getValue())
+				if(entry.getValue())
 				{
 					flags |= 1 << entry.getKey().ordinal();
 				}
@@ -102,7 +102,7 @@ public class DiePacket implements IClientOutgoingPacket
 		// last must be byte instead int 286 Eden
 		int itemsCount = 0;
 		packetWriter.writeD(itemsCount);
-		for (int i = 0; i < itemsCount; i++)
+		for(int i = 0; i < itemsCount; i++)
 		{
 			packetWriter.writeD(0x00); // item Id
 		}

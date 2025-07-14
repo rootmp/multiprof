@@ -40,10 +40,10 @@ public class LastManStandingEvent extends AbstractFightClub
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if (actor != null && actor.isPlayable())
+		if(actor != null && actor.isPlayable())
 		{
 			FightClubPlayer fActor = getFightClubPlayer(actor.getPlayer());
-			if (victim.isPlayer())
+			if(victim.isPlayer())
 			{
 				fActor.increaseKills(true);
 				updatePlayerScore(fActor);
@@ -52,11 +52,11 @@ public class LastManStandingEvent extends AbstractFightClub
 			actor.getPlayer().sendUserInfo();
 		}
 
-		if (victim.isPlayer())
+		if(victim.isPlayer())
 		{
 			FightClubPlayer fVictim = getFightClubPlayer(victim);
 			fVictim.increaseDeaths();
-			if (actor != null)
+			if(actor != null)
 			{
 				sendMessageToPlayer(fVictim, MessageType.GM, "You have been killed by " + actor.getName());
 			}
@@ -83,7 +83,7 @@ public class LastManStandingEvent extends AbstractFightClub
 	public boolean leaveEvent(Player player, boolean teleportTown)
 	{
 		boolean result = super.leaveEvent(player, teleportTown);
-		if (result)
+		if(result)
 		{
 			checkRoundOver();
 		}
@@ -92,34 +92,32 @@ public class LastManStandingEvent extends AbstractFightClub
 
 	private boolean checkRoundOver()
 	{
-		if (getState() != EventState.STARTED)
-		{
-			return true;
-		}
+		if(getState() != EventState.STARTED)
+		{ return true; }
 
 		int alivePlayers = 0;
 		FightClubPlayer aliveFPlayer = null;
 
-		for (final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
+		for(final FightClubPlayer iFPlayer : getPlayers(FIGHTING_PLAYERS))
 		{
-			if (isPlayerActive(iFPlayer.getPlayer()))
+			if(isPlayerActive(iFPlayer.getPlayer()))
 			{
 				alivePlayers++;
 				aliveFPlayer = iFPlayer;
 			}
-			if (isPlayerAlive(iFPlayer.getPlayer()))
+			if(isPlayerAlive(iFPlayer.getPlayer()))
 			{
 				alivePlayers++;
 				aliveFPlayer = iFPlayer;
 			}
 		}
 
-		if (alivePlayers <= 1)
+		if(alivePlayers <= 1)
 		{
-			if (alivePlayers == 1)
+			if(alivePlayers == 1)
 			{
 				_winner = aliveFPlayer;
-				if (_winner != null)
+				if(_winner != null)
 				{
 					aliveFPlayer.increaseScore(1);
 					announceWinnerPlayer(false, aliveFPlayer);
@@ -128,8 +126,7 @@ public class LastManStandingEvent extends AbstractFightClub
 				FightClubEventManager.getInstance().sendToAllMsg(this, _winner.getPlayer().getName() + " Won Event!");
 			}
 			setState(EventState.OVER);
-			ThreadPoolManager.getInstance().schedule(new Runnable()
-			{
+			ThreadPoolManager.getInstance().schedule(new Runnable(){
 				@Override
 				public void run()
 				{
@@ -143,30 +140,22 @@ public class LastManStandingEvent extends AbstractFightClub
 
 	private boolean isPlayerAlive(Player player)
 	{
-		if (player == null)
-		{
-			return false;
-		}
+		if(player == null)
+		{ return false; }
 
-		if (player.isDead())
-		{
-			return false;
-		}
+		if(player.isDead())
+		{ return false; }
 
-		if (!player.getReflection().equals(getReflection()))
-		{
-			return false;
-		}
+		if(!player.getReflection().equals(getReflection()))
+		{ return false; }
 
-		if (System.currentTimeMillis() - player.getLastNotAfkTime() > 120000L)
-		{
-			return false;
-		}
+		if(System.currentTimeMillis() - player.getLastNotAfkTime() > 120000L)
+		{ return false; }
 
 		boolean insideZone = false;
-		for (Zone zone : getReflection().getZones())
+		for(Zone zone : getReflection().getZones())
 		{
-			if (zone.checkIfInZone(player))
+			if(zone.checkIfInZone(player))
 			{
 				insideZone = true;
 			}
@@ -181,20 +170,16 @@ public class LastManStandingEvent extends AbstractFightClub
 
 	protected int getRewardForWinningTeam(FightClubPlayer fPlayer, boolean atLeast1Kill)
 	{
-		if (fPlayer.equals(_winner))
-		{
-			return (int) _badgeWin;
-		}
+		if(fPlayer.equals(_winner))
+		{ return (int) _badgeWin; }
 		return super.getRewardForWinningTeam(fPlayer, true);
 	}
 
 	public String getVisibleTitle(Player player, String currentTitle, boolean toMe)
 	{
 		final FightClubPlayer realPlayer = getFightClubPlayer(player);
-		if (realPlayer == null)
-		{
-			return currentTitle;
-		}
+		if(realPlayer == null)
+		{ return currentTitle; }
 
 		return "Kills: " + realPlayer.getKills(true);
 	}
@@ -204,10 +189,8 @@ public class LastManStandingEvent extends AbstractFightClub
 		@Override
 		public void run()
 		{
-			if (getState() == EventState.NOT_ACTIVE)
-			{
-				return;
-			}
+			if(getState() == EventState.NOT_ACTIVE)
+			{ return; }
 
 			checkRoundOver();
 			ThreadPoolManager.getInstance().schedule(this, 60000L);

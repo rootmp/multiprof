@@ -5,7 +5,6 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Map.Entry;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -61,7 +60,6 @@ import l2s.gameserver.instancemanager.games.MiniGameScoreManager;
 import l2s.gameserver.listener.GameListener;
 import l2s.gameserver.listener.game.OnShutdownListener;
 import l2s.gameserver.listener.game.OnStartListener;
-import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
 import l2s.gameserver.model.entity.Hero;
 import l2s.gameserver.model.entity.events.fightclubmanager.FightClubEventManager;
@@ -108,99 +106,28 @@ public class GameServer
 		Config.load();
 
 		final HostInfo[] hosts = HostsConfigHolder.getInstance().getGameServerHosts();
-		if (hosts.length == 0)
-		{
-			throw new Exception("Server hosts list is empty!");
-		}
+		if(hosts.length == 0)
+		{ throw new Exception("Server hosts list is empty!"); }
 
 		final TIntSet ports = new TIntHashSet();
-		for (HostInfo host : hosts)
+		for(HostInfo host : hosts)
 		{
-			if (host.getAddress() != null)
+			if(host.getAddress() != null)
 			{
 				ports.add(host.getPort());
 			}
 		}
 
-		if (ports.isEmpty())
-		{
+		if(ports.isEmpty())
 			throw new Exception("Server ports list is empty!");
-		}
 
 		checkFreePorts(ports);
 
-		final int[] portsArray = ports.toArray();
+		_licenseHost = Config.EXTERNAL_HOSTNAME;
+		_onlineLimit = Config.MAXIMUM_ONLINE_USERS;
 
-		String licenseHost = "";
-		int onlineLimit = 0;
-
-		if (!DEVELOP)
-		{
-			boolean licensed = false;
-			if (Player.CLIENTS_HASHCODE == Player.CLIENTS.hashCode())
-			{
-				for (Entry<String, Integer> license : Player.CLIENTS.entrySet())
-				{
-					if (!checkOpenPort(license.getKey(), portsArray[0]))
-					{
-						ServerSocket ss = null;
-						try
-						{
-							ss = new ServerSocket(portsArray[0]);
-						}
-						catch (Exception e)
-						{
-							//
-						}
-						finally
-						{
-							if (checkOpenPort(license.getKey(), portsArray[0]))
-							{
-								licensed = true;
-							}
-							try
-							{
-								ss.close();
-							}
-							catch (Exception e)
-							{
-								//
-							}
-						}
-					}
-
-					if (licensed)
-					{
-						licenseHost = license.getKey();
-						onlineLimit = license.getValue() == -1 ? Config.MAXIMUM_ONLINE_USERS : Math.min(Config.MAXIMUM_ONLINE_USERS, license.getValue());
-						printSection("L2Studio Manager");
-						_log.info("Project Base: ............ " + "L2Scripts [SVN 41784]");
-						_log.info("Project Revision: ........ " + "L2Studio [GIT 113]");
-						_log.info("Licensed Type: ........... " + (license.getValue() == -1 ? "UNLIMITED" : license.getValue()));
-						_log.info("Update: .................. " + "Lineage 2 Essence - Vanguard (362)");
-						break;
-					}
-				}
-			}
-
-			if (!licensed)
-			{
-				throw new Exception("You not licensed for run server!");
-			}
-		}
-		else
-		{
-			licenseHost = "127.0.0.1";
-			onlineLimit = 10;
-		}
-
-		_licenseHost = licenseHost; // Config.EXTERNAL_HOSTNAME;
-		_onlineLimit = onlineLimit; // Config.MAXIMUM_ONLINE_USERS;
-
-		if (_onlineLimit == 0)
-		{
+		if(_onlineLimit == 0)
 			throw new Exception("Server online limit is zero!");
-		}
 
 		FloodProtectorConfigs.load();
 
@@ -212,7 +139,7 @@ public class GameServer
 
 		printSection("Id Factory");
 		IdFactory _idFactory = IdFactory.getInstance();
-		if (!_idFactory.isInitialized())
+		if(!_idFactory.isInitialized())
 		{
 			_log.error("Could not read object IDs from DB. Please Check Your Data.");
 			throw new Exception("Could not initialize the ID factory");
@@ -248,8 +175,7 @@ public class GameServer
 
 		ItemsDAO.getInstance();
 
-		ThreadPoolManager.getInstance().execute(() ->
-		{
+		ThreadPoolManager.getInstance().execute(() -> {
 			CrestCache.getInstance();
 			ImagesCache.getInstance();
 		});
@@ -278,14 +204,14 @@ public class GameServer
 
 		PlayerMessageStack.getInstance();
 
-		if (Config.AUTODESTROY_ITEM_AFTER > 0)
+		if(Config.AUTODESTROY_ITEM_AFTER > 0)
 		{
 			ItemsAutoDestroy.getInstance();
 		}
 
 		// MonsterRace.getInstance();
 
-		if (Config.ENABLE_OLYMPIAD)
+		if(Config.ENABLE_OLYMPIAD)
 		{
 			printSection("Olympiads");
 			Olympiad.load();
@@ -294,7 +220,7 @@ public class GameServer
 
 		PetitionManager.getInstance();
 
-		if (Config.ALLOW_WEDDING)
+		if(Config.ALLOW_WEDDING)
 		{
 			CoupleManager.getInstance();
 		}
@@ -342,7 +268,7 @@ public class GameServer
 
 		Shutdown.getInstance().schedule(Config.RESTART_AT_TIME, Shutdown.RESTART);
 
-		if (Config.FIGHT_CLUB_ENABLED)
+		if(Config.FIGHT_CLUB_ENABLED)
 		{
 			FightClubEventManager.getInstance();
 		}
@@ -360,14 +286,14 @@ public class GameServer
 
 		getListeners().onStart();
 
-		if (Config.BUFF_STORE_ENABLED)
+		if(Config.BUFF_STORE_ENABLED)
 		{
 			_log.info("Restoring offline buffers...");
 			int count = TradeHelper.restoreOfflineBuffers();
 			_log.info("Restored " + count + " offline buffers.");
 		}
 
-		if (Config.SERVICES_OFFLINE_TRADE_RESTORE_AFTER_RESTART)
+		if(Config.SERVICES_OFFLINE_TRADE_RESTORE_AFTER_RESTART)
 		{
 			_log.info("Restoring offline traders...");
 			int count = TradeHelper.restoreOfflineTraders();
@@ -378,7 +304,7 @@ public class GameServer
 		System.gc();
 		printSection("Loading Info");
 		String memUsage = new StringBuilder().append(StatsUtils.getMemUsage()).toString();
-		for (String line : memUsage.split("\n"))
+		for(String line : memUsage.split("\n"))
 		{
 			_log.info(line);
 		}
@@ -406,16 +332,16 @@ public class GameServer
 
 	private void checkFreePorts(TIntSet ports)
 	{
-		for (int port : ports.toArray())
+		for(int port : ports.toArray())
 		{
-			while (!checkFreePort(null, port))
+			while(!checkFreePort(null, port))
 			{
 				_log.warn("Port '" + port + "' is allready binded. Please free it and restart server.");
 				try
 				{
 					Thread.sleep(1000L);
 				}
-				catch (InterruptedException e2)
+				catch(InterruptedException e2)
 				{
 					//
 				}
@@ -428,7 +354,7 @@ public class GameServer
 		ServerSocket ss = null;
 		try
 		{
-			if (StringUtils.isEmpty(hostname) || hostname.equalsIgnoreCase("*") || hostname.equalsIgnoreCase("0.0.0.0"))
+			if(StringUtils.isEmpty(hostname) || hostname.equalsIgnoreCase("*") || hostname.equalsIgnoreCase("0.0.0.0"))
 			{
 				ss = new ServerSocket(port);
 			}
@@ -437,7 +363,7 @@ public class GameServer
 				ss = new ServerSocket(port, 50, InetAddress.getByName(hostname));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			return false;
 		}
@@ -447,7 +373,7 @@ public class GameServer
 			{
 				ss.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -463,7 +389,7 @@ public class GameServer
 			socket = new Socket();
 			socket.connect(new InetSocketAddress(ip, port), 100);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			return false;
 		}
@@ -473,7 +399,7 @@ public class GameServer
 			{
 				socket.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -528,9 +454,9 @@ public class GameServer
 	{
 		public void onStart()
 		{
-			for (Listener<GameServer> listener : getListeners())
+			for(Listener<GameServer> listener : getListeners())
 			{
-				if (OnStartListener.class.isInstance(listener))
+				if(OnStartListener.class.isInstance(listener))
 				{
 					((OnStartListener) listener).onStart();
 				}
@@ -539,9 +465,9 @@ public class GameServer
 
 		public void onShutdown()
 		{
-			for (Listener<GameServer> listener : getListeners())
+			for(Listener<GameServer> listener : getListeners())
 			{
-				if (OnShutdownListener.class.isInstance(listener))
+				if(OnShutdownListener.class.isInstance(listener))
 				{
 					((OnShutdownListener) listener).onShutdown();
 				}
@@ -557,7 +483,7 @@ public class GameServer
 	public static void printSection(String section)
 	{
 		String s = "-=/ " + section + " /";
-		while (s.length() < 64)
+		while(s.length() < 64)
 		{
 			s = "-" + s;
 		}

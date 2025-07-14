@@ -27,7 +27,7 @@ public class i_dispel_by_slot_probability extends i_abstract_effect
 		super(template);
 
 		_abnormalType = AbnormalType.valueOf(getParams().getString("abnormal_type", AbnormalType.NONE.toString()).toUpperCase());
-		if (_abnormalType == AbnormalType.NONE)
+		if(_abnormalType == AbnormalType.NONE)
 			_dispelChance = 0;
 		else
 			_dispelChance = getParams().getInteger("dispel_chance", 100);
@@ -48,33 +48,33 @@ public class i_dispel_by_slot_probability extends i_abstract_effect
 		Collections.sort(abnormals, AbnormalsComparator.getInstance()); // ToFix: Comparator to HF
 		Collections.reverse(abnormals);
 
-		for (Abnormal abnormal : abnormals)
+		for(Abnormal abnormal : abnormals)
 		{
-			if (!abnormal.isCancelable())
+			if(!abnormal.isCancelable())
 				continue;
 
 			Skill skill = abnormal.getSkill();
-			if (skill == null)
+			if(skill == null)
 				continue;
 
-			if (skill.isToggle())
+			if(skill.isToggle())
 				continue;
 
-			if (skill.isPassive())
+			if(skill.isPassive())
 				continue;
 
 			/*
 			 * if(effected.isSpecialAbnormal(skill)) continue;
 			 */
 
-			if (abnormal.getAbnormalType() != _abnormalType)
+			if(abnormal.getAbnormalType() != _abnormalType)
 				continue;
 
-			if (Rnd.chance(_dispelChance))
+			if(Rnd.chance(_dispelChance))
 			{
 				abnormal.exit();
 
-				if (!abnormal.isHidden())
+				if(!abnormal.isHidden())
 					effected.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(skill));
 			}
 		}

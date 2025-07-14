@@ -11,13 +11,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.templates.item.ItemGrade;
 import l2s.gameserver.templates.item.ItemTemplate;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class EnchantHPBonusTable
 {
@@ -31,7 +30,7 @@ public class EnchantHPBonusTable
 
 	public static EnchantHPBonusTable getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new EnchantHPBonusTable();
 		return _instance;
 	}
@@ -51,28 +50,28 @@ public class EnchantHPBonusTable
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/enchant/enchant_bonus.xml");
 			Document doc = factory.newDocumentBuilder().parse(file);
 
-			for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
-				if ("list".equalsIgnoreCase(n.getNodeName()))
-					for (Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+			for(Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
+				if("list".equalsIgnoreCase(n.getNodeName()))
+					for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
 					{
 						NamedNodeMap attrs = d.getAttributes();
 						Node att;
-						if ("options".equalsIgnoreCase(d.getNodeName()))
+						if("options".equalsIgnoreCase(d.getNodeName()))
 						{
 							att = attrs.getNamedItem("onepiece_factor");
-							if (att == null)
+							if(att == null)
 							{
 								_log.info("EnchantHPBonusTable: Missing onepiece_factor, skipping");
 								continue;
 							}
 							_onepieceFactor = Integer.parseInt(att.getNodeValue());
 						}
-						else if ("enchant_bonus".equalsIgnoreCase(d.getNodeName()))
+						else if("enchant_bonus".equalsIgnoreCase(d.getNodeName()))
 						{
 							ItemGrade grade;
 
 							att = attrs.getNamedItem("grade");
-							if (att == null)
+							if(att == null)
 							{
 								_log.info("EnchantHPBonusTable: Missing grade, skipping");
 								continue;
@@ -80,7 +79,7 @@ public class EnchantHPBonusTable
 							grade = ItemGrade.valueOf(att.getNodeValue());
 
 							att = attrs.getNamedItem("values");
-							if (att == null)
+							if(att == null)
 							{
 								_log.info("EnchantHPBonusTable: Missing bonus id: " + grade.ordinal() + ", skipping");
 								continue;
@@ -88,10 +87,10 @@ public class EnchantHPBonusTable
 							StringTokenizer st = new StringTokenizer(att.getNodeValue(), ",");
 							int tokenCount = st.countTokens();
 							Integer[] bonus = new Integer[tokenCount];
-							for (int i = 0; i < tokenCount; i++)
+							for(int i = 0; i < tokenCount; i++)
 							{
 								Integer value = Integer.decode(st.nextToken().trim());
-								if (value == null)
+								if(value == null)
 								{
 									_log.info("EnchantHPBonusTable: Bad Hp value!! grade: " + grade.ordinal() + " token: " + i);
 									value = 0;
@@ -103,7 +102,7 @@ public class EnchantHPBonusTable
 					}
 			_log.info("EnchantHPBonusTable: Loaded bonuses for " + _armorHPBonus.size() + " grades.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("EnchantHPBonusTable: Lists could not be initialized.");
 			e.printStackTrace();
@@ -114,16 +113,16 @@ public class EnchantHPBonusTable
 	{
 		final Integer[] values;
 
-		if (item.getFixedEnchantLevel(player) == 0)
+		if(item.getFixedEnchantLevel(player) == 0)
 			return 0;
 
 		values = _armorHPBonus.get(item.getTemplate().getGrade().ordinal());
 
-		if (values == null || values.length == 0)
+		if(values == null || values.length == 0)
 			return 0;
 
 		int bonus = values[Math.min(item.getFixedEnchantLevel(player), values.length) - 1];
-		if (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+		if(item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
 			bonus = (int) (bonus * _onepieceFactor / 100.0D);
 
 		return bonus;

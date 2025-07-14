@@ -136,7 +136,7 @@ public class HtmTemplates extends HashIntObjectMap<String>
 	public String get(int key)
 	{
 		String value = super.get(key);
-		if (value == null)
+		if(value == null)
 		{
 			_log.warn("Dialog: " + "data/html/" + _lang.getShortName() + "/" + _fileName + " not found template ID[" + key + "].");
 			return StringUtils.EMPTY;

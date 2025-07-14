@@ -10,7 +10,7 @@ public class ConditionLogicOr extends Condition
 
 	public void add(Condition condition)
 	{
-		if (condition == null)
+		if(condition == null)
 			return;
 
 		final int len = _conditions.length;
@@ -23,8 +23,8 @@ public class ConditionLogicOr extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		for (Condition c : _conditions)
-			if (c.test(env))
+		for(Condition c : _conditions)
+			if(c.test(env))
 				return true;
 		return false;
 	}

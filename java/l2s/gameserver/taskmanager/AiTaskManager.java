@@ -19,7 +19,7 @@ public class AiTaskManager extends SteppingRunnableQueueManager
 	private final static AiTaskManager[] _instances = new AiTaskManager[Config.AI_TASK_MANAGER_COUNT];
 	static
 	{
-		for (int i = 0; i < _instances.length; i++)
+		for(int i = 0; i < _instances.length; i++)
 			_instances[i] = new AiTaskManager();
 	}
 

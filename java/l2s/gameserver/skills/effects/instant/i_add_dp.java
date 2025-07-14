@@ -25,7 +25,7 @@ public class i_add_dp extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effector.getPlayer();
-		if ((Rnd.get(100) < _chance) && (player.getCurrentDp() < player.getMaxDp()))
+		if((Rnd.get(100) < _chance) && (player.getCurrentDp() < player.getMaxDp()))
 			player.setCurrentDp(Math.min(player.getCurrentDp() + (int) getValue(), player.getMaxDp()));
 	}
 }

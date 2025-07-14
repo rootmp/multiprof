@@ -35,7 +35,7 @@ public class BypassStorage
 	private static final Pattern bbsWrite = Pattern.compile("\\s+action=\"write\\s+(\\S+)\\s+\\S+\\s+\\S+\\s+\\S+\\s+\\S+\\s+\\S+\"", Pattern.CASE_INSENSITIVE);
 
 	private static final Pattern directHtmlBypass = Pattern.compile("^(_mrsl|_diary|_match|manor_menu_select|_olympiad|pledgegame|_heroes|pcbang?).*", Pattern.DOTALL); // Убрал:
-																																										// learn_skill|menu_select?|talk_select|teleport_request|deposit|withdraw|deposit_pledge|withdraw_pledge|package_deposit|withdraw_items|class_change?|quest_accept?|multiclass?
+	// learn_skill|menu_select?|talk_select|teleport_request|deposit|withdraw|deposit_pledge|withdraw_pledge|package_deposit|withdraw_items|class_change?|quest_accept?|multiclass?
 	private static final Pattern directBbsBypass = Pattern.compile("^(_bbshome|_bbsgetfav|_bbsaddfav|_bbslink|_bbsloc|_bbsclan|_bbsmemo|_maillist|_friendlist).*", Pattern.DOTALL);
 
 	private static final Pattern fstringPattern = Pattern.compile("<fstring(\\s+p[0-9]+\\s*=\\s*\"((?!>).*?)\")*\\s*>([0-9]+)<\\s*/\\s*fstring\\s*>", Pattern.CASE_INSENSITIVE);
@@ -64,7 +64,7 @@ public class BypassStorage
 	{
 		_owner = owner;
 
-		for (BypassType type : BypassType.VALUES)
+		for(BypassType type : BypassType.VALUES)
 			_bypassesMap.put(type, new CopyOnWriteArrayList<ValidBypass>());
 	}
 
@@ -77,20 +77,20 @@ public class BypassStorage
 	{
 		clear(type);
 
-		if (StringUtils.isEmpty(html))
+		if(StringUtils.isEmpty(html))
 			return html;
 
 		Matcher m = htmlBypass.matcher(html);
-		while (m.find())
+		while(m.find())
 		{
 			String bypass = m.group(1);
 			// При передаче аргументов, мы можем проверить только часть команды до первого
 			// аргумента
 			int i = bypass.indexOf(" $");
-			if (i > 0)
+			if(i > 0)
 				bypass = bypass.substring(0, i);
 
-			if (encode)
+			if(encode)
 			{
 				ValidBypass validBypass = new ValidBypass(encodeBypass(bypass), bypass, i >= 0, type);
 				addBypass(validBypass);
@@ -101,13 +101,13 @@ public class BypassStorage
 				addBypass(new ValidBypass(bypass, bypass, i >= 0, type));
 		}
 
-		if (type == BypassType.BBS)
+		if(type == BypassType.BBS)
 		{
 			m = bbsWrite.matcher(html);
-			while (m.find())
+			while(m.find())
 			{
 				String bypass = m.group(1);
-				if (encode)
+				if(encode)
 				{
 					ValidBypass validBypass = new ValidBypass(encodeBypass(bypass), bypass, true, type);
 					addBypass(validBypass);
@@ -120,10 +120,10 @@ public class BypassStorage
 		}
 
 		m = htmlLink.matcher(html);
-		while (m.find())
+		while(m.find())
 		{
 			String bypass = m.group(1);
-			if (encode)
+			if(encode)
 			{
 				ValidBypass validBypass = new ValidBypass(encodeBypass(bypass), bypass, false, type);
 				addBypass(validBypass);
@@ -135,21 +135,21 @@ public class BypassStorage
 		}
 
 		m = fstringPattern.matcher(html);
-		while (m.find())
+		while(m.find())
 		{
 			String npcString = null;
 
 			int npcStringId = Integer.parseInt(m.group(3));
 			GameClient client = _owner.getNetConnection();
-			if (client == null) // Приоритетнее NpcString соответствующий языку клиента.
+			if(client == null) // Приоритетнее NpcString соответствующий языку клиента.
 				npcString = NpcStringHolder.getInstance().getNpcString(_owner, npcStringId);
 			else
 				npcString = NpcStringHolder.getInstance().getNpcString(client.getLanguage(), npcStringId);
 
-			if (npcString != null)
+			if(npcString != null)
 			{
 				Matcher m2 = htmlBypass.matcher(npcString);
-				while (m2.find())
+				while(m2.find())
 				{
 					String bypass = m2.group(1);
 					addBypass(new ValidBypass(bypass, bypass, false, type));
@@ -169,25 +169,26 @@ public class BypassStorage
 	{
 		ValidBypass ret = null;
 
-		if (directHtmlBypass.matcher(bypass).matches())
+		if(directHtmlBypass.matcher(bypass).matches())
 			ret = new ValidBypass(bypass, bypass, false, BypassType.DEFAULT);
-		else if (directBbsBypass.matcher(bypass).matches())
+		else if(directBbsBypass.matcher(bypass).matches())
 			ret = new ValidBypass(bypass, bypass, false, BypassType.BBS);
 		else
 		{
 			String[] args = bypass.split("\\s+");
-			loop: for (List<ValidBypass> bypasses : _bypassesMap.values())
+			loop:
+			for(List<ValidBypass> bypasses : _bypassesMap.values())
 			{
-				for (ValidBypass bp : bypasses)
+				for(ValidBypass bp : bypasses)
 				{
-					if (bp.encryptedBypass.equals(bypass))
+					if(bp.encryptedBypass.equals(bypass))
 					{
 						ret = bp;
 						break loop;
 					}
-					if (bp.args && bp.encryptedBypass.split("\\s+")[0].equals(args[0]))
+					if(bp.args && bp.encryptedBypass.split("\\s+")[0].equals(args[0]))
 					{
-						if (args.length > 1)
+						if(args.length > 1)
 						{
 							ret = new ValidBypass(bp.encryptedBypass, bypass.replaceFirst(Pattern.quote(args[0]), bp.bypass), true, bp.type);
 						}

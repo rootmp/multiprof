@@ -29,10 +29,10 @@ public class NormalUpgradeData
 	public List<UpgradeItemData> bonus_items;
 	@DoubleArray
 	public double[] probability;
-	
+
 	public UpgradeType getType()
 	{
-		return type;  
+		return type;
 	}
 
 	public long getPrice()
@@ -42,36 +42,36 @@ public class NormalUpgradeData
 
 	public int getItemId()
 	{
-		return upgrade_item.id;    
+		return upgrade_item.id;
 	}
-	
+
 	public int getEnchantLevel()
 	{
-		return upgrade_item.enchant;    
+		return upgrade_item.enchant;
 	}
 
 	public double getSuccessProb()
 	{
 		return probability[0];
 	}
-	
+
 	public double getFailProb()
 	{
-		return probability[1];    
+		return probability[1];
 	}
-	
+
 	public double getBonusProb()
 	{
 		return probability[2];
 	}
-	
+
 	public List<UpgradeItemData> getBonusResult()
 	{
-		return bonus_items; 
+		return bonus_items;
 	}
 
 	public List<UpgradeItemData> getRequiredItems()
 	{
-		return material_items;   
+		return material_items;
 	}
 }

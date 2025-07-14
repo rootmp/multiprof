@@ -33,7 +33,7 @@ public final class EffectDispelOnHit extends EffectHandler
 			public void onMagicUse(Creature actor, Skill skill, Creature target, boolean alt)
 			{
 				// TODO: [Bonux] Проверить, должен ли распространяться эффект на магию.
-				if (!skill.isDebuff())
+				if(!skill.isDebuff())
 					return;
 
 				EffectDispelOnHitImpl.this.onAttack(_abnormal, _effectorRef.get(), _effectedRef.get());
@@ -57,7 +57,7 @@ public final class EffectDispelOnHit extends EffectHandler
 		private void onAttack(Abnormal abnormal, Creature effector, Creature effected)
 		{
 			_hitCount++;
-			if (_hitCount >= _maxHitCount)
+			if(_hitCount >= _maxHitCount)
 				effected.getAbnormalList().stop(getSkill(), false);
 		}
 

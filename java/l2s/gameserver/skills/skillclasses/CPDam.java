@@ -14,13 +14,13 @@ public class CPDam extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
 		target.doCounterAttack(this, activeChar, false);
 
 		final Creature realTarget = reflected ? activeChar : target;
-		if (realTarget.isCurrentCpZero())
+		if(realTarget.isCurrentCpZero())
 			return;
 
 		final double damage = Math.max(1, getPower() * realTarget.getCurrentCp());

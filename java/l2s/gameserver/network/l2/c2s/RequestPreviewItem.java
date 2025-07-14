@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,13 +40,13 @@ public class RequestPreviewItem implements IClientIncomingPacket
 		_unknow = packet.readD();
 		_listId = packet.readD();
 		_count = packet.readD();
-		if (_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
 		}
 		_items = new int[_count];
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 			_items[i] = packet.readD();
 		return true;
 	}
@@ -54,28 +55,28 @@ public class RequestPreviewItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _count == 0)
+		if(activeChar == null || _count == 0)
 			return;
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
+		if(!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && activeChar.isPK() && !activeChar.isGM())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -84,13 +85,13 @@ public class RequestPreviewItem implements IClientIncomingPacket
 		BuyListTemplate list = null;
 
 		NpcInstance merchant = NpcUtils.canPassPacket(activeChar, this);
-		if (merchant != null)
+		if(merchant != null)
 			list = merchant.getBuyList(_listId);
 
-		if (activeChar.isGM() && (merchant == null || list == null || merchant.getNpcId() != list.getNpcId()))
+		if(activeChar.isGM() && (merchant == null || list == null || merchant.getNpcId() != list.getNpcId()))
 			list = BuyListHolder.getInstance().getBuyList(_listId);
 
-		if (list == null)
+		if(list == null)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -102,30 +103,31 @@ public class RequestPreviewItem implements IClientIncomingPacket
 		Map<Integer, Integer> itemList = new HashMap<Integer, Integer>();
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for(int i = 0; i < _count; i++)
 			{
 				int itemId = _items[i];
-				if (list.getItemByItemId(itemId) == null)
+				if(list.getItemByItemId(itemId) == null)
 				{
 					activeChar.sendActionFailed();
 					return;
 				}
 
 				ItemTemplate template = ItemHolder.getInstance().getTemplate(itemId);
-				if (template == null)
+				if(template == null)
 					continue;
 
-				if (!template.isEquipable())
+				if(!template.isEquipable())
 					continue;
 
 				int paperdoll = Inventory.getPaperdollIndexes(template.getBodyPart())[0];
-				if (paperdoll < 0)
+				if(paperdoll < 0)
 					continue;
 
-				if (template.getItemType() == WeaponType.CROSSBOW || template.getItemType() == WeaponType.RAPIER || template.getItemType() == WeaponType.ANCIENTSWORD)
+				if(template.getItemType() == WeaponType.CROSSBOW || template.getItemType() == WeaponType.RAPIER
+						|| template.getItemType() == WeaponType.ANCIENTSWORD)
 					continue;
 
-				if (itemList.containsKey(paperdoll))
+				if(itemList.containsKey(paperdoll))
 				{
 					activeChar.sendPacket(SystemMsg.YOU_CAN_NOT_TRY_THOSE_ITEMS_ON_AT_THE_SAME_TIME);
 					return;
@@ -136,20 +138,20 @@ public class RequestPreviewItem implements IClientIncomingPacket
 				totalPrice += ShopPreviewListPacket.getWearPrice(template);
 			}
 
-			if (!activeChar.reduceAdena(totalPrice))
+			if(!activeChar.reduceAdena(totalPrice))
 			{
 				activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 				return;
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			// TODO audit
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			return;
 		}
 
-		if (!itemList.isEmpty())
+		if(!itemList.isEmpty())
 		{
 			activeChar.sendPacket(new ShopPreviewInfoPacket(itemList));
 			// Schedule task

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
@@ -18,7 +19,7 @@ public class RequestRaidBossSpawnInfo implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_count = packet.readD();
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			_ids.add(packet.readD());
 		}

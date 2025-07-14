@@ -52,48 +52,48 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Element element : rootElement.elements())
+		for(Element element : rootElement.elements())
 		{
 			String elementName = element.getName();
-			if ("certification_skill_tree".equalsIgnoreCase(elementName))
+			if("certification_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllCertificationLearns(parseSkillLearn(element));
 			}
-			else if ("sub_unit_skill_tree".equalsIgnoreCase(elementName))
+			else if("sub_unit_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllSubUnitLearns(parseSkillLearn(element));
 			}
-			else if ("pledge_skill_tree".equalsIgnoreCase(elementName))
+			else if("pledge_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllPledgeLearns(parseSkillLearn(element));
 			}
-			else if ("fishing_skill_tree".equalsIgnoreCase(elementName))
+			else if("fishing_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllFishingLearns(parseSkillLearn(element));
 			}
-			else if ("hero_skill_tree".equalsIgnoreCase(elementName))
+			else if("hero_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllHeroLearns(parseSkillLearn(element));
 			}
-			else if ("gm_skill_tree".equalsIgnoreCase(elementName))
+			else if("gm_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllGMLearns(parseSkillLearn(element));
 			}
-			else if ("custom_skill_tree".equalsIgnoreCase(elementName))
+			else if("custom_skill_tree".equalsIgnoreCase(elementName))
 			{
 				getHolder().addAllCustomLearns(parseSkillLearn(element));
 			}
 			else
 			{
 				boolean general = "general_skill_tree".equalsIgnoreCase(elementName);
-				if (general || "normal_skill_tree".equalsIgnoreCase(elementName))
+				if(general || "normal_skill_tree".equalsIgnoreCase(elementName))
 				{
 					Race race = element.attributeValue("race") == null ? null : Race.valueOf(element.attributeValue("race").toUpperCase());
 					int classId = parseInt(element, "class_id", -1);
-					if (classId >= 0)
+					if(classId >= 0)
 					{
 						Set<SkillLearn> learns = parseSkillLearn(element, ClassId.valueOf(classId).getClassLevel(), race);
-						if (general)
+						if(general)
 						{
 							getHolder().addAllGeneralSkillLearns(classId, learns);
 						}
@@ -105,15 +105,15 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 					else
 					{
 						String classLevelStr = parseString(element, "class_level", null);
-						if (!StringUtils.isEmpty(classLevelStr))
+						if(!StringUtils.isEmpty(classLevelStr))
 						{
 							ClassLevel classLevel = ClassLevel.valueOf(classLevelStr.toUpperCase());
 							Set<SkillLearn> learns = parseSkillLearn(element, classLevel, race);
-							for (ClassId c : ClassId.VALUES)
+							for(ClassId c : ClassId.VALUES)
 							{
-								if (c.isOfLevel(classLevel))
+								if(c.isOfLevel(classLevel))
 								{
-									if (general)
+									if(general)
 									{
 										getHolder().addAllGeneralSkillLearns(c.getId(), learns);
 									}
@@ -127,7 +127,7 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 						else
 						{
 							Set<SkillLearn> learns = parseSkillLearn(element, ClassLevel.NONE, race);
-							if (general)
+							if(general)
 							{
 								getHolder().addAllGeneralSkillLearns(-1, learns);
 							}
@@ -151,20 +151,21 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 	private Set<SkillLearn> parseSkillLearn(Element tree, ClassLevel classLevel, Race treeRace)
 	{
 		Set<SkillLearn> skillLearns = new HashSet<>();
-		for (Element element : tree.elements("skill"))
+		for(Element element : tree.elements("skill"))
 		{
 			int id = parseInt(element, "id");
 			int level = parseInt(element, "level", 1);
 			int cost = parseInt(element, "cost", 0);
 			int minLevel = parseInt(element, "min_level", 0);
 			boolean autoGet = parseBoolean(element, "auto_get", true);
-			Race race = treeRace != null ? treeRace : element.attributeValue("race") == null ? null : Race.valueOf(element.attributeValue("race").toUpperCase());
+			Race race = treeRace
+					!= null ? treeRace : element.attributeValue("race") == null ? null : Race.valueOf(element.attributeValue("race").toUpperCase());
 			PledgeRank pledgeRank = PledgeRank.valueOfXml(parseString(element, "social_class", PledgeRank.VAGABOND.name()));
 
 			Skill skill = SkillHolder.getInstance().getSkill(id, level);
-			if (skill != null)
+			if(skill != null)
 			{
-				if ((skill.getSkillType() == SkillType.NOTDONE || skill.getSkillType() == SkillType.NOTUSED) && Config.ALT_LOG_NOTDONE_SKILLS)
+				if((skill.getSkillType() == SkillType.NOTDONE || skill.getSkillType() == SkillType.NOTUSED) && Config.ALT_LOG_NOTDONE_SKILLS)
 					warn("Skill ID[" + id + "] LEVEL[" + level + "] not done!");
 			}
 			else
@@ -175,9 +176,9 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 
 			SkillLearn skillLearn = new SkillLearn(id, level, minLevel, cost, autoGet, race, classLevel, pledgeRank);
 
-			for (Element element1 : element.elements("required_items"))
+			for(Element element1 : element.elements("required_items"))
 			{
-				for (Element element2 : element1.elements("item"))
+				for(Element element2 : element1.elements("item"))
 				{
 					int[] itemId1 = parseIntArr(element2, "id", ";");
 					long itemCount1 = parseLong(element2, "count", 1L);
@@ -185,14 +186,14 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 				}
 			}
 
-			for (Element element1 : element.elements("blocked_skills"))
+			for(Element element1 : element.elements("blocked_skills"))
 			{
-				for (Element element2 : element1.elements("skill"))
+				for(Element element2 : element1.elements("skill"))
 				{
 					int skillId1 = parseInt(element2, "id");
 					int skillLevel1 = parseInt(element2, "level", 1);
 					Skill skill1 = SkillHolder.getInstance().getSkill(skillId1, skillLevel1);
-					if (skill1 != null)
+					if(skill1 != null)
 					{
 						skillLearn.getBlockedSkills().add(skill1);
 					}
@@ -200,7 +201,7 @@ public final class SkillAcquireParser extends StatParser<SkillAcquireHolder>
 			}
 
 			Condition condition = parseFirstCond(element);
-			if (condition != null)
+			if(condition != null)
 			{
 				skillLearn.addCondition(condition);
 			}

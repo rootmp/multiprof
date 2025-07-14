@@ -38,7 +38,7 @@ public final class AgathionParser extends AbstractParser<AgathionHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("agathion"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("agathion"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 			int npc_id = parseInt(element, "npc_id");
@@ -58,12 +58,12 @@ public final class AgathionParser extends AbstractParser<AgathionHolder>
 			getHolder().addAgathionTemplate(template);
 		}
 	}
-	
+
 	public static AgathionParser getInstance()
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected final static AgathionParser _instance = new AgathionParser();

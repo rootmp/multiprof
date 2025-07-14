@@ -44,21 +44,21 @@ public final class OptionDataParser extends StatParser<OptionDataHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> itemIterator = rootElement.elementIterator(); itemIterator.hasNext();)
+		for(Iterator<Element> itemIterator = rootElement.elementIterator(); itemIterator.hasNext();)
 		{
 			Element optionDataElement = itemIterator.next();
 			OptionDataTemplate template = new OptionDataTemplate(Integer.parseInt(optionDataElement.attributeValue("id")));
-			for (Iterator<Element> subIterator = optionDataElement.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = optionDataElement.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 				String subName = subElement.getName();
-				if (subName.equalsIgnoreCase("for"))
+				if(subName.equalsIgnoreCase("for"))
 					parseFor(subElement, template);
-				else if (subName.equalsIgnoreCase("triggers"))
+				else if(subName.equalsIgnoreCase("triggers"))
 					parseTriggers(subElement, template);
-				else if (subName.equalsIgnoreCase("skills"))
+				else if(subName.equalsIgnoreCase("skills"))
 				{
-					for (Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
+					for(Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
 					{
 						Element nextElement = nextIterator.next();
 						int id = Integer.parseInt(nextElement.attributeValue("id"));
@@ -66,7 +66,7 @@ public final class OptionDataParser extends StatParser<OptionDataHolder>
 
 						SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level);
 
-						if (skillEntry != null)
+						if(skillEntry != null)
 							template.addSkill(skillEntry);
 						else
 							warn("Skill not found(" + id + "," + level + ") for option data:" + template.getId() + "; file:" + getCurrentFileName());

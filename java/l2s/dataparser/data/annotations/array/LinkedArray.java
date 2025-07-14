@@ -15,8 +15,7 @@ import l2s.dataparser.data.common.LinkedType;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LinkedArray
-{
+public @interface LinkedArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -46,8 +45,8 @@ public @interface LinkedArray
 	 * @return true - поле класса может принимать значение null
 	 */
 	boolean canBeNull() default true;
-	
+
 	String regexp() default "";
-	
+
 	LinkedType LinkedType() default LinkedType.linked_all;
 }

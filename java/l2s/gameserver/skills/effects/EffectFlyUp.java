@@ -17,7 +17,7 @@ public class EffectFlyUp extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isPeaceNpc() || effected.isRaid())
+		if(effected.isPeaceNpc() || effected.isRaid())
 			return false;
 		return true;
 	}
@@ -37,9 +37,9 @@ public class EffectFlyUp extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getFlyUp().stop(this))
+		if(effected.getFlags().getFlyUp().stop(this))
 		{
-			if (!effected.isPlayer())
+			if(!effected.isPlayer())
 				effected.getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
 	}

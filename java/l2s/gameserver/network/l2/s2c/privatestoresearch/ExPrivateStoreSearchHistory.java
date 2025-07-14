@@ -2,9 +2,9 @@ package l2s.gameserver.network.l2.s2c.privatestoresearch;
 
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.items.PrivateStoreHistoryItem;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 public class ExPrivateStoreSearchHistory implements IClientOutgoingPacket
 {
@@ -27,7 +27,7 @@ public class ExPrivateStoreSearchHistory implements IClientOutgoingPacket
 		packetWriter.writeC(cCurrentPage);
 		packetWriter.writeC(cMaxPage);
 		packetWriter.writeD(items.size());
-		for (PrivateStoreHistoryItem item : items)
+		for(PrivateStoreHistoryItem item : items)
 		{
 			packetWriter.writeD(item.getItemId());
 			packetWriter.writeC(item.getStoreType());

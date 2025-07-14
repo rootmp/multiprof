@@ -27,7 +27,7 @@ public class ExReplySentPost implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(mail.getType().ordinal());
-		if (mail.getType() == Mail.SenderType.SYSTEM)
+		if(mail.getType() == Mail.SenderType.SYSTEM)
 		{
 			packetWriter.writeD(mail.getSystemParams()[0]);
 			packetWriter.writeD(mail.getSystemParams()[1]);
@@ -40,7 +40,7 @@ public class ExReplySentPost implements IClientOutgoingPacket
 			packetWriter.writeD(mail.getSystemTopic());
 			packetWriter.writeD(mail.getSystemBody());
 		}
-		else if (mail.getType() == Mail.SenderType.UNKNOWN)
+		else if(mail.getType() == Mail.SenderType.UNKNOWN)
 		{
 			packetWriter.writeD(3492);
 			packetWriter.writeD(3493);
@@ -54,7 +54,7 @@ public class ExReplySentPost implements IClientOutgoingPacket
 		packetWriter.writeS(mail.getBody()); // тело
 
 		packetWriter.writeD(mail.getAttachments().size()); // количество приложенных вещей
-		for (ItemInstance item : mail.getAttachments())
+		for(ItemInstance item : mail.getAttachments())
 		{
 			writeItemInfo(packetWriter, item);
 			packetWriter.writeD(item.getObjectId());

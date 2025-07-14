@@ -26,9 +26,9 @@ public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 		_clanLevel = clan.getLevel();
 		_clanMemberCount = clan.getAllSize();
 
-		for (SubUnit su : clan.getAllSubUnits())
+		for(SubUnit su : clan.getAllSubUnits())
 		{
-			if (su.getType() == Clan.SUBUNIT_MAIN_CLAN)
+			if(su.getType() == Clan.SUBUNIT_MAIN_CLAN)
 			{
 				continue;
 			}
@@ -45,7 +45,7 @@ public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_clanLevel);
 		packetWriter.writeD(_clanMemberCount);
 		packetWriter.writeD(_subUnits.size());
-		for (SubUnit su : _subUnits)
+		for(SubUnit su : _subUnits)
 		{
 			packetWriter.writeD(su.getType());
 			packetWriter.writeS(su.getName());

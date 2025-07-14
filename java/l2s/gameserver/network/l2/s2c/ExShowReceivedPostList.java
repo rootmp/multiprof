@@ -40,11 +40,11 @@ public class ExShowReceivedPostList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD((int) (System.currentTimeMillis() / 1000L));
 		packetWriter.writeD(_mails.length); // количество писем
-		for (Mail mail : _mails)
+		for(Mail mail : _mails)
 		{
 			packetWriter.writeD(mail.getType().ordinal()); // тип письма
 
-			if (mail.getType() == Mail.SenderType.SYSTEM)
+			if(mail.getType() == Mail.SenderType.SYSTEM)
 			{
 				packetWriter.writeD(mail.getSystemTopic());
 			}
@@ -55,7 +55,7 @@ public class ExShowReceivedPostList implements IClientOutgoingPacket
 			packetWriter.writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
 			packetWriter.writeD(mail.getExpireTime()); // время действительности письма
 			packetWriter.writeD(mail.isUnread() ? 1 : 0); // письмо не прочитано - его нельзя удалить и оно выделяется
-															// ярким цветом
+			// ярким цветом
 			packetWriter.writeD(mail.isReturnable()); // returnable
 			packetWriter.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
 			packetWriter.writeD(mail.isReturned() ? 1 : 0);

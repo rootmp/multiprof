@@ -33,9 +33,8 @@ public class AutoSaveManager extends SteppingRunnableQueueManager
 	{
 		long delay = Rnd.get(180, 360) * 1000L;
 
-		return scheduleAtFixedRate(() ->
-		{
-			if (!player.isOnline())
+		return scheduleAtFixedRate(() -> {
+			if(!player.isOnline())
 				return;
 
 			player.store(true);

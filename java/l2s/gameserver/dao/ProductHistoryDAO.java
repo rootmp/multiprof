@@ -40,20 +40,20 @@ public class ProductHistoryDAO
 			statement = con.prepareStatement("SELECT product_id, purchased_count, last_purchase_time FROM product_history WHERE account_name = ?");
 			statement.setString(1, owner.getAccountName());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int product_id = rset.getInt("product_id");
 				int purchased_count = rset.getInt("purchased_count");
 				int last_purchase_time = rset.getInt("last_purchase_time");
 
 				ProductItem product = ProductDataHolder.getInstance().getProduct(product_id);
-				if (product == null)
+				if(product == null)
 					continue;
 
 				map.put(product_id, new ProductHistoryItem(product, purchased_count, last_purchase_time));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("ProductHistoryDAO.select(Player): " + e, e);
 		}
@@ -77,7 +77,7 @@ public class ProductHistoryDAO
 			statement.setInt(4, item.getLastPurchaseTime());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not add item to premium item list: " + item, e);
 			return false;
@@ -101,7 +101,7 @@ public class ProductHistoryDAO
 			statement.setInt(2, productId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not delete item from premium item list : ID[" + productId + "]", e);
 			return false;

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Party;
 import l2s.gameserver.model.Player;
@@ -21,13 +22,13 @@ public class RequestExMPCCShowPartyMembersInfo implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null || !activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+		if(activeChar == null || !activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 			return;
 
-		for (Party party : activeChar.getParty().getCommandChannel().getParties())
+		for(Party party : activeChar.getParty().getCommandChannel().getParties())
 		{
 			Player leader = party.getPartyLeader();
-			if (leader != null && leader.getObjectId() == _objectId)
+			if(leader != null && leader.getObjectId() == _objectId)
 			{
 				activeChar.sendPacket(new ExMPCCShowPartyMemberInfo(party));
 				break;

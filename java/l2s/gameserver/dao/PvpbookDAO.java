@@ -70,7 +70,7 @@ public class PvpbookDAO
 				int teleportHelpСount = rset.getInt("teleport_help_count");
 				int shareType = rset.getInt("share_type");
 				int request_for_help = rset.getInt("request_for_help");
-				
+
 				if((killedPlayer != null) && (killerPlayer != null))
 				{
 					pvpbook.addInfo(killedPlayer, killerPlayer, deathTime, sharedTime, locationShow, teleportСount, teleportHelpСount, shareType, request_for_help);

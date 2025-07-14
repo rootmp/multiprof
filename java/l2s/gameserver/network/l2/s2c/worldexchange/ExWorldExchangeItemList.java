@@ -52,14 +52,14 @@ public class ExWorldExchangeItemList implements IClientOutgoingPacket
 	private void getItemInfo(Player player, PacketWriter packetWriter, WorldExchangeHolder holder)
 	{
 		ItemInstance item = holder.getItemInstance();
-		
+
 		packetWriter.writeQ(holder.getWorldExchangeId());
 
-		if(item.getItemId()==57)
-			packetWriter.writeQ(holder.getPrice()*(item.getCount()/1000000));
+		if(item.getItemId() == 57)
+			packetWriter.writeQ(holder.getPrice() * (item.getCount() / 1000000));
 		else
-			packetWriter.writeQ(holder.getPrice()*item.getCount());
-		
+			packetWriter.writeQ(holder.getPrice() * item.getCount());
+
 		packetWriter.writeD((int) (holder.getEndTime() / 1000L));
 
 		packetWriter.writeD(item.getItemId());
@@ -68,7 +68,7 @@ public class ExWorldExchangeItemList implements IClientOutgoingPacket
 		packetWriter.writeD(item.getVariation1Id());
 		packetWriter.writeD(item.getVariation2Id());
 		packetWriter.writeD(item.getVariation3Id());
-		
+
 		packetWriter.writeD(-1);
 		packetWriter.writeH(item.getAttackElement().getId());
 		packetWriter.writeH(item.getAttackElementValue());
@@ -85,7 +85,7 @@ public class ExWorldExchangeItemList implements IClientOutgoingPacket
 		packetWriter.writeD(item.getEnsoulSpecialOptionsArray()[0]);
 
 		packetWriter.writeH(item.isBlessed());
-		
+
 		packetWriter.writeC(holder.getListingType());
 		packetWriter.writeC(holder.getCurrencyType());
 		packetWriter.writeC(holder.getOldOwnerId() == player.getObjectId());

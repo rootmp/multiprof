@@ -43,14 +43,14 @@ public final class AttendanceRewardHolder extends AbstractHolder
 	{
 		return premium ? _premiumRewards.get(index) : _normalRewards.get(index);
 	}
-	
+
 	@Override
 	public void afterParsing()
 	{
 		super.afterParsing();
 		newStartDate();
 	}
-	
+
 	public void newStartDate()
 	{
 		String start_date = ServerVariables.getString("VipAttendanceStart", Config.VIP_ATTENDANCE_REWARDS_START_DATE.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")));
@@ -62,18 +62,17 @@ public final class AttendanceRewardHolder extends AbstractHolder
 			Config.VIP_ATTENDANCE_REWARDS_START_DATE = startDate;
 			ServerVariables.set("VipAttendanceStart", start_date);
 
-
-      LocalDateTime endDate = startDate.plusMonths(1);
-      endDate = endDate.withHour(6).withMinute(30).withSecond(0);
-      Config.VIP_ATTENDANCE_REWARDS_END_DATE = endDate;
+			LocalDateTime endDate = startDate.plusMonths(1);
+			endDate = endDate.withHour(6).withMinute(30).withSecond(0);
+			Config.VIP_ATTENDANCE_REWARDS_END_DATE = endDate;
 		}
 		else
 		{
 			Config.VIP_ATTENDANCE_REWARDS_START_DATE = getDateFromString(start_date);
 
-      LocalDateTime endDate = Config.VIP_ATTENDANCE_REWARDS_START_DATE.plusMonths(1);
-      endDate = endDate.withHour(6).withMinute(30).withSecond(0);
-      Config.VIP_ATTENDANCE_REWARDS_END_DATE = endDate;
+			LocalDateTime endDate = Config.VIP_ATTENDANCE_REWARDS_START_DATE.plusMonths(1);
+			endDate = endDate.withHour(6).withMinute(30).withSecond(0);
+			Config.VIP_ATTENDANCE_REWARDS_END_DATE = endDate;
 		}
 	}
 
@@ -89,20 +88,20 @@ public final class AttendanceRewardHolder extends AbstractHolder
 		_normalRewards.clear();
 		_premiumRewards.clear();
 	}
-	
+
 	private static LocalDateTime getDateFromString(String datetime)
 	{
 		return LocalDateTime.parse(datetime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
 	}
 
-	private static boolean isValidDate(String datetime) 
+	private static boolean isValidDate(String datetime)
 	{
 		LocalDateTime startDate = getDateFromString(datetime);
-		
+
 		LocalDateTime now = LocalDateTime.now();
-		if (now.isBefore(startDate) || now.isAfter(startDate.plusMonths(1))) 
+		if(now.isBefore(startDate) || now.isAfter(startDate.plusMonths(1)))
 			return false;
-		
+
 		return true;
 	}
 

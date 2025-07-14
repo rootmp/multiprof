@@ -27,7 +27,7 @@ public abstract class SendablePacket extends l2s.commons.net.nio.SendablePacket<
 		{
 			writeImpl();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

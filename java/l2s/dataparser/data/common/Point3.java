@@ -11,13 +11,13 @@ public class Point3
 	public int y;
 	@IntValue(withoutName = true)
 	public int z;
-	
+
 	@Override
-  public String toString() 
-  {
-    return x+";"+y+";"+z;
-  }
-	
+	public String toString()
+	{
+		return x + ";" + y + ";" + z;
+	}
+
 	public Location getLocation()
 	{
 		return new Location(x, y, z);

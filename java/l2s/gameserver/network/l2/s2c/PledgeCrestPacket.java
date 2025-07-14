@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.s2c;
+
 import l2s.commons.network.PacketWriter;
 
 /**
@@ -24,7 +25,7 @@ public class PledgeCrestPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_clanId);
 		packetWriter.writeD(_crestId);
-		if (_crestSize != 0)
+		if(_crestSize != 0)
 		{
 			packetWriter.writeD(_crestSize);
 			packetWriter.writeD(_crestSize);

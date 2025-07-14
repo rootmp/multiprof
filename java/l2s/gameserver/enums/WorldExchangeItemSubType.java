@@ -28,27 +28,25 @@ public enum WorldExchangeItemSubType
 	INC_ENCHANT_PROP(23),
 	ADENA(24),
 	ETC_SUB_TYPE(25);
-	
+
 	private final int _id;
-	
+
 	private WorldExchangeItemSubType(int id)
 	{
 		_id = id;
 	}
-	
+
 	public int getId()
 	{
 		return _id;
 	}
-	
+
 	public static WorldExchangeItemSubType getWorldExchangeItemSubType(int id)
 	{
-		for (WorldExchangeItemSubType type : values())
+		for(WorldExchangeItemSubType type : values())
 		{
-			if (type.getId() == id)
-			{
-				return type;
-			}
+			if(type.getId() == id)
+			{ return type; }
 		}
 
 		System.out.println("WorldExchangeSortType sortType == null " + id);

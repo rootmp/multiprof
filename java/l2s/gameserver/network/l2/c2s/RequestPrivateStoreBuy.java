@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -30,7 +31,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 	{
 		_sellerId = packet.readD();
 		_count = packet.readD();
-		if (_count * 20 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 20 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
@@ -40,13 +41,13 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 		_itemQ = new long[_count];
 		_itemP = new long[_count];
 
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			_items[i] = packet.readD();
 			_itemQ[i] = packet.readQ();
 			_itemP[i] = packet.readQ();
 
-			if (_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			if(_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
 				break;
@@ -59,47 +60,49 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player buyer = client.getActiveChar();
-		if (buyer == null || _count == 0)
+		if(buyer == null || _count == 0)
 			return;
 
-		if (buyer.isActionsDisabled())
+		if(buyer.isActionsDisabled())
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (buyer.isInStoreMode())
+		if(buyer.isInStoreMode())
 		{
 			buyer.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (buyer.isInTrade())
+		if(buyer.isInTrade())
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (buyer.isFishing())
+		if(buyer.isFishing())
 		{
 			buyer.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING_2);
 			return;
 		}
 
-		if (buyer.isInTrainingCamp())
+		if(buyer.isInTrainingCamp())
 		{
 			buyer.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (!buyer.getPlayerAccess().UseTrade)
+		if(!buyer.getPlayerAccess().UseTrade)
 		{
 			buyer.sendPacket(SystemMsg.SOME_LINEAGE_II_FEATURES_HAVE_BEEN_LIMITED_FOR_FREE_TRIALS_____);
 			return;
 		}
 
 		Player seller = (Player) buyer.getVisibleObject(_sellerId);
-		if (seller == null || seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL && seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL_PACKAGE || !seller.checkInteractionDistance(buyer))
+		if(seller == null
+				|| seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL && seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL_PACKAGE
+				|| !seller.checkInteractionDistance(buyer))
 		{
 			buyer.sendPacket(SystemMsg.THE_ATTEMPT_TO_TRADE_HAS_FAILED);
 			buyer.sendActionFailed();
@@ -107,7 +110,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 		}
 
 		Map<Integer, TradeItem> sellList = seller.getSellList();
-		if (sellList.isEmpty())
+		if(sellList.isEmpty())
 		{
 			buyer.sendPacket(SystemMsg.THE_ATTEMPT_TO_TRADE_HAS_FAILED);
 			buyer.sendActionFailed();
@@ -124,7 +127,8 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 		seller.getInventory().writeLock();
 		try
 		{
-			loop: for (int i = 0; i < _count; i++)
+			loop:
+			for(int i = 0; i < _count; i++)
 			{
 				int objectId = _items[i];
 				long count = _itemQ[i];
@@ -132,20 +136,20 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 
 				TradeItem bi = null;
 
-				for (TradeItem si : sellList.values())
-					if (si.getObjectId() == objectId)
-						if (si.getOwnersPrice() == price)
+				for(TradeItem si : sellList.values())
+					if(si.getObjectId() == objectId)
+						if(si.getOwnersPrice() == price)
 						{
-							if (count > si.getCount())
+							if(count > si.getCount())
 								break loop;
 
 							ItemInstance item = seller.getInventory().getItemByObjectId(objectId);
-							if (item == null || item.getCount() < count || !item.canBePrivateStore(seller))
+							if(item == null || item.getCount() < count || !item.canBePrivateStore(seller))
 								break loop;
 
 							totalCost = SafeMath.addAndCheck(totalCost, SafeMath.mulAndCheck(count, price));
 							weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(count, item.getTemplate().getWeight()));
-							if (!item.isStackable() || buyer.getInventory().getItemByItemId(item.getItemId()) == null)
+							if(!item.isStackable() || buyer.getInventory().getItemByItemId(item.getItemId()) == null)
 								slots++;
 
 							bi = new TradeItem();
@@ -159,7 +163,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 						}
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			// TODO audit
 			buyList.clear();
@@ -172,28 +176,28 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 			{
 				// проверяем, что все вещи доступны для покупки, случае продажи упаковкой,
 				// проверяем, что покупается вся упаковка
-				if (buyList.size() != _count || (seller.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE && buyList.size() != sellList.size()))
+				if(buyList.size() != _count || (seller.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE && buyList.size() != sellList.size()))
 				{
 					buyer.sendPacket(SystemMsg.THE_ATTEMPT_TO_TRADE_HAS_FAILED);
 					buyer.sendActionFailed();
 					return;
 				}
 
-				if (!buyer.getInventory().validateWeight(weight))
+				if(!buyer.getInventory().validateWeight(weight))
 				{
 					buyer.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_WEIGHT_LIMIT);
 					buyer.sendActionFailed();
 					return;
 				}
 
-				if (!buyer.getInventory().validateCapacity(slots))
+				if(!buyer.getInventory().validateCapacity(slots))
 				{
 					buyer.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL);
 					buyer.sendActionFailed();
 					return;
 				}
 
-				if (!buyer.reduceAdena(totalCost))
+				if(!buyer.reduceAdena(totalCost))
 				{
 					buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 					buyer.sendActionFailed();
@@ -201,20 +205,20 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 				}
 
 				ItemInstance item;
-				for (TradeItem bi : buyList)
+				for(TradeItem bi : buyList)
 				{
 					item = seller.getInventory().removeItemByObjectId(bi.getObjectId(), bi.getCount());
 
 					Iterator<Map.Entry<Integer, TradeItem>> iterator = sellList.entrySet().iterator();
-					while (iterator.hasNext())
+					while(iterator.hasNext())
 					{
 						Map.Entry<Integer, TradeItem> entry = iterator.next();
 
 						TradeItem si = entry.getValue();
-						if (si.getObjectId() == bi.getObjectId())
+						if(si.getObjectId() == bi.getObjectId())
 						{
 							si.setCount(si.getCount() - bi.getCount());
-							if (si.getCount() < 1L)
+							if(si.getCount() < 1L)
 								iterator.remove();
 							break;
 						}
@@ -227,7 +231,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 				}
 
 				long tax = TradeHelper.getTax(seller, totalCost);
-				if (tax > 0)
+				if(tax > 0)
 					totalCost -= tax;
 
 				seller.addAdena(totalCost);
@@ -240,7 +244,7 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 			}
 		}
 
-		if (sellList.isEmpty())
+		if(sellList.isEmpty())
 			TradeHelper.cancelStore(seller);
 
 		seller.sendChanges();

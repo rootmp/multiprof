@@ -70,16 +70,16 @@ public class BossInstance extends RaidBossInstance
 	@Override
 	protected void onDeath(Creature killer)
 	{
-		if (killer != null && killer.isPlayable())
+		if(killer != null && killer.isPlayable())
 		{
 			Player player = killer.getPlayer();
-			if (player.isInParty())
+			if(player.isInParty())
 			{
-				for (Player member : player.getParty().getPartyMembers())
-					if (member.isHero())
+				for(Player member : player.getParty().getPartyMembers())
+					if(member.isHero())
 						Hero.getInstance().addHeroDiary(member.getObjectId(), HeroDiary.ACTION_RAID_KILLED, getNpcId());
 			}
-			else if (player.isHero())
+			else if(player.isHero())
 				Hero.getInstance().addHeroDiary(player.getObjectId(), HeroDiary.ACTION_RAID_KILLED, getNpcId());
 		}
 		super.onDeath(killer);

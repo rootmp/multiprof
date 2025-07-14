@@ -41,7 +41,7 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 		int extraAvailable = 0;
 
 		packetWriter.writeD(size); // rewards size
-		
+
 		int i = 1;
 		while(i <= lastTakenBasic)
 		{
@@ -158,7 +158,7 @@ public class ExMissionLevelRewardList implements IClientOutgoingPacket
 			i++;
 		}
 
-		MissionLevelRewardData data = _template.getRewards().get(Math.min(currentLvl,_template.getRewards().size()-1));
+		MissionLevelRewardData data = _template.getRewards().get(Math.min(currentLvl, _template.getRewards().size() - 1));
 		double percents = (points / data.getValue()) * 100;
 		LocalDateTime nextChange;
 		long seasonEnd;

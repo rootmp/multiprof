@@ -17,24 +17,20 @@ public final class ItemEnchantOptionsListener extends AbstractOptionDataListener
 	@Override
 	public int onEquip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!item.isEquipable())
-		{
-			return 0;
-		}
+		if(!item.isEquipable())
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		actor.getPlayer();
 		int flags = 0;
 		List<OptionDataTemplate> addedOptionDatas = new ArrayList<OptionDataTemplate>();
 
-		for (int i : item.getEnchantOptions())
+		for(int i : item.getEnchantOptions())
 		{
 			OptionDataTemplate template = OptionDataHolder.getInstance().getTemplate(i);
-			if (template == null)
+			if(template == null)
 			{
 				continue;
 			}

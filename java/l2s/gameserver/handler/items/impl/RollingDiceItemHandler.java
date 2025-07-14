@@ -13,30 +13,30 @@ public class RollingDiceItemHandler extends DefaultItemHandler
 	@Override
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (playable == null || !playable.isPlayer())
+		if(playable == null || !playable.isPlayer())
 			return false;
 
 		Player player = (Player) playable;
 
-		if (!player.checkFloodProtection("ROLL_DICE", "use_item"))
+		if(!player.checkFloodProtection("ROLL_DICE", "use_item"))
 			return false;
 
 		int itemId = item.getItemId();
 
-		if (player.isInOlympiadMode())
+		if(player.isInOlympiadMode())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_THAT_ITEM_IN_A_GRAND_OLYMPIAD_MATCH);
 			return false;
 		}
 
-		if (player.isSitting())
+		if(player.isSitting())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SITTING);
 			return false;
 		}
 
 		int number = Rnd.get(1, 6);
-		if (number == 0)
+		if(number == 0)
 		{
 			player.sendPacket(SystemMsg.YOU_MAY_NOT_THROW_THE_DICE_AT_THIS_TIME);
 			return false;

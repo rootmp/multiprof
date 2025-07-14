@@ -35,7 +35,7 @@ public class AdenLabData
 		this.nNormalGameDailyCount = 0;
 		this.specialSlots = new HashMap<>();
 	}
-	
+
 	public int getBossID()
 	{
 		return nBossID;
@@ -100,22 +100,22 @@ public class AdenLabData
 	{
 		openCards = i;
 	}
-	
+
 	public void setSpecialSlot(int slot, int[] options)
 	{
-		specialSlots.put(slot, options); 
+		specialSlots.put(slot, options);
 	}
 
-	public int[] getSpecialSlot(int slot) 
+	public int[] getSpecialSlot(int slot)
 	{
 		if(!specialSlots.containsKey(slot))
 			return new int[0];
-		
+
 		return Arrays.stream(specialSlots.get(slot)).filter(s -> s > 0).toArray();
 	}
 
 	public Map<Integer, int[]> getSpecialSlots()
 	{
-		return specialSlots; 
+		return specialSlots;
 	}
 }

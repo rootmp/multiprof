@@ -39,7 +39,7 @@ public class ZoneObject implements InitableObject
 	{
 		setActive(a);
 
-		if (a)
+		if(a)
 			_zone.addEvent(event);
 		else
 			_zone.removeEvent(event);

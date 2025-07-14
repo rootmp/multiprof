@@ -5,8 +5,7 @@ import l2s.commons.network.PacketWriter;
 public class FriendAdd implements IClientOutgoingPacket
 {
 	public FriendAdd()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

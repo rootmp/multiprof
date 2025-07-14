@@ -19,7 +19,7 @@ import l2s.gameserver.model.Player;
 public class CharacterDAO
 {
 	private static final Logger _log = LoggerFactory.getLogger(CharacterDAO.class);
-	
+
 	private static final String CHAR_DELETE = "DELETE FROM characters WHERE obj_Id=?";
 	private static final String CHAR_INSERT = "INSERT INTO `characters` (account_name, obj_Id, char_name, face, beautyFace, hairStyle, beautyHairStyle, hairColor, beautyHairColor, sex, karma, pvpkills, pkkills, clanid, createtime, deletetime, title, accesslevel, online, leaveclan, deleteclan, nochannel, pledge_type, pledge_rank, lvl_joined_academy, apprentice, used_world_chat_points, hide_head_accessories, magic_lamp_points) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
@@ -31,10 +31,8 @@ public class CharacterDAO
 
 	public void deleteCharByObjId(int objid)
 	{
-		if (objid < 0)
-		{
-			return;
-		}
+		if(objid < 0)
+		{ return; }
 
 		try (Connection con = DatabaseFactory.getInstance().getConnection();)
 		{
@@ -42,7 +40,7 @@ public class CharacterDAO
 			statement.setInt(1, objid);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -84,7 +82,7 @@ public class CharacterDAO
 			statement.setLong(29, player.getMagicLampPoints());
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Exception in: ", e);
 			return false;
@@ -100,12 +98,12 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement(CHAR_NAME);
 			statement.setString(1, name);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				result = rset.getInt(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharNameTable.getObjectIdByName(String): " + e, e);
 		}
@@ -121,12 +119,12 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement(CHAR_OBJ);
 			statement.setInt(1, objectId);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				result = rset.getString(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharNameTable.getObjectIdByName(int): " + e, e);
 		}
@@ -147,10 +145,10 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement(CHAR_ACC_BYNAME);
 			statement.setString(1, n);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 				result = rset.getString(1);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharNameTable.getAccNameByName(String): " + e, e);
 		}
@@ -165,12 +163,12 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement(CHAR_ACC_BYNUMBER);
 			statement.setString(1, account);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				number = rset.getInt(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -180,21 +178,22 @@ public class CharacterDAO
 	public List<String> getPlayersNameByAccount(String account, int minAccessLevel)
 	{
 		final List<String> charNames = new ArrayList<String>(8);
-		try (Connection con = DatabaseFactory.getInstance().getConnection(); 
-				PreparedStatement statement = con.prepareStatement("SELECT char_name FROM characters WHERE account_name=?" + (minAccessLevel > Integer.MIN_VALUE ? " AND accesslevel >= 0" : "")))
+		try (Connection con = DatabaseFactory.getInstance().getConnection();
+				PreparedStatement statement = con.prepareStatement("SELECT char_name FROM characters WHERE account_name=?"
+						+ (minAccessLevel > Integer.MIN_VALUE ? " AND accesslevel >= 0" : "")))
 		{
 			statement.setString(1, account);
 			try (ResultSet rset = statement.executeQuery())
 			{
-				while (rset.next())
+				while(rset.next())
 					charNames.add(rset.getString("char_name"));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while loading Char Names From Account: " + account, e);
 		}
@@ -209,20 +208,22 @@ public class CharacterDAO
 	public List<Integer> getPlayersIdByAccount(String account, int minAccessLevel)
 	{
 		final List<Integer> charIds = new ArrayList<Integer>(8);
-		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT obj_Id FROM characters WHERE account_name=?" + (minAccessLevel > Integer.MIN_VALUE ? " AND accesslevel >= 0" : "")))
+		try (Connection con = DatabaseFactory.getInstance().getConnection();
+				PreparedStatement statement = con.prepareStatement("SELECT obj_Id FROM characters WHERE account_name=?"
+						+ (minAccessLevel > Integer.MIN_VALUE ? " AND accesslevel >= 0" : "")))
 		{
 			statement.setString(1, account);
 			try (ResultSet rset = statement.executeQuery())
 			{
-				while (rset.next())
+				while(rset.next())
 					charIds.add(rset.getInt("obj_Id"));
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while loading Char IDs From Account: " + account, e);
 		}
@@ -241,12 +242,12 @@ public class CharacterDAO
 		{
 			PreparedStatement statement = con.prepareStatement("SELECT obj_Id FROM characters");
 			ResultSet rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				set.add(rset.getInt(1));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -261,12 +262,12 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement("SELECT last_ip FROM characters WHERE char_name=? LIMIT 1");
 			statement.setString(1, n);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				ip = rset.getString(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -282,12 +283,12 @@ public class CharacterDAO
 			PreparedStatement statement = con.prepareStatement("SELECT last_hwid FROM characters WHERE char_name=? LIMIT 1");
 			statement.setString(1, n);
 			ResultSet rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				hwid = rset.getString(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			e.printStackTrace();
 		}

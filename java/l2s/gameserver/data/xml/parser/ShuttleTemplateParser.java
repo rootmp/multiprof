@@ -44,21 +44,21 @@ public final class ShuttleTemplateParser extends AbstractParser<ShuttleTemplateH
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element shuttleElement = iterator.next();
 
 			int shuttleId = Integer.parseInt(shuttleElement.attributeValue("id"));
 			ShuttleTemplate template = new ShuttleTemplate(shuttleId);
-			for (Iterator<Element> doorsIterator = shuttleElement.elementIterator("stops"); doorsIterator.hasNext();)
+			for(Iterator<Element> doorsIterator = shuttleElement.elementIterator("stops"); doorsIterator.hasNext();)
 			{
 				Element doorsElement = doorsIterator.next();
-				for (Iterator<Element> doorIterator = doorsElement.elementIterator("stop"); doorIterator.hasNext();)
+				for(Iterator<Element> doorIterator = doorsElement.elementIterator("stop"); doorIterator.hasNext();)
 				{
 					Element doorElement = doorIterator.next();
 					int doorId = Integer.parseInt(doorElement.attributeValue("id"));
 					ShuttleStop shuttleStop = new ShuttleStop(doorId);
-					for (Iterator<Element> dimensionIterator = doorElement.elementIterator("dimension"); dimensionIterator.hasNext();)
+					for(Iterator<Element> dimensionIterator = doorElement.elementIterator("dimension"); dimensionIterator.hasNext();)
 					{
 						Element dimensionElement = dimensionIterator.next();
 						shuttleStop.getDimensions().add(Location.parse(dimensionElement));

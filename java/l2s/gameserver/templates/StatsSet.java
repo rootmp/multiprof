@@ -14,8 +14,7 @@ public class StatsSet extends MultiValueSet<String>
 	private static final long serialVersionUID = -2209589233655930756L;
 
 	@SuppressWarnings("serial")
-	public static final StatsSet EMPTY = new StatsSet()
-	{
+	public static final StatsSet EMPTY = new StatsSet(){
 		@Override
 		public Object put(String a, Object a2)
 		{
@@ -45,10 +44,10 @@ public class StatsSet extends MultiValueSet<String>
 		set(key, newValue);
 		return newValue;
 	}
-	
+
 	public int incInt(String key, int defaultValue, int inc)
 	{
-		final int newValue =  getInteger(key, defaultValue) + inc;
+		final int newValue = getInteger(key, defaultValue) + inc;
 		set(key, newValue);
 		return newValue;
 	}

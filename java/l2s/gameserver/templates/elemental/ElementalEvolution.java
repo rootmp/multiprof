@@ -78,9 +78,9 @@ public class ElementalEvolution implements Comparable<ElementalEvolution>
 
 	public void addLevelData(ElementalLevelData data)
 	{
-		if (_minLevelData == null || _minLevelData.getLevel() >= data.getLevel())
+		if(_minLevelData == null || _minLevelData.getLevel() >= data.getLevel())
 			_minLevelData = data;
-		if (_maxLevelData == null || _maxLevelData.getLevel() <= data.getLevel())
+		if(_maxLevelData == null || _maxLevelData.getLevel() <= data.getLevel())
 			_maxLevelData = data;
 		_levelDatas.put(data.getLevel(), data);
 	}
@@ -93,20 +93,20 @@ public class ElementalEvolution implements Comparable<ElementalEvolution>
 	public int getLevelByExp(long exp)
 	{
 		ElementalLevelData result = null;
-		for (ElementalLevelData data : _levelDatas.valueCollection())
+		for(ElementalLevelData data : _levelDatas.valueCollection())
 		{
-			if (result == null || data.getExp() < result.getExp())
+			if(result == null || data.getExp() < result.getExp())
 			{
-				if (data.getExp() >= exp)
+				if(data.getExp() >= exp)
 					result = data;
 			}
 		}
 
-		if (result == null)
+		if(result == null)
 		{
-			if (_minLevelData.getExp() >= exp)
+			if(_minLevelData.getExp() >= exp)
 				return _minLevelData.getLevel();
-			if (_maxLevelData.getExp() <= exp)
+			if(_maxLevelData.getExp() <= exp)
 				return _maxLevelData.getLevel();
 		}
 		return result.getLevel();
@@ -114,7 +114,7 @@ public class ElementalEvolution implements Comparable<ElementalEvolution>
 
 	public long getMinExp(int level)
 	{
-		if (_minLevelData.getLevel() >= level)
+		if(_minLevelData.getLevel() >= level)
 			return 0;
 		return getLevelData(level - 1).getExp() + 1L;
 	}

@@ -13,19 +13,19 @@ public class UpgradeItemData
 	private long count;
 	@IntValue(withoutName = true)
 	private int enchant;
-	
+
 	public long getCount()
 	{
-		return count;  
+		return count;
 	}
 
 	public int getId()
 	{
-		return id;   
+		return id;
 	}
 
 	public int getEnchantLevel()
 	{
-		return enchant;    
+		return enchant;
 	}
 }

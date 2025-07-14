@@ -34,7 +34,7 @@ public class PDam extends Skill
 	@Override
 	public boolean calcCriticalBlow(Creature caster, Creature target)
 	{
-		if (_blow)
+		if(_blow)
 			return Formulas.calcBlow(caster, target, this);
 		return false;
 	}
@@ -42,21 +42,22 @@ public class PDam extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
 		boolean isDarkVeilActive = false;
-		for (Abnormal ab : activeChar.getAbnormalList())
+		for(Abnormal ab : activeChar.getAbnormalList())
 		{
-			if ((ab.getSkill().getId() == 398) && (ab.getSkill().getLevel() == 2))
+			if((ab.getSkill().getId() == 398) && (ab.getSkill().getLevel() == 2))
 			{
 				isDarkVeilActive = true;
 			}
 		}
-		if (((getId() == 45161) && isDarkVeilActive) || ((getId() == 45163) && isDarkVeilActive) || (getId() == 47002) || (getId() == 47005) || (getId() == 47008) || (getId() == 47011) || (getId() == 47015))
+		if(((getId() == 45161) && isDarkVeilActive) || ((getId() == 45163) && isDarkVeilActive) || (getId() == 47002) || (getId() == 47005)
+				|| (getId() == 47008) || (getId() == 47011) || (getId() == 47015))
 			return;
 
-		if (_turner && !target.isInvulnerable())
+		if(_turner && !target.isInvulnerable())
 		{
 			target.broadcastPacket(new StartRotatingPacket(target, target.getHeading(), 1, 65535));
 			target.broadcastPacket(new FinishRotatingPacket(target, activeChar.getHeading(), 65535));
@@ -68,18 +69,18 @@ public class PDam extends Skill
 
 		int times = _num_attacks;
 
-		if (activeChar.getAbnormalList().contains(AbnormalType.TIME_BURST) && (activeChar.getKnownSkill(47062) != null))
+		if(activeChar.getAbnormalList().contains(AbnormalType.TIME_BURST) && (activeChar.getKnownSkill(47062) != null))
 		{
-			if (activeChar.getKnownSkill(47062).getLevel() == 2)
+			if(activeChar.getKnownSkill(47062).getLevel() == 2)
 			{
-				if (Rnd.get(100) < 50)
+				if(Rnd.get(100) < 50)
 				{
 					times++;
 				}
 			}
 			else
 			{
-				if (Rnd.get(100) < 10)
+				if(Rnd.get(100) < 10)
 				{
 					times++;
 				}
@@ -87,26 +88,27 @@ public class PDam extends Skill
 		}
 
 		double power = getPower();
-		if (_static)
+		if(_static)
 		{
 			realTarget.reduceCurrentHp(power, activeChar, this, true, true, _directHp, true, false, false, power != 0, true, false, false, false, 0, false);
 			return;
 		}
 
-		for (int i = 0; i < times; i++)
+		for(int i = 0; i < times; i++)
 		{
 			final AttackInfo info = Formulas.calcSkillPDamage(activeChar, realTarget, this, power, _blow, isSSPossible());
-			if (info == null)
+			if(info == null)
 				return;
 
-			realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, _directHp, true, false, false, power != 0, true, info.crit || info.blow, false, false, info.elementalDamage, info.elementalCrit);
+			realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, _directHp, true, false, false, power != 0, true, info.crit
+					|| info.blow, false, false, info.elementalDamage, info.elementalCrit);
 
-			if (i == 0 && (!info.miss || info.damage >= 1))
+			if(i == 0 && (!info.miss || info.damage >= 1))
 			{
 				double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-				if (lethalDmg > 0)
+				if(lethalDmg > 0)
 					realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
-				else if (!reflected)
+				else if(!reflected)
 					realTarget.doCounterAttack(this, activeChar, _blow);
 			}
 		}

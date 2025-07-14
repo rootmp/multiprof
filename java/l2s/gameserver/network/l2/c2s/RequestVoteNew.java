@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.Player;
@@ -21,19 +22,19 @@ public class RequestVoteNew implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
-		if (!activeChar.getPlayerAccess().CanEvaluate)
+		if(!activeChar.getPlayerAccess().CanEvaluate)
 			return;
 
 		GameObject target = activeChar.getTarget();
-		if (target == null || !target.isPlayer() || target.getObjectId() != _targetObjectId)
+		if(target == null || !target.isPlayer() || target.getObjectId() != _targetObjectId)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return;
 		}
 
-		if (target.getObjectId() == activeChar.getObjectId())
+		if(target.getObjectId() == activeChar.getObjectId())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_RECOMMEND_YOURSELF);
 			return;
@@ -41,13 +42,13 @@ public class RequestVoteNew implements IClientIncomingPacket
 
 		Player targetPlayer = (Player) target;
 
-		if (activeChar.getRecomLeft() <= 0)
+		if(activeChar.getRecomLeft() <= 0)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_AUTHORIZED_TO_MAKE_FURTHER_RECOMMENDATIONS_AT_THIS_TIME);
 			return;
 		}
 
-		if (targetPlayer.getRecomHave() >= 255)
+		if(targetPlayer.getRecomHave() >= 255)
 		{
 			activeChar.sendPacket(SystemMsg.YOUR_SELECTED_TARGET_CAN_NO_LONGER_RECEIVE_A_RECOMMENDATION);
 			return;

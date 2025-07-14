@@ -42,16 +42,16 @@ public class EffectsDAO
 	public void restoreEffects(Playable playable)
 	{
 		int objectId, id;
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 		{
 			objectId = playable.getObjectId();
 			id = ((Player) playable).getActiveClassId();
 		}
-		else if (playable.isServitor())
+		else if(playable.isServitor())
 		{
 			objectId = playable.getPlayer().getObjectId();
 			id = ((Servitor) playable).getEffectIdentifier();
-			if (playable.isSummon())
+			if(playable.isSummon())
 			{
 				id += SUMMON_SKILL_OFFSET;
 				id *= 10;
@@ -70,13 +70,13 @@ public class EffectsDAO
 			statement.setInt(1, objectId);
 			statement.setInt(2, id);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				final int skillId = rset.getInt("skill_id");
 				final int skillLvl = rset.getInt("skill_level");
 
 				final Skill skill = SkillHolder.getInstance().getSkill(skillId, skillLvl);
-				if (skill == null)
+				if(skill == null)
 					continue;
 
 				final boolean isSelf = rset.getInt("is_self") > 0;
@@ -87,7 +87,7 @@ public class EffectsDAO
 
 				final Abnormal abnormal = new Abnormal(playable, playable, skill, useType, true);
 
-				if (!abnormal.isSaveable())
+				if(!abnormal.isSaveable())
 					continue;
 
 				abnormal.setDuration(duration);
@@ -104,7 +104,7 @@ public class EffectsDAO
 			statement.execute();
 			DbUtils.close(statement);
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not restore active effects data!", e);
 		}
@@ -117,16 +117,16 @@ public class EffectsDAO
 	public void insert(Playable playable)
 	{
 		int objectId, id;
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 		{
 			objectId = playable.getObjectId();
 			id = ((Player) playable).getActiveClassId();
 		}
-		else if (playable.isServitor())
+		else if(playable.isServitor())
 		{
 			objectId = playable.getPlayer().getObjectId();
 			id = ((Servitor) playable).getEffectIdentifier();
-			if (playable.isSummon())
+			if(playable.isSummon())
 			{
 				id += SUMMON_SKILL_OFFSET;
 				id *= 10;
@@ -136,7 +136,7 @@ public class EffectsDAO
 			return;
 
 		final Abnormal[] effects = playable.getAbnormalList().toArray();
-		if (effects.length == 0)
+		if(effects.length == 0)
 			return;
 
 		// Arrays.sort(effects, AbnormalsComparator.getInstance());
@@ -151,14 +151,14 @@ public class EffectsDAO
 			SqlBatch b = new SqlBatch("INSERT IGNORE INTO `character_effects_save` (`object_id`,`skill_id`,`skill_level`,`duration`,`left_time`,`id`,`is_self`) VALUES");
 
 			StringBuilder sb;
-			for (Abnormal effect : effects)
+			for(Abnormal effect : effects)
 			{
-				if (effect != null)
+				if(effect != null)
 				{
-					if (!effect.isOfUseType(EffectUseType.SELF) && !effect.isOfUseType(EffectUseType.NORMAL))
+					if(!effect.isOfUseType(EffectUseType.SELF) && !effect.isOfUseType(EffectUseType.NORMAL))
 						continue;
 
-					if (effect.isSaveable())
+					if(effect.isSaveable())
 					{
 						sb = new StringBuilder("(");
 						sb.append(objectId).append(",");
@@ -173,10 +173,10 @@ public class EffectsDAO
 				}
 			}
 
-			if (!b.isEmpty())
+			if(!b.isEmpty())
 				statement.executeUpdate(b.close());
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not store active effects data!", e);
 		}
@@ -197,7 +197,7 @@ public class EffectsDAO
 			statement.setInt(1, skillId);
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not delete effects data by skillId!", e);
 		}

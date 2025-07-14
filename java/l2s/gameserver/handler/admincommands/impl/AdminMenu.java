@@ -32,54 +32,52 @@ public class AdminMenu implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Menu)
+		if(!activeChar.getPlayerAccess().Menu)
 			return false;
 
-		if (fullString.startsWith("admin_teleport_character_to_menu"))
+		if(fullString.startsWith("admin_teleport_character_to_menu"))
 		{
 			String[] data = fullString.split(" ");
-			if (data.length == 5)
+			if(data.length == 5)
 			{
 				String playerName = data[1];
 				Player player = World.getPlayer(playerName);
-				if (player != null)
+				if(player != null)
 					teleportCharacter(player, new Location(Integer.parseInt(data[2]), Integer.parseInt(data[3]), Integer.parseInt(data[4])), activeChar);
 			}
 		}
-		else if (fullString.startsWith("admin_recall_char_menu"))
+		else if(fullString.startsWith("admin_recall_char_menu"))
 			try
 			{
 				String targetName = fullString.substring(23);
 				Player player = World.getPlayer(targetName);
 				teleportCharacter(player, activeChar.getLoc(), activeChar);
 			}
-			catch (StringIndexOutOfBoundsException e)
-			{
-			}
-		else if (fullString.startsWith("admin_goto_char_menu"))
+			catch(StringIndexOutOfBoundsException e)
+			{}
+		else if(fullString.startsWith("admin_goto_char_menu"))
 			try
 			{
 				String targetName = fullString.substring(21);
 				Player player = World.getPlayer(targetName);
 				teleportToCharacter(activeChar, player);
 			}
-			catch (StringIndexOutOfBoundsException e)
-			{
-			}
-		else if (fullString.equals("admin_kill_menu"))
+			catch(StringIndexOutOfBoundsException e)
+			{}
+		else if(fullString.equals("admin_kill_menu"))
 		{
 			GameObject obj = activeChar.getTarget();
 			StringTokenizer st = new StringTokenizer(fullString);
-			if (st.countTokens() > 1)
+			if(st.countTokens() > 1)
 			{
 				st.nextToken();
 				String player = st.nextToken();
 				Player plyr = World.getPlayer(player);
-				if (plyr == null)
+				if(plyr == null)
 					activeChar.sendMessage("Player " + player + " not found in game.");
 				obj = plyr;
 			}
-			if (obj != null && obj.isCreature())
+			if(obj != null && obj.isCreature())
 			{
 				Creature target = (Creature) obj;
 				target.reduceCurrentHp(target.getMaxHp() + 1, activeChar, null, true, true, true, false, false, false, true);
@@ -87,14 +85,14 @@ public class AdminMenu implements IAdminCommandHandler
 			else
 				activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 		}
-		else if (fullString.startsWith("admin_kick_menu"))
+		else if(fullString.startsWith("admin_kick_menu"))
 		{
 			StringTokenizer st = new StringTokenizer(fullString);
-			if (st.countTokens() > 1)
+			if(st.countTokens() > 1)
 			{
 				st.nextToken();
 				String player = st.nextToken();
-				if (AdminFunctions.kick(player, "kick"))
+				if(AdminFunctions.kick(player, "kick"))
 					activeChar.sendMessage("Player kicked.");
 			}
 		}
@@ -111,7 +109,7 @@ public class AdminMenu implements IAdminCommandHandler
 
 	private void teleportCharacter(Player player, Location loc, Player activeChar)
 	{
-		if (player != null)
+		if(player != null)
 		{
 			player.sendMessage("Admin is teleporting you.");
 			player.teleToLocation(loc);
@@ -121,7 +119,7 @@ public class AdminMenu implements IAdminCommandHandler
 	private void teleportToCharacter(Player activeChar, GameObject target)
 	{
 		Player player;
-		if (target != null && target.isPlayer())
+		if(target != null && target.isPlayer())
 			player = (Player) target;
 		else
 		{
@@ -129,7 +127,7 @@ public class AdminMenu implements IAdminCommandHandler
 			return;
 		}
 
-		if (player.getObjectId() == activeChar.getObjectId())
+		if(player.getObjectId() == activeChar.getObjectId())
 			activeChar.sendMessage("You cannot self teleport.");
 		else
 		{

@@ -102,7 +102,7 @@ public class CreatureMovement
 
 	public Location getDestination()
 	{
-		if (_destination == null)
+		if(_destination == null)
 			return new Location(0, 0, 0);
 		return _destination;
 	}
@@ -119,7 +119,7 @@ public class CreatureMovement
 
 	public void setFollowTarget(Creature target)
 	{
-		_followTarget = target == null ? HardReferences.<Creature>emptyRef() : target.getRef();
+		_followTarget = target == null ? HardReferences.<Creature> emptyRef() : target.getRef();
 	}
 
 	public void setMoveTaskDist(double dist)
@@ -133,10 +133,8 @@ public class CreatureMovement
 	 */
 	public Location getIntersectionPoint(Creature target)
 	{
-		if (!PositionUtils.isFacing(_actor, target, 90))
-		{
-			return new Location(target.getX(), target.getY(), target.getZ());
-		}
+		if(!PositionUtils.isFacing(_actor, target, 90))
+		{ return new Location(target.getX(), target.getY(), target.getZ()); }
 
 		final double angle = PositionUtils.convertHeadingToDegree(target.getHeading());
 		final double radian = Math.toRadians(angle - 90);
@@ -148,11 +146,9 @@ public class CreatureMovement
 	private Location setSimplePath(Location dest)
 	{
 		final List<Location> _moveList = GeoMove.constructMoveList(_actor.getLoc(), dest);
-		if (_moveList.isEmpty())
-		{
-			return null;
-		}
-		
+		if(_moveList.isEmpty())
+		{ return null; }
+
 		_targetRecorder.clear();
 		_targetRecorder.add(_moveList);
 		return _moveList.get(_moveList.size() - 1);
@@ -160,36 +156,36 @@ public class CreatureMovement
 
 	private void moveNext(boolean firstMove)
 	{
-		if (!isMoving() || _actor.isMovementDisabled())
+		if(!isMoving() || _actor.isMovementDisabled())
 		{
 			stopMove();
 			return;
 		}
 
 		_previousSpeed = _actor.getMoveSpeed();
-		if (_previousSpeed <= 0)
+		if(_previousSpeed <= 0)
 		{
 			stopMove();
 			return;
 		}
 
-		if (!firstMove)
+		if(!firstMove)
 		{
 			final Location dest = _destination.clone();
-			if (dest != null)
+			if(dest != null)
 			{
 				_actor.setLoc(dest, true);
 				_actor.getListeners().onMove(dest); // TODO: Подходящее ли место?
 			}
 		}
 
-		if (_targetRecorder.isEmpty())
+		if(_targetRecorder.isEmpty())
 		{
 			final boolean follow = isFollow();
 			final CtrlEvent ctrlEvent = follow ? CtrlEvent.EVT_ARRIVED_TARGET : CtrlEvent.EVT_ARRIVED;
 			final OnArrivedAction onArrivedAction = _onArrivedAction;
 			stopMove(false);
-			if (onArrivedAction != null)
+			if(onArrivedAction != null)
 			{
 				onArrivedAction.onArrived(_actor, _actor.getLoc(), follow);
 			}
@@ -202,7 +198,8 @@ public class CreatureMovement
 		final Location end = _moveList.get(_moveList.size() - 1).clone().geo2world();
 
 		// TODO: Придумать лучше способ.
-		if (!_actor.isFlying() && !_actor.isInBoat() && !_actor.isInWater() && !_actor.isBoat() && !GeoEngine.canMoveToCoord(_actor.getX(), _actor.getY(), _actor.getZ(), end.x, end.y, end.z, _actor.getGeoIndex()))
+		if(!_actor.isFlying() && !_actor.isInBoat() && !_actor.isInWater() && !_actor.isBoat()
+				&& !GeoEngine.canMoveToCoord(_actor.getX(), _actor.getY(), _actor.getZ(), end.x, end.y, end.z, _actor.getGeoIndex()))
 		{
 			stopMove();
 			return;
@@ -210,7 +207,7 @@ public class CreatureMovement
 
 		_destination = end;
 		final int distance = (_actor.isFlying() || _actor.isInWater()) ? begin.getDistance3D(end) : begin.getDistance(end);
-		if (distance != 0)
+		if(distance != 0)
 		{
 			_actor.setHeading(PositionUtils.calculateHeadingFrom(begin.x, begin.y, _destination.x, _destination.y));
 		}
@@ -233,7 +230,7 @@ public class CreatureMovement
 
 		Location dest;
 
-		if (forestalling && follow != null && follow.getMovement().isMoving())
+		if(forestalling && follow != null && follow.getMovement().isMoving())
 		{
 			dest = getIntersectionPoint(follow);
 		}
@@ -242,51 +239,50 @@ public class CreatureMovement
 			dest = new Location(x, y, z);
 		}
 
-		if (_actor.isInBoat() || _actor.isBoat() || !Config.ALLOW_GEODATA)
+		if(_actor.isInBoat() || _actor.isBoat() || !Config.ALLOW_GEODATA)
 		{
 			PositionUtils.applyOffset(_actor, dest, offset);
 			return setSimplePath(dest);
 		}
 
-		if (_actor.isFlying() || _actor.isInWater())
+		if(_actor.isFlying() || _actor.isInWater())
 		{
 			PositionUtils.applyOffset(_actor, dest, offset);
 
 			Location nextloc;
 
-			if (_actor.isFlying())
+			if(_actor.isFlying())
 			{
-				if (GeoEngine.canSeeCoord(_actor, dest.x, dest.y, dest.z, true))
+				if(GeoEngine.canSeeCoord(_actor, dest.x, dest.y, dest.z, true))
 					return setSimplePath(dest);
 
 				// DS: При передвижении обсервера клавишами клиент шлет очень далекие (дистанция
 				// больше 2000) координаты,
 				// поэтому обычная процедура проверки не работает. Используем имитацию плавания
 				// в воде.
-				if (_actor.isObservePoint())
+				if(_actor.isObservePoint())
 				{
-					nextloc = GeoEngine.moveInWaterCheck(_actor, dest.x, dest.y, dest.z, new int[]
-					{
-						Integer.MIN_VALUE,
-						Integer.MAX_VALUE
+					nextloc = GeoEngine.moveInWaterCheck(_actor, dest.x, dest.y, dest.z, new int[] {
+							Integer.MIN_VALUE,
+							Integer.MAX_VALUE
 					});
 				}
 				else
 				{
 					nextloc = GeoEngine.moveCheckInAir(_actor, dest.x, dest.y, dest.z);
 				}
-				if (nextloc != null && !nextloc.equals(_actor.getX(), _actor.getY(), _actor.getZ()))
+				if(nextloc != null && !nextloc.equals(_actor.getX(), _actor.getY(), _actor.getZ()))
 					return setSimplePath(nextloc);
 			}
 			else
 			{
 				nextloc = GeoEngine.moveInWaterCheck(_actor, dest.x, dest.y, dest.z, _actor.getWaterZ());
-				if (nextloc == null)
+				if(nextloc == null)
 					return null;
 
 				List<Location> _moveList = GeoMove.constructMoveList(_actor.getLoc(), nextloc.clone());
 				_targetRecorder.clear();
-				if (!_moveList.isEmpty())
+				if(!_moveList.isEmpty())
 				{
 					_targetRecorder.add(_moveList);
 				}
@@ -294,31 +290,31 @@ public class CreatureMovement
 				final int dz = dest.z - nextloc.z;
 				// если пытаемся выбратся на берег, считаем путь с точки выхода до точки
 				// назначения
-				if (dz > 0 && dz < 128)
+				if(dz > 0 && dz < 128)
 				{
 					_moveList = GeoEngine.MoveList(nextloc.x, nextloc.y, nextloc.z, dest.x, dest.y, geoIndex, false);
-					if (_moveList != null) // null - до конца пути дойти нельзя
+					if(_moveList != null) // null - до конца пути дойти нельзя
 					{
-						if (!_moveList.isEmpty())
+						if(!_moveList.isEmpty())
 						{ // уже стоим на нужной клетке
 							_targetRecorder.add(_moveList);
 						}
 					}
 				}
 
-				if (!_moveList.isEmpty())
+				if(!_moveList.isEmpty())
 					return _moveList.get(_moveList.size() - 1);
 			}
 			return null;
 		}
 
 		List<Location> _moveList = GeoEngine.MoveList(_actor.getX(), _actor.getY(), _actor.getZ(), dest.x, dest.y, geoIndex, true);
-		if (_moveList != null) // null - до конца пути дойти нельзя
+		if(_moveList != null) // null - до конца пути дойти нельзя
 		{
-			if (_moveList.size() < 2) // уже стоим на нужной клетке
+			if(_moveList.size() < 2) // уже стоим на нужной клетке
 				return null;
 			PositionUtils.applyOffset(_moveList, offset);
-			if (_moveList.size() < 2) // уже стоим на нужной клетке
+			if(_moveList.size() < 2) // уже стоим на нужной клетке
 				return null;
 			_targetRecorder.clear();
 			_targetRecorder.add(_moveList);
@@ -326,51 +322,51 @@ public class CreatureMovement
 		}
 
 		// Фейковые игроки ВСЕГДА передвигаются с поиском пути.
-		if (pathFind || _actor.isFakePlayer())
+		if(pathFind || _actor.isFakePlayer())
 		{
 			final List<List<Location>> targets = GeoMove.findMovePath(_actor.getX(), _actor.getY(), _actor.getZ(), dest.getX(), dest.getY(), dest.getZ(), _actor, geoIndex);
-			if (!targets.isEmpty())
+			if(!targets.isEmpty())
 			{
 				_moveList = targets.remove(targets.size() - 1);
 				PositionUtils.applyOffset(_moveList, offset);
-				if (!_moveList.isEmpty())
+				if(!_moveList.isEmpty())
 				{
 					targets.add(_moveList);
 				}
-				if (!targets.isEmpty())
+				if(!targets.isEmpty())
 				{
 					_targetRecorder.clear();
 					_targetRecorder.addAll(targets);
-					for (int i = targets.size() - 1; i >= 0; i--)
+					for(int i = targets.size() - 1; i >= 0; i--)
 					{
 						final List<Location> target = targets.get(i);
-						if (!target.isEmpty())
+						if(!target.isEmpty())
 						{
 							_isPathfindMoving = true;
 							return target.get(target.size() - 1);
 						}
 					}
 
-					if (pathFind)
+					if(pathFind)
 						return null;
 				}
 			}
 		}
 
-		if (!_actor.isFakePlayer() || !pathFind)
+		if(!_actor.isFakePlayer() || !pathFind)
 		{
 			// расчитываем путь куда сможем дойти
 			PositionUtils.applyOffset(_actor, dest, offset);
 
 			_moveList = GeoEngine.MoveList(_actor.getX(), _actor.getY(), _actor.getZ(), dest.x, dest.y, geoIndex, false); // onlyFullPath
-																															// =
-																															// false
-																															// -
-																															// идем
-																															// до
-																															// куда
-																															// можем
-			if (_moveList != null && _moveList.size() > 1) // null - нет геодаты, empty - уже стоим на нужной клетке
+			// =
+			// false
+			// -
+			// идем
+			// до
+			// куда
+			// можем
+			if(_moveList != null && _moveList.size() > 1) // null - нет геодаты, empty - уже стоим на нужной клетке
 			{
 				_targetRecorder.clear();
 				_targetRecorder.add(_moveList);
@@ -391,19 +387,19 @@ public class CreatureMovement
 		getMoveLock().lock();
 		try
 		{
-			if (_actor.isMovementDisabled() || target == null || _actor.isInBoat() && !_actor.isInShuttle() || target.isInvisible(_actor))
+			if(_actor.isMovementDisabled() || target == null || _actor.isInBoat() && !_actor.isInShuttle() || target.isInvisible(_actor))
 				return false;
 
-			if ((_actor.getReflection() != target.getReflection()) || (_actor.getDistance(target) > 5000)) // TODO:
-																											// Вынести в
-																											// конфиг?!?
+			if((_actor.getReflection() != target.getReflection()) || (_actor.getDistance(target) > 5000)) // TODO:
+				// Вынести в
+				// конфиг?!?
 				return false;
 
 			offset = Math.max(offset, 10);
-			if (isFollow() && target == getFollowTarget() && offset == getMoveOffset())
+			if(isFollow() && target == getFollowTarget() && offset == getMoveOffset())
 				return true;
 
-			if (Math.abs(_actor.getZ() - target.getZ()) > 1000 && !_actor.isFlying())
+			if(Math.abs(_actor.getZ() - target.getZ()) > 1000 && !_actor.isFlying())
 				return false;
 
 			_actor.getAI().clearNextAction();
@@ -412,7 +408,7 @@ public class CreatureMovement
 
 			_actor.deactivateGeoControl();
 
-			if (buildPathTo(loc.x, loc.y, loc.z, 0, target, forestalling, !target.isDoor()) != null)
+			if(buildPathTo(loc.x, loc.y, loc.z, 0, target, forestalling, !target.isDoor()) != null)
 			{
 				_movingDestTempPos.set(loc.x, loc.y, loc.z);
 			}
@@ -482,13 +478,13 @@ public class CreatureMovement
 		{
 			offset = Math.max(offset, 0);
 			Location dst_geoloc = new Location(x_dest, y_dest, z_dest).world2geo();
-			if (isMoving() && !isFollow() && _movingDestTempPos.equals(dst_geoloc))
+			if(isMoving() && !isFollow() && _movingDestTempPos.equals(dst_geoloc))
 			{
 				_actor.sendActionFailed();
 				return true;
 			}
 
-			if (_actor.isMovementDisabled())
+			if(_actor.isMovementDisabled())
 			{
 				_actor.getAI().setNextAction(AINextAction.MOVE, new Location(x_dest, y_dest, z_dest), offset, pathfinding && !keyboard, false);
 				_actor.sendActionFailed();
@@ -497,9 +493,9 @@ public class CreatureMovement
 
 			_actor.getAI().clearNextAction();
 
-			if (_actor.isPlayer())
+			if(_actor.isPlayer())
 			{
-				if (cancelNextAction)
+				if(cancelNextAction)
 				{
 					_actor.getAI().changeIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 				}
@@ -510,16 +506,16 @@ public class CreatureMovement
 			_actor.deactivateGeoControl();
 
 			dst_geoloc = buildPathTo(x_dest, y_dest, z_dest, offset, pathfinding && !keyboard);
-			if (dst_geoloc != null)
+			if(dst_geoloc != null)
 			{
-				if (maxDestRange == -1)
+				if(maxDestRange == -1)
 				{
 					_movingDestTempPos.set(dst_geoloc);
 				}
 				else
 				{
 					final Location dst_loc = dst_geoloc.geo2world();
-					if (PositionUtils.checkIfInRange(maxDestRange + offset, x_dest, y_dest, z_dest, dst_loc.x, dst_loc.y, dst_loc.z, true))
+					if(PositionUtils.checkIfInRange(maxDestRange + offset, x_dest, y_dest, z_dest, dst_loc.x, dst_loc.y, dst_loc.z, true))
 					{
 						_movingDestTempPos.set(dst_geoloc);
 					}
@@ -557,36 +553,36 @@ public class CreatureMovement
 		getMoveLock().lock();
 		try
 		{
-			if (!isMoving())
+			if(!isMoving())
 				return false;
 
-			if (_actor.isMovementDisabled())
+			if(_actor.isMovementDisabled())
 			{
 				stopMove();
 				return false;
 			}
 
 			final int speed = _actor.getMoveSpeed();
-			if (speed <= 0)
+			if(speed <= 0)
 			{
 				stopMove();
 				return false;
 			}
 
 			Creature follow = null;
-			if (isFollow())
+			if(isFollow())
 			{
 				follow = getFollowTarget();
-				if (follow == null || follow.isInvisible(_actor))
+				if(follow == null || follow.isInvisible(_actor))
 				{
 					stopMove();
 					return false;
 				}
-				if (_actor.isInRangeZ(follow, getMoveOffset()) && GeoEngine.canSeeTarget(_actor, follow))
+				if(_actor.isInRangeZ(follow, getMoveOffset()) && GeoEngine.canSeeTarget(_actor, follow))
 				{
 					final OnArrivedAction onArrivedAction = _onArrivedAction;
 					stopMove();
-					if (onArrivedAction != null)
+					if(onArrivedAction != null)
 					{
 						onArrivedAction.onArrived(_actor, _actor.getLoc(), true);
 					}
@@ -595,7 +591,7 @@ public class CreatureMovement
 				}
 			}
 
-			if (_moveTaskAllDist <= 0)
+			if(_moveTaskAllDist <= 0)
 			{
 				moveNext(false);
 				return true;
@@ -606,13 +602,13 @@ public class CreatureMovement
 			_moveTaskDoneDist += (now - _startMoveTime) * _previousSpeed / 1000.;
 
 			final double done = Math.max(0, _moveTaskDoneDist / _moveTaskAllDist);
-			if (done >= 1)
+			if(done >= 1)
 			{
 				moveNext(false);
 				return true;
 			}
 
-			if (_actor.isMovementDisabled())
+			if(_actor.isMovementDisabled())
 			{
 				stopMove();
 				return false;
@@ -620,11 +616,12 @@ public class CreatureMovement
 
 			final int index = Math.max(0, Math.min(_moveList.size() - 1, (int) (_moveList.size() * done)));
 			final Location loc = _moveList.get(index).clone().geo2world();
-			if (!_actor.isFlying() && !_actor.isInBoat() && !_actor.isInWater() && !_actor.isBoat())
+			if(!_actor.isFlying() && !_actor.isInBoat() && !_actor.isInWater() && !_actor.isBoat())
 			{
-				if (loc.z - _actor.getZ() > 256)
+				if(loc.z - _actor.getZ() > 256)
 				{
-					final String bug_text = "geo bug 1 at: " + _actor.getLoc() + " => " + loc.x + "," + loc.y + "," + loc.z + "\tAll path: " + _moveList.get(0) + " => " + _moveList.get(_moveList.size() - 1);
+					final String bug_text = "geo bug 1 at: " + _actor.getLoc() + " => " + loc.x + "," + loc.y + "," + loc.z + "\tAll path: " + _moveList.get(0)
+							+ " => " + _moveList.get(_moveList.size() - 1);
 					Log.add(bug_text, "geo");
 					stopMove();
 					return false;
@@ -632,7 +629,7 @@ public class CreatureMovement
 			}
 
 			// Проверяем, на всякий случай
-			if (loc == null || _actor.isMovementDisabled())
+			if(loc == null || _actor.isMovementDisabled())
 			{
 				stopMove();
 				return false;
@@ -641,28 +638,28 @@ public class CreatureMovement
 			_actor.setLoc(loc, true);
 
 			// В процессе изменения координат, мы остановились
-			if (_actor.isMovementDisabled())
+			if(_actor.isMovementDisabled())
 			{
 				stopMove();
 				return false;
 			}
 
-			if (isFollow())
+			if(isFollow())
 			{
 				final Location followLoc = follow.getLoc();
-				if (_movingDestTempPos.getDistance3D(followLoc) != 0)
+				if(_movingDestTempPos.getDistance3D(followLoc) != 0)
 				{
 					_followCounter++;
-					if (Math.abs(_actor.getZ() - loc.z) > 1000 && !_actor.isFlying())
+					if(Math.abs(_actor.getZ() - loc.z) > 1000 && !_actor.isFlying())
 					{
 						_actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 						stopMove();
 						return false;
 					}
 
-					if (_followCounter == 5)
+					if(_followCounter == 5)
 					{
-						if (buildPathTo(followLoc.x, followLoc.y, followLoc.z, 0, follow, _forestalling, !follow.isDoor()) != null)
+						if(buildPathTo(followLoc.x, followLoc.y, followLoc.z, 0, follow, _forestalling, !follow.isDoor()) != null)
 						{
 							_movingDestTempPos.set(followLoc.x, followLoc.y, followLoc.z);
 						}
@@ -683,7 +680,7 @@ public class CreatureMovement
 			_moveTask = ThreadPoolManager.getInstance().schedule(this::updatePosition, getMoveTickInterval());
 			return true;
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 			return false;
@@ -709,13 +706,13 @@ public class CreatureMovement
 	 */
 	public void stopMove(boolean stop)
 	{
-		if (!isMoving())
+		if(!isMoving())
 			return;
 
 		getMoveLock().lock();
 		try
 		{
-			if (!isMoving())
+			if(!isMoving())
 				return;
 
 			_isMoving = false;
@@ -724,7 +721,7 @@ public class CreatureMovement
 			_isPathfindMoving = false;
 			_onArrivedAction = null;
 
-			if (_moveTask != null)
+			if(_moveTask != null)
 			{
 				_moveTask.cancel(false);
 				_moveTask = null;
@@ -735,7 +732,7 @@ public class CreatureMovement
 
 			_targetRecorder.clear();
 
-			if (stop)
+			if(stop)
 			{
 				_actor.broadcastStopMove();
 				/*

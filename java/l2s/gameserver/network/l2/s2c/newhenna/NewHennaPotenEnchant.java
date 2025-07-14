@@ -12,7 +12,7 @@ public class NewHennaPotenEnchant implements IClientOutgoingPacket
 	private final int _dailyCount;
 	private final int _activeStep;
 	private final boolean _success;
-	
+
 	public NewHennaPotenEnchant(int slotId, int enchantStep, int enchantExp, int dailyStep, int dailyCount, int activeStep, boolean success)
 	{
 		_slotId = slotId;
@@ -20,10 +20,10 @@ public class NewHennaPotenEnchant implements IClientOutgoingPacket
 		_enchantExp = enchantExp;
 		_dailyStep = dailyStep;
 		_dailyCount = dailyCount;
-		_activeStep = activeStep-1;
+		_activeStep = activeStep - 1;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

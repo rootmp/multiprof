@@ -41,11 +41,11 @@ public class SessionKey
 
 	public boolean equals(Object o)
 	{
-		if (this == o)
+		if(this == o)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() == this.getClass())
+		if(o.getClass() == this.getClass())
 		{
 			SessionKey skey = (SessionKey) o;
 			return playOkID1 == skey.playOkID1 && playOkID2 == skey.playOkID2 && loginOkID1 == skey.loginOkID1 && loginOkID2 == skey.loginOkID2;

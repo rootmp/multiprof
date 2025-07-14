@@ -32,23 +32,24 @@ public class GlobalRewardListAction implements EventAction
 	{
 		// TODO: Ивентовые предметы не должны дропать с РБ и миньонов.
 		List<Object> list = event.getObjects(_name);
-		for (NpcTemplate npc : NpcHolder.getInstance().getAll())
+		for(NpcTemplate npc : NpcHolder.getInstance().getAll())
 		{
-			if (npc != null && !npc.isRaid && !npc.getRewards().isEmpty())
+			if(npc != null && !npc.isRaid && !npc.getRewards().isEmpty())
 			{
-				if (npc.level >= _minLevel && npc.level <= _maxLevel)
+				if(npc.level >= _minLevel && npc.level <= _maxLevel)
 				{
-					loop: for (RewardList rl : npc.getRewards())
+					loop:
+					for(RewardList rl : npc.getRewards())
 					{
-						for (RewardGroup rg : rl)
+						for(RewardGroup rg : rl)
 						{
-							if (!rg.isAdena())
+							if(!rg.isAdena())
 							{
-								for (Object o : list)
+								for(Object o : list)
 								{
-									if (o instanceof RewardList)
+									if(o instanceof RewardList)
 									{
-										if (_add)
+										if(_add)
 											npc.addRewardList((RewardList) o);
 										else
 											npc.removeRewardList((RewardList) o);

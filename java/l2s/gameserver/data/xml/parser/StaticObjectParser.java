@@ -44,7 +44,7 @@ public final class StaticObjectParser extends AbstractParser<StaticObjectHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element staticObjectElement = iterator.next();
 

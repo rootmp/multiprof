@@ -15,11 +15,11 @@ public enum NpcInfoType implements IUpdateTypeComponent
 	// 1
 	SPEED_MODIFIER(0x08, (2 * 4)),
 	EQUIPSLOT(0x09, (3 * 4)),
-	STOP_MODE(0x0A, 1),//SIT = 0x0, STAND = 0x1, STORE = 0x2
+	STOP_MODE(0x0A, 1), //SIT = 0x0, STAND = 0x1, STORE = 0x2
 	MOVE_MODE(0x0B, 1),
 	COMBAT_MODE(0x0C, 0),
 	IS_DEAD(0x0D, 0),
-	ENVIRONMENT(0x0E, 1),// GROUND = 0x0 UNDERWATER = 0x1 AIR = 0x2 HOVER = 0x3
+	ENVIRONMENT(0x0E, 1), // GROUND = 0x0 UNDERWATER = 0x1 AIR = 0x2 HOVER = 0x3
 	EVENT_MATCH_TEAM_ID(0x0F, 1),
 
 	// 2

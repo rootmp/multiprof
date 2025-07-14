@@ -19,7 +19,7 @@ public class ConditionPlayerHasSummonId extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (env.target == null || !env.target.isPlayer())
+		if(env.target == null || !env.target.isPlayer())
 			return false;
 
 		Player player = (Player) env.target;

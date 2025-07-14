@@ -114,7 +114,8 @@ public class RequestShapeShiftingItem implements IClientIncomingPacket
 			return;
 		}
 
-		if(appearanceStone.getType() != ShapeType.RESTORE && targetItem.getVisualId() > 0 || appearanceStone.getType() == ShapeType.RESTORE && targetItem.getVisualId() == 0)
+		if(appearanceStone.getType() != ShapeType.RESTORE && targetItem.getVisualId() > 0
+				|| appearanceStone.getType() == ShapeType.RESTORE && targetItem.getVisualId() == 0)
 		{
 			player.sendPacket(ExShape_Shifting_Result.FAIL);
 			player.setAppearanceStone(null);
@@ -280,11 +281,14 @@ public class RequestShapeShiftingItem implements IClientIncomingPacket
 
 		if(Config.APPEARANCE_STONE_CHECK_ARMOR_TYPE)
 		{
-			if(targetItem.isArmor() && (targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
+			if(targetItem.isArmor() && (targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR
+					|| targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS))
 			{
 				if(extracItem != null)
 				{
-					if(extracItem.getTemplate().isArmor() && (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST || extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS))
+					if(extracItem.getTemplate().isArmor() && (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST
+							|| extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR
+							|| extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS))
 					{
 						if(targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
 						{
@@ -298,7 +302,8 @@ public class RequestShapeShiftingItem implements IClientIncomingPacket
 				else if(appearanceStone.getType() == ShapeType.FIXED && appearanceStone.getVisual().size() > 0)
 				{
 					ItemTemplate extracItemTemplate = ItemHolder.getInstance().getTemplate(appearanceStone.getVisual(player, ExItemType.FULL_BODY));
-					if(extracItemTemplate != null && extracItemTemplate.isArmor() && (extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_CHEST || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_LEGS))
+					if(extracItemTemplate != null && extracItemTemplate.isArmor() && (extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_CHEST
+							|| extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItemTemplate.getBodyPart() == ItemTemplate.SLOT_LEGS))
 					{
 						if(targetItem.getTemplate().getItemType() != extracItemTemplate.getItemType())
 						{
@@ -374,7 +379,8 @@ public class RequestShapeShiftingItem implements IClientIncomingPacket
 				case NORMAL:
 				case BLESSED:
 				case FIXED:
-					targetItem.setVisualId(appearanceStone.getType() == ShapeType.FIXED ? appearanceStone.getVisual(player, targetItem.getExType()) : extracItem.getItemId());
+					targetItem.setVisualId(appearanceStone.getType()
+							== ShapeType.FIXED ? appearanceStone.getVisual(player, targetItem.getExType()) : extracItem.getItemId());
 					targetItem.setAppearanceStoneId(appearanceStone.getItemId());
 					player.getListeners().onPlayerSetAppearance(targetItem, appearanceStone);
 

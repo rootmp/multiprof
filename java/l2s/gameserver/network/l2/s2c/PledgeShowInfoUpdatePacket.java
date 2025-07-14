@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import org.apache.commons.lang3.StringUtils;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.entity.residence.ClanHall;
@@ -25,7 +25,7 @@ public class PledgeShowInfoUpdatePacket implements IClientOutgoingPacket
 		_hasCastle = clan.getCastle();
 
 		ClanHall clanHall = ResidenceHolder.getInstance().getResidence(ClanHall.class, clan.getHasHideout());
-		if (clanHall != null)
+		if(clanHall != null)
 		{
 			_hasClanHall = clanHall.getId();
 			_hasInstantClanHall = clanHall.getInstantZoneId();
@@ -43,7 +43,7 @@ public class PledgeShowInfoUpdatePacket implements IClientOutgoingPacket
 		atwar = clan.isAtWar();
 		_isDisbanded = clan.isPlacedForDisband();
 		Alliance ally = clan.getAlliance();
-		if (ally != null)
+		if(ally != null)
 		{
 			ally_name = ally.getAllyName();
 			ally_crest = ally.getAllyCrestId();
@@ -59,12 +59,12 @@ public class PledgeShowInfoUpdatePacket implements IClientOutgoingPacket
 		packetWriter.writeD(crest_id);
 		packetWriter.writeD(clan_level);
 		packetWriter.writeD(_hasCastle);
-		if (_hasInstantClanHall > 0)
+		if(_hasInstantClanHall > 0)
 		{
 			packetWriter.writeD(1);
 			packetWriter.writeD(_hasInstantClanHall);
 		}
-		else if (_hasClanHall != 0)
+		else if(_hasClanHall != 0)
 		{
 			packetWriter.writeD(0);
 			packetWriter.writeD(_hasClanHall);

@@ -7,7 +7,6 @@ import l2s.dataparser.data.annotations.value.IntValue;
 import l2s.dataparser.data.annotations.value.StringValue;
 import l2s.dataparser.data.common.ItemRequiredId;
 
-
 public class DyeData
 {
 	@StringValue
@@ -45,7 +44,7 @@ public class DyeData
 	@IntArray
 	public int[] wear_class; // Список классов, которым доступна эта тату
 	@StringArray
-	public String[] dye_skill;	
+	public String[] dye_skill;
 	@StringArray
 	public String[] dye_unequip_skill;
 	@StringValue

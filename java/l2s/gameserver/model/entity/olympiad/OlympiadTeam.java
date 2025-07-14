@@ -22,7 +22,7 @@ public class OlympiadTeam
 		this.game = game;
 
 		List<String> names = new ArrayList<>();
-		for (int i = 0; i < participants.length; i++)
+		for(int i = 0; i < participants.length; i++)
 		{
 			OlympiadParticipiantData p = participants[i];
 			members.put(p.getObjectId(), new OlympiadMember(i, p, game, team));
@@ -54,14 +54,14 @@ public class OlympiadTeam
 	public void addDealedDamage(Player player, double damage)
 	{
 		OlympiadMember member = members.get(player.getObjectId());
-		if (member != null)
+		if(member != null)
 			member.addDealedDamage(damage);
 	}
 
 	public double getDamage()
 	{
 		double damage = 0;
-		for (OlympiadMember member : getMembers())
+		for(OlympiadMember member : getMembers())
 			damage += member.getDealedDamage();
 		return damage;
 	}
@@ -69,9 +69,9 @@ public class OlympiadTeam
 	public OlympiadMember getTopDamager()
 	{
 		OlympiadMember topDamager = null;
-		for (OlympiadMember member : getMembers())
+		for(OlympiadMember member : getMembers())
 		{
-			if (topDamager == null || topDamager.getDealedDamage() < member.getDealedDamage())
+			if(topDamager == null || topDamager.getDealedDamage() < member.getDealedDamage())
 				topDamager = member;
 		}
 		return topDamager;
@@ -104,9 +104,9 @@ public class OlympiadTeam
 
 	public boolean checkPlayers()
 	{
-		for (OlympiadMember member : getMembers())
+		for(OlympiadMember member : getMembers())
 		{
-			if (member.checkPlayer())
+			if(member.checkPlayer())
 				return true;
 		}
 		return false;
@@ -114,11 +114,11 @@ public class OlympiadTeam
 
 	public boolean logout(Player player)
 	{
-		if (player != null)
+		if(player != null)
 		{
-			for (OlympiadMember member : getMembers())
+			for(OlympiadMember member : getMembers())
 			{
-				if (player.getObjectId() == member.getObjectId())
+				if(player.getObjectId() == member.getObjectId())
 					member.logout();
 			}
 		}
@@ -127,17 +127,17 @@ public class OlympiadTeam
 
 	public boolean doDie(Player player)
 	{
-		if (player != null)
+		if(player != null)
 		{
-			for (OlympiadMember member : getMembers())
+			for(OlympiadMember member : getMembers())
 			{
-				if (player.getObjectId() == member.getObjectId())
+				if(player.getObjectId() == member.getObjectId())
 					member.doDie();
 			}
 		}
-		for (OlympiadMember member : getMembers())
+		for(OlympiadMember member : getMembers())
 		{
-			if (!member.isDead())
+			if(!member.isDead())
 				return false;
 		}
 		return true;
@@ -145,9 +145,9 @@ public class OlympiadTeam
 
 	public boolean isDead(Player player)
 	{
-		for (OlympiadMember member : getMembers())
+		for(OlympiadMember member : getMembers())
 		{
-			if (player.getObjectId() == member.getObjectId() && member.isDead())
+			if(player.getObjectId() == member.getObjectId() && member.isDead())
 				return true;
 		}
 		return false;

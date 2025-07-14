@@ -16,14 +16,14 @@ public class EffectEnervation extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 			((NpcInstance) effected).setParameter("DebuffIntention", 0.5);
 	}
 
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isNpc())
+		if(effected.isNpc())
 			((NpcInstance) effected).setParameter("DebuffIntention", 1.);
 	}
 }

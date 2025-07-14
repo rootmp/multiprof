@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Clan;
@@ -29,30 +30,30 @@ public class RequestPledgeSetAcademyMaster implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
-		if ((activeChar.getClanPrivileges() & Clan.CP_CL_APPRENTICE) == Clan.CP_CL_APPRENTICE)
+		if((activeChar.getClanPrivileges() & Clan.CP_CL_APPRENTICE) == Clan.CP_CL_APPRENTICE)
 		{
 			UnitMember sponsor = activeChar.getClan().getAnyMember(_sponsorName);
 			UnitMember apprentice = activeChar.getClan().getAnyMember(_apprenticeName);
-			if (sponsor != null && apprentice != null)
+			if(sponsor != null && apprentice != null)
 			{
-				if (apprentice.getPledgeType() != Clan.SUBUNIT_ACADEMY || sponsor.getPledgeType() == Clan.SUBUNIT_ACADEMY)
+				if(apprentice.getPledgeType() != Clan.SUBUNIT_ACADEMY || sponsor.getPledgeType() == Clan.SUBUNIT_ACADEMY)
 					return; // hack?
 
-				if (_mode == 1)
+				if(_mode == 1)
 				{
-					if (sponsor.hasApprentice())
+					if(sponsor.hasApprentice())
 					{
 						activeChar.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.RequestOustAlly.MemberAlreadyHasApprentice"));
 						return;
 					}
-					if (apprentice.hasSponsor())
+					if(apprentice.hasSponsor())
 					{
 						activeChar.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.RequestOustAlly.ApprenticeAlreadyHasSponsor"));
 						return;
@@ -63,7 +64,7 @@ public class RequestPledgeSetAcademyMaster implements IClientIncomingPacket
 				}
 				else
 				{
-					if (!sponsor.hasApprentice())
+					if(!sponsor.hasApprentice())
 					{
 						activeChar.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.RequestOustAlly.MemberHasNoApprentice"));
 						return;
@@ -72,7 +73,7 @@ public class RequestPledgeSetAcademyMaster implements IClientIncomingPacket
 					clan.broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(apprentice));
 					clan.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.S2_CLAN_MEMBER_C1S_APPRENTICE_HAS_BEEN_REMOVED).addString(sponsor.getName()).addString(apprentice.getName()));
 				}
-				if (apprentice.isOnline())
+				if(apprentice.isOnline())
 					apprentice.getPlayer().broadcastCharInfo();
 				activeChar.sendPacket(new PledgeReceiveMemberInfo(sponsor));
 			}

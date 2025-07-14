@@ -29,17 +29,17 @@ public class ExSpExtractInfo implements IClientOutgoingPacket
 		packetWriter.writeH(14);//nSize
 		packetWriter.writeD(57);//nItemClassID
 		packetWriter.writeQ(10000);//nAmount
-		
+
 		//commissionItem
 		packetWriter.writeH(14);//nSize
 		packetWriter.writeD(57);//nItemClassID
 		packetWriter.writeQ(3000000);//nAmount
-		
+
 		//criticalItem	
 		packetWriter.writeH(14);//nSize
 		packetWriter.writeD(98232);//nItemClassID
 		packetWriter.writeQ(0);//nAmount
-		
+
 		packetWriter.writeD(_nRemainCount);//nRemainCount
 		packetWriter.writeD(5);//nMaxDailyCount
 		return true;

@@ -43,7 +43,7 @@ public class Elemental
 		{
 			Objects.requireNonNull(_template);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Elemental: Not found template for element: " + element, e);
 			return;
@@ -88,7 +88,7 @@ public class Elemental
 		{
 			evolution = Objects.requireNonNull(_template.getEvolution(value));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Elemental: Not found evolution for evolution level: " + value + ", element: " + getElement(), e);
 			return false;
@@ -111,9 +111,10 @@ public class Elemental
 		{
 			levelData = Objects.requireNonNull(_evolution.getLevelData(level));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
-			_log.error("Elemental: Not found level data for level: " + level + ", evolution level: " + getEvolutionLevel() + ", element: " + getElement(), e);
+			_log.error("Elemental: Not found level data for level: " + level + ", evolution level: " + getEvolutionLevel() + ", element: "
+					+ getElement(), e);
 			return false;
 		}
 
@@ -148,9 +149,10 @@ public class Elemental
 		owner.sendPacket(new SystemMessagePacket(SystemMsg.OBTAINED_S2_ATTRIBUTE_XP_OF_S1).addLong(exp).addElementName(getElement().getId() - 1));
 
 		int newLevel = getLevel();
-		if (oldLevel != newLevel)
+		if(oldLevel != newLevel)
 		{
-			owner.sendPacket(new SystemMessagePacket(SystemMsg.S1_ATTRIBUTE_SPIRIT_BECAME_LEVEL_S2).addElementName(getElement().getId() - 1).addInteger(newLevel));
+			owner.sendPacket(new SystemMessagePacket(SystemMsg.S1_ATTRIBUTE_SPIRIT_BECAME_LEVEL_S2).addElementName(getElement().getId()
+					- 1).addInteger(newLevel));
 			owner.sendPacket(new ExElementalSpiritInfo(owner, 0));
 			owner.getListeners().onElementalLevelChange(this, oldLevel, newLevel);
 		}
@@ -160,23 +162,23 @@ public class Elemental
 
 	public void addExp(long value)
 	{
-		if (value > 0)
+		if(value > 0)
 			setExp(getExp() + value);
 	}
 
 	public void setExp(long value)
 	{
-		if (_exp == value)
+		if(_exp == value)
 			return;
 
 		_exp = value;
 
-		if (_exp > getMaxExp() || _exp < getMinExp())
+		if(_exp > getMaxExp() || _exp < getMinExp())
 		{
 			int level = _evolution.getLevelByExp(_exp);
-			if (level != getLevel())
+			if(level != getLevel())
 			{
-				if (setLevel(level))
+				if(setLevel(level))
 					return;
 			}
 		}

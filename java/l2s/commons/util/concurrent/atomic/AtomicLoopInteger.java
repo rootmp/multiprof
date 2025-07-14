@@ -36,14 +36,14 @@ public class AtomicLoopInteger
 	public final int incrementAndGet()
 	{
 		int result;
-		for (;;)
+		for(;;)
 		{
-			if ((result = stateUpdater.get(this)) < max)
+			if((result = stateUpdater.get(this)) < max)
 			{
-				if (stateUpdater.compareAndSet(this, result, result + 1))
+				if(stateUpdater.compareAndSet(this, result, result + 1))
 					return result + 1;
 			}
-			else if (stateUpdater.compareAndSet(this, max, min))
+			else if(stateUpdater.compareAndSet(this, max, min))
 				return min;
 		}
 	}
@@ -51,14 +51,14 @@ public class AtomicLoopInteger
 	public final int getAndIncrement()
 	{
 		int result;
-		for (;;)
+		for(;;)
 		{
-			if ((result = stateUpdater.get(this)) < max)
+			if((result = stateUpdater.get(this)) < max)
 			{
-				if (stateUpdater.compareAndSet(this, result, result + 1))
+				if(stateUpdater.compareAndSet(this, result, result + 1))
 					return result;
 			}
-			else if (stateUpdater.compareAndSet(this, max, min))
+			else if(stateUpdater.compareAndSet(this, max, min))
 				return max;
 		}
 	}
@@ -66,14 +66,14 @@ public class AtomicLoopInteger
 	public final int decrementAndGet()
 	{
 		int result;
-		for (;;)
+		for(;;)
 		{
-			if ((result = stateUpdater.get(this)) > min)
+			if((result = stateUpdater.get(this)) > min)
 			{
-				if (stateUpdater.compareAndSet(this, result, result - 1))
+				if(stateUpdater.compareAndSet(this, result, result - 1))
 					return result - 1;
 			}
-			else if (stateUpdater.compareAndSet(this, min, max))
+			else if(stateUpdater.compareAndSet(this, min, max))
 				return max;
 		}
 	}
@@ -81,14 +81,14 @@ public class AtomicLoopInteger
 	public final int getAndDecrement()
 	{
 		int result;
-		for (;;)
+		for(;;)
 		{
-			if ((result = stateUpdater.get(this)) > min)
+			if((result = stateUpdater.get(this)) > min)
 			{
-				if (stateUpdater.compareAndSet(this, result, result - 1))
+				if(stateUpdater.compareAndSet(this, result, result - 1))
 					return result;
 			}
-			else if (stateUpdater.compareAndSet(this, min, max))
+			else if(stateUpdater.compareAndSet(this, min, max))
 				return min;
 		}
 	}

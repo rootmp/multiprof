@@ -14,7 +14,7 @@ public class PcBangPointsAdd extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 			return;
 
 		target.getPlayer().addPcBangPoints((int) getPower(), false, true);

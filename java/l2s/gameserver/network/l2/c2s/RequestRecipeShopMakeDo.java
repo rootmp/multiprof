@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.data.xml.holder.RecipeHolder;
@@ -9,7 +10,6 @@ import l2s.gameserver.model.items.ManufactureItem;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.components.SystemMsg;
 import l2s.gameserver.network.l2.s2c.RecipeShopItemInfoPacket;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.stats.Stats;
@@ -38,89 +38,90 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player buyer = client.getActiveChar();
-		if (buyer == null)
+		if(buyer == null)
 			return;
 
-		if (buyer.isActionsDisabled())
+		if(buyer.isActionsDisabled())
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (buyer.isInStoreMode())
+		if(buyer.isInStoreMode())
 		{
 			buyer.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (buyer.isInTrade())
+		if(buyer.isInTrade())
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (buyer.isFishing())
+		if(buyer.isFishing())
 		{
 			buyer.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING_2);
 			return;
 		}
 
-		if (buyer.isInTrainingCamp())
+		if(buyer.isInTrainingCamp())
 		{
 			buyer.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (!buyer.getPlayerAccess().UseTrade)
+		if(!buyer.getPlayerAccess().UseTrade)
 		{
 			buyer.sendPacket(SystemMsg.SOME_LINEAGE_II_FEATURES_HAVE_BEEN_LIMITED_FOR_FREE_TRIALS_____);
 			return;
 		}
 
 		Player manufacturer = (Player) buyer.getVisibleObject(_manufacturerId);
-		if (manufacturer == null || manufacturer.getPrivateStoreType() != Player.STORE_PRIVATE_MANUFACTURE || !manufacturer.checkInteractionDistance(buyer))
+		if(manufacturer == null || manufacturer.getPrivateStoreType() != Player.STORE_PRIVATE_MANUFACTURE
+				|| !manufacturer.checkInteractionDistance(buyer))
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
 		RecipeTemplate recipe = null;
-		for (ManufactureItem mi : manufacturer.getCreateList().values())
-			if (mi.getRecipeId() == _recipeId)
-				if (_price == mi.getCost())
+		for(ManufactureItem mi : manufacturer.getCreateList().values())
+			if(mi.getRecipeId() == _recipeId)
+				if(_price == mi.getCost())
 				{
 					recipe = RecipeHolder.getInstance().getRecipeByRecipeId(_recipeId);
 					break;
 				}
 
-		if (recipe == null)
+		if(recipe == null)
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (recipe.getMaterials().length == 0 || recipe.getProducts().length == 0)
+		if(recipe.getMaterials().length == 0 || recipe.getProducts().length == 0)
 		{
 			manufacturer.sendPacket(SystemMsg.THE_RECIPE_IS_INCORRECT);
 			buyer.sendPacket(SystemMsg.THE_RECIPE_IS_INCORRECT);
 			return;
 		}
 
-		if (recipe.getLevel() > manufacturer.getSkillLevel(!recipe.isCommon() ? Skill.SKILL_CRAFTING : Skill.SKILL_COMMON_CRAFTING))
+		if(recipe.getLevel() > manufacturer.getSkillLevel(!recipe.isCommon() ? Skill.SKILL_CRAFTING : Skill.SKILL_COMMON_CRAFTING))
 		{
 			// TODO: Должно ли быть сообщение?
 			buyer.sendActionFailed();
 			return;
 		}
 
-		if (!manufacturer.findRecipe(_recipeId))
+		if(!manufacturer.findRecipe(_recipeId))
 		{
 			buyer.sendActionFailed();
 			return;
 		}
 
 		int success = 0;
-		if (manufacturer.getCurrentMp() < recipe.getMpConsume())
+		if(manufacturer.getCurrentMp() < recipe.getMpConsume())
 		{
 			manufacturer.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 			buyer.sendPacket(SystemMsg.NOT_ENOUGH_MP, new RecipeShopItemInfoPacket(buyer, manufacturer, _recipeId, _price, success));
@@ -130,7 +131,7 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 		buyer.getInventory().writeLock();
 		try
 		{
-			if (buyer.getAdena() < _price)
+			if(buyer.getAdena() < _price)
 			{
 				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfoPacket(buyer, manufacturer, _recipeId, _price, success));
 				return;
@@ -138,28 +139,28 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 
 			ItemData[] materials = recipe.getMaterials();
 
-			for (ItemData material : materials)
+			for(ItemData material : materials)
 			{
-				if (material.getCount() == 0)
+				if(material.getCount() == 0)
 					continue;
 
 				ItemInstance item = buyer.getInventory().getItemByItemId(material.getId());
-				if (item == null || material.getCount() > item.getCount())
+				if(item == null || material.getCount() > item.getCount())
 				{
 					buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_MATERIALS_TO_PERFORM_THAT_ACTION, new RecipeShopItemInfoPacket(buyer, manufacturer, _recipeId, _price, success));
 					return;
 				}
 			}
 
-			if (!buyer.reduceAdena(_price, false))
+			if(!buyer.reduceAdena(_price, false))
 			{
 				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfoPacket(buyer, manufacturer, _recipeId, _price, success));
 				return;
 			}
 
-			for (ItemData material : materials)
+			for(ItemData material : materials)
 			{
-				if (material.getCount() == 0)
+				if(material.getCount() == 0)
 					continue;
 
 				buyer.getInventory().destroyItemByItemId(material.getId(), material.getCount());
@@ -168,7 +169,7 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 			}
 
 			long tax = TradeHelper.getTax(manufacturer, _price);
-			if (tax > 0)
+			if(tax > 0)
 				_price -= tax;
 
 			manufacturer.addAdena(_price);
@@ -182,7 +183,7 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 		manufacturer.sendStatusUpdate(false, false, UpdateType.VCP_MP);
 
 		ChancedItemData product = recipe.getRandomProduct();
-		if (product != null)
+		if(product != null)
 		{
 			int itemId = product.getId();
 			long itemsCount = product.getCount();
@@ -192,16 +193,16 @@ public class RequestRecipeShopMakeDo implements IClientIncomingPacket
 			rate += buyer.getVIP().getTemplate().getCraftChanceBonus();
 			rate = Math.min(100, rate);
 
-			if (Rnd.chance(rate))
+			if(Rnd.chance(rate))
 			{
-				if (Rnd.chance(manufacturer.getStat().calc(Stats.CRIT_CRAFT_CHANCE, 0)))
+				if(Rnd.chance(manufacturer.getStat().calc(Stats.CRIT_CRAFT_CHANCE, 0)))
 				{
 					// TODO maybe msg?
 					itemsCount++;
 				}
 				ItemFunctions.addItem(buyer, itemId, itemsCount, true);
 
-				if (itemsCount > 1)
+				if(itemsCount > 1)
 				{
 					SystemMessagePacket sm = new SystemMessagePacket(SystemMsg.C1_CREATED_S2_S3_AT_THE_PRICE_OF_S4_ADENA);
 					sm.addName(manufacturer);

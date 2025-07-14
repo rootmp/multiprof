@@ -33,27 +33,27 @@ public class i_dispel_by_skill extends i_abstract_effect
 		abnormals.sort(AbnormalsComparator.getInstance()); // ToFix: Comparator to HF
 		Collections.reverse(abnormals);
 
-		for (Abnormal abnormal : abnormals)
+		for(Abnormal abnormal : abnormals)
 		{
 			Skill effectSkill = abnormal.getSkill();
-			if (effectSkill == null)
+			if(effectSkill == null)
 				continue;
 
-			if (effectSkill.getId() != skillId)
+			if(effectSkill.getId() != skillId)
 				continue;
 
-			if (minSkillLevel > effectSkill.getLevel())
+			if(minSkillLevel > effectSkill.getLevel())
 				continue;
 
-			if (effectSkill.isToggle())
+			if(effectSkill.isToggle())
 				continue;
 
-			if (effectSkill.isPassive())
+			if(effectSkill.isPassive())
 				continue;
 
 			abnormal.exit();
 
-			if (!abnormal.isHidden())
+			if(!abnormal.isHidden())
 				target.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(effectSkill));
 		}
 	}

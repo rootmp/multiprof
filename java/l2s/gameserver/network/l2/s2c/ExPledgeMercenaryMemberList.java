@@ -21,17 +21,17 @@ public class ExPledgeMercenaryMemberList implements IClientOutgoingPacket
 		this.clanId = clanId;
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, castleId);
-		if (castle != null)
+		if(castle != null)
 		{
 			CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
-			if (siegeEvent != null)
+			if(siegeEvent != null)
 			{
 				SiegeClanObject siegeClanObject = siegeEvent.getSiegeClan(SiegeEvent.ATTACKERS, clanId);
-				if (siegeClanObject == null)
+				if(siegeClanObject == null)
 				{
 					siegeClanObject = siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, clanId);
 				}
-				if (siegeClanObject != null)
+				if(siegeClanObject != null)
 				{
 					//
 				}

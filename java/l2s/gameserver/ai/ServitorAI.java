@@ -19,13 +19,13 @@ public class ServitorAI extends PlayableAI
 		Servitor actor = getActor();
 
 		clearNextAction();
-		if (actor.isDepressed())
+		if(actor.isDepressed())
 		{
 			setAttackTarget(actor.getPlayer());
 			changeIntention(CtrlIntention.AI_INTENTION_ATTACK, actor.getPlayer(), null);
 			thinkAttack(false);
 		}
-		else if (actor.isFollowMode())
+		else if(actor.isFollowMode())
 		{
 			changeIntention(CtrlIntention.AI_INTENTION_FOLLOW, actor.getPlayer(), Config.FOLLOW_RANGE);
 			thinkFollow();
@@ -39,7 +39,7 @@ public class ServitorAI extends PlayableAI
 	{
 		Servitor actor = getActor();
 
-		if (actor.isDepressed())
+		if(actor.isDepressed())
 			setAttackTarget(actor.getPlayer());
 
 		super.thinkAttack(arrived);
@@ -48,7 +48,7 @@ public class ServitorAI extends PlayableAI
 	@Override
 	protected boolean thinkCast(boolean arrived)
 	{
-		if (super.thinkCast(arrived))
+		if(super.thinkCast(arrived))
 		{
 			setNextAction(AINextAction.ATTACK, getAttackTarget(), null, _forceUse, false);
 			return true;
@@ -62,14 +62,14 @@ public class ServitorAI extends PlayableAI
 		super.onEvtAttacked(attacker, skill, damage);
 
 		Servitor actor = getActor();
-		if (attacker == null || actor.isDead())
+		if(attacker == null || actor.isDead())
 			return;
 
-		if (damage > 0)
+		if(damage > 0)
 		{
 			actor.onAttacked(attacker);
 
-			if (actor.getPlayer().isDead() && !actor.isDepressed())
+			if(actor.getPlayer().isDead() && !actor.isDepressed())
 				Attack(attacker, false, false);
 		}
 	}

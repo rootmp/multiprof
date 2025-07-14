@@ -24,26 +24,26 @@ public class AdminInstance implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanTeleport)
+		if(!activeChar.getPlayerAccess().CanTeleport)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_instance:
 				listOfInstances(activeChar);
 				break;
 			case admin_instance_id:
-				if (wordList.length > 1)
+				if(wordList.length > 1)
 					listOfCharsForInstance(activeChar, wordList[1]);
 				break;
 			case admin_collapse:
-				if (!activeChar.getReflection().isDefault())
+				if(!activeChar.getReflection().isDefault())
 					activeChar.getReflection().collapse();
 				else
 					activeChar.sendMessage("Cannot collapse default reflection!");
 				break;
 			case admin_reset_reuse:
-				if (wordList.length > 1 && activeChar.getTarget() != null && activeChar.getTarget().isPlayer())
+				if(wordList.length > 1 && activeChar.getTarget() != null && activeChar.getTarget().isPlayer())
 				{
 					Player p = activeChar.getTarget().getPlayer();
 					p.removeInstanceReuse(Integer.parseInt(wordList[1]));
@@ -51,7 +51,7 @@ public class AdminInstance implements IAdminCommandHandler
 				}
 				break;
 			case admin_reset_reuse_all:
-				if (activeChar.getTarget() != null && activeChar.getTarget().isPlayer())
+				if(activeChar.getTarget() != null && activeChar.getTarget().isPlayer())
 				{
 					Player p = activeChar.getTarget().getPlayer();
 					p.removeAllInstanceReuses();
@@ -59,7 +59,7 @@ public class AdminInstance implements IAdminCommandHandler
 				}
 				break;
 			case admin_set_reuse:
-				if (activeChar.getReflection() != null)
+				if(activeChar.getReflection() != null)
 					activeChar.getReflection().setReenterTime(System.currentTimeMillis(), true);
 				break;
 		}
@@ -83,12 +83,12 @@ public class AdminInstance implements IAdminCommandHandler
 		replyMSG.append("<td width=40><button value=\"Back\" action=\"bypass -h admin_admin\" width=40 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 		replyMSG.append("</tr></table><br><br>");
 
-		for (Reflection reflection : ReflectionManager.getInstance().getAll())
+		for(Reflection reflection : ReflectionManager.getInstance().getAll())
 		{
-			if (reflection == null || reflection.isDefault() || reflection.isCollapseStarted())
+			if(reflection == null || reflection.isDefault() || reflection.isCollapseStarted())
 				continue;
 			int countPlayers = 0;
-			if (reflection.getPlayers() != null)
+			if(reflection.getPlayers() != null)
 				countPlayers = reflection.getPlayers().size();
 			replyMSG.append("<a action=\"bypass -h admin_instance_id ").append(reflection.getId()).append(" \">").append(reflection.getName()).append("(").append(countPlayers).append(" players). Id: ").append(reflection.getId()).append("</a><br>");
 		}
@@ -106,7 +106,7 @@ public class AdminInstance implements IAdminCommandHandler
 
 		HtmlMessage adminReply = new HtmlMessage(5);
 		StringBuffer replyMSG = new StringBuffer("<html><title>Instance Menu</title><body><br>");
-		if (reflection != null)
+		if(reflection != null)
 		{
 			replyMSG.append("<table width=260><tr>");
 			replyMSG.append("<td width=40><button value=\"Main\" action=\"bypass -h admin_admin\" width=40 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
@@ -114,7 +114,7 @@ public class AdminInstance implements IAdminCommandHandler
 			replyMSG.append("<td width=40><button value=\"Back\" action=\"bypass -h admin_instance\" width=40 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 			replyMSG.append("</tr></table><br><br>");
 
-			for (Player player : reflection.getPlayers())
+			for(Player player : reflection.getPlayers())
 				replyMSG.append("<a action=\"bypass -h admin_teleportto ").append(player.getName()).append(" \">").append(player.getName()).append("</a><br>");
 		}
 		else

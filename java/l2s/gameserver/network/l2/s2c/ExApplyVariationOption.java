@@ -9,7 +9,7 @@ public class ExApplyVariationOption implements IClientOutgoingPacket
 	private final int _option1;
 	private final int _option2;
 	private final int _option3;
-	
+
 	public ExApplyVariationOption(int result, int enchantedObjectId, int option1, int option2, int option3)
 	{
 		_result = result;
@@ -18,7 +18,7 @@ public class ExApplyVariationOption implements IClientOutgoingPacket
 		_option2 = option2;
 		_option3 = option3;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

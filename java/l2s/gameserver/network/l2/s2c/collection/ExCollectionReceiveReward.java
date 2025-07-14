@@ -7,13 +7,13 @@ public class ExCollectionReceiveReward implements IClientOutgoingPacket
 {
 	private final int _collectionId;
 	private boolean _success;
-	
+
 	public ExCollectionReceiveReward(int collectionId, boolean success)
 	{
 		_collectionId = collectionId;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

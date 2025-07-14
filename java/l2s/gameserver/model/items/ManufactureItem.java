@@ -22,10 +22,8 @@ public class ManufactureItem
 	public boolean canCrit()
 	{
 		RecipeTemplate template = RecipeHolder.getInstance().getRecipeByRecipeId(_recipeId);
-		if (template == null)
-		{
-			return false;
-		}
+		if(template == null)
+		{ return false; }
 		return template.canCrit();
 	}
 
@@ -37,18 +35,12 @@ public class ManufactureItem
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
-		{
-			return true;
-		}
-		if (o == null)
-		{
-			return false;
-		}
-		if (o.getClass() != this.getClass())
-		{
-			return false;
-		}
+		if(o == this)
+		{ return true; }
+		if(o == null)
+		{ return false; }
+		if(o.getClass() != this.getClass())
+		{ return false; }
 		return ((ManufactureItem) o).getRecipeId() == this.getRecipeId();
 	}
 

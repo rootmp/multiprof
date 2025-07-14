@@ -51,7 +51,7 @@ public class GameServerManager
 			statement = con.prepareStatement("SELECT `id`, `ip`, `port`, `age_limit`, `pvp`, `max_players`, `type`, `brackets`, `key` FROM gameservers");
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int id = rset.getInt("id");
 				GameServer gs = new GameServer(id, rset.getString("ip"), rset.getInt("port"), rset.getString("key"));
@@ -63,7 +63,7 @@ public class GameServerManager
 				_gameServers.put(id, gs);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOG.error("", e);
 		}
@@ -125,18 +125,18 @@ public class GameServerManager
 		try
 		{
 			GameServer pgs = _gameServers.get(host.getId());
-			if (pgs != null)
+			if(pgs != null)
 			{
 				HostInfo phost = pgs.getHost(host.getId());
-				if (phost == null || !StringUtils.equals(host.getKey(), phost.getKey()))
+				if(phost == null || !StringUtils.equals(host.getKey(), phost.getKey()))
 					return FAIL_GS_REGISTER_DIFF_KEYS;
 			}
-			else if (!Config.ACCEPT_NEW_GAMESERVER)
+			else if(!Config.ACCEPT_NEW_GAMESERVER)
 				return FAIL_GS_REGISTER_ID_ALREADY_USE;
 
-			if (pgs == null || !pgs.isAuthed())
+			if(pgs == null || !pgs.isAuthed())
 			{
-				if (pgs != null)
+				if(pgs != null)
 					pgs.removeHost(host.getId());
 
 				_gameServers.put(host.getId(), gs);

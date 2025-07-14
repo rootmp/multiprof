@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.World;
@@ -32,19 +33,19 @@ public class RequestGMCommand implements IClientIncomingPacket
 	{
 		Player player = client.getActiveChar();
 		Player target = World.getPlayer(_targetName);
-		if (player == null || target == null)
+		if(player == null || target == null)
 			return;
-		if (!player.getPlayerAccess().CanViewChar)
+		if(!player.getPlayerAccess().CanViewChar)
 			return;
 
-		switch (_command)
+		switch(_command)
 		{
 			case 1:
 				player.sendPacket(new GMViewCharacterInfoPacket(target));
 				player.sendPacket(new GMHennaInfoPacket(target));
 				break;
 			case 2:
-				if (target.getClan() != null)
+				if(target.getClan() != null)
 					player.sendPacket(new GMViewPledgeInfoPacket(target));
 				break;
 			case 3:
@@ -56,8 +57,8 @@ public class RequestGMCommand implements IClientIncomingPacket
 			case 5:
 				ItemInstance[] items = target.getInventory().getItems();
 				int questSize = 0;
-				for (ItemInstance item : items)
-					if (item.getTemplate().isQuest())
+				for(ItemInstance item : items)
+					if(item.getTemplate().isQuest())
 						questSize++;
 				player.sendPacket(new GMViewItemListPacket(1, target, items, items.length - questSize));
 				player.sendPacket(new GMViewItemListPacket(2, target, items, items.length - questSize));

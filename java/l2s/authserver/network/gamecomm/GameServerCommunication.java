@@ -61,19 +61,19 @@ public class GameServerCommunication extends Thread
 		SelectionKey key = null;
 		int opts;
 
-		while (!isShutdown())
+		while(!isShutdown())
 			try
 			{
 				selector.select();
 				keys = selector.selectedKeys();
 				iterator = keys.iterator();
 
-				while (iterator.hasNext())
+				while(iterator.hasNext())
 				{
 					key = iterator.next();
 					iterator.remove();
 
-					if (!key.isValid())
+					if(!key.isValid())
 					{
 						close(key);
 						continue;
@@ -81,7 +81,7 @@ public class GameServerCommunication extends Thread
 
 					opts = key.readyOps();
 
-					switch (opts)
+					switch(opts)
 					{
 						case SelectionKey.OP_CONNECT:
 							close(key);
@@ -102,17 +102,17 @@ public class GameServerCommunication extends Thread
 					}
 				}
 			}
-			catch (ClosedSelectorException e)
+			catch(ClosedSelectorException e)
 			{
 				_log.error("Selector " + selector + " closed!");
 				return;
 			}
-			catch (IOException e)
+			catch(IOException e)
 			{
 				_log.error("Gameserver I/O error: " + e.getMessage());
 				close(key);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -144,40 +144,37 @@ public class GameServerCommunication extends Thread
 
 		count = channel.read(buf);
 
-		if (count == -1)
+		if(count == -1)
 		{
 			close(key);
 			return;
 		}
-		else if (count == 0)
+		else if(count == 0)
 			return;
 
 		buf.flip();
 
-		while (tryReadPacket(key, gs, buf))
-			;
+		while(tryReadPacket(key, gs, buf));
 	}
 
 	protected boolean tryReadPacket(SelectionKey key, GameServer gs, ByteBuffer buf) throws IOException
 	{
 		int pos = buf.position();
 		// проверяем, хватает ли нам байт для чтения заголовка и не пустого тела пакета
-		if (buf.remaining() > 2)
+		if(buf.remaining() > 2)
 		{
 			// получаем ожидаемый размер пакета
 			int size = buf.getShort() & 0xffff;
 
 			// проверяем корректность размера
-			if (size <= 2)
-			{
-				throw new IOException("Incorrect packet size: <= 2");
-			}
+			if(size <= 2)
+			{ throw new IOException("Incorrect packet size: <= 2"); }
 
 			// ожидаемый размер тела пакета
 			size -= 2;
 
 			// проверяем, хватает ли байт на чтение тела
-			if (size <= buf.remaining())
+			if(size <= buf.remaining())
 			{
 				// apply limit
 				int limit = buf.limit();
@@ -185,12 +182,12 @@ public class GameServerCommunication extends Thread
 
 				ReceivablePacket rp = PacketHandler.handlePacket(gs, buf);
 
-				if (rp != null)
+				if(rp != null)
 				{
 					rp.setByteBuffer(buf);
 					rp.setClient(gs);
 
-					if (rp.read())
+					if(rp.read())
 						ThreadPoolManager.getInstance().execute(rp);
 
 					rp.setByteBuffer(null);
@@ -200,7 +197,7 @@ public class GameServerCommunication extends Thread
 				buf.position(pos + size + 2);
 
 				// закончили чтение из буфера, почистим
-				if (!buf.hasRemaining())
+				if(!buf.hasRemaining())
 				{
 					buf.clear();
 					return false;
@@ -237,7 +234,7 @@ public class GameServerCommunication extends Thread
 		{
 			int i = 0;
 			SendablePacket sp;
-			while (i++ < 64 && (sp = sendQueue.poll()) != null)
+			while(i++ < 64 && (sp = sendQueue.poll()) != null)
 			{
 				int headerPos = buf.position();
 				buf.position(headerPos + 2);
@@ -250,7 +247,7 @@ public class GameServerCommunication extends Thread
 
 				// size (incl header)
 				int dataSize = buf.position() - headerPos - 2;
-				if (dataSize == 0)
+				if(dataSize == 0)
 				{
 					buf.position(headerPos);
 					continue;
@@ -263,7 +260,7 @@ public class GameServerCommunication extends Thread
 			}
 
 			done = sendQueue.isEmpty();
-			if (done)
+			if(done)
 				conn.disableWriteInterest();
 		}
 		finally
@@ -275,7 +272,7 @@ public class GameServerCommunication extends Thread
 
 		channel.write(buf);
 
-		if (buf.remaining() > 0)
+		if(buf.remaining() > 0)
 		{
 			buf.compact();
 			done = false;
@@ -283,9 +280,9 @@ public class GameServerCommunication extends Thread
 		else
 			buf.clear();
 
-		if (!done)
+		if(!done)
 		{
-			if (conn.enableWriteInterest())
+			if(conn.enableWriteInterest())
 				selector.wakeup();
 		}
 	}
@@ -297,7 +294,7 @@ public class GameServerCommunication extends Thread
 
 	public void close(SelectionKey key)
 	{
-		if (key == null)
+		if(key == null)
 			return;
 
 		try
@@ -305,7 +302,7 @@ public class GameServerCommunication extends Thread
 			try
 			{
 				GameServerConnection conn = (GameServerConnection) key.attachment();
-				if (conn != null)
+				if(conn != null)
 					conn.onDisconnection();
 			}
 			finally
@@ -314,7 +311,7 @@ public class GameServerCommunication extends Thread
 				key.cancel();
 			}
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 		}

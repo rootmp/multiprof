@@ -65,9 +65,9 @@ public class OlympiadHistory
 	{
 		int team = _objectId1 == target ? 1 : 2;
 		String main = null;
-		if (_gameStatus == 0)
+		if(_gameStatus == 0)
 			main = StringsHolder.getInstance().getString(player, "hero.history.tie");
-		else if (team == _gameStatus)
+		else if(team == _gameStatus)
 			main = StringsHolder.getInstance().getString(player, "hero.history.win");
 		else
 			main = StringsHolder.getInstance().getString(player, "hero.history.loss");

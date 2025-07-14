@@ -31,14 +31,14 @@ public final class EffectReplaceSkill extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		Player player = effected.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (effected.isDead() || effector.isDead())
+		if(effected.isDead() || effector.isDead())
 			return false;
 
 		return true;
@@ -50,29 +50,23 @@ public final class EffectReplaceSkill extends EffectHandler
 		Player player = effected.getPlayer();
 
 		SkillEntry replacedSkill = player.getKnownSkill(_skillReplace);
-		if (replacedSkill == null)
-		{
-			return;
-		}
+		if(replacedSkill == null)
+		{ return; }
 
-		if (player.isDisabledSkillToReplace(_skillReplace))
-		{
-			return;
-		}
+		if(player.isDisabledSkillToReplace(_skillReplace))
+		{ return; }
 
-		if (player.getActiveReflection() != null)
+		if(player.getActiveReflection() != null)
 		{
-			if ((player.getActiveReflection().getId() < 208) || (player.getActiveReflection().getId() > 215))
+			if((player.getActiveReflection().getId() < 208) || (player.getActiveReflection().getId() > 215))
 			{
-				if ((getSkill().getId() != 45197) && (getSkill().getId() != 45198))
-				{
-					return;
-				}
+				if((getSkill().getId() != 45197) && (getSkill().getId() != 45198))
+				{ return; }
 			}
 		}
 
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, _skillAdd, replacedSkill.getLevel());
-		if (skillEntry != null)
+		if(skillEntry != null)
 		{
 			player.addSkill(skillEntry, false);
 			player.addHiddenSkill(_skillReplace);
@@ -90,14 +84,10 @@ public final class EffectReplaceSkill extends EffectHandler
 		Player player = effected.getPlayer();
 
 		SkillEntry replacedSkill = player.getKnownSkill(_skillAdd);
-		if (replacedSkill == null)
-		{
-			return;
-		}
-		if (player.isDisabledSkillToReplace(_skillReplace))
-		{
-			return;
-		}
+		if(replacedSkill == null)
+		{ return; }
+		if(player.isDisabledSkillToReplace(_skillReplace))
+		{ return; }
 
 		player.removeSkill(_skillAdd, false);
 		player.removeHiddenSkill(_skillReplace);
@@ -106,9 +96,9 @@ public final class EffectReplaceSkill extends EffectHandler
 
 	private void updateShortCut(Player player, int skillToAdd, int skillToRemove, int level)
 	{
-		for (ShortCut sc : player.getAllShortCuts())
+		for(ShortCut sc : player.getAllShortCuts())
 		{
-			if (sc.getId() == skillToRemove)
+			if(sc.getId() == skillToRemove)
 			{
 				sc.setId(skillToAdd);
 				player.updateSkillShortcuts(skillToAdd, level);

@@ -60,7 +60,7 @@ public final class SendStatus implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(0x00);
-		
+
 		packetWriter.writeD(0x01); // World ID
 		packetWriter.writeD(max_online_players); // Max Online
 		packetWriter.writeD(online_players); // Current Online

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.QuestHolder;
 import l2s.gameserver.model.Player;
@@ -26,15 +27,15 @@ public class RequestAddExpandQuestAlarm implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Quest quest = QuestHolder.getInstance().getQuest(_questId);
-		if (quest == null)
+		if(quest == null)
 			return;
 
 		QuestState state = player.getQuestState(quest);
-		if (state == null)
+		if(state == null)
 			return;
 
 		player.sendPacket(new ExQuestNpcLogList(state));

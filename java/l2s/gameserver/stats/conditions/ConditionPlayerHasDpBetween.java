@@ -20,15 +20,11 @@ public class ConditionPlayerHasDpBetween extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
-		{
-			return false;
-		}
+		if(character == null)
+		{ return false; }
 
-		if (_max == -1)
-		{
-			return (character.getMaxDp() >= _min);
-		}
+		if(_max == -1)
+		{ return (character.getMaxDp() >= _min); }
 
 		return (character.getMaxDp() >= _min && character.getMaxDp() <= _max);
 	}

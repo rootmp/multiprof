@@ -12,7 +12,7 @@ public class ExFestivalBMGame implements IClientOutgoingPacket
 
 	public ExFestivalBMGame(int cRewardItemGrade, int nRewardItemClassId, int nRewardItemCount)
 	{
-		this.cRewardItemGrade= cRewardItemGrade;
+		this.cRewardItemGrade = cRewardItemGrade;
 		this.nRewardItemClassId = nRewardItemClassId;
 		this.nRewardItemCount = nRewardItemCount;
 	}

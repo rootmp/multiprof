@@ -19,7 +19,7 @@ public class Rectangle extends AbstractShape
 
 		int r = 0;
 		Point2D center = getCenter();
-		for (Point2D point : points)
+		for(Point2D point : points)
 			r = Math.max(r, GeometryUtils.calculateDistance(center, point));
 		radius = r;
 	}

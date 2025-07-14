@@ -3,10 +3,10 @@ package l2s.gameserver.network.l2.s2c.events;
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.FestivalBMHolder;
 import l2s.gameserver.instancemanager.ServerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.FestivalBMTemplate;
 
 /**
@@ -33,9 +33,9 @@ public class ExFestivalBMTopItemInfo implements IClientOutgoingPacket
 		packetWriter.writeD(_timeToEnd); // end time
 		packetWriter.writeD(_items.size()); // 0 causes items none
 
-		if (_items.size() > 0)
+		if(_items.size() > 0)
 		{
-			for (int id : _items.keySet())
+			for(int id : _items.keySet())
 			{
 				final FestivalBMTemplate item = _items.get(id);
 				int existingAmount = ServerVariables.getInt("FESTIVAL_BM_" + item.getItemId(), item.getItemCount());

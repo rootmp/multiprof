@@ -21,7 +21,7 @@ public class ExUserInfoCubic implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_objectId);
 		packetWriter.writeH(_cubics.length);
-		for (Cubic cubic : _cubics)
+		for(Cubic cubic : _cubics)
 		{
 			packetWriter.writeH(cubic == null ? 0 : cubic.getId());
 		}

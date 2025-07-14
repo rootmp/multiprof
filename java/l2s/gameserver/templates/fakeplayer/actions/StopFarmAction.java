@@ -15,7 +15,7 @@ public class StopFarmAction extends MoveAction
 	@Override
 	public boolean performAction(FakeAI ai)
 	{
-		if (ai.clearCurrentFarmZone())
+		if(ai.clearCurrentFarmZone())
 			return true;
 		return false;
 	}

@@ -23,17 +23,17 @@ public class EffectMutePhisycal extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getPMuted().start(this))
+		if(effected.getFlags().getPMuted().start(this))
 		{
 			SkillEntry castingSkillEntry = effected.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-			if (castingSkillEntry != null && !castingSkillEntry.getTemplate().isMagic())
+			if(castingSkillEntry != null && !castingSkillEntry.getTemplate().isMagic())
 			{
 				effected.abortCast(true, true);
 				return;
 			}
 
 			castingSkillEntry = effected.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-			if (castingSkillEntry != null && !castingSkillEntry.getTemplate().isMagic())
+			if(castingSkillEntry != null && !castingSkillEntry.getTemplate().isMagic())
 				effected.abortCast(true, true);
 		}
 	}

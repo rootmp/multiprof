@@ -16,11 +16,11 @@ class CompEndTask implements Runnable
 	@Override
 	public void run()
 	{
-		if (Olympiad.isOlympiadEnd())
+		if(Olympiad.isOlympiadEnd())
 			return;
 
 		OlympiadManager manager = Olympiad._manager;
-		if (manager != null && !manager.getGames().isEmpty()) // Если остались игры, ждем их завершения еще одну минуту
+		if(manager != null && !manager.getGames().isEmpty()) // Если остались игры, ждем их завершения еще одну минуту
 		{
 			Olympiad.startCompEndTask(60000);
 			return;
@@ -28,7 +28,7 @@ class CompEndTask implements Runnable
 
 		Olympiad._inCompPeriod = false;
 
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
 			player.sendPacket(new ExOlympiadInfo(player));
 		}
@@ -41,7 +41,7 @@ class CompEndTask implements Runnable
 		{
 			OlympiadDatabase.save();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Olympiad System: Failed to save Olympiad configuration:", e);
 		}

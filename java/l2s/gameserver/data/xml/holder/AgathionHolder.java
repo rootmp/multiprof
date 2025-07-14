@@ -22,7 +22,7 @@ public final class AgathionHolder extends AbstractHolder
 	public void addAgathionTemplate(AgathionTemplate template)
 	{
 		agathions.put(template.getId(), template);
-		for (int itemId : template.getItemIds())
+		for(int itemId : template.getItemIds())
 		{
 			agathionsByItemId.put(itemId, template);
 		}
@@ -49,12 +49,12 @@ public final class AgathionHolder extends AbstractHolder
 	{
 		agathions.clear();
 	}
-	
- 	public static AgathionHolder getInstance()
+
+	public static AgathionHolder getInstance()
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected final static AgathionHolder _instance = new AgathionHolder();

@@ -10,13 +10,12 @@ public class ClientNetworkManager extends NetworkManager
 {
 	protected ClientNetworkManager()
 	{
-		super(EventLoopGroupManager.getInstance().getBossGroup(),
-				EventLoopGroupManager.getInstance().getWorkerGroup(),
-				new ClientInitializer());
+		super(EventLoopGroupManager.getInstance().getBossGroup(), EventLoopGroupManager.getInstance().getWorkerGroup(), new ClientInitializer());
 	}
 
 	@Override
-	public void stop() throws InterruptedException {
+	public void stop() throws InterruptedException
+	{
 		super.stop();
 		EventLoopGroupManager.getInstance().shutdown();
 	}
@@ -25,7 +24,7 @@ public class ClientNetworkManager extends NetworkManager
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected static final ClientNetworkManager _instance = new ClientNetworkManager();

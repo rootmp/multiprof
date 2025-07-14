@@ -57,7 +57,7 @@ public abstract class ItemContainer
 			readUnlock();
 		}
 	}
-	
+
 	public boolean containsItem(ItemInstance item)
 	{
 		readLock();
@@ -116,13 +116,11 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			for (int i = 0; i < _items.size(); i++)
+			for(int i = 0; i < _items.size(); i++)
 			{
 				item = _items.get(i);
-				if (item.getObjectId() == objectId)
-				{
-					return item;
-				}
+				if(item.getObjectId() == objectId)
+				{ return item; }
 			}
 		}
 		finally
@@ -145,13 +143,11 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			for (int i = 0; i < _items.size(); i++)
+			for(int i = 0; i < _items.size(); i++)
 			{
 				item = _items.get(i);
-				if (item.getItemId() == itemId)
-				{
-					return item;
-				}
+				if(item.getItemId() == itemId)
+				{ return item; }
 			}
 		}
 		finally
@@ -176,10 +172,10 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			for (int i = 0; i < _items.size(); i++)
+			for(int i = 0; i < _items.size(); i++)
 			{
 				item = _items.get(i);
-				if (item.getItemId() == itemId)
+				if(item.getItemId() == itemId)
 				{
 					result.add(item);
 				}
@@ -200,10 +196,10 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			for (int i = 0; i < _items.size(); i++)
+			for(int i = 0; i < _items.size(); i++)
 			{
 				item = _items.get(i);
-				if (item.getItemId() == itemId)
+				if(item.getItemId() == itemId)
 				{
 					count = SafeMath.addAndLimit(count, item.getCount());
 				}
@@ -225,10 +221,8 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance addItem(int itemId, long count, int enchantLevel)
 	{
-		if (count < 1)
-		{
-			return null;
-		}
+		if(count < 1)
+		{ return null; }
 
 		ItemInstance item;
 
@@ -237,7 +231,7 @@ public abstract class ItemContainer
 		{
 			item = getItemByItemId(itemId);
 
-			if ((item != null) && item.isStackable())
+			if((item != null) && item.isStackable())
 			{
 				synchronized (item)
 				{
@@ -279,31 +273,25 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance addItem(ItemInstance item)
 	{
-		if (item == null)
-		{
-			return null;
-		}
+		if(item == null)
+		{ return null; }
 
-		if (item.getCount() < 1)
-		{
-			return null;
-		}
+		if(item.getCount() < 1)
+		{ return null; }
 
 		ItemInstance result = null;
 
 		writeLock();
 		try
 		{
-			if (getItemByObjectId(item.getObjectId()) != null)
-			{
-				return null;
-			}
+			if(getItemByObjectId(item.getObjectId()) != null)
+			{ return null; }
 
-			if (item.isStackable())
+			if(item.isStackable())
 			{
 				int itemId = item.getItemId();
 				result = getItemByItemId(itemId);
-				if (result != null)
+				if(result != null)
 				{
 					synchronized (result)
 					{
@@ -315,7 +303,7 @@ public abstract class ItemContainer
 				}
 			}
 
-			if (result == null)
+			if(result == null)
 			{
 				_items.add(item);
 				result = item;
@@ -341,10 +329,8 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance removeItemByObjectId(int objectId, long count)
 	{
-		if (count < 1)
-		{
-			return null;
-		}
+		if(count < 1)
+		{ return null; }
 
 		ItemInstance result;
 
@@ -352,10 +338,8 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			if ((item = getItemByObjectId(objectId)) == null)
-			{
-				return null;
-			}
+			if((item = getItemByObjectId(objectId)) == null)
+			{ return null; }
 
 			synchronized (item)
 			{
@@ -381,10 +365,8 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance removeItemByItemId(int itemId, long count)
 	{
-		if (count < 1)
-		{
-			return null;
-		}
+		if(count < 1)
+		{ return null; }
 
 		ItemInstance result;
 
@@ -392,10 +374,8 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			if ((item = getItemByItemId(itemId)) == null)
-			{
-				return null;
-			}
+			if((item = getItemByItemId(itemId)) == null)
+			{ return null; }
 
 			synchronized (item)
 			{
@@ -424,30 +404,22 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance removeItem(ItemInstance item, long count)
 	{
-		if (item == null)
-		{
-			return null;
-		}
+		if(item == null)
+		{ return null; }
 
-		if (count < 1)
-		{
-			return null;
-		}
+		if(count < 1)
+		{ return null; }
 
-		if (item.getCount() < count)
-		{
-			return null;
-		}
+		if(item.getCount() < count)
+		{ return null; }
 
 		writeLock();
 		try
 		{
-			if (!_items.contains(item))
-			{
-				return null;
-			}
+			if(!_items.contains(item))
+			{ return null; }
 
-			if (item.getCount() > count)
+			if(item.getCount() > count)
 			{
 				item.setCount(item.getCount() - count);
 				onModifyItem(item);
@@ -480,18 +452,14 @@ public abstract class ItemContainer
 	 */
 	public ItemInstance removeItem(ItemInstance item)
 	{
-		if (item == null)
-		{
-			return null;
-		}
+		if(item == null)
+		{ return null; }
 
 		writeLock();
 		try
 		{
-			if (!_items.remove(item))
-			{
-				return null;
-			}
+			if(!_items.remove(item))
+			{ return null; }
 
 			onRemoveItem(item);
 
@@ -516,10 +484,8 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			if ((item = getItemByObjectId(objectId)) == null)
-			{
-				return false;
-			}
+			if((item = getItemByObjectId(objectId)) == null)
+			{ return false; }
 
 			synchronized (item)
 			{
@@ -545,10 +511,8 @@ public abstract class ItemContainer
 		try
 		{
 			ItemInstance item;
-			if ((item = getItemByItemId(itemId)) == null)
-			{
-				return false;
-			}
+			if((item = getItemByItemId(itemId)) == null)
+			{ return false; }
 
 			synchronized (item)
 			{
@@ -572,30 +536,22 @@ public abstract class ItemContainer
 	 */
 	public boolean destroyItem(ItemInstance item, long count)
 	{
-		if (item == null)
-		{
-			return false;
-		}
+		if(item == null)
+		{ return false; }
 
-		if (count < 1)
-		{
-			return false;
-		}
+		if(count < 1)
+		{ return false; }
 
-		if (item.getCount() < count)
-		{
-			return false;
-		}
+		if(item.getCount() < count)
+		{ return false; }
 
 		writeLock();
 		try
 		{
-			if (!_items.contains(item))
-			{
-				return false;
-			}
+			if(!_items.contains(item))
+			{ return false; }
 
-			if (item.getCount() > count)
+			if(item.getCount() > count)
 			{
 				item.setCount(item.getCount() - count);
 				onModifyItem(item);
@@ -623,18 +579,14 @@ public abstract class ItemContainer
 	 */
 	public boolean destroyItem(ItemInstance item)
 	{
-		if (item == null)
-		{
-			return false;
-		}
+		if(item == null)
+		{ return false; }
 
 		writeLock();
 		try
 		{
-			if (!_items.remove(item))
-			{
-				return false;
-			}
+			if(!_items.remove(item))
+			{ return false; }
 
 			onRemoveItem(item);
 			onDestroyItem(item);
@@ -657,17 +609,17 @@ public abstract class ItemContainer
 
 	public void checkItems()
 	{
-		for (ItemInstance item : getItems())
+		for(ItemInstance item : getItems())
 		{
-			if (item.isTemporalItem() || item.isFlagLifeTime() || ((item.getVisualId() > 0) && (item.getLifeTime() >= 0)))
+			if(item.isTemporalItem() || item.isFlagLifeTime() || ((item.getVisualId() > 0) && (item.getLifeTime() >= 0)))
 			{
 				int left = item.getTemporalLifeTime();
-				if (left > 0)
+				if(left > 0)
 				{
 					continue;
 				}
 
-				if (item.getVisualId() > 0)
+				if(item.getVisualId() > 0)
 				{
 					item.setLifeTime(-1);
 					item.setVisualId(0);
@@ -698,13 +650,11 @@ public abstract class ItemContainer
 	public long getAdena()
 	{
 		ItemInstance _adena = getItemByItemId(57);
-		if (_adena == null)
-		{
-			return 0;
-		}
+		if(_adena == null)
+		{ return 0; }
 		return _adena.getCount();
 	}
-	
+
 	public long getInventoryItemCount(int itemId, int enchantLevel, boolean includeEquipped)
 	{
 		long count = 0;
@@ -713,7 +663,8 @@ public abstract class ItemContainer
 		{
 			for(ItemInstance item : _items)
 			{
-				if((item.getItemId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0)) && (includeEquipped || !item.isEquipped()))
+				if((item.getItemId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0))
+						&& (includeEquipped || !item.isEquipped()))
 				{
 					if(item.isStackable())
 					{

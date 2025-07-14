@@ -4,7 +4,7 @@ public class CollectionRelicsInfo
 {
 	public int nRelicsID;
 	public int nLevel;
-	
+
 	public CollectionRelicsInfo(int nRelicsID, int nLevel)
 	{
 		this.nRelicsID = nRelicsID;
@@ -12,6 +12,5 @@ public class CollectionRelicsInfo
 	}
 
 	public CollectionRelicsInfo()
-	{
-	}
+	{}
 }

@@ -40,7 +40,7 @@ public class QuestTimer implements Runnable
 	public void run()
 	{
 		QuestState qs = getQuestState();
-		if (qs != null)
+		if(qs != null)
 		{
 			qs.removeQuestTimer(getName());
 			qs.getQuest().notifyEvent(getName(), qs, getNpc());
@@ -50,7 +50,7 @@ public class QuestTimer implements Runnable
 	void pause()
 	{
 		// Запоминаем оставшееся время, для возможности возобновления таска
-		if (_schedule != null)
+		if(_schedule != null)
 		{
 			_time = _schedule.getDelay(TimeUnit.SECONDS);
 			_schedule.cancel(false);
@@ -59,7 +59,7 @@ public class QuestTimer implements Runnable
 
 	void stop()
 	{
-		if (_schedule != null)
+		if(_schedule != null)
 			_schedule.cancel(false);
 	}
 
@@ -92,11 +92,11 @@ public class QuestTimer implements Runnable
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != this.getClass())
+		if(o.getClass() != this.getClass())
 			return false;
 		return ((QuestTimer) o).getName().equals(this.getName());
 	}

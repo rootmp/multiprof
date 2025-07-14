@@ -23,10 +23,10 @@ public final class i_reset_skill_reuse extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		SkillEntry skill = effected.getKnownSkill(_skillId);
-		if (skill != null)
+		if(skill != null)
 		{
 			effected.enableSkill(skill.getTemplate());
-			if (effected.isPlayer())
+			if(effected.isPlayer())
 			{
 				Player player = effected.getPlayer();
 				player.sendPacket(new SkillCoolTimePacket(player));

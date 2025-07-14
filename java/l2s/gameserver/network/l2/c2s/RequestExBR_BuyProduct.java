@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 
 import l2s.commons.network.PacketReader;
@@ -34,25 +35,25 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_count > 100 || _count <= 0)
+		if(_count > 100 || _count <= 0)
 			return;
 
 		ProductItem product = ProductDataHolder.getInstance().getProduct(_productId);
-		if (product == null)
+		if(product == null)
 		{
 			activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_WRONG_PRODUCT);
 			return;
 		}
 
-		if (!product.isOnSale() || (System.currentTimeMillis() < product.getStartTimeSale()) || (System.currentTimeMillis() > product.getEndTimeSale()))
+		if(!product.isOnSale() || (System.currentTimeMillis() < product.getStartTimeSale()) || (System.currentTimeMillis() > product.getEndTimeSale()))
 		{
 			activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_SALE_PERIOD_ENDED);
 			return;
@@ -61,15 +62,15 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 		activeChar.getProductHistoryList().writeLock();
 		try
 		{
-			if (product.getLimit() >= 0)
+			if(product.getLimit() >= 0)
 			{
 				ProductHistoryItem productHistoryItem = activeChar.getProductHistoryList().get(product.getId());
-				if (productHistoryItem != null)
+				if(productHistoryItem != null)
 					_count = Math.min(_count, product.getLimit() - productHistoryItem.getPurchasedCount());
 				else
 					_count = Math.min(_count, product.getLimit());
 
-				if (_count <= 0)
+				if(_count <= 0)
 				{
 					activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_ITEM_LIMITED);
 					return;
@@ -77,7 +78,7 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 			}
 
 			final int pointsRequired = product.getPrice() * _count;
-			if (pointsRequired <= 0 && product.getLimit() == -1) // Лимитированные вещи можно выдавать бесплатно.
+			if(pointsRequired <= 0 && product.getLimit() == -1) // Лимитированные вещи можно выдавать бесплатно.
 			{
 				activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_WRONG_PRODUCT);
 				return;
@@ -86,24 +87,24 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 			activeChar.getInventory().writeLock();
 			try
 			{
-				if (pointsRequired > activeChar.getPremiumPoints())
+				if(pointsRequired > activeChar.getPremiumPoints())
 				{
 					activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 					return;
 				}
 
 				int totalWeight = 0;
-				for (ProductItemComponent com : product.getComponents())
+				for(ProductItemComponent com : product.getComponents())
 					totalWeight += com.getWeight();
 
 				totalWeight *= _count; // увеличиваем вес согласно количеству
 
 				int totalCount = 0;
 
-				for (ProductItemComponent com : product.getComponents())
+				for(ProductItemComponent com : product.getComponents())
 				{
 					ItemTemplate item = ItemHolder.getInstance().getTemplate(com.getId());
-					if (item == null)
+					if(item == null)
 					{
 						activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_WRONG_PRODUCT);
 						return; // what
@@ -111,13 +112,13 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 					totalCount += item.isStackable() ? 1 : com.getCount() * _count;
 				}
 
-				if (!activeChar.getInventory().validateCapacity(totalCount) || !activeChar.getInventory().validateWeight(totalWeight))
+				if(!activeChar.getInventory().validateCapacity(totalCount) || !activeChar.getInventory().validateWeight(totalWeight))
 				{
 					activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_INVENTORY_FULL);
 					return;
 				}
 
-				if (pointsRequired > 0 && !activeChar.reducePremiumPoints(pointsRequired))
+				if(pointsRequired > 0 && !activeChar.reducePremiumPoints(pointsRequired))
 				{
 					activeChar.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 					return;
@@ -129,10 +130,10 @@ public class RequestExBR_BuyProduct implements IClientIncomingPacket
 
 				activeChar.sendPacket(new ExBR_NewIConCashBtnWnd(activeChar));
 
-				for (ProductItemComponent $comp : product.getComponents())
+				for(ProductItemComponent $comp : product.getComponents())
 				{
 					List<ItemInstance> items = ItemFunctions.addItem(activeChar, $comp.getId(), $comp.getCount() * _count, true);
-					for (ItemInstance item : items)
+					for(ItemInstance item : items)
 						Log.LogItem(activeChar, Log.ItemMallBuy, item);
 				}
 

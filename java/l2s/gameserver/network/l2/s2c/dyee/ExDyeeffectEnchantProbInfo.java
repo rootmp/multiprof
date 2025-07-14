@@ -12,9 +12,9 @@ public class ExDyeeffectEnchantProbInfo implements IClientOutgoingPacket
 
 	public ExDyeeffectEnchantProbInfo()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
@@ -22,7 +22,7 @@ public class ExDyeeffectEnchantProbInfo implements IClientOutgoingPacket
 		packetWriter.writeD(nSlotID);
 		packetWriter.writeD(nNormalSkillProb);
 		packetWriter.writeD(nHiddenSkillProb);
-    
+
 		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.FishDataHolder;
@@ -30,10 +31,10 @@ public class RequestExAutoFish implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.getFishing().stop();
 		}
@@ -41,69 +42,69 @@ public class RequestExAutoFish implements IClientIncomingPacket
 		{
 			activeChar.sendPacket(ExAutoFishAvailable.REMOVE);
 
-			if (!activeChar.isInZone(ZoneType.FISHING))
+			if(!activeChar.isInZone(ZoneType.FISHING))
 				return;
 
-			if (Config.FISHING_ONLY_PREMIUM_ACCOUNTS && !activeChar.hasPremiumAccount())
+			if(Config.FISHING_ONLY_PREMIUM_ACCOUNTS && !activeChar.hasPremiumAccount())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CAN_ONLY_FUSH_DURING_THE_PAID_PERIOD);
 				return;
 			}
 
-			if (Config.FISHING_MINIMUM_LEVEL > activeChar.getLevel())
+			if(Config.FISHING_MINIMUM_LEVEL > activeChar.getLevel())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CAN_ONLY_FUSH_DURING_THE_PAID_PERIOD);
 				return;
 			}
 
-			if (activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
+			if(activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_FISH_WHILE_USING_A_RECIPE_BOOK_PRIVATE_MANUFACTURE_OR_PRIVATE_STORE);
 				return;
 			}
 
 			WeaponTemplate weaponItem = activeChar.getActiveWeaponTemplate();
-			if (weaponItem == null || weaponItem.getItemType() != WeaponType.ROD)
+			if(weaponItem == null || weaponItem.getItemType() != WeaponType.ROD)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_A_FISHING_POLE_EQUIPPED);
 				return;
 			}
 
 			RodTemplate rod = FishDataHolder.getInstance().getRod(weaponItem.getItemId());
-			if (rod == null)
+			if(rod == null)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_A_FISHING_POLE_EQUIPPED);
 				return;
 			}
 
 			ItemInstance lureItem = activeChar.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-			if (lureItem == null || lureItem.getCount() < rod.getShotConsumeCount())
+			if(lureItem == null || lureItem.getCount() < rod.getShotConsumeCount())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_MUST_PUT_BAIT_ON_YOUR_HOOK_BEFORE_YOU_CAN_FISH);
 				return;
 			}
 
 			LureTemplate lure = FishDataHolder.getInstance().getLure(lureItem.getItemId());
-			if (lure == null)
+			if(lure == null)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_MUST_PUT_BAIT_ON_YOUR_HOOK_BEFORE_YOU_CAN_FISH);
 				return;
 			}
 
-			if (activeChar.isInWater())
+			if(activeChar.isInWater())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_FISH_WHILE_UNDER_WATER);
 				return;
 			}
 
-			if (activeChar.isInBoat() || activeChar.isTransformed())
+			if(activeChar.isInBoat() || activeChar.isTransformed())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_FISH_WHILE_UNDER_WATER);
 				return;
 			}
 
 			Location hookLoc = activeChar.getFishing().findHookLocation();
-			if (hookLoc == null)
+			if(hookLoc == null)
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANT_FISH_HERE);
 				return;

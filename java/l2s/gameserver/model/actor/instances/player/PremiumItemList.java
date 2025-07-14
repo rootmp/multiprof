@@ -28,7 +28,7 @@ public class PremiumItemList
 		@Override
 		public int compare(PremiumItem o1, PremiumItem o2)
 		{
-			if (o2.getReceiveTime() == o1.getReceiveTime())
+			if(o2.getReceiveTime() == o1.getReceiveTime())
 				return o1.getItemId() - o2.getItemId();
 			return o2.getReceiveTime() - o1.getReceiveTime();
 		}
@@ -61,17 +61,17 @@ public class PremiumItemList
 		try
 		{
 			PremiumItem same = getSame(item);
-			if (same != null)
+			if(same != null)
 			{
 				long newCount = same.getItemCount() + item.getItemCount();
-				if (!CharacterPremiumItemsDAO.getInstance().update(_owner, item, newCount))
+				if(!CharacterPremiumItemsDAO.getInstance().update(_owner, item, newCount))
 					return false;
 
 				same.setItemCount(newCount);
 			}
 			else
 			{
-				if (!CharacterPremiumItemsDAO.getInstance().insert(_owner, item))
+				if(!CharacterPremiumItemsDAO.getInstance().insert(_owner, item))
 					return false;
 
 				_premiumItemList.add(item);
@@ -105,15 +105,15 @@ public class PremiumItemList
 		readLock();
 		try
 		{
-			for (PremiumItem same : _premiumItemList)
+			for(PremiumItem same : _premiumItemList)
 			{
-				if (same.getReceiveTime() != item.getReceiveTime())
+				if(same.getReceiveTime() != item.getReceiveTime())
 					continue;
 
-				if (same.getItemId() != item.getItemId())
+				if(same.getItemId() != item.getItemId())
 					continue;
 
-				if (!same.getSender().equals(item.getSender()))
+				if(!same.getSender().equals(item.getSender()))
 					continue;
 
 				return same;
@@ -128,26 +128,26 @@ public class PremiumItemList
 
 	public boolean remove(PremiumItem item, long count)
 	{
-		if (count == 0)
+		if(count == 0)
 			return false;
 
 		writeLock();
 		try
 		{
-			if (count != -1 && item.getItemCount() < count)
+			if(count != -1 && item.getItemCount() < count)
 				return false;
 
 			long newCount = item.getItemCount() - count;
-			if (count != -1 && newCount > 0)
+			if(count != -1 && newCount > 0)
 			{
-				if (!CharacterPremiumItemsDAO.getInstance().update(_owner, item, newCount))
+				if(!CharacterPremiumItemsDAO.getInstance().update(_owner, item, newCount))
 					return false;
 
 				item.setItemCount(newCount);
 			}
 			else
 			{
-				if (!CharacterPremiumItemsDAO.getInstance().delete(_owner, item))
+				if(!CharacterPremiumItemsDAO.getInstance().delete(_owner, item))
 					return false;
 
 				_premiumItemList.remove(item);

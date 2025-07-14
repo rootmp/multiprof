@@ -31,20 +31,20 @@ public class Agathion extends Cubic
 	{
 		_owner.setAgathion(this);
 
-		if (_task == null)
+		if(_task == null)
 			_task = ThreadPoolManager.getInstance().scheduleAtFixedRate(this, 1000L, 1000L);
 	}
 
 	@Override
 	public void delete()
 	{
-		if (_task != null)
+		if(_task != null)
 		{
 			_task.cancel(true);
 			_task = null;
 		}
 
-		if (_castTask != null)
+		if(_castTask != null)
 		{
 			_castTask.cancel(true);
 			_castTask = null;

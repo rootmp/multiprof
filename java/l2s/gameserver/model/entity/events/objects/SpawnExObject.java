@@ -30,7 +30,7 @@ public class SpawnExObject implements SpawnableObject
 	{
 		_name = name;
 		_spawns = SpawnManager.getInstance().getSpawners(_name);
-		if (_spawns.isEmpty() && !Config.DONTLOADSPAWN)
+		if(_spawns.isEmpty() && !Config.DONTLOADSPAWN)
 			_log.warn("SpawnExObject: not found spawn group: " + name);
 	}
 
@@ -38,20 +38,20 @@ public class SpawnExObject implements SpawnableObject
 	{
 		_name = source._name;
 		_spawns = new ArrayList<Spawner>(source._spawns.size());
-		for (Spawner spawn : source._spawns)
+		for(Spawner spawn : source._spawns)
 			_spawns.add(spawn.clone());
 	}
 
 	@Override
 	public void spawnObject(Event event, Reflection reflection)
 	{
-		if (_spawned)
+		if(_spawned)
 			_log.warn("SpawnExObject: can't spawn twice: " + _name + "; event: " + event, new Exception());
 		else
 		{
-			for (Spawner spawn : _spawns)
+			for(Spawner spawn : _spawns)
 			{
-				if (event.isInProgress())
+				if(event.isInProgress())
 					spawn.addEvent(event);
 				else
 					spawn.removeEvent(event);
@@ -66,20 +66,20 @@ public class SpawnExObject implements SpawnableObject
 	@Override
 	public void respawnObject(Event event, Reflection reflection)
 	{
-		if (!_spawned)
+		if(!_spawned)
 			_log.warn("SpawnExObject: can't respawn, not spawned: " + _name + "; event: " + event, new Exception());
 		else
-			for (Spawner spawn : _spawns)
+			for(Spawner spawn : _spawns)
 				spawn.init();
 	}
 
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (!_spawned)
+		if(!_spawned)
 			return;
 		_spawned = false;
-		for (Spawner spawn : _spawns)
+		for(Spawner spawn : _spawns)
 		{
 			spawn.removeEvent(event);
 			spawn.deleteAll();
@@ -89,9 +89,9 @@ public class SpawnExObject implements SpawnableObject
 	@Override
 	public void refreshObject(Event event, Reflection reflection)
 	{
-		for (NpcInstance npc : getAllSpawned())
+		for(NpcInstance npc : getAllSpawned())
 		{
-			if (event.isInProgress())
+			if(event.isInProgress())
 				npc.addEvent(event);
 			else
 				npc.removeEvent(event);
@@ -106,9 +106,9 @@ public class SpawnExObject implements SpawnableObject
 	public List<NpcInstance> getAllSpawned()
 	{
 		List<NpcInstance> npcs = new ArrayList<NpcInstance>();
-		for (Spawner spawn : _spawns)
+		for(Spawner spawn : _spawns)
 			npcs.addAll(spawn.getAllSpawned());
-		return npcs.isEmpty() ? Collections.<NpcInstance>emptyList() : npcs;
+		return npcs.isEmpty() ? Collections.<NpcInstance> emptyList() : npcs;
 	}
 
 	public NpcInstance getFirstSpawned()

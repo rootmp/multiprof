@@ -45,7 +45,7 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("shortcuts"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("shortcuts"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -55,13 +55,13 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 			Race race = StringUtils.isEmpty(raceStr) ? null : Race.valueOf(raceStr.toUpperCase());
 			ClassType type = StringUtils.isEmpty(raceStr) ? null : ClassType.valueOf(typeStr.toUpperCase());
 
-			for (Iterator<Element> iterator2 = element.elementIterator("page"); iterator2.hasNext();)
+			for(Iterator<Element> iterator2 = element.elementIterator("page"); iterator2.hasNext();)
 			{
 				Element element2 = iterator2.next();
 
 				int pageId = parseInt(element2, "id");
 
-				for (Iterator<Element> iterator3 = element2.elementIterator("shortcut"); iterator3.hasNext();)
+				for(Iterator<Element> iterator3 = element2.elementIterator("shortcut"); iterator3.hasNext();)
 				{
 					Element element3 = iterator3.next();
 
@@ -77,11 +77,11 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 			}
 		}
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("macroses"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("macroses"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
-			for (Iterator<Element> iterator2 = element.elementIterator("macro"); iterator2.hasNext();)
+			for(Iterator<Element> iterator2 = element.elementIterator("macro"); iterator2.hasNext();)
 			{
 				Element element2 = iterator2.next();
 
@@ -89,14 +89,14 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 				int icon = parseInt(element2, "icon");
 
 				String name = parseString(element2, "name");
-				if (StringUtils.isEmpty(name))
+				if(StringUtils.isEmpty(name))
 				{
 					warn("Macro ID[" + id + "] dont have name!");
 					continue;
 				}
 
 				String description = parseString(element2, "description", "");
-				if (description.length() > 32)
+				if(description.length() > 32)
 				{
 					warn("Macro ID[" + id + "] description cannot contain more than 32 characters!");
 					continue;
@@ -106,7 +106,7 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 				boolean enabled = parseBoolean(element2, "enabled", true);
 				List<Macro.L2MacroCmd> commands = new ArrayList<>();
 
-				for (Iterator<Element> iterator3 = element2.elementIterator("command"); iterator3.hasNext();)
+				for(Iterator<Element> iterator3 = element2.elementIterator("command"); iterator3.hasNext();)
 				{
 					Element element3 = iterator3.next();
 
@@ -114,20 +114,20 @@ public final class InitialShortCutsParser extends AbstractParser<InitialShortCut
 					int param1 = 0;
 					int param2 = 0;
 					String cmd = "";
-					if (cmdType == Macro.MacroCmdType.SKILL)
+					if(cmdType == Macro.MacroCmdType.SKILL)
 					{
 						param1 = parseInt(element3, "id");
 						param2 = parseInt(element3, "level");
 					}
-					else if (cmdType == Macro.MacroCmdType.DELAY)
+					else if(cmdType == Macro.MacroCmdType.DELAY)
 					{
 						param1 = parseInt(element3, "delay");
 					}
-					else if (cmdType == Macro.MacroCmdType.TEXT)
+					else if(cmdType == Macro.MacroCmdType.TEXT)
 					{
 						cmd = element3.getTextTrim();
 					}
-					else if (cmdType == Macro.MacroCmdType.SHORTCUT)
+					else if(cmdType == Macro.MacroCmdType.SHORTCUT)
 					{
 						param1 = parseInt(element3, "page");
 						param2 = parseInt(element3, "slot");

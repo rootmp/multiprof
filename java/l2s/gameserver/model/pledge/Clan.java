@@ -54,8 +54,8 @@ import l2s.gameserver.network.l2.s2c.ExNeedToChangeName;
 import l2s.gameserver.network.l2.s2c.ExPledgeBonusMarkReset;
 import l2s.gameserver.network.l2.s2c.ExPledgeBonusUpdate;
 import l2s.gameserver.network.l2.s2c.ExPledgeCount;
-import l2s.gameserver.network.l2.s2c.JoinPledgePacket;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
+import l2s.gameserver.network.l2.s2c.JoinPledgePacket;
 import l2s.gameserver.network.l2.s2c.PledgeReceiveSubPledgeCreated;
 import l2s.gameserver.network.l2.s2c.PledgeShowInfoUpdatePacket;
 import l2s.gameserver.network.l2.s2c.PledgeShowMemberListAddPacket;
@@ -189,7 +189,7 @@ public class Clan implements Iterable<UnitMember>
 
 	private int _clanPoints = 0;//удалить
 	private int _exp = 0;//есенс вариант
-	
+
 	private final String SELECT_ANNOUNCEMENT = "SELECT * FROM `clan_announcement` WHERE `clan_id` = ?";
 	private final String INSERT_ANNOUNCEMENT = "INSERT INTO clan_announcement (clan_id, body, showOnEnter) VALUES (?,?,?)";
 
@@ -212,7 +212,7 @@ public class Clan implements Iterable<UnitMember>
 			PreparedStatement st = DatabaseFactory.getInstance().getConnection().prepareStatement(SELECT_ANNOUNCEMENT);
 			st.setInt(1, getClanId());
 			ResultSet rs = st.executeQuery();
-			if (rs.next())
+			if(rs.next())
 			{
 				String announce = rs.getString("body");
 				setAnnounce(announce == null ? "" : announce);
@@ -224,7 +224,7 @@ public class Clan implements Iterable<UnitMember>
 				setShowAnnounceOnEnter(false);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("failed to restore clan (" + getClanId() + ") announcement.", e);
 		}
@@ -257,26 +257,22 @@ public class Clan implements Iterable<UnitMember>
 
 	public UnitMember getAnyMember(int id)
 	{
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
 			UnitMember m = unit.getUnitMember(id);
-			if (m != null)
-			{
-				return m;
-			}
+			if(m != null)
+			{ return m; }
 		}
 		return null;
 	}
 
 	public UnitMember getAnyMember(String name)
 	{
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
 			UnitMember m = unit.getUnitMember(name);
-			if (m != null)
-			{
-				return m;
-			}
+			if(m != null)
+			{ return m; }
 		}
 		return null;
 	}
@@ -284,7 +280,7 @@ public class Clan implements Iterable<UnitMember>
 	public int getAllSize()
 	{
 		int size = 0;
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
 			size += unit.size();
 		}
@@ -293,78 +289,70 @@ public class Clan implements Iterable<UnitMember>
 
 	public String getUnitName(int unitType)
 	{
-		if (unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
-		{
-			return StringUtils.EMPTY;
-		}
+		if(unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
+		{ return StringUtils.EMPTY; }
 
 		return getSubUnit(unitType).getName();
 	}
 
 	public String getLeaderName(int unitType)
 	{
-		if (unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
-		{
-			return StringUtils.EMPTY;
-		}
+		if(unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
+		{ return StringUtils.EMPTY; }
 
 		return getSubUnit(unitType).getLeaderName();
 	}
 
 	public int getLeaderId(int unitType)
 	{
-		if (unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
-		{
-			return 0;
-		}
+		if(unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
+		{ return 0; }
 
 		return getSubUnit(unitType).getLeaderObjectId();
 	}
 
 	public UnitMember getLeader(int unitType)
 	{
-		if (unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
-		{
-			return null;
-		}
+		if(unitType == SUBUNIT_NONE || !_subUnits.containsKey(unitType))
+		{ return null; }
 
 		return getSubUnit(unitType).getLeader();
 	}
 
 	public void flush()
 	{
-		for (UnitMember member : this)
+		for(UnitMember member : this)
 			removeClanMember(member.getObjectId());
 		_warehouse.writeLock();
 		try
 		{
-			for (ItemInstance item : _warehouse.getItems())
+			for(ItemInstance item : _warehouse.getItems())
 				_warehouse.destroyItem(item);
 		}
 		finally
 		{
 			_warehouse.writeUnlock();
 		}
-		if (_hasCastle != 0)
+		if(_hasCastle != 0)
 			ResidenceHolder.getInstance().getResidence(Castle.class, _hasCastle).changeOwner(null);
-		if (_hasFortress != 0)
+		if(_hasFortress != 0)
 			ResidenceHolder.getInstance().getResidence(Fortress.class, _hasFortress).changeOwner(null);
 	}
 
 	public void removeClanMember(int id)
 	{
-		if (id == getLeaderId(SUBUNIT_MAIN_CLAN))
+		if(id == getLeaderId(SUBUNIT_MAIN_CLAN))
 			return;
 
 		// удаляем реквест на смену лидера - если он вышел из клана
 		ClanChangeLeaderRequest changeLeaderRequest = ClanTable.getInstance().getRequest(getClanId());
-		if (changeLeaderRequest != null && changeLeaderRequest.getNewLeaderId() == id)
+		if(changeLeaderRequest != null && changeLeaderRequest.getNewLeaderId() == id)
 			ClanTable.getInstance().cancelRequest(changeLeaderRequest, false);
 
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
 			UnitMember member = unit.getUnitMember(id);
-			if (member != null)
+			if(member != null)
 			{
 				onLeaveClan(member.getPlayer());
 				removeClanMember(unit.getType(), id);
@@ -376,7 +364,7 @@ public class Clan implements Iterable<UnitMember>
 	public void removeClanMember(int subUnitId, int objectId)
 	{
 		SubUnit subUnit = getSubUnit(subUnitId);
-		if (subUnit == null)
+		if(subUnit == null)
 			return;
 
 		subUnit.removeUnitMember(objectId);
@@ -385,7 +373,7 @@ public class Clan implements Iterable<UnitMember>
 	public List<UnitMember> getAllMembers()
 	{
 		List<UnitMember> members = new ArrayList<UnitMember>();
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
 			members.addAll(unit.getUnitMembers());
 		}
@@ -395,9 +383,9 @@ public class Clan implements Iterable<UnitMember>
 	public List<Player> getOnlineMembers(int excludePlayerId)
 	{
 		List<Player> result = new ArrayList<Player>();
-		for (UnitMember temp : this)
+		for(UnitMember temp : this)
 		{
-			if (temp.isOnline() && temp.getObjectId() != excludePlayerId)
+			if(temp.isOnline() && temp.getObjectId() != excludePlayerId)
 				result.add(temp.getPlayer());
 		}
 		return result;
@@ -411,9 +399,9 @@ public class Clan implements Iterable<UnitMember>
 	public int getOnlineMembersCount(int excludePlayerId)
 	{
 		int result = 0;
-		for (UnitMember temp : this)
+		for(UnitMember temp : this)
 		{
-			if (temp != null && temp.isOnline() && temp.getObjectId() != excludePlayerId)
+			if(temp != null && temp.isOnline() && temp.getObjectId() != excludePlayerId)
 				result++;
 		}
 		return result;
@@ -466,7 +454,7 @@ public class Clan implements Iterable<UnitMember>
 
 	public int getResidenceId(ResidenceType r)
 	{
-		switch (r)
+		switch(r)
 		{
 			case CASTLE:
 				return _hasCastle;
@@ -492,7 +480,7 @@ public class Clan implements Iterable<UnitMember>
 	 */
 	public void setHasCastle(int castle)
 	{
-		if (_hasFortress == 0)
+		if(_hasFortress == 0)
 			_hasCastle = castle;
 	}
 
@@ -504,7 +492,7 @@ public class Clan implements Iterable<UnitMember>
 	 */
 	public void setHasFortress(int fortress)
 	{
-		if (_hasCastle == 0)
+		if(_hasCastle == 0)
 			_hasFortress = fortress;
 	}
 
@@ -524,33 +512,33 @@ public class Clan implements Iterable<UnitMember>
 
 		int oldLevel = getLevel();
 
-		if (_clanPoints > 20_000_000)
+		if(_clanPoints > 20_000_000)
 			_clanPoints = 20_000_000;
 
-		if (_clanPoints > 14_499_999)
+		if(_clanPoints > 14_499_999)
 			setLevel(10);
-		else if (_clanPoints > 10_999_999)
+		else if(_clanPoints > 10_999_999)
 			setLevel(9);
-		else if (_clanPoints > 7_499_999)
+		else if(_clanPoints > 7_499_999)
 			setLevel(8);
-		else if (_clanPoints > 4_499_999)
+		else if(_clanPoints > 4_499_999)
 			setLevel(7);
-		else if (_clanPoints > 1_499_999)
+		else if(_clanPoints > 1_499_999)
 			setLevel(6);
-		else if (_clanPoints > 499_999)
+		else if(_clanPoints > 499_999)
 			setLevel(5);
-		else if (_clanPoints > 99_999)
+		else if(_clanPoints > 99_999)
 			setLevel(4);
-		else if (_clanPoints > 4_999)
+		else if(_clanPoints > 4_999)
 			setLevel(3);
-		else if (_clanPoints > 999)
+		else if(_clanPoints > 999)
 			setLevel(2);
-		else if (_clanPoints > 99)
+		else if(_clanPoints > 99)
 			setLevel(1);
 
 		updateClanPointsInDB();
 
-		if (oldLevel != getLevel())
+		if(oldLevel != getLevel())
 		{
 			updateClanInDB();
 			onLevelChange(oldLevel, getLevel());
@@ -564,19 +552,17 @@ public class Clan implements Iterable<UnitMember>
 
 	public boolean isAnyMember(int id)
 	{
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 		{
-			if (unit.isUnitMember(id))
-			{
-				return true;
-			}
+			if(unit.isUnitMember(id))
+			{ return true; }
 		}
 		return false;
 	}
 
 	private void updateClanAttendanceInfoInDB()
 	{
-		if (getClanId() == 0)
+		if(getClanId() == 0)
 		{
 			_log.warn("updateClanAttendanceInDB with empty ClanId");
 			Thread.dumpStack();
@@ -597,7 +583,7 @@ public class Clan implements Iterable<UnitMember>
 
 			_huntingProgress.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while updating clan attendance '" + getClanId() + "' data in db");
 			_log.error("", e);
@@ -610,7 +596,7 @@ public class Clan implements Iterable<UnitMember>
 
 	private void updateClanScoreInDB()
 	{
-		if (getClanId() == 0)
+		if(getClanId() == 0)
 		{
 			_log.warn("updateClanScoreInDB with empty ClanId");
 			Thread.dumpStack();
@@ -627,7 +613,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setInt(2, getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while updating clan reputation score '" + getClanId() + "' data in db");
 			_log.error("", e);
@@ -640,7 +626,7 @@ public class Clan implements Iterable<UnitMember>
 
 	private void updateClanPointsInDB()
 	{
-		if (getClanId() == 0)
+		if(getClanId() == 0)
 		{
 			_log.warn("updateClanPointsInDB with empty ClanId");
 			Thread.dumpStack();
@@ -657,7 +643,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setInt(2, getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while updating clan points '" + getClanId() + "' data in db");
 			_log.error("", e);
@@ -670,14 +656,14 @@ public class Clan implements Iterable<UnitMember>
 
 	public void updateClanInDB()
 	{
-		if (getLeaderId() == 0)
+		if(getLeaderId() == 0)
 		{
 			_log.warn("updateClanInDB with empty LeaderId");
 			Thread.dumpStack();
 			return;
 		}
 
-		if (getClanId() == 0)
+		if(getClanId() == 0)
 		{
 			_log.warn("updateClanInDB with empty ClanId");
 			Thread.dumpStack();
@@ -705,7 +691,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setInt(14, getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while updating clan '" + getClanId() + "' data in db");
 			_log.error("", e);
@@ -756,7 +742,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setString(2, getAnnounce());
 			statement.setBoolean(3, isShowAnnounceOnEnter());
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: " + e, e);
 		}
@@ -768,7 +754,7 @@ public class Clan implements Iterable<UnitMember>
 
 	public static Clan restore(int clanId)
 	{
-		if (clanId == 0) // no clan
+		if(clanId == 0) // no clan
 			return null;
 
 		Clan clan = null;
@@ -783,7 +769,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setInt(1, clanId);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				clan = new Clan(clanId);
 				clan.setLevel(rset.getInt("clan_level"));
@@ -808,7 +794,7 @@ public class Clan implements Iterable<UnitMember>
 				statement = con.prepareStatement("SELECT id FROM castle WHERE owner_id=?");
 				statement.setInt(1, clanId);
 				rset = statement.executeQuery();
-				if (rset.next())
+				if(rset.next())
 					clan.setHasCastle(rset.getInt("id"));
 
 				DbUtils.close(statement, rset);
@@ -816,7 +802,7 @@ public class Clan implements Iterable<UnitMember>
 				statement = con.prepareStatement("SELECT id FROM fortress WHERE owner_id=?");
 				statement.setInt(1, clanId);
 				rset = statement.executeQuery();
-				if (rset.next())
+				if(rset.next())
 					clan.setHasFortress(rset.getInt("id"));
 
 				DbUtils.close(statement, rset);
@@ -824,17 +810,17 @@ public class Clan implements Iterable<UnitMember>
 				statement = con.prepareStatement("SELECT id FROM clanhall WHERE owner_id=?");
 				statement.setInt(1, clanId);
 				rset = statement.executeQuery();
-				if (rset.next())
+				if(rset.next())
 					clan.setHasHideout(rset.getInt("id"));
 
-				if (clan.getHasHideout() == 0)
+				if(clan.getHasHideout() == 0)
 				{
 					DbUtils.close(statement, rset);
 
 					statement = con.prepareStatement("SELECT id FROM instant_clanhall_owners WHERE owner_id=?");
 					statement.setInt(1, clanId);
 					rset = statement.executeQuery();
-					if (rset.next())
+					if(rset.next())
 						clan.setHasHideout(Residence.getInstantResidenceId(rset.getInt("id")));
 				}
 			}
@@ -844,7 +830,7 @@ public class Clan implements Iterable<UnitMember>
 				return null;
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error while restoring clan!", e);
 		}
@@ -853,7 +839,7 @@ public class Clan implements Iterable<UnitMember>
 			DbUtils.closeQuietly(con, statement, rset);
 		}
 
-		if (clan == null)
+		if(clan == null)
 		{
 			_log.warn("Clan " + clanId + " does't exist");
 			return null;
@@ -862,7 +848,7 @@ public class Clan implements Iterable<UnitMember>
 		clan.restoreSkills();
 		clan.restoreSubPledges();
 
-		for (SubUnit unit : clan.getAllSubUnits())
+		for(SubUnit unit : clan.getAllSubUnits())
 		{
 			unit.restore();
 			unit.restoreSkills();
@@ -879,12 +865,12 @@ public class Clan implements Iterable<UnitMember>
 
 	public void broadcastToOnlineMembersPredicate(Predicate<Player> predicate, IBroadcastPacket... packets)
 	{
-		for (UnitMember member : this)
+		for(UnitMember member : this)
 		{
-			if (member.isOnline())
+			if(member.isOnline())
 			{
 				Player player = member.getPlayer();
-				if (predicate == null || predicate.test(player))
+				if(predicate == null || predicate.test(player))
 					player.sendPacket(packets);
 			}
 		}
@@ -897,8 +883,8 @@ public class Clan implements Iterable<UnitMember>
 
 	public void broadcastToOtherOnlineMembers(IBroadcastPacket packet, Player player)
 	{
-		for (UnitMember member : this)
-			if (member.isOnline() && member.getPlayer() != player)
+		for(UnitMember member : this)
+			if(member.isOnline() && member.getPlayer() != player)
 				member.getPlayer().sendPacket(packet);
 	}
 
@@ -955,7 +941,7 @@ public class Clan implements Iterable<UnitMember>
 
 	public boolean isAtWarWith(Clan clan)
 	{
-		if (clan == null)
+		if(clan == null)
 			return false;
 
 		return _atWarWith.containsKey(clan.getClanId());
@@ -996,18 +982,18 @@ public class Clan implements Iterable<UnitMember>
 		List<IBroadcastPacket> listAll = updateList ? listAll() : null;
 		PledgeShowInfoUpdatePacket update = new PledgeShowInfoUpdatePacket(this);
 
-		for (UnitMember member : this)
-			if (member.isOnline())
+		for(UnitMember member : this)
+			if(member.isOnline())
 			{
-				if (updateList)
+				if(updateList)
 				{
 					member.getPlayer().sendPacket(PledgeShowMemberListDeleteAllPacket.STATIC);
 					member.getPlayer().sendPacket(listAll);
 				}
 				member.getPlayer().sendPacket(update);
-				if (needUserInfo)
+				if(needUserInfo)
 					member.getPlayer().broadcastCharInfo();
-				if (relation)
+				if(relation)
 					PlayerUtils.updateAttackableFlags(member.getPlayer());
 			}
 	}
@@ -1091,13 +1077,13 @@ public class Clan implements Iterable<UnitMember>
 		Arrays.sort(clans, REPUTATION_COMPARATOR);
 
 		int place = 1;
-		for (int i = 0; i < clans.length; i++)
+		for(int i = 0; i < clans.length; i++)
 		{
-			if (i == REPUTATION_PLACES)
+			if(i == REPUTATION_PLACES)
 				return 0;
 
 			Clan clan = clans[i];
-			if (clan == this)
+			if(clan == this)
 				return place + i;
 		}
 
@@ -1111,22 +1097,22 @@ public class Clan implements Iterable<UnitMember>
 
 	private void setReputationScore(int rep)
 	{
-		if (_reputation >= 0 && rep < 0)
+		if(_reputation >= 0 && rep < 0)
 		{
 			broadcastToOnlineMembers(SystemMsg.SINCE_THE_CLAN_REPUTATION_SCORE_HAS_DROPPED_TO_0_OR_LOWER_YOUR_CLAN_SKILLS_WILL_BE_DEACTIVATED);
-			for (UnitMember member : this)
-				if (member.isOnline() && member.getPlayer() != null)
+			for(UnitMember member : this)
+				if(member.isOnline() && member.getPlayer() != null)
 					disableSkills(member.getPlayer());
 		}
-		else if (_reputation < 0 && rep >= 0)
+		else if(_reputation < 0 && rep >= 0)
 		{
 			broadcastToOnlineMembers(SystemMsg.CLAN_SKILLS_WILL_NOW_BE_ACTIVATED_SINCE_THE_CLANS_REPUTATION_SCORE_IS_0_OR_HIGHER);
-			for (UnitMember member : this)
-				if (member.isOnline() && member.getPlayer() != null)
+			for(UnitMember member : this)
+				if(member.isOnline() && member.getPlayer() != null)
 					enableSkills(member.getPlayer());
 		}
 
-		if (_reputation != rep)
+		if(_reputation != rep)
 		{
 			_reputation = rep;
 			broadcastToOnlineMembers(new PledgeShowInfoUpdatePacket(this));
@@ -1137,10 +1123,10 @@ public class Clan implements Iterable<UnitMember>
 
 	public int incReputation(int inc, boolean rate, String source)
 	{
-		if (_level < 3)
+		if(_level < 3)
 			return 0;
 
-		if (rate && Math.abs(inc) <= Config.RATE_CLAN_REP_SCORE_MAX_AFFECTED)
+		if(rate && Math.abs(inc) <= Config.RATE_CLAN_REP_SCORE_MAX_AFFECTED)
 			inc = (int) Math.round(inc * Config.RATE_CLAN_REP_SCORE);
 
 		setReputationScore(_reputation + inc);
@@ -1167,20 +1153,20 @@ public class Clan implements Iterable<UnitMember>
 			rset = statement.executeQuery();
 
 			// Go though the recordset of this SQL query
-			while (rset.next())
+			while(rset.next())
 			{
 				int id = rset.getInt("skill_id");
 				int level = rset.getInt("skill_level");
 				// Create a L2Skill object for each record
 				SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id, level);
-				if (skillEntry != null)
+				if(skillEntry != null)
 				{
 					// Add the L2Skill object to the Clan _skills
 					_skills.put(skillEntry.getId(), skillEntry);
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not restore clan skills: " + e);
 			_log.error("", e);
@@ -1203,12 +1189,12 @@ public class Clan implements Iterable<UnitMember>
 	public SkillEntry addSkill(SkillEntry newSkillEntry, boolean store)
 	{
 		SkillEntry oldSkillEntry = null;
-		if (newSkillEntry != null)
+		if(newSkillEntry != null)
 		{
 			// Replace oldSkillEntry by newSkillEntry or Add the newSkillEntry
 			oldSkillEntry = _skills.put(newSkillEntry.getId(), newSkillEntry);
 
-			if (store)
+			if(store)
 			{
 				Connection con = null;
 				PreparedStatement statement = null;
@@ -1222,7 +1208,7 @@ public class Clan implements Iterable<UnitMember>
 					statement.setInt(3, newSkillEntry.getLevel());
 					statement.execute();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.warn("Error could not store char skills: " + e);
 					_log.error("", e);
@@ -1235,12 +1221,12 @@ public class Clan implements Iterable<UnitMember>
 
 			PledgeSkillListAddPacket p = new PledgeSkillListAddPacket(newSkillEntry.getId(), newSkillEntry.getLevel());
 			PledgeSkillListPacket p2 = new PledgeSkillListPacket(this);
-			for (UnitMember temp : this)
+			for(UnitMember temp : this)
 			{
-				if (temp.isOnline())
+				if(temp.isOnline())
 				{
 					Player player = temp.getPlayer();
-					if (player != null)
+					if(player != null)
 					{
 						addSkill(player, newSkillEntry);
 						player.sendPacket(p, p2);
@@ -1255,59 +1241,59 @@ public class Clan implements Iterable<UnitMember>
 
 	public void addSkillsQuietly(Player player)
 	{
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 			addSkill(player, skillEntry);
 
 		final SubUnit subUnit = getSubUnit(player.getPledgeType());
-		if (subUnit != null)
+		if(subUnit != null)
 			subUnit.addSkillsQuietly(player);
 
-		if (player.isClanLeader())
+		if(player.isClanLeader())
 		{
-			if (getLevel() >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
+			if(getLevel() >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
 				SiegeUtils.addSiegeSkills(player);
 		}
 	}
 
 	public void enableSkills(Player player)
 	{
-		if (player.isInOlympiadMode()) // не разрешаем кланскиллы на олимпе
+		if(player.isInOlympiadMode()) // не разрешаем кланскиллы на олимпе
 			return;
 
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 		{
 			Skill skill = skillEntry.getTemplate();
-			if (skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
+			if(skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
 			{
-				if (!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
+				if(!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
 					player.removeUnActiveSkill(skill);
 			}
 		}
 
 		final SubUnit subUnit = getSubUnit(player.getPledgeType());
-		if (subUnit != null)
+		if(subUnit != null)
 			subUnit.enableSkills(player);
 	}
 
 	public void disableSkills(Player player)
 	{
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 			player.addUnActiveSkill(skillEntry.getTemplate());
 
 		final SubUnit subUnit = getSubUnit(player.getPledgeType());
-		if (subUnit != null)
+		if(subUnit != null)
 			subUnit.disableSkills(player);
 	}
 
 	private void addSkill(Player player, SkillEntry skillEntry)
 	{
 		Skill skill = skillEntry.getTemplate();
-		if (skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
+		if(skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
 		{
-			if (!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
+			if(!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
 			{
 				player.addSkill(skillEntry, false);
-				if (player.isInOlympiadMode())
+				if(player.isInOlympiadMode())
 					player.addUnActiveSkill(skill);
 			}
 		}
@@ -1322,10 +1308,10 @@ public class Clan implements Iterable<UnitMember>
 	 */
 	public void removeSkill(int skill, boolean store)
 	{
-		if (_skills.remove(skill) == null)
+		if(_skills.remove(skill) == null)
 			return;
 
-		if (store)
+		if(store)
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -1338,7 +1324,7 @@ public class Clan implements Iterable<UnitMember>
 				statement.setInt(2, getClanId());
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.warn("Error could not delete char skills: " + e);
 				_log.error("", e);
@@ -1350,10 +1336,10 @@ public class Clan implements Iterable<UnitMember>
 		}
 
 		PledgeSkillListAddPacket p = new PledgeSkillListAddPacket(skill, 0);
-		for (UnitMember temp : this)
+		for(UnitMember temp : this)
 		{
 			Player player = temp.getPlayer();
-			if (player != null && player.isOnline())
+			if(player != null && player.isOnline())
 			{
 				player.removeSkillById(skill);
 				player.sendPacket(p);
@@ -1364,10 +1350,10 @@ public class Clan implements Iterable<UnitMember>
 
 	public void broadcastSkillListToOnlineMembers()
 	{
-		for (UnitMember temp : this)
+		for(UnitMember temp : this)
 		{
 			Player player = temp.getPlayer();
-			if (player != null && player.isOnline())
+			if(player != null && player.isOnline())
 			{
 				player.sendPacket(new PledgeSkillListPacket(this));
 				player.sendSkillList();
@@ -1397,11 +1383,11 @@ public class Clan implements Iterable<UnitMember>
 
 	public int getAffiliationRank(int pledgeType)
 	{
-		if (isAcademy(pledgeType))
+		if(isAcademy(pledgeType))
 			return 9;
-		else if (isOrderOfKnights(pledgeType))
+		else if(isOrderOfKnights(pledgeType))
 			return 8;
-		else if (isRoyalGuard(pledgeType))
+		else if(isRoyalGuard(pledgeType))
 			return 7;
 		else
 			return 6;
@@ -1416,7 +1402,7 @@ public class Clan implements Iterable<UnitMember>
 	{
 		_subUnits.put(sp.getType(), sp);
 
-		if (updateDb)
+		if(updateDb)
 		{
 			broadcastToOnlineMembers(new PledgeReceiveSubPledgeCreated(sp));
 			Connection con = null;
@@ -1431,7 +1417,7 @@ public class Clan implements Iterable<UnitMember>
 				statement.setString(4, sp.getName());
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.warn("Could not store clan Sub pledges: " + e);
 				_log.error("", e);
@@ -1445,11 +1431,11 @@ public class Clan implements Iterable<UnitMember>
 
 	public int getAvailablePledgeTypes(int pledgeType)
 	{
-		if (pledgeType == SUBUNIT_MAIN_CLAN)
+		if(pledgeType == SUBUNIT_MAIN_CLAN)
 			return SUBUNIT_NONE;
 
-		if (_subUnits.get(pledgeType) != null)
-			switch (pledgeType)
+		if(_subUnits.get(pledgeType) != null)
+			switch(pledgeType)
 			{
 				case SUBUNIT_ACADEMY:
 					return SUBUNIT_NONE;
@@ -1486,7 +1472,7 @@ public class Clan implements Iterable<UnitMember>
 			rset = statement.executeQuery();
 
 			// Go though the recordset of this SQL query
-			while (rset.next())
+			while(rset.next())
 			{
 				int type = rset.getInt("type");
 				int leaderId = rset.getInt("leader_id");
@@ -1496,7 +1482,7 @@ public class Clan implements Iterable<UnitMember>
 				addSubUnit(pledge, false);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not restore clan SubPledges: " + e, e);
 		}
@@ -1509,7 +1495,7 @@ public class Clan implements Iterable<UnitMember>
 	public int getClanMembersLimit()
 	{
 		int limit = 0;
-		for (SubUnit su : getAllSubUnits())
+		for(SubUnit su : getAllSubUnits())
 			limit += getSubPledgeLimit(su.getType());
 		return limit;
 	}
@@ -1519,10 +1505,10 @@ public class Clan implements Iterable<UnitMember>
 		int limit = 0;
 
 		SubUnit subUnit = _subUnits.get(pledgeType);
-		switch (pledgeType)
+		switch(pledgeType)
 		{
 			case SUBUNIT_MAIN_CLAN:
-				switch (_level)
+				switch(_level)
 				{
 					case 0:
 						limit = 10;
@@ -1546,21 +1532,21 @@ public class Clan implements Iterable<UnitMember>
 				break;
 			case SUBUNIT_ROYAL1:
 			case SUBUNIT_ROYAL2:
-				if (subUnit != null && subUnit.isUpgraded())
+				if(subUnit != null && subUnit.isUpgraded())
 					limit = 30;
 				else
 					limit = 20;
 				break;
 			case SUBUNIT_KNIGHT1:
 			case SUBUNIT_KNIGHT2:
-				if (subUnit != null && subUnit.isUpgraded())
+				if(subUnit != null && subUnit.isUpgraded())
 					limit = 25;
 				else
 					limit = 10;
 				break;
 			case SUBUNIT_KNIGHT3:
 			case SUBUNIT_KNIGHT4:
-				if (subUnit != null && subUnit.isUpgraded())
+				if(subUnit != null && subUnit.isUpgraded())
 					limit = 25;
 				else
 					limit = 10;
@@ -1571,10 +1557,8 @@ public class Clan implements Iterable<UnitMember>
 
 	public int getUnitMembersSize(int pledgeType)
 	{
-		if (pledgeType == Clan.SUBUNIT_NONE || !_subUnits.containsKey(pledgeType))
-		{
-			return 0;
-		}
+		if(pledgeType == Clan.SUBUNIT_NONE || !_subUnits.containsKey(pledgeType))
+		{ return 0; }
 		return getSubUnit(pledgeType).size();
 	}
 
@@ -1585,7 +1569,7 @@ public class Clan implements Iterable<UnitMember>
 
 	private void restoreRankPrivs()
 	{
-		if (_privs == null)
+		if(_privs == null)
 			initializePrivs();
 		Connection con = null;
 		PreparedStatement statement = null;
@@ -1599,20 +1583,20 @@ public class Clan implements Iterable<UnitMember>
 			rset = statement.executeQuery();
 
 			// Go though the recordset of this SQL query
-			while (rset.next())
+			while(rset.next())
 			{
 				int rank = rset.getInt("rank");
 				// int party = rset.getInt("party"); - unused?
 				int privileges = rset.getInt("privilleges");
 				// noinspection ConstantConditions
 				RankPrivs p = _privs.get(rank);
-				if (p != null)
+				if(p != null)
 					p.setPrivs(privileges);
 				else
 					_log.warn("Invalid rank value (" + rank + "), please check clan_privs table");
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not restore clan privs by rank: " + e);
 			_log.error("", e);
@@ -1625,16 +1609,16 @@ public class Clan implements Iterable<UnitMember>
 
 	public void initializePrivs()
 	{
-		for (int i = RANK_FIRST; i <= RANK_LAST; i++)
+		for(int i = RANK_FIRST; i <= RANK_LAST; i++)
 			_privs.put(i, new RankPrivs(i, 0, CP_NOTHING));
 	}
 
 	public void updatePrivsForRank(int rank)
 	{
-		for (UnitMember member : this)
-			if (member.isOnline() && member.getPlayer() != null && member.getPlayer().getPowerGrade() == rank)
+		for(UnitMember member : this)
+			if(member.isOnline() && member.getPlayer() != null && member.getPlayer().getPowerGrade() == rank)
 			{
-				if (member.getPlayer().isClanLeader())
+				if(member.getPlayer().isClanLeader())
 					continue;
 				member.getPlayer().sendUserInfo();
 			}
@@ -1642,13 +1626,13 @@ public class Clan implements Iterable<UnitMember>
 
 	public RankPrivs getRankPrivs(int rank)
 	{
-		if (rank < RANK_FIRST || rank > RANK_LAST)
+		if(rank < RANK_FIRST || rank > RANK_LAST)
 		{
 			_log.warn("Requested invalid rank value: " + rank);
 			Thread.dumpStack();
 			return null;
 		}
-		if (_privs.get(rank) == null)
+		if(_privs.get(rank) == null)
 		{
 			_log.warn("Request of rank before init: " + rank);
 			Thread.dumpStack();
@@ -1660,22 +1644,22 @@ public class Clan implements Iterable<UnitMember>
 	public int countMembersByRank(int rank)
 	{
 		int ret = 0;
-		for (UnitMember m : this)
-			if (m.getPowerGrade() == rank)
+		for(UnitMember m : this)
+			if(m.getPowerGrade() == rank)
 				ret++;
 		return ret;
 	}
 
 	public void setRankPrivs(int rank, int privs)
 	{
-		if (rank < RANK_FIRST || rank > RANK_LAST)
+		if(rank < RANK_FIRST || rank > RANK_LAST)
 		{
 			_log.warn("Requested set of invalid rank value: " + rank);
 			Thread.dumpStack();
 			return;
 		}
 
-		if (_privs.get(rank) != null)
+		if(_privs.get(rank) != null)
 			_privs.get(rank).setPrivs(privs);
 		else
 			_privs.put(rank, new RankPrivs(rank, countMembersByRank(rank), privs));
@@ -1694,7 +1678,7 @@ public class Clan implements Iterable<UnitMember>
 			statement.setInt(3, privs);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not store clan privs for rank: " + e);
 			_log.error("", e);
@@ -1708,7 +1692,7 @@ public class Clan implements Iterable<UnitMember>
 	/** used to retrieve all privilege ranks */
 	public final RankPrivs[] getAllRankPrivs()
 	{
-		if (_privs == null)
+		if(_privs == null)
 			return new RankPrivs[0];
 		return _privs.values(new RankPrivs[_privs.size()]);
 	}
@@ -1718,7 +1702,7 @@ public class Clan implements Iterable<UnitMember>
 		@Override
 		public int compare(Clan o1, Clan o2)
 		{
-			if (o1 == null || o2 == null)
+			if(o1 == null || o2 == null)
 				return 0;
 			return o2.getReputationScore() - o1.getReputationScore();
 		}
@@ -1731,7 +1715,7 @@ public class Clan implements Iterable<UnitMember>
 
 	public void setWhBonus(int i)
 	{
-		if (_whBonus != -1)
+		if(_whBonus != -1)
 			MySqlDataInsert.set("UPDATE `clan_data` SET `warehouse`=? WHERE `clan_id`=?", i, getClanId());
 		_whBonus = i;
 	}
@@ -1744,7 +1728,7 @@ public class Clan implements Iterable<UnitMember>
 	public List<IBroadcastPacket> listAll()
 	{
 		List<IBroadcastPacket> p = new ArrayList<IBroadcastPacket>(_subUnits.size());
-		for (SubUnit unit : getAllSubUnits())
+		for(SubUnit unit : getAllSubUnits())
 			p.add(new PledgeShowMemberListAllPacket(this, unit));
 
 		return p;
@@ -1798,7 +1782,7 @@ public class Clan implements Iterable<UnitMember>
 	public Iterator<UnitMember> iterator()
 	{
 		List<Iterator<UnitMember>> iterators = new ArrayList<Iterator<UnitMember>>(_subUnits.size());
-		for (SubUnit subUnit : _subUnits.valueCollection())
+		for(SubUnit subUnit : _subUnits.valueCollection())
 			iterators.add(subUnit.getUnitMembers().iterator());
 		return new JoinedIterator<UnitMember>(iterators);
 	}
@@ -1815,15 +1799,15 @@ public class Clan implements Iterable<UnitMember>
 
 	public void loginClanCond(Player player, boolean login)
 	{
-		if (login)
+		if(login)
 		{
 			// Clan clan = player.getClan();
 			SubUnit subUnit = player.getSubUnit();
-			if (subUnit == null)
+			if(subUnit == null)
 				return;
 
 			UnitMember member = subUnit.getUnitMember(player.getObjectId());
-			if (member == null)
+			if(member == null)
 				return;
 
 			member.setPlayerInstance(player, false);
@@ -1832,63 +1816,63 @@ public class Clan implements Iterable<UnitMember>
 			int apprentice = player.getApprentice();
 			IClientOutgoingPacket msg = new SystemMessagePacket(SystemMsg.CLAN_MEMBER_S1_HAS_LOGGED_INTO_GAME).addName(player);
 			PledgeShowMemberListUpdatePacket memberUpdate = new PledgeShowMemberListUpdatePacket(player);
-			for (Player clanMember : getOnlineMembers(player.getObjectId()))
+			for(Player clanMember : getOnlineMembers(player.getObjectId()))
 			{
 				clanMember.sendPacket(memberUpdate);
-				if (clanMember.getObjectId() == sponsor)
+				if(clanMember.getObjectId() == sponsor)
 					clanMember.sendPacket(new SystemMessagePacket(SystemMsg.YOUR_APPRENTICE_C1_HAS_LOGGED_OUT).addName(player));
-				else if (clanMember.getObjectId() == apprentice)
+				else if(clanMember.getObjectId() == apprentice)
 					clanMember.sendPacket(new SystemMessagePacket(SystemMsg.YOUR_SPONSOR_C1_HAS_LOGGED_IN).addName(player));
 				else
 					clanMember.sendPacket(msg);
 			}
 
-			if (player.isClanLeader())
+			if(player.isClanLeader())
 			{
 				AuctionClanHall clanHall = getHasHideout() != 0 ? ResidenceHolder.getInstance().getResidence(AuctionClanHall.class, getHasHideout()) : null;
-				if (clanHall != null && clanHall.getAuctionLength() == 0)
+				if(clanHall != null && clanHall.getAuctionLength() == 0)
 				{
-					if (clanHall.getSiegeEvent().getClass() == ClanHallAuctionEvent.class)
+					if(clanHall.getSiegeEvent().getClass() == ClanHallAuctionEvent.class)
 					{
-						if (getWarehouse().getCountOf(clanHall.getFeeItemId()) < clanHall.getRentalFee())
+						if(getWarehouse().getCountOf(clanHall.getFeeItemId()) < clanHall.getRentalFee())
 							player.sendPacket(new SystemMessagePacket(SystemMsg.PAYMENT_FOR_YOUR_CLAN_HALL_HAS_NOT_BEEN_MADE_PLEASE_ME_PAYMENT_TO_YOUR_CLAN_WAREHOUSE_BY_S1_TOMORROW).addLong(clanHall.getRentalFee()));
 					}
 				}
 			}
 
-			if (getArenaStage() > 20)
+			if(getArenaStage() > 20)
 			{
 				SkillEntry clanExuberance = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 1867, 5);
 				player.addSkill(clanExuberance, false);
 			}
-			else if (getArenaStage() > 15)
+			else if(getArenaStage() > 15)
 			{
 				SkillEntry clanExuberance = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 1867, 4);
 				player.addSkill(clanExuberance, false);
 			}
-			else if (getArenaStage() > 10)
+			else if(getArenaStage() > 10)
 			{
 				SkillEntry clanExuberance = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 1867, 3);
 				player.addSkill(clanExuberance, false);
 			}
-			else if (getArenaStage() > 5)
+			else if(getArenaStage() > 5)
 			{
 				SkillEntry clanExuberance = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 1867, 2);
 				player.addSkill(clanExuberance, false);
 			}
-			else if (getArenaStage() > 0)
+			else if(getArenaStage() > 0)
 			{
 				SkillEntry clanExuberance = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 1867, 1);
 				player.addSkill(clanExuberance, false);
 			}
 
-			if (subUnit.getLeaderObjectId() == player.getObjectId())
+			if(subUnit.getLeaderObjectId() == player.getObjectId())
 			{
 				String changedOldName = player.getVar(Player.CHANGED_PLEDGE_NAME);
-				if (changedOldName != null && !StringUtils.isEmpty(changedOldName))
+				if(changedOldName != null && !StringUtils.isEmpty(changedOldName))
 					player.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLEDGE, ExNeedToChangeName.NONE_REASON, changedOldName));
 			}
-			if (isShowAnnounceOnEnter())
+			if(isShowAnnounceOnEnter())
 			{
 				String html = HtmCache.getInstance().getHtml("scripts/handler/bbs/clan_popup.htm", player);
 				html = html.replace("%pledge_name%", getName());
@@ -1899,16 +1883,16 @@ public class Clan implements Iterable<UnitMember>
 		}
 
 		final ExPledgeCount pledgeCount = new ExPledgeCount(getOnlineMembersCount(login ? 0 : player.getObjectId()));
-		for (Player clanMember : getOnlineMembers(login ? 0 : player.getObjectId()))
+		for(Player clanMember : getOnlineMembers(login ? 0 : player.getObjectId()))
 			clanMember.sendPacket(pledgeCount);
 	}
 
 	public void onLevelChange(int oldLevel, int newLevel)
 	{
-		if (getLeader().isOnline())
+		if(getLeader().isOnline())
 		{
 			Player clanLeader = getLeader().getPlayer();
-			if (oldLevel < SiegeUtils.MIN_CLAN_SIEGE_LEVEL && newLevel >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
+			if(oldLevel < SiegeUtils.MIN_CLAN_SIEGE_LEVEL && newLevel >= SiegeUtils.MIN_CLAN_SIEGE_LEVEL)
 				SiegeUtils.addSiegeSkills(clanLeader);
 		}
 
@@ -1917,7 +1901,7 @@ public class Clan implements Iterable<UnitMember>
 		// notify all the members about it
 		PledgeShowInfoUpdatePacket pu = new PledgeShowInfoUpdatePacket(this);
 		PledgeStatusChangedPacket ps = new PledgeStatusChangedPacket(this);
-		for (Player member : getOnlineMembers())
+		for(Player member : getOnlineMembers())
 		{
 			member.updatePledgeRank();
 			member.sendPacket(SystemMsg.YOUR_CLANS_LEVEL_HAS_INCREASED, pu, ps);
@@ -1928,7 +1912,7 @@ public class Clan implements Iterable<UnitMember>
 	public void onEnterClan(Player player)
 	{
 		final ExPledgeCount pledgeCount = new ExPledgeCount(getOnlineMembersCount());
-		for (Player clanMember : getOnlineMembers())
+		for(Player clanMember : getOnlineMembers())
 			clanMember.sendPacket(pledgeCount);
 
 		ClanSearchManager.getInstance().removeApplicant(getClanId(), player.getObjectId());
@@ -1942,14 +1926,14 @@ public class Clan implements Iterable<UnitMember>
 	public void onLeaveClan(Player player)
 	{
 		int playerId = 0;
-		if (player != null)
+		if(player != null)
 		{
 			playerId = player.getObjectId();
 			player.sendPacket(new ExPledgeCount(0));
 		}
 
 		final ExPledgeCount pledgeCount = new ExPledgeCount(getOnlineMembersCount(playerId));
-		for (Player clanMember : getOnlineMembers(playerId))
+		for(Player clanMember : getOnlineMembers(playerId))
 			clanMember.sendPacket(pledgeCount);
 
 		MySqlDataInsert.set("DELETE FROM `character_variables` WHERE `obj_id`=? AND `name`= \"weekly_contribution\"", player.getObjectId());
@@ -1958,11 +1942,11 @@ public class Clan implements Iterable<UnitMember>
 
 	public boolean checkJoinPledgeCondition(Player player, int pledgeType)
 	{
-		if (pledgeType == SUBUNIT_ACADEMY)
+		if(pledgeType == SUBUNIT_ACADEMY)
 		{
-			if (player.isAcademyGraduated())
+			if(player.isAcademyGraduated())
 				return false;
-			if (player.getLevel() >= 85)
+			if(player.getLevel() >= 85)
 				return false;
 		}
 		return true;
@@ -1973,7 +1957,7 @@ public class Clan implements Iterable<UnitMember>
 		player.sendPacket(new JoinPledgePacket(getClanId()));
 
 		SubUnit subUnit = getSubUnit(pledgeType);
-		if (subUnit == null)
+		if(subUnit == null)
 			return false;
 
 		UnitMember member = new UnitMember(this, player.getName(), player.getTitle(), player.getLevel(), player.getClassId().getId(), player.getObjectId(), pledgeType, player.getPowerGrade(), player.getApprentice(), player.getSex().ordinal(), SUBUNIT_NONE, PledgeAttendanceType.NEW_RECRUIT);
@@ -1984,7 +1968,7 @@ public class Clan implements Iterable<UnitMember>
 
 		member.setPlayerInstance(player, false);
 
-		if (pledgeType == SUBUNIT_ACADEMY)
+		if(pledgeType == SUBUNIT_ACADEMY)
 			player.setLvlJoinedAcademy(player.getLevel());
 
 		member.setPowerGrade(getAffiliationRank(player.getPledgeType()));
@@ -2066,9 +2050,9 @@ public class Clan implements Iterable<UnitMember>
 	public int getAttendanceProgress()
 	{
 		int result = 0;
-		for (UnitMember member : getAllMembers())
+		for(UnitMember member : getAllMembers())
 		{
-			if (member.getAttendanceType() == PledgeAttendanceType.ACQUIRED)
+			if(member.getAttendanceType() == PledgeAttendanceType.ACQUIRED)
 				result++;
 		}
 		return result;
@@ -2086,7 +2070,7 @@ public class Clan implements Iterable<UnitMember>
 
 	public void addHuntingProgress(int value)
 	{
-		if (value <= 0)
+		if(value <= 0)
 			return;
 
 		int oldLevel = PledgeBonusUtils.getHuntingProgressLevel(getHuntingProgress());
@@ -2094,7 +2078,7 @@ public class Clan implements Iterable<UnitMember>
 		_huntingProgress.setJdbcState(JdbcEntityState.UPDATED);
 		broadcastToOnlineMembers(new ExPledgeBonusUpdate(ExPledgeBonusUpdate.BonusType.HUNTING, getHuntingProgress()));
 		int newLevel = PledgeBonusUtils.getHuntingProgressLevel(getHuntingProgress());
-		if (newLevel > oldLevel)
+		if(newLevel > oldLevel)
 			broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.YOUR_CLAN_HAS_ACHIEVED_HUNTING_BONUS_LV_S1).addInteger(newLevel));
 	}
 
@@ -2123,18 +2107,18 @@ public class Clan implements Iterable<UnitMember>
 		setYesterdayAttendanceReward(PledgeBonusUtils.getAttendanceProgressLevel(getAttendanceProgress()));
 		setYesterdayHuntingReward(PledgeBonusUtils.getHuntingProgressLevel(getHuntingProgress()));
 
-		for (UnitMember member : getAllMembers())
+		for(UnitMember member : getAllMembers())
 		{
-			if (member.getAttendanceType() == PledgeAttendanceType.NEW_RECRUIT)
+			if(member.getAttendanceType() == PledgeAttendanceType.NEW_RECRUIT)
 			{
-				if (member.isOnline())
+				if(member.isOnline())
 					member.setAttendanceType(PledgeAttendanceType.ACQUIRED);
 				else
 					member.setAttendanceType(PledgeAttendanceType.NOT_ACQUIRED);
 
 				broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(member));
 			}
-			else if (!member.isOnline())
+			else if(!member.isOnline())
 			{
 				member.setAttendanceType(PledgeAttendanceType.NOT_ACQUIRED);
 				broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(member));
@@ -2157,10 +2141,10 @@ public class Clan implements Iterable<UnitMember>
 	public void checkSkills()
 	{
 		// Удаляем скиллы, если уровень был понижен.
-		for (SkillEntry skill : getSkills())
+		for(SkillEntry skill : getSkills())
 		{
 			SkillLearn sl = SkillAcquireHolder.getInstance().getSkillLearn(null, skill.getId(), skill.getLevel(), AcquireType.CLAN);
-			if (sl == null || sl.getMinLevel() <= getLevel())
+			if(sl == null || sl.getMinLevel() <= getLevel())
 				continue;
 
 			removeSkill(skill.getId(), true);
@@ -2172,9 +2156,9 @@ public class Clan implements Iterable<UnitMember>
 		Collections.reverse(skillLearns);
 
 		IntObjectMap<SkillLearn> skillsToLearnMap = new HashIntObjectMap<SkillLearn>();
-		for (SkillLearn sl : skillLearns)
+		for(SkillLearn sl : skillLearns)
 		{
-			if (!sl.isFreeAutoGet(AcquireType.CLAN))
+			if(!sl.isFreeAutoGet(AcquireType.CLAN))
 			{
 				// Если предыдущий уровень умения учится НЕ БЕСПЛАТНО, то не учим бесплатно
 				// больший уровень умения.
@@ -2182,27 +2166,27 @@ public class Clan implements Iterable<UnitMember>
 				continue;
 			}
 
-			if (!skillsToLearnMap.containsKey(sl.getId()))
+			if(!skillsToLearnMap.containsKey(sl.getId()))
 				skillsToLearnMap.put(sl.getId(), sl);
 		}
 
-		for (SkillLearn sl : skillsToLearnMap.valueCollection())
+		for(SkillLearn sl : skillsToLearnMap.valueCollection())
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, sl.getId(), sl.getLevel());
-			if (skillEntry == null)
+			if(skillEntry == null)
 				continue;
 
 			addSkill(skillEntry, true);
 		}
 
 		int arenaSkillLevel = getArenaStage() / 5;
-		if (getSkillLevel(55887) != arenaSkillLevel)
+		if(getSkillLevel(55887) != arenaSkillLevel)
 			removeSkill(55887, false);
 
-		if (arenaSkillLevel > 0)
+		if(arenaSkillLevel > 0)
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 55887, arenaSkillLevel);
-			if (skillEntry != null)
+			if(skillEntry != null)
 				addSkill(skillEntry, false);
 		}
 	}
@@ -2237,26 +2221,25 @@ public class Clan implements Iterable<UnitMember>
 		this._showAnnounceOnEnter = _showAnnounceOnEnter;
 	}
 
-	public static final int[] EXP_TABLE =
-	{
+	public static final int[] EXP_TABLE = {
 			0,
-		100,
-		1000,
-		5000,
-		100000,
-		500000,
-		1500000,
-		4500000,
-		7500000,
-		11000000,
-		14500000,
-		20000000
+			100,
+			1000,
+			5000,
+			100000,
+			500000,
+			1500000,
+			4500000,
+			7500000,
+			11000000,
+			14500000,
+			20000000
 	};
-	
+
 	public void addExp(int value)
 	{
-		value*= Config.CLAN_EXP_RATE;
-		
+		value *= Config.CLAN_EXP_RATE;
+
 		_exp += value;
 		broadcastToOnlineMembers(new ExPledgeV3Info(_exp, getRank(), getNotice(), isShowAnnounceOnEnter()));
 		broadcastToOnlineMembers(new SystemMessage(SystemMessage.OBTAINED_S1S_CLAN_XP).addNumber(value));
@@ -2268,6 +2251,5 @@ public class Clan implements Iterable<UnitMember>
 		}
 		updateClanInDB();
 	}
-	
-	
+
 }

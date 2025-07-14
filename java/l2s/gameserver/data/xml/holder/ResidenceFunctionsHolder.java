@@ -5,12 +5,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.base.ResidenceFunctionType;
 import l2s.gameserver.templates.residence.ResidenceFunctionTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -32,7 +31,7 @@ public final class ResidenceFunctionsHolder extends AbstractHolder
 		_templates.put(template.getId(), template);
 
 		TIntObjectMap<ResidenceFunctionTemplate> templates = _templatesByTypeAndLevel.get(template.getType());
-		if (templates == null)
+		if(templates == null)
 		{
 			templates = new TIntObjectHashMap<ResidenceFunctionTemplate>();
 			_templatesByTypeAndLevel.put(template.getType(), templates);
@@ -53,7 +52,7 @@ public final class ResidenceFunctionsHolder extends AbstractHolder
 	public ResidenceFunctionTemplate getTemplate(ResidenceFunctionType type, int level)
 	{
 		TIntObjectMap<ResidenceFunctionTemplate> templates = _templatesByTypeAndLevel.get(type);
-		if (templates == null)
+		if(templates == null)
 			return null;
 
 		return templates.get(level);
@@ -62,7 +61,7 @@ public final class ResidenceFunctionsHolder extends AbstractHolder
 	public Collection<ResidenceFunctionTemplate> getTemplates(ResidenceFunctionType type)
 	{
 		TIntObjectMap<ResidenceFunctionTemplate> templates = _templatesByTypeAndLevel.get(type);
-		if (templates == null)
+		if(templates == null)
 			return Collections.emptyList();
 
 		return templates.valueCollection();

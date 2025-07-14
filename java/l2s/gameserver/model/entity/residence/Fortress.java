@@ -34,29 +34,29 @@ public class Fortress extends Residence
 	public void changeOwner(Clan clan)
 	{
 		// Если клан уже владел каким-либо замком/крепостью, отбираем его.
-		if (clan != null)
+		if(clan != null)
 		{
-			if (clan.getHasFortress() != 0)
+			if(clan.getHasFortress() != 0)
 			{
 				Fortress oldFortress = ResidenceHolder.getInstance().getResidence(Fortress.class, clan.getHasFortress());
-				if (oldFortress != null)
+				if(oldFortress != null)
 					oldFortress.changeOwner(null);
 			}
-			if (clan.getCastle() != 0)
+			if(clan.getCastle() != 0)
 			{
 				Castle oldCastle = ResidenceHolder.getInstance().getResidence(Castle.class, clan.getCastle());
-				if (oldCastle != null)
+				if(oldCastle != null)
 					oldCastle.changeOwner(null);
 			}
 		}
 
 		// Если этой крепостью уже кто-то владел, отбираем у него крепость
-		if (getOwnerId() > 0 && (clan == null || clan.getClanId() != getOwnerId()))
+		if(getOwnerId() > 0 && (clan == null || clan.getClanId() != getOwnerId()))
 		{
 			// Удаляем фортовые скилы у старого владельца
 			removeSkills();
 			Clan oldOwner = getOwner();
-			if (oldOwner != null)
+			if(oldOwner != null)
 				oldOwner.setHasFortress(0);
 
 			cancelCycleTask();
@@ -66,7 +66,7 @@ public class Fortress extends Residence
 		removeFunctions();
 
 		// Выдаем крепость новому владельцу
-		if (clan != null)
+		if(clan != null)
 		{
 			clan.setHasFortress(getId());
 			clan.broadcastClanStatus(true, false, false);
@@ -74,7 +74,7 @@ public class Fortress extends Residence
 
 		// Выдаем фортовые скилы новому владельцу
 		rewardSkills();
-		if (getJdbcState().isPersisted())
+		if(getJdbcState().isPersisted())
 		{
 			setJdbcState(JdbcEntityState.UPDATED);
 			update();
@@ -96,7 +96,7 @@ public class Fortress extends Residence
 	{
 		super.chanceCycle();
 
-		if (getCycle() >= REMOVE_CYCLE)
+		if(getCycle() >= REMOVE_CYCLE)
 		{
 			getOwner().broadcastToOnlineMembers(SystemMsg.ENEMY_BLOOD_PLEDGES_HAVE_INTRUDED_INTO_THE_FORTRESS);
 			changeOwner(null);

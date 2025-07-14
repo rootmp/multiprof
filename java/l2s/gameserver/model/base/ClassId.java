@@ -56,24 +56,8 @@ public enum ClassId
 	/* Elven Fighter 1st and 2nd class list */
 	/* 18 */ELVEN_FIGHTER(ClassType.FIGHTER, Race.ELF, null, ClassLevel.NONE, null),
 	/* 19 */ELVEN_KNIGHT(ClassType.FIGHTER, Race.ELF, ELVEN_FIGHTER, ClassLevel.FIRST, null, 1204),
-	/* 20 */TEMPLE_KNIGHT(
-							ClassType.FIGHTER,
-							Race.ELF,
-							ELVEN_KNIGHT,
-							ClassLevel.SECOND,
-							ClassType2.KNIGHT,
-							2633,
-							3140,
-							2820),
-	/* 21 */SWORDSINGER(
-						ClassType.FIGHTER,
-						Race.ELF,
-						ELVEN_KNIGHT,
-						ClassLevel.SECOND,
-						ClassType2.ENCHANTER,
-						2627,
-						3140,
-						2762),
+	/* 20 */TEMPLE_KNIGHT(ClassType.FIGHTER, Race.ELF, ELVEN_KNIGHT, ClassLevel.SECOND, ClassType2.KNIGHT, 2633, 3140, 2820),
+	/* 21 */SWORDSINGER(ClassType.FIGHTER, Race.ELF, ELVEN_KNIGHT, ClassLevel.SECOND, ClassType2.ENCHANTER, 2627, 3140, 2762),
 	/*
 	 * 22
 	 */ELVEN_SCOUT(ClassType.FIGHTER, Race.ELF, ELVEN_FIGHTER, ClassLevel.FIRST, null, 1217),
@@ -87,24 +71,8 @@ public enum ClassId
 	/* Elven Mage 1st and 2nd class list */
 	/* 25 */ELVEN_MAGE(ClassType.MYSTIC, Race.ELF, null, ClassLevel.NONE, null),
 	/* 26 */ELVEN_WIZARD(ClassType.MYSTIC, Race.ELF, ELVEN_MAGE, ClassLevel.FIRST, null, 1230),
-	/* 27 */SPELLSINGER(
-						ClassType.MYSTIC,
-						Race.ELF,
-						ELVEN_WIZARD,
-						ClassLevel.SECOND,
-						ClassType2.WIZARD,
-						2674,
-						3140,
-						2840),
-	/* 28 */ELEMENTAL_SUMMONER(
-								ClassType.MYSTIC,
-								Race.ELF,
-								ELVEN_WIZARD,
-								ClassLevel.SECOND,
-								ClassType2.SUMMONER,
-								2674,
-								3140,
-								3336),
+	/* 27 */SPELLSINGER(ClassType.MYSTIC, Race.ELF, ELVEN_WIZARD, ClassLevel.SECOND, ClassType2.WIZARD, 2674, 3140, 2840),
+	/* 28 */ELEMENTAL_SUMMONER(ClassType.MYSTIC, Race.ELF, ELVEN_WIZARD, ClassLevel.SECOND, ClassType2.SUMMONER, 2674, 3140, 3336),
 	/*
 	 * 29
 	 */ORACLE(ClassType.MYSTIC, Race.ELF, ELVEN_MAGE, ClassLevel.FIRST, null, 1235),
@@ -115,26 +83,10 @@ public enum ClassId
 	/* Darkelf Fighter 1st and 2nd class list */
 	/* 31 */DARK_FIGHTER(ClassType.FIGHTER, Race.DARKELF, null, ClassLevel.NONE, null),
 	/* 32 */PALUS_KNIGHT(ClassType.FIGHTER, Race.DARKELF, DARK_FIGHTER, ClassLevel.FIRST, null, 1244),
-	/* 33 */SHILLEN_KNIGHT(
-							ClassType.FIGHTER,
-							Race.DARKELF,
-							PALUS_KNIGHT,
-							ClassLevel.SECOND,
-							ClassType2.KNIGHT,
-							2633,
-							3172,
-							3307),
+	/* 33 */SHILLEN_KNIGHT(ClassType.FIGHTER, Race.DARKELF, PALUS_KNIGHT, ClassLevel.SECOND, ClassType2.KNIGHT, 2633, 3172, 3307),
 	/*
 	 * 34
-	 */BLADEDANCER(
-					ClassType.FIGHTER,
-					Race.DARKELF,
-					PALUS_KNIGHT,
-					ClassLevel.SECOND,
-					ClassType2.ENCHANTER,
-					2627,
-					3172,
-					2762),
+	 */BLADEDANCER(ClassType.FIGHTER, Race.DARKELF, PALUS_KNIGHT, ClassLevel.SECOND, ClassType2.ENCHANTER, 2627, 3172, 2762),
 	/*
 	 * 35
 	 */ASSASIN(ClassType.FIGHTER, Race.DARKELF, DARK_FIGHTER, ClassLevel.FIRST, null, 1252),
@@ -148,38 +100,14 @@ public enum ClassId
 	/* Darkelf Mage 1st and 2nd class list */
 	/* 38 */DARK_MAGE(ClassType.MYSTIC, Race.DARKELF, null, ClassLevel.NONE, null),
 	/* 39 */DARK_WIZARD(ClassType.MYSTIC, Race.DARKELF, DARK_MAGE, ClassLevel.FIRST, null, 1261),
-	/* 40 */SPELLHOWLER(
-						ClassType.MYSTIC,
-						Race.DARKELF,
-						DARK_WIZARD,
-						ClassLevel.SECOND,
-						ClassType2.WIZARD,
-						2674,
-						3172,
-						2840),
-	/* 41 */PHANTOM_SUMMONER(
-								ClassType.MYSTIC,
-								Race.DARKELF,
-								DARK_WIZARD,
-								ClassLevel.SECOND,
-								ClassType2.SUMMONER,
-								2674,
-								3172,
-								3336),
+	/* 40 */SPELLHOWLER(ClassType.MYSTIC, Race.DARKELF, DARK_WIZARD, ClassLevel.SECOND, ClassType2.WIZARD, 2674, 3172, 2840),
+	/* 41 */PHANTOM_SUMMONER(ClassType.MYSTIC, Race.DARKELF, DARK_WIZARD, ClassLevel.SECOND, ClassType2.SUMMONER, 2674, 3172, 3336),
 	/*
 	 * 42
 	 */SHILLEN_ORACLE(ClassType.MYSTIC, Race.DARKELF, DARK_MAGE, ClassLevel.FIRST, null, 1270),
 	/*
 	 * 43
-	 */SHILLEN_ELDER(
-						ClassType.MYSTIC,
-						Race.DARKELF,
-						SHILLEN_ORACLE,
-						ClassLevel.SECOND,
-						ClassType2.HEALER,
-						2721,
-						3172,
-						2821),
+	 */SHILLEN_ELDER(ClassType.MYSTIC, Race.DARKELF, SHILLEN_ORACLE, ClassLevel.SECOND, ClassType2.HEALER, 2721, 3172, 2821),
 
 	/* Orc Fighter 1st and 2nd class list */
 	/* 44 */ORC_FIGHTER(ClassType.FIGHTER, Race.ORC, null, ClassLevel.NONE, null),
@@ -199,15 +127,7 @@ public enum ClassId
 	/* Dwarf Fighter 1st and 2nd class list */
 	/* 53 */DWARVEN_FIGHTER(ClassType.FIGHTER, Race.DWARF, null, ClassLevel.NONE, null),
 	/* 54 */SCAVENGER(ClassType.FIGHTER, Race.DWARF, DWARVEN_FIGHTER, ClassLevel.FIRST, null, 1642),
-	/* 55 */BOUNTY_HUNTER(
-							ClassType.FIGHTER,
-							Race.DWARF,
-							SCAVENGER,
-							ClassLevel.SECOND,
-							ClassType2.ROGUE,
-							3119,
-							3238,
-							2809),
+	/* 55 */BOUNTY_HUNTER(ClassType.FIGHTER, Race.DWARF, SCAVENGER, ClassLevel.SECOND, ClassType2.ROGUE, 3119, 3238, 2809),
 	/* 56 */ARTISAN(ClassType.FIGHTER, Race.DWARF, DWARVEN_FIGHTER, ClassLevel.FIRST, null, 1635),
 	/*
 	 * 57
@@ -363,87 +283,27 @@ public enum ClassId
 
 	/* Human Death Knights */
 	/* 129 */H_DEATH_PILGRIM(196, ClassType.DEATH_KNIGHT, Race.HUMAN, null, ClassLevel.NONE, ClassType2.DEATH_KNIGHT),
-	/* 130 */H_DEATH_BLADE(
-							197,
-							ClassType.DEATH_KNIGHT,
-							Race.HUMAN,
-							H_DEATH_PILGRIM,
-							ClassLevel.FIRST,
-							ClassType2.DEATH_KNIGHT),
-	/* 131 */H_DEATH_MESSENGER(
-								198,
-								ClassType.DEATH_KNIGHT,
-								Race.HUMAN,
-								H_DEATH_BLADE,
-								ClassLevel.SECOND,
-								ClassType2.DEATH_KNIGHT),
+	/* 130 */H_DEATH_BLADE(197, ClassType.DEATH_KNIGHT, Race.HUMAN, H_DEATH_PILGRIM, ClassLevel.FIRST, ClassType2.DEATH_KNIGHT),
+	/* 131 */H_DEATH_MESSENGER(198, ClassType.DEATH_KNIGHT, Race.HUMAN, H_DEATH_BLADE, ClassLevel.SECOND, ClassType2.DEATH_KNIGHT),
 	/*
 	 * 132
-	 */H_DEATH_KNIGHT(
-						199,
-						ClassType.DEATH_KNIGHT,
-						Race.HUMAN,
-						H_DEATH_MESSENGER,
-						ClassLevel.THIRD,
-						ClassType2.DEATH_KNIGHT),
+	 */H_DEATH_KNIGHT(199, ClassType.DEATH_KNIGHT, Race.HUMAN, H_DEATH_MESSENGER, ClassLevel.THIRD, ClassType2.DEATH_KNIGHT),
 
 	/* Elf Death Knights */
 	/* 133 */E_DEATH_PILGRIM(200, ClassType.DEATH_KNIGHT, Race.ELF, null, ClassLevel.NONE, ClassType2.DEATH_KNIGHT),
-	/* 134 */E_DEATH_BLADE(
-							201,
-							ClassType.DEATH_KNIGHT,
-							Race.ELF,
-							E_DEATH_PILGRIM,
-							ClassLevel.FIRST,
-							ClassType2.DEATH_KNIGHT),
-	/* 135 */E_DEATH_MESSENGER(
-								202,
-								ClassType.DEATH_KNIGHT,
-								Race.ELF,
-								E_DEATH_BLADE,
-								ClassLevel.SECOND,
-								ClassType2.DEATH_KNIGHT),
+	/* 134 */E_DEATH_BLADE(201, ClassType.DEATH_KNIGHT, Race.ELF, E_DEATH_PILGRIM, ClassLevel.FIRST, ClassType2.DEATH_KNIGHT),
+	/* 135 */E_DEATH_MESSENGER(202, ClassType.DEATH_KNIGHT, Race.ELF, E_DEATH_BLADE, ClassLevel.SECOND, ClassType2.DEATH_KNIGHT),
 	/*
 	 * 136
-	 */E_DEATH_KNIGHT(
-						203,
-						ClassType.DEATH_KNIGHT,
-						Race.ELF,
-						E_DEATH_MESSENGER,
-						ClassLevel.THIRD,
-						ClassType2.DEATH_KNIGHT),
+	 */E_DEATH_KNIGHT(203, ClassType.DEATH_KNIGHT, Race.ELF, E_DEATH_MESSENGER, ClassLevel.THIRD, ClassType2.DEATH_KNIGHT),
 
 	/* Dark Elf Death Knights */
-	/* 137 */DE_DEATH_PILGRIM(
-								204,
-								ClassType.DEATH_KNIGHT,
-								Race.DARKELF,
-								null,
-								ClassLevel.NONE,
-								ClassType2.DEATH_KNIGHT),
-	/* 138 */DE_DEATH_BLADE(
-							205,
-							ClassType.DEATH_KNIGHT,
-							Race.DARKELF,
-							DE_DEATH_PILGRIM,
-							ClassLevel.FIRST,
-							ClassType2.DEATH_KNIGHT),
-	/* 139 */DE_DEATH_MESSENGER(
-								206,
-								ClassType.DEATH_KNIGHT,
-								Race.DARKELF,
-								DE_DEATH_BLADE,
-								ClassLevel.SECOND,
-								ClassType2.DEATH_KNIGHT),
+	/* 137 */DE_DEATH_PILGRIM(204, ClassType.DEATH_KNIGHT, Race.DARKELF, null, ClassLevel.NONE, ClassType2.DEATH_KNIGHT),
+	/* 138 */DE_DEATH_BLADE(205, ClassType.DEATH_KNIGHT, Race.DARKELF, DE_DEATH_PILGRIM, ClassLevel.FIRST, ClassType2.DEATH_KNIGHT),
+	/* 139 */DE_DEATH_MESSENGER(206, ClassType.DEATH_KNIGHT, Race.DARKELF, DE_DEATH_BLADE, ClassLevel.SECOND, ClassType2.DEATH_KNIGHT),
 	/*
 	 * 140
-	 */DE_DEATH_KNIGHT(
-						207,
-						ClassType.DEATH_KNIGHT,
-						Race.DARKELF,
-						DE_DEATH_MESSENGER,
-						ClassLevel.THIRD,
-						ClassType2.DEATH_KNIGHT),
+	 */DE_DEATH_KNIGHT(207, ClassType.DEATH_KNIGHT, Race.DARKELF, DE_DEATH_MESSENGER, ClassLevel.THIRD, ClassType2.DEATH_KNIGHT),
 
 	/* Sylphs */
 	/* 141 */SYLPH_GUNNER(208, ClassType.FIGHTER, Race.SYLPH, null, ClassLevel.NONE, ClassType2.ARCHER),
@@ -461,20 +321,8 @@ public enum ClassId
 
 	/* Vanguard Rider */
 	/* 150 */ORC_LANCER(217, ClassType.VANGUARD_RIDER, Race.ORC, null, ClassLevel.NONE, ClassType2.VANGUARD_RIDER),
-	/* 151 */WOLF_MASTER(
-							218,
-							ClassType.VANGUARD_RIDER,
-							Race.ORC,
-							ORC_LANCER,
-							ClassLevel.FIRST,
-							ClassType2.VANGUARD_RIDER),
-	/* 152 */DRAGOON(
-						219,
-						ClassType.VANGUARD_RIDER,
-						Race.ORC,
-						WOLF_MASTER,
-						ClassLevel.SECOND,
-						ClassType2.VANGUARD_RIDER),
+	/* 151 */WOLF_MASTER(218, ClassType.VANGUARD_RIDER, Race.ORC, ORC_LANCER, ClassLevel.FIRST, ClassType2.VANGUARD_RIDER),
+	/* 152 */DRAGOON(219, ClassType.VANGUARD_RIDER, Race.ORC, WOLF_MASTER, ClassLevel.SECOND, ClassType2.VANGUARD_RIDER),
 	/*
 	 * 153
 	 */VANGUARD_RIDER(220, ClassType.VANGUARD_RIDER, Race.ORC, DRAGOON, ClassLevel.THIRD, ClassType2.VANGUARD_RIDER);
@@ -484,7 +332,7 @@ public enum ClassId
 	private static final Map<Integer, ClassId> VALUES_MAP = new HashMap<>();
 	static
 	{
-		for (ClassId classId : VALUES)
+		for(ClassId classId : VALUES)
 		{
 			VALUES_MAP.put(classId.getId(), classId);
 		}
@@ -603,10 +451,10 @@ public enum ClassId
 
 	public boolean childOf(ClassId cid)
 	{
-		if (_parent == null)
+		if(_parent == null)
 			return false;
 
-		if (_parent == cid)
+		if(_parent == cid)
 			return true;
 
 		return _parent.childOf(cid);
@@ -622,12 +470,12 @@ public enum ClassId
 	{
 		return _parent;
 	}
-	
+
 	public final ClassId getParent()
 	{
 		return _parent;
 	}
-	
+
 	public final ClassId getFirstParent(int sex)
 	{
 		return _firstParent;
@@ -655,9 +503,9 @@ public enum ClassId
 
 	public final String getName(Player player)
 	{
-		if (isDummy())
+		if(isDummy())
 			return "N/A";
-		if (player == null)
+		if(player == null)
 			return new CustomMessage("l2s.gameserver.model.base.ClassId.name." + getId()).toString(Config.DEFAULT_LANG);
 		return new CustomMessage("l2s.gameserver.model.base.ClassId.name." + getId()).toString(player);
 	}
@@ -665,15 +513,15 @@ public enum ClassId
 	public int getClassMinLevel(boolean forNextClass)
 	{
 		ClassLevel classLevel = getClassLevel();
-		if (forNextClass)
+		if(forNextClass)
 		{
-			if (classLevel == ClassLevel.THIRD)
+			if(classLevel == ClassLevel.THIRD)
 				return -1;
 
 			classLevel = ClassLevel.VALUES[classLevel.ordinal() + 1];
 		}
 
-		switch (classLevel)
+		switch(classLevel)
 		{
 			case FIRST:
 				return 20;
@@ -697,24 +545,24 @@ public enum ClassId
 
 	public static boolean isKnight(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == PALADIN)
+			if(classId == PALADIN)
 				return true;
-			if (classId == PHOENIX_KNIGHT)
+			if(classId == PHOENIX_KNIGHT)
 				return true;
-			if (classId == DARK_AVENGER)
+			if(classId == DARK_AVENGER)
 				return true;
-			if (classId == HELL_KNIGHT)
+			if(classId == HELL_KNIGHT)
 				return true;
-			if (classId == TEMPLE_KNIGHT)
+			if(classId == TEMPLE_KNIGHT)
 				return true;
-			if (classId == EVAS_TEMPLAR)
+			if(classId == EVAS_TEMPLAR)
 				return true;
-			if (classId == SHILLEN_KNIGHT)
+			if(classId == SHILLEN_KNIGHT)
 				return true;
-			if (classId == SHILLIEN_TEMPLAR)
+			if(classId == SHILLIEN_TEMPLAR)
 				return true;
 		}
 		return false;
@@ -722,20 +570,20 @@ public enum ClassId
 
 	public static boolean isDagger(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == TREASURE_HUNTER)
+			if(classId == TREASURE_HUNTER)
 				return true;
-			if (classId == ADVENTURER)
+			if(classId == ADVENTURER)
 				return true;
-			if (classId == PLAIN_WALKER)
+			if(classId == PLAIN_WALKER)
 				return true;
-			if (classId == WIND_RIDER)
+			if(classId == WIND_RIDER)
 				return true;
-			if (classId == ABYSS_WALKER)
+			if(classId == ABYSS_WALKER)
 				return true;
-			if (classId == GHOST_HUNTER)
+			if(classId == GHOST_HUNTER)
 				return true;
 		}
 		return false;
@@ -743,20 +591,20 @@ public enum ClassId
 
 	public static boolean isBow(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == HAWKEYE)
+			if(classId == HAWKEYE)
 				return true;
-			if (classId == SAGITTARIUS)
+			if(classId == SAGITTARIUS)
 				return true;
-			if (classId == SILVER_RANGER)
+			if(classId == SILVER_RANGER)
 				return true;
-			if (classId == MOONLIGHT_SENTINEL)
+			if(classId == MOONLIGHT_SENTINEL)
 				return true;
-			if (classId == PHANTOM_RANGER)
+			if(classId == PHANTOM_RANGER)
 				return true;
-			if (classId == GHOST_SENTINEL)
+			if(classId == GHOST_SENTINEL)
 				return true;
 		}
 		return false;
@@ -764,16 +612,16 @@ public enum ClassId
 
 	public static boolean isFirearms(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == SYLPH_GUNNER)
+			if(classId == SYLPH_GUNNER)
 				return true;
-			if (classId == SHARPSHOOTER)
+			if(classId == SHARPSHOOTER)
 				return true;
-			if (classId == WIND_SNIPER)
+			if(classId == WIND_SNIPER)
 				return true;
-			if (classId == STORM_BLASTER)
+			if(classId == STORM_BLASTER)
 				return true;
 		}
 		return false;
@@ -781,16 +629,16 @@ public enum ClassId
 
 	public static boolean isDance(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == SWORDSINGER)
+			if(classId == SWORDSINGER)
 				return true;
-			if (classId == SWORD_MUSE)
+			if(classId == SWORD_MUSE)
 				return true;
-			if (classId == BLADEDANCER)
+			if(classId == BLADEDANCER)
 				return true;
-			if (classId == SPECTRAL_DANCER)
+			if(classId == SPECTRAL_DANCER)
 				return true;
 		}
 		return false;
@@ -798,20 +646,20 @@ public enum ClassId
 
 	public static boolean isWizard(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == SORCERER)
+			if(classId == SORCERER)
 				return true;
-			if (classId == ARCHMAGE)
+			if(classId == ARCHMAGE)
 				return true;
-			if (classId == SPELLSINGER)
+			if(classId == SPELLSINGER)
 				return true;
-			if (classId == MYSTIC_MUSE)
+			if(classId == MYSTIC_MUSE)
 				return true;
-			if (classId == SPELLHOWLER)
+			if(classId == SPELLHOWLER)
 				return true;
-			if (classId == STORM_SCREAMER)
+			if(classId == STORM_SCREAMER)
 				return true;
 		}
 		return false;
@@ -819,20 +667,20 @@ public enum ClassId
 
 	public static boolean isSummoner(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == WARLOCK)
+			if(classId == WARLOCK)
 				return true;
-			if (classId == ARCANA_LORD)
+			if(classId == ARCANA_LORD)
 				return true;
-			if (classId == ELEMENTAL_SUMMONER)
+			if(classId == ELEMENTAL_SUMMONER)
 				return true;
-			if (classId == ELEMENTAL_MASTER)
+			if(classId == ELEMENTAL_MASTER)
 				return true;
-			if (classId == PHANTOM_SUMMONER)
+			if(classId == PHANTOM_SUMMONER)
 				return true;
-			if (classId == SPECTRAL_MASTER)
+			if(classId == SPECTRAL_MASTER)
 				return true;
 		}
 		return false;
@@ -840,16 +688,16 @@ public enum ClassId
 
 	public static boolean isHalfHealer(int id)
 	{
-		if (id >= 0)
+		if(id >= 0)
 		{
 			ClassId classId = valueOf(id);
-			if (classId == ELDER)
+			if(classId == ELDER)
 				return true;
-			if (classId == EVAS_SAINT)
+			if(classId == EVAS_SAINT)
 				return true;
-			if (classId == SHILLEN_ELDER)
+			if(classId == SHILLEN_ELDER)
 				return true;
-			if (classId == SHILLIEN_SAINT)
+			if(classId == SHILLIEN_SAINT)
 				return true;
 		}
 		return false;
@@ -859,13 +707,13 @@ public enum ClassId
 	{
 		return getClassLevel().ordinal() + 1;
 	}
-	
+
 	/**
 	 * @return the child level of this Class (0=root, 1=child leve 1...)
 	 */
 	public int level()
 	{
-		if (_parent == null)
+		if(_parent == null)
 			return 0;
 		return 1 + _parent.level();
 	}

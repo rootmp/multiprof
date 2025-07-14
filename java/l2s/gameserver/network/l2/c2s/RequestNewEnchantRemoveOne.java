@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -24,17 +25,17 @@ public class RequestNewEnchantRemoveOne implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		final ItemInstance item1 = activeChar.getInventory().getItemByObjectId(_item1ObjectId);
-		if (item1 == null)
+		if(item1 == null)
 		{
 			activeChar.sendPacket(ExEnchantOneRemoveFail.STATIC);
 			return;
 		}
 
-		if (activeChar.getSynthesisItem1() != item1)
+		if(activeChar.getSynthesisItem1() != item1)
 		{
 			activeChar.sendPacket(ExEnchantOneRemoveFail.STATIC);
 			return;

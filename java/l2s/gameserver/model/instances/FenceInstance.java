@@ -48,10 +48,10 @@ public class FenceInstance extends GameObject
 		_length = length;
 		_state = state;
 
-		if (height > 1)
+		if(height > 1)
 		{
 			_heightFences = new int[height - 1];
-			for (int i = 0; i < _heightFences.length; i++)
+			for(int i = 0; i < _heightFences.length; i++)
 				_heightFences[i] = IdFactory.getInstance().getNextId();
 		}
 		else
@@ -86,7 +86,7 @@ public class FenceInstance extends GameObject
 
 		packets.add(new ExColosseumFenceInfoPacket(this));
 
-		for (int objId : _heightFences)
+		for(int objId : _heightFences)
 			packets.add(new ExColosseumFenceInfoPacket(objId, getX(), getY(), getZ(), getWidth(), getLength(), getState().getClientId()));
 
 		return packets;
@@ -129,10 +129,10 @@ public class FenceInstance extends GameObject
 
 		packets.add(new ExColosseumFenceInfoPacket(this));
 
-		for (int objId : _heightFences)
+		for(int objId : _heightFences)
 			packets.add(new ExColosseumFenceInfoPacket(objId, getX(), getY(), getZ(), getWidth(), getLength(), getState().getClientId()));
 
-		for (Player player : World.getAroundObservers(this))
+		for(Player player : World.getAroundObservers(this))
 			player.sendPacket(packets);
 	}
 
@@ -143,7 +143,7 @@ public class FenceInstance extends GameObject
 
 	public void setState(FenceState state)
 	{
-		if (_state == state)
+		if(_state == state)
 			return;
 
 		boolean geoControlEnabled = isGeoControlEnabled();
@@ -154,9 +154,9 @@ public class FenceInstance extends GameObject
 
 		FencesDAO.getInstance().update(this);
 
-		if (!geoControlEnabled && isGeoControlEnabled())
+		if(!geoControlEnabled && isGeoControlEnabled())
 			activateGeoControl();
-		else if (geoControlEnabled && !isGeoControlEnabled())
+		else if(geoControlEnabled && !isGeoControlEnabled())
 			deactivateGeoControl();
 	}
 

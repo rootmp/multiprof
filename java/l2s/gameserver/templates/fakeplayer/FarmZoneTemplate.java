@@ -74,25 +74,25 @@ public class FarmZoneTemplate
 
 	public boolean checkCondition(Player player)
 	{
-		if (player.getLevel() < _minLevel)
+		if(player.getLevel() < _minLevel)
 			return false;
-		if (player.getLevel() >= _maxLevel)
+		if(player.getLevel() >= _maxLevel)
 			return false;
-		if (_availableClasses != null && !_availableClasses.isEmpty() && !_availableClasses.contains(player.getClassId()))
+		if(_availableClasses != null && !_availableClasses.isEmpty() && !_availableClasses.contains(player.getClassId()))
 			return false;
-		if (_availableRaces != null && !_availableRaces.isEmpty() && !_availableRaces.contains(player.getRace()))
+		if(_availableRaces != null && !_availableRaces.isEmpty() && !_availableRaces.contains(player.getRace()))
 			return false;
-		if (_availableTypes != null && !_availableTypes.isEmpty() && !_availableTypes.contains(player.getRace()))
+		if(_availableTypes != null && !_availableTypes.isEmpty() && !_availableTypes.contains(player.getRace()))
 			return false;
 		return true;
 	}
 
 	public synchronized List<Zone> getZones()
 	{
-		if (zones == null)
+		if(zones == null)
 		{
 			zones = new ArrayList<>(_zoneTemplates.size());
-			for (ZoneTemplate zoneTemplate : _zoneTemplates)
+			for(ZoneTemplate zoneTemplate : _zoneTemplates)
 			{
 				Zone zone = new Zone(zoneTemplate);
 				zone.setReflection(ReflectionManager.MAIN);
@@ -132,7 +132,7 @@ public class FarmZoneTemplate
 	public static FarmZoneTemplate parse(FakePlayerActionsHolder actionsHolder, Element element)
 	{
 		Element tempElement = element.element("zones");
-		if (tempElement == null)
+		if(tempElement == null)
 		{
 			_log.warn("Cannot find \"zones\" element!");
 			return null;
@@ -145,30 +145,30 @@ public class FarmZoneTemplate
 		Set<ClassId> availableClasses = null;
 
 		String classes = element.attributeValue("classes");
-		if (classes != null)
+		if(classes != null)
 		{
 			availableClasses = new HashSet<ClassId>();
-			for (String c : classes.split("[\\s,;]+"))
+			for(String c : classes.split("[\\s,;]+"))
 				availableClasses.add(ClassId.valueOf(c.toUpperCase()));
 		}
 
 		Set<ClassType> availableTypes = null;
 
 		String types = element.attributeValue("types");
-		if (types != null)
+		if(types != null)
 		{
 			availableTypes = new HashSet<ClassType>();
-			for (String t : types.split("[\\s,;]+"))
+			for(String t : types.split("[\\s,;]+"))
 				availableTypes.add(ClassType.valueOf(t.toUpperCase()));
 		}
 
 		Set<Race> availableRaces = null;
 
 		String races = element.attributeValue("races");
-		if (races != null)
+		if(races != null)
 		{
 			availableRaces = new HashSet<Race>();
-			for (String r : races.split("[\\s,;]+"))
+			for(String r : races.split("[\\s,;]+"))
 				availableRaces.add(Race.valueOf(r.toUpperCase()));
 		}
 
@@ -176,7 +176,7 @@ public class FarmZoneTemplate
 		GoToTownActions goToTownAction = null;
 
 		List<ZoneTemplate> zoneTemplates = new ArrayList<ZoneTemplate>();
-		for (Iterator<Element> i1 = tempElement.elementIterator("zone"); i1.hasNext();)
+		for(Iterator<Element> i1 = tempElement.elementIterator("zone"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
 			try
@@ -184,7 +184,7 @@ public class FarmZoneTemplate
 				ZoneTemplate zoneTemplate;
 
 				String zoneName = e1.attributeValue("name");
-				if (zoneName != null)
+				if(zoneName != null)
 					zoneTemplate = ZoneHolder.getInstance().getTemplate(zoneName);
 				else
 				{
@@ -194,55 +194,55 @@ public class FarmZoneTemplate
 					zoneTemplate = ZoneParser.parseZone(e1, zoneDat);
 				}
 
-				if (zoneTemplate != null)
+				if(zoneTemplate != null)
 					zoneTemplates.add(zoneTemplate);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("Error while parse zone: ", e);
 				return null;
 			}
 		}
 
-		if (zoneTemplates.isEmpty())
+		if(zoneTemplates.isEmpty())
 		{
 			_log.warn("Zones is empty! Please add one or more zones for farm zone.");
 			return null;
 		}
 
 		List<Location> spawnPoints = new ArrayList<Location>();
-		for (Iterator<Element> i1 = tempElement.elementIterator("spawn_points"); i1.hasNext();)
+		for(Iterator<Element> i1 = tempElement.elementIterator("spawn_points"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
-			for (Iterator<Element> i2 = e1.elementIterator("coords"); i2.hasNext();)
+			for(Iterator<Element> i2 = e1.elementIterator("coords"); i2.hasNext();)
 			{
 				Element e2 = i2.next();
 				spawnPoints.add(Location.parseLoc(e2.attribute("loc").getValue()));
 			}
 		}
 
-		if (spawnPoints.isEmpty())
+		if(spawnPoints.isEmpty())
 		{
 			_log.warn("Spawn points for zones is empty! Please add one or more spawn points for farm zone.");
 			return null;
 		}
 
-		if (actionsHolder == null)
+		if(actionsHolder == null)
 			actionsHolder = new FakePlayerActionsHolder();
 
 		tempElement = element.element("on_obtain_max_level");
-		if (tempElement != null)
+		if(tempElement != null)
 			onObtainMaxLevelAction = OrdinaryActions.parse(actionsHolder, tempElement);
 
 		tempElement = element.element("go_to_town");
-		if (tempElement != null)
+		if(tempElement != null)
 			goToTownAction = GoToTownActions.parse(actionsHolder, tempElement);
 
 		IntSet farmMonsters = new HashIntSet();
-		for (Iterator<Element> i1 = element.elementIterator("farm_monsters"); i1.hasNext();)
+		for(Iterator<Element> i1 = element.elementIterator("farm_monsters"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
-			for (Iterator<Element> i2 = e1.elementIterator("npc"); i2.hasNext();)
+			for(Iterator<Element> i2 = e1.elementIterator("npc"); i2.hasNext();)
 			{
 				Element e2 = i2.next();
 				farmMonsters.add(Integer.parseInt(e2.attributeValue("id")));
@@ -250,10 +250,10 @@ public class FarmZoneTemplate
 		}
 
 		IntSet ignoredMonsters = new HashIntSet();
-		for (Iterator<Element> i1 = element.elementIterator("ignored_monsters"); i1.hasNext();)
+		for(Iterator<Element> i1 = element.elementIterator("ignored_monsters"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
-			for (Iterator<Element> i2 = e1.elementIterator("npc"); i2.hasNext();)
+			for(Iterator<Element> i2 = e1.elementIterator("npc"); i2.hasNext();)
 			{
 				Element e2 = i2.next();
 				ignoredMonsters.add(Integer.parseInt(e2.attributeValue("id")));
@@ -262,7 +262,7 @@ public class FarmZoneTemplate
 
 		FarmZoneTemplate template = new FarmZoneTemplate(minLevel, maxLevel, zoneTemplates, spawnPoints, onObtainMaxLevelAction, goToTownAction, availableClasses, availableTypes, availableRaces, farmMonsters, ignoredMonsters);
 
-		for (Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
 		{
 			Element e = iterator.next();
 			int actionId = Integer.parseInt(e.attributeValue("id"));

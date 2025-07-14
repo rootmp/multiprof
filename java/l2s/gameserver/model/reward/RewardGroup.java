@@ -35,10 +35,10 @@ public class RewardGroup implements Cloneable
 
 		_time = time;
 
-		if (_time != null)
+		if(_time != null)
 		{
 			int[][] timeArr = StringArrayUtils.stringToIntArray2X(_time, "-", ":");
-			if (timeArr.length > 0)
+			if(timeArr.length > 0)
 			{
 				_startHour = timeArr[0].length > 0 ? timeArr[0][0] : 0;
 				_startMinute = timeArr[0].length > 1 ? timeArr[0][1] : 0;
@@ -49,7 +49,7 @@ public class RewardGroup implements Cloneable
 				_startMinute = 0;
 			}
 
-			if (timeArr.length > 1)
+			if(timeArr.length > 1)
 			{
 				_endHour = timeArr[1].length > 0 ? timeArr[1][0] : 23;
 				_endMinute = timeArr[1].length > 1 ? timeArr[1][1] : 59;
@@ -95,22 +95,22 @@ public class RewardGroup implements Cloneable
 		c.setTimeInMillis(timeInMillis);
 		int hour = c.get(Calendar.HOUR_OF_DAY);
 		int minute = c.get(Calendar.MINUTE);
-		if (_startHour <= _endHour)
+		if(_startHour <= _endHour)
 			return checkTime(_startHour, _startMinute, _endHour, _endMinute, hour, minute);
-		if (checkTime(_startHour, _startMinute, 23, 59, hour, minute))
+		if(checkTime(_startHour, _startMinute, 23, 59, hour, minute))
 			return true;
-		if (checkTime(0, 0, _endHour, _endMinute, hour, minute))
+		if(checkTime(0, 0, _endHour, _endMinute, hour, minute))
 			return true;
 		return false;
 	}
 
 	private static boolean checkTime(int minHour, int minMinute, int maxHour, int maxMinute, int currentHour, int currentMinute)
 	{
-		if (currentHour > minHour && currentHour < maxHour)
+		if(currentHour > minHour && currentHour < maxHour)
 			return true;
-		if (currentHour == minHour && currentMinute >= minMinute && (currentHour < maxHour || currentMinute <= maxMinute))
+		if(currentHour == minHour && currentMinute >= minMinute && (currentHour < maxHour || currentMinute <= maxMinute))
 			return true;
-		if ((currentHour > minHour || currentMinute >= minMinute) && currentHour == maxHour && currentMinute <= maxMinute)
+		if((currentHour > minHour || currentMinute >= minMinute) && currentHour == maxHour && currentMinute <= maxMinute)
 			return true;
 		return false;
 	}
@@ -127,7 +127,7 @@ public class RewardGroup implements Cloneable
 
 	public void addData(RewardData item)
 	{
-		if (!item.getItem().isAdena())
+		if(!item.getItem().isAdena())
 			_isAdena = false;
 		_items.add(item);
 	}
@@ -147,7 +147,7 @@ public class RewardGroup implements Cloneable
 	public RewardGroup clone()
 	{
 		RewardGroup ret = new RewardGroup(_chance, _time);
-		for (RewardData i : _items)
+		for(RewardData i : _items)
 			ret.addData(i.clone());
 		return ret;
 	}
@@ -158,26 +158,30 @@ public class RewardGroup implements Cloneable
 	 */
 	public List<RewardItem> roll(RewardType type, Player player, double penaltyMod, NpcInstance npc)
 	{
-		if (!checkTime(System.currentTimeMillis()))
+		if(!checkTime(System.currentTimeMillis()))
 			return Collections.emptyList();
 
-		switch (type)
+		switch(type)
 		{
 			case NOT_RATED_GROUPED:
 			case NOT_RATED_NOT_GROUPED:
 				return rollItems(penaltyMod, 1.0, 1.0);
 			case EVENT_GROUPED:
 				// TODO: Дропать ли с РБ и миньонов?
-				if (npc != null && npc.getReflection().isDefault() && !npc.isRaid() && (npc.getLeader() == null || !npc.getLeader().isRaid()))
-					return rollItems(penaltyMod * player.getDropChanceMod() / Config.DROP_CHANCE_MODIFIER, player.getRateItems() / Config.RATE_DROP_ITEMS_BY_LVL[player.getLevel()], player.getDropCountMod() / Config.DROP_COUNT_MODIFIER);
+				if(npc != null && npc.getReflection().isDefault() && !npc.isRaid() && (npc.getLeader() == null || !npc.getLeader().isRaid()))
+					return rollItems(penaltyMod * player.getDropChanceMod() / Config.DROP_CHANCE_MODIFIER, player.getRateItems()
+							/ Config.RATE_DROP_ITEMS_BY_LVL[player.getLevel()], player.getDropCountMod() / Config.DROP_COUNT_MODIFIER);
 				return Collections.emptyList();
 			case SWEEP:
-				return rollItems(penaltyMod * player.getSpoilChanceMod(), player.getRateSpoil() * (npc != null ? npc.getStat().calc(Stats.SPOIL_RATE_MULTIPLIER, 1., player, null) : 1.), player.getSpoilCountMod());
+				return rollItems(penaltyMod * player.getSpoilChanceMod(), player.getRateSpoil()
+						* (npc != null ? npc.getStat().calc(Stats.SPOIL_RATE_MULTIPLIER, 1., player, null) : 1.), player.getSpoilCountMod());
 			case RATED_GROUPED:
-				if (isAdena())
-					return rollAdena(penaltyMod, player.getRateAdena() * (npc != null ? npc.getStat().calc(Stats.ADENA_RATE_MULTIPLIER, 1., player, null) : 1.));
+				if(isAdena())
+					return rollAdena(penaltyMod, player.getRateAdena()
+							* (npc != null ? npc.getStat().calc(Stats.ADENA_RATE_MULTIPLIER, 1., player, null) : 1.));
 
-				return rollItems(penaltyMod * npc.getDropChanceMod(player), (npc != null ? npc.getRewardRate(player) * npc.getStat().calc(Stats.DROP_RATE_MULTIPLIER, 1., player, null) : player.getRateItems()), npc.getDropCountMod(player));
+				return rollItems(penaltyMod * npc.getDropChanceMod(player), (npc != null ? npc.getRewardRate(player)
+						* npc.getStat().calc(Stats.DROP_RATE_MULTIPLIER, 1., player, null) : player.getRateItems()), npc.getDropCountMod(player));
 			default:
 				return Collections.emptyList();
 		}
@@ -185,35 +189,35 @@ public class RewardGroup implements Cloneable
 
 	private List<RewardItem> rollAdena(double mod, double rate)
 	{
-		if (notRate())
+		if(notRate())
 		{
 			mod = Math.min(mod, 1.);
 			rate = 1.;
 		}
 
-		if (mod > 0 && rate > 0)
+		if(mod > 0 && rate > 0)
 		{
-			if (getChance() > Rnd.get(RewardList.MAX_CHANCE))
+			if(getChance() > Rnd.get(RewardList.MAX_CHANCE))
 			{
 				List<RewardItem> rolledItems = new ArrayList<RewardItem>();
-				for (RewardData data : getItems())
+				for(RewardData data : getItems())
 				{
 					RewardItem item = data.rollAdena(mod, rate);
-					if (item != null)
+					if(item != null)
 						rolledItems.add(item);
 				}
 
-				if (rolledItems.isEmpty())
+				if(rolledItems.isEmpty())
 					return Collections.emptyList();
 
 				List<RewardItem> result = new ArrayList<RewardItem>();
-				for (int i = 0; i < Config.MAX_DROP_ITEMS_FROM_ONE_GROUP; i++)
+				for(int i = 0; i < Config.MAX_DROP_ITEMS_FROM_ONE_GROUP; i++)
 				{
 					RewardItem rolledItem = Rnd.get(rolledItems);
-					if (rolledItems.remove(rolledItem))
+					if(rolledItems.remove(rolledItem))
 						result.add(rolledItem);
 
-					if (rolledItems.isEmpty())
+					if(rolledItems.isEmpty())
 						break;
 				}
 				return result;
@@ -224,16 +228,16 @@ public class RewardGroup implements Cloneable
 
 	private List<RewardItem> rollItems(double mod, double rate, double countMod)
 	{
-		if (notRate())
+		if(notRate())
 		{
 			mod = Math.min(mod, 1.);
 			rate = 1.;
 		}
 
-		if (mod > 0 && rate > 0)
+		if(mod > 0 && rate > 0)
 		{
 			double chance = getChance() * mod;
-			if (chance > RewardList.MAX_CHANCE)
+			if(chance > RewardList.MAX_CHANCE)
 			{
 				mod = (chance - RewardList.MAX_CHANCE) / getChance() + 1;
 				chance = RewardList.MAX_CHANCE;
@@ -241,49 +245,49 @@ public class RewardGroup implements Cloneable
 			else
 				mod = 1.;
 
-			if (chance > 0)
+			if(chance > 0)
 			{
 				int rolledCount = 0;
 				int mult = (int) Math.ceil(rate);
-				if (chance >= RewardList.MAX_CHANCE)
+				if(chance >= RewardList.MAX_CHANCE)
 				{
 					rolledCount = (int) rate;
-					if (mult > rate)
+					if(mult > rate)
 					{
-						if (chance * (rate - (mult - 1)) > Rnd.get(RewardList.MAX_CHANCE))
+						if(chance * (rate - (mult - 1)) > Rnd.get(RewardList.MAX_CHANCE))
 							rolledCount++;
 					}
 				}
 				else
 				{
-					for (int n = 0; n < mult; n++) // TODO: Реально ли оптимизировать без цикла?
+					for(int n = 0; n < mult; n++) // TODO: Реально ли оптимизировать без цикла?
 					{
-						if (chance * Math.min(rate - n, 1.0) > Rnd.get(RewardList.MAX_CHANCE))
+						if(chance * Math.min(rate - n, 1.0) > Rnd.get(RewardList.MAX_CHANCE))
 							rolledCount++;
 					}
 				}
 
-				if (rolledCount > 0)
+				if(rolledCount > 0)
 				{
 					List<RewardItem> rolledItems = new ArrayList<RewardItem>();
-					for (RewardData data : getItems())
+					for(RewardData data : getItems())
 					{
 						RewardItem item = data.rollItem(mod, rolledCount, countMod);
-						if (item != null)
+						if(item != null)
 							rolledItems.add(item);
 					}
 
-					if (rolledItems.isEmpty())
+					if(rolledItems.isEmpty())
 						return Collections.emptyList();
 
 					List<RewardItem> result = new ArrayList<RewardItem>();
-					for (int i = 0; i < Config.MAX_DROP_ITEMS_FROM_ONE_GROUP; i++)
+					for(int i = 0; i < Config.MAX_DROP_ITEMS_FROM_ONE_GROUP; i++)
 					{
 						RewardItem rolledItem = Rnd.get(rolledItems);
-						if (rolledItems.remove(rolledItem))
+						if(rolledItems.remove(rolledItem))
 							result.add(rolledItem);
 
-						if (rolledItems.isEmpty())
+						if(rolledItems.isEmpty())
 							break;
 					}
 					return result;

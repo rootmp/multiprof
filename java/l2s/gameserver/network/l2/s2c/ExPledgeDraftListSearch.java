@@ -24,7 +24,7 @@ public class ExPledgeDraftListSearch implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_waiters.size());
-		for (ClanSearchPlayer waiter : _waiters)
+		for(ClanSearchPlayer waiter : _waiters)
 		{
 			packetWriter.writeD(waiter.getCharId());
 			packetWriter.writeS(waiter.getName());

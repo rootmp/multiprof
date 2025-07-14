@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c.collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 
 /**
  * @author nexvill
@@ -23,7 +23,7 @@ public class ExCollectionUpdateFavorite implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-		if (_add)
+		if(_add)
 			_player.addCollectionFavorite(_collectionId);
 		else
 			_player.removeCollectionFavorite(_collectionId);

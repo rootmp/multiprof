@@ -22,7 +22,7 @@ public class BitSetIDFactory extends IdFactory
 		@Override
 		public void run()
 		{
-			if (reachingBitSetCapacity())
+			if(reachingBitSetCapacity())
 				increaseBitSetCapacity();
 		}
 	}
@@ -43,10 +43,10 @@ public class BitSetIDFactory extends IdFactory
 			freeIds.clear();
 			freeIdCount = new AtomicInteger(FREE_OBJECT_ID_SIZE);
 
-			for (int usedObjectId : extractUsedObjectIDTable())
+			for(int usedObjectId : extractUsedObjectIDTable())
 			{
 				int objectID = usedObjectId - FIRST_OID;
-				if (objectID < 0)
+				if(objectID < 0)
 				{
 					_log.warn("Object ID " + usedObjectId + " in DB is less than minimum ID of " + FIRST_OID);
 					continue;
@@ -60,7 +60,7 @@ public class BitSetIDFactory extends IdFactory
 
 			_log.info("IdFactory: " + freeIds.size() + " id's available.");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			initialized = false;
 			_log.error("BitSet ID Factory could not be initialized correctly!", e);
@@ -70,7 +70,7 @@ public class BitSetIDFactory extends IdFactory
 	@Override
 	public synchronized void releaseId(int objectID)
 	{
-		if (objectID - FIRST_OID > -1)
+		if(objectID - FIRST_OID > -1)
 		{
 			freeIds.clear(objectID - FIRST_OID);
 			freeIdCount.incrementAndGet();
@@ -89,10 +89,10 @@ public class BitSetIDFactory extends IdFactory
 
 		int nextFree = freeIds.nextClearBit(newID);
 
-		if (nextFree < 0)
+		if(nextFree < 0)
 			nextFree = freeIds.nextClearBit(0);
-		if (nextFree < 0)
-			if (freeIds.size() < FREE_OBJECT_ID_SIZE)
+		if(nextFree < 0)
+			if(freeIds.size() < FREE_OBJECT_ID_SIZE)
 				increaseBitSetCapacity();
 			else
 				throw new NullPointerException("Ran out of valid Id's.");

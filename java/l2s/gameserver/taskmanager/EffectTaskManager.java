@@ -19,7 +19,7 @@ public class EffectTaskManager extends SteppingRunnableQueueManager
 	private final static EffectTaskManager[] _instances = new EffectTaskManager[10 * Config.EFFECT_TASK_MANAGER_COUNT];
 	static
 	{
-		for (int i = 0; i < _instances.length; i++)
+		for(int i = 0; i < _instances.length; i++)
 			_instances[i] = new EffectTaskManager();
 	}
 
@@ -33,10 +33,9 @@ public class EffectTaskManager extends SteppingRunnableQueueManager
 		super(TICK);
 		ThreadPoolManager.getInstance().scheduleAtFixedRate(this, Rnd.get(TICK), TICK);
 		// Очистка каждые 30 секунд со сдвигом
-		ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
+		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 			purge();
-			if (_randomizer > 10000000)
+			if(_randomizer > 10000000)
 				_randomizer = 0;
 		}, 30000L + 1000L * _randomizer++, 30000L);
 	}

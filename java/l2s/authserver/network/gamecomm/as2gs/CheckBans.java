@@ -27,7 +27,7 @@ public class CheckBans extends SendablePacket
 		writeC(0x07);
 		writeC(bindType.ordinal());
 		writeH(bans.size());
-		for (Map.Entry<String, BanInfo> entry : bans.entrySet())
+		for(Map.Entry<String, BanInfo> entry : bans.entrySet())
 		{
 			writeS(entry.getKey());
 			writeD(entry.getValue().getEndTime());

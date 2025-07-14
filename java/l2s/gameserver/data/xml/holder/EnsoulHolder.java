@@ -17,31 +17,31 @@ public class EnsoulHolder extends AbstractHolder
 {
 	private static final EnsoulHolder _instance = new EnsoulHolder();
 
-  private Map<Long, Map<Integer, EnsoulFee>> _ensoulsFee = new HashMap<>();
+	private Map<Long, Map<Integer, EnsoulFee>> _ensoulsFee = new HashMap<>();
 
 	private TIntObjectMap<Ensoul> _ensouls = new TIntObjectHashMap<Ensoul>();
 	private final TIntObjectMap<Ensoul> _ensoulsByItemId = new TIntObjectHashMap<>();
-	
+
 	public static EnsoulHolder getInstance()
 	{
 		return _instance;
 	}
 
-  public void addEnsoulFee(long bodyPart, List<Integer> optionIds, EnsoulFee ensoulFee) 
-  {
-    Map<Integer, EnsoulFee> entityFeeMap = _ensoulsFee.computeIfAbsent(bodyPart, k -> new HashMap<>());
-    for (Integer optionId : optionIds) 
-       entityFeeMap.put(optionId, ensoulFee);
-  }
+	public void addEnsoulFee(long bodyPart, List<Integer> optionIds, EnsoulFee ensoulFee)
+	{
+		Map<Integer, EnsoulFee> entityFeeMap = _ensoulsFee.computeIfAbsent(bodyPart, k -> new HashMap<>());
+		for(Integer optionId : optionIds)
+			entityFeeMap.put(optionId, ensoulFee);
+	}
 
-  public EnsoulFee getEnsoulFee(long bodyPart, int optionId) 
-  {
-    Map<Integer, EnsoulFee> entityFeeMap = _ensoulsFee.get(bodyPart);
-    if (entityFeeMap != null) 
-        return entityFeeMap.get(optionId);
-     else 
-        return null;
-  }
+	public EnsoulFee getEnsoulFee(long bodyPart, int optionId)
+	{
+		Map<Integer, EnsoulFee> entityFeeMap = _ensoulsFee.get(bodyPart);
+		if(entityFeeMap != null)
+			return entityFeeMap.get(optionId);
+		else
+			return null;
+	}
 
 	public void addEnsoul(Ensoul ensoul)
 	{
@@ -58,7 +58,7 @@ public class EnsoulHolder extends AbstractHolder
 	{
 		return _ensoulsByItemId.get(itemId) != null;
 	}
-	
+
 	@Override
 	public int size()
 	{

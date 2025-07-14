@@ -32,16 +32,16 @@ public class MoveToNpcAction extends MoveAction
 		NpcInstance npc = null;
 
 		List<NpcInstance> npcs = GameObjectsStorage.getNpcs(true, _npcId);
-		for (NpcInstance n : npcs)
+		for(NpcInstance n : npcs)
 		{
-			if (npc == null || n.getDistance(player) < npc.getDistance(player))
+			if(npc == null || n.getDistance(player) < npc.getDistance(player))
 				npc = n;
 		}
 
-		if (npc != null)
+		if(npc != null)
 		{
 			int range = player.getInteractionDistance(npc);
-			if (player.isInRangeZ(npc, range + (player.isMovementDisabled() ? 32 : 16)))
+			if(player.isInRangeZ(npc, range + (player.isMovementDisabled() ? 32 : 16)))
 			{
 				player.doInteract(npc);
 				player.getAI().setIntention(AI_INTENTION_ACTIVE);
@@ -49,10 +49,10 @@ public class MoveToNpcAction extends MoveAction
 			else
 			{
 				Location loc = npc.getLoc();
-				if (player.getDistance(loc) > 2000 || !player.getMovement().moveToLocation(loc, range, false))
+				if(player.getDistance(loc) > 2000 || !player.getMovement().moveToLocation(loc, range, false))
 				{
 					Location newLoc = Location.findFrontPosition(npc, player, range, range);
-					if (newLoc == null)
+					if(newLoc == null)
 						return false;
 					player.teleToLocation(loc, 0, 0);
 				}

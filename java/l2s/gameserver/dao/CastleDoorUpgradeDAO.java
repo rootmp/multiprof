@@ -40,10 +40,10 @@ public class CastleDoorUpgradeDAO
 			statement.setInt(1, doorId);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 				return rset.getInt("hp");
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDoorUpgradeDAO:load(int): " + e, e);
 		}
@@ -67,7 +67,7 @@ public class CastleDoorUpgradeDAO
 			statement.setInt(2, val);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDoorUpgradeDAO:insert(int, int): " + e, e);
 		}
@@ -88,7 +88,7 @@ public class CastleDoorUpgradeDAO
 			statement.setInt(1, uId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDoorUpgradeDAO:delete(int): " + e, e);
 		}

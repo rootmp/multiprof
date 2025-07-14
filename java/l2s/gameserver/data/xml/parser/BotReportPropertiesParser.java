@@ -48,42 +48,43 @@ public class BotReportPropertiesParser extends AbstractParser<BotReportPropertie
 		Config.BOTREPORT_REPORTS_RESET_TIME = "00 00 * * *";
 		Config.BOTREPORT_ALLOW_REPORTS_FROM_SAME_CLAN_MEMBERS = false;
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("config"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("config"); iterator.hasNext();)
 		{
 			Element configElement = iterator.next();
 
 			String attributeValue = configElement.attributeValue("enabled");
-			if (attributeValue != null)
+			if(attributeValue != null)
 				Config.BOTREPORT_ENABLED = Boolean.parseBoolean(attributeValue);
 
 			attributeValue = configElement.attributeValue("report_delay");
-			if (attributeValue != null)
+			if(attributeValue != null)
 				Config.BOTREPORT_REPORT_DELAY = Integer.parseInt(attributeValue);
 
 			attributeValue = configElement.attributeValue("reports_reset_time");
-			if (attributeValue != null)
+			if(attributeValue != null)
 				Config.BOTREPORT_REPORTS_RESET_TIME = attributeValue;
 
 			attributeValue = configElement.attributeValue("allow_reports_from_same_clan");
-			if (attributeValue != null)
+			if(attributeValue != null)
 				Config.BOTREPORT_ALLOW_REPORTS_FROM_SAME_CLAN_MEMBERS = Boolean.parseBoolean(attributeValue);
 		}
 
-		if (!Config.BOTREPORT_ENABLED)
+		if(!Config.BOTREPORT_ENABLED)
 			return;
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("punishments"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("punishments"); iterator.hasNext();)
 		{
 			Element punishmentsElement = iterator.next();
 
-			for (Iterator<Element> punishmentsIterator = punishmentsElement.elementIterator("punishment"); punishmentsIterator.hasNext();)
+			for(Iterator<Element> punishmentsIterator = punishmentsElement.elementIterator("punishment"); punishmentsIterator.hasNext();)
 			{
 				Element punishmentElement = punishmentsIterator.next();
 
 				int need_report_count = Integer.parseInt(punishmentElement.attributeValue("need_report_count"));
 				int skill_id = Integer.parseInt(punishmentElement.attributeValue("skill_id"));
 				int skill_level = Integer.parseInt(punishmentElement.attributeValue("skill_level"));
-				SystemMsg message = punishmentElement.attributeValue("message_id") == null ? null : SystemMsg.valueOf(Integer.parseInt(punishmentElement.attributeValue("message_id")));
+				SystemMsg message = punishmentElement.attributeValue("message_id")
+						== null ? null : SystemMsg.valueOf(Integer.parseInt(punishmentElement.attributeValue("message_id")));
 
 				getHolder().addBotPunishment(new BotPunishment(need_report_count, skill_id, skill_level, message));
 			}

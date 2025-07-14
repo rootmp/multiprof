@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
@@ -35,8 +35,8 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 		ItemInstance[] items = buyer.getInventory().getItems();
 		Arrays.sort(items, ItemClassComparator.getInstance());
 		TradeItem bi;
-		for (ItemInstance item : items)
-			if (item.canBePrivateStore(buyer) && item.getItemId() != ItemTemplate.ITEM_ID_ADENA)
+		for(ItemInstance item : items)
+			if(item.canBePrivateStore(buyer) && item.getItemId() != ItemTemplate.ITEM_ID_ADENA)
 			{
 				_buyList.add(bi = new TradeItem(item, item.getTemplate().isBlocked(buyer, item)));
 				bi.setObjectId(0);
@@ -47,12 +47,12 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeD(_buyerId);
 			packetWriter.writeQ(_adena);
 			packetWriter.writeD(_buyList0.size());// count for any items already added for sell
-			for (TradeItem bi : _buyList0)
+			for(TradeItem bi : _buyList0)
 			{
 				writeItemInfo(packetWriter, bi);
 				packetWriter.writeQ(bi.getOwnersPrice());
@@ -61,11 +61,11 @@ public class PrivateStoreBuyManageList implements IClientOutgoingPacket
 			}
 			packetWriter.writeD(_buyList.size());
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeD(_buyList.size());
 			packetWriter.writeD(_buyList.size());// for potential sells
-			for (TradeItem bi : _buyList)
+			for(TradeItem bi : _buyList)
 			{
 				writeItemInfo(packetWriter, bi);
 				packetWriter.writeQ(bi.getStorePrice());

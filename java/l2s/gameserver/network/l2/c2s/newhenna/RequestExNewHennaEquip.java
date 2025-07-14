@@ -18,7 +18,7 @@ public class RequestExNewHennaEquip implements IClientIncomingPacket
 	private int _slotId;
 	private int _symbolId;
 	private int _nCostItemId;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -32,41 +32,42 @@ public class RequestExNewHennaEquip implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.getHennaEmptySlots() == 0)
+		if(player.getHennaEmptySlots() == 0)
 		{
 			player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_CANNOT_BE_DRAWN));
 			client.sendPacket(ActionFailPacket.STATIC);
 			return;
 		}
-		
-		ItemInstance  item = player.getInventory().getItemByObjectId(_symbolId);
-		if (item == null)
+
+		ItemInstance item = player.getInventory().getItemByObjectId(_symbolId);
+		if(item == null)
 		{
 			player.sendPacket(ActionFailPacket.STATIC);
 			player.sendPacket(new NewHennaEquip(_slotId, 0, false));
 			return;
 		}
-		
+
 		final Henna henna = DyeDataHolder.getInstance().getHennaByItemId(item.getItemId());
-		if (henna == null)
+		if(henna == null)
 		{
 			client.sendPacket(ActionFailPacket.STATIC);
 			player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_CANNOT_BE_DRAWN));
 			return;
 		}
 
-		final long count = player.getInventory().getInventoryItemCount(henna.getDyeItemId(), -1,false);
-		
+		final long count = player.getInventory().getInventoryItemCount(henna.getDyeItemId(), -1, false);
+
 		ItemRequiredId _wearFee = henna.getWearFee(_nCostItemId);
-		
-		if (henna.isAllowedClass(player) && count >= henna.getNeedCount() && _wearFee !=null && ItemFunctions.haveItem(player, _wearFee.itemName, _wearFee.count) && player.addHenna(_slotId, henna,false))
+
+		if(henna.isAllowedClass(player) && count >= henna.getNeedCount() && _wearFee != null
+				&& ItemFunctions.haveItem(player, _wearFee.itemName, _wearFee.count) && player.addHenna(_slotId, henna, false))
 		{
 			ItemFunctions.deleteItem(player, henna.getDyeItemId(), henna.getNeedCount());
 			ItemFunctions.deleteItem(player, _wearFee.itemName, _wearFee.count);
-			
+
 			/*final InventoryUpdate iu = new InventoryUpdate();
 			iu.addModifiedItem(player.getInventory().getAdenaInstance());
 			player.sendInventoryUpdate(iu);*/
@@ -78,14 +79,12 @@ public class RequestExNewHennaEquip implements IClientIncomingPacket
 		else
 		{
 			player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_CANNOT_BE_DRAWN));
-		/*	if (!player.canOverrideCond(PlayerCondOverride.ITEM_CONDITIONS) && !henna.isAllowedClass(player))
-			{
-				Util.handleIllegalPlayerAction(player, "Exploit attempt: Character " + player.getName() + " of account " + player.getAccountName() + " tryed to add a forbidden henna.", Config.DEFAULT_PUNISH);
-			}*/
+			/*	if (!player.canOverrideCond(PlayerCondOverride.ITEM_CONDITIONS) && !henna.isAllowedClass(player))
+				{
+					Util.handleIllegalPlayerAction(player, "Exploit attempt: Character " + player.getName() + " of account " + player.getAccountName() + " tryed to add a forbidden henna.", Config.DEFAULT_PUNISH);
+				}*/
 			client.sendPacket(ActionFailPacket.STATIC);
 		}
 	}
-
-
 
 }

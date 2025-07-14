@@ -16,7 +16,7 @@ class CompStartTask implements Runnable
 	@Override
 	public void run()
 	{
-		if (Olympiad.isOlympiadEnd())
+		if(Olympiad.isOlympiadEnd())
 			return;
 
 		Olympiad._manager = new OlympiadManager();
@@ -26,7 +26,7 @@ class CompStartTask implements Runnable
 
 		Olympiad.startCompEndTask(Olympiad.getMillisToCompEnd());
 
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
 			player.sendPacket(new ExOlympiadInfo(player));
 		}

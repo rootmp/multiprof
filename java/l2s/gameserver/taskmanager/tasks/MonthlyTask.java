@@ -25,7 +25,7 @@ public class MonthlyTask extends AutomaticTask
 	public void doTask() throws Exception
 	{
 		_log.info("Monthly Global Task: launched.");
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 			player.restartMonthlyCounters(false);
 		_log.info("Monthly Global Task: completed.");
 	}

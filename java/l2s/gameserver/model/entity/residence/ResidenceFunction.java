@@ -93,7 +93,7 @@ public class ResidenceFunction
 			statement.setInt(5, getLevel());
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Cannot update rent time: ", e);
 		}

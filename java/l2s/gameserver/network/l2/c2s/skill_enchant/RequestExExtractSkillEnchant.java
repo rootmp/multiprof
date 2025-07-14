@@ -1,15 +1,9 @@
 package l2s.gameserver.network.l2.c2s.skill_enchant;
 
 import l2s.commons.network.PacketReader;
-import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.Skill;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.components.SystemMsg;
-import l2s.gameserver.skills.SkillEntry;
-import l2s.gameserver.skills.enums.SkillEntryType;
-import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExExtractSkillEnchant implements IClientIncomingPacket
 {
@@ -39,7 +33,7 @@ public class RequestExExtractSkillEnchant implements IClientIncomingPacket
 		/*final Skill skill = SkillHolder.getInstance().getSkill(_skillId, _skillLevel, _skillSubLevel);
 		if (skill == null || skill.getId() != _skillId || skill.getSubLevel() != _skillSubLevel)
 			return;
-
+		
 		SkillEnchantSetting setting = SkillEnchantSettingsHolder.getInstance().getExtractSetting(skill.getGrade(), _skillSubLevel);
 		if(setting!=null)
 		{
@@ -89,7 +83,7 @@ public class RequestExExtractSkillEnchant implements IClientIncomingPacket
 			player.enableSkill(enchantedSkill.getTemplate());
 			
 			player.sendChanges();
-
+		
 			ItemFunctions.deleteItem(player, 57, setting.getAdena(), "RequestExExtractSkillEnchant");
 			ItemFunctions.deleteItem(player, setting.getItemId(), setting.getCount(), "RequestExExtractSkillEnchant");
 			

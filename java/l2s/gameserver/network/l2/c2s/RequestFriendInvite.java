@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.StringUtils;
 
 import l2s.commons.network.PacketReader;
@@ -23,17 +24,17 @@ public class RequestFriendInvite implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || StringUtils.isEmpty(_name))
+		if(activeChar == null || StringUtils.isEmpty(_name))
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		IBroadcastPacket msg = activeChar.getFriendList().requestFriendInvite(World.getPlayer(_name));
-		if (msg != null)
+		if(msg != null)
 		{
 			activeChar.sendPacket(msg);
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_ADD_A_FRIEND_TO_YOUR_FRIENDS_LIST);

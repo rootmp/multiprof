@@ -35,7 +35,7 @@ public class DoorObject implements SpawnableObject, InitableObject, OpenableObje
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (reflection.isMain())
+		if(reflection.isMain())
 		{
 			refreshObject(event, reflection);
 		}
@@ -54,7 +54,7 @@ public class DoorObject implements SpawnableObject, InitableObject, OpenableObje
 	@Override
 	public void refreshObject(Event event, Reflection reflection)
 	{
-		if (!event.isInProgress())
+		if(!event.isInProgress())
 			_door.removeEvent(event);
 		else
 		{
@@ -62,7 +62,7 @@ public class DoorObject implements SpawnableObject, InitableObject, OpenableObje
 			_door.broadcastStatusUpdate();
 		}
 
-		if (_door.getCurrentHp() <= 0)
+		if(_door.getCurrentHp() <= 0)
 		{
 			_door.decayMe();
 			_door.spawnMe();

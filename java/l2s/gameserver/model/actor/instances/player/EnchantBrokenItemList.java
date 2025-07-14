@@ -37,7 +37,7 @@ public class EnchantBrokenItemList
 	public void add(ItemInstance item)
 	{
 		EnchantBrokenItem brokenItem = new EnchantBrokenItem(item.getItemId(), item.getEnchantLevel(), (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
-		if (EnchantBrokenItemsDAO.getInstance().insert(owner.getObjectId(), brokenItem))
+		if(EnchantBrokenItemsDAO.getInstance().insert(owner.getObjectId(), brokenItem))
 		{
 			items.add(brokenItem);
 		}
@@ -46,48 +46,48 @@ public class EnchantBrokenItemList
 	public boolean showRestoreWindowCategory(int category)
 	{
 		int itemId = lastItemId;
-		if (itemId <= 0)
+		if(itemId <= 0)
 			return false;
 
 		BlackCoupon blackCoupon = BlackCouponHolder.getInstance().getBlackCoupon(itemId);
-		if (blackCoupon == null)
+		if(blackCoupon == null)
 			return false;
 
 		List<ExItemRestoreList.PkItemRestoreNode> nodes = new ArrayList<>();
-		for (EnchantBrokenItem item : items)
+		for(EnchantBrokenItem item : items)
 		{
 			int fixedId = blackCoupon.getFixedId(item);
-			if (fixedId <= 0)
+			if(fixedId <= 0)
 				continue;
 
 			ItemTemplate template = ItemHolder.getInstance().getTemplate(item.getId());
-			if (template == null)
+			if(template == null)
 				continue;
 
-			if (category == 0)
+			if(category == 0)
 			{ // Weapons
-				if (!template.isWeapon())
+				if(!template.isWeapon())
 					continue;
 			}
-			else if (category == 1)
+			else if(category == 1)
 			{ // Armors
-				if (!template.isArmor())
+				if(!template.isArmor())
 					continue;
 			}
-			else if (category == 2)
+			else if(category == 2)
 			{ // Boss Accessories
-				if (!template.isAccessory())
+				if(!template.isAccessory())
 					continue;
-				if (template.getGrade() != ItemGrade.NONE)
+				if(template.getGrade() != ItemGrade.NONE)
 					continue;
 			}
-			else if (category == 3)
+			else if(category == 3)
 			{ // Other
-				if (template.isWeapon())
+				if(template.isWeapon())
 					continue;
-				if (template.isArmor())
+				if(template.isArmor())
 					continue;
-				if (template.isAccessory() && template.getGrade() == ItemGrade.NONE)
+				if(template.isAccessory() && template.getGrade() == ItemGrade.NONE)
 					continue;
 			}
 
@@ -106,37 +106,37 @@ public class EnchantBrokenItemList
 	public synchronized void restoreItem(int brokenItemId, int enchant)
 	{
 		int itemId = lastItemId;
-		if (itemId <= 0)
+		if(itemId <= 0)
 		{
 			owner.sendPacket(ExItemRestore.FAIL);
 			return;
 		}
 
 		BlackCoupon blackCoupon = BlackCouponHolder.getInstance().getBlackCoupon(itemId);
-		if (blackCoupon == null)
+		if(blackCoupon == null)
 		{
 			owner.sendPacket(ExItemRestore.FAIL);
 			return;
 		}
 
 		EnchantBrokenItem brokenItem = null;
-		for (EnchantBrokenItem i : items)
+		for(EnchantBrokenItem i : items)
 		{
-			if (i.getId() != brokenItemId)
+			if(i.getId() != brokenItemId)
 				continue;
 
-			if (i.getEnchant() != enchant)
+			if(i.getEnchant() != enchant)
 				continue;
 
 			int fixedId = blackCoupon.getFixedId(i);
-			if (fixedId <= 0)
+			if(fixedId <= 0)
 				continue;
 
 			brokenItem = i;
 			break;
 		}
 
-		if (brokenItem == null || !items.remove(brokenItem))
+		if(brokenItem == null || !items.remove(brokenItem))
 		{
 			owner.sendPacket(ExItemRestore.FAIL);
 			return;
@@ -145,12 +145,12 @@ public class EnchantBrokenItemList
 		owner.getInventory().writeLock();
 		try
 		{
-			if (!ItemFunctions.haveItem(owner, itemId, 1))
+			if(!ItemFunctions.haveItem(owner, itemId, 1))
 			{
 				owner.sendPacket(ExItemRestore.FAIL);
 				return;
 			}
-			if (!EnchantBrokenItemsDAO.getInstance().delete(owner.getObjectId(), brokenItem))
+			if(!EnchantBrokenItemsDAO.getInstance().delete(owner.getObjectId(), brokenItem))
 			{
 				owner.sendPacket(ExItemRestore.FAIL);
 				return;

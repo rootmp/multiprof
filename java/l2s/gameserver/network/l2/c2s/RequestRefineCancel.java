@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -28,34 +29,34 @@ public final class RequestRefineCancel implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (!Config.ALLOW_AUGMENTATION)
+		if(!Config.ALLOW_AUGMENTATION)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!Config.BBS_AUGMENTATION_ENABLED && NpcUtils.canPassPacket(activeChar, this) == null)
+		if(!Config.BBS_AUGMENTATION_ENABLED && NpcUtils.canPassPacket(activeChar, this) == null)
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 			return;
 		}
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 			return;
@@ -64,13 +65,13 @@ public final class RequestRefineCancel implements IClientIncomingPacket
 		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
 
 		// cannot remove augmentation from a not augmented item
-		if (targetItem == null || !targetItem.isAugmented())
+		if(targetItem == null || !targetItem.isAugmented())
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0), SystemMsg.AUGMENTATION_REMOVAL_CAN_ONLY_BE_DONE_ON_AN_AUGMENTED_ITEM);
 			return;
 		}
 
-		if ((targetItem.getItemId() >= 70877) && (targetItem.getItemId() <= 70884))
+		if((targetItem.getItemId() >= 70877) && (targetItem.getItemId() <= 70884))
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 			return;
@@ -79,11 +80,11 @@ public final class RequestRefineCancel implements IClientIncomingPacket
 		// get the price
 		long price = VariationUtils.getRemovePrice(targetItem);
 
-		if (price < 0)
+		if(price < 0)
 			activeChar.sendPacket(new ExVariationCancelResult(0));
 
 		// try to reduce the players adena
-		if (!activeChar.reduceAdena(price, true))
+		if(!activeChar.reduceAdena(price, true))
 		{
 			activeChar.sendPacket(new ExVariationCancelResult(0), SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			return;
@@ -96,9 +97,9 @@ public final class RequestRefineCancel implements IClientIncomingPacket
 		sm.addItemName(targetItem.getItemId());
 		activeChar.sendPacket(new ExVariationCancelResult(1), sm);
 
-		for (ShortCut sc : activeChar.getAllShortCuts())
+		for(ShortCut sc : activeChar.getAllShortCuts())
 		{
-			if (sc.getId() == targetItem.getObjectId() && sc.getType() == ShortCut.ShortCutType.ITEM)
+			if(sc.getId() == targetItem.getObjectId() && sc.getType() == ShortCut.ShortCutType.ITEM)
 				activeChar.sendPacket(new ShortCutRegisterPacket(activeChar, sc));
 		}
 

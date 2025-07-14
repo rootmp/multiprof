@@ -58,7 +58,7 @@ public abstract class SiegeToggleNpcInstance extends NpcInstance
 	{
 		setCurrentHp(Math.max(getCurrentHp() - damage, 0), false);
 
-		if (getCurrentHp() < 0.5)
+		if(getCurrentHp() < 0.5)
 		{
 			doDie(attacker);
 
@@ -73,16 +73,16 @@ public abstract class SiegeToggleNpcInstance extends NpcInstance
 	@Override
 	public boolean isAutoAttackable(Creature attacker)
 	{
-		if (attacker == null)
+		if(attacker == null)
 			return false;
 
 		Player player = attacker.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
-		for (SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
+		for(SiegeEvent<?, ?> siegeEvent : getEvents(SiegeEvent.class))
 		{
-			if (siegeEvent.isInProgress() && siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, player.getClan()) == null)
+			if(siegeEvent.isInProgress() && siegeEvent.getSiegeClan(SiegeEvent.DEFENDERS, player.getClan()) == null)
 				return true;
 		}
 		return false;

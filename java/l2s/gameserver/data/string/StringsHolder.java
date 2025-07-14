@@ -50,32 +50,32 @@ public final class StringsHolder extends AbstractHolder
 	{
 		Map<String, String> strings = _strings.get(lang);
 		String value = strings.get(address);
-		if (value == null)
+		if(value == null)
 		{
 			Language secondLang = lang;
 			do
 			{
-				if (secondLang == secondLang.getSecondLanguage())
+				if(secondLang == secondLang.getSecondLanguage())
 					break;
 
 				secondLang = secondLang.getSecondLanguage();
 				strings = _strings.get(secondLang);
 				value = strings.get(address);
 			}
-			while (value == null);
+			while(value == null);
 
-			if (value == null)
+			if(value == null)
 			{
-				for (Language l : Language.VALUES)
+				for(Language l : Language.VALUES)
 				{
 					strings = _strings.get(secondLang);
-					if ((value = strings.get(address)) != null)
+					if((value = strings.get(address)) != null)
 						break;
 				}
 			}
 		}
 
-		if (value == null)
+		if(value == null)
 		{
 			warn("String for '" + lang + "' language: '" + address + "' not found.");
 			return "";
@@ -85,25 +85,25 @@ public final class StringsHolder extends AbstractHolder
 
 	public void load()
 	{
-		for (Language lang : Language.VALUES)
+		for(Language lang : Language.VALUES)
 		{
 			_strings.put(lang, new HashMap<String, String>());
 
-			if (!Config.AVAILABLE_LANGUAGES.contains(lang))
+			if(!Config.AVAILABLE_LANGUAGES.contains(lang))
 				continue;
 
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/string/strings/" + lang.getShortName() + ".properties");
-			if (!file.exists())
+			if(!file.exists())
 				warn("Not find file: " + file.getAbsolutePath());
 			else
 				loadFile(file, lang);
 
 			file = new File(Config.DATAPACK_ROOT, "data/parser/string/strings/" + lang.getShortName() + "/");
-			if (file.exists() && file.isDirectory())
+			if(file.exists() && file.isDirectory())
 			{
-				for (File f : file.listFiles())
+				for(File f : file.listFiles())
 				{
-					if (f.getName().matches("^(.+)\\.properties$"))
+					if(f.getName().matches("^(.+)\\.properties$"))
 						loadFile(f, lang);
 				}
 			}
@@ -120,15 +120,15 @@ public final class StringsHolder extends AbstractHolder
 			scanner = new Scanner(content);
 			int i = 0;
 			String line;
-			while (scanner.hasNextLine())
+			while(scanner.hasNextLine())
 			{
 				i++;
 				line = scanner.nextLine();
-				if (line.startsWith("#"))
+				if(line.startsWith("#"))
 					continue;
 
 				Matcher m = LINE_PATTERN.matcher(line);
-				if (m.find())
+				if(m.find())
 				{
 					String name = m.group(1);
 					String value = m.group(3);
@@ -139,7 +139,7 @@ public final class StringsHolder extends AbstractHolder
 					error("Error on line #: " + i + "; file: " + file.getName());
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("Exception: " + e, e);
 		}
@@ -149,7 +149,7 @@ public final class StringsHolder extends AbstractHolder
 			{
 				scanner.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				//
 			}
@@ -165,11 +165,11 @@ public final class StringsHolder extends AbstractHolder
 	@Override
 	public void log()
 	{
-		for (Map.Entry<Language, Map<String, String>> entry : _strings.entrySet())
+		for(Map.Entry<Language, Map<String, String>> entry : _strings.entrySet())
 		{
-			if (!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
+			if(!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
 				continue;
-			
+
 			info("Load strings: " + entry.getValue().size() + " for Lang: " + entry.getKey());
 		}
 	}

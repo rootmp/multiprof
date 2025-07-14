@@ -33,33 +33,31 @@ public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
-		if (player.isActionsDisabled())
+		if(player.isActionsDisabled())
 		{
 			player.setBlessingScroll(null);
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isInTrade())
+		if(player.isInTrade())
 		{
 			player.setBlessingScroll(null);
 			player.sendActionFailed();
 			return;
 		}
 
-		if (System.currentTimeMillis() <= (player.getLastBlessingItemTime() + BLESSING_DELAY))
+		if(System.currentTimeMillis() <= (player.getLastBlessingItemTime() + BLESSING_DELAY))
 		{
 			player.setBlessingScroll(null);
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isInStoreMode())
+		if(player.isInStoreMode())
 		{
 			player.setBlessingScroll(null);
 			player.sendPacket(ExBlessOptionCancel.STATIC);
@@ -75,26 +73,26 @@ public class RequestExBlessOptionEnchant implements IClientIncomingPacket
 			final ItemInstance item = inventory.getItemByObjectId(_itemObjId);
 			final ItemInstance scroll = player.getBlessingScroll();
 
-			if ((item == null) || (scroll == null))
+			if((item == null) || (scroll == null))
 			{
 				player.sendActionFailed();
 				return;
 			}
 
-			if (item.isBlessed())
+			if(item.isBlessed())
 			{
 				player.sendActionFailed();
 				return;
 			}
 
-			if (!inventory.destroyItem(scroll, 1L))
+			if(!inventory.destroyItem(scroll, 1L))
 			{
 				player.sendPacket(ExBlessOptionCancel.STATIC);
 				player.sendActionFailed();
 				return;
 			}
 
-			if (Rnd.get(100) < Config.BLESSING_ITEM_CHANCE)
+			if(Rnd.get(100) < Config.BLESSING_ITEM_CHANCE)
 			{
 				item.setBlessed(true);
 				item.setJdbcState(JdbcEntityState.UPDATED);

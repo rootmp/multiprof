@@ -19,16 +19,16 @@ public final class NpcFriendInstance extends MerchantInstance
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... replace)
 	{
-		if (val == 0)
+		if(val == 0)
 		{
-			if (getNpcId() >= 31370 && getNpcId() <= 31376 && player.getVarka() > 0 || getNpcId() >= 31377 && getNpcId() < 31384 && player.getKetra() > 0)
+			if(getNpcId() >= 31370 && getNpcId() <= 31376 && player.getVarka() > 0 || getNpcId() >= 31377 && getNpcId() < 31384 && player.getKetra() > 0)
 			{
 				showChatWindow(player, "npc_friend/" + getNpcId() + "-nofriend.htm", firstTalk);
 				return;
 			}
 
 			String filename = null;
-			switch (getNpcId())
+			switch(getNpcId())
 			{
 				case 31370:
 				case 31371:
@@ -41,76 +41,76 @@ public final class NpcFriendInstance extends MerchantInstance
 					filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31372:
-					if (player.getKetra() > 2)
+					if(player.getKetra() > 2)
 						filename = "npc_friend/" + getNpcId() + "-bufflist.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31379:
-					if (player.getVarka() > 2)
+					if(player.getVarka() > 2)
 						filename = "npc_friend/" + getNpcId() + "-bufflist.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31374:
-					if (player.getKetra() > 1)
+					if(player.getKetra() > 1)
 						filename = "npc_friend/" + getNpcId() + "-warehouse.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31381:
-					if (player.getVarka() > 1)
+					if(player.getVarka() > 1)
 						filename = "npc_friend/" + getNpcId() + "-warehouse.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31375:
-					if (player.getKetra() == 3 || player.getKetra() == 4)
+					if(player.getKetra() == 3 || player.getKetra() == 4)
 						filename = "npc_friend/" + getNpcId() + "-special1.htm";
-					else if (player.getKetra() == 5)
+					else if(player.getKetra() == 5)
 						filename = "npc_friend/" + getNpcId() + "-special2.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31382:
-					if (player.getVarka() == 3 || player.getVarka() == 4)
+					if(player.getVarka() == 3 || player.getVarka() == 4)
 						filename = "npc_friend/" + getNpcId() + "-special1.htm";
-					else if (player.getVarka() == 5)
+					else if(player.getVarka() == 5)
 						filename = "npc_friend/" + getNpcId() + "-special2.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31376:
-					if (player.getKetra() == 4)
+					if(player.getKetra() == 4)
 						filename = "npc_friend/" + getNpcId() + "-normal.htm";
-					else if (player.getKetra() == 5)
+					else if(player.getKetra() == 5)
 						filename = "npc_friend/" + getNpcId() + "-special.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31383:
-					if (player.getVarka() == 4)
+					if(player.getVarka() == 4)
 						filename = "npc_friend/" + getNpcId() + "-normal.htm";
-					else if (player.getVarka() == 5)
+					else if(player.getVarka() == 5)
 						filename = "npc_friend/" + getNpcId() + "-special.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31555:
-					if (player.getRam() == 1)
+					if(player.getRam() == 1)
 						filename = "npc_friend/" + getNpcId() + "-special1.htm";
-					else if (player.getRam() == 2)
+					else if(player.getRam() == 2)
 						filename = "npc_friend/" + getNpcId() + "-special2.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 					break;
 				case 31556:
-					if (player.getRam() == 2)
+					if(player.getRam() == 2)
 						filename = "npc_friend/" + getNpcId() + "-bufflist.htm";
 					else
 						filename = "npc_friend/" + getNpcId() + ".htm";
 			}
-			if (filename != null)
+			if(filename != null)
 			{
 				showChatWindow(player, filename, firstTalk);
 				return;
@@ -125,14 +125,14 @@ public final class NpcFriendInstance extends MerchantInstance
 		StringTokenizer st = new StringTokenizer(command, " ");
 		String actualCommand = st.nextToken(); // Get actual command
 
-		if (actualCommand.equalsIgnoreCase("Buff"))
+		if(actualCommand.equalsIgnoreCase("Buff"))
 		{
-			if (st.countTokens() < 1)
+			if(st.countTokens() < 1)
 				return;
 			int val = Integer.parseInt(st.nextToken());
 			int item = 0;
 
-			switch (getNpcId())
+			switch(getNpcId())
 			{
 				case 31372:
 					item = 7186;
@@ -149,7 +149,7 @@ public final class NpcFriendInstance extends MerchantInstance
 			int level = 0;
 			long count = 0;
 
-			switch (val)
+			switch(val)
 			{
 				case 1:
 					skill = 4359;
@@ -193,29 +193,29 @@ public final class NpcFriendInstance extends MerchantInstance
 					break;
 			}
 
-			if (skill != 0 && player.getInventory().destroyItemByItemId(item, count))
+			if(skill != 0 && player.getInventory().destroyItemByItemId(item, count))
 				player.doCast(SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill, level), player, true);
 			else
 				showChatWindow(player, "npc_friend/" + getNpcId() + "-havenotitems.htm", false);
 		}
-		else if (command.startsWith("Chat"))
+		else if(command.startsWith("Chat"))
 		{
 			int val = Integer.parseInt(command.substring(5));
 			String fname = "";
 			fname = "npc_friend/" + getNpcId() + "-" + val + ".htm";
-			if (!fname.equals(""))
+			if(!fname.equals(""))
 				showChatWindow(player, fname, false);
 		}
-		else if (command.startsWith("Buy"))
+		else if(command.startsWith("Buy"))
 		{
 			int val = Integer.parseInt(command.substring(4));
 			showShopWindow(player, val, false);
 		}
-		else if (actualCommand.equalsIgnoreCase("Sell"))
+		else if(actualCommand.equalsIgnoreCase("Sell"))
 			showShopWindow(player);
-		else if (command.startsWith("WithdrawP"))
+		else if(command.startsWith("WithdrawP"))
 			WarehouseFunctions.showRetrieveWindow(player);
-		else if (command.equals("DepositP"))
+		else if(command.equals("DepositP"))
 			WarehouseFunctions.showDepositWindow(player);
 		else
 			super.onBypassFeedback(player, command);

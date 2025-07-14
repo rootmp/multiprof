@@ -33,7 +33,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	MOVE_TO_LOCATION(MoveBackwardToLocation::new, ConnectionState.IN_GAME),
 	NOT_USE_34(null, ConnectionState.IN_GAME),
 	ENTER_WORLD(RequestEnterWorld::new, ConnectionState.JOINING_GAME),
-	CHARACTER_SELECT(CharacterSelected::new, ConnectionState.AUTHENTICATED),//RENAME
+	CHARACTER_SELECT(CharacterSelected::new, ConnectionState.AUTHENTICATED), //RENAME
 	NEW_CHARACTER(NewCharacter::new, ConnectionState.AUTHENTICATED),
 	ITEMLIST(RequestItemList::new, ConnectionState.IN_GAME),
 	NOT_USE_1(null, ConnectionState.IN_GAME),
@@ -44,7 +44,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	TRADE_REQUEST(TradeRequest::new, ConnectionState.IN_GAME),
 	TRADE_ADD(AddTradeItem::new, ConnectionState.IN_GAME),
 	TRADE_DONE(TradeDone::new, ConnectionState.IN_GAME),
-	
+
 	NOT_USE_35(null, ConnectionState.IN_GAME),
 	NOT_USE_36(null, ConnectionState.IN_GAME),
 	ACTION(Action::new, ConnectionState.IN_GAME),
@@ -65,7 +65,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	ALLIANCE_INFO(RequestAllyInfo::new, ConnectionState.IN_GAME),
 	CRYSTALLIZE_ITEM(RequestCrystallizeItem::new, ConnectionState.IN_GAME),
 	NOT_USE_19(null, ConnectionState.IN_GAME),
-	PRIVATE_STORE_LIST_SET(SetPrivateStoreSellList::new, ConnectionState.IN_GAME),//RENAME
+	PRIVATE_STORE_LIST_SET(SetPrivateStoreSellList::new, ConnectionState.IN_GAME), //RENAME
 	PRIVATE_STORE_MANAGE_CANCEL(null, ConnectionState.IN_GAME),
 	STOP_MOVE_TOWARD(RequestStopMoveToward::new, ConnectionState.IN_GAME),
 	// TODO check if need REQUEST_TELEPORT(0x33, null, ConnectionState.IN_GAME),
@@ -90,7 +90,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	DISMISS_PARTY(RequestDismissParty::new, ConnectionState.IN_GAME), //UNe
 	CANNOT_MOVE_ANYMORE(CannotMoveAnymore::new, ConnectionState.IN_GAME),
 	TARGET_UNSELECTED(RequestTargetCanceld::new, ConnectionState.IN_GAME),
-	SAY2(Say2C::new, ConnectionState.IN_GAME),//RENAME
+	SAY2(Say2C::new, ConnectionState.IN_GAME), //RENAME
 	MOVE_TOWARD(MoveToWard::new, ConnectionState.IN_GAME),
 	NOT_USE_4(null, ConnectionState.IN_GAME),
 	NOT_USE_5(null, ConnectionState.IN_GAME),
@@ -108,8 +108,8 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	NOT_USE_9(null, ConnectionState.IN_GAME),
 	VALIDATE_POSITION(ValidatePosition::new, ConnectionState.IN_GAME),
 	SEK_COSTUME(null, ConnectionState.IN_GAME), //UNe
-	START_ROTATING(StartRotatingC::new, ConnectionState.IN_GAME),//RENAME
-	FINISH_ROTATING(FinishRotatingC::new, ConnectionState.IN_GAME),//RENAME
+	START_ROTATING(StartRotatingC::new, ConnectionState.IN_GAME), //RENAME
+	FINISH_ROTATING(FinishRotatingC::new, ConnectionState.IN_GAME), //RENAME
 	NOT_USE_15(null, ConnectionState.IN_GAME),
 	SHOW_BOARD(RequestShowBoard::new, ConnectionState.IN_GAME),
 	REQUEST_ENCHANT_ITEM(RequestEnchantItem::new, ConnectionState.IN_GAME),
@@ -124,10 +124,10 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	NOT_USE_17(null, ConnectionState.IN_GAME),
 	NOT_USE_18(null, ConnectionState.IN_GAME),
 	L2_FRIEND_LIST(RequestFriendInfoList::new, ConnectionState.IN_GAME),
-	L2_FRIEND_SAY(RequestSendL2FriendSay::new, ConnectionState.IN_GAME),//RENAME
+	L2_FRIEND_SAY(RequestSendL2FriendSay::new, ConnectionState.IN_GAME), //RENAME
 	OPEN_MINIMAP(RequestShowMiniMap::new, ConnectionState.IN_GAME),
 	MSN_CHAT_LOG(RequestSendMsnChatLog::new, ConnectionState.IN_GAME),
-	RELOAD(RequestReload::new, ConnectionState.IN_GAME),//RENAME
+	RELOAD(RequestReload::new, ConnectionState.IN_GAME), //RENAME
 	HENNA_EQUIP(null /*RequestHennaEquip::new*/, ConnectionState.IN_GAME),
 	HENNA_UNEQUIP_LIST(RequestHennaRemoveList::new, ConnectionState.IN_GAME),
 	HENNA_UNEQUIP_INFO(RequestHennaItemRemoveInfo::new, ConnectionState.IN_GAME),
@@ -160,7 +160,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	JOIN_ALLIANCE(RequestJoinAlly::new, ConnectionState.IN_GAME),
 	ANSWER_JOIN_ALLIANCE(RequestAnswerJoinAlly::new, ConnectionState.IN_GAME),
 	WITHDRAW_ALLIANCE(RequestWithdrawAlly::new, ConnectionState.IN_GAME),
-	OUST_ALLIANCE_MEMBER_PLEDGE(RequestOustAlly::new, ConnectionState.IN_GAME),//RENAME
+	OUST_ALLIANCE_MEMBER_PLEDGE(RequestOustAlly::new, ConnectionState.IN_GAME), //RENAME
 	DISMISS_ALLIANCE(RequestDismissAlly::new, ConnectionState.IN_GAME),
 	SET_ALLIANCE_CREST(RequestSetAllyCrest::new, ConnectionState.IN_GAME),
 	ALLIANCE_CREST(RequestAllyCrest::new, ConnectionState.IN_GAME),
@@ -171,7 +171,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	PRIVATE_STORE_SET_MSG(SetPrivateStoreMsgSell::new, ConnectionState.IN_GAME),
 	PET_GET_ITEM(RequestPetGetItem::new, ConnectionState.IN_GAME),
 	NOT_USE_23(null, ConnectionState.IN_GAME),
-	PRIVATE_STORE_BUY_LIST_SET(SetPrivateStoreBuyList::new, ConnectionState.IN_GAME),//RENAME
+	PRIVATE_STORE_BUY_LIST_SET(SetPrivateStoreBuyList::new, ConnectionState.IN_GAME), //RENAME
 	PRIVATE_STORE_BUY_MANAGE_CANCEL(null /*RequestPrivateStoreBuyManageCancel::new*/, ConnectionState.IN_GAME), //TODO
 	PRIVATE_STORE_BUY_QUIT(RequestPrivateStoreQuitBuy::new, ConnectionState.IN_GAME),
 	PRIVATE_STORE_BUY_SET_MSG(SetPrivateStoreMsgBuy::new, ConnectionState.IN_GAME),

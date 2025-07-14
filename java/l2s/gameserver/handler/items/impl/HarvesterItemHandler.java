@@ -17,15 +17,15 @@ public class HarvesterItemHandler extends DefaultItemHandler
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
 		Player player;
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 			player = (Player) playable;
-		else if (playable.isPet())
+		else if(playable.isPet())
 			player = playable.getPlayer();
 		else
 			return false;
 
 		GameObject target = player.getTarget();
-		if (target == null || !target.isMonster())
+		if(target == null || !target.isMonster())
 		{
 			player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
@@ -33,14 +33,14 @@ public class HarvesterItemHandler extends DefaultItemHandler
 
 		MonsterInstance monster = (MonsterInstance) player.getTarget();
 
-		if (!monster.isDead())
+		if(!monster.isDead())
 		{
 			player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
 		}
 
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.ITEM, HARVESTER_SKILL_ID, 1);
-		if (skillEntry != null && skillEntry.checkCondition(player, monster, false, false, true))
+		if(skillEntry != null && skillEntry.checkCondition(player, monster, false, false, true))
 		{
 			player.getAI().Cast(skillEntry, monster);
 			return true;

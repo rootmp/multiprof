@@ -33,14 +33,14 @@ public class RequestAuthLogin extends L2LoginClientPacket
 	@Override
 	protected boolean readImpl()
 	{
-		if (_buf.remaining() >= (_raw1.length + _raw2.length))
+		if(_buf.remaining() >= (_raw1.length + _raw2.length))
 		{
 			_newAuthMethod = true;
 			readB(_raw1);
 			readB(_raw2);
 		}
 
-		if (_buf.remaining() >= _raw1.length)
+		if(_buf.remaining() >= _raw1.length)
 		{
 			readB(_raw1);
 			readD();
@@ -68,10 +68,10 @@ public class RequestAuthLogin extends L2LoginClientPacket
 			rsaCipher.init(Cipher.DECRYPT_MODE, client.getRSAPrivateKey());
 			decUser = rsaCipher.doFinal(_raw1, 0x00, 0x80);
 
-			if (_newAuthMethod)
+			if(_newAuthMethod)
 				decPass = rsaCipher.doFinal(_raw2, 0x00, _raw2.length);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			client.closeNow(true);
 			return;
@@ -79,7 +79,7 @@ public class RequestAuthLogin extends L2LoginClientPacket
 
 		String user = null;
 		String password = null;
-		if (_newAuthMethod)
+		if(_newAuthMethod)
 		{
 			user = new String(decUser, 0x4E, 32).trim().toLowerCase();
 			password = new String(decPass, 0x5C, 16).trim();
@@ -102,9 +102,9 @@ public class RequestAuthLogin extends L2LoginClientPacket
 
 		String passwordHash = Config.DEFAULT_CRYPT.encrypt(password);
 
-		if (account.getPasswordHash() == null)
+		if(account.getPasswordHash() == null)
 		{
-			if (Config.AUTO_CREATE_ACCOUNTS && user.matches(Config.ANAME_TEMPLATE) && password.matches(Config.APASSWD_TEMPLATE))
+			if(Config.AUTO_CREATE_ACCOUNTS && user.matches(Config.ANAME_TEMPLATE) && password.matches(Config.APASSWD_TEMPLATE))
 			{
 				account.setAllowedIP("");
 				account.setAllowedHwid("");
@@ -120,12 +120,12 @@ public class RequestAuthLogin extends L2LoginClientPacket
 
 		boolean passwordCorrect = account.getPasswordHash().equals(passwordHash);
 
-		if (!passwordCorrect)
+		if(!passwordCorrect)
 		{
 			// проверяем не зашифрован ли пароль одним из устаревших но поддерживаемых
 			// алгоритмов
-			for (PasswordHash c : Config.LEGACY_CRYPT)
-				if (c.compare(password, account.getPasswordHash()))
+			for(PasswordHash c : Config.LEGACY_CRYPT)
+				if(c.compare(password, account.getPasswordHash()))
 				{
 					passwordCorrect = true;
 					account.setPasswordHash(passwordHash);
@@ -133,7 +133,7 @@ public class RequestAuthLogin extends L2LoginClientPacket
 				}
 		}
 
-		if (!IpBanManager.getInstance().tryLogin(client.getIpAddress(), passwordCorrect))
+		if(!IpBanManager.getInstance().tryLogin(client.getIpAddress(), passwordCorrect))
 		{
 			client.closeNow(false);
 			return;
@@ -141,36 +141,36 @@ public class RequestAuthLogin extends L2LoginClientPacket
 
 		client.setPasswordCorrect(passwordCorrect);
 
-		if (!Config.CHEAT_PASSWORD_CHECK)
+		if(!Config.CHEAT_PASSWORD_CHECK)
 		{
-			if (!passwordCorrect)
+			if(!passwordCorrect)
 			{
 				client.close(LoginFailReason.REASON_USER_OR_PASS_WRONG);
 				return;
 			}
 		}
 
-		if (AuthBanManager.getInstance().isBanned(BanBindType.LOGIN, account.getLogin()))
+		if(AuthBanManager.getInstance().isBanned(BanBindType.LOGIN, account.getLogin()))
 		{
 			client.close(LoginFailReason.REASON_ACCESS_FAILED);
 			return;
 		}
 
-		if (AuthBanManager.getInstance().isBanned(BanBindType.IP, client.getIpAddress()))
+		if(AuthBanManager.getInstance().isBanned(BanBindType.IP, client.getIpAddress()))
 		{
 			client.close(LoginFailReason.REASON_ACCESS_FAILED);
 			return;
 		}
 
-		if (!account.isAllowedIP(client.getIpAddress()))
+		if(!account.isAllowedIP(client.getIpAddress()))
 		{
 			client.close(LoginFailReason.REASON_ATTEMPTED_RESTRICTED_IP);
 			return;
 		}
 
-		for (GameServer gs : GameServerManager.getInstance().getGameServers())
+		for(GameServer gs : GameServerManager.getInstance().getGameServers())
 		{
-			if (gs.isAuthed())
+			if(gs.isAuthed())
 				gs.sendPacket(new GetAccountInfo(user));
 		}
 
@@ -187,7 +187,7 @@ public class RequestAuthLogin extends L2LoginClientPacket
 		client.setSessionKey(session.getSessionKey());
 		client.setState(LoginClientState.AUTHED);
 
-		if (Config.SHOW_LICENCE)
+		if(Config.SHOW_LICENCE)
 		{
 			client.sendPacket(new LoginOk(client.getSessionKey()));
 		}

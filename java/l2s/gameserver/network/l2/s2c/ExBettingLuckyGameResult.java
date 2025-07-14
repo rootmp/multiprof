@@ -30,7 +30,7 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 		_result = SUCCESS;
 		_type = data.getType().ordinal();
 
-		if (data.getFeeItemId() == -1)
+		if(data.getFeeItemId() == -1)
 		{
 			_availableGamesCount = player.getPremiumPoints() / data.getFeeItemCount();
 		}
@@ -40,7 +40,7 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 		}
 
 		int gamesLimit = data.getGamesLimit();
-		if (gamesLimit > 0)
+		if(gamesLimit > 0)
 		{
 			int playedGamesCount = player.getVarInt(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + data.getType().ordinal(), 0);
 			_availableGamesCount = Math.max(0, Math.min(_availableGamesCount, gamesLimit - playedGamesCount));
@@ -64,7 +64,7 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 		packetWriter.writeD(_type);
 		packetWriter.writeD((int) _availableGamesCount);
 		packetWriter.writeD(_items.size()); // кол-во
-		for (LuckyGameItem item : _items)
+		for(LuckyGameItem item : _items)
 		{
 			packetWriter.writeD(item.isFantastic() ? 2 : 0);
 			packetWriter.writeD(item.getId());

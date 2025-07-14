@@ -23,7 +23,7 @@ public class EffectShadowStep extends EffectFlyAbstract
 		int py = effected.getY();
 
 		double ph = PositionUtils.convertHeadingToDegree(effected.getHeading()) + 180;
-		if (ph > 360)
+		if(ph > 360)
 			ph -= 360;
 
 		ph = (Math.PI * ph) / 180;
@@ -33,7 +33,7 @@ public class EffectShadowStep extends EffectFlyAbstract
 		int z = effected.getZ();
 
 		Location destiny = GeoEngine.moveCheck(effector.getX(), effector.getY(), effector.getZ(), x, y, effector.getGeoIndex());
-		if (destiny == null)
+		if(destiny == null)
 			return;
 
 		x = destiny.getX();

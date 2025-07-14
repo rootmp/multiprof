@@ -29,13 +29,13 @@ public final class EffectDamageBlock extends EffectHandler
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		effected.getFlags().getDamageBlocked().start(this);
-		if (_withException)
+		if(_withException)
 		{
-			if (effected == effector)
+			if(effected == effector)
 			{
-				if (getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate()))
+				if(getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL).getSkillEntry().getTemplate()))
 					effected.setDamageBlockedException(effector.getSkillCast(SkillCastingType.NORMAL).getTarget());
-				else if (getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate()))
+				else if(getSkill().equals(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry().getTemplate()))
 					effected.setDamageBlockedException(effector.getSkillCast(SkillCastingType.NORMAL_SECOND).getTarget());
 			}
 			else

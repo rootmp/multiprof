@@ -8,5 +8,5 @@ public class RaidTeleportData
 	@IntValue
 	public int raid_id;
 	@IntArray
-	public int[] raid_location; 
+	public int[] raid_location;
 }

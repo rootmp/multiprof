@@ -23,7 +23,7 @@ public class ExVariationResult implements IClientOutgoingPacket
 		packetWriter.writeD(_variation1Id);
 		packetWriter.writeD(_variation2Id);
 		packetWriter.writeD(_variation3Id);
-		
+
 		packetWriter.writeD(_unk3);
 		return true;
 	}

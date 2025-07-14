@@ -38,7 +38,7 @@ public class EnchantBrokenItemsDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, ownerId);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int itemId = rset.getInt("item_id");
 				int enchant = rset.getInt("enchant");
@@ -46,7 +46,7 @@ public class EnchantBrokenItemsDAO
 				items.add(new EnchantBrokenItem(itemId, enchant, time));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("EnchantBrokenItemsDAO.select(int,List): " + e, e);
 		}
@@ -72,7 +72,7 @@ public class EnchantBrokenItemsDAO
 			statement.execute();
 			return true;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("EnchantBrokenItemsDAO.insert(int,EnchantBrokenItem): " + e, e);
 		}
@@ -99,7 +99,7 @@ public class EnchantBrokenItemsDAO
 			statement.execute();
 			return true;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("EnchantBrokenItemsDAO.delete(int,EnchantBrokenItem): " + e, e);
 		}

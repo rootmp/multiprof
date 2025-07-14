@@ -24,27 +24,27 @@ public class NpcListenerList extends CharListenerList
 
 	public void onSpawn()
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnSpawnListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnSpawnListener.class.isInstance(listener))
 					((OnSpawnListener) listener).onSpawn(getActor());
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnSpawnListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnSpawnListener.class.isInstance(listener))
 					((OnSpawnListener) listener).onSpawn(getActor());
 	}
 
 	public void onDecay()
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnDecayListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnDecayListener.class.isInstance(listener))
 					((OnDecayListener) listener).onDecay(getActor());
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnDecayListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnDecayListener.class.isInstance(listener))
 					((OnDecayListener) listener).onDecay(getActor());
 	}
 }

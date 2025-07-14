@@ -19,7 +19,7 @@ public class EffectLaksis extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 		return true;
 	}
@@ -29,31 +29,31 @@ public class EffectLaksis extends EffectHandler
 	{
 		Player caster = effector.getPlayer();
 
-		for (Creature cha : caster.getAroundCharacters(getSkill().getAffectRange(), 200))
+		for(Creature cha : caster.getAroundCharacters(getSkill().getAffectRange(), 200))
 		{
 			int fanAffectRange = getSkill().getFanRange()[2];
-			if (fanAffectRange > 0 && cha.isInRange(caster, fanAffectRange))
+			if(fanAffectRange > 0 && cha.isInRange(caster, fanAffectRange))
 				continue;
 
-			if (cha.isPlayer())
+			if(cha.isPlayer())
 			{
 				boolean heal = false;
 
-				if (cha.isPlayer())
+				if(cha.isPlayer())
 				{
 					Player player = (Player) effector;
 					Player target = (Player) cha;
 
-					if (player.getParty() != null)
-						if ((player.isInSameParty(target)) || (player.isInSameChannel(target)))
+					if(player.getParty() != null)
+						if((player.isInSameParty(target)) || (player.isInSameChannel(target)))
 							heal = true;
-					if ((player.getClan() != null) && (!player.isInPeaceZone()))
-						if ((player.isInSameClan(target)) || (player.isInSameAlly(target)))
+					if((player.getClan() != null) && (!player.isInPeaceZone()))
+						if((player.isInSameClan(target)) || (player.isInSameAlly(target)))
 							heal = true;
 
-					if (heal)
+					if(heal)
 					{
-						if ((target == null) || (target.isDead()))
+						if((target == null) || (target.isDead()))
 						{
 							continue;
 						}
@@ -66,12 +66,12 @@ public class EffectLaksis extends EffectHandler
 						powerCP = Math.min(powerCP, target.getMaxCp() - target.getCurrentCp());
 						powerHP = Math.min(powerHP, target.getMaxHp() - target.getCurrentHp());
 
-						if (powerCP < 0.0D)
+						if(powerCP < 0.0D)
 							powerCP = 0.0D;
-						if (powerHP < 0.0D)
+						if(powerHP < 0.0D)
 							powerHP = 0.0D;
 
-						if (target.getCurrentCp() < target.getMaxCp())
+						if(target.getCurrentCp() < target.getMaxCp())
 						{
 							target.setCurrentCp(powerCP + target.getCurrentCp());
 							target.sendPacket(new SystemMessagePacket(SystemMsg.S1_CP_HAS_BEEN_RESTORED).addInteger((long) powerCP));
@@ -90,12 +90,12 @@ public class EffectLaksis extends EffectHandler
 					}
 					else
 					{
-						if ((target == null) || (target.isDead()))
+						if((target == null) || (target.isDead()))
 							continue;
 
-						if ((target.getPvpFlag() > 0 || target.isAutoAttackable(player)) && !target.isInPeaceZone())
+						if((target.getPvpFlag() > 0 || target.isAutoAttackable(player)) && !target.isInPeaceZone())
 						{
-							if (player.getPvpFlag() == 0)
+							if(player.getPvpFlag() == 0)
 								player.startPvPFlag(null);
 							double damage = getValue();
 							target.reduceCurrentHp(damage, player, getSkill(), true, true, false, true, false, false, true);
@@ -103,7 +103,7 @@ public class EffectLaksis extends EffectHandler
 					}
 				}
 			}
-			else if (cha.isMonster() && !cha.isInPeaceZone())
+			else if(cha.isMonster() && !cha.isInPeaceZone())
 			{
 				double damage = getValue();
 				cha.reduceCurrentHp(damage, caster, getSkill(), true, true, false, true, false, false, true);

@@ -62,7 +62,7 @@ public class ProductHistoryList
 
 	public void restore()
 	{
-		if (Config.EX_USE_PRIME_SHOP)
+		if(Config.EX_USE_PRIME_SHOP)
 		{
 			ProductHistoryDAO.getInstance().select(_owner, _productHistoryMap);
 			refreshLimits();
@@ -71,12 +71,12 @@ public class ProductHistoryList
 
 	public boolean add(ProductHistoryItem historyItem)
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return false;
 
-		if (historyItem.getProduct().getLimit() > 0) // Сохраняем только лимитированные предметы.
+		if(historyItem.getProduct().getLimit() > 0) // Сохраняем только лимитированные предметы.
 		{
-			if (!ProductHistoryDAO.getInstance().replace(_owner, historyItem))
+			if(!ProductHistoryDAO.getInstance().replace(_owner, historyItem))
 				return false;
 
 			writeLock();
@@ -119,7 +119,7 @@ public class ProductHistoryList
 			writeUnlock();
 		}
 
-		if (removed)
+		if(removed)
 		{
 			ProductHistoryDAO.getInstance().delete(_owner, productId);
 			return true;
@@ -170,7 +170,7 @@ public class ProductHistoryList
 	{
 		List<ProductItem> products = new ArrayList<ProductItem>();
 
-		for (ProductHistoryItem item : values())
+		for(ProductHistoryItem item : values())
 			products.add(item.getProduct());
 
 		return products;
@@ -197,7 +197,7 @@ public class ProductHistoryList
 
 	public void startTask()
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return;
 
 		stopTask();
@@ -207,23 +207,23 @@ public class ProductHistoryList
 		writeLock();
 		try
 		{
-			for (ProductHistoryItem item : values())
+			for(ProductHistoryItem item : values())
 			{
-				if (item.getProduct().getLimit() == -1)
+				if(item.getProduct().getLimit() == -1)
 					continue;
 
 				SchedulingPattern pattern = item.getProduct().getLimitRefreshPattern();
-				if (pattern == null)
+				if(pattern == null)
 					continue;
 
 				long time = pattern.next(item.getLastPurchaseTime() * 1000L);
-				if (time <= System.currentTimeMillis())
+				if(time <= System.currentTimeMillis())
 				{
 					remove(item.getProduct().getId());
 					continue;
 				}
 
-				if (limitRefreshTime > 0 && limitRefreshTime < time)
+				if(limitRefreshTime > 0 && limitRefreshTime < time)
 					continue;
 
 				limitRefreshTime = time;
@@ -235,11 +235,10 @@ public class ProductHistoryList
 		}
 
 		long delay = limitRefreshTime - System.currentTimeMillis();
-		if (delay < 0)
+		if(delay < 0)
 			return;
 
-		_limitRefreshTask = ThreadPoolManager.getInstance().schedule(() ->
-		{
+		_limitRefreshTask = ThreadPoolManager.getInstance().schedule(() -> {
 			refreshLimits();
 			_owner.sendPacket(new ExBR_NewIConCashBtnWnd(_owner));
 			startTask();
@@ -248,7 +247,7 @@ public class ProductHistoryList
 
 	public void stopTask()
 	{
-		if (_limitRefreshTask != null)
+		if(_limitRefreshTask != null)
 		{
 			_limitRefreshTask.cancel(false);
 			_limitRefreshTask = null;
@@ -260,17 +259,17 @@ public class ProductHistoryList
 		writeLock();
 		try
 		{
-			for (ProductHistoryItem item : values())
+			for(ProductHistoryItem item : values())
 			{
-				if (item.getProduct().getLimit() == -1)
+				if(item.getProduct().getLimit() == -1)
 					continue;
 
 				SchedulingPattern pattern = item.getProduct().getLimitRefreshPattern();
-				if (pattern == null)
+				if(pattern == null)
 					continue;
 
 				long time = pattern.next(item.getLastPurchaseTime() * 1000L);
-				if (time > System.currentTimeMillis())
+				if(time > System.currentTimeMillis())
 					continue;
 
 				remove(item.getProduct().getId());
@@ -288,7 +287,7 @@ public class ProductHistoryList
 		try
 		{
 			ProductHistoryItem item = get(product.getId());
-			if (item != null)
+			if(item != null)
 			{
 				item.setPurchasedCount(item.getPurchasedCount() + count);
 				item.setLastPurchaseTime((int) (System.currentTimeMillis() / 1000));
@@ -308,7 +307,7 @@ public class ProductHistoryList
 	public boolean isExpended(int productId)
 	{
 		ProductHistoryItem item = get(productId);
-		if (item != null)
+		if(item != null)
 			return item.isExpended();
 
 		return false;
@@ -316,24 +315,24 @@ public class ProductHistoryList
 
 	public boolean haveGifts()
 	{
-		if (!Config.EX_USE_PRIME_SHOP)
+		if(!Config.EX_USE_PRIME_SHOP)
 			return false;
 
-		for (ProductItem product : ProductDataHolder.getInstance().getProductsOnSale(_owner))
+		for(ProductItem product : ProductDataHolder.getInstance().getProductsOnSale(_owner))
 		{
-			if (product.getLimit() == -1)
+			if(product.getLimit() == -1)
 				continue;
 
-			if (product.getPrice() > 0)
+			if(product.getPrice() > 0)
 				continue;
 
-			if (product.getSilverCoinCount() > 0 || product.getGoldCoinCount() > 0)
+			if(product.getSilverCoinCount() > 0 || product.getGoldCoinCount() > 0)
 				continue;
 
 			ProductHistoryItem historyItem = get(product.getId());
-			if (historyItem != null)
+			if(historyItem != null)
 			{
-				if (historyItem.isExpended())
+				if(historyItem.isExpended())
 					continue;
 			}
 			return true;

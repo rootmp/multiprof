@@ -119,7 +119,7 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 		talismans = cha.getTalismanCount();
 		_jewelsLimit = cha.getJewelsLimit();
 		_inv = new int[Inventory.PAPERDOLL_MAX][4];
-		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
+		for(int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
 			_inv[PAPERDOLL_ID][0] = cha.getInventory().getPaperdollObjectId(PAPERDOLL_ID);
 			_inv[PAPERDOLL_ID][1] = cha.getInventory().getPaperdollItemId(PAPERDOLL_ID);
@@ -163,9 +163,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(maxLoad);
 		packetWriter.writeD(pk_kills);
 
-		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
+		for(int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
+			if(PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
 			{
 				break;
 			}
@@ -173,9 +173,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_inv[PAPERDOLL_ID][0]);
 		}
 
-		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
+		for(int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			if (PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
+			if(PAPERDOLL_ID == Inventory.PAPERDOLL_ARTIFACT_BOOK)
 			{
 				break;
 			}
@@ -183,9 +183,9 @@ public class GMViewCharacterInfoPacket implements IClientOutgoingPacket
 			packetWriter.writeD(_inv[PAPERDOLL_ID][1]);
 		}
 
-		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
+		for(int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			if (PAPERDOLL_ID == Inventory.PAPERDOLL_AGATHION_MAIN)
+			if(PAPERDOLL_ID == Inventory.PAPERDOLL_AGATHION_MAIN)
 			{
 				break;
 			}

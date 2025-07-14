@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Macro;
@@ -24,10 +25,10 @@ public class RequestMakeMacro implements IClientIncomingPacket
 		String _acronym = packet.readS(4);
 		int _icon = packet.readD();
 		int _count = packet.readC();
-		if (_count > 12)
+		if(_count > 12)
 			_count = 12;
 		L2MacroCmd[] commands = new L2MacroCmd[_count];
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			int entry = packet.readC();
 			int type = packet.readC(); // 1 = skill, 3 = action, 4 = shortcut
@@ -44,22 +45,22 @@ public class RequestMakeMacro implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.getMacroses().getAllMacroses().length > 48)
+		if(activeChar.getMacroses().getAllMacroses().length > 48)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_MAY_CREATE_UP_TO_48_MACROS);
 			return;
 		}
 
-		if (_macro.getName().length() == 0)
+		if(_macro.getName().length() == 0)
 		{
 			activeChar.sendPacket(SystemMsg.ENTER_THE_NAME_OF_THE_MACRO);
 			return;
 		}
 
-		if (_macro.getDescr().length() > 32)
+		if(_macro.getDescr().length() > 32)
 		{
 			activeChar.sendPacket(SystemMsg.MACRO_DESCRIPTIONS_MAY_CONTAIN_UP_TO_32_CHARACTERS);
 			return;

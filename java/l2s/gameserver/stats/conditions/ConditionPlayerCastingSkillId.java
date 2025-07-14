@@ -17,11 +17,11 @@ public class ConditionPlayerCastingSkillId extends Condition
 	protected boolean testImpl(Env env)
 	{
 		SkillEntry skillEntry = env.character.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-		if (skillEntry != null && skillEntry.getId() == _skillId)
+		if(skillEntry != null && skillEntry.getId() == _skillId)
 			return true;
 
 		skillEntry = env.character.getSkillCast(SkillCastingType.NORMAL_SECOND).getSkillEntry();
-		if (skillEntry != null && skillEntry.getId() == _skillId)
+		if(skillEntry != null && skillEntry.getId() == _skillId)
 			return true;
 
 		return false;

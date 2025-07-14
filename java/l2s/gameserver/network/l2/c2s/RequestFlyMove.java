@@ -23,10 +23,10 @@ public final class RequestFlyMove implements IClientIncomingPacket
 		if(activeChar == null)
 			return;
 
-	/*	final FlyMove flyMove = activeChar.getFlyMove();
-		if(flyMove == null)
-			return;
-
-		flyMove.move(_pointId);*/
+		/*	final FlyMove flyMove = activeChar.getFlyMove();
+			if(flyMove == null)
+				return;
+		
+			flyMove.move(_pointId);*/
 	}
 }

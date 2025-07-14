@@ -29,7 +29,7 @@ public class VIPDataHolder extends AbstractHolder
 
 	public VIPTemplate getVIPTemplate(int level)
 	{
-		if (level == 0 && !_vipTemplates.containsKey(level))
+		if(level == 0 && !_vipTemplates.containsKey(level))
 			return VIPTemplate.DEFAULT_VIP_TEMPLATE;
 		return _vipTemplates.get(level);
 	}
@@ -37,11 +37,11 @@ public class VIPDataHolder extends AbstractHolder
 	public VIPTemplate getVIPTemplateByPoints(long points)
 	{
 		VIPTemplate result = VIPTemplate.DEFAULT_VIP_TEMPLATE;
-		for (VIPTemplate vipData : getVIPDatas())
+		for(VIPTemplate vipData : getVIPDatas())
 		{
-			if (vipData.getPoints() <= points)
+			if(vipData.getPoints() <= points)
 			{
-				if (result.getLevel() < vipData.getLevel())
+				if(result.getLevel() < vipData.getLevel())
 					result = vipData;
 			}
 		}

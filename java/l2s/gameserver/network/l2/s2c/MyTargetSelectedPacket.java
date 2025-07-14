@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.Player;
@@ -33,7 +33,7 @@ public class MyTargetSelectedPacket implements IClientOutgoingPacket
 	{
 		_success = true;
 		_objectId = target.getObjectId();
-		if (target.isCreature())
+		if(target.isCreature())
 			_color = player.getLevel() - ((Creature) target).getLevel();
 		else
 			_color = 0;
@@ -49,7 +49,7 @@ public class MyTargetSelectedPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_success ? 0x01 : 0x00);
-		if (_success)
+		if(_success)
 		{
 			packetWriter.writeD(_objectId);
 			packetWriter.writeH(_color);

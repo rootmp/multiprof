@@ -16,17 +16,17 @@ public class MDam extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
 		final Creature realTarget = reflected ? activeChar : target;
 		final AttackInfo info = Formulas.calcMagicDam(activeChar, realTarget, this, isSSPossible(), !isDeathlink());
 
 		realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-		if (info.damage >= 1)
+		if(info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
 		}
 	}

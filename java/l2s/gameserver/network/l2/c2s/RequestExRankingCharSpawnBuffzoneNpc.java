@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -42,16 +43,16 @@ public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPack
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (!activeChar.isInPeaceZone() || !activeChar.getReflection().isMain())
+		if(!activeChar.isInPeaceZone() || !activeChar.getReflection().isMain())
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.RANKERS_AUTHORITY_CANNOT_BE_USED_IN_THIS_AREA));
 			return;
 		}
 
-		if (!activeChar.getInventory().destroyItemByItemId(57, 20_000_000))
+		if(!activeChar.getInventory().destroyItemByItemId(57, 20_000_000))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.FAILED_BECAUSE_THERES_NOT_ENOUGH_ADENA));
 			return;
@@ -69,7 +70,7 @@ public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPack
 		fp.setTargetable(false);
 		fp.setTitle(activeChar.getTitle());
 		fp.spawnMe(activeChar.getLoc());
-		for (Player plr : GameObjectsStorage.getPlayers(false, false))
+		for(Player plr : GameObjectsStorage.getPlayers(false, false))
 			plr.sendPacket(new SystemMessagePacket(SystemMsg.SERVER_RANK_1_C1_HAS_CREATED_RANKERS_AUTHORITY_IN_S2).addName(activeChar).addZoneName(activeChar.getLoc()));
 
 		ServerVariables.set("buffNpcActive", true);
@@ -80,20 +81,18 @@ public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPack
 		activeChar.sendPacket(new ExRankingCharBuffzoneNpcPosition((byte) 1, fp.getX(), fp.getY(), fp.getZ()));
 		activeChar.sendPacket(new ExRankingCharBuffzoneNpcInfo());
 
-		_taskBuff = ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
+		_taskBuff = ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 			SkillEntry buff = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 52018, 1);
 			_hiddenNpc.doCast(buff, _hiddenNpc, true);
-			for (Creature crt : fp.getAroundCharacters(300, 1000))
+			for(Creature crt : fp.getAroundCharacters(300, 1000))
 			{
-				if (crt.isPlayer() || crt.isSummon())
+				if(crt.isPlayer() || crt.isSummon())
 					crt.startAttackStanceTask();
 			}
 			fp.broadcastPacket(new SocialActionPacket(fp.getObjectId(), SocialActionPacket.GREETING));
 		}, 5000, 10000);
 
-		_taskClear = ThreadPoolManager.getInstance().schedule(() ->
-		{
+		_taskClear = ThreadPoolManager.getInstance().schedule(() -> {
 			clearNpc();
 		}, 43200000L);
 	}
@@ -106,12 +105,12 @@ public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPack
 		ServerVariables.unset("buffNpcZ");
 		_hiddenNpc.deleteMe();
 		fp.deleteMe();
-		if (_taskClear != null)
+		if(_taskClear != null)
 		{
 			_taskClear.cancel(true);
 			_taskClear = null;
 		}
-		if (_taskBuff != null)
+		if(_taskBuff != null)
 		{
 			_taskBuff.cancel(true);
 			_taskBuff = null;

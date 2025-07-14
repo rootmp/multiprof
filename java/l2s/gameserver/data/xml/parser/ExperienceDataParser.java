@@ -43,7 +43,7 @@ public final class ExperienceDataParser extends AbstractParser<ExperienceDataHol
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("experience"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("experience"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -58,9 +58,9 @@ public final class ExperienceDataParser extends AbstractParser<ExperienceDataHol
 	@Override
 	protected void onParsed()
 	{
-		for (int level = 1; level < Math.max(getHolder().getMaxLevel(), Math.max(Experience.getMaxLevel(), Experience.getMaxSubLevel())); level++)
+		for(int level = 1; level < Math.max(getHolder().getMaxLevel(), Math.max(Experience.getMaxLevel(), Experience.getMaxSubLevel())); level++)
 		{
-			if (!getHolder().containsData(level))
+			if(!getHolder().containsData(level))
 			{
 				error("Not found experience data for " + level + " level!");
 				Runtime.getRuntime().exit(0);

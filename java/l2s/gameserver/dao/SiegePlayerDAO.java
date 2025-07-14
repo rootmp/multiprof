@@ -45,10 +45,10 @@ public class SiegePlayerDAO
 			statement.setInt(1, residence.getId());
 			statement.setInt(2, clanId);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 				set.add(rset.getInt("object_id"));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SiegePlayerDAO.select(Residence, int): " + e, e);
 		}
@@ -72,7 +72,7 @@ public class SiegePlayerDAO
 			statement.setInt(3, clanId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SiegePlayerDAO.insert(Residence, int, int): " + e, e);
 		}
@@ -95,7 +95,7 @@ public class SiegePlayerDAO
 			statement.setInt(3, clanId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SiegePlayerDAO.delete(Residence, int, int): " + e, e);
 		}
@@ -117,7 +117,7 @@ public class SiegePlayerDAO
 			statement.setInt(2, clanId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SiegePlayerDAO.delete(Residence, int, int): " + e, e);
 		}
@@ -138,7 +138,7 @@ public class SiegePlayerDAO
 			statement.setInt(1, residence.getId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("SiegePlayerDAO.delete(Residence): " + e, e);
 		}

@@ -19,7 +19,7 @@ public class RequestExResetPotentialSkill implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
+
 		//activeChar.getAbilitiesManager().reset();
 	}
 }

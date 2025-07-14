@@ -58,7 +58,7 @@ public class ManualPchLinker
 				{
 					String link = "@" + matcher.group(1);
 					LinkerFactory.addLink(link, matcher.group(2));
-					
+
 				}
 			}
 		}

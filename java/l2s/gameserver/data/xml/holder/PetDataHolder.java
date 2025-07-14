@@ -5,11 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.pet.PetData;
-
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.pet.PetData;
 
 /**
  * @author Bonux
@@ -103,7 +102,8 @@ public final class PetDataHolder extends AbstractHolder
 
 	public PetData getFirstBySameType(int petType)
 	{
-		final Optional<PetData> first = _allTemplates.stream().filter(it -> it.getPetType() == petType && idsOfEvolveLevelNonePets.contains(it.getNpcId())).findFirst();
+		final Optional<PetData> first = _allTemplates.stream().filter(it -> it.getPetType() == petType
+				&& idsOfEvolveLevelNonePets.contains(it.getNpcId())).findFirst();
 		return first.orElse(null);
 	}
 
@@ -132,7 +132,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isGreatWolf(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case GREAT_WOLF_ID:
 			case WGREAT_WOLF_ID:
@@ -146,7 +146,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isHatchling(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case HATCHLING_WIND_ID:
 			case HATCHLING_STAR_ID:
@@ -159,7 +159,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isStrider(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case STRIDER_WIND_ID:
 			case STRIDER_STAR_ID:
@@ -176,7 +176,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isBabyPet(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case BABY_BUFFALO_ID:
 			case BABY_KOOKABURRA_ID:
@@ -189,7 +189,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isImprovedBabyPet(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case IMPROVED_BABY_BUFFALO_ID:
 			case IMPROVED_BABY_KOOKABURRA_ID:
@@ -202,7 +202,7 @@ public final class PetDataHolder extends AbstractHolder
 
 	public static boolean isSpecialPet(int id)
 	{
-		switch (id)
+		switch(id)
 		{
 			case FOX_SHAMAN_ID:
 			case WILD_BEAST_FIGHTER_ID:

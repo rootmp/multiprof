@@ -20,21 +20,21 @@ public class RunnableTrigger implements Runnable
 		int delay = 0;
 
 		SkillEntry skillEntry = _trigger.getSkill();
-		if (skillEntry != null)
+		if(skillEntry != null)
 			delay = skillEntry.getTemplate().getReuseDelay();
-		if (_trigger.getDelay() > delay)
+		if(_trigger.getDelay() > delay)
 			delay = _trigger.getDelay();
-		if (delay <= 0)
+		if(delay <= 0)
 			delay = 1000;
 		_delay = delay;
 	}
 
 	public void run()
 	{
-		if (_creature.getTriggers() == null)
+		if(_creature.getTriggers() == null)
 			return;
 
-		if (!_creature.getTriggers().get(_trigger.getType()).contains(_trigger))
+		if(!_creature.getTriggers().get(_trigger.getType()).contains(_trigger))
 			return;
 
 		_creature.useTriggerSkill(_creature, null, _trigger, null, 0);

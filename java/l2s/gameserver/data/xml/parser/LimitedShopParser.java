@@ -53,13 +53,13 @@ public class LimitedShopParser extends AbstractParser<LimitedShopHolder>
 		LimitedShopContainer list = new LimitedShopContainer();
 
 		int entryId = 0;
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("item".equalsIgnoreCase(element.getName()))
+			if("item".equalsIgnoreCase(element.getName()))
 			{
 				LimitedShopEntry e = parseEntry(element, listId);
-				if (e != null)
+				if(e != null)
 				{
 					e.setEntryId(entryId++);
 					list.addEntry(e);
@@ -75,7 +75,7 @@ public class LimitedShopParser extends AbstractParser<LimitedShopHolder>
 
 		StatsSet info = new StatsSet();
 
-		for (Iterator<Element> iterator = n.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = n.elementIterator(); iterator.hasNext();)
 		{
 			info.put("product1Id", parseInt(n, "product1Id"));
 			info.put("product1Count", parseInt(n, "product1Count", 1));
@@ -97,7 +97,7 @@ public class LimitedShopParser extends AbstractParser<LimitedShopHolder>
 
 			entry.addProduct(new LimitedShopProduction(info));
 			Element d = iterator.next();
-			if ("ingredient".equalsIgnoreCase(d.getName()))
+			if("ingredient".equalsIgnoreCase(d.getName()))
 			{
 				int id = Integer.parseInt(d.attributeValue("id"));
 				long count = Long.parseLong(d.attributeValue("count"));
@@ -106,45 +106,46 @@ public class LimitedShopParser extends AbstractParser<LimitedShopHolder>
 			}
 		}
 
-		if (entry.getIngredients().isEmpty() || entry.getProduction().isEmpty())
+		if(entry.getIngredients().isEmpty() || entry.getProduction().isEmpty())
 		{
 			_log.warn("Limited Shop [" + limitedShopId + "] is empty!");
 			return null;
 		}
 
-		for (LimitedShopIngredient ingredient : entry.getIngredients())
+		for(LimitedShopIngredient ingredient : entry.getIngredients())
 		{
-			if (ingredient.getItemId() == ItemTemplate.ITEM_ID_ADENA && ingredient.getItemCount() == -1)
+			if(ingredient.getItemId() == ItemTemplate.ITEM_ID_ADENA && ingredient.getItemCount() == -1)
 			{
 				long price = 0;
-				for (LimitedShopProduction product : entry.getProduction())
+				for(LimitedShopProduction product : entry.getProduction())
 				{
 					ItemTemplate item = ItemHolder.getInstance().getTemplate(product.getInfo().getInteger("product1Id"));
-					if (item == null)
+					if(item == null)
 						continue;
 
 					price += item.getReferencePrice();
 				}
 
-				if (price <= 0)
+				if(price <= 0)
 					return null;
 
 				ingredient.setItemCount(price);
 			}
 
-			if (ingredient.getItemCount() <= 0)
+			if(ingredient.getItemCount() <= 0)
 			{
 				_log.warn("LimitedShop [" + limitedShopId + "] ingredient ID[" + ingredient.getItemId() + "] has negative item count!");
 				return null;
 			}
 		}
 
-		if (entry.getIngredients().size() == 1 && entry.getProduction().size() == 1 && entry.getIngredients().get(0).getItemId() == 57)
+		if(entry.getIngredients().size() == 1 && entry.getProduction().size() == 1 && entry.getIngredients().get(0).getItemId() == 57)
 		{
 			ItemTemplate item = ItemHolder.getInstance().getTemplate(entry.getProduction().get(0).getInfo().getInteger("product1Id"));
-			if (item == null)
+			if(item == null)
 			{
-				_log.warn("LimitedShop [" + limitedShopId + "] Production [" + entry.getProduction().get(0).getInfo().getInteger("product1Id") + "] not found!");
+				_log.warn("LimitedShop [" + limitedShopId + "] Production [" + entry.getProduction().get(0).getInfo().getInteger("product1Id")
+						+ "] not found!");
 				return null;
 			}
 		}

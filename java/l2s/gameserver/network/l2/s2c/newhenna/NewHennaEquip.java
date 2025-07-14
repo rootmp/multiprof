@@ -8,14 +8,14 @@ public class NewHennaEquip implements IClientOutgoingPacket
 	private final int _slotId;
 	private final int _hennaId;
 	private final boolean _success;
-	
+
 	public NewHennaEquip(int slotId, int hennaId, boolean success)
 	{
 		_slotId = slotId;
 		_hennaId = hennaId;
 		_success = success;
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

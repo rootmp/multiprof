@@ -35,16 +35,17 @@ public class CTBTeamObject implements SpawnableObject
 	@Override
 	public void spawnObject(Event event, Reflection reflection)
 	{
-		if (_flag == null)
+		if(_flag == null)
 		{
 			_flag = new NpcInstance(IdFactory.getInstance().getNextId(), _flagTemplate, StatsSet.EMPTY);
 			_flag.setCurrentHpMp(_flag.getMaxHp(), _flag.getMaxMp());
 			_flag.setHasChatWindow(false);
 			_flag.spawnMe(_flagLoc);
 		}
-		else if (_mob == null)
+		else if(_mob == null)
 		{
-			NpcTemplate template = _siegeClan == null || _siegeClan.getParam() == 0 ? _mobTemplate : NpcHolder.getInstance().getTemplate((int) _siegeClan.getParam());
+			NpcTemplate template = _siegeClan == null
+					|| _siegeClan.getParam() == 0 ? _mobTemplate : NpcHolder.getInstance().getTemplate((int) _siegeClan.getParam());
 
 			_mob = (CTBBossInstance) template.getNewInstance();
 			_mob.setCurrentHpMp(_mob.getMaxHp(), _mob.getMaxMp());
@@ -65,12 +66,12 @@ public class CTBTeamObject implements SpawnableObject
 	@Override
 	public void despawnObject(Event event, Reflection reflection)
 	{
-		if (_mob != null)
+		if(_mob != null)
 		{
 			_mob.deleteMe();
 			_mob = null;
 		}
-		if (_flag != null)
+		if(_flag != null)
 		{
 			_flag.deleteMe();
 			_flag = null;

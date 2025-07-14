@@ -36,10 +36,10 @@ public class CreatureStat
 	{
 		synchronized (_calculators)
 		{
-			for (Func func : funcs)
+			for(Func func : funcs)
 			{
 				int stat = func.stat.ordinal();
-				if (_calculators[stat] == null)
+				if(_calculators[stat] == null)
 					_calculators[stat] = new Calculator(func.stat, _owner);
 				_calculators[stat].addFunc(func);
 			}
@@ -50,10 +50,10 @@ public class CreatureStat
 	{
 		synchronized (_calculators)
 		{
-			for (Func func : funcs)
+			for(Func func : funcs)
 			{
 				int stat = func.stat.ordinal();
-				if (_calculators[stat] != null)
+				if(_calculators[stat] != null)
 					_calculators[stat].removeFunc(func);
 			}
 		}
@@ -63,9 +63,9 @@ public class CreatureStat
 	{
 		synchronized (_calculators)
 		{
-			for (Calculator calculator : _calculators)
+			for(Calculator calculator : _calculators)
 			{
-				if (calculator != null)
+				if(calculator != null)
 					calculator.removeOwner(owner);
 			}
 		}
@@ -114,7 +114,7 @@ public class CreatureStat
 	public double calc(Stats stat, double init, Creature target, Skill skill, StatModifierType modifierType)
 	{
 		Calculator c = _calculators[stat.ordinal()];
-		if (c == null)
+		if(c == null)
 			return init;
 
 		Env env = new Env(_owner, target, skill);

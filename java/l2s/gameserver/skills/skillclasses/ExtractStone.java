@@ -58,23 +58,23 @@ public class ExtractStone extends Skill
 	{
 		super(set);
 		StringTokenizer st = new StringTokenizer(set.getString("npcIds", ""), ";");
-		while (st.hasMoreTokens())
+		while(st.hasMoreTokens())
 			_npcIds.add(Integer.valueOf(st.nextToken()));
 	}
 
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (target == null || !target.isNpc() || getItemId(target.getNpcId()) == 0)
+		if(target == null || !target.isNpc() || getItemId(target.getNpcId()) == 0)
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
-		if (!_npcIds.isEmpty() && !_npcIds.contains(target.getNpcId()))
+		if(!_npcIds.isEmpty() && !_npcIds.contains(target.getNpcId()))
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
@@ -90,24 +90,24 @@ public class ExtractStone extends Skill
 	 */
 	private int getItemId(int npcId)
 	{
-		switch (npcId)
+		switch(npcId)
 		{
 			case RedStarStone1:
 			case RedStarStone2:
 			case RedStarStone3:
-				if (getId() == ExtractScrollSkill)
+				if(getId() == ExtractScrollSkill)
 					return ExtractedCoarseRedStarStone;
 				return ExtractedRedStarStone;
 			case BlueStarStone1:
 			case BlueStarStone2:
 			case BlueStarStone3:
-				if (getId() == ExtractScrollSkill)
+				if(getId() == ExtractScrollSkill)
 					return ExtractedCoarseBlueStarStone;
 				return ExtractedBlueStarStone;
 			case GreenStarStone1:
 			case GreenStarStone2:
 			case GreenStarStone3:
-				if (getId() == ExtractScrollSkill)
+				if(getId() == ExtractScrollSkill)
 					return ExtractedCoarseGreenStarStone;
 				return ExtractedGreenStarStone;
 			case SeedFire:
@@ -131,15 +131,15 @@ public class ExtractStone extends Skill
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
 		Player player = activeChar.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (getItemId(target.getNpcId()) <= 0)
+		if(getItemId(target.getNpcId()) <= 0)
 			return;
 
 		final long count = getId() == ExtractScrollSkill ? 1 : Math.min(10, Rnd.get((int) (getLevel() * player.getRateQuestsDrop() + 1)));
 		final int itemId = getItemId(target.getNpcId());
-		if (count > 0)
+		if(count > 0)
 		{
 			player.getInventory().addItem(itemId, count);
 			player.sendPacket(new PlaySoundPacket(Quest.SOUND_ITEMGET));

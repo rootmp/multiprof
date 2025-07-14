@@ -37,7 +37,7 @@ public class FortressDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, fortress.getId());
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				fortress.getLastSiegeDate().setTimeInMillis(rset.getLong("last_siege_date"));
 				fortress.setOwner(ClanTable.getInstance().getClan(rset.getInt("owner_id")));
@@ -46,7 +46,7 @@ public class FortressDAO
 				fortress.setCycle(rset.getInt("cycle"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.error("FortressDAO#select(Fortress):" + e, e);
 		}
@@ -58,10 +58,10 @@ public class FortressDAO
 
 	public boolean save(Fortress fortress)
 	{
-		if (!fortress.getJdbcState().isSavable())
+		if(!fortress.getJdbcState().isSavable())
 			return false;
 
-		if (save0(fortress))
+		if(save0(fortress))
 		{
 			fortress.setJdbcState(JdbcEntityState.STORED);
 			return true;
@@ -96,7 +96,7 @@ public class FortressDAO
 			statement.execute();
 			return true;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.warn("FortressDAO#save0(Fortress): " + e, e);
 		}
@@ -109,10 +109,10 @@ public class FortressDAO
 
 	public boolean update(Fortress fortress)
 	{
-		if (!fortress.getJdbcState().isUpdatable())
+		if(!fortress.getJdbcState().isUpdatable())
 			return false;
 
-		if (update0(fortress))
+		if(update0(fortress))
 		{
 			fortress.setJdbcState(JdbcEntityState.STORED);
 			return true;
@@ -139,7 +139,7 @@ public class FortressDAO
 			statement.execute();
 			return true;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			LOGGER.warn("FortressDAO#update0(Fortress): " + e, e);
 		}
@@ -152,9 +152,9 @@ public class FortressDAO
 
 	public void saveOrUpdate(Fortress fortress)
 	{
-		if (fortress.getJdbcState().isSavable())
+		if(fortress.getJdbcState().isSavable())
 			save(fortress);
-		else if (fortress.getJdbcState().isUpdatable())
+		else if(fortress.getJdbcState().isUpdatable())
 			update(fortress);
 	}
 }

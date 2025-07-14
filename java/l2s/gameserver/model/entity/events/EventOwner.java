@@ -16,11 +16,11 @@ public abstract class EventOwner
 	@SuppressWarnings("unchecked")
 	public <E extends Event> E getEvent(Class<E> eventClass)
 	{
-		for (Event e : _events)
+		for(Event e : _events)
 		{
-			if (e.getClass() == eventClass) // fast hack
+			if(e.getClass() == eventClass) // fast hack
 				return (E) e;
-			if (eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
+			if(eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
 				return (E) e;
 		}
 		return null;
@@ -30,14 +30,14 @@ public abstract class EventOwner
 	public <E extends Event> List<E> getEvents(Class<E> eventClass)
 	{
 		List<E> events = new ArrayList<E>();
-		for (Event e : _events)
+		for(Event e : _events)
 		{
-			if (e.getClass() == eventClass) // fast hack
+			if(e.getClass() == eventClass) // fast hack
 			{
 				events.add((E) e);
 				continue;
 			}
-			if (eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
+			if(eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
 			{
 				events.add((E) e);
 				continue;
@@ -53,12 +53,12 @@ public abstract class EventOwner
 
 	public boolean containsEvent(Class<? extends Event> eventClass)
 	{
-		for (Event e : _events)
+		for(Event e : _events)
 		{
-			if (e.getClass() == eventClass) // fast hack
+			if(e.getClass() == eventClass) // fast hack
 				return true;
 
-			if (eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
+			if(eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
 				return true;
 		}
 		return false;
@@ -76,11 +76,11 @@ public abstract class EventOwner
 
 	public void removeEvents(Class<? extends Event> eventClass)
 	{
-		for (Event e : _events)
+		for(Event e : _events)
 		{
-			if (e.getClass() == eventClass) // fast hack
+			if(e.getClass() == eventClass) // fast hack
 				_events.remove(e);
-			else if (eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
+			else if(eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL] какойто другой способ определить
 				_events.remove(e);
 		}
 	}

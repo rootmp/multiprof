@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s.limitshop;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.LimitedShopHolder;
 import l2s.gameserver.model.LimitedShopContainer;
@@ -38,19 +39,20 @@ public class RequestExPurchaseLimitShopItemBuy implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		int size = _list.getEntries().size();
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			final LimitedShopEntry entry = _list.getEntries().get(i);
 			LimitedShopProduction product = entry.getProduction().get(0);
-			if (product.getInfo().getInteger("index") == _itemIndex)
+			if(product.getInfo().getInteger("index") == _itemIndex)
 			{
-				for (LimitedShopIngredient ingredient : entry.getIngredients())
+				for(LimitedShopIngredient ingredient : entry.getIngredients())
 				{
-					if (!checkIngredients(activeChar, activeChar.getInventory(), activeChar.getClan(), ingredient.getItemId(), ingredient.getItemCount() * _itemCount))
+					if(!checkIngredients(activeChar, activeChar.getInventory(), activeChar.getClan(), ingredient.getItemId(), ingredient.getItemCount()
+							* _itemCount))
 					{
 						LimitedShopHolder.getInstance().SeparateAndSend(_listId, activeChar);
 						return;
@@ -65,46 +67,46 @@ public class RequestExPurchaseLimitShopItemBuy implements IClientIncomingPacket
 
 	private boolean checkIngredients(Player player, PcInventory inventory, Clan clan, int ingredientId, long totalCount)
 	{
-		if (ingredientId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+		if(ingredientId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 		{
-			if (clan == null)
+			if(clan == null)
 			{
 				player.sendPacket(new SystemMessage(SystemMessage.YOU_ARE_NOT_A_CLAN_MEMBER));
 				return false;
 			}
-			else if (!player.isClanLeader())
+			else if(!player.isClanLeader())
 			{
 				player.sendPacket(new SystemMessage(SystemMessage.ONLY_THE_CLAN_LEADER_IS_ENABLED));
 				return false;
 			}
-			else if (clan.getReputationScore() < totalCount)
+			else if(clan.getReputationScore() < totalCount)
 			{
 				player.sendPacket(new SystemMessage(SystemMessage.THE_CLAN_REPUTATION_SCORE_IS_TOO_LOW));
 				return false;
 			}
 			return true;
 		}
-		else if (ingredientId == ItemTemplate.ITEM_ID_FAME)
+		else if(ingredientId == ItemTemplate.ITEM_ID_FAME)
 		{
-			if (player.getFame() < totalCount)
+			if(player.getFame() < totalCount)
 			{
 				player.sendPacket(new SystemMessage(SystemMessage.NOT_ENOUGH_FAME_POINTS));
 				return false;
 			}
 			return true;
 		}
-		else if (ingredientId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+		else if(ingredientId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 		{
-			if (player.getPcBangPoints() < totalCount)
+			if(player.getPcBangPoints() < totalCount)
 			{
 				player.sendPacket(new SystemMessage(SystemMessage.YOU_ARE_SHORT_OF_ACCUMULATED_POINTS));
 				return false;
 			}
 			return true;
 		}
-		else if (ingredientId == ItemTemplate.ITEM_ID_HONOR_COIN)
+		else if(ingredientId == ItemTemplate.ITEM_ID_HONOR_COIN)
 		{
-			if (player.getHonorCoins() < totalCount)
+			if(player.getHonorCoins() < totalCount)
 			{
 				final SystemMessage sm = new SystemMessage(SystemMessage._2_UNITS_OF_THE_ITEM_S1_IS_REQUIRED);
 				sm.addItemName(95570);
@@ -114,7 +116,7 @@ public class RequestExPurchaseLimitShopItemBuy implements IClientIncomingPacket
 			}
 			return true;
 		}
-		else if (inventory.getItemByItemId(ingredientId).getCount() < totalCount)
+		else if(inventory.getItemByItemId(ingredientId).getCount() < totalCount)
 		{
 			final SystemMessage sm = new SystemMessage(SystemMessage._2_UNITS_OF_THE_ITEM_S1_IS_REQUIRED);
 			sm.addItemName(ingredientId);

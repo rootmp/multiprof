@@ -29,46 +29,48 @@ public class ConditionPlayerCanTransform extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		Player player = env.character.getPlayer();
 		Skill skill = env.skill;
 
-		if (player.getActiveWeaponFlagAttachment() != null)
+		if(player.getActiveWeaponFlagAttachment() != null)
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(skill));
 			return false;
 		}
 
-		if (player.isTransformed())
+		if(player.isTransformed())
 		{
 			player.sendPacket(SystemMsg.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN);
 			return false;
 		}
 
 		TransformTemplate template = TransformTemplateHolder.getInstance().getTemplate(player.getSex(), _transformId);
-		if (template == null)
+		if(template == null)
 		{
-			_log.warn(getClass().getSimpleName() + ": Cannot find transformation template for skill ID[" + skill.getId() + "], LEVEL[" + skill.getLevel() + "]!");
+			_log.warn(getClass().getSimpleName() + ": Cannot find transformation template for skill ID[" + skill.getId() + "], LEVEL[" + skill.getLevel()
+					+ "]!");
 			return false;
 		}
 
 		// Нельзя использовать летающую трансформу на территории Aden, или слишком
 		// высоко/низко, или при вызванном пете/саммоне, или в инстансе
-		if (template.getType() == TransformType.FLYING && (player.getX() > -166168 || player.getZ() <= 0 || player.getZ() >= 6000 || player.hasServitor() || !player.getReflection().isMain()))
+		if(template.getType() == TransformType.FLYING
+				&& (player.getX() > -166168 || player.getZ() <= 0 || player.getZ() >= 6000 || player.hasServitor() || !player.getReflection().isMain()))
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(skill));
 			return false;
 		}
 
-		if (player.isInWater())
+		if(player.isInWater())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_INTO_THE_DESIRED_FORM_IN_WATER);
 			return false;
 		}
 
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_PET);
 			return false;
@@ -76,19 +78,19 @@ public class ConditionPlayerCanTransform extends Condition
 
 		// Для трансформации у игрока не должно быть активировано умение Mystic
 		// Immunity.
-		if (player.isTransformImmune() || player.getAbnormalList().contains(Skill.SKILL_MYSTIC_IMMUNITY))
+		if(player.isTransformImmune() || player.getAbnormalList().contains(Skill.SKILL_MYSTIC_IMMUNITY))
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_UNDER_THE_EFFECT_OF_A_SPECIAL_SKILL);
 			return false;
 		}
 
-		if (player.isInBoat())
+		if(player.isInBoat())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_BOAT);
 			return false;
 		}
 
-		if (player.getPet() != null && template.getType() != TransformType.MODE_CHANGE)
+		if(player.getPet() != null && template.getType() != TransformType.MODE_CHANGE)
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHEN_YOU_HAVE_SUMMONED_A_SERVITORPET);
 			return false;

@@ -23,7 +23,7 @@ public class ConditionGameTime extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		switch (_check)
+		switch(_check)
 		{
 			case NIGHT:
 				return GameTimeController.getInstance().isNowNight() == _required;

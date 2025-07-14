@@ -8,7 +8,6 @@ public class ExAdenlabTranscendProb implements IClientOutgoingPacket
 	private int nBossID;
 	private int[] probs;
 
-
 	public ExAdenlabTranscendProb(int nBossID, int[] probs)
 	{
 		this.nBossID = nBossID;

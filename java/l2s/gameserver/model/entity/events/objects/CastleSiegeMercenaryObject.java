@@ -59,7 +59,7 @@ public class CastleSiegeMercenaryObject
 	public ClassId getClassId()
 	{
 		Player player = getPlayer();
-		if (player != null)
+		if(player != null)
 			classId = player.getClassId();
 		return classId;
 	}

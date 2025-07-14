@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
@@ -17,7 +18,7 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-		if (packet.hasRemaining())
+		if(packet.hasRemaining())
 			_response = packet.readD();
 		else
 			_response = 0;
@@ -28,21 +29,21 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.PARTY_ROOM))
+		if(request == null || !request.isTypeOf(L2RequestType.PARTY_ROOM))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -50,7 +51,7 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -58,7 +59,7 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -66,14 +67,14 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 		}
 
 		// отказ
-		if (_response == 0)
+		if(_response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(SystemMsg.THE_PLAYER_DECLINED_TO_JOIN_YOUR_PARTY);
 			return;
 		}
 
-		if (activeChar.getMatchingRoom() != null)
+		if(activeChar.getMatchingRoom() != null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -83,7 +84,7 @@ public class AnswerJoinPartyRoom implements IClientIncomingPacket
 		try
 		{
 			MatchingRoom room = requestor.getMatchingRoom();
-			if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
+			if(room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
 				return;
 
 			room.addMember(activeChar);

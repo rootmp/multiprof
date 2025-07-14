@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -23,14 +24,14 @@ public class RequestExJoinMpccRoom implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (player.getMatchingRoom() != null)
+		if(player.getMatchingRoom() != null)
 			return;
 
 		MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.CC_MATCHING, _roomId);
-		if (room == null)
+		if(room == null)
 			return;
 
 		room.addMember(player);

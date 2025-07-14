@@ -25,8 +25,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ElementArray
-{
+public @interface ElementArray {
 	/**
 	 * @return - строка - индикатор начала массива элементов
 	 */

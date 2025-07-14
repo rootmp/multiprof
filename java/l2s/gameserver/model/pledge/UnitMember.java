@@ -59,7 +59,7 @@ public class UnitMember
 		_leaderOf = leaderOf;
 		_attendanceType = clanAttendance;
 
-		if (powerGrade != 0)
+		if(powerGrade != 0)
 		{
 			RankPrivs r = clan.getRankPrivs(powerGrade);
 			r.setParty(clan.countMembersByRank(powerGrade));
@@ -75,7 +75,7 @@ public class UnitMember
 	public void setPlayerInstance(Player player, boolean exit)
 	{
 		_player = exit ? null : player;
-		if (player == null)
+		if(player == null)
 		{
 			cancelChangeAttendanceTask();
 			return;
@@ -91,20 +91,19 @@ public class UnitMember
 		_apprentice = player.getApprentice();
 		_sex = player.getSex().ordinal();
 
-		if (!exit)
+		if(!exit)
 		{
-			if (_attendanceType == PledgeAttendanceType.NOT_ACQUIRED)
+			if(_attendanceType == PledgeAttendanceType.NOT_ACQUIRED)
 			{
-				if (_changeAttendanceTask == null)
+				if(_changeAttendanceTask == null)
 				{
-					_changeAttendanceTask = ThreadPoolManager.getInstance().schedule(() ->
-					{
+					_changeAttendanceTask = ThreadPoolManager.getInstance().schedule(() -> {
 						int oldLevel = PledgeBonusUtils.getAttendanceProgressLevel(_clan.getAttendanceProgress());
 						setAttendanceType(PledgeAttendanceType.ACQUIRED);
 						_clan.broadcastToOnlineMembers(new PledgeShowMemberListUpdatePacket(this));
 						_clan.broadcastToOnlineMembers(new ExPledgeBonusUpdate(ExPledgeBonusUpdate.BonusType.ATTENDANCE, _clan.getAttendanceProgress()));
 						int newLevel = PledgeBonusUtils.getAttendanceProgressLevel(_clan.getAttendanceProgress());
-						if (newLevel > oldLevel)
+						if(newLevel > oldLevel)
 							_clan.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.YOUR_CLAN_HAS_ACHIEVED_LOGIN_BONUS_LV_S1).addInteger(newLevel));
 					}, ATTENDANCE_CHANGE_DELAY);
 				}
@@ -116,7 +115,7 @@ public class UnitMember
 
 	private void cancelChangeAttendanceTask()
 	{
-		if (_changeAttendanceTask != null)
+		if(_changeAttendanceTask != null)
 		{
 			_changeAttendanceTask.cancel(false);
 			_changeAttendanceTask = null;
@@ -179,7 +178,7 @@ public class UnitMember
 	{
 		Player player = getPlayer();
 		_title = title;
-		if (player != null)
+		if(player != null)
 		{
 			player.setTitle(title);
 			player.broadcastPacket(new NickNameChangedPacket(player));
@@ -196,7 +195,7 @@ public class UnitMember
 				statement.setInt(2, getObjectId());
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("", e);
 			}
@@ -222,7 +221,7 @@ public class UnitMember
 	{
 		Player player = getPlayer();
 		_pledgeType = pledgeType;
-		if (player != null)
+		if(player != null)
 			player.setPledgeType(pledgeType);
 		else
 			updatePledgeType();
@@ -240,7 +239,7 @@ public class UnitMember
 			statement.setInt(2, getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -261,7 +260,7 @@ public class UnitMember
 		Player player = getPlayer();
 		int oldPowerGrade = getPowerGrade();
 		_powerGrade = newPowerGrade;
-		if (player != null)
+		if(player != null)
 			player.setPowerGrade(newPowerGrade);
 		else
 			updatePowerGrade();
@@ -270,12 +269,12 @@ public class UnitMember
 
 	private void updatePowerGradeParty(int oldGrade, int newGrade)
 	{
-		if (oldGrade != 0)
+		if(oldGrade != 0)
 		{
 			RankPrivs r1 = getClan().getRankPrivs(oldGrade);
 			r1.setParty(getClan().countMembersByRank(oldGrade));
 		}
-		if (newGrade != 0)
+		if(newGrade != 0)
 		{
 			RankPrivs r2 = getClan().getRankPrivs(newGrade);
 			r2.setParty(getClan().countMembersByRank(newGrade));
@@ -294,7 +293,7 @@ public class UnitMember
 			statement.setInt(2, getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -314,7 +313,7 @@ public class UnitMember
 	{
 		Player player = getPlayer();
 		_apprentice = apprentice;
-		if (player != null)
+		if(player != null)
 			player.setApprentice(apprentice);
 		else
 			updateApprentice();
@@ -332,7 +331,7 @@ public class UnitMember
 			statement.setInt(2, getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -349,7 +348,7 @@ public class UnitMember
 
 	public void setAttendanceType(PledgeAttendanceType attendanceType)
 	{
-		if (_attendanceType == attendanceType)
+		if(_attendanceType == attendanceType)
 			return;
 
 		_attendanceType = attendanceType;
@@ -368,7 +367,7 @@ public class UnitMember
 			statement.setInt(2, getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -380,8 +379,8 @@ public class UnitMember
 
 	public String getApprenticeName()
 	{
-		if (getApprentice() != 0)
-			if (getClan().getAnyMember(getApprentice()) != null)
+		if(getApprentice() != 0)
+			if(getClan().getAnyMember(getApprentice()) != null)
 				return getClan().getAnyMember(getApprentice()).getName();
 		return "";
 	}
@@ -393,11 +392,11 @@ public class UnitMember
 
 	public int getSponsor()
 	{
-		if (getPledgeType() != Clan.SUBUNIT_ACADEMY)
+		if(getPledgeType() != Clan.SUBUNIT_ACADEMY)
 			return 0;
 		int id = getObjectId();
-		for (UnitMember element : getClan())
-			if (element.getApprentice() == id)
+		for(UnitMember element : getClan())
+			if(element.getApprentice() == id)
 				return element.getObjectId();
 		return 0;
 	}
@@ -405,9 +404,9 @@ public class UnitMember
 	private String getSponsorName()
 	{
 		int sponsorId = getSponsor();
-		if (sponsorId == 0)
+		if(sponsorId == 0)
 			return "";
-		else if (getClan().getAnyMember(sponsorId) != null)
+		else if(getClan().getAnyMember(sponsorId) != null)
 			return getClan().getAnyMember(sponsorId).getName();
 		return "";
 	}
@@ -419,7 +418,7 @@ public class UnitMember
 
 	public String getRelatedName()
 	{
-		if (getPledgeType() == Clan.SUBUNIT_ACADEMY)
+		if(getPledgeType() == Clan.SUBUNIT_ACADEMY)
 			return getSponsorName();
 		return getApprenticeName();
 	}
@@ -432,8 +431,8 @@ public class UnitMember
 
 	public int isSubLeader()
 	{
-		for (SubUnit pledge : getClan().getAllSubUnits())
-			if (pledge.getLeaderObjectId() == getObjectId())
+		for(SubUnit pledge : getClan().getAllSubUnits())
+			if(pledge.getLeaderObjectId() == getObjectId())
 				return pledge.getType();
 		return 0;
 	}

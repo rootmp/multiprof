@@ -12,15 +12,14 @@ public class ExRankingCharBuffzoneNpcInfo implements IClientOutgoingPacket
 {
 
 	public ExRankingCharBuffzoneNpcInfo()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		long minsToReset = ServerVariables.getLong("buffNpcReset", 0);
 		long diff = minsToReset - System.currentTimeMillis();
-		if (diff <= 0)
+		if(diff <= 0)
 		{
 			packetWriter.writeD(0);
 		}

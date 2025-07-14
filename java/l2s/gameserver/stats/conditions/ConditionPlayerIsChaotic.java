@@ -19,9 +19,9 @@ public class ConditionPlayerIsChaotic extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Player player = env.character.getPlayer();
-		if (player == null)
+		if(player == null)
 			return !_chaotic;
-		if (player.isPK())
+		if(player.isPK())
 			return _chaotic;
 		return !_chaotic;
 	}

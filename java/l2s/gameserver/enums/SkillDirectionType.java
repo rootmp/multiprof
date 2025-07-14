@@ -15,10 +15,10 @@ public enum SkillDirectionType
 	{
 		pst_name = s;
 	}
-	
+
 	public static SkillDirectionType findByName(String name)
 	{
-		for(SkillDirectionType dir  : SkillDirectionType.values())
+		for(SkillDirectionType dir : SkillDirectionType.values())
 		{
 			if(dir.pst_name.equalsIgnoreCase(name))
 				return dir;

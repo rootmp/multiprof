@@ -10,18 +10,17 @@ import l2s.gameserver.network.l2.s2c.ExOlympiadRecord;
  */
 public class OlympiadStat implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		109
+	private static final int[] COMMAND_IDS = {
+			109
 	};
 
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (id != COMMAND_IDS[0])
+		if(id != COMMAND_IDS[0])
 			return false;
 
-		if (activeChar.isInOlympiadMode() || activeChar.isInObserverMode())
+		if(activeChar.isInOlympiadMode() || activeChar.isInObserverMode())
 		{
 			activeChar.sendPacket(SystemMsg.UNABLE_TO_OPEN_OLYMPIAD_SCREEN_WHILE_IN_PARTICIPATING_OR_WATCHING_A_MATCH);
 			return true;

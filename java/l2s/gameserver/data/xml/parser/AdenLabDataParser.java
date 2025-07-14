@@ -8,8 +8,8 @@ import org.dom4j.Element;
 import l2s.commons.data.xml.AbstractParser;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.AdenLabDataHolder;
-import l2s.gameserver.templates.adenLab.CardselectOptionData;
 import l2s.gameserver.templates.adenLab.AdenLabStageTemplate;
+import l2s.gameserver.templates.adenLab.CardselectOptionData;
 
 public class AdenLabDataParser extends AbstractParser<AdenLabDataHolder>
 {
@@ -41,14 +41,14 @@ public class AdenLabDataParser extends AbstractParser<AdenLabDataHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		Element config = rootElement.element("config");
-		if(config!=null)
+		if(config != null)
 		{
 			Config.ADENLAB_RESEARCH_DIARY = parseIntArr(config, "research_diary", ",");
 			Config.ADENLAB_ADENA_PLAY = parseLong(config, "adena_play");
 			Config.ADENLAB_ADENA_FIX = parseLong(config, "adena_fix");
 		}
-		
-		for (Iterator<Element> iterator = rootElement.elementIterator("stage"); iterator.hasNext();)
+
+		for(Iterator<Element> iterator = rootElement.elementIterator("stage"); iterator.hasNext();)
 		{
 			Element stageElement = iterator.next();
 
@@ -58,23 +58,23 @@ public class AdenLabDataParser extends AbstractParser<AdenLabDataHolder>
 			AdenLabStageTemplate stageTemplate = new AdenLabStageTemplate(id, cardCount);
 
 			Element effectElement = stageElement.element("normal_effect");
-			if (effectElement != null)
+			if(effectElement != null)
 				stageTemplate.setNormalEffect(parseInt(effectElement, "id"));
 
-			for (Iterator<Element> specialEffectIterator = stageElement.elementIterator("special_effect"); specialEffectIterator.hasNext();)
+			for(Iterator<Element> specialEffectIterator = stageElement.elementIterator("special_effect"); specialEffectIterator.hasNext();)
 			{
 				Element specialEffectElement = specialEffectIterator.next();
 
 				int slotIndex = parseInt(specialEffectElement, "slot", -1);
 
-				if (slotIndex < 0 || slotIndex > 1)
+				if(slotIndex < 0 || slotIndex > 1)
 				{
 					_log.warn("Invalid slot index " + slotIndex + " in stage " + id + ", skipping...");
 					continue;
 				}
 				stageTemplate.specialOptionsId[slotIndex] = parseInt(specialEffectElement, "option", 0);
-				
-				for (Iterator<Element> optionIterator = specialEffectElement.elementIterator("option"); optionIterator.hasNext();)
+
+				for(Iterator<Element> optionIterator = specialEffectElement.elementIterator("option"); optionIterator.hasNext();)
 				{
 					Element optionElement = optionIterator.next();
 					int level = parseInt(optionElement, "level", 1);

@@ -46,14 +46,13 @@ import l2s.gameserver.network.l2.s2c.ServerClose;
 import l2s.gameserver.security.SecondaryPasswordAuth;
 import l2s.gameserver.utils.Language;
 
-
 /**
  * Represents a client connected on Game Server
  */
 public final class GameClient extends ChannelInboundHandler<GameClient>
 {
 	private static final Logger logger = LoggerFactory.getLogger(GameClient.class);
-	
+
 	private Channel _channel;
 	public GameCrypt _crypt = null;
 
@@ -77,17 +76,17 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 
 	private List<Integer> _charSlotMapping = new ArrayList<Integer>();
 	private HwidHolder hwidHolder = null;
-	
+
 	public static int DEFAULT_PAWN_CLIPPING_RANGE = 2048;
 	private int _pingTimestamp;
 	private int _ping;
 	private int _fps;
 	private int _pawnClippingRange;
 	private ScheduledFuture<?> _pingTaskFuture;
-	
+
 	private volatile boolean _isDetached = false;
 	private boolean isAuthed = false;
-	
+
 	public GameClient()
 	{
 		_crypt = new GameCrypt();
@@ -121,16 +120,16 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 			_pingTaskFuture.cancel(true);
 			_pingTaskFuture = null;
 		}
-		
+
 		final Player player;
 		setConnectionState(ConnectionState.DISCONNECTED);
 		player = getActiveChar();
-		
-		if(player != null&& !isLogout() && player.getAutoFarm().isFarmActivate() && player.hasPremiumAccount() && !player.isInOfflineMode())
+
+		if(player != null && !isLogout() && player.getAutoFarm().isFarmActivate() && player.hasPremiumAccount() && !player.isInOfflineMode())
 		{
 			//player.offlineAF();
 		}
-		
+
 		setActiveChar(null);
 
 		if(player != null)
@@ -161,7 +160,7 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 			{
 				packet.run(GameClient.this);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				logger.warn("Exception for: {} on packet.run: {}", toString(), packet.getClass().getSimpleName(), e);
 			}
@@ -171,48 +170,47 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
 	{
-		if (cause instanceof IOException) 
+		if(cause instanceof IOException)
 		{
-			if (cause.getMessage().equals("Connection reset by peer")) 
+			if(cause.getMessage().equals("Connection reset by peer"))
 			{
-				 logger.debug("Network exception caught for: {}", toString());
+				logger.debug("Network exception caught for: {}", toString());
 				ctx.close();
 				return;
 			}
 
-			if (cause.getMessage().equals("An existing connection was forcibly closed by the remote host")) 
+			if(cause.getMessage().equals("An existing connection was forcibly closed by the remote host"))
 			{
-				 logger.debug("Network exception caught for: {}", toString());
+				logger.debug("Network exception caught for: {}", toString());
 				ctx.close();
 				return;
 			}
 		}
 
-		 logger.warn("Network exception caught for: {}", toString());
+		logger.warn("Network exception caught for: {}", toString());
 	}
-	
-	public boolean isAuthed() 
+
+	public boolean isAuthed()
 	{
 		return isAuthed;
 	}
 
-	public void setAuthed(boolean authed) 
+	public void setAuthed(boolean authed)
 	{
 		isAuthed = authed;
 	}
-	
+
 	public ICrypt getCrypt()
 	{
 		return _crypt;
 	}
-	
+
 	public boolean isConnected()
 	{
 		final Channel conn = _channel;
 		return conn != null && conn.isActive();
 	}
 
-	
 	public void markRestoredChar(int charslot) throws Exception
 	{
 		int objid = getObjectIdForSlot(charslot);
@@ -313,16 +311,17 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 				character = oldPlayer;
 			}
 		}
-		
-		if(getHwidHolder()!=null)
+
+		if(getHwidHolder() != null)
 		{
-			List<Player> adPlayers = GameObjectsStorage.getOfflinePlayers().stream().filter(p-> !p.getLastHwid().isEmpty()&& p.isInOfflineMode()&& p.getLastHwid().equalsIgnoreCase(getHwidHolder().asString())).collect(Collectors.toList());
-			for(Player p:adPlayers)
+			List<Player> adPlayers = GameObjectsStorage.getOfflinePlayers().stream().filter(p -> !p.getLastHwid().isEmpty() && p.isInOfflineMode()
+					&& p.getLastHwid().equalsIgnoreCase(getHwidHolder().asString())).collect(Collectors.toList());
+			for(Player p : adPlayers)
 			{
 				p.kick();
 			}
 		}
-		
+
 		if(character == null)
 			character = Player.restore(objectId, hwidHolder);
 
@@ -336,12 +335,12 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 
 	public void closeNow()
 	{
-		if (_channel != null)
+		if(_channel != null)
 		{
 			_channel.close();
 		}
 	}
-	
+
 	public void close(IClientOutgoingPacket packet)
 	{
 		sendPacket(packet);
@@ -352,7 +351,7 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 	{
 		close(toLoginScreen ? ServerClose.STATIC_PACKET : LogOutOkPacket.STATIC);
 	}
-	
+
 	public int getObjectIdForSlot(int charslot)
 	{
 		if(charslot < 0 || charslot >= _charSlotMapping.size())
@@ -387,7 +386,7 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 	{
 		return hwidHolder.asString();
 	}
-	
+
 	/**
 	 * @return Returns the sessionId.
 	 */
@@ -456,10 +455,8 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 
 	public void sendPacket(IClientOutgoingPacket packet)
 	{
-		if (_isDetached || packet == null)
-		{
-			return;
-		}
+		if(_isDetached || packet == null)
+		{ return; }
 
 		// Write into the channel.
 		_channel.writeAndFlush(packet);
@@ -478,7 +475,6 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 		return HostsConfigHolder.getInstance().getServerId(getIpAddr());
 	}
 
-	
 	public byte[] enableCrypt()
 	{
 		byte[] key = BlowFishKeygen.getRandomKey();
@@ -554,18 +550,23 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 			final InetAddress address = _addr;
 			IConnectionState state = getConnectionState();
 			final Player player = getActiveChar();
-			if (ConnectionState.CONNECTED.equals(state)) {
+			if(ConnectionState.CONNECTED.equals(state))
+			{
 				return "[IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
-			} else if (ConnectionState.AUTHENTICATED.equals(state)) {
+			}
+			else if(ConnectionState.AUTHENTICATED.equals(state))
+			{
 				return "[Account: " + getLogin() + " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
-			} else if (ConnectionState.IN_GAME.equals(state) || ConnectionState.JOINING_GAME.equals(state)) {
+			}
+			else if(ConnectionState.IN_GAME.equals(state) || ConnectionState.JOINING_GAME.equals(state))
+			{
 				return "[Character: " + (player == null ? "disconnected" : player)
 						+ " - Account: " + getLogin()
 						+ " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
 			}
 			throw new IllegalStateException("Missing state on switch: " + state);
 		}
-		catch (NullPointerException e)
+		catch(NullPointerException e)
 		{
 			return "[Character read failed due to disconnect]";
 		}
@@ -581,8 +582,8 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 
 	public int getSlotForObjectId(final int objectId)
 	{
-		final List <Integer> charSlotMapping = _charSlotMapping;
-		return IntStream.range(0, charSlotMapping.size()).filter(slotIdx->Integer.valueOf(objectId).equals(charSlotMapping.get(slotIdx))).findFirst().orElse(-1);
+		final List<Integer> charSlotMapping = _charSlotMapping;
+		return IntStream.range(0, charSlotMapping.size()).filter(slotIdx -> Integer.valueOf(objectId).equals(charSlotMapping.get(slotIdx))).findFirst().orElse(-1);
 	}
 
 	public void onPing(final int timestamp, final int fps, final int pawnClipRange)
@@ -597,7 +598,7 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 			_pingTaskFuture = ThreadPoolManager.getInstance().schedule(new PingTask(this), 30000L);
 		}
 	}
-	
+
 	private void doPing()
 	{
 		final long nowMs = System.currentTimeMillis();
@@ -617,12 +618,11 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 		return _fps;
 	}
 
-	
 	public int getPawnClippingRange()
 	{
 		return _pawnClippingRange;
 	}
-	
+
 	private static class PingTask implements Runnable
 	{
 		private final GameClient _client;
@@ -636,18 +636,19 @@ public final class GameClient extends ChannelInboundHandler<GameClient>
 		public void run()
 		{
 			if(_client == null || !_client.isConnected())
-			 return; 
+				return;
 			_client.doPing();
 		}
 
 	}
-	
+
 	private boolean isLogout = false;
-	
+
 	public void setLogout(boolean b)
 	{
 		isLogout = b;
 	}
+
 	public boolean isLogout()
 	{
 		return isLogout;

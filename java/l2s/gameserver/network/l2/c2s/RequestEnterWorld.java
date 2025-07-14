@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 
 import org.napile.primitive.pair.IntObjectPair;
@@ -128,7 +129,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null)
+		if(activeChar == null)
 		{
 			client.closeNow();
 			return;
@@ -145,7 +146,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		activeChar.sendPacket(ExLightingCandleEvent.DISABLED);
 		activeChar.sendPacket(new ExEnterWorldPacket());
-		if (Config.EX_USE_TO_DO_LIST)
+		if(Config.EX_USE_TO_DO_LIST)
 		{
 			activeChar.sendPacket(new ExConnectedTimeAndGettableReward(activeChar));
 			activeChar.sendPacket(new ExOneDayReceiveRewardList(activeChar));
@@ -154,7 +155,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.sendPacket(new HennaInfoPacket(activeChar));
 
 		List<Castle> castleList = ResidenceHolder.getInstance().getResidenceList(Castle.class);
-		for (Castle c : castleList)
+		for(Castle c : castleList)
 		{
 			activeChar.sendPacket(new ExCastleState(c));
 		}
@@ -170,17 +171,17 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.sendPacket(SystemMsg.WELCOME_TO_THE_WORLD_OF_LINEAGE_II);
 
 		double mpCostDiff = activeChar.getMPCostDiff(SkillMagicType.PHYSIC);
-		if (mpCostDiff != 0)
+		if(mpCostDiff != 0)
 		{
 			activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.PHYSIC, mpCostDiff));
 		}
 		mpCostDiff = activeChar.getMPCostDiff(SkillMagicType.MAGIC);
-		if (mpCostDiff != 0)
+		if(mpCostDiff != 0)
 		{
 			activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.MAGIC, mpCostDiff));
 		}
 		mpCostDiff = activeChar.getMPCostDiff(SkillMagicType.MUSIC);
-		if (mpCostDiff != 0)
+		if(mpCostDiff != 0)
 		{
 			activeChar.sendPacket(new ExChangeMPCost(SkillMagicType.MUSIC, mpCostDiff));
 		}
@@ -199,10 +200,10 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		Announcements.getInstance().showAnnouncements(activeChar);
 
-		if (first)
+		if(first)
 		{
 			activeChar.setOnlineStatus(true);
-			if (activeChar.getPlayerAccess().GodMode && !Config.SHOW_GM_LOGIN && !Config.EVERYBODY_HAS_ADMIN_RIGHTS)
+			if(activeChar.getPlayerAccess().GodMode && !Config.SHOW_GM_LOGIN && !Config.EVERYBODY_HAS_ADMIN_RIGHTS)
 			{
 				activeChar.setGMInvisible(true);
 				activeChar.startAbnormalEffect(AbnormalEffect.STEALTH);
@@ -211,13 +212,13 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			activeChar.setNonAggroTime(Long.MAX_VALUE);
 			activeChar.setNonPvpTime(System.currentTimeMillis() + Config.NONPVP_TIME_ONTELEPORT);
 
-			if (activeChar.isInBuffStore())
+			if(activeChar.isInBuffStore())
 			{
 				activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 			}
-			else if (activeChar.isInStoreMode())
+			else if(activeChar.isInStoreMode())
 			{
-				if (!TradeHelper.validateStore(activeChar))
+				if(!TradeHelper.validateStore(activeChar))
 				{
 					activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 					activeChar.storePrivateStore();
@@ -240,11 +241,11 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.getAttendanceRewards().onEnterWorld();
 		activeChar.sendPacket(new ExReceiveShowPostFriend(activeChar));
 
-		if (Config.ALLOW_WORLD_CHAT)
+		if(Config.ALLOW_WORLD_CHAT)
 		{
 			activeChar.sendPacket(new ExWorldChatCnt(activeChar));
 		}
-		if (Config.EX_USE_PRIME_SHOP)
+		if(Config.EX_USE_PRIME_SHOP)
 		{
 			activeChar.sendPacket(new ExBR_NewIConCashBtnWnd(activeChar));
 			activeChar.sendPacket(new ReciveVipInfo(activeChar));
@@ -252,13 +253,13 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		activeChar.sendPacket(new ExElementalSpiritInfo(activeChar, 0));
 
-		if (Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		if(Config.RANDOM_CRAFT_SYSTEM_ENABLED)
 		{
 			activeChar.sendPacket(new ExCraftInfo(activeChar));
 		}
 		checkNewMail(activeChar);
 
-		if (first)
+		if(first)
 		{
 			activeChar.getListeners().onEnter();
 			RankManager.getInstance().onPlayerEnter(activeChar);
@@ -266,7 +267,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		activeChar.checkAndDeleteOlympiadItems();
 
-		if (activeChar.getClan() != null)
+		if(activeChar.getClan() != null)
 		{
 			activeChar.getClan().loginClanCond(activeChar, true);
 			activeChar.sendPacket(activeChar.getClan().listAll());
@@ -277,13 +278,13 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			activeChar.sendPacket(new ExPledgeCount(0));
 		}
 		// engage and notify Partner
-		if (first && Config.ALLOW_WEDDING)
+		if(first && Config.ALLOW_WEDDING)
 		{
 			CoupleManager.getInstance().engage(activeChar);
 			CoupleManager.getInstance().notifyPartner(activeChar);
 		}
 
-		if (first)
+		if(first)
 		{
 			activeChar.getFriendList().notifyFriends(true);
 			activeChar.getSpectatingList().notifySpectatings(true);
@@ -292,7 +293,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.checkHpMessages(activeChar.getMaxHp(), activeChar.getCurrentHp());
 		activeChar.checkDayNightMessages();
 
-		if (Config.SHOW_HTML_WELCOME)
+		if(Config.SHOW_HTML_WELCOME)
 		{
 			String html = HtmCache.getInstance().getHtml("welcome.htm", activeChar);
 			HtmlMessage msg = new HtmlMessage(5);
@@ -300,49 +301,53 @@ public class RequestEnterWorld implements IClientIncomingPacket
 			activeChar.sendPacket(msg);
 		}
 
-		if (Config.PETITIONING_ALLOWED)
+		if(Config.PETITIONING_ALLOWED)
 		{
 			PetitionManager.getInstance().checkPetitionMessages(activeChar);
 		}
-		if (!first)
+		if(!first)
 		{
 			CreatureSkillCast skillCast = activeChar.getSkillCast(SkillCastingType.NORMAL);
-			if (skillCast.isCastingNow())
+			if(skillCast.isCastingNow())
 			{
 				Creature castingTarget = skillCast.getTarget();
 				SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 				long animationEndTime = skillCast.getAnimationEndTime();
-				if (castingSkillEntry != null && !castingSkillEntry.getTemplate().isNotBroadcastable() && castingTarget != null && castingTarget.isCreature() && animationEndTime > 0)
+				if(castingSkillEntry != null && !castingSkillEntry.getTemplate().isNotBroadcastable() && castingTarget != null && castingTarget.isCreature()
+						&& animationEndTime > 0)
 				{
-					activeChar.sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0, SkillCastingType.NORMAL));
+					activeChar.sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+							- System.currentTimeMillis()), 0, SkillCastingType.NORMAL));
 				}
 			}
 
 			skillCast = activeChar.getSkillCast(SkillCastingType.NORMAL_SECOND);
-			if (skillCast.isCastingNow())
+			if(skillCast.isCastingNow())
 			{
 				Creature castingTarget = skillCast.getTarget();
 				SkillEntry castingSkillEntry = skillCast.getSkillEntry();
 				long animationEndTime = skillCast.getAnimationEndTime();
-				if (castingSkillEntry != null && !castingSkillEntry.getTemplate().isNotBroadcastable() && castingTarget != null && castingTarget.isCreature() && animationEndTime > 0)
+				if(castingSkillEntry != null && !castingSkillEntry.getTemplate().isNotBroadcastable() && castingTarget != null && castingTarget.isCreature()
+						&& animationEndTime > 0)
 				{
-					activeChar.sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0, SkillCastingType.NORMAL_SECOND));
+					activeChar.sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkillEntry.getId(), castingSkillEntry.getLevel(), (int) (animationEndTime
+							- System.currentTimeMillis()), 0, SkillCastingType.NORMAL_SECOND));
 				}
 			}
 
-			if (activeChar.isInBoat())
+			if(activeChar.isInBoat())
 			{
 				activeChar.sendPacket(activeChar.getBoat().getOnPacket(activeChar, activeChar.getInBoatPosition()));
 			}
-			if (activeChar.getMovement().isMoving() || activeChar.getMovement().isFollow())
+			if(activeChar.getMovement().isMoving() || activeChar.getMovement().isFollow())
 			{
 				activeChar.sendPacket(activeChar.movePacket());
 			}
-			if (activeChar.getMountNpcId() != 0)
+			if(activeChar.getMountNpcId() != 0)
 			{
 				activeChar.sendPacket(new RidePacket(activeChar));
 			}
-			if (activeChar.isFishing())
+			if(activeChar.isFishing())
 			{
 				activeChar.getFishing().stop();
 			}
@@ -350,11 +355,11 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		activeChar.entering = false;
 
-		if (activeChar.isSitting())
+		if(activeChar.isSitting())
 		{
 			activeChar.sendPacket(new ChangeWaitTypePacket(activeChar, ChangeWaitTypePacket.WT_SITTING));
 		}
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(activeChar.getPrivateStoreMsgPacket(activeChar));
 		}
@@ -369,16 +374,16 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		// на всякий случай
 		activeChar.sendActionFailed();
 
-		if (first && activeChar.isGM() && Config.SAVE_GM_EFFECTS && activeChar.getPlayerAccess().CanUseGMCommand)
+		if(first && activeChar.isGM() && Config.SAVE_GM_EFFECTS && activeChar.getPlayerAccess().CanUseGMCommand)
 		{
 			// silence
-			if (activeChar.getVarBoolean("gm_silence"))
+			if(activeChar.getVarBoolean("gm_silence"))
 			{
 				activeChar.setMessageRefusal(true);
 				activeChar.sendPacket(SystemMsg.MESSAGE_REFUSAL_MODE);
 			}
 			// invul
-			if (activeChar.getVarBoolean("gm_invul"))
+			if(activeChar.getVarBoolean("gm_invul"))
 			{
 				activeChar.getFlags().getInvulnerable().start();
 				activeChar.getFlags().getDebuffImmunity().start();
@@ -386,7 +391,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 				activeChar.sendMessage(activeChar.getName() + " is now immortal.");
 			}
 			// undying
-			if (activeChar.getVarBoolean("gm_undying"))
+			if(activeChar.getVarBoolean("gm_undying"))
 			{
 				activeChar.setGMUndying(true);
 				activeChar.sendMessage("Undying state has been enabled.");
@@ -398,16 +403,16 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		PlayerMessageStack.getInstance().CheckMessages(activeChar);
 
 		IntObjectPair<OnAnswerListener> entry = activeChar.getAskListener(false);
-		if (entry != null && entry.getValue() instanceof ReviveAnswerListener)
+		if(entry != null && entry.getValue() instanceof ReviveAnswerListener)
 		{
 			activeChar.sendPacket(new ConfirmDlgPacket(SystemMsg.C1_IS_MAKING_AN_ATTEMPT_TO_RESURRECT_YOU_IF_YOU_CHOOSE_THIS_PATH_S2_EXPERIENCE_WILL_BE_RETURNED_FOR_YOU, 0).addString("Other player").addString("some"));
 		}
-		if (!first)
+		if(!first)
 		{
 			// Персонаж вылетел во время просмотра
-			if (activeChar.isInObserverMode())
+			if(activeChar.isInObserverMode())
 			{
-				if (activeChar.getObserverMode() == Player.OBSERVER_LEAVING)
+				if(activeChar.getObserverMode() == Player.OBSERVER_LEAVING)
 				{
 					activeChar.returnFromObserverMode();
 				}
@@ -416,25 +421,25 @@ public class RequestEnterWorld implements IClientIncomingPacket
 					activeChar.leaveObserverMode();
 				}
 			}
-			else if (activeChar.isVisible())
+			else if(activeChar.isVisible())
 			{
 				World.showObjectsToPlayer(activeChar);
 			}
 
 			final List<Servitor> servitors = activeChar.getServitors();
-			for (Servitor servitor : servitors)
+			for(Servitor servitor : servitors)
 			{
 				activeChar.sendPacket(new MyPetSummonInfoPacket(servitor));
-				if (servitor.isPet())
+				if(servitor.isPet())
 				{
 					activeChar.sendPacket(new ExPetSkillList((PetInstance) servitor, true));
 				}
 			}
-			if (activeChar.isInParty())
+			if(activeChar.isInParty())
 			{
 				Party party = activeChar.getParty();
 				Player leader = party.getPartyLeader();
-				if (leader != null) // некрасиво, но иначе NPE.
+				if(leader != null) // некрасиво, но иначе NPE.
 				{
 					// sends new member party window for all members
 					// we do all actions before adding member to a list, this speeds things up a
@@ -442,21 +447,21 @@ public class RequestEnterWorld implements IClientIncomingPacket
 					activeChar.sendPacket(new PartySmallWindowAllPacket(party, leader, activeChar));
 
 					RelationChangedPacket rcp = new RelationChangedPacket();
-					for (Player member : party.getPartyMembers())
+					for(Player member : party.getPartyMembers())
 					{
-						if (member != activeChar)
+						if(member != activeChar)
 						{
 							activeChar.sendPacket(new PartySpelledPacket(member, true));
-							for (Servitor servitor : servitors)
+							for(Servitor servitor : servitors)
 							{
 								activeChar.sendPacket(new PartySpelledPacket(servitor, true));
 							}
 							rcp.add(member, activeChar);
-							for (Servitor servitor : member.getServitors())
+							for(Servitor servitor : member.getServitors())
 							{
 								rcp.add(servitor, activeChar);
 							}
-							for (Servitor servitor : servitors)
+							for(Servitor servitor : servitors)
 							{
 								servitor.broadcastCharInfoImpl(activeChar, NpcInfoType.VALUES);
 							}
@@ -465,7 +470,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 					activeChar.sendPacket(rcp);
 					// Если партия уже в СС, то вновь прибывшем посылаем пакет открытия окна СС
-					if (party.isInCommandChannel())
+					if(party.isInCommandChannel())
 					{
 						activeChar.sendPacket(ExOpenMPCCPacket.STATIC);
 					}
@@ -474,24 +479,24 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 			activeChar.sendPacket(new ExEnchantChallengePointInfo());
 			activeChar.sendActiveAutoShots();
-			for (Abnormal e : activeChar.getAbnormalList())
+			for(Abnormal e : activeChar.getAbnormalList())
 			{
-				if (e.getSkill().isToggle() && !e.getSkill().isNotBroadcastable())
+				if(e.getSkill().isToggle() && !e.getSkill().isNotBroadcastable())
 				{
-					activeChar.sendPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(),0, activeChar, SkillCastingType.NORMAL));
+					activeChar.sendPacket(new MagicSkillLaunchedPacket(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(), 0, activeChar, SkillCastingType.NORMAL));
 				}
 			}
 
 			activeChar.broadcastCharInfo();
 		}
 
-		if (activeChar.getPremiumItemList().size() > 0)
+		if(activeChar.getPremiumItemList().size() > 0)
 		{
 			activeChar.sendPacket(ExNotifyPremiumItem.STATIC);
 		}
 
 		CollectionsData.getInstance().sendExCollectionInfo(activeChar);
-		
+
 		activeChar.sendPacket(new ExCollectionActiveEvent());
 		activeChar.sendPacket(new ExOlympiadInfo(activeChar));
 		activeChar.sendPacket(new ExSteadyBoxUIInit(activeChar));
@@ -499,21 +504,23 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.sendPacket(new ExPledgeCoinInfo(activeChar));
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, 3);
-		if ((castle != null) && (castle.getSiegeEvent().hasState(SiegeEvent.REGISTRATION_STATE) || castle.getSiegeEvent().hasState(SiegeEvent.PROGRESS_STATE)))
+		if((castle != null)
+				&& (castle.getSiegeEvent().hasState(SiegeEvent.REGISTRATION_STATE) || castle.getSiegeEvent().hasState(SiegeEvent.PROGRESS_STATE)))
 		{
 			activeChar.sendPacket(new ExMercenaryCastlewarCastleSiegeHudInfo(castle.getSiegeEvent()));
 		}
 		Fortress fortress = ResidenceHolder.getInstance().getResidence(Fortress.class, 117);
-		if ((fortress != null) && (fortress.getSiegeEvent().hasState(SiegeEvent.REGISTRATION_STATE) || fortress.getSiegeEvent().hasState(SiegeEvent.PROGRESS_STATE)))
+		if((fortress != null)
+				&& (fortress.getSiegeEvent().hasState(SiegeEvent.REGISTRATION_STATE) || fortress.getSiegeEvent().hasState(SiegeEvent.PROGRESS_STATE)))
 		{
 			activeChar.sendPacket(new ExAdenFortressSiegeHUDInfo(fortress.getSiegeEvent()));
 		}
 
-		if (Config.MAGIC_LAMP_ENABLED)
+		if(Config.MAGIC_LAMP_ENABLED)
 		{
 			activeChar.sendPacket(new ExMagicLampExpInfo(activeChar));
 		}
-		if (activeChar.isDead())
+		if(activeChar.isDead())
 		{
 			activeChar.sendPacket(new DiePacket(activeChar));
 		}
@@ -528,9 +535,9 @@ public class RequestEnterWorld implements IClientIncomingPacket
 
 		activeChar.sendPacket(new ExUserViewInfoParameter(activeChar));
 
-		if (Config.ALT_PCBANG_POINTS_ENABLED)
+		if(Config.ALT_PCBANG_POINTS_ENABLED)
 		{
-			if (!Config.ALT_PCBANG_POINTS_ONLY_PREMIUM || activeChar.hasPremiumAccount())
+			if(!Config.ALT_PCBANG_POINTS_ONLY_PREMIUM || activeChar.hasPremiumAccount())
 			{
 				activeChar.sendPacket(new ExPCCafePointInfoPacket(activeChar, 0, 1, 2, 12));
 			}
@@ -541,31 +548,31 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		activeChar.sendPacket(new ExSubjugationSidebar(activeChar));
 
 		// shortcut fix
-		for (ShortCut shortCut : activeChar.getAllShortCuts())
+		for(ShortCut shortCut : activeChar.getAllShortCuts())
 		{
-			if (shortCut.getAutoUse())
+			if(shortCut.getAutoUse())
 			{
 				activeChar.sendPacket(new ExActivateAutoShortcut(shortCut.getSlot(), shortCut.getPage(), true));
 				activeChar.getAutoShortCuts().activate(shortCut.getSlot(), shortCut.getPage(), true, true);
 			}
 		}
 
-		if (first)
+		if(first)
 		{
 			activeChar.useTriggers(activeChar, TriggerType.ON_ENTER_WORLD, null, null, 0);
 
-			for (ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_ENTER_GAME))
+			for(ListenerHook hook : ListenerHook.getGlobalListenerHooks(ListenerHookType.PLAYER_ENTER_GAME))
 			{
 				hook.onPlayerEnterGame(activeChar);
 			}
-			if (Config.ALLOW_IP_LOCK && Config.AUTO_LOCK_IP_ON_LOGIN)
+			if(Config.ALLOW_IP_LOCK && Config.AUTO_LOCK_IP_ON_LOGIN)
 			{
 				AuthServerCommunication.getInstance().sendPacket(new ChangeAllowedIp(activeChar.getAccountName(), activeChar.getIP()));
 			}
-			if (Config.ALLOW_HWID_LOCK && Config.AUTO_LOCK_HWID_ON_LOGIN)
+			if(Config.ALLOW_HWID_LOCK && Config.AUTO_LOCK_HWID_ON_LOGIN)
 			{
 				GameClient client = activeChar.getNetConnection();
-				if (client != null)
+				if(client != null)
 				{
 					AuthServerCommunication.getInstance().sendPacket(new ChangeAllowedHwid(activeChar.getAccountName(), client.getHWID()));
 				}
@@ -573,7 +580,7 @@ public class RequestEnterWorld implements IClientIncomingPacket
 		}
 
 		activeChar.getInventory().checkItems();
-		if (activeChar.getRace() == Race.SYLPH)
+		if(activeChar.getRace() == Race.SYLPH)
 		{
 			activeChar.addAbnormalBoard();
 		}
@@ -583,9 +590,9 @@ public class RequestEnterWorld implements IClientIncomingPacket
 	private static void checkNewMail(Player activeChar)
 	{
 		activeChar.sendPacket(new ExUnReadMailCount(activeChar));
-		for (Mail mail : MailDAO.getInstance().getReceivedMailByOwnerId(activeChar.getObjectId()))
+		for(Mail mail : MailDAO.getInstance().getReceivedMailByOwnerId(activeChar.getObjectId()))
 		{
-			if (mail.isUnread())
+			if(mail.isUnread())
 			{
 				activeChar.sendPacket(ExNoticePostArrived.STATIC_FALSE);
 				break;

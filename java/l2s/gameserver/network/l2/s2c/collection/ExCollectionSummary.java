@@ -1,7 +1,7 @@
 package l2s.gameserver.network.l2.s2c.collection;
 
-import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 import l2s.commons.network.PacketWriter;
+import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 /**
  * @author nexvill
@@ -9,8 +9,7 @@ import l2s.commons.network.PacketWriter;
 public class ExCollectionSummary implements IClientOutgoingPacket
 {
 	public ExCollectionSummary()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)

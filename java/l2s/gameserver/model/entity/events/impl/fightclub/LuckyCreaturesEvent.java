@@ -53,7 +53,7 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if (victim.isMonster() && actor != null && actor.isPlayable())
+		if(victim.isMonster() && actor != null && actor.isPlayable())
 		{
 			FightClubPlayer fActor = getFightClubPlayer(actor.getPlayer());
 			fActor.increaseKills(true);
@@ -73,7 +73,7 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 
 		ThreadPoolManager.getInstance().schedule(new RespawnThread(), 30000L);
 
-		for (Zone zone : getReflection().getZones())
+		for(Zone zone : getReflection().getZones())
 			zone.setType(Zone.ZoneType.peace_zone);
 	}
 
@@ -82,7 +82,7 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 		super.startRound();
 
 		System.out.println("spawning " + _monstersCount + " monsters");
-		for (int i = 0; i < _monstersCount; i++)
+		for(int i = 0; i < _monstersCount; i++)
 		{
 			spawnMonster();
 		}
@@ -93,9 +93,9 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 	{
 		super.stopEvent(force);
 
-		for (NpcInstance npc : _monsters)
+		for(NpcInstance npc : _monsters)
 		{
-			if (npc != null)
+			if(npc != null)
 			{
 				npc.doDecay();
 			}
@@ -136,10 +136,8 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 	public String getVisibleTitle(Player player, String currentTitle, boolean toMe)
 	{
 		final FightClubPlayer fPlayer = getFightClubPlayer(player);
-		if (fPlayer == null)
-		{
-			return currentTitle;
-		}
+		if(fPlayer == null)
+		{ return currentTitle; }
 
 		return "Kills: " + fPlayer.getKills(true);
 	}
@@ -149,23 +147,21 @@ public class LuckyCreaturesEvent extends AbstractFightClub
 		@Override
 		public void run()
 		{
-			if (getState() == EventState.OVER || getState() == EventState.NOT_ACTIVE)
-			{
-				return;
-			}
+			if(getState() == EventState.OVER || getState() == EventState.NOT_ACTIVE)
+			{ return; }
 
 			final long current = System.currentTimeMillis();
 			final List<Long> toRemove = new ArrayList<Long>();
-			for (Long deathTime : _deathTimes)
+			for(Long deathTime : _deathTimes)
 			{
-				if (deathTime.longValue() < current)
+				if(deathTime.longValue() < current)
 				{
 					LuckyCreaturesEvent.this.spawnMonster();
 					toRemove.add(deathTime);
 				}
 			}
 
-			for (Long l : toRemove)
+			for(Long l : toRemove)
 			{
 				_deathTimes.remove(l);
 			}

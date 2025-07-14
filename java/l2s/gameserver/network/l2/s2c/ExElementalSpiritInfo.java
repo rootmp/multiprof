@@ -34,13 +34,13 @@ public class ExElementalSpiritInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_unk); // Value received from client (RequestExElementalSpiritInfo) Maybe canOpen?
 		packetWriter.writeC(_activeElementId); // Active Element ID
 		packetWriter.writeC(_elementals.size()); // Elementals Count
-		for (Elemental elemental : _elementals)
+		for(Elemental elemental : _elementals)
 		{
 			packetWriter.writeC(elemental.getElementId()); // Elemental ID
 
 			int evolutionLevel = elemental.getEvolutionLevel();
 			packetWriter.writeC(evolutionLevel > 0);
-			if (evolutionLevel > 0)
+			if(evolutionLevel > 0)
 			{
 				packetWriter.writeC(evolutionLevel); // Evolution Level (1-3)
 				packetWriter.writeD(elemental.getEvolution().getId()); // Evolution ID from client
@@ -61,7 +61,7 @@ public class ExElementalSpiritInfo implements IClientOutgoingPacket
 
 				ElementalLevelData[] datas = elemental.getEvolution().getLevelDatas();
 				packetWriter.writeC(datas.length);
-				for (ElementalLevelData data : datas)
+				for(ElementalLevelData data : datas)
 				{
 					packetWriter.writeH(data.getLevel()); // Level
 					packetWriter.writeQ(data.getExp()); // EXP

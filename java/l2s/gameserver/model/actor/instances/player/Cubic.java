@@ -76,7 +76,7 @@ public class Cubic implements Runnable
 	{
 		_owner.addCubic(this);
 
-		if (_task == null)
+		if(_task == null)
 		{
 			_task = ThreadPoolManager.getInstance().scheduleAtFixedRate(this, 1000L, 1000L);
 		}
@@ -84,13 +84,13 @@ public class Cubic implements Runnable
 
 	public void delete()
 	{
-		if (_task != null)
+		if(_task != null)
 		{
 			_task.cancel(true);
 			_task = null;
 		}
 
-		if (_castTask != null)
+		if(_castTask != null)
 		{
 			_castTask.cancel(true);
 			_castTask = null;
@@ -104,41 +104,41 @@ public class Cubic implements Runnable
 	{
 		_lifeTime++;
 
-		if (_template.getDuration() > 0 && _lifeTime >= _template.getDuration())
+		if(_template.getDuration() > 0 && _lifeTime >= _template.getDuration())
 		{
 			delete();
 			return;
 		}
 
-		if (_castTask != null)
+		if(_castTask != null)
 			return;
 
 		CubicSkillInfo skill = _template.getTimeSkill(_lifeTime);
-		if (skill != null)
+		if(skill != null)
 		{
-			if (doCastSkill(skill))
+			if(doCastSkill(skill))
 				return;
 		}
 
-		if (_reuse > System.currentTimeMillis())
+		if(_reuse > System.currentTimeMillis())
 			return;
 
 		boolean success = false;
 
 		skill = _template.getRandomSkill();
-		if (skill != null)
+		if(skill != null)
 		{
 			success = doCastSkill(skill);
 		}
 
-		if (success)
+		if(success)
 		{
 			_count -= 1;
 		}
 
-		if (_count <= 0)
+		if(_count <= 0)
 		{
-			switch (_template.getUseUp())
+			switch(_template.getUseUp())
 			{
 				case INCREASE_DELAY:
 				{
@@ -154,7 +154,7 @@ public class Cubic implements Runnable
 			}
 		}
 
-		if (success && _delay > 0)
+		if(success && _delay > 0)
 		{
 			_reuse = System.currentTimeMillis() + _delay * 1000L;
 		}
@@ -162,16 +162,16 @@ public class Cubic implements Runnable
 
 	private boolean doCastSkill(final CubicSkillInfo skillInfo)
 	{
-		if (getOwner().isAlikeDead() || getOwner().isAfraid() || isSkillDisabled(skillInfo))
+		if(getOwner().isAlikeDead() || getOwner().isAfraid() || isSkillDisabled(skillInfo))
 			return false;
 
 		final CubicTargetType targetType = getTargetType(skillInfo);
 		final Creature target = targetType.getTarget(this, skillInfo);
-		if (target == null)
+		if(target == null)
 			return false;
 
 		int chance;
-		switch (targetType)
+		switch(targetType)
 		{
 			case HEAL:
 				chance = skillInfo.getChance((int) target.getCurrentHpPercents());
@@ -184,16 +184,16 @@ public class Cubic implements Runnable
 				break;
 		}
 
-		if (chance < 100 && !Rnd.chance(chance))
+		if(chance < 100 && !Rnd.chance(chance))
 			return false;
 
 		final Skill skill = skillInfo.getSkill();
 
-		if (!skill.isHandler())
+		if(!skill.isHandler())
 		{
-			if (skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
+			if(skill.getItemConsumeId() > 0 && skill.getItemConsume() > 0)
 			{
-				if (!_owner.consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
+				if(!_owner.consumeItem(skill.getItemConsumeId(), skill.getItemConsume(), false))
 					return false;
 			}
 		}
@@ -207,27 +207,26 @@ public class Cubic implements Runnable
 		final int hitTime = Math.max(isAgathion() ? 0 : 2000, skill.getHitTime());
 
 		// TODO: Вообще не понятно как правильно посылать пакет каста скилла.
-		if (!skill.isNotBroadcastable())
+		if(!skill.isNotBroadcastable())
 		{
 			_owner.broadcastPacket(new MagicSkillUse(_owner, target, skill.getDisplayId(), skill.getDisplayLevel(), hitTime, 0));
 		}
 
-		_castTask = ThreadPoolManager.getInstance().schedule(() ->
-		{
+		_castTask = ThreadPoolManager.getInstance().schedule(() -> {
 			_owner.callSkill(aimTarget, SkillEntry.makeSkillEntry(SkillEntryType.CUBIC, skill), targets, false, false);
 
-			if (skill.isDebuff() && aimTarget.isNpc())
+			if(skill.isDebuff() && aimTarget.isNpc())
 			{
-				if (aimTarget.paralizeOnAttack(_owner))
+				if(aimTarget.paralizeOnAttack(_owner))
 				{
-					if (Config.PARALIZE_ON_RAID_DIFF)
+					if(Config.PARALIZE_ON_RAID_DIFF)
 					{
 						_owner.paralizeMe(aimTarget);
 					}
 				}
 				else
 				{
-					if (skill.getEffectPoint() < 0)
+					if(skill.getEffectPoint() < 0)
 					{
 						aimTarget.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, _owner, skill, skill.getEffectPoint());
 					}
@@ -240,7 +239,7 @@ public class Cubic implements Runnable
 
 	private CubicTargetType getTargetType(CubicSkillInfo info)
 	{
-		switch (_template.getTargetType())
+		switch(_template.getTargetType())
 		{
 			case BY_SKILL:
 				return info.getTargetType();
@@ -250,12 +249,12 @@ public class Cubic implements Runnable
 
 	public boolean canCastSkill(Creature target, Skill skill, boolean party)
 	{
-		if ((_owner == target) || (skill.getCastRange() == -2) || (skill.getCastRange() == -1))
+		if((_owner == target) || (skill.getCastRange() == -2) || (skill.getCastRange() == -1))
 			return true;
 
 		int range = Math.max(10, skill.getCastRange()) + (int) _owner.getMinDistance(target);
 		range += 40; // Погрешность, если атакующий добежал к цели используя погрешность.
-		if (!_owner.isInRangeZ(target, range))
+		if(!_owner.isInRangeZ(target, range))
 			return false;
 
 		return true;
@@ -263,7 +262,7 @@ public class Cubic implements Runnable
 
 	public boolean isSkillDisabled(CubicSkillInfo info)
 	{
-		switch (info.getReuseType())
+		switch(info.getReuseType())
 		{
 			case DEFAULT:
 				return _owner.isSkillDisabled(info.getSkill());
@@ -275,12 +274,12 @@ public class Cubic implements Runnable
 
 	public void disableSkill(CubicSkillInfo info)
 	{
-		switch (info.getReuseType())
+		switch(info.getReuseType())
 		{
 			case DEFAULT:
 			{
 				final int reuse = info.getSkill().getReuseDelay();
-				if (reuse > 0)
+				if(reuse > 0)
 				{
 					_owner.disableSkill(info.getSkill(), info.getSkill().getReuseDelay());
 				}

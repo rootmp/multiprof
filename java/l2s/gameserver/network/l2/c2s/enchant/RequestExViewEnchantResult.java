@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.c2s.enchant;
 
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.GameClient;
 import l2s.commons.network.PacketReader;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 
 /**
  * @author nexvill

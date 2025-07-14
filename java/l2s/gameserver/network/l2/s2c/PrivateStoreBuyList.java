@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +6,7 @@ import java.util.List;
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.items.TradeItem;
@@ -31,16 +31,16 @@ public class PrivateStoreBuyList implements IClientOutgoingPacket
 
 		final ItemInstance[] items = seller.getInventory().getItems();
 		final IntSet addedItems = new HashIntSet();
-		for (TradeItem bi : buyer.getBuyList())
+		for(TradeItem bi : buyer.getBuyList())
 		{
 			TradeItem si = null;
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				// TODO: Нужно ли представлять итемы по приоритету? (Заточка, Атрибут и т.д.)
-				if (item.getItemId() == bi.getItemId() && item.canBePrivateStore(seller) && !addedItems.contains(item.getObjectId()))
+				if(item.getItemId() == bi.getItemId() && item.canBePrivateStore(seller) && !addedItems.contains(item.getObjectId()))
 				{
-					if ((!item.isArmor() && !item.isAccessory() && !item.isWeapon()) || item.getEnchantLevel() == bi.getEnchantLevel())
+					if((!item.isArmor() && !item.isAccessory() && !item.isWeapon()) || item.getEnchantLevel() == bi.getEnchantLevel())
 					{
 						si = new TradeItem(item);
 						si.setOwnersPrice(bi.getOwnersPrice());
@@ -52,7 +52,7 @@ public class PrivateStoreBuyList implements IClientOutgoingPacket
 				}
 			}
 
-			if (si == null)
+			if(si == null)
 			{
 				si = new TradeItem();
 				si.setItemId(bi.getItemId());
@@ -72,7 +72,7 @@ public class PrivateStoreBuyList implements IClientOutgoingPacket
 		packetWriter.writeQ(_adena);
 		packetWriter.writeD(70);
 		packetWriter.writeD(_sellList.size());
-		for (TradeItem si : _sellList)
+		for(TradeItem si : _sellList)
 		{
 			writeItemInfo(packetWriter, si, si.getCurrentValue());
 			packetWriter.writeD(si.getObjectId());

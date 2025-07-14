@@ -1,9 +1,8 @@
 package l2s.gameserver.stats.conditions;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.stats.Env;
-
-import gnu.trove.set.hash.TIntHashSet;
 
 public class ConditionTargetForbiddenClassId extends Condition
 {
@@ -11,7 +10,7 @@ public class ConditionTargetForbiddenClassId extends Condition
 
 	public ConditionTargetForbiddenClassId(String[] ids)
 	{
-		for (String id : ids)
+		for(String id : ids)
 			_classIds.add(Integer.parseInt(id));
 	}
 
@@ -19,7 +18,7 @@ public class ConditionTargetForbiddenClassId extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.target;
-		if (!target.isPlayable()) // why it was false? there's pve skills that didn't work
+		if(!target.isPlayable()) // why it was false? there's pve skills that didn't work
 			return true;
 		return !target.isPlayer() || !_classIds.contains(target.getPlayer().getActiveClassId());
 	}

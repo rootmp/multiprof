@@ -16,7 +16,7 @@ public class RequestExWorldExchangeRegiItem implements IClientIncomingPacket
 	private long _amount;
 	private int currencyType;
 	private int listingType;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -27,25 +27,24 @@ public class RequestExWorldExchangeRegiItem implements IClientIncomingPacket
 		listingType = packet.readC();
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.ENABLE_WORLD_EXCHANGE)
+		if(!Config.ENABLE_WORLD_EXCHANGE)
 			return;
-		
+
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		if(player.getStat().calc(Stats.P_BLOCK_WORLD_TRADE) != 0)
 		{
 			player.sendPacket(SystemMsg.S_19020);
 			player.sendActionFailed();
 			return;
 		}
-		
-		
+
 		WorldExchangeManager.getInstance().registerItemBid(player, _itemId, _amount, _price, listingType, currencyType);
 	}
 }

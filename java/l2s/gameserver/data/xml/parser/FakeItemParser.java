@@ -49,35 +49,35 @@ public class FakeItemParser extends AbstractParser<FakeItemHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("category".equalsIgnoreCase(element.getName()))
+			if("category".equalsIgnoreCase(element.getName()))
 			{
 				ItemGrade grade = ItemGrade.valueOf(element.attributeValue("grade"));
-				for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
-					if ("weapons".equalsIgnoreCase(subElement.getName()))
+					if("weapons".equalsIgnoreCase(subElement.getName()))
 					{
 						getHolder().addWeapons(grade, parseItems(subElement));
 					}
-					else if ("armors".equalsIgnoreCase(subElement.getName()))
+					else if("armors".equalsIgnoreCase(subElement.getName()))
 					{
 						getHolder().addArmors(grade, parsePackArmors(subElement));
 					}
-					else if ("accessorys".equalsIgnoreCase(subElement.getName()))
+					else if("accessorys".equalsIgnoreCase(subElement.getName()))
 					{
 						getHolder().addAccessorys(grade, parsePackAccessorys(subElement));
 					}
 				}
 			}
-			else if ("classes".equalsIgnoreCase(element.getName()))
+			else if("classes".equalsIgnoreCase(element.getName()))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
-					if ("class".equalsIgnoreCase(subElement.getName()))
+					if("class".equalsIgnoreCase(subElement.getName()))
 					{
 						int classId = Integer.parseInt(subElement.attributeValue("id"));
 						String weaponTypes = subElement.attributeValue("weaponTypes");
@@ -86,11 +86,11 @@ public class FakeItemParser extends AbstractParser<FakeItemHolder>
 					}
 				}
 			}
-			else if ("hair_accessories".equalsIgnoreCase(element.getName()))
+			else if("hair_accessories".equalsIgnoreCase(element.getName()))
 			{
 				getHolder().addHairAccessories(parseItems(element));
 			}
-			else if ("cloaks".equalsIgnoreCase(element.getName()))
+			else if("cloaks".equalsIgnoreCase(element.getName()))
 			{
 				getHolder().addCloaks(parseItems(element));
 			}
@@ -100,10 +100,10 @@ public class FakeItemParser extends AbstractParser<FakeItemHolder>
 	private static IntList parseItems(Element rootElement)
 	{
 		IntList list = new ArrayIntList();
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if (element.getName().equals("item"))
+			if(element.getName().equals("item"))
 			{
 				int itemId = Integer.parseInt(element.attributeValue("id"));
 				list.add(itemId);
@@ -115,10 +115,10 @@ public class FakeItemParser extends AbstractParser<FakeItemHolder>
 	private static Map<ArmorTemplate.ArmorType, List<IntList>> parsePackArmors(Element rootElement)
 	{
 		Map<ArmorTemplate.ArmorType, List<IntList>> map = new HashMap<>();
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if (element.getName().equals("pack"))
+			if(element.getName().equals("pack"))
 			{
 				ArmorTemplate.ArmorType type = ArmorTemplate.ArmorType.valueOf(element.attributeValue("type"));
 				map.computeIfAbsent(type, k -> new ArrayList<IntList>()).add(parseItems(element));
@@ -130,10 +130,10 @@ public class FakeItemParser extends AbstractParser<FakeItemHolder>
 	private static List<IntList> parsePackAccessorys(Element rootElement)
 	{
 		List<IntList> list = new ArrayList<IntList>();
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if (element.getName().equals("pack"))
+			if(element.getName().equals("pack"))
 			{
 				list.add(parseItems(element));
 			}

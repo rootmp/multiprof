@@ -19,17 +19,17 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(50);
-		
+
 		writeOlympiadHeroInfo(packetWriter, new OlympiadHeroInfo());
-		
+
 		packetWriter.writeD(heroes.size());
-		
+
 		for(OlympiadHeroInfo h : heroes)
 			writeOlympiadHeroInfo(packetWriter, h);
 
 		return true;
 	}
-	
+
 	private void writeOlympiadHeroInfo(PacketWriter packetWriter, OlympiadHeroInfo heroInfo)
 	{
 		packetWriter.writeSizedString(heroInfo.sCharName);

@@ -1,8 +1,8 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Collection;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.TradeItem;
 
@@ -35,7 +35,7 @@ public class PrivateStoreList implements IClientOutgoingPacket
 		packetWriter.writeQ(_adena);
 		packetWriter.writeD(0x00); // TODO: [Bonux] Количество свободных ячеек в инвентаре.
 		packetWriter.writeD(_sellList.size());
-		for (TradeItem si : _sellList)
+		for(TradeItem si : _sellList)
 		{
 			writeItemInfo(packetWriter, si);
 			packetWriter.writeQ(si.getOwnersPrice());

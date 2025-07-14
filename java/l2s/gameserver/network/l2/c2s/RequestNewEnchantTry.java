@@ -19,7 +19,6 @@ import l2s.gameserver.network.l2.s2c.ExEnchantFail;
 import l2s.gameserver.network.l2.s2c.ExEnchantRetryToPutItemFail;
 import l2s.gameserver.network.l2.s2c.ExEnchantSucess;
 import l2s.gameserver.network.l2.s2c.InventoryUpdatePacket;
-import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.utils.ItemFunctions;
 
 /**
@@ -112,13 +111,15 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 		SynthesisData data = null;
 		for(SynthesisData d : SynthesisHolder.getInstance().getDatas())
 		{
-			if(item1.getItemId() == d.getItem1Id() && item1.getEnchantLevel() == d.getItem1IdEnchant() && item2.getItemId() == d.getItem2Id() && item2.getEnchantLevel() == d.getItem2IdEnchant())
+			if(item1.getItemId() == d.getItem1Id() && item1.getEnchantLevel() == d.getItem1IdEnchant() && item2.getItemId() == d.getItem2Id()
+					&& item2.getEnchantLevel() == d.getItem2IdEnchant())
 			{
 				data = d;
 				break;
 			}
 
-			if(item1.getItemId() == d.getItem2Id() && item1.getEnchantLevel() == d.getItem2IdEnchant() && item2.getItemId() == d.getItem1Id() && item2.getEnchantLevel() == d.getItem1IdEnchant())
+			if(item1.getItemId() == d.getItem2Id() && item1.getEnchantLevel() == d.getItem2IdEnchant() && item2.getItemId() == d.getItem1Id()
+					&& item2.getEnchantLevel() == d.getItem1IdEnchant())
 			{
 				data = d;
 				break;
@@ -132,7 +133,7 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 			activeChar.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
 			return;
 		}
-		
+
 		if(data.getPrice() > 0 && !activeChar.reduceAdena(data.getPrice(), true))
 		{
 			activeChar.setSynthesisItem1(null);
@@ -151,7 +152,7 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 				break;
 			}
 		}
-
+		
 		if(!locationAvailable)
 		{
 			activeChar.setSynthesisItem1(null);
@@ -172,70 +173,70 @@ public class RequestNewEnchantTry implements IClientIncomingPacket
 		final Inventory inventory = activeChar.getInventory();
 
 		final InventoryUpdatePacket iupacket = new InventoryUpdatePacket(activeChar);
-		
-			if(inventory.getItemByObjectId(item1.getObjectId()) == null)
-			{
-				activeChar.setSynthesisItem1(null);
-				activeChar.setSynthesisItem2(null);
-				activeChar.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
-				return;
-			}
 
-			if(inventory.getItemByObjectId(item2.getObjectId()) == null)
+		if(inventory.getItemByObjectId(item1.getObjectId()) == null)
+		{
+			activeChar.setSynthesisItem1(null);
+			activeChar.setSynthesisItem2(null);
+			activeChar.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
+			return;
+		}
+
+		if(inventory.getItemByObjectId(item2.getObjectId()) == null)
+		{
+			activeChar.setSynthesisItem1(null);
+			activeChar.setSynthesisItem2(null);
+			activeChar.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
+			return;
+		}
+		double chance = data.getSuccessItemData().getChance();
+		if(activeChar.isGM())
+			activeChar.sendMessage("chance: " + chance);
+		if(Rnd.chance(chance))
+		{
+			ItemResult succeItemData = data.getSuccessItemData();
+			List<ItemInstance> items = ItemFunctions.addItem(activeChar, succeItemData.getId(), succeItemData.getCount(), succeItemData.getEnchant(), true);
+			activeChar.sendPacket(new ExEnchantSucess(succeItemData.getId()));
+			if(items != null && !items.isEmpty())
 			{
-				activeChar.setSynthesisItem1(null);
-				activeChar.setSynthesisItem2(null);
-				activeChar.sendPacket(ExEnchantRetryToPutItemFail.STATIC_PACKET);
-				return;
+				iupacket.addModifiedItem(items.get(0));
+				activeChar.getListeners().onNewEnchantItem(items.get(0), true);
 			}
-			double chance = data.getSuccessItemData().getChance();
-			if(activeChar.isGM())
-				activeChar.sendMessage("chance: "+chance);
-			if(Rnd.chance(chance))
+		}
+		else
+		{
+			ItemResult failItemData = data.getFailItemData();
+			if(failItemData.getId() == 0)
+				activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(), failItemData.getEnchant()));
+			else
 			{
-				ItemResult succeItemData = data.getSuccessItemData();
-				List<ItemInstance> items = ItemFunctions.addItem(activeChar, succeItemData.getId(), succeItemData.getCount(), succeItemData.getEnchant(),true);
-				activeChar.sendPacket(new ExEnchantSucess(succeItemData.getId()));
+				List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(), true);
 				if(items != null && !items.isEmpty())
 				{
+					activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(), failItemData.getEnchant()));
 					iupacket.addModifiedItem(items.get(0));
 					activeChar.getListeners().onNewEnchantItem(items.get(0), true);
 				}
 			}
-			else
-			{
-				ItemResult failItemData = data.getFailItemData();
-				if(failItemData.getId() == 0)
-					activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));
-				else
-				{
-					List<ItemInstance> items = ItemFunctions.addItem(activeChar, failItemData.getId(), failItemData.getCount(), failItemData.getEnchant(),true);
-					if(items != null && !items.isEmpty())
-					{
-						activeChar.sendPacket(new ExEnchantSucess(failItemData.getId(),failItemData.getEnchant()));
-						iupacket.addModifiedItem(items.get(0));
-						activeChar.getListeners().onNewEnchantItem(items.get(0), true);
-					}
-				}
-			}
+		}
 
-			if(ItemFunctions.deleteItem(activeChar, item1, 1, false, false))
-			{
-				if(item1.getCount()>0)
-					iupacket.addModifiedItem(item1);
-				else
-					iupacket.addRemovedItem(item1);
-			}
-			if(ItemFunctions.deleteItem(activeChar, item2, 1, false, false))
-			{
-				if(item2.getCount()>0)
-					iupacket.addModifiedItem(item2);
-				else
-					iupacket.addRemovedItem(item2);
-			}
-			activeChar.sendPacket(iupacket);
-			
-			activeChar.setSynthesisItem1(null);
-			activeChar.setSynthesisItem2(null);
+		if(ItemFunctions.deleteItem(activeChar, item1, 1, false, false))
+		{
+			if(item1.getCount() > 0)
+				iupacket.addModifiedItem(item1);
+			else
+				iupacket.addRemovedItem(item1);
+		}
+		if(ItemFunctions.deleteItem(activeChar, item2, 1, false, false))
+		{
+			if(item2.getCount() > 0)
+				iupacket.addModifiedItem(item2);
+			else
+				iupacket.addRemovedItem(item2);
+		}
+		activeChar.sendPacket(iupacket);
+
+		activeChar.setSynthesisItem1(null);
+		activeChar.setSynthesisItem2(null);
 	}
 }

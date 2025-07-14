@@ -87,7 +87,7 @@ public class PetInventory extends Inventory
 
 		_wearedMask &= ~oldItem.getTemplate().getItemMask();
 
-		if (checkPaperdollItem(newItem, slot))
+		if(checkPaperdollItem(newItem, slot))
 		{
 			newItem.setLocation(getEquipLocation());
 			newItem.setLocData(0);
@@ -143,7 +143,7 @@ public class PetInventory extends Inventory
 	public void sendModifyItem(ItemInstance... items)
 	{
 		PetInventoryUpdatePacket piu = new PetInventoryUpdatePacket();
-		for (ItemInstance item : items)
+		for(ItemInstance item : items)
 		{
 			piu.addModifiedItem(item);
 		}
@@ -167,7 +167,7 @@ public class PetInventory extends Inventory
 		{
 			Collection<ItemInstance> items = _itemsDAO.getItemsByOwnerIdAndLoc(ownerId, getBaseLocation());
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				_items.add(item);
 				onRestoreItem(item);
@@ -175,11 +175,11 @@ public class PetInventory extends Inventory
 
 			items = _itemsDAO.getItemsByOwnerIdAndLoc(ownerId, getEquipLocation());
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				_items.add(item);
 				onRestoreItem(item);
-				if (ItemFunctions.checkIfCanEquip(getActor(), item) == null)
+				if(ItemFunctions.checkIfCanEquip(getActor(), item) == null)
 				{
 					setPaperdollItem(item.getEquipSlot(), item);
 				}
@@ -216,9 +216,9 @@ public class PetInventory extends Inventory
 
 	public void validateItems()
 	{
-		for (ItemInstance item : _paperdoll)
+		for(ItemInstance item : _paperdoll)
 		{
-			if ((item != null) && ((ItemFunctions.checkIfCanEquip(getActor(), item) != null) || !item.getTemplate().testCondition(getActor(), item, false)))
+			if((item != null) && ((ItemFunctions.checkIfCanEquip(getActor(), item) != null) || !item.getTemplate().testCondition(getActor(), item, false)))
 			{
 				unEquipItem(item);
 			}

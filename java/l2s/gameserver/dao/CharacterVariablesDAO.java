@@ -50,7 +50,7 @@ public class CharacterVariablesDAO
 			statement.setLong(1, System.currentTimeMillis());
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterVariablesDAO:deleteExpiredVars()", e);
 		}
@@ -72,7 +72,7 @@ public class CharacterVariablesDAO
 			statement.setString(2, varName);
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterVariablesDAO:delete(playerObjId,varName)", e);
 			return false;
@@ -95,7 +95,7 @@ public class CharacterVariablesDAO
 			statement.setString(1, varName);
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterVariablesDAO:delete(varName)", e);
 			return false;
@@ -121,7 +121,7 @@ public class CharacterVariablesDAO
 			statement.setLong(4, var.getExpireTime());
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterVariablesDAO:insert(playerObjId,var)", e);
 			return false;
@@ -146,16 +146,16 @@ public class CharacterVariablesDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, playerObjId);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				long expireTime = rset.getLong("expire_time");
-				if (expireTime > 0 && expireTime < System.currentTimeMillis())
+				if(expireTime > 0 && expireTime < System.currentTimeMillis())
 					continue;
 
 				result.add(new CharacterVariable(rset.getString("name"), Strings.stripSlashes(rset.getString("value")), expireTime));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterVariablesDAO:restore(playerObjId)", e);
 		}
@@ -180,14 +180,14 @@ public class CharacterVariablesDAO
 			statement.setInt(1, playerObjId);
 			statement.setString(2, var);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				long expireTime = rset.getLong("expire_time");
-				if (expireTime <= 0 || expireTime >= System.currentTimeMillis())
+				if(expireTime <= 0 || expireTime >= System.currentTimeMillis())
 					value = Strings.stripSlashes(rset.getString("value"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterVariablesDAO:getVarFromPlayer(playerObjId,var)", e);
 		}

@@ -54,7 +54,7 @@ public class SpawnTaskManager
 	 */
 	public static SpawnTaskManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 		{
 			_instance = new SpawnTaskManager();
 		}
@@ -80,8 +80,7 @@ public class SpawnTaskManager
 	private class SpawnScheduler implements Runnable
 	{
 		public SpawnScheduler()
-		{
-		}
+		{}
 
 		/**
 		 * Method runImpl.
@@ -89,7 +88,7 @@ public class SpawnTaskManager
 		@Override
 		public void run()
 		{
-			if (_spawnTasksSize > 0)
+			if(_spawnTasksSize > 0)
 			{
 				try
 				{
@@ -99,17 +98,17 @@ public class SpawnTaskManager
 						long current = System.currentTimeMillis();
 						int size = _spawnTasksSize;
 
-						for (int i = size - 1; i >= 0; i--)
+						for(int i = size - 1; i >= 0; i--)
 						{
 							try
 							{
 								SpawnTask container = _spawnTasks[i];
 
-								if ((container != null) && (container._endtime > 0) && (current > container._endtime))
+								if((container != null) && (container._endtime > 0) && (current > container._endtime))
 								{
 									NpcInstance actor = container.getActor();
 
-									if ((actor != null) && (actor.getSpawn() != null))
+									if((actor != null) && (actor.getSpawn() != null))
 									{
 										works.add(actor);
 									}
@@ -117,9 +116,9 @@ public class SpawnTaskManager
 									container._endtime = -1;
 								}
 
-								if ((container == null) || (container.getActor() == null) || (container._endtime < 0))
+								if((container == null) || (container.getActor() == null) || (container._endtime < 0))
 								{
-									if (i == (_spawnTasksSize - 1))
+									if(i == (_spawnTasksSize - 1))
 									{
 										_spawnTasks[i] = null;
 									}
@@ -129,37 +128,37 @@ public class SpawnTaskManager
 										_spawnTasks[_spawnTasksSize - 1] = null;
 									}
 
-									if (_spawnTasksSize > 0)
+									if(_spawnTasksSize > 0)
 									{
 										_spawnTasksSize--;
 									}
 								}
 							}
-							catch (Exception e)
+							catch(Exception e)
 							{
 								_log.error("{}" + e);
 							}
 						}
 					}
 
-					for (NpcInstance work : works)
+					for(NpcInstance work : works)
 					{
 						Spawner spawn = work.getSpawn();
 
-						if (spawn == null)
+						if(spawn == null)
 						{
 							continue;
 						}
 
 						spawn.decreaseScheduledCount();
 
-						if (spawn.isDoRespawn())
+						if(spawn.isDoRespawn())
 						{
 							spawn.respawnNpc(work);
 						}
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error("{}" + e);
 				}
@@ -180,7 +179,7 @@ public class SpawnTaskManager
 		sb.append("Tasks dump:\n\r");
 		long current = System.currentTimeMillis();
 
-		for (SpawnTask container : _spawnTasks)
+		for(SpawnTask container : _spawnTasks)
 		{
 			sb.append("Class/Name: ").append(container.getClass().getSimpleName()).append('/').append(container.getActor());
 			sb.append(" spawn timer: ").append(Util.formatTime((int) (container._endtime - current))).append("\n\r");
@@ -226,7 +225,7 @@ public class SpawnTaskManager
 	{
 		synchronized (spawnTasks_lock)
 		{
-			if (_spawnTasksSize >= _spawnTasks.length)
+			if(_spawnTasksSize >= _spawnTasks.length)
 			{
 				SpawnTask[] temp = new SpawnTask[_spawnTasks.length * 2];
 				System.arraycopy(_spawnTasks, 0, temp, 0, _spawnTasksSize);
@@ -247,26 +246,26 @@ public class SpawnTaskManager
 	{
 		synchronized (spawnTasks_lock)
 		{
-			if (_spawnTasksSize > 1)
+			if(_spawnTasksSize > 1)
 			{
 				int k = -1;
 
-				for (int i = 0; i < _spawnTasksSize; i++)
+				for(int i = 0; i < _spawnTasksSize; i++)
 				{
-					if (_spawnTasks[i].getActor() == actor)
+					if(_spawnTasks[i].getActor() == actor)
 					{
 						k = i;
 					}
 				}
 
-				if (k > -1)
+				if(k > -1)
 				{
 					_spawnTasks[k] = _spawnTasks[_spawnTasksSize - 1];
 					_spawnTasks[_spawnTasksSize - 1] = null;
 					_spawnTasksSize--;
 				}
 			}
-			else if ((_spawnTasksSize == 1) && (_spawnTasks[0].getActor() == actor))
+			else if((_spawnTasksSize == 1) && (_spawnTasks[0].getActor() == actor))
 			{
 				_spawnTasks[0] = null;
 				_spawnTasksSize = 0;

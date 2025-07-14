@@ -24,7 +24,7 @@ public class ServitorStat extends CreatureStat
 	public int getElementalAttackPower(ElementalElement element)
 	{
 		Player owner = getOwner().getPlayer();
-		if (owner != null)
+		if(owner != null)
 			return owner.getStat().getElementalAttackPower(element);
 		return -1;
 	}
@@ -33,7 +33,7 @@ public class ServitorStat extends CreatureStat
 	public int getElementalDefence(ElementalElement element)
 	{
 		Player owner = getOwner().getPlayer();
-		if (owner != null)
+		if(owner != null)
 			return owner.getStat().getElementalDefence(element);
 		return 0;
 	}
@@ -42,7 +42,7 @@ public class ServitorStat extends CreatureStat
 	public int getElementalCritRate(ElementalElement element)
 	{
 		Player owner = getOwner().getPlayer();
-		if (owner != null)
+		if(owner != null)
 			return owner.getStat().getElementalCritRate(element);
 		return 0;
 	}
@@ -51,7 +51,7 @@ public class ServitorStat extends CreatureStat
 	public int getElementalCritAttack(ElementalElement element)
 	{
 		Player owner = getOwner().getPlayer();
-		if (owner != null)
+		if(owner != null)
 			return owner.getStat().getElementalCritAttack(element);
 		return 0;
 	}

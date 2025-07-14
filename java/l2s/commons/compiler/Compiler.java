@@ -43,10 +43,8 @@ public class Compiler
 		Writer writer = new StringWriter();
 		JavaCompiler.CompilationTask compile = javac.getTask(writer, memFileManager, listener, options, null, fileManager.getJavaFileObjects(files));
 
-		if (compile.call())
-		{
-			return true;
-		}
+		if(compile.call())
+		{ return true; }
 
 		return false;
 	}
@@ -66,7 +64,9 @@ public class Compiler
 		@Override
 		public void report(Diagnostic<? extends JavaFileObject> diagnostic)
 		{
-			_log.error(diagnostic.getSource().getName() + (diagnostic.getPosition() == Diagnostic.NOPOS ? "" : ":" + diagnostic.getLineNumber() + "," + diagnostic.getColumnNumber()) + ": " + diagnostic.getMessage(Locale.getDefault()));
+			_log.error(diagnostic.getSource().getName()
+					+ (diagnostic.getPosition() == Diagnostic.NOPOS ? "" : ":" + diagnostic.getLineNumber() + "," + diagnostic.getColumnNumber()) + ": "
+					+ diagnostic.getMessage(Locale.getDefault()));
 		}
 	}
 }

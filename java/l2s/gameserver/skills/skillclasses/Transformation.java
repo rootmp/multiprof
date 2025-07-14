@@ -23,14 +23,14 @@ public class Transformation extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
 		Player player = activeChar.getPlayer();
-		if (player == null || player.getActiveWeaponFlagAttachment() != null)
+		if(player == null || player.getActiveWeaponFlagAttachment() != null)
 			return false;
 
-		if (player.isTransformed() && !isDispell)
+		if(player.isTransformed() && !isDispell)
 		{
 			// Для всех скилов кроме Transform Dispel
 			activeChar.sendPacket(SystemMsg.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN);
@@ -39,32 +39,33 @@ public class Transformation extends Skill
 
 		// Нельзя использовать летающую трансформу на территории Aden, или слишком
 		// высоко/низко, или при вызванном пете/саммоне, или в инстансе
-		if ((getId() == SKILL_FINAL_FLYING_FORM || getId() == SKILL_AURA_BIRD_FALCON || getId() == SKILL_AURA_BIRD_OWL) && (player.getX() > -166168 || player.getZ() <= 0 || player.getZ() >= 6000 || player.hasServitor() || !player.getReflection().isMain()))
+		if((getId() == SKILL_FINAL_FLYING_FORM || getId() == SKILL_AURA_BIRD_FALCON || getId() == SKILL_AURA_BIRD_OWL)
+				&& (player.getX() > -166168 || player.getZ() <= 0 || player.getZ() >= 6000 || player.hasServitor() || !player.getReflection().isMain()))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
 		// Нельзя отменять летающую трансформу слишком высоко над землей
-		if (player.isInFlyingTransform() && isDispell && Math.abs(player.getZ() - player.getLoc().correctGeoZ(player.getGeoIndex()).z) > 333)
+		if(player.isInFlyingTransform() && isDispell && Math.abs(player.getZ() - player.getLoc().correctGeoZ(player.getGeoIndex()).z) > 333)
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if (!Config.ALT_USE_TRANSFORM_IN_EPIC_ZONE && !isDispell && player.isInZone(ZoneType.epic))
+		if(!Config.ALT_USE_TRANSFORM_IN_EPIC_ZONE && !isDispell && player.isInZone(ZoneType.epic))
 		{
 			activeChar.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 			return false;
 		}
 
-		if (player.isInWater())
+		if(player.isInWater())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_INTO_THE_DESIRED_FORM_IN_WATER);
 			return false;
 		}
 
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_PET);
 			return false;
@@ -72,13 +73,13 @@ public class Transformation extends Skill
 
 		// Для трансформации у игрока не должно быть активировано умение Mystic
 		// Immunity.
-		if (player.getAbnormalList().contains(Skill.SKILL_MYSTIC_IMMUNITY))
+		if(player.getAbnormalList().contains(Skill.SKILL_MYSTIC_IMMUNITY))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_UNDER_THE_EFFECT_OF_A_SPECIAL_SKILL);
 			return false;
 		}
 
-		if (player.isInBoat())
+		if(player.isInBoat())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_BOAT);
 			return false;

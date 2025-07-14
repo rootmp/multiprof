@@ -22,22 +22,22 @@ public class ConditionPlayerRiding extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		Player player = (Player) env.character;
-		switch (_riding)
+		switch(_riding)
 		{
 			case STRIDER:
-				if (player.isMounted() && !player.isFlying())
+				if(player.isMounted() && !player.isFlying())
 					return true;
 				break;
 			case WYVERN:
-				if (player.isMounted() && player.isFlying())
+				if(player.isMounted() && player.isFlying())
 					return true;
 				break;
 			case NONE:
-				if (!player.isMounted())
+				if(!player.isMounted())
 					return true;
 				break;
 		}

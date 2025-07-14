@@ -31,11 +31,11 @@ public class FakeItemHolder extends AbstractHolder
 		public ClassWeaponAndArmor(int classId, String weaponTypes, String armorTypes)
 		{
 			this.classId = classId;
-			for (String s : weaponTypes.split(";"))
+			for(String s : weaponTypes.split(";"))
 			{
 				this.weaponTypes.add(WeaponTemplate.WeaponType.valueOf(s));
 			}
-			for (String s : armorTypes.split(";"))
+			for(String s : armorTypes.split(";"))
 			{
 				this.armorTypes.add(ArmorTemplate.ArmorType.valueOf(s));
 			}
@@ -69,20 +69,20 @@ public class FakeItemHolder extends AbstractHolder
 	public void addWeapons(ItemGrade grade, IntList list)
 	{
 		Map<WeaponTemplate.WeaponType, IntList> map = new HashMap<>();
-		for (int itemId : list.toArray())
+		for(int itemId : list.toArray())
 		{
 			ItemTemplate template = ItemHolder.getInstance().getTemplate(itemId);
-			if (template == null || !template.isWeapon())
+			if(template == null || !template.isWeapon())
 			{
 				// TODO Log
 				continue;
 			}
 			WeaponTemplate.WeaponType weaponType = ((WeaponTemplate) template).getItemType();
-			if (template.isMagicWeapon())
+			if(template.isMagicWeapon())
 			{
 				weaponType = WeaponTemplate.WeaponType.MAGIC;
 			}
-			if (map.get(weaponType) == null)
+			if(map.get(weaponType) == null)
 			{
 				map.put(weaponType, new ArrayIntList());
 			}
@@ -130,12 +130,12 @@ public class FakeItemHolder extends AbstractHolder
 	{
 		ItemGrade grade = ItemGrade.values()[expertiseIndex];
 		IntList result = null;
-		switch (type)
+		switch(type)
 		{
 			case "Accessory":
 			{
 				List<IntList> packs = accessorys.get(grade);
-				if (packs == null || packs.isEmpty())
+				if(packs == null || packs.isEmpty())
 					return Containers.EMPTY_INT_LIST;
 				result = packs.get(Rnd.get(packs.size()));
 				break;
@@ -145,15 +145,15 @@ public class FakeItemHolder extends AbstractHolder
 				try
 				{
 					ClassWeaponAndArmor classWeaponAndArmor = classWeaponAndArmors.get(player.getClassId().getId());
-					if (classWeaponAndArmor == null)
+					if(classWeaponAndArmor == null)
 						return Containers.EMPTY_INT_LIST;
 					Map<ArmorTemplate.ArmorType, List<IntList>> packs = armors.get(grade);
-					if (packs == null || packs.isEmpty())
+					if(packs == null || packs.isEmpty())
 						return Containers.EMPTY_INT_LIST;
 					List<IntList> armors = packs.get(classWeaponAndArmor.getRandomArmorType());
 					result = Rnd.get(armors);
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					System.out.println(player.getClassId().getId());
 				}
@@ -162,16 +162,16 @@ public class FakeItemHolder extends AbstractHolder
 			case "Weapon":
 			{
 				ClassWeaponAndArmor classWeaponAndArmor = classWeaponAndArmors.get(player.getClassId().getId());
-				if (classWeaponAndArmor == null)
+				if(classWeaponAndArmor == null)
 					return Containers.EMPTY_INT_LIST;
 				Map<WeaponTemplate.WeaponType, IntList> packs = weapons.get(grade);
-				if (packs == null || packs.isEmpty())
+				if(packs == null || packs.isEmpty())
 					return Containers.EMPTY_INT_LIST;
 				result = new ArrayIntList();
-				while (result.isEmpty())
+				while(result.isEmpty())
 				{
 					IntList list = packs.get(classWeaponAndArmor.getRandomWeaponType());
-					if (list != null)
+					if(list != null)
 					{
 						result.add(list.get(list.size() - 1));
 					}
@@ -179,7 +179,7 @@ public class FakeItemHolder extends AbstractHolder
 				break;
 			}
 		}
-		if (result != null)
+		if(result != null)
 			return result;
 		return Containers.EMPTY_INT_LIST;
 	}

@@ -197,12 +197,12 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void setCount(long count)
 	{
-		if (count < 0)
+		if(count < 0)
 		{
 			count = 0;
 		}
 
-		if (!isStackable() && (count > 1L))
+		if(!isStackable() && (count > 1L))
 		{
 			_count = 1L;
 			// TODO audit
@@ -219,24 +219,18 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public int getFixedEnchantLevel(Player owner)
 	{
-		if (owner != null)
+		if(owner != null)
 		{
-			if (_enchantLevel > 0)
+			if(_enchantLevel > 0)
 			{
-				if (Config.OLYMPIAD_ENABLE_ENCHANT_LIMIT && owner.isInOlympiadMode())
+				if(Config.OLYMPIAD_ENABLE_ENCHANT_LIMIT && owner.isInOlympiadMode())
 				{
-					if (isWeapon())
-					{
-						return Math.min(Config.OLYMPIAD_WEAPON_ENCHANT_LIMIT, _enchantLevel);
-					}
-					if (isArmor())
-					{
-						return Math.min(Config.OLYMPIAD_ARMOR_ENCHANT_LIMIT, _enchantLevel);
-					}
-					if (isAccessory())
-					{
-						return Math.min(Config.OLYMPIAD_JEWEL_ENCHANT_LIMIT, _enchantLevel);
-					}
+					if(isWeapon())
+					{ return Math.min(Config.OLYMPIAD_WEAPON_ENCHANT_LIMIT, _enchantLevel); }
+					if(isArmor())
+					{ return Math.min(Config.OLYMPIAD_ARMOR_ENCHANT_LIMIT, _enchantLevel); }
+					if(isAccessory())
+					{ return Math.min(Config.OLYMPIAD_JEWEL_ENCHANT_LIMIT, _enchantLevel); }
 				}
 			}
 		}
@@ -250,13 +244,13 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		_enchantLevel = Math.max(getTemplate().getBaseEnchantLevel(), value);
 		_enchantOptions = EMPTY_ENCHANT_OPTIONS;
 
-		if ((old != _enchantLevel) && (getTemplate().getEnchantOptions().size() > 0))
+		if((old != _enchantLevel) && (getTemplate().getEnchantOptions().size() > 0))
 		{
 			int[] enchantOptions = null;
-			for (int i = _enchantLevel; i >= 0; i--)
+			for(int i = _enchantLevel; i >= 0; i--)
 			{
 				enchantOptions = getTemplate().getEnchantOptions().get(_enchantLevel);
-				if (enchantOptions != null)
+				if(enchantOptions != null)
 				{
 					_enchantOptions = enchantOptions;
 					break;
@@ -322,9 +316,10 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void setLifeTime(int lifeTime)
 	{
-		if (lifeTime == -1)
+		if(lifeTime == -1)
 		{
-			_lifeTime = getTemplate().isTemporal() ? (int) (System.currentTimeMillis() / 1000L) + (getTemplate().getDurability() * 60) : (getTemplate().isShadowItem() ? getTemplate().getDurability() : -1);
+			_lifeTime = getTemplate().isTemporal() ? (int) (System.currentTimeMillis() / 1000L)
+					+ (getTemplate().getDurability() * 60) : (getTemplate().isShadowItem() ? getTemplate().getDurability() : -1);
 		}
 		else
 		{
@@ -354,25 +349,21 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public int getShadowLifeTime()
 	{
-		if (!isShadowItem())
-		{
-			return -1;
-		}
+		if(!isShadowItem())
+		{ return -1; }
 		return getLifeTime();
 	}
 
 	public int getTemporalLifeTime()
 	{
-		if (((getVisualId() > 0) && (getLifeTime() >= 0)) || isTemporalItem() || isFlagLifeTime())
-		{
-			return getLifeTime() - (int) (System.currentTimeMillis() / 1000L);
-		}
+		if(((getVisualId() > 0) && (getLifeTime() >= 0)) || isTemporalItem() || isFlagLifeTime())
+		{ return getLifeTime() - (int) (System.currentTimeMillis() / 1000L); }
 		return -9999;
 	}
 
 	public void startManaConsumeTask(PcInventory.ManaConsumeTask r)
 	{
-		if (_manaConsumeTask == null)
+		if(_manaConsumeTask == null)
 		{
 			_manaConsumeTask = LazyPrecisionTaskManager.getInstance().scheduleAtFixedRate(r, 0, 60000L);
 		}
@@ -380,7 +371,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void stopManaConsumeTask()
 	{
-		if (_manaConsumeTask != null)
+		if(_manaConsumeTask != null)
 		{
 			_manaConsumeTask.cancel(false);
 			_manaConsumeTask = null;
@@ -505,17 +496,15 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (shift && OnShiftActionHolder.getInstance().callShiftAction(player, ItemInstance.class, this, true))
-		{
-			return;
-		}
+		if(shift && OnShiftActionHolder.getInstance().callShiftAction(player, ItemInstance.class, this, true))
+		{ return; }
 
 		player.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, this, null);
 	}
 
 	public boolean isAugmented()
 	{
-		if (!getTemplate().isHairAccessory())
+		if(!getTemplate().isHairAccessory())
 		{
 			return (getVariation1Id() != 0) && (getVariation2Id() != 0);
 		}
@@ -549,7 +538,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	{
 
 	}
-	
+
 	public boolean isBlessed()
 	{
 		return _blessed;
@@ -617,31 +606,31 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 		final LazyArrayList<Func> funcs = LazyArrayList.newInstance();
 
-		if (_template.getAttachedFuncs().length > 0)
+		if(_template.getAttachedFuncs().length > 0)
 		{
-			for (final FuncTemplate t : _template.getAttachedFuncs())
+			for(final FuncTemplate t : _template.getAttachedFuncs())
 			{
 				final Func f = t.getFunc(this);
-				if (f != null)
+				if(f != null)
 				{
 					funcs.add(f);
 				}
 			}
 		}
 
-		for (final Element e : Element.VALUES)
+		for(final Element e : Element.VALUES)
 		{
-			if (isWeapon())
+			if(isWeapon())
 			{
 				funcs.add(new FuncAttack(e, 0x40, this));
 			}
-			if (isArmor())
+			if(isArmor())
 			{
 				funcs.add(new FuncDefence(e, 0x40, this));
 			}
 		}
 
-		if (!funcs.isEmpty())
+		if(!funcs.isEmpty())
 		{
 			result = funcs.toArray(new Func[funcs.size()]);
 		}
@@ -676,15 +665,12 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public boolean canBeDestroyed(Player player)
 	{
-		if (((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || isHeroItem() || (player.getMountControlItemObjId() == getObjectId()) || (player.getPetControlItem() == this))
-		{
-			return false;
-		}
+		if(((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || isHeroItem() || (player.getMountControlItemObjId() == getObjectId())
+				|| (player.getPetControlItem() == this))
+		{ return false; }
 
-		if (player.getEnchantScroll() == this)
-		{
-			return false;
-		}
+		if(player.getEnchantScroll() == this)
+		{ return false; }
 
 		return _template.isDestroyable();
 	}
@@ -694,60 +680,42 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public boolean canBeDropped(Player player, boolean pk)
 	{
-		if (player.isGM())
-		{
-			return true;
-		}
+		if(player.isGM())
+		{ return true; }
 
-		if (HidenItemsDAO.isHidden(this) || ((_customFlags & FLAG_NO_DROP) == FLAG_NO_DROP) || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(HidenItemsDAO.isHidden(this) || ((_customFlags & FLAG_NO_DROP) == FLAG_NO_DROP) || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if (isAugmented() && (!pk || !Config.DROP_ITEMS_AUGMENTED) && !Config.ALT_ALLOW_DROP_AUGMENTED)
-		{
-			return false;
-		}
+		if(isAugmented() && (!pk || !Config.DROP_ITEMS_AUGMENTED) && !Config.ALT_ALLOW_DROP_AUGMENTED)
+		{ return false; }
 
-		if (!ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if(!ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
 		return _template.isDropable();
 	}
 
 	public boolean canBeTraded(Player player)
 	{
-		if (isEquipped())
-		{
-			return false;
-		}
+		if(isEquipped())
+		{ return false; }
 
-		if (player.isGM() || Config.LIST_OF_TRABLE_ITEMS.equals(getItemId()))
-		{
-			return true;
-		}
+		if(player.isGM() || Config.LIST_OF_TRABLE_ITEMS.equals(getItemId()))
+		{ return true; }
 
-		if (HidenItemsDAO.isHidden(this) || ((_customFlags & FLAG_NO_TRADE) == FLAG_NO_TRADE) || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(HidenItemsDAO.isHidden(this) || ((_customFlags & FLAG_NO_TRADE) == FLAG_NO_TRADE) || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if ((isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED) || !ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if((isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED) || !ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
 		return _template.isTradeable();
 	}
 
 	public boolean canBePrivateStore(Player player)
 	{
-		if ((getItemId() == ItemTemplate.ITEM_ID_ADENA) || !canBeTraded(player))
-		{
-			return false;
-		}
+		if((getItemId() == ItemTemplate.ITEM_ID_ADENA) || !canBeTraded(player))
+		{ return false; }
 
 		return _template.isPrivatestoreable();
 	}
@@ -757,35 +725,24 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public boolean canBeSold(Player player)
 	{
-		if (((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || ((_customFlags & FLAG_NO_TRADE) == FLAG_NO_TRADE) || (getItemId() == ItemTemplate.ITEM_ID_ADENA) || HidenItemsDAO.isHidden(this))
-		{
-			return false;
-		}
+		if(((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || ((_customFlags & FLAG_NO_TRADE) == FLAG_NO_TRADE)
+				|| (getItemId() == ItemTemplate.ITEM_ID_ADENA) || HidenItemsDAO.isHidden(this))
+		{ return false; }
 
-		if (Config.LIST_OF_SELLABLE_ITEMS.equals(getItemId()))
-		{
-			return true;
-		}
+		if(Config.LIST_OF_SELLABLE_ITEMS.equals(getItemId()))
+		{ return true; }
 
-		if (isShadowItem() || isTemporalItem() || (isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED))
-		{
-			return false;
-		}
+		if(isShadowItem() || isTemporalItem() || (isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED))
+		{ return false; }
 
-		if (isEquipped())
-		{
-			return false;
-		}
+		if(isEquipped())
+		{ return false; }
 
-		if (!ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if(!ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
-		if (!_template.isDestroyable())
-		{
-			return false;
-		}
+		if(!_template.isDestroyable())
+		{ return false; }
 
 		return _template.isSellable();
 	}
@@ -795,130 +752,94 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public boolean canBeStored(Player player, boolean privatewh)
 	{
-		if (((_customFlags & FLAG_NO_TRANSFER) == FLAG_NO_TRANSFER) || !getTemplate().isStoreable())
-		{
-			return false;
-		}
+		if(((_customFlags & FLAG_NO_TRANSFER) == FLAG_NO_TRANSFER) || !getTemplate().isStoreable())
+		{ return false; }
 
-		if (!privatewh && (isShadowItem() || isTemporalItem()))
-		{
-			return false;
-		}
+		if(!privatewh && (isShadowItem() || isTemporalItem()))
+		{ return false; }
 
-		if ((!privatewh && isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED) || isEquipped())
-		{
-			return false;
-		}
+		if((!privatewh && isAugmented() && !Config.ALT_ALLOW_DROP_AUGMENTED) || isEquipped())
+		{ return false; }
 
-		if (!ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if(!ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
-		if (HidenItemsDAO.isHidden(this))
-		{
-			return false;
-		}
+		if(HidenItemsDAO.isHidden(this))
+		{ return false; }
 
 		return privatewh || _template.isTradeable();
 	}
 
 	public boolean canBeCrystallized(Player player)
 	{
-		if (isFlagNoCrystallize() || isHeroItem() || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(isFlagNoCrystallize() || isHeroItem() || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if (!ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if(!ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
 		return _template.isCrystallizable();
 	}
 
 	public boolean canBeEnchanted()
 	{
-		if (((_customFlags & FLAG_NO_ENCHANT) == FLAG_NO_ENCHANT) || isHeroItem() || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(((_customFlags & FLAG_NO_ENCHANT) == FLAG_NO_ENCHANT) || isHeroItem() || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if (isCommonItem())
-		{
-			return false;
-		}
+		if(isCommonItem())
+		{ return false; }
 
 		return _template.canBeEnchanted();
 	}
 
 	public boolean canBeAppearance()
 	{
-		if (!isEquipable() || isHeroItem() || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(!isEquipable() || isHeroItem() || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if (isCommonItem())
-		{
-			return false;
-		}
+		if(isCommonItem())
+		{ return false; }
 
 		return _template.canBeAppearance();
 	}
 
 	public boolean canBeAugmented(Player player)
 	{
-		if (!getTemplate().isAugmentable() || isHeroItem() || isShadowItem() || isTemporalItem())
-		{
-			return false;
-		}
+		if(!getTemplate().isAugmentable() || isHeroItem() || isShadowItem() || isTemporalItem())
+		{ return false; }
 
-		if (isCommonItem() || _template.isPvP())
-		{
-			return false;
-		}
+		if(isCommonItem() || _template.isPvP())
+		{ return false; }
 
 		return true;
 	}
 
 	public boolean canBeBlessed()
 	{
-		if (!getTemplate().isBlessable() || isBlessed() || isHeroItem() || isShadowItem())
-		{
-			return false;
-		}
+		if(!getTemplate().isBlessable() || isBlessed() || isHeroItem() || isShadowItem())
+		{ return false; }
 
-		if (isTemporalItem() || isCommonItem())
-		{
-			return false;
-		}
+		if(isTemporalItem() || isCommonItem())
+		{ return false; }
 
 		return true;
 	}
 
 	public boolean canBeExchanged(Player player)
 	{
-		if (((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || isShadowItem() || isTemporalItem() || !ItemFunctions.checkIfCanDiscard(player, this))
-		{
-			return false;
-		}
+		if(((_customFlags & FLAG_NO_DESTROY) == FLAG_NO_DESTROY) || isShadowItem() || isTemporalItem() || !ItemFunctions.checkIfCanDiscard(player, this))
+		{ return false; }
 
-		if (HidenItemsDAO.isHidden(this))
-		{
-			return false;
-		}
+		if(HidenItemsDAO.isHidden(this))
+		{ return false; }
 
 		return _template.isDestroyable();
 	}
 
 	public boolean canBeEnsoul(int ensoulId)
 	{
-		if (isHeroItem() || isShadowItem() || isTemporalItem() || isCommonItem())
-		{
-			return false;
-		}
+		if(isHeroItem() || isShadowItem() || isTemporalItem() || isCommonItem())
+		{ return false; }
 
 		return _template.canBeEnsoul(ensoulId);
 	}
@@ -949,7 +870,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public void dropToTheGround(Player lastAttacker, NpcInstance fromNpc)
 	{
 		Creature dropper = fromNpc;
-		if (dropper == null)
+		if(dropper == null)
 		{
 			dropper = lastAttacker;
 		}
@@ -957,26 +878,26 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		final Location pos = Location.findAroundPosition(dropper, 100);
 
 		// activate non owner penalty
-		if (lastAttacker != null) // lastAttacker в данном случае top damager
+		if(lastAttacker != null) // lastAttacker в данном случае top damager
 		{
 			_dropPlayers = new HashIntSet(1, 2);
 
 			PlayerGroup group = lastAttacker.getParty();
-			if (group == null)
+			if(group == null)
 			{
 				group = lastAttacker;
 			}
 
-			if ((fromNpc != null) && fromNpc.isBoss()) // На эпиках, дроп поднимает лидер CC.
+			if((fromNpc != null) && fromNpc.isBoss()) // На эпиках, дроп поднимает лидер CC.
 			{
 				group = lastAttacker.getPlayerGroup();
-				if ((group != null) && (group instanceof CommandChannel))
+				if((group != null) && (group instanceof CommandChannel))
 				{
 					final Player ccLeader = group.getGroupLeader();
-					if (ccLeader != null)
+					if(ccLeader != null)
 					{
 						group = ccLeader.getParty();
-						if (group == null)
+						if(group == null)
 						{
 							group = lastAttacker;
 						}
@@ -984,7 +905,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 				}
 			}
 
-			for (final Player $member : group)
+			for(final Player $member : group)
 			{
 				_dropPlayers.add($member.getObjectId());
 			}
@@ -1002,7 +923,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public void dropToTheGround(Creature dropper, Location dropPos)
 	{
-		if (GeoEngine.canMoveToCoord(dropper.getX(), dropper.getY(), dropper.getZ(), dropPos.x, dropPos.y, dropPos.z, dropper.getGeoIndex()))
+		if(GeoEngine.canMoveToCoord(dropper.getX(), dropper.getY(), dropper.getZ(), dropPos.x, dropPos.y, dropPos.z, dropper.getGeoIndex()))
 		{
 			dropMe(dropper, dropPos);
 		}
@@ -1018,13 +939,13 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public void dropToTheGround(Playable dropper, Location dropPos)
 	{
 		setLocation(ItemLocation.VOID);
-		if (getJdbcState().isPersisted())
+		if(getJdbcState().isPersisted())
 		{
 			setJdbcState(JdbcEntityState.UPDATED);
 			update();
 		}
 
-		if (GeoEngine.canMoveToCoord(dropper.getX(), dropper.getY(), dropper.getZ(), dropPos.x, dropPos.y, dropPos.z, dropper.getGeoIndex()))
+		if(GeoEngine.canMoveToCoord(dropper.getX(), dropper.getY(), dropper.getZ(), dropPos.x, dropPos.y, dropPos.z, dropper.getGeoIndex()))
 		{
 			dropMe(dropper, dropPos);
 		}
@@ -1066,16 +987,16 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	 */
 	public void dropMe(Creature dropper, Location loc)
 	{
-		if (dropper != null)
+		if(dropper != null)
 		{
 			setReflection(dropper.getReflection());
 		}
 
 		spawnMe0(loc, dropper);
 
-		if ((dropper != null) && dropper.isPlayable())
+		if((dropper != null) && dropper.isPlayable())
 		{
-			if (Config.AUTODESTROY_PLAYER_ITEM_AFTER > 0)
+			if(Config.AUTODESTROY_PLAYER_ITEM_AFTER > 0)
 			{
 				ItemsAutoDestroy.getInstance().addPlayerItem(this);
 			}
@@ -1083,11 +1004,11 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		else
 		{
 			// Add drop to auto destroy item task
-			if (isHerb())
+			if(isHerb())
 			{
 				ItemsAutoDestroy.getInstance().addHerb(this);
 			}
-			else if (Config.AUTODESTROY_ITEM_AFTER > 0)
+			else if(Config.AUTODESTROY_ITEM_AFTER > 0)
 			{
 				ItemsAutoDestroy.getInstance().addItem(this);
 			}
@@ -1196,14 +1117,12 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public Element getAttackElement()
 	{
 		final Element element = isWeapon() ? getAttributeElement() : Element.NONE;
-		if (element == Element.NONE)
+		if(element == Element.NONE)
 		{
-			for (final Element e : Element.VALUES)
+			for(final Element e : Element.VALUES)
 			{
-				if (_template.getBaseAttributeValue(e) > 0)
-				{
-					return e;
-				}
+				if(_template.getBaseAttributeValue(e) > 0)
+				{ return e; }
 			}
 		}
 		return element;
@@ -1308,7 +1227,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		// FIXME кажись дроппер у нас есть в итеме как переменная, ток проверить время?
 		// [VISTALL]
 		IClientOutgoingPacket packet = null;
-		if (dropper != null)
+		if(dropper != null)
 		{
 			packet = new DropItemPacket(this, dropper.getObjectId());
 		}
@@ -1330,14 +1249,14 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 		sb.append(getTemplate().getItemId());
 		sb.append(" ");
-		if (getEnchantLevel() > 0)
+		if(getEnchantLevel() > 0)
 		{
 			sb.append("+");
 			sb.append(getEnchantLevel());
 			sb.append(" ");
 		}
 		sb.append(getTemplate().getName());
-		if (!getTemplate().getAdditionalName().isEmpty())
+		if(!getTemplate().getAdditionalName().isEmpty())
 		{
 			sb.append(" ");
 			sb.append("\\").append(getTemplate().getAdditionalName()).append("\\");
@@ -1381,11 +1300,11 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	{
 		final ItemAttachment old = _attachment;
 		_attachment = attachment;
-		if (_attachment != null)
+		if(_attachment != null)
 		{
 			_attachment.setItem(this);
 		}
-		if (old != null)
+		if(old != null)
 		{
 			old.setItem(null);
 		}
@@ -1418,24 +1337,22 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void setAppearanceStoneId(int val)
 	{
-		if (val == _appearanceStoneId)
-		{
-			return;
-		}
+		if(val == _appearanceStoneId)
+		{ return; }
 
 		_appearanceStoneId = val;
 
-		if (_appearanceStoneSkills != null)
+		if(_appearanceStoneSkills != null)
 		{
 			_appearanceStoneSkills.clear();
 		}
 
-		if (_appearanceStoneId > 0)
+		if(_appearanceStoneId > 0)
 		{
 			final AppearanceStone stone = AppearanceStoneHolder.getInstance().getAppearanceStone(_appearanceStoneId);
-			if (stone != null)
+			if(stone != null)
 			{
-				if (_appearanceStoneSkills == null)
+				if(_appearanceStoneSkills == null)
 				{
 					_appearanceStoneSkills = new ArrayList<SkillEntry>();
 				}
@@ -1446,10 +1363,8 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public List<SkillEntry> getAppearanceStoneSkills()
 	{
-		if (_appearanceStoneSkills == null)
-		{
-			return Collections.emptyList();
-		}
+		if(_appearanceStoneSkills == null)
+		{ return Collections.emptyList(); }
 		return _appearanceStoneSkills;
 	}
 
@@ -1472,7 +1387,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public int getCrystalCountOnEchant()
 	{
 		final int defaultCrystalCount = _template.getCrystalCount();
-		if (defaultCrystalCount > 0)
+		if(defaultCrystalCount > 0)
 		{
 			final int crystalsAdd = ItemFunctions.getCrystallizeCrystalAdd(this);
 			return (int) Math.ceil(defaultCrystalCount / 2.) + crystalsAdd;
@@ -1480,203 +1395,201 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		return 0;
 	}
 
-	private static final int[][] ENCHANT_FAIL_WEAPON_STONES = new int[][]
-	{
-		{
-			0
-		}, // NONE
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			14
-		}, // D
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			2,
-			3,
-			4,
-			7,
-			8,
-			9,
-			12,
-			13,
-			14,
-			17,
-			18,
-			19,
-			25
-		}, // C
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			3,
-			4,
-			5,
-			8,
-			9,
-			10,
-			13,
-			14,
-			15,
-			18,
-			19,
-			20,
-			28
-		}, // B
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			5,
-			6,
-			7,
-			12,
-			13,
-			14,
-			19,
-			20,
-			21,
-			26,
-			27,
-			28,
-			38
-		}, // A
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			15,
-			18,
-			21,
-			25,
-			28,
-			29,
-			30,
-			31,
-			32,
-			33,
-			34,
-			35,
-			36
-		} // S
+	private static final int[][] ENCHANT_FAIL_WEAPON_STONES = new int[][] {
+			{
+					0
+			}, // NONE
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					14
+			}, // D
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					2,
+					3,
+					4,
+					7,
+					8,
+					9,
+					12,
+					13,
+					14,
+					17,
+					18,
+					19,
+					25
+			}, // C
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					3,
+					4,
+					5,
+					8,
+					9,
+					10,
+					13,
+					14,
+					15,
+					18,
+					19,
+					20,
+					28
+			}, // B
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					5,
+					6,
+					7,
+					12,
+					13,
+					14,
+					19,
+					20,
+					21,
+					26,
+					27,
+					28,
+					38
+			}, // A
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					15,
+					18,
+					21,
+					25,
+					28,
+					29,
+					30,
+					31,
+					32,
+					33,
+					34,
+					35,
+					36
+			} // S
 	};
 
-	private static final int[][] ENCHANT_FAIL_ARMOR_STONES = new int[][]
-	{
-		{
-			0
-		}, // NONE
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			1,
-			2,
-			3,
-			5,
-			6,
-			7,
-			12
-		}, // D
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			2,
-			3,
-			4,
-			7,
-			8,
-			9,
-			15
-		}, // C
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			3,
-			4,
-			5,
-			9,
-			10,
-			11,
-			19
-		}, // B
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			5,
-			6,
-			7,
-			13,
-			14,
-			16,
-			26
-		}, // A
-		{
-			0,
-			0,
-			0,
-			0,
-			0,
-			0,
-			10,
-			15,
-			20,
-			25,
-			27,
-			28,
-			30
-		} // S
+	private static final int[][] ENCHANT_FAIL_ARMOR_STONES = new int[][] {
+			{
+					0
+			}, // NONE
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					1,
+					2,
+					3,
+					5,
+					6,
+					7,
+					12
+			}, // D
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					2,
+					3,
+					4,
+					7,
+					8,
+					9,
+					15
+			}, // C
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					3,
+					4,
+					5,
+					9,
+					10,
+					11,
+					19
+			}, // B
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					5,
+					6,
+					7,
+					13,
+					14,
+					16,
+					26
+			}, // A
+			{
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					10,
+					15,
+					20,
+					25,
+					27,
+					28,
+					30
+			} // S
 	};
 
 	public int[] getEnchantFailStone()
@@ -1686,10 +1599,10 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		int stoneId;
 		int stoneCount = 0;
 
-		if (isWeapon())
+		if(isWeapon())
 		{
 			stoneId = 91462;
-			if ((gradeOrdinal >= 0) && (gradeOrdinal < ENCHANT_FAIL_WEAPON_STONES.length))
+			if((gradeOrdinal >= 0) && (gradeOrdinal < ENCHANT_FAIL_WEAPON_STONES.length))
 			{
 				final int[] countArr = ENCHANT_FAIL_WEAPON_STONES[gradeOrdinal];
 				stoneCount = countArr[Math.min(enchantLevel, countArr.length - 1)];
@@ -1698,16 +1611,15 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 		else
 		{
 			stoneId = 91463;
-			if ((gradeOrdinal >= 0) && (gradeOrdinal < ENCHANT_FAIL_ARMOR_STONES.length))
+			if((gradeOrdinal >= 0) && (gradeOrdinal < ENCHANT_FAIL_ARMOR_STONES.length))
 			{
 				final int[] countArr = ENCHANT_FAIL_ARMOR_STONES[gradeOrdinal];
 				stoneCount = countArr[Math.min(enchantLevel, countArr.length - 1)];
 			}
 		}
-		return new int[]
-		{
-			stoneId,
-			stoneCount
+		return new int[] {
+				stoneId,
+				stoneCount
 		};
 	}
 
@@ -1765,91 +1677,91 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public Collection<Ensoul> getSpecialAbilities()
 	{
 		final List<Ensoul> result = new ArrayList<>();
-		for (Ensoul ensoulOption : _ensoulOptions)
+		for(Ensoul ensoulOption : _ensoulOptions)
 		{
-			if (ensoulOption != null)
+			if(ensoulOption != null)
 			{
 				result.add(ensoulOption);
 			}
 		}
 		return result;
 	}
-	
+
 	public Ensoul getEnsoul(int type, int index)
 	{
-		if(type==1)
+		if(type == 1)
 			return getSpecialAbility(index);
-		else if (type== 2)
-			return  getAdditionalSpecialAbility(index);
-		
+		else if(type == 2)
+			return getAdditionalSpecialAbility(index);
+
 		return null;
 	}
-	
+
 	public Ensoul getSpecialAbility(int index)
 	{
 		return _ensoulOptions[index];
 	}
-	
+
 	public Collection<Ensoul> getAdditionalSpecialAbilities()
 	{
 		final List<Ensoul> result = new ArrayList<>();
-		for (Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
+		for(Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
 		{
-			if (ensoulSpecialOption != null)
+			if(ensoulSpecialOption != null)
 			{
 				result.add(ensoulSpecialOption);
 			}
 		}
 		return result;
 	}
-	
+
 	public Ensoul getAdditionalSpecialAbility(int index)
 	{
 		return _ensoulSpecialOptions[index];
 	}
-	
+
 	public void addSpecialAbility(Ensoul option, int position, int type, boolean updateInDB)
 	{
-		if ((type == 1) && ((position < 0) || (position > 1))) // two first slots
+		if((type == 1) && ((position < 0) || (position > 1))) // two first slots
 			return;
 
-		if ((type == 2) && (position != 0)) // third slot
+		if((type == 2) && (position != 0)) // third slot
 			return;
 
-		if (type == 1) // Adding regular ability
+		if(type == 1) // Adding regular ability
 		{
 			final Ensoul oldOption = _ensoulOptions[position];
-			if (oldOption != null)
+			if(oldOption != null)
 				ItemsEnsoulDAO.getInstance().delete(getOwnerId(), type, position);
-				//removeSpecialAbility(oldOption);
+			//removeSpecialAbility(oldOption);
 			_ensoulOptions[position] = option;
 		}
-		else if (type == 2) // Adding special ability
+		else if(type == 2) // Adding special ability
 		{
 			final Ensoul oldOption = _ensoulSpecialOptions[position];
-			if (oldOption != null)
+			if(oldOption != null)
 				ItemsEnsoulDAO.getInstance().delete(getOwnerId(), type, position);
-				//removeSpecialAbility(oldOption);
+			//removeSpecialAbility(oldOption);
 			_ensoulSpecialOptions[position] = option;
 		}
-		
-		if (updateInDB)
+
+		if(updateInDB)
 			updateSpecialAbilities();
 	}
-	
+
 	public void removeSpecialAbility(int position, int type)
 	{
-		if (type == 1)
+		if(type == 1)
 		{
 			final Ensoul option = _ensoulOptions[position];
-			if (option != null)
+			if(option != null)
 			{
 				ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, position);
 				_ensoulOptions[position] = null;
-				if (position == 0)
+				if(position == 0)
 				{
 					final Ensoul secondEnsoul = _ensoulOptions[1];
-					if (secondEnsoul != null)
+					if(secondEnsoul != null)
 					{
 						ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, 1);
 						_ensoulOptions[1] = null;
@@ -1858,17 +1770,17 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 				}
 			}
 		}
-		else if (type == 2)
+		else if(type == 2)
 		{
 			final Ensoul option = _ensoulSpecialOptions[position];
-			if (option != null)
+			if(option != null)
 			{
 				ItemsEnsoulDAO.getInstance().delete(getObjectId(), type, position);
 				_ensoulSpecialOptions[position] = null;
 			}
 		}
 	}
-	
+
 	public void updateSpecialAbilities()
 	{
 		ItemsEnsoulDAO.getInstance().insert(getObjectId(), _ensoulOptions, _ensoulSpecialOptions);
@@ -1876,45 +1788,45 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public int[] getEnsoulOptionsArray()
 	{
-		int[] ids = new int[_ensoulOptions.length]; 
+		int[] ids = new int[_ensoulOptions.length];
 
-		for (int i = 0; i < _ensoulOptions.length; i++) 
+		for(int i = 0; i < _ensoulOptions.length; i++)
 		{
-			if (_ensoulOptions[i] != null)
-				ids[i] = _ensoulOptions[i].getId(); 
+			if(_ensoulOptions[i] != null)
+				ids[i] = _ensoulOptions[i].getId();
 		}
 		return ids;
 	}
 
 	public int[] getEnsoulSpecialOptionsArray()
 	{
-		int[] ids = new int[_ensoulSpecialOptions.length]; 
+		int[] ids = new int[_ensoulSpecialOptions.length];
 
-		for (int i = 0; i < _ensoulSpecialOptions.length; i++) 
+		for(int i = 0; i < _ensoulSpecialOptions.length; i++)
 		{
-			if (_ensoulSpecialOptions[i] != null)
+			if(_ensoulSpecialOptions[i] != null)
 				ids[i] = _ensoulSpecialOptions[i].getId();
 		}
 		return ids;
 	}
-	
-	public  List<Ensoul> getNormalEnsouls()
+
+	public List<Ensoul> getNormalEnsouls()
 	{
 		final List<Ensoul> result = new ArrayList<>();
-		for (Ensoul ensoulOption : _ensoulOptions)
+		for(Ensoul ensoulOption : _ensoulOptions)
 		{
-			if (ensoulOption != null)
+			if(ensoulOption != null)
 				result.add(ensoulOption);
 		}
 		return result;
 	}
-	
-	public  List<Ensoul> getSpecialEnsouls()
+
+	public List<Ensoul> getSpecialEnsouls()
 	{
 		final List<Ensoul> result = new ArrayList<>();
-		for (Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
+		for(Ensoul ensoulSpecialOption : _ensoulSpecialOptions)
 		{
-			if (ensoulSpecialOption != null)
+			if(ensoulSpecialOption != null)
 				result.add(ensoulSpecialOption);
 		}
 		return result;
@@ -1922,9 +1834,9 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public boolean containsEnsoul(int type, int id)
 	{
-		return getEnsoul(type,id-1)!=null;
+		return getEnsoul(type, id - 1) != null;
 	}
-	
+
 	public boolean isFlagLifeTime()
 	{
 		return (_customFlags & FLAG_LIFE_TIME) == FLAG_LIFE_TIME;
@@ -1937,28 +1849,26 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void onEquip(int slot, Playable actor)
 	{
-		if (!isEquipped() && !getTemplate().isRune())
-		{
-			return;
-		}
+		if(!isEquipped() && !getTemplate().isRune())
+		{ return; }
 
 		_onEquipUnequipLock.lock();
 		try
 		{
 			int flags = 0;
-			for (final Listener<Playable> listener : actor.getInventory().getListeners())
+			for(final Listener<Playable> listener : actor.getInventory().getListeners())
 			{
 				flags |= ((OnEquipListener) listener).onEquip(slot, this, actor);
 			}
 
-			if ((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
+			if((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
 			{
 				actor.updateStats();
 			}
 
-			if ((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
+			if((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
 			{
-				if (actor.isPlayer())
+				if(actor.isPlayer())
 				{
 					actor.getPlayer().sendSkillList();
 				}
@@ -1980,39 +1890,37 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	public void onUnequip(int slot, Playable actor, boolean refreshEquip)
 	{
 		// Слушатели снятия можно применить и на одетой вещи.
-		if (!isEquipable() && !getTemplate().isRune())
-		{
-			return;
-		}
+		if(!isEquipable() && !getTemplate().isRune())
+		{ return; }
 
 		_onEquipUnequipLock.lock();
 		try
 		{
 			int flags = 0;
-			for (final Listener<Playable> listener : actor.getInventory().getListeners())
+			for(final Listener<Playable> listener : actor.getInventory().getListeners())
 			{
 				flags |= ((OnEquipListener) listener).onUnequip(slot, this, actor);
 			}
 
-			if (refreshEquip)
+			if(refreshEquip)
 			{
-				for (final ItemInstance item : actor.getInventory().getItems())
+				for(final ItemInstance item : actor.getInventory().getItems())
 				{
-					if (item != this)
+					if(item != this)
 					{
 						flags |= item.onRefreshEquip(actor, false);
 					}
 				}
 			}
 
-			if ((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
+			if((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
 			{
 				actor.updateStats();
 			}
 
-			if ((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
+			if((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
 			{
-				if (actor.isPlayer())
+				if(actor.isPlayer())
 				{
 					actor.getPlayer().sendSkillList();
 				}
@@ -2038,30 +1946,28 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public int onRefreshEquip(Playable actor, boolean update)
 	{
-		if (!isEquipped() && !getTemplate().isRune())
-		{
-			return 0;
-		}
+		if(!isEquipped() && !getTemplate().isRune())
+		{ return 0; }
 
 		_onEquipUnequipLock.lock();
 		try
 		{
 			int flags = 0;
-			for (final Listener<Playable> listener : actor.getInventory().getListeners())
+			for(final Listener<Playable> listener : actor.getInventory().getListeners())
 			{
 				flags |= ((OnEquipListener) listener).onRefreshEquip(this, actor);
 			}
 
-			if (update)
+			if(update)
 			{
-				if ((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
+				if((flags & Inventory.UPDATE_STATS_FLAG) == Inventory.UPDATE_STATS_FLAG)
 				{
 					actor.updateStats();
 				}
 
-				if ((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
+				if((flags & Inventory.UPDATE_SKILLS_FLAG) == Inventory.UPDATE_SKILLS_FLAG)
 				{
-					if (actor.isPlayer())
+					if(actor.isPlayer())
 					{
 						actor.getPlayer().sendSkillList();
 					}
@@ -2083,7 +1989,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public SkillEntry addEquippedSkill(Object owner, SkillEntry skill)
 	{
-		if (_equippedSkills == null)
+		if(_equippedSkills == null)
 		{
 			_equippedSkills = new ConcurrentHashMap<>();
 		}
@@ -2094,27 +2000,23 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public IntObjectMap<SkillEntry> removeEquippedSkills(Object owner)
 	{
-		if (_equippedSkills == null)
-		{
-			return null;
-		}
+		if(_equippedSkills == null)
+		{ return null; }
 		return _equippedSkills.remove(owner);
 	}
 
 	public int getEquippedSkillLevel(int skillId)
 	{
-		if (_equippedSkills == null)
-		{
-			return 0;
-		}
+		if(_equippedSkills == null)
+		{ return 0; }
 
 		int skillLevel = 0;
-		for (final IntObjectMap<SkillEntry> skillsMap : _equippedSkills.values())
+		for(final IntObjectMap<SkillEntry> skillsMap : _equippedSkills.values())
 		{
 			final SkillEntry skillEntry = skillsMap.get(skillId);
-			if (skillEntry != null)
+			if(skillEntry != null)
 			{
-				if (skillEntry.getLevel() > skillLevel)
+				if(skillEntry.getLevel() > skillLevel)
 				{
 					skillLevel = skillEntry.getLevel();
 				}
@@ -2125,7 +2027,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public OptionDataTemplate addEquippedOptionData(Object owner, OptionDataTemplate optionData)
 	{
-		if (_equippedOptionDatas == null)
+		if(_equippedOptionDatas == null)
 		{
 			_equippedOptionDatas = new ConcurrentHashMap<>();
 		}
@@ -2136,10 +2038,8 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public IntObjectMap<OptionDataTemplate> removeEquippedOptionDatas(Object owner)
 	{
-		if (_equippedOptionDatas == null)
-		{
-			return null;
-		}
+		if(_equippedOptionDatas == null)
+		{ return null; }
 		return _equippedOptionDatas.remove(owner);
 	}
 
@@ -2155,7 +2055,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public int isLocked()
 	{
-		return 0;  
+		return 0;
 	}
 
 	public int getVariation3Id()
@@ -2179,7 +2079,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 	{
 		return _petParam;
 	}
-	
+
 	public boolean isDamaged()
 	{
 		return false;
@@ -2187,7 +2087,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 
 	public void setDamaged(boolean b)
 	{
-  
+
 	}
 
 	public void restoreEnsoul()

@@ -24,8 +24,7 @@ public class SelectorHelper implements IMMOExecutor<L2LoginClient>, IClientFacto
 	{
 		final L2LoginClient client = new L2LoginClient(con);
 		client.sendPacket(new Init(client));
-		ThreadPoolManager.getInstance().schedule(() ->
-		{
+		ThreadPoolManager.getInstance().schedule(() -> {
 			client.closeNow(false);
 		}, Config.LOGIN_TIMEOUT);
 		return client;

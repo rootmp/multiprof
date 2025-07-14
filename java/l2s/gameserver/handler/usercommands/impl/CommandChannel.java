@@ -21,30 +21,29 @@ import l2s.gameserver.network.l2.s2c.SystemMessage;
  */
 public class CommandChannel implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		92,
-		93,
-		96,
-		97
+	private static final int[] COMMAND_IDS = {
+			92,
+			93,
+			96,
+			97
 	};
 
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (id != COMMAND_IDS[0] && id != COMMAND_IDS[1] && id != COMMAND_IDS[2] && id != COMMAND_IDS[3])
+		if(id != COMMAND_IDS[0] && id != COMMAND_IDS[1] && id != COMMAND_IDS[2] && id != COMMAND_IDS[3])
 			return false;
 
-		switch (id)
+		switch(id)
 		{
 			case 92: // channelcreate
 				// "Используйте команду /channelinvite"
 				activeChar.sendMessage(new CustomMessage("usercommandhandlers.CommandChannel"));
 				break;
 			case 93: // channeldelete
-				if (!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+				if(!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 					return true;
-				if (activeChar.getParty().getCommandChannel().getChannelLeader() == activeChar)
+				if(activeChar.getParty().getCommandChannel().getChannelLeader() == activeChar)
 				{
 					l2s.gameserver.model.CommandChannel channel = activeChar.getParty().getCommandChannel();
 					channel.disbandChannel();
@@ -54,9 +53,9 @@ public class CommandChannel implements IUserCommandHandler
 				break;
 			case 96: // channelleave
 				// FIXME создатель канала вылетел, надо автоматом передать кому-то права
-				if (!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+				if(!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 					return true;
-				if (!activeChar.getParty().isLeader(activeChar))
+				if(!activeChar.getParty().isLeader(activeChar))
 				{
 					activeChar.sendPacket(SystemMsg.ONLY_A_PARTY_LEADER_CAN_LEAVE_A_COMMAND_CHANNEL);
 					return true;
@@ -65,9 +64,9 @@ public class CommandChannel implements IUserCommandHandler
 
 				// Лидер СС не может покинуть СС, можно только распустить СС
 				// FIXME по идее может, права автоматом должны передаться другой партии
-				if (channel.getChannelLeader() == activeChar)
+				if(channel.getChannelLeader() == activeChar)
 				{
-					if (channel.getParties().size() > 1)
+					if(channel.getParties().size() > 1)
 						return false;
 
 					// Закрываем СС, если в СС 1 партия и лидер нажал Quit
@@ -81,7 +80,7 @@ public class CommandChannel implements IUserCommandHandler
 				channel.broadCast(new SystemMessage(SystemMessage.S1_PARTY_HAS_LEFT_THE_COMMAND_CHANNEL).addString(activeChar.getName()));
 				break;
 			case 97: // channelinfo
-				if (!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
+				if(!activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 					return false;
 				activeChar.sendPacket(new ExMultiPartyCommandChannelInfoPacket(activeChar.getParty().getCommandChannel()));
 				break;

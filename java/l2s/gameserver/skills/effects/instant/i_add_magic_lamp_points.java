@@ -17,12 +17,11 @@ public class i_add_magic_lamp_points extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		long resultValue = effected.getPlayer().getMagicLampPoints() + (long) effected.getStat().calc(Stats.MAGIC_LAMP_CHARGING_RATE_MULTIPLIER, (long) getValue());
+		long resultValue = effected.getPlayer().getMagicLampPoints()
+				+ (long) effected.getStat().calc(Stats.MAGIC_LAMP_CHARGING_RATE_MULTIPLIER, (long) getValue());
 
-		if (resultValue > effected.getPlayer().MAX_MAGIC_LAMP_POINTS)
-		{
-			return false;
-		}
+		if(resultValue > effected.getPlayer().MAX_MAGIC_LAMP_POINTS)
+		{ return false; }
 
 		return true;
 	}
@@ -30,7 +29,8 @@ public class i_add_magic_lamp_points extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		long resultValue = effected.getPlayer().getMagicLampPoints() + (long) effected.getStat().calc(Stats.MAGIC_LAMP_CHARGING_RATE_MULTIPLIER, (long) getValue());
+		long resultValue = effected.getPlayer().getMagicLampPoints()
+				+ (long) effected.getStat().calc(Stats.MAGIC_LAMP_CHARGING_RATE_MULTIPLIER, (long) getValue());
 		effected.getPlayer().setMagicLampPoints(resultValue);
 	}
 }

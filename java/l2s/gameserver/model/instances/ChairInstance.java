@@ -27,9 +27,9 @@ public class ChairInstance extends StaticObjectInstance
 
 	public boolean canSit(Player player)
 	{
-		if (_seatedPlayer != null && _seatedPlayer.getChairObject() == this)
+		if(_seatedPlayer != null && _seatedPlayer.getChairObject() == this)
 			return false;
-		if (player.getRealDistance3D(this) > 80)
+		if(player.getRealDistance3D(this) > 80)
 			return false;
 		return true;
 	}

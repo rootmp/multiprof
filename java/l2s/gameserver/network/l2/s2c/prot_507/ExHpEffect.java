@@ -8,7 +8,6 @@ public class ExHpEffect implements IClientOutgoingPacket
 	private int nSID;
 	private int nMaxHPBlockPer;
 
-
 	public ExHpEffect(int nSID, int nMaxHPBlockPer)
 	{
 		this.nSID = nSID;

@@ -69,8 +69,7 @@ import l2s.dataparser.data.annotations.factory.IObjectFactory;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ObjectArray
-{
+public @interface ObjectArray {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -101,6 +100,7 @@ public @interface ObjectArray
 	 * @return Строка - разделитель для элементов массива
 	 */
 	String splitter() default ";";
+
 	/**
 	 * Возвращает класс-фабрику, которая управляет созданием объектов массива.
 	 * Позволяет указать в качестве типа массива - какой-нибудь супер-класс, а

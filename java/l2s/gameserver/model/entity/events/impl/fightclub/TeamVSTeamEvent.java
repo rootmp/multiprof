@@ -34,10 +34,10 @@ public class TeamVSTeamEvent extends AbstractFightClub
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if (actor != null && actor.isPlayable())
+		if(actor != null && actor.isPlayable())
 		{
 			FightClubPlayer realActor = getFightClubPlayer(actor.getPlayer());
-			if (victim.isPlayer() && realActor != null)
+			if(victim.isPlayer() && realActor != null)
 			{
 				realActor.increaseKills(true);
 				realActor.getTeam().incScore(1);
@@ -50,13 +50,13 @@ public class TeamVSTeamEvent extends AbstractFightClub
 			actor.getPlayer().sendUserInfo();
 		}
 
-		if (victim.isPlayer())
+		if(victim.isPlayer())
 		{
 			FightClubPlayer realVictim = getFightClubPlayer(victim);
-			if (realVictim != null)
+			if(realVictim != null)
 			{
 				realVictim.increaseDeaths();
-				if (actor != null)
+				if(actor != null)
 					sendMessageToPlayer(realVictim, MessageType.GM, "You have been killed by " + actor.getName());
 			}
 			victim.broadcastCharInfo();
@@ -69,7 +69,7 @@ public class TeamVSTeamEvent extends AbstractFightClub
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
 
-		if (fPlayer == null)
+		if(fPlayer == null)
 			return currentTitle;
 
 		return "Kills: " + fPlayer.getKills(true) + " Deaths: " + fPlayer.getDeaths();

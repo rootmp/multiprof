@@ -13,9 +13,9 @@ public class ExNewHennaPotenOpenslot implements IClientOutgoingPacket
 
 	public ExNewHennaPotenOpenslot()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

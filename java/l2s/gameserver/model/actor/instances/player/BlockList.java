@@ -4,6 +4,8 @@ import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.Config;
 import l2s.gameserver.dao.CharacterBlockListDAO;
 import l2s.gameserver.dao.CharacterDAO;
@@ -15,9 +17,6 @@ import l2s.gameserver.network.l2.s2c.ExBlockAddResult;
 import l2s.gameserver.network.l2.s2c.ExBlockDefailInfo;
 import l2s.gameserver.network.l2.s2c.ExBlockRemoveResult;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -46,12 +45,12 @@ public class BlockList
 
 	public Block get(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return null;
 
-		for (Block b : values())
+		for(Block b : values())
 		{
-			if (name.equalsIgnoreCase(b.getName()))
+			if(name.equalsIgnoreCase(b.getName()))
 				return b;
 		}
 		return null;
@@ -64,7 +63,7 @@ public class BlockList
 
 	public boolean contains(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 		return contains(player.getObjectId());
 	}
@@ -96,7 +95,7 @@ public class BlockList
 
 	public void add(String name)
 	{
-		if (StringUtils.isEmpty(name) || name.equalsIgnoreCase(_owner.getName()) || contains(name))
+		if(StringUtils.isEmpty(name) || name.equalsIgnoreCase(_owner.getName()) || contains(name))
 		{
 			_owner.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_REGISTER_THE_USER_TO_YOUR_IGNORE_LIST);
 			return;
@@ -104,9 +103,9 @@ public class BlockList
 
 		int blockedObjId;
 		Player blockedPlayer = World.getPlayer(name);
-		if (blockedPlayer != null)
+		if(blockedPlayer != null)
 		{
-			if (blockedPlayer.isGM())
+			if(blockedPlayer.isGM())
 			{
 				_owner.sendPacket(SystemMsg.YOU_MAY_NOT_IMPOSE_A_BLOCK_ON_A_GM);
 				return;
@@ -116,13 +115,13 @@ public class BlockList
 		else
 		{
 			blockedObjId = CharacterDAO.getInstance().getObjectIdByName(name);
-			if (blockedObjId == 0)
+			if(blockedObjId == 0)
 			{
 				_owner.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_REGISTER_THE_USER_TO_YOUR_IGNORE_LIST);
 				return;
 			}
 
-			if (Config.gmlist.containsKey(blockedObjId) && Config.gmlist.get(blockedObjId).IsGM)
+			if(Config.gmlist.containsKey(blockedObjId) && Config.gmlist.get(blockedObjId).IsGM)
 			{
 				_owner.sendPacket(SystemMsg.YOU_MAY_NOT_IMPOSE_A_BLOCK_ON_A_GM);
 				return;
@@ -139,20 +138,20 @@ public class BlockList
 
 	public void remove(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return;
 
 		int blockedObjId = 0;
-		for (Block b : values())
+		for(Block b : values())
 		{
-			if (name.equalsIgnoreCase(b.getName()))
+			if(name.equalsIgnoreCase(b.getName()))
 			{
 				blockedObjId = b.getObjectId();
 				break;
 			}
 		}
 
-		if (blockedObjId == 0)
+		if(blockedObjId == 0)
 		{
 			_owner.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_DELETE_THE_CHARACTER_);
 			return;
@@ -168,7 +167,7 @@ public class BlockList
 
 	public void notifyChangeName(int blockedObjectId)
 	{
-		if (_blockList.containsKey(blockedObjectId))
+		if(_blockList.containsKey(blockedObjectId))
 		{
 			_owner.sendPacket(new BlockListPacket(_owner));
 		}
@@ -176,11 +175,11 @@ public class BlockList
 
 	public boolean updateMemo(String name, String memo)
 	{
-		if (memo.length() > 50)
+		if(memo.length() > 50)
 			return false;
 
 		Block block = get(name);
-		if (block == null)
+		if(block == null)
 			return false;
 
 		block.setMemo(memo);

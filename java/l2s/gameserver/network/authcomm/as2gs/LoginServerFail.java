@@ -10,16 +10,15 @@ public class LoginServerFail extends ReceivablePacket
 {
 	private static final Logger _log = LoggerFactory.getLogger(LoginServerFail.class);
 
-	private static final String[] REASONS =
-	{
-		"none",
-		"IP banned",
-		"IP reserved",
-		"wrong hexid",
-		"ID reserved",
-		"no free ID",
-		"not authed",
-		"already logged in"
+	private static final String[] REASONS = {
+			"none",
+			"IP banned",
+			"IP reserved",
+			"wrong hexid",
+			"ID reserved",
+			"no free ID",
+			"not authed",
+			"already logged in"
 	};
 
 	private String _reason;
@@ -29,7 +28,7 @@ public class LoginServerFail extends ReceivablePacket
 	protected boolean readImpl()
 	{
 		int reasonId = readC();
-		if (!getByteBuffer().hasRemaining())
+		if(!getByteBuffer().hasRemaining())
 			_reason = "Authserver registration failed! Reason: " + REASONS[reasonId];
 		else
 		{
@@ -42,7 +41,7 @@ public class LoginServerFail extends ReceivablePacket
 	protected void runImpl()
 	{
 		_log.warn(_reason);
-		if (_restartConnection)
+		if(_restartConnection)
 			AuthServerCommunication.getInstance().restart();
 	}
 }

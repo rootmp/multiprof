@@ -11,15 +11,16 @@ public class AdenLabStageTemplate
 	private int _cardCount;
 	private int normalEffect;
 	public int[] specialOptionsId = new int[2];
-	
+
 	private final Map<Integer, List<CardselectOptionData>> specialOptions = new HashMap<>();
 	private PkAdenLabSpecialGradeProb[] _specialGradeProbs;
 
 	public AdenLabStageTemplate(int id, int cardCount)
 	{
-		_id=id;
+		_id = id;
 		_cardCount = cardCount;
 	}
+
 	public int getId()
 	{
 		return _id;
@@ -55,15 +56,15 @@ public class AdenLabStageTemplate
 		int maxIndex = specialOptions.keySet().stream().max(Integer::compare).orElse(-1);
 		_specialGradeProbs = new PkAdenLabSpecialGradeProb[maxIndex + 1];
 
-		for (Map.Entry<Integer, List<CardselectOptionData>> entry : specialOptions.entrySet())
+		for(Map.Entry<Integer, List<CardselectOptionData>> entry : specialOptions.entrySet())
 		{
 			int index = entry.getKey();
 			List<CardselectOptionData> options = entry.getValue();
 
 			int[] probs = new int[options.size()];
-			for (int i = 0; i < options.size(); i++)
+			for(int i = 0; i < options.size(); i++)
 			{
-				probs[i] = (int) (options.get(i).getChance()*100);
+				probs[i] = (int) (options.get(i).getChance() * 100);
 			}
 
 			PkAdenLabSpecialGradeProb gradeProb = new PkAdenLabSpecialGradeProb();
@@ -71,29 +72,29 @@ public class AdenLabStageTemplate
 			_specialGradeProbs[index] = gradeProb;
 		}
 	}
-	
+
 	public PkAdenLabSpecialGradeProb[] getSpecialGradeProbs()
 	{
-		return _specialGradeProbs;    
+		return _specialGradeProbs;
 	}
 
-	public List<CardselectOptionData> getOptionsByChance() 
+	public List<CardselectOptionData> getOptionsByChance()
 	{
 		List<CardselectOptionData> selectedOptions = new ArrayList<>();
 
-		for (Map.Entry<Integer, List<CardselectOptionData>> entry : specialOptions.entrySet()) 
+		for(Map.Entry<Integer, List<CardselectOptionData>> entry : specialOptions.entrySet())
 		{
 			List<CardselectOptionData> options = entry.getValue();
-			if (options == null || options.isEmpty()) 
+			if(options == null || options.isEmpty())
 				continue;
-      double totalChance = options.stream().mapToDouble(CardselectOptionData::getChance).sum();
-      double randomValue = Math.random() * totalChance;
+			double totalChance = options.stream().mapToDouble(CardselectOptionData::getChance).sum();
+			double randomValue = Math.random() * totalChance;
 
 			double accumulatedChance = 0;
-			for (CardselectOptionData option : options) 
+			for(CardselectOptionData option : options)
 			{
 				accumulatedChance += option.getChance();
-				if (randomValue < accumulatedChance) 
+				if(randomValue < accumulatedChance)
 				{
 					selectedOptions.add(option);
 					break;
@@ -103,7 +104,7 @@ public class AdenLabStageTemplate
 
 		return selectedOptions;
 	}
-	
+
 	public int[] getSpecialOptionsId()
 	{
 		return specialOptionsId;

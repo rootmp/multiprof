@@ -32,7 +32,8 @@ public class AddLevelAction extends AbstractAction
 
 	public static AddLevelAction parse(Element element)
 	{
-		int minCount = element.attributeValue("count") != null ? Integer.parseInt(element.attributeValue("count")) : Integer.parseInt(element.attributeValue("min_count"));
+		int minCount = element.attributeValue("count")
+				!= null ? Integer.parseInt(element.attributeValue("count")) : Integer.parseInt(element.attributeValue("min_count"));
 		int maxCount = element.attributeValue("max_count") == null ? minCount : Integer.parseInt(element.attributeValue("max_count"));
 		double chance = element.attributeValue("chance") == null ? 100. : Double.parseDouble(element.attributeValue("chance"));
 		return new AddLevelAction(minCount, maxCount, chance);

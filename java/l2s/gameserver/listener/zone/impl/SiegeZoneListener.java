@@ -21,10 +21,10 @@ public class SiegeZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneLeave(Zone zone, Creature cha)
 	{
-		if (!cha.isInSiegeZone() && cha.isSummon())
+		if(!cha.isInSiegeZone() && cha.isSummon())
 		{
 			SummonInstance summon = (SummonInstance) cha;
-			if (summon.isSiegeSummon())
+			if(summon.isSiegeSummon())
 			{
 				summon.unSummon(false);
 			}

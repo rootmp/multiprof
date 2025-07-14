@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.Player;
@@ -26,23 +27,23 @@ public class Action implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		GameObject obj = activeChar.getVisibleObject(_objectId);
-		if (obj == null)
+		if(obj == null)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -50,19 +51,19 @@ public class Action implements IClientIncomingPacket
 
 		activeChar.setActive();
 
-		if (activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != obj)
+		if(activeChar.getAggressionTarget() != null && activeChar.getAggressionTarget() != obj)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isLockedTarget())
+		if(activeChar.isLockedTarget())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isFrozen())
+		if(activeChar.isFrozen())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_FROZEN, ActionFailPacket.STATIC);
 			return;

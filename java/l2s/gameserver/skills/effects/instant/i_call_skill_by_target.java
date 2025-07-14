@@ -47,15 +47,13 @@ public class i_call_skill_by_target extends i_abstract_effect
 
 	public void instantUse(Creature caster, Creature target, boolean reflected)
 	{
-		if (_skillEntryHolder == null)
-		{
-			return;
-		}
+		if(_skillEntryHolder == null)
+		{ return; }
 
 		SkillEntry tempSkillEntry = _skillEntryHolder;
 		Skill skill = tempSkillEntry.getTemplate();
 		Creature aimTarget = skill.getAimingTarget(caster, target);
-		if (aimTarget != null)
+		if(aimTarget != null)
 		{
 			callSkill(caster, target, tempSkillEntry, false, true);
 		}
@@ -72,10 +70,10 @@ public class i_call_skill_by_target extends i_abstract_effect
 	public static void callSkill(Creature caster, Creature target, SkillEntry skillEntry, boolean showAnimation, boolean checkConditions)
 	{
 		final Set<Creature> ss = new HashSet<>();
-		if (!checkConditions || skillEntry.checkCondition(caster, target, true, true, true, false, false))
+		if(!checkConditions || skillEntry.checkCondition(caster, target, true, true, true, false, false))
 		{
 			final Skill skill = skillEntry.getTemplate();
-			if (showAnimation && !skill.isNotBroadcastable() && !caster.isCastingNow())
+			if(showAnimation && !skill.isNotBroadcastable() && !caster.isCastingNow())
 			{
 				caster.broadcastPacket(new MagicSkillUse(caster, target, skillEntry.getDisplayId(), skillEntry.getDisplayLevel(), 0, 0));
 			}

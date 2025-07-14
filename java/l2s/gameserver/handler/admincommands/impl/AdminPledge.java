@@ -31,38 +31,39 @@ public class AdminPledge implements IAdminCommandHandler
 		@SuppressWarnings("unused")
 		Commands command = (Commands) comm;
 
-		if (activeChar.getPlayerAccess() == null || !activeChar.getPlayerAccess().CanEditPledge || activeChar.getTarget() == null || !activeChar.getTarget().isPlayer())
+		if(activeChar.getPlayerAccess() == null || !activeChar.getPlayerAccess().CanEditPledge || activeChar.getTarget() == null
+				|| !activeChar.getTarget().isPlayer())
 			return false;
 
 		Player target = (Player) activeChar.getTarget();
 
-		if (fullString.startsWith("admin_pledge"))
+		if(fullString.startsWith("admin_pledge"))
 		{
 			StringTokenizer st = new StringTokenizer(fullString);
 			st.nextToken();
 
 			String action = st.nextToken(); // setpoints|resetcreate|resetwait|addrep
 
-			if (action.equals("create"))
+			if(action.equals("create"))
 				try
 				{
-					if (target == null)
+					if(target == null)
 					{
 						activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 						return false;
 					}
-					if (target.getPlayer().getLevel() < 10)
+					if(target.getPlayer().getLevel() < 10)
 					{
 						activeChar.sendPacket(SystemMsg.YOU_DO_NOT_MEET_THE_CRITERIA_IN_ORDER_TO_CREATE_A_CLAN);
 						return false;
 					}
 					String pledgeName = st.nextToken();
-					if (pledgeName.length() > 16)
+					if(pledgeName.length() > 16)
 					{
 						activeChar.sendPacket(SystemMsg.CLAN_NAMES_LENGTH_IS_INCORRECT);
 						return false;
 					}
-					if (!Util.isMatchingRegexp(pledgeName, Config.CLAN_NAME_TEMPLATE))
+					if(!Util.isMatchingRegexp(pledgeName, Config.CLAN_NAME_TEMPLATE))
 					{
 						// clan name is not matching template
 						activeChar.sendPacket(SystemMsg.CLAN_NAME_IS_INVALID);
@@ -70,7 +71,7 @@ public class AdminPledge implements IAdminCommandHandler
 					}
 
 					Clan clan = ClanTable.getInstance().createClan(target, pledgeName);
-					if (clan != null)
+					if(clan != null)
 					{
 						target.sendPacket(clan.listAll());
 						target.sendPacket(new PledgeShowInfoUpdatePacket(clan), SystemMsg.YOUR_CLAN_HAS_BEEN_CREATED);
@@ -84,12 +85,11 @@ public class AdminPledge implements IAdminCommandHandler
 						return false;
 					}
 				}
-				catch (Exception e)
-				{
-				}
-			else if (action.equals("setpoints"))
+				catch(Exception e)
+				{}
+			else if(action.equals("setpoints"))
 			{
-				if (target.getClan() == null)
+				if(target.getClan() == null)
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;
@@ -105,13 +105,12 @@ public class AdminPledge implements IAdminCommandHandler
 
 					return true;
 				}
-				catch (Exception e)
-				{
-				}
+				catch(Exception e)
+				{}
 			}
-			else if (action.equals("resetcreate"))
+			else if(action.equals("resetcreate"))
 			{
-				if (target.getClan() == null)
+				if(target.getClan() == null)
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;
@@ -119,17 +118,17 @@ public class AdminPledge implements IAdminCommandHandler
 				target.getClan().setExpelledMemberTime(0);
 				activeChar.sendMessage("The penalty for creating a clan has been lifted for " + target.getName());
 			}
-			else if (action.equals("resetwait"))
+			else if(action.equals("resetwait"))
 			{
 				target.setLeaveClanTime(0);
 				activeChar.sendMessage("The penalty for leaving a clan has been lifted for " + target.getName());
 			}
-			else if (action.equals("addrep"))
+			else if(action.equals("addrep"))
 				try
 				{
 					int rep = Integer.parseInt(st.nextToken());
 
-					if (target.getClan() == null || target.getClan().getLevel() < 3)
+					if(target.getClan() == null || target.getClan().getLevel() < 3)
 					{
 						activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 						return false;
@@ -137,26 +136,26 @@ public class AdminPledge implements IAdminCommandHandler
 					target.getClan().incReputation(rep, false, "admin_manual");
 					activeChar.sendMessage("Added " + rep + " clan points to clan " + target.getClan().getName() + ".");
 				}
-				catch (NumberFormatException nfe)
+				catch(NumberFormatException nfe)
 				{
 					activeChar.sendMessage("Please specify a number of clan points to add.");
 				}
-			else if (action.equals("setleader"))
+			else if(action.equals("setleader"))
 			{
 				Clan clan = target.getClan();
-				if (target.getClan() == null)
+				if(target.getClan() == null)
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;
 				}
 				String newLeaderName = null;
-				if (st.hasMoreTokens())
+				if(st.hasMoreTokens())
 					newLeaderName = st.nextToken();
 				else
 					newLeaderName = target.getName();
 				SubUnit mainUnit = clan.getSubUnit(Clan.SUBUNIT_MAIN_CLAN);
 				UnitMember newLeader = mainUnit.getUnitMember(newLeaderName);
-				if (newLeader == null)
+				if(newLeader == null)
 				{
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 					return false;

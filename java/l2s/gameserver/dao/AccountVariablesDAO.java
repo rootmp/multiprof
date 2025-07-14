@@ -18,26 +18,26 @@ public class AccountVariablesDAO
 {
 	private static final Logger _log = LoggerFactory.getLogger(AccountVariablesDAO.class);
 	private static final AccountVariablesDAO _instance = new AccountVariablesDAO();
-	
+
 	public static final String SELECT_SQL_QUERY = "SELECT var, value, expire_time FROM account_variables WHERE account_name = ?";
 	public static final String DELETE_SQL_QUERY = "DELETE FROM account_variables WHERE account_name = ? AND var = ? LIMIT 1";
 	public static final String DELETE_EXPIRED_SQL_QUERY = "DELETE FROM account_variables WHERE expire_time > 0 AND expire_time < ?";
 	public static final String INSERT_SQL_QUERY = "REPLACE INTO account_variables (account_name, var, value, expire_time) VALUES (?,?,?,?)";
 	public static final String DELETE_ALL_SQL_QUERY = "DELETE FROM account_variables WHERE var=?";
-	
+
 	public static final String DELETE_SQL_QUERY2 = "DELETE FROM account_variables WHERE account_name = ? AND var LIKE ?";
 	public static final String DELETE_ALL_SQL_QUERY2 = "DELETE FROM account_variables WHERE var LIKE ?";
-	
+
 	public AccountVariablesDAO()
 	{
 		deleteExpiredVars();
 	}
-	
+
 	public static AccountVariablesDAO getInstance()
 	{
 		return _instance;
 	}
-	
+
 	public String select(String account, String _var)
 	{
 		return select(account, _var, null);
@@ -69,7 +69,7 @@ public class AccountVariablesDAO
 		}
 		return result_value;
 	}
-	
+
 	private void deleteExpiredVars()
 	{
 		Connection con = null;
@@ -114,7 +114,7 @@ public class AccountVariablesDAO
 		}
 		return true;
 	}
-	
+
 	public boolean delete(String acc, String varName)
 	{
 		Connection con = null;
@@ -138,7 +138,7 @@ public class AccountVariablesDAO
 		}
 		return true;
 	}
-	
+
 	public List<VariableContainer> restore(String acc)
 	{
 		List<VariableContainer> result = new ArrayList<VariableContainer>();
@@ -220,7 +220,7 @@ public class AccountVariablesDAO
 			DbUtils.closeQuietly(con, statement);
 		}
 	}
-	
+
 	public void delete2(String _var)
 	{
 		Connection con = null;
@@ -241,7 +241,7 @@ public class AccountVariablesDAO
 			DbUtils.closeQuietly(con, statement);
 		}
 	}
-	
+
 	public void delete(String _var)
 	{
 		Connection con = null;

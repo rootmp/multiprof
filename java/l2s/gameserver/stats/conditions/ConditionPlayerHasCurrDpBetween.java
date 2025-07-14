@@ -22,20 +22,16 @@ public class ConditionPlayerHasCurrDpBetween extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature character = env.character;
-		if (character == null)
-		{
-			return false;
-		}
+		if(character == null)
+		{ return false; }
 
-		if (_percentage)
+		if(_percentage)
 		{
 			int hpPer = (int) character.getCurrentDpPercents();
 			return (hpPer >= _min && hpPer <= _max);
 		}
-		if (_max == -1)
-		{
-			return (character.getCurrentDp() >= _min);
-		}
+		if(_max == -1)
+		{ return (character.getCurrentDp() >= _min); }
 
 		return (character.getCurrentDp() >= _min && character.getCurrentDp() <= _max);
 	}

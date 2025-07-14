@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,21 +35,21 @@ public final class RequestReplyStartPledgeWar implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.CLAN_WAR_START))
+		if(request == null || !request.isTypeOf(L2RequestType.CLAN_WAR_START))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -56,14 +57,14 @@ public final class RequestReplyStartPledgeWar implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -71,19 +72,19 @@ public final class RequestReplyStartPledgeWar implements IClientIncomingPacket
 		}
 
 		Clan clan = requestor.getClan();
-		if (clan == null)
+		if(clan == null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_answer == 1)
+		if(_answer == 1)
 		{
 			try
 			{
 				ClanWar war = clan.getWarWith(activeChar.getClanId());
-				if (war == null)
+				if(war == null)
 				{
 					_log.warn(getClass().getSimpleName() + ": Opponent clan war object not found!");
 
@@ -92,7 +93,7 @@ public final class RequestReplyStartPledgeWar implements IClientIncomingPacket
 					return;
 				}
 
-				if (war.getPeriod() != ClanWarPeriod.PREPARATION)
+				if(war.getPeriod() != ClanWarPeriod.PREPARATION)
 				{
 					request.cancel();
 					activeChar.sendPacket(new SystemMessagePacket(SystemMsg.YOU_HAVE_ALREADY_BEEN_AT_WAR_WITH_THE_S1_CLAN_5_DAYS_MUST_PASS_BEFORE_YOU_CAN_DECLARE_WAR_AGAIN).addString(requestor.getClan().getName()));

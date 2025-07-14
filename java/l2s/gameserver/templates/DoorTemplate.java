@@ -90,12 +90,12 @@ public class DoorTemplate extends CreatureTemplate
 		{
 			classAI = (Class<DoorAI>) Class.forName("l2s.gameserver.ai." + ai);
 		}
-		catch (ClassNotFoundException e)
+		catch(ClassNotFoundException e)
 		{
 			classAI = (Class<DoorAI>) Scripts.getInstance().getClasses().get("ai.door." + ai);
 		}
 
-		if (classAI == null)
+		if(classAI == null)
 			_log.error("Not found ai class for ai: " + ai + ". DoorId: " + _id);
 		else
 		{
@@ -103,7 +103,7 @@ public class DoorTemplate extends CreatureTemplate
 			_constructorAI = (Constructor<DoorAI>) _classAI.getConstructors()[0];
 		}
 
-		if (_classAI.isAnnotationPresent(Deprecated.class))
+		if(_classAI.isAnnotationPresent(Deprecated.class))
 			_log.error("Ai type: " + ai + ", is deprecated. DoorId: " + _id);
 	}
 
@@ -113,7 +113,7 @@ public class DoorTemplate extends CreatureTemplate
 		{
 			return _constructorAI.newInstance(door);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Unable to create ai of doorId " + _id, e);
 		}

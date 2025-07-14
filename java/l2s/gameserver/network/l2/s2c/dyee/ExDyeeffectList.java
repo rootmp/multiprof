@@ -13,9 +13,9 @@ public class ExDyeeffectList implements IClientOutgoingPacket
 
 	public ExDyeeffectList()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
@@ -29,7 +29,7 @@ public class ExDyeeffectList implements IClientOutgoingPacket
 			packetWriter.writeD(effect.nSkillLevel);
 			packetWriter.writeD(effect.nHiddenSkillID);
 			packetWriter.writeD(effect.nHiddenSkillLevel);
-	    packetWriter.writeD(effect.nChallengeCount);
+			packetWriter.writeD(effect.nChallengeCount);
 		}
 		return true;
 	}

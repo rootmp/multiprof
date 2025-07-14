@@ -10,7 +10,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.s2c.ExAdenaInvenCount;
-import l2s.gameserver.network.l2.s2c.newhenna.NewHennaList;
 import l2s.gameserver.network.l2.s2c.newhenna.NewHennaPotenEnchant;
 import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.templates.item.henna.DyePotentialFee;
@@ -35,21 +34,21 @@ public class RequestExNewHennaPotenEnchant implements IClientIncomingPacket
 	{
 		final Player player = client.getActiveChar();
 		if(player == null)
-		 return; 
+			return;
 
 		if((_slotId < 1) || (_slotId > 4))
-		 return; 
+			return;
 
 		int dailyStep = player.getDyePotentialDailyStep();
 		final DyePotentialFee currentFee = HennaPatternPotentialDataHolder.getInstance().getFee(dailyStep);
 		int dailyCount = player.getDyePotentialDailyCount();
-		
+
 		if((currentFee == null) || (dailyCount <= 0))
 			return;
 		final HennaPoten poten = player.getHennaPoten(_slotId);
-		
+
 		ItemData _costItem = currentFee.getItem(_costItemID);
-		
+
 		if(_costItem == null || !ItemFunctions.deleteItem(player, _costItem.getId(), _costItem.getCount()))
 			return;
 
@@ -69,7 +68,7 @@ public class RequestExNewHennaPotenEnchant implements IClientIncomingPacket
 			totalChance += entry.getValue();
 			if(random <= totalChance)
 			{
-				
+
 				final int increase = entry.getKey();
 				int newEnchantExp = poten.getEnchantExp() + increase;
 				final int tatooExpNeeded = HennaPatternPotentialDataHolder.getInstance().getExpForLevel(poten.getEnchantLevel());
@@ -82,7 +81,7 @@ public class RequestExNewHennaPotenEnchant implements IClientIncomingPacket
 					}
 				}
 				if(poten.getEnchantLevel() == 30)
-				{ 
+				{
 					if(poten.getEnchantExp() + increase >= 2500)
 						poten.setEnchantExp(2500);
 					else
@@ -91,8 +90,8 @@ public class RequestExNewHennaPotenEnchant implements IClientIncomingPacket
 				else
 					poten.setEnchantExp(newEnchantExp);
 
-				player.getListeners().onPlayerNewHennaPotenEnchant(_slotId, poten.getEnchantLevel()-1,poten.getEnchantLevel());
-				
+				player.getListeners().onPlayerNewHennaPotenEnchant(_slotId, poten.getEnchantLevel() - 1, poten.getEnchantLevel());
+
 				CharacterHennaDAO.getInstance().storeDyePoten(player, poten, _slotId);
 				player.sendPacket(new NewHennaPotenEnchant(_slotId, poten.getEnchantLevel(), poten.getEnchantExp(), dailyStep, dailyCount, poten.getActiveStep(), true));
 

@@ -127,7 +127,7 @@ public class MultiSellIngredient implements Cloneable
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + (int) (_itemCount ^ _itemCount >>> 32);
-		for (Element e : Element.VALUES)
+		for(Element e : Element.VALUES)
 			result = prime * result + _itemAttributes.getValue(e);
 		result = prime * result + _itemEnchant;
 		result = prime * result + _itemId;
@@ -137,21 +137,21 @@ public class MultiSellIngredient implements Cloneable
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (this == obj)
+		if(this == obj)
 			return true;
-		if (obj == null)
+		if(obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if(getClass() != obj.getClass())
 			return false;
 		MultiSellIngredient other = (MultiSellIngredient) obj;
-		if (_itemId != other._itemId)
+		if(_itemId != other._itemId)
 			return false;
-		if (_itemCount != other._itemCount)
+		if(_itemCount != other._itemCount)
 			return false;
-		if (_itemEnchant != other._itemEnchant)
+		if(_itemEnchant != other._itemEnchant)
 			return false;
-		for (Element e : Element.VALUES)
-			if (_itemAttributes.getValue(e) != other._itemAttributes.getValue(e))
+		for(Element e : Element.VALUES)
+			if(_itemAttributes.getValue(e) != other._itemAttributes.getValue(e))
 				return false;
 		return true;
 	}

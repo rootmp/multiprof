@@ -21,8 +21,8 @@ import l2s.gameserver.network.l2.s2c.adenlab.ExAdenlabTranscendEnchant;
 import l2s.gameserver.network.l2.s2c.adenlab.ExAdenlabTranscendProb;
 import l2s.gameserver.network.l2.s2c.adenlab.ExAdenlabUnlockBoss;
 import l2s.gameserver.templates.adenLab.AdenLabData;
-import l2s.gameserver.templates.adenLab.CardselectOptionData;
 import l2s.gameserver.templates.adenLab.AdenLabStageTemplate;
+import l2s.gameserver.templates.adenLab.CardselectOptionData;
 import l2s.gameserver.utils.ItemFunctions;
 
 public class AdenLab
@@ -122,7 +122,9 @@ public class AdenLab
 
 	public void sendBossList()
 	{
-		player.sendPacket(new ExAdenlabBossList(new int[] {0}));
+		player.sendPacket(new ExAdenlabBossList(new int[] {
+				0
+		}));
 	}
 
 	public void unlockBoss(int nBossID)
@@ -152,7 +154,6 @@ public class AdenLab
 		if(options == null || options.isEmpty())
 			return;
 
-
 		if(!ItemFunctions.haveItem(player, 57, Config.ADENLAB_ADENA_PLAY))
 			return;
 
@@ -177,11 +178,11 @@ public class AdenLab
 		{
 			if(!ItemFunctions.haveItem(player, 57, Config.ADENLAB_ADENA_FIX))
 				return;
-	
+
 			if(!ItemFunctions.deleteItem(player, 57, Config.ADENLAB_ADENA_FIX))
 				return;
 		}
-		
+
 		if(temp_special_options[0] != 0 || temp_special_options[1] != 0)
 		{
 			if(!data.getSpecialSlots().containsKey(nSlotID))
@@ -204,35 +205,35 @@ public class AdenLab
 		player.sendPacket(new ExAdenlabTranscendEnchant(nBossID, true));
 	}
 
-	private void updateStats() 
+	private void updateStats()
 	{
 		player.getStatsRecorder().block();
 		player.cleanExOptionData();
-		for (Map.Entry<Integer, AdenLabData> entry : _adenLab.entrySet()) 
+		for(Map.Entry<Integer, AdenLabData> entry : _adenLab.entrySet())
 		{
 			AdenLabData adenLabData = entry.getValue();
 
 			int currentSlot = adenLabData.getCurrentSlot();
 			int lastCompletedSlot = currentSlot - 1;
 
-			if (lastCompletedSlot < 0) 
+			if(lastCompletedSlot < 0)
 				continue;
 
-			for (int slot = lastCompletedSlot; slot > 0; slot--) 
+			for(int slot = lastCompletedSlot; slot > 0; slot--)
 			{
 				AdenLabStageTemplate stageTemplate = AdenLabDataHolder.getInstance().getSlot(slot);
 
-				if (stageTemplate == null) 
+				if(stageTemplate == null)
 					continue;
 
-				if (stageTemplate.getNormalEffect() != 0) 
+				if(stageTemplate.getNormalEffect() != 0)
 					player.addExOptionData(stageTemplate.getNormalEffect(), 1);
-				else 
+				else
 				{
 					int[] option_id = stageTemplate.getSpecialOptionsId();
 					int[] option_level = adenLabData.getSpecialSlot(slot);
 
-					for (int index = 0; index < option_level.length; index++)
+					for(int index = 0; index < option_level.length; index++)
 						player.addExOptionData(option_id[index], option_level[index]);
 				}
 			}
@@ -245,6 +246,6 @@ public class AdenLab
 
 	public void sendTranscendProb(int nBossID)
 	{
-		player.sendPacket(new ExAdenlabTranscendProb(nBossID, new int[] {}));    
+		player.sendPacket(new ExAdenlabTranscendProb(nBossID, new int[] {}));
 	}
 }

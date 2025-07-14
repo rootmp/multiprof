@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -26,10 +27,10 @@ public class RequestExBR_LectureMark implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null || !Config.EX_LECTURE_MARK)
+		if(player == null || !Config.EX_LECTURE_MARK)
 			return;
 
-		switch (_mark)
+		switch(_mark)
 		{
 			case INITIAL_MARK:
 			case EVANGELIST_MARK:

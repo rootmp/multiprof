@@ -19,7 +19,7 @@ public class ReviveAction extends AbstractAction
 	public boolean performAction(FakeAI ai)
 	{
 		Player player = ai.getActor();
-		if (player.isDead())
+		if(player.isDead())
 			RequestRestartPoint.requestRestart(player, RestartType.TO_VILLAGE);
 		return true;
 	}

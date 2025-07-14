@@ -14,20 +14,20 @@ import org.slf4j.LoggerFactory;
 
 import l2s.gameserver.Config;
 
-public final class LetterCollectData 
+public final class LetterCollectData
 {
 	protected final Logger _log = LoggerFactory.getLogger(LetterCollectData.class);
 
-	private static LetterCollectData  _instance;
+	private static LetterCollectData _instance;
 
-	private Map<Integer,int[]> _letterCollectData = new HashMap<Integer,int[]>();
+	private Map<Integer, int[]> _letterCollectData = new HashMap<Integer, int[]>();
 
-	public Map<Integer,int[]> getLetterCollectData()
+	public Map<Integer, int[]> getLetterCollectData()
 	{
 		return _letterCollectData;
 	}
 
-	public  int[] getLetterCollectDataById(int id)
+	public int[] getLetterCollectDataById(int id)
 	{
 		return _letterCollectData.get(id);
 	}
@@ -36,7 +36,7 @@ public final class LetterCollectData
 	private static final Pattern commentReplacePattern = Pattern.compile("(/\\*[^\\*]*[^/]*/|//[^\\n]*)", Pattern.DOTALL | Pattern.MULTILINE);
 	private static final String LETTER_COLLECT_DATA_FILE_NAME = "LetterCollectData_ClassicAden.txt";
 
-	public static LetterCollectData  getInstance()
+	public static LetterCollectData getInstance()
 	{
 		if(_instance == null)
 			_instance = new LetterCollectData();
@@ -76,7 +76,7 @@ public final class LetterCollectData
 			matcher = pattern.matcher(buffer);
 			while(matcher.find())
 			{
-				String[] letter_item_ids_s = matcher.group(2).replace("{","").replace("}","").split(";");
+				String[] letter_item_ids_s = matcher.group(2).replace("{", "").replace("}", "").split(";");
 				int[] letter_item_ids = Stream.of(letter_item_ids_s).mapToInt(Integer::parseInt).toArray();
 				_letterCollectData.put(Integer.parseInt(matcher.group(1)), letter_item_ids);
 			}
@@ -88,6 +88,5 @@ public final class LetterCollectData
 		}
 		_log.info("LetterCollectData: " + _letterCollectData.size());
 	}
-
 
 }

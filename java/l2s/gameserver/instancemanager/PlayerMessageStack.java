@@ -17,7 +17,7 @@ public class PlayerMessageStack
 
 	public static PlayerMessageStack getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new PlayerMessageStack();
 		return _instance;
 	}
@@ -30,7 +30,7 @@ public class PlayerMessageStack
 	public void mailto(int char_obj_id, IBroadcastPacket message)
 	{
 		Player cha = GameObjectsStorage.getPlayer(char_obj_id);
-		if (cha != null)
+		if(cha != null)
 		{
 			cha.sendPacket(message);
 			return;
@@ -39,7 +39,7 @@ public class PlayerMessageStack
 		synchronized (_stack)
 		{
 			List<IBroadcastPacket> messages;
-			if (_stack.containsKey(char_obj_id))
+			if(_stack.containsKey(char_obj_id))
 				messages = _stack.remove(char_obj_id);
 			else
 				messages = new ArrayList<IBroadcastPacket>();
@@ -54,14 +54,14 @@ public class PlayerMessageStack
 		List<IBroadcastPacket> messages = null;
 		synchronized (_stack)
 		{
-			if (!_stack.containsKey(cha.getObjectId()))
+			if(!_stack.containsKey(cha.getObjectId()))
 				return;
 			messages = _stack.remove(cha.getObjectId());
 		}
-		if (messages == null || messages.size() == 0)
+		if(messages == null || messages.size() == 0)
 			return;
 		// TODO: удаление из БД
-		for (IBroadcastPacket message : messages)
+		for(IBroadcastPacket message : messages)
 			cha.sendPacket(message);
 	}
 }

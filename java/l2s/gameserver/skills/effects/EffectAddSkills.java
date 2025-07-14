@@ -17,10 +17,10 @@ public class EffectAddSkills extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		for (AddedSkill as : getSkill().getAddedSkills())
+		for(AddedSkill as : getSkill().getAddedSkills())
 		{
 			SkillEntry skillEntry = as.getSkill();
-			if (skillEntry != null)
+			if(skillEntry != null)
 				effected.addSkill(skillEntry);
 		}
 	}
@@ -28,10 +28,10 @@ public class EffectAddSkills extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		for (AddedSkill as : getSkill().getAddedSkills())
+		for(AddedSkill as : getSkill().getAddedSkills())
 		{
 			SkillEntry skillEntry = as.getSkill();
-			if (skillEntry != null)
+			if(skillEntry != null)
 				effected.removeSkill(skillEntry);
 		}
 	}

@@ -41,34 +41,34 @@ public class DomainParser extends AbstractParser<MapRegionManager>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element listElement = iterator.next();
 
-			if ("domain".equals(listElement.getName()))
+			if("domain".equals(listElement.getName()))
 			{
 				int id = Integer.parseInt(listElement.attributeValue("id"));
 				Territory territory = null;
 
-				for (Iterator<Element> i = listElement.elementIterator(); i.hasNext();)
+				for(Iterator<Element> i = listElement.elementIterator(); i.hasNext();)
 				{
 					Element n = i.next();
 
-					if ("polygon".equalsIgnoreCase(n.getName()))
+					if("polygon".equalsIgnoreCase(n.getName()))
 					{
 						Polygon shape = ZoneParser.parsePolygon(n);
 
-						if (!shape.validate())
+						if(!shape.validate())
 							error("DomainParser: invalid territory data : " + shape + "!");
 
-						if (territory == null)
+						if(territory == null)
 							territory = new Territory();
 
 						territory.add(shape);
 					}
 				}
 
-				if (territory == null)
+				if(territory == null)
 					throw new RuntimeException("DomainParser: empty territory!");
 
 				getHolder().addRegionData(new DomainArea(id, territory));

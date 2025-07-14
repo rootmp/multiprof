@@ -50,7 +50,7 @@ public class Hero
 	private static IntObjectMap<StatsSet> _heroes;
 	private static IntObjectMap<StatsSet> _completeHeroes;
 	private static List<OlympiadHeroInfo> olympiadHeroesInfo;
-	
+
 	private static IntObjectMap<List<HeroDiary>> _herodiary;
 	private static IntObjectMap<String> _heroMessage; // TODO [VISTALL] унести в StatsSet с каждого героя
 
@@ -69,7 +69,7 @@ public class Hero
 
 	public static Hero getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new Hero();
 		return _instance;
 	}
@@ -105,7 +105,7 @@ public class Hero
 			statement = con.prepareStatement(GET_HEROES);
 			statement.setInt(1, SubClassType.BASE_CLASS.ordinal());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				StatsSet hero = new StatsSet();
 				int charId = rset.getInt(CHAR_ID);
@@ -125,7 +125,7 @@ public class Hero
 			statement = con.prepareStatement(GET_ALL_HEROES);
 			statement.setInt(1, SubClassType.BASE_CLASS.ordinal());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				StatsSet hero = new StatsSet();
 				int charId = rset.getInt(CHAR_ID);
@@ -139,7 +139,7 @@ public class Hero
 				_completeHeroes.put(charId, hero);
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("Hero System: Couldnt load Heroes", e);
 		}
@@ -161,13 +161,13 @@ public class Hero
 	{
 		MySqlDataInsert.set("UPDATE heroes SET played = 0, active = 0");
 
-		for (IntObjectPair<StatsSet> entry : _heroes.entrySet())
+		for(IntObjectPair<StatsSet> entry : _heroes.entrySet())
 		{
-			if (entry.getValue().getInteger(ACTIVE) == 0)
+			if(entry.getValue().getInteger(ACTIVE) == 0)
 				continue;
 
 			Player player = GameObjectsStorage.getPlayer(entry.getKey());
-			if (player != null)
+			if(player != null)
 			{
 				player.setHero(CustomHeroDAO.getInstance().isCustomHero(player.getObjectId()));
 				player.checkAndDeleteOlympiadItems();
@@ -183,16 +183,16 @@ public class Hero
 
 	public synchronized boolean computeNewHeroes(List<StatsSet> newHeroes)
 	{
-		if (newHeroes.size() == 0)
+		if(newHeroes.size() == 0)
 			return true;
 
 		IntObjectMap<StatsSet> heroes = new CHashIntObjectMap<StatsSet>();
 
-		for (StatsSet hero : newHeroes)
+		for(StatsSet hero : newHeroes)
 		{
 			int charId = hero.getInteger(CHAR_ID);
 
-			if (_completeHeroes != null && _completeHeroes.containsKey(charId))
+			if(_completeHeroes != null && _completeHeroes.containsKey(charId))
 			{
 				StatsSet oldHero = _completeHeroes.get(charId);
 				int count = oldHero.getInteger(COUNT);
@@ -236,9 +236,9 @@ public class Hero
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("REPLACE INTO heroes (char_id, count, played, active) VALUES (?,?,?,?)");
 
-			for (int heroId : _heroes.keySet().toArray())
+			for(int heroId : _heroes.keySet().toArray())
 			{
-				if (id > 0 && heroId != id)
+				if(id > 0 && heroId != id)
 					continue;
 				StatsSet hero = _heroes.get(heroId);
 				statement.setInt(1, heroId);
@@ -246,14 +246,14 @@ public class Hero
 				statement.setInt(3, hero.getInteger(PLAYED));
 				statement.setInt(4, hero.getInteger(ACTIVE));
 				statement.execute();
-				if (_completeHeroes != null && !_completeHeroes.containsKey(heroId))
+				if(_completeHeroes != null && !_completeHeroes.containsKey(heroId))
 				{
 					HeroSetClanAndAlly(heroId, hero);
 					_completeHeroes.put(heroId, hero);
 				}
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("Hero System: Couldnt update Heroes");
 			_log.error("", e);
@@ -266,18 +266,18 @@ public class Hero
 
 	public boolean isHero(int id)
 	{
-		if (_heroes == null || _heroes.isEmpty())
+		if(_heroes == null || _heroes.isEmpty())
 			return false;
-		if (_heroes.containsKey(id) && _heroes.get(id).getInteger(ACTIVE) == 1)
+		if(_heroes.containsKey(id) && _heroes.get(id).getInteger(ACTIVE) == 1)
 			return true;
 		return false;
 	}
 
 	public boolean isInactiveHero(int id)
 	{
-		if (_heroes == null || _heroes.isEmpty())
+		if(_heroes == null || _heroes.isEmpty())
 			return false;
-		if (_heroes.containsKey(id) && _heroes.get(id).getInteger(ACTIVE) == 0)
+		if(_heroes.containsKey(id) && _heroes.get(id).getInteger(ACTIVE) == 0)
 			return true;
 		return false;
 	}
@@ -285,7 +285,7 @@ public class Hero
 	public void activateHero(Player player)
 	{
 		StatsSet hero = _heroes.get(player.getObjectId());
-		if (hero == null)
+		if(hero == null)
 			return;
 
 		hero.set(ACTIVE, 1);
@@ -312,7 +312,7 @@ public class Hero
 			statement.setInt(1, charId);
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				long time = rset.getLong("time");
 				int action = rset.getInt("action");
@@ -324,10 +324,10 @@ public class Hero
 
 			_herodiary.put(charId, diary);
 
-			if (Config.DEBUG)
+			if(Config.DEBUG)
 				_log.info("Hero System: Loaded " + diary.size() + " diary entries for Hero(object id: #" + charId + ")");
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("Hero System: Couldnt load Hero Diary for CharId: " + charId, e);
 		}
@@ -340,14 +340,14 @@ public class Hero
 	public void showHeroDiary(Player activeChar, int heroclass, int charid, int page)
 	{
 		StatsSet hero = _heroes.get(charid);
-		if (hero == null)
+		if(hero == null)
 			return;
 
 		final int perpage = 10;
 
 		List<HeroDiary> mainlist = _herodiary.get(charid);
 
-		if (mainlist != null)
+		if(mainlist != null)
 		{
 			HtmlMessage html = new HtmlMessage(5);
 			html.setFile("olympiad/monument_hero_info.htm");
@@ -364,14 +364,14 @@ public class Hero
 			final StringBuilder fList = new StringBuilder(500);
 			int counter = 0;
 			int breakat = 0;
-			for (int i = (page - 1) * perpage; i < list.size(); i++)
+			for(int i = (page - 1) * perpage; i < list.size(); i++)
 			{
 				breakat = i;
 				HeroDiary diary = list.get(i);
 				Entry<String, String> entry = diary.toString(activeChar);
 
 				fList.append("<tr><td>");
-				if (color)
+				if(color)
 					fList.append("<table width=270 bgcolor=\"131210\">");
 				else
 					fList.append("<table width=270>");
@@ -381,11 +381,11 @@ public class Hero
 				fList.append("</td></tr>");
 				color = !color;
 				counter++;
-				if (counter >= perpage)
+				if(counter >= perpage)
 					break;
 			}
 
-			if (breakat < list.size() - 1)
+			if(breakat < list.size() - 1)
 			{
 				html.replace("%buttprev%", HtmlUtils.PREV_BUTTON);
 				html.replace("%prev_bypass%", "_diary?class=" + heroclass + "&page=" + (page + 1));
@@ -393,7 +393,7 @@ public class Hero
 			else
 				html.replace("%buttprev%", StringUtils.EMPTY);
 
-			if (page > 1)
+			if(page > 1)
 			{
 				html.replace("%buttnext%", HtmlUtils.NEXT_BUTTON);
 				html.replace("%next_bypass%", "_diary?class=" + heroclass + "&page=" + (page - 1));
@@ -412,7 +412,7 @@ public class Hero
 		insertHeroDiary(playerId, id, param);
 
 		List<HeroDiary> list = _herodiary.get(playerId);
-		if (list != null)
+		if(list != null)
 			list.add(new HeroDiary(id, System.currentTimeMillis(), param));
 	}
 
@@ -431,7 +431,7 @@ public class Hero
 			statement.execute();
 			statement.close();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("SQL exception while saving DiaryData.", e);
 		}
@@ -458,7 +458,7 @@ public class Hero
 			message = rset.getString("message");
 			_heroMessage.put(charId, message);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Hero System: Couldnt load Hero Message for CharId: " + charId, e);
 		}
@@ -475,7 +475,7 @@ public class Hero
 
 	public void saveHeroMessage(int charId)
 	{
-		if (_heroMessage.get(charId) == null)
+		if(_heroMessage.get(charId) == null)
 			return;
 
 		Connection con = null;
@@ -490,7 +490,7 @@ public class Hero
 			statement.execute();
 			statement.close();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("SQL exception while saving HeroMessage.", e);
 		}
@@ -502,17 +502,17 @@ public class Hero
 
 	public void shutdown()
 	{
-		for (int charId : _heroMessage.keySet().toArray())
+		for(int charId : _heroMessage.keySet().toArray())
 			saveHeroMessage(charId);
 	}
 
 	public int getHeroByClass(int classid)
 	{
-		if (!_heroes.isEmpty())
-			for (int heroId : _heroes.keySet().toArray())
+		if(!_heroes.isEmpty())
+			for(int heroId : _heroes.keySet().toArray())
 			{
 				StatsSet hero = _heroes.get(heroId);
-				if (hero.getInteger(CLASS_ID) == classid)
+				if(hero.getInteger(CLASS_ID) == classid)
 					return heroId;
 			}
 		return 0;
@@ -520,9 +520,9 @@ public class Hero
 
 	public IntObjectPair<StatsSet> getHeroStats(int classId)
 	{
-		for (IntObjectPair<StatsSet> entry : _heroes.entrySet())
+		for(IntObjectPair<StatsSet> entry : _heroes.entrySet())
 		{
-			if (entry.getValue().getInteger(CLASS_ID) == classId)
+			if(entry.getValue().getInteger(CLASS_ID) == classId)
 				return entry;
 		}
 		return null;
@@ -532,7 +532,7 @@ public class Hero
 	{
 		List<OlympiadHeroInfo> _olympiadHeroesInfo = new CopyOnWriteArrayList<>();
 
-		for (IntObjectPair<StatsSet> pair : getHeroes().entrySet())
+		for(IntObjectPair<StatsSet> pair : getHeroes().entrySet())
 		{
 			StatsSet heroStats = pair.getValue();
 			int heroId = pair.getKey();
@@ -547,9 +547,9 @@ public class Hero
 			heroInfo.nClassID = classId.getId();
 			heroInfo.nCount = heroStats.getInteger(Hero.COUNT);
 			heroInfo.nSex = heroStats.getInteger(Hero.CHAR_SEX);
-			
+
 			OlympiadRankInfo rankInfo = RankManager.getInstance().getSnapshotOlyData(heroId);
-			if (rankInfo != null)
+			if(rankInfo != null)
 			{
 				heroInfo.nLevel = rankInfo.nLevel;
 				heroInfo.nWinCount = rankInfo.nWinCount;
@@ -559,7 +559,7 @@ public class Hero
 			}
 
 			Clan clan = ClanTable.getInstance().getClanByCharId(heroId);
-			if (clan != null)
+			if(clan != null)
 				heroInfo.nPledgeLevel = clan.getLevel();
 			else
 				heroInfo.nPledgeLevel = 0;
@@ -568,7 +568,7 @@ public class Hero
 		}
 		return _olympiadHeroesInfo;
 	}
-	
+
 	public List<OlympiadHeroInfo> getOlympiadHeroesInfo()
 	{
 		if(olympiadHeroesInfo == null)

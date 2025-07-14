@@ -10,7 +10,7 @@ public class PkRankerData
 	public int nLevel;
 	public int nClassId;
 	public int nRace;
-	
+
 	public int nClassRank;
 	public int nRaceRank;
 	public int nServerRank;
@@ -49,7 +49,7 @@ public class PkRankerData
 	{
 		this.sPledgeName = sPledgeName;
 	}
-	
+
 	public void setNLevel(int nLevel)
 	{
 		this.nLevel = nLevel;

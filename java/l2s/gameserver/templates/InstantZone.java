@@ -223,11 +223,11 @@ public class InstantZone
 		_notifyOnSetReuse = notifyOnSetReuse;
 		_addParams = params;
 
-		if (getMinParty() == 1)
+		if(getMinParty() == 1)
 			_entryTypes.add(InstantZoneEntryType.SOLO);
-		if (getMinParty() <= Party.MAX_SIZE && getMaxParty() > 1)
+		if(getMinParty() <= Party.MAX_SIZE && getMaxParty() > 1)
 			_entryTypes.add(InstantZoneEntryType.PARTY);
-		if (getMaxParty() > Party.MAX_SIZE)
+		if(getMaxParty() > Party.MAX_SIZE)
 			_entryTypes.add(InstantZoneEntryType.COMMAND_CHANNEL);
 	}
 
@@ -288,9 +288,9 @@ public class InstantZone
 
 	public Location getTeleportCoord()
 	{
-		if (_teleportCoords == null || _teleportCoords.size() == 0)
+		if(_teleportCoords == null || _teleportCoords.size() == 0)
 			return null;
-		if (_teleportCoords.size() == 1) // fast hack?
+		if(_teleportCoords.size() == 1) // fast hack?
 			return _teleportCoords.get(0);
 		return _teleportCoords.get(Rnd.get(_teleportCoords.size()));
 	}
@@ -363,22 +363,22 @@ public class InstantZone
 	public InstantZoneEntryType getEntryType(Player player)
 	{
 		Party party = player.getParty();
-		if (party != null)
+		if(party != null)
 		{
-			if (party.getCommandChannel() != null && _entryTypes.contains(InstantZoneEntryType.COMMAND_CHANNEL))
+			if(party.getCommandChannel() != null && _entryTypes.contains(InstantZoneEntryType.COMMAND_CHANNEL))
 				return InstantZoneEntryType.COMMAND_CHANNEL;
 
-			if (_entryTypes.contains(InstantZoneEntryType.PARTY))
+			if(_entryTypes.contains(InstantZoneEntryType.PARTY))
 				return InstantZoneEntryType.PARTY;
 		}
 
-		if (_entryTypes.contains(InstantZoneEntryType.SOLO))
+		if(_entryTypes.contains(InstantZoneEntryType.SOLO))
 			return InstantZoneEntryType.SOLO;
 
-		if (_entryTypes.contains(InstantZoneEntryType.PARTY))
+		if(_entryTypes.contains(InstantZoneEntryType.PARTY))
 			return InstantZoneEntryType.PARTY;
 
-		if (_entryTypes.contains(InstantZoneEntryType.COMMAND_CHANNEL))
+		if(_entryTypes.contains(InstantZoneEntryType.COMMAND_CHANNEL))
 			return InstantZoneEntryType.COMMAND_CHANNEL;
 
 		return null;
@@ -411,6 +411,6 @@ public class InstantZone
 
 	public boolean isStatic()
 	{
-		return false; 
+		return false;
 	}
 }

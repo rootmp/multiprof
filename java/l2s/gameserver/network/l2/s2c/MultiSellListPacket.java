@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.ItemHolder;
 import l2s.gameserver.model.MultiSellListContainer;
@@ -52,7 +52,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 		packetWriter.writeC(_type);// Type (0x00 - Нормальный, 0xD0 - с шансом)
 		packetWriter.writeD(0x20); // UNK
 		List<MultiSellIngredient> ingredients;
-		for (MultiSellEntry ent : _list)
+		for(MultiSellEntry ent : _list)
 		{
 			ingredients = fixIngredients(ent.getIngredients());
 
@@ -66,19 +66,19 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 
 			int saCount = 0;
 			packetWriter.writeC(0x00); // SA 1 count
-			for (int i = 0; i < saCount; i++)
+			for(int i = 0; i < saCount; i++)
 			{
 				packetWriter.writeD(0x00); // SA 1 effect
 			}
 
 			packetWriter.writeC(0x00); // SA 2 count
-			for (int i = 0; i < saCount; i++)
+			for(int i = 0; i < saCount; i++)
 			{
 				packetWriter.writeD(0x00); // SA 2 effect
 			}
 
 			packetWriter.writeC(0x00); // 286 - SA 3 count
-			for (int i = 0; i < saCount; i++)
+			for(int i = 0; i < saCount; i++)
 			{
 				packetWriter.writeD(0x00); // SA 3 effect
 			}
@@ -86,7 +86,7 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 			packetWriter.writeH(ent.getProduction().size());
 			packetWriter.writeH(ingredients.size());
 
-			for (MultiSellIngredient prod : ent.getProduction())
+			for(MultiSellIngredient prod : ent.getProduction())
 			{
 				int itemId = prod.getItemId();
 				ItemTemplate template = itemId > 0 ? ItemHolder.getInstance().getTemplate(prod.getItemId()) : null;
@@ -101,25 +101,25 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 				writeItemElements(packetWriter, prod);
 
 				packetWriter.writeC(0x00); // SA 1 count
-				for (int i = 0; i < saCount; i++)
+				for(int i = 0; i < saCount; i++)
 				{
 					packetWriter.writeD(0x00); // SA 1 effect
 				}
 
 				packetWriter.writeC(0x00); // SA 2 count
-				for (int i = 0; i < saCount; i++)
+				for(int i = 0; i < saCount; i++)
 				{
 					packetWriter.writeD(0x00); // SA 2 effect
 				}
 
 				packetWriter.writeC(0x00); // 286 - SA 3 count
-				for (int i = 0; i < saCount; i++)
+				for(int i = 0; i < saCount; i++)
 				{
 					packetWriter.writeD(0x00); // SA 3 effect
 				}
 			}
 
-			for (MultiSellIngredient i : ingredients)
+			for(MultiSellIngredient i : ingredients)
 			{
 				int itemId = i.getItemId();
 				final ItemTemplate item = itemId > 0 ? ItemHolder.getInstance().getTemplate(i.getItemId()) : null;
@@ -132,19 +132,19 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 				writeItemElements(packetWriter, i);
 
 				packetWriter.writeC(0x00); // SA 1 count
-				for (int s = 0; s < saCount; s++)
+				for(int s = 0; s < saCount; s++)
 				{
 					packetWriter.writeD(0x00); // SA 1 effect
 				}
 
 				packetWriter.writeC(0x00); // SA 2 count
-				for (int s = 0; s < saCount; s++)
+				for(int s = 0; s < saCount; s++)
 				{
 					packetWriter.writeD(0x00); // SA 2 effect
 				}
 
 				packetWriter.writeC(0x00); // 286 - SA 3 count
-				for (int s = 0; s < saCount; s++)
+				for(int s = 0; s < saCount; s++)
 				{
 					packetWriter.writeD(0x00); // SA 3 effect
 				}
@@ -158,32 +158,30 @@ public class MultiSellListPacket implements IClientOutgoingPacket
 	private static List<MultiSellIngredient> fixIngredients(List<MultiSellIngredient> ingredients)
 	{
 		int needFix = 0;
-		for (MultiSellIngredient ingredient : ingredients)
+		for(MultiSellIngredient ingredient : ingredients)
 		{
-			if (ingredient.getItemCount() > Integer.MAX_VALUE)
+			if(ingredient.getItemCount() > Integer.MAX_VALUE)
 			{
 				needFix++;
 			}
 		}
 
-		if (needFix == 0)
-		{
-			return ingredients;
-		}
+		if(needFix == 0)
+		{ return ingredients; }
 
 		MultiSellIngredient temp;
 		List<MultiSellIngredient> result = new ArrayList<MultiSellIngredient>(ingredients.size() + needFix);
-		for (MultiSellIngredient ingredient : ingredients)
+		for(MultiSellIngredient ingredient : ingredients)
 		{
 			ingredient = ingredient.clone();
-			while (ingredient.getItemCount() > Integer.MAX_VALUE)
+			while(ingredient.getItemCount() > Integer.MAX_VALUE)
 			{
 				temp = ingredient.clone();
 				temp.setItemCount(2000000000);
 				result.add(temp);
 				ingredient.setItemCount(ingredient.getItemCount() - 2000000000);
 			}
-			if (ingredient.getItemCount() > 0)
+			if(ingredient.getItemCount() > 0)
 			{
 				result.add(ingredient);
 			}

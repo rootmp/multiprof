@@ -19,11 +19,10 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2s.commons.formats.dds.DDSConverter;
-import l2s.gameserver.Config;
-
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.formats.dds.DDSConverter;
+import l2s.gameserver.Config;
 
 /**
  * @author Bonux
@@ -31,22 +30,21 @@ import gnu.trove.map.hash.TIntObjectHashMap;
 public class ImagesCache
 {
 	private static final Logger _log = LoggerFactory.getLogger(ImagesCache.class);
-	
-	private static final int[] SIZES = new int[]
-	{
-		1,
-		2,
-		4,
-		8,
-		16,
-		32,
-		64,
-		128,
-		256,
-		512,
-		1024
+
+	private static final int[] SIZES = new int[] {
+			1,
+			2,
+			4,
+			8,
+			16,
+			32,
+			64,
+			128,
+			256,
+			512,
+			1024
 	};
-	
+
 	private static final int MAX_SIZE = SIZES[SIZES.length - 1];
 	public static final Pattern HTML_PATTERN = Pattern.compile("%image:(.*?)%", Pattern.DOTALL);
 
@@ -69,7 +67,7 @@ public class ImagesCache
 		_log.info("ImagesCache: Loading images...");
 
 		File dir = new File(Config.DATAPACK_ROOT, "data/images");
-		if (!dir.exists() || !dir.isDirectory())
+		if(!dir.exists() || !dir.isDirectory())
 		{
 			_log.info("ImagesCache: Files missing, loading aborted.");
 			return;
@@ -83,27 +81,27 @@ public class ImagesCache
 	private int loadImagesDir(File dir)
 	{
 		int count = 0;
-		for (File file : dir.listFiles())
+		for(File file : dir.listFiles())
 		{
-			if (file.isDirectory())
+			if(file.isDirectory())
 			{
 				count += loadImagesDir(file);
 				continue;
 			}
 
-			if (!checkImageFormat(file))
+			if(!checkImageFormat(file))
 				continue;
 
 			String fileName = file.getName();
 
-			if (_imagesId.containsKey(fileName.toLowerCase()))
+			if(_imagesId.containsKey(fileName.toLowerCase()))
 			{
 				_log.warn("Duplicate image name \"" + fileName + "\". Replacing with " + file.getPath());
 				continue;
 			}
 
 			BufferedImage image = resizeImage(file);
-			if (image == null)
+			if(image == null)
 				continue;
 
 			try
@@ -115,7 +113,7 @@ public class ImagesCache
 				_imagesId.put(fileName.toLowerCase(), imageId);
 				_images.put(imageId, array);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("ImagesChache: Error while loading " + fileName + " (" + image.getWidth() + "x" + image.getHeight() + ") image.", e);
 			}
@@ -131,28 +129,28 @@ public class ImagesCache
 		{
 			image = ImageIO.read(file);
 		}
-		catch (IOException ioe)
+		catch(IOException ioe)
 		{
 			_log.error("ImagesCache: Error while resizing " + file.getName() + " image.");
 			return null;
 		}
 
-		if (image == null)
+		if(image == null)
 			return null;
 
 		int width = image.getWidth();
 		int height = image.getHeight();
 
 		int resizedWidth = width;
-		if (width > MAX_SIZE)
+		if(width > MAX_SIZE)
 		{
 			resizedWidth = MAX_SIZE;
 		}
 		else
 		{
-			for (int size : SIZES)
+			for(int size : SIZES)
 			{
-				if (size < width)
+				if(size < width)
 					continue;
 
 				resizedWidth = size;
@@ -161,15 +159,15 @@ public class ImagesCache
 		}
 
 		int resizedHeight = height;
-		if (height > MAX_SIZE)
+		if(height > MAX_SIZE)
 		{
 			resizedHeight = MAX_SIZE;
 		}
 		else
 		{
-			for (int size : SIZES)
+			for(int size : SIZES)
 			{
-				if (size < height)
+				if(size < height)
 					continue;
 
 				resizedHeight = size;
@@ -177,7 +175,7 @@ public class ImagesCache
 			}
 		}
 
-		if (resizedWidth != width || resizedHeight != height)
+		if(resizedWidth != width || resizedHeight != height)
 		{
 			BufferedImage resizedImage = new BufferedImage(resizedWidth, resizedHeight, image.getType());
 			Graphics2D g = resizedImage.createGraphics();
@@ -196,7 +194,7 @@ public class ImagesCache
 		readLock.lock();
 		try
 		{
-			if (_imagesId.get(val.toLowerCase()) != null)
+			if(_imagesId.get(val.toLowerCase()) != null)
 				imageId = _imagesId.get(val.toLowerCase());
 		}
 		finally
@@ -227,11 +225,11 @@ public class ImagesCache
 	private static boolean checkImageFormat(File file)
 	{
 		String filename = file.getName();
-		if (filename.endsWith(".jpg") || filename.endsWith(".png") || filename.endsWith(".bmp"))
+		if(filename.endsWith(".jpg") || filename.endsWith(".png") || filename.endsWith(".bmp"))
 			return true;
 		return false;
 	}
-	
+
 	private final static ImagesCache _instance = new ImagesCache();
 
 	public final static ImagesCache getInstance()

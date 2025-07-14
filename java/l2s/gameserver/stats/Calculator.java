@@ -68,7 +68,7 @@ public final class Calculator
 	public void removeFunc(Func f)
 	{
 		_functions = ArrayUtils.remove(_functions, f);
-		if (_functions.length == 0)
+		if(_functions.length == 0)
 			_functions = Func.EMPTY_FUNC_ARRAY;
 		else
 			Arrays.sort(_functions);
@@ -81,8 +81,8 @@ public final class Calculator
 	public void removeOwner(Object owner)
 	{
 		Func[] tmp = _functions;
-		for (Func element : tmp)
-			if (element.owner == owner)
+		for(Func element : tmp)
+			if(element.owner == owner)
 				removeFunc(element);
 	}
 
@@ -96,28 +96,28 @@ public final class Calculator
 		_base = env.value;
 
 		boolean overrideLimits = false;
-		for (Func func : funcs)
+		for(Func func : funcs)
 		{
-			if (func == null)
+			if(func == null)
 				continue;
 
-			if (func.owner instanceof FuncOwner)
+			if(func.owner instanceof FuncOwner)
 			{
-				if (!((FuncOwner) func.owner).isFuncEnabled())
+				if(!((FuncOwner) func.owner).isFuncEnabled())
 					continue;
-				if (((FuncOwner) func.owner).overrideLimits())
+				if(((FuncOwner) func.owner).overrideLimits())
 					overrideLimits = true;
 			}
-			if (func.getCondition() == null || func.getCondition().test(env))
+			if(func.getCondition() == null || func.getCondition().test(env))
 			{
 				func.calc(env, modifierType);
 			}
 		}
 
-		if (!overrideLimits)
+		if(!overrideLimits)
 			env.value = _stat.validate(env.value);
 
-		if (env.value != _last)
+		if(env.value != _last)
 		{
 			double last = _last; // TODO [G1ta0] найти приминение в StatsChangeRecorder
 			_last = env.value;

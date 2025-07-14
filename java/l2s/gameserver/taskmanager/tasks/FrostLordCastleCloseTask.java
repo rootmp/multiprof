@@ -30,9 +30,9 @@ public class FrostLordCastleCloseTask extends AutomaticTask
 		ServerVariables.set("frost_lord_castle_open", false);
 		_log.info("Frost Lord Castle Close Task: completed.");
 		ServerVariables.unset("frost_lord_castle_first_rb");
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
-			if (player.getReflectionId() == ReflectionManager.FROST_LORD_CASTLE.getId())
+			if(player.getReflectionId() == ReflectionManager.FROST_LORD_CASTLE.getId())
 			{
 				player.teleToLocation(player.getReflection().getReturnLoc(), ReflectionManager.MAIN);
 			}

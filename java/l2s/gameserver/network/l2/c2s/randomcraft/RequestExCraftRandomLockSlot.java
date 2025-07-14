@@ -14,45 +14,40 @@ import l2s.gameserver.utils.ItemFunctions;
 
 public class RequestExCraftRandomLockSlot implements IClientIncomingPacket
 {
-	private static final int[] LOCK_PRICE =
-	{
-		100,
-		500,
-		1000
+	private static final int[] LOCK_PRICE = {
+			100,
+			500,
+			1000
 	};
-	
+
 	private int _id;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_id = packet.readD();
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client) throws Exception
 	{
-		if (!Config.RANDOM_CRAFT_SYSTEM_ENABLED)
-		{
-			return;
-		}
-		
+		if(!Config.RANDOM_CRAFT_SYSTEM_ENABLED)
+		{ return; }
+
 		final Player player = client.getActiveChar();
-		if (player == null)
-		{
-			return;
-		}
-		
-		if ((_id >= 0) && (_id < 5))
+		if(player == null)
+		{ return; }
+
+		if((_id >= 0) && (_id < 5))
 		{
 			final PlayerRandomCraft rc = player.getRandomCraft();
 			int lockedItemCount = rc.getLockedSlotCount();
-			if (((rc.getRewards().size() - 1) >= _id) && (lockedItemCount < 3))
+			if(((rc.getRewards().size() - 1) >= _id) && (lockedItemCount < 3))
 			{
 				int price = LOCK_PRICE[Math.min(lockedItemCount, 2)];
 				ItemInstance lcoin = player.getInventory().getItemByItemId(ItemTemplate.ITEM_ID_MONEY_L);
-				if ((lcoin != null) && (lcoin.getCount() >= price))
+				if((lcoin != null) && (lcoin.getCount() >= price))
 				{
 					ItemFunctions.deleteItem(player, lcoin, price);
 					rc.getRewards().get(_id).lock();

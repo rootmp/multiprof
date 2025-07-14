@@ -50,7 +50,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -60,15 +60,16 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 
 			final StatsSet set = new StatsSet();
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("stats_data".equalsIgnoreCase(subElement.getName()))
+				if("stats_data".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if ("min_attributes".equalsIgnoreCase(e.getName()) || "max_attributes".equalsIgnoreCase(e.getName()) || "base_attributes".equalsIgnoreCase(e.getName()))
+						if("min_attributes".equalsIgnoreCase(e.getName()) || "max_attributes".equalsIgnoreCase(e.getName())
+								|| "base_attributes".equalsIgnoreCase(e.getName()))
 						{
 							int _int = Integer.parseInt(e.attributeValue("int"));
 							int str = Integer.parseInt(e.attributeValue("str"));
@@ -77,7 +78,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 							int dex = Integer.parseInt(e.attributeValue("dex"));
 							int wit = Integer.parseInt(e.attributeValue("wit"));
 
-							if ("min_attributes".equalsIgnoreCase(e.getName()))
+							if("min_attributes".equalsIgnoreCase(e.getName()))
 							{
 								set.set("minINT", _int);
 								set.set("minSTR", str);
@@ -86,7 +87,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 								set.set("minDEX", dex);
 								set.set("minWIT", wit);
 							}
-							else if ("max_attributes".equalsIgnoreCase(e.getName()))
+							else if("max_attributes".equalsIgnoreCase(e.getName()))
 							{
 								set.set("maxINT", _int);
 								set.set("maxSTR", str);
@@ -95,7 +96,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 								set.set("maxDEX", dex);
 								set.set("maxWIT", wit);
 							}
-							else if ("base_attributes".equalsIgnoreCase(e.getName()))
+							else if("base_attributes".equalsIgnoreCase(e.getName()))
 							{
 								set.set("baseINT", _int);
 								set.set("baseSTR", str);
@@ -105,7 +106,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 								set.set("baseWIT", wit);
 							}
 						}
-						else if ("armor_defence".equalsIgnoreCase(e.getName()))
+						else if("armor_defence".equalsIgnoreCase(e.getName()))
 						{
 							set.set("baseChestDef", e.attributeValue("chest"));
 							set.set("baseLegsDef", e.attributeValue("legs"));
@@ -115,7 +116,7 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 							set.set("basePendantDef", e.attributeValue("pendant"));
 							set.set("baseCloakDef", e.attributeValue("cloak"));
 						}
-						else if ("jewel_defence".equalsIgnoreCase(e.getName()))
+						else if("jewel_defence".equalsIgnoreCase(e.getName()))
 						{
 							set.set("baseREarDef", e.attributeValue("r_earring"));
 							set.set("baseLEarDef", e.attributeValue("l_earring"));
@@ -123,11 +124,11 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 							set.set("baseLRingDef", e.attributeValue("l_ring"));
 							set.set("baseNecklaceDef", e.attributeValue("necklace"));
 						}
-						else if ("base_stats".equalsIgnoreCase(e.getName()))
+						else if("base_stats".equalsIgnoreCase(e.getName()))
 						{
-							for (Element e2 : e.elements())
+							for(Element e2 : e.elements())
 							{
-								if ("set".equalsIgnoreCase(e2.getName()))
+								if("set".equalsIgnoreCase(e2.getName()))
 								{
 									set.set(e2.attributeValue("name"), e2.attributeValue("value"));
 								}
@@ -139,19 +140,19 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 
 			final PlayerTemplate template = new PlayerTemplate(set, race, sex);
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("creation_data".equalsIgnoreCase(subElement.getName()))
+				if("creation_data".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if ("start_equipments".equalsIgnoreCase(e.getName()))
+						if("start_equipments".equalsIgnoreCase(e.getName()))
 						{
-							for (Element e2 : e.elements())
+							for(Element e2 : e.elements())
 							{
-								if ("equipment".equalsIgnoreCase(e2.getName()))
+								if("equipment".equalsIgnoreCase(e2.getName()))
 								{
 									int item_id = Integer.parseInt(e2.attributeValue("item_id"));
 									long count = Long.parseLong(e2.attributeValue("count"));
@@ -162,11 +163,11 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 								}
 							}
 						}
-						else if ("start_points".equalsIgnoreCase(e.getName()))
+						else if("start_points".equalsIgnoreCase(e.getName()))
 						{
-							for (Element e2 : e.elements())
+							for(Element e2 : e.elements())
 							{
-								if ("point".equalsIgnoreCase(e2.getName()))
+								if("point".equalsIgnoreCase(e2.getName()))
 								{
 									template.addStartLocation(Location.parse(e2));
 								}
@@ -174,31 +175,31 @@ public final class PlayerTemplateParser extends AbstractParser<PlayerTemplateHol
 						}
 					}
 				}
-				else if ("stats_data".equalsIgnoreCase(subElement.getName()))
+				else if("stats_data".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if ("base_stats".equalsIgnoreCase(e.getName()))
+						if("base_stats".equalsIgnoreCase(e.getName()))
 						{
-							for (Element e2 : e.elements())
+							for(Element e2 : e.elements())
 							{
-								if ("regen_data".equalsIgnoreCase(e2.getName()))
+								if("regen_data".equalsIgnoreCase(e2.getName()))
 								{
-									for (Element e3 : e2.elements())
+									for(Element e3 : e2.elements())
 									{
-										if ("regen".equalsIgnoreCase(e3.getName()))
+										if("regen".equalsIgnoreCase(e3.getName()))
 										{
 											StringTokenizer st = new StringTokenizer(e3.attributeValue("level"), "-");
 											int minLevel = Integer.parseInt(st.nextToken());
 											int maxLevel = minLevel;
-											if (st.hasMoreTokens())
+											if(st.hasMoreTokens())
 												maxLevel = Integer.parseInt(st.nextToken());
 
 											double hp = Double.parseDouble(e3.attributeValue("hp"));
 											double mp = Double.parseDouble(e3.attributeValue("mp"));
 											double cp = Double.parseDouble(e3.attributeValue("cp"));
 
-											for (int i = minLevel; i <= maxLevel; i++)
+											for(int i = minLevel; i <= maxLevel; i++)
 												template.addRegenData(i, new HpMpCpData(hp, mp, cp));
 										}
 									}

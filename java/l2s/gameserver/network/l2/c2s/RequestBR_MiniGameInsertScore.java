@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.games.MiniGameScoreManager;
@@ -24,7 +25,7 @@ public class RequestBR_MiniGameInsertScore implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if (player == null || !Config.EX_JAPAN_MINIGAME)
+		if(player == null || !Config.EX_JAPAN_MINIGAME)
 			return;
 
 		MiniGameScoreManager.getInstance().insertScore(player, _score);

@@ -19,10 +19,10 @@ public class AdminCancel implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
+		if(!activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_cancel:
 				handleCancel(activeChar, wordList.length > 1 ? wordList[1] : null);
@@ -41,38 +41,38 @@ public class AdminCancel implements IAdminCommandHandler
 	private void handleCancel(Player activeChar, String targetName)
 	{
 		GameObject obj = activeChar.getTarget();
-		if (targetName != null)
+		if(targetName != null)
 		{
 			Player plyr = World.getPlayer(targetName);
-			if (plyr != null)
+			if(plyr != null)
 				obj = plyr;
 			else
 				try
 				{
 					int radius = Math.max(Integer.parseInt(targetName), 100);
-					for (Creature character : activeChar.getAroundCharacters(radius, 200))
+					for(Creature character : activeChar.getAroundCharacters(radius, 200))
 					{
 						character.getAbnormalList().stopAll();
-						if (character.isPlayer())
+						if(character.isPlayer())
 							character.getPlayer().deleteCubics();
 					}
 					activeChar.sendMessage("Apply Cancel within " + radius + " unit radius.");
 					return;
 				}
-				catch (NumberFormatException e)
+				catch(NumberFormatException e)
 				{
 					activeChar.sendMessage("Enter valid player name or radius");
 					return;
 				}
 		}
 
-		if (obj == null)
+		if(obj == null)
 			obj = activeChar;
-		if (obj.isCreature())
+		if(obj.isCreature())
 		{
 			Creature creature = (Creature) obj;
 			creature.getAbnormalList().stopAll();
-			if (creature.isPlayer())
+			if(creature.isPlayer())
 				creature.getPlayer().deleteCubics();
 		}
 		else

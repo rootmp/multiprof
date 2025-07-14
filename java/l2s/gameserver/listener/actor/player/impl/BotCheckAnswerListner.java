@@ -24,12 +24,10 @@ public class BotCheckAnswerListner implements OnAnswerListener
 	public void sayYes()
 	{
 		Player player = _playerRef.get();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 		boolean rightAnswer = BotCheckManager.checkAnswer(_qId, true);
-		if (rightAnswer)
+		if(rightAnswer)
 		{
 			player.increaseBotRating();
 			sendFeedBack(player, true);
@@ -45,12 +43,10 @@ public class BotCheckAnswerListner implements OnAnswerListener
 	public void sayNo()
 	{
 		Player player = _playerRef.get();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 		boolean rightAnswer = BotCheckManager.checkAnswer(_qId, false);
-		if (rightAnswer)
+		if(rightAnswer)
 		{
 			player.increaseBotRating();
 			sendFeedBack(player, true);
@@ -64,7 +60,7 @@ public class BotCheckAnswerListner implements OnAnswerListener
 
 	private void sendFeedBack(Player player, boolean rightAnswer)
 	{
-		if (rightAnswer)
+		if(rightAnswer)
 		{
 			player.sendMessage("Your answer is correct!");
 		}

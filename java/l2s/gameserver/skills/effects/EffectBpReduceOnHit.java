@@ -28,7 +28,7 @@ public class EffectBpReduceOnHit extends EffectHandler
 		@Override
 		public void onMagicUse(Creature actor, Skill skill, Creature target, boolean alt)
 		{
-			if (!skill.isDebuff())
+			if(!skill.isDebuff())
 				return;
 
 			EffectBpReduceOnHit.this.onAttack(_effectorRef.get(), _effectedRef.get());
@@ -53,19 +53,19 @@ public class EffectBpReduceOnHit extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead() || effected.isRaid())
+		if(effected.isDead() || effected.isRaid())
 			return false;
 		return true;
 	}
 
 	private void onAttack(Creature effector, Creature effected)
 	{
-		if (effector.getCurrentBp() < _reduceAmount)
+		if(effector.getCurrentBp() < _reduceAmount)
 		{
 			effector.getAbnormalList().stop(getSkill(), false);
 		}
 		effector.reduceCurrentBp(effector.getCurrentBp() - _reduceAmount, effector);
-		if (effector.getCurrentBp() <= 0)
+		if(effector.getCurrentBp() <= 0)
 		{
 			effector.getAbnormalList().stop(getSkill(), false);
 		}

@@ -36,14 +36,14 @@ public enum TargetType
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
 			final GameObject target = caster.getTarget();
-			if (target != null && target.isCreature())
+			if(target != null && target.isCreature())
 			{
 				Creature creature = (Creature) target;
-				if (creature.getNpcId() == 36590 && !creature.isDead())
+				if(creature.getNpcId() == 36590 && !creature.isDead())
 					return creature;
 			}
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 
 			return null;
@@ -56,14 +56,14 @@ public enum TargetType
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
 			final GameObject target = caster.getTarget();
-			if (target != null && target.isDoor())
+			if(target != null && target.isDoor())
 			{
 				final DoorInstance targetDoor = (DoorInstance) target;
-				if (!targetDoor.isDead() && targetDoor.isAutoAttackable(caster))
+				if(!targetDoor.isDead() && targetDoor.isAutoAttackable(caster))
 					return targetDoor;
 			}
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 
 			return null;
@@ -76,10 +76,10 @@ public enum TargetType
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
 			final GameObject target = caster.getTarget();
-			if (target != null && (target.isDoor() || (target instanceof ChestInstance)))
+			if(target != null && (target.isDoor() || (target instanceof ChestInstance)))
 				return target;
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 
 			return null;
@@ -91,54 +91,54 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 				return null;
 
 			final Creature target = (Creature) selectedTarget;
 
 			// You cannot attack yourself even with force.
-			if (caster == target)
+			if(caster == target)
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
 
 			// You cannot attack dead targets.
-			if (target.isDead())
+			if(target.isDead())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
 
 			// Events engine.
-			for (Event e : caster.getEvents())
+			for(Event e : caster.getEvents())
 			{
 				SystemMsg msg = e.checkForAttack(target, caster, skill, forceUse);
-				if (msg != null)
+				if(msg != null)
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(msg);
 					return null;
 				}
 			}
 
-			for (Event e : caster.getEvents())
+			for(Event e : caster.getEvents())
 			{
-				if (e.canAttack(target, caster, skill, forceUse, false))
+				if(e.canAttack(target, caster, skill, forceUse, false))
 					return target;
 			}
 
 			// Monsters can attack/be attacked anywhere. Players can attack creatures that
 			// aren't autoattackable with force attack (Doors do not care about force
 			// attack).
-			if (!target.isAutoAttackable(caster) && (target.isDoor() || !forceUse))
+			if(!target.isAutoAttackable(caster) && (target.isDoor() || !forceUse))
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
@@ -146,32 +146,32 @@ public enum TargetType
 			// Check for cast range if character cannot move. TODO: char will start follow
 			// until within castrange, but if his moving is blocked by geodata, this msg
 			// will be sent.
-			if (dontMove)
+			if(dontMove)
 			{
-				if (skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
+				if(skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 					return null;
 				}
 			}
 
 			// Geodata check when character is within range.
-			if (!GeoEngine.canSeeTarget(caster, target))
+			if(!GeoEngine.canSeeTarget(caster, target))
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 				return null;
 			}
 
 			// Skills with this target type cannot be used by playables on playables in
 			// peace zone, but can be used by and on NPCs.
-			if (caster.isInPeaceZone() || target.isInPeaceZone())
+			if(caster.isInPeaceZone() || target.isInPeaceZone())
 			{
 				Player player = caster.getPlayer();
-				if (player == null || !player.getPlayerAccess().PeaceAttack)
+				if(player == null || !player.getPlayerAccess().PeaceAttack)
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.A_MALICIOUS_SKILL_CANNOT_BE_USED_IN_A_PEACE_ZONE);
 					return null;
 				}
@@ -186,44 +186,45 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 				return null;
 
 			final Creature target = (Creature) selectedTarget;
 
 			// You can always target yourself.
-			if (caster == target)
+			if(caster == target)
 				return target;
 
-			if (!target.isAutoAttackable(caster))
+			if(!target.isAutoAttackable(caster))
 			{
 				// Check for cast range if character cannot move. TODO: char will start follow
 				// until within castrange, but if his moving is blocked by geodata, this msg
 				// will be sent.
-				if (dontMove)
+				if(dontMove)
 				{
-					if (skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
+					if(skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
 					{
-						if (sendMessage)
+						if(sendMessage)
 							caster.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 						return null;
 					}
 				}
 
-				if (skill.getFlyType() == FlyType.CHARGE && !GeoEngine.canMoveToCoord(caster.getX(), caster.getY(), caster.getZ(), target.getX(), target.getY(), target.getZ(), caster.getGeoIndex()))
+				if(skill.getFlyType() == FlyType.CHARGE
+						&& !GeoEngine.canMoveToCoord(caster.getX(), caster.getY(), caster.getZ(), target.getX(), target.getY(), target.getZ(), caster.getGeoIndex()))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.THE_TARGET_IS_LOCATED_WHERE_YOU_CANNOT_CHARGE);
 					return null;
 				}
 
 				// Geodata check when character is within range.
-				if (!GeoEngine.canSeeTarget(caster, target))
+				if(!GeoEngine.canSeeTarget(caster, target))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 					return null;
 				}
@@ -231,7 +232,7 @@ public enum TargetType
 				return target;
 			}
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.INVALID_TARGET);
 
 			return null;
@@ -253,16 +254,14 @@ public enum TargetType
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
 			final GameObject target = caster.getTarget();
-			if (target != null && target.isStaticObject())
+			if(target != null && target.isStaticObject())
 			{
 				StaticObjectInstance obj = (StaticObjectInstance) target;
-				if (obj.getType() == 3)
-				{
-					return obj;
-				}
+				if(obj.getType() == 3)
+				{ return obj; }
 			}
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 
 			return null;
@@ -274,15 +273,15 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (caster.isPlayer())
+			if(caster.isPlayer())
 			{
 				Location skillLoc = caster.getPlayer().getGroundSkillLoc();
-				if (skillLoc != null)
+				if(skillLoc != null)
 				{
-					if (dontMove && !caster.isInRange(skillLoc, (int) (skill.getCastRange() + caster.getCurrentCollisionRadius())))
+					if(dontMove && !caster.isInRange(skillLoc, (int) (skill.getCastRange() + caster.getCurrentCollisionRadius())))
 						return null;
 
-					if (!GeoEngine.canSeeCoord(caster, skillLoc.getX(), skillLoc.getY(), skillLoc.getZ(), false))
+					if(!GeoEngine.canSeeCoord(caster, skillLoc.getX(), skillLoc.getY(), skillLoc.getZ(), false))
 					{
 						/*
 						 * TODO: Нужно ли? if(sendMessage)
@@ -291,13 +290,13 @@ public enum TargetType
 						return null;
 					}
 
-					if (skill.isDebuff())
+					if(skill.isDebuff())
 					{
 						Set<Zone> zones = new HashSet<Zone>();
 						World.getZones(zones, skillLoc, caster.getReflection());
-						for (Zone zone : zones)
+						for(Zone zone : zones)
 						{
-							if (sendMessage)
+							if(sendMessage)
 								caster.sendPacket(SystemMsg.A_MALICIOUS_SKILL_CANNOT_BE_USED_IN_A_PEACE_ZONE);
 							return null;
 						}
@@ -317,13 +316,13 @@ public enum TargetType
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
 			final GameObject target = caster.getTarget();
-			if (target != null)
+			if(target != null)
 			{
-				if (target.isArtefact())
+				if(target.isArtefact())
 					return target;
 			}
 
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 
 			return null;
@@ -354,39 +353,39 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 				return null;
 
-			if (!selectedTarget.isNpc())
+			if(!selectedTarget.isNpc())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
 
 			NpcInstance target = (NpcInstance) selectedTarget;
-			if (target.isDead())
+			if(target.isDead())
 			{
 				// Check for cast range if character cannot move. TODO: char will start follow
 				// until within castrange, but if his moving is blocked by geodata, this msg
 				// will be sent.
-				if (dontMove)
+				if(dontMove)
 				{
-					if (skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
+					if(skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
 					{
-						if (sendMessage)
+						if(sendMessage)
 							caster.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 						return null;
 					}
 				}
 
 				// Geodata check when character is within range.
-				if (!GeoEngine.canSeeTarget(caster, target))
+				if(!GeoEngine.canSeeTarget(caster, target))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 					return null;
 				}
@@ -396,7 +395,7 @@ public enum TargetType
 
 			// If target is not dead or not player/pet it will not even bother to walk
 			// within range, unlike Enemy target type.
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.INVALID_TARGET);
 
 			return null;
@@ -417,27 +416,27 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 				return null;
 
-			if (!selectedTarget.isPlayer())
+			if(!selectedTarget.isPlayer())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
 
 			Player target = (Player) selectedTarget;
-			if (target.isDead())
+			if(target.isDead())
 			{
-				if (skill.getSkillType() == SkillType.RESURRECT)
+				if(skill.getSkillType() == SkillType.RESURRECT)
 				{
-					if (caster.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION) || target.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION))
+					if(caster.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION) || target.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION))
 					{
-						if (sendMessage)
+						if(sendMessage)
 						{
 							caster.sendPacket(SystemMsg.REJECT_RESURRECTION); // Reject resurrection
 							target.sendPacket(SystemMsg.REJECT_RESURRECTION); // Reject resurrection
@@ -446,11 +445,11 @@ public enum TargetType
 					}
 
 					// check target is not in a active siege zone
-					if (target.isPlayer() && target.isInSiegeZone())
+					if(target.isPlayer() && target.isInSiegeZone())
 					{
-						if (!target.containsEvent(SiegeEvent.class))
+						if(!target.containsEvent(SiegeEvent.class))
 						{
-							if (sendMessage)
+							if(sendMessage)
 								caster.sendPacket(SystemMsg.IT_IS_NOT_POSSIBLE_TO_RESURRECT_IN_BATTLEFIELDS_WHERE_A_SIEGE_WAR_IS_TAKING_PLACE);
 							return null;
 						}
@@ -460,20 +459,20 @@ public enum TargetType
 				// Check for cast range if character cannot move. TODO: char will start follow
 				// until within castrange, but if his moving is blocked by geodata, this msg
 				// will be sent.
-				if (dontMove)
+				if(dontMove)
 				{
-					if (skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
+					if(skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
 					{
-						if (sendMessage)
+						if(sendMessage)
 							caster.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 						return null;
 					}
 				}
 
 				// Geodata check when character is within range.
-				if (!GeoEngine.canSeeTarget(caster, target))
+				if(!GeoEngine.canSeeTarget(caster, target))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 					return null;
 				}
@@ -483,7 +482,7 @@ public enum TargetType
 
 			// If target is not dead or not player/pet it will not even bother to walk
 			// within range, unlike Enemy target type.
-			if (sendMessage)
+			if(sendMessage)
 				caster.sendPacket(SystemMsg.INVALID_TARGET);
 
 			return null;
@@ -495,9 +494,9 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (caster.isInPeaceZone() && skill.isDebuff())
+			if(caster.isInPeaceZone() && skill.isDebuff())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.A_MALICIOUS_SKILL_CANNOT_BE_USED_IN_A_PEACE_ZONE);
 				return null;
 			}
@@ -510,10 +509,10 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (caster.isPlayer())
+			if(caster.isPlayer())
 			{
 				Player player = caster.getPlayer();
-				if (player.hasSummon())
+				if(player.hasSummon())
 					return player.getSummon();
 				return player.getPet();
 			}
@@ -526,12 +525,12 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
@@ -539,33 +538,34 @@ public enum TargetType
 			final Creature target = (Creature) selectedTarget;
 
 			// You can always target yourself.
-			if (caster == target)
+			if(caster == target)
 				return target;
 
 			// Check for cast range if character cannot move. TODO: char will start follow
 			// until within castrange, but if his moving is blocked by geodata, this msg
 			// will be sent.
-			if (dontMove)
+			if(dontMove)
 			{
-				if (skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
+				if(skill.getCastRange() > 0 && !caster.isInRange(target, skill.getCastRange()))
 				{
-					if (sendMessage)
+					if(sendMessage)
 						caster.sendPacket(SystemMsg.THE_DISTANCE_IS_TOO_FAR_AND_SO_THE_CASTING_HAS_BEEN_STOPPED);
 					return null;
 				}
 			}
 
-			if (skill.getFlyType() == FlyType.CHARGE && !GeoEngine.canMoveToCoord(caster.getX(), caster.getY(), caster.getZ(), target.getX(), target.getY(), target.getZ(), caster.getGeoIndex()))
+			if(skill.getFlyType() == FlyType.CHARGE
+					&& !GeoEngine.canMoveToCoord(caster.getX(), caster.getY(), caster.getZ(), target.getX(), target.getY(), target.getZ(), caster.getGeoIndex()))
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.THE_TARGET_IS_LOCATED_WHERE_YOU_CANNOT_CHARGE);
 				return null;
 			}
 
 			// Geodata check when character is within range.
-			if (!GeoEngine.canSeeTarget(caster, target))
+			if(!GeoEngine.canSeeTarget(caster, target))
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 				return null;
 			}
@@ -579,15 +579,15 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (!selectedTarget.isCreature())
+			if(!selectedTarget.isCreature())
 				return null;
 
-			if (!selectedTarget.isPlayer())
+			if(!selectedTarget.isPlayer())
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
@@ -595,9 +595,9 @@ public enum TargetType
 			Player target = (Player) selectedTarget;
 
 			Mount mount = target.getMount();
-			if (mount == null || !mount.isOfType(MountType.WYVERN))
+			if(mount == null || !mount.isOfType(MountType.WYVERN))
 			{
-				if (sendMessage)
+				if(sendMessage)
 					caster.sendPacket(SystemMsg.INVALID_TARGET);
 				return null;
 			}
@@ -611,17 +611,17 @@ public enum TargetType
 		@Override
 		public GameObject getTarget(Creature caster, GameObject selectedTarget, Skill skill, boolean forceUse, boolean dontMove, boolean sendMessage)
 		{
-			if (selectedTarget == null)
+			if(selectedTarget == null)
 				return null;
 
-			if (selectedTarget == caster)
+			if(selectedTarget == caster)
 				return null;
 
-			if (!caster.isPlayer() || !selectedTarget.isPlayer())
+			if(!caster.isPlayer() || !selectedTarget.isPlayer())
 				return null;
 
 			Player target = selectedTarget.getPlayer();
-			if (caster.getPlayer().isInSameParty(target))
+			if(caster.getPlayer().isInSameParty(target))
 				return target;
 
 			return null;

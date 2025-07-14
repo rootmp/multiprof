@@ -26,10 +26,10 @@ public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 		_elementId = elementId;
 		_elemental = player.getElementalList().get(elementId);
 
-		if (_elemental != null)
+		if(_elemental != null)
 		{
 			_absorbItems = new ArrayList<ElementalAbsorbItem>();
-			for (ElementalAbsorbItem item : _elemental.getTemplate().getAbsorbItems())
+			for(ElementalAbsorbItem item : _elemental.getTemplate().getAbsorbItems())
 			{
 				_absorbItems.add(new ElementalAbsorbItem(item.getId(), ItemFunctions.getItemCount(player, item.getId()), item.getPower()));
 			}
@@ -45,7 +45,7 @@ public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_unk); // Value received from client (RequestExElementalSpiritAbsorbInfo)
 		packetWriter.writeC(_elementId); // Element ID
-		if (_elemental != null)
+		if(_elemental != null)
 		{
 			packetWriter.writeC(_elemental.getEvolutionLevel()); // Unk
 			packetWriter.writeQ(_elemental.getExp()); // Current Exp
@@ -55,7 +55,7 @@ public class ExElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 			packetWriter.writeD(_elemental.getEvolution().getMaxLevel()); // Max Level
 
 			packetWriter.writeD(_absorbItems.size()); // Elementals Count
-			for (ElementalAbsorbItem item : _absorbItems)
+			for(ElementalAbsorbItem item : _absorbItems)
 			{
 				packetWriter.writeD(item.getId()); // Item ID
 				packetWriter.writeD((int) item.getCount()); // Item Count

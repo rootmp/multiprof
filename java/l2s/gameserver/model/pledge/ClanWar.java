@@ -68,29 +68,29 @@ public class ClanWar
 	public void onKill(Player killer, Player victim)
 	{
 		Clan killerClan = killer.getClan();
-		if (killerClan == null)
+		if(killerClan == null)
 			return;
 
 		Clan victimClan = victim.getClan();
-		if (victimClan == null)
+		if(victimClan == null)
 			return;
 
-		if (getOpposingClan(killerClan) != victimClan)
+		if(getOpposingClan(killerClan) != victimClan)
 			return;
 
-		if (_period == ClanWarPeriod.MUTUAL)
+		if(_period == ClanWarPeriod.MUTUAL)
 		{
 			_lastKillTime = (int) (System.currentTimeMillis() / 1000L);
 
-			if (victimClan.getReputationScore() > 0)
+			if(victimClan.getReputationScore() > 0)
 				killerClan.incReputation(Config.CLAN_WAR_REPUTATION_SCORE_PER_KILL, false, "ClanWar");
 
-			if (killerClan.getReputationScore() > 0)
+			if(killerClan.getReputationScore() > 0)
 				victimClan.incReputation(-Config.CLAN_WAR_REPUTATION_SCORE_PER_KILL, false, "ClanWar");
 
-			if (isAttacker(killerClan))
+			if(isAttacker(killerClan))
 				_attackersKillCounter.incrementAndGet();
-			else if (isAttacked(killerClan))
+			else if(isAttacked(killerClan))
 				_attackedKillCounter.incrementAndGet();
 
 			save(false);
@@ -103,22 +103,23 @@ public class ClanWar
 
 	public int getPointDiff(Clan clan)
 	{
-		return isAttacker(clan) ? (getAttackersKillCounter() - getAttackedKillCounter()) : (isAttacked(clan) ? (getAttackedKillCounter() - getAttackersKillCounter()) : 0);
+		return isAttacker(clan) ? (getAttackersKillCounter()
+				- getAttackedKillCounter()) : (isAttacked(clan) ? (getAttackedKillCounter() - getAttackersKillCounter()) : 0);
 	}
 
 	public WarProgress calculateWarProgress(Clan clan)
 	{
 		int pointDiff = getPointDiff(clan);
-		if (pointDiff <= -50)
+		if(pointDiff <= -50)
 			return WarProgress.VERY_LOW;
 
-		if (pointDiff > -50 && pointDiff <= -20)
+		if(pointDiff > -50 && pointDiff <= -20)
 			return WarProgress.LOW;
 
-		if (pointDiff > -20 && pointDiff <= 19)
+		if(pointDiff > -20 && pointDiff <= 19)
 			return WarProgress.NORMAL;
 
-		if (pointDiff > 19 && pointDiff <= 49)
+		if(pointDiff > 19 && pointDiff <= 49)
 			return WarProgress.HIGH;
 
 		return WarProgress.VERY_HIGH;
@@ -126,19 +127,19 @@ public class ClanWar
 
 	public ClanWarState getClanWarState(Clan clan)
 	{
-		if (_period == ClanWarPeriod.PREPARATION)
+		if(_period == ClanWarPeriod.PREPARATION)
 			return ClanWarState.PREPARATION;
 
-		if (_period == ClanWarPeriod.MUTUAL)
+		if(_period == ClanWarPeriod.MUTUAL)
 			return ClanWarState.MUTUAL;
 
-		if (_period == ClanWarPeriod.PEACE)
+		if(_period == ClanWarPeriod.PEACE)
 		{
 			int points = getPointDiff(clan);
-			if (points == 0)
+			if(points == 0)
 				return ClanWarState.TIE;
 
-			if (points < 0)
+			if(points < 0)
 				return ClanWarState.LOSS;
 
 			return ClanWarState.WIN;
@@ -208,7 +209,7 @@ public class ClanWar
 
 	public boolean start()
 	{
-		if (_period == ClanWarPeriod.NEW)
+		if(_period == ClanWarPeriod.NEW)
 		{
 			_period = ClanWarPeriod.PREPARATION;
 
@@ -226,7 +227,7 @@ public class ClanWar
 
 	public void accept(Clan requestor)
 	{
-		if (isAttacked(requestor))
+		if(isAttacked(requestor))
 			setPeriod(ClanWarPeriod.MUTUAL);
 	}
 
@@ -234,7 +235,7 @@ public class ClanWar
 	{
 		Clan winnerClan = getOpposingClan(requester);
 
-		if (Config.CLAN_WAR_CANCEL_REPUTATION_PENALTY > 0)
+		if(Config.CLAN_WAR_CANCEL_REPUTATION_PENALTY > 0)
 			requester.incReputation(-Config.CLAN_WAR_CANCEL_REPUTATION_PENALTY, true, "ClanWar");
 
 		requester.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.YOU_HAVE_SURRENDERED_TO_THE_S1_CLAN).addString(winnerClan.getName()));
@@ -246,15 +247,15 @@ public class ClanWar
 
 	public void setPeriod(ClanWarPeriod period)
 	{
-		if (_period == period)
+		if(_period == period)
 			return;
 
-		if (_period == ClanWarPeriod.MUTUAL && period == ClanWarPeriod.PREPARATION)
+		if(_period == ClanWarPeriod.MUTUAL && period == ClanWarPeriod.PREPARATION)
 			Log.add("Cannot change clan war period from mutual (when both sides fighting) to preparation.", Log.ClanWar);
 
 		_period = period;
 
-		if (period == ClanWarPeriod.MUTUAL)
+		if(period == ClanWarPeriod.MUTUAL)
 		{
 			getAttackerClan().broadcastClanStatus(false, false, true);
 			getAttackerClan().broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.A_CLAN_WAR_WITH_CLAN_S1_HAS_STARTED).addString(getAttackedClan().getName()));
@@ -262,7 +263,7 @@ public class ClanWar
 			getAttackedClan().broadcastClanStatus(false, false, true);
 			getAttackedClan().broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.A_CLAN_WAR_WITH_CLAN_S1_HAS_STARTED).addString(getAttackerClan().getName()));
 		}
-		else if (period == ClanWarPeriod.PEACE)
+		else if(period == ClanWarPeriod.PEACE)
 		{
 			getAttackerClan().broadcastClanStatus(false, false, true);
 			getAttackerClan().broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.WAR_WITH_THE_S1_CLAN_HAS_ENDED).addString(getAttackedClan().getName()));
@@ -275,16 +276,15 @@ public class ClanWar
 
 	private void onChange()
 	{
-		if (_currentPeriodTask != null)
+		if(_currentPeriodTask != null)
 		{
 			_currentPeriodTask.cancel(true);
 			_currentPeriodTask = null;
 		}
 
-		if (_period == ClanWarPeriod.PEACE)
+		if(_period == ClanWarPeriod.PEACE)
 		{
-			_currentPeriodTask = ThreadPoolManager.getInstance().schedule(() ->
-			{
+			_currentPeriodTask = ThreadPoolManager.getInstance().schedule(() -> {
 				getAttackerClan().deleteWar(getAttackedClanId());
 				getAttackerClan().broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.THE_WAR_AGAINST_S1_CLAN_HAS_BEEN_STOPPED).addString(getAttackedClan().getName()));
 

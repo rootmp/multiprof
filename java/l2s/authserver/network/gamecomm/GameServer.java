@@ -121,7 +121,7 @@ public class GameServer
 	public void sendPacket(SendablePacket packet)
 	{
 		GameServerConnection conn = getConnection();
-		if (conn != null)
+		if(conn != null)
 			conn.sendPacket(packet);
 	}
 

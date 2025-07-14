@@ -26,8 +26,9 @@ public class BypassHolder extends AbstractHolder
 	public void registerBypass(String bypass, Object o, Method method)
 	{
 		Pair<Object, Method> old = _bypasses.put(bypass, new ImmutablePair<Object, Method>(o, method));
-		if (old != null)
-			warn("Duplicate bypass: " + bypass + " old: (" + old.getKey().getClass().getName() + ":" + old.getRight().getName() + "), new: (" + o.getClass().getName() + ":" + method.getName() + ")");
+		if(old != null)
+			warn("Duplicate bypass: " + bypass + " old: (" + old.getKey().getClass().getName() + ":" + old.getRight().getName() + "), new: ("
+					+ o.getClass().getName() + ":" + method.getName() + ")");
 	}
 
 	public Pair<Object, Method> getBypass(String name)

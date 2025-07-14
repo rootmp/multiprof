@@ -54,7 +54,7 @@ public abstract class SendablePacket<T> extends AbstractPacket<T>
 		writeS(charSequence);
 		getByteBuffer().position(getByteBuffer().position() - 2);
 	}
-	
+
 	protected void writeString2(CharSequence charSequence, int q)
 	{
 		if(charSequence != null)
@@ -63,8 +63,9 @@ public abstract class SendablePacket<T> extends AbstractPacket<T>
 			for(int i = 0; i < length; i++)
 				getByteBuffer().putChar(charSequence.charAt(i));
 		}
-		for(int i = 0; i < q-charSequence.length(); i++)
+		for(int i = 0; i < q - charSequence.length(); i++)
 			getByteBuffer().putChar('\000');
 	}
+
 	protected abstract boolean write();
 }

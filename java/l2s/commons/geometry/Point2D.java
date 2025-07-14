@@ -7,8 +7,7 @@ public class Point2D implements Cloneable
 	public int y;
 
 	public Point2D()
-	{
-	}
+	{}
 
 	public Point2D(int x, int y)
 	{
@@ -25,11 +24,11 @@ public class Point2D implements Cloneable
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != getClass())
+		if(o.getClass() != getClass())
 			return false;
 		return equals((Point2D) o);
 	}

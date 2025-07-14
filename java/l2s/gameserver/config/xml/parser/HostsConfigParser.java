@@ -42,19 +42,19 @@ public final class HostsConfigParser extends AbstractParser<HostsConfigHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
-			if ("authserver".equalsIgnoreCase(element.getName()))
+			if("authserver".equalsIgnoreCase(element.getName()))
 			{
 				final String address = element.attributeValue("address");
 				final int port = Integer.parseInt(element.attributeValue("port"));
 				getHolder().setAuthServerHost(new HostInfo(address, port));
 			}
-			else if ("gameserver".equalsIgnoreCase(element.getName()))
+			else if("gameserver".equalsIgnoreCase(element.getName()))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator("host"); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator("host"); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 
@@ -64,9 +64,9 @@ public final class HostsConfigParser extends AbstractParser<HostsConfigHolder>
 					final String key = subElement.attributeValue("key");
 
 					HostInfo hostInfo = new HostInfo(id, address, port, key);
-					if (!GameServer.DEVELOP)
+					if(!GameServer.DEVELOP)
 					{
-						for (Iterator<Element> advancedIterator = subElement.elementIterator("advanced"); advancedIterator.hasNext();)
+						for(Iterator<Element> advancedIterator = subElement.elementIterator("advanced"); advancedIterator.hasNext();)
 						{
 							Element advancedElement = advancedIterator.next();
 
@@ -84,13 +84,13 @@ public final class HostsConfigParser extends AbstractParser<HostsConfigHolder>
 	@Override
 	protected void onParsed()
 	{
-		if (getHolder().getAuthServerHost() == null)
+		if(getHolder().getAuthServerHost() == null)
 		{
 			_log.error("Could not load authserver host config. Configure your hostsconfig.xml!");
 			Runtime.getRuntime().exit(0);
 		}
 
-		if (getHolder().getGameServerHosts().length == 0)
+		if(getHolder().getGameServerHosts().length == 0)
 		{
 			_log.error("Could not load gameserver host config. Configure your hostsconfig.xml!");
 			Runtime.getRuntime().exit(0);

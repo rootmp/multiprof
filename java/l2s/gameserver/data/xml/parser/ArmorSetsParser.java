@@ -39,44 +39,44 @@ public final class ArmorSetsParser extends AbstractParser<ArmorSetsHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("set".equalsIgnoreCase(element.getName()))
+			if("set".equalsIgnoreCase(element.getName()))
 			{
 				String[] chests = null, legs = null, head = null, gloves = null, feet = null, shield = null,
 						shield_skills = null, enchant6skills = null, enchant7skills = null, enchant8skills = null,
 						enchant9skills = null, enchant10skills = null;
-				if (element.attributeValue("chests") != null)
+				if(element.attributeValue("chests") != null)
 					chests = element.attributeValue("chests").split(";");
-				if (element.attributeValue("legs") != null)
+				if(element.attributeValue("legs") != null)
 					legs = element.attributeValue("legs").split(";");
-				if (element.attributeValue("head") != null)
+				if(element.attributeValue("head") != null)
 					head = element.attributeValue("head").split(";");
-				if (element.attributeValue("gloves") != null)
+				if(element.attributeValue("gloves") != null)
 					gloves = element.attributeValue("gloves").split(";");
-				if (element.attributeValue("feet") != null)
+				if(element.attributeValue("feet") != null)
 					feet = element.attributeValue("feet").split(";");
-				if (element.attributeValue("shield") != null)
+				if(element.attributeValue("shield") != null)
 					shield = element.attributeValue("shield").split(";");
-				if (element.attributeValue("shield_skills") != null)
+				if(element.attributeValue("shield_skills") != null)
 					shield_skills = element.attributeValue("shield_skills").split(";");
-				if (element.attributeValue("enchant6skills") != null)
+				if(element.attributeValue("enchant6skills") != null)
 					enchant6skills = element.attributeValue("enchant6skills").split(";");
-				if (element.attributeValue("enchant7skills") != null)
+				if(element.attributeValue("enchant7skills") != null)
 					enchant7skills = element.attributeValue("enchant7skills").split(";");
-				if (element.attributeValue("enchant8skills") != null)
+				if(element.attributeValue("enchant8skills") != null)
 					enchant8skills = element.attributeValue("enchant8skills").split(";");
-				if (element.attributeValue("enchant9skills") != null)
+				if(element.attributeValue("enchant9skills") != null)
 					enchant9skills = element.attributeValue("enchant9skills").split(";");
-				if (element.attributeValue("enchant10skills") != null)
+				if(element.attributeValue("enchant10skills") != null)
 					enchant10skills = element.attributeValue("enchant10skills").split(";");
 
 				ArmorSet armorSet = new ArmorSet(chests, legs, head, gloves, feet, shield, shield_skills, enchant6skills, enchant7skills, enchant8skills, enchant9skills, enchant10skills);
-				for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
-					if ("set_skills".equalsIgnoreCase(subElement.getName()))
+					if("set_skills".equalsIgnoreCase(subElement.getName()))
 					{
 						int partsCount = Integer.parseInt(subElement.attributeValue("parts"));
 						String[] skills = subElement.attributeValue("skills").split(";");

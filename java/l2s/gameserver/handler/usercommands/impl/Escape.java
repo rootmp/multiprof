@@ -12,27 +12,26 @@ import l2s.gameserver.skills.enums.SkillEntryType;
  */
 public class Escape implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		52
+	private static final int[] COMMAND_IDS = {
+			52
 	};
 
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (id != COMMAND_IDS[0])
+		if(id != COMMAND_IDS[0])
 			return false;
 
-		if (activeChar.isMovementDisabled() || activeChar.isInOlympiadMode())
+		if(activeChar.isMovementDisabled() || activeChar.isInOlympiadMode())
 			return false;
 
-		if (activeChar.getTeleMode() != 0 || !activeChar.getPlayerAccess().UseTeleport)
+		if(activeChar.getTeleMode() != 0 || !activeChar.getPlayerAccess().UseTeleport)
 		{
 			activeChar.sendMessage(new CustomMessage("common.TryLater"));
 			return false;
 		}
 
-		if (activeChar.isInDuel() || activeChar.getTeam() != TeamType.NONE)
+		if(activeChar.isInDuel() || activeChar.getTeam() != TeamType.NONE)
 		{
 			activeChar.sendMessage(new CustomMessage("common.RecallInDuel"));
 			return false;
@@ -43,12 +42,12 @@ public class Escape implements IUserCommandHandler
 		activeChar.getMovement().stopMove();
 
 		SkillEntry skillEntry;
-		if (activeChar.getPlayerAccess().FastUnstuck)
+		if(activeChar.getPlayerAccess().FastUnstuck)
 			skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 2100, 1);
 		else
 			skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 2099, 1);
 
-		if (skillEntry != null && skillEntry.checkCondition(activeChar, activeChar, false, false, true))
+		if(skillEntry != null && skillEntry.checkCondition(activeChar, activeChar, false, false, true))
 			activeChar.getAI().Cast(skillEntry, activeChar, false, true);
 
 		return true;

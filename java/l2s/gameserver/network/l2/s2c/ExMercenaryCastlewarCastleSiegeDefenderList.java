@@ -48,7 +48,7 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 		_id = castle.getId();
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
-		if (siegeEvent != null)
+		if(siegeEvent != null)
 		{
 			_registrationValid = !siegeEvent.isRegistrationOver() && (castle.getOwner() != null);
 
@@ -56,15 +56,16 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 			List<SiegeClanObject> defendersWaiting = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_WAITING);
 			List<SiegeClanObject> defendersRefused = siegeEvent.getObjects(CastleSiegeEvent.DEFENDERS_REFUSED);
 			_defenderClans = new ArrayList<>(defenders.size() + defendersWaiting.size() + defendersRefused.size());
-			for (SiegeClanObject siegeClan : defenders)
+			for(SiegeClanObject siegeClan : defenders)
 			{
-				_defenderClans.add(new DefenderClan(siegeClan.getClan(), siegeClan.getClan() == castle.getOwner() ? OWNER : ACCEPTED, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
+				_defenderClans.add(new DefenderClan(siegeClan.getClan(), siegeClan.getClan()
+						== castle.getOwner() ? OWNER : ACCEPTED, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
 			}
-			for (SiegeClanObject siegeClan : defendersWaiting)
+			for(SiegeClanObject siegeClan : defendersWaiting)
 			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), WAITING, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
 			}
-			for (SiegeClanObject siegeClan : defendersRefused)
+			for(SiegeClanObject siegeClan : defendersRefused)
 			{
 				_defenderClans.add(new DefenderClan(siegeClan.getClan(), REFUSE, (int) (siegeClan.getDate() / 1000L), siegeClan.getParam(), 0));
 			}
@@ -86,7 +87,7 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 		packetWriter.writeD(0x00); // Page number
 		packetWriter.writeD(_defenderClans.size());
 		packetWriter.writeD(_defenderClans.size());
-		for (DefenderClan defenderClan : _defenderClans)
+		for(DefenderClan defenderClan : _defenderClans)
 		{
 			Clan clan = defenderClan._clan;
 			packetWriter.writeD(clan.getClanId());
@@ -100,7 +101,7 @@ public class ExMercenaryCastlewarCastleSiegeDefenderList implements IClientOutgo
 			packetWriter.writeD(defenderClan._mercenariesCount); // Mercenaries count
 
 			Alliance alliance = clan.getAlliance();
-			if (alliance != null)
+			if(alliance != null)
 			{
 				packetWriter.writeD(alliance.getAllyId());
 				packetWriter.writeS(alliance.getAllyName());

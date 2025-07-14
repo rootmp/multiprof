@@ -51,17 +51,17 @@ public class SayAction implements EventAction
 	public void call(Event event)
 	{
 		List<Player> players = event.broadcastPlayers(_range);
-		for (Player player : players)
+		for(Player player : players)
 			packet(player);
 	}
 
 	private void packet(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return;
 
 		IClientOutgoingPacket packet = null;
-		if (_sysString != null)
+		if(_sysString != null)
 			packet = new SayPacket2(0, _chatType, _sysString, _systemMsg);
 		else
 			packet = new SayPacket2(0, _chatType, 0, _how, _text);

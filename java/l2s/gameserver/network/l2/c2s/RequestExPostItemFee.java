@@ -4,7 +4,6 @@ import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
 
-
 public class RequestExPostItemFee implements IClientIncomingPacket
 {
 

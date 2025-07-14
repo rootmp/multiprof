@@ -14,9 +14,9 @@ public class Guard extends Fighter
 	public boolean canAttackCharacter(Creature target)
 	{
 		NpcInstance actor = getActor();
-		if (target.isPlayable())
+		if(target.isPlayable())
 		{
-			if (!target.isPK() || (actor.getParameter("evilGuard", false) && target.getPvpFlag() > 0))
+			if(!target.isPK() || (actor.getParameter("evilGuard", false) && target.getPvpFlag() > 0))
 				return false;
 			return true;
 		}

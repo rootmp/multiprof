@@ -21,23 +21,17 @@ public final class RodListener implements OnEquipListener
 	@Override
 	public int onUnequip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
-		if (!item.isEquipable() || (slot != Inventory.PAPERDOLL_RHAND))
-		{
-			return 0;
-		}
+		if(!item.isEquipable() || (slot != Inventory.PAPERDOLL_RHAND))
+		{ return 0; }
 
-		if (item.getItemType() != WeaponType.ROD)
-		{
-			return 0;
-		}
+		if(item.getItemType() != WeaponType.ROD)
+		{ return 0; }
 
 		Player player = actor.getPlayer();
-		if (player.isFishing())
+		if(player.isFishing())
 		{
 			player.getFishing().stop();
 		}

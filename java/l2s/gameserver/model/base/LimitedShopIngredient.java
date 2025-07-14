@@ -73,18 +73,18 @@ public class LimitedShopIngredient implements Cloneable
 	@Override
 	public boolean equals(Object obj)
 	{
-		if (this == obj)
+		if(this == obj)
 			return true;
-		if (obj == null)
+		if(obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if(getClass() != obj.getClass())
 			return false;
 		LimitedShopIngredient other = (LimitedShopIngredient) obj;
-		if (_itemId != other._itemId)
+		if(_itemId != other._itemId)
 			return false;
-		if (_itemCount != other._itemCount)
+		if(_itemCount != other._itemCount)
 			return false;
-		if (_enchantLevel != other._enchantLevel)
+		if(_enchantLevel != other._enchantLevel)
 			return false;
 		return true;
 	}

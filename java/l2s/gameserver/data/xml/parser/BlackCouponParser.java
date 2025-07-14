@@ -45,16 +45,16 @@ public final class BlackCouponParser extends AbstractParser<BlackCouponHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Element element : rootElement.elements("coupon"))
+		for(Element element : rootElement.elements("coupon"))
 		{
 			int itemId = parseInt(element, "item_id");
 			BlackCoupon blackCoupon = new BlackCoupon(itemId);
-			for (Element element1 : element.elements("restorable_items"))
+			for(Element element1 : element.elements("restorable_items"))
 			{
 				int lostMinTime = (int) TimeUtils.getTimeFromString(parseString(element1, "lost_min_time", null), "yyyy/MM/dd HH:mm", TimeUnit.SECONDS, 0);
 				int lostMaxTime = (int) TimeUtils.getTimeFromString(parseString(element1, "lost_max_time", null), "yyyy/MM/dd HH:mm", TimeUnit.SECONDS, Integer.MAX_VALUE);
 				Map<Integer, Integer> restorableItems = new HashMap<>();
-				for (Element element2 : element1.elements("item"))
+				for(Element element2 : element1.elements("item"))
 				{
 					int brokenId = parseInt(element2, "broken_id");
 					int fixedId = parseInt(element2, "fixed_id");

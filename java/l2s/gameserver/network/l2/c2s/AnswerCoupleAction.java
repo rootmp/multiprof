@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.ai.PlayableAI;
 import l2s.gameserver.geodata.GeoEngine;
@@ -30,21 +31,21 @@ public class AnswerCoupleAction implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.COUPLE_ACTION))
+		if(request == null || !request.isTypeOf(L2RequestType.COUPLE_ACTION))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -52,7 +53,7 @@ public class AnswerCoupleAction implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -60,14 +61,14 @@ public class AnswerCoupleAction implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.getObjectId() != _charObjId || requestor.getRequest() != request)
+		if(requestor.getObjectId() != _charObjId || requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		switch (_answer)
+		switch(_answer)
 		{
 			case -1: // refused
 				requestor.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_SET_TO_REFUSE_COUPLE_ACTIONS_AND_CANNOT_BE_REQUESTED_FOR_A_COUPLE_ACTION).addName(activeChar));
@@ -82,13 +83,13 @@ public class AnswerCoupleAction implements IClientIncomingPacket
 			case 1: // ok
 				try
 				{
-					if (!checkCondition(activeChar, requestor) || !checkCondition(requestor, activeChar))
+					if(!checkCondition(activeChar, requestor) || !checkCondition(requestor, activeChar))
 						return;
 
 					Location loc = PositionUtils.applyOffset(activeChar, activeChar.getLoc(), 25);
 
 					loc = GeoEngine.moveCheck(requestor.getX(), requestor.getY(), requestor.getZ(), loc.x, loc.y, requestor.getGeoIndex());
-					if (loc != null)
+					if(loc != null)
 					{
 						requestor.getMovement().moveToLocation(loc, 0, false);
 						requestor.getAI().setNextAction(PlayableAI.AINextAction.COUPLE_ACTION, activeChar, _actionId, true, false);
@@ -104,7 +105,7 @@ public class AnswerCoupleAction implements IClientIncomingPacket
 
 	private static boolean checkCondition(Player activeChar, Player requestor)
 	{
-		if (!activeChar.isInRange(requestor, 300) || activeChar.isInRange(requestor, 25) || !GeoEngine.canSeeTarget(activeChar, requestor))
+		if(!activeChar.isInRange(requestor, 300) || activeChar.isInRange(requestor, 25) || !GeoEngine.canSeeTarget(activeChar, requestor))
 		{
 			activeChar.sendPacket(SystemMsg.THE_REQUEST_CANNOT_BE_COMPLETED_BECAUSE_THE_TARGET_DOES_NOT_MEET_LOCATION_REQUIREMENTS);
 			return false;

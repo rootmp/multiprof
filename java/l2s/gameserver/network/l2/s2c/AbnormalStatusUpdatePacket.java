@@ -47,7 +47,7 @@ public class AbnormalStatusUpdatePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeH(_effects.size());
 
-		for (Abnormal temp : _effects)
+		for(Abnormal temp : _effects)
 		{
 			packetWriter.writeD(temp._skillId);
 			packetWriter.writeH(temp._dat);

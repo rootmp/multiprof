@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,20 +46,20 @@ public class RequestBBSwrite implements IClientIncomingPacket
 			return;
 
 		ValidBypass bp = activeChar.getBypassStorage().validate(_url);
-		if (bp == null)
+		if(bp == null)
 		{
 			_log.warn("RequestBBSwrite: Unexpected bypass : " + _url + " client : " + client + "!");
 			return;
 		}
 
-		if (!Config.BBS_ENABLED)
+		if(!Config.BBS_ENABLED)
 		{
 			activeChar.sendPacket(SystemMsg.THE_COMMUNITY_SERVER_IS_CURRENTLY_OFFLINE);
 			return;
 		}
 
 		IBbsHandler handler = BbsHandlerHolder.getInstance().getCommunityHandler(bp.bypass);
-		if (handler != null)
+		if(handler != null)
 			handler.onWriteCommand(activeChar, bp.bypass, _arg1, _arg2, _arg3, _arg4, _arg5);
 	}
 }

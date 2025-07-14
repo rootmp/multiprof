@@ -44,7 +44,7 @@ public class AppearanceStone
 	private final List<SkillEntry> _skills = new ArrayList<SkillEntry>();
 	private final Map<ExItemType, Visual> _visual;
 
-	public AppearanceStone(int itemId, ShapeTargetType[] targetTypes, ShapeType type, ItemGrade[] grades, long cost,  Map<ExItemType, Visual> visual, int period)
+	public AppearanceStone(int itemId, ShapeTargetType[] targetTypes, ShapeType type, ItemGrade[] grades, long cost, Map<ExItemType, Visual> visual, int period)
 	{
 		_itemId = itemId;
 		_targetTypes = targetTypes;
@@ -111,7 +111,7 @@ public class AppearanceStone
 	{
 		return _visual.get(type);
 	}
-	
+
 	public Map<ExItemType, Visual> getVisual()
 	{
 		return _visual;
@@ -120,11 +120,11 @@ public class AppearanceStone
 	public int getVisual(Player player, ExItemType type)
 	{
 		Visual visual = _visual.get(type);
-		
+
 		if(visual.getAlternative().containsKey(player.getRace()))
 			return visual.getAlternative().get(player.getRace());
 
 		return _visual.get(type).getExtractId();
 	}
-	
+
 }

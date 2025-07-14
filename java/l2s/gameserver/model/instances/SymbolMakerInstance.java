@@ -2,7 +2,6 @@ package l2s.gameserver.model.instances;
 
 import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.s2c.HennaEquipListPacket;
 import l2s.gameserver.templates.npc.NpcTemplate;
 
 /**
@@ -25,7 +24,7 @@ public class SymbolMakerInstance extends NpcInstance
 		else if (command.equals("RemoveList"))
 			player.sendPacket(new HennaUnequipListPacket(player));
 		else*/
-			super.onBypassFeedback(player, command);
+		super.onBypassFeedback(player, command);
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class SymbolMakerInstance extends NpcInstance
 	@Override
 	public String getHtmlFilename(int val, Player player)
 	{
-		if (val == 0)
+		if(val == 0)
 			return "SymbolMaker.htm";
 		return "SymbolMaker-" + val + ".htm";
 	}

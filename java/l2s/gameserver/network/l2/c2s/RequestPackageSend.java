@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.ArrayUtils;
 
 import l2s.commons.math.SafeMath;
@@ -31,7 +32,7 @@ public class RequestPackageSend implements IClientIncomingPacket
 	{
 		_objectId = packet.readD();
 		_count = packet.readD();
-		if (_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
@@ -40,11 +41,11 @@ public class RequestPackageSend implements IClientIncomingPacket
 		_items = new int[_count];
 		_itemQ = new long[_count];
 
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			_items[i] = packet.readD();
 			_itemQ[i] = packet.readQ();
-			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			if(_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
 			{
 				_count = 0;
 				return false;
@@ -57,28 +58,28 @@ public class RequestPackageSend implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null || _count == 0)
+		if(player == null || _count == 0)
 			return;
 
-		if (!player.getPlayerAccess().UseWarehouse)
+		if(!player.getPlayerAccess().UseWarehouse)
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isActionsDisabled())
+		if(player.isActionsDisabled())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isInStoreMode())
+		if(player.isInStoreMode())
 		{
 			player.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (player.isInTrade())
+		if(player.isInTrade())
 		{
 			player.sendActionFailed();
 			return;
@@ -90,7 +91,7 @@ public class RequestPackageSend implements IClientIncomingPacket
 		 * !player.checkInteractionDistance(whkeeper)) return;
 		 */
 
-		if (!player.getAccountChars().containsKey(_objectId))
+		if(!player.getAccountChars().containsKey(_objectId))
 			return;
 
 		PcInventory inventory = player.getInventory();
@@ -109,19 +110,19 @@ public class RequestPackageSend implements IClientIncomingPacket
 			int items = 0;
 
 			// Создаем новый список передаваемых предметов, на основе полученных данных
-			for (int i = 0; i < _count; i++)
+			for(int i = 0; i < _count; i++)
 			{
 				ItemInstance item = inventory.getItemByObjectId(_items[i]);
-				if (item == null || item.getCount() < _itemQ[i] || !item.getTemplate().isFreightable())
+				if(item == null || item.getCount() < _itemQ[i] || !item.getTemplate().isFreightable())
 				{
 					_items[i] = 0; // Обнуляем, вещь не будет передана
 					_itemQ[i] = 0L;
 					continue;
 				}
 
-				if (!item.isStackable() || freight.getItemByItemId(item.getItemId()) == null) // вещь требует слота
+				if(!item.isStackable() || freight.getItemByItemId(item.getItemId()) == null) // вещь требует слота
 				{
-					if (slotsleft <= 0) // если слоты кончились нестекуемые вещи и отсутствующие стекуемые пропускаем
+					if(slotsleft <= 0) // если слоты кончились нестекуемые вещи и отсутствующие стекуемые пропускаем
 					{
 						_items[i] = 0; // Обнуляем, вещь не будет передана
 						_itemQ[i] = 0L;
@@ -130,17 +131,17 @@ public class RequestPackageSend implements IClientIncomingPacket
 					slotsleft--; // если слот есть то его уже нет
 				}
 
-				if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
+				if(item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 					adenaDeposit = _itemQ[i];
 
 				items++;
 			}
 
 			// Сообщаем о том, что слоты кончились
-			if (slotsleft <= 0)
+			if(slotsleft <= 0)
 				player.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 
-			if (items == 0)
+			if(items == 0)
 			{
 				player.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 				return;
@@ -149,28 +150,28 @@ public class RequestPackageSend implements IClientIncomingPacket
 			// Проверяем, хватит ли у нас денег на уплату налога
 			long fee = SafeMath.mulAndCheck(items, _FREIGHT_FEE);
 
-			if (fee + adenaDeposit > player.getAdena())
+			if(fee + adenaDeposit > player.getAdena())
 			{
 				player.sendPacket(SystemMsg.YOU_LACK_THE_FUNDS_NEEDED_TO_PAY_FOR_THIS_TRANSACTION);
 				return;
 			}
 
-			if (!player.reduceAdena(fee, true))
+			if(!player.reduceAdena(fee, true))
 			{
 				player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 				return;
 			}
 
-			for (int i = 0; i < _count; i++)
+			for(int i = 0; i < _count; i++)
 			{
-				if (_items[i] == 0)
+				if(_items[i] == 0)
 					continue;
 				ItemInstance item = inventory.removeItemByObjectId(_items[i], _itemQ[i]);
 				Log.LogItem(player, Log.FreightDeposit, item);
 				freight.addItem(item);
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			// TODO audit
 			player.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);

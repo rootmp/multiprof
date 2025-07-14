@@ -49,10 +49,9 @@ import l2s.gameserver.templates.skill.enchant.EnchantProbInfo;
 public final class ItemFunctions
 {
 	protected static final Logger _log = LoggerFactory.getLogger(ItemFunctions.class);
-	
+
 	private ItemFunctions()
-	{
-	}
+	{}
 
 	public static ItemInstance createItem(int itemId)
 	{
@@ -89,13 +88,11 @@ public final class ItemFunctions
 	 */
 	public static List<ItemInstance> addItem(Playable playable, int itemId, long count, int enchantLevel, boolean notify)
 	{
-		if ((playable == null) || (count < 1))
-		{
-			return Collections.emptyList();
-		}
+		if((playable == null) || (count < 1))
+		{ return Collections.emptyList(); }
 
 		Playable player;
-		if (playable.isSummon())
+		if(playable.isSummon())
 		{
 			player = playable.getPlayer();
 		}
@@ -104,28 +101,28 @@ public final class ItemFunctions
 			player = playable;
 		}
 
-		if (itemId > 0)
+		if(itemId > 0)
 		{
 			List<ItemInstance> items = new ArrayList<ItemInstance>();
 
 			ItemTemplate t = ItemHolder.getInstance().getTemplate(itemId);
-			if (t.isStackable())
+			if(t.isStackable())
 			{
 				items.add(player.getInventory().addItem(itemId, count));
 
-				if (notify)
+				if(notify)
 				{
 					player.sendPacket(SystemMessagePacket.obtainItems(itemId, count, 0));
 				}
 			}
 			else
 			{
-				for (long i = 0; i < count; i++)
+				for(long i = 0; i < count; i++)
 				{
 					ItemInstance item = player.getInventory().addItem(itemId, 1, enchantLevel);
 					items.add(item);
 
-					if (notify)
+					if(notify)
 					{
 						player.sendPacket(SystemMessagePacket.obtainItems(item));
 					}
@@ -134,31 +131,31 @@ public final class ItemFunctions
 
 			return items;
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+		else if(itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 		{
 			player.getPlayer().addPcBangPoints((int) count, false, notify);
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+		else if(itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 		{
-			if (player.getPlayer().getClan() != null)
+			if(player.getPlayer().getClan() != null)
 			{
 				player.getPlayer().getClan().incReputation((int) count, false, "itemFunction");
 
-				if (notify)
+				if(notify)
 				{
 					//
 				}
 			}
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_FAME)
+		else if(itemId == ItemTemplate.ITEM_ID_FAME)
 		{
 			player.getPlayer().setFame((int) count + player.getPlayer().getFame(), "itemFunction", notify);
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_CRAFT_POINTS)
+		else if(itemId == ItemTemplate.ITEM_ID_CRAFT_POINTS)
 		{
 			player.getPlayer().setCraftPoints((int) count, "itemFunction");
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_QUEST_POINTS)
+		else if(itemId == ItemTemplate.ITEM_ID_QUEST_POINTS)
 		{
 			MissionLevelReward info = player.getPlayer().getMissionLevelReward();
 			int year = Calendar.getInstance().get(Calendar.YEAR);
@@ -168,7 +165,7 @@ public final class ItemFunctions
 
 			player.getPlayer().getMissionLevelReward().setPoints((int) count);
 
-			if (data.getValue() <= player.getPlayer().getMissionLevelReward().getPoints())
+			if(data.getValue() <= player.getPlayer().getMissionLevelReward().getPoints())
 			{
 				player.getPlayer().getMissionLevelReward().setPoints(player.getPlayer().getMissionLevelReward().getPoints() - data.getValue());
 				player.getPlayer().getMissionLevelReward().setLevel(player.getPlayer().getMissionLevelReward().getLevel() + 1);
@@ -177,9 +174,9 @@ public final class ItemFunctions
 			player.getPlayer().getMissionLevelReward().store();
 			player.sendPacket(new SystemMessagePacket(SystemMsg.YOU_VE_GOT_S1_QUEST_POINTS).addInteger(count));
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_CLAN_POINTS)
+		else if(itemId == ItemTemplate.ITEM_ID_CLAN_POINTS)
 		{
-			if (player.getPlayer().getClan() != null)
+			if(player.getPlayer().getClan() != null)
 			{
 				Clan clan = player.getPlayer().getClan();
 				clan.setPoints(clan.getPoints() + (int) count);
@@ -197,35 +194,25 @@ public final class ItemFunctions
 	 */
 	public static long getItemCount(Playable playable, int itemId)
 	{
-		if (playable == null)
-		{
-			return 0;
-		}
+		if(playable == null)
+		{ return 0; }
 
 		Player player = playable.getPlayer();
-		if (itemId > 0)
-		{
-			return player.getInventory().getCountOf(itemId);
-		}
+		if(itemId > 0)
+		{ return player.getInventory().getCountOf(itemId); }
 
-		if (itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
-		{
-			return player.getPcBangPoints();
-		}
+		if(itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+		{ return player.getPcBangPoints(); }
 
-		if (itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+		if(itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 		{
-			if (player.getClan() != null)
-			{
-				return player.getClan().getReputationScore();
-			}
+			if(player.getClan() != null)
+			{ return player.getClan().getReputationScore(); }
 
 			return 0;
 		}
-		if (itemId == ItemTemplate.ITEM_ID_FAME)
-		{
-			return player.getFame();
-		}
+		if(itemId == ItemTemplate.ITEM_ID_FAME)
+		{ return player.getFame(); }
 
 		return 0;
 	}
@@ -267,27 +254,23 @@ public final class ItemFunctions
 	 */
 	public static boolean deleteItem(Playable playable, int itemId, long count, boolean notify)
 	{
-		if ((playable == null) || (count < 1))
-		{
-			return false;
-		}
+		if((playable == null) || (count < 1))
+		{ return false; }
 
 		Player player = playable.getPlayer();
 
-		if (itemId > 0)
+		if(itemId > 0)
 		{
 			playable.getInventory().writeLock();
 			try
 			{
 				ItemTemplate t = ItemHolder.getInstance().getTemplate(itemId);
-				if (t == null)
-				{
-					return false;
-				}
+				if(t == null)
+				{ return false; }
 
-				if (t.isStackable())
+				if(t.isStackable())
 				{
-					if (!playable.getInventory().destroyItemByItemId(itemId, count))
+					if(!playable.getInventory().destroyItemByItemId(itemId, count))
 					{
 						// TODO audit
 						return false;
@@ -295,14 +278,12 @@ public final class ItemFunctions
 				}
 				else
 				{
-					if (playable.getInventory().getCountOf(itemId) < count)
-					{
-						return false;
-					}
+					if(playable.getInventory().getCountOf(itemId) < count)
+					{ return false; }
 
-					for (long i = 0; i < count; i++)
+					for(long i = 0; i < count; i++)
 					{
-						if (!playable.getInventory().destroyItemByItemId(itemId, 1L))
+						if(!playable.getInventory().destroyItemByItemId(itemId, 1L))
 						{
 							// TODO audit
 							return false;
@@ -315,41 +296,35 @@ public final class ItemFunctions
 				playable.getInventory().writeUnlock();
 			}
 
-			if (notify)
+			if(notify)
 			{
 				playable.sendPacket(SystemMessagePacket.removeItems(itemId, count));
 			}
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+		else if(itemId == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 		{
 			player.reducePcBangPoints((int) count, notify);
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+		else if(itemId == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 		{
 			Clan clan = player.getClan();
-			if (clan == null)
-			{
-				return false;
-			}
+			if(clan == null)
+			{ return false; }
 
-			if (clan.getReputationScore() < count)
-			{
-				return false;
-			}
+			if(clan.getReputationScore() < count)
+			{ return false; }
 
 			clan.incReputation((int) -count, false, "itemFunction");
 
-			if (notify)
+			if(notify)
 			{
 				player.sendPacket(new SystemMessagePacket(SystemMsg.S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_THE_CLANS_REPUTATION).addLong(count));
 			}
 		}
-		else if (itemId == ItemTemplate.ITEM_ID_FAME)
+		else if(itemId == ItemTemplate.ITEM_ID_FAME)
 		{
-			if (player.getFame() < count)
-			{
-				return false;
-			}
+			if(player.getFame() < count)
+			{ return false; }
 
 			player.setFame((int) (player.getFame() - count), "itemFunction", notify);
 		}
@@ -393,24 +368,22 @@ public final class ItemFunctions
 
 		return true;
 	}
-	
+
 	/** Удаляет все предметы у персонажа с ивентаря и банка по Item ID **/
 	public static void deleteItemsEverywhere(Playable playable, int itemId)
 	{
-		if (playable == null)
-		{
-			return;
-		}
+		if(playable == null)
+		{ return; }
 
 		Player player = playable.getPlayer();
 
-		if (itemId > 0)
+		if(itemId > 0)
 		{
 			player.getInventory().writeLock();
 			try
 			{
 				ItemInstance item = player.getInventory().getItemByItemId(itemId);
-				while (item != null)
+				while(item != null)
 				{
 					player.getInventory().destroyItem(item);
 					item = player.getInventory().getItemByItemId(itemId);
@@ -425,7 +398,7 @@ public final class ItemFunctions
 			try
 			{
 				ItemInstance item = player.getWarehouse().getItemByItemId(itemId);
-				while (item != null)
+				while(item != null)
 				{
 					player.getWarehouse().destroyItem(item);
 					item = player.getWarehouse().getItemByItemId(itemId);
@@ -440,7 +413,7 @@ public final class ItemFunctions
 			try
 			{
 				ItemInstance item = player.getFreight().getItemByItemId(itemId);
-				while (item != null)
+				while(item != null)
 				{
 					player.getFreight().destroyItem(item);
 					item = player.getFreight().getItemByItemId(itemId);
@@ -455,7 +428,7 @@ public final class ItemFunctions
 			try
 			{
 				ItemInstance item = player.getRefund().getItemByItemId(itemId);
-				while (item != null)
+				while(item != null)
 				{
 					player.getRefund().destroyItem(item);
 					item = player.getRefund().getItemByItemId(itemId);
@@ -467,13 +440,13 @@ public final class ItemFunctions
 			}
 
 			PetInstance pet = player.getPet();
-			if (pet != null)
+			if(pet != null)
 			{
 				pet.getInventory().writeLock();
 				try
 				{
 					ItemInstance item = pet.getInventory().getItemByItemId(itemId);
-					while (item != null)
+					while(item != null)
 					{
 						pet.getInventory().destroyItem(item);
 						item = pet.getInventory().getItemByItemId(itemId);
@@ -489,9 +462,9 @@ public final class ItemFunctions
 				List<ItemInstance> items = new ArrayList<ItemInstance>();
 				items.addAll(ItemsDAO.getInstance().getItemsByOwnerIdAndLoc(player.getObjectId(), ItemLocation.PET_INVENTORY));
 				items.addAll(ItemsDAO.getInstance().getItemsByOwnerIdAndLoc(player.getObjectId(), ItemLocation.PET_PAPERDOLL));
-				for (ItemInstance item : items)
+				for(ItemInstance item : items)
 				{
-					if (item.getItemId() == itemId)
+					if(item.getItemId() == itemId)
 					{
 						item.setLocData(-1);
 						item.setCount(0L);
@@ -528,30 +501,24 @@ public final class ItemFunctions
 	 */
 	public static boolean deleteItem(Playable playable, ItemInstance item, long count, boolean notify)
 	{
-		if ((playable == null) || (count < 1))
-		{
-			return false;
-		}
+		if((playable == null) || (count < 1))
+		{ return false; }
 
-		if (item.getCount() < count)
-		{
-			return false;
-		}
+		if(item.getCount() < count)
+		{ return false; }
 
 		playable.getInventory().writeLock();
 		try
 		{
-			if (!playable.getInventory().destroyItem(item, count))
-			{
-				return false;
-			}
+			if(!playable.getInventory().destroyItem(item, count))
+			{ return false; }
 		}
 		finally
 		{
 			playable.getInventory().writeUnlock();
 		}
 
-		if (notify)
+		if(notify)
 		{
 			playable.sendPacket(SystemMessagePacket.removeItems(item.getItemId(), count));
 		}
@@ -561,10 +528,8 @@ public final class ItemFunctions
 
 	public final static IBroadcastPacket checkIfCanEquip(PetInstance pet, ItemInstance item)
 	{
-		if (!item.isEquipable() || (!((item.getBodyPart() >= SLOT_R_EAR) && (item.getBodyPart() <= SLOT_FULL_ARMOR) && (item.getBodyPart() != SLOT_BACK))))
-		{
-			return SystemMsg.YOUR_PET_CANNOT_CARRY_THIS_ITEM;
-		}
+		if(!item.isEquipable() || (!((item.getBodyPart() >= SLOT_R_EAR) && (item.getBodyPart() <= SLOT_FULL_ARMOR) && (item.getBodyPart() != SLOT_BACK))))
+		{ return SystemMsg.YOUR_PET_CANNOT_CARRY_THIS_ITEM; }
 
 		return null;
 	}
@@ -581,163 +546,122 @@ public final class ItemFunctions
 		long targetSlot = item.getTemplate().getBodyPart();
 		Clan clan = player.getClan();
 
-		if ((player.getRace() != Race.KAMAEL) && ((item.getItemType() == WeaponType.CROSSBOW) || (item.getItemType() == WeaponType.RAPIER) || (item.getItemType() == WeaponType.ANCIENTSWORD)))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if((player.getRace() != Race.KAMAEL) && ((item.getItemType() == WeaponType.CROSSBOW) || (item.getItemType() == WeaponType.RAPIER)
+				|| (item.getItemType() == WeaponType.ANCIENTSWORD)))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
 		// Prevent Vanguard Equip other weapons, except POLE
-		if (item.isWeapon() && (item.getItemType() != WeaponType.POLE) && (player.getBaseClassType() == ClassType.VANGUARD_RIDER))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if(item.isWeapon() && (item.getItemType() != WeaponType.POLE) && (player.getBaseClassType() == ClassType.VANGUARD_RIDER))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
 		// Prevent equip pistols for non Sylph players.
-		if (item.isWeapon() && (item.getItemType() == WeaponType.FIREARMS) && (player.getRace() != Race.SYLPH))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if(item.isWeapon() && (item.getItemType() == WeaponType.FIREARMS) && (player.getRace() != Race.SYLPH))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
 		// Prevent Sylph players to equip other weapons.
-		if (item.isWeapon() && (player.getRace() == Race.SYLPH) && (item.getItemType() != WeaponType.FIREARMS))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if(item.isWeapon() && (player.getRace() == Race.SYLPH) && (item.getItemType() != WeaponType.FIREARMS))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
-		if ((item.getItemType() == WeaponType.DUALDAGGER) && (player.getSkillLevel(923) < 1))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if((item.getItemType() == WeaponType.DUALDAGGER) && (player.getSkillLevel(923) < 1))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
 		// Crown of the clan leader who owns the castle
-		if ((itemId == 6841) && ((clan == null) || !player.isClanLeader() || (clan.getCastle() == 0)))
-		{
-			return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-		}
+		if((itemId == 6841) && ((clan == null) || !player.isClanLeader() || (clan.getCastle() == 0)))
+		{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 
-		if (item.isEquipped()) // Валидация уже надетой брони, проверяем одета ли она в нужную ячейку.
+		if(item.isEquipped()) // Валидация уже надетой брони, проверяем одета ли она в нужную ячейку.
 		{
 			int[] paperdolls = Inventory.getPaperdollIndexes(targetSlot);
 			boolean success = false;
-			for (int paperdoll : paperdolls)
+			for(int paperdoll : paperdolls)
 			{
-				if (paperdoll == item.getEquipSlot())
+				if(paperdoll == item.getEquipSlot())
 				{
 					success = true;
 					break;
 				}
 			}
-			if (!success)
-			{
-				return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM;
-			}
+			if(!success)
+			{ return SystemMsg.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM; }
 		}
 
-		if (targetSlot == ItemTemplate.SLOT_DECO)
+		if(targetSlot == ItemTemplate.SLOT_DECO)
 		{
 			ItemInstance bracelet = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_RBRACELET);
-			if (bracelet == null)
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_WEAR_S1_BECAUSE_YOU_ARE_NOT_WEARING_A_BRACELET).addItemName(itemId);
-			}
+			if(bracelet == null)
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_WEAR_S1_BECAUSE_YOU_ARE_NOT_WEARING_A_BRACELET).addItemName(itemId); }
 
 			int count = player.getTalismanCount();
-			if (count <= 0)
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-			}
+			if(count <= 0)
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 
 			ItemInstance deco;
-			for (int paperdoll = Inventory.PAPERDOLL_DECO1; paperdoll <= Inventory.PAPERDOLL_DECO6; paperdoll++)
+			for(int paperdoll = Inventory.PAPERDOLL_DECO1; paperdoll <= Inventory.PAPERDOLL_DECO6; paperdoll++)
 			{
 				deco = player.getInventory().getPaperdollItem(paperdoll);
-				if (deco != null)
+				if(deco != null)
 				{
 					// the mascot is already equipped and the number of slots is greater than zero
-					if (deco == item)
-					{
-						return null;
-					}
+					if(deco == item)
+					{ return null; }
 					// Checking the number of slots
-					if (--count <= 0)
-					{
-						return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-					}
+					if(--count <= 0)
+					{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 				}
 			}
 		}
-		else if (targetSlot == ItemTemplate.SLOT_JEWEL)
+		else if(targetSlot == ItemTemplate.SLOT_JEWEL)
 		{
 			ItemInstance brooch = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_BROOCH);
-			if (brooch == null)
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_WITHOUT_EQUIPPING_A_BROOCH).addItemName(itemId);
-			}
+			if(brooch == null)
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_WITHOUT_EQUIPPING_A_BROOCH).addItemName(itemId); }
 
 			int count = player.getJewelsLimit();
-			if (count <= 0)
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-			}
+			if(count <= 0)
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 
 			ItemInstance jewel;
-			for (int paperdoll = Inventory.PAPERDOLL_JEWEL1; paperdoll <= Inventory.PAPERDOLL_JEWEL6; paperdoll++)
+			for(int paperdoll = Inventory.PAPERDOLL_JEWEL1; paperdoll <= Inventory.PAPERDOLL_JEWEL6; paperdoll++)
 			{
 				jewel = player.getInventory().getPaperdollItem(paperdoll);
-				if (jewel != null)
+				if(jewel != null)
 				{
 					// the stone is already equipped and the number of slots is greater than zero
-					if (jewel == item)
-					{
-						return null;
-					}
+					if(jewel == item)
+					{ return null; }
 					// Checking the number of slots
-					if (--count <= 0)
-					{
-						return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-					}
+					if(--count <= 0)
+					{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 				}
 			}
 		}
-		else if (targetSlot == ItemTemplate.SLOT_AGATHION)
+		else if(targetSlot == ItemTemplate.SLOT_AGATHION)
 		{
 			ItemInstance bracelet = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LBRACELET);
-			if (bracelet == null)
-			{
-				return SystemMsg.YOU_CANNOT_USE_THE_AGATHIONS_POWER_BECAUSE_YOU_ARE_NOT_WEARING_THE_LEFT_BRACELET;
-			}
-			if (!player.isActiveMainAgathionSlot())
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-			}
+			if(bracelet == null)
+			{ return SystemMsg.YOU_CANNOT_USE_THE_AGATHIONS_POWER_BECAUSE_YOU_ARE_NOT_WEARING_THE_LEFT_BRACELET; }
+			if(!player.isActiveMainAgathionSlot())
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 
 			ItemInstance agathion = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_AGATHION_MAIN);
-			if ((agathion == null) || ((agathion != null) && (agathion == item)))
-			{
-				return null;
-			}
+			if((agathion == null) || ((agathion != null) && (agathion == item)))
+			{ return null; }
 
 			int count = player.getSubAgathionsLimit();
-			if (count <= 0)
-			{
-				return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-			}
+			if(count <= 0)
+			{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 
-			for (int paperdoll = Inventory.PAPERDOLL_AGATHION_1; paperdoll <= Inventory.PAPERDOLL_AGATHION_4; paperdoll++)
+			for(int paperdoll = Inventory.PAPERDOLL_AGATHION_1; paperdoll <= Inventory.PAPERDOLL_AGATHION_4; paperdoll++)
 			{
 				agathion = player.getInventory().getPaperdollItem(paperdoll);
-				if (agathion != null)
+				if(agathion != null)
 				{
 					// the agathion is already equipped and the number of slots is greater than zero
-					if (agathion == item)
-					{
-						return null;
-					}
+					if(agathion == item)
+					{ return null; }
 					// Checking the number of slots
-					if (--count <= 0)
-					{
-						return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId);
-					}
+					if(--count <= 0)
+					{ return new SystemMessagePacket(SystemMsg.YOU_CANNOT_EQUIP_S1_BECAUSE_YOU_DO_NOT_HAVE_ANY_AVAILABLE_SLOTS).addItemName(itemId); }
 				}
 			}
 		}
@@ -752,29 +676,25 @@ public final class ItemFunctions
 
 	public static boolean canAddItem(Player player, ItemInstance item)
 	{
-		if (!player.getInventory().validateWeight(item))
+		if(!player.getInventory().validateWeight(item))
 		{
 			player.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_WEIGHT_LIMIT);
 			return false;
 		}
 
-		if (!player.getInventory().validateCapacity(item))
+		if(!player.getInventory().validateCapacity(item))
 		{
 			player.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL);
 			return false;
 		}
 
 		IItemHandler handler = item.getTemplate().getHandler();
-		if ((handler != null) && !handler.pickupItem(player, item))
-		{
-			return false;
-		}
+		if((handler != null) && !handler.pickupItem(player, item))
+		{ return false; }
 
 		PickableAttachment attachment = item.getAttachment() instanceof PickableAttachment ? (PickableAttachment) item.getAttachment() : null;
-		if ((attachment != null) && !attachment.canPickUp(player))
-		{
-			return false;
-		}
+		if((attachment != null) && !attachment.canPickUp(player))
+		{ return false; }
 
 		return true;
 	}
@@ -788,30 +708,20 @@ public final class ItemFunctions
 	 */
 	public final static boolean checkIfCanDiscard(Player player, ItemInstance item)
 	{
-		if (item.isHeroItem())
-		{
-			return false;
-		}
+		if(item.isHeroItem())
+		{ return false; }
 
-		if (player.getMountControlItemObjId() == item.getObjectId())
-		{
-			return false;
-		}
+		if(player.getMountControlItemObjId() == item.getObjectId())
+		{ return false; }
 
-		if (player.getPetControlItem() == item)
-		{
-			return false;
-		}
+		if(player.getPetControlItem() == item)
+		{ return false; }
 
-		if (player.getEnchantScroll() == item)
-		{
-			return false;
-		}
+		if(player.getEnchantScroll() == item)
+		{ return false; }
 
-		if (item.getTemplate().isQuest())
-		{
-			return false;
-		}
+		if(item.getTemplate().isQuest())
+		{ return false; }
 
 		return true;
 	}
@@ -826,53 +736,38 @@ public final class ItemFunctions
 	 */
 	public static final EnchantStone getEnchantStone(ItemInstance item, ItemInstance catalyst)
 	{
-		if ((item == null) || (catalyst == null))
-		{
-			return null;
-		}
+		if((item == null) || (catalyst == null))
+		{ return null; }
 
 		EnchantStone enchantStone = EnchantStoneHolder.getInstance().getEnchantStone(catalyst.getItemId());
-		if (enchantStone == null)
-		{
-			return null;
-		}
+		if(enchantStone == null)
+		{ return null; }
 
 		int current = item.getEnchantLevel();
-		if (current < (item.getTemplate().getBodyPart() == SLOT_FULL_ARMOR ? enchantStone.getMinFullbodyEnchantLevel() : enchantStone.getMinEnchantLevel()))
-		{
-			return null;
-		}
+		if(current
+				< (item.getTemplate().getBodyPart() == SLOT_FULL_ARMOR ? enchantStone.getMinFullbodyEnchantLevel() : enchantStone.getMinEnchantLevel()))
+		{ return null; }
 
-		if (current > enchantStone.getMaxEnchantLevel())
-		{
-			return null;
-		}
+		if(current > enchantStone.getMaxEnchantLevel())
+		{ return null; }
 
-		if (!enchantStone.containsGrade(item.getGrade()))
-		{
-			return null;
-		}
+		if(!enchantStone.containsGrade(item.getGrade()))
+		{ return null; }
 
 		final int itemType = item.getTemplate().getType2();
-		switch (enchantStone.getType())
+		switch(enchantStone.getType())
 		{
 			case ARMOR:
-				if ((itemType == ItemTemplate.TYPE2_WEAPON) || item.getTemplate().isHairAccessory())
-				{
-					return null;
-				}
+				if((itemType == ItemTemplate.TYPE2_WEAPON) || item.getTemplate().isHairAccessory())
+				{ return null; }
 				break;
 			case WEAPON:
-				if ((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || item.getTemplate().isHairAccessory())
-				{
-					return null;
-				}
+				if((itemType == ItemTemplate.TYPE2_SHIELD_ARMOR) || (itemType == ItemTemplate.TYPE2_ACCESSORY) || item.getTemplate().isHairAccessory())
+				{ return null; }
 				break;
 			case HAIR_ACCESSORY:
-				if (!item.getTemplate().isHairAccessory())
-				{
-					return null;
-				}
+				if(!item.getTemplate().isHairAccessory())
+				{ return null; }
 				break;
 		}
 
@@ -883,9 +778,9 @@ public final class ItemFunctions
 	{
 		int result = 0;
 		int crystalsAdd = 0;
-		if (item.isWeapon())
+		if(item.isWeapon())
 		{
-			switch (item.getGrade())
+			switch(item.getGrade())
 			{
 				case D:
 					crystalsAdd = 90;
@@ -903,7 +798,7 @@ public final class ItemFunctions
 		}
 		else
 		{
-			switch (item.getGrade())
+			switch(item.getGrade())
 			{
 				case D:
 					crystalsAdd = 11;
@@ -920,10 +815,10 @@ public final class ItemFunctions
 			}
 		}
 
-		if (item.getEnchantLevel() > 3)
+		if(item.getEnchantLevel() > 3)
 		{
 			result = crystalsAdd * 3;
-			if (item.isWeapon())
+			if(item.isWeapon())
 			{
 				crystalsAdd *= 2;
 			}
@@ -944,30 +839,26 @@ public final class ItemFunctions
 	public static boolean checkIsEquipped(Player player, int slot, int itemId, int enchant)
 	{
 		Inventory inv = player.getInventory();
-		if (slot >= 0)
+		if(slot >= 0)
 		{
 			ItemInstance item = inv.getPaperdollItem(slot);
-			if (item == null)
-			{
-				return itemId == 0;
-			}
+			if(item == null)
+			{ return itemId == 0; }
 
 			return (item.getItemId() == itemId) && (item.getFixedEnchantLevel(player) >= enchant);
 		}
 		else
 		{
-			for (int s : Inventory.PAPERDOLL_ORDER)
+			for(int s : Inventory.PAPERDOLL_ORDER)
 			{
 				ItemInstance item = inv.getPaperdollItem(s);
-				if (item == null)
+				if(item == null)
 				{
 					continue;
 				}
 
-				if ((item.getItemId() == itemId) && (item.getFixedEnchantLevel(player) >= enchant))
-				{
-					return true;
-				}
+				if((item.getItemId() == itemId) && (item.getFixedEnchantLevel(player) >= enchant))
+				{ return true; }
 			}
 		}
 		return false;
@@ -975,17 +866,17 @@ public final class ItemFunctions
 
 	public static boolean checkForceUseItem(Player player, ItemInstance item, boolean sendMsg)
 	{
-		if (player.isOutOfControl())
+		if(player.isOutOfControl())
 		{
 			player.sendActionFailed();
 			return false;
 		}
-		if (player.isStunned() || player.isDecontrolled() || player.isSleeping() || player.isAfraid() || player.isAlikeDead())
+		if(player.isStunned() || player.isDecontrolled() || player.isSleeping() || player.isAfraid() || player.isAlikeDead())
 		{
 			player.sendActionFailed();
 			return false;
 		}
-		if (item.getTemplate().isQuest())
+		if(item.getTemplate().isQuest())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_QUEST_ITEMS);
 			return false;
@@ -996,56 +887,50 @@ public final class ItemFunctions
 
 	public static boolean checkUseItem(Player player, ItemInstance item, boolean sendMsg)
 	{
-		if (player.isInTrainingCamp())
-		{
-			return false;
-		}
-		if (player.isInStoreMode())
+		if(player.isInTrainingCamp())
+		{ return false; }
+		if(player.isInStoreMode())
 		{
 			player.sendPacket(SystemMsg.YOU_MAY_NOT_USE_ITEMS_IN_A_PRIVATE_STORE_OR_PRIVATE_WORK_SHOP);
 			return false;
 		}
-		if (player.isFishing() && (item.getTemplate().getItemType() != EtcItemType.FISHSHOT))
+		if(player.isFishing() && (item.getTemplate().getItemType() != EtcItemType.FISHSHOT))
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING_2);
 			return false;
 		}
-		if (player.isSharedGroupDisabled(item.getTemplate().getReuseGroup()))
+		if(player.isSharedGroupDisabled(item.getTemplate().getReuseGroup()))
 		{
 			player.sendReuseMessage(item);
 			return false;
 		}
-		if (!item.isEquipped() && !item.getTemplate().testCondition(player, item, sendMsg))
-		{
-			return false;
-		}
-		if (player.getInventory().isLockedItem(item))
-		{
-			return false;
-		}
+		if(!item.isEquipped() && !item.getTemplate().testCondition(player, item, sendMsg))
+		{ return false; }
+		if(player.getInventory().isLockedItem(item))
+		{ return false; }
 
 		IBroadcastPacket result;
-		for (Event e : player.getEvents())
+		for(Event e : player.getEvents())
 		{
 			result = e.canUseItem(player, item);
-			if (result != null)
+			if(result != null)
 			{
 				player.sendPacket(result);
 				return false;
 			}
 		}
 
-		if (item.getTemplate().isForPet())
+		if(item.getTemplate().isForPet())
 		{
 			player.sendPacket(SystemMsg.YOU_MAY_NOT_EQUIP_A_PET_ITEM);
 			return false;
 		}
-		if (player.isUseItemDisabled())
+		if(player.isUseItemDisabled())
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addItemName(item.getItemId()));
 			return false;
 		}
-		if (player.isOutOfControl() || player.isDead() || player.isStunned() || player.isSleeping() || player.isParalyzed())
+		if(player.isOutOfControl() || player.isDead() || player.isStunned() || player.isSleeping() || player.isParalyzed())
 		{
 			player.sendActionFailed();
 			return false;
@@ -1054,7 +939,6 @@ public final class ItemFunctions
 		return true;
 	}
 
-	
 	public static List<EnchantProbInfo> getEnchantProbInfo(Player player, boolean isMultiEnchant, boolean bUseStorage)
 	{
 		List<EnchantProbInfo> result = new ArrayList<>();
@@ -1064,51 +948,52 @@ public final class ItemFunctions
 		double passiveRate = ItemFunctions.getEnchantPassiveRate(player);
 
 		int count = 1;
-		if (isMultiEnchant)
+		if(isMultiEnchant)
 			count = player.getMultiEnchantingItemsCount();
-		
-		for (int i = 1; i <= count; i++)
+
+		for(int i = 1; i <= count; i++)
 		{
 			double baseRate;
-			if (!isMultiEnchant || (player.getMultiEnchantingItemsBySlot(i) != 0))
-				baseRate = ItemFunctions.getBaseRate(player,isMultiEnchant, i, bUseStorage);
+			if(!isMultiEnchant || (player.getMultiEnchantingItemsBySlot(i) != 0))
+				baseRate = ItemFunctions.getBaseRate(player, isMultiEnchant, i, bUseStorage);
 			else
 				baseRate = 0;
-			
+
 			double totalRate = baseRate + supportRate + passiveRate;
-			if (totalRate > 10000)
+			if(totalRate > 10000)
 				totalRate = 10000;
 			EnchantProbInfo enchProbInfo = new EnchantProbInfo();
 
-			if (!isMultiEnchant)
+			if(!isMultiEnchant)
 				enchProbInfo.nItemServerId = player.getEnchantItem().getObjectId();
 			else
 				enchProbInfo.nItemServerId = player.getMultiEnchantingItemsBySlot(i);
-			
+
 			enchProbInfo.nTotalSuccessProbPermyriad = (int) totalRate;
 			enchProbInfo.nBaseProbPermyriad = (int) baseRate;
-			enchProbInfo.nSupportProbPermyriad= (int) supportRate;
+			enchProbInfo.nSupportProbPermyriad = (int) supportRate;
 			enchProbInfo.nItemSkillProbPermyriad = (int) passiveRate;
 			result.add(enchProbInfo);
-		} 
+		}
 		return result;
 	}
-	
+
 	public static double getEnchantSupportRate(Player player, boolean isMultiEnchant)
 	{
 		double supportRate = 0;
-		if (!isMultiEnchant && (player.getSupportItem() != null))
+		if(!isMultiEnchant && (player.getSupportItem() != null))
 		{
 			EnchantStone stone = ItemFunctions.getEnchantStone(player.getEnchantItem(), player.getSupportItem());
-			if (stone != null)
+			if(stone != null)
 				supportRate = stone.getChance() * 100;
 		}
-		
-		if(player.getEnchantChallengePoint()!=null && (player.getEnchantChallengePoint().ordinal() == 1 ||  player.getEnchantChallengePoint().ordinal() == 2))
-			supportRate = supportRate + player.getEnchantChallengePoint().getChance()*100;
+
+		if(player.getEnchantChallengePoint() != null
+				&& (player.getEnchantChallengePoint().ordinal() == 1 || player.getEnchantChallengePoint().ordinal() == 2))
+			supportRate = supportRate + player.getEnchantChallengePoint().getChance() * 100;
 		return supportRate;
 	}
-	
+
 	public static double getEnchantPassiveRate(Player player)
 	{
 		double passiveRate = 0;
@@ -1118,16 +1003,16 @@ public final class ItemFunctions
 		passiveRate *= 100;
 		return passiveRate;
 	}
-	
+
 	public static int getBaseRate(Player player, boolean isMultiEnchant, int multiEnchanSlot, boolean bUseStorage)
 	{
 		double baseRate = 0;
-		if (!isMultiEnchant)
+		if(!isMultiEnchant)
 		{
 			ItemInstance scrolItem = player.getEnchantScroll();
 			if(scrolItem == null)
 				return (int) baseRate;
-			
+
 			final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scrolItem.getItemId());
 			if(enchantScroll == null)
 			{
@@ -1137,31 +1022,31 @@ public final class ItemFunctions
 			final ItemInstance item = player.getEnchantItem();
 			if(item == null)
 				return (int) baseRate;
-			
+
 			final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId(item.getItemId()));
 			if(variation == null)
 			{
 				_log.info("EnchantVariation == null VariationId: " + enchantScroll.getVariationId(item.getItemId()));
 				return (int) baseRate;
 			}
-			
+
 			final EnchantLevel enchantLevel = variation.getLevel(player.getEnchantItem().getEnchantLevel() + 1);
-			if (player.getEnchantItem().getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+			if(player.getEnchantItem().getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
 				baseRate = enchantLevel.getFullBodyChance() * 100;
-			else if (player.getEnchantItem().getTemplate().isMagicWeapon())
+			else if(player.getEnchantItem().getTemplate().isMagicWeapon())
 				baseRate = enchantLevel.getMagicWeaponChance() * 100;
 			else
 				baseRate = enchantLevel.getBaseChance() * 100;
-			
+
 			if(player.getEnchantItem().isWeapon())
 			{
 				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) * 100.0;
-				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0* 100.0);
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0 * 100.0);
 			}
 			if(player.getEnchantItem().isArmor())
 			{
 				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) * 100.0;
-				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0* 100.0);
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0 * 100.0);
 			}
 
 		}
@@ -1174,29 +1059,29 @@ public final class ItemFunctions
 			}
 			if(item == null)
 				return (int) baseRate;
-			
+
 			ItemInstance scrolItem = player.getEnchantScroll();
 			if(scrolItem == null)
 				return (int) baseRate;
-			
+
 			final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(scrolItem.getItemId());
 			if(enchantScroll == null)
 			{
 				_log.info("EnchantScroll == null scrolItem: " + scrolItem.getItemId());
 				return (int) baseRate;
 			}
-			
+
 			final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId(item.getItemId()));
 			if(variation == null)
 			{
 				_log.info("EnchantVariation == null VariationId: " + enchantScroll.getVariationId(item.getItemId()));
 				return (int) baseRate;
 			}
-			
+
 			final EnchantLevel enchantLevel = variation.getLevel(item.getEnchantLevel() + 1);
-			if (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
+			if(item.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
 				baseRate = enchantLevel.getFullBodyChance() * 100;
-			else if (item.getTemplate().isMagicWeapon())
+			else if(item.getTemplate().isMagicWeapon())
 				baseRate = enchantLevel.getMagicWeaponChance() * 100;
 			else
 				baseRate = enchantLevel.getBaseChance() * 100;
@@ -1204,12 +1089,12 @@ public final class ItemFunctions
 			if(item.isWeapon())
 			{
 				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) * 100.0;
-				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0* 100.0);
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_WEAPON) - 1.0) * 100.0 * 100.0);
 			}
 			if(item.isArmor())
 			{
 				baseRate += player.getStat().getDiff(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) * 100.0;
-				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0* 100.0);
+				baseRate += ((player.getStat().getPer(Stats.ENCHANT_CHANCE_MODIFIER_ARMOR) - 1.0) * 100.0 * 100.0);
 			}
 
 		}

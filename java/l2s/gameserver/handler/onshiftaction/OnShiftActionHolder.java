@@ -31,10 +31,10 @@ public class OnShiftActionHolder extends AbstractHolder
 	public <T extends GameObject> boolean callShiftAction(Player player, Class<T> clazz, T obj, boolean select)
 	{
 		OnShiftActionHandler<T> l = (OnShiftActionHandler<T>) _handlers.get(clazz);
-		if (l == null)
+		if(l == null)
 			return false;
 
-		if (select && player.getTarget() != obj)
+		if(select && player.getTarget() != obj)
 		{
 			player.setTarget(obj);
 		}

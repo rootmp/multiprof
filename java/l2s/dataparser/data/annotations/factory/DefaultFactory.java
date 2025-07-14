@@ -27,17 +27,17 @@ public class DefaultFactory implements IObjectFactory<Object>
 		this.clazz = clazz;
 	}
 
-  @Override
-  public Object createObjectFor(StringBuilder data) throws IllegalAccessException, InstantiationException
-  {
-      try
-      {
-          Constructor<?> constructor = clazz.getDeclaredConstructor();
-          return constructor.newInstance();
-      }
-      catch (Exception e)
-      {
-          throw new IllegalAccessException("Error creating object for class " + clazz.getName() + ": " + e.getMessage());
-      }
-  }
+	@Override
+	public Object createObjectFor(StringBuilder data) throws IllegalAccessException, InstantiationException
+	{
+		try
+		{
+			Constructor<?> constructor = clazz.getDeclaredConstructor();
+			return constructor.newInstance();
+		}
+		catch(Exception e)
+		{
+			throw new IllegalAccessException("Error creating object for class " + clazz.getName() + ": " + e.getMessage());
+		}
+	}
 }

@@ -22,7 +22,7 @@ public class ExElementalSpiritExtractInfo implements IClientOutgoingPacket
 		_elementId = elementId;
 
 		Elemental elemental = player.getElementalList().get(elementId);
-		if (elemental != null)
+		if(elemental != null)
 		{
 			_extractItem = elemental.getLevelData().getExtractItem();
 			_exctractCost = elemental.getLevelData().getExtractCost();
@@ -40,14 +40,14 @@ public class ExElementalSpiritExtractInfo implements IClientOutgoingPacket
 		packetWriter.writeC(_elementId); // Value received from client (RequestExElementalSpiritExtractInfo)
 		packetWriter.writeC(0x01); // UNK
 		packetWriter.writeC(_exctractCost.size()); // Items Count
-		for (ItemData costItem : _exctractCost)
+		for(ItemData costItem : _exctractCost)
 		{
 			packetWriter.writeD(costItem.getId()); // Item ID
 			packetWriter.writeD((int) costItem.getCount()); // Item Count
 		}
 
 		// Result Item
-		if (_extractItem != null)
+		if(_extractItem != null)
 		{
 			packetWriter.writeD(_extractItem.getId()); // Item ID
 			packetWriter.writeD((int) _extractItem.getCount()); // Item Count

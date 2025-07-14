@@ -16,7 +16,7 @@ import l2s.gameserver.utils.ItemFunctions;
 public class Pvpbook
 {
 	public static final int EXPIRATION_DELAY = (int) TimeUnit.HOURS.toSeconds(Config.PVPBOOK_EXPIRATION_DELAY);
-	
+
 	public static final int MAX_LOCATION_SHOW_COUNT_PER_DAY = 5;
 	public static final int MAX_TELEPORT_COUNT_PER_DAY = 5;
 	public static final int MAX_TELEPORT_HELP_COUNT_PER_DAY = 1;
@@ -43,18 +43,18 @@ public class Pvpbook
 	{
 		PvpbookDAO.getInstance().store(owner);
 	}
-	
-  private String createKey(int killerObjectId, int shareType)
-  {
-      return killerObjectId + "_" + shareType;
-  }
-  
+
+	private String createKey(int killerObjectId, int shareType)
+	{
+		return killerObjectId + "_" + shareType;
+	}
+
 	public PvpbookInfo addInfo(Player killed, Player killer, int deathTime, int sharedTime, int locationShow, int teleportСount, int teleportHelpCount, int shareType, int request_for_help)
 	{
 		if(!isExpired(deathTime))
 		{
 			PvpbookInfo pvpbookInfo = new PvpbookInfo(this, killed, killer, deathTime, sharedTime, locationShow, teleportСount, teleportHelpCount, shareType, request_for_help);
-			infos.put(createKey(pvpbookInfo.getKillerObjectId(),shareType), pvpbookInfo);
+			infos.put(createKey(pvpbookInfo.getKillerObjectId(), shareType), pvpbookInfo);
 			return pvpbookInfo;
 		}
 		return null;
@@ -65,7 +65,7 @@ public class Pvpbook
 		if(!isExpired(deathTime))
 		{
 			PvpbookInfo pvpbookInfo = new PvpbookInfo(this, killedObjectId, killerObjectId, deathTime, killedName, killerName, killedLevel, killerLevel, killedClassId, killerClassId, killedClanName, killerClanName, karma, sharedTime, locationShow, teleportCount, teleportHelpCount, shareType, request_for_help);
-			infos.put(createKey(pvpbookInfo.getKillerObjectId(),shareType), pvpbookInfo);
+			infos.put(createKey(pvpbookInfo.getKillerObjectId(), shareType), pvpbookInfo);
 			return pvpbookInfo;
 		}
 		return null;
@@ -105,7 +105,8 @@ public class Pvpbook
 
 	public boolean reduceAdenaLocationShowCount(PvpbookInfo pvpbookInfo)
 	{
-		int adenaToDeduct = getPriceForViewCount(Config.PVPBOOK_ADENA_LOCATION_SHOW, MAX_LOCATION_SHOW_COUNT_PER_DAY - pvpbookInfo.getLocationShowCount());
+		int adenaToDeduct = getPriceForViewCount(Config.PVPBOOK_ADENA_LOCATION_SHOW, MAX_LOCATION_SHOW_COUNT_PER_DAY
+				- pvpbookInfo.getLocationShowCount());
 		if(adenaToDeduct > 0 && !owner.reduceAdena(adenaToDeduct, true))
 		{
 			owner.sendPacket(SystemMsg.NOT_ENOUGH_MONEY_TO_USE_THE_FUNCTION);
@@ -113,7 +114,6 @@ public class Pvpbook
 		}
 		return true;
 	}
-
 
 	public int getPriceForViewCount(Map<Integer, Integer> config, int viewCount)
 	{
@@ -130,9 +130,9 @@ public class Pvpbook
 
 	public boolean reduceLcoinTeleportCount(PvpbookInfo pvpbookInfo)
 	{
-		int lcoinToDeduct = getPriceForViewCount(Config.PVPBOOK_LCOIN_TELEPORT_COUNT,  MAX_TELEPORT_COUNT_PER_DAY - pvpbookInfo.getTeleportCount());
+		int lcoinToDeduct = getPriceForViewCount(Config.PVPBOOK_LCOIN_TELEPORT_COUNT, MAX_TELEPORT_COUNT_PER_DAY - pvpbookInfo.getTeleportCount());
 
-		if(lcoinToDeduct> 0)
+		if(lcoinToDeduct > 0)
 		{
 			if(!ItemFunctions.deleteItem(owner, 91663, lcoinToDeduct))
 			{

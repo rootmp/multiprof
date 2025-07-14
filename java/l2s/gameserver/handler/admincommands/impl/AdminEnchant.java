@@ -39,14 +39,12 @@ public class AdminEnchant implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
-		{
-			return false;
-		}
+		if(!activeChar.getPlayerAccess().CanEditChar)
+		{ return false; }
 
 		int armorType = -1;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_enchant:
 				showMainPage(activeChar);
@@ -110,7 +108,7 @@ public class AdminEnchant implements IAdminCommandHandler
 				break;
 		}
 
-		if ((armorType == -1) || (wordList.length < 2))
+		if((armorType == -1) || (wordList.length < 2))
 		{
 			showMainPage(activeChar);
 			return true;
@@ -119,7 +117,7 @@ public class AdminEnchant implements IAdminCommandHandler
 		try
 		{
 			int ench = Integer.parseInt(wordList[1]);
-			if ((ench < 0) || (ench > 65535))
+			if((ench < 0) || (ench > 65535))
 			{
 				activeChar.sendMessage("You must set the enchant level to be between 0-65535.");
 			}
@@ -128,11 +126,11 @@ public class AdminEnchant implements IAdminCommandHandler
 				setEnchant(activeChar, ench, armorType);
 			}
 		}
-		catch (StringIndexOutOfBoundsException e)
+		catch(StringIndexOutOfBoundsException e)
 		{
 			activeChar.sendMessage("Please specify a new enchant value.");
 		}
-		catch (NumberFormatException e)
+		catch(NumberFormatException e)
 		{
 			activeChar.sendMessage("Please specify a valid new enchant value.");
 		}
@@ -146,11 +144,11 @@ public class AdminEnchant implements IAdminCommandHandler
 	{
 		// get the target
 		GameObject target = activeChar.getTarget();
-		if (target == null)
+		if(target == null)
 		{
 			target = activeChar;
 		}
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 		{
 			activeChar.sendMessage("Wrong target type.");
 			return;
@@ -164,7 +162,7 @@ public class AdminEnchant implements IAdminCommandHandler
 		// only attempt to enchant if there is a weapon equipped
 		ItemInstance itemInstance = player.getInventory().getPaperdollItem(armorType);
 
-		if (itemInstance != null)
+		if(itemInstance != null)
 		{
 			curEnchant = itemInstance.getEnchantLevel();
 
@@ -176,7 +174,8 @@ public class AdminEnchant implements IAdminCommandHandler
 			player.broadcastCharInfo();
 
 			// informations
-			activeChar.sendMessage("Changed enchantment of " + player.getName() + "'s " + itemInstance.getName() + " from " + curEnchant + " to " + ench + ".");
+			activeChar.sendMessage("Changed enchantment of " + player.getName() + "'s " + itemInstance.getName() + " from " + curEnchant + " to " + ench
+					+ ".");
 			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getName() + " from " + curEnchant + " to " + ench + ".");
 		}
 	}
@@ -185,12 +184,12 @@ public class AdminEnchant implements IAdminCommandHandler
 	{
 		// get the target
 		GameObject target = activeChar.getTarget();
-		if (target == null)
+		if(target == null)
 		{
 			target = activeChar;
 		}
 		Player player = activeChar;
-		if (target.isPlayer())
+		if(target.isPlayer())
 		{
 			player = (Player) target;
 		}

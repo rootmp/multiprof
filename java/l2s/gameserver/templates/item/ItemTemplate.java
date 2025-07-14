@@ -58,18 +58,17 @@ public abstract class ItemTemplate extends StatTemplate
 	public static final int ITEM_ID_HERO_WING = 6842;
 	public static final int ITEM_ID_HERO_CLOAK = 30372;
 	public static final int ITEM_ID_FAME_CLOAK = 30373;
-	public static final int[] HERO_WEAPON_IDS =
-	{
-		6611,
-		6612,
-		6613,
-		6614,
-		6616,
-		6617,
-		6618,
-		6619,
-		6620,
-		6621
+	public static final int[] HERO_WEAPON_IDS = {
+			6611,
+			6612,
+			6613,
+			6614,
+			6616,
+			6617,
+			6618,
+			6619,
+			6620,
+			6621
 	};
 
 	// 1st Types
@@ -208,7 +207,7 @@ public abstract class ItemTemplate extends StatTemplate
 
 	private final AgathionTemplate _agathionTemplate;
 	private int[] _shape_shiftable;
-	
+
 	private boolean collection = false;
 
 	protected ItemTemplate(final StatsSet set)
@@ -239,10 +238,10 @@ public abstract class ItemTemplate extends StatTemplate
 
 		_variationGroupId = set.getInteger("variation_group_id", 0);
 
-		for (ItemFlags f : ItemFlags.VALUES)
+		for(ItemFlags f : ItemFlags.VALUES)
 		{
 			boolean flag = set.getBool(f.name().toLowerCase(), f.getDefaultValue());
-			if (flag)
+			if(flag)
 			{
 				activeFlag(f);
 			}
@@ -253,7 +252,7 @@ public abstract class ItemTemplate extends StatTemplate
 
 		_agathionTemplate = AgathionHolder.getInstance().getTemplateByItemId(_itemId);
 
-		if (!set.getBool("is_olympiad_can_use", true))
+		if(!set.getBool("is_olympiad_can_use", true))
 		{
 			Condition cond = new ConditionPlayerOlympiad(false);
 			cond.setSystemMsg(1508);
@@ -263,14 +262,14 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public void init()
 	{
-		if (isWeapon())
+		if(isWeapon())
 		{
 			attachFunc(FuncTemplate.makeTemplate(null, "Enchant", Stats.POWER_ATTACK, 0x0C, 0));
 			attachFunc(FuncTemplate.makeTemplate(null, "Enchant", Stats.MAGIC_ATTACK, 0x0C, 0));
 		}
-		else if (isArmor())
+		else if(isArmor())
 		{
-			if (_exType == ExItemType.SHIELD)
+			if(_exType == ExItemType.SHIELD)
 			{
 				attachFunc(FuncTemplate.makeTemplate(null, "Enchant", Stats.SHIELD_DEFENCE, 0x0C, 0));
 			}
@@ -280,7 +279,7 @@ public abstract class ItemTemplate extends StatTemplate
 			}
 			attachFunc(FuncTemplate.makeTemplate(null, "Enchant", Stats.MAX_HP, 0x80, 0));
 		}
-		else if (isAccessory())
+		else if(isAccessory())
 		{
 			attachFunc(FuncTemplate.makeTemplate(null, "Enchant", Stats.MAGIC_DEFENCE, 0x0C, 0));
 		}
@@ -356,10 +355,8 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public int getBaseAttributeValue(Element element)
 	{
-		if (element == Element.NONE)
-		{
-			return 0;
-		}
+		if(element == Element.NONE)
+		{ return 0; }
 		return _baseAttributes[element.getId()];
 	}
 
@@ -375,10 +372,8 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean isCrystallizable()
 	{
-		if (Config.DISABLE_CRYSTALIZATION_ITEMS)
-		{
-			return false;
-		}
+		if(Config.DISABLE_CRYSTALIZATION_ITEMS)
+		{ return false; }
 		return isDestroyable() && (getGrade() != ItemGrade.NONE) && (getCrystalCount() > 0);
 	}
 
@@ -445,7 +440,7 @@ public abstract class ItemTemplate extends StatTemplate
 	public void attachSkill(Skill skill)
 	{
 		IItemHandler handler = getHandler();
-		if (handler != null)
+		if(handler != null)
 		{
 			handler.attachSkill(this, skill);
 			return;
@@ -465,10 +460,8 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public SkillEntry getFirstSkill()
 	{
-		if (_skills.length > 0)
-		{
-			return _skills[0];
-		}
+		if(_skills.length > 0)
+		{ return _skills[0]; }
 		return null;
 	}
 
@@ -525,7 +518,8 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public final boolean isTerritoryAccessory()
 	{
-		return ((_itemId >= 13740) && (_itemId <= 13748)) || ((_itemId >= 14592) && (_itemId <= 14600)) || ((_itemId >= 14664) && (_itemId <= 14672)) || ((_itemId >= 14801) && (_itemId <= 14809)) || ((_itemId >= 15282) && (_itemId <= 15299));
+		return ((_itemId >= 13740) && (_itemId <= 13748)) || ((_itemId >= 14592) && (_itemId <= 14600)) || ((_itemId >= 14664) && (_itemId <= 14672))
+				|| ((_itemId >= 14801) && (_itemId <= 14809)) || ((_itemId >= 15282) && (_itemId <= 15299));
 	}
 
 	public final boolean isArrow()
@@ -663,26 +657,21 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean canBeAppearance()
 	{
-		if (isArmor())
+		if(isArmor())
 		{
-			if ((_exType != ExItemType.UPPER_PIECE) && (_exType != ExItemType.LOWER_PIECE) && (_exType != ExItemType.FULL_BODY) && (_exType != ExItemType.GLOVES) && (_exType != ExItemType.FEET) && (_exType != ExItemType.SHIELD) && (_exType != ExItemType.SIGIL))
-			{
-				return false;
-			}
+			if((_exType != ExItemType.UPPER_PIECE) && (_exType != ExItemType.LOWER_PIECE) && (_exType != ExItemType.FULL_BODY)
+					&& (_exType != ExItemType.GLOVES) && (_exType != ExItemType.FEET) && (_exType != ExItemType.SHIELD) && (_exType != ExItemType.SIGIL))
+			{ return false; }
 		}
-		else if (isAccessory())
+		else if(isAccessory())
 		{
-			if (_exType != ExItemType.HAIR_ACCESSORY)
-			{
-				return false;
-			}
+			if(_exType != ExItemType.HAIR_ACCESSORY)
+			{ return false; }
 		}
-		else if (isWeapon())
+		else if(isWeapon())
 		{
-			if (_exType == ExItemType.OTHER_WEAPON)
-			{
-				return false;
-			}
+			if(_exType == ExItemType.OTHER_WEAPON)
+			{ return false; }
 		}
 
 		return isAppearanceable();
@@ -701,7 +690,7 @@ public abstract class ItemTemplate extends StatTemplate
 	public void addEnchantSkill(int enchant, Skill skill)
 	{
 		List<SkillEntry> skills = _enchantSkills.get(enchant);
-		if (skills == null)
+		if(skills == null)
 		{
 			skills = new ArrayList<SkillEntry>();
 			_enchantSkills.put(enchant, skills);
@@ -711,17 +700,15 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean testCondition(Playable playable, ItemInstance instance, boolean sendMsg)
 	{
-		if (_conditions.isEmpty())
-		{
-			return true;
-		}
+		if(_conditions.isEmpty())
+		{ return true; }
 
 		SystemMsg msg = getHandler().checkCondition(playable, instance);
-		if (msg != null)
+		if(msg != null)
 		{
-			if (sendMsg && playable.isPlayer())
+			if(sendMsg && playable.isPlayer())
 			{
-				if (msg.size() > 0)
+				if(msg.size() > 0)
 				{
 					playable.sendPacket(new SystemMessagePacket(msg).addItemName(getItemId()));
 				}
@@ -737,13 +724,13 @@ public abstract class ItemTemplate extends StatTemplate
 		env.character = playable;
 		env.item = instance;
 
-		for (Condition condition : _conditions)
+		for(Condition condition : _conditions)
 		{
-			if (!condition.test(env))
+			if(!condition.test(env))
 			{
-				if (sendMsg && playable.isPlayer() && (condition.getSystemMsg() != null))
+				if(sendMsg && playable.isPlayer() && (condition.getSystemMsg() != null))
 				{
-					if (condition.getSystemMsg().size() > 0)
+					if(condition.getSystemMsg().size() > 0)
 					{
 						playable.sendPacket(new SystemMessagePacket(condition.getSystemMsg()).addItemName(getItemId()));
 					}
@@ -761,21 +748,17 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean isBlocked(Playable playable, ItemInstance instance)
 	{
-		if (_conditions.isEmpty())
-		{
-			return false;
-		}
+		if(_conditions.isEmpty())
+		{ return false; }
 
 		Env env = new Env();
 		env.character = playable;
 		env.item = instance;
 
-		for (Condition condition : _conditions)
+		for(Condition condition : _conditions)
 		{
-			if (!condition.test(env) && (condition.getSystemMsg() == null))
-			{
-				return true;
-			}
+			if(!condition.test(env) && (condition.getSystemMsg() == null))
+			{ return true; }
 		}
 		return false;
 	}
@@ -892,7 +875,7 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public void addEnchantOptions(int level, int[] options)
 	{
-		if (_enchantOptions.isEmpty())
+		if(_enchantOptions.isEmpty())
 		{
 			_enchantOptions = new HashIntObjectMap<int[]>();
 		}
@@ -968,29 +951,29 @@ public abstract class ItemTemplate extends StatTemplate
 	@Override
 	public void attachFunc(FuncTemplate f)
 	{
-		if (isForPet())
+		if(isForPet())
 		{
 			super.attachFunc(f);
 			return;
 		}
 
 		// Заглушка для базовых статтов;
-		if (isWeapon())
+		if(isWeapon())
 		{
-			if ((f._stat == Stats.POWER_ATTACK) && (f._func == FuncAdd.class) && (f._order == 0x10))
+			if((f._stat == Stats.POWER_ATTACK) && (f._func == FuncAdd.class) && (f._order == 0x10))
 			{
 				_pAtk = (int) f._value;
 				return;
 			}
-			if ((f._stat == Stats.MAGIC_ATTACK) && (f._func == FuncAdd.class) && (f._order == 0x10))
+			if((f._stat == Stats.MAGIC_ATTACK) && (f._func == FuncAdd.class) && (f._order == 0x10))
 			{
 				_mAtk = (int) f._value;
 				return;
 			}
 		}
-		else if (isArmor())
+		else if(isArmor())
 		{
-			switch (_exType)
+			switch(_exType)
 			{
 				case HELMET:
 				case UPPER_PIECE:
@@ -1000,7 +983,7 @@ public abstract class ItemTemplate extends StatTemplate
 				case FEET:
 				case PENDANT:
 				case CLOAK:
-					if ((f._stat == Stats.POWER_DEFENCE) && (f._func == FuncAdd.class) && (f._order == 0x10))
+					if((f._stat == Stats.POWER_DEFENCE) && (f._func == FuncAdd.class) && (f._order == 0x10))
 					{
 						_pDef = (int) f._value;
 						return;
@@ -1008,14 +991,14 @@ public abstract class ItemTemplate extends StatTemplate
 					break;
 			}
 		}
-		else if (isAccessory())
+		else if(isAccessory())
 		{
-			switch (_exType)
+			switch(_exType)
 			{
 				case RING:
 				case EARRING:
 				case NECKLACE:
-					if ((f._stat == Stats.MAGIC_DEFENCE) && (f._func == FuncAdd.class) && (f._order == 0x10))
+					if((f._stat == Stats.MAGIC_DEFENCE) && (f._func == FuncAdd.class) && (f._order == 0x10))
 					{
 						_mDef = (int) f._value;
 						return;
@@ -1048,52 +1031,38 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrlPressed, boolean force)
 	{
-		if ((playable == null) || (item == null) || (item.getTemplate() != this))
-		{
-			return false;
-		}
+		if((playable == null) || (item == null) || (item.getTemplate() != this))
+		{ return false; }
 
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 		{
-			if ((item.getLocation() != ItemLocation.INVENTORY) && (item.getLocation() != ItemLocation.PAPERDOLL))
-			{
-				return false;
-			}
+			if((item.getLocation() != ItemLocation.INVENTORY) && (item.getLocation() != ItemLocation.PAPERDOLL))
+			{ return false; }
 		}
 
 		Player player = playable.getPlayer();
 
-		if ((player == null) || (player.getObjectId() != item.getOwnerId()))
-		{
-			return false;
-		}
+		if((player == null) || (player.getObjectId() != item.getOwnerId()))
+		{ return false; }
 
 		IItemHandler handler = getHandler();
-		if (handler == null)
-		{
-			return false;
-		}
+		if(handler == null)
+		{ return false; }
 
-		if (force)
-		{
-			return handler.forceUseItem(playable, item, ctrlPressed);
-		}
+		if(force)
+		{ return handler.forceUseItem(playable, item, ctrlPressed); }
 
 		return handler.useItem(playable, item, ctrlPressed);
 	}
 
 	public boolean dropItem(Player player, ItemInstance item, long count, Location loc)
 	{
-		if ((player == null) || (item == null) || (count <= 0))
-		{
-			return false;
-		}
+		if((player == null) || (item == null) || (count <= 0))
+		{ return false; }
 
 		IItemHandler handler = getHandler();
-		if (handler == null)
-		{
-			return false;
-		}
+		if(handler == null)
+		{ return false; }
 
 		handler.dropItem(player, item, count, loc);
 		return true;
@@ -1128,14 +1097,15 @@ public abstract class ItemTemplate extends StatTemplate
 	{
 		System.out.println("getItemSubType not implemented yet.");
 		return WorldExchangeItemSubType.ACCESSORY;
-		    
+
 	}
 
 	public boolean canBeisAppearancePrototype()
 	{
 		if(isArmor())
 		{
-			if(_exType != ExItemType.UPPER_PIECE && _exType != ExItemType.LOWER_PIECE && _exType != ExItemType.FULL_BODY && _exType != ExItemType.GLOVES && _exType != ExItemType.FEET && _exType != ExItemType.SHIELD && _exType != ExItemType.SIGIL)
+			if(_exType != ExItemType.UPPER_PIECE && _exType != ExItemType.LOWER_PIECE && _exType != ExItemType.FULL_BODY && _exType != ExItemType.GLOVES
+					&& _exType != ExItemType.FEET && _exType != ExItemType.SHIELD && _exType != ExItemType.SIGIL)
 				return false;
 		}
 		else if(isAccessory())
@@ -1151,15 +1121,15 @@ public abstract class ItemTemplate extends StatTemplate
 
 		return isAppearancePrototype();
 	}
-	
+
 	public final boolean isAppearanceChangeAvailable()
 	{
-		return _shape_shiftable == null? false: _shape_shiftable[0]==1;
+		return _shape_shiftable == null ? false : _shape_shiftable[0] == 1;
 	}
 
 	public final boolean isAppearancePrototype()
 	{
-		return _shape_shiftable == null? false: _shape_shiftable[1]==1;
+		return _shape_shiftable == null ? false : _shape_shiftable[1] == 1;
 	}
-	
+
 }

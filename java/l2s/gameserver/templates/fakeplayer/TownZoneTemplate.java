@@ -37,10 +37,10 @@ public class TownZoneTemplate
 
 	public synchronized List<Zone> getZones()
 	{
-		if (zones == null)
+		if(zones == null)
 		{
 			zones = new ArrayList<>(_zoneTemplates.size());
-			for (ZoneTemplate zoneTemplate : _zoneTemplates)
+			for(ZoneTemplate zoneTemplate : _zoneTemplates)
 			{
 				Zone zone = new Zone(zoneTemplate);
 				zone.setReflection(ReflectionManager.MAIN);
@@ -60,7 +60,7 @@ public class TownZoneTemplate
 	public static TownZoneTemplate parse(Element element)
 	{
 		Element tempElement = element.element("zones");
-		if (tempElement == null)
+		if(tempElement == null)
 		{
 			_log.warn("Cannot find \"zones\" element!");
 			return null;
@@ -69,7 +69,7 @@ public class TownZoneTemplate
 		String name = element.attributeValue("name");
 
 		List<ZoneTemplate> zoneTemplates = new ArrayList<ZoneTemplate>();
-		for (Iterator<Element> i1 = tempElement.elementIterator("zone"); i1.hasNext();)
+		for(Iterator<Element> i1 = tempElement.elementIterator("zone"); i1.hasNext();)
 		{
 			Element e1 = i1.next();
 			try
@@ -77,7 +77,7 @@ public class TownZoneTemplate
 				ZoneTemplate zoneTemplate;
 
 				String zoneName = e1.attributeValue("name");
-				if (zoneName != null)
+				if(zoneName != null)
 					zoneTemplate = ZoneHolder.getInstance().getTemplate(zoneName);
 				else
 				{
@@ -87,24 +87,24 @@ public class TownZoneTemplate
 					zoneTemplate = ZoneParser.parseZone(e1, zoneDat);
 				}
 
-				if (zoneTemplate != null)
+				if(zoneTemplate != null)
 					zoneTemplates.add(zoneTemplate);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("Error while parse zone: ", e);
 				return null;
 			}
 		}
 
-		if (zoneTemplates.isEmpty())
+		if(zoneTemplates.isEmpty())
 		{
 			_log.warn("Zones is empty! Please add one or more zones for town zone.");
 			return null;
 		}
 
 		tempElement = element.element("actions");
-		if (tempElement == null)
+		if(tempElement == null)
 		{
 			_log.warn("Cannot find \"actions\" element!");
 			return null;
@@ -116,7 +116,7 @@ public class TownZoneTemplate
 
 		TownZoneTemplate template = new TownZoneTemplate(zoneTemplates, actions);
 
-		for (Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator("action"); iterator.hasNext();)
 		{
 			Element e = iterator.next();
 			int actionId = Integer.parseInt(e.attributeValue("id"));

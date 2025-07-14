@@ -340,7 +340,7 @@ public class EffectHandlerHolder extends AbstractHolder
 	public void registerHandler(Class<? extends EffectHandler> handlerClass)
 	{
 		String name = EffectHandler.getName(handlerClass);
-		if (_handlerConstructors.containsKey(name))
+		if(_handlerConstructors.containsKey(name))
 		{
 			warn("EffectHandlerHolder: Dublicate handler registered! Handler: CLASS[" + handlerClass.getSimpleName() + "], NAME[" + name + "]");
 			return;
@@ -348,12 +348,11 @@ public class EffectHandlerHolder extends AbstractHolder
 
 		try
 		{
-			_handlerConstructors.put(name, handlerClass.getConstructor(new Class<?>[]
-			{
-				EffectTemplate.class
+			_handlerConstructors.put(name, handlerClass.getConstructor(new Class<?>[] {
+					EffectTemplate.class
 			}));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("EffectHandlerHolder: Error while loading handler: " + e, e);
 		}
@@ -361,11 +360,11 @@ public class EffectHandlerHolder extends AbstractHolder
 
 	public EffectHandler makeHandler(String handlerName, EffectTemplate template)
 	{
-		if (StringUtils.isEmpty(handlerName))
+		if(StringUtils.isEmpty(handlerName))
 			return new EffectHandler(template);
 
 		Constructor<? extends EffectHandler> constructor = _handlerConstructors.get(handlerName.toLowerCase());
-		if (constructor == null)
+		if(constructor == null)
 		{
 			warn("EffectHandlerHolder: Not found handler: " + handlerName);
 			return new EffectHandler(template);
@@ -375,7 +374,7 @@ public class EffectHandlerHolder extends AbstractHolder
 		{
 			return (EffectHandler) constructor.newInstance(template);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			error("EffectHandlerHolder: Error while making handler: " + e, e);
 			return new EffectHandler(template);

@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
@@ -28,49 +29,49 @@ public class RequestAskJoinPartyRoom implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Player targetPlayer = World.getPlayer(_name);
 
-		if (targetPlayer == null || targetPlayer == player)
+		if(targetPlayer == null || targetPlayer == player)
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		if (player.isProcessingRequest())
+		if(player.isProcessingRequest())
 		{
 			player.sendPacket(SystemMsg.WAITING_FOR_ANOTHER_REPLY);
 			return;
 		}
 
-		if (targetPlayer.isProcessingRequest())
+		if(targetPlayer.isProcessingRequest())
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addName(targetPlayer));
 			return;
 		}
 
-		if (targetPlayer.isInTrainingCamp())
+		if(targetPlayer.isInTrainingCamp())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (targetPlayer.getMatchingRoom() != null)
+		if(targetPlayer.getMatchingRoom() != null)
 			return;
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
+		if(room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
 			return;
 
-		if (room.getPlayers().size() >= room.getMaxMembersSize())
+		if(room.getPlayers().size() >= room.getMaxMembersSize())
 		{
 			player.sendPacket(SystemMsg.THE_PARTY_ROOM_IS_FULL);
 			return;
 		}
 
-		if (player.isInFightClub() && !player.getFightClubEvent().canJoinParty(player, targetPlayer))
+		if(player.isInFightClub() && !player.getFightClubEvent().canJoinParty(player, targetPlayer))
 		{
 			player.sendMessage("You cannot do that on Fight Club!");
 			return;

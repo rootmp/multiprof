@@ -26,20 +26,21 @@ public class EffectNegateMark extends EffectHandler
 
 		byte markCount = 0;
 
-		for (Abnormal a : effected.getAbnormalList())
+		for(Abnormal a : effected.getAbnormalList())
 		{
 			int skillId = a.getSkill().getId();
-			if (skillId == MARK_OF_WEAKNESS || skillId == MARK_OF_PLAGUE || skillId == MARK_OF_TRICK)
+			if(skillId == MARK_OF_WEAKNESS || skillId == MARK_OF_PLAGUE || skillId == MARK_OF_TRICK)
 			{
 				markCount = (byte) (markCount + 1);
 				effected.getAbnormalList().stop(skillId);
 			}
 		}
 
-		if (markCount > 0)
+		if(markCount > 0)
 		{
 			AttackInfo info = Formulas.calcMagicDam(effector, effected, skill, getSkill().isSSPossible(), !getSkill().isDeathlink());
-			effected.reduceCurrentHp(info.damage * markCount, effector, skill, true, true, false, true, false, false, true, true, info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
+			effected.reduceCurrentHp(info.damage
+					* markCount, effector, skill, true, true, false, true, false, false, true, true, info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
 		}
 	}
 }

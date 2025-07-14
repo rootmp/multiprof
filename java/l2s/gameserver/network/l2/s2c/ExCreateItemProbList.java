@@ -11,14 +11,14 @@ public class ExCreateItemProbList implements IClientOutgoingPacket
 
 	public ExCreateItemProbList(CapsuleData capsule)
 	{
-		_capsule =capsule;
+		_capsule = capsule;
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_capsule.getItemId());
-		
+
 		packetWriter.writeD(_capsule.getCreateItems().size());
 		for(CreateItemInfo item : _capsule.getCreateItems())
 		{
@@ -27,7 +27,7 @@ public class ExCreateItemProbList implements IClientOutgoingPacket
 			packetWriter.writeQ(item.getItemCount());
 			packetWriter.writeQ(item.getProb());
 		}
-		
+
 		packetWriter.writeD(_capsule.getCreateRandomItems().size());
 		for(CreateItemInfo item : _capsule.getCreateRandomItems())
 		{
@@ -36,7 +36,7 @@ public class ExCreateItemProbList implements IClientOutgoingPacket
 			packetWriter.writeQ(item.getItemCount());
 			packetWriter.writeQ(item.getProb());
 		}
-		
+
 		packetWriter.writeD(_capsule.getCreateMultiItems().size());
 		for(CreateItemGroupInfo group : _capsule.getCreateMultiItems())
 		{
@@ -50,7 +50,7 @@ public class ExCreateItemProbList implements IClientOutgoingPacket
 				packetWriter.writeQ(item.getProb());
 			}
 		}
-		
+
 		return true;
 	}
 }

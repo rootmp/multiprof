@@ -17,7 +17,7 @@ public final class CollectionUtils
 	{
 		int hashCode = 1;
 		Iterator<E> i = collection.iterator();
-		while (i.hasNext())
+		while(i.hasNext())
 		{
 			E obj = i.next();
 			hashCode = 31 * hashCode + (obj == null ? 0 : obj.hashCode());

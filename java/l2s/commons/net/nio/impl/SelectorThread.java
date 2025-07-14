@@ -123,7 +123,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		// main loop
 		for(;;)
 			try
-		{
+			{
 
 				if(isShuttingDown())
 				{
@@ -142,14 +142,14 @@ public class SelectorThread<T extends MMOClient> extends Thread
 						closeConnectionImpl(con);
 						continue;
 					}
-					if (con.isPengingClose())
-						if (!con.isPendingWrite() || currentMillis - con.getPendingCloseTime() >= _sc.CLOSEWAIT_TIMEOUT)
+					if(con.isPengingClose())
+						if(!con.isPendingWrite() || currentMillis - con.getPendingCloseTime() >= _sc.CLOSEWAIT_TIMEOUT)
 						{
 							closeConnectionImpl(con);
 							continue;
 						}
-					if (con.isPendingWrite())
-						if (currentMillis - con.getPendingWriteTime() >= _sc.INTEREST_DELAY)
+					if(con.isPendingWrite())
+						if(currentMillis - con.getPendingWriteTime() >= _sc.INTEREST_DELAY)
 							con.enableWriteInterest();
 				}
 
@@ -167,7 +167,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 
 						if(key.isValid())
 							try
-						{
+							{
 								if(key.isAcceptable())
 								{
 									acceptConnection(key);
@@ -179,17 +179,16 @@ public class SelectorThread<T extends MMOClient> extends Thread
 									continue;
 								}
 
-
 								if(key.isReadable())
 									readPacket(key);
 								if(key.isValid())
 									if(key.isWritable())
 										writePacket(key);
-						}
-						catch(CancelledKeyException cke)
-						{
+							}
+							catch(CancelledKeyException cke)
+							{
 
-						}
+							}
 					}
 
 					//не делаем паузы, в случае если были какие-либо операции I/O
@@ -204,20 +203,20 @@ public class SelectorThread<T extends MMOClient> extends Thread
 				{
 
 				}
-		}
-		catch(IOException e)
-		{
-			_log.error("Error in " + getName(), e);
-
-			try
-			{
-				Thread.sleep(1000L);
 			}
-			catch(InterruptedException ie)
+			catch(IOException e)
 			{
+				_log.error("Error in " + getName(), e);
 
+				try
+				{
+					Thread.sleep(1000L);
+				}
+				catch(InterruptedException ie)
+				{
+
+				}
 			}
-		}
 	}
 
 	@SuppressWarnings("unchecked")
@@ -270,7 +269,9 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		}
 	}
 
-	@SuppressWarnings({ "unchecked", "unused" })
+	@SuppressWarnings({
+			"unchecked", "unused"
+	})
 	protected void readPacket(SelectionKey key)
 	{
 		MMOConnection<T> con = (MMOConnection<T>) key.attachment();
@@ -288,7 +289,8 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		// going into infinite loop
 		if(buf.position() == buf.limit())
 		{
-			_log.error("Read buffer exhausted for client : " + con.getClient() + ", try to adjust buffer size, current : " + buf.capacity() + ", primary : " + (buf == READ_BUFFER) + ". Closing connection.");
+			_log.error("Read buffer exhausted for client : " + con.getClient() + ", try to adjust buffer size, current : " + buf.capacity() + ", primary : "
+					+ (buf == READ_BUFFER) + ". Closing connection.");
 			closeConnectionImpl(con);
 		}
 		else
@@ -374,7 +376,8 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		}
 
 		if(pos == buf.capacity())
-			_log.warn("Read buffer exhausted for client : " + con.getClient() + ", try to adjust buffer size, current : " + buf.capacity() + ", primary : " + (buf == READ_BUFFER) + ".");
+			_log.warn("Read buffer exhausted for client : " + con.getClient() + ", try to adjust buffer size, current : " + buf.capacity() + ", primary : "
+					+ (buf == READ_BUFFER) + ".");
 
 		// не хватает данных, переносим содержимое первичного буфера во вторичный
 		if(buf == READ_BUFFER)
@@ -510,7 +513,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 					if(DIRECT_WRITE_BUFFER.remaining() >= WRITE_BUFFER.limit())
 						DIRECT_WRITE_BUFFER.put(WRITE_BUFFER);
 					else
-						// если не осталось места в DIRECT_WRITE_BUFFER для WRITE_BUFFER то мы его запишев в следующий раз
+					// если не осталось места в DIRECT_WRITE_BUFFER для WRITE_BUFFER то мы его запишев в следующий раз
 					{
 						con.createWriteBuffer(WRITE_BUFFER);
 						break;
@@ -648,13 +651,13 @@ public class SelectorThread<T extends MMOClient> extends Thread
 		Set<SelectionKey> keys = getSelector().keys();
 		for(SelectionKey key : keys)
 			try
-		{
+			{
 				key.channel().close();
-		}
-		catch(IOException e)
-		{
-			// ignore
-		}
+			}
+			catch(IOException e)
+			{
+				// ignore
+			}
 	}
 
 	protected void closeSelectorThread()

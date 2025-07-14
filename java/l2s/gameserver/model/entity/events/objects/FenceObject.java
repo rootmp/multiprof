@@ -30,13 +30,14 @@ public class FenceObject implements SpawnableObject, InitableObject, OpenableObj
 	@Override
 	public void initObject(Event e)
 	{
-		_fence = FenceUtils.initFence("Event Fence: " + e.getName() + " " + hashCode(), _loc.getX(), _loc.getY(), _loc.getZ(), _width, _length, _height, FenceState.HIDDEN);
+		_fence = FenceUtils.initFence("Event Fence: " + e.getName() + " "
+				+ hashCode(), _loc.getX(), _loc.getY(), _loc.getZ(), _width, _length, _height, FenceState.HIDDEN);
 	}
 
 	@Override
 	public void spawnObject(Event event, Reflection reflection)
 	{
-		if (!event.isInProgress())
+		if(!event.isInProgress())
 			_fence.removeEvent(event);
 		else
 			_fence.addEvent(event);
@@ -62,7 +63,7 @@ public class FenceObject implements SpawnableObject, InitableObject, OpenableObj
 	@Override
 	public void refreshObject(Event event, Reflection reflection)
 	{
-		if (!event.isInProgress())
+		if(!event.isInProgress())
 			_fence.removeEvent(event);
 		else
 			_fence.addEvent(event);

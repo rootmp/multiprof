@@ -1,11 +1,10 @@
 package l2s.gameserver.data.xml.holder;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.base.Sex;
 import l2s.gameserver.templates.player.transform.TransformTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -18,7 +17,7 @@ public final class TransformTemplateHolder extends AbstractHolder
 
 	public TransformTemplateHolder()
 	{
-		for (Sex sex : Sex.VALUES)
+		for(Sex sex : Sex.VALUES)
 			_templates.put(sex.ordinal(), new TIntObjectHashMap<TransformTemplate>());
 	}
 
@@ -41,7 +40,7 @@ public final class TransformTemplateHolder extends AbstractHolder
 	public int size()
 	{
 		int size = 0;
-		for (Sex sex : Sex.VALUES)
+		for(Sex sex : Sex.VALUES)
 			size += _templates.get(sex.ordinal()).size();
 		return size;
 	}

@@ -29,17 +29,15 @@ public class SummonAnswerListener implements OnAnswerListener
 	public void sayYes()
 	{
 		Player player = _playerRef.get();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
 		player.abortAttack(true, true);
 		player.abortCast(true, true);
 		player.getMovement().stopMove();
-		if (_count > 0)
+		if(_count > 0)
 		{
-			if (player.getInventory().destroyItemByItemId(8615, _count))
+			if(player.getInventory().destroyItemByItemId(8615, _count))
 			{
 				player.sendPacket(SystemMessagePacket.removeItems(8615, _count));
 				player.teleToLocation(_location, ReflectionManager.MAIN);

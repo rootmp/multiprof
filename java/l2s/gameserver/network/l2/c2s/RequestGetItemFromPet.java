@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,41 +34,41 @@ public class RequestGetItemFromPet implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _amount < 1)
+		if(activeChar == null || _amount < 1)
 			return;
 
 		PetInstance pet = activeChar.getPet();
-		if (pet == null)
+		if(pet == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMsg.WHILE_OPERATING_A_PRIVATE_STORE_OR_WORKSHOP_YOU_CANNOT_DISCARD_DESTROY_OR_TRADE_AN_ITEM);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
@@ -77,7 +78,7 @@ public class RequestGetItemFromPet implements IClientIncomingPacket
 		PcInventory playerInventory = activeChar.getInventory();
 
 		ItemInstance item = petInventory.getItemByObjectId(_objectId);
-		if (item == null || item.getCount() < _amount || item.isEquipped())
+		if(item == null || item.getCount() < _amount || item.isEquipped())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -85,16 +86,16 @@ public class RequestGetItemFromPet implements IClientIncomingPacket
 
 		int slots = 0;
 		long weight = item.getTemplate().getWeight() * _amount;
-		if (!item.getTemplate().isStackable() || activeChar.getInventory().getItemByItemId(item.getItemId()) == null)
+		if(!item.getTemplate().isStackable() || activeChar.getInventory().getItemByItemId(item.getItemId()) == null)
 			slots = 1;
 
-		if (!activeChar.getInventory().validateWeight(weight))
+		if(!activeChar.getInventory().validateWeight(weight))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_WEIGHT_LIMIT);
 			return;
 		}
 
-		if (!activeChar.getInventory().validateCapacity(slots))
+		if(!activeChar.getInventory().validateCapacity(slots))
 		{
 			activeChar.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL);
 			return;

@@ -21,7 +21,6 @@ import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.model.items.ItemInstance;
 import l2s.gameserver.model.mail.Mail;
-
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
@@ -59,8 +58,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	private AtomicLong delete = new AtomicLong();
 
 	private final Cache cache;
-	private final JdbcEntityStats stats = new JdbcEntityStats()
-	{
+	private final JdbcEntityStats stats = new JdbcEntityStats(){
 		@Override
 		public long getLoadCount()
 		{
@@ -132,13 +130,13 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 			mail.setMessageId(rset.getInt(1));
 
-			if (!mail.getAttachments().isEmpty())
+			if(!mail.getAttachments().isEmpty())
 			{
 				DbUtils.close(statement);
 
 				statement = con.prepareStatement(STORE_MAIL_ATTACHMENT);
 
-				for (final ItemInstance localItemInstance : mail.getAttachments())
+				for(final ItemInstance localItemInstance : mail.getAttachments())
 				{
 					statement.setInt(1, mail.getMessageId());
 					statement.setInt(2, localItemInstance.getObjectId());
@@ -150,7 +148,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 			DbUtils.close(statement);
 
-			if (mail.getType() == Mail.SenderType.NORMAL)
+			if(mail.getType() == Mail.SenderType.NORMAL)
 			{
 				statement = con.prepareStatement(STORE_OWN_MAIL);
 				statement.setInt(1, mail.getSenderId());
@@ -187,7 +185,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement = con.prepareStatement(RESTORE_MAIL);
 			statement.setInt(1, messageId);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				mail = new Mail();
 				mail.setMessageId(messageId);
@@ -214,11 +212,11 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 				ItemInstance item;
 				int objectId;
-				while (rset.next())
+				while(rset.next())
 				{
 					objectId = rset.getInt(1);
 					item = ItemsDAO.getInstance().load(objectId);
-					if (item != null)
+					if(item != null)
 						mail.addAttachment(item);
 				}
 			}
@@ -258,7 +256,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement.setInt(15, mail.getMessageId());
 			statement.execute();
 
-			if (mail.getAttachments().isEmpty())
+			if(mail.getAttachments().isEmpty())
 			{
 				DbUtils.close(statement);
 
@@ -285,7 +283,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement = con.prepareStatement(REMOVE_MAIL);
 			statement.setInt(1, mail.getMessageId());
 			statement.execute();
-			if (mail.getAttachments().isEmpty())
+			if(mail.getAttachments().isEmpty())
 			{
 				DbUtils.close(statement);
 
@@ -323,10 +321,10 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement.setBoolean(2, sent);
 			rset = statement.executeQuery();
 			messageIds = new ArrayList<Integer>();
-			while (rset.next())
+			while(rset.next())
 				messageIds.add(rset.getInt(1));
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while restore mail of owner : " + ownerId, e);
 			messageIds.clear();
@@ -352,7 +350,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement.setBoolean(3, sent);
 			return statement.execute();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while deleting mail of owner : " + ownerId, e);
 			return false;
@@ -377,8 +375,8 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	{
 		List<Mail> list = getMailByOwnerId(receiverId, false);
 
-		for (Mail mail : list)
-			if (mail.getMessageId() == messageId)
+		for(Mail mail : list)
+			if(mail.getMessageId() == messageId)
 				return mail;
 
 		return null;
@@ -388,8 +386,8 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	{
 		List<Mail> list = getMailByOwnerId(senderId, true);
 
-		for (Mail mail : list)
-			if (mail.getMessageId() == messageId)
+		for(Mail mail : list)
+			if(mail.getMessageId() == messageId)
 				return mail;
 
 		return null;
@@ -419,10 +417,10 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			statement.setInt(1, expireTime);
 			rset = statement.executeQuery();
 			messageIds = new ArrayList<Integer>();
-			while (rset.next())
+			while(rset.next())
 				messageIds.add(rset.getInt(1));
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while restore expired mail!", e);
 			messageIds.clear();
@@ -441,7 +439,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 		Mail mail;
 
 		Element ce = cache.get(id);
-		if (ce != null)
+		if(ce != null)
 		{
 			mail = (Mail) ce.getObjectValue();
 			return mail;
@@ -451,13 +449,13 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 		{
 			mail = load0(id);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while restoring mail : " + id, e);
 			return null;
 		}
 
-		if (mail == null)
+		if(mail == null)
 			return null;
 
 		mail.setJdbcState(JdbcEntityState.STORED);
@@ -469,16 +467,16 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 	public List<Mail> load(Collection<Integer> messageIds)
 	{
-		if (messageIds.isEmpty())
+		if(messageIds.isEmpty())
 			return Collections.emptyList();
 
 		List<Mail> list = new ArrayList<Mail>(messageIds.size());
 
 		Mail mail;
-		for (Integer messageId : messageIds)
+		for(Integer messageId : messageIds)
 		{
 			mail = load(messageId);
-			if (mail != null)
+			if(mail != null)
 				list.add(mail);
 		}
 
@@ -488,7 +486,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	@Override
 	public void save(Mail mail)
 	{
-		if (!mail.getJdbcState().isSavable())
+		if(!mail.getJdbcState().isSavable())
 			return;
 
 		try
@@ -496,7 +494,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			save0(mail);
 			mail.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while saving mail!", e);
 			return;
@@ -508,7 +506,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	@Override
 	public void update(Mail mail)
 	{
-		if (!mail.getJdbcState().isUpdatable())
+		if(!mail.getJdbcState().isUpdatable())
 			return;
 
 		try
@@ -516,7 +514,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			update0(mail);
 			mail.setJdbcState(JdbcEntityState.STORED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while updating mail : " + mail.getMessageId(), e);
 			return;
@@ -528,16 +526,16 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 	@Override
 	public void saveOrUpdate(Mail mail)
 	{
-		if (mail.getJdbcState().isSavable())
+		if(mail.getJdbcState().isSavable())
 			save(mail);
-		else if (mail.getJdbcState().isUpdatable())
+		else if(mail.getJdbcState().isUpdatable())
 			update(mail);
 	}
 
 	@Override
 	public void delete(Mail mail)
 	{
-		if (!mail.getJdbcState().isDeletable())
+		if(!mail.getJdbcState().isDeletable())
 			return;
 
 		try
@@ -545,7 +543,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 			delete0(mail);
 			mail.setJdbcState(JdbcEntityState.DELETED);
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.error("Error while deleting mail : " + mail.getMessageId(), e);
 			return;

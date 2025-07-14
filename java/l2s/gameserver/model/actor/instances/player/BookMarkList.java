@@ -25,21 +25,19 @@ import l2s.gameserver.utils.ItemFunctions;
 public class BookMarkList
 {
 	private static final int TELEPORT_FLAG_ID = 20033;
-	private static final int[] TELEPORT_SCROLLS =
-	{
-		91838,
-		90405,
-		13016
+	private static final int[] TELEPORT_SCROLLS = {
+			91838,
+			90405,
+			13016
 	};
 
-	public static final ZoneType[] FORBIDDEN_ZONES = new ZoneType[]
-	{
-		ZoneType.RESIDENCE,
-		ZoneType.ssq_zone,
-		ZoneType.battle_zone,
-		ZoneType.SIEGE,
-		ZoneType.no_restart,
-		ZoneType.no_summon,
+	public static final ZoneType[] FORBIDDEN_ZONES = new ZoneType[] {
+			ZoneType.RESIDENCE,
+			ZoneType.ssq_zone,
+			ZoneType.battle_zone,
+			ZoneType.SIEGE,
+			ZoneType.no_restart,
+			ZoneType.no_summon,
 	};
 
 	private static final Logger _log = LoggerFactory.getLogger(BookMarkList.class);
@@ -84,35 +82,35 @@ public class BookMarkList
 
 	public synchronized boolean add(BookMark e)
 	{
-		if (elementData.size() >= getCapacity())
+		if(elementData.size() >= getCapacity())
 			return false;
 		return elementData.add(e);
 	}
 
 	public BookMark get(int slot)
 	{
-		if (slot < 1 || slot > elementData.size())
+		if(slot < 1 || slot > elementData.size())
 			return null;
 		return elementData.get(slot - 1);
 	}
 
 	public void remove(int slot)
 	{
-		if (slot < 1 || slot > elementData.size())
+		if(slot < 1 || slot > elementData.size())
 			return;
 		elementData.remove(slot - 1);
 	}
 
 	public boolean tryTeleport(int slot)
 	{
-		if (!checkFirstConditions(owner) || !checkTeleportConditions(owner))
+		if(!checkFirstConditions(owner) || !checkTeleportConditions(owner))
 			return false;
 
-		if (slot < 1 || slot > elementData.size())
+		if(slot < 1 || slot > elementData.size())
 			return false;
 
 		BookMark bookmark = elementData.get(slot - 1);
-		if (!checkTeleportLocation(owner, bookmark.x, bookmark.y, bookmark.z))
+		if(!checkTeleportLocation(owner, bookmark.x, bookmark.y, bookmark.z))
 		{
 			owner.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_IN_THIS_AREA);
 			return false;
@@ -121,17 +119,17 @@ public class BookMarkList
 		TeleportTemplate template = new TeleportTemplate(-1, 0, 0);
 		template.addLocation(new Location(bookmark.x, bookmark.y, bookmark.z));
 		owner.bookmarkLocation = template;
-		
+
 		SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, 2588, 1);
-		if (!skillEntry.checkCondition(owner, owner, false, true, true))
+		if(!skillEntry.checkCondition(owner, owner, false, true, true))
 		{
 			owner.bookmarkLocation = null;
 			return false;
 		}
 
-		for (int item_id : TELEPORT_SCROLLS)
+		for(int item_id : TELEPORT_SCROLLS)
 		{
-			if (ItemFunctions.deleteItem(owner, item_id, 1))
+			if(ItemFunctions.deleteItem(owner, item_id, 1))
 			{
 				owner.getAI().Cast(skillEntry, owner, false, true);
 				return true;
@@ -154,17 +152,17 @@ public class BookMarkList
 
 	public boolean add(Location loc, String aname, String aacronym, int aiconId, boolean takeFlag)
 	{
-		if (!checkFirstConditions(owner) || !checkTeleportLocation(owner, loc))
+		if(!checkFirstConditions(owner) || !checkTeleportLocation(owner, loc))
 			return false;
 
-		if (elementData.size() >= getCapacity())
+		if(elementData.size() >= getCapacity())
 		{
 			owner.sendPacket(SystemMsg.YOU_HAVE_NO_SPACE_TO_SAVE_THE_TELEPORT_LOCATION);
 			return false;
 		}
 
-		if (takeFlag)
-			if (!ItemFunctions.deleteItem(owner, TELEPORT_FLAG_ID, 1))
+		if(takeFlag)
+			if(!ItemFunctions.deleteItem(owner, TELEPORT_FLAG_ID, 1))
 			{
 				owner.sendPacket(SystemMsg.YOU_CANNOT_BOOKMARK_THIS_LOCATION_BECAUSE_YOU_DO_NOT_HAVE_A_MY_TELEPORT_FLAG);
 				return false;
@@ -189,7 +187,7 @@ public class BookMarkList
 			DbUtils.close(statement);
 			statement = con.prepareStatement("INSERT INTO `character_bookmarks` VALUES(?,?,?,?,?,?,?,?);");
 			int slotId = 0;
-			for (BookMark bookmark : elementData)
+			for(BookMark bookmark : elementData)
 			{
 				statement.setInt(1, owner.getObjectId());
 				statement.setInt(2, ++slotId);
@@ -202,7 +200,7 @@ public class BookMarkList
 				statement.execute();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -214,7 +212,7 @@ public class BookMarkList
 
 	public synchronized void restore()
 	{
-		if (getCapacity() == 0)
+		if(getCapacity() == 0)
 		{
 			elementData.clear();
 			return;
@@ -227,12 +225,13 @@ public class BookMarkList
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
-			rs = statement.executeQuery("SELECT * FROM `character_bookmarks` WHERE `char_Id`=" + owner.getObjectId() + " ORDER BY `idx` LIMIT " + getCapacity());
+			rs = statement.executeQuery("SELECT * FROM `character_bookmarks` WHERE `char_Id`=" + owner.getObjectId() + " ORDER BY `idx` LIMIT "
+					+ getCapacity());
 			elementData.clear();
-			while (rs.next())
+			while(rs.next())
 				add(new BookMark(rs.getInt("x"), rs.getInt("y"), rs.getInt("z"), rs.getInt("icon"), rs.getString("name"), rs.getString("acronym")));
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("Could not restore " + owner + " bookmarks!", e);
 		}
@@ -244,30 +243,30 @@ public class BookMarkList
 
 	public static boolean checkFirstConditions(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (player.getActiveWeaponFlagAttachment() != null)
+		if(player.getActiveWeaponFlagAttachment() != null)
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_TELEPORT_WHILE_IN_POSSESSION_OF_A_WARD);
 			return false;
 		}
-		if (player.isInOlympiadMode())
+		if(player.isInOlympiadMode())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_WHILE_PARTICIPATING_IN_AN_OLYMPIAD_MATCH);
 			return false;
 		}
-		if (!player.getReflection().isMain())
+		if(!player.getReflection().isMain())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_IN_AN_INSTANT_ZONE);
 			return false;
 		}
-		if (player.isInDuel())
+		if(player.isInDuel())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_DURING_A_DUEL);
 			return false;
 		}
-		if (player.isFlying())
+		if(player.isFlying())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_WHILE_FLYING);
 			return false;
@@ -278,26 +277,26 @@ public class BookMarkList
 
 	public static boolean checkTeleportConditions(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (player.isAlikeDead())
+		if(player.isAlikeDead())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_WHILE_YOU_ARE_DEAD);
 			return false;
 		}
-		if (player.isInStoreMode() || player.isInTrade())
+		if(player.isInStoreMode() || player.isInTrade())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_SUMMON_DURING_A_TRADE_OR_WHILE_USING_A_PRIVATE_STORE);
 			return false;
 		}
-		if (player.isInBoat() || player.isDecontrolled() || player.isStunned() || player.isSleeping())
+		if(player.isInBoat() || player.isDecontrolled() || player.isStunned() || player.isSleeping())
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_WHILE_YOU_ARE_IN_A_PETRIFIED_OR_PARALYZED_STATE);
 			return false;
 		}
 
-		if (player.isEscapeBlocked())
+		if(player.isEscapeBlocked())
 		{
 			// TODO: system message
 			return false;
@@ -313,13 +312,13 @@ public class BookMarkList
 
 	public static boolean checkTeleportLocation(Player player, int x, int y, int z)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 
-		for (ZoneType zoneType : FORBIDDEN_ZONES)
+		for(ZoneType zoneType : FORBIDDEN_ZONES)
 		{
 			Zone zone = player.getZone(zoneType);
-			if (zone != null)
+			if(zone != null)
 			{
 				player.sendPacket(SystemMsg.YOU_CANNOT_USE_MY_TELEPORTS_TO_REACH_THIS_AREA);
 				return false;

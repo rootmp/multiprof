@@ -22,24 +22,24 @@ public final class EffectMoveToEffector extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isFearImmune()) // TODO: Пересмотреть.
+		if(effected.isFearImmune()) // TODO: Пересмотреть.
 			return false;
 
 		// Нельзя наложить на осадных саммонов
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
-			if (effected.isSummon())
+			if(effected.isSummon())
 			{
-				for (SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
 				{
-					if (siegeEvent.containsSiegeSummon((SummonInstance) effected))
+					if(siegeEvent.containsSiegeSummon((SummonInstance) effected))
 						return false;
 				}
 			}
 		}
 
-		if (effected.isInPeaceZone())
+		if(effected.isInPeaceZone())
 			return false;
 
 		return true;
@@ -48,7 +48,7 @@ public final class EffectMoveToEffector extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getAfraid().start(this)) // TODO: Пересмотреть.
+		if(effected.getFlags().getAfraid().start(this)) // TODO: Пересмотреть.
 		{
 			effected.abortAttack(true, true);
 			effected.abortCast(true, true);

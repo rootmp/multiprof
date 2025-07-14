@@ -7,13 +7,12 @@ import java.sql.ResultSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Spectating;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author nexvill
@@ -41,10 +40,10 @@ public class CharacterSpectatingListDAO
 			statement = con.prepareStatement("SELECT s.target_Id, s.char_name, cs.class_id, cs.level FROM character_spectatinglist s LEFT JOIN characters c ON s.target_Id = c.obj_Id LEFT JOIN character_subclasses cs ON (s.target_id = cs.char_obj_id AND cs.active = 1) WHERE s.obj_Id = ?");
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				String name = rset.getString("s.char_name");
-				if (name == null)
+				if(name == null)
 					continue;
 
 				int objectId = rset.getInt("s.target_Id");
@@ -54,7 +53,7 @@ public class CharacterSpectatingListDAO
 				map.put(objectId, new Spectating(objectId, name, classId, level));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterSpectatingListDAO.select(L2Player): " + e, e);
 		}
@@ -78,7 +77,7 @@ public class CharacterSpectatingListDAO
 			statement.setString(3, name);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getSpectatingList() + " could not add player to spectating list objectid: " + objId, e);
 		}
@@ -100,7 +99,7 @@ public class CharacterSpectatingListDAO
 			statement.setInt(2, spectatingObjectId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getSpectatingList() + " could not delete spectating objectId: " + spectatingObjectId + " ownerId: " + owner.getObjectId(), e);
 		}
@@ -122,7 +121,7 @@ public class CharacterSpectatingListDAO
 			statement = con.prepareStatement("SELECT cs.char_obj_id, cs.class_id, cs.level FROM character_subclasses cs LEFT JOIN CHARACTERS c ON cs.char_obj_id = c.obj_Id WHERE c.char_name = ?");
 			statement.setString(1, name);
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				int objId = rset.getInt("cs.char_obj_id");
 				int classId = rset.getInt("cs.class_id");
@@ -130,7 +129,7 @@ public class CharacterSpectatingListDAO
 				result.put(objId, new Spectating(objId, name, classId, level));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterSpectatingListDAO.getCharDataByName(String): " + e, e);
 		}

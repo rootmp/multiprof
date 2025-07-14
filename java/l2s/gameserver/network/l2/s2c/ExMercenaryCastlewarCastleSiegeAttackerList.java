@@ -24,7 +24,7 @@ public class ExMercenaryCastlewarCastleSiegeAttackerList implements IClientOutgo
 		_id = castle.getId();
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
-		if (siegeEvent != null)
+		if(siegeEvent != null)
 		{
 			_registrationValid = !siegeEvent.isRegistrationOver();
 			_clans = siegeEvent.getObjects(SiegeEvent.ATTACKERS);
@@ -46,7 +46,7 @@ public class ExMercenaryCastlewarCastleSiegeAttackerList implements IClientOutgo
 		packetWriter.writeD(0x00); // Page number
 		packetWriter.writeD(_clans.size());
 		packetWriter.writeD(_clans.size());
-		for (SiegeClanObject siegeClan : _clans)
+		for(SiegeClanObject siegeClan : _clans)
 		{
 			Clan clan = siegeClan.getClan();
 			packetWriter.writeD(clan.getClanId());
@@ -59,7 +59,7 @@ public class ExMercenaryCastlewarCastleSiegeAttackerList implements IClientOutgo
 			packetWriter.writeD(0x00); // Mercenaries count
 
 			Alliance alliance = clan.getAlliance();
-			if (alliance != null)
+			if(alliance != null)
 			{
 				packetWriter.writeD(alliance.getAllyId());
 				packetWriter.writeS(alliance.getAllyName());

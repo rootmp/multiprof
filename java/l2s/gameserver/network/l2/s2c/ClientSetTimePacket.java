@@ -12,7 +12,7 @@ public class ClientSetTimePacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(GameTimeController.getInstance().getGameTime()); // time in client minutes
 		packetWriter.writeD(GameTimeController.DAY_START_HOUR); // Constant to match the server time. This determines
-																// the speed of the client clock.
+		// the speed of the client clock.
 		return true;
 	}
 }

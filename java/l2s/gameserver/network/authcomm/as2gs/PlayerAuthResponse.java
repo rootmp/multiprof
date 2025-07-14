@@ -42,7 +42,7 @@ public class PlayerAuthResponse extends ReceivablePacket
 	{
 		account = readS();
 		authed = readC() == 1;
-		if (authed)
+		if(authed)
 		{
 			playOkId1 = readD();
 			playOkId2 = readD();
@@ -52,7 +52,7 @@ public class PlayerAuthResponse extends ReceivablePacket
 			bonusExpire = readD();
 			points = readD();
 			hwid = readS();
-			if (getByteBuffer().hasRemaining())
+			if(getByteBuffer().hasRemaining())
 				phoneNumber = readQ();
 		}
 		return true;
@@ -63,15 +63,15 @@ public class PlayerAuthResponse extends ReceivablePacket
 	{
 		SessionKey skey = new SessionKey(loginOkId1, loginOkId2, playOkId1, playOkId2);
 		GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(account);
-		if (client == null)
+		if(client == null)
 			return;
 
-		if (!StringUtils.isEmpty(hwid))
+		if(!StringUtils.isEmpty(hwid))
 		{
 			String clientHwid = client.getHWID();
-			if (!StringUtils.isEmpty(clientHwid))
+			if(!StringUtils.isEmpty(clientHwid))
 			{ // HWID клиенту не установлен, защита не включена?? игнорируем привязку
-				if (!hwid.equalsIgnoreCase(clientHwid))
+				if(!hwid.equalsIgnoreCase(clientHwid))
 				{
 					client.close(LoginResultPacket.ACCESS_FAILED_TRY_LATER);
 					return;
@@ -79,42 +79,42 @@ public class PlayerAuthResponse extends ReceivablePacket
 			}
 		}
 
-		if (authed && client.getSessionKey().equals(skey))
+		if(authed && client.getSessionKey().equals(skey))
 		{
-			if (Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_IP > 0 && AuthServerCommunication.getInstance().getAuthedClient(account) == null)
+			if(Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_IP > 0 && AuthServerCommunication.getInstance().getAuthedClient(account) == null)
 			{
 				boolean ignored = false;
-				for (String ignoredIP : Config.MAX_ACTIVE_ACCOUNTS_IGNORED_IP)
+				for(String ignoredIP : Config.MAX_ACTIVE_ACCOUNTS_IGNORED_IP)
 				{
-					if (ignoredIP.equalsIgnoreCase(client.getIpAddr()))
+					if(ignoredIP.equalsIgnoreCase(client.getIpAddr()))
 					{
 						ignored = true;
 						break;
 					}
 				}
 
-				if (!ignored)
+				if(!ignored)
 				{
 					int limit = Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_IP;
 
 					int[] limits = HardwareLimitsDAO.getInstance().select(client.getIpAddr());
-					if (limits[1] == -1 || limits[1] > (System.currentTimeMillis() / 1000))
+					if(limits[1] == -1 || limits[1] > (System.currentTimeMillis() / 1000))
 						limit += limits[0];
 
 					List<GameClient> clients = AuthServerCommunication.getInstance().getAuthedClientsByHWID(client.getIpAddr());
 					clients.add(client);
-					for (GameClient c : clients)
+					for(GameClient c : clients)
 					{
 						int[] limitsByAccount = HardwareLimitsDAO.getInstance().select(c.getLogin());
-						if (limitsByAccount[1] == -1 || limitsByAccount[1] > (System.currentTimeMillis() / 1000))
+						if(limitsByAccount[1] == -1 || limitsByAccount[1] > (System.currentTimeMillis() / 1000))
 							limit += limitsByAccount[0];
 					}
 
 					int activeWindows = AuthServerCommunication.getInstance().getAuthedClientsByIP(client.getIpAddr()).size();
-					if (activeWindows >= limit)
+					if(activeWindows >= limit)
 					{
 						String html = HtmCache.getInstance().getCache("windows_limit_ip.htm", client.getLanguage());
-						if (html != null)
+						if(html != null)
 						{
 							html = html.replace("<?active_windows?>", String.valueOf(activeWindows));
 							html = html.replace("<?windows_limit?>", String.valueOf(limit));
@@ -127,28 +127,28 @@ public class PlayerAuthResponse extends ReceivablePacket
 				}
 			}
 
-			if (Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_HWID > 0 && AuthServerCommunication.getInstance().getAuthedClient(account) == null)
+			if(Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_HWID > 0 && AuthServerCommunication.getInstance().getAuthedClient(account) == null)
 			{
 				int limit = Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_HWID;
 
 				int[] limits = HardwareLimitsDAO.getInstance().select(client.getHWID());
-				if (limits[1] == -1 || limits[1] > (System.currentTimeMillis() / 1000))
+				if(limits[1] == -1 || limits[1] > (System.currentTimeMillis() / 1000))
 					limit += limits[0];
 
 				List<GameClient> clients = AuthServerCommunication.getInstance().getAuthedClientsByHWID(client.getHWID());
 				clients.add(client);
-				for (GameClient c : clients)
+				for(GameClient c : clients)
 				{
 					int[] limitsByAccount = HardwareLimitsDAO.getInstance().select(c.getLogin());
-					if (limitsByAccount[1] == -1 || limitsByAccount[1] > (System.currentTimeMillis() / 1000))
+					if(limitsByAccount[1] == -1 || limitsByAccount[1] > (System.currentTimeMillis() / 1000))
 						limit += limitsByAccount[0];
 				}
 
 				int activeWindows = clients.size() - 1;
-				if (activeWindows >= limit)
+				if(activeWindows >= limit)
 				{
 					String html = HtmCache.getInstance().getCache("windows_limit_hwid.htm", client.getLanguage());
-					if (html != null)
+					if(html != null)
 					{
 						html = html.replace("<?active_windows?>", String.valueOf(activeWindows));
 						html = html.replace("<?windows_limit?>", String.valueOf(limit));
@@ -160,15 +160,15 @@ public class PlayerAuthResponse extends ReceivablePacket
 				}
 			}
 
-			if (Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_IP > 0 || Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_HWID > 0)
+			if(Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_IP > 0 || Config.MAX_ACTIVE_ACCOUNTS_ON_ONE_HWID > 0)
 				client.sendPacket(TutorialCloseHtmlPacket.STATIC);
 
 			client.setAuthed(true);
 			client.setConnectionState(ConnectionState.AUTHENTICATED);
 			client.sendPacket(LoginResultPacket.SUCCESS);
 			client.sendPacket(new ExBRVersion());
-			
-			if (Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
+
+			if(Config.PREMIUM_ACCOUNT_BASED_ON_GAMESERVER)
 			{
 				int[] bonuses = PremiumAccountDAO.getInstance().select(account);
 				bonus = bonuses[0];
@@ -180,11 +180,11 @@ public class PlayerAuthResponse extends ReceivablePacket
 			client.setPoints(points);
 
 			GameClient oldClient = AuthServerCommunication.getInstance().addAuthedClient(client);
-			if (oldClient != null)
+			if(oldClient != null)
 			{
 				oldClient.setAuthed(false);
 				Player activeChar = oldClient.getActiveChar();
-				if (activeChar != null)
+				if(activeChar != null)
 				{
 					// FIXME [G1ta0] сообщение чаще всего не показывается, т.к. при закрытии
 					// соединения очередь на отправку очищается

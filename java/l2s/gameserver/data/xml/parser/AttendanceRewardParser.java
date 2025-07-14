@@ -43,31 +43,31 @@ public final class AttendanceRewardParser extends AbstractParser<AttendanceRewar
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("config".equalsIgnoreCase(element.getName()))
+			if("config".equalsIgnoreCase(element.getName()))
 			{
-				if (element.attributeValue("reward_by_account") != null)
+				if(element.attributeValue("reward_by_account") != null)
 					Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT = Boolean.parseBoolean(element.attributeValue("reward_by_account"));
 			}
-			else if ("normal_account_rewards".equalsIgnoreCase(element.getName()))
+			else if("normal_account_rewards".equalsIgnoreCase(element.getName()))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator("item"); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator("item"); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 					AttendanceRewardData reward = parseReward(subElement);
-					if (reward != null)
+					if(reward != null)
 						getHolder().addNormalReward(reward);
 				}
 			}
-			else if ("premium_account_rewards".equalsIgnoreCase(element.getName()))
+			else if("premium_account_rewards".equalsIgnoreCase(element.getName()))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator("item"); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator("item"); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 					AttendanceRewardData reward = parseReward(subElement);
-					if (reward != null)
+					if(reward != null)
 						getHolder().addPremiumReward(reward);
 				}
 			}
@@ -77,7 +77,7 @@ public final class AttendanceRewardParser extends AbstractParser<AttendanceRewar
 	private AttendanceRewardData parseReward(Element element)
 	{
 		int id = Integer.parseInt(element.attributeValue("id"));
-		if (ItemHolder.getInstance().getTemplate(id) == null)
+		if(ItemHolder.getInstance().getTemplate(id) == null)
 		{
 			warn("Cannot find item template ID[" + id + "]!");
 			return null;

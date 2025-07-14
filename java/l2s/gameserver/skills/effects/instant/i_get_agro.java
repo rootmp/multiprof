@@ -16,9 +16,9 @@ public final class i_get_agro extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
-		if (effected == effector)
+		if(effected == effector)
 			return false;
 		return true;
 	}
@@ -26,7 +26,7 @@ public final class i_get_agro extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (effected.isAutoAttackable(effector))
+		if(effected.isAutoAttackable(effector))
 			effected.getAI().Attack(effector, false, false);
 	}
 }

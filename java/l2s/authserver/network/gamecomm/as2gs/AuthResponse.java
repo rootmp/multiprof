@@ -24,7 +24,7 @@ public class AuthResponse extends SendablePacket
 		writeC(0x00); // ServerId
 		writeS(""); // ServerName
 		writeC(_hosts.length);
-		for (HostInfo host : _hosts)
+		for(HostInfo host : _hosts)
 		{
 			writeC(host.getId());
 			writeS(Config.SERVER_NAMES.get(host.getId()));

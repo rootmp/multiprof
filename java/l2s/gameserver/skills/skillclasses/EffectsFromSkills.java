@@ -15,10 +15,10 @@ public class EffectsFromSkills extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		for (AddedSkill as : getAddedSkills())
+		for(AddedSkill as : getAddedSkills())
 		{
 			SkillEntry skillEntry = as.getSkill();
-			if (skillEntry != null)
+			if(skillEntry != null)
 				skillEntry.getEffects(activeChar, target);
 		}
 	}

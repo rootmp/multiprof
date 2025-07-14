@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.geometry.Location;
@@ -28,7 +29,7 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 		_originLoc.x = packet.readD();
 		_originLoc.y = packet.readD();
 		_originLoc.z = packet.readD();
-		if (packet.hasRemaining())
+		if(packet.hasRemaining())
 			_keyboardMovement = packet.readD() == 0;
 		return true;
 	}
@@ -37,30 +38,30 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_keyboardMovement && !Config.ALLOW_KEYBOARD_MOVE)
+		if(_keyboardMovement && !Config.ALLOW_KEYBOARD_MOVE)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_targetLoc.equals(_originLoc))
+		if(_targetLoc.equals(_originLoc))
 		{
-			if (_keyboardMovement)
+			if(_keyboardMovement)
 				activeChar.getMovement().stopMove();
 			else
 				activeChar.sendActionFailed();
 			return;
 		}
 
-		if (ValidatePosition.validatePosition(activeChar, _originLoc.x, _originLoc.y, _originLoc.z, -1))
+		if(ValidatePosition.validatePosition(activeChar, _originLoc.x, _originLoc.y, _originLoc.z, -1))
 			return;
 
 		activeChar.setActive();
 
-		if (System.currentTimeMillis() - activeChar.getLastMovePacket() < Config.MOVE_PACKET_DELAY)
+		if(System.currentTimeMillis() - activeChar.getLastMovePacket() < Config.MOVE_PACKET_DELAY)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -68,7 +69,7 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 
 		activeChar.setLastMovePacket();
 
-		if (activeChar.isTeleporting())
+		if(activeChar.isTeleporting())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -82,59 +83,59 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 		// Validate position packets sends head level.
 		_targetLoc.z += activeChar.getCollisionHeight();
 
-		if (activeChar.isInObserverMode())
+		if(activeChar.isInObserverMode())
 		{
 			ObservePoint observer = activeChar.getObservePoint();
-			if (observer != null)
+			if(observer != null)
 				observer.getMovement().moveToLocation(_targetLoc, 0, false);
 			return;
 		}
 
-		if (activeChar.isFrozen())
+		if(activeChar.isFrozen())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_FROZEN, ActionFailPacket.STATIC);
 			return;
 		}
 
-		if (activeChar.isFishing())
+		if(activeChar.isFishing())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DO_THAT_WHILE_FISHING_2);
 			return;
 		}
 
-		if (activeChar.isInTrainingCamp())
+		if(activeChar.isInTrainingCamp())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_TAKE_OTHER_ACTION_WHILE_ENTERING_THE_TRAINING_CAMP);
 			return;
 		}
 
-		if (activeChar.getNpcDialogEndTime() > (System.currentTimeMillis() / 1000L))
+		if(activeChar.getNpcDialogEndTime() > (System.currentTimeMillis() / 1000L))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_MOVE_WHILE_SPEAKING_TO_AN_NPC, ActionFailPacket.STATIC);
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.getTeleMode() > 0)
+		if(activeChar.getTeleMode() > 0)
 		{
-			if (activeChar.getTeleMode() == 1)
+			if(activeChar.getTeleMode() == 1)
 				activeChar.setTeleMode(0);
 			activeChar.sendActionFailed();
 			activeChar.teleToLocation(_targetLoc);
 			return;
 		}
 
-		if (activeChar.isInFlyingTransform())
+		if(activeChar.isInFlyingTransform())
 			_targetLoc.z = Math.min(5950, Math.max(50, _targetLoc.z)); // В летающей трансформе нельзя летать ниже, чем
-																		// 0, и выше, чем 6000
+		// 0, и выше, чем 6000
 
 		// Can't move if character is confused, or trying to move a huge distance
-		if (activeChar.getDistance(_targetLoc) > 98010000) // 9900*9900
+		if(activeChar.getDistance(_targetLoc) > 98010000) // 9900*9900
 		{
 			activeChar.sendActionFailed();
 			return;

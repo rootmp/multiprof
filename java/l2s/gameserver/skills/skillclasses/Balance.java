@@ -22,12 +22,12 @@ public class Balance extends Skill
 		double summaryCurrentHp = 0;
 		int summaryMaximumHp = 0;
 
-		for (Creature target : targets)
+		for(Creature target : targets)
 		{
-			if (target == null)
+			if(target == null)
 				continue;
 
-			if (target.isAlikeDead())
+			if(target.isAlikeDead())
 				continue;
 
 			summaryCurrentHp += target.getCurrentHp();
@@ -36,20 +36,20 @@ public class Balance extends Skill
 
 		final double percent = summaryCurrentHp / summaryMaximumHp;
 
-		for (Creature target : targets)
+		for(Creature target : targets)
 		{
-			if (target == null)
+			if(target == null)
 				continue;
 
-			if (target.isAlikeDead())
+			if(target.isAlikeDead())
 				continue;
 
 			double hp = target.getMaxHp() * percent;
-			if (hp > target.getCurrentHp())
+			if(hp > target.getCurrentHp())
 			{
 				// увеличение HP, не выше лимита
 				double limit = target.getStat().calc(Stats.HP_LIMIT, null, null) * target.getMaxHp() / 100.;
-				if (target.getCurrentHp() < limit) // не "подрезаем" HP под лимит если больше
+				if(target.getCurrentHp() < limit) // не "подрезаем" HP под лимит если больше
 					target.setCurrentHp(Math.min(hp, limit), false);
 			}
 			else

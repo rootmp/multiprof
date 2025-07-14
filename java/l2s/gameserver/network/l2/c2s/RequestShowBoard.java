@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.handler.bbs.BbsHandlerHolder;
@@ -27,13 +28,13 @@ public class RequestShowBoard implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (Config.BBS_ENABLED)
+		if(Config.BBS_ENABLED)
 		{
 			IBbsHandler handler = BbsHandlerHolder.getInstance().getCommunityHandler(Config.BBS_DEFAULT_PAGE);
-			if (handler != null)
+			if(handler != null)
 				handler.onBypassCommand(activeChar, Config.BBS_DEFAULT_PAGE);
 		}
 		else

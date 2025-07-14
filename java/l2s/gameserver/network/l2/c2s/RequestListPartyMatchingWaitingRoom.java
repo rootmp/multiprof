@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
@@ -18,10 +19,10 @@ public class RequestListPartyMatchingWaitingRoom implements IClientIncomingPacke
 		_minLevel = packet.readD();
 		_maxLevel = packet.readD();
 		int size = packet.readD();
-		if (size > Byte.MAX_VALUE || size < 0)
+		if(size > Byte.MAX_VALUE || size < 0)
 			size = 0;
 		_classes = new int[size];
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 			_classes[i] = packet.readD();
 		return true;
 	}
@@ -30,7 +31,7 @@ public class RequestListPartyMatchingWaitingRoom implements IClientIncomingPacke
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		activeChar.sendPacket(new ExListPartyMatchingWaitingRoom(activeChar, _minLevel, _maxLevel, _page, _classes));

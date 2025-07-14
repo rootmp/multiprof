@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.StringUtils;
 
 import l2s.commons.ban.BanBindType;
@@ -29,10 +30,10 @@ public class CharacterSelected implements IClientIncomingPacket
 	@Override
 	public void run(GameClient client)
 	{
-		if (client.getActiveChar() != null)
+		if(client.getActiveChar() != null)
 			return;
 
-		if (!client.secondaryAuthed())
+		if(!client.secondaryAuthed())
 		{
 			client.sendPacket(ActionFailPacket.STATIC);
 			return;
@@ -40,20 +41,20 @@ public class CharacterSelected implements IClientIncomingPacket
 
 		int objId = client.getObjectIdForSlot(_charSlot);
 
-		if (GameBanManager.getInstance().isBanned(BanBindType.PLAYER, objId) || AutoBan.isBanned(objId))
+		if(GameBanManager.getInstance().isBanned(BanBindType.PLAYER, objId) || AutoBan.isBanned(objId))
 		{
 			client.sendPacket(ActionFailPacket.STATIC);
 			return;
 		}
 
 		Player activeChar = client.loadCharFromDisk(_charSlot);
-		if (activeChar == null)
+		if(activeChar == null)
 		{
 			client.sendPacket(ActionFailPacket.STATIC);
 			return;
 		}
 
-		if (activeChar.getAccessLevel() < 0)
+		if(activeChar.getAccessLevel() < 0)
 			activeChar.setAccessLevel(0);
 
 		client.setConnectionState(ConnectionState.JOINING_GAME);
@@ -62,7 +63,7 @@ public class CharacterSelected implements IClientIncomingPacket
 			activeChar.storeLastIpAndHWID(client.getIpAddr(), client.getHwidString());
 
 		String changedOldName = activeChar.getVar(Player.CHANGED_OLD_NAME);
-		if (changedOldName != null && !StringUtils.isEmpty(changedOldName))
+		if(changedOldName != null && !StringUtils.isEmpty(changedOldName))
 		{
 			client.sendPacket(new ExNeedToChangeName(ExNeedToChangeName.TYPE_PLAYER, ExNeedToChangeName.NONE_REASON, changedOldName));
 			return;

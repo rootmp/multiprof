@@ -18,9 +18,9 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 
 	public ExShowBaseAttributeCancelWindow(Player activeChar)
 	{
-		for (ItemInstance item : activeChar.getInventory().getItems())
+		for(ItemInstance item : activeChar.getInventory().getItems())
 		{
-			if ((item.getAttributeElement() == Element.NONE) || !item.canBeEnchanted() || (getAttributeRemovePrice(item) == 0))
+			if((item.getAttributeElement() == Element.NONE) || !item.canBeEnchanted() || (getAttributeRemovePrice(item) == 0))
 			{
 				continue;
 			}
@@ -32,7 +32,7 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_items.size());
-		for (ItemInstance item : _items)
+		for(ItemInstance item : _items)
 		{
 			packetWriter.writeD(item.getObjectId());
 			packetWriter.writeQ(getAttributeRemovePrice(item));
@@ -42,7 +42,7 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 
 	public static long getAttributeRemovePrice(ItemInstance item)
 	{
-		switch (item.getGrade())
+		switch(item.getGrade())
 		{
 			case S:
 				return item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON ? 50000 : 40000;

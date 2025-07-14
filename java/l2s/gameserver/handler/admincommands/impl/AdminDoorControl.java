@@ -20,31 +20,31 @@ public class AdminDoorControl implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().Door)
+		if(!activeChar.getPlayerAccess().Door)
 			return false;
 
 		GameObject target;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_open:
-				if (wordList.length > 1)
+				if(wordList.length > 1)
 					target = World.getAroundObjectById(activeChar, Integer.parseInt(wordList[1]));
 				else
 					target = activeChar.getTarget();
 
-				if (target != null && target.isDoor())
+				if(target != null && target.isDoor())
 					((DoorInstance) target).openMe();
 				else
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 
 				break;
 			case admin_close:
-				if (wordList.length > 1)
+				if(wordList.length > 1)
 					target = World.getAroundObjectById(activeChar, Integer.parseInt(wordList[1]));
 				else
 					target = activeChar.getTarget();
-				if (target != null && target.isDoor())
+				if(target != null && target.isDoor())
 					((DoorInstance) target).closeMe();
 				else
 					activeChar.sendPacket(SystemMsg.INVALID_TARGET);

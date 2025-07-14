@@ -15,7 +15,7 @@ public class TeleportTemplate
 	private int _itemId;
 	private long _price;
 	private final List<Location> _locations = new ArrayList<Location>();
-	
+
 	public TeleportTemplate(int id, int itemId, long price)
 	{
 		_id = id;
@@ -37,7 +37,7 @@ public class TeleportTemplate
 	{
 		_itemId = itemId;
 	}
-	
+
 	public long getPrice()
 	{
 		return _price;
@@ -47,7 +47,7 @@ public class TeleportTemplate
 	{
 		_price = price;
 	}
-	
+
 	public void addLocation(Location loc)
 	{
 		_locations.add(loc);

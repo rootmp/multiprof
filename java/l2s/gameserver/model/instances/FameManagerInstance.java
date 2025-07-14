@@ -20,11 +20,11 @@ public class FameManagerInstance extends NpcInstance
 		StringTokenizer st = new StringTokenizer(command, " ");
 		String actualCommand = st.nextToken();
 		HtmlMessage html = new HtmlMessage(this);
-		if (actualCommand.equalsIgnoreCase("PK_Count"))
+		if(actualCommand.equalsIgnoreCase("PK_Count"))
 		{
-			if (player.getFame() >= 5000)
+			if(player.getFame() >= 5000)
 			{
-				if (player.getPkKills() > 0)
+				if(player.getPkKills() > 0)
 				{
 					player.setFame(player.getFame() - 5000, "PK_Count", true);
 					player.setPkKills(player.getPkKills() - 1);

@@ -28,38 +28,32 @@ public final class AccessoryListener implements OnEquipListener
 	@Override
 	public int onUnequip(int slot, ItemInstance item, Playable actor)
 	{
-		if (!item.isEquipable())
-		{
-			return 0;
-		}
+		if(!item.isEquipable())
+		{ return 0; }
 
-		if (!actor.isPlayer())
-		{
-			return 0;
-		}
+		if(!actor.isPlayer())
+		{ return 0; }
 
 		Player player = actor.getPlayer();
 
-		if ((item.getBodyPart() == ItemTemplate.SLOT_L_BRACELET) || (item.getBodyPart() == ItemTemplate.SLOT_AGATHION))
+		if((item.getBodyPart() == ItemTemplate.SLOT_L_BRACELET) || (item.getBodyPart() == ItemTemplate.SLOT_AGATHION))
 		{
 			int transformNpcId = player.getTransformId();
-			for (SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
+			for(SkillEntry skillEntry : item.getTemplate().getAttachedSkills())
 			{
 				Skill skill = skillEntry.getTemplate();
-				if ((skill.getNpcId() == transformNpcId) && skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
+				if((skill.getNpcId() == transformNpcId) && skill.hasEffect(EffectUseType.NORMAL, "Transformation"))
 				{
 					player.setTransform(null);
 				}
 			}
 
-			if (slot == Inventory.PAPERDOLL_AGATHION_MAIN)
+			if(slot == Inventory.PAPERDOLL_AGATHION_MAIN)
 			{
 				AgathionTemplate agathionTemplate = item.getTemplate().getAgathionTemplate();
 				Agathion agathion = player.getAgathion();
-				if ((agathionTemplate == null) || (agathion == null) || (agathionTemplate.getId() != agathion.getId()))
-				{
-					return 0;
-				}
+				if((agathionTemplate == null) || (agathion == null) || (agathionTemplate.getId() != agathion.getId()))
+				{ return 0; }
 
 				agathion.delete();
 			}

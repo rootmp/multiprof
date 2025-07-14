@@ -152,12 +152,12 @@ public class InstantClanHall extends ClanHall
 	public void banishForeigner(int clanId)
 	{
 		Reflection reflection = getReflection(clanId);
-		if (reflection == null)
+		if(reflection == null)
 			return;
 
-		for (Player player : reflection.getPlayers())
+		for(Player player : reflection.getPlayers())
 		{
-			if (player.getClanId() == clanId)
+			if(player.getClanId() == clanId)
 				continue;
 
 			player.teleToLocation(getBanishPoint());
@@ -197,11 +197,11 @@ public class InstantClanHall extends ClanHall
 	@Override
 	public Reflection getReflection(int clanId)
 	{
-		if (!isOwner(clanId))
+		if(!isOwner(clanId))
 			return null;
 
 		Reflection reflection = _reflections.get(clanId);
-		if (reflection == null)
+		if(reflection == null)
 		{
 			reflection = new Reflection();
 			reflection.setVariable("clan_owner_id", clanId);
@@ -211,7 +211,7 @@ public class InstantClanHall extends ClanHall
 
 			_reflections.put(clanId, reflection);
 
-			for (Zone zone : reflection.getZones())
+			for(Zone zone : reflection.getZones())
 			{
 				zone.setParam("residence", this);
 				zone.addListener(ResidenceEnterLeaveListenerImpl.STATIC);
@@ -262,15 +262,15 @@ public class InstantClanHall extends ClanHall
 
 	public boolean addOwner(Clan owner, boolean store)
 	{
-		if (owner == null)
+		if(owner == null)
 			return false;
 
-		if (_owners.containsKey(owner.getClanId()))
+		if(_owners.containsKey(owner.getClanId()))
 			return false;
 
-		if (store)
+		if(store)
 		{
-			if (!InstantClanHallDAO.getInstance().insert(this, owner))
+			if(!InstantClanHallDAO.getInstance().insert(this, owner))
 				return false;
 		}
 		_owners.put(owner.getClanId(), owner);
@@ -279,12 +279,12 @@ public class InstantClanHall extends ClanHall
 
 	public boolean removeOwner(Clan owner, boolean store)
 	{
-		if (_owners.remove(owner.getClanId()) == null)
+		if(_owners.remove(owner.getClanId()) == null)
 			return false;
 
-		if (store)
+		if(store)
 		{
-			if (!InstantClanHallDAO.getInstance().delete(this, owner))
+			if(!InstantClanHallDAO.getInstance().delete(this, owner))
 				return false;
 		}
 		_owners.remove(owner.getClanId());

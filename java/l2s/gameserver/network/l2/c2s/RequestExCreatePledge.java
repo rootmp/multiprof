@@ -28,7 +28,7 @@ public class RequestExCreatePledge implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if(player==null)
+		if(player == null)
 			return;
 
 		if(player.getLevel() < 10 || player.getClan() != null)

@@ -56,18 +56,15 @@ public class JoinedIterator<E> implements Iterator<E>
 		this(iterators.toArray(new Iterator[iterators.size()]));
 	}
 
-	@SuppressWarnings(
-	{
-		"rawtypes",
-		"unchecked"
+	@SuppressWarnings({
+			"rawtypes",
+			"unchecked"
 	})
 	public JoinedIterator(Iterator... iterators)
 	{
-		if (iterators == null)
-		{
-			throw new NullPointerException("Unexpected NULL iterators argument");
-		}
-		
+		if(iterators == null)
+		{ throw new NullPointerException("Unexpected NULL iterators argument"); }
+
 		_iterators = iterators;
 	}
 
@@ -96,9 +93,9 @@ public class JoinedIterator<E> implements Iterator<E>
 	// is not exhausted
 	protected void updateCurrentIterator()
 	{
-		if (_currentIterator == null)
+		if(_currentIterator == null)
 		{
-			if (_iterators.length == 0)
+			if(_iterators.length == 0)
 			{
 				_currentIterator = EmptyIterator.getInstance();
 			}
@@ -112,7 +109,7 @@ public class JoinedIterator<E> implements Iterator<E>
 			_lastUsedIterator = _currentIterator;
 		}
 
-		while (!_currentIterator.hasNext() && _currentIteratorIndex < _iterators.length - 1)
+		while(!_currentIterator.hasNext() && _currentIteratorIndex < _iterators.length - 1)
 		{
 			_currentIteratorIndex++;
 			_currentIterator = _iterators[_currentIteratorIndex];

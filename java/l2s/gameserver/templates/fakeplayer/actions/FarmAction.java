@@ -17,7 +17,7 @@ public class FarmAction extends MoveAction
 	@Override
 	public boolean performAction(FakeAI ai)
 	{
-		if (ai.performFarm())
+		if(ai.performFarm())
 			return true;
 		return false;
 	}

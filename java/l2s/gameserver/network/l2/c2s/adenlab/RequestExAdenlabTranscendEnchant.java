@@ -24,10 +24,10 @@ public class RequestExAdenlabTranscendEnchant implements IClientIncomingPacket
 		Player activeChar = client.getActiveChar();
 		if(activeChar == null)
 			return;
-		
+
 		if(nFeeIndex < 0 || nFeeIndex > 1)
 			return;
-		
+
 		activeChar.getAdenLab().transcendEnchant(nBossID, nFeeIndex);
 	}
 }

@@ -4,6 +4,8 @@ import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.dao.CharacterFriendDAO;
 import l2s.gameserver.model.GameObject;
 import l2s.gameserver.model.GameObjectsStorage;
@@ -20,9 +22,6 @@ import l2s.gameserver.network.l2.s2c.FriendStatus;
 import l2s.gameserver.network.l2.s2c.L2FriendListPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessage;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class FriendList
 {
@@ -55,12 +54,12 @@ public class FriendList
 
 	public Friend get(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return null;
 
-		for (Friend friend : values())
+		for(Friend friend : values())
 		{
-			if (name.equalsIgnoreCase(friend.getName()))
+			if(name.equalsIgnoreCase(friend.getName()))
 				return friend;
 		}
 		return null;
@@ -99,17 +98,17 @@ public class FriendList
 
 	public void remove(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return;
 
 		int objectId = remove0(name);
-		if (objectId > 0)
+		if(objectId > 0)
 		{
 			Player friendChar = World.getPlayer(objectId);
 
 			_owner.sendPacket(new SystemMessage(SystemMessage.S1_HAS_BEEN_REMOVED_FROM_YOUR_FRIEND_LIST).addString(name), new FriendRemove(name));
 
-			if (friendChar != null)
+			if(friendChar != null)
 				friendChar.sendPacket(new SystemMessage(SystemMessage.S1__HAS_BEEN_DELETED_FROM_YOUR_FRIENDS_LIST).addString(_owner.getName()), new L2FriendListPacket(friendChar));
 		}
 		else
@@ -118,25 +117,25 @@ public class FriendList
 
 	private int remove0(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return 0;
 
 		int objectId = 0;
-		for (Friend friend : values())
+		for(Friend friend : values())
 		{
-			if (name.equalsIgnoreCase(friend.getName()))
+			if(name.equalsIgnoreCase(friend.getName()))
 			{
 				objectId = friend.getObjectId();
 				break;
 			}
 		}
 
-		if (objectId > 0)
+		if(objectId > 0)
 		{
 			remove(objectId);
 
 			Player friendPlayer = GameObjectsStorage.getPlayer(objectId);
-			if (friendPlayer != null)
+			if(friendPlayer != null)
 				friendPlayer.getFriendList().remove(_owner.getObjectId());
 			else
 				CharacterFriendDAO.getInstance().delete(objectId, _owner.getObjectId());
@@ -148,7 +147,7 @@ public class FriendList
 
 	public void notifyChangeName(int friendObjectId)
 	{
-		if (_friendList.containsKey(friendObjectId))
+		if(_friendList.containsKey(friendObjectId))
 		{
 			_owner.sendPacket(new L2FriendListPacket(_owner));
 			_owner.sendPacket(new l2s.gameserver.network.l2.s2c.FriendList(_owner));
@@ -157,19 +156,19 @@ public class FriendList
 
 	public void notifyFriends(boolean login)
 	{
-		for (Friend friend : values())
+		for(Friend friend : values())
 		{
 			Player friendPlayer = GameObjectsStorage.getPlayer(friend.getObjectId());
-			if (friendPlayer == null)
+			if(friendPlayer == null)
 				continue;
 
 			Friend thisFriend = friendPlayer.getFriendList().get(_owner.getObjectId());
-			if (thisFriend == null)
+			if(thisFriend == null)
 				continue;
 
 			thisFriend.update(_owner, login);
 
-			if (login)
+			if(login)
 				friendPlayer.sendPacket(new SystemMessage(SystemMessage.S1_FRIEND_HAS_LOGGED_IN).addString(_owner.getName()));
 
 			friendPlayer.sendPacket(new FriendStatus(thisFriend, login));
@@ -180,11 +179,11 @@ public class FriendList
 
 	public boolean updateMemo(String name, String memo)
 	{
-		if (memo.length() > 50)
+		if(memo.length() > 50)
 			return false;
 
 		Friend friend = get(name);
-		if (friend == null)
+		if(friend == null)
 			return false;
 
 		friend.setMemo(memo);
@@ -196,32 +195,32 @@ public class FriendList
 
 	public IBroadcastPacket requestFriendInvite(GameObject target)
 	{
-		if (_owner.isProcessingRequest())
+		if(_owner.isProcessingRequest())
 			return SystemMsg.WAITING_FOR_ANOTHER_REPLY;
 
-		if (size() >= MAX_FRIEND_SIZE)
+		if(size() >= MAX_FRIEND_SIZE)
 			return SystemMsg.YOU_CAN_ONLY_ENTER_UP_128_NAMES_IN_YOUR_FRIENDS_LIST;
 
-		if (target == null)
+		if(target == null)
 			return SystemMsg.THE_USER_WHO_REQUESTED_TO_BECOME_FRIENDS_IS_NOT_FOUND_IN_THE_GAME;
 
-		if (!target.isPlayer())
+		if(!target.isPlayer())
 			return null;
 
 		Player player = target.getPlayer();
-		if (player == _owner)
+		if(player == _owner)
 			return SystemMsg.YOU_CANNOT_ADD_YOURSELF_TO_YOUR_OWN_FRIEND_LIST;
 
-		if (player.isBlockAll() || player.getBlockList().contains(_owner) || player.getMessageRefusal())
+		if(player.isBlockAll() || player.getBlockList().contains(_owner) || player.getMessageRefusal())
 			return SystemMsg.THAT_PERSON_IS_IN_MESSAGE_REFUSAL_MODE;
 
-		if (contains(player.getObjectId()))
+		if(contains(player.getObjectId()))
 			return new SystemMessagePacket(SystemMsg.C1_IS_ALREADY_ON_YOUR_FRIEND_LIST).addName(player);
 
-		if (player.getFriendList().size() >= MAX_FRIEND_SIZE)
+		if(player.getFriendList().size() >= MAX_FRIEND_SIZE)
 			return SystemMsg.THE_FRIENDS_LIST_OF_THE_PERSON_YOU_ARE_TRYING_TO_ADD_IS_FULL_SO_REGISTRATION_IS_NOT_POSSIBLE;
 
-		if (player.isInOlympiadMode())
+		if(player.isInOlympiadMode())
 			return SystemMsg.A_USER_CURRENTLY_PARTICIPATING_IN_THE_OLYMPIAD_CANNOT_SEND_PARTY_AND_FRIEND_INVITATIONS;
 
 		new Request(L2RequestType.FRIEND, _owner, player).setTimeout(10000L);

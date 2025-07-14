@@ -24,7 +24,7 @@ public class RequestExSelectGlobalEventUi implements IClientIncomingPacket
 		if(player == null)
 			return;
 		int multisell = GlobalEventUiHolder.getInstance().getEvent(nEventIndex);
-		if(multisell!=0)
+		if(multisell != 0)
 		{
 			MultiSellHolder.getInstance().SeparateAndSend(multisell, player, 0);
 		}

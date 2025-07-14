@@ -53,13 +53,13 @@ public class ExShowTracePacket implements IClientOutgoingPacket
 		int steps = (int) (full_dist / step);
 
 		addTrace(from_x, from_y, from_z);
-		if (steps > 1)
+		if(steps > 1)
 		{
 			int step_x = x_diff / steps;
 			int step_y = y_diff / steps;
 			int step_z = z_diff / steps;
 
-			for (int i = 1; i < steps; i++)
+			for(int i = 1; i < steps; i++)
 			{
 				addTrace(from_x + (step_x * i), from_y + (step_y * i), from_z + (step_z * i));
 			}
@@ -80,7 +80,7 @@ public class ExShowTracePacket implements IClientOutgoingPacket
 		packetWriter.writeH(0); // type broken in H5
 		packetWriter.writeD(0); // time broken in H5
 		packetWriter.writeH(_traces.size());
-		for (Trace t : _traces)
+		for(Trace t : _traces)
 		{
 			packetWriter.writeD(t._x);
 			packetWriter.writeD(t._y);

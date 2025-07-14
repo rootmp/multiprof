@@ -46,30 +46,31 @@ public final class ParserUtil
 		return tempBuffer;
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@SuppressWarnings({
+			"unchecked", "rawtypes"
+	})
 	public static void appendValueToField(Field field, Object object, Object value) throws IllegalAccessException
 	{
 		Class<?> clazz = field.getType();
-		if (!List.class.isAssignableFrom(clazz)) 
+		if(!List.class.isAssignableFrom(clazz))
 		{
 			field.set(object, value);
 			return;
 		}
 		List list = (List) field.get(object);
-		if (list == null) 
+		if(list == null)
 		{
 			list = new ArrayList();
 			field.set(object, list);
 		}
 
-		if (value instanceof List<?> listValue) 
+		if(value instanceof List<?> listValue)
 			list.addAll(listValue);
-		else if (value instanceof Object[] objectArray) 
+		else if(value instanceof Object[] objectArray)
 			Collections.addAll(list, objectArray);
-		else 
-			list.add(value); 
+		else
+			list.add(value);
 	}
-
 
 	/**
 	 * Выделяет список заключенный в {...} из строки
@@ -106,9 +107,7 @@ public final class ParserUtil
 			}
 		}
 		if(startFlag && bracesCount == 0)
-		{
-			return new StringBuilder(buffer.substring(firstBracketPos, lastBracketPos + 1));
-		}
+		{ return new StringBuilder(buffer.substring(firstBracketPos, lastBracketPos + 1)); }
 		return null;
 	}
 

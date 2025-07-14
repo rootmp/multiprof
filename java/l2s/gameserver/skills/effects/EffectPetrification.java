@@ -24,7 +24,7 @@ public final class EffectPetrification extends EffectHandler
 		effected.getFlags().getParalyzed().start(this);
 		effected.getFlags().getDebuffImmunity().start(this);
 		effected.getFlags().getBuffImmunity().start(this);
-		if (effected != effector)
+		if(effected != effector)
 		{
 			effected.abortAttack(true, true);
 			effected.abortCast(true, true);

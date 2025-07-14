@@ -13,7 +13,7 @@ public class ExBloodyCoinCount implements IClientOutgoingPacket
 
 	public ExBloodyCoinCount(Player player)
 	{
-		if (player.getInventory().getItemByItemId(ItemTemplate.ITEM_ID_MONEY_L) == null)
+		if(player.getInventory().getItemByItemId(ItemTemplate.ITEM_ID_MONEY_L) == null)
 			_coins = 0;
 		else
 			_coins = player.getInventory().getItemByItemId(ItemTemplate.ITEM_ID_MONEY_L).getCount();

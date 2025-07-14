@@ -13,22 +13,23 @@ public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
 {
 	private final Clan playerClan;
 	private List<ClanWar> _warList;
-	
+
 	public ExPledgeEnemyInfoList(Clan playerClan)
 	{
 		this.playerClan = playerClan;
-		_warList = playerClan.getWars().valueCollection().stream().filter(it -> (it.getClanWarState(playerClan) == ClanWarState.PREPARATION) ||(it.getClanWarState(playerClan) == ClanWarState.MUTUAL)).collect(Collectors.toList());
+		_warList = playerClan.getWars().valueCollection().stream().filter(it -> (it.getClanWarState(playerClan) == ClanWarState.PREPARATION)
+				|| (it.getClanWarState(playerClan) == ClanWarState.MUTUAL)).collect(Collectors.toList());
 	}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_warList.size());
-		
+
 		for(ClanWar war : _warList)
 		{
 			final Clan clan = war.getOpposingClan(playerClan);
-			
+
 			packetWriter.writeD(0);//nEnemyPledgeWorldID
 			packetWriter.writeD(clan.getClanId());//nEnemyPledgeSID
 			packetWriter.writeSizedString(clan.getName());//sEnemyPledgeName

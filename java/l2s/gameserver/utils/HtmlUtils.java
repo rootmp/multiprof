@@ -1,5 +1,7 @@
 package l2s.gameserver.utils;
 
+import static l2s.gameserver.utils.Util.STRING_EMPTY;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -11,8 +13,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.HtmlMessage;
 import l2s.gameserver.network.l2.components.NpcString;
 import l2s.gameserver.network.l2.components.SysString;
-
-import static l2s.gameserver.utils.Util.STRING_EMPTY;
 
 /**
  * @author VISTALL
@@ -64,9 +64,9 @@ public class HtmlUtils
 	public static String htmlNpcString(int id, Object... params)
 	{
 		String replace = "<fstring";
-		if (params.length > 0)
+		if(params.length > 0)
 		{
-			for (int i = 0; i < params.length; i++)
+			for(int i = 0; i < params.length; i++)
 			{
 				replace += " p" + (i + 1) + "=\"" + String.valueOf(params[i]) + "\"";
 			}
@@ -92,10 +92,8 @@ public class HtmlUtils
 
 	public static String bbParse(String s)
 	{
-		if (s == null)
-		{
-			return null;
-		}
+		if(s == null)
+		{ return null; }
 
 		s = StringUtils.replace(s, "\r", "");
 		s = StringUtils.replace(s, "\n", "");
@@ -107,7 +105,7 @@ public class HtmlUtils
 	public static void sendHtm(Player player, String htm)
 	{
 		HtmlMessage htmlMessage = new HtmlMessage(5);
-		if (htm.endsWith(".htm"))
+		if(htm.endsWith(".htm"))
 		{
 			htmlMessage.setFile(htm);
 		}
@@ -115,7 +113,7 @@ public class HtmlUtils
 		{
 			htmlMessage.setHtml(htm);
 		}
-		
+
 		player.sendPacket(htmlMessage);
 	}
 
@@ -126,7 +124,7 @@ public class HtmlUtils
 
 	public static String evaluate(String text, Map<String, String> variables)
 	{
-		if (variables != null)
+		if(variables != null)
 		{
 			variables.putAll(HTML_GLOBAL_VARIABLES);
 		}
@@ -141,7 +139,7 @@ public class HtmlUtils
 	{
 		StringBuilder builder = new StringBuilder();
 		var matcher = variablePattern.matcher(text);
-		while (matcher.find())
+		while(matcher.find())
 		{
 			String key = text.substring(matcher.start(), matcher.end());
 			matcher.appendReplacement(builder, variables.getOrDefault(key, STRING_EMPTY));

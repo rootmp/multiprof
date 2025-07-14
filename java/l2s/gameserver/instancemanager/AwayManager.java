@@ -3,6 +3,8 @@ package l2s.gameserver.instancemanager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.lang.reference.HardReference;
 import l2s.gameserver.Config;
 import l2s.gameserver.ThreadPoolManager;
@@ -11,9 +13,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.s2c.SetupGaugePacket;
 import l2s.gameserver.network.l2.s2c.SocialActionPacket;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author: Kolobrodik
@@ -28,7 +27,7 @@ public final class AwayManager
 
 	public static final AwayManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			_instance = new AwayManager();
 		return _instance;
 	}
@@ -86,17 +85,17 @@ public final class AwayManager
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
+			if(player == null)
 				return;
 
-			if (player.isAttackingNow() || player.isCastingNow())
+			if(player.isAttackingNow() || player.isCastingNow())
 			{
 				player.unblock();
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.AwayManager.PlayerAwayTask.InCombat"));
 				return;
 			}
 
-			if (_awayText.length() <= 1)
+			if(_awayText.length() <= 1)
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.AwayManager.PlayerAwayTask.NoText"));
 			else
 				player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.AwayManager.PlayerAwayTask").addString(_awayText));
@@ -125,7 +124,7 @@ public final class AwayManager
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
+			if(player == null)
 				return;
 
 			player.sendMessage(new CustomMessage("l2s.gameserver.instancemanager.AwayManager.PlayerBackTask"));

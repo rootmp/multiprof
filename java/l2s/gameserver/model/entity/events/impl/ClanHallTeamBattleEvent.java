@@ -41,9 +41,9 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 	public void startEvent()
 	{
 		List<CTBSiegeClanObject> attackers = getObjects(ATTACKERS);
-		if (attackers.isEmpty())
+		if(attackers.isEmpty())
 		{
-			if (getResidence().getOwner() == null)
+			if(getResidence().getOwner() == null)
 				broadcastInZone2(new SystemMessagePacket(SystemMsg.THE_SIEGE_OF_S1_HAS_BEEN_CANCELED_DUE_TO_LACK_OF_INTEREST).addResidenceName(getResidence()));
 			else
 				broadcastInZone2(new SystemMessagePacket(SystemMsg.S1S_SIEGE_WAS_CANCELED_BECAUSE_THERE_WERE_NO_CLANS_THAT_PARTICIPATED).addResidenceName(getResidence()));
@@ -53,14 +53,14 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 		}
 
 		_oldOwner = getResidence().getOwner();
-		if (_oldOwner != null)
+		if(_oldOwner != null)
 			addObject(DEFENDERS, newSiegeClan(DEFENDERS, _oldOwner.getClanId(), 0, System.currentTimeMillis()));
 
 		SiegeClanDAO.getInstance().delete(getResidence());
 		SiegePlayerDAO.getInstance().delete(getResidence());
 
 		List<CTBTeamObject> teams = getObjects(TRYOUT_PART);
-		for (int i = 0; i < 5; i++)
+		for(int i = 0; i < 5; i++)
 		{
 			CTBTeamObject team = teams.get(i);
 
@@ -82,7 +82,7 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 
 	public void processStep(CTBTeamObject team)
 	{
-		if (team.getSiegeClan() != null)
+		if(team.getSiegeClan() != null)
 		{
 			CTBSiegeClanObject object = team.getSiegeClan();
 
@@ -98,9 +98,9 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 		boolean hasWinner = false;
 		CTBTeamObject winnerTeam = null;
 
-		for (CTBTeamObject t : teams)
+		for(CTBTeamObject t : teams)
 		{
-			if (t.isParticle())
+			if(t.isParticle())
 			{
 				hasWinner = winnerTeam == null; // если зайдет второй раз то скажет что нету виннера
 
@@ -108,11 +108,11 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 			}
 		}
 
-		if (!hasWinner)
+		if(!hasWinner)
 			return;
 
 		SiegeClanObject clan = winnerTeam.getSiegeClan();
-		if (clan != null)
+		if(clan != null)
 			getResidence().changeOwner(clan.getClan());
 
 		stopEvent(true);
@@ -121,11 +121,11 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 	@Override
 	public void announce(int id, String value, int time)
 	{
-		if (id == 1)
+		if(id == 1)
 		{
 			int val = Integer.parseInt(value);
 			int minute = val / 60;
-			if (minute > 0)
+			if(minute > 0)
 				broadcastTo(new SystemMessagePacket(SystemMsg.THE_CONTEST_WILL_BEGIN_IN_S1_MINUTES).addInteger(minute), ATTACKERS, DEFENDERS);
 			else
 				broadcastTo(new SystemMessagePacket(SystemMsg.THE_PRELIMINARY_MATCH_WILL_BEGIN_IN_S1_SECONDS).addInteger(val), ATTACKERS, DEFENDERS);
@@ -136,9 +136,9 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 	public void stopEvent(boolean force)
 	{
 		Clan newOwner = getResidence().getOwner();
-		if (newOwner != null)
+		if(newOwner != null)
 		{
-			if (_oldOwner != newOwner)
+			if(_oldOwner != newOwner)
 			{
 				newOwner.broadcastToOnlineMembers(PlaySoundPacket.SIEGE_VICTORY);
 
@@ -168,7 +168,7 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 		addObjects(ATTACKERS, siegeClanObjectList);
 
 		List<CTBSiegeClanObject> objects = getObjects(ATTACKERS);
-		for (CTBSiegeClanObject clan : objects)
+		for(CTBSiegeClanObject clan : objects)
 			clan.select(getResidence());
 	}
 
@@ -182,26 +182,26 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 	@Override
 	public void findEvent(Player player)
 	{
-		if (!isInProgress() || player.getClan() == null)
+		if(!isInProgress() || player.getClan() == null)
 			return;
 		CTBSiegeClanObject object = getSiegeClan(ATTACKERS, player.getClan());
-		if (object != null && object.getPlayers().contains(player.getObjectId()))
+		if(object != null && object.getPlayers().contains(player.getObjectId()))
 			player.addEvent(this);
 	}
 
 	@Override
 	public Location getRestartLoc(Player player, RestartType type)
 	{
-		if (!checkIfInZone(player))
+		if(!checkIfInZone(player))
 			return null;
 
 		SiegeClanObject attackerClan = getSiegeClan(ATTACKERS, player.getClan());
 
 		Location loc = null;
-		switch (type)
+		switch(type)
 		{
 			case TO_VILLAGE:
-				if (attackerClan != null && checkIfInZone(player))
+				if(attackerClan != null && checkIfInZone(player))
 				{
 					List<SiegeClanObject> objectList = getObjects(ATTACKERS);
 					List<Location> teleportList = getObjects(CHALLENGER_RESTART_POINTS);
@@ -224,7 +224,7 @@ public class ClanHallTeamBattleEvent extends SiegeEvent<SiegeableClanHall, CTBSi
 	@Override
 	public void action(String name, boolean start)
 	{
-		if (name.equalsIgnoreCase(NEXT_STEP))
+		if(name.equalsIgnoreCase(NEXT_STEP))
 			nextStep();
 		else
 			super.action(name, start);

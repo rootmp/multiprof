@@ -12,17 +12,17 @@ public class RequestExSetMultiEnchantItemList implements IClientIncomingPacket
 {
 	private static final int MAX_SIZE = 99;
 	private int[] _itemObjId;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		int size = packet.readD();
-		if(size > MAX_SIZE) 
+		if(size > MAX_SIZE)
 			size = MAX_SIZE;
-		
+
 		_itemObjId = new int[size];
-		
-		for (int index = 0; index < size; index++)
+
+		for(int index = 0; index < size; index++)
 		{
 			_itemObjId[index] = packet.readD();
 		}
@@ -33,18 +33,17 @@ public class RequestExSetMultiEnchantItemList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
+
 		player.clearMultiEnchantingItemsBySlot();
-		
-		for (int index = 0; index < _itemObjId.length; index++)
+
+		for(int index = 0; index < _itemObjId.length; index++)
 		{
 			player.addMultiEnchantingItems(index + 1, _itemObjId[index]);
 		}
-		
+
 		player.sendPacket(new ExResultSetMultiEnchantItemList(0));
 		player.sendPacket(new ExChangedEnchantTargetItemProbabilityList(ItemFunctions.getEnchantProbInfo(player, true, false)));
 	}
 }
-		

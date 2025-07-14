@@ -4,6 +4,8 @@ import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.dao.CharacterSpectatingListDAO;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
@@ -12,9 +14,6 @@ import l2s.gameserver.network.l2.s2c.RelationChangedPacket;
 import l2s.gameserver.network.l2.s2c.SystemMessagePacket;
 import l2s.gameserver.network.l2.s2c.spectating.ExUserWatcherTargetList;
 import l2s.gameserver.network.l2.s2c.spectating.ExUserWatcherTargetStatus;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author nexvill
@@ -43,12 +42,12 @@ public class SpectatingList
 
 	public Spectating get(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return null;
 
-		for (Spectating b : values())
+		for(Spectating b : values())
 		{
-			if (name.equalsIgnoreCase(b.getName()))
+			if(name.equalsIgnoreCase(b.getName()))
 				return b;
 		}
 		return null;
@@ -61,7 +60,7 @@ public class SpectatingList
 
 	public boolean contains(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return false;
 		return contains(player.getObjectId());
 	}
@@ -94,11 +93,11 @@ public class SpectatingList
 	public void add(int objId, TIntObjectMap<Spectating> player)
 	{
 		String name = player.get(objId).getName();
-		if (StringUtils.isEmpty(name) || name.equalsIgnoreCase(_owner.getName()) || contains(name))
+		if(StringUtils.isEmpty(name) || name.equalsIgnoreCase(_owner.getName()) || contains(name))
 		{
-			if (name.equalsIgnoreCase(_owner.getName()))
+			if(name.equalsIgnoreCase(_owner.getName()))
 				_owner.sendPacket(SystemMsg.YOU_CANNOT_ADD_YOURSELF_TO_YOUR_SURVEILLANCE_LIST);
-			else if (contains(name))
+			else if(contains(name))
 				_owner.sendPacket(SystemMsg.THE_CHARACTER_HAS_ALREADY_BEEN_ADDED_TO_THE_SURVEILLANCE_LIST);
 			return;
 		}
@@ -111,7 +110,7 @@ public class SpectatingList
 		_owner.sendPacket(new ExUserWatcherTargetList(_owner));
 
 		Player plr = GameObjectsStorage.getPlayer(objId);
-		if ((plr != null) && plr.isOnline())
+		if((plr != null) && plr.isOnline())
 		{
 			RelationChangedPacket packet = new RelationChangedPacket(plr, _owner);
 			_owner.sendPacket(packet);
@@ -120,20 +119,20 @@ public class SpectatingList
 
 	public void remove(String name)
 	{
-		if (StringUtils.isEmpty(name))
+		if(StringUtils.isEmpty(name))
 			return;
 
 		int spectatingObjId = 0;
-		for (Spectating s : values())
+		for(Spectating s : values())
 		{
-			if (name.equalsIgnoreCase(s.getName()))
+			if(name.equalsIgnoreCase(s.getName()))
 			{
 				spectatingObjId = s.getObjectId();
 				break;
 			}
 		}
 
-		if (spectatingObjId == 0)
+		if(spectatingObjId == 0)
 		{
 			_owner.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_DELETE_THE_CHARACTER_);
 			return;
@@ -146,7 +145,7 @@ public class SpectatingList
 		CharacterSpectatingListDAO.getInstance().delete(_owner, spectatingObjId);
 
 		Player plr = GameObjectsStorage.getPlayer(spectatingObjId);
-		if ((plr != null) && plr.isOnline())
+		if((plr != null) && plr.isOnline())
 		{
 			RelationChangedPacket packet = new RelationChangedPacket(plr, _owner);
 			_owner.sendPacket(packet);
@@ -157,7 +156,7 @@ public class SpectatingList
 
 	public void notifyChangeName(int spectatingObjectId)
 	{
-		if (_spectatingList.containsKey(spectatingObjectId))
+		if(_spectatingList.containsKey(spectatingObjectId))
 		{
 			_owner.sendPacket(new ExUserWatcherTargetList(_owner));
 		}
@@ -165,16 +164,16 @@ public class SpectatingList
 
 	public void notifySpectatings(boolean login)
 	{
-		for (Player spectating : GameObjectsStorage.getPlayers(false, false))
+		for(Player spectating : GameObjectsStorage.getPlayers(false, false))
 		{
 
 			Spectating thisSpectating = spectating.getSpectatingList().get(_owner.getObjectId());
-			if (thisSpectating == null)
+			if(thisSpectating == null)
 				continue;
 
 			thisSpectating.update(_owner, login);
 
-			if (login)
+			if(login)
 				spectating.sendPacket(new SystemMessagePacket(SystemMsg.C1_FROM_YOUR_SURVEILLANCE_LIST_IS_ONLINE).addString(_owner.getName()));
 			else
 			{

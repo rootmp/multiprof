@@ -7,10 +7,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import l2s.gameserver.dao.AccountRelicsDAO;
+
 import l2s.commons.util.Rnd;
 import l2s.dataparser.data.holder.ItemAnnounceDataHolder;
 import l2s.gameserver.dao.AccountRelicsCollectionDAO;
+import l2s.gameserver.dao.AccountRelicsDAO;
+import l2s.gameserver.data.clientDat.RelicsData;
+import l2s.gameserver.data.xml.holder.OptionDataHolder;
+import l2s.gameserver.data.xml.holder.RelicHolder;
+import l2s.gameserver.data.xml.holder.RelicsCouponHolder;
+import l2s.gameserver.data.xml.holder.RelicsSynthesisHolder;
+import l2s.gameserver.data.xml.holder.SkillHolder;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.components.SystemMsg;
@@ -23,22 +30,16 @@ import l2s.gameserver.network.l2.s2c.relics.ExRelicsSummonResult;
 import l2s.gameserver.network.l2.s2c.relics.ExRelicsUpdateList;
 import l2s.gameserver.network.l2.s2c.relics.ExRelicsUpgrade;
 import l2s.gameserver.skills.SkillEntry;
+import l2s.gameserver.templates.OptionDataTemplate;
+import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.templates.relics.CollectionRelicsInfo;
+import l2s.gameserver.templates.relics.RelicsCollection;
 import l2s.gameserver.templates.relics.RelicsCollectionTemplate;
 import l2s.gameserver.templates.relics.RelicsCoupon;
 import l2s.gameserver.templates.relics.RelicsInfo;
 import l2s.gameserver.templates.relics.RelicsProb;
 import l2s.gameserver.templates.relics.RelicsTemplate;
 import l2s.gameserver.utils.ItemFunctions;
-import l2s.gameserver.data.clientDat.RelicsData;
-import l2s.gameserver.data.xml.holder.SkillHolder;
-import l2s.gameserver.data.xml.holder.OptionDataHolder;
-import l2s.gameserver.data.xml.holder.RelicHolder;
-import l2s.gameserver.data.xml.holder.RelicsCouponHolder;
-import l2s.gameserver.data.xml.holder.RelicsSynthesisHolder;
-import l2s.gameserver.templates.OptionDataTemplate;
-import l2s.gameserver.templates.item.data.ItemData;
-import l2s.gameserver.templates.relics.RelicsCollection;
 
 public class RelicList
 {
@@ -225,7 +226,7 @@ public class RelicList
 		owner.sendPacket(new ExRelicsSummonResult(1, 0, addedRelics));
 		owner.sendPacket(new ExRelicsUpdateList(new ArrayList<>(updatedRelics.values())));
 	}
-	
+
 	public boolean giveRelics(int item_id)
 	{
 		RelicsCoupon coupon = RelicsCouponHolder.getInstance().getCoupon(item_id);
@@ -340,14 +341,14 @@ public class RelicList
 	{
 		List<RelicsProb> relicChances = new ArrayList<>(probList);
 		Collections.shuffle(relicChances);
-		
+
 		long totalChance = relicChances.stream().mapToLong(r -> r.nProb).sum();
 		long randomValue = Rnd.get(totalChance);
 
-		for (RelicsProb prob : relicChances)
+		for(RelicsProb prob : relicChances)
 		{
 			randomValue -= prob.nProb;
-			if (randomValue <= 0)
+			if(randomValue <= 0)
 				return prob;
 		}
 

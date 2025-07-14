@@ -42,12 +42,12 @@ public final class BaseStatsBonusParser extends AbstractParser<BaseStatsBonusHol
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("base_stats_bonus".equalsIgnoreCase(element.getName()))
+			if("base_stats_bonus".equalsIgnoreCase(element.getName()))
 			{
-				for (Element e : element.elements())
+				for(Element e : element.elements())
 				{
 					int value = Integer.parseInt(e.attributeValue("value"));
 					double str = (100. + Integer.parseInt(e.attributeValue("str"))) / 100;

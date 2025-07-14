@@ -13,17 +13,17 @@ public class ExDyeeffectAcquireHiddenskill implements IClientOutgoingPacket
 
 	public ExDyeeffectAcquireHiddenskill()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-    packetWriter.writeD(nResult);
-    packetWriter.writeD(nCategory);
-    packetWriter.writeD(nSlotID);
-    packetWriter.writeD(nHiddenSkillID);
-    packetWriter.writeD(nHiddenSkillLevel);
+		packetWriter.writeD(nResult);
+		packetWriter.writeD(nCategory);
+		packetWriter.writeD(nSlotID);
+		packetWriter.writeD(nHiddenSkillID);
+		packetWriter.writeD(nHiddenSkillLevel);
 		return true;
 	}
 }

@@ -1,6 +1,7 @@
 package l2s.gameserver.network.l2.s2c;
 
 import java.util.List;
+
 import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.relics.RelicsProb;
 
@@ -24,7 +25,7 @@ public class ExRelicsProbList implements IClientOutgoingPacket
 		packetWriter.writeD(Key);// Key
 		packetWriter.writeD(Relics.size());
 
-		for (RelicsProb relic : Relics)
+		for(RelicsProb relic : Relics)
 		{
 			packetWriter.writeD(relic.nRelicsID);// nRelicsID
 			packetWriter.writeQ(relic.nProb);// nProb

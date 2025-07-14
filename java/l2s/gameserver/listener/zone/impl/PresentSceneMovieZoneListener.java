@@ -30,10 +30,8 @@ public class PresentSceneMovieZoneListener implements OnZoneEnterLeaveListener
 		public void run()
 		{
 			Player player = _playerRef.get();
-			if (player == null)
-			{
-				return;
-			}
+			if(player == null)
+			{ return; }
 
 			player.startScenePlayer(_sceneMovie);
 		}
@@ -47,19 +45,15 @@ public class PresentSceneMovieZoneListener implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneEnter(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
 		Player player = actor.getPlayer();
-		if (player == null)
-		{
-			return;
-		}
+		if(player == null)
+		{ return; }
 
 		String var = "@" + _sceneMovie.toString().toLowerCase();
-		if (!player.getVarBoolean(var))
+		if(!player.getVarBoolean(var))
 		{
 			scheduleShowMovie(_sceneMovie, player);
 			player.setVar(var, "true", -1);
@@ -68,8 +62,7 @@ public class PresentSceneMovieZoneListener implements OnZoneEnterLeaveListener
 
 	@Override
 	public void onZoneLeave(Zone zone, Creature cha)
-	{
-	}
+	{}
 
 	public static void scheduleShowMovie(SceneMovie sceneMovie, Player player)
 	{

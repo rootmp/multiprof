@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -32,12 +33,12 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		final int count = packet.readD();
-		if (count * 40 > packet.getReadableBytes() || count > Short.MAX_VALUE || count < 1)
+		if(count * 40 > packet.getReadableBytes() || count > Short.MAX_VALUE || count < 1)
 			return false;
 
 		_items = new ArrayList<BuyItemInfo>();
 
-		for (int i = 0; i < count; i++)
+		for(int i = 0; i < count; i++)
 		{
 			BuyItemInfo item = new BuyItemInfo();
 			item.id = packet.readD();
@@ -45,7 +46,7 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			item.count = packet.readQ();
 			item.price = packet.readQ();
 
-			if (item.count < 1 || item.price < 1)
+			if(item.count < 1 || item.price < 1)
 				break;
 
 			packet.readD(); // Variation 1
@@ -62,11 +63,11 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			packet.readD(); // Visible ID
 
 			int saCount = packet.readC();
-			for (int s = 0; s < saCount; s++)
+			for(int s = 0; s < saCount; s++)
 				packet.readD(); // TODO[UNDERGROUND]: SA 1 Abnormal
 
 			saCount = packet.readC();
-			for (int s = 0; s < saCount; s++)
+			for(int s = 0; s < saCount; s++)
 				packet.readD(); // TODO[UNDERGROUND]: SA 2 Abnormal
 
 			_items.add(item);
@@ -78,10 +79,10 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player buyer = client.getActiveChar();
-		if (buyer == null || _items.isEmpty())
+		if(buyer == null || _items.isEmpty())
 			return;
 
-		if (!TradeHelper.checksIfCanOpenStore(buyer, Player.STORE_PRIVATE_BUY))
+		if(!TradeHelper.checksIfCanOpenStore(buyer, Player.STORE_PRIVATE_BUY))
 		{
 			buyer.sendActionFailed();
 			return;
@@ -91,17 +92,18 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 		long totalCost = 0;
 		try
 		{
-			loop: for (BuyItemInfo i : _items)
+			loop:
+			for(BuyItemInfo i : _items)
 			{
 				ItemTemplate item = ItemHolder.getInstance().getTemplate(i.id);
-				if (item == null || i.id == ItemTemplate.ITEM_ID_ADENA)
+				if(item == null || i.id == ItemTemplate.ITEM_ID_ADENA)
 					continue;
 
-				if (item.isStackable())
+				if(item.isStackable())
 				{
-					for (TradeItem bi : buyList)
+					for(TradeItem bi : buyList)
 					{
-						if (bi.getItemId() == i.id)
+						if(bi.getItemId() == i.id)
 						{
 							bi.setOwnersPrice(i.price);
 							bi.setCount(bi.getCount() + i.count);
@@ -120,14 +122,14 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 				buyList.add(bi);
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			// TODO audit
 			buyer.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			return;
 		}
 
-		if (buyList.size() > buyer.getTradeLimit())
+		if(buyList.size() > buyer.getTradeLimit())
 		{
 			buyer.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			buyer.sendPacket(new PrivateStoreBuyManageList(1, buyer));
@@ -135,7 +137,7 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			return;
 		}
 
-		if (totalCost > buyer.getAdena())
+		if(totalCost > buyer.getAdena())
 		{
 			buyer.sendPacket(SystemMsg.THE_PURCHASE_PRICE_IS_HIGHER_THAN_THE_AMOUNT_OF_MONEY_THAT_YOU_HAVE_AND_SO_YOU_CANNOT_OPEN_A_PERSONAL_STORE);
 			buyer.sendPacket(new PrivateStoreBuyManageList(1, buyer));
@@ -143,7 +145,7 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			return;
 		}
 
-		if (!buyList.isEmpty())
+		if(!buyList.isEmpty())
 		{
 			buyer.setBuyList(buyList);
 			buyer.setPrivateStoreType(Player.STORE_PRIVATE_BUY);
@@ -151,7 +153,7 @@ public class SetPrivateStoreBuyList implements IClientIncomingPacket
 			buyer.broadcastPrivateStoreInfo();
 			buyer.sitDown(null);
 			buyer.broadcastCharInfo();
-			if (buyer.getRace() == Race.SYLPH)
+			if(buyer.getRace() == Race.SYLPH)
 				buyer.addAbnormalBoard();
 		}
 

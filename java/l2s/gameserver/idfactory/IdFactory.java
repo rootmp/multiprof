@@ -19,36 +19,35 @@ public abstract class IdFactory
 {
 	private static final Logger _log = LoggerFactory.getLogger(IdFactory.class);
 
-	public static final String[][] EXTRACT_OBJ_ID_TABLES =
-	{
-		{
-			"characters",
-			"obj_id"
-		},
-		{
-			"items",
-			"object_id"
-		},
-		{
-			"clan_data",
-			"clan_id"
-		},
-		{
-			"ally_data",
-			"ally_id"
-		},
-		{
-			"pets",
-			"objId"
-		},
-		{
-			"couples",
-			"id"
-		},
-		{
-			"fences",
-			"object_id"
-		}
+	public static final String[][] EXTRACT_OBJ_ID_TABLES = {
+			{
+					"characters",
+					"obj_id"
+			},
+			{
+					"items",
+					"object_id"
+			},
+			{
+					"clan_data",
+					"clan_id"
+			},
+			{
+					"ally_data",
+					"ally_id"
+			},
+			{
+					"pets",
+					"objId"
+			},
+			{
+					"couples",
+					"id"
+			},
+			{
+					"fences",
+					"object_id"
+			}
 	};
 
 	public static final int FIRST_OID = 0x10000000;
@@ -83,7 +82,7 @@ public abstract class IdFactory
 			st.executeUpdate("UPDATE characters SET online = 0");
 			_log.info("IdFactory: Clear characters online status.");
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("", e);
 		}
@@ -106,9 +105,9 @@ public abstract class IdFactory
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT item_id FROM items_to_delete");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
-				if (itemsToDelete.length() > 0)
+				if(itemsToDelete.length() > 0)
 				{
 					itemsToDelete.append(",");
 				}
@@ -121,7 +120,7 @@ public abstract class IdFactory
 			statement = con.prepareStatement("DELETE FROM items_to_delete");
 			statement.execute();
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("Error while select items for global remove: ", e);
 		}
@@ -130,7 +129,7 @@ public abstract class IdFactory
 			DbUtils.closeQuietly(con, statement);
 		}
 
-		if (itemsToDelete.length() > 0)
+		if(itemsToDelete.length() > 0)
 		{
 			try
 			{
@@ -143,7 +142,7 @@ public abstract class IdFactory
 				statement.setString(1, itemsToDelete.toString());
 				statement.execute();
 			}
-			catch (SQLException e)
+			catch(SQLException e)
 			{
 				_log.error("Error while global remove items:", e);
 			}
@@ -271,7 +270,7 @@ public abstract class IdFactory
 
 			_log.info("IdFactory: Cleaned " + cleanCount + " elements from database in " + ((System.currentTimeMillis() - cleanupStart) / 1000) + "sec.");
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("", e);
 		}
@@ -292,11 +291,11 @@ public abstract class IdFactory
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			st = con.createStatement();
-			for (final String[] table : EXTRACT_OBJ_ID_TABLES)
+			for(final String[] table : EXTRACT_OBJ_ID_TABLES)
 			{
 				rs = st.executeQuery("SELECT " + table[1] + " FROM " + table[0]);
 				int size = objectIds.size();
-				while (rs.next())
+				while(rs.next())
 				{
 					objectIds.add(rs.getInt(1));
 				}
@@ -304,7 +303,7 @@ public abstract class IdFactory
 				DbUtils.close(rs);
 
 				size = objectIds.size() - size;
-				if (size > 0)
+				if(size > 0)
 				{
 					_log.info("IdFactory: Extracted " + size + " used id's from " + table[0]);
 				}

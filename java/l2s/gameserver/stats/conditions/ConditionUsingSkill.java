@@ -18,7 +18,7 @@ public class ConditionUsingSkill extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (env.skill == null)
+		if(env.skill == null)
 			return false;
 		else
 			return env.skill.getId() == _id;

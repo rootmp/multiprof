@@ -22,7 +22,7 @@ public class EffectDamageOnSkillUse extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		return true;
@@ -31,13 +31,13 @@ public class EffectDamageOnSkillUse extends EffectHandler
 	@Override
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isCastingNow())
+		if(effected.isCastingNow())
 		{
 			double damage = getValue();
-			if (Rnd.chance(5))
+			if(Rnd.chance(5))
 			{
 				SkillEntry castingSkillEntry = effected.getSkillCast(SkillCastingType.NORMAL).getSkillEntry();
-				if (castingSkillEntry != null && castingSkillEntry.getTemplate().isMagic())
+				if(castingSkillEntry != null && castingSkillEntry.getTemplate().isMagic())
 				{
 					effected.reduceCurrentHp(damage, effector, getSkill(), true, true, false, false, false, false, true, true, false, false, false, 0, false);
 

@@ -34,7 +34,7 @@ public class ExPledgeClassicRaidInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_lastRaidPhase);
 		packetWriter.writeD(_skills.size());
-		for (Skill skill : _skills)
+		for(Skill skill : _skills)
 		{
 			packetWriter.writeD(skill.getId());
 			packetWriter.writeD(skill.getLevel());

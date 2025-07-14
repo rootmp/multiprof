@@ -47,7 +47,7 @@ public class DecoyInstance extends MonsterInstance
 	protected void onDeath(Creature killer)
 	{
 		super.onDeath(killer);
-		if (_hateSpam != null)
+		if(_hateSpam != null)
 		{
 			_hateSpam.cancel(false);
 			_hateSpam = null;
@@ -63,7 +63,7 @@ public class DecoyInstance extends MonsterInstance
 			double newTimeRemaining;
 			decTimeRemaining(1000);
 			newTimeRemaining = getTimeRemaining();
-			if (newTimeRemaining < 0)
+			if(newTimeRemaining < 0)
 				unSummon();
 		}
 	}
@@ -87,12 +87,12 @@ public class DecoyInstance extends MonsterInstance
 
 	public void unSummon()
 	{
-		if (_decoyLifeTask != null)
+		if(_decoyLifeTask != null)
 		{
 			_decoyLifeTask.cancel(false);
 			_decoyLifeTask = null;
 		}
-		if (_hateSpam != null)
+		if(_hateSpam != null)
 		{
 			_hateSpam.cancel(false);
 			_hateSpam = null;
@@ -139,7 +139,7 @@ public class DecoyInstance extends MonsterInstance
 	protected void onDelete()
 	{
 		Player owner = getPlayer();
-		if (owner != null)
+		if(owner != null)
 			owner.removeDecoy(this);
 		super.onDelete();
 	}
@@ -147,9 +147,9 @@ public class DecoyInstance extends MonsterInstance
 	@Override
 	public void onAction(Player player, boolean shift)
 	{
-		if (player.getTarget() != this)
+		if(player.getTarget() != this)
 			player.setTarget(this);
-		else if (isAutoAttackable(player))
+		else if(isAutoAttackable(player))
 			player.getAI().Attack(this, false, shift);
 	}
 
@@ -157,7 +157,7 @@ public class DecoyInstance extends MonsterInstance
 	public double getCollisionRadius()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return 0;
 		return player.getCollisionRadius();
 	}
@@ -166,7 +166,7 @@ public class DecoyInstance extends MonsterInstance
 	public double getCollisionHeight()
 	{
 		Player player = getPlayer();
-		if (player == null)
+		if(player == null)
 			return 0;
 		return player.getCollisionHeight();
 	}
@@ -174,8 +174,8 @@ public class DecoyInstance extends MonsterInstance
 	@Override
 	public List<IClientOutgoingPacket> addPacketList(Player forPlayer, Creature dropper)
 	{
-		if (!isInCombat())
-			return Collections.<IClientOutgoingPacket>singletonList(new ExCharInfo(this, forPlayer));
+		if(!isInCombat())
+			return Collections.<IClientOutgoingPacket> singletonList(new ExCharInfo(this, forPlayer));
 		else
 		{
 			List<IClientOutgoingPacket> list = new ArrayList<IClientOutgoingPacket>(2);
@@ -194,10 +194,10 @@ public class DecoyInstance extends MonsterInstance
 	public void transferOwnerBuffs()
 	{
 		Collection<Abnormal> abnormals = getPlayer().getAbnormalList().values();
-		for (Abnormal a : abnormals)
+		for(Abnormal a : abnormals)
 		{
 			Skill skill = a.getSkill();
-			if (a.isOffensive() || skill.isToggle() || skill.isCubicSkill())
+			if(a.isOffensive() || skill.isToggle() || skill.isCubicSkill())
 				continue;
 
 			Abnormal abnormal = new Abnormal(a.getEffector(), this, a);

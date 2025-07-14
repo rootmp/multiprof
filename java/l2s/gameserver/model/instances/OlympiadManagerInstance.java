@@ -31,30 +31,32 @@ public class OlympiadManagerInstance extends NpcInstance
 	@Override
 	public void onMenuSelect(Player player, int ask, long reply, int state)
 	{
-		if (ask == -50)
+		if(ask == -50)
 		{
-			if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+			if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator001.htm", false);
 			else
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator002.htm", false);
 		}
-		else if (ask == -51)
+		else if(ask == -51)
 		{
-			if (!Olympiad.isRegistered(player, false))
+			if(!Olympiad.isRegistered(player, false))
 			{
-				if (!Olympiad.isRegistrationActive())
+				if(!Olympiad.isRegistrationActive())
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010p.htm", false);
-				else if (Olympiad.isClassedBattlesAllowed())
-					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010a.htm", false, "<?olympiad_round?>", Olympiad.getCurrentCycle(), "<?olympiad_week?>", Olympiad.getCompWeek(), "<?olympiad_participant?>", Olympiad.getParticipantsCount());
+				else if(Olympiad.isClassedBattlesAllowed())
+					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH
+							+ "olympiad_operator010a.htm", false, "<?olympiad_round?>", Olympiad.getCurrentCycle(), "<?olympiad_week?>", Olympiad.getCompWeek(), "<?olympiad_participant?>", Olympiad.getParticipantsCount());
 				else
-					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010b.htm", false, "<?olympiad_round?>", Olympiad.getCurrentCycle(), "<?olympiad_week?>", Olympiad.getCompWeek(), "<?olympiad_participant?>", Olympiad.getParticipantsCount());
+					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH
+							+ "olympiad_operator010b.htm", false, "<?olympiad_round?>", Olympiad.getCurrentCycle(), "<?olympiad_week?>", Olympiad.getCompWeek(), "<?olympiad_participant?>", Olympiad.getParticipantsCount());
 			}
 			else
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010n.htm", false);
 		}
-		else if (ask == -52)
+		else if(ask == -52)
 		{
-			switch ((int) reply)
+			switch((int) reply)
 			{
 				case 0:
 				{
@@ -75,11 +77,15 @@ public class OlympiadManagerInstance extends NpcInstance
 				{
 					int waitingCounts = Olympiad.getWaitingList();
 
-					String WaitingCount = Olympiad.getCompType() != CompType.CLASSED || waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
-					String TeamWaitingCount = Olympiad.getCompType() != CompType.TEAM || waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
-					String ClassFreeWaitingCount = Olympiad.getCompType() != CompType.NON_CLASSED || waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
+					String WaitingCount = Olympiad.getCompType() != CompType.CLASSED
+							|| waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
+					String TeamWaitingCount = Olympiad.getCompType() != CompType.TEAM
+							|| waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
+					String ClassFreeWaitingCount = Olympiad.getCompType() != CompType.NON_CLASSED
+							|| waitingCounts < 100 ? HtmlUtils.htmlNpcString(1000504, 100) : HtmlUtils.htmlNpcString(1000505, 100);
 
-					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010f.htm", false, "<?WaitingCount?>", WaitingCount, "<?TeamWaitingCount?>", TeamWaitingCount, "<?ClassFreeWaitingCount?>", ClassFreeWaitingCount);
+					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH
+							+ "olympiad_operator010f.htm", false, "<?WaitingCount?>", WaitingCount, "<?TeamWaitingCount?>", TeamWaitingCount, "<?ClassFreeWaitingCount?>", ClassFreeWaitingCount);
 					break;
 				}
 				case 4:
@@ -89,7 +95,8 @@ public class OlympiadManagerInstance extends NpcInstance
 				}
 				case 5:
 				{
-					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010h.htm", false, "<?WaitingCount?>", Olympiad.getParticipantPoints(player.getObjectId()));
+					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH
+							+ "olympiad_operator010h.htm", false, "<?WaitingCount?>", Olympiad.getParticipantPoints(player.getObjectId()));
 					break;
 				}
 				case 6:
@@ -100,30 +107,30 @@ public class OlympiadManagerInstance extends NpcInstance
 				}
 			}
 		}
-		else if (ask == -53)
+		else if(ask == -53)
 		{
-			if (reply == 0)
+			if(reply == 0)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator001.htm", false);
-			else if (reply == 1)
+			else if(reply == 1)
 			{
-				if (player.isBaseClassActive())
+				if(player.isBaseClassActive())
 				{
-					if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+					if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					{
-						if (Olympiad.getParticipantPoints(player.getObjectId()) > 0)
+						if(Olympiad.getParticipantPoints(player.getObjectId()) > 0)
 						{
-							if (!player.isQuestContinuationPossible(true))
+							if(!player.isQuestContinuationPossible(true))
 								return;
 
-							if (Olympiad.registerParticipant(player))
+							if(Olympiad.registerParticipant(player))
 								showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010d.htm", false); // TODO:
-																															// Проверить
-																															// на
-																															// оффе,
-																															// надо
-																															// ли
-																															// данное
-																															// сообщение.
+							// Проверить
+							// на
+							// оффе,
+							// надо
+							// ли
+							// данное
+							// сообщение.
 						}
 						else
 							showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010i.htm", false);
@@ -135,30 +142,30 @@ public class OlympiadManagerInstance extends NpcInstance
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010c.htm", false);
 			}
 		}
-		else if (ask == -54)
+		else if(ask == -54)
 		{
-			if (reply == 0)
+			if(reply == 0)
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator001.htm", false);
-			else if (reply == 1)
+			else if(reply == 1)
 			{
-				if (player.isBaseClassActive())
+				if(player.isBaseClassActive())
 				{
-					if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+					if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					{
-						if (Olympiad.getParticipantPoints(player.getObjectId()) > 0)
+						if(Olympiad.getParticipantPoints(player.getObjectId()) > 0)
 						{
-							if (!player.isQuestContinuationPossible(true))
+							if(!player.isQuestContinuationPossible(true))
 								return;
 
-							if (Olympiad.registerParticipant(player))
+							if(Olympiad.registerParticipant(player))
 								showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010e.htm", false); // TODO:
-																															// Проверить
-																															// на
-																															// оффе,
-																															// надо
-																															// ли
-																															// данное
-																															// сообщение.
+							// Проверить
+							// на
+							// оффе,
+							// надо
+							// ли
+							// данное
+							// сообщение.
 						}
 						else
 							showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010i.htm", false);
@@ -170,19 +177,19 @@ public class OlympiadManagerInstance extends NpcInstance
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010c.htm", false);
 			}
 		}
-		else if (ask == -55)
+		else if(ask == -55)
 		{
 			showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator030.htm", false);
 		}
-		else if (ask == -56)
+		else if(ask == -56)
 		{
 			//
 		}
-		else if (ask == -57)
+		else if(ask == -57)
 		{
 			//
 		}
-		else if (ask == -58)
+		else if(ask == -58)
 		{
 			Olympiad.unregisterParticipant(player);
 		}
@@ -238,36 +245,36 @@ public class OlympiadManagerInstance extends NpcInstance
 		 * myself->FHTML_SetStr(fhtml0, "Status" + i0, s0); } }
 		 * myself->ShowFHTML(talker, fhtml0); } }
 		 */
-		else if (ask == -60)
+		else if(ask == -60)
 		{
-			if (reply == 0)
+			if(reply == 0)
 			{
-				if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+				if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator001.htm", false);
 				else
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator002.htm", false);
 			}
 		}
-		else if (ask == -61)
+		else if(ask == -61)
 		{
 			showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator020.htm", false);
 		}
-		else if (ask == -70)
+		else if(ask == -70)
 		{
-			if (reply == 0)
+			if(reply == 0)
 			{
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator001.htm", false);
 			}
-			else if (reply == 1)
+			else if(reply == 1)
 			{
 				int passes = Olympiad.getParticipantRewardCount(player, false);
-				if (passes == 0)
+				if(passes == 0)
 				{
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator031a.htm", false);
 				}
-				else if (passes < 20)
+				else if(passes < 20)
 				{
-					if (player.isHero() || Hero.getInstance().isInactiveHero(player.getObjectId()))
+					if(player.isHero() || Hero.getInstance().isInactiveHero(player.getObjectId()))
 					{
 						showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator031b.htm", false);
 					}
@@ -281,32 +288,33 @@ public class OlympiadManagerInstance extends NpcInstance
 					showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator031.htm", false);
 				}
 			}
-			else if (reply == 2)
+			else if(reply == 2)
 			{
-				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator010l.htm", false, "<?WaitingCount?>", Olympiad.getParticipantPointsPast(player.getObjectId()));
+				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH
+						+ "olympiad_operator010l.htm", false, "<?WaitingCount?>", Olympiad.getParticipantPointsPast(player.getObjectId()));
 			}
-			else if (reply == 603)
+			else if(reply == 603)
 			{
 				MultiSellHolder.getInstance().SeparateAndSend((int) reply, player, 0);
 			}
 		}
-		else if (ask == -71)
+		else if(ask == -71)
 		{
-			if (reply == 0)
+			if(reply == 0)
 			{
 				showChatWindow(player, Olympiad.OLYMPIAD_HTML_PATH + "olympiad_operator030.htm", false);
 			}
-			else if (reply == 1)
+			else if(reply == 1)
 			{
-				if (!player.isQuestContinuationPossible(true))
+				if(!player.isQuestContinuationPossible(true))
 					return;
 
 				int passes = Olympiad.getParticipantRewardCount(player, true);
-				if (passes > 0)
+				if(passes > 0)
 					ItemFunctions.addItem(player, Config.ALT_OLY_COMP_RITEM, passes);
 			}
 		}
-		else if (ask == -80)
+		else if(ask == -80)
 		{
 			//
 		}
@@ -320,9 +328,9 @@ public class OlympiadManagerInstance extends NpcInstance
 		 * index + "?>", String.valueOf(index)); html.replace("<?Name" + index + "?>",
 		 * names.get(index - 1)); } } player.sendPacket(html); }
 		 */
-		else if (ask == -130)
+		else if(ask == -130)
 		{
-			if (!Config.ENABLE_OLYMPIAD_SPECTATING)
+			if(!Config.ENABLE_OLYMPIAD_SPECTATING)
 				return;
 
 			Olympiad.addObserver((int) reply, player);
@@ -335,28 +343,28 @@ public class OlympiadManagerInstance extends NpcInstance
 	public void onBypassFeedback(Player player, String command)
 	{
 		// до всех проверок
-		if (command.startsWith("_olympiad?")) // _olympiad?command=move_op_field&field=1
+		if(command.startsWith("_olympiad?")) // _olympiad?command=move_op_field&field=1
 		{
-			if (command.startsWith("_olympiad?command=op_field_list"))
+			if(command.startsWith("_olympiad?command=op_field_list"))
 			{
-				if (!Olympiad.inCompPeriod() || Olympiad.isOlympiadEnd())
+				if(!Olympiad.inCompPeriod() || Olympiad.isOlympiadEnd())
 				{
 					player.sendPacket(SystemMsg.THE_GRAND_OLYMPIAD_GAMES_ARE_NOT_CURRENTLY_IN_PROGRESS);
 					return;
 				}
 				player.sendPacket(new ExReceiveOlympiadPacket.MatchList());
 			}
-			else if (command.startsWith("_olympiad?command=move_op_field"))
+			else if(command.startsWith("_olympiad?command=move_op_field"))
 			{
 				String[] ar = command.split("&");
-				if (ar.length < 2)
+				if(ar.length < 2)
 					return;
 
-				if (!Config.ENABLE_OLYMPIAD_SPECTATING)
+				if(!Config.ENABLE_OLYMPIAD_SPECTATING)
 					return;
 
 				String[] command2 = ar[1].split("=");
-				if (command2.length < 2)
+				if(command2.length < 2)
 					return;
 
 				Olympiad.addObserver(Integer.parseInt(command2[1]) - 1, player);
@@ -376,10 +384,10 @@ public class OlympiadManagerInstance extends NpcInstance
 	@Override
 	public void showChatWindow(Player player, int val, boolean firstTalk, Object... arg)
 	{
-		if (val == 0) // Grand Olympiad Manager
+		if(val == 0) // Grand Olympiad Manager
 		{
 			String fileName = Olympiad.OLYMPIAD_HTML_PATH;
-			if (player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
+			if(player.getClassLevel().ordinal() >= ClassLevel.SECOND.ordinal() && player.getLevel() >= Config.OLYMPIAD_MIN_LEVEL)
 				fileName += "olympiad_operator001.htm";
 			else
 				fileName += "olympiad_operator002.htm";
@@ -393,6 +401,7 @@ public class OlympiadManagerInstance extends NpcInstance
 	@Override
 	public boolean canPassPacket(Player player, Class<? extends IClientIncomingPacket> packet, Object... arg)
 	{
-		return packet == RequestBypassToServer.class && arg.length == 1 && (arg[0].equals("_olympiad?command=op_field_list") || arg[0].equals("_olympiad?command=move_op_field"));
+		return packet == RequestBypassToServer.class && arg.length == 1
+				&& (arg[0].equals("_olympiad?command=op_field_list") || arg[0].equals("_olympiad?command=move_op_field"));
 	}
 }

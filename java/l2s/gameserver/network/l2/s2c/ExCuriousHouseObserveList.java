@@ -49,7 +49,7 @@ public class ExCuriousHouseObserveList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_arenas.size()); // Arena Count
-		for (ArenaInfo arena : _arenas)
+		for(ArenaInfo arena : _arenas)
 		{
 			packetWriter.writeD(arena.id); // Arena
 			packetWriter.writeS(arena.unk); // UNK

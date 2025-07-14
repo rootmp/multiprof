@@ -48,8 +48,8 @@ public final class EtcItemTemplate extends ItemTemplate
 		BEAST_SPIRITSHOT(ItemHandler.BEAST_SPIRITSHOT_HANDLER, ExItemType.SPIRITSHOT),
 		BEAST_BLESSED_SPIRITSHOT(ItemHandler.BEAST_BLESSED_SPIRITSHOT_HANDLER, ExItemType.SPIRITSHOT),
 		FISHSHOT(ItemHandler.FISHSHOT_HANDLER, ExItemType.SOULSHOT), // TODO:
-																		// Check
-																		// ExItemType
+		// Check
+		// ExItemType
 		PET_SUPPLIES(ItemHandler.SKILL_REDUCE_ITEM_HANDLER, ExItemType.PET_SUPPLIES),
 		EXTRACTABLE(ItemHandler.CAPSULED_ITEM_HANDLER, ExItemType.OTHER_ITEMS),
 		CRYSTAL(ItemHandler.DEFAULT_HANDLER, ExItemType.CRYSTAL),
@@ -114,7 +114,7 @@ public final class EtcItemTemplate extends ItemTemplate
 		_reuseDelay = set.getInteger("reuse_delay", 0);
 		_type = set.getEnum("type", EtcItemType.class, EtcItemType.OTHER);
 		_type1 = TYPE1_ITEM_QUESTITEM_ADENA;
-		switch (getItemType())
+		switch(getItemType())
 		{
 			case QUEST:
 				_type2 = TYPE2_QUEST;
@@ -129,11 +129,11 @@ public final class EtcItemTemplate extends ItemTemplate
 		_handler = getItemType().getHandler();
 		_exType = set.getEnum("ex_type", ExItemType.class, getItemType().getExType());
 
-		if (_handlerName != null && !_handlerName.isEmpty())
+		if(_handlerName != null && !_handlerName.isEmpty())
 		{
 			_handler = ItemHandler.getInstance().getItemHandler(_handlerName);
 
-			if (_handler == null)
+			if(_handler == null)
 				_log.warn("Cannot find item handler: " + _handlerName + " for item ID[" + getItemId() + "]!");
 		}
 
@@ -145,29 +145,30 @@ public final class EtcItemTemplate extends ItemTemplate
 	{
 		super.init();
 
-		if (getAutouseType() == ItemAutouseType.BUFF)
+		if(getAutouseType() == ItemAutouseType.BUFF)
 		{
 			ConditionLogicAnd cond = new ConditionLogicAnd();
 			cond.setSystemMsg(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS.getId());
-			for (SkillEntry skillEntry : getAttachedSkills())
+			for(SkillEntry skillEntry : getAttachedSkills())
 			{
 				Skill skill = skillEntry.getTemplate();
-				if (skill.isActive())
+				if(skill.isActive())
 				{
 					AbnormalType abnormalType = skill.getAbnormalType();
-					if (abnormalType != AbnormalType.NONE)
+					if(abnormalType != AbnormalType.NONE)
 						cond.add(new ConditionLogicNot(new ConditionPlayerHasBuff(abnormalType, skill.getAbnormalLvl())));
 
-					for (EffectTemplate effectTemplate : skill.getEffectTemplates(EffectUseType.NORMAL_INSTANT))
+					for(EffectTemplate effectTemplate : skill.getEffectTemplates(EffectUseType.NORMAL_INSTANT))
 					{
 						EffectHandler effectHandler = effectTemplate.getHandler();
-						if (effectHandler != null && (effectHandler.getClass() == i_call_skill.class || i_call_skill.class.isAssignableFrom(effectHandler.getClass())))
+						if(effectHandler != null
+								&& (effectHandler.getClass() == i_call_skill.class || i_call_skill.class.isAssignableFrom(effectHandler.getClass())))
 						{
 							SkillEntry effectSkillEntry = ((i_call_skill) effectHandler).getSkillEntry();
-							if (effectSkillEntry != null)
+							if(effectSkillEntry != null)
 							{
 								AbnormalType abnormalType1 = effectSkillEntry.getTemplate().getAbnormalType();
-								if (abnormalType1 != AbnormalType.NONE)
+								if(abnormalType1 != AbnormalType.NONE)
 									cond.add(new ConditionLogicNot(new ConditionPlayerHasBuff(abnormalType1, effectSkillEntry.getTemplate().getAbnormalLvl())));
 							}
 						}
@@ -175,7 +176,7 @@ public final class EtcItemTemplate extends ItemTemplate
 				}
 			}
 
-			if (cond._conditions.length > 0)
+			if(cond._conditions.length > 0)
 				addCondition(cond);
 		}
 	}

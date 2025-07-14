@@ -17,10 +17,10 @@ public class DefuseTrap extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (target == null || !target.isTrap())
+		if(target == null || !target.isTrap())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
@@ -32,10 +32,10 @@ public class DefuseTrap extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isTrap())
+		if(target.isTrap())
 		{
 			TrapInstance trap = (TrapInstance) target;
-			if (trap.getLevel() <= getPower())
+			if(trap.getLevel() <= getPower())
 				trap.deleteMe();
 		}
 	}

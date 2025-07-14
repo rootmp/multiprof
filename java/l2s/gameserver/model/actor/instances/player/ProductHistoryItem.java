@@ -52,6 +52,7 @@ public class ProductHistoryItem
 	@Override
 	public String toString()
 	{
-		return "ProductHistoryItem[product ID=" + _product.getId() + ", purchased count=" + _purchasedCount + ", last purchase time=" + _lastPurchaseTime + "]";
+		return "ProductHistoryItem[product ID=" + _product.getId() + ", purchased count=" + _purchasedCount + ", last purchase time=" + _lastPurchaseTime
+				+ "]";
 	}
 }

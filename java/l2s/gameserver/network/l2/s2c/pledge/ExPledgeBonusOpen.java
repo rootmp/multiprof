@@ -44,18 +44,18 @@ public class ExPledgeBonusOpen implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		//ddcdccddcdcc
-		packetWriter.writeD(PledgeBonusUtils.MAX_ATTENDANCE_PROGRESS);    // Attendance requirement (max)
-		packetWriter.writeD(_attendanceProgress);    // Current amount
-		packetWriter.writeC(2);	// Reward Type (0 - Skill, 1 - Item)
-		packetWriter.writeD(_yesterdayAttendanceRewardId);    // Yesterday's reward
-		packetWriter.writeC(_yesterdayAttendanceReward);    // Reward level
-		packetWriter.writeC(_attendanceRewardReceivable);    // Receivable
-		packetWriter.writeD(PledgeBonusUtils.MAX_HUNTING_PROGRESS);    // Hunting requirement (max)
-		packetWriter.writeD(_huntingProgress);    // Current amount
-		packetWriter.writeC(2);	// Reward Type (0 - Skill, 1 - Item)
-		packetWriter.writeD(_yesterdayHuntingRewardId);    // Yesterday's reward
-		packetWriter.writeC(_yesterdayHuntingReward);    // Reward level
-		packetWriter.writeC(_huntingRewardReceivable);    // Receivable
+		packetWriter.writeD(PledgeBonusUtils.MAX_ATTENDANCE_PROGRESS); // Attendance requirement (max)
+		packetWriter.writeD(_attendanceProgress); // Current amount
+		packetWriter.writeC(2); // Reward Type (0 - Skill, 1 - Item)
+		packetWriter.writeD(_yesterdayAttendanceRewardId); // Yesterday's reward
+		packetWriter.writeC(_yesterdayAttendanceReward); // Reward level
+		packetWriter.writeC(_attendanceRewardReceivable); // Receivable
+		packetWriter.writeD(PledgeBonusUtils.MAX_HUNTING_PROGRESS); // Hunting requirement (max)
+		packetWriter.writeD(_huntingProgress); // Current amount
+		packetWriter.writeC(2); // Reward Type (0 - Skill, 1 - Item)
+		packetWriter.writeD(_yesterdayHuntingRewardId); // Yesterday's reward
+		packetWriter.writeC(_yesterdayHuntingReward); // Reward level
+		packetWriter.writeC(_huntingRewardReceivable); // Receivable
 		return true;
 	}
 }

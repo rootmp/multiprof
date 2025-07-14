@@ -15,6 +15,8 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.collections.MultiValueSet;
 import l2s.gameserver.ai.NpcAI;
 import l2s.gameserver.data.string.NpcNameHolder;
@@ -38,9 +40,6 @@ import l2s.gameserver.templates.CreatureTemplate;
 import l2s.gameserver.templates.StatsSet;
 import l2s.gameserver.templates.TeleportLocation;
 import l2s.gameserver.templates.skill.EffectTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class NpcTemplate extends CreatureTemplate
 {
@@ -74,7 +73,7 @@ public class NpcTemplate extends CreatureTemplate
 	public final int rhand;
 	public final int lhand;
 	public final int chest;
-	
+
 	public final double rateHp;
 
 	private Faction faction = Faction.NONE;
@@ -206,7 +205,7 @@ public class NpcTemplate extends CreatureTemplate
 		{
 			return _constructorType.newInstance(IdFactory.getInstance().getNextId(), this, set);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Unable to create instance of NPC " + _npcId, e);
 		}
@@ -225,19 +224,19 @@ public class NpcTemplate extends CreatureTemplate
 		String ai = npc.getParameter("ai_type", _aiType);
 
 		Constructor<NpcAI> constructorAI = AI_CONSTRUCTORS.get(ai);
-		if (constructorAI == null)
+		if(constructorAI == null)
 		{
 			Class<NpcAI> classAI = null;
 			try
 			{
 				classAI = (Class<NpcAI>) Class.forName("l2s.gameserver.ai." + ai);
 			}
-			catch (ClassNotFoundException e)
+			catch(ClassNotFoundException e)
 			{
 				classAI = (Class<NpcAI>) Scripts.getInstance().getClasses().get("ai." + ai);
 			}
 
-			if (classAI == null)
+			if(classAI == null)
 			{
 				classAI = NpcAI.class;
 				_log.error("Not found ai class for ai: " + ai + ". NpcId: " + npc.getNpcId());
@@ -245,7 +244,7 @@ public class NpcTemplate extends CreatureTemplate
 
 			constructorAI = (Constructor<NpcAI>) classAI.getConstructors()[0];
 
-			if (classAI.isAnnotationPresent(Deprecated.class))
+			if(classAI.isAnnotationPresent(Deprecated.class))
 				_log.error("Ai type: " + ai + ", is deprecated. NpcId: " + npc.getNpcId());
 
 			AI_CONSTRUCTORS.put(ai, constructorAI);
@@ -255,7 +254,7 @@ public class NpcTemplate extends CreatureTemplate
 		{
 			return constructorAI.newInstance(npc);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Unable to create ai of NPC " + npc.getNpcId(), e);
 		}
@@ -271,23 +270,22 @@ public class NpcTemplate extends CreatureTemplate
 		{
 			classType = (Class<NpcInstance>) Class.forName("l2s.gameserver.model.instances." + type + "Instance");
 		}
-		catch (ClassNotFoundException e)
+		catch(ClassNotFoundException e)
 		{
 			classType = (Class<NpcInstance>) Scripts.getInstance().getClasses().get("npc.model." + type + "Instance");
 		}
 
-		if (classType == null)
+		if(classType == null)
 			_log.error("Not found type class for type: " + type + ". NpcId: " + _npcId);
 
-		if (_npcId == 0) // temp
+		if(_npcId == 0) // temp
 		{
 			try
 			{
 				classType = (Class<NpcInstance>) Class.forName("l2s.gameserver.model.instances.NpcInstance");
 			}
-			catch (ClassNotFoundException e)
-			{
-			}
+			catch(ClassNotFoundException e)
+			{}
 
 			_classType = classType;
 			_constructorType = (Constructor<NpcInstance>) _classType.getConstructors()[0];
@@ -298,7 +296,7 @@ public class NpcTemplate extends CreatureTemplate
 			_constructorType = (Constructor<NpcInstance>) _classType.getConstructors()[0];
 		}
 
-		if (_classType.isAnnotationPresent(Deprecated.class))
+		if(_classType.isAnnotationPresent(Deprecated.class))
 			_log.error("Npc type: " + type + ", is deprecated. NpcId: " + _npcId);
 
 		// TODO [G1ta0] сделать поле в соотвествующих классах
@@ -322,7 +320,7 @@ public class NpcTemplate extends CreatureTemplate
 
 	public void addRewardList(RewardList rewardList)
 	{
-		if (_rewardList.isEmpty())
+		if(_rewardList.isEmpty())
 			_rewardList = new CopyOnWriteArrayList<RewardList>();
 
 		_rewardList.add(rewardList);
@@ -340,7 +338,7 @@ public class NpcTemplate extends CreatureTemplate
 
 	public void addMinion(MinionData minion)
 	{
-		if (_minions.isEmpty())
+		if(_minions.isEmpty())
 			_minions = new ArrayList<MinionData>(1);
 
 		_minions.add(minion);
@@ -361,10 +359,11 @@ public class NpcTemplate extends CreatureTemplate
 		_skills.put(skill.getId(), skill);
 
 		// TODO [G1ta0] перенести в AI
-		if (skill.isNotUsedByAI() || skill.getTargetType() == SkillTargetType.TARGET_NONE || skill.getSkillType() == SkillType.NOTDONE || !skill.isActive())
+		if(skill.isNotUsedByAI() || skill.getTargetType() == SkillTargetType.TARGET_NONE || skill.getSkillType() == SkillType.NOTDONE
+				|| !skill.isActive())
 			return;
 
-		switch (skill.getSkillType())
+		switch(skill.getSkillType())
 		{
 			case PDAM:
 			case MANADAM:
@@ -374,30 +373,30 @@ public class NpcTemplate extends CreatureTemplate
 			{
 				boolean added = false;
 
-				for (EffectTemplate eff : skill.getEffectTemplates(EffectUseType.NORMAL))
+				for(EffectTemplate eff : skill.getEffectTemplates(EffectUseType.NORMAL))
 				{
 					String effName = eff.getName();
-					if (effName.equalsIgnoreCase("Stun"))
+					if(effName.equalsIgnoreCase("Stun"))
 					{
 						_stunSkills = ArrayUtils.add(_stunSkills, skill);
 						added = true;
 					}
-					else if (effName.equalsIgnoreCase("t_hp"))
+					else if(effName.equalsIgnoreCase("t_hp"))
 					{
-						if (eff.getValue() < 0)
+						if(eff.getValue() < 0)
 						{
 							_dotSkills = ArrayUtils.add(_dotSkills, skill);
 							added = true;
 						}
 					}
-					else if (effName.equalsIgnoreCase("ManaDamOverTime") || effName.equalsIgnoreCase("LDManaDamOverTime"))
+					else if(effName.equalsIgnoreCase("ManaDamOverTime") || effName.equalsIgnoreCase("LDManaDamOverTime"))
 					{
 						_dotSkills = ArrayUtils.add(_dotSkills, skill);
 						added = true;
 					}
 				}
 
-				if (!added)
+				if(!added)
 					_damageSkills = ArrayUtils.add(_damageSkills, skill);
 
 				break;
@@ -473,11 +472,11 @@ public class NpcTemplate extends CreatureTemplate
 
 	public void addQuestEvent(QuestEventType eventType, Quest quest)
 	{
-		if (_questEvents.isEmpty())
+		if(_questEvents.isEmpty())
 			_questEvents = new HashMap<QuestEventType, Set<Quest>>();
 
 		Set<Quest> quests = _questEvents.get(eventType);
-		if (quests == null)
+		if(quests == null)
 		{
 			quests = new HashSet<Quest>();
 			_questEvents.put(eventType, quests);
@@ -540,7 +539,7 @@ public class NpcTemplate extends CreatureTemplate
 
 	public final void setAIParam(String name, Object value)
 	{
-		if (_AIParams == StatsSet.EMPTY)
+		if(_AIParams == StatsSet.EMPTY)
 			_AIParams = new StatsSet();
 		_AIParams.set(name, value);
 	}
@@ -562,7 +561,7 @@ public class NpcTemplate extends CreatureTemplate
 
 	public void addWalkerRoute(WalkerRoute walkerRoute)
 	{
-		if (!walkerRoute.isValid())
+		if(!walkerRoute.isValid())
 			return;
 
 		_walkerRoute.put(walkerRoute.getId(), walkerRoute);
@@ -611,7 +610,7 @@ public class NpcTemplate extends CreatureTemplate
 	public void addListenerHook(ListenerHookType type, ListenerHook hook)
 	{
 		Set<ListenerHook> hooks = _listenerHooks.get(type);
-		if (hooks == null)
+		if(hooks == null)
 		{
 			hooks = new HashSet<ListenerHook>();
 			_listenerHooks.put(type, hooks);
@@ -622,7 +621,7 @@ public class NpcTemplate extends CreatureTemplate
 	public Set<ListenerHook> getListenerHooks(ListenerHookType type)
 	{
 		Set<ListenerHook> hooks = _listenerHooks.get(type);
-		if (hooks == null)
+		if(hooks == null)
 			return Collections.emptySet();
 		return hooks;
 	}
@@ -641,6 +640,6 @@ public class NpcTemplate extends CreatureTemplate
 
 	public int getAcquireExpRate()
 	{
-		return 1; 
+		return 1;
 	}
 }

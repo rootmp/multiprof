@@ -45,7 +45,7 @@ public class Territory implements Shape, SpawnRange
 
 	public Territory add(Shape shape)
 	{
-		if (include.isEmpty())
+		if(include.isEmpty())
 		{
 			max.x = shape.getXmax();
 			max.y = shape.getYmax();
@@ -90,9 +90,9 @@ public class Territory implements Shape, SpawnRange
 	@Override
 	public boolean isInside(int x, int y, CoordsConverter c)
 	{
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
-			if (shape.isInside(x, y, c))
+			if(shape.isInside(x, y, c))
 				return !isExcluded(x, y, c);
 		}
 		return false;
@@ -101,12 +101,13 @@ public class Territory implements Shape, SpawnRange
 	@Override
 	public boolean isInside(int x, int y, int z, CoordsConverter c)
 	{
-		if (x < c.convertX(this.min.x) || x > c.convertX(this.max.x) || y < c.convertY(this.min.y) || y > c.convertY(this.max.y) || z < this.min.z || z > this.max.z)
+		if(x < c.convertX(this.min.x) || x > c.convertX(this.max.x) || y < c.convertY(this.min.y) || y > c.convertY(this.max.y) || z < this.min.z
+				|| z > this.max.z)
 			return false;
 
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
-			if (shape.isInside(x, y, z, c))
+			if(shape.isInside(x, y, z, c))
 				return !isExcluded(x, y, z, c);
 		}
 		return false;
@@ -115,19 +116,19 @@ public class Territory implements Shape, SpawnRange
 	@Override
 	public boolean isOnPerimeter(int x, int y, CoordsConverter c)
 	{
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
-			if (shape.isOnPerimeter(x, y, c))
+			if(shape.isOnPerimeter(x, y, c))
 			{
-				if (!isExcluded(x, y, c))
+				if(!isExcluded(x, y, c))
 					return true;
 			}
 		}
-		for (Shape shape : exclude)
+		for(Shape shape : exclude)
 		{
-			if (shape.isOnPerimeter(x, y, c))
+			if(shape.isOnPerimeter(x, y, c))
 			{
-				if (isInside(x, y, c))
+				if(isInside(x, y, c))
 					return true;
 			}
 		}
@@ -137,22 +138,23 @@ public class Territory implements Shape, SpawnRange
 	@Override
 	public boolean isOnPerimeter(int x, int y, int z, CoordsConverter c)
 	{
-		if (x < c.convertX(this.min.x) || x > c.convertX(this.max.x) || y < c.convertY(this.min.y) || y > c.convertY(this.max.y) || z < this.min.z || z > this.max.z)
+		if(x < c.convertX(this.min.x) || x > c.convertX(this.max.x) || y < c.convertY(this.min.y) || y > c.convertY(this.max.y) || z < this.min.z
+				|| z > this.max.z)
 			return false;
 
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
-			if (shape.isOnPerimeter(x, y, z))
+			if(shape.isOnPerimeter(x, y, z))
 			{
-				if (!isExcluded(x, y, z, c))
+				if(!isExcluded(x, y, z, c))
 					return true;
 			}
 		}
-		for (Shape shape : exclude)
+		for(Shape shape : exclude)
 		{
-			if (shape.isOnPerimeter(x, y, z, c))
+			if(shape.isOnPerimeter(x, y, z, c))
 			{
-				if (isInside(x, y, z, c))
+				if(isInside(x, y, z, c))
 					return true;
 			}
 		}
@@ -172,10 +174,10 @@ public class Territory implements Shape, SpawnRange
 	public boolean isExcluded(int x, int y, CoordsConverter c)
 	{
 		Shape shape;
-		for (int i = 0; i < exclude.size(); i++)
+		for(int i = 0; i < exclude.size(); i++)
 		{
 			shape = exclude.get(i);
-			if (shape.isInside(x, y, c))
+			if(shape.isInside(x, y, c))
 				return true;
 		}
 		return false;
@@ -184,10 +186,10 @@ public class Territory implements Shape, SpawnRange
 	public boolean isExcluded(int x, int y, int z, CoordsConverter c)
 	{
 		Shape shape;
-		for (int i = 0; i < exclude.size(); i++)
+		for(int i = 0; i < exclude.size(); i++)
 		{
 			shape = exclude.get(i);
-			if (shape.isInside(x, y, z, c))
+			if(shape.isInside(x, y, z, c))
 				return true;
 		}
 		return false;
@@ -240,7 +242,7 @@ public class Territory implements Shape, SpawnRange
 
 		List<Shape> territories = territory.getTerritories();
 
-		for (int i = 1; i <= RANDOM_LOC_FIND_ATTEMPTS; i++)
+		for(int i = 1; i <= RANDOM_LOC_FIND_ATTEMPTS; i++)
 		{
 			Shape shape = territories.get(Rnd.get(territories.size()));
 
@@ -250,45 +252,46 @@ public class Territory implements Shape, SpawnRange
 			int minZ = Math.min(shape.getZmin(), shape.getZmax());
 			int maxZ = Math.max(shape.getZmin(), shape.getZmax());
 
-			if (territory.isInside(pos.x, pos.y))
+			if(territory.isInside(pos.x, pos.y))
 			{
-				if (fly)
+				if(fly)
 				{
 					pos.z = Rnd.get(minZ, maxZ);
 					break;
 				}
 
-				if (minZ == maxZ)
+				if(minZ == maxZ)
 				{
 					minZ -= 200;
 					maxZ += 200;
 				}
 				pos.z = maxZ;
 
-				if (!Config.ALLOW_GEODATA)
+				if(!Config.ALLOW_GEODATA)
 					break;
 
 				// Не спаунить в колонны, стены и прочее.
 				IntSet zSet = new HashIntSet();
 
 				int tempz = maxZ;
-				loop: for (int l = 1; l <= GeoEngine.MAX_LAYERS; l++)
+				loop:
+				for(int l = 1; l <= GeoEngine.MAX_LAYERS; l++)
 				{
 					tempz = GeoEngine.getLowerHeight(pos.x, pos.y, tempz, geoIndex);
-					if (tempz < minZ) // Дошли до дна.
+					if(tempz < minZ) // Дошли до дна.
 						break;
 
-					if (!zSet.contains(tempz))
+					if(!zSet.contains(tempz))
 					{
 						int geoX = GeoEngine.getGeoX(pos.x);
 						int geoY = GeoEngine.getGeoY(pos.y);
 
 						// Если местность подозрительная - пропускаем
-						for (int x = geoX - 1; x <= geoX + 1; x++)
+						for(int x = geoX - 1; x <= geoX + 1; x++)
 						{
-							for (int y = geoY - 1; y <= geoY + 1; y++)
+							for(int y = geoY - 1; y <= geoY + 1; y++)
 							{
-								if (GeoEngine.NgetLowerNSWE(x, y, (short) (tempz + Config.MIN_LAYER_HEIGHT), geoIndex) != GeoEngine.NSWE_ALL)
+								if(GeoEngine.NgetLowerNSWE(x, y, (short) (tempz + Config.MIN_LAYER_HEIGHT), geoIndex) != GeoEngine.NSWE_ALL)
 									continue loop;
 							}
 						}
@@ -298,14 +301,14 @@ public class Territory implements Shape, SpawnRange
 					tempz -= Config.MIN_LAYER_HEIGHT; // Опускаемся ниже.
 				}
 
-				if (zSet.isEmpty())
+				if(zSet.isEmpty())
 					continue;
 
 				pos.z = Rnd.get(zSet.toArray());
 				break;
 			}
 
-			if (i == RANDOM_LOC_FIND_ATTEMPTS)
+			if(i == RANDOM_LOC_FIND_ATTEMPTS)
 			{
 				pos.z = GeoEngine.correctGeoZ(pos.x, pos.y, maxZ, geoIndex);
 				break;
@@ -337,21 +340,21 @@ public class Territory implements Shape, SpawnRange
 	public Point2D getNearestPoint(int x, int y)
 	{
 		Point2D nearestPoint = new Point2D();
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
 			Point2D n = shape.getNearestPoint(x, y);
-			if (GeometryUtils.calculateDistance(n.x, n.y, x, y) < GeometryUtils.calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
+			if(GeometryUtils.calculateDistance(n.x, n.y, x, y) < GeometryUtils.calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
 			{
-				if (!isExcluded(x, y, CoordsConverter.DEFAULT_CONVERTER))
+				if(!isExcluded(x, y, CoordsConverter.DEFAULT_CONVERTER))
 					nearestPoint = n;
 			}
 		}
-		for (Shape shape : exclude)
+		for(Shape shape : exclude)
 		{
 			Point2D n = shape.getNearestPoint(x, y);
-			if (GeometryUtils.calculateDistance(n.x, n.y, x, y) < GeometryUtils.calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
+			if(GeometryUtils.calculateDistance(n.x, n.y, x, y) < GeometryUtils.calculateDistance(nearestPoint.x, nearestPoint.y, x, y))
 			{
-				if (isInside(x, y))
+				if(isInside(x, y))
 					nearestPoint = n;
 			}
 		}
@@ -368,14 +371,14 @@ public class Territory implements Shape, SpawnRange
 	public Point2D[] getPoints()
 	{
 		List<Point2D> points = new ArrayList<Point2D>();
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
-			for (Point2D point : shape.getPoints())
+			for(Point2D point : shape.getPoints())
 				points.add(point);
 		}
-		for (Shape shape : exclude)
+		for(Shape shape : exclude)
 		{
-			for (Point2D point : shape.getPoints())
+			for(Point2D point : shape.getPoints())
 				points.add(point);
 		}
 		return points.toArray(new Point2D[points.size()]);
@@ -383,11 +386,11 @@ public class Territory implements Shape, SpawnRange
 
 	public void printToWorld(Player player)
 	{
-		for (Shape shape : include)
+		for(Shape shape : include)
 		{
 			player.sendPacket(new ExShowTerritory(shape));
 		}
-		for (Shape shape : exclude)
+		for(Shape shape : exclude)
 		{
 			player.sendPacket(new ExShowTerritory(shape));
 		}

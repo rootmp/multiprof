@@ -38,12 +38,12 @@ public class AntiFlood
 
 	public boolean canAll(String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.hasPremiumAccount())
+		if(_owner.hasPremiumAccount())
 		{
-			if (Config.ALL_CHAT_USE_MIN_LEVEL > _owner.getLevel())
+			if(Config.ALL_CHAT_USE_MIN_LEVEL > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.all.level").addNumber(Config.ALL_CHAT_USE_MIN_LEVEL));
 				return false;
@@ -51,19 +51,20 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.ALL_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.ALL_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
-				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_USE_GENERAL_CHAT_AFTER_LV_S1).addInteger(Config.ALL_CHAT_USE_MIN_LEVEL_WITHOUT_PA - 1));
+				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_USE_GENERAL_CHAT_AFTER_LV_S1).addInteger(Config.ALL_CHAT_USE_MIN_LEVEL_WITHOUT_PA
+						- 1));
 				return false;
 			}
 		}
 
-		if (Config.ALL_CHAT_USE_DELAY > 0)
+		if(Config.ALL_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_allChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.all.delay").addNumber(delay));
 				return false;
@@ -76,12 +77,12 @@ public class AntiFlood
 
 	public boolean canShout(String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.hasPremiumAccount())
+		if(_owner.hasPremiumAccount())
 		{
-			if (Config.SHOUT_CHAT_USE_MIN_LEVEL > _owner.getLevel())
+			if(Config.SHOUT_CHAT_USE_MIN_LEVEL > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.shout.level").addNumber(Config.ALL_CHAT_USE_MIN_LEVEL));
 				return false;
@@ -89,19 +90,20 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
-				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_SHOUT_AFTER_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA - 1));
+				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_SHOUT_AFTER_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA
+						- 1));
 				return false;
 			}
 		}
 
-		if (Config.SHOUT_CHAT_USE_DELAY > 0)
+		if(Config.SHOUT_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_shoutChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.shout.delay").addNumber(delay));
 				return false;
@@ -114,28 +116,28 @@ public class AntiFlood
 
 	public boolean canWorld(String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.getWorldChatPoints() <= 0)
+		if(_owner.getWorldChatPoints() <= 0)
 		{
 			_owner.sendPacket(SystemMsg.TODAY_YOU_REACHED_THE_LIMIT_OF_USE_OF_THE_WORLD_CHAT__RESET_OF_THE_WORLD_USE_CHAT_IS_DONE_DAILY_AT_6_30_AM);
 			return false;
 		}
 
-		if (_owner.hasPremiumAccount() || _owner.hasVIPAccount())
+		if(_owner.hasPremiumAccount() || _owner.hasVIPAccount())
 		{
 			int minLevel = Config.WORLD_CHAT_USE_MIN_LEVEL;
 
 			int paMinLevel = _owner.getPremiumAccount().getWorldChatMinLevel();
-			if (paMinLevel != -1)
+			if(paMinLevel != -1)
 				minLevel = Math.min(minLevel, paMinLevel);
 
 			int vipMinLevel = _owner.getVIP().getTemplate().getWorldChatMinLevel();
-			if (vipMinLevel != -1)
+			if(vipMinLevel != -1)
 				minLevel = Math.min(minLevel, vipMinLevel);
 
-			if (minLevel > _owner.getLevel())
+			if(minLevel > _owner.getLevel())
 			{
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOU_CAN_USE_THE_WORLD_CHAT_WITH_S1_LEVEL).addInteger(minLevel));
 				return false;
@@ -143,19 +145,19 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.WORLD_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.WORLD_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOU_CAN_USE_THE_WORLD_CHAT_WITH_S1_LEVEL).addInteger(Config.WORLD_CHAT_USE_MIN_LEVEL_WITHOUT_PA));
 				return false;
 			}
 		}
 
-		if (Config.WORLD_CHAT_USE_DELAY > 0)
+		if(Config.WORLD_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_shoutChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.world.delay").addNumber(delay));
 				return false;
@@ -168,12 +170,12 @@ public class AntiFlood
 
 	public boolean canTrade(String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.hasPremiumAccount())
+		if(_owner.hasPremiumAccount())
 		{
-			if (Config.TRADE_CHAT_USE_MIN_LEVEL > _owner.getLevel())
+			if(Config.TRADE_CHAT_USE_MIN_LEVEL > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.trade.level").addNumber(Config.TRADE_CHAT_USE_MIN_LEVEL));
 				return false;
@@ -181,19 +183,20 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.TRADE_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.TRADE_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
-				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_USE_TRADE_CHAT_AFTER_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA - 1));
+				_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_USE_TRADE_CHAT_AFTER_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA
+						- 1));
 				return false;
 			}
 		}
 
-		if (Config.TRADE_CHAT_USE_DELAY > 0)
+		if(Config.TRADE_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_tradeChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.trade.delay").addNumber(delay));
 				return false;
@@ -206,12 +209,12 @@ public class AntiFlood
 
 	public boolean canHero(String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.hasPremiumAccount())
+		if(_owner.hasPremiumAccount())
 		{
-			if (Config.HERO_CHAT_USE_MIN_LEVEL > _owner.getLevel())
+			if(Config.HERO_CHAT_USE_MIN_LEVEL > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.hero.level").addNumber(Config.HERO_CHAT_USE_MIN_LEVEL));
 				return false;
@@ -219,19 +222,19 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.HERO_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.HERO_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.hero.level").addNumber(Config.HERO_CHAT_USE_MIN_LEVEL_WITHOUT_PA));
 				return false;
 			}
 		}
 
-		if (Config.HERO_CHAT_USE_DELAY > 0)
+		if(Config.HERO_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_heroChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.hero.delay").addNumber(delay));
 				return false;
@@ -247,10 +250,8 @@ public class AntiFlood
 		long currentMillis = System.currentTimeMillis();
 
 		int delay = (int) ((_locationShareUseTime - currentMillis) / 1000L);
-		if (delay > 0)
-		{
-			return false;
-		}
+		if(delay > 0)
+		{ return false; }
 
 		_locationShareUseTime = currentMillis + 5 * 1000L;
 
@@ -259,12 +260,12 @@ public class AntiFlood
 
 	public boolean canMail()
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (_owner.hasPremiumAccount())
+		if(_owner.hasPremiumAccount())
 		{
-			if (Config.MAIL_USE_MIN_LEVEL > _owner.getLevel())
+			if(Config.MAIL_USE_MIN_LEVEL > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_mail.level").addNumber(Config.MAIL_USE_MIN_LEVEL));
 				return false;
@@ -272,19 +273,19 @@ public class AntiFlood
 		}
 		else
 		{
-			if (Config.MAIL_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+			if(Config.MAIL_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_mail.level").addNumber(Config.MAIL_USE_MIN_LEVEL_WITHOUT_PA));
 				return false;
 			}
 		}
 
-		if (Config.MAIL_USE_DELAY > 0)
+		if(Config.MAIL_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_mailUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_mail.delay").addNumber(delay));
 				return false;
@@ -297,14 +298,14 @@ public class AntiFlood
 
 	public boolean canTell(int receiverId, String text)
 	{
-		if (_owner.isGM())
+		if(_owner.isGM())
 			return true;
 
-		if (!_interlocutors.contains(receiverId))
+		if(!_interlocutors.contains(receiverId))
 		{
-			if (_owner.hasPremiumAccount())
+			if(_owner.hasPremiumAccount())
 			{
-				if (Config.PRIVATE_CHAT_USE_MIN_LEVEL > _owner.getLevel())
+				if(Config.PRIVATE_CHAT_USE_MIN_LEVEL > _owner.getLevel())
 				{
 					_owner.sendMessage(new CustomMessage("antispam.no_chat.private.level").addNumber(Config.PRIVATE_CHAT_USE_MIN_LEVEL));
 					return false;
@@ -312,20 +313,21 @@ public class AntiFlood
 			}
 			else
 			{
-				if (Config.PRIVATE_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
+				if(Config.PRIVATE_CHAT_USE_MIN_LEVEL_WITHOUT_PA > _owner.getLevel())
 				{
-					_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_RESPOND_TO_A_WHISPER_BUT_CANNOT_INITIATE_A_WHISPER_UNTIL_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA - 1));
+					_owner.sendPacket(new SystemMessagePacket(SystemMsg.PLAYERS_CAN_RESPOND_TO_A_WHISPER_BUT_CANNOT_INITIATE_A_WHISPER_UNTIL_LV_S1).addInteger(Config.SHOUT_CHAT_USE_MIN_LEVEL_WITHOUT_PA
+							- 1));
 					return false;
 				}
 			}
 		}
 
-		if (Config.PRIVATE_CHAT_USE_DELAY > 0)
+		if(Config.PRIVATE_CHAT_USE_DELAY > 0)
 		{
 			long currentMillis = System.currentTimeMillis();
 
 			int delay = (int) ((_privateChatUseTime - currentMillis) / 1000L);
-			if (delay > 0)
+			if(delay > 0)
 			{
 				_owner.sendMessage(new CustomMessage("antispam.no_chat.private.delay").addNumber(delay));
 				return false;
@@ -340,11 +342,11 @@ public class AntiFlood
 		TIntLongIterator itr = _recentReceivers.iterator();
 
 		int recent = 0;
-		while (itr.hasNext())
+		while(itr.hasNext())
 		{
 			itr.advance();
 			lastSent = itr.value();
-			if (currentMillis - lastSent < (text.equalsIgnoreCase(_lastText) ? 600000L : 60000L))
+			if(currentMillis - lastSent < (text.equalsIgnoreCase(_lastText) ? 600000L : 60000L))
 				recent++;
 			else
 				itr.remove();
@@ -353,7 +355,7 @@ public class AntiFlood
 		lastSent = _recentReceivers.put(receiverId, currentMillis);
 
 		long delay = 333L;
-		if (recent > 3)
+		if(recent > 3)
 		{
 			lastSent = _lastSent;
 			delay = (recent - 3) * 3333L;
@@ -363,7 +365,7 @@ public class AntiFlood
 		_lastSent = currentMillis;
 
 		int remainingDelay = (int) ((delay - (currentMillis - lastSent)) / 1000L);
-		if (remainingDelay > 0)
+		if(remainingDelay > 0)
 		{
 			_owner.sendMessage(new CustomMessage("antispam.no_chat.private.delay").addNumber(remainingDelay));
 			return false;

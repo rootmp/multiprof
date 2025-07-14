@@ -24,8 +24,7 @@ public class PetitionGroupHolder extends AbstractHolder
 	}
 
 	private PetitionGroupHolder()
-	{
-	}
+	{}
 
 	public void addPetitionGroup(PetitionMainGroup g)
 	{

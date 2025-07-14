@@ -37,8 +37,7 @@ public class ThreadPoolManager
 		_executor.prestartAllCoreThreads();
 
 		// Очистка каждые 5 минут
-		scheduleAtFixedRate(() ->
-		{
+		scheduleAtFixedRate(() -> {
 			_scheduledExecutor.purge();
 			_executor.purge();
 		}, 5, 5, TimeUnit.MINUTES);
@@ -48,7 +47,7 @@ public class ThreadPoolManager
 	{
 		long delayInMilliseconds = timeUnit.toMillis(delay);
 		long validatedDelay = Math.max(0, Math.min(MAX_DELAY, delayInMilliseconds));
-		if (delayInMilliseconds > validatedDelay)
+		if(delayInMilliseconds > validatedDelay)
 			return -1L;
 
 		return timeUnit.convert(delayInMilliseconds, TimeUnit.MILLISECONDS);
@@ -62,7 +61,7 @@ public class ThreadPoolManager
 	public ScheduledFuture<?> schedule(Runnable r, long delay, TimeUnit timeUnit)
 	{
 		delay = validate(delay, timeUnit);
-		if (delay == -1L)
+		if(delay == -1L)
 			return null;
 
 		return _scheduledExecutor.schedule(new RunnableWrapper(r), delay, timeUnit);
@@ -76,11 +75,11 @@ public class ThreadPoolManager
 	public ScheduledFuture<?> scheduleAtFixedRate(Runnable r, long initial, long delay, TimeUnit timeUnit)
 	{
 		initial = validate(initial, timeUnit);
-		if (initial == -1L)
+		if(initial == -1L)
 			return null;
 
 		delay = validate(delay, timeUnit);
-		if (delay == -1L)
+		if(delay == -1L)
 			return _scheduledExecutor.schedule(new RunnableWrapper(r), initial, timeUnit);
 
 		return _scheduledExecutor.scheduleAtFixedRate(new RunnableWrapper(r), initial, delay, timeUnit);
@@ -94,11 +93,11 @@ public class ThreadPoolManager
 	public ScheduledFuture<?> scheduleAtFixedDelay(Runnable r, long initial, long delay, TimeUnit timeUnit)
 	{
 		initial = validate(initial, timeUnit);
-		if (initial == -1L)
+		if(initial == -1L)
 			return null;
 
 		delay = validate(delay, timeUnit);
-		if (delay == -1L)
+		if(delay == -1L)
 			return _scheduledExecutor.schedule(new RunnableWrapper(r), initial, timeUnit);
 
 		return _scheduledExecutor.scheduleWithFixedDelay(new RunnableWrapper(r), initial, delay, timeUnit);

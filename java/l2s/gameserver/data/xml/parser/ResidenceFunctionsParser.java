@@ -43,7 +43,7 @@ public final class ResidenceFunctionsParser extends AbstractParser<ResidenceFunc
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -56,19 +56,19 @@ public final class ResidenceFunctionsParser extends AbstractParser<ResidenceFunc
 
 			final ResidenceFunctionTemplate template = new ResidenceFunctionTemplate(id, type, level, depth, period, cost);
 
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("funcs".equalsIgnoreCase(subElement.getName()))
+				if("funcs".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
-						if ("hp_regen".equalsIgnoreCase(e.getName()))
+						if("hp_regen".equalsIgnoreCase(e.getName()))
 							template.setHpRegen(Double.parseDouble(e.attributeValue("value")));
-						else if ("mp_regen".equalsIgnoreCase(e.getName()))
+						else if("mp_regen".equalsIgnoreCase(e.getName()))
 							template.setMpRegen(Double.parseDouble(e.attributeValue("value")));
-						else if ("exp_restore".equalsIgnoreCase(e.getName()))
+						else if("exp_restore".equalsIgnoreCase(e.getName()))
 							template.setExpRestore(Double.parseDouble(e.attributeValue("value")));
 					}
 				}

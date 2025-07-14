@@ -20,7 +20,7 @@ public class BlockListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_blockList.length);
-		for (Block b : _blockList)
+		for(Block b : _blockList)
 		{
 			packetWriter.writeS(b.getName());
 			packetWriter.writeS(b.getMemo());

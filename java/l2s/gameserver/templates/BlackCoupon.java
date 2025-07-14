@@ -32,12 +32,12 @@ public class BlackCoupon
 
 	public int getFixedId(EnchantBrokenItem item)
 	{
-		for (RestorableItems r : restorableItems)
+		for(RestorableItems r : restorableItems)
 		{
-			if (r.lostMinTime > item.getTime())
+			if(r.lostMinTime > item.getTime())
 				continue;
 
-			if (r.lostMaxTime < item.getTime())
+			if(r.lostMaxTime < item.getTime())
 				continue;
 
 			return r.items.getOrDefault(item.getId(), -1);

@@ -56,7 +56,7 @@ public class ItemsToRestoreDAO
 	{
 		ItemInstance item = null;
 
-		if (rset.next())
+		if(rset.next())
 		{
 			final int objectId = rset.getInt(1);
 			item = new ItemInstance(objectId);
@@ -152,10 +152,10 @@ public class ItemsToRestoreDAO
 		try
 		{
 			item = load0(objectId);
-			if (item == null)
+			if(item == null)
 				return null;
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("Error while load item to restore : " + objectId, e);
 			return null;
@@ -168,16 +168,16 @@ public class ItemsToRestoreDAO
 	{
 		Collection<ItemInstance> list = Collections.emptyList();
 
-		if (objectIds.isEmpty())
+		if(objectIds.isEmpty())
 			return list;
 
 		list = new ArrayList<ItemInstance>(objectIds.size());
 
 		ItemInstance item;
-		for (final Integer objectId : objectIds)
+		for(final Integer objectId : objectIds)
 		{
 			item = load(objectId);
-			if (item != null)
+			if(item != null)
 			{
 				list.add(item);
 			}
@@ -192,7 +192,7 @@ public class ItemsToRestoreDAO
 		{
 			save0(item);
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("Error while saving item to restore : " + item, e);
 			return;
@@ -201,10 +201,10 @@ public class ItemsToRestoreDAO
 
 	public void save(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
+		if(items.isEmpty())
 			return;
 
-		for (final ItemInstance item : items)
+		for(final ItemInstance item : items)
 		{
 			save(item);
 		}
@@ -216,7 +216,7 @@ public class ItemsToRestoreDAO
 		{
 			delete0(item);
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("Error while deleting item to restore : " + item, e);
 			return;
@@ -225,10 +225,10 @@ public class ItemsToRestoreDAO
 
 	public void delete(Collection<ItemInstance> items)
 	{
-		if (items.isEmpty())
+		if(items.isEmpty())
 			return;
 
-		for (final ItemInstance item : items)
+		for(final ItemInstance item : items)
 		{
 			delete(item);
 		}
@@ -248,12 +248,12 @@ public class ItemsToRestoreDAO
 			statement.setInt(1, ownerId);
 			rset = statement.executeQuery();
 			objectIds = new ArrayList<Integer>();
-			while (rset.next())
+			while(rset.next())
 			{
 				objectIds.add(rset.getInt(1));
 			}
 		}
-		catch (final SQLException e)
+		catch(final SQLException e)
 		{
 			_log.error("Error while load items to restore of owner : " + ownerId, e);
 			objectIds.clear();

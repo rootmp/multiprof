@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.GameObjectsStorage;
 import l2s.gameserver.model.Player;
@@ -26,20 +27,20 @@ public class RequestOustFromPartyRoom implements IClientIncomingPacket
 		final Player player = client.getActiveChar();
 
 		final MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
+		if(room == null || room.getType() != MatchingRoom.PARTY_MATCHING)
 			return;
 
-		if (room.getLeader() != player)
+		if(room.getLeader() != player)
 			return;
 
 		final Player member = GameObjectsStorage.getPlayer(_objectId);
-		if (member == null)
+		if(member == null)
 			return;
 
 		final int type = room.getMemberType(member);
-		if (type == MatchingRoom.ROOM_MASTER)
+		if(type == MatchingRoom.ROOM_MASTER)
 			return;
-		if (type == MatchingRoom.PARTY_MEMBER)
+		if(type == MatchingRoom.PARTY_MEMBER)
 		{
 			player.sendPacket(SystemMsg.YOU_CANNOT_DISMISS_A_PARTY_MEMBER_BY_FORCE);
 			return;

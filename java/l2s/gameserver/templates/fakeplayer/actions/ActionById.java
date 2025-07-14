@@ -30,7 +30,7 @@ public class ActionById extends AbstractAction
 	public List<AbstractAction> makeActionsList()
 	{
 		OrdinaryActions action = _actionsHolder.getAction(_actionId);
-		if (action == null)
+		if(action == null)
 		{
 			_log.warn("Cannot find action by ID[" + _actionId + "]!");
 			return Collections.emptyList();

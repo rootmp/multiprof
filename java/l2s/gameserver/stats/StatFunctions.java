@@ -29,7 +29,7 @@ public class StatFunctions
 		static Func getFunc(Stats stat)
 		{
 			int pos = stat.ordinal();
-			if (func[pos] == null)
+			if(func[pos] == null)
 				func[pos] = new FuncMultRegenResting(stat);
 			return func[pos];
 		}
@@ -43,7 +43,8 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.isPlayer() && env.character.getLevel() <= 40 && ((Player) env.character).getClassLevel().ordinal() < ClassLevel.SECOND.ordinal() && stat == Stats.REGENERATE_HP_RATE)
+			if(env.character.isPlayer() && env.character.getLevel() <= 40
+					&& ((Player) env.character).getClassLevel().ordinal() < ClassLevel.SECOND.ordinal() && stat == Stats.REGENERATE_HP_RATE)
 				env.value *= 6.; // TODO: переделать красивее
 			else
 				env.value *= 1.5;
@@ -57,7 +58,7 @@ public class StatFunctions
 		static Func getFunc(Stats stat)
 		{
 			int pos = stat.ordinal();
-			if (func[pos] == null)
+			if(func[pos] == null)
 				func[pos] = new FuncMultRegenStanding(stat);
 			return func[pos];
 		}
@@ -82,7 +83,7 @@ public class StatFunctions
 		static Func getFunc(Stats stat)
 		{
 			int pos = stat.ordinal();
-			if (func[pos] == null)
+			if(func[pos] == null)
 				func[pos] = new FuncMultRegenRunning(stat);
 			return func[pos];
 		}
@@ -182,21 +183,21 @@ public class StatFunctions
 			// [Square(DEX)]*5 + lvl + weapon hitbonus;
 			env.value += Math.sqrt(env.character.getDEX()) * 5 + env.character.getLevel();
 
-			if (env.character.isServitor())
+			if(env.character.isServitor())
 				env.value += env.character.getLevel() < 60 ? 4 : 5;
 
 			int level = env.character.getLevel();
-			if (level > 69)
+			if(level > 69)
 				env.value += (level - 69.0D);
-			if (level > 77)
+			if(level > 77)
 				env.value += 1.0D;
-			if (level > 80)
+			if(level > 80)
 				env.value += 2.0D;
-			if (level > 87)
+			if(level > 87)
 				env.value += 1.0D;
-			if (level > 92)
+			if(level > 92)
 				env.value += 1.0D;
-			if (level > 97)
+			if(level > 97)
 				env.value += 1.0D;
 		}
 	}
@@ -233,17 +234,17 @@ public class StatFunctions
 			env.value += Math.sqrt(env.character.getDEX()) * 5 + env.character.getLevel();
 
 			int level = env.character.getLevel();
-			if (level > 69)
+			if(level > 69)
 				env.value += (level - 69.0D);
-			if (level > 77)
+			if(level > 77)
 				env.value += 1.0D;
-			if (level > 80)
+			if(level > 80)
 				env.value += 2.0D;
-			if (level > 87)
+			if(level > 87)
 				env.value += 1.0D;
-			if (level > 92)
+			if(level > 92)
 				env.value += 1.0D;
-			if (level > 97)
+			if(level > 97)
 				env.value += 1.0D;
 		}
 	}
@@ -343,7 +344,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.STR));
 		}
 	}
@@ -361,7 +362,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.DEX));
 		}
 	}
@@ -379,7 +380,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.INT));
 		}
 	}
@@ -397,7 +398,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.MEN));
 		}
 	}
@@ -415,7 +416,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.CON));
 		}
 	}
@@ -433,7 +434,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getHennaValue(BaseStats.WIT));
 		}
 	}
@@ -451,7 +452,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(0));
 		}
 	}
@@ -469,7 +470,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(1));
 		}
 	}
@@ -487,7 +488,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(2));
 		}
 	}
@@ -505,7 +506,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(3));
 		}
 	}
@@ -523,7 +524,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(4));
 		}
 	}
@@ -541,7 +542,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player pc = (Player) env.character;
-			if (pc != null)
+			if(pc != null)
 				env.value = Math.max(1, env.value + pc.getStatBonus(5));
 		}
 	}
@@ -606,7 +607,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.target.isRaid() && !env.target.isArenaRaid() && env.character.getLevel() - env.target.getLevel() > Config.RAID_MAX_LEVEL_DIFF)
+			if(env.target.isRaid() && !env.target.isArenaRaid() && env.character.getLevel() - env.target.getLevel() > Config.RAID_MAX_LEVEL_DIFF)
 			{
 				env.value = 1;
 				return;
@@ -628,7 +629,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.target.isRaid() && !env.target.isArenaRaid() && Math.abs(env.character.getLevel() - env.target.getLevel()) > Config.RAID_MAX_LEVEL_DIFF)
+			if(env.target.isRaid() && !env.target.isArenaRaid() && Math.abs(env.character.getLevel() - env.target.getLevel()) > Config.RAID_MAX_LEVEL_DIFF)
 			{
 				env.value = 1;
 				return;
@@ -650,9 +651,9 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player player = (Player) env.character;
-			if (player.isGM())
+			if(player.isGM())
 				env.value = Config.INVENTORY_MAXIMUM_GM;
-			else if (player.getRace() == Race.DWARF)
+			else if(player.getRace() == Race.DWARF)
 				env.value = Config.INVENTORY_MAXIMUM_DWARF;
 			else
 				env.value = Config.INVENTORY_MAXIMUM_NO_DWARF;
@@ -674,7 +675,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player player = (Player) env.character;
-			if (player.getRace() == Race.DWARF)
+			if(player.getRace() == Race.DWARF)
 				env.value = Config.WAREHOUSE_SLOTS_DWARF;
 			else
 				env.value = Config.WAREHOUSE_SLOTS_NO_DWARF;
@@ -695,7 +696,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			Player _cha = (Player) env.character;
-			if (_cha.getRace() == Race.DWARF)
+			if(_cha.getRace() == Race.DWARF)
 				env.value = Config.MAX_PVTSTORE_SLOTS_DWARF;
 			else
 				env.value = Config.MAX_PVTSTORE_SLOTS_OTHER;
@@ -731,13 +732,13 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.value == 0)
+			if(env.value == 0)
 				return;
 
 			Creature target = env.target;
-			if (target != null)
+			if(target != null)
 			{
-				switch (target.getBaseStats().getAttackType())
+				switch(target.getBaseStats().getAttackType())
 				{
 					case BOW:
 					case CROSSBOW:
@@ -766,12 +767,12 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.value == 0)
+			if(env.value == 0)
 				return;
 
 			Creature cha = env.character;
 			ItemInstance shld = ((Player) cha).getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-			if (shld == null || shld.getItemType() != WeaponType.NONE)
+			if(shld == null || shld.getItemType() != WeaponType.NONE)
 				return;
 			env.value *= BaseStats.CON.calcBonus(env.character);
 		}
@@ -789,31 +790,31 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.getStat().calc(Stats.SPEED_ON_DEX_DEPENDENCE) > 0)
+			if(env.character.getStat().calc(Stats.SPEED_ON_DEX_DEPENDENCE) > 0)
 				env.value *= BaseStats.DEX.calcBonus(env.character);
 
 			int gmSpeed = env.character.getGmSpeed();
-			if (gmSpeed > 0)
+			if(gmSpeed > 0)
 			{
 				double baseSpeed;
-				if (env.character.isRunning())
+				if(env.character.isRunning())
 				{
-					if (env.character.isMounted())
+					if(env.character.isMounted())
 						baseSpeed = env.character.getBaseStats().getRideRunSpd();
-					else if (env.character.isFlying())
+					else if(env.character.isFlying())
 						baseSpeed = env.character.getBaseStats().getFlyRunSpd();
-					else if (env.character.isInWater())
+					else if(env.character.isInWater())
 						baseSpeed = env.character.getBaseStats().getWaterRunSpd();
 					else
 						baseSpeed = env.character.getBaseStats().getRunSpd();
 				}
 				else
 				{
-					if (env.character.isMounted())
+					if(env.character.isMounted())
 						baseSpeed = env.character.getBaseStats().getRideWalkSpd();
-					else if (env.character.isFlying())
+					else if(env.character.isFlying())
 						baseSpeed = env.character.getBaseStats().getFlyWalkSpd();
-					else if (env.character.isInWater())
+					else if(env.character.isInWater())
 						baseSpeed = env.character.getBaseStats().getWaterWalkSpd();
 					else
 						baseSpeed = env.character.getBaseStats().getWalkSpd();
@@ -835,7 +836,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.HP_LIMIT > 0)
+			if(Config.HP_LIMIT > 0)
 				env.value = Math.min(env.character.getStat().calc(Stats.PLAYER_MAX_HP_LIMIT, Config.HP_LIMIT), env.value);
 		}
 	}
@@ -852,7 +853,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.MP_LIMIT > 0)
+			if(Config.MP_LIMIT > 0)
 				env.value = Math.min(env.character.getStat().calc(Stats.PLAYER_MAX_MP_LIMIT, Config.MP_LIMIT), env.value);
 		}
 	}
@@ -869,7 +870,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.CP_LIMIT > 0)
+			if(Config.CP_LIMIT > 0)
 				env.value = Math.min(env.character.getStat().calc(Stats.PLAYER_MAX_CP_LIMIT, Config.CP_LIMIT), env.value);
 		}
 	}
@@ -886,7 +887,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_MOVE > 0)
+			if(Config.LIM_MOVE > 0)
 				env.value = Math.min(Config.LIM_MOVE, env.value);
 		}
 	}
@@ -903,7 +904,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_PDEF > 0)
+			if(Config.LIM_PDEF > 0)
 				env.value = Math.min(Config.LIM_PDEF, env.value);
 		}
 	}
@@ -920,7 +921,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_MDEF > 0)
+			if(Config.LIM_MDEF > 0)
 				env.value = Math.min(Config.LIM_MDEF, env.value);
 		}
 	}
@@ -937,7 +938,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_PATK > 0)
+			if(Config.LIM_PATK > 0)
 				env.value = Math.min(Config.LIM_PATK, env.value);
 		}
 	}
@@ -954,7 +955,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_MATK > 0)
+			if(Config.LIM_MATK > 0)
 				env.value = Math.min(Config.LIM_MATK, env.value);
 		}
 	}
@@ -971,7 +972,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_PATK_SPD > 0)
+			if(Config.LIM_PATK_SPD > 0)
 				env.value = Math.min(Config.LIM_PATK_SPD, env.value);
 		}
 	}
@@ -988,7 +989,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_MATK_SPD > 0)
+			if(Config.LIM_MATK_SPD > 0)
 				env.value = Math.min(Config.LIM_MATK_SPD, env.value);
 		}
 	}
@@ -1005,7 +1006,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_CRIT_DAM > 0)
+			if(Config.LIM_CRIT_DAM > 0)
 				env.value = Math.min(Config.LIM_CRIT_DAM / 2., env.value);
 		}
 	}
@@ -1022,7 +1023,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_EVASION > 0)
+			if(Config.LIM_EVASION > 0)
 				env.value = Math.min(Config.LIM_EVASION, env.value);
 		}
 	}
@@ -1039,7 +1040,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_EVASION > 0)
+			if(Config.LIM_EVASION > 0)
 				env.value = Math.min(Config.LIM_EVASION, env.value);
 		}
 	}
@@ -1056,7 +1057,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_ACCURACY > 0)
+			if(Config.LIM_ACCURACY > 0)
 				env.value = Math.min(Config.LIM_ACCURACY, env.value);
 		}
 	}
@@ -1073,7 +1074,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_ACCURACY > 0)
+			if(Config.LIM_ACCURACY > 0)
 				env.value = Math.min(Config.LIM_ACCURACY, env.value);
 		}
 	}
@@ -1090,7 +1091,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_CRIT > 0)
+			if(Config.LIM_CRIT > 0)
 				env.value = Math.min(env.character.getStat().calc(Stats.P_CRIT_RATE_LIMIT, Config.LIM_CRIT), env.value);
 		}
 	}
@@ -1107,7 +1108,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (Config.LIM_MCRIT > 0)
+			if(Config.LIM_MCRIT > 0)
 				env.value = Math.min(Config.LIM_MCRIT, env.value);
 		}
 	}
@@ -1118,7 +1119,7 @@ public class StatFunctions
 
 		static
 		{
-			for (int i = 0; i < Element.VALUES.length; i++)
+			for(int i = 0; i < Element.VALUES.length; i++)
 				func[i] = new FuncAttributeAttackInit(Element.VALUES[i]);
 		}
 
@@ -1148,7 +1149,7 @@ public class StatFunctions
 
 		static
 		{
-			for (int i = 0; i < Element.VALUES.length; i++)
+			for(int i = 0; i < Element.VALUES.length; i++)
 				func[i] = new FuncAttributeDefenceInit(Element.VALUES[i]);
 		}
 
@@ -1178,7 +1179,7 @@ public class StatFunctions
 
 		static
 		{
-			for (int i = 0; i < Element.VALUES.length; i++)
+			for(int i = 0; i < Element.VALUES.length; i++)
 				func[i] = new FuncAttributeAttackSet(Element.VALUES[i].getAttack());
 		}
 
@@ -1195,7 +1196,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.getPlayer().getClassId().getType2() == ClassType2.SUMMONER)
+			if(env.character.getPlayer().getClassId().getType2() == ClassType2.SUMMONER)
 				env.value = env.character.getPlayer().getStat().calc(stat, 0.);
 		}
 	}
@@ -1206,7 +1207,7 @@ public class StatFunctions
 
 		static
 		{
-			for (int i = 0; i < Element.VALUES.length; i++)
+			for(int i = 0; i < Element.VALUES.length; i++)
 				func[i] = new FuncAttributeDefenceSet(Element.VALUES[i].getDefence());
 		}
 
@@ -1223,7 +1224,7 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.getPlayer().getClassId().getType2() == ClassType2.SUMMONER)
+			if(env.character.getPlayer().getClassId().getType2() == ClassType2.SUMMONER)
 				env.value = env.character.getPlayer().getStat().calc(stat, 0.);
 		}
 	}
@@ -1273,7 +1274,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			env.value *= BaseStats.CON.calcBonus(env.character);
-			if (env.character.isSummon()) // TODO: [Bonux] Наверно пет тоже?
+			if(env.character.isSummon()) // TODO: [Bonux] Наверно пет тоже?
 				env.value *= 2;
 		}
 	}
@@ -1291,7 +1292,7 @@ public class StatFunctions
 		public void calc(Env env, StatModifierType modifierType)
 		{
 			env.value *= BaseStats.MEN.calcBonus(env.character);
-			if (env.character.isSummon()) // TODO: [Bonux] Наверно пет тоже?
+			if(env.character.isSummon()) // TODO: [Bonux] Наверно пет тоже?
 				env.value *= 2;
 		}
 	}
@@ -1324,12 +1325,12 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.isPet())
+			if(env.character.isPet())
 			{
 				PetInstance pet = (PetInstance) env.character;
-				if (pet.getWeightPenalty() == 1 || pet.getWeightPenalty() == 2)
+				if(pet.getWeightPenalty() == 1 || pet.getWeightPenalty() == 2)
 					env.value *= 0.5; // TODO: [Bonux] от балды, проверить на оффе.
-				else if (pet.getWeightPenalty() == 3)
+				else if(pet.getWeightPenalty() == 3)
 					env.value = 0.;
 			}
 		}
@@ -1347,12 +1348,12 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.isPet())
+			if(env.character.isPet())
 			{
 				PetInstance pet = (PetInstance) env.character;
-				if (pet.getWeightPenalty() == 1 || pet.getWeightPenalty() == 2)
+				if(pet.getWeightPenalty() == 1 || pet.getWeightPenalty() == 2)
 					env.value *= 0.5; // TODO: [Bonux] от балды, проверить на оффе.
-				else if (pet.getWeightPenalty() == 3)
+				else if(pet.getWeightPenalty() == 3)
 					env.value = 0.;
 			}
 		}
@@ -1370,24 +1371,24 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.isPlayer())
+			if(env.character.isPlayer())
 			{
 				Player player = env.character.getPlayer();
-				if (player.isMounted())
+				if(player.isMounted())
 				{
 					Mount mount = player.getMount();
 					// Если уровень маунта на 50% и более, скорость урезается в 2х раза.
 					// Если уровень маунта на 10 уровней и более больше хозяина, скорость урезается
 					// в 2х раза.
-					if (mount.isHungry() || (mount.getLevel() - player.getLevel()) >= 10)
+					if(mount.isHungry() || (mount.getLevel() - player.getLevel()) >= 10)
 						env.value *= 0.5;
 				}
 			}
-			else if (env.character.isPet())
+			else if(env.character.isPet())
 			{
 				PetInstance pet = (PetInstance) env.character;
 				// Если питомец голоден, скорость урезается в 2х раза.
-				if (pet.isHungry() || pet.getWeightPenalty() >= 2)
+				if(pet.isHungry() || pet.getWeightPenalty() >= 2)
 					env.value *= 0.5;
 			}
 		}
@@ -1405,11 +1406,11 @@ public class StatFunctions
 		@Override
 		public void calc(Env env, StatModifierType modifierType)
 		{
-			if (env.character.isPlayer())
+			if(env.character.isPlayer())
 			{
 				Player player = env.character.getPlayer();
 				// Если маунт голоден на 50% и более, скорость атаки урезается в 2х раза.
-				if (player.isMounted() && player.getMount().isHungry())
+				if(player.isMounted() && player.getMount().isHungry())
 					env.value *= 0.5;
 			}
 		}
@@ -1417,10 +1418,10 @@ public class StatFunctions
 
 	public static void addPredefinedFuncs(Creature cha)
 	{
-		if (cha.isDoor())
+		if(cha.isDoor())
 			return;
 
-		if (cha.isPlayer())
+		if(cha.isPlayer())
 		{
 			cha.getStat().addFuncs(FuncMultRegenResting.getFunc(Stats.REGENERATE_CP_RATE));
 			cha.getStat().addFuncs(FuncMultRegenStanding.getFunc(Stats.REGENERATE_CP_RATE));
@@ -1478,13 +1479,13 @@ public class StatFunctions
 		cha.getStat().addFuncs(FuncHpRegenMul.func);
 		cha.getStat().addFuncs(FuncMpRegenMul.func);
 
-		if (cha.isPet())
+		if(cha.isPet())
 		{
 			cha.getStat().addFuncs(FuncMpRegenPenalty.func);
 			cha.getStat().addFuncs(FuncHpRegenPenalty.func);
 		}
 
-		if (cha.isPlayer() || cha.isPet())
+		if(cha.isPlayer() || cha.isPet())
 		{
 			cha.getStat().addFuncs(FuncMoveSpeedPenalty.func);
 		}
@@ -1494,7 +1495,7 @@ public class StatFunctions
 		cha.getStat().addFuncs(FuncPDefMul.func);
 		cha.getStat().addFuncs(FuncMDefMul.func);
 
-		if (cha.isSummon())
+		if(cha.isSummon())
 		{
 			cha.getStat().addFuncs(FuncAttributeAttackSet.getFunc(Element.FIRE));
 			cha.getStat().addFuncs(FuncAttributeAttackSet.getFunc(Element.WATER));

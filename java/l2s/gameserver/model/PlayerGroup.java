@@ -11,8 +11,7 @@ import l2s.gameserver.network.l2.components.IBroadcastPacket;
  */
 public interface PlayerGroup extends Iterable<Player>
 {
-	public static final PlayerGroup EMPTY = new PlayerGroup()
-	{
+	public static final PlayerGroup EMPTY = new PlayerGroup(){
 		@Override
 		public void broadCast(IBroadcastPacket... packet)
 		{

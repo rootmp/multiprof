@@ -47,13 +47,12 @@ public final class HostsConfigHolder extends AbstractHolder
 		}
 		_gameServerHosts.put(host.getId(), host);
 	}
-	
-	
+
 	public int getServerId(String ip)
 	{
 		if(!_gameServerHosts.isEmpty())
 		{
-			for (HostInfo _host: _gameServerHosts.valueCollection())
+			for(HostInfo _host : _gameServerHosts.valueCollection())
 				if(Util.equalsIgnoreCase(ip, _host.getAddress()))
 					return _host.getId();
 		}
@@ -74,7 +73,8 @@ public final class HostsConfigHolder extends AbstractHolder
 		info("Gameserver host info:");
 
 		for(HostInfo host : getGameServerHosts())
-			info("ID[" + host.getId() + "], ADDRESS[" + (host.getAddress() == null ? "NOT SPECIFIED" : host.getAddress()) + "], PORT[" + host.getPort() + "]");
+			info("ID[" + host.getId() + "], ADDRESS[" + (host.getAddress() == null ? "NOT SPECIFIED" : host.getAddress()) + "], PORT[" + host.getPort()
+					+ "]");
 
 		info("=================================================");
 	}

@@ -5,6 +5,8 @@ import java.util.Iterator;
 
 import org.dom4j.Element;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.data.xml.AbstractParser;
 import l2s.commons.string.StringArrayUtils;
 import l2s.gameserver.Config;
@@ -12,9 +14,6 @@ import l2s.gameserver.data.xml.holder.DailyMissionsHolder;
 import l2s.gameserver.templates.dailymissions.DailyMissionTemplate;
 import l2s.gameserver.templates.dailymissions.DailyRewardTemplate;
 import l2s.gameserver.templates.item.data.ItemData;
-
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @author Bonux
@@ -48,7 +47,7 @@ public final class DailyMissionsParser extends AbstractParser<DailyMissionsHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -61,7 +60,7 @@ public final class DailyMissionsParser extends AbstractParser<DailyMissionsHolde
 
 			DailyMissionTemplate mission = new DailyMissionTemplate(id, handler, value, minLevel, maxLevel, completedMission);
 
-			for (Iterator<Element> rewardsIterator = element.elementIterator("rewards"); rewardsIterator.hasNext();)
+			for(Iterator<Element> rewardsIterator = element.elementIterator("rewards"); rewardsIterator.hasNext();)
 			{
 				Element rewardsElement = rewardsIterator.next();
 
@@ -70,7 +69,7 @@ public final class DailyMissionsParser extends AbstractParser<DailyMissionsHolde
 
 				DailyRewardTemplate reward = new DailyRewardTemplate(classIds);
 
-				for (Iterator<Element> rewardIterator = rewardsElement.elementIterator("reward"); rewardIterator.hasNext();)
+				for(Iterator<Element> rewardIterator = rewardsElement.elementIterator("reward"); rewardIterator.hasNext();)
 				{
 					Element rewardElement = rewardIterator.next();
 

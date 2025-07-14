@@ -50,7 +50,7 @@ public class AcquireSkillInfoPacket implements IClientOutgoingPacket
 		_type = type;
 		_learn = learn;
 		_reqs = new ArrayList<Require>();
-		for (ItemData item : _learn.getRequiredItemsForLearn(type))
+		for(ItemData item : _learn.getRequiredItemsForLearn(type))
 		{
 			_reqs.add(new Require(99, item.getId(), item.getCount(), 50));
 		}
@@ -64,7 +64,7 @@ public class AcquireSkillInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeQ(_learn.getCost()); // sp/rep
 		packetWriter.writeD(_type.getId());
 		packetWriter.writeD(_reqs.size()); // requires size
-		for (Require temp : _reqs)
+		for(Require temp : _reqs)
 		{
 			packetWriter.writeD(temp.type);
 			packetWriter.writeD(temp.itemId);

@@ -22,7 +22,7 @@ public class MinionData
 		_respawnTime = respawnTime;
 		_territory = territory;
 
-		if (aiType != null)
+		if(aiType != null)
 		{
 			_parameters = new StatsSet();
 			_parameters.set("ai_type", aiType);

@@ -5,7 +5,6 @@ import java.util.List;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import l2s.commons.network.PacketWriter;
-import l2s.gameserver.GameServer;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.ServerPacketOpcodes;
 import l2s.gameserver.network.l2.ServerPacketOpcodes507;
@@ -40,7 +39,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 				opcodes.writeShortLE(exOpcode);
 			return opcodes.retain();
 		}
-		catch (IllegalArgumentException e) 
+		catch(IllegalArgumentException e)
 		{}
 		catch(Exception e)
 		{
@@ -48,7 +47,7 @@ public abstract class ExBlockUpSetList implements IClientOutgoingPacket
 		}
 		return Unpooled.EMPTY_BUFFER;
 	}
-	
+
 	public static class TeamList extends ExBlockUpSetList
 	{
 		private final List<Player> _bluePlayers;

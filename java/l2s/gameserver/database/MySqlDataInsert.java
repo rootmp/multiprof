@@ -42,12 +42,12 @@ public abstract class MySqlDataInsert
 		PreparedStatement pstatement = null;
 		try
 		{
-			if (db == null)
+			if(db == null)
 			{
 				db = DatabaseFactory.getInstance();
 			}
 			con = db.getConnection();
-			if (vars.length == 0)
+			if(vars.length == 0)
 			{
 				statement = con.createStatement();
 				statement.executeUpdate(query);
@@ -59,7 +59,7 @@ public abstract class MySqlDataInsert
 				pstatement.executeUpdate();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not execute update '" + query + "': " + e);
 			e.printStackTrace();
@@ -77,14 +77,14 @@ public abstract class MySqlDataInsert
 		Number n;
 		long long_val;
 		double double_val;
-		for (int i = 0; i < vars.length; i++)
+		for(int i = 0; i < vars.length; i++)
 		{
-			if (vars[i] instanceof Number)
+			if(vars[i] instanceof Number)
 			{
 				n = (Number) vars[i];
 				long_val = n.longValue();
 				double_val = n.doubleValue();
-				if (long_val == double_val)
+				if(long_val == double_val)
 				{
 					statement.setLong(i + 1, long_val);
 				}
@@ -93,7 +93,7 @@ public abstract class MySqlDataInsert
 					statement.setDouble(i + 1, double_val);
 				}
 			}
-			else if (vars[i] instanceof String)
+			else if(vars[i] instanceof String)
 			{
 				statement.setString(i + 1, (String) vars[i]);
 			}
@@ -123,12 +123,12 @@ public abstract class MySqlDataInsert
 			rset = statement.executeQuery(query + " LIMIT 1");
 			ResultSetMetaData md = rset.getMetaData();
 
-			if (rset.next())
+			if(rset.next())
 			{
-				if (md.getColumnCount() > 1)
+				if(md.getColumnCount() > 1)
 				{
 					Map<String, Object> tmp = new HashMap<String, Object>();
-					for (int i = md.getColumnCount(); i > 0; i--)
+					for(int i = md.getColumnCount(); i > 0; i--)
 					{
 						tmp.put(md.getColumnName(i), rset.getObject(i));
 					}
@@ -140,7 +140,7 @@ public abstract class MySqlDataInsert
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not execute query '" + query + "': " + e);
 			e.printStackTrace();
@@ -165,17 +165,17 @@ public abstract class MySqlDataInsert
 			rset = statement.executeQuery(query);
 			ResultSetMetaData md = rset.getMetaData();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				Map<String, Object> tmp = new HashMap<String, Object>();
-				for (int i = md.getColumnCount(); i > 0; i--)
+				for(int i = md.getColumnCount(); i > 0; i--)
 				{
 					tmp.put(md.getColumnName(i), rset.getObject(i));
 				}
 				ret.add(tmp);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not execute query '" + query + "': " + e);
 			e.printStackTrace();
@@ -195,7 +195,7 @@ public abstract class MySqlDataInsert
 		ResultSet rset = null;
 		try
 		{
-			if (db == null)
+			if(db == null)
 			{
 				db = DatabaseFactory.getInstance();
 			}
@@ -204,12 +204,12 @@ public abstract class MySqlDataInsert
 			rset = statement.executeQuery();
 			ResultSetMetaData md = rset.getMetaData();
 
-			while (rset.next())
+			while(rset.next())
 			{
-				if (md.getColumnCount() > 1)
+				if(md.getColumnCount() > 1)
 				{
 					Map<String, Object> tmp = new HashMap<String, Object>();
-					for (int i = 0; i < md.getColumnCount(); i++)
+					for(int i = 0; i < md.getColumnCount(); i++)
 					{
 						tmp.put(md.getColumnName(i + 1), rset.getObject(i + 1));
 					}
@@ -221,7 +221,7 @@ public abstract class MySqlDataInsert
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Could not execute query '" + query + "': " + e);
 			e.printStackTrace();
@@ -253,12 +253,12 @@ public abstract class MySqlDataInsert
 			statement = con.prepareStatement(query);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				res = rset.getInt(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("mSGI: Error in query '" + query + "':" + e);
 			e.printStackTrace();
@@ -286,12 +286,12 @@ public abstract class MySqlDataInsert
 			statement = con.prepareStatement(query);
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				res = rset.getInt(1);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("mSGI: Error in query '" + query + "':" + e);
 			e.printStackTrace();
@@ -307,9 +307,9 @@ public abstract class MySqlDataInsert
 	public static Integer[][] simple_get_int_array(DatabaseFactory db, String[] ret_fields, String table, String where)
 	{
 		String fields = null;
-		for (String field : ret_fields)
+		for(String field : ret_fields)
 		{
-			if (fields != null)
+			if(fields != null)
 			{
 				fields += ",";
 				fields += "`" + field + "`";
@@ -330,7 +330,7 @@ public abstract class MySqlDataInsert
 
 		try
 		{
-			if (db == null)
+			if(db == null)
 			{
 				db = DatabaseFactory.getInstance();
 			}
@@ -340,10 +340,10 @@ public abstract class MySqlDataInsert
 
 			List<Integer[]> al = new ArrayList<Integer[]>();
 			int row = 0;
-			while (rset.next())
+			while(rset.next())
 			{
 				Integer[] tmp = new Integer[ret_fields.length];
-				for (int i = 0; i < ret_fields.length; i++)
+				for(int i = 0; i < ret_fields.length; i++)
 				{
 					tmp[i] = rset.getInt(i + 1);
 				}
@@ -353,7 +353,7 @@ public abstract class MySqlDataInsert
 
 			res = al.toArray(new Integer[row][ret_fields.length]);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("mSGIA: Error in query '" + query + "':" + e);
 			e.printStackTrace();

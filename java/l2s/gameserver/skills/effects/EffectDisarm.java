@@ -17,11 +17,11 @@ public final class EffectDisarm extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 		Player player = effected.getPlayer();
 		// Нельзя снимать/одевать проклятое оружие и флаги
-		if (player.getActiveWeaponFlagAttachment() != null)
+		if(player.getActiveWeaponFlagAttachment() != null)
 			return false;
 		return true;
 	}
@@ -32,7 +32,7 @@ public final class EffectDisarm extends EffectHandler
 		Player player = (Player) effected;
 
 		ItemInstance wpn = player.getActiveWeaponInstance();
-		if (wpn != null)
+		if(wpn != null)
 		{
 			player.getInventory().unEquipItem(wpn);
 			player.sendDisarmMessage(wpn);

@@ -88,67 +88,63 @@ public class ItemAttributes
 
 	public Element getElement()
 	{
-		if (_fire > 0)
+		if(_fire > 0)
 		{
 			return Element.FIRE;
 		}
-		else if (_water > 0)
+		else if(_water > 0)
 		{
 			return Element.WATER;
 		}
-		else if (_wind > 0)
+		else if(_wind > 0)
 		{
 			return Element.WIND;
 		}
-		else if (_earth > 0)
+		else if(_earth > 0)
 		{
 			return Element.EARTH;
 		}
-		else if (_holy > 0)
+		else if(_holy > 0)
 		{
 			return Element.HOLY;
 		}
-		else if (_unholy > 0)
-		{
-			return Element.UNHOLY;
-		}
+		else if(_unholy > 0)
+		{ return Element.UNHOLY; }
 
 		return Element.NONE;
 	}
 
 	public int getValue()
 	{
-		if (_fire > 0)
+		if(_fire > 0)
 		{
 			return _fire;
 		}
-		else if (_water > 0)
+		else if(_water > 0)
 		{
 			return _water;
 		}
-		else if (_wind > 0)
+		else if(_wind > 0)
 		{
 			return _wind;
 		}
-		else if (_earth > 0)
+		else if(_earth > 0)
 		{
 			return _earth;
 		}
-		else if (_holy > 0)
+		else if(_holy > 0)
 		{
 			return _holy;
 		}
-		else if (_unholy > 0)
-		{
-			return _unholy;
-		}
+		else if(_unholy > 0)
+		{ return _unholy; }
 
 		return 0;
 	}
 
 	public void setValue(Element element, int value)
 	{
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				_fire = value;
@@ -173,7 +169,7 @@ public class ItemAttributes
 
 	public int getValue(Element element)
 	{
-		switch (element)
+		switch(element)
 		{
 			case FIRE:
 				return _fire;

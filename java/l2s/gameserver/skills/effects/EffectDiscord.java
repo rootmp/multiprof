@@ -27,31 +27,31 @@ public class EffectDiscord extends EffectHandler
 	{
 		boolean multitargets = getSkill().isAoE();
 
-		if (!effected.isMonster())
+		if(!effected.isMonster())
 		{
-			if (!multitargets)
+			if(!multitargets)
 				effector.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
 		}
 
-		if (effected.isFearImmune())
+		if(effected.isFearImmune())
 		{
-			if (!multitargets)
+			if(!multitargets)
 				effector.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
 		}
 
 		// Discord нельзя наложить на осадных саммонов
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
-			if (effected.isSummon())
+			if(effected.isSummon())
 			{
-				for (SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
 				{
-					if (siegeEvent.containsSiegeSummon((SummonInstance) effected))
+					if(siegeEvent.containsSiegeSummon((SummonInstance) effected))
 					{
-						if (!multitargets)
+						if(!multitargets)
 							effector.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 						return false;
 					}
@@ -59,18 +59,18 @@ public class EffectDiscord extends EffectHandler
 			}
 		}
 
-		if (effected.isInPeaceZone())
+		if(effected.isInPeaceZone())
 		{
-			if (!multitargets)
+			if(!multitargets)
 				effector.sendPacket(SystemMsg.YOU_MAY_NOT_ATTACK_IN_A_PEACEFUL_ZONE);
 			return false;
 		}
 
 		int skilldiff = effected.getLevel() - getSkill().getMagicLevel();
 		int lvldiff = effected.getLevel() - effector.getLevel();
-		if (skilldiff > 10 || skilldiff > 5 && Rnd.chance(30) || Rnd.chance(Math.abs(lvldiff) * 2))
+		if(skilldiff > 10 || skilldiff > 5 && Rnd.chance(30) || Rnd.chance(Math.abs(lvldiff) * 2))
 		{
-			if (!multitargets)
+			if(!multitargets)
 				effector.sendPacket(new SystemMessagePacket(SystemMsg.S1_HAS_FAILED).addSkillName(getSkill()));
 			return false;
 		}
@@ -94,7 +94,7 @@ public class EffectDiscord extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getConfused().stop(this))
+		if(effected.getFlags().getConfused().stop(this))
 		{
 			effected.abortAttack(true, true);
 			effected.abortCast(true, true);
@@ -110,12 +110,12 @@ public class EffectDiscord extends EffectHandler
 	{
 		List<Creature> targetList = new ArrayList<Creature>();
 
-		for (Creature character : effected.getAroundCharacters(900, 200))
-			if (character.isNpc() && character != effected)
+		for(Creature character : effected.getAroundCharacters(900, 200))
+			if(character.isNpc() && character != effected)
 				targetList.add(character);
 
 		// if there is no target, exit function
-		if (targetList.isEmpty())
+		if(targetList.isEmpty())
 			return true;
 
 		// Choosing randomly a new target

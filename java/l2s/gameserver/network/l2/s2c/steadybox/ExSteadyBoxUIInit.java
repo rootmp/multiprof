@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c.steadybox;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.templates.item.ItemTemplate;
 
 /**
@@ -73,7 +73,7 @@ public class ExSteadyBoxUIInit implements IClientOutgoingPacket
 		packetWriter.writeD(0);
 
 		int timeToReward = (int) ((_player.getVarLong(PlayerVariables.SB_REWARD_TIME + "_" + 1, -2) - System.currentTimeMillis()) / 1000);
-		if (timeToReward < 0)
+		if(timeToReward < 0)
 		{
 			timeToReward = 0;
 		}

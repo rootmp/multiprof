@@ -35,8 +35,7 @@ public class IpBanManager
 
 	private IpBanManager()
 	{
-		ThreadPoolManager.getInstance().scheduleAtFixedRate(() ->
-		{
+		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> {
 			long currentMillis = System.currentTimeMillis();
 
 			writeLock.lock();
@@ -44,10 +43,10 @@ public class IpBanManager
 			{
 				// Чистка просроченных сессий
 				IpSession session;
-				for (Iterator<IpSession> itr = ips.values().iterator(); itr.hasNext();)
+				for(Iterator<IpSession> itr = ips.values().iterator(); itr.hasNext();)
 				{
 					session = itr.next();
-					if (session.banExpire < currentMillis && session.lastTry < currentMillis - Config.LOGIN_TRY_TIMEOUT)
+					if(session.banExpire < currentMillis && session.lastTry < currentMillis - Config.LOGIN_TRY_TIMEOUT)
 						itr.remove();
 				}
 			}
@@ -64,7 +63,7 @@ public class IpBanManager
 		try
 		{
 			IpSession ipsession;
-			if ((ipsession = ips.get(ip)) == null)
+			if((ipsession = ips.get(ip)) == null)
 				return false;
 
 			return ipsession.banExpire > System.currentTimeMillis();
@@ -81,31 +80,31 @@ public class IpBanManager
 		try
 		{
 			IpSession ipsession;
-			if ((ipsession = ips.get(ip)) == null)
+			if((ipsession = ips.get(ip)) == null)
 				ips.put(ip, ipsession = new IpSession());
 
 			long currentMillis = System.currentTimeMillis();
 
-			if (currentMillis - ipsession.lastTry < Config.LOGIN_TRY_TIMEOUT)
+			if(currentMillis - ipsession.lastTry < Config.LOGIN_TRY_TIMEOUT)
 				success = false;
 
 			// Если успешный вход, и мы уложились в лимит между входами, уменьшаем
 			// количество неудачных попыток
-			if (success)
+			if(success)
 			{
-				if (ipsession.tryCount > 0)
+				if(ipsession.tryCount > 0)
 					ipsession.tryCount--;
 			}
 			else
 			{
-				if (ipsession.tryCount < Config.LOGIN_TRY_BEFORE_BAN)
+				if(ipsession.tryCount < Config.LOGIN_TRY_BEFORE_BAN)
 					ipsession.tryCount++;
 			}
 
 			ipsession.lastTry = currentMillis;
 
 			// Превысили лимит неудачных попыток, баним IP
-			if (ipsession.tryCount == Config.LOGIN_TRY_BEFORE_BAN)
+			if(ipsession.tryCount == Config.LOGIN_TRY_BEFORE_BAN)
 			{
 				_log.warn("IpBanManager: " + ip + " banned for " + Config.IP_BAN_TIME / 1000L + " seconds.");
 				ipsession.banExpire = currentMillis + Config.IP_BAN_TIME;

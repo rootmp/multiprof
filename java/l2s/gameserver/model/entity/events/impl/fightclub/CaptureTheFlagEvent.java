@@ -47,10 +47,10 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 	{
 		try
 		{
-			if ((actor != null) && (actor.isPlayable()))
+			if((actor != null) && (actor.isPlayable()))
 			{
 				FightClubPlayer realActor = getFightClubPlayer(actor.getPlayer());
-				if ((victim.isPlayer()) && (realActor != null))
+				if((victim.isPlayer()) && (realActor != null))
 				{
 					realActor.increaseKills(true);
 					updatePlayerScore(realActor);
@@ -59,21 +59,21 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				actor.getPlayer().sendUserInfo();
 			}
 
-			if (victim.isPlayer())
+			if(victim.isPlayer())
 			{
 				FightClubPlayer realVictim = getFightClubPlayer(victim);
 				realVictim.increaseDeaths();
-				if (actor != null)
+				if(actor != null)
 				{
 					sendMessageToPlayer(realVictim, MessageType.GM, "You have been killed by " + actor.getName());
 				}
 				victim.getPlayer().sendUserInfo();
 
 				final CaptureFlagTeam flagTeam = getTeam(realVictim.getTeam());
-				if ((flagTeam != null) && (flagTeam._thisTeamHolder != null) && (flagTeam._thisTeamHolder.equals(realVictim)))
+				if((flagTeam != null) && (flagTeam._thisTeamHolder != null) && (flagTeam._thisTeamHolder.equals(realVictim)))
 				{
 					final CaptureFlagHolder holdingTeam = flagTeam._thisTeamHolder;
-					if (holdingTeam != null && realVictim.equals(holdingTeam.playerHolding))
+					if(holdingTeam != null && realVictim.equals(holdingTeam.playerHolding))
 					{
 						holdingTeam.enemyFlagHoldByPlayer.despawnObject(this, getReflection());
 					}
@@ -83,7 +83,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 			}
 			super.onKilled(actor, victim);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag OnKilled!", e);
 		}
@@ -97,7 +97,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 			super.startEvent();
 			_flagTeams = new CaptureFlagTeam[getTeams().size()];
 			int i = 0;
-			for (FightClubTeam team : getTeams())
+			for(FightClubTeam team : getTeams())
 			{
 				CaptureFlagTeam flagTeam = new CaptureFlagTeam();
 				flagTeam._team = team;
@@ -107,7 +107,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				i++;
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag startEvent!", e);
 		}
@@ -119,20 +119,20 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		try
 		{
 			super.stopEvent(force);
-			for (CaptureFlagTeam iFlagTeam : _flagTeams)
+			for(CaptureFlagTeam iFlagTeam : _flagTeams)
 			{
-				if (iFlagTeam._flag != null)
+				if(iFlagTeam._flag != null)
 					iFlagTeam._flag.deleteMe();
-				if (iFlagTeam._holder != null)
+				if(iFlagTeam._holder != null)
 					iFlagTeam._holder.deleteMe();
-				if ((iFlagTeam._thisTeamHolder != null) && (iFlagTeam._thisTeamHolder.enemyFlagHoldByPlayer != null))
+				if((iFlagTeam._thisTeamHolder != null) && (iFlagTeam._thisTeamHolder.enemyFlagHoldByPlayer != null))
 				{
 					iFlagTeam._thisTeamHolder.enemyFlagHoldByPlayer.despawnObject(this, getReflection());
 				}
 			}
 			_flagTeams = null;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag stopEvent!", e);
 		}
@@ -143,24 +143,20 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		try
 		{
 			FightClubPlayer fPlayer = getFightClubPlayer(player);
-			if (fPlayer == null)
-			{
-				return false;
-			}
-			if (getState() != EventState.STARTED)
-			{
-				return false;
-			}
+			if(fPlayer == null)
+			{ return false; }
+			if(getState() != EventState.STARTED)
+			{ return false; }
 			CaptureFlagTeam flagTeam = null;
-			for (CaptureFlagTeam iFlagTeam : _flagTeams)
+			for(CaptureFlagTeam iFlagTeam : _flagTeams)
 			{
-				if ((iFlagTeam._flag != null) && (iFlagTeam._flag.equals(flag)))
+				if((iFlagTeam._flag != null) && (iFlagTeam._flag.equals(flag)))
 				{
 					flagTeam = iFlagTeam;
 				}
 			}
 
-			if (fPlayer.getTeam().equals(flagTeam._team))
+			if(fPlayer.getTeam().equals(flagTeam._team))
 			{
 				giveFlagBack(fPlayer, flagTeam);
 				return false;
@@ -170,7 +166,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				return getEnemyFlag(fPlayer, flagTeam);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag tryToTakeFlag!", e);
 			return false;
@@ -182,28 +178,24 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		try
 		{
 			FightClubPlayer fPlayer = getFightClubPlayer(player);
-			if (fPlayer == null)
-			{
-				return;
-			}
-			if (getState() != EventState.STARTED)
-			{
-				return;
-			}
+			if(fPlayer == null)
+			{ return; }
+			if(getState() != EventState.STARTED)
+			{ return; }
 			CaptureFlagTeam flagTeam = null;
-			for (CaptureFlagTeam iFlagTeam : _flagTeams)
+			for(CaptureFlagTeam iFlagTeam : _flagTeams)
 			{
-				if ((iFlagTeam._holder != null) && (iFlagTeam._holder.equals(holder)))
+				if((iFlagTeam._holder != null) && (iFlagTeam._holder.equals(holder)))
 				{
 					flagTeam = iFlagTeam;
 				}
 			}
-			if (fPlayer.getTeam().equals(flagTeam._team))
+			if(fPlayer.getTeam().equals(flagTeam._team))
 			{
 				giveFlagBack(fPlayer, flagTeam);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag talkedWithFlagHolder!", e);
 		}
@@ -216,7 +208,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 			final CaptureFlagTeam goodTeam = getTeam(fPlayer.getTeam());
 			final Player player = fPlayer.getPlayer();
 
-			if (goodTeam._flag != null)
+			if(goodTeam._flag != null)
 			{
 				goodTeam._flag.deleteMe();
 				goodTeam._flag = null;
@@ -233,13 +225,14 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				goodTeam._thisTeamHolder = holder;
 
 				sendMessageToTeam(goodTeam._team, MessageType.CRITICAL, "Someone stolen your Flag!");
-				sendMessageToTeam(goodTeam._team, MessageType.CRITICAL, fPlayer.getPlayer().getName() + " stolen flag from " + goodTeam._team.getName() + " Team!");
+				sendMessageToTeam(goodTeam._team, MessageType.CRITICAL, fPlayer.getPlayer().getName() + " stolen flag from " + goodTeam._team.getName()
+						+ " Team!");
 
 				return true;
 			}
 			return false;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag talkedWithFlagHolder!", e);
 			return false;
@@ -248,22 +241,18 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 
 	private CaptureFlagTeam getTeam(FightClubTeam team)
 	{
-		if (team == null)
-		{
-			return null;
-		}
+		if(team == null)
+		{ return null; }
 		try
 		{
-			for (CaptureFlagTeam iFlagTeam : _flagTeams)
+			for(CaptureFlagTeam iFlagTeam : _flagTeams)
 			{
-				if ((iFlagTeam._team != null) && (iFlagTeam._team.equals(team)))
-				{
-					return iFlagTeam;
-				}
+				if((iFlagTeam._team != null) && (iFlagTeam._team.equals(team)))
+				{ return iFlagTeam; }
 			}
 			return null;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag getTeam!", e);
 			return null;
@@ -275,7 +264,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		try
 		{
 			CaptureFlagHolder holdingTeam = flagTeam._thisTeamHolder;
-			if ((holdingTeam != null) && (fPlayer.equals(holdingTeam.playerHolding)))
+			if((holdingTeam != null) && (fPlayer.equals(holdingTeam.playerHolding)))
 			{
 				holdingTeam.enemyFlagHoldByPlayer.despawnObject(this, getReflection());
 
@@ -285,9 +274,9 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				flagTeam._team.incScore(1);
 				updateScreenScores();
 
-				for (FightClubTeam team : getTeams())
+				for(FightClubTeam team : getTeams())
 				{
-					if (!team.equals(flagTeam._team))
+					if(!team.equals(flagTeam._team))
 					{
 						sendMessageToTeam(holdingTeam.teamFlagOwner, MessageType.CRITICAL, flagTeam._team.getName() + " team gained score!");
 					}
@@ -296,7 +285,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 				fPlayer.increaseEventSpecificScore("capture");
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag giveFlagBack!", e);
 		}
@@ -316,7 +305,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 			flag.broadcastCharInfo();
 			flagTeam._flag = flag;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error on CaptureTheFlag spawnFlag!", e);
 		}
@@ -326,10 +315,8 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 	{
 		final FightClubPlayer fPlayer = getFightClubPlayer(player);
 
-		if (fPlayer == null)
-		{
-			return currentTitle;
-		}
+		if(fPlayer == null)
+		{ return currentTitle; }
 		return "Kills: " + fPlayer.getKills(true) + " Deaths: " + fPlayer.getDeaths();
 	}
 
@@ -340,8 +327,7 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		private FightClubTeam teamFlagOwner;
 
 		private CaptureFlagHolder()
-		{
-		}
+		{}
 	}
 
 	private class CaptureFlagTeam
@@ -352,7 +338,6 @@ public class CaptureTheFlagEvent extends AbstractFightClub
 		private CaptureTheFlagEvent.CaptureFlagHolder _thisTeamHolder;
 
 		private CaptureFlagTeam()
-		{
-		}
+		{}
 	}
 }

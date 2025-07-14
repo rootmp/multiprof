@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
@@ -19,20 +20,20 @@ public final class RequestRegistWaitingSubstitute implements IClientIncomingPack
 	public void run(GameClient client)
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.isAutoSearchParty() != _enable)
+		if(activeChar.isAutoSearchParty() != _enable)
 		{
-			if (_enable)
+			if(_enable)
 			{
-				if (activeChar.mayPartySearch(true, true))
+				if(activeChar.mayPartySearch(true, true))
 					activeChar.enableAutoSearchParty();
 			}
 			else
 				activeChar.disablePartySearch(true);
 
-			if (_enable)
+			if(_enable)
 				activeChar.sendPacket(SystemMsg.YOU_ARE_REGISTERED_ON_THE_WAITING_LIST);
 			else
 				activeChar.sendPacket(SystemMsg.STOPPED_SEARCHING_THE_PARTY);

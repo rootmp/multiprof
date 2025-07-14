@@ -44,7 +44,7 @@ public class InstantClanHallDAO
 			statement = con.prepareStatement(SELECT_OWNER_SQL_QUERY);
 			statement.setInt(1, clanHall.getInstantId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 				clanHall.addOwner(ClanTable.getInstance().getClan(rset.getInt("owner_id")), false);
 
 			DbUtils.closeQuietly(statement, rset);
@@ -52,10 +52,10 @@ public class InstantClanHallDAO
 			statement = con.prepareStatement(SELECT_INFO_SQL_QUERY);
 			statement.setInt(1, clanHall.getInstantId());
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 				clanHall.getSiegeDate().setTimeInMillis(rset.getInt("siege_date") * 1000L);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("InstantClanHallDAO.select(InstantClanHall):" + e, e);
 		}
@@ -67,7 +67,7 @@ public class InstantClanHallDAO
 
 	public void update(InstantClanHall clanHall)
 	{
-		if (!clanHall.getJdbcState().isUpdatable())
+		if(!clanHall.getJdbcState().isUpdatable())
 			return;
 
 		clanHall.setJdbcState(JdbcEntityState.STORED);
@@ -86,7 +86,7 @@ public class InstantClanHallDAO
 			statement.setInt(2, (int) (clanHall.getSiegeDate().getTimeInMillis() / 1000L));
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("InstantClanHallDAO#update0(InstantClanHall): " + e, e);
 		}
@@ -108,7 +108,7 @@ public class InstantClanHallDAO
 			statement.setInt(2, clanHall.getInstantId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("InstantClanHallDAO.insert(InstantClanHall,Clan): " + e, e);
 			return false;
@@ -132,7 +132,7 @@ public class InstantClanHallDAO
 			statement.setInt(2, clanHall.getInstantId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("InstantClanHallDAO.delete(InstantClanHall,Clan): " + e, e);
 			return false;

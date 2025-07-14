@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
@@ -28,11 +28,11 @@ public class WareHouseDepositListPacket implements IClientOutgoingPacket
 		ItemInstance[] items = cha.getInventory().getItems();
 		Arrays.sort(items, ItemClassComparator.getInstance());
 		_itemList = new ArrayList<ItemInfo>(items.length);
-		for (ItemInstance item : items)
-			if (item.canBeStored(cha, _whtype == 1))
+		for(ItemInstance item : items)
+			if(item.canBeStored(cha, _whtype == 1))
 				_itemList.add(new ItemInfo(item, item.getTemplate().isBlocked(cha, item)));
 
-		switch (whtype)
+		switch(whtype)
 		{
 			case PRIVATE:
 				_depositedItemsCount = cha.getWarehouse().getSize();
@@ -55,18 +55,18 @@ public class WareHouseDepositListPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_type);
 		packetWriter.writeH(_whtype);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeQ(_adena);
 			packetWriter.writeH(_depositedItemsCount); // Количество вещей которые уже есть в банке.
 			packetWriter.writeD(0x00);
 			packetWriter.writeD(0x00);
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeH(0);// TODO [Bonux]
 			packetWriter.writeD(_itemList.size());
-			for (ItemInfo item : _itemList)
+			for(ItemInfo item : _itemList)
 			{
 				writeItemInfo(packetWriter, item);
 				packetWriter.writeD(item.getObjectId());

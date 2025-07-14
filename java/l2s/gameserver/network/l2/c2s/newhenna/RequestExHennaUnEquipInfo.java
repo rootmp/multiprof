@@ -10,6 +10,7 @@ import l2s.gameserver.templates.item.henna.Henna;
 public class RequestExHennaUnEquipInfo implements IClientIncomingPacket
 {
 	private int _id;
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -21,15 +22,15 @@ public class RequestExHennaUnEquipInfo implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 		Henna henna = null;
 
-		for (int slot = 1; slot <= 4; ++slot) 
+		for(int slot = 1; slot <= 4; ++slot)
 		{
-			if (player.getHenna(slot) != null) 
+			if(player.getHenna(slot) != null)
 			{
-				if (player.getHenna(slot).getDyeId() == this._id) 
+				if(player.getHenna(slot).getDyeId() == this._id)
 				{
 					henna = player.getHenna(slot);
 					break;
@@ -38,9 +39,8 @@ public class RequestExHennaUnEquipInfo implements IClientIncomingPacket
 		}
 		if(henna == null)
 			return;
-		
+
 		player.sendPacket(new HennaUnequipInfoPacket(henna, player));
 	}
-
 
 }

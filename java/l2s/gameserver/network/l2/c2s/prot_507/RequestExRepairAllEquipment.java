@@ -28,7 +28,7 @@ public class RequestExRepairAllEquipment implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		final PcInventory inventory = player.getInventory();
@@ -36,32 +36,32 @@ public class RequestExRepairAllEquipment implements IClientIncomingPacket
 		List<ItemInstance> brokenItems = inventory.getItemsList().stream().filter(Objects::nonNull).filter(ItemInstance::isDamaged).collect(Collectors.toList());
 
 		int count = brokenItems.size();
-		if (count == 0)
+		if(count == 0)
 			return;
 
 		int cost;
-		if (count == 1)
+		if(count == 1)
 			cost = 3;
-		else if (count == 2)
+		else if(count == 2)
 			cost = 6;
-		else if (count == 3)
+		else if(count == 3)
 			cost = 13;
-		else if (count == 4)
+		else if(count == 4)
 			cost = 20;
 		else
 			cost = 30;
 
 		boolean paid = ItemFunctions.deleteItem(player, REPAIR_ITEM_ID, cost, true);
-		if (!paid)
+		if(!paid)
 		{
 			player.sendPacket(new ExRepairAllEquipment(false));
 			return;
 		}
-		
+
 		inventory.writeLock();
 		try
 		{
-			for (ItemInstance item : brokenItems)
+			for(ItemInstance item : brokenItems)
 			{
 				item.setDamaged(false);
 				item.setJdbcState(JdbcEntityState.UPDATED);

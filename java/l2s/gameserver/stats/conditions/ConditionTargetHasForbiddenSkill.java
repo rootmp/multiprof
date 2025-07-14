@@ -16,7 +16,7 @@ public final class ConditionTargetHasForbiddenSkill extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Creature target = env.target;
-		if (!target.isPlayable())
+		if(!target.isPlayable())
 			return false;
 		return !(target.getSkillLevel(_skillId) > 0);
 	}

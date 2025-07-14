@@ -12,7 +12,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Bypass
-{
+public @interface Bypass {
 	String value();
 }

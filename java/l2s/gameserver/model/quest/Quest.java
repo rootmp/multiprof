@@ -19,6 +19,8 @@ import org.napile.primitive.sets.impl.HashIntSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.dbutils.DbUtils;
 import l2s.commons.logging.LogUtils;
 import l2s.gameserver.Config;
@@ -62,9 +64,6 @@ import l2s.gameserver.templates.npc.NpcTemplate;
 import l2s.gameserver.utils.HtmlUtils;
 import l2s.gameserver.utils.NpcUtils;
 import l2s.gameserver.utils.ReflectionUtils;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class Quest implements OnInitScriptListener
 {
@@ -143,28 +142,27 @@ public class Quest implements OnInitScriptListener
 	private TIntObjectMap<List<QuestNpcLogInfo>> _customLogList = new TIntObjectHashMap<List<QuestNpcLogInfo>>(5);
 	private Map<ICheckStartCondition, ConditionMessage> _startConditions = new HashMap<ICheckStartCondition, ConditionMessage>();
 
-	private static final int[][] BUFF_SETS = new int[][]
-	{
-		{
-			1068,
-			1
-		}, // Might
-		{
-			1040,
-			1
-		}, // Shield
-		{
-			1204,
-			1
-		}, // Wind Walk
-		{
-			1086,
-			1
-		}, // Haste
-		{
-			1085,
-			1
-		} // Acumen
+	private static final int[][] BUFF_SETS = new int[][] {
+			{
+					1068,
+					1
+			}, // Might
+			{
+					1040,
+					1
+			}, // Shield
+			{
+					1204,
+					1
+			}, // Wind Walk
+			{
+					1086,
+					1
+			}, // Haste
+			{
+					1085,
+					1
+			} // Acumen
 	};
 
 	private final double _rewardRate;
@@ -176,11 +174,11 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addQuestItem(int... ids)
 	{
-		for (int id : ids)
-			if (id != 0)
+		for(int id : ids)
+			if(id != 0)
 			{
 				ItemTemplate i = ItemHolder.getInstance().getTemplate(id);
-				if (i == null)
+				if(i == null)
 				{
 					_log.warn("Item ID[" + id + "] is null in quest drop in " + getName());
 					continue;
@@ -197,13 +195,13 @@ public class Quest implements OnInitScriptListener
 
 	public void addQuestItemWithLog(int cond, int npcStringId, int max, int... ids)
 	{
-		if (ids.length == 0)
+		if(ids.length == 0)
 			throw new IllegalArgumentException("Items list cant be empty!");
 
 		addQuestItem(ids);
 
 		List<QuestNpcLogInfo> vars = _itemsLogList.get(cond);
-		if (vars == null)
+		if(vars == null)
 			_itemsLogList.put(cond, (vars = new ArrayList<QuestNpcLogInfo>(5)));
 
 		vars.add(new QuestNpcLogInfo(ids, null, max, npcStringId));
@@ -212,16 +210,16 @@ public class Quest implements OnInitScriptListener
 	public void updateItems(ItemInstance item, QuestState st)
 	{
 		Player player = st.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		List<QuestNpcLogInfo> vars = getItemsLogList(st.getCond());
-		if (vars == null)
+		if(vars == null)
 			return;
 
-		for (QuestNpcLogInfo info : vars)
+		for(QuestNpcLogInfo info : vars)
 		{
-			if (ArrayUtils.contains(info.getNpcIds(), item.getItemId()))
+			if(ArrayUtils.contains(info.getNpcIds(), item.getItemId()))
 			{
 				player.sendPacket(new ExQuestNpcLogList(st));
 				break;
@@ -242,7 +240,7 @@ public class Quest implements OnInitScriptListener
 	public void addCustomLog(int cond, String varName, int npcStringId, int max)
 	{
 		List<QuestNpcLogInfo> vars = _customLogList.get(cond);
-		if (vars == null)
+		if(vars == null)
 			_customLogList.put(cond, (vars = new ArrayList<QuestNpcLogInfo>(5)));
 
 		vars.add(new QuestNpcLogInfo(null, varName, max, npcStringId));
@@ -258,7 +256,7 @@ public class Quest implements OnInitScriptListener
 	public static void updateQuestVarInDb(QuestState qs, String var, String value)
 	{
 		Player player = qs.getPlayer();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Connection con = null;
@@ -273,7 +271,7 @@ public class Quest implements OnInitScriptListener
 			statement.setString(4, value);
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not insert char quest:", e);
 		}
@@ -300,7 +298,7 @@ public class Quest implements OnInitScriptListener
 			statement.setInt(2, qs.getQuest().getId());
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not delete char quest:", e);
 		}
@@ -329,7 +327,7 @@ public class Quest implements OnInitScriptListener
 			statement.setString(3, var);
 			statement.executeUpdate();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not delete char quest:", e);
 		}
@@ -361,7 +359,7 @@ public class Quest implements OnInitScriptListener
 			statement = con.prepareStatement("SELECT id,var,value FROM character_quests WHERE char_id=?");
 			statement.setInt(1, player.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int questId = rset.getInt("id");
 				String var = rset.getString("var");
@@ -369,15 +367,15 @@ public class Quest implements OnInitScriptListener
 
 				// Get the QuestState saved in the loop before
 				QuestState qs = player.getQuestState(questId);
-				if (qs == null)
+				if(qs == null)
 				{
 					// Search quest associated with the ID
 					Quest q = QuestHolder.getInstance().getQuest(questId);
-					if (q == null)
+					if(q == null)
 					{
-						if (!Config.DONTLOADQUEST)
+						if(!Config.DONTLOADQUEST)
 						{
-							if (!questsToDelete.contains(questId))
+							if(!questsToDelete.contains(questId))
 							{
 								questsToDelete.add(questId);
 								_log.warn("Unknown quest " + questId + " for player " + player.getName());
@@ -392,12 +390,12 @@ public class Quest implements OnInitScriptListener
 				qs.set(var, value, false);
 			}
 
-			if (!questsToDelete.isEmpty())
+			if(!questsToDelete.isEmpty())
 			{
 				DbUtils.close(statement);
 
 				statement = con.prepareStatement("DELETE FROM character_quests WHERE char_id=? AND id=?");
-				for (int questId : questsToDelete.toArray())
+				for(int questId : questsToDelete.toArray())
 				{
 					statement.setInt(1, player.getObjectId());
 					statement.setInt(2, questId);
@@ -407,7 +405,7 @@ public class Quest implements OnInitScriptListener
 				statement.executeBatch();
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not insert char quest:", e);
 		}
@@ -434,7 +432,7 @@ public class Quest implements OnInitScriptListener
 		_repeatType = repeatType;
 		_abortable = abortable;
 
-		if (!Config.EX_USE_QUEST_REWARD_PENALTY_PER || !Config.EX_F2P_QUEST_REWARD_PENALTY_QUESTS.contains(_id))
+		if(!Config.EX_USE_QUEST_REWARD_PENALTY_PER || !Config.EX_F2P_QUEST_REWARD_PENALTY_QUESTS.contains(_id))
 			_rewardRate = 1.;
 		else
 			_rewardRate = Config.EX_F2P_QUEST_REWARD_PENALTY_PER * 0.01;
@@ -479,7 +477,7 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addAttackId(int... attackIds)
 	{
-		for (int attackId : attackIds)
+		for(int attackId : attackIds)
 			addEventId(attackId, QuestEventType.ATTACKED_WITH_QUEST);
 	}
 
@@ -497,11 +495,11 @@ public class Quest implements OnInitScriptListener
 		try
 		{
 			NpcTemplate t = NpcHolder.getInstance().getTemplate(npcId);
-			if (t != null)
+			if(t != null)
 				t.addQuestEvent(eventType, this);
 			return t;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 			return null;
@@ -518,7 +516,7 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addKillId(int... killIds)
 	{
-		for (int killid : killIds)
+		for(int killid : killIds)
 			addEventId(killid, QuestEventType.MOB_KILLED_WITH_QUEST);
 	}
 
@@ -532,13 +530,13 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addKillNpcWithLog(int cond, int npcStringId, String varName, int max, int... killIds)
 	{
-		if (killIds.length == 0)
+		if(killIds.length == 0)
 			throw new IllegalArgumentException("Npc list cant be empty!");
 
 		addKillId(killIds);
 
 		List<QuestNpcLogInfo> vars = _npcLogList.get(cond);
-		if (vars == null)
+		if(vars == null)
 			_npcLogList.put(cond, (vars = new ArrayList<QuestNpcLogInfo>(5)));
 
 		/*
@@ -557,32 +555,32 @@ public class Quest implements OnInitScriptListener
 	public boolean updateKill(NpcInstance npc, QuestState st)
 	{
 		Player player = st.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 		List<QuestNpcLogInfo> vars = getNpcLogList(st.getCond());
-		if (vars == null)
+		if(vars == null)
 			return false;
 		boolean done = true;
 		boolean find = false;
 		boolean update = false;
-		for (QuestNpcLogInfo info : vars)
+		for(QuestNpcLogInfo info : vars)
 		{
 			int count = st.getInt(info.getVarName());
-			if (!find && ArrayUtils.contains(info.getNpcIds(), npc.getNpcId()))
+			if(!find && ArrayUtils.contains(info.getNpcIds(), npc.getNpcId()))
 			{
 				find = true;
-				if (count < info.getMaxCount())
+				if(count < info.getMaxCount())
 				{
 					st.set(info.getVarName(), ++count);
 					update = true;
 				}
 			}
 
-			if (count != info.getMaxCount())
+			if(count != info.getMaxCount())
 				done = false;
 		}
 
-		if (update)
+		if(update)
 			player.sendPacket(new ExQuestNpcLogList(st));
 
 		return done;
@@ -591,30 +589,30 @@ public class Quest implements OnInitScriptListener
 	public boolean setCustomLog(String var, QuestState st, int value)
 	{
 		Player player = st.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 		List<QuestNpcLogInfo> vars = getCustomLogList(st.getCond());
-		if (vars == null)
+		if(vars == null)
 			return false;
 		boolean done = true;
 		boolean update = false;
-		for (QuestNpcLogInfo info : vars)
+		for(QuestNpcLogInfo info : vars)
 		{
-			if (!var.equalsIgnoreCase(info.getVarName()))
+			if(!var.equalsIgnoreCase(info.getVarName()))
 				continue;
 
 			int count = Math.min(value, info.getMaxCount());
-			if (st.getInt(var) == count)
+			if(st.getInt(var) == count)
 				continue;
 
 			st.set(info.getVarName(), count);
 			update = true;
 
-			if (count != info.getMaxCount())
+			if(count != info.getMaxCount())
 				done = false;
 		}
 
-		if (update)
+		if(update)
 			player.sendPacket(new ExQuestNpcLogList(st));
 
 		return done;
@@ -623,30 +621,30 @@ public class Quest implements OnInitScriptListener
 	public boolean updateCustomLog(String var, QuestState st)
 	{
 		Player player = st.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 		List<QuestNpcLogInfo> vars = getCustomLogList(st.getCond());
-		if (vars == null)
+		if(vars == null)
 			return false;
 		boolean done = true;
 		boolean update = false;
-		for (QuestNpcLogInfo info : vars)
+		for(QuestNpcLogInfo info : vars)
 		{
-			if (!var.equalsIgnoreCase(info.getVarName()))
+			if(!var.equalsIgnoreCase(info.getVarName()))
 				continue;
 
 			int count = st.getInt(var);
-			if (count < info.getMaxCount())
+			if(count < info.getMaxCount())
 			{
 				st.set(info.getVarName(), ++count);
 				update = true;
 			}
 
-			if (count != info.getMaxCount())
+			if(count != info.getMaxCount())
 				done = false;
 		}
 
-		if (update)
+		if(update)
 			player.sendPacket(new ExQuestNpcLogList(st));
 
 		return done;
@@ -654,7 +652,7 @@ public class Quest implements OnInitScriptListener
 
 	public void addKillId(Collection<Integer> killIds)
 	{
-		for (int killid : killIds)
+		for(int killid : killIds)
 			addKillId(killid);
 	}
 
@@ -673,7 +671,7 @@ public class Quest implements OnInitScriptListener
 
 	public void addStartNpc(int... npcIds)
 	{
-		for (int talkId : npcIds)
+		for(int talkId : npcIds)
 			addStartNpc(talkId);
 	}
 
@@ -698,7 +696,7 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addFirstTalkId(int... npcIds)
 	{
-		for (int npcId : npcIds)
+		for(int npcId : npcIds)
 			addEventId(npcId, QuestEventType.NPC_FIRST_TALK);
 	}
 
@@ -712,13 +710,13 @@ public class Quest implements OnInitScriptListener
 	 */
 	public void addTalkId(int... talkIds)
 	{
-		for (int talkId : talkIds)
+		for(int talkId : talkIds)
 			addEventId(talkId, QuestEventType.QUEST_TALK);
 	}
 
 	public void addTalkId(Collection<Integer> talkIds)
 	{
-		for (int talkId : talkIds)
+		for(int talkId : talkIds)
 			addTalkId(talkId);
 	}
 
@@ -844,12 +842,12 @@ public class Quest implements OnInitScriptListener
 	 */
 	public String getDescr(NpcInstance npc, Player player, boolean isStartNpc)
 	{
-		if (!isVisible(player))
+		if(!isVisible(player))
 			return null;
 
 		int state = getDescrState(npc, player, isStartNpc);
 		String font = FONT_QUEST_AVAILABLE;
-		switch (state)
+		switch(state)
 		{
 			case 2:
 				font = FONT_QUEST_IN_PROGRESS;
@@ -868,19 +866,19 @@ public class Quest implements OnInitScriptListener
 	public int getDescriprionId(int state)
 	{
 		int fStringId = getId();
-		if (fStringId > 11000)
+		if(fStringId > 11000)
 			fStringId -= 10000;
-		else if ((fStringId >= 10000) && (getId() > 10980) && (getId() < 10991))
+		else if((fStringId >= 10000) && (getId() > 10980) && (getId() < 10991))
 		{
 			fStringId -= 10000;
 			fStringId = fStringId * 100 + 5000 + state;
 		}
-		else if (fStringId > 10000)
+		else if(fStringId > 10000)
 		{
 			fStringId -= 5000;
 			fStringId = fStringId * 100 + state;
 		}
-		else if (fStringId < 1000)
+		else if(fStringId < 1000)
 		{
 			fStringId = fStringId * 100 + state;
 		}
@@ -896,12 +894,12 @@ public class Quest implements OnInitScriptListener
 	{
 		QuestState qs = player.getQuestState(this);
 		int state = 4;
-		if (checkStartCondition(npc, player) == null && isStartNpc && (qs == null || qs.isNotAccepted()))
+		if(checkStartCondition(npc, player) == null && isStartNpc && (qs == null || qs.isNotAccepted()))
 			state = 1;
-		else if (qs != null && qs.isStarted()) // TODO [Ragnarok], уточнить нужна ли здесь проверка на
-												// checkStartCondition()
+		else if(qs != null && qs.isStarted()) // TODO [Ragnarok], уточнить нужна ли здесь проверка на
+			// checkStartCondition()
 			state = 2;
-		else if (qs != null && qs.isCompleted())
+		else if(qs != null && qs.isCompleted())
 			state = 3;
 		return state;
 	}
@@ -957,7 +955,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onAttack(npc, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -977,7 +975,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onDeath(killer, victim, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -995,12 +993,12 @@ public class Quest implements OnInitScriptListener
 		String res = null;
 		try
 		{
-			if (event.equalsIgnoreCase(ACCEPT_QUEST_EVENT))
+			if(event.equalsIgnoreCase(ACCEPT_QUEST_EVENT))
 				res = onAcceptQuest(qs, npc);
-			if (res == null)
+			if(res == null)
 				res = onEvent(event, qs, npc);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -1020,7 +1018,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onMenuSelect(reply, qs, npc);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return true;
@@ -1040,7 +1038,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onKill(npc, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -1060,7 +1058,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onKill(target, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -1081,7 +1079,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onFirstTalk(npc, player);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(player, e);
 			return true;
@@ -1098,16 +1096,16 @@ public class Quest implements OnInitScriptListener
 		String res = null;
 		try
 		{
-			if (qs.isNotAccepted())
+			if(qs.isNotAccepted())
 			{
 				Set<Quest> quests = npc.getTemplate().getEventQuests(QuestEventType.QUEST_START);
-				if (quests != null && quests.contains(this))
+				if(quests != null && quests.contains(this))
 					res = checkStartCondition(npc, qs.getPlayer());
 			}
-			if (StringUtils.isEmpty(res))
+			if(StringUtils.isEmpty(res))
 				res = onTalk(npc, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return true;
@@ -1127,7 +1125,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onCompleted(npc, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return true;
@@ -1147,7 +1145,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onSkillUse(npc, skill, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return true;
@@ -1164,7 +1162,7 @@ public class Quest implements OnInitScriptListener
 		{
 			onSocialActionUse(qs, actionId);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 		}
@@ -1176,7 +1174,7 @@ public class Quest implements OnInitScriptListener
 		{
 			updateItems(item, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -1190,7 +1188,7 @@ public class Quest implements OnInitScriptListener
 		{
 			res = onTutorialEvent(event, quest, value, qs);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			showError(qs.getPlayer(), e);
 			return;
@@ -1307,7 +1305,7 @@ public class Quest implements OnInitScriptListener
 	private void showError(Player player, Throwable t)
 	{
 		_log.error("", t);
-		if (player != null && player.isGM())
+		if(player != null && player.isGM())
 		{
 			String res = "<html><body><title>Script error</title>" + LogUtils.dumpStack(t).replace("\n", "<br>") + "</body></html>";
 			showResult(null, player, res, false);
@@ -1321,17 +1319,17 @@ public class Quest implements OnInitScriptListener
 
 	protected void showHtmlFile(Player player, NpcInstance npc, String fileName, boolean showQuestInfo, Object... arg)
 	{
-		if (player == null)
+		if(player == null)
 			return;
 
 		HtmlMessage npcReply = new HtmlMessage(npc == null ? 5 : npc.getObjectId());
-		if (showQuestInfo)
+		if(showQuestInfo)
 			npcReply.setQuestId(getId());
 		npcReply.setFile("quests/" + getClass().getSimpleName() + "/" + fileName);
 		npcReply.replace("<?quest_id?>", String.valueOf(getId()));
 
-		if (arg.length % 2 == 0)
-			for (int i = 0; i < arg.length; i += 2)
+		if(arg.length % 2 == 0)
+			for(int i = 0; i < arg.length; i += 2)
 				npcReply.replace(String.valueOf(arg[i]), String.valueOf(arg[i + 1]));
 
 		player.sendPacket(npcReply);
@@ -1339,7 +1337,7 @@ public class Quest implements OnInitScriptListener
 
 	protected void showSimpleHtmFile(Player player, String fileName)
 	{
-		if (player == null)
+		if(player == null)
 			return;
 
 		HtmlMessage npcReply = new HtmlMessage(5);
@@ -1349,14 +1347,14 @@ public class Quest implements OnInitScriptListener
 
 	protected void showTutorialHtmlFile(Player player, String fileName, Object... arg)
 	{
-		if (player == null)
+		if(player == null)
 			return;
 
 		String text = HtmCache.getInstance().getHtml("quests/" + getClass().getSimpleName() + "/tutorial/" + fileName, player);
 
-		if (arg.length % 2 == 0)
+		if(arg.length % 2 == 0)
 		{
-			for (int i = 0; i < arg.length; i += 2)
+			for(int i = 0; i < arg.length; i += 2)
 				text.replace(String.valueOf(arg[i]), String.valueOf(arg[i + 1]));
 		}
 
@@ -1387,21 +1385,21 @@ public class Quest implements OnInitScriptListener
 
 	private boolean showResult(NpcInstance npc, Player player, String res, boolean isFirstTalk, boolean showQuestInfo)
 	{
-		if (res == null) // do not show message
+		if(res == null) // do not show message
 			return true;
-		if (StringUtils.isEmpty(res)) // show default npc message
+		if(StringUtils.isEmpty(res)) // show default npc message
 			return false;
-		if (res.startsWith("no_quest") || res.equalsIgnoreCase("noquest") || res.equalsIgnoreCase("no-quest"))
+		if(res.startsWith("no_quest") || res.equalsIgnoreCase("noquest") || res.equalsIgnoreCase("no-quest"))
 			showSimpleHtmFile(player, "no-quest.htm");
-		else if (res.equalsIgnoreCase("completed"))
+		else if(res.equalsIgnoreCase("completed"))
 			showSimpleHtmFile(player, "completed-quest.htm");
-		else if (res.endsWith(".htm"))
+		else if(res.endsWith(".htm"))
 			showHtmlFile(player, npc, res, showQuestInfo);
 		else
 		{
 			HtmlMessage npcReply = new HtmlMessage(npc == null ? 5 : npc.getObjectId()).setPlayVoice(isFirstTalk);
 			npcReply.setHtml(res);
-			if (showQuestInfo)
+			if(showQuestInfo)
 				npcReply.setQuestId(getId());
 			npcReply.replace("<?quest_id?>", String.valueOf(getId()));
 			player.sendPacket(npcReply);
@@ -1411,10 +1409,10 @@ public class Quest implements OnInitScriptListener
 
 	private void showTutorialResult(Player player, String res)
 	{
-		if (StringUtils.isEmpty(res))
+		if(StringUtils.isEmpty(res))
 			return;
 
-		if (res.endsWith(".htm"))
+		if(res.endsWith(".htm"))
 			showTutorialHtmlFile(player, res);
 		else
 			player.sendPacket(new TutorialShowHtmlPacket(TutorialShowHtmlPacket.NORMAL_WINDOW, res));
@@ -1424,7 +1422,7 @@ public class Quest implements OnInitScriptListener
 	private boolean canShowQuestInfo(Player player)
 	{
 		QuestState qs = player.getQuestState(this);
-		if (isVisible(player) && (qs == null || qs.isNotAccepted()))
+		if(isVisible(player) && (qs == null || qs.isNotAccepted()))
 			return true;
 		return false;
 	}
@@ -1432,10 +1430,10 @@ public class Quest implements OnInitScriptListener
 	// Останавливаем и сохраняем таймеры (при выходе из игры)
 	void pauseQuestTimers(QuestState qs)
 	{
-		if (qs.getTimers().isEmpty())
+		if(qs.getTimers().isEmpty())
 			return;
 
-		for (QuestTimer timer : qs.getTimers().values())
+		for(QuestTimer timer : qs.getTimers().values())
 		{
 			timer.setQuestState(null);
 			timer.pause();
@@ -1448,12 +1446,12 @@ public class Quest implements OnInitScriptListener
 	void resumeQuestTimers(QuestState qs)
 	{
 		Map<String, QuestTimer> timers = _pausedQuestTimers.remove(qs.getPlayer().getObjectId());
-		if (timers == null)
+		if(timers == null)
 			return;
 
 		qs.getTimers().putAll(timers);
 
-		for (QuestTimer timer : qs.getTimers().values())
+		for(QuestTimer timer : qs.getTimers().values())
 		{
 			timer.setQuestState(qs);
 			timer.start();
@@ -1476,7 +1474,8 @@ public class Quest implements OnInitScriptListener
 
 	public NpcInstance addSpawn(int npcId, Location loc, int randomOffset, int despawnDelay)
 	{
-		return NpcUtils.spawnSingle(npcId, randomOffset > 50 ? Location.findPointToStay(loc, 50, randomOffset, ReflectionManager.MAIN.getGeoIndex()) : loc, despawnDelay);
+		return NpcUtils.spawnSingle(npcId, randomOffset
+				> 50 ? Location.findPointToStay(loc, 50, randomOffset, ReflectionManager.MAIN.getGeoIndex()) : loc, despawnDelay);
 	}
 
 	/**
@@ -1493,7 +1492,7 @@ public class Quest implements OnInitScriptListener
 		try
 		{
 			NpcTemplate template = NpcHolder.getInstance().getTemplate(npcId);
-			if (template != null)
+			if(template != null)
 			{
 				NpcInstance npc = NpcHolder.getInstance().getTemplate(npcId).getNewInstance();
 				npc.setReflection(refId);
@@ -1502,7 +1501,7 @@ public class Quest implements OnInitScriptListener
 				return npc;
 			}
 		}
-		catch (Exception e1)
+		catch(Exception e1)
 		{
 			_log.warn("Could not spawn Npc " + npcId);
 		}
@@ -1517,23 +1516,23 @@ public class Quest implements OnInitScriptListener
 	public final boolean enterInstance(QuestState st, Reflection reflection, int instancedZoneId, Object... args)
 	{
 		Player player = st.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
 		Reflection activeReflection = player.getActiveReflection();
-		if (activeReflection != null)
+		if(activeReflection != null)
 		{
-			if (player.canReenterInstance(instancedZoneId))
+			if(player.canReenterInstance(instancedZoneId))
 			{
 				player.teleToLocation(activeReflection.getTeleportLoc(), activeReflection);
 				onReenterInstance(st, activeReflection, args);
 				return true;
 			}
 		}
-		else if (player.canEnterInstance(instancedZoneId))
+		else if(player.canEnterInstance(instancedZoneId))
 		{
 			Reflection newReflection = ReflectionUtils.enterReflection(player, reflection, instancedZoneId);
-			if (newReflection != null)
+			if(newReflection != null)
 			{
 				onEnterInstance(st, newReflection, args);
 				return true;
@@ -1567,12 +1566,12 @@ public class Quest implements OnInitScriptListener
 	 */
 	public String checkStartCondition(int npcId, Player player)
 	{
-		for (Map.Entry<ICheckStartCondition, ConditionMessage> entry : _startConditions.entrySet())
+		for(Map.Entry<ICheckStartCondition, ConditionMessage> entry : _startConditions.entrySet())
 		{
 			ConditionMessage condMsg = entry.getValue();
-			if (condMsg.getNpcId() == -1 || condMsg.getNpcId() == npcId)
+			if(condMsg.getNpcId() == -1 || condMsg.getNpcId() == npcId)
 			{
-				if (!entry.getKey().checkCondition(player))
+				if(!entry.getKey().checkCondition(player))
 					return condMsg.getMessage();
 			}
 		}
@@ -1581,18 +1580,18 @@ public class Quest implements OnInitScriptListener
 
 	public String checkStartCondition(NpcInstance npc, Player player)
 	{
-		if (npc != null)
+		if(npc != null)
 			return checkStartCondition(npc.getNpcId(), player);
 
 		// Если не указан NPC, то проверяем, доступен ли квест у одного из всех
 		// стартовых NPC.
 		String msg = checkStartCondition(-1, player);
-		if (msg == null)
+		if(msg == null)
 		{
-			for (int npcId : _startNpcs.toArray())
+			for(int npcId : _startNpcs.toArray())
 			{
 				msg = checkStartCondition(npcId, player);
-				if (msg == null)
+				if(msg == null)
 					return null;
 			}
 			return msg;
@@ -1607,11 +1606,11 @@ public class Quest implements OnInitScriptListener
 
 	public boolean checkMaxLevelCondition(Player player)
 	{
-		for (ICheckStartCondition startCondition : _startConditions.keySet())
+		for(ICheckStartCondition startCondition : _startConditions.keySet())
 		{
-			if (!(startCondition instanceof PlayerLevelCondition))
+			if(!(startCondition instanceof PlayerLevelCondition))
 				continue;
-			if (!startCondition.checkCondition(player))
+			if(!startCondition.checkCondition(player))
 				return false;
 		}
 		return true;
@@ -1628,19 +1627,18 @@ public class Quest implements OnInitScriptListener
 	}
 
 	public void onHaosBattleEnd(Player player, boolean isWinner)
-	{
-	}
+	{}
 
 	public void giveStoryBuff(NpcInstance npc, Player player)
 	{
-		for (int[] skill : BUFF_SETS)
+		for(int[] skill : BUFF_SETS)
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skill[0], skill[1]);
-			if (skillEntry == null)
+			if(skillEntry == null)
 				return;
 
 			int removed = player.getAbnormalList().stop(skillEntry, false);
-			if (removed > 0)
+			if(removed > 0)
 				player.sendPacket(new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(skillEntry));
 
 			npc.forceUseSkill(skillEntry, player);
@@ -1650,7 +1648,7 @@ public class Quest implements OnInitScriptListener
 	@Override
 	public void onInit()
 	{
-		if (!Config.DONTLOADQUEST)
+		if(!Config.DONTLOADQUEST)
 			QuestHolder.getInstance().addQuest(this);
 	}
 }

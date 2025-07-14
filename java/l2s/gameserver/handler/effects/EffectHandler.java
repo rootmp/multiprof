@@ -114,7 +114,7 @@ public class EffectHandler implements FuncOwner
 
 	public final boolean checkConditionImpl(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!checkCondition(abnormal, effector, effected))
+		if(!checkCondition(abnormal, effector, effected))
 			return false;
 		return testCondition(effector, effected);
 	}
@@ -126,7 +126,7 @@ public class EffectHandler implements FuncOwner
 
 	public final boolean checkActingConditionImpl(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!checkActingCondition(abnormal, effector, effected))
+		if(!checkActingCondition(abnormal, effector, effected))
 			return false;
 		return testCondition(effector, effected);
 	}
@@ -158,7 +158,7 @@ public class EffectHandler implements FuncOwner
 
 	public final boolean checkConditionImpl(Creature effector, Creature effected)
 	{
-		if (!checkCondition(effector, effected))
+		if(!checkCondition(effector, effected))
 			return false;
 		return testCondition(effector, effected);
 	}

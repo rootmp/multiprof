@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -29,28 +30,28 @@ public final class RequestRefine implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _feeItemCount < 1)
+		if(activeChar == null || _feeItemCount < 1)
 			return;
 
-		if (!Config.ALLOW_AUGMENTATION)
+		if(!Config.ALLOW_AUGMENTATION)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
 		}
 
-		if (activeChar.isInStoreMode())
+		if(activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0));
 			return;
@@ -59,8 +60,8 @@ public final class RequestRefine implements IClientIncomingPacket
 		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
 		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(_refinerItemObjId);
 
-		if (refinerItem == null) // block if player press "Continue" button and try again place life stone on
-									// same item, that not exist or smth.
+		if(refinerItem == null) // block if player press "Continue" button and try again place life stone on
+		// same item, that not exist or smth.
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
@@ -68,7 +69,7 @@ public final class RequestRefine implements IClientIncomingPacket
 
 		ItemInstance feeItem = null;
 
-		switch (refinerItem.getItemId())
+		switch(refinerItem.getItemId())
 		{
 			case 94185: // Life Stone Lv. 1 - Weapon
 			case 94186: // Life Stone Lv. 2 - Weapon
@@ -88,14 +89,14 @@ public final class RequestRefine implements IClientIncomingPacket
 			}
 		}
 
-		if (targetItem == null || refinerItem == null || feeItem == null)
+		if(targetItem == null || refinerItem == null || feeItem == null)
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
 		}
 
 		VariationFee fee = VariationUtils.getVariationFee(targetItem, refinerItem);
-		if (fee == null)
+		if(fee == null)
 		{
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 			return;
@@ -104,12 +105,12 @@ public final class RequestRefine implements IClientIncomingPacket
 		activeChar.getInventory().addItem(refinerItem.getItemId(), 1);
 		activeChar.getInventory().addItem(feeItem.getItemId(), 1);
 
-		if (VariationUtils.tryAugmentItem(activeChar, targetItem, refinerItem, feeItem, fee.getFeeItemCount()))
+		if(VariationUtils.tryAugmentItem(activeChar, targetItem, refinerItem, feeItem, fee.getFeeItemCount()))
 			activeChar.sendPacket(new ExVariationResult(targetItem.getVariation1Id(), targetItem.getVariation2Id(), 0, 1), SystemMsg.THE_ITEM_WAS_SUCCESSFULLY_AUGMENTED);
 		else
 			activeChar.sendPacket(new ExVariationResult(0, 0, 0, 0), SystemMsg.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
 
-		if (!activeChar.getInventory().destroyItem(refinerItem, 1) || !activeChar.getInventory().destroyItem(feeItem, 1))
+		if(!activeChar.getInventory().destroyItem(refinerItem, 1) || !activeChar.getInventory().destroyItem(feeItem, 1))
 		{
 			VariationUtils.setVariation(activeChar, targetItem, 0, 0, 0, 0);
 		}

@@ -24,8 +24,7 @@ import l2s.dataparser.data.annotations.factory.IObjectFactory;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Element
-{
+public @interface Element {
 	/**
 	 * @return - строка - индикатор начала элемента
 	 */
@@ -47,10 +46,10 @@ public @interface Element
 	 */
 	@SuppressWarnings("rawtypes")
 	Class<? extends IObjectFactory> objectFactory() default DefaultFactory.class;
-	
-  /**
-   * Указывает имя поля объекта, которое будет использоваться в качестве ключа
-   * для Map. Если не указано, используется List.
-   */
-  String keyField() default "";
+
+	/**
+	 * Указывает имя поля объекта, которое будет использоваться в качестве ключа
+	 * для Map. Если не указано, используется List.
+	 */
+	String keyField() default "";
 }

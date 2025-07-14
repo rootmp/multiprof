@@ -52,10 +52,10 @@ public class CommandChannel implements PlayerGroup
 		refreshLevel();
 		party.setCommandChannel(this);
 
-		for (Player $member : party)
+		for(Player $member : party)
 		{
 			$member.sendPacket(ExOpenMPCCPacket.STATIC);
-			if (_matchingRoom != null)
+			if(_matchingRoom != null)
 			{
 				_matchingRoom.broadcastPlayerUpdate($member);
 			}
@@ -74,16 +74,16 @@ public class CommandChannel implements PlayerGroup
 		party.setCommandChannel(null);
 		party.broadCast(ExCloseMPCCPacket.STATIC);
 
-		if (_commandChannelParties.size() < 2)
+		if(_commandChannelParties.size() < 2)
 		{
 			disbandChannel();
 		}
 		else
 		{
-			for (Player $member : party)
+			for(Player $member : party)
 			{
 				$member.sendPacket(new ExMPCCPartyInfoUpdate(party, 0));
-				if (_matchingRoom != null)
+				if(_matchingRoom != null)
 				{
 					_matchingRoom.broadcastPlayerUpdate($member);
 				}
@@ -97,13 +97,13 @@ public class CommandChannel implements PlayerGroup
 	public void disbandChannel()
 	{
 		broadCast(SystemMsg.THE_COMMAND_CHANNEL_HAS_BEEN_DISBANDED);
-		for (Party party : _commandChannelParties)
+		for(Party party : _commandChannelParties)
 		{
 			party.setCommandChannel(null);
 			party.broadCast(ExCloseMPCCPacket.STATIC);
 		}
 
-		if (_matchingRoom != null)
+		if(_matchingRoom != null)
 		{
 			_matchingRoom.disband();
 		}
@@ -118,7 +118,7 @@ public class CommandChannel implements PlayerGroup
 	public int getMemberCount()
 	{
 		int count = 0;
-		for (Party party : _commandChannelParties)
+		for(Party party : _commandChannelParties)
 		{
 			count += party.getMemberCount();
 		}
@@ -133,7 +133,7 @@ public class CommandChannel implements PlayerGroup
 	@Override
 	public void broadCast(IBroadcastPacket... gsp)
 	{
-		for (Party party : _commandChannelParties)
+		for(Party party : _commandChannelParties)
 		{
 			party.broadCast(gsp);
 		}
@@ -144,10 +144,10 @@ public class CommandChannel implements PlayerGroup
 	 */
 	public void broadcastToChannelPartyLeaders(IBroadcastPacket gsp)
 	{
-		for (Party party : _commandChannelParties)
+		for(Party party : _commandChannelParties)
 		{
 			Player leader = party.getPartyLeader();
-			if (leader != null)
+			if(leader != null)
 			{
 				leader.sendPacket(gsp);
 			}
@@ -166,7 +166,7 @@ public class CommandChannel implements PlayerGroup
 	public List<Player> getMembers()
 	{
 		List<Player> members = new ArrayList<Player>(_commandChannelParties.size());
-		for (Party party : getParties())
+		for(Party party : getParties())
 		{
 			members.addAll(party.getPartyMembers());
 		}
@@ -183,7 +183,7 @@ public class CommandChannel implements PlayerGroup
 	public Iterator<Player> iterator()
 	{
 		List<Iterator<Player>> iterators = new ArrayList<Iterator<Player>>(_commandChannelParties.size());
-		for (Party p : getParties())
+		for(Party p : getParties())
 		{
 			iterators.add(p.getPartyMembers().iterator());
 		}
@@ -232,12 +232,10 @@ public class CommandChannel implements PlayerGroup
 	 */
 	public boolean meetRaidWarCondition(NpcFriendInstance npc)
 	{
-		if (!npc.isRaid())
-		{
-			return false;
-		}
+		if(!npc.isRaid())
+		{ return false; }
 		int npcId = npc.getNpcId();
-		switch (npcId)
+		switch(npcId)
 		{
 			case 29001: // Queen Ant
 			case 29006: // Core
@@ -258,9 +256,9 @@ public class CommandChannel implements PlayerGroup
 	private void refreshLevel()
 	{
 		_commandChannelLvl = 0;
-		for (Party pty : _commandChannelParties)
+		for(Party pty : _commandChannelParties)
 		{
-			if (pty.getLevel() > _commandChannelLvl)
+			if(pty.getLevel() > _commandChannelLvl)
 			{
 				_commandChannelLvl = pty.getLevel();
 			}
@@ -275,17 +273,17 @@ public class CommandChannel implements PlayerGroup
 		// CC могут создавать только лидеры группы, лидеры клана имеющие клановый скилл
 		// Clan Imperium или имеющие специальный предмет.
 		Party party = creator.getParty();
-		if ((party == null) || !party.isLeader(creator))
+		if((party == null) || !party.isLeader(creator))
 		{
 			creator.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_AUTHORITY_TO_INVITE_SOMEONE_TO_THE_COMMAND_CHANNEL);
 			return false;
 		}
 
-		if (creator.getInventory().getItemByItemId(STRATEGY_GUIDE_ID) == null)
+		if(creator.getInventory().getItemByItemId(STRATEGY_GUIDE_ID) == null)
 		{
-			if (creator.isClanLeader())
+			if(creator.isClanLeader())
 			{
-				if (creator.getSkillLevel(CLAN_IMPERIUM_ID) <= 0)
+				if(creator.getSkillLevel(CLAN_IMPERIUM_ID) <= 0)
 				{
 					creator.sendPacket(SystemMsg.YOU_CAN_NO_LONGER_SET_UP_A_COMMAND_CHANNEL);
 					return false;

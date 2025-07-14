@@ -16,9 +16,9 @@ public class i_target_me extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
-		if (effected == effector)
+		if(effected == effector)
 			return false;
 		return true;
 	}

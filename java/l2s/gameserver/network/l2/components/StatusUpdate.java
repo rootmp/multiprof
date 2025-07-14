@@ -32,19 +32,19 @@ public class StatusUpdate implements IBroadcastPacket
 		this(creature, null, statusType, fields);
 	}
 
-  public StatusUpdate(Creature creature, Creature caster, StatusType statusType, UpdateType... fields)
-  {
-      _creature = creature;
-      _caster = caster;
-      _statusType = statusType;
-      _fields = (fields != null) ? Arrays.asList(fields) : new ArrayList<UpdateType>();
-  }
+	public StatusUpdate(Creature creature, Creature caster, StatusType statusType, UpdateType... fields)
+	{
+		_creature = creature;
+		_caster = caster;
+		_statusType = statusType;
+		_fields = (fields != null) ? Arrays.asList(fields) : new ArrayList<UpdateType>();
+	}
 
-  public StatusUpdate(Creature creature, StatusType updateType, UpdateType... fields)
-  {
-      this(creature, null, updateType, fields);
-  }
-  
+	public StatusUpdate(Creature creature, StatusType updateType, UpdateType... fields)
+	{
+		this(creature, null, updateType, fields);
+	}
+
 	@Override
 	public IClientOutgoingPacket packet(Player player)
 	{
@@ -127,7 +127,7 @@ public class StatusUpdate implements IBroadcastPacket
 						case VCP_MAXLP:
 							su.addAttribute(field.getClientId(), playable.getMaxLp());
 							break;
-							
+
 						case VCP_WP:
 							su.addAttribute(field.getClientId(), playable.getCurrentWp());
 							break;

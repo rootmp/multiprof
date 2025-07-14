@@ -24,11 +24,11 @@ public class CapsuledItemHandler extends DefaultItemHandler
 		Player player;
 		final int itemId = item.getItemId();
 
-		if (playable.isPlayer())
+		if(playable.isPlayer())
 		{
 			player = (Player) playable;
 		}
-		else if (playable.isPet())
+		else if(playable.isPet())
 		{
 			player = playable.getPlayer();
 		}
@@ -37,25 +37,21 @@ public class CapsuledItemHandler extends DefaultItemHandler
 			return false;
 		}
 
-		if (!canBeExtracted(player, item))
-		{
-			return false;
-		}
-		if (!reduceItem(player, item))
-		{
-			return false;
-		}
+		if(!canBeExtracted(player, item))
+		{ return false; }
+		if(!reduceItem(player, item))
+		{ return false; }
 
 		final List<CapsuledItemData> capsuled_items = item.getTemplate().getCapsuledItems();
-		for (CapsuledItemData ci : capsuled_items)
+		for(CapsuledItemData ci : capsuled_items)
 		{
-			if (Rnd.chance(ci.getChance()))
+			if(Rnd.chance(ci.getChance()))
 			{
 				final long count;
 				final long minCount = ci.getMinCount();
 				final long maxCount = ci.getMaxCount();
 				final int enchantLevel = ci.getEnchantLevel();
-				if (minCount == maxCount)
+				if(minCount == maxCount)
 				{
 					count = minCount;
 				}
@@ -66,19 +62,20 @@ public class CapsuledItemHandler extends DefaultItemHandler
 
 				// Fix for duplication reward
 				final List<ItemInstance> items = ItemFunctions.addItem(player, ci.getId(), count, enchantLevel, true);
-				if (ci.isAnnounce())
+				if(ci.isAnnounce())
 				{
-					for (Player playerr : GameObjectsStorage.getPlayers(false, false))
+					for(Player playerr : GameObjectsStorage.getPlayers(false, false))
 					{
 						playerr.sendPacket(new ExItemAnnounce(player.getPlayer(), items.get(0), 1, item.getItemId()));
-						playerr.sendMessage(player.getName() + " opened " + item.getName() + " and obtained: " + (items.get(0)).getName() + ((ci.getEnchantLevel() > 0) ? (" + (" + ci.getEnchantLevel() + ") ") : "") + " x" + count);
+						playerr.sendMessage(player.getName() + " opened " + item.getName() + " and obtained: " + (items.get(0)).getName()
+								+ ((ci.getEnchantLevel() > 0) ? (" + (" + ci.getEnchantLevel() + ") ") : "") + " x" + count);
 					}
 				}
 			}
 		}
 
 		ChancedItemData ci = item.getTemplate().getCreateItems().chance();
-		if (ci != null)
+		if(ci != null)
 		{
 			ItemFunctions.addItem(player, ci.getId(), ci.getCount(), ci.getEnchant(), true);
 		}

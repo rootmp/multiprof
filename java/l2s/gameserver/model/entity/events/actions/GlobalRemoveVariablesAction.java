@@ -30,15 +30,15 @@ public class GlobalRemoveVariablesAction implements EventAction
 	@Override
 	public void call(Event event)
 	{
-		if (_type == VariableType.PERSONAL)
+		if(_type == VariableType.PERSONAL)
 		{
-			for (Player player : GameObjectsStorage.getPlayers(true, true))
+			for(Player player : GameObjectsStorage.getPlayers(true, true))
 			{
 				player.unsetVar(_name);
 			}
 			CharacterVariablesDAO.getInstance().delete(_name);
 		}
-		else if (_type == VariableType.ACCOUNT)
+		else if(_type == VariableType.ACCOUNT)
 			AccountVariablesDAO.getInstance().delete(_name);
 	}
 }

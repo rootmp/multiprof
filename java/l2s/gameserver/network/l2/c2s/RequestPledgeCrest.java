@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.cache.CrestCache;
 import l2s.gameserver.model.Player;
@@ -27,12 +28,12 @@ public class RequestPledgeCrest implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
-		if (_crestId == 0)
+		if(_crestId == 0)
 			return;
 		byte[] data = CrestCache.getInstance().getPledgeCrest(_crestId);
-		if (data != null)
+		if(data != null)
 		{
 			PledgeCrestPacket pc = new PledgeCrestPacket(_pledgeId, _crestId, data);
 			client.sendPacket(pc);

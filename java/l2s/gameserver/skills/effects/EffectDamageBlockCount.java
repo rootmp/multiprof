@@ -23,14 +23,14 @@ public final class EffectDamageBlockCount extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		Player player = effected.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (effected.isDead() || effector.isDead())
+		if(effected.isDead() || effector.isDead())
 			return false;
 
 		return true;
@@ -39,11 +39,11 @@ public final class EffectDamageBlockCount extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getDistance(effector.getLoc()) > _distance)
+		if(effected.getDistance(effector.getLoc()) > _distance)
 			return;
 
 		int blockByCasterHp = 0;
-		if (_casterHpPer != 0)
+		if(_casterHpPer != 0)
 		{
 			blockByCasterHp = effector.getMaxHp() * (_casterHpPer / 100);
 		}
@@ -54,15 +54,11 @@ public final class EffectDamageBlockCount extends EffectHandler
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		Player player = effected.getPlayer();
-		if (player.isAlikeDead() || player == null)
-		{
-			return false;
-		}
+		if(player.isAlikeDead() || player == null)
+		{ return false; }
 
-		if ((_distance != 0) && (player.getDistance(effector.getLoc()) > _distance))
-		{
-			return false;
-		}
+		if((_distance != 0) && (player.getDistance(effector.getLoc()) > _distance))
+		{ return false; }
 		return true;
 	}
 }

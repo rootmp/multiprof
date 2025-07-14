@@ -1,16 +1,9 @@
 package l2s.gameserver.network.l2.c2s.collection;
 
-import java.util.List;
-
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
-import l2s.gameserver.model.actor.variables.PlayerVariables;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.s2c.collection.ExCollectionReceiveReward;
-import l2s.gameserver.templates.CollectionTemplate;
-import l2s.gameserver.templates.item.data.ItemData;
-import l2s.gameserver.utils.ItemFunctions;
 
 /**
  * @author 4ipolino
@@ -18,7 +11,7 @@ import l2s.gameserver.utils.ItemFunctions;
 public class RequestExCollectionReceiveReward implements IClientIncomingPacket
 {
 	private int nCollectionID;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -34,7 +27,7 @@ public class RequestExCollectionReceiveReward implements IClientIncomingPacket
 			return;
 		/*CollectionTemplate template = CollectionsData.getInstance().getCollection(nCollectionID);
 		List<CollectionTemplate> collection = player.getCollectionList().get(nCollectionID);
-
+		
 		if(template == null || collection==null || collection.isEmpty())
 			return;
 		

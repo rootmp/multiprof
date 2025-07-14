@@ -193,35 +193,35 @@ public class PremiumAccountTemplate extends StatTemplate
 	public String getName(Language lang)
 	{
 		String name = _names.get(lang);
-		if (name == null)
+		if(name == null)
 		{
 			Language secondLang = lang;
 			do
 			{
-				if (secondLang == secondLang.getSecondLanguage())
+				if(secondLang == secondLang.getSecondLanguage())
 					break;
 
-				if (!Config.AVAILABLE_LANGUAGES.contains(secondLang))
+				if(!Config.AVAILABLE_LANGUAGES.contains(secondLang))
 					break;
 
 				secondLang = secondLang.getSecondLanguage();
 				name = _names.get(secondLang);
 			}
-			while (name == null);
+			while(name == null);
 
-			if (name == null)
+			if(name == null)
 			{
-				for (Language l : Language.VALUES)
+				for(Language l : Language.VALUES)
 				{
-					if (!Config.AVAILABLE_LANGUAGES.contains(l))
+					if(!Config.AVAILABLE_LANGUAGES.contains(l))
 						continue;
 
-					if ((name = _names.get(l)) != null)
+					if((name = _names.get(l)) != null)
 						break;
 				}
 			}
 		}
-		if (name == null)
+		if(name == null)
 			return "Type: " + getType();
 		return name;
 	}
@@ -249,7 +249,7 @@ public class PremiumAccountTemplate extends StatTemplate
 	public void addFee(int delay, ItemData item)
 	{
 		List<ItemData> items = _fees.get(delay);
-		if (items == null)
+		if(items == null)
 		{
 			items = new ArrayList<ItemData>();
 			_fees.put(delay, items);
@@ -265,7 +265,7 @@ public class PremiumAccountTemplate extends StatTemplate
 	public List<ItemData> getFeeItems(int delay)
 	{
 		List<ItemData> items = _fees.get(delay);
-		if (items == null)
+		if(items == null)
 			return null;
 		return items;
 	}
@@ -305,10 +305,10 @@ public class PremiumAccountTemplate extends StatTemplate
 		player.getStat().addFuncs(getStatFuncs());
 
 		SkillEntry[] skills = getAttachedSkills();
-		for (SkillEntry skill : skills)
+		for(SkillEntry skill : skills)
 			player.addSkill(skill);
 
-		if (skills.length > 0)
+		if(skills.length > 0)
 			player.sendSkillList();
 
 		player.setCurrentHp(player.getMaxHp() * currentHpRatio, false);
@@ -328,10 +328,10 @@ public class PremiumAccountTemplate extends StatTemplate
 		player.removeTriggers(this);
 
 		SkillEntry[] skills = getAttachedSkills();
-		for (SkillEntry skill : skills)
+		for(SkillEntry skill : skills)
 			player.removeSkill(skill);
 
-		if (skills.length > 0)
+		if(skills.length > 0)
 			player.sendSkillList();
 
 		player.setCurrentHp(player.getMaxHp() * currentHpRatio, false);

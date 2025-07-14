@@ -71,7 +71,8 @@ public final class FloodProtector
 		{
 			if(_config.LOG_FLOODING && !_logged)
 			{
-				log("called command ", command, " ~", String.valueOf(_config.FLOOD_PROTECTION_INTERVAL - (_nextTime - curTime)), " ms after previous command");
+				log("called command ", command, " ~", String.valueOf(_config.FLOOD_PROTECTION_INTERVAL
+						- (_nextTime - curTime)), " ms after previous command");
 				_logged = true;
 			}
 
@@ -139,7 +140,6 @@ public final class FloodProtector
 			player.kick();
 		log("banned for flooding ", _config.PUNISHMENT_TIME <= 0 ? "forever" : "for " + (_config.PUNISHMENT_TIME / 60000) + " mins");
 	}
-
 
 	private void log(String... lines)
 	{

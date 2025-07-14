@@ -35,14 +35,14 @@ public class NpcSayAction implements EventAction
 	public void call(Event event)
 	{
 		List<NpcInstance> npcs = GameObjectsStorage.getNpcs(true, _npcId);
-		if (npcs.isEmpty())
+		if(npcs.isEmpty())
 			return;
 
-		for (NpcInstance npc : npcs)
+		for(NpcInstance npc : npcs)
 		{
-			for (Player player : World.getAroundObservers(npc))
+			for(Player player : World.getAroundObservers(npc))
 			{
-				if (_range <= 0 || player.isInRangeZ(npc, _range))
+				if(_range <= 0 || player.isInRangeZ(npc, _range))
 					packet(npc, player);
 			}
 		}

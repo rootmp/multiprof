@@ -28,9 +28,9 @@ public class RequestExUpgradeSystemProbList implements IClientIncomingPacket
 		if(player == null)
 			return;
 		NormalUpgradeData upgradeData = UpgradeSystemNormalHolder.getInstance().getNormalUpgradeData(nUpgradeID);
-		if(upgradeData==null || upgradeData.success_result_items.isEmpty())
+		if(upgradeData == null || upgradeData.success_result_items.isEmpty())
 			return;
-		
+
 		player.sendPacket(new ExUpgradeSystemProbList(upgradeData));
 	}
 

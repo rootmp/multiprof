@@ -15,7 +15,6 @@ public class PetParam
 	private int _passive_skill;
 	private int _passive_skill_level;
 
-
 	public PetParam(int objId, String name, long exp, int sp, int fed, int npcid, int evolve_level, int random_names, int pet_index, int passive_skill, int passive_skill_level)
 	{
 		setObjId(objId);
@@ -50,7 +49,7 @@ public class PetParam
 	{
 		return getObjectId() == 0;
 	}
-	
+
 	public String getName()
 	{
 		return _name;
@@ -150,12 +149,12 @@ public class PetParam
 	{
 		return _passive_skill_level;
 	}
-	
+
 	public void setPassiveSkill(int passive_skill)
 	{
 		_passive_skill = passive_skill;
 	}
-	
+
 	public void setPassiveSkillLevel(int level)
 	{
 		_passive_skill_level = level;

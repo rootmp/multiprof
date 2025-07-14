@@ -43,7 +43,7 @@ public final class SubjugationsParser extends AbstractParser<SubjugationsHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -55,12 +55,12 @@ public final class SubjugationsParser extends AbstractParser<SubjugationsHolder>
 
 			SubjugationTemplate zone = new SubjugationTemplate(id, pointsToKey, maximumKeys, minLevel, maxLevel);
 
-			for (Iterator<Element> mobsIterator = element.elementIterator("mobs"); mobsIterator.hasNext();)
+			for(Iterator<Element> mobsIterator = element.elementIterator("mobs"); mobsIterator.hasNext();)
 			{
 				Element mobElement = mobsIterator.next();
-				if (mobElement.getName().equals("mobs"))
+				if(mobElement.getName().equals("mobs"))
 				{
-					for (Element e : mobElement.elements())
+					for(Element e : mobElement.elements())
 					{
 						int mobId = Integer.parseInt(e.attributeValue("id"));
 						zone.addMobId(mobId);
@@ -68,12 +68,12 @@ public final class SubjugationsParser extends AbstractParser<SubjugationsHolder>
 				}
 			}
 
-			for (Iterator<Element> rewardsIterator = element.elementIterator("rewards"); rewardsIterator.hasNext();)
+			for(Iterator<Element> rewardsIterator = element.elementIterator("rewards"); rewardsIterator.hasNext();)
 			{
 				Element rewardElement = rewardsIterator.next();
-				if (rewardElement.getName().equals("rewards"))
+				if(rewardElement.getName().equals("rewards"))
 				{
-					for (Element e : rewardElement.elements())
+					for(Element e : rewardElement.elements())
 					{
 						int rewardId = Integer.parseInt(e.attributeValue("id"));
 						long rewardCount = Long.parseLong(e.attributeValue("count"));

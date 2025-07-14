@@ -27,19 +27,19 @@ public class GMViewItemListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_type);
-		if (_type == 1)
+		if(_type == 1)
 		{
 			packetWriter.writeS(_name);
 			packetWriter.writeD(_limit);
 			packetWriter.writeD(_size);
 		}
-		else if (_type == 2)
+		else if(_type == 2)
 		{
 			packetWriter.writeD(_size);
 			packetWriter.writeD(_size);
-			for (ItemInstance temp : _items)
+			for(ItemInstance temp : _items)
 			{
-				if (!temp.getTemplate().isQuest())
+				if(!temp.getTemplate().isQuest())
 				{
 					writeItemInfo(packetWriter, _player, temp);
 				}

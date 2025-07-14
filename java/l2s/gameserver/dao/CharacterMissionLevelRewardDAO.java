@@ -42,7 +42,7 @@ public class CharacterMissionLevelRewardDAO
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
 			MissionLevelReward info = owner.getMissionLevelReward();
-			if (rset.next())
+			if(rset.next())
 			{
 				info.setLevel(rset.getInt("level"));
 				info.setPoints(rset.getInt("points"));
@@ -61,7 +61,7 @@ public class CharacterMissionLevelRewardDAO
 				info.setTakenFinal(false);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterDailyMissionsDAO.select(Player): " + e, e);
 		}
@@ -88,7 +88,7 @@ public class CharacterMissionLevelRewardDAO
 			statement.setInt(7, takenFinal ? 1 : 0);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getDailyMissionList() + " could not store mission level reward info for character: " + owner.getName() + " : ", e);
 			return false;
@@ -111,7 +111,7 @@ public class CharacterMissionLevelRewardDAO
 			statement.setInt(1, owner.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getDailyMissionList() + " could not delete mission level reward data: OWNER_ID[" + owner.getObjectId() + "]:", e);
 			return false;

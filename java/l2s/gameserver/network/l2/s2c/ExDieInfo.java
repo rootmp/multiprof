@@ -28,9 +28,9 @@ public class ExDieInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeH(_droppedItemsInfo.size());
-		if (_droppedItemsInfo.size() > 0)
+		if(_droppedItemsInfo.size() > 0)
 		{
-			for (DroppedItemsHolder drop : _droppedItemsInfo.values())
+			for(DroppedItemsHolder drop : _droppedItemsInfo.values())
 			{
 				packetWriter.writeD(drop.getItemId());
 				packetWriter.writeD(drop.getEnchantLevel());
@@ -40,9 +40,9 @@ public class ExDieInfo implements IClientOutgoingPacket
 		// -------------------------------------------------------------
 		packetWriter.writeH(_damageInfo.size());
 
-		for (DamageHolder dmg : _damageInfo.values())
+		for(DamageHolder dmg : _damageInfo.values())
 		{
-			if (dmg.getCreatureId() != 0)
+			if(dmg.getCreatureId() != 0)
 			{
 
 				packetWriter.writeH(1);
@@ -55,7 +55,7 @@ public class ExDieInfo implements IClientOutgoingPacket
 			}
 			packetWriter.writeS("");
 
-			if (dmg.getSkill() != null)
+			if(dmg.getSkill() != null)
 			{
 				packetWriter.writeD(dmg.getSkill().getId());
 			}

@@ -10,23 +10,22 @@ import l2s.gameserver.network.l2.components.SystemMsg;
  */
 public class PartyInfo implements IUserCommandHandler
 {
-	private static final int[] COMMAND_IDS =
-	{
-		81
+	private static final int[] COMMAND_IDS = {
+			81
 	};
 
 	@Override
 	public boolean useUserCommand(int id, Player activeChar)
 	{
-		if (id != COMMAND_IDS[0])
+		if(id != COMMAND_IDS[0])
 			return false;
 
 		Party playerParty = activeChar.getParty();
-		if (!activeChar.isInParty())
+		if(!activeChar.isInParty())
 			return false;
 
 		Player partyLeader = playerParty.getPartyLeader();
-		if (partyLeader == null)
+		if(partyLeader == null)
 			return false;
 
 		int memberCount = playerParty.getMemberCount();
@@ -34,7 +33,7 @@ public class PartyInfo implements IUserCommandHandler
 
 		activeChar.sendPacket(SystemMsg.PARTY_INFORMATION);
 
-		switch (lootDistribution)
+		switch(lootDistribution)
 		{
 			case Party.ITEM_LOOTER:
 				activeChar.sendPacket(SystemMsg.LOOTING_METHOD_FINDERS_KEEPERS);

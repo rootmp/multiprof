@@ -81,8 +81,8 @@ public enum Language
 
 	public static Language getLanguage(int langId, Language defaultLang)
 	{
-		for (Language lang : VALUES)
-			if (lang.getId() == langId)
+		for(Language lang : VALUES)
+			if(lang.getId() == langId)
 				return lang;
 		return defaultLang;
 	}
@@ -94,11 +94,11 @@ public enum Language
 
 	public static Language getLanguage(String shortName, Language defaultLang)
 	{
-		if (shortName != null)
+		if(shortName != null)
 		{
-			for (Language lang : VALUES)
+			for(Language lang : VALUES)
 			{
-				if (lang.getShortName().equalsIgnoreCase(shortName))
+				if(lang.getShortName().equalsIgnoreCase(shortName))
 					return lang;
 			}
 		}
@@ -112,9 +112,9 @@ public enum Language
 
 	public static boolean checkLocation(Player player, int[] locationId)
 	{
-		if (locationId.length == 0)
+		if(locationId.length == 0)
 			return true;
-		if (locationId.length == 1 && locationId[0] == -1)
+		if(locationId.length == 1 && locationId[0] == -1)
 			return true;
 		return ArrayUtils.contains(locationId, player.getLocationId());
 	}

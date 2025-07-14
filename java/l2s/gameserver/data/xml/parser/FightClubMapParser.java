@@ -65,7 +65,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for(Iterator<Element> iterator = rootElement.elementIterator("map"); iterator.hasNext(); )
+		for(Iterator<Element> iterator = rootElement.elementIterator("map"); iterator.hasNext();)
 		{
 			Element eventElement = iterator.next();
 			String name = eventElement.attributeValue("name");
@@ -73,7 +73,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 			MultiValueSet<String> set = new MultiValueSet<String>();
 			set.set("name", name);
 
-			for(Iterator<Element> parameterIterator = eventElement.elementIterator("parameter"); parameterIterator.hasNext(); )
+			for(Iterator<Element> parameterIterator = eventElement.elementIterator("parameter"); parameterIterator.hasNext();)
 			{
 				Element parameterElement = parameterIterator.next();
 				set.set(parameterElement.attributeValue("name"), parameterElement.attributeValue("value"));
@@ -84,7 +84,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 			Map<Integer, Map<Integer, Location[]>> npcWaypath = null;
 			Location[] keyLocations = null;
 
-			for(Iterator<Element> objectIterator = eventElement.elementIterator("objects"); objectIterator.hasNext(); )
+			for(Iterator<Element> objectIterator = eventElement.elementIterator("objects"); objectIterator.hasNext();)
 			{
 				Element objectElement = objectIterator.next();
 				String objectsName = objectElement.attributeValue("name");
@@ -125,7 +125,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 	private Location[] parseLocations(Element element)
 	{
 		List<Location> locs = new ArrayList<Location>();
-		for(Iterator<Element> objectsIterator = element.elementIterator(); objectsIterator.hasNext(); )
+		for(Iterator<Element> objectsIterator = element.elementIterator(); objectsIterator.hasNext();)
 		{
 			Element objectsElement = objectsIterator.next();
 			String nodeName = objectsElement.getName();
@@ -144,7 +144,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 	private Map<String, ZoneTemplate> parseTerritory(Element element)
 	{
 		Map<String, ZoneTemplate> territories = new HashMap<String, ZoneTemplate>();
-		for(Iterator<Element> objectsIterator = element.elementIterator(); objectsIterator.hasNext(); )
+		for(Iterator<Element> objectsIterator = element.elementIterator(); objectsIterator.hasNext();)
 		{
 			Element objectsElement = objectsIterator.next();
 			String nodeName = objectsElement.getName();
@@ -158,7 +158,7 @@ public final class FightClubMapParser extends AbstractParser<FightClubMapHolder>
 
 		return territories;
 	}
-	
+
 	private static final FightClubMapParser _instance = new FightClubMapParser();
 
 	public static FightClubMapParser getInstance()

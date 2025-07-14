@@ -21,8 +21,8 @@ public class RequestExRelicsIdSummon implements IClientIncomingPacket
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
-    nSummonID = packet.readD();
-    nCommisionID = packet.readD();
+		nSummonID = packet.readD();
+		nCommisionID = packet.readD();
 		return true;
 	}
 
@@ -30,13 +30,13 @@ public class RequestExRelicsIdSummon implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 		RelicsSummonInfo info = RelicHolder.getInstance().getSummonInfo(nSummonID);
-		if(info!=null && info.getItemId() == nCommisionID)
+		if(info != null && info.getItemId() == nCommisionID)
 		{
-			int limit = player.getVarInt("RelicsSummonLimit_"+info.getSummonId(), info.getDailyLimit());
-			if(limit<1)
+			int limit = player.getVarInt("RelicsSummonLimit_" + info.getSummonId(), info.getDailyLimit());
+			if(limit < 1)
 			{
 				player.sendPacket(new ExRelicsSummonResult(0, 0, Collections.emptyList()));
 				return;
@@ -47,7 +47,7 @@ public class RequestExRelicsIdSummon implements IClientIncomingPacket
 				return;
 			}
 			player.getRelics().summonRelics(info.getCount(), info.getRelicProbs());
-			player.setVar("RelicsSummonLimit_"+info.getSummonId(), limit -1, TimeUtils.DAILY_DATE_PATTERN.next(System.currentTimeMillis()));
+			player.setVar("RelicsSummonLimit_" + info.getSummonId(), limit - 1, TimeUtils.DAILY_DATE_PATTERN.next(System.currentTimeMillis()));
 		}
 	}
 }

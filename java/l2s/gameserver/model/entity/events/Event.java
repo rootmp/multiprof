@@ -60,15 +60,15 @@ public abstract class Event extends LoggerObject
 	{
 		public void onStart()
 		{
-			for (Listener<Event> listener : getListeners())
-				if (OnStartStopListener.class.isInstance(listener))
+			for(Listener<Event> listener : getListeners())
+				if(OnStartStopListener.class.isInstance(listener))
 					((OnStartStopListener) listener).onStart(Event.this);
 		}
 
 		public void onStop()
 		{
-			for (Listener<Event> listener : getListeners())
-				if (OnStartStopListener.class.isInstance(listener))
+			for(Listener<Event> listener : getListeners())
+				if(OnStartStopListener.class.isInstance(listener))
 					((OnStartStopListener) listener).onStop(Event.this);
 		}
 	}
@@ -135,7 +135,7 @@ public abstract class Event extends LoggerObject
 	{
 		final long startSiegeMillis = startTimeMillis();
 
-		if (startSiegeMillis == 0)
+		if(startSiegeMillis == 0)
 			info(getName() + " time - undefined");
 		else
 			info(getName() + " time - " + TimeUtils.toSimpleFormat(startSiegeMillis));
@@ -153,7 +153,7 @@ public abstract class Event extends LoggerObject
 
 	protected void callActions(List<EventAction> actions)
 	{
-		for (EventAction action : actions)
+		for(EventAction action : actions)
 			action.call(this);
 	}
 
@@ -175,7 +175,7 @@ public abstract class Event extends LoggerObject
 	public void addOnTimeAction(int time, EventAction action)
 	{
 		List<EventAction> list = _onTimeActions.get(time);
-		if (list != null)
+		if(list != null)
 			list.add(action);
 		else
 		{
@@ -187,17 +187,17 @@ public abstract class Event extends LoggerObject
 
 	public void addOnTimeActions(int time, List<EventAction> actions)
 	{
-		if (actions.isEmpty())
+		if(actions.isEmpty())
 			return;
 
-		for (EventAction action : actions)
+		for(EventAction action : actions)
 			addOnTimeAction(time, action);
 	}
 
 	public void timeActions(int time)
 	{
 		List<EventAction> actions = _onTimeActions.get(time);
-		if (actions == null)
+		if(actions == null)
 		{
 			info("Undefined time : " + time);
 			return;
@@ -213,7 +213,7 @@ public abstract class Event extends LoggerObject
 	public void addOnActAction(String act, EventAction action)
 	{
 		List<EventAction> list = _onActActions.get(act.toLowerCase());
-		if (list != null)
+		if(list != null)
 			list.add(action);
 		else
 		{
@@ -225,17 +225,17 @@ public abstract class Event extends LoggerObject
 
 	public void addOnActActions(String act, List<EventAction> actions)
 	{
-		if (actions.isEmpty())
+		if(actions.isEmpty())
 			return;
 
-		for (EventAction action : actions)
+		for(EventAction action : actions)
 			addOnActAction(act, action);
 	}
 
 	public void actActions(String act)
 	{
 		List<EventAction> actions = _onActActions.get(act.toLowerCase());
-		if (actions == null)
+		if(actions == null)
 		{
 			info("Undefined act : " + act);
 			return;
@@ -250,23 +250,23 @@ public abstract class Event extends LoggerObject
 	public synchronized void registerActions()
 	{
 		final long t = startTimeMillis();
-		if (t == 0)
+		if(t == 0)
 			return;
 
-		if (_tasks == null)
+		if(_tasks == null)
 			_tasks = new ArrayList<Future<?>>(_onTimeActions.size());
 
 		final long c = System.currentTimeMillis();
-		for (int key : _onTimeActions.keySet().toArray())
+		for(int key : _onTimeActions.keySet().toArray())
 		{
 			long time = t + key * 1000L;
 			EventTimeTask wrapper = new EventTimeTask(this, key);
-			if (time <= c)
+			if(time <= c)
 				ThreadPoolManager.getInstance().execute(wrapper);
 			else
 			{
 				Future<?> task = ThreadPoolManager.getInstance().schedule(wrapper, time - c);
-				if (task != null)
+				if(task != null)
 					_tasks.add(task);
 			}
 		}
@@ -274,19 +274,19 @@ public abstract class Event extends LoggerObject
 
 	public synchronized void clearActions()
 	{
-		if (_tasks != null)
+		if(_tasks != null)
 		{
-			for (Future<?> f : _tasks)
+			for(Future<?> f : _tasks)
 				f.cancel(false);
 
 			_tasks.clear();
 		}
 
-		for (List<Object> list : _objects.values())
+		for(List<Object> list : _objects.values())
 		{
-			for (Object o : list)
+			for(Object o : list)
 			{
-				if (o instanceof TaskObject)
+				if(o instanceof TaskObject)
 				{
 					((TaskObject) o).cancel(this);
 				}
@@ -307,18 +307,18 @@ public abstract class Event extends LoggerObject
 	public <O> List<O> getObjects(Object name)
 	{
 		List<Object> objects = _objects.get(name);
-		return objects == null ? Collections.<O>emptyList() : (List<O>) objects;
+		return objects == null ? Collections.<O> emptyList() : (List<O>) objects;
 	}
 
 	public <O> List<O> getObjects(Object name, Class<O> type)
 	{
 		List<Object> objects = _objects.get(name);
 		List<O> objectsFromType = new ArrayList<>();
-		if (objects != null)
+		if(objects != null)
 		{
-			for (Object object : objects)
+			for(Object object : objects)
 			{
-				if (ClassUtils.isAssignable(object.getClass(), type))
+				if(ClassUtils.isAssignable(object.getClass(), type))
 				{
 					objectsFromType.add(type.cast(object));
 				}
@@ -336,11 +336,11 @@ public abstract class Event extends LoggerObject
 
 	public void addObject(Object name, Object object)
 	{
-		if (object == null)
+		if(object == null)
 			return;
 
 		List<Object> list = _objects.get(name);
-		if (list != null)
+		if(list != null)
 			list.add(object);
 		else
 		{
@@ -352,11 +352,11 @@ public abstract class Event extends LoggerObject
 
 	public void removeObject(Object name, Object o)
 	{
-		if (o == null)
+		if(o == null)
 			return;
 
 		List<Object> list = _objects.get(name);
-		if (list != null)
+		if(list != null)
 			list.remove(o);
 	}
 
@@ -364,16 +364,16 @@ public abstract class Event extends LoggerObject
 	public <O> List<O> removeObjects(Object name)
 	{
 		List<Object> objects = _objects.remove(name);
-		return objects == null ? Collections.<O>emptyList() : (List<O>) objects;
+		return objects == null ? Collections.<O> emptyList() : (List<O>) objects;
 	}
 
 	public void addObjects(Object name, Collection<?> objects)
 	{
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 			return;
 
 		List<Object> list = _objects.get(name);
-		if (list != null)
+		if(list != null)
 			list.addAll(objects);
 		else
 			_objects.put(name, new CopyOnWriteArrayList<Object>(objects));
@@ -387,16 +387,16 @@ public abstract class Event extends LoggerObject
 	public void spawnAction(Object name, boolean spawn)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
-			if (object instanceof SpawnableObject)
+		for(Object object : objects)
+			if(object instanceof SpawnableObject)
 			{
-				if (spawn)
+				if(spawn)
 					((SpawnableObject) object).spawnObject(this, getReflection());
 				else
 					((SpawnableObject) object).despawnObject(this, getReflection());
@@ -406,31 +406,31 @@ public abstract class Event extends LoggerObject
 	public void respawnAction(Object name)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
-			if (object instanceof SpawnableObject)
+		for(Object object : objects)
+			if(object instanceof SpawnableObject)
 				((SpawnableObject) object).respawnObject(this, getReflection());
 	}
 
 	public void openAction(Object name, boolean open)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
+		for(Object object : objects)
 		{
-			if (object instanceof OpenableObject)
+			if(object instanceof OpenableObject)
 			{
-				if (open)
+				if(open)
 					((OpenableObject) object).openObject(this);
 				else
 					((OpenableObject) object).closeObject(this);
@@ -441,36 +441,36 @@ public abstract class Event extends LoggerObject
 	public void zoneAction(Object name, boolean active)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
-			if (object instanceof ZoneObject)
+		for(Object object : objects)
+			if(object instanceof ZoneObject)
 				((ZoneObject) object).setActive(active, this);
 	}
 
 	public void initAction(Object name)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
-			if (object instanceof InitableObject)
+		for(Object object : objects)
+			if(object instanceof InitableObject)
 				((InitableObject) object).initObject(this);
 	}
 
 	public void action(String name, boolean start)
 	{
-		if (name.equalsIgnoreCase(EVENT))
+		if(name.equalsIgnoreCase(EVENT))
 		{
-			if (start)
+			if(start)
 				startEvent();
 			else
 				stopEvent(false);
@@ -480,31 +480,31 @@ public abstract class Event extends LoggerObject
 	public void refreshAction(Object name)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
-			if (object instanceof SpawnableObject)
+		for(Object object : objects)
+			if(object instanceof SpawnableObject)
 				((SpawnableObject) object).refreshObject(this, getReflection());
 	}
 
 	public void taskAction(Object name, boolean schedule)
 	{
 		List<Object> objects = getObjects(name);
-		if (objects.isEmpty())
+		if(objects.isEmpty())
 		{
 			info("Undefined objects: " + name);
 			return;
 		}
 
-		for (Object object : objects)
+		for(Object object : objects)
 		{
-			if (object instanceof TaskObject)
+			if(object instanceof TaskObject)
 			{
-				if (schedule)
+				if(schedule)
 					((TaskObject) object).schedule(this);
 				else
 					((TaskObject) object).cancel(this);
@@ -527,7 +527,7 @@ public abstract class Event extends LoggerObject
 	// ===============================================================================================================
 	public void broadcastToWorld(IBroadcastPacket packet)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			player.sendPacket(packet);
 	}
 
@@ -546,10 +546,8 @@ public abstract class Event extends LoggerObject
 
 	public String getName()
 	{
-		if (_name == null)
-		{
-			return _name;
-		}
+		if(_name == null)
+		{ return _name; }
 		return _name;
 	}
 
@@ -640,7 +638,7 @@ public abstract class Event extends LoggerObject
 
 	public void giveItem(Player player, int itemId, long count)
 	{
-		switch (itemId)
+		switch(itemId)
 		{
 			case ItemTemplate.ITEM_ID_FAME:
 				player.setFame(player.getFame() + (int) count, toString(), true);
@@ -686,7 +684,7 @@ public abstract class Event extends LoggerObject
 	// ===============================================================================================================
 	public void addBanishItem(ItemInstance item)
 	{
-		if (_banishedItems == Containers.<ItemInstance>emptyIntObjectMap())
+		if(_banishedItems == Containers.<ItemInstance> emptyIntObjectMap())
 			_banishedItems = new CHashIntObjectMap<ItemInstance>();
 
 		_banishedItems.put(item.getObjectId(), item);
@@ -695,18 +693,18 @@ public abstract class Event extends LoggerObject
 	public void removeBanishItems()
 	{
 		Iterator<IntObjectPair<ItemInstance>> iterator = _banishedItems.entrySet().iterator();
-		while (iterator.hasNext())
+		while(iterator.hasNext())
 		{
 			IntObjectPair<ItemInstance> entry = iterator.next();
 			iterator.remove();
 
 			ItemInstance item = ItemsDAO.getInstance().load(entry.getKey());
-			if (item != null)
+			if(item != null)
 			{
-				if (item.getOwnerId() > 0)
+				if(item.getOwnerId() > 0)
 				{
 					GameObject object = GameObjectsStorage.findObject(item.getOwnerId());
-					if (object != null && object.isPlayable())
+					if(object != null && object.isPlayable())
 					{
 						((Playable) object).getInventory().destroyItem(item);
 						object.getPlayer().sendPacket(SystemMessagePacket.removeItems(item));
@@ -739,22 +737,22 @@ public abstract class Event extends LoggerObject
 	// ===============================================================================================================
 	public void cloneTo(Event e)
 	{
-		for (EventAction a : _onInitActions)
+		for(EventAction a : _onInitActions)
 			e._onInitActions.add(a);
 
-		for (EventAction a : _onStartActions)
+		for(EventAction a : _onStartActions)
 			e._onStartActions.add(a);
 
-		for (EventAction a : _onStopActions)
+		for(EventAction a : _onStopActions)
 			e._onStopActions.add(a);
 
-		for (Map.Entry<String, List<EventAction>> entry : _onActActions.entrySet())
+		for(Map.Entry<String, List<EventAction>> entry : _onActActions.entrySet())
 			e.addOnActActions(entry.getKey(), entry.getValue());
 
-		for (IntObjectPair<List<EventAction>> entry : _onTimeActions.entrySet())
+		for(IntObjectPair<List<EventAction>> entry : _onTimeActions.entrySet())
 			e.addOnTimeActions(entry.getKey(), entry.getValue());
 
-		for (Map.Entry<Object, List<Object>> entry : _objects.entrySet())
+		for(Map.Entry<Object, List<Object>> entry : _objects.entrySet())
 			e.addObjects(entry.getKey(), entry.getValue());
 	}
 
@@ -816,9 +814,9 @@ public abstract class Event extends LoggerObject
 	public final long getForceStartTime()
 	{
 		int minTime = 0;
-		for (int time : timeActions())
+		for(int time : timeActions())
 		{
-			if (time < minTime)
+			if(time < minTime)
 				minTime = time;
 		}
 		return System.currentTimeMillis() + (Math.abs(minTime) * 1000L) + 1000L;

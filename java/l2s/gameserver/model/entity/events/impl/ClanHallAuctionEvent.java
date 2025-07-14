@@ -42,7 +42,7 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 		Clan owner = getResidence().getOwner();
 
 		// первый старт
-		if (getResidence().getAuctionLength() == 0 && owner == null)
+		if(getResidence().getAuctionLength() == 0 && owner == null)
 		{
 			final Calendar siegeDate = getResidence().getSiegeDate();
 			siegeDate.setTimeInMillis(START_TIME_PATTERN.next(System.currentTimeMillis()));
@@ -59,14 +59,14 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 
 			registerActions();
 		}
-		else if (getResidence().getAuctionLength() == 0 && owner != null)
+		else if(getResidence().getAuctionLength() == 0 && owner != null)
 		{
 			// КХ куплен
 		}
 		else
 		{
 			final Calendar siegeDate = getResidence().getSiegeDate();
-			if (!onStart && siegeDate.getTimeInMillis() < System.currentTimeMillis())
+			if(!onStart && siegeDate.getTimeInMillis() < System.currentTimeMillis())
 			{
 				siegeDate.setTimeInMillis(START_TIME_PATTERN.next(System.currentTimeMillis()));
 				siegeDate.add(Calendar.DAY_OF_MONTH, getResidence().getAuctionLength());
@@ -102,19 +102,19 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 		AuctionSiegeClanObject winnerSiegeClan = clans.length > 0 ? clans[0] : null;
 
 		// если есть победитель(тоисть больше 1 клана)
-		if (winnerSiegeClan != null)
+		if(winnerSiegeClan != null)
 		{
 			// розсылаем мессагу, возращаем всем деньги
 			SystemMessagePacket msg = new SystemMessagePacket(SystemMsg.THE_CLAN_HALL_WHICH_WAS_PUT_UP_FOR_AUCTION_HAS_BEEN_AWARDED_TO_S1_CLAN).addString(winnerSiegeClan.getClan().getName());
-			for (AuctionSiegeClanObject siegeClan : siegeClanObjects)
+			for(AuctionSiegeClanObject siegeClan : siegeClanObjects)
 			{
 				Player player = siegeClan.getClan().getLeader().getPlayer();
-				if (player != null)
+				if(player != null)
 					player.sendPacket(msg);
 				else
 					PlayerMessageStack.getInstance().mailto(siegeClan.getClan().getLeaderId(), msg);
 
-				if (siegeClan != winnerSiegeClan)
+				if(siegeClan != winnerSiegeClan)
 				{
 					long returnBid = siegeClan.getParam() - (long) (siegeClan.getParam() * 0.1);
 
@@ -125,7 +125,7 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 			SiegeClanDAO.getInstance().delete(getResidence());
 
 			// если был овнер, возращаем депозит
-			if (oldOwner != null)
+			if(oldOwner != null)
 				oldOwner.getWarehouse().addItem(getResidence().getFeeItemId(), getResidence().getDeposit() + winnerSiegeClan.getParam());
 
 			getResidence().setAuctionLength(0);
@@ -141,10 +141,10 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 		}
 		else
 		{
-			if (oldOwner != null)
+			if(oldOwner != null)
 			{
 				Player player = oldOwner.getLeader().getPlayer();
-				if (player != null)
+				if(player != null)
 					player.sendPacket(SystemMsg.THE_CLAN_HALL_WHICH_HAD_BEEN_PUT_UP_FOR_AUCTION_WAS_NOT_SOLD_AND_THEREFORE_HAS_BEEN_RELISTED);
 				else
 					PlayerMessageStack.getInstance().mailto(oldOwner.getLeaderId(), SystemMsg.THE_CLAN_HALL_WHICH_HAD_BEEN_PUT_UP_FOR_AUCTION_WAS_NOT_SOLD_AND_THEREFORE_HAS_BEEN_RELISTED);
@@ -173,6 +173,8 @@ public class ClanHallAuctionEvent extends SiegeEvent<AuctionClanHall, AuctionSie
 	@Override
 	protected long startTimeMillis()
 	{
-		return (getResidence().getSiegeDate().getTimeInMillis() == 0 || getResidence().getAuctionLength() == 0) ? 0 : (getResidence().getSiegeDate().getTimeInMillis() - (getResidence().getAuctionLength() * DAY_IN_MILISECONDS));
+		return (getResidence().getSiegeDate().getTimeInMillis() == 0
+				|| getResidence().getAuctionLength() == 0) ? 0 : (getResidence().getSiegeDate().getTimeInMillis()
+						- (getResidence().getAuctionLength() * DAY_IN_MILISECONDS));
 	}
 }

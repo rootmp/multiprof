@@ -52,7 +52,7 @@ public class DailyMissionList
 	public DailyMission get(DailyMissionTemplate missionTemplate)
 	{
 		DailyMission mission = _missions.get(missionTemplate.getId());
-		if (mission == null)
+		if(mission == null)
 		{
 			mission = new DailyMission(_owner, missionTemplate, false, 0);
 			_missions.put(mission.getId(), mission);
@@ -62,7 +62,7 @@ public class DailyMissionList
 
 	public Collection<DailyMissionTemplate> getAvailableMissions()
 	{
-		if (!Config.EX_USE_TO_DO_LIST)
+		if(!Config.EX_USE_TO_DO_LIST)
 			return Collections.emptyList();
 		return DailyMissionsHolder.getInstance().getMissions(_owner.getBaseClassId());
 	}
@@ -70,14 +70,14 @@ public class DailyMissionList
 	public boolean complete(int missionId)
 	{
 		DailyMissionTemplate missionTemplate = DailyMissionsHolder.getInstance().getMission(missionId);
-		if (missionTemplate == null)
+		if(missionTemplate == null)
 			return false;
 
 		DailyMission mission = get(missionTemplate);
-		if (mission.getStatus() != DailyMissionStatus.AVAILABLE)
+		if(mission.getStatus() != DailyMissionStatus.AVAILABLE)
 			return false;
 
-		if (_owner.getWeightPenalty() >= 3 || _owner.getInventoryLimit() * 0.8 < _owner.getInventory().getSize())
+		if(_owner.getWeightPenalty() >= 3 || _owner.getInventoryLimit() * 0.8 < _owner.getInventory().getSize())
 		{
 			_owner.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL);
 			return false;
@@ -88,18 +88,18 @@ public class DailyMissionList
 		mission.setValue((int) (System.currentTimeMillis() / 1000));
 		mission.setCompleted(true);
 
-		if (!CharacterDailyMissionsDAO.getInstance().insert(_owner, mission))
+		if(!CharacterDailyMissionsDAO.getInstance().insert(_owner, mission))
 		{
 			mission.setValue(missionValue);
 			mission.setCompleted(false);
 			return false;
 		}
 
-		for (DailyRewardTemplate reward : missionTemplate.getRewards())
+		for(DailyRewardTemplate reward : missionTemplate.getRewards())
 		{
-			if (reward.containsClassId(_owner.getBaseClassId()))
+			if(reward.containsClassId(_owner.getBaseClassId()))
 			{
-				for (ItemData item : reward.getRewardItems())
+				for(ItemData item : reward.getRewardItems())
 					ItemFunctions.addItem(_owner, item.getId(), item.getCount());
 			}
 		}

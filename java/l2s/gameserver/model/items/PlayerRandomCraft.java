@@ -174,7 +174,7 @@ public class PlayerRandomCraft
 					holder = _rewardList.get(i);
 
 				if(holder == null)
-					_rewardList.add(i,RandomCraftListHolder.getInstance().getNewReward(i, _rewardList));
+					_rewardList.add(i, RandomCraftListHolder.getInstance().getNewReward(i, _rewardList));
 				else if(!holder.isLocked())
 					_rewardList.set(i, RandomCraftListHolder.getInstance().getNewReward(i, _rewardList));
 				else

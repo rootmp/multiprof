@@ -25,8 +25,7 @@ public class MapRegionManager extends AbstractHolder
 	private RegionData[][][] map = new RegionData[World.WORLD_SIZE_X][World.WORLD_SIZE_Y][0];
 
 	private MapRegionManager()
-	{
-	}
+	{}
 
 	private int regionX(int x)
 	{
@@ -40,8 +39,8 @@ public class MapRegionManager extends AbstractHolder
 
 	public void addRegionData(RegionData rd)
 	{
-		for (int x = regionX(rd.getTerritory().getXmin()); x <= regionX(rd.getTerritory().getXmax()); x++)
-			for (int y = regionY(rd.getTerritory().getYmin()); y <= regionY(rd.getTerritory().getYmax()); y++)
+		for(int x = regionX(rd.getTerritory().getXmin()); x <= regionX(rd.getTerritory().getXmax()); x++)
+			for(int y = regionY(rd.getTerritory().getYmin()); y <= regionY(rd.getTerritory().getYmax()); y++)
 			{
 				map[x][y] = ArrayUtils.add(map[x][y], rd);
 			}
@@ -60,11 +59,11 @@ public class MapRegionManager extends AbstractHolder
 	@SuppressWarnings("unchecked")
 	public <T extends RegionData> T getRegionData(Class<T> clazz, int x, int y, int z)
 	{
-		for (RegionData rd : map[regionX(x)][regionY(y)])
+		for(RegionData rd : map[regionX(x)][regionY(y)])
 		{
-			if (rd.getClass() != clazz)
+			if(rd.getClass() != clazz)
 				continue;
-			if (rd.getTerritory().isInside(x, y, z))
+			if(rd.getTerritory().isInside(x, y, z))
 				return (T) rd;
 		}
 

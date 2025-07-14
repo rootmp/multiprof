@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.clansearch.ClanSearchManager;
 import l2s.gameserver.model.Player;
@@ -21,12 +22,12 @@ public class RequestPledgeRecruitApplyInfo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (activeChar.getClan() != null && activeChar.isClanLeader() && ClanSearchManager.getInstance().isClanRegistered(activeChar.getClanId()))
+		if(activeChar.getClan() != null && activeChar.isClanLeader() && ClanSearchManager.getInstance().isClanRegistered(activeChar.getClanId()))
 			activeChar.sendPacket(ExPledgeRecruitApplyInfo.ORDER_LIST);
-		else if (activeChar.getClan() == null && ClanSearchManager.getInstance().isWaiterRegistered(activeChar.getObjectId()))
+		else if(activeChar.getClan() == null && ClanSearchManager.getInstance().isWaiterRegistered(activeChar.getObjectId()))
 			activeChar.sendPacket(ExPledgeRecruitApplyInfo.WAITING);
 		else
 			activeChar.sendPacket(ExPledgeRecruitApplyInfo.DEFAULT);

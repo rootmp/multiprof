@@ -23,7 +23,7 @@ public class UseCommunityAction extends AbstractAction
 	public boolean performAction(FakeAI ai)
 	{
 		IBbsHandler handler = BbsHandlerHolder.getInstance().getCommunityHandler(_bypass);
-		if (handler != null)
+		if(handler != null)
 		{
 			handler.onBypassCommand(ai.getActor(), _bypass);
 			return true;

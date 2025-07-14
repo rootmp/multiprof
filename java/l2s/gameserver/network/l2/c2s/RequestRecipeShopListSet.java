@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -20,18 +21,18 @@ public class RequestRecipeShopListSet implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_count = packet.readD();
-		if (_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 12 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
 		}
 		_recipes = new int[_count];
 		_prices = new long[_count];
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			_recipes[i] = packet.readD();
 			_prices[i] = packet.readQ();
-			if (_prices[i] < 0)
+			if(_prices[i] < 0)
 			{
 				_count = 0;
 				return false;
@@ -44,34 +45,34 @@ public class RequestRecipeShopListSet implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player manufacturer = client.getActiveChar();
-		if (manufacturer == null || _count == 0)
+		if(manufacturer == null || _count == 0)
 			return;
 
-		if (!TradeHelper.checksIfCanOpenStore(manufacturer, Player.STORE_PRIVATE_MANUFACTURE))
+		if(!TradeHelper.checksIfCanOpenStore(manufacturer, Player.STORE_PRIVATE_MANUFACTURE))
 		{
 			manufacturer.sendActionFailed();
 			return;
 		}
 
-		if (_count > Config.MAX_PVTCRAFT_SLOTS)
+		if(_count > Config.MAX_PVTCRAFT_SLOTS)
 		{
 			manufacturer.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			return;
 		}
 
 		Map<Integer, ManufactureItem> createList = new LinkedHashMap<>();
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 		{
 			int recipeId = _recipes[i];
 			long price = _prices[i];
-			if (!manufacturer.findRecipe(recipeId))
+			if(!manufacturer.findRecipe(recipeId))
 				continue;
 
 			ManufactureItem mi = new ManufactureItem(recipeId, price);
 			createList.put(mi.getRecipeId(), mi);
 		}
 
-		if (!createList.isEmpty())
+		if(!createList.isEmpty())
 		{
 			manufacturer.setCreateList(createList);
 			manufacturer.setPrivateStoreType(Player.STORE_PRIVATE_MANUFACTURE);

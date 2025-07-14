@@ -89,7 +89,7 @@ public class StaticObjectTemplate
 	public StaticObjectInstance newInstance()
 	{
 		StaticObjectInstance instance;
-		if (getType() == 1)
+		if(getType() == 1)
 			instance = new ChairInstance(IdFactory.getInstance().getNextId(), this);
 		else
 			instance = new StaticObjectInstance(IdFactory.getInstance().getNextId(), this);

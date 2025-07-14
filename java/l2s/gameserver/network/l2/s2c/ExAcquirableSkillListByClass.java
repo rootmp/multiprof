@@ -56,7 +56,7 @@ public class ExAcquirableSkillListByClass implements IClientOutgoingPacket
 		packetWriter.writeH(_type.getId());
 		packetWriter.writeH(_skills.size());
 
-		for (Skill temp : _skills)
+		for(Skill temp : _skills)
 		{
 			packetWriter.writeD(temp.id);
 			packetWriter.writeH(temp.nextLevel);
@@ -64,7 +64,7 @@ public class ExAcquirableSkillListByClass implements IClientOutgoingPacket
 			packetWriter.writeC(temp.requirements);
 			packetWriter.writeQ(temp.cost);
 			packetWriter.writeC(0x01); // required items or no
-			if (_type == AcquireType.SUB_UNIT)
+			if(_type == AcquireType.SUB_UNIT)
 			{
 				packetWriter.writeH(temp.subUnit);
 			}

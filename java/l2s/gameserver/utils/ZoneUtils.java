@@ -10,9 +10,9 @@ public class ZoneUtils
 {
 	public static boolean checkAliveMonstersInZone(Zone zone, int npcId)
 	{
-		for (Creature c : zone.getObjects())
+		for(Creature c : zone.getObjects())
 		{
-			if (c.isMonster() && (npcId == -1 || c.getNpcId() == npcId) && !c.isDead())
+			if(c.isMonster() && (npcId == -1 || c.getNpcId() == npcId) && !c.isDead())
 				return true;
 		}
 		return false;

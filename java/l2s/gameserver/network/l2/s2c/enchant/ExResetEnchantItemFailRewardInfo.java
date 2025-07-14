@@ -12,10 +12,9 @@ import l2s.gameserver.templates.item.data.ItemData;
 import l2s.gameserver.templates.item.support.EnchantScroll;
 import l2s.gameserver.templates.item.support.EnchantStone;
 import l2s.gameserver.templates.item.support.EnchantVariation;
-import l2s.gameserver.templates.item.support.FailResultType;
 import l2s.gameserver.templates.item.support.EnchantVariation.EnchantLevel;
+import l2s.gameserver.templates.item.support.FailResultType;
 import l2s.gameserver.utils.ItemFunctions;
-
 
 public class ExResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 {
@@ -24,70 +23,69 @@ public class ExResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 	private int challengePoints;
 	private List<ItemData> items = new ArrayList<ItemData>();
 	private boolean _write;
-	
+
 	public ExResetEnchantItemFailRewardInfo(Player player, int _itemObjId)
 	{
 		final EnchantScroll enchantScroll = EnchantItemHolder.getInstance().getEnchantScroll(player.getEnchantScroll().getItemId());
-		if (enchantScroll == null)
+		if(enchantScroll == null)
 			return;
 
 		enchantItem = player.getEnchantItem();
-		
+
 		final EnchantVariation variation = EnchantItemHolder.getInstance().getEnchantVariation(enchantScroll.getVariationId(enchantItem.getItemId()));
 		if(variation == null)
 		{
 			player.sendActionFailed();
 			return;
 		}
-		
+
 		final EnchantLevel enchantLevel = variation.getLevel(enchantItem.getEnchantLevel() + 1);
 		if(enchantLevel == null)
 		{
 			player.sendActionFailed();
 			return;
 		}
-		
+
 		ItemInstance addedItem = player.getInventory().getItemByObjectId(_itemObjId);
-		if (addedItem == null)
+		if(addedItem == null)
 			return;
 
-		if (enchantItem.getObjectId() != addedItem.getObjectId())
+		if(enchantItem.getObjectId() != addedItem.getObjectId())
 			return;
 
 		EnchantStone stone = null;
-		if (player.getSupportItem() != null)
+		if(player.getSupportItem() != null)
 			stone = ItemFunctions.getEnchantStone(player.getEnchantItem(), player.getSupportItem());
-		
-		
+
 		challengeGroup = enchantScroll.getChallengeGroup(enchantItem.getItemId());
 		challengePoints = enchantLevel.getChallengeItemCount();
 
-		if ((enchantScroll.getResultType() == FailResultType.DROP_ENCHANT) || ((stone != null) && (stone.getResultType() == FailResultType.DROP_ENCHANT)))
+		if((enchantScroll.getResultType() == FailResultType.DROP_ENCHANT) || ((stone != null) && (stone.getResultType() == FailResultType.DROP_ENCHANT)))
 		{
 			int enchantDropCount = enchantScroll.getEnchantDropCount();
-			if (stone != null && stone.getEnchantDropCount() < enchantDropCount)
+			if(stone != null && stone.getEnchantDropCount() < enchantDropCount)
 				enchantDropCount = stone.getEnchantDropCount();
-			
+
 			addedItem.setEnchantLevel(Math.max(addedItem.getEnchantLevel() - enchantDropCount, 0));
 		}
-		else if (enchantScroll.getResultType() == FailResultType.NOTHING)
+		else if(enchantScroll.getResultType() == FailResultType.NOTHING)
 			addedItem.setEnchantLevel(enchantItem.getEnchantLevel());
 		else
 		{
 			addedItem = null;
 			if(enchantItem.getGrade().getCrystalId() > 0 && enchantItem.getCrystalCountOnEchant() > 0)
 				items.add(new ItemData(enchantItem.getGrade().getCrystalId(), enchantItem.getCrystalCountOnEchant()));
-			
+
 			int[] fail_stone = enchantItem.getEnchantFailStone();
 			if(fail_stone[0] > 0 && fail_stone[1] > 0)
 				items.add(new ItemData(fail_stone[0], fail_stone[1]));
 		}
-		if (addedItem != null)
+		if(addedItem != null)
 		{
 			items.clear();
 			items.add(new ItemData(enchantItem.getItemId(), enchantItem.getCount()));
 		}
-		
+
 		switch(player.getEnchantChallengePoint())
 		{
 			case BLANK:
@@ -107,7 +105,7 @@ public class ExResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 				break;
 			default:
 				break;
-			
+
 		}
 		_write = true;
 	}
@@ -120,7 +118,7 @@ public class ExResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 		packetWriter.writeD(enchantItem.getItemId()); // nItemServerId
 		packetWriter.writeD(challengeGroup); // nEnchantChallengePointGroupId
 		packetWriter.writeD(challengePoints); // nEnchantChallengePoint
-		
+
 		packetWriter.writeD(items.size()); // nSize
 		for(ItemData item : items)
 		{

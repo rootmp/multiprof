@@ -1,6 +1,6 @@
 package l2s.gameserver.enums;
 
-public enum DebuffType 
+public enum DebuffType
 {
 	GOOD("slot_buff"),
 	BAD("slot_debuff"),
@@ -9,14 +9,15 @@ public enum DebuffType
 	MAX("slot_all");
 
 	String type = "";
+
 	DebuffType(String string)
 	{
 		type = string;
 	}
-	
+
 	public static DebuffType findByString(String name)
 	{
-		for(DebuffType type  : DebuffType.values())
+		for(DebuffType type : DebuffType.values())
 		{
 			if(type.type.equalsIgnoreCase(name))
 				return type;

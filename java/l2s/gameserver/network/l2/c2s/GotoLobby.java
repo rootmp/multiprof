@@ -21,10 +21,10 @@ public class GotoLobby implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		List<Integer> players = CharacterDAO.getInstance().getPlayersIdByAccount(client.getLogin());
-		for(Integer oid:players)
+		for(Integer oid : players)
 		{
 			Player player = GameObjectsStorage.getPlayer(oid);
-			if(player!=null)
+			if(player != null)
 				player.kick();
 		}
 		client.sendPacket(new CharacterSelectionInfoPacket(client));

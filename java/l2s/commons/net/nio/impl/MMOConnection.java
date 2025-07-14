@@ -188,7 +188,7 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 	 */
 	protected void scheduleWriteInterest()
 	{
-		if (_isPengingWrite.compareAndSet(false, true))
+		if(_isPengingWrite.compareAndSet(false, true))
 			_pendingWriteTime = System.currentTimeMillis();
 	}
 
@@ -423,8 +423,8 @@ public class MMOConnection<T extends MMOClient> implements Lockable
 		lock();
 		try
 		{
-		_sendQueue.clear();
-		_recvQueue.clear();
+			_sendQueue.clear();
+			_recvQueue.clear();
 		}
 		finally
 		{

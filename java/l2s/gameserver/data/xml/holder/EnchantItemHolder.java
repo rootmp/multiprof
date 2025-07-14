@@ -1,11 +1,10 @@
 package l2s.gameserver.data.xml.holder;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.item.support.EnchantScroll;
 import l2s.gameserver.templates.item.support.EnchantVariation;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux

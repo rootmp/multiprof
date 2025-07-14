@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.Alliance;
@@ -21,29 +22,29 @@ public class RequestWithdrawAlly implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!activeChar.isClanLeader())
+		if(!activeChar.isClanLeader())
 		{
 			activeChar.sendPacket(SystemMsg.ONLY_THE_CLAN_LEADER_MAY_APPLY_FOR_WITHDRAWAL_FROM_THE_ALLIANCE);
 			return;
 		}
 
-		if (clan.getAlliance() == null)
+		if(clan.getAlliance() == null)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS);
 			return;
 		}
 
-		if (clan.equals(clan.getAlliance().getLeader()))
+		if(clan.equals(clan.getAlliance().getLeader()))
 		{
 			activeChar.sendPacket(SystemMsg.ALLIANCE_LEADERS_CANNOT_WITHDRAW);
 			return;

@@ -18,20 +18,20 @@ public final class EffectTransformation extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected != effector)
+		if(effected != effector)
 			return false;
 
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		int transformId = (int) getValue();
-		if (transformId > 0)
+		if(transformId > 0)
 		{
 			TransformTemplate template = TransformTemplateHolder.getInstance().getTemplate(effected.getSex(), transformId);
-			if (template == null)
+			if(template == null)
 				return false;
 
-			if (template.getType() == TransformType.FLYING && effected.getX() > -166168)
+			if(template.getType() == TransformType.FLYING && effected.getX() > -166168)
 				return false;
 		}
 
@@ -47,7 +47,7 @@ public final class EffectTransformation extends EffectHandler
 	@Override
 	public void onExit(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (getValue() > 0)
+		if(getValue() > 0)
 			effected.setTransform(null);
 	}
 }

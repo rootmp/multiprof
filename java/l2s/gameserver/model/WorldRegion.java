@@ -38,7 +38,7 @@ public final class WorldRegion implements Iterable<GameObject>
 		@Override
 		public void run()
 		{
-			if (_isActivating)
+			if(_isActivating)
 				World.activate(WorldRegion.this);
 			else
 				World.deactivate(WorldRegion.this);
@@ -91,23 +91,23 @@ public final class WorldRegion implements Iterable<GameObject>
 	 */
 	void setActive(boolean activate)
 	{
-		if (!_isActive.compareAndSet(!activate, activate))
+		if(!_isActive.compareAndSet(!activate, activate))
 			return;
 
 		NpcInstance npc;
-		for (GameObject obj : this)
+		for(GameObject obj : this)
 		{
-			if (!obj.isNpc())
+			if(!obj.isNpc())
 				continue;
 			npc = (NpcInstance) obj;
-			if (npc.getAI().isActive() != isActive())
-				if (isActive())
+			if(npc.getAI().isActive() != isActive())
+				if(isActive())
 				{
 					npc.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 					npc.getAI().startAITask();
 					npc.startRandomAnimation();
 				}
-				else if (!npc.getAI().isGlobalAI())
+				else if(!npc.getAI().isGlobalAI())
 				{
 					npc.stopRandomAnimation();
 					npc.getAI().stopAITask();
@@ -118,13 +118,13 @@ public final class WorldRegion implements Iterable<GameObject>
 
 	void addToObservers(GameObject object, Creature dropper)
 	{
-		if (object == null)
+		if(object == null)
 			return;
 
 		Player player = null;
-		if (object.isPlayer())
+		if(object.isPlayer())
 			player = (Player) object;
-		else if (object.isObservePoint())
+		else if(object.isObservePoint())
 			player = ((ObservePoint) object).getPlayer();
 
 		int oid = object.getObjectId();
@@ -132,17 +132,17 @@ public final class WorldRegion implements Iterable<GameObject>
 
 		Player p;
 
-		for (GameObject obj : this)
+		for(GameObject obj : this)
 		{
-			if (obj.getObjectId() == oid || obj.getReflectionId() != rid)
+			if(obj.getObjectId() == oid || obj.getReflectionId() != rid)
 				continue;
 			// Если object - игрок или наблюдатель, показать ему все видимые обьекты в
 			// регионе
-			if (player != null)
+			if(player != null)
 				player.sendPacket(player.addVisibleObject(obj, null));
 
 			// Показать обьект всем игрокам и наблюдателям в регионе
-			if (obj.isPlayer() || obj.isObservePoint())
+			if(obj.isPlayer() || obj.isObservePoint())
 			{
 				p = obj.getPlayer();
 				/*
@@ -156,13 +156,13 @@ public final class WorldRegion implements Iterable<GameObject>
 
 	void removeFromObservers(GameObject object)
 	{
-		if (object == null)
+		if(object == null)
 			return;
 
 		Player player = null;
-		if (object.isPlayer())
+		if(object.isPlayer())
 			player = (Player) object;
-		else if (object.isObservePoint())
+		else if(object.isObservePoint())
 			player = ((ObservePoint) object).getPlayer();
 
 		int oid = object.getObjectId();
@@ -171,18 +171,18 @@ public final class WorldRegion implements Iterable<GameObject>
 		Player p;
 		List<IClientOutgoingPacket> d = null;
 
-		for (GameObject obj : this)
+		for(GameObject obj : this)
 		{
-			if (obj.getObjectId() == oid || obj.getReflectionId() != rid)
+			if(obj.getObjectId() == oid || obj.getReflectionId() != rid)
 				continue;
 
 			// Если object - игрок или наблюдатель, убрать у него все видимые обьекты в
 			// регионе
-			if (player != null)
+			if(player != null)
 				player.sendPacket(player.removeVisibleObject(obj, null));
 
 			// Убрать обьект у всех игроков и наблюдателей в регионе
-			if (obj.isPlayer() || obj.isObservePoint())
+			if(obj.isPlayer() || obj.isObservePoint())
 			{
 				p = obj.getPlayer();
 				/*
@@ -191,7 +191,7 @@ public final class WorldRegion implements Iterable<GameObject>
 
 				p.sendPacket(p.removeVisibleObject(object, d == null ? d = object.deletePacketList(p) : d));
 			}
-			else if (obj.isNpc())
+			else if(obj.isNpc())
 			{
 				((NpcInstance) obj).getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, object);
 			}
@@ -200,13 +200,13 @@ public final class WorldRegion implements Iterable<GameObject>
 
 	void forgetObject(GameObject object)
 	{
-		if (object == null)
+		if(object == null)
 			return;
 
 		Player player = null;
-		if (object.isPlayer())
+		if(object.isPlayer())
 			player = (Player) object;
-		else if (object.isObservePoint())
+		else if(object.isObservePoint())
 			player = ((ObservePoint) object).getPlayer();
 
 		int oid = object.getObjectId();
@@ -215,18 +215,18 @@ public final class WorldRegion implements Iterable<GameObject>
 		Player p;
 		List<IClientOutgoingPacket> d = null;
 
-		for (GameObject obj : this)
+		for(GameObject obj : this)
 		{
-			if (obj.getObjectId() == oid || obj.getReflectionId() != rid)
+			if(obj.getObjectId() == oid || obj.getReflectionId() != rid)
 				continue;
 
 			// Если object - игрок или наблюдатель, убрать у него все видимые обьекты в
 			// регионе
-			if (player != null)
+			if(player != null)
 				player.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, obj);
 
 			// Убрать обьект у всех игроков и наблюдателей в регионе
-			if (obj.isPlayer() || obj.isObservePoint())
+			if(obj.isPlayer() || obj.isObservePoint())
 			{
 				p = obj.getPlayer();
 				/*
@@ -235,7 +235,7 @@ public final class WorldRegion implements Iterable<GameObject>
 
 				p.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, object);
 			}
-			else if (obj.isNpc())
+			else if(obj.isNpc())
 			{
 				((NpcInstance) obj).getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT, object);
 			}
@@ -244,7 +244,7 @@ public final class WorldRegion implements Iterable<GameObject>
 
 	public void addObject(GameObject obj)
 	{
-		if (obj == null)
+		if(obj == null)
 			return;
 
 		lock.lock();
@@ -259,10 +259,10 @@ public final class WorldRegion implements Iterable<GameObject>
 
 			_objects = resizedObjects;
 
-			if (obj.isPlayer())
-				if (_playersCount++ == 0)
+			if(obj.isPlayer())
+				if(_playersCount++ == 0)
 				{
-					if (_activateTask != null)
+					if(_activateTask != null)
 						_activateTask.cancel(false);
 					// активируем регион и соседние регионы через секунду
 					_activateTask = ThreadPoolManager.getInstance().schedule(new ActivateTask(true), 1000L);
@@ -276,7 +276,7 @@ public final class WorldRegion implements Iterable<GameObject>
 
 	public void removeObject(GameObject obj)
 	{
-		if (obj == null)
+		if(obj == null)
 			return;
 
 		lock.lock();
@@ -286,16 +286,16 @@ public final class WorldRegion implements Iterable<GameObject>
 
 			int index = -1;
 
-			for (int i = 0; i < _objectsCount; i++)
+			for(int i = 0; i < _objectsCount; i++)
 			{
-				if (objects[i] == obj)
+				if(objects[i] == obj)
 				{
 					index = i;
 					break;
 				}
 			}
 
-			if (index == -1) // Ошибочная ситуация
+			if(index == -1) // Ошибочная ситуация
 				return;
 
 			_objectsCount--;
@@ -306,10 +306,10 @@ public final class WorldRegion implements Iterable<GameObject>
 
 			_objects = resizedObjects;
 
-			if (obj.isPlayer())
-				if (--_playersCount == 0)
+			if(obj.isPlayer())
+				if(--_playersCount == 0)
 				{
-					if (_activateTask != null)
+					if(_activateTask != null)
 						_activateTask.cancel(false);
 					// деактивируем регион и соседние регионы через минуту
 					_activateTask = ThreadPoolManager.getInstance().schedule(new ActivateTask(false), 60000L);
@@ -399,7 +399,7 @@ public final class WorldRegion implements Iterable<GameObject>
 		@Override
 		public boolean hasNext()
 		{
-			if (cursor < objects.length)
+			if(cursor < objects.length)
 				return objects[cursor] != null;
 			return false;
 		}

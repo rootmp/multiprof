@@ -3,10 +3,9 @@ package l2s.gameserver.data.xml.holder;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.templates.item.RecipeTemplate;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public final class RecipeHolder extends AbstractHolder
 {
@@ -39,7 +38,7 @@ public final class RecipeHolder extends AbstractHolder
 	public Collection<RecipeTemplate> getRecipes()
 	{
 		Collection<RecipeTemplate> result = new ArrayList<RecipeTemplate>(size());
-		for (int key : _listByRecipeId.keys())
+		for(int key : _listByRecipeId.keys())
 		{
 			result.add(_listByRecipeId.get(key));
 		}

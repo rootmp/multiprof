@@ -22,19 +22,19 @@ public class Unlock extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (target == null || target instanceof ChestInstance && target.isDead())
+		if(target == null || target instanceof ChestInstance && target.isDead())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
 		}
 
-		if (target instanceof ChestInstance && activeChar.isPlayer())
+		if(target instanceof ChestInstance && activeChar.isPlayer())
 			return true;
 
-		if (!target.isDoor() || _unlockPower == 0)
+		if(!target.isDoor() || _unlockPower == 0)
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
@@ -42,25 +42,25 @@ public class Unlock extends Skill
 
 		DoorInstance door = (DoorInstance) target;
 
-		if (door.isOpen())
+		if(door.isOpen())
 		{
 			activeChar.sendPacket(SystemMsg.IT_IS_NOT_LOCKED);
 			return false;
 		}
 
-		if (!door.isUnlockable())
+		if(!door.isUnlockable())
 		{
 			activeChar.sendPacket(SystemMsg.THIS_DOOR_CANNOT_BE_UNLOCKED);
 			return false;
 		}
 
-		if (door.getKey() > 0) // ключ не подходит к двери
+		if(door.getKey() > 0) // ключ не подходит к двери
 		{
 			activeChar.sendPacket(SystemMsg.THIS_DOOR_CANNOT_BE_UNLOCKED);
 			return false;
 		}
 
-		if (_unlockPower - door.getLevel() * 100 < 0) // Дверь слишком высокого уровня
+		if(_unlockPower - door.getLevel() * 100 < 0) // Дверь слишком высокого уровня
 		{
 			activeChar.sendPacket(SystemMsg.THIS_DOOR_CANNOT_BE_UNLOCKED);
 			return false;
@@ -72,21 +72,21 @@ public class Unlock extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
-		if (target.isDoor())
+		if(target.isDoor())
 		{
 			final DoorInstance door = (DoorInstance) target;
-			if (!door.isOpen() && (door.getKey() > 0 || Rnd.chance(_unlockPower - door.getLevel() * 100)))
+			if(!door.isOpen() && (door.getKey() > 0 || Rnd.chance(_unlockPower - door.getLevel() * 100)))
 				door.openMe(activeChar.getPlayer(), true);
 			else
 				activeChar.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_UNLOCK_THE_DOOR);
 		}
-		else if (target instanceof ChestInstance)
+		else if(target instanceof ChestInstance)
 		{
 			final ChestInstance chest = (ChestInstance) target;
-			if (!chest.isDead())
+			if(!chest.isDead())
 				chest.tryOpen(activeChar.getPlayer(), this);
 		}
 	}

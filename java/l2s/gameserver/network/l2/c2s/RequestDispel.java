@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.Player;
@@ -22,20 +23,20 @@ public class RequestDispel implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player activeChar = client.getActiveChar();
-		if ((activeChar == null) || (activeChar.getObjectId() != _objectId && !activeChar.isMyServitor(_objectId)))
+		if((activeChar == null) || (activeChar.getObjectId() != _objectId && !activeChar.isMyServitor(_objectId)))
 			return;
 
 		Creature target = activeChar;
-		if (activeChar.getObjectId() != _objectId)
+		if(activeChar.getObjectId() != _objectId)
 		{
 			target = activeChar.getServitor(_objectId);
 		}
 
-		for (final Abnormal e : target.getAbnormalList())
+		for(final Abnormal e : target.getAbnormalList())
 		{
-			if (e.getDisplayId() == _id && e.getDisplayLevel() == _level)
+			if(e.getDisplayId() == _id && e.getDisplayLevel() == _level)
 			{
-				if (e.getSkill().getId() == 11541)
+				if(e.getSkill().getId() == 11541)
 				{
 					e.exit();
 				}

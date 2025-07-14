@@ -43,7 +43,7 @@ public class CastleDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, castle.getId());
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				castle.setTaxPercent(rset.getInt("tax"));
 				castle.setTreasury(rset.getLong("treasury"));
@@ -54,7 +54,7 @@ public class CastleDAO
 				castle.setResidenceSide(ResidenceSide.VALUES[rset.getInt("side")], true);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CastleDAO.select(Castle):" + e, e);
 		}
@@ -66,7 +66,7 @@ public class CastleDAO
 
 	public void update(Castle residence)
 	{
-		if (!residence.getJdbcState().isUpdatable())
+		if(!residence.getJdbcState().isUpdatable())
 			return;
 
 		residence.setJdbcState(JdbcEntityState.STORED);
@@ -94,7 +94,7 @@ public class CastleDAO
 			statement.setInt(++i, castle.getResidenceSide().ordinal());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("CastleDAO#update0(Castle): " + e, e);
 		}

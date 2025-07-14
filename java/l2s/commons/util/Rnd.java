@@ -26,7 +26,7 @@ public class Rnd
 {
 	private static final int MINIMUM_POSITIVE_INT = 1;
 	private static final long MINIMUM_POSITIVE_LONG = 1L;
-	
+
 	// get random number from 0 to 1
 	public static double get()
 	{
@@ -101,14 +101,10 @@ public class Rnd
 
 	public static <E> E get(E[] list)
 	{
-		if (list.length == 0)
-		{
-			return null;
-		}
-		if (list.length == 1)
-		{
-			return list[0];
-		}
+		if(list.length == 0)
+		{ return null; }
+		if(list.length == 1)
+		{ return list[0]; }
 		return list[get(list.length)];
 	}
 
@@ -119,14 +115,10 @@ public class Rnd
 
 	public static <E> E get(List<E> list)
 	{
-		if (list.isEmpty())
-		{
-			return null;
-		}
-		if (list.size() == 1)
-		{
-			return list.get(0);
-		}
+		if(list.isEmpty())
+		{ return null; }
+		if(list.size() == 1)
+		{ return list.get(0); }
 		return list.get(get(list.size()));
 	}
 }

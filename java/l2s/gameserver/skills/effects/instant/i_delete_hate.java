@@ -19,10 +19,10 @@ public final class i_delete_hate extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 
-		if (!effected.isMonster())
+		if(!effected.isMonster())
 			return false;
 
 		return true;
@@ -33,10 +33,10 @@ public final class i_delete_hate extends i_abstract_effect
 	{
 		MonsterInstance monster = (MonsterInstance) effected;
 		monster.getAggroList().clear(true);
-		if (monster.getAI() instanceof DefaultAI)
+		if(monster.getAI() instanceof DefaultAI)
 			((DefaultAI) monster.getAI()).setGlobalAggro(System.currentTimeMillis() + monster.getParameter("globalAggro", 10000L)); // TODO:
-																																	// Check
-																																	// this.
+		// Check
+		// this.
 		monster.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 	}
 }

@@ -26,7 +26,7 @@ public class ExHeroListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(_heroList.size());
-		for (StatsSet hero : _heroList)
+		for(StatsSet hero : _heroList)
 		{
 			packetWriter.writeS(hero.getString(Hero.CHAR_NAME));
 			packetWriter.writeD(hero.getInteger(Hero.CLASS_ID));

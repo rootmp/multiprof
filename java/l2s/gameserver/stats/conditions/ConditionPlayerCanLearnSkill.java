@@ -14,12 +14,11 @@ import l2s.gameserver.stats.Env;
  */
 public class ConditionPlayerCanLearnSkill extends Condition
 {
-	private static final AcquireType[] ACQUITE_TYPES_TO_CHECK =
-	{
-		AcquireType.NORMAL,
-		AcquireType.FISHING,
-		AcquireType.GENERAL,
-		AcquireType.HERO
+	private static final AcquireType[] ACQUITE_TYPES_TO_CHECK = {
+			AcquireType.NORMAL,
+			AcquireType.FISHING,
+			AcquireType.GENERAL,
+			AcquireType.HERO
 	};
 
 	private final int _id;
@@ -35,10 +34,10 @@ public class ConditionPlayerCanLearnSkill extends Condition
 	protected boolean testImpl(Env env)
 	{
 		Skill skill = SkillHolder.getInstance().getSkill(_id, _level);
-		if (skill == null)
+		if(skill == null)
 			return false;
 
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		Player player = env.character.getPlayer();
@@ -47,26 +46,26 @@ public class ConditionPlayerCanLearnSkill extends Condition
 		int haveSkillLvl = 0;
 
 		SkillEntry knownSkillEntry = player.getKnownSkill(skill.getId());
-		if (knownSkillEntry != null)
+		if(knownSkillEntry != null)
 		{
 			haveSkillLvl = knownSkillEntry.getTemplate().getLevel();
-			if (haveSkillLvl >= skillLvl)
+			if(haveSkillLvl >= skillLvl)
 				return false;
 		}
 
-		if (skillLvl > (haveSkillLvl + 1))
+		if(skillLvl > (haveSkillLvl + 1))
 			return false;
 
-		for (AcquireType at : ACQUITE_TYPES_TO_CHECK)
+		for(AcquireType at : ACQUITE_TYPES_TO_CHECK)
 		{
-			if (!SkillAcquireHolder.getInstance().isSkillPossible(player, skill, at))
+			if(!SkillAcquireHolder.getInstance().isSkillPossible(player, skill, at))
 				continue;
 
 			SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, skill.getId(), skill.getLevel(), at);
-			if (skillLearn == null)
+			if(skillLearn == null)
 				continue;
 
-			if (SkillAcquireHolder.getInstance().checkLearnCondition(player, player.getClan(), skillLearn, player.getLevel(), at))
+			if(SkillAcquireHolder.getInstance().checkLearnCondition(player, player.getClan(), skillLearn, player.getLevel(), at))
 				return true;
 		}
 

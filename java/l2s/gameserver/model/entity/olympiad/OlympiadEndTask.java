@@ -18,7 +18,7 @@ public class OlympiadEndTask implements Runnable
 	@Override
 	public void run()
 	{
-		if (Olympiad._inCompPeriod) // Если бои еще не закончились, откладываем окончание олимпиады на минуту
+		if(Olympiad._inCompPeriod) // Если бои еще не закончились, откладываем окончание олимпиады на минуту
 		{
 			Olympiad.startOlympiadEndTask(60000);
 			return;
@@ -28,9 +28,9 @@ public class OlympiadEndTask implements Runnable
 		// Announcements.announceToAll("Olympiad Validation Period has began");
 
 		Olympiad._isOlympiadEnd = true;
-		if (Olympiad._scheduledManagerTask != null)
+		if(Olympiad._scheduledManagerTask != null)
 			Olympiad._scheduledManagerTask.cancel(false);
-		if (Olympiad._scheduledWeeklyTask != null)
+		if(Olympiad._scheduledWeeklyTask != null)
 			Olympiad._scheduledWeeklyTask.cancel(false);
 
 		Olympiad.setValidationStartTime(Olympiad.getOlympiadPeriodEndTime());
@@ -39,7 +39,7 @@ public class OlympiadEndTask implements Runnable
 		Hero.getInstance().clearHeroes();
 		OlympiadHistoryManager.getInstance().switchData();
 
-		for (Player player : GameObjectsStorage.getPlayers(false, true))
+		for(Player player : GameObjectsStorage.getPlayers(false, true))
 			player.checkAndDeleteOlympiadItems();
 
 		Hero.getInstance().computeNewHeroes(OlympiadDatabase.computeHeroesToBe());
@@ -51,14 +51,15 @@ public class OlympiadEndTask implements Runnable
 		{
 			OlympiadDatabase.save();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Olympiad System: Failed to save Olympiad configuration!", e);
 		}
 
-		_log.info("Olympiad System: Starting Validation period. Time to end validation: " + Olympiad.getMillisToValidationEnd() / (60 * 1000) + " minutes");
+		_log.info("Olympiad System: Starting Validation period. Time to end validation: " + Olympiad.getMillisToValidationEnd() / (60 * 1000)
+				+ " minutes");
 
-		if (Olympiad._scheduledValdationTask != null)
+		if(Olympiad._scheduledValdationTask != null)
 			Olympiad._scheduledValdationTask.cancel(false);
 		Olympiad._scheduledValdationTask = ThreadPoolManager.getInstance().schedule(new ValidationTask(), Olympiad.getMillisToValidationEnd());
 	}

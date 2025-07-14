@@ -3,9 +3,9 @@ package l2s.gameserver.network.l2.s2c.pets;
 import java.util.HashMap;
 import java.util.Map;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.instances.PetInstance;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
-import l2s.commons.network.PacketWriter;
 import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.templates.pet.PetSkillData;
@@ -21,15 +21,15 @@ public class ExPetSkillList implements IClientOutgoingPacket
 	public ExPetSkillList(PetInstance pet, boolean acquireSkillByEnterWorld)
 	{
 		_acquireSkillByEnterWorld = acquireSkillByEnterWorld;
-		for (PetSkillData skillData : pet.getData().getSkills())
+		for(PetSkillData skillData : pet.getData().getSkills())
 		{
-			if (!_skills.containsKey(Integer.valueOf(skillData.getId())))
+			if(!_skills.containsKey(Integer.valueOf(skillData.getId())))
 			{
 				SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillData.getId(), skillData.getLevel());
-				if (skillEntry != null)
+				if(skillEntry != null)
 				{
 					int haveSkillLevel = pet.getSkillLevel(skillEntry.getId(), 0);
-					if (skillEntry.getLevel() == haveSkillLevel)
+					if(skillEntry.getLevel() == haveSkillLevel)
 					{
 						_skills.put(Integer.valueOf(skillData.getId()), new SkillInfo(skillData.getId(), skillData.getLevel(), skillEntry.getTemplate().getReuseSkillId(), 0, false));
 					}
@@ -43,7 +43,7 @@ public class ExPetSkillList implements IClientOutgoingPacket
 	{
 		packetWriter.writeC(_acquireSkillByEnterWorld);
 		packetWriter.writeD(_skills.size());
-		for (SkillInfo skill : _skills.values())
+		for(SkillInfo skill : _skills.values())
 		{
 			packetWriter.writeD(skill._id);
 			packetWriter.writeD(skill._level);

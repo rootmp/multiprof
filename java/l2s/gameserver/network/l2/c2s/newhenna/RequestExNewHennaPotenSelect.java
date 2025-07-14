@@ -10,7 +10,7 @@ public class RequestExNewHennaPotenSelect implements IClientIncomingPacket
 {
 	private int _slotId;
 	private int _potenId;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -23,16 +23,15 @@ public class RequestExNewHennaPotenSelect implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
-		if ((_slotId < 1) || (_slotId > player.getHennaPotenList().length))
+
+		if((_slotId < 1) || (_slotId > player.getHennaPotenList().length))
 			return;
 
 		player.potenSelect(_slotId, _potenId);
 		player.applyDyePotenSkills();
-		player.sendPacket(new NewHennaList(player,0));
+		player.sendPacket(new NewHennaList(player, 0));
 	}
-
 
 }

@@ -48,7 +48,7 @@ public final class PetDataParser extends AbstractParser<PetDataHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -57,22 +57,23 @@ public final class PetDataParser extends AbstractParser<PetDataHolder>
 			final int controlItemId = element.attributeValue("control_item") == null ? 0 : Integer.parseInt(element.attributeValue("control_item"));
 			String[] sync_levels = element.attributeValue("sync_level") == null ? new String[0] : element.attributeValue("sync_level").split(";");
 			final int[] syncLvls = new int[sync_levels.length];
-			for (int i = 0; i < sync_levels.length; i++)
+			for(int i = 0; i < sync_levels.length; i++)
 			{
 				syncLvls[i] = Integer.parseInt(sync_levels[i]);
 			}
 			// TODO: [Bonux] final int[] evolve = "evolve";
 			final PetType type = element.attributeValue("type") == null ? PetType.NORMAL : PetType.valueOf(element.attributeValue("type").toUpperCase());
-			final MountType mountType = element.attributeValue("mount_type") == null ? MountType.NONE : MountType.valueOf(element.attributeValue("mount_type").toUpperCase());
+			final MountType mountType = element.attributeValue("mount_type")
+					== null ? MountType.NONE : MountType.valueOf(element.attributeValue("mount_type").toUpperCase());
 
 			final int petType = element.attributeValue("pet_type") == null ? 0 : Integer.parseInt(element.attributeValue("pet_type"));
 			final PetData template = new PetData(index, npcId, controlItemId, syncLvls, type, mountType, petType);
-			for (Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
-				if ("skills".equalsIgnoreCase(secondElement.getName()))
+				if("skills".equalsIgnoreCase(secondElement.getName()))
 				{
-					for (Iterator<Element> thirdIterator = secondElement.elementIterator("skill"); thirdIterator.hasNext();)
+					for(Iterator<Element> thirdIterator = secondElement.elementIterator("skill"); thirdIterator.hasNext();)
 					{
 						Element thirdElement = thirdIterator.next();
 
@@ -83,9 +84,9 @@ public final class PetDataParser extends AbstractParser<PetDataHolder>
 						template.addSkill(new PetSkillData(skillId, skillLevel, petMinLevel));
 					}
 				}
-				else if ("expiration_reward_items".equalsIgnoreCase(secondElement.getName()))
+				else if("expiration_reward_items".equalsIgnoreCase(secondElement.getName()))
 				{
-					for (Iterator<Element> thirdIterator = secondElement.elementIterator("item"); thirdIterator.hasNext();)
+					for(Iterator<Element> thirdIterator = secondElement.elementIterator("item"); thirdIterator.hasNext();)
 					{
 						Element thirdElement = thirdIterator.next();
 
@@ -97,15 +98,15 @@ public final class PetDataParser extends AbstractParser<PetDataHolder>
 						template.addExpirationRewardItem(new RewardItemData(itemId, minCount, maxCount, chance));
 					}
 				}
-				else if ("level_data".equalsIgnoreCase(secondElement.getName()))
+				else if("level_data".equalsIgnoreCase(secondElement.getName()))
 				{
-					for (Iterator<Element> thirdIterator = secondElement.elementIterator("stats"); thirdIterator.hasNext();)
+					for(Iterator<Element> thirdIterator = secondElement.elementIterator("stats"); thirdIterator.hasNext();)
 					{
 						Element thirdElement = thirdIterator.next();
 
 						final int level = Integer.parseInt(thirdElement.attributeValue("level"));
 						final StatsSet stats_set = new StatsSet();
-						for (Iterator<Element> fourthIterator = thirdElement.elementIterator("set"); fourthIterator.hasNext();)
+						for(Iterator<Element> fourthIterator = thirdElement.elementIterator("set"); fourthIterator.hasNext();)
 						{
 							Element fourthElement = fourthIterator.next();
 							stats_set.set(fourthElement.attributeValue("name"), fourthElement.attributeValue("value"));

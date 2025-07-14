@@ -44,19 +44,19 @@ public class Announcements
 		try
 		{
 			List<String> lines = Arrays.asList(Files.readFile(new File("config/announcements.txt")).split("\n"));
-			for (String line : lines)
+			for(String line : lines)
 			{
-				if (line == null || line.isEmpty())
+				if(line == null || line.isEmpty())
 					continue;
 
 				StringTokenizer token = new StringTokenizer(line, "\t");
-				if (token.countTokens() > 1)
+				if(token.countTokens() > 1)
 					addAnnouncement(Integer.parseInt(token.nextToken()), token.nextToken(), false);
 				else
 					addAnnouncement(0, line, false);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error while loading config/announcements.txt!");
 		}
@@ -64,7 +64,7 @@ public class Announcements
 
 	public void showAnnouncements(Player activeChar)
 	{
-		for (Announce announce : _announcements)
+		for(Announce announce : _announcements)
 			announce.showAnnounce(activeChar);
 	}
 
@@ -74,14 +74,14 @@ public class Announcements
 		announce.start();
 
 		_announcements.add(announce);
-		if (save)
+		if(save)
 			saveToDisk();
 	}
 
 	public void delAnnouncement(int line)
 	{
 		Announce announce = _announcements.remove(line);
-		if (announce != null)
+		if(announce != null)
 			announce.stop();
 
 		saveToDisk();
@@ -93,11 +93,11 @@ public class Announcements
 		{
 			File f = new File("config/announcements.txt");
 			FileWriter writer = new FileWriter(f, false);
-			for (Announce announce : _announcements)
+			for(Announce announce : _announcements)
 				writer.write(announce.getTime() + "\t" + announce.getAnnounce() + "\n");
 			writer.close();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error while saving config/announcements.txt!", e);
 		}
@@ -123,29 +123,29 @@ public class Announcements
 	public static void announceToAll(String text, ChatType type)
 	{
 		SayPacket2 cs = new SayPacket2(0, type, 0, "", text);
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			player.sendPacket(cs);
 	}
 
 	public static void announceToAll(ChatType type, NpcString npcString, String... params)
 	{
 		SayPacket2 cs = new SayPacket2(0, type, 0, "", npcString, params);
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			player.sendPacket(cs);
 	}
 
 	public static void announceToAllFromStringHolder(String add, Object... arg)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			announceToPlayerFromStringHolder(player, add, arg);
 	}
 
 	public static void announceToPlayerFromStringHolder(Player player, String add, Object... arg)
 	{
 		CustomMessage message = new CustomMessage(add);
-		for (Object a : arg)
+		for(Object a : arg)
 		{
-			if (a instanceof CustomMessage)
+			if(a instanceof CustomMessage)
 				message.addCustomMessage((CustomMessage) a);
 			else
 				message.addString(String.valueOf(a));
@@ -155,16 +155,16 @@ public class Announcements
 
 	public static void criticalAnnounceToAllFromStringHolder(String add, Object... arg)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			criticalAnnounceToPlayerFromStringHolder(player, add, arg);
 	}
 
 	public static void criticalAnnounceToPlayerFromStringHolder(Player player, String add, Object... arg)
 	{
 		CustomMessage message = new CustomMessage(add);
-		for (Object a : arg)
+		for(Object a : arg)
 		{
-			if (a instanceof CustomMessage)
+			if(a instanceof CustomMessage)
 				message.addCustomMessage((CustomMessage) a);
 			else
 				message.addString(String.valueOf(a));
@@ -174,7 +174,7 @@ public class Announcements
 
 	public static void announceToAll(IBroadcastPacket sm)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 			player.sendPacket(sm);
 	}
 
@@ -205,13 +205,13 @@ public class Announcements
 
 		public void start()
 		{
-			if (_time > 0)
+			if(_time > 0)
 				_task = ThreadPoolManager.getInstance().scheduleAtFixedRate(this, _time * 1000L, _time * 1000L);
 		}
 
 		public void stop()
 		{
-			if (_task != null)
+			if(_task != null)
 			{
 				_task.cancel(false);
 				_task = null;
@@ -231,7 +231,7 @@ public class Announcements
 
 	public void announceByCustomMessage(String address, String[] replacements, ChatType type)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(true, false))
+		for(Player player : GameObjectsStorage.getPlayers(true, false))
 		{
 			announceToPlayerByCustomMessage(player, address, replacements, type);
 		}
@@ -240,9 +240,9 @@ public class Announcements
 	public void announceToPlayerByCustomMessage(Player player, String address, String[] replacements, ChatType type)
 	{
 		CustomMessage cm = new CustomMessage(address);
-		if (replacements != null)
+		if(replacements != null)
 		{
-			for (String s : replacements)
+			for(String s : replacements)
 			{
 				cm.addString(s);
 			}

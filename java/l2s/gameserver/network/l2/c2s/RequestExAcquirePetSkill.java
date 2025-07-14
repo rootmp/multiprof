@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.PetInstance;
@@ -28,27 +29,23 @@ public class RequestExAcquirePetSkill implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player activeChar = client.getActiveChar();
-		if (activeChar == null)
-		{
-			return;
-		}
-		if (activeChar.isOutOfControl())
+		if(activeChar == null)
+		{ return; }
+		if(activeChar.isOutOfControl())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 		final PetInstance pet = activeChar.getPet();
-		if (pet == null)
-		{
-			return;
-		}
+		if(pet == null)
+		{ return; }
 		final SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillId, skillLevel);
-		if (skillEntry == null)
+		if(skillEntry == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		if (pet.getSkillLevel(skillEntry.getId(), 0) >= skillEntry.getLevel())
+		if(pet.getSkillLevel(skillEntry.getId(), 0) >= skillEntry.getLevel())
 		{
 			activeChar.sendActionFailed();
 			return;

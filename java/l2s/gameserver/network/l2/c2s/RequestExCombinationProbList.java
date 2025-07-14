@@ -26,11 +26,11 @@ public class RequestExCombinationProbList implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
-		SynthesisData data = SynthesisHolder.getInstance().getSynthesisData(player, nOneSlotServerID,nTwoSlotServerID);
-		if(data!=null)
+
+		SynthesisData data = SynthesisHolder.getInstance().getSynthesisData(player, nOneSlotServerID, nTwoSlotServerID);
+		if(data != null)
 		{
-			double chance = data.getSuccessItemData().getChance()*10000;
+			double chance = data.getSuccessItemData().getChance() * 10000;
 			player.sendPacket(new ExCombinationProbList(nOneSlotServerID, nTwoSlotServerID, (int) chance));
 		}
 	}

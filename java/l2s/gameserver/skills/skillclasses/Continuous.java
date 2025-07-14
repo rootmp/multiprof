@@ -24,8 +24,9 @@ public class Continuous extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (getSkillType() == SkillType.BUFF && target != null)
-			if (!target.equals(activeChar) && activeChar.isPlayable() && activeChar.getPlayer().isInFightClub() && !activeChar.getPlayer().getFightClubEvent().canUsePositiveMagic(activeChar, target))
+		if(getSkillType() == SkillType.BUFF && target != null)
+			if(!target.equals(activeChar) && activeChar.isPlayable() && activeChar.getPlayer().isInFightClub()
+					&& !activeChar.getPlayer().getFightClubEvent().canUsePositiveMagic(activeChar, target))
 				return false;
 		return super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger);
 	}
@@ -39,29 +40,31 @@ public class Continuous extends Skill
 		final double lethal1 = _lethal1 * mult;
 		final double lethal2 = _lethal2 * mult;
 
-		if (lethal1 > 0 && Rnd.chance(lethal1))
+		if(lethal1 > 0 && Rnd.chance(lethal1))
 		{
-			if (realTarget.isPlayer())
+			if(realTarget.isPlayer())
 			{// TODO: utochnit!
-				realTarget.reduceCurrentHp(realTarget.getCurrentHp() / 2 + realTarget.getCurrentCp(), activeChar, this, true, true, false, true, false, false, true);
+				realTarget.reduceCurrentHp(realTarget.getCurrentHp() / 2
+						+ realTarget.getCurrentCp(), activeChar, this, true, true, false, true, false, false, true);
 				realTarget.sendPacket(SystemMsg.LETHAL_STRIKE);
 				activeChar.sendPacket(SystemMsg.YOUR_LETHAL_STRIKE_WAS_SUCCESSFUL);
 			}
-			else if (realTarget.isNpc() && !realTarget.isLethalImmune())
+			else if(realTarget.isNpc() && !realTarget.isLethalImmune())
 			{
 				realTarget.reduceCurrentHp(realTarget.getCurrentHp() / 2, activeChar, this, true, true, false, true, false, false, true);
 				activeChar.sendPacket(SystemMsg.YOUR_LETHAL_STRIKE_WAS_SUCCESSFUL);
 			}
 		}
-		else if (lethal2 > 0 && Rnd.chance(lethal2))
+		else if(lethal2 > 0 && Rnd.chance(lethal2))
 		{
-			if (realTarget.isPlayer())
+			if(realTarget.isPlayer())
 			{
-				realTarget.reduceCurrentHp(realTarget.getCurrentHp() + realTarget.getCurrentCp() - 1, activeChar, this, true, true, false, true, false, false, true);
+				realTarget.reduceCurrentHp(realTarget.getCurrentHp() + realTarget.getCurrentCp()
+						- 1, activeChar, this, true, true, false, true, false, false, true);
 				realTarget.sendPacket(SystemMsg.LETHAL_STRIKE);
 				activeChar.sendPacket(SystemMsg.YOUR_LETHAL_STRIKE_WAS_SUCCESSFUL);
 			}
-			else if (realTarget.isNpc() && !realTarget.isLethalImmune())
+			else if(realTarget.isNpc() && !realTarget.isLethalImmune())
 			{
 				realTarget.reduceCurrentHp(realTarget.getCurrentHp() - 1, activeChar, this, true, true, false, true, false, false, true);
 				activeChar.sendPacket(SystemMsg.YOUR_LETHAL_STRIKE_WAS_SUCCESSFUL);

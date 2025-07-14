@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.instances.PetInstance;
@@ -21,12 +22,12 @@ public class RequestChangePetName implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 		PetInstance pet = activeChar.getPet();
-		if (pet == null)
+		if(pet == null)
 			return;
 
-		if (pet.isDefaultName())
+		if(pet.isDefaultName())
 		{
-			if (_name.length() < 1 || _name.length() > 8)
+			if(_name.length() < 1 || _name.length() > 8)
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_PETS_NAME_CAN_BE_UP_TO_8_CHARACTERS_IN_LENGTH);
 				return;

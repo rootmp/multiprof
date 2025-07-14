@@ -53,21 +53,21 @@ public class AttendanceRewards
 		writeLock();
 		try
 		{
-			if (!Config.VIP_ATTENDANCE_REWARDS_ENABLED)
+			if(!Config.VIP_ATTENDANCE_REWARDS_ENABLED)
 				return;
 
 			Collection<AttendanceRewardData> rewards = AttendanceRewardHolder.getInstance().getRewards(_owner.hasPremiumAccount());
-			if (rewards.isEmpty())
+			if(rewards.isEmpty())
 				return;
 
 			int receiveTime;
-			if (Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
+			if(Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
 				receiveTime = Integer.parseInt(AccountVariablesDAO.getInstance().select(_owner.getAccountName(), VIP_ATTENDANCE_REWARD_DATE_VAR, "0"));
 			else
 				receiveTime = _owner.getVarInt(VIP_ATTENDANCE_REWARD_DATE_VAR, 0);
 
 			int index = 0;
-			if (Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
+			if(Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
 				index = Integer.parseInt(AccountVariablesDAO.getInstance().select(_owner.getAccountName(), VIP_ATTENDANCE_REWARD_INDEX_VAR, "0"));
 			else
 				index = _owner.getVarInt(VIP_ATTENDANCE_REWARD_INDEX_VAR, 0);
@@ -77,9 +77,9 @@ public class AttendanceRewards
 			_receivedRewardIndex = index;
 
 			long nextRewardTime = VIP_ATTENDANCE_DATE_PATTERN.next(receiveTime * 1000L);
-			if (nextRewardTime <= System.currentTimeMillis())
+			if(nextRewardTime <= System.currentTimeMillis())
 			{
-				if (index >= rewards.size())
+				if(index >= rewards.size())
 				{
 					_receivedRewardIndex = 0;
 					index = 1;
@@ -137,22 +137,22 @@ public class AttendanceRewards
 		writeLock();
 		try
 		{
-			if (!isAvailable())
+			if(!isAvailable())
 				return false;
 
-			if (isReceived())
+			if(isReceived())
 				return false;
 
 			AttendanceRewardData reward = AttendanceRewardHolder.getInstance().getReward(getNextRewardIndex(), _owner.hasPremiumAccount());
-			if (reward == null)
+			if(reward == null)
 			{
 				_owner.sendPacket(SystemMsg.DUE_TO_A_SYSTEM_ERROR_THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_PLEASE_TRY_AGAIN_LATER_BY_GOING_TO_MENU__ATTENDANCE_CHECK);
 				return false;
 			}
 
-			if (!_owner.hasPremiumAccount())
+			if(!_owner.hasPremiumAccount())
 			{
-				if (_loginDelayTask != null && !_loginDelayTask.isDone())
+				if(_loginDelayTask != null && !_loginDelayTask.isDone())
 				{
 					int receiveDelay = (int) _loginDelayTask.getDelay(TimeUnit.MINUTES) + 1;
 					_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOU_CAN_REDEEM_YOUR_REWARD_S1_MINUTES_AFTER_LOGGING_IN_S2_MINUTES_LEFT).addInteger(AFTER_LOGIN_RECEIVE_REWARD_DELAY).addInteger(receiveDelay));
@@ -160,7 +160,7 @@ public class AttendanceRewards
 				}
 			}
 
-			if (_owner.isInventoryFull())
+			if(_owner.isInventoryFull())
 			{
 				_owner.sendPacket(SystemMsg.THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_BECAUSE_THE_INVENTORY_WEIGHTQUANTITY_LIMIT_HAS_BEEN_EXCEEDED);
 				return false;
@@ -168,10 +168,11 @@ public class AttendanceRewards
 
 			_receivedRewardIndex = getNextRewardIndex();
 
-			if (Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
+			if(Config.VIP_ATTENDANCE_REWARDS_REWARD_BY_ACCOUNT)
 			{
 				AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_ATTENDANCE_REWARD_INDEX_VAR, String.valueOf(getReceivedRewardIndex()));
-				AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_ATTENDANCE_REWARD_DATE_VAR, String.valueOf((int) (System.currentTimeMillis() / 1000)));
+				AccountVariablesDAO.getInstance().insert(_owner.getAccountName(), VIP_ATTENDANCE_REWARD_DATE_VAR, String.valueOf((int) (System.currentTimeMillis()
+						/ 1000)));
 			}
 			else
 			{
@@ -179,7 +180,7 @@ public class AttendanceRewards
 				_owner.setVar(VIP_ATTENDANCE_REWARD_DATE_VAR, String.valueOf((int) (System.currentTimeMillis() / 1000)));
 			}
 
-			if (!_owner.hasPremiumAccount())
+			if(!_owner.hasPremiumAccount())
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUVE_RECEIVED_YOUR_ATTENDANCE_REWARD_FOR_DAY_S1_).addInteger(getReceivedRewardIndex()));
 			else
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUVE_RECEIVED_YOUR_PC_CAF_ATTENDANCE_REWARD_FOR_DAY_S1_).addInteger(getReceivedRewardIndex()));
@@ -198,21 +199,21 @@ public class AttendanceRewards
 
 	public void sendRewardsList(boolean force)
 	{
-		if (isAvailable())
+		if(isAvailable())
 		{
-			if (force || !isReceived())
+			if(force || !isReceived())
 				_owner.sendPacket(new ExVipAttendanceItemList(_owner));
 		}
-		else if (force)
+		else if(force)
 			_owner.sendPacket(SystemMsg.YOU_CAN_NO_LONGER_RECEIVE_ATTENDANCE_CHECK_REWARDS_);
 	}
 
 	public void onEnterWorld()
 	{
-		if (isAvailable() && !isReceived())
+		if(isAvailable() && !isReceived())
 		{
 			_owner.sendPacket(new ExVipAttendanceItemList(_owner));
-			if (!_owner.hasPremiumAccount())
+			if(!_owner.hasPremiumAccount())
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUR_DAY_S1_ATTENDANCE_REWARD_IS_READY_CLICK_ON_THE_REWARDS_ICON).addInteger(getNextRewardIndex()));
 			else
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUR_DAY_S1_PC_CAF_ATTENDANCE_REWARD_IS_READY_CLICK_ON_THE_REWARDS_ICON).addInteger(getNextRewardIndex()));
@@ -223,15 +224,14 @@ public class AttendanceRewards
 	{
 		stopTasks();
 
-		if (isAvailable())
+		if(isAvailable())
 		{
-			if (!isReceived())
+			if(!isReceived())
 			{
 				long loginDelay = (_owner.getOnlineBeginTime() + (AFTER_LOGIN_RECEIVE_REWARD_DELAY * 60 * 1000)) - System.currentTimeMillis();
-				if (loginDelay > 0)
+				if(loginDelay > 0)
 				{
-					_loginDelayTask = ThreadPoolManager.getInstance().schedule(() ->
-					{
+					_loginDelayTask = ThreadPoolManager.getInstance().schedule(() -> {
 						_owner.sendPacket(SystemMsg.YOU_CAN_REDEEM_YOUR_REWARD_NOW);
 					}, loginDelay);
 				}
@@ -239,8 +239,7 @@ public class AttendanceRewards
 			else
 			{
 				long nextRewardDelay = VIP_ATTENDANCE_DATE_PATTERN.next(System.currentTimeMillis()) - System.currentTimeMillis();
-				_getNextRewardIndexTask = ThreadPoolManager.getInstance().schedule(() ->
-				{
+				_getNextRewardIndexTask = ThreadPoolManager.getInstance().schedule(() -> {
 					restore();
 					onEnterWorld();
 				}, nextRewardDelay);
@@ -250,12 +249,12 @@ public class AttendanceRewards
 
 	public void stopTasks()
 	{
-		if (_loginDelayTask != null)
+		if(_loginDelayTask != null)
 		{
 			_loginDelayTask.cancel(false);
 			_loginDelayTask = null;
 		}
-		if (_getNextRewardIndexTask != null)
+		if(_getNextRewardIndexTask != null)
 		{
 			_getNextRewardIndexTask.cancel(false);
 			_getNextRewardIndexTask = null;

@@ -34,7 +34,7 @@ public abstract class AutomaticTask implements Runnable
 		{
 			doTask();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Exception: " + e, e);
 		}

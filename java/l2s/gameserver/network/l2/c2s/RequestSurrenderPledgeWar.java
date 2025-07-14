@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,15 +33,15 @@ public final class RequestSurrenderPledgeWar implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
 		Clan targetClan = ClanTable.getInstance().getClanByName(_pledgeName);
-		if (targetClan == null)
+		if(targetClan == null)
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_FOR_DECLARATION_IS_WRONG);
 			activeChar.sendActionFailed();
@@ -49,7 +50,7 @@ public final class RequestSurrenderPledgeWar implements IClientIncomingPacket
 
 		_log.info(getClass().getSimpleName() + ": by " + clan.getName() + " with " + _pledgeName);
 
-		if (!clan.isAtWarWith(targetClan.getClanId()))
+		if(!clan.isAtWarWith(targetClan.getClanId()))
 		{
 			// TODO: activeChar.sendMessage("You aren't at war with this clan.");
 			activeChar.sendActionFailed();
@@ -60,7 +61,7 @@ public final class RequestSurrenderPledgeWar implements IClientIncomingPacket
 		// activeChar.deathPenalty(false, false, false);
 
 		ClanWar war = clan.getWarWith(targetClan.getClanId());
-		if (war != null)
+		if(war != null)
 			war.setPeriod(ClanWarPeriod.PEACE);
 	}
 }

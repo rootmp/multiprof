@@ -26,7 +26,7 @@ public final class ExperienceDataHolder extends AbstractHolder
 	{
 		int level = data.getLevel();
 		_data.put(level, data);
-		if (level > _maxLevel)
+		if(level > _maxLevel)
 			_maxLevel = level;
 	}
 

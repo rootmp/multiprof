@@ -28,9 +28,9 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 		_page = page;
 		_list = new ArrayList<MatchingRoom>(ITEMS_PER_PAGE);
 
-		for (int i = 0; i < temp.size(); i++)
+		for(int i = 0; i < temp.size(); i++)
 		{
-			if ((i < first) || (i >= firstNot))
+			if((i < first) || (i >= firstNot))
 			{
 				continue;
 			}
@@ -44,7 +44,7 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_page);
 		packetWriter.writeD(_list.size());
-		for (MatchingRoom room : _list)
+		for(MatchingRoom room : _list)
 		{
 			packetWriter.writeD(room.getId());
 			Player leader = room.getLeader();

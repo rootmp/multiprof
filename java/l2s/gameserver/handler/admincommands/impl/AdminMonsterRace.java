@@ -26,9 +26,9 @@ public class AdminMonsterRace implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (fullString.equalsIgnoreCase("admin_mons"))
+		if(fullString.equalsIgnoreCase("admin_mons"))
 		{
-			if (!activeChar.getPlayerAccess().MonsterRace)
+			if(!activeChar.getPlayerAccess().MonsterRace)
 				return false;
 			handleSendPacket(activeChar);
 		}
@@ -49,35 +49,34 @@ public class AdminMonsterRace implements IAdminCommandHandler
 		 * 0 to end the race 8003 to 8027
 		 */
 
-		int[][] codes =
-		{
-			{
-				-1,
-				0
-			},
-			{
-				0,
-				15322
-			},
-			{
-				13765,
-				-1
-			},
-			{
-				-1,
-				0
-			}
+		int[][] codes = {
+				{
+						-1,
+						0
+				},
+				{
+						0,
+						15322
+				},
+				{
+						13765,
+						-1
+				},
+				{
+						-1,
+						0
+				}
 		};
 		MonsterRace race = MonsterRace.getInstance();
 
-		if (state == -1)
+		if(state == -1)
 		{
 			state++;
 			race.newRace();
 			race.newSpeeds();
 			activeChar.broadcastPacket(new MonRaceInfoPacket(codes[state][0], codes[state][1], race.getMonsters(), race.getSpeeds()));
 		}
-		else if (state == 0)
+		else if(state == 0)
 		{
 			state++;
 			activeChar.sendPacket(SystemMsg.THEYRE_OFF);
@@ -134,12 +133,12 @@ public class AdminMonsterRace implements IAdminCommandHandler
 		{
 			NpcInstance obj;
 
-			for (int i = 0; i < 8; i++)
+			for(int i = 0; i < 8; i++)
 			{
 				obj = MonsterRace.getInstance().getMonsters()[i];
 				// FIXME i don't know, if it's needed (Styx)
 				// L2World.removeObject(obj);
-				activeChar.broadcastPacket(new DeleteObjectPacket(activeChar,obj));
+				activeChar.broadcastPacket(new DeleteObjectPacket(activeChar, obj));
 
 			}
 			state = -1;

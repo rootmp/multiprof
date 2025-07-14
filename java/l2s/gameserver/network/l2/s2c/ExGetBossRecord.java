@@ -27,7 +27,7 @@ public class ExGetBossRecord implements IClientOutgoingPacket
 		packetWriter.writeD(_totalPoints); // char total points
 
 		packetWriter.writeD(_bossRecordInfo.size()); // list size
-		for (BossRecordInfo w : _bossRecordInfo)
+		for(BossRecordInfo w : _bossRecordInfo)
 		{
 			packetWriter.writeD(w._bossId);
 			packetWriter.writeD(w._points);

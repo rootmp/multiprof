@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Playable;
 import l2s.gameserver.utils.AbnormalsComparator;
 
@@ -20,13 +20,13 @@ public class PartySpelledPacket implements IClientOutgoingPacket
 		_type = activeChar.isPet() ? 1 : activeChar.isSummon() ? 2 : 0;
 		// 0 - L2Player // 1 - петы // 2 - саммоны
 		_effects = new ArrayList<Abnormal>();
-		if (full)
+		if(full)
 		{
 			l2s.gameserver.model.actor.instances.creature.Abnormal[] effects = activeChar.getAbnormalList().toArray();
 			Arrays.sort(effects, AbnormalsComparator.getInstance());
-			for (l2s.gameserver.model.actor.instances.creature.Abnormal effect : effects)
+			for(l2s.gameserver.model.actor.instances.creature.Abnormal effect : effects)
 			{
-				if (effect != null)
+				if(effect != null)
 					effect.addPartySpelledIcon(this);
 			}
 		}
@@ -38,7 +38,7 @@ public class PartySpelledPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_type);
 		packetWriter.writeD(_objId);
 		packetWriter.writeD(_effects.size());
-		for (Abnormal temp : _effects)
+		for(Abnormal temp : _effects)
 		{
 			packetWriter.writeD(temp._skillId);
 			packetWriter.writeH(temp._level);

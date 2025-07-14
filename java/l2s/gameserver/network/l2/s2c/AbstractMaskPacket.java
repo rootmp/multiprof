@@ -1,5 +1,4 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import l2s.gameserver.network.l2.s2c.updatetype.IUpdateTypeComponent;
 
@@ -9,16 +8,15 @@ import l2s.gameserver.network.l2.s2c.updatetype.IUpdateTypeComponent;
  */
 public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> implements IClientOutgoingPacket
 {
-	protected static final byte[] DEFAULT_FLAG_ARRAY =
-	{
-		(byte) 0x80,
-		0x40,
-		0x20,
-		0x10,
-		0x08,
-		0x04,
-		0x02,
-		0x01
+	protected static final byte[] DEFAULT_FLAG_ARRAY = {
+			(byte) 0x80,
+			0x40,
+			0x20,
+			0x10,
+			0x08,
+			0x04,
+			0x02,
+			0x01
 	};
 
 	protected abstract byte[] getMasks();
@@ -28,9 +26,9 @@ public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> impleme
 	@SuppressWarnings("unchecked")
 	public AbstractMaskPacket<T> addComponentType(T... updateComponents)
 	{
-		for (T component : updateComponents)
+		for(T component : updateComponents)
 		{
-			if (!containsMask(component))
+			if(!containsMask(component))
 			{
 				getMasks()[component.getMask() >> 3] |= DEFAULT_FLAG_ARRAY[component.getMask() & 7];
 				onNewMaskAdded(component);

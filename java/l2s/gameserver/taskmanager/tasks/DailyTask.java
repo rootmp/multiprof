@@ -27,7 +27,7 @@ public class DailyTask extends AutomaticTask
 	public void doTask() throws Exception
 	{
 		_log.info("Daily Global Task: launched.");
-		for (Player player : GameObjectsStorage.getPlayers(true, true))
+		for(Player player : GameObjectsStorage.getPlayers(true, true))
 			player.restartDailyCounters(false);
 		ClanTable.getInstance().refreshClanAttendanceInfo();
 		TrainingCampManager.getInstance().refreshTrainingCamp();

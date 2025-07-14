@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.c2s.steadybox;
 
-import l2s.gameserver.model.Player;
-import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
-import l2s.gameserver.network.l2.GameClient;
 import l2s.commons.network.PacketReader;
+import l2s.gameserver.model.Player;
+import l2s.gameserver.network.l2.GameClient;
+import l2s.gameserver.network.l2.c2s.IClientIncomingPacket;
 import l2s.gameserver.network.l2.s2c.steadybox.ExSteadyOneBoxUpdate;
 import l2s.gameserver.templates.item.ItemTemplate;
 
@@ -27,12 +27,12 @@ public class RequestExSteadyOpenBox implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_l2CoinCount > 0)
+		if(_l2CoinCount > 0)
 		{
-			if (activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_MONEY_L, _l2CoinCount))
+			if(activeChar.getInventory().destroyItemByItemId(ItemTemplate.ITEM_ID_MONEY_L, _l2CoinCount))
 			{
 				activeChar.sendPacket(new ExSteadyOneBoxUpdate(activeChar, _slotId, false, true));
 			}

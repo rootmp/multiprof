@@ -25,8 +25,8 @@ public class i_add_soul extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effector.getPlayer();
-		if (getValue() > 0 && effected != player)
-			if (_type == 0)
+		if(getValue() > 0 && effected != player)
+			if(_type == 0)
 				player.broadcastPacket(new ExSpawnEmitterPacket(effected, player, 2));
 			else
 				player.broadcastPacket(new ExSpawnEmitterPacket(effected, player, 3));

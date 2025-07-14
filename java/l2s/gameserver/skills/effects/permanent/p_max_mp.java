@@ -3,7 +3,6 @@ package l2s.gameserver.skills.effects.permanent;
 import l2s.gameserver.model.Creature;
 import l2s.gameserver.model.actor.instances.creature.Abnormal;
 import l2s.gameserver.network.l2.components.StatusUpdate;
-import l2s.gameserver.network.l2.s2c.StatusUpdatePacket;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.StatusType;
 import l2s.gameserver.network.l2.s2c.StatusUpdatePacket.UpdateType;
 import l2s.gameserver.stats.StatModifierType;
@@ -26,14 +25,14 @@ public final class p_max_mp extends p_abstract_stat_effect
 	@Override
 	public void onApplied(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!_heal || effected.isHealBlocked())
+		if(!_heal || effected.isHealBlocked())
 			return;
 
 		double power = getValue();
-		if (getModifierType() == StatModifierType.PER)
+		if(getModifierType() == StatModifierType.PER)
 			power = power / 100. * effected.getMaxMp();
 
-		if (power > 0)
+		if(power > 0)
 		{
 			// effected.sendPacket(new
 			// SystemMessagePacket(SystemMsg.S1_MP_HAS_BEEN_RESTORED).addInteger(power));

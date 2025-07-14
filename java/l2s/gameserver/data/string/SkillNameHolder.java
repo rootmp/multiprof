@@ -7,6 +7,8 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.SkillHolder;
@@ -14,9 +16,6 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Skill;
 import l2s.gameserver.utils.Files;
 import l2s.gameserver.utils.Language;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * Author: VISTALL Date: 19:27/29.12.2010
@@ -43,26 +42,26 @@ public final class SkillNameHolder extends AbstractHolder
 	{
 		TIntObjectMap<String> skillNames = _skillNames.get(lang);
 		String name = skillNames.get(hashCode);
-		if (name == null)
+		if(name == null)
 		{
 			Language secondLang = lang;
 			do
 			{
-				if (secondLang == secondLang.getSecondLanguage())
+				if(secondLang == secondLang.getSecondLanguage())
 					break;
 
 				secondLang = secondLang.getSecondLanguage();
 				skillNames = _skillNames.get(secondLang);
 				name = skillNames.get(hashCode);
 			}
-			while (name == null);
+			while(name == null);
 
-			if (name == null)
+			if(name == null)
 			{
-				for (Language l : Language.VALUES)
+				for(Language l : Language.VALUES)
 				{
 					skillNames = _skillNames.get(secondLang);
-					if ((name = skillNames.get(hashCode)) != null)
+					if((name = skillNames.get(hashCode)) != null)
 						break;
 				}
 			}
@@ -98,17 +97,17 @@ public final class SkillNameHolder extends AbstractHolder
 
 	public void load()
 	{
-		for (Language lang : Language.VALUES)
+		for(Language lang : Language.VALUES)
 		{
 			_skillNames.put(lang, new TIntObjectHashMap<String>());
 
-			if (!Config.AVAILABLE_LANGUAGES.contains(lang))
+			if(!Config.AVAILABLE_LANGUAGES.contains(lang))
 				continue;
 
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/string/skillname/" + lang.getShortName() + ".txt");
-			if (!file.exists())
+			if(!file.exists())
 			{
-				if (!lang.isCustom())
+				if(!lang.isCustom())
 					warn("Not find file: " + file.getAbsolutePath());
 			}
 			else
@@ -120,15 +119,15 @@ public final class SkillNameHolder extends AbstractHolder
 					scanner = new Scanner(content);
 					int i = 0;
 					String line;
-					while (scanner.hasNextLine())
+					while(scanner.hasNextLine())
 					{
 						i++;
 						line = scanner.nextLine();
-						if (line.startsWith("#"))
+						if(line.startsWith("#"))
 							continue;
 
 						Matcher m = LINE_PATTERN.matcher(line);
-						if (m.find())
+						if(m.find())
 						{
 							int id = Integer.parseInt(m.group(1));
 							int level = Integer.parseInt(m.group(2));
@@ -141,7 +140,7 @@ public final class SkillNameHolder extends AbstractHolder
 							error("Error on line #: " + i + "; file: " + file.getName());
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					error("Exception: " + e, e);
 				}
@@ -151,7 +150,7 @@ public final class SkillNameHolder extends AbstractHolder
 					{
 						scanner.close();
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						//
 					}
@@ -171,9 +170,9 @@ public final class SkillNameHolder extends AbstractHolder
 	@Override
 	public void log()
 	{
-		for (Map.Entry<Language, TIntObjectMap<String>> entry : _skillNames.entrySet())
+		for(Map.Entry<Language, TIntObjectMap<String>> entry : _skillNames.entrySet())
 		{
-			if (!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
+			if(!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
 				continue;
 			info("Load skill names: " + entry.getValue().size() + " for Lang: " + entry.getKey());
 		}

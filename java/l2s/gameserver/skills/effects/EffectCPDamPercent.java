@@ -15,7 +15,7 @@ public class EffectCPDamPercent extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead() || !effected.isPlayer())
+		if(effected.isDead() || !effected.isPlayer())
 			return false;
 		return true;
 	}
@@ -23,7 +23,7 @@ public class EffectCPDamPercent extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return;
 		double newCp = (100. - getValue()) * effected.getMaxCp() / 100.;
 		newCp = Math.min(effected.getCurrentCp(), Math.max(0, newCp));

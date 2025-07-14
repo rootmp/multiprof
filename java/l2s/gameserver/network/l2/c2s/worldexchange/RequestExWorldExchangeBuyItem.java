@@ -13,7 +13,7 @@ public class RequestExWorldExchangeBuyItem implements IClientIncomingPacket
 {
 	private long _worldExchangeIndex;
 	private long nCount;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -21,15 +21,15 @@ public class RequestExWorldExchangeBuyItem implements IClientIncomingPacket
 		nCount = packet.readQ();
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.ENABLE_WORLD_EXCHANGE)
+		if(!Config.ENABLE_WORLD_EXCHANGE)
 			return;
-		
+
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 		if(player.getStat().calc(Stats.P_BLOCK_WORLD_TRADE) != 0)
 		{

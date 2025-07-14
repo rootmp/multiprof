@@ -22,38 +22,32 @@ public class ResidenceEnterLeaveListenerImpl implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneEnter(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
 		Player player = (Player) actor;
 		Residence residence = (Residence) zone.getParams().get("residence");
-		if (residence == null)
-		{
-			return;
-		}
+		if(residence == null)
+		{ return; }
 
-		if (!residence.isOwner(player.getClanId()))
-		{
-			return;
-		}
+		if(!residence.isOwner(player.getClanId()))
+		{ return; }
 
 		ResidenceFunction function = residence.getActiveFunction(ResidenceFunctionType.RESTORE_HP);
-		if (function != null)
+		if(function != null)
 		{
 			double value = function.getTemplate().getHpRegen();
-			if (value > 0)
+			if(value > 0)
 			{
 				player.getStat().addFuncs(new FuncMul(Stats.REGENERATE_HP_RATE, 0x30, residence, value, StatsSet.EMPTY));
 			}
 		}
 
 		function = residence.getActiveFunction(ResidenceFunctionType.RESTORE_MP);
-		if (function != null)
+		if(function != null)
 		{
 			double value = function.getTemplate().getMpRegen();
-			if (value > 0)
+			if(value > 0)
 			{
 				player.getStat().addFuncs(new FuncMul(Stats.REGENERATE_MP_RATE, 0x30, residence, value, StatsSet.EMPTY));
 			}
@@ -63,16 +57,12 @@ public class ResidenceEnterLeaveListenerImpl implements OnZoneEnterLeaveListener
 	@Override
 	public void onZoneLeave(Zone zone, Creature actor)
 	{
-		if (!actor.isPlayer())
-		{
-			return;
-		}
+		if(!actor.isPlayer())
+		{ return; }
 
 		Residence residence = (Residence) zone.getParams().get("residence");
-		if (residence == null)
-		{
-			return;
-		}
+		if(residence == null)
+		{ return; }
 
 		actor.getStat().removeFuncsByOwner(residence);
 	}

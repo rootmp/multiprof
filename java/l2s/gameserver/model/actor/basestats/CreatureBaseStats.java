@@ -197,21 +197,21 @@ public class CreatureBaseStats
 
 	public double getCollisionRadius()
 	{
-		if (getOwner().isVisualTransformed() && getOwner().getVisualTransform().getCollisionRadius() > 0)
+		if(getOwner().isVisualTransformed() && getOwner().getVisualTransform().getCollisionRadius() > 0)
 			return getOwner().getVisualTransform().getCollisionRadius();
 		return getOwner().getTemplate().getCollisionRadius();
 	}
 
 	public double getCollisionHeight()
 	{
-		if (getOwner().isVisualTransformed() && getOwner().getVisualTransform().getCollisionHeight() > 0)
+		if(getOwner().isVisualTransformed() && getOwner().getVisualTransform().getCollisionHeight() > 0)
 			return getOwner().getVisualTransform().getCollisionHeight();
 		return getOwner().getTemplate().getCollisionHeight();
 	}
 
 	public WeaponType getAttackType()
 	{
-		if (getOwner().getActiveWeaponTemplate() != null)
+		if(getOwner().getActiveWeaponTemplate() != null)
 			return getOwner().getActiveWeaponTemplate().getItemType();
 
 		return getOwner().getTemplate().getBaseAttackType();

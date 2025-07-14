@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.Arrays;
 
 import gnu.trove.map.TIntObjectMap;
@@ -29,22 +30,22 @@ public class RequestPledgeCrestLarge implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (_crestId == 0)
+		if(_crestId == 0)
 			return;
 
-		if (_pledgeId == 0)
+		if(_pledgeId == 0)
 			return;
 
 		TIntObjectMap<byte[]> data = CrestCache.getInstance().getPledgeCrestLarge(_crestId);
-		if (data != null)
+		if(data != null)
 		{
 			int totalSize = CrestCache.getByteMapSize(data);
 			int[] keys = data.keys();
 			Arrays.sort(keys);
-			for (int key : keys)
+			for(int key : keys)
 				client.sendPacket(new ExPledgeEmblem(_pledgeId, _crestId, key, totalSize, data.get(key)));
 		}
 	}

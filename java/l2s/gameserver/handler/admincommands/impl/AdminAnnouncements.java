@@ -42,10 +42,10 @@ public class AdminAnnouncements implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanAnnounce)
+		if(!activeChar.getPlayerAccess().CanAnnounce)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_list_announcements:
 				listAnnouncements(activeChar);
@@ -55,29 +55,28 @@ public class AdminAnnouncements implements IAdminCommandHandler
 				listAnnouncements(activeChar);
 				break;
 			case admin_announce_announcements:
-				for (Player player : GameObjectsStorage.getPlayers(false, false))
+				for(Player player : GameObjectsStorage.getPlayers(false, false))
 					Announcements.getInstance().showAnnouncements(player);
 				listAnnouncements(activeChar);
 				break;
 			case admin_add_announcement:
-				if (wordList.length < 3)
+				if(wordList.length < 3)
 					return false;
 				try
 				{
 					int time = Integer.parseInt(wordList[1]);
 					StringBuilder builder = new StringBuilder();
-					for (int i = 2; i < wordList.length; i++)
+					for(int i = 2; i < wordList.length; i++)
 						builder.append(" ").append(wordList[i]);
 
 					Announcements.getInstance().addAnnouncement(time, builder.toString(), true);
 					listAnnouncements(activeChar);
 				}
-				catch (Exception e)
-				{
-				}
+				catch(Exception e)
+				{}
 				break;
 			case admin_del_announcement:
-				if (wordList.length != 2)
+				if(wordList.length != 2)
 					return false;
 				int val = Integer.parseInt(wordList[1]);
 				Announcements.getInstance().delAnnouncement(val);
@@ -91,18 +90,19 @@ public class AdminAnnouncements implements IAdminCommandHandler
 				break;
 			case admin_crit_announce:
 			case admin_c:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 					return false;
-				Announcements.announceToAll(activeChar.getName() + ": " + fullString.replaceFirst("admin_crit_announce ", "").replaceFirst("admin_c ", ""), ChatType.CRITICAL_ANNOUNCE);
+				Announcements.announceToAll(activeChar.getName() + ": "
+						+ fullString.replaceFirst("admin_crit_announce ", "").replaceFirst("admin_c ", ""), ChatType.CRITICAL_ANNOUNCE);
 				break;
 			case admin_toscreen:
 			case admin_s:
-				if (wordList.length < 2)
+				if(wordList.length < 2)
 					return false;
 				String text = activeChar.getName() + ": " + fullString.replaceFirst("admin_toscreen ", "").replaceFirst("admin_s ", "");
 				int time = 3000 + text.length() * 100; // 3 секунды + 100мс на символ
 				ExShowScreenMessage sm = new ExShowScreenMessage(text, time, ScreenMessageAlign.TOP_CENTER, text.length() < 64);
-				for (Player player : GameObjectsStorage.getPlayers(false, false))
+				for(Player player : GameObjectsStorage.getPlayers(false, false))
 					player.sendPacket(sm);
 				break;
 			case admin_reload_announcements:
@@ -139,11 +139,13 @@ public class AdminAnnouncements implements IAdminCommandHandler
 		replyMSG.append("</td></tr></table></center>");
 		replyMSG.append("<br>");
 
-		for (int i = 0; i < announcements.size(); i++)
+		for(int i = 0; i < announcements.size(); i++)
 		{
 			Announcements.Announce announce = announcements.get(i);
-			replyMSG.append("<table width=260><tr><td width=180>" + announce.getAnnounce() + "</td><td width=40>" + announce.getTime() + "</td><<td width=40>");
-			replyMSG.append("<button value=\"Delete\" action=\"bypass -h admin_del_announcement " + i + "\" width=60 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr></table>");
+			replyMSG.append("<table width=260><tr><td width=180>" + announce.getAnnounce() + "</td><td width=40>" + announce.getTime()
+					+ "</td><<td width=40>");
+			replyMSG.append("<button value=\"Delete\" action=\"bypass -h admin_del_announcement " + i
+					+ "\" width=60 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr></table>");
 		}
 
 		replyMSG.append("</body></html>");

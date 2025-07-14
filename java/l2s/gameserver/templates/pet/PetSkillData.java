@@ -37,13 +37,13 @@ public class PetSkillData
 	public int getLevel(int petLevel)
 	{
 		// TODO: Избавиться от хардкода.
-		if (_level <= 0 || _correctLevel)
+		if(_level <= 0 || _correctLevel)
 		{
 			int level = 0;
-			if (petLevel < 70)
+			if(petLevel < 70)
 			{
 				level = petLevel / 10;
-				if (level <= 0)
+				if(level <= 0)
 					level = 1;
 			}
 			else
@@ -51,7 +51,7 @@ public class PetSkillData
 
 			// formula usable for skill that have 10 or more skill levels
 			Skill skill = SkillHolder.getInstance().getSkill(getId(), 1);
-			if (skill == null)
+			if(skill == null)
 				return 0;
 
 			return Math.min(level, skill.getMaxLevel());

@@ -18,11 +18,11 @@ public class ConditionPlayerClanLeaderOnline extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return !_value;
 
 		Clan clan = env.character.getPlayer().getClan();
-		if (clan == null)
+		if(clan == null)
 			return !_value;
 
 		return clan.getLeader().isOnline() == _value;

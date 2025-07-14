@@ -38,14 +38,14 @@ public class GameTimeController
 		msg.append("Current time is ");
 		msg.append(getGameHour()).append(":");
 
-		if (getGameMin() < 10)
+		if(getGameMin() < 10)
 		{
 			msg.append("0");
 		}
 
 		msg.append(getGameMin());
 		msg.append(" in the ");
-		if (isNowNight())
+		if(isNowNight())
 		{
 			msg.append("night");
 		}
@@ -58,7 +58,7 @@ public class GameTimeController
 		final long oneGameHourInMillis = 60 * TICKS_PER_SECOND * 1000L;
 		long hourStart = 0;
 
-		while (_gameStartTime + hourStart < System.currentTimeMillis())
+		while(_gameStartTime + hourStart < System.currentTimeMillis())
 		{
 			hourStart += oneGameHourInMillis;
 		}
@@ -157,9 +157,9 @@ public class GameTimeController
 			getInstance().getListenerEngine().onChangeHour(hour, _onStart);
 
 			boolean dayTimeChanged = false;
-			if (_onStart)
+			if(_onStart)
 			{
-				if (isNowNight(hour))
+				if(isNowNight(hour))
 				{
 					getInstance().getListenerEngine().onNight(_onStart);
 				}
@@ -171,22 +171,22 @@ public class GameTimeController
 			}
 			else
 			{
-				if (hour == NIGHT_START_HOUR)
+				if(hour == NIGHT_START_HOUR)
 				{
 					getInstance().getListenerEngine().onNight(_onStart);
 					dayTimeChanged = true;
 				}
-				else if (hour == DAY_START_HOUR)
+				else if(hour == DAY_START_HOUR)
 				{
 					getInstance().getListenerEngine().onDay(_onStart);
 					dayTimeChanged = true;
 				}
 			}
 
-			if (dayTimeChanged)
+			if(dayTimeChanged)
 			{
 				ClientSetTimePacket packet = new ClientSetTimePacket();
-				for (Player player : GameObjectsStorage.getPlayers(false, false))
+				for(Player player : GameObjectsStorage.getPlayers(false, false))
 				{
 					player.checkDayNightMessages();
 					player.sendPacket(packet);
@@ -199,9 +199,9 @@ public class GameTimeController
 	{
 		public void onChangeHour(int hour, boolean onStart)
 		{
-			for (Listener<GameServer> listener : getListeners())
+			for(Listener<GameServer> listener : getListeners())
 			{
-				if (OnGameHourChangeListener.class.isInstance(listener))
+				if(OnGameHourChangeListener.class.isInstance(listener))
 				{
 					((OnGameHourChangeListener) listener).onChangeHour(hour, onStart);
 				}
@@ -210,9 +210,9 @@ public class GameTimeController
 
 		public void onDay(boolean onStart)
 		{
-			for (Listener<GameServer> listener : getListeners())
+			for(Listener<GameServer> listener : getListeners())
 			{
-				if (OnDayNightChangeListener.class.isInstance(listener))
+				if(OnDayNightChangeListener.class.isInstance(listener))
 				{
 					((OnDayNightChangeListener) listener).onDay(onStart);
 				}
@@ -221,18 +221,18 @@ public class GameTimeController
 
 		public void onNight(boolean onStart)
 		{
-			for (Listener<GameServer> listener : getListeners())
+			for(Listener<GameServer> listener : getListeners())
 			{
-				if (OnDayNightChangeListener.class.isInstance(listener))
+				if(OnDayNightChangeListener.class.isInstance(listener))
 				{
 					((OnDayNightChangeListener) listener).onNight(onStart);
 				}
 			}
 		}
 	}
-	
+
 	private static final GameTimeController _instance = new GameTimeController();
-	
+
 	public static final GameTimeController getInstance()
 	{
 		return _instance;

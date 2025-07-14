@@ -21,13 +21,14 @@ public class ExMercenaryCastlewarCastleSiegeHudInfo implements IClientOutgoingPa
 		castleId = castleSiegeEvent.getResidence().getId();
 		status = castleSiegeEvent.isInProgress() ? IN_PROGRESS_STATUS : (!castleSiegeEvent.isRegistrationOver() ? PREPARE_STATUS : DONE_STATUS);
 		currentTime = (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
-		if (status == PREPARE_STATUS)
+		if(status == PREPARE_STATUS)
 		{
 			prepareLeftTime = (int) TimeUnit.MILLISECONDS.toSeconds(castleSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis());
 		}
-		else if (status == IN_PROGRESS_STATUS)
+		else if(status == IN_PROGRESS_STATUS)
 		{
-			prepareLeftTime = (int) (TimeUnit.MINUTES.toSeconds(60) + (int) TimeUnit.MILLISECONDS.toSeconds(castleSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis()));
+			prepareLeftTime = (int) (TimeUnit.MINUTES.toSeconds(60)
+					+ (int) TimeUnit.MILLISECONDS.toSeconds(castleSiegeEvent.getSiegeDate().getTimeInMillis() - System.currentTimeMillis()));
 		}
 		else
 		{

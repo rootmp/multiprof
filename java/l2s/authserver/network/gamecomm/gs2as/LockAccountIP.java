@@ -46,7 +46,7 @@ public class LockAccountIP extends ReceivablePacket
 			statement.executeUpdate();
 			DbUtils.closeQuietly(statement);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Failed to lock/unlock account: " + e.getMessage());
 		}

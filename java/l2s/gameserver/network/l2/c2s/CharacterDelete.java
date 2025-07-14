@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,13 +31,13 @@ public class CharacterDelete implements IClientIncomingPacket
 	{
 		int clan = clanStatus(client);
 		int online = onlineStatus(client);
-		if (clan > 0 || online > 0)
+		if(clan > 0 || online > 0)
 		{
-			if (clan == 2)
+			if(clan == 2)
 				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_CLAN_LEADERS_MAY_NOT_BE_DELETED));
-			else if (clan == 1)
+			else if(clan == 1)
 				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER));
-			else if (online > 0)
+			else if(online > 0)
 				client.sendPacket(new CharacterDeleteFailPacket(CharacterDeleteFailPacket.REASON_DELETION_FAILED));
 
 			CharacterSelectionInfoPacket cl = new CharacterSelectionInfoPacket(client);
@@ -47,12 +48,12 @@ public class CharacterDelete implements IClientIncomingPacket
 
 		try
 		{
-			if (Config.CHARACTER_DELETE_AFTER_HOURS == 0)
+			if(Config.CHARACTER_DELETE_AFTER_HOURS == 0)
 				client.deleteChar(_charSlot);
 			else
 				client.markToDeleteChar(_charSlot);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error:", e);
 		}
@@ -67,11 +68,11 @@ public class CharacterDelete implements IClientIncomingPacket
 	private int clanStatus(GameClient client)
 	{
 		int obj = client.getObjectIdForSlot(_charSlot);
-		if (obj == -1)
+		if(obj == -1)
 			return 0;
-		if (MySqlDataInsert.simple_get_int("clanid", "characters", "obj_Id=" + obj) > 0)
+		if(MySqlDataInsert.simple_get_int("clanid", "characters", "obj_Id=" + obj) > 0)
 		{
-			if (MySqlDataInsert.simple_get_int("leader_id", "clan_subpledges", "leader_id=" + obj + " AND type = " + Clan.SUBUNIT_MAIN_CLAN) > 0)
+			if(MySqlDataInsert.simple_get_int("leader_id", "clan_subpledges", "leader_id=" + obj + " AND type = " + Clan.SUBUNIT_MAIN_CLAN) > 0)
 				return 2;
 			return 1;
 		}
@@ -81,9 +82,9 @@ public class CharacterDelete implements IClientIncomingPacket
 	private int onlineStatus(GameClient client)
 	{
 		int obj = client.getObjectIdForSlot(_charSlot);
-		if (obj == -1)
+		if(obj == -1)
 			return 0;
-		if (MySqlDataInsert.simple_get_int("online", "characters", "obj_Id=" + obj) > 0)
+		if(MySqlDataInsert.simple_get_int("online", "characters", "obj_Id=" + obj) > 0)
 			return 1;
 		return 0;
 	}

@@ -20,26 +20,26 @@ public class ManaDam extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isDead())
+		if(target.isDead())
 			return;
 
 		final int magicLevel = getMagicLevel() == 0 ? activeChar.getLevel() : getMagicLevel();
 		final int landRate = Rnd.get(30, 100) * target.getLevel() / magicLevel;
 
-		if (Rnd.chance(landRate))
+		if(Rnd.chance(landRate))
 		{
 			double mAtk = activeChar.getMAtk(target, this);
 
-			if (isSSPossible())
+			if(isSSPossible())
 				mAtk *= ((100 + activeChar.getChargedSpiritshotPower()) / 100.);
 
 			double mDef = Math.max(1., target.getMDef(activeChar, this));
-			if (mDef < 1.)
+			if(mDef < 1.)
 				mDef = 1.;
 
 			double damage = Math.sqrt(mAtk) * this.getPower() * (target.getMaxMp() / 97) / mDef;
 
-			if (Formulas.calcMCrit(activeChar, target, this))
+			if(Formulas.calcMCrit(activeChar, target, this))
 			{
 				activeChar.sendPacket(SystemMsg.MAGIC_CRITICAL_HIT);
 				damage *= 1 + activeChar.getStat().getMul(Stats.MAGIC_CRITICAL_DMG, target, this);

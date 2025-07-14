@@ -19,13 +19,13 @@ public class PcRefund extends ItemContainer
 	protected void onAddItem(ItemInstance item)
 	{
 		item.setLocation(ItemLocation.VOID);
-		if (item.getJdbcState().isPersisted())
+		if(item.getJdbcState().isPersisted())
 		{
 			item.setJdbcState(JdbcEntityState.UPDATED);
 			item.update();
 		}
 
-		if (_items.size() > 12) // FIXME [G1ta0] хардкод, достойны конфига
+		if(_items.size() > 12) // FIXME [G1ta0] хардкод, достойны конфига
 		{
 			destroyItem(_items.remove(0));
 		}

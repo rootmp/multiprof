@@ -13,8 +13,7 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 {
 
 	public ExPkPenaltyListOnlyLoc()
-	{
-	}
+	{}
 
 	@Override
 	public boolean write(PacketWriter packetWriter)
@@ -23,13 +22,13 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 		Collection<Player> players = GameObjectsStorage.getPlayers(false, false);
 		TIntSet _pks = new TIntHashSet();
 		int count = 0;
-		for (Player player : players)
+		for(Player player : players)
 		{
-			if ((player.getKarma() < -5760) && !player.isInPeaceZone() && (player.getReflection().getId() == 0))
+			if((player.getKarma() < -5760) && !player.isInPeaceZone() && (player.getReflection().getId() == 0))
 			{
 				count++;
 				_pks.add(player.getObjectId());
-				if (count == 30)
+				if(count == 30)
 				{
 					break;
 				}
@@ -37,10 +36,10 @@ public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
 		}
 
 		packetWriter.writeD(count);
-		if (count > 0)
+		if(count > 0)
 		{
 			int[] ids = _pks.toArray();
-			for (int id : ids)
+			for(int id : ids)
 			{
 				packetWriter.writeD(id);
 				packetWriter.writeD(GameObjectsStorage.getPlayer(id).getX());

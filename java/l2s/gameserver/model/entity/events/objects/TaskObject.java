@@ -28,7 +28,7 @@ public class TaskObject
 		@Override
 		public void run()
 		{
-			for (EventAction action : _actions)
+			for(EventAction action : _actions)
 				action.call(_event);
 		}
 	}
@@ -55,13 +55,13 @@ public class TaskObject
 	public ScheduledFuture<?> schedule(Event event)
 	{
 		ScheduledFuture<?> task;
-		if (_fixedRate)
+		if(_fixedRate)
 			task = ThreadPoolManager.getInstance().scheduleAtFixedRate(new Task(event), _initialDelay, _delay);
 		else
 			task = ThreadPoolManager.getInstance().schedule(new Task(event), _delay);
 
 		List<ScheduledFuture<?>> tasks = _scheduledTasks.get(event);
-		if (tasks == null)
+		if(tasks == null)
 		{
 			tasks = new ArrayList<ScheduledFuture<?>>();
 			_scheduledTasks.put(event, tasks);
@@ -74,9 +74,9 @@ public class TaskObject
 	public boolean cancel(Event event)
 	{
 		List<ScheduledFuture<?>> tasks = _scheduledTasks.remove(event);
-		if (tasks != null)
+		if(tasks != null)
 		{
-			for (ScheduledFuture<?> task : tasks)
+			for(ScheduledFuture<?> task : tasks)
 			{
 				task.cancel(false);
 			}
@@ -89,9 +89,9 @@ public class TaskObject
 	public boolean cancel(Event event, ScheduledFuture<?> task)
 	{
 		List<ScheduledFuture<?>> tasks = _scheduledTasks.remove(event);
-		if (tasks != null)
+		if(tasks != null)
 		{
-			if (tasks.remove(task))
+			if(tasks.remove(task))
 			{
 				task.cancel(false);
 				return true;

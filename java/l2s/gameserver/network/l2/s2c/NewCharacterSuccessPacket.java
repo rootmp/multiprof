@@ -1,9 +1,9 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.data.xml.holder.PlayerTemplateHolder;
 import l2s.gameserver.model.base.ClassId;
 import l2s.gameserver.model.base.ClassLevel;
@@ -16,9 +16,9 @@ public class NewCharacterSuccessPacket implements IClientOutgoingPacket
 
 	public NewCharacterSuccessPacket()
 	{
-		for (ClassId classId : ClassId.VALUES)
+		for(ClassId classId : ClassId.VALUES)
 		{
-			if (classId.isOfLevel(ClassLevel.NONE))
+			if(classId.isOfLevel(ClassLevel.NONE))
 				_chars.add(classId);
 		}
 	}
@@ -28,7 +28,7 @@ public class NewCharacterSuccessPacket implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_chars.size());
 
-		for (ClassId temp : _chars)
+		for(ClassId temp : _chars)
 		{
 			/* На оффе статты атрибутов у М и Ж одинаковы. */
 			PlayerTemplate template = PlayerTemplateHolder.getInstance().getPlayerTemplate(temp.getRace(), temp, Sex.MALE);

@@ -27,7 +27,7 @@ public class ChatUtils
 		int ry = MapUtils.regionY(activeObject);
 		if(activeChar.getVarBoolean("blockChatSpam"))
 			return;
-		
+
 		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
 			if(player == activeChar || player.isBlockAll())
@@ -54,18 +54,19 @@ public class ChatUtils
 					player.sendPacket(cs);
 		}
 	}
-	
+
 	public static void sayInvParty(Player activeChar, IBroadcastPacket cs)
 	{
 		if(activeChar.getVarBoolean("blockChatSpam"))
 			return;
-		
+
 		GameObject activeObject = activeChar.getObservePoint();
 		if(activeObject == null)
 			activeObject = activeChar;
 
 		sayInvParty(activeChar, activeObject, World.getAroundObservers(activeObject), Config.CHAT_RANGE, cs);
 	}
+
 	private static void sayInvParty(Player activeChar, GameObject activeObject, Iterable<Player> players, int range, IBroadcastPacket cs)
 	{
 		for(Player player : players)
@@ -87,6 +88,7 @@ public class ChatUtils
 			}
 		}
 	}
+
 	private static void say(Player activeChar, GameObject activeObject, Iterable<Player> players, int range, SayPacket2 cs)
 	{
 		for(Player player : players)
@@ -110,11 +112,10 @@ public class ChatUtils
 		}
 	}
 
-
 	public static void say(Player activeChar, SayPacket2 cs, Predicate<Player> predicate)
 	{
 		GameObject activeObject = activeChar.getObservePoint();
-		if (activeObject == null)
+		if(activeObject == null)
 			activeObject = activeChar;
 
 		say(activeChar, activeObject, World.getAroundObservers(activeObject, predicate), Config.CHAT_RANGE, cs);
@@ -128,7 +129,7 @@ public class ChatUtils
 	public static void say(Player activeChar, Iterable<Player> players, SayPacket2 cs)
 	{
 		GameObject activeObject = activeChar.getObservePoint();
-		if (activeObject == null)
+		if(activeObject == null)
 			activeObject = activeChar;
 
 		say(activeChar, activeObject, players, Config.CHAT_RANGE, cs);
@@ -137,7 +138,7 @@ public class ChatUtils
 	public static void say(Player activeChar, int range, SayPacket2 cs)
 	{
 		GameObject activeObject = activeChar.getObservePoint();
-		if (activeObject == null)
+		if(activeObject == null)
 			activeObject = activeChar;
 
 		say(activeChar, activeObject, World.getAroundObservers(activeObject), range, cs);
@@ -146,38 +147,38 @@ public class ChatUtils
 	public static void shout(Player activeChar, IBroadcastPacket cs, Predicate<Player> predicate)
 	{
 		GameObject activeObject = activeChar.getObservePoint();
-		if (activeObject == null)
+		if(activeObject == null)
 			activeObject = activeChar;
 
 		int rx = MapUtils.regionX(activeObject);
 		int ry = MapUtils.regionY(activeObject);
 
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
-			if (player == activeChar || player.isBlockAll())
+			if(player == activeChar || player.isBlockAll())
 				continue;
 
-			if (player.canSeeAllShouts() && !player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+			if(player.canSeeAllShouts() && !player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
 			{
 				player.sendPacket(cs);
 				continue;
 			}
 
-			if (predicate != null && !predicate.test(player))
+			if(predicate != null && !predicate.test(player))
 				continue;
 
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
-			if (activeObject.getReflection() != obj.getReflection())
+			if(activeObject.getReflection() != obj.getReflection())
 				continue;
 
 			int tx = MapUtils.regionX(obj) - rx;
 			int ty = MapUtils.regionY(obj) - ry;
 
-			if (tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeObject.isInRangeZ(obj, Config.CHAT_RANGE))
-				if (!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+			if(tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeObject.isInRangeZ(obj, Config.CHAT_RANGE))
+				if(!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
 					player.sendPacket(cs);
 		}
 	}
@@ -189,15 +190,15 @@ public class ChatUtils
 
 	public static void announce(Player activeChar, IBroadcastPacket cs, Predicate<Player> predicate)
 	{
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
-			if (player == activeChar || player.isBlockAll())
+			if(player == activeChar || player.isBlockAll())
 				continue;
 
-			if (predicate != null && !predicate.test(player))
+			if(predicate != null && !predicate.test(player))
 				continue;
 
-			if (!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
+			if(!player.getBlockList().contains(activeChar) && activeChar.canTalkWith(player))
 				player.sendPacket(cs);
 		}
 	}
@@ -209,7 +210,7 @@ public class ChatUtils
 
 	public static void chat(NpcInstance activeChar, ChatType type, NpcString npcString, String... params)
 	{
-		switch (type)
+		switch(type)
 		{
 			case ALL:
 			case NPC_ALL:
@@ -224,14 +225,14 @@ public class ChatUtils
 
 	public static void say(NpcInstance activeChar, Iterable<Player> players, int range, NSPacket cs)
 	{
-		for (Player player : players)
+		for(Player player : players)
 		{
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
 			// Персонаж находится рядом с наблюдателем или точкой наблюдения
-			if (activeChar.isInRangeZ(obj, range))
+			if(activeChar.isInRangeZ(obj, range))
 				player.sendPacket(cs);
 		}
 	}
@@ -266,19 +267,19 @@ public class ChatUtils
 		int rx = MapUtils.regionX(activeChar);
 		int ry = MapUtils.regionY(activeChar);
 
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
-			if (activeChar.getReflection() != obj.getReflection())
+			if(activeChar.getReflection() != obj.getReflection())
 				continue;
 
 			int tx = MapUtils.regionX(obj) - rx;
 			int ty = MapUtils.regionY(obj) - ry;
 
-			if (tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeChar.isInRangeZ(obj, Config.CHAT_RANGE))
+			if(tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeChar.isInRangeZ(obj, Config.CHAT_RANGE))
 				player.sendPacket(cs);
 		}
 	}
@@ -290,14 +291,14 @@ public class ChatUtils
 
 	public static void say(NpcInstance activeChar, Iterable<Player> players, int range, CustomMessage cm)
 	{
-		for (Player player : players)
+		for(Player player : players)
 		{
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
 			// Персонаж находится рядом с наблюдателем или точкой наблюдения
-			if (activeChar.isInRangeZ(obj, range))
+			if(activeChar.isInRangeZ(obj, range))
 				player.sendPacket(new NSPacket(activeChar, ChatType.NPC_SHOUT, cm.toString(player)));
 		}
 	}
@@ -322,19 +323,19 @@ public class ChatUtils
 		int rx = MapUtils.regionX(activeChar);
 		int ry = MapUtils.regionY(activeChar);
 
-		for (Player player : GameObjectsStorage.getPlayers(false, false))
+		for(Player player : GameObjectsStorage.getPlayers(false, false))
 		{
 			GameObject obj = player.getObservePoint();
-			if (obj == null)
+			if(obj == null)
 				obj = player;
 
-			if (activeChar.getReflection() != obj.getReflection())
+			if(activeChar.getReflection() != obj.getReflection())
 				continue;
 
 			int tx = MapUtils.regionX(obj) - rx;
 			int ty = MapUtils.regionY(obj) - ry;
 
-			if (tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeChar.isInRangeZ(obj, Config.CHAT_RANGE))
+			if(tx * tx + ty * ty <= Config.SHOUT_SQUARE_OFFSET || activeChar.isInRangeZ(obj, Config.CHAT_RANGE))
 				player.sendPacket(new NSPacket(activeChar, ChatType.NPC_SHOUT, cm.toString(player)));
 		}
 	}

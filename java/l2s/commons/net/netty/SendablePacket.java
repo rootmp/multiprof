@@ -12,7 +12,8 @@ import io.netty.buffer.ByteBuf;
  */
 public abstract class SendablePacket
 {
-  private final Logger logger = LoggerFactory.getLogger(ReceivablePacket.class);
+	private final Logger logger = LoggerFactory.getLogger(ReceivablePacket.class);
+
 	protected abstract byte getOpCode();
 
 	public ByteBuf write(ByteBuf byteBuf)
@@ -24,7 +25,7 @@ public abstract class SendablePacket
 		}
 		catch(RuntimeException e)
 		{
-			logger.error("Can't write buffer."+e);
+			logger.error("Can't write buffer." + e);
 			throw new RuntimeException("Can't write buffer.", e);
 		}
 	}

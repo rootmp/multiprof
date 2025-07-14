@@ -19,7 +19,7 @@ public class ReflectionBossInstance extends RaidBossInstance
 	{
 		super.onDeath(killer);
 
-		if (clearReflectionOnDeath())
+		if(clearReflectionOnDeath())
 			clearReflection();
 	}
 
@@ -34,7 +34,7 @@ public class ReflectionBossInstance extends RaidBossInstance
 	protected void clearReflection()
 	{
 		Reflection reflection = getReflection();
-		if (!reflection.isDefault())
+		if(!reflection.isDefault())
 			reflection.startCollapseTimer(COLLAPSE_AFTER_DEATH_TIME, true);
 	}
 

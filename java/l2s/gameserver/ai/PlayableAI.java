@@ -99,7 +99,7 @@ public class PlayableAI extends CharacterAI
 	public boolean setNextIntention()
 	{
 		final AINextAction nextAction = _nextAction;
-		if (nextAction == null)
+		if(nextAction == null)
 			return false;
 
 		final Object nextAction_arg0 = _nextAction_arg0;
@@ -109,23 +109,24 @@ public class PlayableAI extends CharacterAI
 
 		final Playable actor = getActor();
 
-		if (nextAction == AINextAction.CAST)
+		if(nextAction == AINextAction.CAST)
 		{
 			final SkillEntry skillEntry = (SkillEntry) nextAction_arg0;
-			if (actor.isActionsDisabled(false) || actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow() || !skillEntry.getTemplate().isDouble()))
+			if(actor.isActionsDisabled(false) || actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow()
+					&& (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow() || !skillEntry.getTemplate().isDouble()))
 				return false;
 		}
-		else if (actor.isActionsDisabled())
+		else if(actor.isActionsDisabled())
 			return false;
 
 		SkillEntry skillEntry;
 		Creature target;
 		GameObject object;
 
-		switch (nextAction)
+		switch(nextAction)
 		{
 			case ATTACK:
-				if (nextAction_arg0 == null)
+				if(nextAction_arg0 == null)
 					return false;
 				target = (Creature) nextAction_arg0;
 				_forceUse = nextAction_arg2;
@@ -134,16 +135,16 @@ public class PlayableAI extends CharacterAI
 				setIntention(AI_INTENTION_ATTACK, target);
 				break;
 			case CAST:
-				if (nextAction_arg0 == null || nextAction_arg1 == null)
+				if(nextAction_arg0 == null || nextAction_arg1 == null)
 					return false;
 				skillEntry = (SkillEntry) nextAction_arg0;
 				target = (Creature) nextAction_arg1;
 				_forceUse = nextAction_arg2;
 				_dontMove = nextAction_arg3;
 				clearNextAction();
-				if (!skillEntry.checkCondition(actor, target, _forceUse, _dontMove, true))
+				if(!skillEntry.checkCondition(actor, target, _forceUse, _dontMove, true))
 				{
-					if (target.isAutoAttackable(actor) && skillEntry.getTemplate().getNextAction() == NextAction.ATTACK && !actor.equals(target))
+					if(target.isAutoAttackable(actor) && skillEntry.getTemplate().getNextAction() == NextAction.ATTACK && !actor.equals(target))
 					{
 						setNextAction(AINextAction.ATTACK, target, null, _forceUse, false);
 						return setNextIntention();
@@ -153,7 +154,7 @@ public class PlayableAI extends CharacterAI
 				setIntention(AI_INTENTION_CAST, skillEntry, target);
 				break;
 			case MOVE:
-				if (nextAction_arg0 == null || nextAction_arg1 == null)
+				if(nextAction_arg0 == null || nextAction_arg1 == null)
 					return false;
 				final Location loc = (Location) nextAction_arg0;
 				final Integer offset = (Integer) nextAction_arg1;
@@ -164,33 +165,33 @@ public class PlayableAI extends CharacterAI
 				actor.sitDown(null);
 				break;
 			case INTERACT:
-				if (nextAction_arg0 == null)
+				if(nextAction_arg0 == null)
 					return false;
 				object = (GameObject) nextAction_arg0;
 				clearNextAction();
 				onIntentionInteract(object);
 				break;
 			case PICKUP:
-				if (nextAction_arg0 == null)
+				if(nextAction_arg0 == null)
 					return false;
 				object = (GameObject) nextAction_arg0;
 				clearNextAction();
 				onIntentionPickUp(object);
 				break;
 			case EQUIP:
-				if (!(nextAction_arg0 instanceof ItemInstance))
+				if(!(nextAction_arg0 instanceof ItemInstance))
 					return false;
 				final ItemInstance item = (ItemInstance) nextAction_arg0;
-				if (item.isEquipable())
+				if(item.isEquipable())
 				{
 					actor.useItem(item, nextAction_arg2, nextAction_arg3);
 				}
 				clearNextAction();
-				if (getIntention() == AI_INTENTION_ATTACK) // autoattack not aborted
+				if(getIntention() == AI_INTENTION_ATTACK) // autoattack not aborted
 					return false;
 				break;
 			case COUPLE_ACTION:
-				if (nextAction_arg0 == null || nextAction_arg1 == null)
+				if(nextAction_arg0 == null || nextAction_arg1 == null)
 					return false;
 				target = (Creature) nextAction_arg0;
 				final int socialId = (Integer) nextAction_arg1;
@@ -224,17 +225,16 @@ public class PlayableAI extends CharacterAI
 	@Override
 	public Object[] getNextActionArgs()
 	{
-		return new Object[]
-		{
-			_nextAction_arg0,
-			_nextAction_arg1
+		return new Object[] {
+				_nextAction_arg0,
+				_nextAction_arg1
 		};
 	}
 
 	@Override
 	protected void onEvtFinishCasting(Skill skill, Creature target, boolean success)
 	{
-		if (!setNextIntention())
+		if(!setNextIntention())
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 		}
@@ -243,7 +243,7 @@ public class PlayableAI extends CharacterAI
 	@Override
 	protected void onEvtReadyToAct()
 	{
-		if (!setNextIntention())
+		if(!setNextIntention())
 		{
 			onEvtThink();
 		}
@@ -252,25 +252,25 @@ public class PlayableAI extends CharacterAI
 	@Override
 	protected void onEvtArrived()
 	{
-		if (!setNextIntention())
+		if(!setNextIntention())
 		{
-			if (getIntention() == AI_INTENTION_ATTACK)
+			if(getIntention() == AI_INTENTION_ATTACK)
 			{
 				thinkAttack(true);
 			}
-			else if (getIntention() == AI_INTENTION_CAST)
+			else if(getIntention() == AI_INTENTION_CAST)
 			{
 				thinkCast(true);
 			}
-			else if (getIntention() == AI_INTENTION_INTERACT)
+			else if(getIntention() == AI_INTENTION_INTERACT)
 			{
 				thinkInteract(true);
 			}
-			else if (getIntention() == AI_INTENTION_FOLLOW)
+			else if(getIntention() == AI_INTENTION_FOLLOW)
 			{
 				thinkFollow();
 			}
-			else if (getIntention() == AI_INTENTION_PICK_UP)
+			else if(getIntention() == AI_INTENTION_PICK_UP)
 			{
 				onEvtThink();
 			}
@@ -284,7 +284,7 @@ public class PlayableAI extends CharacterAI
 	@Override
 	protected void onEvtArrivedTarget()
 	{
-		switch (getIntention())
+		switch(getIntention())
 		{
 			case AI_INTENTION_ATTACK:
 				thinkAttack(true);
@@ -310,20 +310,21 @@ public class PlayableAI extends CharacterAI
 		final Playable actor = getActor();
 		final CtrlIntention intention = getIntention();
 
-		if (intention == AI_INTENTION_CAST)
+		if(intention == AI_INTENTION_CAST)
 		{
-			if (actor.isActionsDisabled(false) || actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow()))
+			if(actor.isActionsDisabled(false) || actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow()
+					&& (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow()))
 				return;
 		}
-		else if (actor.isActionsDisabled())
+		else if(actor.isActionsDisabled())
 			return;
 
 		try
 		{
-			if (thinking++ > 1)
+			if(thinking++ > 1)
 				return;
 
-			switch (intention)
+			switch(intention)
 			{
 				case AI_INTENTION_ACTIVE:
 					thinkActive();
@@ -348,7 +349,7 @@ public class PlayableAI extends CharacterAI
 					break;
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("", e);
 		}
@@ -371,26 +372,26 @@ public class PlayableAI extends CharacterAI
 		final int offset = _intention_arg1 instanceof Integer ? (Integer) _intention_arg1 : -1;
 
 		// Находимся слишком далеко цели, либо цель не пригодна для следования
-		if (target == null || actor.getDistance(target) > 4000 || offset == -1 || actor.getReflection() != target.getReflection())
+		if(target == null || actor.getDistance(target) > 4000 || offset == -1 || actor.getReflection() != target.getReflection())
 		{
 			clientActionFailed();
 			return;
 		}
 
 		// Уже следуем за этой целью
-		if (actor.getMovement().isFollow() && actor.getMovement().getFollowTarget() == target)
+		if(actor.getMovement().isFollow() && actor.getMovement().getFollowTarget() == target)
 		{
 			clientActionFailed();
 			return;
 		}
 
 		// Находимся достаточно близко или не можем двигаться - побежим потом ?
-		if (actor.isInRange(target, offset + 16) || actor.isMovementDisabled())
+		if(actor.isInRange(target, offset + 16) || actor.isMovementDisabled())
 		{
 			clientActionFailed();
 		}
 
-		if (_followTask != null)
+		if(_followTask != null)
 		{
 			_followTask.cancel(false);
 			_followTask = null;
@@ -406,32 +407,32 @@ public class PlayableAI extends CharacterAI
 		{
 			final Playable actor = getActor();
 
-			if (getIntention() != AI_INTENTION_FOLLOW)
+			if(getIntention() != AI_INTENTION_FOLLOW)
 			{
 				// Если пет прекратил преследование, меняем статус, чтобы не пришлось щелкать на
 				// кнопку следования 2 раза.
-				if (actor.isServitor() && getIntention() == AI_INTENTION_ACTIVE)
+				if(actor.isServitor() && getIntention() == AI_INTENTION_ACTIVE)
 				{
 					((Servitor) actor).setFollowMode(false);
 				}
 				return;
 			}
 
-			if (!(_intention_arg0 instanceof Creature))
+			if(!(_intention_arg0 instanceof Creature))
 			{
 				setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 				return;
 			}
 
 			final Creature target = (Creature) _intention_arg0;
-			if (actor.getDistance(target) > 4000 || actor.getReflection() != target.getReflection())
+			if(actor.getDistance(target) > 4000 || actor.getReflection() != target.getReflection())
 			{
 				setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 				return;
 			}
 
 			final Player player = actor.getPlayer();
-			if (player == null || player.isLogoutStarted() || actor.isServitor() && !player.isMyServitor(actor.getObjectId()))
+			if(player == null || player.isLogoutStarted() || actor.isServitor() && !player.isMyServitor(actor.getObjectId()))
 			{
 				setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
 				return;
@@ -439,12 +440,13 @@ public class PlayableAI extends CharacterAI
 
 			final int offset = _intention_arg1 instanceof Integer ? (Integer) _intention_arg1 : 0;
 
-			if (!actor.isAfraid() && !actor.isInRange(target, offset + 16) && (!actor.getMovement().isFollow() || actor.getMovement().getFollowTarget() != target))
+			if(!actor.isAfraid() && !actor.isInRange(target, offset + 16)
+					&& (!actor.getMovement().isFollow() || actor.getMovement().getFollowTarget() != target))
 			{
-				if (actor.isServitor()) // Заглушка чтобы саммоны не бегали кучей.
+				if(actor.isServitor()) // Заглушка чтобы саммоны не бегали кучей.
 				{
 					final int servitorsCount = actor.getPlayer().getServitorsCount();
-					if (servitorsCount > 1)
+					if(servitorsCount > 1)
 					{
 						final int frontMaxRadius = 6000;
 						final int heading = target.getHeading();
@@ -458,7 +460,7 @@ public class PlayableAI extends CharacterAI
 						actor.getMovement().followToCharacter(target, offset, false);
 					}
 				}
-				else if (actor instanceof FakePlayer)
+				else if(actor instanceof FakePlayer)
 				{
 					final Location loc = new Location(target.getX() + 30, target.getY() + 30, target.getZ());
 					actor.getMovement().followToCharacter(loc, target, offset, false);
@@ -493,11 +495,11 @@ public class PlayableAI extends CharacterAI
 		@Override
 		public void run()
 		{
-			if (_loc != null)
+			if(_loc != null)
 			{
 				_actor.getMovement().moveToLocation(_loc, _range, true, false, false);
 			}
-			else if (_target.isDoor())
+			else if(_target.isDoor())
 			{
 				_actor.getMovement().moveToLocation(_target.getLoc(), 32, true, false, false);
 			}
@@ -513,7 +515,7 @@ public class PlayableAI extends CharacterAI
 	{
 		final Playable actor = getActor();
 
-		if (actor.isActionsDisabled())
+		if(actor.isActionsDisabled())
 		{
 			setNextAction(AINextAction.INTERACT, object, null, false, false);
 			clientActionFailed();
@@ -538,7 +540,7 @@ public class PlayableAI extends CharacterAI
 	{
 		final Playable actor = getActor();
 
-		if (actor.isActionsDisabled())
+		if(actor.isActionsDisabled())
 		{
 			actor.sendActionFailed();
 			return;
@@ -546,16 +548,16 @@ public class PlayableAI extends CharacterAI
 
 		final GameObject target = (GameObject) _intention_arg0;
 
-		if (target == null)
+		if(target == null)
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			return;
 		}
 
 		final int range = actor.getInteractionDistance(target);
-		if (actor.isInRangeZ(target, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
+		if(actor.isInRangeZ(target, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
 				((Player) actor).doInteract(target);
 			}
@@ -573,7 +575,7 @@ public class PlayableAI extends CharacterAI
 	{
 		final Playable actor = getActor();
 
-		if (actor.isActionsDisabled())
+		if(actor.isActionsDisabled())
 		{
 			setNextAction(AINextAction.PICKUP, object, null, false, false);
 			clientActionFailed();
@@ -591,15 +593,15 @@ public class PlayableAI extends CharacterAI
 
 		final GameObject target = (GameObject) _intention_arg0;
 
-		if (target == null)
+		if(target == null)
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			return;
 		}
 
-		if (actor.isInRange(target, 30) && Math.abs(actor.getZ() - target.getZ()) < 50)
+		if(actor.isInRange(target, 30) && Math.abs(actor.getZ() - target.getZ()) < 50)
 		{
-			if (actor.isPlayer() || actor.isPet())
+			if(actor.isPlayer() || actor.isPet())
 			{
 				actor.doPickupItem(target);
 			}
@@ -607,8 +609,7 @@ public class PlayableAI extends CharacterAI
 		}
 		else
 		{
-			ThreadPoolManager.getInstance().execute(() ->
-			{
+			ThreadPoolManager.getInstance().execute(() -> {
 				actor.getMovement().moveToLocation(target.getLoc(), 10, false);
 				setNextAction(AINextAction.PICKUP, target, null, false, false);
 			});
@@ -620,13 +621,13 @@ public class PlayableAI extends CharacterAI
 		final Playable actor = getActor();
 
 		final Player player = actor.getPlayer();
-		if (player == null)
+		if(player == null)
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			return;
 		}
 
-		if (actor.isActionsDisabled() || actor.isAttackingDisabled())
+		if(actor.isActionsDisabled() || actor.isAttackingDisabled())
 		{
 			actor.sendActionFailed();
 			return;
@@ -635,7 +636,8 @@ public class PlayableAI extends CharacterAI
 		final boolean isPosessed = actor.isServitor() && ((Servitor) actor).isDepressed();
 
 		final Creature attack_target = getAttackTarget();
-		if (attack_target == null || attack_target.isDead() || !isPosessed && !(_forceUse ? attack_target.isAttackable(actor) : attack_target.isAutoAttackable(actor)))
+		if(attack_target == null || attack_target.isDead()
+				|| !isPosessed && !(_forceUse ? attack_target.isAttackable(actor) : attack_target.isAutoAttackable(actor)))
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
@@ -643,24 +645,24 @@ public class PlayableAI extends CharacterAI
 		}
 
 		final int range = Math.max(10, actor.getPhysicalAttackRange()) + (int) actor.getMinDistance(attack_target);
-		if (!actor.isInRangeZ(attack_target, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
+		if(!actor.isInRangeZ(attack_target, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
 		{
-			if (_dontMove)
+			if(_dontMove)
 			{
 				actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 				setIntention(AI_INTENTION_ACTIVE);
 				actor.sendActionFailed();
 			}
-			else if (!actor.getMovement().followToCharacter(attack_target, range, false))
+			else if(!actor.getMovement().followToCharacter(attack_target, range, false))
 			{
 				actor.getMovement().moveToLocation(attack_target.getLoc(), range, true, false, false);
 			}
 			return;
 		}
 
-		if (!GeoEngine.canSeeTarget(actor, attack_target))
+		if(!GeoEngine.canSeeTarget(actor, attack_target))
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
 				actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 				setIntention(AI_INTENTION_ACTIVE);
@@ -668,9 +670,9 @@ public class PlayableAI extends CharacterAI
 			}
 			else
 			{
-				if (!actor.getMovement().followToCharacter(attack_target, range, false))
+				if(!actor.getMovement().followToCharacter(attack_target, range, false))
 				{
-					if (!actor.getMovement().moveToLocation(attack_target.getLoc(), range, true, false, false))
+					if(!actor.getMovement().moveToLocation(attack_target.getLoc(), range, true, false, false))
 					{
 						setIntention(AI_INTENTION_ACTIVE);
 						actor.sendActionFailed();
@@ -687,7 +689,7 @@ public class PlayableAI extends CharacterAI
 	protected boolean thinkCast(boolean arrived)
 	{
 		final Playable actor = getActor();
-		if (_skillEntry == null)
+		if(_skillEntry == null)
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
@@ -697,16 +699,16 @@ public class PlayableAI extends CharacterAI
 		final Creature target = getCastTarget();
 		final Skill skill = _skillEntry.getTemplate();
 
-		if (skill.getSkillType() == SkillType.CRAFT || (skill.isToggle() && skill.getHitTime() <= 0))
+		if(skill.getSkillType() == SkillType.CRAFT || (skill.isToggle() && skill.getHitTime() <= 0))
 		{
-			if (skill.checkCondition(_skillEntry, actor, target, _forceUse, _dontMove, true))
+			if(skill.checkCondition(_skillEntry, actor, target, _forceUse, _dontMove, true))
 			{
 				actor.doCast(_skillEntry, target, _forceUse);
 			}
 			return true;
 		}
 
-		if (target == null)
+		if(target == null)
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
@@ -714,7 +716,7 @@ public class PlayableAI extends CharacterAI
 		}
 
 		final boolean isCorpseSkill = skill.isCorpse() || skill.getTargetType() == SkillTargetType.TARGET_AREA_AIM_CORPSE;
-		if (target.isDead() != isCorpseSkill && !skill.isNotTargetAoE())
+		if(target.isDead() != isCorpseSkill && !skill.isNotTargetAoE())
 		{
 			setIntention(AI_INTENTION_ACTIVE);
 			actor.sendActionFailed();
@@ -724,12 +726,12 @@ public class PlayableAI extends CharacterAI
 		final boolean isGroundSkill = skill.getTargetType() == SkillTargetType.TARGET_GROUND;
 
 		Location targetLoc = target.getLoc();
-		if (isGroundSkill)
+		if(isGroundSkill)
 		{
-			if (actor.isPlayer())
+			if(actor.isPlayer())
 			{
 				final Location groundLoc = actor.getPlayer().getGroundSkillLoc();
-				if ((groundLoc == null) && (skill.getId() != 47001))
+				if((groundLoc == null) && (skill.getId() != 47001))
 				{
 					setIntention(AI_INTENTION_ACTIVE);
 					actor.sendActionFailed();
@@ -747,19 +749,19 @@ public class PlayableAI extends CharacterAI
 		}
 
 		final boolean noRangeSkill = skill.getCastRange() == -1 || skill.getCastRange() == -2;
-		if (!noRangeSkill)
+		if(!noRangeSkill)
 		{
 			int range = Math.max(10, actor.getMagicalAttackRange(skill));
-			if (!isGroundSkill)
+			if(!isGroundSkill)
 			{
 				range += actor.getMinDistance(target);
 			}
 
-			if (!actor.isInRangeZ(targetLoc, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
+			if(!actor.isInRangeZ(targetLoc, range + ((arrived || actor.isMovementDisabled()) ? 32 : 16)))
 			{
-				if (_dontMove)
+				if(_dontMove)
 				{
-					if (!isGroundSkill)
+					if(!isGroundSkill)
 					{
 						actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 					}
@@ -767,19 +769,20 @@ public class PlayableAI extends CharacterAI
 					setIntention(AI_INTENTION_ACTIVE);
 					actor.sendActionFailed();
 				}
-				else if (isGroundSkill || !actor.getMovement().followToCharacter(target, range, false))
+				else if(isGroundSkill || !actor.getMovement().followToCharacter(target, range, false))
 				{
 					actor.getMovement().moveToLocation(targetLoc, range, true, false, false);
 				}
 				return false;
 			}
 
-			final boolean canSee = isGroundSkill || skill.getSkillType() == SkillType.TAKECASTLE || skill.getSkillType() == SkillType.TAKEFORTRESS || GeoEngine.canSeeTarget(actor, target);
-			if (!canSee)
+			final boolean canSee = isGroundSkill || skill.getSkillType() == SkillType.TAKECASTLE || skill.getSkillType() == SkillType.TAKEFORTRESS
+					|| GeoEngine.canSeeTarget(actor, target);
+			if(!canSee)
 			{
-				if (actor.isPlayer())
+				if(actor.isPlayer())
 				{
-					if (!isGroundSkill)
+					if(!isGroundSkill)
 					{
 						actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 					}
@@ -789,9 +792,9 @@ public class PlayableAI extends CharacterAI
 				}
 				else
 				{
-					if (!actor.getMovement().followToCharacter(target, range, false))
+					if(!actor.getMovement().followToCharacter(target, range, false))
 					{
-						if (!actor.getMovement().moveToLocation(targetLoc, range, true, false, false))
+						if(!actor.getMovement().moveToLocation(targetLoc, range, true, false, false))
 						{
 							setIntention(AI_INTENTION_ACTIVE);
 							actor.sendActionFailed();
@@ -801,12 +804,13 @@ public class PlayableAI extends CharacterAI
 				return false;
 			}
 		}
-		else if (skill.getCastRange() == -1)
+		else if(skill.getCastRange() == -1)
 		{
-			final boolean canSee = isGroundSkill || skill.getSkillType() == SkillType.TAKECASTLE || skill.getSkillType() == SkillType.TAKEFORTRESS || GeoEngine.canSeeTarget(actor, target);
-			if (!canSee)
+			final boolean canSee = isGroundSkill || skill.getSkillType() == SkillType.TAKECASTLE || skill.getSkillType() == SkillType.TAKEFORTRESS
+					|| GeoEngine.canSeeTarget(actor, target);
+			if(!canSee)
 			{
-				if (!isGroundSkill)
+				if(!isGroundSkill)
 				{
 					actor.sendPacket(SystemMsg.CANNOT_SEE_TARGET);
 				}
@@ -817,20 +821,20 @@ public class PlayableAI extends CharacterAI
 			}
 		}
 
-		if (actor.isFakeDeath())
+		if(actor.isFakeDeath())
 		{
 			actor.breakFakeDeath();
 		}
 
 		// Если скилл имеет следующее действие, назначим это действие после окончания
 		// действия скилла
-		if (target.isAutoAttackable(actor))
+		if(target.isAutoAttackable(actor))
 		{
-			if (skill.getNextAction() == NextAction.ATTACK && !actor.equals(target))
+			if(skill.getNextAction() == NextAction.ATTACK && !actor.equals(target))
 			{
 				setNextAction(AINextAction.ATTACK, target, null, _forceUse, false);
 			}
-			else if (skill.getNextAction() == NextAction.CAST && !actor.equals(target))
+			else if(skill.getNextAction() == NextAction.CAST && !actor.equals(target))
 			{
 				setNextAction(AINextAction.CAST, _skillEntry, target, false, _dontMove);
 			}
@@ -844,7 +848,7 @@ public class PlayableAI extends CharacterAI
 			clearNextAction();
 		}
 
-		if (skill.checkCondition(_skillEntry, actor, target, _forceUse, _dontMove, true))
+		if(skill.checkCondition(_skillEntry, actor, target, _forceUse, _dontMove, true))
 		{
 			clientStopMoving();
 			actor.doCast(_skillEntry, target, _forceUse);
@@ -853,7 +857,7 @@ public class PlayableAI extends CharacterAI
 		else
 		{
 			setNextIntention();
-			if (getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
+			if(getIntention() == CtrlIntention.AI_INTENTION_ATTACK)
 			{
 				thinkAttack(true);
 			}
@@ -885,7 +889,7 @@ public class PlayableAI extends CharacterAI
 	{
 		final Playable actor = getActor();
 
-		if (target.isCreature() && (actor.isActionsDisabled() || actor.isAttackingDisabled()))
+		if(target.isCreature() && (actor.isActionsDisabled() || actor.isAttackingDisabled()))
 		{
 			// Если не можем атаковать, то атаковать позже
 			setNextAction(AINextAction.ATTACK, target, null, forceUse, false);
@@ -905,24 +909,24 @@ public class PlayableAI extends CharacterAI
 		final Playable actor = getActor();
 		final Skill skill = skillEntry.getTemplate();
 
-		if (skill.isCanUseWhileAbnormal() && (actor.isStunned() || actor.isSleeping() || actor.isDecontrolled() || actor.isFrozen())) // trying
-																																		// to
-																																		// use
-																																		// without
-																																		// making
-																																		// the
-																																		// skills
-																																		// alt
-																																		// or
-																																		// handler
-																																		// for
-																																		// 11093
+		if(skill.isCanUseWhileAbnormal() && (actor.isStunned() || actor.isSleeping() || actor.isDecontrolled() || actor.isFrozen())) // trying
+		// to
+		// use
+		// without
+		// making
+		// the
+		// skills
+		// alt
+		// or
+		// handler
+		// for
+		// 11093
 		{
 			actor.altUseSkill(skillEntry, target);
 			return true;
 		}
 
-		if (actor.getAbnormalList().contains(1570))
+		if(actor.getAbnormalList().contains(1570))
 		{
 			clientActionFailed();
 			return false;
@@ -932,15 +936,16 @@ public class PlayableAI extends CharacterAI
 		// то он может использоваться во время каста других скиллов, или во время атаки,
 		// или на бегу.
 		// Поэтому пропускаем дополнительные проверки.
-		if ((skill.isToggle() && skill.getHitTime() <= 0))
+		if((skill.isToggle() && skill.getHitTime() <= 0))
 		{
-			if (skill.isToggle() && !skill.checkCondition(skillEntry, actor, target, forceUse, dontMove, true))
+			if(skill.isToggle() && !skill.checkCondition(skillEntry, actor, target, forceUse, dontMove, true))
 			{
 				clientActionFailed();
 				return false;
 			}
 
-			if (skill.isToggle() && !skill.isCanUseWhileAbnormal() && (actor.isStunned() || actor.isSleeping() || actor.isDecontrolled() || actor.isFrozen()))
+			if(skill.isToggle() && !skill.isCanUseWhileAbnormal()
+					&& (actor.isStunned() || actor.isSleeping() || actor.isDecontrolled() || actor.isFrozen()))
 			{
 				clientActionFailed();
 				return false;
@@ -951,10 +956,12 @@ public class PlayableAI extends CharacterAI
 		}
 
 		// Если не можем кастовать, то использовать скилл позже
-		if (actor.isActionsDisabled(false) || (actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (skill.getId() != 47001) && (skill.getId() != 47020)) && (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow() || !skill.isDouble()))
+		if(actor.isActionsDisabled(false)
+				|| (actor.getSkillCast(SkillCastingType.NORMAL).isCastingNow() && (skill.getId() != 47001) && (skill.getId() != 47020))
+						&& (!actor.isDualCastEnable() || actor.getSkillCast(SkillCastingType.NORMAL_SECOND).isCastingNow() || !skill.isDouble()))
 		{
 			// if(!actor.isSkillDisabled(skill.getId()))
-			if (!skill.isHandler())
+			if(!skill.isHandler())
 			{
 				setNextAction(AINextAction.CAST, skillEntry, target, forceUse, dontMove);
 				clientActionFailed();

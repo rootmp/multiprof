@@ -23,16 +23,18 @@ public class RelicsCollectionTemplate
 		relics_collection_name = relic.getString("relics_collection_name");
 		option_id = relic.getInteger("option_id");
 		option_filter = relic.getString("option_filter");
-		
+
 		need_relics = new ArrayList<>();
 		Pattern pattern = Pattern.compile("\\{(\\d+);(\\d+)\\}");
 		Matcher matcher = pattern.matcher(relic.getString("need_relics"));
 
-		while (matcher.find()) 
+		while(matcher.find())
 		{
 			int id = Integer.parseInt(matcher.group(1));
 			int unk = Integer.parseInt(matcher.group(2));//enchant?
-			need_relics.add(new int[] {id, unk});
+			need_relics.add(new int[] {
+					id, unk
+			});
 		}
 	}
 

@@ -4,14 +4,12 @@ import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
-
 public class ExEnchantSkillInfoDetailPacket implements IClientOutgoingPacket
 {
 	private final int _skillId;
 	private final int _skillLevel;
 	private final int _skillSubLevel;
 
-	
 	public ExEnchantSkillInfoDetailPacket(int type, int skillId, int skillLevel, int skillSubLevel, Player player)
 	{
 		_skillId = skillId;
@@ -19,6 +17,7 @@ public class ExEnchantSkillInfoDetailPacket implements IClientOutgoingPacket
 		_skillSubLevel = skillSubLevel;
 
 	}
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

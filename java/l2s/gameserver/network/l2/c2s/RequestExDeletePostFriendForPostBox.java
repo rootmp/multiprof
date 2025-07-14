@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.StringUtils;
 import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.pair.IntObjectPair;
@@ -29,21 +30,21 @@ public class RequestExDeletePostFriendForPostBox implements IClientIncomingPacke
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (StringUtils.isEmpty(_name))
+		if(StringUtils.isEmpty(_name))
 			return;
 
 		int key = 0;
 		IntObjectMap<String> postFriends = player.getPostFriends();
-		for (IntObjectPair<String> entry : postFriends.entrySet())
+		for(IntObjectPair<String> entry : postFriends.entrySet())
 		{
-			if (entry.getValue().equalsIgnoreCase(_name))
+			if(entry.getValue().equalsIgnoreCase(_name))
 				key = entry.getKey();
 		}
 
-		if (key == 0)
+		if(key == 0)
 		{
 			player.sendPacket(SystemMsg.THE_NAME_IS_NOT_CURRENTLY_REGISTERED);
 			return;

@@ -51,7 +51,7 @@ public final class BaseStatsBonus
 
 	public double get(BaseStats stat)
 	{
-		switch (stat)
+		switch(stat)
 		{
 			case STR:
 				return _str;

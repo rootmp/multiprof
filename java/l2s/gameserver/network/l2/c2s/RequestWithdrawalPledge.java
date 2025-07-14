@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.apache.commons.lang3.StringUtils;
 
 import l2s.commons.network.PacketReader;
@@ -23,34 +24,34 @@ public class RequestWithdrawalPledge implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		// is the guy in a clan ?
-		if (activeChar.getClanId() == 0)
+		if(activeChar.getClanId() == 0)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isInCombat())
+		if(activeChar.isInCombat())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_LEAVE_A_CLAN_WHILE_ENGAGED_IN_COMBAT);
 			return;
 		}
 
 		Clan clan = activeChar.getClan();
-		if (clan == null)
+		if(clan == null)
 			return;
 
 		UnitMember member = clan.getAnyMember(activeChar.getObjectId());
-		if (member == null)
+		if(member == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (member.isClanLeader())
+		if(member.isClanLeader())
 		{
 			activeChar.sendMessage("A clan leader may not be dismissed.");
 			return;
@@ -62,7 +63,7 @@ public class RequestWithdrawalPledge implements IClientIncomingPacket
 
 		clan.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.S1_HAS_WITHDRAWN_FROM_THE_CLAN).addString(activeChar.getName()), new PledgeShowMemberListDeletePacket(activeChar.getName()));
 
-		if (subUnitType == Clan.SUBUNIT_ACADEMY)
+		if(subUnitType == Clan.SUBUNIT_ACADEMY)
 			activeChar.setLvlJoinedAcademy(0);
 
 		activeChar.setClan(null);

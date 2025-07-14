@@ -6,11 +6,10 @@ import l2s.gameserver.model.Player;
 import l2s.gameserver.network.l2.GameClient;
 import l2s.gameserver.utils.PositionUtils;
 
-
 public class MoveToWard implements IClientIncomingPacket
 {
 	private int _h;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -24,18 +23,18 @@ public class MoveToWard implements IClientIncomingPacket
 		Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
+
 		if(player.isOutOfControl() || player.isActionBlocked("move"))
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		double angle = PositionUtils.convertHeadingToDegree(_h); 
-		double radian = Math.toRadians(angle - 90); 
+		double angle = PositionUtils.convertHeadingToDegree(_h);
+		double radian = Math.toRadians(angle - 90);
 		double range = player.getMoveSpeed();
 		Location loc = new Location((int) (player.getX() - range * Math.sin(radian)), (int) (player.getY() + range * Math.cos(radian)), player.getZ());
-		
+
 		player.getMovement().moveWithKeyboard(loc);
 	}
 }

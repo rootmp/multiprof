@@ -2,14 +2,13 @@ package l2s.gameserver.data.xml.holder;
 
 import java.io.File;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.gameserver.model.LimitedShopContainer;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.base.LimitedShopEntry;
 import l2s.gameserver.network.l2.components.CustomMessage;
 import l2s.gameserver.network.l2.s2c.ExPurchaseLimitShopItemListNew;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author nexvill
@@ -37,7 +36,7 @@ public class LimitedShopHolder extends AbstractHolder
 
 	public void addLimitedShopContainer(int id, LimitedShopContainer list)
 	{
-		if (_entries.containsKey(id))
+		if(_entries.containsKey(id))
 			_log.warn("Limited Shop redefined: " + id);
 
 		list.setListId(id);
@@ -62,7 +61,7 @@ public class LimitedShopHolder extends AbstractHolder
 	public void SeparateAndSend(int listId, Player player)
 	{
 		LimitedShopContainer list = getList(listId);
-		if (list == null)
+		if(list == null)
 		{
 			player.sendMessage(new CustomMessage("common.Disabled"));
 			return;
@@ -83,7 +82,7 @@ public class LimitedShopHolder extends AbstractHolder
 		// РїРѕРґРјРµРЅРёР»Рё
 		player.setLimitedShop(list);
 
-		for (LimitedShopEntry e : list.getEntries())
+		for(LimitedShopEntry e : list.getEntries())
 		{
 			temp.addEntry(e);
 		}
@@ -96,7 +95,7 @@ public class LimitedShopHolder extends AbstractHolder
 		LimitedShopContainer list = new LimitedShopContainer();
 		list.setListId(container.getListId());
 
-		for (LimitedShopEntry origEntry : container.getEntries())
+		for(LimitedShopEntry origEntry : container.getEntries())
 		{
 			LimitedShopEntry ent = origEntry.clone();
 

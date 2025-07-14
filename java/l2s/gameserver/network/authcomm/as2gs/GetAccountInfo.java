@@ -48,20 +48,20 @@ public class GetAccountInfo extends ReceivablePacket
 			statement = con.prepareStatement("SELECT deletetime FROM characters WHERE account_name=?");
 			statement.setString(1, _account);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				playerSize++;
 				int d = rset.getInt("deletetime");
-				if (d > 0)
+				if(d > 0)
 				{
-					if (deleteChars.isEmpty())
+					if(deleteChars.isEmpty())
 						deleteChars = new ArrayIntList(3);
 
 					deleteChars.add(d + Config.CHARACTER_DELETE_AFTER_HOURS * 60 * 60);
 				}
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("GetAccountInfo:runImpl():" + e, e);
 		}

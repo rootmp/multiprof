@@ -37,31 +37,32 @@ public class i_call_skill extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (_skillEntry == null)
+		if(_skillEntry == null)
 			return;
 
 		SkillEntry tempSkillEntry = _skillEntry;
 		Skill skill = tempSkillEntry.getTemplate();
 		Creature aimTarget = skill.getAimingTarget(effector, effected);
-		if (aimTarget != null && _maxIncreaseLevel > 0)
+		if(aimTarget != null && _maxIncreaseLevel > 0)
 		{
 			Skill hasSkill = null;
-			for (Abnormal effect : aimTarget.getAbnormalList())
+			for(Abnormal effect : aimTarget.getAbnormalList())
 			{
-				if (effect.getSkill().getId() == skill.getId())
+				if(effect.getSkill().getId() == skill.getId())
 				{
 					hasSkill = effect.getSkill(); // taking the first one only.
 					break;
 				}
 			}
 
-			if (hasSkill == null)
+			if(hasSkill == null)
 			{
-				loop: for (Servitor servitor : aimTarget.getServitors())
+				loop:
+				for(Servitor servitor : aimTarget.getServitors())
 				{
-					for (Abnormal effect : servitor.getAbnormalList())
+					for(Abnormal effect : servitor.getAbnormalList())
 					{
-						if (effect.getSkill().getId() == skill.getId())
+						if(effect.getSkill().getId() == skill.getId())
 						{
 							hasSkill = effect.getSkill(); // taking the first one only.
 							break loop;
@@ -70,10 +71,10 @@ public class i_call_skill extends i_abstract_effect
 				}
 			}
 
-			if (hasSkill != null)
+			if(hasSkill != null)
 			{
 				Skill newSkill = SkillHolder.getInstance().getSkill(skill.getId(), Math.min(_maxIncreaseLevel, hasSkill.getLevel() + 1));
-				if (newSkill != null)
+				if(newSkill != null)
 					skill = newSkill;
 				else
 					skill = hasSkill;
@@ -81,18 +82,18 @@ public class i_call_skill extends i_abstract_effect
 			}
 		}
 
-		if (skill.getReuseDelay() > 0 && effector.isSkillDisabled(skill))
+		if(skill.getReuseDelay() > 0 && effector.isSkillDisabled(skill))
 			return;
 
-		if (tempSkillEntry.checkCondition(effector, aimTarget, true, true, true, false, true))
+		if(tempSkillEntry.checkCondition(effector, aimTarget, true, true, true, false, true))
 		{
 			Set<Creature> targets = skill.getTargets(tempSkillEntry, effector, aimTarget, false);
 
-			if (!skill.isNotBroadcastable() && !effector.isCastingNow())
+			if(!skill.isNotBroadcastable() && !effector.isCastingNow())
 			{
-				for (Creature cha : targets)
+				for(Creature cha : targets)
 				{
-					if (cha != null)
+					if(cha != null)
 						effector.broadcastPacket(new MagicSkillUse(effector, cha, skill.getDisplayId(), skill.getDisplayLevel(), 0, 0));
 				}
 			}

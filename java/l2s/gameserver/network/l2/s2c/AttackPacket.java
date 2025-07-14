@@ -34,21 +34,21 @@ public class AttackPacket implements IClientOutgoingPacket
 			_targetId = target.getObjectId();
 			_damage = damage;
 
-			if (miss)
+			if(miss)
 			{
 				_flags = HITFLAG_MISS;
 				return;
 			}
 
-			if (_soulshot)
+			if(_soulshot)
 			{
 				_flags = HITFLAG_USESS;
 			}
-			if (crit)
+			if(crit)
 			{
 				_flags |= HITFLAG_CRIT;
 			}
-			if (shld)
+			if(shld)
 			{
 				_flags |= HITFLAG_SHLD;
 			}
@@ -111,7 +111,7 @@ public class AttackPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_y);
 		packetWriter.writeD(_z);
 		packetWriter.writeH(hits.length - 1);
-		for (int i = 1; i < hits.length; i++)
+		for(int i = 1; i < hits.length; i++)
 		{
 			packetWriter.writeD(hits[i]._targetId);
 			packetWriter.writeD(hits[i]._damage);

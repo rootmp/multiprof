@@ -76,9 +76,9 @@ public class PrivateStoreHistoryManager
 
 		synchronized (history)
 		{
-			for (PrivateStoreHistoryItem historyItem : history)
+			for(PrivateStoreHistoryItem historyItem : history)
 			{
-				if (historyItem.getStoreType() != STORE_TYPE_SELL)
+				if(historyItem.getStoreType() != STORE_TYPE_SELL)
 					continue;
 
 				PrivateStoreHistoryItem item = new PrivateStoreHistoryItem(historyItem);
@@ -106,7 +106,7 @@ public class PrivateStoreHistoryManager
 	public void addHistory(int storeType, TradeItem tradeItem)
 	{
 		PrivateStoreHistoryItem historyItem = new PrivateStoreHistoryItem(tradeItem, storeType, (int) TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
-		if (PrivateStoreHistoryDAO.getInstance().insert(historyItem))
+		if(PrivateStoreHistoryDAO.getInstance().insert(historyItem))
 		{
 			synchronized (history)
 			{

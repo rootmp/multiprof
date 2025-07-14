@@ -31,30 +31,30 @@ public class SynthesisData
 		public int bless;
 		@DoubleValue(withoutName = true)
 		public double chance;
-		
+
 		public int getId()
 		{
-			return id;   
+			return id;
 		}
 
 		public long getCount()
 		{
-			return count;  
+			return count;
 		}
 
 		public int getEnchant()
 		{
-			return enchant;   
+			return enchant;
 		}
-		
+
 		public double getChance()
 		{
-			return chance;  
+			return chance;
 		}
-		
+
 		public void setChance(double chance)
 		{
-			this.chance = chance;  
+			this.chance = chance;
 		}
 	}
 

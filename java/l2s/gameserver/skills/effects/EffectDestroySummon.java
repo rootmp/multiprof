@@ -16,7 +16,7 @@ public final class EffectDestroySummon extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isSummon())
+		if(!effected.isSummon())
 			return false;
 		return true;
 	}

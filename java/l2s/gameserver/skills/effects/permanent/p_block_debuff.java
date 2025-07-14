@@ -40,16 +40,16 @@ public final class p_block_debuff extends EffectHandler
 		@Override
 		public boolean checkDebuffImmunity(Abnormal abnormal, Creature effector, Creature effected)
 		{
-			if (_maxDebuffsDisabled > 0)
+			if(_maxDebuffsDisabled > 0)
 			{
 				_disabledDebuffs++;
 
-				if (effected.isPlayer() && effected.getPlayer().isGM())
+				if(effected.isPlayer() && effected.getPlayer().isGM())
 					effected.sendMessage("DebuffImmunity: disabled_debuffs: " + _disabledDebuffs + " max_disabled_debuffs: " + _maxDebuffsDisabled);
-				if (_disabledDebuffs >= _maxDebuffsDisabled)
+				if(_disabledDebuffs >= _maxDebuffsDisabled)
 				{
 					effected.getAbnormalList().stop(getSkill(), false);
-					if (effected.isPlayer() && effected.getPlayer().isGM())
+					if(effected.isPlayer() && effected.getPlayer().isGM())
 						effected.sendMessage("DebuffImmunity: All disabled. Abnormal canceled.");
 				}
 			}

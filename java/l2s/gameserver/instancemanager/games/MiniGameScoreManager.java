@@ -37,7 +37,7 @@ public class MiniGameScoreManager
 
 	private MiniGameScoreManager()
 	{
-		if (Config.EX_JAPAN_MINIGAME)
+		if(Config.EX_JAPAN_MINIGAME)
 			load();
 	}
 
@@ -51,7 +51,7 @@ public class MiniGameScoreManager
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
 			rset = statement.executeQuery("SELECT characters.char_name AS name, character_minigame_score.score AS score FROM characters, character_minigame_score WHERE characters.obj_Id=character_minigame_score.object_id");
-			while (rset.next())
+			while(rset.next())
 			{
 				String name = rset.getString("name");
 				int score = rset.getInt("score");
@@ -59,7 +59,7 @@ public class MiniGameScoreManager
 				addScore(name, score);
 			}
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.info("Exception: " + e, e);
 		}
@@ -71,7 +71,7 @@ public class MiniGameScoreManager
 
 	public void insertScore(Player player, int score)
 	{
-		if (addScore(player.getName(), score))
+		if(addScore(player.getName(), score))
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -83,7 +83,7 @@ public class MiniGameScoreManager
 				statement.setInt(2, score);
 				statement.execute();
 			}
-			catch (final Exception e)
+			catch(final Exception e)
 			{
 				_log.info("Exception: " + e, e);
 			}
@@ -97,7 +97,7 @@ public class MiniGameScoreManager
 	public boolean addScore(String name, int score)
 	{
 		Set<String> set = _scores.get(score);
-		if (set == null)
+		if(set == null)
 			_scores.put(score, (set = new CopyOnWriteArraySet<String>()));
 
 		return set.add(name);

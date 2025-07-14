@@ -36,9 +36,9 @@ public final class EffectTemplate extends StatTemplate
 		_name = set.getString("name", "");
 
 		boolean instant = getParams().getBool("instant", _name.startsWith("i_"));
-		if (instant)
+		if(instant)
 		{
-			switch (useType)
+			switch(useType)
 			{
 				case SELF:
 					useType = EffectUseType.SELF_INSTANT;
@@ -74,7 +74,7 @@ public final class EffectTemplate extends StatTemplate
 
 	public EffectHandler getHandler()
 	{
-		if (_handler == null)
+		if(_handler == null)
 		{
 			_handler = EffectHandlerHolder.getInstance().makeHandler(_name, this);
 		}

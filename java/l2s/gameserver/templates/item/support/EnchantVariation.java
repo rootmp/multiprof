@@ -54,7 +54,7 @@ public class EnchantVariation
 		{
 			System.out.println("getChallengeItemCount not implemented yet.");
 			return 0;
-			    
+
 		}
 	}
 
@@ -75,7 +75,7 @@ public class EnchantVariation
 
 	public void addLevel(EnchantLevel level)
 	{
-		if (_maxLvl < level.getLevel())
+		if(_maxLvl < level.getLevel())
 			_maxLvl = level.getLevel();
 
 		_levels.put(level.getLevel(), level);
@@ -83,7 +83,7 @@ public class EnchantVariation
 
 	public EnchantLevel getLevel(int lvl)
 	{
-		if (lvl > _maxLvl)
+		if(lvl > _maxLvl)
 			return _levels.get(_maxLvl);
 		return _levels.get(lvl);
 	}

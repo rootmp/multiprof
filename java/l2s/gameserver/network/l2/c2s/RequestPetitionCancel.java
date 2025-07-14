@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.instancemanager.PetitionManager;
@@ -35,19 +36,19 @@ public final class RequestPetitionCancel implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
-		if (PetitionManager.getInstance().isPlayerInConsultation(activeChar))
+		if(PetitionManager.getInstance().isPlayerInConsultation(activeChar))
 		{
-			if (activeChar.isGM())
+			if(activeChar.isGM())
 				PetitionManager.getInstance().endActivePetition(activeChar);
 			else
 				activeChar.sendPacket(SystemMsg.YOUR_PETITION_IS_BEING_PROCESSED);
 		}
-		else if (PetitionManager.getInstance().isPlayerPetitionPending(activeChar))
+		else if(PetitionManager.getInstance().isPlayerPetitionPending(activeChar))
 		{
-			if (PetitionManager.getInstance().cancelActivePetition(activeChar))
+			if(PetitionManager.getInstance().cancelActivePetition(activeChar))
 			{
 				int numRemaining = Config.MAX_PETITIONS_PER_PLAYER - PetitionManager.getInstance().getPlayerTotalPetitionCount(activeChar);
 

@@ -24,9 +24,9 @@ public class HellboundOpenTask extends AutomaticTask
 	{
 		super();
 		LocalDateTime now = LocalDateTime.now(ZoneId.systemDefault());
-		if (now.getDayOfWeek() == DayOfWeek.SATURDAY)
+		if(now.getDayOfWeek() == DayOfWeek.SATURDAY)
 		{
-			if ((now.getHour() >= 10) && now.getHour() <= 22)
+			if((now.getHour() >= 10) && now.getHour() <= 22)
 			{
 				ServerVariables.set("hellbound_open", true);
 				ReflectionUtils.getZone("[hellbound_debuff]").setActive(false);

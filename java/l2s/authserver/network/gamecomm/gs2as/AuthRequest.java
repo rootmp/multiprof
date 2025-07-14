@@ -31,10 +31,8 @@ public class AuthRequest extends ReceivablePacket
 	protected boolean readImpl()
 	{
 		_protocolVersion = readD();
-		if (_protocolVersion != AuthServer.AUTH_SERVER_PROTOCOL)
-		{
-			return true;
-		}
+		if(_protocolVersion != AuthServer.AUTH_SERVER_PROTOCOL)
+		{ return true; }
 
 		_serverType = readD();
 		_ageLimit = readD();
@@ -45,7 +43,7 @@ public class AuthRequest extends ReceivablePacket
 
 		int hostsCount = readC();
 		_hosts = new HostInfo[hostsCount];
-		for (int i = 0; i < hostsCount; i++)
+		for(int i = 0; i < hostsCount; i++)
 		{
 			int id = readC();
 			String address = readS();
@@ -53,7 +51,7 @@ public class AuthRequest extends ReceivablePacket
 			String key = readS();
 			int maskCount = readC();
 			HostInfo host = new HostInfo(id, address, port, key);
-			for (int m = 0; m < maskCount; m++)
+			for(int m = 0; m < maskCount; m++)
 			{
 				String subAddress = readS();
 				byte[] subnetAddress = new byte[readD()];
@@ -70,7 +68,7 @@ public class AuthRequest extends ReceivablePacket
 	@Override
 	protected void runImpl()
 	{
-		if (_protocolVersion != AuthServer.AUTH_SERVER_PROTOCOL)
+		if(_protocolVersion != AuthServer.AUTH_SERVER_PROTOCOL)
 		{
 			_log.warn("Authserver and gameserver have different versions! Please update your servers.");
 			sendPacket(new LoginServerFail("Authserver and gameserver have different versions! Please update your servers.", false));
@@ -81,26 +79,27 @@ public class AuthRequest extends ReceivablePacket
 
 		_log.info("Trying to register gameserver: IP[" + gs.getConnection().getIpAddress() + "]");
 
-		for (HostInfo host : _hosts)
+		for(HostInfo host : _hosts)
 		{
 			int registerResult = GameServerManager.getInstance().registerGameServer(host, gs);
-			if (registerResult == GameServerManager.SUCCESS_GS_REGISTER)
+			if(registerResult == GameServerManager.SUCCESS_GS_REGISTER)
 			{
 				gs.addHost(host);
 			}
 			else
 			{
-				if (registerResult == GameServerManager.FAIL_GS_REGISTER_DIFF_KEYS)
+				if(registerResult == GameServerManager.FAIL_GS_REGISTER_DIFF_KEYS)
 				{
 					sendPacket(new LoginServerFail("Gameserver registration on ID[" + host.getId() + "] failed. Registered different keys!", false));
 					sendPacket(new LoginServerFail("Set the same keys in authserver and gameserver, and restart them!", false));
 				}
-				else if (registerResult == GameServerManager.FAIL_GS_REGISTER_ID_ALREADY_USE)
+				else if(registerResult == GameServerManager.FAIL_GS_REGISTER_ID_ALREADY_USE)
 				{
-					sendPacket(new LoginServerFail("Gameserver registration on ID[" + host.getId() + "] failed. ID[" + host.getId() + "] is already in use!", false));
+					sendPacket(new LoginServerFail("Gameserver registration on ID[" + host.getId() + "] failed. ID[" + host.getId()
+							+ "] is already in use!", false));
 					sendPacket(new LoginServerFail("Free ID[" + host.getId() + "] or change to another ID, and restart your authserver or gameserver!", false));
 				}
-				else if (registerResult == GameServerManager.FAIL_GS_REGISTER_ERROR)
+				else if(registerResult == GameServerManager.FAIL_GS_REGISTER_ERROR)
 				{
 					sendPacket(new LoginServerFail("Gameserver registration on ID[" + host.getId() + "] failed. You have some errors!", false));
 					sendPacket(new LoginServerFail("To solve the problem, contact the developer!", false));
@@ -108,7 +107,7 @@ public class AuthRequest extends ReceivablePacket
 			}
 		}
 
-		if (gs.getHosts().length > 0)
+		if(gs.getHosts().length > 0)
 		{
 			gs.setProtocol(_protocolVersion);
 			gs.setServerType(_serverType);

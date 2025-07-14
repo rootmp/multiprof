@@ -87,16 +87,16 @@ public class SubUnit
 
 	public UnitMember getUnitMember(int obj)
 	{
-		if (obj == 0)
+		if(obj == 0)
 			return null;
 		return _members.get(obj);
 	}
 
 	public UnitMember getUnitMember(String obj)
 	{
-		for (UnitMember m : getUnitMembers())
+		for(UnitMember m : getUnitMembers())
 		{
-			if (m.getName().equalsIgnoreCase(obj))
+			if(m.getName().equalsIgnoreCase(obj))
 				return m;
 		}
 
@@ -106,13 +106,13 @@ public class SubUnit
 	public void removeUnitMember(int objectId)
 	{
 		UnitMember m = _members.remove(objectId);
-		if (m == null)
+		if(m == null)
 			return;
 
-		if (objectId == getLeaderObjectId()) // subpledge leader
+		if(objectId == getLeaderObjectId()) // subpledge leader
 			setLeader(null, true); // clan leader has to assign another one, via villagemaster
 
-		if (m.hasSponsor())
+		if(m.hasSponsor())
 			_clan.getAnyMember(m.getSponsor()).setApprentice(0);
 
 		removeMemberInDatabase(m);
@@ -123,17 +123,17 @@ public class SubUnit
 	public void replace(int objectId, int newUnitId)
 	{
 		SubUnit newUnit = _clan.getSubUnit(newUnitId);
-		if (newUnit == null)
+		if(newUnit == null)
 			return;
 
 		UnitMember m = _members.remove(objectId);
-		if (m == null)
+		if(m == null)
 			return;
 
 		m.setPledgeType(newUnitId);
 		newUnit.addUnitMember(m);
 
-		if (m.getPowerGrade() > 5)
+		if(m.getPowerGrade() > 5)
 			m.setPowerGrade(_clan.getAffiliationRank(m.getPledgeType()));
 	}
 
@@ -155,21 +155,21 @@ public class SubUnit
 	public void setLeader(UnitMember newLeader, boolean updateDB)
 	{
 		final UnitMember old = _leader;
-		if (old != null) // обновляем старого мембера
+		if(old != null) // обновляем старого мембера
 			old.setLeaderOf(Clan.SUBUNIT_NONE);
 
 		_leader = newLeader;
 		_leaderObjectId = newLeader == null ? 0 : newLeader.getObjectId();
 
-		if (newLeader != null)
+		if(newLeader != null)
 			newLeader.setLeaderOf(_type);
 
-		if (updateDB)
+		if(updateDB)
 		{
-			if (old != null && old.getPlayer() != null)
+			if(old != null && old.getPlayer() != null)
 				old.getPlayer().getInventory().validateItems();
 
-			if (newLeader.getPlayer() != null)
+			if(newLeader.getPlayer() != null)
 				newLeader.getPlayer().getInventory().validateItems();
 
 			Connection con = null;
@@ -183,7 +183,7 @@ public class SubUnit
 				statement.setInt(3, _type);
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("Exception: " + e, e);
 			}
@@ -197,7 +197,7 @@ public class SubUnit
 	public void setName(String name, boolean updateDB)
 	{
 		_name = name;
-		if (updateDB)
+		if(updateDB)
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -210,7 +210,7 @@ public class SubUnit
 				statement.setInt(3, _type);
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("Exception: " + e, e);
 			}
@@ -229,12 +229,12 @@ public class SubUnit
 	public SkillEntry addSkill(SkillEntry newSkillEntry, boolean store)
 	{
 		SkillEntry oldSkillEntry = null;
-		if (newSkillEntry != null)
+		if(newSkillEntry != null)
 		{
 			// Replace oldSkillEntry by newSkillEntry or Add the newSkillEntry
 			oldSkillEntry = _skills.put(newSkillEntry.getId(), newSkillEntry);
 
-			if (store)
+			if(store)
 			{
 				Connection con = null;
 				PreparedStatement statement = null;
@@ -249,7 +249,7 @@ public class SubUnit
 					statement.setInt(4, newSkillEntry.getLevel());
 					statement.execute();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.warn("Exception: " + e, e);
 				}
@@ -260,14 +260,14 @@ public class SubUnit
 			}
 
 			ExSubPledgetSkillAdd packet = new ExSubPledgetSkillAdd(_type, newSkillEntry.getId(), newSkillEntry.getLevel());
-			for (UnitMember temp : _clan)
-				if (temp.isOnline())
+			for(UnitMember temp : _clan)
+				if(temp.isOnline())
 				{
 					Player player = temp.getPlayer();
-					if (player != null)
+					if(player != null)
 					{
 						player.sendPacket(packet);
-						if (player.getPledgeType() == _type)
+						if(player.getPledgeType() == _type)
 							addSkill(player, newSkillEntry);
 					}
 				}
@@ -282,18 +282,18 @@ public class SubUnit
 	 */
 	public void addSkillsQuietly(Player player)
 	{
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 			addSkill(player, skillEntry);
 	}
 
 	public void enableSkills(Player player)
 	{
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 		{
 			Skill skill = skillEntry.getTemplate();
-			if (skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
+			if(skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
 			{
-				if (!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
+				if(!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
 					player.removeUnActiveSkill(skill);
 			}
 		}
@@ -301,19 +301,19 @@ public class SubUnit
 
 	public void disableSkills(Player player)
 	{
-		for (SkillEntry skillEntry : _skills.valueCollection())
+		for(SkillEntry skillEntry : _skills.valueCollection())
 			player.addUnActiveSkill(skillEntry.getTemplate());
 	}
 
 	private void addSkill(Player player, SkillEntry skillEntry)
 	{
 		Skill skill = skillEntry.getTemplate();
-		if (skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
+		if(skill.getMinPledgeRank().ordinal() <= player.getPledgeRank().ordinal())
 		{
-			if (!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
+			if(!skill.clanLeaderOnly() || skill.clanLeaderOnly() && player.isClanLeader())
 			{
 				player.addSkill(skillEntry, false);
-				if (player.isInOlympiadMode())
+				if(player.isInOlympiadMode())
 					player.addUnActiveSkill(skill);
 			}
 		}
@@ -337,7 +337,7 @@ public class SubUnit
 			statement.setInt(3, member.getObjectId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: " + e, e);
 		}
@@ -366,30 +366,31 @@ public class SubUnit
 							"`c`.`sex` AS `sex`, " + //
 							"`c`.`clan_attendance` AS `clan_attendance` " + //
 							"FROM `characters` `c` " + //
-							"LEFT JOIN `character_subclasses` `s` ON (`s`.`char_obj_id` = `c`.`obj_Id` AND `s`.`type` = '" + SubClassType.BASE_CLASS.ordinal() + "') " + //
+							"LEFT JOIN `character_subclasses` `s` ON (`s`.`char_obj_id` = `c`.`obj_Id` AND `s`.`type` = '" + SubClassType.BASE_CLASS.ordinal()
+							+ "') " + //
 							"WHERE `c`.`clanid`=? AND `c`.`pledge_type`=? ORDER BY `c`.`lastaccess` DESC");
 
 			statement.setInt(1, _clan.getClanId());
 			statement.setInt(2, _type);
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				UnitMember member = new UnitMember(_clan, rset.getString("char_name"), rset.getString("title"), rset.getInt("level"), rset.getInt("classid"), rset.getInt("obj_Id"), _type, rset.getInt("pledge_rank"), rset.getInt("apprentice"), rset.getInt("sex"), Clan.SUBUNIT_NONE, PledgeAttendanceType.VALUES[rset.getInt("clan_attendance")]);
 				addUnitMember(member);
 			}
 
-			if (_type != Clan.SUBUNIT_ACADEMY)
+			if(_type != Clan.SUBUNIT_ACADEMY)
 			{
 				SubUnit mainClan = _clan.getSubUnit(Clan.SUBUNIT_MAIN_CLAN);
 				UnitMember leader = mainClan.getUnitMember(_leaderObjectId);
-				if (leader != null)
+				if(leader != null)
 					setLeader(leader, false);
-				else if (_type == Clan.SUBUNIT_MAIN_CLAN)
+				else if(_type == Clan.SUBUNIT_MAIN_CLAN)
 					_log.error("Clan " + _name + " have no leader!");
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Error while restoring clan members for clan: " + _clan.getClanId() + " " + e, e);
 		}
@@ -412,7 +413,7 @@ public class SubUnit
 			statement.setInt(2, _type);
 			rset = statement.executeQuery();
 
-			while (rset.next())
+			while(rset.next())
 			{
 				int id = rset.getInt("skill_id");
 				int level = rset.getInt("skill_level");
@@ -422,7 +423,7 @@ public class SubUnit
 				_skills.put(skillEntry.getId(), skillEntry);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: " + e, e);
 		}
@@ -451,7 +452,7 @@ public class SubUnit
 	public void setUpgraded(boolean upgraded, boolean updateInDb)
 	{
 		_upgraded = upgraded;
-		if (updateInDb)
+		if(updateInDb)
 		{
 			Connection con = null;
 			PreparedStatement statement = null;
@@ -464,7 +465,7 @@ public class SubUnit
 				statement.setInt(3, _type);
 				statement.execute();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("Exception: " + e, e);
 			}

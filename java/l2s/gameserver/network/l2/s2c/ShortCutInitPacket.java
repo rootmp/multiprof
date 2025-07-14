@@ -1,11 +1,11 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.ShortCut;
 
@@ -17,7 +17,7 @@ public class ShortCutInitPacket extends ShortCutPacket
 	{
 		Collection<ShortCut> shortCuts = pl.getAllShortCuts();
 		_shortCuts = new ArrayList<ShortcutInfo>(shortCuts.size());
-		for (ShortCut shortCut : shortCuts)
+		for(ShortCut shortCut : shortCuts)
 			_shortCuts.add(convert(pl, shortCut));
 	}
 
@@ -26,9 +26,9 @@ public class ShortCutInitPacket extends ShortCutPacket
 	{
 		packetWriter.writeD(_shortCuts.size());
 
-		for (final ShortcutInfo sc : _shortCuts)
+		for(final ShortcutInfo sc : _shortCuts)
 			sc.write(packetWriter, this);
-		
+
 		return true;
 	}
 }

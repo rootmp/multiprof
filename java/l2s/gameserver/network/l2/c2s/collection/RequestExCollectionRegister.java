@@ -17,7 +17,7 @@ import l2s.gameserver.templates.item.data.CollectionItemData;
 public class RequestExCollectionRegister implements IClientIncomingPacket
 {
 	private int nCollectionID, nSlotNumber, nItemSid;
-	
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -33,34 +33,34 @@ public class RequestExCollectionRegister implements IClientIncomingPacket
 		final Player player = client.getActiveChar();
 		if(player == null)
 			return;
-		
+
 		ItemInstance item = player.getInventory().getItemByObjectId(nItemSid);
-		if (item == null)
+		if(item == null)
 			return;
-		
+
 		CollectionTemplate collection = CollectionsData.getInstance().getCollection(nCollectionID);
 		CollectionTemplate newCollection = new CollectionTemplate(nCollectionID, collection.getTabId(), 0);
 
 		long itemCount = 0;
-		for (CollectionItemData temp : collection.getItems())
+		for(CollectionItemData temp : collection.getItems())
 		{
-			if (temp.getId() == item.getItemId())
+			if(temp.getId() == item.getItemId())
 			{
-				if (temp.getEnchantLevel() == item.getEnchantLevel() && temp.getCount() <= item.getCount() && temp.getSlotId() == nSlotNumber)
+				if(temp.getEnchantLevel() == item.getEnchantLevel() && temp.getCount() <= item.getCount() && temp.getSlotId() == nSlotNumber)
 				{
 					CollectionItemData itemData = new CollectionItemData(item.getItemId(), temp.getCount(), temp.getEnchantLevel(), nSlotNumber, temp.getBless(), temp.getBlessCondition());
 					newCollection.addItem(itemData);
 					player.getCollectionList().add(newCollection);
 					itemCount = temp.getCount();
 					player.getInventory().destroyItem(item, itemCount);
-					player.sendPacket(new ExCollectionRegister(player, nCollectionID, nSlotNumber, item.getItemId(), item.getEnchantLevel(), item.isBlessed(),(int) itemCount));
+					player.sendPacket(new ExCollectionRegister(player, nCollectionID, nSlotNumber, item.getItemId(), item.getEnchantLevel(), item.isBlessed(), (int) itemCount));
 					break;
 				}
 			}
 		}
-		
-		Map<Integer, CollectionTemplate> tmp = CollectionsData.getInstance().getPlayerCollection(player,collection.getTabId());
-		if (tmp.get(nCollectionID).getItems().stream().collect(Collectors.groupingBy(r -> r.getSlotId())).size() == collection.getMaxSlot())
+
+		Map<Integer, CollectionTemplate> tmp = CollectionsData.getInstance().getPlayerCollection(player, collection.getTabId());
+		if(tmp.get(nCollectionID).getItems().stream().collect(Collectors.groupingBy(r -> r.getSlotId())).size() == collection.getMaxSlot())
 		{
 			player.sendPacket(new ExCollectionComplete(nCollectionID));
 			player.getListeners().onPlayerCollectionComplete(nCollectionID);

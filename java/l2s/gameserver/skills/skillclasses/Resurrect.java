@@ -37,13 +37,13 @@ public class Resurrect extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
-		if (target == null || target != activeChar && !target.isDead())
+		if(target == null || target != activeChar && !target.isDead())
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
@@ -52,21 +52,21 @@ public class Resurrect extends Skill
 		Player player = (Player) activeChar;
 		Player pcTarget = target.getPlayer();
 
-		if (pcTarget == null)
+		if(pcTarget == null)
 		{
 			player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
 		}
 
-		if (player.isInOlympiadMode() || pcTarget.isInOlympiadMode())
+		if(player.isInOlympiadMode() || pcTarget.isInOlympiadMode())
 		{
 			player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return false;
 		}
 
-		if (oneTarget())
+		if(oneTarget())
 		{
-			if (target.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION))
+			if(target.getAbnormalList().contains(AbnormalType.BLOCK_RESURRECTION))
 			{
 				player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 				return false;
@@ -76,47 +76,47 @@ public class Resurrect extends Skill
 			events.addAll(GLOBAL);
 			events.addAll(target.getZoneEvents());
 
-			for (Event e : events)
+			for(Event e : events)
 			{
-				if (!e.canResurrect(activeChar, target, forceUse, false))
+				if(!e.canResurrect(activeChar, target, forceUse, false))
 				{
 					player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(this));
 					return false;
 				}
 			}
 
-			if (target.isPet())
+			if(target.isPet())
 			{
 				IntObjectPair<OnAnswerListener> ask = pcTarget.getAskListener(false);
 				ReviveAnswerListener reviveAsk = ask != null && ask.getValue() instanceof ReviveAnswerListener ? (ReviveAnswerListener) ask.getValue() : null;
-				if (reviveAsk != null)
+				if(reviveAsk != null)
 				{
-					if (reviveAsk.isForPet())
+					if(reviveAsk.isForPet())
 						activeChar.sendPacket(SystemMsg.RESURRECTION_HAS_ALREADY_BEEN_PROPOSED);
 					else
 						activeChar.sendPacket(SystemMsg.A_PET_CANNOT_BE_RESURRECTED_WHILE_ITS_OWNER_IS_IN_THE_PROCESS_OF_RESURRECTING);
 					return false;
 				}
-				if (!(_canPet || getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR))
+				if(!(_canPet || getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR))
 				{
 					player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 					return false;
 				}
 			}
-			else if (target.isPlayer())
+			else if(target.isPlayer())
 			{
 				IntObjectPair<OnAnswerListener> ask = pcTarget.getAskListener(false);
 				ReviveAnswerListener reviveAsk = ask != null && ask.getValue() instanceof ReviveAnswerListener ? (ReviveAnswerListener) ask.getValue() : null;
 
-				if (reviveAsk != null)
+				if(reviveAsk != null)
 				{
-					if (reviveAsk.isForPet())
+					if(reviveAsk.isForPet())
 						activeChar.sendPacket(SystemMsg.WHILE_A_PET_IS_BEING_RESURRECTED_IT_CANNOT_HELP_IN_RESURRECTING_ITS_MASTER);
 					else
 						activeChar.sendPacket(SystemMsg.RESURRECTION_HAS_ALREADY_BEEN_PROPOSED);
 					return false;
 				}
-				if (getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR)
+				if(getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR)
 				{
 					player.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 					return false;
@@ -130,37 +130,38 @@ public class Resurrect extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		final Player targetPlayer = target.getPlayer();
-		if (targetPlayer == null)
+		if(targetPlayer == null)
 			return;
 
 		double percent = getPower();
-		if (percent < 100 && !isHandler())
+		if(percent < 100 && !isHandler())
 		{
 			double wit_bonus = getPower() * (BaseStats.WIT.calcBonus(activeChar) - 1);
 			percent += wit_bonus > 20 ? 20 : wit_bonus;
-			if (percent > 90)
+			if(percent > 90)
 				percent = 90;
 		}
 
-		if (target.isPet() && _canPet)
+		if(target.isPet() && _canPet)
 		{
-			if (targetPlayer == activeChar)
+			if(targetPlayer == activeChar)
 				((PetInstance) target).doRevive(percent);
 			else
 				targetPlayer.reviveRequest((Player) activeChar, percent, true);
 		}
-		else if (target.isPlayer())
+		else if(target.isPlayer())
 		{
-			if (getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR)
+			if(getTargetType() == SkillTargetType.TARGET_ONE_SERVITOR)
 				return;
 
 			final IntObjectPair<OnAnswerListener> ask = targetPlayer.getAskListener(false);
-			final ReviveAnswerListener reviveAsk = ask != null && ask.getValue() instanceof ReviveAnswerListener ? (ReviveAnswerListener) ask.getValue() : null;
-			if (reviveAsk != null)
+			final ReviveAnswerListener reviveAsk = ask != null
+					&& ask.getValue() instanceof ReviveAnswerListener ? (ReviveAnswerListener) ask.getValue() : null;
+			if(reviveAsk != null)
 				return;
 
 			targetPlayer.reviveRequest(activeChar.getPlayer(), percent, false);
@@ -170,13 +171,13 @@ public class Resurrect extends Skill
 	@Override
 	public Set<Creature> getTargets(SkillEntry skillEntry, Creature activeChar, Creature aimingTarget, boolean forceUse)
 	{
-		if (oneTarget())
+		if(oneTarget())
 			return super.getTargets(skillEntry, activeChar, aimingTarget, forceUse);
 		else
 		{
 			Set<Creature> list = super.getTargets(skillEntry, activeChar, aimingTarget, forceUse);
 			Iterator<Creature> iterator = list.iterator();
-			while (iterator.hasNext())
+			while(iterator.hasNext())
 			{
 				Creature target = iterator.next();
 
@@ -184,9 +185,9 @@ public class Resurrect extends Skill
 				events.addAll(GLOBAL);
 				events.addAll(target.getZoneEvents());
 
-				for (Event e : events)
+				for(Event e : events)
 				{
-					if (!e.canResurrect(activeChar, target, true, true))
+					if(!e.canResurrect(activeChar, target, true, true))
 						iterator.remove();
 				}
 			}

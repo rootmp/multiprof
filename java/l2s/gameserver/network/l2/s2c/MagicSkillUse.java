@@ -59,7 +59,7 @@ public class MagicSkillUse implements IClientOutgoingPacket
 	{
 		this(cha, target, skillId, skillLevel, 0, hitTime, reuseDelay, castingType, -1, false, 0);
 	}
-	
+
 	public MagicSkillUse(Creature cha, Creature target, int skillId, int skillLevel, int skillSubLevel, int hitTime, long reuseDelay, SkillCastingType castingType)
 	{
 		this(cha, target, skillId, skillLevel, skillSubLevel, hitTime, reuseDelay, castingType, -1, false, 0);
@@ -69,7 +69,7 @@ public class MagicSkillUse implements IClientOutgoingPacket
 	{
 		this(cha, target, skillId, skillLevel, 0, hitTime, reuseDelay, SkillCastingType.NORMAL, -1, false, 0);
 	}
-	
+
 	public MagicSkillUse(Creature cha, Creature target, int skillId, int skillLevel, int skillSubLevel, int hitTime, long reuseDelay)
 	{
 		this(cha, target, skillId, skillLevel, skillSubLevel, hitTime, reuseDelay, SkillCastingType.NORMAL, -1, false, 0);
@@ -153,10 +153,10 @@ public class MagicSkillUse implements IClientOutgoingPacket
 			packetWriter.writeD(-1);
 		else
 			packetWriter.writeD(10);
-			packetWriter.writeC(0xFF); 
-			packetWriter.writeC(0xFF); 
-			packetWriter.writeC(0xFF);
-			packetWriter.writeC(0xFF);
+		packetWriter.writeC(0xFF);
+		packetWriter.writeC(0xFF);
+		packetWriter.writeC(0xFF);
+		packetWriter.writeC(0xFF);
 		return true;
 	}
 

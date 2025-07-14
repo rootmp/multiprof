@@ -53,12 +53,12 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 
 	public void onKilled(Creature actor, Creature victim)
 	{
-		if ((actor != null) && (actor.isPlayable()))
+		if((actor != null) && (actor.isPlayable()))
 		{
 			FightClubPlayer realActor = getFightClubPlayer(actor.getPlayer());
-			if (realActor != null)
+			if(realActor != null)
 			{
-				if (victim.isPlayer())
+				if(victim.isPlayer())
 				{
 					realActor.increaseKills(true);
 					realActor.increaseScore(scoreForKilledPlayer);
@@ -69,13 +69,13 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 			}
 		}
 
-		if (victim.isPlayer())
+		if(victim.isPlayer())
 		{
 			FightClubPlayer realVictim = getFightClubPlayer(victim);
-			if (realVictim != null)
+			if(realVictim != null)
 			{
 				realVictim.increaseDeaths();
-				if (actor != null)
+				if(actor != null)
 					sendMessageToPlayer(realVictim, MessageType.GM, "You have been killed by " + actor.getName());
 				victim.getPlayer().sendUserInfo();
 			}
@@ -93,7 +93,7 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 	{
 		super.startRound();
 
-		for (int i = 0; i < numberOfChests; i++)
+		for(int i = 0; i < numberOfChests; i++)
 		{
 			spawnChest();
 		}
@@ -104,8 +104,8 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 	{
 		super.stopEvent(force);
 
-		for (NpcInstance chest : spawnedChests)
-			if ((chest != null) && (!chest.isDead()))
+		for(NpcInstance chest : spawnedChests)
+			if((chest != null) && (!chest.isDead()))
 				chest.deleteMe();
 		spawnedChests.clear();
 	}
@@ -113,15 +113,11 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 	public boolean openTreasure(Player player, NpcInstance npc)
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
-		if (fPlayer == null)
-		{
-			return false;
-		}
+		if(fPlayer == null)
+		{ return false; }
 
-		if (getState() != EventState.STARTED)
-		{
-			return false;
-		}
+		if(getState() != EventState.STARTED)
+		{ return false; }
 		fPlayer.increaseEventSpecificScore("chest");
 		fPlayer.increaseScore(scoreForChest);
 		updatePlayerScore(fPlayer);
@@ -145,7 +141,7 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 
 		public void run()
 		{
-			if (_event.getState() != EventState.NOT_ACTIVE)
+			if(_event.getState() != EventState.NOT_ACTIVE)
 			{
 				_event.spawnChest();
 			}
@@ -162,10 +158,8 @@ public class FFATreasureHuntEvent extends AbstractFightClub
 	{
 		FightClubPlayer fPlayer = getFightClubPlayer(player);
 
-		if (fPlayer == null)
-		{
-			return currentTitle;
-		}
+		if(fPlayer == null)
+		{ return currentTitle; }
 		return "Chests: " + fPlayer.getEventSpecificScore("chest") + " Kills: " + fPlayer.getKills(true);
 	}
 }

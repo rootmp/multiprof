@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.instancemanager.MatchingRoomManager;
 import l2s.gameserver.model.Player;
@@ -19,7 +20,7 @@ public class RequestExitPartyMatchingWaitingRoom implements IClientIncomingPacke
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		MatchingRoomManager.getInstance().removeFromWaitingList(player);

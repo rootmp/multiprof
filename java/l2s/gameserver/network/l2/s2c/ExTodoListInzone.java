@@ -12,7 +12,7 @@ public class ExTodoListInzone implements IClientOutgoingPacket
 	{
 		int instancesCount = 0;
 		packetWriter.writeH(0x00); // TODO[UNDERGROUND]: Instances count
-		for (int i = 0; i < instancesCount; i++)
+		for(int i = 0; i < instancesCount; i++)
 		{
 			packetWriter.writeC(0x00); // TODO[UNDERGROUND]: Tab
 			packetWriter.writeS(""); // TODO[UNDERGROUND]: HTML name

@@ -19,7 +19,7 @@ public class Circle extends AbstractShape
 		max.y = (center.y + r);
 
 		List<Point2D> points = new ArrayList<Point2D>();
-		for (int deegre = 0; deegre <= 360; deegre += 36)
+		for(int deegre = 0; deegre <= 360; deegre += 36)
 		{
 			double radians = Math.toRadians(deegre);
 			int x = (int) (center.getX() - r * Math.sin(radians));

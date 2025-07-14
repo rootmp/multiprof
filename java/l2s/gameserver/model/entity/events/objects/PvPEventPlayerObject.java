@@ -78,7 +78,7 @@ public class PvPEventPlayerObject
 
 	public void stopScheduled()
 	{
-		if (scheduled != null)
+		if(scheduled != null)
 		{
 			scheduled.cancel(false);
 			scheduled = null;

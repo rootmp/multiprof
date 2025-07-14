@@ -18,14 +18,14 @@ public class EffectRelax extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (!effected.isPlayer())
+		if(!effected.isPlayer())
 			return false;
 
 		Player player = effected.getPlayer();
-		if (player == null)
+		if(player == null)
 			return false;
 
-		if (player.isMounted())
+		if(player.isMounted())
 		{
 			player.sendPacket(new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addSkillName(getSkill().getId(), getSkill().getLevel()));
 			return false;
@@ -37,7 +37,7 @@ public class EffectRelax extends EffectHandler
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		Player player = effected.getPlayer();
-		if (player.getMovement().isMoving())
+		if(player.getMovement().isMoving())
 			player.getMovement().stopMove();
 		player.sitDown(null);
 	}
@@ -46,22 +46,22 @@ public class EffectRelax extends EffectHandler
 	public boolean onActionTime(Abnormal abnormal, Creature effector, Creature effected)
 	{
 		Player player = effected.getPlayer();
-		if (player.isAlikeDead() || player == null)
+		if(player.isAlikeDead() || player == null)
 			return false;
 
-		if (!player.isSitting())
+		if(!player.isSitting())
 			return false;
 
-		if (player.isCurrentHpFull() && getSkill().isToggle())
+		if(player.isCurrentHpFull() && getSkill().isToggle())
 		{
 			effected.sendPacket(SystemMsg.THAT_SKILL_HAS_BEEN_DEACTIVATED_AS_HP_WAS_FULLY_RECOVERED);
 			return false;
 		}
 
 		double manaDam = getValue();
-		if (manaDam > effected.getCurrentMp())
+		if(manaDam > effected.getCurrentMp())
 		{
-			if (getSkill().isToggle())
+			if(getSkill().isToggle())
 			{
 				player.sendPacket(SystemMsg.NOT_ENOUGH_MP, new SystemMessagePacket(SystemMsg.THE_EFFECT_OF_S1_HAS_BEEN_REMOVED).addSkillName(getSkill().getId(), getSkill().getDisplayLevel()));
 				return false;

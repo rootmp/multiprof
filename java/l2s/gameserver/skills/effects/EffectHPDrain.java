@@ -25,7 +25,7 @@ public class EffectHPDrain extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead() || effected.isRaid())
+		if(effected.isDead() || effected.isRaid())
 			return false;
 		return true;
 	}
@@ -33,18 +33,18 @@ public class EffectHPDrain extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return;
 
-		if (effected == effector)
+		if(effected == effector)
 			return;
 
 		double drained = getValue();
-		if (_percent)
+		if(_percent)
 			drained = effected.getMaxHp() / 100. * drained;
 
 		drained = Math.min(drained, effected.getCurrentHp());
-		if (drained <= 0)
+		if(drained <= 0)
 			return;
 
 		effected.setCurrentHp(Math.max(0., effected.getCurrentHp() - drained), false);
@@ -54,7 +54,7 @@ public class EffectHPDrain extends EffectHandler
 		newHp = Math.max(0, Math.min(newHp, effector.getMaxHp() / 100. * effector.getStat().calc(Stats.HP_LIMIT, null, null)));
 
 		double addToHp = newHp - effected.getCurrentHp();
-		if (addToHp > 0)
+		if(addToHp > 0)
 		{
 			effector.setCurrentHp(newHp, false);
 			// TODO: Нужно ли какое-то сообщение для эффектора?

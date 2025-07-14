@@ -20,9 +20,9 @@ public class ExRankingCharHistory implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		int daysCount = 0;
-		for (int i = 1; i < 9; i++)
+		for(int i = 1; i < 9; i++)
 		{
-			if (_player.getVarInt(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day", 0) != 0)
+			if(_player.getVarInt(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day", 0) != 0)
 			{
 				daysCount++;
 			}
@@ -33,15 +33,15 @@ public class ExRankingCharHistory implements IClientOutgoingPacket
 		packetWriter.writeC(0);
 		packetWriter.writeC(0);
 
-		if (daysCount > 0)
+		if(daysCount > 0)
 		{
-			for (int i = 1; i <= daysCount; i++)
+			for(int i = 1; i <= daysCount; i++)
 			{
 				int date = _player.getVarInt(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_day", 0);
 				int rank = _player.getVarInt(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_rank", 0);
 				long exp1 = 0;
 				long exp2 = 0;
-				if (i < daysCount)
+				if(i < daysCount)
 				{
 					exp1 = _player.getVarLong(PlayerVariables.RANKING_HISTORY_DAY + "_" + i + "_exp", 0);
 					int j = i + 1;

@@ -36,7 +36,7 @@ public final class BeautyShopHolder extends AbstractHolder
 			templatesBySex = new TIntObjectHashMap<BeautySetTemplate>();
 			templatesByRace.put(template.getSex().ordinal(), templatesBySex);
 		}
-	
+
 		if(template.getClassType() == null)
 		{
 			for(ClassType _class : ClassType.VALUES)

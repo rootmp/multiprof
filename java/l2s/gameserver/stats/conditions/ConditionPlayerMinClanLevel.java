@@ -18,11 +18,11 @@ public class ConditionPlayerMinClanLevel extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return _value <= 0;
 
 		Clan clan = env.character.getPlayer().getClan();
-		if (clan == null)
+		if(clan == null)
 			return _value <= 0;
 
 		return _value <= clan.getLevel();

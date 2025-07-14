@@ -15,7 +15,7 @@ public class Strings
 
 	public static String stripSlashes(String s)
 	{
-		if (s == null)
+		if(s == null)
 			return "";
 		s = s.replace("\\'", "'");
 		s = s.replace("\\\\", "\\");
@@ -25,16 +25,16 @@ public class Strings
 	// TODO вынести этот бред
 	public static Boolean parseBoolean(Object x)
 	{
-		if (x == null)
+		if(x == null)
 			return false;
 
-		if (x instanceof Number)
+		if(x instanceof Number)
 			return ((Number) x).intValue() > 0;
 
-		if (x instanceof Boolean)
+		if(x instanceof Boolean)
 			return (Boolean) x;
 
-		if (x instanceof Double)
+		if(x instanceof Double)
 			return Math.abs((Double) x) < 0.00001;
 
 		return !String.valueOf(x).isEmpty();
@@ -50,7 +50,7 @@ public class Strings
 		{
 			String[] pairs = Files.readFile(new File(Config.DATAPACK_ROOT, "data/translit.txt")).split("\n");
 			tr = new String[pairs.length * 2];
-			for (int i = 0; i < pairs.length; i++)
+			for(int i = 0; i < pairs.length; i++)
 			{
 				String[] ss = pairs[i].split(" +");
 				tr[i * 2] = ss[0];
@@ -59,7 +59,7 @@ public class Strings
 
 			pairs = Files.readFile(new File(Config.DATAPACK_ROOT, "data/translit_back.txt")).split("\n");
 			trb = new String[pairs.length * 2];
-			for (int i = 0; i < pairs.length; i++)
+			for(int i = 0; i < pairs.length; i++)
 			{
 				String[] ss = pairs[i].split(" +");
 				trb[i * 2] = ss[0];
@@ -68,14 +68,14 @@ public class Strings
 
 			pairs = Files.readFile(new File(Config.DATAPACK_ROOT, "data/transcode.txt")).split("\n");
 			trcode = new String[pairs.length * 2];
-			for (int i = 0; i < pairs.length; i++)
+			for(int i = 0; i < pairs.length; i++)
 			{
 				String[] ss = pairs[i].split(" +");
 				trcode[i * 2] = ss[0];
 				trcode[i * 2 + 1] = ss[1];
 			}
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			_log.error("", e);
 		}
@@ -84,7 +84,7 @@ public class Strings
 
 	public static String translit(String s)
 	{
-		for (int i = 0; i < tr.length; i += 2)
+		for(int i = 0; i < tr.length; i += 2)
 			s = s.replace(tr[i], tr[i + 1]);
 
 		return s;
@@ -92,11 +92,11 @@ public class Strings
 
 	public static String fromTranslit(String s, int type)
 	{
-		if (type == 1)
-			for (int i = 0; i < trb.length; i += 2)
+		if(type == 1)
+			for(int i = 0; i < trb.length; i += 2)
 				s = s.replace(trb[i], trb[i + 1]);
-		else if (type == 2)
-			for (int i = 0; i < trcode.length; i += 2)
+		else if(type == 2)
+			for(int i = 0; i < trcode.length; i += 2)
 				s = s.replace(trcode[i], trcode[i + 1]);
 
 		return s;
@@ -125,15 +125,15 @@ public class Strings
 	public static String joinStrings(String glueStr, String[] strings, int startIdx, int maxCount)
 	{
 		String result = "";
-		if (startIdx < 0)
+		if(startIdx < 0)
 		{
 			startIdx += strings.length;
-			if (startIdx < 0)
+			if(startIdx < 0)
 				return result;
 		}
-		while (startIdx < strings.length && maxCount != 0)
+		while(startIdx < strings.length && maxCount != 0)
 		{
-			if (!result.isEmpty() && glueStr != null && !glueStr.isEmpty())
+			if(!result.isEmpty() && glueStr != null && !glueStr.isEmpty())
 				result += glueStr;
 			result += strings[startIdx++];
 			maxCount--;
@@ -167,11 +167,11 @@ public class Strings
 
 	public static String stripToSingleLine(String s)
 	{
-		if (s.isEmpty())
+		if(s.isEmpty())
 			return s;
 		s = s.replaceAll("\\\\n", "\n");
 		int i = s.indexOf("\n");
-		if (i > -1)
+		if(i > -1)
 			s = s.substring(0, i);
 		return s;
 	}
@@ -183,7 +183,7 @@ public class Strings
 	 */
 	public static boolean isDigit(String text)
 	{
-		if (text == null)
+		if(text == null)
 			return false;
 		return text.matches("[0-9]+");
 	}

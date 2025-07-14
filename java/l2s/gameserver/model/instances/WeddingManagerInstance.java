@@ -41,7 +41,7 @@ public class WeddingManagerInstance extends NpcInstance
 		String replace = "";
 
 		// if player has no partner
-		if (player.getPartnerId() == 0)
+		if(player.getPartnerId() == 0)
 		{
 			filename = "wedding/nopartner.htm";
 			sendHtmlMessage(player, filename, replace);
@@ -51,19 +51,19 @@ public class WeddingManagerInstance extends NpcInstance
 		Player ptarget = GameObjectsStorage.getPlayer(player.getPartnerId());
 
 		// partner online ?
-		if (ptarget == null || !ptarget.isOnline())
+		if(ptarget == null || !ptarget.isOnline())
 		{
 			filename = "wedding/notfound.htm";
 			sendHtmlMessage(player, filename, replace);
 			return;
 		}
-		else if (player.isMaried()) // already married ?
+		else if(player.isMaried()) // already married ?
 		{
 			filename = "wedding/already.htm";
 			sendHtmlMessage(player, filename, replace);
 			return;
 		}
-		else if (command.startsWith("AcceptWedding"))
+		else if(command.startsWith("AcceptWedding"))
 		{
 			// accept the wedding request
 			player.setMaryAccepted(true);
@@ -93,10 +93,10 @@ public class WeddingManagerInstance extends NpcInstance
 			sendHtmlMessage(ptarget, filename, replace);
 			return;
 		}
-		else if (player.isMaryRequest())
+		else if(player.isMaryRequest())
 		{
 			// check for formalwear
-			if (Config.WEDDING_FORMALWEAR && !isWearingFormalWear(player))
+			if(Config.WEDDING_FORMALWEAR && !isWearingFormalWear(player))
 			{
 				filename = "wedding/noformal.htm";
 				sendHtmlMessage(player, filename, replace);
@@ -109,16 +109,16 @@ public class WeddingManagerInstance extends NpcInstance
 			sendHtmlMessage(player, filename, replace);
 			return;
 		}
-		else if (command.startsWith("AskWedding"))
+		else if(command.startsWith("AskWedding"))
 		{
 			// check for formalwear
-			if (Config.WEDDING_FORMALWEAR && !isWearingFormalWear(player))
+			if(Config.WEDDING_FORMALWEAR && !isWearingFormalWear(player))
 			{
 				filename = "wedding/noformal.htm";
 				sendHtmlMessage(player, filename, replace);
 				return;
 			}
-			else if (player.getAdena() < Config.WEDDING_PRICE)
+			else if(player.getAdena() < Config.WEDDING_PRICE)
 			{
 				player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 				return;
@@ -134,7 +134,7 @@ public class WeddingManagerInstance extends NpcInstance
 				return;
 			}
 		}
-		else if (command.startsWith("DeclineWedding"))
+		else if(command.startsWith("DeclineWedding"))
 		{
 			player.setMaryRequest(false);
 			ptarget.setMaryRequest(false);
@@ -147,7 +147,7 @@ public class WeddingManagerInstance extends NpcInstance
 			sendHtmlMessage(ptarget, filename, replace);
 			return;
 		}
-		else if (player.isMaryAccepted())
+		else if(player.isMaryAccepted())
 		{
 			filename = "wedding/waitforpartner.htm";
 			sendHtmlMessage(player, filename, replace);
@@ -158,7 +158,8 @@ public class WeddingManagerInstance extends NpcInstance
 
 	private static boolean isWearingFormalWear(Player player)
 	{
-		if (player != null && player.getInventory() != null && player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
+		if(player != null && player.getInventory() != null
+				&& player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
 			return true;
 		return false;
 	}

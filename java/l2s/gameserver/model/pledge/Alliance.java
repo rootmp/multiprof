@@ -70,7 +70,7 @@ public class Alliance
 	{
 		_members.put(member.getClanId(), member);
 
-		if (storeInDb)
+		if(storeInDb)
 			storeNewMemberInDatabase(member);
 	}
 
@@ -81,10 +81,10 @@ public class Alliance
 
 	public void removeAllyMember(int id)
 	{
-		if (_leader != null && _leader.getClanId() == id)
+		if(_leader != null && _leader.getClanId() == id)
 			return;
 		Clan exMember = _members.remove(id);
-		if (exMember == null)
+		if(exMember == null)
 		{
 			_log.warn("Clan " + id + " not found in alliance while trying to remove");
 			return;
@@ -160,14 +160,14 @@ public class Alliance
 
 	public void updateAllyInDB()
 	{
-		if (getLeaderId() == 0)
+		if(getLeaderId() == 0)
 		{
 			_log.warn("updateAllyInDB with empty LeaderId");
 			Thread.dumpStack();
 			return;
 		}
 
-		if (getAllyId() == 0)
+		if(getAllyId() == 0)
 		{
 			_log.warn("updateAllyInDB with empty AllyId");
 			Thread.dumpStack();
@@ -185,7 +185,7 @@ public class Alliance
 			statement.setInt(3, getAllyId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while updating ally '" + getAllyId() + "' data in db: " + e);
 		}
@@ -214,7 +214,7 @@ public class Alliance
 			statement.setInt(2, getLeaderId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while saving new ally to db " + e);
 		}
@@ -236,7 +236,7 @@ public class Alliance
 			statement.setInt(2, member.getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while saving new alliance member to db " + e);
 		}
@@ -257,7 +257,7 @@ public class Alliance
 			statement.setInt(1, member.getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while removing ally member in db " + e);
 		}
@@ -269,7 +269,7 @@ public class Alliance
 
 	private void restore()
 	{
-		if (getAllyId() == 0) // no ally
+		if(getAllyId() == 0) // no ally
 			return;
 
 		Connection con = null;
@@ -284,7 +284,7 @@ public class Alliance
 			statement.setInt(1, getAllyId());
 			rset = statement.executeQuery();
 
-			if (rset.next())
+			if(rset.next())
 			{
 				setAllyName(rset.getString("ally_name"));
 				int leaderId = rset.getInt("leader_id");
@@ -294,11 +294,11 @@ public class Alliance
 				statement.setInt(1, getAllyId());
 				rset = statement.executeQuery();
 
-				while (rset.next())
+				while(rset.next())
 				{
 					member = ClanTable.getInstance().getClan(rset.getInt("clan_id"));
-					if (member != null)
-						if (member.getClanId() == leaderId)
+					if(member != null)
+						if(member.getClanId() == leaderId)
 							setLeader(member);
 						else
 							addAllyMember(member, false);
@@ -307,7 +307,7 @@ public class Alliance
 
 			setAllyCrestId(CrestCache.getInstance().getAllyCrestId(getAllyId()));
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("error while restoring ally");
 			_log.error("", e);
@@ -320,8 +320,8 @@ public class Alliance
 
 	public void broadcastToOnlineMembersPredicate(Predicate<Player> predicate, IBroadcastPacket... packets)
 	{
-		for (Clan member : _members.values())
-			if (member != null)
+		for(Clan member : _members.values())
+			if(member != null)
 				member.broadcastToOnlineMembersPredicate(predicate, packets);
 	}
 
@@ -332,8 +332,8 @@ public class Alliance
 
 	public void broadcastToOtherOnlineMembers(IBroadcastPacket packet, Player player)
 	{
-		for (Clan member : _members.values())
-			if (member != null)
+		for(Clan member : _members.values())
+			if(member != null)
 				member.broadcastToOtherOnlineMembers(packet, player);
 	}
 
@@ -350,7 +350,7 @@ public class Alliance
 
 	public void broadcastAllyStatus()
 	{
-		for (Clan member : getMembers())
+		for(Clan member : getMembers())
 			member.broadcastClanStatus(false, true, false);
 	}
 }

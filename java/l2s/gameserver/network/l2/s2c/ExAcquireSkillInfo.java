@@ -22,10 +22,10 @@ public class ExAcquireSkillInfo implements IClientOutgoingPacket
 	{
 		_learn = learn;
 		_requiredItems = _learn.getRequiredItemsForLearn(type);
-		for (Skill skill : learn.getBlockedSkills())
+		for(Skill skill : learn.getBlockedSkills())
 		{
 			SkillEntry knownSkill = player.getKnownSkill(skill.getId());
-			if ((knownSkill != null) && (knownSkill.getLevel() >= skill.getLevel()))
+			if((knownSkill != null) && (knownSkill.getLevel() >= skill.getLevel()))
 			{
 				_blockedSkills.add(skill);
 			}
@@ -41,13 +41,13 @@ public class ExAcquireSkillInfo implements IClientOutgoingPacket
 		packetWriter.writeH(_learn.getMinLevel());
 		packetWriter.writeH(0x00); // Dual-class min level.
 		packetWriter.writeD(_requiredItems.size());
-		for (ItemData item : _requiredItems)
+		for(ItemData item : _requiredItems)
 		{
 			packetWriter.writeD(item.getId());
 			packetWriter.writeQ(item.getCount());
 		}
 		packetWriter.writeD(_blockedSkills.size());
-		for (Skill skill : _blockedSkills)
+		for(Skill skill : _blockedSkills)
 		{
 			packetWriter.writeD(skill.getId());
 			packetWriter.writeD(skill.getLevel());

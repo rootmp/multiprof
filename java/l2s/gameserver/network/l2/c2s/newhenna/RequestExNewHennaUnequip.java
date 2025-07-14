@@ -15,6 +15,7 @@ public class RequestExNewHennaUnequip implements IClientIncomingPacket
 {
 	private int _slotId;
 	private int _nCostItemId;
+
 	@Override
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
@@ -27,26 +28,25 @@ public class RequestExNewHennaUnequip implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
 		Henna henna;
-		if ((_slotId == 1) || (_slotId == 2) || (_slotId == 3) || (_slotId == 4))
+		if((_slotId == 1) || (_slotId == 2) || (_slotId == 3) || (_slotId == 4))
 		{
 			henna = player.getHenna(_slotId);
 
 			ItemRequiredId _cancelFee = henna.getCancelFee(_nCostItemId);
 
-			if (_cancelFee!=null && ItemFunctions.haveItem(player, _cancelFee.itemName, _cancelFee.count))//добавить возможность бесплатного снятия?
+			if(_cancelFee != null && ItemFunctions.haveItem(player, _cancelFee.itemName, _cancelFee.count))//добавить возможность бесплатного снятия?
 			{
 				player.removeHenna(_slotId);
 				ItemFunctions.deleteItem(player, _cancelFee.itemName, _cancelFee.count);
 
-				if (henna.getCancelCount() > 0)
+				if(henna.getCancelCount() > 0)
 					ItemFunctions.addItem(player, henna.getDyeItemId(), henna.getCancelCount());
 
 				player.sendPacket(new SystemMessage(SystemMessage.THE_SYMBOL_HAS_BEEN_DELETED));
-
 
 				player.sendPacket(new NewHennaUnequip(_slotId, 1));
 				player.applyDyePotenSkills();
@@ -65,6 +65,5 @@ public class RequestExNewHennaUnequip implements IClientIncomingPacket
 			player.sendPacket(new NewHennaUnequip(_slotId, 0));
 		}
 	}
-
 
 }

@@ -19,7 +19,7 @@ public class ExPvpBookList implements IClientOutgoingPacket
 	{
 		Pvpbook pvpbook = player.getPvpbook();
 		locationShowCount = 10;//pvpbook.getLocationHelpShowCount();//TODOD
-		teleportCount =1;
+		teleportCount = 1;
 		pvpbookInfos = pvpbook.getInfos(false);
 	}
 
@@ -29,7 +29,7 @@ public class ExPvpBookList implements IClientOutgoingPacket
 		packetWriter.writeD(locationShowCount); // Show locations count
 		packetWriter.writeD(teleportCount); // Teleports count
 		packetWriter.writeD(pvpbookInfos.size());
-		for (PvpbookInfo pvpbookInfo : pvpbookInfos)
+		for(PvpbookInfo pvpbookInfo : pvpbookInfos)
 		{
 			packetWriter.writeSizedString(pvpbookInfo.getKillerName()); // Char name
 			packetWriter.writeSizedString(pvpbookInfo.getKillerClanName()); // Clan name

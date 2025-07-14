@@ -34,7 +34,6 @@ public class RankingDAO
 	private static final String SQL_INSERT_PLAYER_RANK = "INSERT INTO ranking_main (`rank`, charId, name, level, classId, race, clanName, raceRank, classRank) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	private static final String SQL_SELECT_ALL_PLAYER_RANKS = "SELECT `rank`, charId, name, level, classId, race, clanName, raceRank, classRank FROM ranking_main";
 
-
 	private static final String SQL_DELETE_ALL_PET_RANKS = "TRUNCATE TABLE ranking_pet";
 	private static final String SQL_DELETE_ALL_PET_RANKS_SNAPSHOT = "TRUNCATE TABLE ranking_pet_snapshot";
 
@@ -47,7 +46,7 @@ public class RankingDAO
 	private static final String SQL_DELETE_ALL_OLYMPIAD_RANKS = "TRUNCATE TABLE ranking_olympiad";
 	private static final String SQL_INSERT_OLYMPIAD_RANK = "INSERT INTO ranking_olympiad (charId, name, clanName, level, classId, clanLevel, competitions_win, competitions_loose, olympiad_points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	private static final String SQL_SELECT_ALL_OLYMPIAD_RANKS = "SELECT o.*, c.sex FROM ranking_olympiad o LEFT JOIN characters c ON o.charId = c.obj_Id";
-	
+
 	private static final String SQL_DELETE_ALL_RANKS_SCORE = "TRUNCATE TABLE ranking_score";
 	private static final String SQL_INSERT_RANKS_SCORE = "INSERT INTO ranking_score (nRank, nCharId, sUserName, sPledgeName, nLevel, nClass, nRace, nRaceRank, nClassRank, nScore) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	private static final String SQL_SELECT_ALL_RANKS_SCORE = "SELECT * FROM ranking_score";

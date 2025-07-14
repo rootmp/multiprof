@@ -15,7 +15,7 @@ public class ConditionPlayerFlagged extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (_flagged)
+		if(_flagged)
 			return ((Player) env.character).getPvpFlag() > 0;
 		return ((Player) env.character).getPvpFlag() <= 0;
 	}

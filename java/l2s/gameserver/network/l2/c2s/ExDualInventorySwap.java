@@ -23,7 +23,7 @@ public class ExDualInventorySwap implements IClientIncomingPacket
 			return;
 		/*player.getStatsRecorder().block();
 		player.getInventory().lockModifyItemUpdates();
-
+		
 		
 		String str = player.getInventory().getPaperdollItemsToString();
 		for(ItemInstance item : player.getInventory().getPaperdollItems())
@@ -39,9 +39,9 @@ public class ExDualInventorySwap implements IClientIncomingPacket
 			HennaPoten hennaPoten = player.getHennaPoten(henna_slot);
 			hp.append(hennaPoten.getPotenId() + ",");
 		}
-
+		
 		player.setVar(PlayerVariables.INV_SLOT_INDEX_VAR, cSwapSlot);
-
+		
 		String[] dual_inv = player.getVar(PlayerVariables.INV_DUAL_VAR, "0-0").split(";");
 		
 		player.getInventory().lockModifyItemUpdates();
@@ -54,7 +54,7 @@ public class ExDualInventorySwap implements IClientIncomingPacket
 				if(param == null || param.length == 0)
 					continue;
 				int slot = Integer.parseInt(param[1]);
-
+		
 				ItemInstance item = player.getInventory().getItemByObjectId(Integer.valueOf(param[0]));
 				if(item != null && ItemFunctions.checkIfCanEquip(player, item) == null)
 				{
@@ -67,8 +67,8 @@ public class ExDualInventorySwap implements IClientIncomingPacket
 		{
 			player.potenSelect(henna_slot + 1, Integer.parseInt(hennaPoten[henna_slot]));
 		}
-
-
+		
+		
 		player.getInventory().unlockModifyItemUpdates();
 		player.getStatsRecorder().unblock();
 		

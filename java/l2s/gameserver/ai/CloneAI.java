@@ -28,10 +28,8 @@ public class CloneAI extends PlayableAI
 	protected void onEvtAttacked(Creature attacker, Skill skill, int damage)
 	{
 		FakePlayer actor = getActor();
-		if (attacker == actor.getPlayer())
-		{
-			return;
-		}
+		if(attacker == actor.getPlayer())
+		{ return; }
 		Attack(attacker, false, false);
 		super.onEvtAttacked(attacker, skill, damage);
 	}

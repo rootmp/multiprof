@@ -10,12 +10,12 @@ public class PkRankerScoreData
 	public int nLevel;
 	public int nClassId;
 	public int nRace;
-	
+
 	public int nClassRank;
 	public int nRaceRank;
 	public int nServerRank;
 	public int nScore;
-	
+
 	public PkRankerScoreData(int nCharId, String sUserName, String sPledgeName, int nLevel, int nClassId, int nRace, int nClassRank, int nRaceRank, int nServerRank, int nScore)
 	{
 		this.nCharId = nCharId;
@@ -52,7 +52,7 @@ public class PkRankerScoreData
 	{
 		this.sPledgeName = sPledgeName;
 	}
-	
+
 	public void setNLevel(int nLevel)
 	{
 		this.nLevel = nLevel;

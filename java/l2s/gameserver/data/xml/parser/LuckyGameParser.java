@@ -47,17 +47,17 @@ public final class LuckyGameParser extends AbstractParser<LuckyGameHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		Element configElement = rootElement.element("config");
-		if (configElement != null)
+		if(configElement != null)
 		{
 			Config.ALLOW_LUCKY_GAME_EVENT = Boolean.parseBoolean(configElement.attributeValue("allow"));
 			Config.LUCKY_GAME_UNIQUE_REWARD_GAMES_COUNT = Integer.parseInt(configElement.attributeValue("unique_reward_games_count"));
 			Config.LUCKY_GAME_ADDITIONAL_REWARD_GAMES_COUNT = Integer.parseInt(configElement.attributeValue("additional_rewards_games_count"));
 		}
 
-		if (!Config.ALLOW_LUCKY_GAME_EVENT)
+		if(!Config.ALLOW_LUCKY_GAME_EVENT)
 			return;
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("game"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("game"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -69,15 +69,15 @@ public final class LuckyGameParser extends AbstractParser<LuckyGameHolder>
 
 			LuckyGameData data = new LuckyGameData(type, feeItemId, feeItemCount, gamesLimit, reuse);
 
-			for (Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
 
-				if (secondElement.getName().equals("common_rewards"))
+				if(secondElement.getName().equals("common_rewards"))
 					data.addCommonRewards(parseRewards(secondElement));
-				else if (secondElement.getName().equals("unique_rewards"))
+				else if(secondElement.getName().equals("unique_rewards"))
 					data.addUniqueRewards(parseRewards(secondElement));
-				else if (secondElement.getName().equals("additional_rewards"))
+				else if(secondElement.getName().equals("additional_rewards"))
 					data.addAdditionalRewards(parseRewards(secondElement));
 			}
 
@@ -88,7 +88,7 @@ public final class LuckyGameParser extends AbstractParser<LuckyGameHolder>
 	private static List<LuckyGameItem> parseRewards(Element element)
 	{
 		List<LuckyGameItem> rewards = new ArrayList<LuckyGameItem>();
-		for (Iterator<Element> iterator = element.elementIterator("item"); iterator.hasNext();)
+		for(Iterator<Element> iterator = element.elementIterator("item"); iterator.hasNext();)
 		{
 			Element itemElement = iterator.next();
 

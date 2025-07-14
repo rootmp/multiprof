@@ -41,19 +41,19 @@ public final class KarmaIncreaseDataParser extends AbstractParser<KarmaIncreaseD
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("parameters".equalsIgnoreCase(element.getName()))
+			if("parameters".equalsIgnoreCase(element.getName()))
 			{
 				Config.KARMA_PENALTY_START_KARMA = Integer.parseInt(element.attributeValue("penalty_start_karma"));
 				Config.KARMA_PENALTY_DURATION_DEFAULT = Integer.parseInt(element.attributeValue("penalty_duration_default"));
 				Config.KARMA_DOWN_TIME_MULTIPLE = Integer.parseInt(element.attributeValue("down_time_multiple"));
 				Config.KARMA_CRIMINAL_DURATION_MULTIPLE = Integer.parseInt(element.attributeValue("criminal_duration_multiple"));
 			}
-			else if ("table".equalsIgnoreCase(element.getName()))
+			else if("table".equalsIgnoreCase(element.getName()))
 			{
-				for (Element e : element.elements())
+				for(Element e : element.elements())
 				{
 					int lvl = Integer.parseInt(e.attributeValue("lvl"));
 					double value = Double.parseDouble(e.attributeValue("value"));

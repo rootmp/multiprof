@@ -38,26 +38,26 @@ public final class NpcNameHolder extends AbstractHolder
 	{
 		Map<Integer, String> names = npcNames.get(lang);
 		String name = names.get(npcId);
-		if (name == null)
+		if(name == null)
 		{
 			Language secondLang = lang;
 			do
 			{
-				if (secondLang == secondLang.getSecondLanguage())
+				if(secondLang == secondLang.getSecondLanguage())
 					break;
 
 				secondLang = secondLang.getSecondLanguage();
 				names = npcNames.get(secondLang);
 				name = names.get(npcId);
 			}
-			while (name == null);
+			while(name == null);
 
-			if (name == null)
+			if(name == null)
 			{
-				for (Language l : Language.VALUES)
+				for(Language l : Language.VALUES)
 				{
 					names = npcNames.get(secondLang);
-					if ((name = names.get(npcId)) != null)
+					if((name = names.get(npcId)) != null)
 						break;
 				}
 			}
@@ -73,17 +73,17 @@ public final class NpcNameHolder extends AbstractHolder
 
 	public void load()
 	{
-		for (Language lang : Language.VALUES)
+		for(Language lang : Language.VALUES)
 		{
 			npcNames.put(lang, new HashMap<>());
 
-			if (!Config.AVAILABLE_LANGUAGES.contains(lang))
+			if(!Config.AVAILABLE_LANGUAGES.contains(lang))
 				continue;
 
 			File file = new File(Config.DATAPACK_ROOT, "data/parser/string/npcname/" + lang.getShortName() + ".txt");
-			if (!file.exists())
+			if(!file.exists())
 			{
-				if (!lang.isCustom())
+				if(!lang.isCustom())
 					warn("Not find file: " + file.getAbsolutePath());
 			}
 			else
@@ -95,15 +95,15 @@ public final class NpcNameHolder extends AbstractHolder
 					scanner = new Scanner(content);
 					int i = 0;
 					String line;
-					while (scanner.hasNextLine())
+					while(scanner.hasNextLine())
 					{
 						i++;
 						line = scanner.nextLine();
-						if (line.startsWith("#"))
+						if(line.startsWith("#"))
 							continue;
 
 						Matcher m = LINE_PATTERN.matcher(line);
-						if (m.find())
+						if(m.find())
 						{
 							int id = Integer.parseInt(m.group(1));
 							String value = m.group(2);
@@ -114,7 +114,7 @@ public final class NpcNameHolder extends AbstractHolder
 							error("Error on line #: " + i + "; file: " + file.getName());
 					}
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					error("Exception: " + e, e);
 				}
@@ -124,7 +124,7 @@ public final class NpcNameHolder extends AbstractHolder
 					{
 						scanner.close();
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						//
 					}
@@ -144,9 +144,9 @@ public final class NpcNameHolder extends AbstractHolder
 	@Override
 	public void log()
 	{
-		for (Map.Entry<Language, Map<Integer, String>> entry : npcNames.entrySet())
+		for(Map.Entry<Language, Map<Integer, String>> entry : npcNames.entrySet())
 		{
-			if (!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
+			if(!Config.AVAILABLE_LANGUAGES.contains(entry.getKey()))
 				continue;
 			info("Load npc names: " + entry.getValue().size() + " for Lang: " + entry.getKey());
 		}

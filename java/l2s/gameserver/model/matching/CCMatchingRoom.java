@@ -38,7 +38,7 @@ public class CCMatchingRoom extends MatchingRoom
 	@Override
 	public SystemMsg exitMessage(boolean toOthers, boolean kick)
 	{
-		if (!toOthers)
+		if(!toOthers)
 			return kick ? SystemMsg.YOU_WERE_EXPELLED_FROM_THE_COMMAND_CHANNEL_MATCHING_ROOM : SystemMsg.YOU_EXITED_FROM_THE_COMMAND_CHANNEL_MATCHING_ROOM;
 		else
 			return null;
@@ -102,10 +102,10 @@ public class CCMatchingRoom extends MatchingRoom
 	public void disband()
 	{
 		Party party = _leader.getParty();
-		if (party != null)
+		if(party != null)
 		{
 			CommandChannel commandChannel = party.getCommandChannel();
-			if (commandChannel != null)
+			if(commandChannel != null)
 				commandChannel.setMatchingRoom(null);
 		}
 
@@ -117,13 +117,13 @@ public class CCMatchingRoom extends MatchingRoom
 	{
 		final Party party = _leader.getParty();
 		final CommandChannel commandChannel = party != null ? party.getCommandChannel() : null;
-		if (member == _leader)
+		if(member == _leader)
 			return MatchingRoom.UNION_LEADER;
-		else if (member.getParty() == null)
+		else if(member.getParty() == null)
 			return MatchingRoom.WAIT_NORMAL;
-		else if (member.getParty() == party || (commandChannel != null && commandChannel.getParties().contains(member.getParty())))
+		else if(member.getParty() == party || (commandChannel != null && commandChannel.getParties().contains(member.getParty())))
 			return MatchingRoom.UNION_PARTY;
-		else if (member.getParty() != null)
+		else if(member.getParty() != null)
 			return MatchingRoom.WAIT_PARTY;
 		else
 			return MatchingRoom.WAIT_NORMAL;

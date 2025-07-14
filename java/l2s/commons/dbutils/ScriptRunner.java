@@ -108,7 +108,7 @@ public class ScriptRunner
 			boolean originalAutoCommit = connection.getAutoCommit();
 			try
 			{
-				if (originalAutoCommit != this.autoCommit)
+				if(originalAutoCommit != this.autoCommit)
 				{
 					connection.setAutoCommit(this.autoCommit);
 				}
@@ -119,11 +119,11 @@ public class ScriptRunner
 				connection.setAutoCommit(originalAutoCommit);
 			}
 		}
-		catch (IOException | SQLException e)
+		catch(IOException | SQLException e)
 		{
 			throw e;
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			throw new RuntimeException("Error running script.  Cause: " + e, e);
 		}
@@ -145,31 +145,31 @@ public class ScriptRunner
 		{
 			LineNumberReader lineReader = new LineNumberReader(reader);
 			String line;
-			while ((line = lineReader.readLine()) != null)
+			while((line = lineReader.readLine()) != null)
 			{
-				if (command == null)
+				if(command == null)
 				{
 					command = new StringBuffer();
 				}
 				String trimmedLine = line.trim();
 				final Matcher delimMatch = delimP.matcher(trimmedLine);
-				if (trimmedLine.length() < 1 || trimmedLine.startsWith("//"))
+				if(trimmedLine.length() < 1 || trimmedLine.startsWith("//"))
 				{
 					// Do nothing
 				}
-				else if (delimMatch.matches())
+				else if(delimMatch.matches())
 				{
 					setDelimiter(delimMatch.group(2), false);
 				}
-				else if (trimmedLine.startsWith("--"))
+				else if(trimmedLine.startsWith("--"))
 				{
 					println(trimmedLine);
 				}
-				else if (trimmedLine.length() < 1 || trimmedLine.startsWith("--"))
+				else if(trimmedLine.length() < 1 || trimmedLine.startsWith("--"))
 				{
 					// Do nothing
 				}
-				else if (!fullLineDelimiter && trimmedLine.endsWith(getDelimiter()) || fullLineDelimiter && trimmedLine.equals(getDelimiter()))
+				else if(!fullLineDelimiter && trimmedLine.endsWith(getDelimiter()) || fullLineDelimiter && trimmedLine.equals(getDelimiter()))
 				{
 					command.append(line.substring(0, line.lastIndexOf(getDelimiter())));
 					command.append(" ");
@@ -182,16 +182,16 @@ public class ScriptRunner
 					command.append("\n");
 				}
 			}
-			if (command != null)
+			if(command != null)
 			{
 				this.execCommand(conn, command, lineReader);
 			}
-			if (!autoCommit)
+			if(!autoCommit)
 			{
 				conn.commit();
 			}
 		}
-		catch (IOException e)
+		catch(IOException e)
 		{
 			throw new IOException(String.format("Error executing '%s': %s", command, e.getMessage()), e);
 		}
@@ -213,36 +213,34 @@ public class ScriptRunner
 		{
 			hasResults = statement.execute(command.toString());
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			final String errText = String.format("Error executing '%s' (line %d): %s", command, lineReader.getLineNumber(), e.getMessage());
 			printlnError(errText);
 			System.err.println(errText);
-			if (stopOnError)
-			{
-				throw new SQLException(errText, e);
-			}
+			if(stopOnError)
+			{ throw new SQLException(errText, e); }
 		}
 
-		if (autoCommit && !conn.getAutoCommit())
+		if(autoCommit && !conn.getAutoCommit())
 		{
 			conn.commit();
 		}
 
 		ResultSet rs = statement.getResultSet();
-		if (hasResults && rs != null)
+		if(hasResults && rs != null)
 		{
 			ResultSetMetaData md = rs.getMetaData();
 			int cols = md.getColumnCount();
-			for (int i = 1; i <= cols; i++)
+			for(int i = 1; i <= cols; i++)
 			{
 				String name = md.getColumnLabel(i);
 				print(name + "\t");
 			}
 			println("");
-			while (rs.next())
+			while(rs.next())
 			{
-				for (int i = 1; i <= cols; i++)
+				for(int i = 1; i <= cols; i++)
 				{
 					String value = rs.getString(i);
 					print(value + "\t");
@@ -255,7 +253,7 @@ public class ScriptRunner
 		{
 			statement.close();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			// Ignore to workaround a bug in Jakarta DBCP
 		}
@@ -270,7 +268,7 @@ public class ScriptRunner
 
 	private void print(Object o)
 	{
-		if (logWriter != null)
+		if(logWriter != null)
 		{
 			logWriter.print(o);
 		}
@@ -278,7 +276,7 @@ public class ScriptRunner
 
 	private void println(Object o)
 	{
-		if (logWriter != null)
+		if(logWriter != null)
 		{
 			logWriter.println(o);
 		}
@@ -286,7 +284,7 @@ public class ScriptRunner
 
 	private void printlnError(Object o)
 	{
-		if (errorLogWriter != null)
+		if(errorLogWriter != null)
 		{
 			errorLogWriter.println(o);
 		}
@@ -294,11 +292,11 @@ public class ScriptRunner
 
 	private void flush()
 	{
-		if (logWriter != null)
+		if(logWriter != null)
 		{
 			logWriter.flush();
 		}
-		if (errorLogWriter != null)
+		if(errorLogWriter != null)
 		{
 			errorLogWriter.flush();
 		}

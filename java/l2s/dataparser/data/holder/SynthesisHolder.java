@@ -1,6 +1,7 @@
 package l2s.dataparser.data.holder;
 
 import java.util.List;
+
 import l2s.commons.data.xml.AbstractHolder;
 import l2s.dataparser.data.annotations.Element;
 import l2s.dataparser.data.holder.synthesis.SynthesisData;
@@ -19,21 +20,21 @@ public class SynthesisHolder extends AbstractHolder
 	}
 
 	@Override
-	public void afterParsing() 
+	public void afterParsing()
 	{
-		if (synthesisData == null)
+		if(synthesisData == null)
 			return;
 
-		for (SynthesisData data : synthesisData)
+		for(SynthesisData data : synthesisData)
 		{
-			if (data.successItem != null)
+			if(data.successItem != null)
 			{
 				double rawChance = data.successItem.getChance();
 				double percentChance = rawChance / 10000.0;
 				data.successItem.setChance(percentChance);
 			}
 
-			if (data.failItem != null)
+			if(data.failItem != null)
 			{
 				double rawChance = data.failItem.getChance();
 				double percentChance = rawChance / 10000.0;
@@ -42,7 +43,6 @@ public class SynthesisHolder extends AbstractHolder
 		}
 		super.afterParsing();
 	}
-
 
 	public SynthesisData[] getDatas()
 	{
@@ -54,11 +54,11 @@ public class SynthesisHolder extends AbstractHolder
 		final ItemInstance item1 = player.getInventory().getItemByObjectId(nOneSlotServerID);
 		if(item1 == null)
 			return null;
-		
+
 		final ItemInstance item2 = player.getInventory().getItemByObjectId(nTwoSlotServerID);
 		if(item2 == null)
 			return null;
-		
+
 		SynthesisData data = null;
 		for(SynthesisData d : getDatas())
 		{
@@ -80,10 +80,10 @@ public class SynthesisHolder extends AbstractHolder
 				}
 			}
 		}
-		
-		return data; 
+
+		return data;
 	}
-	
+
 	@Override
 	public int size()
 	{

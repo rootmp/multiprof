@@ -23,13 +23,13 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 
 		List<Castle> castles = ResidenceHolder.getInstance().getResidenceList(Castle.class);
 		_infos = new ArrayList<CastleInfo>(castles.size());
-		for (Castle castle : castles)
+		for(Castle castle : castles)
 		{
 			ownerName = ClanTable.getInstance().getClanName(castle.getOwnerId());
 			id = castle.getId();
 			tax = castle.getTaxPercent();
 			side = castle.getResidenceSide().ordinal();
-			if (castle.getSiegeEvent() != null)
+			if(castle.getSiegeEvent() != null)
 			{
 				nextSiege = (int) (castle.getSiegeDate().getTimeInMillis() / 1000);
 				inSiege = castle.getSiegeEvent().isInProgress();
@@ -49,7 +49,7 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 		// temp fix for world map, while castle siege only giran
 		// packetWriter.writeD(_infos.size());
 		packetWriter.writeD(6);
-		for (int i = 1; i < 3; i++)
+		for(int i = 1; i < 3; i++)
 		{
 			packetWriter.writeD(i);
 			packetWriter.writeS(StringUtils.EMPTY);
@@ -58,7 +58,7 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 			packetWriter.writeC(0);
 			packetWriter.writeC(0);
 		}
-		for (CastleInfo info : _infos)
+		for(CastleInfo info : _infos)
 		{
 			packetWriter.writeD(info._id);
 			packetWriter.writeS(info._ownerName);
@@ -68,7 +68,7 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 			packetWriter.writeC(info._side);
 		}
 		_infos.clear();
-		for (int i = 4; i < 7; i++)
+		for(int i = 4; i < 7; i++)
 		{
 			packetWriter.writeD(i);
 			packetWriter.writeS(StringUtils.EMPTY);

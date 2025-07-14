@@ -14,6 +14,10 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2s.commons.dao.JdbcEntity;
 import l2s.commons.dao.JdbcEntityState;
 import l2s.commons.dbutils.DbUtils;
@@ -39,11 +43,6 @@ import l2s.gameserver.templates.StatsSet;
 import l2s.gameserver.templates.item.ItemTemplate;
 import l2s.gameserver.templates.residence.ResidenceFunctionTemplate;
 import l2s.gameserver.utils.ReflectionUtils;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
-import gnu.trove.set.TIntSet;
-import gnu.trove.set.hash.TIntHashSet;
 
 /**
  * @reworked VISTALL
@@ -222,9 +221,9 @@ public abstract class Residence implements JdbcEntity
 
 	public void banishForeigner(int clanId)
 	{
-		for (Player player : _zone.getInsidePlayers())
+		for(Player player : _zone.getInsidePlayers())
 		{
-			if (player.getClanId() == getOwnerId())
+			if(player.getClanId() == getOwnerId())
 				continue;
 
 			player.teleToLocation(getBanishPoint());
@@ -237,11 +236,11 @@ public abstract class Residence implements JdbcEntity
 	public void rewardSkills()
 	{
 		Clan owner = getOwner();
-		if (owner != null)
+		if(owner != null)
 		{
-			for (SkillEntry skillEntry : getSkills())
+			for(SkillEntry skillEntry : getSkills())
 			{
-				if (owner.addSkill(skillEntry, false) == null)
+				if(owner.addSkill(skillEntry, false) == null)
 					owner.broadcastToOnlineMembers(new SystemMessagePacket(SystemMsg.THE_CLAN_SKILL_S1_HAS_BEEN_ADDED).addSkillName(skillEntry));
 			}
 		}
@@ -253,9 +252,9 @@ public abstract class Residence implements JdbcEntity
 	public void removeSkills()
 	{
 		Clan owner = getOwner();
-		if (owner != null)
+		if(owner != null)
 		{
-			for (SkillEntry skillEntry : getSkills())
+			for(SkillEntry skillEntry : getSkills())
 				owner.removeSkill(skillEntry.getId(), false);
 		}
 	}
@@ -271,12 +270,12 @@ public abstract class Residence implements JdbcEntity
 			statement = con.prepareStatement("SELECT * FROM residence_functions WHERE residence_id=?");
 			statement.setInt(1, getId());
 			rs = statement.executeQuery();
-			while (rs.next())
+			while(rs.next())
 			{
 				ResidenceFunctionType type = ResidenceFunctionType.VALUES[rs.getInt("type")];
 
 				ResidenceFunctionTemplate functionTemplate = ResidenceFunctionsHolder.getInstance().getTemplate(type, rs.getInt("level"));
-				if (functionTemplate == null || !isFunctionAvailable(functionTemplate))
+				if(functionTemplate == null || !isFunctionAvailable(functionTemplate))
 				{
 					removeFunction(type);
 					continue;
@@ -291,7 +290,7 @@ public abstract class Residence implements JdbcEntity
 				startAutoTaskForFunction(function);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Residence: loadFunctions(): " + e, e);
 		}
@@ -319,16 +318,16 @@ public abstract class Residence implements JdbcEntity
 	public boolean updateFunctions(ResidenceFunctionType type, int level)
 	{
 		Clan clan = getOwner();
-		if (clan == null)
+		if(clan == null)
 			return false;
 
 		ResidenceFunction activeFunction = getActiveFunction(type);
-		if (activeFunction != null && activeFunction.getLevel() == level)
+		if(activeFunction != null && activeFunction.getLevel() == level)
 			return true;
 
-		if (level == 0)
+		if(level == 0)
 		{
-			if (activeFunction != null)
+			if(activeFunction != null)
 			{
 				removeFunction(type);
 				return true;
@@ -338,14 +337,14 @@ public abstract class Residence implements JdbcEntity
 		}
 
 		ResidenceFunctionTemplate functionTemplate = ResidenceFunctionsHolder.getInstance().getTemplate(type, level);
-		if (!isFunctionAvailable(functionTemplate))
+		if(!isFunctionAvailable(functionTemplate))
 			return false;
 
 		long clanAdenaCount = clan.getAdenaCount();
 		long lease = functionTemplate.getCost();
-		if (activeFunction == null)
+		if(activeFunction == null)
 		{
-			if (clanAdenaCount >= lease)
+			if(clanAdenaCount >= lease)
 				clan.getWarehouse().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, lease);
 			else
 				return false;
@@ -353,9 +352,9 @@ public abstract class Residence implements JdbcEntity
 		else
 		{
 			long activeFunctionLease = activeFunction.getTemplate().getCost() / activeFunction.getTemplate().getPeriod() * functionTemplate.getPeriod();
-			if (clanAdenaCount >= lease - activeFunctionLease)
+			if(clanAdenaCount >= lease - activeFunctionLease)
 			{
-				if (lease > activeFunctionLease)
+				if(lease > activeFunctionLease)
 					clan.getWarehouse().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, lease - activeFunctionLease);
 			}
 			else
@@ -383,7 +382,7 @@ public abstract class Residence implements JdbcEntity
 			statement.setInt(4, (int) (time / 1000));
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: updateFunctions(ResidenceFunctionType,int): " + e);
 		}
@@ -406,7 +405,7 @@ public abstract class Residence implements JdbcEntity
 			statement.setInt(2, type.ordinal());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: removeFunction(int type): " + e);
 		}
@@ -428,7 +427,7 @@ public abstract class Residence implements JdbcEntity
 			statement.setInt(1, getId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Exception: removeFunctions(): " + e);
 		}
@@ -442,20 +441,20 @@ public abstract class Residence implements JdbcEntity
 	private void startAutoTaskForFunction(ResidenceFunction function)
 	{
 		Clan clan = getOwner();
-		if (clan == null)
+		if(clan == null)
 			return;
 
-		if (function.getEndTimeInMillis() > System.currentTimeMillis())
+		if(function.getEndTimeInMillis() > System.currentTimeMillis())
 			ThreadPoolManager.getInstance().schedule(new AutoTaskForFunctions(function), function.getEndTimeInMillis() - System.currentTimeMillis());
-		else if (function.isInDebt() && clan.getAdenaCount() >= function.getTemplate().getCost()) // if player didn't
-																									// pay before add
-																									// extra fee
+		else if(function.isInDebt() && clan.getAdenaCount() >= function.getTemplate().getCost()) // if player didn't
+		// pay before add
+		// extra fee
 		{
 			clan.getWarehouse().destroyItemByItemId(ItemTemplate.ITEM_ID_ADENA, function.getTemplate().getCost());
 			function.updateRentTime(false);
 			ThreadPoolManager.getInstance().schedule(new AutoTaskForFunctions(function), function.getEndTimeInMillis() - System.currentTimeMillis());
 		}
-		else if (!function.isInDebt())
+		else if(!function.isInDebt())
 		{
 			function.setInDebt(true);
 			function.updateRentTime(true);
@@ -509,7 +508,7 @@ public abstract class Residence implements JdbcEntity
 	{
 		_cycle = 0;
 		_paidCycle = 0;
-		if (_cycleTask != null)
+		if(_cycleTask != null)
 		{
 			_cycleTask.cancel(false);
 			_cycleTask = null;
@@ -520,15 +519,15 @@ public abstract class Residence implements JdbcEntity
 
 	public void startCycleTask()
 	{
-		if (_owner == null)
+		if(_owner == null)
 			return;
 
 		long ownedTime = getOwnDate().getTimeInMillis();
-		if (ownedTime == 0)
+		if(ownedTime == 0)
 			return;
 
 		long diff = System.currentTimeMillis() - ownedTime;
-		while (diff >= CYCLE_TIME)
+		while(diff >= CYCLE_TIME)
 			diff -= CYCLE_TIME;
 
 		_cycleTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new ResidenceCycleTask(), diff, CYCLE_TIME);
@@ -567,28 +566,28 @@ public abstract class Residence implements JdbcEntity
 
 	public Location getBanishPoint()
 	{
-		if (_banishPoints.isEmpty())
+		if(_banishPoints.isEmpty())
 			return null;
 		return _banishPoints.get(Rnd.get(_banishPoints.size()));
 	}
 
 	public Location getOwnerRestartPoint()
 	{
-		if (_ownerRestartPoints.isEmpty())
+		if(_ownerRestartPoints.isEmpty())
 			return null;
 		return _ownerRestartPoints.get(Rnd.get(_ownerRestartPoints.size()));
 	}
 
 	public Location getOtherRestartPoint()
 	{
-		if (_otherRestartPoints.isEmpty())
+		if(_otherRestartPoints.isEmpty())
 			return null;
 		return _otherRestartPoints.get(Rnd.get(_otherRestartPoints.size()));
 	}
 
 	public Location getChaosRestartPoint()
 	{
-		if (_chaosRestartPoints.isEmpty())
+		if(_chaosRestartPoints.isEmpty())
 			return null;
 		return _chaosRestartPoints.get(Rnd.get(_chaosRestartPoints.size()));
 	}
@@ -605,7 +604,7 @@ public abstract class Residence implements JdbcEntity
 
 	public long getCycleDelay()
 	{
-		if (_cycleTask == null)
+		if(_cycleTask == null)
 			return 0;
 		return _cycleTask.getDelay(TimeUnit.SECONDS);
 	}
@@ -648,7 +647,7 @@ public abstract class Residence implements JdbcEntity
 
 	public boolean isFunctionAvailable(ResidenceFunctionTemplate template)
 	{
-		if (getVisibleFunctionLevel(template.getLevel()) <= 0)
+		if(getVisibleFunctionLevel(template.getLevel()) <= 0)
 			return false;
 		return _availableFunctions.contains(template.getId());
 	}
@@ -656,9 +655,9 @@ public abstract class Residence implements JdbcEntity
 	public List<ResidenceFunctionTemplate> getAvailableFunctions(ResidenceFunctionType type)
 	{
 		List<ResidenceFunctionTemplate> functions = new ArrayList<ResidenceFunctionTemplate>();
-		for (ResidenceFunctionTemplate template : ResidenceFunctionsHolder.getInstance().getTemplates(type))
+		for(ResidenceFunctionTemplate template : ResidenceFunctionsHolder.getInstance().getTemplates(type))
 		{
-			if (isFunctionAvailable(template))
+			if(isFunctionAvailable(template))
 				functions.add(template);
 		}
 		return functions;

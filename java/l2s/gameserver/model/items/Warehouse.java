@@ -32,20 +32,18 @@ public abstract class Warehouse extends ItemContainer
 		@Override
 		public int compare(ItemInstance o1, ItemInstance o2)
 		{
-			if ((o1 == null) || (o2 == null))
-			{
-				return 0;
-			}
+			if((o1 == null) || (o2 == null))
+			{ return 0; }
 			int diff = o1.getExType().mask() - o2.getExType().mask();
-			if (diff == 0)
+			if(diff == 0)
 			{
 				diff = o1.getGrade().ordinal() - o2.getGrade().ordinal();
 			}
-			if (diff == 0)
+			if(diff == 0)
 			{
 				diff = o1.getItemId() - o2.getItemId();
 			}
-			if (diff == 0)
+			if(diff == 0)
 			{
 				diff = o1.getEnchantLevel() - o2.getEnchantLevel();
 			}
@@ -75,7 +73,7 @@ public abstract class Warehouse extends ItemContainer
 		readLock();
 		try
 		{
-			for (ItemInstance item : _items)
+			for(ItemInstance item : _items)
 			{
 				result.add(item);
 			}
@@ -99,7 +97,7 @@ public abstract class Warehouse extends ItemContainer
 		item.setOwnerId(getOwnerId());
 		item.setLocation(getItemLocation());
 		item.setLocData(0);
-		if (item.getJdbcState().isSavable())
+		if(item.getJdbcState().isSavable())
 		{
 			item.save();
 		}
@@ -139,7 +137,7 @@ public abstract class Warehouse extends ItemContainer
 		{
 			Collection<ItemInstance> items = _itemsDAO.getItemsByOwnerIdAndLoc(ownerId, getItemLocation());
 
-			for (ItemInstance item : items)
+			for(ItemInstance item : items)
 			{
 				_items.add(item);
 			}

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.pledge.SubUnit;
 import l2s.gameserver.model.pledge.UnitMember;
@@ -28,7 +28,7 @@ public class PledgeShowMemberListUpdatePacket implements IClientOutgoingPacket
 		_pledgeType = player.getPledgeType();
 		SubUnit subUnit = player.getSubUnit();
 		UnitMember member = subUnit == null ? null : subUnit.getUnitMember(_objectId);
-		if (member != null)
+		if(member != null)
 		{
 			_isApprentice = member.hasSponsor() ? 1 : 0;
 			_attendance = member.getAttendanceType().ordinal();

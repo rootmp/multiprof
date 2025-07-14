@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Request;
@@ -25,21 +26,21 @@ public class RequestAnswerJoinAlly implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null || !request.isTypeOf(L2RequestType.ALLY))
+		if(request == null || !request.isTypeOf(L2RequestType.ALLY))
 			return;
 
-		if (!request.isInProgress())
+		if(!request.isInProgress())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.isOutOfControl())
+		if(activeChar.isOutOfControl())
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
@@ -47,7 +48,7 @@ public class RequestAnswerJoinAlly implements IClientIncomingPacket
 		}
 
 		Player requestor = request.getRequestor();
-		if (requestor == null)
+		if(requestor == null)
 		{
 			request.cancel();
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -55,21 +56,21 @@ public class RequestAnswerJoinAlly implements IClientIncomingPacket
 			return;
 		}
 
-		if (requestor.getRequest() != request)
+		if(requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (requestor.getAlliance() == null)
+		if(requestor.getAlliance() == null)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_response == 0)
+		if(_response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_INVITE_A_CLAN_INTO_THE_ALLIANCE);

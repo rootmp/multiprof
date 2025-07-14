@@ -24,18 +24,18 @@ public class ExQuestItemListPacket implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeC(_sendType);
-		if (_sendType == 1)
+		if(_sendType == 1)
 		{
 			packetWriter.writeH(0x00); // UNK
 			packetWriter.writeD(_size);
 		}
-		else if (_sendType == 2)
+		else if(_sendType == 2)
 		{
 			packetWriter.writeD(_size);
 			packetWriter.writeD(_size);
-			for (ItemInstance temp : _items)
+			for(ItemInstance temp : _items)
 			{
-				if (!temp.getTemplate().isQuest())
+				if(!temp.getTemplate().isQuest())
 				{
 					continue;
 				}

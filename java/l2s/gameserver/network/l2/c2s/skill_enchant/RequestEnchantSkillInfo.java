@@ -19,7 +19,7 @@ public class RequestEnchantSkillInfo implements IClientIncomingPacket
 		_skillId = packet.readD();
 		_skillLevel = packet.readH();
 		_skillSubLevel = packet.readH();
-		
+
 		return true;
 	}
 
@@ -30,21 +30,21 @@ public class RequestEnchantSkillInfo implements IClientIncomingPacket
 		if(player == null)
 			return;
 		final Skill skill = SkillHolder.getInstance().getSkill(_skillId, _skillLevel, _skillSubLevel);
-		if ((skill == null) || (skill.getId() != _skillId))
+		if((skill == null) || (skill.getId() != _skillId))
 			return;
-/*
-		final Set<Integer> route = EnchantSkillGroupsData.getInstance().getRouteForSkill(_skillId, _skillLevel);
-		if (route.isEmpty())
-		{
-			return;
-		}
-		
-		final Skill playerSkill = player.getKnownSkill(_skillId);
-		if ((playerSkill.getLevel() != _skillLevel) || (playerSkill.getSubLevel() != _skillSubLevel))
-		{
-			return;
-		}
-		
-		player.sendPacket(new ExEnchantSkillInfo(_skillId, _skillLevel, _skillSubLevel, playerSkill.getSubLevel()));*/
+		/*
+				final Set<Integer> route = EnchantSkillGroupsData.getInstance().getRouteForSkill(_skillId, _skillLevel);
+				if (route.isEmpty())
+				{
+					return;
+				}
+				
+				final Skill playerSkill = player.getKnownSkill(_skillId);
+				if ((playerSkill.getLevel() != _skillLevel) || (playerSkill.getSubLevel() != _skillSubLevel))
+				{
+					return;
+				}
+				
+				player.sendPacket(new ExEnchantSkillInfo(_skillId, _skillLevel, _skillSubLevel, playerSkill.getSubLevel()));*/
 	}
 }

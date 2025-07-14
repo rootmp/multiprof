@@ -22,13 +22,13 @@ public final class FloodProtectorConfigs
 		final ExProperties floodProtectors = Config.load(FLOOD_PROTECTOR_FILE);
 
 		String[] floodProtectorTypes = floodProtectors.getProperty("FLOOD_PROTECTORS_TYPES", "").split(";");
-		for (String type : floodProtectorTypes)
+		for(String type : floodProtectorTypes)
 		{
-			if (StringUtils.isEmpty(type))
+			if(StringUtils.isEmpty(type))
 				continue;
 
 			FloodProtectorConfig floodProtector = FloodProtectorConfig.load(type, floodProtectors);
-			if (floodProtector == null)
+			if(floodProtector == null)
 				continue;
 
 			FLOOD_PROTECTORS.add(floodProtector);

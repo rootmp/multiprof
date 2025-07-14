@@ -54,18 +54,18 @@ public final class BuyListTemplate
 		int currentTime = (int) (System.currentTimeMillis() / 60000L);
 
 		List<TradeItem> result = new ArrayList<TradeItem>();
-		for (TradeItem ti : _items)
+		for(TradeItem ti : _items)
 		{
 			// А не пора ли обновить количество лимитированных предметов в трейд листе?
-			if (ti.isCountLimited())
+			if(ti.isCountLimited())
 			{
-				if (ti.getCurrentValue() < ti.getCount() && (ti.getLastRechargeTime() + ti.getRechargeTime()) <= currentTime)
+				if(ti.getCurrentValue() < ti.getCount() && (ti.getLastRechargeTime() + ti.getRechargeTime()) <= currentTime)
 				{
 					ti.setLastRechargeTime(currentTime);
 					ti.setCurrentValue(ti.getCount());
 				}
 
-				if (ti.getCurrentValue() == 0)
+				if(ti.getCurrentValue() == 0)
 					continue;
 			}
 
@@ -76,9 +76,9 @@ public final class BuyListTemplate
 
 	public TradeItem getItemByItemId(int itemId)
 	{
-		for (TradeItem item : _items)
+		for(TradeItem item : _items)
 		{
-			if (item.getItemId() == itemId)
+			if(item.getItemId() == itemId)
 				return item;
 		}
 		return null;
@@ -86,20 +86,20 @@ public final class BuyListTemplate
 
 	public synchronized void updateItems(List<TradeItem> items)
 	{
-		for (TradeItem item : items)
+		for(TradeItem item : items)
 		{
 			TradeItem ti = getItemByItemId(item.getItemId());
 
-			if (ti.isCountLimited())
+			if(ti.isCountLimited())
 				ti.setCurrentValue(Math.max(ti.getCurrentValue() - item.getCount(), 0));
 		}
 	}
 
 	public void refresh()
 	{
-		for (TradeItem ti : _items)
+		for(TradeItem ti : _items)
 		{
-			if (ti.isCountLimited())
+			if(ti.isCountLimited())
 			{
 				ti.setLastRechargeTime((int) (System.currentTimeMillis() / 60000));
 				ti.setCurrentValue(ti.getCount());
@@ -111,7 +111,7 @@ public final class BuyListTemplate
 	public BuyListTemplate clone()
 	{
 		BuyListTemplate template = new BuyListTemplate(getNpcId(), getId(), getBaseMarkup());
-		for (TradeItem item : getItems())
+		for(TradeItem item : getItems())
 			template.addItem(item.clone());
 		return template;
 	}

@@ -1,9 +1,8 @@
 package l2s.gameserver.templates.npc;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.network.l2.components.NpcString;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -62,7 +61,7 @@ public class RandomActions
 
 	public Action getAction(int id)
 	{
-		if (_randomOrder)
+		if(_randomOrder)
 		{
 			Action[] actionsArr = _actions.values(new Action[_actions.size()]);
 			return actionsArr[Rnd.get(actionsArr.length)];

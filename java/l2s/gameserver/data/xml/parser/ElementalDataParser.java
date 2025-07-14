@@ -47,16 +47,16 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("configs"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("configs"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			Config.ELEMENTAL_SYSTEM_ENABLED = Boolean.parseBoolean(element.attributeValue("enabled"));
-			for (Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
+			for(Iterator<Element> secondIterator = element.elementIterator(); secondIterator.hasNext();)
 			{
 				Element secondElement = secondIterator.next();
 
-				if (secondElement.getName().equalsIgnoreCase("reset_points_cost"))
+				if(secondElement.getName().equalsIgnoreCase("reset_points_cost"))
 				{
 					Config.ELEMENTAL_RESET_POINTS_ITEM_ID = Integer.parseInt(secondElement.attributeValue("item_id"));
 					Config.ELEMENTAL_RESET_POINTS_ITEM_COUNT = Long.parseLong(secondElement.attributeValue("item_count"));
@@ -64,16 +64,16 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 			}
 		}
 
-		for (Iterator<Element> iterator = rootElement.elementIterator("elemental"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("elemental"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			ElementalTemplate template = new ElementalTemplate(ElementalElement.valueOf(element.attributeValue("element").toUpperCase()));
-			for (Iterator<Element> absorbItemsIterator = element.elementIterator("absorb_items"); absorbItemsIterator.hasNext();)
+			for(Iterator<Element> absorbItemsIterator = element.elementIterator("absorb_items"); absorbItemsIterator.hasNext();)
 			{
 				Element absorbItemsElement = absorbItemsIterator.next();
 
-				for (Iterator<Element> absorbItemIterator = absorbItemsElement.elementIterator("absorb_item"); absorbItemIterator.hasNext();)
+				for(Iterator<Element> absorbItemIterator = absorbItemsElement.elementIterator("absorb_item"); absorbItemIterator.hasNext();)
 				{
 					Element absorbItemElement = absorbItemIterator.next();
 
@@ -83,16 +83,16 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 				}
 			}
 
-			for (Iterator<Element> evolutionIterator = element.elementIterator("evolution"); evolutionIterator.hasNext();)
+			for(Iterator<Element> evolutionIterator = element.elementIterator("evolution"); evolutionIterator.hasNext();)
 			{
 				Element evolutionElement = evolutionIterator.next();
 
 				int evolutionLevel = Integer.parseInt(evolutionElement.attributeValue("level"));
 				ElementalEvolution evolution = new ElementalEvolution(template.getElement(), evolutionLevel);
-				for (Iterator<Element> thirdIterator = evolutionElement.elementIterator(); thirdIterator.hasNext();)
+				for(Iterator<Element> thirdIterator = evolutionElement.elementIterator(); thirdIterator.hasNext();)
 				{
 					Element thirdElement = thirdIterator.next();
-					if (thirdElement.getName().equalsIgnoreCase("limits"))
+					if(thirdElement.getName().equalsIgnoreCase("limits"))
 					{
 						int maxAttackPoints = Integer.parseInt(thirdElement.attributeValue("max_attack_points"));
 						int maxDefencePoints = Integer.parseInt(thirdElement.attributeValue("max_defence_points"));
@@ -100,9 +100,9 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 						int maxCritAttackPoints = Integer.parseInt(thirdElement.attributeValue("max_crit_attack_points"));
 						evolution.setLimits(maxAttackPoints, maxDefencePoints, maxCritRatePoints, maxCritAttackPoints);
 					}
-					else if (thirdElement.getName().equalsIgnoreCase("rise_level_cost"))
+					else if(thirdElement.getName().equalsIgnoreCase("rise_level_cost"))
 					{
-						for (Iterator<Element> riseLevelCostIterator = thirdElement.elementIterator("cost_item"); riseLevelCostIterator.hasNext();)
+						for(Iterator<Element> riseLevelCostIterator = thirdElement.elementIterator("cost_item"); riseLevelCostIterator.hasNext();)
 						{
 							Element riseLevelCostElement = riseLevelCostIterator.next();
 
@@ -111,9 +111,9 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 							evolution.addRiseLevelCost(new ItemData(id, count));
 						}
 					}
-					else if (thirdElement.getName().equalsIgnoreCase("datas"))
+					else if(thirdElement.getName().equalsIgnoreCase("datas"))
 					{
-						for (Iterator<Element> dataIterator = thirdElement.elementIterator("data"); dataIterator.hasNext();)
+						for(Iterator<Element> dataIterator = thirdElement.elementIterator("data"); dataIterator.hasNext();)
 						{
 							Element dataElement = dataIterator.next();
 
@@ -124,14 +124,14 @@ public final class ElementalDataParser extends AbstractParser<ElementalDataHolde
 							int critAttack = dataElement.attributeValue("crit_attack") != null ? Integer.parseInt(dataElement.attributeValue("crit_attack")) : 0;
 							long exp = dataElement.attributeValue("exp") != null ? Long.parseLong(dataElement.attributeValue("exp")) : 0L;
 							ElementalLevelData levelData = new ElementalLevelData(level, attack, defence, critRate, critAttack, exp);
-							for (Iterator<Element> extractIterator = dataElement.elementIterator("extract"); extractIterator.hasNext();)
+							for(Iterator<Element> extractIterator = dataElement.elementIterator("extract"); extractIterator.hasNext();)
 							{
 								Element extractElement = extractIterator.next();
 
 								int extractItemId = Integer.parseInt(extractElement.attributeValue("item_id"));
 								long extractItemCount = Long.parseLong(extractElement.attributeValue("item_count"));
 								levelData.setExtractItem(new ItemData(extractItemId, extractItemCount));
-								for (Iterator<Element> costItemIterator = extractElement.elementIterator("cost_item"); costItemIterator.hasNext();)
+								for(Iterator<Element> costItemIterator = extractElement.elementIterator("cost_item"); costItemIterator.hasNext();)
 								{
 									Element costItemElement = costItemIterator.next();
 

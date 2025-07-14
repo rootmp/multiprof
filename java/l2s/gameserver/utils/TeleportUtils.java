@@ -32,30 +32,30 @@ public class TeleportUtils
 		final TeleportPoint teleportPoint = new TeleportPoint();
 
 		Reflection r = player.getReflection();
-		if (!r.isMain())
+		if(!r.isMain())
 		{
-			if (r.getCoreLoc() != null)
+			if(r.getCoreLoc() != null)
 				return teleportPoint.setLoc(r.getCoreLoc());
-			else if (r.getReturnLoc() != null)
+			else if(r.getReturnLoc() != null)
 				return teleportPoint.setLoc(r.getReturnLoc());
 		}
 
 		Clan clan = player.getClan();
-		if (clan != null)
+		if(clan != null)
 		{
 			int residenceId = 0;
-			if (restartType == RestartType.TO_CLANHALL) // If teleport to clan hall
+			if(restartType == RestartType.TO_CLANHALL) // If teleport to clan hall
 				residenceId = clan.getHasHideout();
-			else if (restartType == RestartType.TO_CASTLE) // If teleport to castle
+			else if(restartType == RestartType.TO_CASTLE) // If teleport to castle
 				residenceId = clan.getCastle();
 
-			if (residenceId != 0)
+			if(residenceId != 0)
 			{
 				Residence residence = ResidenceHolder.getInstance().getResidence(residenceId);
-				if (residence != null)
+				if(residence != null)
 				{
 					Reflection reflection = residence.getReflection(clan.getClanId());
-					if (reflection != null)
+					if(reflection != null)
 					{
 						teleportPoint.setLoc(residence.getOwnerRestartPoint());
 						teleportPoint.setReflection(reflection);
@@ -65,19 +65,19 @@ public class TeleportUtils
 			}
 		}
 
-		if (player.isPK())
+		if(player.isPK())
 		{
-			if (player.getPKRestartPoint() != null)
+			if(player.getPKRestartPoint() != null)
 				return teleportPoint.setLoc(player.getPKRestartPoint());
 		}
 		else
 		{
-			if (player.getRestartPoint() != null)
+			if(player.getRestartPoint() != null)
 				return teleportPoint.setLoc(player.getRestartPoint());
 		}
 
 		RestartArea ra = MapRegionManager.getInstance().getRegionData(RestartArea.class, from);
-		if (ra != null)
+		if(ra != null)
 		{
 			RestartPoint rp = ra.getRestartPoint().get(player.getRace());
 

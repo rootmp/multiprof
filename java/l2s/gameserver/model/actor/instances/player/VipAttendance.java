@@ -36,7 +36,7 @@ public class VipAttendance
 	{
 		_owner = owner;
 	}
-	
+
 	public void restore()
 	{
 		if(!Config.VIP_ATTENDANCE_REWARDS_ENABLED)
@@ -46,17 +46,17 @@ public class VipAttendance
 	}
 
 	//количество "доступных" дней с момента старта ивента 
-	public int daysPassedSinceStartDate() 
+	public int daysPassedSinceStartDate()
 	{
 		if(Config.VIP_ATTENDANCE_REWARDS_START_DATE == null)
 			return 0;
 		LocalDateTime currentDateTime = LocalDateTime.now();
-		return (int) ChronoUnit.DAYS.between(Config.VIP_ATTENDANCE_REWARDS_START_DATE, currentDateTime)+1;
+		return (int) ChronoUnit.DAYS.between(Config.VIP_ATTENDANCE_REWARDS_START_DATE, currentDateTime) + 1;
 	}
 
 	public boolean isAvailable()
 	{
-		long nextRewardTime = TimeUtils.DAILY_DATE_PATTERN.next(vipAttendanceData.getInteger("dateLastReward",0) * 1000L);
+		long nextRewardTime = TimeUtils.DAILY_DATE_PATTERN.next(vipAttendanceData.getInteger("dateLastReward", 0) * 1000L);
 		if(nextRewardTime <= System.currentTimeMillis())
 			return true;
 		return false;
@@ -66,15 +66,15 @@ public class VipAttendance
 	{
 		return getRewardDay() == daysPassedSinceStartDate();
 	}
-	
+
 	public void receiveReward(int bResult)
 	{
 		List<AttendanceRewardData> _reward = new ArrayList<AttendanceRewardData>();
 		if(getAttendanceDay() - getRewardDay() <= 0)
 			return;
-		
+
 		int _bResult = Math.max(getAttendanceDay(), bResult);
-		for(int i = getRewardDay()+1; i <= _bResult;i++)
+		for(int i = getRewardDay() + 1; i <= _bResult; i++)
 		{
 			AttendanceRewardData reward = AttendanceRewardHolder.getInstance().getReward(i, _owner.hasPremiumAccount());
 			if(reward == null)
@@ -82,7 +82,7 @@ public class VipAttendance
 				_owner.sendPacket(SystemMsg.DUE_TO_A_SYSTEM_ERROR_THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_PLEASE_TRY_AGAIN_LATER_BY_GOING_TO_MENU__ATTENDANCE_CHECK);
 				return;
 			}
-			
+
 			if(Config.VIP_ATTENDANCE_REWARDS_REWARD_ONLY_PREMIUM && !_owner.hasPremiumAccount())
 				return;
 
@@ -91,18 +91,18 @@ public class VipAttendance
 				_owner.sendPacket(SystemMsg.THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_BECAUSE_THE_INVENTORY_WEIGHTQUANTITY_LIMIT_HAS_BEEN_EXCEEDED);
 				return;
 			}
-			
+
 			if(!_owner.hasPremiumAccount())
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUVE_RECEIVED_YOUR_ATTENDANCE_REWARD_FOR_DAY_S1_).addInteger(i));
 			else
 				_owner.sendPacket(new SystemMessagePacket(SystemMsg.YOUVE_RECEIVED_YOUR_PC_CAF_ATTENDANCE_REWARD_FOR_DAY_S1_).addInteger(i));
 			_reward.add(reward);
-			
+
 		}
 		vipAttendanceData.set("cRewardDay", _bResult);
-		_reward.forEach( r->ItemFunctions.addItem(_owner, r.getId(), r.getCount(), true));
-		 VipAttendanceDAO.getInstance().insert(vipAttendanceData);
-		 startTasks();
+		_reward.forEach(r -> ItemFunctions.addItem(_owner, r.getId(), r.getCount(), true));
+		VipAttendanceDAO.getInstance().insert(vipAttendanceData);
+		startTasks();
 	}
 
 	public void startTasks()
@@ -110,8 +110,7 @@ public class VipAttendance
 		stopTasks();
 		if(isAvailable() && daysPassedSinceStartDate() > getAttendanceDay())
 		{
-			_loginDelayTask = ThreadPoolManager.getInstance().schedule(() -> 
-			{
+			_loginDelayTask = ThreadPoolManager.getInstance().schedule(() -> {
 				if(Config.VIP_ATTENDANCE_REWARDS_REWARD_ONLY_PREMIUM)
 				{
 					if(_owner.hasPremiumAccount())
@@ -120,7 +119,7 @@ public class VipAttendance
 				else
 					_owner.sendPacket(SystemMsg.YOU_CAN_REDEEM_YOUR_REWARD_NOW);
 
-				vipAttendanceData.incInt("cAttendanceDay",0, 1);
+				vipAttendanceData.incInt("cAttendanceDay", 0, 1);
 				vipAttendanceData.set("dateLastReward", (int) (System.currentTimeMillis() / 1000));
 
 				update(vipAttendanceData);
@@ -136,7 +135,7 @@ public class VipAttendance
 			_getNextRewardIndexTask = ThreadPoolManager.getInstance().schedule(() -> {
 				VipAttendanceDAO.getInstance().insert(vipAttendanceData);
 				startTasks();
-			}, nextRewardDelay+1000);
+			}, nextRewardDelay + 1000);
 		}
 	}
 
@@ -178,15 +177,15 @@ public class VipAttendance
 	 * активная награда
 	 * @return
 	 */
-	public int getAttendanceDay() 
+	public int getAttendanceDay()
 	{
 		return vipAttendanceData.getInteger("cAttendanceDay", 0);
 	}
-	
-	public void IncAttendanceDay() 
+
+	public void IncAttendanceDay()
 	{
-		if(getAttendanceDay()<28)
-			vipAttendanceData.incInt("cAttendanceDay",0, 1);
+		if(getAttendanceDay() < 28)
+			vipAttendanceData.incInt("cAttendanceDay", 0, 1);
 		update(vipAttendanceData);
 	}
 
@@ -199,17 +198,16 @@ public class VipAttendance
 	 * завершено, забрал награду
 	 * @return
 	 */
-	public int getRewardDay() 
+	public int getRewardDay()
 	{
 		return vipAttendanceData.getInteger("cRewardDay", 0);
 	}
 
-	public int getFollowBaseDay() 
+	public int getFollowBaseDay()
 	{
 		return vipAttendanceData.getInteger("cFollowBaseDay", 0);
 	}
 
-	
 	public void onEnterWorld()
 	{
 		_owner.sendPacket(new ExVipAttendanceItemList(_owner));

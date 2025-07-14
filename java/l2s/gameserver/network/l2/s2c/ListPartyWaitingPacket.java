@@ -22,7 +22,7 @@ public class ListPartyWaitingPacket implements IClientOutgoingPacket
 
 		final int first = Math.max((page - 1) * ITEMS_PER_PAGE, 0);
 		final int firstNot = Math.min(page * ITEMS_PER_PAGE, temp.size());
-		for (int i = first; i < firstNot; i++)
+		for(int i = first; i < firstNot; i++)
 		{
 			_rooms.add(temp.get(i));
 		}
@@ -34,7 +34,7 @@ public class ListPartyWaitingPacket implements IClientOutgoingPacket
 		packetWriter.writeD(_page);
 		packetWriter.writeD(_rooms.size());
 
-		for (MatchingRoom room : _rooms)
+		for(MatchingRoom room : _rooms)
 		{
 			packetWriter.writeD(room.getId()); // room id
 			packetWriter.writeS(room.getTopic()); // room name
@@ -46,7 +46,7 @@ public class ListPartyWaitingPacket implements IClientOutgoingPacket
 
 			Collection<Player> players = room.getPlayers();
 			packetWriter.writeD(players.size()); // members count
-			for (Player player : players)
+			for(Player player : players)
 			{
 				packetWriter.writeD(player.getClassId().getId());
 				packetWriter.writeS(player.getName());

@@ -12,7 +12,7 @@ import io.netty.buffer.ByteBuf;
  */
 public abstract class ReceivablePacket<T> implements Runnable
 {
-  private final Logger LOGGER = LoggerFactory.getLogger(ReceivablePacket.class);
+	private final Logger LOGGER = LoggerFactory.getLogger(ReceivablePacket.class);
 	private final T client;
 
 	private final ByteBuf byteBuf;

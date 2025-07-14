@@ -47,11 +47,11 @@ public class SubjugationStopTask extends AutomaticTask
 	{
 		_log.info("Subjugation Stop Global Task: launched.");
 		Config.SUBJUGATION_ENABLED = false;
-		for (int i = 1; i < 8; i++)
+		for(int i = 1; i < 8; i++)
 		{
 			Map<Integer, StatsSet> ranking = RankManager.getInstance().getSubjugationRanks(i);
 			int count = 5;
-			for (int id : ranking.keySet())
+			for(int id : ranking.keySet())
 			{
 				StatsSet player = ranking.get(id);
 				Mail mail = new Mail();
@@ -63,43 +63,43 @@ public class SubjugationStopTask extends AutomaticTask
 				mail.setBody("Subjugation Reward to top5 rankers");
 
 				ItemInstance item = null;
-				if (i == 1)
+				if(i == 1)
 				{
 					item = ItemFunctions.createItem(CRUMA_TOWER_PURGE_RANK_REWARD);
 				}
-				else if (i == 2)
+				else if(i == 2)
 				{
 					item = ItemFunctions.createItem(SILENT_VALLEY_PURGE_RANK_REWARD);
 				}
-				else if (i == 3)
+				else if(i == 3)
 				{
 					item = ItemFunctions.createItem(LIZARDMAN_PLAINS_PURGE_RANK_REWARD);
 				}
-				else if (i == 4)
+				else if(i == 4)
 				{
 					item = ItemFunctions.createItem(TOWER_OF_INSOLENCE_PURGE_RANK_REWARD);
 				}
-				else if (i == 5)
+				else if(i == 5)
 				{
 					item = ItemFunctions.createItem(DRAGON_VALLEY_PURGE_RANK_REWARD);
 				}
-				else if (i == 6)
+				else if(i == 6)
 				{
 					item = ItemFunctions.createItem(SEL_MAHUM_PURGE_RANK_REWARD);
 				}
-				else if (i == 7)
+				else if(i == 7)
 				{
 					item = ItemFunctions.createItem(ORC_BARRACKS_PURGE_RANK_REWARD);
 				}
-				else if (i == 8)
+				else if(i == 8)
 				{
 					item = ItemFunctions.createItem(GIANTS_CAVE_PURGE_RANK_REWARD);
 				}
-				else if (i == 9)
+				else if(i == 9)
 				{
 					item = ItemFunctions.createItem(GODDARD_PURGE_RANK_REWARD);
 				}
-				if (item != null)
+				if(item != null)
 				{
 					item.setLocation(ItemLocation.MAIL);
 					item.setCount(count);
@@ -113,7 +113,7 @@ public class SubjugationStopTask extends AutomaticTask
 					mail.save();
 
 					Player plr = GameObjectsStorage.getPlayer(player.getInteger("charId"));
-					if (plr != null)
+					if(plr != null)
 					{
 						plr.sendPacket(ExNoticePostArrived.STATIC_TRUE);
 						plr.sendPacket(new ExUnReadMailCount(plr));

@@ -29,18 +29,20 @@ public class PathFind
 
 	public static final List<Location> findPath(int x, int y, int z, int destX, int destY, int destZ, boolean isPlayable, int geoIndex)
 	{
-		if (Math.abs(z - destZ) > (isPlayable ? Config.NPC_PATH_FIND_MAX_HEIGHT : Config.PLAYABLE_PATH_FIND_MAX_HEIGHT))
+		if(Math.abs(z - destZ) > (isPlayable ? Config.NPC_PATH_FIND_MAX_HEIGHT : Config.PLAYABLE_PATH_FIND_MAX_HEIGHT))
 			return null;
 
 		z = GeoEngine.getLowerHeight(x, y, z, geoIndex);
 		destZ = GeoEngine.getLowerHeight(destX, destY, destZ, geoIndex);
 
-		Location startPoint = Config.PATHFIND_BOOST == BOOST_NONE ? new Location(x, y, z) : GeoEngine.moveCheckWithCollision(x, y, z, destX, destY, true, geoIndex);
-		if (startPoint == null)
+		Location startPoint = Config.PATHFIND_BOOST
+				== BOOST_NONE ? new Location(x, y, z) : GeoEngine.moveCheckWithCollision(x, y, z, destX, destY, true, geoIndex);
+		if(startPoint == null)
 			startPoint = new Location(x, y, z);
 
-		Location endPoint = Config.PATHFIND_BOOST != BOOST_BOTH || Math.abs(destZ - z) > 200 ? new Location(destX, destY, destZ) : GeoEngine.moveCheckBackwardWithCollision(destX, destY, destZ, startPoint.x, startPoint.y, true, geoIndex);
-		if (endPoint == null)
+		Location endPoint = Config.PATHFIND_BOOST != BOOST_BOTH || Math.abs(destZ - z)
+				> 200 ? new Location(destX, destY, destZ) : GeoEngine.moveCheckBackwardWithCollision(destX, destY, destZ, startPoint.x, startPoint.y, true, geoIndex);
+		if(endPoint == null)
 			endPoint = new Location(destX, destY, destZ);
 
 		startPoint.world2geo();
@@ -54,9 +56,9 @@ public class PathFind
 		int xdiff = Math.abs(endPoint.x - startPoint.x);
 		int ydiff = Math.abs(endPoint.y - startPoint.y);
 
-		if (xdiff == 0 && ydiff == 0)
+		if(xdiff == 0 && ydiff == 0)
 		{
-			if (Math.abs(endPoint.z - startPoint.z) < Config.PATHFIND_MAX_Z_DIFF)
+			if(Math.abs(endPoint.z - startPoint.z) < Config.PATHFIND_MAX_Z_DIFF)
 			{
 				List<Location> path = new ArrayList<Location>(2);
 				path.add(new Location(x, y, z));
@@ -71,14 +73,14 @@ public class PathFind
 		int mapSize = Config.PATHFIND_MAP_MUL * Math.max(xdiff, ydiff);
 
 		PathFindBuffer buff;
-		if ((buff = PathFindBuffers.alloc(mapSize)) != null)
+		if((buff = PathFindBuffers.alloc(mapSize)) != null)
 		{
 			buff.offsetX = startPoint.x - buff.mapSize / 2;
 			buff.offsetY = startPoint.y - buff.mapSize / 2;
 
 			// статистика
 			buff.totalUses++;
-			if (isPlayable)
+			if(isPlayable)
 				buff.playableUses++;
 
 			PathFind n = new PathFind(startPoint, endPoint, buff, geoIndex);
@@ -89,7 +91,7 @@ public class PathFind
 			PathFindBuffers.recycle(buff);
 		}
 
-		if (path == null || path.isEmpty())
+		if(path == null || path.isEmpty())
 			return null;
 
 		List<Location> targetRecorder = new ArrayList<Location>(path.size() + 2);
@@ -97,13 +99,13 @@ public class PathFind
 		// добавляем первую точку в список (начальная позиция чара)
 		targetRecorder.add(new Location(x, y, z));
 
-		for (Location p : path)
+		for(Location p : path)
 			targetRecorder.add(p.geo2world());
 
 		// добавляем последнюю точку в список (цель)
 		targetRecorder.add(new Location(destX, destY, destZ));
 
-		if (Config.PATH_CLEAN)
+		if(Config.PATH_CLEAN)
 			pathClean(targetRecorder, geoIndex);
 
 		return targetRecorder;
@@ -117,16 +119,16 @@ public class PathFind
 	private static void pathClean(List<Location> path, int geoIndex)
 	{
 		int size = path.size();
-		if (size > 2)
-			for (int i = 2; i < size; i++)
+		if(size > 2)
+			for(int i = 2; i < size; i++)
 			{
 				Location p3 = path.get(i); // точка конца движения
 				Location p2 = path.get(i - 1); // точка в середине, кандидат на вышибание
 				Location p1 = path.get(i - 2); // точка начала движения
-				if (p1.equals(p2) || p3.equals(p2) || IsPointInLine(p1, p2, p3)) // если вторая точка совпадает с
-																					// первой/третьей или на одной линии
-																					// с ними - она
-																					// не нужна
+				if(p1.equals(p2) || p3.equals(p2) || IsPointInLine(p1, p2, p3)) // если вторая точка совпадает с
+				// первой/третьей или на одной линии
+				// с ними - она
+				// не нужна
 				{
 					path.remove(i - 1); // удаляем ее
 					size--; // отмечаем это в размере массива
@@ -136,17 +138,17 @@ public class PathFind
 
 		int current = 0;
 		int sub;
-		while (current < path.size() - 2)
+		while(current < path.size() - 2)
 		{
 			Location one = path.get(current);
 			sub = current + 2;
-			while (sub < path.size())
+			while(sub < path.size())
 			{
 				Location two = path.get(sub);
-				if (one.equals(two) || GeoEngine.canMoveWithCollision(one.x, one.y, one.z, two.x, two.y, two.z, geoIndex)) // canMoveWithCollision
-																															// /
-																															// canMoveToCoord
-					while (current + 1 < sub)
+				if(one.equals(two) || GeoEngine.canMoveWithCollision(one.x, one.y, one.z, two.x, two.y, two.z, geoIndex)) // canMoveWithCollision
+					// /
+					// canMoveToCoord
+					while(current + 1 < sub)
 					{
 						path.remove(current + 1);
 						sub--;
@@ -160,13 +162,13 @@ public class PathFind
 	private static boolean IsPointInLine(Location p1, Location p2, Location p3)
 	{
 		// Все 3 точки на одной из осей X или Y.
-		if (p1.x == p3.x && p3.x == p2.x || p1.y == p3.y && p3.y == p2.y)
+		if(p1.x == p3.x && p3.x == p2.x || p1.y == p3.y && p3.y == p2.y)
 			return true;
 		// Условие ниже выполнится если все 3 точки выстроены по диагонали.
 		// Это работает потому, что сравниваем мы соседние точки (расстояния между ними
 		// равны, важен только знак).
 		// Для случая с произвольными точками работать не будет.
-		if ((p1.x - p2.x) * (p1.y - p2.y) == (p2.x - p3.x) * (p2.y - p3.y))
+		if((p1.x - p2.x) * (p1.y - p2.y) == (p2.x - p3.x) * (p2.y - p3.y))
 			return true;
 		return false;
 	}
@@ -208,10 +210,10 @@ public class PathFind
 		int itr = 0;
 
 		List<Location> path = null;
-		while ((searhTime = System.nanoTime() - nanos) < Config.PATHFIND_MAX_TIME && (currentNode = buff.open.poll()) != null)
+		while((searhTime = System.nanoTime() - nanos) < Config.PATHFIND_MAX_TIME && (currentNode = buff.open.poll()) != null)
 		{
 			itr++;
-			if (currentNode.x == endPoint.x && currentNode.y == endPoint.y && Math.abs(currentNode.z - endPoint.z) < Config.MAX_Z_DIFF)
+			if(currentNode.x == endPoint.x && currentNode.y == endPoint.y && Math.abs(currentNode.z - endPoint.z) < Config.MAX_Z_DIFF)
 			{
 				path = tracePath(currentNode);
 				break;
@@ -223,9 +225,9 @@ public class PathFind
 
 		buff.totalTime += searhTime;
 		buff.totalItr += itr;
-		if (path != null)
+		if(path != null)
 			buff.successUses++;
-		else if (searhTime > Config.PATHFIND_MAX_TIME)
+		else if(searhTime > Config.PATHFIND_MAX_TIME)
 			buff.overtimeUses++;
 
 		return path;
@@ -239,7 +241,7 @@ public class PathFind
 			locations.addFirst(f.getLoc());
 			f = f.parent;
 		}
-		while (f.parent != null);
+		while(f.parent != null);
 		return locations;
 	}
 
@@ -252,16 +254,16 @@ public class PathFind
 		getHeightAndNSWE(clX, clY, clZ);
 		short NSWE = hNSWE[1];
 
-		if (Config.PATHFIND_DIAGONAL)
+		if(Config.PATHFIND_DIAGONAL)
 		{
 			// Юго-восток
-			if ((NSWE & SOUTH) == SOUTH && (NSWE & EAST) == EAST)
+			if((NSWE & SOUTH) == SOUTH && (NSWE & EAST) == EAST)
 			{
 				getHeightAndNSWE(clX + 1, clY, clZ);
-				if ((hNSWE[1] & SOUTH) == SOUTH)
+				if((hNSWE[1] & SOUTH) == SOUTH)
 				{
 					getHeightAndNSWE(clX, clY + 1, clZ);
-					if ((hNSWE[1] & EAST) == EAST)
+					if((hNSWE[1] & EAST) == EAST)
 					{
 						handleNeighbour(clX + 1, clY + 1, node, true);
 					}
@@ -269,13 +271,13 @@ public class PathFind
 			}
 
 			// Юго-запад
-			if ((NSWE & SOUTH) == SOUTH && (NSWE & WEST) == WEST)
+			if((NSWE & SOUTH) == SOUTH && (NSWE & WEST) == WEST)
 			{
 				getHeightAndNSWE(clX - 1, clY, clZ);
-				if ((hNSWE[1] & SOUTH) == SOUTH)
+				if((hNSWE[1] & SOUTH) == SOUTH)
 				{
 					getHeightAndNSWE(clX, clY + 1, clZ);
-					if ((hNSWE[1] & WEST) == WEST)
+					if((hNSWE[1] & WEST) == WEST)
 					{
 						handleNeighbour(clX - 1, clY + 1, node, true);
 					}
@@ -283,13 +285,13 @@ public class PathFind
 			}
 
 			// Северо-восток
-			if ((NSWE & NORTH) == NORTH && (NSWE & EAST) == EAST)
+			if((NSWE & NORTH) == NORTH && (NSWE & EAST) == EAST)
 			{
 				getHeightAndNSWE(clX + 1, clY, clZ);
-				if ((hNSWE[1] & NORTH) == NORTH)
+				if((hNSWE[1] & NORTH) == NORTH)
 				{
 					getHeightAndNSWE(clX, clY - 1, clZ);
-					if ((hNSWE[1] & EAST) == EAST)
+					if((hNSWE[1] & EAST) == EAST)
 					{
 						handleNeighbour(clX + 1, clY - 1, node, true);
 					}
@@ -297,13 +299,13 @@ public class PathFind
 			}
 
 			// Северо-запад
-			if ((NSWE & NORTH) == NORTH && (NSWE & WEST) == WEST)
+			if((NSWE & NORTH) == NORTH && (NSWE & WEST) == WEST)
 			{
 				getHeightAndNSWE(clX - 1, clY, clZ);
-				if ((hNSWE[1] & NORTH) == NORTH)
+				if((hNSWE[1] & NORTH) == NORTH)
 				{
 					getHeightAndNSWE(clX, clY - 1, clZ);
-					if ((hNSWE[1] & WEST) == WEST)
+					if((hNSWE[1] & WEST) == WEST)
 					{
 						handleNeighbour(clX - 1, clY - 1, node, true);
 					}
@@ -312,25 +314,25 @@ public class PathFind
 		}
 
 		// Восток
-		if ((NSWE & EAST) == EAST)
+		if((NSWE & EAST) == EAST)
 		{
 			handleNeighbour(clX + 1, clY, node, false);
 		}
 
 		// Запад
-		if ((NSWE & WEST) == WEST)
+		if((NSWE & WEST) == WEST)
 		{
 			handleNeighbour(clX - 1, clY, node, false);
 		}
 
 		// Юг
-		if ((NSWE & SOUTH) == SOUTH)
+		if((NSWE & SOUTH) == SOUTH)
 		{
 			handleNeighbour(clX, clY + 1, node, false);
 		}
 
 		// Север
-		if ((NSWE & NORTH) == NORTH)
+		if((NSWE & NORTH) == NORTH)
 		{
 			handleNeighbour(clX, clY - 1, node, false);
 		}
@@ -347,33 +349,25 @@ public class PathFind
 
 	private float traverseCost(GeoNode from, GeoNode n, boolean d)
 	{
-		if (n.nswe != NSWE_ALL || Math.abs(n.z - from.z) > 16)
+		if(n.nswe != NSWE_ALL || Math.abs(n.z - from.z) > 16)
 			return 3f;
 		else
 		{
 			getHeightAndNSWE(n.x + 1, n.y, n.z);
-			if (hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
-			{
-				return 2f;
-			}
+			if(hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
+			{ return 2f; }
 
 			getHeightAndNSWE(n.x - 1, n.y, n.z);
-			if (hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
-			{
-				return 2f;
-			}
+			if(hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
+			{ return 2f; }
 
 			getHeightAndNSWE(n.x, n.y + 1, n.z);
-			if (hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
-			{
-				return 2f;
-			}
+			if(hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
+			{ return 2f; }
 
 			getHeightAndNSWE(n.x, n.y - 1, n.z);
-			if (hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
-			{
-				return 2f;
-			}
+			if(hNSWE[1] != NSWE_ALL || Math.abs(n.z - hNSWE[0]) > 16)
+			{ return 2f; }
 		}
 
 		return d ? 1.414f : 1f;
@@ -382,13 +376,13 @@ public class PathFind
 	private void handleNeighbour(int x, int y, GeoNode from, boolean d)
 	{
 		int nX = x - buff.offsetX, nY = y - buff.offsetY;
-		if (nX >= buff.mapSize || nX < 0 || nY >= buff.mapSize || nY < 0)
+		if(nX >= buff.mapSize || nX < 0 || nY >= buff.mapSize || nY < 0)
 			return;
 
 		GeoNode n = buff.nodes[nX][nY];
 		float newCost;
 
-		if (!n.isSet())
+		if(!n.isSet())
 		{
 			n = n.set(x, y, from.z);
 			GeoEngine.NgetLowerHeightAndNSWE(x, y, from.z, hNSWE, geoIndex);
@@ -397,24 +391,24 @@ public class PathFind
 		}
 
 		int height = Math.abs(n.z - from.z);
-		if (height > Config.PATHFIND_MAX_Z_DIFF || n.nswe == NSWE_NONE)
+		if(height > Config.PATHFIND_MAX_Z_DIFF || n.nswe == NSWE_NONE)
 			return;
 
 		newCost = from.costFromStart + traverseCost(from, n, d);
-		if (n.state == GeoNode.OPENED || n.state == GeoNode.CLOSED)
+		if(n.state == GeoNode.OPENED || n.state == GeoNode.CLOSED)
 		{
-			if (n.costFromStart <= newCost)
+			if(n.costFromStart <= newCost)
 				return;
 		}
 
-		if (n.state == GeoNode.NONE)
+		if(n.state == GeoNode.NONE)
 			n.costToEnd = pathCostEstimate(n);
 
 		n.parent = from;
 		n.costFromStart = newCost;
 		n.totalCost = n.costFromStart + n.costToEnd;
 
-		if (n.state == GeoNode.OPENED)
+		if(n.state == GeoNode.OPENED)
 			return;
 
 		n.state = GeoNode.OPENED;
@@ -424,14 +418,14 @@ public class PathFind
 	private void getHeightAndNSWE(int x, int y, short z)
 	{
 		int nX = x - buff.offsetX, nY = y - buff.offsetY;
-		if (nX >= buff.mapSize || nX < 0 || nY >= buff.mapSize || nY < 0)
+		if(nX >= buff.mapSize || nX < 0 || nY >= buff.mapSize || nY < 0)
 		{
 			hNSWE[1] = NSWE_NONE; // Затычка
 			return;
 		}
 
 		GeoNode n = buff.nodes[nX][nY];
-		if (!n.isSet())
+		if(!n.isSet())
 		{
 			n = n.set(x, y, z);
 			GeoEngine.NgetLowerHeightAndNSWE(x, y, z, hNSWE, geoIndex);

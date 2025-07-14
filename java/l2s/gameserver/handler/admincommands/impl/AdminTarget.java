@@ -18,19 +18,19 @@ public class AdminTarget implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanViewChar)
+		if(!activeChar.getPlayerAccess().CanViewChar)
 			return false;
 
 		try
 		{
 			String targetName = wordList[1];
 			GameObject obj = World.getPlayer(targetName);
-			if (obj != null && obj.isPlayer())
+			if(obj != null && obj.isPlayer())
 				obj.onAction(activeChar, false);
 			else
 				activeChar.sendMessage("Player " + targetName + " not found");
 		}
-		catch (IndexOutOfBoundsException e)
+		catch(IndexOutOfBoundsException e)
 		{
 			activeChar.sendMessage("Please specify correct name.");
 		}

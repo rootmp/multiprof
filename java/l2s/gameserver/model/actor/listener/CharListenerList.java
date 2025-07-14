@@ -59,264 +59,264 @@ public class CharListenerList extends ListenerList<Creature>
 
 	public void onAiIntention(CtrlIntention intention, Object arg0, Object arg1)
 	{
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAiIntentionListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAiIntentionListener.class.isInstance(listener))
 					((OnAiIntentionListener) listener).onAiIntention(getActor(), intention, arg0, arg1);
 	}
 
 	public void onAiEvent(CtrlEvent evt, Object[] args)
 	{
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAiEventListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAiEventListener.class.isInstance(listener))
 					((OnAiEventListener) listener).onAiEvent(getActor(), evt, args);
 	}
 
 	public void onAttack(Creature target)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnAttackListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnAttackListener.class.isInstance(listener))
 					((OnAttackListener) listener).onAttack(getActor(), target);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAttackListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAttackListener.class.isInstance(listener))
 					((OnAttackListener) listener).onAttack(getActor(), target);
 	}
 
 	public void onAttackHit(Creature attacker)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnAttackHitListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnAttackHitListener.class.isInstance(listener))
 					((OnAttackHitListener) listener).onAttackHit(getActor(), attacker);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAttackHitListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAttackHitListener.class.isInstance(listener))
 					((OnAttackHitListener) listener).onAttackHit(getActor(), attacker);
 	}
 
 	public void onMagicUse(Skill skill, Creature target, boolean alt)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnMagicUseListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnMagicUseListener.class.isInstance(listener))
 					((OnMagicUseListener) listener).onMagicUse(getActor(), skill, target, alt);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnMagicUseListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnMagicUseListener.class.isInstance(listener))
 					((OnMagicUseListener) listener).onMagicUse(getActor(), skill, target, alt);
 	}
 
 	public void onMagicHit(Skill skill, Creature caster)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnMagicHitListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnMagicHitListener.class.isInstance(listener))
 					((OnMagicHitListener) listener).onMagicHit(getActor(), skill, caster);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnMagicHitListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnMagicHitListener.class.isInstance(listener))
 					((OnMagicHitListener) listener).onMagicHit(getActor(), skill, caster);
 	}
 
 	public void onDeath(Creature killer)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnDeathListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnDeathListener.class.isInstance(listener))
 					((OnDeathListener) listener).onDeath(getActor(), killer);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnDeathListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnDeathListener.class.isInstance(listener))
 					((OnDeathListener) listener).onDeath(getActor(), killer);
 	}
 
 	public void onKill(Creature victim)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnKillListener.class.isInstance(listener) && !((OnKillListener) listener).ignorePetOrSummon())
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnKillListener.class.isInstance(listener) && !((OnKillListener) listener).ignorePetOrSummon())
 					((OnKillListener) listener).onKill(getActor(), victim);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnKillListener.class.isInstance(listener) && !((OnKillListener) listener).ignorePetOrSummon())
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnKillListener.class.isInstance(listener) && !((OnKillListener) listener).ignorePetOrSummon())
 					((OnKillListener) listener).onKill(getActor(), victim);
 	}
 
 	public void onKillIgnorePetOrSummon(Creature victim)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnKillListener.class.isInstance(listener) && ((OnKillListener) listener).ignorePetOrSummon())
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnKillListener.class.isInstance(listener) && ((OnKillListener) listener).ignorePetOrSummon())
 					((OnKillListener) listener).onKill(getActor(), victim);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnKillListener.class.isInstance(listener) && ((OnKillListener) listener).ignorePetOrSummon())
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnKillListener.class.isInstance(listener) && ((OnKillListener) listener).ignorePetOrSummon())
 					((OnKillListener) listener).onKill(getActor(), victim);
 	}
 
 	public void onCurrentHpDamage(double damage, Creature attacker, Skill skill)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnCurrentHpDamageListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnCurrentHpDamageListener.class.isInstance(listener))
 					((OnCurrentHpDamageListener) listener).onCurrentHpDamage(getActor(), damage, attacker, skill);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnCurrentHpDamageListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnCurrentHpDamageListener.class.isInstance(listener))
 					((OnCurrentHpDamageListener) listener).onCurrentHpDamage(getActor(), damage, attacker, skill);
 	}
 
 	public void onChangeCurrentBp(double oldBp, double newBp)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnChangeCurrentBpListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnChangeCurrentBpListener.class.isInstance(listener))
 					((OnChangeCurrentBpListener) listener).onChangeCurrentBp(getActor(), oldBp, newBp);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnChangeCurrentBpListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnChangeCurrentBpListener.class.isInstance(listener))
 					((OnChangeCurrentBpListener) listener).onChangeCurrentBp(getActor(), oldBp, newBp);
 	}
 
 	public void onChangeCurrentDp(int oldDp, int newDp)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnChangeCurrentDpListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnChangeCurrentDpListener.class.isInstance(listener))
 					((OnChangeCurrentDpListener) listener).onChangeCurrentDp(getActor(), oldDp, newDp);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnChangeCurrentDpListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnChangeCurrentDpListener.class.isInstance(listener))
 					((OnChangeCurrentDpListener) listener).onChangeCurrentDp(getActor(), oldDp, newDp);
 	}
 
 	public void onChangeCurrentCp(double oldCp, double newCp)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnChangeCurrentCpListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnChangeCurrentCpListener.class.isInstance(listener))
 					((OnChangeCurrentCpListener) listener).onChangeCurrentCp(getActor(), oldCp, newCp);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnChangeCurrentCpListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnChangeCurrentCpListener.class.isInstance(listener))
 					((OnChangeCurrentCpListener) listener).onChangeCurrentCp(getActor(), oldCp, newCp);
 	}
 
 	public void onChangeCurrentHp(double oldHp, double newHp)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnChangeCurrentHpListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnChangeCurrentHpListener.class.isInstance(listener))
 					((OnChangeCurrentHpListener) listener).onChangeCurrentHp(getActor(), oldHp, newHp);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnChangeCurrentHpListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnChangeCurrentHpListener.class.isInstance(listener))
 					((OnChangeCurrentHpListener) listener).onChangeCurrentHp(getActor(), oldHp, newHp);
 	}
 
 	public void onChangeCurrentMp(double oldMp, double newMp)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnChangeCurrentMpListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnChangeCurrentMpListener.class.isInstance(listener))
 					((OnChangeCurrentMpListener) listener).onChangeCurrentMp(getActor(), oldMp, newMp);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnChangeCurrentMpListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnChangeCurrentMpListener.class.isInstance(listener))
 					((OnChangeCurrentMpListener) listener).onChangeCurrentMp(getActor(), oldMp, newMp);
 	}
 
 	public void onDeathFromUndying(Creature killer)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnDeathFromUndyingListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnDeathFromUndyingListener.class.isInstance(listener))
 					((OnDeathFromUndyingListener) listener).onDeathFromUndying(getActor(), killer);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnDeathFromUndyingListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnDeathFromUndyingListener.class.isInstance(listener))
 					((OnDeathFromUndyingListener) listener).onDeathFromUndying(getActor(), killer);
 	}
 
 	public void onRevive()
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (listener instanceof OnReviveListener)
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(listener instanceof OnReviveListener)
 					((OnReviveListener) listener).onRevive(getActor());
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (listener instanceof OnReviveListener)
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(listener instanceof OnReviveListener)
 					((OnReviveListener) listener).onRevive(getActor());
 	}
 
 	public void onMove(Location loc)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnMoveListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnMoveListener.class.isInstance(listener))
 					((OnMoveListener) listener).onMove(getActor(), loc);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnMoveListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnMoveListener.class.isInstance(listener))
 					((OnMoveListener) listener).onMove(getActor(), loc);
 	}
 
 	public void onAct(String act, Object... args)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnActorAct.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnActorAct.class.isInstance(listener))
 					((OnActorAct) listener).onAct(getActor(), act, args);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnActorAct.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnActorAct.class.isInstance(listener))
 					((OnActorAct) listener).onAct(getActor(), act, args);
 	}
 
 	public void onAbnormalStart(Abnormal ab)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnAbnormalStartEndListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnAbnormalStartEndListener.class.isInstance(listener))
 					((OnAbnormalStartEndListener) listener).onAbnormalStart(getActor(), ab);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAbnormalStartEndListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAbnormalStartEndListener.class.isInstance(listener))
 					((OnAbnormalStartEndListener) listener).onAbnormalStart(getActor(), ab);
 	}
 
 	public void onAbnormalEnd(Abnormal ab)
 	{
-		if (!global.getListeners().isEmpty())
-			for (Listener<Creature> listener : global.getListeners())
-				if (OnAbnormalStartEndListener.class.isInstance(listener))
+		if(!global.getListeners().isEmpty())
+			for(Listener<Creature> listener : global.getListeners())
+				if(OnAbnormalStartEndListener.class.isInstance(listener))
 					((OnAbnormalStartEndListener) listener).onAbnormalEnd(getActor(), ab);
 
-		if (!getListeners().isEmpty())
-			for (Listener<Creature> listener : getListeners())
-				if (OnAbnormalStartEndListener.class.isInstance(listener))
+		if(!getListeners().isEmpty())
+			for(Listener<Creature> listener : getListeners())
+				if(OnAbnormalStartEndListener.class.isInstance(listener))
 					((OnAbnormalStartEndListener) listener).onAbnormalEnd(getActor(), ab);
 	}
 }

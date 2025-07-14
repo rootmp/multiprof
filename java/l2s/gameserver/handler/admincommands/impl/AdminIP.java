@@ -16,13 +16,13 @@ public class AdminIP implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanBan)
+		if(!activeChar.getPlayerAccess().CanBan)
 			return false;
 
-		switch (command)
+		switch(command)
 		{
 			case admin_charip:
-				if (wordList.length != 2)
+				if(wordList.length != 2)
 				{
 					activeChar.sendMessage("Command syntax: //charip <char_name>");
 					activeChar.sendMessage(" Gets character's IP.");
@@ -31,14 +31,14 @@ public class AdminIP implements IAdminCommandHandler
 
 				Player pl = World.getPlayer(wordList[1]);
 
-				if (pl == null)
+				if(pl == null)
 				{
 					activeChar.sendMessage("Character " + wordList[1] + " not found.");
 					break;
 				}
 
 				String ip_adr = pl.getIP();
-				if (ip_adr.equalsIgnoreCase("<not connected>"))
+				if(ip_adr.equalsIgnoreCase("<not connected>"))
 				{
 					activeChar.sendMessage("Character " + wordList[1] + " not found.");
 					break;

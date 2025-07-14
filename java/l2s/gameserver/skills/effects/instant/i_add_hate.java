@@ -21,7 +21,7 @@ public class i_add_hate extends i_abstract_effect
 	@Override
 	protected boolean checkCondition(Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 		return effected.isMonster();
 	}
@@ -30,18 +30,18 @@ public class i_add_hate extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Creature target = effector;
-		if (_affectSummoner)
+		if(_affectSummoner)
 		{
 			Player owner = target.getPlayer();
-			if (owner != null)
+			if(owner != null)
 				target = owner;
 		}
 
-		if (getValue() > 0)
+		if(getValue() > 0)
 		{
 			((MonsterInstance) effected).getAggroList().addDamageHate(target, 0, (int) getValue());
 		}
-		else if (getValue() < 0)
+		else if(getValue() < 0)
 		{
 			((MonsterInstance) effected).getAggroList().reduceHate(target, (int) -getValue());
 		}

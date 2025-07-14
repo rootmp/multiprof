@@ -37,7 +37,7 @@ public final class FakePlayersParser extends AbstractParser<FakePlayersHolder>
 	@Override
 	public boolean isIgnored(File f)
 	{
-		if (f.equals(FakeItemParser.getInstance().getXMLPath()))
+		if(f.equals(FakeItemParser.getInstance().getXMLPath()))
 			return true;
 		return false;
 	}
@@ -52,17 +52,17 @@ public final class FakePlayersParser extends AbstractParser<FakePlayersHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		String rootElementName = rootElement.getName();
-		if (rootElementName.equalsIgnoreCase("fake_player_ai"))
+		if(rootElementName.equalsIgnoreCase("fake_player_ai"))
 		{
 			FakePlayerAITemplate template = FakePlayerAITemplate.parse(rootElement);
-			if (template != null)
+			if(template != null)
 				getHolder().addAITemplate(template);
 		}
-		else if (rootElementName.equalsIgnoreCase("farm"))
+		else if(rootElementName.equalsIgnoreCase("farm"))
 		{
 			getHolder().addFarmZone(FarmZoneTemplate.parse(null, rootElement));
 		}
-		else if (rootElementName.equalsIgnoreCase("town"))
+		else if(rootElementName.equalsIgnoreCase("town"))
 		{
 			getHolder().addTownZone(TownZoneTemplate.parse(rootElement));
 		}
@@ -71,9 +71,9 @@ public final class FakePlayersParser extends AbstractParser<FakePlayersHolder>
 	@Override
 	protected void onParsed()
 	{
-		for (FakePlayerAITemplate aiTemplate : getHolder().getAITemplates())
+		for(FakePlayerAITemplate aiTemplate : getHolder().getAITemplates())
 		{
-			for (FarmZoneTemplate farmTemplate : getHolder().getFarmZones())
+			for(FarmZoneTemplate farmTemplate : getHolder().getFarmZones())
 				aiTemplate.addFarmZone(farmTemplate);
 		}
 	}

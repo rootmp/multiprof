@@ -22,32 +22,32 @@ public class Drain extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (!canAbsorb(target, activeChar))
+		if(!canAbsorb(target, activeChar))
 			return;
 
-		if (getPower() <= 0 && _absorbAbs <= 0) // Если == 0 значит скилл "отключен"
+		if(getPower() <= 0 && _absorbAbs <= 0) // Если == 0 значит скилл "отключен"
 			return;
 
 		final Creature realTarget = reflected ? activeChar : target;
 		final boolean corpseSkill = getTargetType() == SkillTargetType.TARGET_CORPSE || getTargetType() == SkillTargetType.TARGET_AREA_AIM_CORPSE;
 
-		if (realTarget.isDead() && !corpseSkill)
+		if(realTarget.isDead() && !corpseSkill)
 			return;
 
 		final double targetHp = realTarget.getCurrentHp();
 
 		double hp = 0.;
-		if (!corpseSkill)
+		if(!corpseSkill)
 		{
 			double damage = 0.;
-			if (isMagic())
+			if(isMagic())
 			{
 				AttackInfo info = Formulas.calcMagicDam(activeChar, realTarget, this, isSSPossible(), !isDeathlink());
 				realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-				if (info.damage >= 1)
+				if(info.damage >= 1)
 				{
 					double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-					if (lethalDmg > 0)
+					if(lethalDmg > 0)
 						realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
 				}
 
@@ -56,15 +56,16 @@ public class Drain extends Skill
 			else
 			{
 				AttackInfo info = Formulas.calcSkillPDamage(activeChar, realTarget, this, false, isSSPossible());
-				if (info != null)
+				if(info != null)
 				{
-					realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit || info.blow, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
-					if (!info.miss || info.damage >= 1)
+					realTarget.reduceCurrentHp(info.damage, activeChar, this, true, true, false, true, false, false, true, true, info.crit
+							|| info.blow, info.miss, info.shld, info.elementalDamage, info.elementalCrit);
+					if(!info.miss || info.damage >= 1)
 					{
 						double lethalDmg = Formulas.calcLethalDamage(activeChar, realTarget, this);
-						if (lethalDmg > 0)
+						if(lethalDmg > 0)
 							realTarget.reduceCurrentHp(lethalDmg, activeChar, this, true, true, false, false, false, false, false);
-						else if (!reflected)
+						else if(!reflected)
 							realTarget.doCounterAttack(this, activeChar, false);
 					}
 
@@ -75,28 +76,29 @@ public class Drain extends Skill
 			double targetCP = realTarget.getCurrentCp();
 
 			// Нельзя восстанавливать HP из CP
-			if (damage > targetCP || !realTarget.isPlayer())
+			if(damage > targetCP || !realTarget.isPlayer())
 				hp = (damage - targetCP) * getAbsorbPart();
 		}
 
-		if (_absorbAbs == 0 && getAbsorbPart() == 0)
+		if(_absorbAbs == 0 && getAbsorbPart() == 0)
 			return;
 
 		hp += _absorbAbs;
 
 		// Нельзя восстановить больше hp, чем есть у цели.
-		if (hp > targetHp && !corpseSkill)
+		if(hp > targetHp && !corpseSkill)
 			hp = targetHp;
 
-		double addToHp = Math.max(0, Math.min(hp, activeChar.getStat().calc(Stats.HP_LIMIT, null, null) * activeChar.getMaxHp() / 100. - activeChar.getCurrentHp()));
+		double addToHp = Math.max(0, Math.min(hp, activeChar.getStat().calc(Stats.HP_LIMIT, null, null) * activeChar.getMaxHp() / 100.
+				- activeChar.getCurrentHp()));
 
-		if (addToHp > 0 && !activeChar.isHealBlocked())
+		if(addToHp > 0 && !activeChar.isHealBlocked())
 			activeChar.setCurrentHp(activeChar.getCurrentHp() + addToHp, false);
 	}
 
 	private boolean canAbsorb(Creature attacked, Creature attacker)
 	{
-		if (attacked.isPlayable() || !Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
+		if(attacked.isPlayable() || !Config.DISABLE_VAMPIRIC_VS_MOB_ON_PVP)
 			return true;
 		return attacker.getPvpFlag() == 0;
 	}

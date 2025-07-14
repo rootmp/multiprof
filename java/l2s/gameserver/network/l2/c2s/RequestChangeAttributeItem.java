@@ -34,39 +34,37 @@ public class RequestChangeAttributeItem implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
-		{
-			return;
-		}
+		if(activeChar == null)
+		{ return; }
 
-		if (activeChar.isActionsDisabled())
+		if(activeChar.isActionsDisabled())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
+		if(activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CAN_NOT_CHANGE_THE_ATTRIBUTE_WHILE_OPERATING_A_PRIVATE_STORE_OR_PRIVATE_WORKSHOP);
 			activeChar.sendPacket(ExChangeAttributeFail.STATIC);
 			return;
 		}
 
-		if (activeChar.isInTrade())
+		if(activeChar.isInTrade())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemObjId);
-		if ((item == null) || !item.isWeapon())
+		if((item == null) || !item.isWeapon())
 		{
 			activeChar.sendPacket(SystemMsg.UNABLE_TO_CHANCE_THE_ATTRIBUTE);
 			activeChar.sendPacket(ExChangeAttributeFail.STATIC);
 			return;
 		}
 
-		if (!activeChar.getInventory().destroyItemByItemId(_consumeItemId, 1L))
+		if(!activeChar.getInventory().destroyItemByItemId(_consumeItemId, 1L))
 		{
 			activeChar.sendActionFailed();
 			return;

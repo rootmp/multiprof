@@ -33,12 +33,12 @@ public class t_hp_percent_patk extends EffectHandler
 
 	private void giveDamage(Creature effector, Creature effected, boolean first)
 	{
-		if (effected.isDead())
+		if(effected.isDead())
 			return;
 
 		double damage = (effector.getPAtk(effector) / 100 * getValue());
 		damage = Math.min(damage, effected.getCurrentHp() - 1);
-		if (getSkill().getAbsorbPart() > 0)
+		if(getSkill().getAbsorbPart() > 0)
 			effector.setCurrentHp(getSkill().getAbsorbPart() * Math.min(effected.getCurrentHp(), damage) + effector.getCurrentHp(), false);
 
 		boolean awake = !effected.isNpc() && effected != effector; // TODO: Check this.

@@ -46,7 +46,7 @@ public class FightClubMap
 		String[] teamCounts = params.getString("teamsCount", "-1").split(";");
 		_teamsCount = new int[teamCounts.length];
 
-		for (int i = 0; i < teamCounts.length; i++)
+		for(int i = 0; i < teamCounts.length; i++)
 		{
 			_teamsCount[i] = Integer.parseInt(teamCounts[i]);
 		}

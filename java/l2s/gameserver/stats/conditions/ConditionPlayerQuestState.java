@@ -21,12 +21,12 @@ public class ConditionPlayerQuestState extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 
 		Player player = env.character.getPlayer();
 		QuestState qs = player.getQuestState(_questId);
-		if (qs == null)
+		if(qs == null)
 			return false;
 
 		return qs.getCond() == _cond;

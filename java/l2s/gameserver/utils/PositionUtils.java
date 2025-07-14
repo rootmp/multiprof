@@ -28,11 +28,11 @@ public class PositionUtils
 
 	public static TargetDirection getDirectionTo(Creature target, Creature attacker)
 	{
-		if (target == null || attacker == null)
+		if(target == null || attacker == null)
 			return TargetDirection.NONE;
-		if (isBehind(target, attacker))
+		if(isBehind(target, attacker))
 			return TargetDirection.BEHIND;
-		if (isInFrontOf(target, attacker))
+		if(isInFrontOf(target, attacker))
 			return TargetDirection.FRONT;
 		return TargetDirection.SIDE;
 	}
@@ -44,18 +44,18 @@ public class PositionUtils
 	 */
 	public static boolean isInFrontOf(Creature target, Creature attacker)
 	{
-		if (target == null)
+		if(target == null)
 			return false;
 
 		double angleChar, angleTarget, angleDiff;
 		angleTarget = calculateAngleFrom(target, attacker);
 		angleChar = convertHeadingToDegree(target.getHeading());
 		angleDiff = angleChar - angleTarget;
-		if (angleDiff <= -MAX_ANGLE + FRONT_MAX_ANGLE)
+		if(angleDiff <= -MAX_ANGLE + FRONT_MAX_ANGLE)
 			angleDiff += MAX_ANGLE;
-		if (angleDiff >= MAX_ANGLE - FRONT_MAX_ANGLE)
+		if(angleDiff >= MAX_ANGLE - FRONT_MAX_ANGLE)
 			angleDiff -= MAX_ANGLE;
-		if (Math.abs(angleDiff) <= FRONT_MAX_ANGLE)
+		if(Math.abs(angleDiff) <= FRONT_MAX_ANGLE)
 			return true;
 		return false;
 	}
@@ -67,18 +67,18 @@ public class PositionUtils
 	 */
 	public static boolean isBehind(Creature target, Creature attacker)
 	{
-		if (target == null)
+		if(target == null)
 			return false;
 
 		double angleChar, angleTarget, angleDiff;
 		angleChar = calculateAngleFrom(attacker, target);
 		angleTarget = convertHeadingToDegree(target.getHeading());
 		angleDiff = angleChar - angleTarget;
-		if (angleDiff <= -MAX_ANGLE + BACK_MAX_ANGLE)
+		if(angleDiff <= -MAX_ANGLE + BACK_MAX_ANGLE)
 			angleDiff += MAX_ANGLE;
-		if (angleDiff >= MAX_ANGLE - BACK_MAX_ANGLE)
+		if(angleDiff >= MAX_ANGLE - BACK_MAX_ANGLE)
 			angleDiff -= MAX_ANGLE;
-		if (Math.abs(angleDiff) <= BACK_MAX_ANGLE)
+		if(Math.abs(angleDiff) <= BACK_MAX_ANGLE)
 			return true;
 		return false;
 	}
@@ -87,19 +87,19 @@ public class PositionUtils
 	public static boolean isFacing(Creature attacker, GameObject target, int maxAngle)
 	{
 		double angleChar, angleTarget, angleDiff, maxAngleDiff;
-		if (target == null)
+		if(target == null)
 			return false;
-		if (maxAngle >= 360)
+		if(maxAngle >= 360)
 			return true;
 		maxAngleDiff = maxAngle / 2;
 		angleTarget = calculateAngleFrom(attacker, target);
 		angleChar = convertHeadingToDegree(attacker.getHeading());
 		angleDiff = angleChar - angleTarget;
-		if (angleDiff <= -360 + maxAngleDiff)
+		if(angleDiff <= -360 + maxAngleDiff)
 			angleDiff += 360;
-		if (angleDiff >= 360 - maxAngleDiff)
+		if(angleDiff >= 360 - maxAngleDiff)
 			angleDiff -= 360;
-		if (Math.abs(angleDiff) <= maxAngleDiff)
+		if(Math.abs(angleDiff) <= maxAngleDiff)
 			return true;
 		return false;
 	}
@@ -112,7 +112,7 @@ public class PositionUtils
 	public static int calculateHeadingFrom(int obj1X, int obj1Y, int obj2X, int obj2Y)
 	{
 		double angleTarget = Math.toDegrees(Math.atan2(obj2Y - obj1Y, obj2X - obj1X));
-		if (angleTarget < 0)
+		if(angleTarget < 0)
 			angleTarget = MAX_ANGLE + angleTarget;
 		return (int) (angleTarget * 182.044444444);
 	}
@@ -137,7 +137,7 @@ public class PositionUtils
 		long dx = x1 - x2;
 		long dy = y1 - y2;
 
-		if (includeZAxis)
+		if(includeZAxis)
 		{
 			long dz = z1 - z2;
 			return dx * dx + dy * dy + dz * dz <= range * range;
@@ -147,7 +147,7 @@ public class PositionUtils
 
 	public static boolean checkIfInRange(int range, GameObject obj1, GameObject obj2, boolean includeZAxis)
 	{
-		if (obj1 == null || obj2 == null)
+		if(obj1 == null || obj2 == null)
 			return false;
 		return checkIfInRange(range, obj1.getX(), obj1.getY(), obj1.getZ(), obj2.getX(), obj2.getY(), obj2.getZ(), includeZAxis);
 	}
@@ -164,7 +164,7 @@ public class PositionUtils
 
 	public static int convertDegreeToClientHeading(double degree)
 	{
-		if (degree < 0)
+		if(degree < 0)
 			degree = 360 + degree;
 		return (int) (degree * 182.044444444);
 	}
@@ -181,7 +181,7 @@ public class PositionUtils
 
 	public static int calculateDistance(GameObject obj1, GameObject obj2, boolean includeZAxis)
 	{
-		if (obj1 == null || obj2 == null)
+		if(obj1 == null || obj2 == null)
 			return Integer.MAX_VALUE;
 		return calculateDistance(obj1.getX(), obj1.getY(), obj1.getZ(), obj2.getX(), obj2.getY(), obj2.getZ(), includeZAxis);
 	}
@@ -203,23 +203,23 @@ public class PositionUtils
 
 	public static int getHeadingTo(GameObject actor, GameObject target)
 	{
-		if (actor == null || target == null || target == actor)
+		if(actor == null || target == null || target == actor)
 			return -1;
 		return getHeadingTo(actor.getLoc(), target.getLoc());
 	}
 
 	public static int getHeadingTo(Location actor, Location target)
 	{
-		if (actor == null || target == null || target.equals(actor))
+		if(actor == null || target == null || target.equals(actor))
 			return -1;
 
 		int dx = target.x - actor.x;
 		int dy = target.y - actor.y;
 		int heading = target.h - (int) (Math.atan2(-dy, -dx) * Creature.HEADINGS_IN_PI + 32768);
 
-		if (heading < 0)
+		if(heading < 0)
 			heading = heading + 1 + Integer.MAX_VALUE & 0xFFFF;
-		else if (heading > 0xFFFF)
+		else if(heading > 0xFFFF)
 			heading &= 0xFFFF;
 
 		return heading;
@@ -227,7 +227,7 @@ public class PositionUtils
 
 	public static Location applyOffset(Creature activeChar, Location point, int offset)
 	{
-		if (offset <= 0)
+		if(offset <= 0)
 			return point;
 
 		long dx = point.x - activeChar.getX();
@@ -236,20 +236,20 @@ public class PositionUtils
 
 		double distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
-		if (distance <= offset)
+		if(distance <= offset)
 		{
 			point.set(activeChar.getX(), activeChar.getY(), activeChar.getZ());
 			return point;
 		}
 
-		if (distance >= 1)
+		if(distance >= 1)
 		{
 			double cut = offset / distance;
 			point.x -= (int) (dx * cut + 0.5);
 			point.y -= (int) (dy * cut + 0.5);
 			point.z -= (int) (dz * cut + 0.5);
 
-			if (!activeChar.isFlying() && !activeChar.isInBoat() && !activeChar.isInWater() && !activeChar.isBoat())
+			if(!activeChar.isFlying() && !activeChar.isInBoat() && !activeChar.isInWater() && !activeChar.isBoat())
 				point.correctGeoZ(activeChar.getGeoIndex());
 		}
 
@@ -259,7 +259,7 @@ public class PositionUtils
 	public static List<Location> applyOffset(List<Location> points, int offset)
 	{
 		offset = offset >> 4;
-		if (offset <= 0)
+		if(offset <= 0)
 			return points;
 
 		long dx = points.get(points.size() - 1).x - points.get(0).x;
@@ -267,7 +267,7 @@ public class PositionUtils
 		long dz = points.get(points.size() - 1).z - points.get(0).z;
 
 		double distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
-		if (distance <= offset)
+		if(distance <= offset)
 		{
 			Location point = points.get(0);
 			points.clear();
@@ -275,11 +275,11 @@ public class PositionUtils
 			return points;
 		}
 
-		if (distance >= 1)
+		if(distance >= 1)
 		{
 			double cut = offset / distance;
 			int num = (int) (points.size() * cut + 0.5);
-			for (int i = 1; i <= num && points.size() > 0; i++)
+			for(int i = 1; i <= num && points.size() > 0; i++)
 				points.remove(points.size() - 1);
 		}
 

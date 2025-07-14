@@ -13,7 +13,7 @@ public class CalculatorItemHandler extends DefaultItemHandler
 	@Override
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (!playable.isPlayer())
+		if(!playable.isPlayer())
 			return false;
 
 		playable.sendPacket(new ShowCalcPacket(item.getItemId()));

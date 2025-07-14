@@ -83,7 +83,8 @@ public final class HwidUtils
 				_log.error(player + " don't have hwid for some reason.");
 
 		});
-		return players.stream().filter(player -> player.getHwidHolder() != null).filter(distinctByKey(Player::getHwidHolder)).collect(Collectors.toList());
+		return players.stream().filter(player -> player.getHwidHolder()
+				!= null).filter(distinctByKey(Player::getHwidHolder)).collect(Collectors.toList());
 	}
 
 	public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor)

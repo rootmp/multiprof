@@ -21,7 +21,7 @@ public class RequestExSpExtractInfo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if(player==null)
+		if(player == null)
 			return;
 		player.sendPacket(new ExSpExtractInfo(player, _nItemID));
 	}

@@ -18,10 +18,10 @@ public final class EffectVisualTransformation extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isTransformImmune())
+		if(effected.isTransformImmune())
 			return false;
 
-		if (effected.isInFlyingTransform())
+		if(effected.isInFlyingTransform())
 			return false;
 
 		return true;

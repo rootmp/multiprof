@@ -9,12 +9,12 @@ import l2s.gameserver.templates.relics.RelicsPointInfo;
 public class ExRelicsPointInfo implements IClientOutgoingPacket
 {
 	private List<RelicsPointInfo> infos;
-	
+
 	public ExRelicsPointInfo()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{

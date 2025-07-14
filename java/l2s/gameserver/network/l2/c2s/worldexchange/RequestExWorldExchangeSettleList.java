@@ -16,19 +16,17 @@ public class RequestExWorldExchangeSettleList implements IClientIncomingPacket
 		packet.readC();
 		return true;
 	}
-	
+
 	@Override
 	public void run(GameClient client)
 	{
-		if (!Config.ENABLE_WORLD_EXCHANGE)
+		if(!Config.ENABLE_WORLD_EXCHANGE)
 			return;
-		
-		
+
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
-		
-		
+
 		player.sendPacket(ExWorldExchangeItemList.EMPTY_LIST);
 		player.sendPacket(new ExWorldExchangeSettleList(player));
 	}

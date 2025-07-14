@@ -24,25 +24,26 @@ public class RequestExMissionLevelJumpLevel implements IClientIncomingPacket
 	public void run(GameClient client) throws Exception
 	{
 		Player player = client.getActiveChar();
-		if(player==null)
+		if(player == null)
 			return;
-		
+
 		int year = Calendar.getInstance().get(Calendar.YEAR);
 		int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
-		
+
 		MissionLevelRewardTemplate template = MissionLevelRewardsHolder.getInstance().getRewardsInfo(month, year);
 		if(template == null)
 			return;
-		
-		if(player.getPlayer().getMissionLevelReward().getLevel()>=template.getMaxRewardLvl() || player.getAccVar().getVarBoolean("MissionLevelJumpLevel", false))
+
+		if(player.getPlayer().getMissionLevelReward().getLevel() >= template.getMaxRewardLvl()
+				|| player.getAccVar().getVarBoolean("MissionLevelJumpLevel", false))
 			return;
 
 		if(!ItemFunctions.deleteItem(player, 4037, 2000))
 		{
 			player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 			return;
-		}	
-		
+		}
+
 		player.getAccVar().setVar("MissionLevelJumpLevel", true, TimeUtils.MONTHLY_DATE_PATTERN.next(System.currentTimeMillis()));
 
 		player.getMissionLevelReward().setLevel(template.getMaxRewardLvl());

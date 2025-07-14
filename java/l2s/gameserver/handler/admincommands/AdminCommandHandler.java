@@ -128,21 +128,21 @@ public class AdminCommandHandler extends AbstractHolder
 
 	public void registerAdminCommandHandler(IAdminCommandHandler handler)
 	{
-		for (Enum<?> e : handler.getAdminCommandEnum())
+		for(Enum<?> e : handler.getAdminCommandEnum())
 			_datatable.put(e.toString().toLowerCase(), handler);
 	}
 
 	public IAdminCommandHandler getAdminCommandHandler(String adminCommand)
 	{
 		String command = adminCommand;
-		if (adminCommand.indexOf(" ") != -1)
+		if(adminCommand.indexOf(" ") != -1)
 			command = adminCommand.substring(0, adminCommand.indexOf(" "));
 		return _datatable.get(command);
 	}
 
 	public void useAdminCommandHandler(Player activeChar, String adminCommand)
 	{
-		if (!(activeChar.isGM() || activeChar.getPlayerAccess().CanUseGMCommand))
+		if(!(activeChar.isGM() || activeChar.getPlayerAccess().CanUseGMCommand))
 		{
 			activeChar.sendMessage(new CustomMessage("l2s.gameserver.network.l2.c2s.SendBypassBuildCmd.NoCommandOrAccess").addString(adminCommand));
 			return;
@@ -150,13 +150,13 @@ public class AdminCommandHandler extends AbstractHolder
 
 		String[] wordList = adminCommand.split(" ");
 		IAdminCommandHandler handler = _datatable.get(wordList[0]);
-		if (handler != null)
+		if(handler != null)
 		{
 			try
 			{
-				for (Enum<?> e : handler.getAdminCommandEnum())
+				for(Enum<?> e : handler.getAdminCommandEnum())
 				{
-					if (e.toString().equalsIgnoreCase(wordList[0]))
+					if(e.toString().equalsIgnoreCase(wordList[0]))
 					{
 						boolean success = handler.useAdminCommand(e, wordList, adminCommand, activeChar);
 						Log.LogCommand(activeChar, activeChar.getTarget(), adminCommand, success);
@@ -164,7 +164,7 @@ public class AdminCommandHandler extends AbstractHolder
 					}
 				}
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				error("", e);
 			}

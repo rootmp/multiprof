@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.QuestHolder;
 import l2s.gameserver.model.Player;
@@ -23,16 +24,16 @@ public class RequestQuestAbort implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 		Quest quest = QuestHolder.getInstance().getQuest(_questID);
-		if (activeChar == null || quest == null)
+		if(activeChar == null || quest == null)
 			return;
 
-		if (!quest.canAbortByPacket())
+		if(!quest.canAbortByPacket())
 			return;
 
 		QuestState qs = activeChar.getQuestState(quest);
-		if (qs != null && !qs.isCompleted())
+		if(qs != null && !qs.isCompleted())
 		{
-			if (!qs.abortQuest())
+			if(!qs.abortQuest())
 				activeChar.sendPacket(SystemMsg.THIS_QUEST_CANNOT_BE_DELETED);
 		}
 	}

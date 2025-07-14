@@ -14,7 +14,7 @@ public class RequestExRaidAuctionPostReceive implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		nID = packet.readD();
-		bAccept = packet.readC()==1;
+		bAccept = packet.readC() == 1;
 		return true;
 	}
 

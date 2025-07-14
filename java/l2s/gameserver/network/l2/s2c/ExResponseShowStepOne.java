@@ -25,7 +25,7 @@ public class ExResponseShowStepOne implements IClientOutgoingPacket
 	{
 		Collection<PetitionMainGroup> petitionGroups = PetitionGroupHolder.getInstance().getPetitionGroups();
 		packetWriter.writeD(petitionGroups.size());
-		for (PetitionMainGroup group : petitionGroups)
+		for(PetitionMainGroup group : petitionGroups)
 		{
 			packetWriter.writeC(group.getId());
 			packetWriter.writeS(group.getName(_language));

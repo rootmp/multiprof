@@ -55,7 +55,7 @@ public class ClanTable
 
 	public static ClanTable getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 		{
 			new ClanTable();
 		}
@@ -85,7 +85,7 @@ public class ClanTable
 
 	public Clan getClan(int clanId)
 	{
-		if (clanId <= 0)
+		if(clanId <= 0)
 			return null;
 		return _clans.get(clanId);
 	}
@@ -98,12 +98,12 @@ public class ClanTable
 
 	public Clan getClanByCharId(int charId)
 	{
-		if (charId <= 0)
+		if(charId <= 0)
 			return null;
 
-		for (Clan clan : getClans())
+		for(Clan clan : getClans())
 		{
-			if (clan != null && clan.isAnyMember(charId))
+			if(clan != null && clan.isAnyMember(charId))
 				return clan;
 		}
 		return null;
@@ -111,14 +111,14 @@ public class ClanTable
 
 	public Alliance getAlliance(int allyId)
 	{
-		if (allyId <= 0)
+		if(allyId <= 0)
 			return null;
 		return _alliances.get(allyId);
 	}
 
 	public Alliance getAllianceByCharId(int charId)
 	{
-		if (charId <= 0)
+		if(charId <= 0)
 			return null;
 
 		Clan charClan = getClanByCharId(charId);
@@ -144,12 +144,12 @@ public class ClanTable
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT clan_id FROM clan_data");
 			result = statement.executeQuery();
-			while (result.next())
+			while(result.next())
 			{
 				clanIds.add(result.getInt("clan_id"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Error while restoring clans!!! " + e);
 		}
@@ -158,22 +158,22 @@ public class ClanTable
 			DbUtils.closeQuietly(con, statement, result);
 		}
 
-		for (int clanId : clanIds)
+		for(int clanId : clanIds)
 		{
 			Clan clan = Clan.restore(clanId);
-			if (clan == null)
+			if(clan == null)
 			{
 				_log.warn("Error while restoring clanId: " + clanId);
 				continue;
 			}
 
-			if (clan.getAllSize() <= 0)
+			if(clan.getAllSize() <= 0)
 			{
 				_log.warn("membersCount = 0 for clanId: " + clanId);
 				continue;
 			}
 
-			if (clan.getLeader() == null)
+			if(clan.getLeader() == null)
 			{
 				_log.warn("Not found leader for clanId: " + clanId);
 				continue;
@@ -183,7 +183,7 @@ public class ClanTable
 		}
 
 		long lastRefreshTime = ServerVariables.getLong(REFRESH_CLAN_ATTENDANCE_INFO_VAR, System.currentTimeMillis());
-		if (TimeUtils.DAILY_DATE_PATTERN.next(lastRefreshTime) < System.currentTimeMillis())
+		if(TimeUtils.DAILY_DATE_PATTERN.next(lastRefreshTime) < System.currentTimeMillis())
 			refreshClanAttendanceInfo();
 	}
 
@@ -199,12 +199,12 @@ public class ClanTable
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT ally_id FROM ally_data");
 			result = statement.executeQuery();
-			while (result.next())
+			while(result.next())
 			{
 				allyIds.add(result.getInt("ally_id"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("Error while restoring allies!!! " + e);
 		}
@@ -213,17 +213,17 @@ public class ClanTable
 			DbUtils.closeQuietly(con, statement, result);
 		}
 
-		for (int allyId : allyIds)
+		for(int allyId : allyIds)
 		{
 			Alliance ally = new Alliance(allyId);
 
-			if (ally.getMembersCount() <= 0)
+			if(ally.getMembersCount() <= 0)
 			{
 				_log.warn("membersCount = 0 for allyId: " + allyId);
 				continue;
 			}
 
-			if (ally.getLeader() == null)
+			if(ally.getLeader() == null)
 			{
 				_log.warn("Not found leader for allyId: " + allyId);
 				continue;
@@ -235,9 +235,9 @@ public class ClanTable
 
 	public Clan getClanByName(String clanName)
 	{
-		for (Clan clan : _clans.values())
+		for(Clan clan : _clans.values())
 		{
-			if (clan.getName().equalsIgnoreCase(clanName))
+			if(clan.getName().equalsIgnoreCase(clanName))
 				return clan;
 		}
 
@@ -247,9 +247,9 @@ public class ClanTable
 	public int getClansSizeByName(String clanName)
 	{
 		int result = 0;
-		for (Clan clan : _clans.values())
+		for(Clan clan : _clans.values())
 		{
-			if (clan.getName().equalsIgnoreCase(clanName))
+			if(clan.getName().equalsIgnoreCase(clanName))
 				result++;
 		}
 		return result;
@@ -257,9 +257,9 @@ public class ClanTable
 
 	public Alliance getAllyByName(String allyName)
 	{
-		for (Alliance ally : _alliances.values())
+		for(Alliance ally : _alliances.values())
 		{
-			if (ally.getAllyName().equalsIgnoreCase(allyName))
+			if(ally.getAllyName().equalsIgnoreCase(allyName))
 				return ally;
 		}
 
@@ -268,7 +268,7 @@ public class ClanTable
 
 	public Clan createClan(Player player, String clanName)
 	{
-		if (getClanByName(clanName) == null)
+		if(getClanByName(clanName) == null)
 		{
 			UnitMember leader = new UnitMember(player);
 			leader.setLeaderOf(Clan.SUBUNIT_MAIN_CLAN);
@@ -367,7 +367,7 @@ public class ClanTable
 			statement.setInt(1, clanId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not dissolve clan: ", e);
 		}
@@ -381,7 +381,7 @@ public class ClanTable
 	{
 		Alliance alliance = null;
 
-		if (getAllyByName(allyName) == null)
+		if(getAllyByName(allyName) == null)
 		{
 			Clan leader = player.getClan();
 			alliance = new Alliance(IdFactory.getInstance().getNextId(), allyName, leader);
@@ -389,7 +389,7 @@ public class ClanTable
 			_alliances.put(alliance.getAllyId(), alliance);
 
 			player.getClan().setAllyId(alliance.getAllyId());
-			for (Player temp : player.getClan().getOnlineMembers())
+			for(Player temp : player.getClan().getOnlineMembers())
 			{
 				temp.broadcastCharInfo();
 			}
@@ -401,7 +401,7 @@ public class ClanTable
 	public void dissolveAlly(Player player)
 	{
 		int allyId = player.getAllyId();
-		for (Clan member : player.getAlliance().getMembers())
+		for(Clan member : player.getAlliance().getMembers())
 		{
 			member.setAllyId(0);
 			member.broadcastClanStatus(false, true, false);
@@ -430,7 +430,7 @@ public class ClanTable
 			statement.setInt(1, allyId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("could not dissolve clan: ", e);
 		}
@@ -442,9 +442,9 @@ public class ClanTable
 
 	public void storeClanWar(ClanWar war, boolean force)
 	{
-		if (force)
+		if(force)
 			storeClanWar0(war);
-		else if (!_clanWarUpdateCache.contains(war))
+		else if(!_clanWarUpdateCache.contains(war))
 			_clanWarUpdateCache.add(war);
 	}
 
@@ -464,7 +464,7 @@ public class ClanTable
 			statement.setInt(6, war.getAttackedKillCounter());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error storing clan wars data: ", e);
 		}
@@ -478,7 +478,7 @@ public class ClanTable
 	{
 		synchronized (_clanWarUpdateCache)
 		{
-			for (ClanWar war : _clanWarUpdateCache)
+			for(ClanWar war : _clanWarUpdateCache)
 				storeClanWar0(war);
 
 			_clanWarUpdateCache.clear();
@@ -497,7 +497,7 @@ public class ClanTable
 			statement.setInt(2, war.getAttackedClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error removing clan wars data: ", e);
 		}
@@ -517,7 +517,7 @@ public class ClanTable
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT attacker_clan, attacked_clan, period, last_kill_time, attackers_kill_counter, opposers_kill_counter FROM clan_wars");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int attackerClanId = rset.getInt("attacker_clan");
 				int opposinClanId = rset.getInt("attacked_clan");
@@ -525,7 +525,7 @@ public class ClanTable
 				Clan attackerClan = getClan(attackerClanId);
 				Clan opposinClan = getClan(opposinClanId);
 
-				if (attackerClan != null && opposinClan != null)
+				if(attackerClan != null && opposinClan != null)
 				{
 					ClanWarPeriod period = ClanWarPeriod.valueOf(rset.getString("period"));
 					int lastKillTime = rset.getInt("last_kill_time");
@@ -536,10 +536,11 @@ public class ClanTable
 					war.restore();
 				}
 				else
-					_log.warn(getClass().getSimpleName() + ": restorewars one of clans is null attacker_clan:" + attackerClanId + " attacked_clan:" + opposinClanId);
+					_log.warn(getClass().getSimpleName() + ": restorewars one of clans is null attacker_clan:" + attackerClanId + " attacked_clan:"
+							+ opposinClanId);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Error restoring clan wars data: ", e);
 		}
@@ -555,28 +556,28 @@ public class ClanTable
 	{
 		final long currentTime = System.currentTimeMillis();
 
-		for (Clan clan : getClans())
+		for(Clan clan : getClans())
 		{
-			if (clan.getDisbandEndTime() > 0 && clan.getDisbandEndTime() < currentTime)
+			if(clan.getDisbandEndTime() > 0 && clan.getDisbandEndTime() < currentTime)
 				dissolveClan(clan);
 		}
 
-		for (ClanChangeLeaderRequest changeLeaderRequest : _changeRequests.valueCollection())
+		for(ClanChangeLeaderRequest changeLeaderRequest : _changeRequests.valueCollection())
 		{
-			if (changeLeaderRequest.getTime() < System.currentTimeMillis())
+			if(changeLeaderRequest.getTime() < System.currentTimeMillis())
 			{
 				loop:
 				{
 					Clan clan = getClan(changeLeaderRequest.getClanId());
-					if (clan == null)
+					if(clan == null)
 						break loop;
 
 					SubUnit subUnit = clan.getSubUnit(Clan.SUBUNIT_MAIN_CLAN);
-					if (subUnit == null)
+					if(subUnit == null)
 						break loop;
 
 					UnitMember newLeader = subUnit.getUnitMember(changeLeaderRequest.getNewLeaderId());
-					if (newLeader == null)
+					if(newLeader == null)
 						break loop;
 
 					subUnit.setLeader(newLeader, true);
@@ -593,7 +594,8 @@ public class ClanTable
 
 		ClanLeaderRequestDAO.getInstance().delete(changeLeaderRequest);
 
-		Log.add("Clan: " + changeLeaderRequest.getClanId() + ", newLeaderId: " + changeLeaderRequest.getNewLeaderId() + ", endTime: " + TimeUtils.toSimpleFormat(changeLeaderRequest.getTime()), done ? Log.ClanChangeLeaderRequestDone : Log.ClanChangeLeaderRequestCancel);
+		Log.add("Clan: " + changeLeaderRequest.getClanId() + ", newLeaderId: " + changeLeaderRequest.getNewLeaderId() + ", endTime: "
+				+ TimeUtils.toSimpleFormat(changeLeaderRequest.getTime()), done ? Log.ClanChangeLeaderRequestDone : Log.ClanChangeLeaderRequestCancel);
 	}
 
 	public ClanChangeLeaderRequest getRequest(int clanId)
@@ -607,12 +609,13 @@ public class ClanTable
 
 		ClanLeaderRequestDAO.getInstance().insert(request);
 
-		Log.add("Clan: " + request.getClanId() + ", newLeaderId: " + request.getNewLeaderId() + ", endTime: " + TimeUtils.toSimpleFormat(request.getTime()), Log.ClanChangeLeaderRequestAdd);
+		Log.add("Clan: " + request.getClanId() + ", newLeaderId: " + request.getNewLeaderId() + ", endTime: "
+				+ TimeUtils.toSimpleFormat(request.getTime()), Log.ClanChangeLeaderRequestAdd);
 	}
 
 	public void refreshClanAttendanceInfo()
 	{
-		for (Clan clan : getClans())
+		for(Clan clan : getClans())
 		{
 			clan.refreshAttendanceInfo();
 		}
@@ -621,7 +624,7 @@ public class ClanTable
 
 	public void saveClanHuntingProgress()
 	{
-		for (Clan clan : getClans())
+		for(Clan clan : getClans())
 		{
 			clan.saveHuntingProgress();
 		}

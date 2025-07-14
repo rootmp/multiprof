@@ -40,7 +40,7 @@ public class StaticObjectObject implements SpawnableObject
 	@Override
 	public void refreshObject(Event event, Reflection reflection)
 	{
-		if (!event.isInProgress())
+		if(!event.isInProgress())
 			_instance.removeEvent(event);
 		else
 			_instance.addEvent(event);

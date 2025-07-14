@@ -26,7 +26,7 @@ public final class RunnableWrapper implements Runnable
 		{
 			_runnable.run();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("Exception: " + e, e);
 		}

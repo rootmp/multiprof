@@ -38,7 +38,7 @@ public class ExEventMatchSpelledInfo implements IClientOutgoingPacket
 
 	public void addSpellRecivedPlayer(Player cha)
 	{
-		if (cha != null)
+		if(cha != null)
 		{
 			char_obj_id = cha.getObjectId();
 		}
@@ -49,7 +49,7 @@ public class ExEventMatchSpelledInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(char_obj_id);
 		packetWriter.writeD(_effects.size());
-		for (Abnormal temp : _effects)
+		for(Abnormal temp : _effects)
 		{
 			packetWriter.writeD(temp.skillId);
 			packetWriter.writeH(temp.dat);

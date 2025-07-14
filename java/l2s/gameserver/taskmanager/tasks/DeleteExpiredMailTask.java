@@ -28,11 +28,11 @@ public class DeleteExpiredMailTask extends AutomaticTask
 
 		List<Mail> mails = MailDAO.getInstance().getExpiredMail(expireTime);
 
-		for (Mail mail : mails)
+		for(Mail mail : mails)
 		{
-			if (!mail.getAttachments().isEmpty())
+			if(!mail.getAttachments().isEmpty())
 			{
-				if (mail.getType() == Mail.SenderType.NORMAL)
+				if(mail.getType() == Mail.SenderType.NORMAL)
 				{
 					Player player = World.getPlayer(mail.getSenderId());
 
@@ -41,7 +41,7 @@ public class DeleteExpiredMailTask extends AutomaticTask
 					reject.setExpireTime(expireTime + 360 * 3600);
 					reject.save();
 
-					if (player != null)
+					if(player != null)
 					{
 						player.sendPacket(ExNoticePostArrived.STATIC_TRUE);
 						player.sendPacket(new ExUnReadMailCount(player));

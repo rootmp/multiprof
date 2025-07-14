@@ -38,7 +38,7 @@ public class i_p_attack extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (_turner && !effected.isInvulnerable())
+		if(_turner && !effected.isInvulnerable())
 		{
 			effected.broadcastPacket(new StartRotatingPacket(effected, effected.getHeading(), 1, 65535));
 			effected.broadcastPacket(new FinishRotatingPacket(effected, effector.getHeading(), 65535));
@@ -49,30 +49,32 @@ public class i_p_attack extends i_abstract_effect
 		final Creature realTarget = reflected ? effector : effected;
 
 		double power = getValue();
-		if (getSkill().getId() == 10300)
+		if(getSkill().getId() == 10300)
 		{
-			if (realTarget.isMonster() && !realTarget.isRaid())
+			if(realTarget.isMonster() && !realTarget.isRaid())
 				power = realTarget.getCurrentHp() - 1;
 		}
 
-		if (_static)
+		if(_static)
 		{
-			realTarget.reduceCurrentHp(power, effector, getSkill(), true, true, _directHp, true, false, false, power != 0, true, false, false, false, 0, false);
+			realTarget.reduceCurrentHp(power, effector, getSkill(), true, true, _directHp, true, false, false, power
+					!= 0, true, false, false, false, 0, false);
 			return;
 		}
 
 		final AttackInfo info = Formulas.calcSkillPDamage(effector, realTarget, getSkill(), power, _blow, getSkill().isSSPossible());
-		if (info == null)
+		if(info == null)
 			return;
 
-		realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, _directHp, true, false, false, getTemplate().isInstant() && power != 0, getTemplate().isInstant(), info.crit || info.blow, false, false, info.elementalDamage, info.elementalCrit);
+		realTarget.reduceCurrentHp(info.damage, effector, getSkill(), true, true, _directHp, true, false, false, getTemplate().isInstant()
+				&& power != 0, getTemplate().isInstant(), info.crit || info.blow, false, false, info.elementalDamage, info.elementalCrit);
 
-		if (!info.miss || info.damage >= 1)
+		if(!info.miss || info.damage >= 1)
 		{
 			double lethalDmg = Formulas.calcLethalDamage(effector, realTarget, getSkill());
-			if (lethalDmg > 0)
+			if(lethalDmg > 0)
 				realTarget.reduceCurrentHp(lethalDmg, effector, getSkill(), true, true, false, false, false, false, false);
-			else if (!reflected)
+			else if(!reflected)
 				realTarget.doCounterAttack(getSkill(), effector, _blow);
 		}
 	}

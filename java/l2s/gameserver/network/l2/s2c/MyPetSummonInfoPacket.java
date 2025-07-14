@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.Servitor;
@@ -94,14 +94,14 @@ public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 		boolean rideable = summon.isMountable();
 
 		Player owner = summon.getPlayer();
-		if (owner != null)
+		if(owner != null)
 		{
 			// В режиме трансформации значек mount/dismount не отображается
-			if (owner.isTransformed())
+			if(owner.isTransformed())
 			{
 				rideable = false;
 			}
-			if (owner.isInFightClub())
+			if(owner.isInFightClub())
 			{
 				AbstractFightClub fightClubEvent = owner.getFightClubEvent();
 				_name = fightClubEvent.getVisibleName(owner, _name, false);
@@ -112,21 +112,21 @@ public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 		_rhand = summon.getTemplate().rhand;
 		_lhand = summon.getTemplate().lhand;
 
-		if (summon.isAutoAttackable(summon.getPlayer()))
+		if(summon.isAutoAttackable(summon.getPlayer()))
 			_flags |= IS_ATTACKABLE;
 
 		_flags |= IS_UNK_FLAG_2;
 
-		if (summon.isRunning())
+		if(summon.isRunning())
 			_flags |= IS_RUNNING;
 
-		if (summon.isInCombat())
+		if(summon.isInCombat())
 			_flags |= IS_IN_COMBAT;
 
-		if (summon.isAlikeDead())
+		if(summon.isAlikeDead())
 			_flags |= IS_ALIKE_DEAD;
 
-		if (rideable)
+		if(rideable)
 			_flags |= IS_RIDEABLE;
 	}
 
@@ -164,7 +164,7 @@ public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeD(0);
 		packetWriter.writeD(_lhand); // left hand weapon
 		packetWriter.writeC(_showSpawnAnimation); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon
-										// animation)
+		// animation)
 		packetWriter.writeD(-1);
 		packetWriter.writeS(_name);
 		packetWriter.writeD(-1);
@@ -207,7 +207,7 @@ public class MyPetSummonInfoPacket implements IClientOutgoingPacket
 		packetWriter.writeC(1); // max sum points
 
 		packetWriter.writeH(_abnormalEffects.length);
-		for (AbnormalEffect abnormal : _abnormalEffects)
+		for(AbnormalEffect abnormal : _abnormalEffects)
 			packetWriter.writeH(abnormal.getId());
 
 		packetWriter.writeC(_flags);

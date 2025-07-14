@@ -43,7 +43,7 @@ public class FencesDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				int object_id = rset.getInt("object_id");
 				String name = rset.getString("name");
@@ -61,7 +61,7 @@ public class FencesDAO
 				restoredCount++;
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("FencesDAO:restore()", e);
 		}
@@ -74,7 +74,7 @@ public class FencesDAO
 
 	public boolean insert(FenceInstance fence)
 	{
-		if (!fence.getReflection().isMain())
+		if(!fence.getReflection().isMain())
 			return false;
 
 		Connection con = null;
@@ -94,7 +94,7 @@ public class FencesDAO
 			statement.setInt(9, fence.getState().ordinal());
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("FencesDAO:insert(fence)", e);
 			return false;
@@ -108,7 +108,7 @@ public class FencesDAO
 
 	public boolean update(FenceInstance fence)
 	{
-		if (!fence.getReflection().isMain())
+		if(!fence.getReflection().isMain())
 			return false;
 
 		Connection con = null;
@@ -128,7 +128,7 @@ public class FencesDAO
 			statement.setInt(9, fence.getObjectId());
 			statement.executeUpdate();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("FencesDAO:update(fence)", e);
 			return false;
@@ -142,7 +142,7 @@ public class FencesDAO
 
 	public boolean delete(FenceInstance fence)
 	{
-		if (!fence.getReflection().isMain())
+		if(!fence.getReflection().isMain())
 			return false;
 
 		Connection con = null;
@@ -154,7 +154,7 @@ public class FencesDAO
 			statement.setInt(1, fence.getObjectId());
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("FencesDAO:delete(fence)", e);
 			return false;

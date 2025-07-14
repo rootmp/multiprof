@@ -29,48 +29,48 @@ public class RequestExPvpbookTeleportToKiller implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		PvpbookInfo pvpbookInfo = activeChar.getPvpbook().getInfo(killerName, 1);
-		if (pvpbookInfo == null)
+		if(pvpbookInfo == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		
-		if (pvpbookInfo.getTeleportCount() <= 0)
+
+		if(pvpbookInfo.getTeleportCount() <= 0)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		
+
 		Player killerPlayer = pvpbookInfo.getKiller();
-		if (killerPlayer == null || !killerPlayer.isOnline())
+		if(killerPlayer == null || !killerPlayer.isOnline())
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_IS_NO_ONLINE_YOU_CANT_USE_THIS_FUNCTION);
 			return;
 		}
-		
-		if (killerPlayer.isInPeaceZone() ||!killerPlayer.getReflection().isMain() || !activeChar.getReflection().isMain())
+
+		if(killerPlayer.isInPeaceZone() || !killerPlayer.getReflection().isMain() || !activeChar.getReflection().isMain())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
-		
-		if(killerPlayer.isInBoat()|| killerPlayer.isInOlympiadMode() || killerPlayer.isInObserverMode() || killerPlayer.isFlying())
+
+		if(killerPlayer.isInBoat() || killerPlayer.isInOlympiadMode() || killerPlayer.isInObserverMode() || killerPlayer.isFlying())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
-		
-		if(activeChar.isFlying() || activeChar.isOutOfControl() /*|| activeChar.isInZone(ZoneType.hellbound)*/|| activeChar.isInOlympiadMode())
+
+		if(activeChar.isFlying() || activeChar.isOutOfControl() /*|| activeChar.isInZone(ZoneType.hellbound)*/ || activeChar.isInOlympiadMode())
 		{
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
 			return;
 		}
-		
-		if (/*killerPlayer.isInZone(ZoneType.hellbound)||*/ !checkRaid(killerPlayer))
+
+		if(/*killerPlayer.isInZone(ZoneType.hellbound)||*/ !checkRaid(killerPlayer))
 		{ // TODO: Перепроверить
 			// условия.
 			activeChar.sendPacket(SystemMsg.THE_CHARACTER_IS_IN_A_LOCATION_WHERE_IT_IS_IMPOSSIBLE_TO_USE_THIS_FUNCTION_2);
@@ -84,8 +84,7 @@ public class RequestExPvpbookTeleportToKiller implements IClientIncomingPacket
 		pvpbookInfo.reduceTeleportCount();
 		activeChar.teleToLocation(Location.findPointToStay(killerPlayer, 100, 150), ReflectionManager.MAIN);
 	}
-	
-	
+
 	private boolean checkRaid(Player killerPlayer)
 	{
 		for(MonsterInstance m : killerPlayer.getAroundMonsters(3000, 300))

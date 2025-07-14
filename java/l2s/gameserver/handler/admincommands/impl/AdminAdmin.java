@@ -57,37 +57,35 @@ public class AdminAdmin implements IAdminCommandHandler
 		Commands command = (Commands) comm;
 		StringTokenizer st;
 
-		if (activeChar.getPlayerAccess().Menu)
+		if(activeChar.getPlayerAccess().Menu)
 		{
 			GameObject target = activeChar.getTarget();
-			switch (command)
+			switch(command)
 			{
 				case admin_admin:
 					activeChar.sendPacket(new HtmlMessage(5).setFile("admin/admin.htm"));
 					break;
 				case admin_play_sounds:
-					if (wordList.length == 1)
+					if(wordList.length == 1)
 						activeChar.sendPacket(new HtmlMessage(5).setFile("admin/songs/songs.htm"));
 					else
 						try
 						{
 							activeChar.sendPacket(new HtmlMessage(5).setFile("admin/songs/songs" + wordList[1] + ".htm"));
 						}
-						catch (StringIndexOutOfBoundsException e)
-						{
-						}
+						catch(StringIndexOutOfBoundsException e)
+						{}
 					break;
 				case admin_play_sound:
 					try
 					{
 						playAdminSound(activeChar, wordList[1]);
 					}
-					catch (StringIndexOutOfBoundsException e)
-					{
-					}
+					catch(StringIndexOutOfBoundsException e)
+					{}
 					break;
 				case admin_silence:
-					if (activeChar.getMessageRefusal()) // already in message refusal
+					if(activeChar.getMessageRefusal()) // already in message refusal
 					// mode
 					{
 						activeChar.unsetVar("gm_silence");
@@ -97,7 +95,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					}
 					else
 					{
-						if (Config.SAVE_GM_EFFECTS)
+						if(Config.SAVE_GM_EFFECTS)
 							activeChar.setVar("gm_silence", "true", -1);
 						activeChar.setMessageRefusal(true);
 						activeChar.sendPacket(SystemMsg.MESSAGE_REFUSAL_MODE);
@@ -107,20 +105,20 @@ public class AdminAdmin implements IAdminCommandHandler
 				case admin_tradeoff:
 					try
 					{
-						if (wordList[1].equalsIgnoreCase("on"))
+						if(wordList[1].equalsIgnoreCase("on"))
 						{
 							activeChar.setTradeRefusal(true);
 							Functions.sendDebugMessage(activeChar, "tradeoff enabled");
 						}
-						else if (wordList[1].equalsIgnoreCase("off"))
+						else if(wordList[1].equalsIgnoreCase("off"))
 						{
 							activeChar.setTradeRefusal(false);
 							Functions.sendDebugMessage(activeChar, "tradeoff disabled");
 						}
 					}
-					catch (Exception ex)
+					catch(Exception ex)
 					{
-						if (activeChar.getTradeRefusal())
+						if(activeChar.getTradeRefusal())
 							Functions.sendDebugMessage(activeChar, "tradeoff currently enabled");
 						else
 							Functions.sendDebugMessage(activeChar, "tradeoff currently disabled");
@@ -130,18 +128,18 @@ public class AdminAdmin implements IAdminCommandHandler
 					String html = wordList[1];
 					try
 					{
-						if (html != null)
+						if(html != null)
 							activeChar.sendPacket(new HtmlMessage(5).setFile("admin/" + html));
 						else
 							Functions.sendDebugMessage(activeChar, "Html page not found");
 					}
-					catch (Exception npe)
+					catch(Exception npe)
 					{
 						Functions.sendDebugMessage(activeChar, "Html page not found");
 					}
 					break;
 				case admin_setnpcstate:
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //setnpcstate state");
 						return false;
@@ -151,12 +149,12 @@ public class AdminAdmin implements IAdminCommandHandler
 					{
 						state = Integer.parseInt(wordList[1]);
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "You must specify state");
 						return false;
 					}
-					if (!target.isNpc())
+					if(!target.isNpc())
 					{
 						Functions.sendDebugMessage(activeChar, "You must target an NPC");
 						return false;
@@ -173,16 +171,16 @@ public class AdminAdmin implements IAdminCommandHandler
 						int range = NumberUtils.toInt(vals[0], 0);
 						int astate = vals.length > 1 ? NumberUtils.toInt(vals[1], 0) : 0;
 
-						for (NpcInstance n : activeChar.getAroundNpc(range, 200))
+						for(NpcInstance n : activeChar.getAroundNpc(range, 200))
 							n.setNpcState(astate);
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						Functions.sendDebugMessage(activeChar, "Usage: //setareanpcstate [range] [state]");
 					}
 					break;
 				case admin_showmovie:
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //showmovie id");
 						return false;
@@ -192,7 +190,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					{
 						id = Integer.parseInt(wordList[1]);
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "You must specify id");
 						return false;
@@ -200,7 +198,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					activeChar.startScenePlayer(id);
 					break;
 				case admin_setzoneinfo:
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //setzoneinfo id");
 						return false;
@@ -210,7 +208,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					{
 						stateid = Integer.parseInt(wordList[1]);
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "You must specify id");
 						return false;
@@ -219,7 +217,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					break;
 				case admin_et:
 				case admin_eventtrigger:
-					if (wordList.length < 2)
+					if(wordList.length < 2)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //eventtrigger id");
 						return false;
@@ -229,7 +227,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					{
 						triggerid = Integer.parseInt(wordList[1]);
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "You must specify id");
 						return false;
@@ -238,7 +236,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					Functions.sendDebugMessage(activeChar, "Event Trigger ID[" + triggerid + "] activated!");
 					break;
 				case admin_debug:
-					if (!target.isPlayer())
+					if(!target.isPlayer())
 					{
 						Functions.sendDebugMessage(activeChar, "Only player target is allowed");
 						return false;
@@ -297,11 +295,11 @@ public class AdminAdmin implements IAdminCommandHandler
 					_s.add("==Pole Target Count: " + pl.getStat().calc(Stats.POLE_TARGET_COUNT, 1, null, null));
 					_s.add("==========DONE.");
 
-					for (String s : _s)
+					for(String s : _s)
 						Functions.sendDebugMessage(activeChar, s);
 					break;
 				case admin_uievent:
-					if (wordList.length < 5)
+					if(wordList.length < 5)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //uievent isHide doIncrease startTime endTime Text");
 						return false;
@@ -327,7 +325,7 @@ public class AdminAdmin implements IAdminCommandHandler
 						unk4 = Integer.parseInt(wordList[8]);
 						text = wordList[9];
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "Invalid format");
 						return false;
@@ -335,7 +333,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					activeChar.broadcastPacket(new ExSendUIEventPacket(activeChar, hide, increase, startTime, endTime, NpcString.NONE, text));
 					break;
 				case admin_balthus_event:
-					if (wordList.length != 9)
+					if(wordList.length != 9)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //balthus_event round stage jackpotId coins_count receivedAmount, isParticipate, isAwarded, time");
 						return false;
@@ -360,7 +358,7 @@ public class AdminAdmin implements IAdminCommandHandler
 						time = Integer.parseInt(wordList[8]);
 
 					}
-					catch (NumberFormatException e)
+					catch(NumberFormatException e)
 					{
 						Functions.sendDebugMessage(activeChar, "Invalid format");
 						return false;
@@ -368,7 +366,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					activeChar.sendPacket(new ExBalthusEvent(round, stage, jackpotId, coinsCount, receivedAmount, isParticipate, isAwarded, time));
 					break;
 				case admin_forcenpcinfo:
-					if (!target.isNpc())
+					if(!target.isNpc())
 					{
 						Functions.sendDebugMessage(activeChar, "Only NPC target is allowed");
 						return false;
@@ -376,7 +374,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					((NpcInstance) target).broadcastCharInfo();
 					break;
 				case admin_undying:
-					if (activeChar.isGMUndying())
+					if(activeChar.isGMUndying())
 					{
 						activeChar.setGMUndying(false);
 						Functions.sendDebugMessage(activeChar, "Undying state has been disabled.");
@@ -388,12 +386,12 @@ public class AdminAdmin implements IAdminCommandHandler
 					}
 					break;
 				case admin_heading:
-					if (target == null)
+					if(target == null)
 						target = activeChar;
 					activeChar.sendMessage("Target heading: " + target.getHeading());
 					break;
 				case admin_distance:
-					if (target == null || activeChar == target)
+					if(target == null || activeChar == target)
 						activeChar.sendMessage("Target not selected!");
 					else
 						activeChar.sendMessage("Target distance: " + activeChar.getDistance(target));
@@ -402,23 +400,23 @@ public class AdminAdmin implements IAdminCommandHandler
 			return true;
 		}
 
-		if (activeChar.getPlayerAccess().CanTeleport)
+		if(activeChar.getPlayerAccess().CanTeleport)
 		{
-			switch (command)
+			switch(command)
 			{
 				case admin_show_html:
 					String html = wordList[1];
 					try
 					{
-						if (html != null)
-							if (html.startsWith("tele"))
+						if(html != null)
+							if(html.startsWith("tele"))
 								activeChar.sendPacket(new HtmlMessage(5).setFile("admin/" + html));
 							else
 								activeChar.sendMessage("Access denied");
 						else
 							activeChar.sendMessage("Html page not found");
 					}
-					catch (Exception npe)
+					catch(Exception npe)
 					{
 						activeChar.sendMessage("Html page not found");
 					}
@@ -427,13 +425,13 @@ public class AdminAdmin implements IAdminCommandHandler
 			return true;
 		}
 
-		if (activeChar.getPlayerAccess().UseGMShop)
+		if(activeChar.getPlayerAccess().UseGMShop)
 		{
 			GameObject target = activeChar.getTarget();
-			if (target == null)
+			if(target == null)
 				target = activeChar;
 
-			if (!target.isPlayer())
+			if(!target.isPlayer())
 			{
 				Functions.sendDebugMessage(activeChar, "Only player target is allowed");
 				return false;
@@ -441,14 +439,14 @@ public class AdminAdmin implements IAdminCommandHandler
 
 			Player player = target.getPlayer();
 
-			switch (command)
+			switch(command)
 			{
 				case admin_add_premium_points:
 					try
 					{
 						player.addPremiumPoints(Integer.parseInt(wordList[1]));
 					}
-					catch (Exception npe)
+					catch(Exception npe)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //add_premium_points [COUNT]");
 					}
@@ -458,7 +456,7 @@ public class AdminAdmin implements IAdminCommandHandler
 					{
 						player.reducePremiumPoints(Integer.parseInt(wordList[1]));
 					}
-					catch (Exception npe)
+					catch(Exception npe)
 					{
 						Functions.sendDebugMessage(activeChar, "USAGE: //reduce_premium_points [COUNT]");
 					}

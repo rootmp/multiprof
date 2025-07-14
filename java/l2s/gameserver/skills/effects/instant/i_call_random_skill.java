@@ -25,10 +25,10 @@ public class i_call_random_skill extends i_abstract_effect
 		super(template);
 
 		int[][] skills = StringArrayUtils.stringToIntArray2X(getParams().getString("skills"), ";", "-");
-		for (int[] skillArr : skills)
+		for(int[] skillArr : skills)
 		{
 			SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, skillArr[0], skillArr.length >= 2 ? skillArr[1] : 1);
-			if (skillEntry != null)
+			if(skillEntry != null)
 				_skills.add(skillEntry);
 		}
 	}
@@ -36,24 +36,24 @@ public class i_call_random_skill extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		if (_skills.isEmpty())
+		if(_skills.isEmpty())
 			return;
 
 		SkillEntry skillEntry = Rnd.get(_skills);
-		if (skillEntry == null)
+		if(skillEntry == null)
 			return;
 
 		Skill skill = skillEntry.getTemplate();
-		if (skill.getReuseDelay() > 0 && effector.isSkillDisabled(skill))
+		if(skill.getReuseDelay() > 0 && effector.isSkillDisabled(skill))
 			return;
 
-		if (skillEntry.checkCondition(effector, effected, true, true, true, false, true))
+		if(skillEntry.checkCondition(effector, effected, true, true, true, false, true))
 		{
 			Set<Creature> targets = skill.getTargets(skillEntry, effector, effected, false);
 
-			if (!skill.isNotBroadcastable() && !effector.isCastingNow())
+			if(!skill.isNotBroadcastable() && !effector.isCastingNow())
 			{
-				for (Creature cha : targets)
+				for(Creature cha : targets)
 					effector.broadcastPacket(new MagicSkillUse(effector, cha, skill.getDisplayId(), skill.getDisplayLevel(), 0, 0));
 			}
 

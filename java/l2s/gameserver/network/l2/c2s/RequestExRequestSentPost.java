@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.dao.MailDAO;
 import l2s.gameserver.model.Player;
@@ -31,11 +32,11 @@ public class RequestExRequestSentPost implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Mail mail = MailDAO.getInstance().getSentMailByMailId(activeChar.getObjectId(), postId);
-		if (mail != null)
+		if(mail != null)
 		{
 			activeChar.sendPacket(new ExReplySentPost(mail));
 			return;

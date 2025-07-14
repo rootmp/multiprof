@@ -40,7 +40,7 @@ public abstract class ClanHall extends Residence
 	{
 		Clan oldOwner = getOwner();
 
-		if (oldOwner != null && (clan == null || clan.getClanId() != oldOwner.getClanId()))
+		if(oldOwner != null && (clan == null || clan.getClanId() != oldOwner.getClanId()))
 		{
 			removeSkills();
 			oldOwner.setHasHideout(0);
@@ -53,10 +53,10 @@ public abstract class ClanHall extends Residence
 		removeFunctions();
 
 		// Выдаем кх новому владельцу
-		if (clan != null)
+		if(clan != null)
 		{
 			InstantClanHall instantClanHall = ResidenceHolder.getInstance().getResidence(InstantClanHall.class, clan.getHasHideout());
-			if (instantClanHall != null)
+			if(instantClanHall != null)
 			{
 				instantClanHall.removeOwner(clan, true);
 				clan.broadcastToOnlineMembers(SystemMsg.YOU_HAVE_ACQUIRED_A_CLAN_HALL_OF_HIGHER_VALUE_THAN_THE_PROVISIONAL_CLAN_HALL_THE_PROVISIONAL_CLAN_HALL_OWNERSHIP_WILL_AUTOMATICALLY_BE_FORFEITED);

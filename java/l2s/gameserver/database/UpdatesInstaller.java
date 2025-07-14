@@ -36,7 +36,7 @@ public class UpdatesInstaller
 
 	public static void checkAndInstall()
 	{
-		if (!Config.DATABASE_AUTOUPDATE)
+		if(!Config.DATABASE_AUTOUPDATE)
 		{
 			_log.info("UpdatesInstaller: Disabled.");
 			return;
@@ -54,10 +54,10 @@ public class UpdatesInstaller
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT file_name FROM installed_updates");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 				installedUpdates.add(rset.getString("file_name").trim().toLowerCase());
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("UpdatesInstaller: Error while restore installed updates from database: " + e, e);
 			return;
@@ -68,7 +68,7 @@ public class UpdatesInstaller
 		}
 
 		File updatesDir = new File(Config.DATAPACK_ROOT, "sql/updates/");
-		if (updatesDir == null || !updatesDir.isDirectory())
+		if(updatesDir == null || !updatesDir.isDirectory())
 		{
 			_log.warn("UpdatesInstaller: Cannot find " + Config.DATAPACK_ROOT.getPath() + "/sql/updates/ directory!");
 			return;
@@ -78,11 +78,11 @@ public class UpdatesInstaller
 		Arrays.sort(updateFiles);
 
 		boolean newUpdatesInstalled = false;
-		for (File f : updateFiles)
+		for(File f : updateFiles)
 		{
 			final String name = f.getName().trim().toLowerCase().replaceAll("^\\s*(.*?)\\s*\\.sql$", "$1");
 
-			if (installedUpdates.stream().anyMatch(str -> str.equalsIgnoreCase(name)))
+			if(installedUpdates.stream().anyMatch(str -> str.equalsIgnoreCase(name)))
 				continue;
 
 			_log.info("UpdatesInstaller: Installing update: " + name + "...");
@@ -99,7 +99,7 @@ public class UpdatesInstaller
 
 				DbUtils.closeQuietly(statement);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				_log.error("UpdatesInstaller: Error while install database update [" + name + "]: " + e, e);
 				return;
@@ -111,7 +111,7 @@ public class UpdatesInstaller
 			}
 		}
 
-		if (!newUpdatesInstalled)
+		if(!newUpdatesInstalled)
 			_log.info("UpdatesInstaller: No new updates.");
 		else
 			_log.info("UpdatesInstaller: All new updates installed.");

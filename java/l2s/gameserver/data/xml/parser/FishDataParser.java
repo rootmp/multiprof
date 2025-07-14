@@ -46,23 +46,23 @@ public class FishDataParser extends AbstractParser<FishDataHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
-			if ("config".equals(element.getName()))
+			if("config".equals(element.getName()))
 			{
 				Config.FISHING_ONLY_PREMIUM_ACCOUNTS = Boolean.parseBoolean(element.attributeValue("only_premium_accounts"));
 				Config.FISHING_MINIMUM_LEVEL = Integer.parseInt(element.attributeValue("minimum_level"));
 				Config.RATE_FISH_DROP_COUNT = Integer.parseInt(element.attributeValue("fish_drop_count_rate"));
 			}
-			else if ("lure".equals(element.getName()))
+			else if("lure".equals(element.getName()))
 			{
 				int id = Integer.parseInt(element.attributeValue("id"));
 				double fail_chance = element.attributeValue("fail_chance") == null ? 0 : Double.parseDouble(element.attributeValue("fail_chance"));
 				int fail_duration = element.attributeValue("fail_duration") == null ? 0 : Integer.parseInt(element.attributeValue("fail_duration"));
 
 				LureTemplate lure = new LureTemplate(id, fail_chance, fail_duration);
-				for (Iterator<Element> fishIterator = element.elementIterator("fish"); fishIterator.hasNext();)
+				for(Iterator<Element> fishIterator = element.elementIterator("fish"); fishIterator.hasNext();)
 				{
 					Element fishElement = fishIterator.next();
 					int fish_id = Integer.parseInt(fishElement.attributeValue("id"));
@@ -70,13 +70,13 @@ public class FishDataParser extends AbstractParser<FishDataHolder>
 					int fish_duration = Integer.parseInt(fishElement.attributeValue("duration"));
 					int fish_reward_type = fishElement.attributeValue("reward_type") == null ? 0 : Integer.parseInt(fishElement.attributeValue("reward_type"));
 
-					if (fish_chance <= 0)
+					if(fish_chance <= 0)
 					{
 						warn("Fish ID[" + fish_id + "] in lure ID[" + id + "] have wrong chance (chance <= 0)!");
 						continue;
 					}
 
-					if (fish_duration <= 0)
+					if(fish_duration <= 0)
 					{
 						warn("Fish ID[" + fish_id + "] in lure ID[" + id + "] have wrong duration (duration <= 0)!");
 						continue;
@@ -86,16 +86,17 @@ public class FishDataParser extends AbstractParser<FishDataHolder>
 				}
 				getHolder().addLure(lure);
 			}
-			else if ("rewards".equals(element.getName()))
+			else if("rewards".equals(element.getName()))
 			{
 				int type = Integer.parseInt(element.attributeValue("type"));
 
 				FishRewardsTemplate rewards = new FishRewardsTemplate(type);
-				for (Iterator<Element> rewardIterator = element.elementIterator("reward"); rewardIterator.hasNext();)
+				for(Iterator<Element> rewardIterator = element.elementIterator("reward"); rewardIterator.hasNext();)
 				{
 					Element rewardElement = rewardIterator.next();
 					int reward_min_level = Integer.parseInt(rewardElement.attributeValue("min_level"));
-					int reward_max_level = rewardElement.attributeValue("max_level") == null ? Config.ALT_MAX_LEVEL : Integer.parseInt(rewardElement.attributeValue("max_level"));
+					int reward_max_level = rewardElement.attributeValue("max_level")
+							== null ? Config.ALT_MAX_LEVEL : Integer.parseInt(rewardElement.attributeValue("max_level"));
 					long reward_exp = Long.parseLong(rewardElement.attributeValue("exp"));
 					long reward_sp = Long.parseLong(rewardElement.attributeValue("sp"));
 
@@ -103,7 +104,7 @@ public class FishDataParser extends AbstractParser<FishDataHolder>
 				}
 				getHolder().addRewards(rewards);
 			}
-			else if ("rod".equals(element.getName()))
+			else if("rod".equals(element.getName()))
 			{
 				int id = Integer.parseInt(element.attributeValue("id"));
 				double duration_modifier = Double.parseDouble(element.attributeValue("duration_modifier"));

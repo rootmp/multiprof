@@ -55,7 +55,7 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
@@ -63,7 +63,7 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 			Class<?> clazz = null;
 
 			StatsSet set = new StatsSet();
-			for (Iterator<Attribute> subIterator = element.attributeIterator(); subIterator.hasNext();)
+			for(Iterator<Attribute> subIterator = element.attributeIterator(); subIterator.hasNext();)
 			{
 				Attribute subElement = subIterator.next();
 				set.set(subElement.getName(), subElement.getValue());
@@ -77,22 +77,22 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 				residence = (Residence) constructor.newInstance(set);
 				getHolder().addResidence(residence);
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				error("fail to init: " + getCurrentFileName(), e);
 				return;
 			}
 
-			if (element.getName().equalsIgnoreCase("residence"))
+			if(element.getName().equalsIgnoreCase("residence"))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 					String nodeName = subElement.getName();
 
-					if (nodeName.equalsIgnoreCase("available_functions"))
+					if(nodeName.equalsIgnoreCase("available_functions"))
 					{
-						for (Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
+						for(Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
 						{
 							Element nextElement = nextIterator.next();
 
@@ -100,64 +100,64 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 							int level = Integer.parseInt(nextElement.attributeValue("level"));
 
 							ResidenceFunctionTemplate template = ResidenceFunctionsHolder.getInstance().getTemplate(type, level);
-							if (template == null)
+							if(template == null)
 								continue;
 
 							residence.addAvailableFunction(template.getId());
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("skills"))
+					else if(nodeName.equalsIgnoreCase("skills"))
 					{
-						for (Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
+						for(Iterator<Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
 						{
 							Element nextElement = nextIterator.next();
 							int id2 = Integer.parseInt(nextElement.attributeValue("id"));
 							int level2 = Integer.parseInt(nextElement.attributeValue("level"));
 
 							SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.NONE, id2, level2);
-							if (skillEntry != null)
+							if(skillEntry != null)
 								residence.addSkill(skillEntry);
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("banish_points"))
+					else if(nodeName.equalsIgnoreCase("banish_points"))
 					{
-						for (Iterator<Element> banishPointsIterator = subElement.elementIterator(); banishPointsIterator.hasNext();)
+						for(Iterator<Element> banishPointsIterator = subElement.elementIterator(); banishPointsIterator.hasNext();)
 						{
 							Location loc = Location.parse(banishPointsIterator.next());
 
 							residence.addBanishPoint(loc);
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("owner_restart_points"))
+					else if(nodeName.equalsIgnoreCase("owner_restart_points"))
 					{
-						for (Iterator<Element> ownerRestartPointsIterator = subElement.elementIterator(); ownerRestartPointsIterator.hasNext();)
+						for(Iterator<Element> ownerRestartPointsIterator = subElement.elementIterator(); ownerRestartPointsIterator.hasNext();)
 						{
 							Location loc = Location.parse(ownerRestartPointsIterator.next());
 
 							residence.addOwnerRestartPoint(loc);
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("other_restart_points"))
+					else if(nodeName.equalsIgnoreCase("other_restart_points"))
 					{
-						for (Iterator<Element> otherRestartPointsIterator = subElement.elementIterator(); otherRestartPointsIterator.hasNext();)
+						for(Iterator<Element> otherRestartPointsIterator = subElement.elementIterator(); otherRestartPointsIterator.hasNext();)
 						{
 							Location loc = Location.parse(otherRestartPointsIterator.next());
 
 							residence.addOtherRestartPoint(loc);
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("chaos_restart_points"))
+					else if(nodeName.equalsIgnoreCase("chaos_restart_points"))
 					{
-						for (Iterator<Element> chaosRestartPointsIterator = subElement.elementIterator(); chaosRestartPointsIterator.hasNext();)
+						for(Iterator<Element> chaosRestartPointsIterator = subElement.elementIterator(); chaosRestartPointsIterator.hasNext();)
 						{
 							Location loc = Location.parse(chaosRestartPointsIterator.next());
 
 							residence.addChaosRestartPoint(loc);
 						}
 					}
-					else if (nodeName.equalsIgnoreCase("merchant_guards"))
+					else if(nodeName.equalsIgnoreCase("merchant_guards"))
 					{
-						for (Iterator<Element> thirdElementIterator = subElement.elementIterator(); thirdElementIterator.hasNext();)
+						for(Iterator<Element> thirdElementIterator = subElement.elementIterator(); thirdElementIterator.hasNext();)
 						{
 							Element thirdElement = thirdElementIterator.next();
 
@@ -170,16 +170,16 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 					}
 				}
 			}
-			else if (element.getName().equalsIgnoreCase("instant_residence"))
+			else if(element.getName().equalsIgnoreCase("instant_residence"))
 			{
-				for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+				for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 				{
 					Element subElement = subIterator.next();
 					String nodeName = subElement.getName();
 
-					if (nodeName.equalsIgnoreCase("functions"))
+					if(nodeName.equalsIgnoreCase("functions"))
 					{
-						for (Iterator<Element> nextIterator = subElement.elementIterator("function"); nextIterator.hasNext();)
+						for(Iterator<Element> nextIterator = subElement.elementIterator("function"); nextIterator.hasNext();)
 						{
 							Element nextElement = nextIterator.next();
 
@@ -187,7 +187,7 @@ public final class ResidenceParser extends AbstractParser<ResidenceHolder>
 							int level = Integer.parseInt(nextElement.attributeValue("level"));
 
 							ResidenceFunctionTemplate template = ResidenceFunctionsHolder.getInstance().getTemplate(type, level);
-							if (template == null)
+							if(template == null)
 								continue;
 
 							residence.addActiveFunction(new ResidenceFunction(template, residence.getId()));

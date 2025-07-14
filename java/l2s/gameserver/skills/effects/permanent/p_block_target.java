@@ -23,7 +23,7 @@ public class p_block_target extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isRaid())
+		if(effected.isRaid())
 			return false;
 		return effected.isTargetable(effector);
 	}
@@ -37,21 +37,21 @@ public class p_block_target extends EffectHandler
 		effected.abortCast(true, true);
 
 		List<Creature> characters = World.getAroundCharacters(effected);
-		for (Creature character : characters)
+		for(Creature character : characters)
 		{
-			if (character.getTarget() != effected && character.getAI().getAttackTarget() != effected && character.getAI().getCastTarget() != effected)
+			if(character.getTarget() != effected && character.getAI().getAttackTarget() != effected && character.getAI().getCastTarget() != effected)
 				continue;
 
-			if (character.isNpc())
+			if(character.isNpc())
 				((NpcInstance) character).getAggroList().remove(effected, true);
 
-			if (character.getTarget() == effected)
+			if(character.getTarget() == effected)
 				character.setTarget(null);
 
-			if (character.getAI().getAttackTarget() == effected)
+			if(character.getAI().getAttackTarget() == effected)
 				character.abortAttack(true, true);
 
-			if (character.getAI().getCastTarget() == effected)
+			if(character.getAI().getCastTarget() == effected)
 				character.abortCast(true, true);
 
 			character.sendActionFailed();

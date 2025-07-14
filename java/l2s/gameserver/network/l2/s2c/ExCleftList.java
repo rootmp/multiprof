@@ -16,7 +16,7 @@ public class ExCleftList implements IClientOutgoingPacket
 	public boolean write(PacketWriter packetWriter)
 	{
 		packetWriter.writeD(CleftType);
-		switch (CleftType)
+		switch(CleftType)
 		{
 			case CleftType_Total:
 				// dd (MinMemberCount:%d bBalancedMatch:%d)

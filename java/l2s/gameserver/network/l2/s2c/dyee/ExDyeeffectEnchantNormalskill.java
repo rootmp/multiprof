@@ -15,19 +15,19 @@ public class ExDyeeffectEnchantNormalskill implements IClientOutgoingPacket
 
 	public ExDyeeffectEnchantNormalskill()
 	{
-		System.out.println("NOTDONE " + this.getClass().getSimpleName()); 
+		System.out.println("NOTDONE " + this.getClass().getSimpleName());
 	}
-	
+
 	@Override
 	public boolean write(PacketWriter packetWriter)
 	{
-    packetWriter.writeD(nResult);
-    packetWriter.writeD(nCategory);
-    packetWriter.writeD(nSlotID);
-    packetWriter.writeD(nSlotLevel);
-    packetWriter.writeD(nSkillID);
-    packetWriter.writeD(nSkillLevel);
-    packetWriter.writeD(nChallengeCount);
+		packetWriter.writeD(nResult);
+		packetWriter.writeD(nCategory);
+		packetWriter.writeD(nSlotID);
+		packetWriter.writeD(nSlotLevel);
+		packetWriter.writeD(nSkillID);
+		packetWriter.writeD(nSkillLevel);
+		packetWriter.writeD(nChallengeCount);
 
 		return true;
 	}

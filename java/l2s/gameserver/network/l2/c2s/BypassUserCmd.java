@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.handler.usercommands.IUserCommandHandler;
 import l2s.gameserver.handler.usercommands.UserCommandHandler;
@@ -24,12 +25,12 @@ public class BypassUserCmd implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		IUserCommandHandler handler = UserCommandHandler.getInstance().getUserCommandHandler(_command);
 
-		if (handler == null)
+		if(handler == null)
 			activeChar.sendMessage(new CustomMessage("common.S1NotImplemented").addString(String.valueOf(_command)));
 		else
 			handler.useUserCommand(_command, activeChar);

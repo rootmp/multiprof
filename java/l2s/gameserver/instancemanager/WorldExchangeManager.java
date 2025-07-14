@@ -73,7 +73,7 @@ public class WorldExchangeManager
 			_checkStatus = null;
 		}
 	}
-	
+
 	/**
 	 * Little task which check and update bid items if it needs.
 	 */
@@ -132,12 +132,13 @@ public class WorldExchangeManager
 			final ItemInstance itemToRemove = player.getInventory().getItemByObjectId(objectId);
 			if(itemToRemove.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 			{
-				long kk = amount/1_000_000;
-				final long fee = Math.round((priceForEach * kk) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
+				long kk = amount / 1_000_000;
+				final long fee = Math.round((priceForEach * kk) * ((double) Config.WORLD_EXCHANGE_TAX / 100));
 				return Math.max(fee, Config.WORLD_EXCHANGE_MIN_ADENA_TAX);
-			}else
+			}
+			else
 			{
-				final long fee = Math.round((priceForEach * amount) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
+				final long fee = Math.round((priceForEach * amount) * ((double) Config.WORLD_EXCHANGE_TAX / 100));
 				return Math.max(fee, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
 			}
 		}
@@ -178,13 +179,13 @@ public class WorldExchangeManager
 		if(item.getItemId() == 57)
 			amount = (amount / 1000000) * 1000000;
 
-		if(amount<=0)
+		if(amount <= 0)
 		{
 			player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 			return;
 		}
 		long taxRegister = calculateTaxRegister(player, itemObjectId, amount, priceForEach, listingType);
-	
+
 		final long freeId = getNextId();
 
 		final WorldExchangeItemSubType category = _itemCategories.get(item.getItemId());
@@ -204,7 +205,8 @@ public class WorldExchangeManager
 					player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 					return;
 				}
-			}else
+			}
+			else
 			{
 				taxRegister = taxRegister * 5000;
 				if(taxRegister > player.getAdena())
@@ -234,9 +236,9 @@ public class WorldExchangeManager
 				itemInstance.setJdbcState(JdbcEntityState.UPDATED);
 				itemInstance.update();
 			}
-			
+
 			player.getInventory().reduceAdena(taxRegister);
-			
+
 			final long endTime = calculateDate(Config.WORLD_EXCHANGE_ITEM_SELL_PERIOD);
 			_itemBids.put(freeId, new WorldExchangeHolder(freeId, itemInstance, new ItemInfo(itemInstance), priceForEach, player.getObjectId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED, category, System.currentTimeMillis(), endTime, true, listingType, currencyType));
 			player.sendPacket(new ExWorldExchangeRegiItem(itemObjectId, amount, (byte) 1));
@@ -264,7 +266,7 @@ public class WorldExchangeManager
 					player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 					player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 					return;
-				}//else
+				} //else
 					//Log.LogItemWorldExchange(player, "[BUY] prepayment adena :", null, adena);
 			}
 
@@ -272,15 +274,15 @@ public class WorldExchangeManager
 			{
 				long item_amount = amount;
 				if(item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
-					item_amount= amount/1000000;
-				
-				if(item_amount<=0)
+					item_amount = amount / 1000000;
+
+				if(item_amount <= 0)
 				{
 					player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 					return;
 				}
-				
-				long amounts = item_amount * priceForEach;				
+
+				long amounts = item_amount * priceForEach;
 				if(ItemFunctions.getItemCount(player, ItemTemplate.ITEM_ID_LUCKY_COIN) < amounts)
 				{
 					player.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
@@ -292,7 +294,7 @@ public class WorldExchangeManager
 					player.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 					player.sendPacket(ExWorldExchangeBuyItem.FAIL);
 					return;
-				}//else
+				} //else
 					//Log.LogItemWorldExchange(player, "[BUY] prepayment Lucky Coin :", null, amounts);
 			}
 			final ItemInstance newItem = ItemFunctions.createItem(item.getItemId());
@@ -425,12 +427,14 @@ public class WorldExchangeManager
 			{
 				if(worldExchangeItem.getItemInfo().getItemId() == 57)
 				{
-					ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) ((worldExchangeItem.getItemInfo().getCount()/1000000) * worldExchangeItem.getPrice()));
+					ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) ((worldExchangeItem.getItemInfo().getCount() / 1000000)
+							* worldExchangeItem.getPrice()));
 					//Log.LogItemWorldExchange(player, "[BUY] cancelBid advance refund Lucky Coin:", null, (int) ((worldExchangeItem.getItemInfo().getCount()/1000000) * worldExchangeItem.getPrice()));
 				}
 				else
 				{
-					ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getItemInfo().getCount() * worldExchangeItem.getPrice()));
+					ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getItemInfo().getCount()
+							* worldExchangeItem.getPrice()));
 					//Log.LogItemWorldExchange(player, "[BUY] cancelBid advance refund Lucky Coin:", null, (int) (worldExchangeItem.getItemInfo().getCount() * worldExchangeItem.getPrice()));
 				}
 				player.sendPacket(new ExBR_GamePointPacket(player));
@@ -507,10 +511,12 @@ public class WorldExchangeManager
 		}
 
 		player.sendPacket(new ExWorldExchangeSettleRecvResult(worldExchangeItem.getItemInstance().getObjectId(), worldExchangeItem.getItemInstance().getCount(), 1));
-		
-		final long fee = Math.round((worldExchangeItem.getPrice() * worldExchangeItem.getItemInfo().getCount()) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
-		final long fee_adena_balance = Math.round((worldExchangeItem.getPrice() * worldExchangeItem.getItemInfo().getCount()/1000000) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
-		
+
+		final long fee = Math.round((worldExchangeItem.getPrice() * worldExchangeItem.getItemInfo().getCount())
+				* ((double) Config.WORLD_EXCHANGE_TAX / 100));
+		final long fee_adena_balance = Math.round((worldExchangeItem.getPrice() * worldExchangeItem.getItemInfo().getCount() / 1000000)
+				* ((double) Config.WORLD_EXCHANGE_TAX / 100));
+
 		worldExchangeItem.setStoreType(WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE);
 		if(worldExchangeItem.getListingType() == 0)
 		{
@@ -528,9 +534,10 @@ public class WorldExchangeManager
 				if(worldExchangeItem.getItemInfo().getItemId() == 57)
 				{
 					long item_count = worldExchangeItem.getItemInfo().getCount();
-					item_count = worldExchangeItem.getItemInfo().getCount()/1000000;
+					item_count = worldExchangeItem.getItemInfo().getCount() / 1000000;
 					returnPrice = worldExchangeItem.getPrice() * item_count - Math.max(fee_adena_balance, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
-				}else
+				}
+				else
 				{
 					long item_count = worldExchangeItem.getItemInfo().getCount();
 					returnPrice = worldExchangeItem.getPrice() * item_count - Math.max(fee, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
@@ -627,7 +634,8 @@ public class WorldExchangeManager
 
 			if(worldExchangeItem.getCurrencyType() == 1)
 			{
-				ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getItemInfo().getCount() * worldExchangeItem.getPrice()));
+				ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getItemInfo().getCount()
+						* worldExchangeItem.getPrice()));
 				player.sendPacket(new ExBR_GamePointPacket(player));
 			}
 		}
@@ -716,7 +724,7 @@ public class WorldExchangeManager
 						ItemInstance receivedItem = player.getInventory().addItem(new2Item);
 
 						//Log.LogItemWorldExchange(player, "[SALE] buyItem adena:", receivedItem, receivedItem.getCount());
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(receivedItem.getItemId(), receivedItem.getCount(), (byte) 1));
 
@@ -769,16 +777,16 @@ public class WorldExchangeManager
 						player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 						return;
 					}
-					
+
 					if(!ItemFunctions.deleteItem(player, worldExchangeItem.getItemInfo().getItemId(), nCount))
 					{
 						player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 						player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 						return;
 					}
-					final long fee = (long) ((worldExchangeItem.getPrice() * nCount) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
+					final long fee = (long) ((worldExchangeItem.getPrice() * nCount) * ((double) Config.WORLD_EXCHANGE_TAX / 100));
 					long returnPrice = worldExchangeItem.getPrice() * nCount - Math.max(fee, Config.WORLD_EXCHANGE_MIN_ADENA_TAX);
-					
+
 					if(worldExchangeItem.getItemInfo().getCount() > nCount)//покупка, поштучно
 					{
 						ItemInstance oldItem = createItem(worldExchangeItem.getItemInstance(), worldExchangeItem.getOldOwnerId(), worldExchangeItem.getItemInstance().getCount()
@@ -799,7 +807,7 @@ public class WorldExchangeManager
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_ADENA, returnPrice);
 
 						//Log.LogItemWorldExchange(player, "[BUY] buyItem adena:", null, returnPrice);
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(newItem.getItemId(), newItem.getCount(), (byte) 1));
 
@@ -818,7 +826,7 @@ public class WorldExchangeManager
 
 						long destroyTime = calculateDate(Config.WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD);
 						WorldExchangeHolder newHolder = new WorldExchangeHolder(worldExchangeId, newItem, new ItemInfo(newItem), worldExchangeItem.getPrice(), worldExchangeItem.getOldOwnerId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD, worldExchangeItem.getCategory(), worldExchangeItem.getStartTime(), destroyTime, true, worldExchangeItem.getListingType(), worldExchangeItem.getCurrencyType());
-						
+
 						_itemBids.replace(worldExchangeId, worldExchangeItem, newHolder);
 
 						WorldExchangeDAO.getInstance().insert(_itemBids.get(worldExchangeItem.getWorldExchangeId()), worldExchangeItem.getWorldExchangeId());
@@ -826,11 +834,11 @@ public class WorldExchangeManager
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_ADENA, returnPrice);
 
 						//Log.LogItemWorldExchange(player, "[BUY] buyItem adena:", null, returnPrice);
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(newItem.getItemId(), newItem.getCount(), (byte) 1));
 
-						for(Player oldOwner : GameObjectsStorage.getPlayers(true,true))
+						for(Player oldOwner : GameObjectsStorage.getPlayers(true, true))
 						{
 							if(oldOwner.getObjectId() == newHolder.getOldOwnerId())
 							{
@@ -842,33 +850,34 @@ public class WorldExchangeManager
 				}
 				break;
 			}
-				
+
 			case 1://баланс
 			{
 				if(worldExchangeItem.getListingType() == 0)//продажа 
-				{ 
+				{
 					if(worldExchangeItem.getItemInstance().getItemId() == 57)
 					{
-						if(nCount<1000000)
+						if(nCount < 1000000)
 						{
 							player.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 							player.sendPacket(ExWorldExchangeBuyItem.FAIL);
 							return;
 						}
-						
-						if(!ItemFunctions.haveItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, worldExchangeItem.getPrice() * (nCount/1000000)))
+
+						if(!ItemFunctions.haveItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, worldExchangeItem.getPrice() * (nCount / 1000000)))
 						{
 							player.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 							player.sendPacket(ExWorldExchangeBuyItem.FAIL);
 							return;
 						}
-						
-						if(!ItemFunctions.deleteItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getPrice() * (nCount/1000000))))
+
+						if(!ItemFunctions.deleteItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) (worldExchangeItem.getPrice() * (nCount / 1000000))))
 						{
 							player.sendPacket(ExBR_BuyProductPacket.RESULT_NOT_ENOUGH_POINTS);
 							return;
 						}
-					}else
+					}
+					else
 					{
 						if(!ItemFunctions.haveItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, worldExchangeItem.getPrice() * nCount))
 						{
@@ -906,7 +915,7 @@ public class WorldExchangeManager
 
 						ItemInstance receivedItem = player.getInventory().addItem(new2Item);
 						//Log.LogItemWorldExchange(player, "[SALE] buyItem Lucky Coin:", receivedItem, receivedItem.getCount());
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(receivedItem.getItemId(), receivedItem.getCount(), (byte) 1));
 
@@ -944,7 +953,7 @@ public class WorldExchangeManager
 						}
 					}
 				}
-				
+
 				if(worldExchangeItem.getListingType() == 1)//покупка
 				{
 					if(worldExchangeItem.getItemInfo().getCount() < nCount)
@@ -960,21 +969,21 @@ public class WorldExchangeManager
 						player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 						return;
 					}
-					
+
 					if(!ItemFunctions.deleteItem(player, worldExchangeItem.getItemInfo().getItemId(), nCount))
 					{
 						player.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 						player.sendPacket(ExWorldExchangeRegiItem.FAIL);
 						return;
 					}
-					
-					final long fee = (long) ((worldExchangeItem.getPrice() * nCount) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
-					final long fee_andena_balance = (long) ((worldExchangeItem.getPrice() * nCount/1000000) * ((double)Config.WORLD_EXCHANGE_TAX / 100));
-					
+
+					final long fee = (long) ((worldExchangeItem.getPrice() * nCount) * ((double) Config.WORLD_EXCHANGE_TAX / 100));
+					final long fee_andena_balance = (long) ((worldExchangeItem.getPrice() * nCount / 1000000) * ((double) Config.WORLD_EXCHANGE_TAX / 100));
+
 					long returnPrice = worldExchangeItem.getPrice() * nCount - Math.max(fee, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
-					
+
 					if(worldExchangeItem.getItemInfo().getItemId() == 57)
-						 returnPrice = worldExchangeItem.getPrice() * (nCount/1000000) - Math.max(fee_andena_balance, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
+						returnPrice = worldExchangeItem.getPrice() * (nCount / 1000000) - Math.max(fee_andena_balance, Config.WORLD_EXCHANGE_MIN_BALANS_TAX);
 
 					if(worldExchangeItem.getItemInfo().getCount() > nCount)//покупка, поштучно
 					{
@@ -995,14 +1004,14 @@ public class WorldExchangeManager
 						WorldExchangeDAO.getInstance().insert(_itemBids.get(freeId), freeId);
 
 						//Log.LogItemWorldExchange(player, "[BUY] buyItem Lucky Coin add :", null, returnPrice);
-						
+
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) returnPrice);
 						player.sendPacket(new ExBR_GamePointPacket(player));
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(newItem.getItemId(), newItem.getCount(), (byte) 1));
 
-						for(Player oldOwner : GameObjectsStorage.getPlayers(true,true))
+						for(Player oldOwner : GameObjectsStorage.getPlayers(true, true))
 						{
 							if(oldOwner.getObjectId() == newHolder.getOldOwnerId())
 							{
@@ -1017,15 +1026,15 @@ public class WorldExchangeManager
 
 						long destroyTime = calculateDate(Config.WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD);
 						WorldExchangeHolder newHolder = new WorldExchangeHolder(worldExchangeId, newItem, new ItemInfo(newItem), worldExchangeItem.getPrice(), worldExchangeItem.getOldOwnerId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD, worldExchangeItem.getCategory(), worldExchangeItem.getStartTime(), destroyTime, true, worldExchangeItem.getListingType(), worldExchangeItem.getCurrencyType());
-						
+
 						_itemBids.replace(worldExchangeId, worldExchangeItem, newHolder);
 
 						WorldExchangeDAO.getInstance().insert(_itemBids.get(worldExchangeItem.getWorldExchangeId()), worldExchangeItem.getWorldExchangeId());
 						//Log.LogItemWorldExchange(player, "[BUY] buyItem Lucky Coin add :", null, returnPrice);
-						
+
 						ItemFunctions.addItem(player, ItemTemplate.ITEM_ID_LUCKY_COIN, (int) returnPrice);
 						player.sendPacket(new ExBR_GamePointPacket(player));
-						
+
 						//TODO player.sendItemList(false);
 						player.sendPacket(new ExWorldExchangeBuyItem(newItem.getItemId(), newItem.getCount(), (byte) 1));
 
@@ -1079,7 +1088,7 @@ public class WorldExchangeManager
 		newItem.setCount(nCount);
 		newItem.setVisualId(oldItem.getVisualId());
 		newItem.setBlessed(oldItem.isBlessed());
-		
+
 		newItem.setVariation1Id(oldItem.getVariation1Id());
 		newItem.setVariation2Id(oldItem.getVariation2Id());
 
@@ -1217,18 +1226,18 @@ public class WorldExchangeManager
 
 		/*if(sortedList.size() > 100)
 			return sortedList.subList(0, 100);
-
-		return sortedList;*/
 		
-    int itemsPerPage = 100;
-    int totalItems = sortedList.size();
-    int fromIndex = nPage * itemsPerPage;
-    int toIndex = Math.min(fromIndex + itemsPerPage, totalItems);
+		return sortedList;*/
 
-    if (fromIndex >= totalItems) 
-        return new ArrayList<>(); // Return an empty list if the requested page is out of range 
+		int itemsPerPage = 100;
+		int totalItems = sortedList.size();
+		int fromIndex = nPage * itemsPerPage;
+		int toIndex = Math.min(fromIndex + itemsPerPage, totalItems);
 
-    return sortedList.subList(fromIndex, toIndex);
+		if(fromIndex >= totalItems)
+			return new ArrayList<>(); // Return an empty list if the requested page is out of range 
+
+		return sortedList.subList(fromIndex, toIndex);
 	}
 
 	/**
@@ -1278,7 +1287,7 @@ public class WorldExchangeManager
 		returnMap.put(WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD, sold);
 		returnMap.put(WorldExchangeItemStatusType.WORLD_EXCHANGE_OUT_TIME, outTime);
 
-		for (WorldExchangeItemStatusType type : WorldExchangeItemStatusType.values())
+		for(WorldExchangeItemStatusType type : WorldExchangeItemStatusType.values())
 			returnMap.putIfAbsent(type, new ArrayList<>());
 
 		return returnMap;

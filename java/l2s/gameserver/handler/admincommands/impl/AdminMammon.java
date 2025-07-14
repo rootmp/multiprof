@@ -29,10 +29,10 @@ public class AdminMammon implements IAdminCommandHandler
 
 		npcIds.clear();
 
-		if (!activeChar.getPlayerAccess().Menu)
+		if(!activeChar.getPlayerAccess().Menu)
 			return false;
 
-		else if (fullString.startsWith("admin_find_mammon"))
+		else if(fullString.startsWith("admin_find_mammon"))
 		{
 			npcIds.add(31113);
 			npcIds.add(31126);
@@ -41,10 +41,10 @@ public class AdminMammon implements IAdminCommandHandler
 
 			try
 			{
-				if (fullString.length() > 16)
+				if(fullString.length() > 16)
 					teleportIndex = Integer.parseInt(fullString.substring(18));
 			}
-			catch (Exception NumberFormatException)
+			catch(Exception NumberFormatException)
 			{
 				// activeChar.sendPacket(SystemMessage.sendString("Command format is
 				// //find_mammon <teleportIndex>"));
@@ -53,7 +53,7 @@ public class AdminMammon implements IAdminCommandHandler
 			findAdminNPCs(activeChar, npcIds, teleportIndex, -1);
 		}
 
-		else if (fullString.equals("admin_show_mammon"))
+		else if(fullString.equals("admin_show_mammon"))
 		{
 			npcIds.add(31113);
 			npcIds.add(31126);
@@ -61,7 +61,7 @@ public class AdminMammon implements IAdminCommandHandler
 			findAdminNPCs(activeChar, npcIds, -1, 1);
 		}
 
-		else if (fullString.equals("admin_hide_mammon"))
+		else if(fullString.equals("admin_hide_mammon"))
 		{
 			npcIds.add(31113);
 			npcIds.add(31126);
@@ -69,7 +69,7 @@ public class AdminMammon implements IAdminCommandHandler
 			findAdminNPCs(activeChar, npcIds, -1, 0);
 		}
 
-		else if (fullString.startsWith("admin_list_spawns"))
+		else if(fullString.startsWith("admin_list_spawns"))
 		{
 			int npcId = 0;
 
@@ -77,7 +77,7 @@ public class AdminMammon implements IAdminCommandHandler
 			{
 				npcId = Integer.parseInt(fullString.substring(18).trim());
 			}
-			catch (Exception NumberFormatException)
+			catch(Exception NumberFormatException)
 			{
 				activeChar.sendMessage("Command format is //list_spawns <NPC_ID>");
 			}
@@ -87,7 +87,7 @@ public class AdminMammon implements IAdminCommandHandler
 		}
 
 		// Used for testing SystemMessage IDs - Use //msg <ID>
-		else if (fullString.startsWith("admin_msg"))
+		else if(fullString.startsWith("admin_msg"))
 			activeChar.sendPacket(new SystemMessage(Integer.parseInt(fullString.substring(10).trim())));
 
 		return true;
@@ -103,27 +103,28 @@ public class AdminMammon implements IAdminCommandHandler
 	{
 		int index = 0;
 
-		for (NpcInstance npcInst : GameObjectsStorage.getNpcs())
+		for(NpcInstance npcInst : GameObjectsStorage.getNpcs())
 		{
 			int npcId = npcInst.getNpcId();
-			if (npcIdList.contains(npcId))
+			if(npcIdList.contains(npcId))
 			{
-				if (makeVisible == 1)
+				if(makeVisible == 1)
 					npcInst.spawnMe();
-				else if (makeVisible == 0)
+				else if(makeVisible == 0)
 					npcInst.decayMe();
 
-				if (npcInst.isVisible())
+				if(npcInst.isVisible())
 				{
 					index++;
 
-					if (teleportIndex > -1)
+					if(teleportIndex > -1)
 					{
-						if (teleportIndex == index)
+						if(teleportIndex == index)
 							activeChar.teleToLocation(npcInst.getLoc());
 					}
 					else
-						activeChar.sendMessage(index + " - " + npcInst.getName() + " (" + npcInst.getObjectId() + "): " + npcInst.getX() + " " + npcInst.getY() + " " + npcInst.getZ());
+						activeChar.sendMessage(index + " - " + npcInst.getName() + " (" + npcInst.getObjectId() + "): " + npcInst.getX() + " " + npcInst.getY()
+								+ " " + npcInst.getZ());
 				}
 			}
 		}

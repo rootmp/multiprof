@@ -4,7 +4,7 @@ import l2s.dataparser.data.annotations.array.IntArray;
 import l2s.dataparser.data.annotations.array.ObjectArray;
 import l2s.dataparser.data.common.ItemRequiredId;
 
-public class UserCraftData 
+public class UserCraftData
 {
 	@IntArray
 	public int[] item_list;

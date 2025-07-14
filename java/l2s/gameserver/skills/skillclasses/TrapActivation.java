@@ -23,17 +23,17 @@ public class TrapActivation extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return false;
 
 		List<TrapInstance> traps = activeChar.getPlayer().getTraps();
-		if (traps.size() != 1)
+		if(traps.size() != 1)
 			return false;
 
-		if (activeChar.getDistance(traps.get(0)) > _range) // max range to cast.
+		if(activeChar.getDistance(traps.get(0)) > _range) // max range to cast.
 			return false;
 
 		return true;
@@ -44,11 +44,11 @@ public class TrapActivation extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (!activeChar.isPlayer())
+		if(!activeChar.isPlayer())
 			return;
 
 		List<TrapInstance> traps = activeChar.getPlayer().getTraps();
-		if (traps.isEmpty())
+		if(traps.isEmpty())
 			return;
 
 		traps.get(0).selfDestroy();

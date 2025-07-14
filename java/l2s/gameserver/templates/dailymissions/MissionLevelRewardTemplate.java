@@ -60,9 +60,9 @@ public class MissionLevelRewardTemplate
 	public int additionalRewardsSize()
 	{
 		int size = 0;
-		for (int i = 0; i < _rewardData.size(); i++)
+		for(int i = 0; i < _rewardData.size(); i++)
 		{
-			if (_rewardData.get(i).getAdditionalReward().getId() != 0)
+			if(_rewardData.get(i).getAdditionalReward().getId() != 0)
 			{
 				size++;
 			}

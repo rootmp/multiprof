@@ -5,7 +5,6 @@ import l2s.gameserver.enums.WorldExchangeItemSubType;
 import l2s.gameserver.model.items.ItemInfo;
 import l2s.gameserver.model.items.ItemInstance;
 
-
 public class WorldExchangeHolder
 {
 	private final long _worldExchangeId;
@@ -20,7 +19,7 @@ public class WorldExchangeHolder
 	private boolean _hasChanges;
 	private int _currencyType;
 	private int _listingType;
-	
+
 	public WorldExchangeHolder(long worldExchangeId, ItemInstance itemInstance, ItemInfo itemInfo, long price, int oldOwnerId, WorldExchangeItemStatusType storeType, WorldExchangeItemSubType category, long startTime, long endTime, boolean hasChanges, int listingType, int currencyType)
 	{
 		_worldExchangeId = worldExchangeId;
@@ -33,75 +32,75 @@ public class WorldExchangeHolder
 		_startTime = startTime;
 		_endTime = endTime;
 		_hasChanges = hasChanges;
-		_listingType=listingType;
+		_listingType = listingType;
 		_currencyType = currencyType;
 	}
-	
+
 	public long getWorldExchangeId()
 	{
 		return _worldExchangeId;
 	}
-	
+
 	public ItemInstance getItemInstance()
 	{
 		return _itemInstance;
 	}
-	
+
 	public ItemInfo getItemInfo()
 	{
 		return _itemInfo;
 	}
-	
+
 	public long getPrice()
 	{
 		return _price;
 	}
-	
+
 	public int getOldOwnerId()
 	{
 		return _oldOwnerId;
 	}
-	
+
 	public WorldExchangeItemStatusType getStoreType()
 	{
 		return _storeType;
 	}
-	
+
 	public void setStoreType(WorldExchangeItemStatusType storeType)
 	{
 		_storeType = storeType;
 	}
-	
+
 	public WorldExchangeItemSubType getCategory()
 	{
 		return _category;
 	}
-	
+
 	public long getStartTime()
 	{
 		return _startTime;
 	}
-	
+
 	public long getEndTime()
 	{
 		return _endTime;
 	}
-	
+
 	public void setEndTime(long endTime)
 	{
 		_endTime = endTime;
 	}
-	
+
 	public boolean hasChanges()
 	{
-		if (_hasChanges) // TODO: Fix logic.
+		if(_hasChanges) // TODO: Fix logic.
 		{
 			_hasChanges = false;
 			return true;
 		}
 		return false;
 	}
-	
+
 	public void setHasChanges(boolean hasChanges)
 	{
 		_hasChanges = hasChanges;

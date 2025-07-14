@@ -31,7 +31,7 @@ public abstract class AbstractAI implements Runnable
 	public void changeIntention(CtrlIntention intention, Object arg0, Object arg1)
 	{
 		_intention = intention;
-		if (intention != CtrlIntention.AI_INTENTION_CAST && intention != CtrlIntention.AI_INTENTION_ATTACK)
+		if(intention != CtrlIntention.AI_INTENTION_CAST && intention != CtrlIntention.AI_INTENTION_ATTACK)
 		{
 			setAttackTarget(null);
 		}
@@ -51,23 +51,21 @@ public abstract class AbstractAI implements Runnable
 	{
 		final Creature actor = getActor();
 
-		if (intention != CtrlIntention.AI_INTENTION_CAST && intention != CtrlIntention.AI_INTENTION_ATTACK)
+		if(intention != CtrlIntention.AI_INTENTION_CAST && intention != CtrlIntention.AI_INTENTION_ATTACK)
 		{
 			setAttackTarget(null);
 		}
 
-		if (!actor.isVisible())
+		if(!actor.isVisible())
 		{
-			if (_intention == CtrlIntention.AI_INTENTION_IDLE)
-			{
-				return;
-			}
+			if(_intention == CtrlIntention.AI_INTENTION_IDLE)
+			{ return; }
 			intention = CtrlIntention.AI_INTENTION_IDLE;
 		}
 
 		actor.getListeners().onAiIntention(intention, arg0, arg1);
 
-		switch (intention)
+		switch(intention)
 		{
 			case AI_INTENTION_IDLE:
 				onIntentionIdle();
@@ -112,42 +110,37 @@ public abstract class AbstractAI implements Runnable
 
 	public final void notifyEvent(CtrlEvent evt, Object arg0)
 	{
-		notifyEvent(evt, new Object[]
-		{
-			arg0
+		notifyEvent(evt, new Object[] {
+				arg0
 		});
 	}
 
 	public final void notifyEvent(CtrlEvent evt, Object arg0, Object arg1)
 	{
-		notifyEvent(evt, new Object[]
-		{
-			arg0,
-			arg1
+		notifyEvent(evt, new Object[] {
+				arg0,
+				arg1
 		});
 	}
 
 	public final void notifyEvent(CtrlEvent evt, Object arg0, Object arg1, Object arg2)
 	{
-		notifyEvent(evt, new Object[]
-		{
-			arg0,
-			arg1,
-			arg2
+		notifyEvent(evt, new Object[] {
+				arg0,
+				arg1,
+				arg2
 		});
 	}
 
 	public void notifyEvent(CtrlEvent evt, Object[] args)
 	{
 		final Creature actor = getActor();
-		if (actor == null || !actor.isVisible())
-		{
-			return;
-		}
+		if(actor == null || !actor.isVisible())
+		{ return; }
 
 		actor.getListeners().onAiEvent(evt, args);
 
-		switch (evt)
+		switch(evt)
 		{
 			case EVT_THINK:
 				onEvtThink();
@@ -251,7 +244,7 @@ public abstract class AbstractAI implements Runnable
 	protected void clientActionFailed()
 	{
 		final Creature actor = getActor();
-		if (actor != null && actor.isPlayer())
+		if(actor != null && actor.isPlayer())
 		{
 			actor.sendActionFailed();
 		}
@@ -278,7 +271,7 @@ public abstract class AbstractAI implements Runnable
 
 	public void setAttackTarget(Creature target)
 	{
-		_attackTarget = target == null ? HardReferences.<Creature>emptyRef() : target.getRef();
+		_attackTarget = target == null ? HardReferences.<Creature> emptyRef() : target.getRef();
 	}
 
 	public Creature getAttackTarget()
@@ -288,7 +281,7 @@ public abstract class AbstractAI implements Runnable
 
 	public void setCastTarget(Creature target)
 	{
-		_castTarget = target == null ? HardReferences.<Creature>emptyRef() : target.getRef();
+		_castTarget = target == null ? HardReferences.<Creature> emptyRef() : target.getRef();
 	}
 
 	public Creature getCastTarget()

@@ -46,14 +46,14 @@ public class DefaultItemHandler implements IItemHandler
 	@Override
 	public void dropItem(Player player, ItemInstance item, long count, Location loc)
 	{
-		if (item.isEquipped())
+		if(item.isEquipped())
 		{
 			player.getInventory().unEquipItem(item);
 			player.sendUserInfo(true);
 		}
 
 		item = player.getInventory().removeItemByObjectId(item.getObjectId(), count);
-		if (item == null)
+		if(item == null)
 		{
 			player.sendActionFailed();
 			return;
@@ -99,7 +99,7 @@ public class DefaultItemHandler implements IItemHandler
 
 	public static void sendUseMessage(Playable playable, int itemId)
 	{
-		if (!playable.isPlayer())
+		if(!playable.isPlayer())
 			return;
 
 		playable.getPlayer().sendPacket(new SystemMessagePacket(SystemMsg.YOU_USE_S1).addItemName(itemId));
@@ -112,7 +112,7 @@ public class DefaultItemHandler implements IItemHandler
 
 	public static boolean reduceItem(Playable playable, ItemInstance item)
 	{
-		if (playable.getInventory().destroyItem(item, 1))
+		if(playable.getInventory().destroyItem(item, 1))
 			return true;
 
 		// if(playable.isPlayer())
@@ -122,7 +122,7 @@ public class DefaultItemHandler implements IItemHandler
 
 	public static boolean canBeExtracted(Player player, ItemInstance item)
 	{
-		if (player.getWeightPenalty() >= 3 || player.getInventory().getSize() > player.getInventoryLimit() - 10)
+		if(player.getWeightPenalty() >= 3 || player.getInventory().getSize() > player.getInventoryLimit() - 10)
 		{
 			// TODO: [Bonux] Проверить, правильное ли сообщение.
 			player.sendPacket(SystemMsg.YOUR_INVENTORY_IS_FULL, new SystemMessagePacket(SystemMsg.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS).addItemName(item.getItemId()));

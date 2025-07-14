@@ -46,7 +46,7 @@ public class MMOExecutableQueue<T extends MMOClient> implements Queue<Receivable
 	{
 		while(_state.compareAndSet(QUEUED, RUNNING))
 			try
-		{
+			{
 				for(;;)
 				{
 					final Runnable t = poll();
@@ -55,11 +55,11 @@ public class MMOExecutableQueue<T extends MMOClient> implements Queue<Receivable
 
 					t.run();
 				}
-		}
-		finally
-		{
-			_state.compareAndSet(RUNNING, NONE);
-		}
+			}
+			finally
+			{
+				_state.compareAndSet(RUNNING, NONE);
+			}
 	}
 
 	@Override

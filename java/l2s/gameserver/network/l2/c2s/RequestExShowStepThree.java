@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.Config;
 import l2s.gameserver.model.Player;
@@ -25,15 +26,15 @@ public class RequestExShowStepThree implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player player = client.getActiveChar();
-		if (player == null || !Config.EX_NEW_PETITION_SYSTEM)
+		if(player == null || !Config.EX_NEW_PETITION_SYSTEM)
 			return;
 
 		PetitionMainGroup group = player.getPetitionGroup();
-		if (group == null)
+		if(group == null)
 			return;
 
 		PetitionSubGroup subGroup = group.getSubGroup(_subId);
-		if (subGroup == null)
+		if(subGroup == null)
 			return;
 
 		player.sendPacket(new ExResponseShowContents(subGroup.getDescription(player.getLanguage())));

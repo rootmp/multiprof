@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.model.pledge.Clan;
 import l2s.gameserver.model.pledge.RankPrivs;
 import l2s.gameserver.model.pledge.UnitMember;
@@ -14,12 +14,12 @@ public class PledgeReceivePowerInfo implements IClientOutgoingPacket
 	{
 		PowerGrade = member.getPowerGrade();
 		member_name = member.getName();
-		if (member.isClanLeader())
+		if(member.isClanLeader())
 			privs = Clan.CP_ALL;
 		else
 		{
 			RankPrivs temp = member.getClan().getRankPrivs(member.getPowerGrade());
-			if (temp != null)
+			if(temp != null)
 				privs = temp.getPrivs();
 			else
 				privs = 0;

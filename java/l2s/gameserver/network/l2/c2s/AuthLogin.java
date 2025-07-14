@@ -98,13 +98,14 @@ public class AuthLogin implements IClientIncomingPacket
 				client.close(LoginResultPacket.ACCESS_FAILED_TRY_LATER);
 				return;
 			}
-			if(AuthBanManager.getInstance().isBanned(BanBindType.HWID, client.getHwidHolder().asString()) || GameBanManager.getInstance().isBanned(BanBindType.HWID, client.getHwidHolder().asString()))
+			if(AuthBanManager.getInstance().isBanned(BanBindType.HWID, client.getHwidHolder().asString())
+					|| GameBanManager.getInstance().isBanned(BanBindType.HWID, client.getHwidHolder().asString()))
 			{
 				client.close(LoginResultPacket.ACCESS_FAILED_TRY_LATER);
 				return;
 			}
 
-			GameClient oldClient =  AuthServerCommunication.getInstance().addWaitingClient(client);
+			GameClient oldClient = AuthServerCommunication.getInstance().addWaitingClient(client);
 			if(oldClient != null)
 				oldClient.close(ServerCloseSocketPacket.STATIC);
 

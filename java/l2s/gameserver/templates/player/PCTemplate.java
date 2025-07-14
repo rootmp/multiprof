@@ -1,10 +1,9 @@
 package l2s.gameserver.templates.player;
 
-import l2s.gameserver.templates.CreatureTemplate;
-import l2s.gameserver.templates.StatsSet;
-
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.gameserver.templates.CreatureTemplate;
+import l2s.gameserver.templates.StatsSet;
 
 /**
  * @author Bonux
@@ -131,7 +130,7 @@ public abstract class PCTemplate extends CreatureTemplate
 	public double getBaseHpReg(int level)
 	{
 		HpMpCpData data = _regenData.get(level);
-		if (data == null)
+		if(data == null)
 			return 0.;
 		return data.getHP();
 	}
@@ -140,7 +139,7 @@ public abstract class PCTemplate extends CreatureTemplate
 	public double getBaseMpReg(int level)
 	{
 		HpMpCpData data = _regenData.get(level);
-		if (data == null)
+		if(data == null)
 			return 0.;
 		return data.getMP();
 	}
@@ -149,7 +148,7 @@ public abstract class PCTemplate extends CreatureTemplate
 	public double getBaseCpReg(int level)
 	{
 		HpMpCpData data = _regenData.get(level);
-		if (data == null)
+		if(data == null)
 			return 0.;
 		return data.getCP();
 	}

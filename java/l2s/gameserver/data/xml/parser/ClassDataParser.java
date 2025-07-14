@@ -35,19 +35,19 @@ public final class ClassDataParser extends AbstractParser<ClassDataHolder>
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator(); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 
 			int classId = Integer.parseInt(element.attributeValue("class_id"));
 			ClassData template = new ClassData(classId);
-			for (Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
+			for(Iterator<Element> subIterator = element.elementIterator(); subIterator.hasNext();)
 			{
 				Element subElement = subIterator.next();
 
-				if ("hp_mp_cp_data".equalsIgnoreCase(subElement.getName()))
+				if("hp_mp_cp_data".equalsIgnoreCase(subElement.getName()))
 				{
-					for (Element e : subElement.elements())
+					for(Element e : subElement.elements())
 					{
 						int lvl = Integer.parseInt(e.attributeValue("lvl"));
 						double hp = Double.parseDouble(e.attributeValue("hp"));
@@ -61,12 +61,12 @@ public final class ClassDataParser extends AbstractParser<ClassDataHolder>
 			getHolder().addClassData(template);
 		}
 	}
-	
+
 	public static ClassDataParser getInstance()
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected final static ClassDataParser _instance = new ClassDataParser();

@@ -32,83 +32,85 @@ public final class TradeHelper
 {
 	public static boolean checksIfCanOpenStore(Player player, int storeType)
 	{
-		if (player.getLevel() < Config.SERVICES_TRADE_MIN_LEVEL)
+		if(player.getLevel() < Config.SERVICES_TRADE_MIN_LEVEL)
 		{
 			player.sendMessage(new CustomMessage("trade.NotHavePermission").addNumber(Config.SERVICES_TRADE_MIN_LEVEL));
 			return false;
 		}
 
 		String tradeBan = player.getVar("tradeBan");
-		if (tradeBan != null && (tradeBan.equals("-1") || Long.parseLong(tradeBan) >= System.currentTimeMillis()))
+		if(tradeBan != null && (tradeBan.equals("-1") || Long.parseLong(tradeBan) >= System.currentTimeMillis()))
 		{
 			player.sendPacket(SystemMsg.YOU_ARE_CURRENTLY_BLOCKED_FROM_USING_THE_PRIVATE_STORE_AND_PRIVATE_WORKSHOP);
 			return false;
 		}
 
-		if (storeType != Player.STORE_PRIVATE_BUFF)
+		if(storeType != Player.STORE_PRIVATE_BUFF)
 		{
-			if (Config.ALLOWED_TRADE_ZONES.length > 0)
+			if(Config.ALLOWED_TRADE_ZONES.length > 0)
 			{
 				boolean inTradeZone = false;
-				for (String zoneName : Config.ALLOWED_TRADE_ZONES)
+				for(String zoneName : Config.ALLOWED_TRADE_ZONES)
 				{
-					if (player.isInZone(zoneName))
+					if(player.isInZone(zoneName))
 					{
 						inTradeZone = true;
 						break;
 					}
 				}
 
-				if (!inTradeZone)
+				if(!inTradeZone)
 				{
-					player.sendPacket(storeType == Player.STORE_PRIVATE_MANUFACTURE ? SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_WORKSHOP_HERE : SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_STORE_HERE);
+					player.sendPacket(storeType
+							== Player.STORE_PRIVATE_MANUFACTURE ? SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_WORKSHOP_HERE : SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_STORE_HERE);
 					return false;
 				}
 			}
 
 			String BLOCK_ZONE = storeType == Player.STORE_PRIVATE_MANUFACTURE ? Zone.BLOCKED_ACTION_PRIVATE_WORKSHOP : Zone.BLOCKED_ACTION_PRIVATE_STORE;
-			if (player.isActionBlocked(BLOCK_ZONE))
+			if(player.isActionBlocked(BLOCK_ZONE))
 			{
-				if (!Config.SERVICES_NO_TRADE_ONLY_OFFLINE || Config.SERVICES_NO_TRADE_ONLY_OFFLINE && player.isInOfflineMode())
+				if(!Config.SERVICES_NO_TRADE_ONLY_OFFLINE || Config.SERVICES_NO_TRADE_ONLY_OFFLINE && player.isInOfflineMode())
 				{
-					player.sendPacket(storeType == Player.STORE_PRIVATE_MANUFACTURE ? SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_WORKSHOP_HERE : SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_STORE_HERE);
+					player.sendPacket(storeType
+							== Player.STORE_PRIVATE_MANUFACTURE ? SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_WORKSHOP_HERE : SystemMsg.YOU_CANNOT_OPEN_A_PRIVATE_STORE_HERE);
 					return false;
 				}
 			}
 		}
 
-		if (player.isCastingNow())
+		if(player.isCastingNow())
 		{
 			player.sendPacket(SystemMsg.A_PRIVATE_STORE_MAY_NOT_BE_OPENED_WHILE_USING_A_SKILL);
 			return false;
 		}
 
-		if (player.isInCombat())
+		if(player.isInCombat())
 		{
 			player.sendPacket(SystemMsg.WHILE_YOU_ARE_ENGAGED_IN_COMBAT_YOU_CANNOT_OPERATE_A_PRIVATE_STORE_OR_PRIVATE_WORKSHOP);
 			return false;
 		}
 
-		if (player.isActionsDisabled() || player.isMounted() || player.isInOlympiadMode() || player.isInDuel() || player.isProcessingRequest())
+		if(player.isActionsDisabled() || player.isMounted() || player.isInOlympiadMode() || player.isInDuel() || player.isProcessingRequest())
 			return false;
 
-	    if (player.isInFightClub() && !player.getFightClubEvent().canOpenStore(player))
-	        return false; 
-	    
-		if (Config.SERVICES_TRADE_ONLY_FAR)
+		if(player.isInFightClub() && !player.getFightClubEvent().canOpenStore(player))
+			return false;
+
+		if(Config.SERVICES_TRADE_ONLY_FAR)
 		{
 			boolean tradenear = false;
-			for (Player p : World.getAroundPlayers(player, Config.SERVICES_TRADE_RADIUS, 200))
-				if (p.isInStoreMode())
+			for(Player p : World.getAroundPlayers(player, Config.SERVICES_TRADE_RADIUS, 200))
+				if(p.isInStoreMode())
 				{
 					tradenear = true;
 					break;
 				}
 
-			if (World.getAroundNpc(player, Config.SERVICES_TRADE_RADIUS + 100, 200).size() > 0)
+			if(World.getAroundNpc(player, Config.SERVICES_TRADE_RADIUS + 100, 200).size() > 0)
 				tradenear = true;
 
-			if (tradenear)
+			if(tradenear)
 			{
 				player.sendMessage(new CustomMessage("trade.OtherTradersNear"));
 				return false;
@@ -139,22 +141,23 @@ public final class TradeHelper
 	 */
 	public static boolean validateStore(Player player, long adena)
 	{
-		if (player.isDead())
+		if(player.isDead())
 			return false;
 
-		if (player.getLevel() < Config.SERVICES_TRADE_MIN_LEVEL)
+		if(player.getLevel() < Config.SERVICES_TRADE_MIN_LEVEL)
 			return false;
 
 		String tradeBan = player.getVar("tradeBan");
-		if (tradeBan != null && (tradeBan.equals("-1") || Long.parseLong(tradeBan) >= System.currentTimeMillis()))
+		if(tradeBan != null && (tradeBan.equals("-1") || Long.parseLong(tradeBan) >= System.currentTimeMillis()))
 			return false;
 
-		String BLOCK_ZONE = player.getPrivateStoreType() == Player.STORE_PRIVATE_MANUFACTURE ? Zone.BLOCKED_ACTION_PRIVATE_WORKSHOP : Zone.BLOCKED_ACTION_PRIVATE_STORE;
-		if (player.isActionBlocked(BLOCK_ZONE))
-			if (!Config.SERVICES_NO_TRADE_ONLY_OFFLINE || Config.SERVICES_NO_TRADE_ONLY_OFFLINE && player.isInOfflineMode())
+		String BLOCK_ZONE = player.getPrivateStoreType()
+				== Player.STORE_PRIVATE_MANUFACTURE ? Zone.BLOCKED_ACTION_PRIVATE_WORKSHOP : Zone.BLOCKED_ACTION_PRIVATE_STORE;
+		if(player.isActionBlocked(BLOCK_ZONE))
+			if(!Config.SERVICES_NO_TRADE_ONLY_OFFLINE || Config.SERVICES_NO_TRADE_ONLY_OFFLINE && player.isInOfflineMode())
 				return false;
 
-		switch (player.getPrivateStoreType())
+		switch(player.getPrivateStoreType())
 		{
 			case Player.STORE_PRIVATE_BUY:
 				return validateBuyStore(player, adena);
@@ -165,16 +168,16 @@ public final class TradeHelper
 				return true; // TODO
 		}
 
-		if (Config.SERVICES_TRADE_ONLY_FAR)
+		if(Config.SERVICES_TRADE_ONLY_FAR)
 		{
-			for (Creature c : World.getAroundCharacters(player, Config.SERVICES_TRADE_RADIUS, 200))
+			for(Creature c : World.getAroundCharacters(player, Config.SERVICES_TRADE_RADIUS, 200))
 			{
-				if (c.isNpc())
+				if(c.isNpc())
 					return false;
-				if (!c.isPlayer())
+				if(!c.isPlayer())
 					continue;
 				Player p = c.getPlayer();
-				if (p.isInStoreMode())
+				if(p.isInStoreMode())
 					return false;
 			}
 		}
@@ -185,10 +188,10 @@ public final class TradeHelper
 	public static boolean validateBuyStore(Player player, long adena)
 	{
 		List<TradeItem> buyList = player.getBuyList();
-		if (buyList.isEmpty())
+		if(buyList.isEmpty())
 			return false;
 
-		if (buyList.size() > player.getTradeLimit())
+		if(buyList.size() > player.getTradeLimit())
 			return false;
 
 		long totalCost = adena;
@@ -198,27 +201,27 @@ public final class TradeHelper
 		try
 		{
 			ItemTemplate template;
-			for (TradeItem item : buyList)
+			for(TradeItem item : buyList)
 			{
 				template = item.getItem();
 				totalCost = SafeMath.addAndCheck(totalCost, SafeMath.mulAndCheck(item.getCount(), item.getOwnersPrice()));
 				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(item.getCount(), template.getWeight()));
-				if (!template.isStackable() || player.getInventory().getItemByItemId(item.getItemId()) == null)
+				if(!template.isStackable() || player.getInventory().getItemByItemId(item.getItemId()) == null)
 					slots++;
 			}
 		}
-		catch (ArithmeticException ae)
+		catch(ArithmeticException ae)
 		{
 			return false;
 		}
 
-		if (totalCost > player.getAdena())
+		if(totalCost > player.getAdena())
 			return false;
 
-		if (!player.getInventory().validateWeight(weight))
+		if(!player.getInventory().validateWeight(weight))
 			return false;
 
-		if (!player.getInventory().validateCapacity(slots))
+		if(!player.getInventory().validateCapacity(slots))
 			return false;
 
 		return true;
@@ -227,9 +230,9 @@ public final class TradeHelper
 	public final static void purchaseItem(Player buyer, Player seller, TradeItem item)
 	{
 		long price = item.getCount() * item.getOwnersPrice();
-		if (!item.getItem().isStackable())
+		if(!item.getItem().isStackable())
 		{
-			if (item.getEnchantLevel() > 0)
+			if(item.getEnchantLevel() > 0)
 			{
 				seller.sendPacket(new SystemMessagePacket(SystemMsg.S2S3_HAS_BEEN_SOLD_TO_C1_AT_THE_PRICE_OF_S4_ADENA).addName(buyer).addInteger(item.getEnchantLevel()).addItemName(item.getItemId()).addLong(price));
 				buyer.sendPacket(new SystemMessagePacket(SystemMsg.S2S3_HAS_BEEN_PURCHASED_FROM_C1_AT_THE_PRICE_OF_S4_ADENA).addName(seller).addInteger(item.getEnchantLevel()).addItemName(item.getItemId()).addLong(price));
@@ -250,11 +253,11 @@ public final class TradeHelper
 	public final static long getTax(Player seller, long price)
 	{
 		long tax = (long) (price * Config.SERVICES_TRADE_TAX / 100);
-		if (seller.isInZone(Zone.ZoneType.offshore))
+		if(seller.isInZone(Zone.ZoneType.offshore))
 			tax = (long) (price * Config.SERVICES_OFFSHORE_TRADE_TAX / 100);
-		if (Config.SERVICES_TRADE_TAX_ONLY_OFFLINE && !seller.isInOfflineMode())
+		if(Config.SERVICES_TRADE_TAX_ONLY_OFFLINE && !seller.isInOfflineMode())
 			tax = 0;
-		if (Config.SERVICES_PARNASSUS_NOTAX && seller.getReflection() == ReflectionManager.PARNASSUS)
+		if(Config.SERVICES_PARNASSUS_NOTAX && seller.getReflection() == ReflectionManager.PARNASSUS)
 			tax = 0;
 
 		return tax;
@@ -267,7 +270,7 @@ public final class TradeHelper
 	{
 		activeChar.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 		activeChar.storePrivateStore();
-		if (activeChar.isInOfflineMode())
+		if(activeChar.isInOfflineMode())
 		{
 			activeChar.setOfflineMode(false);
 			activeChar.kick();
@@ -307,7 +310,7 @@ public final class TradeHelper
 			int expireTimeSecs;
 			Player p;
 
-			while (rset.next())
+			while(rset.next())
 			{
 				objectId = rset.getInt("obj_id");
 				expireTimeSecs = rset.getInt("value");
@@ -319,13 +322,13 @@ public final class TradeHelper
 					//_log.info("Offline trader {} don't have last_hwid variable.", objectId);
 					continue;
 				}
-				
+
 				p = Player.restore(objectId, hwidHolder);
-				if (p == null)
+				if(p == null)
 					continue;
 
 				// радиус не проверяется, т.к. торговец еще не заспавнен в мир
-				if (!validateStore(p))
+				if(!validateStore(p))
 				{
 					p.setPrivateStoreType(Player.STORE_PRIVATE_NONE);
 					p.storePrivateStore();
@@ -341,10 +344,10 @@ public final class TradeHelper
 
 				p.spawnMe();
 
-				if (p.getClan() != null && p.getClan().getAnyMember(p.getObjectId()) != null)
+				if(p.getClan() != null && p.getClan().getAnyMember(p.getObjectId()) != null)
 					p.getClan().getAnyMember(p.getObjectId()).setPlayerInstance(p, false);
 
-				if (expireTimeSecs != Integer.MAX_VALUE)
+				if(expireTimeSecs != Integer.MAX_VALUE)
 					p.startKickTask((expireTimeSecs * 1000L) - System.currentTimeMillis());
 
 				count++;
@@ -397,7 +400,7 @@ public final class TradeHelper
 			String title;
 			Player p;
 
-			while (rset.next())
+			while(rset.next())
 			{
 				objectId = rset.getInt("obj_id");
 				expireTimeSecs = rset.getInt("expire_time");
@@ -412,9 +415,9 @@ public final class TradeHelper
 					//_log.info("Offline trader {} don't have last_hwid variable.", objectId);
 					continue;
 				}
-				
+
 				p = Player.restore(objectId, hwidHolder);
-				if (p == null)
+				if(p == null)
 					continue;
 
 				p.startAbnormalEffect(Config.SERVICES_OFFLINE_TRADE_ABNORMAL_EFFECT);
@@ -426,18 +429,18 @@ public final class TradeHelper
 
 				p.spawnMe();
 
-				if (p.getClan() != null && p.getClan().getAnyMember(p.getObjectId()) != null)
+				if(p.getClan() != null && p.getClan().getAnyMember(p.getObjectId()) != null)
 					p.getClan().getAnyMember(p.getObjectId()).setPlayerInstance(p, false);
 
-				if (expireTimeSecs != Integer.MAX_VALUE)
+				if(expireTimeSecs != Integer.MAX_VALUE)
 					p.startKickTask((expireTimeSecs * 1000L) - System.currentTimeMillis());
 
 				BufferData buffer = new BufferData(p, title, price, null);
 
-				for (int skillId : skills)
+				for(int skillId : skills)
 				{
 					SkillEntry skill = p.getKnownSkill(skillId);
-					if (skill != null)
+					if(skill != null)
 						buffer.getBuffs().put(skill.getId(), skill);
 				}
 

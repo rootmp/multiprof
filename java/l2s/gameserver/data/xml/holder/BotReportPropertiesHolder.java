@@ -2,11 +2,10 @@ package l2s.gameserver.data.xml.holder;
 
 import java.util.Collection;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.templates.BotPunishment;
-
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.templates.BotPunishment;
 
 /**
  * @author Bonux

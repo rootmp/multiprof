@@ -19,17 +19,17 @@ public class DetectTrap extends Skill
 	@Override
 	protected void useSkill(Creature activeChar, Creature target, boolean reflected)
 	{
-		if (target.isTrap())
+		if(target.isTrap())
 		{
 			TrapInstance trap = (TrapInstance) target;
-			if (trap.getLevel() <= getPower())
+			if(trap.getLevel() <= getPower())
 			{
 				trap.setDetected(true);
-				for (Player player : World.getAroundObservers(trap))
+				for(Player player : World.getAroundObservers(trap))
 					player.sendPacket(new NpcInfoPacket(trap, player).init());
 			}
 		}
-		else if (isDetectPC())
+		else if(isDetectPC())
 			target.getAbnormalList().stop(AbnormalType.HIDE);
 	}
 }

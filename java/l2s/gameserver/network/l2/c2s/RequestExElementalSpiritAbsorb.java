@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 
 		int itemsCount = packet.readD();
 		_consumeItems = new ArrayList<ItemData>(itemsCount);
-		for (int i = 0; i < itemsCount; i++)
+		for(int i = 0; i < itemsCount; i++)
 		{
 			int itemId = packet.readD();
 			long itemCount = packet.readD();
@@ -41,11 +42,11 @@ public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Elemental elemental = activeChar.getElementalList().get(_elementId);
-		if (elemental == null)
+		if(elemental == null)
 		{
 			activeChar.sendPacket(new ExElementalSpiritAbsorb(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritAbsorbInfo(activeChar, 0, _elementId));
@@ -54,17 +55,17 @@ public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 		}
 
 		List<ElementalAbsorbItem> absorbItems = new ArrayList<ElementalAbsorbItem>();
-		for (ItemData item : _consumeItems)
+		for(ItemData item : _consumeItems)
 		{
-			if (item.getCount() > 0)
+			if(item.getCount() > 0)
 			{
 				ElementalAbsorbItem absorbItem = elemental.getTemplate().getAbsorbItem(item.getId());
-				if (absorbItem != null)
+				if(absorbItem != null)
 					absorbItems.add(new ElementalAbsorbItem(item.getId(), item.getCount(), absorbItem.getPower()));
 			}
 		}
 
-		if (absorbItems.isEmpty())
+		if(absorbItems.isEmpty())
 		{
 			activeChar.sendPacket(new ExElementalSpiritAbsorb(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritAbsorbInfo(activeChar, 0, _elementId));
@@ -72,7 +73,7 @@ public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 			return;
 		}
 
-		if (activeChar.isInCombat())
+		if(activeChar.isInCombat())
 		{
 			activeChar.sendPacket(new ExElementalSpiritAbsorb(activeChar, false, _elementId));
 			activeChar.sendPacket(new ExElementalSpiritAbsorbInfo(activeChar, 0, _elementId));
@@ -85,10 +86,10 @@ public class RequestExElementalSpiritAbsorb implements IClientIncomingPacket
 		activeChar.getInventory().writeLock();
 		try
 		{
-			for (ElementalAbsorbItem absorbItem : absorbItems)
+			for(ElementalAbsorbItem absorbItem : absorbItems)
 			{
 				long count = Math.min(absorbItem.getCount(), ItemFunctions.getItemCount(activeChar, absorbItem.getId()));
-				if (ItemFunctions.deleteItem(activeChar, absorbItem.getId(), count, true))
+				if(ItemFunctions.deleteItem(activeChar, absorbItem.getId(), count, true))
 				{
 					addExp += absorbItem.getPower() * count;
 				}

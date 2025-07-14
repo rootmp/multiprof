@@ -47,7 +47,7 @@ public class AuthResponse extends ReceivablePacket
 	{
 		int serverId = readC();
 		String serverName = readS();
-		if (!getByteBuffer().hasRemaining())
+		if(!getByteBuffer().hasRemaining())
 		{
 			_servers = new ArrayList<ServerInfo>(1);
 			_servers.add(new ServerInfo(serverId, serverName));
@@ -56,7 +56,7 @@ public class AuthResponse extends ReceivablePacket
 		{
 			int serversCount = readC();
 			_servers = new ArrayList<ServerInfo>(serversCount);
-			for (int i = 0; i < serversCount; i++)
+			for(int i = 0; i < serversCount; i++)
 				_servers.add(new ServerInfo(readC(), readS()));
 		}
 		return true;
@@ -65,13 +65,13 @@ public class AuthResponse extends ReceivablePacket
 	@Override
 	protected void runImpl()
 	{
-		for (ServerInfo info : _servers)
+		for(ServerInfo info : _servers)
 			_log.info("Registered on authserver as " + info.getId() + " [" + info.getName() + "]");
 
 		sendPacket(new OnlineStatus(true));
 
 		String[] accounts = AuthServerCommunication.getInstance().getAccounts();
-		for (String account : accounts)
+		for(String account : accounts)
 			sendPacket(new PlayerInGame(account));
 	}
 }

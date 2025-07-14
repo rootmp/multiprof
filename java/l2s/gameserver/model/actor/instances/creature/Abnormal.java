@@ -76,12 +76,12 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 		_state = new AtomicInteger(STARTING);
 		_saveable = saveable;
 
-		for (EffectTemplate template : getSkill().getEffectTemplates(getUseType()))
+		for(EffectTemplate template : getSkill().getEffectTemplates(getUseType()))
 		{
-			if (template.isInstant() || !isOfUseType(template.getUseType())) // На всякий случай
+			if(template.isInstant() || !isOfUseType(template.getUseType())) // На всякий случай
 				continue;
 
-			if (!template.getTargetType().checkTarget(effected))
+			if(!template.getTargetType().checkTarget(effected))
 				continue;
 
 			_effects.add(template.getHandler().getImpl());
@@ -172,7 +172,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	public boolean checkAbnormalType(AbnormalType abnormal)
 	{
 		AbnormalType abnormalType = getAbnormalType();
-		if (abnormalType == AbnormalType.NONE)
+		if(abnormalType == AbnormalType.NONE)
 			return false;
 
 		return abnormal == abnormalType;
@@ -205,7 +205,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 		@Override
 		public void onMagicUse(Creature actor, Skill skill, Creature target, boolean alt)
 		{
-			if (getSkill().isDoNotDispelOnSelfBuff() && !skill.isDebuff())
+			if(getSkill().isDoNotDispelOnSelfBuff() && !skill.isDebuff())
 				return;
 			exit();
 		}
@@ -219,13 +219,13 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	private boolean checkCondition()
 	{
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (!effect.checkConditionImpl(this, getEffector(), getEffected()))
+			if(!effect.checkConditionImpl(this, getEffector(), getEffected()))
 				return false;
 
 			int chance = effect.getTemplate().getChance();
-			if (chance >= 0 && !Rnd.chance(chance))
+			if(chance >= 0 && !Rnd.chance(chance))
 				return false;
 		}
 		return true;
@@ -233,9 +233,9 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	private boolean checkActingCondition()
 	{
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (!effect.checkActingConditionImpl(this, getEffector(), getEffected()))
+			if(!effect.checkActingConditionImpl(this, getEffector(), getEffected()))
 				return false;
 		}
 		return true;
@@ -244,27 +244,27 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	/** Notify started */
 	private void onStart()
 	{
-		if (getSkill().isAbnormalCancelOnAction() && getEffected().isPlayable())
+		if(getSkill().isAbnormalCancelOnAction() && getEffected().isPlayable())
 			getEffected().addListener(_listener = new ActionDispelListener());
-		if (getEffected().isPlayer() && !getSkill().canUseTeleport())
+		if(getEffected().isPlayer() && !getSkill().canUseTeleport())
 			getEffected().getPlayer().getPlayerAccess().UseTeleport = false;
 
-		for (AbnormalEffect abnormal : getSkill().getAbnormalEffects())
+		for(AbnormalEffect abnormal : getSkill().getAbnormalEffects())
 			getEffected().startAbnormalEffect(abnormal);
 
-		if (getEffected().isPlayer())
+		if(getEffected().isPlayer())
 		{
 			Player player = getEffected().getPlayer();
-			if (!player.isTeleporting() && !player.entering)
+			if(!player.isTeleporting() && !player.entering)
 			{
-				if (player.isDeathKnight() && getSkill().getId() == BUFF_ID)
+				if(player.isDeathKnight() && getSkill().getId() == BUFF_ID)
 				{
 					player.sendPacket(new ExUserInfoEquipSlot(player));
 				}
 			}
 		}
 
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
 			effect.onStart(this, getEffector(), getEffected());
 
@@ -283,35 +283,35 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	 */
 	private void onExit()
 	{
-		if (getSkill().isAbnormalCancelOnAction())
+		if(getSkill().isAbnormalCancelOnAction())
 			getEffected().removeListener(_listener);
-		if (getEffected().isPlayer())
+		if(getEffected().isPlayer())
 		{
-			if (checkAbnormalType(AbnormalType.HP_RECOVER))
+			if(checkAbnormalType(AbnormalType.HP_RECOVER))
 				getEffected().sendPacket(new ShortBuffStatusUpdatePacket());
-			if (!getSkill().canUseTeleport() && !getEffected().getPlayer().getPlayerAccess().UseTeleport)
+			if(!getSkill().canUseTeleport() && !getEffected().getPlayer().getPlayerAccess().UseTeleport)
 				getEffected().getPlayer().getPlayerAccess().UseTeleport = true;
 		}
 
-		for (AbnormalEffect abnormal : getSkill().getAbnormalEffects())
+		for(AbnormalEffect abnormal : getSkill().getAbnormalEffects())
 		{
-			if (abnormal != AbnormalEffect.NONE)
+			if(abnormal != AbnormalEffect.NONE)
 				getEffected().stopAbnormalEffect(abnormal);
 		}
 
-		if (getEffected().isPlayer())
+		if(getEffected().isPlayer())
 		{
 			Player player = getEffected().getPlayer();
-			if (!player.isTeleporting() && !player.entering)
+			if(!player.isTeleporting() && !player.entering)
 			{
-				if (player.isDeathKnight() && getSkill().getId() == BUFF_ID)
+				if(player.isDeathKnight() && getSkill().getId() == BUFF_ID)
 				{
 					player.sendPacket(new ExUserInfoEquipSlot(player));
 				}
 			}
 		}
 
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
 			effect.onExit(this, getEffector(), getEffected());
 
@@ -325,7 +325,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	private void stopEffectTask()
 	{
-		if (_effectTask != null)
+		if(_effectTask != null)
 		{
 			_effectTask.cancel(false);
 			_effectTask = null;
@@ -334,7 +334,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	private void startEffectTask()
 	{
-		if (_effectTask == null)
+		if(_effectTask == null)
 		{
 			_startTimeMillis = System.currentTimeMillis();
 			_effectTask = EffectTaskManager.getInstance().scheduleAtFixedRate(this, 1000L, 1000L);
@@ -351,31 +351,31 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public boolean apply(Creature aimingTarget)
 	{
-		if (_effects.isEmpty())
+		if(_effects.isEmpty())
 			return false;
 
-		if (getEffected().isDead() && !getSkill().isPreservedOnDeath()) // why alike dead?
+		if(getEffected().isDead() && !getSkill().isPreservedOnDeath()) // why alike dead?
 			return false;
 
-		if (!checkCondition())
+		if(!checkCondition())
 			return false;
 
-		if (getEffector() != getEffected() && isOfUseType(EffectUseType.NORMAL))
+		if(getEffector() != getEffected() && isOfUseType(EffectUseType.NORMAL))
 		{
-			if (getEffected().isEffectImmune(getEffector()))
+			if(getEffected().isEffectImmune(getEffector()))
 				return false;
 
-			if (getEffected().isBuffImmune() && !isOffensive() || getEffected().isDebuffImmune() && isOffensive())
+			if(getEffected().isBuffImmune() && !isOffensive() || getEffected().isDebuffImmune() && isOffensive())
 			{
-				for (Abnormal abnormal : getEffected().getAbnormalList())
+				for(Abnormal abnormal : getEffected().getAbnormalList())
 				{
-					if (abnormal.checkDebuffImmunity())
+					if(abnormal.checkDebuffImmunity())
 						break;
 				}
 
-				if (!isHidden() && !getSkill().isHideStartMessage())
+				if(!isHidden() && !getSkill().isHideStartMessage())
 				{
-					if (getEffected() == aimingTarget)
+					if(getEffected() == aimingTarget)
 					{
 						getEffector().sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_RESISTED_YOUR_S2).addName(getEffected()).addSkillName(getSkill().getDisplayId(), getSkill().getDisplayLevel()));
 						getEffector().sendPacket(new ExMagicAttackInfo(getEffector().getObjectId(), getEffected().getObjectId(), ExMagicAttackInfo.RESISTED));
@@ -385,10 +385,10 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 			}
 		}
 
-		if (!getEffected().getAbnormalList().add(this))
+		if(!getEffected().getAbnormalList().add(this))
 			return false;
 
-		if (!isHidden() && !getSkill().isHideStartMessage())
+		if(!isHidden() && !getSkill().isHideStartMessage())
 			getEffected().sendPacket(new SystemMessagePacket(SystemMsg.S1S_EFFECT_CAN_BE_FELT).addSkillName(getDisplayId(), getDisplayLevel()));
 
 		return true;
@@ -401,9 +401,9 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	public void suspend()
 	{
 		// Эффект создан, запускаем задачу в фоне
-		if (setState(STARTING, SUSPENDED))
+		if(setState(STARTING, SUSPENDED))
 			startEffectTask();
-		else if (setState(ACTING, SUSPENDED))
+		else if(setState(ACTING, SUSPENDED))
 		{
 			synchronized (this)
 			{
@@ -417,7 +417,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	 */
 	public void start()
 	{
-		if (setState(SUSPENDED, ACTING))
+		if(setState(SUSPENDED, ACTING))
 		{
 			synchronized (this)
 			{
@@ -425,7 +425,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 				getEffected().getListeners().onAbnormalStart(this);
 			}
 		}
-		else if (setState(STARTING, ACTING))
+		else if(setState(STARTING, ACTING))
 		{
 			synchronized (this)
 			{
@@ -441,9 +441,9 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	{
 		_timeLeft--;
 
-		if (getState() == SUSPENDED)
+		if(getState() == SUSPENDED)
 		{
-			if (isTimeLeft())
+			if(isTimeLeft())
 				return;
 
 			exit();
@@ -452,43 +452,43 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 		boolean successActing = true;
 
-		if (getState() == ACTING)
+		if(getState() == ACTING)
 		{
-			if (isTimeLeft())
+			if(isTimeLeft())
 			{
-				if (checkActingCondition())
+				if(checkActingCondition())
 				{
-					for (EffectHandler effect : getEffects())
+					for(EffectHandler effect : getEffects())
 					{
-						if ((getTimeLeft() % effect.getInterval()) == 0)
+						if((getTimeLeft() % effect.getInterval()) == 0)
 						{
 							successActing = effect.onActionTime(this, getEffector(), getEffected());
-							if (!successActing)
+							if(!successActing)
 								break;
 						}
 					}
 
-					if (successActing)
+					if(successActing)
 						return;
 				}
 			}
 		}
 
-		if (getDuration() == Integer.MAX_VALUE) // Если вдруг закончится время у безконечного эффекта.
+		if(getDuration() == Integer.MAX_VALUE) // Если вдруг закончится время у безконечного эффекта.
 		{
-			if (checkActingCondition())
+			if(checkActingCondition())
 			{
-				for (EffectHandler effect : getEffects())
+				for(EffectHandler effect : getEffects())
 				{
-					if ((getDuration() % effect.getInterval()) == 0)
+					if((getDuration() % effect.getInterval()) == 0)
 					{
 						successActing = effect.onActionTime(this, getEffector(), getEffected());
-						if (!successActing)
+						if(!successActing)
 							break;
 					}
 				}
 
-				if (successActing)
+				if(successActing)
 				{
 					_timeLeft = getDuration();
 					return;
@@ -496,13 +496,13 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 			}
 		}
 
-		if (setState(ACTING, FINISHED))
+		if(setState(ACTING, FINISHED))
 		{
-			if (checkActingCondition())
+			if(checkActingCondition())
 			{
-				for (EffectHandler effect : getEffects())
+				for(EffectHandler effect : getEffects())
 				{
-					if ((getDuration() % effect.getInterval()) == 0)
+					if((getDuration() % effect.getInterval()) == 0)
 						effect.onActionTime(this, getEffector(), getEffected());
 				}
 			}
@@ -520,14 +520,14 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 			getEffected().getAbnormalList().remove(this);
 
 			// Отображать сообщение только для последнего оставшегося эффекта скилла
-			if (msg)
+			if(msg)
 				getEffected().sendPacket(new SystemMessage(SystemMessage.S1_HAS_WORN_OFF).addSkillName(getDisplayId(), getDisplayLevel()));
 
-			if (lastEffect)
+			if(lastEffect)
 				getSkill().onAbnormalTimeEnd(getEffector(), getEffected());
 
 			// tigger on finish
-			for (EffectHandler effect : getEffects())
+			for(EffectHandler effect : getEffects())
 				getEffected().useTriggers(getEffected(), TriggerType.ON_FINISH_EFFECT, null, getSkill(), effect.getTemplate(), 0);
 		}
 	}
@@ -538,15 +538,15 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	public void exit()
 	{
 		// Эффект запланирован на запуск, удаляем
-		if (setState(STARTING, FINISHED))
+		if(setState(STARTING, FINISHED))
 		{
 			getEffected().getListeners().onAbnormalEnd(this);
 			getEffected().getAbnormalList().remove(this);
 		}
 		// Эффект работает в "фоне", останавливаем задачу в планировщике
-		else if (setState(SUSPENDED, FINISHED))
+		else if(setState(SUSPENDED, FINISHED))
 			stopEffectTask();
-		else if (setState(ACTING, FINISHED))
+		else if(setState(ACTING, FINISHED))
 		{
 			synchronized (this)
 			{
@@ -560,7 +560,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public void addIcon(AbnormalStatusUpdatePacket abnormalStatus)
 	{
-		if (!isActive() || isHidden())
+		if(!isActive() || isHidden())
 			return;
 		int duration = isHideTime() ? AbnormalStatusUpdatePacket.INFINITIVE_EFFECT : getTimeLeft();
 		abnormalStatus.addEffect(getDisplayId(), getDisplayLevel(), getAbnormalType().getClientId(), duration);
@@ -568,7 +568,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public void addIcon(ExAbnormalStatusUpdateFromTargetPacket abnormalStatus)
 	{
-		if (!isActive() || isHidden())
+		if(!isActive() || isHidden())
 			return;
 		int duration = isHideTime() ? AbnormalStatusUpdatePacket.INFINITIVE_EFFECT : getTimeLeft();
 		abnormalStatus.addEffect(getEffector().getObjectId(), getDisplayId(), getDisplayLevel(), getAbnormalType().getClientId(), duration);
@@ -576,7 +576,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public void addPartySpelledIcon(PartySpelledPacket ps)
 	{
-		if (!isActive() || isHidden())
+		if(!isActive() || isHidden())
 			return;
 		int duration = isHideTime() ? AbnormalStatusUpdatePacket.INFINITIVE_EFFECT : getTimeLeft();
 		ps.addPartySpelledEffect(getDisplayId(), getDisplayLevel(), getAbnormalType().getClientId(), duration);
@@ -584,7 +584,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public void addOlympiadSpelledIcon(Player player, ExOlympiadSpelledInfoPacket os)
 	{
-		if (!isActive() || isHidden())
+		if(!isActive() || isHidden())
 			return;
 		int duration = isHideTime() ? AbnormalStatusUpdatePacket.INFINITIVE_EFFECT : getTimeLeft();
 		os.addSpellRecivedPlayer(player);
@@ -594,7 +594,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	@Override
 	public int compareTo(Abnormal obj)
 	{
-		if (obj.equals(this))
+		if(obj.equals(this))
 			return 0;
 		return 1;
 	}
@@ -638,9 +638,9 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	// TODO Переделать
 	public boolean checkBlockedAbnormalType(AbnormalType abnormal)
 	{
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (effect.checkBlockedAbnormalType(this, getEffector(), getEffected(), abnormal))
+			if(effect.checkBlockedAbnormalType(this, getEffector(), getEffected(), abnormal))
 				return true;
 		}
 		return false;
@@ -649,9 +649,9 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	// TODO Переделать
 	public boolean checkDebuffImmunity()
 	{
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (effect.checkDebuffImmunity(this, getEffector(), getEffected()))
+			if(effect.checkDebuffImmunity(this, getEffector(), getEffected()))
 				return true;
 		}
 		return false;
@@ -660,11 +660,11 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	// TODO Переделать
 	public boolean isHidden()
 	{
-		if (getDisplayId() < 0)
+		if(getDisplayId() < 0)
 			return true;
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (effect.isHidden())
+			if(effect.isHidden())
 				return true;
 		}
 		return false;
@@ -673,12 +673,12 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 	// TODO Переделать
 	public boolean isSaveable()
 	{
-		if (!_saveable || !getSkill().isSaveable() || getTimeLeft() < Config.ALT_SAVE_EFFECTS_REMAINING_TIME || isHidden())
+		if(!_saveable || !getSkill().isSaveable() || getTimeLeft() < Config.ALT_SAVE_EFFECTS_REMAINING_TIME || isHidden())
 			return false;
 
-		for (EffectHandler effect : getEffects())
+		for(EffectHandler effect : getEffects())
 		{
-			if (!effect.isSaveable())
+			if(!effect.isSaveable())
 				return false;
 		}
 		return true;
@@ -696,7 +696,7 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public boolean isOffensive()
 	{
-		if (isOfUseType(EffectUseType.SELF))
+		if(isOfUseType(EffectUseType.SELF))
 			return getSkill().isSelfDebuff();
 		else
 			return getSkill().isDebuff();
@@ -720,17 +720,17 @@ public final class Abnormal implements Runnable, Comparable<Abnormal>
 
 	public boolean canReplaceAbnormal(Skill skill, int minLeftTime)
 	{
-		if (skill.isPassive())
+		if(skill.isPassive())
 			return false;
-		if (!skill.hasEffects(EffectUseType.NORMAL))
+		if(!skill.hasEffects(EffectUseType.NORMAL))
 			return false;
-		if (checkBlockedAbnormalType(skill.getAbnormalType()))
+		if(checkBlockedAbnormalType(skill.getAbnormalType()))
 			return false;
-		if (!AbnormalList.checkAbnormalType(getSkill(), skill)) // такого скилла нет
+		if(!AbnormalList.checkAbnormalType(getSkill(), skill)) // такого скилла нет
 			return true;
-		if (getAbnormalLvl() < skill.getAbnormalLvl()) // старый слабее
+		if(getAbnormalLvl() < skill.getAbnormalLvl()) // старый слабее
 			return true;
-		if (getTimeLeft() > minLeftTime) // старый не слабее и еще не кончается - ждем
+		if(getTimeLeft() > minLeftTime) // старый не слабее и еще не кончается - ждем
 			return false;
 		return true;
 	}

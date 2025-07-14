@@ -11,7 +11,7 @@ public enum ClanSearchTargetType
 
 	public static ClanSearchTargetType valueOf(int value)
 	{
-		switch (value)
+		switch(value)
 		{
 			case 0:
 				return TARGET_TYPE_LEADER_NAME;

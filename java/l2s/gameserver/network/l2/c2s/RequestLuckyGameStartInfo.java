@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,18 +31,18 @@ public final class RequestLuckyGameStartInfo implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getActiveChar();
-		if (player == null)
+		if(player == null)
 			return;
 
-		if (!Config.ALLOW_LUCKY_GAME_EVENT)
+		if(!Config.ALLOW_LUCKY_GAME_EVENT)
 			return;
 
-		if (_typeId < 0 || _typeId >= LuckyGameType.VALUES.length)
+		if(_typeId < 0 || _typeId >= LuckyGameType.VALUES.length)
 			return;
 
 		final LuckyGameType type = LuckyGameType.VALUES[_typeId];
 		final LuckyGameData gameData = LuckyGameHolder.getInstance().getData(type);
-		if (gameData == null)
+		if(gameData == null)
 		{
 			_log.warn("Cannot find data for lucky game TYPE[" + type + "]!");
 			return;

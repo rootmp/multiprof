@@ -131,9 +131,12 @@ public class RequestExTryToPutShapeShiftingEnchantSupportItem implements IClient
 		{
 			if(Config.APPEARANCE_STONE_CHECK_ARMOR_TYPE)
 			{
-				if(targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS)
+				if(targetItem.getBodyPart() == ItemTemplate.SLOT_CHEST || targetItem.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR
+						|| targetItem.getBodyPart() == ItemTemplate.SLOT_LEGS)
 				{
-					if(extracItem.getTemplate().isArmor() && (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST || extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR || extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS))
+					if(extracItem.getTemplate().isArmor() && (extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_CHEST
+							|| extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR
+							|| extracItem.getTemplate().getBodyPart() == ItemTemplate.SLOT_LEGS))
 					{
 						if(targetItem.getTemplate().getItemType() != extracItem.getTemplate().getItemType())
 						{

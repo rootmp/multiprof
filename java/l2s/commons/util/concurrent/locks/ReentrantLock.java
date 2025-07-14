@@ -17,8 +17,7 @@ public class ReentrantLock
 	private volatile int state;
 
 	public ReentrantLock()
-	{
-	}
+	{}
 
 	private final int getState()
 	{
@@ -47,12 +46,12 @@ public class ReentrantLock
 
 	public void lock()
 	{
-		if (compareAndSetState(0, 1))
+		if(compareAndSetState(0, 1))
 			setExclusiveOwnerThread(Thread.currentThread());
 		else
-			for (;;)
+			for(;;)
 			{
-				if (tryLock())
+				if(tryLock())
 					break;
 			}
 	}
@@ -61,18 +60,18 @@ public class ReentrantLock
 	{
 		final Thread current = Thread.currentThread();
 		int c = getState();
-		if (c == 0)
+		if(c == 0)
 		{
-			if (compareAndSetState(0, 1))
+			if(compareAndSetState(0, 1))
 			{
 				setExclusiveOwnerThread(current);
 				return true;
 			}
 		}
-		else if (current == getExclusiveOwnerThread())
+		else if(current == getExclusiveOwnerThread())
 		{
 			int nextc = c + 1;
-			if (nextc < 0)
+			if(nextc < 0)
 				throw new Error("Maximum lock count exceeded");
 			setState(nextc);
 			return true;
@@ -83,10 +82,10 @@ public class ReentrantLock
 	public boolean unlock()
 	{
 		int c = getState() - 1;
-		if (Thread.currentThread() != getExclusiveOwnerThread())
+		if(Thread.currentThread() != getExclusiveOwnerThread())
 			throw new IllegalMonitorStateException();
 		boolean free = false;
-		if (c == 0)
+		if(c == 0)
 		{
 			free = true;
 			setExclusiveOwnerThread(null);

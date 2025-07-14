@@ -63,7 +63,7 @@ public class OlympiadGameTask implements Runnable
 	@Override
 	public void run()
 	{
-		if (_game == null || _terminated)
+		if(_game == null || _terminated)
 			return;
 
 		OlympiadGameTask task = null;
@@ -72,42 +72,42 @@ public class OlympiadGameTask implements Runnable
 
 		try
 		{
-			if (!Olympiad.inCompPeriod())
+			if(!Olympiad.inCompPeriod())
 				return;
 
 			// Прерываем игру, если один из игроков не онлайн, и игра еще не прервана
-			if (!_game.checkPlayersOnline() && _status != BattleStatus.ValidateWinner && _status != BattleStatus.Ending)
+			if(!_game.checkPlayersOnline() && _status != BattleStatus.ValidateWinner && _status != BattleStatus.Ending)
 			{
 				Log.add("Player is offline for game " + gameId + ", status: " + _status, "olympiad");
 				_game.endGame(1000, true);
 				return;
 			}
 
-			switch (_status)
+			switch(_status)
 			{
 				case Begining:
 				{
 					int delay = Config.OLYMPIAD_BEGINIG_DELAY;
-					if (delay <= 0)
+					if(delay <= 0)
 						task = new OlympiadGameTask(_game, BattleStatus.PortPlayers, 0, 1000);
 					else
 					{
 						_game.broadcastPacket(new SystemMessage(SystemMessage.YOU_WILL_ENTER_THE_OLYMPIAD_STADIUM_IN_S1_SECOND_S).addNumber(delay), true, false);
 
-						if (delay > 60)
+						if(delay > 60)
 						{
 							int time = delay % 60;
-							if (time == 0)
+							if(time == 0)
 								time = 60;
 							task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, delay - time, time * 1000);
 						}
-						else if (delay <= 60 && delay > 30)
+						else if(delay <= 60 && delay > 30)
 							task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 30, (delay - 30) * 1000);
-						else if (delay <= 30 && delay > 15)
+						else if(delay <= 30 && delay > 15)
 							task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 15, (delay - 15) * 1000);
-						else if (delay <= 15 && delay > 5)
+						else if(delay <= 15 && delay > 5)
 							task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 5, (delay - 5) * 1000);
-						else if (delay <= 5 && delay > 0)
+						else if(delay <= 5 && delay > 0)
 							task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, delay, 1000);
 					}
 					break;
@@ -116,23 +116,23 @@ public class OlympiadGameTask implements Runnable
 				{
 					_game.broadcastPacket(new SystemMessage(SystemMessage.YOU_WILL_ENTER_THE_OLYMPIAD_STADIUM_IN_S1_SECOND_S).addNumber(_count), true, false);
 
-					if (_count > 60 && (_count % 60) == 0)
+					if(_count > 60 && (_count % 60) == 0)
 						task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, _count - 60, 60000);
-					else if (_count == 60)
+					else if(_count == 60)
 						task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 30, 30000);
-					else if (_count == 30)
+					else if(_count == 30)
 						task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 15, 15000);
-					else if (_count == 15)
+					else if(_count == 15)
 						task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, 5, 10000);
-					else if (_count < 6 && _count > 1)
+					else if(_count < 6 && _count > 1)
 						task = new OlympiadGameTask(_game, BattleStatus.Begin_Countdown, _count - 1, 1000);
-					else if (_count == 1)
+					else if(_count == 1)
 						task = new OlympiadGameTask(_game, BattleStatus.PortPlayers, 0, 1000);
 					break;
 				}
 				case PortPlayers:
 				{
-					if (!_game.validatePlayers())
+					if(!_game.validatePlayers())
 					{
 						Log.add("Player is dont valid for game " + gameId + ", status: " + _status, "olympiad");
 						_game.endGame(1000, true);
@@ -145,13 +145,13 @@ public class OlympiadGameTask implements Runnable
 				}
 				case Started:
 				{
-					if (_count == 60)
+					if(_count == 60)
 					{
 						_game.setState(1);
 						_game.preparePlayers1();
 						_game.addBuffers();
 					}
-					else if (_count == 55)
+					else if(_count == 55)
 					{
 						_game.preparePlayers2();
 						task = new OlympiadGameTask(_game, BattleStatus.Started, 50, 5000);
@@ -161,9 +161,9 @@ public class OlympiadGameTask implements Runnable
 					_game.broadcastPacket(new SystemMessage(SystemMessage.THE_GAME_WILL_START_IN_S1_SECOND_S).addNumber(_count), true, true);
 					_count -= 10;
 
-					if (_count > 0)
+					if(_count > 0)
 					{
-						if (_count == 60)
+						if(_count == 60)
 							task = new OlympiadGameTask(_game, BattleStatus.Started, 55, 5000);
 						else
 							task = new OlympiadGameTask(_game, BattleStatus.Started, _count, 10000);
@@ -179,7 +179,7 @@ public class OlympiadGameTask implements Runnable
 				{
 					_game.broadcastPacket(new SystemMessage(SystemMessage.THE_GAME_WILL_START_IN_S1_SECOND_S).addNumber(_count), true, true);
 					_count--;
-					if (_count <= 0)
+					if(_count <= 0)
 						task = new OlympiadGameTask(_game, BattleStatus.StartComp, 36, 1000);
 					else
 						task = new OlympiadGameTask(_game, BattleStatus.CountDown, _count, 1000);
@@ -187,7 +187,7 @@ public class OlympiadGameTask implements Runnable
 				}
 				case StartComp:
 				{
-					if (_count == 36)
+					if(_count == 36)
 					{
 						_game.deleteBuffers();
 						_game.setState(2);
@@ -196,7 +196,7 @@ public class OlympiadGameTask implements Runnable
 					}
 					// Wait 3 mins (Battle)
 					_count--;
-					if (_count == 0)
+					if(_count == 0)
 						task = new OlympiadGameTask(_game, BattleStatus.ValidateWinner, 0, 10000);
 					else
 						task = new OlympiadGameTask(_game, BattleStatus.StartComp, _count, 10000);
@@ -208,7 +208,7 @@ public class OlympiadGameTask implements Runnable
 					{
 						_game.validateWinner(_count > 0);
 					}
-					catch (Exception e)
+					catch(Exception e)
 					{
 						_log.error("", e);
 					}
@@ -219,13 +219,13 @@ public class OlympiadGameTask implements Runnable
 				{
 					_game.collapse();
 					_terminated = true;
-					if (Olympiad._manager != null)
+					if(Olympiad._manager != null)
 						Olympiad._manager.removeGame(_game.getId());
 					return;
 				}
 			}
 
-			if (task == null)
+			if(task == null)
 			{
 				Log.add("task == null for game " + gameId, "olympiad");
 				Thread.dumpStack();
@@ -235,7 +235,7 @@ public class OlympiadGameTask implements Runnable
 
 			_game.sheduleTask(task);
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 			_game.endGame(1000, true);

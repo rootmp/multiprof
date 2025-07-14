@@ -6,9 +6,9 @@ import l2s.gameserver.network.l2.s2c.IClientOutgoingPacket;
 
 public class ExCollectionRegister implements IClientOutgoingPacket
 {
-	private int _collectionId, _slotId, _item_id,_cEnchant, _nAmount;
+	private int _collectionId, _slotId, _item_id, _cEnchant, _nAmount;
 	private boolean _bBless;
-	
+
 	public ExCollectionRegister(Player player, int collectionId, int slotId, int item_id, int cEnchant, boolean bBless, int nAmount)
 	{
 		_collectionId = collectionId;

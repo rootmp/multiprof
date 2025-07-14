@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -29,13 +30,13 @@ public class RequestExDeleteReceivedPost implements IClientIncomingPacket
 	public boolean readImpl(GameClient client, PacketReader packet)
 	{
 		_count = packet.readD();
-		if (_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
+		if(_count * 4 > packet.getReadableBytes() || _count > Short.MAX_VALUE || _count < 1)
 		{
 			_count = 0;
 			return false;
 		}
 		_list = new int[_count]; // количество элементов для удаления
-		for (int i = 0; i < _count; i++)
+		for(int i = 0; i < _count; i++)
 			_list[i] = packet.readD(); // уникальный номер письма
 		return true;
 	}
@@ -44,15 +45,15 @@ public class RequestExDeleteReceivedPost implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null || _count == 0)
+		if(activeChar == null || _count == 0)
 			return;
 
 		List<Mail> mails = MailDAO.getInstance().getReceivedMailByOwnerId(activeChar.getObjectId());
-		if (!mails.isEmpty())
+		if(!mails.isEmpty())
 		{
-			for (Mail mail : mails)
-				if (ArrayUtils.contains(_list, mail.getMessageId()))
-					if (mail.getAttachments().isEmpty())
+			for(Mail mail : mails)
+				if(ArrayUtils.contains(_list, mail.getMessageId()))
+					if(mail.getAttachments().isEmpty())
 					{
 						MailDAO.getInstance().deleteReceivedMailByMailId(activeChar.getObjectId(), mail.getMessageId());
 					}

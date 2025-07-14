@@ -6,14 +6,13 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.gameserver.data.xml.holder.DoorHolder;
 import l2s.gameserver.data.xml.holder.TimeRestrictFieldHolder;
 import l2s.gameserver.data.xml.holder.ZoneHolder;
 import l2s.gameserver.geometry.Location;
 import l2s.gameserver.model.entity.Reflection;
 import l2s.gameserver.templates.TimeRestrictFieldInfo;
-
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public class ReflectionManager
 {
@@ -142,9 +141,9 @@ public class ReflectionManager
 		readLock.lock();
 		try
 		{
-			for (final Reflection r : getAll())
+			for(final Reflection r : getAll())
 			{
-				if (r.getInstancedZoneId() == izId)
+				if(r.getInstancedZoneId() == izId)
 				{
 					reflections.add(r);
 				}
@@ -163,8 +162,8 @@ public class ReflectionManager
 		try
 		{
 			int i = 0;
-			for (final Reflection r : getAll())
-				if (r.getInstancedZoneId() == izId)
+			for(final Reflection r : getAll())
+				if(r.getInstancedZoneId() == izId)
 				{
 					i++;
 				}

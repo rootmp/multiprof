@@ -609,9 +609,9 @@ public class Parser
 				valueBuffer = valueBuffer.replaceAll(regex, "");
 			}
 			Enum enumValue;
-		/*	if(clazz.getName() == NpcRace.class.getName())
-				enumValue = Enum.valueOf(clazz, valueBuffer.replaceAll("race_", ""));
-			else */if(clazz.getName() == ItemGrade.class.getName())
+			/*	if(clazz.getName() == NpcRace.class.getName())
+					enumValue = Enum.valueOf(clazz, valueBuffer.replaceAll("race_", ""));
+				else */if(clazz.getName() == ItemGrade.class.getName())
 				enumValue = Enum.valueOf(clazz, valueBuffer.toUpperCase());//костыль, выпилить когда нибудь
 			else if(clazz.getName() == BasicProperty.class.getName())
 				enumValue = Enum.valueOf(clazz, valueBuffer.toUpperCase());// поднимем базовые параметры в верхний регистр (нельзя создать int в нижнем регистре) 

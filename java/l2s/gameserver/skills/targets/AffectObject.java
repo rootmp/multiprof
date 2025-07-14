@@ -27,17 +27,17 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (caster == target)
+			if(caster == target)
 				return true;
 
 			Player player = caster.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
 				Clan clan = player.getClan();
-				if (clan != null)
+				if(clan != null)
 					return clan == target.getClan();
 			}
-			else if (caster.isNpc() && target.isNpc())
+			else if(caster.isNpc() && target.isNpc())
 				return ((NpcInstance) caster).isInFaction(((NpcInstance) target));
 
 			return false;
@@ -48,47 +48,48 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (caster == target)
+			if(caster == target)
 				return true;
 
 			final Player player = caster.getPlayer();
-			if (player != null)
+			if(player != null)
 			{
 				final Player targetPlayer = target.getPlayer();
-				if (targetPlayer != null)
+				if(targetPlayer != null)
 				{
 					// Same player.
-					if (player == targetPlayer)
+					if(player == targetPlayer)
 						return true;
 
 					// Events engine.
-					for (Event e : player.getEvents())
+					for(Event e : player.getEvents())
 					{
-						if (e.checkForAttack(targetPlayer, player, skill, false) != null)
+						if(e.checkForAttack(targetPlayer, player, skill, false) != null)
 							return true;
 
-						if (e.canAttack(targetPlayer, player, skill, false, false))
+						if(e.canAttack(targetPlayer, player, skill, false, false))
 							return false;
 					}
 
 					// Arena.
-					if (caster.isInZoneBattle() && target.isInZoneBattle())
+					if(caster.isInZoneBattle() && target.isInZoneBattle())
 						return false;
 
 					// Olympiad.
-					if (player.isInOlympiadMode() && targetPlayer.isInOlympiadMode() && (player.getOlympiadGame() != targetPlayer.getOlympiadGame() || player.getOlympiadSide() != targetPlayer.getOlympiadSide()))
+					if(player.isInOlympiadMode() && targetPlayer.isInOlympiadMode()
+							&& (player.getOlympiadGame() != targetPlayer.getOlympiadGame() || player.getOlympiadSide() != targetPlayer.getOlympiadSide()))
 						return false;
 
 					// Party (command channel doesn't make you friends).
-					if (player.isInSameParty(targetPlayer))
+					if(player.isInSameParty(targetPlayer))
 						return true;
 
 					// Clan.
-					if (player.isInSameClan(targetPlayer))
+					if(player.isInSameClan(targetPlayer))
 						return true;
 
 					// Alliance.
-					if (player.isInSameAlly(targetPlayer))
+					if(player.isInSameAlly(targetPlayer))
 						return true;
 
 					// By default any neutral non-flagged player is considered a friend.
@@ -131,10 +132,10 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (caster.isInPeaceZone() || target.isInPeaceZone())
+			if(caster.isInPeaceZone() || target.isInPeaceZone())
 			{
 				Player player = caster.getPlayer();
-				if (player == null || !player.getPlayerAccess().PeaceAttack)
+				if(player == null || !player.getPlayerAccess().PeaceAttack)
 					return false;
 			}
 			return !FRIEND.checkObject(caster, target, skill);
@@ -153,7 +154,7 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (caster == target)
+			if(caster == target)
 				return false;
 			return target.isNpc() && target.isDead();
 		}
@@ -163,7 +164,7 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (caster == target)
+			if(caster == target)
 				return false;
 			return target.isUndead() && target.isAutoAttackable(caster);
 		}
@@ -173,13 +174,13 @@ public enum AffectObject
 		@Override
 		public boolean checkObject(Creature caster, Creature target, Skill skill)
 		{
-			if (!target.isPlayer())
+			if(!target.isPlayer())
 				return false;
 
 			Player player = target.getPlayer();
 
 			Mount mount = player.getMount();
-			if (mount == null)
+			if(mount == null)
 				return false;
 
 			return mount.isOfType(MountType.WYVERN);

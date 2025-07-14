@@ -28,7 +28,7 @@ public abstract class ReceivablePacket extends l2s.commons.net.nio.ReceivablePac
 		{
 			return readImpl();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}
@@ -42,7 +42,7 @@ public abstract class ReceivablePacket extends l2s.commons.net.nio.ReceivablePac
 		{
 			runImpl();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("", e);
 		}

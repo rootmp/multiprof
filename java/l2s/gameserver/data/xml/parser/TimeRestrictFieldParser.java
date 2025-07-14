@@ -42,7 +42,7 @@ public final class TimeRestrictFieldParser extends AbstractParser<TimeRestrictFi
 	@Override
 	protected void readData(Element rootElement) throws Exception
 	{
-		for (Iterator<Element> iterator = rootElement.elementIterator("field"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("field"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 

@@ -27,7 +27,7 @@ public class ExNewHennaComposeProbList implements IClientOutgoingPacket
 
 		for(HennaPoten henna : player.getHennaPotenList())
 		{
-			if(henna !=null && henna.getHenna()!=null)
+			if(henna != null && henna.getHenna() != null)
 			{
 				int dyeId = henna.getHenna().getDyeId();
 				List<ProbInfo> probInfoList = _probList.getOrDefault(dyeId, new ArrayList<>());
@@ -38,14 +38,14 @@ public class ExNewHennaComposeProbList implements IClientOutgoingPacket
 					{
 						ProbInfo probInfo = new ProbInfo();
 						probInfo.nItemClassID = d.getItem2Id();
-						
-						double chance = d.getSuccessItemData().getChance()*100;
+
+						double chance = d.getSuccessItemData().getChance() * 100;
 						probInfo.nProb = (int) chance;
 						probInfoList.add(probInfo);
 					}
 				}
 
-				if (!probInfoList.isEmpty()) 
+				if(!probInfoList.isEmpty())
 					_probList.put(dyeId, probInfoList);
 			}
 

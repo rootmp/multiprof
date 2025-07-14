@@ -83,11 +83,11 @@ public class PetData
 
 	public void addLvlData(int lvl, PetLevelData lvlData)
 	{
-		if (_minLvl > lvl)
+		if(_minLvl > lvl)
 		{
 			_minLvl = lvl;
 		}
-		if (_maxLvl < (lvl - 1))
+		if(_maxLvl < (lvl - 1))
 		{
 			_maxLvl = lvl - 1;
 		}
@@ -216,12 +216,10 @@ public class PetData
 
 	public int getFormId(int level)
 	{
-		for (int i = 0; i < _syncLevels.length; i++)
+		for(int i = 0; i < _syncLevels.length; i++)
 		{
-			if (level >= _syncLevels[i])
-			{
-				return i + 1;
-			}
+			if(level >= _syncLevels[i])
+			{ return i + 1; }
 		}
 		return 0;
 	}
@@ -264,10 +262,8 @@ public class PetData
 	public int getRandomShape(int previousShapeId)
 	{
 		List<Pair<Integer, Double>> randomShape = _randomShapes.get(Integer.valueOf(previousShapeId));
-		if ((randomShape == null) || randomShape.isEmpty())
-		{
-			return -1;
-		}
+		if((randomShape == null) || randomShape.isEmpty())
+		{ return -1; }
 
 		EnumeratedDistribution<Integer> distribution = new EnumeratedDistribution<Integer>(randomShape);
 		return distribution.sample().intValue();

@@ -1,10 +1,10 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
 import java.util.Date;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 
 /**
@@ -20,7 +20,8 @@ public class ExEnterWorldPacket implements IClientOutgoingPacket
 		long currentTimeMillis = System.currentTimeMillis();
 		_serverTime = (int) TimeUnit.MILLISECONDS.toSeconds(currentTimeMillis);
 		TimeZone timeZone = TimeZone.getDefault();
-		_utcTimeDiff = (int) -TimeUnit.MILLISECONDS.toSeconds(timeZone.getRawOffset() + (timeZone.inDaylightTime(new Date(currentTimeMillis)) ? timeZone.getDSTSavings() : 0));
+		_utcTimeDiff = (int) -TimeUnit.MILLISECONDS.toSeconds(timeZone.getRawOffset()
+				+ (timeZone.inDaylightTime(new Date(currentTimeMillis)) ? timeZone.getDSTSavings() : 0));
 	}
 
 	@Override

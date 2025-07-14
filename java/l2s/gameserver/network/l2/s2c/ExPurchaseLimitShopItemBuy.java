@@ -42,24 +42,22 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 		final PcInventory inventory = _player.getInventory();
 
 		int size = _list.size();
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			final LimitedShopEntry entry = _list.get(i);
 			LimitedShopProduction product = entry.getProduction().get(0);
-			if (product.getInfo().getInteger("index") == _itemIndex)
+			if(product.getInfo().getInteger("index") == _itemIndex)
 			{
-				for (LimitedShopIngredient ingredient : entry.getIngredients())
+				for(LimitedShopIngredient ingredient : entry.getIngredients())
 				{
-					if ((ingredient.getItemCount() <= 0) || (_itemCount <= 0))
-					{
-						return true;
-					}
+					if((ingredient.getItemCount() <= 0) || (_itemCount <= 0))
+					{ return true; }
 
 					Clan clan = _player.getClan();
 
-					if (ingredient.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
+					if(ingredient.getItemId() == ItemTemplate.ITEM_ID_CLAN_REPUTATION_SCORE)
 					{
-						if (clan != null)
+						if(clan != null)
 						{
 							clan.incReputation((int) ingredient.getItemCount() * _itemCount, false, "Purchase in Limited Shop");
 							final SystemMessage sm = new SystemMessage(SystemMessage.S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_THE_CLAN_REPUTATION_SCORE);
@@ -71,9 +69,9 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 							return true;
 						}
 					}
-					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_FAME)
+					else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_FAME)
 					{
-						if (_player.getFame() >= (ingredient.getItemCount() * _itemCount))
+						if(_player.getFame() >= (ingredient.getItemCount() * _itemCount))
 						{
 							int newFame = (int) (_player.getFame() - (ingredient.getItemCount() * _itemCount));
 							_player.setFame(newFame, null, true);
@@ -84,9 +82,9 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 							return true;
 						}
 					}
-					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
+					else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 					{
-						if (_player.getPcBangPoints() >= (ingredient.getItemCount() * _itemCount))
+						if(_player.getPcBangPoints() >= (ingredient.getItemCount() * _itemCount))
 						{
 							int newPoints = (int) (_player.getPcBangPoints() - (ingredient.getItemCount() * _itemCount));
 							_player.setPcBangPoints(newPoints, true);
@@ -97,9 +95,9 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 							return true;
 						}
 					}
-					else if (ingredient.getItemId() == ItemTemplate.ITEM_ID_HONOR_COIN)
+					else if(ingredient.getItemId() == ItemTemplate.ITEM_ID_HONOR_COIN)
 					{
-						if (_player.getHonorCoins() >= (ingredient.getItemCount() * _itemCount))
+						if(_player.getHonorCoins() >= (ingredient.getItemCount() * _itemCount))
 						{
 							int newPoints = (int) (_player.getHonorCoins() - (ingredient.getItemCount() * _itemCount));
 							_player.setHonorCoins(newPoints);
@@ -115,7 +113,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 					else
 					{
 						boolean itemDestroyed = inventory.destroyItemByItemId(ingredient.getItemId(), ingredient.getItemCount());
-						if (!itemDestroyed)
+						if(!itemDestroyed)
 						{
 							final SystemMessage sm = new SystemMessage(SystemMessage._2_UNITS_OF_THE_ITEM_S1_IS_REQUIRED);
 							sm.addItemName(ingredient.getItemId());
@@ -129,28 +127,28 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 			}
 		}
 
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			final LimitedShopEntry entry = _list.get(i);
 			LimitedShopProduction product = entry.getProduction().get(0);
-			if (product.getInfo().getInteger("index") == _itemIndex)
+			if(product.getInfo().getInteger("index") == _itemIndex)
 			{
 				int productId = product.getInfo().getInteger("product1Id");
 
 				int productsCount = 1;
-				if (product.getInfo().getInteger("product2Id") > 0)
+				if(product.getInfo().getInteger("product2Id") > 0)
 				{
 					productsCount++;
 				}
-				if (product.getInfo().getInteger("product3Id") > 0)
+				if(product.getInfo().getInteger("product3Id") > 0)
 				{
 					productsCount++;
 				}
-				if (product.getInfo().getInteger("product4Id") > 0)
+				if(product.getInfo().getInteger("product4Id") > 0)
 				{
 					productsCount++;
 				}
-				if (product.getInfo().getInteger("product5Id") > 0)
+				if(product.getInfo().getInteger("product5Id") > 0)
 				{
 					productsCount++;
 				}
@@ -159,7 +157,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 				int resultProductCount = 0;
 				byte craftedSlot = 0;
 
-				switch (productsCount)
+				switch(productsCount)
 				{
 					case 1:
 					{
@@ -169,7 +167,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 					}
 					case 2:
 					{
-						if (Rnd.get(100) < product.getInfo().getDouble("product1Chance"))
+						if(Rnd.get(100) < product.getInfo().getDouble("product1Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product1Id");
 							resultProductCount = product.getInfo().getInteger("product1Count") * _itemCount;
@@ -185,12 +183,12 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 					case 3:
 					{
 						double chance = Rnd.get(100);
-						if (chance < product.getInfo().getDouble("product1Chance"))
+						if(chance < product.getInfo().getDouble("product1Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product1Id");
 							resultProductCount = product.getInfo().getInteger("product1Count") * _itemCount;
 						}
-						else if (chance < product.getInfo().getDouble("product2Chance"))
+						else if(chance < product.getInfo().getDouble("product2Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product2Id");
 							resultProductCount = product.getInfo().getInteger("product2Count") * _itemCount;
@@ -207,18 +205,18 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 					case 4:
 					{
 						double chance = Rnd.get(100);
-						if (chance < product.getInfo().getDouble("product1Chance"))
+						if(chance < product.getInfo().getDouble("product1Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product1Id");
 							resultProductCount = product.getInfo().getInteger("product1Count") * _itemCount;
 						}
-						else if (chance < product.getInfo().getDouble("product2Chance"))
+						else if(chance < product.getInfo().getDouble("product2Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product2Id");
 							resultProductCount = product.getInfo().getInteger("product2Count") * _itemCount;
 							craftedSlot = 1;
 						}
-						else if (chance < product.getInfo().getDouble("product3Chance"))
+						else if(chance < product.getInfo().getDouble("product3Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product3Id");
 							resultProductCount = product.getInfo().getInteger("product3Count") * _itemCount;
@@ -235,24 +233,24 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 					case 5:
 					{
 						double chance = Rnd.get(100);
-						if (chance < product.getInfo().getDouble("product1Chance"))
+						if(chance < product.getInfo().getDouble("product1Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product1Id");
 							resultProductCount = product.getInfo().getInteger("product1Count") * _itemCount;
 						}
-						else if (chance < product.getInfo().getDouble("product2Chance"))
+						else if(chance < product.getInfo().getDouble("product2Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product2Id");
 							resultProductCount = product.getInfo().getInteger("product2Count") * _itemCount;
 							craftedSlot = 1;
 						}
-						else if (chance < product.getInfo().getDouble("product3Chance"))
+						else if(chance < product.getInfo().getDouble("product3Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product3Id");
 							resultProductCount = product.getInfo().getInteger("product3Count") * _itemCount;
 							craftedSlot = 2;
 						}
-						else if (chance < product.getInfo().getDouble("product4Chance"))
+						else if(chance < product.getInfo().getDouble("product4Chance"))
 						{
 							resultProductId = product.getInfo().getInteger("product4Id");
 							resultProductCount = product.getInfo().getInteger("product4Count") * _itemCount;
@@ -271,7 +269,7 @@ public class ExPurchaseLimitShopItemBuy implements IClientOutgoingPacket
 				inventory.addItem(resultProductId, resultProductCount);
 
 				int remainLimit = 0;
-				if (product.getInfo().getInteger("dailyLimit") > 0)
+				if(product.getInfo().getInteger("dailyLimit") > 0)
 				{
 					remainLimit = _player.getVarInt(PlayerVariables.LIMIT_ITEM_REMAIN + "_" + productId, product.getInfo().getInteger("dailyLimit"));
 					remainLimit = remainLimit - _itemCount;

@@ -23,11 +23,11 @@ public class ConditionPlayerResidence extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return false;
 		Player player = (Player) env.character;
 		Clan clan = player.getClan();
-		if (clan == null)
+		if(clan == null)
 			return false;
 
 		int residenceId = clan.getResidenceId(_type);

@@ -17,9 +17,9 @@ public final class i_my_summon_kill extends i_abstract_effect
 	@Override
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
-		for (Servitor servitor : effected.getServitors())
+		for(Servitor servitor : effected.getServitors())
 		{
-			if (servitor.isSummon())
+			if(servitor.isSummon())
 				servitor.unSummon(false);
 		}
 	}

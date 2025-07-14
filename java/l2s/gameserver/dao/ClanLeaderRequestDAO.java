@@ -44,14 +44,14 @@ public class ClanLeaderRequestDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
 			rset = statement.executeQuery(SELECT_SQL);
-			while (rset.next())
+			while(rset.next())
 			{
 				int clanId = rset.getInt("clan_id");
 
 				requestList.put(clanId, new ClanChangeLeaderRequest(clanId, rset.getInt("new_leader_id"), rset.getLong("time") * 1000L));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("ClanLeaderRequestDAO.select(): " + e, e);
 		}
@@ -74,7 +74,7 @@ public class ClanLeaderRequestDAO
 			statement.setInt(1, changeLeaderRequest.getClanId());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("ClanLeaderRequestDAO.delete(ClanChangeLeaderRequest): " + e, e);
 		}
@@ -97,7 +97,7 @@ public class ClanLeaderRequestDAO
 			statement.setLong(3, request.getTime() / 1000L);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("ClanLeaderRequestDAO.insert(ClanChangeLeaderRequest): " + e, e);
 		}

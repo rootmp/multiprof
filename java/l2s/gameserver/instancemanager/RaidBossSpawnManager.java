@@ -40,7 +40,7 @@ public class RaidBossSpawnManager
 	{
 		_instance = this;
 
-		if (!Config.DONTLOADSPAWN)
+		if(!Config.DONTLOADSPAWN)
 		{
 			reloadBosses();
 		}
@@ -61,7 +61,7 @@ public class RaidBossSpawnManager
 
 	public static RaidBossSpawnManager getInstance()
 	{
-		if (_instance == null)
+		if(_instance == null)
 			new RaidBossSpawnManager();
 		return _instance;
 	}
@@ -78,7 +78,7 @@ public class RaidBossSpawnManager
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			rset = con.createStatement().executeQuery("SELECT * FROM `raidboss_status`");
-			while (rset.next())
+			while(rset.next())
 			{
 				int id = rset.getInt("id");
 				StatsSet info = new StatsSet();
@@ -89,7 +89,7 @@ public class RaidBossSpawnManager
 				_storedInfo.put(id, info);
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("RaidBossSpawnManager: Couldnt load raidboss statuses");
 		}
@@ -103,10 +103,10 @@ public class RaidBossSpawnManager
 
 	public void updateAllStatusDb()
 	{
-		for (Spawner spawner : _spawntable.valueCollection())
+		for(Spawner spawner : _spawntable.valueCollection())
 		{
 			NpcInstance raidboss = spawner.getFirstSpawned();
-			if (raidboss == null || !raidboss.isVisible() || raidboss.isDead())
+			if(raidboss == null || !raidboss.isVisible() || raidboss.isDead())
 				continue;
 
 			updateStatusDb(raidboss);
@@ -115,15 +115,15 @@ public class RaidBossSpawnManager
 
 	private void updateStatusDb(NpcInstance npc)
 	{
-		if (npc.isReflectionBoss())
+		if(npc.isReflectionBoss())
 			return;
 
 		StatsSet info = _storedInfo.get(npc.getNpcId());
-		if (info == null)
+		if(info == null)
 			_storedInfo.put(npc.getNpcId(), info = new StatsSet());
 
 		long deathTime = npc.getDeathTime();
-		if (deathTime > 0)
+		if(deathTime > 0)
 		{
 			info.set("current_hp", 0);
 			info.set("current_mp", 0);
@@ -150,7 +150,7 @@ public class RaidBossSpawnManager
 			statement.setInt(5, 0);
 			statement.execute();
 		}
-		catch (SQLException e)
+		catch(SQLException e)
 		{
 			_log.warn("RaidBossSpawnManager: Couldnt update raidboss_status table");
 		}
@@ -162,22 +162,22 @@ public class RaidBossSpawnManager
 
 	public void addNewSpawn(int npcId, Spawner spawnDat)
 	{
-		if (_spawntable.containsKey(npcId))
+		if(_spawntable.containsKey(npcId))
 			return;
 
 		_spawntable.put(npcId, spawnDat);
 
 		StatsSet info = _storedInfo.get(npcId);
-		if (info != null)
+		if(info != null)
 		{
 			int respawnDelay = info.getInteger("respawn_delay", 0);
-			if (respawnDelay == 0)
+			if(respawnDelay == 0)
 			{
 				int deathTime = info.getInteger("death_time", 0);
-				if (deathTime > 0)
+				if(deathTime > 0)
 				{
 					NpcTemplate template = NpcHolder.getInstance().getTemplate(npcId);
-					if (template != null)
+					if(template != null)
 						respawnDelay = spawnDat.calcRespawnTime(deathTime * 1000L, template.isRaid);
 				}
 			}
@@ -192,40 +192,41 @@ public class RaidBossSpawnManager
 
 	public void onBossSpawned(NpcInstance npc)
 	{
-		if (npc.isReflectionBoss())
+		if(npc.isReflectionBoss())
 			return;
 
 		int bossId = npc.getNpcId();
 		Spawner spawner = _spawntable.get(bossId);
-		if (spawner == null || npc.getSpawn() != spawner)
+		if(spawner == null || npc.getSpawn() != spawner)
 			return;
 
 		StatsSet info = _storedInfo.get(bossId);
-		if (info != null && info.getDouble("current_hp") > 1)
+		if(info != null && info.getDouble("current_hp") > 1)
 		{
 			npc.setCurrentHp(info.getDouble("current_hp"), false);
 			npc.setCurrentMp(info.getDouble("current_mp"));
 		}
 
-		if (npc.isRaid())
+		if(npc.isRaid())
 		{
 			_aliveRaidBosses.add(npc.getNpcId());
 
 			GmListTable.broadcastMessageToGMs("Spawning RaidBoss " + npc.getName());
 
-			if (Config.ALT_ANNONCE_RAID_BOSSES_REVIVAL)
-				Announcements.announceToAllFromStringHolder("l2s.gameserver.instancemanager.RaidBossSpawnManager." + (npc.isBoss() ? "onBossSpawned" : "onRaidBossSpawned"), npc.getName(), npc.getTitle());
+			if(Config.ALT_ANNONCE_RAID_BOSSES_REVIVAL)
+				Announcements.announceToAllFromStringHolder("l2s.gameserver.instancemanager.RaidBossSpawnManager."
+						+ (npc.isBoss() ? "onBossSpawned" : "onRaidBossSpawned"), npc.getName(), npc.getTitle());
 		}
 		updateStatusDb(npc);
 	}
 
 	public void onBossDeath(NpcInstance npc)
 	{
-		if (npc.isReflectionBoss())
+		if(npc.isReflectionBoss())
 			return;
 
 		Spawner spawner = _spawntable.get(npc.getNpcId());
-		if (spawner == null || npc.getSpawn() != spawner)
+		if(spawner == null || npc.getSpawn() != spawner)
 			return;
 
 		_aliveRaidBosses.remove(npc.getNpcId());
@@ -235,7 +236,7 @@ public class RaidBossSpawnManager
 	public RaidBossStatus getRaidBossStatusId(int bossId)
 	{
 		Spawner spawner = _spawntable.get(bossId);
-		if (spawner == null)
+		if(spawner == null)
 			return RaidBossStatus.UNDEFINED;
 
 		NpcInstance npc = spawner.getFirstSpawned();

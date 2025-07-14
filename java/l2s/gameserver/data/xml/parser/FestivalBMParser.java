@@ -43,7 +43,7 @@ public class FestivalBMParser extends AbstractParser<FestivalBMHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		int i = 1;
-		for (Iterator<Element> iterator = rootElement.elementIterator("item"); iterator.hasNext();)
+		for(Iterator<Element> iterator = rootElement.elementIterator("item"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
 

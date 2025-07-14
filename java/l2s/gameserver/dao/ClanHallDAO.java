@@ -41,7 +41,7 @@ public class ClanHallDAO
 			statement = con.prepareStatement(SELECT_SQL_QUERY);
 			statement.setInt(1, clanHall.getId());
 			rset = statement.executeQuery();
-			if (rset.next())
+			if(rset.next())
 			{
 				clanHall.getSiegeDate().setTimeInMillis(rset.getLong("siege_date") * 1000L);
 				clanHall.getLastSiegeDate().setTimeInMillis(rset.getLong("last_siege_date") * 1000L);
@@ -56,7 +56,7 @@ public class ClanHallDAO
 				clanHall.setPaidCycle(rset.getInt("paid_cycle"));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("ClanHallDAO.select(ClanHall):" + e, e);
 		}
@@ -68,7 +68,7 @@ public class ClanHallDAO
 
 	public void update(ClanHall c)
 	{
-		if (!c.getJdbcState().isUpdatable())
+		if(!c.getJdbcState().isUpdatable())
 			return;
 
 		c.setJdbcState(JdbcEntityState.STORED);
@@ -98,7 +98,7 @@ public class ClanHallDAO
 			statement.setInt(++i, c.getPaidCycle());
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn("ClanHallDAO#update0(ClanHall): " + e, e);
 		}

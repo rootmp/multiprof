@@ -111,7 +111,7 @@ public class ZoneTemplate extends StatTemplate
 		// Зона с эффектом
 		String s = set.getString("skill_name", null);
 		Skill skill = null;
-		if (s != null)
+		if(s != null)
 		{
 			String[] sk = s.split("[\\s,;]+");
 			skill = SkillHolder.getInstance().getSkill(Integer.parseInt(sk[0]), Integer.parseInt(sk[1]));
@@ -141,7 +141,7 @@ public class ZoneTemplate extends StatTemplate
 		_restartTime = set.getLong("restart_time", 0L);
 
 		s = (String) set.get("blocked_actions");
-		if (s != null)
+		if(s != null)
 			_blockedActions = s.split(ExProperties.defaultDelimiter);
 		else
 			_blockedActions = null;
@@ -154,7 +154,8 @@ public class ZoneTemplate extends StatTemplate
 		String sceneMovie = set.getString("present_scene_movie", null);
 		_presentSceneMovie = sceneMovie == null ? null : SceneMovie.valueOf(sceneMovie.toUpperCase());
 
-		_showDangerzone = set.getBool("show_dangerzone", _type == ZoneType.damage || _type == ZoneType.swamp || _type == ZoneType.poison || _type == ZoneType.instant_skill);
+		_showDangerzone = set.getBool("show_dangerzone", _type == ZoneType.damage || _type == ZoneType.swamp || _type == ZoneType.poison
+				|| _type == ZoneType.instant_skill);
 
 		String teleportCords = set.getString("teleport_location", null);
 		_teleportLocation = teleportCords == null ? null : Location.parseLoc(teleportCords);
@@ -169,10 +170,8 @@ public class ZoneTemplate extends StatTemplate
 
 	public String getName()
 	{
-		if (_name == null)
-		{
-			return _name;
-		}
+		if(_name == null)
+		{ return _name; }
 		return _name;
 	}
 

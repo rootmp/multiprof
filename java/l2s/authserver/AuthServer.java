@@ -65,22 +65,21 @@ public class AuthServer
 
 		try
 		{
-			if (Config.LOGIN_HOST.equalsIgnoreCase("*"))
+			if(Config.LOGIN_HOST.equalsIgnoreCase("*"))
 				ss = new ServerSocket(Config.PORT_LOGIN);
 			else
 				ss = new ServerSocket(Config.PORT_LOGIN, 50, InetAddress.getByName(Config.LOGIN_HOST));
 		}
 		finally
 		{
-			if (ss != null)
+			if(ss != null)
 			{
 				try
 				{
 					ss.close();
 				}
-				catch (Exception e)
-				{
-				}
+				catch(Exception e)
+				{}
 			}
 		}
 	}

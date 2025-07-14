@@ -50,7 +50,7 @@ public final class BeautyShopParser extends AbstractParser<BeautyShopHolder>
 	protected void readData(Element rootElement) throws Exception
 	{
 		long defaultResetPrice = 0L;
- 
+
 		for(Iterator<Element> iterator = rootElement.elementIterator("config"); iterator.hasNext();)
 		{
 			Element element = iterator.next();
@@ -103,10 +103,11 @@ public final class BeautyShopParser extends AbstractParser<BeautyShopHolder>
 	{
 		int id = Integer.parseInt(styleElement.attributeValue("id"));
 		int value = Integer.parseInt(styleElement.attributeValue("value"));
-		 
+
 		long adena = styleElement.attributeValue("adena") == null ? 0L : Long.parseLong(styleElement.attributeValue("adena"));
 		long coins = styleElement.attributeValue("coins") == null ? 0L : Long.parseLong(styleElement.attributeValue("coins"));
-		long reset_price = styleElement.attributeValue("reset_price") == null ? defaultResetPrice : Long.parseLong(styleElement.attributeValue("reset_price"));
+		long reset_price = styleElement.attributeValue("reset_price")
+				== null ? defaultResetPrice : Long.parseLong(styleElement.attributeValue("reset_price"));
 
 		TIntObjectMap<BeautyColorTemplate> colors = null;
 		if(hair)

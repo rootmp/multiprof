@@ -36,11 +36,11 @@ public final class LinePointIterator3D
 		_sy = srcY < dstY ? 1 : -1;
 		_sz = srcZ < dstZ ? 1 : -1;
 
-		if ((_dx >= _dy) && (_dx >= _dz))
+		if((_dx >= _dy) && (_dx >= _dz))
 		{
 			_error = _error2 = _dx / 2;
 		}
-		else if ((_dy >= _dx) && (_dy >= _dz))
+		else if((_dy >= _dx) && (_dy >= _dz))
 		{
 			_error = _error2 = _dy / 2;
 		}
@@ -54,26 +54,26 @@ public final class LinePointIterator3D
 
 	public boolean next()
 	{
-		if (_first)
+		if(_first)
 		{
 			_first = false;
 			return true;
 		}
-		else if ((_dx >= _dy) && (_dx >= _dz))
+		else if((_dx >= _dy) && (_dx >= _dz))
 		{
-			if (_srcX != _dstX)
+			if(_srcX != _dstX)
 			{
 				_srcX += _sx;
 
 				_error += _dy;
-				if (_error >= _dx)
+				if(_error >= _dx)
 				{
 					_srcY += _sy;
 					_error -= _dx;
 				}
 
 				_error2 += _dz;
-				if (_error2 >= _dx)
+				if(_error2 >= _dx)
 				{
 					_srcZ += _sz;
 					_error2 -= _dx;
@@ -82,21 +82,21 @@ public final class LinePointIterator3D
 				return true;
 			}
 		}
-		else if ((_dy >= _dx) && (_dy >= _dz))
+		else if((_dy >= _dx) && (_dy >= _dz))
 		{
-			if (_srcY != _dstY)
+			if(_srcY != _dstY)
 			{
 				_srcY += _sy;
 
 				_error += _dx;
-				if (_error >= _dy)
+				if(_error >= _dy)
 				{
 					_srcX += _sx;
 					_error -= _dy;
 				}
 
 				_error2 += _dz;
-				if (_error2 >= _dy)
+				if(_error2 >= _dy)
 				{
 					_srcZ += _sz;
 					_error2 -= _dy;
@@ -107,19 +107,19 @@ public final class LinePointIterator3D
 		}
 		else
 		{
-			if (_srcZ != _dstZ)
+			if(_srcZ != _dstZ)
 			{
 				_srcZ += _sz;
 
 				_error += _dx;
-				if (_error >= _dz)
+				if(_error >= _dz)
 				{
 					_srcX += _sx;
 					_error -= _dz;
 				}
 
 				_error2 += _dy;
-				if (_error2 >= _dz)
+				if(_error2 >= _dz)
 				{
 					_srcY += _sy;
 					_error2 -= _dz;

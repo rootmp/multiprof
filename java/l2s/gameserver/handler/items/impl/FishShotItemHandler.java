@@ -19,43 +19,43 @@ public class FishShotItemHandler extends DefaultItemHandler
 	@Override
 	public boolean useItem(Playable playable, ItemInstance item, boolean ctrl)
 	{
-		if (playable == null || !playable.isPlayer())
+		if(playable == null || !playable.isPlayer())
 			return false;
 
 		Player player = (Player) playable;
 
 		// spiritshot is already active
-		if (player.getChargedFishshotPower() > 0)
+		if(player.getChargedFishshotPower() > 0)
 			return false;
 
 		int shotId = item.getItemId();
 		boolean isAutoSoulShot = false;
 
-		if (player.isAutoShot(shotId))
+		if(player.isAutoShot(shotId))
 			isAutoSoulShot = true;
 
 		WeaponTemplate weaponItem = player.getActiveWeaponTemplate();
-		if (player.getActiveWeaponInstance() == null || weaponItem.getItemType() != WeaponType.ROD)
+		if(player.getActiveWeaponInstance() == null || weaponItem.getItemType() != WeaponType.ROD)
 		{
-			if (!isAutoSoulShot)
+			if(!isAutoSoulShot)
 				player.sendPacket(SystemMsg.CANNOT_USE_SOULSHOTS);
 			return false;
 		}
 
 		RodTemplate rod = FishDataHolder.getInstance().getRod(weaponItem.getItemId());
-		if (rod == null)
+		if(rod == null)
 		{
-			if (!isAutoSoulShot)
+			if(!isAutoSoulShot)
 				player.sendPacket(SystemMsg.CANNOT_USE_SOULSHOTS);
 			return false;
 		}
 
-		if (player.getInventory().destroyItem(item, rod.getShotConsumeCount()))
+		if(player.getInventory().destroyItem(item, rod.getShotConsumeCount()))
 		{
 			SkillEntry skillEntry = item.getTemplate().getFirstSkill();
-			if (skillEntry == null)
+			if(skillEntry == null)
 			{
-				if (isAutoSoulShot)
+				if(isAutoSoulShot)
 				{
 					player.removeAutoShot(shotId, true, SoulShotType.SOULSHOT);
 					return false;
@@ -66,7 +66,7 @@ public class FishShotItemHandler extends DefaultItemHandler
 		}
 		else
 		{
-			if (isAutoSoulShot)
+			if(isAutoSoulShot)
 			{
 				player.removeAutoShot(shotId, true, SoulShotType.SOULSHOT);
 				return false;

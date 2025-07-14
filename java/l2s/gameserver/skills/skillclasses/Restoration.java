@@ -40,22 +40,22 @@ public class Restoration extends Skill
 	@Override
 	public boolean checkCondition(SkillEntry skillEntry, Creature activeChar, Creature target, boolean forceUse, boolean dontMove, boolean first, boolean sendMsg, boolean trigger)
 	{
-		if (!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
+		if(!super.checkCondition(skillEntry, activeChar, target, forceUse, dontMove, first, sendMsg, trigger))
 			return false;
 
-		if (_restoration == null)
+		if(_restoration == null)
 		{
 			_log.warn(getClass().getSimpleName() + ": Cannot find restoration info for skill[" + getId() + "-" + getLevel() + "]");
 			return false;
 		}
 
-		if (!activeChar.isPlayable())
+		if(!activeChar.isPlayable())
 			return false;
 
-		if (activeChar.isPlayer())
+		if(activeChar.isPlayer())
 		{
 			Player player = (Player) activeChar;
-			if (player.getWeightPenalty() >= 3 || player.getInventory().getSize() > player.getInventoryLimit() - 10)
+			if(player.getWeightPenalty() >= 3 || player.getInventory().getSize() > player.getInventoryLimit() - 10)
 			{
 				player.sendPacket(SystemMsg.THE_CORRESPONDING_WORK_CANNOT_BE_PROCEEDED_BECAUSE_THE_INVENTORY_WEIGHTQUANTITY_LIMIT_HAS_BEEN_EXCEEDED);
 				return false;
@@ -69,15 +69,15 @@ public class Restoration extends Skill
 	{
 		super.onEndCast(activeChar, targets);
 
-		if (!activeChar.isPlayable())
+		if(!activeChar.isPlayable())
 			return;
 
 		final Playable playable = (Playable) activeChar;
 		final int itemConsumeId = _restoration.getItemConsumeId();
 		final int itemConsumeCount = _restoration.getItemConsumeCount();
-		if (itemConsumeId > 0 && itemConsumeCount > 0)
+		if(itemConsumeId > 0 && itemConsumeCount > 0)
 		{
-			if (ItemFunctions.getItemCount(playable, itemConsumeId) < itemConsumeCount)
+			if(ItemFunctions.getItemCount(playable, itemConsumeId) < itemConsumeCount)
 			{
 				playable.sendPacket(SystemMsg.THERE_ARE_NOT_ENOUGH_NECESSARY_ITEMS_TO_USE_THE_SKILL);
 				return;
@@ -87,28 +87,29 @@ public class Restoration extends Skill
 		}
 
 		final List<RestorationItem> restorationItems = _restoration.getRandomGroupItems();
-		if (restorationItems == null || restorationItems.size() == 0)
+		if(restorationItems == null || restorationItems.size() == 0)
 		{
 			SystemMsg msg = _restoration.getOnFailMessage();
-			if (msg != null)
+			if(msg != null)
 				playable.sendPacket(msg);
 			return;
 		}
 
-		for (Creature target : targets)
+		for(Creature target : targets)
 		{
-			if (target != null)
+			if(target != null)
 			{
-				for (RestorationItem item : restorationItems)
+				for(RestorationItem item : restorationItems)
 				{
 					long count = item.getRandomCount();
 					List<ItemInstance> madeItems = ItemFunctions.addItem(playable, item.getId(), count, item.getEnchantLevel(), true);
 					String itemName = ItemHolder.getInstance().getTemplate(getItemConsumeId()).getName();
 					ItemInstance madeItem = madeItems.get(0);
-					for (Player playerr : GameObjectsStorage.getPlayers(false, false))
+					for(Player playerr : GameObjectsStorage.getPlayers(false, false))
 					{
 						playerr.sendPacket(new ExItemAnnounce(activeChar.getPlayer(), madeItem, 1, getItemConsumeId()));
-						playerr.sendMessage(activeChar.getPlayer().getName() + " opened " + itemName + " and obtained: " + madeItem.getName() + ((madeItem.getEnchantLevel() > 0) ? (" + (" + madeItem.getEnchantLevel() + ") ") : "") + " x" + count);
+						playerr.sendMessage(activeChar.getPlayer().getName() + " opened " + itemName + " and obtained: " + madeItem.getName()
+								+ ((madeItem.getEnchantLevel() > 0) ? (" + (" + madeItem.getEnchantLevel() + ") ") : "") + " x" + count);
 					}
 				}
 			}

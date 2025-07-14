@@ -55,18 +55,18 @@ public abstract class SteppingRunnableQueueManager implements Runnable
 		@Override
 		public void run()
 		{
-			if (--step == 0)
+			if(--step == 0)
 				try
 				{
 					r.run();
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					_log.error("SteppingScheduledFuture.run():" + e, e);
 				}
 				finally
 				{
-					if (isPeriodic)
+					if(isPeriodic)
 						step = stepping;
 				}
 		}
@@ -168,13 +168,14 @@ public abstract class SteppingRunnableQueueManager implements Runnable
 	private long getStepping(long delay)
 	{
 		delay = Math.max(0, delay);
-		return delay % tickPerStepInMillis > tickPerStepInMillis / 2 ? delay / tickPerStepInMillis + 1 : delay < tickPerStepInMillis ? 1 : delay / tickPerStepInMillis;
+		return delay % tickPerStepInMillis > tickPerStepInMillis / 2 ? delay / tickPerStepInMillis
+				+ 1 : delay < tickPerStepInMillis ? 1 : delay / tickPerStepInMillis;
 	}
 
 	@Override
 	public void run()
 	{
-		if (!isRunning.compareAndSet(false, true))
+		if(!isRunning.compareAndSet(false, true))
 		{
 			_log.warn("Slow running queue, managed by " + this + ", queue size : " + queue.size() + "!");
 			return;
@@ -182,11 +183,11 @@ public abstract class SteppingRunnableQueueManager implements Runnable
 
 		try
 		{
-			if (queue.isEmpty())
+			if(queue.isEmpty())
 				return;
 
-			for (SteppingScheduledFuture<?> sr : queue)
-				if (!sr.isDone())
+			for(SteppingScheduledFuture<?> sr : queue)
+				if(!sr.isDone())
 					sr.run();
 		}
 		finally
@@ -202,8 +203,8 @@ public abstract class SteppingRunnableQueueManager implements Runnable
 	{
 		LazyArrayList<SteppingScheduledFuture<?>> purge = LazyArrayList.newInstance();
 
-		for (SteppingScheduledFuture<?> sr : queue)
-			if (sr.isDone())
+		for(SteppingScheduledFuture<?> sr : queue)
+			if(sr.isDone())
 				purge.add(sr);
 
 		queue.removeAll(purge);
@@ -219,22 +220,22 @@ public abstract class SteppingRunnableQueueManager implements Runnable
 		int total = 0;
 		int done = 0;
 
-		for (SteppingScheduledFuture<?> sr : queue)
+		for(SteppingScheduledFuture<?> sr : queue)
 		{
-			if (sr.isDone())
+			if(sr.isDone())
 			{
 				done++;
 				continue;
 			}
 			total++;
 			MutableLong count = stats.get(sr.r.getClass().getName());
-			if (count == null)
+			if(count == null)
 				stats.put(sr.r.getClass().getName(), count = new MutableLong(1L));
 			else
 				count.increment();
 		}
 
-		for (Map.Entry<String, MutableLong> e : stats.entrySet())
+		for(Map.Entry<String, MutableLong> e : stats.entrySet())
 			list.append("\t").append(e.getKey()).append(" : ").append(e.getValue().longValue()).append("\n");
 
 		list.append("Scheduled: ....... ").append(total).append("\n");

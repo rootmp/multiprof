@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.data.xml.holder.ResidenceHolder;
 import l2s.gameserver.model.Player;
@@ -21,11 +22,11 @@ public class RequestExMercenaryCastlewarCastleSiegeAttackerList implements IClie
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, castleId);
-		if (castle == null)
+		if(castle == null)
 		{
 			activeChar.sendActionFailed();
 			return;

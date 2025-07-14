@@ -16,8 +16,7 @@ public enum SystemMsg implements IBroadcastPacket
 	A_LETTER_FROM_THE_FORTRESS_MANAGER_ARRIVED(9018),
 	// Message: Thank you for recapturing the fortress invaded by orcs. Here is your
 	// reward for displaying a flag. -Fortress Manager-
-	THANK_YOU_FOR_RECAPTURING_THE_FORTRESS_INVADED_BY_ORCS_HERE_IS_YOUR_REWARD_FOR_DISPLAYING_A_FLAG_FORTRESS_MANAGER(
-																														9019),
+	THANK_YOU_FOR_RECAPTURING_THE_FORTRESS_INVADED_BY_ORCS_HERE_IS_YOUR_REWARD_FOR_DISPLAYING_A_FLAG_FORTRESS_MANAGER(9019),
 	// Message: The fortress battle will start in $s1 min.
 	THE_FORTRESS_BATTLE_WILL_START_IN_S1_MIN(13147),
 	// Message: The fortress battle has begun.
@@ -101,8 +100,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: $s1, to my regret we cannot reward you for your services as a
 	// mercenary. I hope you will have more luck in the battles to come.\n- Giran
 	// Castle Lord-
-	S1_TO_MY_REGRET_WE_CANNOT_REWARD_YOU_FOR_YOUR_SERVICES_AS_A_MERCENARY_I_HOPE_YOU_WILL_HAVE_MORE_LUCK_IN_THE_BATTLES_TO_COMEN_GIRAN_CASTLE_LORD(
-																																					9008),
+	S1_TO_MY_REGRET_WE_CANNOT_REWARD_YOU_FOR_YOUR_SERVICES_AS_A_MERCENARY_I_HOPE_YOU_WILL_HAVE_MORE_LUCK_IN_THE_BATTLES_TO_COMEN_GIRAN_CASTLE_LORD(9008),
 	// Message: You can’t register for attackers or defenders in the mercenary mode.
 	YOU_CANT_REGISTER_FOR_ATTACKERS_OR_DEFENDERS_IN_THE_MERCENARY_MODE_(13083),
 	// Message: Unable to open Olympiad Screen while in participating or watching a
@@ -455,8 +453,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_REGISTRATION_TERM_FOR_S1_HAS_ENDED(293),
 	// Message: You cannot summon the encampment because you are not a member of the
 	// siege clan involved in the castle / fortress / hideout siege.
-	YOU_CANNOT_SUMMON_THE_ENCAMPMENT_BECAUSE_YOU_ARE_NOT_A_MEMBER_OF_THE_SIEGE_CLAN_INVOLVED_IN_THE_CASTLE__FORTRESS__HIDEOUT_SIEGE(
-																																	294),
+	YOU_CANNOT_SUMMON_THE_ENCAMPMENT_BECAUSE_YOU_ARE_NOT_A_MEMBER_OF_THE_SIEGE_CLAN_INVOLVED_IN_THE_CASTLE__FORTRESS__HIDEOUT_SIEGE(294),
 	// Message: $s1's siege was canceled because there were no clans that
 	// participated.
 	S1S_SIEGE_WAS_CANCELED_BECAUSE_THERE_WERE_NO_CLANS_THAT_PARTICIPATED(295),
@@ -549,8 +546,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS(465),
 	// Message: A clan that has withdrawn or been expelled cannot enter into an
 	// alliance within one day of withdrawal or expulsion.
-	A_CLAN_THAT_HAS_WITHDRAWN_OR_BEEN_EXPELLED_CANNOT_ENTER_INTO_AN_ALLIANCE_WITHIN_ONE_DAY_OF_WITHDRAWAL_OR_EXPULSION(
-																														468),
+	A_CLAN_THAT_HAS_WITHDRAWN_OR_BEEN_EXPELLED_CANNOT_ENTER_INTO_AN_ALLIANCE_WITHIN_ONE_DAY_OF_WITHDRAWAL_OR_EXPULSION(468),
 	// Message: You may not ally with a clan you are currently at war with. That
 	// would be diabolical and treacherous.
 	YOU_MAY_NOT_ALLY_WITH_A_CLAN_YOU_ARE_CURRENTLY_AT_WAR_WITH(469),
@@ -708,12 +704,10 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_HAVE_ALREADY_REQUESTED_A_CASTLE_SIEGE(638),
 	// Message: You are already registered to the attacker side and must cancel your
 	// registration before submitting your request.
-	YOU_ARE_ALREADY_REGISTERED_TO_THE_ATTACKER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST(
-																														642),
+	YOU_ARE_ALREADY_REGISTERED_TO_THE_ATTACKER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST(642),
 	// Message: You have already registered to the defender side and must cancel
 	// your registration before submitting your request.
-	YOU_HAVE_ALREADY_REGISTERED_TO_THE_DEFENDER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST(
-																														643),
+	YOU_HAVE_ALREADY_REGISTERED_TO_THE_DEFENDER_SIDE_AND_MUST_CANCEL_YOUR_REGISTRATION_BEFORE_SUBMITTING_YOUR_REQUEST(643),
 	// Message: You are not yet registered for the castle siege.
 	YOU_ARE_NOT_YET_REGISTERED_FOR_THE_CASTLE_SIEGE(644),
 	// Message: Only clans of level 5 or higher may register for a castle siege.
@@ -961,8 +955,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_CHATTING_PROHIBITION_HAS_BEEN_REMOVED(965),
 	// Message: Chatting is currently prohibited. If you try to chat before the
 	// prohibition is removed, the prohibition time will increase even further.
-	CHATTING_IS_CURRENTLY_PROHIBITED_IF_YOU_TRY_TO_CHAT_BEFORE_THE_PROHIBITION_IS_REMOVED_THE_PROHIBITION_TIME_WILL_INCREASE_EVEN_FURTHER(
-																																			966),
+	CHATTING_IS_CURRENTLY_PROHIBITED_IF_YOU_TRY_TO_CHAT_BEFORE_THE_PROHIBITION_IS_REMOVED_THE_PROHIBITION_TIME_WILL_INCREASE_EVEN_FURTHER(966),
 	// Message: Do you accept $c1's party invitation? (Item Distribution: Random
 	// including spoil.)
 	DO_YOU_ACCEPT_C1S_PARTY_INVITATION_ITEM_DISTRIBUTION_RANDOM_INCLUDING_SPOIL(967),
@@ -1126,8 +1119,7 @@ public enum SystemMsg implements IBroadcastPacket
 	A_CLAN_MEMBER_MAY_NOT_BE_DISMISSED_DURING_COMBAT(1117),
 	// Message: Progress in a quest is possible only when your inventory's weight
 	// and slot count are less than 80 percent of capacity.
-	PROGRESS_IN_A_QUEST_IS_POSSIBLE_ONLY_WHEN_YOUR_INVENTORYS_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY(
-																															1118),
+	PROGRESS_IN_A_QUEST_IS_POSSIBLE_ONLY_WHEN_YOUR_INVENTORYS_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY(1118),
 	// Message: A private store may not be opened while using a skill.
 	A_PRIVATE_STORE_MAY_NOT_BE_OPENED_WHILE_USING_A_SKILL(1128),
 	// Message: While you are engaged in combat, you cannot operate a private store
@@ -1219,8 +1211,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_TEMPORARY_ALLIANCE_OF_THE_CASTLE_ATTACKER_TEAM_HAS_BEEN_DISSOLVED(1190),
 	// Message: A mercenary can be assigned to a position from the beginning of the
 	// Seal Validation period until the time when a siege starts.
-	A_MERCENARY_CAN_BE_ASSIGNED_TO_A_POSITION_FROM_THE_BEGINNING_OF_THE_SEAL_VALIDATION_PERIOD_UNTIL_THE_TIME_WHEN_A_SIEGE_STARTS(
-																																	1194),
+	A_MERCENARY_CAN_BE_ASSIGNED_TO_A_POSITION_FROM_THE_BEGINNING_OF_THE_SEAL_VALIDATION_PERIOD_UNTIL_THE_TIME_WHEN_A_SIEGE_STARTS(1194),
 	// Message: This mercenary cannot be assigned to a position by using the Seal of
 	// Strife.
 	THIS_MERCENARY_CANNOT_BE_ASSIGNED_TO_A_POSITION_BY_USING_THE_SEAL_OF_STRIFE(1195),
@@ -1468,8 +1459,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_HAVE_DECLARED_A_CLAN_WAR_WITH_S1(1562),
 	// Message: A clan war can only be declared if the clan is level 5 or above, and
 	// the number of clan members is fifteen or greater.
-	A_CLAN_WAR_CAN_ONLY_BE_DECLARED_IF_THE_CLAN_IS_LEVEL_5_OR_ABOVE_AND_THE_NUMBER_OF_CLAN_MEMBERS_IS_FIFTEEN_OR_GREATER(
-																															1564),
+	A_CLAN_WAR_CAN_ONLY_BE_DECLARED_IF_THE_CLAN_IS_LEVEL_5_OR_ABOVE_AND_THE_NUMBER_OF_CLAN_MEMBERS_IS_FIFTEEN_OR_GREATER(1564),
 	// Message: A clan war cannot be declared against a clan that does not exist!
 	A_CLAN_WAR_CANNOT_BE_DECLARED_AGAINST_A_CLAN_THAT_DOES_NOT_EXIST(1565),
 	// Message: The clan, $s1, has decided to stop the war.
@@ -1589,8 +1579,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: Sharpen your swords, tighten the stitching in your armor, and make
 	// haste to a Grand Olympiad Manager! Battles in the Grand Olympiad Games are
 	// now taking place!
-	SHARPEN_YOUR_SWORDS_TIGHTEN_THE_STITCHING_IN_YOUR_ARMOR_AND_MAKE_HASTE_TO_A_GRAND_OLYMPIAD_MANAGER__BATTLES_IN_THE_GRAND_OLYMPIAD_GAMES_ARE_NOW_TAKING_PLACE(
-																																									1641),
+	SHARPEN_YOUR_SWORDS_TIGHTEN_THE_STITCHING_IN_YOUR_ARMOR_AND_MAKE_HASTE_TO_A_GRAND_OLYMPIAD_MANAGER__BATTLES_IN_THE_GRAND_OLYMPIAD_GAMES_ARE_NOW_TAKING_PLACE(1641),
 	// Message: Much carnage has been left for the cleanup crew of the Olympiad
 	// Stadium. Battles in the Grand Olympiad Games are now over!
 	MUCH_CARNAGE_HAS_BEEN_LEFT_FOR_THE_CLEANUP_CREW_OF_THE_OLYMPIAD_STADIUM(1642),
@@ -1614,13 +1603,11 @@ public enum SystemMsg implements IBroadcastPacket
 	THERE_WAS_NOTHING_FOUND_INSIDE(1669),
 	// Message: Due to your Reeling and/or Pumping skill being three or more levels
 	// higher than your Fishing skill, a 50 damage penalty will be applied.
-	DUE_TO_YOUR_REELING_ANDOR_PUMPING_SKILL_BEING_THREE_OR_MORE_LEVELS_HIGHER_THAN_YOUR_FISHING_SKILL_A_50_DAMAGE_PENALTY_WILL_BE_APPLIED(
-																																			1670),
+	DUE_TO_YOUR_REELING_ANDOR_PUMPING_SKILL_BEING_THREE_OR_MORE_LEVELS_HIGHER_THAN_YOUR_FISHING_SKILL_A_50_DAMAGE_PENALTY_WILL_BE_APPLIED(1670),
 	// Message: For the current Grand Olympiad you have participated in $s1
 	// match(es). $s2 win(s) and $s3 defeat(s). You currently have $s4 Olympiad
 	// Point(s).
-	FOR_THE_CURRENT_GRAND_OLYMPIAD_YOU_HAVE_PARTICIPATED_IN_S1_MATCHES_S2_WINS_S3_DEFEATS_YOU_CURRENTLY_HAVE_S4_OLYMPIAD_POINTS(
-																																1673),
+	FOR_THE_CURRENT_GRAND_OLYMPIAD_YOU_HAVE_PARTICIPATED_IN_S1_MATCHES_S2_WINS_S3_DEFEATS_YOU_CURRENTLY_HAVE_S4_OLYMPIAD_POINTS(1673),
 	// Message: This command can only be used by a Noblesse.
 	THIS_COMMAND_CAN_ONLY_BE_USED_BY_A_NOBLESSE(1674),
 	// Message: A manor cannot be set up between 4:30 am and 8 pm.
@@ -1674,8 +1661,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_JOIN_A_COMMAND_CHANNEL_WHILE_TELEPORTING(1729),
 	// Message: To join a Clan Academy, characters must be Level 40 or below, not
 	// belong another clan and not yet completed their 2nd class transfer.
-	TO_JOIN_A_CLAN_ACADEMY_CHARACTERS_MUST_BE_LEVEL_40_OR_BELOW_NOT_BELONG_ANOTHER_CLAN_AND_NOT_YET_COMPLETED_THEIR_2ND_CLASS_TRANSFER(
-																																		1734),
+	TO_JOIN_A_CLAN_ACADEMY_CHARACTERS_MUST_BE_LEVEL_40_OR_BELOW_NOT_BELONG_ANOTHER_CLAN_AND_NOT_YET_COMPLETED_THEIR_2ND_CLASS_TRANSFER(1734),
 	// Message: Your clan has already established a Clan Academy.
 	YOUR_CLAN_HAS_ALREADY_ESTABLISHED_A_CLAN_ACADEMY(1738),
 	// Message: Clan Academy member $s1 has successfully Awakened, obtaining $s2
@@ -1707,8 +1693,7 @@ public enum SystemMsg implements IBroadcastPacket
 	NOW_THAT_YOUR_CLAN_LEVEL_IS_ABOVE_LEVEL_5_IT_CAN_ACCUMULATE_CLAN_REPUTATION_POINTS(1771),
 	// Message: Your clan has failed to defend the castle. $s1 points have been
 	// deducted from your clan's reputation score and added to your opponents'.
-	YOUR_CLAN_HAS_FAILED_TO_DEFEND_THE_CASTLE_S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_YOU_CLAN_REPUTATION_SCORE_AND_ADDED_TO_YOUR_OPPONENTS(
-																																		1784),
+	YOUR_CLAN_HAS_FAILED_TO_DEFEND_THE_CASTLE_S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_YOU_CLAN_REPUTATION_SCORE_AND_ADDED_TO_YOUR_OPPONENTS(1784),
 	// Message: $s1 points have been deducted from the clan's Reputation.
 	S1_POINTS_HAVE_BEEN_DEDUCTED_FROM_THE_CLANS_REPUTATION(1787),
 	// Message: The clan skill $s1 has been added.
@@ -1787,8 +1772,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THIS_SERIAL_NUMBER_HAS_ALREADY_BEEN_USED(1886),
 	// Message: Invalid serial number. Your attempt to enter the number has failed
 	// $s1 time(s). You will be allowed to make $s2 more attempt(s).
-	INVALID_SERIAL_NUMBER__YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_S1_TIMES_YOU_WILL_BE_ALLOWED_TO_MAKE_S2_MORE_ATTEMPTS(
-																																1887),
+	INVALID_SERIAL_NUMBER__YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_S1_TIMES_YOU_WILL_BE_ALLOWED_TO_MAKE_S2_MORE_ATTEMPTS(1887),
 	// Message: Invalid serial number. Your attempt to enter the number has failed 5
 	// times. Please try again in 4 hours.
 	INVALID_SERIAL_NUMBER_YOUR_ATTEMPT_TO_ENTER_THE_NUMBER_HAS_FAILED_5_TIMES_PLEASE_TRY_AGAIN_IN_4_HOURS(1888),
@@ -1944,8 +1928,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: $c1 cannot make a challenge to a duel because $c1 is currently in a
 	// duel-prohibited area (Peaceful Zone / Seven Signs Zone / Near Water / Restart
 	// Prohibited Area).
-	C1_CANNOT_MAKE_A_CHALLENGE_TO_A_DUEL_BECAUSE_C1_IS_CURRENTLY_IN_A_DUELPROHIBITED_AREA_PEACEFUL_ZONE__SEVEN_SIGNS_ZONE__NEAR_WATER__RESTART_PROHIBITED_AREA(
-																																								2020),
+	C1_CANNOT_MAKE_A_CHALLENGE_TO_A_DUEL_BECAUSE_C1_IS_CURRENTLY_IN_A_DUELPROHIBITED_AREA_PEACEFUL_ZONE__SEVEN_SIGNS_ZONE__NEAR_WATER__RESTART_PROHIBITED_AREA(2020),
 	// Message: $c1 cannot duel because $c1 is currently engaged in battle.
 	C1_CANNOT_DUEL_BECAUSE_C1_IS_CURRENTLY_ENGAGED_IN_BATTLE(2021),
 	// Message: $c1 cannot duel because $c1 is already engaged in a duel.
@@ -1997,8 +1980,7 @@ public enum SystemMsg implements IBroadcastPacket
 	UNTRAIN_OF_ENCHANT_SKILL_WAS_SUCCESSFUL_CURRENT_LEVEL_OF_ENCHANT_SKILL_S1_HAS_BEEN_DECREASED_BY_1(2069),
 	// Message: Untrain of enchant skill was successful. Current level of enchant
 	// skill $s1 became 0 and enchant skill will be initialized.
-	UNTRAIN_OF_ENCHANT_SKILL_WAS_SUCCESSFUL_CURRENT_LEVEL_OF_ENCHANT_SKILL_S1_BECAME_0_AND_ENCHANT_SKILL_WILL_BE_INITIALIZED(
-																																2070),
+	UNTRAIN_OF_ENCHANT_SKILL_WAS_SUCCESSFUL_CURRENT_LEVEL_OF_ENCHANT_SKILL_S1_BECAME_0_AND_ENCHANT_SKILL_WILL_BE_INITIALIZED(2070),
 	// Message: It is not an auction period.
 	IT_IS_NOT_AN_AUCTION_PERIOD(2075),
 	// Message: Bidding is not allowed because the maximum bidding price exceeds 100
@@ -2057,8 +2039,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTES_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES(2106),
 	// Message: This instant zone will be terminated in $s1 minute(s). You will be
 	// forced out of the dungeon when the time expires.
-	THIS_INSTANT_ZONE_WILL_BE_TERMINATED_IN_S1_MINUTES_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES(
-																													2107),
+	THIS_INSTANT_ZONE_WILL_BE_TERMINATED_IN_S1_MINUTES_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES(2107),
 	// Message: You cannot convert this item.
 	YOU_CANNOT_CONVERT_THIS_ITEM(2130),
 	// Message: You have bid the highest price and have won the item. The item can
@@ -2257,8 +2238,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_USE_MY_TELEPORTS_DURING_A_BATTLE(2348),
 	// Message: You cannot use My Teleports while participating a large-scale battle
 	// such as a castle siege, fortress siege, or hideout siege.
-	YOU_CANNOT_USE_MY_TELEPORTS_WHILE_PARTICIPATING_A_LARGESCALE_BATTLE_SUCH_AS_A_CASTLE_SIEGE_FORTRESS_SIEGE_OR_HIDEOUT_SIEGE(
-																																2349),
+	YOU_CANNOT_USE_MY_TELEPORTS_WHILE_PARTICIPATING_A_LARGESCALE_BATTLE_SUCH_AS_A_CASTLE_SIEGE_FORTRESS_SIEGE_OR_HIDEOUT_SIEGE(2349),
 	// Message: You cannot use My Teleports during a duel.
 	YOU_CANNOT_USE_MY_TELEPORTS_DURING_A_DUEL(2350),
 	// Message: You cannot use My Teleports while flying.
@@ -2371,8 +2351,7 @@ public enum SystemMsg implements IBroadcastPacket
 	IN_ORDER_TO_ACQUIRE_AN_AIRSHIP_THE_CLANS_LEVEL_MUST_BE_LEVEL_5_OR_HIGHER(2456),
 	// Message: An airship cannot be summoned because either you have not registered
 	// your airship license, or the airship has not yet been summoned.
-	AN_AIRSHIP_CANNOT_BE_SUMMONED_BECAUSE_EITHER_YOU_HAVE_NOT_REGISTERED_YOUR_AIRSHIP_LICENSE_OR_THE_AIRSHIP_HAS_NOT_YET_BEEN_SUMMONED(
-																																		2457),
+	AN_AIRSHIP_CANNOT_BE_SUMMONED_BECAUSE_EITHER_YOU_HAVE_NOT_REGISTERED_YOUR_AIRSHIP_LICENSE_OR_THE_AIRSHIP_HAS_NOT_YET_BEEN_SUMMONED(2457),
 	// Message: Your clan's airship is already being used by another clan member.
 	YOUR_CLANS_AIRSHIP_IS_ALREADY_BEING_USED_BY_ANOTHER_CLAN_MEMBER(2458),
 	// Message: The Airship Summon License has already been acquired.
@@ -2397,13 +2376,11 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: This character cannot make a report. You cannot make a report while
 	// located inside a peace zone or a battleground, while you are an opposing clan
 	// member during a clan war, or while participating in the Olympiad.
-	THIS_CHARACTER_CANNOT_MAKE_A_REPORT_YOU_CANNOT_MAKE_A_REPORT_WHILE_LOCATED_INSIDE_A_PEACE_ZONE_OR_A_BATTLEGROUND_WHILE_YOU_ARE_AN_OPPOSING_CLAN_MEMBER_DURING_A_CLAN_WAR_OR_WHILE_PARTICIPATING_IN_THE_OLYMPIAD(
-																																																					2470),
+	THIS_CHARACTER_CANNOT_MAKE_A_REPORT_YOU_CANNOT_MAKE_A_REPORT_WHILE_LOCATED_INSIDE_A_PEACE_ZONE_OR_A_BATTLEGROUND_WHILE_YOU_ARE_AN_OPPOSING_CLAN_MEMBER_DURING_A_CLAN_WAR_OR_WHILE_PARTICIPATING_IN_THE_OLYMPIAD(2470),
 	// Message: This character cannot make a report. The target has already been
 	// reported by either your clan or alliance, or has already been reported from
 	// your current IP.
-	THIS_CHARACTER_CANNOT_MAKE_A_REPORT_THE_TARGET_HAS_ALREADY_BEEN_REPORTED_BY_EITHER_YOUR_CLAN_OR_ALLIANCE_OR_HAS_ALREADY_BEEN_REPORTED_FROM_YOUR_CURRENT_IP(
-																																								2471),
+	THIS_CHARACTER_CANNOT_MAKE_A_REPORT_THE_TARGET_HAS_ALREADY_BEEN_REPORTED_BY_EITHER_YOUR_CLAN_OR_ALLIANCE_OR_HAS_ALREADY_BEEN_REPORTED_FROM_YOUR_CURRENT_IP(2471),
 	// Message: You have been reported as an illegal program user, so your chatting
 	// will be blocked for 10 minutes.
 	YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_YOUR_CHATTING_WILL_BE_BLOCKED_FOR_10_MINUTES(2473),
@@ -2472,8 +2449,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: You cannot be simultaneously registered for PVP matches such as the
 	// Olympiad, Underground Coliseum, Aerial Cleft, Kratei's Cube, and Handy's
 	// Block Checkers.
-	YOU_CANNOT_BE_SIMULTANEOUSLY_REGISTERED_FOR_PVP_MATCHES_SUCH_AS_THE_OLYMPIAD_UNDERGROUND_COLISEUM_AERIAL_CLEFT_KRATEIS_CUBE_AND_HANDYS_BLOCK_CHECKERS(
-																																							2754),
+	YOU_CANNOT_BE_SIMULTANEOUSLY_REGISTERED_FOR_PVP_MATCHES_SUCH_AS_THE_OLYMPIAD_UNDERGROUND_COLISEUM_AERIAL_CLEFT_KRATEIS_CUBE_AND_HANDYS_BLOCK_CHECKERS(2754),
 	// Message: Another player is probably controlling the target.
 	ANOTHER_PLAYER_IS_PROBABLY_CONTROLLING_THE_TARGET(2756),
 	// Message: You must target the one you wish to control.
@@ -2543,8 +2519,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THIS_CLAN_MEMBER_CANNOT_WITHDRAW_OR_BE_EXPELLED_WHILE_PARTICIPATING_IN_A_TERRITORY_WAR(2915),
 	// Message: Only characters who are level 40 or above who have completed their
 	// second class transfer can register in a territory war.
-	ONLY_CHARACTERS_WHO_ARE_LEVEL_40_OR_ABOVE_WHO_HAVE_COMPLETED_THEIR_SECOND_CLASS_TRANSFER_CAN_REGISTER_IN_A_TERRITORY_WAR(
-																																2918),
+	ONLY_CHARACTERS_WHO_ARE_LEVEL_40_OR_ABOVE_WHO_HAVE_COMPLETED_THEIR_SECOND_CLASS_TRANSFER_CAN_REGISTER_IN_A_TERRITORY_WAR(2918),
 	// Message: The disguise scroll cannot be used because it is meant for use in a
 	// different territory.
 	THE_DISGUISE_SCROLL_CANNOT_BE_USED_BECAUSE_IT_IS_MEANT_FOR_USE_IN_A_DIFFERENT_TERRITORY(2936),
@@ -2557,8 +2532,7 @@ public enum SystemMsg implements IBroadcastPacket
 	A_DISGUISE_CANNOT_BE_USED_WHEN_YOU_ARE_IN_A_CHAOTIC_STATE(2939),
 	// Message: The territory war exclusive disguise and transformation can be used
 	// 20 minutes before the start of the territory war to 10 minutes after its end.
-	THE_TERRITORY_WAR_EXCLUSIVE_DISGUISE_AND_TRANSFORMATION_CAN_BE_USED_20_MINUTES_BEFORE_THE_START_OF_THE_TERRITORY_WAR_TO_10_MINUTES_AFTER_ITS_END(
-																																						2955),
+	THE_TERRITORY_WAR_EXCLUSIVE_DISGUISE_AND_TRANSFORMATION_CAN_BE_USED_20_MINUTES_BEFORE_THE_START_OF_THE_TERRITORY_WAR_TO_10_MINUTES_AFTER_ITS_END(2955),
 	// Message: A character born on February 29 will receive a gift on February 28.
 	A_CHARACTER_BORN_ON_FEBRUARY_29_WILL_RECEIVE_A_GIFT_ON_FEBRUARY_28(2957),
 	// Message: An Agathion has already been summoned.
@@ -2645,17 +2619,14 @@ public enum SystemMsg implements IBroadcastPacket
 	KASHAS_EYE_PITCHES_AND_TOSSES_LIKE_ITS_ABOUT_TO_EXPLODE(3024),
 	// Message: You cannot use the skill enhancing function on this level. You can
 	// use the corresponding function on levels higher than 76Lv .
-	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_ON_THIS_LEVEL_YOU_CAN_USE_THE_CORRESPONDING_FUNCTION_ON_LEVELS_HIGHER_THAN_76LV_(
-																																	3026),
+	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_ON_THIS_LEVEL_YOU_CAN_USE_THE_CORRESPONDING_FUNCTION_ON_LEVELS_HIGHER_THAN_76LV_(3026),
 	// Message: You cannot use the skill enhancing function in this class. You can
 	// use corresponding function when completing the third class change.
-	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_IN_THIS_CLASS_YOU_CAN_USE_CORRESPONDING_FUNCTION_WHEN_COMPLETING_THE_THIRD_CLASS_CHANGE(
-																																		3027),
+	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_IN_THIS_CLASS_YOU_CAN_USE_CORRESPONDING_FUNCTION_WHEN_COMPLETING_THE_THIRD_CLASS_CHANGE(3027),
 	// Message: You cannot use the skill enhancing function in this class. You can
 	// use the skill enhancing function under off-battle status, and cannot use the
 	// function while transforming, battling and on-board.
-	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_IN_THIS_CLASS_YOU_CAN_USE_THE_SKILL_ENHANCING_FUNCTION_UNDER_OFFBATTLE_STATUS_AND_CANNOT_USE_THE_FUNCTION_WHILE_TRANSFORMING_BATTLING_AND_ONBOARD(
-																																																	3028),
+	YOU_CANNOT_USE_THE_SKILL_ENHANCING_FUNCTION_IN_THIS_CLASS_YOU_CAN_USE_THE_SKILL_ENHANCING_FUNCTION_UNDER_OFFBATTLE_STATUS_AND_CANNOT_USE_THE_FUNCTION_WHILE_TRANSFORMING_BATTLING_AND_ONBOARD(3028),
 	// Message: $s1 acquired the attached item to your mail.
 	S1_ACQUIRED_THE_ATTACHED_ITEM_TO_YOUR_MAIL(3072),
 	// Message: You have acquired $s2 $s1.
@@ -2689,8 +2660,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_CREST_WAS_SUCCESSFULLY_REGISTERED(3140),
 	// Message: This item cannot be used because you are already participating in
 	// the quest that can be started with this item.
-	THIS_ITEM_CANNOT_BE_USED_BECAUSE_YOU_ARE_ALREADY_PARTICIPATING_IN_THE_QUEST_THAT_CAN_BE_STARTED_WITH_THIS_ITEM(
-																													3145),
+	THIS_ITEM_CANNOT_BE_USED_BECAUSE_YOU_ARE_ALREADY_PARTICIPATING_IN_THE_QUEST_THAT_CAN_BE_STARTED_WITH_THIS_ITEM(3145),
 	// Message: You have requested a couple action with $c1.
 	YOU_HAVE_REQUESTED_A_COUPLE_ACTION_WITH_C1(3150),
 	// Message: $c1 is set to refuse duel requests and cannot receive a duel
@@ -2721,8 +2691,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: The total number of matches that can be entered in 1 week is 60
 	// class irrelevant individual matches, 30 specific matches, and 10 team
 	// matches.
-	THE_TOTAL_NUMBER_OF_MATCHES_THAT_CAN_BE_ENTERED_IN_1_WEEK_IS_60_CLASS_IRRELEVANT_INDIVIDUAL_MATCHES_30_SPECIFIC_MATCHES_AND_10_TEAM_MATCHES(
-																																				3225),
+	THE_TOTAL_NUMBER_OF_MATCHES_THAT_CAN_BE_ENTERED_IN_1_WEEK_IS_60_CLASS_IRRELEVANT_INDIVIDUAL_MATCHES_30_SPECIFIC_MATCHES_AND_10_TEAM_MATCHES(3225),
 	// Message: You cannot move while speaking to an NPC. One moment please.
 	YOU_CANNOT_MOVE_WHILE_SPEAKING_TO_AN_NPC(3226),
 	// Message: MP became 0 and the Arcane Shield is disappearing.
@@ -2732,8 +2701,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: You have $s1 match(es) remaining that you can participate in this
 	// week ($s2 1 vs 1 Class matches, $s3 1 vs 1 matches, & $s4 3 vs 3 Team
 	// matches).
-	YOU_HAVE_S1_MATCHES_REMAINING_THAT_YOU_CAN_PARTICIPATE_IN_THIS_WEEK_S2_1_VS_1_CLASS_MATCHES_S3_1_VS_1_MATCHES__S4_3_VS_3_TEAM_MATCHES(
-																																			3261),
+	YOU_HAVE_S1_MATCHES_REMAINING_THAT_YOU_CAN_PARTICIPATE_IN_THIS_WEEK_S2_1_VS_1_CLASS_MATCHES_S3_1_VS_1_MATCHES__S4_3_VS_3_TEAM_MATCHES(3261),
 	// Message: There are $s2 seconds remaining for $s1's re-use time. It is reset
 	// every day at 6:30 AM.
 	THERE_ARE_S2_SECONDS_REMAINING_FOR_S1S_REUSE_TIME(3263),
@@ -2754,8 +2722,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: The angel Nevit has blessed you from above. You are imbued with full
 	// Vitality as well as a Vitality Replenishing effect. And should you die, you
 	// will not lose Exp!
-	THE_ANGEL_NEVIT_HAS_BLESSED_YOU_FROM_ABOVE_YOU_ARE_IMBUED_WITH_FULL_VITALITY_AS_WELL_AS_A_VITALITY_REPLENISHING_EFFECT(
-																															3266),
+	THE_ANGEL_NEVIT_HAS_BLESSED_YOU_FROM_ABOVE_YOU_ARE_IMBUED_WITH_FULL_VITALITY_AS_WELL_AS_A_VITALITY_REPLENISHING_EFFECT(3266),
 	// Message: You are starting to feel the effects of Nevit's Advent Blessing.
 	YOU_ARE_STARTING_TO_FEEL_THE_EFFECTS_OF_NEVITS_BLESSING(3267),
 	// Message: You are further infused with the blessings of Nevit! Continue to
@@ -2816,8 +2783,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: Congratulations! You will now graduate from the Clan Academy and
 	// leave your current clan. As a graduate of the academy, you can immediately
 	// join a clan as a regular member without being subject to any penalties.
-	CONGRATULATIONS_YOU_WILL_NOW_GRADUATE_FROM_THE_CLAN_ACADEMY_AND_LEAVE_YOUR_CURRENT_CLAN_AS_A_GRADUATE_OF_THE_ACADEMY_YOU_CAN_IMMEDIATELY_JOIN_A_CLAN_AS_A_REGULAR_MEMBER_WITHOUT_BEING_SUBJECT_TO_ANY_PENALTIES(
-																																																					3430),
+	CONGRATULATIONS_YOU_WILL_NOW_GRADUATE_FROM_THE_CLAN_ACADEMY_AND_LEAVE_YOUR_CURRENT_CLAN_AS_A_GRADUATE_OF_THE_ACADEMY_YOU_CAN_IMMEDIATELY_JOIN_A_CLAN_AS_A_REGULAR_MEMBER_WITHOUT_BEING_SUBJECT_TO_ANY_PENALTIES(3430),
 	// Message: Stopped searching the party.
 	STOPPED_SEARCHING_THE_PARTY(3453),
 	// Message: $c1 used $s3 on $c2.
@@ -2841,8 +2807,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_MUST_HAVE_RIGHTS_TO_A_CLAN_HALL_AUCTION_IN_ORDER_TO_MAKE_A_BID_FOR_PROVISIONAL_CLAN_HALL(3472),
 	// Message: Items that cannot be exchanged/dropped/use a private store or that
 	// are for a limited period/augmenting cannot be registered.
-	ITEMS_THAT_CANNOT_BE_EXCHANGEDDROPPEDUSE_A_PRIVATE_STORE_OR_THAT_ARE_FOR_A_LIMITED_PERIODAUGMENTING_CANNOT_BE_REGISTERED(
-																																3480),
+	ITEMS_THAT_CANNOT_BE_EXCHANGEDDROPPEDUSE_A_PRIVATE_STORE_OR_THAT_ARE_FOR_A_LIMITED_PERIODAUGMENTING_CANNOT_BE_REGISTERED(3480),
 	// Message: If the weight is 80% or more and the inventory number is 90% or
 	// more, purchase/cancellation is not possible.
 	IF_THE_WEIGHT_IS_80_OR_MORE_AND_THE_INVENTORY_NUMBER_IS_90_OR_MORE_PURCHASECANCELLATION_IS_NOT_POSSIBLE(3481),
@@ -2877,8 +2842,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_PLAYER_WHO_WAS_INVITED_REJECTED_THE_INVITATION_PLEASE_REGISTER_AGAIN(3512),
 	// Message: Waiting list registration is cancelled because the cursed sword is
 	// being used or the status is in a chaotic state.
-	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_THE_CURSED_SWORD_IS_BEING_USED_OR_THE_STATUS_IS_IN_A_CHAOTIC_STATE(
-																														3513),
+	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_THE_CURSED_SWORD_IS_BEING_USED_OR_THE_STATUS_IS_IN_A_CHAOTIC_STATE(3513),
 	// Message: Waiting list registration is cancelled because you are in a duel.
 	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_YOU_ARE_IN_A_DUEL(3514),
 	// Message: Waiting list registration is cancelled because you are currently
@@ -2886,16 +2850,13 @@ public enum SystemMsg implements IBroadcastPacket
 	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_YOU_ARE_CURRENTLY_PARTICIPATING_IN_OLYMPIAD(3515),
 	// Message: Waiting list registration is cancelled because you are currently
 	// participating in Block Checker/Coliseum/Kratei's Cube.
-	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_YOU_ARE_CURRENTLY_PARTICIPATING_IN_BLOCK_CHECKERCOLISEUMKRATEIS_CUBE(
-																														3516),
+	WAITING_LIST_REGISTRATION_IS_CANCELLED_BECAUSE_YOU_ARE_CURRENTLY_PARTICIPATING_IN_BLOCK_CHECKERCOLISEUMKRATEIS_CUBE(3516),
 	// Message: You cannot register in the waiting list while being inside of a
 	// battleground (castle siege/fortress siege/territory war).
-	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_BEING_INSIDE_OF_A_BATTLEGROUND_CASTLE_SIEGEFORTRESS_SIEGETERRITORY_WAR(
-																															3517),
+	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_BEING_INSIDE_OF_A_BATTLEGROUND_CASTLE_SIEGEFORTRESS_SIEGETERRITORY_WAR(3517),
 	// Message: Waiting list registration is not allowed while the cursed sword is
 	// being used or the status is in a chaotic state.
-	WAITING_LIST_REGISTRATION_IS_NOT_ALLOWED_WHILE_THE_CURSED_SWORD_IS_BEING_USED_OR_THE_STATUS_IS_IN_A_CHAOTIC_STATE(
-																														3518),
+	WAITING_LIST_REGISTRATION_IS_NOT_ALLOWED_WHILE_THE_CURSED_SWORD_IS_BEING_USED_OR_THE_STATUS_IS_IN_A_CHAOTIC_STATE(3518),
 	// Message: You cannot register in the waiting list during a duel.
 	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_DURING_A_DUEL(3519),
 	// Message: You cannot register in the waiting list while participating in
@@ -2906,8 +2867,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_PARTICIPATING_IN_BLOCK_CHECKERCOLISEUMKRATEIS_CUBE(3521),
 	// Message: You cannot register in the waiting list while being inside of a
 	// battleground (castle siege/fortress siege/territory war).
-	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_BEING_INSIDE_OF_A_BATTLEGROUND_CASTLE_SIEGEFORTRESS_SIEGETERRITORY_WAR2(
-																															3522),
+	YOU_CANNOT_REGISTER_IN_THE_WAITING_LIST_WHILE_BEING_INSIDE_OF_A_BATTLEGROUND_CASTLE_SIEGEFORTRESS_SIEGETERRITORY_WAR2(3522),
 	// Message: Looking for a player who will replace the selected party member.
 	LOOKING_FOR_A_PLAYER_WHO_WILL_REPLACE_THE_SELECTED_PARTY_MEMBER(3523),
 	// Message: Vitality effect is applied. There's $s1 vitality effect left that
@@ -2929,8 +2889,7 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_USE_SKILLS_IN_THE_CORRESPONDING_REGION(3648),
 	// Message: You cannot awaken due to weight limits. Please try awaken again
 	// after increasing the allowed weight by organizing the inventory.
-	YOU_CANNOT_AWAKEN_DUE_TO_WEIGHT_LIMITS_PLEASE_TRY_AWAKEN_AGAIN_AFTER_INCREASING_THE_ALLOWED_WEIGHT_BY_ORGANIZING_THE_INVENTORY(
-																																	3652),
+	YOU_CANNOT_AWAKEN_DUE_TO_WEIGHT_LIMITS_PLEASE_TRY_AWAKEN_AGAIN_AFTER_INCREASING_THE_ALLOWED_WEIGHT_BY_ORGANIZING_THE_INVENTORY(3652),
 	// Message: You cannot use Sayune while in a chaotic state.
 	YOU_CANNOT_USE_SAYUNE_WHILE_IN_A_CHAOTIC_STATE(3654),
 	// Message: You cannot awaken while you're transformed or riding.
@@ -2991,13 +2950,11 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_INVITE_A_FRIEND_OR_PARTY_WHILE_PARTICIPATING_IN_THE_CEREMONY_OF_CHAOS(3789),
 	// Message: You have obtained the first Energy of Destruction. You can obtain up
 	// to 2 of these a day, and can begin obtaining them again at 6:30am every day.
-	YOU_HAVE_OBTAINED_THE_FIRST_ENERGY_OF_DESTRUCTION_YOU_CAN_OBTAIN_UP_TO_2_OF_THESE_A_DAY_AND_CAN_BEGIN_OBTAINING_THEM_AGAIN_AT_630AM_EVERY_DAY(
-																																					3791),
+	YOU_HAVE_OBTAINED_THE_FIRST_ENERGY_OF_DESTRUCTION_YOU_CAN_OBTAIN_UP_TO_2_OF_THESE_A_DAY_AND_CAN_BEGIN_OBTAINING_THEM_AGAIN_AT_630AM_EVERY_DAY(3791),
 	// Message: You have obtained the second Energy of Destruction. You can obtain
 	// up to 2 of these a day, and can begin obtaining them again at 6:30am every
 	// day.
-	YOU_HAVE_OBTAINED_THE_SECOND_ENERGY_OF_DESTRUCTION_YOU_CAN_OBTAIN_UP_TO_2_OF_THESE_A_DAY_AND_CAN_BEGIN_OBTAINING_THEM_AGAIN_AT_630AM_EVERY_DAY(
-																																					3792),
+	YOU_HAVE_OBTAINED_THE_SECOND_ENERGY_OF_DESTRUCTION_YOU_CAN_OBTAIN_UP_TO_2_OF_THESE_A_DAY_AND_CAN_BEGIN_OBTAINING_THEM_AGAIN_AT_630AM_EVERY_DAY(3792),
 	// Message: You have obtained $s1 Battle Mark(s) during this round of the
 	// Ceremony of Chaos.
 	YOU_HAVE_OBTAINED_S1_BATTLE_MARKS_DURING_THIS_ROUND_OF_THE_CEREMONY_OF_CHAOS(3794),
@@ -3018,8 +2975,7 @@ public enum SystemMsg implements IBroadcastPacket
 	A_CLAN_WAR_DECLARED_BY_CLAN_S1_WAS_CANCELLED(3814),
 	// Message: A clan member of $s1 was killed by your clan member. If your clan
 	// kills $s2 members of Clan $s1, a clan war with Clan $s1 will start.
-	A_CLAN_MEMBER_OF_S1_WAS_KILLED_BY_YOUR_CLAN_MEMBER_IF_YOUR_CLAN_KILLS_S2_MEMBERS_OF_CLAN_S1_A_CLAN_WAR_WITH_CLAN_S1_WILL_START(
-																																	3815),
+	A_CLAN_MEMBER_OF_S1_WAS_KILLED_BY_YOUR_CLAN_MEMBER_IF_YOUR_CLAN_KILLS_S2_MEMBERS_OF_CLAN_S1_A_CLAN_WAR_WITH_CLAN_S1_WILL_START(3815),
 	// Message: You cannot participate in the Ceremony of Chaos as a flying
 	// transformed object.
 	YOU_CANNOT_PARTICIPATE_IN_THE_CEREMONY_OF_CHAOS_AS_A_FLYING_TRANSFORMED_OBJECT(3853),
@@ -3039,8 +2995,7 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: Entered into waiting list. Name is automatically deleted after 30
 	// days. If "Delete from waiting list" is used, you cannot enter names into the
 	// waiting list for 5 minutes.
-	ENTERED_INTO_WAITING_LIST_NAME_IS_AUTOMATICALLY_DELETED_AFTER_30_DAYS_IF_DELETE_FROM_WAITING_LIST_IS_USED_YOU_CANNOT_ENTER_NAMES_INTO_THE_WAITING_LIST_FOR_5_MINUTES(
-																																											4043),
+	ENTERED_INTO_WAITING_LIST_NAME_IS_AUTOMATICALLY_DELETED_AFTER_30_DAYS_IF_DELETE_FROM_WAITING_LIST_IS_USED_YOU_CANNOT_ENTER_NAMES_INTO_THE_WAITING_LIST_FOR_5_MINUTES(4043),
 	// Message: You cannot use the $s1 skill due to insufficient summon points.
 	YOU_CANNOT_USE_THE_S1_SKILL_DUE_TO_INSUFFICIENT_SUMMON_POINTS(4085),
 	// Message: This quest cannot be deleted.
@@ -3270,13 +3225,11 @@ public enum SystemMsg implements IBroadcastPacket
 	YOU_CANNOT_EXTRACT_FROM_A_MODIFIED_ITEM(6106),
 	// Message: The number of Vitality effects usable during this period has
 	// increased by $s1. You can currently use $s2 Vitality items.
-	THE_NUMBER_OF_VITALITY_EFFECTS_USABLE_DURING_THIS_PERIOD_HAS_INCREASED_BY_S1_YOU_CAN_CURRENTLY_USE_S2_VITALITY_ITEMS(
-																															6111),
+	THE_NUMBER_OF_VITALITY_EFFECTS_USABLE_DURING_THIS_PERIOD_HAS_INCREASED_BY_S1_YOU_CAN_CURRENTLY_USE_S2_VITALITY_ITEMS(6111),
 	// Message: You have acquired a clan hall of higher value than the Provisional
 	// Clan Hall. #The Provisional Clan Hall ownership will automatically be
 	// forfeited.
-	YOU_HAVE_ACQUIRED_A_CLAN_HALL_OF_HIGHER_VALUE_THAN_THE_PROVISIONAL_CLAN_HALL_THE_PROVISIONAL_CLAN_HALL_OWNERSHIP_WILL_AUTOMATICALLY_BE_FORFEITED(
-																																						6136),
+	YOU_HAVE_ACQUIRED_A_CLAN_HALL_OF_HIGHER_VALUE_THAN_THE_PROVISIONAL_CLAN_HALL_THE_PROVISIONAL_CLAN_HALL_OWNERSHIP_WILL_AUTOMATICALLY_BE_FORFEITED(6136),
 	// Message: You have completed training in the Royal Training Camp, and obtained
 	// $s1 XP and $s2 SP.
 	YOU_HAVE_COMPLETED_TRAINING_IN_THE_ROYAL_TRAINING_CAMP_AND_OBTAINED_S1_XP_AND_S2_SP(6138),
@@ -3337,8 +3290,7 @@ public enum SystemMsg implements IBroadcastPacket
 	THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_BECAUSE_THE_INVENTORY_WEIGHTQUANTITY_LIMIT_HAS_BEEN_EXCEEDED(6178),
 	// Message: Due to a system error, the Attendance Reward cannot be received.
 	// Please try again later by going to Menu > Attendance Check.
-	DUE_TO_A_SYSTEM_ERROR_THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_PLEASE_TRY_AGAIN_LATER_BY_GOING_TO_MENU__ATTENDANCE_CHECK(
-																																6179),
+	DUE_TO_A_SYSTEM_ERROR_THE_ATTENDANCE_REWARD_CANNOT_BE_RECEIVED_PLEASE_TRY_AGAIN_LATER_BY_GOING_TO_MENU__ATTENDANCE_CHECK(6179),
 	// Message: You can no longer receive Attendance Check rewards.
 	YOU_CAN_NO_LONGER_RECEIVE_ATTENDANCE_CHECK_REWARDS_(6182),
 	// Message: You cannot bookmark this location because you do not have a My
@@ -3565,13 +3517,13 @@ public enum SystemMsg implements IBroadcastPacket
 	// Message: Item creation is not possible while engaged in a trade.
 	ITEM_CREATION_IS_NOT_POSSIBLE_WHILE_ENGAGED_IN_A_TRADE(1125),
 	S1_13747(13747),
-	S_13749(13749),	
+	S_13749(13749),
 	PURCHASE_S1(13404),
 	TRYING_ON_STATE_LASTS_FOR_ONLY_5_SECONDS_WHEN_A_CHARACTERS_STATE_CHANGES_IT_CAN_BE_CANCELLED(1157),
 	S_19020(19020),
 	S_13090(13090),
 	S_13844(13844),
-	S1_19021(19021), 
+	S1_19021(19021),
 	S1_19022(19022),
 	FAILED_TO_DISABLE_ATTACK_TARGET(563),
 	FAILED_TO_CHANGE_ATTACK_TARGET(564),
@@ -3586,10 +3538,10 @@ public enum SystemMsg implements IBroadcastPacket
 	S_13581(13581),
 	S_18994(18994),
 	S_18995(18995),
-	
+
 	// Message: You need a(n) $s1.
 	YOU_NEED_AN_S1(2960),
-	
+
 	// Message: ROUND $s1
 	ROUND_S1(5184),
 	// Message: +hidden msg+ Start Olympiad
@@ -3615,33 +3567,33 @@ public enum SystemMsg implements IBroadcastPacket
 	B_ABILITIES_ARE_IN_USE(13851),
 	//"Currently unavailable for purchase. You can buy the Season Pass' additional rewards only until 6:30 a.m. of the season's last day."
 	CURRENTLY_UNAVAILABLE_FOR_PURCHASE_YOU_CAN_BUY_THE_SEASON_PASS_ADDITIONAL_REWARDS_ONLY_UNTIL_6_30_A_M_OF_THE_SEASON_S_LAST_DAY(6220),
-	
+
 	//"Your inventory's weight/limit has been exceeded so you can't receive the reward. Please free up some space and try again."
 	YOUR_INVENTORY_S_WEIGHT_LIMIT_HAS_BEEN_EXCEEDED_SO_YOU_CAN_T_RECEIVE_THE_REWARD_PLEASE_FREE_UP_SOME_SPACE_AND_TRY_AGAIN(6216),
-	
+
 	//"Sayha's Grace sustention effect of the Season Pass is activated. Available Sayha's Grace sustention time is running."
 	SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_IS_ACTIVATED_AVAILABLE_SAYHA_S_GRACE_SUSTENTION_TIME_IS_RUNNING(6212),
-	
+
 	//"Unable to activate. You can use Sayha's Grace sustention effect of the Season Pass only if you have at least 35,000 Sayha's Grace points."
 	UNABLE_TO_ACTIVATE_YOU_CAN_USE_SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_ONLY_IF_YOU_HAVE_AT_LEAST_35_000_SAYHA_S_GRACE_POINTS(6213),
-	
+
 	//"Sayha's Grace sustention effect of the Season Pass has been deactivated. The sustention time you have does not decrease."
 	SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_HAS_BEEN_DEACTIVATED_THE_SUSTENTION_TIME_YOU_HAVE_DOES_NOT_DECREASE(6214),
 	// Message: System error. Please refresh and try again.
 	SYSTEM_ERROR_PLEASE_REFRESH_AND_TRY_AGAIN(13686),
-	
+
 	// Message: Item to be traded does not exist. 
 	ITEM_TO_BE_TRADED_DOES_NOT_EXIST(4010),
 	// Message: You have no open My Teleports slots.
 	YOU_HAVE_NO_OPEN_MY_TELEPORTS_SLOTS(2398),
-	
+
 	YOU_VE_OBTAINED_S1_S2_X_S3(13675),
 	YOU_VE_OBTAINED_S1_S2_4(13676),
 	YOU_VE_LOST_S1_S2_X_S3(13677),
 	YOU_VE_LOST_S1_S2_2(13678),
 	// Message: Item out of stock.
 	ITEM_OUT_OF_STOCK(350),
-	THE_ITEM_IS_NOT_FOUND(3373),//Предмет не найден.
+	THE_ITEM_IS_NOT_FOUND(3373), //Предмет не найден.
 	//"You received $s1 Sayha's Grace sustention points."
 	YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS(6219),;
 
@@ -3653,22 +3605,22 @@ public enum SystemMsg implements IBroadcastPacket
 	{
 		_id = i;
 
-		if (name().contains("S4") || name().contains("C4"))
+		if(name().contains("S4") || name().contains("C4"))
 		{
 			_size = 4;
 			_message = null;
 		}
-		else if (name().contains("S3") || name().contains("C3"))
+		else if(name().contains("S3") || name().contains("C3"))
 		{
 			_size = 3;
 			_message = null;
 		}
-		else if (name().contains("S2") || name().contains("C2"))
+		else if(name().contains("S2") || name().contains("C2"))
 		{
 			_size = 2;
 			_message = null;
 		}
-		else if (name().contains("S1") || name().contains("C1"))
+		else if(name().contains("S1") || name().contains("C1"))
 		{
 			_size = 1;
 			_message = null;
@@ -3692,8 +3644,8 @@ public enum SystemMsg implements IBroadcastPacket
 
 	public static SystemMsg valueOf(int id)
 	{
-		for (SystemMsg m : values())
-			if (m.getId() == id)
+		for(SystemMsg m : values())
+			if(m.getId() == id)
 				return m;
 
 		throw new NoSuchElementException("Not find SystemMsg by id: " + id);
@@ -3702,7 +3654,7 @@ public enum SystemMsg implements IBroadcastPacket
 	@Override
 	public IClientOutgoingPacket packet(Player player)
 	{
-		if (_message == null)
+		if(_message == null)
 			throw new NoSuchElementException("Running SystemMsg.packet(Player), but message require arguments: " + name());
 
 		return _message;

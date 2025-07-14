@@ -34,9 +34,9 @@ public class ClanHallNpcSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeCl
 	public void stopEvent(boolean force)
 	{
 		Clan newOwner = getResidence().getOwner();
-		if (newOwner != null)
+		if(newOwner != null)
 		{
-			if (_oldOwner != newOwner)
+			if(_oldOwner != newOwner)
 			{
 				newOwner.broadcastToOnlineMembers(PlaySoundPacket.SIEGE_VICTORY);
 
@@ -60,7 +60,7 @@ public class ClanHallNpcSiegeEvent extends SiegeEvent<SiegeableClanHall, SiegeCl
 	@Override
 	public void processStep(Clan clan)
 	{
-		if (clan != null)
+		if(clan != null)
 			getResidence().changeOwner(clan);
 
 		stopEvent(true);

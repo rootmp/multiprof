@@ -18,15 +18,15 @@ public class ConditionPlayerCanUntransform extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (!env.character.isPlayer())
+		if(!env.character.isPlayer())
 			return !_val;
 
 		Player player = env.character.getPlayer();
-		if (!player.isTransformed())
+		if(!player.isTransformed())
 			return !_val;
 
 		// Нельзя отменять летающую трансформу слишком высоко над землей
-		if (player.isInFlyingTransform() && Math.abs(player.getZ() - player.getLoc().correctGeoZ(player.getGeoIndex()).z) > 333)
+		if(player.isInFlyingTransform() && Math.abs(player.getZ() - player.getLoc().correctGeoZ(player.getGeoIndex()).z) > 333)
 			return !_val;
 
 		return _val;

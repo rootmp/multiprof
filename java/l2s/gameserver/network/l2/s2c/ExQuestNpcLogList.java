@@ -25,13 +25,13 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 		_logList = new ArrayList<int[]>();
 
 		List<QuestNpcLogInfo> vars = state.getQuest().getNpcLogList(cond);
-		if (vars != null)
+		if(vars != null)
 		{
-			for (QuestNpcLogInfo entry : vars)
+			for(QuestNpcLogInfo entry : vars)
 			{
 				int[] i = new int[3];
 				int npcStringId = entry.getNpcStringId();
-				if (npcStringId == 0)
+				if(npcStringId == 0)
 				{
 					i[0] = entry.getNpcIds()[0] + 1000000;
 					i[1] = 0;
@@ -47,13 +47,13 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 		}
 
 		vars = state.getQuest().getItemsLogList(cond);
-		if (vars != null)
+		if(vars != null)
 		{
-			for (QuestNpcLogInfo entry : vars)
+			for(QuestNpcLogInfo entry : vars)
 			{
 				int[] i = new int[3];
 				int npcStringId = entry.getNpcStringId();
-				if (npcStringId == 0)
+				if(npcStringId == 0)
 				{
 					i[0] = entry.getNpcIds()[0];
 					i[1] = 0;
@@ -64,7 +64,7 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 					i[1] = 1;
 				}
 
-				for (int itemId : entry.getNpcIds())
+				for(int itemId : entry.getNpcIds())
 				{
 					i[2] += (int) state.getQuestItemsCount(itemId);
 				}
@@ -75,12 +75,12 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 		}
 
 		vars = state.getQuest().getCustomLogList(cond);
-		if (vars != null)
+		if(vars != null)
 		{
-			for (QuestNpcLogInfo entry : vars)
+			for(QuestNpcLogInfo entry : vars)
 			{
 				int npcStringId = entry.getNpcStringId();
-				if (npcStringId == 0)
+				if(npcStringId == 0)
 				{
 					continue;
 				}
@@ -100,7 +100,7 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(_questId);
 		packetWriter.writeC(_logList.size());
-		for (int i = 0; i < _logList.size(); i++)
+		for(int i = 0; i < _logList.size(); i++)
 		{
 			int[] values = _logList.get(i);
 			packetWriter.writeD(values[0]);

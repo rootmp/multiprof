@@ -63,9 +63,9 @@ public class MatchingRoomManager
 	public List<Player> getWaitingList(int minLevel, int maxLevel, int[] classes)
 	{
 		List<Player> res = new ArrayList<Player>();
-		for (Player $member : _players)
-			if ($member.getLevel() >= minLevel && $member.getLevel() <= maxLevel)
-				if (classes.length == 0 || ArrayUtils.contains(classes, $member.getClassId().getId()))
+		for(Player $member : _players)
+			if($member.getLevel() >= minLevel && $member.getLevel() <= maxLevel)
+				if(classes.length == 0 || ArrayUtils.contains(classes, $member.getClassId().getId()))
 					res.add($member);
 
 		return res;
@@ -74,13 +74,13 @@ public class MatchingRoomManager
 	public List<MatchingRoom> getMatchingRooms(int type, int region, boolean allLevels, Player activeChar)
 	{
 		List<MatchingRoom> res = new ArrayList<MatchingRoom>();
-		for (MatchingRoom room : _holder[type]._rooms.valueCollection())
+		for(MatchingRoom room : _holder[type]._rooms.valueCollection())
 		{
-			if (region > 0 && room.getLocationId() != region)
+			if(region > 0 && room.getLocationId() != region)
 				continue;
-			else if (region == -2 && room.getLocationId() != MatchingRoomManager.getInstance().getLocation(activeChar))
+			else if(region == -2 && room.getLocationId() != MatchingRoomManager.getInstance().getLocation(activeChar))
 				continue;
-			if (!allLevels && (room.getMinLevel() > activeChar.getLevel() || room.getMaxLevel() < activeChar.getLevel()))
+			if(!allLevels && (room.getMinLevel() > activeChar.getLevel() || room.getMaxLevel() < activeChar.getLevel()))
 				continue;
 			res.add(room);
 		}
@@ -104,11 +104,11 @@ public class MatchingRoomManager
 
 	public int getLocation(Player player)
 	{
-		if (player == null)
+		if(player == null)
 			return 0;
 
 		RestartArea ra = MapRegionManager.getInstance().getRegionData(RestartArea.class, player);
-		if (ra != null)
+		if(ra != null)
 		{
 			RestartPoint rp = ra.getRestartPoint().get(player.getRace());
 			return rp.getBbs();

@@ -6,13 +6,12 @@ import java.util.Queue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import l2s.commons.text.StrTable;
-import l2s.gameserver.Config;
-import l2s.gameserver.geometry.Location;
-
 import gnu.trove.iterator.TIntIntIterator;
 import gnu.trove.map.hash.TIntIntHashMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.text.StrTable;
+import l2s.gameserver.Config;
+import l2s.gameserver.geometry.Location;
 
 public class PathFindBuffers
 {
@@ -28,20 +27,20 @@ public class PathFindBuffers
 	{
 		TIntIntHashMap config = new TIntIntHashMap();
 		String[] k;
-		for (String e : Config.PATHFIND_BUFFERS.split(";"))
-			if (!e.isEmpty() && (k = e.split("x")).length == 2)
+		for(String e : Config.PATHFIND_BUFFERS.split(";"))
+			if(!e.isEmpty() && (k = e.split("x")).length == 2)
 				config.put(Integer.valueOf(k[1]), Integer.valueOf(k[0]));
 
 		TIntIntIterator itr = config.iterator();
 
-		while (itr.hasNext())
+		while(itr.hasNext())
 		{
 			itr.advance();
 			int size = itr.key();
 			int count = itr.value();
 
 			PathFindBuffer[] buff = new PathFindBuffer[count];
-			for (int i = 0; i < count; i++)
+			for(int i = 0; i < count; i++)
 				buff[i] = new PathFindBuffer(size);
 
 			buffers.put(size, buff);
@@ -58,13 +57,12 @@ public class PathFindBuffers
 		{
 			PathFindBuffer buffer;
 			PathFindBuffer[] buff = buffers.get(mapSize);
-			if (buff != null)
+			if(buff != null)
 				buff = l2s.commons.lang.ArrayUtils.add(buff, buffer = new PathFindBuffer(mapSize));
 			else
 			{
-				buff = new PathFindBuffer[]
-				{
-					buffer = new PathFindBuffer(mapSize)
+				buff = new PathFindBuffer[] {
+						buffer = new PathFindBuffer(mapSize)
 				};
 				sizes = org.apache.commons.lang3.ArrayUtils.add(sizes, mapSize);
 				Arrays.sort(sizes);
@@ -85,8 +83,8 @@ public class PathFindBuffers
 		try
 		{
 			PathFindBuffer[] buff = buffers.get(mapSize);
-			for (PathFindBuffer buffer : buff)
-				if (!buffer.inUse)
+			for(PathFindBuffer buffer : buff)
+				if(!buffer.inUse)
 				{
 					buffer.inUse = true;
 					return buffer;
@@ -101,15 +99,15 @@ public class PathFindBuffers
 
 	public static PathFindBuffer alloc(int mapSize)
 	{
-		if (mapSize > MAX_MAP_SIZE)
+		if(mapSize > MAX_MAP_SIZE)
 			return null;
 		mapSize += STEP_MAP_SIZE;
-		if (mapSize < MIN_MAP_SIZE)
+		if(mapSize < MIN_MAP_SIZE)
 			mapSize = MIN_MAP_SIZE;
 
 		PathFindBuffer buffer = null;
-		for (int i = 0; i < sizes.length; i++)
-			if (sizes[i] >= mapSize)
+		for(int i = 0; i < sizes.length; i++)
+			if(sizes[i] >= mapSize)
 			{
 				mapSize = sizes[i];
 				buffer = get(mapSize);
@@ -117,10 +115,10 @@ public class PathFindBuffers
 			}
 
 		// Не найден свободный буффер, или буфферов под такой размер нет
-		if (buffer == null)
+		if(buffer == null)
 		{
-			for (int size = MIN_MAP_SIZE; size < MAX_MAP_SIZE; size += STEP_MAP_SIZE)
-				if (size >= mapSize)
+			for(int size = MIN_MAP_SIZE; size < MAX_MAP_SIZE; size += STEP_MAP_SIZE)
+				if(size >= mapSize)
 				{
 					mapSize = size;
 					buffer = create(mapSize);
@@ -160,7 +158,7 @@ public class PathFindBuffers
 			long overtime;
 			long time;
 
-			for (int size : sizes)
+			for(int size : sizes)
 			{
 				index++;
 				count = 0;
@@ -170,7 +168,7 @@ public class PathFindBuffers
 				success = 0;
 				overtime = 0;
 				time = 0;
-				for (PathFindBuffer buff : buffers.get(size))
+				for(PathFindBuffer buff : buffers.get(size))
 				{
 					count++;
 					uses += buff.totalUses;
@@ -195,7 +193,8 @@ public class PathFindBuffers
 			}
 
 			table.addTitle("Uses, total / playable  : " + totalUses + " / " + totalPlayable);
-			table.addTitle("Uses, total time / avg (ms) : " + totalTime + " / " + String.format("%1.3f", totalUses > 0 ? (double) totalTime / totalUses : 0));
+			table.addTitle("Uses, total time / avg (ms) : " + totalTime + " / "
+					+ String.format("%1.3f", totalUses > 0 ? (double) totalTime / totalUses : 0));
 		}
 		finally
 		{
@@ -226,16 +225,16 @@ public class PathFindBuffers
 			open = new PriorityQueue<GeoNode>(mapSize);
 			this.mapSize = mapSize;
 			nodes = new GeoNode[mapSize][mapSize];
-			for (int i = 0; i < nodes.length; i++)
-				for (int j = 0; j < nodes[i].length; j++)
+			for(int i = 0; i < nodes.length; i++)
+				for(int j = 0; j < nodes[i].length; j++)
 					nodes[i][j] = new GeoNode();
 		}
 
 		public void free()
 		{
 			open.clear();
-			for (int i = 0; i < nodes.length; i++)
-				for (int j = 0; j < nodes[i].length; j++)
+			for(int i = 0; i < nodes.length; i++)
+				for(int j = 0; j < nodes[i].length; j++)
 					nodes[i][j].free();
 		}
 	}
@@ -295,9 +294,9 @@ public class PathFindBuffers
 		@Override
 		public int compareTo(GeoNode o)
 		{
-			if (totalCost > o.totalCost)
+			if(totalCost > o.totalCost)
 				return 1;
-			if (totalCost < o.totalCost)
+			if(totalCost < o.totalCost)
 				return -1;
 			return 0;
 		}

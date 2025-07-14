@@ -30,13 +30,13 @@ public class FuncEnchant extends Func
 		int overenchantR3 = Math.max(0, enchant - 12);
 		boolean isBlessed = item.getTemplate().getQuality() == ItemQuality.BLESSED;
 
-		switch (stat)
+		switch(stat)
 		{
 			case SHIELD_DEFENCE:
 			case MAGIC_DEFENCE:
 			case POWER_DEFENCE:
 			{
-				switch (item.getTemplate().getGrade().getCrystalId())
+				switch(item.getTemplate().getGrade().getCrystalId())
 				{
 					case ItemTemplate.CRYSTAL_S:
 						env.value += enchant + overenchant * 6 * (isBlessed ? 1.6 : 1.0);
@@ -49,18 +49,18 @@ public class FuncEnchant extends Func
 
 			case MAX_HP:
 			{
-				if (env.character.isPlayer())
+				if(env.character.isPlayer())
 					env.value += EnchantHPBonusTable.getInstance().getHPBonus(env.character.getPlayer(), item) * (isBlessed ? 1.6 : 1.0); // TODO:
-																																			// [Bonux]
-																																			// Проверить
-																																			// на
-																																			// оффе.
+				// [Bonux]
+				// Проверить
+				// на
+				// оффе.
 				return;
 			}
 
 			case MAGIC_ATTACK:
 			{
-				switch (item.getTemplate().getGrade().getCrystalId())
+				switch(item.getTemplate().getGrade().getCrystalId())
 				{
 					case ItemTemplate.CRYSTAL_R:
 						env.value += 5 * (enchant + overenchant + overenchantR1 + overenchantR2 + overenchantR3) * (isBlessed ? 1.6 : 1.0);
@@ -90,57 +90,59 @@ public class FuncEnchant extends Func
 				ItemType itemType = item.getItemType();
 				boolean isBow = itemType == WeaponType.BOW || itemType == WeaponType.FIREARMS;
 				boolean isCrossbow = itemType == WeaponType.CROSSBOW || itemType == WeaponType.TWOHANDCROSSBOW;
-				boolean isSword = (itemType == WeaponType.DUALFIST || itemType == WeaponType.DUAL || itemType == WeaponType.BIGSWORD || itemType == WeaponType.SWORD || itemType == WeaponType.RAPIER || itemType == WeaponType.ANCIENTSWORD) && item.getTemplate().getBodyPart() == ItemTemplate.SLOT_LR_HAND;
+				boolean isSword = (itemType == WeaponType.DUALFIST || itemType == WeaponType.DUAL || itemType == WeaponType.BIGSWORD
+						|| itemType == WeaponType.SWORD || itemType == WeaponType.RAPIER || itemType == WeaponType.ANCIENTSWORD)
+						&& item.getTemplate().getBodyPart() == ItemTemplate.SLOT_LR_HAND;
 				boolean isDualBlunt = itemType == WeaponType.DUALBLUNT;
-				switch (item.getTemplate().getGrade().getCrystalId())
+				switch(item.getTemplate().getGrade().getCrystalId())
 				{
 					case ItemTemplate.CRYSTAL_R:
-						if (isBow)
+						if(isBow)
 							env.value += 12 * (enchant + overenchant + overenchantR1 + overenchantR2 + overenchantR3) * (isBlessed ? 1.6 : 1.0);
-						else if (isSword || isCrossbow)
+						else if(isSword || isCrossbow)
 							env.value += 7 * (enchant + overenchant + overenchantR1 + overenchantR2 + overenchantR3) * (isBlessed ? 1.6 : 1.0);
 						else
 							env.value += 6 * (enchant + overenchant + overenchantR1 + overenchantR2 + overenchantR3) * (isBlessed ? 1.6 : 1.0);
 						break;
 					case ItemTemplate.CRYSTAL_S:
-						if (isBow)
+						if(isBow)
 							env.value += 10 * (enchant + overenchant * 3);
-						else if (isCrossbow)
+						else if(isCrossbow)
 							env.value += 7 * (enchant + overenchant * 3);
-						else if (isSword)
+						else if(isSword)
 							env.value += 6 * (enchant + overenchant * 3);
 						else
 							env.value += 5 * (enchant + overenchant * 3);
 						break;
 					case ItemTemplate.CRYSTAL_A:
-						if (isBow)
+						if(isBow)
 							env.value += 8 * (enchant + overenchant);
-						else if (isSword)
+						else if(isSword)
 							env.value += 5 * (enchant + overenchant);
 						else
 							env.value += 4 * (enchant + overenchant);
 						break;
 					case ItemTemplate.CRYSTAL_B:
-						if (isBow)
+						if(isBow)
 							env.value += 8 * (enchant + overenchant);
-						else if (isSword)
+						else if(isSword)
 							env.value += 5 * (enchant + overenchant);
 						else
 							env.value += 4 * (enchant + overenchant);
 						break;
 					case ItemTemplate.CRYSTAL_C:
-						if (isBow)
+						if(isBow)
 							env.value += 8 * (enchant + overenchant);
-						else if (isSword)
+						else if(isSword)
 							env.value += 5 * (enchant + overenchant);
 						else
 							env.value += 4 * (enchant + overenchant);
 						break;
 					case ItemTemplate.CRYSTAL_D:
 					case ItemTemplate.CRYSTAL_NONE:
-						if (isBow)
+						if(isBow)
 							env.value += 8 * (enchant + overenchant);
-						else if (isSword)
+						else if(isSword)
 							env.value += 5 * (enchant + overenchant);
 						else
 							env.value += 4 * (enchant + overenchant);

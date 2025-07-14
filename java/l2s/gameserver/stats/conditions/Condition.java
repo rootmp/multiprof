@@ -22,14 +22,12 @@ public abstract class Condition
 
 	public final boolean test(Env env)
 	{
-		if (env.character != null)
+		if(env.character != null)
 		{
-			for (Event event : env.character.getEvents())
+			for(Event event : env.character.getEvents())
 			{
-				if (!event.checkCondition(env.character, getClass()))
-				{
-					return false;
-				}
+				if(!event.checkCondition(env.character, getClass()))
+				{ return false; }
 			}
 		}
 		return testImpl(env);

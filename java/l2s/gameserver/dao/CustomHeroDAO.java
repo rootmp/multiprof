@@ -49,7 +49,7 @@ public class CustomHeroDAO
 			statement.setInt(1, (int) (System.currentTimeMillis() / 1000L));
 			statement.execute();
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CustomHeroDAO:deleteExpiredHeroes()", e);
 		}
@@ -69,12 +69,12 @@ public class CustomHeroDAO
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.prepareStatement("SELECT * FROM custom_heroes");
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				_heroes.put(rset.getInt("hero_id"), rset.getInt("time"));
 			}
 		}
-		catch (final Exception e)
+		catch(final Exception e)
 		{
 			_log.error("CharacterVariablesDAO:loadCustomHeroes()", e);
 		}
@@ -87,7 +87,7 @@ public class CustomHeroDAO
 
 	public void addCustomHero(int objectId, int time)
 	{
-		if (time != -1 && _heroes.get(objectId) > time)
+		if(time != -1 && _heroes.get(objectId) > time)
 			return;
 
 		Connection con = null;
@@ -100,7 +100,7 @@ public class CustomHeroDAO
 			statement.setInt(2, time);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterVariablesDAO:addCustomHero(int,int)", e);
 		}
@@ -113,7 +113,7 @@ public class CustomHeroDAO
 
 	public void removeCustomHero(int objectId)
 	{
-		if (_heroes.containsKey(objectId) || Hero.getInstance().isHero(objectId))
+		if(_heroes.containsKey(objectId) || Hero.getInstance().isHero(objectId))
 			return;
 
 		Connection con = null;
@@ -125,9 +125,8 @@ public class CustomHeroDAO
 			statement.setInt(1, objectId);
 			statement.execute();
 		}
-		catch (Exception e)
-		{
-		}
+		catch(Exception e)
+		{}
 		finally
 		{
 			DbUtils.closeQuietly(con, statement);
@@ -138,7 +137,7 @@ public class CustomHeroDAO
 	public boolean isCustomHero(int objectId)
 	{
 		int time = _heroes.get(objectId);
-		if (time == -1 || time > (System.currentTimeMillis() / 1000L))
+		if(time == -1 || time > (System.currentTimeMillis() / 1000L))
 			return true;
 
 		return false;
@@ -152,10 +151,10 @@ public class CustomHeroDAO
 	public int[] getActiveHeroes()
 	{
 		IntSet result = new HashIntSet();
-		for (IntIntPair entry : _heroes.entrySet())
+		for(IntIntPair entry : _heroes.entrySet())
 		{
 			int time = entry.getValue();
-			if (time == -1 || time > (System.currentTimeMillis() / 1000L))
+			if(time == -1 || time > (System.currentTimeMillis() / 1000L))
 				result.add(entry.getKey());
 		}
 		return result.toArray();

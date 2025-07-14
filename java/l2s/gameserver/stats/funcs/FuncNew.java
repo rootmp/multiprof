@@ -25,11 +25,11 @@ public class FuncNew extends Func
 	@Override
 	public void calc(Env env, StatModifierType modifierType)
 	{
-		if (_dependStat != null)
+		if(_dependStat != null)
 		{
-			if (modifierType == null || modifierType == StatModifierType.DIFF)
+			if(modifierType == null || modifierType == StatModifierType.DIFF)
 			{
-				switch (_dependStat)
+				switch(_dependStat)
 				{
 					case POWER_DEFENCE:
 						env.value += env.character.getPDef(env.target) * 0.01 * value;
@@ -52,9 +52,9 @@ public class FuncNew extends Func
 				}
 			}
 		}
-		else if (_modifierType == modifierType)
+		else if(_modifierType == modifierType)
 		{
-			switch (_modifierType)
+			switch(_modifierType)
 			{
 				case DIFF:
 				case PER:
@@ -62,9 +62,9 @@ public class FuncNew extends Func
 					break;
 			}
 		}
-		else if (modifierType == null)
+		else if(modifierType == null)
 		{
-			switch (_modifierType)
+			switch(_modifierType)
 			{
 				case DIFF:
 					env.value += value;

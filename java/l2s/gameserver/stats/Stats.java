@@ -39,7 +39,7 @@ public enum Stats
 
 	POWER_ATTACK_WEAPON("pAtkWeapon"),
 	MAGIC_ATTACK_WEAPON("mAtkWeapon"),
-	
+
 	RUN_SPEED("runSpd"),
 
 	POWER_DEFENCE("pDef"),
@@ -49,20 +49,20 @@ public enum Stats
 	POWER_ATTACK_SPEED("pAtkSpd"),
 	MAGIC_ATTACK_SPEED("mAtkSpd"),
 	MAGIC_ATTACK_BY_PHYSIC("mAtkByPAtk"), // прибавка в %
-											// к м.атаке в
-											// зависимости
-											// от количества
-											// физ.атаки
-											// (<add
-											// stat="mAtkByPAtk"
-											// value="#value"/>)
+	// к м.атаке в
+	// зависимости
+	// от количества
+	// физ.атаки
+	// (<add
+	// stat="mAtkByPAtk"
+	// value="#value"/>)
 
 	MAGIC_REUSE_RATE("mReuse"),
 	PHYSIC_REUSE_RATE("pReuse"),
 	MUSIC_REUSE_RATE("musicReuse"),
 	ATK_REUSE("atkReuse"),
 	BASE_P_ATK_SPD("basePAtkSpd"), // тоже самое что и у параметров без base, но тут прибавка дается именно к
-									// базовому значению, без учета всяких модификаторов
+	// базовому значению, без учета всяких модификаторов
 	BASE_M_ATK_SPD("baseMAtkSpd"),
 
 	P_EVASION_RATE("pEvasRate"),
@@ -71,34 +71,34 @@ public enum Stats
 	M_ACCURACY_COMBAT("mAccCombat"),
 
 	BASE_P_CRITICAL_RATE("basePCritRate", 0., Double.POSITIVE_INFINITY), // static crit rate. Use it to ADD some crit
-																			// points. Sample: <add order="0x40"
-																			// stat="baseCrit" val="27.4" />
+	// points. Sample: <add order="0x40"
+	// stat="baseCrit" val="27.4" />
 	BASE_M_CRITICAL_RATE("baseMCritRate", 0., Double.POSITIVE_INFINITY),
 
 	P_CRITICAL_RATE("pCritRate", 0., Double.POSITIVE_INFINITY, 100), // dynamic crit rate. Use it to MULTIPLE crit for
-																		// 1.3, 1.5 etc. Sample: <add
-																		// order="0x40" stat="rCrit" val="50" /> =
-																		// (x1.5)
+	// 1.3, 1.5 etc. Sample: <add
+	// order="0x40" stat="rCrit" val="50" /> =
+	// (x1.5)
 	M_CRITICAL_RATE("mCritRate", 0., Double.POSITIVE_INFINITY, 100),
 	M_CRITICAL_RATE_FROM_P_CRITICAL_RATE("mCritRateFromPcritRate", 0., Double.POSITIVE_INFINITY, 100),
 
 	P_CRIT_DAMAGE_RECEPTIVE("pCritDamRcpt", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 100.), // отвечает за
-																										// получаемый
-																										// крит урон
+	// получаемый
+	// крит урон
 	P_SKILL_CRIT_DAMAGE_RECEPTIVE("pSkillCritDamRcpt", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 100.), // отвечает
-																													// за
-																													// получаемый
-																													// крит
-																													// урон
-																													// от
-																													// физ
-																													// скилов
+	// за
+	// получаемый
+	// крит
+	// урон
+	// от
+	// физ
+	// скилов
 	M_CRIT_DAMAGE_RECEPTIVE("mCritDamRcpt", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY), // тотвечает за
-																									// получаемый крит
-																									// урон от магии
+	// получаемый крит
+	// урон от магии
 	P_CRIT_CHANCE_RECEPTIVE("pCritChanceRcpt", 10., 190., 100.), // отвечает за шанс получить крит урон
 	P_SKILL_CRIT_CHANCE_RECEPTIVE("pSkillCritChanceRcpt", 10., 190., 100.), // отвечает за шанс получить крит урон от
-																			// физ скилов
+	// физ скилов
 	M_CRIT_CHANCE_RECEPTIVE("mCritChanceRcpt", 10., 190., 100.), // отвечает за шанс получить крит урон от магии
 
 	P_SKILL_CRIT_RATE_DEX_DEPENDENCE("p_skill_crit_rate_dex_dependence", 0., 1., 0.),
@@ -111,16 +111,16 @@ public enum Stats
 	//
 
 	INFLICTS_P_DAMAGE_POWER("inflicts_p_damage_power"), // позволяет регулировать силу физ дамага от цели с этим статом,
-														// относительно
-														// стандартных значений
+	// относительно
+	// стандартных значений
 	INFLICTS_M_DAMAGE_POWER("inflicts_m_damage_power"),
 	RECEIVE_P_DAMAGE_POWER("receive_p_damage_power"), // позволяет
-														// регулировать
-														// получаемый
-														// дамаг,
-														// относительно
-														// стандартных
-														// значений
+	// регулировать
+	// получаемый
+	// дамаг,
+	// относительно
+	// стандартных
+	// значений
 	RECEIVE_M_DAMAGE_POWER("receive_m_damage_power"),
 
 	CAST_INTERRUPT("concentration", 0., 100.), // шанс сбить каст
@@ -132,8 +132,8 @@ public enum Stats
 	MAGIC_ATTACK_RANGE("mAtkRange", 0., 1500.),
 	P_ATTACK_RADIUS("p_attack_radius", 0., 1500.),
 	POLE_ATTACK_ANGLE("poleAngle", 0., 180.), // радиус атаки по
-												// множественным целям с
-												// пики
+	// множественным целям с
+	// пики
 	ATTACK_TARGETS_COUNT("attack_targets_count"), // количество целей, по которым одновременно прилетит атакой с пухи
 	POLE_TARGET_COUNT("poleTargetCount"), // отдельно для пики
 
@@ -162,7 +162,7 @@ public enum Stats
 	FATALBLOW_RATE("blowRate", 0., 10., 1.), // шанс нанести летальный урон
 	P_SKILL_CRITICAL_RATE("p_skill_critical_rate"),
 	DEATH_VULNERABILITY("deathVuln", 10., 190., 100.), // защита от
-														// леталов
+	// леталов
 
 	DEFENCE_FIRE("defenceFire", -600, 600), // Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_WATER("defenceWater", -600, 600), // Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
@@ -185,24 +185,18 @@ public enum Stats
 
 	// Отражение урона с шансом. Урон получает только атакующий.
 	REFLECT_AND_BLOCK_DAMAGE_CHANCE("reflectAndBlockDam", 0., Config.REFLECT_AND_BLOCK_DAMAGE_CHANCE_CAP), // Ближний
-																											// урон без
-																											// скиллов
-	REFLECT_AND_BLOCK_PSKILL_DAMAGE_CHANCE(
-											"reflectAndBlockPSkillDam",
-											0.,
-											Config.REFLECT_AND_BLOCK_PSKILL_DAMAGE_CHANCE_CAP), // Ближний урон скиллами
-	REFLECT_AND_BLOCK_MSKILL_DAMAGE_CHANCE(
-											"reflectAndBlockMSkillDam",
-											0.,
-											Config.REFLECT_AND_BLOCK_MSKILL_DAMAGE_CHANCE_CAP), // Любой урон магией
+	// урон без
+	// скиллов
+	REFLECT_AND_BLOCK_PSKILL_DAMAGE_CHANCE("reflectAndBlockPSkillDam", 0., Config.REFLECT_AND_BLOCK_PSKILL_DAMAGE_CHANCE_CAP), // Ближний урон скиллами
+	REFLECT_AND_BLOCK_MSKILL_DAMAGE_CHANCE("reflectAndBlockMSkillDam", 0., Config.REFLECT_AND_BLOCK_MSKILL_DAMAGE_CHANCE_CAP), // Любой урон магией
 
 	// Отражение урона в процентах. Урон получает и атакующий и цель
 	REFLECT_DAMAGE_PERCENT("reflectDam", 0., Config.REFLECT_DAMAGE_PERCENT_CAP), // Ближний урон без скиллов
 	REFLECT_BOW_DAMAGE_PERCENT("reflectBowDam", 0., Config.REFLECT_BOW_DAMAGE_PERCENT_CAP), // Урон луком без скиллов
 	REFLECT_PSKILL_DAMAGE_PERCENT("reflectPSkillDam", 0., Config.REFLECT_PSKILL_DAMAGE_PERCENT_CAP), // Ближний урон
-																										// скиллами
+	// скиллами
 	REFLECT_MSKILL_DAMAGE_PERCENT("reflectMSkillDam", 0., Config.REFLECT_MSKILL_DAMAGE_PERCENT_CAP), // Любой урон
-																										// магией
+	// магией
 
 	REFLECT_PHYSIC_SKILL("reflectPhysicSkill", 0., 60.), // шанс увернуться от физ скила
 	REFLECT_MAGIC_SKILL("reflectMagicSkill", 0., 60.), // от магии
@@ -393,14 +387,8 @@ public enum Stats
 	DEFENCE_TRAIT_BOSS("defence_trait_boss", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_GIANT_WEAKNESS("attack_trait_giant_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_TRAIT_GIANT_WEAKNESS("defence_trait_giant_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
-	ATTACK_TRAIT_CONSTRUCT_WEAKNESS(
-									"attack_trait_construct_weakness",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
-	DEFENCE_TRAIT_CONSTRUCT_WEAKNESS(
-										"defence_trait_construct_weakness",
-										Double.NEGATIVE_INFINITY,
-										Double.POSITIVE_INFINITY),
+	ATTACK_TRAIT_CONSTRUCT_WEAKNESS("attack_trait_construct_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
+	DEFENCE_TRAIT_CONSTRUCT_WEAKNESS("defence_trait_construct_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_DEATH("attack_trait_death", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_TRAIT_DEATH("defence_trait_death", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_VALAKAS("attack_trait_valakas", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
@@ -417,29 +405,14 @@ public enum Stats
 	DEFENCE_TRAIT_TURN_STONE("defence_trait_turn_stone", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_GUST("attack_trait_gust", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_TRAIT_GUST("defence_trait_gust", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
-	ATTACK_TRAIT_PHYSICAL_BLOCKADE(
-									"attack_trait_physical_blockade",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
-	DEFENCE_TRAIT_PHYSICAL_BLOCKADE(
-									"defence_trait_physical_blockade",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
+	ATTACK_TRAIT_PHYSICAL_BLOCKADE("attack_trait_physical_blockade", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
+	DEFENCE_TRAIT_PHYSICAL_BLOCKADE("defence_trait_physical_blockade", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_TARGET("attack_trait_target", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_TRAIT_TARGET("defence_trait_target", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
-	ATTACK_TRAIT_PHYSICAL_WEAKNESS(
-									"attack_trait_physical_weakness",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
-	DEFENCE_TRAIT_PHYSICAL_WEAKNESS(
-									"defence_trait_physical_weakness",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
+	ATTACK_TRAIT_PHYSICAL_WEAKNESS("attack_trait_physical_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
+	DEFENCE_TRAIT_PHYSICAL_WEAKNESS("defence_trait_physical_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_MAGICAL_WEAKNESS("attack_trait_magical_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
-	DEFENCE_TRAIT_MAGICAL_WEAKNESS(
-									"defence_trait_magical_weakness",
-									Double.NEGATIVE_INFINITY,
-									Double.POSITIVE_INFINITY),
+	DEFENCE_TRAIT_MAGICAL_WEAKNESS("defence_trait_magical_weakness", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_DUALDAGGER("attack_trait_dualdagger", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	DEFENCE_TRAIT_DUALDAGGER("defence_trait_dualdagger", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
 	ATTACK_TRAIT_DUALBLUNT("attack_trait_dualblunt", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY),
@@ -477,7 +450,7 @@ public enum Stats
 	P_BLOCK_PRIVATE_STORE("p_block_private_store", 0, 1, 0),
 	P_BLOCK_WORLD_TRADE("p_block_world_trade", 0, 1, 0),
 	P_BLOCK_WORLD_CHAT("p_block_world_chat", 0, 1, 0),
-	
+
 	ENCHANT_CHANCE_MODIFIER_ARMOR("p_enchant_armor_rate", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 0.),
 	ENCHANT_CHANCE_MODIFIER_WEAPON("p_enchant_weapon_rate", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, 0.),
 	;
@@ -520,9 +493,9 @@ public enum Stats
 
 	public double validate(double val)
 	{
-		if (val < _min)
+		if(val < _min)
 			return _min;
-		if (val > _max)
+		if(val > _max)
 			return _max;
 		return val;
 	}
@@ -530,9 +503,9 @@ public enum Stats
 	public static Stats valueOfXml(String name)
 	{
 		String upperCaseName = name.toUpperCase();
-		for (Stats s : VALUES)
+		for(Stats s : VALUES)
 		{
-			if (s.getValue().equals(upperCaseName))
+			if(s.getValue().equals(upperCaseName))
 				return s;
 		}
 		throw new NoSuchElementException("Unknown name '" + name + "' for enum Stats");

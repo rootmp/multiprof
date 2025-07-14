@@ -20,7 +20,7 @@ public class EventComparator implements Comparator<Event>
 	{
 		EventType type1 = o1.getType();
 		EventType type2 = o2.getType();
-		if (type1 == type2)
+		if(type1 == type2)
 			return o1.hashCode() - o2.hashCode();
 		else
 			return type1.ordinal() - type2.ordinal();

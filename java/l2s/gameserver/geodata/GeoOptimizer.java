@@ -48,13 +48,13 @@ public class GeoOptimizer
 			try
 			{
 				File f = new File(Config.DATAPACK_ROOT, fileName);
-				if (f.exists())
+				if(f.exists())
 					f.delete();
 				FileChannel wChannel = new RandomAccessFile(f, "rw").getChannel();
 				ByteBuffer buffer = wChannel.map(FileChannel.MapMode.READ_WRITE, 0, links.length * 6 + 1);
 				buffer.order(ByteOrder.LITTLE_ENDIAN);
 				buffer.put(version);
-				for (int i = 0; i < links.length; i++)
+				for(int i = 0; i < links.length; i++)
 				{
 					buffer.putShort((short) links[i].blockIndex);
 					buffer.put(links[i].linkMapX);
@@ -63,7 +63,7 @@ public class GeoOptimizer
 				}
 				wChannel.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				log.error("", e);
 			}
@@ -72,17 +72,17 @@ public class GeoOptimizer
 		private void calcMatches(int[] curr_checkSums, int mapX, int mapY, List<BlockLink> putlinks, boolean[] notready)
 		{
 			int[] next_checkSums = checkSums[mapX][mapY];
-			if (next_checkSums == null)
+			if(next_checkSums == null)
 				return;
 
 			int startIdx2;
-			for (int blockIdx = 0; blockIdx < GeoEngine.BLOCKS_IN_MAP; blockIdx++)
-				if (notready[blockIdx])
+			for(int blockIdx = 0; blockIdx < GeoEngine.BLOCKS_IN_MAP; blockIdx++)
+				if(notready[blockIdx])
 				{
 					startIdx2 = next_checkSums == curr_checkSums ? blockIdx + 1 : 0;
-					for (int blockIdx2 = startIdx2; blockIdx2 < GeoEngine.BLOCKS_IN_MAP; blockIdx2++)
-						if (curr_checkSums[blockIdx] == next_checkSums[blockIdx2])
-							if (GeoEngine.compareGeoBlocks(geoX, geoY, blockIdx, mapX, mapY, blockIdx2))
+					for(int blockIdx2 = startIdx2; blockIdx2 < GeoEngine.BLOCKS_IN_MAP; blockIdx2++)
+						if(curr_checkSums[blockIdx] == next_checkSums[blockIdx2])
+							if(GeoEngine.compareGeoBlocks(geoX, geoY, blockIdx, mapX, mapY, blockIdx2))
 							{
 								putlinks.add(new BlockLink(blockIdx, (byte) mapX, (byte) mapY, blockIdx2));
 								notready[blockIdx] = false;
@@ -97,24 +97,24 @@ public class GeoOptimizer
 			long started = System.currentTimeMillis();
 
 			boolean[] notready = new boolean[GeoEngine.BLOCKS_IN_MAP];
-			for (int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
+			for(int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
 				notready[i] = true;
 
 			List<BlockLink> links = new ArrayList<BlockLink>();
 			int[] _checkSums = checkSums[geoX][geoY];
 
 			int n = 0;
-			for (int mapX = geoX; mapX < World.WORLD_SIZE_X; mapX++)
+			for(int mapX = geoX; mapX < World.WORLD_SIZE_X; mapX++)
 			{
 				int startgeoY = mapX == geoX ? geoY : 0;
-				for (int mapY = startgeoY; mapY < World.WORLD_SIZE_Y; mapY++)
+				for(int mapY = startgeoY; mapY < World.WORLD_SIZE_Y; mapY++)
 				{
 					// log.info("Searching matches for " + rx + "_" + ry + " in " + (mapX +
 					// GeoEngine.MAP_X_FIRST) + "_" + (mapY + GeoEngine.MAP_Y_FIRST) + ", already
 					// found matches: " + links.size());
 					calcMatches(_checkSums, mapX, mapY, links, notready);
 					n++;
-					if (maxScanRegions > 0 && maxScanRegions == n)
+					if(maxScanRegions > 0 && maxScanRegions == n)
 						return links.toArray(new BlockLink[links.size()]);
 				}
 			}
@@ -127,7 +127,7 @@ public class GeoOptimizer
 		@Override
 		public void run()
 		{
-			if (!exists())
+			if(!exists())
 			{
 				BlockLink[] links = gen();
 				saveToFile(links);
@@ -155,12 +155,12 @@ public class GeoOptimizer
 		private boolean loadFromFile()
 		{
 			File GeoCrc = new File(Config.DATAPACK_ROOT, fileName);
-			if (!GeoCrc.exists())
+			if(!GeoCrc.exists())
 				return false;
 			try
 			{
 				FileChannel roChannel = new RandomAccessFile(GeoCrc, "r").getChannel();
-				if (roChannel.size() != GeoEngine.BLOCKS_IN_MAP * 4)
+				if(roChannel.size() != GeoEngine.BLOCKS_IN_MAP * 4)
 				{
 					roChannel.close();
 					return false;
@@ -170,13 +170,13 @@ public class GeoOptimizer
 				roChannel.close();
 				buffer.order(ByteOrder.LITTLE_ENDIAN);
 				int[] _checkSums = new int[GeoEngine.BLOCKS_IN_MAP];
-				for (int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
+				for(int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
 					_checkSums[i] = buffer.getInt();
 				checkSums[geoX][geoY] = _checkSums;
 				return true;
 
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				log.error("", e);
 				return false;
@@ -190,17 +190,17 @@ public class GeoOptimizer
 			try
 			{
 				File f = new File(Config.DATAPACK_ROOT, fileName);
-				if (f.exists())
+				if(f.exists())
 					f.delete();
 				wChannel = new RandomAccessFile(f, "rw").getChannel();
 				ByteBuffer buffer = wChannel.map(FileChannel.MapMode.READ_WRITE, 0, GeoEngine.BLOCKS_IN_MAP * 4);
 				buffer.order(ByteOrder.LITTLE_ENDIAN);
 				int[] _checkSums = checkSums[geoX][geoY];
-				for (int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
+				for(int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
 					buffer.putInt(_checkSums[i]);
 				wChannel.close();
 			}
-			catch (Exception e)
+			catch(Exception e)
 			{
 				log.error("", e);
 			}
@@ -211,7 +211,7 @@ public class GeoOptimizer
 			log.info("Generating checksums for " + rx + "_" + ry);
 			int[] _checkSums = new int[GeoEngine.BLOCKS_IN_MAP];
 			CRC32 crc32 = new CRC32();
-			for (int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
+			for(int i = 0; i < GeoEngine.BLOCKS_IN_MAP; i++)
 			{
 				crc32.update(region[i]);
 				_checkSums[i] = (int) (crc32.getValue() ^ 0xFFFFFFFF);
@@ -223,7 +223,7 @@ public class GeoOptimizer
 		@Override
 		public void run()
 		{
-			if (!loadFromFile())
+			if(!loadFromFile())
 			{
 				gen();
 				saveToFile();
@@ -256,7 +256,7 @@ public class GeoOptimizer
 	public static BlockLink[] loadBlockMatches(String fileName)
 	{
 		File f = new File(Config.DATAPACK_ROOT, fileName);
-		if (!f.exists())
+		if(!f.exists())
 			return null;
 		try
 		{
@@ -266,17 +266,17 @@ public class GeoOptimizer
 			ByteBuffer buffer = roChannel.map(FileChannel.MapMode.READ_ONLY, 0, roChannel.size());
 			roChannel.close();
 			buffer.order(ByteOrder.LITTLE_ENDIAN);
-			if (buffer.get() != version)
+			if(buffer.get() != version)
 				return null;
 
 			BlockLink[] links = new BlockLink[count];
-			for (int i = 0; i < links.length; i++)
+			for(int i = 0; i < links.length; i++)
 				links[i] = new BlockLink(buffer.getShort(), buffer.get(), buffer.get(), buffer.getShort());
 
 			return links;
 
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			log.error("", e);
 			return null;

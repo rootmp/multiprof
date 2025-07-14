@@ -20,9 +20,9 @@ public class ConditionPlayerMinMaxDamage extends Condition
 	@Override
 	protected boolean testImpl(Env env)
 	{
-		if (_min > 0 && env.value < _min)
+		if(_min > 0 && env.value < _min)
 			return false;
-		if (_max > 0 && env.value > _max)
+		if(_max > 0 && env.value > _max)
 			return false;
 		return true;
 	}

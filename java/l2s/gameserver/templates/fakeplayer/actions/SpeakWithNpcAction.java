@@ -32,22 +32,22 @@ public class SpeakWithNpcAction extends AbstractAction
 		NpcInstance npc = null;
 
 		List<NpcInstance> npcs = GameObjectsStorage.getNpcs(true, _npcId);
-		for (NpcInstance n : npcs)
+		for(NpcInstance n : npcs)
 		{
-			if (npc == null || n.getDistance(player) < npc.getDistance(player))
+			if(npc == null || n.getDistance(player) < npc.getDistance(player))
 				npc = n;
 		}
 
-		if (npc == null)
+		if(npc == null)
 			return false;
 
 		player.setHeading(PositionUtils.calculateHeadingFrom(player, npc), true);
 
-		if (!npc.isPeaceNpc() || !npc.checkInteractionDistance(player))
+		if(!npc.isPeaceNpc() || !npc.checkInteractionDistance(player))
 			return false;
 
 		npc.onAction(player, false);
-		if (_bypass != null)
+		if(_bypass != null)
 			npc.onBypassFeedback(player, _bypass);
 		return true;
 	}

@@ -7,13 +7,12 @@ import java.sql.ResultSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.dbutils.DbUtils;
 import l2s.gameserver.database.DatabaseFactory;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.actor.instances.player.Block;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 /**
  * @author Bonux
@@ -41,10 +40,10 @@ public class CharacterBlockListDAO
 			statement = con.prepareStatement("SELECT b.target_Id, b.memo, c.char_name FROM character_blocklist b LEFT JOIN characters c ON b.target_Id = c.obj_Id WHERE b.obj_Id = ?");
 			statement.setInt(1, owner.getObjectId());
 			rset = statement.executeQuery();
-			while (rset.next())
+			while(rset.next())
 			{
 				String name = rset.getString("c.char_name");
-				if (name == null)
+				if(name == null)
 					continue;
 
 				int objectId = rset.getInt("b.target_Id");
@@ -53,7 +52,7 @@ public class CharacterBlockListDAO
 				map.put(objectId, new Block(objectId, name, memo));
 			}
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.error("CharacterBlockListDAO.select(L2Player): " + e, e);
 		}
@@ -76,7 +75,7 @@ public class CharacterBlockListDAO
 			statement.setInt(2, blockedObjectId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not add player to black list objectid: " + blockedObjectId, e);
 		}
@@ -98,7 +97,7 @@ public class CharacterBlockListDAO
 			statement.setInt(2, blockedObjectId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not delete blocked objectId: " + blockedObjectId + " ownerId: " + owner.getObjectId(), e);
 		}
@@ -121,7 +120,7 @@ public class CharacterBlockListDAO
 			statement.setInt(3, blockedObjectId);
 			statement.execute();
 		}
-		catch (Exception e)
+		catch(Exception e)
 		{
 			_log.warn(owner.getBlockList() + " could not update memo objectid: " + blockedObjectId, e);
 			return false;

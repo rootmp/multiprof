@@ -24,7 +24,7 @@ public class PacketHandler
 
 		int id = buf.get() & 0xff;
 
-		switch (id)
+		switch(id)
 		{
 			case 0x00:
 				packet = new AuthResponse();

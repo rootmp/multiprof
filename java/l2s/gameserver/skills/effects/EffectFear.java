@@ -24,24 +24,24 @@ public final class EffectFear extends EffectHandler
 	@Override
 	protected boolean checkCondition(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.isFearImmune())
+		if(effected.isFearImmune())
 			return false;
 
 		// Fear нельзя наложить на осадных саммонов
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
-			if (effected.isSummon())
+			if(effected.isSummon())
 			{
-				for (SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
+				for(SiegeEvent<?, ?> siegeEvent : player.getEvents(SiegeEvent.class))
 				{
-					if (siegeEvent.containsSiegeSummon((SummonInstance) effected))
+					if(siegeEvent.containsSiegeSummon((SummonInstance) effected))
 						return false;
 				}
 			}
 		}
 
-		if (effected.isInPeaceZone())
+		if(effected.isInPeaceZone())
 			return false;
 
 		return true;
@@ -50,7 +50,7 @@ public final class EffectFear extends EffectHandler
 	@Override
 	public void onStart(Abnormal abnormal, Creature effector, Creature effected)
 	{
-		if (effected.getFlags().getAfraid().start(this))
+		if(effected.getFlags().getAfraid().start(this))
 		{
 			effected.abortAttack(true, true);
 			effected.abortCast(true, true);
@@ -77,7 +77,7 @@ public final class EffectFear extends EffectHandler
 		final int y = oldY + (int) (FEAR_RANGE * Math.sin(angle));
 		final int z = effected.getZ();
 		Location loc = GeoEngine.moveCheck(oldX, oldY, z, x, y, effected.getGeoIndex());
-		if (loc == null)
+		if(loc == null)
 			return true;
 		effected.setRunning();
 		effected.getMovement().moveToLocation(loc, 0, false);

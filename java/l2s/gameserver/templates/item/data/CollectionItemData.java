@@ -6,8 +6,8 @@ public class CollectionItemData extends ItemData
 	private final int _slotId;
 	private final int _BlessCondition;
 	private int _bless;
-	
-	public CollectionItemData(int id, long count, int enchantLevel,int bless ,int slotId, int BlessCondition)
+
+	public CollectionItemData(int id, long count, int enchantLevel, int bless, int slotId, int BlessCondition)
 	{
 		super(id, count);
 		_enchantLevel = enchantLevel;
@@ -20,7 +20,7 @@ public class CollectionItemData extends ItemData
 	{
 		return _enchantLevel;
 	}
-	
+
 	public int getSlotId()
 	{
 		return _slotId;

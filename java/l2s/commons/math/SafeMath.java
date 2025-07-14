@@ -37,17 +37,17 @@ public class SafeMath
 	private static int addAndCheck(int a, int b, String msg, boolean limit)
 	{
 		int ret;
-		if (a > b)
+		if(a > b)
 			// use symmetry to reduce boundary cases
 			ret = addAndCheck(b, a, msg, limit);
-		else if (a < 0)
+		else if(a < 0)
 		{
-			if (b < 0)
+			if(b < 0)
 			{
 				// check for negative overflow
-				if (Integer.MIN_VALUE - b <= a)
+				if(Integer.MIN_VALUE - b <= a)
 					ret = a + b;
-				else if (limit)
+				else if(limit)
 					ret = Integer.MIN_VALUE;
 				else
 					throw new ArithmeticException(msg);
@@ -57,9 +57,9 @@ public class SafeMath
 				ret = a + b;
 		}
 		else // check for positive overflow
-		if (a <= Integer.MAX_VALUE - b)
+		if(a <= Integer.MAX_VALUE - b)
 			ret = a + b;
-		else if (limit)
+		else if(limit)
 			ret = Integer.MAX_VALUE;
 		else
 			throw new ArithmeticException(msg);
@@ -95,17 +95,17 @@ public class SafeMath
 	private static long addAndCheck(long a, long b, String msg, boolean limit)
 	{
 		long ret;
-		if (a > b)
+		if(a > b)
 			// use symmetry to reduce boundary cases
 			ret = addAndCheck(b, a, msg, limit);
-		else if (a < 0)
+		else if(a < 0)
 		{
-			if (b < 0)
+			if(b < 0)
 			{
 				// check for negative overflow
-				if (Long.MIN_VALUE - b <= a)
+				if(Long.MIN_VALUE - b <= a)
 					ret = a + b;
-				else if (limit)
+				else if(limit)
 					ret = Long.MIN_VALUE;
 				else
 					throw new ArithmeticException(msg);
@@ -115,9 +115,9 @@ public class SafeMath
 				ret = a + b;
 		}
 		else // check for positive overflow
-		if (a <= Long.MAX_VALUE - b)
+		if(a <= Long.MAX_VALUE - b)
 			ret = a + b;
-		else if (limit)
+		else if(limit)
 			ret = Long.MAX_VALUE;
 		else
 			throw new ArithmeticException(msg);
@@ -153,27 +153,27 @@ public class SafeMath
 	private static int mulAndCheck(int a, int b, String msg, boolean limit)
 	{
 		int ret;
-		if (a > b)
+		if(a > b)
 			// use symmetry to reduce boundary cases
 			ret = mulAndCheck(b, a, msg, limit);
-		else if (a < 0)
+		else if(a < 0)
 		{
-			if (b < 0)
+			if(b < 0)
 			{
 				// check for positive overflow with negative a, negative b
-				if (a >= Integer.MAX_VALUE / b)
+				if(a >= Integer.MAX_VALUE / b)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Integer.MAX_VALUE;
 				else
 					throw new ArithmeticException(msg);
 			}
-			else if (b > 0)
+			else if(b > 0)
 			{
 				// check for negative overflow with negative a, positive b
-				if (Integer.MIN_VALUE / b <= a)
+				if(Integer.MIN_VALUE / b <= a)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Integer.MIN_VALUE;
 				else
 					throw new ArithmeticException(msg);
@@ -181,12 +181,12 @@ public class SafeMath
 			else
 				ret = 0;
 		}
-		else if (a > 0)
+		else if(a > 0)
 		{
 			// check for positive overflow with positive a, positive b
-			if (a <= Integer.MAX_VALUE / b)
+			if(a <= Integer.MAX_VALUE / b)
 				ret = a * b;
-			else if (limit)
+			else if(limit)
 				ret = Integer.MAX_VALUE;
 			else
 				throw new ArithmeticException(msg);
@@ -225,27 +225,27 @@ public class SafeMath
 	private static long mulAndCheck(long a, long b, String msg, boolean limit)
 	{
 		long ret;
-		if (a > b)
+		if(a > b)
 			// use symmetry to reduce boundary cases
 			ret = mulAndCheck(b, a, msg, limit);
-		else if (a < 0)
+		else if(a < 0)
 		{
-			if (b < 0)
+			if(b < 0)
 			{
 				// check for positive overflow with negative a, negative b
-				if (a >= Long.MAX_VALUE / b)
+				if(a >= Long.MAX_VALUE / b)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Long.MAX_VALUE;
 				else
 					throw new ArithmeticException(msg);
 			}
-			else if (b > 0)
+			else if(b > 0)
 			{
 				// check for negative overflow with negative a, positive b
-				if (Long.MIN_VALUE / b <= a)
+				if(Long.MIN_VALUE / b <= a)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Long.MIN_VALUE;
 				else
 					throw new ArithmeticException(msg);
@@ -253,12 +253,12 @@ public class SafeMath
 			else
 				ret = 0;
 		}
-		else if (a > 0)
+		else if(a > 0)
 		{
 			// check for positive overflow with positive a, positive b
-			if (a <= Long.MAX_VALUE / b)
+			if(a <= Long.MAX_VALUE / b)
 				ret = a * b;
-			else if (limit)
+			else if(limit)
 				ret = Long.MAX_VALUE;
 			else
 				throw new ArithmeticException(msg);
@@ -297,29 +297,29 @@ public class SafeMath
 	private static double mulAndCheck(double a, double b, String msg, boolean limit)
 	{
 		double ret;
-		if (a > b)
+		if(a > b)
 		{
 			// use symmetry to reduce boundary cases
 			ret = mulAndCheck(b, a, msg, limit);
 		}
-		else if (a < 0)
+		else if(a < 0)
 		{
-			if (b < 0)
+			if(b < 0)
 			{
 				// check for positive overflow with negative a, negative b
-				if (a >= Double.MAX_VALUE / b)
+				if(a >= Double.MAX_VALUE / b)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Double.MAX_VALUE;
 				else
 					throw new ArithmeticException(msg);
 			}
-			else if (b > 0)
+			else if(b > 0)
 			{
 				// check for negative overflow with negative a, positive b
-				if (Double.MIN_VALUE / b <= a)
+				if(Double.MIN_VALUE / b <= a)
 					ret = a * b;
-				else if (limit)
+				else if(limit)
 					ret = Double.MIN_VALUE;
 				else
 					throw new ArithmeticException(msg);
@@ -327,12 +327,12 @@ public class SafeMath
 			else
 				ret = 0;
 		}
-		else if (a > 0)
+		else if(a > 0)
 		{
 			// check for positive overflow with positive a, positive b
-			if (a <= Double.MAX_VALUE / b)
+			if(a <= Double.MAX_VALUE / b)
 				ret = a * b;
-			else if (limit)
+			else if(limit)
 				ret = Double.MAX_VALUE;
 			else
 				throw new ArithmeticException(msg);

@@ -24,10 +24,10 @@ public final class i_refresh_instance extends i_abstract_effect
 	public void instantUse(Creature effector, Creature effected, boolean reflected)
 	{
 		Player player = effected.getPlayer();
-		if (player != null)
+		if(player != null)
 		{
 			int instanceId = (int) getValue();
-			if (instanceId == -1)
+			if(instanceId == -1)
 				player.removeAllInstanceReuses();
 			else
 				player.removeInstanceReuse(instanceId);

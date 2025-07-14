@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import l2s.commons.network.PacketReader;
 import l2s.gameserver.model.Player;
 import l2s.gameserver.model.items.ItemInstance;
@@ -25,17 +26,17 @@ public class RequestCrystallizeItem implements IClientIncomingPacket
 	{
 		Player activeChar = client.getActiveChar();
 
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
-		if (item == null)
+		if(item == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (!item.canBeCrystallized(activeChar))
+		if(!item.canBeCrystallized(activeChar))
 		{
 			// На всякий пожарный..
 			activeChar.sendPacket(SystemMsg.THIS_ITEM_CANNOT_BE_CRYSTALLIZED);
@@ -44,7 +45,7 @@ public class RequestCrystallizeItem implements IClientIncomingPacket
 
 		Log.LogItem(activeChar, Log.Crystalize, item);
 
-		if (!activeChar.getInventory().destroyItemByObjectId(_objectId, _count))
+		if(!activeChar.getInventory().destroyItemByObjectId(_objectId, _count))
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -54,7 +55,7 @@ public class RequestCrystallizeItem implements IClientIncomingPacket
 
 		int crystalId = item.getGrade().getCrystalId();
 		int crystalCount = item.getCrystalCountOnCrystallize();
-		if (crystalId > 0 && crystalCount > 0)
+		if(crystalId > 0 && crystalCount > 0)
 			ItemFunctions.addItem(activeChar, crystalId, crystalCount, true);
 
 		activeChar.sendChanges();

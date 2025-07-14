@@ -239,7 +239,7 @@ public class Mail implements JdbcEntity, Comparable<Mail>
 	public String getSystemParamsToString()
 	{
 		String result = "";
-		for (int param : _systemParams)
+		for(int param : _systemParams)
 			result += param + ";";
 		return result;
 	}
@@ -251,15 +251,15 @@ public class Mail implements JdbcEntity, Comparable<Mail>
 
 	public void setSystemParams(String val)
 	{
-		if (val == null || val.isEmpty())
+		if(val == null || val.isEmpty())
 			return;
 
 		String[] params = val.split(";");
 		int length = Math.min(params.length, MAX_SYSTEM_PARAMS_COUNT);
-		for (int i = 0; i < length; i++)
+		for(int i = 0; i < length; i++)
 		{
 			String param = params[i];
-			if (param == null || param.isEmpty())
+			if(param == null || param.isEmpty())
 				continue;
 
 			setSystemParam(i, Integer.parseInt(param));
@@ -269,11 +269,11 @@ public class Mail implements JdbcEntity, Comparable<Mail>
 	@Override
 	public boolean equals(Object o)
 	{
-		if (o == this)
+		if(o == this)
 			return true;
-		if (o == null)
+		if(o == null)
 			return false;
-		if (o.getClass() != this.getClass())
+		if(o.getClass() != this.getClass())
 			return false;
 		return ((Mail) o).getMessageId() == getMessageId();
 	}
@@ -322,7 +322,7 @@ public class Mail implements JdbcEntity, Comparable<Mail>
 		mail.setBody(getBody());
 		synchronized (getAttachments())
 		{
-			for (ItemInstance item : getAttachments())
+			for(ItemInstance item : getAttachments())
 				mail.addAttachment(item);
 			getAttachments().clear();
 		}

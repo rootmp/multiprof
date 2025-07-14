@@ -19,11 +19,11 @@ public class AdminElemental implements IAdminCommandHandler
 	{
 		Commands command = (Commands) comm;
 
-		if (!activeChar.getPlayerAccess().CanEditChar)
+		if(!activeChar.getPlayerAccess().CanEditChar)
 			return false;
 
 		GameObject target = activeChar.getTarget();
-		if (target == null || !target.isPlayer())
+		if(target == null || !target.isPlayer())
 		{
 			activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 			return false;
@@ -31,13 +31,13 @@ public class AdminElemental implements IAdminCommandHandler
 
 		Player targetPlayer = target.getPlayer();
 
-		if (!targetPlayer.canUseElementals())
+		if(!targetPlayer.canUseElementals())
 		{
 			activeChar.sendMessage("This target cannot use elementals!");
 			return false;
 		}
 
-		switch (command)
+		switch(command)
 		{
 			case admin_add_elemental_exp:
 			case admin_add_el_exp:
@@ -46,7 +46,7 @@ public class AdminElemental implements IAdminCommandHandler
 					int elementId = Integer.parseInt(wordList[1]);
 					long exp = Long.parseLong(wordList[2]);
 					Elemental elemental = targetPlayer.getElementalList().get(elementId);
-					if (elemental == null)
+					if(elemental == null)
 					{
 						activeChar.sendMessage("Cannot found elemental for element ID: " + elementId);
 						return false;
@@ -54,7 +54,7 @@ public class AdminElemental implements IAdminCommandHandler
 					elemental.addExp(targetPlayer, exp);
 					activeChar.sendMessage("Added " + exp + " EXP for element ID: " + elementId + " for player: " + targetPlayer.getName());
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					activeChar.sendMessage("USAGE: //add_elemental_exp element_id[1,2,3,4] exp");
 					return false;

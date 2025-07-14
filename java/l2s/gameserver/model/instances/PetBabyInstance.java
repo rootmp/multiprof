@@ -8,6 +8,8 @@ import java.util.concurrent.Future;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import l2s.commons.string.StringArrayUtils;
 import l2s.commons.util.Rnd;
 import l2s.gameserver.Config;
@@ -23,9 +25,6 @@ import l2s.gameserver.skills.SkillEntry;
 import l2s.gameserver.skills.enums.SkillEntryType;
 import l2s.gameserver.stats.Formulas;
 import l2s.gameserver.templates.npc.NpcTemplate;
-
-import gnu.trove.map.TIntObjectMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 
 public final class PetBabyInstance extends PetInstance
 {
@@ -53,23 +52,23 @@ public final class PetBabyInstance extends PetInstance
 
 	private void parseSkills()
 	{
-		for (int step = 0; step < 10; step++)
+		for(int step = 0; step < 10; step++)
 		{
 			List<Skill> skills = _activeSkills.get(step);
-			for (int buff = 1; buff < 10; buff++)
+			for(int buff = 1; buff < 10; buff++)
 			{
 				String data = getTemplate().getAIParams().getString("step" + step + "_skill0" + buff, null);
-				if (data == null)
+				if(data == null)
 					break;
 
-				if (skills == null)
+				if(skills == null)
 				{
 					skills = new ArrayList<Skill>();
 					_activeSkills.put(step, skills);
 				}
 
 				int[][] skillsData = StringArrayUtils.stringToIntArray2X(data, ";", "-");
-				for (int[] skillData : skillsData)
+				for(int[] skillData : skillsData)
 				{
 					int skillLevel = skillData.length > 1 ? skillData[1] : 1;
 					skills.add(SkillHolder.getInstance().getSkill(skillData[0], skillLevel));
@@ -77,20 +76,20 @@ public final class PetBabyInstance extends PetInstance
 			}
 
 			skills = _buffSkills.get(step);
-			for (int buff = 1; buff < 10; buff++)
+			for(int buff = 1; buff < 10; buff++)
 			{
 				String data = getTemplate().getAIParams().getString("step" + step + "_buff0" + buff, null);
-				if (data == null)
+				if(data == null)
 					break;
 
-				if (skills == null)
+				if(skills == null)
 				{
 					skills = new ArrayList<Skill>();
 					_buffSkills.put(step, skills);
 				}
 
 				int[][] skillsData = StringArrayUtils.stringToIntArray2X(data, ";", "-");
-				for (int[] skillData : skillsData)
+				for(int[] skillData : skillsData)
 				{
 					int skillLevel = skillData.length > 1 ? skillData[1] : 1;
 					skills.add(SkillHolder.getInstance().getSkill(skillData[0], skillLevel));
@@ -123,17 +122,18 @@ public final class PetBabyInstance extends PetInstance
 		public void run()
 		{
 			Skill skill = onActionTask();
-			_actionTask = ThreadPoolManager.getInstance().schedule(new ActionTask(), skill == null ? 1000 : Formulas.calcSkillCastSpd(PetBabyInstance.this, skill, skill.getHitTime()));
+			_actionTask = ThreadPoolManager.getInstance().schedule(new ActionTask(), skill
+					== null ? 1000 : Formulas.calcSkillCastSpd(PetBabyInstance.this, skill, skill.getHitTime()));
 		}
 	}
 
 	@Override
 	public List<Skill> getActiveSkills()
 	{
-		for (int step = getSteep(); step >= 0; step--)
+		for(int step = getSteep(); step >= 0; step--)
 		{
 			List<Skill> skills = _activeSkills.get(step);
-			if (skills != null)
+			if(skills != null)
 				return skills;
 		}
 		return Collections.emptyList();
@@ -142,9 +142,9 @@ public final class PetBabyInstance extends PetInstance
 	@Override
 	public int getActiveSkillLevel(int skillId)
 	{
-		for (Skill skill : getActiveSkills())
+		for(Skill skill : getActiveSkills())
 		{
-			if (skill.getId() == skillId)
+			if(skill.getId() == skillId)
 				return skill.getLevel();
 		}
 		return super.getActiveSkillLevel(skillId);
@@ -152,10 +152,10 @@ public final class PetBabyInstance extends PetInstance
 
 	public List<Skill> getBuffs()
 	{
-		for (int step = getSteep(); step >= 0; step--)
+		for(int step = getSteep(); step >= 0; step--)
 		{
 			List<Skill> skills = _buffSkills.get(step);
-			if (skills != null)
+			if(skills != null)
 				return skills;
 		}
 		return Collections.emptyList();
@@ -163,27 +163,27 @@ public final class PetBabyInstance extends PetInstance
 
 	private Skill getHealSkill(int hpPercent)
 	{
-		if (PetDataHolder.isImprovedBabyPet(getNpcId()))
+		if(PetDataHolder.isImprovedBabyPet(getNpcId()))
 		{
-			if (hpPercent < 90)
+			if(hpPercent < 90)
 			{
-				if (hpPercent < 33)
+				if(hpPercent < 33)
 				{
 					Skill skill = SkillHolder.getInstance().getSkill(BattleHeal, 1);
 					return SkillHolder.getInstance().getSkill(BattleHeal, Math.min(getSteep(), skill.getMaxLevel()));
 				}
-				else if (getNpcId() != PetDataHolder.IMPROVED_BABY_KOOKABURRA_ID)
+				else if(getNpcId() != PetDataHolder.IMPROVED_BABY_KOOKABURRA_ID)
 				{
 					Skill skill = SkillHolder.getInstance().getSkill(GreaterHeal, 1);
 					return SkillHolder.getInstance().getSkill(GreaterHeal, Math.min(getSteep(), skill.getMaxLevel()));
 				}
 			}
 		}
-		else if (PetDataHolder.isBabyPet(getNpcId()))
+		else if(PetDataHolder.isBabyPet(getNpcId()))
 		{
-			if (hpPercent < 90)
+			if(hpPercent < 90)
 			{
-				if (hpPercent < 33)
+				if(hpPercent < 33)
 				{
 					Skill skill = SkillHolder.getInstance().getSkill(GreaterHealTrick, 1);
 					return SkillHolder.getInstance().getSkill(GreaterHealTrick, Math.min(getSteep(), skill.getMaxLevel()));
@@ -197,13 +197,13 @@ public final class PetBabyInstance extends PetInstance
 		}
 		else
 		{
-			switch (getNpcId())
+			switch(getNpcId())
 			{
 				case PetDataHolder.WHITE_WEASEL_ID:
 				case PetDataHolder.TOY_KNIGHT_ID:
-					if (hpPercent < 70)
+					if(hpPercent < 70)
 					{
-						if (hpPercent < 30)
+						if(hpPercent < 30)
 						{
 							Skill skill = SkillHolder.getInstance().getSkill(BattleHeal, 1);
 							return SkillHolder.getInstance().getSkill(BattleHeal, Math.min(getSteep(), skill.getMaxLevel()));
@@ -217,7 +217,7 @@ public final class PetBabyInstance extends PetInstance
 					break;
 				case PetDataHolder.FAIRY_PRINCESS_ID:
 				case PetDataHolder.SPIRIT_SHAMAN_ID:
-					if (hpPercent < 30)
+					if(hpPercent < 30)
 					{
 						Skill skill = SkillHolder.getInstance().getSkill(BattleHeal, 1);
 						return SkillHolder.getInstance().getSkill(BattleHeal, Math.min(getSteep(), skill.getMaxLevel()));
@@ -230,10 +230,10 @@ public final class PetBabyInstance extends PetInstance
 
 	private Skill getManaHealSkill(int mpPercent)
 	{
-		switch (getNpcId())
+		switch(getNpcId())
 		{
 			case PetDataHolder.IMPROVED_BABY_KOOKABURRA_ID:
-				if (mpPercent < 66)
+				if(mpPercent < 66)
 				{
 					Skill skill = SkillHolder.getInstance().getSkill(Recharge, 1);
 					return SkillHolder.getInstance().getSkill(Recharge, Math.min(getSteep(), skill.getMaxLevel()));
@@ -241,7 +241,7 @@ public final class PetBabyInstance extends PetInstance
 				break;
 			case PetDataHolder.FAIRY_PRINCESS_ID:
 			case PetDataHolder.SPIRIT_SHAMAN_ID:
-				if (mpPercent < 50)
+				if(mpPercent < 50)
 				{
 					Skill skill = SkillHolder.getInstance().getSkill(Recharge, 1);
 					return SkillHolder.getInstance().getSkill(Recharge, Math.min(getSteep(), skill.getMaxLevel()));
@@ -256,33 +256,33 @@ public final class PetBabyInstance extends PetInstance
 		try
 		{
 			Player owner = getPlayer();
-			if (!owner.isDead() && !owner.isInvulnerable() && !isCastingNow())
+			if(!owner.isDead() && !owner.isInvulnerable() && !isCastingNow())
 			{
-				if (getAbnormalList().contains(5753)) // Awakening
+				if(getAbnormalList().contains(5753)) // Awakening
 					return null;
 
-				if (getAbnormalList().contains(5771)) // Buff Control
+				if(getAbnormalList().contains(5771)) // Buff Control
 					return null;
 
 				Skill skill = null;
 
-				if (!Config.ALT_PET_HEAL_BATTLE_ONLY || owner.isInCombat())
+				if(!Config.ALT_PET_HEAL_BATTLE_ONLY || owner.isInCombat())
 				{
 					// проверка лечения
 					double curHp = owner.getCurrentHpPercents();
-					if (Rnd.chance((100 - curHp) / 3))
+					if(Rnd.chance((100 - curHp) / 3))
 						skill = getHealSkill((int) curHp);
 
 					// проверка речарджа
-					if (skill == null)
+					if(skill == null)
 					{
 						double curMp = owner.getCurrentMpPercents();
-						if (Rnd.chance((100 - curMp) / 2))
+						if(Rnd.chance((100 - curMp) / 2))
 							skill = getManaHealSkill((int) curMp);
 					}
 
 					SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.SERVITOR, skill);
-					if (skillEntry != null && skillEntry.checkCondition(PetBabyInstance.this, owner, false, !isFollowMode(), true))
+					if(skillEntry != null && skillEntry.checkCondition(PetBabyInstance.this, owner, false, !isFollowMode(), true))
 					{
 						setTarget(owner);
 						getAI().Cast(skillEntry, owner, false, !isFollowMode());
@@ -290,22 +290,23 @@ public final class PetBabyInstance extends PetInstance
 					}
 				}
 
-				if (owner.isInOfflineMode() || owner.getAbnormalList().contains(5771))
+				if(owner.isInOfflineMode() || owner.getAbnormalList().contains(5771))
 					return null;
 
-				outer: for (Skill buff : getBuffs())
+				outer:
+				for(Skill buff : getBuffs())
 				{
-					if (getCurrentMp() < buff.getMpConsume2())
+					if(getCurrentMp() < buff.getMpConsume2())
 						continue;
 
-					for (Abnormal ef : owner.getAbnormalList())
+					for(Abnormal ef : owner.getAbnormalList())
 					{
-						if (!ef.canReplaceAbnormal(skill, 10))
+						if(!ef.canReplaceAbnormal(skill, 10))
 							continue outer;
 					}
 
 					SkillEntry skillEntry = SkillEntry.makeSkillEntry(SkillEntryType.SERVITOR, buff);
-					if (skillEntry.checkCondition(PetBabyInstance.this, owner, false, !isFollowMode(), true))
+					if(skillEntry.checkCondition(PetBabyInstance.this, owner, false, !isFollowMode(), true))
 					{
 						setTarget(owner);
 						getAI().Cast(skillEntry, owner, false, !isFollowMode());
@@ -315,7 +316,7 @@ public final class PetBabyInstance extends PetInstance
 				}
 			}
 		}
-		catch (Throwable e)
+		catch(Throwable e)
 		{
 			_log.warn("Pet [#" + getNpcId() + "] a buff task error has occurred: " + e);
 			_log.error("", e);
@@ -325,7 +326,7 @@ public final class PetBabyInstance extends PetInstance
 
 	public synchronized void stopBuffTask()
 	{
-		if (_actionTask != null)
+		if(_actionTask != null)
 		{
 			_actionTask.cancel(false);
 			_actionTask = null;
@@ -334,10 +335,10 @@ public final class PetBabyInstance extends PetInstance
 
 	public synchronized void startBuffTask()
 	{
-		if (_actionTask != null)
+		if(_actionTask != null)
 			stopBuffTask();
 
-		if (_actionTask == null && !isDead())
+		if(_actionTask == null && !isDead())
 			_actionTask = ThreadPoolManager.getInstance().schedule(new ActionTask(), 5000);
 	}
 
@@ -374,38 +375,38 @@ public final class PetBabyInstance extends PetInstance
 
 	public int getSteep()
 	{
-		if (PetDataHolder.isSpecialPet(getNpcId()))
+		if(PetDataHolder.isSpecialPet(getNpcId()))
 		{
-			if (getLevel() < 10)
+			if(getLevel() < 10)
 				return 0;
-			if (getLevel() < 20)
+			if(getLevel() < 20)
 				return 1;
-			if (getLevel() < 30)
+			if(getLevel() < 30)
 				return 2;
-			if (getLevel() < 40)
+			if(getLevel() < 40)
 				return 3;
-			if (getLevel() < 50)
+			if(getLevel() < 50)
 				return 4;
-			if (getLevel() < 60)
+			if(getLevel() < 60)
 				return 5;
-			if (getLevel() < 70)
+			if(getLevel() < 70)
 				return 6;
-			if (getLevel() >= 70)
+			if(getLevel() >= 70)
 				return 7;
 		}
 		else
 		{
-			if (getLevel() < 60)
+			if(getLevel() < 60)
 				return 0;
-			if (getLevel() < 65)
+			if(getLevel() < 65)
 				return 1;
-			if (getLevel() < 70)
+			if(getLevel() < 70)
 				return 2;
-			if (getLevel() < 75)
+			if(getLevel() < 75)
 				return 3;
-			if (getLevel() < 80)
+			if(getLevel() < 80)
 				return 4;
-			if (getLevel() >= 80)
+			if(getLevel() >= 80)
 				return 5;
 		}
 		return 0;

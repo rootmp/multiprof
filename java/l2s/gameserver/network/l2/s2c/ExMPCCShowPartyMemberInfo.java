@@ -19,7 +19,7 @@ public class ExMPCCShowPartyMemberInfo implements IClientOutgoingPacket
 	public ExMPCCShowPartyMemberInfo(Party party)
 	{
 		members = new ArrayList<PartyMemberInfo>();
-		for (Player _member : party.getPartyMembers())
+		for(Player _member : party.getPartyMembers())
 		{
 			members.add(new PartyMemberInfo(_member.getName(), _member.getObjectId(), _member.getClassId().getId()));
 		}
@@ -30,7 +30,7 @@ public class ExMPCCShowPartyMemberInfo implements IClientOutgoingPacket
 	{
 		packetWriter.writeD(members.size()); // Количество членов в пати
 
-		for (PartyMemberInfo member : members)
+		for(PartyMemberInfo member : members)
 		{
 			packetWriter.writeS(member.name); // Имя члена пати
 			packetWriter.writeD(member.object_id); // object Id члена пати

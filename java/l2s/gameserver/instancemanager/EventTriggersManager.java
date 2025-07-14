@@ -34,12 +34,12 @@ public class EventTriggersManager
 	public boolean addTrigger(Reflection reflection, int triggerId)
 	{
 		IntSet triggers = _activeTriggers.get(reflection.getId());
-		if (triggers == null)
+		if(triggers == null)
 		{
 			triggers = new CArrayIntSet();
 			_activeTriggers.put(reflection.getId(), triggers);
 		}
-		if (triggers.add(triggerId))
+		if(triggers.add(triggerId))
 		{
 			onAddTrigger(reflection, triggerId);
 			return true;
@@ -50,12 +50,12 @@ public class EventTriggersManager
 	public boolean addTrigger(int mapX, int mapY, int triggerId)
 	{
 		IntSet triggers = _activeTriggersByMap.get(getMapHash(mapX, mapY));
-		if (triggers == null)
+		if(triggers == null)
 		{
 			triggers = new CArrayIntSet();
 			_activeTriggersByMap.put(getMapHash(mapX, mapY), triggers);
 		}
-		if (triggers.add(triggerId))
+		if(triggers.add(triggerId))
 		{
 			onAddTrigger(ReflectionManager.MAIN, triggerId);
 			return true;
@@ -66,7 +66,7 @@ public class EventTriggersManager
 	public boolean removeTrigger(Reflection reflection, int triggerId)
 	{
 		IntSet triggers = _activeTriggers.get(reflection.getId());
-		if (triggers != null && triggers.remove(triggerId))
+		if(triggers != null && triggers.remove(triggerId))
 		{
 			onRemoveTrigger(reflection, triggerId);
 			return true;
@@ -77,7 +77,7 @@ public class EventTriggersManager
 	public boolean removeTrigger(int mapX, int mapY, int triggerId)
 	{
 		IntSet triggers = _activeTriggersByMap.get(getMapHash(mapX, mapY));
-		if (triggers != null && triggers.remove(triggerId))
+		if(triggers != null && triggers.remove(triggerId))
 		{
 			onRemoveTrigger(ReflectionManager.MAIN, triggerId);
 			return true;
@@ -87,22 +87,22 @@ public class EventTriggersManager
 
 	public int[] getTriggers(Reflection reflection, boolean all)
 	{
-		if (all && reflection.isMain())
+		if(all && reflection.isMain())
 		{
 			IntSet allTriggers = new CArrayIntSet();
 
 			IntSet triggers = _activeTriggers.get(reflection.getId());
-			if (triggers != null)
+			if(triggers != null)
 				allTriggers.addAll(triggers);
 
-			for (IntSet t : _activeTriggersByMap.valueCollection())
+			for(IntSet t : _activeTriggersByMap.valueCollection())
 				allTriggers.addAll(t);
 
 			return allTriggers.toArray();
 		}
 
 		IntSet triggers = _activeTriggers.get(reflection.getId());
-		if (triggers == null)
+		if(triggers == null)
 			return EMPTY_INT_ARRAY;
 
 		return triggers.toArray();
@@ -111,7 +111,7 @@ public class EventTriggersManager
 	public int[] getTriggers(int mapX, int mapY)
 	{
 		IntSet triggers = _activeTriggersByMap.get(getMapHash(mapX, mapY));
-		if (triggers == null)
+		if(triggers == null)
 			return EMPTY_INT_ARRAY;
 
 		return triggers.toArray();
@@ -120,16 +120,16 @@ public class EventTriggersManager
 	public void removeTriggers(Reflection reflection)
 	{
 		IntSet triggers = _activeTriggers.remove(reflection.getId());
-		if (triggers != null)
+		if(triggers != null)
 		{
-			for (int triggerId : triggers.toArray())
+			for(int triggerId : triggers.toArray())
 				onRemoveTrigger(reflection, triggerId);
 		}
-		if (reflection.isMain())
+		if(reflection.isMain())
 		{
-			for (IntSet t : _activeTriggersByMap.valueCollection())
+			for(IntSet t : _activeTriggersByMap.valueCollection())
 			{
-				for (int triggerId : t.toArray())
+				for(int triggerId : t.toArray())
 					onRemoveTrigger(reflection, triggerId);
 			}
 			_activeTriggersByMap.clear();
@@ -139,14 +139,14 @@ public class EventTriggersManager
 	private void onAddTrigger(Reflection reflection, int triggerId)
 	{
 		EventTriggerPacket packet = new EventTriggerPacket(triggerId, true);
-		for (Player player : reflection.getPlayers())
+		for(Player player : reflection.getPlayers())
 			player.sendPacket(packet);
 	}
 
 	private void onRemoveTrigger(Reflection reflection, int triggerId)
 	{
 		EventTriggerPacket packet = new EventTriggerPacket(triggerId, false);
-		for (Player player : reflection.getPlayers())
+		for(Player player : reflection.getPlayers())
 			player.sendPacket(packet);
 	}
 

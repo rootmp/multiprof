@@ -15,8 +15,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 // Target field
 @Retention(RetentionPolicy.RUNTIME)
-public @interface IntValue
-{
+public @interface IntValue {
 	/**
 	 * Имя, по которому будет произведен поиск переменной в буфере, если
 	 * withoutName() == false Если не указано - подставляется имя
@@ -49,6 +48,6 @@ public @interface IntValue
 	 * @return - пары типа ключ-значение
 	 */
 	String[] replacements() default {};
-	
+
 	boolean inBrackets() default false;
 }

@@ -1,6 +1,6 @@
 package l2s.gameserver.network.l2.s2c;
-import l2s.commons.network.PacketWriter;
 
+import l2s.commons.network.PacketWriter;
 import l2s.gameserver.Config;
 import l2s.gameserver.data.xml.holder.LuckyGameHolder;
 import l2s.gameserver.model.Player;
@@ -19,20 +19,20 @@ public class ReciveVipLuckyGameInfo implements IClientOutgoingPacket
 
 	public ReciveVipLuckyGameInfo(Player player)
 	{
-		if (Config.ALLOW_LUCKY_GAME_EVENT)
+		if(Config.ALLOW_LUCKY_GAME_EVENT)
 		{
 			_enabled = true;
 
 			LuckyGameData data = LuckyGameHolder.getInstance().getData(LuckyGameType.NORMAL);
-			if (data != null)
+			if(data != null)
 			{
-				if (data.getFeeItemId() == -1)
+				if(data.getFeeItemId() == -1)
 					_availableNormalGames = player.getPremiumPoints() / data.getFeeItemCount();
 				else
 					_availableNormalGames = ItemFunctions.getItemCount(player, data.getFeeItemId()) / data.getFeeItemCount();
 
 				int gamesLimit = data.getGamesLimit();
-				if (gamesLimit > 0)
+				if(gamesLimit > 0)
 				{
 					int playedGamesCount = player.getVarInt(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + data.getType().ordinal(), 0);
 					_availableNormalGames = Math.max(0, Math.min(_availableNormalGames, gamesLimit - playedGamesCount));
@@ -40,15 +40,15 @@ public class ReciveVipLuckyGameInfo implements IClientOutgoingPacket
 			}
 
 			data = LuckyGameHolder.getInstance().getData(LuckyGameType.LUXURY);
-			if (data != null)
+			if(data != null)
 			{
-				if (data.getFeeItemId() == -1)
+				if(data.getFeeItemId() == -1)
 					_availablePremiumGames = player.getPremiumPoints() / data.getFeeItemCount();
 				else
 					_availablePremiumGames = ItemFunctions.getItemCount(player, data.getFeeItemId()) / data.getFeeItemCount();
 
 				int gamesLimit = data.getGamesLimit();
-				if (gamesLimit > 0)
+				if(gamesLimit > 0)
 				{
 					int playedGamesCount = player.getVarInt(LuckyGameData.PLAYED_LUCKY_GAMES_VAR + data.getType().ordinal(), 0);
 					_availablePremiumGames = Math.max(0, Math.min(_availablePremiumGames, gamesLimit - playedGamesCount));

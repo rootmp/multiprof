@@ -56,6 +56,5 @@ public final class DamageHolder extends AbstractHolder
 
 	@Override
 	public void clear()
-	{
-	}
+	{}
 }

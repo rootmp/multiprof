@@ -24,7 +24,7 @@ public final class EventHolder extends AbstractHolder
 	public void addEvent(Event event)
 	{
 		_events.put(getHash(event.getType(), event.getId()), event);
-		if (event.getType() == EventType.FIGHT_CLUB_EVENT)
+		if(event.getType() == EventType.FIGHT_CLUB_EVENT)
 		{
 			FIGHT_CLUB_EVENTS++;
 		}
@@ -40,9 +40,9 @@ public final class EventHolder extends AbstractHolder
 	public <E extends Event> List<E> getEvents(EventType type)
 	{
 		List<E> events = new ArrayList<E>();
-		for (Event e : _events.valueCollection())
+		for(Event e : _events.valueCollection())
 		{
-			if (e.getType() == type)
+			if(e.getType() == type)
 				events.add((E) e);
 		}
 		return events;
@@ -52,14 +52,14 @@ public final class EventHolder extends AbstractHolder
 	public <E extends Event> List<E> getEvents(Class<E> eventClass)
 	{
 		List<E> events = new ArrayList<E>();
-		for (Event e : _events.valueCollection())
+		for(Event e : _events.valueCollection())
 		{
-			if (e.getClass() == eventClass) // fast hack
+			if(e.getClass() == eventClass) // fast hack
 			{
 				events.add((E) e);
 				continue;
 			}
-			if (eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL]
+			if(eventClass.isAssignableFrom(e.getClass())) // FIXME [VISTALL]
 			{
 				events.add((E) e);
 				continue;
@@ -70,13 +70,13 @@ public final class EventHolder extends AbstractHolder
 
 	public void findEvent(Player player)
 	{
-		for (Event event : _events.valueCollection())
+		for(Event event : _events.valueCollection())
 			event.findEvent(player);
 	}
 
 	public void callInit()
 	{
-		for (Event event : _events.valueCollection())
+		for(Event event : _events.valueCollection())
 			event.initEvent();
 	}
 

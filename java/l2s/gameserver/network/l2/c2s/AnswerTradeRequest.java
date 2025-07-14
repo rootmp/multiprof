@@ -1,4 +1,5 @@
 package l2s.gameserver.network.l2.c2s;
+
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import l2s.commons.network.PacketReader;
@@ -27,26 +28,26 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		Player activeChar = client.getActiveChar();
-		if (activeChar == null)
+		if(activeChar == null)
 			return;
 
 		Request request = activeChar.getRequest();
-		if (request == null)
+		if(request == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (request.isTypeOf(L2RequestType.TRADE_REQUEST))
+		if(request.isTypeOf(L2RequestType.TRADE_REQUEST))
 		{
-			if (!request.isInProgress())
+			if(!request.isInProgress())
 			{
 				request.cancel();
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (activeChar.isOutOfControl())
+			if(activeChar.isOutOfControl())
 			{
 				request.cancel();
 				activeChar.sendActionFailed();
@@ -54,7 +55,7 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 			}
 
 			Player requestor = request.getRequestor();
-			if (requestor == null)
+			if(requestor == null)
 			{
 				request.cancel();
 				activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -62,7 +63,7 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 				return;
 			}
 
-			if (requestor.getRequest() != request)
+			if(requestor.getRequest() != request)
 			{
 				request.cancel();
 				activeChar.sendActionFailed();
@@ -70,21 +71,21 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 			}
 
 			// отказ
-			if (_response == 0)
+			if(_response == 0)
 			{
 				request.cancel();
 				requestor.sendPacket(new SystemMessagePacket(SystemMsg.C1_HAS_DENIED_YOUR_REQUEST_TO_TRADE).addString(activeChar.getName()));
 				return;
 			}
 
-			if (!activeChar.checkInteractionDistance(requestor))
+			if(!activeChar.checkInteractionDistance(requestor))
 			{
 				request.cancel();
 				activeChar.sendPacket(SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE);
 				return;
 			}
 
-			if (requestor.isActionsDisabled())
+			if(requestor.isActionsDisabled())
 			{
 				request.cancel();
 				activeChar.sendPacket(new SystemMessagePacket(SystemMsg.C1_IS_ON_ANOTHER_TASK).addString(requestor.getName()));
@@ -92,7 +93,7 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 				return;
 			}
 
-			if (requestor.isInTrainingCamp())
+			if(requestor.isInTrainingCamp())
 			{
 				request.cancel();
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_REQUEST_TO_A_CHARACTER_WHO_IS_ENTERING_THE_TRAINING_CAMP);
@@ -114,16 +115,16 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 				request.done();
 			}
 		}
-		else if (request.isTypeOf(L2RequestType.TRADE))
+		else if(request.isTypeOf(L2RequestType.TRADE))
 		{
-			if (!request.isInProgress())
+			if(!request.isInProgress())
 			{
 				request.cancel(TradeDonePacket.FAIL);
 				activeChar.sendActionFailed();
 				return;
 			}
 
-			if (activeChar.isOutOfControl())
+			if(activeChar.isOutOfControl())
 			{
 				request.cancel(TradeDonePacket.FAIL);
 				activeChar.sendActionFailed();
@@ -131,7 +132,7 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 			}
 
 			Player parthner = request.getOtherPlayer(activeChar);
-			if (parthner == null)
+			if(parthner == null)
 			{
 				request.cancel(TradeDonePacket.FAIL);
 				activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -139,7 +140,7 @@ public class AnswerTradeRequest implements IClientIncomingPacket
 				return;
 			}
 
-			if (parthner.getRequest() != request)
+			if(parthner.getRequest() != request)
 			{
 				request.cancel(TradeDonePacket.FAIL);
 				activeChar.sendActionFailed();

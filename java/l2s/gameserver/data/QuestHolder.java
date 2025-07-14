@@ -2,11 +2,10 @@ package l2s.gameserver.data;
 
 import java.util.Collection;
 
-import l2s.commons.data.xml.AbstractHolder;
-import l2s.gameserver.model.quest.Quest;
-
 import gnu.trove.map.TIntObjectMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import l2s.commons.data.xml.AbstractHolder;
+import l2s.gameserver.model.quest.Quest;
 
 /**
  * @author Bonux
@@ -29,7 +28,7 @@ public final class QuestHolder extends AbstractHolder
 
 	public void addQuest(Quest quest)
 	{
-		if (_quests.containsKey(quest.getId()))
+		if(_quests.containsKey(quest.getId()))
 		{
 			warn("Cannot added quest (ID[" + quest.getId() + "], CLASS[" + quest.getClass().getSimpleName() + ".java]). Quets with this ID already have!");
 			return;

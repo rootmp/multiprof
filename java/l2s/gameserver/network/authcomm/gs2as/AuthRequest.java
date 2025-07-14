@@ -25,14 +25,14 @@ public class AuthRequest extends SendablePacket
 
 		HostInfo[] hosts = HostsConfigHolder.getInstance().getGameServerHosts();
 		writeC(hosts.length);
-		for (HostInfo host : hosts)
+		for(HostInfo host : hosts)
 		{
 			writeC(host.getId());
 			writeS(host.getAddress());
 			writeH(host.getPort());
 			writeS(host.getKey());
 			writeC(host.getSubnets().size());
-			for (Entry<Net, String> m : host.getSubnets().entrySet())
+			for(Entry<Net, String> m : host.getSubnets().entrySet())
 			{
 				writeS(m.getValue());
 				byte[] address = m.getKey().getAddress();

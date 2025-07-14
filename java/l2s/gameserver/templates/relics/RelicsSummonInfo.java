@@ -12,8 +12,7 @@ public class RelicsSummonInfo
 	private final int daily_limit;
 	private final List<RelicsProb> relicProbs;
 
-
-	public RelicsSummonInfo(int summonId,int count, int itemId, int price, int remainTime, int daily_limit, List<RelicsProb> relicProbs)
+	public RelicsSummonInfo(int summonId, int count, int itemId, int price, int remainTime, int daily_limit, List<RelicsProb> relicProbs)
 	{
 		this.summonId = summonId;
 		this.count = count;
